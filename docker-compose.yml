@@ -48,6 +48,7 @@ services:
       S10_CORTEX_HOST: localhost:4748     # Cortex rechaza otros Host (anti DNS-rebinding)
       CORTEX_URL_PUBLICA: http://localhost:${S10_PUERTO_CORTEX:-4748}
       S10_MOTOR: sdk                  # en Docker no hay CLI de Claude: tutoriales con ANTHROPIC_API_KEY de .env
+      METRIN_API: http://metrin:4760  # página Aprendizaje: métricas, cola y eventos en vivo
     ports: ["127.0.0.1:${S10_PUERTO_ADMIN:-4750}:4750"]
     depends_on:
       cortex: { condition: service_healthy }
@@ -76,6 +77,10 @@ services:
       LLM_PROVIDER: ${LLM_PROVIDER:-ollama}
       MLX_URL: ${MLX_URL:-http://host.docker.internal:8080}
       RAG_MAX_DISTANCIA: "0.80"
+      # API admin (métricas, cola de aprendizaje, SSE). admin.py genera el token en .env.
+      RAG_ADMIN_TOKEN: ${RAG_ADMIN_TOKEN:-}
+      # Repaso nocturno de lo que no supo responder (hora de Lima; "off" lo apaga).
+      RAG_HORA_APRENDER: ${RAG_HORA_APRENDER:-02:00}
     volumes:
       - ./kb:/kb:ro
       - metrin-datos:/srv/datos

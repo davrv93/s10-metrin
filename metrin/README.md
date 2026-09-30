@@ -136,6 +136,8 @@ borrado se limita al `--prefix` listado.
 | `RAG_DATOS` | `./datos` | índice, estado y `sin_respuesta.jsonl` |
 | `S3_ENDPOINT` `S3_REGION` `S3_BUCKET` | `http://localhost:4790` `garage` `rag-demo` | |
 | `S3_ACCESS_KEY` `S3_SECRET_KEY` | — | solo en `.env` (gitignored, 600) |
+| `RAG_ADMIN_TOKEN` | — | protege `/admin/api/`; vacío = API admin apagada (503). `admin.py` lo genera en `.env` |
+| `RAG_HORA_APRENDER` | `02:00` | repaso nocturno de pendientes (hora local, TZ del contenedor); `off` lo apaga |
 
 El umbral 0.80 es para los embeddings estáticos: con ellos, las preguntas
 sobre los documentos quedan en 0.55–0.75 y las ajenas (capital de Mongolia,
@@ -178,3 +180,35 @@ docker exec edisys_s3 /garage key info --show-secret rag-demo | sed -n 's/^Secre
 Cada pregunta sin contexto suficiente —por distancia o porque el modelo lo
 dice— se añade a `datos/sin_respuesta.jsonl` con fecha, motivo, distancia
 mínima y fuentes consultadas: es la lista de huecos de la documentación.
+
+## Feedback, aprendizaje y métricas
+
+Cada respuesta de `POST /ask` trae un `id`. El chat muestra 👍/👎 (con comentario
+opcional en el 👎) y lo envía a `POST /feedback {"id","voto":1|-1,"comentario"}`.
+
+Cuando no hay respuesta, Metrín dice que la anotó y **la aprenderá esta noche**, y
+devuelve `sugerencias`: hasta 3 preguntas del banco (tarjetas FAQ) parecidas, por si
+la pregunta estaba redactada de otra forma. El chat las muestra como botones.
+
+La cola de aprendizaje (`datos/pendientes.json`) junta lo que no supo responder y
+las respuestas con 👎. Cada noche (`RAG_HORA_APRENDER`) vuelve a preguntar lo
+pendiente contra el índice actual: lo que ya encuentra con fuentes queda
+«resuelto». Lo demás lo enseña el admin: la lección se guarda en
+`datos/aprendidos.jsonl` (formato kb, con `busqueda`), se indexa al instante y
+`docker-entrada.sh` la vuelve a sumar en cada arranque.
+
+API admin (`Authorization: Bearer $RAG_ADMIN_TOKEN`, o `?token=` para EventSource):
+
+| método y ruta | qué hace |
+|---|---|
+| `GET /admin/api/metricas?dias=14` | tasa de respuesta, satisfacción 👍/👎, sin respuesta, latencia media/p90, cola, serie diaria |
+| `GET /admin/api/pendientes?estado=pendiente` | cola (`pendiente` · `resuelto` · `aprendido` · `descartado`; vacío = todas) |
+| `GET /admin/api/interacciones?limite=50` | últimas conversaciones con su voto |
+| `POST /admin/api/aprender` | `{"clave"\|"pregunta","respuesta","variantes":[],"titulo"}` → indexa en vivo |
+| `POST /admin/api/descartar` | `{"clave"}` |
+| `POST /admin/api/repasar` | lanza el repaso ya (202); el avance llega por SSE |
+| `GET /admin/api/eventos` | SSE: `metricas`, `interaccion`, `feedback`, `pendiente`, `aprendido`, `repaso_inicio`, `repaso_avance`, `repaso_fin` |
+| `GET /admin/api/aprendidos.jsonl` | exporta lo enseñado |
+
+El panel (`admin.py`, sección **Metrín → Aprendizaje**) usa esta API y reenvía el
+SSE, así que el navegador nunca ve el token.

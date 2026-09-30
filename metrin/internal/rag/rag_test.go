@@ -310,3 +310,30 @@ func TestParecePortugues(t *testing.T) {
 		}
 	}
 }
+
+func TestSinContextoSugierePreguntasDelBanco(t *testing.T) {
+	ctx := context.Background()
+	a, _ := almacen.Abrir("", dosEjes{})
+	for i, p := range []string{"¿Cómo lleno el formulario de ingreso?", "¿Dónde está el formulario de compras?"} {
+		clave := "s10kb:faq-" + string(rune('a'+i))
+		a.Reemplazar(ctx, clave, indexar.FuenteS10KB, "v", []almacen.Trozo{{
+			ID: almacen.IDTrozo(clave, 0), Texto: "pasaje", Busqueda: p,
+			Metadata: map[string]string{"source": indexar.FuenteS10KB, "manual": ManualCortex, "cita": "Nodo " + p, "pregunta": p},
+		}})
+	}
+	r := &RAG{Almacen: a, LLM: &llmFijo{respuesta: "no debería llamarse"}, MaxDistancia: 0.5,
+		RutaFallos: filepath.Join(t.TempDir(), "f.jsonl")}
+	res, err := r.Preguntar(ctx, "¿y el precio?", Opciones{})
+	if err != nil || !res.SinContexto {
+		t.Fatalf("esperaba sin contexto: %v %+v", err, res)
+	}
+	if len(res.Sugerencias) != 2 || !strings.Contains(res.Respuesta, "esta noche") {
+		t.Fatalf("sugerencias=%v respuesta=%q", res.Sugerencias, res.Respuesta)
+	}
+	// SinRegistro (repaso nocturno) no escribe en sin_respuesta.jsonl.
+	r.RutaFallos = filepath.Join(t.TempDir(), "g.jsonl")
+	r.Preguntar(ctx, "¿y el precio?", Opciones{SinRegistro: true})
+	if _, err := os.Stat(r.RutaFallos); !os.IsNotExist(err) {
+		t.Fatal("con SinRegistro no debe registrarse el fallo")
+	}
+}

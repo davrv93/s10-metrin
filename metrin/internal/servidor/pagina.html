@@ -109,6 +109,17 @@ svg{display:block}
 .cita{display:inline-flex;align-items:center;gap:5px;max-width:100%;padding:4px 9px;border:1px solid var(--line);border-radius:999px;background:#fff;font-size:11.5px;color:var(--green-dark);text-decoration:none}
 .cita span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:260px}
 .cita svg{width:12px;height:12px;flex:none;fill:none;stroke:currentColor;stroke-width:2}
+.valorar{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:2px;font-size:11px;color:var(--soft)}
+.valorar button{display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--muted);font:inherit;font-size:11.5px;cursor:pointer;transition:background .2s,border-color .2s,color .2s}
+.valorar button:hover{border-color:#9bc5b2;color:var(--green-dark)}
+.valorar button.on{background:var(--green);border-color:var(--green);color:#fff}
+.valorar button:disabled{cursor:default}
+.valorar form{display:flex;gap:6px;flex:1;min-width:220px}
+.valorar input{flex:1;min-width:0;padding:4px 10px;border:1px solid var(--line);border-radius:999px;font:inherit;font-size:12px;outline:0}
+.valorar input:focus{border-color:#9bc5b2}
+.quiza{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.quiza button{padding:5px 11px;border:1px dashed #9bc5b2;border-radius:999px;background:#f6fbf8;color:var(--green-dark);font:inherit;font-size:12px;text-align:left;cursor:pointer}
+.quiza button:hover{background:#e9f5ef;border-style:solid}
 .pensando{display:inline-flex;gap:4px;padding:12px 14px;border-radius:14px;border-top-left-radius:5px;background:#f3f7f5}
 .pensando i{width:6px;height:6px;border-radius:50%;background:var(--green);opacity:.35;animation:pensar 1s ease-in-out infinite alternate}
 .pensando i:nth-child(2){animation-delay:.2s}.pensando i:nth-child(3){animation-delay:.4s}
@@ -568,6 +579,25 @@ function mensaje(rol,texto,fuentes=[]){
       const s=document.createElement('span');s.textContent=f.cita||f.documento||'Fuente S10';a.append(s);c.append(a)}
     m.append(c)}
   mensajes.append(m);hilo.scrollTop=hilo.scrollHeight;return m}
+/* ── ¿quisiste preguntar…? y feedback 👍/👎 ── */
+function quiza(m,lista){const c=document.createElement('div');c.className='quiza';c.setAttribute('aria-label','Preguntas parecidas');
+  for(const q of lista.slice(0,3)){const b=document.createElement('button');b.type='button';b.textContent=q;b.onclick=()=>preguntar(q);c.append(b)}
+  m.append(c);hilo.scrollTop=hilo.scrollHeight}
+function votar(id,voto,comentario=''){return fetch('/feedback',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id,voto,comentario})}).then(r=>{if(!r.ok)throw new Error()})}
+function valorar(m,id,sinContexto){const v=document.createElement('div');v.className='valorar';
+  const txt=document.createElement('span');txt.textContent=sinContexto?'¿Te sirvió la sugerencia?':'¿Te sirvió?';
+  const si=document.createElement('button'),no=document.createElement('button');si.type=no.type='button';
+  si.innerHTML='👍 <span>Sí</span>';no.innerHTML='👎 <span>No</span>';si.setAttribute('aria-label','Respuesta útil');no.setAttribute('aria-label','Respuesta no útil');
+  const marcar=(b,otro)=>{b.classList.add('on');otro.classList.remove('on');b.setAttribute('aria-pressed','true');otro.setAttribute('aria-pressed','false')};
+  si.onclick=()=>votar(id,1).then(()=>{marcar(si,no);v.querySelector('form')?.remove();txt.textContent='¡Gracias!';decir('¡Gracias! 😊',1600)}).catch(()=>avisar('No pude guardar tu voto'));
+  no.onclick=()=>votar(id,-1).then(()=>{marcar(no,si);txt.textContent='Gracias, lo repaso esta noche.';
+    if(v.querySelector('form'))return;
+    const f=document.createElement('form'),i=document.createElement('input'),e=document.createElement('button');
+    i.placeholder='¿Qué faltó o qué estaba mal? (opcional)';i.maxLength=500;e.type='submit';e.textContent='Enviar';
+    f.onsubmit=ev=>{ev.preventDefault();const c=i.value.trim();if(!c)return f.remove();
+      votar(id,-1,c).then(()=>{f.remove();txt.textContent='Anotado: lo aprenderé esta noche.'}).catch(()=>avisar('No pude guardar tu comentario'))};
+    f.append(i,e);v.append(f);i.focus()}).catch(()=>avisar('No pude guardar tu voto'));
+  v.append(txt,si,no);m.append(v);hilo.scrollTop=hilo.scrollHeight}
 function pensando(){const m=document.createElement('article');m.className='msg asistente';
   m.innerHTML='<div class="msg__meta"><strong>Metrín está calculando</strong></div><div class="pensando"><i></i><i></i><i></i></div>';
   mensajes.append(m);hilo.scrollTop=hilo.scrollHeight;return m}
@@ -600,8 +630,10 @@ async function preguntar(texto){
     if(!r.ok)throw new Error(d.error||'No se pudo completar la consulta');
     aguarda.remove();accion(null);
     const m=mensaje('asistente',d.respuesta||'No recibí una respuesta del servicio.',d.fuentes||[]);
+    if(d.sugerencias&&d.sugerencias.length)quiza(m,d.sugerencias);
+    if(d.id&&d.modo!=='conversacional')valorar(m,d.id,!!d.sin_contexto);
     pintarFuentes(d.fuentes||[]);
-	    if(d.sin_contexto){estado.textContent='No encontré evidencia suficiente';animo('confundido','No encontré evidencia suficiente');colocar(destino('mensaje',m));decir('Mmm… no lo encuentro',2400);avisar('Prueba con el nombre de un módulo o proceso de S10.')}
+	    if(d.sin_contexto){estado.textContent='No encontré evidencia suficiente';animo('confundido','No encontré evidencia suficiente');colocar(destino('mensaje',m));decir('Mmm… no lo encuentro',2400);avisar(d.sugerencias&&d.sugerencias.length?'Quizá la pregunta estaba redactada de otra forma: prueba una sugerencia.':'La anoté: esta noche la repaso para aprenderla.')}
 	    else if(d.modo==='modelo_no_disponible'){estado.textContent='No pude preparar el resumen';animo('confundido','No pude preparar el resumen');colocar(destino('mensaje',m));avisar('El modelo no respondió; las fuentes siguen disponibles.')}
 	    else{estado.textContent='Respuesta basada en fuentes';animo('feliz','¡Listo! Encontré información útil');colocar(destino('mensaje',m));decir('¡Listo!',1800)}
   }catch(e){

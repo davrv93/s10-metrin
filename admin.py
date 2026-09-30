@@ -35,6 +35,7 @@ RAIZ = Path(__file__).resolve().parent
 DATA, KB, TUT = RAIZ / "data", RAIZ / "kb", RAIZ / "tutoriales"
 PY = str(RAIZ / ".venv" / "bin" / "python")
 CORTEX_API = os.environ.get("S10_CORTEX_API", "http://localhost:4748/api")
+METRIN_API = os.environ.get("METRIN_API", "http://127.0.0.1:4760").rstrip("/")
 # Cortex solo acepta Host: localhost (protección anti DNS-rebinding); en Docker se fuerza.
 CORTEX_H = {"Host": os.environ["S10_CORTEX_HOST"]} if os.environ.get("S10_CORTEX_HOST") else {}
 NIVELES = {
@@ -65,6 +66,12 @@ def asegurar_credenciales() -> dict:
         with (RAIZ / ".env").open("a", encoding="utf-8") as f:
             f.write(f"\n# Panel admin.py\nADMIN_USUARIO=admin\nADMIN_CLAVE={clave}\nADMIN_SECRETO={secrets.token_hex(32)}\n")
         print(f"\n  Panel: usuario 'admin', clave generada: {clave}\n  (guardada en .env; no se vuelve a mostrar)\n")
+        env = leer_env()
+    if not env.get("RAG_ADMIN_TOKEN") and not os.environ.get("RAG_ADMIN_TOKEN"):
+        # Token compartido con Metrín para /admin/api (docker compose lo pasa al servicio metrin).
+        with (RAIZ / ".env").open("a", encoding="utf-8") as f:
+            f.write(f"\n# API admin de Metrín (métricas y aprendizaje)\nRAG_ADMIN_TOKEN={secrets.token_urlsafe(24)}\n")
+        print("  RAG_ADMIN_TOKEN generado en .env: reinicia Metrín para que lo tome (docker compose up -d metrin)\n")
         env = leer_env()
     return env
 
@@ -230,6 +237,7 @@ pre{background:#1a2721;color:#e2eae5;padding:14px;border-radius:8px;overflow:aut
 
 MENU = [
     ("Conocimiento", [("resumen", "Resumen", "home"), ("fuentes", "Fuentes", "book"), ("agregar", "Agregar fuentes", "plus")]),
+    ("Metrín", [("aprendizaje", "Aprendizaje", "chart")]),
     ("Automatización", [("programacion", "Programación", "clock"), ("tutoriales_vista", "Tutoriales", "guide"), ("trabajos", "Trabajos", "activity")]),
     ("Sistema", [("cortex", "Cortex", "nodes"), ("herramientas", "Herramientas", "tools"), ("almacenamiento", "Almacenamiento", "storage")]),
 ]
@@ -243,6 +251,7 @@ def icono(nombre: str) -> str:
         "clock": '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
         "guide": '<path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v18H6.5A2.5 2.5 0 0 0 4 22z"/><path d="M8 7h8M8 11h8M8 15h5"/>',
         "activity": '<path d="M3 12h4l3-8 4 16 3-8h4"/>',
+        "chart": '<path d="M4 20V10m6 10V4m6 16v-7m4 7H2"/>',
         "nodes": '<circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="m11 7-5 10m7-10 5 10M7 19h10"/>',
         "tools": '<path d="M14.7 6.3a5 5 0 0 0-6.4 6.4L3 18l3 3 5.3-5.3a5 5 0 0 0 6.4-6.4L14 12l-3-3z"/>',
         "storage": '<ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/>',
@@ -794,6 +803,198 @@ def trabajos():
     extra = f"<h2>Última corrida automática por consola</h2><pre>{e(auto.read_text(encoding='utf-8')[-3000:])}</pre>" if auto.exists() else ""
     refresco = '<meta http-equiv="refresh" content="5">' if any(t["estado"] in ("corriendo", "en cola") for t in TRABAJOS) else ""
     return pagina("trabajos", "Trabajos", refresco + (filas or '<p class="muted">Sin trabajos en esta sesión del panel.</p>') + extra)
+
+
+# ─────────────────────────────── aprendizaje de Metrín ──────────────────────
+def _token_metrin() -> str:
+    return os.environ.get("RAG_ADMIN_TOKEN") or leer_env().get("RAG_ADMIN_TOKEN", "")
+
+
+def metrin(metodo: str, ruta: str, **kw):
+    """Llama a la API admin de Metrín con el token compartido."""
+    h = {"Authorization": f"Bearer {_token_metrin()}"}
+    return requests.request(metodo, f"{METRIN_API}/admin/api/{ruta}", headers=h, timeout=kw.pop("timeout", 15), **kw)
+
+
+def pct(x) -> str:
+    return f"{(x or 0) * 100:.0f} %"
+
+
+ESTADOS_COLA = {"pendiente": ("Pendiente", "warn"), "resuelto": ("Resuelta sola", "ok"),
+                "aprendido": ("Aprendida", "ok"), "descartado": ("Descartada", "")}
+ORIGENES = {"sin_contexto": "No supo responder", "feedback_negativo": "👎 del usuario", "admin": "Admin"}
+
+
+@app.route("/aprendizaje")
+@requiere_login
+def aprendizaje():
+    vista = request.args.get("estado", "pendiente")
+    try:
+        m = metrin("GET", "metricas", params={"dias": 14}).json()
+        cola = metrin("GET", "pendientes", params={"estado": "" if vista == "todas" else vista}).json()
+        recientes = metrin("GET", "interacciones", params={"limite": 25}).json()
+        if not isinstance(m, dict) or "error" in m:
+            raise RuntimeError(m.get("error") if isinstance(m, dict) else "respuesta inesperada")
+    except Exception as ex:  # noqa: BLE001
+        cuerpo = f"""<p class="aviso">No pude hablar con Metrín en <code>{e(METRIN_API)}</code>: {e(ex)}.<br>
+Revisa que el servicio esté arriba y que <code>RAG_ADMIN_TOKEN</code> de <code>.env</code> sea el mismo en ambos
+(tras generarlo: <code>docker compose up -d metrin admin</code>).</p>"""
+        return pagina("aprendizaje", "Aprendizaje de Metrín", cuerpo, "Qué tan bien le va al agente y qué le falta aprender.")
+    c = csrf()
+    kpis = [
+        ("k-tasa", pct(m["tasa_respuesta"]), f"consultas respondidas con fuentes ({m['respondidas']} de {m['consultas']})"),
+        ("k-satis", pct(m["satisfaccion"]) if m["positivos"] + m["negativos"] else "—", f"satisfacción: {m['positivos']} 👍 · {m['negativos']} 👎"),
+        ("k-sin", m["sin_contexto"], f"sin respuesta ({m['con_sugerencias']} con sugerencias)"),
+        ("k-cola", m["cola"]["pendientes"], "por aprender"),
+        ("k-apr", m["cola"]["aprendidas"] + m["cola"]["resueltas"], f"aprendidas ({m['cola']['resueltas']} solas en el repaso)"),
+        ("k-lat", f"{m['latencia_media_ms'] / 1000:.1f} s", f"latencia media · p90 {m['latencia_p90_ms'] / 1000:.1f} s"),
+        ("k-total", m["total"], f"mensajes ({m['conversacional']} de charla) · votan {pct(m['tasa_voto'])}"),
+    ]
+    grid = "".join(f'<div class="card"><div class="num" id="{i}">{e(n)}</div><div class="et" id="{i}-et">{e(t)}</div></div>' for i, n, t in kpis)
+    tope = max([d["total"] for d in m["por_dia"]] or [1])
+    dias = "".join(
+        f"""<tr><td>{e(d['fecha'])}</td><td><div class="barra" title="{d['respondidas']} respondidas · {d['sin_contexto']} sin respuesta">
+<i style="width:{d['respondidas'] / tope * 100:.1f}%"></i><b style="width:{d['sin_contexto'] / tope * 100:.1f}%"></b></div></td>
+<td>{d['total']}</td><td>{pct(d['respondidas'] / max(1, d['respondidas'] + d['sin_contexto']))}</td><td>{d['positivos']} 👍 · {d['negativos']} 👎</td></tr>"""
+        for d in reversed(m["por_dia"]))
+    rep = m.get("ultimo_repaso") or {}
+    repaso = (f"Último repaso ({e(rep.get('origen'))}): {e((rep.get('fin') or rep.get('inicio') or '')[:16].replace('T', ' '))} · "
+              f"{rep.get('revisadas', 0)} revisadas, {rep.get('resueltas', 0)} resueltas") if rep else "Aún no hubo repaso."
+    tabs = "".join(f'<a href="{url_for("aprendizaje", estado=k)}" class="{"on" if vista == k else ""}">{t}</a>'
+                   for k, t in [("pendiente", "Por aprender"), ("resuelto", "Resueltas solas"), ("aprendido", "Aprendidas"),
+                                ("descartado", "Descartadas"), ("todas", "Todas")])
+    filas = ""
+    for p in cola:
+        est, clase = ESTADOS_COLA.get(p["estado"], (p["estado"], ""))
+        previa = f'<div class="muted">Respuesta: {e(p.get("respuesta", "")[:300])}</div>' if p.get("respuesta") else ""
+        coment = f'<div class="muted">Comentario: «{e(p["comentario"])}»</div>' if p.get("comentario") else ""
+        ensenar = "" if p["estado"] == "aprendido" else f"""<details><summary class="btn sec">Enseñar respuesta</summary>
+<form method="post" action="{url_for('aprendizaje_ensenar')}" style="display:grid;gap:8px;margin-top:8px">
+<input type="hidden" name="csrf" value="{c}"><input type="hidden" name="clave" value="{e(p['clave'])}">
+<textarea name="respuesta" rows="4" required minlength="20" placeholder="Respuesta correcta, como la diría Metrín (pasos cortos)"></textarea>
+<textarea name="variantes" rows="2" placeholder="Otras formas de preguntarlo (una por línea, opcional)"></textarea>
+<input type="text" name="titulo" placeholder="Cita que verá el usuario (opcional; p. ej. «Manual de Almacén, p. 12»)">
+<button class="btn">Aprender ahora</button></form></details>
+<form method="post" action="{url_for('aprendizaje_descartar')}" style="margin-top:6px"><input type="hidden" name="csrf" value="{c}">
+<input type="hidden" name="clave" value="{e(p['clave'])}"><button class="btn sec">Descartar</button></form>"""
+        filas += f"""<tr><td><b>{e(p['pregunta'])}</b>{coment}{previa}</td><td>{e(ORIGENES.get(p['origen'], p['origen']))}</td>
+<td>{p['veces']}</td><td class="muted">{e(p['ultima'][:16].replace('T', ' '))}</td><td><span class="chip {clase}">{e(est)}</span></td>
+<td style="min-width:260px">{ensenar}</td></tr>"""
+    vacio = '<tr><td colspan="6" class="muted">Nada en esta vista. 🎉</td></tr>'
+    ult = "".join(
+        f"""<tr><td>{e(i['pregunta'][:140])}</td><td><span class="chip {'ok' if i['modo'] == 'respuesta' and not i['sin_contexto'] else 'warn' if i['sin_contexto'] else ''}">{e('sin respuesta' if i['sin_contexto'] else i['modo'])}</span></td>
+<td>{'👍' if i.get('voto') == 1 else '👎' if i.get('voto') == -1 else ''}</td><td class="muted">{e(i['fecha'][11:16])}</td></tr>""" for i in recientes)
+    cuerpo = f"""<style>.barra{{display:flex;height:12px;border-radius:4px;background:var(--soft);overflow:hidden;min-width:120px}}.barra i{{background:var(--brand)}}.barra b{{background:#e0a847}}
+#vivo{{max-height:260px;overflow:auto;font-size:12px}}#vivo div{{padding:6px 0;border-bottom:1px solid var(--line)}}.punto{{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--muted);margin-right:6px}}.punto.on{{background:var(--ok)}}
+details summary{{list-style:none;cursor:pointer}}details summary::-webkit-details-marker{{display:none}}</style>
+<div class="grid">{grid}</div>
+<div class="dos" style="margin-top:12px"><div class="card"><h2>Últimos 14 días</h2>
+<table><tr><th>Día</th><th>Respondidas / sin respuesta</th><th>Msjs</th><th>Tasa</th><th>Votos</th></tr>{dias or '<tr><td colspan=5 class="muted">Sin datos todavía.</td></tr>'}</table></div>
+<div class="card"><h2><span class="punto" id="punto"></span>En vivo</h2>
+<p class="muted" id="repaso">{repaso}</p>
+<form method="post" action="{url_for('aprendizaje_repasar')}" class="fila"><input type="hidden" name="csrf" value="{c}">
+<button class="btn" id="btnRepasar">Repasar pendientes ahora</button><a class="btn sec" href="{url_for('aprendizaje_exportar')}">Exportar aprendidos</a></form>
+<p id="novedad" class="aviso" hidden>Hay novedades en la cola · <a href="">recargar</a></p>
+<div id="vivo" aria-live="polite"><div class="muted">Esperando actividad…</div></div></div></div>
+<h2>Cola de aprendizaje</h2><div class="tabs">{tabs}</div>
+<table><tr><th>Pregunta</th><th>Origen</th><th>Veces</th><th>Última</th><th>Estado</th><th></th></tr>{filas or vacio}</table>
+<p class="muted" style="margin-top:10px">Cada noche Metrín vuelve a preguntar lo pendiente contra el índice actualizado: lo que ya encuentra con fuentes queda «resuelto solo».
+Lo demás espera una respuesta tuya: al enseñarla se indexa al instante y Metrín la cita como «{e('Respuesta aprobada por Optimiza 360')}».</p>
+<h2>Últimas conversaciones</h2><table><tr><th>Pregunta</th><th>Resultado</th><th>Voto</th><th>Hora</th></tr>{ult or '<tr><td colspan=4 class="muted">Sin conversaciones.</td></tr>'}</table>
+<script>
+(()=>{{const $=id=>document.getElementById(id),vivo=$('vivo'),pct=x=>Math.round((x||0)*100)+' %';
+const linea=(t)=>{{if(vivo.firstElementChild?.classList.contains('muted'))vivo.replaceChildren();const d=document.createElement('div');
+  d.textContent=new Date().toLocaleTimeString('es',{{hour:'2-digit',minute:'2-digit',second:'2-digit'}})+' · '+t;vivo.prepend(d);while(vivo.children.length>60)vivo.lastChild.remove()}};
+const es=new EventSource('{url_for('aprendizaje_eventos')}');
+es.onopen=()=>$('punto').classList.add('on');es.onerror=()=>$('punto').classList.remove('on');
+es.addEventListener('metricas',ev=>{{const m=JSON.parse(ev.data);
+  $('k-tasa').textContent=pct(m.tasa_respuesta);$('k-tasa-et').textContent=`consultas respondidas con fuentes (${{m.respondidas}} de ${{m.consultas}})`;
+  $('k-satis').textContent=(m.positivos+m.negativos)?pct(m.satisfaccion):'—';$('k-satis-et').textContent=`satisfacción: ${{m.positivos}} 👍 · ${{m.negativos}} 👎`;
+  $('k-sin').textContent=m.sin_contexto;$('k-cola').textContent=m.cola.pendientes;$('k-apr').textContent=m.cola.aprendidas+m.cola.resueltas;
+  $('k-sin-et').textContent=`sin respuesta (${{m.con_sugerencias}} con sugerencias)`;$('k-cola-et').textContent='por aprender';
+  $('k-apr-et').textContent=`aprendidas (${{m.cola.resueltas}} solas en el repaso)`;
+  $('k-lat').textContent=(m.latencia_media_ms/1000).toFixed(1)+' s';$('k-lat-et').textContent=`latencia media · p90 ${{(m.latencia_p90_ms/1000).toFixed(1)}} s`;
+  $('k-total').textContent=m.total;$('k-total-et').textContent=`mensajes (${{m.conversacional}} de charla) · votan ${{pct(m.tasa_voto)}}`;
+  $('btnRepasar').disabled=!!m.repaso_en_curso}});
+const d=ev=>JSON.parse(ev.data).datos,novedad=()=>{{$('novedad').hidden=false}};
+['pendiente','aprendido','repaso_fin'].forEach(t=>es.addEventListener(t,novedad));
+es.addEventListener('interaccion',ev=>{{const i=d(ev);if(i.sin_contexto)novedad();linea((i.sin_contexto?'❓ Sin respuesta: ':i.modo==='conversacional'?'💬 ':'✅ ')+i.pregunta)}});
+es.addEventListener('feedback',ev=>{{const f=d(ev);linea((f.voto>0?'👍 ':'👎 ')+f.pregunta+(f.comentario?' — «'+f.comentario+'»':''))}});
+es.addEventListener('aprendido',ev=>linea('🎓 Aprendida: '+d(ev).pregunta));
+es.addEventListener('repaso_inicio',ev=>{{$('repaso').textContent=`Repasando ${{d(ev).total}} pendientes…`;$('btnRepasar').disabled=true}});
+es.addEventListener('repaso_avance',ev=>{{const a=d(ev);$('repaso').textContent=`Repasando ${{a.i}}/${{a.total}}…`;linea((a.resuelta?'✅ Ya la sabe: ':'⏳ Sigue pendiente: ')+a.pregunta)}});
+es.addEventListener('repaso_fin',ev=>{{const r=d(ev);$('repaso').textContent=`Repaso terminado: ${{r.revisadas}} revisadas, ${{r.resueltas}} resueltas.`;$('btnRepasar').disabled=false}});
+}})();</script>"""
+    return pagina("aprendizaje", "Aprendizaje de Metrín", cuerpo, "Qué tan bien le va al agente y qué le falta aprender.")
+
+
+def _resultado(r) -> None:
+    if r.status_code >= 400:
+        try:
+            msg = r.json().get("error", r.text)
+        except ValueError:
+            msg = r.text
+        abort(r.status_code if r.status_code < 500 else 502, msg)
+
+
+@app.route("/aprendizaje/ensenar", methods=["POST"])
+@requiere_login
+def aprendizaje_ensenar():
+    validar_csrf()
+    f = request.form
+    variantes = [v.strip() for v in f.get("variantes", "").splitlines() if v.strip()]
+    _resultado(metrin("POST", "aprender", json={"clave": f.get("clave", ""), "pregunta": f.get("pregunta", ""),
+                                                  "respuesta": f.get("respuesta", ""), "variantes": variantes,
+                                                  "titulo": f.get("titulo", "").strip()}))
+    return redirect(url_for("aprendizaje"))
+
+
+@app.route("/aprendizaje/descartar", methods=["POST"])
+@requiere_login
+def aprendizaje_descartar():
+    validar_csrf()
+    _resultado(metrin("POST", "descartar", json={"clave": request.form.get("clave", "")}))
+    return redirect(url_for("aprendizaje"))
+
+
+@app.route("/aprendizaje/repasar", methods=["POST"])
+@requiere_login
+def aprendizaje_repasar():
+    validar_csrf()
+    r = metrin("POST", "repasar")
+    if r.status_code != 409:  # ya en curso: no es error
+        _resultado(r)
+    return redirect(url_for("aprendizaje"))
+
+
+@app.route("/aprendizaje/aprendidos.jsonl")
+@requiere_login
+def aprendizaje_exportar():
+    r = metrin("GET", "aprendidos.jsonl")
+    if r.status_code == 404:
+        return Response("", mimetype="application/x-ndjson")
+    _resultado(r)
+    return Response(r.content, mimetype="application/x-ndjson",
+                    headers={"Content-Disposition": "attachment; filename=aprendidos.jsonl"})
+
+
+@app.route("/aprendizaje/eventos")
+@requiere_login
+def aprendizaje_eventos():
+    """Proxy SSE: el navegador no ve el token de Metrín."""
+    try:
+        r = metrin("GET", "eventos", stream=True, timeout=(5, None))
+    except requests.RequestException as ex:
+        return Response(f"event: error\ndata: {json.dumps(str(ex))}\n\n", mimetype="text/event-stream")
+
+    def reenviar():
+        try:
+            for trozo in r.iter_content(chunk_size=None):
+                yield trozo
+        finally:
+            r.close()
+    return Response(reenviar(), mimetype="text/event-stream",
+                    headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"})
 
 
 if __name__ == "__main__":

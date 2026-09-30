@@ -45,6 +45,7 @@ type Fuente struct {
 }
 
 type Respuesta struct {
+	ID                string        `json:"id,omitempty"` // lo pone el servidor; sirve para el feedback
 	Pregunta          string        `json:"pregunta"`
 	Respuesta         string        `json:"respuesta"`
 	Modo              string        `json:"modo"`
@@ -57,6 +58,9 @@ type Respuesta struct {
 	MsLLM             int64         `json:"ms_llm"`
 	DistanciaMin      float64       `json:"distancia_min"`
 	PreguntaReescrita string        `json:"pregunta_reescrita,omitempty"`
+	// Sugerencias: preguntas del banco parecidas, para cuando no hubo
+	// respuesta («quizá la pregunta estaba redactada de otra forma»).
+	Sugerencias []string `json:"sugerencias,omitempty"`
 }
 
 // Turno es un mensaje previo de la conversación ("usuario" o "asistente").
@@ -70,11 +74,26 @@ type Opciones struct {
 	K      int
 	Filtro map[string]string // source, type, ext
 	Hilo   []Turno           // últimos turnos; sirve para resolver referencias ("su", "eso")
+	// SinRegistro: no anota el fallo en sin_respuesta.jsonl (el repaso
+	// nocturno vuelve a preguntar lo pendiente sin duplicarlo).
+	SinRegistro bool
 }
 
 // MarcaSinContexto es la frase que se pide al modelo cuando el contexto no
 // alcanza; se usa también para detectarlo.
 const MarcaSinContexto = "No tengo contexto suficiente"
+
+// RespuestaSinContexto es lo que ve el usuario cuando no hay respuesta: se
+// promete el repaso nocturno y, si hay preguntas parecidas, se sugieren.
+func RespuestaSinContexto(conSugerencias bool) string {
+	t := "Todavía no tengo esa respuesta en mis fuentes. La anoté y la aprenderé esta noche."
+	if conSugerencias {
+		return t + " Mientras tanto, quizá la pregunta se puede redactar de otra forma: ¿te refieres a alguna de estas?"
+	}
+	return t + " Si puedes, prueba a redactarla de otra forma o nombra el módulo de S10 (Presupuestos, Compras, Almacenes…)."
+}
+
+const maxSugerencias = 3
 
 const sistema = `Eres Metrín, asistente de Optimiza 360 para ERP S10 y procesos de construcción.
 Reglas:
@@ -87,7 +106,7 @@ Reglas:
 7. Si la pregunta es sobre Optimiza 360, responde con información sobre la empresa; no mezcles procedimientos de S10 que no ayuden a contestarla.
 8. Si el contexto habla de temas distintos, usa solo el que responde a la pregunta. Si falta evidencia, dilo con la frase indicada.
 9. No incluyas teléfonos, correos, datos personales ni nombres de personas en una respuesta general, salvo que el usuario pregunte expresamente por un contacto y la fuente sea pertinente.
-10. No afirmes que aprendiste o guardaste conocimiento; este servicio solo registra preguntas sin contexto.
+10. No afirmes que ya aprendiste o guardaste conocimiento; las preguntas sin respuesta se registran y se repasan cada noche.
 11. Si preguntan qué tipos de presupuestos existen, distingue la clasificación del manual (Venta, Meta y Línea Base) de los términos enumerados en el sílabo (base, real, oferta, meta y línea base). No menciones logotipos, asignaciones, copias o permisos como tipos.`
 
 const maxContextos = 5
@@ -158,8 +177,9 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 		if len(trozos) == 0 {
 			res.Motivo = "el índice no devolvió trozos"
 		}
-		res.Respuesta = MarcaSinContexto + " para responder a esa pregunta: no encontré nada relacionado en los documentos indexados."
-		return res, r.registrarFallo(res)
+		res.Sugerencias = sugerencias(candidatos, pregunta)
+		res.Respuesta = RespuestaSinContexto(len(res.Sugerencias) > 0)
+		return res, r.registrarFallo(res, o)
 	}
 
 	var ctxTxt strings.Builder
@@ -210,7 +230,9 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 	if DiceSinContexto(texto) {
 		res.SinContexto = true
 		res.Motivo = "el modelo dijo que el contexto no alcanza"
-		return res, r.registrarFallo(res)
+		res.Sugerencias = sugerencias(candidatos, pregunta)
+		res.Respuesta = RespuestaSinContexto(len(res.Sugerencias) > 0)
+		return res, r.registrarFallo(res, o)
 	}
 	return res, nil
 }
@@ -404,8 +426,31 @@ func DiceSinContexto(texto string) bool {
 	return false
 }
 
-func (r *RAG) registrarFallo(res Respuesta) error {
-	if r.RutaFallos == "" {
+// sugerencias toma las preguntas del banco (tarjetas FAQ) más cercanas entre
+// los candidatos, distintas de la pregunta hecha.
+func sugerencias(candidatos []almacen.Resultado, pregunta string) []string {
+	orden := append([]almacen.Resultado(nil), candidatos...)
+	sort.SliceStable(orden, func(i, j int) bool { return orden[i].Distancia < orden[j].Distancia })
+	propia := claveCita(strings.Trim(pregunta, "¿?¡! "))
+	var out []string
+	vistas := map[string]bool{propia: true}
+	for _, c := range orden {
+		p := strings.TrimSpace(c.Metadata["pregunta"])
+		k := claveCita(strings.Trim(p, "¿?¡! "))
+		if p == "" || vistas[k] {
+			continue
+		}
+		vistas[k] = true
+		out = append(out, p)
+		if len(out) == maxSugerencias {
+			break
+		}
+	}
+	return out
+}
+
+func (r *RAG) registrarFallo(res Respuesta, o Opciones) error {
+	if r.RutaFallos == "" || o.SinRegistro {
 		return nil
 	}
 	r.mu.Lock()

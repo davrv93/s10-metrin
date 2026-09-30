@@ -80,45 +80,17 @@ func Ejecutar(ctx context.Context, o Origen, a *almacen.Almacen, log func(string
 			inf.Iguales++
 			continue
 		}
-		contenido, err := d.Cargar(ctx)
+		n, err := indexarDoc(ctx, o, d, a)
 		if err != nil {
-			return inf, fmt.Errorf("leer %s: %w", d.Clave, err)
-		}
-		textos := trocear.Preparar(d.Ruta, contenido)
-		if d.Busqueda != "" {
-			textos = []string{strings.TrimSpace(contenido)}
-		}
-		ext := strings.ToLower(path.Ext(d.Ruta))
-		trozos := make([]almacen.Trozo, len(textos))
-		for n, t := range textos {
-			metadata := map[string]string{
-				"source": o.Fuente(),
-				"type":   Tipo(d.Ruta),
-				"ext":    ext,
-				"path":   d.Ruta,
-				"chunk":  fmt.Sprint(n),
-				"cita":   o.Cita(d, n),
-			}
-			for k, v := range d.Metadata {
-				metadata[k] = v
-			}
-			trozos[n] = almacen.Trozo{
-				ID:       almacen.IDTrozo(d.Clave, n),
-				Texto:    t,
-				Busqueda: d.Busqueda,
-				Metadata: metadata,
-			}
-		}
-		if err := a.Reemplazar(ctx, d.Clave, o.Fuente(), d.Version, trozos); err != nil {
 			return inf, err
 		}
-		inf.Trozos += len(trozos)
+		inf.Trozos += n
 		if existia {
 			inf.Cambiados++
-			log("  ~ %s (%d trozos)", d.Clave, len(trozos))
+			log("  ~ %s (%d trozos)", d.Clave, n)
 		} else {
 			inf.Nuevos++
-			log("  + %s (%d trozos)", d.Clave, len(trozos))
+			log("  + %s (%d trozos)", d.Clave, n)
 		}
 	}
 	for _, clave := range a.Claves(o.Fuente()) {
@@ -134,4 +106,52 @@ func Ejecutar(ctx context.Context, o Origen, a *almacen.Almacen, log func(string
 		}
 	}
 	return inf, a.Guardar()
+}
+
+// IndexarUno añade o reemplaza un solo documento sin tocar el resto del
+// origen (lo usa el aprendizaje en vivo) y persiste el estado.
+func IndexarUno(ctx context.Context, o Origen, d Documento, a *almacen.Almacen) error {
+	if prev, ok := a.Estado(d.Clave); ok && prev.Version == d.Version {
+		return nil
+	}
+	if _, err := indexarDoc(ctx, o, d, a); err != nil {
+		return err
+	}
+	return a.Guardar()
+}
+
+func indexarDoc(ctx context.Context, o Origen, d Documento, a *almacen.Almacen) (int, error) {
+	contenido, err := d.Cargar(ctx)
+	if err != nil {
+		return 0, fmt.Errorf("leer %s: %w", d.Clave, err)
+	}
+	textos := trocear.Preparar(d.Ruta, contenido)
+	if d.Busqueda != "" {
+		textos = []string{strings.TrimSpace(contenido)}
+	}
+	ext := strings.ToLower(path.Ext(d.Ruta))
+	trozos := make([]almacen.Trozo, len(textos))
+	for n, t := range textos {
+		metadata := map[string]string{
+			"source": o.Fuente(),
+			"type":   Tipo(d.Ruta),
+			"ext":    ext,
+			"path":   d.Ruta,
+			"chunk":  fmt.Sprint(n),
+			"cita":   o.Cita(d, n),
+		}
+		for k, v := range d.Metadata {
+			metadata[k] = v
+		}
+		trozos[n] = almacen.Trozo{
+			ID:       almacen.IDTrozo(d.Clave, n),
+			Texto:    t,
+			Busqueda: d.Busqueda,
+			Metadata: metadata,
+		}
+	}
+	if err := a.Reemplazar(ctx, d.Clave, o.Fuente(), d.Version, trozos); err != nil {
+		return 0, err
+	}
+	return len(trozos), nil
 }

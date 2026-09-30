@@ -22,6 +22,7 @@ import (
 	"time"
 
 	"rag-go/internal/almacen"
+	"rag-go/internal/aprender"
 	"rag-go/internal/clasificar"
 	"rag-go/internal/config"
 	"rag-go/internal/embed"
@@ -363,9 +364,25 @@ func cmdServe(ctx context.Context, cfg config.Config, args []string) error {
 	if err != nil {
 		return err
 	}
+	diario, err := aprender.Abrir(cfg.DirDatos)
+	if err != nil {
+		return fmt.Errorf("aprendizaje: %w", err)
+	}
+	if cfg.HoraAprender != "" {
+		if err := diario.ProgramarNoche(ctx, r, cfg.HoraAprender, logf); err != nil {
+			return err
+		}
+	}
+	if cfg.TokenAdmin == "" {
+		logf("API admin desactivada (define RAG_ADMIN_TOKEN para métricas y aprendizaje)")
+	}
 	srv := &http.Server{
-		Addr:              *addr,
-		Handler:           servidor.Nuevo(r, time.Duration(cfg.TimeoutSeg)*time.Second),
+		Addr: *addr,
+		Handler: servidor.Nuevo(r, servidor.Opciones{
+			Timeout:    time.Duration(cfg.TimeoutSeg) * time.Second,
+			Diario:     diario,
+			TokenAdmin: cfg.TokenAdmin,
+		}),
 		ReadHeaderTimeout: 10 * time.Second,
 	}
 	go func() {

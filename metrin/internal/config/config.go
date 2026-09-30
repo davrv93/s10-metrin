@@ -27,6 +27,9 @@ type Config struct {
 	S3Endpoint, S3Region, S3AccessKey, S3SecretKey, S3Bucket string
 
 	Puerto string
+
+	TokenAdmin   string // RAG_ADMIN_TOKEN: protege /admin/api/ (vacío = desactivada)
+	HoraAprender string // RAG_HORA_APRENDER: repaso nocturno «HH:MM» ("" = apagado)
 }
 
 // CargarEnv mete en el entorno las claves del fichero que no estén ya
@@ -78,6 +81,8 @@ func Leer() Config {
 		S3SecretKey:    os.Getenv("S3_SECRET_KEY"),
 		S3Bucket:       def("S3_BUCKET", "rag-demo"),
 		Puerto:         def("RAG_PUERTO", "4760"),
+		TokenAdmin:     os.Getenv("RAG_ADMIN_TOKEN"),
+		HoraAprender:   horaAprender(),
 	}
 }
 
@@ -93,4 +98,16 @@ func num(k string, d float64) float64 {
 		return v
 	}
 	return d
+}
+
+// horaAprender: por defecto a las 02:00; RAG_HORA_APRENDER=off lo apaga.
+func horaAprender() string {
+	switch v := strings.TrimSpace(os.Getenv("RAG_HORA_APRENDER")); strings.ToLower(v) {
+	case "":
+		return "02:00"
+	case "off", "no", "0":
+		return ""
+	default:
+		return v
+	}
 }
