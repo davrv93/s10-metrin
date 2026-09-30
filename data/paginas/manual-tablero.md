@@ -2,7 +2,5 @@
 
 Fuente: https://documentacion.s10peru.com/manual-tablero/
 
-Debes acceder para ver éste contenido. Por favor
-Acceder
-. ¿Aún no eres miembro?
-Únete a nosotros
+Visita el nuevo Manual de Tablero S10 haciendo
+clic aquí

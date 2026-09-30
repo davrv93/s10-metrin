@@ -336,5 +336,18 @@
   "sin_texto": false,
   "confianza": "tercero-sin-verificar",
   "ocr": true
+ },
+ {
+  "id": "744fa2c4ed08",
+  "titulo": "aquí",
+  "manual": "Descargas - Portal de Ayuda S10",
+  "archivo": "pdf/asistencia-remota-anydesk.pdf",
+  "fuente": "https://www.s10peru.com/wp-content/uploads/2020/01/Asistencia-Remota-Anydesk.pdf",
+  "pagina_web": "https://documentacion.s10peru.com/descargas/",
+  "paginas": 4,
+  "fragmentos": 2,
+  "sin_texto": false,
+  "confianza": "oficial",
+  "ocr": true
  }
 ]

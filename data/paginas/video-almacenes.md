@@ -2,7 +2,21 @@
 
 Fuente: https://documentacion.s10peru.com/video-almacenes/
 
-Debes acceder para ver éste contenido. Por favor
-Acceder
-. ¿Aún no eres miembro?
-Únete a nosotros
+Videos sobre el módulo de Almacenes S10 ERP
+Categoría: Almacenes
+Reproducir vídeo
+Regularización Simple
+Categoría: Almacenes
+Reproducir vídeo
+Regularizaciones
+Categoría: Almacenes
+Reproducir vídeo
+Transferencia entre almacenes
+Categoría: Facturación & Almacenes
+Reproducir vídeo
+Regresión
+Categoría: Almacenes
+Reproducir vídeo
+Transferencia entre almacenes
+Categoría: Almacenes
+Tag: Pedidos

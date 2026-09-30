@@ -2,7 +2,9 @@
 
 Fuente: https://documentacion.s10peru.com/video-nominas/
 
-Debes acceder para ver éste contenido. Por favor
-Acceder
-. ¿Aún no eres miembro?
-Únete a nosotros
+Videos sobre el módulo de Nóminas S10 ERP
+Categoría: Nóminas
+NUEVO APORTE FONDO DE CAPACITACION EN CONSTRUCCION CIVIL
+Categoría: Nóminas
+CONFIGURACION DEL NUEVO VALOR UIT PARA EL 2024
+Categoría: Nóminas

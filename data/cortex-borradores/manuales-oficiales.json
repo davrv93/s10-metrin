@@ -1,0 +1,689 @@
+[
+ {
+  "path": "manuales-oficiales",
+  "title": "Manuales oficiales S10 (portal de miembros)",
+  "summary": "58 manuales oficiales de documentacion.s10peru.com bajados con la cuenta de miembro. Es la fuente de mayor confianza: si otra fuente la contradice, manda esta.",
+  "body": "Base oficial de conocimiento de S10. Cada hijo es una página del portal de miembros con sus PDF, su índice y el enlace a la fuente. Se regenera con `s10kb.py oficial`.\n\n## Prioridad\n\n1. **Manuales oficiales** (esta rama) y PDF públicos de s10peru.com.\n2. Videos del canal oficial.\n3. Casos académicos y copias de terceros: solo si lo oficial no cubre el tema, y avisando.\n\n## Manuales\n\n| Manual | Módulo | PDF | Nodo |\n|---|---|---|---|\n| [Manual Portal Asistencia](https://documentacion.s10peru.com/acceso-manual-portal-asistencia/) | portales | 0 | `manuales-oficiales/portal-asistencia` |\n| [Manual Portal Facturación Electrónica](https://documentacion.s10peru.com/acceso-a-manual-portal-facturacion-electronica/) | portales | 0 | `manuales-oficiales/portal-facturacion-electronica` |\n| [Manual Portal Proveedores – Compras y Almacén](https://documentacion.s10peru.com/acceso-a-manual-portal-proveedores-compras-y-almacen/) | portales | 0 | `manuales-oficiales/portal-proveedores-compras-y-almacen` |\n| [Manual Portal Suministros](https://documentacion.s10peru.com/acceso-a-manual-portal-suministros/) | portales | 0 | `manuales-oficiales/portal-suministros` |\n| [Manual de Aprobaciones Móviles](https://documentacion.s10peru.com/manual-aprobaciones/) | — | 0 | `manuales-oficiales/aprobaciones-moviles` |\n| [Manual de Muros](https://documentacion.s10peru.com/manual-muros/) | — | 0 | `manuales-oficiales/muros` |\n| [Manual de Pedidos Móviles](https://documentacion.s10peru.com/manual-pedidos-moviles/) | compras | 0 | `manuales-oficiales/pedidos-moviles` |\n| [Manual de Tablero Web](https://documentacion.s10peru.com/manual-tablero/) | — | 0 | `manuales-oficiales/tablero-web` |\n| [Manual del Colaborador](https://documentacion.s10peru.com/manual-del-colaborador/) | — | 0 | `manuales-oficiales/del-colaborador` |\n| [Actualización de S10 (Instalación de revisiones)](https://documentacion.s10peru.com/actualizacion-s10-instalacion-revisiones/) | soporte | 0 | `manuales-oficiales/actualizacion-de-s10-instalacion-de-revisiones` |\n| [Administración](https://documentacion.s10peru.com/administracion/) | administrativo | 0 | `manuales-oficiales/administracion` |\n| [Almacenes](https://documentacion.s10peru.com/almacenes/) | almacenes | 0 | `manuales-oficiales/almacenes` |\n| [Anulación de Ventas](https://documentacion.s10peru.com/anulacion-de-ventas/) | facturacion | 0 | `manuales-oficiales/anulacion-de-ventas` |\n| [Asignar código de producto Sunat](https://documentacion.s10peru.com/asignar-codigo-de-producto-sunat/) | — | 0 | `manuales-oficiales/asignar-codigo-de-producto-sunat` |\n| [Cambio de Titular con Minuta](https://documentacion.s10peru.com/cambio-de-titular-con-minuta/) | — | 0 | `manuales-oficiales/cambio-de-titular-con-minuta` |\n| [Configuración de Integración Sperant con S10 ERP – Proceso General](https://documentacion.s10peru.com/configuracion-integracion-sperant-s10/) | — | 0 | `manuales-oficiales/configuracion-de-integracion-sperant-con-s10-erp-proceso-gen` |\n| [Configuración del catálogo de NO deducibles](https://documentacion.s10peru.com/configuracion-del-catalogo-de-no-deduciblesfact/) | — | 0 | `manuales-oficiales/configuracion-del-catalogo-de-no-deducibles` |\n| [Configuración para Cierre y Apertura](https://documentacion.s10peru.com/configuracion-para-cierre-apertura/) | — | 0 | `manuales-oficiales/configuracion-para-cierre-y-apertura` |\n| [Configurar escenario: Reparto de Utilidades](https://documentacion.s10peru.com/configurar-escenario-reparto-utilidades/) | — | 0 | `manuales-oficiales/configurar-escenario-reparto-de-utilidades` |\n| [Confirming](https://documentacion.s10peru.com/confirming/) | — | 0 | `manuales-oficiales/confirming` |\n| [Cómo realizar una copia de seguridad de base de datos](https://documentacion.s10peru.com/realizar-copia-seguridad-base-datos/) | — | 0 | `manuales-oficiales/como-realizar-una-copia-de-seguridad-de-base-de-datos` |\n| [Descargas - Portal de Ayuda S10](https://documentacion.s10peru.com/descargas/) | portales | 1 | `manuales-oficiales/descargas-portal-de-ayuda-s10` |\n| [El proceso de instalación de Microsoft SQL Server](https://documentacion.s10peru.com/proceso-instalacion-microsoft-sql-server/) | soporte | 0 | `manuales-oficiales/el-proceso-de-instalacion-de-microsoft-sql-server` |\n| [Ingresos por Identificar – Procesos de IPI](https://documentacion.s10peru.com/ingresos-identificar-proceso-ipi/) | — | 0 | `manuales-oficiales/ingresos-por-identificar-procesos-de-ipi` |\n| [Manual Administrativo](https://documentacion.s10peru.com/manual-de-administracion/) | administrativo | 0 | `manuales-oficiales/administrativo` |\n| [Manual de Almacenes](https://documentacion.s10peru.com/manual-de-almacenes/) | almacenes | 0 | `manuales-oficiales/almacenes-2` |\n| [Manual de Aprobaciones](https://documentacion.s10peru.com/manual-de-aprobaciones/) | — | 0 | `manuales-oficiales/aprobaciones` |\n| [Manual de Calidad Móvil](https://documentacion.s10peru.com/manual-de-calidad-movil/) | gerencia-proyectos | 0 | `manuales-oficiales/calidad-movil` |\n| [Manual de Compras](https://documentacion.s10peru.com/manual-de-compras/) | compras | 0 | `manuales-oficiales/compras` |\n| [Manual de Contabilidad](https://documentacion.s10peru.com/manual-de-contabilidad/) | contabilidad | 0 | `manuales-oficiales/contabilidad` |\n| [Manual de Facturación](https://documentacion.s10peru.com/manual-de-facturacion/) | facturacion | 0 | `manuales-oficiales/facturacion` |\n| [Manual de Facturación Electrónica](https://documentacion.s10peru.com/manual-de-facturacion-electronica/) | facturacion | 0 | `manuales-oficiales/facturacion-electronica` |\n| [Manual de Gerencia de Proyectos](https://documentacion.s10peru.com/manual-de-gerencia-proyectos/) | gerencia-proyectos | 0 | `manuales-oficiales/gerencia-de-proyectos` |\n| [Manual de Instalación S10 ERP [VIDEO]](https://documentacion.s10peru.com/manual-instalacion-s10-erp/) | soporte | 0 | `manuales-oficiales/instalacion-s10-erp-video` |\n| [Manual de Integración con CRM Sperant](https://documentacion.s10peru.com/manual-integracion-crm-sperant/) | — | 0 | `manuales-oficiales/integracion-con-crm-sperant` |\n| [Manual de Lean](https://documentacion.s10peru.com/manual-de-lean/) | — | 0 | `manuales-oficiales/lean` |\n| [Manual de Nóminas](https://documentacion.s10peru.com/manual-de-nominas/) | nominas | 0 | `manuales-oficiales/nominas` |\n| [Manual de Presupuestos](https://documentacion.s10peru.com/manual-de-presupuestos/) | presupuestos | 0 | `manuales-oficiales/presupuestos` |\n| [Manual del Portal del Proveedor](https://documentacion.s10peru.com/manual-portal-proveedor/) | portales | 0 | `manuales-oficiales/del-portal-del-proveedor` |\n| [Pasos para el cálculo de Nóminas](https://documentacion.s10peru.com/pasos-para-calculo-nominas-abril-2020/) | nominas | 0 | `manuales-oficiales/pasos-para-el-calculo-de-nominas` |\n| [Preguntas frecuentes](https://documentacion.s10peru.com/preguntas-frecuentes/) | — | 0 | `manuales-oficiales/preguntas-frecuentes` |\n| [Problemas de acceso por el Servicio de SQL Server](https://documentacion.s10peru.com/problemas-acceso-servicio-sql-server/) | — | 0 | `manuales-oficiales/problemas-de-acceso-por-el-servicio-de-sql-server` |\n| [Registro y Boletaje Sperant – S10](https://documentacion.s10peru.com/boletaje/) | — | 0 | `manuales-oficiales/registro-y-boletaje-sperant-s10` |\n| [Video Instalación Presupuesto](https://documentacion.s10peru.com/video-instala-presupuesto/) | presupuestos | 0 | `manuales-oficiales/video-instalacion-presupuesto` |\n| [Videos Tutoriales de Administración](https://documentacion.s10peru.com/video-administracion/) | administrativo | 0 | `manuales-oficiales/videos-tutoriales-de-administracion` |\n| [Videos Tutoriales de Almacenes](https://documentacion.s10peru.com/video-almacenes/) | almacenes | 0 | `manuales-oficiales/videos-tutoriales-de-almacenes` |\n| [Videos Tutoriales de Compras](https://documentacion.s10peru.com/video-compras/) | compras | 0 | `manuales-oficiales/videos-tutoriales-de-compras` |\n| [Videos Tutoriales de Contabilidad](https://documentacion.s10peru.com/video-contabilidad/) | contabilidad | 0 | `manuales-oficiales/videos-tutoriales-de-contabilidad` |\n| [Videos Tutoriales de Facturaciones](https://documentacion.s10peru.com/video-facturacion/) | facturacion | 0 | `manuales-oficiales/videos-tutoriales-de-facturaciones` |\n| [Videos Tutoriales de Lean](https://documentacion.s10peru.com/video-lean/) | — | 0 | `manuales-oficiales/videos-tutoriales-de-lean` |\n| [Videos Tutoriales de Nóminas](https://documentacion.s10peru.com/video-nominas/) | nominas | 0 | `manuales-oficiales/videos-tutoriales-de-nominas` |\n| [Videos Tutoriales de Presupuestos](https://documentacion.s10peru.com/video-presupuestos/) | presupuestos | 0 | `manuales-oficiales/videos-tutoriales-de-presupuestos` |\n| [Videos de Calidad Móvil](https://documentacion.s10peru.com/video-calidad-movil/) | gerencia-proyectos | 0 | `manuales-oficiales/videos-de-calidad-movil` |\n| [Videos de Gerencia de Proyectos](https://documentacion.s10peru.com/video-gerencia-proyectos/) | gerencia-proyectos | 0 | `manuales-oficiales/videos-de-gerencia-de-proyectos` |\n| [Videos de Portal de Facturación Electrónica](https://documentacion.s10peru.com/video-facturacion-electronica/) | portales | 0 | `manuales-oficiales/videos-de-portal-de-facturacion-electronica` |\n| [Videos de Portal del Empleado](https://documentacion.s10peru.com/video-empleado/) | portales | 0 | `manuales-oficiales/videos-de-portal-del-empleado` |\n| [Videos de Portal del Proveedor](https://documentacion.s10peru.com/video-proveedor/) | portales | 0 | `manuales-oficiales/videos-de-portal-del-proveedor` |\n| [Videos de Tareo Móvil](https://documentacion.s10peru.com/video-tareo-movil/) | gerencia-proyectos | 0 | `manuales-oficiales/videos-de-tareo-movil` |\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manuales",
+   "fuentes"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/portal-asistencia",
+  "title": "Manual Portal Asistencia",
+  "summary": "Visita el nuevo Manual del Portal de Asistencia haciendo",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/acceso-manual-portal-asistencia/\n- **Módulo:** `portales` (ver esa rama para el resumen redactado)\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "portales"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/portal-facturacion-electronica",
+  "title": "Manual Portal Facturación Electrónica",
+  "summary": "Visita el nuevo Manual de Facturación Electrónica S10 haciendo",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/acceso-a-manual-portal-facturacion-electronica/\n- **Módulo:** `portales` (ver esa rama para el resumen redactado)\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "portales"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/portal-proveedores-compras-y-almacen",
+  "title": "Manual Portal Proveedores – Compras y Almacén",
+  "summary": "Visita el nuevo Manual de Proveedores S10 – Compras y Almacén haciendo",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/acceso-a-manual-portal-proveedores-compras-y-almacen/\n- **Módulo:** `portales` (ver esa rama para el resumen redactado)\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "portales"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/portal-suministros",
+  "title": "Manual Portal Suministros",
+  "summary": "Visita el nuevo Manual de Suministros S10 haciendo",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/acceso-a-manual-portal-suministros/\n- **Módulo:** `portales` (ver esa rama para el resumen redactado)\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "portales"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/aprobaciones-moviles",
+  "title": "Manual de Aprobaciones Móviles",
+  "summary": "Visita el nuevo Manual de Aprobaciones S10 haciendo",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/manual-aprobaciones/\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/muros",
+  "title": "Manual de Muros",
+  "summary": "Manual oficial de S10 publicado en el portal de miembros: Manual de Muros.",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/manual-muros/\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/pedidos-moviles",
+  "title": "Manual de Pedidos Móviles",
+  "summary": "Visita nuevo Manual de Pedidos S10 haciendo",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/manual-pedidos-moviles/\n- **Módulo:** `compras` (ver esa rama para el resumen redactado)\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "compras"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/tablero-web",
+  "title": "Manual de Tablero Web",
+  "summary": "Visita el nuevo Manual de Tablero S10 haciendo",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/manual-tablero/\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/del-colaborador",
+  "title": "Manual del Colaborador",
+  "summary": "Visita el nuevo Manual de Colaborador S10 haciendo",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/manual-del-colaborador/\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/actualizacion-de-s10-instalacion-de-revisiones",
+  "title": "Actualización de S10 (Instalación de revisiones)",
+  "summary": "A fin de que el sistema funcione, se debe procurar mantener el sistema actualizado con las revisiones completas. Si el software esta siendo usado por múltiples usuarios se recomienda realizarlo en un horario que no estén trabajando como bien temprano, antes del inicio de…",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/actualizacion-s10-instalacion-revisiones/\n- **Módulo:** `soporte` (ver esa rama para el resumen redactado)\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "soporte"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/administracion",
+  "title": "Administración",
+  "summary": "Módulo diseñado para la gestión de caja- banco, multiempresa y multisucursal que resuelven eficientemente la gestión financiera de empresas, Pymes y estudios contables. Cómo realizar el pago de una factura afecta a detracción y subir las constancias al sistema 10 Al tener una…",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/administracion/\n- **Módulo:** `administrativo` (ver esa rama para el resumen redactado)\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "administrativo"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/almacenes",
+  "title": "Almacenes",
+  "summary": "El módulo de almacenes es el encargado de administrar los recursos que utiliza el proyecto con los movimientos de ingresos y egresos. Revisa sobre registro de proyectos, egresos, Stock Debido a la inclusión de nuevas normativas obligatorias por parte de SUNAT para el año 2020,…",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/almacenes/\n- **Módulo:** `almacenes` (ver esa rama para el resumen redactado)\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "almacenes"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/anulacion-de-ventas",
+  "title": "Anulación de Ventas",
+  "summary": "Este proceso se realiza cuando la venta cae y se necesita anular la venta completa. En este caso, si ya tiene boletas generadas a partir de los abonos, deberá anularse el proceso desde SPERANT para que se genere la Nota de crédito. **************************** SPERANT…",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/anulacion-de-ventas/\n- **Módulo:** `facturacion` (ver esa rama para el resumen redactado)\n\n## Contenido\n\n- 2. Se debe especificar el motivo de la anulación.\n- 3. Verificar que se inició el proceso de Anulación.\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "facturacion"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/asignar-codigo-de-producto-sunat",
+  "title": "Asignar código de producto Sunat",
+  "summary": "Debido a la inclusión de nuevas normativas obligatorias por parte de SUNAT para el año 2020, S10 está buscando alinearse al incluir un nuevo catálogo para “Código de Productos SUNAT según el estándar UNSPSC” y un escenario para catalogar los recursos existentes en el sistema…",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/asignar-codigo-de-producto-sunat/\n\n## Contenido\n\n- 1. Configuración:\n- 13.1 Registro de Inventario Permanente Valorizado\n- 2. Asignación de Códigos de Producto SUNAT\n- 3. Uso de Códigos de Producto SUNAT en Libros Electrónicos\n- 13.01 Registro del Inventario Permanente Valorizado\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/cambio-de-titular-con-minuta",
+  "title": "Cambio de Titular con Minuta",
+  "summary": "Caso – Abonos Boletados con envió de Minuta Para poder llevar a cabo este proceso debemos cumplir con el Boletaje de todos los abonos enviados desde el Sperant a S10 Previamente debe estar registrado la Orden de Venta y por ende debe ser Sincronizada en el S10 mediante la…",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/cambio-de-titular-con-minuta/\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/configuracion-de-integracion-sperant-con-s10-erp-proceso-gen",
+  "title": "Configuración de Integración Sperant con S10 ERP – Proceso General",
+  "summary": "En el siguiente Gráfico se detalla el proceso de relación Sperant y S10 La integración de ambas aplicaciones le permitirá como empresa gestionar sus proyectos inmobiliarios de manera integral y eficiente. La configuración se realiza en el módulo de Facturación, doble clic en el…",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/configuracion-integracion-sperant-s10/\n\n## Contenido\n\n- 1. Generalidades\n- 1.1. Acceso al módulo\n- 2. Configuración\n- 3. Sincronización de Proyectos\n- 4. Sincronización de Unidades\n- 5. Órdenes de Venta\n- 6. Registro de Cuentas Bancarias:\n- 7. Registro de Libro Caja\n- 8. Conciliación Bancaria\n- 9. Boletaje\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/configuracion-del-catalogo-de-no-deducibles",
+  "title": "Configuración del catálogo de NO deducibles",
+  "summary": "1.- Revisión de catálogo de No Deducibles: En este Catalogo se adicionan aquellos recursos que se consideraran como gastos no deducibles para que posteriormente cuando se registren facturas y se quiera repartir el gasto en deducible y no deducible lo muestre para ser…",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/configuracion-del-catalogo-de-no-deduciblesfact/\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/configuracion-para-cierre-y-apertura",
+  "title": "Configuración para Cierre y Apertura",
+  "summary": "1.- Definir como cerrar y aperturará el detalle de los saldos por cada cuenta: Ello se realiza desde la cuenta en el plan contable puede realizarlo 1 x 1 o importarlo desde excel (seguir los comentarios de la imagen). 2.- Definir la dinámica de cierre de manera ordenada: Se…",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/configuracion-para-cierre-apertura/\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/configurar-escenario-reparto-de-utilidades",
+  "title": "Configurar escenario: Reparto de Utilidades",
+  "summary": "1. Adicionar los conceptos de días trabajados o montos ganados para que estos sean considerados en el cálculo. Realizar la configuración de la siguiente manera: De igual modo para los conceptos de montos ganados: 2. El periodo, la planilla de pago (esta configuración es propia…",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/configurar-escenario-reparto-utilidades/\n\n## Contenido\n\n- 3. Procesar:\n- 5. Cómo eliminar una planilla de pago por utilidades.\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/confirming",
+  "title": "Confirming",
+  "summary": "Considerar que en las últimas actualizaciones de S10 de fecha Marzo 2020 estos formatos ya fueron incluidos para todos los bancos, por lo que si no cuenta con este, debe actualizar su S10 o contactar con el área de Soporte. Otro requisito necesario, consiste en tener un tipo de…",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/confirming/\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/como-realizar-una-copia-de-seguridad-de-base-de-datos",
+  "title": "Cómo realizar una copia de seguridad de base de datos",
+  "summary": "Abre tu Módulo de S10, ve al escenario de «Mantenimiento de Base de datos», dale clic en el botón Después escogemos la base de datos que deseamos que sea copiada, y le damos clic en el botón ‘ Le asignamos un nombre a la copia de la base de datos  y le damos clic en ‘ Luego de…",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/realizar-copia-seguridad-base-datos/\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/descargas-portal-de-ayuda-s10",
+  "title": "Descargas - Portal de Ayuda S10",
+  "summary": "Template File: WP Page Template > Elementor - header-footer.php Página para descargas de archivos útiles para usuarios del S10 ERP. Acceso solo para clientes. Descarga de Instaladores y Actualizaciones Con esta herramienta nuestro equipo de Soporte, podrá ayudarte en la…",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/descargas/\n- **Módulo:** `portales` (ver esa rama para el resumen redactado)\n\n## PDF\n\n| Documento | Páginas | Fragmentos en la KB |\n|---|---|---|\n| [aquí](https://www.s10peru.com/wp-content/uploads/2020/01/Asistencia-Remota-Anydesk.pdf) | 4 | 2 |\n\n## Contenido\n\n- 9 Sitios recientes\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "portales"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/el-proceso-de-instalacion-de-microsoft-sql-server",
+  "title": "El proceso de instalación de Microsoft SQL Server",
+  "summary": "Este documento va dirigido a profesionales de tecnología interesados en entender el proceso de instalación de Microsoft SQL Server, sus componentes, las recomendaciones de seguridad y el significado de todas las opciones disponibles durante dicho proceso. Si bien la instalación…",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/proceso-instalacion-microsoft-sql-server/\n- **Módulo:** `soporte` (ver esa rama para el resumen redactado)\n\n## Contenido\n\n- 1. Decidir la edición de SQL Server que se desea instalar\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "soporte"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/ingresos-por-identificar-procesos-de-ipi",
+  "title": "Ingresos por Identificar – Procesos de IPI",
+  "summary": "Los IPIS son aquellos abonos que han sido depositados en la cuenta recaudadora pero que aun no han sido identificados. Mediante el modulo de facturación se debe ubicar la siguiente opción en forma de tuerca Debe ubicar la pestaña Sperant (3) es aquí donde se realizará la…",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/ingresos-identificar-proceso-ipi/\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/administrativo",
+  "title": "Manual Administrativo",
+  "summary": "Las ventanas que presenta el S10 se asemejan a un escritorio donde tiene todos los documentos necesarios para trabajar en forma ordenada. El entorno de trabajo es el mismo casi en todos los escenarios, a continuación se describe las partes de un escenario. con doble clic, luego…",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/manual-de-administracion/\n- **Módulo:** `administrativo` (ver esa rama para el resumen redactado)\n\n## Contenido\n\n- 1. Introducción\n- 1.1 La carpeta de trabajo\n- 1.2 Acceso al módulo administrativo\n- 2. Inicio\n- 2.1 Registro de Socios de Negocios para los Bancos\n- 2.2 Registro del catálogo de Bancos\n- 2.3 Definición de usuarios y sus accesos\n- 2.4 Definición de aprobadores, moneda y monto para aprobación\n- 2.5 Definición de cuentas bancarias por empresas\n- 2.6 Definición de saldos iniciales de cuentas bancarias\n- 2.7 Definición de talonarios para cheques\n- 3. Caja\n- 3.1 Registro de Libros Caja por periodo\n- 3.2 Registro de Diario de caja\n- 3.3 Registro de cobranza por efectivo\n- 3.4 Registro de cobranza por cheque\n- 3.5 Registro de cobranza por el depósito bancario\n- 3.6 Registro de cobranza por la detracción\n- 3.7 Registro de cobranza por la aplicación de la nota de crédito\n- 3.8 Registro de cobranza por canje de letras\n- 3.9 Registro de cobranza por ajuste de redondeo\n- 3.10 Registro de pago en efectivo de documentos por pagar\n- 3.11 Registro de transferencias a cuentas bancarias de efectivos y cheques\n- 3.12 Registro de egresos e ingresos de transferencia a otra caja\n- 3.13 Registro de liquidaciones por planilla de cobranza\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "administrativo"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/almacenes-2",
+  "title": "Manual de Almacenes",
+  "summary": "El módulo de almacenes es el encargado de administrar los recursos que utiliza el proyecto con los movimientos de ingresos y egresos, proporciona información al módulo de Gerencia de proyectos para los resultados operativos del costo de los recursos tipo material. También…",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/manual-de-almacenes/\n- **Módulo:** `almacenes` (ver esa rama para el resumen redactado)\n\n## Contenido\n\n- 1. ALMACENES DEL S10 ERP\n- 1.1 Entorno de\n- 1.1.1 Barra de títulos\n- 1.1.2 Barra de menús\n- 1.1.3 Barra de herramientas estándar\n- 1.1.4 Barra de vistas\n- 1.1.5 Árbol\n- 1.3 Funcionamiento del módulo de almacenes\n- 1.4 Acceso al módulo de Almacenes\n- 1.5 Ingrese al módulo de Almacenes como sa\n- 1.6 Tipo de documento de SUNAT\n- 1.6.1 Tipo de Documento\n- 2. Registro del proyecto\n- 2.1.1 Definir techo al proyecto\n- 2.1.2 Registro del aprobador de los pedidos en el almacén\n- 2.1.3 Tipos de recurso que manejará el almacén\n- 2.1.4 Usuarios por proyecto\n- 2.2 Temas generales\n- 2.2.1 Búsqueda global\n- 2.2.2 Búsqueda local\n- 2.2.3 Registro de recursos en el catálogo\n- 2.4 Verifique el registro de los Equipos disponibles\n- 2.5 Verifique el registro de las Unidades operativas y los Roles\n- 2.6 Verifique el registro de la Ubicación física\n- 2.7 Descripción de los escenarios de Ingresos y Egresos\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "almacenes"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/aprobaciones",
+  "title": "Manual de Aprobaciones",
+  "summary": "1.1 Qué es la Aplicación de Aprobaciones S10 Es una aplicación móvil conectada a S10 ERP, que permite a las personas designadas como aprobadores, tomar decisiones de aprobar, observar o rechazar un documento. ● Agilizar la toma de decisiones para su ejecución oportuna. ●…",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/manual-de-aprobaciones/\n\n## Contenido\n\n- 1. Generalidades\n- 1.1 Qué es la Aplicación de Aprobaciones S10\n- 1.2 Objetivos de la Aplicación:\n- 1.3 Hagamos un tour:\n- 1.3.1 Descarga la Aplicación :\n- 1.3.2 Acceder a la Aplicación:\n- 1.3.3 Vista General:\n- 2. Manual para el usuario Aprobador\n- 2.1 Los tipos de solicitudes:\n- 2.2 Busca y elige solicitud que deseas revisar:\n- 2.3 Aprueba, Observa o Rechaza una solicitud:\n- 2.4 Deja una observación:\n- 2.5 Revisa cada tipo de solicitud:\n- 2.5.1 Pedidos:\n- 2.5.2 Orden de Pago:\n- 2.5.3 Orden de Compra:\n- 2.5.4 Orden de Servicio:\n- 2.5.5 Contratos o Subcontratos:\n- 2.5.6 Subcontrato de valorización:\n- 2.5.7 Subcontrato de autorización de cobranza:\n- 2.5.8 Subcontrato de autorizaciones de pago:\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/calidad-movil",
+  "title": "Manual de Calidad Móvil",
+  "summary": "Calidad móvil es un servicio en la nube que S10 brinda a los usuarios del S10 ERP edición Especial. Esta aplicación permite realizar control de calidad a las actividades de un proyecto en un dispositivo móvil, Celular o Tablet. Permite el registro de la información en forma…",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/manual-de-calidad-movil/\n- **Módulo:** `gerencia-proyectos` (ver esa rama para el resumen redactado)\n\n## Contenido\n\n- 1. CALIDAD MÓVIL PARA EL ERP\n- 1.1 Generalidades\n- 1.1.1 Servicio\n- 1.1.2 Esquema General\n- 1.2 Registro de información\n- 1.2.1. Asignación de Protocolos\n- 1.2.2 Publicación de Actividades del Proyecto\n- 1.2.3 Actividades de Aplicación Móvil – Calidad Móvil\n- 1.2.4. Cierre del proyecto\n- 2. CALIDAD MÓVIL PARA LA APP\n- 2.1 Instalación\n- 2.1.1 Instalación y configuración\n- 2.2. Producción\n- 2.2.1. Calidad de Responsables\n- 2.2.2. Acumulado de fallas\n- 2.2.3. Tipo de Falla\n- 2.3. Otros\n- 2.3.1. Indicadores de Sincronización\n- 2.3.2. Indicadores de Toma de Datos\n- 2.3.3 Sincronizar Descarga\n- 2.3.4. Sincronizar Carga\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "gerencia-proyectos"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/compras",
+  "title": "Manual de Compras",
+  "summary": "Este programa permite una administración del proceso de procura (pedido y compra). La gestión logística dentro del Proyecto, abarca desde el pedido o requerimiento de los recursos tipo material hasta la compra y el almacenamiento. El proceso empieza después de la planificación…",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/manual-de-compras/\n- **Módulo:** `compras` (ver esa rama para el resumen redactado)\n\n## Contenido\n\n- 1. Generalidades\n- 1.2 Labores del sa\n- 1.2 Labores del usuario\n- 1.4 La carpeta de trabajo\n- 1.5  Opciones del menú Catálogos\n- 1.6 Opciones del menú Herramientas\n- 1.7 Barra de herramientas estándar\n- 2. Acceso al módulo de Compras y pedidos con sa\n- 3. General\n- 3.1 Formas de búsqueda en los catálogos\n- 3.2 Registro de recursos en el catálogo\n- 3.3 Usuarios que manejan el módulo y aprobadores\n- 3.4 Partidas de Control\n- 3.5 Destinos específicos\n- 4. Uso del módulo de Compras y Pedidos por parte del usuario\n- 4.1  Registro del Centro de compra\n- 4.2 Aprobadores de las órdenes de compra y servicio\n- 4.3 Registro de usuarios que aprobarán los pedidos\n- 4.4 Pie de Orden de Compra\n- 5. Clasificación de recursos\n- 5.1 Por la Forma de Abastecimiento\n- 5.2 Forma de Pedido\n- 5.3 Clasificación de Materiales ABC\n- 5.4 Clasificación de los recursos por la Forma de Pedido\n- 5.5 Clasificación de recursos por la Forma de Abastecimiento\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "compras"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/contabilidad",
+  "title": "Manual de Contabilidad",
+  "summary": "Las ventanas que presenta el S10 se asemejan a un escritorio donde tiene todos los documentos necesarios para trabajar en forma ordenada. El entorno de trabajo es el mismo casi en todos los escenarios, a continuación se describe las partes de un escenario. Esta ventana permite…",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/manual-de-contabilidad/\n- **Módulo:** `contabilidad` (ver esa rama para el resumen redactado)\n\n## Contenido\n\n- 1 Introducción\n- 1.1 La carpeta de trabajo\n- 1.2 Acceso al módulo de Contabilidad\n- 2 Catálogos\n- 2.1 Moneda\n- 2.2 Forma de Pago\n- 2.3 Tipo de cambio\n- 2.4 Proyectos\n- 2.5 Socio de Negocio\n- 2.5.1 Clientes\n- 2.5.2 Proveedores\n- 2.6 Tipo de Impuestos\n- 2.7 Tipo de Documentos\n- 2.8 Detracción – Percepción\n- 2.9 Retención, Percepción y Buenos Contribuyentes\n- 2.10 Catálogo de Categorías\n- 2.11 Catálogo de Cuentas Genéricas\n- 3 Accesos\n- 3.1 Creación de las empresas y sucursales\n- 4 Parametros\n- 4.1 Plan de Cuentas\n- 4.1.1 Creación del Plan de Cuentas\n- 4.1.2 Propiedades de la Cuenta\n- 4.1.3 Configuración de Cuentas Genéricas\n- 4.1.4 Pestaña Cuentas Reflejas\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "contabilidad"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/facturacion",
+  "title": "Manual de Facturación",
+  "summary": "Las ventanas que presenta el S10 se asemejan a un escritorio donde tiene todos los documentos necesarios para trabajar en forma ordenada. El entorno de trabajo es el mismo casi en todos los escenarios, a continuación se describe las partes de un escenario. Del tapiz de su PC…",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/manual-de-facturacion/\n- **Módulo:** `facturacion` (ver esa rama para el resumen redactado)\n\n## Contenido\n\n- 1 Introducción\n- 1.1 La carpeta de trabajo\n- 1.2 Acceso al módulo de Facturación\n- 2. Catálogos\n- 2.1 Moneda\n- 2.2 Forma de Pago\n- 2.3 Tipo de cambio\n- 2.4 Proyectos\n- 2.5 Socio de Negocio\n- 2.5.1 Clientes\n- 2.5.2 Proveedores\n- 2.6 Tipo de Impuestos\n- 2.7 Tipo de Documentos\n- 2.8 Detracción\n- 2.9 Retención, Percepción y Buenos Contribuyentes\n- 3 Accesos\n- 3.1 Creación de las empresas y sucursales\n- 3.2 Definición de usuarios y sus accesos\n- 3.3 Definición de Centros de Costos\n- 3.4 Configuración general de registro de documentos\n- 3.5 Periodos contables\n- 3.6 Talonarios\n- 3.6.1 Documentos\n- 3.6.2 Comprobantes de Retención\n- 4. Ventas\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "facturacion"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/facturacion-electronica",
+  "title": "Manual de Facturación Electrónica",
+  "summary": "La Factura Electrónica es un documento tributario en formato digital, que está a disposición de todos los contribuyentes. Este documento permitirá a las empresas realizar transacciones de emisión/recepción de comprobantes de pago, mejorando el modo de operación actual (emisión…",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/manual-de-facturacion-electronica/\n- **Módulo:** `facturacion` (ver esa rama para el resumen redactado)\n\n## Contenido\n\n- 1. Introducción\n- 1.1 Facturación Electrónica\n- 1.2 Beneficios de Facturación Electrónica\n- 1.3 Servicio del S10\n- 2. Facturación Electrónica en S10\n- 2.1 Configuración\n- 2.1.1 Datos de la Empresa Emisora\n- 2.1.2 Tipos de Documentos\n- 2.1.3 Talonarios\n- 2.1.4 Registro de Clientes\n- 2.2 Envio de Documentos\n- 2.2.1 Edición de Documentos\n- 2.2.2 Envío a Sunat\n- 2.2.3 Envío de Boletas de Venta al Portal\n- 2.2.3 Comunicación de baja\n- 2.2.4 Visualización de documentos\n- 3. Facturación Electrónica para Empresas.\n- 3.1 Acceso al Portal\n- 3.1.1 Autenticación de Usuario\n- 3.1.2 Servicios según el Rol del Usuario\n- 3.1.4 Acceso Anónimo\n- 3.2 Servicio del Portal\n- 3.2.2 Gestión de Usuarios\n- 3.2.1 Buscar Usuario.\n- 13.2.2 Crear Usuario\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "facturacion"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/gerencia-de-proyectos",
+  "title": "Manual de Gerencia de Proyectos",
+  "summary": "Este es un programa que sirve para planificar, ejecutar y controlar proyectos, brinda tecnología con un sentido práctico, adecuado a las normas del PMI y sugerencias del LEAN. Puede utilizarlo en cualquier tipo y tamaño de proyectos, recoge la experiencia de la construcción.…",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/manual-de-gerencia-proyectos/\n- **Módulo:** `gerencia-proyectos` (ver esa rama para el resumen redactado)\n\n## Contenido\n\n- 1 GENERALIDADES\n- 1.1 Integración de la información\n- 1.2 Módulos que participan en la gestión\n- 1.3 Temas generales sobre la gerencia de proyectos\n- 1.3.1 Pilares fundamentales para el manejo de un proyecto\n- 1.3.2 Tamaño de los proyectos\n- 1.3.3 Procesos en el desarrollo del proyecto\n- 1.4 Riesgo\n- 1.4.1 Factores que generan riesgo\n- 1.4.2 Planificación del riesgo\n- 1.4.4 Respaldo financiero para afrontar riesgos\n- 1.5 Los tiempos en la programación\n- 1.6 Tipos de planificación\n- 1.7 Participación de los módulos del S10 en la gestión del proyecto\n- 1.8 Administración del proyecto en conjunto con presupuesto asignado\n- 1.1 Administración del proyecto en conjunto sin presupuesto\n- 1.2 La carpeta de trabajo\n- 1.1 En proyectos de obras electromecánicas\n- 1.2 Registro de información en el catálogo de proyectos\n- 1.3 Acceso al módulo de Gerencia de proyectos con sa\n- 2 PLANIFICACION\n- 2.2 Que evitamos con la falta de planificación\n- 2.3 Ingrese al módulo como usuario\n- 2.4 El proyecto\n- 2.4.1 El proyecto y la contabilidad\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "gerencia-proyectos"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/instalacion-s10-erp-video",
+  "title": "Manual de Instalación S10 ERP [VIDEO]",
+  "summary": "Aprende a cómo instalar el S10 ERP en tu dispositivo windows. 1.- Consideraciones previas para la instalación. Para poder realizar la instalación de S10 en el equipo y poder configurar correctamente el equipo, necesitará poseer un usuario con permisos para instalar o desinstalar…",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/manual-instalacion-s10-erp/\n- **Módulo:** `soporte` (ver esa rama para el resumen redactado)\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "soporte"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/integracion-con-crm-sperant",
+  "title": "Manual de Integración con CRM Sperant",
+  "summary": "Configuración de Integración Sperant con S10 ERP – Proceso General Flujo de Integración En el siguiente Gráfico se detalla el proceso de relación Sperant y S10 1. Generalidades La integración de ambas aplicaciones le permitirá Caso – Abonos Boletados con envió de Minuta Para…",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/manual-integracion-crm-sperant/\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/lean",
+  "title": "Manual de Lean",
+  "summary": "Manual oficial de S10 publicado en el portal de miembros: Manual de Lean.",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/manual-de-lean/\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/nominas",
+  "title": "Manual de Nóminas",
+  "summary": "El módulo de nóminas del S10 es un producto innovador que permite gestionar los procesos de administración de personal y llevar a cabo el cálculo de la nómina. Este módulo cuenta con herramientas ágiles para el control de las horas hombre efectivas y de las ausencias con un…",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/manual-de-nominas/\n- **Módulo:** `nominas` (ver esa rama para el resumen redactado)\n\n## Contenido\n\n- 1. Generalidades\n- 2. Acceso al módulo\n- 2.1 Registro del usuario que manejará el módulo de Nóminas:\n- 2.1.1. Registro de usuarios\n- 2.1.2. Acceso a los catálogos\n- 2.1.3. Ingreso al módulo como usuario\n- 3 CATÁLOGOS\n- 3.1 Catálogo de Socios de Negocio\n- 3.2 Catálogo de Socios de Negocios por Tipo\n- 3.3 Catálogo de Ocupación\n- 3.4 Catálogo de Categorías\n- 3.5 Catálogo de Recursos\n- 3.6 Catálogo de Afiliaciones\n- 3.7 Catálogo de Proyectos\n- 3.8 Catálogo de Lugares\n- 3.9 Catálogo de Logotipos\n- 3.10 Catálogo de Monedas\n- 3.11 Catálogo de Conceptos Genéricos\n- 3.12 Catálogo de Clasificación de Papeletas\n- 3.13 Catálogo de Plantillas de Documentos\n- 3.14 Catálogo de Tablas Planilla Electrónica\n- 3.15 Catálogo de Plan Contable Externo\n- 3.16 Catálogo de Formatos\n- 3.17 Catálogo de Formatos por Empresa\n- 4 CONFIGURACIÓN\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "nominas"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/presupuestos",
+  "title": "Manual de Presupuestos",
+  "summary": "Este es un programa para elaborar presupuestos de todo tipo de obras a partir de los metrados. Permite elaborar hasta tres tipos de presupuesto por obra, el Venta, Meta y Línea Base, los que son asignados a los proyectos que serán utilizados para planificar, ejecutar, controlar…",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/manual-de-presupuestos/\n- **Módulo:** `presupuestos` (ver esa rama para el resumen redactado)\n\n## Contenido\n\n- 1 PRESUPUESTOS\n- 1.1 Introducción\n- 1.2 Tipos de presupuestos\n- 1.3 El presupuesto\n- 1.3.1 Presupuesto de Edificaciones\n- 1.3.2 Presupuesto de un Centro Comercial\n- 1.3.3 Presupuesto de Saneamiento\n- 1.3.4 Presupuesto de una carretera venta y meta\n- 1.3.5 Presupuesto de Instalaciones Eléctricas venta y meta + GG\n- 1.3.6 Presupuesto de Edificaciones venta y meta + GG\n- 1.3.7 Presupuesto Mecánico venta y meta + GG\n- 1.3.8 Presupuesto de un puente venta y meta\n- 1.4 Proyecto utilizado para desarrollar el presupuesto\n- 1.4.1 Metrados del proyecto para elaborar el presupuesto\n- 1.5 Secuencia de uso del módulo de presupuestos\n- 1.6 Partes de la hoja del presupuesto\n- 2 Generalidades\n- 2.1 La carpeta de trabajo\n- 2.2 Configuración\n- 3 Uso del módulo de presupuestos\n- 3.1 Formas de búsqueda en los catálogos\n- 3.1.1 Búsqueda global\n- 3.1.2 Búsqueda local\n- 3.2 Registro de información en el catálogo de presupuestos\n- 3.3 Registro del presupuesto\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "presupuestos"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/del-portal-del-proveedor",
+  "title": "Manual del Portal del Proveedor",
+  "summary": "S10 Portal de Proveedores es una aplicación basada en web que permite consultar la información de pagos y Órdenes de Compra y Servicio registrados y aprobados desde el S10. Este servicio está disponible las 24 horas del día y todos los días del año. El usuario proveedor que…",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/manual-portal-proveedor/\n- **Módulo:** `portales` (ver esa rama para el resumen redactado)\n\n## Contenido\n\n- 1. CALIDAD MOVIL PARA USUARIO PROVEEDOR\n- 1.1 Servicio del S10\n- 1.2 Acceso al Portal\n- 1.2.1 Autenticación del Usuario\n- 1.2.2 Recuperación de contraseña\n- 1.3. Servicios del Portal\n- 1.3.1 Idioma\n- 1.3.2 Facturación\n- 1.3.3 Pagos\n- 1.3.4 Impresión de Comprobantes\n- 1.3.5 Órdenes de Compra y Servicio\n- 1.3.6 Métricas\n- 1.3.7 Gestión de Usuarios\n- 1.3.8 Configuración\n- 2. CALIDAD MOVIL PARA EMPRESA(S10 ERP Especial)\n- 2.1. Configuración\n- 2.1.1 Datos de la empresa\n- 2.1.2 Registro de Proveedores\n- 2.1.3 Configuración en el módulo Administrativo\n- 2.2 Envío de Notificaciones\n- 2.2.1 Configuración inicial\n- 2.2.2 Órdenes de Pago\n- 2.2.3 Pagos\n- 2.2.4 Comprobantes\n- 2.5 Órdenes de Compra / Servicio\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "portales"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/pasos-para-el-calculo-de-nominas",
+  "title": "Pasos para el cálculo de Nóminas",
+  "summary": "1.Primero actualizar el S10 ERP con la Revisión 176 del 07/04/2020 2.Actualizar los % para las AFP’S desde el escenario Se observa que los valores obtenidos para los ítems de las AFP’S no afectos según la norma para este periodo tienen valor 0. La página donde obtiene la…",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/pasos-para-calculo-nominas-abril-2020/\n- **Módulo:** `nominas` (ver esa rama para el resumen redactado)\n\n## Contenido\n\n- 3. Configurar desde el escenario\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "nominas"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/preguntas-frecuentes",
+  "title": "Preguntas frecuentes",
+  "summary": "Haz clic en el botón editar para cambiar este texto. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. 1111 222 un el botón editar para cambiar este texto. Lorem ipsum dolor sit amet, consectetur…",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/preguntas-frecuentes/\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/problemas-de-acceso-por-el-servicio-de-sql-server",
+  "title": "Problemas de acceso por el Servicio de SQL Server",
+  "summary": "Cuando el servicio de SQL Server de la base de datos o del equipo donde se encuentran las licencias se detiene debido a algún conflicto con el sistema o no inicia automáticamente luego de encender o reiniciar, al intentar ingresar al S10, el aplicativo mostrará  los siguientes…",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/problemas-acceso-servicio-sql-server/\n\n## Contenido\n\n- 3. Clic derecho sobre el servicio y presionar Iniciar.\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/registro-y-boletaje-sperant-s10",
+  "title": "Registro y Boletaje Sperant – S10",
+  "summary": "Caso – Abonos Boletados con envió de Minuta Para poder llevar a cabo este proceso debemos cumplir con el Boletaje de todos los abonos enviados desde el Sperant a S10. Previamente debe estar registrado la Orden de Venta y por ende debe ser Sincronizada en el S10 mediante la…",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/boletaje/\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/video-instalacion-presupuesto",
+  "title": "Video Instalación Presupuesto",
+  "summary": "Este contenido no está disponible para tu nivel de membresía.",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/video-instala-presupuesto/\n- **Módulo:** `presupuestos` (ver esa rama para el resumen redactado)\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "presupuestos"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/videos-tutoriales-de-administracion",
+  "title": "Videos Tutoriales de Administración",
+  "summary": "Videos sobre el módulo de Administración S10 ERP Tema definición  de aprobación de orden de pago, registro, envío y aprobación.",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/video-administracion/\n- **Módulo:** `administrativo` (ver esa rama para el resumen redactado)\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "administrativo"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/videos-tutoriales-de-almacenes",
+  "title": "Videos Tutoriales de Almacenes",
+  "summary": "Videos sobre el módulo de Almacenes S10 ERP",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/video-almacenes/\n- **Módulo:** `almacenes` (ver esa rama para el resumen redactado)\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "almacenes"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/videos-tutoriales-de-compras",
+  "title": "Videos Tutoriales de Compras",
+  "summary": "Videos sobre el módulo de Compras S10 ERP",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/video-compras/\n- **Módulo:** `compras` (ver esa rama para el resumen redactado)\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "compras"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/videos-tutoriales-de-contabilidad",
+  "title": "Videos Tutoriales de Contabilidad",
+  "summary": "Videos sobre el módulo de Contabilidad S10 ERP CUADRE DE BALANCE DE COMPROBACION EN RESULTADOS CASO COMPLETO ( PARTE 1) CUADRE DE BALANCE DE COMPROBACION EN RESULTADOS CASO COMPLETO ( PARTE 2) de cuentas contables a partir de ESF y la Esta es la continuación del primer video de…",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/video-contabilidad/\n- **Módulo:** `contabilidad` (ver esa rama para el resumen redactado)\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "contabilidad"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/videos-tutoriales-de-facturaciones",
+  "title": "Videos Tutoriales de Facturaciones",
+  "summary": "Videos sobre el módulo de Facturación S10 ERP Periodo de contabilización en la Liquidación de cobranza Configuración y Registro de Comprobante No Domiciliado",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/video-facturacion/\n- **Módulo:** `facturacion` (ver esa rama para el resumen redactado)\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "facturacion"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/videos-tutoriales-de-lean",
+  "title": "Videos Tutoriales de Lean",
+  "summary": "Manual oficial de S10 publicado en el portal de miembros: Videos Tutoriales de Lean.",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/video-lean/\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/videos-tutoriales-de-nominas",
+  "title": "Videos Tutoriales de Nóminas",
+  "summary": "Videos sobre el módulo de Nóminas S10 ERP NUEVO APORTE FONDO DE CAPACITACION EN CONSTRUCCION CIVIL CONFIGURACION DEL NUEVO VALOR UIT PARA EL 2024",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/video-nominas/\n- **Módulo:** `nominas` (ver esa rama para el resumen redactado)\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "nominas"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/videos-tutoriales-de-presupuestos",
+  "title": "Videos Tutoriales de Presupuestos",
+  "summary": "Videos sobre el módulo de Presupuestos S10 ERP",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/video-presupuestos/\n- **Módulo:** `presupuestos` (ver esa rama para el resumen redactado)\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "presupuestos"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/videos-de-calidad-movil",
+  "title": "Videos de Calidad Móvil",
+  "summary": "Manual oficial de S10 publicado en el portal de miembros: Videos de Calidad Móvil.",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/video-calidad-movil/\n- **Módulo:** `gerencia-proyectos` (ver esa rama para el resumen redactado)\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "gerencia-proyectos"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/videos-de-gerencia-de-proyectos",
+  "title": "Videos de Gerencia de Proyectos",
+  "summary": "Videos sobre el módulo de Gerencia de Proyectos S10 ERP",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/video-gerencia-proyectos/\n- **Módulo:** `gerencia-proyectos` (ver esa rama para el resumen redactado)\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "gerencia-proyectos"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/videos-de-portal-de-facturacion-electronica",
+  "title": "Videos de Portal de Facturación Electrónica",
+  "summary": "Videos sobre Portal de Facturación Electrónica Categoría: Portal de Facturación Electrónica",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/video-facturacion-electronica/\n- **Módulo:** `portales` (ver esa rama para el resumen redactado)\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "portales"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/videos-de-portal-del-empleado",
+  "title": "Videos de Portal del Empleado",
+  "summary": "Manual oficial de S10 publicado en el portal de miembros: Videos de Portal del Empleado.",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/video-empleado/\n- **Módulo:** `portales` (ver esa rama para el resumen redactado)\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "portales"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/videos-de-portal-del-proveedor",
+  "title": "Videos de Portal del Proveedor",
+  "summary": "Manual oficial de S10 publicado en el portal de miembros: Videos de Portal del Proveedor.",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/video-proveedor/\n- **Módulo:** `portales` (ver esa rama para el resumen redactado)\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "portales"
+  ]
+ },
+ {
+  "path": "manuales-oficiales/videos-de-tareo-movil",
+  "title": "Videos de Tareo Móvil",
+  "summary": "Manual oficial de S10 publicado en el portal de miembros: Videos de Tareo Móvil.",
+  "body": "Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.\n\n- **Página:** https://documentacion.s10peru.com/video-tareo-movil/\n- **Módulo:** `gerencia-proyectos` (ver esa rama para el resumen redactado)\n\nEl texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.\n\n**Confiabilidad:** oficial S10",
+  "tags": [
+   "oficial-s10",
+   "manual",
+   "portal-miembros",
+   "gerencia-proyectos"
+  ]
+ }
+]
