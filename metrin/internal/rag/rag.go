@@ -110,8 +110,10 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 	// Ayuda va al RAG (necesita contexto para ayudar de verdad); si el RAG
 	// no halla nada, el fallback de mensaje corto conversa. Si el
 	// clasificador falla, se sigue al RAG (ruta segura).
+	// Excepción: pregunta larga con "?" ("bien, oye, qué es optimiza?")
+	// casi siempre pide datos: va al RAG aunque huela a charla.
 	if r.Clasificador != nil && r.Emb != nil {
-		if in, _, err := r.Clasificador.Clasificar(ctx, r.Emb, pregunta); err == nil && (in == clasificar.Social || in == "limite") {
+		if in, _, err := r.Clasificador.Clasificar(ctx, r.Emb, pregunta); err == nil && (in == clasificar.Social || in == "limite") && !esPreguntaLarga(pregunta) {
 			return r.conversar(ctx, in, pregunta, o.Hilo)
 		}
 	}
@@ -192,9 +194,16 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 		}
 		historial = h.String()
 	}
+	// Modo tutorial: si el contexto es una guía paso a paso, se responde con
+	// todos los pasos detallados, sin el tope de brevedad.
+	instruccion := "Responde directamente con los datos pertinentes del contexto. No menciones las etiquetas FUENTE ni describas cómo hiciste la búsqueda."
+	if esTutorial(seleccionados) {
+		res.Modo = "tutorial"
+		instruccion = "Es una guía paso a paso: responde con TODOS los pasos necesarios, numerados, cada uno con la acción concreta (dónde hacer clic, qué llenar, qué validar). Sin límite de palabras; la brevedad no aplica aquí."
+	}
 	msgs := []llm.Mensaje{
 		{Role: "system", Content: sistema},
-		{Role: "user", Content: "CONTEXTO:\n" + ctxTxt.String() + historial + "PREGUNTA: " + efectiva + "\n\nResponde directamente con los datos pertinentes del contexto. No menciones las etiquetas FUENTE ni describas cómo hiciste la búsqueda."},
+		{Role: "user", Content: "CONTEXTO:\n" + ctxTxt.String() + historial + "PREGUNTA: " + efectiva + "\n\n" + instruccion},
 	}
 	t1 := time.Now()
 	texto, err := r.LLM.Chat(ctx, msgs)
@@ -349,11 +358,16 @@ func recortar(s string, n int) string {
 
 // sistemaCharla: charla directa sin retrieval (el clasificador ya decidió que
 // no es pregunta de trabajo). Corta, en español, sin prometer acciones.
-const sistemaCharla = `Eres Metrín, asistente de Optimiza 360. Respondes SIEMPRE en español neutro, con calidez y brevedad (máximo 60 palabras). Nunca escribas en portugués ni en ningún otro idioma. No inventas datos ni afirmas acciones que no realizaste. Si te preguntan algo de obra o S10 que no sabes, dilo y pregunta qué necesitan.`
+const sistemaCharla = `Eres Metrín, asistente de Optimiza 360. Respondes SIEMPRE en español neutro, con calidez y brevedad (máximo 60 palabras). Nunca escribas en portugués ni en ningún otro idioma. No inventas datos ni afirmas acciones que no realizaste. Si el mensaje menciona temas de obra, S10, presupuestos o pide explicaciones técnicas, NO los expliques: pide con amabilidad que precisen la pregunta. Si piden algo fuera de tu alcance (poemas, tareas escolares), declínalo amable y ofrece ayuda con S10 u obra.`
 
 // conversar responde charla directa con el estilo Metrín, sin retrieval.
+// Límite no llama al modelo: respuesta fija (el 3B no obedece el rechazo).
 func (r *RAG) conversar(ctx context.Context, intencion, pregunta string, hilo []Turno) (Respuesta, error) {
 	res := Respuesta{Pregunta: pregunta, Modo: "conversacional"}
+	if intencion == "limite" {
+		res.Respuesta = "Eso está fuera de mi alcance, pero te ayudo con S10 y obra. ¿Qué necesitas?"
+		return res, nil
+	}
 	msgs := []llm.Mensaje{{Role: "system", Content: sistemaCharla}}
 	if len(hilo) > 0 {
 		var h strings.Builder
@@ -391,6 +405,28 @@ func (r *RAG) conversar(ctx context.Context, intencion, pregunta string, hilo []
 	}
 	res.Respuesta = texto
 	return res, nil
+}
+
+// esPreguntaLarga: "?" con más de 3 palabras ("cómo estás?" queda fuera).
+func esPreguntaLarga(s string) bool {
+	if !strings.Contains(s, "?") {
+		return false
+	}
+	return len(palabras(s)) > 3
+}
+
+// esTutorial: el contexto trae una guía paso a paso (documento de tutorial
+// entre los 3 mejores). Ahí la brevedad sobra: hay que detallar.
+func esTutorial(trozos []almacen.Resultado) bool {
+	for i, t := range trozos {
+		if i >= 3 {
+			break
+		}
+		if strings.Contains(strings.ToLower(t.Metadata["document_id"]), "tutorial") {
+			return true
+		}
+	}
+	return false
 }
 
 func palabras(s string) []string {

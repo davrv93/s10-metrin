@@ -313,6 +313,50 @@ func TestTrabajoSigueAlRAG(t *testing.T) {
 	}
 }
 
+func TestPreguntaLargaConInterrogacionVaRAG(t *testing.T) {
+	r, _, _ := preparar(t, "")
+	r.MaxDistancia = 2
+	r.Emb = dosEjes{}
+	m, err := clasificar.Entrenar(context.Background(), dosEjes{}, "dos-ejes", 0.0, map[string][]string{
+		"social":  {"hola", "bien y tú"},
+		"trabajo": {"precio del plan"},
+	})
+	if err != nil {
+		t.Fatal(err)
+	}
+	r.Clasificador = m
+	sec := &llmSecuencia{respuestas: []string{"Es una consultora [s3:rag-demo/docs/tarifas.md#0]"}}
+	r.LLM = sec
+	res, err := r.Preguntar(context.Background(), "bien, oye, qué es optimiza 360?", Opciones{})
+	if err != nil {
+		t.Fatal(err)
+	}
+	if res.Modo == "conversacional" && res.Motivo == "" {
+		t.Fatalf("pregunta larga debió ir al RAG, no directo a charla: %+v", res)
+	}
+}
+
+func TestTutorialDetallaSinTope(t *testing.T) {
+	ctx := context.Background()
+	a, _ := almacen.Abrir("", dosEjes{})
+	a.Reemplazar(ctx, "s10kb:t1", indexar.FuenteS10KB, "e1", []almacen.Trozo{{
+		ID: almacen.IDTrozo("s10kb:t1", 0), Texto: "precio con tutorial incluido",
+		Metadata: map[string]string{"source": indexar.FuenteS10KB, "document_id": "cortex:tree/tutoriales/crear", "cita": "Tutorial: crear"},
+	}})
+	l := &llmFijo{respuesta: "1. Abre el módulo. 2. Registra."}
+	r := &RAG{Almacen: a, LLM: l, MaxDistancia: 2, RutaFallos: filepath.Join(t.TempDir(), "f.jsonl")}
+	res, err := r.Preguntar(ctx, "precio con tutorial", Opciones{})
+	if err != nil {
+		t.Fatal(err)
+	}
+	if res.Modo != "tutorial" {
+		t.Fatalf("contexto tutorial debió dar modo tutorial: %+v", res)
+	}
+	if esTutorial([]almacen.Resultado{{Metadata: map[string]string{"document_id": "x"}}}) {
+		t.Fatal("sin tutorial no debe activar")
+	}
+}
+
 func TestParecePortugues(t *testing.T) {
 	pt := []string{"Também permite uma estrutura", "não há informação", "dos documentos", "à medida"}
 	es := []string{"El plan Pro cuesta 49 €", "Nos ayuda a resolver dudas", "Como se indica arriba", "Para continuar, dime más"}
