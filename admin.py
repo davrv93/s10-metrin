@@ -215,24 +215,111 @@ REINDEXAR = [[PY, "s10kb.py", "indexar"]]
 
 # ─────────────────────────────── plantilla ─────────────────────────────────
 CSS = """
-:root{color-scheme:light;--bg:#f5f7f6;--surface:#fff;--soft:#f1f5f3;--ink:#18231f;--ink2:#4c5b54;--muted:#7b8982;--line:#e1e8e3;--brand:#087b63;--brand-soft:#e6f4ee;--nav:#17231f;--nav-muted:#aab8b0;--ok:#087b55;--warn:#9b6100;--bad:#b33b36;--r:10px;--sidebar:244px}
-*{box-sizing:border-box}body{margin:0;font:14px/1.55 Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--ink)}
-a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}button{font:inherit}
-.shell{min-height:100vh}.lado{position:fixed;z-index:20;inset:0 auto 0 0;width:var(--sidebar);background:var(--nav);color:#fff;padding:20px 12px 14px;display:flex;flex-direction:column;transition:width .18s ease;overflow:hidden}
-.brand{height:42px;display:flex;align-items:center;gap:11px;padding:0 9px;margin:0 0 26px;color:#fff;text-decoration:none!important;white-space:nowrap}.brand-mark{width:30px;height:30px;display:grid;place-items:center;background:var(--brand);border-radius:8px;color:white}.brand strong{font-size:14px;font-weight:680;letter-spacing:0}.brand small{display:block;color:var(--nav-muted);font-size:11px;font-weight:450}
-.nav-group{margin:0 0 19px}.nav-label{padding:0 11px;margin:0 0 6px;color:#82938a;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;white-space:nowrap}.nav-link{min-height:38px;display:flex;align-items:center;gap:11px;padding:8px 11px;margin:2px 0;color:var(--nav-muted);border-radius:7px;white-space:nowrap;transition:background .15s,color .15s}.nav-link svg{width:17px;height:17px;flex:none}.nav-link:hover,.nav-link.on{color:#fff;background:#293a33;text-decoration:none}.nav-link.on{box-shadow:inset 2px 0 #57c49c}.nav-spacer{flex:1}.nav-foot{border-top:1px solid #34443c;padding:14px 10px 0;color:#91a198;font-size:11px;white-space:nowrap}.nav-running{display:block;color:#d8e7df;margin-bottom:8px}
-.shell.collapsed .lado{width:68px}.shell.collapsed main{margin-left:68px}.shell.collapsed .brand{padding-left:7px}.shell.collapsed .brand-copy,.shell.collapsed .nav-label,.shell.collapsed .nav-text,.shell.collapsed .nav-foot span{display:none}.shell.collapsed .nav-link{justify-content:center;padding-inline:0}.shell.collapsed .nav-link.on{box-shadow:inset 0 -2px #57c49c}.shell.collapsed .nav-foot{padding-inline:0;text-align:center}
-main{margin-left:var(--sidebar);min-height:100vh;padding:0 36px 48px;max-width:none;transition:margin-left .18s ease;min-width:0}.topbar{min-height:80px;display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line);margin-bottom:30px}.top-left,.top-actions{display:flex;align-items:center;gap:13px;min-width:0}.page-heading h1{margin:0;font-size:21px;line-height:1.25;font-weight:680;letter-spacing:0}.page-heading p{margin:4px 0 0;color:var(--muted);font-size:12px}.top-actions{flex:none}.icon-button,.mobile-menu{width:36px;height:36px;display:grid;place-items:center;border:1px solid var(--line);border-radius:7px;color:var(--ink2);background:var(--surface);cursor:pointer}.icon-button:hover,.mobile-menu:hover{background:var(--soft);color:var(--ink)}.icon-button svg,.mobile-menu svg{width:17px;height:17px}.logout{display:flex;align-items:center;gap:8px;height:36px;padding:0 11px;border:1px solid var(--line);border-radius:7px;background:var(--surface);color:var(--ink2);font-size:12px;font-weight:600}.logout:hover{background:var(--soft);text-decoration:none}.logout svg{width:16px;height:16px}.info{position:relative}.info summary{list-style:none}.info summary::-webkit-details-marker{display:none}.info-pop{position:absolute;z-index:30;right:0;top:43px;width:min(300px,calc(100vw - 32px));padding:14px;background:var(--surface);border:1px solid var(--line);border-radius:8px;box-shadow:0 10px 28px #14241b1a;color:var(--ink2);font-size:12px}.info-pop strong{color:var(--ink);display:block;margin-bottom:5px}.mobile-menu{display:none}
-.sub{display:none}h2{font-size:15px;line-height:1.35;margin:26px 0 10px;font-weight:650}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(165px,1fr));gap:10px}.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px}.num{font-size:25px;line-height:1.2;font-weight:700;letter-spacing:0}.et{color:var(--ink2);font-size:12px;margin-top:4px}
-table{width:100%;border-collapse:collapse;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;font-size:13px}th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:var(--soft);font-weight:650;color:var(--ink2);font-size:10px;text-transform:uppercase;letter-spacing:.06em}tr:last-child td{border-bottom:0}td b{font-weight:620}
-.chip{display:inline-flex;align-items:center;min-height:22px;padding:2px 8px;border-radius:5px;font-size:11px;background:var(--brand-soft);color:#17624f;white-space:nowrap}.chip.ok{background:#e7f5ed;color:var(--ok)}.chip.warn{background:#fff4dc;color:var(--warn)}.chip.mal{background:#fae9e7;color:var(--bad)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:36px;background:var(--brand);color:#fff;border:1px solid var(--brand);border-radius:7px;padding:7px 12px;font:inherit;font-size:12px;font-weight:650;cursor:pointer}.btn:hover{background:#06664f;color:#fff;text-decoration:none}.btn.sec{background:var(--surface);color:var(--ink2);border-color:var(--line)}.btn.sec:hover{background:var(--soft)}
-input[type=text],input[type=url],input[type=password],select,textarea{font:inherit;font-size:13px;padding:8px 10px;border:1px solid var(--line);border-radius:7px;background:var(--surface);color:var(--ink);width:100%;min-height:36px}input:focus,select:focus,textarea:focus{outline:2px solid #087b6330;border-color:var(--brand)}form.fila{display:flex;gap:8px;align-items:center}form.fila input{flex:1}
-.tabs{display:flex;gap:4px;margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid var(--line);flex-wrap:wrap}.tabs a{padding:7px 10px;border-radius:6px;color:var(--ink2);font-size:12px}.tabs a:hover,.tabs a.on{background:var(--brand-soft);color:#145f4b;text-decoration:none}.tabs a.on{font-weight:650}
-pre{background:#1a2721;color:#e2eae5;padding:14px;border-radius:8px;overflow:auto;font-size:12px;max-height:420px;white-space:pre-wrap}.doc{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:24px 28px}.doc h1{font-size:21px}.aviso{background:#edf5f1;border:1px solid #d8e9e0;border-radius:8px;padding:12px 14px;color:#315949}.muted{color:var(--muted)}.dos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.card h2:first-child{margin-top:0}main>table{display:table}main{overflow-x:auto}
-.shade{display:none}
-@media(max-width:780px){.lado{width:260px;transform:translateX(-102%);transition:transform .2s ease}.shell.nav-open .lado{transform:translateX(0)}.shell.collapsed .lado{width:260px}.shell.collapsed main{margin-left:0}.shell.collapsed .brand-copy,.shell.collapsed .nav-label,.shell.collapsed .nav-text,.shell.collapsed .nav-foot span{display:initial}.shell.collapsed .nav-link{justify-content:flex-start;padding:8px 11px}.shell.collapsed .brand{padding-left:9px}.shell.collapsed .nav-label{display:block}.shell.collapsed .nav-foot{text-align:left;padding:14px 10px 0}.shell.nav-open .shade{display:block;position:fixed;inset:0;z-index:15;background:#101a16a8}.mobile-menu{display:grid}main,.shell.collapsed main{margin:0;padding:0 18px 36px}.topbar{min-height:70px;margin-bottom:23px;gap:8px}.top-left,.top-actions{gap:8px}.page-heading h1{font-size:18px}.page-heading p{max-width:52vw;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.collapse-toggle{display:none}.logout{width:36px;padding:0;justify-content:center}.logout span{display:none}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.card{padding:13px}.num{font-size:22px}.dos{grid-template-columns:1fr}.doc{padding:18px}table{font-size:12px}th,td{padding:8px}.tabs{overflow-x:auto;flex-wrap:nowrap}.tabs a{white-space:nowrap}}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+:root{color-scheme:light;
+--bg:#f6f7f6;--surface:#fff;--surface-2:#f1f4f2;--hover:#f3f6f4;--line:#e8ecea;--line-2:#dce2de;
+--ink:#141b18;--ink-2:#47534e;--muted:#7d8984;--brand:#0a8a6a;--brand-ink:#0b6b53;--brand-soft:#e7f3ee;--on-brand:#fff;
+--ok:#0b7a52;--ok-soft:#e5f3eb;--warn:#8f5c00;--warn-soft:#fbf0d9;--bad:#b3372f;--bad-soft:#fbe9e7;
+--serie-1:#0a8a6a;--serie-2:#c98500;
+--shadow:0 1px 2px #10201a0a,0 1px 1px #10201a05;--shadow-lg:0 12px 32px -12px #10201a2e;
+--r:14px;--r-sm:9px;--side:248px;--font:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif}
+@media (prefers-color-scheme:dark){:root:where(:not([data-theme="light"])){color-scheme:dark;
+--bg:#0e1311;--surface:#151b18;--surface-2:#1b2320;--hover:#1c2521;--line:#232d29;--line-2:#2e3a35;
+--ink:#e9efec;--ink-2:#b9c5bf;--muted:#85928c;--brand:#35b891;--brand-ink:#6ad6b3;--brand-soft:#15302a;--on-brand:#06140f;
+--ok:#5fcf9c;--ok-soft:#133027;--warn:#e7b04f;--warn-soft:#33270f;--bad:#f08a80;--bad-soft:#3a1a18;
+--serie-1:#26a883;--serie-2:#c98500;--shadow:0 1px 2px #0006;--shadow-lg:0 16px 40px -12px #000a}}
+:root[data-theme="dark"]{color-scheme:dark;
+--bg:#0e1311;--surface:#151b18;--surface-2:#1b2320;--hover:#1c2521;--line:#232d29;--line-2:#2e3a35;
+--ink:#e9efec;--ink-2:#b9c5bf;--muted:#85928c;--brand:#35b891;--brand-ink:#6ad6b3;--brand-soft:#15302a;--on-brand:#06140f;
+--ok:#5fcf9c;--ok-soft:#133027;--warn:#e7b04f;--warn-soft:#33270f;--bad:#f08a80;--bad-soft:#3a1a18;
+--serie-1:#26a883;--serie-2:#c98500;--shadow:0 1px 2px #0006;--shadow-lg:0 16px 40px -12px #000a}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font:14px/1.6 var(--font);font-feature-settings:'cv11','ss01';background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased}
+a{color:var(--brand-ink);text-decoration:none}a:hover{text-decoration:underline;text-underline-offset:3px}
+button{font:inherit;color:inherit}code{font:12.5px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;background:var(--surface-2);padding:1px 6px;border-radius:6px}
+::selection{background:var(--brand-soft)}
+:focus-visible{outline:2px solid var(--brand);outline-offset:2px;border-radius:6px}
+
+/* ── estructura ── */
+.lado{position:fixed;z-index:20;inset:0 auto 0 0;width:var(--side);background:var(--surface);border-right:1px solid var(--line);padding:22px 14px 16px;display:flex;flex-direction:column;overflow:hidden auto;transition:width .2s ease}
+.brand{display:flex;align-items:center;gap:11px;padding:2px 10px 0;margin-bottom:30px;color:var(--ink);text-decoration:none!important;white-space:nowrap}
+.brand-mark{width:32px;height:32px;display:grid;place-items:center;border-radius:10px;background:linear-gradient(135deg,var(--brand),#12a57f);color:#fff;flex:none;box-shadow:0 4px 12px -4px #0a8a6a80}
+.brand-mark svg{width:17px;height:17px}.brand strong{display:block;font-size:14px;font-weight:650;letter-spacing:-.01em}.brand small{display:block;color:var(--muted);font-size:11.5px;margin-top:-2px}
+.nav-group{margin-bottom:22px}.nav-label{padding:0 12px;margin:0 0 6px;color:var(--muted);font-size:11px;font-weight:550;letter-spacing:.02em;white-space:nowrap}
+.nav-link{display:flex;align-items:center;gap:11px;height:36px;padding:0 12px;margin:1px 0;color:var(--ink-2);border-radius:var(--r-sm);white-space:nowrap;font-weight:500;transition:background .15s,color .15s}
+.nav-link svg{width:17px;height:17px;flex:none;opacity:.75}
+.nav-link:hover{background:var(--hover);color:var(--ink);text-decoration:none}
+.nav-link.on{background:var(--brand-soft);color:var(--brand-ink)}.nav-link.on svg{opacity:1}
+.nav-spacer{flex:1}.nav-foot{padding:14px 12px 0;border-top:1px solid var(--line);color:var(--muted);font-size:11.5px;white-space:nowrap;display:grid;gap:8px}
+.nav-running{display:inline-flex;align-items:center;gap:7px;color:var(--brand-ink);font-weight:550}
+.nav-running::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--brand);animation:latir 1.6s ease-in-out infinite}
+.shell.collapsed .lado{width:72px}.shell.collapsed main{margin-left:72px}
+.shell.collapsed :is(.brand-copy,.nav-label,.nav-text,.nav-foot){display:none}.shell.collapsed .nav-link{justify-content:center;padding:0}.shell.collapsed .brand{padding:2px 6px 0}
+
+main{margin-left:var(--side);min-height:100vh;padding:0 44px 64px;transition:margin-left .2s ease;min-width:0}
+.contenido{max-width:1180px;margin:0 auto}
+.topbar{position:sticky;top:0;z-index:10;margin:0 -44px 28px;padding:18px 44px;display:flex;align-items:center;gap:16px;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid transparent;transition:border-color .2s}
+.topbar.bajo{border-bottom-color:var(--line)}
+.topbar-in{max-width:1180px;width:100%;margin:0 auto;display:flex;align-items:center;gap:14px}
+.page-heading{min-width:0;flex:1}.page-heading h1{margin:0;font-size:22px;line-height:1.25;font-weight:650;letter-spacing:-.02em}
+.page-heading p{margin:3px 0 0;color:var(--muted);font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.top-actions{display:flex;align-items:center;gap:8px;flex:none}
+.icon-button{width:36px;height:36px;display:grid;place-items:center;border:1px solid var(--line);border-radius:var(--r-sm);background:var(--surface);color:var(--ink-2);cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+.icon-button:hover{background:var(--hover);color:var(--ink);border-color:var(--line-2);text-decoration:none}.icon-button svg{width:17px;height:17px}
+.mobile-menu{display:none}.shade{display:none}.sub{display:none}
+
+/* ── bloques ── */
+h2{font-size:15px;line-height:1.35;margin:36px 0 14px;font-weight:620;letter-spacing:-.01em}
+h2 small,.h-sub{font-weight:450;color:var(--muted);font-size:12.5px;margin-left:6px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:20px 22px;box-shadow:var(--shadow)}
+.card>h2:first-child,.card h2:first-child{margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:14px}
+.dos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:start}
+.num{font-size:28px;line-height:1.15;font-weight:650;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.et{color:var(--muted);font-size:12.5px;margin-top:6px;line-height:1.45}
+.muted{color:var(--muted)}
+.aviso{display:flex;gap:10px;align-items:flex-start;background:var(--brand-soft);border:1px solid color-mix(in srgb,var(--brand) 18%,transparent);border-radius:var(--r-sm);padding:12px 16px;color:var(--ink-2);margin:0 0 16px}
+.aviso::before{content:"";flex:none;width:6px;height:6px;margin-top:8px;border-radius:50%;background:var(--brand)}
+
+/* ── tablas ── */
+table{width:100%;border-collapse:separate;border-spacing:0;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;font-size:13.5px;box-shadow:var(--shadow)}
+th,td{padding:13px 16px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{font-weight:550;color:var(--muted);font-size:12px;background:var(--surface);white-space:nowrap}
+tbody tr,tr{transition:background .12s}tr:hover td{background:var(--hover)}tr:last-child td{border-bottom:0}
+th:first-child,td:first-child{padding-left:20px}th:last-child,td:last-child{padding-right:20px}
+td b{font-weight:600}.card table{box-shadow:none;border:0;border-radius:0}.card table th:first-child,.card table td:first-child{padding-left:0}.card table th:last-child,.card table td:last-child{padding-right:0}.card tr:hover td{background:none}
+
+/* ── chips, botones, formularios ── */
+.chip{display:inline-flex;align-items:center;gap:6px;height:24px;padding:0 10px;border-radius:999px;font-size:12px;font-weight:520;background:var(--surface-2);color:var(--ink-2);white-space:nowrap}
+.chip::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor;opacity:.7}
+.chip.ok{background:var(--ok-soft);color:var(--ok)}.chip.warn{background:var(--warn-soft);color:var(--warn)}.chip.mal{background:var(--bad-soft);color:var(--bad)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;height:36px;padding:0 15px;background:var(--brand);color:var(--on-brand);border:1px solid transparent;border-radius:var(--r-sm);font-size:13px;font-weight:580;cursor:pointer;white-space:nowrap;transition:background .15s,transform .1s,box-shadow .15s;box-shadow:0 1px 2px #0a8a6a33}
+.btn:hover{background:var(--brand-ink);color:#fff;text-decoration:none}.btn:active{transform:translateY(1px)}
+.btn.sec{background:var(--surface);color:var(--ink-2);border-color:var(--line-2);box-shadow:var(--shadow)}.btn.sec:hover{background:var(--hover);color:var(--ink)}
+.btn.fantasma{background:none;border-color:transparent;box-shadow:none;color:var(--ink-2)}.btn.fantasma:hover{background:var(--hover);color:var(--ink)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+input[type=text],input[type=url],input[type=password],input[type=search],select,textarea{font:inherit;font-size:13.5px;padding:0 12px;height:38px;border:1px solid var(--line-2);border-radius:var(--r-sm);background:var(--surface);color:var(--ink);width:100%;transition:border-color .15s,box-shadow .15s}
+textarea{padding:10px 12px;height:auto;line-height:1.5;resize:vertical}
+input::placeholder,textarea::placeholder{color:var(--muted)}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--brand);box-shadow:0 0 0 3px color-mix(in srgb,var(--brand) 18%,transparent)}
+input[type=checkbox]{accent-color:var(--brand);width:16px;height:16px}
+form.fila{display:flex;gap:8px;align-items:center;flex-wrap:wrap}form.fila input{flex:1;min-width:180px}
+.tabs{display:inline-flex;gap:2px;padding:3px;margin-bottom:16px;background:var(--surface-2);border-radius:11px;flex-wrap:wrap}
+.tabs a{padding:6px 13px;border-radius:8px;color:var(--ink-2);font-size:13px;font-weight:500}
+.tabs a:hover{color:var(--ink);text-decoration:none}.tabs a.on{background:var(--surface);color:var(--ink);box-shadow:var(--shadow)}
+pre{background:#101714;color:#dfe8e3;padding:16px 18px;border-radius:var(--r-sm);overflow:auto;font:12px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace;max-height:420px;white-space:pre-wrap}
+.doc{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:32px 40px;box-shadow:var(--shadow);max-width:820px}.doc h1{font-size:24px;letter-spacing:-.02em}
+details summary{list-style:none;cursor:pointer}details summary::-webkit-details-marker{display:none}
+@keyframes latir{50%{opacity:.35}}
+
+@media(max-width:860px){
+.lado{width:270px;transform:translateX(-102%);transition:transform .22s ease;box-shadow:var(--shadow-lg)}.shell.nav-open .lado{transform:none}
+.shell.collapsed .lado{width:270px}.shell.collapsed :is(.brand-copy,.nav-label,.nav-text,.nav-foot){display:revert}.shell.collapsed .nav-link{justify-content:flex-start;padding:0 12px}
+.shell.nav-open .shade{display:block;position:fixed;inset:0;z-index:15;background:#0b1210a0}
+.mobile-menu{display:grid}.collapse-toggle{display:none}
+main,.shell.collapsed main{margin:0;padding:0 16px 40px}.topbar{margin:0 -16px 20px;padding:14px 16px}
+.page-heading h1{font-size:18px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.card{padding:16px}.num{font-size:23px}
+.dos{grid-template-columns:1fr}.doc{padding:20px}table{font-size:12.5px;display:block;overflow-x:auto}th,td{padding:10px 12px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
 """
 
 MENU = [
@@ -256,11 +343,18 @@ def icono(nombre: str) -> str:
         "tools": '<path d="M14.7 6.3a5 5 0 0 0-6.4 6.4L3 18l3 3 5.3-5.3a5 5 0 0 0 6.4-6.4L14 12l-3-3z"/>',
         "storage": '<ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/>',
         "menu": '<path d="M4 7h16M4 12h16M4 17h16"/>',
+        "tema": '<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>',
         "collapse": '<path d="m15 18-6-6 6-6"/>',
         "info": '<circle cx="12" cy="12" r="9"/><path d="M12 11v5m0-8h.01"/>',
         "logout": '<path d="M10 17l5-5-5-5m5 5H3"/><path d="M12 3h6a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-6"/>',
     }
     return f'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{paths[nombre]}</svg>'
+
+
+HEAD = """<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;550;600;650;700&display=swap" rel="stylesheet">
+<script>try{const t=localStorage.getItem('s10-tema');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>"""
 
 
 def pagina(activa: str, titulo: str, cuerpo: str, sub: str = "") -> str:
@@ -275,25 +369,30 @@ def pagina(activa: str, titulo: str, cuerpo: str, sub: str = "") -> str:
         for grupo, entradas in MENU
     )
     corriendo = sum(1 for t in TRABAJOS if t["estado"] in ("corriendo", "en cola"))
-    aviso = f'<a class="nav-running" href="{url_for("trabajos")}">{icono("activity")} {corriendo} en curso</a>' if corriendo else ""
-    return f"""<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+    aviso = f'<a class="nav-running" href="{url_for("trabajos")}">{corriendo} trabajo{"s" if corriendo != 1 else ""} en curso</a>' if corriendo else ""
+    return f"""<!doctype html><html lang="es"><head>{HEAD}
 <title>{html.escape(titulo)} · S10 Conocimiento</title><style>{CSS}</style></head><body>
 <div class="shell" id="shell"><div class="shade" data-menu-close></div>
 <nav class="lado" aria-label="Navegación principal">
 <a class="brand" href="{url_for('resumen')}" title="S10 Conocimiento"><span class="brand-mark">{icono("book")}</span><span class="brand-copy"><strong>S10 Conocimiento</strong><small>Base para Metrín</small></span></a>
-{menu}<div class="nav-spacer"></div><div class="nav-foot"><span>{aviso}</span><span>Optimiza 360 · Conocimiento</span></div></nav>
-<main><header class="topbar"><div class="top-left"><button class="mobile-menu" type="button" aria-label="Abrir menú" aria-expanded="false" data-menu-toggle>{icono("menu")}</button>
+{menu}<div class="nav-spacer"></div><div class="nav-foot">{aviso}<span>Optimiza 360</span></div></nav>
+<main><header class="topbar" id="topbar"><div class="topbar-in">
+<button class="icon-button mobile-menu" type="button" aria-label="Abrir menú" aria-expanded="false" data-menu-toggle>{icono("menu")}</button>
 <button class="icon-button collapse-toggle" type="button" aria-label="Contraer navegación" title="Contraer navegación" data-collapse-toggle>{icono("collapse")}</button>
-<div class="page-heading"><h1>{html.escape(titulo)}</h1><p>{html.escape(sub)}</p></div></div>
-<div class="top-actions"><details class="info"><summary class="icon-button" aria-label="Información de esta sección" title="Información">{icono("info")}</summary><div class="info-pop"><strong>Información</strong>{html.escape(sub or "Panel de conocimiento S10")}</div></details>
-<a class="logout" href="{url_for('salir')}" title="Cerrar sesión">{icono("logout")}<span>Cerrar sesión</span></a></div></header>
-{cuerpo}</main></div><script>
-(()=>{{const shell=document.getElementById('shell'),mobile=document.querySelector('[data-menu-toggle]');
-const collapsed=localStorage.getItem('s10-nav-collapsed')==='1';if(collapsed)shell.classList.add('collapsed');
-document.querySelector('[data-collapse-toggle]')?.addEventListener('click',()=>{{shell.classList.toggle('collapsed');localStorage.setItem('s10-nav-collapsed',shell.classList.contains('collapsed')?'1':'0')}});
+<div class="page-heading"><h1>{html.escape(titulo)}</h1>{f'<p>{html.escape(sub)}</p>' if sub else ''}</div>
+<div class="top-actions"><button class="icon-button" type="button" aria-label="Cambiar tema claro/oscuro" title="Tema" data-tema>{icono("tema")}</button>
+<a class="icon-button" href="{url_for('salir')}" title="Cerrar sesión" aria-label="Cerrar sesión">{icono("logout")}</a></div></div></header>
+<div class="contenido">{cuerpo}</div></main></div><script>
+(()=>{{const shell=document.getElementById('shell'),mobile=document.querySelector('[data-menu-toggle]'),top=document.getElementById('topbar');
+const guardar=(k,v)=>{{try{{localStorage.setItem(k,v)}}catch(e){{}}}};let col='0';try{{col=localStorage.getItem('s10-nav-collapsed')}}catch(e){{}}
+if(col==='1')shell.classList.add('collapsed');
+document.querySelector('[data-collapse-toggle]')?.addEventListener('click',()=>{{shell.classList.toggle('collapsed');guardar('s10-nav-collapsed',shell.classList.contains('collapsed')?'1':'0')}});
+document.querySelector('[data-tema]')?.addEventListener('click',()=>{{const r=document.documentElement,oscuro=r.dataset.theme?r.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;
+  r.dataset.theme=oscuro?'light':'dark';guardar('s10-tema',r.dataset.theme)}});
 mobile?.addEventListener('click',()=>{{const open=shell.classList.toggle('nav-open');mobile.setAttribute('aria-expanded',String(open))}});
 document.querySelector('[data-menu-close]')?.addEventListener('click',()=>{{shell.classList.remove('nav-open');mobile?.setAttribute('aria-expanded','false')}});
 document.addEventListener('keydown',e=>{{if(e.key==='Escape'){{shell.classList.remove('nav-open');mobile?.setAttribute('aria-expanded','false')}}}});
+const sombra=()=>top.classList.toggle('bajo',scrollY>4);addEventListener('scroll',sombra,{{passive:true}});sombra();
 }})();</script></body></html>"""
 
 
@@ -318,13 +417,17 @@ def login():
             session["ok"] = True
             destino = request.args.get("siguiente", "/")
             return redirect(destino if destino.startswith("/") and not destino.startswith("//") else "/")
-        error = '<p class="chip mal">Usuario o clave incorrectos</p>'
+        error = '<span class="chip mal">Usuario o clave incorrectos</span>'
         time.sleep(1)
-    return f"""<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Acceso · S10 Conocimiento</title><style>{CSS} body{{display:grid;place-items:center;min-height:100vh}}</style></head><body>
-<form method="post" class="card" style="width:340px;display:grid;gap:12px"><h1 style="font-size:20px">S10 Conocimiento</h1>
-<span class="muted">Panel de administración</span>{error}
-<input type="text" name="usuario" placeholder="Usuario" autofocus required><input type="password" name="clave" placeholder="Clave" required>
+    return f"""<!doctype html><html lang="es"><head>{HEAD}
+<title>Acceso · S10 Conocimiento</title><style>{CSS}
+body{{display:grid;place-items:center;min-height:100vh;padding:24px;background:radial-gradient(1200px 600px at 50% -10%,var(--brand-soft),transparent 70%),var(--bg)}}
+.acceso{{width:min(380px,100%);display:grid;gap:14px;padding:32px}}.acceso .brand-mark{{width:44px;height:44px;border-radius:13px}}
+.acceso h1{{margin:10px 0 0;font-size:21px;letter-spacing:-.02em}}.acceso p{{margin:-8px 0 6px}}.acceso .btn{{height:40px;margin-top:4px}}</style></head><body>
+<form method="post" class="card acceso"><span class="brand-mark">{icono("book")}</span><h1>S10 Conocimiento</h1>
+<p class="muted">Panel de administración de Metrín</p>{error}
+<input type="text" name="usuario" placeholder="Usuario" autocomplete="username" autofocus required>
+<input type="password" name="clave" placeholder="Clave" autocomplete="current-password" required>
 <button class="btn">Entrar</button></form></body></html>"""
 
 
@@ -820,9 +923,9 @@ def pct(x) -> str:
     return f"{(x or 0) * 100:.0f} %"
 
 
-ESTADOS_COLA = {"pendiente": ("Pendiente", "warn"), "resuelto": ("Resuelta sola", "ok"),
+ESTADOS_COLA = {"pendiente": ("Por aprender", "warn"), "resuelto": ("Resuelta sola", "ok"),
                 "aprendido": ("Aprendida", "ok"), "descartado": ("Descartada", "")}
-ORIGENES = {"sin_contexto": "No supo responder", "feedback_negativo": "👎 del usuario", "admin": "Admin"}
+ORIGENES = {"sin_contexto": "No supo responder", "feedback_negativo": "Marcada como no útil", "admin": "Enseñada por el admin"}
 
 
 @app.route("/aprendizaje")
@@ -832,100 +935,192 @@ def aprendizaje():
     try:
         m = metrin("GET", "metricas", params={"dias": 14}).json()
         cola = metrin("GET", "pendientes", params={"estado": "" if vista == "todas" else vista}).json()
-        recientes = metrin("GET", "interacciones", params={"limite": 25}).json()
+        recientes = metrin("GET", "interacciones", params={"limite": 12}).json()
         if not isinstance(m, dict) or "error" in m:
             raise RuntimeError(m.get("error") if isinstance(m, dict) else "respuesta inesperada")
     except Exception as ex:  # noqa: BLE001
-        cuerpo = f"""<p class="aviso">No pude hablar con Metrín en <code>{e(METRIN_API)}</code>: {e(ex)}.<br>
+        cuerpo = f"""<div class="aviso"><div>No pude hablar con Metrín en <code>{e(METRIN_API)}</code>: {e(ex)}.<br>
 Revisa que el servicio esté arriba y que <code>RAG_ADMIN_TOKEN</code> de <code>.env</code> sea el mismo en ambos
-(tras generarlo: <code>docker compose up -d metrin admin</code>).</p>"""
-        return pagina("aprendizaje", "Aprendizaje de Metrín", cuerpo, "Qué tan bien le va al agente y qué le falta aprender.")
+(tras generarlo: <code>docker compose up -d metrin admin</code>).</div></div>"""
+        return pagina("aprendizaje", "Aprendizaje", cuerpo, "Qué tan bien le va a Metrín y qué le falta aprender.")
     c = csrf()
-    kpis = [
-        ("k-tasa", pct(m["tasa_respuesta"]), f"consultas respondidas con fuentes ({m['respondidas']} de {m['consultas']})"),
-        ("k-satis", pct(m["satisfaccion"]) if m["positivos"] + m["negativos"] else "—", f"satisfacción: {m['positivos']} 👍 · {m['negativos']} 👎"),
-        ("k-sin", m["sin_contexto"], f"sin respuesta ({m['con_sugerencias']} con sugerencias)"),
-        ("k-cola", m["cola"]["pendientes"], "por aprender"),
-        ("k-apr", m["cola"]["aprendidas"] + m["cola"]["resueltas"], f"aprendidas ({m['cola']['resueltas']} solas en el repaso)"),
-        ("k-lat", f"{m['latencia_media_ms'] / 1000:.1f} s", f"latencia media · p90 {m['latencia_p90_ms'] / 1000:.1f} s"),
-        ("k-total", m["total"], f"mensajes ({m['conversacional']} de charla) · votan {pct(m['tasa_voto'])}"),
-    ]
-    grid = "".join(f'<div class="card"><div class="num" id="{i}">{e(n)}</div><div class="et" id="{i}-et">{e(t)}</div></div>' for i, n, t in kpis)
-    tope = max([d["total"] for d in m["por_dia"]] or [1])
-    dias = "".join(
-        f"""<tr><td>{e(d['fecha'])}</td><td><div class="barra" title="{d['respondidas']} respondidas · {d['sin_contexto']} sin respuesta">
-<i style="width:{d['respondidas'] / tope * 100:.1f}%"></i><b style="width:{d['sin_contexto'] / tope * 100:.1f}%"></b></div></td>
-<td>{d['total']}</td><td>{pct(d['respondidas'] / max(1, d['respondidas'] + d['sin_contexto']))}</td><td>{d['positivos']} 👍 · {d['negativos']} 👎</td></tr>"""
-        for d in reversed(m["por_dia"]))
+    votos = m["positivos"] + m["negativos"]
+
+    def kpi(i, valor, etiqueta, detalle, barra=None):
+        medidor = (f'<div class="medidor" aria-hidden="true"><i id="{i}-bar" style="width:{barra * 100:.0f}%"></i></div>'
+                   if barra is not None else "")
+        return (f'<div class="card kpi"><div class="kpi-et">{etiqueta}</div><div class="num" id="{i}">{e(valor)}</div>'
+                f'{medidor}<div class="et" id="{i}-et">{detalle}</div></div>')
+
+    kpis = "".join([
+        kpi("k-tasa", pct(m["tasa_respuesta"]), "Respondidas con fuentes",
+            f"{m['respondidas']} de {m['consultas']} consultas", m["tasa_respuesta"]),
+        kpi("k-satis", pct(m["satisfaccion"]) if votos else "—", "Satisfacción",
+            f"{m['positivos']} útiles · {m['negativos']} no útiles", m["satisfaccion"] if votos else 0),
+        kpi("k-cola", m["cola"]["pendientes"], "Por aprender",
+            f"preguntas distintas · {m['sin_contexto']} consultas sin respuesta en 14 días"),
+        kpi("k-apr", m["cola"]["aprendidas"] + m["cola"]["resueltas"], "Aprendidas",
+            f"{m['cola']['aprendidas']} enseñadas · {m['cola']['resueltas']} solas en el repaso"),
+    ])
+    secundarios = f"""<div class="franja">
+<span><b id="s-total">{m['total']}</b> mensajes</span><span><b id="s-charla">{m['conversacional']}</b> de charla</span>
+<span>votan <b id="s-voto">{pct(m['tasa_voto'])}</b></span>
+<span>latencia media <b id="s-lat">{m['latencia_media_ms'] / 1000:.1f} s</b></span><span>p90 <b id="s-p90">{m['latencia_p90_ms'] / 1000:.1f} s</b></span></div>"""
     rep = m.get("ultimo_repaso") or {}
-    repaso = (f"Último repaso ({e(rep.get('origen'))}): {e((rep.get('fin') or rep.get('inicio') or '')[:16].replace('T', ' '))} · "
-              f"{rep.get('revisadas', 0)} revisadas, {rep.get('resueltas', 0)} resueltas") if rep else "Aún no hubo repaso."
-    tabs = "".join(f'<a href="{url_for("aprendizaje", estado=k)}" class="{"on" if vista == k else ""}">{t}</a>'
+    repaso = (f"Último repaso {e((rep.get('fin') or rep.get('inicio') or '')[:16].replace('T', ' '))} · "
+              f"{rep.get('revisadas', 0)} revisadas, {rep.get('resueltas', 0)} resueltas") if rep else "Todavía no hubo repaso. El próximo es esta noche."
+    conteo = {k: 0 for k in ESTADOS_COLA}
+    conteo.update(pendiente=m["cola"]["pendientes"], resuelto=m["cola"]["resueltas"],
+                  aprendido=m["cola"]["aprendidas"], descartado=m["cola"]["descartadas"])
+    tabs = "".join(f'<a href="{url_for("aprendizaje", estado=k)}" class="{"on" if vista == k else ""}">{t}'
+                   f'{f" <span class=cuenta>{conteo[k]}</span>" if k in conteo and conteo[k] else ""}</a>'
                    for k, t in [("pendiente", "Por aprender"), ("resuelto", "Resueltas solas"), ("aprendido", "Aprendidas"),
                                 ("descartado", "Descartadas"), ("todas", "Todas")])
-    filas = ""
+    items = ""
     for p in cola:
         est, clase = ESTADOS_COLA.get(p["estado"], (p["estado"], ""))
-        previa = f'<div class="muted">Respuesta: {e(p.get("respuesta", "")[:300])}</div>' if p.get("respuesta") else ""
-        coment = f'<div class="muted">Comentario: «{e(p["comentario"])}»</div>' if p.get("comentario") else ""
-        ensenar = "" if p["estado"] == "aprendido" else f"""<details><summary class="btn sec">Enseñar respuesta</summary>
-<form method="post" action="{url_for('aprendizaje_ensenar')}" style="display:grid;gap:8px;margin-top:8px">
-<input type="hidden" name="csrf" value="{c}"><input type="hidden" name="clave" value="{e(p['clave'])}">
-<textarea name="respuesta" rows="4" required minlength="20" placeholder="Respuesta correcta, como la diría Metrín (pasos cortos)"></textarea>
-<textarea name="variantes" rows="2" placeholder="Otras formas de preguntarlo (una por línea, opcional)"></textarea>
-<input type="text" name="titulo" placeholder="Cita que verá el usuario (opcional; p. ej. «Manual de Almacén, p. 12»)">
-<button class="btn">Aprender ahora</button></form></details>
-<form method="post" action="{url_for('aprendizaje_descartar')}" style="margin-top:6px"><input type="hidden" name="csrf" value="{c}">
-<input type="hidden" name="clave" value="{e(p['clave'])}"><button class="btn sec">Descartar</button></form>"""
-        filas += f"""<tr><td><b>{e(p['pregunta'])}</b>{coment}{previa}</td><td>{e(ORIGENES.get(p['origen'], p['origen']))}</td>
-<td>{p['veces']}</td><td class="muted">{e(p['ultima'][:16].replace('T', ' '))}</td><td><span class="chip {clase}">{e(est)}</span></td>
-<td style="min-width:260px">{ensenar}</td></tr>"""
-    vacio = '<tr><td colspan="6" class="muted">Nada en esta vista. 🎉</td></tr>'
+        cita = f'<p class="cita-user">«{e(p["comentario"])}»</p>' if p.get("comentario") else ""
+        previa = (f'<p class="previa"><span>{"Respuesta" if p["estado"] in ("aprendido", "resuelto") else "Respondió"}</span>'
+                  f'{e(p.get("respuesta", "")[:280])}</p>') if p.get("respuesta") else ""
+        acciones = "" if p["estado"] == "aprendido" else f"""<div class="acciones">
+<button class="btn sec" type="button" data-ensenar aria-expanded="false">Enseñar respuesta</button>
+<form method="post" action="{url_for('aprendizaje_descartar')}"><input type="hidden" name="csrf" value="{c}">
+<input type="hidden" name="clave" value="{e(p['clave'])}"><button class="btn fantasma">Descartar</button></form></div>
+<form class="ensenar" method="post" action="{url_for('aprendizaje_ensenar')}" hidden><input type="hidden" name="csrf" value="{c}"><input type="hidden" name="clave" value="{e(p['clave'])}">
+<label>Respuesta<textarea name="respuesta" rows="4" required minlength="20" placeholder="Como la diría Metrín: directa y en pasos cortos"></textarea></label>
+<label><span>Otras formas de preguntarlo <span class="muted">· opcional, una por línea</span></span><textarea name="variantes" rows="2"></textarea></label>
+<label><span>Cita que verá el usuario <span class="muted">· opcional</span></span><input type="text" name="titulo" placeholder="Respuesta aprobada por Optimiza 360"></label>
+<div class="botones"><button class="btn">Guardar y aprender</button><button class="btn fantasma" type="button" data-cancelar>Cancelar</button></div></form>"""
+        items += f"""<li class="item"><div class="item-cab"><div><p class="pregunta">{e(p['pregunta'])}</p>
+<p class="meta"><span class="chip {clase}">{e(est)}</span><span>{e(ORIGENES.get(p['origen'], p['origen']))}</span>
+<span>{p['veces']} {'vez' if p['veces'] == 1 else 'veces'}</span><span>{e(p['ultima'][:16].replace('T', ' '))}</span></p></div></div>
+{cita}{previa}{acciones}</li>"""
+    vacio = '<li class="vacio">Nada por aquí. Cuando Metrín no sepa algo, aparecerá en esta lista.</li>'
     ult = "".join(
-        f"""<tr><td>{e(i['pregunta'][:140])}</td><td><span class="chip {'ok' if i['modo'] == 'respuesta' and not i['sin_contexto'] else 'warn' if i['sin_contexto'] else ''}">{e('sin respuesta' if i['sin_contexto'] else i['modo'])}</span></td>
-<td>{'👍' if i.get('voto') == 1 else '👎' if i.get('voto') == -1 else ''}</td><td class="muted">{e(i['fecha'][11:16])}</td></tr>""" for i in recientes)
-    cuerpo = f"""<style>.barra{{display:flex;height:12px;border-radius:4px;background:var(--soft);overflow:hidden;min-width:120px}}.barra i{{background:var(--brand)}}.barra b{{background:#e0a847}}
-#vivo{{max-height:260px;overflow:auto;font-size:12px}}#vivo div{{padding:6px 0;border-bottom:1px solid var(--line)}}.punto{{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--muted);margin-right:6px}}.punto.on{{background:var(--ok)}}
-details summary{{list-style:none;cursor:pointer}}details summary::-webkit-details-marker{{display:none}}</style>
-<div class="grid">{grid}</div>
-<div class="dos" style="margin-top:12px"><div class="card"><h2>Últimos 14 días</h2>
-<table><tr><th>Día</th><th>Respondidas / sin respuesta</th><th>Msjs</th><th>Tasa</th><th>Votos</th></tr>{dias or '<tr><td colspan=5 class="muted">Sin datos todavía.</td></tr>'}</table></div>
-<div class="card"><h2><span class="punto" id="punto"></span>En vivo</h2>
-<p class="muted" id="repaso">{repaso}</p>
-<form method="post" action="{url_for('aprendizaje_repasar')}" class="fila"><input type="hidden" name="csrf" value="{c}">
-<button class="btn" id="btnRepasar">Repasar pendientes ahora</button><a class="btn sec" href="{url_for('aprendizaje_exportar')}">Exportar aprendidos</a></form>
-<p id="novedad" class="aviso" hidden>Hay novedades en la cola · <a href="">recargar</a></p>
-<div id="vivo" aria-live="polite"><div class="muted">Esperando actividad…</div></div></div></div>
-<h2>Cola de aprendizaje</h2><div class="tabs">{tabs}</div>
-<table><tr><th>Pregunta</th><th>Origen</th><th>Veces</th><th>Última</th><th>Estado</th><th></th></tr>{filas or vacio}</table>
-<p class="muted" style="margin-top:10px">Cada noche Metrín vuelve a preguntar lo pendiente contra el índice actualizado: lo que ya encuentra con fuentes queda «resuelto solo».
-Lo demás espera una respuesta tuya: al enseñarla se indexa al instante y Metrín la cita como «{e('Respuesta aprobada por Optimiza 360')}».</p>
-<h2>Últimas conversaciones</h2><table><tr><th>Pregunta</th><th>Resultado</th><th>Voto</th><th>Hora</th></tr>{ult or '<tr><td colspan=4 class="muted">Sin conversaciones.</td></tr>'}</table>
+        f"""<tr><td>{e(i['pregunta'][:120])}</td><td><span class="chip {'ok' if i['modo'] == 'respuesta' and not i['sin_contexto'] else 'warn' if i['sin_contexto'] else ''}">{e('sin respuesta' if i['sin_contexto'] else 'charla' if i['modo'] == 'conversacional' else 'respondida' if i['modo'] == 'respuesta' else i['modo'])}</span></td>
+<td class="voto">{'👍' if i.get('voto') == 1 else '👎' if i.get('voto') == -1 else '<span class="muted">—</span>'}</td><td class="muted hora">{e(i['fecha'][11:16])}</td></tr>""" for i in recientes)
+    datos = json.dumps({"por_dia": m["por_dia"], "recientes": recientes[:8]}).replace("</", "<\\/")
+    cuerpo = f"""<style>
+.kpis{{grid-template-columns:repeat(4,minmax(0,1fr))}}.kpi{{padding:18px 20px}}.kpi-et{{font-size:12.5px;color:var(--ink-2);font-weight:520;margin-bottom:8px}}
+.medidor{{height:4px;border-radius:4px;background:var(--surface-2);margin-top:12px;overflow:hidden}}.medidor i{{display:block;height:100%;border-radius:4px;background:var(--brand);transition:width .5s ease}}
+.franja{{display:flex;flex-wrap:wrap;gap:6px 22px;margin:14px 2px 0;color:var(--muted);font-size:12.5px}}.franja b{{color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums}}
+.fila2{{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);gap:16px;margin-top:22px;align-items:start}}
+.cab{{display:flex;align-items:center;gap:10px;margin-bottom:14px}}.cab h2{{margin:0;flex:1}}
+.leyenda{{display:flex;gap:14px;font-size:12px;color:var(--ink-2)}}.leyenda span{{display:inline-flex;align-items:center;gap:6px}}.leyenda i{{width:10px;height:10px;border-radius:3px}}
+.grafico{{position:relative}}.grafico svg{{display:block;width:100%;height:220px;overflow:visible}}
+.grafico .eje{{font-size:11px;fill:var(--muted)}}.grafico .rejilla{{stroke:var(--line);stroke-width:1}}.grafico svg>:not(.zona){{pointer-events:none}}.grafico .zona{{fill:transparent;cursor:crosshair}}.grafico .zona:hover{{fill:var(--hover)}}
+.tip{{position:absolute;pointer-events:none;background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow-lg);border-radius:10px;padding:9px 12px;font-size:12px;line-height:1.5;min-width:150px;opacity:0;transform:translateY(4px);transition:opacity .12s,transform .12s;z-index:5}}
+.tip.ver{{opacity:1;transform:none}}.tip b{{display:block;margin-bottom:3px;font-weight:600}}.tip span{{display:flex;justify-content:space-between;gap:12px;color:var(--ink-2)}}.tip span i{{font-style:normal;color:var(--ink);font-variant-numeric:tabular-nums}}
+.enlace{{background:none;border:0;padding:0;color:var(--brand-ink);font-size:12.5px;cursor:pointer}}
+.tabla-dias{{margin-top:12px}}
+.vivo-card{{display:flex;flex-direction:column}}.estado-vivo{{display:inline-flex;align-items:center;gap:7px;font-size:12px;color:var(--muted)}}
+.estado-vivo i{{width:8px;height:8px;border-radius:50%;background:var(--line-2)}}.estado-vivo.on i{{background:var(--ok);box-shadow:0 0 0 3px var(--ok-soft);animation:latir 2s ease-in-out infinite}}
+.repaso{{font-size:12.5px;color:var(--ink-2);background:var(--surface-2);border-radius:var(--r-sm);padding:10px 12px;margin:0 0 12px}}
+.botones{{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}}
+.timeline{{list-style:none;margin:0;padding:0;flex:1;max-height:250px;overflow:auto;font-size:12.5px}}
+.timeline li{{display:grid;grid-template-columns:18px 1fr auto;gap:8px;padding:8px 0;border-top:1px solid var(--line);animation:entra .3s ease}}
+.timeline li:first-child{{border-top:0}}.timeline .t{{color:var(--muted);font-variant-numeric:tabular-nums}}.timeline .txt{{color:var(--ink-2);overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}}
+.timeline .vacio{{display:block;color:var(--muted);border:0}}
+@keyframes entra{{from{{opacity:0;transform:translateY(-4px)}}}}
+.novedad{{display:none;margin:0 0 12px}}.novedad.ver{{display:flex}}
+.tabs .cuenta{{display:inline-grid;place-items:center;min-width:18px;height:18px;padding:0 5px;margin-left:4px;border-radius:9px;background:var(--line);font-size:11px;color:var(--ink-2)}}.tabs a.on .cuenta{{background:var(--brand-soft);color:var(--brand-ink)}}
+.lista{{list-style:none;margin:0;padding:0;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow)}}
+.item{{padding:18px 22px;border-top:1px solid var(--line)}}.item:first-child{{border-top:0}}
+.pregunta{{margin:0;font-weight:600;font-size:14.5px;letter-spacing:-.005em}}
+.meta{{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;margin:8px 0 0;font-size:12.5px;color:var(--muted)}}
+.cita-user{{margin:12px 0 0;padding-left:12px;border-left:2px solid var(--line-2);color:var(--ink-2);font-style:italic}}
+.previa{{margin:10px 0 0;font-size:13px;color:var(--ink-2)}}.previa span{{display:inline-block;margin-right:8px;font-size:11px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}}
+.acciones{{display:flex;gap:6px;align-items:flex-start;margin-top:14px;flex-wrap:wrap}}.acciones>form{{margin:0}}
+.ensenar{{display:grid;gap:12px;padding:16px;margin-top:12px;background:var(--surface-2);border-radius:var(--r-sm);max-width:640px}}.ensenar[hidden]{{display:none}}.ensenar .botones{{margin:0}}
+.ensenar label{{display:grid;gap:6px;font-size:12.5px;font-weight:550;color:var(--ink-2)}}.ensenar label .muted{{font-weight:400}}
+.lista .vacio{{padding:36px 22px;text-align:center;color:var(--muted)}}
+.recientes td{{vertical-align:middle}}.recientes .voto,.recientes .hora{{width:1%;white-space:nowrap;text-align:center}}
+.nota{{margin:12px 2px 0;font-size:12.5px;color:var(--muted);max-width:760px}}
+@media(max-width:1060px){{.kpis{{grid-template-columns:repeat(2,minmax(0,1fr))}}.fila2{{grid-template-columns:1fr}}}}
+@media(max-width:860px){{.recientes th:nth-child(4),.recientes td:nth-child(4){{display:none}}.recientes td:first-child{{min-width:200px}}.item{{padding:16px}}.cab{{flex-wrap:wrap}}}}
+</style>
+<div class="grid kpis">{kpis}</div>{secundarios}
+<div class="fila2">
+<section class="card" aria-labelledby="t-dias"><div class="cab"><h2 id="t-dias">Respuestas por día</h2>
+<div class="leyenda"><span><i style="background:var(--serie-1)"></i>Con fuentes</span><span><i style="background:var(--serie-2)"></i>Sin respuesta</span></div></div>
+<div class="grafico" id="grafico"><svg id="svgDias" role="img" aria-label="Respuestas con fuentes y sin respuesta en los últimos 14 días"></svg><div class="tip" id="tip"></div></div>
+<button class="enlace" type="button" id="verTabla" aria-expanded="false">Ver como tabla</button>
+<div id="tablaDias" class="tabla-dias" hidden></div></section>
+<section class="card vivo-card" aria-labelledby="t-vivo"><div class="cab"><h2 id="t-vivo">En vivo</h2><span class="estado-vivo" id="punto"><i></i><span>conectando</span></span></div>
+<p class="repaso" id="repaso">{repaso}</p>
+<div class="botones"><form method="post" action="{url_for('aprendizaje_repasar')}"><input type="hidden" name="csrf" value="{c}">
+<button class="btn" id="btnRepasar" {'disabled' if m.get('repaso_en_curso') else ''}>Repasar ahora</button></form>
+<a class="btn sec" href="{url_for('aprendizaje_exportar')}">Exportar aprendidos</a></div>
+<ul class="timeline" id="vivo" aria-live="polite"><li class="vacio">Aquí aparecerá cada conversación, voto y lección en cuanto ocurra.</li></ul></section>
+</div>
+<h2>Cola de aprendizaje</h2>
+<div class="aviso novedad" id="novedad"><div>Hay novedades en la cola. <a href="">Actualizar</a></div></div>
+<nav class="tabs" aria-label="Estado">{tabs}</nav>
+<ul class="lista">{items or vacio}</ul>
+<p class="nota">Cada noche Metrín vuelve a preguntar lo pendiente contra el índice actualizado; lo que ya encuentra con fuentes pasa a «resueltas solas».
+Lo que le enseñes se indexa al instante y lo citará como «Respuesta aprobada por Optimiza 360».</p>
+<h2>Últimas conversaciones</h2>
+<table class="recientes"><thead><tr><th>Pregunta</th><th>Resultado</th><th>Voto</th><th>Hora</th></tr></thead><tbody>{ult or '<tr><td colspan=4 class="muted">Sin conversaciones todavía.</td></tr>'}</tbody></table>
+<script id="datos" type="application/json">{datos}</script>
 <script>
-(()=>{{const $=id=>document.getElementById(id),vivo=$('vivo'),pct=x=>Math.round((x||0)*100)+' %';
-const linea=(t)=>{{if(vivo.firstElementChild?.classList.contains('muted'))vivo.replaceChildren();const d=document.createElement('div');
-  d.textContent=new Date().toLocaleTimeString('es',{{hour:'2-digit',minute:'2-digit',second:'2-digit'}})+' · '+t;vivo.prepend(d);while(vivo.children.length>60)vivo.lastChild.remove()}};
-const es=new EventSource('{url_for('aprendizaje_eventos')}');
-es.onopen=()=>$('punto').classList.add('on');es.onerror=()=>$('punto').classList.remove('on');
-es.addEventListener('metricas',ev=>{{const m=JSON.parse(ev.data);
-  $('k-tasa').textContent=pct(m.tasa_respuesta);$('k-tasa-et').textContent=`consultas respondidas con fuentes (${{m.respondidas}} de ${{m.consultas}})`;
-  $('k-satis').textContent=(m.positivos+m.negativos)?pct(m.satisfaccion):'—';$('k-satis-et').textContent=`satisfacción: ${{m.positivos}} 👍 · ${{m.negativos}} 👎`;
-  $('k-sin').textContent=m.sin_contexto;$('k-cola').textContent=m.cola.pendientes;$('k-apr').textContent=m.cola.aprendidas+m.cola.resueltas;
-  $('k-sin-et').textContent=`sin respuesta (${{m.con_sugerencias}} con sugerencias)`;$('k-cola-et').textContent='por aprender';
-  $('k-apr-et').textContent=`aprendidas (${{m.cola.resueltas}} solas en el repaso)`;
-  $('k-lat').textContent=(m.latencia_media_ms/1000).toFixed(1)+' s';$('k-lat-et').textContent=`latencia media · p90 ${{(m.latencia_p90_ms/1000).toFixed(1)}} s`;
-  $('k-total').textContent=m.total;$('k-total-et').textContent=`mensajes (${{m.conversacional}} de charla) · votan ${{pct(m.tasa_voto)}}`;
-  $('btnRepasar').disabled=!!m.repaso_en_curso}});
-const d=ev=>JSON.parse(ev.data).datos,novedad=()=>{{$('novedad').hidden=false}};
+(()=>{{const $=id=>document.getElementById(id),pct=x=>Math.round((x||0)*100)+' %',seg=ms=>(ms/1000).toFixed(1)+' s';
+const svg=$('svgDias'),tip=$('tip'),caja=$('grafico'),NS='http://www.w3.org/2000/svg';
+const fmtDia=f=>new Date(f+'T12:00:00').toLocaleDateString('es',{{day:'numeric',month:'short'}});
+function serie(porDia){{const mapa=Object.fromEntries((porDia||[]).map(d=>[d.fecha,d])),out=[];
+  for(let i=13;i>=0;i--){{const t=new Date();t.setDate(t.getDate()-i);const f=t.toLocaleDateString('sv');out.push(mapa[f]||{{fecha:f,total:0,respondidas:0,sin_contexto:0,positivos:0,negativos:0}})}}return out}}
+function el(n,a){{const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);return e}}
+function dibujar(porDia){{const d=serie(porDia),W=svg.clientWidth||600,H=220,pl=28,pb=24,pt=8,ancho=W-pl,alto=H-pb-pt;
+  const tope=Math.max(4,...d.map(x=>x.respondidas+x.sin_contexto)),paso=Math.ceil(tope/4),max=paso*4;
+  svg.replaceChildren();svg.setAttribute('viewBox',`0 0 ${{W}} ${{H}}`);
+  for(let i=0;i<=4;i++){{const y=pt+alto-(i*paso/max)*alto;svg.append(el('line',{{x1:pl,x2:W,y1:y,y2:y,class:'rejilla'}}));
+    const t=el('text',{{x:pl-8,y:y+4,'text-anchor':'end',class:'eje'}});t.textContent=i*paso;svg.append(t)}}
+  const col=ancho/d.length,bw=Math.min(26,col*.56),r=4;
+  d.forEach((x,i)=>{{const cx=pl+col*i+col/2,x0=cx-bw/2;let y=pt+alto;
+    const barra=(v,color,arriba)=>{{if(!v)return;const h=Math.max(2,v/max*alto);y-=h;
+      const g=arriba?`M${{x0}},${{y+h}}V${{y+r}}q0,-${{r}} ${{r}},-${{r}}h${{bw-2*r}}q${{r}},0 ${{r}},${{r}}V${{y+h}}Z`:`M${{x0}},${{y+h}}V${{y}}h${{bw}}V${{y+h}}Z`;
+      svg.append(el('path',{{d:g,fill:color}}));y-=2}};
+    const top=x.sin_contexto>0;barra(x.respondidas,'var(--serie-1)',!top);barra(x.sin_contexto,'var(--serie-2)',true);
+    const cada=Math.max(1,Math.ceil(58/col));if((d.length-1-i)%cada===0){{const t=el('text',{{x:cx,y:H-6,'text-anchor':'middle',class:'eje'}});t.textContent=fmtDia(x.fecha);svg.append(t)}}
+    const z=el('rect',{{x:pl+col*i,y:pt,width:col,height:alto,class:'zona',rx:6}});
+    z.addEventListener('mouseenter',()=>{{tip.innerHTML=`<b>${{fmtDia(x.fecha)}}</b><span>Con fuentes<i>${{x.respondidas}}</i></span><span>Sin respuesta<i>${{x.sin_contexto}}</i></span><span>Votos<i>${{x.positivos}} 👍 · ${{x.negativos}} 👎</i></span>`;
+      const bx=caja.getBoundingClientRect(),zx=z.getBoundingClientRect();let left=zx.left-bx.left+zx.width/2-80;left=Math.max(0,Math.min(left,bx.width-170));
+      tip.style.left=left+'px';tip.style.top='-6px';tip.classList.add('ver')}});
+    z.addEventListener('mouseleave',()=>tip.classList.remove('ver'));svg.insertBefore(z,svg.firstChild)}});
+  $('tablaDias').innerHTML='<table><thead><tr><th>Día</th><th>Con fuentes</th><th>Sin respuesta</th><th>👍</th><th>👎</th></tr></thead><tbody>'+
+    d.slice().reverse().filter(x=>x.total).map(x=>`<tr><td>${{fmtDia(x.fecha)}}</td><td>${{x.respondidas}}</td><td>${{x.sin_contexto}}</td><td>${{x.positivos}}</td><td>${{x.negativos}}</td></tr>`).join('')+'</tbody></table>'}}
+document.querySelectorAll('[data-ensenar]').forEach(b=>{{const f=b.closest('.item').querySelector('form.ensenar');
+  const abrir=v=>{{f.hidden=!v;b.setAttribute('aria-expanded',String(v));b.hidden=v;if(v)f.querySelector('textarea').focus()}};
+  b.onclick=()=>abrir(true);f.querySelector('[data-cancelar]').onclick=()=>abrir(false)}});
+const inicial=JSON.parse($('datos').textContent);let ultimo=inicial.por_dia;dibujar(ultimo);
+new ResizeObserver(()=>dibujar(ultimo)).observe(caja);
+$('verTabla').onclick=e=>{{const t=$('tablaDias'),v=t.hidden;t.hidden=!v;e.target.textContent=v?'Ocultar tabla':'Ver como tabla';e.target.setAttribute('aria-expanded',String(v))}};
+const vivo=$('vivo');
+function linea(ic,t,cuando=new Date()){{vivo.querySelector('.vacio')?.remove();const li=document.createElement('li'),a=document.createElement('span'),b=document.createElement('span'),c=document.createElement('span');
+  a.textContent=ic;b.className='txt';b.textContent=t;c.className='t';c.textContent=cuando.toLocaleTimeString('es',{{hour:'2-digit',minute:'2-digit'}});
+  li.append(a,b,c);vivo.prepend(li);while(vivo.children.length>60)vivo.lastChild.remove()}}
+const icono=i=>i.sin_contexto?'❓':i.modo==='conversacional'?'💬':'✅';
+inicial.recientes.slice().reverse().forEach(i=>{{linea(icono(i),i.pregunta,new Date(i.fecha))}});
+const punto=$('punto'),conectado=on=>{{punto.classList.toggle('on',on);punto.lastElementChild.textContent=on?'conectado':'reconectando…'}};
+const es=new EventSource('{url_for('aprendizaje_eventos')}');es.onopen=()=>conectado(true);es.onerror=()=>conectado(false);
+const barra=(id,v)=>{{const b=$(id);if(b)b.style.width=Math.round((v||0)*100)+'%'}};
+es.addEventListener('metricas',ev=>{{const m=JSON.parse(ev.data),v=m.positivos+m.negativos;conectado(true);
+  $('k-tasa').textContent=pct(m.tasa_respuesta);$('k-tasa-et').textContent=`${{m.respondidas}} de ${{m.consultas}} consultas`;barra('k-tasa-bar',m.tasa_respuesta);
+  $('k-satis').textContent=v?pct(m.satisfaccion):'—';$('k-satis-et').textContent=`${{m.positivos}} útiles · ${{m.negativos}} no útiles`;barra('k-satis-bar',v?m.satisfaccion:0);
+  $('k-cola').textContent=m.cola.pendientes;$('k-cola-et').textContent=`preguntas distintas · ${{m.sin_contexto}} consultas sin respuesta en 14 días`;
+  $('k-apr').textContent=m.cola.aprendidas+m.cola.resueltas;$('k-apr-et').textContent=`${{m.cola.aprendidas}} enseñadas · ${{m.cola.resueltas}} solas en el repaso`;
+  $('s-total').textContent=m.total;$('s-charla').textContent=m.conversacional;$('s-voto').textContent=pct(m.tasa_voto);
+  $('s-lat').textContent=seg(m.latencia_media_ms);$('s-p90').textContent=seg(m.latencia_p90_ms);
+  $('btnRepasar').disabled=!!m.repaso_en_curso;ultimo=m.por_dia;dibujar(ultimo)}});
+const d=ev=>JSON.parse(ev.data).datos,novedad=()=>$('novedad').classList.add('ver');
 ['pendiente','aprendido','repaso_fin'].forEach(t=>es.addEventListener(t,novedad));
-es.addEventListener('interaccion',ev=>{{const i=d(ev);if(i.sin_contexto)novedad();linea((i.sin_contexto?'❓ Sin respuesta: ':i.modo==='conversacional'?'💬 ':'✅ ')+i.pregunta)}});
-es.addEventListener('feedback',ev=>{{const f=d(ev);linea((f.voto>0?'👍 ':'👎 ')+f.pregunta+(f.comentario?' — «'+f.comentario+'»':''))}});
-es.addEventListener('aprendido',ev=>linea('🎓 Aprendida: '+d(ev).pregunta));
+es.addEventListener('interaccion',ev=>{{const i=d(ev);if(i.sin_contexto)novedad();linea(icono(i),i.pregunta)}});
+es.addEventListener('feedback',ev=>{{const f=d(ev);linea(f.voto>0?'👍':'👎',f.pregunta+(f.comentario?' — «'+f.comentario+'»':''))}});
+es.addEventListener('aprendido',ev=>linea('🎓','Aprendió: '+d(ev).pregunta));
 es.addEventListener('repaso_inicio',ev=>{{$('repaso').textContent=`Repasando ${{d(ev).total}} pendientes…`;$('btnRepasar').disabled=true}});
-es.addEventListener('repaso_avance',ev=>{{const a=d(ev);$('repaso').textContent=`Repasando ${{a.i}}/${{a.total}}…`;linea((a.resuelta?'✅ Ya la sabe: ':'⏳ Sigue pendiente: ')+a.pregunta)}});
+es.addEventListener('repaso_avance',ev=>{{const a=d(ev);$('repaso').textContent=`Repasando ${{a.i}} de ${{a.total}}…`;linea(a.resuelta?'✅':'⏳',(a.resuelta?'Ya la sabe: ':'Sigue pendiente: ')+a.pregunta)}});
 es.addEventListener('repaso_fin',ev=>{{const r=d(ev);$('repaso').textContent=`Repaso terminado: ${{r.revisadas}} revisadas, ${{r.resueltas}} resueltas.`;$('btnRepasar').disabled=false}});
 }})();</script>"""
-    return pagina("aprendizaje", "Aprendizaje de Metrín", cuerpo, "Qué tan bien le va al agente y qué le falta aprender.")
+    return pagina("aprendizaje", "Aprendizaje", cuerpo, "Qué tan bien le va a Metrín y qué le falta aprender.")
 
 
 def _resultado(r) -> None:
