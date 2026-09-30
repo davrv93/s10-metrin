@@ -4,6 +4,8 @@ metrin/.env
 .cortex/*secret*
 **/*.pem
 **/*token*.json
+cookies.txt
+data/cookies*.txt
 
 # entornos
 .venv/

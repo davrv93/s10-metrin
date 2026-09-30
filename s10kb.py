@@ -149,6 +149,24 @@ class Cliente:
                 time.sleep(espera)
         raise RuntimeError(f"no se pudo obtener {url}")
 
+    def cargar_cookies(self, ruta: str) -> None:
+        """Usa la sesión iniciada en el navegador: exporta las cookies con una
+        extensión (formato Netscape/curl) y pásala con --cookies. Verifica con
+        la misma prueba del login por formulario."""
+        from http.cookiejar import MozillaCookieJar
+        jar = MozillaCookieJar(ruta)
+        try:
+            jar.load(ignore_discard=True, ignore_expires=True)
+        except Exception as e:
+            raise SystemExit(f"no pude leer {ruta} como cookies Netscape: {e}")
+        for galleta in jar:
+            self.s.cookies.set(galleta.name, galleta.value, domain=galleta.domain or ".s10peru.com")
+        prueba = self.get(f"{BASE}/manual-de-presupuestos/")
+        if MURO in prueba.text:
+            raise SystemExit("las cookies no abrieron los manuales (caducadas o de otra cuenta)")
+        self.con_sesion = True
+        log("sesión cargada desde cookies del navegador")
+
     def login(self) -> None:
         usuario, clave = os.environ.get("S10_USUARIO"), os.environ.get("S10_CLAVE")
         if not usuario or not clave:
@@ -612,6 +630,7 @@ def main() -> None:
     ap.add_argument("dominio", nargs="?", help="para `sitio`: dominio a rastrear, p. ej. optimiza360.pe")
     ap.add_argument("--refrescar", action="store_true", help="rastrear: vuelve a bajar también las páginas ya vistas")
     ap.add_argument("--sin-login", action="store_true", help="solo lo público (útil para probar el rastreo)")
+    ap.add_argument("--cookies", default="", help="fichero de cookies Netscape (curl -c) de una sesión iniciada en el navegador: evita el login por formulario")
     ap.add_argument("--limite", type=int, default=0, help="procesa solo las N primeras páginas")
     ap.add_argument("--lote", type=int, default=200, help="máximo de PDF por corrida de `descargar` (cola)")
     ap.add_argument("--completo", action="store_true", help="ocr: también las capturas de pantalla de PDF con texto")
@@ -635,7 +654,10 @@ def main() -> None:
         sitio(c, a.dominio)
         return
     if necesita_red and not a.sin_login:
-        c.login()
+        if a.cookies:
+            c.cargar_cookies(a.cookies)
+        else:
+            c.login()
 
     urls = json.loads((DATA / "urls.json").read_text()) if (DATA / "urls.json").exists() else []
     if a.paso in ("descubrir", "todo") or (a.paso == "rastrear" and not urls):
