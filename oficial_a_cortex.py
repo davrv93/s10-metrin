@@ -19,7 +19,7 @@ from pathlib import Path
 RAIZ = Path(__file__).resolve().parent
 DATA = RAIZ / "data"
 KB = RAIZ / "kb"
-SALIDA = DATA / "cortex-borradores" / "manuales-oficiales.json"
+SALIDA = DATA / "cortex-borradores" / "manuales-oficiales-actualizado.json"
 RAMA = "manuales-oficiales"
 PORTAL = "documentacion.s10peru.com"
 
@@ -43,7 +43,9 @@ def leer_jsonl(p):
 
 def imagenes_de(pagina):
     """Filas de data/imagenes.jsonl para la página."""
-    return [f for f in leer_jsonl(DATA / "imagenes.jsonl") if f.get("pagina") == pagina]
+    filas = [f for f in leer_jsonl(DATA / "imagenes.jsonl") if f.get("pagina") == pagina]
+    reconocidas = {f.get("archivo"): f for f in leer_jsonl(DATA / "imagenes_ocr.jsonl")}
+    return [{**f, "texto_ocr": reconocidas.get(f.get("archivo"), {}).get("texto", "")} for f in filas]
 
 
 def slug(t, largo=60):
@@ -139,6 +141,8 @@ def main():
             for im in imgs:
                 alt = im.get("alt") or Path(im["archivo"]).stem
                 cuerpo.append(f"![{alt}](../../{im['archivo']})")
+                if im.get("texto_ocr"):
+                    cuerpo += ["", f"**Texto reconocido en la imagen ({alt}):**", "", im["texto_ocr"]]
         indice = secciones(texto_total)
         if indice:
             cuerpo += ["", "## Contenido", ""] + [f"- {s}" for s in indice]

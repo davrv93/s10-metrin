@@ -9,7 +9,7 @@ tags:
 id: 01M3SP28Z1XDNYQSQYP8BN5FFA
 status: active
 updated_by: ai-agent
-updated_at: 2026-09-30T17:48:00.668Z
+updated_at: 2026-09-30T18:09:56.466Z
 ---
 
 Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.

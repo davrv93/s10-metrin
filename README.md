@@ -48,7 +48,9 @@ comando los deja listos:
 1. Entra con la cuenta leyendo el formulario real de acceso (campos y nonce de
    Simple Membership) y comprueba que un manual deja de mostrar el muro.
 2. `descubrir` → `rastrear` (las páginas que antes salían tras el muro se repiten
-   con sesión) → `descargar` (hasta 1000 PDF) → `ocr --completo` → `indexar`.
+   con sesión) → `medios` (HTML e imágenes) → OCR de imágenes → `descargar` (hasta
+   1000 PDF) → OCR de PDF escaneados → `indexar`. Las imágenes se guardan como
+   documentos vinculados a su página y su texto OCR también entra al RAG.
 3. `oficial_a_cortex.py --cargar`: rama **`manuales-oficiales`** de Cortex, un
    nodo por manual con su módulo, sus PDF, el índice de secciones y la fuente
    (el texto completo va al RAG, no a Cortex). Sin tablero encendido deja el

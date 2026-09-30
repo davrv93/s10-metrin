@@ -375,7 +375,7 @@ def medios(c: Cliente, limite: int = 0) -> dict:
     """
     from bs4 import BeautifulSoup
     filas = [f for f in leer_jsonl(DATA / "paginas.jsonl")
-             if f.get("estado") == 200 and f.get("archivo")]
+             if f.get("estado") == 200 and f.get("archivo") and not f.get("muro_de_miembros")]
     if limite:
         filas = filas[:limite]
     (DATA / "html").mkdir(parents=True, exist_ok=True)
@@ -437,6 +437,66 @@ def medios(c: Cliente, limite: int = 0) -> dict:
             log(f"[{i}/{len(filas)}] html+{stats['html']} img+{stats['imagenes']}")
     log(f"medios: {stats}")
     return stats
+
+
+def ocr_imagenes() -> None:
+    """Extrae texto de imágenes del portal y lo conserva junto a su procedencia."""
+    import shutil
+
+    motor = shutil.which("tesseract")
+    if not motor:
+        log("OCR de imágenes omitido: instala tesseract con `brew install tesseract tesseract-lang`")
+        return
+    disponibles = subprocess.run([motor, "--list-langs"], capture_output=True, text=True).stdout
+    idioma = "spa+eng" if "spa" in disponibles and "eng" in disponibles else (
+        "spa" if "spa" in disponibles else "eng")
+    entrada = leer_jsonl(DATA / "imagenes.jsonl")
+    salida = DATA / "imagenes_ocr.jsonl"
+    previas = {f.get("archivo"): f for f in leer_jsonl(salida)}
+    filas = []
+    for i, fila in enumerate(entrada, 1):
+        archivo = DATA / fila["archivo"]
+        if not archivo.exists():
+            continue
+        anterior = previas.get(fila["archivo"])
+        if anterior and anterior.get("mtime_ns") == archivo.stat().st_mtime_ns:
+            filas.append(anterior)
+            continue
+        r = subprocess.run([motor, str(archivo), "stdout", "-l", idioma, "--psm", "6"],
+                           capture_output=True, text=True)
+        filas.append({**fila, "texto": r.stdout.strip(), "idioma_ocr": idioma,
+                      "mtime_ns": archivo.stat().st_mtime_ns})
+        if i % 25 == 0:
+            log(f"OCR imágenes {i}/{len(entrada)}")
+    salida.write_text("".join(json.dumps(f, ensure_ascii=False) + "\n" for f in filas), encoding="utf-8")
+    log(f"OCR imágenes: {len(filas)} documentos -> {salida.relative_to(RAIZ)}")
+
+
+def ampliar() -> list[str]:
+    """Descubre páginas que el sitemap no lista (está desactualizado): extrae
+    los enlaces internos del HTML ya bajado y los suma a urls.json. Sin red."""
+    from bs4 import BeautifulSoup
+    base = {normalizar(u) for u in json.loads((DATA / "urls.json").read_text(encoding="utf-8"))} \
+        if (DATA / "urls.json").exists() else set()
+    nuevas = set()
+    for h in sorted((DATA / "html").glob("*.html")):
+        soup = BeautifulSoup(h.read_text(encoding="utf-8"), "html.parser")
+        for a in soup.find_all("a", href=True):
+            u = urljoin(BASE + "/", a["href"].strip())
+            p = urlparse(u)
+            if not p.netloc.endswith("s10peru.com"):
+                continue
+            if re.search(r"\.(pdf|png|jpe?g|webp|gif|css|js|zip|rar)(\?|$)", p.path, re.I):
+                continue
+            if any(s in p.path for s in ("/wp-admin", "/wp-login", "/feed", "/comments")):
+                continue
+            u = normalizar(u)
+            if u not in base:
+                nuevas.add(u)
+    todas = sorted(base | nuevas)
+    (DATA / "urls.json").write_text(json.dumps(todas, indent=1, ensure_ascii=False), encoding="utf-8")
+    log(f"ampliar: {len(nuevas)} nuevas, {len(todas)} totales -> data/urls.json")
+    return sorted(nuevas)
 
 
 def descargar(c: Cliente, lote: int = 200) -> None:
@@ -691,8 +751,30 @@ def indexar() -> None:
                 "confianza": "propio" if "optimiza360.pe" in p["pagina"] else "oficial", "texto": t.texto,
             })
             total += 1
+    # Las imágenes son documentos secundarios de su página/manual de origen.
+    titulos_pagina = {p.get("pagina"): p.get("titulo", "Manual S10")
+                      for p in leer_jsonl(DATA / "paginas.jsonl")}
+    for im in leer_jsonl(DATA / "imagenes_ocr.jsonl"):
+        texto = im.get("texto", "").strip()
+        if not texto:
+            continue
+        doc_id = "img-" + hashlib.sha256(im["url"].encode()).hexdigest()[:12]
+        titulo = im.get("alt") or Path(im["archivo"]).name
+        contenido = f"Imagen del manual S10: {titulo}. Texto reconocido por OCR: {texto}"
+        agregar_jsonl(salida, {
+            "id": f"{doc_id}-0000", "documento": doc_id, "tipo": "imagen",
+            "manual": titulos_pagina.get(im.get("pagina"), "Manual S10"),
+            "titulo": titulo, "pagina": None, "fuente": im.get("pagina"),
+            "imagen": im["archivo"], "url_imagen": im["url"], "confianza": "oficial",
+            "texto": contenido,
+        })
+        documentos.append({"id": doc_id, "titulo": titulo, "manual": "Imagen del portal S10",
+                           "archivo": im["archivo"], "fuente": im["url"],
+                           "pagina_web": im.get("pagina"), "paginas": 1, "fragmentos": 1,
+                           "sin_texto": False, "confianza": "oficial", "ocr": True})
+        total += 1
     (KB / "documentos.json").write_text(json.dumps(documentos, indent=1, ensure_ascii=False), encoding="utf-8")
-    log(f"{len(documentos)} PDF indexados, {total} fragmentos -> kb/fragmentos.jsonl")
+    log(f"{len(documentos)} documentos indexados, {total} fragmentos -> kb/fragmentos.jsonl")
 
 
 # ─────────────────────────────── CLI ───────────────────────────────────────
@@ -700,7 +782,7 @@ def main() -> None:
     cargar_env()
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("paso", choices=["descubrir", "rastrear", "descargar", "importar", "ocr", "indexar", "todo", "oficial",
-                                     "pdfs-publicos", "sitio", "medios"])
+                                     "pdfs-publicos", "sitio", "medios", "ampliar"])
     ap.add_argument("dominio", nargs="?", help="para `sitio`: dominio a rastrear, p. ej. optimiza360.pe")
     ap.add_argument("--refrescar", action="store_true", help="rastrear: vuelve a bajar también las páginas ya vistas")
     ap.add_argument("--sin-login", action="store_true", help="solo lo público (útil para probar el rastreo)")
@@ -725,6 +807,9 @@ def main() -> None:
     if a.paso == "medios":
         medios(c, a.limite)
         return
+    if a.paso == "ampliar":
+        ampliar()
+        return
     if a.paso == "sitio":
         if not a.dominio:
             raise SystemExit("uso: s10kb.py sitio <dominio>")
@@ -743,6 +828,9 @@ def main() -> None:
         urls = urls[: a.limite]
     if a.paso in ("rastrear", "todo"):
         rastrear(c, urls, refrescar=a.refrescar)
+    if oficial and a.paso == "todo":
+        medios(c)
+        ocr_imagenes()
     if a.paso in ("descargar", "todo"):
         descargar(c, a.lote)
     if a.paso == "importar":

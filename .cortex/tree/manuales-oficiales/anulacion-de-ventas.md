@@ -12,7 +12,7 @@ tags:
 id: 01M3SP286HT2P88GBV2ABZ4FH9
 status: active
 updated_by: ai-agent
-updated_at: 2026-09-30T17:47:59.511Z
+updated_at: 2026-09-30T18:09:53.528Z
 ---
 
 Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.
