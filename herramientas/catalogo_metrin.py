@@ -24,19 +24,17 @@ SALIDA = RAIZ / "kb" / "catalogo_metrin.json"
 
 # Cómo se agrupan las ramas de Cortex en la UI. Una rama nueva que no esté aquí cae en «Más temas».
 GRUPOS = [
-    ("erp", "Módulos del ERP S10", ["presupuestos", "gerencia-proyectos", "compras", "almacenes", "nominas",
-                                    "contabilidad", "facturacion", "administrativo"]),
-    ("apps", "Portales y aplicaciones", ["portales"]),
-    ("reportes", "Reportes", ["reportes-sql"]),
-    ("guias", "Guías paso a paso", ["tutoriales"]),
-    ("ayuda", "Ayuda y soporte", ["soporte"]),
+    ("oficiales", "Manuales oficiales S10", ["manuales-oficiales"]),
     ("empresa", "Optimiza 360", ["optimiza360"]),
 ]
+MODULOS_OFICIALES = [  # subgrupos de manuales-oficiales por etiqueta del nodo
+    ("presupuestos", "Presupuestos"), ("gerencia-proyectos", "Gerencia de proyectos"),
+    ("compras", "Compras"), ("almacenes", "Almacenes"), ("nominas", "Nóminas"),
+    ("contabilidad", "Contabilidad"), ("facturacion", "Facturación"),
+    ("administrativo", "Administrativo"), ("portales", "Portales"), ("soporte", "Soporte"),
+]
 NOMBRES = {  # nombre corto para el menú (el título del nodo de Cortex va como descripción)
-    "presupuestos": "Presupuestos", "gerencia-proyectos": "Gerencia de proyectos", "compras": "Compras",
-    "almacenes": "Almacenes", "nominas": "Nóminas", "contabilidad": "Contabilidad", "facturacion": "Facturación",
-    "administrativo": "Administrativo", "portales": "Portales", "reportes-sql": "Reportes de planilla",
-    "tutoriales": "Tutoriales", "soporte": "Soporte", "optimiza360": "Optimiza 360",
+    "manuales-oficiales": "Manuales oficiales", "optimiza360": "Optimiza 360",
 }
 FUERA = {"fuentes", "ui-pantallas"}               # internas del proyecto, no temas para el usuario
 PLEGAR = {"ui-pantallas/17w0yki8iew": "nominas"}  # pantallas validadas: se muestran dentro de su módulo
@@ -51,7 +49,9 @@ def leer_nodo(f: Path) -> dict | None:
     titulo = (re.search(r"^title:\s*(.+)$", fm, re.M) or [None, ""])[1].strip().strip('"')
     resumen = re.search(r"^summary:\s*(.+?)(?=\n[a-z_]+:|\Z)", fm, re.M | re.S)
     resumen = re.sub(r"\s+", " ", resumen.group(1)).strip().strip('"') if resumen else ""
-    return {"titulo": titulo, "resumen": resumen}
+    tags = re.search(r"^tags:\s*\n((?:\s+-\s*.+\n?)+)", fm, re.M)
+    tags = re.findall(r"-\s*(\S+)", tags.group(1)) if tags else []
+    return {"titulo": titulo, "resumen": resumen, "tags": tags}
 
 
 DEPENDE = re.compile(r"\b(ac[aá]|aqu[ií]|este m[oó]dulo|esta secci[oó]n|el caso|ese|esa|eso|esto|dicho|mencionad[oa]|arriba|sqlglot|sql|tabla|columna|join|nodo|cortex|upn|fragmento|curso|s[ií]labo|comando|select|validaci[oó]n|temas trae|manual de|portal de ayuda|S\/ ?[0-9]|ahorros)\b", re.I)
@@ -89,6 +89,38 @@ def ejemplos_de_reporte(f: Path) -> list[str]:
         e = e.strip().strip('".')
         if len(e) > 3:
             out.append("¿" + e[0].upper() + e[1:] + "?" if not e.startswith("¿") else e)
+    return out
+
+
+def pregunta_de_manual(titulo):
+    """Sugerencia sintetizada para un manual oficial (sin banco)."""
+    corto = titulo[:60].rstrip()
+    p = f"¿Qué explica el manual de {corto}?"
+    return [p if p.endswith("?") else p + "?"]
+
+
+def submodulos_oficiales():
+    """Manuales oficiales agrupados por módulo (etiqueta del nodo)."""
+    base = ARBOL / "manuales-oficiales"
+    if not base.is_dir():
+        return {}
+    por_mod = {}
+    for f in sorted(base.glob("*.md")):
+        n = leer_nodo(f)
+        if not n or not n["titulo"]:
+            continue
+        mod = next((m for m, _ in MODULOS_OFICIALES if m in n["tags"]), "varios")
+        por_mod.setdefault(mod, []).append((f.stem, n))
+    etiquetas = dict(MODULOS_OFICIALES)
+    etiquetas["varios"] = "Varios"
+    out = {}
+    for mod, hijos in por_mod.items():
+        temas = [{"id": f"manuales-oficiales/{stem}",
+                  "titulo": n["titulo"][:80],
+                  "preguntas": pregunta_de_manual(n["titulo"])} for stem, n in hijos]
+        out[f"oficial-{mod}"] = {"id": f"oficial-{mod}", "nombre": etiquetas[mod],
+                                 "titulo": f"Manuales oficiales: {etiquetas[mod]}",
+                                 "resumen": "", "temas": temas}
     return out
 
 
@@ -130,6 +162,11 @@ def main() -> None:
             m["temas"].insert(0, {"id": m["id"], "titulo": "General", "preguntas": qs})
 
     grupos, usados = [], set()
+    if "manuales-oficiales" in modulos:
+        oficial = submodulos_oficiales()
+        modulos.update(oficial)
+        modulos.pop("manuales-oficiales", None)
+        GRUPOS[0] = ("oficiales", "Manuales oficiales S10", sorted(oficial))
     for gid, gtitulo, ramas in GRUPOS:
         ms = [modulos[r] for r in ramas if r in modulos and modulos[r]["temas"]]
         usados.update(ramas)
