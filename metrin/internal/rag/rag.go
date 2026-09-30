@@ -194,12 +194,13 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 		}
 		historial = h.String()
 	}
-	// Modo tutorial: si el contexto es una guía paso a paso, se responde con
-	// todos los pasos detallados, sin el tope de brevedad.
+	// Modo tutorial: pregunta how-to + contexto de guía. Solo entonces se
+	// responde con todos los pasos detallados, sin el tope de brevedad.
+	// Sin how-to (pregunta conceptual) el tutorial solo aporta contexto.
 	instruccion := "Responde directamente con los datos pertinentes del contexto. No menciones las etiquetas FUENTE ni describas cómo hiciste la búsqueda."
-	if esTutorial(seleccionados) {
+	if esHowTo(efectiva) && esTutorial(seleccionados) {
 		res.Modo = "tutorial"
-		instruccion = "Es una guía paso a paso: responde con TODOS los pasos necesarios, numerados, cada uno con la acción concreta (dónde hacer clic, qué llenar, qué validar). Sin límite de palabras; la brevedad no aplica aquí."
+		instruccion = "Es una guía paso a paso: responde con TODOS los pasos necesarios, numerados, cada uno con la acción concreta (dónde hacer clic, qué llenar, qué validar). Sin límite de palabras; la brevedad no aplica aquí. Cada paso debe salir del contexto: prohibido inventar clics, botones o pasos de cierre como «haz clic en Guardar»."
 	}
 	msgs := []llm.Mensaje{
 		{Role: "system", Content: sistema},
@@ -413,6 +414,20 @@ func esPreguntaLarga(s string) bool {
 		return false
 	}
 	return len(palabras(s)) > 3
+}
+
+// esHowTo: la pregunta pide un procedimiento (cómo, pasos, crear, calcular,
+// guía, tutorial). Sin how-to no hay modo tutorial aunque haya guías cerca.
+func esHowTo(pregunta string) bool {
+	p := " " + strings.ToLower(pregunta) + " "
+	for _, w := range []string{"cómo", "como ", "pasos", "paso a paso", "crear",
+		"calcular", "guía", "guia", "tutorial", "cómo se", "como se", "ayúdame a",
+		"ayudame a", "enséñame", "ensename a", "que debo hacer", "qué debo hacer"} {
+		if strings.Contains(p, w) {
+			return true
+		}
+	}
+	return false
 }
 
 // esTutorial: el contexto trae una guía paso a paso (documento de tutorial

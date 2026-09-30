@@ -345,15 +345,39 @@ func TestTutorialDetallaSinTope(t *testing.T) {
 	}})
 	l := &llmFijo{respuesta: "1. Abre el módulo. 2. Registra."}
 	r := &RAG{Almacen: a, LLM: l, MaxDistancia: 2, RutaFallos: filepath.Join(t.TempDir(), "f.jsonl")}
-	res, err := r.Preguntar(ctx, "precio con tutorial", Opciones{})
+	res, err := r.Preguntar(ctx, "cómo ver precio con tutorial", Opciones{})
 	if err != nil {
 		t.Fatal(err)
 	}
 	if res.Modo != "tutorial" {
-		t.Fatalf("contexto tutorial debió dar modo tutorial: %+v", res)
+		t.Fatalf("how-to + contexto tutorial debió dar modo tutorial: %+v", res)
+	}
+	res2, err := r.Preguntar(ctx, "qué es el precio", Opciones{})
+	if err != nil {
+		t.Fatal(err)
+	}
+	if res2.Modo != "respuesta" {
+		t.Fatalf("pregunta conceptual no debe disparar tutorial: %+v", res2)
 	}
 	if esTutorial([]almacen.Resultado{{Metadata: map[string]string{"document_id": "x"}}}) {
 		t.Fatal("sin tutorial no debe activar")
+	}
+}
+
+func TestEsHowTo(t *testing.T) {
+	si := []string{"cómo creo un presupuesto?", "pasos para calcular CTS",
+		"guía de nóminas", "ayúdame a registrar", "cómo se anula"}
+	no := []string{"qué es el jornal", "los precios quedan amarrados?",
+		"hola", "cuánto cuesta"}
+	for _, s := range si {
+		if !esHowTo(s) {
+			t.Errorf("debió ser how-to: %q", s)
+		}
+	}
+	for _, s := range no {
+		if esHowTo(s) {
+			t.Errorf("no debió ser how-to: %q", s)
+		}
 	}
 }
 
