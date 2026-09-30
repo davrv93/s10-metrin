@@ -215,14 +215,28 @@ func cos(a, b []float32) float64 {
 // Por debajo del umbral (o empate con trabajo) responde trabajo.
 func (m *Modelo) Clasificar(ctx context.Context, e embed.Embebedor, texto string) (string, float64, error) {
 	ins, sims, err := m.Puntajes(ctx, e, texto)
+	// Charla pura («bien y tu», «ok», «jajaja»): si el embedding la iba a
+	// mandar a trabajo (puntaje bajo en mensajes cortos) o no la entiende,
+	// gana la capa léxica. Lo que el embedding ya reconoce (ayuda, límite)
+	// se respeta.
+	charla := PuntajeSocial(texto) == 1
 	if err != nil {
+		if charla {
+			return Social, 1, nil
+		}
 		return "", 0, err
 	}
 	if len(ins) == 0 {
+		if charla {
+			return Social, 1, nil
+		}
 		return Trabajo, math.Inf(-1), nil
 	}
 	mejor, mejorSim := ins[0].Nombre, sims[0]
 	if mejorSim < m.Umbral || mejor == Trabajo {
+		if charla {
+			return Social, 1, nil
+		}
 		return Trabajo, mejorSim, nil
 	}
 	return mejor, mejorSim, nil

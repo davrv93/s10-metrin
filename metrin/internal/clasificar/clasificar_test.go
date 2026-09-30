@@ -72,3 +72,32 @@ func TestGuardarCargar(t *testing.T) {
 		t.Fatalf("roundtrip -> %s", in)
 	}
 }
+
+func TestCharlaCortaEsSocialSinReentrenar(t *testing.T) {
+	// Modelo cuyo embedding no reconoce nada de charla: todo cae lejos.
+	e := falso{v: map[string][]float32{"no entiendo": {1, 0, 0}}}
+	m, err := Entrenar(context.Background(), e, "test", 0.5, map[string][]string{
+		"ayuda":   {"no entiendo"},
+		"trabajo": {"registrar partida"},
+	})
+	if err != nil {
+		t.Fatal(err)
+	}
+	for _, q := range []string{"bien y tu", "Bien, ¿y tú?", "ok", "okk", "Muchas gracias!!", "holaaa",
+		"jajaja", "JAJAJ", "xd", "hola metrín, ¿cómo estás?", "todo bien, gracias", "dale, perfecto", "hasta mañana", "tengo sueño"} {
+		in, sim, err := m.Clasificar(context.Background(), e, q)
+		if err != nil || in != Social || sim != 1 {
+			t.Errorf("%q -> %s (%.2f, %v), esperaba social", q, in, sim, err)
+		}
+	}
+	for _, q := range []string{"dime los metrados", "hola, ¿cómo registro una partida?",
+		"ok y cómo anulo la factura", "gracias, ¿y el IGV dónde va?", "?"} {
+		if in, _, _ := m.Clasificar(context.Background(), e, q); in == Social {
+			t.Errorf("%q -> social, esperaba que decida el RAG", q)
+		}
+	}
+	// Lo que el embedding ya reconoce (ayuda) no se pisa con social.
+	if in, _, _ := m.Clasificar(context.Background(), e, "no entiendo"); in != "ayuda" {
+		t.Errorf("no entiendo -> %s, esperaba ayuda", in)
+	}
+}
