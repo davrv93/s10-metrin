@@ -69,13 +69,30 @@ func TestPreguntaConContexto(t *testing.T) {
 
 func TestSinContextoPorDistancia(t *testing.T) {
 	r, l, fallos := preparar(t, "no debería llamarse")
-	res, _ := r.Preguntar(context.Background(), "¿cómo es el formulario?", Opciones{})
+	res, _ := r.Preguntar(context.Background(), "¿cómo es el formulario de contacto que tiene validaciones?", Opciones{})
 	if !res.SinContexto || l.visto != nil {
 		t.Fatalf("distancia 1 > 0.5: no debe llamar al LLM; %+v", res)
 	}
 	b, _ := os.ReadFile(fallos)
-	if !strings.Contains(string(b), "¿cómo es el formulario?") {
+	if !strings.Contains(string(b), "¿cómo es el formulario") {
 		t.Fatalf("no se registró la pregunta: %q", b)
+	}
+}
+
+func TestSinContextoCortoConversa(t *testing.T) {
+	r, _, fallos := preparar(t, "")
+	sec := &llmSecuencia{respuestas: []string{"Bien, ¿y tú?"}}
+	r.LLM = sec
+	res, err := r.Preguntar(context.Background(), "bien y tú", Opciones{})
+	if err != nil {
+		t.Fatal(err)
+	}
+	if res.Modo != "conversacional" || res.Respuesta != "Bien, ¿y tú?" {
+		t.Fatalf("corto sin contexto debió conversar: %+v", res)
+	}
+	b, _ := os.ReadFile(fallos)
+	if !strings.Contains(string(b), "bien y tú") {
+		t.Fatalf("igual debió registrarse el fallo: %q", b)
 	}
 }
 

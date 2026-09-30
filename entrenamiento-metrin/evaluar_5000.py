@@ -10,7 +10,7 @@ from mlx_lm.sample_utils import make_sampler
 ROOT = Path(__file__).resolve().parent
 MODEL = "mlx-community/Qwen2.5-3B-Instruct-4bit"
 ADAPTER = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "artifacts" / "metrin-lora-5000"
-OUT = ROOT / "artifacts" / "eval-5000"
+OUT = Path(sys.argv[2]) if len(sys.argv) > 2 else ROOT / "artifacts" / "eval-5000"
 SYSTEM = (
     "Eres Metrín, asistente de Optimiza 360. Respondes en español neutro, "
     "con calidez, claridad y profesionalismo. No inventas datos ni afirmas "

@@ -158,6 +158,17 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 		if len(trozos) == 0 {
 			res.Motivo = "el índice no devolvió trozos"
 		}
+		// Mensaje corto sin contexto = casi siempre charla, no pregunta de
+		// trabajo ("bien y tú", "ok", "¿precio?"). Se conversa en vez de
+		// levantar un muro; igual se registra el fallo para aprender.
+		if len(palabras(pregunta)) <= 8 {
+			conv, err := r.conversar(ctx, "charla", pregunta, o.Hilo)
+			if err == nil {
+				conv.Motivo = "sin contexto útil; respuesta conversacional (" + res.Motivo + ")"
+				_ = r.registrarFallo(res)
+				return conv, nil
+			}
+		}
 		res.Respuesta = MarcaSinContexto + " para responder a esa pregunta: no encontré nada relacionado en los documentos indexados."
 		return res, r.registrarFallo(res)
 	}
@@ -378,6 +389,10 @@ func (r *RAG) conversar(ctx context.Context, intencion, pregunta string, hilo []
 	}
 	res.Respuesta = texto
 	return res, nil
+}
+
+func palabras(s string) []string {
+	return strings.Fields(s)
 }
 
 // fuenteDe arma la cita de un resultado para la respuesta.
