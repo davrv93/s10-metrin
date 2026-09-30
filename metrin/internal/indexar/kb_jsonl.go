@@ -13,7 +13,7 @@ import (
 
 const FuenteS10KB = "s10-kb"
 
-const versionMetadatosKB = "kb-jsonl-metadata-v2"
+const versionMetadatosKB = "kb-jsonl-metadata-v3"
 
 type KBJSONL struct{ Ruta string }
 
@@ -28,6 +28,9 @@ type fragmentoKB struct {
 	URL       string `json:"url"`
 	Desde     string `json:"desde"`
 	Texto     string `json:"texto"`
+	// Confianza la pone s10kb.py: oficial, propio, academico,
+	// tercero-sin-verificar, estado-2013. El RAG la usa para desempatar.
+	Confianza string `json:"confianza"`
 	// Busqueda, si viene, es lo que se embebe en lugar de Texto (p. ej. las
 	// preguntas frecuentes que apuntan a un pasaje de Cortex). Texto sigue
 	// siendo lo que recibe el LLM, y el fragmento no se trocea.
@@ -113,6 +116,7 @@ func (o KBJSONL) Listar(ctx context.Context) ([]Documento, error) {
 			"page":        fmt.Sprint(frag.Pagina),
 			"source_url":  fuente,
 			"cita":        cita,
+			"confianza":   strings.TrimSpace(frag.Confianza),
 		}
 		docs = append(docs, Documento{
 			Clave:    "s10kb:" + frag.ID,

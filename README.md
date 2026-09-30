@@ -18,6 +18,7 @@ sustituye la recuperación RAG ni autoriza aprendizaje automático de conversaci
 ```bash
 python3 -m venv .venv && .venv/bin/pip install requests beautifulsoup4
 cp .env.example .env          # completar S10_USUARIO y S10_CLAVE (cuenta de Arturo)
+.venv/bin/python s10kb.py oficial         # base oficial: login de miembro, todo, rama Cortex y aviso a Metrín
 .venv/bin/python s10kb.py todo            # descubre, rastrea, baja hasta 200 PDF e indexa
 .venv/bin/python s10kb.py descargar       # siguiente cola de 200
 .venv/bin/python s10kb.py importar        # suma los PDF dejados a mano en entrada/
@@ -37,6 +38,35 @@ en venv limpio).
 | `rastrear` | `data/paginas/*.md`, `data/paginas.jsonl`, `data/enlaces.jsonl` |
 | `descargar --lote N` | `data/pdf/*.pdf`, `data/manifiesto.jsonl` (sha256, fuente, página) |
 | `indexar` | `kb/fragmentos.jsonl` (trozos de ~1500 caracteres con manual, página y fuente), `kb/documentos.json` |
+
+### Base oficial (`s10kb.py oficial`)
+
+Los manuales del portal de miembros son **la fuente de mayor confianza**. Con
+`S10_USUARIO` y `S10_CLAVE` en `.env` (o como variables de entorno), un solo
+comando los deja listos:
+
+1. Entra con la cuenta leyendo el formulario real de acceso (campos y nonce de
+   Simple Membership) y comprueba que un manual deja de mostrar el muro.
+2. `descubrir` → `rastrear` (las páginas que antes salían tras el muro se repiten
+   con sesión) → `descargar` (hasta 1000 PDF) → `ocr --completo` → `indexar`.
+3. `oficial_a_cortex.py --cargar`: rama **`manuales-oficiales`** de Cortex, un
+   nodo por manual con su módulo, sus PDF, el índice de secciones y la fuente
+   (el texto completo va al RAG, no a Cortex). Sin tablero encendido deja el
+   borrador en `data/cortex-borradores/manuales-oficiales.json`.
+4. `cortex_a_kb.py` y `kb/.actualizado`: Metrín reindexa solo.
+
+Al terminar lista las páginas que siguen tras el muro (la cuenta no las abre).
+El programador lo repite cada semana (fuente `manuales-oficiales`). Un rastreo
+público posterior ya no pisa una página bajada con sesión.
+
+**No hace falta reentrenar un modelo.** Los manuales entran por el RAG: Metrín
+los cita con manual y página. Ante dos pasajes igual de cercanos gana el oficial
+(las copias de terceros y los casos académicos llevan una pequeña penalización
+de distancia en `seleccionarContexto`). El LoRA es solo de estilo
+([plan](docs/PLAN_LORA_METRIN_MLX.md)): meterle manuales lo haría inventar pasos.
+
+`indexar` conserva los fragmentos de los PDF que no están en la máquina
+(`data/pdf/` no se versiona), así que reindexar en otro equipo no vacía la base.
 
 Todo es reanudable: cada paso salta lo ya hecho. Una petición por segundo por
 defecto (`S10_PAUSA`). `--sin-login` rastrea solo lo público, para probar.
@@ -204,6 +234,7 @@ Servicio `programador` del compose (o `.venv/bin/python programador.py` fuera de
 | Fuente | Qué corre | Frecuencia por defecto |
 |---|---|---|
 | Portal de ayuda S10 | `s10kb.py rastrear --sin-login --refrescar` | cada día |
+| Manuales oficiales (miembros) | `s10kb.py oficial` (necesita la cuenta en `.env`) | cada semana |
 | PDF públicos de s10peru.com | `s10kb.py pdfs-publicos` → `descargar --sin-login` → `ocr --completo` | cada semana |
 | optimiza360.pe | `s10kb.py sitio optimiza360.pe` | cada semana |
 | YouTube (canal oficial) | `youtube.py todo` | cada semana |

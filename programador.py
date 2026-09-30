@@ -36,6 +36,8 @@ CORTEX = os.environ.get("S10_CORTEX_API", "http://localhost:4748/api")
 FUENTES = {
     "portal-s10": {"nombre": "Portal de ayuda S10 (páginas públicas)", "cada_horas": 24,
                    "pasos": [["s10kb.py", "rastrear", "--sin-login", "--refrescar"]]},
+    "manuales-oficiales": {"nombre": "Manuales oficiales S10 (portal de miembros)", "cada_horas": 168,
+                           "pasos": [["s10kb.py", "oficial"]]},
     "pdfs-s10peru": {"nombre": "PDF públicos de s10peru.com", "cada_horas": 168,
                      "pasos": [["s10kb.py", "pdfs-publicos"], ["s10kb.py", "descargar", "--sin-login"],
                                ["s10kb.py", "ocr", "--completo"]]},

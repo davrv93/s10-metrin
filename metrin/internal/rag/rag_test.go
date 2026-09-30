@@ -395,3 +395,21 @@ func TestParecePortugues(t *testing.T) {
 		}
 	}
 }
+
+func TestManualOficialGanaACopiaDeTerceroIgualDeCercana(t *testing.T) {
+	copia := almacen.Resultado{ID: "copia", Distancia: 0.20, Texto: "Paso de una guía vieja",
+		Metadata: map[string]string{"cita": "Guía Scribd, p. 4", "confianza": "tercero-sin-verificar"}}
+	oficial := almacen.Resultado{ID: "oficial", Distancia: 0.22, Texto: "Paso del manual oficial",
+		Metadata: map[string]string{"cita": "Manual de Compras, p. 9", "confianza": "oficial"}}
+	sel := seleccionarContexto([]almacen.Resultado{copia, oficial}, 0.8)
+	if len(sel) != 2 || sel[0].ID != "oficial" {
+		t.Fatalf("el manual oficial debía ir primero: %+v", sel)
+	}
+	lejano := almacen.Resultado{ID: "lejano", Distancia: 0.40, Texto: "Otro tema",
+		Metadata: map[string]string{"cita": "Manual de Almacenes, p. 1", "confianza": "oficial"}}
+	cercana := almacen.Resultado{ID: "cercana", Distancia: 0.10, Texto: "Respuesta exacta",
+		Metadata: map[string]string{"cita": "Guía Scribd, p. 7", "confianza": "tercero-sin-verificar"}}
+	if sel := seleccionarContexto([]almacen.Resultado{lejano, cercana}, 0.8); sel[0].ID != "cercana" {
+		t.Fatalf("una copia mucho más cercana no debe perder: %+v", sel)
+	}
+}

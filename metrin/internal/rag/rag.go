@@ -93,6 +93,15 @@ Reglas:
 const maxContextos = 5
 const ventanaRelevancia = 0.18
 
+// Distancia que se suma a los trozos de menor confianza para que, ante dos
+// pasajes igual de cercanos, gane el manual oficial de S10. Es un desempate:
+// una copia de tercero mucho más cercana sigue entrando.
+var penalizacionConfianza = map[string]float64{
+	"tercero-sin-verificar": 0.04,
+	"estado-2013":           0.04,
+	"academico":             0.02,
+}
+
 // ManualCortex: valor del campo manual para el conocimiento curado del
 // proyecto. El segundo pase lo recupera siempre etiquetado.
 const ManualCortex = "Cortex"
@@ -282,6 +291,9 @@ func parecePortugues(t string) bool {
 func seleccionarContexto(candidatos []almacen.Resultado, maxDistancia float64) []almacen.Resultado {
 	if len(candidatos) == 0 {
 		return nil
+	}
+	for i := range candidatos {
+		candidatos[i].Distancia += penalizacionConfianza[candidatos[i].Metadata["confianza"]]
 	}
 	sort.SliceStable(candidatos, func(i, j int) bool {
 		return candidatos[i].Distancia < candidatos[j].Distancia

@@ -16,6 +16,8 @@ Pasos (cada uno se puede repetir; retoma donde quedó):
   descargar   PDF encontrados                   -> data/pdf/*.pdf, data/manifiesto.jsonl
   indexar     pdftotext + troceo                 -> kb/fragmentos.jsonl, kb/documentos.json
   todo        los cuatro en orden
+  oficial     todo con la cuenta de miembro + rama manuales-oficiales de Cortex
+              + fragmentos de Cortex, y avisa a Metrín (kb/.actualizado)
 
 Uso:
   cp .env.example .env   # y completar usuario/clave
@@ -91,6 +93,35 @@ def normalizar(url: str) -> str:
 
 
 # ─────────────────────────────── sesión HTTP ───────────────────────────────
+def formulario_login(html: str, url: str, usuario: str, clave: str) -> tuple[str, dict]:
+    """
+    (action, datos) del formulario de acceso tal como lo pinta el sitio: copia los
+    campos ocultos (nonce, redirect…) y pone usuario y clave en los campos que el
+    formulario tenga. Simple Membership usa swpm_user_name/swpm_password, otros
+    temas custom_username/custom_password; si no se reconoce, los de siempre.
+    """
+    soup = BeautifulSoup(html, "html.parser")
+    for form in soup.find_all("form"):
+        clave_campo = form.find("input", attrs={"type": "password"})
+        if not clave_campo or not clave_campo.get("name"):
+            continue
+        datos: dict[str, str] = {}
+        usuario_campo = None
+        for inp in form.find_all(["input", "button"]):
+            nombre, tipo = inp.get("name"), (inp.get("type") or "text").lower()
+            if not nombre or tipo in ("checkbox", "radio", "reset", "button", "file", "image"):
+                continue
+            if tipo in ("text", "email") and usuario_campo is None:
+                usuario_campo = nombre
+            datos[nombre] = inp.get("value", "")
+        if usuario_campo is None:
+            continue
+        datos[usuario_campo] = usuario
+        datos[clave_campo["name"]] = clave
+        return urljoin(url, form.get("action") or url), datos
+    return url, {"custom_username": usuario, "custom_password": clave, "custom_api_login": "Iniciar sesión"}
+
+
 class Cliente:
     def __init__(self) -> None:
         self.s = requests.Session()
@@ -127,14 +158,10 @@ class Cliente:
                 "se puede rastrear lo público (añade --sin-login)."
             )
         url = f"{BASE}/membership-login/"
-        self.get(url)  # cookies iniciales
+        pagina = self.get(url)  # cookies iniciales
+        destino, datos = formulario_login(pagina.text, url, usuario, clave)
         self._esperar()
-        r = self.s.post(
-            url,
-            data={"custom_username": usuario, "custom_password": clave, "custom_api_login": "Iniciar sesión"},
-            headers={"Referer": url},
-            timeout=60,
-        )
+        r = self.s.post(destino, data=datos, headers={"Referer": url}, timeout=60)
         # Prueba real: una página de manual deja de mostrar el aviso de "debes acceder".
         prueba = self.get(f"{BASE}/manual-de-presupuestos/")
         if MURO in prueba.text:
@@ -234,6 +261,10 @@ def rastrear(c: Cliente, urls: list[str], refrescar: bool = False) -> dict:
         antes = previas.get(url, {})
         if antes.get("titulo_fijo"):
             titulo = antes["titulo"]      # títulos puestos a mano no se pisan al refrescar
+        if muro and not c.con_sesion and antes.get("estado") == 200 and not antes.get("muro_de_miembros", True):
+            # ya se bajó con la cuenta de miembro: un rastreo público no la pisa con el aviso del muro
+            stats["iguales"] += 1
+            continue
         huella = hashlib.sha256(texto.encode()).hexdigest()[:16]
         u = urlparse(url)
         # el portal conserva sus nombres de siempre; otros sitios llevan el dominio delante
@@ -253,7 +284,7 @@ def rastrear(c: Cliente, urls: list[str], refrescar: bool = False) -> dict:
             agregar_jsonl(DATA / "enlaces.jsonl", {"url": pdf, "etiqueta": etiqueta, "pagina": url, "titulo_pagina": titulo})
         stats["pdf_nuevos"] += nuevos
         fila = {"pagina": url, "estado": 200, "titulo": titulo, "archivo": f"paginas/{nombre}",
-                "muro_de_miembros": muro, "pdf_nuevos": nuevos, "huella": huella,
+                "muro_de_miembros": muro, "con_sesion": c.con_sesion, "pdf_nuevos": nuevos, "huella": huella,
                 "visto": time.strftime("%Y-%m-%dT%H:%M:%S")}
         if antes.get("titulo_fijo"):
             fila["titulo_fijo"] = True
@@ -425,6 +456,8 @@ def ocr(completo: bool = False) -> None:
         if m.get("estado") != "ok":
             continue
         pdf = DATA / m["archivo"]
+        if not pdf.exists():
+            continue  # bajado en otra máquina: su OCR (si lo hubo) viaja en data/ocr
         destino = DATA / "ocr" / (pdf.stem + ".txt")
         nativo = texto_pdf(pdf)
         escaneado = len(nativo.split()) <= 30
@@ -509,6 +542,12 @@ def confianza(m: dict) -> str:
 def indexar() -> None:
     KB.mkdir(exist_ok=True)
     salida = KB / "fragmentos.jsonl"
+    # PDF que no están en esta máquina (data/pdf no se versiona): se conservan sus fragmentos previos
+    previos: dict[str, list[dict]] = {}
+    for f in leer_jsonl(salida):
+        previos.setdefault(f["documento"], []).append(f)
+    docs_previos = {d["id"]: d for d in json.loads((KB / "documentos.json").read_text(encoding="utf-8"))} \
+        if (KB / "documentos.json").exists() else {}
     salida.write_text("", encoding="utf-8")
     documentos = []
     total = 0
@@ -516,13 +555,22 @@ def indexar() -> None:
         if m.get("estado") != "ok":
             continue
         pdf = DATA / m["archivo"]
-        texto = texto_pdf(pdf)
         via_ocr = DATA / "ocr" / (pdf.stem + ".txt")
+        doc_id = m["sha256"][:12]
+        if not pdf.exists() and not via_ocr.exists():
+            viejos = previos.get(doc_id, [])
+            for f in viejos:
+                agregar_jsonl(salida, f)
+            if doc_id in docs_previos:
+                documentos.append(docs_previos[doc_id])
+            total += len(viejos)
+            log(f"{pdf.name}: no está en esta máquina, se conservan {len(viejos)} fragmentos")
+            continue
+        texto = texto_pdf(pdf) if pdf.exists() else ""
         if via_ocr.exists():  # escaneado, o nativo enriquecido con las capturas
             texto = via_ocr.read_text(encoding="utf-8")
         paginas = texto.split("\f")
         trozos = trocear(paginas)
-        doc_id = m["sha256"][:12]
         documentos.append({
             "id": doc_id, "titulo": m.get("etiqueta") or pdf.stem, "manual": m.get("titulo_pagina"),
             "archivo": m["archivo"], "fuente": m["url"], "pagina_web": m["pagina"],
@@ -559,7 +607,8 @@ def indexar() -> None:
 def main() -> None:
     cargar_env()
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("paso", choices=["descubrir", "rastrear", "descargar", "importar", "ocr", "indexar", "todo", "pdfs-publicos", "sitio"])
+    ap.add_argument("paso", choices=["descubrir", "rastrear", "descargar", "importar", "ocr", "indexar", "todo", "oficial",
+                                     "pdfs-publicos", "sitio"])
     ap.add_argument("dominio", nargs="?", help="para `sitio`: dominio a rastrear, p. ej. optimiza360.pe")
     ap.add_argument("--refrescar", action="store_true", help="rastrear: vuelve a bajar también las páginas ya vistas")
     ap.add_argument("--sin-login", action="store_true", help="solo lo público (útil para probar el rastreo)")
@@ -569,6 +618,13 @@ def main() -> None:
     a = ap.parse_args()
 
     c = Cliente()
+    if a.paso == "oficial":
+        if a.sin_login:
+            raise SystemExit("`oficial` es justamente lo que pide sesión de miembro: quita --sin-login")
+        a.paso, a.completo, a.lote = "todo", True, max(a.lote, 1000)
+        oficial = True
+    else:
+        oficial = False
     necesita_red = a.paso in ("rastrear", "descargar", "todo")
     if a.paso == "pdfs-publicos":
         pdfs_publicos(c)
@@ -596,6 +652,23 @@ def main() -> None:
         ocr(a.completo)
     if a.paso in ("indexar", "todo"):
         indexar()
+    if oficial:
+        cerrar_oficial()
+
+
+def cerrar_oficial() -> None:
+    """Tras bajar los manuales: cuántos siguen tras el muro, rama de Cortex, fragmentos y aviso a Metrín."""
+    filas = [p for p in leer_jsonl(DATA / "paginas.jsonl") if "documentacion.s10peru.com" in p["pagina"]]
+    muro = [p["pagina"] for p in filas if p.get("muro_de_miembros")]
+    log(f"portal: {len(filas) - len(muro)} páginas con contenido, {len(muro)} siguen tras el muro")
+    for u in muro[:10]:
+        log(f"  sin acceso con esta cuenta: {u}")
+    for paso in (["oficial_a_cortex.py", "--cargar"], ["cortex_a_kb.py"]):
+        r = subprocess.run([sys.executable, str(RAIZ / paso[0]), *paso[1:]], cwd=RAIZ)
+        if r.returncode != 0:
+            log(f"{paso[0]} terminó con código {r.returncode}; lo demás ya quedó indexado")
+    (KB / ".actualizado").write_text(time.strftime("%Y-%m-%dT%H:%M:%S"), encoding="utf-8")
+    log("kb/.actualizado tocado: Metrín recarga su índice")
 
 
 if __name__ == "__main__":
