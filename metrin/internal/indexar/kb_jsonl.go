@@ -28,6 +28,10 @@ type fragmentoKB struct {
 	URL       string `json:"url"`
 	Desde     string `json:"desde"`
 	Texto     string `json:"texto"`
+	// Busqueda, si viene, es lo que se embebe en lugar de Texto (p. ej. las
+	// preguntas frecuentes que apuntan a un pasaje de Cortex). Texto sigue
+	// siendo lo que recibe el LLM, y el fragmento no se trocea.
+	Busqueda string `json:"busqueda"`
 }
 
 func (KBJSONL) Fuente() string { return FuenteS10KB }
@@ -115,6 +119,7 @@ func (o KBJSONL) Listar(ctx context.Context) ([]Documento, error) {
 			Ruta:     frag.ID + ".txt",
 			Version:  version,
 			Metadata: metadata,
+			Busqueda: strings.TrimSpace(frag.Busqueda),
 			Cargar:   func(context.Context) (string, error) { return frag.Texto, nil },
 		})
 	}
