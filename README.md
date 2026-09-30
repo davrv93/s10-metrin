@@ -70,6 +70,21 @@ de distancia en `seleccionarContexto`). El LoRA es solo de estilo
 `indexar` conserva los fragmentos de los PDF que no están en la máquina
 (`data/pdf/` no se versiona), así que reindexar en otro equipo no vacía la base.
 
+### Manuales HTML por sección, con cada captura en su paso
+
+Si la página tiene su HTML guardado (`data/html/<slug>.html`, paso `medios`),
+`indexar` la trocea por **secciones** (`secciones_html.py`) en lugar de por
+tamaño: cada encabezado abre una sección, cada párrafo o ítem es un paso y cada
+imagen se pega al paso que la precede (o al primero, si abre la sección). El
+fragmento lleva `pasos: [{texto, fotos}]` y la cita «Página › Sección».
+
+Metrín responde con el texto de la sección; después, el servidor
+(`metrin/internal/servidor/fotos_pasos.go`) compara cada línea de la respuesta
+con los pasos del manual por palabras de contenido y pone la captura debajo de
+la línea que explica ese paso (`![Captura del manual](fotos/…)`, que la página
+dibuja dentro del ítem de la lista). Las capturas sin paso reconocible quedan en
+la galería de la fuente. Revisar una página: `python3 secciones_html.py data/html/<slug>.html <url>`.
+
 Todo es reanudable: cada paso salta lo ya hecho. Una petición por segundo por
 defecto (`S10_PAUSA`). `--sin-login` rastrea solo lo público, para probar.
 

@@ -743,15 +743,36 @@ def indexar() -> None:
         aviso = "  (sin texto: corre el paso `ocr`)" if not texto.strip() else ""
         log(f"{pdf.name}: {len(paginas)} pág, {len(trozos)} fragmentos{aviso}")
     # las páginas web también entran: suelen explicar a qué módulo pertenece cada PDF
+    # Con HTML guardado (paso `medios`) la página entra por secciones: cada paso
+    # lleva sus capturas y Metrín las pone junto al paso que ilustran.
+    from secciones_html import secciones, texto_seccion
+    fotos_por_url = {f["url"]: f["archivo"] for f in leer_jsonl(DATA / "imagenes.jsonl")}
     for p in leer_jsonl(DATA / "paginas.jsonl"):
         if p.get("estado") != 200 or p.get("muro_de_miembros"):
+            continue
+        confianza_web = "propio" if "optimiza360.pe" in p["pagina"] else "oficial"
+        html = DATA / "html" / (Path(p["archivo"]).stem + ".html")
+        secs = secciones(html.read_text(encoding="utf-8"), p["pagina"], p.get("titulo") or "", fotos_por_url) \
+            if html.exists() else []
+        for k, sec in enumerate(secs):
+            titulo = p.get("titulo") or ""
+            if sec["titulo"] and sec["titulo"] != titulo:
+                titulo = f"{titulo} › {sec['titulo']}" if titulo else sec["titulo"]
+            agregar_jsonl(salida, {
+                "id": f"web-{slug(p['pagina'], 40)}-s{k:03d}", "documento": "web", "manual": p.get("titulo"),
+                "titulo": titulo, "seccion": sec["titulo"], "pagina": None, "fuente": p["pagina"],
+                "confianza": confianza_web, "texto": texto_seccion(sec),
+                "pasos": sec["pasos"] if any(ps["fotos"] for ps in sec["pasos"]) else [],
+            })
+            total += 1
+        if secs:
             continue
         texto = (DATA / p["archivo"]).read_text(encoding="utf-8")
         for k, t in enumerate(trocear([texto])):
             agregar_jsonl(salida, {
                 "id": f"web-{slug(p['pagina'], 40)}-{k:03d}", "documento": "web", "manual": p.get("titulo"),
                 "titulo": p.get("titulo"), "pagina": None, "fuente": p["pagina"],
-                "confianza": "propio" if "optimiza360.pe" in p["pagina"] else "oficial", "texto": t.texto,
+                "confianza": confianza_web, "texto": t.texto,
             })
             total += 1
     # Las imágenes son documentos secundarios de su página/manual de origen.

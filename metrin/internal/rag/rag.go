@@ -46,6 +46,16 @@ type Fuente struct {
 	// Fotos: rutas relativas bajo el directorio de datos del servidor;
 	// se sirven en GET /fotos/<ruta>. Las arma servidor desde imagenes.jsonl.
 	Fotos []string `json:"fotos,omitempty"`
+	// Pasos: los de la sección del manual con sus capturas (solo fragmentos
+	// de HTML con imágenes). No se envían al navegador: sirven para colocar
+	// cada captura junto al paso de la respuesta que ilustra.
+	Pasos []Paso `json:"-"`
+}
+
+// Paso de una sección del manual y las capturas que lo acompañan.
+type Paso struct {
+	Texto string   `json:"texto"`
+	Fotos []string `json:"fotos"`
 }
 
 type Respuesta struct {
@@ -539,13 +549,17 @@ func palabras(s string) []string {
 func fuenteDe(t almacen.Resultado) Fuente {
 	pagina := 0
 	fmt.Sscan(t.Metadata["page"], &pagina)
-	return Fuente{
+	f := Fuente{
 		Cita:      t.Metadata["cita"],
 		Distancia: redondear(t.Distancia),
 		Documento: t.Metadata["title"],
 		Pagina:    pagina,
 		URL:       t.Metadata["source_url"],
 	}
+	if p := t.Metadata["pasos"]; p != "" {
+		_ = json.Unmarshal([]byte(p), &f.Pasos)
+	}
+	return f
 }
 
 // DiceSinContexto detecta la frase de rechazo (o variantes cercanas).

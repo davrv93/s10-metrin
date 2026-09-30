@@ -77,6 +77,9 @@ func Nuevo(r *rag.RAG, timeout time.Duration) http.Handler {
 			return
 		}
 		vincularFotos(res.Fuentes)
+		if !res.SinContexto {
+			res.Respuesta = colocarFotos(res.Respuesta, res.Fuentes)
+		}
 		escribirJSON(w, http.StatusOK, res)
 	})
 	return mux
@@ -91,6 +94,11 @@ const fotosPorFuente = 8
 func vincularFotos(fuentes []rag.Fuente) {
 	mapa := mapaImagenes()
 	for i := range fuentes {
+		if fotos := fotosDePasos(fuentes[i].Pasos); len(fotos) > 0 {
+			// sección del manual: solo sus capturas, no las de toda la página
+			fuentes[i].Fotos = fotos
+			continue
+		}
 		f := mapa[fuentes[i].URL]
 		if len(f) == 0 && fuentes[i].Pagina > 0 && strings.HasPrefix(fuentes[i].URL, "manual://") {
 			slug := slugDocumento(fuentes[i].Documento)
@@ -106,6 +114,14 @@ func vincularFotos(fuentes []rag.Fuente) {
 		}
 		fuentes[i].Fotos = append([]string(nil), f...)
 	}
+}
+
+func fotosDePasos(pasos []rag.Paso) []string {
+	var out []string
+	for _, p := range pasos {
+		out = append(out, p.Fotos...)
+	}
+	return out
 }
 
 func slugDocumento(nombre string) string {

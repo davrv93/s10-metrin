@@ -266,3 +266,19 @@ func TestKBJSONLBusquedaEmbebePreguntaYDevuelvePasaje(t *testing.T) {
 		t.Fatalf("se embebió el pasaje y no la pregunta: distancia %.3f", rs[0].Distancia)
 	}
 }
+
+func TestKBJSONLGuardaPasosConCapturas(t *testing.T) {
+	dir := t.TempDir()
+	escribir(t, dir, "kb.jsonl", `{"id":"web-boletaje-s001","documento":"web","titulo":"Boletaje › Cambio de titularidad","texto":"## Cambio de titularidad\nSeleccione la orden de venta.","pasos":[{"texto":"Seleccione la orden de venta.","fotos":["imagenes/boletaje/b2.png"]}]}
+{"id":"web-boletaje-s002","documento":"web","titulo":"Boletaje › Anulación","texto":"Para anular una venta…","pasos":[]}`)
+	docs, err := (KBJSONL{Ruta: filepath.Join(dir, "kb.jsonl")}).Listar(context.Background())
+	if err != nil {
+		t.Fatal(err)
+	}
+	if got := docs[0].Metadata["pasos"]; got != `[{"texto":"Seleccione la orden de venta.","fotos":["imagenes/boletaje/b2.png"]}]` {
+		t.Errorf("pasos = %q", got)
+	}
+	if _, hay := docs[1].Metadata["pasos"]; hay {
+		t.Error("una sección sin capturas no debe llevar pasos")
+	}
+}

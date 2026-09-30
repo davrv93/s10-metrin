@@ -13,7 +13,7 @@ import (
 
 const FuenteS10KB = "s10-kb"
 
-const versionMetadatosKB = "kb-jsonl-metadata-v3"
+const versionMetadatosKB = "kb-jsonl-metadata-v4"
 
 type KBJSONL struct{ Ruta string }
 
@@ -35,6 +35,10 @@ type fragmentoKB struct {
 	// preguntas frecuentes que apuntan a un pasaje de Cortex). Texto sigue
 	// siendo lo que recibe el LLM, y el fragmento no se trocea.
 	Busqueda string `json:"busqueda"`
+	// Pasos: los de una sección del manual HTML con sus capturas en orden
+	// (secciones_html.py). Viaja como JSON en metadata["pasos"] para que el
+	// servidor ponga cada captura debajo del paso de la respuesta.
+	Pasos json.RawMessage `json:"pasos"`
 }
 
 func (KBJSONL) Fuente() string { return FuenteS10KB }
@@ -117,6 +121,9 @@ func (o KBJSONL) Listar(ctx context.Context) ([]Documento, error) {
 			"source_url":  fuente,
 			"cita":        cita,
 			"confianza":   strings.TrimSpace(frag.Confianza),
+		}
+		if p := strings.TrimSpace(string(frag.Pasos)); p != "" && p != "null" && p != "[]" {
+			metadata["pasos"] = p
 		}
 		docs = append(docs, Documento{
 			Clave:    "s10kb:" + frag.ID,
