@@ -2,9 +2,8 @@
 """Arma la rama `manuales-oficiales` de Cortex con lo bajado del portal de miembros.
 
 Un nodo por página del portal (documentacion.s10peru.com) que se abrió con la
-cuenta de miembro: título, módulo, PDF que enlaza, índice de secciones sacado del
-texto y enlace a la fuente. El texto completo NO va al nodo: ya está troceado en
-kb/fragmentos.jsonl para el RAG. Cortex guarda el mapa, no la copia.
+cuenta de miembro: título, módulo, PDF que enlaza, índice de secciones,
+TEXTO COMPLETO de la página y de sus PDF, imágenes locales y enlace a la fuente.
 
 Salida: data/cortex-borradores/manuales-oficiales.json (mismo formato que los
 demás borradores). Con --cargar lo sube al Cortex local (herramientas/cargar_cortex.py).
@@ -40,6 +39,11 @@ def leer_jsonl(p):
     if not p.exists():
         return []
     return [json.loads(l) for l in p.read_text(encoding="utf-8").splitlines() if l.strip()]
+
+
+def imagenes_de(pagina):
+    """Filas de data/imagenes.jsonl para la página."""
+    return [f for f in leer_jsonl(DATA / "imagenes.jsonl") if f.get("pagina") == pagina]
 
 
 def slug(t, largo=60):
@@ -129,10 +133,23 @@ def main():
                 pdf = DATA / m["archivo"]
                 if pdf.exists():
                     texto_total += "\n" + texto_pdf(pdf)
+        imgs = imagenes_de(p["pagina"])
+        if imgs:
+            cuerpo += ["", "## Imágenes", ""]
+            for im in imgs:
+                alt = im.get("alt") or Path(im["archivo"]).stem
+                cuerpo.append(f"![{alt}](../../{im['archivo']})")
         indice = secciones(texto_total)
         if indice:
             cuerpo += ["", "## Contenido", ""] + [f"- {s}" for s in indice]
-        cuerpo += ["", "El texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) "
+        cuerpo += ["", "## Texto de la página", "", texto_web.strip()]
+        for m in adjuntos:
+            pdf = DATA / m["archivo"]
+            if pdf.exists():
+                t = texto_pdf(pdf)
+                if t.strip():
+                    cuerpo += ["", f"## Texto del PDF: {m.get('etiqueta') or Path(m['archivo']).stem}", "", t.strip()]
+        cuerpo += ["", "El texto completo también está troceado en `kb/fragmentos.jsonl` "
                    "y se cita con el nombre del manual y la página.", "", "**Confiabilidad:** oficial S10"]
         nodos.append({
             "path": f"{RAMA}/{ruta}", "title": titulo[:120], "summary": resumen(texto_web, titulo)[:300],

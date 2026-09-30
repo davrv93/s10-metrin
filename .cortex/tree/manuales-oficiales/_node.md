@@ -10,7 +10,7 @@ tags:
 id: 01M3SP280HWZ3S2QNX4XETZ9EY
 status: active
 updated_by: ai-agent
-updated_at: 2026-09-30T17:33:43.825Z
+updated_at: 2026-09-30T17:47:59.298Z
 ---
 
 Base oficial de conocimiento de S10. Cada hijo es una página del portal de miembros con sus PDF, su índice y el enlace a la fuente. Se regenera con `s10kb.py oficial`.

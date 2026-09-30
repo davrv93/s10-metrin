@@ -9,13 +9,22 @@ tags:
 id: 01M3SP28XB0P8A5KVCDF77RFM8
 status: active
 updated_by: ai-agent
-updated_at: 2026-09-30T17:33:44.747Z
+updated_at: 2026-09-30T17:48:00.614Z
 ---
 
 Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.
 
 - **Página:** https://documentacion.s10peru.com/video-lean/
 
-El texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.
+## Texto de la página
+
+# Videos Tutoriales de Lean
+
+Fuente: https://documentacion.s10peru.com/video-lean/
+
+Videos sobre el módulo de Lean S10 ERP
+Categoría: Lean
+
+El texto completo también está troceado en `kb/fragmentos.jsonl` y se cita con el nombre del manual y la página.
 
 **Confiabilidad:** oficial S10

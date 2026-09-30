@@ -10,7 +10,7 @@ tags:
 id: 01M3SP28YNWCCM63H9HZWD4EM4
 status: active
 updated_by: ai-agent
-updated_at: 2026-09-30T17:33:44.789Z
+updated_at: 2026-09-30T17:48:00.654Z
 ---
 
 Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.
@@ -18,6 +18,15 @@ Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa
 - **Página:** https://documentacion.s10peru.com/video-calidad-movil/
 - **Módulo:** `gerencia-proyectos` (ver esa rama para el resumen redactado)
 
-El texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.
+## Texto de la página
+
+# Videos de Calidad Móvil
+
+Fuente: https://documentacion.s10peru.com/video-calidad-movil/
+
+Videos sobre Calidad Móvil
+Categoría: Calidad Móvil
+
+El texto completo también está troceado en `kb/fragmentos.jsonl` y se cita con el nombre del manual y la página.
 
 **Confiabilidad:** oficial S10

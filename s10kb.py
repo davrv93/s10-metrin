@@ -365,6 +365,80 @@ def sitio(c: Cliente, dominio: str) -> dict:
 
 
 # ─────────────────────────────── 3. descargar ──────────────────────────────
+EXT_IMG = (".png", ".jpg", ".jpeg", ".webp", ".gif")
+
+
+def medios(c: Cliente, limite: int = 0) -> dict:
+    """Baja el HTML crudo y las imágenes de cada página vista (data/html + data/imagenes).
+    Idempotente: salta lo ya bajado. Las imágenes van a data/imagenes/<slug>/NN.ext
+    y se anotan en data/imagenes.jsonl {pagina, archivo, url} para Cortex y el RAG.
+    """
+    from bs4 import BeautifulSoup
+    filas = [f for f in leer_jsonl(DATA / "paginas.jsonl")
+             if f.get("estado") == 200 and f.get("archivo")]
+    if limite:
+        filas = filas[:limite]
+    (DATA / "html").mkdir(parents=True, exist_ok=True)
+    (DATA / "imagenes").mkdir(parents=True, exist_ok=True)
+    prev = {}
+    for f in leer_jsonl(DATA / "imagenes.jsonl"):
+        prev[f["url"]] = f["archivo"]
+    stats = {"html": 0, "imagenes": 0, "saltadas": 0, "errores": 0}
+    for i, f in enumerate(filas, 1):
+        base = Path(f["archivo"]).stem
+        hpath = DATA / "html" / f"{base}.html"
+        if not hpath.exists():
+            try:
+                r = c.get(f["pagina"])
+                if r.status_code != 200:
+                    stats["errores"] += 1
+                    continue
+                hpath.write_text(r.text, encoding="utf-8")
+                stats["html"] += 1
+            except Exception as e:  # noqa: BLE001
+                log(f"[{i}/{len(filas)}] html falló {f['pagina']}: {e}")
+                stats["errores"] += 1
+                continue
+        try:
+            soup = BeautifulSoup(hpath.read_text(encoding="utf-8"), "html.parser")
+        except Exception:  # noqa: BLE001
+            stats["errores"] += 1
+            continue
+        vistas = 0
+        for img in soup.find_all("img", src=True):
+            u = urljoin(f["pagina"], img["src"].strip())
+            pu = urlparse(unquote(u))
+            if not pu.netloc.endswith("s10peru.com"):
+                continue
+            ext = os.path.splitext(pu.path)[1].lower()
+            if ext not in EXT_IMG:
+                continue
+            if u in prev:
+                continue
+            try:
+                r = c.get(u)
+                if r.status_code != 200 or not r.content:
+                    continue
+                nombre = hashlib.sha256(u.encode()).hexdigest()[:12] + ext
+                rel = f"imagenes/{base}/{nombre}"
+                (DATA / "imagenes" / base).mkdir(parents=True, exist_ok=True)
+                (DATA / rel).write_bytes(r.content)
+                prev[u] = rel
+                agregar_jsonl(DATA / "imagenes.jsonl",
+                              {"pagina": f["pagina"], "archivo": rel, "url": u,
+                               "alt": (img.get("alt") or "").strip()[:200]})
+                vistas += 1
+            except Exception as e:  # noqa: BLE001
+                log(f"  imagen falló {u}: {e}")
+        stats["imagenes"] += vistas
+        if vistas == 0:
+            stats["saltadas"] += 1
+        if i % 20 == 0:
+            log(f"[{i}/{len(filas)}] html+{stats['html']} img+{stats['imagenes']}")
+    log(f"medios: {stats}")
+    return stats
+
+
 def descargar(c: Cliente, lote: int = 200) -> None:
     """Baja en colas: como mucho `lote` PDF por corrida; la siguiente sigue donde quedó."""
     enlaces = leer_jsonl(DATA / "enlaces.jsonl")
@@ -626,7 +700,7 @@ def main() -> None:
     cargar_env()
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("paso", choices=["descubrir", "rastrear", "descargar", "importar", "ocr", "indexar", "todo", "oficial",
-                                     "pdfs-publicos", "sitio"])
+                                     "pdfs-publicos", "sitio", "medios"])
     ap.add_argument("dominio", nargs="?", help="para `sitio`: dominio a rastrear, p. ej. optimiza360.pe")
     ap.add_argument("--refrescar", action="store_true", help="rastrear: vuelve a bajar también las páginas ya vistas")
     ap.add_argument("--sin-login", action="store_true", help="solo lo público (útil para probar el rastreo)")
@@ -644,9 +718,12 @@ def main() -> None:
         oficial = True
     else:
         oficial = False
-    necesita_red = a.paso in ("rastrear", "descargar", "todo")
+    necesita_red = a.paso in ("rastrear", "descargar", "todo", "medios")
     if a.paso == "pdfs-publicos":
         pdfs_publicos(c)
+        return
+    if a.paso == "medios":
+        medios(c, a.limite)
         return
     if a.paso == "sitio":
         if not a.dominio:

@@ -9,7 +9,7 @@ tags:
 id: 01M3SP28VZ5H9MNZ7R6TNDM33Y
 status: active
 updated_by: ai-agent
-updated_at: 2026-09-30T17:33:44.703Z
+updated_at: 2026-09-30T17:48:00.565Z
 ---
 
 Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa.
@@ -17,6 +17,23 @@ Manual oficial de S10, bajado del portal de miembros con la cuenta de la empresa
 - **Página:** https://documentacion.s10peru.com/video-compras/
 - **Módulo:** `compras` (ver esa rama para el resumen redactado)
 
-El texto completo está en la base de fragmentos de Metrín (`kb/fragmentos.jsonl`) y se cita con el nombre del manual y la página.
+## Texto de la página
+
+# Videos Tutoriales de Compras
+
+Fuente: https://documentacion.s10peru.com/video-compras/
+
+Videos sobre el módulo de Compras S10 ERP
+Categoría: Compras
+Reproducir vídeo
+Orden de compra en base a cotización
+Categoría: Compras
+Tag: Permisos del módulo de compra
+Reproducir vídeo
+Permisos de gerencia, compra y almacén
+Categoría: Compras
+Tag: Aprobadores de compra
+
+El texto completo también está troceado en `kb/fragmentos.jsonl` y se cita con el nombre del manual y la página.
 
 **Confiabilidad:** oficial S10
