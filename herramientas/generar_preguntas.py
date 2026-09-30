@@ -43,6 +43,7 @@ EXCLUIR_RAMAS = ()
 INCLUIR_UI = ("ui-pantallas/17w0yki8iew",)            # de ui-pantallas solo entran las pantallas validadas
 EXCLUIR_NODOS = ("tutoriales", "tutoriales/crear-un-presupuesto-de-obra-en-s10")
 POR_LLAMADA = 70
+MIN_PALABRAS = 40   # nodos con menos cuerpo se ignoran (ajustable con --min-palabras)
 ENFOQUES = [
     ("concepto", "qué es, para qué sirve, qué incluye, qué diferencia hay entre conceptos del nodo"),
     ("procedimiento", "cómo se hace algo paso a paso, en qué menú o ventana, qué dato va en qué campo, en qué orden"),
@@ -79,17 +80,17 @@ def nodos() -> list[dict]:
         titulo = (re.search(r"^title:\s*(.+)$", fm, re.M) or [None, ""])[1].strip().strip('"')
         resumen = re.search(r"^summary:\s*(.+?)(?=\n[a-z_]+:|\Z)", fm, re.M | re.S)
         resumen = re.sub(r"\s+", " ", resumen.group(1)).strip().strip('"') if resumen else ""
-        if len(cuerpo.split()) < 40:
+        if len(cuerpo.split()) < MIN_PALABRAS:
             continue
         out.append({"path": path, "titulo": titulo, "resumen": resumen, "cuerpo": cuerpo.strip(),
                     "rama": path.split("/")[0] if path else "(raíz)", "palabras": len(cuerpo.split())})
     return out
 
 
-def reparto(ns: list[dict], total: int) -> dict[str, int]:
+def reparto(ns: list[dict], total: int, minimo: int = 60) -> dict[str, int]:
     pesos = {n["path"]: math.sqrt(n["palabras"]) for n in ns}
     suma = sum(pesos.values())
-    cuota = {p: max(60, int(total * w / suma)) for p, w in pesos.items()}
+    cuota = {p: max(minimo, int(total * w / suma)) for p, w in pesos.items()}
     # ajuste fino para que sumen exactamente `total`
     dif = total - sum(cuota.values())
     orden = sorted(cuota, key=lambda p: -pesos[p])
@@ -97,7 +98,7 @@ def reparto(ns: list[dict], total: int) -> dict[str, int]:
     while dif:
         p = orden[i % len(orden)]
         paso = 1 if dif > 0 else -1
-        if cuota[p] + paso >= 60:
+        if cuota[p] + paso >= minimo:
             cuota[p] += paso
             dif -= paso
         i += 1
@@ -278,7 +279,7 @@ def variantes(texto: str, semilla: str) -> list[dict]:
 # ─────────────────────────────── generar y armar ───────────────────────────
 def tandas_de(nodo: dict, cuota: int) -> list[tuple]:
     objetivo = int(cuota * 1.2) + 5              # margen para descartar repetidas
-    n = max(1, math.ceil(objetivo / POR_LLAMADA))
+    n = max(math.ceil(objetivo / POR_LLAMADA), len(ENFOQUES))   # cada enfoque cubierto al menos una vez
     return [(nodo, ENFOQUES[k % len(ENFOQUES)], math.ceil(objetivo / n), k) for k in range(n)]
 
 
@@ -310,7 +311,7 @@ def correr_tanda(nodo, enfoque, n, k) -> int:
 META = re.compile(r"\b(nodo|nodos|cortex|rama del|este documento|la base de conocimiento|fragmento|caveat|confiabilidad)\b", re.I)
 
 
-def armar(ns: list[dict], cuota: dict[str, int]) -> None:
+def armar(ns: list[dict], cuota: dict[str, int], sufijo: str = "") -> None:
     filas, plano, resumen = [], [], {"por_nodo": {}, "por_tipo": {}, "por_rama": {}}
     vistas_global: set[str] = set()
     for nodo in ns:
@@ -340,25 +341,39 @@ def armar(ns: list[dict], cuota: dict[str, int]) -> None:
             resumen["por_rama"][nodo["rama"]] = resumen["por_rama"].get(nodo["rama"], 0) + 1
         resumen["por_nodo"][nodo["path"] or "(raíz)"] = {"cuota": cuota[nodo["path"]], "obtenidas": len(propias)}
     SALIDA.mkdir(parents=True, exist_ok=True)
-    (SALIDA / "preguntas.jsonl").write_text("".join(json.dumps(f, ensure_ascii=False) + "\n" for f in filas), encoding="utf-8")
-    (SALIDA / "plano.jsonl").write_text("".join(json.dumps(f, ensure_ascii=False) + "\n" for f in plano), encoding="utf-8")
+    (SALIDA / f"preguntas{sufijo}.jsonl").write_text("".join(json.dumps(f, ensure_ascii=False) + "\n" for f in filas), encoding="utf-8")
+    (SALIDA / f"plano{sufijo}.jsonl").write_text("".join(json.dumps(f, ensure_ascii=False) + "\n" for f in plano), encoding="utf-8")
     resumen["total_base"], resumen["total_textos"] = len(filas), len(plano)
     resumen["faltan"] = {p: v for p, v in resumen["por_nodo"].items() if v["obtenidas"] < v["cuota"]}
-    (SALIDA / "resumen.json").write_text(json.dumps(resumen, indent=1, ensure_ascii=False), encoding="utf-8")
+    (SALIDA / f"resumen{sufijo}.json").write_text(json.dumps(resumen, indent=1, ensure_ascii=False), encoding="utf-8")
     log(f"armado: {len(filas)} preguntas base, {len(plano)} textos; nodos con faltante: {len(resumen['faltan'])}")
 
 
 def main():
+    global ENFOQUES, MIN_PALABRAS
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--total", type=int, default=14000)
     ap.add_argument("--hilos", type=int, default=4)
     ap.add_argument("--armar", action="store_true", help="solo arma los archivos finales con lo ya generado")
     ap.add_argument("--solo", help="limita a nodos cuyo path empiece así (pruebas)")
+    ap.add_argument("--enfoques", help="subconjunto de ENFOQUES por coma (ej: concepto,procedimiento)")
+    ap.add_argument("--min-palabras", type=int, default=40, help="ignora nodos con menos palabras")
+    ap.add_argument("--min-cuota", type=int, default=60, help="preguntas mínimas por nodo")
+    ap.add_argument("--sufijo", default="", help="sufijo de salida (ej: _aprendizaje) para no tocar el banco de evaluación")
     a = ap.parse_args()
+    MIN_PALABRAS = a.min_palabras
+    if a.enfoques:
+        elegidos = {e.strip() for e in a.enfoques.split(",")}
+        filtrados = [e for e in ENFOQUES if e[0] in elegidos]
+        if not filtrados:
+            ap.error(f"enfoques desconocidos: {sorted(elegidos)}")
+        ENFOQUES = filtrados
     ns = nodos()
     if a.solo:
         ns = [n for n in ns if n["path"].startswith(a.solo)]
-    cuota = reparto(nodos(), a.total)
+    if not ns:
+        ap.error("sin nodos para ese filtro")
+    cuota = reparto(ns, a.total, a.min_cuota)
     CRUDO.mkdir(parents=True, exist_ok=True)
     if not a.armar:
         tandas = [t for n in ns for t in tandas_de(n, cuota[n["path"]])]
@@ -371,7 +386,7 @@ def main():
             for f in as_completed(futuros):
                 hechos += 1
                 log(f"[{hechos}/{len(futuros)}] {futuros[f]}: {f.result()} preguntas crudas")
-    armar(nodos() if not a.solo else ns, cuota)
+    armar(ns, cuota, a.sufijo)
 
 
 if __name__ == "__main__":

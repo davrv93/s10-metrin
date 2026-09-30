@@ -42,12 +42,47 @@ svg{display:block}
 .nav .cuenta{margin-left:auto;font-size:11px;color:var(--soft)}
 .modulos{flex:1;min-height:0;overflow-y:auto;margin:0 -4px;padding:0 4px;scrollbar-width:thin;scrollbar-color:#cfd9d3 transparent}
 .modulos__cab{display:flex;align-items:center;justify-content:space-between;padding:2px 10px 6px;font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--soft)}
-.modulos__cab button{border:0;background:none;color:var(--green);font-size:11px;font-weight:700;letter-spacing:0;text-transform:none;padding:0}
+.biblioteca-abrir{display:flex;align-items:center;justify-content:center;gap:8px;width:calc(100% - 10px);min-height:36px;margin:2px 5px 5px;border:1px solid var(--line);border-radius:9px;background:var(--mint-2);color:var(--green-dark);font-size:11.5px;font-weight:700;text-align:center}
+.biblioteca-abrir:hover{border-color:#b9dccd;background:var(--mint)}
+.biblioteca-abrir svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.biblioteca-resumen{display:block;margin:0 8px 5px;text-align:center;color:var(--soft);font-size:10px}
 .modulos__grupo{font-size:10px;color:var(--soft);padding:10px 10px 3px;letter-spacing:.04em}
 .modulo{display:flex;align-items:center;gap:8px;width:100%;padding:6px 10px;border:0;border-radius:8px;background:none;font-size:12.5px;text-align:left}
 .modulo:hover,.modulo.activo{background:#edf6f1;color:var(--green-dark)}
 .modulo i{width:6px;height:6px;border-radius:2px;background:#b9dccd;flex:none}
 .modulo span{margin-left:auto;font-size:10.5px;color:var(--soft)}
+.modulos__busqueda{display:block;padding:4px 5px 7px}
+.modulos__busqueda input{width:100%;height:32px;border:1px solid var(--line);border-radius:8px;background:#fff;padding:0 9px;font:inherit;font-size:11.5px;outline:0}
+.modulos__busqueda input:focus{border-color:#9bc5b2}
+.manual-grupo{margin:1px 0}
+.manual-grupo>summary{list-style:none;cursor:pointer}
+.manual-grupo>summary::-webkit-details-marker{display:none}
+.manual-grupo>summary:after{content:"";margin-left:5px;width:6px;height:6px;border-right:1.5px solid var(--soft);border-bottom:1.5px solid var(--soft);transform:rotate(45deg);transition:transform .18s}
+.manual-grupo[open]>summary:after{transform:rotate(225deg)}
+.manual-nodos{padding:0 3px 4px 10px}
+.manual-nodo{border-bottom:1px solid var(--line)}
+.manual-nodo:last-child{border-bottom:0}
+.manual-nodo>summary{display:flex;align-items:flex-start;gap:6px;list-style:none;cursor:pointer;padding:7px 5px;color:var(--ink);font-size:11.5px;line-height:1.35;font-weight:700}
+.manual-nodo>summary::-webkit-details-marker{display:none}
+.manual-nodo>summary:before{content:"";width:6px;height:6px;flex:none;margin:4px 2px 0 0;border-right:1.5px solid var(--soft);border-bottom:1.5px solid var(--soft);transform:rotate(-45deg);transition:transform .18s}
+.manual-nodo[open]>summary:before{transform:rotate(45deg)}
+.manual-nodo>summary:hover{color:var(--green-dark)}
+.manual-nodo__resumen{margin:3px 0 5px;color:var(--muted);font-size:10.5px;line-height:1.4;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+.manual-nodo__contenido{padding:0 5px 7px 17px}
+.manual-nodo__resumen{margin:0 0 6px}
+.manual-secciones{list-style:none;padding:0;margin:0;counter-reset:none}
+.manual-seccion{margin:0 0 3px;padding-left:calc((var(--nivel) - 1)*9px)}
+.manual-seccion__rotulo{display:flex;align-items:flex-start;color:var(--ink);font-size:10.5px;line-height:1.35;padding:4px 5px 1px}
+.manual-seccion__numero{display:inline-block;min-width:25px;color:var(--soft);font-variant-numeric:tabular-nums}
+.manual-seccion__pregunta{display:block;width:calc(100% - 25px);margin:0 0 3px 25px;border:0;border-radius:6px;background:none;padding:3px 5px;text-align:left;color:var(--green);font-size:10px;line-height:1.35}
+.manual-seccion__pregunta:hover{background:var(--mint-2);color:var(--green-dark)}
+.manual-aprendizaje{margin:2px 0 6px}
+.manual-aprendizaje .aprendizaje--concepto{color:var(--green-dark);font-weight:600}
+.manual-aprendizaje .aprendizaje--como::before{content:"Cómo hacer · ";opacity:.65}
+.manual-aprendizaje .aprendizaje--concepto::before{content:"Qué es · ";opacity:.65}
+.manual-nodo__consultar{border:0;background:none;padding:0;color:var(--green);font-size:10.5px;font-weight:700}
+.manual-nodo__consultar:hover{text-decoration:underline}
+.manual-vacio{padding:8px 10px;color:var(--soft);font-size:11px}
 .chat{position:relative}
 .ver-todo{display:inline-flex;align-items:center;gap:6px;margin-top:12px;border:0;background:none;color:var(--green);font-size:12.5px;font-weight:700;padding:0}
 .ver-todo svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2}
@@ -70,7 +105,16 @@ svg{display:block}
 .ex-modulo__desc{margin:-4px 12px 6px;font-size:11.5px;color:var(--muted)}
 .ex-tema{padding:4px 12px 10px}
 .ex-tema h4{margin:4px 0 6px;font-size:11.5px;color:var(--green-dark);font-weight:700}
+.ex-resumen{margin:0 0 5px;color:var(--muted);font-size:11.5px;line-height:1.45}
+.ex-secciones{margin:0 0 7px;color:var(--soft);font-size:10.5px;line-height:1.4}
+.ex-enlace{display:inline-block;margin:0 0 6px;color:var(--green);font-size:10.5px;text-decoration:none}
+.ex-enlace:hover{text-decoration:underline}
+.ex-consultar{display:block;width:100%;text-align:left;border:0;background:#f5f8f6;border-radius:9px;padding:7px 10px;margin-bottom:5px;color:var(--green-dark);font-size:11.5px;font-weight:700}
+.ex-consultar:hover{background:var(--mint)}
 .ex-preg{display:block;width:100%;text-align:left;border:0;background:#f5f8f6;border-radius:9px;padding:7px 10px;margin-bottom:5px;font-size:12.5px;line-height:1.4}
+.ex-preg--concepto::before,.ex-preg--como::before{display:block;margin-bottom:2px;font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;opacity:.55}
+.ex-preg--concepto::before{content:"Qué es"}
+.ex-preg--como::before{content:"Cómo hacerlo"}
 .ex-preg:hover{background:var(--mint);color:var(--green-dark)}
 .ex-vacio{padding:24px 6px;color:var(--soft);font-size:12.5px;text-align:center}
 .rail__pie{margin-top:auto;display:flex;align-items:center;gap:8px;padding:9px 10px;border:1px solid var(--line);border-radius:10px;background:#fff;font-size:11px;color:var(--muted)}
@@ -268,7 +312,10 @@ a.fuente__tit:hover{color:var(--green)}
       <a id="navAdmin" href="#" target="_blank" rel="noopener" title="Abrir el panel de administración"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19 12a7 7 0 0 0-.1-1.2l2-1.6-2-3.4-2.4 1a7 7 0 0 0-2-1.2L14 3h-4l-.5 2.6a7 7 0 0 0-2 1.2l-2.4-1-2 3.4 2 1.6A7 7 0 0 0 5 12c0 .4 0 .8.1 1.2l-2 1.6 2 3.4 2.4-1a7 7 0 0 0 2 1.2L10 21h4l.5-2.6a7 7 0 0 0 2-1.2l2.4 1 2-3.4-2-1.6c.1-.4.1-.8.1-1.2z"/></svg>Administración</a>
     </nav>
     <section class="modulos" aria-label="Módulos">
-      <div class="modulos__cab">Módulos<button type="button" id="verTodoRail">Ver todo</button></div>
+      <div class="modulos__cab"><span>Biblioteca S10</span></div>
+      <button class="biblioteca-abrir" type="button" id="verTodoRail"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5zM4 5.5v16M8 7h8M8 10h8"/></svg><span>Abrir biblioteca</span></button>
+      <span class="biblioteca-resumen" id="cuentaManuales">Cargando índice…</span>
+      <label class="modulos__busqueda"><span class="sr">Buscar manual o tema</span><input id="buscarNodos" type="search" placeholder="Buscar entre manuales…"></label>
       <div id="listaModulos"><div class="modulos__grupo">Cargando…</div></div>
     </section>
     <div class="rail__pie"><span class="punto" id="puntoIndice"></span><span><strong id="indice">Conectando…</strong></span></div>
@@ -306,8 +353,8 @@ a.fuente__tit:hover{color:var(--green)}
         </div>
       </div>
       <section class="explorar" id="explorar" aria-label="Todas las preguntas" aria-hidden="true">
-        <div class="explorar__cab"><h2>Qué puedes preguntarme</h2>
-          <input type="search" id="buscarPreg" placeholder="Buscar: CTS, metrado, ticket…" aria-label="Buscar preguntas">
+        <div class="explorar__cab"><h2>Explorar manuales y consultas</h2>
+          <input type="search" id="buscarPreg" placeholder="Buscar tema, manual o consulta…" aria-label="Buscar en el contenido">
           <button class="icono" id="cerrarExplorar" type="button" aria-label="Cerrar"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
         <div class="explorar__cuerpo" id="explorarCuerpo"></div>
       </section>
@@ -639,29 +686,103 @@ addEventListener('keydown',e=>{if(e.key==='Escape'){menu(false);if(innerWidth<=1
 /* ── catálogo de módulos y preguntas (agrupado desde Cortex) ── */
 let catalogo=null;
 const expl=$('#explorar'),exCuerpo=$('#explorarCuerpo'),buscar=$('#buscarPreg');
+const buscarNodos=$('#buscarNodos');
 const sinAcento=t=>t.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
-function listaModulos(){const l=$('#listaModulos');l.replaceChildren();
-  for(const g of catalogo.grupos){const h=document.createElement('div');h.className='modulos__grupo';h.textContent=g.titulo;l.append(h);
-    for(const m of g.modulos){const b=document.createElement('button');b.type='button';b.className='modulo';b.dataset.id=m.id;b.title=m.titulo;
-      b.innerHTML='<i></i>';b.append(m.nombre);const c=document.createElement('span');c.textContent=m.temas.length;b.append(c);
-      b.onclick=()=>{abrirExplorar(m.id);menu(false)};l.append(b)}}}
+function consultarManual(t,filtro=''){
+  const tema=filtro.trim();
+  const q=tema?`En el manual oficial «${t.titulo}», explícame específicamente: ${tema}.`
+    :`Resume el manual oficial «${t.titulo}»: explica su propósito y los temas y procedimientos principales.`;
+  cerrarExplorar();menu(false);preguntar(`${q} Usa solo información del manual y cita la fuente.`)
+}
+function buscarManual(id,filtro=''){
+  for(const g of catalogo?.grupos||[])for(const m of g.modulos||[])for(const t of m.temas||[])
+    if(t.id===id)return consultarManual(t,filtro)
+}
+function consultarSeccion(t,s){
+  const apartado=`${s.numero?`${s.numero} `:''}${s.titulo}`;
+  cerrarExplorar();menu(false);
+  preguntar(`En el manual oficial «${t.titulo}», explica el apartado «${apartado}». Ordena los pasos si es un procedimiento y aclara el concepto según el manual. Cita la fuente.`)
+}
+function entradaManual(t,filtro=''){
+  const item=document.createElement('details');item.className='manual-nodo';item.open=!!filtro.trim();
+  const titulo=document.createElement('summary');titulo.textContent=t.titulo;item.append(titulo);
+  const contenido=document.createElement('div');contenido.className='manual-nodo__contenido';
+  if(t.resumen){const resumen=document.createElement('p');resumen.className='manual-nodo__resumen';resumen.textContent=t.resumen;contenido.append(resumen)}
+  // Tópicos de aprendizaje: primero «qué es» y luego «cómo hacerlo».
+  const aprendizaje=[...(t.conceptos||[]).map(p=>[p,'aprendizaje--concepto']),
+                    ...(t.procedimientos||[]).map(p=>[p,'aprendizaje--como'])];
+  if(aprendizaje.length){const grupo=document.createElement('div');grupo.className='manual-aprendizaje';
+    for(const [p,cls] of aprendizaje){const b=document.createElement('button');b.type='button';b.className='manual-seccion__pregunta '+cls;
+      b.textContent=p;b.onclick=()=>{cerrarExplorar();menu(false);preguntar(p)};grupo.append(b)}
+    contenido.append(grupo)}
+  if(t.secciones?.length){const lista=document.createElement('ol');lista.className='manual-secciones';
+    for(const s of t.secciones){const fila=document.createElement('li');fila.className='manual-seccion';fila.style.setProperty('--nivel',String(s.nivel||1));
+      const rotulo=document.createElement('div');rotulo.className='manual-seccion__rotulo';
+      const numero=document.createElement('span');numero.className='manual-seccion__numero';numero.textContent=s.numero||'•';
+      const tituloSeccion=document.createElement('span');tituloSeccion.textContent=s.titulo;rotulo.append(numero,tituloSeccion);fila.append(rotulo);
+      const boton=document.createElement('button');boton.type='button';boton.className='manual-seccion__pregunta';
+      boton.textContent=s.preguntas?.[0]||`¿Qué explica el manual en «${s.titulo}»?`;boton.onclick=()=>consultarSeccion(t,s);fila.append(boton);lista.append(fila)}
+    contenido.append(lista)}
+  const accion=document.createElement('button');accion.type='button';accion.className='manual-nodo__consultar';accion.textContent='Consultar el manual completo';
+  accion.onclick=()=>consultarManual(t,filtro);contenido.append(accion);item.append(contenido);return item
+}
+function listaModulos(){if(!catalogo)return;const l=$('#listaModulos'),f=sinAcento(buscarNodos.value.trim());l.replaceChildren();let total=0;
+  for(const g of catalogo.grupos){const bloque=document.createElement('div');const h=document.createElement('div');h.className='modulos__grupo';h.textContent=g.titulo;bloque.append(h);let visibles=0;
+    for(const m of g.modulos){
+      if(m.tipo==='manuales'){
+        const temas=m.temas.filter(t=>!f||sinAcento([t.titulo,t.resumen,...(t.conceptos||[]),...(t.procedimientos||[]),
+          ...(t.secciones||[]).flatMap(s=>[s.numero,s.titulo,...(s.preguntas||[])])].join(' ')).includes(f));if(!temas.length)continue;
+        const det=document.createElement('details');det.className='manual-grupo';det.open=!!f;
+        const sum=document.createElement('summary');sum.className='modulo';sum.title=m.titulo;const punto=document.createElement('i');sum.append(punto,document.createTextNode(m.nombre));
+        const c=document.createElement('span');c.textContent=temas.length;sum.append(c);det.append(sum);
+        const lista=document.createElement('div');lista.className='manual-nodos';for(const t of temas)lista.append(entradaManual(t,buscarNodos.value));
+        det.append(lista);bloque.append(det);visibles++;total+=temas.length;
+      }else{
+        if(f&&!sinAcento(m.nombre+' '+m.titulo+' '+m.temas.map(t=>t.titulo).join(' ')).includes(f))continue;
+        const b=document.createElement('button');b.type='button';b.className='modulo';b.dataset.id=m.id;b.title=m.titulo;const punto=document.createElement('i');b.append(punto,document.createTextNode(m.nombre));
+        const c=document.createElement('span');c.textContent=m.temas.length;b.append(c);b.onclick=()=>{abrirExplorar(m.id);menu(false)};bloque.append(b);visibles++
+      }
+    }
+    if(visibles)l.append(bloque)
+  }
+  if(!l.children.length){const vacio=document.createElement('div');vacio.className='manual-vacio';vacio.textContent='No encontré manuales con ese término.';l.append(vacio)}
+  $('#cuentaManuales').textContent=f?`${total} manuales encontrados`:`${catalogo.total_manuales||total} manuales · ${catalogo.total_secciones||0} apartados`
+}
 function sugerir(){const box=$('#sugerencias'),d=[...catalogo.destacadas];
   for(let i=d.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[d[i],d[j]]=[d[j],d[i]]}
   box.replaceChildren(...d.slice(0,esMovil()?3:4).map(x=>{const b=document.createElement('button');b.type='button';b.className='sugerencia';b.textContent=x.pregunta;return b}));
-  $('#verTodo span').textContent=`Ver todas las preguntas (${catalogo.total_preguntas})`}
+  $('#verTodo span').textContent=`Explorar manuales y consultas (${catalogo.total_manuales||0})`}
 function pintarExplorar(filtro=''){
   const f=sinAcento(filtro.trim());exCuerpo.replaceChildren();let hay=0;
   for(const g of catalogo.grupos){const bg=document.createElement('div');bg.className='ex-grupo';const h=document.createElement('h3');h.textContent=g.titulo;bg.append(h);let enGrupo=0;
     for(const m of g.modulos){const det=document.createElement('details');det.className='ex-modulo';det.dataset.id=m.id;let enMod=0;
       const sum=document.createElement('summary');sum.textContent=m.nombre;det.append(sum);
       const desc=document.createElement('p');desc.className='ex-modulo__desc';desc.textContent=m.titulo!==m.nombre?m.titulo:'';if(desc.textContent)det.append(desc);
-      for(const t of m.temas){const ps=t.preguntas.filter(p=>!f||sinAcento(p+' '+t.titulo+' '+m.nombre).includes(f));if(!ps.length)continue;
-        const bt=document.createElement('div');bt.className='ex-tema';const h4=document.createElement('h4');h4.textContent=t.titulo;bt.append(h4);
-        for(const p of ps){const b=document.createElement('button');b.type='button';b.className='ex-preg';b.textContent=p;bt.append(b);enMod++}
-        det.append(bt)}
-      if(enMod){const n=document.createElement('small');n.textContent=`${enMod} pregunta${enMod===1?'':'s'}`;sum.append(n);if(f)det.open=true;bg.append(det);enGrupo+=enMod}}
+      for(const t of m.temas){
+        if(m.tipo==='manuales'){
+          const coincide=!f||sinAcento([t.titulo,t.resumen,...(t.conceptos||[]),...(t.procedimientos||[]),
+            ...(t.secciones||[]).flatMap(s=>[s.numero,s.titulo,...(s.preguntas||[])]),m.nombre].join(' ')).includes(f);if(!coincide)continue;
+          const bt=document.createElement('div');bt.className='ex-tema';const h4=document.createElement('h4');h4.textContent=t.titulo;bt.append(h4);
+          if(t.resumen){const p=document.createElement('p');p.className='ex-resumen';p.textContent=t.resumen;bt.append(p)}
+          for(const [qs,cls] of [[t.conceptos||[],''],[t.procedimientos||[],'']])
+            for(const p of qs){const b=document.createElement('button');b.type='button';b.className='ex-preg '+cls;b.textContent=p;
+              if(!f||sinAcento(p+' '+t.titulo+' '+m.nombre).includes(f)){bt.append(b);enMod++}}
+          if(t.secciones?.length){const s=document.createElement('p');s.className='ex-secciones';s.textContent=`Índice secuencial: ${t.secciones.length} apartados · ${t.secciones.slice(0,6).map(x=>`${x.numero} ${x.titulo}`.trim()).join(' · ')}`;bt.append(s)}
+          if(t.fuente){const a=document.createElement('a');a.className='ex-enlace';a.href=t.fuente;a.target='_blank';a.rel='noopener noreferrer';a.textContent='Abrir fuente oficial';bt.append(a)}
+          const b=document.createElement('button');b.type='button';b.className='ex-consultar';b.dataset.manualId=t.id;b.textContent='Consultar este manual';bt.append(b);
+          det.append(bt);enMod++
+        }else{
+          const qs=[...(t.conceptos||[]).map(p=>[p,'ex-preg--concepto']),
+                    ...(t.procedimientos||[]).map(p=>[p,'ex-preg--como'])].filter(([p])=>!f||sinAcento(p+' '+t.titulo+' '+m.nombre).includes(f));
+          if(!qs.length)continue;
+          const bt=document.createElement('div');bt.className='ex-tema';const h4=document.createElement('h4');h4.textContent=t.titulo;bt.append(h4);
+          for(const [p,cls] of qs){const b=document.createElement('button');b.type='button';b.className='ex-preg '+cls;b.textContent=p;bt.append(b);enMod++}
+          det.append(bt)
+        }
+      }
+      if(enMod){const n=document.createElement('small');n.textContent=m.tipo==='manuales'?`${enMod} nodos`:`${enMod} preguntas`;sum.append(n);if(f)det.open=true;bg.append(det);enGrupo+=enMod}}
     if(enGrupo){exCuerpo.append(bg);hay+=enGrupo}}
-  if(!hay){const v=document.createElement('div');v.className='ex-vacio';v.textContent='No encontré preguntas con eso. Igual puedes escribirme tu duda abajo.';exCuerpo.append(v)}}
+  if(!hay){const v=document.createElement('div');v.className='ex-vacio';v.textContent='No encontré manuales ni consultas con ese término. También puedes escribir tu duda abajo.';exCuerpo.append(v)}}
 function abrirExplorar(id){if(!catalogo)return;buscar.value='';pintarExplorar();expl.classList.add('ver');expl.setAttribute('aria-hidden','false');
   document.querySelectorAll('.modulo').forEach(b=>b.classList.toggle('activo',b.dataset.id===id));
   if(id){const d=exCuerpo.querySelector(`details[data-id="${id}"]`);if(d){d.open=true;requestAnimationFrame(()=>d.scrollIntoView({block:'start'}))}}
@@ -669,7 +790,9 @@ function abrirExplorar(id){if(!catalogo)return;buscar.value='';pintarExplorar();
   animo('escucha','Elige una pregunta');decir('¿Qué quieres saber?',1800)}
 function cerrarExplorar(){expl.classList.remove('ver');expl.setAttribute('aria-hidden','true');document.querySelectorAll('.modulo').forEach(b=>b.classList.remove('activo'))}
 buscar.addEventListener('input',()=>pintarExplorar(buscar.value));
-exCuerpo.addEventListener('click',e=>{const b=e.target.closest('.ex-preg');if(b){cerrarExplorar();preguntar(b.textContent)}});
+buscarNodos.addEventListener('input',listaModulos);
+exCuerpo.addEventListener('click',e=>{const nodo=e.target.closest('.ex-consultar');if(nodo){buscarManual(nodo.dataset.manualId,buscar.value);return}
+  const b=e.target.closest('.ex-preg');if(b){cerrarExplorar();preguntar(b.textContent)}});
 $('#cerrarExplorar').onclick=cerrarExplorar;$('#verTodo').onclick=()=>abrirExplorar();$('#verTodoRail').onclick=()=>{abrirExplorar();menu(false)};
 addEventListener('keydown',e=>{if(e.key==='Escape'&&expl.classList.contains('ver'))cerrarExplorar()});
 fetch('/catalogo').then(r=>r.ok?r.json():Promise.reject()).then(d=>{catalogo=d;listaModulos();sugerir()})

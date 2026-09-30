@@ -1,6 +1,10 @@
 {
- "generado": "2026-09-30T13:33:26",
- "total_preguntas": 175,
+ "generado": "2026-09-30T14:33:41",
+ "total_preguntas": 739,
+ "total_preguntas_banco": 398,
+ "total_manuales": 90,
+ "total_secciones": 341,
+ "total_preguntas_indice": 341,
  "grupos": [
   {
    "id": "oficiales",
@@ -10,38 +14,276 @@
      "id": "oficial-administrativo",
      "nombre": "Administrativo",
      "titulo": "Manuales oficiales: Administrativo",
+     "tipo": "manuales",
      "resumen": "",
      "temas": [
       {
        "id": "manuales-oficiales/administracion",
        "titulo": "Administración",
-       "preguntas": [
-        "¿Qué hago con el txt una vez que lo tengo en C:\\S102000\\Pagos?",
-        "¿Qué es un fondo rotatorio y qué se hace con él en el sistema?"
+       "resumen": "Módulo diseñado para la gestión de caja- banco, multiempresa y multisucursal que resuelven eficientemente la gestión financiera de empresas, Pymes y estudios contables. Cómo realizar el pago de una factura afecta a detracción y subir las constancias al sistema 10 Al tener una…",
+       "fuente": "https://documentacion.s10peru.com/administracion/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es exactamente el módulo Administrativo en S10?",
+        "¿Cuáles son los tipos de orden de pago que maneja el sistema?",
+        "¿Qué significa que los aprobadores se definan por moneda y monto?"
+       ],
+       "procedimientos": [
+        "¿En qué orden se configura el módulo administrativo antes de empezar a operar?",
+        "¿Cómo se deja lista una cuenta bancaria nueva en el sistema, paso a paso?",
+        "¿Dónde cargo los saldos iniciales de las cuentas bancarias y con qué referencia de periodo?"
        ]
       },
       {
        "id": "manuales-oficiales/administrativo-2",
        "titulo": "Manual Administrativo",
-       "preguntas": [
-        "¿Qué es un fondo rotatorio y qué se hace con él en el sistema?",
-        "¿Los talonarios se definen por empresa o por cuenta bancaria?"
+       "resumen": "Las ventanas que presenta el S10 se asemejan a un escritorio donde tiene todos los documentos necesarios para trabajar en forma ordenada. El entorno de trabajo es el mismo casi en todos los escenarios, a continuación se describe las partes de un escenario. con doble clic, luego…",
+       "fuente": "https://documentacion.s10peru.com/manual-de-administracion/",
+       "secciones": [
+        {
+         "numero": "1",
+         "titulo": "Introducción",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Introducción»?"
+         ]
+        },
+        {
+         "numero": "1.1",
+         "titulo": "La carpeta de trabajo",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «La carpeta de trabajo»?"
+         ]
+        },
+        {
+         "numero": "1.2",
+         "titulo": "Acceso al módulo administrativo",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Acceso al módulo administrativo»?"
+         ]
+        },
+        {
+         "numero": "2",
+         "titulo": "Inicio",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Inicio»?"
+         ]
+        },
+        {
+         "numero": "2.1",
+         "titulo": "Registro de Socios de Negocios para los Bancos",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Registro de Socios de Negocios para los Bancos»?"
+         ]
+        },
+        {
+         "numero": "2.2",
+         "titulo": "Registro del catálogo de Bancos",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Registro del catálogo de Bancos»?"
+         ]
+        },
+        {
+         "numero": "2.3",
+         "titulo": "Definición de usuarios y sus accesos",
+         "nivel": 2,
+         "preguntas": [
+          "¿Cómo hacer «Definición de usuarios y sus accesos» paso a paso?"
+         ]
+        },
+        {
+         "numero": "2.4",
+         "titulo": "Definición de aprobadores, moneda y monto para aprobación",
+         "nivel": 2,
+         "preguntas": [
+          "¿Cómo hacer «Definición de aprobadores, moneda y monto para aprobación» paso a paso?"
+         ]
+        },
+        {
+         "numero": "2.5",
+         "titulo": "Definición de cuentas bancarias por empresas",
+         "nivel": 2,
+         "preguntas": [
+          "¿Cómo hacer «Definición de cuentas bancarias por empresas» paso a paso?"
+         ]
+        },
+        {
+         "numero": "2.6",
+         "titulo": "Definición de saldos iniciales de cuentas bancarias",
+         "nivel": 2,
+         "preguntas": [
+          "¿Cómo hacer «Definición de saldos iniciales de cuentas bancarias» paso a paso?"
+         ]
+        },
+        {
+         "numero": "2.7",
+         "titulo": "Definición de talonarios para cheques",
+         "nivel": 2,
+         "preguntas": [
+          "¿Cómo hacer «Definición de talonarios para cheques» paso a paso?"
+         ]
+        },
+        {
+         "numero": "3",
+         "titulo": "Caja",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Caja»?"
+         ]
+        },
+        {
+         "numero": "3.1",
+         "titulo": "Registro de Libros Caja por periodo",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Registro de Libros Caja por periodo»?"
+         ]
+        },
+        {
+         "numero": "3.2",
+         "titulo": "Registro de Diario de caja",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Registro de Diario de caja»?"
+         ]
+        },
+        {
+         "numero": "3.3",
+         "titulo": "Registro de cobranza por efectivo",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Registro de cobranza por efectivo»?"
+         ]
+        },
+        {
+         "numero": "3.4",
+         "titulo": "Registro de cobranza por cheque",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Registro de cobranza por cheque»?"
+         ]
+        },
+        {
+         "numero": "3.5",
+         "titulo": "Registro de cobranza por el depósito bancario",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Registro de cobranza por el depósito bancario»?"
+         ]
+        },
+        {
+         "numero": "3.6",
+         "titulo": "Registro de cobranza por la detracción",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Registro de cobranza por la detracción»?"
+         ]
+        },
+        {
+         "numero": "3.7",
+         "titulo": "Registro de cobranza por la aplicación de la nota de crédito",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Registro de cobranza por la aplicación de la nota de crédito»?"
+         ]
+        },
+        {
+         "numero": "3.8",
+         "titulo": "Registro de cobranza por canje de letras",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Registro de cobranza por canje de letras»?"
+         ]
+        },
+        {
+         "numero": "3.9",
+         "titulo": "Registro de cobranza por ajuste de redondeo",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Registro de cobranza por ajuste de redondeo»?"
+         ]
+        },
+        {
+         "numero": "3.10",
+         "titulo": "Registro de pago en efectivo de documentos por pagar",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Registro de pago en efectivo de documentos por pagar»?"
+         ]
+        },
+        {
+         "numero": "3.11",
+         "titulo": "Registro de transferencias a cuentas bancarias de efectivos y cheques",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Registro de transferencias a cuentas bancarias de efectivos y cheques»?"
+         ]
+        },
+        {
+         "numero": "3.12",
+         "titulo": "Registro de egresos e ingresos de transferencia a otra caja",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Registro de egresos e ingresos de transferencia a otra caja»?"
+         ]
+        },
+        {
+         "numero": "3.13",
+         "titulo": "Registro de liquidaciones por planilla de cobranza",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Registro de liquidaciones por planilla de cobranza»?"
+         ]
+        }
+       ],
+       "conceptos": [
+        "¿Qué son los talonarios de cheques y a qué se asocian?",
+        "¿Para qué se usan los diarios de caja en la operación diaria?",
+        "¿Qué abarca la parte de Caja y bancos?"
+       ],
+       "procedimientos": [
+        "¿Cómo se emite una orden de pago contra cuenta bancaria?",
+        "¿Qué pasos sigo para aplicar una nota de crédito como forma de pago?",
+        "¿Qué tipo de orden de pago se usa para tributos y detracciones?"
        ]
       },
       {
        "id": "manuales-oficiales/administrativo",
        "titulo": "Administrativo",
-       "preguntas": [
-        "¿Los talonarios se definen por empresa o por cuenta bancaria?",
-        "¿Qué diferencia hay entre un fondo rotatorio y una caja común?"
+       "resumen": "Al tener una factura afecta a detracción, se debe tener en consideración que la detracción se debe mostrar independiente en el registro. Ver imagen Validar … Requisitos: Para poder trabajar con Confirming se debe tener en los catálogos de exportación un formato con el nombre…",
+       "fuente": "https://documentacion.s10peru.com/category/administrativo/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es el canje con letras como forma de orden de pago?",
+        "¿Qué tiene que ver la orden de pago de tributos con las detracciones?",
+        "¿Qué son las constancias de detracción y qué se hace con ellas en S10?"
+       ],
+       "procedimientos": [
+        "¿Cuál es la secuencia completa del proceso de detracciones: orden, archivo y constancias?",
+        "¿A qué subtema del módulo debo ir si quiero el detalle de las órdenes de pago?",
+        "¿Dónde encuentro el procedimiento específico del pago de detracciones dentro del módulo?"
        ]
       },
       {
        "id": "manuales-oficiales/videos-tutoriales-de-administracion",
        "titulo": "Videos Tutoriales de Administración",
-       "preguntas": [
-        "¿Qué diferencia hay entre un fondo rotatorio y una caja común?",
-        "¿Qué fuentes respaldan este procedimiento de pago de detracciones?"
+       "resumen": "Videos sobre el módulo de Administración S10 ERP Tema definición de aprobación de orden de pago, registro, envío y aprobación.",
+       "fuente": "https://documentacion.s10peru.com/video-administracion/",
+       "secciones": [],
+       "conceptos": [
+        "¿Cuál es la relación entre Administrativo y Facturación?",
+        "¿Por qué se dice que Administrativo paga pero no registra los documentos?",
+        "¿Qué vínculo existe entre el módulo administrativo y Contabilidad?"
+       ],
+       "procedimientos": [
+        "¿Cómo se llevan los movimientos bancarios y con qué se cruzan después?",
+        "¿Qué campo contable hay que llenar en los libros caja para que Contabilidad lo pueda usar?",
+        "¿Es posible pagar sin haber aprobado antes la orden? ¿Cómo es el flujo correcto?"
        ]
       }
      ]
@@ -50,38 +292,276 @@
      "id": "oficial-almacenes",
      "nombre": "Almacenes",
      "titulo": "Manuales oficiales: Almacenes",
+     "tipo": "manuales",
      "resumen": "",
      "temas": [
       {
        "id": "manuales-oficiales/almacenes-2",
        "titulo": "Almacenes",
-       "preguntas": [
-        "¿Cómo registro los movimientos que salen de fondos rotatorios?",
-        "¿Y si aplico solamente las alertas de mermas sin tocar lo demás?"
+       "resumen": "Debido a la inclusión de nuevas normativas obligatorias por parte de SUNAT para el año 2020, S10 está buscando alinearse al incluir un nuevo catálogo …",
+       "fuente": "https://documentacion.s10peru.com/category/almacenes/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es el módulo de Almacenes en S10 y para qué sirve dentro de un proyecto?",
+        "¿Qué son los destinos específicos en la configuración de almacenes?",
+        "¿Qué cosas se ven en la sección de Resultados del módulo?"
+       ],
+       "procedimientos": [
+        "¿Me explican paso a paso cómo se registra un ingreso por orden de compra?",
+        "¿Qué pasos sigo cuando la salida a partida de control va con pedido?",
+        "¿Cómo registro una merma de material en almacén?"
        ]
       },
       {
        "id": "manuales-oficiales/almacenes-3",
        "titulo": "Manual de Almacenes",
-       "preguntas": [
-        "¿Y si aplico solamente las alertas de mermas sin tocar lo demás?",
-        "¿Qué es la amortización del anticipo en este contexto del S10?"
+       "resumen": "El módulo de almacenes es el encargado de administrar los recursos que utiliza el proyecto con los movimientos de ingresos y egresos, proporciona información al módulo de Gerencia de proyectos para los resultados operativos del costo de los recursos tipo material. También…",
+       "fuente": "https://documentacion.s10peru.com/manual-de-almacenes/",
+       "secciones": [
+        {
+         "numero": "1",
+         "titulo": "ALMACENES DEL S10 ERP",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «ALMACENES DEL S10 ERP»?"
+         ]
+        },
+        {
+         "numero": "1.1",
+         "titulo": "Entorno de",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Entorno de»?"
+         ]
+        },
+        {
+         "numero": "1.1.1",
+         "titulo": "Barra de títulos",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Barra de títulos»?"
+         ]
+        },
+        {
+         "numero": "1.1.2",
+         "titulo": "Barra de menús",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Barra de menús»?"
+         ]
+        },
+        {
+         "numero": "1.1.3",
+         "titulo": "Barra de herramientas estándar",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Barra de herramientas estándar»?"
+         ]
+        },
+        {
+         "numero": "1.1.4",
+         "titulo": "Barra de vistas",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Barra de vistas»?"
+         ]
+        },
+        {
+         "numero": "1.1.5",
+         "titulo": "Árbol",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Árbol»?"
+         ]
+        },
+        {
+         "numero": "1.3",
+         "titulo": "Funcionamiento del módulo de almacenes",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Funcionamiento del módulo de almacenes»?"
+         ]
+        },
+        {
+         "numero": "1.4",
+         "titulo": "Acceso al módulo de Almacenes",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Acceso al módulo de Almacenes»?"
+         ]
+        },
+        {
+         "numero": "1.5",
+         "titulo": "Ingrese al módulo de Almacenes como sa",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Ingrese al módulo de Almacenes como sa»?"
+         ]
+        },
+        {
+         "numero": "1.6",
+         "titulo": "Tipo de documento de SUNAT",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Tipo de documento de SUNAT»?"
+         ]
+        },
+        {
+         "numero": "1.6.1",
+         "titulo": "Tipo de Documento",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Tipo de Documento»?"
+         ]
+        },
+        {
+         "numero": "2",
+         "titulo": "Registro del proyecto",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Registro del proyecto»?"
+         ]
+        },
+        {
+         "numero": "2.1.1",
+         "titulo": "Definir techo al proyecto",
+         "nivel": 3,
+         "preguntas": [
+          "¿Cómo definir techo al proyecto en S10?"
+         ]
+        },
+        {
+         "numero": "2.1.2",
+         "titulo": "Registro del aprobador de los pedidos en el almacén",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Registro del aprobador de los pedidos en el almacén»?"
+         ]
+        },
+        {
+         "numero": "2.1.3",
+         "titulo": "Tipos de recurso que manejará el almacén",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Tipos de recurso que manejará el almacén»?"
+         ]
+        },
+        {
+         "numero": "2.1.4",
+         "titulo": "Usuarios por proyecto",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Usuarios por proyecto»?"
+         ]
+        },
+        {
+         "numero": "2.2",
+         "titulo": "Temas generales",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Temas generales»?"
+         ]
+        },
+        {
+         "numero": "2.2.1",
+         "titulo": "Búsqueda global",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Búsqueda global»?"
+         ]
+        },
+        {
+         "numero": "2.2.2",
+         "titulo": "Búsqueda local",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Búsqueda local»?"
+         ]
+        },
+        {
+         "numero": "2.2.3",
+         "titulo": "Registro de recursos en el catálogo",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Registro de recursos en el catálogo»?"
+         ]
+        },
+        {
+         "numero": "2.4",
+         "titulo": "Verifique el registro de los Equipos disponibles",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Verifique el registro de los Equipos disponibles»?"
+         ]
+        },
+        {
+         "numero": "2.5",
+         "titulo": "Verifique el registro de las Unidades operativas y los Roles",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Verifique el registro de las Unidades operativas y los Roles»?"
+         ]
+        },
+        {
+         "numero": "2.6",
+         "titulo": "Verifique el registro de la Ubicación física",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Verifique el registro de la Ubicación física»?"
+         ]
+        },
+        {
+         "numero": "2.7",
+         "titulo": "Descripción de los escenarios de Ingresos y Egresos",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Descripción de los escenarios de Ingresos y Egresos»?"
+         ]
+        }
+       ],
+       "conceptos": [
+        "¿Qué significa el tipo de documento I OC?",
+        "¿Qué es la consulta de recursos con problemas?",
+        "¿Qué se configura primero: los almacenes nuevos o los usuarios y permisos?"
+       ],
+       "procedimientos": [
+        "¿Cómo se registra la devolución de un préstamo que recibimos de otro almacén?",
+        "¿Dónde saco el kardex de un material y qué necesito tener a la mano?",
+        "¿Desde qué opción consulto el stock consolidado de todos los almacenes del proyecto?"
        ]
       },
       {
        "id": "manuales-oficiales/almacenes",
        "titulo": "Almacenes",
-       "preguntas": [
-        "¿Qué es la amortización del anticipo en este contexto del S10?",
-        "¿Qué formatos usaban para documentar los ingresos y las salidas?"
+       "resumen": "El módulo de almacenes es el encargado de administrar los recursos que utiliza el proyecto con los movimientos de ingresos y egresos. Revisa sobre registro de proyectos, egresos, Stock Debido a la inclusión de nuevas normativas obligatorias por parte de SUNAT para el año 2020,…",
+       "fuente": "https://documentacion.s10peru.com/almacenes/",
+       "secciones": [],
+       "conceptos": [
+        "¿Para qué sirve registrar bajas y mermas como tipo de egreso?",
+        "¿Qué es una devolución dentro de los egresos de almacén?",
+        "¿Existen transferencias tanto de ingreso como de egreso?"
+       ],
+       "procedimientos": [
+        "¿Cómo levanto la lista de recursos con problemas antes de hacer un despacho?",
+        "¿Qué pasos hay que seguir para dar de alta las partidas de control de un proyecto?",
+        "¿Cómo creo un frente de trabajo en la configuración?"
        ]
       },
       {
        "id": "manuales-oficiales/videos-tutoriales-de-almacenes",
        "titulo": "Videos Tutoriales de Almacenes",
-       "preguntas": [
-        "¿Qué formatos usaban para documentar los ingresos y las salidas?",
-        "¿Qué diferencia existe entre un frente y una ubicación física?"
+       "resumen": "Videos sobre el módulo de Almacenes S10 ERP",
+       "fuente": "https://documentacion.s10peru.com/video-almacenes/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es el ingreso por fabricación?",
+        "¿Qué es un usuario de proyecto y almacén?",
+        "¿A qué estructura se imputa el consumo cuando hago un egreso a partida de control?"
+       ],
+       "procedimientos": [
+        "¿De qué forma asigno usuarios a un proyecto y a su almacén?",
+        "¿Cómo se definen los roles por unidad operativa?",
+        "¿Cómo habilito los documentos de movimiento que va a usar un almacén?"
        ]
       }
      ]
@@ -90,30 +570,259 @@
      "id": "oficial-compras",
      "nombre": "Compras",
      "titulo": "Manuales oficiales: Compras",
+     "tipo": "manuales",
      "resumen": "",
      "temas": [
       {
        "id": "manuales-oficiales/compras",
        "titulo": "Manual de Compras",
-       "preguntas": [
-        "¿Cuántos pasos tengo que ejecutar si voy por el pedido directo?",
-        "¿Hay información sobre niveles de aprobación en la app?"
+       "resumen": "Este programa permite una administración del proceso de procura (pedido y compra). La gestión logística dentro del Proyecto, abarca desde el pedido o requerimiento de los recursos tipo material hasta la compra y el almacenamiento. El proceso empieza después de la planificación…",
+       "fuente": "https://documentacion.s10peru.com/manual-de-compras/",
+       "secciones": [
+        {
+         "numero": "1",
+         "titulo": "Generalidades",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Generalidades»?"
+         ]
+        },
+        {
+         "numero": "1.2",
+         "titulo": "Labores del sa",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Labores del sa»?"
+         ]
+        },
+        {
+         "numero": "1.2",
+         "titulo": "Labores del usuario",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Labores del usuario»?"
+         ]
+        },
+        {
+         "numero": "1.4",
+         "titulo": "La carpeta de trabajo",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «La carpeta de trabajo»?"
+         ]
+        },
+        {
+         "numero": "1.5",
+         "titulo": "Opciones del menú Catálogos",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Opciones del menú Catálogos»?"
+         ]
+        },
+        {
+         "numero": "1.6",
+         "titulo": "Opciones del menú Herramientas",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Opciones del menú Herramientas»?"
+         ]
+        },
+        {
+         "numero": "1.7",
+         "titulo": "Barra de herramientas estándar",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Barra de herramientas estándar»?"
+         ]
+        },
+        {
+         "numero": "2",
+         "titulo": "Acceso al módulo de Compras y pedidos con sa",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Acceso al módulo de Compras y pedidos con sa»?"
+         ]
+        },
+        {
+         "numero": "3",
+         "titulo": "General",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «General»?"
+         ]
+        },
+        {
+         "numero": "3.1",
+         "titulo": "Formas de búsqueda en los catálogos",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Formas de búsqueda en los catálogos»?"
+         ]
+        },
+        {
+         "numero": "3.2",
+         "titulo": "Registro de recursos en el catálogo",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Registro de recursos en el catálogo»?"
+         ]
+        },
+        {
+         "numero": "3.3",
+         "titulo": "Usuarios que manejan el módulo y aprobadores",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Usuarios que manejan el módulo y aprobadores»?"
+         ]
+        },
+        {
+         "numero": "3.4",
+         "titulo": "Partidas de Control",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Partidas de Control»?"
+         ]
+        },
+        {
+         "numero": "3.5",
+         "titulo": "Destinos específicos",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Destinos específicos»?"
+         ]
+        },
+        {
+         "numero": "4",
+         "titulo": "Uso del módulo de Compras y Pedidos por parte del usuario",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Uso del módulo de Compras y Pedidos por parte del usuario»?"
+         ]
+        },
+        {
+         "numero": "4.1",
+         "titulo": "Registro del Centro de compra",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Registro del Centro de compra»?"
+         ]
+        },
+        {
+         "numero": "4.2",
+         "titulo": "Aprobadores de las órdenes de compra y servicio",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Aprobadores de las órdenes de compra y servicio»?"
+         ]
+        },
+        {
+         "numero": "4.3",
+         "titulo": "Registro de usuarios que aprobarán los pedidos",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Registro de usuarios que aprobarán los pedidos»?"
+         ]
+        },
+        {
+         "numero": "4.4",
+         "titulo": "Pie de Orden de Compra",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Pie de Orden de Compra»?"
+         ]
+        },
+        {
+         "numero": "5",
+         "titulo": "Clasificación de recursos",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Clasificación de recursos»?"
+         ]
+        },
+        {
+         "numero": "5.1",
+         "titulo": "Por la Forma de Abastecimiento",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Por la Forma de Abastecimiento»?"
+         ]
+        },
+        {
+         "numero": "5.2",
+         "titulo": "Forma de Pedido",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Forma de Pedido»?"
+         ]
+        },
+        {
+         "numero": "5.3",
+         "titulo": "Clasificación de Materiales ABC",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Clasificación de Materiales ABC»?"
+         ]
+        },
+        {
+         "numero": "5.4",
+         "titulo": "Clasificación de los recursos por la Forma de Pedido",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Clasificación de los recursos por la Forma de Pedido»?"
+         ]
+        },
+        {
+         "numero": "5.5",
+         "titulo": "Clasificación de recursos por la Forma de Abastecimiento",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Clasificación de recursos por la Forma de Abastecimiento»?"
+         ]
+        }
+       ],
+       "conceptos": [
+        "¿Qué hace exactamente el módulo de Compras en S10?",
+        "¿Para qué sirve el cuadro comparativo en Compras?",
+        "¿Qué son los grupos de aprobación y para qué se usan en compras?"
+       ],
+       "procedimientos": [
+        "¿Cómo armo un grupo de aprobación desde cero?",
+        "¿Cómo se registra un proveedor nuevo para poder usarlo en una orden? ¿En qué catálogo entra?",
+        "¿Qué pasos sigo en Almacenes cuando ya llegó lo que compré con una OC?"
        ]
       },
       {
        "id": "manuales-oficiales/pedidos-moviles",
        "titulo": "Manual de Pedidos Móviles",
-       "preguntas": [
-        "¿Hay información sobre niveles de aprobación en la app?",
-        "¿En qué consiste la gestión de usuarios y permisos en Compras?"
+       "resumen": "Visita nuevo Manual de Pedidos S10 haciendo",
+       "fuente": "https://documentacion.s10peru.com/manual-pedidos-moviles/",
+       "secciones": [],
+       "conceptos": [
+        "¿El módulo trae apps móviles? ¿Cuáles son?",
+        "¿Qué abarca el alcance del módulo de Compras: solo materiales o también servicios?",
+        "¿Qué es el Portal de Proveedores y qué manual tiene asociado?"
+       ],
+       "procedimientos": [
+        "¿Cómo se configuran las formas de pago que voy a usar en las órdenes?",
+        "¿Qué tengo que hacer para agregar un recurso nuevo al catálogo antes de pedirlo?",
+        "¿Cómo asigno los proyectos que le corresponden a cada centro de compra?"
        ]
       },
       {
        "id": "manuales-oficiales/videos-tutoriales-de-compras",
        "titulo": "Videos Tutoriales de Compras",
-       "preguntas": [
-        "¿En qué consiste la gestión de usuarios y permisos en Compras?",
-        "¿Recibir cotizaciones es parte de lo que se ve el tercer día?"
+       "resumen": "Videos sobre el módulo de Compras S10 ERP",
+       "fuente": "https://documentacion.s10peru.com/video-compras/",
+       "secciones": [],
+       "conceptos": [
+        "¿Por dónde conviene empezar a aprender el módulo de Compras?",
+        "¿Qué significa que los centros de compra tengan proyectos asignados?",
+        "¿Qué relación tiene Compras con el módulo de Gerencia de Proyectos?"
+       ],
+       "procedimientos": [
+        "¿Puedo emitir la OC directo del pedido sin pasar por cotización? ¿Cómo sería el camino?",
+        "¿Qué se hace primero: cargar los catálogos o crear los centros de compra?",
+        "¿Cómo registro la cotización que me mandó el proveedor por correo dentro del sistema?"
        ]
       }
      ]
@@ -122,30 +831,259 @@
      "id": "oficial-contabilidad",
      "nombre": "Contabilidad",
      "titulo": "Manuales oficiales: Contabilidad",
+     "tipo": "manuales",
      "resumen": "",
      "temas": [
       {
        "id": "manuales-oficiales/contabilidad-2",
        "titulo": "Manual de Contabilidad",
-       "preguntas": [
-        "¿En qué momento del proceso debo recurrir a un asiento manual?",
-        "¿Qué pasa si registro un contrato pero nadie configuró su cuenta?"
+       "resumen": "Las ventanas que presenta el S10 se asemejan a un escritorio donde tiene todos los documentos necesarios para trabajar en forma ordenada. El entorno de trabajo es el mismo casi en todos los escenarios, a continuación se describe las partes de un escenario. Esta ventana permite…",
+       "fuente": "https://documentacion.s10peru.com/manual-de-contabilidad/",
+       "secciones": [
+        {
+         "numero": "1",
+         "titulo": "Introducción",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Introducción»?"
+         ]
+        },
+        {
+         "numero": "1.1",
+         "titulo": "La carpeta de trabajo",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «La carpeta de trabajo»?"
+         ]
+        },
+        {
+         "numero": "1.2",
+         "titulo": "Acceso al módulo de Contabilidad",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Acceso al módulo de Contabilidad»?"
+         ]
+        },
+        {
+         "numero": "2",
+         "titulo": "Catálogos",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Catálogos»?"
+         ]
+        },
+        {
+         "numero": "2.1",
+         "titulo": "Moneda",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Moneda»?"
+         ]
+        },
+        {
+         "numero": "2.2",
+         "titulo": "Forma de Pago",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Forma de Pago»?"
+         ]
+        },
+        {
+         "numero": "2.3",
+         "titulo": "Tipo de cambio",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Tipo de cambio»?"
+         ]
+        },
+        {
+         "numero": "2.4",
+         "titulo": "Proyectos",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Proyectos»?"
+         ]
+        },
+        {
+         "numero": "2.5",
+         "titulo": "Socio de Negocio",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Socio de Negocio»?"
+         ]
+        },
+        {
+         "numero": "2.5.1",
+         "titulo": "Clientes",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Clientes»?"
+         ]
+        },
+        {
+         "numero": "2.5.2",
+         "titulo": "Proveedores",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Proveedores»?"
+         ]
+        },
+        {
+         "numero": "2.6",
+         "titulo": "Tipo de Impuestos",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Tipo de Impuestos»?"
+         ]
+        },
+        {
+         "numero": "2.7",
+         "titulo": "Tipo de Documentos",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Tipo de Documentos»?"
+         ]
+        },
+        {
+         "numero": "2.8",
+         "titulo": "Detracción – Percepción",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Detracción – Percepción»?"
+         ]
+        },
+        {
+         "numero": "2.9",
+         "titulo": "Retención, Percepción y Buenos Contribuyentes",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Retención, Percepción y Buenos Contribuyentes»?"
+         ]
+        },
+        {
+         "numero": "2.10",
+         "titulo": "Catálogo de Categorías",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Catálogo de Categorías»?"
+         ]
+        },
+        {
+         "numero": "2.11",
+         "titulo": "Catálogo de Cuentas Genéricas",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Catálogo de Cuentas Genéricas»?"
+         ]
+        },
+        {
+         "numero": "3",
+         "titulo": "Accesos",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Accesos»?"
+         ]
+        },
+        {
+         "numero": "3.1",
+         "titulo": "Creación de las empresas y sucursales",
+         "nivel": 2,
+         "preguntas": [
+          "¿Cómo hacer «Creación de las empresas y sucursales» paso a paso?"
+         ]
+        },
+        {
+         "numero": "4",
+         "titulo": "Parametros",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Parametros»?"
+         ]
+        },
+        {
+         "numero": "4.1",
+         "titulo": "Plan de Cuentas",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Plan de Cuentas»?"
+         ]
+        },
+        {
+         "numero": "4.1.1",
+         "titulo": "Creación del Plan de Cuentas",
+         "nivel": 3,
+         "preguntas": [
+          "¿Cómo hacer «Creación del Plan de Cuentas» paso a paso?"
+         ]
+        },
+        {
+         "numero": "4.1.2",
+         "titulo": "Propiedades de la Cuenta",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Propiedades de la Cuenta»?"
+         ]
+        },
+        {
+         "numero": "4.1.3",
+         "titulo": "Configuración de Cuentas Genéricas",
+         "nivel": 3,
+         "preguntas": [
+          "¿Cómo hacer «Configuración de Cuentas Genéricas» paso a paso?"
+         ]
+        },
+        {
+         "numero": "4.1.4",
+         "titulo": "Pestaña Cuentas Reflejas",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Pestaña Cuentas Reflejas»?"
+         ]
+        }
+       ],
+       "conceptos": [
+        "¿Qué es el módulo de Contabilidad en S10 y para qué sirve?",
+        "¿Es cierto que Contabilidad permite el análisis de la actividad financiera y contable?",
+        "¿Con qué se configura la contabilidad en S10?"
+       ],
+       "procedimientos": [
+        "¿Cómo hago para que los asientos contables se generen automáticamente en S10?",
+        "¿En qué orden debo configurar las cuentas de los distintos orígenes antes de emitir asientos?",
+        "¿Qué pasos sigo para que los movimientos de almacén terminen en un asiento?"
        ]
       },
       {
        "id": "manuales-oficiales/contabilidad",
        "titulo": "Contabilidad",
-       "preguntas": [
-        "¿Qué pasa si registro un contrato pero nadie configuró su cuenta?",
-        "¿A qué se refiere la dinámica de cierres como tema del módulo?"
+       "resumen": "1.- Definir como cerrar y aperturará el detalle de los saldos por cada cuenta: Ello se realiza desde la cuenta en el plan contable puede …",
+       "fuente": "https://documentacion.s10peru.com/category/contabilidad/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué son las cuentas reflejas dentro de la configuración contable?",
+        "¿Para qué quedan los asientos manuales en S10?",
+        "¿Cuáles son los orígenes donde se configuran cuentas para que los asientos salgan solos?"
+       ],
+       "procedimientos": [
+        "¿Cómo asocio una cuenta contable a un tipo de documento?",
+        "¿Cómo se registran las cuentas bancarias dentro de la configuración contable?",
+        "¿Qué hago para configurar los libros caja en el módulo?"
        ]
       },
       {
        "id": "manuales-oficiales/videos-tutoriales-de-contabilidad",
        "titulo": "Videos Tutoriales de Contabilidad",
-       "preguntas": [
-        "¿A qué se refiere la dinámica de cierres como tema del módulo?",
-        "¿Cuántos pasos tiene esta secuencia y cuál es el último de todos?"
+       "resumen": "Videos sobre el módulo de Contabilidad S10 ERP CUADRE DE BALANCE DE COMPROBACION EN RESULTADOS CASO COMPLETO ( PARTE 1) CUADRE DE BALANCE DE COMPROBACION EN RESULTADOS CASO COMPLETO ( PARTE 2) de cuentas contables a partir de ESF y la Esta es la continuación del primer video de…",
+       "fuente": "https://documentacion.s10peru.com/video-contabilidad/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué rol cumplen los recursos y las categorías de recursos en la contabilidad?",
+        "¿Los tipos de documento y de impuesto tienen que ver con la contabilidad?",
+        "¿Por qué se configuran cuentas bancarias y libros caja dentro del módulo contable?"
+       ],
+       "procedimientos": [
+        "¿Cómo configuro los conceptos de subcontratos para que generen su asiento?",
+        "¿En qué momento del proceso debo recurrir a un asiento manual?",
+        "¿Cómo se carga el PCGE dentro de la configuración de S10?"
        ]
       }
      ]
@@ -154,46 +1092,511 @@
      "id": "oficial-facturacion",
      "nombre": "Facturación",
      "titulo": "Manuales oficiales: Facturación",
+     "tipo": "manuales",
      "resumen": "",
      "temas": [
       {
        "id": "manuales-oficiales/anulacion-de-ventas",
        "titulo": "Anulación de Ventas",
-       "preguntas": [
-        "¿Qué pasos sigo para configurar la detracción de un proveedor?",
-        "¿Por qué mi talonario no está disponible para cierto usuario?"
+       "resumen": "Este proceso se realiza cuando la venta cae y se necesita anular la venta completa. En este caso, si ya tiene boletas generadas a partir de los abonos, deberá anularse el proceso desde SPERANT para que se genere la Nota de crédito. **************************** SPERANT…",
+       "fuente": "https://documentacion.s10peru.com/anulacion-de-ventas/",
+       "secciones": [
+        {
+         "numero": "2",
+         "titulo": "Se debe especificar el motivo de la anulación.",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Se debe especificar el motivo de la anulación.»?"
+         ]
+        },
+        {
+         "numero": "3",
+         "titulo": "Verificar que se inició el proceso de Anulación.",
+         "nivel": 1,
+         "preguntas": [
+          "¿Cómo verificar que se inició el proceso de Anulación. en S10?"
+         ]
+        }
+       ],
+       "conceptos": [
+        "¿Qué es el módulo de Facturación en S10 y qué administra exactamente?",
+        "¿Los anticipos entran en Facturación o van por otro lado?",
+        "¿Cuáles son las formas de registrar un documento por pagar de proveedor?"
+       ],
+       "procedimientos": [
+        "¿Qué rama debo revisar si necesito configurar impuestos?",
+        "¿Cuál es el orden correcto para registrar un documento por pagar relacionado a un subcontrato?",
+        "¿Qué pasos sigo para registrar un documento por pagar vinculado a una orden de servicio?"
        ]
       },
       {
        "id": "manuales-oficiales/facturacion-electronica-2",
        "titulo": "Manual de Facturación Electrónica",
-       "preguntas": [
-        "¿Por qué mi talonario no está disponible para cierto usuario?",
-        "¿En qué parte del sistema arranca todo el proceso del anticipo?"
+       "resumen": "La Factura Electrónica es un documento tributario en formato digital, que está a disposición de todos los contribuyentes. Este documento permitirá a las empresas realizar transacciones de emisión/recepción de comprobantes de pago, mejorando el modo de operación actual (emisión…",
+       "fuente": "https://documentacion.s10peru.com/manual-de-facturacion-electronica/",
+       "secciones": [
+        {
+         "numero": "1",
+         "titulo": "Introducción",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Introducción»?"
+         ]
+        },
+        {
+         "numero": "1.1",
+         "titulo": "Facturación Electrónica",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Facturación Electrónica»?"
+         ]
+        },
+        {
+         "numero": "1.2",
+         "titulo": "Beneficios de Facturación Electrónica",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Beneficios de Facturación Electrónica»?"
+         ]
+        },
+        {
+         "numero": "1.3",
+         "titulo": "Servicio del S10",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Servicio del S10»?"
+         ]
+        },
+        {
+         "numero": "2",
+         "titulo": "Facturación Electrónica en S10",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Facturación Electrónica en S10»?"
+         ]
+        },
+        {
+         "numero": "2.1",
+         "titulo": "Configuración",
+         "nivel": 2,
+         "preguntas": [
+          "¿Cómo hacer «Configuración» paso a paso?"
+         ]
+        },
+        {
+         "numero": "2.1.1",
+         "titulo": "Datos de la Empresa Emisora",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Datos de la Empresa Emisora»?"
+         ]
+        },
+        {
+         "numero": "2.1.2",
+         "titulo": "Tipos de Documentos",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Tipos de Documentos»?"
+         ]
+        },
+        {
+         "numero": "2.1.3",
+         "titulo": "Talonarios",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Talonarios»?"
+         ]
+        },
+        {
+         "numero": "2.1.4",
+         "titulo": "Registro de Clientes",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Registro de Clientes»?"
+         ]
+        },
+        {
+         "numero": "2.2",
+         "titulo": "Envio de Documentos",
+         "nivel": 2,
+         "preguntas": [
+          "¿Cómo hacer «Envio de Documentos» paso a paso?"
+         ]
+        },
+        {
+         "numero": "2.2.1",
+         "titulo": "Edición de Documentos",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Edición de Documentos»?"
+         ]
+        },
+        {
+         "numero": "2.2.2",
+         "titulo": "Envío a Sunat",
+         "nivel": 3,
+         "preguntas": [
+          "¿Cómo hacer «Envío a Sunat» paso a paso?"
+         ]
+        },
+        {
+         "numero": "2.2.3",
+         "titulo": "Envío de Boletas de Venta al Portal",
+         "nivel": 3,
+         "preguntas": [
+          "¿Cómo hacer «Envío de Boletas de Venta al Portal» paso a paso?"
+         ]
+        },
+        {
+         "numero": "2.2.3",
+         "titulo": "Comunicación de baja",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Comunicación de baja»?"
+         ]
+        },
+        {
+         "numero": "2.2.4",
+         "titulo": "Visualización de documentos",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Visualización de documentos»?"
+         ]
+        },
+        {
+         "numero": "3",
+         "titulo": "Facturación Electrónica para Empresas.",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Facturación Electrónica para Empresas.»?"
+         ]
+        },
+        {
+         "numero": "3.1",
+         "titulo": "Acceso al Portal",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Acceso al Portal»?"
+         ]
+        },
+        {
+         "numero": "3.1.1",
+         "titulo": "Autenticación de Usuario",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Autenticación de Usuario»?"
+         ]
+        },
+        {
+         "numero": "3.1.2",
+         "titulo": "Servicios según el Rol del Usuario",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Servicios según el Rol del Usuario»?"
+         ]
+        },
+        {
+         "numero": "3.1.4",
+         "titulo": "Acceso Anónimo",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Acceso Anónimo»?"
+         ]
+        },
+        {
+         "numero": "3.2",
+         "titulo": "Servicio del Portal",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Servicio del Portal»?"
+         ]
+        },
+        {
+         "numero": "3.2.2",
+         "titulo": "Gestión de Usuarios",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Gestión de Usuarios»?"
+         ]
+        },
+        {
+         "numero": "3.2.1",
+         "titulo": "Buscar Usuario.",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Buscar Usuario.»?"
+         ]
+        },
+        {
+         "numero": "13.2.2",
+         "titulo": "Crear Usuario",
+         "nivel": 3,
+         "preguntas": [
+          "¿Cómo crear Usuario en S10?"
+         ]
+        }
+       ],
+       "conceptos": [
+        "¿Desde dónde se puede generar un documento por cobrar?",
+        "¿Qué es el cronograma de facturación de una orden de venta y por qué aparece en Facturación?",
+        "¿Qué pasa con el documento después de registrarlo en Facturación?"
+       ],
+       "procedimientos": [
+        "¿Cómo se registra una nota de débito hacia un proveedor?",
+        "¿Cómo registro un anticipo en Facturación?",
+        "¿Cuál es el procedimiento para amortizar un anticipo que ya fue facturado por el proveedor?"
        ]
       },
       {
        "id": "manuales-oficiales/facturacion-electronica",
        "titulo": "Facturación Electrónica",
-       "preguntas": [
-        "¿En qué parte del sistema arranca todo el proceso del anticipo?",
-        "¿Cuál es la fuente oficial de este procedimiento de anticipos?"
+       "resumen": "Para realizar la ampliación del plazo de envío de documentos electrónicos, es necesario realizar los siguientes pasos: Primero: Ingresar al módulo de facturación y luego … Caso Anticipo 1.- Anticipo facturado (en factura 1 y amortización en factura 2): Este caso aplica cuando el…",
+       "fuente": "https://documentacion.s10peru.com/category/facturacion-electronica/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué contiene la rama de documentos y catálogos tributarios?",
+        "¿Para qué sirven los talonarios dentro de Facturación?",
+        "¿Qué son los padrones que se mencionan en los catálogos tributarios?"
+       ],
+       "procedimientos": [
+        "¿Dónde configuro el plazo de envío del documento electrónico y en qué momento debo hacerlo?",
+        "¿Cómo se dan de alta los talonarios en Facturación?",
+        "¿Qué pasos sigo para configurar la detracción de un proveedor?"
        ]
       },
       {
        "id": "manuales-oficiales/facturacion",
        "titulo": "Manual de Facturación",
-       "preguntas": [
-        "¿Cuál es la fuente oficial de este procedimiento de anticipos?",
-        "¿Qué diferencia hay entre desvincular un ingreso y eliminarlo?"
+       "resumen": "Las ventanas que presenta el S10 se asemejan a un escritorio donde tiene todos los documentos necesarios para trabajar en forma ordenada. El entorno de trabajo es el mismo casi en todos los escenarios, a continuación se describe las partes de un escenario. Del tapiz de su PC…",
+       "fuente": "https://documentacion.s10peru.com/manual-de-facturacion/",
+       "secciones": [
+        {
+         "numero": "1",
+         "titulo": "Introducción",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Introducción»?"
+         ]
+        },
+        {
+         "numero": "1.1",
+         "titulo": "La carpeta de trabajo",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «La carpeta de trabajo»?"
+         ]
+        },
+        {
+         "numero": "1.2",
+         "titulo": "Acceso al módulo de Facturación",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Acceso al módulo de Facturación»?"
+         ]
+        },
+        {
+         "numero": "2",
+         "titulo": "Catálogos",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Catálogos»?"
+         ]
+        },
+        {
+         "numero": "2.1",
+         "titulo": "Moneda",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Moneda»?"
+         ]
+        },
+        {
+         "numero": "2.2",
+         "titulo": "Forma de Pago",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Forma de Pago»?"
+         ]
+        },
+        {
+         "numero": "2.3",
+         "titulo": "Tipo de cambio",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Tipo de cambio»?"
+         ]
+        },
+        {
+         "numero": "2.4",
+         "titulo": "Proyectos",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Proyectos»?"
+         ]
+        },
+        {
+         "numero": "2.5",
+         "titulo": "Socio de Negocio",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Socio de Negocio»?"
+         ]
+        },
+        {
+         "numero": "2.5.1",
+         "titulo": "Clientes",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Clientes»?"
+         ]
+        },
+        {
+         "numero": "2.5.2",
+         "titulo": "Proveedores",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Proveedores»?"
+         ]
+        },
+        {
+         "numero": "2.6",
+         "titulo": "Tipo de Impuestos",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Tipo de Impuestos»?"
+         ]
+        },
+        {
+         "numero": "2.7",
+         "titulo": "Tipo de Documentos",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Tipo de Documentos»?"
+         ]
+        },
+        {
+         "numero": "2.8",
+         "titulo": "Detracción",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Detracción»?"
+         ]
+        },
+        {
+         "numero": "2.9",
+         "titulo": "Retención, Percepción y Buenos Contribuyentes",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Retención, Percepción y Buenos Contribuyentes»?"
+         ]
+        },
+        {
+         "numero": "3",
+         "titulo": "Accesos",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Accesos»?"
+         ]
+        },
+        {
+         "numero": "3.1",
+         "titulo": "Creación de las empresas y sucursales",
+         "nivel": 2,
+         "preguntas": [
+          "¿Cómo hacer «Creación de las empresas y sucursales» paso a paso?"
+         ]
+        },
+        {
+         "numero": "3.2",
+         "titulo": "Definición de usuarios y sus accesos",
+         "nivel": 2,
+         "preguntas": [
+          "¿Cómo hacer «Definición de usuarios y sus accesos» paso a paso?"
+         ]
+        },
+        {
+         "numero": "3.3",
+         "titulo": "Definición de Centros de Costos",
+         "nivel": 2,
+         "preguntas": [
+          "¿Cómo hacer «Definición de Centros de Costos» paso a paso?"
+         ]
+        },
+        {
+         "numero": "3.4",
+         "titulo": "Configuración general de registro de documentos",
+         "nivel": 2,
+         "preguntas": [
+          "¿Cómo hacer «Configuración general de registro de documentos» paso a paso?"
+         ]
+        },
+        {
+         "numero": "3.5",
+         "titulo": "Periodos contables",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Periodos contables»?"
+         ]
+        },
+        {
+         "numero": "3.6",
+         "titulo": "Talonarios",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Talonarios»?"
+         ]
+        },
+        {
+         "numero": "3.6.1",
+         "titulo": "Documentos",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Documentos»?"
+         ]
+        },
+        {
+         "numero": "3.6.2",
+         "titulo": "Comprobantes de Retención",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Comprobantes de Retención»?"
+         ]
+        },
+        {
+         "numero": "4",
+         "titulo": "Ventas",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Ventas»?"
+         ]
+        }
+       ],
+       "conceptos": [
+        "¿Qué significa ampliar el plazo de envío del documento electrónico?",
+        "¿Qué es la amortización de un anticipo facturado?",
+        "¿El módulo permite registrar documentos de proveedor sin ninguna orden de compra de por medio?"
+       ],
+       "procedimientos": [
+        "¿Cómo separo el monto de la detracción dentro del cronograma de pagos de la factura?",
+        "¿En qué módulo genero la orden de pago una vez que el documento ya está registrado?",
+        "¿Cuál es el flujo de aprobación de una orden de pago y quién lo ejecuta?"
        ]
       },
       {
        "id": "manuales-oficiales/videos-tutoriales-de-facturaciones",
        "titulo": "Videos Tutoriales de Facturaciones",
-       "preguntas": [
-        "¿Qué diferencia hay entre desvincular un ingreso y eliminarlo?",
-        "¿Qué tipo de proveedor exige este tratamiento de anticipo?"
+       "resumen": "Videos sobre el módulo de Facturación S10 ERP Periodo de contabilización en la Liquidación de cobranza Configuración y Registro de Comprobante No Domiciliado",
+       "fuente": "https://documentacion.s10peru.com/video-facturacion/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es un subcontrato en relación con los documentos por pagar?",
+        "¿Cuál es el propósito principal de registrar las fechas de vencimiento en Facturación?",
+        "¿Los documentos de pago de Nóminas se crean en Facturación o solo se reciben?"
+       ],
+       "procedimientos": [
+        "¿Cómo reviso el detalle por colaborador de un documento de pago que llegó de Nóminas?",
+        "¿Cómo registro la fecha de vencimiento de un documento por cobrar?",
+        "¿Qué tengo que hacer para registrar una boleta de venta en el módulo?"
        ]
       }
      ]
@@ -202,62 +1605,585 @@
      "id": "oficial-gerencia-proyectos",
      "nombre": "Gerencia de proyectos",
      "titulo": "Manuales oficiales: Gerencia de proyectos",
+     "tipo": "manuales",
      "resumen": "",
      "temas": [
       {
        "id": "manuales-oficiales/calidad-movil",
        "titulo": "Manual de Calidad Móvil",
-       "preguntas": [
-        "¿Qué tipo de recurso reviso primero cuando el costo se desvía?",
-        "¿Por qué mi análisis no baja hasta el nivel de recurso individual?"
+       "resumen": "Calidad móvil es un servicio en la nube que S10 brinda a los usuarios del S10 ERP edición Especial. Esta aplicación permite realizar control de calidad a las actividades de un proyecto en un dispositivo móvil, Celular o Tablet. Permite el registro de la información en forma…",
+       "fuente": "https://documentacion.s10peru.com/manual-de-calidad-movil/",
+       "secciones": [
+        {
+         "numero": "1",
+         "titulo": "CALIDAD MÓVIL PARA EL ERP",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «CALIDAD MÓVIL PARA EL ERP»?"
+         ]
+        },
+        {
+         "numero": "1.1",
+         "titulo": "Generalidades",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Generalidades»?"
+         ]
+        },
+        {
+         "numero": "1.1.1",
+         "titulo": "Servicio",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Servicio»?"
+         ]
+        },
+        {
+         "numero": "1.1.2",
+         "titulo": "Esquema General",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Esquema General»?"
+         ]
+        },
+        {
+         "numero": "1.2",
+         "titulo": "Registro de información",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Registro de información»?"
+         ]
+        },
+        {
+         "numero": "1.2.1",
+         "titulo": "Asignación de Protocolos",
+         "nivel": 3,
+         "preguntas": [
+          "¿Cómo hacer «Asignación de Protocolos» paso a paso?"
+         ]
+        },
+        {
+         "numero": "1.2.2",
+         "titulo": "Publicación de Actividades del Proyecto",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Publicación de Actividades del Proyecto»?"
+         ]
+        },
+        {
+         "numero": "1.2.3",
+         "titulo": "Actividades de Aplicación Móvil – Calidad Móvil",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Actividades de Aplicación Móvil – Calidad Móvil»?"
+         ]
+        },
+        {
+         "numero": "1.2.4",
+         "titulo": "Cierre del proyecto",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Cierre del proyecto»?"
+         ]
+        },
+        {
+         "numero": "2",
+         "titulo": "CALIDAD MÓVIL PARA LA APP",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «CALIDAD MÓVIL PARA LA APP»?"
+         ]
+        },
+        {
+         "numero": "2.1",
+         "titulo": "Instalación",
+         "nivel": 2,
+         "preguntas": [
+          "¿Cómo hacer «Instalación» paso a paso?"
+         ]
+        },
+        {
+         "numero": "2.1.1",
+         "titulo": "Instalación y configuración",
+         "nivel": 3,
+         "preguntas": [
+          "¿Cómo hacer «Instalación y configuración» paso a paso?"
+         ]
+        },
+        {
+         "numero": "2.2",
+         "titulo": "Producción",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Producción»?"
+         ]
+        },
+        {
+         "numero": "2.2.1",
+         "titulo": "Calidad de Responsables",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Calidad de Responsables»?"
+         ]
+        },
+        {
+         "numero": "2.2.2",
+         "titulo": "Acumulado de fallas",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Acumulado de fallas»?"
+         ]
+        },
+        {
+         "numero": "2.2.3",
+         "titulo": "Tipo de Falla",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Tipo de Falla»?"
+         ]
+        },
+        {
+         "numero": "2.3",
+         "titulo": "Otros",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Otros»?"
+         ]
+        },
+        {
+         "numero": "2.3.1",
+         "titulo": "Indicadores de Sincronización",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Indicadores de Sincronización»?"
+         ]
+        },
+        {
+         "numero": "2.3.2",
+         "titulo": "Indicadores de Toma de Datos",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Indicadores de Toma de Datos»?"
+         ]
+        },
+        {
+         "numero": "2.3.3",
+         "titulo": "Sincronizar Descarga",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Sincronizar Descarga»?"
+         ]
+        },
+        {
+         "numero": "2.3.4",
+         "titulo": "Sincronizar Carga",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Sincronizar Carga»?"
+         ]
+        }
+       ],
+       "conceptos": [
+        "¿Qué es exactamente el módulo de Gerencia de Proyectos en S10 ERP?",
+        "¿Qué se entiende por avances y resultados operativos?",
+        "¿Qué papel cumplen las valorizaciones en la gestión de contratos?"
+       ],
+       "procedimientos": [
+        "¿Cuál es el orden correcto para arrancar la planificación en Gerencia de Proyectos?",
+        "¿Cómo creo las fases o EDT de mi proyecto?",
+        "¿Qué tengo que hacer para trabajar el cronograma con MS Project 2003?"
        ]
       },
       {
        "id": "manuales-oficiales/gerencia-de-proyectos",
        "titulo": "Manual de Gerencia de Proyectos",
-       "preguntas": [
-        "¿Por qué mi análisis no baja hasta el nivel de recurso individual?",
-        "¿Qué significa autorización de cobro en el flujo de contratos?"
+       "resumen": "Este es un programa que sirve para planificar, ejecutar y controlar proyectos, brinda tecnología con un sentido práctico, adecuado a las normas del PMI y sugerencias del LEAN. Puede utilizarlo en cualquier tipo y tamaño de proyectos, recoge la experiencia de la construcción.…",
+       "fuente": "https://documentacion.s10peru.com/manual-de-gerencia-proyectos/",
+       "secciones": [
+        {
+         "numero": "1",
+         "titulo": "GENERALIDADES",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «GENERALIDADES»?"
+         ]
+        },
+        {
+         "numero": "1.1",
+         "titulo": "Integración de la información",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Integración de la información»?"
+         ]
+        },
+        {
+         "numero": "1.2",
+         "titulo": "Módulos que participan en la gestión",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Módulos que participan en la gestión»?"
+         ]
+        },
+        {
+         "numero": "1.3",
+         "titulo": "Temas generales sobre la gerencia de proyectos",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Temas generales sobre la gerencia de proyectos»?"
+         ]
+        },
+        {
+         "numero": "1.3.1",
+         "titulo": "Pilares fundamentales para el manejo de un proyecto",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Pilares fundamentales para el manejo de un proyecto»?"
+         ]
+        },
+        {
+         "numero": "1.3.2",
+         "titulo": "Tamaño de los proyectos",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Tamaño de los proyectos»?"
+         ]
+        },
+        {
+         "numero": "1.3.3",
+         "titulo": "Procesos en el desarrollo del proyecto",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Procesos en el desarrollo del proyecto»?"
+         ]
+        },
+        {
+         "numero": "1.4",
+         "titulo": "Riesgo",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Riesgo»?"
+         ]
+        },
+        {
+         "numero": "1.4.1",
+         "titulo": "Factores que generan riesgo",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Factores que generan riesgo»?"
+         ]
+        },
+        {
+         "numero": "1.4.2",
+         "titulo": "Planificación del riesgo",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Planificación del riesgo»?"
+         ]
+        },
+        {
+         "numero": "1.4.4",
+         "titulo": "Respaldo financiero para afrontar riesgos",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Respaldo financiero para afrontar riesgos»?"
+         ]
+        },
+        {
+         "numero": "1.5",
+         "titulo": "Los tiempos en la programación",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Los tiempos en la programación»?"
+         ]
+        },
+        {
+         "numero": "1.6",
+         "titulo": "Tipos de planificación",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Tipos de planificación»?"
+         ]
+        },
+        {
+         "numero": "1.7",
+         "titulo": "Participación de los módulos del S10 en la gestión del proyecto",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Participación de los módulos del S10 en la gestión del proyecto»?"
+         ]
+        },
+        {
+         "numero": "1.8",
+         "titulo": "Administración del proyecto en conjunto con presupuesto asignado",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Administración del proyecto en conjunto con presupuesto asignado»?"
+         ]
+        },
+        {
+         "numero": "1.1",
+         "titulo": "Administración del proyecto en conjunto sin presupuesto",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Administración del proyecto en conjunto sin presupuesto»?"
+         ]
+        },
+        {
+         "numero": "1.2",
+         "titulo": "La carpeta de trabajo",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «La carpeta de trabajo»?"
+         ]
+        },
+        {
+         "numero": "1.1",
+         "titulo": "En proyectos de obras electromecánicas",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «En proyectos de obras electromecánicas»?"
+         ]
+        },
+        {
+         "numero": "1.2",
+         "titulo": "Registro de información en el catálogo de proyectos",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Registro de información en el catálogo de proyectos»?"
+         ]
+        },
+        {
+         "numero": "1.3",
+         "titulo": "Acceso al módulo de Gerencia de proyectos con sa",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Acceso al módulo de Gerencia de proyectos con sa»?"
+         ]
+        },
+        {
+         "numero": "2",
+         "titulo": "PLANIFICACION",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «PLANIFICACION»?"
+         ]
+        },
+        {
+         "numero": "2.2",
+         "titulo": "Que evitamos con la falta de planificación",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Que evitamos con la falta de planificación»?"
+         ]
+        },
+        {
+         "numero": "2.3",
+         "titulo": "Ingrese al módulo como usuario",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Ingrese al módulo como usuario»?"
+         ]
+        },
+        {
+         "numero": "2.4",
+         "titulo": "El proyecto",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «El proyecto»?"
+         ]
+        },
+        {
+         "numero": "2.4.1",
+         "titulo": "El proyecto y la contabilidad",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «El proyecto y la contabilidad»?"
+         ]
+        }
+       ],
+       "conceptos": [
+        "¿Por qué los equipos se pagan vía subcontratos?",
+        "¿Qué relación tiene Gerencia de Proyectos con el módulo de Compras?",
+        "¿Para qué sirven el calendario y los horarios en la planificación?"
+       ],
+       "procedimientos": [
+        "¿Cómo se registran las partidas de control para la planificación económica?",
+        "¿Cómo registro el uso de materiales en obra?",
+        "¿Cómo hago la valorización de un subcontrato ya registrado?"
        ]
       },
       {
        "id": "manuales-oficiales/tareo-en-linea",
        "titulo": "Manual de Tareo en Línea",
-       "preguntas": [
+       "resumen": "Visita nuevo Manual de Pedidos S10 haciendo",
+       "fuente": "https://documentacion.s10peru.com/manual-tareo-linea/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es el porcentaje del plan completado?",
         "¿Qué significa autorización de cobro en el flujo de contratos?",
-        "¿Qué tan oficial es este contenido, viene de S10 o de terceros?"
+        "¿Qué rol tiene Calidad Móvil respecto a esta rama?"
+       ],
+       "procedimientos": [
+        "¿Cuál es el procedimiento del tareo diario?",
+        "¿Cómo se gestiona el pago de equipos si va por subcontratos?",
+        "¿Cómo saco el resultado operativo a nivel de proyecto?"
        ]
       },
       {
        "id": "manuales-oficiales/tareo-movil",
        "titulo": "Manual de Tareo Móvil",
-       "preguntas": [
-        "¿Qué tan oficial es este contenido, viene de S10 o de terceros?",
-        "¿Lean es un módulo aparte o es parte de Gerencia de Proyectos?"
+       "resumen": "Tareo móvil es un servicio en la nube que S10 brinda a los usuarios del S10 ERP edición Especial. Esta aplicación móvil te permite registrar el tareo en un dispositivo móvil, Celular o Tablet, en las obras, para luego enviar la información a la oficina principal. Permite el…",
+       "fuente": "https://documentacion.s10peru.com/manual-de-tareo-movil/",
+       "secciones": [
+        {
+         "numero": "1",
+         "titulo": "Manual Tareo Móvil para el ERP",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Manual Tareo Móvil para el ERP»?"
+         ]
+        },
+        {
+         "numero": "1.1",
+         "titulo": "Generalidades",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Generalidades»?"
+         ]
+        },
+        {
+         "numero": "1.2",
+         "titulo": "Instalación y Configuración",
+         "nivel": 2,
+         "preguntas": [
+          "¿Cómo hacer «Instalación y Configuración» paso a paso?"
+         ]
+        },
+        {
+         "numero": "1.3",
+         "titulo": "Sincronización de información",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Sincronización de información»?"
+         ]
+        },
+        {
+         "numero": "1.3.1",
+         "titulo": "Publicación de Tareo",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Publicación de Tareo»?"
+         ]
+        },
+        {
+         "numero": "1.3.2",
+         "titulo": "Edición de Tareo",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Edición de Tareo»?"
+         ]
+        },
+        {
+         "numero": "1.3.3",
+         "titulo": "Cierre del Tareo",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Cierre del Tareo»?"
+         ]
+        },
+        {
+         "numero": "2",
+         "titulo": "Manual Tareo Móvil para la App",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Manual Tareo Móvil para la App»?"
+         ]
+        },
+        {
+         "numero": "2.1",
+         "titulo": "Sincronizar el Tareo",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Sincronizar el Tareo»?"
+         ]
+        },
+        {
+         "numero": "2.2",
+         "titulo": "Selección del Proyecto",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Selección del Proyecto»?"
+         ]
+        },
+        {
+         "numero": "2.4",
+         "titulo": "Resumen",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Resumen»?"
+         ]
+        }
+       ],
+       "conceptos": [
+        "¿Por qué el módulo se llama de gerencia y no de presupuestos?",
+        "¿Qué información entrega el módulo para tomar decisiones en obra?",
+        "¿Qué distingue a Lookahead dentro de las ramas hijas?"
+       ],
+       "procedimientos": [
+        "¿Cómo se analiza el resultado por grupo de recursos?",
+        "¿Cómo se emite una valorización de contrato para el que financia la obra?",
+        "¿Cómo se vincula el pedido de materiales con el módulo de Compras?"
        ]
       },
       {
        "id": "manuales-oficiales/videos-de-calidad-movil",
        "titulo": "Videos de Calidad Móvil",
-       "preguntas": [
-        "¿Lean es un módulo aparte o es parte de Gerencia de Proyectos?",
-        "¿Qué limitaciones tiene la información disponible sobre esta app?"
+       "resumen": "Manual oficial de S10 publicado en el portal de miembros: Videos de Calidad Móvil.",
+       "fuente": "https://documentacion.s10peru.com/video-calidad-movil/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué se entiende por control de mano de obra en este contexto?",
+        "¿Qué son los resultados operativos en S10?",
+        "¿Qué es una partida de control y de dónde sale?"
+       ],
+       "procedimientos": [
+        "¿Cómo asigno un presupuesto ya existente a un proyecto registrado?",
+        "¿Se puede importar un cronograma hecho en MS Project o hay que rehacerlo?",
+        "¿Qué pasos sigue la gestión de materiales de principio a fin?"
        ]
       },
       {
        "id": "manuales-oficiales/videos-de-gerencia-de-proyectos",
        "titulo": "Videos de Gerencia de Proyectos",
-       "preguntas": [
-        "¿Qué limitaciones tiene la información disponible sobre esta app?",
-        "¿Qué tipo de recurso reviso primero cuando el costo se desvía?"
+       "resumen": "Videos sobre el módulo de Gerencia de Proyectos S10 ERP",
+       "fuente": "https://documentacion.s10peru.com/video-gerencia-proyectos/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué se entiende por saldo de obra?",
+        "¿Qué son los factores de avance y de costo?",
+        "¿A qué niveles se puede analizar un resultado operativo?"
+       ],
+       "procedimientos": [
+        "¿Cómo se hace el seguimiento de avance semana a semana en el módulo?",
+        "¿Qué se hace primero, registrar las partidas de control o las fases?",
+        "¿Cómo genero las curvas S del proyecto?"
        ]
       },
       {
        "id": "manuales-oficiales/videos-de-tareo-movil",
        "titulo": "Videos de Tareo Móvil",
-       "preguntas": [
-        "¿Qué tipo de recurso reviso primero cuando el costo se desvía?",
-        "¿Por qué mi análisis no baja hasta el nivel de recurso individual?"
+       "resumen": "Manual oficial de S10 publicado en el portal de miembros: Videos de Tareo Móvil.",
+       "fuente": "https://documentacion.s10peru.com/video-tareo-movil/",
+       "secciones": [],
+       "conceptos": [
+        "¿Los resultados operativos se agrupan según qué criterio?",
+        "¿Para qué sirven las valorizaciones a quienes financian la construcción?",
+        "¿Qué quiere decir autorización de cobro en este contexto?"
+       ],
+       "procedimientos": [
+        "¿En qué parte del módulo registro los equipos que trabajaron hoy?",
+        "¿Cómo se configura un horario distinto para un frente de trabajo?",
+        "¿Cómo se organiza el cronograma gráfico dentro del módulo?"
        ]
       }
      ]
@@ -266,46 +2192,302 @@
      "id": "oficial-nominas",
      "nombre": "Nóminas",
      "titulo": "Manuales oficiales: Nóminas",
+     "tipo": "manuales",
      "resumen": "",
      "temas": [
       {
        "id": "manuales-oficiales/nominas-2",
        "titulo": "Nóminas",
-       "preguntas": [
-        "¿De qué manera se cargan los porcentajes de AFP en el sistema?",
-        "¿Qué sucede si emito las boletas antes de validar los montos?"
+       "resumen": "1.Primero actualizar el S10 ERP con la Revisión 176 del 07/04/2020 2.Actualizar los % para las AFP’S desde el escenario Comisiones SPP Dependientes. Nota: Se … 1. Adicionar los conceptos de días trabajados o montos ganados para que estos sean considerados en el cálculo. Realizar…",
+       "fuente": "https://documentacion.s10peru.com/category/nominas/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es exactamente el módulo de Nóminas dentro del S10 ERP?",
+        "¿Qué tipos de nómina cubre la capacitación oficial del módulo?",
+        "¿Qué es la configuración base del módulo y qué abarca?"
+       ],
+       "procedimientos": [
+        "¿Qué pasos sigo para crear el proyecto multiproyecto y luego asociarle los proyectos destino?",
+        "¿Cómo se configura un horario cíclico para un grupo que trabaja 14 x 7 en obra?",
+        "¿De qué manera se cargan los porcentajes de AFP en el sistema?"
        ]
       },
       {
        "id": "manuales-oficiales/nominas-3",
        "titulo": "Nóminas",
-       "preguntas": [
-        "¿Qué sucede si emito las boletas antes de validar los montos?",
-        "¿Qué tipos de nómina cubre la capacitación oficial del módulo?"
+       "resumen": "1. Adicionar los conceptos de días trabajados o montos ganados para que estos sean considerados en el cálculo. Realizar la configuración de la siguiente manera: …",
+       "fuente": "https://documentacion.s10peru.com/tag/nominas/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué catálogos hay que dejar listos antes de calcular una planilla?",
+        "¿Qué son las afiliaciones dentro de los catálogos de Nóminas?",
+        "¿Para qué sirve la clasificación de papeletas?"
+       ],
+       "procedimientos": [
+        "¿Qué hago para definir las propiedades de un tipo de nómina de empleados?",
+        "¿Cuál es el procedimiento para establecer la relación Categoría–Recurso?",
+        "¿Cómo lanzo el cálculo del proceso una vez que ya tengo el tareo y los conceptos cargados?"
        ]
       },
       {
        "id": "manuales-oficiales/nominas",
        "titulo": "Manual de Nóminas",
-       "preguntas": [
-        "¿Qué tipos de nómina cubre la capacitación oficial del módulo?",
-        "¿Cuál es el año del convenio al que corresponden estas cifras?"
+       "resumen": "El módulo de nóminas del S10 es un producto innovador que permite gestionar los procesos de administración de personal y llevar a cabo el cálculo de la nómina. Este módulo cuenta con herramientas ágiles para el control de las horas hombre efectivas y de las ausencias con un…",
+       "fuente": "https://documentacion.s10peru.com/manual-de-nominas/",
+       "secciones": [
+        {
+         "numero": "1",
+         "titulo": "Generalidades",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Generalidades»?"
+         ]
+        },
+        {
+         "numero": "2",
+         "titulo": "Acceso al módulo",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Acceso al módulo»?"
+         ]
+        },
+        {
+         "numero": "2.1",
+         "titulo": "Registro del usuario que manejará el módulo de Nóminas:",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Registro del usuario que manejará el módulo de Nóminas:»?"
+         ]
+        },
+        {
+         "numero": "2.1.1",
+         "titulo": "Registro de usuarios",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Registro de usuarios»?"
+         ]
+        },
+        {
+         "numero": "2.1.2",
+         "titulo": "Acceso a los catálogos",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Acceso a los catálogos»?"
+         ]
+        },
+        {
+         "numero": "2.1.3",
+         "titulo": "Ingreso al módulo como usuario",
+         "nivel": 3,
+         "preguntas": [
+          "¿Cómo hacer «Ingreso al módulo como usuario» paso a paso?"
+         ]
+        },
+        {
+         "numero": "3",
+         "titulo": "CATÁLOGOS",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «CATÁLOGOS»?"
+         ]
+        },
+        {
+         "numero": "3.1",
+         "titulo": "Catálogo de Socios de Negocio",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Catálogo de Socios de Negocio»?"
+         ]
+        },
+        {
+         "numero": "3.2",
+         "titulo": "Catálogo de Socios de Negocios por Tipo",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Catálogo de Socios de Negocios por Tipo»?"
+         ]
+        },
+        {
+         "numero": "3.3",
+         "titulo": "Catálogo de Ocupación",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Catálogo de Ocupación»?"
+         ]
+        },
+        {
+         "numero": "3.4",
+         "titulo": "Catálogo de Categorías",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Catálogo de Categorías»?"
+         ]
+        },
+        {
+         "numero": "3.5",
+         "titulo": "Catálogo de Recursos",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Catálogo de Recursos»?"
+         ]
+        },
+        {
+         "numero": "3.6",
+         "titulo": "Catálogo de Afiliaciones",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Catálogo de Afiliaciones»?"
+         ]
+        },
+        {
+         "numero": "3.7",
+         "titulo": "Catálogo de Proyectos",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Catálogo de Proyectos»?"
+         ]
+        },
+        {
+         "numero": "3.8",
+         "titulo": "Catálogo de Lugares",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Catálogo de Lugares»?"
+         ]
+        },
+        {
+         "numero": "3.9",
+         "titulo": "Catálogo de Logotipos",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Catálogo de Logotipos»?"
+         ]
+        },
+        {
+         "numero": "3.10",
+         "titulo": "Catálogo de Monedas",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Catálogo de Monedas»?"
+         ]
+        },
+        {
+         "numero": "3.11",
+         "titulo": "Catálogo de Conceptos Genéricos",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Catálogo de Conceptos Genéricos»?"
+         ]
+        },
+        {
+         "numero": "3.12",
+         "titulo": "Catálogo de Clasificación de Papeletas",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Catálogo de Clasificación de Papeletas»?"
+         ]
+        },
+        {
+         "numero": "3.13",
+         "titulo": "Catálogo de Plantillas de Documentos",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Catálogo de Plantillas de Documentos»?"
+         ]
+        },
+        {
+         "numero": "3.14",
+         "titulo": "Catálogo de Tablas Planilla Electrónica",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Catálogo de Tablas Planilla Electrónica»?"
+         ]
+        },
+        {
+         "numero": "3.15",
+         "titulo": "Catálogo de Plan Contable Externo",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Catálogo de Plan Contable Externo»?"
+         ]
+        },
+        {
+         "numero": "3.16",
+         "titulo": "Catálogo de Formatos",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Catálogo de Formatos»?"
+         ]
+        },
+        {
+         "numero": "3.17",
+         "titulo": "Catálogo de Formatos por Empresa",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Catálogo de Formatos por Empresa»?"
+         ]
+        },
+        {
+         "numero": "4",
+         "titulo": "CONFIGURACIÓN",
+         "nivel": 1,
+         "preguntas": [
+          "¿Cómo hacer «CONFIGURACIÓN» paso a paso?"
+         ]
+        }
+       ],
+       "conceptos": [
+        "¿Qué representan las categorías en el catálogo de Nóminas?",
+        "¿Qué son los grupos de trabajo en la configuración del módulo?",
+        "¿Qué es la Matriz de Constantes y para qué se usa?"
+       ],
+       "procedimientos": [
+        "¿Qué pasos sigo para generar la planilla de pago y enviarla a Facturación?",
+        "¿Cómo genero el archivo para AFPNET desde el módulo?",
+        "¿Qué se hace para emitir el certificado de renta de quinta categoría de un trabajador?"
        ]
       },
       {
        "id": "manuales-oficiales/pasos-para-el-calculo-de-nominas",
        "titulo": "Pasos para el cálculo de Nóminas",
-       "preguntas": [
-        "¿Cuál es el año del convenio al que corresponden estas cifras?",
-        "¿Se usa clic derecho para algo en ambos escenarios? ¿Para qué?"
+       "resumen": "1.Primero actualizar el S10 ERP con la Revisión 176 del 07/04/2020 2.Actualizar los % para las AFP’S desde el escenario Se observa que los valores obtenidos para los ítems de las AFP’S no afectos según la norma para este periodo tienen valor 0. La página donde obtiene la…",
+       "fuente": "https://documentacion.s10peru.com/pasos-para-calculo-nominas-abril-2020/",
+       "secciones": [
+        {
+         "numero": "3",
+         "titulo": "Configurar desde el escenario",
+         "nivel": 1,
+         "preguntas": [
+          "¿Cómo configurar desde el escenario en S10?"
+         ]
+        }
+       ],
+       "conceptos": [
+        "¿Qué son los porcentajes de AFP (SPP) dentro de la configuración?",
+        "¿Para qué sirven las vistas y reportes que se configuran al inicio?",
+        "¿Qué son los tipos de préstamos y descuentos que se parametrizan?"
+       ],
+       "procedimientos": [
+        "¿Cómo configuro una plantilla para que salgan documentos personalizados?",
+        "¿De qué forma se cargan los conceptos por socio de negocio para un periodo específico?",
+        "¿Qué tengo que hacer para clasificar las papeletas antes de usarlas en el tareo?"
        ]
       },
       {
        "id": "manuales-oficiales/videos-tutoriales-de-nominas",
        "titulo": "Videos Tutoriales de Nóminas",
-       "preguntas": [
-        "¿Se usa clic derecho para algo en ambos escenarios? ¿Para qué?",
-        "¿Qué tan confiable es este contenido y de qué canal sale el video?"
+       "resumen": "Videos sobre el módulo de Nóminas S10 ERP NUEVO APORTE FONDO DE CAPACITACION EN CONSTRUCCION CIVIL CONFIGURACION DEL NUEVO VALOR UIT PARA EL 2024",
+       "fuente": "https://documentacion.s10peru.com/video-nominas/",
+       "secciones": [],
+       "conceptos": [
+        "¿En qué consiste el ciclo de cálculo mensual o semanal del módulo?",
+        "¿Por qué el ciclo puede ser mensual o semanal y no uno solo?",
+        "¿Qué es el personal disponible como primer paso del ciclo?"
+       ],
+       "procedimientos": [
+        "¿Cómo registro días no laborados remunerados para que no descuenten mal?",
+        "¿Cómo se procesa la liquidación de beneficios sociales de un obrero que sale de obra?",
+        "¿Qué hago para calcular la CTS del semestre?"
        ]
       }
      ]
@@ -314,86 +2496,420 @@
      "id": "oficial-portales",
      "nombre": "Portales",
      "titulo": "Manuales oficiales: Portales",
+     "tipo": "manuales",
      "resumen": "",
      "temas": [
       {
        "id": "manuales-oficiales/del-portal-del-proveedor",
        "titulo": "Manual del Portal del Proveedor",
-       "preguntas": [
-        "¿Hay alguna ruta alterna para ver el contenido sin ser miembro?",
-        "¿Por qué el asistente no me puede dar el paso a paso del portal?"
+       "resumen": "S10 Portal de Proveedores es una aplicación basada en web que permite consultar la información de pagos y Órdenes de Compra y Servicio registrados y aprobados desde el S10. Este servicio está disponible las 24 horas del día y todos los días del año. El usuario proveedor que…",
+       "fuente": "https://documentacion.s10peru.com/manual-portal-proveedor/",
+       "secciones": [
+        {
+         "numero": "1",
+         "titulo": "CALIDAD MOVIL PARA USUARIO PROVEEDOR",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «CALIDAD MOVIL PARA USUARIO PROVEEDOR»?"
+         ]
+        },
+        {
+         "numero": "1.1",
+         "titulo": "Servicio del S10",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Servicio del S10»?"
+         ]
+        },
+        {
+         "numero": "1.2",
+         "titulo": "Acceso al Portal",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Acceso al Portal»?"
+         ]
+        },
+        {
+         "numero": "1.2.1",
+         "titulo": "Autenticación del Usuario",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Autenticación del Usuario»?"
+         ]
+        },
+        {
+         "numero": "1.2.2",
+         "titulo": "Recuperación de contraseña",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Recuperación de contraseña»?"
+         ]
+        },
+        {
+         "numero": "1.3",
+         "titulo": "Servicios del Portal",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Servicios del Portal»?"
+         ]
+        },
+        {
+         "numero": "1.3.1",
+         "titulo": "Idioma",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Idioma»?"
+         ]
+        },
+        {
+         "numero": "1.3.2",
+         "titulo": "Facturación",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Facturación»?"
+         ]
+        },
+        {
+         "numero": "1.3.3",
+         "titulo": "Pagos",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Pagos»?"
+         ]
+        },
+        {
+         "numero": "1.3.4",
+         "titulo": "Impresión de Comprobantes",
+         "nivel": 3,
+         "preguntas": [
+          "¿Cómo hacer «Impresión de Comprobantes» paso a paso?"
+         ]
+        },
+        {
+         "numero": "1.3.5",
+         "titulo": "Órdenes de Compra y Servicio",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Órdenes de Compra y Servicio»?"
+         ]
+        },
+        {
+         "numero": "1.3.6",
+         "titulo": "Métricas",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Métricas»?"
+         ]
+        },
+        {
+         "numero": "1.3.7",
+         "titulo": "Gestión de Usuarios",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Gestión de Usuarios»?"
+         ]
+        },
+        {
+         "numero": "1.3.8",
+         "titulo": "Configuración",
+         "nivel": 3,
+         "preguntas": [
+          "¿Cómo hacer «Configuración» paso a paso?"
+         ]
+        },
+        {
+         "numero": "2",
+         "titulo": "CALIDAD MOVIL PARA EMPRESA(S10 ERP Especial)",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «CALIDAD MOVIL PARA EMPRESA(S10 ERP Especial)»?"
+         ]
+        },
+        {
+         "numero": "2.1",
+         "titulo": "Configuración",
+         "nivel": 2,
+         "preguntas": [
+          "¿Cómo hacer «Configuración» paso a paso?"
+         ]
+        },
+        {
+         "numero": "2.1.1",
+         "titulo": "Datos de la empresa",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Datos de la empresa»?"
+         ]
+        },
+        {
+         "numero": "2.1.2",
+         "titulo": "Registro de Proveedores",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Registro de Proveedores»?"
+         ]
+        },
+        {
+         "numero": "2.1.3",
+         "titulo": "Configuración en el módulo Administrativo",
+         "nivel": 3,
+         "preguntas": [
+          "¿Cómo hacer «Configuración en el módulo Administrativo» paso a paso?"
+         ]
+        },
+        {
+         "numero": "2.2",
+         "titulo": "Envío de Notificaciones",
+         "nivel": 2,
+         "preguntas": [
+          "¿Cómo hacer «Envío de Notificaciones» paso a paso?"
+         ]
+        },
+        {
+         "numero": "2.2.1",
+         "titulo": "Configuración inicial",
+         "nivel": 3,
+         "preguntas": [
+          "¿Cómo hacer «Configuración inicial» paso a paso?"
+         ]
+        },
+        {
+         "numero": "2.2.2",
+         "titulo": "Órdenes de Pago",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Órdenes de Pago»?"
+         ]
+        },
+        {
+         "numero": "2.2.3",
+         "titulo": "Pagos",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Pagos»?"
+         ]
+        },
+        {
+         "numero": "2.2.4",
+         "titulo": "Comprobantes",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Comprobantes»?"
+         ]
+        },
+        {
+         "numero": "2.5",
+         "titulo": "Órdenes de Compra / Servicio",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Órdenes de Compra / Servicio»?"
+         ]
+        }
+       ],
+       "conceptos": [
+        "¿Qué son los portales web de S10 y por qué existen si ya tengo el ERP de escritorio?",
+        "¿Cuáles son todos los portales y apps que ofrece S10?",
+        "¿A quién está dirigido el Portal del Colaborador?"
+       ],
+       "procedimientos": [
+        "¿Qué tengo que hacer primero si necesito el paso a paso de Aprobaciones Móviles?",
+        "¿Por dónde navego si quiero ver los cinco subtemas de portales uno por uno?",
+        "¿Qué hago cuando el manual que necesito no está en esta base de conocimiento?"
        ]
       },
       {
        "id": "manuales-oficiales/descargas-portal-de-ayuda-s10",
        "titulo": "Descargas - Portal de Ayuda S10",
-       "preguntas": [
-        "¿Por qué el asistente no me puede dar el paso a paso del portal?",
-        "¿Qué representa Tareo en Línea S10 dentro de las apps móviles?"
+       "resumen": "Template File: WP Page Template > Elementor - header-footer.php Página para descargas de archivos útiles para usuarios del S10 ERP. Acceso solo para clientes. Descarga de Instaladores y Actualizaciones Con esta herramienta nuestro equipo de Soporte, podrá ayudarte en la…",
+       "fuente": "https://documentacion.s10peru.com/descargas/",
+       "secciones": [
+        {
+         "numero": "9",
+         "titulo": "Sitios recientes",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Sitios recientes»?"
+         ]
+        }
+       ],
+       "conceptos": [
+        "¿Para qué se usa el Portal de Asistencia?",
+        "¿Qué tipo de documentos puedo ver en el Portal del Empleado?",
+        "¿Las apps móviles de S10 para quién están pensadas dentro de la empresa?"
+       ],
+       "procedimientos": [
+        "¿Cómo verifico cuántos documentos tiene cada portal antes de ponerme a leer?",
+        "¿Qué pasos debo seguir para revisar el material del Portal del Colaborador?",
+        "¿De qué manera se accede al material que no está tras login?"
        ]
       },
       {
        "id": "manuales-oficiales/portal-asistencia",
        "titulo": "Manual Portal Asistencia",
-       "preguntas": [
-        "¿Qué representa Tareo en Línea S10 dentro de las apps móviles?",
-        "¿Hay una playlist en YouTube dedicada al Portal de Asistencia?"
+       "resumen": "Visita el nuevo Manual del Portal de Asistencia haciendo",
+       "fuente": "https://documentacion.s10peru.com/acceso-manual-portal-asistencia/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es Pedidos Móviles y para quién se diseñó?",
+        "¿Qué limitación tiene esta base de conocimiento respecto a los manuales de portales?",
+        "¿Por qué esta base solo tiene los títulos de los manuales y no el contenido completo?"
+       ],
+       "procedimientos": [
+        "¿Qué debo pedirle a Metrín para que me lleve al manual correcto de un portal?",
+        "¿Qué hago si entro a documentacion.s10peru.com y me pide iniciar sesión?",
+        "¿Cómo identifico cuál de los cinco subnodos responde mi consulta?"
        ]
       },
       {
        "id": "manuales-oficiales/portal-de-facturacion-electronica-credenciales-api-rest-suna",
        "titulo": "Portal de Facturación Electrónica - Credenciales API REST SUNAT - Portal",
-       "preguntas": [
-        "¿Hay una playlist en YouTube dedicada al Portal de Asistencia?",
-        "¿Qué portales de S10 sí tienen índice de temas y por qué este no?"
+       "resumen": "Facturación Electrónica S10 - Credenciales API REST SUNAT Registrando las credenciales API REST SUNAT en el Portal de Facturación Electrónica S10 Dar de baja guías de remisión electrónica (GRE) Consulta de guías de remisión eletrónica (GRE) La generación de los nuevos documentos…",
+       "fuente": "https://documentacion.s10peru.com/portal-de-facturacion-electronica-credenciales-api-rest-sunat/",
+       "secciones": [
+        {
+         "numero": "1",
+         "titulo": "Credenciales API REST SUNAT",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Credenciales API REST SUNAT»?"
+         ]
+        },
+        {
+         "numero": "2",
+         "titulo": "Generando las credenciales",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Generando las credenciales»?"
+         ]
+        },
+        {
+         "numero": "4",
+         "titulo": "Dar de baja guías de remisión electrónica (GRE)",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Dar de baja guías de remisión electrónica (GRE)»?"
+         ]
+        },
+        {
+         "numero": "4",
+         "titulo": "Consulta de guías de remisión electrónica (GRE)",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Consulta de guías de remisión electrónica (GRE)»?"
+         ]
+        }
+       ],
+       "conceptos": [
+        "¿Los portales de S10 reemplazan al ERP de escritorio?",
+        "¿Qué manuales del ERP acompañan al Portal del Proveedor en el material de ayuda?",
+        "¿El Portal de Asistencia tiene videos oficiales?"
+       ],
+       "procedimientos": [
+        "¿De qué forma reviso los temas de las apps móviles antes de instalarlas en obra?",
+        "¿Qué hago primero al consultar esta base sobre un portal: leer el resumen o ir al subnodo?",
+        "¿Qué ruta tomo si mi consulta es sobre configurar el portal de proveedores?"
        ]
       },
       {
        "id": "manuales-oficiales/portal-facturacion-electronica",
        "titulo": "Manual Portal Facturación Electrónica",
-       "preguntas": [
-        "¿Qué portales de S10 sí tienen índice de temas y por qué este no?",
-        "¿Cómo remito a un usuario al manual del portal correctamente?"
+       "resumen": "Visita el nuevo Manual de Facturación Electrónica S10 haciendo",
+       "fuente": "https://documentacion.s10peru.com/acceso-a-manual-portal-facturacion-electronica/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué se entiende por app de aprobaciones en el contexto de S10?",
+        "¿De dónde salen las fuentes de esta información sobre los portales?",
+        "¿Existe algún portal de S10 pensado para control de personal?"
+       ],
+       "procedimientos": [
+        "¿Cómo registro un pedido en la app de Pedidos Móviles paso a paso?",
+        "¿Dónde configuro las notificaciones de pendientes en Aprobaciones Móviles?",
+        "¿Qué hago si el manual me pide usuario y contraseña y no los tengo?"
        ]
       },
       {
        "id": "manuales-oficiales/portal-proveedores-compras-y-almacen",
        "titulo": "Manual Portal Proveedores – Compras y Almacén",
-       "preguntas": [
-        "¿Cómo remito a un usuario al manual del portal correctamente?",
-        "¿Hay alguna ruta alterna para ver el contenido sin ser miembro?"
+       "resumen": "Visita el nuevo Manual de Proveedores S10 – Compras y Almacén haciendo",
+       "fuente": "https://documentacion.s10peru.com/acceso-a-manual-portal-proveedores-compras-y-almacen/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué incluye el Portal del Empleado además de boletas?",
+        "¿Qué es Aprobaciones Móviles de S10?",
+        "¿Qué significa que los videos oficiales de estas dos apps no tengan narración?"
+       ],
+       "procedimientos": [
+        "¿Cómo busco un documento específico por número dentro de la bandeja de aprobaciones?",
+        "¿Qué gestiones previas hago antes de pedir soporte por la app de pedidos?",
+        "¿Cómo hago paso a paso para llegar al manual del Portal de Asistencia?"
        ]
       },
       {
        "id": "manuales-oficiales/portal-suministros",
        "titulo": "Manual Portal Suministros",
-       "preguntas": [
-        "¿Hay alguna ruta alterna para ver el contenido sin ser miembro?",
-        "¿Por qué el asistente no me puede dar el paso a paso del portal?"
+       "resumen": "Visita el nuevo Manual de Suministros S10 haciendo",
+       "fuente": "https://documentacion.s10peru.com/acceso-a-manual-portal-suministros/",
+       "secciones": [],
+       "conceptos": [
+        "¿Por qué no se deben mezclar los pasos de Tareo Móvil con los de Aprobaciones Móviles?",
+        "¿Qué quiere decir que los manuales estén «tras el login de miembros»?",
+        "¿A dónde debe remitir Metrín cuando le preguntan cómo aprobar desde el celular?"
+       ],
+       "procedimientos": [
+        "¿Qué tengo que hacer si entro a documentacion.s10peru.com y me pide login de miembros?",
+        "¿Me guías paso a paso para configurar el Portal de Asistencia en mi obra?",
+        "¿Cuál es la secuencia para generar un reporte de marcaciones desde el Portal de Asistencia?"
        ]
       },
       {
        "id": "manuales-oficiales/videos-de-portal-de-facturacion-electronica",
        "titulo": "Videos de Portal de Facturación Electrónica",
-       "preguntas": [
-        "¿Por qué el asistente no me puede dar el paso a paso del portal?",
-        "¿Qué representa Tareo en Línea S10 dentro de las apps móviles?"
+       "resumen": "Videos sobre Portal de Facturación Electrónica Categoría: Portal de Facturación Electrónica",
+       "fuente": "https://documentacion.s10peru.com/video-facturacion-electronica/",
+       "secciones": [],
+       "conceptos": [
+        "¿Existe manual oficial para estas apps o simplemente no hay documentación?",
+        "¿Qué tipo de contenido existe para Aprobaciones Móviles: manual, video, o ambos?",
+        "¿Qué es lo único que esta base puede ofrecer sobre Pedidos Móviles?"
+       ],
+       "procedimientos": [
+        "¿Cómo cierro el periodo de asistencia en el Portal de Asistencia?",
+        "¿Qué proceso sigo para vincular el reloj biométrico con el Portal de Asistencia?",
+        "¿Cómo asigno permisos por perfil dentro del Portal de Asistencia?"
        ]
       },
       {
        "id": "manuales-oficiales/videos-de-portal-del-empleado",
        "titulo": "Videos de Portal del Empleado",
-       "preguntas": [
-        "¿Qué representa Tareo en Línea S10 dentro de las apps móviles?",
-        "¿Hay una playlist en YouTube dedicada al Portal de Asistencia?"
+       "resumen": "Manual oficial de S10 publicado en el portal de miembros: Videos de Portal del Empleado.",
+       "fuente": "https://documentacion.s10peru.com/video-empleado/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué debería reconocer el asistente antes de derivar al manual oficial?",
+        "¿Qué tres acciones concretas corresponden cuando alguien pregunta por estas apps?",
+        "¿Qué significa «Aplicaciones Móviles» como categoría del portal?"
+       ],
+       "procedimientos": [
+        "¿Cuál es la ruta recomendada por ustedes cuando la base no tiene los pasos de un portal?",
+        "¿Los pasos para instalar Supremo son los mismos que para entrar al Portal de Asistencia?",
+        "¿Cómo aclaro internamente si lo que me piden es el portal web o la asistencia remota?"
        ]
       },
       {
        "id": "manuales-oficiales/videos-de-portal-del-proveedor",
        "titulo": "Videos de Portal del Proveedor",
-       "preguntas": [
-        "¿Hay una playlist en YouTube dedicada al Portal de Asistencia?",
-        "¿Qué portales de S10 sí tienen índice de temas y por qué este no?"
+       "resumen": "Manual oficial de S10 publicado en el portal de miembros: Videos de Portal del Proveedor.",
+       "fuente": "https://documentacion.s10peru.com/video-proveedor/",
+       "secciones": [],
+       "conceptos": [
+        "¿Sirve de algo revisar el video oficial si quiero aprender los pasos?",
+        "¿Qué representa Tareo en Línea S10 dentro de las apps móviles?",
+        "¿Qué es exactamente el Portal de Asistencia de S10?"
+       ],
+       "procedimientos": [
+        "¿Cómo verifico si mi cuenta ya tiene el rol de miembro en documentacion.s10peru.com?",
+        "¿Qué datos debo incluir en el ticket para que me expliquen el funcionamiento del portal?",
+        "¿Hay un orden sugerido: video, manual, ticket? ¿Cuál conviene primero?"
        ]
       }
      ]
@@ -402,30 +2918,259 @@
      "id": "oficial-presupuestos",
      "nombre": "Presupuestos",
      "titulo": "Manuales oficiales: Presupuestos",
+     "tipo": "manuales",
      "resumen": "",
      "temas": [
       {
        "id": "manuales-oficiales/presupuestos",
        "titulo": "Manual de Presupuestos",
-       "preguntas": [
-        "¿Qué ruta sigo dentro del sistema para llegar a Mis Favoritos?",
-        "¿Qué tengo que hacer para que aparezcan más opciones en los menús?"
+       "resumen": "Este es un programa para elaborar presupuestos de todo tipo de obras a partir de los metrados. Permite elaborar hasta tres tipos de presupuesto por obra, el Venta, Meta y Línea Base, los que son asignados a los proyectos que serán utilizados para planificar, ejecutar, controlar…",
+       "fuente": "https://documentacion.s10peru.com/manual-de-presupuestos/",
+       "secciones": [
+        {
+         "numero": "1",
+         "titulo": "PRESUPUESTOS",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «PRESUPUESTOS»?"
+         ]
+        },
+        {
+         "numero": "1.1",
+         "titulo": "Introducción",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Introducción»?"
+         ]
+        },
+        {
+         "numero": "1.2",
+         "titulo": "Tipos de presupuestos",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Tipos de presupuestos»?"
+         ]
+        },
+        {
+         "numero": "1.3",
+         "titulo": "El presupuesto",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «El presupuesto»?"
+         ]
+        },
+        {
+         "numero": "1.3.1",
+         "titulo": "Presupuesto de Edificaciones",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Presupuesto de Edificaciones»?"
+         ]
+        },
+        {
+         "numero": "1.3.2",
+         "titulo": "Presupuesto de un Centro Comercial",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Presupuesto de un Centro Comercial»?"
+         ]
+        },
+        {
+         "numero": "1.3.3",
+         "titulo": "Presupuesto de Saneamiento",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Presupuesto de Saneamiento»?"
+         ]
+        },
+        {
+         "numero": "1.3.4",
+         "titulo": "Presupuesto de una carretera venta y meta",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Presupuesto de una carretera venta y meta»?"
+         ]
+        },
+        {
+         "numero": "1.3.5",
+         "titulo": "Presupuesto de Instalaciones Eléctricas venta y meta + GG",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Presupuesto de Instalaciones Eléctricas venta y meta + GG»?"
+         ]
+        },
+        {
+         "numero": "1.3.6",
+         "titulo": "Presupuesto de Edificaciones venta y meta + GG",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Presupuesto de Edificaciones venta y meta + GG»?"
+         ]
+        },
+        {
+         "numero": "1.3.7",
+         "titulo": "Presupuesto Mecánico venta y meta + GG",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Presupuesto Mecánico venta y meta + GG»?"
+         ]
+        },
+        {
+         "numero": "1.3.8",
+         "titulo": "Presupuesto de un puente venta y meta",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Presupuesto de un puente venta y meta»?"
+         ]
+        },
+        {
+         "numero": "1.4",
+         "titulo": "Proyecto utilizado para desarrollar el presupuesto",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Proyecto utilizado para desarrollar el presupuesto»?"
+         ]
+        },
+        {
+         "numero": "1.4.1",
+         "titulo": "Metrados del proyecto para elaborar el presupuesto",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Metrados del proyecto para elaborar el presupuesto»?"
+         ]
+        },
+        {
+         "numero": "1.5",
+         "titulo": "Secuencia de uso del módulo de presupuestos",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Secuencia de uso del módulo de presupuestos»?"
+         ]
+        },
+        {
+         "numero": "1.6",
+         "titulo": "Partes de la hoja del presupuesto",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Partes de la hoja del presupuesto»?"
+         ]
+        },
+        {
+         "numero": "2",
+         "titulo": "Generalidades",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Generalidades»?"
+         ]
+        },
+        {
+         "numero": "2.1",
+         "titulo": "La carpeta de trabajo",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «La carpeta de trabajo»?"
+         ]
+        },
+        {
+         "numero": "2.2",
+         "titulo": "Configuración",
+         "nivel": 2,
+         "preguntas": [
+          "¿Cómo hacer «Configuración» paso a paso?"
+         ]
+        },
+        {
+         "numero": "3",
+         "titulo": "Uso del módulo de presupuestos",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Uso del módulo de presupuestos»?"
+         ]
+        },
+        {
+         "numero": "3.1",
+         "titulo": "Formas de búsqueda en los catálogos",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Formas de búsqueda en los catálogos»?"
+         ]
+        },
+        {
+         "numero": "3.1.1",
+         "titulo": "Búsqueda global",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Búsqueda global»?"
+         ]
+        },
+        {
+         "numero": "3.1.2",
+         "titulo": "Búsqueda local",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Búsqueda local»?"
+         ]
+        },
+        {
+         "numero": "3.2",
+         "titulo": "Registro de información en el catálogo de presupuestos",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Registro de información en el catálogo de presupuestos»?"
+         ]
+        },
+        {
+         "numero": "3.3",
+         "titulo": "Registro del presupuesto",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Registro del presupuesto»?"
+         ]
+        }
+       ],
+       "conceptos": [
+        "¿Qué es exactamente S10 Presupuestos?",
+        "¿Para qué se asignan los presupuestos a proyectos de Gerencia de Proyectos?",
+        "¿Por qué dicen que la Hoja del presupuesto se parece a un Excel?"
+       ],
+       "procedimientos": [
+        "¿Cómo se generan los ítems una vez que inserto las partidas?",
+        "¿En qué momento del flujo se procesa el presupuesto?",
+        "¿Qué pasos implica el diseño del pie de presupuesto?"
        ]
       },
       {
        "id": "manuales-oficiales/video-instalacion-presupuesto",
        "titulo": "Video Instalación Presupuesto",
-       "preguntas": [
-        "¿Qué tengo que hacer para que aparezcan más opciones en los menús?",
-        "¿Qué incluye la etapa de requisitos previos antes de instalar?"
+       "resumen": "Este contenido no está disponible para tu nivel de membresía.",
+       "fuente": "https://documentacion.s10peru.com/video-instala-presupuesto/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué significa que una partida se vuelva «propia» al llegar al presupuesto?",
+        "¿Cuál es la ventaja de que las partidas sean propias y no compartidas?",
+        "¿Qué quiere decir «generar fórmulas polinómicas por subpresupuesto» como objetivo?"
+       ],
+       "procedimientos": [
+        "¿Cómo hago el análisis de precios unitarios de una partida?",
+        "¿Cómo se registra el rendimiento cuando la partida es de transporte?",
+        "¿Qué hay que hacer para ingresar los metrados al presupuesto?"
        ]
       },
       {
        "id": "manuales-oficiales/videos-tutoriales-de-presupuestos",
        "titulo": "Videos Tutoriales de Presupuestos",
-       "preguntas": [
-        "¿Qué incluye la etapa de requisitos previos antes de instalar?",
-        "¿Por dónde se puede llegar a crear una partida en el catálogo?"
+       "resumen": "Videos sobre el módulo de Presupuestos S10 ERP",
+       "fuente": "https://documentacion.s10peru.com/video-presupuestos/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es un faseo en el contexto de planificar con MS Project?",
+        "¿Qué es el pie de presupuesto y en qué momento se diseña?",
+        "¿Qué significa «procesar» un presupuesto dentro del flujo de S10?"
+       ],
+       "procedimientos": [
+        "¿Cómo se accede al entorno de S10 Presupuestos y dónde se crean los usuarios?",
+        "¿Cuáles son los cuatro casos para armar la hoja y dónde los reviso?",
+        "¿Cómo restauro una base de datos que me pasó otro colega?"
        ]
       }
      ]
@@ -434,38 +3179,84 @@
      "id": "oficial-soporte",
      "nombre": "Soporte",
      "titulo": "Manuales oficiales: Soporte",
+     "tipo": "manuales",
      "resumen": "",
      "temas": [
       {
        "id": "manuales-oficiales/actualizacion-de-s10-instalacion-de-revisiones",
        "titulo": "Actualización de S10 (Instalación de revisiones)",
-       "preguntas": [
-        "¿En qué parte de la pantalla está la opción Salir del portal?",
-        "¿Qué pasa si escribo mal las credenciales 3 veces seguidas en el recuadro de acceso?"
+       "resumen": "A fin de que el sistema funcione, se debe procurar mantener el sistema actualizado con las revisiones completas. Si el software esta siendo usado por múltiples usuarios se recomienda realizarlo en un horario que no estén trabajando como bien temprano, antes del inicio de…",
+       "fuente": "https://documentacion.s10peru.com/actualizacion-s10-instalacion-revisiones/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es el Sistema de Ticket de S10?",
+        "¿Para qué el correo ventas@s10peru.com?",
+        "¿Qué datos pide la asistencia remota?"
+       ],
+       "procedimientos": [
+        "¿Qué significa «Descargar ahora» y luego «Ejecutar» en la instalación de AnyDesk?",
+        "¿Qué le pido a mi almacenero para que entre a la clase virtual sin problemas?",
+        "¿A dónde me derivan si el problema de cierre es de acceso al sistema y no de contabilidad?"
        ]
       },
       {
        "id": "manuales-oficiales/el-proceso-de-instalacion-de-microsoft-sql-server",
        "titulo": "El proceso de instalación de Microsoft SQL Server",
-       "preguntas": [
-        "¿Qué pasa si escribo mal las credenciales 3 veces seguidas en el recuadro de acceso?",
-        "¿Qué es lo que soporte hace con el ID y la clave que le envío?"
+       "resumen": "Este documento va dirigido a profesionales de tecnología interesados en entender el proceso de instalación de Microsoft SQL Server, sus componentes, las recomendaciones de seguridad y el significado de todas las opciones disponibles durante dicho proceso. Si bien la instalación…",
+       "fuente": "https://documentacion.s10peru.com/proceso-instalacion-microsoft-sql-server/",
+       "secciones": [
+        {
+         "numero": "1",
+         "titulo": "Decidir la edición de SQL Server que se desea instalar",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Decidir la edición de SQL Server que se desea instalar»?"
+         ]
+        }
+       ],
+       "conceptos": [
+        "¿Qué canal es para reportar una incidencia?",
+        "¿Se manda la clave del ERP a soporte?",
+        "¿Cómo llega el usuario del sistema de tickets?"
+       ],
+       "procedimientos": [
+        "¿En qué parte de la pantalla está la opción Salir del portal?",
+        "¿Cómo hago para bajar los archivos de la sección Descargas? ¿Necesito estar logueado?",
+        "¿Con qué categoría debo abrir el ticket cuando el problema es de instalación?"
        ]
       },
       {
        "id": "manuales-oficiales/instalacion-s10-erp-video",
        "titulo": "Manual de Instalación S10 ERP [VIDEO]",
-       "preguntas": [
-        "¿Qué es lo que soporte hace con el ID y la clave que le envío?",
-        "¿Cuál es la fuente de la información sobre instalar AnyDesk?"
+       "resumen": "Aprende a cómo instalar el S10 ERP en tu dispositivo windows. 1.- Consideraciones previas para la instalación. Para poder realizar la instalación de S10 en el equipo y poder configurar correctamente el equipo, necesitará poseer un usuario con permisos para instalar o desinstalar…",
+       "fuente": "https://documentacion.s10peru.com/manual-instalacion-s10-erp/",
+       "secciones": [],
+       "conceptos": [
+        "¿Dónde vivo el seguimiento de un ticket?",
+        "¿A qué se refiere «suscrito a soporte y mantenimiento»?",
+        "¿Quién usa el ID y la clave del Supremo?"
+       ],
+       "procedimientos": [
+        "¿Es obligatorio pulsar Ingresar antes de escribir el usuario, o se escribe primero?",
+        "¿Qué pasos debo seguir para actualizar S10 cuando me avisan que hay una revisión nueva?",
+        "¿Hay que registrarse en el portal o S10 ya me manda el acceso? ¿Cómo procedo?"
        ]
       },
       {
        "id": "manuales-oficiales/prerrequisitos-instalacion",
        "titulo": "Prerrequisitos Instalacion",
-       "preguntas": [
-        "¿Cuál es la fuente de la información sobre instalar AnyDesk?",
-        "¿Qué diferencia hay entre el aviso por correo y el ticket?"
+       "resumen": "Mira el Videotutorial Aprende a cómo instalar el S10 ERP en tu dispositivo windows. 1.- Consideraciones previas para la instalación. 1.1.- Permisos de administrador Para … A fin de que el sistema funcione, se debe procurar mantener el sistema actualizado con las revisiones…",
+       "fuente": "https://documentacion.s10peru.com/category/prerrequisitos-instalacion/",
+       "secciones": [],
+       "conceptos": [
+        "¿Dónde nace un ticket en s10peru.com?",
+        "¿Para qué pido una instalación por ticket?",
+        "¿Qué rol cumple el correo en soporte?"
+       ],
+       "procedimientos": [
+        "¿Los manuales se ven sin iniciar sesión? Si no, ¿qué mensaje aparece y qué tengo que hacer?",
+        "¿Los portales web tienen su propia sección de manuales? ¿Cómo llego a ellos desde el menú?",
+        "¿Cómo hago para revisar si hay avisos de nuevos lanzamientos apenas ingreso?"
        ]
       }
      ]
@@ -474,308 +3265,876 @@
      "id": "oficial-varios",
      "nombre": "Varios",
      "titulo": "Manuales oficiales: Varios",
+     "tipo": "manuales",
      "resumen": "",
      "temas": [
       {
-       "id": "manuales-oficiales/_node",
-       "titulo": "Manuales oficiales S10 (portal de miembros)",
-       "preguntas": [
-        "¿Qué explica el manual de Manuales oficiales S10 (portal de miembros)?"
-       ]
-      },
-      {
        "id": "manuales-oficiales/admin",
        "titulo": "admin",
-       "preguntas": [
-        "¿Qué explica el manual de admin?"
-       ]
+       "resumen": "Al tener una factura afecta a detracción, se debe tener en consideración que la detracción se debe mostrar independiente en el registro. Ver imagen Validar … Para realizar la ampliación del plazo de envío de documentos electrónicos, es necesario realizar los siguientes pasos:…",
+       "fuente": "https://documentacion.s10peru.com/author/admin/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es «admin» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/aprobaciones-moviles",
        "titulo": "Manual de Aprobaciones Móviles",
-       "preguntas": [
-        "¿Qué explica el manual de Manual de Aprobaciones Móviles?"
-       ]
+       "resumen": "Visita el nuevo Manual de Aprobaciones S10 haciendo",
+       "fuente": "https://documentacion.s10peru.com/manual-aprobaciones/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es «Manual de Aprobaciones Móviles» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/aprobaciones",
        "titulo": "Manual de Aprobaciones",
-       "preguntas": [
-        "¿Qué explica el manual de Manual de Aprobaciones?"
-       ]
+       "resumen": "1.1 Qué es la Aplicación de Aprobaciones S10 Es una aplicación móvil conectada a S10 ERP, que permite a las personas designadas como aprobadores, tomar decisiones de aprobar, observar o rechazar un documento. ● Agilizar la toma de decisiones para su ejecución oportuna. ●…",
+       "fuente": "https://documentacion.s10peru.com/manual-de-aprobaciones/",
+       "secciones": [
+        {
+         "numero": "1",
+         "titulo": "Generalidades",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Generalidades»?"
+         ]
+        },
+        {
+         "numero": "1.1",
+         "titulo": "Qué es la Aplicación de Aprobaciones S10",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Qué es la Aplicación de Aprobaciones S10»?"
+         ]
+        },
+        {
+         "numero": "1.2",
+         "titulo": "Objetivos de la Aplicación:",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Objetivos de la Aplicación:»?"
+         ]
+        },
+        {
+         "numero": "1.3",
+         "titulo": "Hagamos un tour:",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Hagamos un tour:»?"
+         ]
+        },
+        {
+         "numero": "1.3.1",
+         "titulo": "Descarga la Aplicación :",
+         "nivel": 3,
+         "preguntas": [
+          "¿Cómo hacer «Descarga la Aplicación :» paso a paso?"
+         ]
+        },
+        {
+         "numero": "1.3.2",
+         "titulo": "Acceder a la Aplicación:",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Acceder a la Aplicación:»?"
+         ]
+        },
+        {
+         "numero": "1.3.3",
+         "titulo": "Vista General:",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Vista General:»?"
+         ]
+        },
+        {
+         "numero": "2",
+         "titulo": "Manual para el usuario Aprobador",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Manual para el usuario Aprobador»?"
+         ]
+        },
+        {
+         "numero": "2.1",
+         "titulo": "Los tipos de solicitudes:",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Los tipos de solicitudes:»?"
+         ]
+        },
+        {
+         "numero": "2.2",
+         "titulo": "Busca y elige solicitud que deseas revisar:",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Busca y elige solicitud que deseas revisar:»?"
+         ]
+        },
+        {
+         "numero": "2.3",
+         "titulo": "Aprueba, Observa o Rechaza una solicitud:",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Aprueba, Observa o Rechaza una solicitud:»?"
+         ]
+        },
+        {
+         "numero": "2.4",
+         "titulo": "Deja una observación:",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Deja una observación:»?"
+         ]
+        },
+        {
+         "numero": "2.5",
+         "titulo": "Revisa cada tipo de solicitud:",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Revisa cada tipo de solicitud:»?"
+         ]
+        },
+        {
+         "numero": "2.5.1",
+         "titulo": "Pedidos:",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Pedidos:»?"
+         ]
+        },
+        {
+         "numero": "2.5.2",
+         "titulo": "Orden de Pago:",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Orden de Pago:»?"
+         ]
+        },
+        {
+         "numero": "2.5.3",
+         "titulo": "Orden de Compra:",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Orden de Compra:»?"
+         ]
+        },
+        {
+         "numero": "2.5.4",
+         "titulo": "Orden de Servicio:",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Orden de Servicio:»?"
+         ]
+        },
+        {
+         "numero": "2.5.5",
+         "titulo": "Contratos o Subcontratos:",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Contratos o Subcontratos:»?"
+         ]
+        },
+        {
+         "numero": "2.5.6",
+         "titulo": "Subcontrato de valorización:",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Subcontrato de valorización:»?"
+         ]
+        },
+        {
+         "numero": "2.5.7",
+         "titulo": "Subcontrato de autorización de cobranza:",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Subcontrato de autorización de cobranza:»?"
+         ]
+        },
+        {
+         "numero": "2.5.8",
+         "titulo": "Subcontrato de autorizaciones de pago:",
+         "nivel": 3,
+         "preguntas": [
+          "¿Qué es «Subcontrato de autorizaciones de pago:»?"
+         ]
+        }
+       ],
+       "conceptos": [
+        "¿Qué es «Manual de Aprobaciones» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/asignar-codigo-de-producto-sunat",
        "titulo": "Asignar código de producto Sunat",
-       "preguntas": [
-        "¿Qué explica el manual de Asignar código de producto Sunat?"
-       ]
+       "resumen": "Debido a la inclusión de nuevas normativas obligatorias por parte de SUNAT para el año 2020, S10 está buscando alinearse al incluir un nuevo catálogo para “Código de Productos SUNAT según el estándar UNSPSC” y un escenario para catalogar los recursos existentes en el sistema…",
+       "fuente": "https://documentacion.s10peru.com/asignar-codigo-de-producto-sunat/",
+       "secciones": [
+        {
+         "numero": "1",
+         "titulo": "Configuración:",
+         "nivel": 1,
+         "preguntas": [
+          "¿Cómo hacer «Configuración:» paso a paso?"
+         ]
+        },
+        {
+         "numero": "13.1",
+         "titulo": "Registro de Inventario Permanente Valorizado",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Registro de Inventario Permanente Valorizado»?"
+         ]
+        },
+        {
+         "numero": "2",
+         "titulo": "Asignación de Códigos de Producto SUNAT",
+         "nivel": 1,
+         "preguntas": [
+          "¿Cómo hacer «Asignación de Códigos de Producto SUNAT» paso a paso?"
+         ]
+        },
+        {
+         "numero": "3",
+         "titulo": "Uso de Códigos de Producto SUNAT en Libros Electrónicos",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Uso de Códigos de Producto SUNAT en Libros Electrónicos»?"
+         ]
+        },
+        {
+         "numero": "13.01",
+         "titulo": "Registro del Inventario Permanente Valorizado",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Registro del Inventario Permanente Valorizado»?"
+         ]
+        }
+       ],
+       "conceptos": [
+        "¿Qué es «Asignar código de producto Sunat» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/base-de-datos",
        "titulo": "Base de datos",
-       "preguntas": [
-        "¿Qué explica el manual de Base de datos?"
-       ]
+       "resumen": "Caso Anticipo 1.- Anticipo facturado (en factura 1 y amortización en factura 2): Este caso aplica cuando el proveedor nos factura un % del valor … A fin de que el sistema funcione, se debe procurar mantener el sistema actualizado con las revisiones completas. Si el software esta…",
+       "fuente": "https://documentacion.s10peru.com/tag/base-de-datos/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es «Base de datos» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/cambio-de-titular-con-minuta",
        "titulo": "Cambio de Titular con Minuta",
-       "preguntas": [
-        "¿Qué explica el manual de Cambio de Titular con Minuta?"
-       ]
+       "resumen": "Caso – Abonos Boletados con envió de Minuta Para poder llevar a cabo este proceso debemos cumplir con el Boletaje de todos los abonos enviados desde el Sperant a S10 Previamente debe estar registrado la Orden de Venta y por ende debe ser Sincronizada en el S10 mediante la…",
+       "fuente": "https://documentacion.s10peru.com/cambio-de-titular-con-minuta/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es «Cambio de Titular con Minuta» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/como-realizar-una-copia-de-seguridad-de-base-de-datos",
        "titulo": "Cómo realizar una copia de seguridad de base de datos",
-       "preguntas": [
-        "¿Qué explica el manual de Cómo realizar una copia de seguridad de base de datos?"
-       ]
+       "resumen": "Abre tu Módulo de S10, ve al escenario de «Mantenimiento de Base de datos», dale clic en el botón Después escogemos la base de datos que deseamos que sea copiada, y le damos clic en el botón ‘ Le asignamos un nombre a la copia de la base de datos y le damos clic en ‘ Luego de…",
+       "fuente": "https://documentacion.s10peru.com/realizar-copia-seguridad-base-datos/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es «Cómo realizar una copia de seguridad de base de datos» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/configuracion-de-integracion-sperant-con-s10-erp-proceso-gen",
        "titulo": "Configuración de Integración Sperant con S10 ERP – Proceso General",
-       "preguntas": [
-        "¿Qué explica el manual de Configuración de Integración Sperant con S10 ERP – Proceso G?"
-       ]
+       "resumen": "En el siguiente Gráfico se detalla el proceso de relación Sperant y S10 La integración de ambas aplicaciones le permitirá como empresa gestionar sus proyectos inmobiliarios de manera integral y eficiente. La configuración se realiza en el módulo de Facturación, doble clic en el…",
+       "fuente": "https://documentacion.s10peru.com/configuracion-integracion-sperant-s10/",
+       "secciones": [
+        {
+         "numero": "1",
+         "titulo": "Generalidades",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Generalidades»?"
+         ]
+        },
+        {
+         "numero": "1.1",
+         "titulo": "Acceso al módulo",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Acceso al módulo»?"
+         ]
+        },
+        {
+         "numero": "2",
+         "titulo": "Configuración",
+         "nivel": 1,
+         "preguntas": [
+          "¿Cómo hacer «Configuración» paso a paso?"
+         ]
+        },
+        {
+         "numero": "3",
+         "titulo": "Sincronización de Proyectos",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Sincronización de Proyectos»?"
+         ]
+        },
+        {
+         "numero": "4",
+         "titulo": "Sincronización de Unidades",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Sincronización de Unidades»?"
+         ]
+        },
+        {
+         "numero": "5",
+         "titulo": "Órdenes de Venta",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Órdenes de Venta»?"
+         ]
+        },
+        {
+         "numero": "6",
+         "titulo": "Registro de Cuentas Bancarias:",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Registro de Cuentas Bancarias:»?"
+         ]
+        },
+        {
+         "numero": "7",
+         "titulo": "Registro de Libro Caja",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Registro de Libro Caja»?"
+         ]
+        },
+        {
+         "numero": "8",
+         "titulo": "Conciliación Bancaria",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Conciliación Bancaria»?"
+         ]
+        },
+        {
+         "numero": "9",
+         "titulo": "Boletaje",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Boletaje»?"
+         ]
+        }
+       ],
+       "conceptos": [
+        "¿Qué es «Configuración de Integración Sperant con S10 ERP – Proceso General» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/configuracion-del-catalogo-de-no-deducibles",
        "titulo": "Configuración del catálogo de NO deducibles",
-       "preguntas": [
-        "¿Qué explica el manual de Configuración del catálogo de NO deducibles?"
-       ]
+       "resumen": "1.- Revisión de catálogo de No Deducibles: En este Catalogo se adicionan aquellos recursos que se consideraran como gastos no deducibles para que posteriormente cuando se registren facturas y se quiera repartir el gasto en deducible y no deducible lo muestre para ser…",
+       "fuente": "https://documentacion.s10peru.com/configuracion-del-catalogo-de-no-deduciblesfact/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es «Configuración del catálogo de NO deducibles» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/configuracion-para-cierre-y-apertura",
        "titulo": "Configuración para Cierre y Apertura",
-       "preguntas": [
-        "¿Qué explica el manual de Configuración para Cierre y Apertura?"
-       ]
+       "resumen": "1.- Definir como cerrar y aperturará el detalle de los saldos por cada cuenta: Ello se realiza desde la cuenta en el plan contable puede realizarlo 1 x 1 o importarlo desde excel (seguir los comentarios de la imagen). 2.- Definir la dinámica de cierre de manera ordenada: Se…",
+       "fuente": "https://documentacion.s10peru.com/configuracion-para-cierre-apertura/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es «Configuración para Cierre y Apertura» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/configurar-escenario-reparto-de-utilidades",
        "titulo": "Configurar escenario: Reparto de Utilidades",
-       "preguntas": [
-        "¿Qué explica el manual de Configurar escenario: Reparto de Utilidades?"
-       ]
+       "resumen": "1. Adicionar los conceptos de días trabajados o montos ganados para que estos sean considerados en el cálculo. Realizar la configuración de la siguiente manera: De igual modo para los conceptos de montos ganados: 2. El periodo, la planilla de pago (esta configuración es propia…",
+       "fuente": "https://documentacion.s10peru.com/configurar-escenario-reparto-utilidades/",
+       "secciones": [
+        {
+         "numero": "3",
+         "titulo": "Procesar:",
+         "nivel": 1,
+         "preguntas": [
+          "¿Cómo procesar: en S10?"
+         ]
+        },
+        {
+         "numero": "5",
+         "titulo": "Cómo eliminar una planilla de pago por utilidades.",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Cómo eliminar una planilla de pago por utilidades.»?"
+         ]
+        }
+       ],
+       "conceptos": [
+        "¿Qué es «Configurar escenario: Reparto de Utilidades» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/confirming",
        "titulo": "Confirming",
-       "preguntas": [
-        "¿Qué explica el manual de Confirming?"
-       ]
+       "resumen": "Considerar que en las últimas actualizaciones de S10 de fecha Marzo 2020 estos formatos ya fueron incluidos para todos los bancos, por lo que si no cuenta con este, debe actualizar su S10 o contactar con el área de Soporte. Otro requisito necesario, consiste en tener un tipo de…",
+       "fuente": "https://documentacion.s10peru.com/confirming/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es «Confirming» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/crm-sperant",
        "titulo": "CRM Sperant",
-       "preguntas": [
-        "¿Qué explica el manual de CRM Sperant?"
-       ]
+       "resumen": "Los IPIS son aquellos abonos que han sido depositados en la cuenta recaudadora pero que aun no han sido identificados. S10: Configuración Mediante el modulo … Flujo de Integración En el siguiente Gráfico se detalla el proceso de relación Sperant y S10 1. Generalidades La…",
+       "fuente": "https://documentacion.s10peru.com/category/crm-sperant/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es «CRM Sperant» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/del-colaborador",
        "titulo": "Manual del Colaborador",
-       "preguntas": [
-        "¿Qué explica el manual de Manual del Colaborador?"
-       ]
+       "resumen": "Visita el nuevo Manual de Colaborador S10 haciendo",
+       "fuente": "https://documentacion.s10peru.com/manual-del-colaborador/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es «Manual del Colaborador» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/importante",
        "titulo": "Importante",
-       "preguntas": [
-        "¿Qué explica el manual de Importante?"
-       ]
+       "resumen": "El Portal de Proveedores es un portal ideado para agilizar y dinamizar el intercambio de información entre proveedores y clientes usuarios de S10 ERP. Como proveedor, desde este portal podrá dar seguimiento a los pagos, cotizaciones y órdenes de compra que sus clientes le hayan…",
+       "fuente": "https://documentacion.s10peru.com/nuevo-manual-portal-proveedor/",
+       "secciones": [
+        {
+         "numero": "2",
+         "titulo": "Accesos al Portal",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Accesos al Portal»?"
+         ]
+        },
+        {
+         "numero": "3",
+         "titulo": "Módulos del Portal de Proveedores",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Módulos del Portal de Proveedores»?"
+         ]
+        },
+        {
+         "numero": "3.1",
+         "titulo": "Selección de clientes (Empresas)",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Selección de clientes (Empresas)»?"
+         ]
+        },
+        {
+         "numero": "3.2",
+         "titulo": "Filtros y busqueda de información",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Filtros y busqueda de información»?"
+         ]
+        },
+        {
+         "numero": "3.3",
+         "titulo": "Registro de Facturas",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Registro de Facturas»?"
+         ]
+        },
+        {
+         "numero": "3.4",
+         "titulo": "Cotizaciones",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Cotizaciones»?"
+         ]
+        },
+        {
+         "numero": "3.5",
+         "titulo": "Ordenes de Compra",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Ordenes de Compra»?"
+         ]
+        },
+        {
+         "numero": "3.6",
+         "titulo": "Control de Pagos",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Control de Pagos»?"
+         ]
+        },
+        {
+         "numero": "3.7",
+         "titulo": "Tickets Pendientes",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Tickets Pendientes»?"
+         ]
+        },
+        {
+         "numero": "3.8",
+         "titulo": "Usuarios",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Usuarios»?"
+         ]
+        },
+        {
+         "numero": "3.9",
+         "titulo": "Cuentas de Banco",
+         "nivel": 2,
+         "preguntas": [
+          "¿Qué es «Cuentas de Banco»?"
+         ]
+        }
+       ],
+       "conceptos": [
+        "¿Qué es «Importante» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/ingresos-por-identificar-procesos-de-ipi",
        "titulo": "Ingresos por Identificar – Procesos de IPI",
-       "preguntas": [
-        "¿Qué explica el manual de Ingresos por Identificar – Procesos de IPI?"
-       ]
+       "resumen": "Los IPIS son aquellos abonos que han sido depositados en la cuenta recaudadora pero que aun no han sido identificados. Mediante el modulo de facturación se debe ubicar la siguiente opción en forma de tuerca Debe ubicar la pestaña Sperant (3) es aquí donde se realizará la…",
+       "fuente": "https://documentacion.s10peru.com/ingresos-identificar-proceso-ipi/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es «Ingresos por Identificar – Procesos de IPI» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/integracion-con-crm-sperant",
        "titulo": "Manual de Integración con CRM Sperant",
-       "preguntas": [
-        "¿Qué explica el manual de Manual de Integración con CRM Sperant?"
-       ]
+       "resumen": "Configuración de Integración Sperant con S10 ERP – Proceso General Flujo de Integración En el siguiente Gráfico se detalla el proceso de relación Sperant y S10 1. Generalidades La integración de ambas aplicaciones le permitirá Caso – Abonos Boletados con envió de Minuta Para…",
+       "fuente": "https://documentacion.s10peru.com/manual-integracion-crm-sperant/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es «Manual de Integración con CRM Sperant» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/lean",
        "titulo": "Manual de Lean",
-       "preguntas": [
-        "¿Qué explica el manual de Manual de Lean?"
-       ]
+       "resumen": "Manual oficial de S10 publicado en el portal de miembros: Manual de Lean.",
+       "fuente": "https://documentacion.s10peru.com/manual-de-lean/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es «Manual de Lean» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/mes-abril-2020",
        "titulo": "Mes: abril 2020",
-       "preguntas": [
-        "¿Qué explica el manual de Mes: abril 2020?"
-       ]
+       "resumen": "Al tener una factura afecta a detracción, se debe tener en consideración que la detracción se debe mostrar independiente en el registro. Ver imagen Validar … Para realizar la ampliación del plazo de envío de documentos electrónicos, es necesario realizar los siguientes pasos:…",
+       "fuente": "https://documentacion.s10peru.com/2020/04/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es «Mes: abril 2020» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/mes-diciembre-2019",
        "titulo": "Mes: diciembre 2019",
-       "preguntas": [
-        "¿Qué explica el manual de Mes: diciembre 2019?"
-       ]
+       "resumen": "Debido a la inclusión de nuevas normativas obligatorias por parte de SUNAT para el año 2020, S10 está buscando alinearse al incluir un nuevo catálogo … 1. Adicionar los conceptos de días trabajados o montos ganados para que estos sean considerados en el cálculo. Realizar la…",
+       "fuente": "https://documentacion.s10peru.com/2019/12/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es «Mes: diciembre 2019» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/mes-diciembre-2021",
        "titulo": "Mes: diciembre 2021",
-       "preguntas": [
-        "¿Qué explica el manual de Mes: diciembre 2021?"
-       ]
+       "resumen": "Mira el Videotutorial Aprende a cómo instalar el S10 ERP en tu dispositivo windows. 1.- Consideraciones previas para la instalación. 1.1.- Permisos de administrador Para …",
+       "fuente": "https://documentacion.s10peru.com/2021/12/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es «Mes: diciembre 2021» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/mes-enero-2020",
        "titulo": "Mes: enero 2020",
-       "preguntas": [
-        "¿Qué explica el manual de Mes: enero 2020?"
-       ]
+       "resumen": "Caso Anticipo 1.- Anticipo facturado (en factura 1 y amortización en factura 2): Este caso aplica cuando el proveedor nos factura un % del valor … 1.- Definir como cerrar y aperturará el detalle de los saldos por cada cuenta: Ello se realiza desde la cuenta en el plan contable…",
+       "fuente": "https://documentacion.s10peru.com/2020/01/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es «Mes: enero 2020» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/mes-marzo-2019",
        "titulo": "Mes: marzo 2019",
-       "preguntas": [
-        "¿Qué explica el manual de Mes: marzo 2019?"
-       ]
+       "resumen": "Esta vez mostraremos como publicar un proyecto desde el LOOKAHEAD, para calidad tipo TAREA PROTOCOLO …",
+       "fuente": "https://documentacion.s10peru.com/2019/03/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es «Mes: marzo 2019» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/mes-marzo-2020",
        "titulo": "Mes: marzo 2020",
-       "preguntas": [
-        "¿Qué explica el manual de Mes: marzo 2020?"
-       ]
+       "resumen": "Este documento va dirigido a profesionales de tecnología interesados en entender el proceso de instalación de Microsoft SQL Server, sus componentes, las recomendaciones de seguridad … Requisitos: Para poder trabajar con Confirming se debe tener en los catálogos de exportación un…",
+       "fuente": "https://documentacion.s10peru.com/2020/03/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es «Mes: marzo 2020» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/mes-mayo-2019",
        "titulo": "Mes: mayo 2019",
-       "preguntas": [
-        "¿Qué explica el manual de Mes: mayo 2019?"
-       ]
+       "resumen": "Cuando el servicio de SQL Server de la base de datos o del equipo donde se encuentran las licencias se detiene debido a algún conflicto … Abre tu Módulo de S10, ve al escenario de ‘Utilitarios’ luego da click en ‘mantenimiento de base de datos’ Se abre una ventana…",
+       "fuente": "https://documentacion.s10peru.com/2019/05/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es «Mes: mayo 2019» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/mes-octubre-2019",
        "titulo": "Mes: octubre 2019",
-       "preguntas": [
-        "¿Qué explica el manual de Mes: octubre 2019?"
-       ]
+       "resumen": "A fin de que el sistema funcione, se debe procurar mantener el sistema actualizado con las revisiones completas. Si el software esta siendo usado por …",
+       "fuente": "https://documentacion.s10peru.com/2019/10/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es «Mes: octubre 2019» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/muros",
        "titulo": "Manual de Muros",
-       "preguntas": [
-        "¿Qué explica el manual de Manual de Muros?"
-       ]
+       "resumen": "Manual oficial de S10 publicado en el portal de miembros: Manual de Muros.",
+       "fuente": "https://documentacion.s10peru.com/manual-muros/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es «Manual de Muros» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/preguntas-frecuentes",
        "titulo": "Preguntas frecuentes",
-       "preguntas": [
-        "¿Qué explica el manual de Preguntas frecuentes?"
-       ]
+       "resumen": "Haz clic en el botón editar para cambiar este texto. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. 1111 222 un el botón editar para cambiar este texto. Lorem ipsum dolor sit amet, consectetur…",
+       "fuente": "https://documentacion.s10peru.com/preguntas-frecuentes/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es «Preguntas frecuentes» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/prerrequsitos-basedatos",
        "titulo": "Prerrequsitos basedatos",
-       "preguntas": [
-        "¿Qué explica el manual de Prerrequsitos basedatos?"
-       ]
+       "resumen": "Este documento va dirigido a profesionales de tecnología interesados en entender el proceso de instalación de Microsoft SQL Server, sus componentes, las recomendaciones de seguridad … Abre tu Módulo de S10, ve al escenario de ‘Utilitarios’ luego da click en ‘mantenimiento de…",
+       "fuente": "https://documentacion.s10peru.com/category/prerrequsitos-basedatos/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es «Prerrequsitos basedatos» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/problemas-acceso",
        "titulo": "Problemas acceso",
-       "preguntas": [
-        "¿Qué explica el manual de Problemas acceso?"
-       ]
+       "resumen": "Cuando el servicio de SQL Server de la base de datos o del equipo donde se encuentran las licencias se detiene debido a algún conflicto …",
+       "fuente": "https://documentacion.s10peru.com/category/problemas-acceso/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es «Problemas acceso» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/problemas-de-acceso-por-el-servicio-de-sql-server",
        "titulo": "Problemas de acceso por el Servicio de SQL Server",
-       "preguntas": [
-        "¿Qué explica el manual de Problemas de acceso por el Servicio de SQL Server?"
-       ]
+       "resumen": "Cuando el servicio de SQL Server de la base de datos o del equipo donde se encuentran las licencias se detiene debido a algún conflicto con el sistema o no inicia automáticamente luego de encender o reiniciar, al intentar ingresar al S10, el aplicativo mostrará los siguientes…",
+       "fuente": "https://documentacion.s10peru.com/problemas-acceso-servicio-sql-server/",
+       "secciones": [
+        {
+         "numero": "3",
+         "titulo": "Clic derecho sobre el servicio y presionar Iniciar.",
+         "nivel": 1,
+         "preguntas": [
+          "¿Qué es «Clic derecho sobre el servicio y presionar Iniciar.»?"
+         ]
+        }
+       ],
+       "conceptos": [
+        "¿Qué es «Problemas de acceso por el Servicio de SQL Server» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/registro-y-boletaje-sperant-s10",
        "titulo": "Registro y Boletaje Sperant – S10",
-       "preguntas": [
-        "¿Qué explica el manual de Registro y Boletaje Sperant – S10?"
-       ]
+       "resumen": "Caso – Abonos Boletados con envió de Minuta Para poder llevar a cabo este proceso debemos cumplir con el Boletaje de todos los abonos enviados desde el Sperant a S10. Previamente debe estar registrado la Orden de Venta y por ende debe ser Sincronizada en el S10 mediante la…",
+       "fuente": "https://documentacion.s10peru.com/boletaje/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es «Registro y Boletaje Sperant – S10» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/reparto-utilidades",
        "titulo": "reparto utilidades",
-       "preguntas": [
-        "¿Qué explica el manual de reparto utilidades?"
-       ]
+       "resumen": "1. Adicionar los conceptos de días trabajados o montos ganados para que estos sean considerados en el cálculo. Realizar la configuración de la siguiente manera: …",
+       "fuente": "https://documentacion.s10peru.com/tag/reparto-utilidades/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es «reparto utilidades» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/sin-categoria",
        "titulo": "Sin categoría",
-       "preguntas": [
-        "¿Qué explica el manual de Sin categoría?"
-       ]
+       "resumen": "Esta vez mostraremos como publicar un proyecto desde el LOOKAHEAD, para calidad tipo TAREA PROTOCOLO …",
+       "fuente": "https://documentacion.s10peru.com/category/sin-categoria/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es «Sin categoría» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/sperant-1",
        "titulo": "sperant 1",
-       "preguntas": [
-        "¿Qué explica el manual de sperant 1?"
-       ]
+       "resumen": "Flujo de Integración En el siguiente Gráfico se detalla el proceso de relación Sperant y S10 1. Generalidades La integración de ambas aplicaciones le permitirá …",
+       "fuente": "https://documentacion.s10peru.com/tag/sperant-1/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es «sperant 1» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/sperant-2",
        "titulo": "sperant 2",
-       "preguntas": [
-        "¿Qué explica el manual de sperant 2?"
-       ]
+       "resumen": "Caso – Abonos Boletados con envió de Minuta Para poder llevar a cabo este proceso debemos cumplir con el Boletaje de todos los abonos enviados …",
+       "fuente": "https://documentacion.s10peru.com/tag/sperant-2/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es «sperant 2» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/sperant-3",
        "titulo": "sperant 3",
-       "preguntas": [
-        "¿Qué explica el manual de sperant 3?"
-       ]
+       "resumen": "Los IPIS son aquellos abonos que han sido depositados en la cuenta recaudadora pero que aun no han sido identificados. S10: Configuración Mediante el modulo …",
+       "fuente": "https://documentacion.s10peru.com/tag/sperant-3/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es «sperant 3» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/sperant-4",
        "titulo": "sperant 4",
-       "preguntas": [
-        "¿Qué explica el manual de sperant 4?"
-       ]
+       "resumen": "Este proceso se realiza cuando la venta cae y se necesita anular la venta completa. En este caso, si ya tiene boletas generadas a partir …",
+       "fuente": "https://documentacion.s10peru.com/tag/sperant-4/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es «sperant 4» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/sperant-5",
        "titulo": "sperant 5",
-       "preguntas": [
-        "¿Qué explica el manual de sperant 5?"
-       ]
+       "resumen": "Caso – Abonos Boletados con envió de Minuta Para poder llevar a cabo este proceso debemos cumplir con el Boletaje de todos los abonos enviados …",
+       "fuente": "https://documentacion.s10peru.com/tag/sperant-5/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es «sperant 5» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/tablero-web",
        "titulo": "Manual de Tablero Web",
-       "preguntas": [
-        "¿Qué explica el manual de Manual de Tablero Web?"
-       ]
+       "resumen": "Visita el nuevo Manual de Tablero S10 haciendo",
+       "fuente": "https://documentacion.s10peru.com/manual-tablero/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es «Manual de Tablero Web» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/temporal",
        "titulo": "Temporal",
-       "preguntas": [
-        "¿Qué explica el manual de Temporal?"
-       ]
+       "resumen": "1.- Definir como cerrar y aperturará el detalle de los saldos por cada cuenta: Ello se realiza desde la cuenta en el plan contable puede …",
+       "fuente": "https://documentacion.s10peru.com/category/temporal/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es «Temporal» y qué incluye?"
+       ],
+       "procedimientos": []
       },
       {
        "id": "manuales-oficiales/videos-tutoriales-de-lean",
        "titulo": "Videos Tutoriales de Lean",
-       "preguntas": [
-        "¿Qué explica el manual de Videos Tutoriales de Lean?"
-       ]
+       "resumen": "Manual oficial de S10 publicado en el portal de miembros: Videos Tutoriales de Lean.",
+       "fuente": "https://documentacion.s10peru.com/video-lean/",
+       "secciones": [],
+       "conceptos": [
+        "¿Qué es «Videos Tutoriales de Lean» y qué incluye?"
+       ],
+       "procedimientos": []
       }
      ]
     }
@@ -794,73 +4153,117 @@
       {
        "id": "optimiza360",
        "titulo": "General",
-       "preguntas": [
-        "¿Qué ruta sigo si primero quiero ver servicios y después clientes?",
-        "¿Qué hago si el cliente me pregunta por el CRM y yo solo sé del ERP?",
+       "conceptos": [
         "¿Por qué decidir a tiempo es parte de lo que busca Optimiza 360?",
-        "¿Cuál es la fuente de donde sale la información sobre Optimiza 360?",
-        "¿Los servicios de Optimiza 360 son solo de software o también de estrategia?",
-        "¿Cómo compruebo la fecha de rastreo de este contenido y dónde está anotada?"
+        "¿Para qué sirve el CRM Sperant dentro de la oferta de Optimiza 360?",
+        "¿Optimiza 360 solo vende software de terceros o también desarrolla?",
+        "¿Qué incluye el trabajo de Optimiza 360 con dashboards?",
+        "¿Qué busca lograr Optimiza 360 con la asesoría en estrategia digital?",
+        "¿Qué tipo de empresas son el público de Optimiza 360?"
+       ],
+       "procedimientos": [
+        "¿Qué ruta sigo si primero quiero ver servicios y después clientes?",
+        "¿Cómo compruebo la fecha de rastreo de este contenido y dónde está anotada?",
+        "¿Cómo justifico ante compras que esta consultora atiende justo nuestro rubro?",
+        "¿Cómo procedo si quiero que el área comercial y la de obra vean data unificada?",
+        "¿Dónde consulto qué soluciones específicas ofrece Optimiza 360 y no solo el resumen?",
+        "¿Cómo armo un cuadro que separe lo que Optimiza 360 implementa de lo que desarrolla?"
        ]
       },
       {
        "id": "optimiza360/clientes",
        "titulo": "Clientes de Optimiza 360",
-       "preguntas": [
-        "¿Qué sección del sitio abro para ver los logos de los clientes?",
-        "¿Qué hago si el logo no me permite identificar el nombre de la constructora?",
+       "conceptos": [
         "¿Qué es la página de Nuestros Clientes de Optimiza 360?",
-        "¿En qué carpeta va el documento interno con los nombres de los clientes?",
-        "¿Cuál es el paso previo obligatorio antes de listar clientes por nombre?",
         "¿Un logo y un nombre son lo mismo para efectos de esta base de conocimiento?"
+       ],
+       "procedimientos": [
+        "¿Qué sección del sitio abro para ver los logos de los clientes?",
+        "¿Cuál es el paso previo obligatorio antes de listar clientes por nombre?",
+        "¿Qué tipo de archivo debo preparar para completar la información de clientes?",
+        "¿De qué manera se incorpora un documento interno a esta base de conocimiento?",
+        "¿Qué URLs del sitio tendría que volver a revisar si quiero repetir el rastreo?",
+        "¿Cómo compruebo que los nombres de los clientes no están en el texto de la página?"
        ]
       },
       {
        "id": "optimiza360/contacto",
        "titulo": "Contacto de Optimiza 360",
-       "preguntas": [
-        "¿A qué número marco para hablar por celular con Optimiza 360?",
+       "conceptos": [
         "¿Qué canales de contacto publica Optimiza 360 en su página web?",
-        "¿Qué separa un requerimiento de desarrollo a medida de un pedido de soporte?",
-        "¿Cómo abro el LinkedIn del contacto de Optimiza 360, con qué enlace?",
         "¿Qué tipo de necesidades cubre el contacto con Optimiza 360?",
-        "¿Cuál es la diferencia entre escribirle a Optimiza 360 y abrir un ticket en S10?"
+        "¿Qué es el prefijo (+51) en el número de contacto publicado?",
+        "¿Qué se entiende por consulta de implementación en este contexto?",
+        "¿Cuáles son las tres vías directas de comunicación con Optimiza 360?",
+        "¿A qué llaman «canal» cuando se habla del contacto con Optimiza 360?"
+       ],
+       "procedimientos": [
+        "¿A qué número marco para hablar por celular con Optimiza 360?",
+        "¿Cómo abro el LinkedIn del contacto de Optimiza 360, con qué enlace?",
+        "¿Cómo llego al formulario si solo tengo la dirección optimiza360.pe?",
+        "¿Cómo ubico el perfil de LinkedIn del asesor para escribirle por ahí?",
+        "¿Qué dirección de correo pongo en el campo «Para» si quiero asesoría?",
+        "¿Cómo entro a la página de contacto de Optimiza 360 desde el navegador?"
        ]
       },
       {
        "id": "optimiza360/fundador",
        "titulo": "Arturo Dupont · CEO y fundador de Optimiza 360",
-       "preguntas": [
-        "¿Cómo derivo un pedido de integración al responsable correcto?",
+       "conceptos": [
         "¿A qué sectores está enfocada la experiencia de Arturo Dupont?",
-        "¿El correo de Arturo tiene dominio propio de Optimiza 360?",
-        "¿Qué diferencia hay entre implementar el ERP y dar mesa de ayuda?",
+        "¿De dónde proviene la información del perfil de Arturo Dupont?",
+        "¿Cuántos años de experiencia tiene Arturo Dupont y en qué campo?",
+        "¿Quién es el responsable si necesito una implementación del ERP?",
+        "¿Qué quiere decir que la fuente sea \"propio (Optimiza 360)\"?",
+        "¿Qué perfil profesional tiene el encargado de la consultora?"
+       ],
+       "procedimientos": [
+        "¿Cómo derivo un pedido de integración al responsable correcto?",
         "¿Qué ruta de archivo uso para mostrar el retrato del fundador?",
-        "¿De dónde proviene la información del perfil de Arturo Dupont?"
+        "¿Qué dominio va después del arroba en el correo del fundador?",
+        "¿Dónde ubico el archivo de la foto oficial de Arturo Dupont?",
+        "¿Qué usuario de LinkedIn escribo en el buscador para encontrarlo?",
+        "¿Qué nombre de archivo exacto tiene el retrato oficial?"
        ]
       },
       {
        "id": "optimiza360/quienes-somos",
        "titulo": "Quiénes somos: misión, valores y pilares",
-       "preguntas": [
-        "¿Cómo redacto una línea que junte misión y pilares sin repetir conceptos?",
+       "conceptos": [
         "¿Qué significa que la solución sea personalizada y no estándar?",
-        "¿Qué páginas del sitio de Optimiza 360 se usaron como fuente?",
-        "¿Qué diferencia hay entre la misión y los pilares de la empresa?",
-        "¿Por qué Optimiza 360 se enfoca solo en construcción e inmobiliario?",
-        "¿Cómo hago para documentar que el dato fue tomado el 30 de setiembre de 2026?"
+        "¿Qué son los KPI en el marco de la misión que plantea Optimiza 360?",
+        "¿Qué rol tiene el ingeniero vinculado a S10 dentro de la consultora?",
+        "¿Quién es Arturo Dupont y qué rol cumple en la empresa?",
+        "¿Cuál es el propósito central que guía a la consultora?",
+        "¿Cuántos pilares maneja Optimiza 360 y cómo se llaman?"
+       ],
+       "procedimientos": [
+        "¿Cómo redacto una línea que junte misión y pilares sin repetir conceptos?",
+        "¿Cómo hago para documentar que el dato fue tomado el 30 de setiembre de 2026?",
+        "¿Qué secciones del sitio debo adjuntar como respaldo si me cuestionan la fuente?",
+        "¿Cuál es la manera correcta de presentar a Arturo Dupont en una minuta de reunión?",
+        "¿Qué pasos sigo para ubicar el perfil del CEO dentro del material de quiénes somos?",
+        "¿Cómo se anota la fuente al pie de un documento si uso este apartado de la consultora?"
        ]
       },
       {
        "id": "optimiza360/servicios",
        "titulo": "Servicios de Optimiza 360",
-       "preguntas": [
-        "¿Cómo se pide soporte cuando el CRM Sperant falla en cobranzas?",
+       "conceptos": [
         "¿Las compras de obra se pueden monitorear desde algún tablero?",
-        "¿Cuántos servicios distintos figuran en la web de Optimiza 360?",
-        "¿Cobranzas aparece en ambos frentes, en Sperant y en los dashboards?",
-        "¿De dónde sale la información de estos servicios? ¿Es fuente oficial?",
-        "¿Cómo pido que me optimicen el ERP que ya tengo funcionando?"
+        "¿El plan de compras es algo que se controla desde el ERP S10?",
+        "¿Qué son los aplicativos complementarios y para qué se usan?",
+        "¿Qué problema busca resolver la integración de aplicaciones?",
+        "¿Sperant llega hasta la post venta o solo hasta la venta?",
+        "¿Dónde veo la curva S del proyecto dentro de la oferta de Optimiza?"
+       ],
+       "procedimientos": [
+        "¿Cómo se pide soporte cuando el CRM Sperant falla en cobranzas?",
+        "¿Cómo pido que me optimicen el ERP que ya tengo funcionando?",
+        "¿Cómo se maneja el acompañamiento después de implementar el S10?",
+        "¿Con qué etapa cierra el servicio de transformación digital?",
+        "¿Qué servicio pido primero si aún no tengo ERP ni CRM instalados?",
+        "¿Dónde se registra la entrega de inmuebles y en qué sistema queda?"
        ]
       }
      ]
@@ -871,51 +4274,51 @@
  "destacadas": [
   {
    "modulo": "oficial-administrativo",
-   "pregunta": "¿Qué es un fondo rotatorio y qué se hace con él en el sistema?"
+   "pregunta": "¿En qué orden se configura el módulo administrativo antes de empezar a operar?"
   },
   {
    "modulo": "oficial-almacenes",
-   "pregunta": "¿Y si aplico solamente las alertas de mermas sin tocar lo demás?"
+   "pregunta": "¿Me explican paso a paso cómo se registra un ingreso por orden de compra?"
   },
   {
    "modulo": "oficial-compras",
-   "pregunta": "¿Hay información sobre niveles de aprobación en la app?"
+   "pregunta": "¿Cómo armo un grupo de aprobación desde cero?"
   },
   {
    "modulo": "oficial-contabilidad",
-   "pregunta": "¿Qué pasa si registro un contrato pero nadie configuró su cuenta?"
+   "pregunta": "¿Cómo hago para que los asientos contables se generen automáticamente en S10?"
   },
   {
    "modulo": "oficial-facturacion",
-   "pregunta": "¿Por qué mi talonario no está disponible para cierto usuario?"
+   "pregunta": "¿Qué rama debo revisar si necesito configurar impuestos?"
   },
   {
    "modulo": "oficial-gerencia-proyectos",
-   "pregunta": "¿Por qué mi análisis no baja hasta el nivel de recurso individual?"
+   "pregunta": "¿Cuál es el orden correcto para arrancar la planificación en Gerencia de Proyectos?"
   },
   {
    "modulo": "oficial-nominas",
-   "pregunta": "¿Qué sucede si emito las boletas antes de validar los montos?"
+   "pregunta": "¿Qué pasos sigo para crear el proyecto multiproyecto y luego asociarle los proyectos destino?"
   },
   {
    "modulo": "oficial-portales",
-   "pregunta": "¿Por qué el asistente no me puede dar el paso a paso del portal?"
+   "pregunta": "¿Qué tengo que hacer primero si necesito el paso a paso de Aprobaciones Móviles?"
   },
   {
    "modulo": "oficial-presupuestos",
-   "pregunta": "¿Qué tengo que hacer para que aparezcan más opciones en los menús?"
+   "pregunta": "¿Cómo se generan los ítems una vez que inserto las partidas?"
   },
   {
    "modulo": "oficial-soporte",
-   "pregunta": "¿Qué pasa si escribo mal las credenciales 3 veces seguidas en el recuadro de acceso?"
+   "pregunta": "¿Qué significa «Descargar ahora» y luego «Ejecutar» en la instalación de AnyDesk?"
   },
   {
    "modulo": "oficial-varios",
-   "pregunta": "¿Qué explica el manual de admin?"
+   "pregunta": "¿Qué es «admin» y qué incluye?"
   },
   {
    "modulo": "optimiza360",
-   "pregunta": "¿Qué sección del sitio abro para ver los logos de los clientes?"
+   "pregunta": "¿Qué ruta sigo si primero quiero ver servicios y después clientes?"
   }
  ]
 }

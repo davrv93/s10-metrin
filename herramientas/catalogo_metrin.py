@@ -51,29 +51,76 @@ def leer_nodo(f: Path) -> dict | None:
     resumen = re.sub(r"\s+", " ", resumen.group(1)).strip().strip('"') if resumen else ""
     tags = re.search(r"^tags:\s*\n((?:\s+-\s*.+\n?)+)", fm, re.M)
     tags = re.findall(r"-\s*(\S+)", tags.group(1)) if tags else []
-    return {"titulo": titulo, "resumen": resumen, "tags": tags}
+    return {"titulo": titulo, "resumen": resumen, "tags": tags, "cuerpo": m.group(2)}
 
 
 DEPENDE = re.compile(r"\b(ac[aá]|aqu[ií]|este m[oó]dulo|esta secci[oó]n|el caso|ese|esa|eso|esto|dicho|mencionad[oa]|arriba|sqlglot|sql|tabla|columna|join|nodo|cortex|upn|fragmento|curso|s[ií]labo|comando|select|validaci[oó]n|temas trae|manual de|portal de ayuda|S\/ ?[0-9]|ahorros)\b", re.I)
 ORDEN_TIPO = {"procedimiento": 0, "problema": 1, "concepto": 2, "dato": 3, "comparacion": 4, "contexto": 5}
+# Los dos tipos de aprendizaje que muestra la UI: concepto (qué es) y cómo se hace.
+TIPO_CONCEPTO = {"concepto"}
+TIPO_COMO = {"procedimiento"}
+# Título de apartado que describe una acción → pregunta «cómo se hace»; el resto, concepto.
+INFINITIVO = re.compile(r"^(crear|configurar|registr(?:ar|e)|ingresar|generar|elaborar|aplicar|realizar|procesar|"
+                        r"imprimir|anular|modificar|actualizar|importar|exportar|asignar|definir|habilitar|validar|"
+                        r"verificar|calcular|distribuir|conciliar|aprobar|rechazar|revisar|solicitar|ejecutar|"
+                        r"parametrizar|instalar|activar|desactivar|cargar|enviar|descargar)\b", re.I)
+VERBO = re.compile(r"^(creaci[oó]n|crear|configuraci[oó]n|configurar|registr[ae]|ingresar|ingreso|generar|generaci[oó]n|"
+                   r"elaboraci[oó]n|elaborar|aplicaci[oó]n|aplicar|realizaci[oó]n|realizar|procesar|procesamiento|"
+                   r"impresi[oó]n|imprimir|anulaci[oó]n|anular|modificaci[oó]n|modificar|actualizaci[oó]n|actualizar|"
+                   r"importaci[oó]n|importar|exportaci[oó]n|exportar|asignaci[oó]n|asignar|definir|definici[oó]n|"
+                   r"habilitar|validar|validaci[oó]n|verificar|calcular|c[aá]lculo|distribuir|conciliar|aprobar|"
+                   r"rechazar|revisar|solicitar|ejecutar|parametrizar|parametrizaci[oó]n|instalaci[oó]n|instalar|"
+                   r"activaci[oó]n|activar|desactivar|carga|cargar|env[ií]o|enviar|descarga|descargar)\b", re.I)
 
 
-def buenas(preguntas: list[dict]) -> list[str]:
+def pregunta_apartado(titulo: str) -> str:
+    """Apartado del índice → pregunta de aprendizaje: «cómo hacer» si describe acción, concepto si no."""
+    if INFINITIVO.match(titulo):
+        return f"¿Cómo {titulo[0].lower() + titulo[1:]} en S10?"
+    if VERBO.match(titulo):
+        return f"¿Cómo hacer «{titulo}» paso a paso?"
+    return f"¿Qué es «{titulo}»?"
+
+
+def valida(q: dict) -> bool:
+    p = q["pregunta"]
+    return 35 <= len(p) <= 100 and p.startswith("¿") and p.endswith("?") and not DEPENDE.search(p)
+
+
+def reparto_tema(pool: list[dict], tipos: set[str], cursor: int, n: int = 3) -> tuple[list[str], int]:
+    """Toma n preguntas del tipo pedido, rotando el cursor para que temas hermanos no repitan."""
+    cand = [q for q in pool if q["tipo"] in tipos and valida(q)]
+    if not cand:
+        return [], cursor
+    out, i, vueltas = [], cursor, 0
+    while len(out) < min(n, len(cand)) and vueltas <= len(cand):
+        q = cand[i % len(cand)]
+        i += 1
+        vueltas += 1
+        if q["pregunta"] not in out:
+            out.append(q["pregunta"])
+    return out, i % len(cand) if cand else cursor
+
+
+def buenas(preguntas: list[dict], tipos: set[str] | None = None,
+           vistas: set[str] | None = None) -> list[str]:
     """Hasta POR_TEMA preguntas autónomas (se entienden sin contexto), claras y de tipos variados."""
     cand = [q for q in preguntas
             if 35 <= len(q["pregunta"]) <= 100 and q["pregunta"].startswith("¿") and q["pregunta"].endswith("?")
-            and not DEPENDE.search(q["pregunta"])]
+            and not DEPENDE.search(q["pregunta"])
+            and (tipos is None or q["tipo"] in tipos)
+            and not (vistas and q["pregunta"] in vistas)]
     cand.sort(key=lambda q: (ORDEN_TIPO.get(q["tipo"], 9), abs(len(q["pregunta"]) - 62), q["id"]))
-    elegidas, tipos, inicios = [], {}, set()
+    elegidas, tipos_vistos, inicios = [], {}, set()
     for ronda in (1, 2, 9):                          # rondas: variedad de tipo y de arranque
         for q in cand:
             if len(elegidas) >= POR_TEMA:
                 break
             inicio = " ".join(q["pregunta"].lower().split()[:2])
-            if q in elegidas or tipos.get(q["tipo"], 0) >= ronda or (ronda < 9 and inicio in inicios):
+            if q in elegidas or tipos_vistos.get(q["tipo"], 0) >= ronda or (ronda < 9 and inicio in inicios):
                 continue
             elegidas.append(q)
-            tipos[q["tipo"]] = tipos.get(q["tipo"], 0) + 1
+            tipos_vistos[q["tipo"]] = tipos_vistos.get(q["tipo"], 0) + 1
             inicios.add(inicio)
     return [q["pregunta"] for q in elegidas[:POR_TEMA]]
 
@@ -92,57 +139,72 @@ def ejemplos_de_reporte(f: Path) -> list[str]:
     return out
 
 
-def pregunta_de_manual(titulo):
-    """Sugerencia sintetizada para un manual oficial (sin banco)."""
-    corto = titulo[:60].rstrip()
-    p = f"¿Qué explica el manual de {corto}?"
-    return [p if p.endswith("?") else p + "?"]
+def detalle_manual(n: dict) -> tuple[str, list[dict]]:
+    """Enlace e índice secuencial del manual, con una consulta ligada a cada apartado."""
+    cuerpo = n["cuerpo"]
+    fuente = re.search(r"^\s*-\s+\*\*P[aá]gina:\*\*\s+(https?://\S+)", cuerpo, re.M)
+    indice = re.search(r"^## Contenido\s*\n(.*?)(?=^## |\Z)", cuerpo, re.M | re.S)
+    lineas = re.findall(r"^\s*-\s+(.+?)\s*$", indice.group(1), re.M) if indice else []
+    secciones = []
+    for linea in lineas:
+        m = re.match(r"^(\d+(?:\.\d+)*)\.?\s+(.+?)\s*$", linea)
+        numero, titulo = (m.group(1), m.group(2)) if m else ("", linea.strip())
+        texto = f"{numero} {titulo}".strip()
+        secciones.append({"numero": numero, "titulo": titulo, "nivel": numero.count(".") + 1 if numero else 1,
+                          "preguntas": [pregunta_apartado(titulo)]})
+    return (fuente.group(1).rstrip(").,;") if fuente else "", secciones)
 
 
-def submodulos_oficiales():
-    """Manuales oficiales agrupados por módulo (etiqueta del nodo). Las
-    preguntas salen del banco (rama = módulo): procesos reales, no genéricos.
-    Sin banco para el módulo, se sintetiza una por manual."""
+def submodulos_oficiales(banco_rama: dict[str, list]) -> dict:
+    """Manuales oficiales agrupados por módulo (etiqueta del nodo). Cada tema
+    enseña dos listas de aprendizaje: conceptos (qué es) y procedimientos (cómo
+    hacerlo), tomadas del banco del módulo y rotadas entre temas hermanos."""
     base = ARBOL / "manuales-oficiales"
     if not base.is_dir():
         return {}
-    banco = {}
-    if BANCO.exists():
-        for l in BANCO.read_text(encoding="utf-8").splitlines():
-            q = json.loads(l)
-            banco.setdefault(q.get("rama"), []).append(q)
     por_mod = {}
     for f in sorted(base.glob("*.md")):
+        if f.stem == "_node":
+            continue
         n = leer_nodo(f)
         if not n or not n["titulo"]:
             continue
         mod = next((m for m, _ in MODULOS_OFICIALES if m in n["tags"]), "varios")
-        por_mod.setdefault(mod, []).append((f.stem, n))
+        fuente, secciones = detalle_manual(n)
+        por_mod.setdefault(mod, []).append((f.stem, n, fuente, secciones))
     etiquetas = dict(MODULOS_OFICIALES)
     etiquetas["varios"] = "Varios"
     out = {}
     for mod, hijos in por_mod.items():
-        candidatas = buenas(banco.get(mod, []))
+        pool, cursor_c, cursor_p = banco_rama.get(mod, []), 0, 0
         temas = []
-        for i, (stem, n) in enumerate(hijos):
-            if candidatas:
-                qs = [candidatas[(i + j) % len(candidatas)] for j in range(min(2, len(candidatas)))]
-            else:
-                qs = pregunta_de_manual(n["titulo"])
-            temas.append({"id": f"manuales-oficiales/{stem}",
-                          "titulo": n["titulo"][:80], "preguntas": qs})
+        for stem, n, fuente, secciones in hijos:
+            conceptos, cursor_c = reparto_tema(pool, TIPO_CONCEPTO, cursor_c)
+            como, cursor_p = reparto_tema(pool, TIPO_COMO, cursor_p)
+            if not conceptos:
+                conceptos = [f"¿Qué es «{n['titulo']}» y qué incluye?"]
+            temas.append({"id": f"manuales-oficiales/{stem}", "titulo": n["titulo"][:100],
+                          "resumen": n["resumen"][:360], "fuente": fuente,
+                          "secciones": secciones, "conceptos": conceptos, "procedimientos": como})
         out[f"oficial-{mod}"] = {"id": f"oficial-{mod}", "nombre": etiquetas[mod],
-                                 "titulo": f"Manuales oficiales: {etiquetas[mod]}",
+                                 "titulo": f"Manuales oficiales: {etiquetas[mod]}", "tipo": "manuales",
                                  "resumen": "", "temas": temas}
     return out
 
 
 def main() -> None:
     banco: dict[str, list] = {}
+    banco_rama: dict[str, list] = {}
     if BANCO.exists():
         for l in BANCO.read_text(encoding="utf-8").splitlines():
             q = json.loads(l)
             banco.setdefault(q["nodo"], []).append(q)
+            banco_rama.setdefault(q["rama"], []).append(q)
+
+    def aprender(nodo_id: str) -> tuple[list[str], list[str]]:
+        """Del banco del nodo: qué es (concepto) y cómo hacerlo (procedimiento)."""
+        pool = banco.get(nodo_id, [])
+        return buenas(pool, TIPO_CONCEPTO), buenas(pool, TIPO_COMO)
 
     modulos: dict[str, dict] = {}
     # una rama es `<rama>.md` (sin hijos) o `<rama>/_node.md` (con hijos)
@@ -164,19 +226,21 @@ def main() -> None:
         n = leer_nodo(f)
         if not n or n["titulo"].startswith("(Reemplazado)"):
             continue
-        qs = ejemplos_de_reporte(f) if rama == "reportes-sql" else buenas(banco.get(path, []))
-        if qs:
-            modulos[rama]["temas"].append({"id": path, "titulo": n["titulo"].replace(" · validada", ""), "preguntas": qs})
+        conceptos, como = aprender(path)
+        if conceptos or como:
+            modulos[rama]["temas"].append({"id": path, "titulo": n["titulo"].replace(" · validada", ""),
+                                           "conceptos": conceptos, "procedimientos": como})
     for m in modulos.values():                       # preguntas del nodo de rama, como tema «General»
         if m["id"] == "reportes-sql":
             continue
-        qs = buenas(banco.get(m["id"], []))
-        if qs:
-            m["temas"].insert(0, {"id": m["id"], "titulo": "General", "preguntas": qs})
+        conceptos, como = aprender(m["id"])
+        if conceptos or como:
+            m["temas"].insert(0, {"id": m["id"], "titulo": "General",
+                                  "conceptos": conceptos, "procedimientos": como})
 
     grupos, usados = [], set()
     if "manuales-oficiales" in modulos:
-        oficial = submodulos_oficiales()
+        oficial = submodulos_oficiales(banco_rama)
         modulos.update(oficial)
         modulos.pop("manuales-oficiales", None)
         GRUPOS[0] = ("oficiales", "Manuales oficiales S10", sorted(oficial))
@@ -190,15 +254,29 @@ def main() -> None:
         grupos.append({"id": "otros", "titulo": "Más temas", "modulos": otros})
 
     # destacadas: una pregunta por módulo, para la bienvenida
-    destacadas = [{"modulo": m["id"], "pregunta": m["temas"][min(1, len(m["temas"]) - 1)]["preguntas"][0]}
-                  for g in grupos for m in g["modulos"]]
-    total = sum(len(t["preguntas"]) for g in grupos for m in g["modulos"] for t in m["temas"])
-    datos = {"generado": time.strftime("%Y-%m-%dT%H:%M:%S"), "total_preguntas": total,
+    destacadas = []
+    for g in grupos:
+        for m in g["modulos"]:
+            tema = next((t for t in m["temas"] if t.get("conceptos") or t.get("procedimientos")), None)
+            if tema:
+                pregunta = (tema.get("procedimientos") or tema.get("conceptos"))[0]
+                destacadas.append({"modulo": m["id"], "pregunta": pregunta})
+    total = sum(len(t.get("conceptos", [])) + len(t.get("procedimientos", []))
+                for g in grupos for m in g["modulos"] for t in m["temas"])
+    manuales = [t for g in grupos for m in g["modulos"] if m.get("tipo") == "manuales" for t in m["temas"]]
+    total_manuales = len(manuales)
+    total_secciones = sum(len(t["secciones"]) for t in manuales)
+    total_preguntas_indice = sum(len(s["preguntas"]) for t in manuales for s in t["secciones"])
+    datos = {"generado": time.strftime("%Y-%m-%dT%H:%M:%S"), "total_preguntas": total + total_preguntas_indice,
+             "total_preguntas_banco": total,
+             "total_manuales": total_manuales, "total_secciones": total_secciones,
+             "total_preguntas_indice": total_preguntas_indice,
              "grupos": grupos, "destacadas": destacadas}
     SALIDA.parent.mkdir(exist_ok=True)
     SALIDA.write_text(json.dumps(datos, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"{len(grupos)} grupos · {sum(len(g['modulos']) for g in grupos)} módulos · "
-          f"{sum(len(m['temas']) for g in grupos for m in g['modulos'])} temas · {total} preguntas -> {SALIDA.relative_to(RAIZ)}")
+          f"{sum(len(m['temas']) for g in grupos for m in g['modulos'])} temas · {total_manuales} manuales · "
+          f"{total_secciones} apartados secuenciales -> {SALIDA.relative_to(RAIZ)}")
 
 
 if __name__ == "__main__":
