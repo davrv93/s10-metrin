@@ -66,6 +66,22 @@ restantes son promos con música (sin habla), quedan marcados con 0 segmentos.
 La KB final para búsqueda une `kb/fragmentos.jsonl` (web/PDF) y
 `kb/fragmentos_yt.jsonl` (videos).
 
+## Cortex y preguntas frecuentes (`cortex_a_kb.py`)
+
+```bash
+python3 cortex_a_kb.py   # tras editar .cortex/ o el banco data/preguntas/
+```
+
+| Salida | Qué es |
+|---|---|
+| `kb/fragmentos_cortex.jsonl` | Un fragmento por nodo/ítem de `.cortex/` (Metrín lo trocea en 800 caracteres) |
+| `kb/fragmentos_faq.jsonl` | Una tarjeta por pregunta del banco: se **busca** por la pregunta y sus escrituras con errores (campo `busqueda`, lo único que se embebe) y **devuelve** el pasaje del nodo de Cortex que la responde (`texto`, ≤ 1200 caracteres, sin trocear) |
+
+Las tarjetas existen porque el embebedor estático no encontraba el trozo correcto
+cuando la respuesta es una línea dentro de un nodo largo (p. ej. «¿Cómo llego a
+adicionar correctivo…?»). Llevan la misma cita que su nodo, así que la fuente no
+se repite en la respuesta.
+
 ## Pantallas del ERP (`ui.py`)
 
 Del video a un esquema de formulario. Los tutoriales de S10 muestran las

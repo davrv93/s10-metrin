@@ -20,6 +20,9 @@ type Documento struct {
 	Version  string
 	Cargar   func(ctx context.Context) (string, error)
 	Metadata map[string]string
+	// Busqueda: si no está vacía, el documento es un solo trozo que se
+	// encuentra por este texto (se embebe) y devuelve el contenido entero.
+	Busqueda string
 }
 
 // Origen lista los documentos de una fuente.
@@ -82,6 +85,9 @@ func Ejecutar(ctx context.Context, o Origen, a *almacen.Almacen, log func(string
 			return inf, fmt.Errorf("leer %s: %w", d.Clave, err)
 		}
 		textos := trocear.Preparar(d.Ruta, contenido)
+		if d.Busqueda != "" {
+			textos = []string{strings.TrimSpace(contenido)}
+		}
 		ext := strings.ToLower(path.Ext(d.Ruta))
 		trozos := make([]almacen.Trozo, len(textos))
 		for n, t := range textos {
@@ -99,6 +105,7 @@ func Ejecutar(ctx context.Context, o Origen, a *almacen.Almacen, log func(string
 			trozos[n] = almacen.Trozo{
 				ID:       almacen.IDTrozo(d.Clave, n),
 				Texto:    t,
+				Busqueda: d.Busqueda,
 				Metadata: metadata,
 			}
 		}

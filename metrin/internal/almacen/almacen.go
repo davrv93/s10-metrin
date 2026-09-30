@@ -43,6 +43,7 @@ type EstadoDoc struct {
 type Trozo struct {
 	ID       string
 	Texto    string
+	Busqueda string // si no está vacío se embebe esto en vez de Texto
 	Metadata map[string]string
 }
 
@@ -135,7 +136,11 @@ func (a *Almacen) Reemplazar(ctx context.Context, clave, fuente, version string,
 	metas := make([]map[string]string, 0, len(trozos))
 	textos := make([]string, 0, len(trozos))
 	for _, t := range trozos {
-		v, err := a.emb.Embeber(ctx, t.Texto)
+		clave := t.Texto
+		if t.Busqueda != "" {
+			clave = t.Busqueda
+		}
+		v, err := a.emb.Embeber(ctx, clave)
 		if errors.Is(err, embed.ErrSinPiezas) {
 			continue // trozo sin vocabulario (p. ej. solo símbolos)
 		}

@@ -240,3 +240,29 @@ func TestBusquedaConFiltro(t *testing.T) {
 		t.Fatal("resultados no ordenados por distancia")
 	}
 }
+
+func TestKBJSONLBusquedaEmbebePreguntaYDevuelvePasaje(t *testing.T) {
+	ctx := context.Background()
+	dir := t.TempDir()
+	pasaje := strings.Repeat("relleno de otros pasos del manual. ", 40) + "Clic derecho, adicionar correctivo con monto negativo."
+	escribir(t, dir, "kb.jsonl",
+		`{"id":"faq-1","documento":"cortex:tree/almacenes/anticipos.md","manual":"Cortex","titulo":"Anticipos","busqueda":"¿Cómo llego a adicionar correctivo?","texto":"`+pasaje+`"}`+"\n"+
+			`{"id":"otro","documento":"x","titulo":"Tarifas","texto":"plan pro precio mensual"}`+"\n")
+	a, _ := almacen.Abrir("", bolsa{})
+	if _, err := Ejecutar(ctx, KBJSONL{Ruta: filepath.Join(dir, "kb.jsonl")}, a, nil); err != nil {
+		t.Fatal(err)
+	}
+	if a.Contar() != 2 {
+		t.Fatalf("con busqueda el pasaje no se trocea: %d trozos, esperaba 2", a.Contar())
+	}
+	rs, err := a.Buscar(ctx, "¿Cómo llego a adicionar correctivo?", 1, nil)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(rs) != 1 || rs[0].Texto != pasaje || rs[0].Metadata["cita"] != "Anticipos" {
+		t.Fatalf("debe encontrarse por la pregunta y devolver el pasaje entero: %+v", rs)
+	}
+	if rs[0].Distancia > 0.05 {
+		t.Fatalf("se embebió el pasaje y no la pregunta: distancia %.3f", rs[0].Distancia)
+	}
+}
