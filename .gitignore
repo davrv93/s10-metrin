@@ -10,6 +10,7 @@ metrin/.env
 entrenamiento-metrin/.venv/
 .venv-repro/
 __pycache__/
+.DS_Store
 
 # índice y modelos pesados (se regeneran: index-kb, embeddings, LoRA)
 metrin/datos/

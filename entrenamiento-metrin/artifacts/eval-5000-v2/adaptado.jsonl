@@ -1,0 +1,24 @@
+{"id": 0, "prompt": "Hola, ¿quién eres?", "respuesta": "Hola. ¿En qué te ayudo hoy?"}
+{"id": 1, "prompt": "Buenas noches, ¿me atiendes?", "respuesta": "Hola. ¿En qué te ayudo hoy?"}
+{"id": 2, "prompt": "Gracias por la ayuda de hoy.", "respuesta": "Perfecto, dejamos este punto claro."}
+{"id": 3, "prompt": "No entendí nada de lo anterior.", "respuesta": "Tienes razón en pedir precisión. ¿Qué dato o parte debo volver a comprobar?"}
+{"id": 4, "prompt": "¿Me lo explicas con otras palabras?", "respuesta": "Claro. ¿Quieres que lo explique con un ejemplo o que quite los detalles secundarios?"}
+{"id": 5, "prompt": "Eso que dijiste está incorrecto.", "respuesta": "Tienes razón en pedir precisión. ¿Qué dato o parte debo volver a comprobar?"}
+{"id": 6, "prompt": "No me sirve tu respuesta.", "respuesta": "Tienes razón en pedir precisión. ¿Qué dato o parte debo volver a comprobar?"}
+{"id": 7, "prompt": "Cuéntame sobre ese tema.", "respuesta": "¿Qué parte quieres que explique usando la fuente?"}
+{"id": 8, "prompt": "¿Me ayudas con lo que te pedí?", "respuesta": "Hola. ¿Qué tema quieres consultar?"}
+{"id": 9, "prompt": "¿Cuánto dinero hay en mi cuenta?", "respuesta": "No puedo resolverlo con fiabilidad. Sí puedo ayudarte con procesos de S10 o información de obra."}
+{"id": 10, "prompt": "¿Qué dice exactamente el reglamento?", "respuesta": "¿Qué punto debería desarrollar con más detalle?"}
+{"id": 11, "prompt": "Dame la dirección de la oficina.", "respuesta": "No quiero inventar una respuesta sobre ese tema. ¿Te ayudo con alguna consulta de S10?"}
+{"id": 12, "prompt": "Escríbeme un cuento corto.", "respuesta": "No puedo resolverlo con fiabilidad. Sí puedo ayudarte con procesos de S10 o información de obra."}
+{"id": 13, "prompt": "¿Me ayudas a estudiar matemáticas?", "respuesta": "No puedo resolverlo con fiabilidad. Sí puedo ayudarte con procesos de S10 o información de obra."}
+{"id": 14, "prompt": "¿Qué sigue ahora?", "respuesta": "¿Qué parte quieres que explique usando la fuente?"}
+{"id": 15, "prompt": "Dame un ejemplo de lo que dices.", "respuesta": "Claro. ¿Quieres que lo explique con un ejemplo o que quite los detalles secundarios?"}
+{"id": 16, "prompt": "¿Qué más debería tener en cuenta?", "respuesta": "¿Qué punto debería desarrollar con más detalle?"}
+{"id": 17, "prompt": "Explícame eso en detalle.", "respuesta": "Claro. ¿Quieres que lo explique con un ejemplo o que quite los detalles secundarios?"}
+{"id": 18, "prompt": "¿Por dónde debería empezar?", "respuesta": "¿Qué aspecto te ayudaría más ahora?"}
+{"id": 19, "prompt": "Hola de nuevo, tengo otra duda.", "respuesta": "Hola. ¿En qué te ayudo hoy?"}
+{"id": 20, "prompt": "Perdona, me confundí de tema.", "respuesta": "Con gusto. ¿Prefieres una versión breve o una explicación paso a paso?"}
+{"id": 21, "prompt": "Vale, ¿y cómo continuamos?", "respuesta": "¿Qué módulo estás usando y en qué paso te encuentras?"}
+{"id": 22, "prompt": "No sé cómo formular mi pregunta.", "respuesta": "¿Qué módulo estás usando y en qué paso te encuentras?"}
+{"id": 23, "prompt": "¿Puedes ser más breve?", "respuesta": "Con gusto. ¿Prefieres una versión breve o una explicación paso a paso?"}

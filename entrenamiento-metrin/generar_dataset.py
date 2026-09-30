@@ -174,16 +174,17 @@ def main():
         intenc[nombre] = sorted(set(usuarios))
     # Refuerzo SOLO del clasificador (no toca train/valid/test): interjecciones
     # y cortesías cortas que los usuarios escriben tal cual.
+    # Refuerzo SOLO del clasificador (no toca train/valid/test). Solo
+    # multi-palabra: las de una sola ("jaja", "ok", "adiós") las cubre la
+    # capa léxica; en kNN contaminan como vecinas ("entiendo" atraía a
+    # "no entiendo línea base" y el 3B inventaba la explicación).
     intenc["saludos"] = sorted(set(intenc["saludos"]) | {
-        "jaja", "jeje", "jajaja", "buenas noches", "buenos días",
-        "buenas tardes", "hasta luego", "nos vemos", "adiós", "qué tal estás",
-        "me das risa", "qué risa", "qué chistoso", "cansado", "estoy cansado",
-        "estoy aburrido", "tengo sueño", "qué día", "estoy feliz", "estoy triste",
-        # Chitchat corto: respuestas de estado y muletillas (una sola siembra,
-        # el fallback por longitud cubre el resto sin reentrenar por frase).
-        "bien y tú", "bien gracias", "más o menos", "aquí andamos",
-        "todo bien", "ok", "dale", "vale", "genial", "perfecto",
-        "de nada", "hasta mañana", "cuídate", "entiendo", "claro que sí",
+        "buenas noches", "buenos días", "buenas tardes", "hasta luego",
+        "nos vemos", "qué tal estás", "me das risa", "qué risa",
+        "qué chistoso", "estoy cansado", "estoy aburrido", "estoy feliz",
+        "estoy triste", "tengo sueño", "bien y tú", "bien gracias",
+        "más o menos", "aquí andamos", "todo bien", "hasta mañana",
+        "cuídate", "claro que sí",
     })
     intenc["correctivo"] = sorted(set(intenc["correctivo"]) | {
         "está mal tu respuesta", "eso está incorrecto",
