@@ -100,10 +100,17 @@ def pregunta_de_manual(titulo):
 
 
 def submodulos_oficiales():
-    """Manuales oficiales agrupados por módulo (etiqueta del nodo)."""
+    """Manuales oficiales agrupados por módulo (etiqueta del nodo). Las
+    preguntas salen del banco (rama = módulo): procesos reales, no genéricos.
+    Sin banco para el módulo, se sintetiza una por manual."""
     base = ARBOL / "manuales-oficiales"
     if not base.is_dir():
         return {}
+    banco = {}
+    if BANCO.exists():
+        for l in BANCO.read_text(encoding="utf-8").splitlines():
+            q = json.loads(l)
+            banco.setdefault(q.get("rama"), []).append(q)
     por_mod = {}
     for f in sorted(base.glob("*.md")):
         n = leer_nodo(f)
@@ -115,9 +122,15 @@ def submodulos_oficiales():
     etiquetas["varios"] = "Varios"
     out = {}
     for mod, hijos in por_mod.items():
-        temas = [{"id": f"manuales-oficiales/{stem}",
-                  "titulo": n["titulo"][:80],
-                  "preguntas": pregunta_de_manual(n["titulo"])} for stem, n in hijos]
+        candidatas = buenas(banco.get(mod, []))
+        temas = []
+        for i, (stem, n) in enumerate(hijos):
+            if candidatas:
+                qs = [candidatas[(i + j) % len(candidatas)] for j in range(min(2, len(candidatas)))]
+            else:
+                qs = pregunta_de_manual(n["titulo"])
+            temas.append({"id": f"manuales-oficiales/{stem}",
+                          "titulo": n["titulo"][:80], "preguntas": qs})
         out[f"oficial-{mod}"] = {"id": f"oficial-{mod}", "nombre": etiquetas[mod],
                                  "titulo": f"Manuales oficiales: {etiquetas[mod]}",
                                  "resumen": "", "temas": temas}

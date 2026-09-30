@@ -1,6 +1,6 @@
 {
- "generado": "2026-09-30T13:30:07",
- "total_preguntas": 127,
+ "generado": "2026-09-30T13:33:26",
+ "total_preguntas": 175,
  "grupos": [
   {
    "id": "oficiales",
@@ -16,28 +16,32 @@
        "id": "manuales-oficiales/administracion",
        "titulo": "Administración",
        "preguntas": [
-        "¿Qué explica el manual de Administración?"
+        "¿Qué hago con el txt una vez que lo tengo en C:\\S102000\\Pagos?",
+        "¿Qué es un fondo rotatorio y qué se hace con él en el sistema?"
        ]
       },
       {
        "id": "manuales-oficiales/administrativo-2",
        "titulo": "Manual Administrativo",
        "preguntas": [
-        "¿Qué explica el manual de Manual Administrativo?"
+        "¿Qué es un fondo rotatorio y qué se hace con él en el sistema?",
+        "¿Los talonarios se definen por empresa o por cuenta bancaria?"
        ]
       },
       {
        "id": "manuales-oficiales/administrativo",
        "titulo": "Administrativo",
        "preguntas": [
-        "¿Qué explica el manual de Administrativo?"
+        "¿Los talonarios se definen por empresa o por cuenta bancaria?",
+        "¿Qué diferencia hay entre un fondo rotatorio y una caja común?"
        ]
       },
       {
        "id": "manuales-oficiales/videos-tutoriales-de-administracion",
        "titulo": "Videos Tutoriales de Administración",
        "preguntas": [
-        "¿Qué explica el manual de Videos Tutoriales de Administración?"
+        "¿Qué diferencia hay entre un fondo rotatorio y una caja común?",
+        "¿Qué fuentes respaldan este procedimiento de pago de detracciones?"
        ]
       }
      ]
@@ -52,28 +56,32 @@
        "id": "manuales-oficiales/almacenes-2",
        "titulo": "Almacenes",
        "preguntas": [
-        "¿Qué explica el manual de Almacenes?"
+        "¿Cómo registro los movimientos que salen de fondos rotatorios?",
+        "¿Y si aplico solamente las alertas de mermas sin tocar lo demás?"
        ]
       },
       {
        "id": "manuales-oficiales/almacenes-3",
        "titulo": "Manual de Almacenes",
        "preguntas": [
-        "¿Qué explica el manual de Manual de Almacenes?"
+        "¿Y si aplico solamente las alertas de mermas sin tocar lo demás?",
+        "¿Qué es la amortización del anticipo en este contexto del S10?"
        ]
       },
       {
        "id": "manuales-oficiales/almacenes",
        "titulo": "Almacenes",
        "preguntas": [
-        "¿Qué explica el manual de Almacenes?"
+        "¿Qué es la amortización del anticipo en este contexto del S10?",
+        "¿Qué formatos usaban para documentar los ingresos y las salidas?"
        ]
       },
       {
        "id": "manuales-oficiales/videos-tutoriales-de-almacenes",
        "titulo": "Videos Tutoriales de Almacenes",
        "preguntas": [
-        "¿Qué explica el manual de Videos Tutoriales de Almacenes?"
+        "¿Qué formatos usaban para documentar los ingresos y las salidas?",
+        "¿Qué diferencia existe entre un frente y una ubicación física?"
        ]
       }
      ]
@@ -88,21 +96,24 @@
        "id": "manuales-oficiales/compras",
        "titulo": "Manual de Compras",
        "preguntas": [
-        "¿Qué explica el manual de Manual de Compras?"
+        "¿Cuántos pasos tengo que ejecutar si voy por el pedido directo?",
+        "¿Hay información sobre niveles de aprobación en la app?"
        ]
       },
       {
        "id": "manuales-oficiales/pedidos-moviles",
        "titulo": "Manual de Pedidos Móviles",
        "preguntas": [
-        "¿Qué explica el manual de Manual de Pedidos Móviles?"
+        "¿Hay información sobre niveles de aprobación en la app?",
+        "¿En qué consiste la gestión de usuarios y permisos en Compras?"
        ]
       },
       {
        "id": "manuales-oficiales/videos-tutoriales-de-compras",
        "titulo": "Videos Tutoriales de Compras",
        "preguntas": [
-        "¿Qué explica el manual de Videos Tutoriales de Compras?"
+        "¿En qué consiste la gestión de usuarios y permisos en Compras?",
+        "¿Recibir cotizaciones es parte de lo que se ve el tercer día?"
        ]
       }
      ]
@@ -117,21 +128,24 @@
        "id": "manuales-oficiales/contabilidad-2",
        "titulo": "Manual de Contabilidad",
        "preguntas": [
-        "¿Qué explica el manual de Manual de Contabilidad?"
+        "¿En qué momento del proceso debo recurrir a un asiento manual?",
+        "¿Qué pasa si registro un contrato pero nadie configuró su cuenta?"
        ]
       },
       {
        "id": "manuales-oficiales/contabilidad",
        "titulo": "Contabilidad",
        "preguntas": [
-        "¿Qué explica el manual de Contabilidad?"
+        "¿Qué pasa si registro un contrato pero nadie configuró su cuenta?",
+        "¿A qué se refiere la dinámica de cierres como tema del módulo?"
        ]
       },
       {
        "id": "manuales-oficiales/videos-tutoriales-de-contabilidad",
        "titulo": "Videos Tutoriales de Contabilidad",
        "preguntas": [
-        "¿Qué explica el manual de Videos Tutoriales de Contabilidad?"
+        "¿A qué se refiere la dinámica de cierres como tema del módulo?",
+        "¿Cuántos pasos tiene esta secuencia y cuál es el último de todos?"
        ]
       }
      ]
@@ -146,35 +160,40 @@
        "id": "manuales-oficiales/anulacion-de-ventas",
        "titulo": "Anulación de Ventas",
        "preguntas": [
-        "¿Qué explica el manual de Anulación de Ventas?"
+        "¿Qué pasos sigo para configurar la detracción de un proveedor?",
+        "¿Por qué mi talonario no está disponible para cierto usuario?"
        ]
       },
       {
        "id": "manuales-oficiales/facturacion-electronica-2",
        "titulo": "Manual de Facturación Electrónica",
        "preguntas": [
-        "¿Qué explica el manual de Manual de Facturación Electrónica?"
+        "¿Por qué mi talonario no está disponible para cierto usuario?",
+        "¿En qué parte del sistema arranca todo el proceso del anticipo?"
        ]
       },
       {
        "id": "manuales-oficiales/facturacion-electronica",
        "titulo": "Facturación Electrónica",
        "preguntas": [
-        "¿Qué explica el manual de Facturación Electrónica?"
+        "¿En qué parte del sistema arranca todo el proceso del anticipo?",
+        "¿Cuál es la fuente oficial de este procedimiento de anticipos?"
        ]
       },
       {
        "id": "manuales-oficiales/facturacion",
        "titulo": "Manual de Facturación",
        "preguntas": [
-        "¿Qué explica el manual de Manual de Facturación?"
+        "¿Cuál es la fuente oficial de este procedimiento de anticipos?",
+        "¿Qué diferencia hay entre desvincular un ingreso y eliminarlo?"
        ]
       },
       {
        "id": "manuales-oficiales/videos-tutoriales-de-facturaciones",
        "titulo": "Videos Tutoriales de Facturaciones",
        "preguntas": [
-        "¿Qué explica el manual de Videos Tutoriales de Facturaciones?"
+        "¿Qué diferencia hay entre desvincular un ingreso y eliminarlo?",
+        "¿Qué tipo de proveedor exige este tratamiento de anticipo?"
        ]
       }
      ]
@@ -189,49 +208,56 @@
        "id": "manuales-oficiales/calidad-movil",
        "titulo": "Manual de Calidad Móvil",
        "preguntas": [
-        "¿Qué explica el manual de Manual de Calidad Móvil?"
+        "¿Qué tipo de recurso reviso primero cuando el costo se desvía?",
+        "¿Por qué mi análisis no baja hasta el nivel de recurso individual?"
        ]
       },
       {
        "id": "manuales-oficiales/gerencia-de-proyectos",
        "titulo": "Manual de Gerencia de Proyectos",
        "preguntas": [
-        "¿Qué explica el manual de Manual de Gerencia de Proyectos?"
+        "¿Por qué mi análisis no baja hasta el nivel de recurso individual?",
+        "¿Qué significa autorización de cobro en el flujo de contratos?"
        ]
       },
       {
        "id": "manuales-oficiales/tareo-en-linea",
        "titulo": "Manual de Tareo en Línea",
        "preguntas": [
-        "¿Qué explica el manual de Manual de Tareo en Línea?"
+        "¿Qué significa autorización de cobro en el flujo de contratos?",
+        "¿Qué tan oficial es este contenido, viene de S10 o de terceros?"
        ]
       },
       {
        "id": "manuales-oficiales/tareo-movil",
        "titulo": "Manual de Tareo Móvil",
        "preguntas": [
-        "¿Qué explica el manual de Manual de Tareo Móvil?"
+        "¿Qué tan oficial es este contenido, viene de S10 o de terceros?",
+        "¿Lean es un módulo aparte o es parte de Gerencia de Proyectos?"
        ]
       },
       {
        "id": "manuales-oficiales/videos-de-calidad-movil",
        "titulo": "Videos de Calidad Móvil",
        "preguntas": [
-        "¿Qué explica el manual de Videos de Calidad Móvil?"
+        "¿Lean es un módulo aparte o es parte de Gerencia de Proyectos?",
+        "¿Qué limitaciones tiene la información disponible sobre esta app?"
        ]
       },
       {
        "id": "manuales-oficiales/videos-de-gerencia-de-proyectos",
        "titulo": "Videos de Gerencia de Proyectos",
        "preguntas": [
-        "¿Qué explica el manual de Videos de Gerencia de Proyectos?"
+        "¿Qué limitaciones tiene la información disponible sobre esta app?",
+        "¿Qué tipo de recurso reviso primero cuando el costo se desvía?"
        ]
       },
       {
        "id": "manuales-oficiales/videos-de-tareo-movil",
        "titulo": "Videos de Tareo Móvil",
        "preguntas": [
-        "¿Qué explica el manual de Videos de Tareo Móvil?"
+        "¿Qué tipo de recurso reviso primero cuando el costo se desvía?",
+        "¿Por qué mi análisis no baja hasta el nivel de recurso individual?"
        ]
       }
      ]
@@ -246,35 +272,40 @@
        "id": "manuales-oficiales/nominas-2",
        "titulo": "Nóminas",
        "preguntas": [
-        "¿Qué explica el manual de Nóminas?"
+        "¿De qué manera se cargan los porcentajes de AFP en el sistema?",
+        "¿Qué sucede si emito las boletas antes de validar los montos?"
        ]
       },
       {
        "id": "manuales-oficiales/nominas-3",
        "titulo": "Nóminas",
        "preguntas": [
-        "¿Qué explica el manual de Nóminas?"
+        "¿Qué sucede si emito las boletas antes de validar los montos?",
+        "¿Qué tipos de nómina cubre la capacitación oficial del módulo?"
        ]
       },
       {
        "id": "manuales-oficiales/nominas",
        "titulo": "Manual de Nóminas",
        "preguntas": [
-        "¿Qué explica el manual de Manual de Nóminas?"
+        "¿Qué tipos de nómina cubre la capacitación oficial del módulo?",
+        "¿Cuál es el año del convenio al que corresponden estas cifras?"
        ]
       },
       {
        "id": "manuales-oficiales/pasos-para-el-calculo-de-nominas",
        "titulo": "Pasos para el cálculo de Nóminas",
        "preguntas": [
-        "¿Qué explica el manual de Pasos para el cálculo de Nóminas?"
+        "¿Cuál es el año del convenio al que corresponden estas cifras?",
+        "¿Se usa clic derecho para algo en ambos escenarios? ¿Para qué?"
        ]
       },
       {
        "id": "manuales-oficiales/videos-tutoriales-de-nominas",
        "titulo": "Videos Tutoriales de Nóminas",
        "preguntas": [
-        "¿Qué explica el manual de Videos Tutoriales de Nóminas?"
+        "¿Se usa clic derecho para algo en ambos escenarios? ¿Para qué?",
+        "¿Qué tan confiable es este contenido y de qué canal sale el video?"
        ]
       }
      ]
@@ -289,70 +320,80 @@
        "id": "manuales-oficiales/del-portal-del-proveedor",
        "titulo": "Manual del Portal del Proveedor",
        "preguntas": [
-        "¿Qué explica el manual de Manual del Portal del Proveedor?"
+        "¿Hay alguna ruta alterna para ver el contenido sin ser miembro?",
+        "¿Por qué el asistente no me puede dar el paso a paso del portal?"
        ]
       },
       {
        "id": "manuales-oficiales/descargas-portal-de-ayuda-s10",
        "titulo": "Descargas - Portal de Ayuda S10",
        "preguntas": [
-        "¿Qué explica el manual de Descargas - Portal de Ayuda S10?"
+        "¿Por qué el asistente no me puede dar el paso a paso del portal?",
+        "¿Qué representa Tareo en Línea S10 dentro de las apps móviles?"
        ]
       },
       {
        "id": "manuales-oficiales/portal-asistencia",
        "titulo": "Manual Portal Asistencia",
        "preguntas": [
-        "¿Qué explica el manual de Manual Portal Asistencia?"
+        "¿Qué representa Tareo en Línea S10 dentro de las apps móviles?",
+        "¿Hay una playlist en YouTube dedicada al Portal de Asistencia?"
        ]
       },
       {
        "id": "manuales-oficiales/portal-de-facturacion-electronica-credenciales-api-rest-suna",
        "titulo": "Portal de Facturación Electrónica - Credenciales API REST SUNAT - Portal",
        "preguntas": [
-        "¿Qué explica el manual de Portal de Facturación Electrónica - Credenciales API REST SU?"
+        "¿Hay una playlist en YouTube dedicada al Portal de Asistencia?",
+        "¿Qué portales de S10 sí tienen índice de temas y por qué este no?"
        ]
       },
       {
        "id": "manuales-oficiales/portal-facturacion-electronica",
        "titulo": "Manual Portal Facturación Electrónica",
        "preguntas": [
-        "¿Qué explica el manual de Manual Portal Facturación Electrónica?"
+        "¿Qué portales de S10 sí tienen índice de temas y por qué este no?",
+        "¿Cómo remito a un usuario al manual del portal correctamente?"
        ]
       },
       {
        "id": "manuales-oficiales/portal-proveedores-compras-y-almacen",
        "titulo": "Manual Portal Proveedores – Compras y Almacén",
        "preguntas": [
-        "¿Qué explica el manual de Manual Portal Proveedores – Compras y Almacén?"
+        "¿Cómo remito a un usuario al manual del portal correctamente?",
+        "¿Hay alguna ruta alterna para ver el contenido sin ser miembro?"
        ]
       },
       {
        "id": "manuales-oficiales/portal-suministros",
        "titulo": "Manual Portal Suministros",
        "preguntas": [
-        "¿Qué explica el manual de Manual Portal Suministros?"
+        "¿Hay alguna ruta alterna para ver el contenido sin ser miembro?",
+        "¿Por qué el asistente no me puede dar el paso a paso del portal?"
        ]
       },
       {
        "id": "manuales-oficiales/videos-de-portal-de-facturacion-electronica",
        "titulo": "Videos de Portal de Facturación Electrónica",
        "preguntas": [
-        "¿Qué explica el manual de Videos de Portal de Facturación Electrónica?"
+        "¿Por qué el asistente no me puede dar el paso a paso del portal?",
+        "¿Qué representa Tareo en Línea S10 dentro de las apps móviles?"
        ]
       },
       {
        "id": "manuales-oficiales/videos-de-portal-del-empleado",
        "titulo": "Videos de Portal del Empleado",
        "preguntas": [
-        "¿Qué explica el manual de Videos de Portal del Empleado?"
+        "¿Qué representa Tareo en Línea S10 dentro de las apps móviles?",
+        "¿Hay una playlist en YouTube dedicada al Portal de Asistencia?"
        ]
       },
       {
        "id": "manuales-oficiales/videos-de-portal-del-proveedor",
        "titulo": "Videos de Portal del Proveedor",
        "preguntas": [
-        "¿Qué explica el manual de Videos de Portal del Proveedor?"
+        "¿Hay una playlist en YouTube dedicada al Portal de Asistencia?",
+        "¿Qué portales de S10 sí tienen índice de temas y por qué este no?"
        ]
       }
      ]
@@ -367,21 +408,24 @@
        "id": "manuales-oficiales/presupuestos",
        "titulo": "Manual de Presupuestos",
        "preguntas": [
-        "¿Qué explica el manual de Manual de Presupuestos?"
+        "¿Qué ruta sigo dentro del sistema para llegar a Mis Favoritos?",
+        "¿Qué tengo que hacer para que aparezcan más opciones en los menús?"
        ]
       },
       {
        "id": "manuales-oficiales/video-instalacion-presupuesto",
        "titulo": "Video Instalación Presupuesto",
        "preguntas": [
-        "¿Qué explica el manual de Video Instalación Presupuesto?"
+        "¿Qué tengo que hacer para que aparezcan más opciones en los menús?",
+        "¿Qué incluye la etapa de requisitos previos antes de instalar?"
        ]
       },
       {
        "id": "manuales-oficiales/videos-tutoriales-de-presupuestos",
        "titulo": "Videos Tutoriales de Presupuestos",
        "preguntas": [
-        "¿Qué explica el manual de Videos Tutoriales de Presupuestos?"
+        "¿Qué incluye la etapa de requisitos previos antes de instalar?",
+        "¿Por dónde se puede llegar a crear una partida en el catálogo?"
        ]
       }
      ]
@@ -396,28 +440,32 @@
        "id": "manuales-oficiales/actualizacion-de-s10-instalacion-de-revisiones",
        "titulo": "Actualización de S10 (Instalación de revisiones)",
        "preguntas": [
-        "¿Qué explica el manual de Actualización de S10 (Instalación de revisiones)?"
+        "¿En qué parte de la pantalla está la opción Salir del portal?",
+        "¿Qué pasa si escribo mal las credenciales 3 veces seguidas en el recuadro de acceso?"
        ]
       },
       {
        "id": "manuales-oficiales/el-proceso-de-instalacion-de-microsoft-sql-server",
        "titulo": "El proceso de instalación de Microsoft SQL Server",
        "preguntas": [
-        "¿Qué explica el manual de El proceso de instalación de Microsoft SQL Server?"
+        "¿Qué pasa si escribo mal las credenciales 3 veces seguidas en el recuadro de acceso?",
+        "¿Qué es lo que soporte hace con el ID y la clave que le envío?"
        ]
       },
       {
        "id": "manuales-oficiales/instalacion-s10-erp-video",
        "titulo": "Manual de Instalación S10 ERP [VIDEO]",
        "preguntas": [
-        "¿Qué explica el manual de Manual de Instalación S10 ERP [VIDEO]?"
+        "¿Qué es lo que soporte hace con el ID y la clave que le envío?",
+        "¿Cuál es la fuente de la información sobre instalar AnyDesk?"
        ]
       },
       {
        "id": "manuales-oficiales/prerrequisitos-instalacion",
        "titulo": "Prerrequisitos Instalacion",
        "preguntas": [
-        "¿Qué explica el manual de Prerrequisitos Instalacion?"
+        "¿Cuál es la fuente de la información sobre instalar AnyDesk?",
+        "¿Qué diferencia hay entre el aviso por correo y el ticket?"
        ]
       }
      ]
@@ -823,43 +871,43 @@
  "destacadas": [
   {
    "modulo": "oficial-administrativo",
-   "pregunta": "¿Qué explica el manual de Manual Administrativo?"
+   "pregunta": "¿Qué es un fondo rotatorio y qué se hace con él en el sistema?"
   },
   {
    "modulo": "oficial-almacenes",
-   "pregunta": "¿Qué explica el manual de Manual de Almacenes?"
+   "pregunta": "¿Y si aplico solamente las alertas de mermas sin tocar lo demás?"
   },
   {
    "modulo": "oficial-compras",
-   "pregunta": "¿Qué explica el manual de Manual de Pedidos Móviles?"
+   "pregunta": "¿Hay información sobre niveles de aprobación en la app?"
   },
   {
    "modulo": "oficial-contabilidad",
-   "pregunta": "¿Qué explica el manual de Contabilidad?"
+   "pregunta": "¿Qué pasa si registro un contrato pero nadie configuró su cuenta?"
   },
   {
    "modulo": "oficial-facturacion",
-   "pregunta": "¿Qué explica el manual de Manual de Facturación Electrónica?"
+   "pregunta": "¿Por qué mi talonario no está disponible para cierto usuario?"
   },
   {
    "modulo": "oficial-gerencia-proyectos",
-   "pregunta": "¿Qué explica el manual de Manual de Gerencia de Proyectos?"
+   "pregunta": "¿Por qué mi análisis no baja hasta el nivel de recurso individual?"
   },
   {
    "modulo": "oficial-nominas",
-   "pregunta": "¿Qué explica el manual de Nóminas?"
+   "pregunta": "¿Qué sucede si emito las boletas antes de validar los montos?"
   },
   {
    "modulo": "oficial-portales",
-   "pregunta": "¿Qué explica el manual de Descargas - Portal de Ayuda S10?"
+   "pregunta": "¿Por qué el asistente no me puede dar el paso a paso del portal?"
   },
   {
    "modulo": "oficial-presupuestos",
-   "pregunta": "¿Qué explica el manual de Video Instalación Presupuesto?"
+   "pregunta": "¿Qué tengo que hacer para que aparezcan más opciones en los menús?"
   },
   {
    "modulo": "oficial-soporte",
-   "pregunta": "¿Qué explica el manual de El proceso de instalación de Microsoft SQL Server?"
+   "pregunta": "¿Qué pasa si escribo mal las credenciales 3 veces seguidas en el recuadro de acceso?"
   },
   {
    "modulo": "oficial-varios",

@@ -11,6 +11,23 @@ import random
 from pathlib import Path
 
 SEED = 20260930
+def procesos_reales(n=12):
+    """Preguntas de procedimiento del banco para el clasificador (trabajo)."""
+    banco = RAIZ.parent / "data" / "preguntas" / "preguntas.jsonl"
+    if not banco.exists():
+        return []
+    out = []
+    for l in banco.read_text(encoding="utf-8").splitlines():
+        q = json.loads(l)
+        p = q.get("pregunta", "")
+        if (q.get("tipo") == "procedimiento" and 35 <= len(p) <= 100
+                and p.startswith("¿") and p.endswith("?")):
+            out.append(p)
+        if len(out) >= n:
+            break
+    return out
+
+
 RAIZ = Path(__file__).resolve().parent
 DATOS = RAIZ / "data" / "metrin"
 
@@ -199,6 +216,8 @@ def main():
         "dime los metrados", "dame el reporte", "muéstrame los costos",
         "pásame el metrado", "cuál es el avance", "cómo va mi obra",
     })
+    # Procesos reales del banco (solo intenciones: el JSONL de estilo no cambia).
+    intenc["sin_evidencia"] = sorted(set(intenc["sin_evidencia"]) | set(procesos_reales()))
     (DATOS / "intenciones.json").write_text(
         json.dumps(intenc, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print("total 300 OK, sin duplicados, solo tono")
