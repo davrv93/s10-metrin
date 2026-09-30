@@ -18,7 +18,7 @@
 
 ## Pendientes
 
-- **Manuales oficiales del portal** (58 de 90 páginas con muro de miembros): esperan la cuenta de miembro de Arturo o una copia que entregue S10.
+- **Manuales oficiales del portal** (58 de 90 páginas con muro de miembros): ya hay cuenta de miembro. Se bajan con `s10kb.py oficial` (credenciales en `.env`, nunca en git) y quedan en la rama `manuales-oficiales` de Cortex. Cuando entren, mandan sobre cualquier copia de terceros.
 - **Tesis UPC Inocencio** (repositorioacademico.upc.edu.pe/handle/10757/688721): el enlace directo devuelve HTML; bajarla a mano desde el repositorio si interesa.
 
 ## Copias de terceros (para bajar a mano con tu cuenta)
