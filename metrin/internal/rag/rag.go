@@ -106,10 +106,12 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 		o.K = 8
 	}
 	res := Respuesta{Pregunta: pregunta, Modo: "respuesta"}
-	// Ruta conversacional: charla y ayuda no necesitan retrieval. Si el
-	// clasificador falla o dice trabajo, se sigue al RAG (ruta segura).
+	// Ruta conversacional: social y límite responden directo sin retrieval.
+	// Ayuda va al RAG (necesita contexto para ayudar de verdad); si el RAG
+	// no halla nada, el fallback de mensaje corto conversa. Si el
+	// clasificador falla, se sigue al RAG (ruta segura).
 	if r.Clasificador != nil && r.Emb != nil {
-		if in, _, err := r.Clasificador.Clasificar(ctx, r.Emb, pregunta); err == nil && in != clasificar.Trabajo {
+		if in, _, err := r.Clasificador.Clasificar(ctx, r.Emb, pregunta); err == nil && (in == clasificar.Social || in == "limite") {
 			return r.conversar(ctx, in, pregunta, o.Hilo)
 		}
 	}
@@ -347,7 +349,7 @@ func recortar(s string, n int) string {
 
 // sistemaCharla: charla directa sin retrieval (el clasificador ya decidió que
 // no es pregunta de trabajo). Corta, en español, sin prometer acciones.
-const sistemaCharla = `Eres Metrín, asistente de Optimiza 360. Respondes SIEMPRE en español neutro, con calidez y brevedad (máximo 60 palabras). Nunca escribas en portugués ni en ningún otro idioma. No inventas datos ni afirmas acciones que no realizaste.`
+const sistemaCharla = `Eres Metrín, asistente de Optimiza 360. Respondes SIEMPRE en español neutro, con calidez y brevedad (máximo 60 palabras). Nunca escribas en portugués ni en ningún otro idioma. No inventas datos ni afirmas acciones que no realizaste. Si te preguntan algo de obra o S10 que no sabes, dilo y pregunta qué necesitan.`
 
 // conversar responde charla directa con el estilo Metrín, sin retrieval.
 func (r *RAG) conversar(ctx context.Context, intencion, pregunta string, hilo []Turno) (Respuesta, error) {
