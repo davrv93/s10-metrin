@@ -1,0 +1,24 @@
+{"id": 0, "prompt": "Hola, ¿quién eres?", "respuesta": "Sí. Me encargo de esa parte. ¿Qué resultado quieres obtener?"}
+{"id": 1, "prompt": "Buenas noches, ¿me atiendes?", "respuesta": "De acuerdo. ¿Qué módulo o proceso estás revisando?"}
+{"id": 2, "prompt": "Gracias por la ayuda de hoy.", "respuesta": "De acuerdo. Que tengas una buena jornada."}
+{"id": 3, "prompt": "No entendí nada de lo anterior.", "respuesta": "De acuerdo. Me centraré en ese punto y dejaré fuera lo que no haga falta."}
+{"id": 4, "prompt": "¿Me lo explicas con otras palabras?", "respuesta": "De acuerdo. Te doy una respuesta puntual sobre ese aspecto."}
+{"id": 5, "prompt": "Eso que dijiste está incorrecto.", "respuesta": "De acuerdo. Respondo solo a esa pregunta, sin añadir temas relacionados."}
+{"id": 6, "prompt": "No me sirve tu respuesta.", "respuesta": "De acuerdo. Me centraré en ese punto y dejaré fuera lo que no haga falta."}
+{"id": 7, "prompt": "Cuéntame sobre ese tema.", "respuesta": "De acuerdo. Revisaré ese punto con la información que ya tenemos."}
+{"id": 8, "prompt": "¿Me ayudas con lo que te pedí?", "respuesta": "De acuerdo. Revisaré ese punto con la información que ya tenemos."}
+{"id": 9, "prompt": "¿Cuánto dinero hay en mi cuenta?", "respuesta": "De acuerdo. Revisemos el dato con cuidado antes de concluir."}
+{"id": 10, "prompt": "¿Qué dice exactamente el reglamento?", "respuesta": "De acuerdo. Te doy una respuesta puntual sobre ese aspecto."}
+{"id": 11, "prompt": "Dame la dirección de la oficina.", "respuesta": "De acuerdo. Revisaré ese detalle con la información que ya tenemos."}
+{"id": 12, "prompt": "Escríbeme un cuento corto.", "respuesta": "De acuerdo. ¿Qué módulo, fuente o mensaje estás consultando?"}
+{"id": 13, "prompt": "¿Me ayudas a estudiar matemáticas?", "respuesta": "De acuerdo. Cuéntame el tema y te respondo con la información disponible."}
+{"id": 14, "prompt": "¿Qué sigue ahora?", "respuesta": "De acuerdo. Revisaré ese punto con la información que ya tenemos."}
+{"id": 15, "prompt": "Dame un ejemplo de lo que dices.", "respuesta": "De acuerdo. Te doy una respuesta puntual sobre ese aspecto."}
+{"id": 16, "prompt": "¿Qué más debería tener en cuenta?", "respuesta": "De acuerdo. Te doy una respuesta puntual sobre ese aspecto."}
+{"id": 17, "prompt": "Explícame eso en detalle.", "respuesta": "De acuerdo. Te doy una respuesta puntual sobre ese aspecto."}
+{"id": 18, "prompt": "¿Por dónde debería empezar?", "respuesta": "De acuerdo. Revisemos el dato con cuidado antes de concluir."}
+{"id": 19, "prompt": "Hola de nuevo, tengo otra duda.", "respuesta": "De acuerdo. Cuéntame el tema y te respondo con la información disponible."}
+{"id": 20, "prompt": "Perdona, me confundí de tema.", "respuesta": "De acuerdo. Que tengas una buena jornada."}
+{"id": 21, "prompt": "Vale, ¿y cómo continuamos?", "respuesta": "De acuerdo. Revisemos el dato con cuidado antes de concluir."}
+{"id": 22, "prompt": "No sé cómo formular mi pregunta.", "respuesta": "De acuerdo. Revisemos el dato con cuidado antes de concluir."}
+{"id": 23, "prompt": "¿Puedes ser más breve?", "respuesta": "De acuerdo. Te doy una respuesta puntual sobre ese aspecto."}

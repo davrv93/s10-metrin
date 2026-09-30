@@ -69,13 +69,30 @@ func TestPreguntaConContexto(t *testing.T) {
 
 func TestSinContextoPorDistancia(t *testing.T) {
 	r, l, fallos := preparar(t, "no debería llamarse")
-	res, _ := r.Preguntar(context.Background(), "¿cómo es el formulario?", Opciones{})
+	res, _ := r.Preguntar(context.Background(), "¿cómo es el formulario de contacto que tiene validaciones?", Opciones{})
 	if !res.SinContexto || l.visto != nil {
 		t.Fatalf("distancia 1 > 0.5: no debe llamar al LLM; %+v", res)
 	}
 	b, _ := os.ReadFile(fallos)
-	if !strings.Contains(string(b), "¿cómo es el formulario?") {
+	if !strings.Contains(string(b), "¿cómo es el formulario") {
 		t.Fatalf("no se registró la pregunta: %q", b)
+	}
+}
+
+func TestSinContextoCortoConversa(t *testing.T) {
+	r, _, fallos := preparar(t, "")
+	sec := &llmSecuencia{respuestas: []string{"Bien, ¿y tú?"}}
+	r.LLM = sec
+	res, err := r.Preguntar(context.Background(), "bien y tú", Opciones{})
+	if err != nil {
+		t.Fatal(err)
+	}
+	if res.Modo != "conversacional" || res.Respuesta != "Bien, ¿y tú?" {
+		t.Fatalf("corto sin contexto debió conversar: %+v", res)
+	}
+	b, _ := os.ReadFile(fallos)
+	if !strings.Contains(string(b), "bien y tú") {
+		t.Fatalf("igual debió registrarse el fallo: %q", b)
 	}
 }
 
@@ -293,6 +310,74 @@ func TestTrabajoSigueAlRAG(t *testing.T) {
 	}
 	if sec.llamadas != 1 {
 		t.Fatalf("sin hilo: 1 llamada, hubo %d", sec.llamadas)
+	}
+}
+
+func TestPreguntaLargaConInterrogacionVaRAG(t *testing.T) {
+	r, _, _ := preparar(t, "")
+	r.MaxDistancia = 2
+	r.Emb = dosEjes{}
+	m, err := clasificar.Entrenar(context.Background(), dosEjes{}, "dos-ejes", 0.0, map[string][]string{
+		"social":  {"hola", "bien y tú"},
+		"trabajo": {"precio del plan"},
+	})
+	if err != nil {
+		t.Fatal(err)
+	}
+	r.Clasificador = m
+	sec := &llmSecuencia{respuestas: []string{"Es una consultora [s3:rag-demo/docs/tarifas.md#0]"}}
+	r.LLM = sec
+	res, err := r.Preguntar(context.Background(), "bien, oye, qué es optimiza 360?", Opciones{})
+	if err != nil {
+		t.Fatal(err)
+	}
+	if res.Modo == "conversacional" && res.Motivo == "" {
+		t.Fatalf("pregunta larga debió ir al RAG, no directo a charla: %+v", res)
+	}
+}
+
+func TestTutorialDetallaSinTope(t *testing.T) {
+	ctx := context.Background()
+	a, _ := almacen.Abrir("", dosEjes{})
+	a.Reemplazar(ctx, "s10kb:t1", indexar.FuenteS10KB, "e1", []almacen.Trozo{{
+		ID: almacen.IDTrozo("s10kb:t1", 0), Texto: "precio con tutorial incluido",
+		Metadata: map[string]string{"source": indexar.FuenteS10KB, "document_id": "cortex:tree/tutoriales/crear", "cita": "Tutorial: crear"},
+	}})
+	l := &llmFijo{respuesta: "1. Abre el módulo. 2. Registra."}
+	r := &RAG{Almacen: a, LLM: l, MaxDistancia: 2, RutaFallos: filepath.Join(t.TempDir(), "f.jsonl")}
+	res, err := r.Preguntar(ctx, "cómo ver precio con tutorial", Opciones{})
+	if err != nil {
+		t.Fatal(err)
+	}
+	if res.Modo != "tutorial" {
+		t.Fatalf("how-to + contexto tutorial debió dar modo tutorial: %+v", res)
+	}
+	res2, err := r.Preguntar(ctx, "qué es el precio", Opciones{})
+	if err != nil {
+		t.Fatal(err)
+	}
+	if res2.Modo != "respuesta" {
+		t.Fatalf("pregunta conceptual no debe disparar tutorial: %+v", res2)
+	}
+	if esTutorial([]almacen.Resultado{{Metadata: map[string]string{"document_id": "x"}}}) {
+		t.Fatal("sin tutorial no debe activar")
+	}
+}
+
+func TestEsHowTo(t *testing.T) {
+	si := []string{"cómo creo un presupuesto?", "pasos para calcular CTS",
+		"guía de nóminas", "ayúdame a registrar", "cómo se anula"}
+	no := []string{"qué es el jornal", "los precios quedan amarrados?",
+		"hola", "cuánto cuesta"}
+	for _, s := range si {
+		if !esHowTo(s) {
+			t.Errorf("debió ser how-to: %q", s)
+		}
+	}
+	for _, s := range no {
+		if esHowTo(s) {
+			t.Errorf("no debió ser how-to: %q", s)
+		}
 	}
 }
 

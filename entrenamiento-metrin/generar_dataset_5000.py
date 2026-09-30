@@ -189,18 +189,31 @@ def main():
         "test": rows[-n_test:],
     }
     OUT.mkdir(parents=True, exist_ok=True)
-    manifest = {"seed": SEED, "total": 5000, "split": {}, "categories": dict(sorted(counts.items())), "unique_conversations": len(signatures)}
+    manifest = {
+        "seed": SEED,
+        "total": 5000,
+        "training_format": "single user-assistant exchange; full 2-turn dialogues are retained separately",
+        "split": {},
+        "categories": dict(sorted(counts.items())),
+        "unique_conversations": len(signatures),
+    }
     for split, items in splits.items():
         path = OUT / f"{split}.jsonl"
         with path.open("w", encoding="utf-8") as f:
             for row in items:
-                f.write(json.dumps({"messages": row["messages"]}, ensure_ascii=False) + "\n")
+                # Serve currently sends the current user turn without prior chat
+                # messages, so each training row must match that inference shape.
+                f.write(json.dumps({"messages": row["messages"][:3]}, ensure_ascii=False) + "\n")
         categories = Counter(row["category"] for row in items)
         manifest["split"][split] = {
             "examples": len(items),
             "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
             "categories": dict(sorted(categories.items())),
         }
+    with (OUT / "conversaciones.jsonl").open("w", encoding="utf-8") as f:
+        for row in rows:
+            f.write(json.dumps({"messages": row["messages"]}, ensure_ascii=False) + "\n")
+    manifest["full_conversations_sha256"] = hashlib.sha256((OUT / "conversaciones.jsonl").read_bytes()).hexdigest()
     (OUT / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(manifest, ensure_ascii=False, indent=2))
 

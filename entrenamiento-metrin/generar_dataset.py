@@ -179,6 +179,11 @@ def main():
         "buenas tardes", "hasta luego", "nos vemos", "adiós", "qué tal estás",
         "me das risa", "qué risa", "qué chistoso", "cansado", "estoy cansado",
         "estoy aburrido", "tengo sueño", "qué día", "estoy feliz", "estoy triste",
+        # Chitchat corto: respuestas de estado y muletillas (una sola siembra,
+        # el fallback por longitud cubre el resto sin reentrenar por frase).
+        "bien y tú", "bien gracias", "más o menos", "aquí andamos",
+        "todo bien", "ok", "dale", "vale", "genial", "perfecto",
+        "de nada", "hasta mañana", "cuídate", "entiendo", "claro que sí",
     })
     intenc["correctivo"] = sorted(set(intenc["correctivo"]) | {
         "está mal tu respuesta", "eso está incorrecto",

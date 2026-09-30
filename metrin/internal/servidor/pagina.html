@@ -36,8 +36,8 @@ svg{display:block}
 .punto{width:7px;height:7px;border-radius:50%;background:#3fae87;box-shadow:0 0 0 3px #3fae8722;flex:none}
 .dock__mood{color:var(--muted);font-size:11.5px;margin-top:2px;min-height:17px}
 .nav{display:grid;gap:4px}
-.nav button{display:flex;align-items:center;gap:9px;padding:8px 10px;border:0;border-radius:9px;background:none;font-size:13px;text-align:left}
-.nav button:hover{background:#f0f5f2}
+.nav button,.nav a{display:flex;align-items:center;gap:9px;padding:8px 10px;border:0;border-radius:9px;background:none;font-size:13px;text-align:left;color:inherit;text-decoration:none;cursor:pointer}
+.nav button:hover,.nav a:hover{background:#f0f5f2}
 .nav svg,.icono svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .nav .cuenta{margin-left:auto;font-size:11px;color:var(--soft)}
 .modulos{flex:1;min-height:0;overflow-y:auto;margin:0 -4px;padding:0 4px;scrollbar-width:thin;scrollbar-color:#cfd9d3 transparent}
@@ -276,6 +276,7 @@ a.fuente__tit:hover{color:var(--green)}
     <nav class="nav" aria-label="Acciones">
       <button type="button" id="navNueva"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>Nueva conversación</button>
       <button type="button" id="navFuentes"><svg viewBox="0 0 24 24"><path d="M6 4.5A2.5 2.5 0 0 1 8.5 2H20v17H8.5A2.5 2.5 0 0 0 6 21.5zM6 4.5v17M10 7h6M10 10h6"/></svg>Fuentes<span class="cuenta" id="cuentaNav">0</span></button>
+      <a id="navAdmin" href="#" target="_blank" rel="noopener" title="Abrir el panel de administración"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19 12a7 7 0 0 0-.1-1.2l2-1.6-2-3.4-2.4 1a7 7 0 0 0-2-1.2L14 3h-4l-.5 2.6a7 7 0 0 0-2 1.2l-2.4-1-2 3.4 2 1.6A7 7 0 0 0 5 12c0 .4 0 .8.1 1.2l-2 1.6 2 3.4 2.4-1a7 7 0 0 0 2 1.2L10 21h4l.5-2.6a7 7 0 0 0 2-1.2l2.4 1 2-3.4-2-1.6c.1-.4.1-.8.1-1.2z"/></svg>Administración</a>
     </nav>
     <section class="modulos" aria-label="Módulos">
       <div class="modulos__cab">Módulos<button type="button" id="verTodoRail">Ver todo</button></div>
@@ -445,7 +446,7 @@ const app=$('#app'),form=$('#form'),input=$('#pregunta'),enviar=$('#enviar'),hil
   estado=$('#estado'),toast=$('#toast'),bot=$('#metrin'),globo=$('#globo'),animoTexto=$('#animoTexto'),dock=$('#dock');
 const quieto=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const W=160,H=200,ALTO_CAJON=150;
-let ocupado=false,ultima=Date.now(),tToast,tGlobo,tVuelta,tVida,lugar='dock',actual={x:0,y:0,s:1},anim=null,turno=0,escalera=null;
+let ocupado=false,ultima=Date.now(),tToast,tGlobo,tVuelta,tVida,lugar='dock',actual={x:0,y:0,s:1},anim=null,turno=0,escalera=null,memoria=[];
 const espera=ms=>new Promise(r=>setTimeout(r,ms));
 const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
 const esMovil=()=>innerWidth<=760;
@@ -620,23 +621,25 @@ function avisar(t){toast.textContent=t;toast.classList.add('ver');clearTimeout(t
 async function preguntar(texto){
   const q=(texto??input.value).trim();if(!q||ocupado)return;
   interrumpir();actividad();ocupado=true;$('#bienvenida').hidden=true;
-  mensaje('usuario',q);input.value='';ajustar();enviar.disabled=true;input.disabled=true;
+  mensaje('usuario',q);memoria.push({rol:'usuario',texto:q});input.value='';ajustar();enviar.disabled=true;input.disabled=true;
   estado.textContent='Buscando en documentos S10…';
   const aguarda=pensando();animo('pensando','Calculando con los materiales de S10');
   volar('mensaje',aguarda).then(()=>{if(ocupado){accion('calcula');decir('Σ metrado × precio unitario…',0)}});
   try{
-    const r=await fetch('/ask',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({pregunta:q,source:'s10-kb',k:8})});
+    const r=await fetch('/ask',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({pregunta:q,source:'s10-kb',k:8,hilo:memoria.slice(-6)})});
     const d=await r.json().catch(()=>({}));
     if(!r.ok)throw new Error(d.error||'No se pudo completar la consulta');
     aguarda.remove();accion(null);
     const m=mensaje('asistente',d.respuesta||'No recibí una respuesta del servicio.',d.fuentes||[]);
     if(d.sugerencias&&d.sugerencias.length)quiza(m,d.sugerencias);
     if(d.id&&d.modo!=='conversacional')valorar(m,d.id,!!d.sin_contexto);
+    memoria.push({rol:'asistente',texto:String(d.respuesta||'').slice(0,300)});memoria=memoria.slice(-6);
     pintarFuentes(d.fuentes||[]);
 	    if(d.sin_contexto){estado.textContent='No encontré evidencia suficiente';animo('confundido','No encontré evidencia suficiente');colocar(destino('mensaje',m));decir('Mmm… no lo encuentro',2400);avisar(d.sugerencias&&d.sugerencias.length?'Quizá la pregunta estaba redactada de otra forma: prueba una sugerencia.':'La anoté: esta noche la repaso para aprenderla.')}
 	    else if(d.modo==='modelo_no_disponible'){estado.textContent='No pude preparar el resumen';animo('confundido','No pude preparar el resumen');colocar(destino('mensaje',m));avisar('El modelo no respondió; las fuentes siguen disponibles.')}
 	    else{estado.textContent='Respuesta basada en fuentes';animo('feliz','¡Listo! Encontré información útil');colocar(destino('mensaje',m));decir('¡Listo!',1800)}
   }catch(e){
+    if(memoria.length&&memoria[memoria.length-1].rol==='usuario')memoria.pop();
     aguarda.remove();accion(null);mensaje('asistente','No pude conectar con el servicio de respuestas. Tu pregunta quedó en el campo para volver a intentarlo.');
     input.value=q;estado.textContent='Servicio no disponible';animo('confundido','No pude conectar con el servicio');decir('Algo falló…',2400);avisar(e.message||'Error de conexión');
   }finally{
@@ -657,11 +660,11 @@ bot.addEventListener('click',()=>{actividad();if(ocupado)return;interrumpir();
 /* ── fuentes, nueva conversación y menú ── */
 function fuentes(abrir){app.classList.toggle('fuentes',abrir??!app.classList.contains('fuentes'));
   setTimeout(()=>{if(lugar==='dock'||lugar==='mensaje')colocar(destino(lugar,lugar==='mensaje'?mensajes.lastElementChild:null))},360)}
-function nueva(){interrumpir();cerrarExplorar();if(catalogo)sugerir();mensajes.querySelectorAll('.msg').forEach(m=>m.remove());$('#bienvenida').hidden=false;pintarFuentes([]);$('#cuentaFuentes').textContent='—';
+function nueva(){memoria=[];interrumpir();cerrarExplorar();if(catalogo)sugerir();mensajes.querySelectorAll('.msg').forEach(m=>m.remove());$('#bienvenida').hidden=false;pintarFuentes([]);$('#cuentaFuentes').textContent='—';
   fuentes(false);estado.textContent='Listo para ayudarte';input.value='';ajustar();enviar.disabled=true;animo('reposo','En línea y listo para ayudarte');volar('dock');menu(false)}
 const rail=$('#rail'),velo=$('#velo'),btnMenu=$('#menu');
 function menu(abrir){rail.classList.toggle('abierto',abrir);velo.classList.toggle('ver',abrir);btnMenu.setAttribute('aria-expanded',String(abrir))}
-$('#btnFuentes').onclick=()=>fuentes();$('#navFuentes').onclick=()=>{fuentes(true);menu(false)};$('#cerrarFuentes').onclick=()=>fuentes(false);
+$('#btnFuentes').onclick=()=>fuentes();$('#navFuentes').onclick=()=>{fuentes(true);menu(false)};$('#navAdmin').href='http://'+location.hostname+':4750';$('#cerrarFuentes').onclick=()=>fuentes(false);
 $('#btnNueva').onclick=nueva;$('#navNueva').onclick=nueva;btnMenu.onclick=()=>menu(!rail.classList.contains('abierto'));velo.onclick=()=>menu(false);
 addEventListener('keydown',e=>{if(e.key==='Escape'){menu(false);if(innerWidth<=1080)fuentes(false)}});
 

@@ -1,10 +1,11 @@
 {
   "seed": 20260930,
   "total": 5000,
+  "training_format": "single user-assistant exchange; full 2-turn dialogues are retained separately",
   "split": {
     "train": {
       "examples": 4500,
-      "sha256": "d747758a88dd042236a85272bd724f2cbd1d87623d6a9c6ed27f70b0d58aedb8",
+      "sha256": "4aab603ddb6d292291494cb9a30a3b5e7372cbf1de452549d4da0308867d38de",
       "categories": {
         "aclaraciones": 721,
         "cierres": 367,
@@ -19,7 +20,7 @@
     },
     "valid": {
       "examples": 250,
-      "sha256": "4701e7ea64d5a7ab98ae251b427e027bb3e5d99c6a3318d55634d71864fab470",
+      "sha256": "7235f68a7e7ce6f480128ae5ec070a7248a933fd957a29ed60bd6bc34ec9b4fc",
       "categories": {
         "aclaraciones": 38,
         "cierres": 14,
@@ -34,7 +35,7 @@
     },
     "test": {
       "examples": 250,
-      "sha256": "33ee66cdec82316bb884d0b507c773ceef1ab76706d2ca0c45e634e18464a39a",
+      "sha256": "426444f5c714483f7ad151459ea0f0e62afc387cab9a8286821d844073548883",
       "categories": {
         "aclaraciones": 41,
         "cierres": 19,
@@ -59,5 +60,6 @@
     "seguimiento": 600,
     "texto_aportado": 800
   },
-  "unique_conversations": 5000
+  "unique_conversations": 5000,
+  "full_conversations_sha256": "8ed4813dac73ca4e182f2567dfdf22f79979193315e1a83516f3149a02af4b61"
 }
