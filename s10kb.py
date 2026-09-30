@@ -387,10 +387,13 @@ def medios(c: Cliente, limite: int = 0) -> dict:
     for i, f in enumerate(filas, 1):
         base = Path(f["archivo"]).stem
         hpath = DATA / "html" / f"{base}.html"
-        if not hpath.exists():
+        if not hpath.exists() or MURO in hpath.read_text(encoding="utf-8"):
             try:
                 r = c.get(f["pagina"])
                 if r.status_code != 200:
+                    stats["errores"] += 1
+                    continue
+                if MURO in r.text:
                     stats["errores"] += 1
                     continue
                 hpath.write_text(r.text, encoding="utf-8")
@@ -804,9 +807,6 @@ def main() -> None:
     if a.paso == "pdfs-publicos":
         pdfs_publicos(c)
         return
-    if a.paso == "medios":
-        medios(c, a.limite)
-        return
     if a.paso == "ampliar":
         ampliar()
         return
@@ -820,6 +820,10 @@ def main() -> None:
             c.cargar_cookies(a.cookies)
         else:
             c.login()
+
+    if a.paso == "medios":
+        medios(c, a.limite)
+        return
 
     urls = json.loads((DATA / "urls.json").read_text()) if (DATA / "urls.json").exists() else []
     if a.paso in ("descubrir", "todo") or (a.paso == "rastrear" and not urls):

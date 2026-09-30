@@ -10,7 +10,7 @@ COPY internal ./internal
 RUN CGO_ENABLED=0 go build -trimpath -ldflags "-s -w" -o /rag ./cmd/rag
 
 FROM alpine:3.22
-RUN apk add --no-cache ca-certificates tzdata
+RUN apk add --no-cache ca-certificates tzdata poppler-utils
 WORKDIR /srv
 COPY --from=build /rag /usr/local/bin/rag
 COPY modelos ./modelos

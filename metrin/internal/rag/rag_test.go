@@ -73,9 +73,26 @@ func TestSinContextoPorDistancia(t *testing.T) {
 	if !res.SinContexto || l.visto != nil {
 		t.Fatalf("distancia 1 > 0.5: no debe llamar al LLM; %+v", res)
 	}
+	if len(res.Fuentes) != 0 {
+		t.Fatalf("una respuesta sin contexto no debe citar resultados irrelevantes: %+v", res.Fuentes)
+	}
 	b, _ := os.ReadFile(fallos)
 	if !strings.Contains(string(b), "¿cómo es el formulario") {
 		t.Fatalf("no se registró la pregunta: %q", b)
+	}
+}
+
+func TestPreguntaSobreAciertosNoBuscaDocumentosNiInventaConteo(t *testing.T) {
+	r, l, _ := preparar(t, "")
+	res, err := r.Preguntar(context.Background(), "¿Cuántas preguntas acertaste hoy?", Opciones{})
+	if err != nil {
+		t.Fatal(err)
+	}
+	if res.Modo != "conversacional" || res.SinContexto || len(res.Fuentes) != 0 || l.visto != nil {
+		t.Fatalf("la pregunta meta no debe ir al RAG ni al LLM: %+v, llamadas=%v", res, l.visto)
+	}
+	if !strings.Contains(res.Respuesta, "No llevo un contador fiable") {
+		t.Fatalf("debe reconocer que no tiene una métrica verificable: %q", res.Respuesta)
 	}
 }
 
@@ -265,6 +282,63 @@ func TestSinHiloUnaSolaLlamada(t *testing.T) {
 	}
 	if sec.llamadas != 1 {
 		t.Fatalf("sin hilo no se reescribe: %d llamadas", sec.llamadas)
+	}
+}
+
+func TestSeguimientosDeUbicacionSeReconocenComoGuia(t *testing.T) {
+	for _, pregunta := range []string{"muéstrame dónde es", "¿dónde lo encuentro?", "me guías?"} {
+		if !esHowTo(pregunta) {
+			t.Errorf("%q debería activar el modo de orientación", pregunta)
+		}
+	}
+}
+
+func TestRegistroPresupuestoPriorizaPaginasDeAlta(t *testing.T) {
+	if !esRegistroNuevoPresupuesto("¿Cómo registro un presupuesto?") {
+		t.Fatal("no reconoció la intención de registrar un presupuesto")
+	}
+	candidatos := []almacen.Resultado{
+		{Metadata: map[string]string{"title": "Guia de Usuario de S10 Presupuestos", "page": "11"}, Distancia: 0.2},
+		{Metadata: map[string]string{"title": "Guia de Usuario de S10 Presupuestos", "page": "12"}, Distancia: 0.3},
+		{Metadata: map[string]string{"title": "Guia de Usuario de S10 Presupuestos", "page": "17"}, Distancia: 0.4},
+		{Metadata: map[string]string{"title": "Guia de Usuario de S10 Presupuestos", "page": "67"}, Distancia: 0.1},
+		{Metadata: map[string]string{"title": "Manual de Gerencia de Proyectos", "page": "11"}, Distancia: 0.1},
+	}
+	got := contextoRegistroNuevoPresupuesto(candidatos)
+	if len(got) != 3 {
+		t.Fatalf("quería las tres páginas de alta del presupuesto, obtuvo %d", len(got))
+	}
+}
+
+func TestRegistroPresupuestoRespondeConPasosVerificados(t *testing.T) {
+	r, l, _ := preparar(t, "respuesta del modelo que no debe usarse")
+	ctx := context.Background()
+	var trozos []almacen.Trozo
+	for _, pagina := range []string{"11", "12", "17"} {
+		trozos = append(trozos, almacen.Trozo{
+			ID:    "guia-p" + pagina,
+			Texto: "Registro del nuevo presupuesto en Datos Generales, Nuevo SubItem, Adicionar y doble clic.",
+			Metadata: map[string]string{"title": "Guia de Usuario de S10 Presupuestos", "page": pagina,
+				"source": "s10-kb", "cita": "Guia de Usuario de S10 Presupuestos, p. " + pagina},
+		})
+	}
+	if err := r.Almacen.Reemplazar(ctx, "guia-presupuestos", "kb", "v1", trozos); err != nil {
+		t.Fatal(err)
+	}
+	res, err := r.Preguntar(ctx, "¿Cómo registro un presupuesto?", Opciones{Filtro: map[string]string{"source": "s10-kb"}})
+	if err != nil {
+		t.Fatal(err)
+	}
+	if l.visto != nil {
+		t.Fatal("la intención de registro debe usar los pasos verificados, no generación libre")
+	}
+	for _, esperado := range []string{"Datos Generales", "Nuevo SubItem", "Adicionar", "doble clic"} {
+		if !strings.Contains(res.Respuesta, esperado) {
+			t.Errorf("respuesta sin paso %q: %s", esperado, res.Respuesta)
+		}
+	}
+	if strings.Contains(strings.ToLower(res.Respuesta), "dimensiones") || strings.Contains(res.Respuesta, "Archivo Central") {
+		t.Fatalf("respuesta mezcló otro procedimiento: %s", res.Respuesta)
 	}
 }
 

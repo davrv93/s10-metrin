@@ -9,6 +9,7 @@ import (
 	"os"
 	"path/filepath"
 	"sort"
+	"strconv"
 	"strings"
 	"sync"
 	"time"
@@ -28,10 +29,10 @@ type Chateador interface {
 type RAG struct {
 	Almacen      *almacen.Almacen
 	LLM          Chateador
-	Emb          embed.Embebedor       // nil = sin ruta conversacional
-	Clasificador *clasificar.Modelo   // nil = todo va al RAG
-	MaxDistancia float64 // si el mejor trozo está más lejos, no hay contexto
-	RutaFallos   string  // datos/sin_respuesta.jsonl
+	Emb          embed.Embebedor    // nil = sin ruta conversacional
+	Clasificador *clasificar.Modelo // nil = todo va al RAG
+	MaxDistancia float64            // si el mejor trozo está más lejos, no hay contexto
+	RutaFallos   string             // datos/sin_respuesta.jsonl
 	mu           sync.Mutex
 }
 
@@ -42,6 +43,9 @@ type Fuente struct {
 	Documento string  `json:"documento,omitempty"`
 	Pagina    int     `json:"pagina,omitempty"`
 	URL       string  `json:"url,omitempty"`
+	// Fotos: rutas relativas bajo el directorio de datos del servidor;
+	// se sirven en GET /fotos/<ruta>. Las arma servidor desde imagenes.jsonl.
+	Fotos []string `json:"fotos,omitempty"`
 }
 
 type Respuesta struct {
@@ -115,6 +119,11 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 		o.K = 8
 	}
 	res := Respuesta{Pregunta: pregunta, Modo: "respuesta"}
+	if esPreguntaSobreAciertos(pregunta) {
+		res.Modo = "conversacional"
+		res.Respuesta = "No llevo un contador fiable de cuántas preguntas respondí correctamente hoy. Puedo revisar contigo las respuestas de esta conversación, pero no quiero inventar una cifra."
+		return res, nil
+	}
 	// Ruta conversacional: social y límite responden directo sin retrieval.
 	// Ayuda va al RAG (necesita contexto para ayudar de verdad); si el RAG
 	// no halla nada, el fallback de mensaje corto conversa. Si el
@@ -134,24 +143,44 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 			res.PreguntaReescrita = re
 		}
 	}
+	busqueda := efectiva
+	if esRegistroNuevoPresupuesto(efectiva) {
+		busqueda += " registro del nuevo presupuesto, escenario Datos Generales, Catálogo de Presupuestos, Nuevo SubItem, Datos adicionales, Adicionar"
+	}
 	t0 := time.Now()
-	trozos, err := r.Almacen.Buscar(ctx, efectiva, o.K, o.Filtro)
+	trozos, err := r.Almacen.Buscar(ctx, busqueda, o.K, o.Filtro)
 	res.TiempoBusq = time.Since(t0)
 	res.MsBusqueda = res.TiempoBusq.Milliseconds()
 	if err != nil {
 		return res, err
 	}
+	if esRegistroNuevoPresupuesto(efectiva) {
+		for _, pagina := range []string{"11", "12", "17"} {
+			filtro := map[string]string{"title": "Guia de Usuario de S10 Presupuestos", "page": pagina}
+			for k, v := range o.Filtro {
+				filtro[k] = v
+			}
+			if guia, err := r.Almacen.Buscar(ctx, "registro del nuevo presupuesto", 1, filtro); err == nil {
+				trozos = append(trozos, guia...)
+			}
+		}
+	}
 	// Segundo pase dinámico: conocimiento curado Cortex. Solo cuando la
 	// pregunta puede tocar s10-kb (sin filtro o con ese source).
 	var cortex []almacen.Resultado
 	if o.Filtro == nil || o.Filtro["source"] == "" || o.Filtro["source"] == indexar.FuenteS10KB {
-		cortex, _ = r.Almacen.Buscar(ctx, efectiva, KCortex, map[string]string{"manual": ManualCortex})
+		cortex, _ = r.Almacen.Buscar(ctx, busqueda, KCortex, map[string]string{"manual": ManualCortex})
 	}
 	candidatos := append(append([]almacen.Resultado(nil), trozos...), cortex...)
 	seleccionados := seleccionarContexto(candidatos, r.MaxDistancia)
 	if esConsultaTiposPresupuesto(pregunta) {
 		if contexto := contextoTiposPresupuesto(cortex); contexto != nil {
 			seleccionados = []almacen.Resultado{*contexto}
+		}
+	}
+	if esRegistroNuevoPresupuesto(efectiva) {
+		if guia := contextoRegistroNuevoPresupuesto(candidatos); len(guia) > 0 {
+			seleccionados = guia
 		}
 	}
 	res.DistanciaMin = 1
@@ -163,6 +192,11 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 		if !contieneCita(res.Fuentes, cita.Cita) {
 			res.Fuentes = append(res.Fuentes, cita)
 		}
+	}
+	if esRegistroNuevoPresupuesto(efectiva) && len(seleccionados) > 0 {
+		res.Modo = "tutorial"
+		res.Respuesta = "Para registrar un presupuesto nuevo:\n1. Ingresa al escenario Datos Generales.\n2. En el árbol del Catálogo de Presupuestos, haz clic derecho en el grupo y elige Nuevo SubItem. Si el grupo aún no existe, créalo primero con esa misma opción y pulsa Adicionar.\n3. Dentro del grupo, vuelve a elegir Nuevo SubItem y completa la ventana Presupuesto: descripción, cliente, ubicación, fecha, plazo, jornada diaria y moneda.\n4. Pulsa Adicionar.\n5. Haz doble clic en el presupuesto para trasladarlo al árbol de Datos Generales."
+		return res, nil
 	}
 	if len(seleccionados) == 0 || res.DistanciaMin > r.MaxDistancia {
 		res.SinContexto = true
@@ -182,6 +216,7 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 				return conv, nil
 			}
 		}
+		res.Fuentes = []Fuente{}
 		res.Respuesta = MarcaSinContexto + " para responder a esa pregunta: no encontré nada relacionado en los documentos indexados."
 		return res, r.registrarFallo(res)
 	}
@@ -207,7 +242,10 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 	// responde con todos los pasos detallados, sin el tope de brevedad.
 	// Sin how-to (pregunta conceptual) el tutorial solo aporta contexto.
 	instruccion := "Responde directamente con los datos pertinentes del contexto. No menciones las etiquetas FUENTE ni describas cómo hiciste la búsqueda."
-	if esHowTo(efectiva) && esTutorial(seleccionados) {
+	if esRegistroNuevoPresupuesto(efectiva) {
+		res.Modo = "tutorial"
+		instruccion = "Explica cómo registrar un presupuesto nuevo en S10 usando únicamente los pasos y nombres de opciones que aparecen en el contexto. Distingue Datos Generales de Gerencia de Proyectos. No hables de cambiar dimensiones ni de permisos. Si algún dato no aparece en las fuentes, no lo inventes. Da pasos numerados y claros."
+	} else if esHowTo(efectiva) && esTutorial(seleccionados) {
 		res.Modo = "tutorial"
 		instruccion = "Es una guía paso a paso: responde con TODOS los pasos necesarios, numerados, cada uno con la acción concreta (dónde hacer clic, qué llenar, qué validar). Sin límite de palabras; la brevedad no aplica aquí. Cada paso debe salir del contexto: prohibido inventar clics, botones o pasos de cierre como «haz clic en Guardar»."
 	}
@@ -241,10 +279,46 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 	res.Respuesta = texto
 	if DiceSinContexto(texto) {
 		res.SinContexto = true
+		res.Fuentes = []Fuente{}
 		res.Motivo = "el modelo dijo que el contexto no alcanza"
 		return res, r.registrarFallo(res)
 	}
 	return res, nil
+}
+
+func esPreguntaSobreAciertos(pregunta string) bool {
+	p := strings.ToLower(pregunta)
+	tieneTiempo := strings.Contains(p, "hoy") || strings.Contains(p, "esta conversación") || strings.Contains(p, "esta conversacion")
+	tieneAcierto := strings.Contains(p, "acert") || strings.Contains(p, "correct") ||
+		(strings.Contains(p, "pregunt") && (strings.Contains(p, "respond") || strings.Contains(p, "bien")))
+	return tieneTiempo && tieneAcierto
+}
+
+func esRegistroNuevoPresupuesto(pregunta string) bool {
+	t := strings.ToLower(pregunta)
+	if !strings.Contains(t, "presupuest") {
+		return false
+	}
+	for _, palabra := range []string{"registr", "registro", "crear", "nuevo", "dar de alta", "ingresar"} {
+		if strings.Contains(t, palabra) {
+			return true
+		}
+	}
+	return false
+}
+
+func contextoRegistroNuevoPresupuesto(candidatos []almacen.Resultado) []almacen.Resultado {
+	var guia []almacen.Resultado
+	for _, c := range candidatos {
+		if !strings.Contains(strings.ToLower(c.Metadata["title"]), "guia de usuario de s10 presupuestos") {
+			continue
+		}
+		pagina, _ := strconv.Atoi(c.Metadata["page"])
+		if pagina == 11 || pagina == 12 || pagina == 17 {
+			guia = append(guia, c)
+		}
+	}
+	return guia
 }
 
 func esConsultaTiposPresupuesto(pregunta string) bool {
@@ -434,7 +508,8 @@ func esHowTo(pregunta string) bool {
 	p := " " + strings.ToLower(pregunta) + " "
 	for _, w := range []string{"cómo", "como ", "pasos", "paso a paso", "crear",
 		"calcular", "guía", "guia", "tutorial", "cómo se", "como se", "ayúdame a",
-		"ayudame a", "enséñame", "ensename a", "que debo hacer", "qué debo hacer"} {
+		"ayudame a", "enséñame", "ensename a", "que debo hacer", "qué debo hacer",
+		"dónde", "donde", "muéstrame", "muestrame", "ubicar", "encontrar", "me guías", "me guias"} {
 		if strings.Contains(p, w) {
 			return true
 		}

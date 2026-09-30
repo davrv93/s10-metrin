@@ -78,6 +78,7 @@ services:
       RAG_MAX_DISTANCIA: "0.80"
     volumes:
       - ./kb:/kb:ro
+      - ./data:/datos:ro
       - metrin-datos:/srv/datos
     extra_hosts: ["host.docker.internal:host-gateway"]
     ports: ["127.0.0.1:${S10_PUERTO_METRIN:-4760}:4760"]
