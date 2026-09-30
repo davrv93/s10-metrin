@@ -1,0 +1,42 @@
+# secretos
+.env
+metrin/.env
+.cortex/*secret*
+**/*.pem
+**/*token*.json
+
+# entornos
+.venv/
+entrenamiento-metrin/.venv/
+.venv-repro/
+__pycache__/
+
+# índice y modelos pesados (se regeneran: index-kb, embeddings, LoRA)
+metrin/datos/
+*.pjge
+*.gob
+
+# binarios pesados o de terceros (se regeneran con s10kb.py / youtube.py / ui.py)
+entrada/
+data/pdf/
+data/yt/audio/
+data/ui/capturas/
+data/tessdata/
+data/lora/crudo/
+data/preguntas/crudo/
+data/lora/*.jsonl
+*.log
+
+# datos que SÍ se versionan: kb/ (base de fragmentos + catálogo), banco de preguntas,
+# borradores de Cortex, texto extraído y estado de programación
+data/*
+!data/preguntas/
+!data/cortex-borradores/
+!data/paginas/
+!data/paginas.jsonl
+!data/manifiesto.jsonl
+!data/enlaces.jsonl
+!data/programacion.json
+!data/lora/
+!data/lora/resumen.json
+data/preguntas/crudo/

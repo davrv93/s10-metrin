@@ -1,0 +1,369 @@
+{
+ "por_nodo": {
+  "(raíz)": {
+   "cuota": 155,
+   "obtenidas": 155
+  },
+  "administrativo": {
+   "cuota": 137,
+   "obtenidas": 137
+  },
+  "administrativo/caja-bancos-y-fondos": {
+   "cuota": 148,
+   "obtenidas": 148
+  },
+  "administrativo/ordenes-de-pago": {
+   "cuota": 143,
+   "obtenidas": 143
+  },
+  "administrativo/pago-de-detracciones": {
+   "cuota": 157,
+   "obtenidas": 157
+  },
+  "almacenes": {
+   "cuota": 150,
+   "obtenidas": 150
+  },
+  "almacenes/anticipos-y-regularizacion-compuesta": {
+   "cuota": 159,
+   "obtenidas": 159
+  },
+  "almacenes/caso-upn-ingresos-salidas-e-inventario": {
+   "cuota": 160,
+   "obtenidas": 160
+  },
+  "almacenes/configuracion-de-almacenes": {
+   "cuota": 144,
+   "obtenidas": 144
+  },
+  "almacenes/egresos-y-transferencias": {
+   "cuota": 153,
+   "obtenidas": 153
+  },
+  "almacenes/movimientos-de-ingreso": {
+   "cuota": 162,
+   "obtenidas": 162
+  },
+  "compras": {
+   "cuota": 145,
+   "obtenidas": 145
+  },
+  "compras/caso-upn-flujo-y-resultados": {
+   "cuota": 172,
+   "obtenidas": 172
+  },
+  "compras/configuracion-y-catalogos": {
+   "cuota": 143,
+   "obtenidas": 143
+  },
+  "compras/pedidos-cotizaciones-y-ordenes": {
+   "cuota": 147,
+   "obtenidas": 147
+  },
+  "compras/pedidos-y-aprobaciones-moviles": {
+   "cuota": 151,
+   "obtenidas": 151
+  },
+  "contabilidad": {
+   "cuota": 136,
+   "obtenidas": 136
+  },
+  "contabilidad/libros-y-estados-financieros": {
+   "cuota": 133,
+   "obtenidas": 133
+  },
+  "contabilidad/plan-contable-y-esquema": {
+   "cuota": 139,
+   "obtenidas": 139
+  },
+  "facturacion": {
+   "cuota": 148,
+   "obtenidas": 148
+  },
+  "facturacion/anticipo-de-proveedor": {
+   "cuota": 153,
+   "obtenidas": 153
+  },
+  "facturacion/documentos-y-catalogos-tributarios": {
+   "cuota": 146,
+   "obtenidas": 146
+  },
+  "facturacion/plazo-envio-documento-electronico": {
+   "cuota": 121,
+   "obtenidas": 121
+  },
+  "fuentes": {
+   "cuota": 145,
+   "obtenidas": 145
+  },
+  "fuentes/catalogo": {
+   "cuota": 183,
+   "obtenidas": 183
+  },
+  "fuentes/informe-concytec": {
+   "cuota": 161,
+   "obtenidas": 161
+  },
+  "fuentes/metrin": {
+   "cuota": 168,
+   "obtenidas": 168
+  },
+  "fuentes/programacion": {
+   "cuota": 108,
+   "obtenidas": 108
+  },
+  "fuentes/youtube": {
+   "cuota": 172,
+   "obtenidas": 172
+  },
+  "gerencia-proyectos": {
+   "cuota": 155,
+   "obtenidas": 155
+  },
+  "gerencia-proyectos/avances-y-resultados-operativos": {
+   "cuota": 143,
+   "obtenidas": 143
+  },
+  "gerencia-proyectos/calidad-movil": {
+   "cuota": 154,
+   "obtenidas": 154
+  },
+  "gerencia-proyectos/gestion-de-recursos-de-obra": {
+   "cuota": 145,
+   "obtenidas": 145
+  },
+  "gerencia-proyectos/planificacion-y-cronograma": {
+   "cuota": 147,
+   "obtenidas": 147
+  },
+  "gerencia-proyectos/tareo-y-lean-lookahead": {
+   "cuota": 158,
+   "obtenidas": 158
+  },
+  "nominas": {
+   "cuota": 160,
+   "obtenidas": 160
+  },
+  "nominas/aporte-fondo-capacitacion": {
+   "cuota": 167,
+   "obtenidas": 167
+  },
+  "nominas/ciclo-de-calculo": {
+   "cuota": 163,
+   "obtenidas": 163
+  },
+  "nominas/construccion-civil-jornales": {
+   "cuota": 155,
+   "obtenidas": 155
+  },
+  "nominas/cts": {
+   "cuota": 166,
+   "obtenidas": 166
+  },
+  "nominas/feriados-calendario": {
+   "cuota": 143,
+   "obtenidas": 143
+  },
+  "nominas/gratificacion": {
+   "cuota": 149,
+   "obtenidas": 149
+  },
+  "nominas/parametros-legales-uit-rmv-afp": {
+   "cuota": 177,
+   "obtenidas": 177
+  },
+  "optimiza360": {
+   "cuota": 119,
+   "obtenidas": 119
+  },
+  "optimiza360/clientes": {
+   "cuota": 75,
+   "obtenidas": 75
+  },
+  "optimiza360/contacto": {
+   "cuota": 92,
+   "obtenidas": 92
+  },
+  "optimiza360/fundador": {
+   "cuota": 119,
+   "obtenidas": 119
+  },
+  "optimiza360/quienes-somos": {
+   "cuota": 108,
+   "obtenidas": 108
+  },
+  "optimiza360/servicios": {
+   "cuota": 140,
+   "obtenidas": 140
+  },
+  "portales": {
+   "cuota": 157,
+   "obtenidas": 157
+  },
+  "portales/aprobaciones-pedidos-moviles": {
+   "cuota": 151,
+   "obtenidas": 151
+  },
+  "portales/asistencia": {
+   "cuota": 157,
+   "obtenidas": 157
+  },
+  "portales/empleado": {
+   "cuota": 174,
+   "obtenidas": 174
+  },
+  "portales/facturacion-electronica": {
+   "cuota": 144,
+   "obtenidas": 144
+  },
+  "portales/proveedores": {
+   "cuota": 165,
+   "obtenidas": 165
+  },
+  "presupuestos": {
+   "cuota": 174,
+   "obtenidas": 174
+  },
+  "presupuestos/analisis-de-precios-unitarios-y-catalogos": {
+   "cuota": 192,
+   "obtenidas": 192
+  },
+  "presupuestos/armar-la-hoja-del-presupuesto": {
+   "cuota": 192,
+   "obtenidas": 192
+  },
+  "presupuestos/carpeta-de-trabajo-y-acceso": {
+   "cuota": 179,
+   "obtenidas": 179
+  },
+  "presupuestos/conceptos-y-estructura": {
+   "cuota": 183,
+   "obtenidas": 183
+  },
+  "presupuestos/instalacion-y-licencia": {
+   "cuota": 181,
+   "obtenidas": 181
+  },
+  "presupuestos/metrados-precios-y-procesamiento": {
+   "cuota": 189,
+   "obtenidas": 189
+  },
+  "presupuestos/pie-gastos-generales-y-formula-polinomica": {
+   "cuota": 198,
+   "obtenidas": 198
+  },
+  "presupuestos/registro-y-secuencia-de-uso": {
+   "cuota": 185,
+   "obtenidas": 185
+  },
+  "presupuestos/reportes-y-transportabilidad": {
+   "cuota": 188,
+   "obtenidas": 188
+  },
+  "reportes-sql": {
+   "cuota": 102,
+   "obtenidas": 102
+  },
+  "reportes-sql/constantes-vigentes": {
+   "cuota": 109,
+   "obtenidas": 109
+  },
+  "reportes-sql/cts": {
+   "cuota": 102,
+   "obtenidas": 102
+  },
+  "reportes-sql/gratificaciones": {
+   "cuota": 101,
+   "obtenidas": 101
+  },
+  "reportes-sql/jornal-promedio": {
+   "cuota": 112,
+   "obtenidas": 112
+  },
+  "reportes-sql/planilla-costos": {
+   "cuota": 102,
+   "obtenidas": 102
+  },
+  "reportes-sql/tareo-horas": {
+   "cuota": 112,
+   "obtenidas": 112
+  },
+  "soporte": {
+   "cuota": 144,
+   "obtenidas": 144
+  },
+  "soporte/asistencia-remota": {
+   "cuota": 167,
+   "obtenidas": 167
+  },
+  "soporte/capacitaciones": {
+   "cuota": 172,
+   "obtenidas": 172
+  },
+  "soporte/portal-de-ayuda": {
+   "cuota": 167,
+   "obtenidas": 167
+  },
+  "soporte/tickets-crear": {
+   "cuota": 171,
+   "obtenidas": 171
+  },
+  "soporte/tickets-seguimiento": {
+   "cuota": 157,
+   "obtenidas": 157
+  },
+  "tutoriales/calcular-cts-de-trabajador-de-construccion-civil": {
+   "cuota": 354,
+   "obtenidas": 354
+  },
+  "tutoriales/crear-un-presupuesto-de-obra-desde-cero-en-s10-presupuestos": {
+   "cuota": 529,
+   "obtenidas": 529
+  },
+  "tutoriales/emitir-factura-electronica-y-enviarla-a-sunat": {
+   "cuota": 434,
+   "obtenidas": 434
+  },
+  "tutoriales/generar-orden-de-compra-desde-el-pedido-de-obra-con-cotizaci": {
+   "cuota": 396,
+   "obtenidas": 396
+  },
+  "tutoriales/ingreso-de-materiales-al-almacen-de-obra-desde-orden-de-comp": {
+   "cuota": 369,
+   "obtenidas": 369
+  },
+  "ui-pantallas/17w0yki8iew": {
+   "cuota": 217,
+   "obtenidas": 217
+  }
+ },
+ "por_tipo": {
+  "concepto": 3740,
+  "dato": 866,
+  "comparacion": 1023,
+  "contexto": 226,
+  "procedimiento": 4840,
+  "problema": 3305
+ },
+ "por_rama": {
+  "(raíz)": 155,
+  "administrativo": 585,
+  "almacenes": 928,
+  "compras": 758,
+  "contabilidad": 408,
+  "facturacion": 568,
+  "fuentes": 937,
+  "gerencia-proyectos": 902,
+  "nominas": 1280,
+  "optimiza360": 653,
+  "portales": 948,
+  "presupuestos": 1861,
+  "reportes-sql": 740,
+  "soporte": 978,
+  "tutoriales": 2082,
+  "ui-pantallas": 217
+ },
+ "total_base": 14000,
+ "total_textos": 56000,
+ "faltan": {}
+}

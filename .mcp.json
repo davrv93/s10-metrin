@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "cortex": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "cortexboard@0.4.0", "mcp", "--actor", "ai-agent"],
+      "env": {}
+    }
+  }
+}

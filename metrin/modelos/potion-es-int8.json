@@ -1,0 +1,12 @@
+{
+  "base": "minishlab/potion-multilingual-128M@73908c3438cf03b6a01bcb9611d62b23d0726f08",
+  "modo": "tomar",
+  "piezas": 32420,
+  "piezas_originales": 500353,
+  "dim": 256,
+  "cuant": "int8",
+  "bytes": 8903470,
+  "sha256": "10c8dbd2f1677265a503eba0450b2140006687ad9dbb0c540d1b68be77c04528",
+  "textos_corpus": 107212,
+  "tabla_normalizacion": 4837
+}

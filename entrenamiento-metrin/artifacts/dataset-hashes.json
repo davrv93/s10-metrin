@@ -1,0 +1,14 @@
+{
+  "train": {
+    "ejemplos": 244,
+    "sha256": "8b0a9b8b36e87d054af7e167ed604b45617db9b4efaf7c030f3ba888bb68a9dc"
+  },
+  "valid": {
+    "ejemplos": 28,
+    "sha256": "bf0739cb3c655b75168425664cb84731bab8fdad676be7cb8461f5b2bd173ba6"
+  },
+  "test": {
+    "ejemplos": 28,
+    "sha256": "42daeb937f7739ec04a6caa69d50a77dfd2df0b2b13379ab858f797c831e4181"
+  }
+}

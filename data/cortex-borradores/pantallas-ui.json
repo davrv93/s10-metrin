@@ -1,0 +1,26 @@
+[
+ {
+  "path": "ui-pantallas",
+  "title": "Pantallas del ERP documentadas por visión",
+  "summary": "Esquemas de campos extraídos de los tutoriales oficiales (capturas + OCR tesseract + gemma3:4b, fusionados). Un nodo por video/pantalla dominante; el esquema es borrador hasta que S10 lo valida en el HTML de ui.py render.",
+  "body": "Método: los videos del canal oficial muestran las pantallas reales del ERP. Por captura se corre OCR (tesseract, cadena exacta y caja) y un VLM local (gemma3:4b vía Ollama, semántica: qué campo es y de qué tipo), y se fusionan: la etiqueta final es la del OCR solo si coincide palabra por palabra, el valor y el tipo vienen del VLM. El resultado es un borrador revisable en el HTML que genera `ui.py render` (arrastrar y exportar).\n\n**Lecciones del piloto (2026-09-30, video 17W0yKI8iew):** 60 capturas = 1 pantalla en dos estados (grilla y detalle); los títulos de ventana que lee la máquina NO sirven (S10→510/$10, la barra de estado aparece como pantalla), por eso los títulos de los nodos se fijan a mano en CANONICAS y un nodo por video. Limitaciones medidas: el VLM confunde letras (UIT→UT) y lee el calendario del date-picker; el OCR a veces cruza celdas vecinas. Regenerable con: `ui.py kb && ui.py cortex && herramientas/cargar_cortex.py data/cortex-borradores/pantallas-ui.json`.",
+  "tags": [
+   "ui",
+   "pantallas",
+   "ocr",
+   "vlm",
+   "metodo"
+  ]
+ },
+ {
+  "path": "ui-pantallas/17w0yki8iew",
+  "title": "Constantes por Fecha General (S10 Nóminas)",
+  "summary": "Pantalla del tutorial 17W0yKI8iew: 30 campos del formulario detectados por OCR+visión. Borrador pendiente de validación visual de S10.",
+  "body": "Pantalla «Constantes por Fecha General (S10 Nóminas)», vista en el tutorial https://youtu.be/17W0yKI8iew?t=36 (la muestran 60 capturas del video).\n\n### Formulario (detalle)\n\n- **Cempo[Grupo** (texto) [filtros] (confirmado por OCR 0.88)\n- **Subgrupo** (texto) [filtros]\n- **Código** (texto) [filtros] (confirmado por OCR 0.91)\n- **Concepto** (texto) [filtros] (confirmado por OCR 0.94)\n- **Abreviatura** (texto) [filtros]\n- **Tipo Valor** (texto) [filtros] (confirmado por OCR 0.84)\n- **Valor** (texto) con valor «1025» [filtros] (confirmado por OCR 1.0)\n- **Fecha Inicio** (fecha) con valor «01/01/2024» [filtros]\n- **Observaciones** (texto) [filtros] (confirmado por OCR 1.0)\n- **Tema** (texto) con valor «General» [filtros] (confirmado por OCR 1.0)\n- **Servidor** (texto) con valor «Servidor-PRDGRIPHB.Base de Datos-NÓMINAS_FINAL» [detalle]\n- **Usuario** (texto) con valor «usuario» [detalle]\n- **02/010 VARIABLES EMPLEADOS** (texto) [filtros] (confirmado por OCR 0.75)\n- **04/001 DATOS Y PORCENCIALES** (texto) [filtros]\n- **04/0101** (texto) [filtros]\n- **04/0108** (texto) [filtros]\n- **04/0110** (texto) [filtros]\n- **04/0111** (texto) [filtros]\n- **04/0112** (texto) [filtros]\n- **04/0113** (texto) [filtros]\n- **04/0114** (texto) [filtros]\n- **04/0115** (texto) [filtros]\n- **04/0116** (texto) [filtros]\n- **04/0117** (texto) [filtros]\n- **04/0118** (texto) [filtros]\n- **04/0119** (texto) [filtros]\n- **04/0120** (texto) [filtros]\n- **04/0121** (texto) [filtros]\n- **04/0122** (texto) [filtros]\n- **04/0123** (texto) [filtros]\n\n### Estado alternativo (grilla/listado)\n\n- **Grupo** (texto) [filtros] (confirmado por OCR 0.88)\n- **subgrupo** (texto) [filtros] (confirmado por OCR 1.0)\n- **Concepto** (texto) [filtros] (confirmado por OCR 0.94)\n- **Código** (texto) [filtros]\n- **Abreviatura** (texto) con valor «UIT» [filtros]\n- **Tipo Valor** (texto) con valor «Moneda» [filtros]\n- **Fecha Inicio** (fecha) con valor «01/01/2024» [filtros]\n- **Fecha Fin** (fecha) [filtros] (confirmado por OCR 0.71)\n- **Valor** (número) con valor «1025» [filtros] (confirmado por OCR 1.0)\n- **Observaciones** (texto) [filtros] (confirmado por OCR 1.0)\n- **Servidor** (texto) con valor «SERVIDOR-PROGGERIPhb.Base de Datos-NÓMINAS_FINAL» [detalle]\n- **Usuario** (texto) con valor «usuario» [detalle]\n\n**Estado:** borrador generado por OCR + visión, consolidado a un nodo por video tras la revisión del 2026-09-30 (los nodos por captura eran duplicados con títulos mal leídos). La fuente autorizada sigue siendo el manual del módulo (pendiente de acceso al portal). Validar/corregir en el HTML de `ui.py render` y volver a exportar.",
+  "tags": [
+   "ui",
+   "pantalla",
+   "nominas"
+  ]
+ }
+]

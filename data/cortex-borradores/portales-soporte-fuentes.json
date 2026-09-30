@@ -1,0 +1,231 @@
+[
+ {
+  "path": "",
+  "title": "S10 Conocimiento",
+  "summary": "Base de conocimiento sobre S10 ERP, el software peruano de gestión para constructoras e inmobiliarias. Empieza aquí: qué es S10, sus módulos, portales y apps, y cómo están organizadas las ramas.",
+  "body": "## Qué es S10 ERP\n\nS10 ERP es el software de gestión de **SISTEMA10 SAC** (S10 Perú, Av. San Borja Sur 754, San Borja, Lima), pensado para empresas del **sector construcción e inmobiliario**. La empresa se presenta como creadora «del Software de Gestión ERP más potente pensado para empresas del sector construcción e inmobiliario». Su portal de ayuda declara 11.600 licencias vendidas, 2.100 clientes, 26 años en el mercado y presencia en 7 países (cifras de la portada, sin fecha exacta).\n\n## Qué cubre\n\n- **Módulos del ERP:** Presupuestos, Gerencia de Proyectos, Lean, Compras, Almacenes, Nóminas, Facturación, Administrativo y Contabilidad. Integrados, ordenan los procesos del negocio y automatizan tareas operativas.\n- **Aplicaciones móviles:** Tareo Móvil, Calidad Móvil, Aprobaciones Móviles y Pedidos Móviles.\n- **Portales web:** Portal del Colaborador (o del Empleado), Portal del Proveedor y Portal de Facturación Electrónica; además, integración con el CRM Sperant.\n- **Servicios:** capacitaciones, implantación y soporte.\n\n## Cómo está organizada esta base\n\n1. **portales** — qué hace cada portal web y app de aprobación/pedido, y dónde está su manual.\n2. **soporte** — tickets, asistencia remota, portal de ayuda y cursos.\n3. **fuentes** — de dónde sale cada dato, cuánto fiarse de él y qué falta.\n4. Las demás ramas tratan los módulos del ERP.\n\nEsta base la usa **Metrín**, el asistente de obra: responde con lo que aquí consta y cita la fuente. Antes de dar una respuesta, revisa su nivel de confiabilidad en `fuentes/catalogo`.\n\n**Confiabilidad:** oficial S10\n\n**Fuentes**\n- data/paginas/sin-nombre.md (portada del Portal de Ayuda, documentacion.s10peru.com)\n- data/paginas/inicio.md (Home del Portal de Ayuda S10)\n- data/texto/s10-politica-sgsst.txt (Política SGSST, introducción, marzo 2021)\n- data/paginas/unete.md (contacto comercial)\n",
+  "tags": [
+   "s10-erp",
+   "construccion",
+   "inmobiliario",
+   "modulos",
+   "oficial-s10"
+  ]
+ },
+ {
+  "path": "portales",
+  "title": "Portales web y apps de gestión",
+  "summary": "Portales web de S10 (Proveedor, Colaborador/Empleado, Facturación Electrónica, Asistencia) y apps de Aprobaciones y Pedidos Móviles: para qué sirve cada uno y dónde está su manual.",
+  "body": "S10 complementa el ERP de escritorio con **portales web** que usan personas fuera del sistema (proveedores, trabajadores) y con **aplicaciones móviles** para el personal de obra.\n\n## Qué portales hay\n\n| Portal / app | Para quién | Material en el portal de ayuda |\n|---|---|---|\n| Portal del Proveedor | Proveedores de la empresa | 2 documentos; manuales de Compras y Almacén y de Suministros |\n| Portal del Colaborador / Empleado | Trabajadores | 1 documento (Colaborador); 12 (Empleado, en otra versión de la portada) |\n| Portal de Facturación Electrónica | — (sin detalle público) | 25 documentos |\n| Portal de Asistencia | — (sin detalle público) | 1 manual; lista de reproducción en YouTube |\n| Aprobaciones Móviles (app) | — (sin detalle público) | 9 temas |\n| Pedidos Móviles (app) | — (sin detalle público) | 1 manual |\n\n## Hijos de esta rama\n\n1. `portales/proveedores` — configurar y usar el portal de proveedores.\n2. `portales/empleado` — Portal del Empleado / Colaborador: boletas, CTS y otros documentos.\n3. `portales/facturacion-electronica` — portal de comprobantes electrónicos.\n4. `portales/asistencia` — portal de asistencia.\n5. `portales/aprobaciones-pedidos-moviles` — apps de aprobación y pedidos.\n\n## Límite importante\n\nCasi todos los manuales de estos portales están tras el **login de miembros** del portal de ayuda (documentacion.s10peru.com). Esta base solo tiene sus títulos y lo que se explica en los videos públicos del canal oficial. Si el usuario necesita el paso a paso completo, Metrín debe mandarlo al manual del portal de ayuda (`soporte/portal-de-ayuda`).\n\n**Confiabilidad:** oficial S10\n\n**Fuentes**\n- data/paginas/inicio.md y data/paginas/home2.md (índices del Portal de Ayuda)\n- data/paginas/sidebar-general-dic-19.md, data/paginas/panel-02.md (menús)\n- data/yt/videos.txt (títulos de videos del canal oficial)\n",
+  "tags": [
+   "portales",
+   "proveedor",
+   "empleado",
+   "facturacion-electronica",
+   "oficial-s10"
+  ]
+ },
+ {
+  "path": "portales/proveedores",
+  "title": "Portal de Proveedores",
+  "summary": "Para activar el Portal de Proveedores: en Catálogos > Socio de negocio, fija el monto mínimo de pago a notificar y marca al administrador del portal en Contactos. Repite por cada empresa del grupo.",
+  "body": "El **Portal de Proveedores S10** es un portal web para los proveedores de la empresa; entre otras cosas, les notifica pagos. El video oficial explica que la configuración inicial tiene **dos pasos**: definir el **monto mínimo de pago** que se notifica al proveedor y elegir **quién administra** el portal.\n\n## Cómo configurarlo\n\nPuede hacerse desde **cualquier módulo** de S10 ERP; el video usa Presupuestos.\n\n1. Entra a **Catálogos > Socio de negocio**.\n2. Ubícate en el tipo de socio de negocio **Empresas del grupo** y selecciona la empresa que usará el portal.\n3. Clic derecho > **Modificar**.\n4. En el recuadro de notificación indica el **monto mínimo** a partir del cual se avisa al proveedor. El video usa **700 soles** y lo justifica como «el monto mínimo desde el que se hacen las retenciones».\n5. Pasa a la pestaña **Contactos** y, en la columna correspondiente, marca a la persona que será **administrador del portal**.\n6. Pulsa **Modificar** para guardar. La empresa ya puede trabajar con el portal.\n7. Si el grupo tiene varias empresas, **repite los pasos para cada una**.\n\n## Manuales\n\nEl portal de ayuda publica «Manual del Portal del Proveedor», «Acceso a Manual Portal Proveedores – Compras y Almacén» y «Acceso a Manual Portal Suministros», todos tras el login de miembros. La página «Acceso a Manual Portal Proveedores» remite a un **nuevo Manual de Proveedores S10**. Existe además el video «Nuevo Portal de Proveedores S10» (56 s), que no tiene narración transcrita.\n\n## Aviso\n\nLos 700 soles son el ejemplo del video y dependen del umbral legal de retenciones vigente cuando se grabó. Antes de usarlo, confirma el umbral actual.\n\n**Confiabilidad:** oficial S10\n\n**Fuentes**\n- Video sk4FTrMK6dE «¿Cómo configurar el Portal de Proveedores? - S10 ERP» (data/yt/transcripciones/sk4FTrMK6dE.txt)\n- Video 8D20HHeqdxw «Nuevo Portal de Proveedores S10» (sin audio hablado)\n- data/paginas/manual-portal-proveedor.md, acceso-a-manual-portal-proveedores.md, acceso-a-manual-portal-proveedores-compras-y-almacen.md, acceso-a-manual-portal-suministros.md\n",
+  "tags": [
+   "portal-proveedores",
+   "socio-de-negocio",
+   "configuracion",
+   "retenciones",
+   "oficial-s10"
+  ]
+ },
+ {
+  "path": "portales/empleado",
+  "title": "Portal del Empleado y del Colaborador",
+  "summary": "El Portal del Empleado/Colaborador S10 deja al trabajador ver y descargar boletas, CTS, liquidaciones y certificados, pedir permisos y ver vacaciones y marcaciones desde cualquier dispositivo. Se entra con el enlace y la clave que llegan por correo.",
+  "body": "El **Portal del Empleado S10** es una herramienta web para que los trabajadores revisen sus documentos laborales desde donde estén y con cualquier dispositivo. La empresa lo presenta con espacio ilimitado y los documentos resguardados. En el portal de ayuda aparece también como **Portal del Colaborador**; existe un video «Nuevo Portal del Colaborador S10».\n\n## Qué documentos puede enviar la empresa\n\n- Boletas de pago\n- CTS\n- Retención de quinta categoría\n- Liquidaciones\n- Utilidades\n- Certificados de trabajo\n- Otros documentos\n\n## Cómo lo usa el trabajador\n\n1. Recibe un **correo electrónico** con el enlace del portal.\n2. Entra con el **usuario y la contraseña** que se le asignaron.\n3. Si quiere, actualiza sus **datos personales** y sube una **foto de perfil**.\n4. Pulsa **Buscar documentos** y elige el archivo que necesita.\n5. Filtra la búsqueda por **fecha** y **tipo de documento**.\n6. Con un clic **descarga** el resultado; el video menciona la descarga a Excel.\n\n## Portal del Colaborador: lo que agrega\n\nSegún el video «Nuevo Portal del Colaborador S10», el portal descentraliza tareas de recursos humanos:\n- documentos como **contratos de trabajo** y boletas;\n- **solicitudes de permisos**, que aprueban los **jefes directos** asignados por la empresa;\n- **organigrama** de la organización;\n- **reportes de marcaciones y asistencias**;\n- gestión de **vacaciones**.\n\n## Manuales\n\nEl portal de ayuda tiene «Acceso a Manual del Colaborador» y la sección «Videos de Portal del Empleado», ambos tras el login de miembros. La portada cuenta 1 documento para el Portal del Colaborador; otra versión cuenta 12 para el Portal del Empleado.\n\n## Qué no cubre esta base\n\nNo hay acceso al manual. Por eso esta base no puede decir cómo carga la empresa los documentos ni cómo se tramita un permiso paso a paso. Esa respuesta está en el manual oficial o en soporte.\n\n**Confiabilidad:** oficial S10\n\n**Fuentes**\n- Video QHH4oK0m9cI «¿Qué es y cómo funciona el portal del Empleado? - Grupo S10»\n- Video x3w3K0_Vr8s «Nuevo Portal del Colaborador S10»\n- data/paginas/manual-del-colaborador.md, video-empleado.md, inicio.md, home2.md\n",
+  "tags": [
+   "portal-empleado",
+   "portal-colaborador",
+   "boletas",
+   "nominas",
+   "oficial-s10"
+  ]
+ },
+ {
+  "path": "portales/facturacion-electronica",
+  "title": "Portal de Facturación Electrónica",
+  "summary": "El Portal de Facturación Electrónica es el conjunto de portal web con más documentación en el portal de ayuda (25 documentos y videos), pero todo está tras el login de miembros. Para el detalle, deriva al manual oficial o a soporte.",
+  "body": "El portal de ayuda de S10 muestra el **Portal de Facturación Electrónica** entre sus «Manuales de Portales Webs». Con **25 documentos**, es el portal con más material. Tiene además una sección propia de videos, «Videos de Portal de Facturación Electrónica».\n\n## Qué se sabe desde las fuentes públicas\n\n- Aparece en el menú del portal de ayuda como «Portal de Facturación» o «Portal de Facturación Electrónica», bajo **Portales Web**.\n- Hay dos entradas de manual: «Acceso a Manual Portal Facturación Electrónica» y «Manual de Facturación Electrónica».\n- El módulo **Facturación** del ERP, que es distinto del portal, tiene artículos públicos relacionados con el documento electrónico, como la «Ampliación de Plazo Máximo de envío de Documento Electrónico». Ese contenido pertenece a la rama del módulo de Facturación, no a esta.\n\n## Qué no se sabe\n\nLos 25 documentos y los videos están tras el **login de miembros**. Esta base no tiene los pasos del portal: cómo se ingresa, qué comprobantes muestra ni cómo se descargan.\n\n## Qué debe hacer Metrín\n\n1. Aclarar si la pregunta es del **portal web** o del **módulo Facturación** del ERP.\n2. Si es del portal, remitir al manual del portal de ayuda; el acceso se explica en `soporte/portal-de-ayuda`.\n3. Si el problema persiste, sugerir un ticket de soporte (`soporte/tickets-crear`).\n\n**Confiabilidad:** oficial S10\n\n**Fuentes**\n- data/paginas/inicio.md (índice: «Portal de Facturación Electrónica, 25 documentos»)\n- data/paginas/acceso-a-manual-portal-facturacion-electronica.md, manual-de-facturacion-electronica.md, video-facturacion-electronica.md\n- data/paginas/facturacion.md (módulo Facturación)\n",
+  "tags": [
+   "portal-facturacion",
+   "facturacion-electronica",
+   "comprobantes",
+   "oficial-s10"
+  ]
+ },
+ {
+  "path": "portales/asistencia",
+  "title": "Portal de Asistencia",
+  "summary": "S10 tiene un Portal de Asistencia con manual propio en el portal de ayuda y una lista de reproducción en YouTube, pero ninguna fuente pública explica cómo funciona. No inventes pasos: deriva al manual o a soporte.",
+  "body": "El canal oficial de S10 en YouTube tiene una lista de reproducción **«Portal de Asistencia»** y un video **«Portal de Asistencia S10»** (67 s). El portal de ayuda publica la entrada **«Acceso a Manual Portal Asistencia»**.\n\n## Qué dicen las fuentes\n\n- Hay un **manual** del Portal de Asistencia en documentacion.s10peru.com, pero está tras el login de miembros.\n- El video «Portal de Asistencia S10» se transcribió y **no tiene narración hablada**: solo música o texto en pantalla, que la transcripción no recoge.\n- El video del **Portal del Colaborador** menciona «reportes de marcaciones y asistencias» (`portales/empleado`). Las fuentes no dicen si es el mismo producto que el Portal de Asistencia.\n- El portal no aparece en los menús públicos del portal de ayuda, que muestran Colaborador, Proveedor y Facturación. Por eso no hay índice de temas.\n\n## Cómo no confundirlo\n\n«Portal de Asistencia» (un portal web de S10) **no es lo mismo** que la **asistencia remota** de soporte con Supremo o AnyDesk, que se explica en `soporte/asistencia-remota`. Si el usuario dice «asistencia», Metrín debe preguntar a cuál se refiere.\n\n## Qué debe hacer Metrín\n\n1. Reconocer que la base no sabe cómo funciona este portal.\n2. Indicar al usuario que el manual está en el portal de ayuda; el acceso se explica en `soporte/portal-de-ayuda`.\n3. Si no tiene cuenta del portal de ayuda o necesita ayuda directa, sugerir un ticket (`soporte/tickets-crear`).\n\n## Pendiente\n\nCuando el proyecto consiga los manuales oficiales, completar este nodo con el propósito del portal y sus pasos.\n\n**Confiabilidad:** oficial S10\n\n**Fuentes**\n- Video ozxGtzd-Aj0 «Portal de Asistencia S10» (transcripción vacía)\n- youtube.py (lista «Portal de Asistencia» del canal Marketing S10)\n- data/paginas/acceso-manual-portal-asistencia.md\n",
+  "tags": [
+   "portal-asistencia",
+   "pendiente",
+   "oficial-s10"
+  ]
+ },
+ {
+  "path": "portales/aprobaciones-pedidos-moviles",
+  "title": "Aprobaciones y Pedidos Móviles",
+  "summary": "Aprobaciones Móviles y Pedidos Móviles son apps móviles de S10. Sus manuales están tras el login y sus videos oficiales no tienen narración, así que esta base no tiene sus pasos: deriva al manual oficial o a soporte.",
+  "body": "S10 ofrece **aplicaciones móviles** junto al ERP. El portal de ayuda las agrupa en «Aplicaciones Móviles» y el pie de página las lista como **Tareo Móvil, Calidad Móvil, Aprobaciones y Pedidos**. Este nodo cubre las dos que más se parecen a un portal de gestión: **Aprobaciones Móviles** y **Pedidos Móviles**.\n\n## Qué dicen las fuentes\n\n| App | Manual en el portal de ayuda | Video oficial |\n|---|---|---|\n| Aprobaciones Móviles | «Acceso a Manual de Aprobaciones Móviles» (9 temas en el índice) | «Aprobaciones Móviles S10» (103 s), lista propia en YouTube |\n| Pedidos Móviles | «Acceso a Manual de Pedidos Móviles» | «Pedidos Móviles S10» (121 s), lista propia en YouTube |\n\n- Los dos manuales están tras el **login de miembros**.\n- Los dos videos se transcribieron y **no tienen narración hablada**. Esta base no tiene los pasos de ninguna de las dos apps.\n\n## Relación con otras apps\n\n**Tareo Móvil** (videos «Tareo en Línea S10») y **Calidad Móvil** tienen sus propios videos y manuales y corresponden a otras ramas. No mezcles aquí sus pasos.\n\n## Qué debe hacer Metrín\n\n1. Si preguntan cómo aprobar o pedir desde el celular, reconocer que el detalle está en el manual oficial.\n2. Remitir al portal de ayuda (`soporte/portal-de-ayuda`), sección Aplicaciones Móviles.\n3. Si la app falla, sugerir un ticket de soporte (`soporte/tickets-crear`) con capturas adjuntas.\n\n**Confiabilidad:** oficial S10\n\n**Fuentes**\n- data/paginas/manual-aprobaciones.md, manual-de-aprobaciones.md, manual-pedidos-moviles.md\n- data/paginas/inicio.md (índice: «Aprobaciones Móviles, 9 temas»)\n- Videos LDE7Wz5ss7I «Aprobaciones Móviles S10» y eRlEaDJ6-Yk «Pedidos Móviles S10» (transcripciones vacías)\n",
+  "tags": [
+   "aprobaciones-moviles",
+   "pedidos-moviles",
+   "apps-moviles",
+   "pendiente",
+   "oficial-s10"
+  ]
+ },
+ {
+  "path": "soporte",
+  "title": "Soporte al cliente S10",
+  "summary": "Cómo pedir ayuda a S10: ticket de soporte, asistencia remota con Supremo o AnyDesk, manuales del Portal de Ayuda y cursos. Solo pueden abrir tickets las empresas suscritas a soporte y mantenimiento.",
+  "body": "S10 Perú ofrece **soporte**, **implantación** y **capacitaciones** como servicios. Esta rama reúne lo que un usuario necesita para pedir ayuda o aprender el sistema.\n\n## Canales\n\n| Necesidad | Canal | Nodo |\n|---|---|---|\n| Reportar una incidencia o pedir una instalación | Sistema de Ticket (s10peru.com > Servicios/Soporte) | `soporte/tickets-crear` |\n| Seguir, responder, reabrir o cerrar un ticket | La misma plataforma de tickets | `soporte/tickets-seguimiento` |\n| Que un técnico vea tu PC | Supremo (desde la web o desde el ERP) o AnyDesk | `soporte/asistencia-remota` |\n| Leer manuales, prerrequisitos y problemas de acceso | Portal de Ayuda (documentacion.s10peru.com) | `soporte/portal-de-ayuda` |\n| Aprender el ERP | Cursos presenciales o virtuales | `soporte/capacitaciones` |\n\n## Reglas generales\n\n1. El **Sistema de Ticket** es para las empresas **suscritas al servicio de soporte y mantenimiento**, que reciben por correo su usuario y clave.\n2. Los mensajes de soporte se **responden siempre desde la plataforma de tickets**. El correo solo avisa de que hay un mensaje nuevo.\n3. Para la asistencia remota se envían a soporte el **ID y la clave** que muestra la aplicación; nunca la clave del ERP.\n\n## Contacto\n\nOficina en Av. San Borja Sur 754, San Borja, Lima. Teléfonos (01) 225-0167, 224-9014, 226-0298 y 225-7190. Ventas: ventas@s10peru.com.\n\n**Confiabilidad:** oficial S10\n\n**Fuentes**\n- data/texto/1-manual-de-cliente-de-sistema-de-ticket-v2.txt (p. 2)\n- data/texto/guia-asistencia-remota-s10-supremo.txt\n- Video 2jwuGr7T_SI «Como reabrir un Ticket S10»\n- data/paginas/unete.md, data/paginas/inicio.md\n",
+  "tags": [
+   "soporte",
+   "tickets",
+   "asistencia-remota",
+   "capacitacion",
+   "oficial-s10"
+  ]
+ },
+ {
+  "path": "soporte/tickets-crear",
+  "title": "Crear un ticket de soporte",
+  "summary": "Para crear un ticket: s10peru.com > Servicios/Soporte > Ticket de Soporte Emitir, entra con tu correo y clave, elige y confirma la categoría, pon prioridad, asunto y descripción, adjunta hasta 4 archivos y pulsa Crear ticket. Guarda el número.",
+  "body": "El **Sistema de Ticket S10** registra las incidencias en línea y muestra en qué estado está cada una. Solo acceden las empresas **suscritas al servicio de soporte y mantenimiento**, que reciben por correo su usuario y clave. El correo de bienvenida se titula «Bienvenidos soporte en línea S10».\n\n## Pasos\n\n1. Entra a **www.s10peru.com** y abre **Servicios/Soporte** (s10peru.com/soporte).\n2. Pulsa **Ticket de Soporte – Emitir**.\n3. Escribe tu **usuario** (correo, ID de cliente o DNI) y la **clave** asignada. Pulsa **Entrar**.\n4. En el combo, **selecciona la categoría** de la incidencia; por ejemplo, *Instalación*.\n5. **Confirma la categoría** con «¿Confirma categoría: …?». Si no es la correcta, vuelve a elegir en el combo.\n6. Elige la **prioridad**: muy alta, alta, normal o baja.\n7. Escribe el **asunto**; por ejemplo, «Quisiera instalar S10 ERP».\n8. En **Descripción**, detalla la incidencia.\n9. Si hace falta, **adjunta hasta cuatro archivos** con *Seleccionar archivo*. Solo se aceptan los formatos permitidos que indica el sistema.\n10. Pulsa **Crear ticket**.\n11. El sistema genera un **número único de ticket**. Guárdalo para seguir su estado.\n\n## Iconos de la bandeja\n\nEn la parte superior derecha hay tres iconos:\n- **(01)** crear un ticket;\n- **(02)** tickets **abiertos o en espera**;\n- **(03)** tickets **cerrados** temporal o definitivamente.\n\nSi tienes varios tickets, busca por una palabra del asunto o del contenido.\n\n## Administrador de tickets de la empresa\n\nUna empresa puede pedir que un usuario vea y administre **todos** los tickets de sus compañeros, además de los propios. Para eso, envía el **nombre completo** y el **correo** de esa persona a emendiola@s10peru.com.\n\n## Cuenta\n\n- **Cambiar contraseña:** icono de dos personas, arriba a la derecha. Debe tener entre 6 y 12 caracteres.\n- **Foto y datos adicionales:** son opcionales.\n- **Cerrar sesión:** enlace arriba a la derecha.\n\n**Confiabilidad:** oficial S10\n\n**Fuentes**\n- data/texto/1-manual-de-cliente-de-sistema-de-ticket-v2.txt, «Manual de Cliente – Sistema de Ticket» v2.0 (pp. 2–9 y 12–15)\n- Video rrhDrBcQ5pk «Cómo generar un Ticket de Soporte S10»\n",
+  "tags": [
+   "tickets",
+   "soporte",
+   "incidencias",
+   "prioridad",
+   "oficial-s10"
+  ]
+ },
+ {
+  "path": "soporte/tickets-seguimiento",
+  "title": "Responder, reabrir o cerrar un ticket",
+  "summary": "Responde siempre desde la plataforma de tickets, no desde el correo. Un ticket en cierre temporal se reabre al responder en él. Para cerrarlo del todo, marca «cerrar definitivamente este ticket» y pulsa Responder ticket.",
+  "body": "Cuando soporte responde, el cuadro **Respuestas y comentarios** muestra el nombre del operador de S10, la fecha y la hora. A veces el operador adjunta un archivo con instrucciones.\n\n## Si la incidencia sigue\n\n1. Abre el ticket en la carpeta de **tickets abiertos**.\n2. Escribe tu comentario.\n3. Marca **«No, no quiero cerrar este ticket»**.\n4. Pulsa **Responder ticket**. El historial se actualiza con cada cambio.\n\n## Cierre temporal\n\nSoporte hace un **cierre temporal** cuando cree que resolvió el problema y espera tu conformidad. También ocurre si soporte te respondió y **tú no contestaste**. Recibes un correo que te avisa del cierre. Estos tickets están en la carpeta de **cerrados**; el **color del candado** indica si el cierre es temporal o definitivo.\n\n## Reabrir un ticket cerrado temporalmente\n\n1. Entra a la plataforma de tickets y abre la carpeta de **tickets cerrados**.\n2. Haz clic en el **asunto** del ticket; verás toda la conversación.\n3. Escribe tu mensaje; por ejemplo, «Voy a revisar».\n4. Pulsa **Responder ticket**. El ticket vuelve a la carpeta de **abiertos**.\n\n## Cerrar definitivamente\n\n1. Abre el ticket.\n2. Abajo, selecciona la opción de **cerrar definitivamente este ticket**. En un cierre temporal aparece como **«Dar conformidad y cerrar definitivamente este ticket»**.\n3. Escribe una nota, como «Ok, ya pude solucionarlo».\n4. Pulsa **Responder ticket**. El encabezado cambia a cerrado.\n\n## Regla clave\n\nLos mensajes a soporte se responden **siempre desde la plataforma de tickets**. El correo que llega solo **avisa** de que hay un mensaje nuevo. Responder al correo no actualiza el ticket.\n\n**Confiabilidad:** oficial S10\n\n**Fuentes**\n- data/texto/1-manual-de-cliente-de-sistema-de-ticket-v2.txt, secciones 4 y 5 (pp. 10–12)\n- Video 2jwuGr7T_SI «Como reabrir un Ticket S10»\n",
+  "tags": [
+   "tickets",
+   "reabrir-ticket",
+   "cierre-temporal",
+   "soporte",
+   "oficial-s10"
+  ]
+ },
+ {
+  "path": "soporte/asistencia-remota",
+  "title": "Asistencia remota: Supremo, AnyDesk y escritorio remoto",
+  "summary": "Para que soporte entre a tu PC, abre Supremo desde s10peru.com/soporte (Descarga) o desde el ERP (Herramientas > Asistencia Remota), pulsa «Copiar datos de acceso» y envía el ID y la clave a soporte. En los cursos se usa AnyDesk.",
+  "body": "## Supremo: asistencia de soporte (guía vigente)\n\n**Opción 1 – desde la web**\n1. Entra a https://www.s10peru.com/soporte/ y pulsa **Descarga**.\n2. Se descarga **Supremo Asistencia Remota**. Ábrelo desde tu carpeta de Descargas.\n3. Elige **Ejecutar Supremo** y pulsa **Aceptar**.\n4. Pulsa **Copiar datos de acceso**; se copian tu **ID de usuario y clave**.\n5. Envía esos datos al área de soporte.\n\n**Opción 2 – desde cualquier módulo de S10**\n1. En el menú principal, entra a **Herramientas > Asistencia Remota**.\n2. Elige **Ejecutar Supremo** y pulsa **Aceptar**.\n3. Pulsa **Copiar datos de acceso** y envía los datos a soporte.\n\n## AnyDesk (cursos y soporte)\n\nAnyDesk sirve para que el **instructor del curso** o el **equipo de soporte S10** te ayude directamente con el ERP. También figura entre los requisitos de los cursos virtuales, junto con TeamViewer.\n1. Abre el enlace de descarga y pulsa **Descargar ahora**. Luego, **Ejecutar**.\n2. Pulsa **Instalar AnyDesk** y deja marcadas las casillas por defecto.\n3. Si pregunta por el software de impresora, responde **No**: es opcional.\n4. Abre AnyDesk desde **Inicio** y comparte tu **código** con el instructor o con soporte.\n5. Cuando pidan ver tu pantalla, pulsa **Aceptar**.\n\n## Escritorio remoto al ERP (no es soporte)\n\nSi recibes por correo un archivo **usuario.rdp** y una clave, así entras al S10 ERP y a sus módulos por **escritorio remoto**:\n1. Descarga el archivo **usuario.rdp** y ejecútalo.\n2. Comprueba que el usuario mostrado coincide con el nombre del archivo (p. ej., *usuario4*). Si no coincide, entra en **Más opciones > usar nueva cuenta** y escríbelo a mano.\n3. Pega la clave y pulsa **Aceptar**.\n4. Para salir, cierra la ventana con la **X** superior.\n\n**Confiabilidad:** oficial S10\n\n**Fuentes**\n- data/texto/guia-asistencia-remota-s10-supremo.txt (Guía Asistencia Remota S10 Supremo, publicada en 2025)\n- Video 9v67H9TcZj0 «Cómo instalar Anydesk en tu computadora»\n- Video RaDEQu3f7E0 «Accede remotamente al S10 ERP»\n- data/texto/requisitos-para-los-cursos-virtuales.txt\n",
+  "tags": [
+   "asistencia-remota",
+   "supremo",
+   "anydesk",
+   "escritorio-remoto",
+   "oficial-s10"
+  ]
+ },
+ {
+  "path": "soporte/portal-de-ayuda",
+  "title": "Portal de Ayuda: manuales, prerrequisitos y acceso",
+  "summary": "Los manuales oficiales, videos, FAQ, prerrequisitos (SQL Server, copias de seguridad, instalación y revisiones) y problemas de acceso están en documentacion.s10peru.com. Entra con Ingresar y las credenciales que S10 te envió por correo.",
+  "body": "El **Portal de Ayuda S10** (documentacion.s10peru.com) está hecho para clientes. Ofrece **manuales de uso actualizados**, **videos tutoriales** por módulo o aplicación, **preguntas frecuentes**, búsqueda por temas y avisos de nuevos lanzamientos.\n\n## Cómo entrar\n\n1. Abre la URL del portal de documentación de S10.\n2. Pulsa **Ingresar**.\n3. En el recuadro de acceso, escribe las **credenciales que S10 te envió por correo**.\n4. Pulsa **Acceder** y busca el manual que te interesa.\n5. Para salir, abre el menú de la parte superior y pulsa **Salir**.\n\nEl contenido está protegido con **login de miembros**. Sin sesión, las páginas muestran «Debes acceder para ver este contenido».\n\n## Qué hay en el portal\n\n- **Problemas de acceso:** «Problemas de acceso por el Servicio de SQL Server».\n- **Prerrequisitos – Base de datos:** «El proceso de instalación de Microsoft SQL Server» y «Cómo realizar una copia de seguridad de base de datos».\n- **Prerrequisitos – Instalaciones:** «Manual de Instalación S10 ERP [VIDEO]» y «Actualización de S10 (Instalación de revisiones)».\n- **Manuales por módulo:** Presupuestos (7 temas), Gerencia de Proyectos (7), Lean (4), Compras (16), Almacenes (3), Nóminas (5), Facturación (8), Administración (8) y Contabilidad (4).\n- **Portales web, apps móviles** e integración con **CRM Sperant**.\n- **Descargas** y **preguntas frecuentes**.\n\n## Lo que esta base sí sabe de prerrequisitos\n\nLos prerrequisitos del portal indican que S10 usa **Microsoft SQL Server** como base de datos. El sílabo de Presupuestos enseña a **compartir la base de datos** con otros usuarios mediante **copias de seguridad y restauración**. Los pasos concretos de instalación y de backup están solo en el portal, tras el login. Si el usuario tiene un problema de acceso o de instalación, derívalo al portal o a un ticket con la categoría *Instalación*.\n\n**Confiabilidad:** oficial S10\n\n**Fuentes**\n- Video c0AvGfqW8WI «Cómo acceder a los Manuales de Uso»\n- data/paginas/sin-nombre.md, inicio.md, prerrequisito-base-datos.md, instalaciones.md, problemas-acceso.md, sidebar-general-dic-19.md\n- data/texto/silabus-presupuestos.txt (objetivos)\n",
+  "tags": [
+   "portal-de-ayuda",
+   "manuales",
+   "sql-server",
+   "instalacion",
+   "oficial-s10"
+  ]
+ },
+ {
+  "path": "soporte/capacitaciones",
+  "title": "Cursos y capacitaciones S10",
+  "summary": "S10 dicta cursos por módulo, presenciales o virtuales. Para reservar: elige el curso en el portal, Reservar, fecha y asiento, llena tus datos y modalidad (estudiante, beca, convenio…) y acepta términos. Llega un correo con lugar, fecha y pago.",
+  "body": "S10 Perú ofrece **capacitaciones** por módulo: Presupuestos, Gerencia de Proyectos, Compras y Pedidos, Almacenes, Nóminas (básico y avanzado) y Administrativo-Contable, cada uno con su sílabo. Los cursos presenciales anuncian **instructor oficial** del equipo S10, **acceso al software original**, **manuales** y **certificación a nombre de S10 Perú**. Por ejemplo, el sílabo de Presupuestos dura **4 días de 4 horas**.\n\n## Reservar un curso\n\n1. En el portal de cursos de S10, elige el curso; por ejemplo, Presupuestos.\n2. Pulsa **Reservar el curso**. Verás fechas, horarios y asientos libres.\n3. Elige la fecha y pulsa el icono de la **persona con «+»**.\n4. Elige un **asiento** en el plano del aula; el proyector sirve de referencia.\n5. Llena tus datos: DNI o pasaporte, nombres, dirección, organización, distrito, correo, celular y tratamiento (ingeniero, arquitecto, estudiante…).\n6. Elige la **modalidad**: estudiante, beca, media beca, beca invitado, convenio o profesional independiente. Si eres estudiante, indica tu universidad y número de carné para que se aplique el descuento.\n7. Pulsa **Guardar** y **acepta los términos y condiciones**.\n8. Espera el **correo** con la ubicación, la fecha y cómo pagar.\n\n## Requisitos de los cursos virtuales\n\n- PC o laptop.\n- Micrófono y audífonos o altavoz.\n- Google Chrome.\n- Una app de escritorio remoto (AnyDesk o TeamViewer), para que el instructor pueda ayudarte (`soporte/asistencia-remota`).\n\n## Entrar a la clase por Google Meet\n\n1. Inicia sesión en tu cuenta de Gmail.\n2. Pega en el navegador el **enlace del aula** que te enviaron.\n3. **Permite** las notificaciones, la cámara y el micrófono.\n4. Pulsa **Solicitar unirse** y espera a que el instructor te acepte.\n5. Mantén el micrófono y la cámara **apagados**; actívalos solo para preguntar.\n\nS10 también ha dado **charlas gratuitas en línea**; por ejemplo, una sobre CTS por Google Meet.\n\n**Confiabilidad:** oficial S10\n\n**Fuentes**\n- Videos qfVl6AkJbMU «Cómo Reservar Cursos en S10» y spG4wg9uwso «Cómo reservar un curso S10»\n- Video rZm99k2ejLI «Cómo usar Google Meet para acceder a las clases virtuales»\n- data/texto/requisitos-para-los-cursos-virtuales.txt, brochure-s10-curso-arequipa.txt, silabus-presupuestos.txt, temario-capacitacion-de-cts.txt\n",
+  "tags": [
+   "capacitacion",
+   "cursos",
+   "reservas",
+   "google-meet",
+   "oficial-s10"
+  ]
+ },
+ {
+  "path": "fuentes",
+  "title": "Fuentes de la base de conocimiento",
+  "summary": "De dónde sale cada dato de esta base y cuánto fiarse: PDF oficiales de s10peru.com, portal de ayuda público, videos del canal oficial, copias de terceros, una tesis y un informe del Estado. Faltan los manuales tras el login.",
+  "body": "Esta rama documenta la **procedencia** del conocimiento. Sirve para que Metrín sepa cuánto puede afirmar y cuándo debe advertir al usuario.\n\n## Hijos\n\n1. `fuentes/catalogo` — inventario de fuentes, niveles de confiabilidad y lo que falta.\n2. `fuentes/youtube` — el canal oficial de S10, sus videos y cómo se transcribieron.\n3. `fuentes/metrin` — el asistente que responde con esta base: personaje, tono y reglas de citación.\n4. `fuentes/informe-concytec` — la evaluación del Estado sobre S10 Presupuestos (2013).\n\n## Principios\n\n1. **Solo lo que dicen las fuentes.** Si un dato no está, se dice que no está.\n2. **Cada nodo cita** su archivo y su página, o el video con su título.\n3. **Cada nodo declara su confiabilidad** en una línea antes de «Fuentes»: *oficial S10*, *documento del Estado* o *interno del proyecto*. El catálogo añade dos niveles más para el material de los módulos: *copia de tercero sin verificar* y *caso académico*.\n4. **El hueco principal** son los manuales oficiales del portal de ayuda, que están tras el login de miembros. Muchos nodos de portales y soporte dicen «deriva al manual» por esa razón.\n\n## Cómo se obtuvieron\n\n- `s10kb.py` rastrea el portal de ayuda y baja los PDF enlazados.\n- `youtube.py` baja el audio de los videos oficiales y lo transcribe en local.\n- Los documentos de terceros se importaron a mano en `entrada/`.\n\n**Confiabilidad:** interno del proyecto\n\n**Fuentes**\n- FUENTES.md\n- README.md\n- youtube.py (cabecera)\n",
+  "tags": [
+   "fuentes",
+   "procedencia",
+   "confiabilidad",
+   "interno-del-proyecto"
+  ]
+ },
+ {
+  "path": "fuentes/catalogo",
+  "title": "Catálogo de fuentes y confiabilidad",
+  "summary": "Inventario: portal de ayuda público, 22 PDF de s10peru.com, videos del canal oficial, dos copias de terceros (Scribd, pdfcoffee), tesis UPN e informe CONCYTEC. Faltan los manuales tras el login de miembros. Incluye tabla de niveles.",
+  "body": "## Qué hay\n\n| Origen | Contenido | Cómo entró |\n|---|---|---|\n| documentacion.s10peru.com | Páginas públicas del portal de ayuda: detracciones, anticipos, Lookahead, Calidad Móvil, prerrequisitos y menús | `s10kb.py rastrear --sin-login` |\n| www.s10peru.com | 22 PDF: sílabos por módulo, manual del Sistema de Ticket, guía de asistencia remota, requisitos de cursos, políticas SGSST y SGSI | cola manual (`data/enlaces.jsonl`) |\n| Canal YouTube «Marketing S10» | 38 videos (ver `fuentes/youtube`) | `youtube.py` |\n| repositorio.upn.edu.pe | Tesis sobre la implementación de S10 en la logística de una constructora (2025) | acceso abierto |\n| transparencia.concytec.gob.pe | Informe técnico de evaluación de S10 (2013) | documento público |\n| Scribd y pdfcoffee | Guía de usuario de S10 Presupuestos (192 pp., OCR) y Manual de S10 Costos y Presupuestos (126 pp.) | importación manual, 29 y 30-09-2026 |\n\n## Niveles de confiabilidad\n\n| Nivel | Qué incluye | Cómo usarlo |\n|---|---|---|\n| **oficial S10** | PDF de s10peru.com, portal de ayuda, videos del canal oficial | Base de la respuesta |\n| **copia de tercero sin verificar** | Guía de usuario de S10 Presupuestos (Scribd) y Manual de costos y presupuestos (pdfcoffee) | Útiles, pero pueden ser versiones antiguas; avisar al usuario |\n| **caso académico** | Tesis UPN (2025) | Contexto y experiencia de uso, no procedimientos oficiales |\n| **documento del Estado** | Informe CONCYTEC Nº009 (2013) | Histórico; los requisitos técnicos y precios están desfasados |\n| **interno del proyecto** | METRIN.md, FUENTES.md, README.md | Reglas del proyecto, no datos de S10 |\n\n## Qué falta\n\n1. **Los manuales oficiales del portal de ayuda.** FUENTES.md cuenta 78 páginas tras el muro de miembros. En `data/paginas/`, 64 de los 90 archivos muestran «Debes acceder para ver este contenido». Afecta a los manuales por módulo, portales, apps móviles, instalación, SQL Server y preguntas frecuentes. Se espera la cuenta de miembro de Arturo o una copia que entregue S10.\n2. **La tesis UPC (Inocencio):** el enlace directo devuelve HTML; hay que bajarla a mano.\n3. **Otras copias de terceros** en Scribd, Academia.edu y Slideshare: piden cuenta o captcha y no se han bajado.\n\n**Confiabilidad:** interno del proyecto\n\n**Fuentes**\n- FUENTES.md\n- data/enlaces.jsonl, data/pdf_publicos_s10peru.json\n- data/paginas/ (conteo de páginas con muro)\n",
+  "tags": [
+   "catalogo",
+   "confiabilidad",
+   "fuentes-pendientes",
+   "interno-del-proyecto"
+  ]
+ },
+ {
+  "path": "fuentes/youtube",
+  "title": "Videos del canal oficial S10",
+  "summary": "Los 38 videos públicos del canal oficial «Marketing S10» se transcribieron en local con faster-whisper (modelo small). 15 no tienen narración y su transcripción está vacía. Las transcripciones automáticas tienen errores de nombres.",
+  "body": "## Origen\n\nLos videos vienen del canal **«Marketing S10»** (ID UCL1xwXCVt9ZVpSrgyemP50A), el canal oficial de tutoriales que S10 publica para sus clientes. `youtube.py` recorre el canal y 12 listas de reproducción: Portal de Asistencia, Tareo en Línea, Soporte S10, Pedidos Móviles, Aprende S10, Aprobaciones Móviles, Cursos S10, Nuestra Marca (dos), Portal Colaborador, Calidad Móvil y Portal de Proveedores.\n\n## Cómo se transcribieron\n\n1. `descubrir`: arma el inventario en `data/yt/videos.txt` con el formato id|segundos|título. Salen 38 videos.\n2. `audio`: baja **solo el audio** a `data/yt/audio/{id}.m4a`.\n3. `transcribir`: usa **faster-whisper en local**, con el modelo *small* en CPU, y guarda `{id}.json` (segmentos con tiempos) y `{id}.txt`.\n4. `indexar`: trocea el texto con minutos para `kb/fragmentos_yt.jsonl`.\n\n## Qué cubren\n\n- **Soporte:** generar ticket, reabrir ticket, instalar AnyDesk, acceso remoto al ERP y acceso a los manuales.\n- **Cursos:** reservar un curso (dos videos), Google Meet, por qué llevar los cursos, cursos de capacitación.\n- **Portales y apps:** Portal de Proveedores (nuevo y configuración), Portal del Empleado, Portal del Colaborador, Portal de Asistencia, Aprobaciones y Pedidos Móviles, Tareo en Línea, Calidad Móvil.\n- **Nóminas:** UIT, RMV, jornal de construcción civil, AFP, feriados, CTS, gratificación y reintegros.\n- **Otros:** instalar S10 Presupuestos, Lean Construction, control de costos, presentación del ERP y «¿Qué es Proptech?».\n\n## Limitaciones\n\n- **15 de los 38 videos no tienen narración** (solo música o texto en pantalla) y su transcripción está vacía: Nuevo Portal de Proveedores, Portal de Asistencia, Aprobaciones Móviles, Pedidos Móviles, los dos de Tareo en Línea, los dos de Calidad Móvil, Cómo llevar los cursos, Por qué llevar los cursos, Cursos de Capacitación, Lean Construction, Control de costos, la presentación del ERP y Proptech.\n- Whisper confunde nombres: escribe «ese 10» o «sds» por **S10**, «rp» por **ERP** y «ndesk» por **AnyDesk**.\n- Los videos de Nóminas llevan **cifras legales de un año concreto** (UIT 2022, 2024, 2025…). No valen para otro año.\n\n**Confiabilidad:** oficial S10\n\n**Fuentes**\n- youtube.py (cabecera y constantes CANAL y PLAYLISTS)\n- data/yt/videos.txt, data/yt/transcripciones/\n",
+  "tags": [
+   "youtube",
+   "videos",
+   "transcripcion",
+   "whisper",
+   "oficial-s10"
+  ]
+ },
+ {
+  "path": "fuentes/metrin",
+  "title": "Metrín: el asistente que usa esta base",
+  "summary": "Metrín es el chatbot de obra que responde con esta base: cercano, curioso, en español neutro, admite errores con humor. Debe citar la fuente y avisar si la respuesta se apoya solo en una copia de tercero o en una cifra legal de un año pasado.",
+  "body": "## Quién es\n\n**Metrín** es un chatbot de ERP para construcción. Ayuda a consultar proyectos, costos, compras, almacén, avances y documentos. Su ficha lo describe como un robot con 3 años desde su activación, «un aprendiz curioso», y con la frase insignia **«¡Cimentando respuestas sólidas!»**. Lleva casco amarillo con el logo de Optimiza 360, chaleco naranja y una pantalla LED por cara. Nació para conectar los datos de cada proyecto con las personas que lo construyen.\n\n## Tono\n\n- **Servicial y curioso.** Pregunta cuando le falta un dato; su expresión «Confundido» existe para eso.\n- **Cercano y claro**, en **español neutro**.\n- Cuando se equivoca, **lo reconoce con humor** y corrige el rumbo.\n- Ante una inconsistencia usa la «Alerta amable»: avisa **sin alarma ni culpa**.\n\n## Cómo debe usar esta base\n\n1. **Responder solo con lo que consta** en los nodos. Si falta, lo dice y deriva al Portal de Ayuda (`soporte/portal-de-ayuda`) o a un ticket (`soporte/tickets-crear`).\n2. **Citar la fuente** de cada respuesta: el documento y la página, o el video con su título.\n3. **Avisar del nivel de confianza** (ver `fuentes/catalogo`):\n   - si la respuesta se apoya **solo en una copia de tercero** (Scribd, pdfcoffee), advertir que puede ser una versión antigua del manual;\n   - si da una **cifra legal de un año pasado** (UIT, RMV, jornal, umbral de retenciones, AFP), decir de qué año es y pedir que se confirme la vigente;\n   - si cita el **informe CONCYTEC de 2013**, aclarar que es histórico.\n4. **No pedir ni repetir claves.** En asistencia remota se comparten el ID y la clave de Supremo o AnyDesk, y solo con soporte.\n5. **Desambiguar** términos que se cruzan: «Portal de Asistencia» frente a asistencia remota, o Portal de Facturación Electrónica frente al módulo Facturación.\n6. Dar los procedimientos como **pasos numerados**.\n\n**Confiabilidad:** interno del proyecto\n\n**Fuentes**\n- METRIN.md (ficha de personaje, historia, expresiones LED)\n- FUENTES.md\n",
+  "tags": [
+   "metrin",
+   "chatbot",
+   "tono",
+   "citacion",
+   "interno-del-proyecto"
+  ]
+ },
+ {
+  "path": "fuentes/informe-concytec",
+  "title": "Informe CONCYTEC sobre S10 (2013)",
+  "summary": "Informe Nº009-CONCYTEC-DSIC (junio 2013): comparó S10 Presupuestos con Construc-Soft para comprar software de presupuestos. S10 Corporativa obtuvo 87/100. Es un documento histórico: sus requisitos técnicos y su precio están desfasados.",
+  "body": "## Qué es\n\nEs el **Informe Técnico Previo de Evaluación de Software S10**, Nº009-CONCYTEC-DSIC. Lo emitió la Dirección de Sistemas de Información y Comunicación del CONCYTEC en **junio de 2013**; el responsable fue el Ing. Percy Vásquez Machicao. El CONCYTEC necesitaba software para gestionar los **presupuestos** de sus proyectos de infraestructura y comparó **S10 (módulo Presupuestos)** con **Construc-Soft**.\n\n## Qué dice de S10 Presupuestos\n\n- Elabora presupuestos de cualquier proyecto a partir de los **metrados**. Las ediciones Corporativa y Empresarial trabajan la hoja en forma de **árbol**. Importa y exporta con **Excel**.\n- Está desarrollado en el Perú y **respeta la normatividad local**.\n- Tenía tres ediciones: **Corporativa, Empresarial y Profesional**.\n- Funciones comparadas: multiusuario, doble moneda, títulos hasta 20 niveles, exportación a MS Project, fórmula polinómica, índices unificados, banco general de precios, gastos generales, planeamiento valorizado por periodos, entre otras. En funcionalidad, la edición Corporativa sumó 28 funciones frente a 19 de Construc-Soft.\n\n## Puntaje costo-beneficio (sobre 100)\n\n| S10 Corporativa | S10 Empresarial | S10 Profesional | Construc-Soft |\n|---|---|---|---|\n| 87 | 75,99 | 68,13 | 74,85 |\n\nS10 perdió puntos en la flexibilidad de plazos para regularizar licencias (0 de 5).\n\n## Conclusión del informe\n\nS10 cumple las necesidades y es el de **mayor demanda**. Ambos productos tienen una funcionalidad similar, pero **muchas dependencias públicas y privadas usan S10**, y el personal del CONCYTEC ya tenía experiencia con él.\n\n## Cuidado: datos de 2013\n\nEl informe describe S10 en **Visual Basic 6.0**, sobre Windows 2000/XP/2003 y SQL Server 2000, con una licencia de US$ 1.200 por usuario. **No sirven como requisitos ni precios actuales.** Para requisitos vigentes, consulta los prerrequisitos del portal de ayuda.\n\n**Confiabilidad:** documento del Estado\n\n**Fuentes**\n- data/texto/09-inf-tec-s10-v1.txt (Informe Nº009-CONCYTEC-DSIC, secciones 1–8)\n",
+  "tags": [
+   "concytec",
+   "evaluacion",
+   "presupuestos",
+   "historico",
+   "documento-del-estado"
+  ]
+ }
+]

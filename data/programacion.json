@@ -1,0 +1,18 @@
+{
+ "portal-s10": {
+  "cada_horas": 24,
+  "activo": true
+ },
+ "pdfs-s10peru": {
+  "cada_horas": 168,
+  "activo": true
+ },
+ "optimiza360": {
+  "cada_horas": 168,
+  "activo": true
+ },
+ "youtube": {
+  "cada_horas": 168,
+  "activo": true
+ }
+}

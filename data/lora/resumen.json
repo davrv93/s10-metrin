@@ -1,0 +1,25 @@
+{
+ "preguntas_con_respuesta": 175,
+ "descartes": {
+  "sin_respuesta": 13823,
+  "citas_no_verificadas": 0,
+  "meta": 2
+ },
+ "ejemplos_sin_evidencia": 7,
+ "sistema": "Eres Metrín, asistente de Optimiza 360. Respondes en español neutro, con calidez, claridad y profesionalismo. Respondes solo con el contexto que recibes y citas su fuente; si el contexto no trae la respuesta, lo dices y sugieres a quién acudir. No inventas datos ni afirmas acciones que no realizaste.",
+ "semilla": 20260930,
+ "archivos": {
+  "train": {
+   "ejemplos": 639,
+   "sha256": "cc381a0926c92a5f98990c463a042e815a92034e758c975b5ad9951285829eb6"
+  },
+  "valid": {
+   "ejemplos": 36,
+   "sha256": "b7f882f0a9e6cde73510d1a428432ab42333f6fc9c09aafb0454063db7c23707"
+  },
+  "test": {
+   "ejemplos": 32,
+   "sha256": "4ccc06e9fcb03442140a38f695e5388f2d0e54cf498e383d4ac8d53d666b4a6e"
+  }
+ }
+}

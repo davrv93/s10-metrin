@@ -1,0 +1,249 @@
+[
+  {
+    "path": "nominas",
+    "title": "Nóminas (planillas) en S10 ERP",
+    "summary": "Módulo de planillas de S10: control de horas hombre y ausencias por proyecto, cálculo de nóminas de obreros de construcción civil, empleados y practicantes, boletas, planillas de pago hacia Facturación y declaraciones AFPNET y PDT PLAME.",
+    "body": "El portal de ayuda define Nóminas como el módulo con «herramientas ágiles para el control de las horas hombre efectivas y de las ausencias con un enfoque proyectado, flexible y dinámico» para los escenarios complejos de la construcción.\n\n**Tipos de nómina que cubre la capacitación oficial:** obreros de construcción civil con beneficios sociales, empleados y practicantes.\n\n**Configuración base (primer día del curso):**\n- Usuarios, permisos por módulo y por proyecto.\n- Proyecto **multiproyecto** y proyectos **destino**, con sus propiedades.\n- Catálogos: ocupaciones, afiliaciones (régimen de pensión/salud y SCTR), categorías y clasificación de papeletas.\n- Propiedades por tipo de nómina, horarios diarios y cíclicos, grupos de trabajo, plantillas y procesos.\n- Conceptos por **Matriz de Constantes**, porcentajes de AFP (SPP), vistas/reportes, tipos de préstamos y descuentos, relación Categoría–Recurso.\n\n**Ciclo mensual o semanal:** personal disponible → conceptos por socio de negocio y periodo → tareo multiproyecto → resúmenes de conceptos por día y por periodo → cálculo del proceso → boleta → vistas → planillas de pago → distribución de costos multiproyecto (ver `nominas/ciclo-de-calculo`).\n\n**Salidas:** AFPNET, PDT PLAME, certificado de renta de 5ta, certificado de trabajo, carta de retiro de CTS y documentos por plantilla. El nivel avanzado añade préstamos, descuentos judiciales, papeletas de vacaciones y días no laborados remunerados, liquidación de beneficios sociales, gratificación, CTS y cálculo de utilidades.\n\n**Hijos de esta rama:** ciclo de cálculo, parámetros legales (UIT, RMV, AFP), jornales de construcción civil, aporte al fondo de capacitación, CTS, gratificación y feriados.\n\nLas páginas «Pasos para el cálculo de Nóminas» y «Configurar escenario: Reparto de Utilidades» del portal existen, pero son solo para miembros y no se pudieron leer.\n\n**Confiabilidad:** oficial S10 (sílabos y portal de ayuda).\n\n**Fuentes:** data/paginas/nominas.md; data/texto/syllabus-nominas-s10erp.txt (págs. 1-2); data/texto/silabus-nominas-basico.txt; data/texto/silabus-nominas-avanzado.txt.",
+    "tags": [
+      "nominas",
+      "planillas",
+      "construccion-civil",
+      "oficial"
+    ]
+  },
+  {
+    "path": "nominas/ciclo-de-calculo",
+    "title": "Ciclo de cálculo de una planilla",
+    "summary": "Orden para calcular cualquier planilla en S10: tareo, Resumen de concepto por día, Resumen de concepto por periodo, cálculo con el proceso estándar en el grupo Nóminas, revisión en Vistas (exportable a Excel), boletas y documentos de pago enviados a Facturación.",
+    "body": "Los sílabos y los videos de CTS y gratificación siguen la misma secuencia. Sirve para la planilla ordinaria y para los beneficios.\n\n**Preparación del periodo**\n1. Registrar el personal disponible en el proyecto multiproyecto y en el proyecto destino.\n2. Cargar los conceptos por **Matriz de Constantes**, por **Socio de Negocio** y por **Socio de Negocio y Periodo**.\n3. Generar préstamos y descuentos, incluidos los judiciales, y las papeletas (vacaciones y días no laborados remunerados).\n4. Registrar el **tareo multiproyecto** del periodo.\n\n**Cálculo**\n5. Procesar el escenario **Resumen de concepto por día**.\n6. Procesar el escenario **Resumen de concepto por periodo**, eligiendo el mes.\n7. En el grupo **Nóminas**, calcular la planilla con el **proceso estándar**.\n8. Si falta el tareo de algún trabajador (caso típico de la CTS), marcar a todos y, con clic derecho, cambiar su estado a **Procesar**.\n\n**Revisión y salida**\n9. Validar los montos en el escenario **Vistas**. Cada proceso tiene su reporte con las variables usadas y se puede exportar a Excel.\n10. Preparar y emitir las **boletas**. Deben tener marcado el check de impresión y entregarse impresas o por correo.\n11. Enviar los montos a **Facturación** como **documentos de pago**. El documento aparece allí con el detalle por colaborador, y en la CTS se genera uno por banco.\n12. Distribuir costos multiproyecto y revisar el consolidado de planillas de pago por tipo de boleta y periodo.\n\nEl sílabo avanzado incluye un tema de «revisión y análisis de los posibles problemas que se presentan en el cálculo de la nómina», pero no los enumera.\n\n**Confiabilidad:** oficial S10 (sílabos y videos del canal oficial).\n\n**Fuentes:** data/texto/syllabus-nominas-s10erp.txt (día 2); data/texto/silabus-nominas-avanzado.txt (días 1-4); video n9i-5fjeqKE «Cómo calcular la Gratificación desde el S10 ERP» (0:24-4:54); video XObV2BOrsIc «Cómo calcular la CTS con el S10 ERP» (1:02-2:24).",
+    "tags": [
+      "nominas",
+      "calculo",
+      "boletas",
+      "procedimiento",
+      "oficial"
+    ]
+  },
+  {
+    "path": "nominas/parametros-legales-uit-rmv-afp",
+    "title": "Parámetros legales: UIT, RMV y porcentajes AFP",
+    "summary": "La UIT y la RMV se registran en Nóminas > General > Constantes por fechas con un rango de fechas, por proyecto multiproyecto y por tipo de nómina. Si la SBS aún no publica las comisiones AFP del mes, se copian las del mes anterior en Configuración > Comisiones.",
+    "body": "**UIT y Remuneración Mínima Vital (RMV)**\n1. En el módulo Nóminas, grupo **General**, abrir el escenario **Constantes por fechas** (en el video de 2024, «Datos constantes por fechas»).\n2. Arriba aparecen los conceptos **UIT** y **Remuneración mínima vital**. Seleccionar el que corresponda.\n3. En la grilla inferior, clic derecho **Adicionar** una línea nueva.\n4. Indicar el rango de fechas. Para la UIT es el año completo (del 1 de enero al 31 de diciembre).\n5. Escribir el monto y, si se quiere, una observación.\n6. Para la RMV, primero cerrar el valor anterior poniéndole fecha fin. Luego adicionar la línea nueva con el monto actual y la **fecha fin vacía**.\n7. El cambio se hace **por proyecto multiproyecto y por cada tipo de nómina** que use la empresa (video 2022).\n8. Si los conceptos no aparecen en el escenario, hay que pedir la configuración al soporte de S10.\n\nLos videos no dicen los montos. Solo muestran dónde registrarlos.\n\n**Porcentajes de AFP**\nEl sistema descarga las comisiones automáticamente de la web de la SBS. Si la SBS no las publicó a tiempo (en el ejemplo, el 6 de marzo aún faltaba el periodo 2025-03), se replican las del último mes disponible:\n1. Ir a grupo **Configuración**, escenario **Comisiones**.\n2. Clic derecho **Adicionar**.\n3. Elegir el último mes que tiene porcentajes (febrero) y la AFP (Prima).\n4. Cambiar solo el mes a marzo y grabar con el botón **Adicionar**.\n5. Repetir con Integra, Hábitat y Profuturo.\n6. Cuando la SBS publique, comparar las cifras. Si difieren, corregirlas y hacer los ajustes.\n\n**Confiabilidad:** oficial S10 (videos del canal oficial). Procedimientos mostrados para 2022, 2024 y 2025; verificar que el menú no haya cambiado. Los montos de UIT, RMV y AFP cambian cada año o cada mes: verificar la cifra actual.\n\n**Fuentes:** video 17W0yKI8iew «S10 Nóminas - Cambio de UIT y RMV (2025)» (0:08-2:06); video RQub4jF-1Co «S10 Nóminas - Configurar valor de la UIT 2024» (0:14-1:09); video GDRxgJlzknk «Cómo realizar el cambio de UIT 2022 en el S10 ERP» (0:18-1:02); video 24muztd-84Q «S10 Nóminas - Registro manual de porcentajes (%) de AFP» (0:08-3:22).",
+    "tags": [
+      "nominas",
+      "uit",
+      "rmv",
+      "afp",
+      "parametros-legales",
+      "oficial"
+    ]
+  },
+  {
+    "path": "nominas/construccion-civil-jornales",
+    "title": "Construcción civil: cambio de jornal por convenio",
+    "summary": "Con cada convenio de construcción civil se suma el incremento al jornal actual y se registra en el concepto Jornal diario del escenario Matriz de Constantes, por categoría. La bonificación por alta especialización se cambia en el grupo Ocupación. No recalcular semanas ya pagadas.",
+    "body": "Dos videos oficiales con el mismo contenido explican cómo aplicar el nuevo **convenio colectivo** de construcción civil a la planilla semanal de obreros.\n\n**Procedimiento**\n1. Calcular el jornal nuevo de cada categoría: **jornal actual + incremento del convenio**.\n2. En el módulo Nóminas, abrir el escenario **Matriz de Constantes** (la transcripción dice «Madrid»).\n3. Con la agrupación por **Categoría**, colocar el valor nuevo en el concepto **Jornal diario** de cada una. Valores del video: operario **74.30**, oficial **58.45** y peón **52.50**.\n4. En la parte superior, cambiar la agrupación de **Categoría** a **Ocupación**.\n5. Buscar la ocupación **Operario electromecánico** y subir su bonificación por alta especialización del **15 % al 18 %**, como fijó ese convenio.\n6. Calcular la nómina con normalidad: el sistema toma los valores nuevos.\n\n**Precaución:** no recalcular semanas que ya se pagaron, porque se sobrescribe lo calculado. Las diferencias por convenios retroactivos van en la plantilla de **reintegros retroactivos** (ver `nominas/aporte-fondo-capacitacion`). El video del canal «Calculo Reintegro retroactivos - Construccion civil - 2021-2022» no tiene transcripción disponible.\n\n**Contexto:** la nómina de obreros de construcción civil con beneficios sociales es la primera que se practica en el curso oficial, con conceptos por Matriz de Constantes, tareo multiproyecto y distribución de costos entre proyectos.\n\n**Confiabilidad:** oficial S10 (videos del canal oficial). Jornales y porcentaje corresponden a un convenio cuyo año no dicen ni el video ni su título; los dos videos son idénticos. Verificar la cifra actual del convenio vigente.\n\n**Fuentes:** video 6Kd187zEqOs «S10 Nóminas - Incremento de Jornal (Construcción Civil)» (0:07-2:11); video TdbnLyEaN_E «Cambio de Jornal - Construcción civil en S10 ERP» (0:07-2:20); data/texto/syllabus-nominas-s10erp.txt (día 2); data/yt/videos.txt (umiFsebieZs).",
+    "tags": [
+      "nominas",
+      "construccion-civil",
+      "jornal",
+      "matriz-de-constantes",
+      "oficial"
+    ]
+  },
+  {
+    "path": "nominas/aporte-fondo-capacitacion",
+    "title": "Construcción civil: aporte al Fondo de Capacitación",
+    "summary": "Para el aporte del Fondo de Capacitación se crean un recurso y dos conceptos (tarifa y cálculo REDONDEAR(tarifa × días asistidos)). Se suman a Total aportaciones en las plantillas semanal y de reintegros, se muestran en boletas y se genera un documento de pago a la Cámara Peruana de la Construcción.",
+    "body": "Configuración de un **aporte nuevo** en la planilla de construcción civil. Sirve de modelo para crear cualquier concepto nuevo.\n\n1. En el **catálogo de recursos**, crear el recurso «Aportes obreros fondo capacitación».\n2. Crear dos conceptos:\n   - **Tarifa del fondo:** tipo de dato *constante matricial* y tipo de valor *moneda*. No se muestra en la boleta.\n   - **Fondo capacitación:** tipo de dato *general* y tipo de valor *moneda*. Se muestra en la boleta y **contabiliza**.\n3. Agregar los dos conceptos a la **plantilla de fórmulas** de la planilla semanal, antes de *Total aportaciones*.\n4. Formular *Fondo capacitación* con la función **REDONDEAR**: tarifa × variable del concepto de **días asistidos**.\n5. Sumar *Fondo capacitación* en la fórmula de *Total aportaciones*. Si hay dos conceptos de total de aportes, incluirlo en los dos. Grabar la plantilla y salir.\n6. Repetir los pasos 3 a 5 en la plantilla de **reintegros retroactivos**, con la misma fórmula.\n7. En **Reportes**, agregar el concepto al reporte de la planilla semanal. Marcar el check **Aplica** en la *boleta de pago semanal* y en la *boleta de pago de reintegros*.\n8. En la **Matriz de Constantes**, registrar la tarifa. El video dice que el convenio fija **0.20** por día asistido.\n9. Agregar un **documento de pago** para el aporte, que se paga a la **Cámara Peruana de la Construcción**.\n10. Calcular la planilla. Verificar que el concepto salga en reportes y boletas, y que al enviar a Facturación se genere la planilla de pago del aporte.\n\n**Confiabilidad:** oficial S10 (video del canal oficial). La tarifa de 0.20 es la del convenio vigente cuando se publicó el video, que no indica el año: verificar la cifra actual.\n\n**Fuentes:** video NYUDXu-XmyA «S10 Nóminas - Nuevo Aporte Fondo de Capacitación en Construcción Civil» (0:10 recurso; 0:31-2:02 conceptos; 2:19-4:46 plantillas; 5:05-5:48 reportes y boletas; 6:19-7:35 tarifa y documento de pago; 7:55-8:36 verificación).",
+    "tags": [
+      "nominas",
+      "construccion-civil",
+      "aportes",
+      "conceptos",
+      "oficial"
+    ]
+  },
+  {
+    "path": "nominas/cts",
+    "title": "Cálculo de la CTS",
+    "summary": "Los conceptos de CTS se activan solos en mayo y noviembre. Se procesa el Resumen de concepto por periodo del mes de pago, se calcula con el proceso estándar (con estado Procesar si no hay tareo), se valida en Vistas, se emiten las boletas y se genera un documento de pago por banco.",
+    "body": "El sistema **activa los conceptos de CTS automáticamente en mayo y noviembre**. En el ejemplo del video el depósito vence el **15 de noviembre** y se acumula de mayo a octubre, así que no hace falta el tareo de noviembre.\n\n**Procedimiento**\n1. Ejecutar el escenario **Resumen de concepto por periodo** con el mes de pago.\n2. Calcular la nómina con el **proceso estándar**.\n3. Como aún no hay tareo del mes, marcar a todos los trabajadores y, con clic derecho, cambiar el estado a **Procesar**.\n4. Validar en el escenario **Vistas**, con el reporte de CTS. Muestra las variables que propone el sistema y los **últimos cuatro sueldos**, que se informan al banco en el depósito. Se puede exportar a Excel.\n5. Preparar la **boleta de liquidación de CTS**, que detalla conceptos y variables.\n6. Verificar e imprimir las boletas. Necesitan el **check de impresión**, y la fecha de impresión en el ejemplo es como máximo el 15 de noviembre. Entregarlas a cada trabajador.\n7. Enviar el monto por **planillas de pago**. El sistema emite **un documento de pago por banco**.\n\n**Puntos de control**\n- Cada trabajador necesita una **cuenta bancaria de CTS**.\n- El pago es el acumulado de las **provisiones** mensuales del semestre. Revisarlas mes a mes en los reportes.\n\n**Temario de la capacitación oficial de CTS:** aspectos generales, conceptos remunerativos y no remunerativos, tiempo computable, trabajadores con derecho, oportunidad de pago, libre disponibilidad, provisión y pago, cálculo en S10, boletas de liquidación, documentos por banco y declaración en la PLAME. La carta de retiro de CTS se arma como plantilla de documento en Nóminas.\n\n**Confiabilidad:** oficial S10 (video del canal oficial y temario). Las fechas legales salen del video y no indican año: verificar la norma vigente.\n\n**Fuentes:** video XObV2BOrsIc «Cómo calcular la CTS con el S10 ERP» (0:08-6:54); data/texto/temario-capacitacion-de-cts.txt (pág. 1); data/texto/silabus-nominas-avanzado.txt (días 4-5).",
+    "tags": [
+      "nominas",
+      "cts",
+      "beneficios-sociales",
+      "procedimiento",
+      "oficial"
+    ]
+  },
+  {
+    "path": "nominas/gratificacion",
+    "title": "Cálculo de la gratificación",
+    "summary": "La gratificación (ejemplo: diciembre) necesita el tareo del mes. Se procesan los Resúmenes de concepto por día y por periodo, se calcula con el proceso estándar, se valida en Vistas, se emiten las boletas y se envían los montos a Facturación como documentos de pago.",
+    "body": "El video explica la **gratificación de diciembre**. La transcripción automática dice «no corresponde pagar», pero por el contexto se lee «corresponde pagar».\n\n**Requisito:** tener el **tareo del mes de diciembre**. A diferencia de la CTS, aquí sí se exige el tareo del mes.\n\n**Procedimiento**\n1. Procesar el escenario **Resumen de concepto por día**.\n2. Procesar el escenario **Resumen de concepto por periodo**.\n3. En el grupo **Nóminas**, calcular la planilla con el **proceso estándar**.\n4. En **Vistas**, abrir el reporte de gratificación por pagar. Muestra todas las variables del proceso y sirve para validar los montos. Se puede exportar a Excel.\n5. Preparar la **boleta de gratificación**.\n6. Emitir las boletas y entregarlas a cada colaborador, impresas o por correo electrónico.\n7. Enviar los montos a **Facturación** mediante **documentos de pago**. El documento queda en Facturación con el detalle por colaborador en la parte inferior.\n\n**Puntos de control**\n- La gratificación es el resultado de las **provisiones mensuales** acumuladas de julio a diciembre.\n- Revisar cada mes las provisiones de beneficios sociales en los reportes de Vistas para que el pago no sorprenda.\n\nEl sílabo avanzado trata en el quinto día el cálculo de la gratificación del personal empleado, junto con la liquidación de beneficios sociales, la CTS y las utilidades.\n\n**Confiabilidad:** oficial S10 (video del canal oficial y sílabo).\n\n**Fuentes:** video n9i-5fjeqKE «Cómo calcular la Gratificación desde el S10 ERP» (0:18 requisito; 0:35-1:51 resúmenes y cálculo; 2:16-3:12 vistas; 3:33-4:16 boletas; 4:27-4:54 documento de pago; 5:15-5:34 provisiones); data/texto/silabus-nominas-avanzado.txt (día 5).",
+    "tags": [
+      "nominas",
+      "gratificacion",
+      "beneficios-sociales",
+      "procedimiento",
+      "oficial"
+    ]
+  },
+  {
+    "path": "nominas/feriados-calendario",
+    "title": "Registro de feriados en el calendario",
+    "summary": "En Nóminas > Calendario, sobre el proyecto multiproyecto o de gestión, el botón Feriados predeterminados marca los feriados fijos del año. Jueves y Viernes Santo se marcan a mano como día no laborable. Luego se aplica al calendario base.",
+    "body": "Los feriados influyen en el tareo y en el cálculo de los días remunerados. Se registran cada año.\n\n**Procedimiento (video de 2025)**\n1. En el módulo Nóminas, abrir el escenario **Calendario**.\n2. Seleccionar el **proyecto multiproyecto** o el proyecto de gestión.\n3. En la parte inferior, pulsar **Feriados predeterminados**. Se marcan los feriados que caen en la misma fecha todos los años.\n4. Semana Santa cambia de fecha y hay que marcarla a mano. Ir al mes de **abril de 2025**.\n5. Seleccionar el **17** y, en la parte superior, marcarlo como **día no laborable**.\n6. Hacer lo mismo con el **18**.\n7. En la parte superior, en la opción **Calendario base**, usar el clic derecho para trasladar la configuración. La transcripción es confusa en este punto («pasamos el read»); confirmar el nombre exacto de la opción en pantalla.\n\n**Relación con otros catálogos:** el sílabo básico pide definir antes los horarios de trabajo diarios y cíclicos y los grupos de trabajo. Los días no laborados remunerados se gestionan con papeletas, que tienen su propia clasificación.\n\n**Confiabilidad:** oficial S10 (video del canal oficial). Las fechas de Semana Santa (17 y 18 de abril) son vigentes para 2025; verificar las del año actual. El cierre del video dice «2020», error evidente de la transcripción por 2025.\n\n**Fuentes:** video diOl4ST-82Y «S10 Nóminas - Registro de días feriados (2025)» (0:10-1:31); data/texto/syllabus-nominas-s10erp.txt (día 1); data/texto/silabus-nominas-avanzado.txt (día 2).",
+    "tags": [
+      "nominas",
+      "feriados",
+      "calendario",
+      "procedimiento",
+      "oficial"
+    ]
+  },
+  {
+    "path": "contabilidad",
+    "title": "Contabilidad en S10 ERP",
+    "summary": "Contabilidad reúne en asientos los movimientos de almacén, mano de obra, subcontratos, equipos y contratos, y genera información para SUNAT y entidades financieras. Se configura con el PCGE, cuentas genéricas y reflejas, y esquemas contables.",
+    "body": "Según el portal de ayuda, Contabilidad «permite el análisis de la actividad financiera y contable». Concentra los movimientos de almacén, los pagos de mano de obra, los subcontratos, los equipos y los contratos, y genera información para la **SUNAT** y las entidades financieras.\n\n**Cómo alimenta a los demás módulos:** la contabilidad sale de configurar cuentas en cada origen:\n- Recursos y categorías de recursos.\n- Tipos de documento y de impuesto.\n- Cuentas bancarias y libros caja.\n- **Conceptos de nómina**: por ejemplo, el aporte al fondo de capacitación se marca para que «contabilice».\n- Movimientos de almacén y conceptos de subcontratos.\n\nCon eso los asientos se generan solos. Los asientos manuales quedan para las transacciones no contempladas.\n\n**Temas oficiales** (días 4 y 5 del curso Administrativo Contable):\n- Plan contable, cuentas genéricas y reflejas, dinámica de cierres y esquema contable (ver `contabilidad/plan-contable-y-esquema`).\n- Libros, registros, estados financieros, DAOT y consolidación (ver `contabilidad/libros-y-estados-financieros`).\n\n**Contenido restringido:** las páginas «Manual de Contabilidad» y «Configuración para Cierre y Apertura» del portal existen, pero son solo para miembros. El procedimiento de cierre y apertura del ejercicio no está en las fuentes públicas.\n\n**Confiabilidad:** oficial S10 (portal de ayuda y sílabos).\n\n**Fuentes:** data/paginas/contabilidad.md; data/paginas/configuracion-para-cierre-apertura.md; data/texto/syllabus-administrativo-s10erp.txt (días 4-5); data/texto/silabus-administrativo-contable.txt (días 4-5); video NYUDXu-XmyA (2:02).",
+    "tags": [
+      "contabilidad",
+      "asientos",
+      "sunat",
+      "oficial"
+    ]
+  },
+  {
+    "path": "contabilidad/plan-contable-y-esquema",
+    "title": "Plan contable, cuentas y esquema contable",
+    "summary": "Configuración contable según el curso oficial: preparar el PCGE en Excel e importarlo, configurar cuentas genéricas y reflejas y la dinámica de cierres, crear el esquema contable, asignar cuentas a cada origen de movimiento y asignar el esquema a la empresa.",
+    "body": "Secuencia del **cuarto día** del curso Administrativo Contable. Es la puesta en marcha que permite que los asientos se generen solos.\n\n1. Preparar o revisar el **Plan Contable General Empresarial (PCGE)** en la plantilla Excel.\n2. Definir usuarios y sus accesos por sucursal en el módulo.\n3. **Importar y validar** el PCGE.\n4. Configurar las **cuentas genéricas** según el PCGE importado.\n5. Configurar las **cuentas reflejas**.\n6. Definir la **dinámica de cierres o cancelaciones**.\n7. Definir el **esquema contable**.\n8. Definir en Excel las **categorías de recursos** y categorizar los recursos usados, para importarlos.\n9. Asignar cuentas, en S10 o por importación desde Excel, a:\n   - categorías de recursos y recursos;\n   - tipos de documento y tipos de impuesto;\n   - cuentas bancarias y libros caja;\n   - conceptos de nómina;\n   - movimientos de almacén;\n   - conceptos de subcontratos con proveedores.\n10. Preparar los informes contables: Estado de Situación Financiera, Estado de Resultados, ratios financieros e informes a medida.\n11. **Asignar los esquemas contables a la empresa.**\n\nSi falta una asignación de cuenta, el asiento automático de ese origen no se genera correctamente. El quinto día del curso se dedica a revisar esos asientos (ver `contabilidad/libros-y-estados-financieros`).\n\n**Confiabilidad:** oficial S10 (sílabo). El sílabo da el orden de los temas, no los menús ni los campos.\n\n**Fuentes:** data/texto/syllabus-administrativo-s10erp.txt (día 4); data/texto/silabus-administrativo-contable.txt (día 4).",
+    "tags": [
+      "contabilidad",
+      "pcge",
+      "esquema-contable",
+      "configuracion",
+      "oficial"
+    ]
+  },
+  {
+    "path": "contabilidad/libros-y-estados-financieros",
+    "title": "Libros, registros y estados financieros",
+    "summary": "S10 produce registro de compras, de ventas, libro de honorarios, de retenciones, diario, caja (efectivo y cuenta corriente), mayor, balance de comprobación y Estado de Situación Financiera, también consolidado por grupo empresarial, más el DAOT. Todos con trazabilidad hasta el origen.",
+    "body": "El **quinto día** del curso Administrativo Contable trata de revisar y rastrear hasta su origen lo que el sistema contabilizó.\n\n**Asientos**\n- **Asientos manuales**, para transacciones que la configuración no contempla.\n- Análisis de los **asientos automáticos** que generan las cuentas genéricas.\n\n**Libros y registros con trazabilidad**\n- Registro de compras y registro de ventas.\n- Libro de honorarios.\n- Libro de retenciones, si la empresa es agente de retención.\n- Libro diario.\n- Libro caja en efectivo y libro caja en cuenta corriente.\n- Libro mayor y balance de comprobación.\n\n**Estados y declaraciones**\n- Estado de Situación Financiera por empresa.\n- **DAOT**.\n- Definición de **grupos empresariales** y Estado de Situación Financiera **consolidado**.\n\n**Relación con otros módulos**\n- El número de **constancia de detracción** importado en Administrativo queda en la factura y es «requisito indispensable para el correcto envío del libro electrónico de compras» (ver `administrativo/pago-de-detracciones`).\n- Registro de compras, de ventas, de honorarios y de retenciones también se revisan al cierre del flujo de documentos, en el tercer día del curso.\n\n**Confiabilidad:** oficial S10 (sílabo y portal de ayuda). El sílabo lista los informes sin explicar cómo se generan.\n\n**Fuentes:** data/texto/syllabus-administrativo-s10erp.txt (días 3 y 5); data/texto/silabus-administrativo-contable.txt (día 5); data/paginas/realizar-pago-factura-afecta-detraccion-subir-constancias.md.",
+    "tags": [
+      "contabilidad",
+      "libros-electronicos",
+      "estados-financieros",
+      "daot",
+      "oficial"
+    ]
+  },
+  {
+    "path": "facturacion",
+    "title": "Facturación en S10 ERP",
+    "summary": "Facturación registra y administra los documentos por pagar y por cobrar: facturas, boletas, notas de crédito y débito, anticipos y documentos internos. Controla vencimientos, recibe los documentos de pago de Nóminas y fija el plazo de envío a SUNAT.",
+    "body": "El portal lo describe como el módulo que ayuda «con el registro, creación y administración de los documentos por pagar y cobrar» y permite controlar las fechas de vencimiento de pagos y cobros.\n\n**Qué entra en Facturación**\n- **Documentos por pagar** de proveedores: sin relación o relacionados con orden de compra, orden de servicio, guía de almacén o subcontrato.\n- **Documentos por cobrar**: sin relación, desde un documento de venta o desde el cronograma de facturación de una orden de venta.\n- **Notas de crédito y débito** de los dos lados.\n- **Documentos internos**: anticipos y entregas a rendir.\n- **Documentos de pago** que vienen de Nóminas (planillas, gratificación, CTS por banco, aportes). Nóminas los envía y aparecen aquí con el detalle por colaborador.\n\n**Hijos de esta rama**\n- `facturacion/documentos-y-catalogos-tributarios`: catálogos de impuestos y documentos, detracción y percepción, padrones, talonarios.\n- `facturacion/plazo-envio-documento-electronico`: ampliar el plazo de envío a SUNAT.\n- `facturacion/anticipo-de-proveedor`: anticipo facturado y su amortización.\n\n**Salida:** tras registrar el documento, el pago se tramita en el módulo **Administrativo** con órdenes de pago y aprobaciones. Si la factura está afecta a detracción, el cronograma de pagos debe separar la detracción.\n\n**Contenido restringido:** «Manual de Facturación», «Manual de Facturación Electrónica», «Configuración del catálogo de NO deducibles», «Anulación de Ventas» y «Asignar código de producto Sunat» existen en el portal, pero son solo para miembros.\n\n**Confiabilidad:** oficial S10 (portal de ayuda, sílabos y videos del canal oficial).\n\n**Fuentes:** data/paginas/facturacion.md; data/texto/syllabus-administrativo-s10erp.txt (días 1 y 3); video n9i-5fjeqKE (4:27-4:54); data/paginas/realizar-pago-factura-afecta-detraccion-subir-constancias.md.",
+    "tags": [
+      "facturacion",
+      "documentos-por-pagar",
+      "documentos-por-cobrar",
+      "oficial"
+    ]
+  },
+  {
+    "path": "facturacion/documentos-y-catalogos-tributarios",
+    "title": "Documentos y catálogos tributarios",
+    "summary": "Antes de facturar: revisar catálogos (moneda, forma de pago, tipo de cambio, impuestos, documentos), ítems de detracción y percepción, padrones SUNAT de retención, percepción y buenos contribuyentes, empresas y sucursales, límites de periodos y talonarios de documentos por cobrar.",
+    "body": "Primer día del curso Administrativo Contable. Es la configuración que deja listo el registro de documentos.\n\n**Catálogos y padrones**\n1. Revisar los catálogos varios: moneda, forma de pago, tipo de cambio y otros.\n2. Definir el catálogo de **tipos de impuesto** y el de **tipos de documento**.\n3. Definir los **ítems de detracción** y de **percepción**.\n4. Cargar y actualizar los padrones de **agentes de retención**, **agentes de percepción** y **buenos contribuyentes**.\n5. **Asignar la detracción o percepción a los recursos**. Así el documento sabe si está afecto.\n\n**Empresa y periodos**\n6. Crear empresas y sucursales, y los usuarios con acceso por sucursal.\n7. Definir la configuración general de registro de documentos por empresa.\n8. Fijar las **fechas límite de los periodos contables**.\n9. Configurar los **talonarios** de documentos por cobrar y sus accesos, y la impresión de facturas, boletas y notas de crédito y débito.\n\n**Registro de documentos**\n- **Por cobrar:** sin relación, relacionados con un documento de venta, notas de crédito o débito, internos (anticipos).\n- **Por pagar:** sin relación, relacionados con orden de compra, orden de servicio, guía de almacén o subcontrato, notas de crédito o débito, internos (anticipos, entregas a rendir).\n\n**Detracción en el documento:** en una factura afecta, la detracción debe verse **independiente en el cronograma de pagos**. Así Administrativo puede pagarla por separado (ver `administrativo/pago-de-detracciones`).\n\n**Confiabilidad:** oficial S10 (sílabo y portal de ayuda). El sílabo no detalla menús.\n\n**Fuentes:** data/texto/syllabus-administrativo-s10erp.txt (día 1); data/texto/silabus-administrativo-contable.txt (día 1); data/paginas/realizar-pago-factura-afecta-detraccion-subir-constancias.md.",
+    "tags": [
+      "facturacion",
+      "detracciones",
+      "percepciones",
+      "catalogos",
+      "oficial"
+    ]
+  },
+  {
+    "path": "facturacion/plazo-envio-documento-electronico",
+    "title": "Ampliar el plazo de envío a SUNAT",
+    "summary": "Para ampliar el plazo de envío de documentos electrónicos: Facturación > Documentos por cobrar > botón Configuración > pestaña «Del Supervisor (4)» > «Plazo máximo de envío a SUNAT desde la fecha de emisión», con los días que indique SUNAT.",
+    "body": "Cuando SUNAT cambia el plazo para enviar los comprobantes electrónicos, se ajusta el parámetro que controla cuántos días después de la emisión se acepta el envío.\n\n**Procedimiento**\n1. Entrar al módulo **Facturación**.\n2. Abrir el escenario **Documentos por cobrar**.\n3. Pulsar el botón **Configuración** del escenario.\n4. En el formulario, elegir la pestaña **«Del Supervisor (4)»**.\n5. Buscar **«Plazo máximo de envío a SUNAT desde la fecha de emisión»**.\n6. Poner los días que indique la SUNAT.\n\n**Notas**\n- La pestaña se llama «Del Supervisor», así que probablemente haga falta un usuario con ese nivel de permisos. La página no lo dice expresamente.\n- El número de días no es fijo: se pone el plazo vigente de SUNAT. La página no da ninguna cifra.\n- El «Manual de Facturación Electrónica» y el «Portal de Facturación Electrónica» del portal de ayuda amplían el tema, pero son solo para miembros y no se pudieron leer.\n\n**Confiabilidad:** oficial S10 (portal de ayuda público).\n\n**Fuentes:** data/paginas/ampliacion-plazo-maximo-envio-documento-electronico.md (pasos 1-3); data/paginas/facturacion.md; data/paginas/manual-de-facturacion-electronica.md.",
+    "tags": [
+      "facturacion",
+      "facturacion-electronica",
+      "sunat",
+      "configuracion",
+      "oficial"
+    ]
+  },
+  {
+    "path": "facturacion/anticipo-de-proveedor",
+    "title": "Anticipo de proveedor facturado y amortizado",
+    "summary": "Anticipo de proveedor sobre una OC: la factura 1 se relaciona con la OC con el recurso ANTICIPO. Al llegar la mercadería se quita la regularización del ingreso, la factura 2 se relaciona con el ingreso y se amortiza con un correctivo ANTICIPO en negativo. Cierra una regularización compuesta.",
+    "body": "Caso del portal «Manual de factura de anticipos de Almacén con compuesta». Se usa cuando el proveedor factura un porcentaje de la orden de compra antes de despachar y después emite la factura por el total menos el anticipo. Ejemplo del portal: adelanto del 30 % sobre la OC 585.\n\n**1. Factura del anticipo**\n1. En el registro de documentos por pagar, clic derecho **Adicionar** y llenar los datos de la factura.\n2. En **Relacionado con**, elegir «ORDEN DE COMPRA O SERVICIO» y seleccionar la OC. El sistema la trata como adelanto y deja editar el monto.\n3. El sistema asigna el recurso **ANTICIPO**, que se puede cambiar según la moneda y la contabilidad. Cantidad **1** y, en P.U. sin IGV, el monto facturado.\n\n**2. Ingreso a almacén**\n4. Registrar el ingreso de la mercadería. El sistema lo enlaza por defecto con la primera factura, así que hay que desvincularlo con clic derecho **Quitar regularización**. El ingreso debe quedar con la segunda factura.\n\n**3. Factura final y amortización**\n5. Registrar la segunda factura relacionada con el **ingreso de almacén**.\n6. Sobre el recurso, clic derecho **Adicionar correctivo**, elegir **ANTICIPO** y poner el monto **en negativo** (el 30 % de la OC).\n\n**4. Enlace final**\n7. Hacer una **regularización compuesta**. En la pestaña **Documentos**, agregar la primera factura.\n8. Abrirla con doble clic, ir a la pestaña **Asignación de precio** y pulsar **Aceptar**.\n\nLa página muestra capturas en cada paso, pero las imágenes no se descargaron.\n\n**Confiabilidad:** oficial S10 (portal de ayuda público).\n\n**Fuentes:** data/paginas/caso-anticipo.md (caso 1, pasos 1.1 y 2); data/texto/syllabus-administrativo-s10erp.txt (día 1).",
+    "tags": [
+      "facturacion",
+      "anticipos",
+      "orden-de-compra",
+      "almacen",
+      "oficial"
+    ]
+  },
+  {
+    "path": "administrativo",
+    "title": "Administrativo (tesorería) en S10 ERP",
+    "summary": "Administrativo lleva la tesorería: bancos y cuentas, aprobadores, órdenes de pago (banco, pago electrónico, efectivo, nota de crédito, letras, tributos), pagos, libros caja, conciliación bancaria, liquidaciones, reembolsos y fondos rotatorios. Aquí se pagan las detracciones.",
+    "body": "El portal no tiene una descripción pública del módulo: «Administración» y «Manual Administrativo» son solo para miembros. Lo que sigue sale del curso Administrativo Contable y de la guía pública de detracciones, que sitúa los pagos en «el módulo administrativo, escenario Pagos».\n\n**Configuración (día 2 del curso)**\n- Socios de negocio para los bancos y catálogo de bancos.\n- Usuarios y accesos por sucursal.\n- **Aprobadores** por moneda y monto.\n- Cuentas bancarias por empresa, saldos iniciales por periodo y talonarios de cheques por cuenta.\n\n**Operación**\n- **Órdenes de pago** con cuenta bancaria, pago electrónico, efectivo, nota de crédito, canje con letras y tributos (detracciones). Se aprueban y luego se pagan (ver `administrativo/ordenes-de-pago`).\n- **Caja y bancos**: libros caja, diarios de caja para cobranzas, movimientos bancarios y conciliación (ver `administrativo/caja-bancos-y-fondos`).\n- **Detracciones**: orden de pago de tributos, archivo para SUNAT e importación de constancias (ver `administrativo/pago-de-detracciones`).\n\n**Relación con otros módulos:** los documentos se registran en **Facturación**, incluidos los documentos de pago que manda Nóminas. Administrativo los paga. Las cuentas bancarias y los libros caja llevan cuenta contable para **Contabilidad**.\n\nLas páginas «Confirming» y «Videos Tutoriales de Administración» existen, pero son solo para miembros.\n\n**Confiabilidad:** oficial S10 (sílabos y portal de ayuda).\n\n**Fuentes:** data/texto/syllabus-administrativo-s10erp.txt (días 2-3); data/texto/silabus-administrativo-contable.txt (días 2-3); data/paginas/realizar-pago-factura-afecta-detraccion-subir-constancias.md; data/paginas/administracion.md; data/paginas/confirming.md.",
+    "tags": [
+      "administrativo",
+      "tesoreria",
+      "pagos",
+      "bancos",
+      "oficial"
+    ]
+  },
+  {
+    "path": "administrativo/pago-de-detracciones",
+    "title": "Pago de detracciones y carga de constancias",
+    "summary": "Detracción: orden de pago de Tributos marcada como pago electrónico, con el documento; aprobarla; en Pendientes de pago > Tributos generar el txt (C:\\S102000\\Pagos); pagar en SUNAT con clave SOL e importar las constancias. El número queda en la factura para el libro de compras.",
+    "body": "Guía pública del portal para pagar la detracción de una factura de proveedor.\n\n**Requisito en Facturación:** la detracción debe verse **independiente en el Cronograma de pagos** de la factura. Si no, no se puede pagar por separado.\n\n**Procedimiento**\n1. En el módulo **Administrativo**, escenario **Pagos**, ubicarse en **Órdenes de pago**.\n2. Clic derecho **Adicionar** y elegir la opción **Tributos**.\n3. Indicar que la orden es de **pago electrónico** y elegir **Detracción** (o Autodetracción, según el caso).\n4. En la parte inferior, en blanco, clic derecho **Documento con tributo** y seleccionar los documentos que se van a cancelar.\n5. Clic derecho **Enviar a aprobación**. Luego clic derecho **Aprobar** y confirmar.\n6. Ir a **Pendientes de pago** y seleccionar **Tributos**.\n7. Clic derecho **Pago electrónico**. El sistema genera un **archivo .txt** con el detalle de todos los documentos y también avisa desde el pago generado.\n8. El archivo queda en **C:\\S102000\\Pagos**.\n9. Pagar las detracciones en la web de **SUNAT** con la clave SOL, subiendo ese txt. SUNAT devuelve otro txt con las **constancias**.\n10. En el escenario **Pagos**, sobre el pago generado, clic derecho **Importar constancias de detracción** y cargar el archivo de SUNAT.\n11. Abrir la factura y comprobar que tenga el **número de detracción**.\n\n**Por qué importa:** ese número es «requisito indispensable para el correcto envío del **libro electrónico de compras**».\n\n**Contexto del curso:** los ítems de detracción y su asignación a recursos se configuran el día 1, y la orden de pago de tributos y su pago se ven el día 2.\n\n**Confiabilidad:** oficial S10 (portal de ayuda público). La página trae capturas que no se descargaron.\n\n**Fuentes:** data/paginas/realizar-pago-factura-afecta-detraccion-subir-constancias.md (todo el procedimiento); data/texto/syllabus-administrativo-s10erp.txt (días 1-2).",
+    "tags": [
+      "administrativo",
+      "detracciones",
+      "sunat",
+      "pagos",
+      "procedimiento",
+      "oficial"
+    ]
+  },
+  {
+    "path": "administrativo/ordenes-de-pago",
+    "title": "Órdenes de pago y aprobación",
+    "summary": "Pagos a proveedores: configurar bancos, cuentas, saldos, talonarios de cheques y aprobadores por moneda y monto; registrar la orden de pago según el medio (banco, electrónico, efectivo, nota de crédito, letras, tributos); aprobarla y ejecutar el pago.",
+    "body": "Segundo día del curso Administrativo Contable. El circuito de pago es siempre **orden de pago → aprobación → pago**.\n\n**Configuración previa**\n1. Registrar los **socios de negocio** de los bancos y el **catálogo de bancos**.\n2. Definir los usuarios y sus accesos por sucursal.\n3. Definir los **aprobadores**, con moneda y monto límite de aprobación.\n4. Definir las **cuentas bancarias** de cada empresa y sus **saldos iniciales** por periodo.\n5. Definir los **talonarios de cheques** por cuenta bancaria y sus accesos.\n\n**Tipos de orden de pago**\n- Con **cuenta bancaria**: cheque, transferencia o depósito, con sus tributos.\n- Para **pagos electrónicos**, aplicando tributos.\n- En **efectivo**.\n- Con **nota de crédito**: se paga aplicando la nota.\n- **Canje con letras**.\n- **Tributos**: detracciones (ver `administrativo/pago-de-detracciones`).\n\n**Flujo en pantalla**, según la guía de detracciones:\n1. En **Pagos > Órdenes de pago**, clic derecho **Adicionar** y elegir el tipo.\n2. Asociar los documentos por pagar.\n3. Clic derecho **Enviar a aprobación**. El aprobador pulsa **Aprobar** y confirma.\n4. La orden aprobada pasa a **Pendientes de pago**, donde se genera el pago o el archivo de pago electrónico.\n\n**Seguimiento:** el día 3 del curso incluye revisar las órdenes de pago y los pagos y cobranzas en detalle.\n\n**Confiabilidad:** oficial S10 (sílabo y portal de ayuda). El sílabo no detalla los campos de cada tipo de orden.\n\n**Fuentes:** data/texto/syllabus-administrativo-s10erp.txt (días 2-3); data/texto/silabus-administrativo-contable.txt (día 2); data/paginas/realizar-pago-factura-afecta-detraccion-subir-constancias.md.",
+    "tags": [
+      "administrativo",
+      "ordenes-de-pago",
+      "aprobaciones",
+      "bancos",
+      "oficial"
+    ]
+  },
+  {
+    "path": "administrativo/caja-bancos-y-fondos",
+    "title": "Caja, bancos, fondos y ventas inmobiliarias",
+    "summary": "Tercer día del curso: libros caja (por periodo, cajero y moneda), diarios de caja para cobranzas, movimientos y estados bancarios, conciliación manual o por importación, liquidaciones, reembolsos, fondos rotatorios y ventas inmobiliarias hasta el cronograma de facturación.",
+    "body": "Temas del **tercer día** del curso Administrativo Contable, ya con la operación en marcha.\n\n**Caja y bancos**\n- Crear **libros caja** por periodo, cajero y moneda, con o sin cuenta corriente.\n- Crear **diarios de caja** para las cobranzas pendientes.\n- Ver los movimientos de las cuentas bancarias e imprimir los reportes de movimientos y estados de cuenta.\n- **Conciliación bancaria**: manual, creando el estado bancario a mano, o automática, **importando** el estado.\n\n**Rendiciones y fondos**\n- **Liquidaciones**: registro de documentos internos pagados, como entregas a rendir o anticipos.\n- **Reembolsos**: gastos realizados y su cierre.\n- **Fondos rotatorios**: asignación del fondo y registro de sus reembolsos.\n\n**Ventas inmobiliarias**\n1. Inventariar los productos terminados: departamentos, cocheras y otros.\n2. Definir los recursos de venta y sus propiedades.\n3. Definir las listas de precios por proyecto y moneda.\n4. Hacer cotizaciones y darles seguimiento.\n5. Emitir las **órdenes de venta** (contratos) y darles seguimiento.\n6. Revisar el **cronograma de facturación** de cada orden de venta.\n7. Generar los **documentos por cobrar** desde ese cronograma.\n\n**Análisis:** registro de compras, de ventas, libro de honorarios, libro de retenciones (si la empresa es agente retenedor) e ingresos y gastos en general.\n\n**Confiabilidad:** oficial S10 (sílabo). El sílabo no dice en qué módulo está cada pantalla. El paso a Facturación se deduce de que genera documentos por cobrar. La integración con el CRM Sperant (boletaje, manual) existe en el portal, pero es solo para miembros.\n\n**Fuentes:** data/texto/syllabus-administrativo-s10erp.txt (día 3); data/texto/silabus-administrativo-contable.txt (día 3); data/paginas/boletaje.md.",
+    "tags": [
+      "administrativo",
+      "caja",
+      "conciliacion-bancaria",
+      "fondos",
+      "inmobiliaria",
+      "oficial"
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "name": "turnoclaro-landing",
+  "version": "1.4.0",
+  "private": true,
+  "description": "Landing estática de TurnoClaro (producto ficticio de demostración)",
+  "scripts": {
+    "dev": "vite --port 5173",
+    "build": "vite build",
+    "lint": "eslint src"
+  },
+  "devDependencies": {
+    "eslint": "^9.12.0",
+    "vite": "^6.0.0"
+  }
+}

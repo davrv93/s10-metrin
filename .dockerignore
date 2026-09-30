@@ -1,0 +1,9 @@
+.venv
+data
+kb
+entrada
+tutoriales
+metrin
+.cortex
+__pycache__
+*.log

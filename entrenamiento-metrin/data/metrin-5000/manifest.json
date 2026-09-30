@@ -1,0 +1,63 @@
+{
+  "seed": 20260930,
+  "total": 5000,
+  "split": {
+    "train": {
+      "examples": 4500,
+      "sha256": "d747758a88dd042236a85272bd724f2cbd1d87623d6a9c6ed27f70b0d58aedb8",
+      "categories": {
+        "aclaraciones": 721,
+        "cierres": 367,
+        "correcciones": 531,
+        "limites": 360,
+        "organizar_pasos": 361,
+        "reformulaciones": 545,
+        "saludos": 350,
+        "seguimiento": 540,
+        "texto_aportado": 725
+      }
+    },
+    "valid": {
+      "examples": 250,
+      "sha256": "4701e7ea64d5a7ab98ae251b427e027bb3e5d99c6a3318d55634d71864fab470",
+      "categories": {
+        "aclaraciones": 38,
+        "cierres": 14,
+        "correcciones": 38,
+        "limites": 23,
+        "organizar_pasos": 17,
+        "reformulaciones": 27,
+        "saludos": 27,
+        "seguimiento": 31,
+        "texto_aportado": 35
+      }
+    },
+    "test": {
+      "examples": 250,
+      "sha256": "33ee66cdec82316bb884d0b507c773ceef1ab76706d2ca0c45e634e18464a39a",
+      "categories": {
+        "aclaraciones": 41,
+        "cierres": 19,
+        "correcciones": 31,
+        "limites": 17,
+        "organizar_pasos": 22,
+        "reformulaciones": 28,
+        "saludos": 23,
+        "seguimiento": 29,
+        "texto_aportado": 40
+      }
+    }
+  },
+  "categories": {
+    "aclaraciones": 800,
+    "cierres": 400,
+    "correcciones": 600,
+    "limites": 400,
+    "organizar_pasos": 400,
+    "reformulaciones": 600,
+    "saludos": 400,
+    "seguimiento": 600,
+    "texto_aportado": 800
+  },
+  "unique_conversations": 5000
+}

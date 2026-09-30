@@ -1,0 +1,74 @@
+[
+ {
+  "path": "reportes-sql",
+  "title": "Reportes SQL del ERP (catálogo aprobado)",
+  "summary": "Preguntas en lenguaje natural a reportes SIN SQL generado por IA: elige y rellena plantillas pre-aprobadas, valida con sqlglot (solo SELECT) y ejecuta en sesión read-only.",
+  "body": "Método: nada de SQL libre. La IA recupera la plantilla del catálogo aprobado (reportes/plantillas.json), resuelve parámetros con reglas explícitas (fechas, periodo, categoría) y sqlglot valida por AST que la consulta sea un SELECT único (rechaza INSERT/UPDATE/DROP/ATTACH incluso anidados). La ejecución va en sesión read-only de la BD con tope de 500 filas: la garantía real es el rol de la base, no la cortesía del código.\n\nCatálogo: 6 plantillas (constantes UIT/RMV, tareo, jornal, planilla, gratificaciones, CTS). Probado contra BD demo sembrada con los datos citados del video del piloto (UIT 4300/4400/5150, RMV 930).\n\nPendiente para la BD real de S10 (debe dar Arturo): cadena de conexión y usuario de SOLO LECTURA. Con eso basta `reportes.py preguntar \"…\" --bd postgresql://…`.",
+  "tags": [
+   "reportes",
+   "sql",
+   "metodo",
+   "seguridad"
+  ]
+ },
+ {
+  "path": "reportes-sql/constantes-vigentes",
+  "title": "REP-01 — Constantes por fecha (UIT, RMV) vigentes en un rango",
+  "summary": "Reporte aprobado. Ejemplos: qué valor tiene la UIT; UIT 2024.",
+  "body": "Reporte SQL aprobado del ERP S10: REP-01 «Constantes por fecha (UIT, RMV) vigentes en un rango».\nResponde preguntas como: qué valor tiene la UIT; UIT 2024; remuneración mínima vital 2020; constantes vigentes.\nParámetros: desde (fecha, p. ej. vacío = sin filtro); hasta (fecha, p. ej. vacío = sin filtro).\nSQL pre-aprobado (la IA solo lo rellena, nunca lo inventa): SELECT concepto, abreviatura, desde, hasta, valor, observaciones FROM constantes_fecha WHERE (:desde IS NULL OR hasta >= :desde) AND (:hasta IS NULL OR desde <= :hasta) ORDER BY concepto, desde\nSe ejecuta con el catálogo de reportes.py: validación sqlglot (solo SELECT), sesión de base de datos de solo lectura y máximo 500 filas.\n\n**Uso:** `reportes.py preguntar \"…\"` — la plantilla solo se rellena, no se edita. Cambios de SQL = nueva versión del catálogo revisada a mano.",
+  "tags": [
+   "reporte",
+   "sql"
+  ]
+ },
+ {
+  "path": "reportes-sql/tareo-horas",
+  "title": "REP-02 — Horas y trabajadores tareados por día",
+  "summary": "Reporte aprobado. Ejemplos: horas tareadas de mayo 2024; asistencia de operarios.",
+  "body": "Reporte SQL aprobado del ERP S10: REP-02 «Horas y trabajadores tareados por día».\nResponde preguntas como: horas tareadas de mayo 2024; asistencia de operarios; tareo por día.\nParámetros: desde (fecha, p. ej. 2024-01-01); hasta (fecha, p. ej. 2024-12-31); categoria (texto, p. ej. vacío = sin filtro).\nSQL pre-aprobado (la IA solo lo rellena, nunca lo inventa): SELECT t.fecha, COUNT(*) AS trabajadores, SUM(t.horas) AS horas FROM tareas t JOIN trabajadores w ON w.id = t.trabajador_id WHERE (:categoria IS NULL OR w.categoria = :categoria) AND t.fecha BETWEEN :desde AND :hasta GROUP BY t.fecha ORDER BY t.fecha\nSe ejecuta con el catálogo de reportes.py: validación sqlglot (solo SELECT), sesión de base de datos de solo lectura y máximo 500 filas.\n\n**Uso:** `reportes.py preguntar \"…\"` — la plantilla solo se rellena, no se edita. Cambios de SQL = nueva versión del catálogo revisada a mano.",
+  "tags": [
+   "reporte",
+   "sql"
+  ]
+ },
+ {
+  "path": "reportes-sql/jornal-promedio",
+  "title": "REP-03 — Promedio de horas tareadas por categoría",
+  "summary": "Reporte aprobado. Ejemplos: promedio de horas por categoría; quién trabaja más horas operarios o oficiales.",
+  "body": "Reporte SQL aprobado del ERP S10: REP-03 «Promedio de horas tareadas por categoría».\nResponde preguntas como: promedio de horas por categoría; quién trabaja más horas operarios o oficiales.\nParámetros: desde (fecha, p. ej. 2024-01-01); hasta (fecha, p. ej. 2024-12-31); categoria (texto, p. ej. vacío = sin filtro).\nSQL pre-aprobado (la IA solo lo rellena, nunca lo inventa): SELECT w.categoria, ROUND(AVG(t.horas), 1) AS horas_promedio, COUNT(*) AS registros FROM tareas t JOIN trabajadores w ON w.id = t.trabajador_id WHERE (:categoria IS NULL OR w.categoria = :categoria) AND t.fecha BETWEEN :desde AND :hasta GROUP BY w.categoria ORDER BY w.categoria\nSe ejecuta con el catálogo de reportes.py: validación sqlglot (solo SELECT), sesión de base de datos de solo lectura y máximo 500 filas.\n\n**Uso:** `reportes.py preguntar \"…\"` — la plantilla solo se rellena, no se edita. Cambios de SQL = nueva versión del catálogo revisada a mano.",
+  "tags": [
+   "reporte",
+   "sql"
+  ]
+ },
+ {
+  "path": "reportes-sql/planilla-costos",
+  "title": "REP-04 — Costo de planilla por concepto en un periodo",
+  "summary": "Reporte aprobado. Ejemplos: cuánto costó la planilla de junio 2024; costo de planilla por concepto.",
+  "body": "Reporte SQL aprobado del ERP S10: REP-04 «Costo de planilla por concepto en un periodo».\nResponde preguntas como: cuánto costó la planilla de junio 2024; costo de planilla por concepto.\nParámetros: periodo (periodo, p. ej. 2024-06).\nSQL pre-aprobado (la IA solo lo rellena, nunca lo inventa): SELECT p.concepto, COUNT(DISTINCT p.trabajador_id) AS trabajadores, ROUND(SUM(p.monto), 2) AS total FROM planilla p WHERE p.periodo = :periodo GROUP BY p.concepto ORDER BY total DESC\nSe ejecuta con el catálogo de reportes.py: validación sqlglot (solo SELECT), sesión de base de datos de solo lectura y máximo 500 filas.\n\n**Uso:** `reportes.py preguntar \"…\"` — la plantilla solo se rellena, no se edita. Cambios de SQL = nueva versión del catálogo revisada a mano.",
+  "tags": [
+   "reporte",
+   "sql"
+  ]
+ },
+ {
+  "path": "reportes-sql/gratificaciones",
+  "title": "REP-05 — Gratificación por trabajador en un periodo",
+  "summary": "Reporte aprobado. Ejemplos: gratificación de julio 2024; quiénes cobran gratificación.",
+  "body": "Reporte SQL aprobado del ERP S10: REP-05 «Gratificación por trabajador en un periodo».\nResponde preguntas como: gratificación de julio 2024; quiénes cobran gratificación.\nParámetros: periodo (periodo, p. ej. 2024-07).\nSQL pre-aprobado (la IA solo lo rellena, nunca lo inventa): SELECT w.nombre, w.categoria, ROUND(p.monto, 2) AS gratificacion FROM planilla p JOIN trabajadores w ON w.id = p.trabajador_id WHERE p.concepto LIKE 'GRATIFICACION%' AND p.periodo = :periodo ORDER BY gratificacion DESC\nSe ejecuta con el catálogo de reportes.py: validación sqlglot (solo SELECT), sesión de base de datos de solo lectura y máximo 500 filas.\n\n**Uso:** `reportes.py preguntar \"…\"` — la plantilla solo se rellena, no se edita. Cambios de SQL = nueva versión del catálogo revisada a mano.",
+  "tags": [
+   "reporte",
+   "sql"
+  ]
+ },
+ {
+  "path": "reportes-sql/cts",
+  "title": "REP-06 — Depósito de CTS por trabajador en un periodo",
+  "summary": "Reporte aprobado. Ejemplos: CTS de noviembre 2024; depósito de CTS.",
+  "body": "Reporte SQL aprobado del ERP S10: REP-06 «Depósito de CTS por trabajador en un periodo».\nResponde preguntas como: CTS de noviembre 2024; depósito de CTS.\nParámetros: periodo (periodo, p. ej. 2024-11).\nSQL pre-aprobado (la IA solo lo rellena, nunca lo inventa): SELECT w.nombre, w.categoria, ROUND(p.monto, 2) AS cts FROM planilla p JOIN trabajadores w ON w.id = p.trabajador_id WHERE p.concepto LIKE 'CTS%' AND p.periodo = :periodo ORDER BY cts DESC\nSe ejecuta con el catálogo de reportes.py: validación sqlglot (solo SELECT), sesión de base de datos de solo lectura y máximo 500 filas.\n\n**Uso:** `reportes.py preguntar \"…\"` — la plantilla solo se rellena, no se edita. Cambios de SQL = nueva versión del catálogo revisada a mano.",
+  "tags": [
+   "reporte",
+   "sql"
+  ]
+ }
+]

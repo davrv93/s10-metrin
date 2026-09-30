@@ -1,0 +1,220 @@
+[
+ {
+  "path": "gerencia-proyectos",
+  "title": "Gerencia de Proyectos (S10 ERP)",
+  "summary": "Módulo que integra planificación (WBS/fases, calendario, cronograma), control de materiales, mano de obra, subcontratos y equipos, avances y resultados operativos por partida de control con curvas S. Empieza por planificacion-y-cronograma.",
+  "body": "Gerencia de Proyectos es el módulo de S10 ERP orientado a administrar la obra durante su ejecución. Según los objetivos del sílabo oficial, busca que el proyecto se administre \"en forma sencilla y transparente con resultados oportunos\", para decidir con información.\n\n**Qué cubre el curso oficial (4 días de 4 horas):**\n\n1. **Planificación**: análisis de los presupuestos del proyecto, registro del proyecto y asignación de presupuestos, calendario y horarios, fases (WBS/EDT) y cronograma manual o gráfico con MS Project 2003.\n2. **Planificación económica** mediante *partidas de control*.\n3. **Gestión de recursos**: materiales (pedidos, compras, registro de uso), subcontratos (registro y valorización), mano de obra (personal obrero y tareos) y equipos (partes diarios y pagos vía subcontratos).\n4. **Avances y resultados operativos**: registro del porcentaje del plan completado y análisis a nivel de proyecto, partida de control, grupo de recursos y recurso.\n\nAdemás, el sílabo menciona la **gestión de contratos** mediante valorizaciones para quienes financian el proyecto, hasta la autorización de cobro.\n\n**Relación con otros módulos:** los materiales se piden y compran por el flujo de [compras] y se controlan en [almacenes]; el tareo alimenta a Nóminas. El portal de ayuda agrupa junto a este módulo a Lean y a las apps móviles (Tareo Móvil, Calidad Móvil, Aprobaciones y Pedidos), cuyos manuales requieren cuenta de cliente.\n\n**Hijos de esta rama:** planificación y cronograma; gestión de recursos de obra; avances y resultados operativos; calidad móvil; tareo y Lean/Lookahead.\n\n**Confiabilidad:** oficial S10 (sílabos de s10peru.com y portal de ayuda).\n\n**Fuentes**\n- data/texto/syllabus-gerencia-s10erp.txt (Curso de Gerencia de Proyectos, 4 días)\n- data/texto/silabus-gerencia-de-proyectos.txt (Objetivos y contenido)\n- data/paginas/sin-nombre.md y data/paginas/inicio.md (menú del Portal de Ayuda S10)",
+  "tags": [
+   "gerencia-proyectos",
+   "s10",
+   "obra",
+   "oficial"
+  ]
+ },
+ {
+  "path": "gerencia-proyectos/planificacion-y-cronograma",
+  "title": "Planificación y cronograma del proyecto",
+  "summary": "Para planificar en S10: registrar el proyecto y asignarle presupuestos, definir calendario, días no laborables y horario, crear fases (WBS/EDT) con sus partidas y planificar a mano o con MS Project. Resultado: cronograma de avance, valorizado y plan de recursos.",
+  "body": "El curso oficial de Gerencia de Proyectos dedica el primer día a la planificación. El orden de trabajo que describe el sílabo es:\n\n1. **Analizar los presupuestos** que utiliza el proyecto.\n2. **Registrar el proyecto** y asignarle presupuestos.\n3. **Definir el calendario**: días no laborables y horario de trabajo, y calcular días y horas.\n4. **Registrar las fases (WBS o EDT)** y asignar las partidas del presupuesto a cada fase.\n5. **Planificar**: de forma manual o gráfica usando MS Project (el sílabo cita la versión 2003).\n6. Revisar los **resultados de la planificación**.\n\nSegún los objetivos del curso, en esta etapa el proyecto se organiza \"de acuerdo con las técnicas de PMI\", con un WBS integrado por fases que responden a los requerimientos de ejecución en obra y ordenadas en el tiempo. El registro manual sirve para el *previsto*; MS Project se usa si se requiere un cronograma gráfico.\n\n**Salidas de la planificación** (según el sílabo):\n- Cronograma de avances.\n- Cronograma valorizado (desembolsos periódicos).\n- Plan de utilización de recursos.\n\nEl segundo día añade la **planificación económica** con *partidas de control*, que luego son el eje con el que se agrupan los resultados operativos (ver avances-y-resultados-operativos).\n\nLimitación: los sílabos solo enumeran los temas; el detalle de pantallas y campos está en el Manual de Gerencia de Proyectos del portal, que exige inicio de sesión.\n\n**Confiabilidad:** oficial S10.\n\n**Fuentes**\n- data/texto/syllabus-gerencia-s10erp.txt (Primer y segundo día)\n- data/texto/silabus-gerencia-de-proyectos.txt (Objetivos: etapa de planificación)\n- data/paginas/manual-de-gerencia-proyectos.md (contenido restringido)",
+  "tags": [
+   "gerencia-proyectos",
+   "planificacion",
+   "cronograma",
+   "wbs",
+   "oficial"
+  ]
+ },
+ {
+  "path": "gerencia-proyectos/gestion-de-recursos-de-obra",
+  "title": "Gestión de materiales, mano de obra, subcontratos y equipos",
+  "summary": "Gerencia de Proyectos controla cuatro tipos de recurso: materiales (pedidos, compras, uso), mano de obra (tareo multiproyecto o automático hacia Nóminas), subcontratos (adelantos, valorizaciones, amortizaciones) y equipos (partes diarios y pagos por subcontrato).",
+  "body": "El curso oficial de Gerencia de Proyectos recorre cada tipo de recurso y cómo aparece en los resultados operativos.\n\n**Materiales** (día 2): pedidos, compras y registro de uso del recurso. Según los objetivos, cubre la procura, el almacenamiento y la distribución para el uso en obra. El detalle operativo vive en los módulos de Compras y Almacenes.\n\n**Subcontratos** (día 3): registro y valorización. Los objetivos detallan:\n- registro de adelantos y pagos a cuenta;\n- valorizaciones con deducción de recursos;\n- amortización automática de adelantos y amortización manual de pagos a cuenta;\n- descuentos puntuales registrados a mano;\n- aprobación de valorizaciones y autorización de pagos.\n\n**Mano de obra** (día 3): registro del personal obrero y tareos. Según los objetivos, abarca desde la captación del personal y su registro en S10ERP hasta el control del trabajo mediante *tareo multiproyecto o automático*, con envío de la información al módulo de Nóminas para el planillón, el reparto de costos y la visualización en resultados operativos.\n\n**Equipos** (día 4): registro de los equipos del proyecto, **partes diarios** para controlar su trabajo y control de pagos mediante subcontratos.\n\nPara cada recurso el curso incluye \"resultados de la gestión\" y cómo el recurso aparece en los resultados operativos del proyecto.\n\nLimitación: solo los temas; no hay manual público que detalle pantallas.\n\n**Confiabilidad:** oficial S10.\n\n**Fuentes**\n- data/texto/syllabus-gerencia-s10erp.txt (Segundo a cuarto día)\n- data/texto/silabus-gerencia-de-proyectos.txt (Objetivos: gestión de materiales, mano de obra, subcontratos y equipos)",
+  "tags": [
+   "gerencia-proyectos",
+   "subcontratos",
+   "mano-de-obra",
+   "equipos",
+   "oficial"
+  ]
+ },
+ {
+  "path": "gerencia-proyectos/avances-y-resultados-operativos",
+  "title": "Avances, control de costos y resultados operativos",
+  "summary": "El avance se registra como % del plan completado o por valorizaciones; los resultados operativos se analizan por proyecto, partida de control, grupo de recursos y recurso, con curvas S, factores de avance y costo, proyecciones y saldo de obra.",
+  "body": "El cierre del curso oficial de Gerencia de Proyectos (día 4) es el control del proyecto en ejecución.\n\n**Registro de avances:** el sílabo habla de registrar avances o el *porcentaje del plan completado*; los objetivos añaden el **control de avances mediante valorizaciones**.\n\n**Gestión de contratos:** valorizaciones para quienes financian la construcción del proyecto, hasta la *autorización de cobro*.\n\n**Resultados operativos:** información agrupada según las **partidas de control** definidas en la planificación económica, con:\n- curvas S;\n- factores de avance y de costo;\n- proyecciones;\n- saldo de obra.\n\nEl análisis puede hacerse a cuatro niveles: proyecto, partida de control, grupo de recursos y recurso. Cada tipo de recurso (materiales, subcontratos, mano de obra, equipos) tiene su propio apartado sobre cómo aparece en esos resultados.\n\n**Control de costos:** el canal oficial de S10 publica el video \"Elementos que conforman el Control de costos en un proyecto de Construcción | S10 ERP\" (70 s). Su transcripción no está disponible en este corpus, así que solo consta el título.\n\nLimitación: los sílabos no explican las fórmulas de los factores ni de las proyecciones.\n\n**Confiabilidad:** oficial S10.\n\n**Fuentes**\n- data/texto/syllabus-gerencia-s10erp.txt (Cuarto día)\n- data/texto/silabus-gerencia-de-proyectos.txt (Objetivos: control de avances, gestión de contratos, resultados operativos)\n- Video utEA5-OAJLo, \"Elementos que conforman el Control de costos en un proyecto de Construcción | S10 ERP\" (solo título; data/yt/videos.txt)\n- Tesis UPN: an-lisis-de-la-implementaci-n-del-sistema-erp-s10-en-la-log-stica-de-una-constru.pdf (caso académico, citado como ejemplo)\n",
+  "tags": [
+   "gerencia-proyectos",
+   "control-de-costos",
+   "avance",
+   "curva-s",
+   "oficial",
+   "academico"
+  ]
+ },
+ {
+  "path": "gerencia-proyectos/calidad-movil",
+  "title": "Calidad Móvil: protocolos y listas de chequeo",
+  "summary": "App S10-Calidad Móvil: cada actividad (p. ej., un recinto) lleva un protocolo o lista de chequeo; sus características (ítems) se califican por estados (Nuevo, En Proceso, Completado, Revisado, Aprobado, No conforme…). Un proyecto se publica desde Lookahead para calidad tipo tarea protocolo.",
+  "body": "**S10-Calidad Móvil** es la app de S10 para inspeccionar calidad en obra. Una página del portal de ayuda la explica con el ejemplo de un edificio de 10 pisos y 4 departamentos por piso, y define tres conceptos:\n\n- **Actividades:** en el ejemplo equivalen a un *recinto* (p. ej., \"Baño de visita\"). A cada recinto se le asigna un **protocolo o lista de chequeo**.\n- **Características:** los ítems que se chequean. Para el baño de visita: inodoro, lavatorio, pintura, etc.\n- **Estados:** la calificación de cada característica. La página lista: Nuevo, En Proceso, Completado, Revisado, Aprobado, No conforme, Ok Cliente y No aplica, e indica que \"los 6 primeros son fijos y el usuario puede crear más\".\n\n**Vínculo con Lookahead:** otra página del portal indica cómo **publicar un proyecto desde el Lookahead** para calidad de tipo **TAREA PROTOCOLO**. El texto público se limita a ese enunciado; los pasos no se recuperaron.\n\n**Recursos oficiales adicionales:**\n- Videos del canal oficial \"Calidad Movil - S10\" (147 s) y \"¿Cómo activar Calidad Móvil? - S10\" (62 s); sus transcripciones no están en este corpus.\n- \"Manual de Calidad Móvil\" y \"Uso de Calidad Móvil\" en el portal: el primero exige cuenta y el segundo se capturó vacío.\n\nLimitación: no hay información pública sobre cómo se configura la app, cómo se sincroniza ni qué reportes genera.\n\n**Confiabilidad:** oficial S10 (portal de ayuda y títulos de videos del canal oficial).\n\n**Fuentes**\n- data/paginas/prueba-manual-mayo.md (\"Manual Mayo\", documentacion.s10peru.com/prueba-manual-mayo/)\n- data/paginas/publicacion-de-proyecto-lookahead.md (Publicación de proyecto desde Lookahead)\n- data/paginas/manual-de-calidad-movil.md, data/paginas/uso-de-calidad-movil.md\n- Videos zuotRELT8dE \"Calidad Movil - S10\" y ygss7PVElW0 \"¿CÓMO ACTIVAR CALIDAD MOVIL? - S10\" (solo títulos)",
+  "tags": [
+   "gerencia-proyectos",
+   "calidad-movil",
+   "app-movil",
+   "lookahead",
+   "oficial"
+  ]
+ },
+ {
+  "path": "gerencia-proyectos/tareo-y-lean-lookahead",
+  "title": "Tareo en línea, Lean y Lookahead",
+  "summary": "El tareo de obreros se hace multiproyecto o automático y alimenta Nóminas (planillón y reparto de costos); existe app de Tareo en Línea. Lean tiene manual propio y un Lookahead desde el que se publican proyectos a Calidad Móvil. Solo hay títulos públicos.",
+  "body": "Este nodo reúne tres herramientas de obra de las que las fuentes públicas dan poca información.\n\n**Tareo**\n- El sílabo de Gerencia de Proyectos incluye \"registro del personal obrero y tareos\". Sus objetivos precisan que el trabajo se controla con **tareo multiproyecto o automático** y que la información se envía a **Nóminas** para el planillón, el reparto de costos y los resultados operativos.\n- El sílabo de Nóminas también incluye \"Registro del tareo multiproyecto\".\n- En el canal oficial hay dos videos: \"Tareo en Línea S10\" y \"App de Tareo en Línea S10\" (79 s cada uno). El portal tiene una sección \"Videos de Tareo Móvil\" que exige cuenta. No hay transcripción disponible.\n\n**Lean y Lookahead**\n- El portal de ayuda lista **Lean** como software de gestión, al mismo nivel que Presupuestos, Gerencia de Proyectos, Compras y Almacenes, con su propio manual y videos, ambos restringidos.\n- Se confirma la existencia de un **Lookahead**, desde el cual se publica un proyecto para Calidad Móvil (tipo tarea protocolo).\n- El canal oficial tiene el video \"Beneficios de aplicar Lean Construction a Empresas constructoras\" (39 s), también sin transcripción.\n\nLimitación importante: las fuentes no dicen cómo funciona el Lookahead en S10 (horizonte, restricciones, métricas) ni el flujo de la app de tareo. No se debe suponer que sigue un Last Planner estándar sin verificarlo en el manual.\n\n**Confiabilidad:** oficial S10 (sílabos, portal y títulos de videos del canal oficial).\n\n**Fuentes**\n- data/texto/silabus-gerencia-de-proyectos.txt (Objetivos: gestión de mano de obra)\n- data/texto/syllabus-nominas-s10erp.txt (\"Registro del tareo multiproyecto\")\n- data/paginas/manual-de-lean.md, video-lean.md, video-tareo-movil.md, publicacion-de-proyecto-lookahead.md, sin-nombre.md\n- Videos Y-07-W7DfwU \"Tareo en Línea S10\", TnxAOPs5L8M \"App de Tareo en Línea S10\", kBIwwtf-9Ms \"Beneficios de aplicar Lean Construction…\" (solo títulos)",
+  "tags": [
+   "gerencia-proyectos",
+   "tareo",
+   "lean",
+   "lookahead",
+   "oficial"
+  ]
+ },
+ {
+  "path": "compras",
+  "title": "Compras y Pedidos (S10 ERP)",
+  "summary": "Compras en S10: centros de compra, catálogos y aprobaciones; flujo pedido de compra → aprobación → cotización y cuadro comparativo → orden de compra o servicio. Tiene apps móviles de Pedidos y Aprobaciones. Empieza por configuracion-y-catalogos.",
+  "body": "El módulo de Compras (el curso oficial se llama \"Compras y Pedidos\") gestiona el abastecimiento del proyecto, desde el pedido hasta la orden de compra o de servicio.\n\n**Cómo está estructurado según los sílabos oficiales:**\n1. **Configuración:** usuarios y permisos, centros de compra con proyectos asignados, grupos de aprobación, pie de las órdenes, logotipos y firmas, y catálogos (recursos, socios de negocio, formas de pago).\n2. **Operación:** pedidos de compra y su aprobación, órdenes de compra desde el pedido, cotizaciones con proveedores, cuadro comparativo, OC desde la cotización y reportes.\n3. **Móvil** (solo en la versión de 12 horas): APP de Pedidos y Despacho y APP de Aprobaciones.\n\nHay dos versiones del curso: la de **2 días** (8 horas) y la de **3 días** (12 horas), que añade las apps.\n\n**Relación con otros módulos:** los materiales pedidos desde Gerencia de Proyectos siguen este flujo. El ingreso de lo comprado se registra en Almacenes, por ejemplo como *Ingreso por Orden de Compra (I OC)*, y los anticipos a proveedor se regularizan contra la OC (ver almacenes/anticipos-y-regularizacion-compuesta). El portal también tiene un Portal de Proveedores con un manual de \"Compras y Almacén\", que exige cuenta.\n\n**Hijos:** configuración y catálogos; pedidos, cotizaciones y órdenes; pedidos y aprobaciones móviles; caso UPN (flujo y resultados de compras).\n\n**Confiabilidad:** oficial S10 (sílabos de s10peru.com y portal de ayuda).\n\n**Fuentes**\n- data/texto/syllabus-compras-s10erp.txt\n- data/texto/silabus-compras-y-pedidos.txt (Duración 2 días)\n- data/texto/silabus-compras-y-pedidos-12-horas.txt (Duración 3 días)\n- data/paginas/manual-de-compras.md, acceso-a-manual-portal-proveedores-compras-y-almacen.md (restringidos)",
+  "tags": [
+   "compras",
+   "pedidos",
+   "s10",
+   "logistica",
+   "oficial"
+  ]
+ },
+ {
+  "path": "compras/configuracion-y-catalogos",
+  "title": "Configuración de compras y catálogos",
+  "summary": "Antes de comprar: registrar usuarios y permisos, crear centros de compra y asignarles proyectos, grupos de aprobación y atributos de uso, configurar el pie de OC/OS y los logotipos y firmas por empresa, y cargar recursos, socios de negocio y formas de pago.",
+  "body": "El primer día de los cursos oficiales de Compras y Pedidos se dedica a dejar el módulo listo para operar. Los temas son:\n\n**Seguridad**\n- Registro de usuarios y permisos (versión de 2 días).\n- Orientación en la interfaz de trabajo del módulo (versión de 12 horas).\n\n**Estructura de compras**\n- **Centro de compras**: registro, asignación de proyectos y atributos de uso.\n- **Grupos de aprobación** asociados al centro de compras (explícito en la versión de 12 horas).\n- Revisión de las configuraciones de compras y pedidos.\n\n**Documentos**\n- Configuración del **pie de las órdenes de compra y de servicio**, por empresa según la versión de 12 horas.\n- **Logotipos por empresa y firmas**; la versión de 12 horas habla de firmas digitales.\n\n**Catálogos**\n- Recursos.\n- Socios de negocio (proveedores).\n- Formas de pago.\n\nOrden práctico que sugiere el sílabo: usuarios y permisos, luego centro de compras y proyectos, luego aprobaciones, luego formatos de la OC y por último catálogos. Sin centro de compras con proyectos asignados y grupos de aprobación, el flujo pedido → aprobación → OC no tiene quién apruebe ni a qué proyecto imputar.\n\nLimitación: los sílabos solo enumeran temas. Los campos concretos y las reglas de aprobación (montos, niveles) no son públicos: están en el Manual de Compras, que exige cuenta.\n\n**Confiabilidad:** oficial S10.\n\n**Fuentes**\n- data/texto/syllabus-compras-s10erp.txt (Primer día)\n- data/texto/silabus-compras-y-pedidos.txt (Primer día)\n- data/texto/silabus-compras-y-pedidos-12-horas.txt (Primer día)",
+  "tags": [
+   "compras",
+   "configuracion",
+   "catalogos",
+   "aprobaciones",
+   "oficial"
+  ]
+ },
+ {
+  "path": "compras/pedidos-cotizaciones-y-ordenes",
+  "title": "Pedidos, cotizaciones y órdenes de compra",
+  "summary": "Hay dos caminos a la OC: pedido de compra aprobado → orden de compra directa; o cotización → asignar proveedores → recibir cotizaciones → cuadro comparativo → OC desde la cotización. Cubre materiales y servicios, con reportes de compras.",
+  "body": "El segundo día de los cursos oficiales de Compras y Pedidos recorre la operación. Del sílabo se desprenden dos caminos para llegar a la orden de compra.\n\n**Camino 1: pedido directo**\n1. Generar el **pedido de compra**.\n2. **Aprobarlo**.\n3. Generar la **orden de compra desde el pedido**.\n\n**Camino 2: con cotización**\n1. Crear una **cotización** para la compra de materiales o servicios.\n2. **Asignar proveedores** a la cotización.\n3. **Recibir las cotizaciones**, por proveedor según la versión de 12 horas.\n4. Revisar el **cuadro comparativo** de cotizaciones; la versión de 12 horas lo llama \"análisis del cuadro comparativo\".\n5. Generar la **orden de compra desde la cotización**.\n\nAl final vienen los **reportes e informes de compras**.\n\nEl pie de las órdenes, los logotipos y las firmas se configuran antes (ver compras/configuracion-y-catalogos). Tras emitir la OC, el material entra en Almacenes con el movimiento *Ingreso por Orden de Compra (I OC)*. Si el proveedor factura un anticipo, esa factura se relaciona con la OC (ver almacenes/anticipos-y-regularizacion-compuesta).\n\n**Nota del caso académico:** en la tesis UPN, las OC las aprobaba la gerencia y el comparativo presupuestado/real sirvió para medir ahorro (ver compras/caso-upn-flujo-y-resultados). Eso describe a una empresa concreta, no un comportamiento estándar.\n\nLimitación: los sílabos no detallan estados del pedido ni reglas del comparativo.\n\n**Confiabilidad:** oficial S10 (con una mención puntual a la tesis UPN).\n\n**Fuentes**\n- data/texto/syllabus-compras-s10erp.txt (Segundo día)\n- data/texto/silabus-compras-y-pedidos.txt (Segundo día)\n- data/texto/silabus-compras-y-pedidos-12-horas.txt (Segundo día)\n- data/texto/syllabus-almacenes-s10erp.txt (Ingreso por Orden de Compra)",
+  "tags": [
+   "compras",
+   "orden-de-compra",
+   "cotizaciones",
+   "pedidos",
+   "oficial"
+  ]
+ },
+ {
+  "path": "compras/pedidos-y-aprobaciones-moviles",
+  "title": "Apps de Pedidos y Aprobaciones Móviles",
+  "summary": "S10 tiene apps móviles para generar pedidos de distintos tipos y seguirlos (APP de Pedidos y Despacho) y para aprobarlos (APP de Aprobaciones). Se enseñan en el día 3 del curso de Compras y Pedidos de 12 horas; los manuales requieren cuenta de cliente.",
+  "body": "S10 extiende Compras al teléfono con dos aplicaciones. Solo el curso **Compras y Pedidos de 12 horas** las incluye, en su tercer día.\n\n**Qué cubre el curso oficial (día 3):**\n- Orientación de la interfaz de trabajo de la **APP de Pedidos y Despacho**.\n- Generar **diferentes tipos de pedidos** en la app y hacer su **seguimiento**.\n- Orientación de la interfaz de trabajo de la **APP de Aprobaciones**.\n- Luego repite temas de cotización: asignar proveedores, recibir cotizaciones y cuadro comparativo.\n\n**Otras fuentes oficiales:**\n- El portal de ayuda lista \"Pedidos\" y \"Aprobaciones\" (también \"Aprobaciones Móviles\" y \"Pedidos Móviles\") entre sus apps móviles, junto a Tareo Móvil y Calidad Móvil.\n- \"Acceso a Manual de Pedidos Móviles\" y \"Acceso a Manual de Aprobaciones Móviles\" existen en el portal, pero exigen inicio de sesión.\n- El canal oficial tiene los videos \"Pedidos Móviles S10\" (121 s) y \"Aprobaciones Móviles S10\" (103 s). Sus transcripciones no están en este corpus porque el audio no produjo texto.\n\n**Uso práctico:** la app de pedidos pone el origen del pedido en obra, y la de aprobaciones permite aprobar sin la estación de escritorio. El pedido aprobado sigue el mismo flujo hacia cotización u orden de compra (ver compras/pedidos-cotizaciones-y-ordenes).\n\nLimitación: las fuentes no dicen qué tipos de pedido admite la app ni cómo funcionan las notificaciones o los niveles de aprobación.\n\n**Confiabilidad:** oficial S10 (sílabo, portal y títulos de videos).\n\n**Fuentes**\n- data/texto/silabus-compras-y-pedidos-12-horas.txt (Tercer día)\n- data/paginas/manual-pedidos-moviles.md, manual-aprobaciones.md, manual-de-aprobaciones.md, sidebar-general-dic-19.md\n- Videos eRlEaDJ6-Yk \"Pedidos Móviles S10\" y LDE7Wz5ss7I \"Aprobaciones Móviles S10\" (solo títulos)",
+  "tags": [
+   "compras",
+   "pedidos-moviles",
+   "aprobaciones",
+   "app-movil",
+   "oficial"
+  ]
+ },
+ {
+  "path": "compras/caso-upn-flujo-y-resultados",
+  "title": "Caso UPN: flujo de compras y resultados tras implantar S10",
+  "summary": "Caso académico (tesis UPN 2025) de una constructora limeña: proyectado quincenal → cotización vs presupuesto → OC y seguimiento. Tras implantar S10 reporta 16 % de ahorro en adquisiciones y −27 días netos de atraso. No es el uso estándar del producto.",
+  "body": "**Caso de estudio académico.** Trabajo de suficiencia profesional (UPN, Ingeniería Industrial, 2025) sobre una constructora peruana de edificios multifamiliares, fundada en Lima en 2020, que implantó los módulos de **Compras y Almacenes** de S10. Describe los procesos de esa empresa, no el comportamiento estándar del producto.\n\n**Flujo de compras de la empresa (Fig. 4, p. 16):**\n1. El residente de obra envía un **proyectado quincenal de requerimientos**.\n2. Logística lo **cotiza** y lo compara con el presupuesto. Si hay desviaciones, se **renegocia** con los proveedores.\n3. Administración lo revisa y lo incorpora al **flujo de caja** del proyecto.\n\n**Subproceso de pedidos (Fig. 5, p. 17):** generar la OC, coordinar el pago (crédito o contado), programar el despacho y hacer el seguimiento hasta la entrega en obra. En S10 se gestionaron requerimientos y OC \"aprobadas por gerencia\" (p. 27).\n\n**Resultados reportados (cap. IV):**\n- Antes de S10 se compraba con hojas de cálculo sin histórico. En el proyecto Residencial Zentric, un tablero eléctrico varió de S/ 350 a S/ 1,700 (Tabla 2, p. 29).\n- Con S10: historial de compras y comparación automática entre precio presupuestado y final. El **% de ahorro promedio fue 16 %**, con una suma de ahorro de S/ 23,445.82 (Tabla 3, p. 30). Algunas familias salieron negativas, como EPP (−39 %) y accesorios de revestimiento (−48 %).\n- **Plazos:** la suma de días de atraso por tipo de recurso da **−27** (Tabla 4, p. 31), que los autores llaman \"mejora neta de 27 días\". Señalización (+19) y concreto premezclado (+10) siguieron atrasados.\n\n**Recomendaciones de los autores (pp. 36-37):** política formal de evaluación de proveedores, alertas automáticas de plazos y sobrecostos, eliminar los Excel paralelos y capacitación continua.\n\nAdvertencia: el −27 es una suma por categoría, no un promedio, y el ahorro mezcla la negociación con el efecto del sistema.\n\n**Confiabilidad:** caso académico (tesis UPN: describe una empresa concreta, no el uso estándar del producto).\n\n**Fuentes**\n- data/texto/an-lisis-de-la-implementaci-n-del-sistema-erp-s10-en-la-log-stica-de-una-constru.txt (tesis UPN 2025): pp. 9, 15-17, 27-31, 35-37",
+  "tags": [
+   "compras",
+   "caso-upn",
+   "kpi",
+   "academico"
+  ]
+ },
+ {
+  "path": "almacenes",
+  "title": "Almacenes (S10 ERP)",
+  "summary": "Almacenes en S10: configurar almacenes por proyecto (partidas de control, frentes, destinos, ubicación), registrar ingresos (11 tipos: I OC, I TI…) y egresos (13 tipos: E PC, E TE…), y consultar stock, kardex, recursos con problemas y equipos disponibles.",
+  "body": "El módulo de Almacenes registra cada movimiento de materiales del proyecto con un tipo de documento codificado. El curso oficial dura **4 días de 4 horas**.\n\n**Estructura del curso oficial:**\n1. **Configuración:** usuarios y permisos, proyecto y usuarios de proyecto y almacén, nuevos almacenes, documentos de movimiento, partidas de control, destinos específicos, frentes, roles por unidad operativa y ubicación física.\n2. **Ingresos:** 11 tipos, desde la compra y la orden de compra hasta transferencias, préstamos, fabricación e inventario.\n3. **Egresos:** 13 tipos, entre ellos salidas a partida de control (con descarga directa o con pedido), transferencias, préstamos, bajas y mermas y devoluciones.\n4. **Resultados:** almacén de activos, fondos rotatorios, stock, **kardex**, recursos con problemas y, a nivel general, ingresos y egresos, stock general y equipos disponibles.\n\n**Relación con otros módulos:**\n- Los ingresos por OC cierran el ciclo de [compras].\n- Los egresos a partida de control imputan el consumo a la estructura de control de [gerencia-proyectos], con la que se agrupan los resultados operativos.\n- La factura de un anticipo al proveedor se enlaza con la OC y el ingreso mediante una regularización compuesta.\n\n**Hijos:** configuración de almacenes; movimientos de ingreso; egresos y transferencias; anticipos y regularización compuesta; caso UPN (ingresos, salidas e inventario).\n\nLimitación: el Manual de Almacenes del portal exige cuenta, así que solo se conocen los temas de los sílabos y el caso de anticipo, que es público.\n\n**Confiabilidad:** oficial S10 (sílabos y portal de ayuda).\n\n**Fuentes**\n- data/texto/syllabus-almacenes-s10erp.txt (Curso de Almacenes, 4 días)\n- data/texto/silabus-almacenes.txt\n- data/paginas/caso-anticipo.md; data/paginas/manual-de-almacenes.md (restringido)",
+  "tags": [
+   "almacenes",
+   "inventario",
+   "s10",
+   "logistica",
+   "oficial"
+  ]
+ },
+ {
+  "path": "almacenes/configuracion-de-almacenes",
+  "title": "Configuración de almacenes",
+  "summary": "Antes de mover stock: registrar usuarios y permisos, el proyecto con sus usuarios y almacenes, crear almacenes, definir los documentos de movimiento y configurar partidas de control, destinos específicos, frentes, roles por unidad operativa y ubicación física.",
+  "body": "El primer día del curso oficial de Almacenes deja la estructura lista. Temas, en el orden del sílabo:\n\n1. **Usuarios y permisos.**\n2. **Proyecto**: registro del proyecto, de sus usuarios y de los usuarios de cada almacén, más los atributos de uso.\n3. **Nuevos almacenes.**\n4. **Documentos** que usa la empresa en los movimientos: el comprobante que respalda cada ingreso o egreso.\n5. **Configuración de la imputación y del espacio:**\n   - **Partidas de control**: a qué se carga el consumo.\n   - **Destinos específicos.**\n   - **Frentes** de trabajo.\n   - **Roles por unidad operativa.**\n   - **Ubicación física** dentro del almacén.\n\n**Por qué importa:** los egresos tipo *Egreso a Partida de Control* (E PC, E PCDD, E PCP) necesitan que existan partidas de control, que son la misma estructura con la que Gerencia de Proyectos agrupa los resultados operativos. Si se configuran mal, el consumo de materiales queda imputado donde no corresponde.\n\nEn el caso académico de la tesis UPN, el residente asigna la partida de control al autorizar el vale de salida. Es una práctica de esa empresa, citada solo como ejemplo (ver almacenes/caso-upn-ingresos-salidas-e-inventario).\n\nLimitación: los sílabos no explican qué diferencia un \"destino específico\" de un \"frente\" ni qué permisos da cada rol. Ese detalle está en el manual restringido.\n\n**Confiabilidad:** oficial S10 (con una mención puntual a la tesis UPN).\n\n**Fuentes**\n- data/texto/syllabus-almacenes-s10erp.txt (Primer día)\n- data/texto/silabus-almacenes.txt (Primer día)\n- data/texto/an-lisis-de-la-implementaci-n-del-sistema-erp-s10-en-la-log-stica-de-una-constru.txt (tesis UPN 2025): p. 19-20",
+  "tags": [
+   "almacenes",
+   "configuracion",
+   "partidas-de-control",
+   "oficial"
+  ]
+ },
+ {
+  "path": "almacenes/movimientos-de-ingreso",
+  "title": "Movimientos de ingreso al almacén",
+  "summary": "S10 codifica 11 tipos de ingreso: I AC (ajuste), I C (compra), I DP (devolución de préstamo), I DS (devolución de saldo), I F (fabricación), I I (inventario), I OC (orden de compra), I P (préstamo), I R (reintegro), I TE / I TI (transferencia externa/interna).",
+  "body": "El segundo día del curso oficial de Almacenes cubre los ingresos. Cada tipo tiene su propio código de documento:\n\n| Código | Movimiento |\n|---|---|\n| I AC | Ingreso por Ajuste de Cantidad |\n| I C | Ingreso por Compra |\n| I DP | Ingreso por Devolución de Préstamo |\n| I DS | Ingreso por Devolución de Saldo |\n| I F | Ingreso por Fabricación |\n| I I | Ingreso por Inventario |\n| I OC | Ingreso por Orden de Compra |\n| I P | Ingreso por Préstamo |\n| I R | Ingreso por Reintegro |\n| I TE | Ingreso por Transferencia Externa |\n| I TI | Ingreso por Transferencia Interna |\n\nDespués vienen los **reportes e informes de ingresos**.\n\n**Cómo encaja:**\n- **I OC** es el que cierra una orden de compra emitida en Compras.\n- Cada ingreso de transferencia o préstamo tiene su contraparte en egresos: E TE/E TI y E P/E DP.\n- En el caso de anticipos, el portal oficial indica que el sistema enlaza el ingreso con la primera factura (la del anticipo) y que hay que quitar esa regularización para relacionarlo con la segunda factura (ver almacenes/anticipos-y-regularizacion-compuesta).\n\n**Referencia académica:** en la tesis UPN, el ingreso lo registra el analista logístico en S10 después de la verificación documental y física y de la firma de la guía por el residente. Es la práctica de una empresa concreta.\n\nLimitación: los sílabos no explican la diferencia entre I C e I OC ni cuándo usar I DS o I R.\n\n**Confiabilidad:** oficial S10 (con una mención puntual a la tesis UPN).\n\n**Fuentes**\n- data/texto/syllabus-almacenes-s10erp.txt (Segundo día)\n- data/texto/silabus-almacenes.txt (Segundo día)\n- data/paginas/caso-anticipo.md\n- data/texto/an-lisis-de-la-implementaci-n-del-sistema-erp-s10-en-la-log-stica-de-una-constru.txt (tesis UPN 2025): pp. 17-19",
+  "tags": [
+   "almacenes",
+   "ingresos",
+   "orden-de-compra",
+   "oficial"
+  ]
+ },
+ {
+  "path": "almacenes/egresos-y-transferencias",
+  "title": "Egresos, transferencias y consultas de stock y kardex",
+  "summary": "13 tipos de egreso: a partida de control (E PC, con descarga directa E PCDD, con pedido E PCP), fabricación, ajuste, bajas y mermas, devoluciones, préstamo y transferencias externa (E TE, E TEP) e interna (E TI). Stock y kardex se consultan en resultados.",
+  "body": "El tercer día del curso oficial de Almacenes cubre los egresos, con estos códigos:\n\n| Código | Movimiento |\n|---|---|\n| E PC | Egreso a Partida de Control |\n| E PCDD | Egreso a Partida de Control con Descarga Directa |\n| E PCP | Egreso a Partida de Control con Pedido |\n| E F | Egreso para Fabricación |\n| E AC | Egreso por Ajuste de Cantidad |\n| E BM | Egreso por Bajas y Mermas |\n| E DP | Egreso por Devolución al Proveedor |\n| E DP | Egreso por Devolución de Préstamo |\n| E DOC | Egreso por Devolución de Orden de Compra |\n| E P | Egreso por Préstamo |\n| E TE | Egreso por Transferencia Externa |\n| E TEP | Egreso por Transferencia Externa con Pedido |\n| E TI | Egreso por Transferencia Interna |\n\nOjo: el sílabo asigna **el mismo código \"E DP\"** a dos movimientos distintos. Puede ser una errata; hay que verificarlo en el sistema.\n\n**Transferencias:** existen externas e internas, cada una con su ingreso (I TE, I TI) y su egreso. La externa también puede hacerse \"con pedido\".\n\n**Resultados y consultas (día 4):** almacén de activos, fondos rotatorios, **stock**, **kardex**, **recursos con problemas** y, a nivel general, ingresos y egresos, stock general y equipos disponibles.\n\nLimitación: los sílabos no explican el método de valorización del kardex (promedio, FIFO u otro) ni qué se considera un \"recurso con problemas\".\n\n**Confiabilidad:** oficial S10.\n\n**Fuentes**\n- data/texto/syllabus-almacenes-s10erp.txt (Tercer y cuarto día)\n- data/texto/silabus-almacenes.txt (Tercer y cuarto día)",
+  "tags": [
+   "almacenes",
+   "egresos",
+   "transferencias",
+   "kardex",
+   "oficial"
+  ]
+ },
+ {
+  "path": "almacenes/anticipos-y-regularizacion-compuesta",
+  "title": "Anticipos a proveedor y regularización compuesta",
+  "summary": "Si el proveedor factura un % de la OC como anticipo: registrar la factura 1 relacionada con la OC (recurso ANTICIPO); al llegar el material, quitar la regularización del ingreso, registrar la factura 2 contra el ingreso, amortizar con correctivo negativo y cerrar con regularización compuesta.",
+  "body": "Caso público del portal de ayuda (\"Manual de factura de anticipos de Almacén con compuesta\"). Se aplica cuando el proveedor factura un porcentaje de la OC como adelanto antes de despachar, y en una segunda factura entrega todo el material descontando ese anticipo.\n\n**Ejemplo del portal:** OC 585 por una caja de tóner, con anticipo del 30 % en la FT 001-000020 y entrega del material con la FT 001-000025.\n\n**Pasos:**\n1. **Factura del anticipo.** Clic derecho → *Adicionar* → llenar los datos de la factura → en *Relacionado con* elegir **\"ORDEN DE COMPRA O SERVICIO\"** → seleccionar la OC. Por configuración previa, el sistema asigna el recurso **ANTICIPO**, que se puede reasignar según la moneda y la contabilidad. Cantidad 1 y P.U. sin IGV igual al monto facturado. El monto del adelanto es editable.\n2. **Ingreso al almacén.** El sistema enlaza el ingreso con la primera factura por defecto. Hay que hacer clic derecho → **quitar regularización**, porque el ingreso corresponde a la segunda factura.\n3. **Segunda factura**, relacionada con el ingreso de almacén.\n4. **Amortización.** Sobre el recurso, clic derecho → **adicionar correctivo** → recurso ANTICIPO con **monto negativo** igual al 30 % de la OC.\n5. **Regularización compuesta**, para que todo quede enlazado. En la pestaña *Documentos* se agrega la primera factura, se hace doble clic, luego pestaña *Asignación de precio* → *Aceptar*.\n\n**Error típico que evita:** dejar el ingreso ligado a la factura del anticipo (paso 2), con lo que el material queda regularizado contra el documento equivocado.\n\nNota: el ejemplo del portal tiene fechas incoherentes (anticipo el 30/04/2017 y entrega el 05/05/2016). No afecta a los pasos.\n\n**Confiabilidad:** oficial S10 (portal de ayuda).\n\n**Fuentes**\n- data/paginas/caso-anticipo.md (documentacion.s10peru.com/caso-anticipo/)",
+  "tags": [
+   "almacenes",
+   "anticipos",
+   "facturacion",
+   "orden-de-compra",
+   "oficial"
+  ]
+ },
+ {
+  "path": "almacenes/caso-upn-ingresos-salidas-e-inventario",
+  "title": "Caso UPN: ingresos, salidas e inventario con S10",
+  "summary": "Caso académico (tesis UPN 2025): ingreso con verificación documental y física, firma del residente y registro en S10; salida con vale correlativo y partida de control; 12,31 % de error entre kardex Excel previo y conteo físico, y 17 % de merma en enchapes.",
+  "body": "**Caso de estudio académico.** Tesis UPN (2025) sobre una constructora limeña de edificios multifamiliares que implantó S10 en logística. Describe procedimientos de **esa empresa**, no el funcionamiento estándar del módulo.\n\n**Ingreso de materiales (Fig. 6, pp. 17-19):** el proveedor llega a obra y vigilancia verifica la documentación. Si es correcta, se descarga y se inspecciona el material. Ante discrepancias o daños, se observa, rechaza o reprograma. Si todo está conforme, el residente firma la guía y el **analista logístico registra el ingreso en S10**.\n\n**Salida de materiales (Fig. 7, pp. 19-20):** el encargado de obra solicita según la programación diaria. El residente valida, **asigna las partidas de control** y autoriza con un **vale**. El analista verifica lo despachado y registra la salida en S10. Luego se cruza el stock del sistema con el inventario físico.\n\n**Prácticas adoptadas (p. 28):** vales de salida correlativos, guías de remisión para los ingresos e **inventario semanal**.\n\n**Hallazgos (pp. 31-33):**\n- Al liquidar la obra, los sobrantes de enchapes se llevaron al almacén central (S/ 27,489.80). El 14,8 % del valor correspondía a productos descontinuados.\n- **Merma del 17 %** por transporte o mala manipulación (enchapes rotos o quiñados, unos S/ 4,532), atribuida a almacenes temporales inadecuados.\n- **Error de stock del 12,31 %**, calculado como |teórico − físico| / teórico, entre el **kardex en Excel previo a S10** (S/ 24,476) y el conteo físico. No mide un error de S10.\n\n**Recomendaciones de los autores (p. 36):** inventarios cíclicos quincenales o mensuales, un almacén central acondicionado, formatos estandarizados integrados al ERP y alertas de mermas.\n\n**Confiabilidad:** caso académico (tesis UPN: describe una empresa concreta, no el uso estándar del producto).\n\n**Fuentes**\n- data/texto/an-lisis-de-la-implementaci-n-del-sistema-erp-s10-en-la-log-stica-de-una-constru.txt (tesis UPN 2025): pp. 17-20, 27-28, 31-33, 35-36",
+  "tags": [
+   "almacenes",
+   "caso-upn",
+   "inventario",
+   "mermas",
+   "academico"
+  ]
+ }
+]

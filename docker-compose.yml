@@ -1,0 +1,109 @@
+# s10-conocimiento — todo el proyecto en un compose propio.
+#
+#   docker compose up -d --build              cortex + admin + programador + metrin
+#   docker compose --profile llm up -d        además Ollama dentro del compose
+#   docker compose run --rm herramientas s10kb.py indexar      (cualquier script)
+#
+# Puertos solo en 127.0.0.1 del host:
+#   4748 Cortex (tablero y API) · 4750 panel admin · 4760 chat de Metrín
+#
+# El código y los datos viven en esta carpeta y se montan en /app: lo que se agrega
+# desde el panel queda en disco, igual que fuera de Docker.
+name: s10-conocimiento
+
+x-logs: &logs
+  driver: json-file
+  options: { max-size: "5m", max-file: "2" }
+
+x-base: &base
+  build: .
+  image: s10-conocimiento:dev
+  volumes:
+    - ./:/app
+    - venv-linux:/app/.venv          # tapa el .venv de macOS (binarios que no corren en Linux)
+  env_file:
+    - path: .env
+      required: false
+  logging: *logs
+  restart: unless-stopped
+
+services:
+  cortex:
+    <<: *base
+    command: ["sh", "/app/docker/cortex.sh"]
+    ports: ["127.0.0.1:${S10_PUERTO_CORTEX:-4748}:4749"]
+    healthcheck:
+      test: ["CMD", "curl", "-fs", "http://127.0.0.1:4748/api/health"]
+      interval: 60s
+      timeout: 5s
+      start_period: 30s
+      start_interval: 2s
+
+  admin:
+    <<: *base
+    command: ["python", "admin.py"]
+    environment:
+      ADMIN_HOST: 0.0.0.0
+      S10_CORTEX_API: http://cortex:4749/api
+      S10_CORTEX_HOST: localhost:4748     # Cortex rechaza otros Host (anti DNS-rebinding)
+      CORTEX_URL_PUBLICA: http://localhost:${S10_PUERTO_CORTEX:-4748}
+      S10_MOTOR: sdk                  # en Docker no hay CLI de Claude: tutoriales con ANTHROPIC_API_KEY de .env
+    ports: ["127.0.0.1:${S10_PUERTO_ADMIN:-4750}:4750"]
+    depends_on:
+      cortex: { condition: service_healthy }
+
+  # Actualiza las fuentes cada X horas (frecuencias en el panel) y lo registra en Cortex.
+  programador:
+    <<: *base
+    command: ["python", "programador.py"]
+    environment:
+      S10_CORTEX_API: http://cortex:4749/api
+      S10_CORTEX_HOST: localhost:4748
+    depends_on:
+      cortex: { condition: service_healthy }
+
+  metrin:
+    build: ./metrin
+    image: s10-metrin:dev
+    environment:
+      OLLAMA_URL: ${OLLAMA_URL:-http://host.docker.internal:11434}
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-qwen2.5-coder:7b}
+      # Conversacional con estilo Metrín: LLM_PROVIDER=mlx usa el mlx_lm.server
+      # del Mac (GPU Apple, no corre en contenedor Linux) con el adaptador LoRA.
+      # Arranca en el Mac: entrenamiento-metrin/.venv/bin/python -m mlx_lm.server
+      #   --model mlx-community/Qwen2.5-3B-Instruct-4bit
+      #   --adapter-path entrenamiento-metrin/artifacts/metrin-lora --port 8080
+      LLM_PROVIDER: ${LLM_PROVIDER:-ollama}
+      MLX_URL: ${MLX_URL:-http://host.docker.internal:8080}
+      RAG_MAX_DISTANCIA: "0.80"
+    volumes:
+      - ./kb:/kb:ro
+      - metrin-datos:/srv/datos
+    extra_hosts: ["host.docker.internal:host-gateway"]
+    ports: ["127.0.0.1:${S10_PUERTO_METRIN:-4760}:4760"]
+    logging: *logs
+    restart: unless-stopped
+
+  # Ollama dentro del compose (opcional; por defecto Metrín usa el de la Mac).
+  ollama:
+    image: ollama/ollama:latest
+    profiles: ["llm"]
+    volumes: [ollama:/root/.ollama]
+    logging: *logs
+    restart: unless-stopped
+
+  # Contenedor de un solo uso para correr scripts: docker compose run --rm herramientas <script> <args>
+  herramientas:
+    <<: *base
+    profiles: ["tareas"]
+    entrypoint: ["entrada.sh", "python"]
+    restart: "no"
+    environment:
+      S10_CORTEX_API: http://cortex:4749/api
+      S10_CORTEX_HOST: localhost:4748
+      S10_MOTOR: sdk
+
+volumes:
+  venv-linux:
+  metrin-datos:
+  ollama:

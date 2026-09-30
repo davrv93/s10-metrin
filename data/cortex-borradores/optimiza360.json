@@ -1,0 +1,58 @@
+[
+ {
+  "path": "optimiza360",
+  "title": "Optimiza 360",
+  "tags": [
+   "optimiza360",
+   "empresa",
+   "propio"
+  ],
+  "summary": "Consultora peruana (desde 2020) de transformación digital para construcción e inmobiliaria: implementación y mesa de ayuda del ERP S10 y CRM Sperant, dashboards de BI y software a medida. Fundador: Arturo Dupont. Es la empresa detrás de Metrín.",
+  "body": "Optimiza 360 es una consultora de transformación digital enfocada en el sector **construcción e inmobiliario**, activa **desde 2020**. Es la empresa detrás de esta base de conocimiento y de **Metrín**, el asistente de obra.\n\n**Qué busca.** Contribuir al desarrollo empresarial del sector con asesoría en estrategia digital: poner al alcance de la alta gerencia indicadores clave para decidir a tiempo, y automatizar procesos mediante la implantación, integración y desarrollo de soluciones tecnológicas.\n\n**Lema de la casa:** \"Transformamos tu información en conocimiento para la toma de decisiones\" · \"Creamos un mundo digital para hacer las cosas más simples\". La transformación digital se entiende en cuatro frentes: tecnología, procesos, datos y personas.\n\n**Relación con S10.** Optimiza 360 implementa el ERP S10 y da **mesa de ayuda**; también implementa el **CRM Sperant**, e integra ambos con dashboards propios.\n\nVer hijos: servicios, quiénes somos, clientes y contacto.\n\nFuentes: optimiza360.pe (inicio, /servicios/, /nosotros/, /nuestros-clientes/, /contacto/), rastreado el 30-09-2026.\n\n**Confiabilidad:** propio (sitio de Optimiza 360)."
+ },
+ {
+  "path": "optimiza360/servicios",
+  "title": "Servicios de Optimiza 360",
+  "tags": [
+   "optimiza360",
+   "servicios",
+   "s10",
+   "sperant",
+   "bi"
+  ],
+  "summary": "Implementación y mesa de ayuda del ERP S10 y CRM Sperant; dashboards de inteligencia de negocios para inmobiliarias y constructoras; aplicativos complementarios, integración de aplicaciones y gestión de la transformación digital.",
+  "body": "Servicios según el sitio de Optimiza 360:\n\n1. **ERP S10** — implementación y mesa de ayuda. Gestiona costos de obra, planillas, stock de almacenes, plan de compras y el proceso financiero contable.\n2. **CRM Sperant** — gestiona leads, ventas, cobranzas, entrega de inmuebles y post venta.\n3. **Inteligencia de negocios de la inmobiliaria** — dashboards de flujo de caja, indicadores contables, control de ventas y cobranzas, integrados a S10, Sperant, Excel y otros.\n4. **Inteligencia de negocios de la construcción** — dashboards de resultado operativo, curva S, SPI y CPI, compras y productividad, integrados a S10, Excel y otros.\n5. **Aplicativos complementarios** — automatizan los procesos faltantes, evitan errores de registro manual e integran la información a la base de datos.\n6. **Integración de aplicaciones** — personaliza e integra el flujo de procesos entre plataformas (CRM, ERP, Excel).\n7. **Software a medida** — soluciones que optimizan el ERP y los procesos de la empresa.\n8. **Gestión de la transformación digital** — servicio integral en cuatro etapas: diagnóstico, estrategia digital, gestión del cambio, y mapeo y optimización de procesos.\n\nPara Metrín: cuando un usuario pida ayuda que supere lo documentado (implementación, integración, un dashboard, un desarrollo), la vía es la mesa de ayuda de Optimiza 360 (ver `optimiza360/contacto`).\n\nFuentes: optimiza360.pe (inicio, /servicios/, /nosotros/, /nuestros-clientes/, /contacto/), rastreado el 30-09-2026.\n\n**Confiabilidad:** propio (sitio de Optimiza 360)."
+ },
+ {
+  "path": "optimiza360/quienes-somos",
+  "title": "Quiénes somos: misión, valores y pilares",
+  "tags": [
+   "optimiza360",
+   "mision",
+   "valores"
+  ],
+  "summary": "Misión: contribuir al desarrollo digital, el acceso a KPI y la automatización operacional del sector construcción e inmobiliario. Valores: integridad, innovación, satisfacción del cliente, trabajo en equipo. CEO y fundador: Arturo Dupont, más de 15 años de experiencia.",
+  "body": "**Misión.** \"Nuestra pasión es contribuir al desarrollo digital, el acceso a KPI's y la automatización operacional de las empresas del sector construcción e inmobiliario.\"\n\n**Valores.** Integridad · Innovación · Satisfacción del cliente · Trabajo en equipo.\n\n**Pilares.** Tecnología empresarial (en portada: tecnología de vanguardia) · Especialización en el negocio · Personalización de la solución · Calidad de servicio.\n\n**Cómo empezó.** Más de 15 años de experiencia en soluciones de transformación digital y automatización de procesos del sector construcción e inmobiliario; la empresa opera desde 2020.\n\n**CEO y fundador:** Arturo Dupont, con más de 15 años de experiencia en transformación digital y automatización de procesos del sector. Es el ingeniero de la consultora vinculado a S10.\n\nFuentes: optimiza360.pe (inicio, /servicios/, /nosotros/, /nuestros-clientes/, /contacto/), rastreado el 30-09-2026.\n\n**Confiabilidad:** propio (sitio de Optimiza 360)."
+ },
+ {
+  "path": "optimiza360/clientes",
+  "title": "Clientes de Optimiza 360",
+  "tags": [
+   "optimiza360",
+   "clientes"
+  ],
+  "summary": "El sitio agrupa a sus principales clientes en inmobiliarios y constructores, pero los muestra solo como logos: sus nombres no están en el texto de la página y por eso no figuran aquí.",
+  "body": "La página \"Nuestros Clientes\" separa dos grupos: **principales clientes inmobiliarios** y **principales clientes constructores**. Los muestra como logos, sin nombres en el texto, así que esta base no puede listarlos.\n\nSi Metrín necesita nombrarlos, hay que cargar la lista a mano (por ejemplo, un documento interno en `entrada/`).\n\nFuentes: optimiza360.pe (inicio, /servicios/, /nosotros/, /nuestros-clientes/, /contacto/), rastreado el 30-09-2026.\n\n**Confiabilidad:** propio (sitio de Optimiza 360)."
+ },
+ {
+  "path": "optimiza360/contacto",
+  "title": "Contacto de Optimiza 360",
+  "tags": [
+   "optimiza360",
+   "contacto",
+   "soporte"
+  ],
+  "summary": "Asesoría y mesa de ayuda: celular (+51) 958 791 647, correo adupont@optimiza360.pe, LinkedIn linkedin.com/in/adupontc. El sitio ofrece un formulario «Recibe asesoría».",
+  "body": "Datos publicados en el sitio:\n\n- **Celular:** (+51) 958 791 647\n- **Correo:** adupont@optimiza360.pe\n- **LinkedIn:** linkedin.com/in/adupontc\n- **Formulario:** «Recibe asesoría» en optimiza360.pe/contacto/ (\"En breve un asesor se pondrá en contacto contigo\").\n\nPara Metrín: es el canal al que derivar cuando la respuesta no está en la base o el usuario necesita implementación, soporte del ERP S10 o CRM Sperant, o un desarrollo a medida. Para incidencias de S10 como producto, está además el sistema de tickets de S10 (ver `soporte/tickets-crear`).\n\nFuentes: optimiza360.pe (inicio, /servicios/, /nosotros/, /nuestros-clientes/, /contacto/), rastreado el 30-09-2026.\n\n**Confiabilidad:** propio (sitio de Optimiza 360)."
+ }
+]

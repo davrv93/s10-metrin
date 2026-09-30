@@ -1,0 +1,52 @@
+# s10-conocimiento — dependencias exactas (verificadas en macOS arm64, Python 3.13.7)
+# Instalar con:  pip install -r requirements.txt
+#
+# ¡IMPORTANTE! `av` debe quedar fijado en 18.x: la línea 19.x eliminó el
+# parámetro `metadata_errors` de av.open() y rompe faster-whisper 1.2.1 con
+# "TypeError: open() got an unexpected keyword argument 'metadata_errors'".
+av==18.1.0
+
+# transcripción local (usa av para decodificar audio; NO requiere ffmpeg del sistema)
+faster-whisper==1.2.1
+ctranslate2==4.8.2
+onnxruntime==1.30.0
+tokenizers==0.23.2
+huggingface_hub==1.33.0
+numpy==2.5.3
+
+# descarga de audio de YouTube (binario independiente del venv si se instala por pip)
+yt-dlp==2026.8.19
+
+# scraping del portal (s10kb.py)
+requests==2.34.2
+beautifulsoup4==4.15.0
+
+# transitivas relevantes (congeladas para reproducción estricta)
+PyYAML==6.0.3
+anyio==4.15.1
+certifi==2026.7.22
+charset-normalizer==3.5.2
+click==8.5.0
+filelock==4.0.7
+flatbuffers==25.12.19
+fsspec==2026.9.0
+h11==0.16.0
+hf-xet==1.6.0
+httpcore==1.0.9
+httpx==0.28.1
+idna==3.20
+protobuf==7.36.2
+soupsieve==2.10
+tqdm==4.70.1
+typing_extensions==4.16.0
+urllib3==2.8.0
+
+# extracción de pantalla (ui.py): OCR clásico con cajas + geometría
+# requiere el binario tesseract (`brew install tesseract`) y spa.traineddata
+# en data/tessdata (ver REPRODUCCION.md)
+pytesseract==0.3.13
+pillow==12.3.0
+opencv-python-headless==5.0.0.93
+
+# reportes SQL con plantillas validadas (reportes.py)
+sqlglot==30.20.0

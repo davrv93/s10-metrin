@@ -1,0 +1,1084 @@
+{
+ "generado": "2026-09-30T04:49:17",
+ "total_preguntas": 428,
+ "grupos": [
+  {
+   "id": "erp",
+   "titulo": "Módulos del ERP S10",
+   "modulos": [
+    {
+     "id": "presupuestos",
+     "nombre": "Presupuestos",
+     "titulo": "S10 Presupuestos (Costos y Presupuestos)",
+     "resumen": "Módulo de S10 para elaborar presupuestos de obra a partir de metrados: se arma la hoja (títulos y partidas), se analizan precios unitarios, se procesa, se diseña el pie, gastos generales y fórmula polinómica, y se reporta o exporta.",
+     "temas": [
+      {
+       "id": "presupuestos",
+       "titulo": "General",
+       "preguntas": [
+        "¿Qué hay que hacer para ingresar los metrados al presupuesto?",
+        "¿Por qué se advierte que lo de Venta/Meta/Línea Base podría no ser exacto?",
+        "¿Qué es un faseo en el contexto de planificar con MS Project?",
+        "¿Cuántos presupuestos puedo tener por obra según el manual?",
+        "¿Qué diferencia hay entre presupuesto Venta, Meta y Línea Base?",
+        "¿El planeamiento con MS Project se desarrolla en esta rama o no?"
+       ]
+      },
+      {
+       "id": "presupuestos/analisis-de-precios-unitarios-y-catalogos",
+       "titulo": "Análisis de precios unitarios y catálogos",
+       "preguntas": [
+        "¿Cómo creo un título en el catálogo para organizar mis partidas?",
+        "¿Qué es el rendimiento para transporte y en qué casos aplica?",
+        "¿Por dónde se puede llegar a crear una partida en el catálogo?",
+        "¿En qué se diferencia la búsqueda global de la búsqueda local con F8?",
+        "¿Qué tan confiable es el contenido de este material sobre catálogos y APU?",
+        "¿Cómo armo una plantilla de recursos para reutilizarla en varios APU?"
+       ]
+      },
+      {
+       "id": "presupuestos/armar-la-hoja-del-presupuesto",
+       "titulo": "Formas de armar la hoja del presupuesto",
+       "preguntas": [
+        "¿Qué ruta sigo dentro del sistema para llegar a Mis Favoritos?",
+        "¿Qué hace la opción Desplazar a la derecha dentro de la hoja?",
+        "¿Dónde preparo un favorito antes de poder usarlo en la hoja?",
+        "¿Qué significa Seleccionar al momento de adicionar un favorito?",
+        "¿Desde dónde saco las opciones Cortar, Copiar y Pegar en la hoja?",
+        "¿Qué modo ver activo primero y cómo lo pongo antes de empezar a armar?"
+       ]
+      },
+      {
+       "id": "presupuestos/carpeta-de-trabajo-y-acceso",
+       "titulo": "Carpeta de trabajo, árbol, acceso y usuarios",
+       "preguntas": [
+        "¿Cómo le pongo color a los niveles de la estructura del ítem?",
+        "¿Qué tengo que hacer para que aparezcan más opciones en los menús?",
+        "¿Qué significa que la Configuración sea propia de cada usuario?",
+        "¿Qué menús trae la barra de menús del módulo de Presupuestos?",
+        "¿Qué diferencia hay entre el Servidor en monousuario y en red?",
+        "¿Cómo archivo los presupuestos que ya no vamos a volver a usar?"
+       ]
+      },
+      {
+       "id": "presupuestos/conceptos-y-estructura",
+       "titulo": "Conceptos y estructura del presupuesto",
+       "preguntas": [
+        "¿Cómo inserto un título en la hoja del presupuesto y de dónde lo tomo?",
+        "¿Qué es una partida en el presupuesto y qué columnas maneja?",
+        "¿El plazo y la jornada a qué nivel de la jerarquía se registran?",
+        "¿En qué se diferencia el presupuesto Meta del presupuesto de Venta u oferta?",
+        "¿Cómo configuro la moneda del presupuesto si el cliente me pide todo en dólares?",
+        "¿Un APU puede contener subpartidas o solamente recursos?"
+       ]
+      },
+      {
+       "id": "presupuestos/instalacion-y-licencia",
+       "titulo": "Instalación y activación de S10 Presupuestos",
+       "preguntas": [
+        "¿De quién consigo los códigos para llenar el S10 Certificado?",
+        "¿Los números de revisión que salen en el video los tengo que usar igual en mi caso?",
+        "¿Qué incluye la etapa de requisitos previos antes de instalar?",
+        "¿En qué disco se instala si no toco la ruta que propone el instalador?",
+        "¿Qué son S10ERP y S10 Presupuestos, y cómo se relacionan?",
+        "¿Cómo sé que la activación salió bien y no tengo que repetirla?"
+       ]
+      },
+      {
+       "id": "presupuestos/metrados-precios-y-procesamiento",
+       "titulo": "Metrados, precios y procesamiento",
+       "preguntas": [
+        "¿Dónde le doy para que salga la configuración del procesamiento?",
+        "¿Qué le señalo al practicante si procesó pero nunca dio Continuar en la ventana?",
+        "¿A qué se refiere el sistema con ítems faltantes y verificados?",
+        "¿Los precios de los recursos se ingresan con IGV o sin IGV?",
+        "¿Qué es Procesar partida frente a procesar todo el presupuesto?",
+        "¿Puedo copiar los metrados de un Excel o los escribo uno por uno?"
+       ]
+      },
+      {
+       "id": "presupuestos/pie-gastos-generales-y-formula-polinomica",
+       "titulo": "Pie de presupuesto, gastos generales y fórmula polinómica",
+       "preguntas": [
+        "¿Por qué dicen que nDirecto y P_T son variables obligatorias?",
+        "¿Qué datos se registran al adicionar un concepto a un rubro?",
+        "¿En qué se diferencian las variables obligatorias de las auxiliares?",
+        "¿Qué respaldo tiene este contenido aparte de la guía copiada?",
+        "¿Qué representa el índice 47 y por qué se sugiere no agruparlo?",
+        "¿Cómo se define el Subtotal en el ejemplo del pie de venta?"
+       ]
+      },
+      {
+       "id": "presupuestos/registro-y-secuencia-de-uso",
+       "titulo": "Secuencia de uso y registro del presupuesto",
+       "preguntas": [
+        "¿Cómo activo doble moneda y en qué campo indico la moneda base?",
+        "¿Qué es la secuencia de uso del módulo de presupuestos en S10?",
+        "¿Qué opción uso para mover la fecha y que no se me caigan los precios?",
+        "¿En qué se diferencian Copiar/Pegar presupuesto y Duplicar?",
+        "¿Cómo le asigno el grupo de trabajo a un presupuesto ya creado?",
+        "¿Qué son las incidencias en los decimales de Datos adicionales?"
+       ]
+      },
+      {
+       "id": "presupuestos/reportes-y-transportabilidad",
+       "titulo": "Reportes, exportación y traslado de la base de datos",
+       "preguntas": [
+        "¿Qué hago si la PC destino tiene una versión más nueva de S10 que la mía?",
+        "¿Qué es el presupuesto descompuesto y qué tiene de particular?",
+        "¿Hay un formato de APU especial para presentar a entidades?",
+        "¿Cuál reporte reemplaza mi cuadro de Excel que le entrego al cliente?",
+        "¿Por qué dicen que las rutas S102000 podrían no servirme?",
+        "¿Qué pasa si el archivo de backup lo pego en otra carpeta de la PC destino y no en la misma?"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "gerencia-proyectos",
+     "nombre": "Gerencia de proyectos",
+     "titulo": "Gerencia de Proyectos (S10 ERP)",
+     "resumen": "Módulo que integra planificación (WBS/fases, calendario, cronograma), control de materiales, mano de obra, subcontratos y equipos, avances y resultados operativos por partida de control con curvas S. Empieza por planificacion-y-cronograma.",
+     "temas": [
+      {
+       "id": "gerencia-proyectos",
+       "titulo": "General",
+       "preguntas": [
+        "¿Qué pasos sigue la gestión de materiales de principio a fin?",
+        "¿Por qué mi análisis no baja hasta el nivel de recurso individual?",
+        "¿Qué significa autorización de cobro en el flujo de contratos?",
+        "¿Es cierto que el módulo permite cronograma con MS Project?",
+        "¿Las fases y la WBS son lo mismo dentro del módulo?",
+        "¿Cómo organizo el proyecto en fases para luego cronogramarlo?"
+       ]
+      },
+      {
+       "id": "gerencia-proyectos/avances-y-resultados-operativos",
+       "titulo": "Avances, control de costos y resultados operativos",
+       "preguntas": [
+        "¿Qué tipo de recurso reviso primero cuando el costo se desvía?",
+        "¿Cuál es el propósito de proyectar el resultado de una obra?",
+        "¿Qué tan oficial es este contenido, viene de S10 o de terceros?",
+        "¿Gestión de contratos y resultados operativos son lo mismo?",
+        "¿Qué se revisa primero en el control del proyecto en ejecución?",
+        "¿Qué es el resultado operativo a nivel de grupo de recursos?"
+       ]
+      },
+      {
+       "id": "gerencia-proyectos/calidad-movil",
+       "titulo": "Calidad Móvil: protocolos y listas de chequeo",
+       "preguntas": [
+        "¿Cómo califico cada ítem del checklist durante la inspección?",
+        "¿Qué reportes genera Calidad Móvil?",
+        "¿Qué significa que una característica quede como \"No conforme\"?",
+        "¿Qué ítems se chequean en el baño de visita según el ejemplo?",
+        "¿La calificación de un ítem se llama estado o característica?",
+        "¿Por qué el ejemplo del portal usa un edificio y no otra obra?"
+       ]
+      },
+      {
+       "id": "gerencia-proyectos/gestion-de-recursos-de-obra",
+       "titulo": "Gestión de materiales, mano de obra, subcontratos y equipos",
+       "preguntas": [
+        "¿Cómo registro el ingreso de un obrero nuevo en el S10ERP?",
+        "¿Para qué sirve el tareo dentro de la gestión de mano de obra?",
+        "¿Qué es el tareo multiproyecto y en qué se distingue del tareo automático?",
+        "¿Cuál es la limitación declarada de este contenido sobre gestión de recursos?",
+        "¿Cómo se registra un pedido de material desde Gerencia de Proyectos?",
+        "¿Qué significa que una valorización tenga deducción de recursos?"
+       ]
+      },
+      {
+       "id": "gerencia-proyectos/planificacion-y-cronograma",
+       "titulo": "Planificación y cronograma del proyecto",
+       "preguntas": [
+        "¿Qué tres salidas debo verificar cuando termino de planificar?",
+        "¿Qué pasa si el presupuesto no está analizado antes de registrar el proyecto?",
+        "¿Cuál es la finalidad del registro del proyecto en el sistema?",
+        "¿Qué distingue al cronograma gráfico del registro manual?",
+        "¿Hay que registrar las fases una por una o se cargan de golpe?",
+        "¿Para qué se registra el proyecto y se le asignan presupuestos?"
+       ]
+      },
+      {
+       "id": "gerencia-proyectos/tareo-y-lean-lookahead",
+       "titulo": "Tareo en línea, Lean y Lookahead",
+       "preguntas": [
+        "¿Qué campos tengo que llenar en la app de tareo antes de enviar?",
+        "¿Qué sucede si registro el tareo pero nunca lo proceso en Nóminas?",
+        "¿Qué se sabe y qué no se sabe del funcionamiento del Lookahead?",
+        "¿Lean es un módulo aparte o es parte de Gerencia de Proyectos?",
+        "¿Lean se instala aparte o ya viene con los otros software del portal?",
+        "¿Qué riesgo corro si redacto el procedimiento de la app de tareo suponiendo los pasos?"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "compras",
+     "nombre": "Compras",
+     "titulo": "Compras y Pedidos (S10 ERP)",
+     "resumen": "Compras en S10: centros de compra, catálogos y aprobaciones; flujo pedido de compra → aprobación → cotización y cuadro comparativo → orden de compra o servicio. Tiene apps móviles de Pedidos y Aprobaciones. Empieza por configuracion-y-catalogos.",
+     "temas": [
+      {
+       "id": "compras",
+       "titulo": "General",
+       "preguntas": [
+        "¿Cómo hago para que la orden impresa lleve la firma del gerente?",
+        "¿En qué consiste la gestión de usuarios y permisos en Compras?",
+        "¿Los reportes forman parte de la configuración o de la operación?",
+        "¿Cómo se configuran las formas de pago que voy a usar en las órdenes?",
+        "¿Qué es el Portal de Proveedores y qué manual tiene asociado?",
+        "¿Los materiales comprados quedan registrados en Compras o en otro módulo?"
+       ]
+      },
+      {
+       "id": "compras/caso-upn-flujo-y-resultados",
+       "titulo": "Caso UPN: flujo de compras y resultados tras implantar S10",
+       "preguntas": [
+        "¿El seguimiento va antes o después de programar el despacho?",
+        "¿Qué pasa si la gente sigue llevando sus Excel aparte además del sistema?",
+        "¿Qué es una OC en el contexto de este caso y quién la aprobaba?",
+        "¿Qué tipo de edificaciones levanta la empresa?",
+        "¿Por qué el −27 no es lo mismo que un promedio de días de atraso?",
+        "¿La empresa usaba S10 desde que arrancó?"
+       ]
+      },
+      {
+       "id": "compras/configuracion-y-catalogos",
+       "titulo": "Configuración de compras y catálogos",
+       "preguntas": [
+        "¿En qué orden se configuran las cosas para dejar el módulo de compras operativo?",
+        "¿Qué rol cumplen los proveedores en la configuración inicial?",
+        "¿Qué diferencia existe entre un recurso y un socio de negocio?",
+        "¿Qué pasa conceptualmente si no existen grupos de aprobación?",
+        "¿Qué abarca la configuración de documentos frente a la de catálogos?",
+        "¿Qué documentos se personalizan en esta etapa de configuración?"
+       ]
+      },
+      {
+       "id": "compras/pedidos-cotizaciones-y-ordenes",
+       "titulo": "Pedidos, cotizaciones y órdenes de compra",
+       "preguntas": [
+        "¿Cuántos pasos tengo que ejecutar si voy por el pedido directo?",
+        "¿Para qué sirve dejar registrado el proveedor en la cotización?",
+        "¿Hay reglas documentadas para armar el comparativo? ¿Dónde las veo?",
+        "¿Cuál de los dos caminos conviene cuando ya tengo proveedor fijo?",
+        "¿El movimiento I OC se hace desde Compras o desde Almacenes?",
+        "¿Qué entiendo por \"orden de compra directa\" en el primer camino?"
+       ]
+      },
+      {
+       "id": "compras/pedidos-y-aprobaciones-moviles",
+       "titulo": "Apps de Pedidos y Aprobaciones Móviles",
+       "preguntas": [
+        "¿Qué archivo reviso para confirmar el temario del tercer día?",
+        "¿Hay información sobre niveles de aprobación en la app?",
+        "¿Qué son las apps móviles de Pedidos y Aprobaciones de S10?",
+        "¿Recibir cotizaciones es parte de lo que se ve el tercer día?",
+        "¿El portal usa dos nombres distintos para las mismas apps?",
+        "¿De dónde proviene lo que se sabe de estas dos aplicaciones?"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "almacenes",
+     "nombre": "Almacenes",
+     "titulo": "Almacenes (S10 ERP)",
+     "resumen": "Almacenes en S10: configurar almacenes por proyecto (partidas de control, frentes, destinos, ubicación), registrar ingresos (11 tipos: I OC, I TI…) y egresos (13 tipos: E PC, E TE…), y consultar stock, kardex, recursos con problemas y equipos disponibles.",
+     "temas": [
+      {
+       "id": "almacenes",
+       "titulo": "General",
+       "preguntas": [
+        "¿Cómo registro los movimientos que salen de fondos rotatorios?",
+        "¿Para qué sirve registrar bajas y mermas como tipo de egreso?",
+        "¿Qué fuentes respaldan el contenido del tema de almacenes?",
+        "¿Qué diferencia existe entre un frente y una ubicación física?",
+        "¿Cómo indico el frente y el destino cuando despacho material?",
+        "¿Qué es un anticipo al proveedor en el contexto de almacenes?"
+       ]
+      },
+      {
+       "id": "almacenes/anticipos-y-regularizacion-compuesta",
+       "titulo": "Anticipos a proveedor y regularización compuesta",
+       "preguntas": [
+        "¿Cómo llego a la opción de adicionar correctivo dentro del documento?",
+        "¿Qué consecuencia conceptual tiene dejar el ingreso ligado a la factura del anticipo?",
+        "¿Qué es la amortización del anticipo en este contexto del S10?",
+        "¿Qué cantidad y qué precio unitario pongo en la factura del anticipo?",
+        "¿Qué diferencia hay entre amortizar el anticipo y regularizar el ingreso?",
+        "¿Las fechas incoherentes del manual cambian en algo el procedimiento?"
+       ]
+      },
+      {
+       "id": "almacenes/caso-upn-ingresos-salidas-e-inventario",
+       "titulo": "Caso UPN: ingresos, salidas e inventario con S10",
+       "preguntas": [
+        "¿La inspección del material va antes o después de la descarga?",
+        "¿Y si aplico solamente las alertas de mermas sin tocar lo demás?",
+        "¿Qué son los inventarios cíclicos que recomiendan los autores?",
+        "¿Qué formatos usaban para documentar los ingresos y las salidas?",
+        "¿Qué va primero: la firma del residente o el registro en S10?",
+        "¿Qué pasa si el almacenero entrega material sin el vale autorizado?"
+       ]
+      },
+      {
+       "id": "almacenes/configuracion-de-almacenes",
+       "titulo": "Configuración de almacenes",
+       "preguntas": [
+        "¿Qué configuro primero si voy a usar E PCDD y E PCP en la obra?",
+        "¿Qué hago si un rol por unidad operativa da más accesos de los que debería?",
+        "¿Qué se entiende por \"dejar la estructura lista\" en almacenes?",
+        "¿Los roles por unidad operativa son lo mismo que los permisos de usuario?",
+        "¿Cómo dejo definido a qué se carga el consumo de cada material?",
+        "¿Qué pasa cuando se crea el almacén sin haber definido antes los documentos de movimiento?"
+       ]
+      },
+      {
+       "id": "almacenes/egresos-y-transferencias",
+       "titulo": "Egresos, transferencias y consultas de stock y kardex",
+       "preguntas": [
+        "¿Cómo diferencio al momento de registrar si va E PC o E PCP?",
+        "¿Se explica en el material cómo se valoriza la salida de materiales?",
+        "¿Qué representa el egreso por préstamo en el almacén de obra?",
+        "¿En qué parte del sistema se consultan el stock y el kardex?",
+        "¿El E PCDD y el E TEP pertenecen al mismo grupo de movimientos?",
+        "¿De dónde proviene toda esta información sobre los egresos?"
+       ]
+      },
+      {
+       "id": "almacenes/movimientos-de-ingreso",
+       "titulo": "Movimientos de ingreso al almacén",
+       "preguntas": [
+        "¿De qué manera se concilia el I TE con el E TE de la otra parte?",
+        "¿Qué pasa con la relación ingreso-factura si no quito la regularización del anticipo?",
+        "¿Para qué sirve registrar un ingreso por devolución de saldo?",
+        "¿Cuántos tipos de ingreso maneja el S10 en almacenes?",
+        "¿Cuál es la contraparte en egresos de un ingreso por préstamo?",
+        "¿Cómo se registra en almacenes el cierre documentario de una OC?"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "nominas",
+     "nombre": "Nóminas",
+     "titulo": "Nóminas (planillas) en S10 ERP",
+     "resumen": "Módulo de planillas de S10: control de horas hombre y ausencias por proyecto, cálculo de nóminas de obreros de construcción civil, empleados y practicantes, boletas, planillas de pago hacia Facturación y declaraciones AFPNET y PDT PLAME.",
+     "temas": [
+      {
+       "id": "nominas",
+       "titulo": "General",
+       "preguntas": [
+        "¿De qué manera se cargan los porcentajes de AFP en el sistema?",
+        "¿Qué pasa cuando un obrero está tareado en dos proyectos el mismo día y las horas se duplican?",
+        "¿Qué tipos de nómina cubre la capacitación oficial del módulo?",
+        "¿Cuál es la diferencia entre horarios diarios y horarios cíclicos?",
+        "¿La página de configuración del escenario de Reparto de Utilidades está disponible para cualquiera?",
+        "¿Qué propiedades hay que llenar al crear un proyecto destino?"
+       ]
+      },
+      {
+       "id": "nominas/aporte-fondo-capacitacion",
+       "titulo": "Construcción civil: aporte al Fondo de Capacitación",
+       "preguntas": [
+        "¿Qué campos lleno cuando doy de alta el recurso en el catálogo?",
+        "¿Qué pasa cuando agrego el concepto a la plantilla pero no lo formulo?",
+        "¿Qué es el aporte al Fondo de Capacitación en la planilla de construcción civil?",
+        "¿Cuántos conceptos hay que crear para este aporte?",
+        "¿En qué documentos hay que marcar el check Aplica y cómo lo ubico?",
+        "¿Qué sucede si registro la tarifa en la matriz pero no la referencio en la fórmula?"
+       ]
+      },
+      {
+       "id": "nominas/ciclo-de-calculo",
+       "titulo": "Ciclo de cálculo de una planilla",
+       "preguntas": [
+        "¿Desde dónde corro el proceso estándar y sobre qué lo aplico?",
+        "¿Qué sucede si emito las boletas antes de validar los montos?",
+        "¿Cuáles son las tres grandes etapas en que se agrupa el ciclo?",
+        "¿Qué se elige al procesar el Resumen de concepto por periodo?",
+        "¿Qué diferencia hay entre generar préstamos y generar papeletas?",
+        "¿Cómo genero las papeletas dentro de la preparación del periodo?"
+       ]
+      },
+      {
+       "id": "nominas/construccion-civil-jornales",
+       "titulo": "Construcción civil: cambio de jornal por convenio",
+       "preguntas": [
+        "¿Se actualiza primero la bonificación o primero los jornales?",
+        "¿Qué pasa si registro en Jornal diario solo el incremento y no el total?",
+        "¿Qué significa que S10 «toma los valores nuevos» al calcular?",
+        "¿Cuál es el año del convenio al que corresponden estas cifras?",
+        "¿Qué diferencia hay entre el jornal actual y el jornal nuevo?",
+        "¿Qué información de fuente respalda los jornales 74.30, 58.45 y 52.50?"
+       ]
+      },
+      {
+       "id": "nominas/cts",
+       "titulo": "Cálculo de la CTS",
+       "preguntas": [
+        "¿Qué datos debe detallar la boleta de liquidación que preparo?",
+        "¿Qué pasa si intento calcular la CTS sin haber hecho el tareo del mes?",
+        "¿Qué es la carta de retiro de CTS y cómo se arma en el sistema?",
+        "¿En qué días del sílabus de nóminas avanzado se trabaja la CTS?",
+        "¿El sistema genera un documento de pago por cada trabajador o uno por banco?",
+        "¿Qué tan confiable es este contenido y de qué canal sale el video?"
+       ]
+      },
+      {
+       "id": "nominas/feriados-calendario",
+       "titulo": "Registro de feriados en el calendario",
+       "preguntas": [
+        "¿Se hace lo mismo con el 18 de abril o cambia algo el paso?",
+        "¿Se puede hacer todo el registro sin seleccionar proyecto primero?",
+        "¿Qué papel juega el clic derecho en la opción Calendario base?",
+        "¿Qué escenario del módulo Nóminas abro para trabajar los feriados?",
+        "¿Qué diferencia hay entre el paso 3 y el paso 5 del procedimiento?",
+        "¿Cómo se registran los feriados si recién estamos implementando Nóminas en la constructora?"
+       ]
+      },
+      {
+       "id": "nominas/gratificacion",
+       "titulo": "Cálculo de la gratificación",
+       "preguntas": [
+        "¿Qué revisión hago con el reporte antes de pasar a la boleta?",
+        "¿Qué pasa si me salto Vistas y paso directo a preparar las boletas?",
+        "¿A qué se refiere el proceso estándar dentro del grupo Nóminas?",
+        "¿Qué módulo termina recibiendo los montos de la gratificación?",
+        "¿La gratificación se calcula con un proceso especial o con el estándar?",
+        "¿Qué tan oficial es esta información sobre el cálculo de la gratificación?"
+       ]
+      },
+      {
+       "id": "nominas/parametros-legales-uit-rmv-afp",
+       "titulo": "Parámetros legales: UIT, RMV y porcentajes AFP",
+       "preguntas": [
+        "¿Puedo dejar alguna nota al registrar el valor? ¿En qué parte?",
+        "¿Qué riesgo corro si tomo el monto de UIT que se ve en los videos?",
+        "¿Cada cuánto cambian los valores de UIT, RMV y comisiones AFP?",
+        "¿Qué años cubren los procedimientos documentados de este tema?",
+        "¿Se usa clic derecho para algo en ambos escenarios? ¿Para qué?",
+        "¿Hay que tocar los porcentajes al replicar o solo el periodo?"
+       ]
+      },
+      {
+       "id": "ui-pantallas/17w0yki8iew",
+       "titulo": "Constantes por Fecha General (S10 Nóminas)",
+       "preguntas": [
+        "¿Qué es lo primero que selecciono antes de hacer clic derecho?",
+        "¿Por qué mi grilla inferior aparece vacía cuando entro a la pantalla?",
+        "¿Es obligatorio poner fecha fin cuando registro un valor nuevo?",
+        "¿Cuáles son los campos que debo llenar en la grilla de valores?",
+        "¿Qué diferencia hay entre el botón «…» y escribir la fecha a mano?",
+        "¿Qué significa que en un video la UIT salga 5350 si este año ya es otra cifra?"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "contabilidad",
+     "nombre": "Contabilidad",
+     "titulo": "Contabilidad en S10 ERP",
+     "resumen": "Contabilidad reúne en asientos los movimientos de almacén, mano de obra, subcontratos, equipos y contratos, y genera información para SUNAT y entidades financieras. Se configura con el PCGE, cuentas genéricas y reflejas, y esquemas contables.",
+     "temas": [
+      {
+       "id": "contabilidad",
+       "titulo": "General",
+       "preguntas": [
+        "¿En qué momento del proceso debo recurrir a un asiento manual?",
+        "¿Qué pasa si registro un contrato pero nadie configuró su cuenta?",
+        "¿A qué se refiere la dinámica de cierres como tema del módulo?",
+        "¿Un asiento manual reemplaza al automático o lo complementa?",
+        "¿Qué hago primero: configurar libros caja o cuentas bancarias?",
+        "¿Los movimientos de almacén alimentan la contabilidad? ¿Cómo?"
+       ]
+      },
+      {
+       "id": "contabilidad/libros-y-estados-financieros",
+       "titulo": "Libros, registros y estados financieros",
+       "preguntas": [
+        "¿Cómo llego del balance de comprobación al comprobante original?",
+        "¿Qué pasa cuando en el libro diario aparece un asiento que nadie registró manualmente?",
+        "¿Qué es el libro de honorarios y qué tipo de operaciones recoge?",
+        "¿En qué se diferencian el libro diario y el libro mayor?",
+        "¿Qué fuentes respaldan lo descrito sobre libros y estados financieros?",
+        "¿Cómo emito el Estado de Situación Financiera de una sola empresa?"
+       ]
+      },
+      {
+       "id": "contabilidad/plan-contable-y-esquema",
+       "titulo": "Plan contable, cuentas y esquema contable",
+       "preguntas": [
+        "¿Cómo dejo preparados los informes a medida dentro de esta etapa?",
+        "¿Me puedo saltar la asignación de los esquemas contables a la empresa?",
+        "¿Por qué hay que asignar cuentas a los conceptos de nómina?",
+        "¿Cuántos pasos tiene esta secuencia y cuál es el último de todos?",
+        "¿Importar el PCGE y configurar las cuentas genéricas son la misma cosa?",
+        "¿A qué altura de la secuencia van los informes contables?"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "facturacion",
+     "nombre": "Facturación",
+     "titulo": "Facturación en S10 ERP",
+     "resumen": "Facturación registra y administra los documentos por pagar y por cobrar: facturas, boletas, notas de crédito y débito, anticipos y documentos internos. Controla vencimientos, recibe los documentos de pago de Nóminas y fija el plazo de envío a SUNAT.",
+     "temas": [
+      {
+       "id": "facturacion",
+       "titulo": "General",
+       "preguntas": [
+        "¿Qué pasos sigo para configurar la detracción de un proveedor?",
+        "¿Qué pasa si no amplío el plazo de envío del documento electrónico antes de que se cumpla?",
+        "¿Qué contiene la rama de documentos y catálogos tributarios?",
+        "¿Las fuentes del contenido de Facturación son oficiales de S10?",
+        "¿Qué relación hay entre Facturación y el módulo Administrativo?",
+        "¿Por qué las planillas terminan apareciendo en Facturación?"
+       ]
+      },
+      {
+       "id": "facturacion/anticipo-de-proveedor",
+       "titulo": "Anticipo de proveedor facturado y amortizado",
+       "preguntas": [
+        "¿Qué tipo de regularización tengo que crear al final del flujo?",
+        "¿Qué hago si el proveedor factura el anticipo pero nunca despacha la mercadería?",
+        "¿En qué parte del sistema arranca todo el proceso del anticipo?",
+        "¿Cuál es la fuente oficial de este procedimiento de anticipos?",
+        "¿Qué diferencia hay entre desvincular un ingreso y eliminarlo?",
+        "¿A qué se le llama mercadería en este flujo y en qué etapa aparece?"
+       ]
+      },
+      {
+       "id": "facturacion/documentos-y-catalogos-tributarios",
+       "titulo": "Documentos y catálogos tributarios",
+       "preguntas": [
+        "¿Cómo relaciono un documento por pagar con una guía de almacén?",
+        "¿Por qué mi talonario no está disponible para cierto usuario?",
+        "¿Qué se entiende por catálogos tributarios en S10 y para qué sirven antes de empezar a facturar?",
+        "¿Cuántas formas de registro de documentos por pagar se listan?",
+        "¿Qué diferencia hay entre el paso 4 y el paso 5 de la configuración?",
+        "¿Qué debo definir para registrar una nota de débito a un cliente?"
+       ]
+      },
+      {
+       "id": "facturacion/plazo-envio-documento-electronico",
+       "titulo": "Ampliar el plazo de envío a SUNAT",
+       "preguntas": [
+        "¿De dónde saco el número de días que voy a poner en el parámetro?",
+        "¿Qué es un escenario en S10, hablando de Documentos por cobrar?",
+        "¿Cuál es el primer paso del procedimiento según la ayuda oficial?",
+        "¿Este parámetro qué es lo que acepta o rechaza en concreto?",
+        "¿Este ajuste se hace desde Facturación o desde otro módulo del S10?",
+        "¿Primero elijo la pestaña o primero pulso Configuración?"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "administrativo",
+     "nombre": "Administrativo",
+     "titulo": "Administrativo (tesorería) en S10 ERP",
+     "resumen": "Administrativo lleva la tesorería: bancos y cuentas, aprobadores, órdenes de pago (banco, pago electrónico, efectivo, nota de crédito, letras, tributos), pagos, libros caja, conciliación bancaria, liquidaciones, reembolsos y fondos rotatorios. Aquí se pagan las detracciones.",
+     "temas": [
+      {
+       "id": "administrativo",
+       "titulo": "General",
+       "preguntas": [
+        "¿Qué tipo de orden de pago se usa para tributos y detracciones?",
+        "¿Cuáles son los tipos de orden de pago que maneja el sistema?",
+        "¿Existe una página de Confirming en el portal? ¿Es pública?",
+        "¿Qué diferencia hay entre un fondo rotatorio y una caja común?",
+        "¿Qué tan confiable es esta información sobre el módulo administrativo?",
+        "¿Qué hago si el documento a pagar todavía no aparece en tesorería?"
+       ]
+      },
+      {
+       "id": "administrativo/caja-bancos-y-fondos",
+       "titulo": "Caja, bancos, fondos y ventas inmobiliarias",
+       "preguntas": [
+        "¿Cómo saco el reporte de movimientos de una cuenta bancaria?",
+        "¿Qué es un fondo rotatorio y qué se hace con él en el sistema?",
+        "¿Cómo se llama también a la orden de venta en el sistema?",
+        "¿En qué se diferencia una lista de precios de una cotización?",
+        "¿Cuál es el primer paso de todo el flujo de ventas inmobiliarias?",
+        "¿Qué se entiende por boletaje en la integración con Sperant?"
+       ]
+      },
+      {
+       "id": "administrativo/ordenes-de-pago",
+       "titulo": "Órdenes de pago y aprobación",
+       "preguntas": [
+        "¿Cómo se definen los aprobadores y qué datos les tengo que poner?",
+        "¿Para qué sirve definir aprobadores con moneda y monto límite?",
+        "¿Los talonarios se definen por empresa o por cuenta bancaria?",
+        "¿El pago electrónico genera algo distinto a un pago con cheque?",
+        "¿Qué tan oficial es esta información sobre órdenes de pago y qué es lo que no llega a detallar?",
+        "¿Por dónde entro en el sistema para crear una orden de pago nueva?"
+       ]
+      },
+      {
+       "id": "administrativo/pago-de-detracciones",
+       "titulo": "Pago de detracciones y carga de constancias",
+       "preguntas": [
+        "¿Qué hago con el txt una vez que lo tengo en C:\\S102000\\Pagos?",
+        "¿Para qué se asignan los ítems de detracción a los recursos?",
+        "¿Qué rol cumple la clave SOL en todo este proceso?",
+        "¿Cuál es la diferencia entre generar el txt y subirlo a SUNAT?",
+        "¿Qué fuentes respaldan este procedimiento de pago de detracciones?",
+        "¿Cómo verifico que la importación de constancias funcionó bien?"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "apps",
+   "titulo": "Portales y aplicaciones",
+   "modulos": [
+    {
+     "id": "portales",
+     "nombre": "Portales",
+     "titulo": "Portales web y apps de gestión",
+     "resumen": "Portales web de S10 (Proveedor, Colaborador/Empleado, Facturación Electrónica, Asistencia) y apps de Aprobaciones y Pedidos Móviles: para qué sirve cada uno y dónde está su manual.",
+     "temas": [
+      {
+       "id": "portales",
+       "titulo": "General",
+       "preguntas": [
+        "¿De qué manera se accede al material que no está tras login?",
+        "¿Qué pasa cuando la información que necesito sí existe pero solo en video y no en manual?",
+        "¿Qué se entiende por app de aprobaciones en el contexto de S10?",
+        "¿Cuántos temas o documentos tiene cada portal en el material de ayuda?",
+        "¿Qué tienen en común el Portal del Proveedor y el Portal del Colaborador?",
+        "¿Cómo identifico cuál de los cinco subnodos responde mi consulta?"
+       ]
+      },
+      {
+       "id": "portales/aprobaciones-pedidos-moviles",
+       "titulo": "Aprobaciones y Pedidos Móviles",
+       "preguntas": [
+        "¿Cómo registro un pedido en la app de Pedidos Móviles paso a paso?",
+        "¿Qué representa Tareo en Línea S10 dentro de las apps móviles?",
+        "¿Cómo se llama el documento del portal para Pedidos Móviles?",
+        "¿Cuál es el nombre del video de Aprobaciones y cuál el de Pedidos?",
+        "¿Qué hago si el manual me pide usuario y contraseña y no los tengo?",
+        "¿Qué significa «Aplicaciones Móviles» como categoría del portal?"
+       ]
+      },
+      {
+       "id": "portales/asistencia",
+       "titulo": "Portal de Asistencia",
+       "preguntas": [
+        "¿Cómo cierro el periodo de asistencia en el Portal de Asistencia?",
+        "¿Qué significa que el manual esté \"tras el login de miembros\"?",
+        "¿Hay una playlist en YouTube dedicada al Portal de Asistencia?",
+        "¿Qué portales de S10 sí tienen índice de temas y por qué este no?",
+        "¿Cómo asigno permisos por perfil dentro del Portal de Asistencia?",
+        "¿Por qué no hay información pública del Portal de Asistencia?"
+       ]
+      },
+      {
+       "id": "portales/empleado",
+       "titulo": "Portal del Empleado y del Colaborador",
+       "preguntas": [
+        "¿Cómo hago para consultar el organigrama dentro del portal?",
+        "¿Qué pasa si la empresa nunca me asigna un jefe directo en el portal?",
+        "¿Qué quiere decir que los documentos están resguardados en el portal?",
+        "¿El portal incluye algo para ver el organigrama de la empresa?",
+        "¿Qué entiende S10 por \"trabajador\" en el contexto de este portal, el mismo que colaborador?",
+        "¿Se entra al portal con DNI o con un usuario que la empresa crea?"
+       ]
+      },
+      {
+       "id": "portales/facturacion-electronica",
+       "titulo": "Portal de Facturación Electrónica",
+       "preguntas": [
+        "¿Hay alguna ruta alterna para ver el contenido sin ser miembro?",
+        "¿Por qué el asistente no me puede dar el paso a paso del portal?",
+        "¿Qué significa que el material esté tras el login de miembros?",
+        "¿Cuántos documentos tiene publicados el Portal de Facturación Electrónica?",
+        "¿El portal de facturación es una herramienta aparte del ERP o está dentro de él?",
+        "¿Cómo remito a un usuario al manual del portal correctamente?"
+       ]
+      },
+      {
+       "id": "portales/proveedores",
+       "titulo": "Portal de Proveedores",
+       "preguntas": [
+        "¿Qué botón se pulsa al final para dejar guardada la configuración?",
+        "¿Qué pasa si configuro el monto pero no marco a nadie como administrador?",
+        "¿En qué ubicación del sistema vive la configuración del portal?",
+        "¿A qué remite la página \"Acceso a Manual Portal Proveedores\"?",
+        "¿Qué diferencia existe entre el manual orientado a Compras y Almacén y el de Suministros?",
+        "¿Qué se entiende por «recuadro de notificación» y qué dato va ahí?"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "reportes",
+   "titulo": "Reportes",
+   "modulos": [
+    {
+     "id": "reportes-sql",
+     "nombre": "Reportes de planilla",
+     "titulo": "Reportes SQL del ERP (catálogo aprobado)",
+     "resumen": "Preguntas en lenguaje natural a reportes SIN SQL generado por IA: elige y rellena plantillas pre-aprobadas, valida con sqlglot (solo SELECT) y ejecuta en sesión read-only.",
+     "temas": [
+      {
+       "id": "reportes-sql/constantes-vigentes",
+       "titulo": "REP-01 — Constantes por fecha (UIT, RMV) vigentes en un rango",
+       "preguntas": [
+        "¿Qué valor tiene la UIT?",
+        "¿UIT 2024?"
+       ]
+      },
+      {
+       "id": "reportes-sql/cts",
+       "titulo": "REP-06 — Depósito de CTS por trabajador en un periodo",
+       "preguntas": [
+        "¿CTS de noviembre 2024?",
+        "¿Depósito de CTS?"
+       ]
+      },
+      {
+       "id": "reportes-sql/gratificaciones",
+       "titulo": "REP-05 — Gratificación por trabajador en un periodo",
+       "preguntas": [
+        "¿Gratificación de julio 2024?",
+        "¿Quiénes cobran gratificación?"
+       ]
+      },
+      {
+       "id": "reportes-sql/jornal-promedio",
+       "titulo": "REP-03 — Promedio de horas tareadas por categoría",
+       "preguntas": [
+        "¿Promedio de horas por categoría?",
+        "¿Quién trabaja más horas operarios o oficiales?"
+       ]
+      },
+      {
+       "id": "reportes-sql/planilla-costos",
+       "titulo": "REP-04 — Costo de planilla por concepto en un periodo",
+       "preguntas": [
+        "¿Cuánto costó la planilla de junio 2024?",
+        "¿Costo de planilla por concepto?"
+       ]
+      },
+      {
+       "id": "reportes-sql/tareo-horas",
+       "titulo": "REP-02 — Horas y trabajadores tareados por día",
+       "preguntas": [
+        "¿Horas tareadas de mayo 2024?",
+        "¿Asistencia de operarios?"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "guias",
+   "titulo": "Guías paso a paso",
+   "modulos": [
+    {
+     "id": "tutoriales",
+     "nombre": "Tutoriales",
+     "titulo": "Tutoriales",
+     "resumen": "Guías paso a paso generadas por tutor.py a partir de la base de conocimiento, con citas y avisos de confiabilidad.",
+     "temas": [
+      {
+       "id": "tutoriales/calcular-cts-de-trabajador-de-construccion-civil",
+       "titulo": "Calcular CTS de trabajador de construcción civil",
+       "preguntas": [
+        "¿Qué tiene que tener marcada la boleta de CTS antes de emitirla?",
+        "¿Por qué mi boleta de CTS no muestra los conceptos detallados?",
+        "¿Qué es el concepto Jornal diario y dónde vive dentro de S10?",
+        "¿Qué cifras de jornal diario muestra el video por categoría?",
+        "¿Qué diferencia hay entre preparar la boleta y emitir el pago por banco?",
+        "¿A qué área de S10 pertenece este tutorial?"
+       ]
+      },
+      {
+       "id": "tutoriales/crear-un-presupuesto-de-obra-desde-cero-en-s10-presupuestos",
+       "titulo": "Crear un presupuesto de obra desde cero en S10 Presupuestos",
+       "preguntas": [
+        "¿Cómo inserto un título en la hoja del presupuesto paso a paso?",
+        "¿Qué pasa si no encuentro cómo se llama la celda donde va el metrado?",
+        "¿Los precios que cargo quedan amarrados a algo en particular?",
+        "¿Quién tiene derecho a registrar gente en el Grupo de trabajo?",
+        "¿Hay otra forma de poner unidad propia sin entrar a PROCESOS ESPECIALES?",
+        "¿Para qué sirve registrar el distrito y la fecha del presupuesto?"
+       ]
+      },
+      {
+       "id": "tutoriales/emitir-factura-electronica-y-enviarla-a-sunat",
+       "titulo": "Emitir factura electrónica y enviarla a SUNAT",
+       "preguntas": [
+        "¿Cómo elijo el tipo de comprobante Factura al crear el documento por cobrar?",
+        "¿Qué pasa cuando el documento no reconoce que está afecto a detracción?",
+        "¿Qué quiere decir que los usuarios tengan acceso por sucursal?",
+        "¿Qué hago si el usuario que factura no tiene acceso al talonario de Factura?",
+        "¿Qué sucede si olvidé asignar el código 04 – Cliente en la pestaña Tipo Identificador?",
+        "¿Qué función tiene el botón de configuración del escenario?"
+       ]
+      },
+      {
+       "id": "tutoriales/generar-orden-de-compra-desde-el-pedido-de-obra-con-cotizaci",
+       "titulo": "Generar orden de compra desde el pedido de obra con cotizaciones y",
+       "preguntas": [
+        "¿En qué parte del proceso registro la forma de pago que ofrece el proveedor?",
+        "¿Los tipos de pedido que admite la app están listados en alguna parte?",
+        "¿El cuadro comparativo me sirve para renegociar o solo para elegir?",
+        "¿Cuántos pasos del tutorial quedan sin documentar en las fuentes?",
+        "¿Qué diferencia hay entre el pedido de compra y la cotización?",
+        "¿Quién cotiza normalmente, el residente o logística?"
+       ]
+      },
+      {
+       "id": "tutoriales/ingreso-de-materiales-al-almacen-de-obra-desde-orden-de-comp",
+       "titulo": "Ingreso de materiales al almacén de obra desde orden de compra y consulta",
+       "preguntas": [
+        "¿Tengo que enviar el ingreso a aprobación después de grabarlo?",
+        "¿Puedo confiar en el costo unitario del kardex para tomar decisiones?",
+        "¿Qué incluye la configuración inicial del módulo de Almacenes?",
+        "¿Cuáles son las consultas que tiene el módulo de Almacenes?",
+        "¿Las formas de pago se configuran en Almacenes o en otro módulo?",
+        "¿Quién firma la guía antes de que yo registre en el sistema?"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ayuda",
+   "titulo": "Ayuda y soporte",
+   "modulos": [
+    {
+     "id": "soporte",
+     "nombre": "Soporte",
+     "titulo": "Soporte al cliente S10",
+     "resumen": "Cómo pedir ayuda a S10: ticket de soporte, asistencia remota con Supremo o AnyDesk, manuales del Portal de Ayuda y cursos. Solo pueden abrir tickets las empresas suscritas a soporte y mantenimiento.",
+     "temas": [
+      {
+       "id": "soporte",
+       "titulo": "General",
+       "preguntas": [
+        "¿Qué hago si Supremo no me funciona en la PC de obra? ¿Hay alguna otra aplicación que acepten?",
+        "¿A qué se refiere «suscrito a soporte y mantenimiento»?",
+        "¿Qué diferencia capacitación de implantación?",
+        "¿Qué sucede si le doy al técnico mi clave del ERP en lugar del código de la asistencia remota?",
+        "¿Qué necesito para entrar a la plataforma de tickets?",
+        "¿El correo responde tickets o solo avisa?"
+       ]
+      },
+      {
+       "id": "soporte/asistencia-remota",
+       "titulo": "Asistencia remota: Supremo, AnyDesk y escritorio remoto",
+       "preguntas": [
+        "¿Qué significa «Descargar ahora» y luego «Ejecutar» en la instalación de AnyDesk?",
+        "¿Qué es lo que soporte hace con el ID y la clave que le envío?",
+        "¿Cuál es la fuente de la información sobre instalar AnyDesk?",
+        "¿Qué diferencia hay entre el paso «Aceptar» de Supremo y el «Aceptar» de AnyDesk?",
+        "¿Para qué me sirve saber la diferencia entre Supremo y AnyDesk si soy usuario de obra?",
+        "¿El ERP S10 trae Supremo integrado o hay que descargarlo aparte?"
+       ]
+      },
+      {
+       "id": "soporte/capacitaciones",
+       "titulo": "Cursos y capacitaciones S10",
+       "preguntas": [
+        "¿Qué le pido a mi almacenero para que entre a la clase virtual sin problemas?",
+        "¿Qué modalidades puedo marcar cuando inscribo a alguien de mi área?"
+       ]
+      },
+      {
+       "id": "soporte/portal-de-ayuda",
+       "titulo": "Portal de Ayuda: manuales, prerrequisitos y acceso",
+       "preguntas": [
+        "¿En qué parte de la pantalla está la opción Salir del portal?",
+        "¿Qué pasa si escribo mal las credenciales 3 veces seguidas en el recuadro de acceso?",
+        "¿Para qué sirve documentacion.s10peru.com cuando uno está en plena cerrada de mes?",
+        "¿Cómo hago para revisar si hay avisos de nuevos lanzamientos apenas ingreso?",
+        "¿Con qué categoría debo abrir el ticket cuando el problema es de instalación?",
+        "¿Hay que registrarse en el portal o S10 ya me manda el acceso? ¿Cómo procedo?"
+       ]
+      },
+      {
+       "id": "soporte/tickets-crear",
+       "titulo": "Crear un ticket de soporte",
+       "preguntas": [
+        "¿Elijo prioridad antes o después del asunto?",
+        "¿Es igual poner el detalle en el asunto o mejor un asunto corto y todo el detalle en Descripción?",
+        "¿Se confirma la categoría con un mensaje?",
+        "¿Me sirve más adjuntar un solo archivo grande con todo o cuatro archivos separados por incidencia?",
+        "¿Cómo se llama el correo de bienvenida?",
+        "¿Cuál es la última acción del registro?"
+       ]
+      },
+      {
+       "id": "soporte/tickets-seguimiento",
+       "titulo": "Responder, reabrir o cerrar un ticket",
+       "preguntas": [
+        "¿En qué campo escribe mi coordinador el mensaje cuando va a responder un ticket abierto?",
+        "¿Qué le explico a mi equipo para que entienda que el correo de S10 no es el canal de respuesta?",
+        "¿Qué es la opción «No, no quiero cerrar este ticket»?",
+        "¿Dónde se responden los mensajes a soporte?",
+        "¿Qué diferencia hay entre el aviso por correo y el ticket?",
+        "¿Dónde revisa mi analista el nombre del operador que atendió y la hora en que respondió?"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "empresa",
+   "titulo": "Optimiza 360",
+   "modulos": [
+    {
+     "id": "optimiza360",
+     "nombre": "Optimiza 360",
+     "titulo": "Optimiza 360",
+     "resumen": "Consultora peruana (desde 2020) de transformación digital para construcción e inmobiliaria: implementación y mesa de ayuda del ERP S10 y CRM Sperant, dashboards de BI y software a medida. Fundador: Arturo Dupont. Es la empresa detrás de Metrín.",
+     "temas": [
+      {
+       "id": "optimiza360",
+       "titulo": "General",
+       "preguntas": [
+        "¿Qué ruta sigo si primero quiero ver servicios y después clientes?",
+        "¿Qué hago si el cliente me pregunta por el CRM y yo solo sé del ERP?",
+        "¿Por qué decidir a tiempo es parte de lo que busca Optimiza 360?",
+        "¿Cuál es la fuente de donde sale la información sobre Optimiza 360?",
+        "¿Los servicios de Optimiza 360 son solo de software o también de estrategia?",
+        "¿Cómo compruebo la fecha de rastreo de este contenido y dónde está anotada?"
+       ]
+      },
+      {
+       "id": "optimiza360/clientes",
+       "titulo": "Clientes de Optimiza 360",
+       "preguntas": [
+        "¿Qué sección del sitio abro para ver los logos de los clientes?",
+        "¿Qué hago si el logo no me permite identificar el nombre de la constructora?",
+        "¿Qué es la página de Nuestros Clientes de Optimiza 360?",
+        "¿En qué carpeta va el documento interno con los nombres de los clientes?",
+        "¿Cuál es el paso previo obligatorio antes de listar clientes por nombre?",
+        "¿Un logo y un nombre son lo mismo para efectos de esta base de conocimiento?"
+       ]
+      },
+      {
+       "id": "optimiza360/contacto",
+       "titulo": "Contacto de Optimiza 360",
+       "preguntas": [
+        "¿A qué número marco para hablar por celular con Optimiza 360?",
+        "¿Qué canales de contacto publica Optimiza 360 en su página web?",
+        "¿Qué separa un requerimiento de desarrollo a medida de un pedido de soporte?",
+        "¿Cómo abro el LinkedIn del contacto de Optimiza 360, con qué enlace?",
+        "¿Qué tipo de necesidades cubre el contacto con Optimiza 360?",
+        "¿Cuál es la diferencia entre escribirle a Optimiza 360 y abrir un ticket en S10?"
+       ]
+      },
+      {
+       "id": "optimiza360/fundador",
+       "titulo": "Arturo Dupont · CEO y fundador de Optimiza 360",
+       "preguntas": [
+        "¿Cómo derivo un pedido de integración al responsable correcto?",
+        "¿A qué sectores está enfocada la experiencia de Arturo Dupont?",
+        "¿El correo de Arturo tiene dominio propio de Optimiza 360?",
+        "¿Qué diferencia hay entre implementar el ERP y dar mesa de ayuda?",
+        "¿Qué ruta de archivo uso para mostrar el retrato del fundador?",
+        "¿De dónde proviene la información del perfil de Arturo Dupont?"
+       ]
+      },
+      {
+       "id": "optimiza360/quienes-somos",
+       "titulo": "Quiénes somos: misión, valores y pilares",
+       "preguntas": [
+        "¿Cómo redacto una línea que junte misión y pilares sin repetir conceptos?",
+        "¿Qué significa que la solución sea personalizada y no estándar?",
+        "¿Qué páginas del sitio de Optimiza 360 se usaron como fuente?",
+        "¿Qué diferencia hay entre la misión y los pilares de la empresa?",
+        "¿Por qué Optimiza 360 se enfoca solo en construcción e inmobiliario?",
+        "¿Cómo hago para documentar que el dato fue tomado el 30 de setiembre de 2026?"
+       ]
+      },
+      {
+       "id": "optimiza360/servicios",
+       "titulo": "Servicios de Optimiza 360",
+       "preguntas": [
+        "¿Cómo se pide soporte cuando el CRM Sperant falla en cobranzas?",
+        "¿Las compras de obra se pueden monitorear desde algún tablero?",
+        "¿Cuántos servicios distintos figuran en la web de Optimiza 360?",
+        "¿Cobranzas aparece en ambos frentes, en Sperant y en los dashboards?",
+        "¿De dónde sale la información de estos servicios? ¿Es fuente oficial?",
+        "¿Cómo pido que me optimicen el ERP que ya tengo funcionando?"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "destacadas": [
+  {
+   "modulo": "presupuestos",
+   "pregunta": "¿Cómo creo un título en el catálogo para organizar mis partidas?"
+  },
+  {
+   "modulo": "gerencia-proyectos",
+   "pregunta": "¿Qué tipo de recurso reviso primero cuando el costo se desvía?"
+  },
+  {
+   "modulo": "compras",
+   "pregunta": "¿El seguimiento va antes o después de programar el despacho?"
+  },
+  {
+   "modulo": "almacenes",
+   "pregunta": "¿Cómo llego a la opción de adicionar correctivo dentro del documento?"
+  },
+  {
+   "modulo": "nominas",
+   "pregunta": "¿Qué campos lleno cuando doy de alta el recurso en el catálogo?"
+  },
+  {
+   "modulo": "contabilidad",
+   "pregunta": "¿Cómo llego del balance de comprobación al comprobante original?"
+  },
+  {
+   "modulo": "facturacion",
+   "pregunta": "¿Qué tipo de regularización tengo que crear al final del flujo?"
+  },
+  {
+   "modulo": "administrativo",
+   "pregunta": "¿Cómo saco el reporte de movimientos de una cuenta bancaria?"
+  },
+  {
+   "modulo": "portales",
+   "pregunta": "¿Cómo registro un pedido en la app de Pedidos Móviles paso a paso?"
+  },
+  {
+   "modulo": "reportes-sql",
+   "pregunta": "¿CTS de noviembre 2024?"
+  },
+  {
+   "modulo": "tutoriales",
+   "pregunta": "¿Cómo inserto un título en la hoja del presupuesto paso a paso?"
+  },
+  {
+   "modulo": "soporte",
+   "pregunta": "¿Qué significa «Descargar ahora» y luego «Ejecutar» en la instalación de AnyDesk?"
+  },
+  {
+   "modulo": "optimiza360",
+   "pregunta": "¿Qué sección del sitio abro para ver los logos de los clientes?"
+  }
+ ]
+}

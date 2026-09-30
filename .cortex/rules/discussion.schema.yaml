@@ -1,0 +1,107 @@
+# Edited by humans only. Cortex enforces these rules and explains violations to AIs.
+type: discussion
+description: A question for people and AI agents to argue out; the majority view
+  becomes a proposed decision a human accepts.
+statuses:
+  - open
+  - deliberating
+  - voted
+  - decided
+  - cancelled
+initial: open
+terminal:
+  - decided
+  - cancelled
+transitions:
+  open:
+    - deliberating
+    - voted
+    - cancelled
+  deliberating:
+    - open
+    - voted
+    - cancelled
+  voted:
+    - deliberating
+    - decided
+    - cancelled
+  decided: []
+  cancelled:
+    - open
+human_only_statuses:
+  - decided
+fields:
+  options:
+    type: list
+    of: string
+    required: true
+    max: 8
+    description: The answers on the table, 2 to 8; a view backs one of them
+  participants:
+    type: list
+    of: actor
+    max: 30
+    description: Who is asked for a view; empty = anyone
+  blind:
+    type: boolean
+    description: "Default true: while open, a participant sees the others' views
+      only after posting their own"
+  deadline:
+    type: datetime
+  outcome:
+    type: item_ref
+    description: The decision this discussion produced (set by Cortex)
+reply:
+  fields:
+    kind:
+      type: enum
+      values:
+        - opinion
+        - rebuttal
+        - comment
+        - synthesis
+      required: true
+    stance:
+      type: string
+      max: 200
+      description: One of the discussion's options, exactly as written; your latest
+        stance is your vote
+    confidence:
+      type: enum
+      values:
+        - low
+        - medium
+        - high
+    evidence:
+      type: list
+      of: string
+      max: 30
+      description: 'What backs the view: "src/db.ts:40-60", a knowledge node path or
+        an item id'
+  require_when:
+    - when:
+        kind: opinion
+      require:
+        - stance
+        - confidence
+        - evidence
+      message: An opinion names an option, how sure you are, and what in the project
+        backs it.
+ai_instructions: Read the project before you post (cortex_search,
+  cortex_code_context, the code itself). Post one 'opinion' that backs one
+  option, with evidence for every claim; say confidence 'low' when unsure. While
+  the discussion is open and blind you will not see the others' views until you
+  post yours. Once it is 'deliberating', answer the strongest opposing view with
+  a 'rebuttal'; a new stance there changes your vote. Only humans decide.
+example:
+  type: discussion
+  title: Should this project use MySQL instead of PostgreSQL?
+  category_path: backend
+  body: Hosting offers managed MySQL at half the price. What would we lose?
+  fields:
+    options:
+      - Stay on PostgreSQL
+      - Move to MySQL
+    participants:
+      - ai-agent
+      - owner

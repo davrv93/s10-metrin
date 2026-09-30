@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TurnoClaro — turnos del personal sin hojas de cálculo</title>
+  <meta name="description" content="TurnoClaro organiza los turnos, fichajes y cambios de horario de cafeterías, panaderías y restaurantes pequeños.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="src/contacto.js" defer></script>
+</head>
+<body>
+  <header class="barra">
+    <a class="logo" href="#inicio">TurnoClaro</a>
+    <nav>
+      <a href="#funciones">Funciones</a>
+      <a href="#planes">Planes</a>
+      <a href="#faq">Preguntas</a>
+      <a href="#contacto" class="boton boton--secundario">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <h1>Los turnos de tu equipo, claros en dos minutos</h1>
+      <p class="hero__sub">TurnoClaro arma el cuadrante semanal, avisa a cada persona por correo y deja
+        que cambien turnos entre ellas con tu aprobación. Pensado para cafeterías, panaderías y
+        restaurantes de 3 a 60 personas.</p>
+      <div class="hero__acciones">
+        <a class="boton" href="#planes">Probar 14 días gratis</a>
+        <a class="boton boton--secundario" href="#contacto">Hablar con ventas</a>
+      </div>
+      <p class="hero__nota">Sin tarjeta para la prueba. Tus datos se quedan en servidores de la Unión Europea.</p>
+    </section>
+
+    <!-- FUNCIONES -->
+    <section id="funciones" class="funciones">
+      <h2>Qué hace</h2>
+      <ul class="rejilla">
+        <li><h3>Cuadrante automático</h3><p>Propone los turnos de la semana respetando descansos mínimos de 12 horas y las horas de contrato de cada persona.</p></li>
+        <li><h3>Cambios entre compañeros</h3><p>Una persona ofrece su turno, otra lo acepta y el encargado lo aprueba con un clic.</p></li>
+        <li><h3>Fichaje desde el móvil</h3><p>Entrada y salida con código QR en el local. Sin aplicaciones que instalar.</p></li>
+        <li><h3>Informe de horas</h3><p>Exporta a CSV las horas trabajadas por persona para la gestoría, cada mes.</p></li>
+      </ul>
+    </section>
+
+    <!-- PLANES -->
+    <section id="planes" class="planes">
+      <h2>Planes</h2>
+      <p>Tres planes, todos con prueba gratuita de 14 días. Los precios vigentes y los descuentos
+        anuales están en la hoja de tarifas que publica el equipo comercial.</p>
+      <div class="rejilla">
+        <article class="plan">
+          <h3>Básico</h3>
+          <p>Hasta 10 personas y un local. Cuadrante, avisos por correo y fichaje QR.</p>
+          <a class="boton boton--secundario" href="#contacto">Empezar</a>
+        </article>
+        <article class="plan plan--destacado">
+          <h3>Pro</h3>
+          <p>Hasta 60 personas y 5 locales. Todo lo del Básico más cambios entre compañeros,
+            informes de horas y permisos por encargado.</p>
+          <a class="boton" href="#contacto">Elegir Pro</a>
+        </article>
+        <article class="plan">
+          <h3>Empresa</h3>
+          <p>Locales ilimitados, inicio de sesión único (SSO) y acuerdo de nivel de servicio.</p>
+          <a class="boton boton--secundario" href="#contacto">Hablar con ventas</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+      <h2>Preguntas rápidas</h2>
+      <details><summary>¿Necesito instalar algo?</summary><p>No. TurnoClaro funciona en el navegador del ordenador y del móvil.</p></details>
+      <details><summary>¿Puedo cancelar cuando quiera?</summary><p>Sí. Los planes mensuales se cancelan desde Ajustes y dejan de cobrarse al final del mes en curso.</p></details>
+      <details><summary>¿Mis empleados necesitan correo electrónico?</summary><p>Recomendable, pero no obligatorio: el encargado puede imprimir el cuadrante en PDF.</p></details>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
+      <h2>Contacto</h2>
+      <p>Te respondemos en menos de un día laborable.</p>
+      <form id="form-contacto" class="formulario" novalidate
+            action="/api/contacto" method="post" data-endpoint="/api/contacto">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" type="text" autocomplete="name" required minlength="2" maxlength="80">
+
+        <label for="email">Correo electrónico</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+
+        <label for="negocio">Nombre del negocio (opcional)</label>
+        <input id="negocio" name="negocio" type="text" maxlength="120">
+
+        <label for="plan">Plan que te interesa</label>
+        <select id="plan" name="plan">
+          <option value="basico">Básico</option>
+          <option value="pro" selected>Pro</option>
+          <option value="empresa">Empresa</option>
+        </select>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required minlength="20" maxlength="1000"></textarea>
+
+        <!-- campo trampa para bots: oculto por CSS, debe llegar vacío -->
+        <div class="trampa" aria-hidden="true">
+          <label for="sitio_web">Sitio web</label>
+          <input id="sitio_web" name="sitio_web" type="text" tabindex="-1" autocomplete="off">
+        </div>
+
+        <label class="casilla">
+          <input id="acepto" name="acepto" type="checkbox" required>
+          He leído la política de privacidad y acepto que me contacten.
+        </label>
+
+        <button type="submit" class="boton">Enviar mensaje</button>
+        <p id="form-estado" class="formulario__estado" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>© 2026 TurnoClaro (producto ficticio de demostración). Hecho con cariño y mucho café.</p>
+  </footer>
+</body>
+</html>

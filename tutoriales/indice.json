@@ -1,0 +1,42 @@
+{
+ "Crear un presupuesto de obra desde cero en S10 Presupuestos: carpeta de trabajo, estructura de títulos y partidas, y análisis de precios unitarios": {
+  "titulo": "Crear un presupuesto de obra desde cero en S10 Presupuestos",
+  "archivo": "crear-un-presupuesto-de-obra-desde-cero-en-s10-presupuestos.md",
+  "huella_kb": "623d8ce6f503",
+  "citas": 53,
+  "sin_documentar": 1,
+  "fecha": "2026-09-30T02:33:44"
+ },
+ "Calcular la CTS de un trabajador de construcción civil en Nóminas S10": {
+  "titulo": "Calcular CTS de trabajador de construcción civil",
+  "archivo": "calcular-cts-de-trabajador-de-construccion-civil.md",
+  "huella_kb": "623d8ce6f503",
+  "citas": 17,
+  "sin_documentar": 4,
+  "fecha": "2026-09-30T02:35:38"
+ },
+ "Registrar el ingreso de materiales al almacén de obra a partir de una orden de compra y consultar el kardex": {
+  "titulo": "Ingreso de materiales al almacén de obra desde orden de compra y consulta de kardex",
+  "archivo": "ingreso-de-materiales-al-almacen-de-obra-desde-orden-de-comp.md",
+  "huella_kb": "623d8ce6f503",
+  "citas": 22,
+  "sin_documentar": 5,
+  "fecha": "2026-09-30T02:37:53"
+ },
+ "Generar una orden de compra en S10 desde el pedido de obra, con cotizaciones y aprobación móvil": {
+  "titulo": "Generar orden de compra desde el pedido de obra con cotizaciones y aprobación móvil",
+  "archivo": "generar-orden-de-compra-desde-el-pedido-de-obra-con-cotizaci.md",
+  "huella_kb": "623d8ce6f503",
+  "citas": 26,
+  "sin_documentar": 8,
+  "fecha": "2026-09-30T02:40:03"
+ },
+ "Emitir una factura electrónica en S10 y enviarla a SUNAT desde el Portal de Facturación Electrónica": {
+  "titulo": "Emitir factura electrónica y enviarla a SUNAT",
+  "archivo": "emitir-factura-electronica-y-enviarla-a-sunat.md",
+  "huella_kb": "623d8ce6f503",
+  "citas": 32,
+  "sin_documentar": 9,
+  "fecha": "2026-09-30T02:42:46"
+ }
+}
