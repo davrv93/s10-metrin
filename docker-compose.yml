@@ -6,7 +6,7 @@
 #
 # Puertos solo en 127.0.0.1 del host:
 #   4748 Cortex (tablero y API) · 4750 panel admin · 4760 chat de Metrín
-#   4761 visor de trazas JEV
+#   4761 visor de trazas JEV · 5433 Postgres de trazas (TRAZAS_REPO=postgres)
 #
 # El código y los datos viven en esta carpeta y se montan en /app: lo que se agrega
 # desde el panel queda en disco, igual que fuera de Docker.
@@ -83,6 +83,7 @@ services:
       JEV_MODEL: ${JEV_MODEL:-}
       JEV_TRAZAS: ${JEV_TRAZAS:-/srv/trazas/trazas.jsonl}
       JEV_ORIGEN: ${JEV_ORIGEN:-metrin}
+      JEV_ORIGEN_CHAT: ${JEV_ORIGEN_CHAT:-metrin-chat}
     volumes:
       - ./kb:/kb:ro
       - ./data:/datos:ro
@@ -105,6 +106,30 @@ services:
       TRAZAS_ARCHIVO: ${TRAZAS_ARCHIVO:-/app/trazas/datos/trazas.jsonl}
       TRAZAS_PG_DSN: ${TRAZAS_PG_DSN:-}
     ports: ["127.0.0.1:${TRAZAS_PUERTO:-4761}:4761"]
+    depends_on:
+      trazas-pg: { condition: service_healthy }
+
+  # Postgres del visor de trazas. esquema.sql se aplica solo en el
+  # primer arranque (el volumen de datos ya tiene las tablas).
+  # DSN desde dentro del compose: metrin:metrin@trazas-pg:5432/trazas
+  # (desde el host: localhost:5433).
+  trazas-pg:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: metrin
+      POSTGRES_PASSWORD: metrin
+      POSTGRES_DB: trazas
+    volumes:
+      - trazas-pg-data:/var/lib/postgresql/data
+      - ./trazas/esquema.sql:/docker-entrypoint-initdb.d/01-esquema.sql:ro
+    ports: ["127.0.0.1:5433:5432"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U metrin -d trazas"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    logging: *logs
+    restart: unless-stopped
 
   # Ollama dentro del compose (opcional; por defecto Metrín usa el de la Mac).
   ollama:
@@ -129,3 +154,4 @@ volumes:
   venv-linux:
   metrin-datos:
   ollama:
+  trazas-pg-data:

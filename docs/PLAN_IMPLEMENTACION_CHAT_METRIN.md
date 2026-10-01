@@ -23,11 +23,11 @@ El nombre del asistente en producto es **Metrín**. La interfaz y sus respuestas
 | Cola y estado temporal | Redis | Transporte de trabajos asíncronos, bloqueos breves y datos efímeros. No usar Redis como fuente de verdad. |
 | WhatsApp | Fork `davrv93/evolution-go`, en contenedor aislado | Integración por API y webhooks. Fijar una versión o commit y comprobar las rutas, autenticación y eventos reales del fork antes de implementar el adaptador. |
 | Animación general | Motion | Usar la API JavaScript de `motion` para transiciones generales entre Astro, Qwik y Resuma. La API `motion/react` queda limitada a componentes React existentes. |
-| Microinteracciones de Metrín | `apple-motion-lite` | Dependencia solicitada para gestos breves de la mascota. Antes de instalar: confirmar paquete/repositorio exacto, licencia, API, mantenimiento y tamaño real comprimido; mantener fallback CSS accesible. |
+| Mascota de Metrín | Rive (`@rive-app/canvas`) | Animaciones de la mascota (parpadeo, mirada, asentir, reacción breve). Runtime JS+WASM ≈200 KB gzip (≈3 MB sin comprimir) según el proyecto: medir el build real antes de fijar; cargar bajo demanda, precargar el WASM solo al crear la instancia y mantener fallback CSS accesible. |
 
 Qwik mantiene integración con Astro y en ese caso se usan las APIs de Astro para routing y datos. El crate Resuma describe SSR y resumibilidad con handlers diferidos; su cifra de ~1 KB corresponde al loader/runtime que declara el proyecto, no al bundle total. Tailwind documenta su plugin Vite en Astro y Motion tiene API JavaScript y API React. Fuentes: [Qwik con Astro](https://qwik.dev/docs/integrations/astro/), [Resuma en docs.rs](https://docs.rs/resuma/latest/resuma/), [Tailwind v4 con Astro](https://tailwindcss.com/docs/installation/framework-guides/astro), [Motion para JavaScript y React](https://motion.dev/docs).
 
-La búsqueda no identificó una publicación pública inequívoca para `apple-motion-lite`. Se conserva como requisito del diseño, sujeto a localizar su fuente de paquete (posiblemente interna o privada) y validar licencia, API y artefacto antes de integrarlo. No dar por confirmado el tamaño de ~5 KB hasta medir el build de producción.
+Decisión revisada (2026-10-01): `apple-motion-lite` quedó descartado porque no tiene publicación pública verificable (posible paquete interno u homónimo). La mascota usa Rive: runtime open source (github.com/rive-app/rive-wasm) con documentación oficial en rive.app/docs. Las cifras de tamaño son del proyecto y se confirmarán midiendo el bundle de producción antes de fijar la dependencia (ver §10).
 
 La arquitectura de modelos, clasificación, RAG, Cortex, feedback, aprendizaje controlado, UI conversacional y contrato de respuestas está detallada en [ESPECIFICACION_IA_METRIN.md](ESPECIFICACION_IA_METRIN.md). Esa especificación prevalece sobre los prompts originales cuando exista conflicto con el nombre Metrín, el español neutro o el aprendizaje sujeto a validación humana.
 
@@ -201,7 +201,7 @@ Compose de desarrollo debe incluir `web`, `admin`, `api`, workers requeridos, `p
 - Añadir estados de carga, reintento, error, desconexión y reconexión.
 - Implementar SSE para el flujo inicial, cancelación y paginación.
 - Añadir identidad visual de Metrín y estados semánticos para sus animaciones.
-- Usar Motion para transiciones generales. Aislar `apple-motion-lite` en el controlador de microinteracciones de Metrín después de validar el paquete; desactivar animaciones con `prefers-reduced-motion`.
+- Usar Motion para transiciones generales. Aislar Rive en el controlador de la mascota de Metrín después de medir el bundle; desactivar animaciones con `prefers-reduced-motion`.
 
 **Salida:** el chat funciona con una API simulada y luego con Go; el JavaScript inicial y el tiempo hasta interacción quedan medidos en el dispositivo objetivo.
 
@@ -234,16 +234,16 @@ Compose de desarrollo debe incluir `web`, `admin`, `api`, workers requeridos, `p
 
 - **Motion:** transiciones de navegación y panel, cambios de layout, entrada/salida de mensajes y estados de carga. Preferir la API JavaScript `animate()`/`scroll()` para código compartido entre Astro, Qwik y Resuma; usar `motion/react` solo en una isla React.
 - En Resuma, conectar Motion desde un módulo JavaScript del navegador sobre límites DOM explícitos; no asumir que callbacks externos se traducen automáticamente desde Rust mediante `rs2js`.
-- **`apple-motion-lite`:** microinteracciones exclusivas de Metrín: parpadeo, mirada, asentir, reacción breve y pequeños movimientos de herramientas. Encapsular detrás de `MascotaMotionController` con métodos por estado (`idle`, `listening`, `thinking`, `success`, `error`) para reemplazar la dependencia sin cambiar el chat.
+- **Mascota con Rive:** microinteracciones exclusivas de Metrín: parpadeo, mirada, asentir, reacción breve y pequeños movimientos de herramientas. Un archivo `.riv` por estado, encapsulado detrás de `MascotaMotionController` con métodos por estado (`idle`, `listening`, `thinking`, `success`, `error`) para reemplazar el motor sin cambiar el chat.
 - Cargar el controlador de mascota bajo demanda, pausar cuando no esté visible y respetar `prefers-reduced-motion`. Evitar animar layout continuamente; priorizar `transform` y `opacity`.
-- Antes de agregar `apple-motion-lite`, resolver el paquete exacto y registrar versión, licencia, mantenimiento, peso gzip/brotli y prueba de funcionamiento en Astro/Qwik/Resuma. Si es una dependencia privada, documentar registry y acceso en el runbook sin guardar credenciales.
-- Medir el bundle combinado con ambos motores. Motion y `apple-motion-lite` tienen responsabilidades separadas y no deben controlar el mismo elemento o gesto.
+- Antes de integrar Rive, medir el bundle real gzip/brotli del runtime JS+WASM con un prototipo mínimo en Astro/Qwik/Resuma y registrar versión, licencia (open source), mantenimiento y peso en la tabla de dependencias; solo entonces se fija la versión. Cargar el runtime bajo demanda y precargar el WASM solo al crear la primera instancia.
+- Medir el bundle combinado con Motion. Motion y Rive tienen responsabilidades separadas y no deben controlar el mismo elemento o gesto.
 
 ## 11. Decisiones explícitas para evitar sobrecarga
 
 - No combinar Tailwind y UnoCSS en el mismo frontend. Si se desea comparar UnoCSS, hacerlo en una rama/prototipo con las mismas pantallas y mediciones.
 - No introducir Gluon en el panel principal hasta validar accesibilidad, herramientas, ecosistema de componentes, mantenimiento y bundle con una prueba de concepto.
-- No añadir Rive en la primera versión: Motion cubre transiciones generales y `apple-motion-lite` queda para la mascota.
+- Rive solo para la mascota: Motion cubre las transiciones generales del chat. No usar Rive para el resto de la interfaz hasta medir el bundle y justificar otro uso concreto.
 - No usar WebGPU para animaciones rutinarias del chat; reservarlo para una necesidad visual demostrable y con fallback. No es parte del MVP.
 - No usar React y Qwik para implementar dos versiones de la misma isla.
 - No crear servicios Rust “por si acaso”; cada servicio requiere una carga medida y una frontera de dominio.
@@ -255,7 +255,7 @@ Compose de desarrollo debe incluir `web`, `admin`, `api`, workers requeridos, `p
 |---|---|
 | Complejidad por Go, Rust, Astro, Qwik, Resuma y React | Aislar Resuma al panel; limitar React a legado; Qwik solo al chat embebible; mantener contratos explícitos entre apps. |
 | Resuma es joven o cambia API/compilación | Fijar versión, mantener prueba vertical de SSR/resumibilidad, revisar releases y conservar un plan de salida al mismo contrato Go. |
-| `apple-motion-lite` no está localizable o mantenido | Resolver el paquete antes de integrar; no aceptar una dependencia homónima sin revisar su fuente. Fallback aislado con CSS y respetar movimiento reducido. |
+| Rive pesa demasiado o su WASM falla en un navegador objetivo | Medir bundle gzip/brotli antes de fijar la versión; cargar bajo demanda con precarga diferida del WASM, fijar el runtime y ofrecer fallback CSS con movimiento reducido. |
 | Pérdida o duplicación de mensajes | Outbox transaccional, claves idempotentes, deduplicación de webhooks y pruebas de reinicio. |
 | Cruce de datos entre empresas | Tenant derivado de identidad validada en backend; controles en cada consulta y pruebas negativas. |
 | Cambios incompatibles del fork Evolution Go | Fijar commit/imagen, adaptador aislado, pruebas de contrato y procedimiento de actualización. |
@@ -274,6 +274,7 @@ Compose de desarrollo debe incluir `web`, `admin`, `api`, workers requeridos, `p
 - [Tailwind CSS v4: anuncio y resultados publicados por el proyecto](https://tailwindcss.com/blog/tailwindcss-v4)
 - [Gluon: código y metodología de benchmarks del proyecto](https://github.com/marcmalerei/gluon)
 - [Motion: documentación JavaScript y React](https://motion.dev/docs)
+- [Rive: runtimes web y tamaños de runtime](https://rive.app/docs/runtimes/runtime-sizes)
 - [Fork de Evolution Go indicado para el proyecto](https://github.com/davrv93/evolution-go)
 
 Las versiones de frameworks, integración Astro-Qwik y paquetes de cola deben comprobarse y fijarse al iniciar cada etapa; este plan define arquitectura y contratos, no sustituye la validación de compatibilidad de versiones del momento.

@@ -244,7 +244,7 @@ Cobertura del dominio evaluado, tiempo hasta respuesta validada, porcentaje de p
 - Adjuntos con URL autenticada, permisos y vencimiento; no exponer rutas internas de archivos.
 - Feedback 👍/👎, “Corregir respuesta”, “Reformular pregunta” y “Hablar con una persona”. Mostrar derivación cuando falte evidencia, haya baja confianza calibrada o el usuario la solicite.
 - Estados LED/pose: feliz, pensando, confundido, sorprendido, aprendiendo y celebrando. No usar “aprendiendo” hasta que exista un trabajo activo; “celebrando” cuando la revisión/indexación confirme disponibilidad.
-- Motion controla transiciones generales; `apple-motion-lite` queda encapsulado para gestos de la mascota. Cargar bajo demanda, pausar fuera de pantalla y respetar `prefers-reduced-motion`.
+- Motion controla transiciones generales; Rive queda encapsulado para los gestos de la mascota (detrás de `MascotaMotionController`). Cargar bajo demanda, pausar fuera de pantalla y respetar `prefers-reduced-motion`.
 - Accesibilidad WCAG AA, contraste medido, teclado, foco visible, etiquetas ARIA y alternativa textual a expresiones animadas.
 - Responsive para móvil, tablet y escritorio; área táctil suficiente y mensajes legibles sin scroll horizontal.
 

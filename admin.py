@@ -5,7 +5,7 @@ admin.py — panel de administración de la base de conocimiento S10.
   .venv/bin/python admin.py            # http://127.0.0.1:4750
 
 Secciones: resumen · Cortex (entrar con sesión) · fuentes (PDF, portal, YouTube, internas)
-· agregar fuentes · tutoriales · herramientas · almacenamiento.
+· agregar fuentes · tutoriales · herramientas · almacenamiento · trazas JEV (decisiones de Metrín).
 
 Acceso con usuario y clave de .env (ADMIN_USUARIO / ADMIN_CLAVE). Si falta la clave,
 se genera una al primer arranque y se guarda en .env (se imprime una sola vez).
@@ -231,6 +231,7 @@ pre{background:#1a2721;color:#e2eae5;padding:14px;border-radius:8px;overflow:aut
 MENU = [
     ("Conocimiento", [("resumen", "Resumen", "home"), ("fuentes", "Fuentes", "book"), ("agregar", "Agregar fuentes", "plus")]),
     ("Automatización", [("programacion", "Programación", "clock"), ("tutoriales_vista", "Tutoriales", "guide"), ("trabajos", "Trabajos", "activity")]),
+    ("Metrín", [("trazas_jev", "Trazas JEV", "decision")]),
     ("Sistema", [("cortex", "Cortex", "nodes"), ("herramientas", "Herramientas", "tools"), ("almacenamiento", "Almacenamiento", "storage")]),
 ]
 
@@ -243,6 +244,7 @@ def icono(nombre: str) -> str:
         "clock": '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
         "guide": '<path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v18H6.5A2.5 2.5 0 0 0 4 22z"/><path d="M8 7h8M8 11h8M8 15h5"/>',
         "activity": '<path d="M3 12h4l3-8 4 16 3-8h4"/>',
+        "decision": '<circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.5 2.5 4.5-5.5"/>',
         "nodes": '<circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="m11 7-5 10m7-10 5 10M7 19h10"/>',
         "tools": '<path d="M14.7 6.3a5 5 0 0 0-6.4 6.4L3 18l3 3 5.3-5.3a5 5 0 0 0 6.4-6.4L14 12l-3-3z"/>',
         "storage": '<ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/>',
@@ -399,6 +401,137 @@ def encender_cortex():
             if cortex_vivo():
                 break
     return redirect(url_for("cortex"))
+
+
+# ─────────────────────────────── trazas JEV ─────────────────────────────
+_TRAZAS = None
+
+
+def _mod_trazas():
+    """El visor de trazas (trazas/trazas.py) como módulo: el panel
+    lee el mismo repositorio que el visor (TRAZAS_REPO)."""
+    global _TRAZAS
+    if _TRAZAS is None:
+        sys.path.insert(0, str(RAIZ / "trazas"))
+        import trazas as m  # noqa: E402  (carga perezosa, solo en esta sección)
+        _TRAZAS = m
+    return _TRAZAS
+
+
+def _repo_trazas():
+    return _mod_trazas().repo_desde_env()
+
+
+def _fch(ts: str) -> str:
+    return (ts or "")[:16].replace("T", " ") or "—"
+
+
+def _confianza(v) -> str:
+    return f"{v:.2f}" if isinstance(v, (int, float)) else "—"
+
+
+def _veredicto(v) -> str:
+    if v is True:
+        return '<span class="chip ok">correcta</span>'
+    if v is False:
+        return '<span class="chip mal">fallada</span>'
+    return '<span class="chip">sin evaluar</span>'
+
+
+@app.route("/trazas")
+@requiere_login
+def trazas_jev():
+    m = _mod_trazas()
+    try:
+        repo = _repo_trazas()
+        todas = repo.listar()
+    except Exception as err:
+        return pagina("trazas_jev", "Trazas JEV",
+                      f'<p class="aviso">No se pudo leer el repositorio de trazas ({e(err)}).\nRevisa <code>TRAZAS_REPO</code> y <code>TRAZAS_PG_DSN</code> en <code>.env</code>.</p>')
+    filtradas = sorted(m.filtrar(todas, request.args), key=lambda t: t.get("ts", ""), reverse=True)
+    est = m.estadisticas(filtradas)
+    limite = max(1, min(50, int(request.args.get("limite", 25) or 25)))
+    offset = max(0, int(request.args.get("offset", 0) or 0))
+    modelos = sorted({t.get("modelo", "?") for t in todas})
+    params = {k: v for k, v in request.args.items() if k not in ("offset", "limite")}
+
+    def enlace(off):
+        return url_for("trazas_jev", **{**params, "limite": limite, "offset": off})
+
+    filas = ""
+    for t in filtradas[offset:offset + limite]:
+        r = m.resumen(t)
+        tipos = " ".join(f'<span class="chip">{e(x)}</span>' for x in r["tipos"])
+        filas += f"""<tr><td class="muted">{e(_fch(r["ts"]))}</td>
+<td><a href="{url_for('ver_traza', traza_id=r['id'])}">{e(r["titulo"])}</a><div class="muted">{e(r["origen"])} · {e(r["modelo"])} · {r['n_preguntas']} pregunta(s)</div></td>
+<td>{tipos}</td><td>{_confianza(r["confianza"])}</td><td>{r['ms']} ms</td><td>{_veredicto(r["correcta"])}</td></tr>"""
+    filtros = f"""<form method="get" class="fila"><input type="text" name="q" value="{e(request.args.get('q', ''))}" placeholder="Buscar en instrucciones, criterios y respuestas">
+<select name="tipo" style="width:auto"><option value="">todos los tipos</option>{''.join(f'<option value="{k}" {"selected" if request.args.get("tipo") == k else ""}>{k}</option>' for k in m.TIPOS)}</select>
+<select name="modelo" style="width:auto"><option value="">todos los modelos</option>{''.join(f'<option value="{e(k)}" {"selected" if request.args.get("modelo") == k else ""}>{e(k)}</option>' for k in modelos)}</select>
+<label class="muted" style="display:flex;gap:4px;align-items:center;white-space:nowrap"><input type="checkbox" name="fallidas" value="1" {"checked" if request.args.get("fallidas") else ""}>solo falladas</label>
+<button class="btn sec">Filtrar</button></form>"""
+    paginado = ""
+    if offset > 0 or len(filtradas) > offset + limite:
+        paginado = f'<p class="muted">Trazas {offset + 1}–{min(offset + limite, len(filtradas))} de {len(filtradas)} · '
+        if offset > 0:
+            paginado += f'<a href="{enlace(max(0, offset - limite))}">← anterior</a> '
+        if len(filtradas) > offset + limite:
+            paginado += f'<a href="{enlace(offset + limite)}">siguiente →</a>'
+        paginado += "</p>"
+    cards = f"""<div class="grid">
+<div class="card"><div class="num">{est['total']}</div><div class="et">decisiones registradas</div></div>
+<div class="card"><div class="num">{_confianza(est['confianza_media'])}</div><div class="et">confianza media</div></div>
+<div class="card"><div class="num">{est['aciertos']['pct'] if est['aciertos']['pct'] is not None else '—'}</div><div class="et">correctas ({est['aciertos']['n']}/{est['aciertos']['total']} evaluadas)</div></div>
+<div class="card"><div class="num">{est['latencia']['media']}</div><div class="et">latencia media (ms)</div></div>
+<div class="card"><div class="num">{est['latencia']['p95']}</div><div class="et">latencia p95 (ms)</div></div>
+<div class="card"><div class="num">{e(repo.origen())}</div><div class="et">repositorio (TRAZAS_REPO)</div></div></div>"""
+    cuerpo = f"""{cards}
+<h2>Decisiones</h2>{filtros}
+<table><tr><th>Cuándo</th><th>Decisión (primera instrucción)</th><th>Tipo</th><th>Confianza</th><th>Latencia</th><th>Veredicto</th></tr>
+{filas or '<tr><td colspan=6 class="muted">No hay trazas con esos filtros.</td></tr>'}</table>
+{paginado}
+<p class="muted">Mismo repositorio que el visor de trazas (puerto 4761): <code>mock</code>, <code>archivo</code> (JSONL de Metrín) o <code>postgres</code>. El veredicto es la muestra etiquetada; sin etiqueta queda «sin evaluar».</p>"""
+    return pagina("trazas_jev", "Trazas JEV", cuerpo,
+                  "Decisiones evaluativas de Metrín (jeva.cpp): qué se decidió, con qué confianza y cuánto tardó.")
+
+
+@app.route("/trazas/<traza_id>")
+@requiere_login
+def ver_traza(traza_id):
+    m = _mod_trazas()
+    err_txt = ""
+    try:
+        t = _repo_trazas().obtener(traza_id)
+    except Exception as err:
+        t, err_txt = None, e(err)
+    if t is None:
+        return pagina("trazas_jev", "Traza no encontrada",
+                      f'<p class="aviso">No existe la traza {e(traza_id)}' + (f" (error: {err_txt})" if err_txt else "") +
+                      f'. <a href="{url_for("trazas_jev")}">Volver al panel</a>.</p>')
+    estado = json.dumps(t.get("estado") or {}, ensure_ascii=False, indent=1)
+    preguntas = ""
+    for p in t.get("preguntas") or []:
+        r = p.get("respuesta") or {}
+        c = r.get("confianza")
+        chip_conf = f' <span class="chip">confianza {c:.2f}</span>' if isinstance(c, (int, float)) else ""
+        ins = p.get("instrucciones")
+        ins_txt = ins if isinstance(ins, str) else json.dumps(ins, ensure_ascii=False, indent=1)
+        preguntas += f"""<div class="card" style="margin-bottom:12px"><h2 style="margin-top:0">{e(p.get('id', 'pregunta'))} <span class="chip">{e(p.get('tipo', ''))}</span></h2>
+<p><b>Instrucciones</b></p><pre>{e(ins_txt)}</pre>
+<p><b>Criterios</b></p><pre>{e(json.dumps(p.get('criterios') or {}, ensure_ascii=False, indent=1))}</pre>
+<p><b>Respuesta</b>{chip_conf}</p><pre>{e(json.dumps(r, ensure_ascii=False, indent=1))}</pre></div>"""
+    cuerpo = f"""<p><a href="{url_for('trazas_jev')}">← trazas JEV</a></p>
+<div class="grid">
+<div class="card"><div class="num">{e(t.get('ms', 0))}</div><div class="et">latencia (ms)</div></div>
+<div class="card"><div class="num">{e(t.get('tokens_entrada', 0))}</div><div class="et">tokens de entrada</div></div>
+<div class="card"><div class="num">{e(t.get('modelo', '—'))}</div><div class="et">modelo</div></div>
+<div class="card"><div class="num">{e(t.get('origen', '—'))}</div><div class="et">origen</div></div>
+<div class="card"><div class="num">{e(_fch(t.get('ts', '')))}</div><div class="et">cuándo</div></div>
+<div class="card"><div class="num">{_veredicto(t.get('correcta'))}</div><div class="et">veredicto</div></div></div>
+<h2>Estado compartido</h2><pre>{e(estado)}</pre>
+<h2>Preguntas y respuestas</h2>{preguntas or '<p class="muted">La traza no tiene preguntas.</p>'}
+<p class="muted">Plantilla: <code>{e(t.get('plantilla', '—'))}</code> · id: <code>{e(t.get('id', ''))}</code></p>"""
+    return pagina("trazas_jev", "Traza JEV", cuerpo, "Una decisión evaluativa completa: estado, criterios y respuesta del JEV.")
 
 
 @app.route("/fuentes")
