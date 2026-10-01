@@ -249,10 +249,22 @@ instrucciones, criterios o modelo.
   **estadísticas** (confianza media/min/max, latencia p50/p95, aciertos,
   histogramas de latencia y confianza); **detalle** por traza con las
   barras de probabilidad de cada pregunta.
-- La capa de datos es una abstracción (`RepositorioTrazas`). Hoy lee
-  **mocks** (`trazas/mock/trazas.json`, 22 trazas del dominio obra/ERP
-  con casos de confianza casi plana y «no documentado»); con el esquema
-  de Postgres (Fase 3/5) entra `RepositorioPostgres` y el API no cambia.
+- La capa de datos es una abstracción (`RepositorioTrazas`), elegida
+  con `TRAZAS_REPO`:
+  - `mock` (defecto): `trazas/mock/trazas.json`, 22 trazas del dominio
+    obra/ERP con casos de confianza casi plana y «no documentado»;
+  - `archivo[:ruta]`: el JSONL (una traza por línea) que **emite metrin**
+    cuando decide con jeva.cpp — p. ej. el reporte:
+    ```bash
+    JEV_URL=http://localhost:8080 JEV_TRAZAS=trazas/datos/trazas.jsonl \
+      rag reporte --plantilla REP-02 --bd data/demo_s10.db "tareo de horas"
+    ```
+    La puerta de seguridad (`noul`) se evalúa **antes** de ejecutar el
+    SQL; la traza queda registrada aunque el reporte no se ejecute.
+    El visor revalida por mtime: trazas nuevas aparecen sin reiniciar.
+  - `postgres`: tablas `traces` + `jev` (`trazas/esquema.sql`,
+    `psql $TRAZAS_PG_DSN -f trazas/esquema.sql`); `RepositorioPostgres`
+    reconstruye el JSON anidado con un JOIN y el API no cambia.
 - `correcta` es el veredicto de la muestra etiquetada (true/false;
   null = sin evaluar). Las trazas falladas son las que revisar primero.
 - Pruebas: `.venv/bin/python -m unittest trazas.test_trazas -v`
@@ -271,7 +283,7 @@ docker compose --profile tareas run --rm herramientas s10kb.py indexar   # cualq
 | `cortex` | Árbol de conocimiento (cortexboard), publicado con socat porque solo escucha en 127.0.0.1  | `Dockerfile`        |
 | `admin`  | Panel de administración                                                                    | `Dockerfile`        |
 | `metrin` | Chat de Metrín (RAG en Go). Al arrancar indexa `kb/fragmentos*.jsonl` de forma incremental | `metrin/Dockerfile` |
-| `trazas` | Visor de trazas JEV (evaluación de decisiones; hoy con mocks)                              | `Dockerfile`        |
+| `trazas` | Visor de trazas JEV: mocks, JSONL de metrin (`TRAZAS_REPO=archivo`) o Postgres          | `Dockerfile`        |
 | `ollama` | Modelo local para las respuestas de Metrín (perfil `llm`)                                  | `ollama/ollama`     |
 
 - El proyecto se monta en `/app`: lo que se agrega desde el panel queda en esta carpeta.

@@ -26,6 +26,7 @@ import (
 	"rag-go/internal/config"
 	"rag-go/internal/embed"
 	"rag-go/internal/indexar"
+	"rag-go/internal/jev"
 	"rag-go/internal/llm"
 	"rag-go/internal/rag"
 	"rag-go/internal/servidor"
@@ -69,7 +70,7 @@ func main() {
 	case "ask":
 		err = cmdAsk(ctx, cfg, args)
 	case "reporte":
-		err = cmdReporte(ctx, args)
+		err = cmdReporte(ctx, cfg, args)
 	case "serve":
 		err = cmdServe(ctx, cfg, args)
 	case "entrenar-clasificador":
@@ -122,6 +123,20 @@ func separar(fs *flag.FlagSet, args []string) ([]string, error) {
 		pos = append(pos, a)
 	}
 	return pos, fs.Parse(flags)
+}
+
+// nuevoClienteJEV devuelve nil sin JEV_URL: las decisiones
+// JEV son opt-in. Con JEV_TRAZAS, cada decisión se graba en
+// el JSONL que lee el visor de trazas (TRAZAS_REPO=archivo).
+func nuevoClienteJEV(cfg config.Config) *jev.Cliente {
+	if cfg.JEVURL == "" {
+		return nil
+	}
+	c := jev.Nuevo(cfg.JEVURL, cfg.JEVModelo, time.Duration(cfg.TimeoutSeg)*time.Second)
+	if cfg.JEVTrazas != "" {
+		c.Trazas = &jev.RegistroTrazas{Ruta: cfg.JEVTrazas, Origen: cfg.JEVOrigen}
+	}
+	return c
 }
 
 func nuevoEmbebedor(cfg config.Config) (embed.Embebedor, error) {

@@ -4,13 +4,22 @@
 """
 from __future__ import annotations
 
+import json
+import os
+import sys
+import tempfile
 import unittest
+from pathlib import Path
 
 from trazas.trazas import (
+    RepositorioArchivo,
+    RepositorioMock,
+    RepositorioPostgres,
     RepositorioTrazas,
     crear_app,
     estadisticas,
     filtrar,
+    repo_desde_env,
     resumen,
 )
 
@@ -258,6 +267,82 @@ def datos_total() -> int:
 
     with open(RAIZ / "mock" / "trazas.json", encoding="utf-8") as f:
         return len(json.load(f)["trazas"])
+
+
+class TestRepositorioArchivo(unittest.TestCase):
+    """El JSONL que emite el cliente Go de Metrín."""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.ruta = Path(self.tmp.name) / "trazas.jsonl"
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def _escribir(self, *trazas):
+        with open(self.ruta, "a", encoding="utf-8") as f:
+            for t in trazas:
+                f.write(json.dumps(t, ensure_ascii=False) + "\n")
+
+    def test_inexistente_vacio(self):
+        self.assertEqual(RepositorioArchivo(self.ruta).listar(), [])
+
+    def test_listar_y_obtener(self):
+        t1 = {"id": "a1", "ts": "2026-10-01T10:00:00+00:00", "preguntas": []}
+        t2 = {"id": "b2", "ts": "2026-10-01T11:00:00+00:00", "preguntas": []}
+        self._escribir(t1, t2)
+        repo = RepositorioArchivo(self.ruta)
+        self.assertEqual(repo.listar(), [t1, t2])
+        self.assertEqual(repo.obtener("b2"), t2)
+        self.assertIsNone(repo.obtener("zzz"))
+
+    def test_revalida_al_cambiar(self):
+        self._escribir({"id": "a1", "ts": "t", "preguntas": []})
+        repo = RepositorioArchivo(self.ruta)
+        self.assertEqual(len(repo.listar()), 1)
+        self._escribir({"id": "a2", "ts": "t", "preguntas": []})
+        self.assertEqual(len(repo.listar()), 2)
+
+    def test_origen(self):
+        self.assertIn("archivo", RepositorioArchivo(self.ruta).origen())
+
+
+class TestRepoDesdeEnv(unittest.TestCase):
+    def test_mock_por_defecto(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            os.environ["TRAZAS_REPO"] = "mock"
+            try:
+                self.assertIsInstance(repo_desde_env(), RepositorioMock)
+            finally:
+                os.environ.pop("TRAZAS_REPO", None)
+
+    def test_archivo(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            ruta = str(Path(tmp) / "t.jsonl")
+            os.environ["TRAZAS_REPO"] = "archivo:" + ruta
+            try:
+                repo = repo_desde_env()
+                self.assertIsInstance(repo, RepositorioArchivo)
+                self.assertEqual(repo.ruta, Path(ruta))
+            finally:
+                os.environ.pop("TRAZAS_REPO", None)
+
+    def test_postgres_sin_dsn_falla(self):
+        os.environ["TRAZAS_REPO"] = "postgres"
+        os.environ.pop("TRAZAS_PG_DSN", None)
+        try:
+            with self.assertRaises(RuntimeError):
+                repo_desde_env()
+        finally:
+            os.environ.pop("TRAZAS_REPO", None)
+
+    def test_postgres_no_importa_psycopg_al_construir(self):
+        # El visor arranca sin psycopg: se importa al conectar.
+        sys_modules = __import__("sys").modules
+        self.assertNotIn("psycopg", sys_modules)
+        repo = RepositorioPostgres("postgresql://x/y")
+        self.assertNotIn("psycopg", sys_modules)
+        self.assertEqual(repo.origen(), "postgres")
 
 
 if __name__ == "__main__":

@@ -77,22 +77,33 @@ services:
       LLM_PROVIDER: ${LLM_PROVIDER:-ollama}
       MLX_URL: ${MLX_URL:-http://host.docker.internal:8080}
       RAG_MAX_DISTANCIA: "0.80"
+      # Decisiones JEV (vacío = sin decisiones; ver metrin/.env.example).
+      # JEV_TRAZAS apunta al volumen compartido con el visor de trazas.
+      JEV_URL: ${JEV_URL:-}
+      JEV_MODEL: ${JEV_MODEL:-}
+      JEV_TRAZAS: ${JEV_TRAZAS:-/srv/trazas/trazas.jsonl}
+      JEV_ORIGEN: ${JEV_ORIGEN:-metrin}
     volumes:
       - ./kb:/kb:ro
       - ./data:/datos:ro
       - metrin-datos:/srv/datos
+      - ./trazas/datos:/srv/trazas
     extra_hosts: ["host.docker.internal:host-gateway"]
     ports: ["127.0.0.1:${S10_PUERTO_METRIN:-4760}:4760"]
     logging: *logs
     restart: unless-stopped
 
-  # Visor de trazas de decisiones JEV (trazas/): hoy con mocks; el esquema
-  # Postgres (Fase 3/5) entra por la misma abstracción sin cambiar el API.
+  # Visor de trazas de decisiones JEV (trazas/): lee mocks, el JSONL
+  # que emite metrin (TRAZAS_REPO=archivo) o Postgres (esquema
+  # trazas/esquema.sql) por la misma abstracción; el API no cambia.
   trazas:
     <<: *base
     command: ["python", "trazas/trazas.py"]
     environment:
       TRAZAS_HOST: 0.0.0.0   # el visor escucha 127.0.0.1 por defecto
+      TRAZAS_REPO: ${TRAZAS_REPO:-mock}
+      TRAZAS_ARCHIVO: ${TRAZAS_ARCHIVO:-/app/trazas/datos/trazas.jsonl}
+      TRAZAS_PG_DSN: ${TRAZAS_PG_DSN:-}
     ports: ["127.0.0.1:${TRAZAS_PUERTO:-4761}:4761"]
 
   # Ollama dentro del compose (opcional; por defecto Metrín usa el de la Mac).

@@ -26,6 +26,13 @@ type Config struct {
 
 	S3Endpoint, S3Region, S3AccessKey, S3SecretKey, S3Bucket string
 
+	// Decisiones JEV (jeva.cpp, POST /v1/systemone). Vacío =
+	// sin decisiones JEV: el flujo actual no cambia.
+	JEVURL    string
+	JEVModelo string
+	JEVTrazas string // JSONL de trazas para el visor (vacío = no emitir)
+	JEVOrigen string // «origen» de la traza (p. ej. "reportes")
+
 	Puerto string
 }
 
@@ -77,6 +84,10 @@ func Leer() Config {
 		S3AccessKey:    os.Getenv("S3_ACCESS_KEY"),
 		S3SecretKey:    os.Getenv("S3_SECRET_KEY"),
 		S3Bucket:       def("S3_BUCKET", "rag-demo"),
+		JEVURL:         def("JEV_URL", ""),
+		JEVModelo:      def("JEV_MODEL", ""),
+		JEVTrazas:      def("JEV_TRAZAS", ""),
+		JEVOrigen:      def("JEV_ORIGEN", "metrin"),
 		Puerto:         def("RAG_PUERTO", "4760"),
 	}
 }

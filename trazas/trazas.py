@@ -72,6 +72,109 @@ class RepositorioMock(RepositorioTrazas):
         return "mocks (" + self.ruta.name + ")"
 
 
+class RepositorioArchivo(RepositorioTrazas):
+    """Lee un JSONL (una traza por línea): el archivo que emite
+    el cliente Go de Metrín (metrin/internal/jev) cuando decide
+    con jeva.cpp. Revalidación por mtime: trazas nuevas aparecen
+    sin reiniciar el visor."""
+
+    def __init__(self, ruta: Path):
+        self.ruta = ruta
+        self._trazas: list[dict] | None = None
+        self._mtime: float | None = None
+
+    def _cargar(self) -> list[dict]:
+        try:
+            m = self.ruta.stat().st_mtime
+        except FileNotFoundError:
+            return []
+        if self._trazas is None or m != self._mtime:
+            trazas: list[dict] = []
+            with open(self.ruta, encoding="utf-8") as f:
+                for linea in f:
+                    if linea.strip():
+                        trazas.append(json.loads(linea))
+            self._trazas = trazas
+            self._mtime = m
+        return self._trazas
+
+    def listar(self) -> list[dict]:
+        return self._cargar()
+
+    def obtener(self, traza_id: str) -> dict | None:
+        for t in self._cargar():
+            if t["id"] == traza_id:
+                return t
+        return None
+
+    def origen(self) -> str:
+        return "archivo (" + self.ruta.name + ")"
+
+
+class RepositorioPostgres(RepositorioTrazas):
+    """Lee las tablas traces + jev (trazas/esquema.sql, Fase 3/5)
+    y reconstruye el JSON anidado del visor con un JOIN.
+    psycopg se importa al conectar: el visor arranca sin él."""
+
+    def __init__(self, dsn: str):
+        self.dsn = dsn
+
+    def _conectar(self):
+        import psycopg  # noqa: PLC0415 — solo si TRAZAS_REPO=postgres
+
+        return psycopg.connect(self.dsn)
+
+    def _trazas(self, donde: str, args: tuple) -> list[dict]:
+        with self._conectar() as cn, cn.cursor() as cur:
+            cur.execute(
+                """
+                SELECT t.id, t.ts, t.modelo, t.origen, t.plantilla, t.ms,
+                       t.tokens_entrada, t.estado, t.correcta,
+                       j.pregunta_id, j.tipo, j.instrucciones, j.criterios, j.respuesta
+                FROM traces t
+                LEFT JOIN jev j ON j.trace_id = t.id
+                """ + donde + "\n                ORDER BY t.ts DESC, t.id DESC, j.pregunta_id",
+                args,
+            )
+            por_id: dict[str, dict] = {}
+            orden: list[str] = []
+            for (tid, ts, modelo, origen, plantilla, ms, tokens, estado,
+                 correcta, pid, tipo, instrucciones, criterios, respuesta) in cur.fetchall():
+                if tid not in por_id:
+                    por_id[tid] = {
+                        "id": tid,
+                        "ts": ts.isoformat() if hasattr(ts, "isoformat") else str(ts),
+                        "modelo": modelo or "",
+                        "origen": origen or "",
+                        "plantilla": plantilla,
+                        "ms": ms or 0,
+                        "tokens_entrada": tokens or 0,
+                        "estado": estado,
+                        "preguntas": [],
+                        "correcta": correcta,
+                    }
+                    orden.append(tid)
+                if pid is not None:
+                    por_id[tid]["preguntas"].append({
+                        "id": pid,
+                        "tipo": tipo,
+                        "instrucciones": instrucciones,
+                        "criterios": criterios,
+                        "respuesta": respuesta,
+                    })
+            return [por_id[i] for i in orden]
+
+    def listar(self) -> list[dict]:
+        return self._trazas("", ())
+
+    def obtener(self, traza_id: str) -> dict | None:
+        trazas = self._trazas("WHERE t.id = %s", (traza_id,))
+        return trazas[0] if trazas else None
+
+    def origen(self) -> str:
+        return "postgres"
+
+
 # ───────────────────────────── modelo ───────────────────────────────
 def confianza_pregunta(p: dict) -> float | None:
     """Confianza de una pregunta; noul no la trae (la da el JEV)."""
@@ -193,9 +296,30 @@ def estadisticas(trazas: list[dict]) -> dict:
 
 
 # ───────────────────────────── servicio ─────────────────────────────
+def repo_desde_env() -> RepositorioTrazas:
+    """Repositorio según TRAZAS_REPO:
+      mock (defecto) · archivo[:ruta] (JSONL de metrin) · postgres
+    El Postgres de Fase 3/5 entra por aquí sin cambiar el API."""
+    # Solo el modo va en minúsculas: la ruta del archivo es
+    # caso-sensible (p. ej. .../T/tmp... en macOS).
+    valor = os.environ.get("TRAZAS_REPO", "mock").strip()
+    modo, _, arg = valor.partition(":")
+    modo = modo.lower()
+    if modo == "archivo":
+        ruta = arg.strip() or os.environ.get(
+            "TRAZAS_ARCHIVO", str(RAIZ / "datos" / "trazas.jsonl"))
+        return RepositorioArchivo(Path(ruta))
+    if modo == "postgres":
+        dsn = os.environ.get("TRAZAS_PG_DSN", "").strip()
+        if not dsn:
+            raise RuntimeError("TRAZAS_REPO=postgres necesita TRAZAS_PG_DSN")
+        return RepositorioPostgres(dsn)
+    return RepositorioMock(RAIZ / "mock" / "trazas.json")
+
+
 def crear_app(repo: RepositorioTrazas | None = None) -> Flask:
     app = Flask(__name__, template_folder="templates")
-    repo = repo or RepositorioMock(RAIZ / "mock" / "trazas.json")
+    repo = repo or repo_desde_env()
 
     @app.get("/")
     def visor():
@@ -241,5 +365,5 @@ def crear_app(repo: RepositorioTrazas | None = None) -> Flask:
 
 if __name__ == "__main__":
     app = crear_app()
-    print(f"visor de trazas en http://{HOST}:{PUERTO} (datos: mocks)")
+    print(f"visor de trazas en http://{HOST}:{PUERTO}")
     app.run(host=HOST, port=PUERTO, debug=False)

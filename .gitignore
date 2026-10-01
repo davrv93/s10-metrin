@@ -19,6 +19,13 @@ metrin/datos/
 *.pjge
 *.gob
 
+# jeva.cpp: fork local de llama-server (175 MB, se clona aparte;
+# el cliente Go que lo habla vive en metrin/internal/jev)
+jeva.cpp/
+
+# trazas emitidas por metrin (runtime; el visor las lee con TRAZAS_REPO=archivo)
+trazas/datos/
+
 # binarios pesados o de terceros (se regeneran con s10kb.py / youtube.py / ui.py)
 entrada/
 data/pdf/

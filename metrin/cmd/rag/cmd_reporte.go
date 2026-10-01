@@ -6,11 +6,15 @@ import (
 	"fmt"
 	"strings"
 
+	"rag-go/internal/config"
 	"rag-go/internal/reportes"
 )
+
 // cmdReporte: `rag reporte "<pregunta>" [--bd ruta|url] [--plantilla id] [--sql]`.
 // Elige plantilla del catálogo aprobado, resuelve parámetros, valida y ejecuta.
-func cmdReporte(ctx context.Context, args []string) error {
+// Con JEV_URL, jeva.cpp decide si el reporte es seguro de ejecutar (noul)
+// y la decisión queda como traza en JEV_TRAZAS para el visor.
+func cmdReporte(ctx context.Context, cfg config.Config, args []string) error {
 	fs := flag.NewFlagSet("reporte", flag.ContinueOnError)
 	preguntaFS := fs.String("pregunta", "", "pregunta en lenguaje natural")
 	bd := fs.String("bd", "", "ruta SQLite o URL postgresql:// (read-only)")
@@ -62,6 +66,29 @@ func cmdReporte(ctx context.Context, args []string) error {
 
 	if err := reportes.Validar(p.SQL); err != nil {
 		return fmt.Errorf("plantilla %s no pasa la validación: %w", p.ID, err)
+	}
+	if jevC := nuevoClienteJEV(cfg); jevC != nil {
+		// Puerta de seguridad opt-in: la decisión (y su traza) queda
+		// registrada aunque el reporte luego no se ejecute.
+		estado := map[string]any{
+			"plantilla":  p.ID,
+			"titulo":     p.Titulo,
+			"sql":        p.SQL,
+			"parametros": params,
+		}
+		r, err := jevC.Noul(ctx, estado,
+			"¿Es seguro ejecutar este reporte contra la base de datos?",
+			map[string]any{
+				"true":  "Es un SELECT de solo lectura, sobre datos permitidos, sin exponer información sensible.",
+				"false": "Puede modificar datos, exponer información sensible o tocar tablas fuera del alcance del reporte.",
+			})
+		if err != nil {
+			return fmt.Errorf("decisión JEV de seguridad: %w", err)
+		}
+		fmt.Printf("JEV: P(seguro)=%.2f\n", r.Noul)
+		if r.Noul < 0.5 {
+			return fmt.Errorf("JEV considera inseguro ejecutar este reporte (P(true)=%.2f): no se ejecutó", r.Noul)
+		}
 	}
 	if *bd == "" {
 		return fmt.Errorf("falta --bd (ruta SQLite o URL postgresql://); la demo: data/demo_s10.db")
