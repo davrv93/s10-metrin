@@ -14,5 +14,9 @@
  "youtube": {
   "cada_horas": 168,
   "activo": true
+ },
+ "manuales-oficiales": {
+  "cada_horas": 168,
+  "activo": true
  }
 }

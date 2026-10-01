@@ -8,12 +8,12 @@ separado + `mlx_lm.server` (reversible, tal como el plan pide como alternativa).
 
 ## Secuencia de modelos (español, edge, ligero)
 
-| Situación | Pieza | Dónde corre | Estado |
-|---|---|---|---|
-| Embeddings ES | potion-es-int8 256d, 8.9 MB (ya vendored) | Go, en binario | en producción |
-| Clasificación intenciones | centroides 4 clases, 38 KB | Go, embarcado (`internal/clasificar`) | entrenado y medido |
-| Conversacional estilo | Qwen2.5-3B 4bit + LoRA 16 capas, adapter 25.4 MB | GPU Mac vía `mlx_lm.server` | entrenado y medido |
-| Hechos S10 | RAG sin cambios (fuentes mandan) | Go + índice | sin cambios |
+| Situación                 | Pieza                                            | Dónde corre                           | Estado             |
+| ------------------------- | ------------------------------------------------ | ------------------------------------- | ------------------ |
+| Embeddings ES             | potion-es-int8 256d, 8.9 MB (ya vendored)        | Go, en binario                        | en producción      |
+| Clasificación intenciones | centroides 4 clases, 38 KB                       | Go, embarcado (`internal/clasificar`) | entrenado y medido |
+| Conversacional estilo     | Qwen2.5-3B 4bit + LoRA 16 capas, adapter 25.4 MB | GPU Mac vía `mlx_lm.server`           | entrenado y medido |
+| Hechos S10                | RAG sin cambios (fuentes mandan)                 | Go + índice                           | sin cambios        |
 
 ## Dataset (solo tono, sin hechos S10)
 
@@ -94,8 +94,48 @@ clasificador existía pero nadie lo llamaba. Ahora `Preguntar` clasifica
 primero; social/ayuda/limite responden directo con estilo Metrín
 (`Modo: conversacional`, sin retrieval ni fallo registrado), trabajo sigue al
 RAG. Tres causas de fragilidad encontradas y medidas:
-1) caso/puntuación ("hola" vs "Hola"), 2) tildes ("como estas" vs "cómo estás"),
-3) centroides que diluyen cortesías → kNN k=1 sobre 83 ejemplos (38 KB
-embarcados). Normalización: minúsculas + pliegue áéíóúü + trim signos (ñ se
-conserva). Umbral 0.40, cero desvíos inseguros. 28 tests en verde.
-Verificado en docker: hola/jaja/gracias/me das risa/como estas → conversacional.
+
+1. caso/puntuación ("hola" vs "Hola"), 2) tildes ("como estas" vs "cómo estás"),
+2. centroides que diluyen cortesías → kNN k=1 sobre 83 ejemplos (38 KB
+   embarcados). Normalización: minúsculas + pliegue áéíóúü + trim signos (ñ se
+   conserva). Umbral 0.40, cero desvíos inseguros. 28 tests en verde.
+   Verificado en docker: hola/jaja/gracias/me das risa/como estas → conversacional.
+
+## 2026-10-01: orquestación observable y prioridad oficial
+
+La cifra histórica de 83 ejemplos de arriba ya no describe el artefacto actual:
+`metrin/internal/clasificar/defecto.json` contiene 115 ejemplos kNN en cuatro
+clases (`social`, `ayuda`, `limite`, `trabajo`), vinculados al fingerprint de
+`potion-es-int8`. La similitud coseno no es una probabilidad calibrada. En el
+arranque se desactiva el atajo conversacional si la huella no coincide con el
+embebedor configurado; la ruta restante es RAG.
+
+`rag.Respuesta` ahora expone `orquestacion`: intención conversacional, tipo de
+consulta técnica, ruta, clasificador y similitud observada. Los tipos técnicos
+(procedimiento, concepto, comparación, problema, seguimiento, aclaración e
+información directa) determinan instrucciones explícitas, pero no reemplazan
+retrieval. El JSON es aditivo; `modo` conserva su contrato anterior.
+
+La búsqueda realiza un pase específico con `source=s10-kb` y
+`confianza=oficial`; combina sus candidatos con el top-K general y Cortex, y
+elige por relevancia. Un procedimiento respaldado por sección oficial HTML ya
+puede activar el formato tutorial, aunque no sea un tutorial generado por
+Cortex. La metadata `seccion` se conserva hasta Go.
+
+### Evaluación disponible y límite actual
+
+- `data/preguntas/preguntas.jsonl`: 14.000 preguntas con etiquetas de tipo
+  generadas desde Cortex; útiles para experimento offline, pero no equivalen a
+  consultas reales de usuarios. Las 56.000 variantes son ruido ortográfico
+  para retrieval, no observaciones independientes para entrenamiento.
+- El reporte de 22/28 y 23/28 por split sigue siendo una evaluación pequeña;
+  no justifica afirmar alta confiabilidad ni entrenar otro modelo todavía.
+- Se regeneró la KB local: 1.314 filas, 466 fragmentos HTML por sección, 172
+  secciones oficiales y 51 secciones con pasos que contienen capturas. Las 268
+  rutas de captura comprobadas existen en disco. El HTML de `Manual de Gerencia
+de Proyectos` contiene solo el armazón del sitio, por lo que ese manual sigue
+  cayendo a trozos genéricos desde su `.md`; no debe contarse aún como cubierto
+  por la extracción por secciones. Los 60 HTML con muro son huérfanos sin fila
+  correspondiente en `data/paginas.jsonl`.
+- Verificación del cambio: `go test ./...` en `metrin/`, todos los paquetes
+  pasan.

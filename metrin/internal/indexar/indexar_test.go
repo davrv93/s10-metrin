@@ -282,3 +282,15 @@ func TestKBJSONLGuardaPasosConCapturas(t *testing.T) {
 		t.Error("una sección sin capturas no debe llevar pasos")
 	}
 }
+
+func TestKBJSONLConservaSeccionHTML(t *testing.T) {
+	dir := t.TempDir()
+	escribir(t, dir, "kb.jsonl", `{"id":"web-manual-s001","documento":"web-manual","manual":"Manual S10","titulo":"Manual S10 › Registro","seccion":"Registro","fuente":"https://documentacion.s10peru.com/manual/","confianza":"oficial","texto":"## Registro\nPaso documentado."}`)
+	docs, err := (KBJSONL{Ruta: filepath.Join(dir, "kb.jsonl")}).Listar(context.Background())
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(docs) != 1 || docs[0].Metadata["section"] != "Registro" {
+		t.Fatalf("la sección HTML debe persistir en metadata: %+v", docs)
+	}
+}

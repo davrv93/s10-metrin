@@ -62,6 +62,7 @@ type Respuesta struct {
 	Pregunta          string        `json:"pregunta"`
 	Respuesta         string        `json:"respuesta"`
 	Modo              string        `json:"modo"`
+	Plan              Orquestacion  `json:"orquestacion"`
 	Fuentes           []Fuente      `json:"fuentes"`
 	SinContexto       bool          `json:"sin_contexto"`
 	Motivo            string        `json:"motivo,omitempty"`
@@ -128,9 +129,11 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 	if o.K <= 0 {
 		o.K = 8
 	}
-	res := Respuesta{Pregunta: pregunta, Modo: "respuesta"}
+	plan := r.planificar(ctx, pregunta, o.Hilo)
+	res := Respuesta{Pregunta: pregunta, Modo: "respuesta", Plan: plan}
 	if esPreguntaSobreAciertos(pregunta) {
 		res.Modo = "conversacional"
+		res.Plan = Orquestacion{Intencion: "consulta_meta", TipoConsulta: "metricas", Ruta: rutaRegla, Clasificador: "regla_determinista"}
 		res.Respuesta = "No llevo un contador fiable de cuántas preguntas respondí correctamente hoy. Puedo revisar contigo las respuestas de esta conversación, pero no quiero inventar una cifra."
 		return res, nil
 	}
@@ -140,10 +143,10 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 	// clasificador falla, se sigue al RAG (ruta segura).
 	// Excepción: pregunta larga con "?" ("bien, oye, qué es optimiza?")
 	// casi siempre pide datos: va al RAG aunque huela a charla.
-	if r.Clasificador != nil && r.Emb != nil {
-		if in, _, err := r.Clasificador.Clasificar(ctx, r.Emb, pregunta); err == nil && (in == clasificar.Social || in == "limite") && !esPreguntaLarga(pregunta) {
-			return r.conversar(ctx, in, pregunta, o.Hilo)
-		}
+	if plan.Ruta == rutaConversacion {
+		conv, err := r.conversar(ctx, plan.Intencion, pregunta, o.Hilo)
+		conv.Plan = plan
+		return conv, err
 	}
 	// Hilo: la pregunta efectiva resuelve referencias contra la conversación.
 	efectiva := pregunta
@@ -151,8 +154,12 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 		if re, err := r.reescribir(ctx, o.Hilo, pregunta); err == nil && re != "" {
 			efectiva = re
 			res.PreguntaReescrita = re
+			if plan.TipoConsulta == "seguimiento" {
+				plan.TipoConsulta = tipoConsulta(re, nil)
+			}
 		}
 	}
+	res.Plan = plan
 	busqueda := efectiva
 	if esRegistroNuevoPresupuesto(efectiva) {
 		busqueda += " registro del nuevo presupuesto, escenario Datos Generales, Catálogo de Presupuestos, Nuevo SubItem, Datos adicionales, Adicionar"
@@ -175,13 +182,39 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 			}
 		}
 	}
-	// Segundo pase dinámico: conocimiento curado Cortex. Solo cuando la
-	// pregunta puede tocar s10-kb (sin filtro o con ese source).
+	// Recuperación explícita de manuales oficiales: sus secciones compiten con
+	// todos los candidatos, aunque no hayan entrado en el top-K general.
+	var oficiales []almacen.Resultado
+	if o.Filtro == nil || o.Filtro["source"] == "" || o.Filtro["source"] == indexar.FuenteS10KB {
+		filtroOficial := map[string]string{"source": indexar.FuenteS10KB, "confianza": "oficial"}
+		for k, v := range o.Filtro {
+			filtroOficial[k] = v
+		}
+		kOficial := max(o.K*2, 16)
+		oficiales, err = r.Almacen.Buscar(ctx, busqueda, kOficial, filtroOficial)
+		if err != nil {
+			return res, fmt.Errorf("buscar manuales oficiales: %w", err)
+		}
+		compacta := consultaCompacta(busqueda)
+		if compacta != strings.TrimSpace(busqueda) {
+			compactos, err := r.Almacen.Buscar(ctx, compacta, kOficial, filtroOficial)
+			if err != nil {
+				return res, fmt.Errorf("buscar términos oficiales: %w", err)
+			}
+			oficiales = append(oficiales, compactos...)
+		}
+		if secciones := seccionesManualOficiales(oficiales); len(secciones) > 0 {
+			oficiales = append(secciones, oficiales...)
+		}
+	}
+	// Segundo pase dinámico: conocimiento curado Cortex.
 	var cortex []almacen.Resultado
 	if o.Filtro == nil || o.Filtro["source"] == "" || o.Filtro["source"] == indexar.FuenteS10KB {
 		cortex, _ = r.Almacen.Buscar(ctx, busqueda, KCortex, map[string]string{"manual": ManualCortex})
 	}
-	candidatos := append(append([]almacen.Resultado(nil), trozos...), cortex...)
+	// En empates estables queda primero la evidencia oficial. Una fuente de
+	// terceros mucho más cercana todavía puede ganar por relevancia.
+	candidatos := append(append(append([]almacen.Resultado(nil), oficiales...), trozos...), cortex...)
 	seleccionados := seleccionarContexto(candidatos, r.MaxDistancia)
 	if esConsultaTiposPresupuesto(pregunta) {
 		if contexto := contextoTiposPresupuesto(cortex); contexto != nil {
@@ -205,6 +238,7 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 	}
 	if esRegistroNuevoPresupuesto(efectiva) && len(seleccionados) > 0 {
 		res.Modo = "tutorial"
+		res.Plan.TipoConsulta = "procedimiento"
 		res.Respuesta = "Para registrar un presupuesto nuevo:\n1. Ingresa al escenario Datos Generales.\n2. En el árbol del Catálogo de Presupuestos, haz clic derecho en el grupo y elige Nuevo SubItem. Si el grupo aún no existe, créalo primero con esa misma opción y pulsa Adicionar.\n3. Dentro del grupo, vuelve a elegir Nuevo SubItem y completa la ventana Presupuesto: descripción, cliente, ubicación, fecha, plazo, jornada diaria y moneda.\n4. Pulsa Adicionar.\n5. Haz doble clic en el presupuesto para trasladarlo al árbol de Datos Generales."
 		return res, nil
 	}
@@ -222,6 +256,8 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 			conv, err := r.conversar(ctx, "charla", pregunta, o.Hilo)
 			if err == nil {
 				conv.Motivo = "sin contexto útil; respuesta conversacional (" + res.Motivo + ")"
+				conv.Plan = res.Plan
+				conv.Plan.Ruta = "conversacion_fallback"
 				_ = r.registrarFallo(res)
 				return conv, nil
 			}
@@ -248,14 +284,13 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 		}
 		historial = h.String()
 	}
-	// Modo tutorial: pregunta how-to + contexto de guía. Solo entonces se
-	// responde con todos los pasos detallados, sin el tope de brevedad.
-	// Sin how-to (pregunta conceptual) el tutorial solo aporta contexto.
-	instruccion := "Responde directamente con los datos pertinentes del contexto. No menciones las etiquetas FUENTE ni describas cómo hiciste la búsqueda."
+	// La intención decide el formato; la evidencia recuperada sigue siendo la
+	// única fuente de hechos.
+	instruccion := instruccionPara(res.Plan.TipoConsulta)
 	if esRegistroNuevoPresupuesto(efectiva) {
 		res.Modo = "tutorial"
 		instruccion = "Explica cómo registrar un presupuesto nuevo en S10 usando únicamente los pasos y nombres de opciones que aparecen en el contexto. Distingue Datos Generales de Gerencia de Proyectos. No hables de cambiar dimensiones ni de permisos. Si algún dato no aparece en las fuentes, no lo inventes. Da pasos numerados y claros."
-	} else if esHowTo(efectiva) && esTutorial(seleccionados) {
+	} else if res.Plan.TipoConsulta == "procedimiento" && esTutorial(seleccionados) {
 		res.Modo = "tutorial"
 		instruccion = "Es una guía paso a paso: responde con TODOS los pasos necesarios, numerados, cada uno con la acción concreta (dónde hacer clic, qué llenar, qué validar). Sin límite de palabras; la brevedad no aplica aquí. Cada paso debe salir del contexto: prohibido inventar clics, botones o pasos de cierre como «haz clic en Guardar»."
 	}
@@ -529,16 +564,54 @@ func esHowTo(pregunta string) bool {
 
 // esTutorial: el contexto trae una guía paso a paso (documento de tutorial
 // entre los 3 mejores). Ahí la brevedad sobra: hay que detallar.
+func instruccionPara(tipo string) string {
+	base := "Responde directamente con los datos pertinentes del contexto. No menciones las etiquetas FUENTE ni describas cómo hiciste la búsqueda."
+	switch tipo {
+	case "concepto":
+		return "Define primero el concepto preguntado y explica para qué sirve solo si el contexto lo indica. No conviertas la respuesta en un tutorial ni agregues pasos no solicitados. " + base
+	case "comparacion":
+		return "Compara únicamente los elementos solicitados, separando sus diferencias y semejanzas cuando el contexto las respalde. Si falta un lado de la comparación, dilo. " + base
+	case "problema":
+		return "Explica solo las causas y comprobaciones que aparecen en el contexto. Si la fuente documenta una solución, ordénala en pasos; no supongas una causa ni una acción. " + base
+	case "seguimiento":
+		return "Responde al punto de seguimiento usando el hilo y el contexto recuperado. No repitas toda la respuesta anterior ni adivines a qué se refiere el usuario. " + base
+	case "aclaracion":
+		return "Aclara la respuesta de forma sencilla, usando solo el contexto. Si el referente no queda claro, pide una precisión breve. " + base
+	case "procedimiento":
+		return "Explica el procedimiento con hasta cinco pasos cortos respaldados por el contexto. No inventes botones, opciones ni pasos de cierre. " + base
+	default:
+		return "Da primero el dato solicitado y limita la respuesta a la evidencia recuperada. " + base
+	}
+}
+
 func esTutorial(trozos []almacen.Resultado) bool {
 	for i, t := range trozos {
 		if i >= 3 {
 			break
 		}
-		if strings.Contains(strings.ToLower(t.Metadata["document_id"]), "tutorial") {
+		if strings.Contains(strings.ToLower(t.Metadata["document_id"]), "tutorial") || esSeccionManualOficial(t.Metadata) {
 			return true
 		}
 	}
 	return false
+}
+
+func esSeccionManualOficial(metadata map[string]string) bool {
+	url := strings.ToLower(metadata["source_url"])
+	if metadata["confianza"] != "oficial" || !strings.Contains(url, "documentacion.s10peru.com") {
+		return false
+	}
+	return metadata["section"] != "" || strings.Contains(metadata["title"], " › ")
+}
+
+func seccionesManualOficiales(resultados []almacen.Resultado) []almacen.Resultado {
+	var out []almacen.Resultado
+	for _, resultado := range resultados {
+		if esSeccionManualOficial(resultado.Metadata) {
+			out = append(out, resultado)
+		}
+	}
+	return out
 }
 
 func palabras(s string) []string {

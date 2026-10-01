@@ -152,6 +152,72 @@ def secciones(html: str, pagina: str, titulo_pagina: str, fotos_por_url: dict[st
     return [p for s in salida for p in _partir(s)]
 
 
+def secciones_texto(texto: str) -> list[dict]:
+    """Fallback para páginas cuyo HTML guardado solo contiene el armazón del sitio.
+
+    `data/paginas/*.md` conserva a veces el cuerpo completo cuando el HTML de
+    `medios` no lo trae. Se parte por encabezados numerados, manteniendo su
+    jerarquía en el título; cada párrafo queda como paso y las capturas se
+    asocian a nivel de fuente si no hay posición HTML verificable.
+    """
+    numerado = re.compile(r"^\s*(\d+(?:\.\d+)+)\.?\s+(.+?)\s*$")
+    principal = re.compile(r"^\s*(\d+)\.?\s+(.+?)\s*$")
+    imperativos = (
+        "haga ", "haga clic", "ingrese ", "registre ", "seleccione ", "elija ",
+        "ubique ", "use ", "abra ", "pulse ", "presione ", "marque ",
+        "primero ", "segundo ", "luego ", "despues ", "después ", "se debe ",
+        "para ", "si ", "sí ", "no ",
+    )
+
+    def encabezado(linea: str) -> tuple[str, int] | None:
+        m = numerado.match(linea)
+        if m:
+            numero, titulo = m.group(1), m.group(2).strip()
+            if len(titulo) <= 140 and not titulo.endswith((".", ";", "?", "!")):
+                return f"{numero} {titulo}", numero.count(".") + 1
+            return None
+        m = principal.match(linea)
+        if not m:
+            return None
+        numero, titulo = m.group(1), m.group(2).strip()
+        if not titulo or len(titulo) > 120 or titulo.endswith((".", ";", "?", "!")):
+            return None
+        bajo = titulo.lower()
+        if titulo.isupper() or (titulo[0].isupper() and not bajo.startswith(imperativos)):
+            return f"{numero} {titulo}", 1
+        return None
+
+    salida: list[dict] = []
+    jerarquia: list[tuple[int, str]] = []
+    pasos: list[dict] = []
+    iniciado = False
+
+    def cerrar() -> None:
+        if pasos and jerarquia:
+            salida.append({"titulo": " › ".join(t for _, t in jerarquia), "pasos": list(pasos)})
+        pasos.clear()
+
+    for bruto in texto.splitlines():
+        linea = _limpio(bruto)
+        if not linea or linea.lower() in {"table of contents", "toggle"}:
+            continue
+        h = encabezado(linea)
+        if h:
+            cerrar()
+            titulo, nivel = h
+            jerarquia[:] = [(n, t) for n, t in jerarquia if n < nivel]
+            jerarquia.append((nivel, titulo))
+            iniciado = True
+            continue
+        if not iniciado:
+            continue
+        if pasos and pasos[-1]["texto"] == linea:
+            continue
+        pasos.append({"texto": linea, "fotos": []})
+    cerrar()
+    return [p for s in salida for p in _partir(s)]
+
+
 def _partir(seccion: dict) -> list[dict]:
     """Secciones largas en trozos que no cortan un paso (ni separan su captura)."""
     trozos, buf, largo = [], [], 0

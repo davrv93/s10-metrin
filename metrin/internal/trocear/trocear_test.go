@@ -76,6 +76,26 @@ func TestPrepararSoloLimpiaHTML(t *testing.T) {
 	}
 }
 
+func TestPrepararHTMLMantieneOrdenDeSeccionesYRechazaLogin(t *testing.T) {
+	html := `<h2>Sección 1</h2><p>Primero se valida el dato y luego se guarda el registro del cliente.</p>
+<h2>Sección 2</h2><p>Después se revisa la salida final para confirmar que todo quedó bien.</p>`
+	got := Preparar("manual.html", html)
+	if len(got) == 0 {
+		t.Fatal("esperaba trozos para un manual HTML")
+	}
+	if !strings.Contains(got[0], "Sección 1") {
+		t.Fatalf("primer bloque no conserva la sección: %q", got[0])
+	}
+	if !strings.Contains(got[len(got)-1], "Sección 2") {
+		t.Fatalf("último bloque no conserva la sección: %q", got[len(got)-1])
+	}
+
+	login := `<html><body><form><input name="usuario"><input name="password"></form><button>Iniciar sesión</button></body></html>`
+	if got := Preparar("login.html", login); len(got) != 0 {
+		t.Fatalf("la pantalla de acceso no debería indexarse: %v", got)
+	}
+}
+
 func TestEsTexto(t *testing.T) {
 	for _, r := range []string{"a.md", "b/c.TSX", "x.astro", "y.yml", "d.csv"} {
 		if !EsTexto(r) {

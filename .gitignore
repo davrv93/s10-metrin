@@ -42,4 +42,5 @@ data/*
 !data/programacion.json
 !data/lora/
 !data/lora/resumen.json
+!data/html/
 data/preguntas/crudo/

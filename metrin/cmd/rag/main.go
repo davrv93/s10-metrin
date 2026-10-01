@@ -274,6 +274,9 @@ func nuevoRAG(cfg config.Config) (*rag.RAG, error) {
 	clas, err := clasificar.CargarDefecto()
 	if err != nil {
 		logf("sin clasificador (%v): todo va al RAG", err)
+	} else if clas.HuellaEmb != "" && clas.HuellaEmb != e.Nombre() {
+		logf("clasificador incompatible (%s != %s): se desactiva y todo va al RAG", clas.HuellaEmb, e.Nombre())
+		clas = nil
 	}
 	return &rag.RAG{
 		Almacen:      a,

@@ -13,7 +13,7 @@ import (
 
 const FuenteS10KB = "s10-kb"
 
-const versionMetadatosKB = "kb-jsonl-metadata-v4"
+const versionMetadatosKB = "kb-jsonl-metadata-v5"
 
 type KBJSONL struct{ Ruta string }
 
@@ -22,6 +22,7 @@ type fragmentoKB struct {
 	Documento string `json:"documento"`
 	Manual    string `json:"manual"`
 	Titulo    string `json:"titulo"`
+	Seccion   string `json:"seccion"`
 	Video     string `json:"video"`
 	Pagina    int    `json:"pagina"`
 	Fuente    string `json:"fuente"`
@@ -117,6 +118,7 @@ func (o KBJSONL) Listar(ctx context.Context) ([]Documento, error) {
 			"document_id": frag.Documento,
 			"manual":      frag.Manual,
 			"title":       titulo,
+			"section":     strings.TrimSpace(frag.Seccion),
 			"page":        fmt.Sprint(frag.Pagina),
 			"source_url":  fuente,
 			"cita":        cita,

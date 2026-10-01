@@ -67,6 +67,29 @@ func TestPreguntaConContexto(t *testing.T) {
 	}
 }
 
+func TestRecuperaManualOficialAunqueNoEsteEnTopGeneral(t *testing.T) {
+	r, _, _ := preparar(t, "El manual confirma el dato.")
+	ctx := context.Background()
+	if err := r.Almacen.Reemplazar(ctx, "s10kb:manual-seccion", indexar.FuenteS10KB, "v1", []almacen.Trozo{{
+		ID: almacen.IDTrozo("s10kb:manual-seccion", 0), Texto: "El precio del plan está descrito en esta sección oficial.",
+		Metadata: map[string]string{
+			"source": indexar.FuenteS10KB, "document_id": "web-manual-presupuestos",
+			"title": "Manual de Presupuestos › Registro", "section": "Registro",
+			"source_url": "https://documentacion.s10peru.com/manual-de-presupuestos/",
+			"confianza":  "oficial", "cita": "Manual de Presupuestos › Registro",
+		},
+	}}); err != nil {
+		t.Fatal(err)
+	}
+	res, err := r.Preguntar(ctx, "¿qué precio tiene el Pro?", Opciones{K: 1})
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(res.Fuentes) == 0 || !strings.Contains(res.Fuentes[0].Cita, "Manual de Presupuestos") {
+		t.Fatalf("el pase oficial debe rescatar la sección manual incluso con K=1: %+v", res.Fuentes)
+	}
+}
+
 func TestSinContextoPorDistancia(t *testing.T) {
 	r, l, fallos := preparar(t, "no debería llamarse")
 	res, _ := r.Preguntar(context.Background(), "¿cómo es el formulario de contacto que tiene validaciones?", Opciones{})
@@ -290,6 +313,71 @@ func TestSeguimientosDeUbicacionSeReconocenComoGuia(t *testing.T) {
 		if !esHowTo(pregunta) {
 			t.Errorf("%q debería activar el modo de orientación", pregunta)
 		}
+	}
+}
+
+func TestTipoConsultaOrquestaIntencionesEnEspanol(t *testing.T) {
+	hilo := []Turno{{Rol: "usuario", Texto: "¿Qué es una partida de control?"}, {Rol: "asistente", Texto: "..."}}
+	casos := []struct {
+		pregunta string
+		hilo     []Turno
+		esperado string
+	}{
+		{"¿Cómo registro una partida?", nil, "procedimiento"},
+		{"¿Qué significa partida de control?", nil, "concepto"},
+		{"¿Cuál es la diferencia entre presupuesto venta y meta?", nil, "comparacion"},
+		{"No aparece el botón y sale un error", nil, "problema"},
+		{"¿Cuánto es el plazo indicado?", nil, "informacion_directa"},
+		{"¿Y eso dónde lo encuentro?", hilo, "seguimiento"},
+		{"No entiendo esa explicación", nil, "aclaracion"},
+	}
+	for _, caso := range casos {
+		if got := tipoConsulta(caso.pregunta, caso.hilo); got != caso.esperado {
+			t.Errorf("%q: tipo=%q, esperaba %q", caso.pregunta, got, caso.esperado)
+		}
+	}
+}
+
+func TestConsultaCompactaPreservaTerminosDelManual(t *testing.T) {
+	if got := consultaCompacta("¿Qué es la partida de control según el Manual de Gerencia de Proyectos?"); got != "partida control gerencia proyectos" {
+		t.Errorf("consulta compacta de Gerencia = %q", got)
+	}
+	if got := consultaCompacta("¿Cómo se factura un anticipo desde el módulo de Almacenes?"); got != "factura anticipo almacenes" {
+		t.Errorf("consulta compacta de Almacenes = %q", got)
+	}
+}
+
+func TestOrquestacionHaceVisibleLaRutaSegura(t *testing.T) {
+	r, _ := armarConRuta(t, "")
+	for _, caso := range []struct {
+		pregunta  string
+		ruta      string
+		intencion string
+	}{
+		{"hola", rutaConversacion, clasificar.Social},
+		{"¿qué precio tiene el Pro?", rutaRAG, clasificar.Trabajo},
+	} {
+		plan := r.planificar(context.Background(), caso.pregunta, nil)
+		if plan.Ruta != caso.ruta || plan.Intencion != caso.intencion {
+			t.Errorf("%q: plan=%+v; ruta/intención esperadas %q/%q", caso.pregunta, plan, caso.ruta, caso.intencion)
+		}
+		if plan.Clasificador == "" {
+			t.Errorf("%q: el plan no identifica el clasificador", caso.pregunta)
+		}
+	}
+}
+
+func TestSeccionManualOficialEsEvidenciaTutorial(t *testing.T) {
+	metadata := map[string]string{
+		"confianza": "oficial", "source_url": "https://documentacion.s10peru.com/manual-de-presupuestos/",
+		"section": "Registro del presupuesto",
+	}
+	if !esTutorial([]almacen.Resultado{{Metadata: metadata}}) {
+		t.Fatal("un fragmento de sección oficial debe habilitar respuesta procedimental detallada")
+	}
+	metadata["confianza"] = "tercero-sin-verificar"
+	if esTutorial([]almacen.Resultado{{Metadata: metadata}}) {
+		t.Fatal("una copia no oficial no debe marcarse como guía oficial")
 	}
 }
 

@@ -32,12 +32,12 @@ Para reproducir todo en otra máquina: [`REPRODUCCION.md`](REPRODUCCION.md)
 (dependencias exactas en [`requirements.txt`](requirements.txt), ya verificadas
 en venv limpio).
 
-| Paso | Salida |
-|---|---|
-| `descubrir` | `data/urls.json` (páginas y posts del sitemap) |
-| `rastrear` | `data/paginas/*.md`, `data/paginas.jsonl`, `data/enlaces.jsonl` |
-| `descargar --lote N` | `data/pdf/*.pdf`, `data/manifiesto.jsonl` (sha256, fuente, página) |
-| `indexar` | `kb/fragmentos.jsonl` (trozos de ~1500 caracteres con manual, página y fuente), `kb/documentos.json` |
+| Paso                 | Salida                                                                                               |
+| -------------------- | ---------------------------------------------------------------------------------------------------- |
+| `descubrir`          | `data/urls.json` (páginas y posts del sitemap)                                                       |
+| `rastrear`           | `data/paginas/*.md`, `data/paginas.jsonl`, `data/enlaces.jsonl`                                      |
+| `descargar --lote N` | `data/pdf/*.pdf`, `data/manifiesto.jsonl` (sha256, fuente, página)                                   |
+| `indexar`            | `kb/fragmentos.jsonl` (trozos de ~1500 caracteres con manual, página y fuente), `kb/documentos.json` |
 
 ### Base oficial (`s10kb.py oficial`)
 
@@ -85,6 +85,16 @@ la línea que explica ese paso (`![Captura del manual](fotos/…)`, que la pági
 dibuja dentro del ítem de la lista). Las capturas sin paso reconocible quedan en
 la galería de la fuente. Revisar una página: `python3 secciones_html.py data/html/<slug>.html <url>`.
 
+**Estado de validación (2026-10-01):** reindexé la KB local desde las fuentes
+descargadas: contiene 466 fragmentos HTML por sección, con 172 secciones
+oficiales y 51 secciones que ya llevan pasos/capturas asociadas. Las 268 rutas
+de captura comprobadas apuntan a archivos existentes. El manual de Gerencia de
+Proyectos aún cae al troceado genérico porque el HTML guardado no contiene su
+cuerpo; debe recuperarse/validarse antes de considerarlo cubierto por secciones.
+Hay además 60 HTML huérfanos con muro de miembros que no se enlazan desde
+`paginas.jsonl`. Ver la auditoría de fuentes y el flujo del router en
+[`docs/ORQUESTACION_METRIN.md`](docs/ORQUESTACION_METRIN.md).
+
 Todo es reanudable: cada paso salta lo ya hecho. Una petición por segundo por
 defecto (`S10_PAUSA`). `--sin-login` rastrea solo lo público, para probar.
 
@@ -101,12 +111,12 @@ fragmentos con minuto de inicio y enlace con timestamp:
 .venv/bin/python youtube.py transcribir --modelo small
 ```
 
-| Paso | Salida |
-|---|---|
-| `descubrir` | `data/yt/videos.txt` (canal + 12 playlists, deduplicado) |
-| `audio` | `data/yt/audio/{id}.m4a` (`bajados.txt` evita repetir) |
+| Paso          | Salida                                                               |
+| ------------- | -------------------------------------------------------------------- |
+| `descubrir`   | `data/yt/videos.txt` (canal + 12 playlists, deduplicado)             |
+| `audio`       | `data/yt/audio/{id}.m4a` (`bajados.txt` evita repetir)               |
 | `transcribir` | `data/yt/transcripciones/{id}.json` (segmentos con tiempos) y `.txt` |
-| `indexar` | `kb/fragmentos_yt.jsonl`, `kb/videos.json` |
+| `indexar`     | `kb/fragmentos_yt.jsonl`, `kb/videos.json`                           |
 
 Estado (2026-09-30): 38 videos, 23 con contenido hablado → 35 fragmentos. Los 15
 restantes son promos con música (sin habla), quedan marcados con 0 segmentos.
@@ -119,10 +129,10 @@ La KB final para búsqueda une `kb/fragmentos.jsonl` (web/PDF) y
 python3 cortex_a_kb.py   # tras editar .cortex/ o el banco data/preguntas/
 ```
 
-| Salida | Qué es |
-|---|---|
-| `kb/fragmentos_cortex.jsonl` | Un fragmento por nodo/ítem de `.cortex/` (Metrín lo trocea en 800 caracteres) |
-| `kb/fragmentos_faq.jsonl` | Una tarjeta por pregunta del banco: se **busca** por la pregunta y sus escrituras con errores (campo `busqueda`, lo único que se embebe) y **devuelve** el pasaje del nodo de Cortex que la responde (`texto`, ≤ 1200 caracteres, sin trocear) |
+| Salida                       | Qué es                                                                                                                                                                                                                                         |
+| ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `kb/fragmentos_cortex.jsonl` | Un fragmento por nodo/ítem de `.cortex/` (Metrín lo trocea en 800 caracteres)                                                                                                                                                                  |
+| `kb/fragmentos_faq.jsonl`    | Una tarjeta por pregunta del banco: se **busca** por la pregunta y sus escrituras con errores (campo `busqueda`, lo único que se embebe) y **devuelve** el pasaje del nodo de Cortex que la responde (`texto`, ≤ 1200 caracteres, sin trocear) |
 
 Las tarjetas existen porque el embebedor estático no encontraba el trozo correcto
 cuando la respuesta es una línea dentro de un nodo largo (p. ej. «¿Cómo llego a
@@ -143,14 +153,14 @@ pantallas del ERP, así que sirven de fuente sin depender del login del portal:
 .venv/bin/python ui.py render --esquema data/ui/esquema/<x>.json   # HTML interactivo
 ```
 
-| Salida | Qué es |
-|---|---|
-| `data/ui/capturas/` | frames por video (uno por segundo, sin repetidos) |
-| `data/ui/ocr/` | palabras con caja, confianza y jerarquía de tesseract |
-| `data/ui/vision/` | campos que ve el VLM (JSON forzado con `format`, no texto libre) |
-| `data/ui/esquema/` | fusión: etiqueta, tipo, valor y caja por campo |
-| `data/ui/pantallas.json` | cuántas pantallas distintas hay y qué capturas las forman |
-| `render/*.html` | formulario sobre la captura: arrastrar, corregir y exportar |
+| Salida                   | Qué es                                                           |
+| ------------------------ | ---------------------------------------------------------------- |
+| `data/ui/capturas/`      | frames por video (uno por segundo, sin repetidos)                |
+| `data/ui/ocr/`           | palabras con caja, confianza y jerarquía de tesseract            |
+| `data/ui/vision/`        | campos que ve el VLM (JSON forzado con `format`, no texto libre) |
+| `data/ui/esquema/`       | fusión: etiqueta, tipo, valor y caja por campo                   |
+| `data/ui/pantallas.json` | cuántas pantallas distintas hay y qué capturas las forman        |
+| `render/*.html`          | formulario sobre la captura: arrastrar, corregir y exportar      |
 
 **Por qué dos motores.** El OCR da la cadena exacta y las coordenadas; el VLM
 entiende qué es un campo y de qué tipo. Ninguno alcanza solo: la geometría pura
@@ -231,12 +241,12 @@ docker compose --profile llm up -d   # además Ollama dentro del compose
 docker compose --profile tareas run --rm herramientas s10kb.py indexar   # cualquier script
 ```
 
-| Servicio | Qué es | Imagen |
-|---|---|---|
-| `cortex` | Árbol de conocimiento (cortexboard), publicado con socat porque solo escucha en 127.0.0.1 | `Dockerfile` |
-| `admin` | Panel de administración | `Dockerfile` |
+| Servicio | Qué es                                                                                     | Imagen              |
+| -------- | ------------------------------------------------------------------------------------------ | ------------------- |
+| `cortex` | Árbol de conocimiento (cortexboard), publicado con socat porque solo escucha en 127.0.0.1  | `Dockerfile`        |
+| `admin`  | Panel de administración                                                                    | `Dockerfile`        |
 | `metrin` | Chat de Metrín (RAG en Go). Al arrancar indexa `kb/fragmentos*.jsonl` de forma incremental | `metrin/Dockerfile` |
-| `ollama` | Modelo local para las respuestas de Metrín (perfil `llm`) | `ollama/ollama` |
+| `ollama` | Modelo local para las respuestas de Metrín (perfil `llm`)                                  | `ollama/ollama`     |
 
 - El proyecto se monta en `/app`: lo que se agrega desde el panel queda en esta carpeta.
 - Metrín responde con Ollama. Por defecto usa el de la Mac (`host.docker.internal:11434`); con el perfil `llm`, pon `OLLAMA_URL=http://ollama:11434` en `.env` y baja el modelo: `docker compose exec ollama ollama pull qwen2.5-coder:7b`.
@@ -248,13 +258,13 @@ docker compose --profile tareas run --rm herramientas s10kb.py indexar   # cualq
 
 Servicio `programador` del compose (o `.venv/bin/python programador.py` fuera de Docker).
 
-| Fuente | Qué corre | Frecuencia por defecto |
-|---|---|---|
-| Portal de ayuda S10 | `s10kb.py rastrear --sin-login --refrescar` | cada día |
-| Manuales oficiales (miembros) | `s10kb.py oficial` (necesita la cuenta en `.env`) | cada semana |
-| PDF públicos de s10peru.com | `s10kb.py pdfs-publicos` → `descargar --sin-login` → `ocr --completo` | cada semana |
-| optimiza360.pe | `s10kb.py sitio optimiza360.pe` | cada semana |
-| YouTube (canal oficial) | `youtube.py todo` | cada semana |
+| Fuente                        | Qué corre                                                             | Frecuencia por defecto |
+| ----------------------------- | --------------------------------------------------------------------- | ---------------------- |
+| Portal de ayuda S10           | `s10kb.py rastrear --sin-login --refrescar`                           | cada día               |
+| Manuales oficiales (miembros) | `s10kb.py oficial` (necesita la cuenta en `.env`)                     | cada semana            |
+| PDF públicos de s10peru.com   | `s10kb.py pdfs-publicos` → `descargar --sin-login` → `ocr --completo` | cada semana            |
+| optimiza360.pe                | `s10kb.py sitio optimiza360.pe`                                       | cada semana            |
+| YouTube (canal oficial)       | `youtube.py todo`                                                     | cada semana            |
 
 - Frecuencia, pausa y "ejecutar ahora" se manejan desde el panel, sección **Programación** (`data/programacion.json`).
 - Cada corrida termina con `s10kb.py indexar`. Si hubo cambios, toca `kb/.actualizado` y Metrín recarga su índice solo.

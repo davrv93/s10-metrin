@@ -1,3 +1,4 @@
-.index/
+.index/*-shm
+.index/*-wal
 .secrets.yaml
 .sessions.json
