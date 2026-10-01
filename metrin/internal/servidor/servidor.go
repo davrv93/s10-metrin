@@ -25,6 +25,8 @@ type peticion struct {
 	Source   string      `json:"source"`
 	K        int         `json:"k"`
 	Hilo     []rag.Turno `json:"hilo"`
+	// Semilla: id de la pregunta validada que el usuario eligió en el menú.
+	Semilla string `json:"semilla"`
 }
 
 // Nuevo devuelve el manejador HTTP.
@@ -65,7 +67,7 @@ func Nuevo(r *rag.RAG, timeout time.Duration) http.Handler {
 			escribirJSON(w, http.StatusBadRequest, map[string]string{"error": "falta «pregunta»"})
 			return
 		}
-		o := rag.Opciones{K: p.K, Hilo: p.Hilo}
+		o := rag.Opciones{K: p.K, Hilo: p.Hilo, Semilla: p.Semilla}
 		if p.Source != "" {
 			o.Filtro = map[string]string{"source": p.Source}
 		}

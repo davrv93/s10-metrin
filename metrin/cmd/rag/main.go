@@ -299,6 +299,7 @@ func nuevoRAG(cfg config.Config) (*rag.RAG, error) {
 		Emb:          e,
 		Clasificador: clas,
 		MaxDistancia: cfg.MaxDistancia,
+		DistanciaSemilla: cfg.DistanciaSemilla,
 		RutaFallos:   filepath.Join(cfg.DirDatos, "sin_respuesta.jsonl"),
 	}, nil
 }

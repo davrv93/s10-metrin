@@ -23,6 +23,8 @@ type Config struct {
 	Temperatura    float64
 	TimeoutSeg     int
 	MaxDistancia   float64 // distancia coseno (1-sim) por encima de la cual no hay contexto
+	// DistanciaSemilla: hasta aquí una pregunta escrita cuenta como la validada.
+	DistanciaSemilla float64
 
 	S3Endpoint, S3Region, S3AccessKey, S3SecretKey, S3Bucket string
 
@@ -79,6 +81,7 @@ func Leer() Config {
 		Temperatura:    num("RAG_TEMPERATURA", 0.2),
 		TimeoutSeg:     int(num("RAG_TIMEOUT", 300)),
 		MaxDistancia:   num("RAG_MAX_DISTANCIA", 0.80),
+		DistanciaSemilla: num("RAG_DISTANCIA_SEMILLA", 0.15),
 		S3Endpoint:     def("S3_ENDPOINT", "http://localhost:4790"),
 		S3Region:       def("S3_REGION", "garage"),
 		S3AccessKey:    os.Getenv("S3_ACCESS_KEY"),

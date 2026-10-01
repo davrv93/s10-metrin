@@ -22,6 +22,10 @@ type Orquestacion struct {
 	Ruta                  string  `json:"ruta"`
 	Clasificador          string  `json:"clasificador"`
 	SimilitudClasificador float64 `json:"similitud_clasificador,omitempty"`
+	// Semilla: pregunta validada por JEV que guió la respuesta, elegida por
+	// el usuario o reconocida en lo que escribió.
+	Semilla          string  `json:"semilla,omitempty"`
+	DistanciaSemilla float64 `json:"distancia_semilla,omitempty"`
 }
 
 // planificar aplica primero el clasificador español local a la decisión de

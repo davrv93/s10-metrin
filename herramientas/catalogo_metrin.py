@@ -21,6 +21,7 @@ RAIZ = Path(__file__).resolve().parent.parent
 ARBOL = RAIZ / ".cortex" / "tree"
 BANCO = RAIZ / "data" / "preguntas" / "preguntas.jsonl"
 SALIDA = RAIZ / "kb" / "catalogo_metrin.json"
+SEMILLAS = RAIZ / "kb" / "semillas_metrin.json"  # preguntas validadas por JEV (semillas_a_kb.py)
 
 # Cómo se agrupan las ramas de Cortex en la UI. Una rama nueva que no esté aquí cae en «Más temas».
 GRUPOS = [
@@ -174,6 +175,10 @@ def submodulos_oficiales(banco_rama: dict[str, list]) -> dict:
         por_mod.setdefault(mod, []).append((f.stem, n, fuente, secciones))
     etiquetas = dict(MODULOS_OFICIALES)
     etiquetas["varios"] = "Varios"
+    validadas = {}
+    if SEMILLAS.exists():
+        for url, lista in json.loads(SEMILLAS.read_text(encoding="utf-8")).items():
+            validadas[url.rstrip("/")] = lista
     out = {}
     for mod, hijos in por_mod.items():
         pool, cursor_c, cursor_p = banco_rama.get(mod, []), 0, 0
@@ -185,7 +190,9 @@ def submodulos_oficiales(banco_rama: dict[str, list]) -> dict:
                 conceptos = [f"¿Qué es «{n['titulo']}» y qué incluye?"]
             temas.append({"id": f"manuales-oficiales/{stem}", "titulo": n["titulo"][:100],
                           "resumen": n["resumen"][:360], "fuente": fuente,
-                          "secciones": secciones, "conceptos": conceptos, "procedimientos": como})
+                          "secciones": secciones, "conceptos": conceptos, "procedimientos": como,
+                          # elegir una lleva su id a /ask: Metrín responde con su sección y capturas
+                          "validadas": validadas.get((fuente or "").rstrip("/"), [])})
         out[f"oficial-{mod}"] = {"id": f"oficial-{mod}", "nombre": etiquetas[mod],
                                  "titulo": f"Manuales oficiales: {etiquetas[mod]}", "tipo": "manuales",
                                  "resumen": "", "temas": temas}
@@ -271,6 +278,7 @@ def main() -> None:
              "total_preguntas_banco": total,
              "total_manuales": total_manuales, "total_secciones": total_secciones,
              "total_preguntas_indice": total_preguntas_indice,
+             "total_validadas": sum(len(t.get("validadas", [])) for t in manuales),
              "grupos": grupos, "destacadas": destacadas}
     SALIDA.parent.mkdir(exist_ok=True)
     SALIDA.write_text(json.dumps(datos, ensure_ascii=False, indent=1), encoding="utf-8")

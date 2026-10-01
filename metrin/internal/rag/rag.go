@@ -32,8 +32,11 @@ type RAG struct {
 	Emb          embed.Embebedor    // nil = sin ruta conversacional
 	Clasificador *clasificar.Modelo // nil = todo va al RAG
 	MaxDistancia float64            // si el mejor trozo está más lejos, no hay contexto
-	RutaFallos   string             // datos/sin_respuesta.jsonl
-	mu           sync.Mutex
+	// DistanciaSemilla: umbral para reconocer una pregunta validada en lo
+	// escrito (0 = distanciaSemilla).
+	DistanciaSemilla float64
+	RutaFallos       string // datos/sin_respuesta.jsonl
+	mu               sync.Mutex
 }
 
 // Fuente citada en una respuesta.
@@ -85,6 +88,9 @@ type Opciones struct {
 	K      int
 	Filtro map[string]string // source, type, ext
 	Hilo   []Turno           // últimos turnos; sirve para resolver referencias ("su", "eso")
+	// Semilla: id de una pregunta validada que el usuario eligió en el menú.
+	// Su sección del manual es la evidencia; no pasa por el clasificador.
+	Semilla string
 }
 
 // MarcaSinContexto es la frase que se pide al modelo cuando el contexto no
@@ -130,6 +136,10 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 		o.K = 8
 	}
 	plan := r.planificar(ctx, pregunta, o.Hilo)
+	elegida := r.semillaElegida(ctx, pregunta, o.Semilla)
+	if elegida != nil {
+		plan = planSemilla(*elegida, pregunta)
+	}
 	res := Respuesta{Pregunta: pregunta, Modo: "respuesta", Plan: plan}
 	if esPreguntaSobreAciertos(pregunta) {
 		res.Modo = "conversacional"
@@ -143,7 +153,7 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 	// clasificador falla, se sigue al RAG (ruta segura).
 	// Excepción: pregunta larga con "?" ("bien, oye, qué es optimiza?")
 	// casi siempre pide datos: va al RAG aunque huela a charla.
-	if plan.Ruta == rutaConversacion {
+	if plan.Ruta == rutaConversacion && elegida == nil {
 		conv, err := r.conversar(ctx, plan.Intencion, pregunta, o.Hilo)
 		conv.Plan = plan
 		return conv, err
@@ -216,6 +226,16 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 	// terceros mucho más cercana todavía puede ganar por relevancia.
 	candidatos := append(append(append([]almacen.Resultado(nil), oficiales...), trozos...), cortex...)
 	seleccionados := seleccionarContexto(candidatos, r.MaxDistancia)
+	if elegida != nil {
+		// Pregunta validada elegida: su sección es la respuesta (con sus capturas).
+		seleccionados = []almacen.Resultado{*elegida}
+	} else if s := semillaReconocida(seleccionados, r.DistanciaSemilla); s != nil {
+		res.Plan.Semilla = s.Metadata["semilla"]
+		res.Plan.DistanciaSemilla = redondear(s.Distancia)
+		if t := s.Metadata["semilla_tipo"]; t != "" && res.Plan.TipoConsulta != "seguimiento" {
+			res.Plan.TipoConsulta = t
+		}
+	}
 	if esConsultaTiposPresupuesto(pregunta) {
 		if contexto := contextoTiposPresupuesto(cortex); contexto != nil {
 			seleccionados = []almacen.Resultado{*contexto}

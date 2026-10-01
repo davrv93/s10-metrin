@@ -40,6 +40,11 @@ type fragmentoKB struct {
 	// (secciones_html.py). Viaja como JSON en metadata["pasos"] para que el
 	// servidor ponga cada captura debajo del paso de la respuesta.
 	Pasos json.RawMessage `json:"pasos"`
+	// Semilla: id de una pregunta validada por JEV (semillas_a_kb.py). Su
+	// tarjeta se busca por la pregunta y devuelve la sección del manual; Tipo
+	// es el tipo de consulta que el pipeline le asignó.
+	Semilla string `json:"semilla"`
+	Tipo    string `json:"tipo"`
 }
 
 func (KBJSONL) Fuente() string { return FuenteS10KB }
@@ -126,6 +131,10 @@ func (o KBJSONL) Listar(ctx context.Context) ([]Documento, error) {
 		}
 		if p := strings.TrimSpace(string(frag.Pasos)); p != "" && p != "null" && p != "[]" {
 			metadata["pasos"] = p
+		}
+		if id := strings.TrimSpace(frag.Semilla); id != "" {
+			metadata["semilla"] = id
+			metadata["semilla_tipo"] = strings.TrimSpace(frag.Tipo)
 		}
 		docs = append(docs, Documento{
 			Clave:    "s10kb:" + frag.ID,

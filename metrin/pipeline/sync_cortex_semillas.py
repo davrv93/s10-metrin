@@ -38,13 +38,13 @@ def sync() -> None:
     conn.row_factory = sqlite3.Row
     rows = conn.execute("""
         WITH primera_candidata AS (
-            SELECT nodo_id, modulo, seccion, nodo
+            SELECT nodo_id, modulo, seccion, nodo, MIN(url) AS url
             FROM metrin_preguntas_candidatas
             GROUP BY nodo_id
         )
         SELECT s.nodo_id, s.pregunta, s.respuesta_esperada, s.tipo,
                s.jev_claridad, s.jev_dificultad, s.jev_tipo_conf, s.rubricas, s.vb_at,
-               c.modulo, c.seccion, c.nodo
+               c.modulo, c.seccion, c.nodo, c.url
         FROM cortex_semillas s
         LEFT JOIN primera_candidata c ON c.nodo_id = s.nodo_id
         WHERE s.vb = 1
@@ -100,6 +100,9 @@ def sync() -> None:
             f"seccion: {yaml_str(primera['seccion'] or seccion)}",
             f"nombre: {yaml_str(primera['nodo'] or nombre)}",
             f"vb_at: {yaml_str(primera['vb_at'])}",
+            # semillas_a_kb.py ubica la sección (y sus capturas) por url + índice del nodo
+            f"url: {yaml_str(primera['url'] or '')}",
+            "status: active",
         ]
 
         body_lines = [
