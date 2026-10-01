@@ -233,10 +233,35 @@ genera igual el Markdown.
 - **Tutoriales**: pedir uno o correr la generación automática, y leerlos.
 - **Herramientas** y **Almacenamiento**: qué se usa y cuánto pesa cada carpeta.
 
+## Visor de trazas JEV (`trazas/`)
+
+Inspección de las decisiones que jeva.cpp toma por `POST /v1/systemone`
+(choice / score / noul): estado compartido, instrucciones y criterios de
+cada pregunta, la distribución de probabilidades cruda, confianza, latencia
+y tokens. Sirve para **evaluar** la capa de decisiones antes de cambiar
+instrucciones, criterios o modelo.
+
+```bash
+.venv/bin/python trazas/trazas.py        # http://127.0.0.1:4761 (sin auth, solo local)
+```
+
+- **Lista** con búsqueda libre y filtros por tipo, modelo y solo falladas;
+  **estadísticas** (confianza media/min/max, latencia p50/p95, aciertos,
+  histogramas de latencia y confianza); **detalle** por traza con las
+  barras de probabilidad de cada pregunta.
+- La capa de datos es una abstracción (`RepositorioTrazas`). Hoy lee
+  **mocks** (`trazas/mock/trazas.json`, 22 trazas del dominio obra/ERP
+  con casos de confianza casi plana y «no documentado»); con el esquema
+  de Postgres (Fase 3/5) entra `RepositorioPostgres` y el API no cambia.
+- `correcta` es el veredicto de la muestra etiquetada (true/false;
+  null = sin evaluar). Las trazas falladas son las que revisar primero.
+- Pruebas: `.venv/bin/python -m unittest trazas.test_trazas -v`
+- Puerto del host: `TRAZAS_PUERTO` (por defecto 4761).
+
 ## Todo junto con Docker
 
 ```bash
-docker compose up -d --build         # cortex :4748 · panel :4750 · Metrín :4760 (solo 127.0.0.1)
+docker compose up -d --build         # cortex :4748 · panel :4750 · Metrín :4760 · trazas :4761 (solo 127.0.0.1)
 docker compose --profile llm up -d   # además Ollama dentro del compose
 docker compose --profile tareas run --rm herramientas s10kb.py indexar   # cualquier script
 ```
@@ -246,13 +271,14 @@ docker compose --profile tareas run --rm herramientas s10kb.py indexar   # cualq
 | `cortex` | Árbol de conocimiento (cortexboard), publicado con socat porque solo escucha en 127.0.0.1  | `Dockerfile`        |
 | `admin`  | Panel de administración                                                                    | `Dockerfile`        |
 | `metrin` | Chat de Metrín (RAG en Go). Al arrancar indexa `kb/fragmentos*.jsonl` de forma incremental | `metrin/Dockerfile` |
+| `trazas` | Visor de trazas JEV (evaluación de decisiones; hoy con mocks)                              | `Dockerfile`        |
 | `ollama` | Modelo local para las respuestas de Metrín (perfil `llm`)                                  | `ollama/ollama`     |
 
 - El proyecto se monta en `/app`: lo que se agrega desde el panel queda en esta carpeta.
 - Metrín responde con Ollama. Por defecto usa el de la Mac (`host.docker.internal:11434`); con el perfil `llm`, pon `OLLAMA_URL=http://ollama:11434` en `.env` y baja el modelo: `docker compose exec ollama ollama pull qwen2.5-coder:7b`.
 - En Docker el OCR usa tesseract (español); en la Mac, Vision. Los tutoriales en Docker necesitan `ANTHROPIC_API_KEY` en `.env`.
 - Cortex rechaza peticiones con `Host` distinto de localhost: los servicios mandan `Host: localhost:4748` (`S10_CORTEX_HOST`).
-- Puertos del host configurables: `S10_PUERTO_CORTEX`, `S10_PUERTO_ADMIN`, `S10_PUERTO_METRIN`.
+- Puertos del host configurables: `S10_PUERTO_CORTEX`, `S10_PUERTO_ADMIN`, `S10_PUERTO_METRIN`, `TRAZAS_PUERTO`.
 
 ## Actualización programada (`programador.py`)
 

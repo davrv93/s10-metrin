@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Trazas JEV · S10 Conocimiento</title>
+<style>
+:root{color-scheme:light;--bg:#f5f7f6;--surface:#fff;--soft:#f1f5f3;--ink:#18231f;--ink2:#4c5b54;--muted:#7b8982;--line:#e1e8e3;--brand:#087b63;--brand-soft:#e6f4ee;--ok:#087b55;--warn:#9b6100;--bad:#b33b36;--r:10px}
+*{box-sizing:border-box}
+body{margin:0;font:14px/1.55 Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--ink)}
+a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}
+button{font:inherit}
+main{max-width:1180px;margin:0 auto;padding:0 28px 48px;min-width:0}
+.topbar{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line);margin-bottom:26px;max-width:1180px;margin-left:auto;margin-right:auto;padding:0 28px}
+.page-heading h1{margin:0;font-size:21px;line-height:1.25;font-weight:680}
+.page-heading p{margin:4px 0 0;color:var(--muted);font-size:12px}
+h2{font-size:15px;line-height:1.35;margin:26px 0 10px;font-weight:650}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px}
+.num{font-size:25px;line-height:1.2;font-weight:700}
+.et{color:var(--ink2);font-size:12px;margin-top:4px}
+.sub{color:var(--muted);font-size:11px;margin-top:2px}
+.chip{display:inline-flex;align-items:center;min-height:22px;padding:2px 8px;border-radius:5px;font-size:11px;background:var(--brand-soft);color:#17624f;white-space:nowrap}
+.chip.ok{background:#e7f5ed;color:var(--ok)}
+.chip.warn{background:#fff4dc;color:var(--warn)}
+.chip.mal{background:#fae9e7;color:var(--bad)}
+.chip.neutra{background:var(--soft);color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:36px;background:var(--brand);color:#fff;border:1px solid var(--brand);border-radius:7px;padding:7px 12px;font-size:12px;font-weight:650;cursor:pointer}
+.btn:hover{background:#06664f;color:#fff;text-decoration:none}
+.btn.sec{background:var(--surface);color:var(--ink2);border-color:var(--line)}
+.btn.sec:hover{background:var(--soft)}
+input[type=text],select{font:inherit;font-size:13px;padding:8px 10px;border:1px solid var(--line);border-radius:7px;background:var(--surface);color:var(--ink);min-height:36px}
+input:focus,select:focus{outline:2px solid #087b6330;border-color:var(--brand)}
+form.fila{display:flex;gap:8px;align-items:end;flex-wrap:wrap}
+form.fila>div{display:flex;flex-direction:column;gap:4px}
+form.fila label{font-size:11px;color:var(--muted)}
+form.fila input[type=text]{width:260px}
+.casilla{display:flex;align-items:center;gap:7px;min-height:36px;font-size:13px;color:var(--ink2);cursor:pointer}
+table{width:100%;border-collapse:collapse;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;font-size:13px}
+th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{background:var(--soft);font-weight:650;color:var(--ink2);font-size:10px;text-transform:uppercase;letter-spacing:.06em}
+tr:last-child td{border-bottom:0}
+tbody tr{cursor:pointer}
+tbody tr:hover{background:var(--soft)}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px}
+.muted{color:var(--muted)}
+.aviso{background:#edf5f1;border:1px solid #d8e9e0;border-radius:8px;padding:12px 14px;color:#315949}
+pre{background:#1a2721;color:#e2eae5;padding:14px;border-radius:8px;overflow:auto;font-size:12px;max-height:420px;white-space:pre-wrap}
+.dos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.pregunta{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;margin-bottom:12px}
+.pregunta>header{display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap}
+.pregunta h3{margin:0;font-size:14px;font-weight:650}
+.instrucciones{font-size:13px;color:var(--ink);margin:0 0 10px}
+.criterios{margin:0 0 12px;padding-left:18px;color:var(--ink2);font-size:12px}
+.criterios li{margin:2px 0}
+.dist-fila{display:grid;grid-template-columns:minmax(90px,180px) 1fr 52px;gap:10px;align-items:center;padding:3px 0}
+.dist-op{font-size:12px;color:var(--ink2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.dist-pista{height:14px;background:var(--soft);border-radius:4px;overflow:hidden}
+.dist-barra{height:100%;background:var(--brand);border-radius:4px;min-width:2px}
+.dist-fila.gana .dist-barra{background:var(--ok)}
+.dist-fila.gana .dist-op{color:var(--ink);font-weight:650}
+.dist-n{font-size:12px;color:var(--muted);text-align:right}
+.grafico{display:grid;gap:6px}
+.grafico-fila{display:grid;grid-template-columns:76px 1fr 40px;gap:10px;align-items:center}
+.grafico-et{font-size:11px;color:var(--ink2);text-align:right}
+.grafico-pista{height:16px;background:var(--soft);border-radius:4px;overflow:hidden}
+.grafico-barra{height:100%;background:var(--brand);border-radius:4px;min-width:2px}
+.grafico-n{font-size:12px;color:var(--muted)}
+.paginacion{display:flex;gap:8px;align-items:center;justify-content:center;margin-top:14px}
+.vacio{padding:36px;text-align:center;color:var(--muted)}
+.kv{display:grid;grid-template-columns:150px 1fr;gap:4px 12px;font-size:13px}
+.kv dt{color:var(--muted)}
+.kv dd{margin:0}
+@media(max-width:780px){
+main,.topbar{padding-left:16px;padding-right:16px}
+.dos{grid-template-columns:1fr}
+form.fila input[type=text]{width:100%}
+.dist-fila{grid-template-columns:minmax(60px,110px) 1fr 44px}
+.kv{grid-template-columns:1fr}
+.page-heading p{max-width:52vw;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="page-heading">
+    <h1>Trazas de decisiones JEV</h1>
+    <p>jeva.cpp · POST /v1/systemone &nbsp;·&nbsp; datos: <span id="origen">…</span></p>
+  </div>
+</header>
+<main>
+  <section aria-label="Estadísticas">
+    <div class="grid" id="tarjetas"></div>
+    <div class="dos" style="margin-top:10px">
+      <div class="card"><h2 style="margin-top:0">Latencia por traza (ms)</h2><div class="grafico" id="grafico-latencia"></div></div>
+      <div class="card"><h2 style="margin-top:0">Confianza por pregunta</h2><div class="grafico" id="grafico-confianza"></div></div>
+    </div>
+    <p class="muted" id="desglose" style="margin-top:12px"></p>
+  </section>
+
+  <section aria-label="Filtros">
+    <h2>Trazas</h2>
+    <form class="fila" id="filtros">
+      <div><label for="q">Buscar</label><input type="text" id="q" name="q" placeholder="estado, instrucciones, criterios…" value=""></div>
+      <div><label for="tipo">Tipo</label>
+        <select id="tipo" name="tipo">
+          <option value="">todos</option><option value="choice">choice</option>
+          <option value="score">score</option><option value="noul">noul</option>
+        </select></div>
+      <div><label for="modelo">Modelo</label><select id="modelo" name="modelo"><option value="">todos</option></select></div>
+      <label class="casilla"><input type="checkbox" id="fallidas" name="fallidas" value="1"> solo falladas</label>
+      <button class="btn" type="submit">Filtrar</button>
+      <button class="btn sec" type="button" id="limpiar">Limpiar</button>
+    </form>
+  </section>
+
+  <section id="lista-seccion" aria-label="Lista de trazas">
+    <div id="lista"></div>
+    <div class="paginacion" id="paginacion"></div>
+  </section>
+
+  <section id="detalle-seccion" hidden aria-label="Detalle de traza">
+    <button class="btn sec" type="button" id="volver">← Volver a la lista</button>
+    <div id="detalle" style="margin-top:14px"></div>
+  </section>
+</main>
+<script>
+"use strict";
+const $ = (s) => document.querySelector(s);
+const LIMITE = 50;
+
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) =>
+  ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+async function json(url) {
+  const r = await fetch(url);
+  if (!r.ok) throw new Error("HTTP " + r.status);
+  return r.json();
+}
+
+function fmtTs(ts) {
+  const d = new Date(ts);
+  return isNaN(d) ? esc(ts) : d.toLocaleString("es", { dateStyle: "short", timeStyle: "short" });
+}
+
+function chipConfianza(c) {
+  if (c == null) return '<span class="chip neutra">sin confianza</span>';
+  const clase = c >= 0.6 ? "ok" : c >= 0.4 ? "warn" : "mal";
+  return `<span class="chip ${clase}" title="Confianza JEV = 1 − H(p)/log(N)">${Math.round(c * 100)}%</span>`;
+}
+
+function chipCorrecta(c) {
+  if (c === true) return '<span class="chip ok">correcta</span>';
+  if (c === false) return '<span class="chip mal">incorrecta</span>';
+  return '<span class="chip neutra">sin evaluar</span>';
+}
+
+function params() {
+  const p = new URLSearchParams();
+  const q = $("#q").value.trim();
+  if (q) p.set("q", q);
+  const tipo = $("#tipo").value;
+  if (tipo) p.set("tipo", tipo);
+  const modelo = $("#modelo").value;
+  if (modelo) p.set("modelo", modelo);
+  if ($("#fallidas").checked) p.set("fallidas", "1");
+  return p;
+}
+
+// ─────────────────────── estadísticas ───────────────────────
+function renderTarjetas(e) {
+  const lat = e.latencia || {};
+  const ac = e.aciertos || {};
+  $("#tarjetas").innerHTML = [
+    [e.total, "trazas", `modelos: ${Object.keys(e.por_modelo || {}).length} · tipos: ${Object.keys(e.por_tipo || {}).length}`],
+    [e.confianza_media == null ? "—" : Math.round(e.confianza_media * 100) + "%", "confianza media",
+      e.confianza_media == null ? "sin preguntas con confianza" : `min ${Math.round((e.confianza_min ?? 0) * 100)}% · max ${Math.round((e.confianza_max ?? 0) * 100)}%`],
+    [lat.p95 ?? 0, "latencia p95 (ms)", `media ${lat.media ?? 0} ms · p50 ${lat.p50 ?? 0} ms`],
+    [ac.pct == null ? "—" : ac.pct + "%", "aciertos", `${ac.n ?? 0}/${ac.total ?? 0} evaluadas`],
+  ].map(([n, t, s]) => `<div class="card"><div class="num">${esc(n)}</div><div class="et">${esc(t)}</div><div class="sub">${esc(s)}</div></div>`).join("");
+}
+
+function renderGrafico(el, cubetas) {
+  const max = Math.max(1, ...cubetas.valores);
+  el.innerHTML = cubetas.etiquetas.map((et, i) => {
+    const v = cubetas.valores[i];
+    return `<div class="grafico-fila"><span class="grafico-et">${esc(et)}</span>` +
+      `<div class="grafico-pista"><div class="grafico-barra" style="width:${Math.round(100 * v / max)}%"></div></div>` +
+      `<span class="grafico-n">${v}</span></div>`;
+  }).join("") || '<span class="muted">Sin datos</span>';
+}
+
+function renderEstadisticas(e) {
+  renderTarjetas(e);
+  renderGrafico($("#grafico-latencia"), e.latencia_cubetas);
+  renderGrafico($("#grafico-confianza"), e.confianza_cubetas);
+  const pm = Object.entries(e.por_modelo || {}).sort((a, b) => b[1] - a[1])
+    .map(([m, n]) => `${esc(m)}: ${n}`).join(" · ");
+  const pt = Object.entries(e.por_tipo || {}).sort((a, b) => b[1] - a[1])
+    .map(([t, n]) => `${esc(t)}: ${n}`).join(" · ");
+  $("#desglose").textContent = (pm ? "Por modelo — " + pm + ". " : "") + (pt ? "Por tipo — " + pt + "." : "");
+}
+
+// ─────────────────────── lista ───────────────────────
+function renderLista(lista) {
+  if (!lista.trazas.length) {
+    $("#lista").innerHTML = '<div class="card vacio">Sin trazas con esos filtros.</div>';
+    $("#paginacion").innerHTML = "";
+    return;
+  }
+  const filas = lista.trazas.map((t) => `<tr data-id="${esc(t.id)}" title="${esc(t.id)}">
+    <td><div class="mono">${esc(t.id.slice(0, 12))}</div><div style="margin-top:2px">${esc(t.titulo)}</div></td>
+    <td class="muted" style="white-space:nowrap">${fmtTs(t.ts)}</td>
+    <td>${esc(t.modelo)}</td>
+    <td>${esc(t.origen)}</td>
+    <td>${t.tipos.map((x) => `<span class="chip">${esc(x)}</span>`).join(" ")} <span class="muted">×${t.n_preguntas}</span></td>
+    <td>${chipConfianza(t.confianza)}</td>
+    <td>${chipCorrecta(t.correcta)}</td>
+    <td class="muted" style="white-space:nowrap">${t.ms} ms</td>
+  </tr>`).join("");
+  $("#lista").innerHTML = `<table><thead><tr><th>Traza</th><th>Fecha</th><th>Modelo</th><th>Origen</th><th>Preguntas</th><th>Confianza</th><th>Veredicto</th><th>Latencia</th></tr></thead><tbody>${filas}</tbody></table>`;
+  $("#lista").querySelectorAll("tr[data-id]").forEach((tr) =>
+    tr.addEventListener("click", () => abrirTraza(tr.dataset.id)));
+
+  const total = lista.total, off = lista.offset, lim = lista.limite;
+  const paginas = Math.max(1, Math.ceil(total / lim));
+  const actual = Math.floor(off / lim) + 1;
+  $("#paginacion").innerHTML =
+    `<button class="btn sec" id="pag-ant" ${actual <= 1 ? "disabled" : ""}>← Anterior</button>` +
+    `<span class="muted">página ${actual} de ${paginas} (${total} trazas)</span>` +
+    `<button class="btn sec" id="pag-sig" ${off + lim >= total ? "disabled" : ""}>Siguiente →</button>`;
+  const base = params();
+  $("#pag-ant")?.addEventListener("click", () => { base.set("offset", Math.max(0, off - lim)); cargar(base); });
+  $("#pag-sig")?.addEventListener("click", () => { base.set("offset", off + lim); cargar(base); });
+}
+
+async function cargar(p) {
+  const qs = p.toString();
+  const [est, modelos, lista] = await Promise.all([
+    json("/api/estadisticas?" + qs), json("/api/modelos"), json("/api/trazas?" + qs + (qs ? "&" : "?") + "limite=" + LIMITE + "&offset=" + (p.get("offset") || 0)),
+  ]);
+  renderEstadisticas(est);
+  const sel = $("#modelo");
+  const actual = sel.value;
+  sel.innerHTML = '<option value="">todos</option>' + modelos.modelos.map((m) => `<option value="${esc(m)}"${m === actual ? " selected" : ""}>${esc(m)}</option>`).join("");
+  renderLista(lista);
+}
+
+// ─────────────────────── detalle ───────────────────────
+function estadoHTML(estado) {
+  if (estado == null) return '<p class="muted">Sin estado.</p>';
+  if (typeof estado === "string") return `<pre>${esc(estado)}</pre>`;
+  if (Array.isArray(estado)) return "<ol>" + estado.map((p) => `<li>${esc(p)}</li>`).join("") + "</ol>";
+  const partes = [];
+  if (estado.mensaje) partes.push(`<p style="font-size:14px;margin:0 0 10px">${esc(estado.mensaje)}</p>`);
+  const resto = Object.entries(estado).filter(([k]) => k !== "mensaje");
+  if (resto.length) partes.push("<dl class='kv'>" + resto.map(([k, v]) =>
+    `<dt>${esc(k)}</dt><dd>${typeof v === "object" ? esc(JSON.stringify(v)) : esc(v)}</dd>`).join("") + "</dl>");
+  return partes.join("") || esc(JSON.stringify(estado));
+}
+
+function criteriosHTML(c) {
+  if (c == null) return "";
+  if (Array.isArray(c)) return "<ol class='criterios'>" + c.map((x) => `<li>${esc(x)}</li>`).join("") + "</ol>";
+  if (typeof c === "object") return "<ul class='criterios'>" + Object.entries(c)
+    .map(([k, v]) => `<li><strong>${esc(k)}</strong> — ${esc(v)}</li>`).join("") + "</ul>";
+  return `<p class='criterios'>${esc(c)}</p>`;
+}
+
+function instruccionesHTML(ins) {
+  if (typeof ins === "string") return esc(ins);
+  if (ins && typeof ins === "object" && ins.texto) return esc(ins.texto);
+  return esc(JSON.stringify(ins));
+}
+
+function distHTML(resp) {
+  const probs = resp.probabilidades || {};
+  const entradas = Object.entries(probs);
+  if (!entradas.length) return '<p class="muted">Sin distribución.</p>';
+  if (resp.tipo === "noul") {
+    const t = resp.noul ?? 0;
+    return distFilas([["true (P)", t], ["false (1−P)", 1 - t]], null, true);
+  }
+  // choice: gana la opción elegida; score: el nivel más cercano al score esperado.
+  let gana = resp.choice;
+  if (resp.tipo === "score" && typeof resp.score === "number") {
+    gana = String(Math.round(resp.score));
+  }
+  return distFilas(entradas, gana, false, resp);
+}
+
+function distFilas(entradas, gana, parejas, resp) {
+  return entradas.map(([op, p]) => {
+    const es = gana != null && op === gana;
+    const et = resp && resp.tipo === "score" && resp.legend && resp.legend[op] != null
+      ? `${op}. ${resp.legend[op]}` : op;
+    return `<div class="dist-fila${es ? " gana" : ""}" title="${esc(et)}">` +
+      `<span class="dist-op">${esc(et)}</span>` +
+      `<div class="dist-pista"><div class="dist-barra" style="width:${Math.round(100 * p)}%"></div></div>` +
+      `<span class="dist-n">${Math.round(100 * p)}%</span></div>`;
+  }).join("");
+}
+
+function preguntaHTML(p) {
+  const r = p.respuesta || {};
+  let resumen = "";
+  if (r.tipo === "choice") resumen = `<strong>${esc(r.choice)}</strong>`;
+  else if (r.tipo === "score") resumen = `score esperado <strong>${esc(r.score)}</strong>`;
+  else if (r.tipo === "noul") resumen = `P(true) <strong>${esc(r.noul)}</strong>`;
+  const conf = r.confianza != null ? chipConfianza(r.confianza) : "";
+  return `<article class="pregunta">
+    <header><span class="chip">${esc(p.id)}</span><span class="chip ${p.tipo === "choice" ? "" : p.tipo === "score" ? "warn" : "neutra"}">${esc(p.tipo)}</span>${conf}
+      <span class="muted" style="margin-left:auto">${p.ms ?? "?"} ms</span></header>
+    <p class="instrucciones">${instruccionesHTML(p.instrucciones)}</p>
+    ${criteriosHTML(p.criterios)}
+    <div>${resumen} <span class="muted" style="margin-left:8px">respuesta del servidor (ensamblada en prefill)</span></div>
+    <div style="margin-top:8px">${distHTML(r)}</div>
+  </article>`;
+}
+
+function renderDetalle(t) {
+  const badges = [
+    `<span class="chip">${esc(t.modelo)}</span>`,
+    `<span class="chip">${esc(t.origen)}</span>`,
+    t.plantilla ? `<span class="chip neutra">plantilla ${esc(t.plantilla)}</span>` : "",
+    chipCorrecta(t.correcta),
+  ].join(" ");
+  $("#detalle").innerHTML = `
+  <div class="card">
+    <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+      <span class="mono" style="font-size:13px">${esc(t.id)}</span>${badges}
+      <span class="muted" style="margin-left:auto">${fmtTs(t.ts)} · ${t.ms} ms · ${t.tokens_entrada ?? "?"} tokens de entrada</span>
+    </div>
+  </div>
+  <h2>Estado compartido</h2>
+  <div class="card">${estadoHTML(t.estado)}</div>
+  <h2>Preguntas (${(t.preguntas || []).length})</h2>
+  ${(t.preguntas || []).map(preguntaHTML).join("") || '<p class="muted">Sin preguntas.</p>'}
+  ${t.nota ? `<h2>Nota de evaluación</h2><div class="aviso">${esc(t.nota)}</div>` : ""}`;
+}
+
+let abriendo = null;
+async function abrirTraza(id, desdeHash) {
+  if (abriendo === id) return;
+  abriendo = id;
+  try {
+    const t = await json("/api/trazas/" + encodeURIComponent(id));
+    renderDetalle(t);
+    $("#lista-seccion").hidden = true;
+    $("#detalle-seccion").hidden = false;
+    if (!desdeHash) location.hash = "traza/" + id;
+    window.scrollTo({ top: 0 });
+  } catch {
+    $("#detalle").innerHTML = '<div class="aviso" style="border-color:#e8c9c5;background:#fae9e7;color:#7c2d28">Traza no encontrada.</div>';
+  } finally {
+    abriendo = null;
+  }
+}
+
+function volverALista() {
+  $("#lista-seccion").hidden = false;
+  $("#detalle-seccion").hidden = true;
+}
+
+$("#filtros").addEventListener("submit", (e) => { e.preventDefault(); cargar(params()); });
+$("#limpiar").addEventListener("click", () => {
+  $("#filtros").reset();
+  cargar(params());
+});
+$("#volver").addEventListener("click", () => {
+  if (location.hash) location.hash = "";
+  else volverALista();
+});
+window.addEventListener("hashchange", () => {
+  const m = location.hash.match(/^#traza\/(.+)$/);
+  if (m) abrirTraza(decodeURIComponent(m[1]), true);
+  else volverALista();
+});
+
+cargar(new URLSearchParams());
+</script>
+</body>
+</html>

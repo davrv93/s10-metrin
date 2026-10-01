@@ -6,6 +6,7 @@
 #
 # Puertos solo en 127.0.0.1 del host:
 #   4748 Cortex (tablero y API) · 4750 panel admin · 4760 chat de Metrín
+#   4761 visor de trazas JEV
 #
 # El código y los datos viven en esta carpeta y se montan en /app: lo que se agrega
 # desde el panel queda en disco, igual que fuera de Docker.
@@ -84,6 +85,15 @@ services:
     ports: ["127.0.0.1:${S10_PUERTO_METRIN:-4760}:4760"]
     logging: *logs
     restart: unless-stopped
+
+  # Visor de trazas de decisiones JEV (trazas/): hoy con mocks; el esquema
+  # Postgres (Fase 3/5) entra por la misma abstracción sin cambiar el API.
+  trazas:
+    <<: *base
+    command: ["python", "trazas/trazas.py"]
+    environment:
+      TRAZAS_HOST: 0.0.0.0   # el visor escucha 127.0.0.1 por defecto
+    ports: ["127.0.0.1:${TRAZAS_PUERTO:-4761}:4761"]
 
   # Ollama dentro del compose (opcional; por defecto Metrín usa el de la Mac).
   ollama:

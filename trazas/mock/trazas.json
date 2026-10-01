@@ -1,0 +1,749 @@
+{
+  "_comentario": "Mocks del visor de trazas (Fase 3). Una traza = una petición a POST /v1/systemone de jeva.cpp: estado compartido + preguntas (choice/score/noul) + respuestas. Con el esquema Postgres (Fase 3/5) estas filas se leen de la tabla traces; el API no cambia. correcta: veredicto de la muestra etiquetada (true/false; null = sin evaluar).",
+  "trazas": [
+    {
+      "id": "01J8ZK4W7A2X9C0V3B8N7P1QRM",
+      "ts": "2026-09-29T09:14:03-05:00",
+      "modelo": "nemotron-mini",
+      "origen": "metrin-chat",
+      "plantilla": "jev-default",
+      "ms": 96,
+      "tokens_entrada": 1240,
+      "estado": {
+        "mensaje": "¿Cómo registro una guía de remisión al ingresar materiales al almacén de obra?",
+        "contexto": {"proyecto": "Los Delfines", "modulo": "almacenes", "usuario": "almacenero-2"}
+      },
+      "preguntas": [
+        {
+          "id": "modulo",
+          "tipo": "choice",
+          "instrucciones": "¿Qué módulo del ERP debe responder esta pregunta?",
+          "criterios": {
+            "almacenes": "Ingresos, egresos, guías de remisión y stock de materiales de obra.",
+            "compras": "Pedidos, cotizaciones y órdenes de compra a proveedores.",
+            "gerencia": "Avances físicos, presupuestos y partidas de control.",
+            "contabilidad": "Asientos, documentos por pagar y reportes contables."
+          },
+          "respuesta": {
+            "tipo": "choice",
+            "choice": "almacenes",
+            "probabilidades": {"almacenes": 0.91, "compras": 0.05, "gerencia": 0.03, "contabilidad": 0.01},
+            "confianza": 0.71
+          },
+          "ms": 48
+        }
+      ],
+      "correcta": true,
+      "nota": "Clara: menciona guía de remisión e ingreso de materiales."
+    },
+    {
+      "id": "01J8ZK9T2F5Y1H6D8K3M0P4QSX",
+      "ts": "2026-09-29T09:22:41-05:00",
+      "modelo": "glm-4-flash",
+      "origen": "metrin-chat",
+      "plantilla": "jev-default",
+      "ms": 143,
+      "tokens_entrada": 1518,
+      "estado": {
+        "mensaje": "Necesito 40 bolsas de cemento para el frente norte antes del viernes; hoy es miércoles.",
+        "contexto": {"proyecto": "Los Delfines", "stock_actual": 12, "proveedor_habitual": "Cementos Lima"}
+      },
+      "preguntas": [
+        {
+          "id": "urgencia",
+          "tipo": "score",
+          "instrucciones": "¿Qué tan urgente es atender este pedido de materiales?",
+          "criterios": [
+            "Sin urgencia: puede esperar la rutina semanal de compras.",
+            "Baja: hay stock de sobra para más de dos semanas.",
+            "Media: alcanza para la semana pero conviene programar la compra.",
+            "Alta: el stock no llega a los próximos días de trabajo.",
+            "Crítica: sin compra inmediata se para la obra."
+          ],
+          "respuesta": {
+            "tipo": "score",
+            "score": 3.62,
+            "probabilidades": {"0": 0.01, "1": 0.02, "2": 0.08, "3": 0.56, "4": 0.33},
+            "legend": {"0": "Sin urgencia: puede esperar la rutina semanal de compras.", "1": "Baja: hay stock de sobra para más de dos semanas.", "2": "Media: alcanza para la semana pero conviene programar la compra.", "3": "Alta: el stock no llega a los próximos días de trabajo.", "4": "Crítica: sin compra inmediata se para la obra."}
+          },
+          "ms": 71
+        }
+      ],
+      "correcta": true,
+      "nota": "Stock 12 < 40 y plazo viernes: alta con cola en crítica, razonable."
+    },
+    {
+      "id": "01J8ZKD6R8T2W4Y7A0C3E5G9IB",
+      "ts": "2026-09-29T10:05:12-05:00",
+      "modelo": "nemotron-mini",
+      "origen": "metrin-chat",
+      "plantilla": "jev-default",
+      "ms": 88,
+      "tokens_entrada": 980,
+      "estado": "My order arrived broken. Please refund it.",
+      "preguntas": [
+        {
+          "id": "reembolso",
+          "tipo": "noul",
+          "instrucciones": "Does the customer ask for a refund?",
+          "criterios": {"true": "The message explicitly asks to return money or cancel the charge.", "false": "The message asks for a replacement, repair or information only."},
+          "respuesta": {"tipo": "noul", "noul": 0.97}
+        }
+      ],
+      "correcta": true
+    },
+    {
+      "id": "01J8ZKM1P3S6V8X0Z2B4D6F8HJ",
+      "ts": "2026-09-29T10:31:57-05:00",
+      "modelo": "glm-4-flash",
+      "origen": "reportes",
+      "plantilla": "jev-default",
+      "ms": 212,
+      "tokens_entrada": 2310,
+      "estado": {
+        "mensaje": "¿Qué valor tiene la UIT 2024 y cómo afecta al costo de planilla de junio?",
+        "contexto": {"tabla": "uit", "periodo": "2024-06", "moneda": "PEN"}
+      },
+      "preguntas": [
+        {
+          "id": "documento",
+          "tipo": "choice",
+          "instrucciones": "¿Qué tipo de documento SUNAT corresponde al comprobante de esta transacción?",
+          "criterios": {
+            "factura": "Venta de bienes o servicios a empresas, con RUC.",
+            "boleta": "Venta a personas naturales sin RUC.",
+            "nota-credito": "Anula o reduce una factura ya emitida.",
+            "nota-debito": "Incrementa el monto de una factura ya emitida."
+          },
+          "respuesta": {
+            "tipo": "choice",
+            "choice": "nota-credito",
+            "probabilidades": {"factura": 0.18, "boleta": 0.07, "nota-credito": 0.52, "nota-debito": 0.23},
+            "confianza": 0.39
+          },
+          "ms": 118
+        }
+      ],
+      "correcta": false,
+      "nota": "La pregunta no habla de comprobantes: el modelo forzó el encuadre de tipo de documento. Revisar instrucciones: debe poder decir «no aplica»."
+    },
+    {
+      "id": "01J8ZKP9Q1T4W7X9C2E4H6J8KL",
+      "ts": "2026-09-29T10:47:29-05:00",
+      "modelo": "nemotron-mini",
+      "origen": "metrin-chat",
+      "plantilla": "jev-default",
+      "ms": 74,
+      "tokens_entrada": 870,
+      "estado": {
+        "mensaje": "La respuesta de Metrín citó el manual de Almacenes pero el paso no coincide con la captura mostrada.",
+        "contexto": {"cita": "Manual de Almacenes › 1.6 Tipo de documento de SUNAT", "captura": "fotos/almacenes/p-012.jpg"}
+      },
+      "preguntas": [
+        {
+          "id": "calidad",
+          "tipo": "score",
+          "instrucciones": "¿Qué tan confiable es la respuesta recuperada, según la evidencia?",
+          "criterios": [
+            "Nula: no hay evidencia recuperada.",
+            "Baja: la evidencia no trata el tema.",
+            "Media: trata el tema pero falta el paso exacto.",
+            "Alta: cita manual, sección y paso coherentes."
+          ],
+          "respuesta": {
+            "tipo": "score",
+            "score": 1.72,
+            "probabilidades": {"0": 0.05, "1": 0.55, "2": 0.33, "3": 0.07},
+            "legend": {"0": "Nula: no hay evidencia recuperada.", "1": "Baja: la evidencia no trata el tema.", "2": "Media: trata el tema pero falta el paso exacto.", "3": "Alta: cita manual, sección y paso coherentes."}
+          },
+          "ms": 39
+        }
+      ],
+      "correcta": true,
+      "nota": "Detectó la incoherencia cita↔captura: baja-media, como debe ser."
+    },
+    {
+      "id": "01J8ZKTF2V5X8A1B4C7E9G2IJM",
+      "ts": "2026-09-29T11:12:08-05:00",
+      "modelo": "glm-4-flash",
+      "origen": "metrin-chat",
+      "plantilla": "jev-default",
+      "ms": 129,
+      "tokens_entrada": 1740,
+      "estado": {
+        "mensaje": "Adicionar correctivo al presupuesto de obra por mayor precio del acero",
+        "contexto": {"proyecto": "Los Delfines", "partida": "E.02.01 Estructuras metálicas", "variacion_pct": 8.4}
+      },
+      "preguntas": [
+        {
+          "id": "aprobacion",
+          "tipo": "noul",
+          "instrucciones": "¿Esta acción requiere aprobación del usuario sa (administrador del sistema)?",
+          "criterios": {
+            "true": "La acción modifica registros, permisos o configuración de todo el sistema o de otro proyecto.",
+            "false": "La acción es de uso diario dentro de su proyecto y rol."
+          },
+          "respuesta": {"tipo": "noul", "noul": 0.31}
+        },
+        {
+          "id": "modulo",
+          "tipo": "choice",
+          "instrucciones": "¿Qué módulo del ERP debe responder esta pregunta?",
+          "criterios": {
+            "presupuestos": "Partidas, presupuestos de obra y adiciones/reducciones de metrados.",
+            "almacenes": "Ingresos y egresos de materiales.",
+            "gerencia": "Avances físicos y costos de obra.",
+            "administrativo": "Documentos por pagar y cobrar."
+          },
+          "respuesta": {
+            "tipo": "choice",
+            "choice": "presupuestos",
+            "probabilidades": {"presupuestos": 0.83, "almacenes": 0.06, "gerencia": 0.08, "administrativo": 0.03},
+            "confianza": 0.61
+          },
+          "ms": 58
+        }
+      ],
+      "correcta": true,
+      "nota": "Multi-pregunta: sa=no (es de obra), módulo=presupuestos. Ambas acertadas."
+    },
+    {
+      "id": "01J8ZKW4B6D9F2H4J7L0N3P5RV",
+      "ts": "2026-09-29T11:58:44-05:00",
+      "modelo": "llama-3.1-8b",
+      "origen": "programador",
+      "plantilla": "jev-default",
+      "ms": 387,
+      "tokens_entrada": 3120,
+      "estado": {
+        "mensaje": "Egreso de 250 kg de varilla corrugada Nº 8 del almacén de obra",
+        "contexto": {"partidas": ["E.01.01 Concreto armado", "E.02.01 Estructuras metálicas"], "frente": "Norte", "equipo": "Grúa 2"}
+      },
+      "preguntas": [
+        {
+          "id": "partida",
+          "tipo": "choice",
+          "instrucciones": "¿A qué partida de control debe destinarse este egreso de material?",
+          "criterios": {
+            "E.01.01 Concreto armado": "Concreto, estribos y varilla para elementos de concreto armado.",
+            "E.02.01 Estructuras metálicas": "Perfiles, varilla de refuerzo estructural y soldadura de acero.",
+            "E.03.01 Carpintería": "Madera y herrajes para cerraduras y puertas.",
+            "sin-partida": "Egreso de uso general o herramienta, sin destino directo de obra."
+          },
+          "respuesta": {
+            "tipo": "choice",
+            "choice": "E.02.01 Estructuras metálicas",
+            "probabilidades": {"E.01.01 Concreto armado": 0.29, "E.02.01 Estructuras metálicas": 0.64, "E.03.01 Carpintería": 0.02, "sin-partida": 0.05},
+            "confianza": 0.44
+          },
+          "ms": 201
+        }
+      ],
+      "correcta": true,
+      "nota": "Varilla Nº 8 es ambigua (concreto vs estructuras): 0.64/0.29 es honesto. La confianza baja es correcta."
+    },
+    {
+      "id": "01J8ZL2H7K1M4P7S0V3X6A9CEG",
+      "ts": "2026-09-29T13:20:19-05:00",
+      "modelo": "nemotron-mini",
+      "origen": "catalogo",
+      "plantilla": "jev-default",
+      "ms": 63,
+      "tokens_entrada": 760,
+      "estado": "Generar orden de compra desde el pedido de obra con cotización aprobada",
+      "preguntas": [
+        {
+          "id": "escenario",
+          "tipo": "choice",
+          "instrucciones": "¿En qué escenario del módulo de Almacenes se realiza esta acción?",
+          "criterios": {
+            "ingresos": "Compra de materiales que entran al almacén.",
+            "egresos": "Salida de materiales hacia una partida o destino.",
+            "transferencia-interna": "Movimiento entre almacenes del mismo proyecto.",
+            "transferencia-externa": "Movimiento entre almacenes de proyectos distintos."
+          },
+          "respuesta": {
+            "tipo": "choice",
+            "choice": "ingresos",
+            "probabilidades": {"ingresos": 0.88, "egresos": 0.04, "transferencia-interna": 0.03, "transferencia-externa": 0.05},
+            "confianza": 0.68
+          },
+          "ms": 33
+        }
+      ],
+      "correcta": true
+    },
+    {
+      "id": "01J8ZL5Q9T2W5Y8B1D4F7H0JLN",
+      "ts": "2026-09-29T14:02:51-05:00",
+      "modelo": "glm-4-flash",
+      "origen": "gerencia",
+      "plantilla": "jev-default",
+      "ms": 167,
+      "tokens_entrada": 1980,
+      "estado": {
+        "mensaje": "Avance físico del frente norte al 12 de setiembre: muros 70%, instalaciones 30%, pinturas 0%.",
+        "contexto": {"proyecto": "Los Delfines", "frente": "Norte", "presupuesto_soles": 482000}
+      },
+      "preguntas": [
+        {
+          "id": "avance",
+          "tipo": "score",
+          "instrucciones": "¿Cuál es el avance físico global del frente, ponderado por presupuesto?",
+          "criterios": [
+            "0–20%: inicia la obra.",
+            "20–40%: estructura en ejecución.",
+            "40–60%: mitad de obra.",
+            "60–80%: acabados en ejecución.",
+            "80–100%: obra casi concluida."
+          ],
+          "respuesta": {
+            "tipo": "score",
+            "score": 1.9,
+            "probabilidades": {"0": 0.02, "1": 0.72, "2": 0.22, "3": 0.03, "4": 0.01},
+            "legend": {"0": "0–20%: inicia la obra.", "1": "20–40%: estructura en ejecución.", "2": "40–60%: mitad de obra.", "3": "60–80%: acabados en ejecución.", "4": "80–100%: obra casi concluida."}
+          },
+          "ms": 92
+        }
+      ],
+      "correcta": false,
+      "nota": "Con 70% de muros (partida pesada) el global debería ser ~40–60%, no 20–40%. El modelo sub-pesó el presupuesto. Marcar para ajustar el enunciado con pesos."
+    },
+    {
+      "id": "01J8ZL8W3V6Y9C2E5H8K1M4PS",
+      "ts": "2026-09-29T15:11:36-05:00",
+      "modelo": "nemotron-mini",
+      "origen": "metrin-chat",
+      "plantilla": "jev-default",
+      "ms": 81,
+      "tokens_entrada": 1020,
+      "estado": "¿Cómo cambio el tipo de cambio en cada movimiento de almacén?",
+      "preguntas": [
+        {
+          "id": "contexto_obra",
+          "tipo": "noul",
+          "instrucciones": "¿La respuesta depende de datos de una obra o proyecto concreto (no es general del ERP)?",
+          "criterios": {
+            "true": "La respuesta cambia según el proyecto, almacén, usuario o configuración local.",
+            "false": "La respuesta es igual para cualquier instalación del ERP."
+          },
+          "respuesta": {"tipo": "noul", "noul": 0.88}
+        }
+      ],
+      "correcta": true,
+      "nota": "La configuración «llamada c-4» es por usuario: sí depende del contexto."
+    },
+    {
+      "id": "01J8ZLCF8X1B4E7H0K3N6Q9TUW",
+      "ts": "2026-09-29T16:40:02-05:00",
+      "modelo": "glm-4-flash",
+      "origen": "metrin-chat",
+      "plantilla": "jev-default",
+      "ms": 254,
+      "tokens_entrada": 2760,
+      "estado": {
+        "mensaje": "El proveedor dice que no tiene varilla en stock ¿qué hago?",
+        "contexto": {"proyecto": "Los Delfines", "material": "varilla corrugada Nº 8", "stock": 12, "necesario": 40}
+      },
+      "preguntas": [
+        {
+          "id": "severidad",
+          "tipo": "score",
+          "instrucciones": "¿Qué tan severo es el desabastecimiento para la obra?",
+          "criterios": [
+            "Leve: hay stock para más de un mes de trabajo.",
+            "Moderado: alcanza para una o dos semanas.",
+            "Severo: el stock no llega a la próxima semana.",
+            "Crítico: sin material la obra se detiene en días."
+          ],
+          "respuesta": {
+            "tipo": "score",
+            "score": 2.44,
+            "probabilidades": {"0": 0.02, "1": 0.12, "2": 0.61, "3": 0.25},
+            "legend": {"0": "Leve: hay stock para más de un mes de trabajo.", "1": "Moderado: alcanza para una o dos semanas.", "2": "Severo: el stock no llega a la próxima semana.", "3": "Crítico: sin material la obra se detiene en días."}
+          },
+          "ms": 131
+        },
+        {
+          "id": "reaccion",
+          "tipo": "choice",
+          "instrucciones": "¿Qué sugiere el manual como primer paso ante un desabastecimiento?",
+          "criterios": {
+            "cotizar-otros-proveedores": "Buscar cotización en otros proveedores del catálogo.",
+            "sustituir-material": "Proponer un material alternativo aprobado.",
+            "reprogramar-metrados": "Mover las partidas que lo usan a otra fecha.",
+            "no-documentado": "El manual no describe un procedimiento para esto."
+          },
+          "respuesta": {
+            "tipo": "choice",
+            "choice": "no-documentado",
+            "probabilidades": {"cotizar-otros-proveedores": 0.21, "sustituir-material": 0.14, "reprogramar-metrados": 0.17, "no-documentado": 0.48},
+            "confianza": 0.36
+          },
+          "ms": 118
+        }
+      ],
+      "correcta": true,
+      "nota": "La KB no documenta el procedimiento: «no-documentado» es la respuesta honesta y la confianza lo refleja."
+    },
+    {
+      "id": "01J8ZLFJ2D5G8J1M4P7S0V3XYZ",
+      "ts": "2026-09-30T08:15:27-05:00",
+      "modelo": "nemotron-mini",
+      "origen": "metrin-chat",
+      "plantilla": "jev-default",
+      "ms": 70,
+      "tokens_entrada": 890,
+      "estado": "¿La orden de compra OC-2026-1143 sigue vigente?",
+      "preguntas": [
+        {
+          "id": "vigente",
+          "tipo": "noul",
+          "instrucciones": "¿La orden de compra mencionada está vigente (pendiente de entrega)?",
+          "criterios": {
+            "true": "Aún no se ha recibido la totalidad de los materiales pedidos.",
+            "false": "Ya fue recibida, anulada o venció su plazo de entrega."
+          },
+          "respuesta": {"tipo": "noul", "noul": 0.55}
+        }
+      ],
+      "correcta": false,
+      "nota": "Sin datos de la OC en el estado, 0.55 es una moneda al aire. Falta conectar el estado con el ERP (Fase 5). La traza sí expone la incertidumbre."
+    },
+    {
+      "id": "01J8ZLMQ7G9J2M5P8S1V4YB1DE",
+      "ts": "2026-09-30T08:48:11-05:00",
+      "modelo": "glm-4-flash",
+      "origen": "tutor",
+      "plantilla": "jev-default",
+      "ms": 198,
+      "tokens_entrada": 2410,
+      "estado": {
+        "mensaje": "Costo de planilla de junio 2024 por proyecto",
+        "contexto": {"reporte": "planilla", "periodo": "2024-06", "agrupacion": "proyecto"}
+      },
+      "preguntas": [
+        {
+          "id": "modulo",
+          "tipo": "choice",
+          "instrucciones": "¿Qué módulo contiene este reporte?",
+          "criterios": {
+            "nomina": "Planillas, CTS, asignaciones familiares y beneficios sociales.",
+            "contabilidad": "Libros contables, balances y costos por centro.",
+            "gerencia": "Costos de obra por partida y avance físico.",
+            "administrativo": "Documentos por pagar y flujo de caja."
+          },
+          "respuesta": {
+            "tipo": "choice",
+            "choice": "nomina",
+            "probabilidades": {"nomina": 0.79, "contabilidad": 0.12, "gerencia": 0.06, "administrativo": 0.03},
+            "confianza": 0.55
+          },
+          "ms": 104
+        }
+      ],
+      "correcta": true
+    },
+    {
+      "id": "01J8ZLTF3J6K9N2Q5T8W1Z4C7FH",
+      "ts": "2026-09-30T09:33:47-05:00",
+      "modelo": "nemotron-mini",
+      "origen": "metrin-chat",
+      "plantilla": "jev-default",
+      "ms": 92,
+      "tokens_entrada": 1310,
+      "estado": {
+        "mensaje": "Transferencia de 100 m de varilla del almacén de obra al almacén de la oficina principal.",
+        "contexto": {"origen": "almacen-obra-lima", "destino": "almacen-oficina"}
+      },
+      "preguntas": [
+        {
+          "id": "escenario",
+          "tipo": "choice",
+          "instrucciones": "¿Qué escenario de movimiento corresponde?",
+          "criterios": {
+            "ingresos": "Compra de materiales que entran al almacén.",
+            "egresos": "Salida de materiales hacia una partida o destino.",
+            "transferencia-interna": "Movimiento entre almacenes del mismo proyecto.",
+            "transferencia-externa": "Movimiento entre almacenes de proyectos distintos."
+          },
+          "respuesta": {
+            "tipo": "choice",
+            "choice": "transferencia-externa",
+            "probabilidades": {"ingresos": 0.02, "egresos": 0.06, "transferencia-interna": 0.24, "transferencia-externa": 0.68},
+            "confianza": 0.41
+          },
+          "ms": 47
+        }
+      ],
+      "correcta": true,
+      "nota": "Obra ↔ oficina son proyectos distintos: externa. La duda con interna (0.24) es comprensible."
+    },
+    {
+      "id": "01J8ZLWM8M2P5S8V1Y4B7E0HKN",
+      "ts": "2026-09-30T10:27:19-05:00",
+      "modelo": "llama-3.1-8b",
+      "origen": "metrin-chat",
+      "plantilla": "jev-default",
+      "ms": 441,
+      "tokens_entrada": 3450,
+      "estado": {
+        "mensaje": "¿Debe replicarse la fecha del ingreso en el egreso por transferencia externa?",
+        "contexto": {"configuracion": "llamada c-8 del manual de Almacenes"}
+      },
+      "preguntas": [
+        {
+          "id": "replica_fecha",
+          "tipo": "noul",
+          "instrucciones": "Según la configuración mencionada, ¿se replica la fecha del ingreso en la transferencia externa?",
+          "criterios": {
+            "true": "La opción está seleccionada: la fecha del ingreso se replica en el egreso.",
+            "false": "La opción no está seleccionada: se usa la fecha del egreso."
+          },
+          "respuesta": {"tipo": "noul", "noul": 0.93}
+        }
+      ],
+      "correcta": true,
+      "nota": "Cita textual de la llamada c-8; el modelo la lee bien."
+    },
+    {
+      "id": "01J8ZM2R4P8S1V5Y8C1F4H7JMN",
+      "ts": "2026-09-30T11:05:58-05:00",
+      "modelo": "glm-4-flash",
+      "origen": "metrin-chat",
+      "plantilla": "jev-default",
+      "ms": 158,
+      "tokens_entrada": 1890,
+      "estado": {
+        "mensaje": "Generar presupuesto de obra desde cero: partidas, metrados y precios unitarios.",
+        "contexto": {"proyecto": "nuevo", "moneda": "PEN"}
+      },
+      "preguntas": [
+        {
+          "id": "paso",
+          "tipo": "choice",
+          "instrucciones": "¿Cuál es el primer paso del procedimiento?",
+          "criterios": {
+            "definir-partidas": "Crear las partidas de control del proyecto.",
+            "registrar-metrados": "Cargar las cantidades por partida.",
+            "asignar-precios": "Poner precios unitarios a cada partida.",
+            "no-documentado": "El manual no documenta el orden del procedimiento."
+          },
+          "respuesta": {
+            "tipo": "choice",
+            "choice": "definir-partidas",
+            "probabilidades": {"definir-partidas": 0.61, "registrar-metrados": 0.19, "asignar-precios": 0.11, "no-documentado": 0.09},
+            "confianza": 0.37
+          },
+          "ms": 87
+        }
+      ],
+      "correcta": true
+    },
+    {
+      "id": "01J8ZM6V9T2W6Y9B2E5H8K1M4QR",
+      "ts": "2026-09-30T13:41:22-05:00",
+      "modelo": "nemotron-mini",
+      "origen": "metrin-chat",
+      "plantilla": "jev-default",
+      "ms": 77,
+      "tokens_entrada": 1080,
+      "estado": {
+        "mensaje": "¿La respuesta debe citar el manual y la página exacta?",
+        "contexto": {"fuente": "manuales-oficiales"}
+      },
+      "preguntas": [
+        {
+          "id": "cita",
+          "tipo": "noul",
+          "instrucciones": "¿La respuesta debe incluir la cita de la fuente (manual y página)?",
+          "criterios": {
+            "true": "La respuesta usa información de la base de conocimiento y debe atribuirse.",
+            "false": "Es una conversación general sin uso de fuentes."
+          },
+          "respuesta": {"tipo": "noul", "noul": 0.99}
+        }
+      ],
+      "correcta": true
+    },
+    {
+      "id": "01J8ZMAA1W4Z7C0E3G6I9L2OPS",
+      "ts": "2026-09-30T15:19:04-05:00",
+      "modelo": "glm-4-flash",
+      "origen": "catalogo",
+      "plantilla": "jev-default",
+      "ms": 185,
+      "tokens_entrada": 2150,
+      "estado": {
+        "mensaje": "Pregunta sugerida del catálogo: «¿Cómo adiciono correctivo al presupuesto?»",
+        "contexto": {"catalogo": "catalogo_metrin.json", "seccion": "presupuestos"}
+      },
+      "preguntas": [
+        {
+          "id": "prioridad",
+          "tipo": "score",
+          "instrucciones": "¿Qué prioridad tiene generar el tutorial de este tema?",
+          "criterios": [
+            "Baja: tema poco consultado o ya bien documentado.",
+            "Media: tema de uso regular.",
+            "Alta: tema frecuente y sin tutorial aún.",
+            "Urgente: bloquea a usuarios ahora mismo."
+          ],
+          "respuesta": {
+            "tipo": "score",
+            "score": 2.31,
+            "probabilidades": {"0": 0.04, "1": 0.21, "2": 0.58, "3": 0.17},
+            "legend": {"0": "Baja: tema poco consultado o ya bien documentado.", "1": "Media: tema de uso regular.", "2": "Alta: tema frecuente y sin tutorial aún.", "3": "Urgente: bloquea a usuarios ahora mismo."}
+          },
+          "ms": 99
+        }
+      ],
+      "correcta": true
+    },
+    {
+      "id": "01J8ZMEF6B9D2G5J8M1P4S7VUX",
+      "ts": "2026-09-30T16:52:37-05:00",
+      "modelo": "nemotron-mini",
+      "origen": "metrin-chat",
+      "plantilla": "jev-default",
+      "ms": 69,
+      "tokens_entrada": 830,
+      "estado": {
+        "mensaje": "¿En qué moneda está el documento?",
+        "contexto": {"documento": "factura", "simbolo": "S/"}
+      },
+      "preguntas": [
+        {
+          "id": "moneda",
+          "tipo": "choice",
+          "instrucciones": "¿Qué moneda usa el documento?",
+          "criterios": {"soles": "Moneda nacional (PEN).", "dolares": "Dólares estadounidenses (USD).", "euros": "Euros (EUR)."},
+          "respuesta": {
+            "tipo": "choice",
+            "choice": "soles",
+            "probabilidades": {"soles": 0.94, "dolares": 0.05, "euros": 0.01},
+            "confianza": 0.74
+          },
+          "ms": 31
+        }
+      ],
+      "correcta": true
+    },
+    {
+      "id": "01J8ZMHY2E5H8K1N4Q7T0W3ZAB",
+      "ts": "2026-10-01T08:07:14-05:00",
+      "modelo": "glm-4-flash",
+      "origen": "metrin-chat",
+      "plantilla": "jev-default",
+      "ms": 176,
+      "tokens_entrada": 2050,
+      "estado": {
+        "mensaje": "El asistente respondió con pasos que no existen en el manual de Compras.",
+        "contexto": {"manual": "Manual de Compras", "pasos_alucinados": ["solicitar voucher de pago", "firmar conformidad"]}
+      },
+      "preguntas": [
+        {
+          "id": "severidad",
+          "tipo": "score",
+          "instrucciones": "¿Qué tan grave es este fallo de la respuesta?",
+          "criterios": [
+            "Cosmético: redacción pobre pero el procedimiento es correcto.",
+            "Leve: falta algún paso secundario.",
+            "Grave: inventa pasos que no están en el manual.",
+            "Crítico: el procedimiento es el opuesto al del manual."
+          ],
+          "respuesta": {
+            "tipo": "score",
+            "score": 2.38,
+            "probabilidades": {"0": 0.02, "1": 0.09, "2": 0.66, "3": 0.23},
+            "legend": {"0": "Cosmético: redacción pobre pero el procedimiento es correcto.", "1": "Leve: falta algún paso secundario.", "2": "Grave: inventa pasos que no están en el manual.", "3": "Crítico: el procedimiento es el opuesto al del manual."}
+          },
+          "ms": 95
+        },
+        {
+          "id": "accion",
+          "tipo": "choice",
+          "instrucciones": "¿Qué se debe hacer con esta respuesta?",
+          "criterios": {
+            "registrar-fallo": "Guardarla como fallo para reentrenar o ajustar el estilo.",
+            "ignorar": "No requiere seguimiento.",
+            "bajar-manual": "Volver a bajar el manual: está desactualizado."
+          },
+          "respuesta": {
+            "tipo": "choice",
+            "choice": "registrar-fallo",
+            "probabilidades": {"registrar-fallo": 0.81, "ignorar": 0.11, "bajar-manual": 0.08},
+            "confianza": 0.52
+          },
+          "ms": 74
+        }
+      ],
+      "correcta": true,
+      "nota": "Multi-pregunta coherente: gravedad «grave» y acción «registrar-fallo», que es justamente el flujo de sin_respuesta.jsonl."
+    },
+    {
+      "id": "01J8ZMMK7F0I3L6O9R2U5X8CDE",
+      "ts": "2026-10-01T09:24:51-05:00",
+      "modelo": "nemotron-mini",
+      "origen": "metrin-chat",
+      "plantilla": "jev-default",
+      "ms": 84,
+      "tokens_entrada": 1150,
+      "estado": [
+        "Registro del proyecto: definir techo al proyecto.",
+        "Aprobadores de pedidos en el almacén.",
+        "Tipos de recurso que manejará el almacén.",
+        "Usuarios por proyecto."
+      ],
+      "preguntas": [
+        {
+          "id": "paso_siguiente",
+          "tipo": "choice",
+          "instrucciones": "¿Cuál de estos pasos va después de definir el techo del proyecto?",
+          "criterios": {
+            "aprobadores": "Registrar los aprobadores de los pedidos en el almacén.",
+            "tipos-recurso": "Definir los tipos de recurso que manejará el almacén.",
+            "usuarios": "Asignar usuarios por proyecto.",
+            "indistinto": "El orden no importa: son pasos independientes."
+          },
+          "respuesta": {
+            "tipo": "choice",
+            "choice": "indistinto",
+            "probabilidades": {"aprobadores": 0.3, "tipos-recurso": 0.27, "usuarios": 0.21, "indistinto": 0.22},
+            "confianza": 0.06
+          },
+          "ms": 44
+        }
+      ],
+      "correcta": false,
+      "nota": "Distribución casi plana (confianza 0.06): el estado es una lista sin orden explícito. El visor debe destacar este caso: baja confianza = revisar humano."
+    },
+    {
+      "id": "01J8ZMPN1H4K7N0Q3T6W9Y2BGJ",
+      "ts": "2026-10-01T10:12:28-05:00",
+      "modelo": "glm-4-flash",
+      "origen": "reportes",
+      "plantilla": "jev-default",
+      "ms": 225,
+      "tokens_entrada": 2620,
+      "estado": {
+        "mensaje": "¿Qué valor tiene la UIT 2024?",
+        "contexto": {"plantilla": "uit-por-anio", "sql": "SELECT valor FROM uit WHERE anio = 2024"}
+      },
+      "preguntas": [
+        {
+          "id": "verificacion",
+          "tipo": "noul",
+          "instrucciones": "¿Es seguro ejecutar este reporte contra la base de producción?",
+          "criterios": {
+            "true": "Es solo SELECT, con límite de filas y sesión de solo lectura.",
+            "false": "Toca datos, no hay límite o usa la sesión de escritura."
+          },
+          "respuesta": {"tipo": "noul", "noul": 0.91}
+        }
+      ],
+      "correcta": true,
+      "nota": "Coherente con la política de reportes: SELECT único + sesión read-only."
+    }
+  ]
+}
