@@ -5,6 +5,7 @@ package v2
 // Solo anotan lo que el orquestador ya decidió: no cambian la respuesta.
 
 import (
+	"sort"
 	"strconv"
 	"strings"
 	"time"
@@ -413,8 +414,60 @@ func (t *turno) trazarHibrido() {
 			cerrar(traza.EtapaV2Rerank, traza.EstadoOK, "reranker sobre los primeros fragmentos de la fusión")
 			t.v.Dato(traza.EtapaV2Rerank, "activo", true)
 		case !activo:
-			cerrar(traza.EtapaV2Rerank, traza.EstadoRespaldo, "sin reranker (RERANK_URL vacío): orden por puntaje y RRF")
+			cerrar(traza.EtapaV2Rerank, traza.EstadoRespaldo, "sin reranker en los fragmentos (RERANK_URL vacío o «fragmento» fuera de V2_RERANK_CLASES): orden por puntaje y RRF")
 		}
+	}
+}
+
+// claveRerankClases: el dato que el recuperador deja en la etapa rerank con el reranker de clase (procedimiento,
+// concepto; conocimiento.ClaveTrazaRerankClases): una entrada por clase con reordenado, fallo, orden léxico y orden
+// del reranker.
+const claveRerankClases = "clases"
+
+// trazarRerankClases ajusta la etapa rerank con el reranker de clase. Va después de trazarHibrido: si una clase se
+// reordenó, la etapa no es «sin reranker» aunque los fragmentos no lo usen; si falló en alguna, es respaldo (el
+// recuperador se quedó con el orden léxico de esa clase).
+func (t *turno) trazarRerankClases() {
+	if t.v == nil {
+		return
+	}
+	x, _ := t.v.DatoDe(traza.EtapaV2Rerank, claveRerankClases)
+	m, _ := x.(map[string]any)
+	if len(m) == 0 {
+		return
+	}
+	clases := make([]string, 0, len(m))
+	for k := range m {
+		clases = append(clases, k)
+	}
+	sort.Strings(clases)
+	var hechas, fallidas []string
+	for _, k := range clases {
+		d, _ := m[k].(map[string]any)
+		if r, _ := d["reordenado"].(bool); r {
+			hechas = append(hechas, k)
+		} else if f, _ := d["fallo"].(string); f != "" {
+			fallidas = append(fallidas, k+" ("+f+")")
+		}
+	}
+	if t.v.Pendiente(traza.EtapaV2Rerank) {
+		t.v.Fin(traza.EtapaV2Rerank, traza.EstadoOK, traza.Datos{"activo": len(hechas) > 0, "resultados": nil,
+			"iteracion": nil, "fuentes": nil, "confianza": nil})
+	}
+	hibridoFallo := false
+	if h, ok := t.v.DatoDe(traza.EtapaV2Rerank, claveHibrido); ok {
+		if hm, ok := h.(map[string]any); ok {
+			f, _ := hm["fallo"].(string)
+			hibridoFallo = f != ""
+		}
+	}
+	switch {
+	case len(fallidas) > 0:
+		t.v.CambiarEstado(traza.EtapaV2Rerank, traza.EstadoRespaldo, "degradado: el reranker falló en "+strings.Join(fallidas, ", ")+
+			": orden léxico")
+	case len(hechas) > 0 && !hibridoFallo:
+		t.v.CambiarEstado(traza.EtapaV2Rerank, traza.EstadoOK, "reranker para elegir: "+strings.Join(hechas, ", "))
+		t.v.Dato(traza.EtapaV2Rerank, "activo", true)
 	}
 }
 
@@ -434,6 +487,7 @@ func (t *turno) cerrarTraza(res rag.Respuesta) {
 		return
 	}
 	t.trazarHibrido()
+	t.trazarRerankClases()
 	motor := t.a.motor().Nombre()
 	if len(t.decisiones) == 0 {
 		t.v.OmitirCon(traza.EtapaV2Decision, traza.EstadoOmitida, "ninguna decisión dudosa: decidieron las reglas del código",

@@ -293,6 +293,73 @@ func TestEmpateDeProcedimientosLoDecideElMotor(t *testing.T) {
 	}
 }
 
+// Con el reranker de clase, el empate se mide en logits: dos sigmoides casi iguales (0,998 y 0,993) con logits
+// separados no van al motor; dos logits a menos de logit(0,6) sí.
+func TestEmpateConRerankerSeMideEnLogits(t *testing.T) {
+	for _, x := range []struct {
+		l0, l1   float64
+		decision bool
+	}{{6.2, 5.0, false}, {5.2, 5.0, true}} {
+		b := armarAgente()
+		l0, l1 := x.l0, x.l1
+		b.rec.responder = func(_ int, _ tipos.Consulta, clase string) ([]tipos.Candidato, []string, error) {
+			if clase != "procedimiento" {
+				return nil, nil, nil
+			}
+			return []tipos.Candidato{
+				{ID: "metrados.registrar", Clase: clase, Puntaje: 0.998, Rerank: &l0},
+				{ID: "config.unidades", Clase: clase, Puntaje: 0.993, Rerank: &l1},
+			}, nil, nil
+		}
+		sim := &Simulada{Elecciones: map[string]string{DecProcedimiento: "config.unidades"}}
+		b.ag.Decision = sim
+		res, _ := preguntarConTraza(t, b.ag, "¿Cómo registro las unidades del metrado?", rag.Opciones{})
+		if got := res.PlanV2.Procedimiento != nil && res.PlanV2.Procedimiento.ID == "config.unidades"; got != x.decision {
+			t.Errorf("logits %.1f/%.1f: decidió el motor = %v, quiero %v (%+v)", l0, l1, got, x.decision, res.PlanV2.Procedimiento)
+		}
+	}
+}
+
+// La etapa rerank refleja el reranker de clase: reordenó → ok y activo aunque los fragmentos no lo usen; falló →
+// respaldo con la clase y el motivo.
+func TestTrazaRerankDeClase(t *testing.T) {
+	for _, x := range []struct {
+		datos  map[string]any
+		estado string
+		razon  string
+	}{
+		{map[string]any{"procedimiento": traza.Datos{"reordenado": true, "fallo": nil}}, traza.EstadoOK, "reranker para elegir: procedimiento"},
+		{map[string]any{"concepto": traza.Datos{"reordenado": false, "fallo": "timeout"}}, traza.EstadoRespaldo, "falló en concepto (timeout)"},
+	} {
+		b := armarAgente()
+		datos := x.datos
+		b.rec.responder = func(n int, c tipos.Consulta, clase string) ([]tipos.Candidato, []string, error) {
+			return porTema(n, c, clase)
+		}
+		ag := b.ag
+		ag.Recuperador = recuperadorConTraza{b.rec, datos}
+		_, tr := preguntarConTraza(t, ag, "¿Cómo registro un metrado?", rag.Opciones{})
+		e := etapaV2(tr, "rerank")
+		if e.Estado != x.estado || !strings.Contains(e.Razon, x.razon) {
+			t.Errorf("etapa rerank: %s %q, quiero %s con %q", e.Estado, e.Razon, x.estado, x.razon)
+		}
+		if x.estado == traza.EstadoOK && e.Datos["activo"] != true {
+			t.Errorf("activo: %+v", e.Datos)
+		}
+	}
+}
+
+// recuperadorConTraza deja el dato «clases» en la etapa rerank, como el recuperador real.
+type recuperadorConTraza struct {
+	r     *recuperadorFalso
+	datos map[string]any
+}
+
+func (x recuperadorConTraza) Buscar(ctx context.Context, c tipos.Consulta, clase string, k int) ([]tipos.Candidato, []string, error) {
+	traza.De(ctx).V2().Dato(traza.EtapaV2Rerank, claveRerankClases, x.datos)
+	return x.r.Buscar(ctx, c, clase, k)
+}
+
 // --- Integración con dobles ----------------------------------------------------------------------
 
 func TestIntegracionPreguntaConceptual(t *testing.T) {

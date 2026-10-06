@@ -46,8 +46,16 @@ type Recuperador struct {
 	indices map[string]*indiceBM25
 
 	Vector    Vectorizador // nil → solo léxica
-	Reranker  Reordenador  // nil → puntaje híbrido (o léxico) sin reordenar
-	TopFusion int          // candidatos que pasan de la fusión al reranker (30)
+	TopFusion int          // candidatos que salen de la fusión (30)
+
+	// Reranker de las clases del BM25 propio (rerank_clases.go): reordena los TopRerank primeros candidatos de las
+	// clases de ClasesRerank con un texto representativo de cada uno (procedimiento: título, módulo, objetivo,
+	// aliases y preguntas; concepto: término, sinónimos y definición). nil → el orden léxico de siempre. Si falla o se
+	// pasa del tiempo, también el orden léxico, y queda en «degradado» y en la traza (etapa rerank, «clases»).
+	Reranker     Reordenador
+	ClasesRerank map[string]bool // nil → ClasesRerankDefecto (procedimiento y concepto)
+	TopRerank    int             // candidatos que pasan por el reranker (TopRerankDefecto)
+	RunasRerank  int             // recorte del texto representativo (RunasRerankDefecto)
 
 	// Hibrido: búsqueda híbrida (internal/busqueda) para la clase «fragmento» (hibrido.go). nil → la clase usa
 	// solo el BM25 propio, como antes. Procedimientos, conceptos y errores no la usan.
@@ -199,6 +207,12 @@ func textoConsulta(c tipos.Consulta) string {
 
 // Buscar devuelve hasta k candidatos de la clase, con lo que se degradó.
 func (r *Recuperador) Buscar(ctx context.Context, c tipos.Consulta, clase string, k int) ([]tipos.Candidato, []string, error) {
+	return r.buscar(ctx, c, clase, k, true)
+}
+
+// buscar: Buscar con el reranker de clase opcional. conRerank=false lo usan las búsquedas internas del constructor
+// que no responden a la pregunta (p. ej. el procedimiento que se ofrece tras un concepto, buscado por el término).
+func (r *Recuperador) buscar(ctx context.Context, c tipos.Consulta, clase string, k int, conRerank bool) ([]tipos.Candidato, []string, error) {
 	ix, ok := r.indices[clase]
 	if !ok {
 		return nil, nil, fmt.Errorf("clase desconocida %q (procedimiento | concepto | error | fragmento)", clase)
@@ -212,12 +226,21 @@ func (r *Recuperador) Buscar(ctx context.Context, c tipos.Consulta, clase string
 	if clase == ClaseFragmento && r.Hibrido != nil {
 		return r.buscarFragmentosHibrido(ctx, c, ix, k)
 	}
-	cands, deg := r.buscarLexico(ctx, c, clase, ix, k)
+	cands, deg := r.buscarLexico(ctx, c, clase, ix, k, conRerank)
 	return cands, deg, nil
 }
 
-// buscarLexico: el BM25 propio de la clase (con vector y reranker propios si los hay).
-func (r *Recuperador) buscarLexico(ctx context.Context, c tipos.Consulta, clase string, ix *indiceBM25, k int) ([]tipos.Candidato, []string) {
+// candLex: un candidato del BM25 propio (con su vector y su reranker, si los hubo).
+type candLex struct {
+	doc            int
+	bm25, cub, vec float64
+	rrf, puntaje   float64
+	rerank         *float64
+	rangoLex       int // posición antes del reranker (1…)
+}
+
+// buscarLexico: el BM25 propio de la clase (con vector y reranker de clase si los hay).
+func (r *Recuperador) buscarLexico(ctx context.Context, c tipos.Consulta, clase string, ix *indiceBM25, k int, conRerank bool) ([]tipos.Candidato, []string) {
 	var degradado []string
 	lex := ix.buscar(r.consultaTerminos(c))
 	top := r.TopFusion
@@ -241,18 +264,12 @@ func (r *Recuperador) buscarLexico(ctx context.Context, c tipos.Consulta, clase 
 		}
 	}
 
-	type cand struct {
-		doc            int
-		bm25, cub, vec float64
-		rrf, puntaje   float64
-		rerank         *float64
-	}
-	porDoc := map[int]*cand{}
+	porDoc := map[int]*candLex{}
 	for i, x := range lex {
 		if i >= top {
 			break
 		}
-		porDoc[x.doc] = &cand{doc: x.doc, bm25: x.bm25, cub: x.cobertura, rrf: 1 / (60 + float64(i+1))}
+		porDoc[x.doc] = &candLex{doc: x.doc, bm25: x.bm25, cub: x.cobertura, rrf: 1 / (60 + float64(i+1))}
 	}
 	if cos != nil {
 		type dv struct {
@@ -275,7 +292,7 @@ func (r *Recuperador) buscarLexico(ctx context.Context, c tipos.Consulta, clase 
 			}
 			cd := porDoc[x.doc]
 			if cd == nil {
-				cd = &cand{doc: x.doc}
+				cd = &candLex{doc: x.doc}
 				porDoc[x.doc] = cd
 			}
 			cd.rrf += 1 / (60 + float64(i+1))
@@ -284,7 +301,7 @@ func (r *Recuperador) buscarLexico(ctx context.Context, c tipos.Consulta, clase 
 			cd.vec = cos[d]
 		}
 	}
-	cands := make([]*cand, 0, len(porDoc))
+	cands := make([]*candLex, 0, len(porDoc))
 	for _, cd := range porDoc {
 		if cos != nil {
 			cd.puntaje = 0.5*cd.cub + 0.5*math.Max(0, cd.vec)
@@ -305,29 +322,16 @@ func (r *Recuperador) buscarLexico(ctx context.Context, c tipos.Consulta, clase 
 	if len(cands) > top {
 		cands = cands[:top]
 	}
+	for i, cd := range cands {
+		cd.rangoLex = i + 1
+	}
 
-	// Reranker (opcional) sobre los de la fusión.
-	if r.Reranker == nil {
+	// Reranker de clase (opcional): reordena los primeros (rerank_clases.go).
+	switch {
+	case r.Reranker == nil:
 		degradado = append(degradado, DegSinReranker)
-	} else if len(cands) > 0 {
-		docs := make([]string, len(cands))
-		for i, cd := range cands {
-			docs[i] = ix.docs[cd.doc].texto
-		}
-		ps, err := r.Reranker.Reordenar(ctx, textoConsulta(c), docs)
-		if err != nil || len(ps) != len(cands) {
-			if err == nil {
-				err = fmt.Errorf("devolvió %d puntajes para %d documentos", len(ps), len(cands))
-			}
-			degradado = append(degradado, DegRerankerError+": "+err.Error()+"; puntaje híbrido")
-		} else {
-			for i, cd := range cands {
-				v := ps[i]
-				cd.rerank = &v
-				cd.puntaje = aUnidad(v)
-			}
-			sort.SliceStable(cands, func(a, b int) bool { return *cands[a].rerank > *cands[b].rerank })
-		}
+	case conRerank && r.rerankActivo(clase):
+		degradado = append(degradado, r.reordenarClase(ctx, c, clase, ix, cands, k)...)
 	}
 
 	if len(cands) > k {
@@ -339,6 +343,9 @@ func (r *Recuperador) buscarLexico(ctx context.Context, c tipos.Consulta, clase 
 		meta := map[string]string{"cobertura": strconv.FormatFloat(cd.cub, 'f', 3, 64)}
 		for k, v := range d.meta {
 			meta[k] = v
+		}
+		if cd.rerank != nil {
+			meta["rango_lexico"] = strconv.Itoa(cd.rangoLex) // dónde lo tenía el orden léxico antes del reranker
 		}
 		out = append(out, tipos.Candidato{ID: d.id, Clase: clase, Puntaje: redondear(cd.puntaje), Lexico: redondear(cd.bm25),
 			Vector: redondear(cd.vec), Rerank: cd.rerank, Meta: meta})

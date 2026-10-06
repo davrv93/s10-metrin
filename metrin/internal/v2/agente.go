@@ -14,6 +14,7 @@ package v2
 import (
 	"context"
 	"fmt"
+	"math"
 	"sort"
 	"strings"
 	"time"
@@ -619,6 +620,12 @@ func (t *turno) suficiente(cands []tipos.Candidato, clases []claseK) bool {
 // de decisión. PROVISIONAL, sin calibrar.
 const margenProcedimiento = 0.05
 
+// MargenProcedimientoRerank: con los dos procedimientos puntuados por el reranker de clase (V2_RERANK_CLASES), el
+// empate se mide en logits, no en el puntaje (la sigmoide se satura cerca de 1 y casi todo «empataría»). Es
+// logit(0,6) ≈ 0,405, el mismo margen que usa el constructor (conocimiento.MargenRerankEmpate; una prueba de
+// conocimiento comprueba que coinciden).
+var MargenProcedimientoRerank = math.Log(0.6 / 0.4)
+
 // elegirProcedimiento: si los dos mejores procedimientos casi empatan, decide el motor (procedure) y el elegido
 // pasa al frente. El resto del orden no cambia.
 func (t *turno) elegirProcedimiento(cands []tipos.Candidato) []tipos.Candidato {
@@ -636,7 +643,11 @@ func (t *turno) elegirProcedimiento(cands []tipos.Candidato) []tipos.Candidato {
 		return cands
 	}
 	p0, p1 := cands[idx[0]], cands[idx[1]]
-	if p0.Puntaje <= 0 || (p0.Puntaje-p1.Puntaje)/p0.Puntaje >= margenProcedimiento {
+	if p0.Rerank != nil && p1.Rerank != nil {
+		if *p0.Rerank-*p1.Rerank >= MargenProcedimientoRerank {
+			return cands
+		}
+	} else if p0.Puntaje <= 0 || (p0.Puntaje-p1.Puntaje)/p0.Puntaje >= margenProcedimiento {
 		return cands
 	}
 	d := t.decidir(DecProcedimiento, []string{p0.ID, p1.ID}, p0.ID, 0.5)

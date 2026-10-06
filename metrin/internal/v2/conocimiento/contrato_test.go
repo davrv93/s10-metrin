@@ -62,3 +62,11 @@ func TestIntegracion_AgenteDelNucleo(t *testing.T) {
 		t.Errorf("continuación: %+v", res.PlanV2)
 	}
 }
+
+// El núcleo (elegirProcedimiento) y el constructor (ambiguo) miden el empate de dos candidatos del reranker con el
+// mismo margen de logits.
+func TestContrato_MargenEmpateRerank(t *testing.T) {
+	if v2.MargenProcedimientoRerank != conocimiento.MargenRerankEmpate {
+		t.Fatalf("núcleo %v ≠ constructor %v", v2.MargenProcedimientoRerank, conocimiento.MargenRerankEmpate)
+	}
+}

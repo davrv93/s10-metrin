@@ -93,7 +93,7 @@ func (r *Recuperador) buscarFragmentosHibrido(ctx context.Context, c tipos.Consu
 			return nil, nil, ctx.Err()
 		}
 		trazarHibridoFallo(ctx, q, err, time.Since(t0))
-		cands, deg := r.buscarLexico(ctx, c, ClaseFragmento, ix, k)
+		cands, deg := r.buscarLexico(ctx, c, ClaseFragmento, ix, k, false)
 		return cands, append([]string{DegHibridoError + " (" + traza.ResumirError(err) + "): solo léxica propia"}, deg...), nil
 	}
 
@@ -346,7 +346,7 @@ func trazarHibrido(ctx context.Context, h Hibrido, q string, inf busqueda.Inform
 	dr := traza.Datos{"activo": reranker, "reordenado": reordenado, "ms": msDeInforme(inf, "rerank"), "fallo": nil,
 		"top": opc.TopRerank}
 	if !reranker {
-		dr["motor"] = "noop (RERANK_URL vacío)"
+		dr["motor"] = "noop (RERANK_URL vacío o «fragmento» fuera de V2_RERANK_CLASES)"
 	}
 	if inf.FalloRerank != "" {
 		dr["fallo"] = traza.Recortar(inf.FalloRerank)

@@ -2,6 +2,7 @@ package v2
 
 import (
 	"fmt"
+	"reflect"
 	"testing"
 
 	"rag-go/internal/rag"
@@ -157,5 +158,33 @@ func TestConfigRerankTopNYRunas(t *testing.T) {
 	c = LeerConfigDe(entorno(map[string]string{"RERANK_TOP_N": "-3", "RERANK_MAX_RUNAS": "mucho"}))
 	if c.RerankTopN != RerankTopNDefecto || c.RerankMaxRunas != RerankMaxRunasDefecto {
 		t.Fatalf("inválidos: top %d, runas %d", c.RerankTopN, c.RerankMaxRunas)
+	}
+}
+
+// V2_RERANK_CLASES: nombres válidos en cualquier orden y sin repetir; desconocidos ignorados; «ninguna» vacía la
+// lista; sin RERANK_URL ninguna clase se reordena.
+func TestConfigRerankClases(t *testing.T) {
+	c := LeerConfigDe(entorno(nil))
+	if !reflect.DeepEqual(c.RerankClases, RerankClasesDefecto) || c.Reordena(RerankFragmento) {
+		t.Fatalf("defecto: %v (sin RERANK_URL no se reordena nada)", c.RerankClases)
+	}
+	con := func(v string) Config {
+		return LeerConfigDe(entorno(map[string]string{"RERANK_URL": "http://r:8080", "V2_RERANK_CLASES": v}))
+	}
+	c = con(" Concepto , fragmento,procedimiento, concepto ")
+	if !reflect.DeepEqual(c.RerankClases, []string{RerankConcepto, RerankFragmento, RerankProcedimiento}) {
+		t.Fatalf("lista: %v", c.RerankClases)
+	}
+	if !c.Reordena(RerankProcedimiento) || !c.Reordena(RerankFragmento) || c.Reordena("error") {
+		t.Fatalf("Reordena: %v", c.RerankClases)
+	}
+	if c = con("fragmento"); c.Reordena(RerankProcedimiento) || !c.Reordena(RerankFragmento) {
+		t.Fatalf("solo fragmento: %v", c.RerankClases)
+	}
+	if c = con("ninguna"); len(c.RerankClases) != 0 || c.Reordena(RerankFragmento) {
+		t.Fatalf("ninguna: %v", c.RerankClases)
+	}
+	if c = con("errores, vector"); !reflect.DeepEqual(c.RerankClases, RerankClasesDefecto) {
+		t.Fatalf("sin nombres válidos se queda el defecto: %v", c.RerankClases)
 	}
 }

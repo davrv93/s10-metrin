@@ -73,6 +73,14 @@ func conocimientoV2(ag *v2.Agente, cfg v2.Config, alm *almacen.Almacen) {
 		logf("V2: %v", e)
 	}
 	rec := conocimiento.NuevoRecuperador(b)
+	// Reranker para ELEGIR procedimientos y conceptos (V2_RERANK_CLASES con procedimiento y/o concepto).
+	if cs := clasesConocimiento(cfg); len(cs) > 0 {
+		rec.Reranker = reordenadorV2{nuevoRerankV2(cfg)}
+		rec.ClasesRerank = cs
+		rec.TopRerank = cfg.RerankTopN
+		rec.RunasRerank = cfg.RerankMaxRunas
+		logf("V2: reranker de clase para %v (%d candidatos × %d runas)", cfg.RerankClases, rec.TopRerank, rec.RunasRerank)
+	}
 	if cfg.Busqueda == v2.BusquedaHibrida {
 		if bu, err := buscadorV2(cfg, b.DirKB, alm); err != nil {
 			logf("V2: sin búsqueda híbrida de fragmentos (%v): solo el BM25 propio", err)
@@ -81,6 +89,17 @@ func conocimientoV2(ag *v2.Agente, cfg v2.Config, alm *almacen.Almacen) {
 			rec.Hibrido = bu
 		}
 	}
+	// /health: las clases que de verdad pasan por el reranker (lo real, no lo pedido).
+	efectivas := []string{}
+	if rr, _ := busquedaV2["reranker"].(bool); rr {
+		efectivas = append(efectivas, v2.RerankFragmento)
+	}
+	for _, x := range []string{v2.RerankProcedimiento, v2.RerankConcepto} {
+		if rec.ClasesRerank[x] {
+			efectivas = append(efectivas, x)
+		}
+	}
+	busquedaV2["rerank_clases"] = efectivas
 	pl := conocimiento.NuevoMotorPlantillas(b)
 	ag.Aliaser, ag.Catalogo, ag.Recuperador = b, b, rec
 	ag.Constructor = conocimiento.NuevoConstructor(b, rec)
@@ -94,14 +113,48 @@ func conocimientoV2(ag *v2.Agente, cfg v2.Config, alm *almacen.Almacen) {
 		b.DirKB, len(b.Procedimientos), len(b.Conceptos), len(b.Errores), len(graves))
 }
 
+// clasesConocimiento: las clases del BM25 propio que reordena el reranker (procedimiento, concepto), según
+// RERANK_URL y V2_RERANK_CLASES. nil = ninguna.
+func clasesConocimiento(cfg v2.Config) map[string]bool {
+	var cs map[string]bool
+	for _, x := range []string{v2.RerankProcedimiento, v2.RerankConcepto} {
+		if cfg.Reordena(x) {
+			if cs == nil {
+				cs = map[string]bool{}
+			}
+			cs[x] = true
+		}
+	}
+	return cs
+}
+
+// nuevoRerankV2: llama-server (RERANK_URL) con RERANK_MAX_RUNAS y el tiempo máximo RERANK_TIMEOUT_MS.
+func nuevoRerankV2(cfg v2.Config) rerankConRespaldo {
+	ms := cfg.RerankTimeoutMs
+	if ms <= 0 {
+		ms = v2.RerankTimeoutDefectoMs
+	}
+	ll := rerank.NuevoLlamaServer(cfg.RerankURL)
+	ll.MaxRunas = cfg.RerankMaxRunas // RERANK_MAX_RUNAS (0 = el de internal/rerank)
+	return rerankConRespaldo{principal: ll, timeout: time.Duration(ms) * time.Millisecond}
+}
+
+// reordenadorV2 adapta rerankConRespaldo a conocimiento.Reordenador: un error (o el tiempo agotado) vuelve como
+// error y el recuperador se queda con el orden léxico.
+type reordenadorV2 struct{ r rerankConRespaldo }
+
+func (x reordenadorV2) Reordenar(ctx context.Context, q string, docs []string) ([]float64, error) {
+	return x.r.Rerank(ctx, q, docs)
+}
+
 // busquedaV2: lo que /health dice de la búsqueda de fragmentos de la V2 (lo real, no lo pedido).
 var busquedaV2 = map[string]any{"modo": v2.BusquedaLexica}
 
 // buscadorV2 arma la búsqueda híbrida de internal/busqueda para la clase «fragmento» de la V2
 // (metrin/eval/BUSQUEDA.md §8): BM25F sobre kb/fragmentos*.jsonl (con los mismos ids que el índice vectorial) y el
 // vector del almacén de V1, de solo lectura, filtrado a la fuente s10-kb; RRF con las opciones medidas
-// (busqueda.OpcionesPorDefecto). El reranker solo con RERANK_URL (apagado por defecto: ~2 s y ~880 MB con Metal,
-// sin medir en la CPU de producción). V1 no usa nada de esto.
+// (busqueda.OpcionesPorDefecto). El reranker solo con RERANK_URL y «fragmento» en V2_RERANK_CLASES (latencia y RAM
+// en metrin/eval/BUSQUEDA.md §11; sin medir en la CPU de producción). V1 no usa nada de esto.
 func buscadorV2(cfg v2.Config, dirKB string, alm *almacen.Almacen) (*busqueda.Buscador, error) {
 	t0 := time.Now()
 	rutas, err := busqueda.RutasFragmentos(dirKB)
@@ -122,19 +175,14 @@ func buscadorV2(cfg v2.Config, dirKB string, alm *almacen.Almacen) (*busqueda.Bu
 		vec = busqueda.VectorAlmacen{A: alm, Filtro: map[string]string{"source": indexar.FuenteS10KB}}
 	}
 	var rr busqueda.Reordenador
-	if cfg.RerankURL != "" {
-		ms := cfg.RerankTimeoutMs
-		if ms <= 0 {
-			ms = v2.RerankTimeoutDefectoMs
-		}
-		ll := rerank.NuevoLlamaServer(cfg.RerankURL)
-		ll.MaxRunas = cfg.RerankMaxRunas // RERANK_MAX_RUNAS (0 = el de internal/rerank)
+	if cfg.Reordena(v2.RerankFragmento) {
 		if cfg.RerankTopN > 0 {
 			o.TopRerank = cfg.RerankTopN // RERANK_TOP_N
 		}
-		rr = rerankConRespaldo{principal: ll, timeout: time.Duration(ms) * time.Millisecond}
+		r := nuevoRerankV2(cfg)
+		rr = r
 		// El Buscador tiene su propio plazo: un poco más largo, para que el fallo que se anote sea el de ConRespaldo.
-		o.TimeoutRerank = time.Duration(ms)*time.Millisecond + 250*time.Millisecond
+		o.TimeoutRerank = r.timeout + 250*time.Millisecond
 	}
 	bu := busqueda.NuevoBuscador(lex, vec, rr, nil, o)
 	busquedaV2 = map[string]any{"modo": v2.BusquedaHibrida, "fragmentos": len(docs), "vector": vec != nil, "reranker": rr != nil}

@@ -67,6 +67,22 @@ const (
 	RerankMaxRunasDefecto = 800
 )
 
+// Clases que pasan por el reranker (V2_RERANK_CLASES, separadas por comas). «fragmento»: la búsqueda híbrida de
+// fragmentos (internal/busqueda reordena sus primeros resultados); «procedimiento» y «concepto»: el BM25 propio de
+// internal/v2/conocimiento, para ELEGIR el procedimiento o el concepto (rerank_clases.go). «ninguna» = ninguna. Solo
+// actúan con RERANK_URL. Medido el 06-10-2026 (metrin/eval/BUSQUEDA.md §12).
+const (
+	RerankFragmento     = "fragmento"
+	RerankProcedimiento = "procedimiento"
+	RerankConcepto      = "concepto"
+	RerankNinguna       = "ninguna"
+)
+
+// RerankClasesDefecto: las tres. Medido el 06-10-2026 con el benchmark de la V2 (194 casos; BUSQUEDA.md §12): PAS
+// 81,8 % frente a 60,0 % con el reranker solo en fragmentos o sin reranker, invención 0 % en todas; a cambio, p50 de
+// ~0,9 s (la Mac, Metal) y una abstención correcta menos (11 de 12).
+var RerankClasesDefecto = []string{RerankFragmento, RerankProcedimiento, RerankConcepto}
+
 // Config de la V2. Se lee del entorno (LeerConfig); los valores por defecto dejan la V2 apagada.
 type Config struct {
 	Version    tipos.Version // AGENT_VERSION: v1 (defecto) | v2 → todos los turnos en V2
@@ -89,6 +105,22 @@ type Config struct {
 	RerankTimeoutMs int    // RERANK_TIMEOUT_MS: ver RerankTimeoutDefectoMs
 	RerankTopN      int    // RERANK_TOP_N: candidatos de la fusión que pasan por el reranker (RerankTopNDefecto)
 	RerankMaxRunas  int    // RERANK_MAX_RUNAS: runas de cada candidato enviadas al reranker (RerankMaxRunasDefecto)
+	// V2_RERANK_CLASES: clases que pasan por el reranker (RerankClasesDefecto). Nombres desconocidos se ignoran; si
+	// no queda ninguno válido, el defecto. «ninguna» = el reranker no reordena nada aunque haya RERANK_URL.
+	RerankClases []string
+}
+
+// Reordena dice si la clase pasa por el reranker: hay RERANK_URL y la clase está en V2_RERANK_CLASES.
+func (c Config) Reordena(clase string) bool {
+	if c.RerankURL == "" {
+		return false
+	}
+	for _, x := range c.RerankClases {
+		if x == clase {
+			return true
+		}
+	}
+	return false
 }
 
 // LimitesDefecto son los del megaprompt.
@@ -114,7 +146,28 @@ func ConfigDefecto() Config {
 		RerankTimeoutMs: RerankTimeoutDefectoMs,
 		RerankTopN:      RerankTopNDefecto,
 		RerankMaxRunas:  RerankMaxRunasDefecto,
+		RerankClases:    append([]string(nil), RerankClasesDefecto...),
 	}
+}
+
+// leerClasesRerank: «fragmento,procedimiento,concepto» (en cualquier orden, sin repetir). Vacío o sin ningún nombre
+// válido → nil (se queda el defecto); «ninguna» → lista vacía.
+func leerClasesRerank(v string) []string {
+	var out []string
+	vis := map[string]bool{}
+	for _, x := range strings.Split(v, ",") {
+		x = strings.ToLower(strings.TrimSpace(x))
+		switch x {
+		case RerankNinguna:
+			return []string{}
+		case RerankFragmento, RerankProcedimiento, RerankConcepto:
+			if !vis[x] {
+				vis[x] = true
+				out = append(out, x)
+			}
+		}
+	}
+	return out
 }
 
 // LeerConfig lee la configuración de la V2 del entorno.
@@ -158,6 +211,9 @@ func LeerConfigDe(env func(string) string) Config {
 	entero(env, "RERANK_TIMEOUT_MS", &c.RerankTimeoutMs)
 	entero(env, "RERANK_TOP_N", &c.RerankTopN)
 	entero(env, "RERANK_MAX_RUNAS", &c.RerankMaxRunas)
+	if cs := leerClasesRerank(env("V2_RERANK_CLASES")); cs != nil {
+		c.RerankClases = cs
+	}
 	return c
 }
 

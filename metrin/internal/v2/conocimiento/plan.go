@@ -185,12 +185,19 @@ func (c *Constructor) candidatos(ctx context.Context, q tipos.Consulta, cands []
 	out := make([]candEf, 0, len(propios))
 	for _, x := range propios {
 		ef := x.Puntaje
-		if _, mio := x.Meta["cobertura"]; !mio {
-			switch {
-			case x.Rerank != nil:
-				ef = aUnidad(*x.Rerank)
-			case c.Rec != nil:
-				ef = c.Rec.Puntuar(q, clase, x.ID, x.Meta["manual"])
+		cub, mio := x.Meta["cobertura"]
+		switch {
+		case !mio && x.Rerank != nil:
+			ef = aUnidad(*x.Rerank)
+		case !mio && c.Rec != nil:
+			ef = c.Rec.Puntuar(q, clase, x.ID, x.Meta["manual"])
+		case x.Rerank != nil && ClasesRerankDefecto[clase]:
+			// Reranker de clase (rerank_clases.go): ORDENA y puede aceptar lo que la cobertura léxica no alcanzaba,
+			// pero no rechaza lo que ya aceptaba: el puntaje efectivo es el mayor de los dos (la sigmoide del logit y
+			// la cobertura del mismo candidato). La escala absoluta del logit frente a un texto representativo (no
+			// un pasaje) no está calibrada: un «¿dónde está…?» puede dar logit ≈ 0 al procedimiento correcto.
+			if v, err := strconv.ParseFloat(cub, 64); err == nil && v > ef {
+				ef = v
 			}
 		}
 		out = append(out, candEf{x, ef})
@@ -235,12 +242,17 @@ func (c *Constructor) procsValidos(cs []candEf) []candEf {
 	return out
 }
 
-// ambiguo: los dos primeros empatan (puntaje y BM25) y la consulta no nombra a uno solo de ellos.
+// ambiguo: los dos primeros empatan (puntaje y BM25; o, si los dos vienen del reranker, sus logits: EmpateRerank)
+// y la consulta no nombra a uno solo de ellos.
 func (c *Constructor) ambiguo(q tipos.Consulta, cs []candEf) bool {
-	if len(cs) < 2 || cs[1].ef < c.UmbralProcedimiento || cs[1].ef < cs[0].ef-0.05 {
+	if len(cs) < 2 || cs[1].ef < c.UmbralProcedimiento {
 		return false
 	}
-	if cs[0].Lexico > 0 && cs[1].Lexico < 0.95*cs[0].Lexico {
+	if empate, ok := EmpateRerank(cs[0].Candidato, cs[1].Candidato); ok {
+		if !empate {
+			return false
+		}
+	} else if cs[1].ef < cs[0].ef-0.05 || (cs[0].Lexico > 0 && cs[1].Lexico < 0.95*cs[0].Lexico) {
 		return false
 	}
 	a, b := c.Base.porProc[cs[0].ID], c.Base.porProc[cs[1].ID]
@@ -815,8 +827,9 @@ func (c *Constructor) concepto(ctx context.Context, q tipos.Consulta, cands []ti
 		}
 	}
 	if ofrecido == nil && c.Rec != nil {
+		// Búsqueda interna por el término (no por la pregunta): léxica, sin reranker (su puntaje es la cobertura).
 		qq := tipos.Consulta{Original: strings.Join(cc.Nombres(), " ")}
-		if res, _, err := c.Rec.Buscar(ctx, qq, ClaseProcedimiento, 1); err == nil && len(res) > 0 && res[0].Puntaje >= c.UmbralProcedimiento {
+		if res, _, err := c.Rec.buscar(ctx, qq, ClaseProcedimiento, 1, false); err == nil && len(res) > 0 && res[0].Puntaje >= c.UmbralProcedimiento {
 			ofrecido = c.Base.porProc[res[0].ID]
 		}
 	}
