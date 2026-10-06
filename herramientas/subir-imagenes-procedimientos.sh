@@ -16,7 +16,7 @@
 # Se ejecuta desde la copia de s10-conocimiento que TIENE data/imagenes (el clon de davrv93/s10-metrin en la Mac;
 # AgenteS10 no las tiene). No borra nada en el servidor (sin --delete) y no toca otras carpetas.
 #
-#   herramientas/subir-imagenes-procedimientos.sh --listar    # solo la lista y el tamaño; no se conecta
+#   herramientas/subir-imagenes-procedimientos.sh --listar    # la lista (stdout) y el tamaño (stderr); no se conecta
 #   herramientas/subir-imagenes-procedimientos.sh --simular   # rsync --dry-run contra el servidor
 #   herramientas/subir-imagenes-procedimientos.sh             # sube y luego comprueba que no quede nada pendiente
 #
@@ -82,7 +82,7 @@ while IFS= read -r r; do
     [ "$FALTAN" -le 5 ] && echo "falta en local: $DATOS/$r" >&2
   fi
 done < "$LISTA"
-echo "Fotos referenciadas: $N ($((BYTES / 1024 / 1024)) MB, $BYTES bytes) en $DATOS; faltan en local: $FALTAN"
+echo "Fotos referenciadas: $N ($((BYTES / 1024 / 1024)) MB, $BYTES bytes) en $DATOS; faltan en local: $FALTAN" >&2
 if [ "$FALTAN" -gt 0 ]; then
   echo "Hay fotos que no están en $DATOS: ¿es la copia con data/imagenes? (DATOS=/ruta/a/data)" >&2
   exit 1
@@ -95,6 +95,7 @@ fi
 [ -r "$LLAVE" ] || { echo "No puedo leer la llave $LLAVE (LLAVE=/ruta)" >&2; exit 1; }
 SSH="ssh -i $LLAVE -o IdentitiesOnly=yes"
 # -rltzO sin -p/-o/-g ni --delete, como el CD: los contenedores escriben como root dentro de la carpeta.
+# Solo opciones que entiende el rsync 2.6.9 de macOS (/usr/bin/rsync): nada de --info=….
 # --files-from implica rutas relativas: data/imagenes/<manual>/<hash>.png → ~/$DIR_REMOTO/imagenes/<manual>/<hash>.png
 OPC=(-rltzO --files-from="$LISTA" -e "$SSH")
 if [ "$MODO" = "--simular" ]; then
@@ -102,10 +103,10 @@ if [ "$MODO" = "--simular" ]; then
   echo "(simulación: no se subió nada)"
   exit 0
 fi
-rsync "${OPC[@]}" --info=stats1 "$DATOS/" "$DESTINO:$DIR_REMOTO/"
+rsync "${OPC[@]}" --stats "$DATOS/" "$DESTINO:$DIR_REMOTO/"
 # Comprobación: una segunda pasada en seco no debe encontrar nada que copiar (un permiso de root que impidió
 # escribir se vería aquí aunque rsync no hubiese fallado).
-PENDIENTES=$(rsync "${OPC[@]}" --dry-run --itemize-changes "$DATOS/" "$DESTINO:$DIR_REMOTO/" | grep -c '^<f' || true)
+PENDIENTES=$(rsync "${OPC[@]}" --dry-run --itemize-changes "$DATOS/" "$DESTINO:$DIR_REMOTO/" | grep -c '^[<>]f' || true)
 if [ "$PENDIENTES" != 0 ]; then
   echo "Quedaron $PENDIENTES fotos sin subir (¿carpetas de root en ~/$DIR_REMOTO/imagenes?)" >&2
   exit 1
