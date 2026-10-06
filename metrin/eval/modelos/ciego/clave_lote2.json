@@ -1,0 +1,34 @@
+{
+ "gen-003": {
+  "A": "qwen3-4b-2507__reescribir",
+  "B": "qwen3.5-2b__reescribir"
+ },
+ "gen-010": {
+  "A": "qwen3.5-2b__reescribir",
+  "B": "qwen3-4b-2507__reescribir"
+ },
+ "gen-016": {
+  "A": "qwen3-4b-2507__reescribir",
+  "B": "qwen3.5-2b__reescribir"
+ },
+ "gen-022": {
+  "A": "qwen3.5-2b__reescribir",
+  "B": "qwen3-4b-2507__reescribir"
+ },
+ "gen-030": {
+  "A": "qwen3.5-2b__reescribir",
+  "B": "qwen3-4b-2507__reescribir"
+ },
+ "gen-033": {
+  "A": "qwen3.5-2b__reescribir",
+  "B": "qwen3-4b-2507__reescribir"
+ },
+ "gen-035": {
+  "A": "qwen3-4b-2507__reescribir",
+  "B": "qwen3.5-2b__reescribir"
+ },
+ "gen-036": {
+  "A": "qwen3.5-2b__reescribir",
+  "B": "qwen3-4b-2507__reescribir"
+ }
+}
