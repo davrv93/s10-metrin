@@ -1,13 +1,17 @@
 # EC2 (3.135.80.228): se suma a docker-compose.yml.
 #
 #   docker compose -f docker-compose.yml -f docker-compose.ec2.yml --profile llm up -d --build \
-#     cortex admin programador metrin trazas trazas-pg ollama
+#     cortex admin programador metrin trazas trazas-pg ollama reranker
 #
 # - Une cada servicio a la red externa «edge» con un alias s10-*: el nginx de la raíz
 #   del repo (pronto_nginx) los publica en <servicio>.3-135-80-228.sslip.io.
 # - Metrín usa el Ollama del propio compose (en el EC2 no hay GPU ni MLX) y no
 #   llama al juez JEV, que solo existe en el Mac.
 # - landing-cd no se levanta: su carpeta no está en el repo.
+# - V2, modo traza, búsqueda híbrida y reranker «todo habilitado» (decisión del usuario, 06-10-2026;
+#   docs/V2-RAG-PROCEDURAL.md §13). Van con ${VAR:-valor}: el .env del servidor puede cambiarlos sin tocar
+#   este archivo (y si los trae, mandan los suyos). Lo que de verdad quedó se ve en /health («traza», «v2»).
+# - El modelo del reranker (438 MB) no está en git: el CD lo baja con metrin/descargar-reranker.sh.
 services:
   cortex:
     networks:
@@ -32,9 +36,29 @@ services:
       LLM_MAX_TOKENS: "320"
       JEV_URL: ""
       JEV_MODEL: ""
+      # Modo traza: /ask y /ask/stream devuelven «traza» solo si la petición trae "traza": true.
+      METRIN_TRAZA: ${METRIN_TRAZA:-1}
+      # V2 disponible (selector de la página y "version": "v2"), pero V1 sigue siendo la de por defecto.
+      AGENT_V2_ENABLED: ${AGENT_V2_ENABLED:-true}
+      AGENT_VERSION: ${AGENT_VERSION:-v1}
+      AGENT_V2_PERCENTAGE: ${AGENT_V2_PERCENTAGE:-0}
+      # Búsqueda híbrida (BM25F + vector) y reranker del servicio «reranker» para fragmentos, procedimientos y
+      # conceptos. Si el reranker no contesta en RERANK_TIMEOUT_MS, la V2 sigue con el orden léxico y lo anota.
+      V2_BUSQUEDA: ${V2_BUSQUEDA:-hibrida}
+      RERANK_URL: ${RERANK_URL:-http://reranker:8080}
+      RERANK_TIMEOUT_MS: ${RERANK_TIMEOUT_MS:-3000}
+      V2_RERANK_CLASES: ${V2_RERANK_CLASES:-fragmento,procedimiento,concepto}
     networks:
       default: {}
       edge: { aliases: [s10-metrin] }
+
+  # Reranker de la V2 (servicio del docker-compose.yml): solo en la red interna, sin alias en «edge» ni puerto.
+  # En 2 vCPU sin GPU su latencia está SIN MEDIR (en la Mac, solo CPU: p50 16,7 s por llamada, frente a 3 s de
+  # tope): lo normal es que la V2 responda con el orden léxico. cpus: 1 deja la otra vCPU a Ollama y a Metrín
+  # mientras el reranker termina las llamadas que la V2 ya dio por perdidas.
+  reranker:
+    mem_limit: 1g
+    cpus: 1
 
   trazas:
     environment:

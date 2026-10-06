@@ -1,4 +1,5 @@
-# Rutas que el servidor escribe en marcha (Cortex, programador, panel, metrin).
+# Rutas que el servidor escribe en marcha (Cortex, programador, panel, metrin) o baja él mismo
+# (el modelo del reranker, metrin/descargar-reranker.sh).
 # El CD las siembra la primera vez y después NO las pisa: lo que cambió en el
 # servidor manda. Formato: patrones de rsync --exclude-from, anclados a la raíz.
 /.env
@@ -8,3 +9,4 @@
 /tutoriales/
 /render/
 /trazas/datos/
+/metrin/modelos/reranker/
