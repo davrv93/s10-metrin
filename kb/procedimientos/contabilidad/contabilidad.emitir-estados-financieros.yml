@@ -1,0 +1,82 @@
+id: contabilidad.emitir-estados-financieros
+version: 1
+modulo: contabilidad
+titulo: "Visualizar e imprimir los estados financieros"
+objetivo: "Visualizar los informes contables previamente configurados (por ejemplo, el Estado de Situación Financiera) con los importes procesados del periodo elegido y abrir su vista preliminar."
+nivel: basico
+preguntas:
+  - "cómo saco el estado de situación financiera en s10"
+  - "como veo los estados financieros del mes"
+  - "como imprimo el balance general en contabilidad"
+  - "donde se evaluan los estados financieros"
+  - "como veo el estado financiero de un periodo"
+  - "como abro la vista preliminar del estado financiero"
+  - "como emitir estados financieros en s10 contabilidad"
+  - "estados finacieros s10 como los saco"
+aliases:
+  - "estados financieros"
+  - "evaluar estado financiero"
+  - "estado de situación financiera"
+  - "emitir estados financieros"
+entidades:
+  modulo: "Contabilidad"
+  pantallas: ["Estados Financieros", "Informes Contables"]
+  objetos: ["estado financiero", "periodo", "vista preliminar"]
+prerrequisitos:
+  - texto: "Los informes contables deben estar previamente estructurados y configurados desde el grupo Parámetros, escenario Informes Contables."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s062]
+pasos:
+  - n: 1
+    id: "contabilidad.emitir-estados-financieros#1"
+    accion: "Ingrese al escenario **Estados Financieros**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s062]
+    pagina: null
+  - n: 2
+    id: "contabilidad.emitir-estados-financieros#2"
+    accion: "Seleccione el informe a visualizar (por ejemplo, **ESTADO DE SITUACION FINANCIERA**)."
+    fuente: [img-aae9362ff3cf-0000, web-https-documentacion-s10peru-com-manual-d-s062]
+    pagina: null
+    fotos:
+      - id: "f77b13340e64"
+        ruta_o_url: "imagenes/manual-de-contabilidad/aae9362ff3cf.png"
+        pagina: null
+        ocr: "“chive Yer Catdlogos Herramientas 2\n6h5Re!\n2 oe ESTADO DE SITUACION FINANCIERA\nLibros\nla Deserpc eS) A\n= ACTIVO\nLibro Mayor FE ACTIVO CORRIENTE Seleccionar el Informe a Visualizar\nEfectivo y Equivalente de Efectivo 40,286,112.73._ | trabajado desde el Grupo Parametros\n— Cuentas por Cobrar Comerciales, Neto 58,514,538.48 | escenario Informes Contables.\ntras cuentas por Cobrar a Partes Relacionadas…"
+  - n: 3
+    id: "contabilidad.emitir-estados-financieros#3"
+    accion: "Seleccione el **Periodo**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s062]
+    pagina: null
+  - n: 4
+    id: "contabilidad.emitir-estados-financieros#4"
+    accion: "Haga clic en la opción **Evaluar Estado Financiero**."
+    resultado: "Se visualizan la información y los importes procesados según la selección del periodo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s062]
+    pagina: null
+    fotos:
+      - id: "ad2ef46f1921"
+        ruta_o_url: "imagenes/manual-de-contabilidad/5ffa3555277c.png"
+        pagina: null
+        caption: "Visualización de los Informes Contables previamente estructurados y configurados desde el Grupo Parámetros, escenario Informes Contables. Clic en la opción Evaluar Estado Financiero para visualizar la información e Importes procesados según la selección del Periodo."
+        ocr: "Eliminar Estado Financiero\nContraer; CUENTA +\nSader: Tades +\nas Exportar a Microsoft Excel\nInmovilizar\n$ Refrescar"
+  - n: 5
+    id: "contabilidad.emitir-estados-financieros#5"
+    accion: "Haga clic en el icono **Vista Preliminar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s062]
+    pagina: null
+    fotos:
+      - id: "6ab55886d041"
+        ruta_o_url: "imagenes/manual-de-contabilidad/b46040be0814.png"
+        pagina: null
+        caption: "Clic en el Icono Vista Preliminar"
+      - id: "c06f6ca2b428"
+        ruta_o_url: "imagenes/manual-de-contabilidad/d2bc96322b47.png"
+        pagina: null
+        caption: "Clic en el Icono Vista Preliminar"
+        ocr: "alco, i jae s \\acober\nVia |\n‘$10 Pagina: 1\nESTADO DE SITUACION FINANCIERA\nDENOMINACION ORAZON SOCIAL Demo SOERP S.A\nte Sooenent\nnow\nAcTIVO CORRIENTE\nEteivoy Equi de ecto w26in7\nCuenlas por Cobar Comets, Nelo 5 5838.45\nChas ula pr Cobar Paes Reloads nstis6i0\nChas uel pr Cabra tenes rir?\nee Ccrtoa p+ tips adeead\nrosisios sass?\nTOTAL ACTWo CORRIENTE vues 7469\nAcTO Wo CORRENTE\nPropuedades, Maquinaiasy…"
+verificacion: []
+errores_frecuentes: []
+relacionados: [contabilidad.configurar-informe-contable]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s062, manual: "Manual de Contabilidad", seccion: "6.7 Estados Financieros", pagina: null}
+  - {id: img-aae9362ff3cf-0000, manual: "Manual de Contabilidad", seccion: "aae9362ff3cf.png", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

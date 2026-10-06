@@ -1,0 +1,126 @@
+id: facturacion-electronica.enviar-comprobantes-a-sunat
+version: 1
+modulo: facturacion-electronica
+titulo: "Enviar comprobantes electrónicos a SUNAT"
+objetivo: "Enviar a SUNAT, desde el escenario Documentos por cobrar, las facturas y notas de crédito y débito electrónicas, y revisar si fueron aceptadas o rechazadas."
+nivel: basico
+preguntas:
+  - "cómo envío una factura electrónica a sunat"
+  - "como mando mis notas de credito electronicas a la sunat desde s10"
+  - "dónde veo los documentos pendientes de envío a sunat"
+  - "no me aparece la opción enviar a sunat"
+  - "cómo sé si sunat aceptó o rechazó mi factura"
+  - "en cuántos días tengo que enviar la factura electrónica a sunat"
+  - "como enviar factura a la sunat en s10"
+  - "como envio una boleta al portal del s10"
+  - "como se si el cliente ya vio su comprobante electronico"
+aliases:
+  - "enviar a SUNAT"
+  - "envío a SUNAT"
+  - "documentos pendientes de envío"
+  - "mandar factura electrónica"
+  - "estado SUNAT"
+entidades:
+  modulo: "Facturación Electrónica"
+  pantallas: ["Documentos por cobrar", "Envio de Documento a SUNAT"]
+  objetos: ["factura electrónica", "nota de crédito", "nota de débito", "talonario de emisión electrónica", "boleta de venta"]
+prerrequisitos:
+  - texto: "El documento debe registrarse con la opción “Sistema Emisión Electrónica SEE” activada, para que tome la numeración del talonario electrónico."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s008]
+  - texto: "El documento debe estar relacionado a un talonario de emisión electrónica."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s009]
+pasos:
+  - n: 1
+    id: "facturacion-electronica.enviar-comprobantes-a-sunat#1"
+    accion: "Vaya al escenario **Documentos por cobrar**, donde se activan las opciones de envío."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s009]
+    pagina: null
+  - n: 2
+    id: "facturacion-electronica.enviar-comprobantes-a-sunat#2"
+    accion: "Ubique el documento electrónico (factura, nota de crédito o nota de débito) y elija la opción **Enviar a SUNAT**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s009, img-cc51da542ce5-0000]
+    pagina: null
+    fotos:
+      - id: "456b5450693c"
+        ruta_o_url: "imagenes/manual-de-facturacion-electronica/578328e37196.png"
+        pagina: null
+        caption: "Para que se active la opción “Enviar a SUNAT”, el documento debe estar relacionado a un talonario de emisión electrónica."
+        ocr: "‘pete Yer Catlogos Heramientas 2\neee\nD sucrntes\nsR -L | Documentos por Cobrar\nPa ssreu 1\nad 2 oe. | Broren| SO0SIS [SSTEMAD SAC 1 A] bocimerno [oor acruens __|-]=|m\ncecaartosperctrar |* SATOCSNA) WEES) v BET of ud\ne ‘cmpdopoePoyeco——senaamerpoain =] a)\nuo ans [po de Proyecto ———S = ence race ine!\nbenny ‘Gnpo.e|tecarsate | Feta | Verement —[PerngoApieacén __|N*Ootimento_|oosenacenes Bs\nBo o a\n@ Pra…"
+  - n: 3
+    id: "facturacion-electronica.enviar-comprobantes-a-sunat#3"
+    accion: "Si es una boleta de venta que aún no se ha enviado al portal del S10, use la opción que aparece en el menú para realizar esta acción."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s010]
+    pagina: null
+    fotos:
+      - id: "31ecec86d8aa"
+        ruta_o_url: "imagenes/manual-de-facturacion-electronica/c38f35e9dbc8.png"
+        pagina: null
+        caption: "Si la Boleta de Venta aún no ha sido enviado al portal del S10 se mostrará una opción en el menú para realizar esta acción."
+        ocr: "el ase x\nturin; 05020046 - SISTEMA 10S. Principal ; Eerx\n[Archivo] Ver Catdlogos Herramientas 2\nBeae\n[= BEsertono [Documentos por Cobrar\nemcee | ¢ actereasc\n© @nersios| +) | ‘WTodos Periogo\nA = po Documento 158 BOLETAS DE VENTA ELECTRONICA ~| . | ®& @\n= = @ssTeMa x\nvr eer WEYARe -AF cae\n|= BpBandeja |aio\np fee\ncoreramo 6 8 CanpdsocodeNegoco ——([encuatuerposcén =] ——SSSCS*~*S~S*«éiC Ge\n‘cobrnzas Do…"
+  - n: 4
+    id: "facturacion-electronica.enviar-comprobantes-a-sunat#4"
+    accion: "Para enviar varios a la vez, use la opción **Documentos pendientes de envío**: muestra todos los documentos electrónicos que aún no se han enviado a SUNAT (facturas, notas de crédito y notas de débito)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s009]
+    pagina: null
+  - n: 5
+    id: "facturacion-electronica.enviar-comprobantes-a-sunat#5"
+    accion: "En esa ventana, seleccione uno o más documentos y envíelos a SUNAT."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s009]
+    pagina: null
+    fotos:
+      - id: "3d97bca90aa8"
+        ruta_o_url: "imagenes/manual-de-facturacion-electronica/cc51da542ce5.png"
+        pagina: null
+        caption: "Desde esta ventana es posible seleccionar uno o más documentos y enviarlos a SUNAT."
+        ocr: "DEyFe8 val ada\n1/9 Camp Tpo Dooumento ~ en cualquer postin J (2) Grupo:\n\no Deeumento ___|N* Documenta _|Soxeo oe regocio rena emisén|PerogoApscacin __|Moneda [Total Estavo Docun\nTNOTAS DE CREDITO NC B850-0000007 STOT@O15 201607 -Juso 2015 USS 4508270 Emo\nNOTAS DE DEBTO  ND.BBt2-0000001 Yer Documenta JS. 201807-su802015 St. 259.60 Emado\nNOTAS DEDEBTO NO B812.0000002 PEREZ PEREA. 3 201607 Wo 2015S ‘…"
+  - n: 6
+    id: "facturacion-electronica.enviar-comprobantes-a-sunat#6"
+    accion: "Siga la ventana **Envio de Documento a SUNAT**, que informa sobre el envío: al final muestra si el documento fue aceptado o rechazado por la SUNAT."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s009, img-625545bd5e0d-0000]
+    pagina: null
+    fotos:
+      - id: "e82292b6936d"
+        ruta_o_url: "imagenes/manual-de-facturacion-electronica/625545bd5e0d.png"
+        pagina: null
+        ocr: "Envio de Documento a SUNAT\nTipo : Nota de Débito\nN* Documento : FF12-1\nEnviendo documento electrénico"
+  - n: 7
+    id: "facturacion-electronica.enviar-comprobantes-a-sunat#7"
+    accion: "En la lista de documentos, revise las columnas **Estado SUNAT** y **Observaciones SUNAT**, que traen la respuesta del envío."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s009, img-90bea5f08a5e-0000]
+    pagina: null
+    fotos:
+      - id: "f8d13e950093"
+        ruta_o_url: "imagenes/manual-de-facturacion-electronica/90bea5f08a5e.png"
+        pagina: null
+        ocr: "ros)\nArchivo Yer Catdlogos Herramientas 2\nogee\nPrenarenn [Documentos por Cobrar\nA Empresa)2200061S [SISTEMA 10 SAC. =| #4] pocumento lootracturas | HD\nocumentos por eobror ) THEIZAS1 6S | v BE ca tl\nE\n‘oma de | 225. CampdGrupo de Proyecto ~ J[en cualquier posciin ~ [XJ (23) Grupo:\npik Aiio |Afio - Mes | zimpreso? |impreso | Fecha impr| Grupo Socio «|Saido por Cobrai| Estado SUNAT |Observaciones SU…"
+  - n: 8
+    id: "facturacion-electronica.enviar-comprobantes-a-sunat#8"
+    accion: "Para saber si el cliente ya visualizó el documento en el portal, ejecute la opción **Actualizar Estado de Visualización** y revise las columnas de visualización en **Documentos por Cobrar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s012]
+    pagina: null
+    fotos:
+      - id: "82c4c0f7bcc1"
+        ruta_o_url: "imagenes/manual-de-facturacion-electronica/374859d70cce.png"
+        pagina: null
+        caption: "En el escenario de Documentos por Cobrar se muestran columnas con estos datos de visualización del documento."
+        ocr: "[Documentos por Cobrar\n\n[Empresa]05020046 [SISTEMA 10 SAC. =| #4] pocumento |157 FACTURA ELECTRONICA ¥ |B #0\n\nE288 vB éae\n\n5/74 — CampdN° Lquidacién/Portafoko _~ |[En cualquier posicén ~ | [X) (2) Grupo:\n\nDocumento RetaciAfio - Mes _| zimpreso? |impreso por _|Fecha impresi| Grupo Soci|Saido por Cobrai| Estado SUNAT isyantSGo? [Fecha vieualzacion ~~ [a\n201510 Oc [a] 044 GRUPC 849.60 Aceptado Si 02/…"
+verificacion:
+  - texto: "En la columna Estado SUNAT el documento figura como Aceptado, y en Observaciones SUNAT se lee, por ejemplo, que la factura ha sido aceptada."
+    fuente: [img-90bea5f08a5e-0000, web-https-documentacion-s10peru-com-manual-d-s009]
+errores_frecuentes:
+  - sintoma: "No se activa la opción Enviar a SUNAT."
+    solucion: "El documento debe estar relacionado a un talonario de emisión electrónica."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s009]
+  - sintoma: "SUNAT rechaza el documento electrónico por haberse enviado fuera de plazo."
+    solucion: "La factura electrónica y sus notas de crédito y débito asociadas deben enviarse a más tardar dentro de los 7 días contados desde el día siguiente de la fecha de emisión; pasado dicho plazo, el documento será rechazado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s009]
+relacionados: [facturacion-electronica.configurar-emision-electronica, facturacion-electronica.comunicar-baja-de-comprobante]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s008, manual: "Manual de Facturación Electrónica", seccion: "2.2.1 Edición de Documentos", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s009, manual: "Manual de Facturación Electrónica", seccion: "2.2.2 Envío a Sunat", pagina: null}
+  - {id: img-cc51da542ce5-0000, manual: "Manual de Facturación Electrónica", seccion: "cc51da542ce5.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s010, manual: "Manual de Facturación Electrónica", seccion: "2.2.3 Envío de Boletas de Venta al Portal", pagina: null}
+  - {id: img-625545bd5e0d-0000, manual: "Manual de Facturación Electrónica", seccion: "625545bd5e0d.png", pagina: null}
+  - {id: img-90bea5f08a5e-0000, manual: "Manual de Facturación Electrónica", seccion: "90bea5f08a5e.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s012, manual: "Manual de Facturación Electrónica", seccion: "2.2.4 Visualización de documentos", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

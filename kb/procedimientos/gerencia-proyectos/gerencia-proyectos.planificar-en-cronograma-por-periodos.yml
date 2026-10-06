@@ -1,0 +1,162 @@
+id: gerencia-proyectos.planificar-en-cronograma-por-periodos
+version: 1
+modulo: gerencia-proyectos
+titulo: "Planificar el proyecto en el Cronograma por Periodos"
+objetivo: "Programar manualmente el proyecto ingresando porcentajes o metrados (no costo) en los periodos a programar, mensuales en la rama venta y semanales en la rama meta, y calcular los recursos según los análisis de precios unitarios."
+nivel: intermedio
+preguntas:
+  - "cómo programo el proyecto en el cronograma por periodos"
+  - "como hago la planificacion manual del proyecto en gerencia de proyectos"
+  - "como ingreso porcentajes programados por semana"
+  - "como reparto un porcentaje en varias semanas del cronograma"
+  - "como calculo los recursos despues de programar"
+  - "donde se hace la programacion fisica de la obra en s10"
+  - "como uso saldo proyectado en el cronograma"
+  - "como programo la rama meta por semanas"
+  - "planificacion fisica del proyeto cronograma programado"
+aliases:
+  - "planificar proyecto"
+  - "programar cronograma"
+  - "cronograma por periodos"
+  - "programación manual"
+  - "planificación física"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Cronograma por Periodos", "Modo de visualización", "Recalcular"]
+  objetos: ["cronograma", "periodo", "actividad", "metrado", "recursos"]
+prerrequisitos:
+  - texto: "Planifique o programe sólo si el proyecto tiene asignado presupuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s081]
+  - texto: "En el escenario de Actividades debe estar preparada la información (fases y actividades) que se utilizará en la planificación física del proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s081]
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.planificar-en-cronograma-por-periodos#1"
+    accion: "Elija el proyecto y la rama, y luego ingrese al escenario del **Cronograma por Periodos**."
+    donde: "Escenario Cronograma por Periodos"
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s083, img-cc3cf4387668-0000]
+    pagina: null
+    fotos:
+      - id: "58653b8affa4"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/cc3cf4387668.png"
+        pagina: null
+        ocr: "Proyectos\n© @jescrtorio | Elia]\nSD PUENTE EN CARRETERA\n© 2 Principal\na a] eta font\n5 venta\n\nCronograma 5] Linea Base\n“251 Luego, (=) 3] SubContretos"
+  - n: 2
+    id: "gerencia-proyectos.planificar-en-cronograma-por-periodos#2"
+    accion: "De la barra de botones elija **Modo de visualización**, marque **Programado** y elija el modo porcentaje o **Metrado** (no costo)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s083, img-65cd88abeb07-0000]
+    pagina: null
+    fotos:
+      - id: "676af32717c1"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/65cd88abeb07.png"
+        pagina: null
+        ocr: "a a\nIZ Modo de Visualizacién [2 lps\nModo\n© Programado — € Valorizacién ~ Ejecutado (OT)\nAvance Programe en mado\nfronograma porcentaje o metrado\n6h err no en costo\n Metrado\n© Costa,"
+  - n: 3
+    id: "gerencia-proyectos.planificar-en-cronograma-por-periodos#3"
+    accion: "Use el botón de **Escala de periodo** y elija el periodo (por ejemplo, **Periodo Semanal** en la rama meta)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s083, img-de49ab85e383-0000]
+    pagina: null
+    fotos:
+      - id: "04bc4030222e"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/de49ab85e383.png"
+        pagina: null
+        ocr: "Use este botény elija\nMado Programado - Cronograma poreentaje (%) 81 perfodo semanal\nVistas | Todo ~] Escala de periodo [Periodo Semanal >]\n|Periodo Mensual"
+  - n: 4
+    id: "gerencia-proyectos.planificar-en-cronograma-por-periodos#4"
+    accion: "Ingrese el porcentaje en la celda del periodo: en la fila del nombre del proyecto (totalizador) se replica en toda la columna; en la de un título, en las actividades subordinadas; en la de una actividad, solo afecta a esa actividad."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s083]
+    pagina: null
+    fotos:
+      - id: "0a0c618dbb9a"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/9ddde69f2335.png"
+        pagina: null
+        caption: "Ingreso manual de datos para el cronograma programado"
+        ocr: "Descripcién (WBS - Actividad) Semana 17 | Semana 18 | Semana 19 eal\n20\n=) Puente en carretera -Ce 7]\n=] Preparacién de agregados PA, 7 Ce77\n=] PA- Extraccién\nExtraccién cantera (sin explosivos) lL @y 1\nSl PA- Chancado\nChancado para agregado grueso concreto\n=] Construccién C\n=] C - Estribo derecho\n=] C-ED Cimientos\n=] C-ED-C- Solado\nConcreto simple fc = 100 kg/cm2 para solac [ ‘@ ]\n=] C-EC-C- Encof…"
+  - n: 5
+    id: "gerencia-proyectos.planificar-en-cronograma-por-periodos#5"
+    accion: "Para repartir un porcentaje entre varios periodos, marque un bloque horizontal de celdas, registre el porcentaje a repartir y elija **Repartir (solo horizontal)**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s083, img-f4285587c768-0000]
+    pagina: null
+    fotos:
+      - id: "4c312e3b6678"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/f4285587c768.png"
+        pagina: null
+        ocr: "Gerencia de Proyectos\nIngrese la cantidad que desea asignar a las actividades\nseleccionadas\n\n¢ , Sali\n© Repetir (© Repartir (solo horizontal)"
+  - n: 6
+    id: "gerencia-proyectos.planificar-en-cronograma-por-periodos#6"
+    accion: "Para repetir un mismo porcentaje, marque un bloque vertical de celdas, registre el porcentaje y elija **Repetir**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s083, img-607948ac1a75-0000]
+    pagina: null
+    fotos:
+      - id: "232cd81d446f"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/607948ac1a75.png"
+        pagina: null
+        ocr: "Gerencia de Proyectos\nIngrese la cantidad que desea asignar a las actividades\nseleccionadas\nF Sait\n@ Repetir: © Repartir (solo horizontal) __sai_|\nCagece"
+  - n: 7
+    id: "gerencia-proyectos.planificar-en-cronograma-por-periodos#7"
+    accion: "Para visualizar el porcentaje o la cantidad de metrado programado, haga clic en la cabecera del periodo semanal para marcar un bloque."
+    resultado: "Se obtiene el porcentaje programado acumulado de cada una de las actividades."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s083]
+    pagina: null
+    fotos:
+      - id: "86d64c23158a"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/095454f1d5e7.png"
+        pagina: null
+        caption: "Para visualizar el porcentaje o cantidad de metrado programado; haga clic en la cabecera del periodo semanal para marcar un bloque."
+        ocr: "= E HT\nDescripcidn (WBS - Activiclacl)\n© Puente en carretera\n| Preparacién de agregadas PA ad\n= sobre el bloque\n) PA - Extraccion\nExtraccién cantera (sin explosivos) 5.0000\nEl PA- Chancado F\nChancado para agregado grueso concreto [ [ies] Sutter pesiude\n[PA Zarencien ="
+  - n: 8
+    id: "gerencia-proyectos.planificar-en-cronograma-por-periodos#8"
+    accion: "Con el bloque marcado, haga clic derecho y elija **Saldo proyectado** para tomar el saldo del porcentaje o metrado que falta programar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s083, img-cf050335f60e-0000]
+    pagina: null
+    fotos:
+      - id: "cb3814f6bb50"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/cf050335f60e.png"
+        pagina: null
+        ocr: "_ |} Haga clic en Ia cabecera para marcar un bloque\n—\non 20\n| PA- Chancado\nChancado para agregado grueso concreto g 5.0000 ~ |\n PA- Zarandeo E Haga clic derecho im]\nZarandeo mecanico para agregado (concreto) 5.0000 sobre el bloque | | [|\n& Quitar periodo\nSaldo proyectado"
+  - n: 9
+    id: "gerencia-proyectos.planificar-en-cronograma-por-periodos#9"
+    accion: "Para calcular los recursos, haga clic derecho sobre la grilla y elija **Recalcular por escala**."
+    resultado: "El sistema calcula la cantidad de recursos de los metrados o porcentajes ingresados, de acuerdo al análisis de precios unitarios."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s084, img-c21ea972d2ed-0000]
+    pagina: null
+    fotos:
+      - id: "43f2e0cf2e25"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/c21ea972d2ed.png"
+        pagina: null
+        ocr: "“\nDescripcién (WBS - Actividad) Semana17 | Semana18 Semana19 Semana\nwa 20\n| PA- Chancado\nChancado para agregado grueso concreto Clie derecho 5.0000 90.0000\n| PA- Zarandeo a\nZarandeo mecanico para agregado (concreto) 5 0000) 5.0000 90.0000\n~ | E Quitar periodo\na3\n= Recalcular por escala"
+  - n: 10
+    id: "gerencia-proyectos.planificar-en-cronograma-por-periodos#10"
+    accion: "En la ventana **Recalcular**, use el botón para confirmar el cálculo."
+    resultado: "Los resultados de la planificación se verán después de programar con el MS Project."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s084, img-989083841cdc-0000]
+    pagina: null
+    fotos:
+      - id: "71c663fce2d6"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/989083841cdc.png"
+        pagina: null
+        ocr: "Recalcular"
+verificacion: []
+errores_frecuentes:
+  - sintoma: "No puede ingresar datos en la grilla del cronograma."
+    solucion: "Para ingresar información elija modo porcentaje o metrado: el sistema no permite el ingreso de información en modo costo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s083, img-df5affe5f045-0000]
+  - sintoma: "Cambió el presupuesto y usa pedidos automáticos."
+    solucion: "Use el botón para tomar los cambios en el escenario de Actividades; luego, en el Cronograma por periodos en modo programado metrado, haga clic derecho sobre una celda con datos y elija Recalcular por escala; después ingrese al escenario de Techo para que refresque los recursos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s111]
+relacionados: [gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas, gerencia-proyectos.definir-periodos, gerencia-proyectos.asignar-presupuestos-al-proyecto]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s081, manual: "Manual de Gerencia de Proyectos", seccion: "2.6 Planificación Física del proyecto (1)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s083, manual: "Manual de Gerencia de Proyectos", seccion: "2.6.1 Planificación manual en el escenario del Cronograma por Períodos (1)", pagina: null}
+  - {id: img-cc3cf4387668-0000, manual: "Manual de Gerencia de Proyectos", seccion: "cc3cf4387668.png", pagina: null}
+  - {id: img-65cd88abeb07-0000, manual: "Manual de Gerencia de Proyectos", seccion: "65cd88abeb07.png", pagina: null}
+  - {id: img-de49ab85e383-0000, manual: "Manual de Gerencia de Proyectos", seccion: "de49ab85e383.png", pagina: null}
+  - {id: img-f4285587c768-0000, manual: "Manual de Gerencia de Proyectos", seccion: "f4285587c768.png", pagina: null}
+  - {id: img-607948ac1a75-0000, manual: "Manual de Gerencia de Proyectos", seccion: "607948ac1a75.png", pagina: null}
+  - {id: img-cf050335f60e-0000, manual: "Manual de Gerencia de Proyectos", seccion: "cf050335f60e.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s084, manual: "Manual de Gerencia de Proyectos", seccion: "2.6.1 Planificación manual en el escenario del Cronograma por Períodos (2)", pagina: null}
+  - {id: img-c21ea972d2ed-0000, manual: "Manual de Gerencia de Proyectos", seccion: "c21ea972d2ed.png", pagina: null}
+  - {id: img-989083841cdc-0000, manual: "Manual de Gerencia de Proyectos", seccion: "989083841cdc.png", pagina: null}
+  - {id: img-df5affe5f045-0000, manual: "Manual de Gerencia de Proyectos", seccion: "df5affe5f045.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s111, manual: "Manual de Gerencia de Proyectos", seccion: "3.7 Pedidos", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

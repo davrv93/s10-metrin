@@ -1,0 +1,11 @@
+id: almacen
+termino: "Almacén"
+sinonimos: ["almacenes"]
+definicion: "El módulo de Almacenes administra los recursos que usa el proyecto mediante movimientos de ingresos y egresos; todos los ingresos van al stock y los egresos tienen un destino, que determina el tipo de almacén. Un proyecto puede usar varios almacenes, y se pueden transferir recursos entre almacenes del mismo proyecto o de un proyecto a otro."
+en_s10: "Tipos: de obra o de materiales (egresos hacia una partida de control), de servicios (subcontratos y recursos no almacenables), de activos (préstamo de herramientas y equipos, sin costos), repuestos (egresos hacia un activo) y economato (egresos hacia una unidad operativa). Al registrar un proyecto, el sistema muestra su almacén de materiales, servicios y activos."
+procedimientos_relacionados: [almacenes.registrar-ingreso-por-inventario, almacenes.registrar-ingreso-por-orden-de-compra]
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s001  # Manual de Almacenes › 1. ALMACENES DEL S10 ERP (1)
+  - web-https-documentacion-s10peru-com-manual-d-s002  # Manual de Almacenes › 1. ALMACENES DEL S10 ERP (2)
+  - web-https-documentacion-s10peru-com-manual-d-s097  # Manual de Gerencia de Proyectos › 3.1 Los almacenes del proyecto (1)
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

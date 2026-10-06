@@ -1,0 +1,12 @@
+id: anticipo
+termino: "Anticipo"
+sinonimos: ["anticipos"]
+definicion: "Porcentaje del valor total de la orden de compra que el proveedor factura como adelanto antes de despachar el material; en la siguiente factura, con la entrega del material, se descuenta el anticipo otorgado."
+en_s10: "Al registrar la factura relacionándola con la orden de compra (campo Relacionado con, opción ORDEN DE COMPRA O SERVICIO), el sistema la considera adelanto y, según una configuración previa, le asigna el recurso ANTICIPO. En el módulo de Facturación, el anticipo se crea primero como documento en el catálogo Tipo de documentos y luego se selecciona en el escenario Documentos por cobrar."
+ejemplo: "Un proveedor pide un adelanto del 30 % de la OC 585 y lo factura; después entrega la mercadería con una segunda factura que incluye la amortización de ese anticipo del 30 %."
+procedimientos_relacionados: []
+fuente:
+  - web-https-documentacion-s10peru-com-caso-ant-s000  # Manual de factura de anticipos de Almacén con compuesta › Caso Anticipo (1)
+  - web-https-documentacion-s10peru-com-manual-d-s033  # Manual de Facturación › 5.6.1 Anticipos
+notas: "Para el adelanto en efectivo de contratos y subcontratos, ver «adelanto»."
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

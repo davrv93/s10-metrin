@@ -1,0 +1,557 @@
+# Plantillas de respuesta INSTRUCCIONAL de Metrín. El modelo NO redacta la enseñanza: elige o reescribe entre estas piezas.
+# Mismo espíritu que las plantillas de la V2 de kddesign (ddesign-k-v2/agente/app/v2/plantillas.yaml).
+#
+# Cómo se usa una plantilla:
+#   1. El código decide QUÉ decir. La intención (kb/catalogos/intenciones.yml) y el tipo de respuesta
+#      (kb/catalogos/tipo_respuesta.yml) eligen la acción; el estado de la conversación (procedimiento activo, paso
+#      pendiente, pila de temas) elige la plantilla y el paso. Si el clasificador se abstiene, ACLARAR_TAREA.
+#   2. Cada {{SLOT}} se llena con un dato de kb/: procedimiento (kb/procedimientos/<modulo>/<id>.yml), concepto
+#      (kb/conceptos/<id>.yml) o fragmentos del RAG ya verificados. Antes de pasar el texto al modelo, cada slot se
+#      cambia por un token opaco §SLOT_xxxx§: el modelo nunca ve el valor real y no puede alterarlo.
+#   3. El modelo (si lo hay) solo cambia la forma de hablar: elige una variante de cada parte o reescribe el texto
+#      CONSERVANDO los tokens. Sin modelo disponible, o si su salida no pasa la compuerta factual, queda el texto base
+#      (la variante elegida por el código).
+#   4. La compuerta factual rechaza la salida del modelo si: falta o sobra un token; aparece texto en negrita (**…**),
+#      una ruta de menú («A › B»), un número de paso, una cifra, una URL o una cita que no venga de un token; cambia el
+#      orden de los tokens de pasos; hay más preguntas que las de la plantilla; supera `max_frases`/`max_chars`; o usa
+#      jerga de `config.jerga_prohibida`. Recién después el código rellena los datos reales.
+#   5. El resultado va en `answer_md` (§9 de ESPECIFICACION_IA_METRIN.md): Markdown sanitizado. `animo` alimenta `mood`.
+#      `celebrating` y `learning` no se usan aquí: solo los activa el estado real de aprendizaje (§7 y §8).
+#
+# Trato: USTED, igual que los pasos de kb/procedimientos/ (ESQUEMA.md: «Trato: usted, en imperativo […] no se mezcla con
+# tú») y que los manuales oficiales. Como las plantillas envuelven el texto literal de los pasos, mezclar «tú» aquí con
+# «Ingrese…» allá rompería el registro dentro de un mismo mensaje. Español neutro, cercano, sin jerga (METRIN.md).
+#
+# De dónde sale cada slot (lo arma el código, nunca el modelo; campos de kb/procedimientos/ESQUEMA.md):
+#   * TAREA / TAREA_SUGERIDA = `titulo` del procedimiento con la inicial en minúscula («registrar un presupuesto nuevo»);
+#     TAREA_PENDIENTE = `titulo` tal cual; MODULO = `entidades.modulo`; OBJETIVO = `objetivo`.
+#   * ACCION = `pasos[n].accion`: oración completa en usted, con menús y botones en **negrita** como en la fuente
+#     («Haga clic derecho sobre el árbol de presupuestos y elija **Nuevo**.»). DONDE = `pasos[n].donde` (texto plano).
+#     RESULTADO = `pasos[n].resultado`. Si el paso no trae `donde` o `resultado`, esa parte usa su respaldo vacío.
+#   * PRERREQUISITOS = lista Markdown de `prerrequisitos[].texto`; VERIFICACION y VERIFICACION_FINAL = `verificacion[].texto`;
+#     SINTOMA / SOLUCION = `errores_frecuentes[k]`.
+#   * CITA / CITAS se resuelven con el par (id, manual) de la tabla `fuentes` del procedimiento, NUNCA solo con el id:
+#     en kb/fragmentos.jsonl 200 ids de secciones web se repiten entre manuales (ESQUEMA.md, «ids ambiguos»).
+#   * PASOS es un bloque numerado ya armado por el código, de como máximo `config.max_pasos_por_bloque` pasos.
+#   * TERMINO / DEFINICION / EN_S10 = kb/conceptos/<id>.yml (`termino`, `definicion`, `en_s10`).
+#
+# Campos:
+#   tipo         mensaje (completo) | paso | pregunta | aviso | retoma
+#   acciones     acciones en las que aplica: `accion` de intenciones.yml, `modo` de tipo_respuesta.yml o
+#                `acciones_extra` (abajo). El validador comprueba que existan.
+#   animo        mood del contrato §9 (happy | thinking | confused | surprised)
+#   protegidos   slots que salen como token y deben volver intactos (nombres de menú/botón, números de paso, citas…).
+#                Todo slot usado en la plantilla está protegido: los slots son datos, no estilo.
+#   prohibido    lo que el modelo no puede introducir; cada etiqueta está descrita en `reglas_prohibido`
+#   max_frases   tope de frases del mensaje armado (un bloque {{PASOS}} o una lista de prerrequisitos cuenta como una)
+#   forma        cómo se arma: {parte} se cambia por la variante elegida de esa parte
+#   partes       variantes de cada parte. Una variante con {{SLOT}} solo es elegible si ese dato existe
+#   respaldo     parte → texto a usar si NINGUNA variante es elegible (puede ser ""). Sin respaldo, la parte es obligatoria
+#   fijas        parte → índice de la variante que no se elige ni por hash ni por el modelo
+#   por_accion   acción → {parte: [índices]}: con esa acción solo son elegibles esas variantes
+#   sin_modelo   true = ningún modelo la toca: el código elige la variante (por hash de la conversación) y listo.
+#                Se usa en avisos de política (sin evidencia, derivación, aprendizaje) para que nadie los suavice.
+
+version: 1
+idioma: es-neutro
+trato: usted
+
+config:
+  max_emojis: 1
+  max_chars: 900
+  max_pasos_por_bloque: 3
+  formato: markdown
+  jerga_prohibida: [pe, causa, chamba, bacán, chévere, pata, "al toque", ahorita, vale, guay, che, boludo, wey, órale,
+                    chido, parce, "listo calixto"]
+
+# Acciones que no salen de los catálogos (las decide el código, no un clasificador).
+acciones_extra:
+  abstenerse: "el clasificador quedó bajo el umbral calibrado"
+  retomar: "volver a un procedimiento suspendido tras un cambio de tema"
+  fuera_de_dominio: "ganó la clase «ninguno» (ruido.yml)"
+
+# Cambios de tema: SUSPENDER, NO CANCELAR (como `temas` en kddesign). Si el usuario pregunta otra cosa a mitad de un
+# procedimiento, el pendiente (procedimiento + paso) se apila, se responde COMPLETO lo nuevo y después se ofrece UNA
+# retoma con RETOMA. Las reglas las hace cumplir el código.
+temas:
+  accion: RESPONDER_Y_RETOMAR
+  reglas:
+    max_pendientes_a_retomar: 1          # solo el más reciente; los demás se ofrecen si el usuario pregunta
+    responder_primero_lo_actual: true
+    nunca_retomar_antes_de_responder: true
+    no_repetir_la_pregunta_exacta: true
+    cancelar_solo_si_el_usuario_lo_pide: true
+    pendiente_caduca_en_turnos: 12       # pasado esto se descarta en silencio (no se pregunta)
+
+# Slots que puede usar una plantilla. El validador exige que todo {{SLOT}} usado esté aquí.
+slots:
+  NOMBRE: "nombre del usuario, si la sesión lo trae"
+  TAREA: "titulo del procedimiento, inicial en minúscula (infinitivo)"
+  TAREA_SUGERIDA: "titulo de un procedimiento relacionado con el concepto (kb/conceptos → procedimientos_relacionados), inicial en minúscula"
+  TAREA_PENDIENTE: "titulo del procedimiento suspendido (pila de temas)"
+  OBJETIVO: "objetivo del procedimiento, una frase de la fuente"
+  MODULO: "entidades.modulo del procedimiento"
+  PRERREQUISITOS: "lista Markdown de prerrequisitos[].texto"
+  TOTAL_PASOS: "número de pasos del procedimiento"
+  N: "número del paso actual"
+  N_SIGUIENTE: "número del paso que sigue"
+  N_DESDE: "primer paso del bloque"
+  N_HASTA: "último paso del bloque"
+  PASO_PENDIENTE: "paso en que quedó el procedimiento suspendido"
+  ACCION: "pasos[n].accion: oración completa en usted, con menús y botones en negrita como en la fuente"
+  DONDE: "pasos[n].donde: menú, escenario o ventana (texto plano)"
+  RESULTADO: "pasos[n].resultado: lo que se ve después, solo si la fuente lo dice"
+  PASOS: "bloque numerado de pasos armado por el código (máx. config.max_pasos_por_bloque)"
+  VERIFICACION: "verificacion[k].texto del procedimiento"
+  VERIFICACION_FINAL: "verificacion[].texto del procedimiento, al terminar"
+  SINTOMA: "errores_frecuentes[k].sintoma (o el síntoma documentado en la FAQ)"
+  SOLUCION: "errores_frecuentes[k].solucion"
+  TERMINO: "kb/conceptos → termino"
+  DEFINICION: "kb/conceptos → definicion"
+  EN_S10: "kb/conceptos → en_s10"
+  TERMINO_A: "primer término comparado"
+  TERMINO_B: "segundo término comparado"
+  DEFINICION_A: "definición del primer término (glosario)"
+  DEFINICION_B: "definición del segundo término (glosario)"
+  DIFERENCIA: "diferencia explícita entre ambos, SOLO si una fuente la enuncia"
+  ELEMENTO: "opción, reporte o pantalla que el usuario busca, en negrita como en la fuente"
+  RUTA_MENU: "ruta de menú hasta el elemento, en negrita, de la fuente"
+  RESPUESTA: "respuesta del RAG ya contrastada con los fragmentos (no pasa por el realizador)"
+  CITA: "cita de la fuente principal: manual y sección (y página si la hay), resuelta por (id, manual)"
+  CITAS: "lista de citas de las fuentes usadas"
+  OPCIONES_MODULO: "módulos donde existe la tarea, separados por coma y «o»"
+  OPCIONES_TAREA: "dos o tres tareas candidatas (alternativas del clasificador o procedimientos del módulo)"
+  CANAL: "canal de atención humana configurado (no se inventa)"
+  RESUMEN_CASO: "resumen del caso para la persona que atiende"
+
+# Etiquetas de `prohibido`: cada una es una regla de la compuerta factual. El validador exige que estén aquí.
+reglas_prohibido:
+  inventar_menu: "aparece una ruta de menú, pestaña o escenario que no viene de un token"
+  inventar_boton: "aparece un botón u opción en negrita que no viene de un token"
+  inventar_ruta: "aparece una ruta «A › B» que no viene de RUTA_MENU/DONDE"
+  inventar_paso: "aparece una instrucción que no está en ACCION/PASOS"
+  inventar_prerrequisito: "se exige algo que no está en PRERREQUISITOS"
+  inventar_resultado: "se describe un resultado en pantalla que no está en RESULTADO/VERIFICACION"
+  inventar_cita: "aparece un documento, página o sección que no viene de CITA/CITAS"
+  inventar_definicion: "la definición no es la de DEFINICION"
+  ampliar_definicion: "se añaden datos a la definición (usos, cifras, normas) que no están en la fuente"
+  inventar_ejemplo: "se añade un ejemplo que no viene de la fuente"
+  inventar_diferencia: "se afirma una diferencia que no está en DIFERENCIA ni se lee en las dos definiciones"
+  inventar_causa: "se atribuye el error a una causa que no está en SINTOMA/SOLUCION"
+  inventar_solucion: "se propone algo que no está en SOLUCION"
+  inventar_dato: "aparece una cifra, fecha, versión o nombre que no viene de un token"
+  inventar_respuesta: "se contesta la consulta sin evidencia"
+  inventar_modulo: "se nombra un módulo que no está en OPCIONES_MODULO/MODULO"
+  inventar_tarea: "se ofrece una tarea que no está en OPCIONES_TAREA"
+  inventar_contacto: "aparece un teléfono, correo, horario o nombre de persona que no viene de CANAL"
+  inventar_precio: "aparece un precio, descuento o plazo comercial"
+  inventar_correccion: "se da por buena la corrección del usuario sin revisión"
+  inventar_nombre: "se usa un nombre de usuario que no viene de NOMBRE"
+  cambiar_numero_paso: "un número de paso distinto de N, N_SIGUIENTE, N_DESDE, N_HASTA o PASO_PENDIENTE"
+  cambiar_numero_de_pasos: "un total de pasos distinto de TOTAL_PASOS"
+  cambiar_orden_pasos: "los pasos salen en otro orden que el de la fuente"
+  omitir_paso: "falta un paso del bloque"
+  fusionar_pasos: "dos pasos se juntan en uno"
+  afirmar_accion_realizada: "Metrín dice que hizo algo en el ERP (Metrín no ejecuta acciones; §11 de la especificación)"
+  afirmar_aprendizaje: "Metrín dice que ya aprendió o que ya sabe algo nuevo (§7: solo tras validar e indexar)"
+  prometer_disponibilidad: "se promete que algo estará disponible"
+  prometer_tiempo_de_respuesta: "se promete un plazo de atención"
+  prometer_resultado: "se garantiza que la solución funcionará"
+  hacer_multiples_preguntas: "más de una pregunta al usuario"
+  adivinar_intencion: "se responde como si se supiera la tarea"
+  asumir_modulo: "se elige un módulo sin que el usuario lo diga"
+  culpar_al_usuario: "el texto sugiere que el usuario hizo algo mal"
+  suponer: "se dice «probablemente», «seguramente» o similar para rellenar"
+  repetir_pregunta_exacta: "la retoma repite con las mismas palabras la pregunta anterior"
+  cancelar_pendiente: "se da por cancelado el procedimiento suspendido"
+  opinar_cual_es_mejor: "se recomienda una opción sobre otra sin fuente"
+  responder_fuera_de_dominio: "se contesta el tema ajeno a S10"
+  discutir_con_usuario: "se rebate el comentario del usuario"
+  presionar: "se apura al usuario («rápido», «ya»)"
+  prometer_capacidades: "se ofrece algo que Metrín no hace (ejecutar en el ERP, ver datos de su empresa)"
+  cambiar_trato: "se tutea al usuario (el trato es usted)"
+  jerga_regional: "aparece una palabra de config.jerga_prohibida"
+
+plantillas:
+
+  # ── Conversación ────────────────────────────────────────────────────────────────────────────────────────────────
+  SALUDO:
+    tipo: mensaje
+    acciones: [saludar]
+    animo: happy
+    protegidos: [NOMBRE]
+    prohibido: [inventar_nombre, prometer_capacidades, cambiar_trato, jerga_regional]
+    max_frases: 3
+    forma: "{inicio} {cuerpo}"
+    partes:
+      inicio: ["¡Hola, {{NOMBRE}}!", "¡Qué gusto saludarle, {{NOMBRE}}!"]
+      cuerpo: ["Soy Metrín y le enseño a hacer tareas en S10 paso a paso. ¿Qué tarea quiere hacer hoy?",
+               "Cuénteme qué tarea de S10 tiene pendiente y la vemos juntos, paso a paso.",
+               "¡Cimentando respuestas sólidas! ¿En qué tarea de S10 le ayudo?"]
+    respaldo:
+      inicio: "¡Hola!"
+
+  DESPEDIDA:
+    tipo: mensaje
+    acciones: [despedir]
+    animo: happy
+    protegidos: [TAREA_PENDIENTE, PASO_PENDIENTE]
+    prohibido: [cancelar_pendiente, cambiar_numero_paso, cambiar_trato, jerga_regional]
+    max_frases: 3
+    forma: "{cuerpo} {pendiente}"
+    partes:
+      cuerpo: ["¡Hasta luego!", "¡Hasta pronto!", "¡Que le vaya bien!"]
+      pendiente: ["Dejé anotado dónde nos quedamos: «{{TAREA_PENDIENTE}}», paso {{PASO_PENDIENTE}}. Cuando vuelva, seguimos desde ahí.",
+                  "«{{TAREA_PENDIENTE}}» quedó en el paso {{PASO_PENDIENTE}}; lo retomamos cuando quiera."]
+    respaldo:
+      pendiente: ""
+
+  AGRADECIMIENTO:
+    tipo: mensaje
+    acciones: [acusar_agradecimiento]
+    animo: happy
+    protegidos: [N_SIGUIENTE, TAREA]
+    prohibido: [cambiar_numero_paso, cambiar_trato, jerga_regional]
+    max_frases: 2
+    forma: "{acuse} {cierre}"
+    partes:
+      acuse: ["¡Con gusto!", "¡Para eso estoy!", "¡Qué bueno que le sirvió!"]
+      cierre: ["Si quiere, seguimos con el paso {{N_SIGUIENTE}} para {{TAREA}}.",
+               "Cuando quiera, continuamos con el paso {{N_SIGUIENTE}}."]
+    respaldo:
+      cierre: "¿Le ayudo con otra tarea de S10?"
+
+  # ── Procedimiento paso a paso ───────────────────────────────────────────────────────────────────────────────────
+  PROCEDIMIENTO_INTRO:
+    tipo: mensaje
+    acciones: [guiar_procedimiento, ubicar_reporte, procedimiento, configuracion]
+    animo: happy
+    protegidos: [TAREA, MODULO, OBJETIVO, TOTAL_PASOS, PRERREQUISITOS, CITA]
+    prohibido: [inventar_paso, inventar_prerrequisito, inventar_menu, inventar_cita, cambiar_numero_de_pasos,
+                afirmar_accion_realizada, hacer_multiples_preguntas, cambiar_trato]
+    max_frases: 7
+    forma: "{inicio} {objetivo} {alcance}\n\n{prerrequisitos}\n\n{arranque}\n{cita}"
+    partes:
+      inicio: ["Vamos a {{TAREA}} en el módulo **{{MODULO}}**.", "Le enseño a {{TAREA}} en **{{MODULO}}**.",
+               "Perfecto: vamos a {{TAREA}} desde **{{MODULO}}**."]
+      objetivo: ["{{OBJETIVO}}"]
+      alcance: ["Son {{TOTAL_PASOS}} pasos.", "Lo haremos en {{TOTAL_PASOS}} pasos, uno por uno.",
+                "Le guío en {{TOTAL_PASOS}} pasos."]
+      prerrequisitos: ["Antes de empezar, tenga listo esto:\n{{PRERREQUISITOS}}", "Necesita tener a la mano:\n{{PRERREQUISITOS}}",
+                       "Primero revise que se cumpla esto:\n{{PRERREQUISITOS}}"]
+      arranque: ["¿Empezamos con el paso 1?", "Cuando esté listo, le doy el paso 1.", "¿Tiene S10 abierto? Empezamos por el paso 1."]
+      cita: ["_Fuente: {{CITA}}_"]
+    fijas: {objetivo: 0, cita: 0}
+    respaldo:
+      objetivo: ""
+      prerrequisitos: ""
+
+  PASO:
+    tipo: paso
+    acciones: [guiar_procedimiento, siguiente_paso, reformular_paso, ubicar_reporte, procedimiento, configuracion]
+    animo: happy
+    protegidos: [N, TOTAL_PASOS, ACCION, DONDE, RESULTADO, CITA]
+    prohibido: [inventar_menu, inventar_boton, inventar_paso, inventar_resultado, inventar_cita, cambiar_numero_paso,
+                fusionar_pasos, afirmar_accion_realizada, cambiar_trato]
+    max_frases: 6
+    forma: "{marco}{encabezado} {accion}\n{ubicacion}\n{resultado}\n{cita}"
+    partes:
+      marco: ["", "Se lo digo de otra forma. ", "Vamos más despacio. "]
+      encabezado: ["**Paso {{N}} de {{TOTAL_PASOS}}.**"]
+      accion: ["{{ACCION}}"]
+      ubicacion: ["_Dónde: {{DONDE}}._", "(Esto se hace en: {{DONDE}}.)", "Pantalla: {{DONDE}}."]
+      resultado: ["Resultado esperado: {{RESULTADO}}", "Al hacerlo: {{RESULTADO}}", "Debería ocurrir esto: {{RESULTADO}}"]
+      cita: ["_({{CITA}})_"]
+    fijas: {encabezado: 0, accion: 0, cita: 0}
+    por_accion:
+      guiar_procedimiento: {marco: [0]}
+      ubicar_reporte: {marco: [0]}
+      siguiente_paso: {marco: [0]}
+      procedimiento: {marco: [0]}
+      configuracion: {marco: [0]}
+      reformular_paso: {marco: [1, 2]}
+    respaldo:
+      ubicacion: ""
+      resultado: ""
+
+  PASOS_BLOQUE:
+    tipo: mensaje
+    acciones: [guiar_procedimiento, siguiente_paso, procedimiento, configuracion]
+    animo: happy
+    protegidos: [PASOS, N_DESDE, N_HASTA, TOTAL_PASOS, CITA]
+    prohibido: [inventar_paso, cambiar_orden_pasos, omitir_paso, fusionar_pasos, cambiar_numero_paso, inventar_menu,
+                inventar_boton, inventar_cita, afirmar_accion_realizada, cambiar_trato]
+    max_frases: 4
+    max_pasos: 3                      # = config.max_pasos_por_bloque; el código corta el bloque
+    forma: "{intro}\n\n{pasos}\n\n{cierre}\n{cita}"
+    partes:
+      intro: ["Estos son los pasos {{N_DESDE}} a {{N_HASTA}} de {{TOTAL_PASOS}}:", "Vamos con los pasos {{N_DESDE}} al {{N_HASTA}}:",
+              "Siguen los pasos {{N_DESDE}} a {{N_HASTA}} (de {{TOTAL_PASOS}}):"]
+      pasos: ["{{PASOS}}"]
+      cierre: ["Hágalos en ese orden y me avisa.", "Cuando termine el paso {{N_HASTA}}, cuénteme cómo le fue.",
+               "Avíseme si algo no coincide con lo que ve en pantalla."]
+      cita: ["_Fuente: {{CITA}}_"]
+    fijas: {pasos: 0, cita: 0}
+
+  PREGUNTA_AVANCE:
+    tipo: pregunta
+    acciones: [guiar_procedimiento, siguiente_paso, reformular_paso, acusar_agradecimiento, procedimiento, configuracion]
+    animo: happy
+    protegidos: [N_SIGUIENTE]
+    prohibido: [hacer_multiples_preguntas, cambiar_numero_paso, presionar, cambiar_trato]
+    max_frases: 2
+    forma: "{pregunta}"
+    partes:
+      pregunta: ["¿Lo logró? ¿Seguimos con el paso {{N_SIGUIENTE}}?", "¿Le salió? Si es así, vamos con el paso {{N_SIGUIENTE}}.",
+                 "Cuando lo tenga, dígame y seguimos con el paso {{N_SIGUIENTE}}."]
+
+  VERIFICACION:
+    tipo: mensaje
+    acciones: [siguiente_paso, diagnosticar_error, diagnostico, procedimiento, configuracion]
+    animo: thinking
+    protegidos: [N, VERIFICACION, CITA]
+    prohibido: [inventar_resultado, inventar_menu, inventar_cita, hacer_multiples_preguntas, culpar_al_usuario, cambiar_trato]
+    max_frases: 4
+    forma: "{intro} {comprobar}\n{cita}\n{cierre}"
+    partes:
+      intro: ["Antes de seguir, comprobemos el paso {{N}}:", "Revisemos que el paso {{N}} haya quedado bien:",
+              "Un control rápido del paso {{N}}:"]
+      comprobar: ["{{VERIFICACION}}"]
+      cita: ["_({{CITA}})_"]
+      cierre: ["¿Lo ve así?", "¿Coincide con lo que tiene en pantalla?", "¿Le aparece igual?"]
+    fijas: {comprobar: 0, cita: 0}
+
+  PROCEDIMIENTO_FIN:
+    tipo: mensaje
+    acciones: [siguiente_paso, procedimiento, configuracion]
+    animo: happy
+    protegidos: [TAREA, TOTAL_PASOS, VERIFICACION_FINAL]
+    prohibido: [inventar_resultado, afirmar_accion_realizada, cambiar_numero_de_pasos, hacer_multiples_preguntas, cambiar_trato]
+    max_frases: 4
+    forma: "{cierre} {comprobar}\n{oferta}"
+    partes:
+      cierre: ["¡Listo! Esos eran los {{TOTAL_PASOS}} pasos para {{TAREA}}.", "¡Bien hecho! Completó los pasos para {{TAREA}}.",
+               "¡Terminamos! Ya recorrió todos los pasos para {{TAREA}}."]
+      comprobar: ["Para confirmarlo: {{VERIFICACION_FINAL}}", "Puede comprobarlo así: {{VERIFICACION_FINAL}}"]
+      oferta: ["¿Le ayudo con otra tarea?", "¿Seguimos con algo más?", "¿Hay otra tarea de S10 que quiera ver?"]
+    respaldo:
+      comprobar: ""
+
+  ERROR_FRECUENTE:
+    tipo: mensaje
+    acciones: [diagnosticar_error, diagnostico]
+    animo: thinking
+    protegidos: [SINTOMA, SOLUCION, CITA]
+    prohibido: [inventar_causa, inventar_solucion, inventar_menu, inventar_boton, inventar_cita, culpar_al_usuario,
+                prometer_resultado, suponer, hacer_multiples_preguntas, cambiar_trato]
+    max_frases: 5
+    forma: "{sintoma}\n{solucion}\n{cita}\n{cierre}"
+    partes:
+      sintoma: ["El manual describe ese caso: {{SINTOMA}}", "Eso figura en la documentación: {{SINTOMA}}",
+                "La fuente menciona esta situación: {{SINTOMA}}"]
+      solucion: ["Lo que indica: {{SOLUCION}}", "Según el manual: {{SOLUCION}}", "La indicación de la fuente es esta: {{SOLUCION}}"]
+      cita: ["_({{CITA}})_"]
+      cierre: ["¿Se resolvió?", "¿Con eso ya le deja continuar?", "¿Sigue apareciendo?"]
+    fijas: {cita: 0}
+
+  # ── Conocimiento ────────────────────────────────────────────────────────────────────────────────────────────────
+  CONCEPTO:
+    tipo: mensaje
+    acciones: [explicar_concepto, reformular_paso, concepto]
+    animo: happy
+    protegidos: [TERMINO, DEFINICION, EN_S10, CITA, TAREA_SUGERIDA]
+    prohibido: [inventar_definicion, ampliar_definicion, inventar_ejemplo, inventar_menu, inventar_cita,
+                hacer_multiples_preguntas, cambiar_trato]
+    max_frases: 7
+    forma: "{definicion}\n{en_s10}\n{cita}\n\n{oferta}"
+    partes:
+      definicion: ["**{{TERMINO}}**: {{DEFINICION}}", "Le cuento qué es **{{TERMINO}}**: {{DEFINICION}}",
+                   "Así lo describe la documentación de S10 — **{{TERMINO}}**: {{DEFINICION}}"]
+      en_s10: ["En S10: {{EN_S10}}", "Dónde aparece en S10: {{EN_S10}}"]
+      cita: ["_({{CITA}})_"]
+      oferta: ["¿Quiere que le enseñe a {{TAREA_SUGERIDA}}?", "Si quiere, le guío paso a paso para {{TAREA_SUGERIDA}}.",
+               "¿Le muestro cómo {{TAREA_SUGERIDA}} en S10?"]
+    fijas: {cita: 0}
+    respaldo:
+      en_s10: ""
+      oferta: "¿Le queda alguna duda sobre **{{TERMINO}}**?"
+
+  COMPARACION:
+    tipo: mensaje
+    acciones: [comparar_conceptos, comparacion]
+    animo: happy
+    protegidos: [TERMINO_A, TERMINO_B, DEFINICION_A, DEFINICION_B, DIFERENCIA, CITA]
+    prohibido: [inventar_diferencia, inventar_definicion, ampliar_definicion, inventar_cita, opinar_cual_es_mejor,
+                hacer_multiples_preguntas, cambiar_trato]
+    max_frases: 8
+    forma: "{intro}\n{a}\n{b}\n{diferencia}\n{cita}\n{oferta}"
+    partes:
+      intro: ["Le explico la diferencia entre **{{TERMINO_A}}** y **{{TERMINO_B}}**:", "Veamos los dos por separado:",
+              "Así los define la documentación:"]
+      a: ["- **{{TERMINO_A}}**: {{DEFINICION_A}}"]
+      b: ["- **{{TERMINO_B}}**: {{DEFINICION_B}}"]
+      diferencia: ["En resumen: {{DIFERENCIA}}", "La diferencia clave: {{DIFERENCIA}}"]
+      cita: ["_Fuentes: {{CITA}}_"]
+      oferta: ["¿Quiere ver cómo se trabaja con alguno de los dos en S10?", "¿Le enseño a usar alguno de ellos?"]
+    fijas: {a: 0, b: 0, cita: 0}
+    respaldo:
+      diferencia: ""                  # sin diferencia explícita en la fuente: solo las dos definiciones
+
+  NAVEGACION:
+    tipo: mensaje
+    acciones: [ubicar_reporte, navegacion]
+    animo: happy
+    protegidos: [ELEMENTO, RUTA_MENU, CITA]
+    prohibido: [inventar_menu, inventar_ruta, inventar_boton, inventar_cita, hacer_multiples_preguntas, cambiar_trato]
+    max_frases: 3
+    forma: "{ruta}\n{cita}\n{oferta}"
+    partes:
+      ruta: ["{{ELEMENTO}} está en {{RUTA_MENU}}.", "Lo encuentra en {{RUTA_MENU}}.", "Para llegar a {{ELEMENTO}}: {{RUTA_MENU}}."]
+      cita: ["_({{CITA}})_"]
+      oferta: ["¿Quiere que le guíe en lo que va a hacer ahí?", "¿Le explico qué hacer una vez dentro?"]
+    fijas: {cita: 0}
+
+  RESPUESTA_RAG:
+    tipo: mensaje
+    acciones: [responder_con_fuentes, ubicar_reporte]
+    animo: happy
+    protegidos: [RESPUESTA, CITAS]
+    prohibido: [inventar_dato, inventar_cita, inventar_menu, ampliar_definicion, suponer, hacer_multiples_preguntas, cambiar_trato]
+    max_frases: 8
+    forma: "{respuesta}\n\n{citas}\n{oferta}"
+    partes:
+      respuesta: ["{{RESPUESTA}}"]
+      citas: ["_Fuentes: {{CITAS}}_"]
+      oferta: ["¿Quiere que le guíe paso a paso?", "¿Le ayudo con algo más sobre esto?", "¿Seguimos con otra duda?"]
+    fijas: {respuesta: 0, citas: 0}
+
+  # ── Aclarar, retomar, no saber, derivar ────────────────────────────────────────────────────────────────────────
+  ACLARAR_MODULO:
+    tipo: pregunta
+    acciones: [guiar_procedimiento, aclarar_tarea, procedimiento, configuracion, aclarar]
+    animo: confused
+    protegidos: [TAREA, OPCIONES_MODULO]
+    prohibido: [inventar_modulo, asumir_modulo, hacer_multiples_preguntas, cambiar_trato]
+    max_frases: 2
+    forma: "{puente} {pregunta}"
+    partes:
+      puente: ["Para {{TAREA}} hay un procedimiento en más de un módulo.", "Eso se hace en más de un módulo de S10.",
+               "Hay más de un lugar donde se puede {{TAREA}}."]
+      pregunta: ["¿En cuál está trabajando: {{OPCIONES_MODULO}}?", "¿Desde qué módulo lo necesita: {{OPCIONES_MODULO}}?",
+                 "¿Cuál le corresponde: {{OPCIONES_MODULO}}?"]
+
+  ACLARAR_TAREA:
+    tipo: pregunta
+    acciones: [aclarar_tarea, abstenerse, aclarar]
+    animo: confused
+    protegidos: [OPCIONES_TAREA, MODULO]
+    prohibido: [adivinar_intencion, inventar_tarea, hacer_multiples_preguntas, culpar_al_usuario, cambiar_trato]
+    max_frases: 2
+    forma: "{puente} {pregunta}"
+    partes:
+      puente: ["Quiero asegurarme de ayudarle con lo correcto.", "Para no darle pasos equivocados, necesito un dato más.",
+               "Le ayudo con gusto; solo necesito precisar la tarea."]
+      pregunta: ["¿Qué quiere hacer: {{OPCIONES_TAREA}}?", "¿Se refiere a {{OPCIONES_TAREA}}?",
+                 "¿Qué quiere hacer en **{{MODULO}}**: {{OPCIONES_TAREA}}?"]
+    respaldo:
+      pregunta: "¿Qué tarea de S10 quiere hacer? Cuénteme el módulo y lo que necesita registrar, consultar o corregir."
+
+  RETOMA:
+    tipo: retoma
+    acciones: [retomar, siguiente_paso, saludar]
+    animo: happy
+    protegidos: [TAREA_PENDIENTE, PASO_PENDIENTE, TOTAL_PASOS]
+    prohibido: [cancelar_pendiente, repetir_pregunta_exacta, hacer_multiples_preguntas, cambiar_numero_paso, presionar,
+                cambiar_trato]
+    max_frases: 2
+    forma: "{puente} {pregunta}"
+    partes:
+      puente: ["Por cierto, quedó a medias «{{TAREA_PENDIENTE}}», en el paso {{PASO_PENDIENTE}} de {{TOTAL_PASOS}}.",
+               "Antes estábamos con «{{TAREA_PENDIENTE}}»; nos quedamos en el paso {{PASO_PENDIENTE}}.",
+               "Sigue guardado lo que hacíamos: «{{TAREA_PENDIENTE}}», paso {{PASO_PENDIENTE}}."]
+      pregunta: ["¿Quiere retomarlo?", "¿Seguimos desde ahí?", "¿Continuamos donde nos quedamos?"]
+
+  SIN_EVIDENCIA:
+    tipo: aviso
+    sin_modelo: true
+    acciones: [explicar_concepto, comparar_conceptos, guiar_procedimiento, responder_con_fuentes, diagnosticar_error,
+               ubicar_reporte, concepto, procedimiento, navegacion, diagnostico, configuracion, comparacion]
+    animo: thinking
+    protegidos: []
+    prohibido: [inventar_respuesta, inventar_cita, suponer, afirmar_aprendizaje, prometer_disponibilidad]
+    max_frases: 3
+    forma: "{aviso} {siguiente}"
+    partes:
+      aviso: ["No encontré eso en los manuales que tengo.", "No encontré información sobre eso en los manuales de S10 que consulto.",
+              "Busqué en los manuales y no hallé evidencia suficiente para responderle con seguridad."]
+      siguiente: ["Puedo dejar registrada su consulta para que la revise una persona, o pasarle con soporte. ¿Qué prefiere?",
+                  "Si quiere, la dejo registrada para revisión o le derivo con soporte.",
+                  "¿Prefiere reformular la pregunta, o que la deje registrada para que la revise el equipo?"]
+
+  DERIVAR_HUMANO:
+    tipo: aviso
+    sin_modelo: true
+    acciones: [derivar_humano, derivar_comercial, diagnosticar_error, diagnostico]
+    animo: happy
+    protegidos: [CANAL, RESUMEN_CASO]
+    prohibido: [prometer_tiempo_de_respuesta, inventar_contacto, inventar_precio, prometer_resultado]
+    max_frases: 3
+    forma: "{cuerpo} {canal} {contexto}"
+    partes:
+      cuerpo: ["Le paso con una persona del equipo para que le ayude mejor.",
+               "Dejo su consulta con el equipo de soporte para que le atienda una persona.",
+               "Le comunico con el área comercial para que le den esa información."]
+      canal: ["El canal de atención es {{CANAL}}."]
+      contexto: ["Ya les dejo el resumen: {{RESUMEN_CASO}}.", "Les paso el contexto de lo que estábamos viendo: {{RESUMEN_CASO}}."]
+    fijas: {canal: 0}
+    por_accion:
+      derivar_humano: {cuerpo: [0, 1]}
+      diagnosticar_error: {cuerpo: [0, 1]}
+      diagnostico: {cuerpo: [0, 1]}
+      derivar_comercial: {cuerpo: [2]}
+    respaldo:
+      canal: ""
+      contexto: ""
+
+  # ── Calidad y aprendizaje controlado ────────────────────────────────────────────────────────────────────────────
+  FEEDBACK_RECIBIDO:
+    tipo: mensaje
+    acciones: [registrar_feedback]
+    animo: thinking
+    protegidos: []
+    prohibido: [afirmar_aprendizaje, inventar_correccion, discutir_con_usuario, hacer_multiples_preguntas, cambiar_trato]
+    max_frases: 3
+    forma: "{acuse} {registro}"
+    partes:
+      acuse: ["Gracias por avisarme.", "Gracias por el comentario.", "Anotado, gracias por decírmelo."]
+      registro: ["Lo dejé registrado junto con mi respuesta y sus fuentes para que una persona lo revise.",
+                 "Queda registrado para revisión; lo que sé no cambia hasta que el equipo lo valide.",
+                 "Lo registré para revisión. ¿Me dice qué parte estaba mal?"]
+
+  APRENDIZAJE_REGISTRADO:
+    tipo: aviso
+    sin_modelo: true
+    acciones: [registrar_pendiente]
+    animo: thinking
+    protegidos: []
+    prohibido: [afirmar_aprendizaje, prometer_disponibilidad, prometer_tiempo_de_respuesta]
+    max_frases: 3
+    forma: "{acuse} {estado}"
+    partes:
+      acuse: ["Gracias, lo registré como pendiente de revisión.", "Listo, quedó registrado para que el equipo lo revise."]
+      estado: ["Todavía no forma parte de lo que sé: primero una persona lo revisa, lo valida y se indexa.",
+               "Hasta que se valide e indexe, seguiré respondiendo con los manuales actuales."]
+
+  FUERA_DE_DOMINIO:
+    tipo: mensaje
+    acciones: [fuera_de_dominio]
+    animo: confused
+    protegidos: []
+    prohibido: [responder_fuera_de_dominio, prometer_capacidades, jerga_regional, hacer_multiples_preguntas, cambiar_trato]
+    max_frases: 3
+    forma: "{cuerpo} {oferta}"
+    partes:
+      cuerpo: ["Eso queda fuera de lo que puedo ayudarle.", "Con ese mensaje no le puedo ayudar.", "Ese tema no es lo mío."]
+      oferta: ["Lo mío es S10: si tiene una tarea en el sistema, la vemos paso a paso.",
+               "Le ayudo con tareas de S10 y de la obra en el sistema. ¿Vemos alguna?",
+               "¿Hay alguna tarea de S10 en la que le pueda ayudar?"]

@@ -1,0 +1,10 @@
+id: parte_de_equipo
+termino: "Parte de equipo"
+sinonimos: ["partes de equipo", "parte diario"]
+definicion: "Registro del trabajo diario de un equipo, para controlar las horas trabajadas y obtener el costo de su participación en cada partida de control."
+en_s10: "Se llena en una hoja Excel exportada desde el escenario Partes de equipo de Gerencia de proyectos: por cada día se elige el equipo, la partida de control, las horas de stand by (equipo parado) y el tipo de hora."
+procedimientos_relacionados: []
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s219  # Manual de Gerencia de Proyectos › 6.8.1 Partes de Equipo (1)
+  - web-https-documentacion-s10peru-com-manual-d-s205  # Manual de Gerencia de Proyectos › 6.1 Generalidades
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

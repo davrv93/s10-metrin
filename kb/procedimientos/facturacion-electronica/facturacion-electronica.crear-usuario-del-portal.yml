@@ -1,0 +1,96 @@
+id: facturacion-electronica.crear-usuario-del-portal
+version: 1
+modulo: facturacion-electronica
+titulo: "Crear un usuario en el portal de facturación electrónica"
+objetivo: "Crear, desde Gestión de Usuarios del portal, usuarios de la empresa emisora que podrán acceder y visualizar los documentos electrónicos enviados desde el S10."
+nivel: basico
+preguntas:
+  - "cómo creo un usuario en el portal de facturación electrónica"
+  - "como agrego a alguien de mi empresa al portal para que vea los comprobantes"
+  - "quién puede crear usuarios en el portal"
+  - "como busco un usuario en gestion de usuarios del portal"
+  - "como le doy acceso a otra empresa del grupo a un usuario del portal"
+  - "como creo un usario en el portal del s10"
+  - "al nuevo usuario del portal le llega una clave"
+  - "pasos para crear usuario en gestión de usuarios"
+aliases:
+  - "crear usuario del portal"
+  - "gestión de usuarios"
+  - "nuevo usuario portal"
+  - "usuario de la empresa en el portal"
+entidades:
+  modulo: "Facturación Electrónica"
+  pantallas: ["Gestión de Usuarios"]
+  objetos: ["usuario", "portal", "Administrador", "empresas", "clave temporal"]
+prerrequisitos:
+  - texto: "Debe usar un usuario con el rol de Administrador de la empresa: es quien puede crear usuarios para el portal."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s019]
+pasos:
+  - n: 1
+    id: "facturacion-electronica.crear-usuario-del-portal#1"
+    accion: "En el portal, ingrese a **Gestión de Usuarios**, que permite administrar a los usuarios de la empresa que emite los documentos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s019]
+    pagina: null
+    fotos:
+      - id: "3437be3435db"
+        ruta_o_url: "imagenes/manual-de-facturacion-electronica/65747fbc4ceb.png"
+        pagina: null
+        caption: "Esta sección permite administrar a los usuarios de la empresa que emite los documentos."
+        ocr: "& Gestion de Usuarios (1)\n> Usuarios Empresa"
+  - n: 2
+    id: "facturacion-electronica.crear-usuario-del-portal#2"
+    accion: "Para buscar un usuario, ingrese alguno de los campos de la ventana de búsqueda y haga clic en el botón **Buscar** (si no ingresa ningún dato, se listan todos los usuarios de la empresa)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s019]
+    pagina: null
+    fotos:
+      - id: "7a05a90bfa93"
+        ruta_o_url: "imagenes/manual-de-facturacion-electronica/09b65edf6f04.png"
+        pagina: null
+        caption: "Ingrese alguno de los campos de la ventana de búsqueda y haga clic en botón Buscar. Si no ingresa ningún dato se listarán a todos los usuarios de la empresa."
+        ocr: "€ CS @ Seguro | https://s10its.com/SMITSWeb/Users/CompanyUserSearch.aspx wot\nSo seacion etrcrrowica ripe $10 canine ~ |__netycaner\na. |\nade. Gestion de Empresas (1) Hombre gree Nomtre ‘Apaltde. —Inorese Aoaigo\n\nKd i Co"
+  - n: 3
+    id: "facturacion-electronica.crear-usuario-del-portal#3"
+    accion: "Haga clic en el botón **Adicionar** para crear un usuario."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s019]
+    pagina: null
+  - n: 4
+    id: "facturacion-electronica.crear-usuario-del-portal#4"
+    accion: "En **Dirección de correo**, ingrese cualquier dirección de correo válida."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s019]
+    pagina: null
+  - n: 5
+    id: "facturacion-electronica.crear-usuario-del-portal#5"
+    accion: "Ingrese el **Nombre** y el **Apellido** del usuario."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s019]
+    pagina: null
+  - n: 6
+    id: "facturacion-electronica.crear-usuario-del-portal#6"
+    accion: "Si corresponde, asígnele el rol de **Administrador**: se puede asignar a más de un usuario de la empresa."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s019]
+    pagina: null
+  - n: 7
+    id: "facturacion-electronica.crear-usuario-del-portal#7"
+    accion: "En **Asociación Compañía**, seleccione las empresas en las que el usuario puede consultar los documentos; si la empresa pertenece a una corporación, indique a qué empresas del grupo tendrá acceso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s019]
+    pagina: null
+  - n: 8
+    id: "facturacion-electronica.crear-usuario-del-portal#8"
+    accion: "Con los campos marcados con * completos (son obligatorios), haga clic en el botón **Guardar**."
+    resultado: "El portal envía un correo electrónico al usuario, con una clave temporal."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s019]
+    pagina: null
+    fotos:
+      - id: "79d3f2f70aec"
+        ruta_o_url: "imagenes/manual-de-facturacion-electronica/01161670bbc9.png"
+        pagina: null
+        caption: "Al completar el registro de datos, y hacer clic en el botón Guardar, el portal enviará un correo electrónico al usuario, con una clave temporal."
+        ocr: "e - a x\n€ > © @ Seguro | https://st0its-com/SMITSWeb/Users/AddEditCompanyUser.aspx?¥i87 wiTCELXvYekuRrvmEnPhXt7J64L9Ic8aWgVd3k02DWUjjAL HOMEAtaZkS6yfqiSb1t9Tb... YE\na @ Direccién de correo” —_francia@s10peru.com_ Es Active ¥\nay Gestion de Empresas (1) Nombre* Simons, ‘Apeltido* Francia\n\n<\n=\n=\n=a"
+verificacion:
+  - texto: "Al ingresar por primera vez, el usuario encuentra su clave en el correo electrónico de bienvenida; como es temporal, el portal le solicita que ingrese una nueva clave."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s013]
+errores_frecuentes: []
+relacionados: []
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s019, manual: "Manual de Facturación Electrónica", seccion: "3.2.2 Gestión de Usuarios", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s013, manual: "Manual de Facturación Electrónica", seccion: "3.1.1 Autenticación de Usuario", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

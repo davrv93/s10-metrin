@@ -1,0 +1,11 @@
+id: plan_de_cuentas
+termino: "Plan de cuentas"
+sinonimos: ["plan contable"]
+definicion: "Relación o listado que comprende todas las cuentas que pueden utilizarse al desarrollar la contabilidad de una empresa u organización."
+en_s10: "En el módulo de Contabilidad se crea con un nombre y se importa desde una plantilla trabajada con los parámetros de S10. Forma parte del esquema contable, junto con la moneda y las fechas de inicio y fin de las operaciones contables. Si la empresa no usa el módulo de Contabilidad, debe pedir a S10 que habilite el plan de cuentas externo en Nóminas."
+procedimientos_relacionados: [contabilidad.crear-plan-de-cuentas]
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s022  # Manual de Nóminas › 3.15 Catálogo de Plan Contable Externo
+  - web-https-documentacion-s10peru-com-manual-d-s017  # Manual de Contabilidad › 4.1.1 Creación del Plan de Cuentas
+  - web-https-documentacion-s10peru-com-manual-d-s023  # Manual de Contabilidad › 4.2 Esquema Contable
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

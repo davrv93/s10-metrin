@@ -1,0 +1,145 @@
+id: almacenes.registrar-ingreso-por-compra
+version: 1
+modulo: almacenes
+titulo: "Registrar un ingreso por compra con documento de pago"
+objetivo: "Registrar un Ingreso por Compra [IC] en el que, al efectuar el movimiento, se registra la factura como documento que respalda el ingreso del recurso al almacén y se efectúa el asiento para contabilidad."
+nivel: intermedio
+preguntas:
+  - "cómo registro un ingreso por compra con factura"
+  - "cómo ingreso al almacén una compra sin orden de compra"
+  - "compré en ferretería con factura, cómo lo ingreso al almacén"
+  - "cómo hago un ingreso IC con documento de pago"
+  - "pasos para ingresar materiales comprados con factura"
+  - "como registro la factura al ingresar los materiales al almacen"
+  - "ingreso por conpra con boleta o factura en s10"
+  - "dónde está adicionar con documento de pago en ingresos"
+aliases:
+  - "ingreso por compra"
+  - "ingreso IC"
+  - "ingreso con factura"
+  - "ingreso con documento de pago"
+entidades:
+  modulo: "Almacenes"
+  pantallas: ["Ingresos", "Seleccione el Tipo de Documento", "Catalogo de Recursos"]
+  objetos: ["factura", "documento de pago", "proveedor", "recurso"]
+prerrequisitos:
+  - texto: "El Ingreso por Compra se usa cuando los recursos que ingresan al almacén vienen respaldados por una guía de remisión, factura, boleta de venta o ticket y no tienen orden de compra."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s044]
+pasos:
+  - n: 1
+    id: "almacenes.registrar-ingreso-por-compra#1"
+    accion: "En el árbol, elija el proyecto y el almacén, e ingrese al escenario de **Ingresos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047, img-bf138b025b87-0000, web-https-documentacion-s10peru-com-manual-d-s052]
+    pagina: null
+    fotos:
+      - id: "a8c058e49ec7"
+        ruta_o_url: "imagenes/manual-de-almacenes/bf138b025b87.png"
+        pagina: null
+        ocr: "Proyectos [ Elja |_\n8 Escritorio\n1-0 PUENTE EN CARRETERA\nfi De ikeoWies\nIngresos Luego, 2 de Actives"
+  - n: 2
+    id: "almacenes.registrar-ingreso-por-compra#2"
+    accion: "Elija el tipo de ingreso **Ingreso por Compra [IC]**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047, web-https-documentacion-s10peru-com-manual-d-s034]
+    pagina: null
+  - n: 3
+    id: "almacenes.registrar-ingreso-por-compra#3"
+    accion: "Haga clic derecho sobre la lista de ingresos y elija **Adicionar con Documento de Pago**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047, img-a588935831df-0000]
+    pagina: null
+    fotos:
+      - id: "62124feafa87"
+        ruta_o_url: "imagenes/manual-de-almacenes/a588935831df.png"
+        pagina: null
+        ocr: "Ingresos\nmovimiento:\nAY #\n[Est.[Nro. Guia Observacién\nD) Adicionar\nClic derecho [Adicionar con Documento de Pago(b)"
+  - n: 4
+    id: "almacenes.registrar-ingreso-por-compra#4"
+    accion: "En la ventana **Seleccione el Tipo de Documento**, elija con doble clic el tipo de documento (por ejemplo, **FACTURAS**)."
+    fuente: [img-0d61af9cb4d0-0000, web-https-documentacion-s10peru-com-manual-d-s047]
+    pagina: null
+    fotos:
+      - id: "74e23919d7f6"
+        ruta_o_url: "imagenes/manual-de-almacenes/0d61af9cb4d0.png"
+        pagina: null
+        ocr: "=I\n& Seleccione el Tipo de Documento oy\nOpciones ?\n. es Bi) xo cm | 8] 2 g\nD tir * Elija con doble clic | & ~ aba @ ® Be\npa = © NIVEL: 00\n|_[ codigo [Descripcién | Abreviatura]Cécigo [Tipo de Aplicacién [Documento SUNAT\n001 |FACTURAS F Por Pagar 01 Factura"
+  - n: 5
+    id: "almacenes.registrar-ingreso-por-compra#5"
+    accion: "En el formulario del documento, elija al **Proveedor** (por ejemplo, Ferreteria La Sirena)."
+    fuente: [img-525b2ee515cd-0000, img-fca7f58e7900-0000, web-https-documentacion-s10peru-com-manual-d-s047]
+    pagina: null
+    fotos:
+      - id: "5eda52fb1bc0"
+        ruta_o_url: "imagenes/manual-de-almacenes/525b2ee515cd.png"
+        pagina: null
+        ocr: "#@) FACTURAS S|\nEmtido a [o2to0001 [Sosa © =] da] Correlativo pss\nSuoursal fizio0001 SISA, ~ aay\n\nProveedor |csrnaer | Ferreteria La Sirena pn LLC RES\nFecha [1806/2010 >| fentmiento [1862010 +] FEhe..., [rameooi0 Mischa\nSa 1@m62010 ~|J 207006] Jurio 2010 Lamtio no oficial [~ | 1960)\nMoneda TP [etia Ea roma ce ao | La\n\nDescuerto(%) | O00[§)Relacionado con [ngreso por compra) Estado\n\nc Cc rel fo2001…"
+  - n: 6
+    id: "almacenes.registrar-ingreso-por-compra#6"
+    accion: "Registre la **Fecha** y el **Vencimiento** del documento."
+    fuente: [img-fca7f58e7900-0000, web-https-documentacion-s10peru-com-manual-d-s047]
+    pagina: null
+    fotos:
+      - id: "25a434b6c0e8"
+        ruta_o_url: "imagenes/manual-de-almacenes/fca7f58e7900.png"
+        pagina: null
+        ocr: "Fecha 18/06/2010 Vencimiento 18/06/2010\n\nProveedor _—- Ferreteria La Sirena\n\nMoneda Si. Forma de pago Contado\n\nDocumento FACTURA Serie / Nurnero 001-19500\n\nRecurso Und. Cantidad P.U. — Parcial\nCLAVOS PARA MADERA CON CABEZA DE 4\" kg 40.00 3.50 140.00"
+  - n: 7
+    id: "almacenes.registrar-ingreso-por-compra#7"
+    accion: "Elija la **Moneda** y la **Forma de pago**, y registre la serie y el número del documento (por ejemplo, la FACTURA 001-19500)."
+    fuente: [img-fca7f58e7900-0000, web-https-documentacion-s10peru-com-manual-d-s047]
+    pagina: null
+  - n: 8
+    id: "almacenes.registrar-ingreso-por-compra#8"
+    accion: "En la pestaña **Detalle documento**, adicione los recursos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047, img-c092a4190a4d-0000]
+    pagina: null
+    fotos:
+      - id: "28f5bfd16673"
+        ruta_o_url: "imagenes/manual-de-almacenes/c092a4190a4d.png"
+        pagina: null
+        ocr: "“Detalle documento “Datos adicionales “ Asiento contable Impuestos ‘“Gron. de Pagos © Pagos\n\nCédigo Recurso Unidad | Cantidad | P.U. sin Dcto. sin |.G.¥. Neto sin LG.¥.\n=e\n\n«| m7 r"
+  - n: 9
+    id: "almacenes.registrar-ingreso-por-compra#9"
+    accion: "En el **Catalogo de Recursos**, elija cada recurso con doble clic."
+    fuente: [img-a61738a45d46-0000, web-https-documentacion-s10peru-com-manual-d-s047]
+    pagina: null
+    fotos:
+      - id: "bc374feb1e21"
+        ruta_o_url: "imagenes/manual-de-almacenes/a61738a45d46.png"
+        pagina: null
+        ocr: "j [us\n@& Catalogo de Recursos - 02 MATERIALES Sex\nOpciones 2\nDeXBie #@¥e o-a- NIRSB RIB @\n1-284 Todos los Registrd W_ Elija con doble clic NIVEL: 33\n© eee [| Céeig0 [Desernciin [Jui\nSSO URES | |__|0202010006 |CLAVOS PAAMADERA CON CABEZADES@\" \\ka | |\n& @EGUIPOS | [ozn2010007 |CLAVOS PARAMADERACON CABEZADE 4\" kg\nfF) @ SUBCONTRAI tetas rs ‘o\nfe. @REPLESTOS || 4 [|\n) @® ECONOMATO| 0202010007 CLAVOS PA…"
+  - n: 10
+    id: "almacenes.registrar-ingreso-por-compra#10"
+    accion: "Registre la **Cantidad** y el **P.U.** de cada recurso."
+    fuente: [img-c092a4190a4d-0000, img-fca7f58e7900-0000]
+    pagina: null
+  - n: 11
+    id: "almacenes.registrar-ingreso-por-compra#11"
+    accion: "Use el botón **Aceptar** para concluir con el registro."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047]
+    pagina: null
+    fotos:
+      - id: "542e8b69dfd7"
+        ruta_o_url: "imagenes/manual-de-almacenes/f6717a3841f0.png"
+        pagina: null
+        caption: "Luego use el botón «Aceptar» para concluir con el registro."
+        ocr: "sto\nS10 S.A. rigs: +\nProyecto 02004 PUENTE EN CARRETERA ‘agina\nAlmacén 005 Obra Tipo OBRA\nIngreso por Compra [IC]\n\nFecha 48/06/2010 Guis N? 000000000001 Proveedor 02100071 Ferreteria La Sirena\nDocumento GuiadeRemision N?  - Moneds NUEVOS SOLES\nFactura/Boleta 001-1950 Orden de Compra N°\nRegistrado por Andres\nCédigo Desoripcién Recurso Und. Cantidad P.U{S/.) Parcial (Si) Parcial (US)\n0202010007 CLAV…"
+verificacion:
+  - texto: "Cuando el registro genera el ingreso al almacén, el movimiento se visualiza en el escenario de ingresos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047]
+errores_frecuentes:
+  - sintoma: "El documento registrado no aparece en el escenario de ingresos."
+    solucion: "Solo cuando el registro genera el ingreso al almacén se visualiza en este escenario; caso contrario, vaya al escenario de Registro de Documentos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047]
+relacionados: [almacenes.regularizar-ingreso-por-compra, almacenes.registrar-ingreso-por-orden-de-compra, almacenes.registrar-ingreso-por-inventario]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s044, manual: "Manual de Almacenes", seccion: "2.1.2.1 Ingreso por Compra [IC] (1)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s047, manual: "Manual de Almacenes", seccion: "2.1.2.1 Ingreso por Compra [IC] (4)", pagina: null}
+  - {id: img-bf138b025b87-0000, manual: "Manual de Almacenes", seccion: "bf138b025b87.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s052, manual: "Manual de Almacenes", seccion: "2.1.3.4 Ingreso por Orden de Compra [IOC]", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s034, manual: "Manual de Almacenes", seccion: "2.7 Descripción de los escenarios de Ingresos y Egresos (1)", pagina: null}
+  - {id: img-a588935831df-0000, manual: "Manual de Almacenes", seccion: "a588935831df.png", pagina: null}
+  - {id: img-0d61af9cb4d0-0000, manual: "Manual de Almacenes", seccion: "0d61af9cb4d0.png", pagina: null}
+  - {id: img-525b2ee515cd-0000, manual: "Manual de Almacenes", seccion: "525b2ee515cd.png", pagina: null}
+  - {id: img-fca7f58e7900-0000, manual: "Manual de Almacenes", seccion: "fca7f58e7900.png", pagina: null}
+  - {id: img-c092a4190a4d-0000, manual: "Manual de Almacenes", seccion: "c092a4190a4d.png", pagina: null}
+  - {id: img-a61738a45d46-0000, manual: "Manual de Almacenes", seccion: "a61738a45d46.png", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

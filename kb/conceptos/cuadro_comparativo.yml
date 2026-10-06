@@ -1,0 +1,9 @@
+id: cuadro_comparativo
+termino: "Cuadro comparativo"
+sinonimos: []
+definicion: "Permite comparar las ofertas recibidas de los proveedores en las cotizaciones; la selección del recurso a comprar se hace uno por uno, analizando las condiciones."
+en_s10: "Escenario Cuadro comparativo del módulo de Compras, donde se elige al proveedor analizando las condiciones y se imprime el reporte."
+procedimientos_relacionados: [compras.elaborar-cuadro-comparativo]
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s047  # Manual de Compras › 11. Cuadro Comparativo
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

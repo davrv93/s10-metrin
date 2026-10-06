@@ -1,0 +1,275 @@
+id: nominas.registrar-trabajador-como-socio-de-negocio
+version: 1
+modulo: nominas
+titulo: "Registrar un trabajador como socio de negocio"
+objetivo: "Registrar uno a uno, en el Catálogo de Socio de Negocio por tipo, a los obreros, empleados o practicantes que ingresan a la empresa: solo los trabajadores registrados en el catálogo pueden ser elegidos como personal disponible."
+nivel: basico
+preguntas:
+  - "cómo registro un trabajador nuevo en nóminas"
+  - "dónde se registra un obrero nuevo en s10"
+  - "como registro un empleado como socio de negocio"
+  - "cómo doy de alta a un trabajador en el catálogo de socios de negocio"
+  - "como ingreso el dni, essalud y la direccion de un trabajador"
+  - "como agrego la cuenta de banco de un trabajador para pagarle"
+  - "registrar socio de negocio persona natural en nominas"
+  - "no puedo elegir a un trabajador como personal disponible, como lo registro"
+  - "como ago para crear un trabajador nuevo en el catalogo"
+  - "donde pongo el correo del trabajador para mandarle la boleta"
+aliases:
+  - "registrar trabajador"
+  - "registrar socio de negocio"
+  - "alta de trabajador"
+  - "nuevo obrero"
+  - "nuevo empleado"
+  - "registrar personal nuevo"
+entidades:
+  modulo: "Nóminas"
+  pantallas: ["Catálogo de Socio de Negocio por tipo", "Socio de Negocios por tipo"]
+  objetos: ["socio de negocio", "trabajador", "cuenta bancaria", "dirección fiscal", "ESSALUD"]
+prerrequisitos:
+  - texto: "Tenga los documentos que dejó el trabajador (obrero, empleado o practicante): se registran en el sistema uno a uno."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s040]
+pasos:
+  - n: 1
+    id: "nominas.registrar-trabajador-como-socio-de-negocio#1"
+    accion: "Ingrese al menú **Catálogos** y elija la opción **Socio de Negocios por tipo**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s040, web-https-documentacion-s10peru-com-manual-d-s044, img-0289d26119f1-0000]
+    pagina: null
+    fotos:
+      - id: "6707f0f3a44f"
+        ruta_o_url: "imagenes/manual-de-nominas/0289d26119f1.png"
+        pagina: null
+        ocr: "[etia: |\nArchivo Ver | Catélogos -_———\n@ Socio de Negocios\nLuego,\n=|-€4 Todos los Registros\n4] EMPRESA DEL GRUPO\n3) CuENTE\n4] PROVEEDOR\n4] OBRERO\n5] EMPLEADO\nSJ DERECHO HABIENTE\n“U] PRACTICANTE"
+  - n: 2
+    id: "nominas.registrar-trabajador-como-socio-de-negocio#2"
+    accion: "Antes de iniciar el registro, verifique con las búsquedas que la persona no esté ya dentro del catálogo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s040]
+    pagina: null
+  - n: 3
+    id: "nominas.registrar-trabajador-como-socio-de-negocio#3"
+    accion: "Ubíquese en el grupo del trabajador: **EMPLEADO** u **OBRERO**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s040, img-0289d26119f1-0000]
+    pagina: null
+    fotos:
+      - id: "a19c6af96abc"
+        ruta_o_url: "imagenes/manual-de-nominas/e92bfe4ec297.png"
+        pagina: null
+        caption: "Registro en el grupo empleados:"
+        ocr: "Dar clic derecho\nOpkiones 2\nWe Xie M@4¥E% Hoo AB\n=) By Todos los Registros ae\nJ] EMPRESADEL GRUPO |= n —\n© ean | Cédigo _[Descripcién\n| PROVEEDOR an LEtijo_]}!\niL oBRERO |\nJO ation\nAeCONSTA mi & Modificar FR oD\nay are ||| % Eliminar ra FQ\ni} SUBCONTRATISTA _||§F Duplicar 5 Hd)\n DERECHO HABIENTE | ‘TE Replica titulo rs LD\nil | & Nota\nye Ne FIO\n[I 3S Exportar a Excel LG)"
+  - n: 4
+    id: "nominas.registrar-trabajador-como-socio-de-negocio#4"
+    accion: "Haga clic derecho y elija la opción para registrar un nuevo socio de negocio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s040, img-b3dbdb8586fa-0000]
+    pagina: null
+    fotos:
+      - id: "90075008ad24"
+        ruta_o_url: "imagenes/manual-de-nominas/b3dbdb8586fa.png"
+        pagina: null
+        ocr: "[ei\n2 Catdlogo de Socios de Negocio por Tipo :03 Obrero 2/2 ie\nOpciones 2\nOSsxBuie &%¥% H -—--*4 RaQ hf\nly Todas los Registros YZ) Clic derecho * NIVEL: 22\nAf Empresa = i -\nDescrpgén\n4 eubeorttaise HI arcane Sore, Eze = Natural\nplead - 4 GETS\nMourer] 02100006 | Leén, Jose ||Obrera | Natural\nHl Glente [|__| o2tco007 Broncano, Pablo ||Obrero Natural\nEE Proveedor |__| 2100013 Si. ear Natural\nAy Banco…"
+  - n: 5
+    id: "nominas.registrar-trabajador-como-socio-de-negocio#5"
+    accion: "En la ventana que se abre, ingrese los datos solicitados."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s040]
+    pagina: null
+    fotos:
+      - id: "017c1f32e80b"
+        ruta_o_url: "imagenes/manual-de-nominas/a5f208fea511.png"
+        pagina: null
+        caption: "En esta ventana ingrese los datos solicitados,"
+        ocr: "‘tage [2000030 «persona Natal = @) © CédgoAterro [—B)\n, Datos generales\nTrtoient = ——al some tote fe) a\na\nNosbres Abceviotura fig) [emake\neC ns\neae\nae A= [ee [|\nFax [-__méw-[~—entel [rem fbseaigss2 rec[—_—|\nPagina Web @\nvogotpo [| 2 | ech scmientol\nRuto «(04 [Somware ———=—=—=Swd AL edo de Pago | —~—~SCS«SCd\nWats Vin anticts  Hapaties Seach: trpnhas See Shaner\n__ Adora _| __ gorceter_|"
+    sub:
+      - n: 1
+        id: "nominas.registrar-trabajador-como-socio-de-negocio#5.1"
+        accion: "Elija el tipo de persona; en este caso, **Persona Natural**."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s040]
+        pagina: null
+      - n: 2
+        id: "nominas.registrar-trabajador-como-socio-de-negocio#5.2"
+        accion: "Si la persona tiene un código en otro sistema o programa, regístrelo como **Código alterno**."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s040]
+        pagina: null
+      - n: 3
+        id: "nominas.registrar-trabajador-como-socio-de-negocio#5.3"
+        accion: "Elija el **tratamiento**: el vocativo con el que nos dirigimos a la persona."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s040]
+        pagina: null
+      - n: 4
+        id: "nominas.registrar-trabajador-como-socio-de-negocio#5.4"
+        accion: "Elija el **sexo** de la persona que registra."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s040]
+        pagina: null
+      - n: 5
+        id: "nominas.registrar-trabajador-como-socio-de-negocio#5.5"
+        accion: "Registre el tipo de documento de identidad (por ejemplo, **DNI**) y luego su **N° documento**."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s040]
+        pagina: null
+      - n: 6
+        id: "nominas.registrar-trabajador-como-socio-de-negocio#5.6"
+        accion: "Ingrese los **apellidos y nombres** del trabajador."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s040]
+        pagina: null
+      - n: 7
+        id: "nominas.registrar-trabajador-como-socio-de-negocio#5.7"
+        accion: "Ingrese la **abreviatura**."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s040]
+        pagina: null
+      - n: 8
+        id: "nominas.registrar-trabajador-como-socio-de-negocio#5.8"
+        accion: "Ingrese el número de **ESSALUD**: se trata del código autogenerado."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s040]
+        pagina: null
+      - n: 9
+        id: "nominas.registrar-trabajador-como-socio-de-negocio#5.9"
+        accion: "Ingrese el **grupo sanguíneo** del socio de negocio."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s041]
+        pagina: null
+      - n: 10
+        id: "nominas.registrar-trabajador-como-socio-de-negocio#5.10"
+        accion: "Ingrese los números de **teléfonos**, fijos o celular."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s041]
+        pagina: null
+      - n: 11
+        id: "nominas.registrar-trabajador-como-socio-de-negocio#5.11"
+        accion: "Ingrese los correos corporativos o personales: este dato es importante si desea enviar las boletas de pago a uno de esos correos electrónicos."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s041]
+        pagina: null
+      - n: 12
+        id: "nominas.registrar-trabajador-como-socio-de-negocio#5.12"
+        accion: "Registre la **fecha de nacimiento**."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s041]
+        pagina: null
+  - n: 6
+    id: "nominas.registrar-trabajador-como-socio-de-negocio#6"
+    accion: "Vaya a la pestaña **direcciones**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s041]
+    pagina: null
+    fotos:
+      - id: "cf9f52ad85fc"
+        ruta_o_url: "imagenes/manual-de-nominas/da46fe1c2c52.png"
+        pagina: null
+        caption: "Luego, en la pestaña direcciones."
+        ocr: "C6890 l22000030 [persona Natural a Cédiao Alterna\nDatos generaies\nTratemento [fz [Bx a] | Sexo [osaare =] T900oe. font] anes —\noepatemo omer sSs—<“—~*~*s“‘“‘*S*SSSSSSS\ncr\nNombres  ficenteS*~*~*~*~*«~ ewe LG\nESSALLO Grune Sanouineo RUC No Vado\nNeconaidad fexj = t*~<i*‘;*C‘s iE LY\nDireccién Fiscal\npane [RooNsoscosss-ereNA i (ititiC i tC“‘CO™COC#C*;*;*;*‘#C*‘eS Maps\nUbicacin — fiaorefareENAst—“‘—“ OS…"
+    sub:
+      - n: 1
+        id: "nominas.registrar-trabajador-como-socio-de-negocio#6.1"
+        accion: "Registre la **nacionalidad** del socio de negocio."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s041]
+        pagina: null
+      - n: 2
+        id: "nominas.registrar-trabajador-como-socio-de-negocio#6.2"
+        accion: "Registre la **dirección fiscal**: el domicilio de la persona a efectos fiscales."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s041]
+        pagina: null
+      - n: 3
+        id: "nominas.registrar-trabajador-como-socio-de-negocio#6.3"
+        accion: "Ingrese la **ubicación geográfica** de acuerdo al catálogo de **Lugares**."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s041]
+        pagina: null
+      - n: 4
+        id: "nominas.registrar-trabajador-como-socio-de-negocio#6.4"
+        accion: "Registre el domicilio en el que reside actualmente."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s041]
+        pagina: null
+      - n: 5
+        id: "nominas.registrar-trabajador-como-socio-de-negocio#6.5"
+        accion: "Registre los datos de la dirección en los campos solicitados para la planilla electrónica, repitiendo los datos registrados de la dirección fiscal y la ubicación geográfica."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s041]
+        pagina: null
+  - n: 7
+    id: "nominas.registrar-trabajador-como-socio-de-negocio#7"
+    accion: "Vaya a la pestaña **cuentas de Banco**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s041, img-ace9165aa9e7-0000]
+    pagina: null
+    fotos:
+      - id: "7a77d65483e6"
+        ruta_o_url: "imagenes/manual-de-nominas/ace9165aa9e7.png"
+        pagina: null
+        ocr: "Cédigo [z2000030—sPersoma Nate =] Cédgoatero [SC\nDatos generates\nTratamento [02 [Se =] | S00 fMascano =] Too doc. [our =) fazeaias\nwoepatemo [omez SSSsS—~—SsS—SsSSSSSS\nwematemo Peer OOSOS~—SsS—SSSTOCSCS\nNombves  ficente SSC VG [Omicindy\nESSALUD Grupo Sanguineo RUC No Vilido\nSocios de Negocio |\n5% 7083 5\n[Nota [Banco Tp Cuenty YN Cet\na |\n> Modificar\n2\n< >\nDatos | Teo | Contacts | Etquetas | Oreccio…"
+  - n: 8
+    id: "nominas.registrar-trabajador-como-socio-de-negocio#8"
+    accion: "Use la opción para registrar una cuenta bancaria del socio de negocio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s041]
+    pagina: null
+  - n: 9
+    id: "nominas.registrar-trabajador-como-socio-de-negocio#9"
+    accion: "En esta ventana, ingrese los datos de la cuenta: banco, tipo de cuenta, moneda, número y descripción."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s041, img-103805e26293-0000]
+    pagina: null
+    fotos:
+      - id: "ed34376e7b85"
+        ruta_o_url: "imagenes/manual-de-nominas/103805e26293.png"
+        pagina: null
+        ocr: "Banco q [EANCO CONTINENTAL SOCEDAD ANONMA ~| 4)\nTipo de cuenta [ahoros >: XB)\nNede Cuenta f9011-0370-48-0200109301 —©\nMoneda for [sours | d4|\nDescrpcén [BBVA AHO (S/.) 0011-0370-48-0200109200 —{e)\nN° Cuenta —$<—\nInterbancara —®\nN° Cuenta Cargo [o0110370480200109200 —®\nNCBB re\nIBAN rr? re\n\nO=F rctve WW Predeterminado\n\n_Serceer |"
+    sub:
+      - n: 1
+        id: "nominas.registrar-trabajador-como-socio-de-negocio#9.1"
+        accion: "Elija el **Banco** al que pertenece la cuenta bancaria del socio de negocio."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s042, img-103805e26293-0000]
+        pagina: null
+      - n: 2
+        id: "nominas.registrar-trabajador-como-socio-de-negocio#9.2"
+        accion: "Registre el **tipo de cuenta**: Corriente, Ahorros o CTS."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s042]
+        pagina: null
+      - n: 3
+        id: "nominas.registrar-trabajador-como-socio-de-negocio#9.3"
+        accion: "Registre la **moneda** de la cuenta."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s042]
+        pagina: null
+      - n: 4
+        id: "nominas.registrar-trabajador-como-socio-de-negocio#9.4"
+        accion: "Registre el **n° de cuenta** con guiones."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s042]
+        pagina: null
+      - n: 5
+        id: "nominas.registrar-trabajador-como-socio-de-negocio#9.5"
+        accion: "Registre la **descripción** en este orden: Banco + Tipo cuenta + Moneda cuenta + n° de cuenta. Es el campo que se verá al realizar un pago."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s042]
+        pagina: null
+      - n: 6
+        id: "nominas.registrar-trabajador-como-socio-de-negocio#9.6"
+        accion: "Registre la cuenta **interbancaria** sin guiones."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s042]
+        pagina: null
+      - n: 7
+        id: "nominas.registrar-trabajador-como-socio-de-negocio#9.7"
+        accion: "En **N° Cuenta Cargo**, registre el n° de cuenta sin guiones."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s042, img-103805e26293-0000]
+        pagina: null
+      - n: 8
+        id: "nominas.registrar-trabajador-como-socio-de-negocio#9.8"
+        accion: "Deje seleccionada la casilla que indica que la cuenta bancaria está activa y disponible para generar movimientos."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s042]
+        pagina: null
+      - n: 9
+        id: "nominas.registrar-trabajador-como-socio-de-negocio#9.9"
+        accion: "Solo si se trata de la cuenta bancaria de haberes, seleccione la casilla que la identifica como tal."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s042]
+        pagina: null
+  - n: 10
+    id: "nominas.registrar-trabajador-como-socio-de-negocio#10"
+    accion: "Repita el proceso para registrar a todos los obreros y luego cierre el catálogo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s042]
+    pagina: null
+verificacion: []
+errores_frecuentes:
+  - sintoma: "El trabajador no aparece para elegirlo como personal disponible."
+    solucion: "Solo los trabajadores registrados en el catálogo pueden ser elegidos como personal disponible: regístrelo primero en el Catálogo de Socio de Negocio por tipo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s040]
+  - sintoma: "No se puede eliminar un socio de negocio registrado."
+    solucion: "Solo se puede eliminar siempre y cuando no exista relación con algún escenario del S10 ERP."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s040]
+  - sintoma: "No se puede eliminar una cuenta bancaria del socio de negocio."
+    solucion: "Solo se puede eliminar si no existe relación con algún movimiento bancario en el S10 ERP."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s041]
+relacionados: [nominas.importar-socios-de-negocio-desde-excel, nominas.seleccionar-personal-disponible]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s040, manual: "Manual de Nóminas", seccion: "5.1.1 Registro manual de un Socio de Negocio (1)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s044, manual: "Manual de Nóminas", seccion: "5.1.2.1 Registro de Socios de Negocios importando la plantilla de Excel", pagina: null}
+  - {id: img-0289d26119f1-0000, manual: "Manual de Nóminas", seccion: "0289d26119f1.png", pagina: null}
+  - {id: img-b3dbdb8586fa-0000, manual: "Manual de Nóminas", seccion: "b3dbdb8586fa.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s041, manual: "Manual de Nóminas", seccion: "5.1.1 Registro manual de un Socio de Negocio (2)", pagina: null}
+  - {id: img-ace9165aa9e7-0000, manual: "Manual de Nóminas", seccion: "ace9165aa9e7.png", pagina: null}
+  - {id: img-103805e26293-0000, manual: "Manual de Nóminas", seccion: "103805e26293.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s042, manual: "Manual de Nóminas", seccion: "5.1.1 Registro manual de un Socio de Negocio (3)", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

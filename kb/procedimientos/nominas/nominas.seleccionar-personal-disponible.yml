@@ -1,0 +1,145 @@
+id: nominas.seleccionar-personal-disponible
+version: 1
+modulo: nominas
+titulo: "Seleccionar el personal disponible y copiarlo a los proyectos destino"
+objetivo: "Elegir en el escenario Personal Disponible del MULTIPROYECTO a los trabajadores ya registrados en el Catálogo de Socio de negocio y copiarlos a los proyectos de ejecución donde participan."
+nivel: intermedio
+preguntas:
+  - "cómo selecciono el personal disponible para un proyecto"
+  - "como agrego obreros al personal disponible en nominas"
+  - "dónde elijo a los trabajadores del multiproyecto"
+  - "como copio trabajadores del multiproyecto a otro proyecto"
+  - "como paso el personal a la obra destino"
+  - "como asigno trabajadores a un proyecto en s10 nominas"
+  - "no me aparece el trabajador en el personal disponible del proyecto"
+  - "como pego los trabajadores en el proyecto destino"
+  - "como ago para agregar personal dispnible"
+aliases:
+  - "seleccionar personal disponible"
+  - "elegir personal disponible"
+  - "agregar trabajadores al proyecto"
+  - "copiar trabajadores a proyecto destino"
+  - "personal disponible"
+entidades:
+  modulo: "Nóminas"
+  pantallas: ["Personal Disponible", "Catálogo de Proyectos", "MULTIPROYECTO"]
+  objetos: ["trabajador", "tipo de nómina", "proyecto destino", "fecha de ingreso"]
+prerrequisitos:
+  - texto: "Todos los trabajadores deben estar registrados previamente en el Catálogo de Socio de negocio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046]
+  - texto: "El personal que trabaja en los proyectos de construcción se registra primero dentro del MULTIPROYECTO y luego se replica o copia a los proyectos de ejecución donde participa."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046]
+pasos:
+  - n: 1
+    id: "nominas.seleccionar-personal-disponible#1"
+    accion: "En **Proyectos**, ubique el **MULTIPROYECTO** y, en **Principal**, elija **Personal Disponible**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046, img-578a6c6d3669-0000]
+    pagina: null
+    fotos:
+      - id: "d69df7fa762e"
+        ruta_o_url: "imagenes/manual-de-nominas/dfbd5700bddd.png"
+        pagina: null
+        caption: "Acceso al escenario"
+        ocr: "Proyectos\noe = gj Escritorio\n+) FIMA HUAYCOLORO.\ne f4)- MULTIFAMILIAR ESCAMPADERO\nRa QMULTPROYECTO\n2 princi\nPersonal Disponible |*\" | yego, Erp ictal"
+  - n: 2
+    id: "nominas.seleccionar-personal-disponible#2"
+    accion: "En **Tipo de Nómina**, elija el tipo de nómina (por ejemplo, **Régimen C.C. con BB.SS. - Obreros**)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046, img-8e5a2b317860-0000]
+    pagina: null
+    fotos:
+      - id: "aa0ef7935fa6"
+        ruta_o_url: "imagenes/manual-de-nominas/8e5a2b317860.png"
+        pagina: null
+        ocr: "Personal disponible\n(e ——\nProyecto 02001001 MULTIPROYECTO\nTipo de Nomina 002 Régimen C.C. con BB.SS. - Obreros “y| 1 Solo Actives!\nHOvVeANS GF ada\n| _|Recurso equivalente\nDB | Clic derecho"
+  - n: 3
+    id: "nominas.seleccionar-personal-disponible#3"
+    accion: "Haga clic derecho y elija **Adicionar**."
+    fuente: [img-8e5a2b317860-0000, img-7e0bb5a06f24-0000]
+    pagina: null
+  - n: 4
+    id: "nominas.seleccionar-personal-disponible#4"
+    accion: "En el catálogo de socios de negocio (grupo **OBRERO**), elija con doble clic, uno a uno, a los trabajadores."
+    resultado: "El personal es mostrado en el escenario."
+    fuente: [img-a402f9d0882c-0000, web-https-documentacion-s10peru-com-manual-d-s046]
+    pagina: null
+    fotos:
+      - id: "26777595ee8c"
+        ruta_o_url: "imagenes/manual-de-nominas/a402f9d0882c.png"
+        pagina: null
+        ocr: "> Catélogo de Sacios de Negocio 03 OBRERO oo x |\nOpciones 2\nz,| Con doble clic elija uno\nx = Lame\n[ Eliia |\" © éf > ta a uno a los trabajadores b @) al] a\n= iy Todos iof Registros [MZ [| — IE 4 NIMEL: 272\n- a oa DEL | | Descripcién Ab «\nal prqyecoor |_|_ |[22000032_| ALZAMORA GONZALES, CARLOS CAR\n5] OBRERO. S000 PAMELA CUES SRR ULPC RAAB ARBC\na] empLeavo __|_22000034_| ARELLAN CASTROMONTE, MESIAS…"
+      - id: "f875cee2554a"
+        ruta_o_url: "imagenes/manual-de-nominas/83e8158eda9d.png"
+        pagina: null
+        caption: "El personal es mostrado en el escenario."
+        ocr: "Personal disponible\n\nProyecto 02001001 MULTIPROYECTO\n\nTipo de Némina_ |902 Régimen C.C. con BB.SS. - Obreros | FF Solo Activos\nSl’FfHE SFliaaa\n22000032 ALZAMORA GONZALES, CARLOS\n22000033 ARANIBAR CUEVAS, ARNULFO RAFAEL\n22000034 ARELLAN CASTROMONTE, MESIAS\n22000035 BARBARAN DEL CARPIO, GINO OMAR\n22000036 BUSTAMANTE CRUZ, IVAN\n22000037 CAJA CHAMPI, LUIS ALFONSO\n22000038 CAMACHO FLORES, FIDEL ORLANDO…"
+  - n: 5
+    id: "nominas.seleccionar-personal-disponible#5"
+    accion: "Registre los datos de cada trabajador en su ficha; esto se hace sólo en el multiproyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046]
+    pagina: null
+    fotos:
+      - id: "3b4f71d0e3c0"
+        ruta_o_url: "imagenes/manual-de-nominas/c8e93b030657.png"
+        pagina: null
+        caption: "A cada uno de los trabajadores se registran sus datos en la ficha, sólo en el multiproyecto."
+        ocr: "ALZAMORA [ARANBAR [@RELLAN BARBARAN\n\nGONZALES: CuEVAS ICASTROMONTE DEL CARPIO BUSTAMANTE\nNombre CARLOS JARNULFO RAFAEL |MESIAS GINO OMAR CRUZ, IVAN\n\nMANO DE OBRA MANO DE OBRA MANO DE OBRA, MANO DE OBRA\n\nRecurso equivalente [PEON ELECTROMECANICAS |ELECTROMECANICAS |ELECTROMECANICAS |ELECTROMECANICAS\nostohorapomedo || PP\nAFP INTEGRA S.A. [AFPINTEGRA S.A. |AFP PRIMA S.A. AFP PRIMA S.A. AFP PRIMA S.A,…"
+  - n: 6
+    id: "nominas.seleccionar-personal-disponible#6"
+    accion: "Para llevar los trabajadores a un proyecto destino, haga clic derecho sobre la lista del **MULTIPROYECTO** y use la opción para copiarlos y pegarlos en el proyecto destino desde el portapapeles."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s055, img-7e0bb5a06f24-0000]
+    pagina: null
+    fotos:
+      - id: "a8bbb7e36f3f"
+        ruta_o_url: "imagenes/manual-de-nominas/7e0bb5a06f24.png"
+        pagina: null
+        ocr: "=\nA\nProyecto 02001001 MULTIPROYECTO.\nTipo de Nomina |002 Régimen C.C. con BB.SS. - Obreros\nHOA S vali ada\nCédiga Nombre Categoria Recurso\nARANBAR CL MANO}\ns2nnnne¢ ARELLAN CASTROMON TE, MESIAS HAN Df\nDi Adicionar MANE Dl\nGopler a ira proveic SPICIAL,\nSS Pegar de ciro proyecto each\nOFIOIAL\n22000041"
+  - n: 7
+    id: "nominas.seleccionar-personal-disponible#7"
+    accion: "En el **Catálogo de Proyectos**, elija con doble clic el proyecto destino."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s055, img-09fe6f25e2fb-0000]
+    pagina: null
+    fotos:
+      - id: "1fd843d48288"
+        ruta_o_url: "imagenes/manual-de-nominas/09fe6f25e2fb.png"
+        pagina: null
+        ocr: "; 6 fey x=)\noe Catalogo de Proyectos : 03 Construccién [ecu] es\nOpciones 2?\n\nDa XBES AYR Rm Om 27S @ % Se\nFl 8 Todos los Registros | Elija con doble clic - Bw «dese: 202\nA} Administrative =\nad Control Descripcion.\nP FIMA, HUAYCOLORO\n5] Construccién\nPan MULTIFAMILIAR ESCAMPADERO.\na} Inmobiliaria\n| Post-venta"
+  - n: 8
+    id: "nominas.seleccionar-personal-disponible#8"
+    accion: "Ingrese la fecha de ingreso con doble clic."
+    resultado: "Se muestra el mensaje «El pegado se realizó satisfactoriamente»."
+    fuente: [img-8f4f32ae8d6e-0000, img-8cd4bdf5a410-0000, web-https-documentacion-s10peru-com-manual-d-s055]
+    pagina: null
+    fotos:
+      - id: "463cbaa39a1c"
+        ruta_o_url: "imagenes/manual-de-nominas/8f4f32ae8d6e.png"
+        pagina: null
+        ocr: "+] Octubre 2017+\n\nx dom. lun. mar._mié. jue. vie. sd\n\n24 25 26 27 28 29 4\n\nIngrese la fecha de ingreso. 1 2 3 4 5 6 7\n& 9 10 1 #12 13 14\n\n- Doble clic | 8 1 22 2\nLuego, 23°30 31 1 2 3 4"
+      - id: "09fb706b7c70"
+        ruta_o_url: "imagenes/manual-de-nominas/8cd4bdf5a410.png"
+        pagina: null
+        ocr: "x\nti) El pegado se realizé satisfactoriamente."
+  - n: 9
+    id: "nominas.seleccionar-personal-disponible#9"
+    accion: "Si el trabajador está laborando para más de un proyecto, repita estos pasos para cada proyecto destino."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s055]
+    pagina: null
+verificacion:
+  - texto: "El personal elegido es mostrado en el escenario Personal Disponible."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046]
+errores_frecuentes:
+  - sintoma: "Un trabajador no aparece para elegirlo como personal disponible."
+    solucion: "Solo los trabajadores registrados previamente en el Catálogo de Socio de negocio pueden elegirse: regístrelo primero."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046, web-https-documentacion-s10peru-com-manual-d-s040]
+relacionados: [nominas.registrar-trabajador-como-socio-de-negocio, nominas.registrar-tareo-estandar]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s046, manual: "Manual de Nóminas", seccion: "5.2.2 Selección del Personal Disponible para los proyectos", pagina: null}
+  - {id: img-578a6c6d3669-0000, manual: "Manual de Nóminas", seccion: "578a6c6d3669.png", pagina: null}
+  - {id: img-8e5a2b317860-0000, manual: "Manual de Nóminas", seccion: "8e5a2b317860.png", pagina: null}
+  - {id: img-7e0bb5a06f24-0000, manual: "Manual de Nóminas", seccion: "7e0bb5a06f24.png", pagina: null}
+  - {id: img-a402f9d0882c-0000, manual: "Manual de Nóminas", seccion: "a402f9d0882c.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s055, manual: "Manual de Nóminas", seccion: "5.2.5 Copiar trabajadores del Multiproyecto a los Proyectos Destinos", pagina: null}
+  - {id: img-09fe6f25e2fb-0000, manual: "Manual de Nóminas", seccion: "09fe6f25e2fb.png", pagina: null}
+  - {id: img-8f4f32ae8d6e-0000, manual: "Manual de Nóminas", seccion: "8f4f32ae8d6e.png", pagina: null}
+  - {id: img-8cd4bdf5a410-0000, manual: "Manual de Nóminas", seccion: "8cd4bdf5a410.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s040, manual: "Manual de Nóminas", seccion: "5.1.1 Registro manual de un Socio de Negocio (1)", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

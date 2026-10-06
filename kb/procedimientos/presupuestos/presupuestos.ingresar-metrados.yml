@@ -1,0 +1,90 @@
+id: presupuestos.ingresar-metrados
+version: 1
+modulo: presupuestos
+titulo: "Ingresar los metrados en la hoja del presupuesto"
+objetivo: "Registrar el metrado de cada partida en la hoja del presupuesto: escribiéndolo, pegándolo desde Excel o vinculándolo a una celda de una hoja de cálculo Excel."
+nivel: basico
+preguntas:
+  - "cómo ingreso los metrados en s10"
+  - "donde pongo el metrado de una partida"
+  - "como cargo los metrados desde excel"
+  - "como pego metrados de excel a la hoja del presupuesto"
+  - "como vinculo el metrado a una celda de excel"
+  - "mis metrados estan en excel con formulas, como los paso"
+  - "pegar de otras aplicaciones metrados"
+  - "como registro metrado presupuesto"
+  - "como actualizo los metrados vinculados a excel"
+aliases:
+  - "ingresar metrados"
+  - "registrar metrado"
+  - "cargar metrados"
+  - "vincular metrado a celda Excel"
+entidades:
+  modulo: "Presupuestos"
+  pantallas: ["Hoja del Presupuesto"]
+  objetos: ["metrado", "partida", "hoja Excel", "portapapeles"]
+prerrequisitos:
+  - texto: "Las partidas deben estar registradas en la hoja del presupuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s037]
+pasos:
+  - n: 1
+    id: "presupuestos.ingresar-metrados#1"
+    accion: "En la **Hoja del Presupuesto**, ubique la partida e ingrese la cantidad en la columna **Metrado**."
+    fuente: [img-927b7cdd6fbe-0000, "7c40a9548710-0047"]
+    pagina: null
+    fotos:
+      - id: "7827b3fa59de"
+        ruta_o_url: "imagenes/manual-de-presupuestos/927b7cdd6fbe.png"
+        pagina: null
+        ocr: "[ol [| ESTRUCTURAS | de la partida e ingrese la cantidad |\n[01.01 | = ENCOFRADO [|\nJovoror | Encofradio de cimentacién [ma] Hy 128,00]\njoroz [ciacero\njovos [uciconucrero"
+  - n: 2
+    id: "presupuestos.ingresar-metrados#2"
+    accion: "Si los metrados están en Excel, seleccione en Excel el bloque de metrados y cópielo al portapapeles."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s045, "7c40a9548710-0144"]
+    pagina: null
+  - n: 3
+    id: "presupuestos.ingresar-metrados#3"
+    accion: "En la Hoja del Presupuesto, seleccione la fila de inicio, ubique el cursor en la columna del metrado, haga clic derecho y elija **PEGAR DE OTRAS APLICACIONES**."
+    resultado: "Los valores del portapapeles se copian en orden en los metrados de las partidas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s045, "7c40a9548710-0145"]
+    pagina: null
+  - n: 4
+    id: "presupuestos.ingresar-metrados#4"
+    accion: "Si prefiere que el metrado se actualice desde una planilla de Excel, ubique la partida, haga clic derecho y elija **PROCESOS ESPECIALES** > **VINCULAR METRADO A CELDA EXCEL**."
+    fuente: ["7c40a9548710-0152", web-https-documentacion-s10peru-com-manual-d-s045]
+    pagina: 95
+  - n: 5
+    id: "presupuestos.ingresar-metrados#5"
+    accion: "Elija el nombre del archivo de Excel, la hoja, y la fila y la columna de la celda que contiene el metrado; use el botón para terminar."
+    fuente: [c8ac2722518e-0168]
+    pagina: 105
+  - n: 6
+    id: "presupuestos.ingresar-metrados#6"
+    accion: "Cuando cambie el metrado en Excel, use **PROCESOS ESPECIALES** > **Tomar metrado de celda Excel** para llevarlo a la hoja del presupuesto."
+    fuente: ["7c40a9548710-0154", c8ac2722518e-0168]
+    pagina: 96
+  - n: 7
+    id: "presupuestos.ingresar-metrados#7"
+    accion: "Para quitar el vínculo de una partida, use **PROCESOS ESPECIALES** > **DESVINCULAR METRADO A CELDA EXCEL**."
+    fuente: ["7c40a9548710-0154"]
+    pagina: 96
+verificacion:
+  - texto: "Al procesar, el sistema verifica que no falten metrados en la hoja del presupuesto; si falta alguno, envía un mensaje con el requerimiento del dato."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047]
+errores_frecuentes:
+  - sintoma: "La opción Tomar metrado de celda Excel está deshabilitada."
+    solucion: "Esa opción solo funciona si la partida está vinculada: después de desvincular el metrado a celda Excel, el vínculo ya no existe y la opción queda deshabilitada."
+    fuente: ["7c40a9548710-0154"]
+relacionados: [presupuestos.registrar-titulos-y-partidas, presupuestos.importar-presupuesto-desde-excel, presupuestos.procesar-presupuesto]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s037, manual: "Manual de Presupuestos", seccion: "3.5 Registro de información en la hoja del presupuesto", pagina: null}
+  - {id: img-927b7cdd6fbe-0000, manual: "Manual de Presupuestos", seccion: "927b7cdd6fbe.png", pagina: null}
+  - {id: "7c40a9548710-0047", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 30}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s045, manual: "Manual de Presupuestos", seccion: "3.5.2.5 Ingreso de metrados en la hoja del presupuesto", pagina: null}
+  - {id: "7c40a9548710-0144", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 90}
+  - {id: "7c40a9548710-0145", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 91}
+  - {id: "7c40a9548710-0152", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 95}
+  - {id: c8ac2722518e-0168, manual: "Importado a mano", seccion: "Manual de S10 Costos y Presupuestos", pagina: 105}
+  - {id: "7c40a9548710-0154", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 96}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s047, manual: "Manual de Presupuestos", seccion: "3.6.2 Procesamiento del presupuesto", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

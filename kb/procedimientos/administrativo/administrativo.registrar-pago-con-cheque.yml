@@ -1,0 +1,184 @@
+id: administrativo.registrar-pago-con-cheque
+version: 1
+modulo: administrativo
+titulo: "Registrar una orden de pago y pagarla con cheque"
+objetivo: "Registrar una orden de pago con documentos del cronograma de pagos, enviarla a aprobación, aprobarla y ejecutar el pago con el talonario de cheques de la cuenta bancaria."
+nivel: intermedio
+preguntas:
+  - "cómo pago a un proveedor con cheque"
+  - "como hago una orden de pago con cheque en administrativo"
+  - "cómo envío a aprobación una orden de pago"
+  - "dónde ejecuto el pago de una orden de pago aprobada"
+  - "no me deja pagar con cheque la orden de pago"
+  - "como activo no negociable y al portador en el cheque"
+  - "como se paga con cheke en s10"
+  - "pasos para registrar pagos con cheque"
+  - "como agrego documentos del cronograma de pagos a la orden de pago"
+aliases:
+  - "pago con cheque"
+  - "orden de pago con cheque"
+  - "pagar con cheque"
+  - "registrar orden de pago"
+  - "ejecutar pago"
+entidades:
+  modulo: "Administrativo"
+  pantallas: ["Órdenes de Pago", "Orden de Pago", "Pendientes de Pago", "Pagos"]
+  objetos: ["orden de pago", "cheque", "talonario", "cuenta bancaria", "cronograma de pagos", "documentos por pagar"]
+prerrequisitos:
+  - texto: "Las cuentas bancarias deben estar registradas desde el grupo BANCOS (número de cuenta, tipo de cuenta, CCI, saldos iniciales, moneda y proyecto por defecto)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s027]
+  - texto: "Debe existir un talonario de cheques relacionado a la cuenta bancaria de la orden de pago, y el usuario que ejecuta el pago debe tener acceso a ese talonario."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s028, img-0bd72066d270-0000]
+pasos:
+  - n: 1
+    id: "administrativo.registrar-pago-con-cheque#1"
+    accion: "Ubíquese en el escenario **Órdenes de Pago**, haga clic derecho y elija **ADICIONAR**."
+    resultado: "Aparece la ventana de la orden de pago, donde se registra lo necesario para la ejecución del pago."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s027, img-6dd852e0ef95-0000]
+    pagina: null
+    fotos:
+      - id: "073c97db4419"
+        ruta_o_url: "imagenes/manual-de-administracion/6dd852e0ef95.png"
+        pagina: null
+        ocr: "@,510 Administrative: 22000617 - $10 DEMO - Principal 1/31 x!\n© Axchivo Ver Catdlogos Herramientas 2\n+ 6hEkReae\n_ i Ordenes de Pago\nPagos =\n(Bw: AY Sl). a id\nfea]\n(ote eg | [FR ane perme anata etait de oraanas J pogo a arodoyextado\nOrdenes de Pago\na\n| | B Ato: 2012\nPondpntsde age\nBate 203\n| | B Ato: 2014 Clic derecho\n© © Aes 2015\nEntpten cst\nJ] BAfo-mes: 201503 - Marzo 2015\nfz f | BAfo-Mes: 201504…"
+  - n: 2
+    id: "administrativo.registrar-pago-con-cheque#2"
+    accion: "En la ventana **Orden de Pago**, use el botón de la cuenta bancaria para que aparezca la lista de cuentas y seleccione la cuenta con la que pagará."
+    fuente: [img-3215998c94d4-0000, web-https-documentacion-s10peru-com-manual-d-s027]
+    pagina: null
+    fotos:
+      - id: "c6453105bcdc"
+        ruta_o_url: "imagenes/manual-de-administracion/3215998c94d4.png"
+        pagina: null
+        ocr: "2,510 Administrativo: 22000617 - $10 DEMO - Principal = 18) x!\n© Brchivo Yer Catélogos Herramientas 2\nS6hekeae\nAt Ord Ss ic 4 Orden de Pago\ni Ordenes de Pago iu - Bee\nRA Be csareet icp\n‘fo = Pagar con T Page Electrica Estado\n~ [Estauo| | 4q/| Utilizar el boton para que aparezca Ia lista de\n%q Catalogo de Cuentas Bancarias ji eccion. IES\nPS la para su seleccion. [ [Fema\nwy Moneda Opciones 2\nLal aa…"
+  - n: 3
+    id: "administrativo.registrar-pago-con-cheque#3"
+    accion: "Registre la descripción, la **Fecha de Pago** y las **Observaciones** de la orden (por ejemplo, PAGOS A PROVEEDORES CON CHEQUE)."
+    fuente: [img-c3a5091e14a1-0000, web-https-documentacion-s10peru-com-manual-d-s027]
+    pagina: null
+    fotos:
+      - id: "68afeee458a9"
+        ruta_o_url: "imagenes/manual-de-administracion/8793859fe1f6.png"
+        pagina: null
+        caption: "Detalles del registro de la Orden de Pago."
+        ocr: "“$10 Administrativo: 22000617 - $10 DEMO - Principal = 18) x!\n| Archivo Yer Catélogos Herramientas 2\n625888\n2 Ordenes de Pago us - me\nEngresa 2000617 510 DEMO N® Orden de Paya\n4 & 001242\n; ac) GS\nfo Pagar con Pago Electrénico Estodo\n‘easis ee\ncrdenes de Pago CueriaBenceria _[oG10-0100105672 [PBVALAFLORESTASOLES =] di]\n|_| orden de. Desenen f= [obseracones Ferma\nWy 3 Moneta HUEVOS SOLES Saldo Actua…"
+  - n: 4
+    id: "administrativo.registrar-pago-con-cheque#4"
+    accion: "Deje sin activar el check de pago electrónico: así podrá determinar en el detalle el medio de pago del documento."
+    fuente: [img-c3a5091e14a1-0000]
+    pagina: null
+  - n: 5
+    id: "administrativo.registrar-pago-con-cheque#5"
+    accion: "En el detalle de la orden de pago, use la opción **Agregar** y elija **Documentos** para traer los documentos por pagar del cronograma de pagos (puede pedirlos por un rango de fechas de vencimiento)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s027]
+    pagina: null
+    fotos:
+      - id: "5e432fff6941"
+        ruta_o_url: "imagenes/manual-de-administracion/c3a5091e14a1.png"
+        pagina: null
+        caption: "En el detalle de la Orden de Pago, a través de la opción Agregar es posible solicitar los documentos pendientes por Pagar a un rango de fechas de Vencimiento. a. Documentos: Permite agregar documentos por pagar desde el cronograma de Pagos. b. Reembolsos: Conjunto de documentos por pagar a nombre de un socio negocio a desembolsar, solo se visualizan los que se encuentren en estado cerrado. c. Devolución de Notas de Crédito: Permite realizar el desembolso o Pago de una NC emitida a un cliente. Determinación del medio de Pago y registro del importe Se Autoriza."
+        ocr: "“, $10 Administrativo: 22000617 - $10 DEMO - Principal -|8) x!\n“dtm ip Gey ee\nq Orden de Pago BEE\n~é6RekRst N° Orden de P:\nEmpresa 22000617 $10 DEMO. woen de Pago\n: a __ ont242\nj Suoursal Principal ‘Alno estar activado el check de]\nElectronica permite ene\ni ger Cuenta Bancati [7 Pago Electrénico ldetalle determinar el medio de\n[ Cuenta Benceria —[o310-0100105672 [BBVALAFLORESTA SOLES =| da ipago d…"
+  - n: 6
+    id: "administrativo.registrar-pago-con-cheque#6"
+    accion: "Determine el medio de pago y registre el importe que se autoriza."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s027]
+    pagina: null
+  - n: 7
+    id: "administrativo.registrar-pago-con-cheque#7"
+    accion: "Haga clic en **Aceptar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s027]
+    pagina: null
+  - n: 8
+    id: "administrativo.registrar-pago-con-cheque#8"
+    accion: "Haga clic derecho sobre la orden de pago registrada y envíela a aprobación."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s027, img-85a400189084-0000]
+    pagina: null
+    fotos:
+      - id: "ad19af5f778f"
+        ruta_o_url: "imagenes/manual-de-administracion/85a400189084.png"
+        pagina: null
+        ocr: "®, $10 Administrativo: 22000617 - S10 DEMO - Principal BEE\n| Archivo Yer Catélogos Herramientas 2\n46RERea\n_ 2 Ordenes de Pago\n| :\nif lz.= AYA iene\n=\n=\nOrdenes de Pago:\nYW\n|] Afo-Mes: 201504 - abril 2015\nPendlentes de Pago lal ‘Afio-Mes: 201508 - Mayo 2015\nJ] Bi Avc-Mes: 201808 - unio 2015\n© ial Afio-Mes: 201507 - Julio 2015\nJ..| ©) Afo-Mes: 201508 - Agosto 2015\nEriostn cud rates 20600. Satine 2015…"
+  - n: 9
+    id: "administrativo.registrar-pago-con-cheque#9"
+    accion: "Luego del envío a aprobación, haga clic derecho sobre la orden y elija la opción **Aprobar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s027, img-636ce5205210-0000]
+    pagina: null
+    fotos:
+      - id: "79ca97262f40"
+        ruta_o_url: "imagenes/manual-de-administracion/636ce5205210.png"
+        pagina: null
+        ocr: "@ Afio-Mes: 201509 - Setiembre 2015\n\nEstado: Aprobado luego del envio a aprobaci6n clic en la opci6n Aprobar\n\n© Estado: Por aprobar\n\nPAGOS A PRO'VEEDORES CON CHEQUE Cuenta Bancaria 0910-01004 NSRF2 Si al} EB\n(1 Adicionar\nW) Registro 11e6de 1166 DF < an a AS oir.\na\nYEYVEe Sede oO emma observer\nRIBUIDORA YVANA S.... |FACTURAS FT 0004-0001 306 | 03/01/2015 Recuperar de aprobacién =f 2,982.44\nImprimir"
+  - n: 10
+    id: "administrativo.registrar-pago-con-cheque#10"
+    accion: "Vaya al escenario **Pendientes de Pago**, ubíquese en el tipo de pago **Cuenta Bancaria** y ubique la línea del número de la orden de pago."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s027, img-c68278c157df-0000]
+    pagina: null
+  - n: 11
+    id: "administrativo.registrar-pago-con-cheque#11"
+    accion: "Haga clic derecho en la línea y elija **Documento Actual** para pagar esa línea (o **Documento del Proveedor** o **Documentos de la Orden de Pago** para pagar varios documentos a la vez)."
+    resultado: "Aparece la ventana de Pagos, con las pestañas de Documentos, Tipo de Pago y Asiento Contable."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s027, web-https-documentacion-s10peru-com-manual-d-s028]
+    pagina: null
+    fotos:
+      - id: "82f58df9749c"
+        ruta_o_url: "imagenes/manual-de-administracion/c68278c157df.png"
+        pagina: null
+        caption: "Desde el escenario pendiente de Pago, ubicarnos en el tipo de Pago Cuenta Bancaria, Ubicar la línea del número de Orden de Pago, Clic derecho y utilizar las siguientes Opciones: a. Documento Actual: Pago de la línea en la que se encuentra ubicado. b. Documento del Proveedor: La opción permite realizar el pago de todos los documentos del proveedor seleccionado, sea de la misma orden de pago o de todo el listado del escenario pendientes de pago. c. Documentos de la Orden de Pago: Permite realizar el pago de todos los documentos de la orden de pago en el que se encuentre ubicado."
+        ocr: "», 510 Administrativo: 22000617 - 510 DEMO - Principal BEE\n\n| Archivo Yer Catélogos Herramientas 2\n46R5Re8\nza) Pendientes de Pago\n\nTPG +SF eas)\n\nPOORER BF) crac hacia aqu el encabezado dela column que desea agrupar\n11 Campo[® Orden de Pago | [en cualquier posicién > Grupo:\nYW Nt Orden de Pag Deserincién Orden de Pago IN? Cuenta Socio de Negocio Tipe Dacunerte|N* Documento Fecha Docuner|Noneda Tota…"
+      - id: "1b27ab756f61"
+        ruta_o_url: "imagenes/manual-de-administracion/dea9e0128688.png"
+        pagina: null
+        caption: "Al utilizar la opción Pago Actual, aparece la ventana de Pagos en el que se visualiza las pestañas de Documentos, tipo de Pago y Asiento Contable."
+        ocr: "i=\nj ~'|Pago Biel Es\n_ Empresa 22000617 $10 DEMO. AlternoN?\n| 1\nSucursal Principal N Paga\n| Proveedor fez00s235 ISTRIEUIDORA VVaNAS.A.C ~~ | di [Fstado ootsey\nCuenta Bancetia Josto-o10010se72 [BEVALAFLORESTA SOLES | | Moneda NUEVOS SOLES Tipo. camblo 3.227\n_ Fecha transaccién [iBosr201 5 ra Fecha de aplicaciin |25/09/2015 |\n\" Descripcién |PAGOS A PROVEEDORES CON CHEQUE =i\nve XC, = - -\n| Tipo de Pa…"
+  - n: 12
+    id: "administrativo.registrar-pago-con-cheque#12"
+    accion: "Ejecute el pago con el talonario de cheques relacionado a la cuenta bancaria que se utiliza en la orden de pago."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s028]
+    pagina: null
+    fotos:
+      - id: "e2b4bc3d6bd7"
+        ruta_o_url: "imagenes/manual-de-administracion/69bd874edb95.png"
+        pagina: null
+        caption: "Ejecución del Pago, haciendo uso del talonario de cheques relacionado a la cuenta bancaria que se utiliza en la orden de pago."
+        ocr: "“510 Administrativo: 22000617 - $10 DEMO - Principal ENE\n© Archivo Yer Catélogos Herramientas ?\n| S46h5Rea\n28 Pendientes de Pagg\n- Empresa 22000617 $10 DEMO AlternolN?\nBie 2g Suoursal Principal N° Pago\nwry ST RI rvvy . \\z. 001566\ncrdrescerage Ene ee rover fp2003235  [PISTREUDORA YVANAS.AC. | #alstado\nCuenta Bancaria [o910-0100105672 JBEVALAFLORESTA SOLES =] #4] | Meneda NUEVOS SOLES Tipo cambio 3.…"
+  - n: 13
+    id: "administrativo.registrar-pago-con-cheque#13"
+    accion: "Si corresponde, active las opciones **No negociable** y **al Portador**: aparecerán preimpresas en el voucher de pago."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s028, img-3845b4d8d28b-0000]
+    pagina: null
+    fotos:
+      - id: "5ba5f4786c26"
+        ruta_o_url: "imagenes/manual-de-administracion/3845b4d8d28b.png"
+        pagina: null
+        ocr: ") =\n] \" |Pago BEES\n_ Empresa 22000617 510 DEMO. AlternoN]?\n| o\nSucursal Principal N Pago\n5 001566\n| Proveedor 22003235 JDISTRIBUIDORA YVANA S.4.C a l:stado\n| Cuenta Baneara fosio-o1o010s672 |BBVALAFLORESTA SOLES | #4] Moneda NUEVOS SOLES Weoeaitas 3.227\n. Fechatransaccién }259/2015 | Fechadeaplicacion jasja20i5 ~\n| Descripcién PAGOS & PROVEEDORES CON CHEQUE bes\nMedio de pago [- NoNegociable [~ Alp…"
+  - n: 14
+    id: "administrativo.registrar-pago-con-cheque#14"
+    accion: "Al ejecutar el pago del documento, use las opciones de impresión de la operación si las necesita."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s028]
+    pagina: null
+    fotos:
+      - id: "d465e5a9efe7"
+        ruta_o_url: "imagenes/manual-de-administracion/d7b6c7ee2fab.png"
+        pagina: null
+        caption: "Al ejecutar el pago del documento, existen las opciones para la impresión de la operación. La vista del pago se realizará desde el escenario Pago."
+        ocr: "“910 Administrativo: 22000617 - $10 DEMO - Principal 1-1) x)\n© Archiva Ver Catélogos Herramientas 2\nae\nmd Pagos\n: - N° Page\nee Ewe &7 %,  Suoursal Principal —\nProveedor f22003235 PISTRIBLIDORA YVANAS.A.C. =| Gafstado — Pagado os\nOrdenes de Pago]! Arrastre hacia aqui el encabezad ai\ni Cuenta Banceria fiajo-0700/05572 PRVALAFLORESTASOLES =] a] MonedaNUEVOSSOLES Tho cantio\nFecha transaccién |2509/20/…"
+verificacion:
+  - texto: "La vista del pago se realiza desde el escenario Pago."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s028]
+errores_frecuentes:
+  - sintoma: "No puede ejecutar el pago con cheque."
+    solucion: "Para ejecutar el pago con cheque es obligatorio que exista un talonario relacionado a la cuenta bancaria utilizada en la orden de pago, y que el usuario tenga acceso a ese talonario."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s028]
+relacionados: [administrativo.definir-aprobadores-de-pagos]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s027, manual: "Manual Administrativo", seccion: "5.2.1 Pagos con Cheque (1)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s028, manual: "Manual Administrativo", seccion: "5.2.1 Pagos con Cheque (2)", pagina: null}
+  - {id: img-0bd72066d270-0000, manual: "Manual Administrativo", seccion: "0bd72066d270.png", pagina: null}
+  - {id: img-6dd852e0ef95-0000, manual: "Manual Administrativo", seccion: "6dd852e0ef95.png", pagina: null}
+  - {id: img-3215998c94d4-0000, manual: "Manual Administrativo", seccion: "3215998c94d4.png", pagina: null}
+  - {id: img-c3a5091e14a1-0000, manual: "Manual Administrativo", seccion: "c3a5091e14a1.png", pagina: null}
+  - {id: img-85a400189084-0000, manual: "Manual Administrativo", seccion: "85a400189084.png", pagina: null}
+  - {id: img-636ce5205210-0000, manual: "Manual Administrativo", seccion: "636ce5205210.png", pagina: null}
+  - {id: img-c68278c157df-0000, manual: "Manual Administrativo", seccion: "c68278c157df.png", pagina: null}
+  - {id: img-3845b4d8d28b-0000, manual: "Manual Administrativo", seccion: "3845b4d8d28b.png", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

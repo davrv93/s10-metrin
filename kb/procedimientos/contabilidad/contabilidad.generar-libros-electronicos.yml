@@ -1,0 +1,101 @@
+id: contabilidad.generar-libros-electronicos
+version: 1
+modulo: contabilidad
+titulo: "Generar un libro electrónico para el PLE"
+objetivo: "Procesar y validar la información de un libro auxiliar (por ejemplo, el Registro de Compras) de un periodo según los parámetros de SUNAT y generar el archivo para declararlo a través del PLE."
+nivel: intermedio
+preguntas:
+  - "cómo genero los libros electrónicos en s10 contabilidad"
+  - "como saco el archivo del registro de compras para el ple"
+  - "como exporto el libro electronico para declarar en el ple"
+  - "como valido los libros electronicos antes de declarar"
+  - "como proceso el registro de compras electronico de un periodo"
+  - "donde veo los errores del ple en s10"
+  - "como genero el archivo del ple"
+  - "libros electronicos sunat paso a paso"
+  - "como genero el libro electroniko"
+aliases:
+  - "libros electrónicos"
+  - "generar PLE"
+  - "exportar libro electrónico"
+  - "registro de compras electrónico"
+  - "declarar PLE"
+entidades:
+  modulo: "Contabilidad"
+  pantallas: ["Libros Electrónicos"]
+  objetos: ["libro electrónico", "Registro de Compras", "PLE", "periodo"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "contabilidad.generar-libros-electronicos#1"
+    accion: "Ingrese al escenario **Libros Electrónicos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s073, img-db29a459f14a-0000]
+    pagina: null
+  - n: 2
+    id: "contabilidad.generar-libros-electronicos#2"
+    accion: "En la cabecera, elija el libro auxiliar en **Tipo** (por ejemplo, **Registro de Compras**) y el **Periodo**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s071, img-571113ff7804-0000]
+    pagina: null
+    fotos:
+      - id: "845d1c1612be"
+        ruta_o_url: "imagenes/manual-de-contabilidad/db29a459f14a.png"
+        pagina: null
+        caption: "Visualización de Información Por Libros Auxiliares, Periodo e Icono de Procesamiento de Datos."
+        ocr: "$10 Contabilidad: 22000617 - $10 DEMO BEE\n| Archivo Yer Catélogos Herramientas 2\n620888\nplain Libro Electronico : Registro de Compras\n[a | 7)\n[ Fees Redistro de Compras Libro Auxiliar y Periodo.\nSR cee |\nhot Arrastre hacia aqui el encabezado de la columna que desea agrupar.\nOf Campo[Observacién =] fen cualquier posicién >| [X|[22] erupo:\nValidacion [Observacién: 1. Periodo 2. Correlativo 3.N* Asie…"
+  - n: 3
+    id: "contabilidad.generar-libros-electronicos#3"
+    accion: "Haga clic en el icono de **Procesamiento de Datos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s071]
+    pagina: null
+  - n: 4
+    id: "contabilidad.generar-libros-electronicos#4"
+    accion: "Revise la información procesada antes de la declaración, según los parámetros establecidos por SUNAT."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s072]
+    pagina: null
+    fotos:
+      - id: "b462eeb7c5eb"
+        ruta_o_url: "imagenes/manual-de-contabilidad/571113ff7804.png"
+        pagina: null
+        caption: "Escenario que permite revisar la información procesada antes de la declaración según los parámetros establecidos por SUNAT para su posterior declaración."
+        ocr: "© Archivo Yer Catélogos Herramientas 2\n6h50Reaa\nunison Libro Electronico : Registro de Compras\ntipo [Registro de Compras ~ oy] periodo [201801 enero 2015 SCS\nA\nw Die 8° |v sh|xee|\nDAOT Arrastre hacia aqui el encabezado de la columna que desea agrupar.\n1J69 — Campo|Observacién © ||En cualquier posicién [22] Grupo:\n”) lObservacién | Valiclacién 1 Petiodo 2. Correlativo 13. N*Asiento Contable _|4. Fe…"
+  - n: 5
+    id: "contabilidad.generar-libros-electronicos#5"
+    accion: "Revise el campo **VALIDACIÓN**: muestra los errores procesados en el periodo y permite identificar las líneas de documentos observadas, que deberá corregir antes de la declaración."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s073, img-ae13c4f621db-0000]
+    pagina: null
+    fotos:
+      - id: "ae192a489b9c"
+        ruta_o_url: "imagenes/manual-de-contabilidad/ae13c4f621db.png"
+        pagina: null
+        ocr: "‘$10 Contabilidad: 22000617 - $10 DEMO WED ES\n\"Archivo Yer Catélogos Herramientas 2\n6205888\niG) Dp Libro Electronico : Registro de Compras\nTeo [Fescrodecomas =] Pero [201so1 [enerozors =] a] a\n-\nGo |RSS) SB & fa teaves ce campo vatiaacion es posible wentificar que linea\nde documentos son las Observadas ante la declaracion del PLE}\naot que deberan de ser corregidas para su declaracién.\nsun cewfotde…"
+  - n: 6
+    id: "contabilidad.generar-libros-electronicos#6"
+    accion: "Haga clic derecho para generar el archivo que se declarará a través del **PLE**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s074]
+    pagina: null
+    fotos:
+      - id: "fdf0a69d2b4d"
+        ruta_o_url: "imagenes/manual-de-contabilidad/fce8b67e296b.png"
+        pagina: null
+        caption: "Clic Derecho para generar el Archivo y pueda declararse a través del PLE."
+        ocr: "ki\nPLE"
+      - id: "81556ccc7f98"
+        ruta_o_url: "imagenes/manual-de-contabilidad/a0a3de71ac58.png"
+        pagina: null
+        caption: "Clic Derecho para generar el Archivo y pueda declararse a través del PLE."
+        ocr: "\"Archivo Yer Catslogos Herramientas 2\n468 a\nz tal Tene Libro Electronico : Registro de Compras\nTipo [Reaistro de Compras +] Periode [201801 [Enero 2015 = 4] _|\n@ |Guses vaneue\nDAOT Arrastre hacia aqui el encabezado de la colunna que desea agrupar.\n9/69 Campo|observacién J [en cualquier posicién | Grupo:\nvw 11, Tipo Doc. Identic| 12. RUC 0 N\" Doc. 13. Socio de Negocio Neto a Op. Gravad] . IGV a Op.…"
+verificacion: []
+errores_frecuentes:
+  - sintoma: "El campo VALIDACIÓN muestra líneas de documentos observadas."
+    solucion: "Son las observadas ante la declaración del PLE según los parámetros establecidos para la carga: deben ser corregidas para su declaración."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s073, img-ae13c4f621db-0000]
+relacionados: []
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s073, manual: "Manual de Contabilidad", seccion: "8.2.3 Validación de Información Libros Electrónicos.", pagina: null}
+  - {id: img-db29a459f14a-0000, manual: "Manual de Contabilidad", seccion: "db29a459f14a.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s071, manual: "Manual de Contabilidad", seccion: "8.2.1 Configuración de la Cabecera", pagina: null}
+  - {id: img-571113ff7804-0000, manual: "Manual de Contabilidad", seccion: "571113ff7804.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s072, manual: "Manual de Contabilidad", seccion: "8.2.2 Procesamiento de Datos", pagina: null}
+  - {id: img-ae13c4f621db-0000, manual: "Manual de Contabilidad", seccion: "ae13c4f621db.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s074, manual: "Manual de Contabilidad", seccion: "8.2.4. Exportación del Libro Electrónico para su Declaración", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

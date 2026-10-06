@@ -1,0 +1,12 @@
+id: formula_polinomica
+termino: "Fórmula polinómica"
+sinonimos: ["fórmulas polinómicas"]
+definicion: "Procedimiento convencional de cálculo para obtener el valor de los incrementos de costos que experimentan los presupuestos de obra en el tiempo. Al reemplazar los índices unificados del INEI da como resultado el factor de reajuste K, que actualiza el costo de la obra (o de su avance) desde la fecha del presupuesto base, en el proceso de valorización. En el Perú está constituida por hasta 8 monomios, cuyos coeficientes de incidencia suman uno."
+en_s10: "Se elabora en el escenario de la Fórmula polinómica a partir del presupuesto venta, después de omitir en el pie el ítem del impuesto; si a un recurso le falta índice unificado, el sistema muestra una ventana para asignárselo. En la valorización del contrato, el reajuste por fórmula polinómica es un valor por periodo."
+procedimientos_relacionados: [presupuestos.elaborar-formula-polinomica]
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s062  # Manual de Presupuestos › 3.10 Fórmula polinómica
+  - web-https-documentacion-s10peru-com-manual-d-s063  # Manual de Presupuestos › 3.10.1 Requisitos para el Perú
+  - web-https-documentacion-s10peru-com-manual-d-s054  # Manual de Presupuestos › 3.7 Presupuesto venta
+  - web-https-documentacion-s10peru-com-manual-d-s228  # Manual de Gerencia de Proyectos › 7.2.1 Estructura del diseño del resumen (1)
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

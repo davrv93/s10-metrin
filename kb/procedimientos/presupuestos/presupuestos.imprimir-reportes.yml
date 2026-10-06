@@ -1,0 +1,139 @@
+id: presupuestos.imprimir-reportes
+version: 1
+modulo: presupuestos
+titulo: "Imprimir y exportar los reportes del presupuesto"
+objetivo: "Mostrar en pantalla, imprimir o exportar a Excel o Word los reportes del presupuesto: resúmenes, hoja del presupuesto, análisis de precios unitarios y recursos y precios."
+nivel: basico
+preguntas:
+  - "cómo imprimo el presupuesto en s10"
+  - "como saco el reporte del presupuesto"
+  - "como exporto el presupuesto a excel"
+  - "como imprimo los analisis de precios unitarios"
+  - "reporte estandar cliente del presupuesto"
+  - "como imprimo el resumen del presupuesto"
+  - "donde estan los reportes guardados de s10"
+  - "como paso un reporte a word"
+  - "imprimir recursos y precios del subpresupuesto"
+aliases:
+  - "imprimir presupuesto"
+  - "reportes del presupuesto"
+  - "exportar reporte a Excel"
+entidades:
+  modulo: "Presupuestos"
+  pantallas: ["Datos Generales", "Hoja del Presupuesto", "Recursos y precios"]
+  objetos: ["reporte", "subpresupuesto", "análisis de precios unitarios", "vista previa"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "presupuestos.imprimir-reportes#1"
+    accion: "Para imprimir, use el botón que envía el reporte directamente a la impresora predeterminada de Windows, o el botón que muestra el reporte en pantalla."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s069]
+    pagina: null
+    fotos:
+      - id: "c87f25dd88d8"
+        ruta_o_url: "imagenes/manual-de-presupuestos/8649e43ecd2f.png"
+        pagina: null
+        caption: "Use este botón para enviar el reporte directamente a una impresora predeterminada mediante el sistema operativo Windows. Use este botón para mostrar en pantalla el reporte."
+      - id: "c305ce81cfd1"
+        ruta_o_url: "imagenes/manual-de-presupuestos/c1615f22d07e.png"
+        pagina: null
+        caption: "Use este botón para enviar el reporte directamente a una impresora predeterminada mediante el sistema operativo Windows. Use este botón para mostrar en pantalla el reporte."
+  - n: 2
+    id: "presupuestos.imprimir-reportes#2"
+    accion: "Para los resúmenes globales, use el botón del escenario de **Datos Generales** y elija **Datos generales**, **Resumen del presupuesto estándar** o **Resumen desagregado**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s070]
+    pagina: null
+    fotos:
+      - id: "8a3f1c2a8717"
+        ruta_o_url: "imagenes/manual-de-presupuestos/96fad6ef8b8e.png"
+        pagina: null
+        caption: "Use el botón del escenario de Datos Generales"
+        ocr: "Sistema 10S.AC. = Si\ne {Desea modificar los datos complementatios ?\nDatos generales a\nResumen del presupuesto estandar\nResumen desagregado —\nLuego,"
+      - id: "b53a49ca278e"
+        ruta_o_url: "imagenes/manual-de-presupuestos/3b33d640a682.png"
+        pagina: null
+        caption: "Use el botón del escenario de Datos Generales"
+        ocr: "sto Pagina: 1\nHojaresumen\nObra 0402003 PUENTE EN CARRETERA meta\nLocalizacién 081301 CUSCO - URUBAMBA - URUBAMBA\nFecha Al 23/03/2010\nPresupuesto base\n004 Estructuras 772,671.28\n002 Gastos generales 288,525.04\n(cD) Sh 1,061,196 32\nCOSTO DIRECTO 1,061,196 32\nDescompuesto del costo directo\nHANO DE OBRA Si 384,620.31\nHATERIALES 8h 419,018.84\nEQuipos Si. 84,816.18\nSUBCONTRATOS si 472,992.89\nTotal descom…"
+  - n: 3
+    id: "presupuestos.imprimir-reportes#3"
+    accion: "Para la hoja del presupuesto, ubíquese en el subpresupuesto en el escenario de la **Hoja del Presupuesto** y use el botón de la barra de botones para mostrar el reporte en pantalla."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s071]
+    pagina: null
+    fotos:
+      - id: "44e3b6463f66"
+        ruta_o_url: "imagenes/manual-de-presupuestos/56a51b7f78bc.png"
+        pagina: null
+        caption: "Para el subpresupuesto: De la barra de botones use el botón para mostrar en pantalla el reporte."
+        ocr: ", — Presupuesto ) Estandar interno (con Cédigo de Partida)\nPara imprimir los reportes 4nalisis de precios unitarios > Ulae-iyts Fie yla-)\nelija una de las opciones Consolidado +) Desagregado precios unitarios"
+  - n: 4
+    id: "presupuestos.imprimir-reportes#4"
+    accion: "Elija el reporte: **Estándar interno** (muestra el código de la partida en el Catálogo de partidas), **Estándar cliente** o **Desagregado precios unitarios** (formato horizontal con mano de obra, materiales, equipos y subcontratos de cada partida)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s071]
+    pagina: null
+    fotos:
+      - id: "f9d180b4b6c4"
+        ruta_o_url: "imagenes/manual-de-presupuestos/252006065f63.png"
+        pagina: null
+        caption: "Estándar cliente:"
+        ocr: "$10 Pagina 1\nPresupuesto\nPresupuesto 0402003 PUENTE EN CARRETERA meta\nSubpresupuesto 994 Estructuras\nGliente Ministerio de Transportes y Comunicaciones —Costo al 23032010\nLugar CUSCO -URUBAMBA -URUBAMBA\na ESTRUCTURAS 772,671.28\n01.04 ENCOFRADO 134,368.22\n01.01.01 — Encofrado de cimentacian m2 129.00 35.70 4,605.30\n01.01.02 — Encofrado de elewacidn m2 1,206.00 40.77 49,168.62\n01.01.03 Encofrado de…"
+  - n: 5
+    id: "presupuestos.imprimir-reportes#5"
+    accion: "Para los **Análisis de precios unitarios**, ubique el cursor en el árbol sobre el presupuesto o sobre el subpresupuesto y use el botón."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s072]
+    pagina: null
+    fotos:
+      - id: "910797ad79a7"
+        ruta_o_url: "imagenes/manual-de-presupuestos/ff32b11e4f23.png"
+        pagina: null
+        caption: "Análisis de precios unitarios para el presupuesto: En el árbol del escenario, ubique el cursor sobre el presupuesto y use el botón ."
+  - n: 6
+    id: "presupuestos.imprimir-reportes#6"
+    accion: "Para el listado de **Recursos y precios**, use el botón de la barra de botones del escenario Hoja del Presupuesto; desde un subpresupuesto solo imprime los recursos que este utiliza."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s073]
+    pagina: null
+    fotos:
+      - id: "a01652b930fc"
+        ruta_o_url: "imagenes/manual-de-presupuestos/e06be50e74b5.png"
+        pagina: null
+        caption: "a) Impresión de recursos: Cuando lo haga desde un subpresupuesto sólo imprime los recursos que utiliza el subpresupuesto."
+        ocr: "==\n&} requrso: 02210000020001 CEMENT!\nSQ 2 7 Rx Be\n004 Estructuras Listado general »\nCargar |Recursos +| Indice Unit Luego, Listado por tipo"
+  - n: 7
+    id: "presupuestos.imprimir-reportes#7"
+    accion: "Para archivar o enviar un reporte por e-mail, use exportar informe a partir de una vista previa."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s071]
+    pagina: null
+    fotos:
+      - id: "2effe916e7c6"
+        ruta_o_url: "imagenes/manual-de-presupuestos/3c6bc3536c27.png"
+        pagina: null
+        caption: "El S10 no guarda los reportes, sí necesita archivar o enviarlos por e-mail, use exportar informe a partir de una vista previa."
+        ocr: "Reporte del Presupuesto Estandar Cliente\nmaw ue «> L/i+ (S| % frooxy\nsta previa |\nUse este botén para exportar el reporte a Excel o Word"
+  - n: 8
+    id: "presupuestos.imprimir-reportes#8"
+    accion: "En las opciones de exportación, elija enviar el contenido a un archivo de Excel o de Word; luego elija la carpeta donde se grabará el archivo e ingrese el nombre."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s071]
+    pagina: null
+    fotos:
+      - id: "53f7446e07f2"
+        ruta_o_url: "imagenes/manual-de-presupuestos/08d16e77bc11.png"
+        pagina: null
+        caption: "Luego en las opciones de exportación: Esta ventana depende del tipo de Windows disponible en su PC."
+        ocr: "x\nFormat:\n‘9 Adobe Acrobat (PDF) Y\n[Microsoft Excel 97-2000 (LS) 4! cancel\n© Microsoft Excel 97-2000 - Data only (XLS)\nS Microsoft Word (RTF) 3 Help\nS& Microsoft Word - Editable (RTF) .\n[Rich Text Format (RTF) | ()"
+verificacion:
+  - texto: "Use el explorador de Windows para visualizar los archivos guardados."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s071]
+errores_frecuentes:
+  - sintoma: "No encuentra en el S10 un reporte que imprimió antes."
+    solucion: "El S10 no guarda los reportes: si necesita archivarlos o enviarlos, expórtelos a partir de una vista previa."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s071]
+  - sintoma: "El monto presupuestado de la hoja del presupuesto no coincide con el del listado de recursos."
+    solucion: "Se debe a los redondeos; en el grupo PRESUPUESTO DESCOMPUESTO, la vista preliminar o impresión de los recursos tiene implementadas opciones de redondeo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s073]
+relacionados: [presupuestos.procesar-presupuesto, presupuestos.elaborar-formula-polinomica]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s069, manual: "Manual de Presupuestos", seccion: "3.11 Impresión de reportes", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s070, manual: "Manual de Presupuestos", seccion: "3.11.1 Reportes desde el escenario de Datos Generales", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s071, manual: "Manual de Presupuestos", seccion: "3.11.2 Reportes desde el escenario de la Hoja del Presupuesto (1)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s072, manual: "Manual de Presupuestos", seccion: "3.11.2 Reportes desde el escenario de la Hoja del Presupuesto (2)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s073, manual: "Manual de Presupuestos", seccion: "3.11.2.1 Recursos y precios", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

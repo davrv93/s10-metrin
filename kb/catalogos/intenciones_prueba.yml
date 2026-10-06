@@ -1,0 +1,225 @@
+# Conjunto de PRUEBA aparte del catálogo intenciones.yml. NUNCA entra al entrenamiento ni se copia de él: se redactó con
+# otras palabras y, cuando se pudo, con otros términos de S10 que los del entrenamiento (el validador rechaza frases
+# iguales tras normalizar y las casi iguales). SINTÉTICO: no hay mensajes reales de usuarios.
+#
+# Incluye a propósito los dos casos medidos en local el 06-10-2026 con el clasificador actual (defecto.json):
+#   «¿qué es un metrado?»                          → salió social (0,569); lo correcto es consulta_concepto
+#   «¿Cómo registro un nuevo presupuesto en S10?»   → quedó bajo el umbral (0,322 < 0,40); lo correcto es soporte_como_hacer
+# Por eso el entrenamiento no tiene ninguna pregunta «qué es … metrado» ni «crear/registrar un presupuesto».
+#
+# `ninguno` (fuera de dominio y basura) mide los falsos positivos de la clase «ninguno» (ruido.yml), con frases distintas.
+
+catalogo: intenciones_metrin
+version: 1
+sintetico: true
+minimo_ejemplos: 8
+casos_medidos:
+  - {texto: "¿qué es un metrado?", esperado: consulta_concepto, actual: social, similitud_actual: 0.569}
+  - {texto: "¿Cómo registro un nuevo presupuesto en S10?", esperado: soporte_como_hacer, actual: "trabajo (bajo umbral)", similitud_actual: 0.322}
+
+intenciones:
+  saludo:
+    ejemplos:
+      - "saludos cordiales"
+      - "buenas noches Metrín, ¿qué tal va todo?"
+      - "hola, qué gusto saludarte"
+      - "buen día compañero"
+      - "hola!! ¿andas por ahí?"
+      - "qué tal, buenas"
+      - "hola, recién me conecto"
+      - "holaaa buenas tardes"
+      - "hey Metrín"
+
+  despedida:
+    ejemplos:
+      - "me voy a almorzar, luego sigo"
+      - "hasta el lunes"
+      - "eso sería todo, nos vemos"
+      - "adiosito"
+      - "me despido por ahora"
+      - "bueno chau"
+      - "ya cierro, hasta luego"
+      - "voy a apagar la compu, hasta mañana"
+      - "suficiente por hoy, bye"
+
+  agradecimiento:
+    ejemplos:
+      - "gracias totales"
+      - "muy agradecida por la ayuda"
+      - "uff gracias, justo lo que necesitaba"
+      - "gracias por responder tan rápido"
+      - "se agradece"
+      - "gracias, muy claro todo"
+      - "thanks"
+      - "gracias por la explicación del kardex"
+      - "mil gracias, de verdad me ayudaste"
+
+  consulta_concepto:
+    ejemplos:
+      - "¿qué es un metrado?"
+      - "a qué le llaman presupuesto de venta"
+      - "qué significa nómina en S10"
+      - "¿qué es el plan de cuentas?"
+      - "me explicas qué es una rendición de cuentas"
+      - "qué es un anticipo a proveedores"
+      - "¿qué es un escenario en el sistema?"
+      - "q es la conformidad de servicio"
+      - "¿qué es un subcontrato?"
+      - "qué vendría a ser una restricción en Lean"
+
+  solicitud_comparacion:
+    ejemplos:
+      - "¿qué distingue a una nota de ingreso de una guía de remisión?"
+      - "diferencia entre tareo diario y tareo semanal"
+      - "subcontrato u orden de servicio: diferencias"
+      - "metrado y valorización, ¿cuál es la diferencia?"
+      - "almacén y kardex son lo mismo?"
+      - "qué diferencia hay entre caja chica y rendición de cuentas"
+      - "diferencias entre presupuesto venta y valorizado contractual"
+      - "cuenta de gasto vs cuenta de costo en contabilidad"
+      - "¿en qué difieren el pedido de obra y la cotización?"
+
+  soporte_como_hacer:
+    ejemplos:
+      - "¿Cómo registro un nuevo presupuesto en S10?"
+      - "como hago una salida de almacén a obra"
+      - "¿qué pasos sigo para publicar un proyecto desde Lookahead?"
+      - "necesito registrar la gratificación de julio, ¿cómo lo hago?"
+      - "cómo vinculo una partida de control con las partidas del presupuesto"
+      - "enséñame a hacer la rendición de una caja chica"
+      - "cómo actualizo S10 con la última revisión"
+      - "como le pongo los índices unificados a los insumos"
+      - "dónde se registra el parte diario de equipos"
+      - "quiero aprender a manejar el módulo de almacenes"
+
+  avance_paso:
+    ejemplos:
+      - "ya quedó, ¿ahora?"
+      - "terminado el paso 1"
+      - "ok, hecho. el siguiente"
+      - "ya apareció el mensaje de conforme"
+      - "continúa con el paso que faltaba"
+      - "listo, ya seleccioné el proyecto"
+      - "sí, me salió igual que dijiste"
+      - "regresemos a lo que estábamos haciendo"
+      - "ya está guardado, sigamos"
+
+  pedir_aclaracion:
+    ejemplos:
+      - "no te sigo, explícalo de nuevo"
+      - "¿cuál botón exactamente?"
+      - "uy no entendí nada"
+      - "más sencillo porfa"
+      - "¿podrías poner un ejemplo con números?"
+      - "no me quedó clara la parte de los índices"
+      - "¿qué es lo que tengo que marcar?"
+      - "dímelo con otras palabras"
+      - "¿a qué menú te refieres?"
+
+  soporte_error:
+    ejemplos:
+      - "me tira error cuando quiero grabar la nota de ingreso"
+      - "no puedo entrar al módulo de contabilidad, dice acceso denegado"
+      - "el cronograma no me muestra ninguna barra"
+      - "la detracción no se calcula sola"
+      - "S10 se cierra solito cuando abro el presupuesto"
+      - "el portal del proveedor no carga las facturas"
+      - "no me sale el botón Aceptar que mencionaste"
+      - "el stock me sale negativo"
+      - "la base de datos no se restaura, da error"
+
+  solicitud_reporte:
+    ejemplos:
+      - "¿hay un informe de recursos utilizados contra presupuestados?"
+      - "necesito sacar el registro de compras para el contador"
+      - "cómo imprimo las boletas de pago de la quincena"
+      - "reporte de ventas por cliente en facturación"
+      - "listado de proveedores con su RUC"
+      - "dónde veo los movimientos de un insumo en el almacén de obra"
+      - "informe del cronograma por periodos en Excel"
+      - "reporte de tareo semanal por trabajador"
+      - "quiero el mayor de una cuenta contable"
+
+  consulta_funcionalidad:
+    ejemplos:
+      - "¿S10 genera el PDT para SUNAT?"
+      - "se puede trabajar el presupuesto sin conexión?"
+      - "¿el sistema permite firmar las órdenes de compra digitalmente?"
+      - "¿cuántos usuarios pueden entrar a la vez?"
+      - "el portal del colaborador muestra las boletas?"
+      - "¿calidad móvil deja subir fotos?"
+      - "S10 calcula el IGV en las facturas por su cuenta?"
+      - "¿se puede tener un mismo insumo con dos precios en proyectos distintos?"
+      - "las valorizaciones pueden ir con reajuste automático?"
+
+  feedback_respuesta:
+    ejemplos:
+      - "estás mal, eso se hace en logística"
+      - "pésima respuesta"
+      - "buen dato, eso era"
+      - "la explicación tiene errores"
+      - "no corresponde a mi pregunta"
+      - "te contradices con lo que dijiste antes"
+      - "la fuente que citas es de otro módulo"
+      - "correcto, así es"
+      - "incompleta tu respuesta, faltan pasos"
+
+  solicitud_aprendizaje:
+    ejemplos:
+      - "aprende esto por favor: la caja chica se rinde cada semana"
+      - "graba esta corrección en tu memoria"
+      - "te comparto un PDF para que lo agregues"
+      - "¿ya está disponible lo que te pedí averiguar?"
+      - "investígalo y luego me confirmas"
+      - "añade esta pregunta a tus pendientes"
+      - "te voy a enseñar un truco del kardex, guárdalo"
+      - "incorpora este procedimiento interno"
+
+  consulta_comercial:
+    ejemplos:
+      - "¿qué precio tiene el ERP completo?"
+      - "quiero cotizar el curso de presupuestos para mi equipo"
+      - "¿ustedes venden el software o solo capacitan?"
+      - "me gustaría una demostración del módulo de gerencia de proyectos"
+      - "tarifa del soporte técnico mensual"
+      - "¿hacen software a medida para inmobiliarias?"
+      - "cuánto me costaría agregar 3 usuarios más"
+      - "¿hay promociones este mes?"
+
+  solicitud_humano:
+    ejemplos:
+      - "necesito hablar con un humano ya"
+      - "¿me comunicas con el área de soporte?"
+      - "quiero que me atienda un asesor de verdad"
+      - "pásame el teléfono de mesa de ayuda"
+      - "¿alguien puede conectarse por AnyDesk?"
+      - "mejor que me llame un consultor"
+      - "no quiero hablar con un robot"
+      - "escala mi problema a un especialista"
+
+  ambiguo:
+    ejemplos:
+      - "oye, una cosa"
+      - "kardex"
+      - "tengo dudas con compras"
+      - "lo que te comenté antes"
+      - "ayuda porfa"
+      - "necesito información"
+      - "valorizaciones"
+      - "algo sobre el módulo de nóminas"
+      - "¿puedes con eso?"
+
+  ninguno:
+    ejemplos:
+      - "¿cuál es la montaña más alta del mundo?"
+      - "hazme un resumen de la película Titanic"
+      - "cómo se prepara un pisco sour"
+      - "quién canta esa canción de moda"
+      - "recomiéndame un perfume"
+      - "jfkdlsa"
+      - "probando 1 2 3"
+      - "aaaaa bbbb"
+      - "cuánto pesa un elefante"
+      - "cómo saco mi pasaporte"
+      - "zzzzzzz"
+      - "¿me ayudas a escribir un mensaje de cumpleaños?"

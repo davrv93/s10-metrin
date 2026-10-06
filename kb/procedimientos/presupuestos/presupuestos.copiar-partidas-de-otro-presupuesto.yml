@@ -1,0 +1,82 @@
+id: presupuestos.copiar-partidas-de-otro-presupuesto
+version: 1
+modulo: presupuestos
+titulo: "Copiar partidas de un presupuesto elaborado a otro"
+objetivo: "Armar la hoja de un presupuesto copiando títulos y partidas de un presupuesto ya elaborado y pegándolos en el presupuesto destino."
+nivel: basico
+preguntas:
+  - "cómo copio partidas de otro presupuesto en s10"
+  - "puedo reutilizar las partidas de un presupuesto anterior"
+  - "como copiar y pegar partidas entre presupuestos"
+  - "pasar partidas de un presupuesto a otro"
+  - "copiar titulos y partidas de otra obra"
+  - "como copio un bloque de partidas al presupuesto nuevo"
+  - "copiar partidas de presupuestos elaborados"
+  - "como pego partidas en otro subpresupuesto"
+aliases:
+  - "copiar partidas"
+  - "pegar partidas"
+  - "copiar y pegar partidas de otro presupuesto"
+entidades:
+  modulo: "Presupuestos"
+  pantallas: ["Hoja del Presupuesto"]
+  objetos: ["partidas", "presupuesto destino", "subpresupuesto", "portapapeles"]
+prerrequisitos:
+  - texto: "El presupuesto destino debe estar registrado previamente en el escenario de Datos Generales."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s037]
+pasos:
+  - n: 1
+    id: "presupuestos.copiar-partidas-de-otro-presupuesto#1"
+    accion: "Ingrese al escenario **Hoja del Presupuesto**, elija el presupuesto origen y luego el subpresupuesto."
+    donde: "Escenario Hoja del Presupuesto"
+    fuente: ["7c40a9548710-0030", web-https-documentacion-s10peru-com-manual-d-s040]
+    pagina: 21
+  - n: 2
+    id: "presupuestos.copiar-partidas-de-otro-presupuesto#2"
+    accion: "Marque un bloque de los ítems a copiar, haga clic derecho sobre el bloque y elija **Copiar**."
+    resultado: "Los registros elegidos se encuentran en el portapapeles."
+    fuente: [img-2c2d4e57faf9-0000, "7c40a9548710-0031", web-https-documentacion-s10peru-com-manual-d-s040]
+    pagina: null
+    fotos:
+      - id: "3612f8d334f9"
+        ruta_o_url: "imagenes/manual-de-presupuestos/2c2d4e57faf9.png"
+        pagina: null
+        ocr: "Elija el presupuesto\nluego el subpresupuesto\nPresupues|as A 3\nZone Sy Hoja del Presupuesto  *\nlS VIVIENDA UNIFAMILIAF] Marque un bloque de los\ni Estructu#ss——4] items a copiary luego haga\n5] Arquitectura clic derecho sobre el bloque |_LM4\n| Instalaciones eléctricas >] 8] fem] [vescrincién B\nSe Me |m01.04 | | MOVIMIENTO DE TIERR\n(. @VIVIENDA meta para planificer | [GEE LIMPIEZA, DE TERRENO N\nSac Ma…"
+  - n: 3
+    id: "presupuestos.copiar-partidas-de-otro-presupuesto#3"
+    accion: "Elija el presupuesto destino y luego el subpresupuesto."
+    fuente: [img-0aa78d6b9db7-0000, web-https-documentacion-s10peru-com-manual-d-s040]
+    pagina: null
+  - n: 4
+    id: "presupuestos.copiar-partidas-de-otro-presupuesto#4"
+    accion: "Haga clic derecho en la hoja del presupuesto destino y elija **Pegar** para pegar el contenido del portapapeles."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s040, img-0aa78d6b9db7-0000]
+    pagina: null
+    fotos:
+      - id: "b5a43ce46238"
+        ruta_o_url: "imagenes/manual-de-presupuestos/0aa78d6b9db7.png"
+        pagina: null
+        ocr: "Elija el presupuesto destino,\nluego el subpresupuesto\nPresupifestos A 7 : 4\nee |Hojadel Presupuesto 3*\n=) ge} Esoritoria a\nSS VIVIEND2| UNFAMILIAR\n5] estrufturas 001 ESTRUCTURAS\n5] Arquifectura Fecha :/Haga clic derecho\n| installiciones eléctricas » [en este segmento\nS| installiciones sanitarias\n- B VIVIEND4 meta para planificar\nB VIVIENDA] UNFAMILIAR lines | Adicionar Titulo ...\n2) PUENTE EN CARR…"
+  - n: 5
+    id: "presupuestos.copiar-partidas-de-otro-presupuesto#5"
+    accion: "Use el botón para generar los ítems."
+    fuente: [img-328411277798-0000, "7c40a9548710-0032"]
+    pagina: null
+    fotos:
+      - id: "a3984bf98ecf"
+        ruta_o_url: "imagenes/manual-de-presupuestos/328411277798.png"
+        pagina: null
+        ocr: "Archivo Yer Hoja del Presupuesto expat Use est botn pare generale tems |\nRee ee ee 2 .\nFresupesios Hoja del Presupuesto 3\nBU] [= sBesertoro ‘J ede\ntees SD VIVIENDA UNFAMILIAR [oS\nReact 3 Arquitectura\n5] nstalaciones eiéctricas |__[>[ =| tem [Descripcin |\nA | instalaciones sanitarias |_| MOVIMIENTO DE TIERRAS\nAL DVIVIENDA meta para planiticar |__| LIMPIEZA, DE TERRENO MAN\nBe FarS  VIVIENDA UNFAMILI…"
+verificacion: []
+errores_frecuentes: []
+relacionados: [presupuestos.registrar-presupuesto-nuevo, presupuestos.registrar-titulos-y-partidas]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s037, manual: "Manual de Presupuestos", seccion: "3.5 Registro de información en la hoja del presupuesto", pagina: null}
+  - {id: "7c40a9548710-0030", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 21}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s040, manual: "Manual de Presupuestos", seccion: "3.5.2.1 Caso 1) Copiar partidas de presupuestos elaborados", pagina: null}
+  - {id: img-2c2d4e57faf9-0000, manual: "Manual de Presupuestos", seccion: "2c2d4e57faf9.png", pagina: null}
+  - {id: "7c40a9548710-0031", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 21}
+  - {id: img-0aa78d6b9db7-0000, manual: "Manual de Presupuestos", seccion: "0aa78d6b9db7.png", pagina: null}
+  - {id: img-328411277798-0000, manual: "Manual de Presupuestos", seccion: "328411277798.png", pagina: null}
+  - {id: "7c40a9548710-0032", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 22}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

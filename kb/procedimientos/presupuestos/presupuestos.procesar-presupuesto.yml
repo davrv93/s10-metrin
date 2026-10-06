@@ -1,0 +1,111 @@
+id: presupuestos.procesar-presupuesto
+version: 1
+modulo: presupuestos
+titulo: "Procesar el presupuesto e ingresar los precios faltantes"
+objetivo: "Procesar el presupuesto para que el sistema verifique metrados, aportes y precios de los recursos, e ingresar los precios que falten."
+nivel: intermedio
+preguntas:
+  - "cómo proceso el presupuesto en s10"
+  - "para que sirve procesar el presupuesto"
+  - "como ingreso los precios de los recursos"
+  - "me dice que faltan precios al procesar, que hago"
+  - "donde ingreso precios faltantes del presupuesto"
+  - "con que tecla se procesa el presupuesto"
+  - "como procesar presupusto s10 f9"
+  - "configurar opciones de procesamiento del presupuesto"
+aliases:
+  - "procesar presupuesto"
+  - "ingresar precios de recursos"
+  - "ingresar precios faltantes"
+entidades:
+  modulo: "Presupuestos"
+  pantallas: ["Hoja del Presupuesto", "Recursos y precios"]
+  objetos: ["presupuesto", "metrados", "recursos", "precios"]
+prerrequisitos:
+  - texto: "La hoja del presupuesto debe tener sus títulos, partidas y metrados registrados."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s037]
+  - texto: "Las opciones de procesamiento se configuran en la ventana de configuración, que es atributo del **sa**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046]
+pasos:
+  - n: 1
+    id: "presupuestos.procesar-presupuesto#1"
+    accion: "Si es **sa**, use el botón de configuración (o **Shift+F1**) y verifique las opciones de procesamiento, por ejemplo **Verifica Metrados**, **Verifica Análisis de Precios Unitarios** y **Verifica Precios Recursos**."
+    donde: "Ventana de configuración"
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046, "7c40a9548710-0048", "7c40a9548710-0116"]
+    pagina: null
+    fotos:
+      - id: "1c57d2074340"
+        ruta_o_url: "imagenes/manual-de-presupuestos/b1eb4c8070c7.png"
+        pagina: null
+        caption: "Use el botón para mostrar la ventana de configuración, atributo del sa. Verifique opciones de procesamiento"
+        ocr: "Local\nElija las opciones de procesamiento (2 [ames\nProcesamiento de Andlisis de Precios A A\nGeneral : Férmula Polinémica\nPresupuesto. Unitarios\n\nI¥ Verifica Metrados Elija esta pestafia\n\nI Verifica Andlsis de Precios Unitarios\n\n¥ Verifice Precios Recursos Active las opciones que\n\n Verifica Cantidades en Anélisis de precios unitarios seran verificadas al procesar\n\n Verifica porcentaje al 100% Estim…"
+  - n: 2
+    id: "presupuestos.procesar-presupuesto#2"
+    accion: "En el escenario de la **Hoja del Presupuesto**, procese el presupuesto con el botón de la barra de botones o pulse la tecla **F9**."
+    resultado: "El sistema muestra la ventana de diálogo de procesamiento."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047]
+    pagina: null
+    fotos:
+      - id: "0ae4dc1b3118"
+        ruta_o_url: "imagenes/manual-de-presupuestos/07aaf44d9f86.png"
+        pagina: null
+        caption: "Para procesar el presupuesto use el botón ubicado en la barra de botones del escenario de la Hoja del Presupuesto, también puede pulsar la tecla F9 luego el sistema muestra la ventana de diálogo:"
+        ocr: "—_\n, ax\n[Opcpnes de Procesamiento tipo 3 x\n~v| Opciones [Bcontiguracién\nI¥ Calculer precios unitarios\nit Calcular comodines y consolidado de M\nrecursos v\nB\nAlerta de datos faltantes\n& Aliniciar el proceso v\n© Al finaizar el proceso\nE\nInformacion citimna procesamienta\nUsuario vito proceso\n[aot ESTRUCTURAS 3 1809/2007 04:47:10 p.m sa\n[Eq G02” GasTos GeNERALES 3 20/2/2007 11:59:47 am sa"
+  - n: 3
+    id: "presupuestos.procesar-presupuesto#3"
+    accion: "En la ventana de procesamiento, elija **Continuar**."
+    fuente: ["7c40a9548710-0050"]
+    pagina: 32
+  - n: 4
+    id: "presupuestos.procesar-presupuesto#4"
+    accion: "Si faltan precios, el sistema pregunta si los ingresará: responda **Sí**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047, "7c40a9548710-0050"]
+    pagina: null
+    fotos:
+      - id: "6d4a018b836a"
+        ruta_o_url: "imagenes/manual-de-presupuestos/1b5d784d3e2d.png"
+        pagina: null
+        caption: "Al momento de procesar el presupuesto, el sistema verifica que no le falte metrados en la hoja del presupuesto y en el análisis de precios unitarios todos los recursos tengan aportes (cantidades) y precios. En el caso de que falte algún dato el sistema envía un mensaje con el requerimiento de ingreso del dato. Luego de registrar el dato, cierre la ventana y vuelva a procesar el presupuesto."
+        ocr: "—-\n(2) {Ingresara los 27 precios faltantes?"
+  - n: 5
+    id: "presupuestos.procesar-presupuesto#5"
+    accion: "Ingrese los precios de los recursos que faltan en la ventana **Recursos y precios**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s052, "7c40a9548710-0050"]
+    pagina: null
+    fotos:
+      - id: "91ebd196ce6b"
+        ruta_o_url: "imagenes/manual-de-presupuestos/7082c25d4614.png"
+        pagina: null
+        caption: "Los precios de los recursos son almacenados de acuerdo al lugar y la fecha además por presupuesto."
+        ocr: "® Recurso: 0147010020005 OPERARIO ENCOFRADO hh. [6] fant\n\nSR/R|4 RH % E FG Tipo Touos = Filtra Todos .\n\nCargar [Recursos +] Indice Unificade [Todos +| Factor {sin Fa P|\na ec\n[> [OPERARIO ENCOFRADO hh _2,655.8921 13.70)\n[_ [OFICIAL ENCOFRADO hh 5,311 9085 12.43]\n[_OFICIAL CONCRETO hh 745.8392 12.13]\n[OFICIAL CANTERA hh 30.4592 12.13\n[___|PEON CONCRETO hh 6,712.5600 10.95|\n|___|PEON CANTER, hh 487.4…"
+  - n: 6
+    id: "presupuestos.procesar-presupuesto#6"
+    accion: "Cierre la ventana de **Recursos y precios**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s052]
+    pagina: null
+  - n: 7
+    id: "presupuestos.procesar-presupuesto#7"
+    accion: "Vuelva a procesar el presupuesto con el botón y, en la ventana de procesamiento, elija **Continuar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s052]
+    pagina: null
+verificacion:
+  - texto: "Después de procesar, el subpresupuesto se pinta en el árbol de color rojo si el presupuesto está concluido, o de amarillo si se configuró la fórmula polinómica y aún falta elaborarla."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s032]
+errores_frecuentes:
+  - sintoma: "Al procesar, el sistema envía un mensaje pidiendo un dato: faltan metrados en la hoja del presupuesto, o aportes (cantidades) o precios de recursos en el análisis de precios unitarios."
+    solucion: "Registre el dato que pide, cierre la ventana y vuelva a procesar el presupuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047]
+  - sintoma: "Los precios no corresponden después de cambiar la fecha o el lugar del presupuesto."
+    solucion: "Los precios de los recursos se almacenan de acuerdo al lugar y la fecha, además de por presupuesto: revise esos datos del presupuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s052]
+relacionados: [presupuestos.registrar-titulos-y-partidas, presupuestos.disenar-pie-de-presupuesto]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s037, manual: "Manual de Presupuestos", seccion: "3.5 Registro de información en la hoja del presupuesto", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s046, manual: "Manual de Presupuestos", seccion: "3.6.1 Configuración previa al procesamiento", pagina: null}
+  - {id: "7c40a9548710-0048", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 31}
+  - {id: "7c40a9548710-0116", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 73}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s047, manual: "Manual de Presupuestos", seccion: "3.6.2 Procesamiento del presupuesto", pagina: null}
+  - {id: "7c40a9548710-0050", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 32}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s052, manual: "Manual de Presupuestos", seccion: "3.6.4 Ingreso de precios de los recursos", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s032, manual: "Manual de Presupuestos", seccion: "3.3 Registro del presupuesto (1)", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

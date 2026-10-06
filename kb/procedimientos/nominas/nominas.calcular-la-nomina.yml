@@ -1,0 +1,227 @@
+id: nominas.calcular-la-nomina
+version: 1
+modulo: nominas
+titulo: "Calcular la nómina de un periodo"
+objetivo: "Generar los resúmenes de conceptos y calcular la nómina de acuerdo al tipo de nómina, periodo y tipo de proceso: primero el proceso estándar y, al final, el de renta de quinta categoría."
+nivel: avanzado
+preguntas:
+  - "cómo calculo la nómina de la semana"
+  - "como proceso la planilla en s10 nominas"
+  - "pasos para calcular la nomina de obreros"
+  - "como genero el resumen de conceptos por dia y por periodo"
+  - "como calculo la renta de quinta categoria en nominas"
+  - "como reproceso la nomina de un periodo cerrado"
+  - "donde veo la nomina detallada despues de calcular"
+  - "como se procesa la nomina estandar"
+  - "un dato nuevo no sale en la nomina calculada"
+  - "como ago el calculo de la planilla semanal"
+aliases:
+  - "calcular nómina"
+  - "procesar nómina"
+  - "cálculo de la nómina"
+  - "procesar planilla"
+  - "proceso estándar"
+entidades:
+  modulo: "Nóminas"
+  pantallas: ["Resumen de Conceptos por Día", "Resumen de Conceptos por Periodo", "Cálculo de la Nómina", "Nómina Detallada"]
+  objetos: ["nómina", "tipo de nómina", "periodo", "proceso estándar", "renta de quinta categoría", "papeletas"]
+prerrequisitos:
+  - texto: "Los tareos y las papeletas del periodo deben estar registrados: el resumen de conceptos por día obtiene los datos registrados en el Tareo Multiproyecto más las papeletas registradas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s072]
+  - texto: "Antes de procesar la nómina, registre los datos manuales que correspondan: Datos por Socio de Negocio, Datos por Socio de Negocio y Periodo y Datos por Periodo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s071, web-https-documentacion-s10peru-com-manual-d-s073]
+pasos:
+  - n: 1
+    id: "nominas.calcular-la-nomina#1"
+    accion: "Ingrese al escenario **Resumen de Conceptos por Día**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s072, img-b2533fbfc3f1-0000]
+    pagina: null
+    fotos:
+      - id: "ce61d610de85"
+        ruta_o_url: "imagenes/manual-de-nominas/b2533fbfc3f1.png"
+        pagina: null
+        ocr: "Resumen de Conceptos por Dia\n\nProyecto 02001001 + =MULTIPROYECTO\n\nTipo de Némina [003 Régimen C.C. con BB SS. - Obreros 5\nPor Perlodo o220160301 [Semana 2019 - 01 | da] X|o0| S|\n\n© PorRango Del [03/01/2019 | Aljos/o1/2019 ~| @ @\n\nRi\nBOMFAR Ea vai eda"
+    sub:
+      - n: 1
+        id: "nominas.calcular-la-nomina#1.1"
+        accion: "Elija el **tipo de nómina**."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s072]
+        pagina: null
+      - n: 2
+        id: "nominas.calcular-la-nomina#1.2"
+        accion: "Use el botón para elegir el **periodo** de proceso."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s072]
+        pagina: null
+      - n: 3
+        id: "nominas.calcular-la-nomina#1.3"
+        accion: "Si ya generó un resumen antes, use el botón para eliminar el resumen de conceptos generado previamente."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s072]
+        pagina: null
+      - n: 4
+        id: "nominas.calcular-la-nomina#1.4"
+        accion: "Use el botón para generar el resumen de conceptos por Día."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s072]
+        pagina: null
+        fotos:
+          - id: "99b60e2d79a8"
+            ruta_o_url: "imagenes/manual-de-nominas/daf73fac68a1.png"
+            pagina: null
+            caption: "Llamada a: Permite elegir el tipo de nómina. Llamada b: Use el botón para elegir el periodo de proceso. Llamada c: Use el botón para eliminar el resumen de conceptos generado previamente. Llamada d: Use el botón para poder generar el resumen de conceptos por Día. Llamada e: Use el botón para verificar si todas las papeletas han sido aplicadas correctamente. Llamada f: Permite visualizar el resumen de conceptos por Días de modo detallado. Permite visualizar el detalle de días y horas por los días que incluye el periodo a procesar."
+            ocr: "Resumen de Comcepice por Din\nProyecto 02001001 «=MULTIPROYECTO\nIa MEOS Reamen CC conGOSS Overs\n PorPeriodo fozameas0' Semana 2019-01 =| #&| <|=v |=]\n© PorRango Cel Jeune a al [esa |\nDetalle l Resumen\nDOAFARQRS vA és\nol oe\n411991 Campo[tvombee =] len cusigser posicin lf [X|[22] Grupo:\nConcepts, [Concerto Gerri Tipo Valor [Oia Semana |Cécigo Lad [Categoria Tempo.\n|= _ALGONER CONDOR, FERMIN,\nSLILOLen…"
+      - n: 5
+        id: "nominas.calcular-la-nomina#1.5"
+        accion: "Use el botón para verificar si todas las papeletas han sido aplicadas correctamente."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s072]
+        pagina: null
+      - n: 6
+        id: "nominas.calcular-la-nomina#1.6"
+        accion: "Revise el resumen en modo **Detalle** (días y horas de cada día del periodo) o **Resumen** (total de días y horas generadas para el periodo)."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s072, img-daf73fac68a1-0000]
+        pagina: null
+        fotos:
+          - id: "771b189fa1ac"
+            ruta_o_url: "imagenes/manual-de-nominas/7d36d21cac7e.png"
+            pagina: null
+            caption: "Llamada g: Permite visualizar el resumen de conceptos por Días de modo resumen. Permite visualizar el total de días y horas generadas para el periodo."
+            ocr: "Resumen de Conceptos por Dia\n\nProyecto 02001001 = MULTIPROVECTO:\n\n‘Tipo de Mimina |003 Régmen CC con 88S. - Cereros I\n\n© Por Periods frzzoie0901 [Semana 2019-01 =] #] | e7|\n\n© Porkange Oe [iijoiaie >] 4 [ijmens >]\n\nrr ee | Resumen\n\nDHAFOSS + OF gait\n\n41259 Campo[tvonitee TH fen custasee porn >I (X|[22) Grupo:\nConcesto Genérico [Concerto [<ocago_ tad\n\n|=) ALGONER CONDORI, FERMIN\n'HORAS EN PLANTA HE…"
+  - n: 2
+    id: "nominas.calcular-la-nomina#2"
+    accion: "Ingrese al escenario **Resumen de Conceptos por Periodo**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s073, img-f46c58c5d5d0-0000]
+    pagina: null
+    fotos:
+      - id: "1819ba0ff97d"
+        ruta_o_url: "imagenes/manual-de-nominas/f46c58c5d5d0.png"
+        pagina: null
+        ocr: "Resumen de Conceptos por Periodo\n\nProyecto «2001001 MULTIPROYECTO\n\nTipo de Némina |003 Régmen C.C. con BB.SS. . Obreros: a\n\nPeriedo ———_forz0160001 [Serena 2019-01 =] a4) oy}\n\nDOHA AES vA aaa\n\n211304 Campo[Nontre “len cusiasee pesca Il i -) Grupes\n\n(= ALGONER CONDOR!, FERMI:\n22007063 05272105 Opera O1007005 JORBAL OUAEO - CONST. CVE. Meneda —\n‘2007843 06272105 Operanio 01007034 BONFICACION UNIFICA…"
+  - n: 3
+    id: "nominas.calcular-la-nomina#3"
+    accion: "Use la opción para generar por primera vez o actualizar el resumen de conceptos por Periodo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s073]
+    pagina: null
+  - n: 4
+    id: "nominas.calcular-la-nomina#4"
+    accion: "Ingrese al escenario **Cálculo de Nóminas** del **MULTIPROYECTO**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s074, img-5f7f5863df27-0000, img-56a8f52ea054-0000]
+    pagina: null
+    fotos:
+      - id: "05eb785bfdcb"
+        ruta_o_url: "imagenes/manual-de-nominas/56a8f52ea054.png"
+        pagina: null
+        ocr: "Proyectos\ni) FQ FIMA HUAYCOLORO.\n#1 MULTIFAMILIAR ESCAMPADERO\nAMULTIPROYECTO.\n2 Princifar\nCalculo de Néminas ET\nLuego, ."
+  - n: 5
+    id: "nominas.calcular-la-nomina#5"
+    accion: "Elija el **tipo de nómina**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s075, img-5f7f5863df27-0000]
+    pagina: null
+    fotos:
+      - id: "5b8426d6d839"
+        ruta_o_url: "imagenes/manual-de-nominas/5f7f5863df27.png"
+        pagina: null
+        ocr: "Calculo de Nominas\n\nProyecto (02004001 MULTIPROYECTO\n\nTipo de Némina |002 Régimen C.C. con BB.SS. - Obreros @ +\n\nProceso a Periodo nr sar, aid\nOTC)"
+  - n: 6
+    id: "nominas.calcular-la-nomina#6"
+    accion: "Elija el tipo de proceso: primero, el proceso estándar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s075]
+    pagina: null
+  - n: 7
+    id: "nominas.calcular-la-nomina#7"
+    accion: "Elija el **periodo**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s075]
+    pagina: null
+  - n: 8
+    id: "nominas.calcular-la-nomina#8"
+    accion: "Use el botón que procesa la nómina y confirme que está seguro de procesar la nómina para el periodo."
+    resultado: "Cada trabajador figura como Procesado, con el usuario y la fecha del proceso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s075, img-b71570ced300-0000, img-fc24e7555701-0000]
+    pagina: null
+    fotos:
+      - id: "e0017ea8c324"
+        ruta_o_url: "imagenes/manual-de-nominas/b71570ced300.png"
+        pagina: null
+        ocr: "Sistema 10 - Nominas x\n(2) {Esté seguro de procesar la némina para el periodo: Semana 2019 - 017\n‘"
+      - id: "6015984b9a38"
+        ruta_o_url: "imagenes/manual-de-nominas/fc24e7555701.png"
+        pagina: null
+        ocr: "rocesar (0) | Procesados (10)\nARS va aaa\n\nArrastre hacia aqui el encabezado de la columna que desea agrupar.\ni) ‘Campo |Nombre | En cualquier posicién Grupo:\nCédigo | DNI Nombre [Usuario titimo proceso | Fecha iitimo proceso. | Semana 2019 - 01\n221 Bim 44553411 CAYLLAHUA MEZA, PERCY DEM! usuario 13/01/2019 12:55:47 p.m. Procesado:\n22000035 43119021 BARBARAN DEL CARPIO, GINO C usuario 13/01/2019 12…"
+  - n: 9
+    id: "nominas.calcular-la-nomina#9"
+    accion: "Luego, para el impuesto a la renta de quinta categoría, siga los mismos pasos del proceso estándar y elija el proceso de renta de quinta categoría."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s076]
+    pagina: null
+    fotos:
+      - id: "f66f68eb5a27"
+        ruta_o_url: "imagenes/manual-de-nominas/eb41bf516295.png"
+        pagina: null
+        caption: "Elija el proceso,"
+        ocr: "Calculo de Nominas\nProyecto 00001001 MULTIPROYECTO\nTipo de Némina [002 Regimen C.C. con BB.SS - Obreros +\nProceso foo001 + [ESTANDAR INCLUYE BENEFICIOS - ] Ea] Periodo [0220190101 |Semana 2019 - 01 = AX ey |\nCy Catdlogo de Procesos [- [5]\n(J opciones 2\nBMAF 0 XGUS MYA © ~ 21 5/8 SE 8\n‘ras |” cr\n|_| Cédigo | Descripcién Plantilla\nof 4 |_|__lannna \"TESTANDAR INCLUYE BENEFICIOS-SEMANAL | 000001 CONST…"
+  - n: 10
+    id: "nominas.calcular-la-nomina#10"
+    accion: "Use el botón para calcular el proceso de renta de quinta categoría y confirme el mensaje que pregunta si está seguro de procesar la nómina para el periodo."
+    resultado: "De esta manera se ha concluido el proceso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s076, img-48a7a2f4da2d-0000]
+    pagina: null
+    fotos:
+      - id: "f5eae05eaa26"
+        ruta_o_url: "imagenes/manual-de-nominas/aa29ed04d332.png"
+        pagina: null
+        caption: "Seleccionar el botón y calcular el proceso de renta de quinta categoría."
+        ocr: "Calculo de Nominas\n\nProyecto 00001001 MULTIPROYECTO Elija\nTipo de Némina |002 Regimen C.C. con BB.SS - Obreros | +\nProceso (00001 |ESTANDAR INCLUYE BENEFICIOS - if.) Periodo |0220190101 |Semana 2019 - 01 a» | dh] lex | Ay?"
+      - id: "46b1f4fea0fe"
+        ruta_o_url: "imagenes/manual-de-nominas/48a7a2f4da2d.png"
+        pagina: null
+        ocr: "Sistema 10 - N6éminas x\nC2) {Est seguro de procesar la némina para el periodo: Semana 2019 - 01?\n[sia __s"
+      - id: "ea91b0b95b3b"
+        ruta_o_url: "imagenes/manual-de-nominas/b267dc8dda01.png"
+        pagina: null
+        caption: "De esta manera se ha concluido el proceso."
+        ocr: "rocesar (0) | Procesados (10)\nARS va aaa\n\nArrastre hacia aqui el encabezado de la columna que desea agrupar.\ni) ‘Campo |Nombre | En cualquier posicién Grupo:\nCédigo | DNI Nombre [Usuario titimo proceso | Fecha iitimo proceso. | Semana 2019 - 01\n221 Bim 44553411 CAYLLAHUA MEZA, PERCY DEM! usuario 13/01/2019 12:55:47 p.m. Procesado:\n22000035 43119021 BARBARAN DEL CARPIO, GINO C usuario 13/01/2019 12…"
+  - n: 11
+    id: "nominas.calcular-la-nomina#11"
+    accion: "Para revisar lo calculado, ingrese al escenario **Nómina Detallada** y elija el tipo de nómina, el periodo y el proceso."
+    resultado: "Se muestra todo lo que históricamente se ha calculado: los conceptos por persona, número de variable, fórmula y el valor."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s077, img-2155d2ebfc4d-0000]
+    pagina: null
+    fotos:
+      - id: "9b233124c3b0"
+        ruta_o_url: "imagenes/manual-de-nominas/561ed5791ef8.png"
+        pagina: null
+        caption: "Acceso al escenario,"
+        ocr: "Proyectos\n! ++) 5B FIMAHUAYCOLORO\n=) 5B MULTIFAMILIAR ESCAMPADERO.\nGB MULTIPROYECTO\n. = 2 Princigal\nNomina Detallada 5\nLuego, oe"
+      - id: "dab3d0dc91bf"
+        ruta_o_url: "imagenes/manual-de-nominas/cbc481fabee6.png"
+        pagina: null
+        caption: "Acceso al escenario,"
+        ocr: "Cédigo Concepto Valor a\nA\n=| ESTANDAR SEMANAL - OBREROS C.C. CON BB.SS\n=| ALZAMORA GONZALES, CARLOS\n22000032 BONIFICACION TRABAJO NOCTURNA, 20/5\n22000032 BONIFICACION X ALTURA, 5\n22000032 BONIFICACION X CONTACTO CON AGUA 20\n22000032 JORNALES ANUALES X ESCOLARIDAD 30\n22000032 JORNALES ANUALES GRATIFICACIONES 40\n22000032 BONIFICACION EXTRAORDINARIA 3\n22000032 JORNAL DIARIO - CONST. CIVIL 43.30\n22000…"
+verificacion:
+  - texto: "En Nómina Detallada se visualizan los conceptos calculados por persona, con su número de variable, fórmula y valor."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s077]
+errores_frecuentes:
+  - sintoma: "Un dato nuevo no se toma en cuenta en el cálculo de la nómina."
+    solucion: "Vuelva a generar el resumen de conceptos por Día y por Periodo cada vez que ingrese un dato nuevo en los escenarios involucrados en el resumen; en caso contrario no será tomado en cuenta para el cálculo de la nómina."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s072, web-https-documentacion-s10peru-com-manual-d-s073]
+  - sintoma: "El proceso estándar no calcula el impuesto a la renta de quinta categoría."
+    solucion: "Ese impuesto se encuentra en otro proceso: calcule el proceso Renta de Quinta Categoría siempre al final, para que pueda acumular los ingresos generados en el periodo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s075, web-https-documentacion-s10peru-com-manual-d-s076]
+  - sintoma: "Necesita volver a calcular la nómina de un periodo ya cerrado."
+    solucion: "Use la opción que permite reprocesar la nómina de un periodo ya cerrado: toma en cuenta los datos históricos y solo actualiza la fórmula si es necesario. Es un proceso correctivo que debe ser analizado antes de ser ejecutado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s075]
+relacionados: [nominas.registrar-tareo-estandar, nominas.imprimir-boletas-de-pago]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s072, manual: "Manual de Nóminas", seccion: "7.1.2 Resumen de Conceptos por Día", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s071, manual: "Manual de Nóminas", seccion: "7.1.1.4 Datos por Periodo", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s073, manual: "Manual de Nóminas", seccion: "7.1.3 Resumen de Conceptos por Periodo", pagina: null}
+  - {id: img-b2533fbfc3f1-0000, manual: "Manual de Nóminas", seccion: "b2533fbfc3f1.png", pagina: null}
+  - {id: img-daf73fac68a1-0000, manual: "Manual de Nóminas", seccion: "daf73fac68a1.png", pagina: null}
+  - {id: img-f46c58c5d5d0-0000, manual: "Manual de Nóminas", seccion: "f46c58c5d5d0.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s074, manual: "Manual de Nóminas", seccion: "7.1.4 Cálculo de la Nómina", pagina: null}
+  - {id: img-5f7f5863df27-0000, manual: "Manual de Nóminas", seccion: "5f7f5863df27.png", pagina: null}
+  - {id: img-56a8f52ea054-0000, manual: "Manual de Nóminas", seccion: "56a8f52ea054.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s075, manual: "Manual de Nóminas", seccion: "7.1.4.1 Proceso Estándar", pagina: null}
+  - {id: img-b71570ced300-0000, manual: "Manual de Nóminas", seccion: "b71570ced300.png", pagina: null}
+  - {id: img-fc24e7555701-0000, manual: "Manual de Nóminas", seccion: "fc24e7555701.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s076, manual: "Manual de Nóminas", seccion: "7.1.4.2 Proceso Renta de Quinta Categoría", pagina: null}
+  - {id: img-48a7a2f4da2d-0000, manual: "Manual de Nóminas", seccion: "48a7a2f4da2d.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s077, manual: "Manual de Nóminas", seccion: "7.1.5 Nómina Detallada", pagina: null}
+  - {id: img-2155d2ebfc4d-0000, manual: "Manual de Nóminas", seccion: "2155d2ebfc4d.png", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

@@ -1,0 +1,212 @@
+id: almacenes.registrar-ingreso-por-inventario
+version: 1
+modulo: almacenes
+titulo: "Registrar un ingreso por inventario"
+objetivo: "Registrar en el almacén, con un Ingreso por Inventario [II], los recursos que encuentre al empezar a controlar un proyecto ya iniciado, para tener stock y poder hacer después los egresos."
+nivel: basico
+preguntas:
+  - "cómo registro un ingreso por inventario en almacenes"
+  - "cómo hago el inventario inicial del almacén en s10"
+  - "cómo ingreso los materiales que ya están en el almacén de la obra"
+  - "pasos para registrar un ingreso al almacén"
+  - "como ago un ingreso por inbentario"
+  - "dónde cargo el stock inicial del almacén"
+  - "cómo lleno el formulario de ingreso al almacén"
+  - "quiero registrar los recursos que hay en almacén para empezar a hacer egresos"
+  - "ingreso II almacen como se registra"
+aliases:
+  - "ingreso por inventario"
+  - "inventario inicial"
+  - "registrar ingreso al almacén"
+  - "cargar stock inicial"
+  - "ingreso II"
+entidades:
+  modulo: "Almacenes"
+  pantallas: ["Ingresos", "Tipo de Cambio"]
+  objetos: ["guía de ingreso", "recurso", "tipo de cambio", "documento", "almacén"]
+prerrequisitos:
+  - texto: "Todos los recursos que utiliza el proyecto deben estar registrados en el catálogo de recursos; antes de registrar uno, use las búsquedas para no duplicarlo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s029]
+  - texto: "El proyecto debe estar registrado (si se registró en Gerencia de proyectos, se ve en Almacenes) y usted debe tener acceso al proyecto y a sus almacenes."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s021]
+pasos:
+  - n: 1
+    id: "almacenes.registrar-ingreso-por-inventario#1"
+    accion: "En la barra de vistas, elija el acceso al escenario de **Ingresos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s041, web-https-documentacion-s10peru-com-manual-d-s052]
+    pagina: null
+    fotos:
+      - id: "2b080a9fa3d3"
+        ruta_o_url: "imagenes/manual-de-almacenes/18e1fb249423.png"
+        pagina: null
+        caption: "Acceso al escenario de ingresos"
+        ocr: "[Eis Le) ae |\nhg Escritorio\n] 5. 6G PUENTE EN CARRETERA,\n(=i, mms\nIngresos Liew, AD de Actives l"
+  - n: 2
+    id: "almacenes.registrar-ingreso-por-inventario#2"
+    accion: "En el árbol, elija el proyecto y el almacén: los movimientos de ingreso solo se efectúan para el almacén elegido."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s041, web-https-documentacion-s10peru-com-manual-d-s052]
+    pagina: null
+  - n: 3
+    id: "almacenes.registrar-ingreso-por-inventario#3"
+    accion: "Use el botón para elegir el tipo de ingreso y elija **Ingreso por Inventario [II]**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s041, img-e650a9158fb6-0000, web-https-documentacion-s10peru-com-manual-d-s034]
+    pagina: null
+    fotos:
+      - id: "9978751bf4c6"
+        ruta_o_url: "imagenes/manual-de-almacenes/e650a9158fb6.png"
+        pagina: null
+        ocr: "Ingresos | Use este botdn para elegir el tipo de ingreso ae\nmovimiento:\nAY #&"
+  - n: 4
+    id: "almacenes.registrar-ingreso-por-inventario#4"
+    accion: "Haga clic derecho sobre la lista de ingresos y elija la opción que permite el registro de un nuevo movimiento."
+    resultado: "Se abre el formulario de registro del ingreso, el mismo para todos los ingresos; cada tipo de ingreso genera un número de guía correlativo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s035, web-https-documentacion-s10peru-com-manual-d-s041]
+    pagina: null
+    fotos:
+      - id: "26966c63efee"
+        ruta_o_url: "imagenes/manual-de-almacenes/75170c38282e.png"
+        pagina: null
+        caption: "Llamada o-1: Muestra la lista de ingresos efectuada al almacén. El detalle del formulario de ingreso, tiene las siguientes opciones en el menú emergente, al invocarlo con clic derecho. Este menú cambia de acuerdo al tipo de ingreso elegido"
+        ocr: "T[ceeseweo] to id creme neeneltovan eau\nVs ren 2% Fesde fis Paredal Seats MP Voscounrasnitnn Uescsammomnt Tignes oles Canin Kewgiednaadiae Me\nEdi {000000000001 __1 14im2van12 00 4 15 GR 4.00 jr\n\na Aeon) |\n\n6 are)\n\n% Aucitore 6-13)\n\n& Viste preesiesinnaar 13)\n\n9 Spiionom 9"
+  - n: 5
+    id: "almacenes.registrar-ingreso-por-inventario#5"
+    accion: "En **Fecha**, ingrese la fecha del movimiento: el día en que el recurso ingresa al almacén."
+    donde: "Cabecera del formulario de ingreso"
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s041, img-5a1b50414d11-0000]
+    pagina: null
+    fotos:
+      - id: "dbc8c098859a"
+        ruta_o_url: "imagenes/manual-de-almacenes/5a1b50414d11.png"
+        pagina: null
+        ocr: "Bp Ingreso por Inventario [Il] 01002-PUENTE EN CARRETERA * Sree)\nRegistra Andres - ANDRADE ANDRADE Ultimo usuario Andres N° de Guia\nAlmacén 004 - De Materiales 1 Ultima fecha obit 05:04:56 p.m. 6| [000000000001\nTipo —-01- OBRA Estado Exlicion ®\nFecha {13/06/2010 +| Deto, [015 [DOCUMENTO INTERNO =] #4) neDeto. [001 .[149 Fecha ——\nMoneda Br Evessues ————\"] a Tipo de cambio [at IOV. 19%)"
+  - n: 6
+    id: "almacenes.registrar-ingreso-por-inventario#6"
+    accion: "Si el sistema le solicita el tipo de cambio de esa fecha, regístrelo en la ventana **Tipo de Cambio** y pulse **Adicionar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s038, img-386f454e5ce7-0000, web-https-documentacion-s10peru-com-manual-d-s041]
+    pagina: null
+    fotos:
+      - id: "91c8ea99a3da"
+        ruta_o_url: "imagenes/manual-de-almacenes/386f454e5ce7.png"
+        pagina: null
+        ocr: "Pye\n3 Tipo de Cambio =<\nIngrese los valores\n\nMoneda\n\nBase 0] HUEVOS SOLES\n\nMoneda fo ; IDOLARES AMERICANOS o 4\n\nFecha = [amsr010 +\n\nValor Oficial\n\nPromedio — Promedio ——\n\nPonderado 2e4 Ponderado [286\n\nCompra Venta |\n\nAdicionar | Cancelar"
+  - n: 7
+    id: "almacenes.registrar-ingreso-por-inventario#7"
+    accion: "Elija el tipo de documento que respalda el movimiento de ingreso (en algunos tipos de ingreso el sistema lo propone)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s041]
+    pagina: null
+  - n: 8
+    id: "almacenes.registrar-ingreso-por-inventario#8"
+    accion: "Ingrese el número del documento elegido."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s041]
+    pagina: null
+  - n: 9
+    id: "almacenes.registrar-ingreso-por-inventario#9"
+    accion: "Ingrese la fecha del documento elegido."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s041]
+    pagina: null
+  - n: 10
+    id: "almacenes.registrar-ingreso-por-inventario#10"
+    accion: "En **Moneda**, elija el tipo de moneda que utiliza en el movimiento."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s041]
+    pagina: null
+  - n: 11
+    id: "almacenes.registrar-ingreso-por-inventario#11"
+    accion: "Revise el valor del **tipo de cambio**; para editarlo o cambiarlo, use el botón que permite acceder al catálogo de tipos de cambio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s041]
+    pagina: null
+    fotos:
+      - id: "0a42f1d98f8c"
+        ruta_o_url: "imagenes/manual-de-almacenes/77914a7c2967.png"
+        pagina: null
+        caption: "Llamada 1f: Esta ventana muestra el valor del tipo de cambio. Cuando eligió la fecha de ingreso (llamada 1a) el sistema solicitó el ingreso del tipo de cambio, para editarlo o cambiarlo use el botón que permite acceder al catálogo de tipos de cambio."
+  - n: 12
+    id: "almacenes.registrar-ingreso-por-inventario#12"
+    accion: "En el detalle del formulario, haga clic derecho para invocar el catálogo y elija los recursos que forman parte del ingreso."
+    donde: "Detalle del formulario de ingreso"
+    resultado: "El sistema muestra la unidad de cada recurso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s042, img-773009a17504-0000]
+    pagina: null
+    fotos:
+      - id: "c5eab8543923"
+        ruta_o_url: "imagenes/manual-de-almacenes/773009a17504.png"
+        pagina: null
+        ocr: "Eba a en)\nRecurso Unidad] Cantidad | Precio Neto Parcial\nCLAVOS PARA MADERA CON CABEZA DE 1\" oR) 40.0000 4.0000 160.00\nCLAVOS PARA MADERA CON CABEZA 1/2\" ky a 25.0000 4.0000 100.00"
+  - n: 13
+    id: "almacenes.registrar-ingreso-por-inventario#13"
+    accion: "En **Cantidad**, ingrese la cantidad que ingresa de cada recurso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s042]
+    pagina: null
+  - n: 14
+    id: "almacenes.registrar-ingreso-por-inventario#14"
+    accion: "En **Precio Neto**, ingrese el precio neto sin impuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s042, img-773009a17504-0000]
+    pagina: null
+  - n: 15
+    id: "almacenes.registrar-ingreso-por-inventario#15"
+    accion: "Si lo necesita, en **Observación** registre una descripción corta para agrupar: este dato se muestra en una columna del escenario."
+    donde: "Pie del formulario de ingreso"
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s042, img-0d176d275c9a-0000]
+    pagina: null
+  - n: 16
+    id: "almacenes.registrar-ingreso-por-inventario#16"
+    accion: "Pulse **Aceptar** para grabar el contenido de la guía (**Descarga directa** graba la guía y genera además el documento de egreso)."
+    fuente: [img-0d176d275c9a-0000, web-https-documentacion-s10peru-com-manual-d-s042]
+    pagina: null
+    fotos:
+      - id: "b703cd47a01c"
+        ruta_o_url: "imagenes/manual-de-almacenes/0d176d275c9a.png"
+        pagina: null
+        ocr: "4 mr r\nRecurso MADERA AGUANO 1°X8\"X10\" — 3a) Origen Calculado\nUbicacién (3b) Parcial 260.00 260.00\nObservacién 3 350.36\nGe) 2,194.36\n@—__@p___@1_@p____ap\nAceptar Descarga directa Imprimir Distribucién de costo Cancelar"
+  - n: 17
+    id: "almacenes.registrar-ingreso-por-inventario#17"
+    accion: "Use el botón que muestra una vista previa o impresión en pantalla de la forma como será impreso el reporte de la guía."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s043]
+    pagina: null
+    fotos:
+      - id: "4ae349cf36d7"
+        ruta_o_url: "imagenes/manual-de-almacenes/bdf823b20e06.png"
+        pagina: null
+        caption: "Use el botón para mostrar una vista previa o impresión en pantalla de la forma como será impreso el reporte."
+        ocr: "$10 Pagina: 1\n$10 S.A.\nProyecto 02001 = PUENTE Ell CARRETERA\nAlmacén 001 De Materiales Tipo OBRA\nIngreso por Inventario [II]\nFecha 13/06/2010 Guia\" 000000000001\nessed: SAWS ae OO 24 Looky) YUM Be os\nFactura/Bolet Orden de Compra\nCodigo Descripcion Recurso Und. Cantidad P.U.(S/.) Parcial (S/.) Parcial (U$)\n0202010001 CLAYOS PARA MADERA CON CABEZA DE 1\" kg 40.00 4.00 160.00 56.00\n0202010000 CLAVYOS…"
+  - n: 18
+    id: "almacenes.registrar-ingreso-por-inventario#18"
+    accion: "Use el botón que envía el reporte a la impresora previamente elegida en Windows."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s043]
+    pagina: null
+    fotos:
+      - id: "f35ffe1b3ef9"
+        ruta_o_url: "imagenes/manual-de-almacenes/0b0f11ab4961.png"
+        pagina: null
+        caption: "Use el botón para envía el reporte a la impresora previamente elegida en Windows."
+verificacion:
+  - texto: "La guía aparece en la lista de ingresos efectuada al almacén, con su número de guía correlativo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s035, web-https-documentacion-s10peru-com-manual-d-s041]
+errores_frecuentes:
+  - sintoma: "Los montos calculados del documento no coinciden con el documento que registra."
+    solucion: "Devuelva el documento al proveedor para que lo emita con cálculos correctos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s042]
+  - sintoma: "No puede eliminar la guía de ingreso."
+    solucion: "Solo se elimina si el usuario tiene atributos para hacerlo y la guía no tiene regularización; el atributo se asigna en el escenario de datos Generales. Si tiene regularización, elimínela previamente."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s036]
+  - sintoma: "La guía de ingreso ya no se puede modificar."
+    solucion: "La guía cambia a estado protegido cuando cierra el mes, y el estado protegido evita que la guía sea modificada o eliminada."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s036, web-https-documentacion-s10peru-com-manual-d-s037]
+relacionados: [almacenes.registrar-ingreso-por-compra, almacenes.registrar-ingreso-por-orden-de-compra]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s029, manual: "Manual de Almacenes", seccion: "2.2.3 Registro de recursos en el catálogo", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s021, manual: "Manual de Almacenes", seccion: "2. Registro del proyecto (1)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s041, manual: "Manual de Almacenes", seccion: "2.1.1.1 Procedimiento o pasos a seguir para efectuar un ingreso – Ingreso por Inventario [II] (1)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s052, manual: "Manual de Almacenes", seccion: "2.1.3.4 Ingreso por Orden de Compra [IOC]", pagina: null}
+  - {id: img-e650a9158fb6-0000, manual: "Manual de Almacenes", seccion: "e650a9158fb6.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s034, manual: "Manual de Almacenes", seccion: "2.7 Descripción de los escenarios de Ingresos y Egresos (1)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s035, manual: "Manual de Almacenes", seccion: "2.7 Descripción de los escenarios de Ingresos y Egresos (2)", pagina: null}
+  - {id: img-5a1b50414d11-0000, manual: "Manual de Almacenes", seccion: "5a1b50414d11.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s038, manual: "Manual de Almacenes", seccion: "2.7.1 Tipo de cambio", pagina: null}
+  - {id: img-386f454e5ce7-0000, manual: "Manual de Almacenes", seccion: "386f454e5ce7.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s042, manual: "Manual de Almacenes", seccion: "2.1.1.1 Procedimiento o pasos a seguir para efectuar un ingreso – Ingreso por Inventario [II] (2)", pagina: null}
+  - {id: img-773009a17504-0000, manual: "Manual de Almacenes", seccion: "773009a17504.png", pagina: null}
+  - {id: img-0d176d275c9a-0000, manual: "Manual de Almacenes", seccion: "0d176d275c9a.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s043, manual: "Manual de Almacenes", seccion: "2.1.2 Impresión de reportes", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s036, manual: "Manual de Almacenes", seccion: "2.7 Descripción de los escenarios de Ingresos y Egresos (3)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s037, manual: "Manual de Almacenes", seccion: "2.7 Descripción de los escenarios de Ingresos y Egresos (4)", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

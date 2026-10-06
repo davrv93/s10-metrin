@@ -1,0 +1,122 @@
+id: gerencia-proyectos.registrar-pedido-manual-de-compra
+version: 1
+modulo: gerencia-proyectos
+titulo: "Registrar un pedido manual para comprar"
+objetivo: "Registrar desde el almacén del proyecto un pedido de los recursos que serán comprados, con sus cantidades y fechas de entrega, y enviarlo a aprobación para iniciar el proceso de compra."
+nivel: basico
+preguntas:
+  - "cómo hago un pedido de compra en gerencia de proyectos"
+  - "como registro un pedido manual para comprar materiales"
+  - "dónde se hacen los pedidos del proyecto en s10"
+  - "como pido materiales para la obra"
+  - "como envio un pedido a aprobacion"
+  - "como agrego recursos a un pedido de compra"
+  - "como hago un pedio manual desde el almacen del proyecto"
+  - "como pongo la fecha de entrega en el pedido"
+  - "pedido manual a compras sin programacion"
+aliases:
+  - "pedido manual"
+  - "registrar pedido"
+  - "pedido de compra"
+  - "pedir materiales"
+  - "pedido a compras"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Pedidos", "Catálogo de Recursos"]
+  objetos: ["pedido", "recurso", "almacén", "fecha de entrega", "proyecto"]
+prerrequisitos:
+  - texto: "El usuario que pide y el que aprueba deben estar registrados en el módulo de almacenes y tener atributos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s112]
+  - texto: "El proyecto debe estar registrado, con partidas de control y destinos específicos; en el módulo de Compras debe estar registrado el Centro de compras con el proyecto asignado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s100]
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.registrar-pedido-manual-de-compra#1"
+    accion: "Elija el proyecto y su almacén **De Materiales**, y luego ingrese al escenario de **Pedidos**."
+    donde: "Escenario Pedidos"
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s112, img-80cd29aaabc6-0000]
+    pagina: null
+    fotos:
+      - id: "9ecb9dc3ed08"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/80cd29aaabc6.png"
+        pagina: null
+        ocr: "| Pedidos | imate _|\nEla peckioe Proyectos 8\n=) ge Escritorio\n92 PUENTE EN CARRETEF\nfa De Materiales\nPedidos\nLuego, fe Actives"
+  - n: 2
+    id: "gerencia-proyectos.registrar-pedido-manual-de-compra#2"
+    accion: "Haga clic derecho y elija **Adicionar**, para efectuar el pedido de los recursos que serán comprados."
+    fuente: [img-ca8b96a16610-0000, web-https-documentacion-s10peru-com-manual-d-s112]
+    pagina: null
+    fotos:
+      - id: "77666e2e349b"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/ca8b96a16610.png"
+        pagina: null
+        ocr: "[Pedidos COMENTARIO: Este escenario también muestral\n\n| Ios recursos de las PEDIDOS AUTOMATICOS\n\nHava» &@da\n\nTipo Nro. Pedlido Centra de Compra | Fecha Pedicdo\nClic derecho LD. Adicionar"
+  - n: 3
+    id: "gerencia-proyectos.registrar-pedido-manual-de-compra#3"
+    accion: "En el detalle del pedido, haga clic derecho y elija **Adicionar recursos**; procure agrupar en un mismo pedido recursos similares (por ejemplo, todo lo que compre en una ferretería)."
+    resultado: "Se muestra el Catálogo de Recursos."
+    fuente: [img-a0987948b023-0000, web-https-documentacion-s10peru-com-manual-d-s112, web-https-documentacion-s10peru-com-manual-d-s111]
+    pagina: null
+    fotos:
+      - id: "51bda0c3e77e"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/a0987948b023.png"
+        pagina: null
+        ocr: "Usuario pmartinez - Martinez Luna, Pedro y NP de Pedido -\nSolictante [02100134 Martinez Luna, Pedro le) a aoncgeneaces\nEmpresa\nAlmacén 004 - De Materiales Tipo 01 - OBRA NP Alterno . NOP -\nC A Almacén @pe AGARTEE\nPara transterencia ————|\n\nProyecto Alm, destino:\n\ndestino = 44 =\nFecha fosmanmoio =] Priorided [Normal x] C.Compra [O04 [Pedro Taal\n\n4 Bs =j\n‘Observacién ~\n| cédigo, Recurso Unidad | Cant…"
+  - n: 4
+    id: "gerencia-proyectos.registrar-pedido-manual-de-compra#4"
+    accion: "Del **Catálogo de Recursos**, elija los recursos que formarán parte del pedido."
+    donde: "Catálogo de Recursos"
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s112]
+    pagina: null
+    fotos:
+      - id: "eeac9de905f9"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/a3255c778ad1.png"
+        pagina: null
+        caption: "Llamada b: Muestra el Catálogo de Recursos, de donde se elijen los recursos que formará parte del pedido."
+        ocr: "3 tole]\n€& Catélogo de Recursos del Techo Presupuesto : Todos los Registros 12) ee\nOpciones 2\nDSXBre YH om 47 RS BI =e)\nErejgTodestosResistros ET [Date clic aT nvel an\nS QMANODEOBRAT TT céuigo __[Descripogn [Onidear_fefaccctonatg\nBs Suarmaes aa (0253000020001 [PETROLEODIESSEL#2 [gal 570.0\nfs\ncc @ suscontratoy a a0\n'02530000020001  PETROLEODIESSEL #2 gal 570"
+  - n: 5
+    id: "gerencia-proyectos.registrar-pedido-manual-de-compra#5"
+    accion: "Ingrese la cantidad a pedir; los demás datos que muestra (como la cantidad pedida anteriormente) son informativos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s112, img-273637016f0b-0000]
+    pagina: null
+    fotos:
+      - id: "de1acb21f403"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/273637016f0b.png"
+        pagina: null
+        ocr: "02530000020001 PETROLEO DIESSEL #2 gal 570.00)\n« mm. @ r\nPresupuestao| Total | Sako | ‘Steck | ——~—SPedido i\n‘570.00 ‘570.00 570.00 0.00 0.00\nAceptar Cancelar Ayuda"
+  - n: 6
+    id: "gerencia-proyectos.registrar-pedido-manual-de-compra#6"
+    accion: "Haga clic derecho e ingrese la fecha de entrega."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s112]
+    pagina: null
+  - n: 7
+    id: "gerencia-proyectos.registrar-pedido-manual-de-compra#7"
+    accion: "Después de ingresar los datos, use el botón para enviar el pedido a aprobación."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s112]
+    pagina: null
+    fotos:
+      - id: "eb0cec46b6a1"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/2ece5f3bf971.png"
+        pagina: null
+        caption: "Después de ingresar los datos use el botón y envíe el pedido a aprobación."
+verificacion:
+  - texto: "El pedido se visualiza en el escenario de Pedidos del grupo de pedidos, desde donde se realiza su seguimiento."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s111]
+errores_frecuentes:
+  - sintoma: "El pedido no pasa al proceso de compra."
+    solucion: "Todos los pedidos deben ser aprobados para que pasen al proceso de compra; caso contrario, el pedido queda en espera."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s119]
+  - sintoma: "Las cantidades del pedido no son redondas."
+    solucion: "Las cantidades que sugiere el sistema en el pedido tienen que ser editadas por el usuario con la finalidad de redondearlas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s111]
+relacionados: [gerencia-proyectos.registrar-usuarios-del-proyecto, gerencia-proyectos.registrar-proyecto]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s112, manual: "Manual de Gerencia de Proyectos", seccion: "3.7.1 Pedidos Manuales para Comprar", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s100, manual: "Manual de Gerencia de Proyectos", seccion: "3.3 Labores del usuario", pagina: null}
+  - {id: img-80cd29aaabc6-0000, manual: "Manual de Gerencia de Proyectos", seccion: "80cd29aaabc6.png", pagina: null}
+  - {id: img-ca8b96a16610-0000, manual: "Manual de Gerencia de Proyectos", seccion: "ca8b96a16610.png", pagina: null}
+  - {id: img-a0987948b023-0000, manual: "Manual de Gerencia de Proyectos", seccion: "a0987948b023.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s111, manual: "Manual de Gerencia de Proyectos", seccion: "3.7 Pedidos", pagina: null}
+  - {id: img-273637016f0b-0000, manual: "Manual de Gerencia de Proyectos", seccion: "273637016f0b.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s119, manual: "Manual de Gerencia de Proyectos", seccion: "3.7.3 Aprobar pedidos", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

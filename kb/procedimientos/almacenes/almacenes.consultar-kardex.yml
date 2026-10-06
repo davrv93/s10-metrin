@@ -1,0 +1,123 @@
+id: almacenes.consultar-kardex
+version: 1
+modulo: almacenes
+titulo: "Consultar el kardex de un recurso e imprimir el reporte para la SUNAT"
+objetivo: "Ver en el escenario de Stock el kardex de un recurso, la historia que muestra todos sus movimientos de ingreso y egreso a través del tiempo, e imprimir desde allí el reporte para la SUNAT."
+nivel: basico
+preguntas:
+  - "cómo veo el kardex de un recurso en almacenes"
+  - "dónde veo todos los movimientos de un material"
+  - "cómo saco el kardex para la sunat"
+  - "como veo el cardex del cemento"
+  - "quiero ver la historia de ingresos y egresos de un recurso"
+  - "cómo imprimo el reporte de kardex por rango de fechas"
+  - "kardex almacen s10 donde esta"
+  - "por qué un recurso sale con problemas en el kardex"
+aliases:
+  - "consultar kardex"
+  - "ver kardex"
+  - "kardex para la SUNAT"
+  - "reporte kardex"
+  - "historia del recurso"
+entidades:
+  modulo: "Almacenes"
+  pantallas: ["Stock", "Kardex", "Seteo de Recosteo"]
+  objetos: ["kardex", "recurso", "precio promedio", "reporte para la SUNAT"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "almacenes.consultar-kardex#1"
+    accion: "En el árbol, ubique el almacén y elija el acceso al escenario de **Stock**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s080]
+    pagina: null
+    fotos:
+      - id: "68725c226d90"
+        ruta_o_url: "imagenes/manual-de-almacenes/ff0c5753143f.png"
+        pagina: null
+        caption: "Acceso al escenario"
+        ocr: "[rico\n] Proyectos\n& Escritorio\nfe) PUENTE EN CARRETERA\nStock Luego, BS Woe Materiales"
+  - n: 2
+    id: "almacenes.consultar-kardex#2"
+    accion: "Si junto al nombre de los recursos aparece el botón de recosteo, elija ese botón y, en la ventana **Seteo de Recosteo**, pulse **Aceptar** para que tome el precio promedio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s081, img-550d547031d9-0000]
+    pagina: null
+    fotos:
+      - id: "c7f9a84edcb1"
+        ruta_o_url: "imagenes/manual-de-almacenes/550d547031d9.png"
+        pagina: null
+        ocr: "=——\n@ Seteo de Recosteo t=}\noo Cc\n(© Almacén actual © Todos los almacenes\n( Becursos sin recostear\n[~ Eliminar los recursos sin movimientos\nAceptar"
+  - n: 3
+    id: "almacenes.consultar-kardex#3"
+    accion: "Elija la opción **Kardex**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s086, img-ea75782e6d15-0000]
+    pagina: null
+    fotos:
+      - id: "c0e48f01bc01"
+        ruta_o_url: "imagenes/manual-de-almacenes/ea75782e6d15.png"
+        pagina: null
+        ocr: "io\n\npg Solo Recursos\nS Ubicacién\n\nEK. kardex"
+  - n: 4
+    id: "almacenes.consultar-kardex#4"
+    accion: "Ubique el recurso que quiere analizar (por ejemplo, CEMENTO PÓRTLAND TIPO I (42.5 Kg.))."
+    resultado: "Se muestra la historia del recurso, con todos sus movimientos a través del tiempo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s086]
+    pagina: null
+    fotos:
+      - id: "b5e94da893af"
+        ruta_o_url: "imagenes/manual-de-almacenes/50ad771ba78d.png"
+        pagina: null
+        caption: "Para analizar el recurso CEMENTO PÓRTLAND TIPO I (42.5 Kg.)"
+        ocr: "Filtre Jrowos los recursos | Valorizado -Igv S/. 141,516.66 168,404.83 US 49,!\nSvea. @\nCédiga Recurso Unidad Stock Ingreso Egreso | Precio Promedio (S) «\n0203020030007 ACERO CORRUGHDO ty=4200 ke var 380.00 380.00 0.00 at\n02210000020001 LCEMENTO PORTLAND TIPO | (42 gum oo 61,830.00 1,004.00 13. =|\nSSE a\nAYye® % wid\niMiore [ren Gulla Fecha Gula | Cantidad [Shack Artertar | Stack Actuel | Practa Orig…"
+  - n: 5
+    id: "almacenes.consultar-kardex#5"
+    accion: "Para el reporte para la SUNAT, use el botón de reporte."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s086]
+    pagina: null
+    fotos:
+      - id: "41a401bfae3f"
+        ruta_o_url: "imagenes/manual-de-almacenes/6e30b4a547c3.png"
+        pagina: null
+        caption: "Use el botón"
+  - n: 6
+    id: "almacenes.consultar-kardex#6"
+    accion: "En **Tipo de Reporte**, elija **SUNAT**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s086, img-e2427db31200-0000]
+    pagina: null
+    fotos:
+      - id: "9a1a422183c7"
+        ruta_o_url: "imagenes/manual-de-almacenes/e2427db31200.png"
+        pagina: null
+        ocr: "Tipo de Reporte Formato\ncsi Gee Soa @ 134 C124\nRango de Fechas —(b) Ordenado por Moneda\nrt fesosr201 ~]| ‘(© Cédigo de recurso (@ Base\nHasta 11/04/2012 x] 9 ol ‘e\nSeleccién del Nivel del Recurso\n© Recurso actual\n© Nivel1 XX\n© Nivel2 XXXX\nCm Incluir Reingresos y Devoluciones en\nNivel3 XXXKXX r\n© Nivel4 XXOCXXXXKK\noumeans\n@= Aceptar | Cancelar"
+  - n: 7
+    id: "almacenes.consultar-kardex#7"
+    accion: "En **Rango de Fechas**, defina el rango de fechas del reporte."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s086, img-e2427db31200-0000]
+    pagina: null
+  - n: 8
+    id: "almacenes.consultar-kardex#8"
+    accion: "Seleccione todos los recursos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s086]
+    pagina: null
+  - n: 9
+    id: "almacenes.consultar-kardex#9"
+    accion: "Pulse **Aceptar** para imprimir el reporte."
+    fuente: [img-e2427db31200-0000, web-https-documentacion-s10peru-com-manual-d-s086]
+    pagina: null
+verificacion: []
+errores_frecuentes:
+  - sintoma: "El recurso aparece entre los recursos con problemas."
+    solucion: "El error se genera cuando la fecha del documento de egreso se modifica a una fecha anterior a la del ingreso, o cuando se borra la guía de ingreso. Visualice los recursos con problemas, haga doble clic sobre el recurso y, en la guía de egreso que muestra el sistema, modifique la fecha a una posterior."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s087]
+  - sintoma: "Durante el recosteo el sistema solicita el factor de cambio."
+    solucion: "El recosteo utiliza el factor de cambio; si no está registrado, el sistema solicita su ingreso: regístrelo para continuar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s081]
+relacionados: [almacenes.registrar-egreso-a-partida-de-control, almacenes.asignar-stock-minimo]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s080, manual: "Manual de Almacenes", seccion: "3. Stock", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s081, manual: "Manual de Almacenes", seccion: "3.1 Recosteo", pagina: null}
+  - {id: img-550d547031d9-0000, manual: "Manual de Almacenes", seccion: "550d547031d9.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s086, manual: "Manual de Almacenes", seccion: "3.6 Kardex", pagina: null}
+  - {id: img-ea75782e6d15-0000, manual: "Manual de Almacenes", seccion: "ea75782e6d15.png", pagina: null}
+  - {id: img-e2427db31200-0000, manual: "Manual de Almacenes", seccion: "e2427db31200.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s087, manual: "Manual de Almacenes", seccion: "3.6.1 Recursos con problemas", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

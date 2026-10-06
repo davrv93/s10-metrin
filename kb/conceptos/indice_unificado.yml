@@ -1,0 +1,10 @@
+id: indice_unificado
+termino: "Índice unificado"
+sinonimos: ["índices unificados", "IU"]
+definicion: "Números abstractos que permiten relacionar las variaciones de precios de los elementos componentes desde la fecha del presupuesto base hasta una fecha posterior, y que se publican mensualmente. En el Perú, todos los recursos de construcción están agrupados en 80 índices unificados."
+en_s10: "Se asignan a los recursos para agruparlos al elaborar la fórmula polinómica. Sus valores se registran en el escenario de Índices unificados del módulo de Presupuestos, que muestra las 6 áreas geográficas del Perú y los datos de la resolución que los publica; el manual indica no hacer nuevos registros en el catálogo salvo que lo haga la institución encargada."
+procedimientos_relacionados: [presupuestos.elaborar-formula-polinomica]
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s118  # Manual de Presupuestos › 5.1.10 Índices unificados
+  - web-https-documentacion-s10peru-com-manual-d-s014  # Manual de Presupuestos › 2.1 La carpeta de trabajo (4)
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

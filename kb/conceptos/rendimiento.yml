@@ -1,0 +1,13 @@
+id: rendimiento
+termino: "Rendimiento"
+sinonimos: []
+definicion: "En presupuestos de obras civiles, es la cantidad que se quiere lograr en el número de horas de la jornada de la partida. Con el metrado y el rendimiento se calcula la duración o plazo de ejecución de las partidas."
+en_s10: "Se ingresa en el análisis de precios unitarios de la partida, y para registrar la cuadrilla es indispensable tener registrado el rendimiento. Las incidencias de mano de obra y equipos se calculan en función de la jornada de la partida, el rendimiento y la cuadrilla. La hoja del presupuesto tiene una opción para aplicar un factor de rendimiento a la partida elegida, y el escenario Tiempos para programación muestra el rendimiento de cada partida."
+procedimientos_relacionados: [presupuestos.registrar-partida-en-el-catalogo]
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s017  # Manual de Presupuestos › 2.1 La carpeta de trabajo (7)
+  - web-https-documentacion-s10peru-com-manual-d-s114  # Manual de Presupuestos › 5.1.7 Tiempos para programación
+  - web-https-documentacion-s10peru-com-manual-d-s082  # Manual de Presupuestos › 4.5.2 Registro de un grupo de partidas en el catálogo (3)
+  - web-https-documentacion-s10peru-com-manual-d-s093  # Manual de Presupuestos › 5.1.1.1 Hoja del presupuesto (8)
+  - web-https-documentacion-s10peru-com-manual-d-s098  # Manual de Presupuestos › 5.1.1.1 Hoja del presupuesto (13)
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

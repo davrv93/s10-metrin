@@ -1,0 +1,70 @@
+id: presupuestos.usar-favoritos
+version: 1
+modulo: presupuestos
+titulo: "Armar la hoja del presupuesto con favoritos"
+objetivo: "Insertar en la hoja del presupuesto un favorito: una hoja de presupuesto con partidas revisadas y confiables registrada previamente en el catálogo."
+nivel: basico
+preguntas:
+  - "cómo uso los favoritos en s10 presupuestos"
+  - "qué son los favoritos del presupuesto"
+  - "como agrego un favorito a la hoja del presupuesto"
+  - "insertar partidas desde favoritos"
+  - "dónde veo mis favoritos en s10"
+  - "como adiciono un favorito al subpresupuesto"
+  - "usar favoritos para armar el presupuesto"
+aliases:
+  - "adicionar favorito"
+  - "usar favoritos"
+  - "insertar favorito"
+entidades:
+  modulo: "Presupuestos"
+  pantallas: ["Hoja del Presupuesto", "Mis Favoritos"]
+  objetos: ["favoritos", "partidas", "subpresupuesto"]
+prerrequisitos:
+  - texto: "Los favoritos deben estar registrados previamente en el catálogo. Para verlos, ingrese al menú **Catálogos** y elija **Favoritos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s041]
+pasos:
+  - n: 1
+    id: "presupuestos.usar-favoritos#1"
+    accion: "En el escenario **Hoja del Presupuesto**, elija el presupuesto y luego el subpresupuesto."
+    fuente: [img-9d22ecacdbdf-0000, web-https-documentacion-s10peru-com-manual-d-s041]
+    pagina: null
+  - n: 2
+    id: "presupuestos.usar-favoritos#2"
+    accion: "Haga clic derecho en la hoja y elija **Adicionar Favorito**."
+    fuente: [img-9d22ecacdbdf-0000, "7c40a9548710-0032"]
+    pagina: null
+    fotos:
+      - id: "092f0c29c668"
+        ruta_o_url: "imagenes/manual-de-presupuestos/9d22ecacdbdf.png"
+        pagina: null
+        ocr: "Elija el presupuesto\nluego el subpresupuesto\na || |2oj2 cel Presupuesto B\nscritorio is\nE)SS VIVIEND¢| UNIFAMILIGR\n| estrulturas 001 ESTRUCTURAS\n5] Arouifectura Fecha :/Haga clic derecho\nS| instalficiones eléctricas » Jen este segmento\n5 Installiciones sanitarias\n VIVIENDA meta para planificar ‘\nB VIVIEND4] UNFAMILIAR linea | Adicionar Thulo ...\n[)-@ PUENTE EN CARRETERA ~\nEE} LA CASA'DE JUAN E) Adi…"
+  - n: 3
+    id: "presupuestos.usar-favoritos#3"
+    accion: "En la ventana **Mis Favoritos**, elija el favorito y pulse **Seleccionar**."
+    fuente: [img-e4e39717e451-0000, web-https-documentacion-s10peru-com-manual-d-s041]
+    pagina: null
+    fotos:
+      - id: "4619cc806ef8"
+        ruta_o_url: "imagenes/manual-de-presupuestos/e4e39717e451.png"
+        pagina: null
+        ocr: "£3 Favorito,.. eed\nBe xX 2m ee\nMis Favoritos | Elija el favorito\n=} Ecificaciones Exificaciones - 01001 Concreto armaco\nGig Sees |__[Descripciin I iricact T Metracio\nME CONCRETO ARMADO a\n|__| ZAPATAS Y VIGAS DE CIMENTACION bea\n[| CONCRETO PARA ZAPATAS f'o=210 kgfem2 m3 0.001\n[__] _ ENCOFRADO DE ZAPATAS m2 0.00\n|] ACERO ty=4200 kgfem2 GRADO 60 en ZAPATAS. kg 0.00\n<t_] Di}\nTitulo: 0180008 CONCRETO A…"
+  - n: 4
+    id: "presupuestos.usar-favoritos#4"
+    accion: "Luego use el botón para generar los ítems en la hoja del presupuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s041]
+    pagina: null
+    fotos:
+      - id: "ba9a6cb7f8e4"
+        ruta_o_url: "imagenes/manual-de-presupuestos/646be1e2546c.png"
+        pagina: null
+        caption: "Luego use el botón para generar los ítems en la hoja del presupuesto."
+verificacion: []
+errores_frecuentes: []
+relacionados: [presupuestos.copiar-partidas-de-otro-presupuesto, presupuestos.registrar-titulos-y-partidas]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s041, manual: "Manual de Presupuestos", seccion: "3.5.2.2 Caso 2) Uso de favoritos", pagina: null}
+  - {id: img-9d22ecacdbdf-0000, manual: "Manual de Presupuestos", seccion: "9d22ecacdbdf.png", pagina: null}
+  - {id: "7c40a9548710-0032", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 22}
+  - {id: img-e4e39717e451-0000, manual: "Manual de Presupuestos", seccion: "e4e39717e451.png", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

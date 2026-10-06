@@ -1,0 +1,109 @@
+id: compras.registrar-recepcion-de-cotizaciones
+version: 1
+modulo: compras
+titulo: "Registrar las cotizaciones recibidas de los proveedores"
+objetivo: "Registrar manualmente, en el escenario de Recepción de Cotizaciones, los datos y precios de las cotizaciones recibidas de cada proveedor, para luego compararlas."
+nivel: intermedio
+preguntas:
+  - "cómo registro la cotización que me mandó el proveedor"
+  - "dónde ingreso los precios cotizados por los proveedores"
+  - "cómo hago la recepción de cotizaciones en s10"
+  - "el proveedor respondió la cotización, dónde la cargo"
+  - "como registro el descuento y el tiempo de entrega de la cotizacion"
+  - "se puede importar automatico la cotizacion del proveedor"
+  - "como registro la cotisacion recibida"
+  - "cómo veo los últimos precios del proveedor al registrar la cotización"
+aliases:
+  - "recepción de cotizaciones"
+  - "registrar cotización recibida"
+  - "ingresar precios del proveedor"
+  - "cargar cotización del proveedor"
+entidades:
+  modulo: "Compras"
+  pantallas: ["Recepción de Cotizaciones"]
+  objetos: ["cotización", "proveedor", "precio", "descuento", "tiempo de entrega"]
+prerrequisitos:
+  - texto: "La cotización debe haberse enviado a los proveedores. Las cotizaciones recibidas se registran manualmente: no hay una forma automática de tomar los datos, porque cada proveedor tiene un sistema propio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046, img-06927ea3a421-0000]
+pasos:
+  - n: 1
+    id: "compras.registrar-recepcion-de-cotizaciones#1"
+    accion: "Elija el acceso al escenario de **Recepción de Cotizaciones**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046]
+    pagina: null
+    fotos:
+      - id: "84011e8aca50"
+        ruta_o_url: "imagenes/manual-de-compras/eceb466ad909.png"
+        pagina: null
+        caption: "Acceso al escenario de Recepción de Cotizaciones"
+        ocr: "[Eta J —__,,\na ] 8B eajEset tori\nRecepcién de Fh fap Pedro my\nCotizaciones A\n_ Luego, Z ENTE EN CARRETERA:"
+  - n: 2
+    id: "compras.registrar-recepcion-de-cotizaciones#2"
+    accion: "Haga clic derecho sobre la cotización del proveedor, en estado **Enviada al Proveedor**, y elija **Registrar datos**."
+    fuente: [img-06927ea3a421-0000, web-https-documentacion-s10peru-com-manual-d-s046]
+    pagina: null
+    fotos:
+      - id: "e6da190a77bc"
+        ruta_o_url: "imagenes/manual-de-compras/06927ea3a421.png"
+        pagina: null
+        ocr: "Recepcion de Cotizaciones ia\nPRB ag [ence mt tgemney\nCalactn [Eseco—__[raveeusr_ [Won [Fon de Popo\n0001 Enviada al Proveedor\n0001 Enviada al Proveedor FERRETERIA LA ABEJA =\n0001 Enviada al Proveedar Ferreteria El Constructor “> |la Registrar datos"
+  - n: 3
+    id: "compras.registrar-recepcion-de-cotizaciones#3"
+    accion: "Con los datos de la cotización recibida, registre la **Forma de Pago**, la **Moneda** y la **Fecha vigencia**."
+    fuente: [img-bdd98a9a357e-0000, web-https-documentacion-s10peru-com-manual-d-s046]
+    pagina: null
+    fotos:
+      - id: "90eba2e23f71"
+        ruta_o_url: "imagenes/manual-de-compras/bdd98a9a357e.png"
+        pagina: null
+        ocr: "Proveedor Ferreteria El Constructor\nCentro de Compra Pedro Descuento (%) a\nProyecto PUENTE EN CARRETERA Tiempode entreaa 1 dia\nN® Catizacién 4 Fecha vigencia 12/06/2010\nFecha 22/04/2010 LGM, 19%\nForma de Pago Contado 7 dias Moneda SI\nALAMBRE NEGRO RECOCIDO #16 kg = 1,300.00 3.80\nALAMBRE NEGRO RECOCIDO #9 kg 560.00 3.80\nCLAVOS PARA MADERA CON CABEZA DE 3\" kg 200.00 3.80\nCLAVOS PARA MADERA CON CABEZ…"
+  - n: 4
+    id: "compras.registrar-recepcion-de-cotizaciones#4"
+    accion: "Si corresponde, registre el porcentaje de descuento que afecta a todos los recursos; también puede registrar un % de descuento para un recurso en particular, en su misma fila."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046]
+    pagina: null
+  - n: 5
+    id: "compras.registrar-recepcion-de-cotizaciones#5"
+    accion: "Si corresponde, registre un descuento de cantidad fija, con la finalidad de redondear el monto de la cotización."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046]
+    pagina: null
+  - n: 6
+    id: "compras.registrar-recepcion-de-cotizaciones#6"
+    accion: "Registre el **Tiempo de entrega**: el tiempo en que el proveedor se compromete a entregar los recursos luego de recibir la orden de compra."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046]
+    pagina: null
+  - n: 7
+    id: "compras.registrar-recepcion-de-cotizaciones#7"
+    accion: "Registre el **Precio** cotizado por el proveedor para cada recurso; la columna del precio del recurso en el presupuesto es informativa."
+    fuente: [img-ded5684d17fd-0000, web-https-documentacion-s10peru-com-manual-d-s046]
+    pagina: null
+    fotos:
+      - id: "f0a1f735db33"
+        ruta_o_url: "imagenes/manual-de-compras/ded5684d17fd.png"
+        pagina: null
+        ocr: "[x\n\nRegistra pmartinez - WV a,Pedro Fechade Envio 06/05/2010 @| | Nt de Cotiz\nProveedor 02100071 Ferreteria}_a Sirena Fecha Cotizacién 22/04/2010 0001\nFormaPago [01 |Contado wt Moneda [ot [NUEVOS SOLE. a4) TC 1 we] LGW.\nDeto % Deto Global 0 Tiempo entrega [1 —Holas  F.Vigencia |0605/2010 ~\nUltimo add) pmartinez Estad Enviada al Ultima modificacién 06/05/2010 spel\nSMA v% &a ©\n7/7 Campo|C34digo +] […"
+  - n: 8
+    id: "compras.registrar-recepcion-de-cotizaciones#8"
+    accion: "Para consultar precios, haga clic derecho sobre un recurso y elija, por ejemplo, **Últimos Precios del Proveedor** o **Últimos Precios en General**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046, img-53b2686cdbb4-0000]
+    pagina: null
+    fotos:
+      - id: "1ccde4b06b15"
+        ruta_o_url: "imagenes/manual-de-compras/53b2686cdbb4.png"
+        pagina: null
+        ocr: "Ultimos Precios en General\n\nUltimos Precios del Proveedor\n\nTomar de Lista de Precios del Proveedor\n5) Exportar a Microsoft Excel\n+8] Importar datos de Microsoft Excel\nEf Mostrar campos"
+  - n: 9
+    id: "compras.registrar-recepcion-de-cotizaciones#9"
+    accion: "Registre del mismo modo los datos de los demás proveedores."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046]
+    pagina: null
+verificacion: []
+errores_frecuentes: []
+relacionados: [compras.registrar-cotizacion, compras.elaborar-cuadro-comparativo]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s046, manual: "Manual de Compras", seccion: "10. Recepción de Cotizaciones", pagina: null}
+  - {id: img-06927ea3a421-0000, manual: "Manual de Compras", seccion: "06927ea3a421.png", pagina: null}
+  - {id: img-bdd98a9a357e-0000, manual: "Manual de Compras", seccion: "bdd98a9a357e.png", pagina: null}
+  - {id: img-ded5684d17fd-0000, manual: "Manual de Compras", seccion: "ded5684d17fd.png", pagina: null}
+  - {id: img-53b2686cdbb4-0000, manual: "Manual de Compras", seccion: "53b2686cdbb4.png", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

@@ -1,0 +1,15 @@
+id: presupuesto_meta
+termino: "Presupuesto meta"
+sinonimos: []
+definicion: "Es el presupuesto con el que se planifica y controla la ejecución: sus partidas obedecen a la realidad constructiva y no necesariamente son las mismas del presupuesto venta. Sus recursos son pedidos, cotizados, comprados, almacenados y distribuidos durante la ejecución."
+en_s10: "No tiene pie de presupuesto; en su lugar lleva un subpresupuesto detallado de gastos generales. En Gerencia de proyectos se asigna a la rama Meta, cuya información es interna y para la gestión del proyecto; su planificación debe ser más ajustada que la presentada al cliente y es la que pasa a los Resultados operativos. Concluida la programación en la rama Meta y antes de iniciar la construcción, el manual indica crear la Línea Base."
+ejemplo: "En edificaciones, en el análisis de precios unitarios del presupuesto meta la mano de obra es un subcontrato cotizado por nivel y los materiales son los que realmente se usarán en el nivel, que serán pedidos y comprados; las herramientas menores y manuales van en el subpresupuesto de gastos generales."
+procedimientos_relacionados: [presupuestos.registrar-presupuesto-nuevo, gerencia-proyectos.asignar-presupuestos-al-proyecto]
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s002  # Manual de Presupuestos › 1.3 El presupuesto
+  - web-https-documentacion-s10peru-com-manual-d-s003  # Manual de Presupuestos › 1.3.1 Presupuesto de Edificaciones (1)
+  - web-https-documentacion-s10peru-com-manual-d-s004  # Manual de Presupuestos › 1.3.1 Presupuesto de Edificaciones (2)
+  - web-https-documentacion-s10peru-com-manual-d-s055  # Manual de Presupuestos › 3.8 Diseño del pie de presupuesto
+  - web-https-documentacion-s10peru-com-manual-d-s045  # Manual de Gerencia de Proyectos › 2.5.1 Asignar presupuestos al Proyecto (1)
+  - web-https-documentacion-s10peru-com-manual-d-s081  # Manual de Gerencia de Proyectos › 2.6 Planificación Física del proyecto (1)
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

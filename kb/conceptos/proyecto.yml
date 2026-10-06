@@ -1,0 +1,11 @@
+id: proyecto
+termino: "Proyecto"
+sinonimos: ["proyectos"]
+definicion: "Conjunto de actividades con fecha de inicio y fin, que necesita ser programado y valorizado (cuando tiene un presupuesto asignado) y controlado en todas sus etapas."
+en_s10: "Puede registrarse desde los módulos de Almacenes, Compras, Nóminas y Gerencia de proyectos, pero los presupuestos solo se le asignan desde Gerencia de proyectos. Al registrarlo, el sistema muestra su almacén de materiales, servicios y activos. En el árbol, solo los proyectos de la carpeta Escritorio tienen activas todas las opciones de edición."
+procedimientos_relacionados: [gerencia-proyectos.registrar-proyecto]
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s036  # Manual de Gerencia de Proyectos › 2.4 El proyecto
+  - web-https-documentacion-s10peru-com-manual-d-s097  # Manual de Gerencia de Proyectos › 3.1 Los almacenes del proyecto (1)
+  - web-https-documentacion-s10peru-com-manual-d-s014  # Manual de Almacenes › 1.1.5 Árbol
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

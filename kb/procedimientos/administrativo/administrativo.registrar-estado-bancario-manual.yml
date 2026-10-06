@@ -1,0 +1,166 @@
+id: administrativo.registrar-estado-bancario-manual
+version: 1
+modulo: administrativo
+titulo: "Registrar el estado bancario manual y conciliarlo"
+objetivo: "Registrar a mano el estado bancario de una cuenta y relacionar sus líneas con las operaciones de los diarios de caja y los pagos para dejarlas conciliadas."
+nivel: avanzado
+preguntas:
+  - "cómo registro el estado bancario manual"
+  - "como hago la conciliación bancaria en administrativo"
+  - "cómo agrego los cargos y abonos del estado de cuenta del banco"
+  - "para que sirve la conciliacion automatica"
+  - "que hace generar pago y conciliar"
+  - "como concilio mis movimientos bancarios en s10"
+  - "como registro el estado vancario a mano"
+  - "como imprimo los comprobantes conciliados y pendientes por conciliar"
+  - "pasos para el registro de estado bancario manual"
+aliases:
+  - "estado bancario manual"
+  - "conciliación bancaria"
+  - "registrar estado bancario"
+  - "conciliar cuenta bancaria"
+entidades:
+  modulo: "Administrativo"
+  pantallas: ["Estado Bancario", "Catálogo de Conceptos Bancarios"]
+  objetos: ["estado bancario", "cuenta bancaria", "periodo contable", "recursos", "concepto bancario", "conciliación bancaria"]
+prerrequisitos:
+  - texto: "Los conceptos para la conciliación bancaria (código de recurso) deben estar preparados en el catálogo de Recursos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s058]
+  - texto: "En el catálogo Tipo Bancos, los recursos del banco a trabajar deben estar codificados para que se relacionen con el catálogo y pueda ejecutarse la conciliación bancaria."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s059]
+pasos:
+  - n: 1
+    id: "administrativo.registrar-estado-bancario-manual#1"
+    accion: "En el escenario **Estado Bancario**, haga clic derecho y elija **ADICIONAR** para registrar el estado bancario manual (la opción **Importar BCP** permite, en cambio, importar el estado bancario en TXT, previa coordinación con el banco)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s060, img-0f0519211c82-0000]
+    pagina: null
+    fotos:
+      - id: "1a152e73c3a6"
+        ruta_o_url: "imagenes/manual-de-administracion/0f0519211c82.png"
+        pagina: null
+        ocr: "», $10 Administrativo: 22000617 - $10 DEMO - Principal BEE\n| Archivo Yer Catélogos Herramientas 2\n| 6hn8|ea\n: Tema ain cari\nz ©) Estado Bancario\nya alee\ne\nCuentas Bancarias\na\nEs | | @ Ato: 2012\nEstado Bancario |} | @) afc: 2013\na Clic Derecho\nic Der\nEstado Bancario D Asicionar\nDetalade L_tnports Place) Formato 1\nw 4 Formato 2.\n; M144 Registro 40 de63 >» 14 [el TT] D\nConeilacién Bancaria | =\nLe AYE…"
+  - n: 2
+    id: "administrativo.registrar-estado-bancario-manual#2"
+    accion: "En la ventana del estado bancario, registre el **Periodo Contable** (del – al) a procesar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s060, img-29e2615aaf9a-0000]
+    pagina: null
+    fotos:
+      - id: "8c0d40cc1a43"
+        ruta_o_url: "imagenes/manual-de-administracion/29e2615aaf9a.png"
+        pagina: null
+        ocr: "ae Estado Bancario 1/31 x!\nEmpresa 22000617 $10 DEMO Del Al 5\n\nPeleceioner in cuentetenenaners Joveazos =]¥ [ancazors =] | _[Seteccionar ei periodo contabie para\n‘Sucursal Principal rocesar la conciliacion Bancaria. [procesar la conciliacion Bancaria.\n\n|p a Periocio Contable,\nEstado __Repistrado\n[Cuenta Banceria fosi0-0100105672 [BBVA SOLES ee il] Moneds NUEVOS SOLES\nSado Cortable |__ Abonos (DepS…"
+  - n: 3
+    id: "administrativo.registrar-estado-bancario-manual#3"
+    accion: "Elija la **Cuenta Bancaria** a ejecutar."
+    resultado: "El saldo aparece de forma automática de acuerdo al registro inicial."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s060, img-29e2615aaf9a-0000]
+    pagina: null
+  - n: 4
+    id: "administrativo.registrar-estado-bancario-manual#4"
+    accion: "En el detalle del estado bancario, haga clic derecho y use la opción **Agregar línea** para añadir los recursos configurados con su código de concepto bancario (también puede usar una plantilla preparada para la importación)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s060, img-620933a6d0fb-0000]
+    pagina: null
+    fotos:
+      - id: "14a4b37d3f85"
+        ruta_o_url: "imagenes/manual-de-administracion/620933a6d0fb.png"
+        pagina: null
+        ocr: "a Estado Bancario BEES\nEmpresa 22000617 S10 DEMO Del Joimanois | 4! |somanois\n‘Sucursal Principal RESORT\nEstado Registrado\n‘Cuenta Bancaria [o910-0100108672 [BBVA SOLES 5 ee\nSalelo Contabble Abonos (Depésitos) Cargos (Retiros)\n\nictal See Conebe tne\n10,000.00 0.00 0.00 0.00 0.00 0.00 0.00) 10,000.00\nBMA a veh acu)\nArrastre hacia aqui el encabezado de la columna que desea agrupar.\nojo Campo|linea ||…"
+  - n: 5
+    id: "administrativo.registrar-estado-bancario-manual#5"
+    accion: "En el **Catálogo de Conceptos Bancarios**, seleccione con doble clic los recursos que quiere utilizar en la conciliación."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s060, img-f3ea244a3068-0000]
+    pagina: null
+    fotos:
+      - id: "01aaa0165bf8"
+        ruta_o_url: "imagenes/manual-de-administracion/f3ea244a3068.png"
+        pagina: null
+        ocr: "+e\" Estado Bancario 1-16) x!\nEmpresa 22000617 S10 DEMO Del forg2015 ~| 4! lsomqno1s +\nSucursal Principal REETS\nEstado Registrado\n‘Cuenta Bancaria |910.0100105672 |BBVA SOLES ee 4) Moneda HUEVOS SOLES\nSaldo Contable Alonos (Depésitos) Cargos (Retiros) | iitereses | '\nhic SEDER\n10,000.00) 0.00 ‘am ‘ann ‘ann ann ‘am “in-nnn an)\nEj; Catalogo de Conceptos Bancarios BEE\nSSS SSS el aa ie Utilizar la parr…"
+  - n: 6
+    id: "administrativo.registrar-estado-bancario-manual#6"
+    accion: "En los campos **Cargo** y **Abono**, digite los importes de cada concepto, línea por línea, con la fecha del proceso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s060]
+    pagina: null
+    fotos:
+      - id: "98824b67ef94"
+        ruta_o_url: "imagenes/manual-de-administracion/1335abfe4e60.png"
+        pagina: null
+        caption: "A través del campo Cargo y Abono permiten digitar los importes línea a línea de cada concepto, asimismo la fecha del proceso es importante."
+        ocr: "ae Estado Bancario [= 15) x!\nEmpresa 22000617 S10 DEMO Del foranois +] 4! [somaraots 7\n‘Sucursal Principal Periodo Contable\nEstado Reaistredo\nCuenta Banceria fog10.0100105672 [BBVA SOLES =] #4] Moneda NUEVOS SOLES\niol | eeene [Obes [Grameen | Annie [Own | #8? OTF\nEWAN a | vaiade\nArrastre hacia aqui el encabezado de la columna que desea agrupar.\n5/5 _Canpo[tinea Sfiusae SS~S~S*S«C*iCC Yrs\nLinea _[[…"
+  - n: 7
+    id: "administrativo.registrar-estado-bancario-manual#7"
+    accion: "Elija la vista **Horizontal** o **Vertical** del estado bancario (el manual usa la vertical)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s060]
+    pagina: null
+    fotos:
+      - id: "a6153508a83e"
+        ruta_o_url: "imagenes/manual-de-administracion/7275bbfbd1ae.png"
+        pagina: null
+        caption: "Vista Horizontal / Vertical del estado Bancario."
+        ocr: "iv Estado Bancario FAI ES\nEmpresa (22000617 S10 DEMO: Del lorma201s +) A! lsoma2015 +!\n‘Sucursal Principal Periodo Contable\nEstado Reistrado\n‘Cuenta Bancaria [0910.0100105672 [BBVA SOLES ve a4) Moneda NUEVOS SOLES:\n[__Abones (endstes) [Capos (Retos) [roses\nSaldo Contable jonas (Depésitas) argos (Retiros) ‘Saldo Contable Final\nical | Efecivo | Ores | Cheques | Otros | Acreedores | Deudores |\n100.00…"
+  - n: 8
+    id: "administrativo.registrar-estado-bancario-manual#8"
+    accion: "Use la opción **Conciliación automática** para buscar los ingresos y egresos procesados en los diarios de caja y los pagos, y cambiar el estado de los documentos a conciliados."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s060]
+    pagina: null
+    fotos:
+      - id: "951d4bc572a6"
+        ruta_o_url: "imagenes/manual-de-administracion/1afb6c2a0c3b.png"
+        pagina: null
+        caption: "Opción Conciliación automática permite realizar la búsqueda de ingresos y egresos procesados desde el módulo administrativo por escenario diarios de caja y pagos a través de medios de pago que permite cambiar el estado de los documentos a conciliados."
+        ocr: "ap Estado Bancario BEE\nEmpresa 22000617 S10 DEMO Del loimaaois ~+|4! [somes ~\nSucursal Principal RorerenT)\nEstado Registrado\nCuenta Bancaria [o910.0100105672 |BBVA SOLES a #4) Moneda NUEVOS SOLES\nSaldo Contable ‘Abonos (Depdsitos) Cargos (Retiros) Intereses\nIricial Efectivo Otros Cheques Otros Acreedores | Deucdores | Sido Conable Final\n10,000.00 0.00 0.00 0.00 0.00 0.00 0.00 9,880.20\nAM2Sa +-aFia…"
+  - n: 9
+    id: "administrativo.registrar-estado-bancario-manual#9"
+    accion: "Ubique los documentos cobrados y pagados que siguen pendientes por conciliar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s060]
+    pagina: null
+    fotos:
+      - id: "22f46636047a"
+        ruta_o_url: "imagenes/manual-de-administracion/b05178a165fe.png"
+        pagina: null
+        caption: "A Través del proceso de conciliación es posible ubicar a los documentos cobrados y pagado pendientes por conciliar."
+        ocr: "= Estado Bancario BEE\nEmpresa (22000617 $10 DEMO Del Jorog2015 +)! [soms2015 +\nEstado, Registrado\n‘Cuenta Bancaria [o910.0100105872 [BBVA SOLES ee a4) ‘Moneda: NUEVOS SOLES\n‘Saldo Contable ‘Abonos (Depésitos) Cargos (Retiros) Intereses\ntied [Breas [ons Gime | Ores aremacree | nour | S¢ 4 Soteie Pet\nEMAN a vaFlaéda SMA a vahidéaa\nECR C ENC 22 Campo|Socio de Negocio ~] [em cualquier posicin | [XI] c…"
+  - n: 10
+    id: "administrativo.registrar-estado-bancario-manual#10"
+    accion: "Ubicado en el campo que corresponda, use la opción **GENERAR PAGO Y CONCILIAR**: genera el documento (CARGO BANCARIO o ABONO BANCARIO) y, a la vez, el pago o la cobranza."
+    resultado: "El documento queda registrado y en estado conciliado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s060, web-https-documentacion-s10peru-com-manual-d-s061]
+    pagina: null
+    fotos:
+      - id: "9b86595640d8"
+        ruta_o_url: "imagenes/manual-de-administracion/36d040242185.png"
+        pagina: null
+        caption: "Existe una opción que permite GENERAR PAGO Y CONCILIAR, este proceso genera el documento y es posible visualizarlo desde documentos por Pagar o Cobrar (CARGO BANCARIO o ABONO BANCARIO) a su vez genera el pago o cobranza según el campo en el que se encuentre ubicado."
+        ocr: "spt Estado Bancario L-J5 1x!\nEmpresa 22000617 $10 DEMO Del lorosanis +]! [somamois +\nSucursal Principal periodo Contable\nEstado Registrado\nCuerta Banceria [o9i0.0100105672 [BBVA SOLES =|] Morea NUEVOS SOLES\nSi Cae |___ Rees onl came aD\nhide [-—Eectie | Ofes | themes | cies [Aces | _Deubres | Suite Fhe\n10,000.00 0.00 0.00 0.00 0.00 0.00 0.00 9,860.20\nEMAge var aaa SMe Ss variaaa\nEERE ConcESCr] 22 C…"
+      - id: "5edf4685a85b"
+        ruta_o_url: "imagenes/manual-de-administracion/d0f546ef6ecb.png"
+        pagina: null
+        caption: "Se Observa el documento registrado y en estado conciliado a través de la opción GENERAR PAGO Y CONCILIAR."
+        ocr: "ae Estado Bancario BEE\nEmpresa 22000617 S10 DEMO Del foros2015 +| A! [somgenis +\nSucursal Principal a\nEstado Conciliado\nCuenta Banceria [Jaiq-nioiase/2 [pnva SOLES =] #4] Monea NUEVOS SOLES\nSaldo Contable Abonas (Depésttos) Cargos (Retiros) :\nSaldo Contable Final\ntrical | Efectivo | Otros__| Cheques | tras | Acreedores | Deudores |\nEMYAHS varia AMA 8 vB eae\n= Carpal seco de Negocio] en custuer pos…"
+  - n: 11
+    id: "administrativo.registrar-estado-bancario-manual#11"
+    accion: "Use la opción **Imprimir** para ver los comprobantes conciliados, pendientes por conciliar o todos los movimientos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s061]
+    pagina: null
+    fotos:
+      - id: "7790c721dddc"
+        ruta_o_url: "imagenes/manual-de-administracion/25728597b58f.png"
+        pagina: null
+        caption: "Luego de realizar el proceso de Conciliación se tiene la opción de Imprimir que permite visualizar los comprobantes en estado Conciliados, Pendientes por Conciliar y Todos los movimientos."
+        ocr: "4m Estado Bancario BIEN El\nEmpresa 22000617 $10 DEMO Del foiog201s +] Al [sonan0i5 +!\n‘Sucursal Principal ieee\nEstado ‘Conciliado\n‘Cuenta Bancaria fogio-o100105672 [BBVA SOLES os 44) Moneda NUEVOS SOLES\nSaldo Contable ‘Abonos (Depésitos) Cargos (Retiros) | ittereses |\nfi\nricel_Electio_|—Otros_—|=—sCheaues|——tos | —Acreedores | Detwores Selo Coral Fne\nAg vaF|xae Se So vflxage\n=a Es 1/1 Campo|Socio…"
+verificacion:
+  - texto: "Los documentos registrados con GENERAR PAGO Y CONCILIAR se ven en estado conciliado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s061]
+  - texto: "El documento generado se puede visualizar desde documentos por Pagar o Cobrar (CARGO BANCARIO o ABONO BANCARIO)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s060]
+errores_frecuentes: []
+relacionados: []
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s058, manual: "Manual Administrativo", seccion: "6.3.1.1 Configuración de Recursos para la Conciliación", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s059, manual: "Manual Administrativo", seccion: "6.3.1.2 Configuración General de Grupo de Recursos", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s060, manual: "Manual Administrativo", seccion: "6.3.1.3 Procedimiento de Registro de Estado Bancario Manual (1)", pagina: null}
+  - {id: img-0f0519211c82-0000, manual: "Manual Administrativo", seccion: "0f0519211c82.png", pagina: null}
+  - {id: img-29e2615aaf9a-0000, manual: "Manual Administrativo", seccion: "29e2615aaf9a.png", pagina: null}
+  - {id: img-620933a6d0fb-0000, manual: "Manual Administrativo", seccion: "620933a6d0fb.png", pagina: null}
+  - {id: img-f3ea244a3068-0000, manual: "Manual Administrativo", seccion: "f3ea244a3068.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s061, manual: "Manual Administrativo", seccion: "6.3.1.3 Procedimiento de Registro de Estado Bancario Manual (2)", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

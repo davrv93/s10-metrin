@@ -1,0 +1,169 @@
+id: nominas.registrar-tareo-estandar
+version: 1
+modulo: nominas
+titulo: "Registrar el tareo estándar con ayuda de Excel"
+objetivo: "Registrar las horas trabajadas por cada obrero en una partida de control durante un periodo (semana), exportando el tareo del S10 a Excel y volviéndolo a importar."
+nivel: intermedio
+preguntas:
+  - "cómo registro el tareo de mano de obra en nóminas"
+  - "como hago el tareo semanal de los obreros"
+  - "como exporto el tareo a excel y lo vuelvo a importar"
+  - "cómo registro las horas trabajadas por partida de control"
+  - "como asigno el formato de tareo de mano de obra a la empresa"
+  - "tareo estandar paso a paso en s10"
+  - "como importo el tareo desde excel al s10"
+  - "como registro horas extra al 60 en el tareo"
+  - "como se ase el tareo de obreros"
+aliases:
+  - "tareo estándar"
+  - "registrar tareo"
+  - "tareo de mano de obra"
+  - "registrar horas trabajadas"
+  - "importar tareo de Excel"
+entidades:
+  modulo: "Nóminas"
+  pantallas: ["Tareo Estándar", "Catálogo de Formatos por Empresa"]
+  objetos: ["tareo", "partida de control", "obrero", "horas trabajadas", "tipo de hora"]
+prerrequisitos:
+  - texto: "Registre en el servidor una carpeta donde guardará los archivos en Excel que contienen los tareos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s057]
+  - texto: "Los obreros deben estar elegidos en el escenario Personal Disponible, con su información registrada en la ficha personal; en el tareo estándar los tareos se realizan desde el PROYECTO, que tiene partidas de control."
+    fuente: [img-1260dd9d5bfd-0000, web-https-documentacion-s10peru-com-manual-d-s056]
+pasos:
+  - n: 1
+    id: "nominas.registrar-tareo-estandar#1"
+    accion: "Solo la primera vez: en **Catálogos**, elija **Formatos por Empresa**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s057, img-2fb17a49ecef-0000]
+    pagina: null
+    fotos:
+      - id: "37ab26ec2265"
+        ruta_o_url: "imagenes/manual-de-nominas/2fb17a49ecef.png"
+        pagina: null
+        ocr: "Elija |? | Catalogos\nog Recursos genericos\nFormatos por Empresa"
+  - n: 2
+    id: "nominas.registrar-tareo-estandar#2"
+    accion: "Ubíquese en la empresa que ejecuta el proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s057]
+    pagina: null
+    fotos:
+      - id: "ea6099dfa195"
+        ruta_o_url: "imagenes/manual-de-nominas/ddfe7149ab8e.png"
+        pagina: null
+        caption: "A la empresa que ejecuta el proyecto se le debe asignar el formato de Excel “Tareos de mano de obra”, esta labor se realiza sólo la primera vez."
+        ocr: "4 7 la cael\nOSs xBue &¢RBe Hoo RSW ASA\njal -B4 NIVEL Oo\n|_L_L cécigo _[Descrincién ) Adicionar F2 Strains\n|_| 02100001 | ERIN “(ee Mecttcer iF | Juridica"
+  - n: 3
+    id: "nominas.registrar-tareo-estandar#3"
+    accion: "Use **Asignar formato** y asigne a la empresa el formato de Excel **Tareo de Mano de Obra** que viene con el sistema, donde se registran la cantidad de horas trabajadas, el tipo y la partida de control."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s057, img-ddaa937be696-0000]
+    pagina: null
+    fotos:
+      - id: "6f4f7658ca50"
+        ruta_o_url: "imagenes/manual-de-nominas/ddaa937be696.png"
+        pagina: null
+        ocr: "[Formatos de Impresién de la Empres| Abrir Formato\nSam ciidimyregra a) [Empires SIA, Asignar formato\nicono de Excel del formato [| Formata | Descripoiin del Formate Quitar Formato\n64 Tareo mano de obra F 7\nix] Asignar Formato del catélogo\n_———————\nmg [62 Partes de Equipo\nig] 64 — Tareo de Mano de Obra ial\nAceptar ! Cancelar\n_S aa"
+  - n: 4
+    id: "nominas.registrar-tareo-estandar#4"
+    accion: "Después de asignar el formato, cierre el **Catálogo de Formatos por Empresa**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s057]
+    pagina: null
+  - n: 5
+    id: "nominas.registrar-tareo-estandar#5"
+    accion: "Ingrese al escenario **Tareo Estándar** del proyecto, en **Principal**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s057, img-ceb9cf787cd9-0000]
+    pagina: null
+    fotos:
+      - id: "f9f0cd575ca0"
+        ruta_o_url: "imagenes/manual-de-nominas/ceb9cf787cd9.png"
+        pagina: null
+        ocr: "\"i Nominas\n] [3 PUENTE EN CARRETERA\n=.) Principal J\nTareo Esténdar =|\n‘areo - Luego, S| Meta"
+  - n: 6
+    id: "nominas.registrar-tareo-estandar#6"
+    accion: "Verifique el **Periodo**: la semana que va a registrar."
+    fuente: [img-2f170e3f6034-0000, web-https-documentacion-s10peru-com-manual-d-s057]
+    pagina: null
+  - n: 7
+    id: "nominas.registrar-tareo-estandar#7"
+    accion: "Haga clic derecho sobre la lista de trabajadores y elija la opción para exportar el tareo a Excel."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s057]
+    pagina: null
+    fotos:
+      - id: "4a5fa190d25e"
+        ruta_o_url: "imagenes/manual-de-nominas/7538a5d3f42e.png"
+        pagina: null
+        caption: "Exportar el Tareo del S10 a Excel"
+        ocr: "Tipo de Némina |001 Obreros de construccién civil con beneficios sociales ————¥\nEscala perioda hr Periodo [Semana 17 (21/04/2010 - 2504/2010) u\nFittro, ‘Solo activos i\nBY Ly Clic derecho\nOrden |Cédigo [Nombre Refurso equivalente [Unidad | Horas Normal\n\n02100036| Acosta, César OF CIALENCOFRADO [hh |\n\n02100042 Copiartarea\n\n2190042\n\n»"
+  - n: 8
+    id: "nominas.registrar-tareo-estandar#8"
+    accion: "En **Buscar carpeta**, ingrese el directorio donde guardará los tareos."
+    resultado: "El tareo se muestra en una hoja Excel."
+    fuente: [img-e0f7df200d40-0000, web-https-documentacion-s10peru-com-manual-d-s057]
+    pagina: null
+    fotos:
+      - id: "36f8d4769aed"
+        ruta_o_url: "imagenes/manual-de-nominas/e0f7df200d40.png"
+        pagina: null
+        ocr: "e3\nBuscar carpeta =\nIngrese el directorio donde ar los tareos\nMSOCache be\n|) OT PUENTE EN CARRETERA ia\nIB)\n|| carpeta; OT PUENTE EN CARRETERA"
+  - n: 9
+    id: "nominas.registrar-tareo-estandar#9"
+    accion: "Registre el tareo para cada uno de los obreros: para el obrero elegido, elija el día de la semana."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s057]
+    pagina: null
+    fotos:
+      - id: "6260e25f6e3c"
+        ruta_o_url: "imagenes/manual-de-nominas/e823856671e1.png"
+        pagina: null
+        caption: "Registre el tareo para cada uno de los obreros."
+        ocr: "S10 S.A. Tareo de Mano de Obra\n\nOBRA: PUENTE Ell CARRETERA\n\nTipo: H (Normal), E60 (Extra al 60%), E100 (Extra al 100%), DM (Descanso médico)\n©)\n\n[-\nos [>\nPesn fai000%5 [cane uen [| =\n\n= ; E60\n[> >| Miercoles 21 Jueves 22 Viernes 23. Sabado 24 Domingo 25 Partida de"
+  - n: 10
+    id: "nominas.registrar-tareo-estandar#10"
+    accion: "Ubique el cursor en la celda y use el botón para elegir la partida de control donde participa el obrero o empleado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s057]
+    pagina: null
+  - n: 11
+    id: "nominas.registrar-tareo-estandar#11"
+    accion: "Si un obrero realiza más de una actividad durante el día, utilice una nueva rotación para cada partida de control; haga lo mismo para el sobretiempo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s057]
+    pagina: null
+  - n: 12
+    id: "nominas.registrar-tareo-estandar#12"
+    accion: "Ingrese el número de horas trabajadas en la partida de control: como máximo, la cantidad de horas definidas en el escenario de calendario – horario."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s057]
+    pagina: null
+  - n: 13
+    id: "nominas.registrar-tareo-estandar#13"
+    accion: "Elija el tipo de hora, por ejemplo H (Normal), E60 (Extra al 60%), E100 (Extra al 100%) o DM (Descanso médico). Estos tipos de horas se configuran en el módulo de nóminas del S10."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s058, img-e823856671e1-0000]
+    pagina: null
+  - n: 14
+    id: "nominas.registrar-tareo-estandar#14"
+    accion: "Después de registrar los tareos, use el botón para grabar el contenido de la ventana y cierre Excel."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s058]
+    pagina: null
+  - n: 15
+    id: "nominas.registrar-tareo-estandar#15"
+    accion: "De vuelta en el escenario de tareo, haga clic derecho y elija **Importar de Microsoft Excel**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s058, img-2f170e3f6034-0000]
+    pagina: null
+    fotos:
+      - id: "cd50c81385dd"
+        ruta_o_url: "imagenes/manual-de-nominas/2f170e3f6034.png"
+        pagina: null
+        ocr: "Tipo de Némina |001 Obreros de construccién civil con beneficios sociales | Verifique la semana b >|\nEscala perioda |Periodo Semanal Y Periodo | Semana 17 (2104/2010 - 25/04/2010) aI\nFittro, ‘Solo activos hd\nEly) 2 @é Haga clic derecho |__—__—————\n‘orden [Couigo [Noire Fores Bra 60\n\n22000513 | Siva. carlos 0.0000\n\n2200051 B3 Copiartareo 0.0000\n\n2200056 Pegar tareo » 0.0000\n\nacme Eliminar tareas: »…"
+verificacion: []
+errores_frecuentes:
+  - sintoma: "Los obreros o empleados trabajan en más de un proyecto."
+    solucion: "El tareo estándar con parte semanal se usa cuando trabajan en un solo proyecto; si no, los tareos se realizan desde el MULTIPROYECTO con el tareo multiproyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s058, img-1260dd9d5bfd-0000]
+relacionados: [nominas.seleccionar-personal-disponible, nominas.calcular-la-nomina]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s057, manual: "Manual de Nóminas", seccion: "6.1 Tareo Estándar (1)", pagina: null}
+  - {id: img-1260dd9d5bfd-0000, manual: "Manual de Nóminas", seccion: "1260dd9d5bfd.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s056, manual: "Manual de Nóminas", seccion: "6 TAREO MANO DE OBRA", pagina: null}
+  - {id: img-2fb17a49ecef-0000, manual: "Manual de Nóminas", seccion: "2fb17a49ecef.png", pagina: null}
+  - {id: img-ddaa937be696-0000, manual: "Manual de Nóminas", seccion: "ddaa937be696.png", pagina: null}
+  - {id: img-ceb9cf787cd9-0000, manual: "Manual de Nóminas", seccion: "ceb9cf787cd9.png", pagina: null}
+  - {id: img-2f170e3f6034-0000, manual: "Manual de Nóminas", seccion: "2f170e3f6034.png", pagina: null}
+  - {id: img-e0f7df200d40-0000, manual: "Manual de Nóminas", seccion: "e0f7df200d40.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s058, manual: "Manual de Nóminas", seccion: "6.1 Tareo Estándar (2)", pagina: null}
+  - {id: img-e823856671e1-0000, manual: "Manual de Nóminas", seccion: "e823856671e1.png", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

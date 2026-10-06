@@ -1,0 +1,98 @@
+id: gerencia-proyectos.asignar-presupuestos-al-proyecto
+version: 1
+modulo: gerencia-proyectos
+titulo: "Asignar presupuestos al proyecto"
+objetivo: "Asignar a las ramas del proyecto (venta, meta) los presupuestos elaborados en el módulo de Presupuestos, que le proporcionan las partidas, metrados, recursos, cantidades y precios."
+nivel: basico
+preguntas:
+  - "cómo asigno un presupuesto a un proyecto en gerencia de proyectos"
+  - "como le pongo el presupuesto meta al proyecto"
+  - "dónde asigno el presupuesto venta y el meta"
+  - "como asignar presupuesto a la rama meta"
+  - "el proyecto no tiene partidas, como le asigno el presupuesto"
+  - "como jalo el presupuesto de s10 presupuestos al proyecto"
+  - "como asigno varios presupuestos a un mismo proyeto"
+  - "cuándo se crea la línea base del proyecto"
+aliases:
+  - "asignar presupuesto"
+  - "asignar presupuesto al proyecto"
+  - "asignar presupuesto meta"
+  - "asignar presupuesto venta"
+  - "vincular presupuesto con proyecto"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Datos Generales", "Catálogo de Presupuestos"]
+  objetos: ["presupuesto", "proyecto", "rama meta", "Línea Base", "partidas de control"]
+prerrequisitos:
+  - texto: "El proyecto debe estar registrado en el escenario de Datos generales."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s042]
+  - texto: "Los presupuestos deben estar elaborados en el módulo de Presupuestos del S10 y en el mismo tipo de moneda."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s045]
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.asignar-presupuestos-al-proyecto#1"
+    accion: "En el escenario de **Datos Generales**, elija el proyecto en el árbol."
+    donde: "Escenario Datos Generales"
+    fuente: [img-3752e7977451-0000, web-https-documentacion-s10peru-com-manual-d-s042]
+    pagina: null
+  - n: 2
+    id: "gerencia-proyectos.asignar-presupuestos-al-proyecto#2"
+    accion: "Ubique la rama a la que asignará el presupuesto: en la rama **Venta**, toda la información es para el propietario del proyecto; en la rama **Meta**, la información es interna y para la gestión del proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s045]
+    pagina: null
+  - n: 3
+    id: "gerencia-proyectos.asignar-presupuestos-al-proyecto#3"
+    accion: "Haga clic derecho en el segmento de presupuestos de la rama y elija **Asignar presupuesto**."
+    fuente: [img-3752e7977451-0000, web-https-documentacion-s10peru-com-manual-d-s045]
+    pagina: null
+    fotos:
+      - id: "385fe3f57c13"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/3752e7977451.png"
+        pagina: null
+        ocr: "M9\") Elija el proyecto\nOF Eo ene Datos Generales\n=) PUENTE EN CARRETERA, ————————————\na2 Principal Proyecto 02001001 Cédigo alter\n(>| Venta despomnuesta| peecripcién [PUENTE EN CARRETERA\nDF] venta\nOo = Liflea Base Propietario (02100027 |Ministerio de Transportes y Comun\n=) Subcortratos Lugar 081301 |URUBAMBA\n“Pith eet aetnncecies\nGy Bandeja Empresa $10 S.A.\nli ‘apo Canali Fecha Inicio\n(> ty Papele…"
+  - n: 4
+    id: "gerencia-proyectos.asignar-presupuestos-al-proyecto#4"
+    accion: "Del **Catálogo de Presupuestos**, elija el presupuesto que asignará a la rama."
+    donde: "Catálogo de Presupuestos"
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s045]
+    pagina: null
+    fotos:
+      - id: "9bee13da9061"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/c0b88dd7c4b1.png"
+        pagina: null
+        caption: "Llamada c-1: Del catálogo de presupuestos asigne el presupuesto a cada uno de las ramas."
+        ocr: "2% Catdlogo de Presupuestos : Todos los Registros ee)\nQwiones 2\nOe Xue aAVRe Bo Nae AEA\n\n5 Taos los Registras yo\n[- @HABILITACIONES URBANAS iste Sse (ce) a"
+  - n: 5
+    id: "gerencia-proyectos.asignar-presupuestos-al-proyecto#5"
+    accion: "Repita el proceso para asignar los demás presupuestos a las ramas que les corresponden; el sistema permite asignar uno o más presupuestos a cada rama."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s045]
+    pagina: null
+  - n: 6
+    id: "gerencia-proyectos.asignar-presupuestos-al-proyecto#6"
+    accion: "Una vez que tenga la programación concluida en la rama meta y antes de iniciar la construcción del proyecto, cree la **Línea Base**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s045]
+    pagina: null
+    fotos:
+      - id: "0b2b710bc5e2"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/b381da7b0783.png"
+        pagina: null
+        caption: "Llamada d: Una vez que tenga la programación concluida en la rama meta y antes de iniciar la construcción del proyecto, cree Línea Base."
+        ocr: "Proyectos\nic Escritorio\ni @ MULTIPROYECTO\n| Eb PUENTE EN CARRETERA\ni a Principal\ni E Venta descompuesto\ni Events\n: isin\n; TES] SubContrat\n| i @ FIMA HUAYCOL!\nH @ MULTIFAMILIAR ESCAMPADERO"
+verificacion: []
+errores_frecuentes:
+  - sintoma: "No tiene presupuesto elaborado en el módulo de Presupuestos del S10."
+    solucion: "No ejecute este paso: vaya al grupo CONFIGURACION, escenario de Partidas de Control, y efectúe el registro (además de los Destinos Específicos); pida recursos del catálogo para comprar y use almacenes para administrar los ingresos por compra."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s045]
+  - sintoma: "Los presupuestos que quiere asignar están en monedas distintas."
+    solucion: "Los presupuestos que utilizará el proyecto deben estar elaborados en el mismo tipo de moneda."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s045]
+  - sintoma: "Cambió el presupuesto ya asignado y el proyecto no toma los cambios."
+    solucion: "Vaya a S10 Presupuestos y procese (use el procesamiento tipo 3); luego use el botón correspondiente en el escenario de Actividades."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s069]
+relacionados: [gerencia-proyectos.registrar-proyecto, gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas, gerencia-proyectos.planificar-en-cronograma-por-periodos]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s042, manual: "Manual de Gerencia de Proyectos", seccion: "2.5 Registro del proyecto (1)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s045, manual: "Manual de Gerencia de Proyectos", seccion: "2.5.1 Asignar presupuestos al Proyecto (1)", pagina: null}
+  - {id: img-3752e7977451-0000, manual: "Manual de Gerencia de Proyectos", seccion: "3752e7977451.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s069, manual: "Manual de Gerencia de Proyectos", seccion: "2.3 Preparar la información para la Planificación Física 2.3.1 Actividades", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

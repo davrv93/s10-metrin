@@ -1,0 +1,11 @@
+id: kardex
+termino: "Kardex"
+sinonimos: []
+definicion: "Es la historia del recurso que muestra todos sus movimientos a través del tiempo; el resultado de los movimientos de ingresos y egresos constituye el kardex de un recurso."
+en_s10: "Se consulta desde el escenario de Stock del módulo de Almacenes, desde donde también se puede entrar al documento de cada movimiento e imprimir el reporte para la SUNAT."
+ejemplo: "El manual muestra el análisis del kardex del recurso CEMENTO PÓRTLAND TIPO I (42.5 Kg.)."
+procedimientos_relacionados: [almacenes.consultar-kardex]
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s086  # Manual de Almacenes › 3.6 Kardex
+  - web-https-documentacion-s10peru-com-manual-d-s080  # Manual de Almacenes › 3. Stock
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

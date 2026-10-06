@@ -1,0 +1,108 @@
+id: presupuestos.exportar-presupuesto
+version: 1
+modulo: presupuestos
+titulo: "Exportar un presupuesto a otra base de datos"
+objetivo: "Exportar el presupuesto seleccionado a otra base de datos con la finalidad de independizarlo, por ejemplo para trasladarlo a otra PC."
+nivel: avanzado
+preguntas:
+  - "cómo exporto un presupuesto a otra base de datos"
+  - "como paso un presupuesto a otra pc"
+  - "como independizo un presupuesto en s10"
+  - "exportar presupuestos s10"
+  - "como llevo mi presupuesto a otra computadora"
+  - "como entro a la base de datos exportada"
+  - "como esporto un presupuesto"
+aliases:
+  - "exportar presupuesto"
+  - "trasladar presupuesto a otra PC"
+  - "independizar presupuesto"
+entidades:
+  modulo: "Presupuestos"
+  pantallas: ["Exportar presupuestos", "Mantenimiento de Base de Datos"]
+  objetos: ["presupuesto", "base de datos", "copia de seguridad"]
+prerrequisitos:
+  - texto: "Todas las partidas del presupuesto a exportar deben ser propias."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s123]
+pasos:
+  - n: 1
+    id: "presupuestos.exportar-presupuesto#1"
+    accion: "Use el botón de acceso directo de exportación de presupuestos para abrir el asistente."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s123, img-7a30d357c8a1-0000]
+    pagina: null
+    fotos:
+      - id: "7a723f162265"
+        ruta_o_url: "imagenes/manual-de-presupuestos/7a30d357c8a1.png"
+        pagina: null
+        ocr: "Botén de acceso directo\n[Pesci | =\n| Planegmienta | E Exportacion de presupuestos &)\nrene Exportaci6n de Presupuestos\nZ| < Este asistente le ayuda a exportar uno 0 mas presupuestos.\nExp ortar . Con este asistente podré:\nPresupussto\nay 3 ty * Seleccionar uno o mas presupuestos\ni | : .\n= Seleccionar recursos, pattidas y titulos a exportar\nPresu suesto ° Asignar el nombre de la base de datos de expor…"
+  - n: 2
+    id: "presupuestos.exportar-presupuesto#2"
+    accion: "Del catálogo de presupuestos, elija los presupuestos a exportar con el botón **Seleccionar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s123, img-e0bb11c7901c-0000]
+    pagina: null
+    fotos:
+      - id: "29bf2359ebcf"
+        ruta_o_url: "imagenes/manual-de-presupuestos/e0bb11c7901c.png"
+        pagina: null
+        ocr: "©: Exportacion de presupuestos Bal\nSeleccionar la lista de presupuestos\n¢ Cualles] son los presupuestos a exportar?\nUse este baton para elegir .\n& los presupuestos a exportar Seleccionar\nPresupuestos NO procesados\n<Atras Cancelar"
+  - n: 3
+    id: "presupuestos.exportar-presupuesto#3"
+    accion: "Elija los datos a exportar: todos los recursos, partidas y títulos, o solo los utilizados en el presupuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s123, img-4db34a94a7c4-0000]
+    pagina: null
+    fotos:
+      - id: "00d0d4bd3e26"
+        ruta_o_url: "imagenes/manual-de-presupuestos/4db34a94a7c4.png"
+        pagina: null
+        ocr: "© Exportacion de presupuestos Exporta tadas los (x)\ndatos del presupuesto\nincluido la base de datos\nve - Sele[scione si desea exportar todos los recursos, todas las\nae pattilias y todas los titulos o sélo los utilzados en el\nprespuesto:\nBy Exporta sdlo datos de los\npresupuestos elegidos\n_ Tablas —|—\n=e <4 TcHos Sal} las utilizadas\n. @ © Recursos\nc @ — Pattidas\nCc @ — Titulos y Subtitulos\nSSS Cance…"
+  - n: 4
+    id: "presupuestos.exportar-presupuesto#4"
+    accion: "Registre el nombre de la nueva base de datos y use el botón **SIGUIENTE**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s123]
+    pagina: null
+  - n: 5
+    id: "presupuestos.exportar-presupuesto#5"
+    accion: "Use el botón **EXPORTAR** y luego **ACEPTAR**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s123]
+    pagina: null
+  - n: 6
+    id: "presupuestos.exportar-presupuesto#6"
+    accion: "Para entrar a la nueva base de datos, en la barra de menús elija **Archivo** > **INICIAR LA SESION COMO USUARIO DISTINTO** (o use el botón de la barra de estado)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s123]
+    pagina: null
+    fotos:
+      - id: "3ef43c4b985f"
+        ruta_o_url: "imagenes/manual-de-presupuestos/1d0b1609d147.png"
+        pagina: null
+        caption: "El usuario accede a la nueva base de datos desde la barra de menús con la opción Archivo que despliega el menú donde debe elegir INICIAR LA SESION COMO USUARIO DISTINTO. El mismo efecto tiene cuando se presiona el botón de la barra de estado. Cuando se inicia la sesión con el sistema aparece la ventana:"
+  - n: 7
+    id: "presupuestos.exportar-presupuesto#7"
+    accion: "Para llevarla a otra PC, saque copia de seguridad de la base de datos exportada desde el escenario de **MANTENIMIENTO DE BASE DE DATOS**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s124]
+    pagina: null
+    fotos:
+      - id: "1fca1ec9f9b0"
+        ruta_o_url: "imagenes/manual-de-presupuestos/085847b4826c.png"
+        pagina: null
+        caption: "Una vez que ingresó a la base de datos exportada que tiene el nombre de PUENTE,"
+        ocr: "Es Elija esta opcién | Sakmamushee {x}\nElegir el procego de mantenimiento de base de datos ml\nSeleccionar la bpcidn que desea utilizar. rails)\n\nCopia de seguridad de base de datos\n\nRestaurar base de datos\n\nCrear base de datos 510\n\nEliminar base de datos\n\nRecuperar base de datos $10\n\nCompactar base de datos\n\nAyuda < Atrds Siguiente > Cancelar"
+  - n: 8
+    id: "presupuestos.exportar-presupuesto#8"
+    accion: "Copie en un dispositivo la base de datos de la carpeta **S102000\\backup**; en la PC destino, péguela en la misma carpeta y use la opción de restaurar base de datos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s124]
+    pagina: null
+verificacion: []
+errores_frecuentes:
+  - sintoma: "Se perdió una base de datos al exportar."
+    solucion: "No use el nombre de una base de datos existente: la exportación la reemplaza o sobrescribe."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s123]
+  - sintoma: "La base de datos no se puede restaurar en la PC destino."
+    solucion: "Si su PC tiene SQL de una versión actual, no traslada a versiones anteriores; tampoco use esta opción en versiones no autorizadas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s124]
+relacionados: [presupuestos.registrar-presupuesto-nuevo, instalacion.sacar-copia-de-seguridad-de-la-base-de-datos]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s123, manual: "Manual de Presupuestos", seccion: "5.3.1 Exportar presupuestos", pagina: null}
+  - {id: img-7a30d357c8a1-0000, manual: "Manual de Presupuestos", seccion: "7a30d357c8a1.png", pagina: null}
+  - {id: img-e0bb11c7901c-0000, manual: "Manual de Presupuestos", seccion: "e0bb11c7901c.png", pagina: null}
+  - {id: img-4db34a94a7c4-0000, manual: "Manual de Presupuestos", seccion: "4db34a94a7c4.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s124, manual: "Manual de Presupuestos", seccion: "5.3.2 Proceso para trasladar la base de datos a otra PC", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

@@ -1,0 +1,10 @@
+id: entrega_a_rendir
+termino: "Entrega a rendir"
+sinonimos: ["entregas a rendir", "ER"]
+definicion: "Desembolso a una persona de la empresa para que luego rinda, con documentos internos o de SUNAT, los gastos realizados con ese dinero. En S10 no se hace ningún desembolso en el módulo Administrativo sin sustentarlo antes con un documento interno o de SUNAT."
+en_s10: "Se configura un tipo de documento ENTREGAS A RENDIR (documento interno, tipo de documento base OTROS) y se crea en el módulo de Facturación, grupo Por pagar, escenario Documentos por pagar. Pagado ese documento, se abre una Liquidación para cancelar los documentos que sustentan la salida."
+procedimientos_relacionados: [facturacion.registrar-entrega-a-rendir]
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s046  # Manual de Facturación › 6.4.1 Registro del Comprobante Entrega a Rendir.
+  - web-https-documentacion-s10peru-com-manual-d-s049  # Manual de Facturación › 6.4.3 Proceso de Liquidación desde Facturación (1)
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

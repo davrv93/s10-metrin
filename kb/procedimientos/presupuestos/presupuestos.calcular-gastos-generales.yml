@@ -1,0 +1,113 @@
+id: presupuestos.calcular-gastos-generales
+version: 1
+modulo: presupuestos
+titulo: "Calcular en forma analítica los gastos generales"
+objetivo: "Registrar por rubros y conceptos la estructura de costos de administrar y ejecutar la obra, y calcular el porcentaje de gastos generales del presupuesto venta u oferta."
+nivel: intermedio
+preguntas:
+  - "cómo calculo los gastos generales en s10"
+  - "calculo analitico de gastos generales"
+  - "como agrego rubros y conceptos de gastos generales"
+  - "como saco el porcentaje de gastos generales del presupuesto"
+  - "donde pongo sueldos del residente en el presupuesto"
+  - "que necesito para hacer gastos generales analiticos"
+  - "gastos generales GGP s10"
+  - "como calculo gastos jenerales"
+aliases:
+  - "gastos generales analíticos"
+  - "calcular porcentaje de gastos generales"
+  - "registrar rubros de gastos generales"
+entidades:
+  modulo: "Presupuestos"
+  pantallas: ["Gastos Generales", "Catálogo de Rubros", "Catálogo de Conceptos"]
+  objetos: ["gastos generales", "rubros", "conceptos", "pie de presupuesto"]
+prerrequisitos:
+  - texto: "La condición para elaborar el cálculo analítico de gastos generales es tener registrada la variable **ggp** o **GGP** en el **Diseño del Pie de Presupuesto**, en la columna **macro**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s059]
+pasos:
+  - n: 1
+    id: "presupuestos.calcular-gastos-generales#1"
+    accion: "Ingrese al escenario de **Gastos Generales** y ubique el presupuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s059]
+    pagina: null
+    fotos:
+      - id: "0136a811d2e4"
+        ruta_o_url: "imagenes/manual-de-presupuestos/11f6036d2df8.png"
+        pagina: null
+        caption: "Acceso al escenario de Gastos Generales"
+        ocr: "Ly ] @ VIVIENDA UNFAMILIAR\n| @ VIVIENDA meta para planificar\n@-VIVIENDA UNFAMILIAR Linea base\nGastos “8 LA CASADE JUAN\nGenerales L &@ PUENTE EN CARRETERA VENTA\n, Luego"
+  - n: 2
+    id: "presupuestos.calcular-gastos-generales#2"
+    accion: "Haga clic derecho en el segmento de rubros, elija **Adicionar rubro** y, en el **Catálogo de Rubros**, seleccione los rubros (por ejemplo, PERSONAL TECNICO)."
+    fuente: ["7c40a9548710-0066"]
+    pagina: 41
+  - n: 3
+    id: "presupuestos.calcular-gastos-generales#3"
+    accion: "Elija un rubro, haga clic derecho en el segmento de conceptos y elija **Adicionar concepto**."
+    fuente: [img-8daf145d85c5-0000, "7c40a9548710-0067"]
+    pagina: null
+    fotos:
+      - id: "2b365db8d63d"
+        ruta_o_url: "imagenes/manual-de-presupuestos/8daf145d85c5.png"
+        pagina: null
+        ocr: "|__| cécigo [Deseripcién\n> OO FSS eee Elija un rubro\n\n02 PERSONAL TECNICO\n\n03 ALQUILER DE EQUIP\n\n10 TRILTOS\n\n«{_ | »\nee ee oo\nClic derecho DD Adicionar concepto\nEliminar concepto"
+  - n: 4
+    id: "presupuestos.calcular-gastos-generales#4"
+    accion: "En el **Catálogo de Conceptos**, elija los conceptos (por ejemplo, Residente principal)."
+    fuente: ["7c40a9548710-0067", img-097c06a23d53-0000]
+    pagina: 43
+    fotos:
+      - id: "ae1bddc3a9e1"
+        ruta_o_url: "imagenes/manual-de-presupuestos/097c06a23d53.png"
+        pagina: null
+        ocr: "@2 Catélogo de Conceptos ray\nOpciones 2\nDe Xeua AwYSae Hoo Hage Aso\n|_[_cécigo [Descipcin SSC =|\n| | 01002 | Supefntencente mes\n\n01003 /Residente principal mes\n\n01009 Planillgro: mes\n\n:\n\n01003 Residente principal mes\n1010 Tareador mes:"
+  - n: 5
+    id: "presupuestos.calcular-gastos-generales#5"
+    accion: "Ingrese los datos de cada concepto: **Unidad**, **Persona**, **%Partp.**, **Tiempo** y **Sueldo/Jornal**."
+    fuente: ["7c40a9548710-0067", img-c526bf6aa27e-0000]
+    pagina: 43
+    fotos:
+      - id: "93659da284fd"
+        ruta_o_url: "imagenes/manual-de-presupuestos/c526bf6aa27e.png"
+        pagina: null
+        ocr: "fee eee ed ed Ee\n\nHissidivabe pringigal snes Rn A\n\nTareador mes 1.00} 100.00 6.00 1,200.00\nIngrese los datos"
+  - n: 6
+    id: "presupuestos.calcular-gastos-generales#6"
+    accion: "Repita el proceso para los demás rubros."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s060]
+    pagina: null
+  - n: 7
+    id: "presupuestos.calcular-gastos-generales#7"
+    accion: "Use el botón **Calcular porcentaje** para calcular el porcentaje de los gastos generales."
+    fuente: ["7c40a9548710-0069", img-13083d605416-0000]
+    pagina: 44
+    fotos:
+      - id: "e793a325b34a"
+        ruta_o_url: "imagenes/manual-de-presupuestos/13083d605416.png"
+        pagina: null
+        ocr: "| $R+~+ Bee Oxe@\nbia\nGastos Generales ii\n—————EE——————————\n\n- Total Costo Directo : Si. 831,809.69\n\nFormato Use este botén para Gastos Generales : S/. 152,333.69\n\n[z-Tmos faleular | poreertaje Total Oferta SI 1,259,408.11\n\nx . de gastos generales «\n\n2 Viton ts] % gastos generales (GGP) 18.3135\n|_[cédigo[Descrincin | Valorizado\n01 _|PERSONAL PROFESIONAL Y AUXLIAR 79,200.04\n\nque el cursor en\n\n02 PER…"
+  - n: 8
+    id: "presupuestos.calcular-gastos-generales#8"
+    accion: "Vaya al escenario de la hoja del presupuesto y procese el presupuesto para que tome el pie de presupuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s061]
+    pagina: null
+verificacion:
+  - texto: "La ventana de Gastos Generales muestra el Total Costo Directo, los Gastos Generales, el Total Oferta y el % gastos generales (GGP)."
+    fuente: [img-13083d605416-0000]
+errores_frecuentes:
+  - sintoma: "No se puede acceder al cálculo analítico de gastos generales."
+    solucion: "Registre la variable ggp o GGP en el Diseño del Pie de Presupuesto, en la columna macro."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s059]
+relacionados: [presupuestos.disenar-pie-de-presupuesto, presupuestos.procesar-presupuesto, presupuestos.elaborar-formula-polinomica]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s059, manual: "Manual de Presupuestos", seccion: "3.9 Gastos generales", pagina: null}
+  - {id: "7c40a9548710-0066", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 41}
+  - {id: img-8daf145d85c5-0000, manual: "Manual de Presupuestos", seccion: "8daf145d85c5.png", pagina: null}
+  - {id: "7c40a9548710-0067", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 43}
+  - {id: img-097c06a23d53-0000, manual: "Manual de Presupuestos", seccion: "097c06a23d53.png", pagina: null}
+  - {id: img-c526bf6aa27e-0000, manual: "Manual de Presupuestos", seccion: "c526bf6aa27e.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s060, manual: "Manual de Presupuestos", seccion: "3.9.2 Registro de conceptos", pagina: null}
+  - {id: "7c40a9548710-0069", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 44}
+  - {id: img-13083d605416-0000, manual: "Manual de Presupuestos", seccion: "13083d605416.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s061, manual: "Manual de Presupuestos", seccion: "3.9.3 Calcular el porcentaje de gastos generales", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

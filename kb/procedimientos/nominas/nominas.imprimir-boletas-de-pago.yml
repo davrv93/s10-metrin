@@ -1,0 +1,203 @@
+id: nominas.imprimir-boletas-de-pago
+version: 1
+modulo: nominas
+titulo: "Preparar e imprimir las boletas de pago"
+objetivo: "Preparar el tipo de boleta y el periodo en Preparación de Boletas y luego visualizar e imprimir las boletas de pago de los trabajadores en el escenario Boletas de Pago."
+nivel: intermedio
+preguntas:
+  - "cómo imprimo las boletas de pago en nóminas"
+  - "como saco las boletas de pago de los obreros"
+  - "como preparo la boleta de pago antes de imprimir"
+  - "no me salen las boletas de pago, que falta"
+  - "como creo un tipo de boleta nuevo"
+  - "como hago la boleta de liquidacion"
+  - "como veo la boleta de pago de un trabajador"
+  - "como imprimir dos boletas en una hoja"
+  - "donde estan las boletas de pago en s10 nominas"
+  - "como inprimo las boletas de la semana"
+aliases:
+  - "imprimir boletas"
+  - "boletas de pago"
+  - "preparar boletas"
+  - "preparación de boletas"
+  - "boleta de liquidación"
+entidades:
+  modulo: "Nóminas"
+  pantallas: ["Preparación de Boleta", "Boletas de Pago"]
+  objetos: ["boleta de pago", "tipo de boleta", "periodo", "trabajador"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "nominas.imprimir-boletas-de-pago#1"
+    accion: "Ingrese al escenario **Preparación de Boletas** del **MULTIPROYECTO**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s078, img-33a9ea7c4418-0000]
+    pagina: null
+    fotos:
+      - id: "5774bbeb9e01"
+        ruta_o_url: "imagenes/manual-de-nominas/ea5f73fd5432.png"
+        pagina: null
+        caption: "Acceso al escenario,"
+        ocr: "Proyectos\n(+) FIMA HUAYCOLORO\nre +) MULTIFAMILIAR ESCAMPADERO\ni BMULTIPROYECTO\nPreparacion de ao Princ\nBoletas Luego, oe"
+  - n: 2
+    id: "nominas.imprimir-boletas-de-pago#2"
+    accion: "Elija el tipo de nómina (por ejemplo, Régimen C.C. con BB.SS. - Obreros)."
+    fuente: [img-a945206422af-0000, img-33a9ea7c4418-0000]
+    pagina: null
+    fotos:
+      - id: "af4ac8c8f364"
+        ruta_o_url: "imagenes/manual-de-nominas/a945206422af.png"
+        pagina: null
+        ocr: "Tipo de Némina “Ty obs Res\n002 Régimen C.C. con BBSS. - Obreros [Boleta de Pago |Estandar semanal - Obreros C.C. BB.SS. Semana 2019-01"
+  - n: 3
+    id: "nominas.imprimir-boletas-de-pago#3"
+    accion: "Haga clic derecho y elija **Adicionar** para adicionar un nuevo tipo de boleta."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s078, img-679d83292a1c-0000]
+    pagina: null
+    fotos:
+      - id: "79ae8ddbd8ab"
+        ruta_o_url: "imagenes/manual-de-nominas/679d83292a1c.png"
+        pagina: null
+        ocr: "Opciones 2?\nDe xXBU SC YB Om 4 @ & Ge\nCédiga [Descripcién\nLi |\n|_| Clic derecho Li Adicionar F2"
+  - n: 4
+    id: "nominas.imprimir-boletas-de-pago#4"
+    accion: "En la ventana, registre la descripción, el rango de periodos, los procesos, las observaciones y el formato del tipo de boleta."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s078, img-9990ccbcfc13-0000]
+    pagina: null
+    fotos:
+      - id: "b319f869d59c"
+        ruta_o_url: "imagenes/manual-de-nominas/9990ccbcfc13.png"
+        pagina: null
+        ocr: "Cédligo oon if Activ\nDeseripcién — [BQLETA, if PAGO\nTitulo BOLETA DE PAGO =|\nRango Periodos |Soio un Periodo HM\nProcesos\nCédigo | Descripcién Proceso\n[J 00023 RENTADE STA 2015 - OBREROS C.C. CON BESS.\n00030 ESTANDAR SEMANAL - OBREROS C.C. CON BB.SS. in)\nObservaciones [ES CONFORME CON SOLO LA FIRMA DEL TRABAJADOR\nFiltro para |\nimpresién Activos 7\nFormato de 1 J Tamatio 1\nmerastl Formato General3 fo…"
+    sub:
+      - n: 1
+        id: "nominas.imprimir-boletas-de-pago#4.1"
+        accion: "Registre la **descripción** (por ejemplo, BOLETA DE PAGO)."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s078, img-9990ccbcfc13-0000]
+        pagina: null
+      - n: 2
+        id: "nominas.imprimir-boletas-de-pago#4.2"
+        accion: "Ingrese el **Titulo** de la boleta."
+        fuente: [img-9990ccbcfc13-0000, web-https-documentacion-s10peru-com-manual-d-s078]
+        pagina: null
+      - n: 3
+        id: "nominas.imprimir-boletas-de-pago#4.3"
+        accion: "Elija el **Rango Periodos** (por ejemplo, Solo un Periodo)."
+        fuente: [img-9990ccbcfc13-0000, web-https-documentacion-s10peru-com-manual-d-s078]
+        pagina: null
+      - n: 4
+        id: "nominas.imprimir-boletas-de-pago#4.4"
+        accion: "Active el o los **procesos** que serán impresos."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s078]
+        pagina: null
+      - n: 5
+        id: "nominas.imprimir-boletas-de-pago#4.5"
+        accion: "En **Observaciones**, registre la observación que desea visualizar en la boleta de pago."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s078, img-9990ccbcfc13-0000]
+        pagina: null
+      - n: 6
+        id: "nominas.imprimir-boletas-de-pago#4.6"
+        accion: "Defina el **formato de impresión**."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s078]
+        pagina: null
+      - n: 7
+        id: "nominas.imprimir-boletas-de-pago#4.7"
+        accion: "Si la boleta será utilizada como liquidación, regístrela con el nombre **BOLETA DE LIQUIDACION**, ingrese ese título y elija los conceptos relacionados con la boleta de liquidación."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s078]
+        pagina: null
+      - n: 8
+        id: "nominas.imprimir-boletas-de-pago#4.8"
+        accion: "Pulse **Adicionar**."
+        fuente: [img-9990ccbcfc13-0000]
+        pagina: null
+  - n: 5
+    id: "nominas.imprimir-boletas-de-pago#5"
+    accion: "Para elegir el periodo semanal, con el **Tipo de Boleta** elegido (por ejemplo, **BOLETA DE PAGO**), elija **Adicionar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s078, img-febbd0aa46a1-0000]
+    pagina: null
+    fotos:
+      - id: "ad330f8e6b8b"
+        ruta_o_url: "imagenes/manual-de-nominas/febbd0aa46a1.png"
+        pagina: null
+        ocr: "Preparacion de Boletas\nProyecto 02001001 =MULTIPROYECTO\nTipo de Némina |002 Régimen C.C. con BE.SS. - Obreras bd\nTipo de Boleta [0001 BOLETA DE PAGO w= Ey Aafia [2019 ~\nAYVveAnS GF aude\n\nAdicionar"
+  - n: 6
+    id: "nominas.imprimir-boletas-de-pago#6"
+    accion: "Use el botón para elegir el **Periodo** que desea visualizar en boleta (por ejemplo, Semana 2019-01) y pulse **Adicionar**."
+    fuente: [img-457bae0a0916-0000, web-https-documentacion-s10peru-com-manual-d-s078, web-https-documentacion-s10peru-com-manual-d-s079]
+    pagina: null
+    fotos:
+      - id: "198ccff05957"
+        ruta_o_url: "imagenes/manual-de-nominas/457bae0a0916.png"
+        pagina: null
+        ocr: "EF poieta one i.  ———E-\n| sUse este botén, para elegir el periodo\nCodigo 0001\nPeriodo 0220160301 [Semana 2019-01 = 4\nDescripcién [Semana 2019-01\nAdicionar | Cancelar"
+  - n: 7
+    id: "nominas.imprimir-boletas-de-pago#7"
+    accion: "Ingrese a **Informes** y elija el escenario **Boletas de Pago**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s079, img-178986d8f4a6-0000]
+    pagina: null
+    fotos:
+      - id: "06a30893c25d"
+        ruta_o_url: "imagenes/manual-de-nominas/178986d8f4a6.png"
+        pagina: null
+        ocr: "Proyectos\n— =| aaj Escritorio\nElija |Informes | +) FIMA HUAYCOLORO\nf+) MULTIFAMILIAR ESCAMPADERO\niy 2 MULTIPROYECTO\nS- 2) Princifla\nBoletas de Pago 5]\nLuego, - a"
+  - n: 8
+    id: "nominas.imprimir-boletas-de-pago#8"
+    accion: "Elija el tipo de nómina, el **Tipo de Boleta** y el periodo que desea visualizar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s079, img-4af1fc704677-0000]
+    pagina: null
+    fotos:
+      - id: "db8ba0d1f300"
+        ruta_o_url: "imagenes/manual-de-nominas/4af1fc704677.png"
+        pagina: null
+        ocr: "Tipo de Némina Tipo de Boleta\n002 Régimen ¢.c. con BB.SS. - Obreros |Boleta de Pago|Semana 2019-01"
+  - n: 9
+    id: "nominas.imprimir-boletas-de-pago#9"
+    accion: "Haga clic derecho sobre un trabajador y elija **Ver Boleta de Pago** para ver su boleta de pago detallada."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s079, img-36ba8cfc4445-0000]
+    pagina: null
+    fotos:
+      - id: "30de35a5d0e1"
+        ruta_o_url: "imagenes/manual-de-nominas/36ba8cfc4445.png"
+        pagina: null
+        ocr: "Boletas de Pago\ncm aren woe Ein |\nProyecto 02001001 MULTIPROYECTO\nTipo de Némina 1002 Régimen C.C. con BB.SS. - Obreros lees\nTipo de Boleta [0001 |BOLETADEPAGO ... a4 cote 201600001 [Semana 2019-01 4)\nAY Fl clic derecho ————al\n22000082 [ALZAMORA GONZALES, CARLOS CAJA CHAMP, LUIS ALFONSO Emitido\n22000083 ARANIBAR CLEVAS| Ver Boleta de Pago PI,LUIS ALFONSO — Emitido\n22000084 ARELLANICASTROT ver hist…"
+  - n: 10
+    id: "nominas.imprimir-boletas-de-pago#10"
+    accion: "Si necesita el historial de impresiones y envíos del trabajador, con detalle de usuario y fecha, elija **ver historial**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s079, img-36ba8cfc4445-0000]
+    pagina: null
+  - n: 11
+    id: "nominas.imprimir-boletas-de-pago#11"
+    accion: "Con clic derecho, active la impresión de los trabajadores cuya boleta de pago enviará a impresión, o desactívela para quitar la selección y no enviarla."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s079]
+    pagina: null
+  - n: 12
+    id: "nominas.imprimir-boletas-de-pago#12"
+    accion: "Abra la vista preliminar y elija el modo: **Simple** (imprime solo una vez la boleta del trabajador), **Doble** (la imprime dos veces en una hoja) o **Múltiple** (imprime en una hoja, una vez, la boleta de todos los trabajadores que tienen seleccionado imprimir)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s079]
+    pagina: null
+    fotos:
+      - id: "81554d25c2c3"
+        ruta_o_url: "imagenes/manual-de-nominas/76001dc6e23b.png"
+        pagina: null
+        caption: "Llamada e: La vista preliminar muestra en pantalla el reporte de la boleta de pago, de acuerdo a siguiente detalle. Simple, imprime solo una vez la boleta de pago del trabajador. Doble, imprime dos veces en una hoja la boleta de pago del trabajador. Múltiple, imprime en una hoja, solo una vez la boleta de pago de todos los trabajadores que tienen seleccionado imprimir."
+        ocr: "SISTEHA 10S.AC.\nRUC 20552328141 BOLETA DE PAGO Semana 2019 - 01 Del 01/01/2019 Al 06/01/2019\nCodigo 22000032 Fecha de Ingreso 1190122016\nTrabajador ALZAMORA GONZALES, CARLOS\nCategoria Peon Regimen Pensionario AFP INTEGRA S.A.\nCargo Trabajos comunes CUSPP. QWER 1234500\nTipo documento DNI 42487658 Autoge nerado\nFecha Nacimiento 99124983 Situacién Especial\nNUMERO DE HIJOS: 1 | JORNAL DIARIO - CONST.…"
+verificacion:
+  - texto: "La vista preliminar muestra en pantalla el reporte de la boleta de pago."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s079]
+errores_frecuentes:
+  - sintoma: "No se pueden visualizar las boletas de pago."
+    solucion: "Antes de visualizar las boletas de pago, estas deben ser preparadas: adicione el tipo de boleta y agregue el periodo que desea visualizar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s078, web-https-documentacion-s10peru-com-manual-d-s079]
+relacionados: [nominas.calcular-la-nomina]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s078, manual: "Manual de Nóminas", seccion: "7.1.6 Informes 7.1.6.1 Preparación de Boleta", pagina: null}
+  - {id: img-33a9ea7c4418-0000, manual: "Manual de Nóminas", seccion: "33a9ea7c4418.png", pagina: null}
+  - {id: img-a945206422af-0000, manual: "Manual de Nóminas", seccion: "a945206422af.png", pagina: null}
+  - {id: img-679d83292a1c-0000, manual: "Manual de Nóminas", seccion: "679d83292a1c.png", pagina: null}
+  - {id: img-9990ccbcfc13-0000, manual: "Manual de Nóminas", seccion: "9990ccbcfc13.png", pagina: null}
+  - {id: img-febbd0aa46a1-0000, manual: "Manual de Nóminas", seccion: "febbd0aa46a1.png", pagina: null}
+  - {id: img-457bae0a0916-0000, manual: "Manual de Nóminas", seccion: "457bae0a0916.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s079, manual: "Manual de Nóminas", seccion: "7.1.6.2 Boletas de Pago", pagina: null}
+  - {id: img-178986d8f4a6-0000, manual: "Manual de Nóminas", seccion: "178986d8f4a6.png", pagina: null}
+  - {id: img-4af1fc704677-0000, manual: "Manual de Nóminas", seccion: "4af1fc704677.png", pagina: null}
+  - {id: img-36ba8cfc4445-0000, manual: "Manual de Nóminas", seccion: "36ba8cfc4445.png", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

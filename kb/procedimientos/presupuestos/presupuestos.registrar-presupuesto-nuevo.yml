@@ -1,0 +1,222 @@
+id: presupuestos.registrar-presupuesto-nuevo
+version: 1
+modulo: presupuestos
+titulo: "Registrar un presupuesto nuevo"
+objetivo: "Registrar los datos generales de un presupuesto (nombre, cliente, lugar, fecha, plazo, jornada y moneda) en el escenario de Datos Generales, punto de partida para armar su hoja."
+nivel: basico
+preguntas:
+  - "cómo creo un presupuesto nuevo en s10"
+  - "cómo registro un presupuesto"
+  - "quiero hacer un presupuesto nuevo de obra"
+  - "dónde se crea el presupuesto en el módulo de presupuestos"
+  - "como registro un presupuesto nuevo en s10 presupuestos"
+  - "pasos para registrar los datos generales del presupuesto"
+  - "como se crea un prespuesto nuevo"
+  - "cómo ingreso cliente, fecha y plazo de un presupuesto"
+  - "registrar presupuesto meta o venta nuevo"
+aliases:
+  - "registrar presupuesto"
+  - "crear presupuesto"
+  - "nuevo presupuesto"
+  - "dar de alta un presupuesto"
+entidades:
+  modulo: "Presupuestos"
+  pantallas: ["Datos Generales", "Catálogo de Presupuestos", "Datos adicionales", "Catálogo de Ubicación Geográfica"]
+  objetos: ["presupuesto", "subpresupuesto", "cliente", "tipo de obra", "moneda"]
+prerrequisitos:
+  - texto: "El usuario debe estar registrado: el usuario **sa** registra en **Utilitarios** a los usuarios que manejarán el módulo de presupuestos y les asigna atributos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s027]
+  - texto: "El cliente debe estar registrado en el catálogo de socios de negocio para poder elegirlo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s034]
+  - texto: "Si va a indicar el tipo de obra, este debe estar registrado previamente."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s033]
+pasos:
+  - n: 1
+    id: "presupuestos.registrar-presupuesto-nuevo#1"
+    accion: "Ingrese al escenario de **Datos Generales**."
+    donde: "Escenario Datos Generales"
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s032, "7c40a9548710-0018"]
+    pagina: null
+    fotos:
+      - id: "0b6b0189313c"
+        ruta_o_url: "imagenes/manual-de-presupuestos/177240cc20f8.png"
+        pagina: null
+        caption: "Acceso al escenario de Datos Generales"
+        ocr: "Clic derecho\n]\n\nCS = a} Escritorio'\n> MERE [mua\n\nDatos\n® VIVIENDA meta para planiticar\n\nGr es A Buscar\ncraks Luego, @ VIVENDA UNFAMILIAR Linea bas| # B"
+  - n: 2
+    id: "presupuestos.registrar-presupuesto-nuevo#2"
+    accion: "Haga clic derecho sobre el árbol de presupuestos y elija **Nuevo**."
+    resultado: "Se muestra el Catálogo de Presupuestos."
+    fuente: [img-5193ce83e1a4-0000, "7c40a9548710-0018", web-https-documentacion-s10peru-com-manual-d-s084]
+    pagina: null
+    fotos:
+      - id: "4db7dfe3917b"
+        ruta_o_url: "imagenes/manual-de-presupuestos/5193ce83e1a4.png"
+        pagina: null
+        ocr: "Clic derecho sobre el\nnombre del presupuesto\n[[Presumuestos =\n=| ge Escritprio\n@ \\YVIENDA UNIFAMILISR\nSS Vive\nSy a) Nuevo a\n#126) Obrad dk Buscar G2)\n+ Banddi z\nae 4 Copiar Presupuesta @®\n(+) By on: 1 2) Pegar Presupuesto @\n\" Duplicar ® —\nDefinir item...\nSH Duplicar en otro grupo @\n@ Alcance\nw Replicar en éste grupo @\n; Usuarios del presupuesto\n& Eliminar\nLogotipo ...\nModificar fecha/lugar no prec…"
+  - n: 3
+    id: "presupuestos.registrar-presupuesto-nuevo#3"
+    accion: "En el **Catálogo de Presupuestos**, ubique el grupo que corresponde al presupuesto (por ejemplo, **PUENTES** dentro de **OBRAS VIALES**). Si el grupo no existe, haga clic derecho, elija **Nuevo SubItem**, ingrese la **Descripción** y pulse **Adicionar**."
+    donde: "Catálogo de Presupuestos"
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s032, "7c40a9548710-0018", img-b6f611169d87-0000]
+    pagina: null
+    fotos:
+      - id: "9108f30eb4be"
+        ruta_o_url: "imagenes/manual-de-presupuestos/cd3b802ed826.png"
+        pagina: null
+        caption: "Para registrar PUENTES, dentro de OBRAS VIALES."
+        ocr: "im Catélogo de Presupuesios : 04 OBRAS VIALES\nOpciones _?\nDg Clic derecho |, gi Ye SY co gf Z| Registre el presupuesto en el grupo que\ncorresponde, para agruparlo posteriormente.\n> @HABILTACION Uffr ccripcion\ni) @ EDIFIQACIONES\nCs BRAS VRIES | fA Nuevo subitem\na] TREN ELECTA |"
+  - n: 4
+    id: "presupuestos.registrar-presupuesto-nuevo#4"
+    accion: "Con el cursor en el último nivel del grupo (la «hojita»), haga clic derecho y elija **Nuevo SubItem** para abrir la ventana **Presupuesto**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s032, "7c40a9548710-0019"]
+    pagina: null
+    fotos:
+      - id: "93b1072a3545"
+        ruta_o_url: "imagenes/manual-de-presupuestos/f31bb1aec0c5.png"
+        pagina: null
+        caption: "El último nivel de registro en el árbol es la “hojita”. Para registrar el nombre del presupuesto:"
+        ocr: "ke]\n@ Catdlogo de Presupuestos : 0402 PUENTES = |2 jas\nOpciones _?\nPa cSese s/2 ER Blool(UIRS|O '& me\nQHABUITACION Uipescrpin ec\n‘SB EDIFICACIONES.\n> OBR4E VIALES\nOU then evects\nal IES — 4/5 Nuevo Sunitem\nf#) @ OBRAS DE IRRIG|\n. @ ORAS SANEAN fe Madifieor |"
+  - n: 5
+    id: "presupuestos.registrar-presupuesto-nuevo#5"
+    accion: "En **Descripción**, escriba el nombre del presupuesto."
+    donde: "Ventana Presupuesto"
+    fuente: [img-2f43b76f7b04-0000, "7c40a9548710-0019"]
+    pagina: null
+    fotos:
+      - id: "3e3578859a6f"
+        ruta_o_url: "imagenes/manual-de-presupuestos/2f43b76f7b04.png"
+        pagina: null
+        ocr: "| Después de efectuar la orden de una llamada, retome a esta 1\n| ventana \"PRESUPUESTO\" para continuar con la orden de la 4\n| siguiente llamada, hasta concluir con el registro de todos los | =\n' datos 1 Datos adicionales re }\nDo ell\nAlterno\nDescripcién | PUENTE EN CARRETERA\nEste es el nombre del presupuesta\nCliente [09070080 |MINISTERIO DE TRANSPORTES Y COMUNICACIONES EK 2 '\n,, {081301 URUBAMBA, =…"
+  - n: 6
+    id: "presupuestos.registrar-presupuesto-nuevo#6"
+    accion: "En **Cliente**, elija al cliente del catálogo de socios de negocio; si no lo encuentra, regístrelo y luego elíjalo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s034, img-2f43b76f7b04-0000]
+    pagina: null
+    fotos:
+      - id: "085336e4c8ac"
+        ruta_o_url: "imagenes/manual-de-presupuestos/3712419ee8a8.png"
+        pagina: null
+        caption: "Llamada 2: Del Catálogo de Socio de negocio elija al cliente; en el caso de no encontrarlo efectúe el registro, para luego elegirlo, en este caso al Ministerio de Transportes y Comunicaciones."
+        ocr: "A i 7 a xX |\n8 Catalogo de Socios de Negocios por Tipo : 04 Cliente >|) ha Se\nOpciones 2?\nDsxXBue &%e YN RS ? AGO\nEy Todos los Registros fH] | —= “NIVEL : 2/2\n| Empresa rd GEFs —\n' Depcripcion\nE Subconttiste |! [czrocoot SS\nB oneo cotonto7 |b Tae Fa\n| Cliente 02100121 |Cons)—— =\n| Proveedor \"|_02100122 |Banc| i Modificar Ge)\n| Bees __|_o2100123 | Banc] X Eliminar F4"
+  - n: 7
+    id: "presupuestos.registrar-presupuesto-nuevo#7"
+    accion: "Use el botón de **Ubicación Geográfica** para abrir el catálogo y elija el distrito donde se ejecutará la obra."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s034]
+    pagina: null
+    fotos:
+      - id: "653c4a1a57b9"
+        ruta_o_url: "imagenes/manual-de-presupuestos/c3b61b4c8452.png"
+        pagina: null
+        caption: "Llamada 3: Al hacer clic en el botón marcado con la llamada 3: de la ventana “Presupuesto”, el sistema muestra el Catálogo de Ubicación Geográfica, para elegir el distrito donde se ejecutará la obra, en este caso Urubamba."
+        ocr: "4 6 fey x\n8 Catélogo de Ubicacién -08 CUS (| mbo\nUbique el cursor en el\nDepartamento del Cusco\npee ee eh VRS Hoo tH RSD ABA\nHe @amazonas [i —— = = =\nf- @ ANCASH E |_Sétigo_|Diarto j\nFE) BTEC URUBAMBA\nee @ APURIMAC\n@ AREQUIPA E |\n@ AYACUCHO Efectie la bisqueda de Hl\n| CAIAMARCA Urubamba y elija can doble clic l\n@ CALLAO = |\nS CUSCO: |"
+  - n: 8
+    id: "presupuestos.registrar-presupuesto-nuevo#8"
+    accion: "Elija la **fecha** del presupuesto: los precios de los recursos se consideran a esa fecha."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s034]
+    pagina: null
+  - n: 9
+    id: "presupuestos.registrar-presupuesto-nuevo#9"
+    accion: "Registre el **plazo** de ejecución en días calendario."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s034]
+    pagina: null
+  - n: 10
+    id: "presupuestos.registrar-presupuesto-nuevo#10"
+    accion: "Registre la **Jornada Diaria**: la cantidad de horas de trabajo en un día laborable, que influye en el cálculo del rendimiento."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s034, img-2f43b76f7b04-0000]
+    pagina: null
+  - n: 11
+    id: "presupuestos.registrar-presupuesto-nuevo#11"
+    accion: "Elija del catálogo el tipo de **moneda** del presupuesto. Marque **Doble moneda** solo si ingresará precios en dos monedas a la vez."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s035, img-2f43b76f7b04-0000]
+    pagina: null
+  - n: 12
+    id: "presupuestos.registrar-presupuesto-nuevo#12"
+    accion: "Pulse **Datos adicionales** para configurar este presupuesto."
+    donde: "Ventana Presupuesto"
+    resultado: "Se abre la ventana Datos adicionales; su configuración se aplica al presupuesto que se registra."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s032, img-22937984a661-0000]
+    pagina: null
+    fotos:
+      - id: "81877b2d6904"
+        ruta_o_url: "imagenes/manual-de-presupuestos/22937984a661.png"
+        pagina: null
+        ocr: "= So\nDiatea Adicts: — [2 [emt\nG4} Formula Polinomica ?\nG2» Andlisis de precios unitarios tipo 2 (Rendimientos altos)\nGT Imprimir Presupuesto con precios unitarios incluide costos indirectos\nGro procesamiento Tipo 3 ¥\nG@-5yT” Pie de los andlisis de precios unitarios diferente al Pie de Presupuesto\nNivel de agrupamiento PLANL 4 =} No disponible es estas versiones\nFactor de cambio\nMoneda lo\nPrincipal…"
+    sub:
+      - n: 1
+        id: "presupuestos.registrar-presupuesto-nuevo#12.1"
+        accion: "En la pestaña **configuración**, marque **Fórmula polinómica** si el presupuesto la necesitará."
+        resultado: "Con la opción marcada, después de procesar, el subpresupuesto se pinta de amarillo mientras le falte la fórmula polinómica; sin marcar, se pinta de rojo indicando que está concluido."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s032, img-22937984a661-0000]
+        pagina: null
+      - n: 2
+        id: "presupuestos.registrar-presupuesto-nuevo#12.2"
+        accion: "Marque **Análisis de precios unitarios tipo 2** para movimientos de tierras en carreteras (rendimientos altos, más de 3,500 m3); déjelo sin marcar para edificaciones y obras de arte."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s032, "7c40a9548710-0019"]
+        pagina: null
+      - n: 3
+        id: "presupuestos.registrar-presupuesto-nuevo#12.3"
+        accion: "Elija el **Tipo de Obra** con su botón e ingrese la **cantidad** (m2 vendibles en edificación, m en puente, km en carretera); luego grabe y cierre el **CATALOGO DE TIPOS DE OBRA**."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s033, web-https-documentacion-s10peru-com-manual-d-s034]
+        pagina: null
+        fotos:
+          - id: "1f6eb874dcf1"
+            ruta_o_url: "imagenes/manual-de-presupuestos/1e680eb9cc44.png"
+            pagina: null
+            caption: "Llamada a-7-1: Use el botón para elegir el tipo de obra."
+            ocr: "> le ae]\n2) Catdlogo de Tipos de Obra :002 Puentes de concreto armado wt leelee es\n7 halen Sta\nOpciones ?\nDs xXBic A¥Be So NARA ABA\nE)€iy Todos los Registros = |Z Elija este Tipo con doble clic 4 NIVEL: 212\nalieiemedidiied P-1Puertes ce concreto armado con luces mayores a 12 m, con soporte de [ay"
+      - n: 4
+        id: "presupuestos.registrar-presupuesto-nuevo#12.4"
+        accion: "Configure la cantidad de **decimales** que se usarán en la hoja del presupuesto y en los análisis de precios unitarios."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s034]
+        pagina: null
+      - n: 5
+        id: "presupuestos.registrar-presupuesto-nuevo#12.5"
+        accion: "Pulse **Aceptar** para grabar y cerrar la ventana."
+        fuente: ["7c40a9548710-0020"]
+        pagina: 13
+  - n: 13
+    id: "presupuestos.registrar-presupuesto-nuevo#13"
+    accion: "Cuando concluya con el registro de todos los datos, use el botón para grabar y cerrar la ventana **PRESUPUESTO**, o haga doble clic sobre el nombre del presupuesto para trasladarlo al árbol del escenario de **Datos generales**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s035]
+    pagina: null
+  - n: 14
+    id: "presupuestos.registrar-presupuesto-nuevo#14"
+    accion: "Edite el subpresupuesto que el sistema crea automáticamente con el mismo nombre del presupuesto: sobrescríbalo (por ejemplo, **Estructuras**) y en la fila siguiente registre otro (por ejemplo, **Gastos generales**)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s036, img-60fce1013617-0000]
+    pagina: null
+    fotos:
+      - id: "57ae3958a5ac"
+        ruta_o_url: "imagenes/manual-de-presupuestos/60fce1013617.png"
+        pagina: null
+        ocr: "Elija el presupuesto\nSesame Datos Creanesalless\nSD VIVENDAUNIFAMILIAR [ccna\n‘ VIVENDAMmeta para planific | Cédigo [0202004 ‘Sin Logotipo\nSD VIVENDAQUNIFAMILIAR Li\nSSD PUENTEEN CARRETERA |] Alterno\nBY Descripcion JpyeNTE EN CARRETERA\na Archivo Cliente —_fogor0030 _[MINSTERIO DE TRANSPORTES ¥\n4% Papelera de Ubicacion\nCosndtea (081201 [URUBAMBA\nFecha 2303/2010 =] Historico\nJornada Diaria 8 horas Sema…"
+verificacion:
+  - texto: "El presupuesto aparece en el árbol del escenario de Datos generales."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s035]
+  - texto: "Debajo del presupuesto figura el subpresupuesto que el sistema crea automáticamente con el mismo nombre, ya editado y cambiado por usted."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s036]
+errores_frecuentes:
+  - sintoma: "El cliente no aparece para elegirlo."
+    solucion: "Para que el nombre del cliente sea elegido, necesariamente debe estar registrado en el catálogo: regístrelo y luego elíjalo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s034]
+  - sintoma: "El presupuesto meta no pasa bien al MS Project."
+    solucion: "En el presupuesto meta use la misma jornada diaria en todas las partidas y una sola moneda: el MS Project no acepta jornadas diferentes y acepta una sola moneda."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s034, web-https-documentacion-s10peru-com-manual-d-s035]
+relacionados: [presupuestos.registrar-titulos-y-partidas, presupuestos.ingresar-metrados, presupuestos.procesar-presupuesto, presupuestos.registrar-usuarios]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s027, manual: "Manual de Presupuestos", seccion: "3 Uso del módulo de presupuestos", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s034, manual: "Manual de Presupuestos", seccion: "3.3 Registro del presupuesto (3)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s033, manual: "Manual de Presupuestos", seccion: "3.3 Registro del presupuesto (2)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s032, manual: "Manual de Presupuestos", seccion: "3.3 Registro del presupuesto (1)", pagina: null}
+  - {id: "7c40a9548710-0018", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 11}
+  - {id: img-5193ce83e1a4-0000, manual: "Manual de Presupuestos", seccion: "5193ce83e1a4.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s084, manual: "Manual de Presupuestos", seccion: "5.1.1 Datos generales (1)", pagina: null}
+  - {id: img-b6f611169d87-0000, manual: "Manual de Presupuestos", seccion: "b6f611169d87.png", pagina: null}
+  - {id: "7c40a9548710-0019", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 12}
+  - {id: img-2f43b76f7b04-0000, manual: "Manual de Presupuestos", seccion: "2f43b76f7b04.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s035, manual: "Manual de Presupuestos", seccion: "3.3 Registro del presupuesto (4)", pagina: null}
+  - {id: img-22937984a661-0000, manual: "Manual de Presupuestos", seccion: "22937984a661.png", pagina: null}
+  - {id: "7c40a9548710-0020", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 13}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s036, manual: "Manual de Presupuestos", seccion: "3.4 Registro del subpresupuesto", pagina: null}
+  - {id: img-60fce1013617-0000, manual: "Manual de Presupuestos", seccion: "60fce1013617.png", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

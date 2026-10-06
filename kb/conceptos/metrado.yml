@@ -1,0 +1,14 @@
+id: metrado
+termino: "Metrado"
+sinonimos: ["metrados"]
+definicion: "Dato que se ingresa para cada partida en la celda de metrados de la hoja del presupuesto. El módulo de Presupuestos elabora presupuestos de obra a partir de los metrados, y el presupuesto entrega al proyecto las partidas, metrados, recursos, cantidades y precios."
+en_s10: "Se registran en la hoja del presupuesto; también pueden pegarse desde Excel con la opción Pegar de otras aplicaciones o vincular la celda de metrado de la partida con una celda de Excel. En el escenario del Cronograma por periodos el ingreso de metrados (avances) es manual y, con los metrados registrados, el sistema calcula la cantidad de recursos de acuerdo con los análisis de precios unitarios."
+procedimientos_relacionados: [presupuestos.ingresar-metrados, gerencia-proyectos.planificar-en-cronograma-por-periodos]
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s001  # Manual de Presupuestos › 1.1 Introducción
+  - web-https-documentacion-s10peru-com-manual-d-s002  # Manual de Presupuestos › 1.3 El presupuesto
+  - web-https-documentacion-s10peru-com-manual-d-s045  # Manual de Presupuestos › 3.5.2.5 Ingreso de metrados en la hoja del presupuesto
+  - web-https-documentacion-s10peru-com-manual-d-s099  # Manual de Presupuestos › 5.1.1.1 Hoja del presupuesto (14)
+  - web-https-documentacion-s10peru-com-manual-d-s172  # Manual de Presupuestos › 6.10.1 Registro de Avances
+notas: "Las fuentes no traen una definición formal de metrado; se describe solo por su uso en S10."
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

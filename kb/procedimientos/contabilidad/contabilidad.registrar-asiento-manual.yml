@@ -1,0 +1,78 @@
+id: contabilidad.registrar-asiento-manual
+version: 1
+modulo: contabilidad
+titulo: "Registrar un asiento manual"
+objetivo: "Registrar, con el plan de cuentas importado al S10, reclasificaciones, asientos de depreciación, correcciones y otras operaciones que se verán reflejadas en el Libro Diario."
+nivel: basico
+preguntas:
+  - "cómo registro un asiento manual en contabilidad"
+  - "como hago un asiento de reclasificacion en s10"
+  - "como registro el asiento de depreciacion"
+  - "como hago una correccion contable con un asiento manual"
+  - "donde se registran los asientos manuales"
+  - "como agrego un asiento contable a mano"
+  - "como hago un asiento que salga en el libro diario"
+  - "asiento manual paso a paso s10 contabilidad"
+  - "como registro un asiento manul"
+aliases:
+  - "asiento manual"
+  - "registrar asiento"
+  - "asiento de reclasificación"
+  - "asiento de depreciación"
+  - "nuevo asiento contable"
+entidades:
+  modulo: "Contabilidad"
+  pantallas: ["Asientos Manuales", "Libro Diario"]
+  objetos: ["asiento contable", "plan de cuentas", "moneda", "reclasificaciones"]
+prerrequisitos:
+  - texto: "El plan de cuentas debe estar importado al S10."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s054]
+pasos:
+  - n: 1
+    id: "contabilidad.registrar-asiento-manual#1"
+    accion: "Ingrese al escenario **Asientos Manuales**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s054, img-506cfa7a4061-0000]
+    pagina: null
+    fotos:
+      - id: "1846d508449d"
+        ruta_o_url: "imagenes/manual-de-contabilidad/506cfa7a4061.png"
+        pagina: null
+        ocr: "‘$10 Contabilidad: 22000617 - 510 DEMO - Principal FIEIES\n© Archivo Ver Catélogos Herramientas 2\nRaw\nEid t :\nAsientos Manuales\n- | DEMSS 8 va 2d Clic Derecho, Opcion Adicionar\nY z rrastre hacia aqui el encab| H Reaistro del Asiento Manual Lod\nPetodsfontabes |] of0 canpolafo Emeresa 22000617 s10 DEMO en |\nYr Effpresa: |N® Correlative: bh a da [Fecha Fecha Aplicacién Contable | Tipo ¢\npy” Sucursal 2…"
+  - n: 2
+    id: "contabilidad.registrar-asiento-manual#2"
+    accion: "Haga clic derecho y elija la opción **Adicionar**."
+    fuente: [img-506cfa7a4061-0000]
+    pagina: null
+  - n: 3
+    id: "contabilidad.registrar-asiento-manual#3"
+    accion: "En la **Cabecera de informacion**, registre la **Fecha** y la fecha de aplicación contable."
+    fuente: [img-506cfa7a4061-0000]
+    pagina: null
+  - n: 4
+    id: "contabilidad.registrar-asiento-manual#4"
+    accion: "Elija la **Moneda** del asiento."
+    fuente: [img-506cfa7a4061-0000]
+    pagina: null
+  - n: 5
+    id: "contabilidad.registrar-asiento-manual#5"
+    accion: "En el detalle, use el plan de cuentas para elaborar el asiento: en cada línea registre la **Cuenta** y su importe en **Debe** o **Haber**."
+    fuente: [img-506cfa7a4061-0000, web-https-documentacion-s10peru-com-manual-d-s054]
+    pagina: null
+  - n: 6
+    id: "contabilidad.registrar-asiento-manual#6"
+    accion: "Pulse **Adicionar** para registrar el asiento."
+    resultado: "El asiento contable se visualizará directamente en el Libro Diario."
+    fuente: [img-506cfa7a4061-0000, web-https-documentacion-s10peru-com-manual-d-s054]
+    pagina: null
+verificacion:
+  - texto: "La operación se ve reflejada en el Libro Diario."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s054]
+  - texto: "En el escenario Asientos Detallados puede visualizar de forma detallada los asientos registrados por las diferentes operaciones."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s055]
+errores_frecuentes: []
+relacionados: [contabilidad.crear-plan-de-cuentas, contabilidad.cierre-permanente-del-periodo]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s054, manual: "Manual de Contabilidad", seccion: "5.3 Asientos Manuales", pagina: null}
+  - {id: img-506cfa7a4061-0000, manual: "Manual de Contabilidad", seccion: "506cfa7a4061.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s055, manual: "Manual de Contabilidad", seccion: "5.4 Asientos Detallados", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

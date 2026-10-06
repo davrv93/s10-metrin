@@ -1,0 +1,199 @@
+id: contabilidad.configurar-informe-contable
+version: 1
+modulo: contabilidad
+titulo: "Configurar un informe contable (estado financiero)"
+objetivo: "Elaborar en el escenario Informes Contables un estado financiero, por ejemplo el Estado de Situación Financiera: crear el informe, definir su estructura importándola desde Excel y asignar las cuentas del plan contable a cada concepto."
+nivel: avanzado
+preguntas:
+  - "cómo configuro el estado de situación financiera en s10"
+  - "como creo un informe contable nuevo"
+  - "como armo la estructura del balance en contabilidad"
+  - "como importo el formato del estado financiero desde excel"
+  - "como asigno cuentas a los rubros del estado financiero"
+  - "como hago un informe de ratios para la gerencia"
+  - "donde se configuran los estados financieros"
+  - "como agrego cuentas al informe contable a ultimo nivel"
+  - "como creo el estado de situasion financiera"
+aliases:
+  - "informes contables"
+  - "configurar estado financiero"
+  - "crear informe contable"
+  - "estructura del estado financiero"
+entidades:
+  modulo: "Contabilidad"
+  pantallas: ["Informes Contables"]
+  objetos: ["Estado de Situación Financiera", "plan contable", "estructura del informe", "Excel"]
+prerrequisitos:
+  - texto: "El plan de cuentas debe estar establecido en el esquema contable: las cuentas de cada concepto del informe se toman de él."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s051]
+pasos:
+  - n: 1
+    id: "contabilidad.configurar-informe-contable#1"
+    accion: "Ingrese al grupo **Parámetros**, escenario **Informes Contables**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s051]
+    pagina: null
+  - n: 2
+    id: "contabilidad.configurar-informe-contable#2"
+    accion: "Haga clic derecho para crear un nuevo informe."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s051]
+    pagina: null
+    fotos:
+      - id: "8829a00d1239"
+        ruta_o_url: "imagenes/manual-de-contabilidad/8fe19fc6bb02.png"
+        pagina: null
+        caption: "En esta oportunidad vamos a elaborar el Estado de Situación Financiera, para ello debemos ingresar al módulo de contabilidad, grupo Parámetros, escenario Informes Contables. Luego hacer clic derecho para crear un nuevo informe."
+        ocr: "fee\na Tintionmes Contables\n. *F BS\" ee\n\n& c6digo Descripci [Abreviatura Activ [Fecha creacién [Creado por\nEsquema Contable\n\na Clic derecho\n\nsrain de rm\n\nEliminar\n=) iil\n‘Asignacén de Meleam!\n\n‘Cuentas:\n\n= Pali pani Bd\n= nl oo i.\n\nnn nn Plan Contable [002 [PLANCONTABLEVTRA Sw\n—— [Sv@haGS¢ege i —\nPB SP eae\nPer prem\nee\n|_|\n— jm\nay ne |\nvi¢"
+  - n: 3
+    id: "contabilidad.configurar-informe-contable#3"
+    accion: "En la ventana que aparece, llene los datos del informe: el nombre del estado financiero, el tipo y la forma en que se visualizará la información."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s051, img-6ce67dee8430-0000]
+    pagina: null
+    fotos:
+      - id: "a0a7603ff874"
+        ruta_o_url: "imagenes/manual-de-contabilidad/6ce67dee8430.png"
+        pagina: null
+        ocr: "x. x\nCodigo [000001 M Active\nDescrpoiin [ESTADO STUACION Ingresamos el nombre del\nEstado Financiero\n; 7 Atevaiue Tipo \"Empresa\" debido a que\nLa informacion se visualizara en Forma Vertical ¥ Teo [enoresa | vamos a generar la informacion por\nforma vertical empresa\n‘SUNAT 001 3.1 LIBRO DE INVENTARIOS Y BALANCES - BALANCE GENERAL ¥\nVista de impresién en formato\nSUNAT\n—s"
+    sub:
+      - n: 1
+        id: "contabilidad.configurar-informe-contable#3.1"
+        accion: "Ingrese el nombre del estado financiero (por ejemplo, ESTADO SITUACION FINANCIERA)."
+        fuente: [img-6ce67dee8430-0000]
+        pagina: null
+      - n: 2
+        id: "contabilidad.configurar-informe-contable#3.2"
+        accion: "Elija el **Tipo** «Empresa» para generar la información por empresa."
+        fuente: [img-6ce67dee8430-0000]
+        pagina: null
+      - n: 3
+        id: "contabilidad.configurar-informe-contable#3.3"
+        accion: "Indique si la información se visualizará en forma vertical."
+        fuente: [img-6ce67dee8430-0000]
+        pagina: null
+      - n: 4
+        id: "contabilidad.configurar-informe-contable#3.4"
+        accion: "Si lo necesita, elija la vista de impresión en formato SUNAT (por ejemplo, 3.1 LIBRO DE INVENTARIOS Y BALANCES - BALANCE GENERAL)."
+        fuente: [img-6ce67dee8430-0000]
+        pagina: null
+  - n: 4
+    id: "contabilidad.configurar-informe-contable#4"
+    accion: "Haga clic en **Adicionar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s051]
+    pagina: null
+  - n: 5
+    id: "contabilidad.configurar-informe-contable#5"
+    accion: "Defina la estructura que tendrá el informe, es decir, los niveles con los que contará."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s051]
+    pagina: null
+    fotos:
+      - id: "164925535924"
+        ruta_o_url: "imagenes/manual-de-contabilidad/d4115a302613.png"
+        pagina: null
+        caption: "Damos clic en Adicionar y el paso siguiente será definir la estructura que tendrá el informe, es decir, los niveles con los que contará."
+        ocr: "SSS...\nane [Informes Contables\nAV ela GE &éda\n> Codigo [Descripcion [Abreviatura Active | Fecha creacién [Creado por\n(000001 ESTADO SITUACION FINANCERA 02072014 11:48:37 am. Tealla\nPlan Contable 3 Nuevo: F2\nzs @, Nuevo:\nEsquema Contable i Modificar FB\n¥ Duplicar FS\niB @ Nota FIO\nAsignacién de GR Eliminar bloque Fa\n& ——e\nsecs 7 | Cwm Menace | Caine [TT pan contable ro. | a\nmee Be See — — na — ae ee…"
+  - n: 6
+    id: "contabilidad.configurar-informe-contable#6"
+    accion: "Ingrese los datos de los niveles: descripción, color y **Longitud** (la cantidad de dígitos que aumentará por cada nivel)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s051, img-6c59f0316080-0000]
+    pagina: null
+    fotos:
+      - id: "608b64656b8b"
+        ruta_o_url: "imagenes/manual-de-contabilidad/6c59f0316080.png"
+        pagina: null
+        ocr: "Rubro Contable\nRubro Contabie |\n\n[T# [escrito [coor] Se puede cambiar la\nSe fives la deseripelon L> | ls 2 color combinacien de coleres\nde los niveles ? . 2 para evitar la confusion\n\n3. | RESULTADOS 2). Color en los niveles\n\n__|\n\n_—|\n\nr_| La Longitud indica la\n\n— cantidad de digitos que\n\n— aumentara por cada nivel\nVisualizacion a ultimo [XOX]\nnivel\n\nLongitud acumulada maxima: 60 commer"
+  - n: 7
+    id: "contabilidad.configurar-informe-contable#7"
+    accion: "Configure en Excel el formato del estado de situación financiera que va a importar; luego guarde y cierre el documento."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s051]
+    pagina: null
+    fotos:
+      - id: "907b83f16757"
+        ruta_o_url: "imagenes/manual-de-contabilidad/1fb204f18ad4.png"
+        pagina: null
+        caption: "Para este manual lo que haremos es importar un formato de estado de situación financiera desde el Excel, para ello debemos configurar el Excel."
+        ocr: "ae a Rubro Contable_ccruz [Modo de compatibilidad] > Microsoft Excel] -“T 5419 1a informacion se deb\nBEE iio Insertar—Disefio de pagina — Formulas Datos —Revisar_ Vista ingresar en formato de texto\nzB & Cortar ‘iat 8 Aa Sle 9 Fautartento General .\n2 copiar + eee -\nP00 Sy copartomato | NK 8 =| (+ | QA HEB | HAR compinarycenr | $ - % wo 88\nPortapapeles Fuente q Alineacién |__Nimero Zl\nx 8 c\n1 Cédigo…"
+  - n: 8
+    id: "contabilidad.configurar-informe-contable#8"
+    accion: "Importe el documento al S10 con la opción de importación de Excel."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s051]
+    pagina: null
+    fotos:
+      - id: "9865304c53c0"
+        ruta_o_url: "imagenes/manual-de-contabilidad/6b661781c5b7.png"
+        pagina: null
+        caption: "Una vez guardado y cerrado el documento, se importa al s10"
+        ocr: "| Archivo Ver Cetélogos Herramientes 2\na\n— Informes Contables\n~|Sr eh GR ada\n& [cédgo / | Deserincion [Abrevitura [Active | Fecha creacién redo por\n[o00001 ESTADO STTUACION FRANCERA ST eae ee\n5 Nuevo: CUENTA RR\n7) %, Nuevo: DETALLE\nsaci de 1 Modificar B\n‘Cotegorng 4 Dupliar fs\nB @ wots Fo\n‘Adgnacién de ER Eliminar blogue 4\nos “i Dein esteuctura\n9 —\nInformes Contables Gnmam tingid\n[Se a ese Corie <…"
+  - n: 9
+    id: "contabilidad.configurar-informe-contable#9"
+    accion: "Ubique el archivo Excel del formato contable."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s051]
+    pagina: null
+    fotos:
+      - id: "d682a2965bc3"
+        ruta_o_url: "imagenes/manual-de-contabilidad/3f259abff9fa.png"
+        pagina: null
+        caption: "Ubicamos el archivo"
+        ocr: "+ 7 T MB brrtons ~ & ar an Encré r)\nOrgenizar = Nueva carpet . »\nNoemie Fecha de modifica. T*\nWe Feeceites - de mest\nUb Descargas B) Rubee Contable, Cerra ost\nBe luntono 9S) BEVA_Extructute de archives Bul ACTUALIZ. . 40\nUk Stier recientes Zi) prenupverto “ ‘\nCarmen ereties 5 We?\nGa Bibicteces Be Ceystata A201 OR a.\n2 Documentos ib Nueva carpets 1anay2014 62 F\nel imagenes v <f »\nNombre Rubee Conta…"
+  - n: 10
+    id: "contabilidad.configurar-informe-contable#10"
+    accion: "Relacione las columnas que maneja el S10 con las columnas del Excel y defina las filas que cuentan con la información."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s051]
+    pagina: null
+    fotos:
+      - id: "8bd7fd36b659"
+        ruta_o_url: "imagenes/manual-de-contabilidad/7309da2a306c.png"
+        pagina: null
+        caption: "El siguiente paso será relacionar las columnas que maneja el s10 con las columnas que se maneja en el Excel, también definir las filas que cuentan con la información."
+        ocr: "“ Hpuanaciton eb aust - ole]\nArchers [CwaenncersrGesien Rare Covtate_ a\n| i‘ Notas\noS a aad\nJer chic en ef campo det 510 Lenn\nSerco detewnos Lay\nfeasqoe comtonen 7 FissReif—2 Al] 62] Cohmna:[ © [7 Actekzalon utes extanion ‘MMe che on la cohwmaa del Excel\nta atormacsin i\nod i.\n1 Cédige D c =\nio ACTOS =cPC1S\n2/9101 Acivon Comecte SCSCH CT CBSE IDC NCR CIRCE\n4010101 recive y Cquivanentes at Etectwo\n‘…"
+  - n: 11
+    id: "contabilidad.configurar-informe-contable#11"
+    accion: "Ejecute el proceso de importación."
+    resultado: "Se muestra la vista final de configuración de la estructura del informe."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s051]
+    pagina: null
+    fotos:
+      - id: "a746607a0281"
+        ruta_o_url: "imagenes/manual-de-contabilidad/9c3afce9705b.png"
+        pagina: null
+        caption: "Proceso de Importación."
+        ocr: "x\nou\nTransfiriendo datos de la fila 2Al 60\nvine"
+      - id: "35bed19da891"
+        ruta_o_url: "imagenes/manual-de-contabilidad/154d0d6fc66e.png"
+        pagina: null
+        caption: "Vista Final de Configuración de la Estructura del Informe:"
+        ocr: "| Archivo Ver Catélogos Herramientas 2\nkee\na [fnformes Contables\nSv Ailsa GF ada\n=| cédigo / | Deseripeiin Abreviatura Active [Fecha creacién [Creado por\n(000001 ESTADO SITUAGION FINANCERA TM 05/02/2014 12:13:23 pm ‘calla\nPlan Contable\nEsquema Contable\n‘Asignacién de\nCategorias,\n‘Asignadién de\nCuentas VNTYTYTYTYTYTYTYrYrmmrSTSS—S—=—Cté—zdC——\n~ |[Césigo J Deseripeién [Formule [ranconabe[S~S~S YC\nen…"
+  - n: 12
+    id: "contabilidad.configurar-informe-contable#12"
+    accion: "Defina el plan contable y las cuentas por cada concepto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s051]
+    pagina: null
+    fotos:
+      - id: "b9461c90e276"
+        ruta_o_url: "imagenes/manual-de-contabilidad/1718c2ed0503.png"
+        pagina: null
+        caption: "Ahora debemos definir el plan contable y las cuentas por cada concepto."
+        ocr: "x\n‘8 Informes Contables\nBYva@a8 BF gaa\n7 cédigo /_|Deseripcién Abreviatura JActwo [Fecha creacién [creado por\n(000001 ESTADO SITUACION FINANCERA (05/02/2014 12:13:23 pm ‘cola\nPlan Contable\nEsquema Contable\nAgain de Las fas con férmulas no se seleccionan debido a\n‘que solo se encargan de generar el calculo\nB + tno itn cane\ncon el cual se trabajara\n‘Asignacién de\n‘Cuentas | eg\nvy > |[eédign | Deseri…"
+    sub:
+      - n: 1
+        id: "contabilidad.configurar-informe-contable#12.1"
+        accion: "Use **Adicionar a último nivel** para adicionar una cuenta del plan contable que se encuentre en la última divisionaria (por ejemplo, la cuenta 104111)."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s051]
+        pagina: null
+      - n: 2
+        id: "contabilidad.configurar-informe-contable#12.2"
+        accion: "Use **Adicionar a cualquier nivel** para adicionar una cuenta del plan contable de cualquier nivel de divisionaria (por ejemplo, las cuentas 10, 104 o 1041)."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s051]
+        pagina: null
+verificacion:
+  - texto: "La vista final muestra los ítems de la estructura del informe relacionados al plan de cuentas establecido en el esquema contable."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s051]
+errores_frecuentes:
+  - sintoma: "No se puede seleccionar una fila con fórmula para asignarle cuentas."
+    solucion: "Las filas con fórmulas no se seleccionan, debido a que solo se encargan de generar el cálculo."
+    fuente: [img-1718c2ed0503-0000]
+relacionados: [contabilidad.emitir-estados-financieros, contabilidad.crear-plan-de-cuentas]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s051, manual: "Manual de Contabilidad", seccion: "4.5 Informes Contables", pagina: null}
+  - {id: img-6ce67dee8430-0000, manual: "Manual de Contabilidad", seccion: "6ce67dee8430.png", pagina: null}
+  - {id: img-6c59f0316080-0000, manual: "Manual de Contabilidad", seccion: "6c59f0316080.png", pagina: null}
+  - {id: img-1718c2ed0503-0000, manual: "Manual de Contabilidad", seccion: "1718c2ed0503.png", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

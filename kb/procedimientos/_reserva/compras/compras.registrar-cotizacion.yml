@@ -1,0 +1,132 @@
+id: compras.registrar-cotizacion
+version: 1
+modulo: compras
+titulo: "Registrar una cotización y enviarla a los proveedores"
+objetivo: "Armar en el escenario de Cotizaciones una cotización con los recursos de los pedidos de compra que no están en una orden de compra, asignarle proveedores y enviársela."
+nivel: intermedio
+preguntas:
+  - "cómo hago una cotización en s10 compras"
+  - "cómo armo una cotización con los pedidos de compra"
+  - "cómo le asigno proveedores a una cotización"
+  - "cómo envío la cotización al proveedor en excel o pdf"
+  - "como cotizo con varios proveedores"
+  - "como registro una cotisacion para orden de compra"
+  - "dónde pongo las especificaciones que debe cumplir el proveedor"
+  - "pasos para pedir cotizaciones a ferreterías"
+aliases:
+  - "registrar cotización"
+  - "armar cotización"
+  - "cotizar con proveedores"
+  - "enviar cotización"
+  - "solicitud de cotización"
+entidades:
+  modulo: "Compras"
+  pantallas: ["Cotizaciones", "Proveedores", "Catálogo de Socio de Negocio"]
+  objetos: ["cotización", "proveedor", "recurso", "pedidos de compra", "especificaciones"]
+prerrequisitos:
+  - texto: "Solo los recursos que forman parte de los pedidos de compra y que no están en una orden de compra pasan a formar parte de una cotización."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s043]
+pasos:
+  - n: 1
+    id: "compras.registrar-cotizacion#1"
+    accion: "Elija el acceso al escenario de **Cotizaciones**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s043]
+    pagina: null
+    fotos:
+      - id: "aa7df9b9b584"
+        ruta_o_url: "imagenes/manual-de-compras/1cbe49a44766.png"
+        pagina: null
+        caption: "Acceso al escenario de Cotizaciones"
+        ocr: "-\n[=] i 1-5} Escrftoria\n= Eft Pedro\nCotizaciones i . Re (PUENTE EN CARRETERA\nLuego,"
+  - n: 2
+    id: "compras.registrar-cotizacion#2"
+    accion: "Haga clic derecho sobre la lista de cotizaciones, elija la opción para adicionar y luego **Para Orden de Compra**."
+    fuente: [img-5cfc3190a766-0000, web-https-documentacion-s10peru-com-manual-d-s043]
+    pagina: null
+    fotos:
+      - id: "e605f3e6b529"
+        ruta_o_url: "imagenes/manual-de-compras/5cfc3190a766.png"
+        pagina: null
+        ocr: "Cotizaciones &\nFR wa\nClic derecho\njAuicional » Para Orden de Compra a\n= Modificar Para Orden de Servicio\n Eliminar"
+  - n: 3
+    id: "compras.registrar-cotizacion#3"
+    accion: "Si lo necesita, registre en **Especificaciones** las preguntas que el proveedor debe responder o las especificaciones que debe cumplir con relación a los recursos de la cotización."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s043]
+    pagina: null
+  - n: 4
+    id: "compras.registrar-cotizacion#4"
+    accion: "Haga clic derecho en el detalle de la cotización y elija **Adicionar** para seleccionar los recursos."
+    fuente: [img-ad73228ca5d4-0000, web-https-documentacion-s10peru-com-manual-d-s043]
+    pagina: null
+    fotos:
+      - id: "13d018394e00"
+        ruta_o_url: "imagenes/manual-de-compras/ad73228ca5d4.png"
+        pagina: null
+        ocr: "aa fo |\nRegistra pmartinez - Martinez Luna, Pedro Estado N° de Cotizacion\nProyecto 02001 PUENTE EN CARRETERA we ened\nFecha [22maro10 ~] ultimo usuario Ultima modificacié\nEn Orden de Compra\nEspecificaciones a) |\n\noy.\n\n°)\nSAR v\\ eda\n‘Codigo Proyect| Proyecto Nro. Pedido Codigo Recurso\nClic derecho fii]|Adicionar | |"
+  - n: 5
+    id: "compras.registrar-cotizacion#5"
+    accion: "En la ventana de selección de datos, elija si se listan solo los recursos del proyecto elegido en el árbol o todos los recursos involucrados en los pedidos de compra de los proyectos asignados al Centro de Compra."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s043]
+    pagina: null
+    fotos:
+      - id: "ff555016446b"
+        ruta_o_url: "imagenes/manual-de-compras/35ac647f8dde.png"
+        pagina: null
+        caption: "Llamada b: Lista todos los recursos involucrados en los pedidos de compra de todos los proyectos asignados al Centro de Compra."
+        ocr: "Registra pmartinez - Martinez Luna, Pedro Estado N° de Cotizacié\nProyecto 02001 PUENTE EN CARRETERA & 000000000001\nFecha 22412010 =| Ultimo usuario Ultima modificacién\nEn Orden de Compra\nEspecificaciones a)\nb)\nc)\nSea 0%. @&la Las cantidades son editables\nALAMBRE NEGRO RECOCIDO # 16 kg 4,300.00 a\n0202000008 ALAMBRE NEGRO RECOCIDO #8 kg 560.00\n0202010005 CLAVOS PARA MADERA CON CABEZA DE kg 200.00 =…"
+  - n: 6
+    id: "compras.registrar-cotizacion#6"
+    accion: "Elija uno a uno, con doble clic, los recursos que formarán parte de la cotización; arme la cotización pensando en lo que vende el proveedor."
+    fuente: [img-c8ae038ee947-0000, web-https-documentacion-s10peru-com-manual-d-s043]
+    pagina: null
+    fotos:
+      - id: "120588f87f8b"
+        ruta_o_url: "imagenes/manual-de-compras/c8ae038ee947.png"
+        pagina: null
+        ocr: "‘B® Seleccién de datos —_. cub] rat Soe\naa\n|| IY Sdo pedidos del proyecto actual Elija uno a uno con doble clic\ni Te une} 2 OS recursos que formaran |\n@Pel idos de compra Recursos —=— parte de la witinanian\nED® Bl v % oe id Bt\nFAZ Campo) Cédiga y | |En cualquier posicién] v\nRecurgo Unidad Cantidad a\nALAMBRE NEGRO RECOCIDO # 16 kg 4,300.00\nALAMBRE NEGRO. RECOCIDO #3 kg 560.00 |\nCLAV@S PARA MADERA C…"
+  - n: 7
+    id: "compras.registrar-cotizacion#7"
+    accion: "Elija la pestaña **Proveedores** para asignar proveedores a la cotización."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s044]
+    pagina: null
+    fotos:
+      - id: "8925b23f0f75"
+        ruta_o_url: "imagenes/manual-de-compras/1e7394399435.png"
+        pagina: null
+        caption: "Llamada a: Elija la pestaña Proveedores, para asignar Proveedores a la Cotización."
+        ocr: "Cotizaciones =H\nSMA vs &éae\nCotizacién Fecha Estado Tipo Orden\n0001 22/04/2010 Registrado Orden de Compra\nAMAR vy eae\nCédigo Identificador Estado Ust\n@) Clic derecho Elija esta pestana\n(2) Adicionar por filtro\n4 mn \"\noo | o rows"
+  - n: 8
+    id: "compras.registrar-cotizacion#8"
+    accion: "Haga clic derecho y elija **Adicionar** para elegir a los proveedores del **Catálogo de Socio de Negocio** con todos los registros, o **Adicionar por filtro** para elegirlos entre los calificados con una etiqueta (por ejemplo, FERRETERIA)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s044, img-43f02acc8951-0000]
+    pagina: null
+  - n: 9
+    id: "compras.registrar-cotizacion#9"
+    accion: "Haga clic derecho sobre el proveedor y elija **Enviar en Microsoft Excel al proveedor** o **Enviar en PDF al Proveedor**."
+    fuente: [img-43f02acc8951-0000, web-https-documentacion-s10peru-com-manual-d-s045]
+    pagina: null
+    fotos:
+      - id: "430f02ed5b6f"
+        ruta_o_url: "imagenes/manual-de-compras/43f02acc8951.png"
+        pagina: null
+        ocr: "Cotizaciones\na\nBMeev aha\nSTP [cr ceca\n02100071 Ferreteria La Sirena ™ tit\n02100095 —Ferreteria Elqonstruc| L1 Adicionar ez\n02100029 FERRETERIA LAABEJ, Adicionar por filtro\n& Quitar\nEnviar en Microsoft Excel al proveedor—()\nEnviar en PDF al Proveedor —()\n@ Datos Proveedor “c)\n[& Vista Preliminar\n& Imprimir"
+  - n: 10
+    id: "compras.registrar-cotizacion#10"
+    accion: "Elija la carpeta donde se guardará el archivo enviado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s045]
+    pagina: null
+verificacion: []
+errores_frecuentes:
+  - sintoma: "El proveedor no tiene la etiqueta (por ejemplo, FERRETERIA) para elegirlo con el filtro."
+    solucion: "Para asignar una etiqueta a un proveedor, ingrese por el menú Catálogos y elija Socio de Negocio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s044]
+relacionados: [compras.registrar-recepcion-de-cotizaciones, compras.generar-orden-de-compra-desde-pedido]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s043, manual: "Manual de Compras", seccion: "9. Cotizaciones", pagina: null}
+  - {id: img-5cfc3190a766-0000, manual: "Manual de Compras", seccion: "5cfc3190a766.png", pagina: null}
+  - {id: img-ad73228ca5d4-0000, manual: "Manual de Compras", seccion: "ad73228ca5d4.png", pagina: null}
+  - {id: img-c8ae038ee947-0000, manual: "Manual de Compras", seccion: "c8ae038ee947.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s044, manual: "Manual de Compras", seccion: "9.1 Asignar proveedores a la cotización", pagina: null}
+  - {id: img-43f02acc8951-0000, manual: "Manual de Compras", seccion: "43f02acc8951.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s045, manual: "Manual de Compras", seccion: "9.2 Enviar la Cotización al proveedor", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

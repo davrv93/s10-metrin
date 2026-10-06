@@ -1,0 +1,97 @@
+id: compras.elaborar-cuadro-comparativo
+version: 1
+modulo: compras
+titulo: "Elegir proveedor en el cuadro comparativo de cotizaciones"
+objetivo: "Comparar en el Cuadro Comparativo las ofertas recibidas de los proveedores en una cotización y elegir, recurso por recurso, al proveedor analizando sus condiciones."
+nivel: intermedio
+preguntas:
+  - "cómo hago el cuadro comparativo de cotizaciones"
+  - "cómo elijo el proveedor en s10 compras"
+  - "dónde comparo los precios de los proveedores"
+  - "como saco el cuadro comparativo para toma de decisiones"
+  - "como elijo al probedor mas barato por recurso"
+  - "cómo imprimo el cuadro comparativo"
+  - "dónde veo la comparación de las cotizaciones recibidas"
+aliases:
+  - "cuadro comparativo"
+  - "comparar cotizaciones"
+  - "elegir proveedor"
+  - "comparativo de precios"
+entidades:
+  modulo: "Compras"
+  pantallas: ["Cuadro Comparativo"]
+  objetos: ["cotización", "proveedor", "recurso", "reporte"]
+prerrequisitos:
+  - texto: "Las cotizaciones recibidas de los proveedores deben estar registradas manualmente en el sistema."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046]
+pasos:
+  - n: 1
+    id: "compras.elaborar-cuadro-comparativo#1"
+    accion: "Elija el acceso al escenario de **Cuadro Comparativo**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047]
+    pagina: null
+    fotos:
+      - id: "4c7ba3c165da"
+        ruta_o_url: "imagenes/manual-de-compras/290ae6f42d9c.png"
+        pagina: null
+        caption: "Acceso al escenario de Cuadro Comparativo"
+        ocr: "[ Ela J ___________,\nEe J E)- gj Esciftorio\nae\nEi fat Peco\nunde BS PUENTE EN CARRETERA]\nComparativo Luego,"
+  - n: 2
+    id: "compras.elaborar-cuadro-comparativo#2"
+    accion: "Elija la cotización que va a comparar."
+    fuente: [img-24a98acb7dd6-0000, web-https-documentacion-s10peru-com-manual-d-s047]
+    pagina: null
+    fotos:
+      - id: "19e7fa256f30"
+        ruta_o_url: "imagenes/manual-de-compras/24a98acb7dd6.png"
+        pagina: null
+        ocr: "Cuadro Comparativo AS\n+}\nCotikacién |[Recurso Cantidad | +\noon mito | Pines eu ee 19) SONCCUT\n| ALAMBRE NEGRO RECOCIDO #6 kg 560.0000 |\nElija la cotizacién |_|! CLAVOS PARA MADERA CON CABEZA DE 3\" Elia al proveedor 20.00 |\n| CLAVOS PARA MADERA CON CABEZA DE 4\" 380.0000\n|| BGERS CORRUGADG fy=4200 agiend GRADS ED YARLLABE (\"|x am [var | S2000o0C |||\nLACH (ISRUGADG teol¥ttl gut SAIN a VARI LAGE SS ai…"
+  - n: 3
+    id: "compras.elaborar-cuadro-comparativo#3"
+    accion: "Para cada recurso, analice las condiciones de los proveedores, como la forma de pago, el descuento, el tiempo de entrega y la fecha límite."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047, img-24a98acb7dd6-0000]
+    pagina: null
+    fotos:
+      - id: "8b1346fb9f93"
+        ruta_o_url: "imagenes/manual-de-compras/3a46187ae079.png"
+        pagina: null
+        caption: "Datos para la elección del proveedor"
+        ocr: "N° de Cotizacién 0001\nProveedor FERRETERIA| Ferreteria |Ferreteria\nLA ABEJA La Sirena |El Constructor\n\nForma de pago. Contado Contade | Contado 7 dias\n\nMoneda Sh Sh Sh\n\nTiempo de Entrega (dias) 1.00 4.00 4.00\n\nFecha limite 12806/2010 {06/05/2010 12/06/2010\nALAMBRE NEGRO RECOCIDO #16, kg 41,300.00 410 3.90 3.80\nALAMBRE NEGRO RECOCIDO #8 kg 560.00 4410 3.90 3.806\nCLAVOS PARA MADERA CON CABEZA DE 3\"…"
+  - n: 4
+    id: "compras.elaborar-cuadro-comparativo#4"
+    accion: "Elija al proveedor de cada recurso: la selección del recurso a comprar se realiza uno por uno."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047, img-24a98acb7dd6-0000]
+    pagina: null
+  - n: 5
+    id: "compras.elaborar-cuadro-comparativo#5"
+    accion: "Si lo necesita, haga clic derecho sobre un recurso y elija **Últimos Precios del Proveedor**, **Últimos Precios en General** o **Adiciona cantidad faltante al Proveedor**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047, img-2a6488c69801-0000]
+    pagina: null
+    fotos:
+      - id: "af1716382e5d"
+        ruta_o_url: "imagenes/manual-de-compras/2a6488c69801.png"
+        pagina: null
+        ocr: "Ultimos Precios del Proveedor\nAdiciona cantidad faltante al Proveedor\nUltimos Precios en General"
+  - n: 6
+    id: "compras.elaborar-cuadro-comparativo#6"
+    accion: "Imprima el reporte del cuadro comparativo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047]
+    pagina: null
+    fotos:
+      - id: "35f917d0cd2c"
+        ruta_o_url: "imagenes/manual-de-compras/8c0a74a43a53.png"
+        pagina: null
+        caption: "Imprima el reporte"
+        ocr: "10\n$105.4, Péging 1\nCentro de Compra O04 Pedra\nProyecto 02001 PUENTE ENCARRETERA\nCuadro Comparativo para Toma de Decisiones\nN*de Cotizacién 0001 Fecha dela Cotizacidn 2210472010\nProveedores FERRETERIALAABEJA | Ferreteria La Sirena | Ferreteria € Constructor\nForma de page Contade ! Contato ‘ Contato 7 dias\nMoneda sed sei st\nDescuento total (3) : i\nTiempo de Entrega (dias) 100! 1.001 100\nTipo de cam…"
+verificacion:
+  - texto: "Al generar la Orden de Compra desde una Cotización, se listan los proveedores que fueron elegidos en el Cuadro Comparativo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s049]
+errores_frecuentes: []
+relacionados: [compras.registrar-recepcion-de-cotizaciones, compras.registrar-cotizacion]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s046, manual: "Manual de Compras", seccion: "10. Recepción de Cotizaciones", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s047, manual: "Manual de Compras", seccion: "11. Cuadro Comparativo", pagina: null}
+  - {id: img-24a98acb7dd6-0000, manual: "Manual de Compras", seccion: "24a98acb7dd6.png", pagina: null}
+  - {id: img-2a6488c69801-0000, manual: "Manual de Compras", seccion: "2a6488c69801.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s049, manual: "Manual de Compras", seccion: "12.1 Generar la Orden de Compra desde el escenario de Orden de Compra", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

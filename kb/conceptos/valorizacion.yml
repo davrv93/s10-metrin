@@ -1,0 +1,14 @@
+id: valorizacion
+termino: "Valorización"
+sinonimos: ["valorizaciones", "porcentaje del plan completado"]
+definicion: "El porcentaje del plan completado, término de gerencia de proyectos que se refiere al registro del trabajo realizado durante la semana, en S10 se llama valorización. En la ejecución se valorizan las actividades o partidas del presupuesto asignado para cuantificar el avance logrado y cobrar al propietario por los trabajos ejecutados."
+en_s10: "Se realiza en el escenario del Cronograma por periodos, donde los avances logrados se ingresan a mano, en metrados; solo se permite una valorización por periodo y el monto de la valorización mensual se toma de ese cronograma. Lo valorizado se compara con lo programado en el escenario Programado – Valorizado. Los subcontratos también se valorizan, con periodo semanal."
+procedimientos_relacionados: []
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s253  # Manual de Gerencia de Proyectos › 8 PORCENTAJE DEL PLAN COMPLETADO – RAMA META
+  - web-https-documentacion-s10peru-com-manual-d-s249  # Manual de Gerencia de Proyectos › 7.4.11 Valorizaciones
+  - web-https-documentacion-s10peru-com-manual-d-s250  # Manual de Gerencia de Proyectos › 7.4.11.1 Registro de Porcentaje del plan completado o valorización
+  - web-https-documentacion-s10peru-com-manual-d-s172  # Manual de Presupuestos › 6.10.1 Registro de Avances
+  - web-https-documentacion-s10peru-com-manual-d-s173  # Manual de Presupuestos › 6.10.2 Programado – Valorizado
+  - web-https-documentacion-s10peru-com-manual-d-s144  # Manual de Gerencia de Proyectos › 4.6 Registro de Subcontratos
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

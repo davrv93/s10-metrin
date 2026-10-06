@@ -1,0 +1,200 @@
+id: almacenes.registrar-egreso-a-partida-de-control
+version: 1
+modulo: almacenes
+titulo: "Registrar un egreso a partida de control"
+objetivo: "Registrar la salida de recursos del stock del almacén hacia las partidas de control del proyecto (o de un subcontrato) con un Egreso a Partida de Control [EPC], el egreso más usado durante la ejecución."
+nivel: intermedio
+preguntas:
+  - "cómo registro un egreso a partida de control"
+  - "cómo saco materiales del almacén para la obra"
+  - "el maestro de obra pidió material, cómo hago la salida del almacén"
+  - "cómo hago un egreso EPC en s10"
+  - "como asigno la partida de control a los recursos que salen del almacen"
+  - "pasos para registrar una salida de almacén"
+  - "como ago un egreso de almacen"
+  - "cómo despacho recursos del almacén a un subcontrato"
+  - "dónde imprimo la guía de egreso para que firme el que retira"
+aliases:
+  - "egreso a partida de control"
+  - "egreso EPC"
+  - "salida de almacén"
+  - "despacho de materiales"
+  - "guía de egreso"
+entidades:
+  modulo: "Almacenes"
+  pantallas: ["Egresos", "Recursos en Stock"]
+  objetos: ["guía de egreso", "partida de control", "destino específico", "frente", "solicitante", "recurso", "subcontrato"]
+prerrequisitos:
+  - texto: "Debe tener en el stock del almacén los recursos que serán egresados y tener registrados las Partidas de Control, los Destinos Específicos, los Frentes y los Equipos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s063]
+  - texto: "El usuario que registra los egresos debe tener atributos para hacerlo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s057]
+  - texto: "Antes de efectuar un egreso, vaya al escenario de Stock y recostee."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s057]
+pasos:
+  - n: 1
+    id: "almacenes.registrar-egreso-a-partida-de-control#1"
+    accion: "En la barra de vistas, elija el acceso al escenario de **Egresos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s063, web-https-documentacion-s10peru-com-manual-d-s058]
+    pagina: null
+    fotos:
+      - id: "893476a0aba5"
+        ruta_o_url: "imagenes/manual-de-almacenes/d7a2a2bd93c1.png"
+        pagina: null
+        caption: "Acceso al escenario"
+        ocr: "[rico]\nProyectos\na Escritorio\n0 PUENTE EN CARRETERA\nEgresos 7 . oye al\neco, |, SEES"
+  - n: 2
+    id: "almacenes.registrar-egreso-a-partida-de-control#2"
+    accion: "En el árbol, elija el proyecto y el almacén."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s063]
+    pagina: null
+  - n: 3
+    id: "almacenes.registrar-egreso-a-partida-de-control#3"
+    accion: "Elija el tipo de egreso **Egreso a Partida de Control [EPC]**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s058, web-https-documentacion-s10peru-com-manual-d-s063]
+    pagina: null
+    fotos:
+      - id: "a396ad2ad1fc"
+        ruta_o_url: "imagenes/manual-de-almacenes/2611c2e562f8.png"
+        pagina: null
+        caption: "Elija el tipo de egreso"
+        ocr: "Mmucucameaeso aPartidade Control (EPC)\nAVA. &Hua\nEstado[N’Guia__—|_Fecha [Destino /Solictante | Moftedial in"
+  - n: 4
+    id: "almacenes.registrar-egreso-a-partida-de-control#4"
+    accion: "Haga clic derecho sobre la lista de guías de egresos y elija la opción que adiciona un nuevo movimiento de egreso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s037, web-https-documentacion-s10peru-com-manual-d-s063]
+    pagina: null
+  - n: 5
+    id: "almacenes.registrar-egreso-a-partida-de-control#5"
+    accion: "Si el sistema lo solicita, registre el tipo de cambio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s063, web-https-documentacion-s10peru-com-manual-d-s038]
+    pagina: null
+  - n: 6
+    id: "almacenes.registrar-egreso-a-partida-de-control#6"
+    accion: "En la cabecera del formulario, use el botón de **Solicitante** para elegir al solicitante del catálogo de identificadores."
+    donde: "Cabecera del formulario Egreso a Partida de Control"
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s058]
+    pagina: null
+    fotos:
+      - id: "470223040292"
+        ruta_o_url: "imagenes/manual-de-almacenes/d26cf00e8243.png"
+        pagina: null
+        caption: "Registro de datos en la cabecera del formulario Egreso a Partida de Control"
+        ocr: "=a\ney Egreso a Partidade Control [EPC] 0100 EN CARRETERA = ©) |e San\nRegistra Andres - Andrade Andrade, Ultimo usuario ® N° de Guia\nAlmacén 001 - De Mater Ultima fecha 000000000001\nTipo 01- OBRA Estado Edicion © e\nSolicitante ——O 2\n(Origen sDestino) [22000562 [Fuentes, José =| al OR\nFecha oameont —_I NP Alterno [toa +e)\nProcedencia de la partial zontrol eee”)\nPUENTE EN CARRETERA ea"
+  - n: 7
+    id: "almacenes.registrar-egreso-a-partida-de-control#7"
+    accion: "Use el botón del calendario y elija la **fecha** en que se efectúa el movimiento de egreso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s058]
+    pagina: null
+  - n: 8
+    id: "almacenes.registrar-egreso-a-partida-de-control#8"
+    accion: "Si lo necesita, registre el número alterno."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s058]
+    pagina: null
+  - n: 9
+    id: "almacenes.registrar-egreso-a-partida-de-control#9"
+    accion: "Con el botón de **Procedencia de la partida de control**, elija el origen de la partida de control: por defecto muestra el nombre del proyecto; elija el subcontrato cuando el destino sea un subcontrato."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s058, img-478521a134c8-0000, web-https-documentacion-s10peru-com-manual-d-s063]
+    pagina: null
+    fotos:
+      - id: "68624ee1ff6b"
+        ruta_o_url: "imagenes/manual-de-almacenes/478521a134c8.png"
+        pagina: null
+        ocr: "(c=)\nBp Egreso a Partida de Control [EPC] 02001-PUENTE EN CARRETERA | |B So\nRegistra Andres - Andrade Andrade, Andres — Uttimo usuario N° de Guia\nAlmacén 001 - De Materiales Ultima fecha 000000000001\n\nTipo 01- OBRA Estado Edicion e\nSolicitante 02100117 ~— Vegas, Carlos wo | db] NOR\n(OrigenDestino) Ira — 44\n| N° Alterna:\n\nFecha pT eh La Partida de Control a elegir pertenecera al proyecto\nProcedenci…"
+  - n: 10
+    id: "almacenes.registrar-egreso-a-partida-de-control#10"
+    accion: "En el cuerpo del documento, haga clic derecho y elija **Adicionar** para ver el stock de recursos."
+    donde: "Detalle del formulario de egreso"
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s059, img-130061d112ce-0000, web-https-documentacion-s10peru-com-manual-d-s063]
+    pagina: null
+    fotos:
+      - id: "53dd4d18a34d"
+        ruta_o_url: "imagenes/manual-de-almacenes/e137037f1855.png"
+        pagina: null
+        caption: "Llamada g: Es donde se registran los recursos que forman parte del egreso, cuando el formulario está VACIO muestra el menú."
+        ocr: "BMA +. éae\no/o ‘Campo}|Cédigo ¥ | |En cualquier posicién ¥ Grupo:\naa t= =OLD\nDi Adicionar desde el histéricom(@-2)\n«[ Mm, LT) Adicionar egreso por regresion =o) »\n+8 Importar de Microsoft Exceln(@-4)"
+  - n: 11
+    id: "almacenes.registrar-egreso-a-partida-de-control#11"
+    accion: "En **Recursos en Stock**, elija con doble clic los recursos que forman parte del egreso."
+    fuente: [img-763de084a87f-0000, web-https-documentacion-s10peru-com-manual-d-s063]
+    pagina: null
+    fotos:
+      - id: "632d7ca7e27f"
+        ruta_o_url: "imagenes/manual-de-almacenes/763de084a87f.png"
+        pagina: null
+        ocr: "@ Recursos en Stock - Todos los Registros ato x™\nOpciones 2?\nlar XETES MYM Om NERS |B (fa\n=)-€y Todos los MEI [__[Ellia con dable clic | J a? ne fem\n#- @ MATER) De scripcion [Junie |\nkg\ni\nCLAVOS PARA MADERA CON CABEZA DE 1\" ko\noe\nis\nACERO CORRUGADO fy=4200 kgicm2 GRADO 60 VARILLA DE 5/8\" x 9m Eo\n4 Ch\n0202000008 © ALAMBRENEGRORECOCIDO #8 kg 502.4 39\n0202010005  CLAVOS PARAMADERA CON CABEZADE 3\" kg…"
+  - n: 12
+    id: "almacenes.registrar-egreso-a-partida-de-control#12"
+    accion: "Registre la **cantidad** de cada recurso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s063]
+    pagina: null
+  - n: 13
+    id: "almacenes.registrar-egreso-a-partida-de-control#13"
+    accion: "Haga clic derecho sobre el recurso y elija la opción para asignar la partida de control; luego elija la partida de control."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s064, web-https-documentacion-s10peru-com-manual-d-s060, img-54053c8de217-0000]
+    pagina: null
+    fotos:
+      - id: "4e8760fa9140"
+        ruta_o_url: "imagenes/manual-de-almacenes/54053c8de217.png"
+        pagina: null
+        ocr: "Elija la Partida de Control\n\nRecurso ® Unidad | Cantigad | P.C. Partida de C +\nACERO CORRUGADO fy=4200 kgicm2 GRADO 60 VARILLA DE 5/8\" x 9 var 130.00 0101C | Acero\nACERO CORRUGADO fy=4200 kgicm2 GRADO 60 VARILLA DE 1/2\" x9 var 90.00 0101008 Acero a\nALAMBRE NEGRO RECOCIDO #8 kg 15.00 010100P Encofrado\nCLAVOS PARA MADERA CON CABEZA DE 3\" kg $.00 O10100P Encofrado |\nCLAVOS PARA MADERA CON CABEZA DE 4…"
+  - n: 14
+    id: "almacenes.registrar-egreso-a-partida-de-control#14"
+    accion: "Si corresponde, marque un bloque de recursos, haga clic derecho sobre el bloque, elija **Asignar/Reasignar destino específico** y, del catálogo, elija con doble clic."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s060]
+    pagina: null
+  - n: 15
+    id: "almacenes.registrar-egreso-a-partida-de-control#15"
+    accion: "Del mismo modo, asigne el frente: marque un bloque, haga clic derecho, elija **Asignar/Reasignar frente** y, del catálogo, elija con doble clic."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s060]
+    pagina: null
+  - n: 16
+    id: "almacenes.registrar-egreso-a-partida-de-control#16"
+    accion: "Pulse **Aceptar** para grabar la guía de egreso."
+    fuente: [img-54053c8de217-0000, web-https-documentacion-s10peru-com-manual-d-s063]
+    pagina: null
+  - n: 17
+    id: "almacenes.registrar-egreso-a-partida-de-control#17"
+    accion: "Imprima el reporte del egreso con el botón que lo envía a la impresora, hágalo firmar por la persona que retira el recurso del almacén y archívelo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s062, web-https-documentacion-s10peru-com-manual-d-s064]
+    pagina: null
+    fotos:
+      - id: "417ebaa26f31"
+        ruta_o_url: "imagenes/manual-de-almacenes/b8e8e5ef55a6.png"
+        pagina: null
+        caption: "IMPORTANTE: Imprima el reporte del egreso, haga firmar con la persona que retira el recurso del almacén y archive."
+        ocr: "ei Constructora $10\n\n$10\n\n$10 S.A.\n\nProyecto PUENTE EN CARRETERA\n\nAl é De Materiales 7\n\nmacen Egreso a Partida de Control [EPC]\n\nFechs 27/06/210 Guia N* 000000000001 Solicitante Fuentes, José\n\nSolicitante Fuentes, José\n\nGédigo Descripcién Recureo Unidad Gantidad Precio Parcial Partida de Control\n\n0202010007 CLAVOS PARA MADERA CON CABEZA DE 4\" kg 10.00 3.80 38.00 0101002 Encofrado\n\n0202000008 ALAM…"
+verificacion:
+  - texto: "La guía aparece en la lista de guías de egresos del escenario."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s036]
+errores_frecuentes:
+  - sintoma: "El recurso que quiere egresar no aparece."
+    solucion: "Solo los recursos del stock pueden ser utilizados en los movimientos de egreso: todo recurso debe ser ingresado antes al almacén."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s040]
+  - sintoma: "La fecha del egreso está fuera del periodo de ejecución del proyecto."
+    solucion: "La fecha tiene que estar dentro del periodo de ejecución del proyecto: elíjala de nuevo con el calendario."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s058]
+  - sintoma: "En una misma guía hay recursos para partidas de control del proyecto y para un subcontrato."
+    solucion: "Use un egreso para los recursos que usarán partidas de control del proyecto y genere otro movimiento para los recursos que tienen como destino un subcontrato."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s063]
+  - sintoma: "No puede eliminar o modificar la guía de egreso."
+    solucion: "Para eliminarla, el estado debe estar en edición; el estado protegido evita que la guía sea modificada o eliminada."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s037]
+relacionados: [almacenes.consultar-kardex]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s063, manual: "Manual de Almacenes", seccion: "2.2.2.1 Egreso a Partida de Control [EPC] (1)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s057, manual: "Manual de Almacenes", seccion: "2.2 Egresos", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s058, manual: "Manual de Almacenes", seccion: "2.2.1 Procedimiento o pasos a seguir para efectuar un egreso – Egreso a Partida de Control [EPC]", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s037, manual: "Manual de Almacenes", seccion: "2.7 Descripción de los escenarios de Ingresos y Egresos (4)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s038, manual: "Manual de Almacenes", seccion: "2.7.1 Tipo de cambio", pagina: null}
+  - {id: img-478521a134c8-0000, manual: "Manual de Almacenes", seccion: "478521a134c8.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s059, manual: "Manual de Almacenes", seccion: "2.2.1.1 Detalle del formulario (1)", pagina: null}
+  - {id: img-130061d112ce-0000, manual: "Manual de Almacenes", seccion: "130061d112ce.png", pagina: null}
+  - {id: img-763de084a87f-0000, manual: "Manual de Almacenes", seccion: "763de084a87f.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s064, manual: "Manual de Almacenes", seccion: "2.2.2.1 Egreso a Partida de Control [EPC] (2)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s060, manual: "Manual de Almacenes", seccion: "2.2.1.1 Detalle del formulario (2)", pagina: null}
+  - {id: img-54053c8de217-0000, manual: "Manual de Almacenes", seccion: "54053c8de217.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s062, manual: "Manual de Almacenes", seccion: "2.2.1.2 Impresión de reportes de egresos", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s036, manual: "Manual de Almacenes", seccion: "2.7 Descripción de los escenarios de Ingresos y Egresos (3)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s040, manual: "Manual de Almacenes", seccion: "2.1 Ingresos", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

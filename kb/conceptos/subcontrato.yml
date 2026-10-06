@@ -1,0 +1,11 @@
+id: subcontrato
+termino: "Subcontrato"
+sinonimos: ["subcontratos"]
+definicion: "Tercerización o trabajos encargados a terceras personas o empresas, llamadas subcontratistas. En S10, los recursos tipo subcontrato se registran para luego valorizarlos y llevar el control de sus pagos."
+en_s10: "Se gestionan en el módulo de Gerencia de proyectos. El periodo de valorización es semanal; el porcentaje de adelanto se registra al crear el subcontrato y se amortiza automáticamente, los pagos a cuenta se amortizan a mano y la retención del fondo de garantía es temporal, con devolución parcial o total. Requiere tener registrados el proyecto (con presupuesto si trabaja con techo) y las partidas de control."
+procedimientos_relacionados: [gerencia-proyectos.registrar-subcontrato]
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s134  # Manual de Gerencia de Proyectos › 4. GESTION DE SUBCONTRATOS
+  - web-https-documentacion-s10peru-com-manual-d-s144  # Manual de Gerencia de Proyectos › 4.6 Registro de Subcontratos
+  - web-https-documentacion-s10peru-com-manual-d-s164  # Manual de Gerencia de Proyectos › 4.6.12 Devolución del Fondo de garantía
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

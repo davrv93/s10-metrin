@@ -1,0 +1,16 @@
+id: partida_de_control
+termino: "Partida de control"
+sinonimos: ["partidas de control", "PC"]
+definicion: "Es lo que usa el sistema para el control económico del proyecto. Cada proyecto registra sus propias partidas de control y a ellas se asignan las actividades de las fases del WBS, con lo que adquieren valor y recursos; por ejemplo, todas las partidas de encofrado se agrupan en una sola partida de control llamada Encofrado."
+en_s10: "A cada partida de control del proyecto se le asigna una partida de control general de la empresa, que es la relación de ítems en los que la empresa suele gastar al ejecutar sus proyectos. Se usan en los egresos de almacén, en los tareos y en los partes de equipo, y el escenario Resultados en línea muestra la marcha del proyecto a nivel de partidas de control. Si el proyecto no tiene presupuesto, se registran en el grupo Configuración, escenario Partidas de Control."
+ejemplo: "En un proyecto de edificaciones se recomienda registrar solo la partida de control ENCOFRADO (no encofrado metálico y encofrado de madera) y solo CONCRETO (no concreto 100, concreto 175, concreto 210)."
+procedimientos_relacionados: [gerencia-proyectos.asignar-presupuestos-al-proyecto, almacenes.registrar-egreso-a-partida-de-control]
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s054  # Manual de Gerencia de Proyectos › 2.5.8 Planificación del Costo 2.5.8.1 Partidas de control
+  - web-https-documentacion-s10peru-com-manual-d-s055  # Manual de Gerencia de Proyectos › 2.5.8.3 Ejemplo de partidas de control de proyecto de Edificaciones
+  - web-https-documentacion-s10peru-com-manual-d-s045  # Manual de Gerencia de Proyectos › 2.5.1 Asignar presupuestos al Proyecto (1)
+  - web-https-documentacion-s10peru-com-manual-d-s262  # Manual de Gerencia de Proyectos › 9.5 Resultados en Línea
+  - web-https-documentacion-s10peru-com-manual-d-s063  # Manual de Almacenes › 2.2.2.1 Egreso a Partida de Control [EPC] (1)
+  - web-https-documentacion-s10peru-com-manual-d-s057  # Manual de Nóminas › 6.1 Tareo Estándar (1)
+  - web-https-documentacion-s10peru-com-manual-d-s219  # Manual de Gerencia de Proyectos › 6.8.1 Partes de Equipo (1)
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

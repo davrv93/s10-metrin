@@ -1,0 +1,87 @@
+id: facturacion-electronica.comunicar-baja-de-comprobante
+version: 1
+modulo: facturacion-electronica
+titulo: "Dar de baja un comprobante electrónico con la comunicación de baja"
+objetivo: "Dar de baja ante la SUNAT las facturas o boletas de venta electrónicas que no se entregaron al cliente, mediante un documento de Comunicación de Baja."
+nivel: intermedio
+preguntas:
+  - "cómo doy de baja una factura electrónica"
+  - "como anulo una boleta electronica ante sunat"
+  - "qué es la comunicación de baja y cómo se hace"
+  - "cuál es el plazo para dar de baja una factura electrónica"
+  - "como envio la comunicacion de baja a sunat desde s10"
+  - "me equivoque en una factura electronica que ya mande, como la anulo"
+  - "comunicasion de baja s10 pasos"
+  - "puedo dar de baja una boleta que no fue informada en el resumen diario"
+aliases:
+  - "comunicación de baja"
+  - "dar de baja factura electrónica"
+  - "anular comprobante electrónico"
+  - "baja de boletas"
+entidades:
+  modulo: "Facturación Electrónica"
+  pantallas: ["Comunicación de Baja", "Facturación Electrónica"]
+  objetos: ["factura", "boletas de venta", "comunicación de baja", "resumen diario", "motivo de anulación"]
+prerrequisitos:
+  - texto: "Para facturas: deben haber sido informadas previamente a SUNAT y haber sido aceptadas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s011]
+  - texto: "Para boletas de venta: pueden o no haber sido informadas a SUNAT en el RESUMEN DIARIO; si lo fueron, ese resumen debe haber sido aceptado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s011]
+pasos:
+  - n: 1
+    id: "facturacion-electronica.comunicar-baja-de-comprobante#1"
+    accion: "Anule el documento electrónico en el S10, indicando el motivo de anulación."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s011]
+    pagina: null
+  - n: 2
+    id: "facturacion-electronica.comunicar-baja-de-comprobante#2"
+    accion: "Ingrese a la opción **Comunicación de Baja** del menú de **Facturación Electrónica**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s011]
+    pagina: null
+    fotos:
+      - id: "4dc39790d87d"
+        ruta_o_url: "imagenes/manual-de-facturacion-electronica/cd4173cec7a8.png"
+        pagina: null
+        caption: "Para dar de baja un documento electrónico, este primeramente debe ser Anulado en el S10, indicando el motivo de anulación. Luego deberá ingresar a la opción de Comunicación de Baja en el menú de Facturación Electrónica."
+        ocr: "bad o on =x\nWEyARe vai aaa\n\nArrastre haca aqui el encabezado de la couumna que desea agrupar.\n1/1 Campdfestado © |[én cualquier posicén > J Grupo: |\nNe Fecha de Baja_|Estado Nro. Documentos |Fecha de envio _| Enviado por |Observaciones\n(26/07/2015 Aceptado 5 26/07/2015 01:55:! mchirinos La Comunicacion de baja numero RA-2(\n‘ _ ee »"
+  - n: 3
+    id: "facturacion-electronica.comunicar-baja-de-comprobante#3"
+    accion: "Use la opción **Adicionar** para registrar un nuevo documento de Comunicación de Baja."
+    resultado: "El sistema genera automáticamente el número de la Comunicación de Baja, de acuerdo a la fecha actual."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s011]
+    pagina: null
+    fotos:
+      - id: "002901db3bc0"
+        ruta_o_url: "imagenes/manual-de-facturacion-electronica/b7f4bbab5ec7.png"
+        pagina: null
+        caption: "El número de Comunicación de Baja es autogenerado por el sistema, de acuerdo a la fecha actual."
+        ocr: "= Documentos anulados.. 2)\nFecha Emisién Documento |19/11/2015 ~ Comunicaci6n de Baja N° RA-20151119-001\nEY2e8 -Efeua\nArrastre hacia aqui el encabezado de la columna que desea agrupar.\no/0 ‘Campd|Tipo Documento ~ [En cualquier poscién ~ |] Grupo:\nTipo Documento_ |N° Documento |Socio de Negocio Fecha Emision |Moneda | Total ‘echa Anulacid|\nNii _*"
+  - n: 4
+    id: "facturacion-electronica.comunicar-baja-de-comprobante#4"
+    accion: "Adicione los documentos anulados que dará de baja: todos deben tener la misma fecha de emisión."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s011, img-b7f4bbab5ec7-0000]
+    pagina: null
+  - n: 5
+    id: "facturacion-electronica.comunicar-baja-de-comprobante#5"
+    accion: "Envíe la comunicación a la SUNAT con la opción **Enviar a SUNAT**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s011]
+    pagina: null
+verificacion:
+  - texto: "La comunicación de baja aparece en la lista con su fecha de baja, su estado (por ejemplo, Aceptado) y las observaciones de la respuesta."
+    fuente: [img-cd4173cec7a8-0000, web-https-documentacion-s10peru-com-manual-d-s011]
+errores_frecuentes:
+  - sintoma: "Venció el plazo para dar de baja una factura."
+    solucion: "La comunicación de baja de facturas se envía hasta 7 días contados desde el día en que el envío fue aceptado por la SUNAT."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s011]
+  - sintoma: "Venció el plazo para dar de baja una boleta de venta."
+    solucion: "Si la boleta no fue informada, el plazo es de 7 días contados desde el día siguiente de su generación; si fue informada, 7 días contados desde el día siguiente de la fecha de aceptación del resumen diario correspondiente."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s011]
+  - sintoma: "Quiere dar de baja en una sola comunicación documentos con distinta fecha de emisión."
+    solucion: "Todos los documentos que se adicionen al documento de baja deben tener la misma fecha de emisión."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s011]
+relacionados: [facturacion-electronica.enviar-comprobantes-a-sunat]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s011, manual: "Manual de Facturación Electrónica", seccion: "2.2.3 Comunicación de baja", pagina: null}
+  - {id: img-b7f4bbab5ec7-0000, manual: "Manual de Facturación Electrónica", seccion: "b7f4bbab5ec7.png", pagina: null}
+  - {id: img-cd4173cec7a8-0000, manual: "Manual de Facturación Electrónica", seccion: "cd4173cec7a8.png", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

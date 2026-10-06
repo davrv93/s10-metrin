@@ -1,0 +1,11 @@
+id: planilla_electronica
+termino: "Planilla electrónica"
+sinonimos: []
+definicion: "Documento llevado con los medios informáticos de la SUNAT, con la información de empleadores, trabajadores, pensionistas, prestadores de servicios, practicantes, personal de terceros y derechohabientes. Desde el 1 de agosto de 2011 tiene dos componentes: el Registro de Información Laboral (T-Registro) y la Planilla Mensual de Pagos (PLAME)."
+en_s10: "El módulo de Nóminas genera archivos electrónicos para la PDT PLAME, AFPNET y T-REGISTRO. La PLAME se elabora obligatoriamente a partir del T-Registro, con el programa que se descarga de www.sunat.gob.pe, y se envía por SUNAT Operaciones en Línea (SOL)."
+procedimientos_relacionados: []
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s080  # Manual de Nóminas › 8 PLANILLA ELECTRONICA
+  - web-https-documentacion-s10peru-com-manual-d-s082  # Manual de Nóminas › 8.2 PLAME
+  - web-https-documentacion-s10peru-com-manual-d-s001  # Manual de Nóminas › 1. Generalidades
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

@@ -1,0 +1,132 @@
+id: compras.registrar-aprobadores-de-orden-de-compra
+version: 1
+modulo: compras
+titulo: "Registrar los aprobadores de las órdenes de compra"
+objetivo: "Registrar, para el centro de compra y para el proyecto, el grupo de usuarios encargados de aprobar las órdenes de compra, con el número de visto bueno requerido y el rango de montos mínimo y máximo."
+nivel: avanzado
+preguntas:
+  - "cómo registro quién aprueba las órdenes de compra"
+  - "cómo creo un grupo de aprobadores de orden de compra"
+  - "me sale no existe grupo de aprobadores, qué hago"
+  - "dónde pongo el monto mínimo y máximo que aprueba cada aprobador"
+  - "como asigno el aprobador de las ordenes de conpra"
+  - "cómo configuro el visto bueno de las órdenes de compra"
+  - "aprobadores del centro de compra y del proyecto en s10"
+  - "cuántos aprobadores necesita una orden de compra y dónde se define"
+aliases:
+  - "aprobadores de orden de compra"
+  - "grupo de aprobadores"
+  - "registrar aprobador"
+  - "visto bueno de orden de compra"
+entidades:
+  modulo: "Compras"
+  pantallas: ["Datos Generales", "Grupo Aprobacion"]
+  objetos: ["grupo de aprobadores", "orden de compra", "centro de compra", "monto minimo", "monto maximo", "proyecto"]
+prerrequisitos:
+  - texto: "El centro de compra debe estar registrado y el usuario que aprobará debe estar registrado en el catálogo de usuarios."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s020, web-https-documentacion-s10peru-com-manual-d-s021]
+pasos:
+  - n: 1
+    id: "compras.registrar-aprobadores-de-orden-de-compra#1"
+    accion: "Ingrese al escenario **Datos Generales**."
+    fuente: [img-357c121d5607-0000, web-https-documentacion-s10peru-com-manual-d-s021]
+    pagina: null
+    fotos:
+      - id: "fbcb2247a5a7"
+        ruta_o_url: "imagenes/manual-de-compras/357c121d5607.png"
+        pagina: null
+        ocr: "[cio]\n8\nDatos Generales"
+  - n: 2
+    id: "compras.registrar-aprobadores-de-orden-de-compra#2"
+    accion: "En el árbol, elija el centro de compras para registrar a sus aprobadores."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s021]
+    pagina: null
+    fotos:
+      - id: "bca5760a516c"
+        ruta_o_url: "imagenes/manual-de-compras/db978333592d.png"
+        pagina: null
+        caption: "Luego:"
+        ocr: "x\n= a Escritorio nC\n> aig\nPUENTE EN CARRETERA,\n(+ te Centros de compras finalizados |"
+  - n: 3
+    id: "compras.registrar-aprobadores-de-orden-de-compra#3"
+    accion: "En la sección de aprobadores del Centro de compras, haga clic derecho para registrar un nuevo grupo de aprobadores."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s021]
+    pagina: null
+    fotos:
+      - id: "d48ad9698504"
+        ruta_o_url: "imagenes/manual-de-compras/ff2b5094b5c2.png"
+        pagina: null
+        caption: "Llamada a: Los aprobadores del Centro de compras."
+        ocr: "Aves @adaa\nDis dre\n[PS = Modificar\nEX? A *s Ga) climinar\nUsuario Nombre Obligatoria ico"
+  - n: 4
+    id: "compras.registrar-aprobadores-de-orden-de-compra#4"
+    accion: "En la ventana **Grupo Aprobacion**, registre el nombre del grupo de aprobadores (por ejemplo, Aprobadores de Ordenes de Compra)."
+    fuente: [img-f46efb28ae9e-0000, web-https-documentacion-s10peru-com-manual-d-s021]
+    pagina: null
+    fotos:
+      - id: "1f3735f24410"
+        ruta_o_url: "imagenes/manual-de-compras/f46efb28ae9e.png"
+        pagina: null
+        ocr: "= x\ni Grupo Aprobacion ae\nCédigo 001\nDescripcién ee de Ordenes de Compra\nNdmero de V\"B\"\npara aprobacién H\n| Moneda 01 NUEVOS SOLES: = 44)\n| Monto minimo Lk; ‘00 —_I Monto maximo. 150,000. 00\nAdicionar Cancelar"
+  - n: 5
+    id: "compras.registrar-aprobadores-de-orden-de-compra#5"
+    accion: "Indique el **Numero de VB para aprobación**: por ejemplo, 1 cuando basta que la orden de compra sea aprobada por una persona."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s021]
+    pagina: null
+  - n: 6
+    id: "compras.registrar-aprobadores-de-orden-de-compra#6"
+    accion: "Elija la **Moneda** y registre el **Monto minimo** y el **Monto maximo** de las órdenes de compra que aprobará el grupo."
+    fuente: [img-f46efb28ae9e-0000, web-https-documentacion-s10peru-com-manual-d-s021]
+    pagina: null
+  - n: 7
+    id: "compras.registrar-aprobadores-de-orden-de-compra#7"
+    accion: "Pulse **Adicionar** para grabar el grupo."
+    fuente: [img-f46efb28ae9e-0000]
+    pagina: null
+  - n: 8
+    id: "compras.registrar-aprobadores-de-orden-de-compra#8"
+    accion: "En la lista de usuarios del grupo, haga clic derecho para agregar al usuario aprobador."
+    fuente: [img-47ed692ea7e0-0000, web-https-documentacion-s10peru-com-manual-d-s021]
+    pagina: null
+    fotos:
+      - id: "b1baf5fccdd5"
+        ruta_o_url: "imagenes/manual-de-compras/47ed692ea7e0.png"
+        pagina: null
+        ocr: "SY 2s »% al Elie |\nAprobadores de Ordenes de Compra 1 1.00 20,000.00 NUEVOS\nAveaS » &a\nUsuario Nombre del puario | Obligatorio Correo electronica\nClic derecho\nEliminar\n\\ Usuarios i\\ Proyectos /\\— Aprobacion = /"
+  - n: 9
+    id: "compras.registrar-aprobadores-de-orden-de-compra#9"
+    accion: "Del catálogo de usuarios, elija con doble clic al usuario que aprobará: sin su visto bueno no procede la orden de compra."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s021, img-8ccb3fec2a05-0000]
+    pagina: null
+    fotos:
+      - id: "a27ab3bbd5a7"
+        ruta_o_url: "imagenes/manual-de-compras/8ccb3fec2a05.png"
+        pagina: null
+        ocr: "Tyas eel\n5 Catélogo de Usuarios :0101 Obras Lo) = ees\nOpciones ?\nCi ee Bete |] ety Sal owl ae (2S\nE)-€2y Todos los Registros |YZ_ Elija con doble clic [|] vet: 38\nEh Costructora S10 | ea reas © errr |\n=| Obres Valencia Taco, Alberto\n! ! —\n0101007 = Valencia Taco, Alberto"
+  - n: 10
+    id: "compras.registrar-aprobadores-de-orden-de-compra#10"
+    accion: "Repita el proceso, pero esta vez para el proyecto: los aprobadores del proyecto solo aprueban las órdenes de compra generadas en el proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s021]
+    pagina: null
+verificacion:
+  - texto: "El grupo aparece con su número de aprobadores, monto mínimo, monto máximo y moneda, y debajo figura el usuario aprobador."
+    fuente: [img-48499ef9243b-0000]
+errores_frecuentes:
+  - sintoma: "Al enviar una orden de compra aparece el mensaje «No existe grupo de aprobadores»."
+    solucion: "No se han definido los grupos de aprobadores para el Centro de Compra, o los grupos no están en el rango de la Orden de Compra: vaya a datos generales y registre los grupos de aprobadores."
+    fuente: [img-27049c7738f4-0000, web-https-documentacion-s10peru-com-manual-d-s049]
+  - sintoma: "Hay demasiados aprobadores y la aprobación demora."
+    solucion: "El exceso de aprobadores genera demora e incrementa los gastos de operación; con la aprobación en estrella, que permite varios aprobadores por grupo, basta que el primero que se entere del mensaje ingrese al módulo y apruebe."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s021]
+relacionados: [compras.registrar-centro-de-compra, compras.aprobar-orden-de-compra]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s020, manual: "Manual de Compras", seccion: "4.1 Registro del Centro de compra", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s021, manual: "Manual de Compras", seccion: "4.2 Aprobadores de las órdenes de compra y servicio", pagina: null}
+  - {id: img-357c121d5607-0000, manual: "Manual de Compras", seccion: "357c121d5607.png", pagina: null}
+  - {id: img-f46efb28ae9e-0000, manual: "Manual de Compras", seccion: "f46efb28ae9e.png", pagina: null}
+  - {id: img-47ed692ea7e0-0000, manual: "Manual de Compras", seccion: "47ed692ea7e0.png", pagina: null}
+  - {id: img-8ccb3fec2a05-0000, manual: "Manual de Compras", seccion: "8ccb3fec2a05.png", pagina: null}
+  - {id: img-48499ef9243b-0000, manual: "Manual de Compras", seccion: "48499ef9243b.png", pagina: null}
+  - {id: img-27049c7738f4-0000, manual: "Manual de Compras", seccion: "27049c7738f4.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s049, manual: "Manual de Compras", seccion: "12.1 Generar la Orden de Compra desde el escenario de Orden de Compra", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

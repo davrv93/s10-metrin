@@ -1,0 +1,153 @@
+id: presupuestos.registrar-partida-en-el-catalogo
+version: 1
+modulo: presupuestos
+titulo: "Registrar una partida nueva en el catálogo de partidas"
+objetivo: "Registrar en el catálogo, dentro de un grupo propio de la empresa, una partida con sus datos, su rendimiento y los recursos de su análisis de precios unitarios."
+nivel: intermedio
+preguntas:
+  - "cómo creo una partida nueva en el catálogo de partidas"
+  - "como registro una partida que no existe en s10"
+  - "como agrego partidas propias de mi empresa al catalogo"
+  - "como registro el rendimiento de una partida"
+  - "como armo el analisis de precios unitarios de una partida nueva"
+  - "registrar grupo de partidas en el catalogo"
+  - "que es partida estimada"
+  - "como creo una partida nueba"
+aliases:
+  - "registrar partida"
+  - "crear partida en el catálogo"
+  - "registrar rendimiento de la partida"
+entidades:
+  modulo: "Presupuestos"
+  pantallas: ["Catálogo de Partidas", "Partida"]
+  objetos: ["partida", "grupo de partidas", "rendimiento", "cuadrilla", "recursos", "análisis de precios unitarios"]
+prerrequisitos:
+  - texto: "Se recomienda que cada empresa registre las partidas que acostumbre usar en un nuevo grupo del catálogo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s080]
+pasos:
+  - n: 1
+    id: "presupuestos.registrar-partida-en-el-catalogo#1"
+    accion: "En el árbol del **Catálogo de Partidas**, registre un grupo nuevo para las partidas de su empresa e ingrese el nombre del grupo (por ejemplo, PARTIDAS DE R&R)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s080, img-b9cf453ca05c-0000, img-e71ffa144f7f-0000]
+    pagina: null
+    fotos:
+      - id: "2c6790564f17"
+        ruta_o_url: "imagenes/manual-de-presupuestos/e71ffa144f7f.png"
+        pagina: null
+        ocr: "“a Partida [x]\nIngrese el nombre del grupo\nCédigo 30 [ss\nDescripcién —_|PARTIDAS DE R&R"
+  - n: 2
+    id: "presupuestos.registrar-partida-en-el-catalogo#2"
+    accion: "Dentro del grupo, en el último nivel del árbol, registre la partida (por ejemplo, Encofrado de elevación caravista)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s080]
+    pagina: null
+    fotos:
+      - id: "5ae80503bab5"
+        ruta_o_url: "imagenes/manual-de-presupuestos/2e9e7cd3e3d0.png"
+        pagina: null
+        caption: "Para registrar la partida: Encofrado de elevación caravista."
+        ocr: "PARTIDAS in y Nivel : 678\n=) fi Todas las Partidas i Descripcién\n= fff Paribas Basicas |___JEncofrado de superestructura\n@ PARTIDAS DE EDIFICACION DE CAPECO |—Jencofrado de cimentacién\n@PARTIDAS DE SEDAPAL |__]Encotrado de elevacién bajo agua\n@ PARTIDAS DE IRRIGACION [lDalEncotrad de elevaciin\n@PARTIDAS DE PAVIMENTACION = =\n@ PARTIDAS DE CARRETERAS = EP Adicionar F2\nFS PARTIDAS PARA OBRAS DE ARTE…"
+  - n: 3
+    id: "presupuestos.registrar-partida-en-el-catalogo#3"
+    accion: "En la ventana **Partida**, deje el **código** autogenerado por el sistema o ingréselo usted (6 niveles de 2 caracteres)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s080, img-61c68876ebc3-0000]
+    pagina: null
+    fotos:
+      - id: "72682429dafb"
+        ruta_o_url: "imagenes/manual-de-presupuestos/61c68876ebc3.png"
+        pagina: null
+        ocr: "+2 Partida (x)\nCédigo © —«S0g8O10101 fos A)\n———\nDescripcién Encofrado de elevacién caravista 2) an | Se fecomienda\n| | registrar sdlo |\nDescripcién H el nombre de la |\nalterna nO) | partida y la unidad\n|\n4ali;L od\nUnidad 501 |m2 @- 8H\nespeciadea (C592 [Deserbeee\nIngrese estos datos\nGrupo Pattida = (6— Jornada Dieria [2 4\nPeso\nTipo Sin Asignar(7}—_¥\nEstado Sin Anélisis 7 ~ 44\nfi) _ coca"
+  - n: 4
+    id: "presupuestos.registrar-partida-en-el-catalogo#4"
+    accion: "En **descripción**, registre el nombre de la partida (hasta 250 caracteres); en **descripción alterna** puede registrarlo en un idioma alterno."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s080]
+    pagina: null
+  - n: 5
+    id: "presupuestos.registrar-partida-en-el-catalogo#5"
+    accion: "Con el botón del **catálogo de unidades**, elija la unidad que corresponde a la partida."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s080]
+    pagina: null
+  - n: 6
+    id: "presupuestos.registrar-partida-en-el-catalogo#6"
+    accion: "En **especialidad**, asigne una especialidad a la partida (por ejemplo, Edificaciones), registrada previamente en su catálogo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s080]
+    pagina: null
+  - n: 7
+    id: "presupuestos.registrar-partida-en-el-catalogo#7"
+    accion: "En **grupo**, elija **Partida** (sus análisis tienen mano de obra, materiales, equipos y subcontratos) o **Estimada** (sus componentes son índices globales en % del precio unitario)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s080]
+    pagina: null
+  - n: 8
+    id: "presupuestos.registrar-partida-en-el-catalogo#8"
+    accion: "En **tipo**, elija **sin asignar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s080]
+    pagina: null
+  - n: 9
+    id: "presupuestos.registrar-partida-en-el-catalogo#9"
+    accion: "Revise la **jornada diaria** (el sistema asume 8 horas); el **peso** solo se ingresa en partidas de electromecánicas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s081]
+    pagina: null
+  - n: 10
+    id: "presupuestos.registrar-partida-en-el-catalogo#10"
+    accion: "Use el botón **adicionar** para grabar el contenido de la ventana y cerrarla."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s081]
+    pagina: null
+  - n: 11
+    id: "presupuestos.registrar-partida-en-el-catalogo#11"
+    accion: "Registre el rendimiento: ingrese el de la mano de obra y el del equipo (por defecto el sistema registra el mismo para ambos)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s081]
+    pagina: null
+    fotos:
+      - id: "638e31a9daa9"
+        ruta_o_url: "imagenes/manual-de-presupuestos/b9cf453ca05c.png"
+        pagina: null
+        caption: "Registro del rendimiento"
+        ocr: "*Y Catalogo de Partidas ; 9098010101 ENCOFRADO (C folk)\nPartidas\nBwex TE dh Y &% (! Especialidad: Todt] Estado: Todos [F] ] as Bea\nPARTIDAS fz YI Nivel : 6/5\n= i Todas las Partidas [| Descripcion\n= fff rartipas Basicas |__[Encotrado de superestructura\n PARTIDAS DE EDIFICACION DE CAPECO | —Tencofrado de cimentacin\n@PARTIDAS DE SEDAPAL |__]Encofrado de elevacidn bajo agua ve\n@ PARTIDAS DE IRRIGACION…"
+  - n: 12
+    id: "presupuestos.registrar-partida-en-el-catalogo#12"
+    accion: "Al terminar, use el botón para grabar y cerrar la ventana del rendimiento."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s082]
+    pagina: null
+    fotos:
+      - id: "7743dc306f87"
+        ruta_o_url: "imagenes/manual-de-presupuestos/61b74f62a174.png"
+        pagina: null
+        caption: "Llamada 7: Graba y cerrar la ventana."
+        ocr: "[Equipo mayor [Matoniveladora, tractor, camidn volquete [hm |\n[Equipo mediano [Camioneta, equipo para pintar dia |"
+  - n: 13
+    id: "presupuestos.registrar-partida-en-el-catalogo#13"
+    accion: "En la ventana superior del catálogo, elija la partida para registrar los recursos de su análisis de precios unitarios."
+    fuente: [img-c79c5e88880e-0000, web-https-documentacion-s10peru-com-manual-d-s082]
+    pagina: null
+    fotos:
+      - id: "6aeaf9a507ea"
+        ruta_o_url: "imagenes/manual-de-presupuestos/c79c5e88880e.png"
+        pagina: null
+        ocr: "*Y Catdlogo de Partidas : 9098010101) ENCOFRADO Ce)\nPartidas\neS T= = oy! Especialidad: Tocie Estado: Todos\ntw X GT: a lidad: Tod do: Tod e\nPARTIDAS En la ventana superior elija la partida = peel: BH\n& i | Todas las Partidas Descripcian\n= ffi§ partipas pasicas |__JEncotrado de|superestructura\n#4). @ PARTIDAS DE EDIFICACION DE CAPECO |—_encofrado del cimentacién\n# @PARTIDAS DE SEDAPAL |__Encofrado d…"
+  - n: 14
+    id: "presupuestos.registrar-partida-en-el-catalogo#14"
+    accion: "Registre la cuadrilla unitaria y la cantidad de recursos necesaria para una unidad, considerando un desperdicio razonable. No ingrese precios."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s082]
+    pagina: null
+    fotos:
+      - id: "28ec42aec37a"
+        ruta_o_url: "imagenes/manual-de-presupuestos/01e503c33740.png"
+        pagina: null
+        caption: "Datos que serán registrados:"
+        ocr: "Caria\n0.200000\n“p00000\n2.000000\n[ALAMBRENEGRORECOCDO FE kgf _| 000000\n[CLAVOS PARA MADERA CON CABEZA DES |ka [| e000\nPERNOHEXAGONAL DESH X12\" [pa [| .400000\nMADERA TORNLLO——_—_————~i? |_| 800000\nHRIPLAY DE4X8X19mm Yar | 000000"
+verificacion:
+  - texto: "Al registrar la partida por primera vez, el sistema califica su estado como Sin análisis."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s080]
+errores_frecuentes:
+  - sintoma: "No puede registrar la cuadrilla unitaria de la partida."
+    solucion: "Para registrar la cuadrilla unitaria es indispensable tener registrado el rendimiento."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s082]
+relacionados: [presupuestos.registrar-titulos-y-partidas]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s080, manual: "Manual de Presupuestos", seccion: "4.5.2 Registro de un grupo de partidas en el catálogo (1)", pagina: null}
+  - {id: img-b9cf453ca05c-0000, manual: "Manual de Presupuestos", seccion: "b9cf453ca05c.png", pagina: null}
+  - {id: img-e71ffa144f7f-0000, manual: "Manual de Presupuestos", seccion: "e71ffa144f7f.png", pagina: null}
+  - {id: img-61c68876ebc3-0000, manual: "Manual de Presupuestos", seccion: "61c68876ebc3.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s081, manual: "Manual de Presupuestos", seccion: "4.5.2 Registro de un grupo de partidas en el catálogo (2)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s082, manual: "Manual de Presupuestos", seccion: "4.5.2 Registro de un grupo de partidas en el catálogo (3)", pagina: null}
+  - {id: img-c79c5e88880e-0000, manual: "Manual de Presupuestos", seccion: "c79c5e88880e.png", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

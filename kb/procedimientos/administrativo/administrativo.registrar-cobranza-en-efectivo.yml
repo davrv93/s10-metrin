@@ -1,0 +1,125 @@
+id: administrativo.registrar-cobranza-en-efectivo
+version: 1
+modulo: administrativo
+titulo: "Registrar una cobranza en efectivo en el diario de caja"
+objetivo: "Registrar en el diario de caja el cobro en efectivo de un documento por cobrar ingresado en el módulo de facturación."
+nivel: basico
+preguntas:
+  - "cómo registro una cobranza en efectivo"
+  - "como cobro una factura en efectivo en el diario de caja"
+  - "dónde registro el cobro de un cliente en administrativo"
+  - "cómo agrego una transacción de documentos por cobrar en caja"
+  - "no me salen habilitadas las otras opciones del diario de caja"
+  - "como registro un cobro en efectibo en s10"
+  - "quiero cobrar un documento pendiente de un cliente"
+  - "pasos para la cobranza por efectivo en el módulo administrativo"
+aliases:
+  - "cobranza en efectivo"
+  - "registrar cobranza"
+  - "cobro en efectivo"
+  - "cobrar documento"
+entidades:
+  modulo: "Administrativo"
+  pantallas: ["Diario de caja", "Cobranzas", "Cronograma de Cobranzas"]
+  objetos: ["cobranza", "transacción", "cliente", "documentos pendientes", "libro caja", "diario de caja"]
+prerrequisitos:
+  - texto: "Para poder realizar las cobranzas debe existir un Libro Caja del mes."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s010]
+  - texto: "Debe estar creado el Diario de Caja donde se agregan las operaciones del día."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s011]
+pasos:
+  - n: 1
+    id: "administrativo.registrar-cobranza-en-efectivo#1"
+    accion: "Vaya al escenario **Diario de caja**, donde aparece automáticamente el diario creado, y ubíquese en él."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s011]
+    pagina: null
+    fotos:
+      - id: "623542403175"
+        ruta_o_url: "imagenes/manual-de-administracion/d32cd43607df.png"
+        pagina: null
+        caption: "En el escenario Diario de caja aparece automáticamente el diario creado."
+        ocr: "i Tae a =F\nBEC MGEEE (Diario de Caja\nCaja\n(JAWAY S| | eed alo\n@ Arrastre hacia aqui el encabezado de la columna que desea agrupar\nheen | Note | Empresa | Sucursal | N* Caja | Caja | Descrig\nan\n| t | SISTEMA 10 5.4. ‘SISTEMA, 10 S.A. 18) Libro Caja del 01/09/2013 al Diario 5)\nDiario de Caja\nBe\nDiario de Caja\nDetallado\n4 @ © Registroide1 » Mi 4 i >\n@ tnicio JAVA YE | s|@aai o\n| Linea (Tipo de movimi…"
+  - n: 2
+    id: "administrativo.registrar-cobranza-en-efectivo#2"
+    accion: "En la parte de abajo del diario, agregue la transacción."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s012]
+    pagina: null
+    fotos:
+      - id: "aca15358af50"
+        ruta_o_url: "imagenes/manual-de-administracion/f451b0a9e4d4.png"
+        pagina: null
+        caption: "En la parte de abajo del diario agregamos la transacción."
+        ocr: "i Tema ae) A\nBESMGEM [Diario de Caja\nCaja\nEZ iY | | ada oS\n@ Arrastre hacia aqui el encabezado de la columna que desea agrupar\nLibra Ca | Nota | Empresa | Sucursal [NP Caja | Caja | Deserig\nae Rae aR TTPO ERENT TEN\n| >| | |SISTEMA 10 5.4 |SISTEMA 10 S.A. | 18|Libro Caja del 0109/2013 al... [Diario ¢\nDiario de Caja\nDiario de Caja\nDetallado\ni @ 4 Registrolde1 » Mh PH\\4 tL >\nmis JBve¢e|\\|eaala\nLinea…"
+  - n: 3
+    id: "administrativo.registrar-cobranza-en-efectivo#3"
+    accion: "Elija el tipo de transacción **Documentos por Cobrar (Ingresos)**."
+    fuente: [img-f451b0a9e4d4-0000, web-https-documentacion-s10peru-com-manual-d-s013]
+    pagina: null
+  - n: 4
+    id: "administrativo.registrar-cobranza-en-efectivo#4"
+    accion: "En la ventana **Cobranzas**, elija el **Cliente** si quiere ver solo sus documentos pendientes de cobro; si no elige un cliente, se muestran todos los documentos pendientes."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s012, img-40d4f21744b9-0000]
+    pagina: null
+  - n: 5
+    id: "administrativo.registrar-cobranza-en-efectivo#5"
+    accion: "Haga clic derecho en la lista de documentos y elija **Adicionar**."
+    fuente: [img-40d4f21744b9-0000, web-https-documentacion-s10peru-com-manual-d-s012]
+    pagina: null
+    fotos:
+      - id: "64a8b67585ad"
+        ruta_o_url: "imagenes/manual-de-administracion/40d4f21744b9.png"
+        pagina: null
+        ocr: "‘Wi Cobranzas [- [5]\nEmpresa 22004161 - SISTEMA 10 S.A.\nSucursal Principal\nTipo Caja Documentos por Cobrar Monta Programado 0.00\nCliente * | : ] 44 Monta Cobradio 0.00\nSocio de Negocio Fecha Programado Monto Programado | Monto Cobrada [Monto Cobra | Saldo Programado | Fecha Documenta\nClick derecho Adicionar\nq A Guitar Bortafolio 5\nYer Documenta\nCuenta Bancaria Libro Caja Tipo Pago: Tipo de Cambio…"
+  - n: 6
+    id: "administrativo.registrar-cobranza-en-efectivo#6"
+    accion: "En el **Cronograma de Cobranzas**, elija el documento: aparecen los documentos ingresados previamente en el módulo de facturación."
+    fuente: [img-e52c977addef-0000, web-https-documentacion-s10peru-com-manual-d-s012]
+    pagina: null
+    fotos:
+      - id: "a0e7be77dba9"
+        ruta_o_url: "imagenes/manual-de-administracion/e52c977addef.png"
+        pagina: null
+        ocr: "‘Wf Cobranzas BEE\nEmpresa 22004161 - SISTEMA 10 S.A.\nSucursal Principal\nTipo Caja Documentos por Cobrar Monto Programado 0.00\nCliente * [ : ] 24) Monto Cobraco 0.00\nSocio de Negocio Fecha Programada Monto Programado | Monto Cobrado | Monto Cobra | Saltlo Programado | Fecha Documento\nClick derecho\nAl % Quitar Portafolio, | 5\n- H 23 cronograma de Cobranzas od\n~\n‘Apareceran los documentos\nHoOMYaSs va…"
+  - n: 7
+    id: "administrativo.registrar-cobranza-en-efectivo#7"
+    accion: "Revise la línea del cobro (cuenta bancaria, libro caja, tipo de pago efectivo, moneda, fecha y monto)."
+    fuente: [img-1cd012241498-0000, web-https-documentacion-s10peru-com-manual-d-s012]
+    pagina: null
+    fotos:
+      - id: "8314d9e04bd7"
+        ruta_o_url: "imagenes/manual-de-administracion/1cd012241498.png"
+        pagina: null
+        ocr: "Empresa 22004161 - SISTEMA 10 S.A.\n\nSucursal Principal\n\nTipo Caja. Documentos por Cobrar Monto Pragramacio Si. 2,684.00\n\nCliente = | 44 Monto Cobrado: ‘Si. 2,684.00\nSocio de Negocio Fecha Programado. Monto Programado | Monto Cobrado: Monto Cobro. Saldo Programado | Fecha Documenta\nFERRETERIA CEXIM S.A. 03/09/2013 Si. 2,684.00 0.00 2,684.00 0.00 0309/2013\n\n4 »\n‘Cuenta Bancaria Libro Caja [TipoPago…"
+  - n: 8
+    id: "administrativo.registrar-cobranza-en-efectivo#8"
+    accion: "Haga clic en **Aceptar**."
+    resultado: "Aparece la línea en el diario de caja."
+    fuente: [img-40d4f21744b9-0000, web-https-documentacion-s10peru-com-manual-d-s012]
+    pagina: null
+    fotos:
+      - id: "e97873720541"
+        ruta_o_url: "imagenes/manual-de-administracion/c7ac42f5a8aa.png"
+        pagina: null
+        caption: "Aparecerá la línea en el diario de caja."
+        ocr: "i Tema Ds Pa\nBEC MGE [Diario de Caja\nCaja\nLi = =\nJAIWAY eS aed\ngv Arrastre hacia aqui el encabezado de la columna que desea agrupar\nLibro Caj\nHIE) | Nota | Empresa | Sucursal “N? Caja | Cale | Descri\nEEE\nGg | | SISTEMA 105.4. SISTEMA 10.4. 18) Libro Caja del 01/09/2013 al ... | Diario 5}\nDiario de Caja\noa)\nDiario de Caja\nDetallado\n4 4 4 Registroide1 >  pH|4 Ml »\n: = |\nS&F Inicio /AVAYVEH | @e2@Hoa…"
+verificacion:
+  - texto: "La línea del cobro aparece en el diario de caja."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s012]
+  - texto: "Si adiciona otra transacción, las demás opciones aparecen habilitadas, porque ahora la caja tiene dinero."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s012]
+errores_frecuentes:
+  - sintoma: "Al adicionar una transacción, solo está habilitada la de documentos por cobrar."
+    solucion: "Las demás opciones se habilitan cuando la caja tiene dinero: cuando se hace un cobro en efectivo o en cheque y no se transfiere a una cuenta, la caja tiene dinero y se podrán pagar otros documentos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s012, web-https-documentacion-s10peru-com-manual-d-s019]
+relacionados: []
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s010, manual: "Manual Administrativo", seccion: "3.1 Registro de Libros Caja por periodo", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s011, manual: "Manual Administrativo", seccion: "3.2 Registro de Diario de caja", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s012, manual: "Manual Administrativo", seccion: "3.3 Registro de cobranza por efectivo", pagina: null}
+  - {id: img-f451b0a9e4d4-0000, manual: "Manual Administrativo", seccion: "f451b0a9e4d4.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s013, manual: "Manual Administrativo", seccion: "3.4 Registro de cobranza por cheque", pagina: null}
+  - {id: img-40d4f21744b9-0000, manual: "Manual Administrativo", seccion: "40d4f21744b9.png", pagina: null}
+  - {id: img-e52c977addef-0000, manual: "Manual Administrativo", seccion: "e52c977addef.png", pagina: null}
+  - {id: img-1cd012241498-0000, manual: "Manual Administrativo", seccion: "1cd012241498.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s019, manual: "Manual Administrativo", seccion: "3.10 Registro de pago en efectivo de documentos por pagar", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

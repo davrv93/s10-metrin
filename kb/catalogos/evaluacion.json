@@ -1,0 +1,702 @@
+{
+ "fecha": "2026-10-06",
+ "objetivo_precision": 0.9,
+ "coste_error": 2.0,
+ "paridad_knn_python_vs_go": 3.133848791581073e-08,
+ "modo_int": "centroide",
+ "modo_tipo": "centroide",
+ "intenciones": {
+  "exactitud": 0.5935483870967742,
+  "macro_f1": 0.5932275811950457,
+  "top3": 0.8064516129032258,
+  "umbral": {
+   "umbral": 0.4853,
+   "cobertura": 0.3032258064516129,
+   "precision": 0.7872340425531915,
+   "utilidad": 17.0,
+   "criterio": "máx. aciertos − 2×errores",
+   "punto_precision_objetivo": {
+    "umbral": 0.6519,
+    "cobertura": 0.01935483870967742,
+    "precision": 1.0
+   }
+  },
+  "cruzada": {
+   "umbral_medio": 0.4694250000000001,
+   "umbral_sd": 0.07396977000775386,
+   "cobertura": 0.3983935742971888,
+   "precision": 0.7241798918454525,
+   "precision_sd": 0.11499814209896018,
+   "n": 20
+  },
+  "macro_f1_umbral": 0.3345856757621464,
+  "por_clase": {
+   "agradecimiento": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "n": 9
+   },
+   "ambiguo": {
+    "precision": 0.4,
+    "recall": 0.2222222222222222,
+    "f1": 0.2857142857142857,
+    "n": 9
+   },
+   "avance_paso": {
+    "precision": 0.75,
+    "recall": 0.3333333333333333,
+    "f1": 0.46153846153846156,
+    "n": 9
+   },
+   "consulta_comercial": {
+    "precision": 0.625,
+    "recall": 0.625,
+    "f1": 0.625,
+    "n": 8
+   },
+   "consulta_concepto": {
+    "precision": 0.5555555555555556,
+    "recall": 0.5,
+    "f1": 0.5263157894736842,
+    "n": 10
+   },
+   "consulta_funcionalidad": {
+    "precision": 0.45454545454545453,
+    "recall": 0.5555555555555556,
+    "f1": 0.5,
+    "n": 9
+   },
+   "despedida": {
+    "precision": 1.0,
+    "recall": 0.8888888888888888,
+    "f1": 0.9411764705882353,
+    "n": 9
+   },
+   "feedback_respuesta": {
+    "precision": 0.625,
+    "recall": 0.5555555555555556,
+    "f1": 0.5882352941176471,
+    "n": 9
+   },
+   "ninguno": {
+    "precision": 0.8,
+    "recall": 0.3333333333333333,
+    "f1": 0.47058823529411764,
+    "n": 12
+   },
+   "pedir_aclaracion": {
+    "precision": 0.3076923076923077,
+    "recall": 0.4444444444444444,
+    "f1": 0.3636363636363637,
+    "n": 9
+   },
+   "saludo": {
+    "precision": 0.6923076923076923,
+    "recall": 1.0,
+    "f1": 0.8181818181818181,
+    "n": 9
+   },
+   "solicitud_aprendizaje": {
+    "precision": 0.6666666666666666,
+    "recall": 0.75,
+    "f1": 0.7058823529411765,
+    "n": 8
+   },
+   "solicitud_comparacion": {
+    "precision": 0.6153846153846154,
+    "recall": 0.8888888888888888,
+    "f1": 0.7272727272727274,
+    "n": 9
+   },
+   "solicitud_humano": {
+    "precision": 0.7,
+    "recall": 0.875,
+    "f1": 0.7777777777777777,
+    "n": 8
+   },
+   "solicitud_reporte": {
+    "precision": 0.4444444444444444,
+    "recall": 0.4444444444444444,
+    "f1": 0.4444444444444444,
+    "n": 9
+   },
+   "soporte_como_hacer": {
+    "precision": 0.23076923076923078,
+    "recall": 0.3,
+    "f1": 0.2608695652173913,
+    "n": 10
+   },
+   "soporte_error": {
+    "precision": 0.625,
+    "recall": 0.5555555555555556,
+    "f1": 0.5882352941176471,
+    "n": 9
+   }
+  }
+ },
+ "tipo_respuesta": {
+  "exactitud": 0.5443786982248521,
+  "macro_f1": 0.539875126137439,
+  "umbral": {
+   "umbral": 0.59,
+   "cobertura": 0.023668639053254437,
+   "precision": 0.75,
+   "utilidad": 2.0,
+   "criterio": "máx. aciertos − 2×errores",
+   "punto_precision_objetivo": {
+    "umbral": 0.6657,
+    "cobertura": 0.0029585798816568047,
+    "precision": 1.0
+   }
+  },
+  "cruzada": {
+   "umbral_medio": 0.5485,
+   "umbral_sd": 0.10487781938999303,
+   "cobertura": 0.1677514792899408,
+   "precision": 0.5785101842526585,
+   "precision_sd": 0.13065358074763314,
+   "n": 20
+  },
+  "macro_f1_umbral": 0.06279301316895301,
+  "por_clase": {
+   "COMPARISON": {
+    "precision": 1.0,
+    "recall": 0.058823529411764705,
+    "f1": 0.1111111111111111,
+    "n": 34
+   },
+   "CONCEPT": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "n": 54
+   },
+   "CONFIGURATION": {
+    "precision": 1.0,
+    "recall": 0.05555555555555555,
+    "f1": 0.10526315789473684,
+    "n": 54
+   },
+   "NAVIGATION": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "n": 54
+   },
+   "PROCEDURE": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "n": 54
+   },
+   "TROUBLESHOOTING": {
+    "precision": 1.0,
+    "recall": 0.018518518518518517,
+    "f1": 0.03636363636363636,
+    "n": 54
+   },
+   "UNKNOWN": {
+    "precision": 0.10303030303030303,
+    "recall": 1.0,
+    "f1": 0.18681318681318682,
+    "n": 34
+   }
+  },
+  "reglas_actuales": {
+   "COMPARISON": {
+    "precision": 0.875,
+    "recall": 0.20588235294117646,
+    "f1": 0.33333333333333337,
+    "n": 34
+   },
+   "CONCEPT": {
+    "precision": 0.972972972972973,
+    "recall": 0.6666666666666666,
+    "f1": 0.7912087912087912,
+    "n": 54
+   },
+   "CONFIGURATION": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "n": 54
+   },
+   "NAVIGATION": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "n": 54
+   },
+   "PROCEDURE": {
+    "precision": 0.3359375,
+    "recall": 0.7962962962962963,
+    "f1": 0.4725274725274725,
+    "n": 54
+   },
+   "TROUBLESHOOTING": {
+    "precision": 0.8888888888888888,
+    "recall": 0.14814814814814814,
+    "f1": 0.25396825396825395,
+    "n": 54
+   },
+   "UNKNOWN": {
+    "precision": 0.21794871794871795,
+    "recall": 1.0,
+    "f1": 0.3578947368421052,
+    "n": 34
+   }
+  }
+ },
+ "actual_vs_candidato": {
+  "gruesa_actual": 0.7096774193548387,
+  "gruesa_candidato": 0.6903225806451613,
+  "ruta_actual": 0.8258064516129032,
+  "ruta_candidato": 0.8709677419354839,
+  "trabajo_por_abstencion_actual": 60,
+  "fina_candidato_clasificar": 0.23870967741935484
+ },
+ "metodos": {
+  "int": {
+   "knn1": {
+    "loo_macro_f1": 0.3657614792286821,
+    "exactitud": 0.5290322580645161,
+    "macro_f1": 0.5356312946017047,
+    "umbral": {
+     "umbral": 0.7652,
+     "cobertura": 0.08387096774193549,
+     "precision": 0.7692307692307693,
+     "utilidad": 4.0,
+     "criterio": "máx. aciertos − 2×errores",
+     "punto_precision_objetivo": {
+      "umbral": 0.9197,
+      "cobertura": 0.01935483870967742,
+      "precision": 1.0
+     }
+    },
+    "cruzada": {
+     "umbral_medio": 0.8068899999999999,
+     "umbral_sd": 0.08058911775171632,
+     "cobertura": 0.09135709504685408,
+     "precision": 0.716521417179312,
+     "precision_sd": 0.1744817049475494,
+     "n": 20
+    }
+   },
+   "centroide": {
+    "loo_macro_f1": 0.5317352552618494,
+    "exactitud": 0.5935483870967742,
+    "macro_f1": 0.5932275811950457,
+    "umbral": {
+     "umbral": 0.4853,
+     "cobertura": 0.3032258064516129,
+     "precision": 0.7872340425531915,
+     "utilidad": 17.0,
+     "criterio": "máx. aciertos − 2×errores",
+     "punto_precision_objetivo": {
+      "umbral": 0.6519,
+      "cobertura": 0.01935483870967742,
+      "precision": 1.0
+     }
+    },
+    "cruzada": {
+     "umbral_medio": 0.4694250000000001,
+     "umbral_sd": 0.07396977000775386,
+     "cobertura": 0.3983935742971888,
+     "precision": 0.7241798918454525,
+     "precision_sd": 0.11499814209896018,
+     "n": 20
+    }
+   }
+  },
+  "tipo": {
+   "knn1": {
+    "loo_macro_f1": 0.19502278452013558,
+    "exactitud": 0.3609467455621302,
+    "macro_f1": 0.3599852287052769,
+    "umbral": {
+     "umbral": 0.9867,
+     "cobertura": 0.0,
+     "precision": NaN,
+     "utilidad": 0.0,
+     "criterio": "máx. aciertos − 2×errores",
+     "punto_precision_objetivo": null
+    },
+    "cruzada": {
+     "umbral_medio": 0.933285,
+     "umbral_sd": 0.05499231105345549,
+     "cobertura": 0.006804733727810651,
+     "precision": 0.0125,
+     "precision_sd": 0.037500000000000006,
+     "n": 20
+    }
+   },
+   "centroide": {
+    "loo_macro_f1": 0.5491084524820533,
+    "exactitud": 0.5443786982248521,
+    "macro_f1": 0.539875126137439,
+    "umbral": {
+     "umbral": 0.59,
+     "cobertura": 0.023668639053254437,
+     "precision": 0.75,
+     "utilidad": 2.0,
+     "criterio": "máx. aciertos − 2×errores",
+     "punto_precision_objetivo": {
+      "umbral": 0.6657,
+      "cobertura": 0.0029585798816568047,
+      "precision": 1.0
+     }
+    },
+    "cruzada": {
+     "umbral_medio": 0.5485,
+     "umbral_sd": 0.10487781938999303,
+     "cobertura": 0.1677514792899408,
+     "precision": 0.5785101842526585,
+     "precision_sd": 0.13065358074763314,
+     "n": 20
+    }
+   }
+  },
+  "int_minilm": {
+   "knn1": {
+    "loo_macro_f1": 0.43170846759596904,
+    "exactitud": 0.632258064516129,
+    "macro_f1": 0.6283565500648,
+    "umbral": {
+     "umbral": 0.8046,
+     "cobertura": 0.27741935483870966,
+     "precision": 0.9069767441860465,
+     "utilidad": 31.0,
+     "criterio": "máx. aciertos − 2×errores",
+     "punto_precision_objetivo": {
+      "umbral": 0.8046,
+      "cobertura": 0.27741935483870966,
+      "precision": 0.9069767441860465
+     }
+    },
+    "cruzada": {
+     "umbral_medio": 0.7762300000000001,
+     "umbral_sd": 0.02958056963616489,
+     "cobertura": 0.35661813922356095,
+     "precision": 0.8260189525474985,
+     "precision_sd": 0.07827551745938977,
+     "n": 20
+    }
+   },
+   "centroide": {
+    "loo_macro_f1": 0.6186462309406251,
+    "exactitud": 0.7032258064516129,
+    "macro_f1": 0.692544204818836,
+    "umbral": {
+     "umbral": 0.5234,
+     "cobertura": 0.7225806451612903,
+     "precision": 0.7946428571428571,
+     "utilidad": 43.0,
+     "criterio": "máx. aciertos − 2×errores",
+     "punto_precision_objetivo": {
+      "umbral": 0.7066,
+      "cobertura": 0.25806451612903225,
+      "precision": 0.9
+     }
+    },
+    "cruzada": {
+     "umbral_medio": 0.5208649999999999,
+     "umbral_sd": 0.06156173547748635,
+     "cobertura": 0.7165411646586345,
+     "precision": 0.7681790817064764,
+     "precision_sd": 0.05515665866997338,
+     "n": 20
+    }
+   }
+  },
+  "tipo_minilm": {
+   "knn1": {
+    "loo_macro_f1": 0.2957221180383486,
+    "exactitud": 0.45857988165680474,
+    "macro_f1": 0.4645117436160148,
+    "umbral": {
+     "umbral": 0.8661,
+     "cobertura": 0.026627218934911243,
+     "precision": 0.6666666666666666,
+     "utilidad": 0.0,
+     "criterio": "máx. aciertos − 2×errores",
+     "punto_precision_objetivo": null
+    },
+    "cruzada": {
+     "umbral_medio": 0.8972000000000001,
+     "umbral_sd": 0.05605714941022241,
+     "cobertura": 0.029881656804733724,
+     "precision": 0.45932158119658123,
+     "precision_sd": 0.11624070018560091,
+     "n": 20
+    }
+   },
+   "centroide": {
+    "loo_macro_f1": 0.6813716557513613,
+    "exactitud": 0.6775147928994083,
+    "macro_f1": 0.6839340126639664,
+    "umbral": {
+     "umbral": 0.0,
+     "cobertura": 0.878698224852071,
+     "precision": 0.696969696969697,
+     "utilidad": 27.0,
+     "criterio": "máx. aciertos − 2×errores",
+     "punto_precision_objetivo": {
+      "umbral": 0.6735,
+      "cobertura": 0.03550295857988166,
+      "precision": 0.9166666666666666
+     }
+    },
+    "cruzada": {
+     "umbral_medio": 0.25988500000000003,
+     "umbral_sd": 0.26729968064889265,
+     "cobertura": 0.6547337278106509,
+     "precision": 0.7114002436776257,
+     "precision_sd": 0.09984256845189483,
+     "n": 20
+    }
+   }
+  }
+ },
+ "casos_medidos": {
+  "¿qué es un metrado?": {
+   "esperado": "consulta_concepto",
+   "actual": {
+    "intencion": "social",
+    "similitud": 0.5691171342109502,
+    "top3": [
+     [
+      "social",
+      0.569
+     ],
+     [
+      "trabajo",
+      0.471
+     ],
+     [
+      "ayuda",
+      0.45
+     ]
+    ]
+   },
+   "candidato": {
+    "intencion": "trabajo",
+    "similitud": 0.4370556635966256,
+    "top3": [
+     [
+      "pedir_aclaracion",
+      0.437
+     ],
+     [
+      "consulta_concepto",
+      0.419
+     ],
+     [
+      "avance_paso",
+      0.315
+     ]
+    ]
+   },
+   "minilm": {
+    "intencion": "consulta_concepto",
+    "similitud": 0.6360487408972856,
+    "con_umbral": "consulta_concepto"
+   }
+  },
+  "¿Cómo registro un nuevo presupuesto en S10?": {
+   "esperado": "soporte_como_hacer",
+   "actual": {
+    "intencion": "trabajo",
+    "similitud": 0.32236020232442514,
+    "top3": [
+     [
+      "trabajo",
+      0.322
+     ],
+     [
+      "limite",
+      0.289
+     ],
+     [
+      "ayuda",
+      0.197
+     ]
+    ]
+   },
+   "candidato": {
+    "intencion": "soporte_como_hacer",
+    "similitud": 0.5021918196026283,
+    "top3": [
+     [
+      "soporte_como_hacer",
+      0.502
+     ],
+     [
+      "consulta_comercial",
+      0.459
+     ],
+     [
+      "consulta_funcionalidad",
+      0.457
+     ]
+    ]
+   },
+   "minilm": {
+    "intencion": "consulta_comercial",
+    "similitud": 0.6199794987080729,
+    "con_umbral": "consulta_comercial"
+   }
+  }
+ },
+ "literales_tipo_respuesta": {
+  "como hago un metrado": {
+   "esperado": "PROCEDURE",
+   "estatico": [
+    "PROCEDURE",
+    0.407,
+    "UNKNOWN"
+   ],
+   "reglas": "PROCEDURE",
+   "minilm": [
+    "UNKNOWN",
+    0.624,
+    "UNKNOWN"
+   ]
+  },
+  "como registro metrado": {
+   "esperado": "PROCEDURE",
+   "estatico": [
+    "PROCEDURE",
+    0.408,
+    "UNKNOWN"
+   ],
+   "reglas": "PROCEDURE",
+   "minilm": [
+    "UNKNOWN",
+    0.598,
+    "UNKNOWN"
+   ]
+  },
+  "cómo modifico una partida": {
+   "esperado": "PROCEDURE",
+   "estatico": [
+    "COMPARISON",
+    0.372,
+    "UNKNOWN"
+   ],
+   "reglas": "PROCEDURE",
+   "minilm": [
+    "CONFIGURATION",
+    0.399,
+    "CONFIGURATION"
+   ]
+  },
+  "que es metrado": {
+   "esperado": "CONCEPT",
+   "estatico": [
+    "NAVIGATION",
+    0.395,
+    "UNKNOWN"
+   ],
+   "reglas": "CONCEPT",
+   "minilm": [
+    "UNKNOWN",
+    0.785,
+    "UNKNOWN"
+   ]
+  },
+  "no puedo guardar metrado": {
+   "esperado": "TROUBLESHOOTING",
+   "estatico": [
+    "TROUBLESHOOTING",
+    0.393,
+    "UNKNOWN"
+   ],
+   "reglas": "UNKNOWN",
+   "minilm": [
+    "TROUBLESHOOTING",
+    0.644,
+    "TROUBLESHOOTING"
+   ]
+  },
+  "donde veo metrados": {
+   "esperado": "NAVIGATION",
+   "estatico": [
+    "NAVIGATION",
+    0.524,
+    "UNKNOWN"
+   ],
+   "reglas": "PROCEDURE",
+   "minilm": [
+    "NAVIGATION",
+    0.596,
+    "NAVIGATION"
+   ]
+  },
+  "metrado s10": {
+   "esperado": "UNKNOWN",
+   "estatico": [
+    "UNKNOWN",
+    0.322,
+    "UNKNOWN"
+   ],
+   "reglas": "UNKNOWN",
+   "minilm": [
+    "UNKNOWN",
+    0.54,
+    "UNKNOWN"
+   ]
+  }
+ },
+ "minilm": {
+  "intenciones": {
+   "exactitud": 0.7032258064516129,
+   "macro_f1": 0.692544204818836,
+   "umbral": {
+    "umbral": 0.5234,
+    "cobertura": 0.7225806451612903,
+    "precision": 0.7946428571428571,
+    "utilidad": 43.0,
+    "criterio": "máx. aciertos − 2×errores",
+    "punto_precision_objetivo": {
+     "umbral": 0.7066,
+     "cobertura": 0.25806451612903225,
+     "precision": 0.9
+    }
+   },
+   "cruzada": {
+    "umbral_medio": 0.5208649999999999,
+    "umbral_sd": 0.06156173547748635,
+    "cobertura": 0.7165411646586345,
+    "precision": 0.7681790817064764,
+    "precision_sd": 0.05515665866997338,
+    "n": 20
+   }
+  },
+  "tipo_respuesta": {
+   "exactitud": 0.6775147928994083,
+   "macro_f1": 0.6839340126639664,
+   "umbral": {
+    "umbral": 0.0,
+    "cobertura": 0.878698224852071,
+    "precision": 0.696969696969697,
+    "utilidad": 27.0,
+    "criterio": "máx. aciertos − 2×errores",
+    "punto_precision_objetivo": {
+     "umbral": 0.6735,
+     "cobertura": 0.03550295857988166,
+     "precision": 0.9166666666666666
+    }
+   },
+   "cruzada": {
+    "umbral_medio": 0.25988500000000003,
+    "umbral_sd": 0.26729968064889265,
+    "cobertura": 0.6547337278106509,
+    "precision": 0.7114002436776257,
+    "precision_sd": 0.09984256845189483,
+    "n": 20
+   },
+   "macro_f1_umbral": 0.6839340126639664
+  }
+ }
+}

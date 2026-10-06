@@ -1,0 +1,11 @@
+id: tipo_de_nomina
+termino: "Tipo de nómina"
+sinonimos: ["tipos de nómina"]
+definicion: "Un régimen laboral define el tipo de nómina. Cada tipo tiene características propias: la plantilla con los conceptos, la dirección donde se carga el monto calculado, la moneda y la escala de periodo del proceso."
+en_s10: "En Nóminas se registran hasta 999 tipos, y un proyecto puede usar varios; se asignan al proyecto en el escenario de Datos generales de Gerencia de proyectos y de Nóminas. Ejemplos: construcción civil, régimen común obreros, régimen común empleados y practicantes. Para calcular la nómina, un proceso reúne la plantilla, el tipo de nómina y el periodo o rango de periodos."
+procedimientos_relacionados: [nominas.calcular-la-nomina, nominas.seleccionar-personal-disponible]
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s025  # Manual de Nóminas › 4.1 Tipos de Nóminas (1)
+  - web-https-documentacion-s10peru-com-manual-d-s166  # Manual de Gerencia de Proyectos › 5.1 Generalidades
+  - web-https-documentacion-s10peru-com-manual-d-s029  # Manual de Nóminas › 4.4 Procesos
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

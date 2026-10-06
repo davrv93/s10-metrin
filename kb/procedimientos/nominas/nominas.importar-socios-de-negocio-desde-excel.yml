@@ -1,0 +1,91 @@
+id: nominas.importar-socios-de-negocio-desde-excel
+version: 1
+modulo: nominas
+titulo: "Importar socios de negocio desde una hoja de Excel"
+objetivo: "Registrar de una vez al personal disponible en el catálogo de socios de negocio importando una hoja de Excel con su información, en lugar de registrarlo uno a uno."
+nivel: intermedio
+preguntas:
+  - "cómo importo trabajadores desde excel en nóminas"
+  - "como cargo varios obreros a la vez al catalogo de socios de negocio"
+  - "como subo la lista de trabajadores desde excel al s10"
+  - "importar personal con plantilla de excel en nominas"
+  - "como hago la importacion masiva de socios de negocio"
+  - "como actualizo los datos de los trabajadores con un excel"
+  - "como inporto empleados desde una hoja de excel"
+  - "donde consigo la plantilla de excel para importar trabajadores"
+aliases:
+  - "importar socios de negocio"
+  - "importar trabajadores"
+  - "importación masiva de personal"
+  - "cargar trabajadores desde Excel"
+entidades:
+  modulo: "Nóminas"
+  pantallas: ["Socio de Negocios por tipo"]
+  objetos: ["socio de negocio", "hoja de Excel", "plantilla de Excel"]
+prerrequisitos:
+  - texto: "Llene una hoja de Excel con la información necesaria; solicite la plantilla al consultor."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s043]
+  - texto: "El archivo en Excel que contiene la información debe estar en una carpeta del servidor y cerrado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s044]
+pasos:
+  - n: 1
+    id: "nominas.importar-socios-de-negocio-desde-excel#1"
+    accion: "Ingrese al menú **Catálogos** del módulo de nóminas y elija la opción **Socio de Negocios por tipo**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s044, img-9ffaf2bb47aa-0000]
+    pagina: null
+    fotos:
+      - id: "3bc720dcbc7e"
+        ruta_o_url: "imagenes/manual-de-nominas/9ffaf2bb47aa.png"
+        pagina: null
+        ocr: "Catalogos:\nid Socio de Negocios\nSocio de Negocios por Tipo\n& Catdlogo de Socios de q-nar Tina ~_ Tasos ing Registro: Sex\noe {——— Leta\nOpciones\nOe XC #¥Re Home HARES & Ge\nSAptemetereverce = sds wvzn\na] Emifesa = ‘4 =\n2 ' Resctesin |"
+  - n: 2
+    id: "nominas.importar-socios-de-negocio-desde-excel#2"
+    accion: "Ubique el archivo de Excel que contiene la información a importar."
+    resultado: "El sistema usa un utilitario para importar la información."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s044, img-487d782c3f88-0000]
+    pagina: null
+    fotos:
+      - id: "7e62439503db"
+        ruta_o_url: "imagenes/manual-de-nominas/487d782c3f88.png"
+        pagina: null
+        ocr: "Seleccione el archivo Excel [x]\n2 2 Y Buscar Escritorio\n\nGuta > NSneRSE =~ oo\nir Favoritos * a\n\nUB bescergas Poche) meine Masia. exon\n+) | Hoja del céculo de Microsoft Excel 97\nBi escitoro =fil | Sooo\nNombre: [importacion Masiva - Excel x os Excel Cxls;* =]\nAbrir |v] Cancelar\n\n4"
+  - n: 3
+    id: "nominas.importar-socios-de-negocio-desde-excel#3"
+    accion: "Elija el rango de filas que será importado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s044, img-8f23c55834c5-0000]
+    pagina: null
+    fotos:
+      - id: "b1ef734b4dd5"
+        ruta_o_url: "imagenes/manual-de-nominas/8f23c55834c5.png"
+        pagina: null
+        ocr: "& Importacién de Excel\nArchivo |C:WUsers\\ccruz\\Desktop'importacion Masiva - Excel.xls _Examinar_|\n- Notas\nHoja‘ |1-IMP. CATALOGO GENERAL Q)\n:\nCoie Cerrar\nFilas del: 2 Al #1) Columna:| 8 [IV Actualiza los datos existentesf(3)\nCe | c D E F G H I\ncéaigh|{APetiee Apellido Abreviatura Persona |\"!P°\n1 Paterno Materno Documento\n2 JaLzaMORA GONZALES,  |caRLOS [ESA [03 Obrero 0 for [10202299 |\n3 JSRSNBAR…"
+  - n: 4
+    id: "nominas.importar-socios-de-negocio-desde-excel#4"
+    accion: "Use el botón para elegir el nombre de la columna y haga clic en la cabecera de la columna del Excel. Repita el proceso para todas las columnas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s044]
+    pagina: null
+  - n: 5
+    id: "nominas.importar-socios-de-negocio-desde-excel#5"
+    accion: "Con el cursor en el árbol sobre «Todos los Registros», registre el tipo: «03 Obreros» o, si son empleados, «04 Empleados»."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s044]
+    pagina: null
+  - n: 6
+    id: "nominas.importar-socios-de-negocio-desde-excel#6"
+    accion: "Habilite la opción **Actualiza los datos existentes** para que no haya cruce de información."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s044, img-8f23c55834c5-0000]
+    pagina: null
+  - n: 7
+    id: "nominas.importar-socios-de-negocio-desde-excel#7"
+    accion: "Ejecute el proceso de importación."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s044]
+    pagina: null
+verificacion: []
+errores_frecuentes: []
+relacionados: [nominas.registrar-trabajador-como-socio-de-negocio, nominas.seleccionar-personal-disponible]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s043, manual: "Manual de Nóminas", seccion: "5.1.2 Registro de un Socio de Negocio usando una Hoja de Excel en el catálogo general.", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s044, manual: "Manual de Nóminas", seccion: "5.1.2.1 Registro de Socios de Negocios importando la plantilla de Excel", pagina: null}
+  - {id: img-9ffaf2bb47aa-0000, manual: "Manual de Nóminas", seccion: "9ffaf2bb47aa.png", pagina: null}
+  - {id: img-487d782c3f88-0000, manual: "Manual de Nóminas", seccion: "487d782c3f88.png", pagina: null}
+  - {id: img-8f23c55834c5-0000, manual: "Manual de Nóminas", seccion: "8f23c55834c5.png", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

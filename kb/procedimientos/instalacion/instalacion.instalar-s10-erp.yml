@@ -1,0 +1,164 @@
+id: instalacion.instalar-s10-erp
+version: 1
+modulo: instalacion
+titulo: "Instalar el S10 ERP en un equipo"
+objetivo: "Instalar el S10 ERP en un equipo (cliente, y si no hay servidor también el motor de base de datos) y aplicar sus revisiones, cumpliendo antes las consideraciones previas."
+nivel: intermedio
+preguntas:
+  - "cómo instalo el s10 erp"
+  - "pasos para instalar s10 en mi pc"
+  - "que necesito antes de instalar el s10"
+  - "instalar s10 cliente o servidor"
+  - "me pide directplay al instalar s10"
+  - "como instalo las revisiones del s10"
+  - "como actualizo el s10 con las revisiones"
+  - "no puedo instalar s10, me sale control de cuentas de usuario"
+  - "como instalo el s10 en windows 10 net framework"
+aliases:
+  - "instalar S10"
+  - "instalación del S10 ERP"
+  - "instalar revisiones"
+entidades:
+  modulo: "Instalación"
+  pantallas: ["Activar y desactivar las características de Windows", "Revisiones"]
+  objetos: ["instalador", "DVD de instalación", ".NET Framework 3.5", "antivirus", "motor de base de datos"]
+prerrequisitos:
+  - texto: "Necesita un usuario con permisos para instalar o desinstalar programas, o un usuario Administrador del equipo (preferible)."
+    fuente: [web-https-documentacion-s10peru-com-manual-i-s002]
+  - texto: "En Windows 8 o superior debe estar activado el componente **.NET Framework 3.5 (Incluye .NET 2.0 y 3.0)**, en **Activar y desactivar las características de Windows**."
+    fuente: [web-https-documentacion-s10peru-com-manual-i-s003]
+  - texto: "No debe existir ninguna instalación previa del software; si existe, desinstálela."
+    fuente: [web-https-documentacion-s10peru-com-manual-i-s005]
+  - texto: "Necesita el DVD de instalación."
+    fuente: [web-https-documentacion-s10peru-com-manual-i-s007]
+pasos:
+  - n: 1
+    id: "instalacion.instalar-s10-erp#1"
+    accion: "Desactive su antivirus antes de comenzar, de preferencia hasta que concluya la instalación."
+    fuente: [web-https-documentacion-s10peru-com-manual-i-s004]
+    pagina: null
+    fotos:
+      - id: "e969f28b0cc6"
+        ruta_o_url: "imagenes/manual-instalacion-s10-erp/40709755a7f5.png"
+        pagina: null
+        caption: "Otro punto que debe tener en cuenta, es que debe desactivar su antivirus antes de comenzar con la instalación, de preferencia desactivarlo permanente hasta que se concluya la instalación. (Consulte con su personal de sistema o proveedor si no puede desactivarlo)."
+        ocr: "UMcAfee us Ph SET Sen: Security 5\nView Recent History\nPca] Fed: tine Scanving: On x BB] Be Masiman protection : Get Support\n_\\ Turn on Silent Mode\nFrequently used =\nED sted Pisable Antivirus Auto-Protect\nz > Statistics |\nsetmgs m\nCustomize.\n‘Startup Settings > Block network\nae = © Temporarily disable protection —\nAdvanced setup...\n= Log files\nOpen ESET Smart Security 5\nReset window layout\n5 About…"
+  - n: 2
+    id: "instalacion.instalar-s10-erp#2"
+    accion: "Ejecute el instalador del DVD. Si el sistema muestra el mensaje del componente **DirectPlay**, siga las indicaciones para instalarlo y vuelva a ejecutar el instalador."
+    fuente: [web-https-documentacion-s10peru-com-manual-i-s007]
+    pagina: null
+    fotos:
+      - id: "5e660cd12ad7"
+        ruta_o_url: "imagenes/manual-instalacion-s10-erp/ae052ed62421.png"
+        pagina: null
+        caption: "Si al ejecutar el instalador del DVD, el sistema le muestra el mensaje siguiente, se deben seguir las indicaciones para instalar el componente “DirectPlay” necesario para la ejecución del instalador S10 y otros aplicativos útiles que se mostrarán más adelante."
+        ocr: "BE Una aplicacion desu equipo requere la siguiente caracteristica de Windows: 7\nimg — DvectPiay ees\ni= ide de Ovo RW) 510\nRecaps\n© incraar esta coraceristica\nfps\nall\nores ~> Omir esta instatacién\nConca"
+  - n: 3
+    id: "instalacion.instalar-s10-erp#3"
+    accion: "Cierre el mensaje informativo que pide desactivar el antivirus, si ya lo desactivó."
+    fuente: [web-https-documentacion-s10peru-com-manual-i-s007]
+    pagina: null
+    fotos:
+      - id: "65628e1debb7"
+        ruta_o_url: "imagenes/manual-instalacion-s10-erp/2a8a720b565f.png"
+        pagina: null
+        caption: "Instalado el componente, ya podrá ejecutar el instalador sin problemas, El siguiente mensaje informativo del instalador, nos indica que debemos desactivar el antivirus en lo que dure el proceso de instalación. (Ver “Desactivar antivirus”). Si el antivirus ya fue desactivado, cerrar el mensaje informativo para continuar."
+        ocr: "Instalacion ERP Version : $10 ERP\n\nSr Inicio\noe oN Bi —lnstalacion\n\nRemota EN | ietiente [/|Servidor\nInstalocién \\im\n\naust Informacion\n\n5. £ f Estimado usuario, le recordamos que debe sae )\ncEvacion desactivar temporalmente su anfviras ye acion\n\n& . ia oTarndapieas seriores de 200 6\nUtilitarios | \" CRN AI\n\n——\n% er Yl"
+  - n: 4
+    id: "instalacion.instalar-s10-erp#4"
+    accion: "En la primera ventana del instalador, marque **CLIENTE** (instala S10 en el equipo); marque también **SERVIDOR** (instala el motor de base de datos, por defecto SQL Server 2012) solo si no cuenta con un servidor."
+    fuente: [web-https-documentacion-s10peru-com-manual-i-s007]
+    pagina: null
+    fotos:
+      - id: "8e5669f491d1"
+        ruta_o_url: "imagenes/manual-instalacion-s10-erp/502d8f028519.png"
+        pagina: null
+        caption: "En la primera ventana del instalador se muestran 2 casillas a seleccionar para la instalación. CLIENTE: la casilla cliente instalará S10 en el equipo SERVIDOR: instará un motor de base de datos (por defecto SQL Server 2012). Si cuenta con un servidor, solo debe activar la opción Cliente. Caso contrario active Cliente y Servidor"
+        ocr: "‘= Inatalador S10 ERP - x\nSs0 Serie 70.1\n= Instalacién ERP Mee OE\n= Inicio\nag Manual de instatacion\nje wc aa\nRemota N [Vletiente —_[,Servidor\n[ERP, ere 1\né \\ Fe !\nscactén Rey Ai finaiar a instlacin\nseproaucie yee \\ ce rovatones (cioatacones) a\ncunlos so oncuantran on ls Carpota REVISIONES\neer itl {Deniro det DVD) partir de a revisén R69.\n& (ia ee OTA: No aplicasSeridores de solo 0.\nUstitarios 1\n—r…"
+  - n: 5
+    id: "instalacion.instalar-s10-erp#5"
+    accion: "Si el sistema le muestra el mensaje del control de cuentas de usuario, desactívelo: de otra forma la instalación no podrá completarse."
+    fuente: [web-https-documentacion-s10peru-com-manual-i-s007]
+    pagina: null
+    fotos:
+      - id: "e6f5da11aaac"
+        ruta_o_url: "imagenes/manual-instalacion-s10-erp/35554e2cff48.png"
+        pagina: null
+        caption: "Para este manual, se dejarán activas ambas casillas, a fin de mostrar los pasos completos de instalación. Si al ejecutar el instalador el sistema le muestra el mensaje siguiente, debe desactivar el control de cuentas de usuario, de otra forma la instalación no podrá completarse. (Ver “Desactivar control de cuentas de usuario”)"
+        ocr: "@ Control de cuentas de usuario x\nC1 éQuieres permitir que esta aplicacién de un editor\n desoonodde haga cambios en el PC?\nNombre del programa: Setup.exe\nEditor: Desconocido\nOrigen del archivo: Unidad de CD/DVD\nfoe x\nCambiar Ia frecuencia con la que aparecen estas notificaciones,"
+  - n: 6
+    id: "instalacion.instalar-s10-erp#6"
+    accion: "Lea y acepte los términos del contrato."
+    fuente: [web-https-documentacion-s10peru-com-manual-i-s007]
+    pagina: null
+    fotos:
+      - id: "c6cfbdf741a6"
+        ruta_o_url: "imagenes/manual-instalacion-s10-erp/964e3664bdf0.png"
+        pagina: null
+        caption: "Leemos y aceptamos los términos del contrato."
+        ocr: "S10 ERP - InstallShield Wizard x\nContrato de licencia\nLea cuidadosamente el acuerdo de licencia siguiente.\n[Severn nS nN On TUN NNTP SSNPS TSO SN SSNS O VETS TOI SOON WINNT OT WNTISNNSSTSN GRINS SSN OTIST\nPresione la tecle AV PAG para ver el resto del acuerdo.\n|CONTRATO DE LICENCIA PARA USUARIO FINAL - S10 A\nIMPORTANTE. LEA DETENIDAMENTE: este Contiato de licencia para usuario final\ndel $10 {ICLUF…"
+  - n: 7
+    id: "instalacion.instalar-s10-erp#7"
+    accion: "Determine en qué parte del equipo se instalará el software; puede cambiar la ruta de instalación con el botón **Examinar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-i-s007]
+    pagina: null
+    fotos:
+      - id: "f0b9d5071aef"
+        ruta_o_url: "imagenes/manual-instalacion-s10-erp/e51a924b35e7.png"
+        pagina: null
+        caption: "Determinamos en que parte del equipo se instalará el software, podemos cambiar la ruta de instalación con el botón “Examinar”"
+        ocr: "SIOERD - stall Wizard x\n—~\n1 Zee ~\na>\nesa\nIn Thi BAX RN"
+  - n: 8
+    id: "instalacion.instalar-s10-erp#8"
+    accion: "Continúe para que se instalen los componentes necesarios y luego el S10-ERP en la ruta indicada."
+    fuente: [web-https-documentacion-s10peru-com-manual-i-s007, web-https-documentacion-s10peru-com-manual-i-s008]
+    pagina: null
+    fotos:
+      - id: "6f88a1e2c104"
+        ruta_o_url: "imagenes/manual-instalacion-s10-erp/066c5f81ac9d.png"
+        pagina: null
+        caption: "Completada la instalación de los componentes, se comenzará a instalar S10-ERP en la ruta que le especificamos en pasos anteriores."
+        ocr: "S10 ERP - InstallShield Wizard x\nEl programa de instalacién S10 ERP esta realizando las operaciones solicitadas.\nInstalando Copiando archivos ejecutables\nC:\\..\\RO57_113_02_s10_02_GrupodprobacionUsuario_Eliminar (NC).sql\ncr} Po\n\\ — ~~\n¢ \\ \\ya\n\\ WSS\n=e 2)\n~<a\nHeal Sra\nContacto [TT . r NT - -\na) Dh AOR AANA"
+  - n: 9
+    id: "instalacion.instalar-s10-erp#9"
+    accion: "Si dejó marcada la casilla **Servidor**, al cerrar la ventana anterior se muestra el instalador del motor de base de datos: dé clic en **instalar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-i-s008]
+    pagina: null
+    fotos:
+      - id: "d61e21ce80ee"
+        ruta_o_url: "imagenes/manual-instalacion-s10-erp/fe33afcdf0dd.png"
+        pagina: null
+        caption: "Si hemos dejado marcada la casilla “Servidor” al cerrar la ventana anterior se mostrará el instalador del motor de base de datos que viene por defecto con el instalador de S10, dar clic en instalar para iniciar la instalación."
+        ocr: "al Instalador del Motor de Microsoft SQL Server\nDatos\nRuta S10 [c\\s702000 L.-J\nsere resco SER\nI Instalar SQL Server Management\nInstancias SQL (Locales) '\n| | Nombre | Version\nIMicrosoft ~—~*\nSQL Server 2012\nResultado\na|\na\nv|"
+  - n: 10
+    id: "instalacion.instalar-s10-erp#10"
+    accion: "Para aplicar las revisiones, copie la carpeta **Revisiones** del instalador a la ruta C:\\S102000 de su PC, entre a ella y haga doble clic en el archivo **Instalador de revisiones S10**."
+    fuente: [web-https-documentacion-s10peru-com-manual-i-s009]
+    pagina: null
+    fotos:
+      - id: "789e764cf610"
+        ruta_o_url: "imagenes/manual-instalacion-s10-erp/ac48f72e72f2.png"
+        pagina: null
+        caption: "En el contenido del instalador del S10ERP se encuentra la carpeta Revisiones, debe copiar y pegar dicha carpeta a la ruta C:\\S102000 en su PC, ingresar a la carpeta Revisiones y dar doble clic en el archivo Instalador de revisiones S10 para iniciar la instalación."
+        ocr: "Rie Herramientas de aplicacion\nInicio Compartir Vista Administrar ¥@\n© — > PLM > Esteequipo » Discolocal (C:) » $102000 > Revisiones ve\nFear ee Nombre a Fecha de modifica... Tipo Tamaito\n1B Descargas [ © Instalador de revisiones $10 27/03/2019 12:54... Archivo por lotes .. ‘5 KB\nBi Escritorio EPS Actuctzacron Pe 16/01/2018 10:49... Aplicacion 108,306 KB\nBi Sitios recientes BB sto Actualizacion ERP…"
+verificacion:
+  - texto: "Si desmarcó la casilla Servidor, la instalación base de S10 culmina en la ventana final de instalación de S10-ERP."
+    fuente: [web-https-documentacion-s10peru-com-manual-i-s008]
+errores_frecuentes:
+  - sintoma: "Al ejecutar el instalador aparece un mensaje sobre el componente DirectPlay."
+    solucion: "Siga las indicaciones para instalar el componente DirectPlay, necesario para el instalador S10; luego podrá ejecutar el instalador sin problemas."
+    fuente: [web-https-documentacion-s10peru-com-manual-i-s007]
+  - sintoma: "No se puede activar el componente .NET Framework."
+    solucion: "Debe activarse con un usuario con permisos de administrador y descargarse con Windows Update; reinicie si el equipo lo pide. De no poder activarlo, consulte con un técnico."
+    fuente: [web-https-documentacion-s10peru-com-manual-i-s003]
+relacionados: [instalacion.sacar-copia-de-seguridad-de-la-base-de-datos]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-i-s002, manual: "Manual de Instalación S10 ERP [VIDEO]", seccion: "1.1.- Permisos de administrador", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-i-s003, manual: "Manual de Instalación S10 ERP [VIDEO]", seccion: "1.2.- Componente Net. Framework 2.0", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-i-s005, manual: "Manual de Instalación S10 ERP [VIDEO]", seccion: "1.4.- Verificación de versiones S10 instaladas", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-i-s007, manual: "Manual de Instalación S10 ERP [VIDEO]", seccion: "2.- Instalación de S10 – ERP (1)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-i-s004, manual: "Manual de Instalación S10 ERP [VIDEO]", seccion: "1.3.- Desactivar Antivirus", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-i-s008, manual: "Manual de Instalación S10 ERP [VIDEO]", seccion: "2.- Instalación de S10 – ERP (2)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-i-s009, manual: "Manual de Instalación S10 ERP [VIDEO]", seccion: "3.- Actualización de S10 (Instalación de revisiones)", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

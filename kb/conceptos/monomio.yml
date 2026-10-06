@@ -1,0 +1,11 @@
+id: monomio
+termino: "Monomio"
+sinonimos: ["monomios"]
+definicion: "Componente de la fórmula polinómica: en el Perú una fórmula está constituida por la incidencia de hasta 8 monomios, y el coeficiente de incidencia mínimo de cada uno es 0,05. Los elementos con incidencia menor se pueden agrupar, hasta 3, en monomios compuestos, cuyos elementos se pueden llamar submonomios."
+en_s10: "Se forman en la pestaña de conformación de monomios del escenario de la Fórmula polinómica, tomando los datos del agrupamiento preliminar: a cada índice unificado se le asigna un número de monomio, y los que llevan el mismo número quedan agrupados como submonomios; solo el de mayor porcentaje hereda los símbolos."
+ejemplo: "Orden sugerido por el manual, no obligatorio: 1 Mano de obra incluidas leyes sociales; 2 a 5 Materiales; 6 Equipo; 7 Varios; 8 Gastos generales y utilidad."
+procedimientos_relacionados: [presupuestos.elaborar-formula-polinomica]
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s063  # Manual de Presupuestos › 3.10.1 Requisitos para el Perú
+  - web-https-documentacion-s10peru-com-manual-d-s066  # Manual de Presupuestos › 3.10.4 Conformación de monomios
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}
