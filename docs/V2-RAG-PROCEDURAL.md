@@ -1,8 +1,11 @@
 # Metrín V2: RAG procedural multimodal
 
-Estado: especificación y plan (06-10-2026). Responde al megaprompt «ERP Assistant V2 · RAG procedural multimodal +
-decision engine local» y a sus nueve entregables de la fase 40. V1 no cambia: V2 vive detrás de un interruptor y está
-apagada por defecto.
+Estado: **implementado** (06-10-2026) en la rama `feat/metrin-v2-traza` de `github.com/davrv93/s10-metrin`
+(subida, sin fusionar a `main` ni desplegar). Responde al megaprompt «ERP Assistant V2 · RAG procedural multimodal +
+decision engine local» y a sus nueve entregables de la fase 40. V1 no cambia (prueba de igualdad byte a byte). La V2
+está **disponible** por petición y desde el selector de la página (`AGENT_V2_ENABLED=true` en el compose), pero **no es
+la versión por defecto** (`AGENT_VERSION=v1`, `AGENT_V2_PERCENTAGE=0`). Resultados en §14; lo que falta, en
+[`PENDIENTES.md`](../PENDIENTES.md).
 
 Documentos relacionados:
 
@@ -11,6 +14,8 @@ Documentos relacionados:
 - `kb/catalogos/`, `kb/conceptos/` y `metrin/plantillas/respuestas.yml`: intenciones, tipo de respuesta, glosario y
   plantillas.
 - `metrin/eval/BUSQUEDA.md`: búsqueda híbrida y reranker, con cifras.
+- `metrin/eval/V1_VS_V2.md`: benchmark V1 frente a V2; `metrin/eval/MODELOS.md`: modelos locales.
+- [`PENDIENTES.md`](../PENDIENTES.md): lo que queda por hacer.
 
 ---
 
@@ -197,16 +202,20 @@ Degradación progresiva:
 
 ## 8. Archivos nuevos
 
-| Archivo | Qué es | Estado |
+| Archivo | Qué es | Estado (06-10-2026) |
 |---|---|---|
-| `kb/procedimientos/**.yml` + `ESQUEMA.md`, `INDICE.json`, `COBERTURA.md` | Procedimientos con pasos, fotos y fuentes | Agente en curso |
-| `herramientas/validar_procedimientos.py` | Validador de procedimientos | Agente en curso |
-| `kb/catalogos/intenciones*.yml`, `tipo_respuesta*.yml`, `ruido.yml`, `EVALUACION.md` | Catálogos con su prueba aparte | Agente en curso |
-| `kb/conceptos/*.yml` | Glosario citado | Agente en curso |
-| `metrin/plantillas/respuestas.yml` | Plantillas instruccionales | Agente en curso |
-| `metrin/internal/busqueda/`, `metrin/internal/rerank/`, `metrin/cmd/evalbusqueda/`, `metrin/eval/` | Búsqueda híbrida, reranker y evaluación | Agente en curso |
-| `metrin/internal/v2/` | `contexto.go`, `tipo.go`, `plan_consulta.go`, `evidencia.go`, `planificador.go`, `gate.go`, `memoria.go`, `motores.go`, `presupuesto.go` | Fase 2 |
-| `metrin/eval/v2_oro.jsonl` + `cmd/evalv2` | Benchmark V1 frente a V2 | Fase 2 |
+| `kb/procedimientos/**.yml` + `ESQUEMA.md`, `INDICE.json`, `COBERTURA.md` | 60 procedimientos (645 pasos, 380 con foto) + 10 de reserva | Hecho · `revisado_por_humano: false` |
+| `herramientas/validar_procedimientos.py` | Validador: citas (id, manual), negritas en la fuente, fotos del paso | Hecho · 0 errores |
+| `kb/catalogos/intenciones*.yml`, `tipo_respuesta*.yml`, `ruido.yml`, `EVALUACION.md` | Catálogos con su prueba aparte | Hecho |
+| `kb/conceptos/*.yml`, `SIN_FUENTE.md` | Glosario de 50 términos citados; 6 definidos por uso, con aviso visible | Hecho |
+| `metrin/plantillas/respuestas.yml` | 22 plantillas instruccionales (usted) | Hecho |
+| `metrin/internal/busqueda/`, `metrin/internal/rerank/`, `metrin/cmd/evalbusqueda/` | Búsqueda híbrida BM25F + vector (RRF), reranker llama-server, evaluación | Hecho |
+| `metrin/internal/v2/` | Núcleo: config, contexto, tipo, decisión, presupuesto, memoria, referencia, orquestador, traza | Hecho |
+| `metrin/internal/v2/conocimiento/` | Carga de YAML, recuperador, constructor del plan, generación, quality gate | Hecho |
+| `metrin/internal/traza/` | Traza de V1 (18 etapas) y V2 | Hecho |
+| `metrin/eval/v2_oro.jsonl` + `cmd/evalv2` | Benchmark V1 frente a V2 (194 casos sintéticos) | Hecho |
+| `metrin/eval/modelos/`, `herramientas/benchmark_modelos.py` | Benchmark de modelos locales | Hecho |
+| `metrin/descargar-reranker.sh` + servicio `reranker` del compose | Reranker en despliegue | Hecho · sin probar en el compose real (solo con `docker run`) |
 
 ## 9. Riesgos
 
@@ -221,23 +230,23 @@ Degradación progresiva:
 
 ## 10. Plan por fases (orden del megaprompt)
 
-| Fase | Contenido | Estado |
+| Fase | Contenido | Estado (06-10-2026) |
 |---|---|---|
 | 0 | Auditoría (§1–2) | Hecha |
-| 1 | Interruptor V2 + prueba de igualdad de V1 | Fase 2 de integración |
-| 2 | Estado estructurado | Ídem |
-| 3 | Búsqueda híbrida | Agente en curso |
-| 4 | Reranker | Agente en curso |
-| 5 | Ingestión procedural (procedimientos YAML desde los manuales) | Agente en curso |
-| 6 | Asociación paso ↔ foto | Agente en curso (dentro de los YAML) |
-| 7 | Recuperación de procedimientos | Integración |
-| 8 | Plan de respuesta estructurado | Integración |
-| 9 | Motor de generación local | Integración; benchmark de modelos en la Mac antes de elegir |
-| 10 | Quality gate | Integración |
-| 11 | Motor de decisión | Integración (reglas por defecto; `jeva.cpp` si el clasificador duda) |
-| 12 | Recursividad controlada | Integración |
-| 13 | Observabilidad (traza V2) | Integración, sobre la traza que ya se está construyendo |
-| 14 | Benchmark V1 frente a V2 | Al final |
+| 1 | Interruptor V2 + prueba de igualdad de V1 | Hecha |
+| 2 | Estado estructurado (hechos, inferencias, desconocidos) | Hecha |
+| 3 | Búsqueda híbrida | Hecha |
+| 4 | Reranker | Hecha (también elige procedimiento y concepto) |
+| 5 | Ingestión procedural (procedimientos YAML desde los manuales) | Hecha (60) |
+| 6 | Asociación paso ↔ foto | Hecha (exactitud 100 % en el benchmark) |
+| 7 | Recuperación de procedimientos | Hecha |
+| 8 | Plan de respuesta estructurado | Hecha |
+| 9 | Motor de generación local | Medido: **plantillas por defecto, sin LLM** (`metrin/eval/MODELOS.md`) |
+| 10 | Quality gate | Hecha |
+| 11 | Motor de decisión | Hecha con reglas; motor local sin probar en vivo dentro de V2 |
+| 12 | Recursividad controlada | Hecha (límites del megaprompt) |
+| 13 | Observabilidad (traza V2) | Hecha (panel y pipeline a pantalla completa) |
+| 14 | Benchmark V1 frente a V2 | Hecho (§14) |
 
 Ninguna fase avanza si rompe pruebas. Después de cada una:
 
@@ -331,3 +340,29 @@ Lo práctico:
   reranker, PAS 60,0 %, pero hasta 3 s más lenta por llamada), o se apaga con `V2_RERANK_CLASES=ninguna` o
   `RERANK_URL=` (sin reranker: p50 de 4 ms por turno).
 - RAM total de Metrín con el reranker: ~300 MiB del contenedor de Metrín (benchmark) más la del reranker.
+
+## 14. Resultados (06-10-2026)
+
+Benchmark `metrin/eval/v2_oro.jsonl` (194 casos **sintéticos**, 212 turnos), contenedor de prueba 4762. V1 con MLX
+encendido y el arreglo del `hilo`.
+
+| Métrica | V1 | V2 sin reranker | V2 con reranker solo en fragmentos | **V2 con reranker en las tres clases (defecto)** |
+|---|---|---|---|---|
+| PROCEDURAL ANSWER SUCCESS | 0,0 % | 60,0 % | 60,0 % | **81,8 %** (45/55) |
+| Acierto de procedimiento | 25,6 % | 63,2 % | 63,2 % | **76,8 %** |
+| Acierto de concepto | 0 % | 75,0 % | 75,0 % | 80,6 % |
+| Clasificación del tipo | 37,6 % | 72,2 % | 73,2 % | 77,8 % |
+| Invención | **17,1 %** | 0 % | 0 % | **0 %** |
+| Falsa abstención | 8,0 % | 6,1 % | 5,5 % | **1,8 %** |
+| Abstención correcta | 0/12 | 12/12 | 12/12 | 11/12 |
+| MRR@10 | 0,163 | 0,551 | 0,557 | 0,666 |
+| Latencia p50 / p95 | 7,1 s / 28 s | 4 ms / 55 ms | 4 ms / 1,7 s | 0,9 s / 2,1 s |
+
+Cómo leerlo:
+
+- **Optimista.** Los casos son sintéticos y algunas reglas (entre ellas la regla «no quita» del reranker) se
+  diseñaron mirando este mismo benchmark. Falta un conjunto de preguntas reales.
+- **El reranker en CPU no llega a tiempo.** Medido en Docker solo con CPU: p50 16,7 s y p95 45,6 s por llamada. Con
+  `RERANK_TIMEOUT_MS=3000` la V2 espera y vuelve al orden léxico: en un servidor sin GPU rinde como «sin reranker»
+  (60 %) y tarda ~3 s más.
+- La generación con LLM no mejora a las plantillas y rompe negritas e ids (`MODELOS.md`).

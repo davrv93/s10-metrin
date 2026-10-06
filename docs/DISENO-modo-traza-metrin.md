@@ -1,6 +1,14 @@
 # Metrín: modo traza en el chat
 
-Estado: diseño propuesto (06-10-2026). No implementado.
+Estado: **implementado** (06-10-2026) en la rama `feat/metrin-v2-traza`. Contrato en
+[`CONTRATO-traza-metrin.md`](CONTRATO-traza-metrin.md) (18 etapas de V1 + etapas V2). Se activa con `METRIN_TRAZA=1`
+y `"traza": true` en la petición; la página muestra el botón «Traza», el panel lateral y el pipeline a pantalla
+completa. Diferencias con este diseño:
+
+- **Permiso por rol (§6):** no hecho. Metrín no tiene sesiones; la única barrera es `METRIN_TRAZA`.
+- **Números:** con 1 decimal en `ms` y 3 en puntajes (el contrato manda sobre «valores crudos» de §5.1).
+- **La × del panel** lo cierra sin apagar el modo; el botón de la cabecera lo apaga.
+- Lo pendiente está en [`PENDIENTES.md`](../PENDIENTES.md).
 Ámbito: servicio `metrin` (Go, `s10-conocimiento/metrin/`), página del chat (`internal/servidor/pagina.html`).
 Público de este documento: quien implemente el modo traza y quien decida qué mejorar en Metrín.
 
