@@ -1,0 +1,22 @@
+id: presupuestos.borrador
+version: 1
+modulo: presupuestos
+titulo: "Borrador en reserva"
+objetivo: "No se carga por defecto."
+nivel: basico
+preguntas: ["borrador"]
+aliases: ["borrador", "reserva"]
+entidades: {modulo: "Presupuestos", pantallas: [], objetos: ["borrador"]}
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "presupuestos.borrador#1"
+    accion: "Pulse **Grabar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050]
+    pagina: null
+verificacion: []
+errores_frecuentes: []
+relacionados: []
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s050, manual: "Manual de Presupuestos", seccion: "4.2 Registro de metrados", pagina: null}
+revision: {generado: 2026-10-06, por: prueba, revisado_por_humano: false}

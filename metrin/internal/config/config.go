@@ -8,6 +8,9 @@ import (
 	"os"
 	"strconv"
 	"strings"
+
+	"rag-go/internal/traza"
+	"rag-go/internal/v2"
 )
 
 type Config struct {
@@ -34,6 +37,14 @@ type Config struct {
 	JEVOrigen string // «origen» de la traza (p. ej. "reportes")
 
 	Puerto string
+
+	// Modo traza del chat (METRIN_TRAZA=1|true). Apagado por defecto: /ask
+	// responde igual aunque la petición traiga "traza": true.
+	Traza bool
+
+	// V2 de Metrín (AGENT_VERSION, AGENT_V2_ENABLED, AGENT_V2_PERCENTAGE,
+	// límites, DECISION_*, V2_TIPO_*): apagada por defecto. Ver internal/v2.
+	V2 v2.Config
 }
 
 // CargarEnv mete en el entorno las claves del fichero que no estén ya
@@ -89,6 +100,8 @@ func Leer() Config {
 		JEVTrazas:      def("JEV_TRAZAS", ""),
 		JEVOrigen:      def("JEV_ORIGEN", "metrin"),
 		Puerto:         def("RAG_PUERTO", "4760"),
+		Traza:          traza.Habilitada(os.Getenv("METRIN_TRAZA")),
+		V2:             v2.LeerConfig(),
 	}
 }
 

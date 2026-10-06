@@ -1,0 +1,5 @@
+id: sin_manual
+termino: "Catálogo"
+definicion: "Cita un id que está en dos manuales, sin decir cuál."
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s010

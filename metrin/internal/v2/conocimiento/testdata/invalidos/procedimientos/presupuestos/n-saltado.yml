@@ -1,0 +1,13 @@
+id: presupuestos.n-saltado
+titulo: "Pasos saltados"
+pasos:
+  - n: 1
+    id: "presupuestos.n-saltado#1"
+    accion: "Uno."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050]
+  - n: 3
+    id: "presupuestos.n-saltado#3"
+    accion: "Tres."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s050, manual: "Manual de Presupuestos"}

@@ -84,6 +84,34 @@ services:
       JEV_TRAZAS: ${JEV_TRAZAS:-/srv/trazas/trazas.jsonl}
       JEV_ORIGEN: ${JEV_ORIGEN:-metrin}
       JEV_ORIGEN_CHAT: ${JEV_ORIGEN_CHAT:-metrin-chat}
+      # Modo traza del chat (1|true lo habilita; ver docs/CONTRATO-traza-metrin.md).
+      METRIN_TRAZA: ${METRIN_TRAZA:-0}
+      # V2 de Metrín (docs/V2-RAG-PROCEDURAL.md): APAGADA por defecto; ver metrin/.env.example.
+      AGENT_VERSION: ${AGENT_VERSION:-v1}
+      AGENT_V2_ENABLED: ${AGENT_V2_ENABLED:-false}
+      AGENT_V2_PERCENTAGE: ${AGENT_V2_PERCENTAGE:-0}
+      MAX_AGENT_STEPS: ${MAX_AGENT_STEPS:-5}
+      MAX_DECISION_CALLS: ${MAX_DECISION_CALLS:-4}
+      MAX_SEARCH_ITERATIONS: ${MAX_SEARCH_ITERATIONS:-2}
+      MAX_TOOL_CALLS: ${MAX_TOOL_CALLS:-5}
+      MAX_GENERATIONS: ${MAX_GENERATIONS:-1}
+      MAX_REGENERATIONS: ${MAX_REGENERATIONS:-1}
+      DECISION_TIMEOUT_MS: ${DECISION_TIMEOUT_MS:-1500}
+      GENERATION_TIMEOUT_MS: ${GENERATION_TIMEOUT_MS:-5000}
+      DECISION_ENGINE: ${DECISION_ENGINE:-reglas}
+      DECISION_MODEL: ${DECISION_MODEL:-}
+      # Desde el contenedor, el servidor de decisiones de la Mac es host.docker.internal:8765.
+      DECISION_URL: ${DECISION_URL:-}
+      V2_TIPO_MODELO: ${V2_TIPO_MODELO:-/srv/modelos/clasificador-tipo-respuesta-candidato.json}
+      V2_TIPO_UMBRAL: ${V2_TIPO_UMBRAL:-0.40}
+      V2_TIPO_MARGEN: ${V2_TIPO_MARGEN:-0.08}
+      V2_EVIDENCIA_MIN: ${V2_EVIDENCIA_MIN:-0}
+      # Búsqueda de fragmentos de la V2 (hibrida|lexica) y reranker local: VACÍO = apagado (ver metrin/.env.example).
+      V2_BUSQUEDA: ${V2_BUSQUEDA:-hibrida}
+      RERANK_URL: ${RERANK_URL:-}
+      RERANK_TIMEOUT_MS: ${RERANK_TIMEOUT_MS:-3000}
+      RERANK_TOP_N: ${RERANK_TOP_N:-20}
+      RERANK_MAX_RUNAS: ${RERANK_MAX_RUNAS:-800}
     volumes:
       - ./kb:/kb:ro
       - ./data:/datos:ro

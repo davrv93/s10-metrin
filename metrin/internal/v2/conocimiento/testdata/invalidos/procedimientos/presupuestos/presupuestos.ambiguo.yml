@@ -1,0 +1,18 @@
+id: presupuestos.ambiguo
+modulo: presupuestos
+titulo: "Cita ambigua y cita fuera de la tabla"
+pasos:
+  - n: 1
+    id: "presupuestos.ambiguo#1"
+    accion: "Pulse **Grabar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050]
+  - n: 2
+    id: "presupuestos.ambiguo#2"
+    accion: "Pulse **Cerrar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s999]
+    fotos:
+      - {ruta_o_url: "../../etc/passwd", pagina: null}
+      - {id: "000000000000", ruta_o_url: "imagenes/manual-de-almacenes/ccc333ccc333.png", pagina: null}
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s050, manual: "Manual de Presupuestos"}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s050, manual: "Manual de Almacenes"}

@@ -1,0 +1,9 @@
+id: presupuestos.repetido
+modulo: presupuestos
+titulo: "Duplicado"
+pasos:
+  - n: 1
+    accion: "Pulse **Grabar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s050, manual: "Manual de Presupuestos"}
