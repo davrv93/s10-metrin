@@ -15,6 +15,12 @@ Este contrato lo comparten el servicio Go (`metrin/internal/traza`, `rag`, `serv
 
 `POST /ask` acepta, además de lo actual (`pregunta`, `k`, `hilo`, `source`), el campo `"traza": true`.
 
+`POST /ask/stream` (NDJSON, lo que usa la página) acepta lo mismo. Emite `{"tipo":"delta","texto":…}` según el modelo
+escribe y termina con `{"tipo":"fin","respuesta":{…}}`, donde `respuesta` es **el mismo JSON que daría `/ask`**: con
+`traza` si se pidió y con `plan`, `memoria` y `version` en un turno V2. Un turno V2 no emite deltas (sus plantillas
+salen enteras en `fin`). Si falla: `{"tipo":"error","error":…,"traza":…}` (la traza, solo si se pidió). Con traza, la
+cabecera es `Cache-Control: no-store`.
+
 ## Respuesta: clave `traza`
 
 ```json
