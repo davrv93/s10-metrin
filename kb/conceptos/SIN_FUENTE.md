@@ -42,10 +42,11 @@ solo lo que dicen los manuales oficiales sobre su lugar y uso en S10, y cada arc
 primeros que debe revisar una persona (o retirar, si se exige definición formal): `metrado`, `partida`,
 `subpresupuesto`, `titulo` y `escenario`.
 
-## Pendiente de decisión del usuario
+## Decisión del usuario: mantener con aviso
 
-Fecha: **06-10-2026**. Estado: **pendiente**. Ningún YAML se cambió al abrir esta sección: los términos siguen
-cargados y V2 los usa para responder «¿qué es X?».
+Fecha: **06-10-2026**. Estado: **decidido: opción 1, mantener con aviso** para los seis términos. Los YAML siguen
+cargados y V2 los usa para responder «¿qué es X?». Para que el aviso cumpla su función, V2 lo muestra en la respuesta
+(ver «Dónde se ve el aviso»). `revisado_por_humano` sigue en `false` hasta que una persona los lea contra el ERP.
 
 Los cinco términos de la sección anterior tienen `.yml`, pero las fuentes no traen una definición formal («X es…»):
 su `definicion` está **armada por uso** a partir de lo que dicen los manuales oficiales (dónde se registra, qué
@@ -81,12 +82,12 @@ pregunta **no lo ve** en la respuesta (comprobado en el código del 06-10-2026).
 
 | Término | Decisión | Fecha | Quién |
 |---|---|---|---|
-| Metrado | pendiente | 06-10-2026 | — |
-| Partida | pendiente | 06-10-2026 | — |
-| Subpresupuesto | pendiente | 06-10-2026 | — |
-| Título | pendiente | 06-10-2026 | — |
-| Escenario | pendiente | 06-10-2026 | — |
-| CTS | pendiente | 06-10-2026 | — |
+| Metrado | mantener con aviso | 06-10-2026 | usuario |
+| Partida | mantener con aviso | 06-10-2026 | usuario |
+| Subpresupuesto | mantener con aviso | 06-10-2026 | usuario |
+| Título | mantener con aviso | 06-10-2026 | usuario |
+| Escenario | mantener con aviso | 06-10-2026 | usuario |
+| CTS | mantener con aviso | 06-10-2026 | usuario |
 
 En CTS, la opción 2 dejaría «¿qué es la CTS?» (`conc-009`) sin concepto; volver a la definición del temario no es
 una opción, porque es una fuente de marketing.
