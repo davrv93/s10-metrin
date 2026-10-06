@@ -19,7 +19,7 @@ type Concepto struct {
 	Archivo string `json:"archivo"`
 	Linea   int    `json:"linea"`
 	Modulo  string `json:"modulo,omitempty"`
-	Notas   string `json:"notas,omitempty"`
+	// Notas: en tipos.ConceptoDef desde el 06-10-2026 (viaja en el plan).
 
 	citas    []citaYAML              // como vienen en el YAML
 	tabla    map[string]tipos.Fuente // id → (id, manual), armada por Base al resolver
@@ -37,6 +37,15 @@ func (c *Concepto) Par(id string) (tipos.Fuente, bool) {
 
 // Nombres: el término y sus sinónimos.
 func (c *Concepto) Nombres() []string { return unicos(append([]string{c.Termino}, c.Sinonimos...)) }
+
+// DefinidoPorUso: las fuentes no traen una definición formal del término y su «definicion» describe solo su uso en
+// S10 (kb/conceptos/SIN_FUENTE.md, «Incluidos con descripción de uso»). La marca vive en `notas`, que lo advierte con
+// «definición formal» o «por uso» (sin distinguir tildes ni mayúsculas). TestReal_ConceptosPorUso comprueba contra
+// kb/ que son exactamente los seis términos de la tabla de SIN_FUENTE.md.
+func (c *Concepto) DefinidoPorUso() bool {
+	n := plegar(c.Notas)
+	return strings.Contains(n, "definicion formal") || strings.Contains(n, "por uso")
+}
 
 // citaYAML: una cita del concepto. Hoy los YAML traen solo el id, con el manual en el comentario de
 // la línea («- web-…-s045  # Manual de Presupuestos › 3.5.2.5 Ingreso de metrados…»); también se
@@ -166,8 +175,9 @@ func LeerConceptos(ruta string, datos []byte) ([]*Concepto, []ErrorCarga) {
 				ID: id, Termino: strings.TrimSpace(y.Termino), Sinonimos: unicos(append(y.Sinonimos, y.Aliases...)),
 				Definicion: strings.TrimSpace(y.Definicion), EnS10: strings.TrimSpace(enS10), Ejemplo: strings.TrimSpace(y.Ejemplo),
 				ProcedimientosRelacionados: unicos(append(y.ProcedimientosRelacionados, y.Relacionados...)),
+				Notas:                      strings.TrimSpace(y.Notas),
 			},
-			Archivo: ruta, Linea: it.Line, Modulo: firstNonEmpty(y.Modulo, y.Entidades.Modulo), Notas: y.Notas,
+			Archivo: ruta, Linea: it.Line, Modulo: firstNonEmpty(y.Modulo, y.Entidades.Modulo),
 			citas: y.Fuente,
 		}
 		// Una tabla «fuentes» (como la de los procedimientos) manda sobre el comentario.

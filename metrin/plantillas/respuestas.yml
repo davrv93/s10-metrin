@@ -109,6 +109,7 @@ slots:
   TERMINO: "kb/conceptos → termino"
   DEFINICION: "kb/conceptos → definicion"
   EN_S10: "kb/conceptos → en_s10"
+  TERMINO_POR_USO: "kb/conceptos → termino, SOLO si el término está definido por uso (su `notas` lo advierte; kb/conceptos/SIN_FUENTE.md)"
   TERMINO_A: "primer término comparado"
   TERMINO_B: "segundo término comparado"
   DEFINICION_A: "definición del primer término (glosario)"
@@ -359,21 +360,26 @@ plantillas:
     tipo: mensaje
     acciones: [explicar_concepto, reformular_paso, concepto]
     animo: happy
-    protegidos: [TERMINO, DEFINICION, EN_S10, CITA, TAREA_SUGERIDA]
+    protegidos: [TERMINO, DEFINICION, EN_S10, CITA, TAREA_SUGERIDA, TERMINO_POR_USO]
     prohibido: [inventar_definicion, ampliar_definicion, inventar_ejemplo, inventar_menu, inventar_cita,
                 hacer_multiples_preguntas, cambiar_trato]
-    max_frases: 7
-    forma: "{definicion}\n{en_s10}\n{cita}\n\n{oferta}"
+    max_frases: 8
+    forma: "{definicion}\n{en_s10}\n{aviso}\n{cita}\n\n{oferta}"
     partes:
       definicion: ["**{{TERMINO}}**: {{DEFINICION}}", "Le cuento qué es **{{TERMINO}}**: {{DEFINICION}}",
                    "Así lo describe la documentación de S10 — **{{TERMINO}}**: {{DEFINICION}}"]
       en_s10: ["En S10: {{EN_S10}}", "Dónde aparece en S10: {{EN_S10}}"]
+      # Aviso de los términos DEFINIDOS POR USO (kb/conceptos/SIN_FUENTE.md, decisión del usuario del 06-10-2026:
+      # «mantener con aviso»). TERMINO_POR_USO solo llega si el `notas` del concepto lo marca; si no, no sale. La
+      # misma línea viaja en plan.concepto.aviso y la página la pinta como nota en la burbuja de CONCEPT.
+      aviso: ["Los manuales no traen una definición formal de «{{TERMINO_POR_USO}}»; se lo describo por su uso en S10."]
       cita: ["_({{CITA}})_"]
       oferta: ["¿Quiere que le enseñe a {{TAREA_SUGERIDA}}?", "Si quiere, le guío paso a paso para {{TAREA_SUGERIDA}}.",
                "¿Le muestro cómo {{TAREA_SUGERIDA}} en S10?"]
-    fijas: {cita: 0}
+    fijas: {cita: 0, aviso: 0}
     respaldo:
       en_s10: ""
+      aviso: ""
       oferta: "¿Le queda alguna duda sobre **{{TERMINO}}**?"
 
   COMPARACION:

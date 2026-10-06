@@ -44,6 +44,9 @@ type Plantillas struct {
 	embebidas      map[string]Plantilla
 }
 
+// avisoPorUsoEmbebido: la parte «aviso» de CONCEPTO cuando el archivo no la trae (kb/conceptos/SIN_FUENTE.md).
+const avisoPorUsoEmbebido = "Los manuales no traen una definición formal de «{{TERMINO_POR_USO}}»; se lo describo por su uso en S10."
+
 // Plantillas mínimas embebidas, con los mismos slots que el archivo. Trato de usted. Sin negritas
 // propias: el quality gate exige que todo ** ** venga de la fuente (o del módulo/término del plan).
 var plantillasEmbebidas = map[string]string{
@@ -57,7 +60,7 @@ var plantillasEmbebidas = map[string]string{
 	"VERIFICACION":            "Para comprobar el paso {{N}}: {{VERIFICACION}}",
 	"PROCEDIMIENTO_FIN":       "Esos eran los {{TOTAL_PASOS}} pasos para {{TAREA}}.",
 	"ERROR_FRECUENTE":         "El manual describe ese caso: {{SINTOMA}}\nLo que indica: {{SOLUCION}}\n?_({{CITA}})_",
-	"CONCEPTO":                "{{TERMINO}}: {{DEFINICION}}\n?En S10: {{EN_S10}}\n?_({{CITA}})_",
+	"CONCEPTO":                "{{TERMINO}}: {{DEFINICION}}\n?En S10: {{EN_S10}}\n?" + avisoPorUsoEmbebido + "\n?_({{CITA}})_",
 	"OFRECER_PROCEDIMIENTO":   "¿Quiere que le enseñe a {{TAREA_SUGERIDA}}?",
 	"COMPARACION":             "Así los define la documentación:\n- {{TERMINO_A}}: {{DEFINICION_A}}\n- {{TERMINO_B}}: {{DEFINICION_B}}\n?_Fuentes: {{CITA}}_",
 	"NAVEGACION":              "Lo encuentra en {{RUTA_MENU}}.\n?_({{CITA}})_",
@@ -138,6 +141,32 @@ func (ps *Plantillas) Rellenar(nombre string, slots map[string]string, o ...OpcR
 func (ps *Plantillas) R(nombre string, slots map[string]string, o ...OpcRelleno) string {
 	s, _ := ps.Rellenar(nombre, slots, o...)
 	return s
+}
+
+// Parte rellena UNA parte de una plantilla compuesta del archivo (p. ej. «aviso» de CONCEPTO), con las mismas
+// reglas (fijas, variantes elegibles, respaldo). "" si la plantilla o la parte no existen o no hay variante elegible.
+func (ps *Plantillas) Parte(nombre, parte string, slots map[string]string) string {
+	p, ok := ps.m[nombre]
+	if !ok || p.Forma == "" {
+		return ""
+	}
+	if _, ok := p.Partes[parte]; !ok {
+		return ""
+	}
+	p.Forma = "{" + parte + "}"
+	s, _ := p.rellenar(slots, OpcRelleno{})
+	return s
+}
+
+// AvisoPorUso: la línea de CONCEPTO para un término definido por uso (Concepto.DefinidoPorUso), con el término en
+// TERMINO_POR_USO. Sale de la parte «aviso» de CONCEPTO en metrin/plantillas/respuestas.yml; sin ella, la embebida
+// (avisoPorUsoEmbebido): el aviso nunca se pierde en silencio.
+func (ps *Plantillas) AvisoPorUso(termino string) string {
+	slots := map[string]string{"TERMINO_POR_USO": termino}
+	if s := ps.Parte("CONCEPTO", "aviso", slots); s != "" {
+		return s
+	}
+	return limpiar(ponerSlots(avisoPorUsoEmbebido, slots))
 }
 
 var (

@@ -593,6 +593,7 @@ body.tz-habilitada .main{grid-template-columns:minmax(0,1fr)}
 @media (hover:none){.v2-foto__lupa{opacity:1}}
 .v2-foto__lupa svg,.v2-sinev svg,.v2-visor__cerrar svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .v2-sig{font-weight:600}
+.v2-nota{padding-left:9px;border-left:2px solid var(--line);font-size:12px;line-height:1.45;font-style:italic;color:var(--muted)}
 .v2-acciones{display:flex;flex-wrap:wrap;gap:8px}
 .v2-btn{display:inline-flex;align-items:center;justify-content:center;min-height:36px;max-width:100%;padding:6px 14px;border:1px solid #b9dccd;border-radius:999px;background:#fff;color:var(--green-dark);font-size:13px;font-weight:700;line-height:1.3;text-align:center}
 .v2-btn:hover{border-color:#9bc5b2;background:var(--mint-2)}
@@ -1439,6 +1440,7 @@ function crearV2(){
         add(cabecera(tipo,k.termino));add(parrafos(plan.intro));
         if(txt(k.definicion))add(rico('p','',k.definicion),true);
         for(const [etq,v] of [['En S10: ',k.en_s10],['Ejemplo: ',k.ejemplo]])if(txt(v)){const p=el('p');p.append(el('strong','',etq));textoEnriquecido(p,txt(v));add(p,true)}
+        if(txt(k.aviso)){const n=el('p','v2-nota',plano(k.aviso));n.setAttribute('role','note');add(n)}   // término definido por uso (kb/conceptos/SIN_FUENTE.md): solo texto
         const rel=relacionado(plan,k);
         if(sig&&txt(sig.texto)&&sigPl!=='RETOMA'){add(rico('p','v2-sig',sig.texto));usaSig=true}
         else if(rel)add(el('p','v2-sig','¿Quiere que le enseñe a '+minuscula(plano(rel))+'?'));    // la oferta viene en plan.opciones; «siguiente» es otra cosa (RETOMA)

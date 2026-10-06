@@ -844,6 +844,14 @@ func (c *Constructor) concepto(ctx context.Context, q tipos.Consulta, cands []ti
 // planConcepto: definición del glosario con su fuente resuelta (id, manual) y la afirmación.
 func (c *Constructor) planConcepto(cc *Concepto, tipo tipos.TipoRespuesta) tipos.Plan {
 	def := cc.ConceptoDef
+	def.Aviso = ""
+	if cc.DefinidoPorUso() { // definición armada por uso: el aviso va en el plan (y en el texto, por la plantilla)
+		ps := c.Base.Plantillas
+		if ps == nil {
+			ps = PlantillasEmbebidas()
+		}
+		def.Aviso = ps.AvisoPorUso(def.Termino)
+	}
 	pl := tipos.Plan{Version: 2, Tipo: tipo, Concepto: &def, Plantilla: "CONCEPTO"}
 	var citas []Cita
 	for _, id := range cc.Fuente {

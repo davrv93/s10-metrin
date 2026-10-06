@@ -84,7 +84,13 @@ func (m *MotorPlantillas) Redactar(_ context.Context, p tipos.Plan) (string, err
 			s["TAREA_SUGERIDA"] = minusculaInicial(p.Opciones[0].Titulo)
 		}
 		add(p.Intro)
-		add(pl.R("CONCEPTO", s, OpcRelleno{Negrita: m.negritaConcepto(map[string]string{"TERMINO": p.Concepto.ID})}))
+		t := pl.R("CONCEPTO", s, OpcRelleno{Negrita: m.negritaConcepto(map[string]string{"TERMINO": p.Concepto.ID})})
+		add(t)
+		// El aviso de un término definido por uso nunca se pierde: si la plantilla del archivo no trae la parte
+		// «aviso», va al final, tal como viene en el plan.
+		if a := strings.TrimSpace(p.Concepto.Aviso); a != "" && !strings.Contains(t, a) {
+			add(a)
+		}
 		return fin()
 
 	case tipos.Comparacion:
@@ -116,13 +122,13 @@ func (m *MotorPlantillas) Redactar(_ context.Context, p tipos.Plan) (string, err
 			if p.Concepto == nil || p.Concepto.EnS10 == "" {
 				return "", fmt.Errorf("plan NAVIGATION sin ruta ni concepto")
 			}
-			add(pl.R("CONCEPTO", slotsConcepto(p.Concepto, cita), OpcRelleno{Omitir: []string{"definicion", "oferta"}}))
+			add(pl.R("CONCEPTO", slotsSinAviso(p.Concepto, cita), OpcRelleno{Omitir: []string{"definicion", "aviso", "oferta"}}))
 			return fin()
 		}
 		add(p.Intro)
 		add(m.pasosTexto(p))
 		if p.Concepto != nil && p.Concepto.EnS10 != "" {
-			add(pl.R("CONCEPTO", slotsConcepto(p.Concepto, ""), OpcRelleno{Omitir: []string{"definicion", "cita", "oferta"}}))
+			add(pl.R("CONCEPTO", slotsSinAviso(p.Concepto, ""), OpcRelleno{Omitir: []string{"definicion", "aviso", "cita", "oferta"}}))
 		}
 		// Cita y oferta de NAVEGACION (la ruta ya va en la intro); sin la del archivo, solo la cita.
 		if np, ok := pl.Get("NAVEGACION"); ok && np.Forma != "" {
@@ -168,8 +174,21 @@ func (m *MotorPlantillas) Redactar(_ context.Context, p tipos.Plan) (string, err
 	return fin()
 }
 
+// slotsConcepto: los datos de CONCEPTO. TERMINO_POR_USO solo si el plan trae el aviso (término definido por uso):
+// sin él, la parte «aviso» no es elegible y no sale.
 func slotsConcepto(c *tipos.ConceptoDef, cita string) map[string]string {
-	return map[string]string{"TERMINO": c.Termino, "DEFINICION": c.Definicion, "EN_S10": c.EnS10, "CITA": cita}
+	s := map[string]string{"TERMINO": c.Termino, "DEFINICION": c.Definicion, "EN_S10": c.EnS10, "CITA": cita}
+	if strings.TrimSpace(c.Aviso) != "" {
+		s["TERMINO_POR_USO"] = c.Termino
+	}
+	return s
+}
+
+// slotsSinAviso: los de CONCEPTO para NAVIGATION, que no muestra la definición (y por tanto tampoco su aviso).
+func slotsSinAviso(c *tipos.ConceptoDef, cita string) map[string]string {
+	s := slotsConcepto(c, cita)
+	delete(s, "TERMINO_POR_USO")
+	return s
 }
 
 // mostrados: los n de la parte que se entrega (todos si el plan no lo dice).

@@ -63,9 +63,17 @@ queda en el mismo caso. Todos llevan `revision: {generado: 2026-10-06, por: clau
 | Escenario (`escenario.yml`) | «Cada ventana de trabajo de un módulo de S10. Las ventanas se asemejan a un escritorio y el entorno de trabajo es casi el mismo en todos los escenarios: botones comunes (imprimir, vista preliminar, retroceder, avanzar, ver árbol), botones exclusivos de cada escenario y menús cuyas acciones cambian según el escenario.» | «Los manuales no dan una definición formal de escenario; se describe a partir de la carpeta de trabajo y de la barra de vistas.» | ninguno |
 | CTS (`cts.yml`) | Reescrita el 06-10-2026: «Compensación por tiempo de servicios. En los manuales oficiales de S10 aparece como uno de los conceptos que se eligen al preparar una boleta de liquidación en el módulo de Nóminas, junto a los beneficios sociales, las gratificaciones y los reintegros de vacaciones.» Fuentes: Manual de Nóminas › 7.1.6.1 Preparación de Boleta, Nóminas › 1. Generalidades y Manual Administrativo › 7.4 Cuentas Bancarias del Socio Negocio. La definición anterior («Beneficio social derivado de una obligación legal…») salía del temario de capacitación de s10peru.com (`38071a17d2a2-0000`), fuente de marketing que el quality gate rechaza | «Definido por uso: las fuentes oficiales no traen una definición formal de CTS («X es…»); se describe solo por lo que dicen los manuales de Nóminas y Administrativo. La definición anterior […] se retiró el 06-10-2026.» | `conc-009` |
 
-**Dónde se ve el aviso.** Solo en el YAML: V2 lo carga (`conocimiento.Concepto.Notas`), pero el plan
-(`tipos.ConceptoDef`) y las plantillas de `metrin/plantillas/respuestas.yml` no lo llevan, así que la persona que
-pregunta **no lo ve** en la respuesta (comprobado en el código del 06-10-2026).
+**Dónde se ve el aviso.** Desde el 06-10-2026 (rama `feat/metrin-v2-traza`), en la respuesta de V2:
+
+- El plan lleva `concepto.notas` (el `notas` del YAML tal cual) y `concepto.aviso`, la línea que se muestra: «Los
+  manuales no traen una definición formal de «Metrado»; se lo describo por su uso en S10.» Sale de la parte `aviso`
+  de la plantilla CONCEPTO de `metrin/plantillas/respuestas.yml` (slot `TERMINO_POR_USO`).
+- El texto de la respuesta (`respuesta`) trae esa línea debajo de la definición y de «En S10», antes de la cita.
+- La página del chat (`metrin/internal/servidor/pagina.html`) la pinta en la burbuja de CONCEPT como nota discreta
+  (párrafo con `role="note"`, solo texto). NAVIGATION y COMPARISON no la muestran: no enseñan la definición sola.
+- Qué término la lleva: los que su `notas` marca con «definición formal» o «por uso» (`Concepto.DefinidoPorUso`). Hoy
+  son exactamente los seis de la tabla de arriba; `TestReal_ConceptosPorUso` lo comprueba contra `kb/` y falla si
+  cambia la lista. Las demás notas (p. ej. «No confundir con…») viajan en `notas`, pero no generan aviso.
 
 **Opciones para cada término** (se puede decidir término por término):
 

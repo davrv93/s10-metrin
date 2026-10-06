@@ -207,6 +207,13 @@ type ConceptoDef struct {
 	Ejemplo                    string   `json:"ejemplo,omitempty" yaml:"ejemplo"`
 	ProcedimientosRelacionados []string `json:"procedimientos_relacionados,omitempty" yaml:"procedimientos_relacionados"`
 	Fuente                     []string `json:"fuente" yaml:"fuente"`
+
+	// Aditivo (conocimiento, 06-10-2026): Notas = `notas` del YAML tal cual (nota editorial: «definido por uso»,
+	// «no confundir con…»); la página no la pinta. Aviso = la línea que SÍ se muestra a la persona cuando la
+	// definición está armada por uso, sin definición formal en las fuentes (kb/conceptos/SIN_FUENTE.md, decisión del
+	// usuario «mantener con aviso»); sale de la parte «aviso» de la plantilla CONCEPTO. Vacío en los demás términos.
+	Notas string `json:"notas,omitempty" yaml:"notas"`
+	Aviso string `json:"aviso,omitempty" yaml:"-"`
 }
 
 // ---------------------------------------------------------------------------------------------
