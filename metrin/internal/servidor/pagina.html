@@ -689,6 +689,28 @@ function pintarFuentes(items){
     c.append(k,t,d);l.append(c)}}
 function avisar(t){toast.textContent=t;toast.classList.add('ver');clearTimeout(tToast);tToast=setTimeout(()=>toast.classList.remove('ver'),2800)}
 
+/* ── consultar: /ask/stream en NDJSON. Pinta el borrador dentro de «aguarda»
+   según el modelo escribe; el evento «fin» trae la respuesta que manda. ── */
+async function consultar(cuerpo,aguarda){
+  const r=await fetch('/ask/stream',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(cuerpo)});
+  if(!r.ok||!r.body){const d=await r.json().catch(()=>({}));throw new Error(d.error||'No se pudo completar la consulta')}
+  const lector=r.body.pipeThrough(new TextDecoderStream()).getReader();
+  let resto='',borrador='',caja=null,pendiente=false,fin=null;
+  const pintar=()=>{pendiente=false;if(!caja){aguarda.querySelector('.pensando')?.remove();
+      aguarda.querySelector('.msg__meta strong').textContent='Metrín está escribiendo';
+      caja=document.createElement('div');caja.className='msg__txt';aguarda.append(caja);
+      estado.textContent='Redactando la respuesta…'}
+    caja.replaceChildren(respuestaFormateada(borrador));hilo.scrollTop=hilo.scrollHeight};
+  const linea=l=>{if(!l.trim())return;const e=JSON.parse(l);
+    if(e.tipo==='delta'){borrador+=e.texto;if(!pendiente){pendiente=true;requestAnimationFrame(pintar)}}
+    else if(e.tipo==='fin')fin=e.respuesta;
+    else if(e.tipo==='error')throw new Error(e.error||'No se pudo completar la consulta')};
+  for(;;){const {value,done}=await lector.read();if(done)break;resto+=value;
+    const partes=resto.split('\n');resto=partes.pop();partes.forEach(linea)}
+  linea(resto);
+  if(!fin)throw new Error('La respuesta se cortó antes de terminar');
+  return fin}
+
 /* ── preguntar: vuela junto al mensaje, saca laptop y lentes ── */
 async function preguntar(texto){
   const q=(texto??input.value).trim();if(!q||ocupado)return;
@@ -698,9 +720,7 @@ async function preguntar(texto){
   const aguarda=pensando();animo('pensando','Calculando con los materiales de S10');
   volar('mensaje',aguarda).then(()=>{if(ocupado){accion('calcula');decir('Σ metrado × precio unitario…',0)}});
   try{
-    const r=await fetch('/ask',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({pregunta:q,source:'s10-kb',k:8,hilo:memoria.slice(-6)})});
-    const d=await r.json().catch(()=>({}));
-    if(!r.ok)throw new Error(d.error||'No se pudo completar la consulta');
+    const d=await consultar({pregunta:q,source:'s10-kb',k:8,hilo:memoria.slice(-6)},aguarda);
     aguarda.remove();accion(null);
     const m=mensaje('asistente',d.respuesta||'No recibí una respuesta del servicio.',d.fuentes||[]);
     memoria.push({rol:'asistente',texto:String(d.respuesta||'').slice(0,300)});memoria=memoria.slice(-6);
@@ -734,7 +754,7 @@ function nueva(){memoria=[];interrumpir();cerrarExplorar();if(catalogo)sugerir()
   fuentes(false);estado.textContent='Listo para ayudarte';input.value='';ajustar();enviar.disabled=true;animo('reposo','En línea y listo para ayudarte');volar('dock');menu(false)}
 const rail=$('#rail'),velo=$('#velo'),btnMenu=$('#menu');
 function menu(abrir){rail.classList.toggle('abierto',abrir);velo.classList.toggle('ver',abrir);btnMenu.setAttribute('aria-expanded',String(abrir))}
-$('#btnFuentes').onclick=()=>fuentes();$('#navFuentes').onclick=()=>{fuentes(true);menu(false)};$('#navAdmin').href='http://'+location.hostname+':4750';$('#cerrarFuentes').onclick=()=>fuentes(false);
+$('#btnFuentes').onclick=()=>fuentes();$('#navFuentes').onclick=()=>{fuentes(true);menu(false)};$('#navAdmin').href=location.hostname.startsWith('metrin.')?'https://admin.'+location.hostname.slice(7):'http://'+location.hostname+':4750';$('#cerrarFuentes').onclick=()=>fuentes(false);
 $('#btnNueva').onclick=nueva;$('#navNueva').onclick=nueva;btnMenu.onclick=()=>menu(!rail.classList.contains('abierto'));velo.onclick=()=>menu(false);
 addEventListener('keydown',e=>{if(e.key==='Escape'){menu(false);if(innerWidth<=1080)fuentes(false)}});
 

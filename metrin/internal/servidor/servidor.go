@@ -1,4 +1,5 @@
-// Package servidor expone el RAG por HTTP: POST /ask y una página mínima.
+// Package servidor expone el RAG por HTTP: POST /ask, POST /ask/stream y una
+// página mínima.
 package servidor
 
 import (
@@ -55,19 +56,9 @@ func Nuevo(r *rag.RAG, timeout time.Duration) http.Handler {
 	mux.Handle("GET /fotos/", http.StripPrefix("/fotos/", http.FileServer(http.Dir(rutaDatos()))))
 	mux.HandleFunc("GET /fotos/manual/{slug}/{page}", fotoPaginaManual)
 	mux.HandleFunc("POST /ask", func(w http.ResponseWriter, req *http.Request) {
-		var p peticion
-		if err := json.NewDecoder(http.MaxBytesReader(w, req.Body, 64<<10)).Decode(&p); err != nil {
-			escribirJSON(w, http.StatusBadRequest, map[string]string{"error": "JSON inválido"})
+		p, o, ok := leerPeticion(w, req)
+		if !ok {
 			return
-		}
-		p.Pregunta = strings.TrimSpace(p.Pregunta)
-		if p.Pregunta == "" {
-			escribirJSON(w, http.StatusBadRequest, map[string]string{"error": "falta «pregunta»"})
-			return
-		}
-		o := rag.Opciones{K: p.K, Hilo: p.Hilo}
-		if p.Source != "" {
-			o.Filtro = map[string]string{"source": p.Source}
 		}
 		ctx, cancel := context.WithTimeout(req.Context(), timeout)
 		defer cancel()
@@ -76,13 +67,66 @@ func Nuevo(r *rag.RAG, timeout time.Duration) http.Handler {
 			escribirJSON(w, http.StatusBadGateway, map[string]string{"error": err.Error()})
 			return
 		}
-		vincularFotos(res.Fuentes)
-		if !res.SinContexto {
-			res.Respuesta = colocarFotos(res.Respuesta, res.Fuentes)
+		escribirJSON(w, http.StatusOK, terminar(res))
+	})
+	// Igual que /ask, en NDJSON: {"tipo":"delta","texto":…} según el modelo
+	// escribe y, al final, {"tipo":"fin","respuesta":{…}} con la respuesta
+	// definitiva (la que manda) o {"tipo":"error","error":…}.
+	mux.HandleFunc("POST /ask/stream", func(w http.ResponseWriter, req *http.Request) {
+		p, o, ok := leerPeticion(w, req)
+		if !ok {
+			return
 		}
-		escribirJSON(w, http.StatusOK, res)
+		w.Header().Set("Content-Type", "application/x-ndjson; charset=utf-8")
+		w.Header().Set("Cache-Control", "no-cache")
+		w.Header().Set("X-Accel-Buffering", "no") // que nginx no junte los trozos
+		w.WriteHeader(http.StatusOK)
+		enc := json.NewEncoder(w)
+		rc := http.NewResponseController(w)
+		evento := func(v any) {
+			enc.Encode(v)
+			rc.Flush()
+		}
+		o.Emitir = func(t string) { evento(map[string]string{"tipo": "delta", "texto": t}) }
+		ctx, cancel := context.WithTimeout(req.Context(), timeout)
+		defer cancel()
+		res, err := r.Preguntar(ctx, p.Pregunta, o)
+		if err != nil {
+			evento(map[string]string{"tipo": "error", "error": err.Error()})
+			return
+		}
+		evento(map[string]any{"tipo": "fin", "respuesta": terminar(res)})
 	})
 	return mux
+}
+
+// leerPeticion decodifica el cuerpo de /ask y /ask/stream; si no sirve,
+// responde 400 y devuelve ok=false.
+func leerPeticion(w http.ResponseWriter, req *http.Request) (peticion, rag.Opciones, bool) {
+	var p peticion
+	if err := json.NewDecoder(http.MaxBytesReader(w, req.Body, 64<<10)).Decode(&p); err != nil {
+		escribirJSON(w, http.StatusBadRequest, map[string]string{"error": "JSON inválido"})
+		return p, rag.Opciones{}, false
+	}
+	p.Pregunta = strings.TrimSpace(p.Pregunta)
+	if p.Pregunta == "" {
+		escribirJSON(w, http.StatusBadRequest, map[string]string{"error": "falta «pregunta»"})
+		return p, rag.Opciones{}, false
+	}
+	o := rag.Opciones{K: p.K, Hilo: p.Hilo}
+	if p.Source != "" {
+		o.Filtro = map[string]string{"source": p.Source}
+	}
+	return p, o, true
+}
+
+// terminar vincula las fotos de las fuentes y las coloca en la respuesta.
+func terminar(res rag.Respuesta) rag.Respuesta {
+	vincularFotos(res.Fuentes)
+	if !res.SinContexto {
+		res.Respuesta = colocarFotos(res.Respuesta, res.Fuentes)
+	}
+	return res
 }
 
 // fotosPorFuente: tope de fotos que se vinculan a cada fuente.

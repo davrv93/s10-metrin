@@ -22,6 +22,8 @@ type Config struct {
 	MLXURL         string
 	Temperatura    float64
 	TimeoutSeg     int
+	LLMHilos       int     // Ollama num_thread (0 = lo decide Ollama)
+	LLMMaxTokens   int     // tope de tokens por respuesta (0 = sin tope)
 	MaxDistancia   float64 // distancia coseno (1-sim) por encima de la cual no hay contexto
 
 	S3Endpoint, S3Region, S3AccessKey, S3SecretKey, S3Bucket string
@@ -78,6 +80,8 @@ func Leer() Config {
 		MLXURL:         def("MLX_URL", "http://localhost:8080"),
 		Temperatura:    num("RAG_TEMPERATURA", 0.2),
 		TimeoutSeg:     int(num("RAG_TIMEOUT", 300)),
+		LLMHilos:       int(num("OLLAMA_NUM_THREAD", 0)),
+		LLMMaxTokens:   int(num("LLM_MAX_TOKENS", 0)),
 		MaxDistancia:   num("RAG_MAX_DISTANCIA", 0.80),
 		S3Endpoint:     def("S3_ENDPOINT", "http://localhost:4790"),
 		S3Region:       def("S3_REGION", "garage"),

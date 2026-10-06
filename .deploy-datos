@@ -1,0 +1,10 @@
+# Rutas que el servidor escribe en marcha (Cortex, programador, panel, metrin).
+# El CD las siembra la primera vez y después NO las pisa: lo que cambió en el
+# servidor manda. Formato: patrones de rsync --exclude-from, anclados a la raíz.
+/.env
+/.cortex/
+/kb/
+/data/
+/tutoriales/
+/render/
+/trazas/datos/

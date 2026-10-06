@@ -278,7 +278,9 @@ func nuevoRAG(cfg config.Config) (*rag.RAG, error) {
 	case "mlx":
 		conversacional = llm.NuevoMLX(cfg.MLXURL, cfg.LLMModelo, cfg.Temperatura, timeout)
 	case "ollama", "":
-		conversacional = llm.NuevoOllama(cfg.OllamaURL, cfg.LLMModelo, cfg.Temperatura, timeout)
+		o := llm.NuevoOllama(cfg.OllamaURL, cfg.LLMModelo, cfg.Temperatura, timeout)
+		o.Hilos, o.MaxTokens = cfg.LLMHilos, cfg.LLMMaxTokens
+		conversacional = o
 	default:
 		return nil, fmt.Errorf("LLM_PROVIDER=%q: usa ollama o mlx", cfg.LLMProvider)
 	}

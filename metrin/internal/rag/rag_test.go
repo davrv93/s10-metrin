@@ -575,3 +575,66 @@ func TestManualOficialGanaACopiaDeTerceroIgualDeCercana(t *testing.T) {
 		t.Fatalf("una copia mucho más cercana no debe perder: %+v", sel)
 	}
 }
+
+// llmTransmisor: Chat y ChatStream; anota cuál se usó.
+type llmTransmisor struct {
+	trozos   []string
+	usoChat  bool
+	usoFlujo bool
+}
+
+func (l *llmTransmisor) Chat(context.Context, []llm.Mensaje) (string, error) {
+	l.usoChat = true
+	return strings.Join(l.trozos, ""), nil
+}
+
+func (l *llmTransmisor) ChatStream(_ context.Context, _ []llm.Mensaje, emitir func(string)) (string, error) {
+	l.usoFlujo = true
+	for _, t := range l.trozos {
+		emitir(t)
+	}
+	return strings.Join(l.trozos, ""), nil
+}
+
+func TestEmitirTransmiteLaRespuestaYLaFinalCoincide(t *testing.T) {
+	r, _, _ := preparar(t, "")
+	l := &llmTransmisor{trozos: []string{"Cuesta ", "49 €"}}
+	r.LLM = l
+	var visto strings.Builder
+	res, err := r.Preguntar(context.Background(), "¿qué precio tiene el Pro?", Opciones{Emitir: func(s string) { visto.WriteString(s) }})
+	if err != nil {
+		t.Fatal(err)
+	}
+	if !l.usoFlujo || l.usoChat {
+		t.Fatalf("usoFlujo=%v usoChat=%v: con Emitir debía transmitir", l.usoFlujo, l.usoChat)
+	}
+	if visto.String() != "Cuesta 49 €" || res.Respuesta != "Cuesta 49 €" {
+		t.Fatalf("emitido=%q respuesta=%q", visto.String(), res.Respuesta)
+	}
+}
+
+func TestSinEmitirNoTransmite(t *testing.T) {
+	r, _, _ := preparar(t, "")
+	l := &llmTransmisor{trozos: []string{"Cuesta 49 €"}}
+	r.LLM = l
+	if _, err := r.Preguntar(context.Background(), "¿qué precio tiene el Pro?", Opciones{}); err != nil {
+		t.Fatal(err)
+	}
+	if l.usoFlujo || !l.usoChat {
+		t.Fatalf("usoFlujo=%v usoChat=%v: sin Emitir debía usar Chat", l.usoFlujo, l.usoChat)
+	}
+}
+
+func TestLaPreguntaActualEnElHiloNoDisparaReescritura(t *testing.T) {
+	r, _, _ := preparar(t, "")
+	l := &llmSecuencia{respuestas: []string{"Cuesta 49 €"}}
+	r.LLM = l
+	hilo := []Turno{{Rol: "usuario", Texto: "¿qué precio tiene el Pro?"}}
+	res, err := r.Preguntar(context.Background(), "¿qué precio tiene el Pro?", Opciones{Hilo: hilo})
+	if err != nil {
+		t.Fatal(err)
+	}
+	if l.llamadas != 1 || res.PreguntaReescrita != "" {
+		t.Fatalf("llamadas=%d reescrita=%q: la pregunta actual no es un hilo", l.llamadas, res.PreguntaReescrita)
+	}
+}

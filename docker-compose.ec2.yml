@@ -1,0 +1,54 @@
+# EC2 (3.135.80.228): se suma a docker-compose.yml.
+#
+#   docker compose -f docker-compose.yml -f docker-compose.ec2.yml --profile llm up -d --build \
+#     cortex admin programador metrin trazas trazas-pg ollama
+#
+# - Une cada servicio a la red externa «edge» con un alias s10-*: el nginx de la raíz
+#   del repo (pronto_nginx) los publica en <servicio>.3-135-80-228.sslip.io.
+# - Metrín usa el Ollama del propio compose (en el EC2 no hay GPU ni MLX) y no
+#   llama al juez JEV, que solo existe en el Mac.
+# - landing-cd no se levanta: su carpeta no está en el repo.
+services:
+  cortex:
+    networks:
+      default: {}
+      edge: { aliases: [s10-cortex] }
+
+  admin:
+    environment:
+      CORTEX_URL_PUBLICA: https://cortex.3-135-80-228.sslip.io
+    networks:
+      default: {}
+      edge: { aliases: [s10-admin] }
+
+  metrin:
+    environment:
+      LLM_PROVIDER: ollama
+      OLLAMA_URL: http://ollama:11434
+      # En 2 vCPU sin GPU: 0.5b genera ~20 tok/s (3b, ~4). Con streaming el texto
+      # empieza a salir en segundos. El CD baja este modelo si falta.
+      OLLAMA_MODEL: qwen2.5:0.5b
+      OLLAMA_NUM_THREAD: "2"
+      LLM_MAX_TOKENS: "320"
+      JEV_URL: ""
+      JEV_MODEL: ""
+    networks:
+      default: {}
+      edge: { aliases: [s10-metrin] }
+
+  trazas:
+    environment:
+      # Sin JEV no hay trazas nuevas; el visor lee el JSONL que escribiría metrin.
+      TRAZAS_REPO: archivo
+    networks:
+      default: {}
+      edge: { aliases: [s10-trazas] }
+
+  ollama:
+    environment:
+      OLLAMA_KEEP_ALIVE: 24h
+      OLLAMA_NUM_PARALLEL: "1"
+
+networks:
+  edge:
+    external: true

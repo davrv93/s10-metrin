@@ -26,6 +26,11 @@ type Chateador interface {
 	Chat(ctx context.Context, msgs []llm.Mensaje) (string, error)
 }
 
+// Transmisor: LLM que además entrega la respuesta a trozos (Ollama).
+type Transmisor interface {
+	ChatStream(ctx context.Context, msgs []llm.Mensaje, emitir func(string)) (string, error)
+}
+
 type RAG struct {
 	Almacen      *almacen.Almacen
 	LLM          Chateador
@@ -85,6 +90,10 @@ type Opciones struct {
 	K      int
 	Filtro map[string]string // source, type, ext
 	Hilo   []Turno           // últimos turnos; sirve para resolver referencias ("su", "eso")
+	// Emitir recibe el texto de la respuesta según el modelo lo escribe.
+	// Es un borrador: la Respuesta final manda (reintento en español,
+	// fotos colocadas, respuestas fijas que no pasan por el modelo).
+	Emitir func(string)
 }
 
 // MarcaSinContexto es la frase que se pide al modelo cuando el contexto no
@@ -129,6 +138,7 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 	if o.K <= 0 {
 		o.K = 8
 	}
+	o.Hilo = sinPreguntaActual(o.Hilo, pregunta)
 	plan := r.planificar(ctx, pregunta, o.Hilo)
 	res := Respuesta{Pregunta: pregunta, Modo: "respuesta", Plan: plan}
 	if esPreguntaSobreAciertos(pregunta) {
@@ -144,7 +154,7 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 	// Excepción: pregunta larga con "?" ("bien, oye, qué es optimiza?")
 	// casi siempre pide datos: va al RAG aunque huela a charla.
 	if plan.Ruta == rutaConversacion {
-		conv, err := r.conversar(ctx, plan.Intencion, pregunta, o.Hilo)
+		conv, err := r.conversar(ctx, plan.Intencion, pregunta, o.Hilo, o.Emitir)
 		conv.Plan = plan
 		return conv, err
 	}
@@ -253,7 +263,7 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 		// trabajo ("bien y tú", "ok", "¿precio?"). Se conversa en vez de
 		// levantar un muro; igual se registra el fallo para aprender.
 		if len(palabras(pregunta)) <= 8 {
-			conv, err := r.conversar(ctx, "charla", pregunta, o.Hilo)
+			conv, err := r.conversar(ctx, "charla", pregunta, o.Hilo, o.Emitir)
 			if err == nil {
 				conv.Motivo = "sin contexto útil; respuesta conversacional (" + res.Motivo + ")"
 				conv.Plan = res.Plan
@@ -299,7 +309,7 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 		{Role: "user", Content: "CONTEXTO:\n" + ctxTxt.String() + historial + "PREGUNTA: " + efectiva + "\n\n" + instruccion},
 	}
 	t1 := time.Now()
-	texto, err := r.LLM.Chat(ctx, msgs)
+	texto, err := r.chat(ctx, msgs, o.Emitir)
 	res.TiempoLLM = time.Since(t1)
 	res.MsLLM = res.TiempoLLM.Milliseconds()
 	if err != nil {
@@ -329,6 +339,27 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 		return res, r.registrarFallo(res)
 	}
 	return res, nil
+}
+
+// sinPreguntaActual quita del hilo el último turno si es la misma pregunta
+// que se está haciendo: la página la agrega a su memoria antes de enviar.
+// Si se quedara, toda pregunta parecería de seguimiento y pagaría una
+// llamada extra al modelo para reescribirla.
+func sinPreguntaActual(hilo []Turno, pregunta string) []Turno {
+	if n := len(hilo); n > 0 && hilo[n-1].Rol == "usuario" &&
+		strings.TrimSpace(hilo[n-1].Texto) == strings.TrimSpace(pregunta) {
+		return hilo[:n-1]
+	}
+	return hilo
+}
+
+// chat llama al modelo; si hay a quién emitir y el modelo transmite, en
+// streaming. Los reintentos (portugués, reescritura) van siempre sin él.
+func (r *RAG) chat(ctx context.Context, msgs []llm.Mensaje, emitir func(string)) (string, error) {
+	if t, ok := r.LLM.(Transmisor); ok && emitir != nil {
+		return t.ChatStream(ctx, msgs, emitir)
+	}
+	return r.LLM.Chat(ctx, msgs)
 }
 
 func esPreguntaSobreAciertos(pregunta string) bool {
@@ -494,7 +525,7 @@ const sistemaCharla = `Eres Metrín, asistente de Optimiza 360. Respondes SIEMPR
 
 // conversar responde charla directa con el estilo Metrín, sin retrieval.
 // Límite no llama al modelo: respuesta fija (el 3B no obedece el rechazo).
-func (r *RAG) conversar(ctx context.Context, intencion, pregunta string, hilo []Turno) (Respuesta, error) {
+func (r *RAG) conversar(ctx context.Context, intencion, pregunta string, hilo []Turno, emitir func(string)) (Respuesta, error) {
 	res := Respuesta{Pregunta: pregunta, Modo: "conversacional"}
 	if intencion == "limite" {
 		res.Respuesta = "Eso está fuera de mi alcance, pero te ayudo con S10 y obra. ¿Qué necesitas?"
@@ -516,7 +547,7 @@ func (r *RAG) conversar(ctx context.Context, intencion, pregunta string, hilo []
 		msgs = append(msgs, llm.Mensaje{Role: "user", Content: pregunta})
 	}
 	t1 := time.Now()
-	texto, err := r.LLM.Chat(ctx, msgs)
+	texto, err := r.chat(ctx, msgs, emitir)
 	res.TiempoLLM = time.Since(t1)
 	res.MsLLM = res.TiempoLLM.Milliseconds()
 	if err != nil {
