@@ -133,7 +133,8 @@ services:
   #   sh metrin/descargar-reranker.sh        (una vez: 438 MB a metrin/modelos/reranker/, comprueba el sha256)
   # En Docker corre solo CPU (sin Metal ni GPU). Sin puerto en el host: metrin lo llama por la red del compose.
   reranker:
-    image: ghcr.io/ggml-org/llama.cpp:server
+    # Fijada por digest (índice multiplataforma, trae linux/amd64): la etiqueta :server se mueve con cada versión.
+    image: ghcr.io/ggml-org/llama.cpp:server@sha256:8fdfad183be053cdb72d4b6a5930c3a2475730f932855ee9260193422c2564ed
     command: ["-m", "/modelos/bge-reranker-v2-m3-Q4_K_M.gguf", "--reranking", "--host", "0.0.0.0", "--port", "8080",
               "--parallel", "1", "-c", "2048", "-b", "2048", "-ub", "2048", "--no-webui"]
     volumes:
