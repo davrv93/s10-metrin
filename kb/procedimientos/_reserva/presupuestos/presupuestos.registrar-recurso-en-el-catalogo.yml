@@ -1,0 +1,84 @@
+id: presupuestos.registrar-recurso-en-el-catalogo
+version: 1
+modulo: presupuestos
+titulo: "Registrar un recurso genérico y sus específicos en el catálogo"
+objetivo: "Registrar en el catálogo de recursos un recurso genérico y sus recursos específicos, ya que todos los recursos que utiliza el proyecto deben estar registrados en el catálogo."
+nivel: basico
+preguntas:
+  - "cómo registro un recurso nuevo en el catálogo de recursos"
+  - "como creo un material nuevo en s10"
+  - "que es recurso generico y especifico"
+  - "como agrego un insumo que no existe"
+  - "registrar recursos especificos s10"
+  - "como creo un recurso en el catalogo de recursos genericos y especificos"
+  - "como registro un recuso nuevo"
+aliases:
+  - "registrar recurso"
+  - "crear recurso"
+  - "recursos genéricos y específicos"
+entidades:
+  modulo: "Presupuestos"
+  pantallas: ["Recursos Genéricos y Específicos"]
+  objetos: ["recurso genérico", "recursos específicos", "catálogo de recursos"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "presupuestos.registrar-recurso-en-el-catalogo#1"
+    accion: "Ingrese a **Catálogos**, luego **Recursos Genéricos y Específicos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s083]
+    pagina: null
+  - n: 2
+    id: "presupuestos.registrar-recurso-en-el-catalogo#2"
+    accion: "En el árbol, dentro del grupo que corresponda (por ejemplo, MATERIALES), ubique el subgrupo (por ejemplo, PUERTAS CONTRAPLACADAS) y haga clic derecho."
+    fuente: [img-5fac3dcc8e75-0000, web-https-documentacion-s10peru-com-manual-d-s083]
+    pagina: null
+    fotos:
+      - id: "21b775d3f346"
+        ruta_o_url: "imagenes/manual-de-presupuestos/5fac3dcc8e75.png"
+        pagina: null
+        ocr: "rey C En el arbol, dentro del grupo de LACADAS o [Ehlers\n5 MATERIALES, ubique PUERTAS.\nOpcione\nCONTRAPLACADAS\nDae recep OC CANS SSA\nES MADERANAGIONAL PARAENCOFRADO |~)MI[ | * Md * Nive :303\nGy PANELESfy FORMAS PARAENCOFR |)\na catias, fARRIZO =! Clic derecho\n4] MADERAJFORNILLO mime\nEl MAUNA SAGA, ae | |\nO) MaDERABHUNGO a ae\n4 wo 0 A i) Adicionar F2\nPUERTAQDE TABLERO REBAJADO =\n|, BUPRIAG COMTRARLAC…"
+  - n: 3
+    id: "presupuestos.registrar-recurso-en-el-catalogo#3"
+    accion: "Registre el recurso genérico (padre) con su descripción y su **Unidad**."
+    fuente: [img-898581982b02-0000, web-https-documentacion-s10peru-com-manual-d-s083]
+    pagina: null
+    fotos:
+      - id: "25c1e0b2bab0"
+        ruta_o_url: "imagenes/manual-de-presupuestos/898581982b02.png"
+        pagina: null
+        ocr: "Pf Recurso Registre el Recurso genérico (papa) [o> ||-)~ [aes\nCédigo 024318 9001 Cédigo alterno :\n\nDescripcién IPUERTA CONTRAPLACADA MDF INCLUYE MARCO\n\nAlterna\n\nUnidad 43 [und ~- | da]\nSn\n\nGeneral |__| Contabilidad $10 Recursos especificas\nDetalle recursa Dimensiones\nPropiedades Contabilidad extema"
+  - n: 4
+    id: "presupuestos.registrar-recurso-en-el-catalogo#4"
+    accion: "Cuando el sistema pregunte si desea continuar adicionando los recursos específicos, acepte."
+    fuente: [img-1ac2d31b4b7a-0000]
+    pagina: null
+    fotos:
+      - id: "6f5be26ac048"
+        ruta_o_url: "imagenes/manual-de-presupuestos/1ac2d31b4b7a.png"
+        pagina: null
+        ocr: "=|\ne ¢Desea continuar adicionanda los recursos especificos?\n«|"
+  - n: 5
+    id: "presupuestos.registrar-recurso-en-el-catalogo#5"
+    accion: "Registre los recursos específicos (hijos) con descripción más detallada y dimensiones (por ejemplo, Puertas contraplacadas MDF de 0.90 x 2.10 m incluye marco)."
+    fuente: [img-3de84b4da748-0000, img-a160f148a52f-0000]
+    pagina: null
+    fotos:
+      - id: "2495b3d7f6af"
+        ruta_o_url: "imagenes/manual-de-presupuestos/3de84b4da748.png"
+        pagina: null
+        ocr: "a [re] f= ma\nCédigo 024318 |0001 Cédigo atterno :\nDescripcion © |/PUERTA CONTRAPLACADA MDF INCLUYE MARCO\nNeweinest\nAlterna\nCie fet asl | 44\nIv Lav. = 44)\nEooEREET | Registre los recursos especificos (hijos)\nCategoria | con descripcién mas detallada y dimensiones =] Ey\nPo |\n[_[Cédigo [Descrincion YU fia Factor |\n0243180001001 PUERTA CONTRAPLACADA MDF INCLUYE MARCO 0.70 x 2.10 m und\n2431800010002 PU…"
+      - id: "60af368086ad"
+        ruta_o_url: "imagenes/manual-de-presupuestos/a160f148a52f.png"
+        pagina: null
+        ocr: "Puertas contraplacadas MDF | und Recurso genérico\nPuertas contraplacadas MDF de 0.90 x 2.10 m incluye marco | und |\n\nRecusos especificos\nPuertas contraplacadas MDF de 0.70 x 2.10 m incluye marco | und 4"
+verificacion: []
+errores_frecuentes: []
+relacionados: [presupuestos.registrar-partida-en-el-catalogo, presupuestos.reasignar-recurso]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s083, manual: "Manual de Presupuestos", seccion: "4.5.3 Registro de recursos en el catálogo", pagina: null}
+  - {id: img-5fac3dcc8e75-0000, manual: "Manual de Presupuestos", seccion: "5fac3dcc8e75.png", pagina: null}
+  - {id: img-898581982b02-0000, manual: "Manual de Presupuestos", seccion: "898581982b02.png", pagina: null}
+  - {id: img-1ac2d31b4b7a-0000, manual: "Manual de Presupuestos", seccion: "1ac2d31b4b7a.png", pagina: null}
+  - {id: img-3de84b4da748-0000, manual: "Manual de Presupuestos", seccion: "3de84b4da748.png", pagina: null}
+  - {id: img-a160f148a52f-0000, manual: "Manual de Presupuestos", seccion: "a160f148a52f.png", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

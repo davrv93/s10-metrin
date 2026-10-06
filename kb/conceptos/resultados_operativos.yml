@@ -1,0 +1,13 @@
+id: resultados_operativos
+termino: "Resultados operativos"
+sinonimos: []
+definicion: "Control periódico del proyecto, de preferencia semanal, que permite observar su marcha en avance y costo para tomar decisiones. Para el control se usa la teoría del valor ganado."
+en_s10: "En Gerencia de proyectos, el escenario Resultados operativos por proyecto da información consolidada a nivel de partidas de control para comparar lo programado, lo valorizado y lo realmente gastado, y puede combinar las ramas Venta y Meta. Las curvas S comparan gráficamente el costo presupuestado del trabajo programado (CPTP), el costo presupuestado del trabajo realizado (CPTR) y el costo real del trabajo realizado (CRTR). Reciben el costo de los materiales desde Almacenes y el de la mano de obra desde Nóminas."
+procedimientos_relacionados: []
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s255  # Manual de Gerencia de Proyectos › 9 RESULTADOS OPERATIVOS
+  - web-https-documentacion-s10peru-com-manual-d-s001  # Manual de Gerencia de Proyectos › 1 GENERALIDADES (1) | Manual de Almacenes › 1. ALMACENES DEL S10 ERP (1)
+  - web-https-documentacion-s10peru-com-manual-d-s257  # Manual de Gerencia de Proyectos › 9.3 Resultados Operativos por Proyecto (1)
+  - web-https-documentacion-s10peru-com-manual-d-s260  # Manual de Gerencia de Proyectos › 9.3.2 Curvas S
+  - web-https-documentacion-s10peru-com-manual-d-s166  # Manual de Gerencia de Proyectos › 5.1 Generalidades
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

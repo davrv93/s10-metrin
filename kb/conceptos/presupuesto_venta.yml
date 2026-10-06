@@ -1,0 +1,16 @@
+id: presupuesto_venta
+termino: "Presupuesto venta"
+sinonimos: ["presupuesto oferta"]
+definicion: "Es el presupuesto que se entrega al propietario del proyecto. Es el que lleva el diseño del pie de presupuesto, con gastos generales, utilidad e impuestos, y la fórmula polinómica."
+en_s10: "En Gerencia de proyectos se asigna a la rama Venta del proyecto, donde toda la información es para el propietario; en esa rama el sistema registra automáticamente las fases del WBS conservando la estructura del presupuesto, y se usa para las valorizaciones que se entregan al propietario. Para este presupuesto se recomienda el cálculo analítico de gastos generales."
+ejemplo: "En edificaciones, las partidas de instalaciones eléctricas y sanitarias del presupuesto venta van por puntos, para estimar el costo, y en su análisis de precios unitarios la mano de obra va por hh y los materiales solo sirven para asumir un costo aproximado."
+procedimientos_relacionados: [presupuestos.registrar-presupuesto-nuevo]
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s056  # Manual de Presupuestos › 3.8.1 Registro del recurso para relacionarlo con el concepto
+  - web-https-documentacion-s10peru-com-manual-d-s054  # Manual de Presupuestos › 3.7 Presupuesto venta
+  - web-https-documentacion-s10peru-com-manual-d-s003  # Manual de Presupuestos › 1.3.1 Presupuesto de Edificaciones (1)
+  - web-https-documentacion-s10peru-com-manual-d-s004  # Manual de Presupuestos › 1.3.1 Presupuesto de Edificaciones (2)
+  - web-https-documentacion-s10peru-com-manual-d-s059  # Manual de Presupuestos › 3.9 Gastos generales
+  - web-https-documentacion-s10peru-com-manual-d-s045  # Manual de Gerencia de Proyectos › 2.5.1 Asignar presupuestos al Proyecto (1)
+  - web-https-documentacion-s10peru-com-manual-d-s070  # Manual de Gerencia de Proyectos › 2.3.1.1 WBS (1)
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

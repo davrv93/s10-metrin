@@ -1,0 +1,13 @@
+# Dos conceptos en un archivo (forma lista), con fuente {id, manual} en línea.
+conceptos:
+  - id: presupuesto_meta
+    termino: "Presupuesto meta"
+    sinonimos: ["meta"]
+    definicion: "Presupuesto que sirve para planificar y controlar la obra."
+    fuente:
+      - {id: web-https-documentacion-s10peru-com-manual-d-s010, manual: "Manual de Presupuestos"}
+  - id: presupuesto_venta
+    termino: "Presupuesto venta"
+    definicion: "Presupuesto que se entrega al cliente."
+    fuente:
+      - {id: web-https-documentacion-s10peru-com-manual-d-s010, manual: "Manual de Presupuestos"}

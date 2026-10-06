@@ -1,0 +1,16 @@
+id: escenario
+termino: "Escenario"
+sinonimos: ["escenarios"]
+definicion: "Cada ventana de trabajo de un módulo de S10. Las ventanas se asemejan a un escritorio y el entorno de trabajo es casi el mismo en todos los escenarios: botones comunes (imprimir, vista preliminar, retroceder, avanzar, ver árbol), botones exclusivos de cada escenario y menús cuyas acciones cambian según el escenario."
+en_s10: "Se accede desde la barra de vistas, que contiene los grupos y, dentro de ellos, los botones de acceso directo a los escenarios (por ejemplo, grupo Nóminas, escenario Cálculo de nóminas). Algunos escenarios son solo informativos o de consulta."
+procedimientos_relacionados: []
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s001  # Manual Administrativo › 1.1 La carpeta de trabajo
+  - web-https-documentacion-s10peru-com-manual-d-s017  # Manual de Gerencia de Proyectos › 1.2 La carpeta de trabajo (1)
+  - web-https-documentacion-s10peru-com-manual-d-s018  # Manual de Gerencia de Proyectos › 1.2 La carpeta de trabajo (2)
+  - web-https-documentacion-s10peru-com-manual-d-s013  # Manual de Almacenes › 1.1.4 Barra de vistas
+  - web-https-documentacion-s10peru-com-manual-d-s200  # Manual de Gerencia de Proyectos › 5.16.5.1 Selección del tipo de Nómina a procesar
+  - web-https-documentacion-s10peru-com-manual-d-s089  # Manual de Almacenes › 3.7 Guías de Remisión
+  - web-https-documentacion-s10peru-com-manual-d-s068  # Manual de Almacenes › 2.2.3.1 Egreso a Partida de Control con Descarga Directa [EPCDD]
+notas: "Los manuales no dan una definición formal de escenario; se describe a partir de la carpeta de trabajo y de la barra de vistas."
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

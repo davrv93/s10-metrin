@@ -1,5 +1,27 @@
 # STATUS — s10-conocimiento
 
+## Actualización 2026-10-06: Metrín V2 y modo traza
+
+- **Rama `feat/metrin-v2-traza`** subida a `origin` (sin fusionar a `main`, sin desplegar). Trae el modo traza, la
+  V2 procedural (paso → foto), 60 procedimientos YAML, glosario, catálogos, búsqueda híbrida, reranker y benchmarks.
+  Detalle y cifras: [`docs/V2-RAG-PROCEDURAL.md`](docs/V2-RAG-PROCEDURAL.md) §14. Pendientes:
+  [`PENDIENTES.md`](PENDIENTES.md).
+- **Resultado** (194 casos sintéticos): PAS V1 0 % → V2 81,8 % con reranker (60 % sin él), invención V1 17 % → V2 0 %.
+- **Servicios locales en la Mac:**
+
+| Servicio | Dónde | Cómo se para |
+|---|---|---|
+| Conversacional MLX (V1) | `127.0.0.1:8080` | `pkill -f mlx_lm.server` |
+| Reranker bge-reranker-v2-m3 (llama-server, Metal) | `127.0.0.1:8091` | `kill $(cat ~/.cache/metrin-modelos/llama-rerank.pid)` |
+| JEV | `127.0.0.1:8765` | launchd `com.jevstyle.serve` |
+| Contenedor de PRUEBA de Metrín con traza y V2 | `127.0.0.1:4762` | `docker rm -f metrin-traza-prueba`; se recrea con `docs/traza-ejemplos/recrear-4762.sh` |
+| Contenedor de siempre (V1) | `127.0.0.1:4760` | sin cambios: imagen anterior, sin V2 |
+
+- **Sin commit a propósito:** el trabajo del 01-10 en `metrin/` (`rag.go`, `main.go`, `config.go`, `go.mod`,
+  `cmd_reporte.go`, `reportes`, `pipeline`), que es de otra sesión.
+
+---
+
 Instantánea del **2026-10-01**. Repo: worktree `s10-conocimiento`,
 origin `https://github.com/davrv93/s10-metrin.git`, rama `main`.
 

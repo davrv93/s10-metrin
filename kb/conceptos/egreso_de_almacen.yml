@@ -1,0 +1,13 @@
+id: egreso_de_almacen
+termino: "Egreso de almacén"
+sinonimos: ["egreso", "egresos", "guía de egreso"]
+definicion: "Movimiento de salida de los recursos que están en el stock del almacén hacia distintos destinos. Solo los recursos del stock pueden usarse en los egresos."
+en_s10: "El más usado en la ejecución es el Egreso a partida de control [EPC]: el residente o el maestro de obra envían un pedido al almacén y el almacenero registra el egreso, con partida de control y, de forma adicional, destino específico, frente y equipo. Antes de un egreso, el manual indica recostear en el escenario de Stock. Las guías de remisión se generan solo a partir de egresos."
+procedimientos_relacionados: [almacenes.registrar-egreso-a-partida-de-control]
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s057  # Manual de Almacenes › 2.2 Egresos
+  - web-https-documentacion-s10peru-com-manual-d-s040  # Manual de Almacenes › 2.1 Ingresos
+  - web-https-documentacion-s10peru-com-manual-d-s063  # Manual de Almacenes › 2.2.2.1 Egreso a Partida de Control [EPC] (1)
+  - web-https-documentacion-s10peru-com-manual-d-s001  # Manual de Almacenes › 1. ALMACENES DEL S10 ERP (1)
+  - web-https-documentacion-s10peru-com-manual-d-s089  # Manual de Almacenes › 3.7 Guías de Remisión
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

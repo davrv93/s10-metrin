@@ -9,6 +9,17 @@ de adjuntos.
 
 ## Metrín
 
+Metrín es el asistente que **enseña a hacer** tareas de S10 con los manuales como fuente. Documentos:
+
+| Documento | Qué cuenta |
+|---|---|
+| [`docs/V2-RAG-PROCEDURAL.md`](docs/V2-RAG-PROCEDURAL.md) | La V2: RAG procedural paso → foto, interruptor V1/V2, resultados (§14) |
+| [`docs/DISENO-modo-traza-metrin.md`](docs/DISENO-modo-traza-metrin.md) y [`docs/CONTRATO-traza-metrin.md`](docs/CONTRATO-traza-metrin.md) | El modo traza: por qué etapas pasa cada mensaje y dónde mejorar |
+| [`kb/procedimientos/ESQUEMA.md`](kb/procedimientos/ESQUEMA.md) y [`COBERTURA.md`](kb/procedimientos/COBERTURA.md) | Los procedimientos YAML: esquema y qué tareas cubren |
+| [`kb/conceptos/SIN_FUENTE.md`](kb/conceptos/SIN_FUENTE.md) | Glosario: términos sin fuente y los definidos por uso |
+| [`metrin/eval/`](metrin/eval/) | Benchmarks: `V1_VS_V2.md`, `BUSQUEDA.md`, `MODELOS.md` |
+| [`PENDIENTES.md`](PENDIENTES.md) | Lo que queda por hacer |
+
 El plan del piloto de ajuste de estilo LoRA en Apple Silicon está en
 [`docs/PLAN_LORA_METRIN_MLX.md`](docs/PLAN_LORA_METRIN_MLX.md). El ajuste no
 sustituye la recuperación RAG ni autoriza aprendizaje automático de conversaciones.

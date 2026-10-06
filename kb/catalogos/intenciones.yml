@@ -1,0 +1,749 @@
+# Catálogo de INTENCIONES de Metrín (asistente instruccional de S10 ERP).
+#
+# Un catálogo CLASIFICA un mensaje; no responde ni contiene datos de S10. Qué se dice lo decide el código con las
+# plantillas de metrin/plantillas/respuestas.yml y los datos de kb/ (procedimientos, conceptos, fragmentos).
+#
+# Todo lo que hay aquí es SINTÉTICO: frases escritas a mano imitando cómo escribe un usuario de obra u oficina
+# (correctas, coloquiales, con faltas y abreviaturas). No hay mensajes reales de usuarios. El conjunto de PRUEBA vive en
+# intenciones_prueba.yml y NUNCA entra al entrenamiento; el ruido (clase «ninguno») vive en ruido.yml.
+#
+# Validar:  .venv/bin/python3 herramientas/validar_catalogos_metrin.py
+# Medir:    .venv/bin/python3 herramientas/evaluar_clasificador_metrin.py   (informe en kb/catalogos/EVALUACION.md)
+#
+# ── Cambios respecto a la taxonomía de ESPECIFICACION_IA_METRIN.md §2 (21 intenciones) ─────────────────────────────
+# La especificación mezcla dos ejes en una sola etiqueta: el ACTO (cómo hacer, qué es, error, reporte…) y el TEMA
+# (presupuestos, metrados, planillas, contabilidad, compras, costos, configuración). «¿Cómo registro un presupuesto?»
+# sería a la vez consulta_presupuestos_s10 y soporte_como_hacer; un clasificador de una sola etiqueta no puede acertar
+# lo que la propia etiqueta no decide. Para un asistente instruccional lo que decide la ruta es el ACTO; el tema es una
+# ENTIDAD (`modulo`, ver `entidades` abajo, detectada por alias). Por eso:
+#   * 4 consulta_presupuestos_s10, 5 consulta_metrados, 6 consulta_planillas, 7 consulta_contabilidad, 8 consulta_compras,
+#     9 consulta_costos y 10 consulta_configuracion_s10  →  entidad `modulo` + el acto que corresponda; la pregunta de
+#     información general sobre un módulo («¿S10 permite…?», «¿cómo funciona…?») es `consulta_funcionalidad` (nueva).
+#   * 14 soporte_como_hacer se conserva y pasa a ser la intención central: pide un PROCEDIMIENTO paso a paso.
+#   * 15 cotizacion_servicio se funde en 16 consulta_comercial (misma ruta: comercial/humano).
+#   * 20 fuera_de_dominio NO se entrena como intención: es la clase «ninguno», entrenada con ruido.yml.
+#   * 13 soporte_error absorbe además «no me aparece ese botón / me salió otra ventana» durante un procedimiento guiado;
+#     con un paso pendiente, el código lo trata como error de ese paso (plantilla ERROR_FRECUENTE / VERIFICACION).
+#   * Nuevas: consulta_concepto («¿qué es X?»), consulta_funcionalidad, avance_paso («listo, ¿qué sigue?») y
+#     pedir_aclaracion («no entendí el paso 3»). Las dos últimas son el bucle instruccional: sin ellas, «listo» o
+#     «no entendí» se iban a social o a la búsqueda documental.
+#   * 19 solicitud_aprendizaje conserva el sentido de §7 (el usuario le pide a Metrín que aprenda/registre algo). «Quiero
+#     aprender a usar almacenes» NO es eso: es soporte_como_hacer (una ruta de procedimientos).
+# Alineación con la capa de reglas de docs/ORQUESTACION_METRIN.md («tipo de consulta técnica»): ver `tipo_consulta`.
+#
+# Campos por intención:
+#   descripcion     qué cubre y qué NO (frontera con las vecinas)
+#   especificacion  número en §2 de la especificación (o «nueva»)
+#   ruta            rag | procedimiento | concepto | conversacion | humano
+#   accion          lo que hace el orquestador
+#   tipo_consulta   equivalente en la capa de reglas actual (procedimiento, concepto, comparacion, problema,
+#                   seguimiento, aclaracion, informacion_directa) o null si es conversación/derivación
+#   plantillas      plantillas de metrin/plantillas/respuestas.yml que puede usar (el validador comprueba que existan)
+#   ejemplos        ≥ minimo_ejemplos, sin duplicados (ni salvo acentos/signos) dentro ni entre intenciones
+
+catalogo: intenciones_metrin
+version: 1
+sintetico: true
+generado: 2026-10-06
+minimo_ejemplos: 25
+umbral_referencia: 0.40       # el de metrin/internal/clasificar (UmbralDefecto); el calibrado está en EVALUACION.md
+
+# Abstención: si el mejor puntaje queda bajo el umbral (o el margen con la segunda es mínimo), Metrín NO adivina:
+# usa ACLARAR_TAREA. Si gana «ninguno» (ruido.yml), usa FUERA_DE_DOMINIO.
+abstencion:
+  plantilla: ACLARAR_TAREA
+  clase_ninguno: {fuente: ruido.yml, plantilla: FUERA_DE_DOMINIO, especificacion: 20}
+
+# Entidad módulo: absorbe las intenciones temáticas de la especificación. Se detecta por alias (léxico), no por
+# embeddings. Los nombres de módulo son los de los manuales oficiales (kb/fragmentos.jsonl, campo «manual»).
+entidades:
+  modulo:
+    presupuestos:
+      absorbe: [consulta_presupuestos_s10, consulta_metrados]
+      alias: [presupuesto, presupuestos, partida, partidas, apu, acu, "analisis de precios", "precio unitario",
+              metrado, metrados, subpresupuesto, "formula polinomica", monomio, "indice unificado", "gastos generales",
+              insumo, insumos, "presupuesto meta", "presupuesto venta"]
+    gerencia_de_proyectos:
+      absorbe: [consulta_costos, consulta_metrados]
+      alias: ["gerencia de proyectos", valorizacion, valorizaciones, "partida de control", cronograma, avance,
+              "control de costos", "costo real", wbs, "parte diario", tareo]
+    lean:
+      alias: [lean, lookahead, "last planner", restriccion, restricciones]
+    compras:
+      absorbe: [consulta_compras]
+      alias: [compras, logistica, pedido, pedidos, requerimiento, "orden de compra", "orden de servicio", cotizacion,
+              "cuadro comparativo", proveedor, proveedores, subcontrato]
+    almacenes:
+      absorbe: [consulta_compras]
+      alias: [almacen, almacenes, kardex, "nota de ingreso", "nota de salida", "guia de remision", stock, transferencia]
+    nominas:
+      absorbe: [consulta_planillas]
+      alias: [nomina, nominas, planilla, planillas, cts, gratificacion, trabajador, trabajadores, "construccion civil",
+              "boleta de pago", afp]
+    facturacion:
+      alias: [facturacion, factura, facturas, boleta, "nota de credito", "nota de debito", "factura electronica", sunat]
+    administrativo:
+      alias: [administrativo, tesoreria, "caja chica", "rendicion de cuentas", "cuentas por pagar", detraccion,
+              detracciones, pago, pagos, anticipo]
+    contabilidad:
+      absorbe: [consulta_contabilidad]
+      alias: [contabilidad, asiento, asientos, "plan de cuentas", "centro de costo", "libro diario", balance,
+              "cierre contable", periodo, comprobante]
+    sistema:
+      absorbe: [consulta_configuracion_s10]
+      alias: [instalacion, instalar, "sql server", "base de datos", usuario, usuarios, contrasena, licencia,
+              revision, actualizacion, "copia de seguridad", conexion, servidor]
+    movil_y_portales:
+      alias: ["tareo movil", "calidad movil", aprobaciones, "portal del proveedor", "portal del colaborador",
+              celular, app]
+
+intenciones:
+
+  # ── Conversación ──────────────────────────────────────────────────────────────────────────────────────────────
+  saludo:
+    descripcion: "Saludo o apertura sin pedido concreto. Si el saludo trae una pregunta de S10, manda la pregunta."
+    especificacion: 1
+    ruta: conversacion
+    accion: saludar
+    tipo_consulta: null
+    plantillas: [SALUDO, RETOMA]
+    ejemplos:
+      - "hola"
+      - "hola metrín"
+      - "buenos días"
+      - "buenas tardes, Metrín"
+      - "buenas noches"
+      - "holaa"
+      - "hola, ¿cómo estás?"
+      - "qué tal"
+      - "hey"
+      - "saludos"
+      - "hola, buenas"
+      - "buenas"
+      - "hola de nuevo"
+      - "holi"
+      - "qué hay, Metrín"
+      - "buenos días, soy el residente de obra"
+      - "buenas tardes a todos"
+      - "hola qué tal tu día"
+      - "ola"
+      - "bns dias"
+      - "buenass"
+      - "alo"
+      - "hola hola"
+      - "muy buenos días"
+      - "hola, ¿estás disponible?"
+      - "buenas, ¿hay alguien?"
+      - "buen día"
+      - "hello"
+      - "hola, buenas noches"
+      - "qué tal Metrín, ¿todo bien?"
+
+  despedida:
+    descripcion: "Cierre de la conversación. Si queda un procedimiento a medias, el código lo deja suspendido (no lo cancela)."
+    especificacion: 2
+    ruta: conversacion
+    accion: despedir
+    tipo_consulta: null
+    plantillas: [DESPEDIDA]
+    ejemplos:
+      - "chau"
+      - "adiós"
+      - "hasta luego"
+      - "nos vemos"
+      - "me retiro, gracias por todo"
+      - "hasta mañana"
+      - "bye"
+      - "chao Metrín"
+      - "eso es todo por hoy"
+      - "ya me voy"
+      - "me desconecto"
+      - "cuídate"
+      - "hasta la próxima"
+      - "nos hablamos luego"
+      - "bueno, me voy a seguir trabajando"
+      - "listo, eso era todo, chau"
+      - "terminamos por hoy"
+      - "luego te escribo"
+      - "hasta pronto"
+      - "me tengo que ir"
+      - "cierro la sesión"
+      - "ya no necesito nada más, adiós"
+      - "buenas noches, me despido"
+      - "chaito"
+      - "nos vemos mañana"
+      - "me despido"
+      - "otro día seguimos"
+      - "salgo a obra, después continúo"
+      - "bye bye"
+
+  agradecimiento:
+    descripcion: "Agradece la ayuda. No evalúa la respuesta (eso es feedback_respuesta) ni confirma un paso (avance_paso)."
+    especificacion: 3
+    ruta: conversacion
+    accion: acusar_agradecimiento
+    tipo_consulta: null
+    plantillas: [AGRADECIMIENTO, PREGUNTA_AVANCE]
+    ejemplos:
+      - "gracias"
+      - "muchas gracias"
+      - "mil gracias"
+      - "te agradezco"
+      - "gracias, me sirvió"
+      - "excelente, gracias"
+      - "perfecto, muchas gracias"
+      - "gracias por la ayuda"
+      - "muy amable"
+      - "graciass"
+      - "grax"
+      - "gracias Metrín, eres un crack"
+      - "buenísimo, gracias"
+      - "gracias, quedó clarísimo"
+      - "genial, gracias"
+      - "gracias por explicarme"
+      - "agradecido"
+      - "gracias por tu tiempo"
+      - "ok gracias"
+      - "muchísimas gracias"
+      - "gracias, eres muy útil"
+      - "gracias de verdad"
+      - "qué bien, gracias"
+      - "te debo una"
+      - "gracias, me salvaste el día"
+      - "gracias por la paciencia"
+      - "mil gracias por los pasos"
+      - "gracias amigo"
+
+  # ── Conocimiento ──────────────────────────────────────────────────────────────────────────────────────────────
+  consulta_concepto:
+    descripcion: >-
+      Pregunta QUÉ ES / QUÉ SIGNIFICA / PARA QUÉ SIRVE un término de S10 o de obra (metrado, APU, kardex, tareo…).
+      Se responde con el glosario kb/conceptos/ y se ofrece el procedimiento relacionado. No es «cómo se hace» ni
+      «diferencia entre A y B».
+    especificacion: nueva
+    ruta: concepto
+    accion: explicar_concepto
+    tipo_consulta: concepto
+    plantillas: [CONCEPTO, SIN_EVIDENCIA]
+    ejemplos:
+      - "¿Qué es una partida de control?"
+      - "qué significa APU"
+      - "¿qué es el análisis de precios unitarios?"
+      - "q es un insumo"
+      - "¿Qué es la fórmula polinómica?"
+      - "que significa indice unificado"
+      - "¿qué es el presupuesto meta?"
+      - "para qué sirve el kardex"
+      - "¿qué es una valorización?"
+      - "qué es un subpresupuesto"
+      - "¿Qué son los gastos generales?"
+      - "que es el tareo"
+      - "¿a qué se refiere 'recurso' en S10?"
+      - "qué es la hoja del presupuesto"
+      - "define partida"
+      - "¿qué es una guía de remisión?"
+      - "que es una detraccion"
+      - "¿Qué es un centro de costo?"
+      - "qué significa asiento contable"
+      - "que es el monomio en la formula polinomica"
+      - "¿qué quiere decir 'título' dentro del presupuesto?"
+      - "explícame qué es el lookahead"
+      - "qué es last planner"
+      - "q significa WBS"
+      - "¿Qué es una orden de compra?"
+      - "que es un pedido en logística"
+      - "¿qué es la utilidad en el presupuesto?"
+      - "concepto de cuadrilla"
+      - "qué es el factor de rendimiento"
+      - "¿qué es un comprobante en S10?"
+      - "qué es el cuadro comparativo de cotizaciones"
+      - "¿Qué es la CTS?"
+      - "significado de nota de ingreso"
+      - "que es el costo directo"
+
+  solicitud_comparacion:
+    descripcion: >-
+      Pide la DIFERENCIA entre dos conceptos, documentos u opciones de S10 (meta vs venta, pedido vs orden de compra).
+      Comparar DATOS de una obra (meta contra real) es un reporte: solicitud_reporte.
+    especificacion: 12
+    ruta: concepto
+    accion: comparar_conceptos
+    tipo_consulta: comparacion
+    plantillas: [COMPARACION, SIN_EVIDENCIA]
+    ejemplos:
+      - "¿cuál es la diferencia entre presupuesto meta y presupuesto venta?"
+      - "diferencia entre pedido y orden de compra"
+      - "qué diferencia hay entre insumo y recurso"
+      - "partida vs partida de control"
+      - "¿en qué se diferencia la guía de remisión de la nota de salida?"
+      - "no entiendo la diferencia entre título y subpresupuesto"
+      - "kardex valorizado o kardex físico, ¿cuál uso?"
+      - "qué es mejor, tareo estándar o tareo móvil"
+      - "diferencia entre gastos generales fijos y variables"
+      - "costo directo vs costo indirecto"
+      - "en qué se diferencian la valorización y el avance de obra"
+      - "¿es lo mismo planilla que nómina?"
+      - "orden de servicio u orden de compra, ¿cuál corresponde para un subcontratista?"
+      - "¿qué diferencia hay entre una factura y una boleta en facturación?"
+      - "nota de crédito o nota de débito, ¿cuándo uso cada una?"
+      - "diferencia entre detracción y retención"
+      - "¿qué cambia entre el modo programado y el modo valorización del cronograma?"
+      - "diferencia entre índice unificado e índice de precios al consumidor"
+      - "requerimiento y pedido son lo mismo?"
+      - "¿cuál es la diferencia entre cotización y cuadro comparativo?"
+      - "diferencias entre el APU de venta y el de meta"
+      - "que diferencia hay entre almacén central y almacén de obra"
+      - "asiento manual vs asiento automático"
+      - "cuál conviene, copiar partidas de otro presupuesto o importarlas de Excel"
+      - "en qué se distingue el centro de costo del proyecto"
+      - "comparación entre tareo y parte diario"
+      - "CTS y gratificación, qué diferencia tienen"
+      - "diferencia entre utilidad y gastos generales en el pie de presupuesto"
+      - "monomio vs submonomio"
+      - "¿Last Planner y Lookahead son lo mismo?"
+
+  # ── Instrucción paso a paso ───────────────────────────────────────────────────────────────────────────────────
+  soporte_como_hacer:
+    descripcion: >-
+      Pide CÓMO HACER una tarea en S10 (registrar, generar, calcular, configurar, aprobar, instalar…) o aprender a
+      manejar un módulo. Se responde con un procedimiento de kb/procedimientos/ paso a paso. Si la tarea existe en
+      varios módulos, primero ACLARAR_MODULO. Un REPORTE concreto es solicitud_reporte.
+    especificacion: 14
+    ruta: procedimiento
+    accion: guiar_procedimiento
+    tipo_consulta: procedimiento
+    plantillas: [PROCEDIMIENTO_INTRO, PASO, PASOS_BLOQUE, PREGUNTA_AVANCE, ACLARAR_MODULO, SIN_EVIDENCIA]
+    ejemplos:
+      - "¿cómo ingreso los metrados de una partida?"
+      - "cómo genero una orden de compra desde el pedido"
+      - "pasos para registrar una guía de remisión"
+      - "¿cómo hago el tareo de mi personal?"
+      - "cómo calculo la planilla de construcción civil"
+      - "como agrego partidas a un subpresupuesto"
+      - "¿cómo armo la fórmula polinómica?"
+      - "enséñame a registrar un ingreso de materiales al almacén"
+      - "cómo emito una factura electrónica"
+      - "¿dónde registro un asiento contable manual?"
+      - "como copio un presupuesto de otro proyecto"
+      - "quiero aprender a hacer valorizaciones en S10"
+      - "cómo se cierra el mes en contabilidad"
+      - "cómo cargo los precios de los insumos"
+      - "pasos para hacer un APU"
+      - "¿Cómo doy de alta a un proveedor nuevo?"
+      - "como registro una cotización de proveedor"
+      - "cómo anulo una orden de compra"
+      - "¿cómo hago una transferencia entre almacenes?"
+      - "cómo asigno el centro de costo a un gasto"
+      - "como programo el cronograma de obra"
+      - "¿cómo registro el avance de obra para la valorización?"
+      - "cómo exporto el presupuesto a Excel"
+      - "cómo importo partidas desde excel"
+      - "como registro una detracción en el pago a proveedor"
+      - "¿cómo incorporo a un trabajador en nóminas?"
+      - "como configuro los gastos generales del presupuesto"
+      - "explícame paso a paso cómo hacer un pedido de obra"
+      - "cómo apruebo un pedido desde el celular"
+      - "ayúdame a registrar una nota de crédito"
+      - "cómo hago la conformidad de un servicio"
+      - "q pasos sigo para calcular la CTS"
+      - "como reemplazo un insumo en todos los APU"
+      - "¿cómo saco una copia de seguridad de la base de datos?"
+      - "cómo instalo S10 en una pc nueva"
+      - "como cambio la contraseña de un usuario"
+
+  avance_paso:
+    descripcion: >-
+      Durante un procedimiento guiado: confirma que terminó el paso, pide el siguiente, salta o vuelve a un paso, o
+      pide retomar lo que se estaba haciendo. Sin procedimiento activo, el código lo trata como acuse.
+    especificacion: nueva
+    ruta: conversacion
+    accion: siguiente_paso
+    tipo_consulta: seguimiento
+    plantillas: [VERIFICACION, PASO, PASOS_BLOQUE, PREGUNTA_AVANCE, PROCEDIMIENTO_FIN, RETOMA]
+    ejemplos:
+      - "listo"
+      - "ya está"
+      - "ya lo hice"
+      - "siguiente"
+      - "¿y ahora qué sigue?"
+      - "hecho, continúa"
+      - "ok, ya guardé"
+      - "ya me salió, ¿qué hago después?"
+      - "paso 2 listo"
+      - "continuemos"
+      - "dale, sigue"
+      - "ya terminé ese paso"
+      - "¿cuál es el siguiente paso?"
+      - "ya hice clic en aceptar"
+      - "listo, ya aparece la ventana"
+      - "ok ya"
+      - "sigamos con lo del presupuesto"
+      - "volvamos a los pasos de la orden de compra"
+      - "ya lo grabé, y luego?"
+      - "perfecto, ya está registrado, ¿qué más?"
+      - "next"
+      - "sí, ya lo logré"
+      - "ya cargué los insumos, continúa"
+      - "avanza al paso 4"
+      - "salta ese paso, ya lo tengo hecho"
+      - "ya, siguiente paso porfa"
+      - "terminé de llenar los datos"
+      - "ya está procesado, sigue"
+      - "vamos con el último paso"
+      - "listo, ¿lo siguiente?"
+
+  pedir_aclaracion:
+    descripcion: >-
+      No entendió la explicación o un paso: pide repetir, otras palabras, más detalle, un ejemplo o dónde está algo
+      que Metrín mencionó. No dice que algo falle (soporte_error) ni que la respuesta esté mal (feedback_respuesta).
+    especificacion: nueva
+    ruta: conversacion
+    accion: reformular_paso
+    tipo_consulta: aclaracion
+    plantillas: [PASO, CONCEPTO, PREGUNTA_AVANCE]
+    ejemplos:
+      - "no entendí"
+      - "¿me lo explicas de otra forma?"
+      - "no entiendo el paso 3"
+      - "más despacio por favor"
+      - "¿qué quisiste decir con procesar?"
+      - "repite el último paso"
+      - "explícamelo más simple"
+      - "¿dónde queda ese botón?"
+      - "me perdí"
+      - "¿cuál ventana?"
+      - "no me quedó claro lo de los monomios"
+      - "puedes darme un ejemplo?"
+      - "no sé qué es eso que me dices"
+      - "otra vez, por favor"
+      - "¿en qué parte de la pantalla está?"
+      - "explica con más detalle el paso de aprobar"
+      - "eso es muy técnico, no te sigo"
+      - "¿lo puedes resumir?"
+      - "¿qué significa lo que pusiste en el paso 2?"
+      - "vuelve a explicarme lo de la partida de control"
+      - "detalla mejor eso"
+      - "¿cómo así?"
+      - "no capté la idea"
+      - "repítemelo pero en pasos más cortos"
+      - "¿por qué hay que hacer eso?"
+      - "¿me muestras dónde exactamente?"
+      - "no comprendo la respuesta"
+      - "y eso para qué es?"
+
+  soporte_error:
+    descripcion: >-
+      Algo falla o no se ve como debería: mensaje de error, el sistema no abre o se cuelga, no deja grabar, un dato no
+      cuadra, o en un procedimiento guiado no aparece el botón/ventana indicada. Se busca en manuales/FAQ; si no hay
+      evidencia, se deriva.
+    especificacion: 13
+    ruta: rag
+    accion: diagnosticar_error
+    tipo_consulta: problema
+    plantillas: [ERROR_FRECUENTE, VERIFICACION, SIN_EVIDENCIA, DERIVAR_HUMANO]
+    ejemplos:
+      - "me sale error al guardar el presupuesto"
+      - "S10 no abre, se queda cargando"
+      - "no me deja aprobar el pedido"
+      - "error de conexión con el servidor SQL"
+      - "dice 'usuario no autorizado' cuando entro a nóminas"
+      - "no me aparece el botón de procesar"
+      - "la orden de compra no jala los precios de la cotización"
+      - "el kardex no cuadra con el stock físico"
+      - "no puedo imprimir la valorización"
+      - "se cuelga cuando exporto a Excel"
+      - "me bota del sistema a cada rato"
+      - "el total del presupuesto sale en cero"
+      - "no encuentro la opción que me dijiste"
+      - "la factura electrónica fue rechazada por SUNAT"
+      - "error 'violación de clave primaria' al registrar"
+      - "no me sale el insumo en la lista"
+      - "el asiento contable no está cuadrado"
+      - "la fórmula polinómica me da error de monomios"
+      - "no se genera la guía de remisión"
+      - "el tareo móvil no sincroniza"
+      - "aparece la pantalla en blanco al abrir el reporte"
+      - "no me carga la planilla de este mes"
+      - "me sale 'falta procesar el subpresupuesto'"
+      - "ayuda, se borró la partida sin querer"
+      - "el sistema está muy lento"
+      - "no me deja cerrar el periodo contable"
+      - "la licencia dice que expiró"
+      - "el pedido aparece anulado y no sé por qué"
+      - "hice el paso 3 y me salió otra ventana"
+      - "los precios del APU no se actualizan"
+      - "no me reconoce la contraseña"
+
+  solicitud_reporte:
+    descripcion: >-
+      Pide un REPORTE, listado o informe (cuál muestra X, cómo sacarlo, imprimirlo o exportarlo), incluida la
+      comparación de datos de una obra (meta contra real). Se busca en kb/fragmentos_reportes.jsonl y en los manuales.
+    especificacion: 11
+    ruta: rag
+    accion: ubicar_reporte
+    tipo_consulta: informacion_directa
+    plantillas: [RESPUESTA_RAG, PROCEDIMIENTO_INTRO, PASO, SIN_EVIDENCIA]
+    ejemplos:
+      - "¿qué reporte me muestra el costo por partida?"
+      - "necesito el reporte de kardex de cemento"
+      - "cómo veo el kardex de un material"
+      - "dónde saco el reporte de órdenes de compra pendientes"
+      - "quiero imprimir el presupuesto con los APU"
+      - "reporte de valorizaciones del mes"
+      - "hay algún reporte de stock por almacén?"
+      - "cómo obtengo el listado de trabajadores en planilla"
+      - "qué reporte compara el meta con el real"
+      - "¿cómo saco el libro diario?"
+      - "reporte de horas hombre por partida"
+      - "dónde veo el resumen de pedidos por proyecto"
+      - "imprimir la fórmula polinómica"
+      - "listado de insumos del presupuesto con sus cantidades"
+      - "reporte de guías de remisión emitidas"
+      - "q reporte me da el saldo de caja chica"
+      - "quiero exportar el reporte de compras por proveedor"
+      - "reporte para SUNAT del kardex"
+      - "cómo genero el estado de resultados"
+      - "necesito ver el balance de comprobación"
+      - "reporte de avance de obra por periodo"
+      - "dónde está el reporte de cuentas por pagar"
+      - "cuál es el informe de detracciones"
+      - "me puedes decir qué reporte trae el consumo de materiales por obra"
+      - "el reporte de planilla de construcción civil dónde está"
+      - "reporte de cronograma valorizado"
+      - "listado de órdenes de servicio por subcontratista"
+      - "reporte de asientos por centro de costo"
+
+  consulta_funcionalidad:
+    descripcion: >-
+      Pregunta informativa sobre lo que S10 hace o permite («¿S10 permite…?», «¿se puede…?», «¿cómo funciona…?»,
+      requisitos, integraciones). Absorbe las intenciones temáticas 4–10 de la especificación (el tema va en la
+      entidad `modulo`). Se responde con RAG y citas.
+    especificacion: "4-10 (absorbe)"
+    ruta: rag
+    accion: responder_con_fuentes
+    tipo_consulta: informacion_directa
+    plantillas: [RESPUESTA_RAG, SIN_EVIDENCIA]
+    ejemplos:
+      - "¿S10 permite trabajar con varias monedas en un presupuesto?"
+      - "se puede tener dos almacenes en la misma obra?"
+      - "¿el sistema calcula automático la detracción?"
+      - "S10 tiene app para el celular?"
+      - "¿el módulo de nóminas incluye el régimen de construcción civil?"
+      - "se pueden importar los metrados desde Excel?"
+      - "cuántos monomios admite la fórmula polinómica?"
+      - "¿la orden de compra se puede generar sin pedido?"
+      - "S10 se integra con Sperant?"
+      - "¿qué módulos tiene S10?"
+      - "el presupuesto se puede compartir entre varios usuarios a la vez?"
+      - "se puede usar S10 en Mac?"
+      - "¿S10 emite facturas electrónicas directamente a SUNAT?"
+      - "qué versión de SQL Server necesita S10"
+      - "el tareo móvil funciona sin internet?"
+      - "¿cómo funciona el portal del proveedor?"
+      - "qué hace la opción de consolidar subpartidas"
+      - "el kardex se valoriza por promedio o por PEPS?"
+      - "¿hay límite de partidas en un presupuesto?"
+      - "S10 maneja centros de costo por proyecto o por empresa?"
+      - "¿las aprobaciones se pueden hacer desde el móvil?"
+      - "en qué módulo se ven las valorizaciones"
+      - "¿el sistema avisa cuando el stock está bajo?"
+      - "se puede reabrir un periodo contable cerrado?"
+      - "la planilla calcula la CTS sola o hay que meterla a mano?"
+      - "¿qué datos lleva una guía de remisión en S10?"
+      - "S10 trabaja en la nube o es instalado?"
+      - "¿Lean es un módulo aparte?"
+      - "puedo tener varias empresas en la misma base de datos?"
+      - "¿el cronograma se enlaza con el presupuesto?"
+
+  # ── Calidad, aprendizaje y derivación ─────────────────────────────────────────────────────────────────────────
+  feedback_respuesta:
+    descripcion: >-
+      Evalúa o corrige la RESPUESTA de Metrín (está mal, incompleta, cita equivocada, buena respuesta). Se registra con
+      la respuesta y sus fuentes; nunca se convierte sola en conocimiento (§5 y §7 de la especificación).
+    especificacion: 18
+    ruta: conversacion
+    accion: registrar_feedback
+    tipo_consulta: null
+    plantillas: [FEEDBACK_RECIBIDO]
+    ejemplos:
+      - "eso está mal"
+      - "esa respuesta no me sirve"
+      - "te equivocaste, ese botón no existe"
+      - "no es lo que pregunté"
+      - "la respuesta es incorrecta"
+      - "eso no aplica a mi versión de S10"
+      - "muy buena respuesta"
+      - "buena respuesta, clara y precisa"
+      - "la cita que pusiste no tiene nada que ver"
+      - "ese manual está desactualizado"
+      - "me diste los pasos en otro orden"
+      - "corrige eso"
+      - "no, eso es de compras, no de almacenes"
+      - "estás confundiendo el pedido con la orden de compra"
+      - "esa info es vieja"
+      - "la respuesta está incompleta"
+      - "no me sirvió para nada"
+      - "fallaste en el paso 2"
+      - "tu respuesta fue útil"
+      - "le doy 5 estrellas a esa respuesta"
+      - "mala respuesta"
+      - "eso que dijiste no es así"
+      - "la página que citaste no habla de eso"
+      - "demasiado largo, no ayuda"
+      - "esta vez sí acertaste"
+      - "la respuesta anterior estaba mejor"
+      - "no inventes"
+      - "te faltó decir que hay que procesar primero"
+
+  solicitud_aprendizaje:
+    descripcion: >-
+      Le pide a Metrín que aprenda, guarde, investigue o registre algo (§7: aprendizaje controlado). Metrín solo puede
+      decir que lo REGISTRÓ para revisión; nunca que ya lo aprendió. «Quiero aprender X» es soporte_como_hacer.
+    especificacion: 19
+    ruta: humano
+    accion: registrar_pendiente
+    tipo_consulta: null
+    plantillas: [APRENDIZAJE_REGISTRADO]
+    ejemplos:
+      - "apréndete esto: en mi empresa el pedido lo aprueba el residente"
+      - "guarda esta información para la próxima"
+      - "agrega esto a tu base de conocimiento"
+      - "te paso el procedimiento correcto para que lo aprendas"
+      - "anota que en nuestra obra usamos tareo móvil"
+      - "registra esta pregunta para que la revisen"
+      - "no sabías eso, investígalo"
+      - "¿puedes aprender de esta conversación?"
+      - "te enseño cómo lo hacemos nosotros"
+      - "memoriza que el almacén central es el 001"
+      - "incluye este manual en lo que sabes"
+      - "te adjunto el instructivo para que lo leas"
+      - "aprende a responder esto bien"
+      - "cuando sepas la respuesta me avisas"
+      - "toma nota de esta corrección"
+      - "sube esta respuesta a tu base"
+      - "recuerda esto para otra vez"
+      - "queda pendiente, averígualo y me dices"
+      - "deberías saber cómo se hace el cierre en nuestra empresa, te lo explico"
+      - "esta es la forma correcta, guárdala"
+      - "agrega la guía de facturación electrónica a tu conocimiento"
+      - "investiga cómo se configura el reparto de utilidades y luego me cuentas"
+      - "actualiza tu información con la versión nueva del manual"
+      - "¿ya aprendiste lo que te enseñé ayer?"
+      - "registra que esta respuesta no estaba en los manuales"
+      - "quiero proponerte un dato nuevo para que lo valides"
+
+  consulta_comercial:
+    descripcion: >-
+      Precio, cotización o compra de licencias y servicios (implementación, capacitación, cursos, soporte, desarrollo a
+      medida), demos y contacto comercial. Funde cotizacion_servicio (15) y consulta_comercial (16). Ojo: la
+      «cotización de proveedor» dentro de S10 es soporte_como_hacer.
+    especificacion: "15+16"
+    ruta: humano
+    accion: derivar_comercial
+    tipo_consulta: null
+    plantillas: [DERIVAR_HUMANO]
+    ejemplos:
+      - "¿cuánto cuesta la licencia de S10?"
+      - "quiero una cotización del módulo de presupuestos"
+      - "precio de S10 ERP para una constructora pequeña"
+      - "¿Optimiza 360 hace implementaciones de S10?"
+      - "quiero agendar una demo"
+      - "cuánto cobran por la capacitación"
+      - "tienen cursos de S10 certificados?"
+      - "¿cómo contrato el soporte?"
+      - "quiero comprar más licencias"
+      - "me pueden cotizar la implementación de nóminas?"
+      - "¿qué servicios ofrece Optimiza 360?"
+      - "hacen dashboards a medida?"
+      - "cuánto cuesta el CRM Sperant"
+      - "¿tienen planes mensuales?"
+      - "necesito una propuesta comercial para mi empresa"
+      - "con quién hablo para comprar S10"
+      - "¿dan factura por la licencia?"
+      - "precio de la renovación anual"
+      - "¿hacen descuento por varias licencias?"
+      - "quiero que me llamen del área comercial"
+      - "¿el curso de S10 es presencial o virtual?"
+      - "cuánto demora una implementación completa"
+      - "trabajan con empresas de provincia?"
+      - "¿la capacitación incluye certificado?"
+      - "envíenme la lista de precios"
+      - "me interesa el servicio de migración de datos a S10"
+      - "¿cuánto sale el módulo de contabilidad solo?"
+      - "cotización para 5 usuarios de S10"
+
+  solicitud_humano:
+    descripcion: "Pide expresamente una persona: asesor, soporte, consultor, ticket o contacto directo."
+    especificacion: 17
+    ruta: humano
+    accion: derivar_humano
+    tipo_consulta: null
+    plantillas: [DERIVAR_HUMANO]
+    ejemplos:
+      - "quiero hablar con una persona"
+      - "pásame con un asesor"
+      - "necesito hablar con soporte técnico"
+      - "¿hay alguien humano?"
+      - "comunícame con un especialista"
+      - "prefiero que me atienda una persona"
+      - "quiero hablar con alguien de soporte, no con un bot"
+      - "¿me pueden llamar?"
+      - "dame el número de soporte"
+      - "necesito un técnico que se conecte a mi pc"
+      - "deriva mi caso a un humano"
+      - "quiero un ticket de soporte"
+      - "¿cuál es el correo de soporte?"
+      - "esto ya no lo resuelves tú, pásame con alguien"
+      - "necesito atención personalizada"
+      - "contacto de un consultor"
+      - "agente humano por favor"
+      - "quiero hablar con mi consultor de Optimiza"
+      - "puede escribirme alguien por WhatsApp?"
+      - "operador"
+      - "necesito que un experto revise mi base de datos"
+      - "llámame al celular"
+      - "abre un caso con soporte"
+      - "quiero reclamar con un supervisor"
+      - "hay algún ingeniero que me pueda ayudar en vivo?"
+      - "conéctame con mesa de ayuda"
+      - "derívame"
+      - "persona real por favor"
+
+  ambiguo:
+    descripcion: >-
+      Pedido sin tarea identificable: «tengo una duda», «lo del otro día», o solo el nombre de un módulo o documento.
+      Metrín pregunta qué quiere hacer (ACLARAR_TAREA) con opciones concretas; no busca a ciegas.
+    especificacion: 21
+    ruta: conversacion
+    accion: aclarar_tarea
+    tipo_consulta: null
+    plantillas: [ACLARAR_TAREA, ACLARAR_MODULO]
+    ejemplos:
+      - "ayúdame con eso"
+      - "tengo una duda"
+      - "una consulta"
+      - "necesito ayuda"
+      - "lo del otro día"
+      - "dime del módulo"
+      - "tengo un problema"
+      - "¿y lo otro?"
+      - "explícame"
+      - "sobre lo que hablamos"
+      - "necesito algo de S10"
+      - "¿me ayudas con una cosa?"
+      - "quiero saber algo"
+      - "eso del sistema"
+      - "¿cómo era?"
+      - "lo de la obra"
+      - "una pregunta rápida"
+      - "S10"
+      - "presupuesto"
+      - "planillas"
+      - "almacén"
+      - "info"
+      - "necesito que me orientes"
+      - "tengo un tema con logística"
+      - "consulta sobre contabilidad"
+      - "me ayudas?"
+      - "qué hago"
+      - "help"

@@ -1,0 +1,12 @@
+id: gastos_generales
+termino: "Gastos generales"
+sinonimos: []
+definicion: "Es la estructura de costos que demanda a la empresa constructora administrar y ejecutar la obra: todo lo que no aparece en los análisis de precios unitarios, como los sueldos de los residentes de obra, el alquiler de la oficina, las camionetas, el teléfono o el costo de los créditos."
+en_s10: "En el presupuesto venta se calcula su porcentaje y monto en el escenario de Gastos generales, por rubros y conceptos (número de personas, porcentaje de participación, meses y sueldo); la condición es tener la variable ggp o GGP en la columna Macro del diseño del pie de presupuesto. En el presupuesto meta van en un subpresupuesto detallado de gastos generales. En contratos, son un porcentaje que se registra primero en el pie de presupuesto y luego en el del contrato."
+procedimientos_relacionados: [presupuestos.calcular-gastos-generales]
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s059  # Manual de Presupuestos › 3.9 Gastos generales
+  - web-https-documentacion-s10peru-com-manual-d-s106  # Manual de Presupuestos › 5.1.3 Gastos generales
+  - web-https-documentacion-s10peru-com-manual-d-s003  # Manual de Presupuestos › 1.3.1 Presupuesto de Edificaciones (1)
+  - web-https-documentacion-s10peru-com-manual-d-s228  # Manual de Gerencia de Proyectos › 7.2.1 Estructura del diseño del resumen (1)
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

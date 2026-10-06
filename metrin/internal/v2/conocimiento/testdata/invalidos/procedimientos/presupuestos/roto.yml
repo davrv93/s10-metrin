@@ -1,0 +1,6 @@
+id: presupuestos.roto
+titulo: "Roto"
+pasos:
+  - n: 1
+    accion: "Uno"
+   fuente: [x]

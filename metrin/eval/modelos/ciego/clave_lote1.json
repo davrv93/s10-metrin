@@ -1,0 +1,58 @@
+{
+ "gen-003": {
+  "A": "qwen3.5-4b",
+  "B": "qwen3-4b-2507",
+  "C": "qwen3.5-2b",
+  "D": "granite-4.0-micro",
+  "E": "qwen3-1.7b"
+ },
+ "gen-010": {
+  "A": "qwen3-4b-2507",
+  "B": "qwen3.5-4b",
+  "C": "qwen3.5-2b",
+  "D": "granite-4.0-micro",
+  "E": "qwen3-1.7b"
+ },
+ "gen-016": {
+  "A": "qwen3-4b-2507",
+  "B": "granite-4.0-micro",
+  "C": "qwen3-1.7b",
+  "D": "qwen3.5-4b",
+  "E": "qwen3.5-2b"
+ },
+ "gen-022": {
+  "A": "qwen3-4b-2507",
+  "B": "qwen3-1.7b",
+  "C": "qwen3.5-2b",
+  "D": "qwen3.5-4b",
+  "E": "granite-4.0-micro"
+ },
+ "gen-030": {
+  "A": "qwen3.5-2b",
+  "B": "qwen3-4b-2507",
+  "C": "granite-4.0-micro",
+  "D": "qwen3.5-4b",
+  "E": "qwen3-1.7b"
+ },
+ "gen-033": {
+  "A": "qwen3-1.7b",
+  "B": "qwen3-4b-2507",
+  "C": "qwen3.5-4b",
+  "D": "granite-4.0-micro",
+  "E": "qwen3.5-2b"
+ },
+ "gen-035": {
+  "A": "qwen3-4b-2507",
+  "B": "qwen3-1.7b",
+  "C": "qwen3.5-4b",
+  "D": "granite-4.0-micro",
+  "E": "qwen3.5-2b"
+ },
+ "gen-036": {
+  "A": "qwen3-4b-2507",
+  "B": "qwen3.5-4b",
+  "C": "qwen3-1.7b",
+  "D": "qwen3.5-2b",
+  "E": "granite-4.0-micro"
+ }
+}

@@ -1,0 +1,206 @@
+id: gerencia-proyectos.registrar-subcontrato
+version: 1
+modulo: gerencia-proyectos
+titulo: "Registrar un subcontrato"
+objetivo: "Registrar los subcontratos que se utilizan en la ejecución del proyecto, con sus datos de cabecera y los recursos con su partida de control, para luego valorizarlos y llevar el control de sus pagos."
+nivel: intermedio
+preguntas:
+  - "cómo registro un subcontrato en gerencia de proyectos"
+  - "como creo un subcontrato para la obra"
+  - "dónde se registran los subcontratos del proyecto"
+  - "como agrego recursos o actividades a un subcontrato"
+  - "como asigno partida de control a los recursos del subcontrato"
+  - "como pongo el adelanto y la retencion de un subcontratista"
+  - "como registro un subcontrao con orden de servicio"
+  - "pasos para registrar un subcontratista en s10"
+  - "registrar subcontrato de mano de obra en el proyecto"
+aliases:
+  - "registrar subcontrato"
+  - "crear subcontrato"
+  - "nuevo subcontrato"
+  - "alta de subcontratista"
+  - "registro de subcontratos"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Subcontratos", "Subcontrato - De Obra", "Partidas de Control"]
+  objetos: ["subcontrato", "subcontratista", "partida de control", "adelanto", "recurso"]
+prerrequisitos:
+  - texto: "El jefe de grupo debe haber asignado permisos a los usuarios que usarán subcontratos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s141]
+  - texto: "Si va a asignar destinos específicos o frentes a los recursos, deben estar registrados previamente."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s147, web-https-documentacion-s10peru-com-manual-d-s148]
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.registrar-subcontrato#1"
+    accion: "Elija el proyecto, luego **Subcontratos** y el escenario **Subcontrato - De Obra**."
+    donde: "Escenario Subcontratos"
+    fuente: [img-e3714afd5c39-0000, img-3c91874fc471-0000, web-https-documentacion-s10peru-com-manual-d-s145]
+    pagina: null
+    fotos:
+      - id: "52bf550eaf8e"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/e3714afd5c39.png"
+        pagina: null
+        ocr: "‘Subcontratos\nEe J Proypetos\nSubcontrato - a Eseritorio\nDe Obra Luego, (=) PUENTE EN CARRETERA"
+  - n: 2
+    id: "gerencia-proyectos.registrar-subcontrato#2"
+    accion: "Haga clic derecho en el escenario para agregar un subcontrato y registrar los datos en la cabecera del formulario."
+    fuente: [img-97245ff02063-0000, web-https-documentacion-s10peru-com-manual-d-s145]
+    pagina: null
+    fotos:
+      - id: "36514845b911"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/97245ff02063.png"
+        pagina: null
+        ocr: "Subcontratos =\nClic derecho Sibeorrtos 1D) ageronarSubcentsio id"
+  - n: 3
+    id: "gerencia-proyectos.registrar-subcontrato#3"
+    accion: "Si antes realizó un pedido desde el almacén de servicios y generó una orden de servicio aprobada, use el botón para invocarla y que registre en forma automática los datos del subcontrato; caso contrario, llene manualmente los datos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s145]
+    pagina: null
+  - n: 4
+    id: "gerencia-proyectos.registrar-subcontrato#4"
+    accion: "Complete la cabecera del subcontrato (descripción, subcontratista, moneda, especialidad, adelanto, retenciones y fechas)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s145, img-dd752e274974-0000]
+    pagina: null
+    fotos:
+      - id: "25ad4858bd5c"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/dd752e274974.png"
+        pagina: null
+        ocr: "=a\n\n> Registro del Subcontrate_=. One [ue nS\nmanner es a  (.-4)\nProyecto: PUENTE EN CARRETERA a\n\n. a Orden de\nCodi o2004004 En elab e\n\ndiigo | Dien elaboracin eee N° Subcortrato |]\nDescripcion [Sc M. DE O. PARA, COLOCACION DE ACERO CORRUGADO\nSubcontratist a) Moned — aal\n\nubcontratista [92100126 |Florez, Antonio ={a-6] = Ey joneda [or NUEVOS SOLES\nEspecialidad fo191002 lacero cen] %Adelento [Tagper…"
+    sub:
+      - n: 1
+        id: "gerencia-proyectos.registrar-subcontrato#4.1"
+        accion: "En **Descripcion**, registre el nombre del subcontrato (acepta 240 caracteres)."
+        fuente: [img-dd752e274974-0000, web-https-documentacion-s10peru-com-manual-d-s145]
+        pagina: null
+      - n: 2
+        id: "gerencia-proyectos.registrar-subcontrato#4.2"
+        accion: "Use el botón de **Subcontratista** para elegir su nombre del catálogo de socio de negocio."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s145]
+        pagina: null
+      - n: 3
+        id: "gerencia-proyectos.registrar-subcontrato#4.3"
+        accion: "Use el botón para elegir el tipo de **moneda** del subcontrato."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s145]
+        pagina: null
+      - n: 4
+        id: "gerencia-proyectos.registrar-subcontrato#4.4"
+        accion: "Use el botón para elegir la **especialidad** del subcontrato, que sirve para agrupar la información."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s145]
+        pagina: null
+      - n: 5
+        id: "gerencia-proyectos.registrar-subcontrato#4.5"
+        accion: "Ingrese el porcentaje de adelanto que se le otorgará al subcontratista; marque **REQUIERE GARANTIA** solo si registrará el documento bancario de garantía."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s145, web-https-documentacion-s10peru-com-manual-d-s146]
+        pagina: null
+      - n: 6
+        id: "gerencia-proyectos.registrar-subcontrato#4.6"
+        accion: "Use el botón para elegir el recurso que debe ser utilizado en la factura."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s146]
+        pagina: null
+      - n: 7
+        id: "gerencia-proyectos.registrar-subcontrato#4.7"
+        accion: "Ingrese el porcentaje de retención que realizará de las valorizaciones (la retención es temporal)."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s146]
+        pagina: null
+      - n: 8
+        id: "gerencia-proyectos.registrar-subcontrato#4.8"
+        accion: "Ingrese la fecha de la firma del subcontrato, la fecha de inicio de los trabajos y la fecha prevista de finalización."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s146]
+        pagina: null
+  - n: 5
+    id: "gerencia-proyectos.registrar-subcontrato#5"
+    accion: "En la ventana inferior, elija la pestaña **ACTIVIDADES**, haga clic derecho y elija **Adicionar recursos**."
+    resultado: "Si el proyecto no tiene techo, se muestran los recursos del catálogo; si tiene techo, los recursos de los presupuestos asignados al proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s146, img-2231bbc4639a-0000]
+    pagina: null
+    fotos:
+      - id: "7a8e52a8774b"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/1d9c7c7ff5a7.png"
+        pagina: null
+        caption: "Adicionar recursos o actividades al subcontrato"
+        ocr: "—\nCnn kent orm\n|| Recursos Asignados\n#Lined Descripcién: Und. Cant. Origen\nO- Clie derecho"
+  - n: 6
+    id: "gerencia-proyectos.registrar-subcontrato#6"
+    accion: "Del catálogo que se muestra, elija el recurso con doble clic (por ejemplo, SC M. DE O. PARA COLOCACION DE ACERO CORRUGADO, del catálogo de SUBCONTRATOS)."
+    fuente: [img-ec717310b1ec-0000, web-https-documentacion-s10peru-com-manual-d-s146]
+    pagina: null
+    fotos:
+      - id: "b550392edd55"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/ec717310b1ec.png"
+        pagina: null
+        ocr: ": =]\n2% Catélogo de Subcontratos : 04 SUBCONTRATOS =x\nOpciones 2 Elija con doble clic\nDi ®t & Byte B| ob Wey] [ws Ba | Aaa\nEr@yTodosiesrpuistros Wf =| sd * NIVEL: 38\nfy BEeUIPGS ‘SC M, DE 0. PARA COLOCACION DE ACERO CORRUGADO |kg 65,663.00\n> SUBCONTRATOS: PC\nISC M. DE 0. PARA COLOCACION DE ACERO CORRUGADO kg 69663"
+  - n: 7
+    id: "gerencia-proyectos.registrar-subcontrato#7"
+    accion: "Revise la cantidad y el precio sugeridos: si el recurso será ejecutado por más de un subcontratista, edite la cantidad sin exceder el techo; el precio sugerido puede ser modificado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s147]
+    pagina: null
+  - n: 8
+    id: "gerencia-proyectos.registrar-subcontrato#8"
+    accion: "Haga clic derecho sobre el recurso y elija **Asignar/Reasignar partida de control** (o la opción para asignarla a TODOS los recursos)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s146, img-2231bbc4639a-0000]
+    pagina: null
+    fotos:
+      - id: "e8bc541ef278"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/2231bbc4639a.png"
+        pagina: null
+        ocr: "LT clic derecho Recursos Asignados: Q)\nitl Descripcion ‘Und. Cant. Orig Cantidad Precio Precio Ppto Parcial Tope Partida de C|\nBRB SC M. DE ©. PARA COLOCACION DE ACERO CO kg 65,663.00 65,663.00 1.0000 1.0000 65,663.0 Si\nDB Adicionar recursos\nAdicionales y deductivos....\nX Eliminar\nHistoria Factor de Reajuste\nB Copiar\nAsignar/Reasignar partida de control\nAsignarfReasignar partida de control a TODOS…"
+  - n: 9
+    id: "gerencia-proyectos.registrar-subcontrato#9"
+    accion: "Del catálogo de **Partidas de Control**, elija la partida con doble clic."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s147, img-2edf24710ff4-0000]
+    pagina: null
+    fotos:
+      - id: "61e594d1b6db"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/2edf24710ff4.png"
+        pagina: null
+        ocr: "Lo) S|\n% Partidas de Control - Todos los Registros 218 as\nOpciones 2\nDe Xue MSE Hoc ti ae ABO\nEby Todos los Revistros SE | SEL: 303\nPuente en carretera 1 cago —[pesenpe LEY# £0\" doble clic EI\n|| ototos"
+  - n: 10
+    id: "gerencia-proyectos.registrar-subcontrato#10"
+    accion: "Una vez que tenga todos los datos del subcontrato, use el botón **Adicionar** para grabarlos y cerrar la ventana."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s149]
+    pagina: null
+  - n: 11
+    id: "gerencia-proyectos.registrar-subcontrato#11"
+    accion: "Edite el estado del subcontrato de acuerdo a su avance (por ejemplo, **Revisado** o **Aprobado**)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s145, img-a2ccdc28ee46-0000]
+    pagina: null
+    fotos:
+      - id: "37ebe918a50a"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/a2ccdc28ee46.png"
+        pagina: null
+        ocr: "En elaboracién\nRevisado\nAprobado"
+verificacion:
+  - texto: "Una vez registrado, el subcontrato se muestra en el escenario de Subcontrato - De Obra, y se ingresa a él con doble clic."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s150, img-3c91874fc471-0000]
+errores_frecuentes:
+  - sintoma: "Puso selección en la celda REQUIERE GARANTIA? sin registrar el documento bancario de garantía."
+    solucion: "No ponga selección en la celda REQUIERE GARANTIA?, salvo que registre el documento bancario de garantía."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s145]
+  - sintoma: "No ingresó el porcentaje de adelanto del subcontratista."
+    solucion: "Use la opción de pagos a cuenta; en este caso el descuento es manual."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s145]
+  - sintoma: "No le permite registrar una cantidad mayor a la del presupuesto."
+    solucion: "Cuando el proyecto tiene techo, las cantidades se pueden editar si el recurso será ejecutado por más de un subcontratista, pero no permite exceder de este techo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s147]
+  - sintoma: "La fecha del subcontrato es posterior a la de sus valorizaciones."
+    solucion: "La fecha del subcontrato debe ser anterior a las valorizaciones."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s144]
+relacionados: [gerencia-proyectos.registrar-usuarios-del-proyecto, gerencia-proyectos.definir-periodos]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s141, manual: "Manual de Gerencia de Proyectos", seccion: "4.2 Usuarios del proyecto", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s147, manual: "Manual de Gerencia de Proyectos", seccion: "4.6.1 Acceso al escenario de Subcontratos y registro (3)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s148, manual: "Manual de Gerencia de Proyectos", seccion: "4.6.1 Acceso al escenario de Subcontratos y registro (4)", pagina: null}
+  - {id: img-e3714afd5c39-0000, manual: "Manual de Gerencia de Proyectos", seccion: "e3714afd5c39.png", pagina: null}
+  - {id: img-3c91874fc471-0000, manual: "Manual de Gerencia de Proyectos", seccion: "3c91874fc471.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s145, manual: "Manual de Gerencia de Proyectos", seccion: "4.6.1 Acceso al escenario de Subcontratos y registro (1)", pagina: null}
+  - {id: img-97245ff02063-0000, manual: "Manual de Gerencia de Proyectos", seccion: "97245ff02063.png", pagina: null}
+  - {id: img-dd752e274974-0000, manual: "Manual de Gerencia de Proyectos", seccion: "dd752e274974.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s146, manual: "Manual de Gerencia de Proyectos", seccion: "4.6.1 Acceso al escenario de Subcontratos y registro (2)", pagina: null}
+  - {id: img-2231bbc4639a-0000, manual: "Manual de Gerencia de Proyectos", seccion: "2231bbc4639a.png", pagina: null}
+  - {id: img-ec717310b1ec-0000, manual: "Manual de Gerencia de Proyectos", seccion: "ec717310b1ec.png", pagina: null}
+  - {id: img-2edf24710ff4-0000, manual: "Manual de Gerencia de Proyectos", seccion: "2edf24710ff4.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s149, manual: "Manual de Gerencia de Proyectos", seccion: "4.6.2 Informacion adicional", pagina: null}
+  - {id: img-a2ccdc28ee46-0000, manual: "Manual de Gerencia de Proyectos", seccion: "a2ccdc28ee46.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s150, manual: "Manual de Gerencia de Proyectos", seccion: "4.6.3 Ingreso al subcontrato", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s144, manual: "Manual de Gerencia de Proyectos", seccion: "4.6 Registro de Subcontratos", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

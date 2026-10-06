@@ -1,0 +1,78 @@
+id: presupuestos.modificar-partida
+version: 1
+modulo: presupuestos
+titulo: "Modificar una partida del presupuesto"
+objetivo: "Cambiar la descripción, la unidad o el rendimiento de una partida."
+nivel: intermedio
+preguntas:
+  - "cómo modifico una partida"
+  - "como cambio una partida"
+  - "editar partida del presupuesto"
+  - "como corrijo el rendimiento de una partida"
+  - "modificar descripcion de partida"
+  - "cambiar unidad de la partida"
+aliases:
+  - "modificar partida"
+  - "editar partida"
+entidades:
+  modulo: "Presupuestos"
+  pantallas: ["Hoja del presupuesto"]
+  objetos: ["partida", "rendimiento"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "presupuestos.modificar-partida#1"
+    accion: "En la **Hoja del presupuesto**, ubique la partida."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s051]
+    pagina: null
+    fotos:
+      - {id: "52c1d79ebb91", ruta_o_url: "imagenes/manual-de-presupuestos/ddd001ddd001.png", pagina: null}
+  - n: 2
+    id: "presupuestos.modificar-partida#2"
+    accion: "Haga clic derecho y elija **Modificar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s051]
+    pagina: null
+    fotos:
+      - {id: "4d73ce6df79a", ruta_o_url: "imagenes/manual-de-presupuestos/ddd002ddd002.png", pagina: null}
+  - n: 3
+    id: "presupuestos.modificar-partida#3"
+    accion: "Cambie la **Descripción** de la partida."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s051]
+    pagina: null
+  - n: 4
+    id: "presupuestos.modificar-partida#4"
+    accion: "Elija la **Unidad** de medida."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s051]
+    pagina: null
+    fotos:
+      - {id: "57117ccc4aa5", ruta_o_url: "imagenes/manual-de-presupuestos/ddd004ddd004.png", pagina: null}
+  - n: 5
+    id: "presupuestos.modificar-partida#5"
+    accion: "Registre el **Rendimiento** de la partida."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s051]
+    pagina: null
+  - n: 6
+    id: "presupuestos.modificar-partida#6"
+    accion: "Revise el **Análisis de precios unitarios**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s051]
+    pagina: null
+    fotos:
+      - {id: "a1fd2a7888bc", ruta_o_url: "imagenes/manual-de-presupuestos/ddd006ddd006.png", pagina: null}
+  - n: 7
+    id: "presupuestos.modificar-partida#7"
+    accion: "Pulse **Aceptar** para grabar los cambios."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s051]
+    pagina: null
+    captura: "imagenes/manual-de-presupuestos/ddd007ddd007.png"
+  - n: 8
+    id: "presupuestos.modificar-partida#8"
+    accion: "Use **Procesar** para recalcular el presupuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s051, "7c40a9548710-0040"]
+    pagina: null
+verificacion: []
+errores_frecuentes: []
+relacionados: []
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s051, manual: "Manual de Presupuestos", seccion: "4.3 Modificar partidas", pagina: null}
+  - {id: "7c40a9548710-0040", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 21}
+revision: {generado: 2026-10-06, por: prueba, revisado_por_humano: false}

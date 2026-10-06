@@ -1,0 +1,12 @@
+id: actividad
+termino: "Actividad"
+sinonimos: ["actividades"]
+definicion: "Porción de partida asignada a una fase del WBS."
+en_s10: "Se prepara en el escenario de Actividades, que comparten los módulos de Presupuestos y Gerencia de proyectos; el conjunto de fases con sus actividades pasa al escenario del Cronograma por periodos, donde se programa el proyecto. En Gerencia de proyectos las actividades se asignan a las partidas de control, con lo que adquieren valor y recursos."
+procedimientos_relacionados: [gerencia-proyectos.planificar-en-cronograma-por-periodos, gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas]
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s069  # Manual de Gerencia de Proyectos › 2.3 Preparar la información para la Planificación Física 2.3.1 Actividades
+  - web-https-documentacion-s10peru-com-manual-d-s150  # Manual de Presupuestos › 6.6 Actividades
+  - web-https-documentacion-s10peru-com-manual-d-s141  # Manual de Presupuestos › 6.3 Planificación desde los módulos de Presupuestos y Gerencia de proyectos S10ERP.
+  - web-https-documentacion-s10peru-com-manual-d-s054  # Manual de Gerencia de Proyectos › 2.5.8 Planificación del Costo 2.5.8.1 Partidas de control
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

@@ -1,0 +1,13 @@
+id: titulo
+termino: "Título"
+sinonimos: ["títulos"]
+definicion: "Registro de la hoja del presupuesto bajo el cual se ubican las partidas que le corresponden. Los títulos se toman del catálogo de títulos, cuyos registros se usan en la hoja del presupuesto."
+en_s10: "En el registro tradicional del presupuesto se registran primero los títulos y luego, para cada título, sus partidas. Se insertan desde el catálogo de títulos (menú Catálogos o clic derecho en la hoja, opción Adicionar Título); los botones de sangría de la hoja permiten armar las jerarquías entre títulos y partidas, y después de reubicarlos hay que generar los ítems."
+procedimientos_relacionados: [presupuestos.registrar-titulos-y-partidas]
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s044  # Manual de Presupuestos › 3.5.2.4 Caso 4) Registro del presupuesto de la forma tradicional
+  - web-https-documentacion-s10peru-com-manual-d-s013  # Manual de Presupuestos › 2.1 La carpeta de trabajo (3)
+  - web-https-documentacion-s10peru-com-manual-d-s079  # Manual de Presupuestos › 4.5.1 Registro de nuevos títulos en el catálogo
+  - web-https-documentacion-s10peru-com-manual-d-s086  # Manual de Presupuestos › 5.1.1.1 Hoja del presupuesto (1)
+notas: "Las fuentes no traen una definición formal de título; se describe por su uso en la hoja del presupuesto."
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

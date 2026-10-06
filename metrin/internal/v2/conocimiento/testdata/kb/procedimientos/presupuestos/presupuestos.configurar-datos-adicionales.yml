@@ -1,0 +1,54 @@
+id: presupuestos.configurar-datos-adicionales
+version: 1
+modulo: presupuestos
+titulo: "Configurar los datos adicionales del presupuesto"
+objetivo: "Configurar fórmula polinómica y decimales del presupuesto."
+nivel: intermedio
+preguntas:
+  - "como configuro los datos adicionales"
+  - "configurar formula polinomica del presupuesto"
+  - "como cambio los decimales del presupuesto"
+  - "donde se configura la formula polinomica"
+  - "datos adicionales del presupuesto"
+  - "configuracion del presupuesto"
+aliases:
+  - "configurar datos adicionales"
+  - "datos adicionales"
+entidades:
+  modulo: "Presupuestos"
+  pantallas: ["Datos adicionales"]
+  objetos: ["fórmula polinómica", "decimales"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "presupuestos.configurar-datos-adicionales#1"
+    accion: "Pulse **Datos adicionales**."
+    donde: "Ventana Presupuesto"
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s052]
+    pagina: null
+    fotos:
+      - {id: "2ef5cd925b1a", ruta_o_url: "imagenes/manual-de-presupuestos/fff001fff001.png", pagina: null}
+  - n: 2
+    id: "presupuestos.configurar-datos-adicionales#2"
+    accion: "En la pestaña **configuración**, marque **Fórmula polinómica**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s052]
+    pagina: null
+    sub:
+      - n: 1
+        id: "presupuestos.configurar-datos-adicionales#2.1"
+        accion: "Elija la cantidad de **decimales**."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s052]
+        pagina: null
+        fotos:
+          - {id: "66c53a4c3194", ruta_o_url: "imagenes/manual-de-presupuestos/fff003fff003.png", pagina: null}
+  - n: 3
+    id: "presupuestos.configurar-datos-adicionales#3"
+    accion: "Pulse **Aceptar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s052]
+    pagina: null
+verificacion: []
+errores_frecuentes: []
+relacionados: []
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s052, manual: "Manual de Presupuestos", seccion: "3.4 Datos adicionales", pagina: null}
+revision: {generado: 2026-10-06, por: prueba, revisado_por_humano: false}

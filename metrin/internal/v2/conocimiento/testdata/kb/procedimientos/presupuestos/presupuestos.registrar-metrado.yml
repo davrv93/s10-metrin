@@ -1,0 +1,65 @@
+id: presupuestos.registrar-metrado
+version: 1
+modulo: presupuestos
+titulo: "Registrar el metrado de una partida"
+objetivo: "Registrar las cantidades de obra de cada partida en la hoja del presupuesto."
+nivel: basico
+preguntas:
+  - "cómo registro un metrado"
+  - "como registro metrado"
+  - "dónde ingreso el metrado de una partida"
+  - "como cargo los metrados"
+  - "pasos para registrar metrados"
+  - "como pongo las cantidades de la partida"
+aliases:
+  - "registrar metrado"
+  - "ingresar metrado"
+  - "cargar metrado"
+entidades:
+  modulo: "Presupuestos"
+  pantallas: ["Hoja del presupuesto", "Planilla de metrados"]
+  objetos: ["metrado", "partida"]
+prerrequisitos:
+  - texto: "La partida debe estar en la **Hoja del presupuesto**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050]
+pasos:
+  - n: 1
+    id: "presupuestos.registrar-metrado#1"
+    accion: "Ubíquese en la partida del escenario **Hoja del presupuesto**."
+    donde: "Escenario Hoja del presupuesto"
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050]
+    pagina: null
+    fotos:
+      - id: "88de6597f8de"
+        ruta_o_url: "imagenes/manual-de-presupuestos/aaa111aaa111.png"
+        pagina: null
+        caption: "Ubíquese en la partida del escenario Hoja del presupuesto."
+  - n: 2
+    id: "presupuestos.registrar-metrado#2"
+    accion: "Haga clic en el botón **Planilla de metrados**."
+    donde: "Ventana Planilla de metrados"
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050, img-bbb222bbb222-0000]
+    pagina: null
+    fotos:
+      - id: "23ab8dea6ec1"
+        ruta_o_url: "imagenes/manual-de-presupuestos/bbb222bbb222.png"
+        pagina: null
+        ocr: "Planilla de metrados | Grabar | Cerrar"
+  - n: 3
+    id: "presupuestos.registrar-metrado#3"
+    accion: "Registre las cantidades en la columna **Metrado** y pulse **Grabar**."
+    resultado: "El metrado aparece en la columna Metrado de la partida."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050]
+    pagina: null
+verificacion:
+  - texto: "El metrado aparece en la columna Metrado de la partida."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050]
+errores_frecuentes:
+  - sintoma: "No se puede grabar el metrado."
+    solucion: "Verifique que la partida tenga unidad de medida: sin unidad, el sistema no permite grabar el metrado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050]
+relacionados: [presupuestos.modificar-partida]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s050, manual: "Manual de Presupuestos", seccion: "4.2 Registro de metrados", pagina: null}
+  - {id: img-bbb222bbb222-0000, manual: "Manual de Presupuestos", seccion: "bbb222bbb222.png", pagina: null}
+revision: {generado: 2026-10-06, por: prueba, revisado_por_humano: false}

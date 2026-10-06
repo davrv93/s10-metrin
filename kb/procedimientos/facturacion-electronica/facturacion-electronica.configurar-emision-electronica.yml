@@ -1,0 +1,127 @@
+id: facturacion-electronica.configurar-emision-electronica
+version: 1
+modulo: facturacion-electronica
+titulo: "Configurar la emisión electrónica (empresa, tipos de documento, talonarios y clientes)"
+objetivo: "Dejar el S10 listo para emitir comprobantes electrónicos: resolución SUNAT de la empresa emisora, tipos de documento, talonarios calificados para el Sistema de Emisión Electrónica y contactos de facturación electrónica de los clientes."
+nivel: avanzado
+preguntas:
+  - "cómo configuro la facturación electrónica en el s10"
+  - "como creo un talonario para facturas electronicas"
+  - "con qué letra debe empezar la serie de la factura electrónica"
+  - "dónde pongo el número de resolución de sunat como emisor electrónico"
+  - "cuantos digitos debe tener el numero del talonario electronico"
+  - "no me deja grabar el documento por cobrar electronico"
+  - "como pongo el correo del cliente para que le llegue la factura electronica"
+  - "como configuro el talonario electroniko serie F y B"
+  - "que tengo que configurar antes de emitir facturas electronicas"
+aliases:
+  - "configurar facturación electrónica"
+  - "talonario electrónico"
+  - "configurar talonarios"
+  - "serie electrónica"
+  - "emisor electrónico"
+entidades:
+  modulo: "Facturación Electrónica"
+  pantallas: ["Talonarios", "Sistema de Emisión Electrónica"]
+  objetos: ["talonario", "tipo de documento", "número de serie", "empresa emisora", "contacto", "cliente"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "facturacion-electronica.configurar-emision-electronica#1"
+    accion: "En la ficha de datos de la empresa emisora, registre en el campo **N° Autorización Comprobante** el número de resolución que la SUNAT publicó y que la acredita como emisor electrónico."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s004]
+    pagina: null
+    fotos:
+      - id: "8d6196721b1f"
+        ruta_o_url: "imagenes/manual-de-facturacion-electronica/f82d281087e1.png"
+        pagina: null
+        caption: "En la ficha de datos de la empresa emisora, debe registrarse el número de resolución que la SUNAT publicó, la cual lo acredita como emisor electrónico. Este dato se ingresa en el campo: N° Autorización Comprobante."
+        ocr: "}Psociodenegoio ge\n_-\nWectnsonh seemOSA\nee ee\nuc faassasoDBS — vivo _a |\na\na |\n[soos commas]\n<< e\n| rcorteceo0( T———a]al[ oo\n| el <1\nrs a |\nSES\nva vecs Mielopemicom a\nrubo [| =] A] medoderage[~ —SSOS~S~Sd'\nronswnder\nFaget® or eanaco 4a). ones ot RUEVOS SOLES] a4]\nTT Agente de Retencién (@) [~ Buen Contribuyente TT Agente de Perceposn T- Gran Comprador\neet — Fecha vencmiento autorzactin. [i=]\nClave…"
+  - n: 2
+    id: "facturacion-electronica.configurar-emision-electronica#2"
+    accion: "Cree un tipo de documento para Boletas de Venta, Facturas, Notas de Crédito y Notas de Débito, para la calificación predeterminada de los documentos electrónicos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s005]
+    pagina: null
+    fotos:
+      - id: "d103fcf2651d"
+        ruta_o_url: "imagenes/manual-de-facturacion-electronica/10e7d6a796e9.png"
+        pagina: null
+        caption: "Para la calificación predeterminada de los documentos electrónicos, debe crear un tipo de documento para Boletas de Venta, Facturas, Notas de Crédito y Notas de Débito."
+        ocr: "A Exe]\nTipo Documento. ‘oe Cédigo alterno lL. t~‘CS\nDescripcion fFacturaElectonica —sS~—S\nAbreviedura \\Fe Tipo [Por Cobrar 7\nTipo Documento fotratua = —(ssst—<“=i‘“‘s‘“‘S;STCC*r\nBase\n|” Generar asiento contable por recurso\nI¥ Aplica en Resultados Financieros ra Sitoma de Emisién Electronica -\nDAG\nImpuesto\nAdicionar Cancelar"
+  - n: 3
+    id: "facturacion-electronica.configurar-emision-electronica#3"
+    accion: "Defina talonarios calificados para el **Sistema de Emisión Electrónica**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s006]
+    pagina: null
+  - n: 4
+    id: "facturacion-electronica.configurar-emision-electronica#4"
+    accion: "Registre el número de serie: debe iniciar con una letra y tener como máximo 4 caracteres; para las facturas y sus notas de crédito o débito, con la letra «F»; para las boletas y sus notas, con la letra «B»."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s006]
+    pagina: null
+  - n: 5
+    id: "facturacion-electronica.configurar-emision-electronica#5"
+    accion: "Configure el número: como máximo 8 dígitos, y debe empezar en 1."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s006]
+    pagina: null
+    fotos:
+      - id: "6bdce53ea17b"
+        ruta_o_url: "imagenes/manual-de-facturacion-electronica/624a2a6c61ea.jpg"
+        pagina: null
+        caption: "Para el número como máximo debe tener 8 dígitos, y debe empezar en 1."
+        ocr: "Empresa 05020046 - SISTEMA 10 S.A.C.\nSucursal Principal\nCédigo 00000063 IY Sistema de Emisién Electrénica\nDescripaiin [Factura Electronica\nEstado [Activo 7\nI¥ Tene sere? Serie F001 Numero Autorizacién ees\nFormato del Nuimero 00000000 Ntimero de documentos S00)\nNamero inicio |__ 00009901 mero fin| 00000500\nFactura Electronica FE\nAceptar Cancelar"
+  - n: 6
+    id: "facturacion-electronica.configurar-emision-electronica#6"
+    accion: "Dé acceso al talonario a los usuarios encargados de la emisión de documentos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s006]
+    pagina: null
+    fotos:
+      - id: "439b86fa2d9e"
+        ruta_o_url: "imagenes/manual-de-facturacion-electronica/527ea0052c35.jpg"
+        pagina: null
+        caption: "Los usuarios encargados de la emisión de documentos deben tener el acceso al talonario."
+        ocr: "Talonarios\n\nf=) 7 a\n\nDocumento/Chequera ~\n| [empeese __[Svewssl ____—(NTalonaio_[eseipin = Estado Tene a | Sa\na\n|_| SISTEMA 10S... SISTEMA 10S.AC. 00000059 Nuevo wz 001\n|_| SISTEMA 10S... SISTEMA 10S.AC. 00000013 Anticipos Activo E\n|_| SISTEMA 10S... SISTEMA 10S.A.c. 00000064 BOLETA DE VENTA ELECTRONICA Activo wi 5001\n| | SISTEMA 10S... SISTEMA 10S.A.C. 00000065 BOLETA DE VENTA ELECTRONICA Activo…"
+  - n: 7
+    id: "facturacion-electronica.configurar-emision-electronica#7"
+    accion: "En la ficha de datos de cada cliente, registre el contacto con su respectivo email, para que se le notifique la emisión del documento electrónico."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s007]
+    pagina: null
+  - n: 8
+    id: "facturacion-electronica.configurar-emision-electronica#8"
+    accion: "En la lista de contactos, marque cuál será el contacto para la facturación electrónica (de no calificar un contacto, las notificaciones se envían al correo electrónico indicado en la ficha del cliente)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s007]
+    pagina: null
+    fotos:
+      - id: "38523e23f486"
+        ruta_o_url: "imagenes/manual-de-facturacion-electronica/6e320b88f67d.jpg"
+        pagina: null
+        caption: "De no haber calificado un contacto se enviará las notificaciones al correo electrónico indicado en la ficha del cliente."
+        ocr: "Cédigo 22001152 Persona Juridica (~ Cédigo Alterno\n~ Datos generates\nRaz6n Social [CORPORACION LINDLEY SA\nAbrevatura fei\nRUC |20101024645 vaido\nAlterna\nSocios de Negocio |\nAves BA\nCodigo |Nombres [Ap paterno Jap materno [Cargo |Area |sucursal [Fecha ingreso | Fact Electronica\n2200051:| Benito |Benitez | | | | ! | |=\n“ i ,\nModificar Estado de Cuenta) Cancelar"
+  - n: 9
+    id: "facturacion-electronica.configurar-emision-electronica#9"
+    accion: "Si el cliente es No Domiciliado, registre de todas maneras su código de identificación tributaria (según el país) en el campo **RUC**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s007]
+    pagina: null
+  - n: 10
+    id: "facturacion-electronica.configurar-emision-electronica#10"
+    accion: "Al registrar un documento electrónico, active la opción **Sistema Emisión Electrónica SEE**: el sistema le propone la numeración según el talonario electrónico que definió."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s008]
+    pagina: null
+    fotos:
+      - id: "571e512e782d"
+        ruta_o_url: "imagenes/manual-de-facturacion-electronica/4a9c8717ad9e.png"
+        pagina: null
+        caption: "Cuando se registre un documento electrónico debe estar activada la opción “Sistema Emisión Electrónica SEE”. De esa forma el sistema le propone la numeración según el talonario electrónico que haya definido."
+        ocr: "4A secs \"x\nEmite [05020046 [SISTEMA 10 SAG. ary) See NC\n‘Sucursal [05020046 [SISTEMA 10 SAC m0) RUC 20255390288\nFecha 25/09/2015 w~ |25/09/2015 w\nPeta SS el\nS. pa sorszz01 +y [207509 | setiempre 2015 Tipo cambio no oficial | 3-227]\nac\n\nPaonia || =| 8 emma ot page| =] 4)\nDescuento (%)[_ 900] Estado\n© Sin asignar @ Proyecto [01002 [S10 Histonco-SISTEMATO SAC. | @&| [~ Revisado [7 Steins Fmision Elec…"
+verificacion: []
+errores_frecuentes:
+  - sintoma: "No es posible grabar el documento por cobrar electrónico."
+    solucion: "Se valida que estén registrados la dirección electrónica (e-mail) del contacto de facturación electrónica del cliente y, si es Domiciliado, la dirección del cliente: complete el dato que falte."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s007]
+relacionados: [facturacion-electronica.enviar-comprobantes-a-sunat]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s004, manual: "Manual de Facturación Electrónica", seccion: "2.1.1 Datos de la Empresa Emisora", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s005, manual: "Manual de Facturación Electrónica", seccion: "2.1.2 Tipos de Documentos", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s006, manual: "Manual de Facturación Electrónica", seccion: "2.1.3 Talonarios", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s007, manual: "Manual de Facturación Electrónica", seccion: "2.1.4 Registro de Clientes", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s008, manual: "Manual de Facturación Electrónica", seccion: "2.2.1 Edición de Documentos", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

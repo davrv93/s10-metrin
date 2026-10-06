@@ -1,0 +1,14 @@
+id: partida
+termino: "Partida"
+sinonimos: ["partidas"]
+definicion: "Registro de la hoja del presupuesto que se ubica bajo un título y lleva su metrado y su análisis de precios unitarios, que es su estructura de costo. Las partidas se registran en el catálogo de partidas, en forma directa o desde la hoja del presupuesto, antes de elegirlas para un presupuesto."
+en_s10: "En la hoja del presupuesto, una partida puede ser propia de ese presupuesto (lo indica el ícono de una manito). En S10 solo se programan las partidas o las subpartidas, no los recursos."
+procedimientos_relacionados: [presupuestos.registrar-titulos-y-partidas, presupuestos.registrar-partida-en-el-catalogo, presupuestos.copiar-partidas-de-otro-presupuesto]
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s044  # Manual de Presupuestos › 3.5.2.4 Caso 4) Registro del presupuesto de la forma tradicional
+  - web-https-documentacion-s10peru-com-manual-d-s013  # Manual de Presupuestos › 2.1 La carpeta de trabajo (3)
+  - web-https-documentacion-s10peru-com-manual-d-s099  # Manual de Presupuestos › 5.1.1.1 Hoja del presupuesto (14)
+  - web-https-documentacion-s10peru-com-manual-d-s017  # Manual de Presupuestos › 2.1 La carpeta de trabajo (7)
+  - web-https-documentacion-s10peru-com-manual-d-s003  # Manual de Presupuestos › 1.3.1 Presupuesto de Edificaciones (1)
+notas: "Las fuentes no traen una definición formal de partida; se describe por su lugar en la hoja del presupuesto."
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

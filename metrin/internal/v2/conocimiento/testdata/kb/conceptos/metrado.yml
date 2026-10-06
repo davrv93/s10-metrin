@@ -1,0 +1,10 @@
+id: metrado
+termino: "Metrado"
+sinonimos: ["metrados"]
+definicion: "Cuantificación de las cantidades de obra de cada partida."
+en_s10: "Se registra en la Planilla de metrados de cada partida, en la Hoja del presupuesto."
+procedimientos_relacionados: [presupuestos.registrar-metrado]
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s010  # Manual de Presupuestos › 1.2 Conceptos básicos
+  - web-https-documentacion-s10peru-com-manual-d-s050  # Manual de Presupuestos › 4.2 Registro de metrados
+revision: {generado: 2026-10-06, por: prueba, revisado_por_humano: false}

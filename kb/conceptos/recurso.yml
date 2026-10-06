@@ -1,0 +1,11 @@
+id: recurso
+termino: "Recurso"
+sinonimos: ["recursos", "insumo", "insumos"]
+definicion: "Los recursos en S10 son los insumos que se usan al elaborar un presupuesto. Están registrados en el catálogo de recursos y son de tipo mano de obra, material, equipos, subcontratos y activos; los recursos genéricos tienen 10 dígitos y los específicos, 14."
+en_s10: "En el presupuesto venta se usan recursos de mano de obra genéricos y en el presupuesto meta, específicos; ambos se asocian a una categoría para el pago de la mano de obra en el módulo de Nóminas. En el almacén de materiales se usan solo recursos tipo material, y en el de servicios solo recursos tipo subcontrato y equipo."
+procedimientos_relacionados: [presupuestos.registrar-recurso-en-el-catalogo, presupuestos.reasignar-recurso]
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s012  # Manual de Nóminas › 3.5 Catálogo de Recursos
+  - web-https-documentacion-s10peru-com-manual-d-s005  # Manual de Compras › 1.5 Opciones del menú Catálogos (1)
+  - web-https-documentacion-s10peru-com-manual-d-s015  # Manual de Almacenes › 1.2 Diagrama de bloques del funcionamiento del almacén con relación al proyecto
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

@@ -1,0 +1,154 @@
+id: gerencia-proyectos.registrar-proyecto
+version: 1
+modulo: gerencia-proyectos
+titulo: "Registrar un proyecto nuevo"
+objetivo: "Registrar el proyecto y sus datos complementarios (nombre, propietario, lugar, fecha de inicio, plazo, moneda y empresa) en el escenario de Datos Generales, para luego registrar sus partidas de control e iniciar el uso de pedidos y compras."
+nivel: basico
+preguntas:
+  - "cómo registro un proyecto nuevo en gerencia de proyectos"
+  - "cómo creo un proyecto en s10"
+  - "dónde se da de alta una obra en gerencia de proyectos"
+  - "como registro el proyecto en datos generales"
+  - "pasos para crear un proyeto nuevo en s10 erp"
+  - "cómo ingreso la fecha de inicio y el plazo del proyecto"
+  - "quiero registrar una obra nueva para empezar a hacer pedidos"
+  - "como se crea un proyecto en el catalogo de proyectos"
+  - "registrar proyecto con propietario lugar y moneda"
+aliases:
+  - "registrar proyecto"
+  - "crear proyecto"
+  - "nuevo proyecto"
+  - "alta de proyecto"
+  - "registrar obra"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Datos Generales", "Catálogo de Proyectos"]
+  objetos: ["proyecto", "propietario", "moneda", "empresa", "orden de compra"]
+prerrequisitos:
+  - texto: "El usuario **sa** debe haber registrado al usuario que manejará el módulo de Gerencia de proyectos: primero en **Catálogos** – **Socio de negocios** (rama empleados) y luego en **Utilitarios**, escenario de **Mantenimiento de usuarios**, con accesos y atributos de uso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s032]
+  - texto: "Conozca el tipo de moneda del presupuesto: el proyecto debe usar el mismo tipo de moneda que se utilizó en el presupuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s043]
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.registrar-proyecto#1"
+    accion: "Ingrese al escenario de **Datos Generales**, donde se registran el proyecto y sus datos complementarios."
+    donde: "Escenario Datos Generales"
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s042]
+    pagina: null
+    fotos:
+      - id: "133236aa6612"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/530d3c639d5b.png"
+        pagina: null
+        caption: "Acceso al escenario de Datos Generales: El proyecto y sus datos complementarios se registran en el escenario de Datos Generales."
+        ocr: "Clic derecho\n[Eta Bh ja FL inicio | evecee\n] oe\ns oe mee]\nGenerales Luego,"
+  - n: 2
+    id: "gerencia-proyectos.registrar-proyecto#2"
+    accion: "En el árbol de proyectos, haga clic derecho y elija **Nuevo proyecto**."
+    fuente: [img-c940f7a9eaad-0000, web-https-documentacion-s10peru-com-manual-d-s042]
+    pagina: null
+  - n: 3
+    id: "gerencia-proyectos.registrar-proyecto#3"
+    accion: "En el **Catálogo de Proyectos**, ubique el grupo de la línea de negocio que corresponde al proyecto (el árbol admite un máximo de 99 registros y cada grupo, 999 proyectos)."
+    donde: "Catálogo de Proyectos"
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s042, img-c7de5d040d6e-0000]
+    pagina: null
+  - n: 4
+    id: "gerencia-proyectos.registrar-proyecto#4"
+    accion: "Haga clic derecho sobre el grupo y elija la opción de nuevo subítem para ingresar los datos del proyecto."
+    fuente: [img-c7de5d040d6e-0000, web-https-documentacion-s10peru-com-manual-d-s042]
+    pagina: null
+    fotos:
+      - id: "95f099622973"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/c7de5d040d6e.png"
+        pagina: null
+        ocr: "rr)\n[#3 Catélogo de Proyectos [|e\nOneinnes 2\nHaga clic derecho\n3 6 M@YB®m® O- HARES & Be\n\n4 daninstative | Cécigo Cédigo Alterna |Descripcién\n\n“aes “Le Jf} __j\nAy Inmobiliaria FE) Nuevo Subltem ee\n\n5] Post - venta Jo"
+  - n: 5
+    id: "gerencia-proyectos.registrar-proyecto#5"
+    accion: "Escriba el nombre del proyecto (hasta 240 caracteres); se recomienda anteponer el número de contrato, orden de servicio o número de obra que se ejecuta en el año."
+    donde: "Ventana Proyecto"
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s042]
+    pagina: null
+    fotos:
+      - id: "dc687e23b9d5"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/0275c8a0543f.png"
+        pagina: null
+        caption: "Ingreso de datos del proyecto"
+        ocr: "=\n\nProyecto se\nCéigo 2004 [oor Cédigo atterna Pe:\nDescripcién [PUENTE EN CARRETERA | Para registrar el nombre del |\"\n\npropietaria ubique el cursor en} ~\neS ee\nPropietaria [09010090 |MINISTERIO DE TRANSPORTES Y¥ COMUNICACIONE }(@)\nLugar los1301 [URUBAMBA ~t®\n\nCUSCO - URY(C)MBA - URUBAMBA\n\nFecha Inicio [ozosao1 +] FechaFin [>aqs)2018 = Plazol 150. dias\nLasemana [Lunes ~ No disponible para el Médulo…"
+  - n: 6
+    id: "gerencia-proyectos.registrar-proyecto#6"
+    accion: "En **Propietario**, use el botón para elegir o registrar el nombre del propietario del proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s042, img-0275c8a0543f-0000]
+    pagina: null
+  - n: 7
+    id: "gerencia-proyectos.registrar-proyecto#7"
+    accion: "En **Lugar**, use el botón y del catálogo elija el distrito donde se ejecutará el proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s042, img-0275c8a0543f-0000]
+    pagina: null
+  - n: 8
+    id: "gerencia-proyectos.registrar-proyecto#8"
+    accion: "En **Fecha Inicio**, ingrese la fecha de inicio del proyecto: este dato sirve para generar los períodos semanales y mensuales."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s043, img-0275c8a0543f-0000]
+    pagina: null
+  - n: 9
+    id: "gerencia-proyectos.registrar-proyecto#9"
+    accion: "No ingrese la **Fecha Fin**: el sistema la calcula automáticamente."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s043, img-3752e7977451-0000]
+    pagina: null
+  - n: 10
+    id: "gerencia-proyectos.registrar-proyecto#10"
+    accion: "En **Plazo**, ingrese los días calendario que está previsto dure la ejecución del proyecto; es un dato tentativo inicial que sirve para generar los períodos a partir de la fecha de inicio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s043, img-0275c8a0543f-0000]
+    pagina: null
+  - n: 11
+    id: "gerencia-proyectos.registrar-proyecto#11"
+    accion: "Elija el día en que comienza la semana para efectos del pago de planillas; se recomienda que todos los proyectos empiecen el mismo día."
+    resultado: "Cuando el sistema genere los períodos semanales, la semana iniciará el día que eligió."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s043]
+    pagina: null
+  - n: 12
+    id: "gerencia-proyectos.registrar-proyecto#12"
+    accion: "Elija el mismo tipo de moneda que utilizó en el presupuesto y, en **M.Secundaria**, el tipo de moneda alterno que utilizará el módulo de almacenes."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s043, img-0275c8a0543f-0000]
+    pagina: null
+  - n: 13
+    id: "gerencia-proyectos.registrar-proyecto#13"
+    accion: "En **Empresa**, ingrese la empresa que ejecutará el proyecto y, si tiene sucursales, elija la que corresponde."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s043, img-0275c8a0543f-0000]
+    pagina: null
+  - n: 14
+    id: "gerencia-proyectos.registrar-proyecto#14"
+    accion: "Ingrese la dirección donde el proveedor entregará los recursos comprados (se muestra en la orden de compra) y el teléfono y el fax del local donde funcionan las oficinas del proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s043]
+    pagina: null
+  - n: 15
+    id: "gerencia-proyectos.registrar-proyecto#15"
+    accion: "Use el botón que graba el contenido de la ventana y la cierra."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s044]
+    pagina: null
+  - n: 16
+    id: "gerencia-proyectos.registrar-proyecto#16"
+    accion: "En el **Catálogo de proyectos**, haga doble clic sobre el nombre del proyecto para trasladarlo al árbol del escenario de **Datos generales**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s044]
+    pagina: null
+verificacion:
+  - texto: "El proyecto aparece en el árbol del escenario de Datos generales."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s044]
+errores_frecuentes:
+  - sintoma: "Necesita cambiar la fecha de inicio de un proyecto que ya tiene información registrada."
+    solucion: "Si ya tiene información registrada en cualquiera de los módulos, no modifique esta fecha: la fecha de inicio real del proyecto se modifica en el MS Project."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s043]
+  - sintoma: "El proyecto requiere más tiempo que el plazo registrado."
+    solucion: "Incremente el número de días y luego, en el escenario de PERIODOS, procese y refresque para incrementar los periodos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s043]
+relacionados: [gerencia-proyectos.asignar-presupuestos-al-proyecto, gerencia-proyectos.registrar-usuarios-del-proyecto, gerencia-proyectos.configurar-calendario-del-proyecto, gerencia-proyectos.definir-periodos]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s032, manual: "Manual de Gerencia de Proyectos", seccion: "1.3 Acceso al módulo de Gerencia de proyectos con sa", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s043, manual: "Manual de Gerencia de Proyectos", seccion: "2.5 Registro del proyecto (2)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s042, manual: "Manual de Gerencia de Proyectos", seccion: "2.5 Registro del proyecto (1)", pagina: null}
+  - {id: img-c940f7a9eaad-0000, manual: "Manual de Gerencia de Proyectos", seccion: "c940f7a9eaad.png", pagina: null}
+  - {id: img-c7de5d040d6e-0000, manual: "Manual de Gerencia de Proyectos", seccion: "c7de5d040d6e.png", pagina: null}
+  - {id: img-0275c8a0543f-0000, manual: "Manual de Gerencia de Proyectos", seccion: "0275c8a0543f.png", pagina: null}
+  - {id: img-3752e7977451-0000, manual: "Manual de Gerencia de Proyectos", seccion: "3752e7977451.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s044, manual: "Manual de Gerencia de Proyectos", seccion: "2.5 Registro del proyecto (3)", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

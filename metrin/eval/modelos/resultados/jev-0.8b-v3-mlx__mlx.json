@@ -1,0 +1,1864 @@
+{
+ "modelo": "jev-0.8b-v3-mlx",
+ "modo": "mlx",
+ "fecha": "2026-10-06 05:04",
+ "rss_carga_mb": 6,
+ "rss_pico_mb": 91,
+ "huella_pico_mb": 3642,
+ "decision": {
+  "tipo": {
+   "n": 90,
+   "exactitud": 0.811,
+   "exactitud_laxa": 0.833,
+   "json_valido": 1.0,
+   "f1": {
+    "CONCEPT": 0.737,
+    "PROCEDURE": 0.974,
+    "NAVIGATION": 0.909,
+    "TROUBLESHOOTING": 0.833,
+    "CONFIGURATION": 0.762,
+    "COMPARISON": 0.875,
+    "UNKNOWN": 0.5
+   },
+   "f1_macro": 0.799,
+   "p50_ms": 185,
+   "p95_ms": 248,
+   "errores": [
+    [
+     "tipo-034",
+     "NAVIGATION",
+     "UNKNOWN"
+    ],
+    [
+     "tipo-039",
+     "NAVIGATION",
+     "TROUBLESHOOTING"
+    ],
+    [
+     "tipo-048",
+     "TROUBLESHOOTING",
+     "CONFIGURATION"
+    ],
+    [
+     "tipo-053",
+     "TROUBLESHOOTING",
+     "UNKNOWN"
+    ],
+    [
+     "tipo-054",
+     "TROUBLESHOOTING",
+     "CONFIGURATION"
+    ],
+    [
+     "tipo-064",
+     "CONFIGURATION",
+     "UNKNOWN"
+    ],
+    [
+     "tipo-066",
+     "CONFIGURATION",
+     "CONCEPT"
+    ],
+    [
+     "tipo-068",
+     "CONFIGURATION",
+     "PROCEDURE"
+    ],
+    [
+     "tipo-075",
+     "COMPARISON",
+     "CONCEPT"
+    ],
+    [
+     "tipo-076",
+     "COMPARISON",
+     "CONCEPT"
+    ],
+    [
+     "tipo-079",
+     "UNKNOWN",
+     "CONCEPT"
+    ],
+    [
+     "tipo-080",
+     "UNKNOWN",
+     "CONCEPT"
+    ],
+    [
+     "tipo-083",
+     "UNKNOWN",
+     "CONCEPT"
+    ],
+    [
+     "tipo-084",
+     "UNKNOWN",
+     "CONCEPT"
+    ],
+    [
+     "tipo-085",
+     "UNKNOWN",
+     "CONCEPT"
+    ],
+    [
+     "tipo-087",
+     "UNKNOWN",
+     "CONCEPT"
+    ],
+    [
+     "tipo-088",
+     "UNKNOWN",
+     "CONCEPT"
+    ]
+   ]
+  },
+  "evidencia": {
+   "n": 40,
+   "exactitud": 0.825,
+   "exactitud_laxa": 0.825,
+   "json_valido": 1.0,
+   "f1": {
+    "si": 0.844,
+    "no": 0.8
+   },
+   "f1_macro": 0.822,
+   "p50_ms": 190,
+   "p95_ms": 301,
+   "errores": [
+    [
+     "evid-002",
+     "si",
+     "no"
+    ],
+    [
+     "evid-021",
+     "no",
+     "si"
+    ],
+    [
+     "evid-025",
+     "no",
+     "si"
+    ],
+    [
+     "evid-029",
+     "no",
+     "si"
+    ],
+    [
+     "evid-033",
+     "no",
+     "si"
+    ],
+    [
+     "evid-035",
+     "no",
+     "si"
+    ],
+    [
+     "evid-038",
+     "no",
+     "si"
+    ]
+   ]
+  }
+ },
+ "registros": {
+  "decision": [
+   {
+    "id": "tipo-001",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 315.32970900298096,
+    "conf": 0.9420750415977454,
+    "prompt_n": 433
+   },
+   {
+    "id": "tipo-002",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 172.31550000724383,
+    "conf": 0.9502345405914719,
+    "prompt_n": 434
+   },
+   {
+    "id": "tipo-003",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 360.5961249995744,
+    "conf": 0.723870808959735,
+    "prompt_n": 437
+   },
+   {
+    "id": "tipo-004",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 184.1784580028616,
+    "conf": 0.9607037463109345,
+    "prompt_n": 433
+   },
+   {
+    "id": "tipo-005",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 174.92200000560842,
+    "conf": 0.6479464512006716,
+    "prompt_n": 437
+   },
+   {
+    "id": "tipo-006",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 175.97549999481998,
+    "conf": 0.936589628268038,
+    "prompt_n": 434
+   },
+   {
+    "id": "tipo-007",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 140.90795900847297,
+    "conf": 0.8009446670244271,
+    "prompt_n": 435
+   },
+   {
+    "id": "tipo-008",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 165.45304100145586,
+    "conf": 0.9526036412923093,
+    "prompt_n": 438
+   },
+   {
+    "id": "tipo-009",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 253.4683749981923,
+    "conf": 0.9219438600561416,
+    "prompt_n": 432
+   },
+   {
+    "id": "tipo-010",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 170.28916699928232,
+    "conf": 0.929293355134411,
+    "prompt_n": 433
+   },
+   {
+    "id": "tipo-011",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 185.36133400630206,
+    "conf": 0.8928493319946192,
+    "prompt_n": 436
+   },
+   {
+    "id": "tipo-012",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 189.08995899255387,
+    "conf": 0.9508901621384256,
+    "prompt_n": 434
+   },
+   {
+    "id": "tipo-013",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 176.86712500290014,
+    "conf": 0.47689895507616686,
+    "prompt_n": 435
+   },
+   {
+    "id": "tipo-014",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 184.93975000455976,
+    "conf": 0.9049581505459385,
+    "prompt_n": 437
+   },
+   {
+    "id": "tipo-015",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 181.71658299979754,
+    "conf": 0.9085201074393562,
+    "prompt_n": 433
+   },
+   {
+    "id": "tipo-016",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 185.38087500201073,
+    "conf": 0.8629255646383279,
+    "prompt_n": 432
+   },
+   {
+    "id": "tipo-017",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 158.50374998990446,
+    "conf": 0.7870921349932023,
+    "prompt_n": 432
+   },
+   {
+    "id": "tipo-018",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 204.80258400493767,
+    "conf": 0.8728007140851579,
+    "prompt_n": 433
+   },
+   {
+    "id": "tipo-019",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 206.42704199417494,
+    "conf": 0.9265030072780474,
+    "prompt_n": 435
+   },
+   {
+    "id": "tipo-020",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 209.33925001008902,
+    "conf": 0.8626243165795776,
+    "prompt_n": 439
+   },
+   {
+    "id": "tipo-021",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 243.0327910115011,
+    "conf": 0.7991146305394872,
+    "prompt_n": 435
+   },
+   {
+    "id": "tipo-022",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 183.41320801118854,
+    "conf": 0.8162397692458145,
+    "prompt_n": 440
+   },
+   {
+    "id": "tipo-023",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 190.45545799599495,
+    "conf": 0.6416473872992531,
+    "prompt_n": 436
+   },
+   {
+    "id": "tipo-024",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 209.20749999640975,
+    "conf": 0.6909854228321732,
+    "prompt_n": 439
+   },
+   {
+    "id": "tipo-025",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 154.85316699778195,
+    "conf": 0.920775100318489,
+    "prompt_n": 436
+   },
+   {
+    "id": "tipo-026",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 1651.3778340013232,
+    "conf": 0.7607753862983246,
+    "prompt_n": 444
+   },
+   {
+    "id": "tipo-027",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 194.29349999700207,
+    "conf": 0.8512248867309095,
+    "prompt_n": 433
+   },
+   {
+    "id": "tipo-028",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 176.1069589992985,
+    "conf": 0.8444324501639232,
+    "prompt_n": 437
+   },
+   {
+    "id": "tipo-029",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 225.8630829892354,
+    "conf": 0.6029481269119376,
+    "prompt_n": 439
+   },
+   {
+    "id": "tipo-030",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 176.60750000504777,
+    "conf": 0.8464303795406768,
+    "prompt_n": 436
+   },
+   {
+    "id": "tipo-031",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 189.54849999863654,
+    "conf": 0.7996463669833914,
+    "prompt_n": 438
+   },
+   {
+    "id": "tipo-032",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 185.08195799950045,
+    "conf": 0.8714562978115484,
+    "prompt_n": 435
+   },
+   {
+    "id": "tipo-033",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 187.56974999269005,
+    "conf": 0.7872922852117741,
+    "prompt_n": 441
+   },
+   {
+    "id": "tipo-034",
+    "tarea": "tipo",
+    "esperado": "NAVIGATION",
+    "aceptables": [
+     "NAVIGATION"
+    ],
+    "pred": "UNKNOWN",
+    "valido": true,
+    "ms": 173.86937500850763,
+    "conf": 0.44157220749915194,
+    "prompt_n": 434
+   },
+   {
+    "id": "tipo-035",
+    "tarea": "tipo",
+    "esperado": "NAVIGATION",
+    "aceptables": [
+     "NAVIGATION"
+    ],
+    "pred": "NAVIGATION",
+    "valido": true,
+    "ms": 192.42549999034964,
+    "conf": 0.666624022270842,
+    "prompt_n": 432
+   },
+   {
+    "id": "tipo-036",
+    "tarea": "tipo",
+    "esperado": "NAVIGATION",
+    "aceptables": [
+     "NAVIGATION"
+    ],
+    "pred": "NAVIGATION",
+    "valido": true,
+    "ms": 182.08004099142272,
+    "conf": 0.8371154544324172,
+    "prompt_n": 436
+   },
+   {
+    "id": "tipo-037",
+    "tarea": "tipo",
+    "esperado": "NAVIGATION",
+    "aceptables": [
+     "NAVIGATION"
+    ],
+    "pred": "NAVIGATION",
+    "valido": true,
+    "ms": 197.74024999060202,
+    "conf": 0.7818976568510775,
+    "prompt_n": 436
+   },
+   {
+    "id": "tipo-038",
+    "tarea": "tipo",
+    "esperado": "NAVIGATION",
+    "aceptables": [
+     "NAVIGATION"
+    ],
+    "pred": "NAVIGATION",
+    "valido": true,
+    "ms": 168.04441700514872,
+    "conf": 0.8268098574675228,
+    "prompt_n": 439
+   },
+   {
+    "id": "tipo-039",
+    "tarea": "tipo",
+    "esperado": "NAVIGATION",
+    "aceptables": [
+     "NAVIGATION"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 178.34762499842327,
+    "conf": 0.4063944749075989,
+    "prompt_n": 437
+   },
+   {
+    "id": "tipo-040",
+    "tarea": "tipo",
+    "esperado": "NAVIGATION",
+    "aceptables": [
+     "NAVIGATION"
+    ],
+    "pred": "NAVIGATION",
+    "valido": true,
+    "ms": 195.28879200515803,
+    "conf": 0.6792122447953268,
+    "prompt_n": 437
+   },
+   {
+    "id": "tipo-041",
+    "tarea": "tipo",
+    "esperado": "NAVIGATION",
+    "aceptables": [
+     "NAVIGATION"
+    ],
+    "pred": "NAVIGATION",
+    "valido": true,
+    "ms": 189.97883299016394,
+    "conf": 0.7175469193097871,
+    "prompt_n": 440
+   },
+   {
+    "id": "tipo-042",
+    "tarea": "tipo",
+    "esperado": "NAVIGATION",
+    "aceptables": [
+     "NAVIGATION"
+    ],
+    "pred": "NAVIGATION",
+    "valido": true,
+    "ms": 183.61500000173692,
+    "conf": 0.8961740361603937,
+    "prompt_n": 439
+   },
+   {
+    "id": "tipo-043",
+    "tarea": "tipo",
+    "esperado": "NAVIGATION",
+    "aceptables": [
+     "NAVIGATION"
+    ],
+    "pred": "NAVIGATION",
+    "valido": true,
+    "ms": 179.74054199294187,
+    "conf": 0.7493281193996352,
+    "prompt_n": 436
+   },
+   {
+    "id": "tipo-044",
+    "tarea": "tipo",
+    "esperado": "NAVIGATION",
+    "aceptables": [
+     "NAVIGATION"
+    ],
+    "pred": "NAVIGATION",
+    "valido": true,
+    "ms": 186.8859579990385,
+    "conf": 0.8662445119819799,
+    "prompt_n": 437
+   },
+   {
+    "id": "tipo-045",
+    "tarea": "tipo",
+    "esperado": "NAVIGATION",
+    "aceptables": [
+     "NAVIGATION"
+    ],
+    "pred": "NAVIGATION",
+    "valido": true,
+    "ms": 169.39650000131223,
+    "conf": 0.728387800779399,
+    "prompt_n": 438
+   },
+   {
+    "id": "tipo-046",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 211.86687500448897,
+    "conf": 0.8853090280755632,
+    "prompt_n": 433
+   },
+   {
+    "id": "tipo-047",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 143.40037500369363,
+    "conf": 0.8757117462389387,
+    "prompt_n": 439
+   },
+   {
+    "id": "tipo-048",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "CONFIGURATION",
+    "valido": true,
+    "ms": 223.10158399341162,
+    "conf": 0.1907441690662631,
+    "prompt_n": 435
+   },
+   {
+    "id": "tipo-049",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 207.48183300020173,
+    "conf": 0.5602523042140236,
+    "prompt_n": 435
+   },
+   {
+    "id": "tipo-050",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 193.37216699204873,
+    "conf": 0.5289163212509989,
+    "prompt_n": 436
+   },
+   {
+    "id": "tipo-051",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 202.84591701056343,
+    "conf": 0.7196898927646732,
+    "prompt_n": 442
+   },
+   {
+    "id": "tipo-052",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 184.75579100777395,
+    "conf": 0.6816244119203964,
+    "prompt_n": 437
+   },
+   {
+    "id": "tipo-053",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "UNKNOWN",
+    "valido": true,
+    "ms": 186.99295799888205,
+    "conf": 0.2856232709122162,
+    "prompt_n": 442
+   },
+   {
+    "id": "tipo-054",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "CONFIGURATION",
+    "valido": true,
+    "ms": 186.69737500022165,
+    "conf": 0.2466389131131647,
+    "prompt_n": 438
+   },
+   {
+    "id": "tipo-055",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 185.08820800343528,
+    "conf": 0.6266899428245957,
+    "prompt_n": 439
+   },
+   {
+    "id": "tipo-056",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 172.8275829955237,
+    "conf": 0.8839440979904599,
+    "prompt_n": 437
+   },
+   {
+    "id": "tipo-057",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 190.30824999208562,
+    "conf": 0.5519548197256453,
+    "prompt_n": 440
+   },
+   {
+    "id": "tipo-058",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 173.19991599651985,
+    "conf": 0.5466759240771338,
+    "prompt_n": 438
+   },
+   {
+    "id": "tipo-059",
+    "tarea": "tipo",
+    "esperado": "CONFIGURATION",
+    "aceptables": [
+     "CONFIGURATION"
+    ],
+    "pred": "CONFIGURATION",
+    "valido": true,
+    "ms": 183.15620798966847,
+    "conf": 0.8654723445290834,
+    "prompt_n": 433
+   },
+   {
+    "id": "tipo-060",
+    "tarea": "tipo",
+    "esperado": "CONFIGURATION",
+    "aceptables": [
+     "CONFIGURATION"
+    ],
+    "pred": "CONFIGURATION",
+    "valido": true,
+    "ms": 185.06066700501833,
+    "conf": 0.7367816904488311,
+    "prompt_n": 436
+   },
+   {
+    "id": "tipo-061",
+    "tarea": "tipo",
+    "esperado": "CONFIGURATION",
+    "aceptables": [
+     "CONFIGURATION"
+    ],
+    "pred": "CONFIGURATION",
+    "valido": true,
+    "ms": 180.58945800294168,
+    "conf": 0.9181376258644759,
+    "prompt_n": 440
+   },
+   {
+    "id": "tipo-062",
+    "tarea": "tipo",
+    "esperado": "CONFIGURATION",
+    "aceptables": [
+     "CONFIGURATION"
+    ],
+    "pred": "CONFIGURATION",
+    "valido": true,
+    "ms": 186.51225000212435,
+    "conf": 0.8454872879088197,
+    "prompt_n": 438
+   },
+   {
+    "id": "tipo-063",
+    "tarea": "tipo",
+    "esperado": "CONFIGURATION",
+    "aceptables": [
+     "CONFIGURATION",
+     "PROCEDURE"
+    ],
+    "pred": "CONFIGURATION",
+    "valido": true,
+    "ms": 199.64875000005122,
+    "conf": 0.896349895077066,
+    "prompt_n": 434
+   },
+   {
+    "id": "tipo-064",
+    "tarea": "tipo",
+    "esperado": "CONFIGURATION",
+    "aceptables": [
+     "CONFIGURATION",
+     "NAVIGATION"
+    ],
+    "pred": "UNKNOWN",
+    "valido": true,
+    "ms": 179.8309579899069,
+    "conf": 0.5923970645525759,
+    "prompt_n": 439
+   },
+   {
+    "id": "tipo-065",
+    "tarea": "tipo",
+    "esperado": "CONFIGURATION",
+    "aceptables": [
+     "CONFIGURATION"
+    ],
+    "pred": "CONFIGURATION",
+    "valido": true,
+    "ms": 160.3652079938911,
+    "conf": 0.2640115230561196,
+    "prompt_n": 435
+   },
+   {
+    "id": "tipo-066",
+    "tarea": "tipo",
+    "esperado": "CONFIGURATION",
+    "aceptables": [
+     "CONFIGURATION"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 165.2350420044968,
+    "conf": 0.4749810891943084,
+    "prompt_n": 437
+   },
+   {
+    "id": "tipo-067",
+    "tarea": "tipo",
+    "esperado": "CONFIGURATION",
+    "aceptables": [
+     "CONFIGURATION"
+    ],
+    "pred": "CONFIGURATION",
+    "valido": true,
+    "ms": 183.5624159866711,
+    "conf": 0.8341639609610766,
+    "prompt_n": 441
+   },
+   {
+    "id": "tipo-068",
+    "tarea": "tipo",
+    "esperado": "CONFIGURATION",
+    "aceptables": [
+     "CONFIGURATION"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 181.23816700244788,
+    "conf": 0.32506615358033003,
+    "prompt_n": 441
+   },
+   {
+    "id": "tipo-069",
+    "tarea": "tipo",
+    "esperado": "CONFIGURATION",
+    "aceptables": [
+     "CONFIGURATION"
+    ],
+    "pred": "CONFIGURATION",
+    "valido": true,
+    "ms": 201.6556659946218,
+    "conf": 0.9217501376590008,
+    "prompt_n": 437
+   },
+   {
+    "id": "tipo-070",
+    "tarea": "tipo",
+    "esperado": "COMPARISON",
+    "aceptables": [
+     "COMPARISON"
+    ],
+    "pred": "COMPARISON",
+    "valido": true,
+    "ms": 195.21824999537785,
+    "conf": 0.8252927438998455,
+    "prompt_n": 439
+   },
+   {
+    "id": "tipo-071",
+    "tarea": "tipo",
+    "esperado": "COMPARISON",
+    "aceptables": [
+     "COMPARISON"
+    ],
+    "pred": "COMPARISON",
+    "valido": true,
+    "ms": 170.79949998878874,
+    "conf": 0.7165428524490127,
+    "prompt_n": 436
+   },
+   {
+    "id": "tipo-072",
+    "tarea": "tipo",
+    "esperado": "COMPARISON",
+    "aceptables": [
+     "COMPARISON"
+    ],
+    "pred": "COMPARISON",
+    "valido": true,
+    "ms": 180.67612500453833,
+    "conf": 0.6644060425649334,
+    "prompt_n": 442
+   },
+   {
+    "id": "tipo-073",
+    "tarea": "tipo",
+    "esperado": "COMPARISON",
+    "aceptables": [
+     "COMPARISON"
+    ],
+    "pred": "COMPARISON",
+    "valido": true,
+    "ms": 177.76495900761802,
+    "conf": 0.9249248589694385,
+    "prompt_n": 434
+   },
+   {
+    "id": "tipo-074",
+    "tarea": "tipo",
+    "esperado": "COMPARISON",
+    "aceptables": [
+     "COMPARISON"
+    ],
+    "pred": "COMPARISON",
+    "valido": true,
+    "ms": 177.76233301265165,
+    "conf": 0.7754453321881486,
+    "prompt_n": 442
+   },
+   {
+    "id": "tipo-075",
+    "tarea": "tipo",
+    "esperado": "COMPARISON",
+    "aceptables": [
+     "COMPARISON"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 188.9903750125086,
+    "conf": 0.7299961443755438,
+    "prompt_n": 435
+   },
+   {
+    "id": "tipo-076",
+    "tarea": "tipo",
+    "esperado": "COMPARISON",
+    "aceptables": [
+     "COMPARISON"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 188.6984579905402,
+    "conf": 0.6969333172222018,
+    "prompt_n": 440
+   },
+   {
+    "id": "tipo-077",
+    "tarea": "tipo",
+    "esperado": "COMPARISON",
+    "aceptables": [
+     "COMPARISON"
+    ],
+    "pred": "COMPARISON",
+    "valido": true,
+    "ms": 170.10558299080003,
+    "conf": 0.9558086981379019,
+    "prompt_n": 437
+   },
+   {
+    "id": "tipo-078",
+    "tarea": "tipo",
+    "esperado": "COMPARISON",
+    "aceptables": [
+     "COMPARISON"
+    ],
+    "pred": "COMPARISON",
+    "valido": true,
+    "ms": 183.7875419878401,
+    "conf": 0.7409470457364228,
+    "prompt_n": 440
+   },
+   {
+    "id": "tipo-079",
+    "tarea": "tipo",
+    "esperado": "UNKNOWN",
+    "aceptables": [
+     "UNKNOWN",
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 225.7136249972973,
+    "conf": 0.25391798540091964,
+    "prompt_n": 432
+   },
+   {
+    "id": "tipo-080",
+    "tarea": "tipo",
+    "esperado": "UNKNOWN",
+    "aceptables": [
+     "UNKNOWN"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 252.9455829935614,
+    "conf": 0.5538098798023321,
+    "prompt_n": 430
+   },
+   {
+    "id": "tipo-081",
+    "tarea": "tipo",
+    "esperado": "UNKNOWN",
+    "aceptables": [
+     "UNKNOWN"
+    ],
+    "pred": "UNKNOWN",
+    "valido": true,
+    "ms": 174.8054579948075,
+    "conf": 0.33874881248786126,
+    "prompt_n": 432
+   },
+   {
+    "id": "tipo-082",
+    "tarea": "tipo",
+    "esperado": "UNKNOWN",
+    "aceptables": [
+     "UNKNOWN"
+    ],
+    "pred": "UNKNOWN",
+    "valido": true,
+    "ms": 176.42770799284335,
+    "conf": 0.7468972072313759,
+    "prompt_n": 431
+   },
+   {
+    "id": "tipo-083",
+    "tarea": "tipo",
+    "esperado": "UNKNOWN",
+    "aceptables": [
+     "UNKNOWN"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 167.92687500128523,
+    "conf": 0.24349692059288044,
+    "prompt_n": 432
+   },
+   {
+    "id": "tipo-084",
+    "tarea": "tipo",
+    "esperado": "UNKNOWN",
+    "aceptables": [
+     "UNKNOWN"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 181.11408299591858,
+    "conf": 0.1947705183743361,
+    "prompt_n": 430
+   },
+   {
+    "id": "tipo-085",
+    "tarea": "tipo",
+    "esperado": "UNKNOWN",
+    "aceptables": [
+     "UNKNOWN",
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 185.34812500001863,
+    "conf": 0.540229075605882,
+    "prompt_n": 430
+   },
+   {
+    "id": "tipo-086",
+    "tarea": "tipo",
+    "esperado": "UNKNOWN",
+    "aceptables": [
+     "UNKNOWN"
+    ],
+    "pred": "UNKNOWN",
+    "valido": true,
+    "ms": 193.8717080047354,
+    "conf": 0.40499529078346197,
+    "prompt_n": 434
+   },
+   {
+    "id": "tipo-087",
+    "tarea": "tipo",
+    "esperado": "UNKNOWN",
+    "aceptables": [
+     "UNKNOWN"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 182.56945900793653,
+    "conf": 0.4877444151450938,
+    "prompt_n": 429
+   },
+   {
+    "id": "tipo-088",
+    "tarea": "tipo",
+    "esperado": "UNKNOWN",
+    "aceptables": [
+     "UNKNOWN"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 188.51112500124145,
+    "conf": 0.14717525833727643,
+    "prompt_n": 430
+   },
+   {
+    "id": "tipo-089",
+    "tarea": "tipo",
+    "esperado": "UNKNOWN",
+    "aceptables": [
+     "UNKNOWN"
+    ],
+    "pred": "UNKNOWN",
+    "valido": true,
+    "ms": 160.80254199914634,
+    "conf": 0.29184546243134485,
+    "prompt_n": 433
+   },
+   {
+    "id": "tipo-090",
+    "tarea": "tipo",
+    "esperado": "UNKNOWN",
+    "aceptables": [
+     "UNKNOWN",
+     "CONCEPT"
+    ],
+    "pred": "UNKNOWN",
+    "valido": true,
+    "ms": 189.35154199425597,
+    "conf": 0.8088322103139225,
+    "prompt_n": 432
+   },
+   {
+    "id": "evid-001",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 216.0855419933796,
+    "noul": 0.9372102989686817,
+    "prompt_n": 323
+   },
+   {
+    "id": "evid-002",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 142.72941600938793,
+    "noul": 0.13064405388090983,
+    "prompt_n": 246
+   },
+   {
+    "id": "evid-003",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 252.00195799698122,
+    "noul": 0.5008924338799969,
+    "prompt_n": 316
+   },
+   {
+    "id": "evid-004",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 217.15958300046623,
+    "noul": 0.5099245954358216,
+    "prompt_n": 327
+   },
+   {
+    "id": "evid-005",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 275.8263340074336,
+    "noul": 0.6732838568987357,
+    "prompt_n": 352
+   },
+   {
+    "id": "evid-006",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 185.82812500244472,
+    "noul": 0.6005173323495084,
+    "prompt_n": 325
+   },
+   {
+    "id": "evid-007",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 261.29091599432286,
+    "noul": 0.8889584428443779,
+    "prompt_n": 409
+   },
+   {
+    "id": "evid-008",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 160.14491699752398,
+    "noul": 0.7339697419869268,
+    "prompt_n": 286
+   },
+   {
+    "id": "evid-009",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 241.51383400021587,
+    "noul": 0.7374318665869036,
+    "prompt_n": 491
+   },
+   {
+    "id": "evid-010",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 214.3318750022445,
+    "noul": 0.9041681810796283,
+    "prompt_n": 270
+   },
+   {
+    "id": "evid-011",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 328.92045901098754,
+    "noul": 0.8771236631826,
+    "prompt_n": 367
+   },
+   {
+    "id": "evid-012",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 172.2969170077704,
+    "noul": 0.7711768851915227,
+    "prompt_n": 359
+   },
+   {
+    "id": "evid-013",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 169.19087500718888,
+    "noul": 0.8085290891490918,
+    "prompt_n": 366
+   },
+   {
+    "id": "evid-014",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 241.14491599902976,
+    "noul": 0.7813318455962176,
+    "prompt_n": 364
+   },
+   {
+    "id": "evid-015",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 148.3800840069307,
+    "noul": 0.9465853248518872,
+    "prompt_n": 323
+   },
+   {
+    "id": "evid-016",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 150.91675000439864,
+    "noul": 0.6634133432356084,
+    "prompt_n": 325
+   },
+   {
+    "id": "evid-017",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 205.35583299351856,
+    "noul": 0.891929414787511,
+    "prompt_n": 235
+   },
+   {
+    "id": "evid-018",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 300.741958009894,
+    "noul": 0.9188800143579269,
+    "prompt_n": 529
+   },
+   {
+    "id": "evid-019",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 234.48883400124032,
+    "noul": 0.926858350116294,
+    "prompt_n": 448
+   },
+   {
+    "id": "evid-020",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 211.83058399765287,
+    "noul": 0.8815231411347443,
+    "prompt_n": 406
+   },
+   {
+    "id": "evid-021",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 178.10641600226518,
+    "noul": 0.7298207759360715,
+    "prompt_n": 414
+   },
+   {
+    "id": "evid-022",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 139.72879201173782,
+    "noul": 0.49313750816787055,
+    "prompt_n": 280
+   },
+   {
+    "id": "evid-023",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 138.39037501020357,
+    "noul": 0.06331634828400907,
+    "prompt_n": 319
+   },
+   {
+    "id": "evid-024",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 173.8181670079939,
+    "noul": 0.093897671207313,
+    "prompt_n": 357
+   },
+   {
+    "id": "evid-025",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 150.76279199274722,
+    "noul": 0.898515485256304,
+    "prompt_n": 321
+   },
+   {
+    "id": "evid-026",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 133.06366599863395,
+    "noul": 0.2691957797767502,
+    "prompt_n": 282
+   },
+   {
+    "id": "evid-027",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 207.22395899065305,
+    "noul": 0.1544100976778426,
+    "prompt_n": 496
+   },
+   {
+    "id": "evid-028",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 129.66883300396148,
+    "noul": 0.3236658584157513,
+    "prompt_n": 248
+   },
+   {
+    "id": "evid-029",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 212.51945800031535,
+    "noul": 0.6973449220810254,
+    "prompt_n": 302
+   },
+   {
+    "id": "evid-030",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 152.10954200301785,
+    "noul": 0.024699476035690386,
+    "prompt_n": 274
+   },
+   {
+    "id": "evid-031",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 283.86695800872985,
+    "noul": 0.023043500852739974,
+    "prompt_n": 342
+   },
+   {
+    "id": "evid-032",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 309.4286249979632,
+    "noul": 0.02374323276269463,
+    "prompt_n": 387
+   },
+   {
+    "id": "evid-033",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 170.38316700200085,
+    "noul": 0.8373694584144699,
+    "prompt_n": 363
+   },
+   {
+    "id": "evid-034",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 151.39049998833798,
+    "noul": 0.05862661508499353,
+    "prompt_n": 363
+   },
+   {
+    "id": "evid-035",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 193.41129099484533,
+    "noul": 0.8059512345828211,
+    "prompt_n": 496
+   },
+   {
+    "id": "evid-036",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 132.45016599830706,
+    "noul": 0.18249520890460075,
+    "prompt_n": 288
+   },
+   {
+    "id": "evid-037",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 240.5615829920862,
+    "noul": 0.08379791807621309,
+    "prompt_n": 546
+   },
+   {
+    "id": "evid-038",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 142.0277500001248,
+    "noul": 0.7022618929014377,
+    "prompt_n": 273
+   },
+   {
+    "id": "evid-039",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 134.6298749995185,
+    "noul": 0.2085395831428945,
+    "prompt_n": 240
+   },
+   {
+    "id": "evid-040",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 221.2137089954922,
+    "noul": 0.1602257786263045,
+    "prompt_n": 493
+   }
+  ]
+ }
+}

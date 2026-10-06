@@ -1,0 +1,147 @@
+id: presupuestos.registrar-titulos-y-partidas
+version: 1
+modulo: presupuestos
+titulo: "Registrar títulos y partidas en la hoja del presupuesto"
+objetivo: "Armar la hoja del presupuesto de la forma tradicional: primero los títulos y luego, para cada título, las partidas que le corresponden."
+nivel: basico
+preguntas:
+  - "cómo agrego títulos y partidas al presupuesto"
+  - "como adiciono una partida en la hoja del presupuesto"
+  - "como inserto titulos en el presupuesto s10"
+  - "como armo la hoja del presupuesto"
+  - "registrar partidas en el presupuesto de forma tradicional"
+  - "como agrego partidas del catalogo de partidas"
+  - "como genero los items del presupuesto"
+  - "adicionar titulo s10"
+  - "como meto partidas a mi presupusto"
+aliases:
+  - "adicionar título"
+  - "adicionar partida"
+  - "insertar partidas"
+  - "armar la hoja del presupuesto"
+entidades:
+  modulo: "Presupuestos"
+  pantallas: ["Hoja del Presupuesto", "Catálogo de Títulos", "Catálogo de Partidas"]
+  objetos: ["títulos", "partidas", "ítems"]
+prerrequisitos:
+  - texto: "Las partidas deben estar registradas previamente en el catálogo de partidas antes de elegirlas para la hoja del presupuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s044]
+  - texto: "El presupuesto y su subpresupuesto deben estar registrados en el escenario de Datos Generales."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s037]
+pasos:
+  - n: 1
+    id: "presupuestos.registrar-titulos-y-partidas#1"
+    accion: "En el escenario **Hoja del Presupuesto**, elija el presupuesto y luego el subpresupuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s037, img-3bd77f847305-0000]
+    pagina: null
+  - n: 2
+    id: "presupuestos.registrar-titulos-y-partidas#2"
+    accion: "Si quiere esconder los análisis de precios unitarios, use el modo ver para que la hoja no muestre la hoja de análisis de precios unitarios en la parte inferior."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s044]
+    pagina: null
+    fotos:
+      - id: "d176dd8c3a0f"
+        ruta_o_url: "imagenes/manual-de-presupuestos/6b72644ecd34.png"
+        pagina: null
+        caption: "Modo ver – Para esconder los análisis de precios unitarios, haga que la hoja del presupuesto no muestre la hoja de análisis de precios unitarios en la parte inferior:"
+        ocr: "So |\nE) Solo partidas\nA anidilisis de precios unitarios\nG Consolidado de recursos unitario\nQa Consolidado de recursos afectado por el metrado"
+  - n: 3
+    id: "presupuestos.registrar-titulos-y-partidas#3"
+    accion: "Haga clic derecho en la hoja y elija **Adicionar Título**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s044, "7c40a9548710-0031"]
+    pagina: null
+    fotos:
+      - id: "908deb575ea7"
+        ruta_o_url: "imagenes/manual-de-presupuestos/3bd77f847305.png"
+        pagina: null
+        caption: "Adicionar títulos a la hoja del presupuesto"
+        ocr: "Hoja del Presupuesto 3%\nluego el subpresupuesta a\nSE Eee Le\nfl @ VIVIENDA meta para planificar |OO1 ESTRUCTURAS\nSB VIVIEND2] UNFAMILIAR linea | [Fecha :| Haga clic derecho\n=) @ PUENTE EW CARRETERA » Jen este segmenta\nEQS LA CASA DE JUAN\nS| Casof1 copiar y pegar ‘\n| Caso}? uso de favorite\n5| Casa]3 importar hoja\n=\\[€aso F tradicional |} EF} adicionar Partida F2"
+  - n: 4
+    id: "presupuestos.registrar-titulos-y-partidas#4"
+    accion: "En el **catálogo de títulos**, elija los títulos uno a uno con doble clic."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s044, img-7eeb5fd28530-0000]
+    pagina: null
+    fotos:
+      - id: "bf22d179a8ea"
+        ruta_o_url: "imagenes/manual-de-presupuestos/7eeb5fd28530.png"
+        pagina: null
+        ocr: "ea Pree\n8 Catdlogo de Titulos :0190 TITULOS PARA DETALLES DE SUBPRES| (eee x\nOpciones 2 Elija los titulos uno a una con doble clic\nOSxBucave a an oe Y sa\nyO Todos los Registros 2] | 2-2 es\nESD Titulos Codi 5 7\n- Descrppcin [aternp |\nal TTULPs PARA DEY) preons6 | SaSgare |\n0190057 = a\nUbique el cursor | {4\n(0190059 ESTRUCTURAS\n0190055 ENCOFRADO\njo1g0057  ACERO\n0190056 CONCRETO"
+  - n: 5
+    id: "presupuestos.registrar-titulos-y-partidas#5"
+    accion: "Use el botón que divide horizontalmente el catálogo para ver la ventana inferior (**Registros seleccionados**)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s044]
+    pagina: null
+    fotos:
+      - id: "d44917d332b6"
+        ruta_o_url: "imagenes/manual-de-presupuestos/d6345af4b43e.png"
+        pagina: null
+        caption: "El botón divide horizontalmente el catálogo mostrando la ventana inferior (Registros seleccionados)."
+  - n: 6
+    id: "presupuestos.registrar-titulos-y-partidas#6"
+    accion: "Use el botón que traslada los datos seleccionados a la hoja del presupuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s044]
+    pagina: null
+    fotos:
+      - id: "5da5d0edd587"
+        ruta_o_url: "imagenes/manual-de-presupuestos/f5d5a48017b7.png"
+        pagina: null
+        caption: "El botón traslada los datos seleccionados a la hoja del presupuesto."
+  - n: 7
+    id: "presupuestos.registrar-titulos-y-partidas#7"
+    accion: "Genere los ítems con su botón; use el botón de sangría para jerarquizar los títulos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s044, img-011812ef3d59-0000]
+    pagina: null
+    fotos:
+      - id: "0b8bb0076272"
+        ruta_o_url: "imagenes/manual-de-presupuestos/011812ef3d59.png"
+        pagina: null
+        ocr: "Luego use este botdn para aplicar sangria Este botén genera los items\noooh @ @O)s BO Fst OP a Bm A)\n[Reswmectos] ___feamuestes\n\na2 ee Hoja del Presupuesto\n> TEND A UNFAMILIAR [.oeeeeeteeseessssssssssseeeeeeseeet\n VIVIENDA meta para plq 001 Estructuras\neee & VIVIENDA UNIFAMILIAR| Fecha: 23032010 Lupar: URUBAMBA\n@LACASA DE JUAN [litem | Desdripcién\nLe S)Caso 1 copiar y) 5 ESTRUCTURAS\na 5| Caso 2 uso…"
+  - n: 8
+    id: "presupuestos.registrar-titulos-y-partidas#8"
+    accion: "Haga clic derecho sobre el título al que se le insertarán partidas y elija **Adicionar Partida**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s044, img-12474abc3bed-0000]
+    pagina: null
+    fotos:
+      - id: "77aed61b0e54"
+        ruta_o_url: "imagenes/manual-de-presupuestos/12474abc3bed.png"
+        pagina: null
+        ocr: "HojadebBresmmmesto\nHaga clic derecho sobre el titulo | __— —_\n\n001 Estructur) al que se le insertara partidas cD.\n\nFecha: 23/03/2 Jornada: 8 horas «items 4»\n\n[len | Deserfsin ——[und | Metrado | Precio Sip Peet Sp\n\n(my 01 & ESTRUC QURAS\n\nry ENCOFRADO- Adicionar Titulo ...\n\nOo i “LS ES} Adicionar Partida... FZ\n\noO (RS Adicionar Favorito ..."
+  - n: 9
+    id: "presupuestos.registrar-titulos-y-partidas#9"
+    accion: "En el **Catálogo de Partidas**, despliegue el árbol, ubique el cursor en el grupo (por ejemplo, ENCOFRADO) y elija las partidas una por una con doble clic."
+    resultado: "Solo las partidas elegidas pasan a la hoja del presupuesto, donde son mostradas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s044, img-f4d6cd878481-0000]
+    pagina: null
+    fotos:
+      - id: "bf83401dbe0c"
+        ruta_o_url: "imagenes/manual-de-presupuestos/f4d6cd878481.png"
+        pagina: null
+        ocr: "Partidas\n= a TS | »\nDa XBETES MY AS cS EspeL Eija una porunalas | 77 BIE &\nPARES | LPattidas con doble clic | veo\n= (Bocas ies Parties (a) | JDasorpcién ine\n= fi§rartioas [___|Encotrado de tose de rodadura ma]\n\nil. @ ENIFICACION [Jenecotrado de viges en losa de rodadura m2|\nDespliegue el arbol, y | AGUE | |Encotrada de vigag en arco m2|\nubique el cursor en el [__Encotrado de elevacion m2|\ngrupo de…"
+      - id: "da1a49499bc1"
+        ruta_o_url: "imagenes/manual-de-presupuestos/da9be1ed90e8.png"
+        pagina: null
+        caption: "Las partidas son mostradas en la hoja del presupuesto."
+        ocr: "Hoja del Presupuesto fife\n001 Estructuras cD. ‘S/0.0\nFecha: 23/03/2010 Lugar : URUBAMEBA, Jomada: 8 horas «tems 25>\n\n[tem Deseripcin [Und | Metracio | Precio (Si) |\noO 1 ESTRUCTURAS\nOo o1o1 =] ENCOFRADO\noO Encofrado de cimentacién m2 0.00 0.00\nQa oo Encofrado de elevacién m2 0.00 0.00\nQ Encofrado de vigas en arco m2 0.00 9.00\noO - Encofrado de vigas en losa de rodadura = m2 0.00 0.00\nmi Encofrado…"
+  - n: 10
+    id: "presupuestos.registrar-titulos-y-partidas#10"
+    accion: "Use el botón para generar los ítems."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s044]
+    pagina: null
+verificacion:
+  - texto: "Las partidas son mostradas en la hoja del presupuesto, debajo de su título."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s044]
+errores_frecuentes:
+  - sintoma: "La partida que busca no aparece en el catálogo."
+    solucion: "Las partidas deben registrarse previamente en el catálogo de partidas antes de elegirlas para la hoja del presupuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s044]
+relacionados: [presupuestos.ingresar-metrados, presupuestos.registrar-presupuesto-nuevo, presupuestos.copiar-partidas-de-otro-presupuesto, presupuestos.importar-presupuesto-desde-excel, presupuestos.procesar-presupuesto]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s044, manual: "Manual de Presupuestos", seccion: "3.5.2.4 Caso 4) Registro del presupuesto de la forma tradicional", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s037, manual: "Manual de Presupuestos", seccion: "3.5 Registro de información en la hoja del presupuesto", pagina: null}
+  - {id: img-3bd77f847305-0000, manual: "Manual de Presupuestos", seccion: "3bd77f847305.png", pagina: null}
+  - {id: "7c40a9548710-0031", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 21}
+  - {id: img-7eeb5fd28530-0000, manual: "Manual de Presupuestos", seccion: "7eeb5fd28530.png", pagina: null}
+  - {id: img-011812ef3d59-0000, manual: "Manual de Presupuestos", seccion: "011812ef3d59.png", pagina: null}
+  - {id: img-12474abc3bed-0000, manual: "Manual de Presupuestos", seccion: "12474abc3bed.png", pagina: null}
+  - {id: img-f4d6cd878481-0000, manual: "Manual de Presupuestos", seccion: "f4d6cd878481.png", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

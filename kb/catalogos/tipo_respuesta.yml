@@ -1,0 +1,469 @@
+# Catálogo TIPO DE RESPUESTA de Metrín (asistente instruccional de S10 ERP) — V2.
+#
+# Decide el MODO de respuesta de la V2 de Metrín: no qué intención social tiene el mensaje (eso es intenciones.yml),
+# sino QUÉ FORMA debe tener la respuesta: explicar un concepto, guiar un procedimiento, dar una ruta de menú,
+# diagnosticar un fallo, guiar una configuración, comparar dos cosas o pedir aclaración. El tema (módulo, documento)
+# es una entidad aparte; aquí manda el acto.
+#
+# Todo lo que hay aquí es SINTÉTICO: frases escritas a mano imitando cómo escribe un usuario de obra u oficina
+# (asistente de presupuestos, almacenero, residente, contador, asistente de RR. HH.): correctas, coloquiales, con
+# faltas y abreviaturas («q», «x», «porfa», «xq», «dnd»), cortas y largas. No hay mensajes reales de usuarios.
+# El conjunto de PRUEBA vive en tipo_respuesta_prueba.yml, está redactado con otras palabras y NUNCA entra al
+# entrenamiento. Saludos, agradecimientos y temas ajenos a S10 NO están aquí: los maneja intenciones.yml / ruido.yml.
+#
+# Fronteras entre clases:
+#   CONCEPT          qué es / qué significa / para qué sirve un término. No «cómo se hace» ni «diferencia entre A y B».
+#   PROCEDURE        cómo HACER una operación del día a día en varios pasos (registrar, emitir, generar, calcular,
+#                    aprobar, anular, copiar, importar…). Incluye «¿y luego?», «¿qué sigue?» dentro de un procedimiento.
+#   NAVIGATION       DÓNDE está algo en la interfaz (menú, módulo, pestaña, botón, pantalla). La respuesta es una ruta
+#                    de menú, no un procedimiento. «¿En qué menú están los parámetros?» es NAVIGATION aunque el objeto
+#                    sea de configuración: se etiqueta por la forma de la respuesta que se pide.
+#   TROUBLESHOOTING  algo falla o no sale como debería (error, no guarda, no aparece, no cuadra, se cuelga, rechazado,
+#                    lento, bloqueado).
+#   CONFIGURATION    preparar o parametrizar el sistema antes de operar (unidades, monedas, tipo de cambio, series,
+#                    parámetros, valores por defecto, tablas maestras, usuarios y permisos, conexión, instalación,
+#                    actualización, plantillas de impresión, opciones del escenario). Frontera con PROCEDURE:
+#                    CONFIGURATION cambia CÓMO se comporta el sistema; PROCEDURE registra una operación del día a día.
+#   COMPARISON       diferencia, cuál conviene o si son lo mismo entre dos (o más) conceptos, documentos u opciones.
+#   UNKNOWN          sin tarea identificable: tema o palabra suelta, «tengo una duda», «lo del otro día», o mensajes
+#                    que podrían ser de varias clases por igual. Metrín no adivina: pregunta qué quiere hacer.
+#
+# Referencias conversacionales («¿y luego?», «eso no me sale», «¿y eso qué es?», «¿y dónde lo veo?», «¿y cómo lo
+# dejo configurado?», «¿y cuál es la diferencia con el otro?») se etiquetan por el TIPO DE RESPUESTA QUE PIDEN, no por
+# el tema del turno anterior; el tema lo resuelve el código con el contexto de la conversación.
+#
+# Ejemplos: ≥ minimo_ejemplos por clase, sin duplicados (ni salvo acentos/signos/mayúsculas) dentro ni entre clases.
+
+catalogo: tipo_respuesta
+version: 1
+sintetico: true
+generado: 2026-10-06
+minimo_ejemplos: 40
+clase_abstencion: UNKNOWN
+
+clases:
+
+  CONCEPT:
+    descripcion: >-
+      Pregunta QUÉ ES, QUÉ SIGNIFICA o PARA QUÉ SIRVE un término de S10 o de obra (APU, kardex, partida de control,
+      fórmula polinómica, CTS…). Se responde con una definición corta y se ofrece el procedimiento relacionado. No es
+      «cómo se hace» (PROCEDURE), ni «dónde está» (NAVIGATION), ni «diferencia entre A y B» (COMPARISON).
+    modo: concepto
+    plantillas: [CONCEPTO, SIN_EVIDENCIA]
+    ejemplos:
+      - "¿Qué es una partida de control?"
+      - "qué significa APU en S10"
+      - "q es un insumo"
+      - "¿Para qué sirve la fórmula polinómica?"
+      - "que significa indice unificado"
+      - "¿Qué es el presupuesto meta?"
+      - "para que sirve el kardex"
+      - "¿qué es una valorización de obra?"
+      - "qué es un subpresupuesto"
+      - "¿Qué son los gastos generales?"
+      - "que es el tareo"
+      - "¿a qué se refiere «recurso» en S10?"
+      - "qué es la hoja del presupuesto"
+      - "¿Qué es un monomio?"
+      - "que es una detraccion"
+      - "¿Qué es un centro de costo?"
+      - "q significa WBS"
+      - "explícame qué es el Lookahead"
+      - "¿Qué es una restricción en Lean?"
+      - "que es una nota de ingreso"
+      - "para qué sirve la partida de control en Gerencia de Proyectos"
+      - "¿qué es el escenario en el módulo de Presupuestos?"
+      - "que es la CTS"
+      - "qué es la gratificación"
+      - "¿qué es el régimen de construcción civil?"
+      - "q es el portal del proveedor"
+      - "qué son las aprobaciones móviles"
+      - "¿Qué es el cuadro comparativo?"
+      - "que es una orden de servicio"
+      - "¿Qué significa el stock mínimo?"
+      - "que es la utilidad en un presupuesto"
+      - "qué es un título dentro del presupuesto"
+      - "¿y eso qué es?"
+      - "y eso q significa"
+      - "no sé qué es la rendición de cuentas, ¿me explicas?"
+      - "¿qué es el tareo móvil?"
+      - "que es el parte diario de obra"
+      - "¿Qué es un asiento contable?"
+      - "para que sirve el plan de cuentas"
+      - "¿Qué es el cierre de periodo?"
+      - "qué es una revisión de S10"
+      - "¿qué es la caja chica en el módulo Administrativo?"
+      - "que es el cronograma valorizado"
+      - "el ingeniero residente me habló del presupuesto venta, ¿qué es exactamente?"
+      - "qué significa la columna parcial en la hoja del presupuesto"
+      - "¿qué es una nota de crédito?"
+      - "para qué sirve la transferencia entre almacenes"
+      - "que es una guia de remision"
+      - "define requerimiento"
+      - "qué es la AFP que aparece en la boleta de pago"
+      - "y eso pa q sirve"
+      - "concepto de costo directo"
+      - "me puedes explicar qué es un recurso de mano de obra"
+
+  PROCEDURE:
+    descripcion: >-
+      Pide CÓMO HACER una operación o transacción de trabajo en varios pasos: registrar, emitir, generar, calcular,
+      aprobar, anular, copiar, importar, exportar, cerrar. Incluye el avance dentro de un procedimiento guiado
+      («¿y luego?», «ya lo hice, ¿qué sigue?»). Si lo que se pide es dejar el sistema preparado (series, monedas,
+      permisos, parámetros) es CONFIGURATION; si solo pregunta dónde está la opción, NAVIGATION.
+    modo: procedimiento
+    plantillas: [PROCEDIMIENTO_INTRO, PASO, PASOS_BLOQUE, PREGUNTA_AVANCE, ACLARAR_MODULO, SIN_EVIDENCIA]
+    ejemplos:
+      - "¿cómo genero una orden de compra desde el pedido?"
+      - "pasos para registrar una guía de remisión"
+      - "cómo calculo la planilla de construcción civil"
+      - "como agrego partidas a un subpresupuesto"
+      - "¿Cómo armo la fórmula polinómica de la obra?"
+      - "enséñame a registrar una nota de ingreso al almacén"
+      - "como emito una factura electronica"
+      - "cómo copio un presupuesto de otro proyecto"
+      - "como importo metrados desde excel"
+      - "¿Cómo hago una transferencia entre almacenes?"
+      - "cómo apruebo un requerimiento desde el celular"
+      - "como anulo una orden de compra que salio mal"
+      - "pasos para generar la valorización mensual"
+      - "cómo registro el tareo diario de mi cuadrilla"
+      - "como calculo la cts de los obreros"
+      - "¿cómo emito una nota de crédito a un cliente?"
+      - "cómo hago la rendición de cuentas de la caja chica"
+      - "cómo genero los asientos contables de las compras del mes"
+      - "¿Cómo creo un APU nuevo para una partida?"
+      - "como reemplazo un insumo en todos los analisis de precios unitarios"
+      - "cómo cargo el cronograma de obra en Gerencia de Proyectos"
+      - "¿cómo registro una cotización de un proveedor?"
+      - "cómo armo el cuadro comparativo de cotizaciones"
+      - "como ingreso una nota de salida de cemento para la obra"
+      - "¿Cómo paso el presupuesto meta a partidas de control?"
+      - "cómo calculo la gratificación de diciembre"
+      - "como genero las boletas de pago del mes"
+      - "como registro una detraccion al pagar al proveedor"
+      - "cómo cierro el periodo contable de septiembre"
+      - "¿cómo exporto el presupuesto a Excel?"
+      - "cómo actualizo los precios de los insumos en el presupuesto"
+      - "como calculo el reajuste con la formula polinomica"
+      - "cómo registro las restricciones en el Lookahead"
+      - "¿cómo apruebo una orden de compra?"
+      - "como doy conformidad a una orden de servicio"
+      - "cómo registro el avance de obra para valorizar"
+      - "¿y luego?"
+      - "ya lo hice, ¿ahora qué sigue?"
+      - "y despues q hago"
+      - "ok ya guardé, ¿cuál es el siguiente paso?"
+      - "listo, salió la ventana, y ahora?"
+      - "cómo duplico un subpresupuesto dentro del mismo presupuesto"
+      - "como elimino un titulo del presupuesto con todas sus partidas"
+      - "necesito anular una factura electrónica que emití ayer, ¿cómo lo hago?"
+      - "cómo programo el pago a un proveedor en tesorería"
+      - "tengo que liquidar a un peón que se va de la obra, cómo calculo su liquidación"
+      - "porfa explicame paso a paso como hacer un pedido de materiales"
+      - "como devuelvo material sobrante de la obra al almacen central"
+      - "cómo consolido los pedidos de varias obras en una sola orden de compra"
+      - "como hago la conciliacion bancaria en administrativo"
+      - "¿cómo envío la factura a SUNAT?"
+      - "ya cerré la ventana del APU, ¿qué hago después?"
+
+  NAVIGATION:
+    descripcion: >-
+      Pregunta DÓNDE está algo en la interfaz: qué menú, módulo, pestaña, botón u opción; dónde se ve, encuentra o
+      consulta un dato o documento; en qué pantalla aparece. La respuesta es corta: una ruta de menú, no un
+      procedimiento. Si además pide los pasos de la operación es PROCEDURE; si dice que la opción debería estar y no
+      sale, TROUBLESHOOTING.
+    modo: navegacion
+    plantillas: [NAVEGACION, SIN_EVIDENCIA]
+    ejemplos:
+      - "¿dónde está la opción de fórmula polinómica?"
+      - "en qué menú están las órdenes de compra"
+      - "dnd encuentro el kardex"
+      - "¿Dónde veo el stock de un almacén?"
+      - "en que pantalla aparece el cuadro comparativo"
+      - "¿en qué módulo están las valorizaciones?"
+      - "donde esta el boton de procesar"
+      - "¿dónde consulto las boletas de pago de un trabajador?"
+      - "en qué pestaña están los gastos generales"
+      - "¿y dónde lo veo?"
+      - "y eso donde esta"
+      - "¿dónde queda el tareo móvil en el menú?"
+      - "donde encuentro el plan de cuentas"
+      - "¿En qué parte de S10 está el libro diario?"
+      - "q menu tengo q abrir para ver los pedidos pendientes"
+      - "¿dónde se ven las cotizaciones que mandaron los proveedores?"
+      - "en que modulo esta la caja chica"
+      - "dónde aparece el índice unificado del mes"
+      - "¿dónde está el botón para exportar a Excel?"
+      - "donde busco las notas de salida de ayer"
+      - "¿en qué opción del menú está el cronograma?"
+      - "en qué pantalla veo el avance de las partidas de control"
+      - "dnd sale el tipo de cambio del día"
+      - "¿Dónde está el Lookahead dentro de Lean?"
+      - "donde veo las restricciones pendientes"
+      - "¿en qué menú encuentro las guías de remisión emitidas?"
+      - "en qué menú están los parámetros de la empresa"
+      - "¿Dónde puedo ver el saldo de la caja chica?"
+      - "donde estan los reportes de nominas"
+      - "en qué ventana se ve el detalle del APU"
+      - "¿dónde encuentro la hoja del presupuesto?"
+      - "dónde reviso las órdenes de servicio aprobadas"
+      - "donde esta el portal del proveedor, el link"
+      - "¿en qué módulo se ven las detracciones?"
+      - "en que parte salen los asientos que generó compras"
+      - "¿dónde está el WBS del proyecto?"
+      - "ubicación del menú de transferencias entre almacenes"
+      - "dónde están los centros de costo"
+      - "¿dónde veo las aprobaciones pendientes en el celular?"
+      - "donde quedo la opcion de copiar presupuesto"
+      - "en qué menú está el cierre de periodo"
+      - "me dijiste que abra el catálogo de insumos, ¿dónde está eso?"
+      - "¿dónde lo encuentro?"
+      - "dnd lo busco"
+      - "en q modulo veo la planilla de construccion civil"
+      - "¿Dónde aparece la utilidad en el presupuesto?"
+      - "dónde puedo consultar el kardex valorizado del cemento"
+      - "¿en qué pantalla está la relación de facturas electrónicas enviadas a SUNAT?"
+      - "donde salen los requerimientos que hizo el residente"
+      - "qué botón es el de procesar el presupuesto"
+      - "en que menu esta la rendicion de cuentas"
+
+  TROUBLESHOOTING:
+    descripcion: >-
+      Algo falla o no sale como debería: mensaje de error, no deja guardar o aprobar, no aparece, no cuadra, se cuelga,
+      está lento, rechazado por SUNAT, usuario bloqueado, licencia vencida; también «eso no me sale» o «sigue igual»
+      durante un procedimiento guiado. Se diagnostica con errores frecuentes y verificaciones; sin evidencia, se deriva.
+    modo: diagnostico
+    plantillas: [ERROR_FRECUENTE, VERIFICACION, SIN_EVIDENCIA, DERIVAR_HUMANO]
+    ejemplos:
+      - "me sale error al guardar el presupuesto"
+      - "S10 no abre, se queda cargando"
+      - "no me deja aprobar el pedido"
+      - "error de conexión con el servidor SQL"
+      - "el kardex no cuadra con el stock físico"
+      - "la factura electrónica fue rechazada por SUNAT"
+      - "eso no me sale"
+      - "no me aparece"
+      - "el metrado no suma bien"
+      - "se cuelga cuando exporto a Excel"
+      - "la fórmula polinómica me da error en los monomios"
+      - "el tareo móvil no sincroniza"
+      - "no puedo cerrar el periodo contable"
+      - "la licencia dice que expiró"
+      - "hice lo que me dijiste y sale otra ventana"
+      - "cambié el precio del insumo y el APU sigue igual"
+      - "el total del presupuesto sale en cero"
+      - "el asiento no cuadra, el debe y el haber son diferentes"
+      - "no me deja grabar la orden de compra, dice que falta el centro de costo"
+      - "no aparece el insumo en la lista"
+      - "el sistema está lentísimo desde la mañana"
+      - "me bota del sistema a cada rato"
+      - "la nota de ingreso no actualiza el stock"
+      - "error violación de clave primaria al registrar la guía"
+      - "no se genera la boleta de pago de un trabajador"
+      - "la gratificación sale mal calculada"
+      - "el reporte sale en blanco"
+      - "no me jala el tipo de cambio"
+      - "me dice usuario bloqueado"
+      - "no me reconoce la contraseña"
+      - "la valorización no coincide con el avance"
+      - "x q no me deja anular la factura"
+      - "no puedo imprimir el cuadro comparativo, se traba"
+      - "el portal del proveedor no carga"
+      - "ya hice el paso y nada"
+      - "sigue sin funcionar"
+      - "la transferencia quedó pendiente y el otro almacén no la recibe"
+      - "me sale stock negativo en el kardex"
+      - "el pedido aparece anulado y no sé por qué"
+      - "no me sale la opción que dices"
+      - "la CTS de los obreros sale en cero"
+      - "error al procesar la planilla de construcción civil, se queda en 50%"
+      - "el subpresupuesto no se suma al total"
+      - "la aprobación desde el celular no llega"
+      - "la detracción no se descuenta del pago"
+      - "no se puede conectar a la base de datos"
+      - "me salió un mensaje raro en rojo y se cerró"
+      - "el cronograma no respeta las fechas que puse"
+      - "no me deja borrar el título del presupuesto"
+      - "la nota de crédito me la rechaza SUNAT por la serie"
+      - "eso no funciona"
+
+  CONFIGURATION:
+    descripcion: >-
+      Preparar o parametrizar el sistema o un módulo antes de operar: unidades de medida, monedas, tipo de cambio,
+      series de documentos, parámetros y valores por defecto, tablas maestras, usuarios y permisos, conexión a SQL
+      Server, instalación, actualización a una revisión, licencia, plantillas de impresión, opciones del escenario.
+      Cambia CÓMO se comporta el sistema; registrar una operación del día a día es PROCEDURE.
+    modo: configuracion
+    plantillas: [PROCEDIMIENTO_INTRO, PASO, PASOS_BLOQUE, VERIFICACION, SIN_EVIDENCIA]
+    ejemplos:
+      - "¿cómo configuro las unidades de medida?"
+      - "como cambio la moneda por defecto del presupuesto"
+      - "cómo cargo el tipo de cambio en la tabla de S10"
+      - "como creo una serie para facturas"
+      - "¿Cómo creo un usuario nuevo y le doy permisos?"
+      - "cómo restrinjo que un usuario vea Contabilidad"
+      - "como configuro la conexion a sql server"
+      - "¿cómo instalo S10 en una PC nueva?"
+      - "como actualizo S10 a la ultima revision"
+      - "cómo configuro el porcentaje de gastos generales y utilidad por defecto"
+      - "¿cómo dejo configurado el IGV en el presupuesto?"
+      - "como parametrizo los conceptos de la planilla de construccion civil"
+      - "cómo configuro las AFP y sus tasas"
+      - "¿Cómo armo el plan de cuentas de la empresa?"
+      - "como configuro los centros de costo"
+      - "cómo configuro el almacén por defecto de la obra"
+      - "¿cómo cambio el formato de impresión de la orden de compra?"
+      - "como pongo el logo de la empresa en los reportes"
+      - "cómo configuro los niveles de aprobación de pedidos"
+      - "¿Cómo activo las aprobaciones móviles?"
+      - "como configuro el tareo movil en los celulares"
+      - "¿y cómo lo dejo configurado?"
+      - "y eso como lo parametrizo"
+      - "cómo configuro las opciones del escenario del presupuesto"
+      - "¿Cómo cambio la cantidad de decimales de los metrados?"
+      - "como configuro el redondeo de los precios unitarios"
+      - "cómo vinculo las cuentas contables a los tipos de documento"
+      - "¿cómo configuro la facturación electrónica con SUNAT?"
+      - "como cargo el certificado digital para facturar"
+      - "cómo configuro las detracciones por tipo de servicio"
+      - "¿cómo dejo activado el portal del proveedor?"
+      - "como asigno permisos solo de lectura a un practicante"
+      - "cómo cambio el formato de fecha del sistema"
+      - "cómo creo una nueva empresa en S10"
+      - "¿Cómo creo la base de datos de una empresa nueva en SQL Server?"
+      - "como configuro el periodo contable del año"
+      - "cómo defino el calendario y los feriados del cronograma"
+      - "¿cómo configuro los índices unificados de mi región?"
+      - "como agrego una unidad nueva, por ejemplo bolsa"
+      - "cómo configuro el correo para que S10 mande las órdenes de compra"
+      - "¿cómo dejo predeterminada la moneda en dólares para los proveedores extranjeros?"
+      - "como configuro la licencia en el servidor"
+      - "cómo hago que el sistema pida aprobación antes de emitir la OC"
+      - "necesito que los almaceneros solo vean su almacén, ¿cómo lo configuro?"
+      - "cómo configuro el tipo de cambio automático"
+      - "como cambio la contraseña de un usuario"
+      - "¿cómo configuro la cuenta de caja chica y su monto fijo?"
+      - "cómo configuro el jornal básico de operario, oficial y peón para este año"
+      - "como dejo configurada la plantilla de impresión de la boleta de pago"
+      - "cómo configuro las series de guías de remisión electrónicas por almacén"
+      - "¿cómo configuro el WBS estándar para todos los proyectos?"
+
+  COMPARISON:
+    descripcion: >-
+      Pide la DIFERENCIA entre dos (o más) conceptos, documentos u opciones de S10, cuál conviene usar o si son lo
+      mismo (meta vs venta, pedido vs orden de compra, kardex físico vs valorizado). «¿Qué es X?» con un solo término
+      es CONCEPT; comparar DATOS de una obra (meta contra real) es un reporte, no esta clase.
+    modo: comparacion
+    plantillas: [COMPARACION, SIN_EVIDENCIA]
+    ejemplos:
+      - "¿cuál es la diferencia entre presupuesto meta y presupuesto venta?"
+      - "diferencia entre pedido y orden de compra"
+      - "qué diferencia hay entre insumo y recurso"
+      - "partida vs partida de control"
+      - "¿en qué se diferencia la guía de remisión de la nota de salida?"
+      - "no entiendo la diferencia entre título y subpresupuesto"
+      - "kardex valorizado o kardex físico, cuál uso"
+      - "qué conviene, tareo normal o tareo móvil"
+      - "costo directo vs costo indirecto"
+      - "¿es lo mismo planilla que nómina?"
+      - "orden de servicio u orden de compra, ¿cuál corresponde para un subcontratista?"
+      - "nota de crédito o nota de débito, cuándo uso cada una"
+      - "diferencia entre detracción y retención"
+      - "requerimiento y pedido son lo mismo?"
+      - "¿cuál es la diferencia entre cotización y cuadro comparativo?"
+      - "almacén central vs almacén de obra"
+      - "asiento manual o asiento automático, cuál es mejor"
+      - "¿y cuál es la diferencia con el otro?"
+      - "y en q se diferencia del anterior"
+      - "cts y gratificación qué diferencia tienen"
+      - "monomio vs índice unificado"
+      - "Last Planner y Lookahead son lo mismo?"
+      - "diferencia entre valorización y avance de obra"
+      - "qué es mejor, importar partidas de Excel o copiarlas de otro presupuesto"
+      - "¿factura o boleta para un cliente sin RUC?"
+      - "diferencia entre nota de ingreso y guía de remisión"
+      - "AFP o ONP, qué diferencia hay en la boleta"
+      - "parte diario y tareo, son lo mismo?"
+      - "¿qué diferencia hay entre gastos generales fijos y variables?"
+      - "costo unitario vs precio unitario en el APU"
+      - "escenario de presupuesto vs subpresupuesto"
+      - "cuál es la diferencia entre caja chica y fondo fijo"
+      - "transferencia entre almacenes o nota de salida, cuál uso para mandar material a otra obra"
+      - "diferencia entre el módulo de Compras y el de Almacenes"
+      - "en qué se distingue Gerencia de Proyectos de Presupuestos"
+      - "¿qué cambia entre instalar S10 en cada PC o en un servidor?"
+      - "usuario administrador vs usuario normal, qué puede hacer cada uno"
+      - "dif entre libro diario y libro mayor"
+      - "q diferencia hay entre centro de costo y partida de control"
+      - "tipo de cambio compra o venta, cuál usa S10 para las facturas en dólares"
+      - "¿conviene más el cronograma por partidas o por WBS?"
+      - "diferencia entre restricción y compromiso en Lean"
+      - "la orden de compra y la factura del proveedor no son lo mismo?"
+      - "¿régimen de construcción civil o régimen general, en qué se diferencian los cálculos?"
+      - "precio con IGV vs sin IGV en el presupuesto, cuál va"
+      - "cotización y orden de compra, en qué se parecen y en qué no"
+      - "aprobación móvil o aprobación en la PC, hay alguna diferencia"
+      - "compárame el kardex con el reporte de stock"
+      - "diferencia entre anular y eliminar una factura"
+
+  UNKNOWN:
+    descripcion: >-
+      Mensaje sin tarea identificable: solo un tema, módulo o documento suelto («kardex», «presupuesto s10»), «tengo
+      una duda», «ayúdame con eso», «lo del otro día», o algo que podría ser de varias clases por igual. Metrín no
+      adivina: pregunta qué quiere hacer (ACLARAR_TAREA) o en qué módulo (ACLARAR_MODULO). Saludos, agradecimientos y
+      temas ajenos a S10 NO van aquí (los maneja otro catálogo).
+    modo: aclarar
+    plantillas: [ACLARAR_TAREA, ACLARAR_MODULO]
+    ejemplos:
+      - "kardex"
+      - "presupuesto s10"
+      - "tengo una duda"
+      - "ayúdame con eso"
+      - "lo del otro día"
+      - "valorizaciones"
+      - "planilla"
+      - "orden de compra"
+      - "una consulta sobre almacenes"
+      - "s10 compras"
+      - "fórmula polinómica"
+      - "tareo"
+      - "necesito ayuda con nóminas"
+      - "lo de la caja chica"
+      - "sobre los APU"
+      - "consulta"
+      - "facturación electrónica"
+      - "tema contabilidad"
+      - "una pregunta"
+      - "y lo otro?"
+      - "lo que te pregunté ayer"
+      - "partidas de control"
+      - "detracciones"
+      - "no sé cómo explicarlo"
+      - "es sobre el presupuesto de la obra"
+      - "ayuda con lo de logística"
+      - "gastos generales s10"
+      - "Lookahead"
+      - "quería preguntarte algo de S10"
+      - "cronograma"
+      - "lo del residente"
+      - "información de cts"
+      - "s10 almacenes"
+      - "es urgente, lo de las órdenes"
+      - "y eso?"
+      - "sobre usuarios"
+      - "una cosita del tareo móvil"
+      - "subpresupuestos"
+      - "proveedores"
+      - "eso mismo pero para la otra obra"
+      - "explícame todo"
+      - "me ayudas con la valorización?"
+      - "presupuesto meta"
+      - "asientos contables"
+      - "lo de SUNAT"
+      - "guía de remisión s10"
+      - "el tema de los insumos"
+      - "nota de salida"
+      - "sobre lo que me dijiste"
+      - "haz lo mismo"
+      - "S10 gerencia de proyectos"

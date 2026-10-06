@@ -1,0 +1,11 @@
+id: guia_de_remision
+termino: "Guía de remisión"
+sinonimos: ["guías de remisión", "GRE"]
+definicion: "Documento que se usa para trasladar bienes o recursos; es un documento preimpreso que requiere autorización de SUNAT."
+en_s10: "En Almacenes la guía de remisión se genera solo a partir de un egreso, y el escenario Guías de remisión muestra, de forma informativa, las generadas en el proyecto. Cuando llegan recursos solo con guía de remisión (entregas parciales), se registra un Ingreso por compra y luego se regulariza con la factura. Las guías de remisión electrónicas (GRE) se generan con los servicios propios de SUNAT; para enlazarlas con S10 ERP hay que crear credenciales API REST en SUNAT Operaciones en línea."
+procedimientos_relacionados: [almacenes.regularizar-ingreso-por-compra]
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s089  # Manual de Almacenes › 3.7 Guías de Remisión
+  - web-https-documentacion-s10peru-com-manual-d-s044  # Manual de Almacenes › 2.1.2.1 Ingreso por Compra [IC] (1)
+  - web-https-documentacion-s10peru-com-portal-d-s001  # Portal de Facturación Electrónica - Credenciales API REST SUNAT - Portal de Ayuda S10 › 1. Credenciales API REST SUNAT
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

@@ -4,8 +4,10 @@ import (
 	"context"
 	"math"
 	"strings"
+	"time"
 
 	"rag-go/internal/clasificar"
+	"rag-go/internal/traza"
 )
 
 const (
@@ -28,6 +30,7 @@ type Orquestacion struct {
 // ruta y después reglas explícitas para el tipo de respuesta técnica. Lo técnico
 // siempre pasa por retrieval: el clasificador no decide hechos ni fuentes.
 func (r *RAG) planificar(ctx context.Context, pregunta string, hilo []Turno) Orquestacion {
+	rec := traza.De(ctx) // nil con el modo traza apagado
 	p := Orquestacion{
 		Intencion:    clasificar.Trabajo,
 		TipoConsulta: tipoConsulta(pregunta, hilo),
@@ -35,6 +38,9 @@ func (r *RAG) planificar(ctx context.Context, pregunta string, hilo []Turno) Orq
 		Clasificador: "reglas_seguras",
 	}
 	if r.Clasificador == nil || r.Emb == nil {
+		if rec != nil {
+			trazarSinClasificador(rec)
+		}
 		return p
 	}
 
@@ -42,7 +48,19 @@ func (r *RAG) planificar(ctx context.Context, pregunta string, hilo []Turno) Orq
 	if r.Clasificador.HuellaEmb != "" {
 		p.Clasificador += ":" + r.Clasificador.HuellaEmb
 	}
-	intencion, similitud, err := r.Clasificador.Clasificar(ctx, r.Emb, pregunta)
+	// Con traza, el embebedor se envuelve para medir su parte del tiempo.
+	emb := r.Emb
+	var medido *embMedido
+	var t0 time.Time
+	if rec != nil {
+		medido = &embMedido{Embebedor: r.Emb}
+		emb = medido
+		t0 = time.Now()
+	}
+	intencion, similitud, err := r.Clasificador.Clasificar(ctx, emb, pregunta)
+	if rec != nil {
+		r.trazarClasificacion(rec, pregunta, p.Clasificador, medido, time.Since(t0), intencion, similitud, err)
+	}
 	if err != nil {
 		p.Clasificador = "error_fallback_rag"
 		return p
@@ -54,13 +72,18 @@ func (r *RAG) planificar(ctx context.Context, pregunta string, hilo []Turno) Orq
 
 	// Excepción de seguridad: una pregunta con contenido de trabajo no se
 	// desvía por una etiqueta conversacional accidental.
-	if !esPreguntaLarga(pregunta) && (intencion == clasificar.Social || intencion == "limite") {
+	larga := esPreguntaLarga(pregunta)
+	desvia := !larga && (intencion == clasificar.Social || intencion == "limite")
+	if desvia {
 		p.Ruta = rutaConversacion
 		if intencion == clasificar.Social {
 			p.TipoConsulta = "social"
 		} else {
 			p.TipoConsulta = "fuera_de_alcance"
 		}
+	}
+	if rec != nil {
+		trazarSeguridad(rec, intencion, larga, desvia)
 	}
 	return p
 }

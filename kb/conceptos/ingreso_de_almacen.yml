@@ -1,0 +1,15 @@
+id: ingreso_de_almacen
+termino: "Ingreso de almacén"
+sinonimos: ["ingreso", "ingresos", "guía de ingreso"]
+definicion: "Movimiento por el cual un recurso entra al almacén; debe estar respaldado por un documento con la fecha, cantidad, unidad y precio del recurso. Todo ingreso va al stock, salvo los recursos que no se almacenan, como el concreto premezclado, que se ingresan y se egresan de inmediato con descarga directa."
+en_s10: "Hay varios tipos, entre ellos el Ingreso por compra [IC] (con guía de remisión, factura, boleta de venta o ticket, sin orden de compra), el Ingreso por orden de compra [IOC] (de las órdenes aprobadas en Compras), el ingreso por préstamo, por transferencia externa y por ajuste de cantidad. Los ingresos se relacionan con la factura, que pasa a Documentos por pagar y a Contabilidad."
+procedimientos_relacionados: [almacenes.registrar-ingreso-por-orden-de-compra, almacenes.registrar-ingreso-por-inventario, almacenes.registrar-ingreso-por-compra]
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s040  # Manual de Almacenes › 2.1 Ingresos
+  - web-https-documentacion-s10peru-com-manual-d-s044  # Manual de Almacenes › 2.1.2.1 Ingreso por Compra [IC] (1)
+  - web-https-documentacion-s10peru-com-manual-d-s052  # Manual de Almacenes › 2.1.3.4 Ingreso por Orden de Compra [IOC]
+  - web-https-documentacion-s10peru-com-manual-d-s048  # Manual de Almacenes › 2.1.2.2 Ingreso por Préstamo IP]
+  - web-https-documentacion-s10peru-com-manual-d-s054  # Manual de Almacenes › 2.1.3.6 Ingreso por Transferencia Externa [ITE]
+  - web-https-documentacion-s10peru-com-manual-d-s056  # Manual de Almacenes › 2.1.4.1 Ingreso por Ajuste de Cantidad [IAC]
+  - web-https-documentacion-s10peru-com-manual-d-s015  # Manual de Almacenes › 1.2 Diagrama de bloques del funcionamiento del almacén con relación al proyecto
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

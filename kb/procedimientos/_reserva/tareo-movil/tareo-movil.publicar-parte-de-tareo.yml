@@ -1,0 +1,92 @@
+id: tareo-movil.publicar-parte-de-tareo
+version: 1
+modulo: tareo-movil
+titulo: "Publicar un parte de tareo para el móvil"
+objetivo: "Publicar desde el S10 un parte de tareo para que el tareador asignado tenga acceso al tareo desde un dispositivo móvil."
+nivel: intermedio
+preguntas:
+  - "cómo publico el tareo para el celular"
+  - "como envio el parte de tareo al tareo movil"
+  - "como habilito al tareador para que tareé desde el movil"
+  - "publicar tareo movil s10"
+  - "como agrego un invitado al tareo movil"
+  - "no me aparece la opcion de publicar el parte"
+  - "publicar en la nube o local tareo movil"
+aliases:
+  - "publicar tareo"
+  - "publicar parte de tareo"
+  - "enviar tareo al móvil"
+entidades:
+  modulo: "Tareo Móvil"
+  pantallas: ["Publicación Tareo Móvil", "Por Publicar", "Publicados"]
+  objetos: ["partes de tareo", "tareador", "invitado", "trabajadores"]
+prerrequisitos:
+  - texto: "El parte ya debe tener registrada la lista de trabajadores y un tareador asignado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s007]
+  - texto: "La columna **Tareo Móvil** debe estar activada para que, en la lista de partes de tareo, se habilite la opción de publicación."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s007]
+pasos:
+  - n: 1
+    id: "tareo-movil.publicar-parte-de-tareo#1"
+    accion: "Ingrese a la lista de partes de tareo y use la opción de publicación del parte; cada parte se publica en forma independiente."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s007]
+    pagina: null
+    fotos:
+      - id: "af317544a988"
+        ruta_o_url: "imagenes/manual-de-tareo-movil/cab0dd1ce961.png"
+        pagina: null
+        caption: "Entonces si tiene activada la columna Tareo Móvil, cuando ingrese a la lista de partes de tareo, se habilitará la opción de publicación."
+        ocr: "3 G25 Eom =x\nProyecto 00013001 WDS - NOMINAS MULTIPROYECTO - OBREROS\nTipo de Nomina003 Construccién Civil sin Beneficios sociales\nSemana Semana 2017 -21 (Del 15/05/2017 Al 21/05/2017) 1\nWEYARE8 vb gaa\nArrastre hacia aqui el encabezado de a columna que desea agrupar\n1/1 Campd[N° Parte [en cuaauier posicn + J (2) crpo:\nNe Parte _|Cédigo Socio Nege| Nombre [Grupo de Trabajo Partida dle Control Tipo T…"
+  - n: 2
+    id: "tareo-movil.publicar-parte-de-tareo#2"
+    accion: "Elija la forma de publicación: **Nube** (por defecto; usa un servicio web de la nube proporcionado por S10) o **local** (requiere instalar un servicio web en el servidor donde está instalado el S10)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s007]
+    pagina: null
+  - n: 3
+    id: "tareo-movil.publicar-parte-de-tareo#3"
+    accion: "En la pestaña **Por Publicar**, donde se muestra al tareador asignado al parte, haga clic en el campo **¿publicar?** y luego en el botón **Publicar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s007]
+    pagina: null
+    fotos:
+      - id: "d0995ccf4a8b"
+        ruta_o_url: "imagenes/manual-de-tareo-movil/08f04e95606c.png"
+        pagina: null
+        caption: "Al ingresar a la ventana de publicación por primera vez, en la pestaña “ Por Publicar” se muestra al tareador asignado al parte, para que tenga el acceso al tareo desde un dispositivo móvil. Haga clic en el campo ¿publicar? y luego clic en el botón Publicar ."
+        ocr: "Ajj Publicar Tareo Mévil Bee\nProyecto 00013001 WDS - NOMINAS MULTIPROYECTO - OBREROS\nTipo de Némina 003 Construccién Civil sin Beneficios sociales\nPeriod Del 15/05/2017 Al 2105/2017 N*Parte 00000060 Tipo publicacién — |Nube Mm\nAYRES SFia@aa)\na\n= mramirez@s1Operu.com RAMIREZ Nufiez, Manuel Edmundo Tareador"
+  - n: 4
+    id: "tareo-movil.publicar-parte-de-tareo#4"
+    accion: "Si quiere dar acceso a invitados, sean o no usuarios del S10, use la opción **Adicionar Invitado**: solo podrán ver la información del tareo ya registrado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s007]
+    pagina: null
+    fotos:
+      - id: "4de7e27f8148"
+        ruta_o_url: "imagenes/manual-de-tareo-movil/7ef73bc82573.png"
+        pagina: null
+        caption: "También permite realizar la publicación para invitados, sean o no usuarios del S10. Use la opción Adicionar Invitado , y este será habilitado como usuario en la aplicación móvil, pero solo para ver la información del tareo ya registrado."
+        ocr: "Proyecto 00013001 WDS - NOMINAS MULTIPROYECTO - OBREROS\nTipo de Nomina 003 Construccién Civil sin Beneficios sociales\nPeriodo Del 15/05/2017 Al 21/05/2017 N° Parte 00000060\nPor Publicar Publicados\nBY ARES GF a@dit\njPublicar? [EMail Nombre Categoria\nIncortez@s1Qperu.com | adicionar Invitado &, NELSON"
+  - n: 5
+    id: "tareo-movil.publicar-parte-de-tareo#5"
+    accion: "Revise en la pestaña **Publicados** a todos los usuarios a los que otorgó acceso al tareo desde un dispositivo móvil."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s007]
+    pagina: null
+    fotos:
+      - id: "41cdded1dd52"
+        ruta_o_url: "imagenes/manual-de-tareo-movil/5fa4b1bfda85.png"
+        pagina: null
+        caption: "En la pestaña Publicados, se muestran a todos aquellos usuarios a los que se ha otorgado el acceso al tareo en cuestión, desde un dispositivo móvil."
+        ocr: "Ai Publicar Tareo Mévil [oid\n\nProyecto (00013001 WOS - NOMINAS MULTIPROYECTO - OBREROS\n\nTipo de Némmina 003 Construccién Civil sin Beneficios sociales\n\nPeriodo Del 16/05/2017 Al 2105/2017 N*Parte 00000060 Tipo publicacién _[Nube ¥\nBYVeRks Bhigaa\nEMail [Nombre Rot___[Tereactor SS Puicadto por [Fecha pubicacién [Estado _|\nmramirez@s1 Operu.com RAMIREZ Nufez, Manuel Edmund Tareador RAMIREZ Nufez, Man…"
+verificacion:
+  - texto: "Todas las publicaciones de todos los proyectos pueden visualizarse en el escenario Publicación Tareo Móvil, donde se identifican los partes enviados al móvil por cada usuario y su estado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s007, web-https-documentacion-s10peru-com-manual-d-s008]
+errores_frecuentes:
+  - sintoma: "El multiproyecto no se puede tarear desde el móvil."
+    solucion: "Si está activada la opción de no tarear el multiproyecto, solo se podrá tarear en los proyectos destino."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s007]
+  - sintoma: "No aparece la opción de publicación en la lista de partes de tareo."
+    solucion: "Active la columna Tareo Móvil: con ella activada se habilita la opción de publicación."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s007]
+relacionados: [tareo-movil.sincronizar-y-cerrar-el-tareo]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s007, manual: "Manual de Tareo Móvil", seccion: "1.3.1 Publicación de Tareo (1)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s008, manual: "Manual de Tareo Móvil", seccion: "1.3.1 Publicación de Tareo (2)", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

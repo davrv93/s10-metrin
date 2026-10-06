@@ -1,0 +1,12 @@
+id: cts
+termino: "CTS (Compensación por tiempo de servicios)"
+sinonimos: ["Compensación por tiempo de servicios"]
+definicion: "Compensación por tiempo de servicios. En los manuales oficiales de S10 aparece como uno de los conceptos que se eligen al preparar una boleta de liquidación en el módulo de Nóminas, junto a los beneficios sociales, las gratificaciones y los reintegros de vacaciones."
+en_s10: "El módulo de Nóminas genera, a solicitud del empleado o por directiva de la empresa, documentos como la carta de CTS. Entre los tipos de cuenta bancaria de un socio de negocio está la cuenta CTS (escenario Cuentas Bancarias del Socio Negocio)."
+procedimientos_relacionados: []
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s078  # Manual de Nóminas › 7.1.6 Informes 7.1.6.1 Preparación de Boleta
+  - web-https-documentacion-s10peru-com-manual-d-s001  # Manual de Nóminas › 1. Generalidades
+  - web-https-documentacion-s10peru-com-manual-d-s067  # Manual Administrativo › 7.4 Cuentas Bancarias del Socio Negocio
+notas: "Definido por uso: las fuentes oficiales no traen una definición formal de CTS («X es…»); se describe solo por lo que dicen los manuales de Nóminas y Administrativo. La definición anterior («beneficio social derivado de una obligación legal…») salía del temario de una capacitación publicado en s10peru.com, una fuente de marketing que el quality gate rechaza, y se retiró el 06-10-2026."
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

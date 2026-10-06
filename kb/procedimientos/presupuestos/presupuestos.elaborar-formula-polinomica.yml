@@ -1,0 +1,184 @@
+id: presupuestos.elaborar-formula-polinomica
+version: 1
+modulo: presupuestos
+titulo: "Elaborar la fórmula polinómica del presupuesto"
+objetivo: "Obtener la fórmula polinómica que, con los índices unificados del INEI, da el «K» para actualizar el costo de la obra desde la fecha del presupuesto base en las valorizaciones."
+nivel: avanzado
+preguntas:
+  - "cómo hago la fórmula polinómica en s10"
+  - "como elaboro la formula polinomica del presupuesto"
+  - "como agrupo indices unificados"
+  - "como conformo los monomios"
+  - "me sale recursos sin indice unificado, que hago"
+  - "cuantos monomios puede tener la formula polinomica"
+  - "como verifico que la formula polinomica este correcta"
+  - "formula polinomica s10 paso a paso"
+  - "como saco la formula polinomica"
+aliases:
+  - "fórmula polinómica"
+  - "agrupamiento preliminar"
+  - "conformar monomios"
+  - "índices unificados"
+entidades:
+  modulo: "Presupuestos"
+  pantallas: ["Fórmula Polinómica", "Catálogo de Índice Unificado", "Agrupamiento preliminar"]
+  objetos: ["índice unificado", "monomios", "fórmula polinómica", "símbolos"]
+prerrequisitos:
+  - texto: "Para elaborar la fórmula polinómica tiene que omitir en el pie del presupuesto el ítem relacionado al impuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s063]
+pasos:
+  - n: 1
+    id: "presupuestos.elaborar-formula-polinomica#1"
+    accion: "Ingrese al escenario de la **Fórmula Polinómica** y elija el presupuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s063]
+    pagina: null
+    fotos:
+      - id: "04dbed5ea1fc"
+        ruta_o_url: "imagenes/manual-de-presupuestos/1a1ed365ee10.png"
+        pagina: null
+        caption: "Acceso al escenario de la Fórmula Polinómica"
+        ocr: "[_Presupuestos |\n@ VIVIENDA UNFAMILIAR\nf.. <D-VIVIENDA meta para pleniticar\npx  VIVIENDA UNFAMILIAR Linea base\nFérmula FF) PUENTE EN CARRETERA Ven s\n, Luego"
+  - n: 2
+    id: "presupuestos.elaborar-formula-polinomica#2"
+    accion: "Si el sistema muestra la ventana **Recursos sin Indice Unificado** (solo aparece cuando a un recurso le falta índice unificado), use su botón para asignarlo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s063, img-3312aefbe4ff-0000]
+    pagina: null
+    fotos:
+      - id: "a37ede527764"
+        ruta_o_url: "imagenes/manual-de-presupuestos/3312aefbe4ff.png"
+        pagina: null
+        ocr: "Recursos sin Indice Unificado Haga clic en este botén —)\nSubpresupuesto : 001 Estructuras\nLU.\n(a) 21000002001 CEMENTO PORTLAND TIPO | (42.5 kg) bol [=|\nImprimir Cancelar"
+  - n: 3
+    id: "presupuestos.elaborar-formula-polinomica#3"
+    accion: "En el **Catálogo de Índice Unificado**, elija el índice unificado con doble clic; al terminar, cierre la ventana Catálogo de Índice Unificado."
+    resultado: "Cada recurso al que se le asigna índice unificado desaparece de la ventana."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s063, img-9a26d67064c5-0000]
+    pagina: null
+    fotos:
+      - id: "ebd294e4e969"
+        ruta_o_url: "imagenes/manual-de-presupuestos/9a26d67064c5.png"
+        pagina: null
+        ocr: "|e\nCatalogo de Indice Unificados ater es\n\nOpciones 2\n\nDet h «a mW Salmo 821 Ae 2 &EwA\n¥. Elija el Indice unificado con doble clic * NIVEL: 07\n|__| cédiga |Descripcidn [4]\n| | 20 | CEMENTO ASFalfTico\n\n| 21 [CEMENTO PORTLAND TIPO |\n22 | CEMENTO PORTLAND TIPO Il v"
+  - n: 4
+    id: "presupuestos.elaborar-formula-polinomica#4"
+    accion: "Elija **Sí** para elaborar la fórmula polinómica; elija **No** cuando ya tiene fórmula polinómica e ingresa solo para visualizarla o imprimirla."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s063]
+    pagina: null
+  - n: 5
+    id: "presupuestos.elaborar-formula-polinomica#5"
+    accion: "En el **Agrupamiento preliminar**, decida qué agrupar: de preferencia no agrupe el índice unificado 47 (mano de obra incluido leyes sociales) ni el 39 (gastos generales y utilidad); agrupe los índices de la misma familia, el de porcentaje menor al mayor."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s064]
+    pagina: null
+    fotos:
+      - id: "3b21c1431fa6"
+        ruta_o_url: "imagenes/manual-de-presupuestos/68928257d2e4.png"
+        pagina: null
+        caption: "1.- Agrupe los IU que son de la misma familia el que tiene % menor al mayor. 2.- El IU Dólar, tómelo como un comodín, agrupe a lo que menos incomode. 3.- El IU de Herramienta Manual, agrupe a un equipo o mano de obra."
+        ocr: "Formula Polinémica te\n001 Estructuras @Q  @® 4\nse Sida |e Sar\n> | #2 (AGRO DE coOmma@eRON LISO ae ee\nft AGED DE CONSTHUCINON COMRNGANO 10.44 WAN\n1 AGHERANO GRUESO ane Batt\n21 |CEMENTO PORTLAND TIPO | —1) 20.205) 20.205\noe aERROINA MANUAL. | 1.489) 1.489\n39 |INDICE GENERAL DEPRECIOSALCONSUMDOR | 22.066, 22.066,\n43 |MADERANACIONAL PARAENCOFRADO Y CARPINTER| 2.991) 2.991\n4¢ ANODE ONRA, PASO ASG\n48 WA…"
+  - n: 6
+    id: "presupuestos.elaborar-formula-polinomica#6"
+    accion: "Para agrupar, marque el índice unificado, mantenga presionado el botón izquierdo del ratón, arrástrelo sobre el índice unificado destino y suéltelo (o use el menú del clic derecho)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s064]
+    pagina: null
+    fotos:
+      - id: "07aefbc3dcc6"
+        ruta_o_url: "imagenes/manual-de-presupuestos/aefbaf609862.png"
+        pagina: null
+        caption: "A continuación, se muestra el agrupamiento preliminar;"
+        ocr: "Férmula Polinémica hie\n001 Estructuras:\nPufDescripcin | nici! | % Salto [Agrupamiento |\n> pag ACERO DE CONSTRUCCION LISO (2.063 0.000.\n\n03 ACERO DE CONSTRUCCION CORRUGADO 16.134 18.197 +02\n\n05 AGREGADO GRUESO 8.669 8.669\n\n21 + |CEMENTO PORTLAND TIPO | 20.205 20.205\n\n37 ~HERRAMIENTA MANUAL 1.489 0.000:\n\n39 ~~ INDICE GENERAL DE PRECIOS AL CONSUMIDOR 22.066 22.066\n\n43° MADERA NACIONAL PARA ENCOFRADO…"
+  - n: 7
+    id: "presupuestos.elaborar-formula-polinomica#7"
+    accion: "Para deshacer un agrupamiento, haga clic derecho sobre el índice unificado y, en la ventana que muestre, marque con una selección el índice unificado a deshacer."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s064]
+    pagina: null
+    fotos:
+      - id: "51910cb3d902"
+        ruta_o_url: "imagenes/manual-de-presupuestos/5c5bd13de7d3.png"
+        pagina: null
+        caption: "Para deshacer un agrupamiento haga clic derecho sobre el índice unificado (a deshacer) y el sistema muestra el menú,"
+        ocr: "7 7 Tomar valor\nElija esta opcidn\nAcumular"
+  - n: 8
+    id: "presupuestos.elaborar-formula-polinomica#8"
+    accion: "Elija la pestaña de **conformación de monomios**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s066]
+    pagina: null
+    fotos:
+      - id: "44ffa72ac37c"
+        ruta_o_url: "imagenes/manual-de-presupuestos/ff0c5575f7c0.png"
+        pagina: null
+        caption: "Acceso a conformación de monomios"
+        ocr: "6+ +Eeee Fe————_\nFormula Polinémica ty\n001 Estructuras |}\nWonomo] Fad rr\nr?) jDesea cdnformar los Monomios?\n“ Agrupamiento preliminar Conformacién de monomios t—] Ela esta pestafa |"
+  - n: 9
+    id: "presupuestos.elaborar-formula-polinomica#9"
+    accion: "Use el botón que toma los datos del agrupamiento preliminar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s066]
+    pagina: null
+    fotos:
+      - id: "f3bcce1dd8fa"
+        ruta_o_url: "imagenes/manual-de-presupuestos/9db9399b5963.png"
+        pagina: null
+        caption: "El botón tome los datos del agrupamiento preliminar."
+        ocr: "Férmula Polinémica tk\n001 Estructuras\nMonomio[ Factor | % || | |\na 0.029| 100.000) M1 48 | MAQUINARIAY EQUIPO NACIONAL\n2 ee 43 MADERA NACIONAL PARA ENCOFRADO Y CARPINTERIA\n0.087) 100.000/A 05 AGREGADO GRUESO\n0.182) 100.000, A 03 | ACERO DE CONSTRUCCION CORRUGADO\n0.202) 100.000 Cc 21 CPMPRIRG PORTLAND TIPO |\n0.221) 100.0011 39 INDICE GENERAL DE PRECIOS AL CONSUMDOR\nem 1 0.249) 100.000 M 47 | MANO D…"
+  - n: 10
+    id: "presupuestos.elaborar-formula-polinomica#10"
+    accion: "Numere los monomios: si el factor de la mano de obra pasa de 0.05, regístrele el número 1; si un factor no llega a 0.05, agrúpelo registrando el mismo número de monomio (hasta 3 índices unificados, que pasan a ser submonomios); a los demás regístreles un número correlativo, hasta 8 monomios."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s066]
+    pagina: null
+  - n: 11
+    id: "presupuestos.elaborar-formula-polinomica#11"
+    accion: "Use el botón que verifica la fórmula polinómica según la configuración registrada."
+    resultado: "El sistema muestra el mensaje «La formula polinomica esta correcta»."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s067, img-66137362e1e3-0000]
+    pagina: null
+    fotos:
+      - id: "ac006900b505"
+        ruta_o_url: "imagenes/manual-de-presupuestos/66137362e1e3.png"
+        pagina: null
+        ocr: "ome\nCi} La formula polinomica esta correcta"
+  - n: 12
+    id: "presupuestos.elaborar-formula-polinomica#12"
+    accion: "Cambie los símbolos de los monomios."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s068]
+    pagina: null
+    fotos:
+      - id: "1af78f984838"
+        ruta_o_url: "imagenes/manual-de-presupuestos/592baf546c6b.png"
+        pagina: null
+        caption: "Cambie los símbolos, no es permitido usar el mismo símbolo en dos monomios."
+        ocr: "Férmula Polinémica Ty\nwo ea [Rewer]\n— a\nMonomio] Factor | % [|Simbolo[] wv _|\n1 0.249) 100.000 fi 47 ~=MANO DE OBRA\n2 0.059) 49.153) 48 MAQUINARIA Y EQUIPO NACIONAL\n2 0.059) 50.847 MM 43° MADERA NACIONAL PARA ENCOFRADO Y CARPINTERIA\n3 0.087) 100.000 A 0S _AGREGADO GRUESO\n4 0.182) 100.000/A 03 (ACERO DE CONSTRUCCION CORRUGAL~\n5 0.202) 100.000 |C 21 + =| CEMENTO PORTLAND TIPO |\n6 0.221 | 100.000 |!…"
+  - n: 13
+    id: "presupuestos.elaborar-formula-polinomica#13"
+    accion: "Use el botón para visualizar en pantalla el reporte de la fórmula polinómica."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s068]
+    pagina: null
+    fotos:
+      - id: "704846b2db36"
+        ruta_o_url: "imagenes/manual-de-presupuestos/663506138303.png"
+        pagina: null
+        caption: "Use el botón para visualizar el reporte en pantalla. Reporte de la fórmula polinómica:"
+verificacion:
+  - texto: "El sistema muestra el mensaje «La formula polinomica esta correcta» al verificarla."
+    fuente: [img-66137362e1e3-0000]
+  - texto: "La fórmula cumple los requisitos para el Perú: hasta 8 monomios, coeficiente de incidencia mínimo de 5 centésimos por monomio y coeficientes con aproximación al milésimo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s063]
+errores_frecuentes:
+  - sintoma: "El sistema no muestra en forma automática el cuadro de diálogo para elaborar la fórmula polinómica."
+    solucion: "Use el botón correspondiente: se usa sólo en el caso de que el sistema no muestre en forma automática el cuadro de diálogo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s063]
+  - sintoma: "Dos monomios tienen el mismo símbolo."
+    solucion: "Cambie los símbolos: no es permitido usar el mismo símbolo en dos monomios."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s068]
+  - sintoma: "Un monomio no llega al factor mínimo de 0.05."
+    solucion: "Agrúpelo con otros índices unificados registrando el mismo número de monomio (hasta 3 submonomios) hasta que la suma llegue o pase de 0.05."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s066]
+relacionados: [presupuestos.disenar-pie-de-presupuesto, presupuestos.calcular-gastos-generales, presupuestos.procesar-presupuesto]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s063, manual: "Manual de Presupuestos", seccion: "3.10.1 Requisitos para el Perú", pagina: null}
+  - {id: img-3312aefbe4ff-0000, manual: "Manual de Presupuestos", seccion: "3312aefbe4ff.png", pagina: null}
+  - {id: img-9a26d67064c5-0000, manual: "Manual de Presupuestos", seccion: "9a26d67064c5.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s064, manual: "Manual de Presupuestos", seccion: "3.10.2 Agrupamiento preliminar", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s066, manual: "Manual de Presupuestos", seccion: "3.10.4 Conformación de monomios", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s067, manual: "Manual de Presupuestos", seccion: "3.10.5 Verificación de la fórmula polinómica", pagina: null}
+  - {id: img-66137362e1e3-0000, manual: "Manual de Presupuestos", seccion: "66137362e1e3.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s068, manual: "Manual de Presupuestos", seccion: "3.10.6 Reemplazo de símbolos", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

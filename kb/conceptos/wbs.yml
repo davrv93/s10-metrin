@@ -1,0 +1,11 @@
+id: wbs
+termino: "WBS"
+sinonimos: ["EDT", "Estructura de División del Trabajo", "fases", "faseado"]
+definicion: "Al conjunto de fases se le llama WBS: es la segmentación del proyecto en los lugares de trabajo, un listado que agrupa las actividades según el orden constructivo y que no genera dependencia. También se le conoce como faseado o Estructura de División del Trabajo (EDT)."
+en_s10: "Se registra en el escenario de Actividades, donde a cada fase se le asignan partidas del presupuesto con sus metrados. En la rama Venta la asignación es automática y conserva la estructura del presupuesto; para la rama Meta se recomienda el registro manual de las fases."
+procedimientos_relacionados: [gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas]
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s069  # Manual de Gerencia de Proyectos › 2.3 Preparar la información para la Planificación Física 2.3.1 Actividades
+  - web-https-documentacion-s10peru-com-manual-d-s070  # Manual de Gerencia de Proyectos › 2.3.1.1 WBS (1)
+  - web-https-documentacion-s10peru-com-manual-d-s071  # Manual de Gerencia de Proyectos › 2.3.1.1 WBS (2)
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

@@ -1,0 +1,13 @@
+id: cronograma_por_periodos
+termino: "Cronograma por periodos"
+sinonimos: ["cronograma por períodos"]
+definicion: "Escenario donde se programa el proyecto: recibe las fases con sus actividades preparadas en el escenario de Actividades y permite ingresar porcentajes o metrados (no costos) en los periodos a programar."
+en_s10: "Lo comparten los módulos de Presupuestos y Gerencia de proyectos. Se programa en periodos mensuales en la rama Venta y semanales en la rama Meta. En él se registra también la valorización, y de él se toma el monto de la valorización mensual; su Plan de utilización de recursos alimenta los pedidos automáticos para comprar."
+procedimientos_relacionados: [gerencia-proyectos.planificar-en-cronograma-por-periodos, gerencia-proyectos.definir-periodos]
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s150  # Manual de Presupuestos › 6.6 Actividades
+  - web-https-documentacion-s10peru-com-manual-d-s083  # Manual de Gerencia de Proyectos › 2.6.1 Planificación manual en el escenario del Cronograma por Períodos (1)
+  - web-https-documentacion-s10peru-com-manual-d-s141  # Manual de Presupuestos › 6.3 Planificación desde los módulos de Presupuestos y Gerencia de proyectos S10ERP.
+  - web-https-documentacion-s10peru-com-manual-d-s250  # Manual de Gerencia de Proyectos › 7.4.11.1 Registro de Porcentaje del plan completado o valorización
+  - web-https-documentacion-s10peru-com-manual-d-s118  # Manual de Almacenes › 3.19.3 Pedidos automáticos para comprar (1)
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

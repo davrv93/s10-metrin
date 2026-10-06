@@ -1,0 +1,92 @@
+id: tareo-movil.sincronizar-y-cerrar-el-tareo
+version: 1
+modulo: tareo-movil
+titulo: "Sincronizar el tareo del móvil con el S10 y cerrar el parte"
+objetivo: "Obtener en el dispositivo móvil los partes de tareo del S10 ERP, enviar lo registrado en el móvil y dar por terminada la edición del parte."
+nivel: intermedio
+preguntas:
+  - "cómo sincronizo el tareo movil"
+  - "como paso el tareo del celular al s10"
+  - "el tareo del movil no se actualiza en el s10"
+  - "como cierro el parte de tareo movil"
+  - "actualizar desde el movil tareo"
+  - "como sincronizar tareo s10 sin internet"
+  - "como selecciono el parte en la app tareo movil"
+aliases:
+  - "sincronizar tareo"
+  - "actualizar desde el móvil"
+  - "cerrar parte de tareo"
+entidades:
+  modulo: "Tareo Móvil"
+  pantallas: ["Sincronizar", "Actualizar desde el Móvil"]
+  objetos: ["partes de tareo", "trabajadores", "proyectos", "dispositivo móvil"]
+prerrequisitos:
+  - texto: "El parte debe estar publicado para el usuario del móvil."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s012]
+  - texto: "La sincronización necesita conexión a Internet."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s009]
+pasos:
+  - n: 1
+    id: "tareo-movil.sincronizar-y-cerrar-el-tareo#1"
+    accion: "En el dispositivo móvil, use la opción **Sincronizar** para obtener la información de tareo desde la base de datos del S10 ERP."
+    resultado: "La primera vez se guardan en el móvil los trabajadores, conceptos de horas, proyectos, actividades o partidas de control, frentes y destinos específicos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s011]
+    pagina: null
+    fotos:
+      - id: "8dc77c1c033e"
+        ruta_o_url: "imagenes/manual-de-tareo-movil/2ee35bc5f5cb.png"
+        pagina: null
+        caption: "Enviar información registrada en el dispositivo móvil hacia la base de datos del S10 ERP."
+        ocr: "Sincronizar"
+  - n: 2
+    id: "tareo-movil.sincronizar-y-cerrar-el-tareo#2"
+    accion: "Del listado de partes publicados para el usuario, seleccione el parte a editar con su icono."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s012]
+    pagina: null
+    fotos:
+      - id: "0fb83be098d9"
+        ruta_o_url: "imagenes/manual-de-tareo-movil/8ec441d10a7a.png"
+        pagina: null
+        caption: "Seleccione el parte a editar seleccionando el icono"
+  - n: 3
+    id: "tareo-movil.sincronizar-y-cerrar-el-tareo#3"
+    accion: "Registre el tareo en el dispositivo móvil y vuelva a usar **Sincronizar** para enviar la información registrada hacia la base de datos del S10 ERP."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s009, web-https-documentacion-s10peru-com-manual-d-s011]
+    pagina: null
+  - n: 4
+    id: "tareo-movil.sincronizar-y-cerrar-el-tareo#4"
+    accion: "Si la publicación es en la nube, en el S10 ejecute la opción **Actualizar desde el Móvil** seleccionando el parte; si es local, la información se actualiza directamente en la base de datos del S10 ERP."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s009]
+    pagina: null
+    fotos:
+      - id: "0ac06bf765cc"
+        ruta_o_url: "imagenes/manual-de-tareo-movil/cfbbdae6cd80.png"
+        pagina: null
+        caption: "Para el tipo de publicación en la nube es necesario ejecutar la opción Actualizar desde el Móvil seleccionando el parte."
+        ocr: "Proyecto 00013001 WDS - HOMINAS MULTIPROYECTO - OBREROS\nTipo de Némina 003 Construccién Civil sin Beneficios sociales\nSemana Semana 2017 - 21 (Del 15/05/2017 Al 21/05/2017)\nBEMARSS -Eh ade\n11 — Campo[neParte = |fencualquierposicion *]\nN° Parte Cédigo Socio Negoc| Nombre Proyecto Destino Grupo de Tra\noo0000060 22002295 RAMIREZ Nunex_Manuel Edmund\nAdicionar »\nModificar\nEliminar\nPublicar para Tareo M…"
+  - n: 5
+    id: "tareo-movil.sincronizar-y-cerrar-el-tareo#5"
+    accion: "Cuando termine de registrar la información desde el móvil, dé por terminada la edición del parte cambiando el estado de cada línea a **Concluído**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s010]
+    pagina: null
+    fotos:
+      - id: "1cf3498221f0"
+        ruta_o_url: "imagenes/manual-de-tareo-movil/b004366b1235.png"
+        pagina: null
+        caption: "Una vez que se haya terminado de registrar la información desde el dispositivo móvil, es necesario que se dé por terminado la edición del parte, para ello debe cambiar el estado en cada línea, a Concluído ."
+        ocr: "ij Publicar Tareo Movil Bee\nProyecto (00013001 WDS - NOMINAS MULTIPROYECTO - OBREROS:\nTipo de Némina 003 Construccién Civil sin Beneficios sociales\na | Publicador\nSY RRS Shiaue\nEMail [Nombre [Rol Tareador[Pubicado por [Fecha publicacién [Estado |\n‘mramirez@s1Operu.com RAMIREZ Nufiez, Manuel Edmund: Tareador ‘do 05/09/2018 04:00:46 a.m. Publicado\nNeortez@s10peru.com ‘CORTEZ GONGORA, NELSON Invitado…"
+verificacion:
+  - texto: "En la opción Resumen se visualiza el consolidado del tareo de la semana: la lista de trabajadores y el resumen de horas de tareo por cada día."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s013]
+errores_frecuentes:
+  - sintoma: "La información registrada en el dispositivo móvil no se actualiza en el S10 ERP."
+    solucion: "Sincronice con conexión a Internet; si la publicación es en la nube, ejecute además Actualizar desde el Móvil seleccionando el parte."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s009]
+relacionados: [tareo-movil.publicar-parte-de-tareo]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s012, manual: "Manual de Tareo Móvil", seccion: "2.2 Selección del Proyecto", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s009, manual: "Manual de Tareo Móvil", seccion: "1.3.2 Edición de Tareo", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s011, manual: "Manual de Tareo Móvil", seccion: "2.1 Sincronizar el Tareo", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s010, manual: "Manual de Tareo Móvil", seccion: "1.3.3 Cierre del Tareo", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s013, manual: "Manual de Tareo Móvil", seccion: "2.4 Resumen", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

@@ -1,0 +1,121 @@
+id: compras.aprobar-orden-de-compra
+version: 1
+modulo: compras
+titulo: "Enviar a aprobación y aprobar una orden de compra"
+objetivo: "Enviar a aprobación la orden de compra generada y aprobarla en el escenario de Orden de Compra: solo las órdenes de compra aprobadas pasan al módulo de Almacenes para hacer un Ingreso por Orden de Compra."
+nivel: basico
+preguntas:
+  - "cómo apruebo una orden de compra en s10"
+  - "dónde se aprueban las órdenes de compra"
+  - "cómo envío la orden de compra a aprobación"
+  - "la orden de compra no aparece en almacén, falta aprobarla?"
+  - "como apruevo una orden de conpra"
+  - "por qué no puedo aprobar la orden de compra"
+  - "quién envía a aprobación la orden de compra"
+  - "cómo veo las órdenes de compra por aprobar y su valor total"
+aliases:
+  - "aprobar orden de compra"
+  - "enviar orden de compra a aprobación"
+  - "aprobación de OC"
+  - "visto bueno de la orden de compra"
+entidades:
+  modulo: "Compras"
+  pantallas: ["Orden de Compra", "Ordenes de Compra"]
+  objetos: ["orden de compra", "aprobador", "proveedor", "estado", "valor total"]
+prerrequisitos:
+  - texto: "Debe existir una orden de compra generada, desde un pedido de compra o desde una cotización."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s048]
+  - texto: "Los aprobadores de las órdenes de compra deben estar registrados, con los montos mínimos y máximos que aprueban."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s021]
+pasos:
+  - n: 1
+    id: "compras.aprobar-orden-de-compra#1"
+    accion: "Si usted generó la orden de compra y está en estado registrado, haga clic derecho sobre ella y elija **Enviar para aprobacion**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050, img-2cc6ba2e3082-0000]
+    pagina: null
+    fotos:
+      - id: "e8427c896faa"
+        ruta_o_url: "imagenes/manual-de-compras/2cc6ba2e3082.png"
+        pagina: null
+        ocr: "Ordenes de Compra\nSAR vs Vega\nClic derecho\n4/4 Campo |Proyecfo | /En cualquier posicién +\nProyecto Nro. Orden de Compra |Proveedor Registrador\n= Por Aprobar:\nPUENTE EN CARRETER: 0001 Libreria Venus pmartinez\n= Registrado\nPUENTE EN CARRETERA] 0002 FERRETERIALAABEJA — pmartinez\nA Adicionar desde Pedidos\nLD Adicionar desde Cotizacion\no Enviar para aprobacion"
+  - n: 2
+    id: "compras.aprobar-orden-de-compra#2"
+    accion: "Como encargado de aprobar las órdenes de compra, ingrese al sistema."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050]
+    pagina: null
+    fotos:
+      - id: "885c7199d257"
+        ruta_o_url: "imagenes/manual-de-compras/f0d474c81c03.png"
+        pagina: null
+        caption: "El encargado de aprobar las órdenes de compra debe ingresar al sistema."
+        ocr: "ee.\nSistema 10: a =. ||\nkeris @\n:\nl"
+  - n: 3
+    id: "compras.aprobar-orden-de-compra#3"
+    accion: "Ingrese al escenario de **Orden de Compra** y elija el proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050]
+    pagina: null
+    fotos:
+      - id: "9b48c0803abf"
+        ruta_o_url: "imagenes/manual-de-compras/ae52238c73c3.png"
+        pagina: null
+        caption: "Ingresar al escenario de Orden de Compra y el proyecto."
+        ocr: "7] Elia |,\nag} Escyftorio\nfa Pedro\nOrdenes de ee 201 JENTE EN CARRETERA\n‘Compra Luego,"
+  - n: 4
+    id: "compras.aprobar-orden-de-compra#4"
+    accion: "Para ver el estado y el valor total de las órdenes de compra, arrastre el encabezado **Estado** al cuadro de agrupar y luego el encabezado **Valor Total**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050, img-85c3851ae7e1-0000]
+    pagina: null
+    fotos:
+      - id: "55a50e1fb4a8"
+        ruta_o_url: "imagenes/manual-de-compras/85c3851ae7e1.png"
+        pagina: null
+        ocr: "Ordenes de Compre Luego arrastre el encabezado VALOR TOTAL\n7\nArrastre hacia aqui el ys festado ny ee |__ Valor Total]\n»\nNro. Orden de Compra _|Estado Valor Total ¢ueneecdor\nPUENTE EN CARRETERA 0001 Por Aprobar 310.38 Libreria Venus\nPUENTE EN CARRETERA oo02 Registrado 144,204.20 FERRETERIALA ABEJA,\nArrastre el encabezado ESTADO."
+  - n: 5
+    id: "compras.aprobar-orden-de-compra#5"
+    accion: "Haga clic derecho sobre la orden de compra a ser aprobada y elija **Aprobar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050]
+    pagina: null
+    fotos:
+      - id: "e6611dfc4a42"
+        ruta_o_url: "imagenes/manual-de-compras/faf018e5e88b.png"
+        pagina: null
+        caption: "Elija la Orden de Compra a ser aprobada"
+        ocr: "E)Y A || 8 af id\n=) Por Aprobar:\nPUENTEEN CARRETERA fii] 310.38 Libreria Venus:\nPUENTE EN CARRETE| A ‘Adicionar flesde Pedidos 20 FERRETERIALAABEJA,\n(2 Adicionarflesce Cotizacion\n& Modificar\n2% Eliminar\nAnular\nQuitar Anglado\nVf Aprobar"
+  - n: 6
+    id: "compras.aprobar-orden-de-compra#6"
+    accion: "Otra forma es hacer clic derecho sobre el nombre del proveedor y, del menú que muestre, elegir la opción **APROBAR**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050]
+    pagina: null
+    fotos:
+      - id: "92c28090b6bd"
+        ruta_o_url: "imagenes/manual-de-compras/54128cf5f3c7.png"
+        pagina: null
+        caption: "Otra forma es usar clic derecho sobre el nombre del Proveedor y del menú que muestre elija la opción APROBAR."
+        ocr: "Usuario [Nombre del Usuario \\Obligatorio | Correo electrénico vB [Fecha V°B\" |\navalencia Valencia Taco, Alberto ‘avalencia@hatmall.com 1406/2010 08:51\n\n_z_<__*_§_£**__—_—E—_—__ EE EE\nRecurso CUADERNO CUADRICULADO 200 pag."
+verificacion:
+  - texto: "La orden de compra aprobada pasa al módulo de Almacenes y se visualiza en el escenario de Ingreso, en Ingreso por Orden de Compra."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s051, web-https-documentacion-s10peru-com-manual-d-s050]
+errores_frecuentes:
+  - sintoma: "No puede aprobar la orden de compra."
+    solucion: "El aprobador debe tener atributos y estar en el rango de montos para aprobar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050]
+  - sintoma: "No puede enviar la orden de compra a aprobación."
+    solucion: "Solo la persona que generó la orden de compra la envía a aprobación, y solo cuando se encuentra en estado registrado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050]
+  - sintoma: "Aparece el mensaje «No existe grupo de aprobadores»."
+    solucion: "No se han definido los grupos de aprobadores para el Centro de Compra, o los grupos no están en el rango de la Orden de Compra: vaya a datos generales y registre los grupos de aprobadores."
+    fuente: [img-27049c7738f4-0000, web-https-documentacion-s10peru-com-manual-d-s049]
+  - sintoma: "Necesita modificar o eliminar una orden de compra."
+    solucion: "La orden de compra en estado registrado puede ser modificada o eliminada."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050]
+relacionados: [compras.generar-orden-de-compra-desde-pedido, compras.registrar-aprobadores-de-orden-de-compra]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s048, manual: "Manual de Compras", seccion: "12. Orden de Compra", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s021, manual: "Manual de Compras", seccion: "4.2 Aprobadores de las órdenes de compra y servicio", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s050, manual: "Manual de Compras", seccion: "12.2 Aprobar una Orden de Compra", pagina: null}
+  - {id: img-2cc6ba2e3082-0000, manual: "Manual de Compras", seccion: "2cc6ba2e3082.png", pagina: null}
+  - {id: img-85c3851ae7e1-0000, manual: "Manual de Compras", seccion: "85c3851ae7e1.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s051, manual: "Manual de Compras", seccion: "12.3 Impresión de la Orden de Compra", pagina: null}
+  - {id: img-27049c7738f4-0000, manual: "Manual de Compras", seccion: "27049c7738f4.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s049, manual: "Manual de Compras", seccion: "12.1 Generar la Orden de Compra desde el escenario de Orden de Compra", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

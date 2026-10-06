@@ -5,6 +5,12 @@ S3 de **Garage**— en **un mismo índice vectorial** y responde preguntas en
 español con un **LLM local** (Ollama). Todo en Go: no hay Python en ninguna
 parte.
 
+> **06-10-2026.** Además del flujo V1 que describe este archivo, el servicio trae el **modo traza** y la **V2
+> procedural** (paso → foto, detrás de un interruptor). Diseño y cifras en
+> [`../docs/V2-RAG-PROCEDURAL.md`](../docs/V2-RAG-PROCEDURAL.md); contrato de la traza en
+> [`../docs/CONTRATO-traza-metrin.md`](../docs/CONTRATO-traza-metrin.md); pendientes en
+> [`../PENDIENTES.md`](../PENDIENTES.md). Las variables nuevas van en la sección «Configuración».
+
 ## Arquitectura
 
 ```
@@ -136,6 +142,24 @@ borrado se limita al `--prefix` listado.
 | `RAG_DATOS` | `./datos` | índice, estado y `sin_respuesta.jsonl` |
 | `S3_ENDPOINT` `S3_REGION` `S3_BUCKET` | `http://localhost:4790` `garage` `rag-demo` | |
 | `S3_ACCESS_KEY` `S3_SECRET_KEY` | — | solo en `.env` (gitignored, 600) |
+
+**Modo traza y V2** (`.env.example` y `docker-compose.yml` traen los valores; en el compose la V2 está disponible
+pero V1 sigue por defecto):
+
+| variable | defecto en el código | en el compose | |
+|---|---|---|---|
+| `METRIN_TRAZA` | `0` | `0` | `1` = la petición puede pedir `"traza": true` |
+| `AGENT_VERSION` | `v1` | `v1` | versión por defecto del turno |
+| `AGENT_V2_ENABLED` | `false` | `true` | V2 disponible por petición (`"version":"v2"`) y por el selector de la página |
+| `AGENT_V2_PERCENTAGE` | `0` | `0` | porcentaje de conversaciones en V2 (A/B por hash) |
+| `MAX_AGENT_STEPS` … `MAX_REGENERATIONS` | 5 · 4 · 2 · 5 · 1 · 1 | igual | límites de la recursividad |
+| `DECISION_ENGINE` | `reglas` | `reglas` | `reglas` \| `local` \| `remota` \| `simulada` |
+| `V2_TIPO_MODELO` / `V2_TIPO_UMBRAL` / `V2_TIPO_MARGEN` | — / `0.40` / `0.08` | igual | tipo de respuesta (umbrales provisionales) |
+| `V2_BUSQUEDA` | `hibrida` | `hibrida` | `hibrida` \| `lexica` |
+| `RERANK_URL` | vacío (sin reranker) | `http://reranker:8080` | servicio `reranker` del compose (`descargar-reranker.sh` baja el modelo) |
+| `RERANK_TOP_N` / `RERANK_MAX_RUNAS` / `RERANK_TIMEOUT_MS` | 20 / 800 / 3000 | igual | |
+| `V2_RERANK_CLASES` | `fragmento,procedimiento,concepto` | igual | qué elige el reranker |
+| `GENERATION_ENGINE` / `GENERATION_MODEL` | vacío = plantillas | vacío | el LLM local solo reformula; por defecto no se usa |
 
 El umbral 0.80 es para los embeddings estáticos: con ellos, las preguntas
 sobre los documentos quedan en 0.55–0.75 y las ajenas (capital de Mongolia,

@@ -1,0 +1,15 @@
+id: hoja_del_presupuesto
+termino: "Hoja del presupuesto"
+sinonimos: []
+definicion: "Es el escenario donde se registra el contenido del presupuesto, como los títulos y las partidas; ahí se ingresan los metrados y se procesa el presupuesto."
+en_s10: "Escenario del módulo de Presupuestos al que se pasa después de registrar el presupuesto en el escenario de Datos generales. Puede dividirse para mostrar en la ventana inferior los análisis de precios unitarios de la partida elegida. Hay 4 formas de llenarla: copiar partidas de presupuestos elaborados, usar favoritos, importar un presupuesto elaborado en Excel o registrarlo en la forma tradicional."
+procedimientos_relacionados: [presupuestos.registrar-titulos-y-partidas, presupuestos.ingresar-metrados, presupuestos.usar-favoritos]
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s037  # Manual de Presupuestos › 3.5 Registro de información en la hoja del presupuesto
+  - web-https-documentacion-s10peru-com-manual-d-s086  # Manual de Presupuestos › 5.1.1.1 Hoja del presupuesto (1)
+  - web-https-documentacion-s10peru-com-manual-d-s039  # Manual de Presupuestos › 3.5.2 Formas de registro de información en la hoja del presupuesto
+  - web-https-documentacion-s10peru-com-manual-d-s040  # Manual de Presupuestos › 3.5.2.1 Caso 1) Copiar partidas de presupuestos elaborados
+  - web-https-documentacion-s10peru-com-manual-d-s041  # Manual de Presupuestos › 3.5.2.2 Caso 2) Uso de favoritos
+  - web-https-documentacion-s10peru-com-manual-d-s042  # Manual de Presupuestos › 3.5.2.3 Caso 3) Importar al S10 presupuestos elaborados en hoja Excel (1)
+  - web-https-documentacion-s10peru-com-manual-d-s044  # Manual de Presupuestos › 3.5.2.4 Caso 4) Registro del presupuesto de la forma tradicional
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

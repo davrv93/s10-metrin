@@ -1,0 +1,111 @@
+id: facturacion.registrar-nota-de-credito
+version: 1
+modulo: facturacion
+titulo: "Registrar una nota de crédito (o de débito) de una factura"
+objetivo: "Crear en Documentos por Cobrar una nota de crédito relacionada con una factura del mismo cliente, trayendo sus recursos; la nota de débito sigue el mismo procedimiento."
+nivel: intermedio
+preguntas:
+  - "cómo hago una nota de crédito en facturación"
+  - "como registro una nota de credito de una factura"
+  - "cómo relaciono la nota de crédito con la factura del cliente"
+  - "quiero corregir el precio de una factura con nota de crédito"
+  - "como se hace una nota de debito en s10"
+  - "como creo una nota de credito en el s10 facturacion"
+  - "nota de credito por error en el precio como la registro"
+  - "pasos para registrar nota de crédito"
+aliases:
+  - "nota de crédito"
+  - "registrar nota de crédito"
+  - "nota de débito"
+  - "crear nota de crédito"
+entidades:
+  modulo: "Facturación"
+  pantallas: ["Documentos por Cobrar", "Registro de Ventas"]
+  objetos: ["nota de crédito", "nota de débito", "factura", "cliente", "socio de negocio", "recursos"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "facturacion.registrar-nota-de-credito#1"
+    accion: "En el escenario **Documentos por Cobrar**, elija el documento de notas de crédito (por ejemplo, 007 NOTAS DE CREDITO); para una nota de débito el procedimiento es el mismo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s031, img-36286b2f9ef2-0000, img-71453ac55d3c-0000, web-https-documentacion-s10peru-com-manual-d-s032]
+    pagina: null
+    fotos:
+      - id: "7b822b4e7b7d"
+        ruta_o_url: "imagenes/manual-de-facturacion/36286b2f9ef2.png"
+        pagina: null
+        ocr: "‘Sucursales,\n[Lia tem Ee-pemmal| Documentos por Cobrar\nA nc |roren Pore [SSTEIATOSA =] 4] Documenta] 141 anecanro oe rewunenacones [7] ~ | i\nww Bp eandeie = 001 FACTURAS, [2]\naol fade Notas be OEBTO\neS Auraste hace nil encabezado del cokama que desea agp. 009 GUAS DE ReWISON o GUAS DE DESPA\nots bocuuetro wreRNo\n: 5 ost a63 NOTA CONTABLE\nip aa rence @\n5 i Corretatvo [Grupo de Proyecto [Proyecto | _…"
+  - n: 2
+    id: "facturacion.registrar-nota-de-credito#2"
+    accion: "Haga clic derecho y elija **Adicionar**."
+    resultado: "Aparece el recuadro de la nota de crédito."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s031]
+    pagina: null
+    fotos:
+      - id: "affcac6a197d"
+        ruta_o_url: "imagenes/manual-de-facturacion/1290906c559f.png"
+        pagina: null
+        caption: "Damos click derecho Adicionar y nos aparecerá el siguiente recuadro:"
+        ocr: "49) 007 NOTAS DE CREDITO _ ley lei eis\na4\n161 [SISTEMA 10 S.A. ond ae\nemite [2200461 4 14] 900000003 N° { c00000000001)\nSe) | EES) | ESE NES Elegimos al mismo cliente con] | RUC 20255390289\n|| Cliente [22002091 [TAY MAGALLANES, LITAANA el cual hicimos la factura del\n||Feen2 [1810872013 ] recne vencinento[19/082013 punto 4.3\nPen\n2 Spm eo Teocantiomeomsd FL] C=\n| Horees Jor [NUEVOS SOLES] A] Forma d…"
+  - n: 3
+    id: "facturacion.registrar-nota-de-credito#3"
+    accion: "En **Cliente**, elija al mismo cliente con el cual hizo la factura."
+    fuente: [img-1290906c559f-0000, web-https-documentacion-s10peru-com-manual-d-s031]
+    pagina: null
+  - n: 4
+    id: "facturacion.registrar-nota-de-credito#4"
+    accion: "En la nota de crédito, haga clic derecho para traer las facturas del socio de negocio."
+    resultado: "Aparecen las facturas que tenga el socio de negocio."
+    fuente: [img-1290906c559f-0000, web-https-documentacion-s10peru-com-manual-d-s031]
+    pagina: null
+  - n: 5
+    id: "facturacion.registrar-nota-de-credito#5"
+    accion: "En **Registro de Ventas**, haga doble clic sobre la factura."
+    fuente: [img-12e37ae1a80c-0000, web-https-documentacion-s10peru-com-manual-d-s031]
+    pagina: null
+    fotos:
+      - id: "ea9fd34bcbf7"
+        ruta_o_url: "imagenes/manual-de-facturacion/12e37ae1a80c.png"
+        pagina: null
+        ocr: "Ven Bite bee l= he\nBy Registro de Ventas (ut2s)) [ecules\nteresa [oro BSTEIATOSA =] oneness) | 88\nLrg’ «5 eae\nArrastre hacia aqui el encabezado de la columna que desea agrupar.\n4/1. Campo|Socio de Negocio | len cualquier postin [=] (][22] crupo:\n19/8201” 201308 Agosto 2010 Doble click POOOIOT TAY NAGALLANES LTRANA\n4 (eee ssiasinasiad D\n(bette Docent | Senaann ess [mis Crei [ srchee Conor de Cn\nbv G…"
+  - n: 6
+    id: "facturacion.registrar-nota-de-credito#6"
+    accion: "Acepte el mensaje «¿Desea adicionar los recursos de la(s) factura(s)?» para traer los recursos de la factura."
+    fuente: [img-71453ac55d3c-0000, web-https-documentacion-s10peru-com-manual-d-s031]
+    pagina: null
+    fotos:
+      - id: "d37bae2fc8bc"
+        ruta_o_url: "imagenes/manual-de-facturacion/71453ac55d3c.png"
+        pagina: null
+        ocr: "[| 49 007 NoTAS DE CREDITO o) |o|e| 8\nVlemte [22004161 [sisTeMA10 SA a] d%i)  Correlativo N° [_ 900000000007]\njj | Sucursal |22004161 |SISTEMA10 S.A. -\n| A RUC 20255390289\n| cliente [22002091 [TAY MAGALLANES, LITAANA =] 44)\n[| period de\n]| anicacién [3170872013 | ~[[201308 ] agosto 2019 Tipo cambio no oficial [1] [__%4\n{| Moneda [oi [NUEVOS SOLES ==] | Forma de pago [09 [Contado ~~] #4]\nBemconace…"
+  - n: 7
+    id: "facturacion.registrar-nota-de-credito#7"
+    accion: "Registre el concepto u observación de la nota (por ejemplo, «Por error en el precio»)."
+    fuente: [img-ce7431c83c6b-0000, web-https-documentacion-s10peru-com-manual-d-s031]
+    pagina: null
+  - n: 8
+    id: "facturacion.registrar-nota-de-credito#8"
+    accion: "Modifique el precio del recurso."
+    fuente: [img-ce7431c83c6b-0000, web-https-documentacion-s10peru-com-manual-d-s031]
+    pagina: null
+    fotos:
+      - id: "c9dacc49a253"
+        ruta_o_url: "imagenes/manual-de-facturacion/ce7431c83c6b.png"
+        pagina: null
+        ocr: "$9) 007 NOTAS DE CREDITO ca) a os\nljemee 122004161 |SISTEMA 10 S.A. ~ i saroenatne N° [900000000001]\nSucursal |22004161 |SISTEMA 10 S.A. oe | Oh\n: RUC 20255390289\nCliente [22002091 [TAY MAGALLANES, LITAANA =| é4|\naay\naplicacién |31/08/2013 er Tipo cambio no oficial roL_ 4 [___ oo\n| Hones Jor Juuevos SOLES ——_..] | Forma de pago [09 [Contado | da \\\nRecents [Facure [esa\ncon\n© Sin asignar @ Proyecto…"
+  - n: 9
+    id: "facturacion.registrar-nota-de-credito#9"
+    accion: "Haga clic en **Aceptar**."
+    fuente: [img-71453ac55d3c-0000]
+    pagina: null
+verificacion: []
+errores_frecuentes: []
+relacionados: [facturacion.registrar-cliente]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s031, manual: "Manual de Facturación", seccion: "5.5.1 Nota de Crédito", pagina: null}
+  - {id: img-36286b2f9ef2-0000, manual: "Manual de Facturación", seccion: "36286b2f9ef2.png", pagina: null}
+  - {id: img-71453ac55d3c-0000, manual: "Manual de Facturación", seccion: "71453ac55d3c.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s032, manual: "Manual de Facturación", seccion: "5.5.2 Nota de Débito", pagina: null}
+  - {id: img-1290906c559f-0000, manual: "Manual de Facturación", seccion: "1290906c559f.png", pagina: null}
+  - {id: img-12e37ae1a80c-0000, manual: "Manual de Facturación", seccion: "12e37ae1a80c.png", pagina: null}
+  - {id: img-ce7431c83c6b-0000, manual: "Manual de Facturación", seccion: "ce7431c83c6b.png", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

@@ -1,0 +1,15 @@
+id: adelanto
+termino: "Adelanto en efectivo"
+sinonimos: ["adelanto", "adelantos"]
+definicion: "Adelanto de dinero en contratos y subcontratos. Según el manual, generalmente es un porcentaje del contrato, referido a la suma del costo directo, los gastos generales y la utilidad."
+en_s10: "Si el porcentaje de adelanto se registra en la cabecera del contrato o subcontrato, la amortización en cada valorización es automática; si se entrega con garantía, el monto de la garantía es el tope del adelanto. En ese caso el pago del adelanto debe registrarse antes de la primera valorización, porque no existe opción para amortizarlo manualmente. Cuando se registra como pago a cuenta, la amortización es manual en cada valorización; así se registra, por ejemplo, el adelanto para materiales (en el Perú, el 20 % del costo del material)."
+procedimientos_relacionados: [gerencia-proyectos.registrar-subcontrato]
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s241  # Manual de Gerencia de Proyectos › 7.4.9.1 Adelantos en efectivo
+  - web-https-documentacion-s10peru-com-manual-d-s228  # Manual de Gerencia de Proyectos › 7.2.1 Estructura del diseño del resumen (1)
+  - web-https-documentacion-s10peru-com-manual-d-s246  # Manual de Gerencia de Proyectos › 7.4.10 Adelanto en efectivo con garantía
+  - web-https-documentacion-s10peru-com-manual-d-s156  # Manual de Gerencia de Proyectos › 4.6.8 Adelanto en efectivo con garantía
+  - web-https-documentacion-s10peru-com-manual-d-s161  # Manual de Gerencia de Proyectos › 4.6.10.2 Amortización de adelantos
+  - web-https-documentacion-s10peru-com-manual-d-s248  # Manual de Gerencia de Proyectos › 7.4.10.2 Registro del adelanto para materiales como pago a cuenta
+notas: "Para el anticipo que factura un proveedor sobre una orden de compra, ver «anticipo»."
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

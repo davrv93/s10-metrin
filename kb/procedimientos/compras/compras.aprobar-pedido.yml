@@ -1,0 +1,114 @@
+id: compras.aprobar-pedido
+version: 1
+modulo: compras
+titulo: "Aprobar un pedido de compra"
+objetivo: "Aprobar en el escenario de Aprobación de Pedidos los pedidos A Compra, total o parcialmente, para que pasen al proceso de compra y el sistema genere el pedido de compra."
+nivel: basico
+preguntas:
+  - "cómo apruebo un pedido en s10 compras"
+  - "dónde se aprueban los pedidos"
+  - "tengo pedidos por aprobar, cómo los apruebo"
+  - "como apruebo solo un recurso del pedido"
+  - "como apruevo un pedido de conpra"
+  - "qué pasa si observo un pedido"
+  - "dónde veo el pedido de compra generado después de aprobar"
+  - "el residente tiene que aprobar el pedido, cómo lo hace"
+aliases:
+  - "aprobar pedido"
+  - "aprobación de pedidos"
+  - "observar pedido"
+  - "aprobar pedido de compra"
+entidades:
+  modulo: "Compras"
+  pantallas: ["Aprobación de Pedidos", "Documentos generados a partir del pedido"]
+  objetos: ["pedido", "pedido de compra", "recurso", "aprobador"]
+prerrequisitos:
+  - texto: "El usuario encargado de aprobar el pedido debe estar registrado y tener atributos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s037]
+  - texto: "Para cada proyecto asignado al Centro de Compra, los usuarios que aprobarán los pedidos deben estar registrados con sus permisos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s022]
+pasos:
+  - n: 1
+    id: "compras.aprobar-pedido#1"
+    accion: "Ingrese al módulo de Compras y Pedidos como el usuario que aprueba los pedidos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s037]
+    pagina: null
+    fotos:
+      - id: "9c9bb94f703b"
+        ruta_o_url: "imagenes/manual-de-compras/d34524daea49.png"
+        pagina: null
+        caption: "Ingrese al módulo de Compras y Pedidos como usuario"
+        ocr: "Sistema 10:Comprt a\nrea ©) seuaia ee:\nusuario que ingrese\nUsuario pene tease | a este mmédula debe\ntener permisos y\nie ™ \"\nate [ey Cancelar atributos de uso\n|"
+  - n: 2
+    id: "compras.aprobar-pedido#2"
+    accion: "Ingrese al escenario de **Aprobación** de pedidos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s038]
+    pagina: null
+    fotos:
+      - id: "9a7ef4073d87"
+        ruta_o_url: "imagenes/manual-de-compras/e8bf2a60180a.png"
+        pagina: null
+        caption: "Acceso al escenario de Aprobación de Pedidos"
+        ocr: "Elija ———__ faa]\nProyectos —|\na Escritorio\n0 PUENTE EN CARRETERA\nAprobacién iy De Materiales et\nLuego, De Activos"
+  - n: 3
+    id: "compras.aprobar-pedido#3"
+    accion: "Haga clic derecho sobre el pedido y elija **Aprobar pedido** para aprobar todos los recursos que forman parte del pedido."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s038, img-c438987af945-0000]
+    pagina: null
+    fotos:
+      - id: "c335b4a255c3"
+        ruta_o_url: "imagenes/manual-de-compras/c438987af945.png"
+        pagina: null
+        ocr: "+e\nAprobacion\nAy AM \\ a am\nClic derecho sobre un pedido\n@ P\nNro. Pedica | Tipo Pedido bh [Fecha pedido [Enviado a GQ Observar pedido\n=] Por aprobar —\nam ACompras [DeMaterales [Preore——_—— |W Aprobar pedido\n7 SSSSSSSSSSSS__---_-_--==__\nClic derecho sobre un recurso\nBy ae)\nDescripcién Cantidad Sock por Aimaccn\nEME] CUADERNO CUADRICULADO 200 pag. pza 15.00 Observar recurso\n0230750022 LAPICERO AZUL TI…"
+  - n: 4
+    id: "compras.aprobar-pedido#4"
+    accion: "Confirme que desea aprobar todo el pedido."
+    resultado: "El pedido queda aprobado."
+    fuente: [img-3a29f447c7cf-0000, web-https-documentacion-s10peru-com-manual-d-s038]
+    pagina: null
+    fotos:
+      - id: "1263dc1a2ae4"
+        ruta_o_url: "imagenes/manual-de-compras/3a29f447c7cf.png"
+        pagina: null
+        ocr: "Aprobacion\nAv AR» daa\nEste es el pedido aprobado\nNro.Pedida |Tigo Pedido|Fecha pedido | |almacén |\nfT x\nSistema 10 - Compras EI\naoot ACompras 21/04/2010 De Materiales\ne ¢ Desea aprobar todo el pedido 00001 ? =) Por aprobar\n002 ACompras 21/04/2010 De Materiales\nSi Teco Aceomas | SuTA PCT De Materiales\nLuego, | 9004 ACompras 21/04/2010 De Materiales"
+  - n: 5
+    id: "compras.aprobar-pedido#5"
+    accion: "Si solo quiere aprobar un recurso del pedido, total o parcialmente, haga clic derecho sobre el recurso y use la opción de aprobación del recurso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s038]
+    pagina: null
+  - n: 6
+    id: "compras.aprobar-pedido#6"
+    accion: "Para ver el documento generado, haga clic derecho sobre el pedido aprobado y elija **Ver / Generar Pedidos a Almacen o Compras**."
+    resultado: "Se muestran los documentos generados a partir del pedido: el pedido de compra."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s039, img-7c2cd71c237a-0000, img-a34588f7c0d3-0000]
+    pagina: null
+    fotos:
+      - id: "28e99337bbf9"
+        ruta_o_url: "imagenes/manual-de-compras/7c2cd71c237a.png"
+        pagina: null
+        ocr: "= yw al ‘se Ye led lal ES Observar pedido\nf Aprobar pedido\n[_‘Wo.Peso [TisoPedido [Fecha pesto [Ammecén | | | x Desaprobar pedido\n=| Aprobado:\na ACompras 214010 ‘G Ver / Generar Pedidos a Almacen o Compras"
+      - id: "ad7751290dd0"
+        ruta_o_url: "imagenes/manual-de-compras/a34588f7c0d3.png"
+        pagina: null
+        ocr: "[B Documentos generados a partir del pedido nro. 0001 para almacén {ic2|nl=b mem\nES Se eee Sen\n2\n\nBye» aaa\n\nTipo Nro de documento Usuario Fecha Pedido |Nro Pedido\n\nPedido de compra_} OOOOOOG00000004 cocampo 2104/2010 0001\n\nr\n\nEste es el documento generado\n\nEj} 47  @& *s laze es\n\nCédigo Descripcién Unidad Cantidad\n\n0230750012 CUADERNO CUADRICULADO 200 pag pza 15.00\n\n0230750022 LAPICERO AZUL TINTA S…"
+verificacion:
+  - texto: "Después de aprobar el pedido, el sistema genera el pedido de compra."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s039]
+errores_frecuentes:
+  - sintoma: "Observó un pedido y sus recursos no están disponibles para otro pedido."
+    solucion: "Cuando se observa el pedido queda en espera hasta cambiarlo de estado, y los recursos quedan reservados o no disponibles: no formarán parte de otro pedido."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s038]
+  - sintoma: "El pedido no pasa al proceso de compra."
+    solucion: "Todos los pedidos A Compra deben ser aprobados para que pasen al proceso de compra."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s037]
+relacionados: [compras.registrar-pedido-de-compra, compras.generar-orden-de-compra-desde-pedido]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s037, manual: "Manual de Compras", seccion: "7.2 Aprobar pedidos", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s022, manual: "Manual de Compras", seccion: "4.3 Registro de usuarios que aprobarán los pedidos", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s038, manual: "Manual de Compras", seccion: "7.3 Aprobación de Pedidos", pagina: null}
+  - {id: img-c438987af945-0000, manual: "Manual de Compras", seccion: "c438987af945.png", pagina: null}
+  - {id: img-3a29f447c7cf-0000, manual: "Manual de Compras", seccion: "3a29f447c7cf.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s039, manual: "Manual de Compras", seccion: "7.4 Ver documentos generados luego de la aprobación", pagina: null}
+  - {id: img-7c2cd71c237a-0000, manual: "Manual de Compras", seccion: "7c2cd71c237a.png", pagina: null}
+  - {id: img-a34588f7c0d3-0000, manual: "Manual de Compras", seccion: "a34588f7c0d3.png", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

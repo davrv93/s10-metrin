@@ -1,0 +1,11 @@
+id: concepto_de_nomina
+termino: "Concepto (de nómina)"
+sinonimos: ["conceptos"]
+definicion: "Nombre que se da en el sistema a una norma laboral interpretada o a un beneficio que la empresa otorga al trabajador. Los conceptos forman parte de la plantilla de un tipo de nómina y de la boleta de cada trabajador, donde identifican ingresos, descuentos y aportes."
+en_s10: "El catálogo de conceptos genéricos viene por defecto y el usuario solo puede verlo; para agregar conceptos se usa el grupo Configuración, escenario Conceptos. La plantilla, compuesta por conceptos y fórmulas, se asigna al tipo de nómina en el escenario de Procesos."
+procedimientos_relacionados: [nominas.calcular-la-nomina]
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s027  # Manual de Nóminas › 4.2 Conceptos
+  - web-https-documentacion-s10peru-com-manual-d-s018  # Manual de Nóminas › 3.11 Catálogo de Conceptos Genéricos
+  - web-https-documentacion-s10peru-com-manual-d-s028  # Manual de Nóminas › 4.3 Plantillas
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

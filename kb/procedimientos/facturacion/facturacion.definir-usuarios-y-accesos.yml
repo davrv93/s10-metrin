@@ -1,0 +1,127 @@
+id: facturacion.definir-usuarios-y-accesos
+version: 1
+modulo: facturacion
+titulo: "Definir usuarios y sus accesos en Facturación"
+objetivo: "Crear un grupo con el nombre de la empresa, agregar en él al usuario y darle acceso a los escenarios del módulo y permisos por empresa."
+nivel: intermedio
+preguntas:
+  - "cómo creo un usuario para el módulo de facturación"
+  - "cómo le doy acceso a un usuario a los escenarios de facturación"
+  - "como dar permisos por empresa a un usuario en s10"
+  - "dónde se definen los usuarios y sus accesos"
+  - "un usuario nuevo no ve los escenarios de facturacion que hago"
+  - "como agrego un usuario en mantenimiento de usuarios"
+  - "como doy acseso a un usuario en facturacion"
+  - "pasos para definir usuarios y accesos en s10 facturación"
+aliases:
+  - "definir usuarios"
+  - "crear usuario"
+  - "dar acceso a usuario"
+  - "permisos por empresa"
+  - "accesos a escenarios"
+entidades:
+  modulo: "Facturación"
+  pantallas: ["Mantenimiento de Usuarios", "Utilitarios", "Escenarios", "Datos Generales"]
+  objetos: ["usuario", "grupo", "subgrupo", "empleado", "empresa"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "facturacion.definir-usuarios-y-accesos#1"
+    accion: "Ubíquese en el grupo **Utilitarios** y luego en el escenario **Mantenimiento de Usuarios**."
+    fuente: [img-4370c700ba04-0000, web-https-documentacion-s10peru-com-manual-d-s005, web-https-documentacion-s10peru-com-manual-d-s015]
+    pagina: null
+    fotos:
+      - id: "1a62fb7b8522"
+        ruta_o_url: "imagenes/manual-de-facturacion/4370c700ba04.png"
+        pagina: null
+        ocr: "| Archive Ver Catélogos Herramientas 2\nBaa\n(MEWRSSEM | \\Vantenimiento de Usuarios\ntilitarios\nLuego nos ubicamcS oy |= (Gee\nen el escenario & fs nctacos\nManteniniento de Click derecho ae\n= “= ae\n&Q Eliminarb —\ni $ Refrescar|| Cédigo joe\ndeca CP ayo || omcmsin OMOEA\na5 =\nbase de datos\n@® tnico.\n@® ventas\n@ Facturacén\n@ Por Pagar\n@ Informes\nee configures\nPrimero nos ubicamos\nen el grupo"
+  - n: 2
+    id: "facturacion.definir-usuarios-y-accesos#2"
+    accion: "Haga clic derecho y cree un nuevo grupo, al que le pondrá el nombre de la empresa."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s015]
+    pagina: null
+    fotos:
+      - id: "689d4d29f1ab"
+        ruta_o_url: "imagenes/manual-de-facturacion/f2a3082167d8.png"
+        pagina: null
+        caption: "Creamos un nuevo grupo al cual le vamos a poner el nombre de la empresa."
+        ocr: "es iutecos\n\n= ehh Click derecho\n\ncue Sistema 10 S.A. a\n2 Nee sbgus\n& Modificar orc I naa\n\nru\n© Nota re\nEQ Eliminar grupo|| Cédigo 04 for\n# Refrescar Descripcién —_ {Contabilidad]\n®@ Ayuda |\nsoot"
+  - n: 3
+    id: "facturacion.definir-usuarios-y-accesos#3"
+    accion: "Ubíquese en el subgrupo creado y agregue al usuario."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s015]
+    pagina: null
+    fotos:
+      - id: "899a094f30f5"
+        ruta_o_url: "imagenes/manual-de-facturacion/f9feb2e1d049.png"
+        pagina: null
+        caption: "Ahora nos ubicamos en el Subgrupo creado y agregamos al usuario"
+        ocr: "13 Todos los Usuarios |\nInvitados\nigh Sistema 10 S.A.\nt-BContabilidacl |\n> La]\n@& M ® Usuario a x\nCE 0401\nCédigo 001\nBea\ng pq] vsuane ecrue ¥\nClave =\n2 A\ndela clave\nEven [1h ||\nAuditor Vb. 5 |\nAdministrador de Sistemas 6\nu"
+  - n: 4
+    id: "facturacion.definir-usuarios-y-accesos#4"
+    accion: "Si el empleado no está en el catálogo, créelo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s015]
+    pagina: null
+    fotos:
+      - id: "4257a99cda6f"
+        ruta_o_url: "imagenes/manual-de-facturacion/6ccdaa15352d.png"
+        pagina: null
+        caption: "En caso el empleado no esté en el catálogo, lo procedemos a crear."
+        ocr: "8 Catélogo de Socios de Negocios :04 EMPLEAD\\ = oy _X\nQpciones 2 |\nDs xXBEC AYR Qo NHRSD AB\nEeyTesosiesRegsves I= «Click derecho |__| _Nve:22|\nee 2\naf rroweepon | estes onan anon. ers GF Socio de Negocio Beem\nopetso, [1 aontoee [ramen love\nsccm | es Ine gem || OPE emt 3] it ee\n‘Gj Banco |_| 22000873 | Torrado| Datos generales\naes {Tames (eucel fein Z Tratamiento [05a =] | Seo Fenenno =] TooOe for…"
+      - id: "5bfe6a49997b"
+        ruta_o_url: "imagenes/manual-de-facturacion/07eb6944a415.png"
+        pagina: null
+        caption: "En caso el empleado no esté en el catálogo, lo procedemos a crear."
+        ocr: "Mantenimiento de Usuarios é |\n1 UG Todos los Usue}\n| BEAR a vB\neeminaeh| Arrastre hacia aqui el encabezado de la columna que desea agrupar.\n= ‘Sistema 10]\nEh Contat] yyy campo] ¥. ¥\n# cr] 164 homers 7 i .\nOO 0401001 uz, Carmen ccruz |\n| [Descripcn [Categoria\n—\n‘Compras\nAlmacenes \\\nPedidos |\nLean\nGerencia de proyectos\nne\nAdministrativo\n“Agministracion de informacion\n[=]\nGestion Administrador de Méd…"
+  - n: 5
+    id: "facturacion.definir-usuarios-y-accesos#5"
+    accion: "En la pestaña **Escenarios**, dé acceso a los escenarios del módulo: ubíquese en un campo, haga clic derecho y elija **Dar acceso**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s015, img-fafd0ce891b9-0000]
+    pagina: null
+    fotos:
+      - id: "efeeba5eb814"
+        ruta_o_url: "imagenes/manual-de-facturacion/fafd0ce891b9.png"
+        pagina: null
+        ocr: "yi Campo! bd bd\nCédigo__| Descripcién [Nombres y Apelidos] Usuario\nTCT Cruz, Carmen ceruz\naq uu Nos ubicamos en un campo |\n| | Deserinciin Ady le damos clickderecho |_|\n) Facturacion\n\n5) hnicio\nDatos Generales zi)\nTalonarios Dar acceso\n\nVentas CO Quitar acceso\nDocumentos de Venta G\nDocumentos de Venta Detalado\nCronograma de Facturacién Ningun acceso\nRecursos de venta\nstn hes Seas Exportar a excel…"
+  - n: 6
+    id: "facturacion.definir-usuarios-y-accesos#6"
+    accion: "Para dar permisos por empresa, ubíquese en el grupo **Inicio** > **Datos Generales**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s015]
+    pagina: null
+    fotos:
+      - id: "21d5ef9699b8"
+        ruta_o_url: "imagenes/manual-de-facturacion/5c4518130fde.png"
+        pagina: null
+        caption: "Ahora, vamos a dar permisos por empresa, para ello nos ubicamos en el grupo Inicio > Datos Generales."
+        ocr: "ee Smee [Datos Generales\n[mito |) “eam sereuatos, :\ntJ Principal 22002231\nA —,_. escipetn SISTEMA 105.\nDats Generies ||: Bf acrnecentat — |! aeeveuen sto\nras uc. zoos\ner Conabie Ea\n8 SYOeaReae\nxpo—[sibovpo | vvaro nantes\nTereron —\n—| % catbiogo de Usuarios | 0401 Contabidad =) ==\nae) PP prone 2\n[evens | Oe XUN AYBS om Aa? RO\n[arene _| = Shree | eta\n—_— J] @cenncets ac ea cite. [pesca |\n5 Seer es =…"
+  - n: 7
+    id: "facturacion.definir-usuarios-y-accesos#7"
+    accion: "Ubíquese en un campo del usuario, haga clic derecho y elija **Dar acceso**."
+    fuente: [img-991850624f5d-0000, web-https-documentacion-s10peru-com-manual-d-s015]
+    pagina: null
+    fotos:
+      - id: "23cbeb70ce24"
+        ruta_o_url: "imagenes/manual-de-facturacion/991850624f5d.png"
+        pagina: null
+        ocr: "[Datos Generales %\nPrincipal 22002234\nDescripcion SISTEMA 10 S.A.\nAbreviatura $40\nRUC.\n| __eaerters Yi reme SCS—~S\n12] | Descripcion a}\na ccruz - Cruz, Carmen\nbE] |Inicio\nDotos Generales Nos ubicamos en un a o06UolUo d\nPeriodo Contable campo yle damos click | o)6U6olhlUG o\nTalonarios: Jderecho LOS = Oo o\nGl | Ventas Dar acceso\nDocumentos de Venta OO) Quitar acceso Oo Qo\n‘Documentos de Venta Detall…"
+  - n: 8
+    id: "facturacion.definir-usuarios-y-accesos#8"
+    accion: "Finalmente, ingrese al sistema con el usuario creado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s015]
+    pagina: null
+    fotos:
+      - id: "6b3a3b60cc1c"
+        ruta_o_url: "imagenes/manual-de-facturacion/566365fa22c1.png"
+        pagina: null
+        caption: "Finalmente, ingresamos al sistema con el usuario creado."
+        ocr: "Sistema 10: ° ° ° =]\n@\ns svete\nPm cancer\n¥"
+verificacion: []
+errores_frecuentes: []
+relacionados: []
+fuentes:
+  - {id: img-4370c700ba04-0000, manual: "Manual de Facturación", seccion: "4370c700ba04.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s005, manual: "Manual Administrativo", seccion: "2.3 Definición de usuarios y sus accesos", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s015, manual: "Manual de Facturación", seccion: "3.2 Definición de usuarios y sus accesos", pagina: null}
+  - {id: img-fafd0ce891b9-0000, manual: "Manual de Facturación", seccion: "fafd0ce891b9.png", pagina: null}
+  - {id: img-991850624f5d-0000, manual: "Manual de Facturación", seccion: "991850624f5d.png", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

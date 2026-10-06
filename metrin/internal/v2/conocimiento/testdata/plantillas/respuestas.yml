@@ -1,0 +1,49 @@
+# Plantillas de prueba con la forma del archivo real (forma, partes, respaldo, fijas).
+version: 1
+config:
+  max_pasos_por_bloque: 3
+plantillas:
+  PROCEDIMIENTO_INTRO:
+    tipo: mensaje
+    forma: "{inicio} {objetivo} {alcance}\n\n{prerrequisitos}\n\n{arranque}\n{cita}"
+    partes:
+      inicio: ["Vamos a {{TAREA}} en el módulo **{{MODULO}}**.", "Le enseño a {{TAREA}}."]
+      objetivo: ["{{OBJETIVO}}"]
+      alcance: ["Son {{TOTAL_PASOS}} pasos."]
+      prerrequisitos: ["Antes de empezar, tenga listo esto:\n{{PRERREQUISITOS}}"]
+      arranque: ["¿Empezamos con el paso 1?"]
+      cita: ["_Fuente: {{CITA}}_"]
+    fijas: {objetivo: 0, cita: 0}
+    respaldo:
+      objetivo: ""
+      prerrequisitos: ""
+  PASOS_BLOQUE:
+    forma: "{intro}\n\n{pasos}\n\n{cierre}\n{cita}"
+    partes:
+      intro: ["Estos son los pasos {{N_DESDE}} a {{N_HASTA}} de {{TOTAL_PASOS}}:"]
+      pasos: ["{{PASOS}}"]
+      cierre: ["Hágalos en ese orden y me avisa."]
+      cita: ["_Fuente: {{CITA}}_"]
+  PREGUNTA_AVANCE:
+    forma: "{pregunta}"
+    partes:
+      pregunta: ["¿Lo logró? ¿Seguimos con el paso {{N_SIGUIENTE}}?", "Cuando lo tenga, seguimos con el paso {{N_SIGUIENTE}}."]
+  CONCEPTO:
+    forma: "{definicion}\n{en_s10}\n{cita}\n\n{oferta}"
+    partes:
+      definicion: ["**{{TERMINO}}**: {{DEFINICION}}"]
+      en_s10: ["En S10: {{EN_S10}}"]
+      cita: ["_({{CITA}})_"]
+      oferta: ["¿Quiere que le enseñe a {{TAREA_SUGERIDA}}?"]
+    respaldo:
+      en_s10: ""
+      oferta: "¿Le queda alguna duda sobre **{{TERMINO}}**?"
+  SIN_EVIDENCIA:
+    sin_modelo: true
+    forma: "{aviso}"
+    partes:
+      aviso: ["No encontré eso en los manuales que tengo."]
+  ROTA:
+    forma: "{a} {b}"
+    partes:
+      a: ["hola"]

@@ -1,0 +1,107 @@
+id: instalacion.sacar-copia-de-seguridad-de-la-base-de-datos
+version: 1
+modulo: instalacion
+titulo: "Sacar una copia de seguridad de la base de datos del S10"
+objetivo: "Generar una copia de seguridad de la base de datos del S10 desde el escenario de Utilitarios, que queda en la carpeta C:\\S102000\\Backup."
+nivel: basico
+preguntas:
+  - "cómo saco una copia de seguridad de la base de datos en s10"
+  - "como hago un backup del s10"
+  - "como respaldo mi base de datos s10"
+  - "donde se guarda la copia de seguridad del s10"
+  - "mantenimiento de base de datos copia de seguridad"
+  - "como hago respaldo antes de un cambio grande"
+  - "como sacar bakup s10"
+aliases:
+  - "copia de seguridad"
+  - "backup de la base de datos"
+  - "respaldar base de datos"
+entidades:
+  modulo: "Instalación"
+  pantallas: ["Utilitarios", "Mantenimiento de Base de datos"]
+  objetos: ["base de datos", "copia de seguridad"]
+prerrequisitos:
+  - texto: "El mantenimiento de las bases de datos son labores que debe realizar el **sa**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s136]
+pasos:
+  - n: 1
+    id: "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos#1"
+    accion: "Abra su módulo de S10, vaya al escenario de **Utilitarios** y haga clic en **mantenimiento de base de datos**."
+    fuente: [web-https-documentacion-s10peru-com-realizar-s000]
+    pagina: null
+    fotos:
+      - id: "6372121a9458"
+        ruta_o_url: "imagenes/realizar-copia-seguridad-base-datos/7396331ae5e5.png"
+        pagina: null
+        caption: "Abre tu Módulo de S10, ve al escenario de ‘Utilitarios’ luego da click en ‘mantenimiento de base de datos’"
+        ocr: "\"Archivo Ver Catélogos Herramientas ?\n46hHR8RBea8\n\nInicio Proyectos:\nFacturacion | # ej escriorio Ingresos\n\nProyectos ejecutados:\npesatass | Pores Toone) Tin On fio\ncenretece a ooo Heys VG &@aa\nsn ee eins Preset ang ener oles a enuunes eur eens care.\noo ‘Campo y | |Comienza con ¥\n\n—— <<\n\n#8\nMantenimien\n\ntode\n\nUsuarios\n\ni\nActualizacid\nnde base\n\n=\n\nul)\nMantenimien\nto de Base."
+  - n: 2
+    id: "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos#2"
+    accion: "En la ventana **Mantenimiento de Base de datos**, haga clic en el botón **Siguiente**."
+    fuente: [web-https-documentacion-s10peru-com-realizar-s000]
+    pagina: null
+    fotos:
+      - id: "56e4e643c7a3"
+        ruta_o_url: "imagenes/realizar-copia-seguridad-base-datos/92c98de21b65.png"
+        pagina: null
+        caption: "Se abre una ventana llamada «Mantenimiento de Base de datos», dale clic en el botón ‘Siguiente’"
+        ocr: "Mantenimiento de base de\nMantenimiento de Base de Datos }\nEste asistente le ayuda realizar mantenimientos a su base de datos\nCon este asistente podra :\n\n* Crear copia de seguridad de base de datos\n* Restaurar base de datos\n* Compactar y eliminar base de datos\n* Reindexar la base de datos\n* Crear tareas de administracién, en la base de datos\nHaga click en Siguiente para continuar\nAyuda | Atras | Ca…"
+  - n: 3
+    id: "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos#3"
+    accion: "Haga clic en **Copia de seguridad de base de datos**."
+    fuente: [web-https-documentacion-s10peru-com-realizar-s000]
+    pagina: null
+    fotos:
+      - id: "a205142cd367"
+        ruta_o_url: "imagenes/realizar-copia-seguridad-base-datos/c5ade3e5c930.png"
+        pagina: null
+        caption: "Darle clic en el botón de ‘Copia de seguridad de base de datos’"
+        ocr: "Elegir el proceso de mantenimiento de base de datos\nSeleccionar la opcién que desea utilizar.\n\nCopia de seguridad de base de datos C7\n\nFestaurar base de datos\n\nCrear base de datos $10\n\nEliminar base de datos\n\nRecuperar base de datos $10\n\nCompactar base de datos\n\nReindexar base de datos\n\nAdministrador de Tareas\n\nAyuda | < Atras Siguiente > | Cancelar |"
+  - n: 4
+    id: "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos#4"
+    accion: "Escoja la base de datos que desea copiar y haga clic en **Siguiente**."
+    fuente: [web-https-documentacion-s10peru-com-realizar-s000]
+    pagina: null
+    fotos:
+      - id: "6184f541615d"
+        ruta_o_url: "imagenes/realizar-copia-seguridad-base-datos/8c5a9a7de18c.png"
+        pagina: null
+        caption: "Después escogemos la base de datos que deseamos que sea copiada, y le damos clic en el botón ‘ Siguiente’"
+        ocr: "Seleccione la base de datos. —\nIngrese o seleccione el nombre de la base de datos. rae ls)\nBase de datos origen de donde se generara la copia de seguridad o\nde respaldo.\nse eseoge la hase que deseamos que sea coplada.\nNombre de la base de datos origen:\n> j Si) - ]\n[- Ejecutar la copia automéatica solo por administradores\nAyuda | < Atras | Siguiente > | Cancelar |"
+  - n: 5
+    id: "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos#5"
+    accion: "Asigne un nombre a la copia de la base de datos y haga clic en **Siguiente**."
+    fuente: [web-https-documentacion-s10peru-com-realizar-s000]
+    pagina: null
+    fotos:
+      - id: "4a92b7bdc018"
+        ruta_o_url: "imagenes/realizar-copia-seguridad-base-datos/5253928054db.png"
+        pagina: null
+        caption: "Le asignamos un nombre a la copia de la base de datos y le damos clic en ‘ Siguiente’"
+        ocr: "= [er |\n2, Meniteninaieates oe: base dle dain x\nIndicar el nombre de la copia de seguridad.\nIngrese solo el nombre del archivo para crear la copia de su base de datos.\nNombre del archivo donde se almacenaré la informacién.\n\nse pone un nombre a la copia de la Base de datos\n\nNombre de la copia de seguridad :\n\n=) COPIA DE SEGURIDAD $10) |\n\nCOPIA DE SEGURIDAD $10_ERP_2008\n\n@ Estandar (formato SQL Serv…"
+  - n: 6
+    id: "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos#6"
+    accion: "Haga clic en **Copiar** para que comience el proceso."
+    fuente: [web-https-documentacion-s10peru-com-realizar-s000]
+    pagina: null
+    fotos:
+      - id: "d8a8d1d07d14"
+        ruta_o_url: "imagenes/realizar-copia-seguridad-base-datos/7e350ebc3e10.png"
+        pagina: null
+        caption: "Procedemos a darle clic en ‘Copiar’ para que comience el proceso"
+        ocr: "Completando el Asistente de Copia\nde seguridad\nHa especificado la informacion necesaria para la copia de\nseguridad de la base de datos. Revisar el resumen antes y\nhaga click en COPIAR para ejecutarlo\nResumen :\nCopia de seguridad : Estandar (formato SQL Server)\nBase de datos origen : 510\nCopia de datos destino : COPIA DE SEGURIDAD\n$10_ERP_2008\n\nAyuda | < Atras Cancelar |"
+verificacion:
+  - texto: "Se genera la copia de la base de datos y queda en la carpeta C:\\S102000\\Backup."
+    fuente: [web-https-documentacion-s10peru-com-realizar-s000]
+errores_frecuentes:
+  - sintoma: "Al restaurar una copia, se pisa otra base de datos."
+    solucion: "Al restaurar una copia de seguridad, registre un nombre diferente a las bases de datos existentes."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s136]
+  - sintoma: "No se puede eliminar una base de datos."
+    solucion: "No se puede eliminar la base de datos en uso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s136]
+relacionados: [instalacion.instalar-s10-erp]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s136, manual: "Manual de Presupuestos", seccion: "5.5.3 Mantenimiento de base de datos (1)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-realizar-s000, manual: "Cómo realizar una copia de seguridad de base de datos", seccion: "Cómo realizar una copia de seguridad de base de datos", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

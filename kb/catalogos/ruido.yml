@@ -1,0 +1,95 @@
+# RUIDO de entrenamiento: la clase «ninguno». Frases que NO son de ninguna intención de Metrín: temas ajenos a S10 y a la
+# obra (fuera_de_dominio, la intención 20 de la especificación) y basura (teclazos, pruebas, fragmentos sin sentido).
+# El clasificador la entrena como una intención más, «ninguno»: si gana, Metrín usa la plantilla FUERA_DE_DOMINIO y no
+# busca en los manuales. SINTÉTICO. Distinto de la sección `ninguno` de intenciones_prueba.yml, que mide falsos
+# positivos y nunca entra aquí.
+#
+# NO va aquí nada que pertenezca a una intención: ni saludos, ni cortesías, ni preguntas de construcción general
+# («¿cómo calculo el concreto de una losa?» es del dominio: va a RAG y, sin evidencia, a SIN_EVIDENCIA).
+# Hay negativos difíciles a propósito: palabras que también existen en S10 usadas en otro sentido («licencia de
+# conducir», «el dólar hoy», «planificar vacaciones»).
+# Toda frase debe tener al menos una pieza que el embebedor conozca (si no, el entrenamiento falla con ErrSinPiezas).
+
+catalogo: intenciones_metrin
+clase: ninguno
+version: 1
+sintetico: true
+
+fuera_de_dominio:
+  - "cuéntame un chiste"
+  - "escríbeme un poema"
+  - "¿quién ganó el partido de ayer?"
+  - "cómo preparo un ceviche"
+  - "qué clima hará mañana"
+  - "recomiéndame una película"
+  - "cuánto es 15 por 23"
+  - "traduce esto al inglés"
+  - "hazme un logo"
+  - "escribe un código en Python para ordenar una lista"
+  - "¿quién es el presidente de Francia?"
+  - "dame consejos para bajar de peso"
+  - "cuál es la capital de Australia"
+  - "resuélveme este crucigrama"
+  - "¿crees en los extraterrestres?"
+  - "qué signo zodiacal soy"
+  - "ayúdame con mi tarea de historia"
+  - "cómo se juega ajedrez"
+  - "recomiéndame un celular barato"
+  - "dónde queda el mejor restaurante"
+  - "me duele la espalda, qué tomo"
+  - "¿cómo invierto en bitcoin?"
+  - "escríbeme una carta de amor"
+  - "qué opinas de las elecciones"
+  - "cuéntame una historia de terror"
+  - "cuál es tu canción favorita"
+  - "dibújame un gato"
+  - "qué hora es en Japón"
+  - "cómo hago para viajar a Europa barato"
+  - "quién escribió Don Quijote"
+  - "dame la receta del pan"
+  - "cómo saco mi licencia de conducir"
+  - "cómo hago una presentación en PowerPoint"
+  - "cuál es el mejor equipo de fútbol"
+  - "háblame de la segunda guerra mundial"
+  - "qué libro me recomiendas"
+  - "cómo cuido mis plantas"
+  - "planifica mis vacaciones"
+  - "busca vuelos a Cusco"
+  - "quiero pedir una pizza"
+  - "cuánto está el dólar hoy"
+  - "qué series hay en Netflix"
+  - "cómo bajo música de YouTube"
+  - "escribe un rap"
+  - "cuál es el animal más rápido"
+
+basura:
+  - "asdfgh"
+  - "jajajsjsj"
+  - "kkkkkk"
+  - "qwerty"
+  - "aaaaaaa"
+  - "test"
+  - "prueba 123"
+  - "1234"
+  - "hfjdks"
+  - "ñññ"
+  - "zzz"
+  - "lorem ipsum dolor sit amet"
+  - "mmmm"
+  - "sdlkfj sdlkfj"
+  - "a"
+  - "k"
+  - "jhgjhg"
+  - "1"
+  - "ggggg"
+  - "pfff"
+  - "123456789"
+  - "abc"
+  - "ajsjsjajs"
+  - "lalala"
+  - "fdgdfgdf"
+  - "texto de prueba"
+  - "probando probando"
+  - "xxxxx"
+  - "dsfsdf sdfsdf sdf"
+  - "q w e r t y"

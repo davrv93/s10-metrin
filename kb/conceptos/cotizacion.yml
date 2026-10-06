@@ -1,0 +1,12 @@
+id: cotizacion
+termino: "Cotización"
+sinonimos: ["cotizaciones"]
+definicion: "Agrupa los recursos de los pedidos de compra que todavía no están en una orden de compra, para recibir las ofertas de los proveedores; el manual recomienda armarlas pensando en lo que vende cada proveedor."
+en_s10: "Se arma en el escenario de Cotizaciones del módulo de Compras, donde también se registran especificaciones que el proveedor debe cumplir. Las cotizaciones recibidas se registran a mano, proveedor por proveedor, en el escenario de Recepción de cotizaciones (descuentos, tiempo de entrega). En el módulo de Facturación hay también cotizaciones de venta: aprobada por el cliente, se genera la orden de venta."
+procedimientos_relacionados: [compras.registrar-cotizacion, compras.registrar-recepcion-de-cotizaciones, compras.elaborar-cuadro-comparativo]
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s043  # Manual de Compras › 9. Cotizaciones
+  - web-https-documentacion-s10peru-com-manual-d-s046  # Manual de Compras › 10. Recepción de Cotizaciones
+  - web-https-documentacion-s10peru-com-manual-d-s047  # Manual de Compras › 11. Cuadro Comparativo
+  - web-https-documentacion-s10peru-com-manual-d-s024  # Manual de Facturación › 4.5 Órdenes de Venta
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

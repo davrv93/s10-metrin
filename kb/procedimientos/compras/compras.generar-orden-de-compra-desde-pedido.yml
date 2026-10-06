@@ -1,0 +1,150 @@
+id: compras.generar-orden-de-compra-desde-pedido
+version: 1
+modulo: compras
+titulo: "Generar una orden de compra desde un pedido de compra"
+objetivo: "Generar, en el escenario de Pedidos de Compra, la orden de compra a partir de un pedido aprobado, registrando los datos de la cabecera y los precios de los recursos que se compran."
+nivel: intermedio
+preguntas:
+  - "cómo genero una orden de compra desde un pedido"
+  - "cómo hago la orden de compra del pedido aprobado"
+  - "dónde se genera la orden de compra en s10"
+  - "como saco la OC de un pedido de compra"
+  - "cómo registro el proveedor y los precios en la orden de compra"
+  - "como genero la orden de conpra solo de algunos recursos del pedido"
+  - "pasos para generar orden de compra en compras y pedidos"
+  - "dónde pongo el descuento y la fecha de vigencia de la orden de compra"
+aliases:
+  - "generar orden de compra"
+  - "orden de compra desde pedido"
+  - "crear OC"
+  - "nueva orden de compra"
+entidades:
+  modulo: "Compras"
+  pantallas: ["Pedidos de Compra", "Acumulado"]
+  objetos: ["orden de compra", "pedido de compra", "proveedor", "forma de pago", "precio"]
+prerrequisitos:
+  - texto: "El pedido de compra debe estar aprobado: a partir de un pedido aprobado se genera la orden de compra."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s040]
+pasos:
+  - n: 1
+    id: "compras.generar-orden-de-compra-desde-pedido#1"
+    accion: "Ingrese al escenario de **Pedidos de Compra**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s040]
+    pagina: null
+    fotos:
+      - id: "cd0bf33e79cd"
+        ruta_o_url: "imagenes/manual-de-compras/d5b6d157abce.png"
+        pagina: null
+        caption: "Acceso al escenario de Pedidos de Compra:"
+        ocr: "a ———\nE)- gj Esoiftorio\nPedidos de Compra Efi Pedro 2.\nLuego, i PUENTE EN CARRETERA:"
+  - n: 2
+    id: "compras.generar-orden-de-compra-desde-pedido#2"
+    accion: "Haga clic derecho sobre el pedido del proyecto y elija **Generar Orden de Compra** para generar la orden con todos los recursos que forman parte del pedido."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s040, img-de784880e999-0000]
+    pagina: null
+    fotos:
+      - id: "889a711cc6ec"
+        ruta_o_url: "imagenes/manual-de-compras/de784880e999.png"
+        pagina: null
+        ocr: "Pedidos de Compra FE|\nSyer he) Clic derecho\n\nNro. Pedico Proyecto Fecha pedido | T.Entrega |Sc\n0001 Ce [PUENTE EN CARRETERA=| De Mate +o a\n\noo02 PUENTEEN CARRETERA | DeMate|_—* “unica! Sstaco\n\n0003 PUENTE EN CARRETERA, Stiette Generar Orden de Compra\nooo4 PUENTE ENCARRETERS De Mate) Notas\n| [& Vista preliminar\n\nAYveAR \\ aa & Imprimir\n\nRecurso cy Seguimiento al pedida\nCUADERNO CUADRICULADO 200 pag.…"
+  - n: 3
+    id: "compras.generar-orden-de-compra-desde-pedido#3"
+    accion: "Si solo quiere comprar una selección de recursos, haga el clic derecho sobre el recurso en lugar del pedido: la orden de compra se genera solo de la selección."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s040]
+    pagina: null
+  - n: 4
+    id: "compras.generar-orden-de-compra-desde-pedido#4"
+    accion: "En la cabecera de la orden de compra, elija al proveedor."
+    donde: "Cabecera de la orden de compra"
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s040]
+    pagina: null
+    fotos:
+      - id: "00b49d832443"
+        ruta_o_url: "imagenes/manual-de-compras/54967524c548.png"
+        pagina: null
+        caption: "Al generar la orden de compra, registre los datos de la cabecera,"
+        ocr: "Ta 0 Sra x™)\nden de Compra - Proyecto 02001 PUENTE EN CARRETERA a\n2\nGestorde [o101005 Martinez Luna, Pedra | a) N° Orden de Compr\nCompra ‘ a4\nProveedor 02100157 | ibreria Venus @py .. 4\nContacto © O--~ a4\nFecha 42i06/201 0 >| Forma Pago jog |Contado L. 44)\nMoneda [01 [NUEVOS SOL@}.. |\nTe) a4 epyrechew a: giaooai [sins a=... |\nSJ a) Estados(h)\nFacturar a:[92190001 [S10 S.A. a 4 =o)\nDescuenta % i) D…"
+  - n: 5
+    id: "compras.generar-orden-de-compra-desde-pedido#5"
+    accion: "Elija al contacto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s040]
+    pagina: null
+  - n: 6
+    id: "compras.generar-orden-de-compra-desde-pedido#6"
+    accion: "Registre la fecha de la orden de compra."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s040]
+    pagina: null
+  - n: 7
+    id: "compras.generar-orden-de-compra-desde-pedido#7"
+    accion: "Elija la forma de pago."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s040]
+    pagina: null
+  - n: 8
+    id: "compras.generar-orden-de-compra-desde-pedido#8"
+    accion: "Elija el tipo de moneda para la orden de compra."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s040]
+    pagina: null
+  - n: 9
+    id: "compras.generar-orden-de-compra-desde-pedido#9"
+    accion: "Elija el tipo de cambio para la fecha de la orden de compra."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s040]
+    pagina: null
+  - n: 10
+    id: "compras.generar-orden-de-compra-desde-pedido#10"
+    accion: "Si tiene el número de factura, regístrelo; caso contrario, deje la celda sin datos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s040]
+    pagina: null
+  - n: 11
+    id: "compras.generar-orden-de-compra-desde-pedido#11"
+    accion: "Si hay descuento, ingrese el porcentaje de descuento (por ejemplo, 3 para el 3 %) o el descuento en monto (por ejemplo, 5 para un descuento de 5 Nuevos Soles)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s040]
+    pagina: null
+  - n: 12
+    id: "compras.generar-orden-de-compra-desde-pedido#12"
+    accion: "Elija la fecha de vigencia de la orden de compra."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s040]
+    pagina: null
+  - n: 13
+    id: "compras.generar-orden-de-compra-desde-pedido#13"
+    accion: "Si lo necesita, registre la fecha de entrega total de la compra, alternativa a las fechas de entrega registradas por recurso en el pedido."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s040]
+    pagina: null
+  - n: 14
+    id: "compras.generar-orden-de-compra-desde-pedido#14"
+    accion: "Elija la pestaña **Acumulado** para ingresar los precios de los recursos que se compran."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s040]
+    pagina: null
+  - n: 15
+    id: "compras.generar-orden-de-compra-desde-pedido#15"
+    accion: "Ingrese el precio de los recursos que se compran; para consultar los precios de un recurso, haga clic derecho sobre él."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s041, web-https-documentacion-s10peru-com-manual-d-s040]
+    pagina: null
+    fotos:
+      - id: "90a39db16635"
+        ruta_o_url: "imagenes/manual-de-compras/796082fc6444.png"
+        pagina: null
+        caption: "Registre los precios,"
+        ocr: "BMam vy ®\nRecurso Unidad | Cantidad Total | Precio Ppto.} Precio Sin 1.G.¥. | Precio Con |.G.¥.\nCUADERNO CUADRICULADO 200 pag. pza 15.00 6.00 9.66 11.50\nLAPICERO AZUL TINTA SEC 4 LUCAS 364 pza 12.00 0.00 1.26 150\nPAPEL BULKY mil 10.00 0.00 10.08 12.00\n——_ i\n\nAcumulado Detallado\nRecurso PAPEL BULKY & IG.V. 19 %\n\nTotal Neto 260.82 Valor Descuento 0.00 Valor LGV. 49.56 Total 310.38 —@)\nUltima: Fecha…"
+  - n: 16
+    id: "compras.generar-orden-de-compra-desde-pedido#16"
+    accion: "Después de registrar los datos, use el botón **Aceptar** para grabar y cerrar la ventana."
+    resultado: "El sistema pregunta si desea enviar a aprobación la orden de compra."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s041, img-796082fc6444-0000, img-12f19ea63348-0000]
+    pagina: null
+    fotos:
+      - id: "ceb367a97353"
+        ruta_o_url: "imagenes/manual-de-compras/12f19ea63348.png"
+        pagina: null
+        ocr: "Sistema 10 - Compras |\ne éDesea enviar a aprobacion la Orden de Compra N° 0001?\nno |i"
+verificacion:
+  - texto: "La orden de compra generada se visualiza y se aprueba en el escenario de Orden de Compra."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s041]
+errores_frecuentes: []
+relacionados: [compras.aprobar-pedido, compras.aprobar-orden-de-compra, compras.registrar-pedido-de-compra]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s040, manual: "Manual de Compras", seccion: "8. Generar Orden de Compra desde un Pedido de Compra (1)", pagina: null}
+  - {id: img-de784880e999-0000, manual: "Manual de Compras", seccion: "de784880e999.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s041, manual: "Manual de Compras", seccion: "8. Generar Orden de Compra desde un Pedido de Compra (2)", pagina: null}
+  - {id: img-796082fc6444-0000, manual: "Manual de Compras", seccion: "796082fc6444.png", pagina: null}
+  - {id: img-12f19ea63348-0000, manual: "Manual de Compras", seccion: "12f19ea63348.png", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

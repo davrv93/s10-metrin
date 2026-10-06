@@ -1,0 +1,81 @@
+id: contabilidad.cierre-permanente-del-periodo
+version: 1
+modulo: contabilidad
+titulo: "Hacer el cierre permanente de un periodo contable"
+objetivo: "Cerrar de forma permanente un periodo desde el escenario Periodos Contables: con el Cierre Permanente SI, el S10 genera una copia de seguridad que salvaguarda todos los asientos contables de la empresa."
+nivel: intermedio
+preguntas:
+  - "cómo cierro un periodo contable en s10"
+  - "como hago el cierre permanente del mes"
+  - "como cierro el mes en contabilidad"
+  - "como cambio el estado del periodo a cerrado"
+  - "quien puede hacer el cierre permanente del periodo"
+  - "donde veo la copia de seguridad del cierre permanente"
+  - "cierre de periodo contable paso a paso"
+  - "como ago el sierre del mes contable"
+aliases:
+  - "cierre permanente"
+  - "cerrar periodo contable"
+  - "cierre de mes"
+  - "cierre del periodo"
+entidades:
+  modulo: "Contabilidad"
+  pantallas: ["Periodos Contables", "Auditoria de asientos cerrados"]
+  objetos: ["periodo", "copia de seguridad", "asientos contables", "Auditor"]
+prerrequisitos:
+  - texto: "Solo el usuario calificado como Auditor determina el cierre permanente."
+    fuente: [img-6b667afaa79f-0000, web-https-documentacion-s10peru-com-manual-d-s085]
+pasos:
+  - n: 1
+    id: "contabilidad.cierre-permanente-del-periodo#1"
+    accion: "Ingrese al escenario **Periodos Contables**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s084, web-https-documentacion-s10peru-com-manual-d-s053]
+    pagina: null
+    fotos:
+      - id: "9bbe2569833d"
+        ruta_o_url: "imagenes/manual-de-contabilidad/6b667afaa79f.png"
+        pagina: null
+        caption: "Escenario que permite establecer la fecha Fin del Corte Parcial, General de todos los módulos involucrados S10ERP, teniendo en cuenta que la determinación del corte lo realiza el módulo de Contabilidad y subordina el trabajo de todos los módulos."
+        ocr: "‘$10 Contabilidad: 22000617 - S10 DEMO IES\n| Archivo Yer Catélogos Herramientas 2\n\\DBew\noa! Periodos Contables por Empresa Permite cambiar el estado de] [el usuario solo calificado como Auditor eS\n8 iertoy cerrado. [ehcetermina et clerre permanentey\nHMA 4| + Br ral T__ |senera una copia automatica dei mes\na ee perete heterel frrado general para todo et S10ERP\nBy registro de informacion mes ames.\nu…"
+  - n: 2
+    id: "contabilidad.cierre-permanente-del-periodo#2"
+    accion: "Ubique el periodo que va a cerrar (por ejemplo, **Enero 2015**)."
+    fuente: [img-1b191e59f0cd-0000, web-https-documentacion-s10peru-com-manual-d-s084]
+    pagina: null
+  - n: 3
+    id: "contabilidad.cierre-permanente-del-periodo#3"
+    accion: "Cambie el **Estado** del periodo de abierto a **Cerrado**."
+    fuente: [img-6b667afaa79f-0000, img-1b191e59f0cd-0000]
+    pagina: null
+  - n: 4
+    id: "contabilidad.cierre-permanente-del-periodo#4"
+    accion: "Establezca el **Cierre Permanente** en **SI**."
+    resultado: "El S10 genera una copia de seguridad que salvaguarda todos los asientos contables de la empresa en la que se está operando."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s084, img-1b191e59f0cd-0000]
+    pagina: null
+    fotos:
+      - id: "c7262dfc6b65"
+        ruta_o_url: "imagenes/manual-de-contabilidad/1b191e59f0cd.png"
+        pagina: null
+        ocr: "‘$10 Contabilidad: 22000617 - $10 DEMO\n© archivo Yer Catélogos Herramientas 2\ni Tema i qj 5\nPeriodos Contables por Empresa\nEs | v BEY oe od\n138/315 Campo|Cédigo Jen cualquier posicién = Grupo:\nCédiigo Descripcién Del Al Fecha Limite Registro [Estado Cierre permanente\nea 2004\n2010\n2011\nPeriodos Contables\nor Emprese ae\n2013\n2014 Cédigo j201501 B Visible\n=) 2015,\n201500 Apertura 2015 0101/2015 3112/2…"
+  - n: 5
+    id: "contabilidad.cierre-permanente-del-periodo#5"
+    accion: "Analice la copia de seguridad generada a raíz del cierre permanente en el escenario **Auditoria de asientos cerrados**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s085, img-1a7bc2d94c5b-0000]
+    pagina: null
+    fotos:
+      - id: "da56cd7356ed"
+        ruta_o_url: "imagenes/manual-de-contabilidad/1a7bc2d94c5b.png"
+        pagina: null
+        ocr: "| auchvo Yer Catilogos Herramientas. 2\nBRea®@\nlal tea |Auditoria de asientos cerrados ista de Copia de Seguridad al Cierre Permanente SL\nInformes\n~ nun Fences ———E] |S, eee] reas ron Frans — =| waive =]\nDHOMFS 8| 4 BF @id es\nDee EER) | frrastre hac aqui el encabezedo de acoluana que desea appar\nContates\n0 conpofater(s) ———eifooe et SS~S~S~S«CiC St\n| Petodo Cortatle Invasienta fen Procedencia Nr Co…"
+verificacion: []
+errores_frecuentes: []
+relacionados: [contabilidad.registrar-asiento-manual]
+fuentes:
+  - {id: img-6b667afaa79f-0000, manual: "Manual de Contabilidad", seccion: "6b667afaa79f.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s085, manual: "Manual de Contabilidad", seccion: "10.5.2 Funcionalidad del Escenario.", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s084, manual: "Manual de Contabilidad", seccion: "10.5.1 Cierre Permanente del Periodo", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s053, manual: "Manual de Contabilidad", seccion: "5.2 Periodos Contables", pagina: null}
+  - {id: img-1b191e59f0cd-0000, manual: "Manual de Contabilidad", seccion: "1b191e59f0cd.png", pagina: null}
+  - {id: img-1a7bc2d94c5b-0000, manual: "Manual de Contabilidad", seccion: "1a7bc2d94c5b.png", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

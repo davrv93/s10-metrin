@@ -1,0 +1,129 @@
+id: facturacion.registrar-entrega-a-rendir
+version: 1
+modulo: facturacion
+titulo: "Registrar un comprobante de entrega a rendir"
+objetivo: "Configurar el tipo de documento ENTREGAS A RENDIR y registrar en Documentos por Pagar el documento interno que sustenta el desembolso a un personal de la empresa, que luego rendirá los gastos."
+nivel: intermedio
+preguntas:
+  - "cómo registro una entrega a rendir en facturación"
+  - "como creo el documento entregas a rendir"
+  - "quiero darle dinero a un trabajador para que luego me rinda los gastos"
+  - "cómo configuro el tipo de documento entrega a rendir"
+  - "por qué no puedo hacer el desembolso en administrativo sin documento"
+  - "como registro un entrega a rendir en documentos por pagar"
+  - "entrega a rrendir s10 como se hace"
+  - "pasos para el registro del comprobante entrega a rendir"
+aliases:
+  - "entrega a rendir"
+  - "registrar entrega a rendir"
+  - "comprobante entrega a rendir"
+  - "entregas a rendir"
+entidades:
+  modulo: "Facturación"
+  pantallas: ["Tipo de Documento", "Documentos por Pagar", "Catálogo de Tipos de Documento"]
+  objetos: ["entrega a rendir", "tipo de documento", "documento interno", "desembolso", "recurso"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "facturacion.registrar-entrega-a-rendir#1"
+    accion: "Abra el catálogo **Tipo de Documento** para configurar el tipo de documento ENTREGAS A RENDIR, que permitirá realizar el pago y que este sea sustentado después."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046, img-9d4b29e2d9dd-0000]
+    pagina: null
+    fotos:
+      - id: "df1280c02a65"
+        ruta_o_url: "imagenes/manual-de-facturacion/9d4b29e2d9dd.png"
+        pagina: null
+        ocr: "Archivo Yer | Catélogos | Herramientas 2\nGAYE Socios de negocio\nEa) Tema| Siar Berar\nLTE in cambio jentos por Pagar\nrain Pio Pecastasa =]AJoanenoosemrecsaroor =|\n@ lugares\nhone EET\nSretooe [gL ige deBosumento clic en el catalogo Tipo de\n#Documento.\n(CUES Price doNigaco—=T Ever pons. EXILE cups\nBw ougodePlrovedo Fain [Verna \\Ooamen [sn ep vera [Fm Pop vas [centr\nLiquidacione| %. Recursos Genéricosy…"
+  - n: 2
+    id: "facturacion.registrar-entrega-a-rendir#2"
+    accion: "Haga clic derecho y elija **Adicionar** para crear este tipo de documento."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046]
+    pagina: null
+    fotos:
+      - id: "f4d147394054"
+        ruta_o_url: "imagenes/manual-de-facturacion/c3b6d15582c1.png"
+        pagina: null
+        caption: "Clic derecho Adicionar para la creación de este Tipo de Documento."
+        ocr: "3 S10 Facturacién: 00002490 - MI CASITA S.A, - Principal =|o| x\nArchivo Yer Catilogos Herramientas 2\nowe Al utilizar la opcion del Catalogo Tipo\na Tema a i\n@ Documentos por Pagar Documento aparecera esta ventana de tipo|\naa de documentos con la relacion de todos\nEmpress POSS los tipos de Documentos por Utilizar, tener\n; n cuenta para que este pueda ser usado\na YaEIRA] Seciones 2 — ae debe tener Ti…"
+  - n: 3
+    id: "facturacion.registrar-entrega-a-rendir#3"
+    accion: "Indique las características del tipo de documento: la **Descripción** (por ejemplo, ENTREGAS A RENDIR), el tipo de aplicación y el tipo de documento base OTROS, porque es un documento interno."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046, img-cb13055cb0e6-0000]
+    pagina: null
+    fotos:
+      - id: "6cf18e7e6691"
+        ruta_o_url: "imagenes/manual-de-facturacion/cb13055cb0e6.png"
+        pagina: null
+        ocr: "r) $10 Facturacién: 00002490 - MI CASITA S.A. - Principal -|a| x\nArchivo Ver Catélogos Herramientas 2\nERa@\nig) Tema\nDocumentos por Pagar\n—_ Empresa [00 & Catalogo de Tipos de Documento [=|] x |\nDocumentos por is oe\nmeow | Freon]\nZ| tivo documento [089 Cétigo eterno Fea | NIVEL: Off\nindicarle una Descripcion para poder\ni a0 HLM bescrizcisn ENTREGAS ARENDR ~— reeaneesr el Tine Documents Pp |Document…"
+  - n: 4
+    id: "facturacion.registrar-entrega-a-rendir#4"
+    accion: "Vaya al módulo de Facturación, grupo **Por Pagar**, escenario **Documentos por Pagar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046]
+    pagina: null
+    fotos:
+      - id: "32782229946c"
+        ruta_o_url: "imagenes/manual-de-facturacion/61cecfa24b14.png"
+        pagina: null
+        caption: "Luego de la Creación del Tipo Documento se procede desde el Módulo de Facturación Grupo por Pagar Escenario Documentos por Pagar la creación del documento ENTREGAS A RENDIR, en el S10 no se realiza ningún desembolso en el módulo Administrativo sino es previamente sustentado con un documento Interno o SUNAT, en este caso se realizará un entrega a rendir a un personal de la empresa con la finalidad que posteriormente me rinda los gastos realizados por dicho desembolso."
+        ocr: "Archivo Ver Catslogos Herramientas ?\na n\n5B legir Tipo de Documento\na ‘Documentos por Pagar ntregas a Rendir.\n— Ss eas A RENOIR i-|-/a @\nB HEYA e8 va eae\nDocumentos par\nPagar KaewicipAplcacién |\nEscenario |\naN 1/0 Campo|Socio de Negocio ~] [en cusiquier posicién + [X][2)] crupo:\nNt Corretetivo [Grupo de Pr|Proyecto Fecha | Vencimiento [N*Documento | Socio de Neyocio Moneda_|Forma de Pago Total [Re…"
+  - n: 5
+    id: "facturacion.registrar-entrega-a-rendir#5"
+    accion: "Haga clic derecho dentro del escenario y elija **ADICIONAR** para iniciar la creación del entrega a rendir."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046]
+    pagina: null
+    fotos:
+      - id: "b13522c38f20"
+        ruta_o_url: "imagenes/manual-de-facturacion/85c556d706d8.png"
+        pagina: null
+        caption: "Clic derecho dentro del escenario documentos por pagar, para iniciar la creación del Entrega a Rendir."
+        ocr: "Archivo Ver Catélogos Herramientas 2\nBRea\n5g) Tema\na ‘Documentos por Pagar\nES tescmcccn ee}\nB HEYy/2NS8 va eae\nDocumentos por\nw 010 CampaSoci de Negocio |r cualquier posiciin | [X][22] crupe:\nN* Corralativo. [Grupo de Pr] Proyecto Fecha _ | Vencitniento [N* Documerto [Socio de Negocio Moneda_| Forma de Pago Total [Receptor |Registrado p|Actur\nLiuidacones\na lic derecho, opclon|\nReenbosos 1D Adicion…"
+  - n: 6
+    id: "facturacion.registrar-entrega-a-rendir#6"
+    accion: "En la ventana que aparece, en **Proveedor**, ingrese los datos de la persona a quien se realizará el desembolso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046, img-5b1961b0602d-0000]
+    pagina: null
+    fotos:
+      - id: "e88cfeb6bb93"
+        ruta_o_url: "imagenes/manual-de-facturacion/5b1961b0602d.png"
+        pagina: null
+        ocr: "] S10 Facturacion; 00002490 - MI CASITA S.A. - Principal -|a| x\nArchivo Yer Catélogos Herramientas 2\nBae P)\nE} Documentos eery Dizon SSI Socio Negocio a quien se le | femlatke N70 coooocoooo0§\nsure foe OASTASA fealizara el desembolso 0 Pago\npeel (i\nay Proveedor 00002525 [CARDENAS ACERO, YESSENIA [| |\nTeWZEIEE\nDocumentos por el # i ; 18122013 | Fecha venciniento {18/12/2013 | Fecha recepcién [18122…"
+  - n: 7
+    id: "facturacion.registrar-entrega-a-rendir#7"
+    accion: "Registre la fecha, el proyecto y la glosa del documento."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046]
+    pagina: null
+  - n: 8
+    id: "facturacion.registrar-entrega-a-rendir#8"
+    accion: "Registre el recurso y el importe."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046]
+    pagina: null
+  - n: 9
+    id: "facturacion.registrar-entrega-a-rendir#9"
+    accion: "Guarde el documento con la opción **Aceptar**."
+    resultado: "El documento guardado se visualiza dentro del escenario Documentos por Pagar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046, img-547dc8424108-0000]
+    pagina: null
+    fotos:
+      - id: "f24b392ac888"
+        ruta_o_url: "imagenes/manual-de-facturacion/547dc8424108.png"
+        pagina: null
+        ocr: "Archive Ver Catélogos Herramientas 2\nBae\n2 ig) Tema\nrut] Documentos por Pagar\nEmpresa 00002490 [MICASITAS.A. = | 84) Documento 039 ENTREGAS A REND | -] Q\n-) HEMAes vGaeae\nDocumentos por\npagar Periodo plicacién\na 717 Campo|Socio de Negacio Sl len cualquier posicion [fe Grupo:\nNE Correlativo Grupo de Proyecto [Proyecto Fecha | Vencimiento |N* Documento __| Socio de Negacia Moneda_|Forma ce Paga Jota…"
+verificacion:
+  - texto: "El documento ENTREGAS A RENDIR guardado aparece en el escenario Documentos por Pagar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046, img-547dc8424108-0000]
+errores_frecuentes:
+  - sintoma: "No puede realizar el desembolso desde el módulo Administrativo."
+    solucion: "En el S10 no se realiza ningún desembolso en el módulo Administrativo si no está previamente sustentado con un documento interno o SUNAT: registre primero el documento ENTREGAS A RENDIR en Documentos por Pagar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046]
+  - sintoma: "El tipo de documento no se puede utilizar."
+    solucion: "Para que el tipo de documento pueda ser usado, debe tener tipo de aplicación."
+    fuente: [img-c3b6d15582c1-0000]
+relacionados: []
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s046, manual: "Manual de Facturación", seccion: "6.4.1 Registro del Comprobante Entrega a Rendir.", pagina: null}
+  - {id: img-9d4b29e2d9dd-0000, manual: "Manual de Facturación", seccion: "9d4b29e2d9dd.png", pagina: null}
+  - {id: img-cb13055cb0e6-0000, manual: "Manual de Facturación", seccion: "cb13055cb0e6.png", pagina: null}
+  - {id: img-5b1961b0602d-0000, manual: "Manual de Facturación", seccion: "5b1961b0602d.png", pagina: null}
+  - {id: img-547dc8424108-0000, manual: "Manual de Facturación", seccion: "547dc8424108.png", pagina: null}
+  - {id: img-c3b6d15582c1-0000, manual: "Manual de Facturación", seccion: "c3b6d15582c1.png", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

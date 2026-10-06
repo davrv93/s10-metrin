@@ -1,0 +1,4716 @@
+{
+ "modelo": "qwen3.5-4b",
+ "modo": "metal",
+ "gguf": "Qwen3.5-4B-Q4_K_M.gguf",
+ "origen": "unsloth/Qwen3.5-4B-GGUF",
+ "licencia": "Apache-2.0",
+ "tam_mb": 2614,
+ "fecha": "2026-10-06 04:00",
+ "args": "-m ~/.cache/metrin-modelos/Qwen3.5-4B-Q4_K_M.gguf --host 127.0.0.1 --port 18431 -c 4096 -np 1 --cache-ram 0 --no-webui -ngl 99 --reasoning off",
+ "carga_s": 4.5,
+ "rss_carga_mb": 289,
+ "variante_generacion": "completa",
+ "decision": {
+  "tipo": {
+   "n": 90,
+   "exactitud": 0.989,
+   "exactitud_laxa": 1.0,
+   "json_valido": 1.0,
+   "f1": {
+    "CONCEPT": 0.966,
+    "PROCEDURE": 1.0,
+    "NAVIGATION": 1.0,
+    "TROUBLESHOOTING": 1.0,
+    "CONFIGURATION": 1.0,
+    "COMPARISON": 1.0,
+    "UNKNOWN": 0.957
+   },
+   "f1_macro": 0.989,
+   "p50_ms": 445,
+   "p95_ms": 594,
+   "errores": [
+    [
+     "tipo-085",
+     "UNKNOWN",
+     "CONCEPT"
+    ]
+   ]
+  },
+  "evidencia": {
+   "n": 40,
+   "exactitud": 0.825,
+   "exactitud_laxa": 0.825,
+   "json_valido": 1.0,
+   "f1": {
+    "si": 0.788,
+    "no": 0.851
+   },
+   "f1_macro": 0.82,
+   "p50_ms": 1136,
+   "p95_ms": 1583,
+   "errores": [
+    [
+     "evid-005",
+     "si",
+     "no"
+    ],
+    [
+     "evid-006",
+     "si",
+     "no"
+    ],
+    [
+     "evid-010",
+     "si",
+     "no"
+    ],
+    [
+     "evid-011",
+     "si",
+     "no"
+    ],
+    [
+     "evid-012",
+     "si",
+     "no"
+    ],
+    [
+     "evid-016",
+     "si",
+     "no"
+    ],
+    [
+     "evid-017",
+     "si",
+     "no"
+    ]
+   ]
+  }
+ },
+ "rss_decision_mb": 440,
+ "huella_decision_mb": 512,
+ "decision_libre": {
+  "tipo": {
+   "n": 90,
+   "exactitud": 0.989,
+   "exactitud_laxa": 1.0,
+   "json_valido": 1.0,
+   "f1": {
+    "CONCEPT": 0.966,
+    "PROCEDURE": 1.0,
+    "NAVIGATION": 1.0,
+    "TROUBLESHOOTING": 1.0,
+    "CONFIGURATION": 1.0,
+    "COMPARISON": 1.0,
+    "UNKNOWN": 0.957
+   },
+   "f1_macro": 0.989,
+   "p50_ms": 443,
+   "p95_ms": 583,
+   "errores": [
+    [
+     "tipo-085",
+     "UNKNOWN",
+     "CONCEPT"
+    ]
+   ]
+  },
+  "evidencia": {
+   "n": 40,
+   "exactitud": 0.825,
+   "exactitud_laxa": 0.825,
+   "json_valido": 1.0,
+   "f1": {
+    "si": 0.788,
+    "no": 0.851
+   },
+   "f1_macro": 0.82,
+   "p50_ms": 1053,
+   "p95_ms": 1542,
+   "errores": [
+    [
+     "evid-005",
+     "si",
+     "no"
+    ],
+    [
+     "evid-006",
+     "si",
+     "no"
+    ],
+    [
+     "evid-010",
+     "si",
+     "no"
+    ],
+    [
+     "evid-011",
+     "si",
+     "no"
+    ],
+    [
+     "evid-012",
+     "si",
+     "no"
+    ],
+    [
+     "evid-016",
+     "si",
+     "no"
+    ],
+    [
+     "evid-017",
+     "si",
+     "no"
+    ]
+   ]
+  }
+ },
+ "generacion": {
+  "n": 36,
+  "valida": 0.861,
+  "json": 1.0,
+  "n_pasos": 1.0,
+  "orden": 1.0,
+  "fotos": 1.0,
+  "negritas": 0.861,
+  "negritas_laxas": 0.861,
+  "sin_nuevos": 1.0,
+  "copia_media": 0.743,
+  "ratio_medio": 0.973,
+  "p50_ms": 20362,
+  "p95_ms": 32133,
+  "max_ms": 42558,
+  "prompt_tps": 292.6,
+  "gen_tps": 21.4,
+  "tokens_salida_p50": 401,
+  "tokens_entrada_p50": 466,
+  "truncadas": 0,
+  "nuevos_ejemplos": []
+ },
+ "rss_pico_mb": 533,
+ "huella_carga_mb": 393,
+ "huella_pico_mb": 681,
+ "registros": {
+  "decision": [
+   {
+    "id": "tipo-001",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 313.3159590070136,
+    "salida": "{\"tipo\": \"CONCEPT\"}",
+    "prompt_n": 21,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-002",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 426.46333399170544,
+    "salida": "{\"tipo\": \"CONCEPT\"}",
+    "prompt_n": 21,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-003",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 456.29133298643865,
+    "salida": "{\"tipo\": \"CONCEPT\"}",
+    "prompt_n": 25,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-004",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 441.3380420010071,
+    "salida": "{\"tipo\": \"CONCEPT\"}",
+    "prompt_n": 20,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-005",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 510.0078750110697,
+    "salida": "{\"tipo\": \"CONCEPT\"}",
+    "prompt_n": 24,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-006",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 464.6078329969896,
+    "salida": "{\"tipo\": \"CONCEPT\"}",
+    "prompt_n": 22,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-007",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 549.0360830008285,
+    "salida": "{\"tipo\": \"CONCEPT\"}",
+    "prompt_n": 22,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-008",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 472.4129999958677,
+    "salida": "{\"tipo\": \"CONCEPT\"}",
+    "prompt_n": 26,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-009",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 563.7132499978179,
+    "salida": "{\"tipo\": \"CONCEPT\"}",
+    "prompt_n": 18,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-010",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 489.34499999450054,
+    "salida": "{\"tipo\": \"CONCEPT\"}",
+    "prompt_n": 21,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-011",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 451.6269580053631,
+    "salida": "{\"tipo\": \"CONCEPT\"}",
+    "prompt_n": 23,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-012",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 425.5141250032466,
+    "salida": "{\"tipo\": \"CONCEPT\"}",
+    "prompt_n": 22,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-013",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 492.2935420036083,
+    "salida": "{\"tipo\": \"CONCEPT\"}",
+    "prompt_n": 22,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-014",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 456.05116699880455,
+    "salida": "{\"tipo\": \"CONCEPT\"}",
+    "prompt_n": 25,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-015",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 474.15708299377,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 21,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-016",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 419.43345799518283,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 19,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-017",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 385.58016599563416,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 19,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-018",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 402.1895829937421,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 21,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-019",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 450.16062501235865,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 21,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-020",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 519.3222080124542,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 26,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-021",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 422.58791699714493,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 22,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-022",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 658.2658330007689,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 28,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-023",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 396.10495799570344,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 22,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-024",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 416.30966699449345,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 27,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-025",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 432.7629170002183,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 23,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-026",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 416.60016600508243,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 32,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-027",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 419.7947079956066,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 20,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-028",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 460.71200000005774,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 23,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-029",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 470.78687501198146,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 27,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-030",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 443.05970800633077,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 23,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-031",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 442.6463340059854,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 25,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-032",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 393.64662500156555,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 22,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-033",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 417.7524170081597,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 29,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-034",
+    "tarea": "tipo",
+    "esperado": "NAVIGATION",
+    "aceptables": [
+     "NAVIGATION"
+    ],
+    "pred": "NAVIGATION",
+    "valido": true,
+    "ms": 389.61566699435934,
+    "salida": "{\"tipo\": \"NAVIGATION\"}",
+    "prompt_n": 22,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-035",
+    "tarea": "tipo",
+    "esperado": "NAVIGATION",
+    "aceptables": [
+     "NAVIGATION"
+    ],
+    "pred": "NAVIGATION",
+    "valido": true,
+    "ms": 432.06049999571405,
+    "salida": "{\"tipo\": \"NAVIGATION\"}",
+    "prompt_n": 18,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-036",
+    "tarea": "tipo",
+    "esperado": "NAVIGATION",
+    "aceptables": [
+     "NAVIGATION"
+    ],
+    "pred": "NAVIGATION",
+    "valido": true,
+    "ms": 422.16587500297464,
+    "salida": "{\"tipo\": \"NAVIGATION\"}",
+    "prompt_n": 24,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-037",
+    "tarea": "tipo",
+    "esperado": "NAVIGATION",
+    "aceptables": [
+     "NAVIGATION"
+    ],
+    "pred": "NAVIGATION",
+    "valido": true,
+    "ms": 404.1365410084836,
+    "salida": "{\"tipo\": \"NAVIGATION\"}",
+    "prompt_n": 22,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-038",
+    "tarea": "tipo",
+    "esperado": "NAVIGATION",
+    "aceptables": [
+     "NAVIGATION"
+    ],
+    "pred": "NAVIGATION",
+    "valido": true,
+    "ms": 423.81037499581,
+    "salida": "{\"tipo\": \"NAVIGATION\"}",
+    "prompt_n": 27,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-039",
+    "tarea": "tipo",
+    "esperado": "NAVIGATION",
+    "aceptables": [
+     "NAVIGATION"
+    ],
+    "pred": "NAVIGATION",
+    "valido": true,
+    "ms": 399.78937500563916,
+    "salida": "{\"tipo\": \"NAVIGATION\"}",
+    "prompt_n": 24,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-040",
+    "tarea": "tipo",
+    "esperado": "NAVIGATION",
+    "aceptables": [
+     "NAVIGATION"
+    ],
+    "pred": "NAVIGATION",
+    "valido": true,
+    "ms": 419.43733299558517,
+    "salida": "{\"tipo\": \"NAVIGATION\"}",
+    "prompt_n": 25,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-041",
+    "tarea": "tipo",
+    "esperado": "NAVIGATION",
+    "aceptables": [
+     "NAVIGATION"
+    ],
+    "pred": "NAVIGATION",
+    "valido": true,
+    "ms": 433.3482920046663,
+    "salida": "{\"tipo\": \"NAVIGATION\"}",
+    "prompt_n": 27,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-042",
+    "tarea": "tipo",
+    "esperado": "NAVIGATION",
+    "aceptables": [
+     "NAVIGATION"
+    ],
+    "pred": "NAVIGATION",
+    "valido": true,
+    "ms": 408.1416669941973,
+    "salida": "{\"tipo\": \"NAVIGATION\"}",
+    "prompt_n": 27,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-043",
+    "tarea": "tipo",
+    "esperado": "NAVIGATION",
+    "aceptables": [
+     "NAVIGATION"
+    ],
+    "pred": "NAVIGATION",
+    "valido": true,
+    "ms": 390.536416991381,
+    "salida": "{\"tipo\": \"NAVIGATION\"}",
+    "prompt_n": 23,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-044",
+    "tarea": "tipo",
+    "esperado": "NAVIGATION",
+    "aceptables": [
+     "NAVIGATION"
+    ],
+    "pred": "NAVIGATION",
+    "valido": true,
+    "ms": 403.41654200165067,
+    "salida": "{\"tipo\": \"NAVIGATION\"}",
+    "prompt_n": 23,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-045",
+    "tarea": "tipo",
+    "esperado": "NAVIGATION",
+    "aceptables": [
+     "NAVIGATION"
+    ],
+    "pred": "NAVIGATION",
+    "valido": true,
+    "ms": 358.20474999491125,
+    "salida": "{\"tipo\": \"NAVIGATION\"}",
+    "prompt_n": 26,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-046",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 584.4787920068484,
+    "salida": "{\"tipo\": \"TROUBLESHOOTING\"}",
+    "prompt_n": 20,
+    "gen_n": 11
+   },
+   {
+    "id": "tipo-047",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 506.1108749941923,
+    "salida": "{\"tipo\": \"TROUBLESHOOTING\"}",
+    "prompt_n": 26,
+    "gen_n": 11
+   },
+   {
+    "id": "tipo-048",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 548.7937500001863,
+    "salida": "{\"tipo\": \"TROUBLESHOOTING\"}",
+    "prompt_n": 22,
+    "gen_n": 11
+   },
+   {
+    "id": "tipo-049",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 559.8057919996791,
+    "salida": "{\"tipo\": \"TROUBLESHOOTING\"}",
+    "prompt_n": 22,
+    "gen_n": 11
+   },
+   {
+    "id": "tipo-050",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 608.815458996105,
+    "salida": "{\"tipo\": \"TROUBLESHOOTING\"}",
+    "prompt_n": 22,
+    "gen_n": 11
+   },
+   {
+    "id": "tipo-051",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 561.7906249972293,
+    "salida": "{\"tipo\": \"TROUBLESHOOTING\"}",
+    "prompt_n": 29,
+    "gen_n": 11
+   },
+   {
+    "id": "tipo-052",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 533.3267499954673,
+    "salida": "{\"tipo\": \"TROUBLESHOOTING\"}",
+    "prompt_n": 24,
+    "gen_n": 11
+   },
+   {
+    "id": "tipo-053",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 630.1525410090107,
+    "salida": "{\"tipo\": \"TROUBLESHOOTING\"}",
+    "prompt_n": 30,
+    "gen_n": 11
+   },
+   {
+    "id": "tipo-054",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 525.6848749995697,
+    "salida": "{\"tipo\": \"TROUBLESHOOTING\"}",
+    "prompt_n": 25,
+    "gen_n": 11
+   },
+   {
+    "id": "tipo-055",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 660.581916992669,
+    "salida": "{\"tipo\": \"TROUBLESHOOTING\"}",
+    "prompt_n": 26,
+    "gen_n": 11
+   },
+   {
+    "id": "tipo-056",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 461.7963329947088,
+    "salida": "{\"tipo\": \"TROUBLESHOOTING\"}",
+    "prompt_n": 24,
+    "gen_n": 11
+   },
+   {
+    "id": "tipo-057",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 601.5396250004414,
+    "salida": "{\"tipo\": \"TROUBLESHOOTING\"}",
+    "prompt_n": 27,
+    "gen_n": 11
+   },
+   {
+    "id": "tipo-058",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 553.8744170044083,
+    "salida": "{\"tipo\": \"TROUBLESHOOTING\"}",
+    "prompt_n": 25,
+    "gen_n": 11
+   },
+   {
+    "id": "tipo-059",
+    "tarea": "tipo",
+    "esperado": "CONFIGURATION",
+    "aceptables": [
+     "CONFIGURATION"
+    ],
+    "pred": "CONFIGURATION",
+    "valido": true,
+    "ms": 446.8358339945553,
+    "salida": "{\"tipo\": \"CONFIGURATION\"}",
+    "prompt_n": 21,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-060",
+    "tarea": "tipo",
+    "esperado": "CONFIGURATION",
+    "aceptables": [
+     "CONFIGURATION"
+    ],
+    "pred": "CONFIGURATION",
+    "valido": true,
+    "ms": 402.5355000048876,
+    "salida": "{\"tipo\": \"CONFIGURATION\"}",
+    "prompt_n": 23,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-061",
+    "tarea": "tipo",
+    "esperado": "CONFIGURATION",
+    "aceptables": [
+     "CONFIGURATION"
+    ],
+    "pred": "CONFIGURATION",
+    "valido": true,
+    "ms": 407.5407089985674,
+    "salida": "{\"tipo\": \"CONFIGURATION\"}",
+    "prompt_n": 26,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-062",
+    "tarea": "tipo",
+    "esperado": "CONFIGURATION",
+    "aceptables": [
+     "CONFIGURATION"
+    ],
+    "pred": "CONFIGURATION",
+    "valido": true,
+    "ms": 431.56566700781696,
+    "salida": "{\"tipo\": \"CONFIGURATION\"}",
+    "prompt_n": 26,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-063",
+    "tarea": "tipo",
+    "esperado": "CONFIGURATION",
+    "aceptables": [
+     "CONFIGURATION",
+     "PROCEDURE"
+    ],
+    "pred": "CONFIGURATION",
+    "valido": true,
+    "ms": 370.00770898885094,
+    "salida": "{\"tipo\": \"CONFIGURATION\"}",
+    "prompt_n": 20,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-064",
+    "tarea": "tipo",
+    "esperado": "CONFIGURATION",
+    "aceptables": [
+     "CONFIGURATION",
+     "NAVIGATION"
+    ],
+    "pred": "CONFIGURATION",
+    "valido": true,
+    "ms": 430.6463749962859,
+    "salida": "{\"tipo\": \"CONFIGURATION\"}",
+    "prompt_n": 27,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-065",
+    "tarea": "tipo",
+    "esperado": "CONFIGURATION",
+    "aceptables": [
+     "CONFIGURATION"
+    ],
+    "pred": "CONFIGURATION",
+    "valido": true,
+    "ms": 413.98687500623055,
+    "salida": "{\"tipo\": \"CONFIGURATION\"}",
+    "prompt_n": 22,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-066",
+    "tarea": "tipo",
+    "esperado": "CONFIGURATION",
+    "aceptables": [
+     "CONFIGURATION"
+    ],
+    "pred": "CONFIGURATION",
+    "valido": true,
+    "ms": 424.4715420063585,
+    "salida": "{\"tipo\": \"CONFIGURATION\"}",
+    "prompt_n": 25,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-067",
+    "tarea": "tipo",
+    "esperado": "CONFIGURATION",
+    "aceptables": [
+     "CONFIGURATION"
+    ],
+    "pred": "CONFIGURATION",
+    "valido": true,
+    "ms": 462.0529169915244,
+    "salida": "{\"tipo\": \"CONFIGURATION\"}",
+    "prompt_n": 26,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-068",
+    "tarea": "tipo",
+    "esperado": "CONFIGURATION",
+    "aceptables": [
+     "CONFIGURATION"
+    ],
+    "pred": "CONFIGURATION",
+    "valido": true,
+    "ms": 436.6319169930648,
+    "salida": "{\"tipo\": \"CONFIGURATION\"}",
+    "prompt_n": 29,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-069",
+    "tarea": "tipo",
+    "esperado": "CONFIGURATION",
+    "aceptables": [
+     "CONFIGURATION"
+    ],
+    "pred": "CONFIGURATION",
+    "valido": true,
+    "ms": 461.67674999742303,
+    "salida": "{\"tipo\": \"CONFIGURATION\"}",
+    "prompt_n": 23,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-070",
+    "tarea": "tipo",
+    "esperado": "COMPARISON",
+    "aceptables": [
+     "COMPARISON"
+    ],
+    "pred": "COMPARISON",
+    "valido": true,
+    "ms": 440.5192919948604,
+    "salida": "{\"tipo\": \"COMPARISON\"}",
+    "prompt_n": 27,
+    "gen_n": 9
+   },
+   {
+    "id": "tipo-071",
+    "tarea": "tipo",
+    "esperado": "COMPARISON",
+    "aceptables": [
+     "COMPARISON"
+    ],
+    "pred": "COMPARISON",
+    "valido": true,
+    "ms": 474.87374999036547,
+    "salida": "{\"tipo\": \"COMPARISON\"}",
+    "prompt_n": 21,
+    "gen_n": 9
+   },
+   {
+    "id": "tipo-072",
+    "tarea": "tipo",
+    "esperado": "COMPARISON",
+    "aceptables": [
+     "COMPARISON"
+    ],
+    "pred": "COMPARISON",
+    "valido": true,
+    "ms": 528.138041991042,
+    "salida": "{\"tipo\": \"COMPARISON\"}",
+    "prompt_n": 30,
+    "gen_n": 9
+   },
+   {
+    "id": "tipo-073",
+    "tarea": "tipo",
+    "esperado": "COMPARISON",
+    "aceptables": [
+     "COMPARISON"
+    ],
+    "pred": "COMPARISON",
+    "valido": true,
+    "ms": 521.7026249883929,
+    "salida": "{\"tipo\": \"COMPARISON\"}",
+    "prompt_n": 20,
+    "gen_n": 9
+   },
+   {
+    "id": "tipo-074",
+    "tarea": "tipo",
+    "esperado": "COMPARISON",
+    "aceptables": [
+     "COMPARISON"
+    ],
+    "pred": "COMPARISON",
+    "valido": true,
+    "ms": 464.7435829974711,
+    "salida": "{\"tipo\": \"COMPARISON\"}",
+    "prompt_n": 30,
+    "gen_n": 9
+   },
+   {
+    "id": "tipo-075",
+    "tarea": "tipo",
+    "esperado": "COMPARISON",
+    "aceptables": [
+     "COMPARISON"
+    ],
+    "pred": "COMPARISON",
+    "valido": true,
+    "ms": 467.4913750059204,
+    "salida": "{\"tipo\": \"COMPARISON\"}",
+    "prompt_n": 23,
+    "gen_n": 9
+   },
+   {
+    "id": "tipo-076",
+    "tarea": "tipo",
+    "esperado": "COMPARISON",
+    "aceptables": [
+     "COMPARISON"
+    ],
+    "pred": "COMPARISON",
+    "valido": true,
+    "ms": 456.39079200918786,
+    "salida": "{\"tipo\": \"COMPARISON\"}",
+    "prompt_n": 28,
+    "gen_n": 9
+   },
+   {
+    "id": "tipo-077",
+    "tarea": "tipo",
+    "esperado": "COMPARISON",
+    "aceptables": [
+     "COMPARISON"
+    ],
+    "pred": "COMPARISON",
+    "valido": true,
+    "ms": 468.8410840026336,
+    "salida": "{\"tipo\": \"COMPARISON\"}",
+    "prompt_n": 24,
+    "gen_n": 9
+   },
+   {
+    "id": "tipo-078",
+    "tarea": "tipo",
+    "esperado": "COMPARISON",
+    "aceptables": [
+     "COMPARISON"
+    ],
+    "pred": "COMPARISON",
+    "valido": true,
+    "ms": 464.1734169999836,
+    "salida": "{\"tipo\": \"COMPARISON\"}",
+    "prompt_n": 25,
+    "gen_n": 9
+   },
+   {
+    "id": "tipo-079",
+    "tarea": "tipo",
+    "esperado": "UNKNOWN",
+    "aceptables": [
+     "UNKNOWN",
+     "CONCEPT"
+    ],
+    "pred": "UNKNOWN",
+    "valido": true,
+    "ms": 378.08154099911917,
+    "salida": "{\"tipo\": \"UNKNOWN\"}",
+    "prompt_n": 19,
+    "gen_n": 7
+   },
+   {
+    "id": "tipo-080",
+    "tarea": "tipo",
+    "esperado": "UNKNOWN",
+    "aceptables": [
+     "UNKNOWN"
+    ],
+    "pred": "UNKNOWN",
+    "valido": true,
+    "ms": 504.0256249922095,
+    "salida": "{\"tipo\": \"UNKNOWN\"}",
+    "prompt_n": 15,
+    "gen_n": 7
+   },
+   {
+    "id": "tipo-081",
+    "tarea": "tipo",
+    "esperado": "UNKNOWN",
+    "aceptables": [
+     "UNKNOWN"
+    ],
+    "pred": "UNKNOWN",
+    "valido": true,
+    "ms": 328.58183300413657,
+    "salida": "{\"tipo\": \"UNKNOWN\"}",
+    "prompt_n": 18,
+    "gen_n": 7
+   },
+   {
+    "id": "tipo-082",
+    "tarea": "tipo",
+    "esperado": "UNKNOWN",
+    "aceptables": [
+     "UNKNOWN"
+    ],
+    "pred": "UNKNOWN",
+    "valido": true,
+    "ms": 470.57566700095776,
+    "salida": "{\"tipo\": \"UNKNOWN\"}",
+    "prompt_n": 17,
+    "gen_n": 7
+   },
+   {
+    "id": "tipo-083",
+    "tarea": "tipo",
+    "esperado": "UNKNOWN",
+    "aceptables": [
+     "UNKNOWN"
+    ],
+    "pred": "UNKNOWN",
+    "valido": true,
+    "ms": 371.72758400265593,
+    "salida": "{\"tipo\": \"UNKNOWN\"}",
+    "prompt_n": 19,
+    "gen_n": 7
+   },
+   {
+    "id": "tipo-084",
+    "tarea": "tipo",
+    "esperado": "UNKNOWN",
+    "aceptables": [
+     "UNKNOWN"
+    ],
+    "pred": "UNKNOWN",
+    "valido": true,
+    "ms": 413.75129199877847,
+    "salida": "{\"tipo\": \"UNKNOWN\"}",
+    "prompt_n": 17,
+    "gen_n": 7
+   },
+   {
+    "id": "tipo-085",
+    "tarea": "tipo",
+    "esperado": "UNKNOWN",
+    "aceptables": [
+     "UNKNOWN",
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 512.7217500121333,
+    "salida": "{\"tipo\": \"CONCEPT\"}",
+    "prompt_n": 17,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-086",
+    "tarea": "tipo",
+    "esperado": "UNKNOWN",
+    "aceptables": [
+     "UNKNOWN"
+    ],
+    "pred": "UNKNOWN",
+    "valido": true,
+    "ms": 436.0226669959957,
+    "salida": "{\"tipo\": \"UNKNOWN\"}",
+    "prompt_n": 20,
+    "gen_n": 7
+   },
+   {
+    "id": "tipo-087",
+    "tarea": "tipo",
+    "esperado": "UNKNOWN",
+    "aceptables": [
+     "UNKNOWN"
+    ],
+    "pred": "UNKNOWN",
+    "valido": true,
+    "ms": 461.0362499952316,
+    "salida": "{\"tipo\": \"UNKNOWN\"}",
+    "prompt_n": 17,
+    "gen_n": 7
+   },
+   {
+    "id": "tipo-088",
+    "tarea": "tipo",
+    "esperado": "UNKNOWN",
+    "aceptables": [
+     "UNKNOWN"
+    ],
+    "pred": "UNKNOWN",
+    "valido": true,
+    "ms": 374.06816700240597,
+    "salida": "{\"tipo\": \"UNKNOWN\"}",
+    "prompt_n": 17,
+    "gen_n": 7
+   },
+   {
+    "id": "tipo-089",
+    "tarea": "tipo",
+    "esperado": "UNKNOWN",
+    "aceptables": [
+     "UNKNOWN"
+    ],
+    "pred": "UNKNOWN",
+    "valido": true,
+    "ms": 413.0038749863161,
+    "salida": "{\"tipo\": \"UNKNOWN\"}",
+    "prompt_n": 19,
+    "gen_n": 7
+   },
+   {
+    "id": "tipo-090",
+    "tarea": "tipo",
+    "esperado": "UNKNOWN",
+    "aceptables": [
+     "UNKNOWN",
+     "CONCEPT"
+    ],
+    "pred": "UNKNOWN",
+    "valido": true,
+    "ms": 487.4049170030048,
+    "salida": "{\"tipo\": \"UNKNOWN\"}",
+    "prompt_n": 18,
+    "gen_n": 7
+   },
+   {
+    "id": "evid-001",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 1471.095457993215,
+    "salida": "{\"suficiente\": \"si\"}",
+    "prompt_n": 372,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-002",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 865.3999579983065,
+    "salida": "{\"suficiente\": \"si\"}",
+    "prompt_n": 167,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-003",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 1450.9069589985302,
+    "salida": "{\"suficiente\": \"si\"}",
+    "prompt_n": 236,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-004",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 1169.1611660062335,
+    "salida": "{\"suficiente\": \"si\"}",
+    "prompt_n": 247,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-005",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 1173.6345829995116,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 273,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-006",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 1147.8650000062771,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 245,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-007",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 1313.090249997913,
+    "salida": "{\"suficiente\": \"si\"}",
+    "prompt_n": 329,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-008",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 998.6446250113659,
+    "salida": "{\"suficiente\": \"si\"}",
+    "prompt_n": 207,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-009",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 1566.7242919880664,
+    "salida": "{\"suficiente\": \"si\"}",
+    "prompt_n": 411,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-010",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 802.5171250046697,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 190,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-011",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 1145.7759170007193,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 287,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-012",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 1083.520000000135,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 279,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-013",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 1177.4092920095427,
+    "salida": "{\"suficiente\": \"si\"}",
+    "prompt_n": 287,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-014",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 1117.235083002015,
+    "salida": "{\"suficiente\": \"si\"}",
+    "prompt_n": 285,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-015",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 1058.1993340019835,
+    "salida": "{\"suficiente\": \"si\"}",
+    "prompt_n": 244,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-016",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 968.3204169996316,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 246,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-017",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 749.522291996982,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 156,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-018",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 1490.8865000033984,
+    "salida": "{\"suficiente\": \"si\"}",
+    "prompt_n": 449,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-019",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 1435.1881659968058,
+    "salida": "{\"suficiente\": \"si\"}",
+    "prompt_n": 368,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-020",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 1460.485791991232,
+    "salida": "{\"suficiente\": \"si\"}",
+    "prompt_n": 326,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-021",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 1396.783582997159,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 334,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-022",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 1029.6320420020493,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 201,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-023",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 989.0962500066962,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 239,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-024",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 1125.3303330013296,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 277,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-025",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 985.6393329973798,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 242,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-026",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 925.3742909932043,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 202,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-027",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 1580.209791995003,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 416,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-028",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 801.3803750072839,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 169,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-029",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 959.3147919949843,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 223,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-030",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 826.3081250042887,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 195,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-031",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 1184.121917001903,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 262,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-032",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 1319.4194160023471,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 308,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-033",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 1112.3380829958478,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 284,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-034",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 1267.4260000057984,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 284,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-035",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 1460.8927090012003,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 416,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-036",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 906.974249999621,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 208,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-037",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 1631.2259160040412,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 466,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-038",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 792.274790990632,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 194,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-039",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 770.5518340080744,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 161,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-040",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 1635.1791249908274,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 413,
+    "gen_n": 9
+   }
+  ],
+  "decision_libre": [
+   {
+    "id": "tipo-001",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 1058.5869580099825,
+    "salida": "{\"tipo\": \"CONCEPT\"}",
+    "prompt_n": 272,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-002",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 465.41099999740254,
+    "salida": "{\"tipo\": \"CONCEPT\"}",
+    "prompt_n": 21,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-003",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 369.0980419924017,
+    "salida": "{\"tipo\": \"CONCEPT\"}",
+    "prompt_n": 25,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-004",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 406.1952909978572,
+    "salida": "{\"tipo\": \"CONCEPT\"}",
+    "prompt_n": 20,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-005",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 427.16916599601973,
+    "salida": "{\"tipo\": \"CONCEPT\"}",
+    "prompt_n": 24,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-006",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 455.69608300866093,
+    "salida": "{\"tipo\": \"CONCEPT\"}",
+    "prompt_n": 22,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-007",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 404.32887499628123,
+    "salida": "{\"tipo\": \"CONCEPT\"}",
+    "prompt_n": 22,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-008",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 475.05725000519305,
+    "salida": "{\"tipo\": \"CONCEPT\"}",
+    "prompt_n": 26,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-009",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 535.7522499980405,
+    "salida": "{\"tipo\": \"CONCEPT\"}",
+    "prompt_n": 18,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-010",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 364.0343750012107,
+    "salida": "{\"tipo\": \"CONCEPT\"}",
+    "prompt_n": 21,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-011",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 483.6906669952441,
+    "salida": "{\"tipo\": \"CONCEPT\"}",
+    "prompt_n": 23,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-012",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 424.622916005319,
+    "salida": "{\"tipo\": \"CONCEPT\"}",
+    "prompt_n": 22,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-013",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 481.4595830102917,
+    "salida": "{\"tipo\": \"CONCEPT\"}",
+    "prompt_n": 22,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-014",
+    "tarea": "tipo",
+    "esperado": "CONCEPT",
+    "aceptables": [
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 505.45191700803116,
+    "salida": "{\"tipo\": \"CONCEPT\"}",
+    "prompt_n": 25,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-015",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 496.35425000451505,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 21,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-016",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 490.31004100106657,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 19,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-017",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 384.97604201256763,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 19,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-018",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 442.1929169911891,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 21,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-019",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 407.01241699571256,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 21,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-020",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 392.1486670005834,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 26,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-021",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 440.739042009227,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 22,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-022",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 385.646667011315,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 28,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-023",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 410.5698749917792,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 22,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-024",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 381.81570800952613,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 27,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-025",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 495.45999999099877,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 23,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-026",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 520.8499169966672,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 32,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-027",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 550.6673750060145,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 20,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-028",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 583.3593749994179,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 23,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-029",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 627.4689169949852,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 27,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-030",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 442.9413750040112,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 23,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-031",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 507.01574998674914,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 25,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-032",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 466.82212500309106,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 22,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-033",
+    "tarea": "tipo",
+    "esperado": "PROCEDURE",
+    "aceptables": [
+     "PROCEDURE"
+    ],
+    "pred": "PROCEDURE",
+    "valido": true,
+    "ms": 581.8556250014808,
+    "salida": "{\"tipo\": \"PROCEDURE\"}",
+    "prompt_n": 29,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-034",
+    "tarea": "tipo",
+    "esperado": "NAVIGATION",
+    "aceptables": [
+     "NAVIGATION"
+    ],
+    "pred": "NAVIGATION",
+    "valido": true,
+    "ms": 620.3377919882769,
+    "salida": "{\"tipo\": \"NAVIGATION\"}",
+    "prompt_n": 22,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-035",
+    "tarea": "tipo",
+    "esperado": "NAVIGATION",
+    "aceptables": [
+     "NAVIGATION"
+    ],
+    "pred": "NAVIGATION",
+    "valido": true,
+    "ms": 354.36804199707694,
+    "salida": "{\"tipo\": \"NAVIGATION\"}",
+    "prompt_n": 18,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-036",
+    "tarea": "tipo",
+    "esperado": "NAVIGATION",
+    "aceptables": [
+     "NAVIGATION"
+    ],
+    "pred": "NAVIGATION",
+    "valido": true,
+    "ms": 403.02333400177304,
+    "salida": "{\"tipo\": \"NAVIGATION\"}",
+    "prompt_n": 24,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-037",
+    "tarea": "tipo",
+    "esperado": "NAVIGATION",
+    "aceptables": [
+     "NAVIGATION"
+    ],
+    "pred": "NAVIGATION",
+    "valido": true,
+    "ms": 397.8669579955749,
+    "salida": "{\"tipo\": \"NAVIGATION\"}",
+    "prompt_n": 22,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-038",
+    "tarea": "tipo",
+    "esperado": "NAVIGATION",
+    "aceptables": [
+     "NAVIGATION"
+    ],
+    "pred": "NAVIGATION",
+    "valido": true,
+    "ms": 385.9052920015529,
+    "salida": "{\"tipo\": \"NAVIGATION\"}",
+    "prompt_n": 27,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-039",
+    "tarea": "tipo",
+    "esperado": "NAVIGATION",
+    "aceptables": [
+     "NAVIGATION"
+    ],
+    "pred": "NAVIGATION",
+    "valido": true,
+    "ms": 398.9656249905238,
+    "salida": "{\"tipo\": \"NAVIGATION\"}",
+    "prompt_n": 24,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-040",
+    "tarea": "tipo",
+    "esperado": "NAVIGATION",
+    "aceptables": [
+     "NAVIGATION"
+    ],
+    "pred": "NAVIGATION",
+    "valido": true,
+    "ms": 410.8687919942895,
+    "salida": "{\"tipo\": \"NAVIGATION\"}",
+    "prompt_n": 25,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-041",
+    "tarea": "tipo",
+    "esperado": "NAVIGATION",
+    "aceptables": [
+     "NAVIGATION"
+    ],
+    "pred": "NAVIGATION",
+    "valido": true,
+    "ms": 386.9232919969363,
+    "salida": "{\"tipo\": \"NAVIGATION\"}",
+    "prompt_n": 27,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-042",
+    "tarea": "tipo",
+    "esperado": "NAVIGATION",
+    "aceptables": [
+     "NAVIGATION"
+    ],
+    "pred": "NAVIGATION",
+    "valido": true,
+    "ms": 468.4452079964103,
+    "salida": "{\"tipo\": \"NAVIGATION\"}",
+    "prompt_n": 27,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-043",
+    "tarea": "tipo",
+    "esperado": "NAVIGATION",
+    "aceptables": [
+     "NAVIGATION"
+    ],
+    "pred": "NAVIGATION",
+    "valido": true,
+    "ms": 392.77141699858475,
+    "salida": "{\"tipo\": \"NAVIGATION\"}",
+    "prompt_n": 23,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-044",
+    "tarea": "tipo",
+    "esperado": "NAVIGATION",
+    "aceptables": [
+     "NAVIGATION"
+    ],
+    "pred": "NAVIGATION",
+    "valido": true,
+    "ms": 401.2454589974368,
+    "salida": "{\"tipo\": \"NAVIGATION\"}",
+    "prompt_n": 23,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-045",
+    "tarea": "tipo",
+    "esperado": "NAVIGATION",
+    "aceptables": [
+     "NAVIGATION"
+    ],
+    "pred": "NAVIGATION",
+    "valido": true,
+    "ms": 411.89733300416265,
+    "salida": "{\"tipo\": \"NAVIGATION\"}",
+    "prompt_n": 26,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-046",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 498.4461249987362,
+    "salida": "{\"tipo\": \"TROUBLESHOOTING\"}",
+    "prompt_n": 20,
+    "gen_n": 11
+   },
+   {
+    "id": "tipo-047",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 462.53175000310875,
+    "salida": "{\"tipo\": \"TROUBLESHOOTING\"}",
+    "prompt_n": 26,
+    "gen_n": 11
+   },
+   {
+    "id": "tipo-048",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 479.085541999666,
+    "salida": "{\"tipo\": \"TROUBLESHOOTING\"}",
+    "prompt_n": 22,
+    "gen_n": 11
+   },
+   {
+    "id": "tipo-049",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 523.6963750066934,
+    "salida": "{\"tipo\": \"TROUBLESHOOTING\"}",
+    "prompt_n": 22,
+    "gen_n": 11
+   },
+   {
+    "id": "tipo-050",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 522.1351670043077,
+    "salida": "{\"tipo\": \"TROUBLESHOOTING\"}",
+    "prompt_n": 22,
+    "gen_n": 11
+   },
+   {
+    "id": "tipo-051",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 520.1373750023777,
+    "salida": "{\"tipo\": \"TROUBLESHOOTING\"}",
+    "prompt_n": 29,
+    "gen_n": 11
+   },
+   {
+    "id": "tipo-052",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 515.1258749974659,
+    "salida": "{\"tipo\": \"TROUBLESHOOTING\"}",
+    "prompt_n": 24,
+    "gen_n": 11
+   },
+   {
+    "id": "tipo-053",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 572.8152500087162,
+    "salida": "{\"tipo\": \"TROUBLESHOOTING\"}",
+    "prompt_n": 30,
+    "gen_n": 11
+   },
+   {
+    "id": "tipo-054",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 450.6143750040792,
+    "salida": "{\"tipo\": \"TROUBLESHOOTING\"}",
+    "prompt_n": 25,
+    "gen_n": 11
+   },
+   {
+    "id": "tipo-055",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 513.8639159995364,
+    "salida": "{\"tipo\": \"TROUBLESHOOTING\"}",
+    "prompt_n": 26,
+    "gen_n": 11
+   },
+   {
+    "id": "tipo-056",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 569.0273750078632,
+    "salida": "{\"tipo\": \"TROUBLESHOOTING\"}",
+    "prompt_n": 24,
+    "gen_n": 11
+   },
+   {
+    "id": "tipo-057",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 497.25183300324716,
+    "salida": "{\"tipo\": \"TROUBLESHOOTING\"}",
+    "prompt_n": 27,
+    "gen_n": 11
+   },
+   {
+    "id": "tipo-058",
+    "tarea": "tipo",
+    "esperado": "TROUBLESHOOTING",
+    "aceptables": [
+     "TROUBLESHOOTING"
+    ],
+    "pred": "TROUBLESHOOTING",
+    "valido": true,
+    "ms": 493.08216699864715,
+    "salida": "{\"tipo\": \"TROUBLESHOOTING\"}",
+    "prompt_n": 25,
+    "gen_n": 11
+   },
+   {
+    "id": "tipo-059",
+    "tarea": "tipo",
+    "esperado": "CONFIGURATION",
+    "aceptables": [
+     "CONFIGURATION"
+    ],
+    "pred": "CONFIGURATION",
+    "valido": true,
+    "ms": 460.33895800064784,
+    "salida": "{\"tipo\": \"CONFIGURATION\"}",
+    "prompt_n": 21,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-060",
+    "tarea": "tipo",
+    "esperado": "CONFIGURATION",
+    "aceptables": [
+     "CONFIGURATION"
+    ],
+    "pred": "CONFIGURATION",
+    "valido": true,
+    "ms": 408.3815420017345,
+    "salida": "{\"tipo\": \"CONFIGURATION\"}",
+    "prompt_n": 23,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-061",
+    "tarea": "tipo",
+    "esperado": "CONFIGURATION",
+    "aceptables": [
+     "CONFIGURATION"
+    ],
+    "pred": "CONFIGURATION",
+    "valido": true,
+    "ms": 446.76683298894204,
+    "salida": "{\"tipo\": \"CONFIGURATION\"}",
+    "prompt_n": 26,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-062",
+    "tarea": "tipo",
+    "esperado": "CONFIGURATION",
+    "aceptables": [
+     "CONFIGURATION"
+    ],
+    "pred": "CONFIGURATION",
+    "valido": true,
+    "ms": 513.7836249923566,
+    "salida": "{\"tipo\": \"CONFIGURATION\"}",
+    "prompt_n": 26,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-063",
+    "tarea": "tipo",
+    "esperado": "CONFIGURATION",
+    "aceptables": [
+     "CONFIGURATION",
+     "PROCEDURE"
+    ],
+    "pred": "CONFIGURATION",
+    "valido": true,
+    "ms": 422.99416700552683,
+    "salida": "{\"tipo\": \"CONFIGURATION\"}",
+    "prompt_n": 20,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-064",
+    "tarea": "tipo",
+    "esperado": "CONFIGURATION",
+    "aceptables": [
+     "CONFIGURATION",
+     "NAVIGATION"
+    ],
+    "pred": "CONFIGURATION",
+    "valido": true,
+    "ms": 420.15050000918563,
+    "salida": "{\"tipo\": \"CONFIGURATION\"}",
+    "prompt_n": 27,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-065",
+    "tarea": "tipo",
+    "esperado": "CONFIGURATION",
+    "aceptables": [
+     "CONFIGURATION"
+    ],
+    "pred": "CONFIGURATION",
+    "valido": true,
+    "ms": 396.61995800270233,
+    "salida": "{\"tipo\": \"CONFIGURATION\"}",
+    "prompt_n": 22,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-066",
+    "tarea": "tipo",
+    "esperado": "CONFIGURATION",
+    "aceptables": [
+     "CONFIGURATION"
+    ],
+    "pred": "CONFIGURATION",
+    "valido": true,
+    "ms": 410.78833299980033,
+    "salida": "{\"tipo\": \"CONFIGURATION\"}",
+    "prompt_n": 25,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-067",
+    "tarea": "tipo",
+    "esperado": "CONFIGURATION",
+    "aceptables": [
+     "CONFIGURATION"
+    ],
+    "pred": "CONFIGURATION",
+    "valido": true,
+    "ms": 540.794750006171,
+    "salida": "{\"tipo\": \"CONFIGURATION\"}",
+    "prompt_n": 26,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-068",
+    "tarea": "tipo",
+    "esperado": "CONFIGURATION",
+    "aceptables": [
+     "CONFIGURATION"
+    ],
+    "pred": "CONFIGURATION",
+    "valido": true,
+    "ms": 350.7747090043267,
+    "salida": "{\"tipo\": \"CONFIGURATION\"}",
+    "prompt_n": 29,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-069",
+    "tarea": "tipo",
+    "esperado": "CONFIGURATION",
+    "aceptables": [
+     "CONFIGURATION"
+    ],
+    "pred": "CONFIGURATION",
+    "valido": true,
+    "ms": 428.90066698601004,
+    "salida": "{\"tipo\": \"CONFIGURATION\"}",
+    "prompt_n": 23,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-070",
+    "tarea": "tipo",
+    "esperado": "COMPARISON",
+    "aceptables": [
+     "COMPARISON"
+    ],
+    "pred": "COMPARISON",
+    "valido": true,
+    "ms": 425.335666994215,
+    "salida": "{\"tipo\": \"COMPARISON\"}",
+    "prompt_n": 27,
+    "gen_n": 9
+   },
+   {
+    "id": "tipo-071",
+    "tarea": "tipo",
+    "esperado": "COMPARISON",
+    "aceptables": [
+     "COMPARISON"
+    ],
+    "pred": "COMPARISON",
+    "valido": true,
+    "ms": 505.46137499623,
+    "salida": "{\"tipo\": \"COMPARISON\"}",
+    "prompt_n": 21,
+    "gen_n": 9
+   },
+   {
+    "id": "tipo-072",
+    "tarea": "tipo",
+    "esperado": "COMPARISON",
+    "aceptables": [
+     "COMPARISON"
+    ],
+    "pred": "COMPARISON",
+    "valido": true,
+    "ms": 486.42804198607337,
+    "salida": "{\"tipo\": \"COMPARISON\"}",
+    "prompt_n": 30,
+    "gen_n": 9
+   },
+   {
+    "id": "tipo-073",
+    "tarea": "tipo",
+    "esperado": "COMPARISON",
+    "aceptables": [
+     "COMPARISON"
+    ],
+    "pred": "COMPARISON",
+    "valido": true,
+    "ms": 452.07233299151994,
+    "salida": "{\"tipo\": \"COMPARISON\"}",
+    "prompt_n": 20,
+    "gen_n": 9
+   },
+   {
+    "id": "tipo-074",
+    "tarea": "tipo",
+    "esperado": "COMPARISON",
+    "aceptables": [
+     "COMPARISON"
+    ],
+    "pred": "COMPARISON",
+    "valido": true,
+    "ms": 436.2942500010831,
+    "salida": "{\"tipo\": \"COMPARISON\"}",
+    "prompt_n": 30,
+    "gen_n": 9
+   },
+   {
+    "id": "tipo-075",
+    "tarea": "tipo",
+    "esperado": "COMPARISON",
+    "aceptables": [
+     "COMPARISON"
+    ],
+    "pred": "COMPARISON",
+    "valido": true,
+    "ms": 474.30899999744724,
+    "salida": "{\"tipo\": \"COMPARISON\"}",
+    "prompt_n": 23,
+    "gen_n": 9
+   },
+   {
+    "id": "tipo-076",
+    "tarea": "tipo",
+    "esperado": "COMPARISON",
+    "aceptables": [
+     "COMPARISON"
+    ],
+    "pred": "COMPARISON",
+    "valido": true,
+    "ms": 523.8166250055656,
+    "salida": "{\"tipo\": \"COMPARISON\"}",
+    "prompt_n": 28,
+    "gen_n": 9
+   },
+   {
+    "id": "tipo-077",
+    "tarea": "tipo",
+    "esperado": "COMPARISON",
+    "aceptables": [
+     "COMPARISON"
+    ],
+    "pred": "COMPARISON",
+    "valido": true,
+    "ms": 683.268541994039,
+    "salida": "{\"tipo\": \"COMPARISON\"}",
+    "prompt_n": 24,
+    "gen_n": 9
+   },
+   {
+    "id": "tipo-078",
+    "tarea": "tipo",
+    "esperado": "COMPARISON",
+    "aceptables": [
+     "COMPARISON"
+    ],
+    "pred": "COMPARISON",
+    "valido": true,
+    "ms": 497.3151660087751,
+    "salida": "{\"tipo\": \"COMPARISON\"}",
+    "prompt_n": 25,
+    "gen_n": 9
+   },
+   {
+    "id": "tipo-079",
+    "tarea": "tipo",
+    "esperado": "UNKNOWN",
+    "aceptables": [
+     "UNKNOWN",
+     "CONCEPT"
+    ],
+    "pred": "UNKNOWN",
+    "valido": true,
+    "ms": 358.6783749924507,
+    "salida": "{\"tipo\": \"UNKNOWN\"}",
+    "prompt_n": 19,
+    "gen_n": 7
+   },
+   {
+    "id": "tipo-080",
+    "tarea": "tipo",
+    "esperado": "UNKNOWN",
+    "aceptables": [
+     "UNKNOWN"
+    ],
+    "pred": "UNKNOWN",
+    "valido": true,
+    "ms": 408.8175840006443,
+    "salida": "{\"tipo\": \"UNKNOWN\"}",
+    "prompt_n": 15,
+    "gen_n": 7
+   },
+   {
+    "id": "tipo-081",
+    "tarea": "tipo",
+    "esperado": "UNKNOWN",
+    "aceptables": [
+     "UNKNOWN"
+    ],
+    "pred": "UNKNOWN",
+    "valido": true,
+    "ms": 391.2131669931114,
+    "salida": "{\"tipo\": \"UNKNOWN\"}",
+    "prompt_n": 18,
+    "gen_n": 7
+   },
+   {
+    "id": "tipo-082",
+    "tarea": "tipo",
+    "esperado": "UNKNOWN",
+    "aceptables": [
+     "UNKNOWN"
+    ],
+    "pred": "UNKNOWN",
+    "valido": true,
+    "ms": 413.0315420043189,
+    "salida": "{\"tipo\": \"UNKNOWN\"}",
+    "prompt_n": 17,
+    "gen_n": 7
+   },
+   {
+    "id": "tipo-083",
+    "tarea": "tipo",
+    "esperado": "UNKNOWN",
+    "aceptables": [
+     "UNKNOWN"
+    ],
+    "pred": "UNKNOWN",
+    "valido": true,
+    "ms": 348.5199170099804,
+    "salida": "{\"tipo\": \"UNKNOWN\"}",
+    "prompt_n": 19,
+    "gen_n": 7
+   },
+   {
+    "id": "tipo-084",
+    "tarea": "tipo",
+    "esperado": "UNKNOWN",
+    "aceptables": [
+     "UNKNOWN"
+    ],
+    "pred": "UNKNOWN",
+    "valido": true,
+    "ms": 433.3515839971369,
+    "salida": "{\"tipo\": \"UNKNOWN\"}",
+    "prompt_n": 17,
+    "gen_n": 7
+   },
+   {
+    "id": "tipo-085",
+    "tarea": "tipo",
+    "esperado": "UNKNOWN",
+    "aceptables": [
+     "UNKNOWN",
+     "CONCEPT"
+    ],
+    "pred": "CONCEPT",
+    "valido": true,
+    "ms": 418.76254200178664,
+    "salida": "{\"tipo\": \"CONCEPT\"}",
+    "prompt_n": 17,
+    "gen_n": 8
+   },
+   {
+    "id": "tipo-086",
+    "tarea": "tipo",
+    "esperado": "UNKNOWN",
+    "aceptables": [
+     "UNKNOWN"
+    ],
+    "pred": "UNKNOWN",
+    "valido": true,
+    "ms": 359.88845900283195,
+    "salida": "{\"tipo\": \"UNKNOWN\"}",
+    "prompt_n": 20,
+    "gen_n": 7
+   },
+   {
+    "id": "tipo-087",
+    "tarea": "tipo",
+    "esperado": "UNKNOWN",
+    "aceptables": [
+     "UNKNOWN"
+    ],
+    "pred": "UNKNOWN",
+    "valido": true,
+    "ms": 393.6334999889368,
+    "salida": "{\"tipo\": \"UNKNOWN\"}",
+    "prompt_n": 17,
+    "gen_n": 7
+   },
+   {
+    "id": "tipo-088",
+    "tarea": "tipo",
+    "esperado": "UNKNOWN",
+    "aceptables": [
+     "UNKNOWN"
+    ],
+    "pred": "UNKNOWN",
+    "valido": true,
+    "ms": 361.7428749857936,
+    "salida": "{\"tipo\": \"UNKNOWN\"}",
+    "prompt_n": 17,
+    "gen_n": 7
+   },
+   {
+    "id": "tipo-089",
+    "tarea": "tipo",
+    "esperado": "UNKNOWN",
+    "aceptables": [
+     "UNKNOWN"
+    ],
+    "pred": "UNKNOWN",
+    "valido": true,
+    "ms": 399.01383299729787,
+    "salida": "{\"tipo\": \"UNKNOWN\"}",
+    "prompt_n": 19,
+    "gen_n": 7
+   },
+   {
+    "id": "tipo-090",
+    "tarea": "tipo",
+    "esperado": "UNKNOWN",
+    "aceptables": [
+     "UNKNOWN",
+     "CONCEPT"
+    ],
+    "pred": "UNKNOWN",
+    "valido": true,
+    "ms": 411.50704098981805,
+    "salida": "{\"tipo\": \"UNKNOWN\"}",
+    "prompt_n": 18,
+    "gen_n": 7
+   },
+   {
+    "id": "evid-001",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 1249.9743340013083,
+    "salida": "{\"suficiente\": \"si\"}",
+    "prompt_n": 372,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-002",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 851.8874160072301,
+    "salida": "{\"suficiente\": \"si\"}",
+    "prompt_n": 167,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-003",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 1050.0338750134688,
+    "salida": "{\"suficiente\": \"si\"}",
+    "prompt_n": 236,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-004",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 986.3725420000264,
+    "salida": "{\"suficiente\": \"si\"}",
+    "prompt_n": 247,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-005",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 1055.1700000069104,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 273,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-006",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 988.8229589996627,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 245,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-007",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 1288.5531669890042,
+    "salida": "{\"suficiente\": \"si\"}",
+    "prompt_n": 329,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-008",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 897.7587910048896,
+    "salida": "{\"suficiente\": \"si\"}",
+    "prompt_n": 207,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-009",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 1443.160666996846,
+    "salida": "{\"suficiente\": \"si\"}",
+    "prompt_n": 411,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-010",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 889.3944169976749,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 190,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-011",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 1148.8974999956554,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 287,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-012",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 1025.2939170022728,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 279,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-013",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 1147.3454999941168,
+    "salida": "{\"suficiente\": \"si\"}",
+    "prompt_n": 287,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-014",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 1157.085791011923,
+    "salida": "{\"suficiente\": \"si\"}",
+    "prompt_n": 285,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-015",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 940.0526250101393,
+    "salida": "{\"suficiente\": \"si\"}",
+    "prompt_n": 244,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-016",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 1097.2534589964198,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 246,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-017",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 813.6999580019619,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 156,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-018",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 1513.594167001429,
+    "salida": "{\"suficiente\": \"si\"}",
+    "prompt_n": 449,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-019",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 1376.219540994498,
+    "salida": "{\"suficiente\": \"si\"}",
+    "prompt_n": 368,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-020",
+    "tarea": "evidencia",
+    "esperado": "si",
+    "aceptables": [
+     "si"
+    ],
+    "pred": "si",
+    "valido": true,
+    "ms": 1363.30770800123,
+    "salida": "{\"suficiente\": \"si\"}",
+    "prompt_n": 326,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-021",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 1237.0663750043605,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 334,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-022",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 870.7519589952426,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 201,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-023",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 1013.9830830012215,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 239,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-024",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 1088.7653329991736,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 277,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-025",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 997.4366670066956,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 242,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-026",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 901.0335829952965,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 202,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-027",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 1539.4040840037633,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 416,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-028",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 828.53983300447,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 169,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-029",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 974.909167009173,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 223,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-030",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 812.7367499982938,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 195,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-031",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 1183.2818330003647,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 262,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-032",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 1508.5469159967033,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 308,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-033",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 1045.1231249899138,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 284,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-034",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 1158.9590410003439,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 284,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-035",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 1594.634707988007,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 416,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-036",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 943.1693749938859,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 208,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-037",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 1624.184750005952,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 466,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-038",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 829.6530829975381,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 194,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-039",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 732.5042080046842,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 161,
+    "gen_n": 9
+   },
+   {
+    "id": "evid-040",
+    "tarea": "evidencia",
+    "esperado": "no",
+    "aceptables": [
+     "no"
+    ],
+    "pred": "no",
+    "valido": true,
+    "ms": 1490.7445419958094,
+    "salida": "{\"suficiente\": \"no\"}",
+    "prompt_n": 413,
+    "gen_n": 9
+   }
+  ],
+  "generacion": [
+   {
+    "id": "gen-001",
+    "tarea": "generacion",
+    "ms": 15048.51766700449,
+    "salida": "{\"intro\": \"Siga los pasos a continuación para configurar los aprobadores de pagos, la moneda y el monto máximo de autorización.\", \"pasos\": [{\"n\": 1, \"id\": \"administrativo.definir-aprobadores-de-pagos#1\", \"texto\": \"Vaya al escenario **Datos Generales** y ubíquese en la empresa.\", \"fotos\": [\"484ff672db2e\"]}, {\"n\": 2, \"id\": \"administrativo.definir-aprobadores-de-pagos#2\", \"texto\": \"En **Usuarios por Empresa**, haga clic derecho y seleccione al usuario del catálogo de usuarios.\", \"fotos\": []}, {\"n\": 3, \"id\": \"administrativo.definir-aprobadores-de-pagos#3\", \"texto\": \"Una vez agregado, habilite el check de **Responsable**.\", \"fotos\": [\"1b19f60f3d93\"]}, {\"n\": 4, \"id\": \"administrativo.definir-aprobadores-de-pagos#4\", \"texto\": \"Luego, ubíquese en la sucursal **Principal**.\", \"fotos\": [\"0d3098af1bb6\"]}, {\"n\": 5, \"id\": \"administrativo.definir-aprobadores-de-pagos#5\", \"texto\": \"En **Usuarios por Sucursal**, haga clic derecho y seleccione al usuario con doble clic.\", \"fotos\": []}, {\"n\": 6, \"id\": \"administrativo.definir-aprobadores-de-pagos#6\", \"texto\": \"Defina al usuario como aprobador: habilite el check **Autoriza pago**.\", \"fotos\": [\"51d67457532b\"]}]}",
+    "fin": "stop",
+    "json": true,
+    "n_pasos": true,
+    "orden": true,
+    "fotos": true,
+    "negritas": true,
+    "negritas_laxas": true,
+    "sin_nuevos": true,
+    "nuevos": [],
+    "copia": 1.0,
+    "ratio": 1.0,
+    "valida": true,
+    "prompt_n": 679,
+    "gen_n": 379,
+    "prompt_tps": 341.6726966781765,
+    "gen_tps": 29.058982508183796,
+    "prompt_ms": 1987.282,
+    "gen_ms": 13008.026
+   },
+   {
+    "id": "gen-002",
+    "tarea": "generacion",
+    "ms": 13796.825500001432,
+    "salida": "{\"intro\": \"Siga estos pasos para configurar el stock mínimo de los recursos y gestionar sus pedidos de reposición.\", \"pasos\": [{\"n\": 1, \"id\": \"almacenes.asignar-stock-minimo#1\", \"texto\": \"En el árbol, ubique el almacén y elija el acceso al escenario de **Stock**.\", \"fotos\": [\"68725c226d90\"]}, {\"n\": 2, \"id\": \"almacenes.asignar-stock-minimo#2\", \"texto\": \"Use las opciones del filtro avanzado para ubicar el recurso.\", \"fotos\": [\"1946b1c09cf4\"]}, {\"n\": 3, \"id\": \"almacenes.asignar-stock-minimo#3\", \"texto\": \"Registre la cantidad que será el stock mínimo del recurso; para definirla, tome en cuenta el tiempo de reposición.\", \"fotos\": []}, {\"n\": 4, \"id\": \"almacenes.asignar-stock-minimo#4\", \"texto\": \"En **Filtro**, elija **Recursos con stock Minimo** para ver los recursos que tienen stock mínimo.\", \"fotos\": [\"178bef598fb9\"]}, {\"n\": 5, \"id\": \"almacenes.asignar-stock-minimo#5\", \"texto\": \"Cuando el stock de un recurso esté por debajo del mínimo, haga clic derecho y, en **Reposición**, elija **Generar Pedido para Recursos Seleccionados** (o **Generar Pedido para todos los Recursos**).\", \"fotos\": [\"a04852bc899d\"]}]}",
+    "fin": "stop",
+    "json": true,
+    "n_pasos": true,
+    "orden": true,
+    "fotos": true,
+    "negritas": true,
+    "negritas_laxas": true,
+    "sin_nuevos": true,
+    "nuevos": [],
+    "copia": 1.0,
+    "ratio": 1.0,
+    "valida": true,
+    "prompt_n": 419,
+    "gen_n": 361,
+    "prompt_tps": 377.75415687345776,
+    "gen_tps": 28.539473421346955,
+    "prompt_ms": 1109.187,
+    "gen_ms": 12614.108
+   },
+   {
+    "id": "gen-003",
+    "tarea": "generacion",
+    "ms": 17924.807582996436,
+    "salida": "{\"intro\": \"Siga los pasos a continuación para aprobar un pedido de compra en el escenario correspondiente.\", \"pasos\": [{\"n\": 1, \"id\": \"compras.aprobar-pedido#1\", \"texto\": \"Ingrese al módulo de Compras y Pedidos como el usuario que aprueba los pedidos.\", \"fotos\": [\"9c9bb94f703b\"]}, {\"n\": 2, \"id\": \"compras.aprobar-pedido#2\", \"texto\": \"Ingrese al escenario de **Aprobación** de pedidos.\", \"fotos\": [\"9a7ef4073d87\"]}, {\"n\": 3, \"id\": \"compras.aprobar-pedido#3\", \"texto\": \"Haga clic derecho sobre el pedido y elija **Aprobar pedido** para aprobar todos los recursos que forman parte del pedido.\", \"fotos\": [\"c335b4a255c3\"]}, {\"n\": 4, \"id\": \"compras.aprobar-pedido#4\", \"texto\": \"Responda que sí al mensaje que pregunta si desea aprobar todo el pedido.\", \"fotos\": [\"1263dc1a2ae4\"]}, {\"n\": 5, \"id\": \"compras.aprobar-pedido#5\", \"texto\": \"Si solo quiere aprobar un recurso del pedido, total o parcialmente, haga clic derecho sobre el recurso y use la opción de aprobación del recurso.\", \"fotos\": []}, {\"n\": 6, \"id\": \"compras.aprobar-pedido#6\", \"texto\": \"Para ver el documento generado, haga clic derecho sobre el pedido aprobado y elija **Ver / Generar Pedidos a Almacen o Compras**.\", \"fotos\": [\"28e99337bbf9\", \"ad7751290dd0\"]}]}",
+    "fin": "stop",
+    "json": true,
+    "n_pasos": true,
+    "orden": true,
+    "fotos": true,
+    "negritas": true,
+    "negritas_laxas": true,
+    "sin_nuevos": true,
+    "nuevos": [],
+    "copia": 1.0,
+    "ratio": 1.0,
+    "valida": true,
+    "prompt_n": 462,
+    "gen_n": 405,
+    "prompt_tps": 332.1456609698654,
+    "gen_tps": 24.51579187160716,
+    "prompt_ms": 1390.956,
+    "gen_ms": 16479.174
+   },
+   {
+    "id": "gen-004",
+    "tarea": "generacion",
+    "ms": 15635.459500001161,
+    "salida": "{\"intro\": \"Siga los pasos a continuación para cerrar permanentemente un periodo contable desde el escenario correspondiente.\", \"pasos\": [{\"n\": 1, \"id\": \"contabilidad.cierre-permanente-del-periodo#1\", \"texto\": \"Ingrese al escenario **Periodos Contables**.\", \"fotos\": [\"9bbe2569833d\"]}, {\"n\": 2, \"id\": \"contabilidad.cierre-permanente-del-periodo#2\", \"texto\": \"Ubique el periodo que va a cerrar (por ejemplo, **Enero 2015**).\", \"fotos\": []}, {\"n\": 3, \"id\": \"contabilidad.cierre-permanente-del-periodo#3\", \"texto\": \"Cambie el **Estado** del periodo de abierto a **Cerrado**.\", \"fotos\": []}, {\"n\": 4, \"id\": \"contabilidad.cierre-permanente-del-periodo#4\", \"texto\": \"Establezca el **Cierre Permanente** en **SI**.\", \"fotos\": [\"c7262dfc6b65\"]}, {\"n\": 5, \"id\": \"contabilidad.cierre-permanente-del-periodo#5\", \"texto\": \"Analice la copia de seguridad generada a raíz del cierre permanente en el escenario **Auditoria de asientos cerrados**.\", \"fotos\": [\"da56cd7356ed\"]}]}",
+    "fin": "stop",
+    "json": true,
+    "n_pasos": true,
+    "orden": true,
+    "fotos": true,
+    "negritas": true,
+    "negritas_laxas": true,
+    "sin_nuevos": true,
+    "nuevos": [],
+    "copia": 1.0,
+    "ratio": 1.0,
+    "valida": true,
+    "prompt_n": 379,
+    "gen_n": 314,
+    "prompt_tps": 318.96342777119463,
+    "gen_tps": 21.835031384892794,
+    "prompt_ms": 1188.224,
+    "gen_ms": 14334.763
+   },
+   {
+    "id": "gen-005",
+    "tarea": "generacion",
+    "ms": 12016.025208009523,
+    "salida": "{\"intro\": \"Siga los pasos a continuación para dar de baja un comprobante electrónico mediante la Comunicación de Baja en el S10.\", \"pasos\": [{\"n\": 1, \"id\": \"facturacion-electronica.comunicar-baja-de-comprobante#1\", \"texto\": \"Anule el documento electrónico en el S10, indicando el motivo de anulación.\", \"fotos\": []}, {\"n\": 2, \"id\": \"facturacion-electronica.comunicar-baja-de-comprobante#2\", \"texto\": \"Ingrese a la opción **Comunicación de Baja** del menú de **Facturación Electrónica**.\", \"fotos\": [\"4dc39790d87d\"]}, {\"n\": 3, \"id\": \"facturacion-electronica.comunicar-baja-de-comprobante#3\", \"texto\": \"Use la opción **Adicionar** para registrar un nuevo documento de Comunicación de Baja.\", \"fotos\": [\"002901db3bc0\"]}, {\"n\": 4, \"id\": \"facturacion-electronica.comunicar-baja-de-comprobante#4\", \"texto\": \"Adicione los documentos anulados que dará de baja: todos deben tener la misma fecha de emisión.\", \"fotos\": []}, {\"n\": 5, \"id\": \"facturacion-electronica.comunicar-baja-de-comprobante#5\", \"texto\": \"Envíe la comunicación a la SUNAT con la opción **Enviar a SUNAT**.\", \"fotos\": []}]}",
+    "fin": "stop",
+    "json": true,
+    "n_pasos": true,
+    "orden": true,
+    "fotos": true,
+    "negritas": true,
+    "negritas_laxas": true,
+    "sin_nuevos": true,
+    "nuevos": [],
+    "copia": 1.0,
+    "ratio": 1.0,
+    "valida": true,
+    "prompt_n": 379,
+    "gen_n": 329,
+    "prompt_tps": 318.8515287626794,
+    "gen_tps": 30.36917528708361,
+    "prompt_ms": 1188.641,
+    "gen_ms": 10800.425
+   },
+   {
+    "id": "gen-006",
+    "tarea": "generacion",
+    "ms": 15879.615665995516,
+    "salida": "{\"intro\": \"Siga los pasos a continuación para configurar los usuarios y sus accesos en el módulo de Facturación.\", \"pasos\": [{\"n\": 1, \"id\": \"facturacion.definir-usuarios-y-accesos#1\", \"texto\": \"Ubíquese en el grupo **Utilitarios** y luego en el escenario **Mantenimiento de Usuarios**.\", \"fotos\": [\"1a62fb7b8522\"]}, {\"n\": 2, \"id\": \"facturacion.definir-usuarios-y-accesos#2\", \"texto\": \"Haga clic derecho y cree un nuevo grupo, al que le pondrá el nombre de la empresa.\", \"fotos\": [\"689d4d29f1ab\"]}, {\"n\": 3, \"id\": \"facturacion.definir-usuarios-y-accesos#3\", \"texto\": \"Ubíquese en el subgrupo creado y agregue al usuario.\", \"fotos\": [\"899a094f30f5\"]}, {\"n\": 4, \"id\": \"facturacion.definir-usuarios-y-accesos#4\", \"texto\": \"Si el empleado no está en el catálogo, créelo.\", \"fotos\": [\"4257a99cda6f\", \"5bfe6a49997b\"]}, {\"n\": 5, \"id\": \"facturacion.definir-usuarios-y-accesos#5\", \"texto\": \"En la pestaña **Escenarios**, dé acceso a los escenarios del módulo: ubíquese en un campo, haga clic derecho y elija **Dar acceso**.\", \"fotos\": [\"efeeba5eb814\"]}, {\"n\": 6, \"id\": \"facturacion.definir-usuarios-y-accesos#6\", \"texto\": \"Para dar permisos por empresa, ubíquese en el grupo **Inicio** > **Datos Generales**.\", \"fotos\": [\"21d5ef9699b8\"]}]}",
+    "fin": "stop",
+    "json": true,
+    "n_pasos": true,
+    "orden": true,
+    "fotos": true,
+    "negritas": true,
+    "negritas_laxas": true,
+    "sin_nuevos": true,
+    "nuevos": [],
+    "copia": 1.0,
+    "ratio": 1.0,
+    "valida": true,
+    "prompt_n": 486,
+    "gen_n": 438,
+    "prompt_tps": 350.12719126670396,
+    "gen_tps": 30.22181010523276,
+    "prompt_ms": 1388.067,
+    "gen_ms": 14459.756
+   },
+   {
+    "id": "gen-007",
+    "tarea": "generacion",
+    "ms": 16192.278917005751,
+    "salida": "{\"intro\": \"Siga los pasos a continuación para asignar presupuestos a las ramas del proyecto y configurar la línea base.\", \"pasos\": [{\"n\": 1, \"id\": \"gerencia-proyectos.asignar-presupuestos-al-proyecto#1\", \"texto\": \"En el escenario de **Datos Generales**, seleccione el proyecto en el árbol.\", \"fotos\": []}, {\"n\": 2, \"id\": \"gerencia-proyectos.asignar-presupuestos-al-proyecto#2\", \"texto\": \"Seleccione la rama a la que asignará el presupuesto: en la rama **Venta**, toda la información es para el propietario del proyecto; en la rama **Meta**, la información es interna y para la gestión del proyecto.\", \"fotos\": []}, {\"n\": 3, \"id\": \"gerencia-proyectos.asignar-presupuestos-al-proyecto#3\", \"texto\": \"Haga clic derecho en el segmento de presupuestos de la rama y seleccione **Asignar presupuesto**.\", \"fotos\": [\"385fe3f57c13\"]}, {\"n\": 4, \"id\": \"gerencia-proyectos.asignar-presupuestos-al-proyecto#4\", \"texto\": \"Del **Catálogo de Presupuestos**, seleccione el presupuesto que desea asignar a la rama.\", \"fotos\": [\"9bee13da9061\"]}, {\"n\": 5, \"id\": \"gerencia-proyectos.asignar-presupuestos-al-proyecto#5\", \"texto\": \"Repita el proceso para asignar los demás presupuestos a las ramas correspondientes; el sistema permite asignar uno o más presupuestos a cada rama.\", \"fotos\": []}, {\"n\": 6, \"id\": \"gerencia-proyectos.asignar-presupuestos-al-proyecto#6\", \"texto\": \"Una vez que tenga la programación concluida en la rama meta y antes de iniciar la construcción del proyecto, cree la **Línea Base**.\", \"fotos\": [\"0b2b710bc5e2\"]}]}",
+    "fin": "stop",
+    "json": true,
+    "n_pasos": true,
+    "orden": true,
+    "fotos": true,
+    "negritas": true,
+    "negritas_laxas": true,
+    "sin_nuevos": true,
+    "nuevos": [],
+    "copia": 0.16666666666666666,
+    "ratio": 1.027,
+    "valida": true,
+    "prompt_n": 498,
+    "gen_n": 442,
+    "prompt_tps": 359.0873988444308,
+    "gen_tps": 30.187247181804857,
+    "prompt_ms": 1386.849,
+    "gen_ms": 14608.818
+   },
+   {
+    "id": "gen-008",
+    "tarea": "generacion",
+    "ms": 16207.273666994297,
+    "salida": "{\"intro\": \"Siga los siguientes pasos para instalar el S10 ERP en su equipo.\", \"pasos\": [{\"n\": 1, \"id\": \"instalacion.instalar-s10-erp#1\", \"texto\": \"Desactive su antivirus antes de comenzar, de preferencia hasta que concluya la instalación.\", \"fotos\": [\"e969f28b0cc6\"]}, {\"n\": 2, \"id\": \"instalacion.instalar-s10-erp#2\", \"texto\": \"Ejecute el instalador del DVD. Si el sistema muestra el mensaje del componente **DirectPlay**, siga las indicaciones para instalarlo y vuelva a ejecutar el instalador.\", \"fotos\": [\"5e660cd12ad7\"]}, {\"n\": 3, \"id\": \"instalacion.instalar-s10-erp#3\", \"texto\": \"Cierre el mensaje informativo que pide desactivar el antivirus, si ya lo desactivó.\", \"fotos\": [\"65628e1debb7\"]}, {\"n\": 4, \"id\": \"instalacion.instalar-s10-erp#4\", \"texto\": \"En la primera ventana del instalador, marque **CLIENTE** (instala S10 en el equipo); marque también **SERVIDOR** (instala el motor de base de datos, por defecto SQL Server 2012) solo si no cuenta con un servidor.\", \"fotos\": [\"8e5669f491d1\"]}, {\"n\": 5, \"id\": \"instalacion.instalar-s10-erp#5\", \"texto\": \"Si el sistema le muestra el mensaje del control de cuentas de usuario, desactívelo: de otra forma la instalación no podrá completarse.\", \"fotos\": [\"e6f5da11aaac\"]}, {\"n\": 6, \"id\": \"instalacion.instalar-s10-erp#6\", \"texto\": \"Lea y acepte los términos del contrato.\", \"fotos\": [\"c6cfbdf741a6\"]}]}",
+    "fin": "stop",
+    "json": true,
+    "n_pasos": true,
+    "orden": true,
+    "fotos": true,
+    "negritas": true,
+    "negritas_laxas": true,
+    "sin_nuevos": true,
+    "nuevos": [],
+    "copia": 1.0,
+    "ratio": 1.0,
+    "valida": true,
+    "prompt_n": 516,
+    "gen_n": 452,
+    "prompt_tps": 354.14386064850873,
+    "gen_tps": 30.69090535925134,
+    "prompt_ms": 1457.035,
+    "gen_ms": 14694.907
+   },
+   {
+    "id": "gen-009",
+    "tarea": "generacion",
+    "ms": 12844.498834005208,
+    "salida": "{\"intro\": \"Siga estos pasos para calcular la nómina siguiendo el orden establecido en el plan.\", \"pasos\": [{\"n\": 1, \"id\": \"nominas.calcular-la-nomina#1\", \"texto\": \"Ingrese al escenario **Resumen de Conceptos por Día**.\", \"fotos\": [\"ce61d610de85\"]}, {\"n\": 2, \"id\": \"nominas.calcular-la-nomina#2\", \"texto\": \"Ingrese al escenario **Resumen de Conceptos por Periodo**.\", \"fotos\": [\"1819ba0ff97d\"]}, {\"n\": 3, \"id\": \"nominas.calcular-la-nomina#3\", \"texto\": \"Use la opción de la llamada a para generar por primera vez o actualizar el resumen de conceptos por Periodo.\", \"fotos\": []}, {\"n\": 4, \"id\": \"nominas.calcular-la-nomina#4\", \"texto\": \"Ingrese al escenario **Cálculo de Nóminas** del **MULTIPROYECTO**.\", \"fotos\": [\"05eb785bfdcb\"]}, {\"n\": 5, \"id\": \"nominas.calcular-la-nomina#5\", \"texto\": \"Elija el **tipo de nómina** (llamada a).\", \"fotos\": [\"5b8426d6d839\"]}, {\"n\": 6, \"id\": \"nominas.calcular-la-nomina#6\", \"texto\": \"Elija el tipo de proceso (llamada b): primero, el proceso estándar.\", \"fotos\": []}]}",
+    "fin": "stop",
+    "json": true,
+    "n_pasos": true,
+    "orden": true,
+    "fotos": true,
+    "negritas": true,
+    "negritas_laxas": true,
+    "sin_nuevos": true,
+    "nuevos": [],
+    "copia": 1.0,
+    "ratio": 1.0,
+    "valida": true,
+    "prompt_n": 425,
+    "gen_n": 362,
+    "prompt_tps": 350.0307615269248,
+    "gen_tps": 31.063786689365315,
+    "prompt_ms": 1214.179,
+    "gen_ms": 11621.249
+   },
+   {
+    "id": "gen-010",
+    "tarea": "generacion",
+    "ms": 14891.409332994954,
+    "salida": "{\"intro\": \"Siga los pasos a continuación para calcular analíticamente los gastos generales en su presupuesto.\", \"pasos\": [{\"n\": 1, \"id\": \"presupuestos.calcular-gastos-generales#1\", \"texto\": \"Ingrese al escenario de **Gastos Generales** y ubique el presupuesto.\", \"fotos\": [\"0136a811d2e4\"]}, {\"n\": 2, \"id\": \"presupuestos.calcular-gastos-generales#2\", \"texto\": \"Haga clic derecho en el segmento de rubros, elija **Adicionar rubro** y, en el **Catálogo de Rubros**, seleccione los rubros (por ejemplo, PERSONAL TECNICO).\", \"fotos\": []}, {\"n\": 3, \"id\": \"presupuestos.calcular-gastos-generales#3\", \"texto\": \"Elija un rubro, haga clic derecho en el segmento de conceptos y elija **Adicionar concepto**.\", \"fotos\": [\"2b365db8d63d\"]}, {\"n\": 4, \"id\": \"presupuestos.calcular-gastos-generales#4\", \"texto\": \"En el **Catálogo de Conceptos**, elija los conceptos (por ejemplo, Residente principal).\", \"fotos\": [\"ae1bddc3a9e1\"]}, {\"n\": 5, \"id\": \"presupuestos.calcular-gastos-generales#5\", \"texto\": \"Ingrese los datos de cada concepto: **Unidad**, **Persona**, **%Partp.**, **Tiempo** y **Sueldo/Jornal**.\", \"fotos\": [\"93659da284fd\"]}, {\"n\": 6, \"id\": \"presupuestos.calcular-gastos-generales#6\", \"texto\": \"Repita el proceso para los demás rubros.\", \"fotos\": []}]}",
+    "fin": "stop",
+    "json": true,
+    "n_pasos": true,
+    "orden": true,
+    "fotos": true,
+    "negritas": true,
+    "negritas_laxas": true,
+    "sin_nuevos": true,
+    "nuevos": [],
+    "copia": 1.0,
+    "ratio": 1.0,
+    "valida": true,
+    "prompt_n": 465,
+    "gen_n": 415,
+    "prompt_tps": 358.7461936257359,
+    "gen_tps": 30.55959490082895,
+    "prompt_ms": 1296.181,
+    "gen_ms": 13547.3
+   },
+   {
+    "id": "gen-011",
+    "tarea": "generacion",
+    "ms": 16252.670542002306,
+    "salida": "{\"intro\": \"Siga los pasos a continuación para publicar un parte de tareo desde el S10 y permitir el acceso desde un dispositivo móvil.\", \"pasos\": [{\"n\": 1, \"id\": \"tareo-movil.publicar-parte-de-tareo#1\", \"texto\": \"Ingrese a la lista de partes de tareo y seleccione la opción de publicación del parte; cada parte se publica de forma independiente.\", \"fotos\": [\"af317544a988\"]}, {\"n\": 2, \"id\": \"tareo-movil.publicar-parte-de-tareo#2\", \"texto\": \"Elija la forma de publicación: **Nube** (por defecto; utiliza un servicio web de la nube proporcionado por S10) o **local** (requiere instalar un servicio web en el servidor donde está instalado el S10).\", \"fotos\": []}, {\"n\": 3, \"id\": \"tareo-movil.publicar-parte-de-tareo#3\", \"texto\": \"En la pestaña **Por Publicar**, donde se muestra al tareador asignado al parte, haga clic en el campo **¿publicar?** y luego en el botón **Publicar**.\", \"fotos\": [\"d0995ccf4a8b\"]}, {\"n\": 4, \"id\": \"tareo-movil.publicar-parte-de-tareo#4\", \"texto\": \"Si desea dar acceso a invitados, sean o no usuarios del S10, utilice la opción **Adicionar Invitado**: solo podrán ver la información del tareo ya registrado.\", \"fotos\": [\"4de7e27f8148\"]}, {\"n\": 5, \"id\": \"tareo-movil.publicar-parte-de-tareo#5\", \"texto\": \"Revise en la pestaña **Publicados** a todos los usuarios a los que otorgó acceso al tareo desde un dispositivo móvil.\", \"fotos\": [\"41cdded1dd52\"]}]}",
+    "fin": "stop",
+    "json": true,
+    "n_pasos": true,
+    "orden": true,
+    "fotos": true,
+    "negritas": true,
+    "negritas_laxas": true,
+    "sin_nuevos": true,
+    "nuevos": [],
+    "copia": 0.4,
+    "ratio": 1.019,
+    "valida": true,
+    "prompt_n": 477,
+    "gen_n": 438,
+    "prompt_tps": 348.5657287544804,
+    "gen_tps": 29.636063712247246,
+    "prompt_ms": 1368.465,
+    "gen_ms": 14745.548
+   },
+   {
+    "id": "gen-012",
+    "tarea": "generacion",
+    "ms": 15079.127709002933,
+    "salida": "{\"intro\": \"Siga los pasos a continuación para registrar una cobranza en efectivo en el diario de caja.\", \"pasos\": [{\"n\": 1, \"id\": \"administrativo.registrar-cobranza-en-efectivo#1\", \"texto\": \"Vaya al escenario **Diario de caja**, donde aparece automáticamente el diario creado, y ubíquese en él.\", \"fotos\": [\"623542403175\"]}, {\"n\": 2, \"id\": \"administrativo.registrar-cobranza-en-efectivo#2\", \"texto\": \"En la parte de abajo del diario, agregue la transacción.\", \"fotos\": [\"aca15358af50\"]}, {\"n\": 3, \"id\": \"administrativo.registrar-cobranza-en-efectivo#3\", \"texto\": \"Elija el tipo de transacción **Documentos por Cobrar (Ingresos)**.\", \"fotos\": []}, {\"n\": 4, \"id\": \"administrativo.registrar-cobranza-en-efectivo#4\", \"texto\": \"En la ventana **Cobranzas**, elija el **Cliente** si quiere ver solo sus documentos pendientes de cobro; si no elige un cliente, se muestran todos los documentos pendientes.\", \"fotos\": []}, {\"n\": 5, \"id\": \"administrativo.registrar-cobranza-en-efectivo#5\", \"texto\": \"Haga clic derecho en la lista de documentos y elija **Adicionar**.\", \"fotos\": [\"64a8b67585ad\"]}, {\"n\": 6, \"id\": \"administrativo.registrar-cobranza-en-efectivo#6\", \"texto\": \"En el **Cronograma de Cobranzas**, elija el documento: aparecen los documentos ingresados previamente en el módulo de facturación.\", \"fotos\": [\"a0e7be77dba9\"]}]}",
+    "fin": "stop",
+    "json": true,
+    "n_pasos": true,
+    "orden": true,
+    "fotos": true,
+    "negritas": true,
+    "negritas_laxas": true,
+    "sin_nuevos": true,
+    "nuevos": [],
+    "copia": 1.0,
+    "ratio": 1.0,
+    "valida": true,
+    "prompt_n": 467,
+    "gen_n": 421,
+    "prompt_tps": 360.6046730350327,
+    "gen_tps": 30.587970712455014,
+    "prompt_ms": 1295.047,
+    "gen_ms": 13730.888
+   },
+   {
+    "id": "gen-013",
+    "tarea": "generacion",
+    "ms": 18859.620749994065,
+    "salida": "{\"intro\": \"Siga los pasos a continuación para consultar el kardex de un recurso e imprimir el reporte correspondiente para la SUNAT.\", \"pasos\": [{\"n\": 1, \"id\": \"almacenes.consultar-kardex#1\", \"texto\": \"En el árbol, ubique el almacén y elija el acceso al escenario de **Stock**.\", \"fotos\": [\"68725c226d90\"]}, {\"n\": 2, \"id\": \"almacenes.consultar-kardex#2\", \"texto\": \"Si junto al nombre de los recursos aparece el botón de recosteo, elija ese botón y, en la ventana **Seteo de Recosteo**, pulse **Aceptar** para que tome el precio promedio.\", \"fotos\": [\"c7f9a84edcb1\"]}, {\"n\": 3, \"id\": \"almacenes.consultar-kardex#3\", \"texto\": \"Elija la opción **Kardex**.\", \"fotos\": [\"c0e48f01bc01\"]}, {\"n\": 4, \"id\": \"almacenes.consultar-kardex#4\", \"texto\": \"Ubique el recurso que quiere analizar (por ejemplo, CEMENTO PÓRTLAND TIPO I (42.5 Kg.)).\", \"fotos\": [\"b5e94da893af\"]}, {\"n\": 5, \"id\": \"almacenes.consultar-kardex#5\", \"texto\": \"Para el reporte para la SUNAT, use el botón de reporte.\", \"fotos\": [\"41a401bfae3f\"]}, {\"n\": 6, \"id\": \"almacenes.consultar-kardex#6\", \"texto\": \"En **Tipo de Reporte**, elija **SUNAT**.\", \"fotos\": [\"9a1a422183c7\"]}]}",
+    "fin": "stop",
+    "json": true,
+    "n_pasos": true,
+    "orden": true,
+    "fotos": true,
+    "negritas": true,
+    "negritas_laxas": true,
+    "sin_nuevos": true,
+    "nuevos": [],
+    "copia": 1.0,
+    "ratio": 1.0,
+    "valida": true,
+    "prompt_n": 487,
+    "gen_n": 426,
+    "prompt_tps": 272.286389370655,
+    "gen_tps": 24.924206952786395,
+    "prompt_ms": 1788.558,
+    "gen_ms": 17051.696
+   },
+   {
+    "id": "gen-014",
+    "tarea": "generacion",
+    "ms": 17581.78691699868,
+    "salida": "{\"intro\": \"Siga los pasos a continuación para generar una orden de compra desde un pedido aprobado.\", \"pasos\": [{\"n\": 1, \"id\": \"compras.generar-orden-de-compra-desde-pedido#1\", \"texto\": \"Ingrese al escenario de **Pedidos de Compra**.\", \"fotos\": [\"cd0bf33e79cd\"]}, {\"n\": 2, \"id\": \"compras.generar-orden-de-compra-desde-pedido#2\", \"texto\": \"Haga clic derecho sobre el pedido del proyecto y elija **Generar Orden de Compra** para generar la orden con todos los recursos que forman parte del pedido.\", \"fotos\": [\"889a711cc6ec\"]}, {\"n\": 3, \"id\": \"compras.generar-orden-de-compra-desde-pedido#3\", \"texto\": \"Si solo quiere comprar una selección de recursos, haga clic derecho sobre el recurso en lugar del pedido: la orden de compra se genera solo de la selección.\", \"fotos\": []}, {\"n\": 4, \"id\": \"compras.generar-orden-de-compra-desde-pedido#4\", \"texto\": \"En la cabecera de la orden de compra, elija al proveedor.\", \"fotos\": [\"00b49d832443\"]}, {\"n\": 5, \"id\": \"compras.generar-orden-de-compra-desde-pedido#5\", \"texto\": \"Elija al contacto.\", \"fotos\": []}, {\"n\": 6, \"id\": \"compras.generar-orden-de-compra-desde-pedido#6\", \"texto\": \"Registre la fecha de la orden de compra.\", \"fotos\": []}]}",
+    "fin": "stop",
+    "json": true,
+    "n_pasos": true,
+    "orden": true,
+    "fotos": true,
+    "negritas": true,
+    "negritas_laxas": true,
+    "sin_nuevos": true,
+    "nuevos": [],
+    "copia": 0.8333333333333334,
+    "ratio": 0.994,
+    "valida": true,
+    "prompt_n": 443,
+    "gen_n": 377,
+    "prompt_tps": 332.2381224871211,
+    "gen_tps": 23.19434349181835,
+    "prompt_ms": 1333.381,
+    "gen_ms": 16210.849
+   },
+   {
+    "id": "gen-015",
+    "tarea": "generacion",
+    "ms": 19876.677209002082,
+    "salida": "{\"intro\": \"Siga los pasos a continuación para configurar un informe contable en el escenario Informes Contables.\", \"pasos\": [{\"n\": 1, \"id\": \"contabilidad.configurar-informe-contable#1\", \"texto\": \"Ingrese al grupo **Parámetros**, escenario **Informes Contables**.\", \"fotos\": []}, {\"n\": 2, \"id\": \"contabilidad.configurar-informe-contable#2\", \"texto\": \"Haga clic derecho para crear un nuevo informe.\", \"fotos\": [\"8829a00d1239\"]}, {\"n\": 3, \"id\": \"contabilidad.configurar-informe-contable#3\", \"texto\": \"En la ventana que aparece, llene los datos del informe: el nombre del estado financiero, el tipo y la forma en que se visualizará la información.\", \"fotos\": [\"a0a7603ff874\"]}, {\"n\": 4, \"id\": \"contabilidad.configurar-informe-contable#4\", \"texto\": \"Haga clic en **Adicionar**.\", \"fotos\": []}, {\"n\": 5, \"id\": \"contabilidad.configurar-informe-contable#5\", \"texto\": \"Defina la estructura que tendrá el informe, es decir, los niveles con los que contará.\", \"fotos\": [\"164925535924\"]}, {\"n\": 6, \"id\": \"contabilidad.configurar-informe-contable#6\", \"texto\": \"Ingrese los datos de los niveles: descripción, color y **Longitud** (la cantidad de dígitos que aumentará por cada nivel).\", \"fotos\": [\"608b64656b8b\"]}]}",
+    "fin": "stop",
+    "json": true,
+    "n_pasos": true,
+    "orden": true,
+    "fotos": true,
+    "negritas": true,
+    "negritas_laxas": true,
+    "sin_nuevos": true,
+    "nuevos": [],
+    "copia": 1.0,
+    "ratio": 1.0,
+    "valida": true,
+    "prompt_n": 443,
+    "gen_n": 375,
+    "prompt_tps": 236.4458611032681,
+    "gen_tps": 20.832681151581593,
+    "prompt_ms": 1873.579,
+    "gen_ms": 17952.562
+   },
+   {
+    "id": "gen-016",
+    "tarea": "generacion",
+    "ms": 22826.65995901334,
+    "salida": "{\"intro\": \"Siga estos pasos para configurar la emisión electrónica en su empresa.\", \"pasos\": [{\"n\": 1, \"id\": \"facturacion-electronica.configurar-emision-electronica#1\", \"texto\": \"En la ficha de datos de la empresa emisora, registre en el campo **N° Autorización Comprobante** el número de resolución que la SUNAT publicó y que la acredita como emisor electrónico.\", \"fotos\": [\"8d6196721b1f\"]}, {\"n\": 2, \"id\": \"facturacion-electronica.configurar-emision-electronica#2\", \"texto\": \"Cree un tipo de documento para Boletas de Venta, Facturas, Notas de Crédito y Notas de Débito, para la calificación predeterminada de los documentos electrónicos.\", \"fotos\": [\"d103fcf2651d\"]}, {\"n\": 3, \"id\": \"facturacion-electronica.configurar-emision-electronica#3\", \"texto\": \"Defina talonarios calificados para el **Sistema de Emisión Electrónica**.\", \"fotos\": []}, {\"n\": 4, \"id\": \"facturacion-electronica.configurar-emision-electronica#4\", \"texto\": \"Registre el número de serie: debe iniciar con una letra y tener como máximo 4 caracteres; para las facturas y sus notas de crédito o débito, con la letra «F»; para las boletas y sus notas, con la letra «B».\", \"fotos\": []}, {\"n\": 5, \"id\": \"facturacion-electronica.configurar-emision-electronica#5\", \"texto\": \"Configure el número: como máximo 8 dígitos, y debe empezar en 1.\", \"fotos\": [\"6bdce53ea17b\"]}, {\"n\": 6, \"id\": \"facturacion-electronica.configurar-emision-electronica#6\", \"texto\": \"Dé acceso al talonario a los usuarios encargados de la emisión de documentos.\", \"fotos\": [\"439b86fa2d9e\"]}]}",
+    "fin": "stop",
+    "json": true,
+    "n_pasos": true,
+    "orden": true,
+    "fotos": true,
+    "negritas": true,
+    "negritas_laxas": true,
+    "sin_nuevos": true,
+    "nuevos": [],
+    "copia": 1.0,
+    "ratio": 1.0,
+    "valida": true,
+    "prompt_n": 542,
+    "gen_n": 460,
+    "prompt_tps": 220.93844214755427,
+    "gen_tps": 22.561688522667517,
+    "prompt_ms": 2453.172,
+    "gen_ms": 20344.222
+   },
+   {
+    "id": "gen-017",
+    "tarea": "generacion",
+    "ms": 20185.56808300491,
+    "salida": "{\"intro\": \"Siga los pasos a continuación para importar los saldos por cobrar desde Excel a Documentos por cobrar.\", \"pasos\": [{\"n\": 1, \"id\": \"facturacion.importar-saldos-por-cobrar#1\", \"texto\": \"Complete el formato en Excel con los saldos pendientes por cobrar.\", \"fotos\": [\"d508833c4eb9\"]}, {\"n\": 2, \"id\": \"facturacion.importar-saldos-por-cobrar#2\", \"texto\": \"En el módulo de Facturación, cree un recurso llamado «RECURSO PARA LA IMPORTACIÓN DE SALDOS».\", \"fotos\": [\"50de52fcd3db\"]}, {\"n\": 3, \"id\": \"facturacion.importar-saldos-por-cobrar#3\", \"texto\": \"Ingresé al sistema como SA y ubíquese en el grupo **Facturación**, escenario **Documentos por cobrar**.\", \"fotos\": []}, {\"n\": 4, \"id\": \"facturacion.importar-saldos-por-cobrar#4\", \"texto\": \"Haga clic en el icono del lápiz: en la configuración de registros de documentos, el recurso para los documentos de Excel debe ser el «RECURSO PARA LA IMPORTACIÓN DE SALDOS».\", \"fotos\": [\"f6e453138085\"]}, {\"n\": 5, \"id\": \"facturacion.importar-saldos-por-cobrar#5\", \"texto\": \"Vuelva a ingresar con su usuario y, en el escenario **Documentos por cobrar**, haga clic derecho para proceder a la importación de saldos por cobrar.\", \"fotos\": [\"4ff0a14c966c\"]}, {\"n\": 6, \"id\": \"facturacion.importar-saldos-por-cobrar#6\", \"texto\": \"En el mensaje que aparece, ingrese el año del periodo de aplicación y haga clic en **OK**.\", \"fotos\": [\"ec6286b757b7\"]}]}",
+    "fin": "stop",
+    "json": true,
+    "n_pasos": true,
+    "orden": true,
+    "fotos": true,
+    "negritas": true,
+    "negritas_laxas": true,
+    "sin_nuevos": true,
+    "nuevos": [],
+    "copia": 0.6666666666666666,
+    "ratio": 0.94,
+    "valida": true,
+    "prompt_n": 512,
+    "gen_n": 454,
+    "prompt_tps": 296.1956788984298,
+    "gen_tps": 24.77627786797996,
+    "prompt_ms": 1728.587,
+    "gen_ms": 18283.618
+   },
+   {
+    "id": "gen-018",
+    "tarea": "generacion",
+    "ms": 26355.83154100459,
+    "salida": "{\"intro\": \"Siga los pasos a continuación para configurar correctamente el calendario del proyecto en S10.\", \"pasos\": [{\"n\": 1, \"id\": \"gerencia-proyectos.configurar-calendario-del-proyecto#1\", \"texto\": \"Verifique que los días feriados fijos por ley estén registrados en el menú **Herramientas** – **Configuración**; si faltan, solicite al encargado del módulo de Nóminas que los registre.\", \"fotos\": [\"3533ed1a56b2\"]}, {\"n\": 2, \"id\": \"gerencia-proyectos.configurar-calendario-del-proyecto#2\", \"texto\": \"Para el acceso al escenario de **Calendario**, elija el proyecto y luego **Calendario**.\", \"fotos\": [\"ac2f8045a827\"]}, {\"n\": 3, \"id\": \"gerencia-proyectos.configurar-calendario-del-proyecto#3\", \"texto\": \"Haga clic sobre la celda de feriados predeterminados (marcada en el manual con la llamada a) para tomar los días feriados a nivel nacional.\", \"fotos\": []}, {\"n\": 4, \"id\": \"gerencia-proyectos.configurar-calendario-del-proyecto#4\", \"texto\": \"Para registrar los feriados adicionales del lugar y los de semana santa, elija el mes y año, luego el día, y asígnele **NO LABORABLE**.\", \"fotos\": [\"e4b667c17c2e\"]}, {\"n\": 5, \"id\": \"gerencia-proyectos.configurar-calendario-del-proyecto#5\", \"texto\": \"Si necesita modificar el horario asignado por defecto, ubique el cursor sobre cada celda y digite directamente la hora, conservando los dos puntos (:) como separador; repita el proceso en todas las celdas de la fila.\", \"fotos\": [\"eeea85f88f24\"]}, {\"n\": 6, \"id\": \"gerencia-proyectos.configurar-calendario-del-proyecto#6\", \"texto\": \"Solo si se muestra el botón para calcular horas y días laborables para los períodos, úselo; normalmente el sistema efectúa el cálculo en línea.\", \"fotos\": [\"5463f1c1d82f\"]}]}",
+    "fin": "stop",
+    "json": true,
+    "n_pasos": true,
+    "orden": true,
+    "fotos": true,
+    "negritas": true,
+    "negritas_laxas": true,
+    "sin_nuevos": true,
+    "nuevos": [],
+    "copia": 1.0,
+    "ratio": 1.0,
+    "valida": true,
+    "prompt_n": 566,
+    "gen_n": 512,
+    "prompt_tps": 314.9890254707027,
+    "gen_tps": 20.92953084306321,
+    "prompt_ms": 1796.888,
+    "gen_ms": 24415.263
+   },
+   {
+    "id": "gen-019",
+    "tarea": "generacion",
+    "ms": 20538.988167012576,
+    "salida": "{\"intro\": \"Siga estos pasos para generar una copia de seguridad de la base de datos desde el escenario de Utilitarios.\", \"pasos\": [{\"n\": 1, \"id\": \"instalacion.sacar-copia-de-seguridad-de-la-base-de-datos#1\", \"texto\": \"Abra su módulo de S10, vaya al escenario de **Utilitarios** y haga clic en **mantenimiento de base de datos**.\", \"fotos\": [\"6372121a9458\"]}, {\"n\": 2, \"id\": \"instalacion.sacar-copia-de-seguridad-de-la-base-de-datos#2\", \"texto\": \"En la ventana **Mantenimiento de Base de datos**, haga clic en el botón **Siguiente**.\", \"fotos\": [\"56e4e643c7a3\"]}, {\"n\": 3, \"id\": \"instalacion.sacar-copia-de-seguridad-de-la-base-de-datos#3\", \"texto\": \"Haga clic en **Copia de seguridad de base de datos**.\", \"fotos\": [\"a205142cd367\"]}, {\"n\": 4, \"id\": \"instalacion.sacar-copia-de-seguridad-de-la-base-de-datos#4\", \"texto\": \"Escoja la base de datos que desea copiar y haga clic en **Siguiente**.\", \"fotos\": [\"6184f541615d\"]}, {\"n\": 5, \"id\": \"instalacion.sacar-copia-de-seguridad-de-la-base-de-datos#5\", \"texto\": \"Asigne un nombre a la copia de la base de datos y haga clic en **Siguiente**.\", \"fotos\": [\"4a92b7bdc018\"]}, {\"n\": 6, \"id\": \"instalacion.sacar-copia-de-seguridad-de-la-base-de-datos#6\", \"texto\": \"Haga clic en **Copiar** para que comience el proceso.\", \"fotos\": [\"d8a8d1d07d14\"]}]}",
+    "fin": "stop",
+    "json": true,
+    "n_pasos": true,
+    "orden": true,
+    "fotos": true,
+    "negritas": true,
+    "negritas_laxas": true,
+    "sin_nuevos": true,
+    "nuevos": [],
+    "copia": 1.0,
+    "ratio": 1.0,
+    "valida": true,
+    "prompt_n": 521,
+    "gen_n": 459,
+    "prompt_tps": 289.07827862485294,
+    "gen_tps": 24.52008492087053,
+    "prompt_ms": 1802.28,
+    "gen_ms": 18678.565
+   },
+   {
+    "id": "gen-020",
+    "tarea": "generacion",
+    "ms": 24003.87404099456,
+    "salida": "{\"intro\": \"Siga los pasos a continuación para importar los socios de negocio desde una hoja de Excel.\", \"pasos\": [{\"n\": 1, \"id\": \"nominas.importar-socios-de-negocio-desde-excel#1\", \"texto\": \"Ingrese al menú **Catálogos** del módulo de nóminas y elija la opción **Socio de Negocios por tipo**.\", \"fotos\": [\"3bc720dcbc7e\"]}, {\"n\": 2, \"id\": \"nominas.importar-socios-de-negocio-desde-excel#2\", \"texto\": \"Ubique el archivo de Excel que contiene la información a importar.\", \"fotos\": [\"7e62439503db\"]}, {\"n\": 3, \"id\": \"nominas.importar-socios-de-negocio-desde-excel#3\", \"texto\": \"Elija el rango de filas que será importado (llamada 1).\", \"fotos\": [\"b1ef734b4dd5\"]}, {\"n\": 4, \"id\": \"nominas.importar-socios-de-negocio-desde-excel#4\", \"texto\": \"Use el botón para elegir el nombre de la columna y haga clic en la cabecera de la columna del Excel (llamada 2). Repita el proceso para todas las columnas.\", \"fotos\": []}, {\"n\": 5, \"id\": \"nominas.importar-socios-de-negocio-desde-excel#5\", \"texto\": \"Con el cursor en el árbol sobre «Todos los Registros», registre el tipo: «03 Obreros» o, si son empleados, «04 Empleados» (llamada 2-b).\", \"fotos\": []}, {\"n\": 6, \"id\": \"nominas.importar-socios-de-negocio-desde-excel#6\", \"texto\": \"Habilite la opción **Actualiza los datos existentes** para que no haya cruce de información (llamada 3).\", \"fotos\": []}]}",
+    "fin": "stop",
+    "json": true,
+    "n_pasos": true,
+    "orden": true,
+    "fotos": true,
+    "negritas": true,
+    "negritas_laxas": true,
+    "sin_nuevos": true,
+    "nuevos": [],
+    "copia": 1.0,
+    "ratio": 1.0,
+    "valida": true,
+    "prompt_n": 510,
+    "gen_n": 461,
+    "prompt_tps": 329.51057987401066,
+    "gen_tps": 20.677079044337773,
+    "prompt_ms": 1547.75,
+    "gen_ms": 22246.856
+   },
+   {
+    "id": "gen-021",
+    "tarea": "generacion",
+    "ms": 16074.283124995418,
+    "salida": "{\"intro\": \"Siga los pasos a continuación para copiar partidas de un presupuesto ya elaborado a otro.\", \"pasos\": [{\"n\": 1, \"id\": \"presupuestos.copiar-partidas-de-otro-presupuesto#1\", \"texto\": \"Ingrese al escenario **Hoja del Presupuesto**, elija el presupuesto origen y luego el subpresupuesto.\", \"fotos\": []}, {\"n\": 2, \"id\": \"presupuestos.copiar-partidas-de-otro-presupuesto#2\", \"texto\": \"Marque un bloque de los ítems a copiar, haga clic derecho sobre el bloque y elija **Copiar**.\", \"fotos\": [\"3612f8d334f9\"]}, {\"n\": 3, \"id\": \"presupuestos.copiar-partidas-de-otro-presupuesto#3\", \"texto\": \"Elija el presupuesto destino y luego el subpresupuesto.\", \"fotos\": []}, {\"n\": 4, \"id\": \"presupuestos.copiar-partidas-de-otro-presupuesto#4\", \"texto\": \"Haga clic derecho en la hoja del presupuesto destino y elija **Pegar** para pegar el contenido del portapapeles.\", \"fotos\": [\"b5a43ce46238\"]}, {\"n\": 5, \"id\": \"presupuestos.copiar-partidas-de-otro-presupuesto#5\", \"texto\": \"Use el botón para generar los ítems.\", \"fotos\": [\"a3984bf98ecf\"]}]}",
+    "fin": "stop",
+    "json": true,
+    "n_pasos": true,
+    "orden": true,
+    "fotos": true,
+    "negritas": true,
+    "negritas_laxas": true,
+    "sin_nuevos": true,
+    "nuevos": [],
+    "copia": 1.0,
+    "ratio": 1.0,
+    "valida": true,
+    "prompt_n": 387,
+    "gen_n": 346,
+    "prompt_tps": 324.032403240324,
+    "gen_tps": 23.26703890781687,
+    "prompt_ms": 1194.325,
+    "gen_ms": 14827.843
+   },
+   {
+    "id": "gen-022",
+    "tarea": "generacion",
+    "ms": 28701.856082989252,
+    "salida": "{\"intro\": \"Siga los pasos a continuación para sincronizar el tareo del móvil con el S10 ERP y cerrar el parte.\", \"pasos\": [{\"n\": 1, \"id\": \"tareo-movil.sincronizar-y-cerrar-el-tareo#1\", \"texto\": \"En el dispositivo móvil, use la opción **Sincronizar** para obtener la información de tareo desde la base de datos del S10 ERP.\", \"fotos\": [\"8dc77c1c033e\"]}, {\"n\": 2, \"id\": \"tareo-movil.sincronizar-y-cerrar-el-tareo#2\", \"texto\": \"Del listado de partes publicados para el usuario, seleccione el parte a editar con su icono.\", \"fotos\": [\"0fb83be098d9\"]}, {\"n\": 3, \"id\": \"tareo-movil.sincronizar-y-cerrar-el-tareo#3\", \"texto\": \"Registre el tareo en el dispositivo móvil y vuelva a usar **Sincronizar** para enviar la información registrada hacia la base de datos del S10 ERP.\", \"fotos\": []}, {\"n\": 4, \"id\": \"tareo-movil.sincronizar-y-cerrar-el-tareo#4\", \"texto\": \"Si la publicación es en la nube, en el S10 ejecute la opción **Actualizar desde el Móvil** seleccionando el parte; si es local, la información se actualiza directamente en la base de datos del S10 ERP.\", \"fotos\": [\"0ac06bf765cc\"]}, {\"n\": 5, \"id\": \"tareo-movil.sincronizar-y-cerrar-el-tareo#5\", \"texto\": \"Cuando termine de registrar la información desde el móvil, dé por terminada la edición del parte cambiando el estado de cada línea a **Concluído**.\", \"fotos\": [\"1cf3498221f0\"]}]}",
+    "fin": "stop",
+    "json": true,
+    "n_pasos": true,
+    "orden": true,
+    "fotos": true,
+    "negritas": true,
+    "negritas_laxas": true,
+    "sin_nuevos": true,
+    "nuevos": [],
+    "copia": 1.0,
+    "ratio": 1.0,
+    "valida": true,
+    "prompt_n": 484,
+    "gen_n": 434,
+    "prompt_tps": 339.99508271574587,
+    "gen_tps": 15.971852358262446,
+    "prompt_ms": 1423.55,
+    "gen_ms": 27110.193
+   },
+   {
+    "id": "gen-023",
+    "tarea": "generacion",
+    "ms": 29659.932167007355,
+    "salida": "{\"intro\": \"Siga los pasos a continuación para registrar manualmente el estado bancario y conciliarlo con las operaciones del sistema.\", \"pasos\": [{\"n\": 1, \"id\": \"administrativo.registrar-estado-bancario-manual#1\", \"texto\": \"En el escenario **Estado Bancario**, haga clic derecho y elija **ADICIONAR** para registrar el estado bancario manual.\", \"fotos\": [\"1a152e73c3a6\"]}, {\"n\": 2, \"id\": \"administrativo.registrar-estado-bancario-manual#2\", \"texto\": \"En la ventana del estado bancario, registre el **Periodo Contable** (del – al) a procesar.\", \"fotos\": [\"8c0d40cc1a43\"]}, {\"n\": 3, \"id\": \"administrativo.registrar-estado-bancario-manual#3\", \"texto\": \"Elija la **Cuenta Bancaria** a ejecutar.\", \"fotos\": []}, {\"n\": 4, \"id\": \"administrativo.registrar-estado-bancario-manual#4\", \"texto\": \"En el detalle del estado bancario, haga clic derecho y use la opción **Agregar línea** para añadir los recursos configurados con su código de concepto bancario.\", \"fotos\": [\"14a4b37d3f85\"]}, {\"n\": 5, \"id\": \"administrativo.registrar-estado-bancario-manual#5\", \"texto\": \"En el **Catálogo de Conceptos Bancarios**, seleccione con doble clic los recursos que quiere utilizar en la conciliación.\", \"fotos\": [\"01aaa0165bf8\"]}, {\"n\": 6, \"id\": \"administrativo.registrar-estado-bancario-manual#6\", \"texto\": \"En los campos **Cargo** y **Abono**, digite los importes de cada concepto, línea por línea, con la fecha del proceso.\", \"fotos\": [\"98824b67ef94\"]}]}",
+    "fin": "stop",
+    "json": true,
+    "n_pasos": true,
+    "orden": true,
+    "fotos": true,
+    "negritas": false,
+    "negritas_laxas": false,
+    "sin_nuevos": true,
+    "nuevos": [],
+    "copia": 0.6666666666666666,
+    "ratio": 0.779,
+    "valida": false,
+    "prompt_n": 525,
+    "gen_n": 441,
+    "prompt_tps": 266.8495136477007,
+    "gen_tps": 15.957108452995326,
+    "prompt_ms": 1967.401,
+    "gen_ms": 27573.918
+   },
+   {
+    "id": "gen-024",
+    "tarea": "generacion",
+    "ms": 24115.61479199736,
+    "salida": "{\"intro\": \"Siga los pasos a continuación para registrar un egreso a partida de control en el sistema.\", \"pasos\": [{\"n\": 1, \"id\": \"almacenes.registrar-egreso-a-partida-de-control#1\", \"texto\": \"En la barra de vistas, seleccione el acceso al escenario de **Egresos**.\", \"fotos\": [\"893476a0aba5\"]}, {\"n\": 2, \"id\": \"almacenes.registrar-egreso-a-partida-de-control#2\", \"texto\": \"En el árbol, seleccione el proyecto y el almacén.\", \"fotos\": []}, {\"n\": 3, \"id\": \"almacenes.registrar-egreso-a-partida-de-control#3\", \"texto\": \"Seleccione el tipo de egreso **Egreso a Partida de Control [EPC]**.\", \"fotos\": [\"a396ad2ad1fc\"]}, {\"n\": 4, \"id\": \"almacenes.registrar-egreso-a-partida-de-control#4\", \"texto\": \"Realice clic derecho sobre la lista de guías de egresos y seleccione la opción que agrega un nuevo movimiento de egreso.\", \"fotos\": []}, {\"n\": 5, \"id\": \"almacenes.registrar-egreso-a-partida-de-control#5\", \"texto\": \"Si el sistema lo solicita, registre el tipo de cambio.\", \"fotos\": []}, {\"n\": 6, \"id\": \"almacenes.registrar-egreso-a-partida-de-control#6\", \"texto\": \"En la cabecera del formulario, utilice el botón de **Solicitante** para elegir al solicitante del catálogo de identificadores.\", \"fotos\": [\"470223040292\"]}]}",
+    "fin": "stop",
+    "json": true,
+    "n_pasos": true,
+    "orden": true,
+    "fotos": true,
+    "negritas": true,
+    "negritas_laxas": true,
+    "sin_nuevos": true,
+    "nuevos": [],
+    "copia": 0.16666666666666666,
+    "ratio": 1.054,
+    "valida": true,
+    "prompt_n": 453,
+    "gen_n": 391,
+    "prompt_tps": 287.3517648663307,
+    "gen_tps": 17.383767118497516,
+    "prompt_ms": 1576.465,
+    "gen_ms": 22434.723
+   },
+   {
+    "id": "gen-025",
+    "tarea": "generacion",
+    "ms": 42558.12162499933,
+    "salida": "{\"intro\": \"Siga los pasos a continuación para registrar los aprobadores de las órdenes de compra en el sistema.\", \"pasos\": [{\"n\": 1, \"id\": \"compras.registrar-aprobadores-de-orden-de-compra#1\", \"texto\": \"Ingrese al escenario **Datos Generales**.\", \"fotos\": [\"fbcb2247a5a7\"]}, {\"n\": 2, \"id\": \"compras.registrar-aprobadores-de-orden-de-compra#2\", \"texto\": \"En el árbol, elija el centro de compras para registrar a sus aprobadores.\", \"fotos\": [\"bca5760a516c\"]}, {\"n\": 3, \"id\": \"compras.registrar-aprobadores-de-orden-de-compra#3\", \"texto\": \"En la sección de aprobadores del Centro de compras, haga clic derecho para registrar un nuevo grupo de aprobadores.\", \"fotos\": [\"d48ad9698504\"]}, {\"n\": 4, \"id\": \"compras.registrar-aprobadores-de-orden-de-compra#4\", \"texto\": \"En la ventana **Grupo Aprobacion**, registre el nombre del grupo de aprobadores (por ejemplo, Aprobadores de Ordenes de Compra).\", \"fotos\": [\"1f3735f24410\"]}, {\"n\": 5, \"id\": \"compras.registrar-aprobadores-de-orden-de-compra#5\", \"texto\": \"Indique el **Numero de VB para aprobación**: por ejemplo, 1 cuando basta que la orden de compra sea aprobada por una persona.\", \"fotos\": []}, {\"n\": 6, \"id\": \"compras.registrar-aprobadores-de-orden-de-compra#6\", \"texto\": \"Elija la **Moneda** y registre el **Monto minimo** y el **Monto maximo** de las órdenes de compra que aprobará el grupo.\", \"fotos\": []}]}",
+    "fin": "stop",
+    "json": true,
+    "n_pasos": true,
+    "orden": true,
+    "fotos": true,
+    "negritas": true,
+    "negritas_laxas": true,
+    "sin_nuevos": true,
+    "nuevos": [],
+    "copia": 1.0,
+    "ratio": 1.0,
+    "valida": true,
+    "prompt_n": 490,
+    "gen_n": 433,
+    "prompt_tps": 216.69095226828995,
+    "gen_tps": 10.743363405383585,
+    "prompt_ms": 2261.285,
+    "gen_ms": 40210.871
+   },
+   {
+    "id": "gen-026",
+    "tarea": "generacion",
+    "ms": 26036.33358400839,
+    "salida": "{\"intro\": \"Siga los pasos a continuación para crear, importar y configurar su plan de cuentas en el ERP S10.\", \"pasos\": [{\"n\": 1, \"id\": \"contabilidad.crear-plan-de-cuentas#1\", \"texto\": \"Ingrese al escenario **Plan Contable** y haga clic derecho para crear un plan de cuentas.\", \"fotos\": []}, {\"n\": 2, \"id\": \"contabilidad.crear-plan-de-cuentas#2\", \"texto\": \"Digite el nombre del plan de cuentas, que lo identificará en todos los procesos.\", \"fotos\": [\"32374e25876d\"]}, {\"n\": 3, \"id\": \"contabilidad.crear-plan-de-cuentas#3\", \"texto\": \"En el detalle, ubíquese en la pestaña **Cuentas** o **Detalle** y defina la estructura del plan de cuentas a importar.\", \"fotos\": [\"48cb61162668\"]}, {\"n\": 4, \"id\": \"contabilidad.crear-plan-de-cuentas#4\", \"texto\": \"Desde la pestaña **Detalle**, use la opción para cargar el plan de cuentas previamente trabajado.\", \"fotos\": [\"74a6acd3db28\"]}, {\"n\": 5, \"id\": \"contabilidad.crear-plan-de-cuentas#5\", \"texto\": \"En **Archivo**, use **Examinar** para ubicar la ruta del Excel y elija la **Hoja**.\", \"fotos\": []}, {\"n\": 6, \"id\": \"contabilidad.crear-plan-de-cuentas#6\", \"texto\": \"Relacione los campos establecidos por S10 con las columnas de la hoja Excel.\", \"fotos\": [\"326b71a1aa07\"]}]}",
+    "fin": "stop",
+    "json": true,
+    "n_pasos": true,
+    "orden": true,
+    "fotos": true,
+    "negritas": true,
+    "negritas_laxas": true,
+    "sin_nuevos": true,
+    "nuevos": [],
+    "copia": 1.0,
+    "ratio": 1.0,
+    "valida": true,
+    "prompt_n": 457,
+    "gen_n": 397,
+    "prompt_tps": 189.57644805086787,
+    "gen_tps": 16.784616746164716,
+    "prompt_ms": 2410.637,
+    "gen_ms": 23593.032
+   },
+   {
+    "id": "gen-027",
+    "tarea": "generacion",
+    "ms": 24767.838874991867,
+    "salida": "{\"intro\": \"Siga los pasos a continuación para crear un usuario en el portal de facturación electrónica.\", \"pasos\": [{\"n\": 1, \"id\": \"facturacion-electronica.crear-usuario-del-portal#1\", \"texto\": \"En el portal, ingrese a **Gestión de Usuarios**, que permite administrar a los usuarios de la empresa que emite los documentos.\", \"fotos\": [\"3437be3435db\"]}, {\"n\": 2, \"id\": \"facturacion-electronica.crear-usuario-del-portal#2\", \"texto\": \"Para buscar un usuario, ingrese alguno de los campos de la ventana de búsqueda y haga clic en el botón **Buscar** (si no ingresa ningún dato, se listan todos los usuarios de la empresa).\", \"fotos\": [\"7a05a90bfa93\"]}, {\"n\": 3, \"id\": \"facturacion-electronica.crear-usuario-del-portal#3\", \"texto\": \"Haga clic en el botón **Adicionar** para crear un usuario.\", \"fotos\": []}, {\"n\": 4, \"id\": \"facturacion-electronica.crear-usuario-del-portal#4\", \"texto\": \"En **Dirección de correo**, ingrese cualquier dirección de correo válida.\", \"fotos\": []}, {\"n\": 5, \"id\": \"facturacion-electronica.crear-usuario-del-portal#5\", \"texto\": \"Ingrese el **Nombre** y el **Apellido** del usuario.\", \"fotos\": []}, {\"n\": 6, \"id\": \"facturacion-electronica.crear-usuario-del-portal#6\", \"texto\": \"Si corresponde, asígnele el rol de **Administrador**: se puede asignar a más de un usuario de la empresa.\", \"fotos\": []}]}",
+    "fin": "stop",
+    "json": true,
+    "n_pasos": true,
+    "orden": true,
+    "fotos": true,
+    "negritas": true,
+    "negritas_laxas": true,
+    "sin_nuevos": true,
+    "nuevos": [],
+    "copia": 1.0,
+    "ratio": 1.0,
+    "valida": true,
+    "prompt_n": 442,
+    "gen_n": 396,
+    "prompt_tps": 165.3812824308205,
+    "gen_tps": 17.903987848132846,
+    "prompt_ms": 2672.612,
+    "gen_ms": 22062.124
+   },
+   {
+    "id": "gen-028",
+    "tarea": "generacion",
+    "ms": 25631.169000000227,
+    "salida": "{\"intro\": \"Siga los pasos a continuación para registrar un cliente en el catálogo de S10.\", \"pasos\": [{\"n\": 1, \"id\": \"facturacion.registrar-cliente#1\", \"texto\": \"Para poder visualizar los catálogos, ubíquese en el menú **Catálogos**.\", \"fotos\": [\"dbf353058ce0\"]}, {\"n\": 2, \"id\": \"facturacion.registrar-cliente#2\", \"texto\": \"Ubíquese en el catálogo de **Clientes**, haga clic derecho y elija **Adicionar** (para un proveedor el proceso es el mismo).\", \"fotos\": [\"5ad1ed33d554\"]}, {\"n\": 3, \"id\": \"facturacion.registrar-cliente#3\", \"texto\": \"En los datos generales, registre la razón social, la **Abreviatura** y el **RUC** del cliente.\", \"fotos\": []}, {\"n\": 4, \"id\": \"facturacion.registrar-cliente#4\", \"texto\": \"En la pestaña **TIPO**, agregue el tipo de socio de negocio al que pertenece (por ejemplo, cliente).\", \"fotos\": [\"5abbbd7508ab\", \"132a03713fa8\"]}, {\"n\": 5, \"id\": \"facturacion.registrar-cliente#5\", \"texto\": \"En la pestaña **Cuentas Banco**, agregue el número de cuenta del cliente para poder efectuar los pagos en cuenta bancaria.\", \"fotos\": [\"055b6b223d5a\"]}, {\"n\": 6, \"id\": \"facturacion.registrar-cliente#6\", \"texto\": \"Si prefiere cargar los clientes desde un Excel, en el catálogo elija el icono de importación de Excel.\", \"fotos\": [\"2c5499e54805\"]}]}",
+    "fin": "stop",
+    "json": true,
+    "n_pasos": true,
+    "orden": true,
+    "fotos": true,
+    "negritas": true,
+    "negritas_laxas": true,
+    "sin_nuevos": true,
+    "nuevos": [],
+    "copia": 1.0,
+    "ratio": 1.0,
+    "valida": true,
+    "prompt_n": 463,
+    "gen_n": 420,
+    "prompt_tps": 215.4146639228825,
+    "gen_tps": 18.010037823658433,
+    "prompt_ms": 2149.343,
+    "gen_ms": 23264.804
+   },
+   {
+    "id": "gen-029",
+    "tarea": "generacion",
+    "ms": 22354.31220800092,
+    "salida": "{\"intro\": \"Siga los pasos a continuación para enviar la orden de compra al proveedor.\", \"pasos\": [{\"n\": 1, \"id\": \"fragmento:web-https-documentacion-s10peru-com-manual-d-s052#1\", \"texto\": \"Para cada uno de los proveedores se lleva un control de los envíos\", \"fotos\": [\"c565883f8987\"]}, {\"n\": 2, \"id\": \"fragmento:web-https-documentacion-s10peru-com-manual-d-s052#2\", \"texto\": \"**Llamada a:** Envía la Orden de Compra a la dirección de correo del Proveedor.\", \"fotos\": []}, {\"n\": 3, \"id\": \"fragmento:web-https-documentacion-s10peru-com-manual-d-s052#3\", \"texto\": \"**Llamada b:** Previamente se graba el archivo en Excel en una carpeta, al mismo tiempo se envía el archivo a la dirección de correo electrónico del proveedor.\", \"fotos\": [\"aacc4f6e9d4f\"]}, {\"n\": 4, \"id\": \"fragmento:web-https-documentacion-s10peru-com-manual-d-s052#4\", \"texto\": \"**Llamada a:** Ingrese el mensaje que será mostrado en el correo enviado al proveedor.\", \"fotos\": []}]}",
+    "fin": "stop",
+    "json": true,
+    "n_pasos": true,
+    "orden": true,
+    "fotos": true,
+    "negritas": false,
+    "negritas_laxas": false,
+    "sin_nuevos": true,
+    "nuevos": [],
+    "copia": 0.25,
+    "ratio": 1.032,
+    "valida": false,
+    "prompt_n": 345,
+    "gen_n": 311,
+    "prompt_tps": 270.4957363599585,
+    "gen_tps": 14.723784183521047,
+    "prompt_ms": 1275.436,
+    "gen_ms": 21054.37
+   },
+   {
+    "id": "gen-030",
+    "tarea": "generacion",
+    "ms": 18702.078415997676,
+    "salida": "{\"intro\": \"Siga los pasos a continuación para configurar el stock mínimo de los recursos en el almacén.\", \"pasos\": [{\"n\": 1, \"id\": \"fragmento:web-https-documentacion-s10peru-com-manual-d-s084#1\", \"texto\": \"Dentro del almacén hay recursos que siempre deben tener stock, como es el caso de los combustibles, para registrar el stock mínimo tome en cuenta el tiempo de reposición.\", \"fotos\": [\"178bef598fb9\"]}, {\"n\": 2, \"id\": \"fragmento:web-https-documentacion-s10peru-com-manual-d-s084#2\", \"texto\": \"**Llamada a**: Muestra los recursos que tienen stock mínimo.\", \"fotos\": [\"a04852bc899d\"]}, {\"n\": 3, \"id\": \"fragmento:web-https-documentacion-s10peru-com-manual-d-s084#3\", \"texto\": \"**Llamada b**: Registre la cantidad que será el stock mínimo del recurso, cuando la cantidad es menor la stock se pinta de celeste la fila.\", \"fotos\": []}, {\"n\": 4, \"id\": \"fragmento:web-https-documentacion-s10peru-com-manual-d-s084#4\", \"texto\": \"**Llamada c**: Cuando el stock del recurso está por debajo del mínimo genera un pedido.\", \"fotos\": []}]}",
+    "fin": "stop",
+    "json": true,
+    "n_pasos": true,
+    "orden": true,
+    "fotos": true,
+    "negritas": false,
+    "negritas_laxas": false,
+    "sin_nuevos": true,
+    "nuevos": [],
+    "copia": 0.25,
+    "ratio": 1.027,
+    "valida": false,
+    "prompt_n": 357,
+    "gen_n": 325,
+    "prompt_tps": 201.2588544030307,
+    "gen_tps": 19.183152928805637,
+    "prompt_ms": 1773.835,
+    "gen_ms": 16889.82
+   },
+   {
+    "id": "gen-031",
+    "tarea": "generacion",
+    "ms": 34414.42625000491,
+    "salida": "{\"intro\": \"Siga los pasos a continuación para asignar proveedores a la cotización.\", \"pasos\": [{\"n\": 1, \"id\": \"fragmento:web-https-documentacion-s10peru-com-manual-d-s044#1\", \"texto\": \"Seleccione la pestaña **Proveedores** para asignar Proveedores a la Cotización.\", \"fotos\": [\"8925b23f0f75\"]}, {\"n\": 2, \"id\": \"fragmento:web-https-documentacion-s10peru-com-manual-d-s044#2\", \"texto\": \"Seleccione el **Catálogo de Socio de Negocio** para elegir los proveedores, o el **Catálogo de Socio de Negocio** filtrado por FERRETERIA.\", \"fotos\": []}, {\"n\": 3, \"id\": \"fragmento:web-https-documentacion-s10peru-com-manual-d-s044#3\", \"texto\": \"Seleccione la opción **Llamada b** para ver los recursos por pedido y modificar las cantidades.\", \"fotos\": []}, {\"n\": 4, \"id\": \"fragmento:web-https-documentacion-s10peru-com-manual-d-s044#4\", \"texto\": \"Seleccione la opción **Llamada c** para ver los recursos de toda la cotización con las cantidades acumuladas.\", \"fotos\": []}, {\"n\": 5, \"id\": \"fragmento:web-https-documentacion-s10peru-com-manual-d-s044#5\", \"texto\": \"Ingresé por el menú **Catálogos** y seleccione **Socio de Negocio** para asignar la Etiqueta al proveedor.\", \"fotos\": [\"133c565a0729\"]}]}",
+    "fin": "stop",
+    "json": true,
+    "n_pasos": true,
+    "orden": true,
+    "fotos": true,
+    "negritas": false,
+    "negritas_laxas": false,
+    "sin_nuevos": true,
+    "nuevos": [],
+    "copia": 0.0,
+    "ratio": 0.754,
+    "valida": false,
+    "prompt_n": 477,
+    "gen_n": 394,
+    "prompt_tps": 180.174395216502,
+    "gen_tps": 12.389607571948074,
+    "prompt_ms": 2647.435,
+    "gen_ms": 31720.133
+   },
+   {
+    "id": "gen-032",
+    "tarea": "generacion",
+    "ms": 27473.69370800152,
+    "salida": "{\"intro\": \"Siga los pasos a continuación para gestionar la visualización y actualización de documentos en el portal.\", \"pasos\": [{\"n\": 1, \"id\": \"fragmento:web-https-documentacion-s10peru-com-manual-d-s012#1\", \"texto\": \"Reciba la notificación por correo electrónico y ingrese al portal para visualizar e imprimir el detalle del documento. Esta acción queda registrada en el portal y es consultable desde el S10.\", \"fotos\": []}, {\"n\": 2, \"id\": \"fragmento:web-https-documentacion-s10peru-com-manual-d-s012#2\", \"texto\": \"En el escenario de **Documentos por Cobrar** se muestran columnas con los datos de visualización del documento.\", \"fotos\": [\"82c4c0f7bcc1\"]}, {\"n\": 3, \"id\": \"fragmento:web-https-documentacion-s10peru-com-manual-d-s012#3\", \"texto\": \"Para actualizar estos datos, ejecute la opción: **Actualizar Estado de Visualización**.\", \"fotos\": [\"002901db3bc0\"]}, {\"n\": 4, \"id\": \"fragmento:web-https-documentacion-s10peru-com-manual-d-s012#4\", \"texto\": \"Asegúrese de que todos los documentos añadidos al documento de baja tengan la misma fecha de emisión y envíelos a la SUNAT mediante la opción **Enviar a SUNAT**.\", \"fotos\": []}]}",
+    "fin": "stop",
+    "json": true,
+    "n_pasos": true,
+    "orden": true,
+    "fotos": true,
+    "negritas": true,
+    "negritas_laxas": true,
+    "sin_nuevos": true,
+    "nuevos": [],
+    "copia": 0.0,
+    "ratio": 0.822,
+    "valida": true,
+    "prompt_n": 390,
+    "gen_n": 342,
+    "prompt_tps": 182.85538530208413,
+    "gen_tps": 13.500969714078364,
+    "prompt_ms": 2132.833,
+    "gen_ms": 25257.445
+   },
+   {
+    "id": "gen-033",
+    "tarea": "generacion",
+    "ms": 31372.954458012828,
+    "salida": "{\"intro\": \"Siga los pasos a continuación para registrar socios de negocio importando la plantilla de Excel.\", \"pasos\": [{\"n\": 1, \"id\": \"fragmento:web-https-documentacion-s10peru-com-manual-d-s044#1\", \"texto\": \"Ingresar al menú catálogos del módulo de nóminas y seleccionar la opción **Socio de Negocios por tipo**.\", \"fotos\": [\"3bc720dcbc7e\"]}, {\"n\": 2, \"id\": \"fragmento:web-https-documentacion-s10peru-com-manual-d-s044#2\", \"texto\": \"Ubique el archivo de Excel que contiene la información a importar.\", \"fotos\": [\"7e62439503db\"]}, {\"n\": 3, \"id\": \"fragmento:web-https-documentacion-s10peru-com-manual-d-s044#3\", \"texto\": \"Seleccione el utilitario de importación del sistema.\", \"fotos\": [\"b1ef734b4dd5\"]}, {\"n\": 4, \"id\": \"fragmento:web-https-documentacion-s10peru-com-manual-d-s044#4\", \"texto\": \"Elija el rango de filas a importar, asigne los nombres de las columnas seleccionando la cabecera correspondiente y registre el tipo **03 Obreros** o **04 Empleados** según corresponda.\", \"fotos\": []}, {\"n\": 5, \"id\": \"fragmento:web-https-documentacion-s10peru-com-manual-d-s044#5\", \"texto\": \"Habilite la opción **Actualiza los datos existentes** y ejecute el proceso de importación.\", \"fotos\": []}]}",
+    "fin": "stop",
+    "json": true,
+    "n_pasos": true,
+    "orden": true,
+    "fotos": true,
+    "negritas": false,
+    "negritas_laxas": false,
+    "sin_nuevos": true,
+    "nuevos": [],
+    "copia": 0.0,
+    "ratio": 0.559,
+    "valida": false,
+    "prompt_n": 550,
+    "gen_n": 395,
+    "prompt_tps": 202.420880118626,
+    "gen_tps": 13.792010323424742,
+    "prompt_ms": 2717.111,
+    "gen_ms": 28567.264
+   },
+   {
+    "id": "gen-034",
+    "tarea": "generacion",
+    "ms": 24972.37929100811,
+    "salida": "{\"intro\": \"Siga estos pasos para configurar los días feriados y no laborables en el sistema.\", \"pasos\": [{\"n\": 1, \"id\": \"fragmento:web-https-documentacion-s10peru-com-manual-d-s065#1\", \"texto\": \"Registre los días feriados o no laborables para que se marquen en el calendario y se eliminen las horas de trabajo. Los días feriados por defecto cubren todo el país; en el Perú existen 10 días feriados fijos por ley, y esta información se registra desde el menú **Herramientas – Configuración**.\", \"fotos\": []}, {\"n\": 2, \"id\": \"fragmento:web-https-documentacion-s10peru-com-manual-d-s065#2\", \"texto\": \"Hay 2 días no laborables que obedecen a la lunación que corresponden a la semana santa, y luego, dependiendo donde se ejecuten los proyectos, también se registrarán los feriados del lugar en forma manual.\", \"fotos\": [\"3533ed1a56b2\"]}, {\"n\": 3, \"id\": \"fragmento:web-https-documentacion-s10peru-com-manual-d-s065#3\", \"texto\": \"Acceda al escenario de **Calendario**.\", \"fotos\": [\"ac2f8045a827\"]}]}",
+    "fin": "stop",
+    "json": true,
+    "n_pasos": true,
+    "orden": true,
+    "fotos": true,
+    "negritas": true,
+    "negritas_laxas": true,
+    "sin_nuevos": true,
+    "nuevos": [],
+    "copia": 0.0,
+    "ratio": 0.996,
+    "valida": true,
+    "prompt_n": 335,
+    "gen_n": 310,
+    "prompt_tps": 229.50723084796417,
+    "gen_tps": 13.257668799835589,
+    "prompt_ms": 1459.649,
+    "gen_ms": 23307.265
+   },
+   {
+    "id": "gen-035",
+    "tarea": "generacion",
+    "ms": 28051.715250010602,
+    "salida": "{\"intro\": \"Siga los pasos a continuación para configurar y cargar el Plan de Cuentas en el sistema.\", \"pasos\": [{\"n\": 1, \"id\": \"fragmento:web-https-documentacion-s10peru-com-manual-d-s017#1\", \"texto\": \"Ingrese el nombre del plan de cuentas para su identificación en todos los procesos.\", \"fotos\": [\"32374e25876d\"]}, {\"n\": 2, \"id\": \"fragmento:web-https-documentacion-s10peru-com-manual-d-s017#2\", \"texto\": \"En el detalle, ubíquese en la pestaña **Cuentas** o **Detalle** y defina la estructura del Plan de Cuentas a Importar.\", \"fotos\": [\"48cb61162668\"]}, {\"n\": 3, \"id\": \"fragmento:web-https-documentacion-s10peru-com-manual-d-s017#3\", \"texto\": \"Realice la Importación del Plan de Cuentas desde la Pestaña **Detalle** utilizando la opción para cargar el Plan de Cuentas previamente trabajado en base a los parámetros establecidos por S10 para su reconocimiento.\", \"fotos\": [\"74a6acd3db28\", \"326b71a1aa07\"]}, {\"n\": 4, \"id\": \"fragmento:web-https-documentacion-s10peru-com-manual-d-s017#4\", \"texto\": \"Indique las Filas para la carga de Información.\", \"fotos\": [\"63c006f809ec\"]}, {\"n\": 5, \"id\": \"fragmento:web-https-documentacion-s10peru-com-manual-d-s017#5\", \"texto\": \"Vista del Plan Contable – Pestaña **Detalle**.\", \"fotos\": [\"9058f956d8be\"]}, {\"n\": 6, \"id\": \"fragmento:web-https-documentacion-s10peru-com-manual-d-s017#6\", \"texto\": \"Vista del Plan de Cuentas – Pestaña **Cuentas**.\", \"fotos\": [\"57ab21758fa7\"]}]}",
+    "fin": "stop",
+    "json": true,
+    "n_pasos": true,
+    "orden": true,
+    "fotos": true,
+    "negritas": true,
+    "negritas_laxas": true,
+    "sin_nuevos": true,
+    "nuevos": [],
+    "copia": 0.3333333333333333,
+    "ratio": 1.02,
+    "valida": true,
+    "prompt_n": 536,
+    "gen_n": 510,
+    "prompt_tps": 224.51672356378413,
+    "gen_tps": 20.2425696148531,
+    "prompt_ms": 2387.35,
+    "gen_ms": 25145.029
+   },
+   {
+    "id": "gen-036",
+    "tarea": "generacion",
+    "ms": 24331.682791991625,
+    "salida": "{\"intro\": \"Siga los pasos a continuación para imprimir los reportes desde el escenario de Datos Generales.\", \"pasos\": [{\"n\": 1, \"id\": \"fragmento:web-https-documentacion-s10peru-com-manual-d-s070#1\", \"texto\": \"Imprima los resúmenes globales del presupuesto, tiene tres opciones:\", \"fotos\": []}, {\"n\": 2, \"id\": \"fragmento:web-https-documentacion-s10peru-com-manual-d-s070#2\", \"texto\": \"**Datos generales**: Imprime los datos generales del presupuesto.\", \"fotos\": []}, {\"n\": 3, \"id\": \"fragmento:web-https-documentacion-s10peru-com-manual-d-s070#3\", \"texto\": \"**Resumen del presupuesto estándar**: Muestra el presupuesto y sus subpresupuestos con montos globales.\", \"fotos\": []}, {\"n\": 4, \"id\": \"fragmento:web-https-documentacion-s10peru-com-manual-d-s070#4\", \"texto\": \"**Resumen desagregado**: Es el resumen total del presupuesto.\", \"fotos\": []}, {\"n\": 5, \"id\": \"fragmento:web-https-documentacion-s10peru-com-manual-d-s070#5\", \"texto\": \"Use el botón del escenario de **Datos Generales**\", \"fotos\": [\"8a3f1c2a8717\", \"b53a49ca278e\"]}]}",
+    "fin": "stop",
+    "json": true,
+    "n_pasos": true,
+    "orden": true,
+    "fotos": true,
+    "negritas": true,
+    "negritas_laxas": true,
+    "sin_nuevos": true,
+    "nuevos": [],
+    "copia": 1.0,
+    "ratio": 1.0,
+    "valida": true,
+    "prompt_n": 377,
+    "gen_n": 340,
+    "prompt_tps": 97.01971893619037,
+    "gen_tps": 16.933479697207407,
+    "prompt_ms": 3885.808,
+    "gen_ms": 20019.512
+   }
+  ]
+ }
+}

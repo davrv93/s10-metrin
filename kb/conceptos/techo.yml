@@ -1,0 +1,12 @@
+id: techo
+termino: "Techo"
+sinonimos: []
+definicion: "Define el origen del recurso que se va a pedir en el proceso de procura. Si el proyecto trabaja con techo, los pedidos solo pueden contener recursos de los presupuestos asignados al proyecto, controlando en todo momento el techo; si no, los recursos se piden desde el catálogo y pueden no estar presupuestados."
+en_s10: "Solo un usuario con permiso puede asignar techo al proyecto, en Datos generales. Por defecto cada recurso tiene techo por cantidad (el recurso específico se descuenta de la cantidad presupuestada); con techo por precio, el precio del recurso del catálogo se descuenta del recurso presupuestado. Existe además el Techo libre, donde se registran previamente los recursos con cantidad y precio. Los escenarios de techo están en Gerencia de proyectos y en Compras y pedidos."
+procedimientos_relacionados: []
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s063  # Manual de Gerencia de Proyectos › 2.1 Techo
+  - web-https-documentacion-s10peru-com-manual-d-s103  # Manual de Gerencia de Proyectos › 3.5 Techo de Materiales presupuestados
+  - web-https-documentacion-s10peru-com-manual-d-s105  # Manual de Gerencia de Proyectos › 3.5.1.1 Techo por precio
+  - web-https-documentacion-s10peru-com-manual-d-s106  # Manual de Gerencia de Proyectos › 3.5.1.2 Techo por cantidad
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

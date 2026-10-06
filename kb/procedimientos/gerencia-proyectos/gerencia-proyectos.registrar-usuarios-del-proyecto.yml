@@ -1,0 +1,103 @@
+id: gerencia-proyectos.registrar-usuarios-del-proyecto
+version: 1
+modulo: gerencia-proyectos
+titulo: "Registrar usuarios del proyecto y asignarles atributos"
+objetivo: "Invitar a otros usuarios a participar en el grupo de trabajo del proyecto y darles los permisos que necesitan para sus labores, como asignar techo, aprobar los incrementos y los pagos de los subcontratos."
+nivel: basico
+preguntas:
+  - "cómo agrego un usuario a un proyecto en gerencia de proyectos"
+  - "como doy permisos a otro usuario en el proyecto"
+  - "dónde se asignan los atributos de uso del proyecto"
+  - "como invito a alguien al grupo de trabajo del proyecto"
+  - "un usuario no puede entrar al proyecto que hago"
+  - "como le doy acceso a configurar techo a un usuario"
+  - "como registro usuarios del proyeto en s10"
+  - "quien puede asignar atributos de uso a los usuarios"
+aliases:
+  - "usuarios del proyecto"
+  - "dar permisos en el proyecto"
+  - "asignar atributos de uso"
+  - "agregar usuario al proyecto"
+  - "accesos del proyecto"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Usuarios del proyecto", "Mantenimiento de usuarios", "Usuarios por Almacén"]
+  objetos: ["usuario", "atributos de uso", "proyecto", "socio de negocio"]
+prerrequisitos:
+  - texto: "Solo el usuario que tiene la categoría de jefe de grupo tiene la facultad de asignar atributos de uso; el usuario que registra el proyecto tiene acceso a todos los procesos y es quien invita a los demás."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s052]
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.registrar-usuarios-del-proyecto#1"
+    accion: "Con el usuario **sa**, ingrese a **Catálogos** – **Socio de negocios** y, en la rama empleados, registre al usuario que manejará el módulo de Gerencia de proyectos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s032]
+    pagina: null
+  - n: 2
+    id: "gerencia-proyectos.registrar-usuarios-del-proyecto#2"
+    accion: "Vaya al grupo de **Utilitarios**, escenario de **Mantenimiento de usuarios**, registre al usuario con acceso al módulo de Gerencia de proyectos y asígnele accesos y atributos de uso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s032, web-https-documentacion-s10peru-com-manual-d-s052]
+    pagina: null
+  - n: 3
+    id: "gerencia-proyectos.registrar-usuarios-del-proyecto#3"
+    accion: "En el árbol de proyectos, haga clic derecho sobre el proyecto y elija **Usuarios del proyecto**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s052, img-c940f7a9eaad-0000]
+    pagina: null
+    fotos:
+      - id: "c6aae3a31ef2"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/c940f7a9eaad.png"
+        pagina: null
+        ocr: "Clic derecho | |*3 Nuevo proyecto\nProyectés y Duplicar proyecto\n=) sey Eseritoria |) Eliminar proyecto\n$$) Proyectos ejecuthdos\nBandeja #% Usuarios del proyecto\na Archivo Central\n‘ij Papelera de Reciclaje | ea Buscar |"
+  - n: 4
+    id: "gerencia-proyectos.registrar-usuarios-del-proyecto#4"
+    accion: "En la ventana **Usuarios del proyecto**, elija al usuario."
+    donde: "Ventana Usuarios del proyecto"
+    fuente: [img-6ebf6f68f5ef-0000, web-https-documentacion-s10peru-com-manual-d-s101]
+    pagina: null
+    fotos:
+      - id: "65a693f852f7"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/6ebf6f68f5ef.png"
+        pagina: null
+        ocr: "- rx\n#3 Usuarios cel proy: ileal\nProyecto; 02004 - PUENTE EN CARRETERA\nRegistrado por: RGARCIA,\n\nS = opciones para\nSMA 8 + BF | |ER|2MS v BEY | cada uno de los\nusuarios\njf Elija | Campo|Usuario\nUsuegio | Nombre\nAndrs Andrade Andrade, Andres | | 0/0 ‘Campo|Grupo | |EnFualqui!\nir Ramirez Nufiez, Jose Descripcién Accebo\n\nGarcia Dulanto, Rafael = Almacenes\npmartinez Martinez Luna, Pedro. Adicionar Alm…"
+  - n: 5
+    id: "gerencia-proyectos.registrar-usuarios-del-proyecto#5"
+    accion: "Seleccione las opciones para cada uno de los usuarios en los grupos que correspondan, por ejemplo **Almacenes**, **Pedidos y Compras**, **Subcontratos** o **Techo** (**Configurar Techo**, **Incrementar Techo**)."
+    fuente: [img-095523639606-0000, web-https-documentacion-s10peru-com-manual-d-s052]
+    pagina: null
+    fotos:
+      - id: "330032407c3c"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/095523639606.png"
+        pagina: null
+        ocr: "Proyecto: 02004 PUENTE EN CARRETERA\nRegistrado por: RGARCIA\nByeeave| . |SYeea ve\n316 Campo[Usuario Jen\nUsuario Nombre -\n‘Andres ‘Andrade Andrade, Andres 68/68 Campo|Grupo +] En cualquier ¢\nir Ramirez Nufiez, Jose Descripcién Acceso\nGarcfa Dulanto, Rafael  Almacenes\npinartinez Martinez Luna, Pedro (#1 Contratos\neocampo Ocampo Lazo, César Fi Equipos Seleccione las\navalencia Valencia Taco, Alberto [F…"
+  - n: 6
+    id: "gerencia-proyectos.registrar-usuarios-del-proyecto#6"
+    accion: "Si el usuario pedirá o aprobará pedidos, ingrese al módulo de Almacenes, escenario de **Datos Generales**, y agréguelo en la pestaña **Usuarios por Almacén**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s109]
+    pagina: null
+    fotos:
+      - id: "515748aa051c"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/b34eb2dd6594.png"
+        pagina: null
+        caption: "El usuario que participan en el manejo del almacén se agrega en la pestaña Usuarios por Almacén."
+        ocr: "Andres Andrade Andrade, Andres Oo [ml\n\npmartinez Martinez Luna, Pedro oO oO\n\ncocampo Ocampo Lazo, César Oo\n[Forge una secon |"
+verificacion: []
+errores_frecuentes:
+  - sintoma: "No puede asignar atributos de uso a otro usuario."
+    solucion: "Solo el usuario que tiene la categoría de jefe de grupo tiene la facultad de asignar atributos de uso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s052]
+  - sintoma: "El usuario que quiere sumar al grupo de trabajo no tiene acceso al proyecto."
+    solucion: "Debe estar registrado en el Catálogo de Socio de Negocio y luego, en el grupo de Utilitarios – Mantenimiento de Usuarios, tener acceso al módulo de Gerencia de proyectos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s052]
+  - sintoma: "El usuario no puede pedir ni aprobar pedidos."
+    solucion: "El usuario que pide y el que aprueba deben estar registrados en el módulo de almacenes y tener atributos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s112]
+relacionados: [gerencia-proyectos.registrar-proyecto, gerencia-proyectos.registrar-pedido-manual-de-compra, gerencia-proyectos.registrar-subcontrato]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s052, manual: "Manual de Gerencia de Proyectos", seccion: "2.5.6 Usuarios del proyecto", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s032, manual: "Manual de Gerencia de Proyectos", seccion: "1.3 Acceso al módulo de Gerencia de proyectos con sa", pagina: null}
+  - {id: img-c940f7a9eaad-0000, manual: "Manual de Gerencia de Proyectos", seccion: "c940f7a9eaad.png", pagina: null}
+  - {id: img-6ebf6f68f5ef-0000, manual: "Manual de Gerencia de Proyectos", seccion: "6ebf6f68f5ef.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s101, manual: "Manual de Gerencia de Proyectos", seccion: "3.3.1 Usuarios del proyecto", pagina: null}
+  - {id: img-095523639606-0000, manual: "Manual de Gerencia de Proyectos", seccion: "095523639606.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s109, manual: "Manual de Gerencia de Proyectos", seccion: "3.6.2 Registro de usuarios que aprobarán los pedidos", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s112, manual: "Manual de Gerencia de Proyectos", seccion: "3.7.1 Pedidos Manuales para Comprar", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

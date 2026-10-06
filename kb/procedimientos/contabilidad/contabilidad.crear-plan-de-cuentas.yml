@@ -1,0 +1,203 @@
+id: contabilidad.crear-plan-de-cuentas
+version: 1
+modulo: contabilidad
+titulo: "Crear e importar el plan de cuentas"
+objetivo: "Crear el plan de cuentas con un nombre que lo identifique en todos los procesos, importarlo desde una hoja Excel trabajada según los parámetros de S10, configurar las propiedades de sus cuentas y definirlo en el esquema contable de la empresa."
+nivel: avanzado
+preguntas:
+  - "cómo creo el plan de cuentas en contabilidad s10"
+  - "como importo el plan contable desde excel"
+  - "como cargo el plan de cuentas de la empresa"
+  - "como configuro las propiedades de una cuenta contable"
+  - "como asigno el plan contable al esquema contable de la empresa"
+  - "plan contable nuevo paso a paso"
+  - "como subo el pcge al s10"
+  - "como defino la naturaleza y el tipo de cuenta"
+  - "desde que fecha empieza a contabilizar el s10"
+  - "como inporto el plan de cuentas"
+aliases:
+  - "crear plan de cuentas"
+  - "importar plan contable"
+  - "plan contable"
+  - "cargar plan de cuentas"
+  - "configurar esquema contable"
+entidades:
+  modulo: "Contabilidad"
+  pantallas: ["Plan Contable", "Datos Generales", "Esquema Contable"]
+  objetos: ["plan de cuentas", "cuenta contable", "cuenta genérica", "esquema contable"]
+prerrequisitos:
+  - texto: "Tenga el plan de cuentas previamente trabajado en Excel, en base a los parámetros establecidos por S10 para su reconocimiento."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s017]
+pasos:
+  - n: 1
+    id: "contabilidad.crear-plan-de-cuentas#1"
+    accion: "Ingrese al escenario **Plan Contable** y haga clic derecho para crear un plan de cuentas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s017, img-c458205ab4e1-0000]
+    pagina: null
+  - n: 2
+    id: "contabilidad.crear-plan-de-cuentas#2"
+    accion: "Digite el nombre del plan de cuentas, que lo identificará en todos los procesos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s017]
+    pagina: null
+    fotos:
+      - id: "32374e25876d"
+        ruta_o_url: "imagenes/manual-de-contabilidad/c458205ab4e1.png"
+        pagina: null
+        caption: "Digitar el nombre del plan de cuentas para la identificación en todos los procesos."
+        ocr: "-.- $10 Contabilidad: 22000617 - 510 DEMO\n| Archive Yer Catélogos Herramientas 2,\nLe}\narene Plan Contable\nParametros\nBMA a -ah aa\nPlan Contable\n42 ‘Campo|Descripcién a] Jen cualquier posicién [X][2] Grupo:\nz céaigo __[Descripcién Active Fecha crescién [creado por\ncy jon2 POGE DEMO S10-01\nEsquenfp Contable Clic derecho\nz > Plan Contable\nre a\nAsigrpién de céaigo foo FF acto\nCatpaorias [Registrar la…"
+  - n: 3
+    id: "contabilidad.crear-plan-de-cuentas#3"
+    accion: "En el detalle, ubíquese en la pestaña **Cuentas** o **Detalle** y defina la estructura del plan de cuentas a importar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s017]
+    pagina: null
+    fotos:
+      - id: "48cb61162668"
+        ruta_o_url: "imagenes/manual-de-contabilidad/655bdc01109c.png"
+        pagina: null
+        caption: "En el detalle ubicarnos en la pestaña Cuentas o Detalle y definir la estructura del Plan de Cuentas a Importar."
+        ocr: "$10 Contabilidad: 22000617 - 510 DEMO EI ES\n© Archivo Yer Catélogos Herramientas 2\nra =\nEe) ee Plan Contable\n= :\nEYAAg 8 v BE a ae)\nZz Arrastre hacia aqui el encabezado de la columna que desea agrupar.\nPlan Contabl\nfan onkn 22 campo|Descrincion Jen cualquier posicion >) Grupo:\nicédigo __| Descripcién Active Fecha creacién [creado por\n002 PCGE DEMO S10 - Of w 2770522015 05:47:47 p.m <8\nEsquema Cont…"
+  - n: 4
+    id: "contabilidad.crear-plan-de-cuentas#4"
+    accion: "Desde la pestaña **Detalle**, use la opción para cargar el plan de cuentas previamente trabajado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s017]
+    pagina: null
+    fotos:
+      - id: "74a6acd3db28"
+        ruta_o_url: "imagenes/manual-de-contabilidad/5a6bfedb5877.png"
+        pagina: null
+        caption: "Importación del Plan de Cuentas desde la Pestaña Detalle. Utilizar la Opción para cargar el Plan de Cuentas previamente trabajado en base a los parámetros establecidos por S10 para su reconocimiento."
+        ocr: "ad Importacién de Excel"
+  - n: 5
+    id: "contabilidad.crear-plan-de-cuentas#5"
+    accion: "En **Archivo**, use **Examinar** para ubicar la ruta del Excel y elija la **Hoja**."
+    fuente: [img-f311ae8d435f-0000, web-https-documentacion-s10peru-com-manual-d-s017]
+    pagina: null
+  - n: 6
+    id: "contabilidad.crear-plan-de-cuentas#6"
+    accion: "Relacione los campos establecidos por S10 con las columnas de la hoja Excel."
+    fuente: [img-f311ae8d435f-0000, web-https-documentacion-s10peru-com-manual-d-s017]
+    pagina: null
+    fotos:
+      - id: "326b71a1aa07"
+        ruta_o_url: "imagenes/manual-de-contabilidad/f311ae8d435f.png"
+        pagina: null
+        ocr: "X Importacién de Excel\nArchivo [C:Userstycardenas'PCGE $10_yeardenas xis _Examinar_|\nNotas\nHoja [Sheet Ra\n- Importer\nCampo | Cédiae ~\n‘Codigo ~ Cerrar\nDescripcion Relacionar los campos establecidos por\nTipo: Active - Balance, Pasivo - Balance, Patrimonio - Balance, Perdida - Resultac $10, con las columnas de la Hoja Excel.\nilas del ;|Naturaleza:Debe Haber\nVariable Cta.Genérica\neeete rene hore | D…"
+  - n: 7
+    id: "contabilidad.crear-plan-de-cuentas#7"
+    accion: "Indique las **Filas** para la carga de información."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s017]
+    pagina: null
+    fotos:
+      - id: "63c006f809ec"
+        ruta_o_url: "imagenes/manual-de-contabilidad/98128e11d1f9.png"
+        pagina: null
+        caption: "Indicar las Filas para la carga de Información."
+        ocr: "archivo FesereyearenesCGE S10-yoardenasxis xsi\nNotas\nHoja [Sheett | Kore\na\n\npera] oman Parone EERE®, > wetrlez.Debe Haber < r Z T cuerta Rta Debe iz\n[Cédigo _|Descripcién [Tipo de Cuenta |Haturaleza de Cuenta —_|Tipo [Refleja_|CuentaGenerica |Cta, Refleja Debe [Refleja Det =\n4o__| Frectivo vequivavenres pe erectiva JP\nA GG ]  G\nGG I ) SG\noman [cai oT\nforonort | CojaGeneratmn [Active Batance fede T…"
+  - n: 8
+    id: "contabilidad.crear-plan-de-cuentas#8"
+    accion: "Finalmente, haga clic en **Importar** para cargar el plan de cuentas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s017, img-f311ae8d435f-0000]
+    pagina: null
+  - n: 9
+    id: "contabilidad.crear-plan-de-cuentas#9"
+    accion: "Revise el plan de cuentas importado en la pestaña **Detalle** y en la pestaña **Cuentas**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s017]
+    pagina: null
+    fotos:
+      - id: "9058f956d8be"
+        ruta_o_url: "imagenes/manual-de-contabilidad/57219950f592.png"
+        pagina: null
+        caption: "Vista del Plan Contable – Pestaña Detalle."
+        ocr: "| wctvo Yer Catooos Heranetas 2\ngab\n[tems Plan Contable\nfom Inga 6 GF eda\nPlancotabe ore canpofoescipn fer cualquerpostién [X22] Grupo:\ncédgo__|escrzcién activo Fecha crescién creado por\nEsquema Contable\n. Vista a través del campo Detalle\nAsigacinde - - - -\nCategorias [fo@dgo | Deseron pode GueréaNsturelezade Cuenta [TpoRefles [Cuenta Genera [Grnpo Gta Relea]\n10 Ts) BSECIND YEOAL NESE EFECTIVO ial…"
+      - id: "57ab21758fa7"
+        ruta_o_url: "imagenes/manual-de-contabilidad/cc1579a0c7b9.png"
+        pagina: null
+        caption: "Vista del Plan de Cuentas – Pestaña Cuentas."
+        ocr: "~.-$10 Contabilidad: 22000617 - $10 DEMO PEI ES\nAdio Yer Catdogos Heraniectas 2\naf\nTem Plan Contable\nYAm 8 | -ahiaaw\nPl Conable\n[2i2  Campo[deserpcin S| fen cualquier poscicn >I [X) crupo:\n7 in [Oesriin acto Fecte eecn nda or\né oe Z— zrescoisosstapm se\nEsquma Cota\n. Vista del Plan de Cuentas desde la pestana Cuentas\nal I oot epeoon scscre art agent i Sate laser sen\nAserrtn do a\nGiowes EI v GI og i…"
+  - n: 10
+    id: "contabilidad.crear-plan-de-cuentas#10"
+    accion: "Configure las propiedades de las cuentas contables, una a una o a través de una hoja Excel preparada para su importación."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s018]
+    pagina: null
+    fotos:
+      - id: "f41cbc276bb0"
+        ruta_o_url: "imagenes/manual-de-contabilidad/aa4517d68864.png"
+        pagina: null
+        caption: "Las Configuraciones de las cuentas Contables se realizan una a una o a través de la preparación de una Hoja Excel para su importación considerando las características a considerar."
+        ocr: "| ,** Plan Contable Es\n| Cédigo frovooo1, Activa\n| Descripcién Pp ‘General WY\n\" Detalle Cuenta Declarante BC [~\nQe |\nTipo de Cuenta [activa - Balance oa €)\n| Neturaleza de\n©) F La cuenta es reteia? T Cuenta Analticay\nCuentas Retlejas\nT™ Depende del Centro de costs)\nDebe =\nHaber\nCierre\nrs |\nCierre =\nAjuste por Diferencia de Cambio Mensual\nAluste por Trastacién\n© Por cuenta Por documento Ninguno € )…"
+    sub:
+      - n: 1
+        id: "contabilidad.crear-plan-de-cuentas#10.1"
+        accion: "Elija el **Tipo de Cuenta**: Activo, Pasivo, Patrimonio, Pérdida o Ganancia."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s019, img-aa4517d68864-0000]
+        pagina: null
+      - n: 2
+        id: "contabilidad.crear-plan-de-cuentas#10.2"
+        accion: "Configure la **Naturaleza** de la cuenta: Debe o Haber."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s019]
+        pagina: null
+      - n: 3
+        id: "contabilidad.crear-plan-de-cuentas#10.3"
+        accion: "Relacione la **Cuenta Genérica**: configuración establecida por S10 como obligatoria para realizar una contabilidad general hasta que termine la configuración específica."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s019]
+        pagina: null
+      - n: 4
+        id: "contabilidad.crear-plan-de-cuentas#10.4"
+        accion: "Marque **Cuenta analítica** si la cuenta requiere el análisis contable detallado por socio de negocio, proyecto, entre otros."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s019]
+        pagina: null
+      - n: 5
+        id: "contabilidad.crear-plan-de-cuentas#10.5"
+        accion: "Marque **Depende de Centro de Costos** si la cuenta usará los centros de costos generales configurados en S10."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s019]
+        pagina: null
+      - n: 6
+        id: "contabilidad.crear-plan-de-cuentas#10.6"
+        accion: "Marque **La Cuenta es Refleja** en los casos de las clases 2, 6 y 9, y defina las cuentas de transferencia Debe y Haber para la contabilización de la clase 6 o 9."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s019]
+        pagina: null
+      - n: 7
+        id: "contabilidad.crear-plan-de-cuentas#10.7"
+        accion: "En **Cuenta Cierre**, configure cómo se cancelará la cuenta al finalizar el año fiscal con la clase 8."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s019]
+        pagina: null
+      - n: 8
+        id: "contabilidad.crear-plan-de-cuentas#10.8"
+        accion: "En **Diferencia de cambio Mensual**, elija **Por Cuenta**, **Por Documento** o **Ninguno**."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s019]
+        pagina: null
+  - n: 11
+    id: "contabilidad.crear-plan-de-cuentas#11"
+    accion: "En el escenario **Datos Generales**, pestaña **Esquema Contable**, defina para la empresa cuál será el plan contable para la contabilización."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s052]
+    pagina: null
+    fotos:
+      - id: "de2a52229531"
+        ruta_o_url: "imagenes/manual-de-contabilidad/8303a05fe39b.png"
+        pagina: null
+        caption: "Pestaña Esquema Contable, permitirá al Usuario definir por empresa cual será el Plan contable para la contabilización."
+        ocr: "|e wr Ges tenants 2\nses\nam iF on [Datos Generales i,\n@ | SSS\n@ reco] La configuracion del Esquema Contable es @\nsarin |] | ES {ravens nuneaeon et arb porEnprasa\nBs |: Been | ne aa |\nvt avaeaan — |\npar rer [bescrpcén Weneda [an Cortatie [Preceternnedo | Fechaeincio | Fechahn | Fecha deProcesarierto | [Usuario Proceso Estado)\n|\n| ‘pone 2\nOSXGNS M¥BRooNHASD ABH\n— SS < | a 2 06\n[LT [Deseroc Joneses Ta…"
+  - n: 12
+    id: "contabilidad.crear-plan-de-cuentas#12"
+    accion: "Establezca la fecha de inicio y fin para iniciar la contabilización en el S10ERP."
+    resultado: "A partir de la fecha configurada, las operaciones contabilizarán de forma automática."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s052]
+    pagina: null
+    fotos:
+      - id: "13d8389fa40f"
+        ruta_o_url: "imagenes/manual-de-contabilidad/fe1d578a74fb.png"
+        pagina: null
+        caption: "Luego de la Configuración del esquema contable se deberá de establecer la fecha inicio y Fin que determine el usuario para iniciar la contabilización en el S10ERP, a partir de la fecha configurada las operaciones contabilizarán de forma automática."
+        ocr: "‘510 Contabilidad: 22000617 - 510 DEMO TES\n© archivo Yer Catslogos: Herramientas 2\naaw\n: Sucurseles\nFig) Tema a :\na ee errmmml | Datos Generales PS\nInicio fy INMOBILIAF\n© MYSI0DEMO | Empresa 22000617\n5 Be Princes\nFe ia Bowe Descripcién $10 DEMO.\n& El arctive central serevitra\nDatos Generales\nRUC. 20609390009\nLa ff Usuainsperempress YP Stwrsaes Esquemas Contables\nPeriodos Contables 5 % z 8 G 2) es…"
+verificacion: []
+errores_frecuentes: []
+relacionados: [contabilidad.registrar-asiento-manual, contabilidad.configurar-informe-contable]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s017, manual: "Manual de Contabilidad", seccion: "4.1.1 Creación del Plan de Cuentas", pagina: null}
+  - {id: img-c458205ab4e1-0000, manual: "Manual de Contabilidad", seccion: "c458205ab4e1.png", pagina: null}
+  - {id: img-f311ae8d435f-0000, manual: "Manual de Contabilidad", seccion: "f311ae8d435f.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s018, manual: "Manual de Contabilidad", seccion: "4.1.2 Propiedades de la Cuenta (1)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s019, manual: "Manual de Contabilidad", seccion: "4.1.2 Propiedades de la Cuenta (2)", pagina: null}
+  - {id: img-aa4517d68864-0000, manual: "Manual de Contabilidad", seccion: "aa4517d68864.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s052, manual: "Manual de Contabilidad", seccion: "5.1 Datos Generales", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

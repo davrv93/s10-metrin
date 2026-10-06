@@ -1,0 +1,11 @@
+id: orden_de_servicio
+termino: "Orden de servicio"
+sinonimos: ["órdenes de servicio"]
+definicion: "Agrupa los recursos no estoqueables, como los servicios y el alquiler de equipos; se genera en el módulo de Compras."
+en_s10: "Los recursos no almacenables (hh de mano de obra, hm de equipos o subcontratos) se piden desde el almacén de servicios del proyecto, y la orden se genera en el módulo de Compras, escenario de Pedidos de compra; en Gerencia de proyectos se usa al registrar subcontratos. El almacén de servicios se configura para manejar solo recursos tipo equipo (código 03) y subcontratos (código 04)."
+procedimientos_relacionados: []
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s057  # Manual de Compras › 15. Orden de Servicio
+  - web-https-documentacion-s10peru-com-manual-d-s097  # Manual de Gerencia de Proyectos › 3.1 Los almacenes del proyecto (1)
+  - web-https-documentacion-s10peru-com-manual-d-s209  # Manual de Gerencia de Proyectos › 6.4.2 Generar la Orden de Servicio a partir de un pedido
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

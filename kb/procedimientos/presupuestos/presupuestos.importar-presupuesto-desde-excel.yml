@@ -1,0 +1,124 @@
+id: presupuestos.importar-presupuesto-desde-excel
+version: 1
+modulo: presupuestos
+titulo: "Importar al S10 un presupuesto elaborado en Excel"
+objetivo: "Llevar a la hoja del presupuesto las partidas de un presupuesto elaborado en una hoja Excel, fijando filas y columnas a importar."
+nivel: intermedio
+preguntas:
+  - "cómo importo un presupuesto de excel a s10"
+  - "tengo mi presupuesto en excel, como lo paso al s10"
+  - "importar hoja excel al presupuesto"
+  - "como cargo partidas desde excel en s10 presupuestos"
+  - "importar excel a la hoja del presupuesto"
+  - "como asigno analisis de precios unitarios a una partida importada de excel"
+  - "que es una partida formato"
+  - "como importo un presupusto desde exel"
+aliases:
+  - "importar hoja Excel"
+  - "importar presupuesto de Excel"
+  - "cargar partidas desde Excel"
+entidades:
+  modulo: "Presupuestos"
+  pantallas: ["Hoja del Presupuesto", "Importar Hoja Excel"]
+  objetos: ["hoja Excel", "partidas", "partida formato", "análisis de precios unitarios"]
+prerrequisitos:
+  - texto: "Tenga la información en Excel antes de importarla: las celdas deben contener solo valores, no fórmulas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s042]
+  - texto: "Grabe y cierre Excel antes de importarlo al S10."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s042]
+pasos:
+  - n: 1
+    id: "presupuestos.importar-presupuesto-desde-excel#1"
+    accion: "En la **Hoja del Presupuesto**, elija el presupuesto y luego el subpresupuesto, haga clic derecho y elija **Importar hoja Excel**."
+    fuente: [img-65cde478361b-0000, web-https-documentacion-s10peru-com-manual-d-s042]
+    pagina: null
+    fotos:
+      - id: "55bf184d7d52"
+        ruta_o_url: "imagenes/manual-de-presupuestos/65cde478361b.png"
+        pagina: null
+        ocr: "Elija el presupuesto\nluego el subpresupuesto\nPresupifestos a ee\nBison Hoja del Presupuesto 3\nE) SS VIVIENDA| UNFAMILIAR\n5] Estrulturas 001 ESTRUCTURAS:\nS| Arquifectura Fecha: Haga clic derecho\nS| installiciones eléctricas » jen este segmento\n| Installiciones sanitarias\nS VIVIENDA meta para planificar &\n© VIVIEND¢] UNFAMILIAR linea | Adicionar Titulo\n=) @ PUENTE EN CARRETERA\n-S3LACASADE JUAN E, adi…"
+  - n: 2
+    id: "presupuestos.importar-presupuesto-desde-excel#2"
+    accion: "Ubique la carpeta y elija el archivo de Excel con doble clic o con abrir."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s042]
+    pagina: null
+  - n: 3
+    id: "presupuestos.importar-presupuesto-desde-excel#3"
+    accion: "Elija el número de fila inicial y final para fijar el rango de partidas que se importará (por ejemplo, de la fila 2 a la 12)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s042]
+    pagina: null
+    fotos:
+      - id: "b3a77236dbdd"
+        ruta_o_url: "imagenes/manual-de-presupuestos/dd8b67347cb7.png"
+        pagina: null
+        caption: "Elija el número de fila inicial y final, para fijar el rango de partidas que será importado; en este caso elija la fila 2 hasta la 12."
+        ocr: "3 Importar Hoja Excel i EEE a] laa\nArchivo [C:Wsers\\ramirez\\Desktop\\REPORTESIHOJA EN EXCEL.xIs _Eranines |\nNotas:\nHoja |Sheet1 x} Campo item ¥ Importar\nFigs del:[7—?2 Al [7712 Columna:[ A [- ASUAIESIOS Cerrar\ns c D E F ~\n4 Iterh Descripcién Und. Metrado Precio (S/.) F.\n2 Jestrutturas\n3 01.01 MOV{MIENTO DE TIERRAS:\n4 (01.01.01 LIMPIEZA DE TERRENO MANUAL m2 1,800.00 151\n§ (01.01.02 EXqAVACION DE ZAN…"
+  - n: 4
+    id: "presupuestos.importar-presupuesto-desde-excel#4"
+    accion: "Identifique las columnas que se importarán: **ITEM**, **DESCRIPCIÓN**, **UNIDAD**, **METRADO** y **PRECIO 1**. La columna **precio 2** es el precio en la moneda alterna y solo se usa en presupuestos en doble moneda."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s042]
+    pagina: null
+    fotos:
+      - id: "26a133af02a2"
+        ruta_o_url: "imagenes/manual-de-presupuestos/2f5fc8eadb88.png"
+        pagina: null
+        caption: "Identifique las columnas que serán importadas, en este caso: ITEM, DESCRIPCIÓN, UNIDAD, METRADO, PRECIO 1."
+        ocr: "FH\n2 impotar Hoja Excol i Sich\nArchive [Raleee panic OesdopREOONIES ||llgu nels hatte » ela Examinat\nNotas\nHoja ‘| Sheett +] Campo item 4 [owpester\nttem ll\nFilas del 2 al [12 Columna:/tematterno a Cetrar\nCédigo Partida | =\n|_| a CPresunuestoreride =|) Te TF\n| 1 Item Descripcion Propio farce 1. Metrado Precio (Si) F.\n| 2 [ot _Jestructuras Pa Titulo\n| 3 |0101 MOVIMIENTO DE TIERRpescripcién ~"
+      - id: "a09c69465b7c"
+        ruta_o_url: "imagenes/manual-de-presupuestos/b06ae8d81cc8.png"
+        pagina: null
+        caption: "Identifique las columnas que serán importadas, en este caso: ITEM, DESCRIPCIÓN, UNIDAD, METRADO, PRECIO 1."
+        ocr: "ole\nX Importer Hoa Exe es\nArchivo |C:\\Wsers'jramirez'Desktop'REPORTES'HOJA EN EXCEL.xIs Examinar\nNotas\nHoe [Sets] Coco TT -] Trp\n. d Actualiza los\nFilas del : 2 Al 12 Columna:} &  [~ met Cenar\n[Ta _ Registre en esta celda \"Tp Te [Fr 1\n| 1 iIten| Descripcion Und. Metrado Precio (S/.) F\n2 [ot JestrucTuRAS\nEl nombre de esta columna [© MERRAS"
+  - n: 5
+    id: "presupuestos.importar-presupuesto-desde-excel#5"
+    accion: "Con las filas y las columnas ya definidas, use **Importar** para importar la información seleccionada."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s042, img-dd8b67347cb7-0000]
+    pagina: null
+    fotos:
+      - id: "388a83f6c2e7"
+        ruta_o_url: "imagenes/manual-de-presupuestos/fc6c531f8840.png"
+        pagina: null
+        caption: "Requisito: Antes de usar esta opción deben estar definidas las filas y las columnas."
+        ocr: "al\nX inpotarHja Excel) NINN lees\nArchivo {C:\\WUsers¥ramirez\\Desktop'REPORTES'HOJA EN EXCEL xis _Exaninar_|\nNotas\nHoja [Sheet +] Campo [Precioct) Use este botén Impottar\n, Actualiza los\nFilas del 2 al [42 Columna:[ FAO as Cerrar\na ee\n| 1 item Deseripeién Und. Metrado [Precio ($1) JF."
+  - n: 6
+    id: "presupuestos.importar-presupuesto-desde-excel#6"
+    accion: "En la hoja del presupuesto, ordene las partidas con relación a los títulos y genere los ítems."
+    resultado: "Las partidas importadas desde Excel no tienen análisis de precios unitarios: son partidas formato."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s042]
+    pagina: null
+  - n: 7
+    id: "presupuestos.importar-presupuesto-desde-excel#7"
+    accion: "Para asignar análisis de precios unitarios a una partida formato, visualice en la ventana inferior los **Análisis de precios unitarios**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s042]
+    pagina: null
+    fotos:
+      - id: "d176dd8c3a0f"
+        ruta_o_url: "imagenes/manual-de-presupuestos/6b72644ecd34.png"
+        pagina: null
+        caption: "Visualice en la ventana inferior los “Análisis de precios unitarios”."
+        ocr: "So |\nE) Solo partidas\nA anidilisis de precios unitarios\nG Consolidado de recursos unitario\nQa Consolidado de recursos afectado por el metrado"
+  - n: 8
+    id: "presupuestos.importar-presupuesto-desde-excel#8"
+    accion: "Haga clic derecho sobre el nombre de la partida (ventana superior) y elija la opción **Reasignar partida del catálogo**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s042]
+    pagina: null
+  - n: 9
+    id: "presupuestos.importar-presupuesto-desde-excel#9"
+    accion: "En el catálogo de partidas, ubique una partida cuyo análisis de precios unitarios sea el que necesita y elíjala con doble clic."
+    resultado: "El análisis de precios unitarios asignado se convierte en propio y se puede personalizar; al imprimir se toma el nombre de la partida de la hoja del presupuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s042, web-https-documentacion-s10peru-com-manual-d-s043]
+    pagina: null
+verificacion:
+  - texto: "Las partidas importadas aparecen en la hoja del presupuesto como partidas formato, sin análisis de precios unitarios, hasta que se les reasigna una partida del catálogo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s042]
+errores_frecuentes:
+  - sintoma: "La opción de importar no trae la información."
+    solucion: "Antes de usar la opción deben estar definidas las filas y las columnas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s042]
+relacionados: [presupuestos.registrar-titulos-y-partidas, presupuestos.procesar-presupuesto]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s042, manual: "Manual de Presupuestos", seccion: "3.5.2.3 Caso 3) Importar al S10 presupuestos elaborados en hoja Excel (1)", pagina: null}
+  - {id: img-65cde478361b-0000, manual: "Manual de Presupuestos", seccion: "65cde478361b.png", pagina: null}
+  - {id: img-dd8b67347cb7-0000, manual: "Manual de Presupuestos", seccion: "dd8b67347cb7.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s043, manual: "Manual de Presupuestos", seccion: "3.5.2.3 Caso 3) Importar al S10 presupuestos elaborados en hoja Excel (2)", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

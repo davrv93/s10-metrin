@@ -1,0 +1,12 @@
+id: analisis_de_precios_unitarios
+termino: "Análisis de precios unitarios"
+sinonimos: ["análisis de precio unitario", "APU"]
+definicion: "Es la estructura de costo de una partida; puede estar conformado solo por recursos, por recursos y subpartidas, o solo por subpartidas."
+en_s10: "Se muestra en la ventana inferior de la hoja del presupuesto, para la partida elegida. A la mano de obra se le ingresa la cuadrilla (siempre que la partida tenga rendimiento); a los materiales, la cantidad para una unidad; a los equipos, también la cuadrilla; y a las herramientas manuales, un porcentaje. Un color indica su estado: azul, sin revisión; amarillo, vacío; rojo, revisado."
+procedimientos_relacionados: [presupuestos.registrar-partida-en-el-catalogo]
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s099  # Manual de Presupuestos › 5.1.1.1 Hoja del presupuesto (14)
+  - web-https-documentacion-s10peru-com-manual-d-s086  # Manual de Presupuestos › 5.1.1.1 Hoja del presupuesto (1)
+  - web-https-documentacion-s10peru-com-manual-d-s017  # Manual de Presupuestos › 2.1 La carpeta de trabajo (7)
+notas: "La abreviatura APU solo aparece en una guía de terceros sin verificar (7c40a9548710-0118); los manuales oficiales usan siempre «análisis de precios unitarios»."
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

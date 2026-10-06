@@ -1,0 +1,142 @@
+id: compras.registrar-pedido-de-compra
+version: 1
+modulo: compras
+titulo: "Registrar un pedido manual para comprar"
+objetivo: "Registrar desde el almacén de un proyecto un pedido manual A Compras con los recursos que serán comprados, su cantidad y fecha de entrega, y enviarlo a aprobación."
+nivel: basico
+preguntas:
+  - "cómo hago un pedido de compra en s10"
+  - "cómo registro un pedido manual para comprar"
+  - "quiero pedir combustible para la obra, cómo hago el pedido"
+  - "dónde se registra el pedido a compras"
+  - "como ago un pedido de conpra desde el almacen"
+  - "cómo envío el pedido a aprobación"
+  - "cómo pongo la fecha de entrega en el pedido"
+  - "pasos para pedir materiales a logística"
+  - "como agrego recursos a un pedido"
+aliases:
+  - "pedido de compra"
+  - "pedido manual"
+  - "pedido a compras"
+  - "registrar pedido"
+  - "solicitar compra"
+entidades:
+  modulo: "Compras"
+  pantallas: ["Pedidos", "Catálogo de Recursos"]
+  objetos: ["pedido", "recurso", "fecha de entrega", "aprobador", "almacén"]
+prerrequisitos:
+  - texto: "Los pedidos se realizan desde el almacén de un proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s036]
+  - texto: "El usuario debe estar registrado en el catálogo de socio de negocio y tener acceso al módulo, a sus escenarios y catálogos desde Mantenimiento de usuarios."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s016]
+pasos:
+  - n: 1
+    id: "compras.registrar-pedido-de-compra#1"
+    accion: "Ingrese al módulo de Compras y pedidos con el nombre del usuario encargado del manejo del módulo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s019]
+    pagina: null
+  - n: 2
+    id: "compras.registrar-pedido-de-compra#2"
+    accion: "Use el botón de configuración para verificar la configuración de Pedidos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s036]
+    pagina: null
+    fotos:
+      - id: "ddf625977f82"
+        ruta_o_url: "imagenes/manual-de-compras/bf9f3b4bcadc.png"
+        pagina: null
+        caption: "Use el botón"
+  - n: 3
+    id: "compras.registrar-pedido-de-compra#3"
+    accion: "Marque **Fecha de entrega obligatoria al generar un pedido** si quiere que se solicite la fecha de entrega de los recursos de parte del proveedor al almacén del proyecto; estas fechas se muestran en la impresión de la orden de compra."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s036, img-4347c12fd746-0000]
+    pagina: null
+    fotos:
+      - id: "bf2d9146883e"
+        ruta_o_url: "imagenes/manual-de-compras/4347c12fd746.png"
+        pagina: null
+        ocr: "Ee [te\ni\nIV Cursor Automatico\nOT ¥ Fecha de entrega obligatoria al generar un pedido\n(0) [¥ Enviar notificacién por correo luego de enviar el pedido para aprobacién\n[~ Proponer compra minima al adicionar un recurso al pedido\n[~ Algenerar un pedido avisar si alguno de los recursos esta en otro no atendido\nPriorizar pedidos\n© AAlmacén\n( ACompras\n="
+  - n: 4
+    id: "compras.registrar-pedido-de-compra#4"
+    accion: "Seleccione la opción de envío de correo si quiere enviar un correo al aprobador."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s036]
+    pagina: null
+  - n: 5
+    id: "compras.registrar-pedido-de-compra#5"
+    accion: "En el árbol, elija el almacén del proyecto e ingrese al escenario de **Pedidos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s036]
+    pagina: null
+    fotos:
+      - id: "746868de12b0"
+        ruta_o_url: "imagenes/manual-de-compras/7fa718c46fad.png"
+        pagina: null
+        caption: "Acceso al escenario de Pedidos"
+        ocr: "[Elia L4[Peaises | ae [Elie |\n4 hee Proyectos ~\nae} Eseritorio\n(=) 6G PUENTE EN CARRETEF\nfu. De Materiales d\nPedidos A\nLuego, Bde Actives"
+  - n: 6
+    id: "compras.registrar-pedido-de-compra#6"
+    accion: "Haga clic derecho sobre la lista de pedidos y elija **Adicionar**."
+    fuente: [img-fe5b6362d22b-0000, web-https-documentacion-s10peru-com-manual-d-s036]
+    pagina: null
+    fotos:
+      - id: "1b01164b957f"
+        ruta_o_url: "imagenes/manual-de-compras/fe5b6362d22b.png"
+        pagina: null
+        ocr: "Pedidos\n\nARYA. ada\n\nTipo\nClic derecho 1) Adicionar"
+  - n: 7
+    id: "compras.registrar-pedido-de-compra#7"
+    accion: "Seleccione **A Compras** para efectuar el pedido de los recursos que serán comprados."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s036]
+    pagina: null
+  - n: 8
+    id: "compras.registrar-pedido-de-compra#8"
+    accion: "Haga clic derecho en el detalle del pedido y elija **Adicionar recursos**."
+    resultado: "Se muestra el Catálogo de Recursos."
+    fuente: [img-13bf76170cf5-0000, web-https-documentacion-s10peru-com-manual-d-s036]
+    pagina: null
+    fotos:
+      - id: "46efd43e8966"
+        ruta_o_url: "imagenes/manual-de-compras/13bf76170cf5.png"
+        pagina: null
+        ocr: "Usuario pmartinez - Martinez Luna, Pedro ; N° de Pedido -\n_Solctante 02100134 |Martinez Luna, Pedra 51 | | 000000000005\nfa } Empresa [owen wm\n\n4lmaceén 001 - De Materiales Tipo 04 - OBRA N° Alterna N° OP.\n\n‘al 4 Almacén ‘Om 4 Compras\n\nfa-Tpmemb Paya tyansferencia\n“7 | Proyecto Alm. destino\n| destino = 44 =\nFecha osmanoi0 ¢|  Priotidad [Normal P| C.Compra [n04 [Pedro a 44\ni Fj aj\nObservacién *\nClic…"
+  - n: 9
+    id: "compras.registrar-pedido-de-compra#9"
+    accion: "Del **Catálogo de Recursos**, elija los recursos que formarán parte del pedido; agrupe los recursos que distribuye o vende un mismo proveedor, para facilitar generar la orden de compra a partir del pedido."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s036]
+    pagina: null
+  - n: 10
+    id: "compras.registrar-pedido-de-compra#10"
+    accion: "Ingrese la cantidad a pedir de cada recurso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s036]
+    pagina: null
+  - n: 11
+    id: "compras.registrar-pedido-de-compra#11"
+    accion: "Haga clic derecho e ingrese la fecha de entrega."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s036]
+    pagina: null
+  - n: 12
+    id: "compras.registrar-pedido-de-compra#12"
+    accion: "Después de ingresar los datos, use el botón para enviar el pedido a aprobación."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s036]
+    pagina: null
+    fotos:
+      - id: "60fb51aa48b8"
+        ruta_o_url: "imagenes/manual-de-compras/a445f3ba5ffb.png"
+        pagina: null
+        caption: "Después de ingresar los datos use el botón y envíe el pedido a aprobación."
+verificacion:
+  - texto: "El pedido enviado figura como Por aprobar en el escenario de Aprobación de Pedidos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s038, img-c438987af945-0000]
+errores_frecuentes:
+  - sintoma: "Necesita pedir recursos que ya tienen stock para una Partida de Control."
+    solucion: "No use el pedido A Compras: en la etapa de ejecución, la otra opción del pedido es para recursos que tienen stock y que tienen como destino una Partida de Control; con ella el sistema muestra los recursos del stock."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s036]
+relacionados: [compras.aprobar-pedido, compras.generar-orden-de-compra-desde-pedido]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s036, manual: "Manual de Compras", seccion: "7.1 Pedidos Manuales para Comprar", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s016, manual: "Manual de Compras", seccion: "3.3 Usuarios que manejan el módulo y aprobadores", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s019, manual: "Manual de Compras", seccion: "4. Uso del módulo de Compras y Pedidos por parte del usuario", pagina: null}
+  - {id: img-4347c12fd746-0000, manual: "Manual de Compras", seccion: "4347c12fd746.png", pagina: null}
+  - {id: img-fe5b6362d22b-0000, manual: "Manual de Compras", seccion: "fe5b6362d22b.png", pagina: null}
+  - {id: img-13bf76170cf5-0000, manual: "Manual de Compras", seccion: "13bf76170cf5.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s038, manual: "Manual de Compras", seccion: "7.3 Aprobación de Pedidos", pagina: null}
+  - {id: img-c438987af945-0000, manual: "Manual de Compras", seccion: "c438987af945.png", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

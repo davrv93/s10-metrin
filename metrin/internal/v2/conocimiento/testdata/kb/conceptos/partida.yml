@@ -1,0 +1,7 @@
+id: partida
+termino: "Partida"
+sinonimos: ["partidas"]
+definicion: "Unidad de trabajo del presupuesto."
+fuente: [web-https-documentacion-s10peru-com-manual-d-s010]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s010, manual: "Manual de Presupuestos", seccion: "1.2 Conceptos básicos"}

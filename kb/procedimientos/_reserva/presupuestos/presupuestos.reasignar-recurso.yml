@@ -1,0 +1,78 @@
+id: presupuestos.reasignar-recurso
+version: 1
+modulo: presupuestos
+titulo: "Reasignar un recurso en el listado de recursos y precios"
+objetivo: "Reemplazar un recurso por otro utilizado en el presupuesto o del catálogo, por ejemplo cuando un recurso aparece dos veces con características diferentes."
+nivel: intermedio
+preguntas:
+  - "cómo reemplazo un recurso por otro en el presupuesto"
+  - "un recurso me sale dos veces en recursos y precios"
+  - "como cambio un recurso en todas las partidas"
+  - "reasignar recurso s10"
+  - "como veo en que partidas se usa un recurso"
+  - "como cambio un insumo por otro en el presupuesto"
+aliases:
+  - "reasignar recurso"
+  - "reemplazar recurso"
+  - "cambiar recurso"
+entidades:
+  modulo: "Presupuestos"
+  pantallas: ["Recursos y precios", "Hoja del Presupuesto"]
+  objetos: ["recurso", "partidas", "cantidades"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "presupuestos.reasignar-recurso#1"
+    accion: "Abra el listado de **Recursos y precios** del subpresupuesto con el botón de la barra de botones del escenario Hoja del Presupuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s073]
+    pagina: null
+  - n: 2
+    id: "presupuestos.reasignar-recurso#2"
+    accion: "Si quiere ver antes dónde participa el recurso, use **Partidas que utilizan el recurso** (es informativa) y luego cierre la ventana."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s049]
+    pagina: null
+    fotos:
+      - id: "a40a18261d19"
+        ruta_o_url: "imagenes/manual-de-presupuestos/b74e0b21aadb.png"
+        pagina: null
+        caption: "Muestra las partidas donde participa el recurso elegido. Esta opción es informativa."
+        ocr: "ofa]\n Recurso: 0147010002005 OPERARIO ENCOFRADO hh. 5) 6) asa\n\nS/F| 4 RH % ES & Tipo Touos ~ Filtra Todos -\n\n001 Estructuras Neo. items 28\n\nCargar [Recursos +] Indice Unificado [Todos +] Factor {Sin Factor\nfee “\n[_> JOPERARIO ENCOFRADO hh 2,855.9921 0.00\n| JorIciaL ENCOFRADO hh 5,311.9085 0.00\n| JoriciaL CONCRETO. hh 745.8392 0.00\n[__JOFICIAL CANTERA Haga doble clic sobre el recurso |\" 30.4882 0.0…"
+  - n: 3
+    id: "presupuestos.reasignar-recurso#3"
+    accion: "Haga clic derecho sobre el recurso que será cambiado y elija **Reasignar recurso**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050, img-588488e65c4a-0000]
+    pagina: null
+    fotos:
+      - id: "49a12b3be642"
+        ruta_o_url: "imagenes/manual-de-presupuestos/588488e65c4a.png"
+        pagina: null
+        ocr: "ose ser, HA9@ clic derecho sobre el una) cant\nédigo Peet recurso que serd reemplazado Nill] Gaile\n|__| + 0349080010 ZARANDA VIBRATORIA\" x 6\" X 14\" MOTOR.FI ECTRICO 15 HP hm 45.2463\n[___]> _o349150nng GRUPO ELECTROGENO|Ba0 HP 250 wwe) him 56.3854\n> ]* cosas oe GRUPO ELECTROGENO 56 HP 37.5 KW hin 45.2463\nPrecios historicos\nEactor de precio\nPartidas que utilizan elfecurso »\nMostrar Campos Eliminar re…"
+  - n: 4
+    id: "presupuestos.reasignar-recurso#4"
+    accion: "De la ventana que muestre, elija con doble clic el recurso que lo reemplazará, es decir, el que permanecerá en el presupuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050, img-bd80080aea4b-0000]
+    pagina: null
+    fotos:
+      - id: "627005c1de13"
+        ruta_o_url: "imagenes/manual-de-presupuestos/bd80080aea4b.png"
+        pagina: null
+        ocr: "@%5 Recursos utilizados} Ubique el recurso marcado con la llamada 2, que viene i=in x\n—————| aserel recurso que permanecera en el presupuesto. §©|——————\nOpciones 2 Elija con doble clic.\nD a X BETES | dG Bee HO | 25 aS OD ABE\n5 ° ee GRUPO ELECTROGENO 380 HP 250 KW hm\nmronamatas _|GRUPO ELECTROGENO 56 HP 37.5 KW hin"
+  - n: 5
+    id: "presupuestos.reasignar-recurso#5"
+    accion: "Luego use el botón para calcular las cantidades de los recursos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050]
+    pagina: null
+verificacion: []
+errores_frecuentes:
+  - sintoma: "Eliminó un recurso del listado y quiere recuperarlo."
+    solucion: "Un recurso eliminado no puede ser recuperado: para volverlo a insertar lo tiene que hacer desde el análisis de precios unitarios."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s051]
+relacionados: [presupuestos.procesar-presupuesto]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s073, manual: "Manual de Presupuestos", seccion: "3.11.2.1 Recursos y precios", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s049, manual: "Manual de Presupuestos", seccion: "3.6.3.1 Partidas que utilizan el recurso", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s050, manual: "Manual de Presupuestos", seccion: "3.6.3.2 Reasignar recurso", pagina: null}
+  - {id: img-588488e65c4a-0000, manual: "Manual de Presupuestos", seccion: "588488e65c4a.png", pagina: null}
+  - {id: img-bd80080aea4b-0000, manual: "Manual de Presupuestos", seccion: "bd80080aea4b.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s051, manual: "Manual de Presupuestos", seccion: "3.6.3.3 Eliminar recursos", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

@@ -1,0 +1,134 @@
+id: administrativo.definir-aprobadores-de-pagos
+version: 1
+modulo: administrativo
+titulo: "Definir aprobadores, moneda y monto para la aprobación de pagos"
+objetivo: "Definir a un usuario como aprobador de pagos, con la moneda en la que tiene autorizado el pago y su monto máximo de autorización, y darle permisos en los escenarios del módulo."
+nivel: intermedio
+preguntas:
+  - "cómo defino a un usuario como aprobador de pagos"
+  - "como pongo el monto maximo que puede aprobar un usuario"
+  - "dónde se configura quién autoriza los pagos en administrativo"
+  - "cómo asigno la moneda y el monto para aprobación"
+  - "un usuario no puede aprobar las ordenes de pago que hago"
+  - "como habilito el check autoriza pago"
+  - "como hago aprovador a un usuario en s10"
+  - "pasos para definir aprobadores en el módulo administrativo"
+aliases:
+  - "definir aprobadores"
+  - "aprobador de pagos"
+  - "autoriza pago"
+  - "monto máximo de aprobación"
+entidades:
+  modulo: "Administrativo"
+  pantallas: ["Datos Generales", "Usuarios por Empresa", "Usuarios por Sucursal", "Permisos", "Principal"]
+  objetos: ["usuario", "aprobador", "moneda", "empresa", "accesos"]
+prerrequisitos:
+  - texto: "El usuario debe estar definido con sus accesos en el grupo **Utilitarios** > **Mantenimiento de usuarios**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s005]
+pasos:
+  - n: 1
+    id: "administrativo.definir-aprobadores-de-pagos#1"
+    accion: "Vaya al escenario **Datos Generales** y ubíquese en la empresa."
+    fuente: [img-d90434797879-0000]
+    pagina: null
+    fotos:
+      - id: "484ff672db2e"
+        ruta_o_url: "imagenes/manual-de-administracion/d90434797879.png"
+        pagina: null
+        ocr: "22,510 Administrative: 22004161 - SISTEMA 10S.A. PES\n© Archivo Ver Catdlogos Herramientas 2\nio.(Deee\n- Sucursales\n| \\g) Coffee m1 . “4\nRECO ewe seer Datos Generales PS\nInicio a\nPrincipal | Empresa 22004164\ng 2 Bandeja na\nArchiv) Central Descripcidn SISTEMA 10 S.A.\nDatos Generales ‘Abrevietura S10\nNos ubicamos\nRUC, 20086390289\n5 enla\nempresa -\nPeriodos Contables P [7 Usuarios porEmpresa J Sucusaies…"
+  - n: 2
+    id: "administrativo.definir-aprobadores-de-pagos#2"
+    accion: "En **Usuarios por Empresa**, haga clic derecho y seleccione al usuario del catálogo de usuarios."
+    fuente: [img-246e0043614b-0000, img-d90434797879-0000, web-https-documentacion-s10peru-com-manual-d-s006]
+    pagina: null
+  - n: 3
+    id: "administrativo.definir-aprobadores-de-pagos#3"
+    accion: "Una vez agregado, habilite el check de **Responsable**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s006]
+    pagina: null
+    fotos:
+      - id: "1b19f60f3d93"
+        ruta_o_url: "imagenes/manual-de-administracion/246e0043614b.png"
+        pagina: null
+        caption: "Una vez agregado, le habilitamos el check de responsable."
+        ocr: "Datos Generales me\nEmpresa 22004161\n\nDescripcién SISTEMA 10 S.A.\n\nAbreviatura $10\n\nRUC. 20255390289\n\n/ Usuarios por Empresa \\f Soules YO\nOVA Bl wd\n\nUsuario Nombre del Usuario Responsable\n\ncruz Cruz, Carmen"
+  - n: 4
+    id: "administrativo.definir-aprobadores-de-pagos#4"
+    accion: "Luego, ubíquese en la sucursal **Principal**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s006, img-542021022dbf-0000]
+    pagina: null
+    fotos:
+      - id: "0d3098af1bb6"
+        ruta_o_url: "imagenes/manual-de-administracion/542021022dbf.png"
+        pagina: null
+        ocr: ": ‘Sucursales\ni ia) Coffee 7 7\n[id cotfee Ire Bsertore [Datos Generales ae\nInicio oF MAIO\n= Principal 220044161\nSe Bandejal\n7 | Archivo Central Descripcién SISTEMA 10 S.A.\nDatos Generales Abreviatura $40\n- RUC. 20255390289\na Nos ubicamos\nPeriodos Contables pa Usuarios por Sucursal Pesmisos\nSvea aaeae\nUsuario Nombre del Usuario Autoriza pago |Moneda\nTalonarios %, Catalogo de Usuarios : Todos los Re…"
+  - n: 5
+    id: "administrativo.definir-aprobadores-de-pagos#5"
+    accion: "En **Usuarios por Sucursal**, haga clic derecho y seleccione al usuario con doble clic."
+    fuente: [img-542021022dbf-0000, web-https-documentacion-s10peru-com-manual-d-s006]
+    pagina: null
+  - n: 6
+    id: "administrativo.definir-aprobadores-de-pagos#6"
+    accion: "Defina al usuario como aprobador: habilite el check **Autoriza pago**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s006, img-e15e94dafbe8-0000]
+    pagina: null
+    fotos:
+      - id: "51d67457532b"
+        ruta_o_url: "imagenes/manual-de-administracion/e15e94dafbe8.png"
+        pagina: null
+        ocr: "[Datos Generales\n\nPrincipal 22004161\n\nDescripcién SISTEMA 10 S.A.\n\nAbreviatura $10\n\nRUC. 20255390289\n\nUsuarios por Sucursal Permisos\n\nx § fd =) El ce| Habilitamos el check\n\nUsuario Nombre del Usuario Autoriza pago |Moneda Monto maximo Fecha Limite Doc. | Revisor | Regularizacién de caja\necruz Cruz, Carmen Ff] | 0.00 oO oO"
+  - n: 7
+    id: "administrativo.definir-aprobadores-de-pagos#7"
+    accion: "En el recuadro que aparece automáticamente, elija la moneda en la que tiene autorizado el pago (por ejemplo, Nuevos Soles)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s006]
+    pagina: null
+    fotos:
+      - id: "40fe924879ca"
+        ruta_o_url: "imagenes/manual-de-administracion/6f536dc8c02d.png"
+        pagina: null
+        caption: "Automáticamente me aparecerá un recuadro en el cual elegiremos la moneda en la cual se tiene autorizado el pago, en este caso será Nuevos Soles."
+        ocr: "Opciones 2\n\nDam Xie dé Ge Foo 234) ae 2\n\n| Céodig [Descripcién Sim ola {Base? | ¢Principal? | ;Secundaria? | Codic\n\n|| Cy NUEVOS SOLES Sh. vi vi\n|_| 02 [DOLARES AMERKANOS us aA —_\nLS - i a a a\nCEE\n| |\na | | | || |\nSs\n\n‘ >\n\nRes ss Rewato: ide 20000 TH NUEVOSSOLPS ig"
+  - n: 8
+    id: "administrativo.definir-aprobadores-de-pagos#8"
+    accion: "Ingrese los datos: defina el **Monto maximo** de autorización y habilite los checks según corresponda."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s006, img-4dba7ba05edc-0000]
+    pagina: null
+    fotos:
+      - id: "ccdd7e256315"
+        ruta_o_url: "imagenes/manual-de-administracion/4dba7ba05edc.png"
+        pagina: null
+        ocr: "Datos Generales ra\n\nPrincipal 22004161\n\nDescripcién SISTEMA 10 S.A.\n\nAbreviatura S10\n\nRUC. 20255390289\n\nUsuarios por Sucursal Permisos\n\nBYvERSs Bada\n\nUsuario: Nombre del Usuario Autoriza pago |Moneda Monto maximo. [Fecha Limite Doc. Revisor_| Requiarizacién de caja itir en Custodia nviar Pago Abi iquidacién | Modificar Fech|\n\ncoruz Cruz, Carmen Si. 4\nDefinimos el monto Habilitamos los check\nmaximo…"
+  - n: 9
+    id: "administrativo.definir-aprobadores-de-pagos#9"
+    accion: "En la pestaña **Permisos**, haga clic derecho sobre el escenario y elija **Dar acceso**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s006, img-3e954332b8d2-0000]
+    pagina: null
+    fotos:
+      - id: "91f1d38c9c89"
+        ruta_o_url: "imagenes/manual-de-administracion/3e954332b8d2.png"
+        pagina: null
+        ocr: "a ft ”\n\nDatos Generales ae\nPrincipal 22004161\n\nDescripcién SISTEMA 10 S.A.\n\nAbreviatura $10\n\nRUC. 20255390289\n\n/ Usuarios por Sucursal V Permisos\n\n1|2| | Descripcion o oS x & had\niS ceruz - Cruz, Carmen\n\n=] | Inicio\n\n: Datos Generales oO oO Oo oO oO\n\n: Periodos Contables Click derecho Pts Dar acceso oO oO\n\n: Talonarios Oo ; oO oO\n\nB |Caja {J Quitar acceso\n\ni Diario de Caja oO Ningtin acceso oO oO…"
+  - n: 10
+    id: "administrativo.definir-aprobadores-de-pagos#10"
+    accion: "Ingrese al sistema con el usuario."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s006]
+    pagina: null
+    fotos:
+      - id: "c67e031c5813"
+        ruta_o_url: "imagenes/manual-de-administracion/7235bcdc4f06.png"
+        pagina: null
+        caption: "Ingresamos con el usuario."
+        ocr: "Sistema 10: Bi\nkel\nx\n— ie canceter |\n4 ¥"
+verificacion: []
+errores_frecuentes: []
+relacionados: [administrativo.registrar-pago-con-cheque]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s005, manual: "Manual Administrativo", seccion: "2.3 Definición de usuarios y sus accesos", pagina: null}
+  - {id: img-d90434797879-0000, manual: "Manual Administrativo", seccion: "d90434797879.png", pagina: null}
+  - {id: img-246e0043614b-0000, manual: "Manual Administrativo", seccion: "246e0043614b.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s006, manual: "Manual Administrativo", seccion: "2.4 Definición de aprobadores, moneda y monto para aprobación", pagina: null}
+  - {id: img-542021022dbf-0000, manual: "Manual Administrativo", seccion: "542021022dbf.png", pagina: null}
+  - {id: img-e15e94dafbe8-0000, manual: "Manual Administrativo", seccion: "e15e94dafbe8.png", pagina: null}
+  - {id: img-4dba7ba05edc-0000, manual: "Manual Administrativo", seccion: "4dba7ba05edc.png", pagina: null}
+  - {id: img-3e954332b8d2-0000, manual: "Manual Administrativo", seccion: "3e954332b8d2.png", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

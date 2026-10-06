@@ -18,7 +18,10 @@ import (
 	"rag-go/internal/clasificar"
 	"rag-go/internal/embed"
 	"rag-go/internal/indexar"
+	"rag-go/internal/jev"
 	"rag-go/internal/llm"
+	"rag-go/internal/traza"
+	"rag-go/internal/v2/tipos"
 )
 
 // Chateador es lo que el RAG necesita del LLM (interfaz para poder probar).
@@ -36,9 +39,18 @@ type RAG struct {
 	LLM          Chateador
 	Emb          embed.Embebedor    // nil = sin ruta conversacional
 	Clasificador *clasificar.Modelo // nil = todo va al RAG
+	JEV          *jev.Cliente       // nil sin JEV_URL: decisiones evaluativas del chat (origen metrin-chat)
 	MaxDistancia float64            // si el mejor trozo está más lejos, no hay contexto
 	RutaFallos   string             // datos/sin_respuesta.jsonl
+	V2           AgenteV2           // nil = V1 siempre (docs/V2-RAG-PROCEDURAL.md, interruptor)
 	mu           sync.Mutex
+}
+
+// AgenteV2 es el orquestador de la V2 (internal/v2). Version decide la versión del turno al entrar (interruptor,
+// porcentaje y «version» de la petición); con V1 no se toca nada de lo que sigue.
+type AgenteV2 interface {
+	Version(pregunta string, o Opciones) tipos.Version
+	Preguntar(ctx context.Context, pregunta string, o Opciones) (Respuesta, error)
 }
 
 // Fuente citada en una respuesta.
@@ -77,12 +89,19 @@ type Respuesta struct {
 	MsLLM             int64         `json:"ms_llm"`
 	DistanciaMin      float64       `json:"distancia_min"`
 	PreguntaReescrita string        `json:"pregunta_reescrita,omitempty"`
+	// Solo en turnos V2 (internal/v2); en V1 quedan vacíos y no aparecen en el JSON.
+	PlanV2  *tipos.Plan    `json:"plan,omitempty"`
+	Memoria *tipos.Memoria `json:"memoria,omitempty"`
+	Version tipos.Version  `json:"version,omitempty"`
 }
 
 // Turno es un mensaje previo de la conversación ("usuario" o "asistente").
 type Turno struct {
 	Rol   string `json:"rol"`
 	Texto string `json:"texto"`
+	// Plan V2 que acompañó a esa respuesta (si la hubo): la V2 reconstruye la memoria del procedimiento con él
+	// cuando la petición no trae «memoria». En crudo: V1 lo ignora y un valor raro nunca invalida la petición.
+	Plan json.RawMessage `json:"plan,omitempty"`
 }
 
 // Opciones de una pregunta.
@@ -93,7 +112,13 @@ type Opciones struct {
 	// Emitir recibe el texto de la respuesta según el modelo lo escribe.
 	// Es un borrador: la Respuesta final manda (reintento en español,
 	// fotos colocadas, respuestas fijas que no pasan por el modelo).
+	// Solo lo usa V1: un turno V2 no lo llama (su respuesta sale entera).
 	Emitir func(string)
+	// V2 (solo cuenta con un AgenteV2): versión pedida por la petición («v1»|«v2», la respeta solo si
+	// AGENT_V2_ENABLED=true), id de la conversación (para el porcentaje) y memoria del procedimiento en curso.
+	Version      string
+	Conversacion string
+	Memoria      *tipos.Memoria
 }
 
 // MarcaSinContexto es la frase que se pide al modelo cuando el contexto no
@@ -133,19 +158,54 @@ const ManualCortex = "Cortex"
 // KCortex: trozos curados del segundo pase.
 const KCortex = 8
 
-// Preguntar responde una pregunta.
+// Preguntar responde una pregunta. Con un traza.Recorder en el contexto (modo
+// traza) además anota el camino; sin él responde igual y no hace nada más.
 func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respuesta, error) {
+	if r.V2 != nil && r.V2.Version(pregunta, o) == tipos.V2 {
+		return r.V2.Preguntar(ctx, pregunta, o)
+	}
+	return r.PreguntarV1(ctx, pregunta, o)
+}
+
+// PreguntarV1 responde siempre con V1, sin mirar el interruptor de la V2.
+func (r *RAG) PreguntarV1(ctx context.Context, pregunta string, o Opciones) (Respuesta, error) {
+	res, err := r.preguntar(ctx, pregunta, o)
+	if rec := traza.De(ctx); rec != nil {
+		r.completarTraza(rec, res, err)
+	}
+	return res, err
+}
+
+func (r *RAG) preguntar(ctx context.Context, pregunta string, o Opciones) (Respuesta, error) {
+	rec := traza.De(ctx) // nil con el modo traza apagado: sus métodos no hacen nada
+	rec.Inicio(traza.EtapaEntrada)
 	if o.K <= 0 {
 		o.K = 8
 	}
+	// Antes de la traza: «hilo_turnos» cuenta los turnos que V1 usa de verdad
+	// (la V2 hace lo mismo con HiloSinEco).
 	o.Hilo = sinPreguntaActual(o.Hilo, pregunta)
+	if rec != nil {
+		trazarEntrada(rec, pregunta, o)
+	}
 	plan := r.planificar(ctx, pregunta, o.Hilo)
 	res := Respuesta{Pregunta: pregunta, Modo: "respuesta", Plan: plan}
-	if esPreguntaSobreAciertos(pregunta) {
+	rec.Inicio(traza.EtapaReglaAciertos)
+	aciertos := esPreguntaSobreAciertos(pregunta)
+	if rec != nil {
+		trazarAciertos(rec, aciertos)
+	}
+	if aciertos {
 		res.Modo = "conversacional"
 		res.Plan = Orquestacion{Intencion: "consulta_meta", TipoConsulta: "metricas", Ruta: rutaRegla, Clasificador: "regla_determinista"}
 		res.Respuesta = "No llevo un contador fiable de cuántas preguntas respondí correctamente hoy. Puedo revisar contigo las respuestas de esta conversación, pero no quiero inventar una cifra."
+		if rec != nil {
+			trazarRuta(rec, res.Plan)
+		}
 		return res, nil
+	}
+	if rec != nil {
+		trazarRuta(rec, plan)
 	}
 	// Ruta conversacional: social y límite responden directo sin retrieval.
 	// Ayuda va al RAG (necesita contexto para ayudar de verdad); si el RAG
@@ -174,6 +234,7 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 	if esRegistroNuevoPresupuesto(efectiva) {
 		busqueda += " registro del nuevo presupuesto, escenario Datos Generales, Catálogo de Presupuestos, Nuevo SubItem, Datos adicionales, Adicionar"
 	}
+	rec.Inicio(traza.EtapaBusqueda)
 	t0 := time.Now()
 	trozos, err := r.Almacen.Buscar(ctx, busqueda, o.K, o.Filtro)
 	res.TiempoBusq = time.Since(t0)
@@ -201,12 +262,18 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 			filtroOficial[k] = v
 		}
 		kOficial := max(o.K*2, 16)
+		if rec != nil {
+			rec.Dato(traza.EtapaBusqueda, "k_oficial", kOficial)
+		}
 		oficiales, err = r.Almacen.Buscar(ctx, busqueda, kOficial, filtroOficial)
 		if err != nil {
 			return res, fmt.Errorf("buscar manuales oficiales: %w", err)
 		}
 		compacta := consultaCompacta(busqueda)
 		if compacta != strings.TrimSpace(busqueda) {
+			if rec != nil {
+				rec.Dato(traza.EtapaBusqueda, "consulta_compacta", compacta)
+			}
 			compactos, err := r.Almacen.Buscar(ctx, compacta, kOficial, filtroOficial)
 			if err != nil {
 				return res, fmt.Errorf("buscar términos oficiales: %w", err)
@@ -219,21 +286,35 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 	}
 	// Segundo pase dinámico: conocimiento curado Cortex.
 	var cortex []almacen.Resultado
+	var errCortex error // se ignora como siempre; solo lo anota la traza
 	if o.Filtro == nil || o.Filtro["source"] == "" || o.Filtro["source"] == indexar.FuenteS10KB {
-		cortex, _ = r.Almacen.Buscar(ctx, busqueda, KCortex, map[string]string{"manual": ManualCortex})
+		if rec != nil {
+			rec.Dato(traza.EtapaBusqueda, "k_cortex", KCortex)
+		}
+		cortex, errCortex = r.Almacen.Buscar(ctx, busqueda, KCortex, map[string]string{"manual": ManualCortex})
+	}
+	if rec != nil {
+		trazarBusqueda(rec, o, busqueda, busqueda != efectiva, trozos, oficiales, cortex, res.MsBusqueda, errCortex)
 	}
 	// En empates estables queda primero la evidencia oficial. Una fuente de
 	// terceros mucho más cercana todavía puede ganar por relevancia.
+	rec.Inicio(traza.EtapaSeleccion)
 	candidatos := append(append(append([]almacen.Resultado(nil), oficiales...), trozos...), cortex...)
-	seleccionados := seleccionarContexto(candidatos, r.MaxDistancia)
+	seleccionados, corte := seleccionarContextoCorte(candidatos, r.MaxDistancia)
 	if esConsultaTiposPresupuesto(pregunta) {
 		if contexto := contextoTiposPresupuesto(cortex); contexto != nil {
 			seleccionados = []almacen.Resultado{*contexto}
+			if rec != nil {
+				rec.Dato(traza.EtapaSeleccion, "regla", "tipos_presupuesto")
+			}
 		}
 	}
 	if esRegistroNuevoPresupuesto(efectiva) {
 		if guia := contextoRegistroNuevoPresupuesto(candidatos); len(guia) > 0 {
 			seleccionados = guia
+			if rec != nil {
+				rec.Dato(traza.EtapaSeleccion, "regla", "registro_presupuesto")
+			}
 		}
 	}
 	res.DistanciaMin = 1
@@ -246,10 +327,17 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 			res.Fuentes = append(res.Fuentes, cita)
 		}
 	}
+	if rec != nil {
+		trazarSeleccion(rec, candidatos, seleccionados, corte, r.MaxDistancia)
+	}
+	rec.Inicio(traza.EtapaEvidencia)
 	if esRegistroNuevoPresupuesto(efectiva) && len(seleccionados) > 0 {
 		res.Modo = "tutorial"
 		res.Plan.TipoConsulta = "procedimiento"
 		res.Respuesta = "Para registrar un presupuesto nuevo:\n1. Ingresa al escenario Datos Generales.\n2. En el árbol del Catálogo de Presupuestos, haz clic derecho en el grupo y elige Nuevo SubItem. Si el grupo aún no existe, créalo primero con esa misma opción y pulsa Adicionar.\n3. Dentro del grupo, vuelve a elegir Nuevo SubItem y completa la ventana Presupuesto: descripción, cliente, ubicación, fecha, plazo, jornada diaria y moneda.\n4. Pulsa Adicionar.\n5. Haz doble clic en el presupuesto para trasladarlo al árbol de Datos Generales."
+		if rec != nil {
+			trazarRegistroFijo(rec, res, r.MaxDistancia)
+		}
 		return res, nil
 	}
 	if len(seleccionados) == 0 || res.DistanciaMin > r.MaxDistancia {
@@ -258,6 +346,9 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 		res.Motivo = fmt.Sprintf("distancia mínima %.3f > umbral %.3f", res.DistanciaMin, r.MaxDistancia)
 		if len(trozos) == 0 {
 			res.Motivo = "el índice no devolvió trozos"
+		}
+		if rec != nil {
+			trazarEvidencia(rec, res, r.MaxDistancia, "")
 		}
 		// Mensaje corto sin contexto = casi siempre charla, no pregunta de
 		// trabajo ("bien y tú", "ok", "¿precio?"). Se conversa en vez de
@@ -268,13 +359,19 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 				conv.Motivo = "sin contexto útil; respuesta conversacional (" + res.Motivo + ")"
 				conv.Plan = res.Plan
 				conv.Plan.Ruta = "conversacion_fallback"
-				_ = r.registrarFallo(res)
+				if rec != nil && rec.Estado(traza.EtapaCharla) == traza.EstadoOK {
+					rec.CambiarEstado(traza.EtapaCharla, traza.EstadoRespaldo, "sin contexto útil y mensaje corto: charla de respaldo")
+				}
+				_ = r.anotarFallo(ctx, res)
 				return conv, nil
 			}
 		}
 		res.Fuentes = []Fuente{}
 		res.Respuesta = MarcaSinContexto + " para responder a esa pregunta: no encontré nada relacionado en los documentos indexados."
-		return res, r.registrarFallo(res)
+		return res, r.anotarFallo(ctx, res)
+	}
+	if rec != nil {
+		trazarEvidencia(rec, res, r.MaxDistancia, "")
 	}
 
 	var ctxTxt strings.Builder
@@ -308,6 +405,7 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 		{Role: "system", Content: sistema},
 		{Role: "user", Content: "CONTEXTO:\n" + ctxTxt.String() + historial + "PREGUNTA: " + efectiva + "\n\n" + instruccion},
 	}
+	rec.Inicio(traza.EtapaGeneracion)
 	t1 := time.Now()
 	texto, err := r.chat(ctx, msgs, o.Emitir)
 	res.TiempoLLM = time.Since(t1)
@@ -316,10 +414,16 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 		res.Respuesta = "Encontré fuentes relacionadas, pero no pude preparar un resumen ahora. Inténtalo de nuevo en unos minutos."
 		res.Modo = "modelo_no_disponible"
 		res.Motivo = "el modelo conversacional no está disponible"
+		if rec != nil {
+			trazarGeneracion(rec, r.LLM, res, len(seleccionados), err, false)
+		}
 		return res, nil
 	}
 	// Qwen2.5-3B puede filtrar portugués: reintenta una vez y nunca lo muestra.
 	if parecePortugues(texto) {
+		if rec != nil {
+			rec.Dato(traza.EtapaGeneracion, "reintento_portugues", true)
+		}
 		msgs = append(msgs, llm.Mensaje{Role: "user", Content: "Reescribe tu respuesta anterior ÚNICAMENTE en español neutro, sin una sola palabra en portugués."})
 		if t2, err2 := r.LLM.Chat(ctx, msgs); err2 == nil {
 			texto = t2
@@ -329,14 +433,21 @@ func (r *RAG) Preguntar(ctx context.Context, pregunta string, o Opciones) (Respu
 		res.Respuesta = "Encontré fuentes relacionadas, pero no pude redactar una respuesta fiable en español. Inténtalo de nuevo en unos minutos."
 		res.Modo = "modelo_no_disponible"
 		res.Motivo = "el modelo no pudo responder en español"
+		if rec != nil {
+			trazarGeneracion(rec, r.LLM, res, len(seleccionados), nil, true)
+		}
 		return res, nil
 	}
 	res.Respuesta = texto
+	if rec != nil {
+		trazarGeneracion(rec, r.LLM, res, len(seleccionados), nil, false)
+		trazarVerificacion(rec, res.Fuentes, DiceSinContexto(texto))
+	}
 	if DiceSinContexto(texto) {
 		res.SinContexto = true
 		res.Fuentes = []Fuente{}
 		res.Motivo = "el modelo dijo que el contexto no alcanza"
-		return res, r.registrarFallo(res)
+		return res, r.anotarFallo(ctx, res)
 	}
 	return res, nil
 }
@@ -439,8 +550,16 @@ func parecePortugues(t string) bool {
 }
 
 func seleccionarContexto(candidatos []almacen.Resultado, maxDistancia float64) []almacen.Resultado {
+	seleccionados, _ := seleccionarContextoCorte(candidatos, maxDistancia)
+	return seleccionados
+}
+
+// seleccionarContextoCorte es seleccionarContexto que además devuelve el
+// corte que aplicó (min(maxDistancia, mejor+ventana)); el modo traza lo
+// muestra. Sin candidatos el corte es 0.
+func seleccionarContextoCorte(candidatos []almacen.Resultado, maxDistancia float64) ([]almacen.Resultado, float64) {
 	if len(candidatos) == 0 {
-		return nil
+		return nil, 0
 	}
 	for i := range candidatos {
 		candidatos[i].Distancia += penalizacionConfianza[candidatos[i].Metadata["confianza"]]
@@ -469,7 +588,7 @@ func seleccionarContexto(candidatos []almacen.Resultado, maxDistancia float64) [
 		vistos[clave] = true
 		seleccionados = append(seleccionados, t)
 	}
-	return seleccionados
+	return seleccionados, limite
 }
 
 func contieneCita(fuentes []Fuente, cita string) bool {
@@ -489,6 +608,8 @@ func claveCita(cita string) string {
 // reescribir convierte una pregunta con referencias ("su", "eso", "ahí") en
 // autónoma usando el hilo. Si falla, devuelve "" y se usa la original.
 func (r *RAG) reescribir(ctx context.Context, hilo []Turno, pregunta string) (string, error) {
+	rec := traza.De(ctx)
+	rec.Inicio(traza.EtapaReescritura)
 	var h strings.Builder
 	empieza := max(0, len(hilo)-6)
 	for _, t := range hilo[empieza:] {
@@ -502,13 +623,20 @@ func (r *RAG) reescribir(ctx context.Context, hilo []Turno, pregunta string) (st
 		{Role: "user", Content: "CONVERSACIÓN:\n" + h.String() + "PREGUNTA NUEVA: " + pregunta},
 	})
 	if err != nil {
+		if rec != nil {
+			trazarReescritura(rec, r.LLM, pregunta, "", err)
+		}
 		return "", err
 	}
 	re = strings.TrimSpace(re)
 	if i := strings.Index(re, "\n"); i >= 0 {
 		re = strings.TrimSpace(re[:i])
 	}
-	return recortar(re, 500), nil
+	re = recortar(re, 500)
+	if rec != nil {
+		trazarReescritura(rec, r.LLM, pregunta, re, nil)
+	}
+	return re, nil
 }
 
 func recortar(s string, n int) string {
@@ -523,12 +651,23 @@ func recortar(s string, n int) string {
 // no es pregunta de trabajo). Corta, en español, sin prometer acciones.
 const sistemaCharla = `Eres Metrín, asistente de Optimiza 360. Respondes SIEMPRE en español neutro, con calidez y brevedad (máximo 60 palabras). Nunca escribas en portugués ni en ningún otro idioma. No inventas datos ni afirmas acciones que no realizaste. Si el mensaje menciona temas de obra, S10, presupuestos o pide explicaciones técnicas, NO los expliques: pide con amabilidad que precisen la pregunta. Si piden algo fuera de tu alcance (poemas, tareas escolares), declínalo amable y ofrece ayuda con S10 u obra.`
 
+// Conversar es la charla directa de V1 (sin búsqueda) para quien la necesite fuera de Preguntar: la V2 la usa
+// para los mensajes SOCIAL. intencion: «social», «limite» o «charla». Sin streaming: la respuesta sale entera.
+func (r *RAG) Conversar(ctx context.Context, intencion, pregunta string, hilo []Turno) (Respuesta, error) {
+	return r.conversar(ctx, intencion, pregunta, hilo, nil)
+}
+
 // conversar responde charla directa con el estilo Metrín, sin retrieval.
 // Límite no llama al modelo: respuesta fija (el 3B no obedece el rechazo).
 func (r *RAG) conversar(ctx context.Context, intencion, pregunta string, hilo []Turno, emitir func(string)) (Respuesta, error) {
+	rec := traza.De(ctx)
+	rec.Inicio(traza.EtapaCharla)
 	res := Respuesta{Pregunta: pregunta, Modo: "conversacional"}
 	if intencion == "limite" {
 		res.Respuesta = "Eso está fuera de mi alcance, pero te ayudo con S10 y obra. ¿Qué necesitas?"
+		if rec != nil {
+			trazarCharlaFija(rec, intencion)
+		}
 		return res, nil
 	}
 	msgs := []llm.Mensaje{{Role: "system", Content: sistemaCharla}}
@@ -554,9 +693,15 @@ func (r *RAG) conversar(ctx context.Context, intencion, pregunta string, hilo []
 		res.Respuesta = "Hola, ¿en qué te ayudo hoy?"
 		res.Modo = "conversacional"
 		res.Motivo = "modelo no disponible; saludo de respaldo"
+		if rec != nil {
+			trazarCharla(rec, r.LLM, intencion, res, err)
+		}
 		return res, nil
 	}
 	if parecePortugues(texto) {
+		if rec != nil {
+			rec.Dato(traza.EtapaCharla, "reintento_portugues", true)
+		}
 		msgs = append(msgs, llm.Mensaje{Role: "user", Content: "Reescribe ÚNICAMENTE en español neutro."})
 		if t2, err2 := r.LLM.Chat(ctx, msgs); err2 == nil {
 			texto = t2
@@ -567,6 +712,9 @@ func (r *RAG) conversar(ctx context.Context, intencion, pregunta string, hilo []
 		res.Motivo = "el modelo mezcló portugués; saludo de respaldo"
 	}
 	res.Respuesta = texto
+	if rec != nil {
+		trazarCharla(rec, r.LLM, intencion, res, nil)
+	}
 	return res, nil
 }
 

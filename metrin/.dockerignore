@@ -3,3 +3,5 @@ datos
 .git
 .env
 ejemplo-landing/node_modules
+# Reranker de la V2: lo monta el servicio «reranker» del compose; no entra en la imagen
+modelos/reranker

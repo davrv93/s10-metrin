@@ -1,0 +1,138 @@
+id: compras.registrar-centro-de-compra
+version: 1
+modulo: compras
+titulo: "Registrar un centro de compra"
+objetivo: "Registrar el centro de compra, la persona o el lugar (por ejemplo, la oficina de logística) encargado de administrar el proceso de compra, con sus usuarios y los proyectos que manejará."
+nivel: intermedio
+preguntas:
+  - "cómo creo un centro de compra en s10"
+  - "cómo registro el centro de compras"
+  - "dónde se crea el centro de compra en el módulo de compras"
+  - "cómo asigno usuarios al centro de compras"
+  - "cómo le asigno proyectos a un centro de compra"
+  - "como registro un centro de conpras nuevo"
+  - "quién es el responsable del centro de compras y dónde lo pongo"
+  - "pasos para configurar el centro de compra antes de hacer pedidos"
+aliases:
+  - "centro de compra"
+  - "registrar centro de compra"
+  - "nuevo centro de compra"
+  - "crear centro de compras"
+entidades:
+  modulo: "Compras"
+  pantallas: ["Datos Generales", "Centro de Compra", "Catálogo de Proyectos"]
+  objetos: ["centro de compra", "usuario", "responsable", "proyecto"]
+prerrequisitos:
+  - texto: "Los usuarios que manejarán el módulo deben estar registrados en el catálogo de socio de negocio y tener acceso al módulo desde el escenario de Mantenimiento de usuarios, en el grupo Utilitarios."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s016]
+  - texto: "El sa es el encargado de registrar al usuario que manejará el módulo de Compras y Pedidos y a las personas que aprobarán los pedidos y las órdenes de compra."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s013]
+pasos:
+  - n: 1
+    id: "compras.registrar-centro-de-compra#1"
+    accion: "Ingrese al módulo de Compras y pedidos con el nombre del usuario encargado del manejo del módulo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s019]
+    pagina: null
+  - n: 2
+    id: "compras.registrar-centro-de-compra#2"
+    accion: "Ingrese al escenario **Datos Generales**."
+    fuente: [img-5cc3c5367bbe-0000, web-https-documentacion-s10peru-com-manual-d-s020]
+    pagina: null
+    fotos:
+      - id: "182e90c4b2b2"
+        ruta_o_url: "imagenes/manual-de-compras/5cc3c5367bbe.png"
+        pagina: null
+        ocr: "[cio]\n8\nDatos Generales"
+  - n: 3
+    id: "compras.registrar-centro-de-compra#3"
+    accion: "Haga clic derecho sobre **Centros de compras** y elija **Nuevo centro de compra**."
+    fuente: [img-1946273b8154-0000, web-https-documentacion-s10peru-com-manual-d-s020]
+    pagina: null
+    fotos:
+      - id: "ddb47df189a7"
+        ruta_o_url: "imagenes/manual-de-compras/1946273b8154.png"
+        pagina: null
+        ocr: "Clic derecho |—__\n= ——s\nst———| _) Nuevo centro de compra\n\\ Centros de compras! = *\nBandeja F Refrescar\nArchivo Central"
+  - n: 4
+    id: "compras.registrar-centro-de-compra#4"
+    accion: "En la ventana **Centro de Compra**, registre el código, la abreviatura, el lugar y, en atención, a la persona encargada (por ejemplo, Martinez Luna, Pedro)."
+    fuente: [img-25bb7580f19b-0000, web-https-documentacion-s10peru-com-manual-d-s020]
+    pagina: null
+    fotos:
+      - id: "a2800ef044d8"
+        ruta_o_url: "imagenes/manual-de-compras/25bb7580f19b.png"
+        pagina: null
+        ocr: "=|\nAY Centro de Compra [owe\nCédigo jo04\nAbrevietura JPM. SE |\nbrscy 150130 [SAN BORJA mo 44\nLIMA - LIMA - SAN BORJA\nAtencién 4 [92100134 [Martinez Luna, Pedro kL os 44\nAdicionar Cancelar"
+  - n: 5
+    id: "compras.registrar-centro-de-compra#5"
+    accion: "Pulse **Adicionar** para grabar el centro de compra."
+    fuente: [img-25bb7580f19b-0000, web-https-documentacion-s10peru-com-manual-d-s020]
+    pagina: null
+  - n: 6
+    id: "compras.registrar-centro-de-compra#6"
+    accion: "Para registrar a los usuarios del Centro de Compras, haga clic derecho en la lista de usuarios y elija **Adicionar usuario**."
+    fuente: [img-562141e25435-0000, web-https-documentacion-s10peru-com-manual-d-s020]
+    pagina: null
+    fotos:
+      - id: "a665b974171c"
+        ruta_o_url: "imagenes/manual-de-compras/562141e25435.png"
+        pagina: null
+        ocr: "Datos Generales\n(Cédigo [8\nDescripcién [Pedro\nloca (s0i30 JSANBoRUA ~- | 64\nLIMA, - LIMA - SAN BORJA\nDireccién = |4¥. San Borja Sur 754\nNombre del Usuario Responsable Autorizar cambio de precios en Ordenes de Compra\nEli Clic derecho @ Adicionar usuario\n——\n[tie] x Quitar usuario\n_"
+  - n: 7
+    id: "compras.registrar-centro-de-compra#7"
+    accion: "Del catálogo de usuarios, elija al usuario con doble clic."
+    fuente: [img-413ba14d09df-0000, web-https-documentacion-s10peru-com-manual-d-s020]
+    pagina: null
+    fotos:
+      - id: "34412549bebf"
+        ruta_o_url: "imagenes/manual-de-compras/413ba14d09df.png"
+        pagina: null
+        ocr: "=\n8 Catdlogo de Usuarios : Todos los Registros (xe) fm\nOpciones 2\nDe XBE GS MYe on aw az alse\neh Tonos los Registrog Ella con doble cle fF) ann 38\n® Costructora $1 |_| cénigo _[Deseripcian EE\n0107005 [Martinez Luna, Pedro\n0101006 | Ocamyp Lazo, César\nValencia Taco, Alberto +|\n0101005 Martinez Luna, Pedro\n“lanie~~> 101007 Valencia Taco, Alberto"
+  - n: 8
+    id: "compras.registrar-centro-de-compra#8"
+    accion: "Marque al **Responsable** del Centro de compras con una selección y seleccione también al usuario que autorizará la Orden de Compra."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s020]
+    pagina: null
+    fotos:
+      - id: "0c918cc7e388"
+        ruta_o_url: "imagenes/manual-de-compras/56ddc818b765.png"
+        pagina: null
+        caption: "Elija al responsable del Centro de compras con una selección, también seleccione al usuario que autorizará la Orden de Compra."
+        ocr: "Nombre delUsuario [Responsable | Autorizar cambio de precios en Ordenes de Compra\navalencia Valencia Taco, Alberto Oo\npimartinez Martinez Luna, Pedra Oo"
+  - n: 9
+    id: "compras.registrar-centro-de-compra#9"
+    accion: "Elija la pestaña **Proyectos** para asignar proyectos al Centro de Compras: un Centro de Compras puede manejar la información de varios proyectos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s020, img-47ed692ea7e0-0000]
+    pagina: null
+    fotos:
+      - id: "d6aeba4c5d7f"
+        ruta_o_url: "imagenes/manual-de-compras/34bc7ea230f2.png"
+        pagina: null
+        caption: "Asigne proyectos al Centro de Compras, el sistema está preparado para que un Centro de Compras maneje la información de varios proyectos."
+        ocr: "Datos Generales\nCadigo — |O4\nDescripeidn Pedro\nLugar i 50130 [SAN BORJA ea al\nLIMA, - LIMA - SAN BORJA,\nDiteccién fav. ‘San Borja Sur 754\nProyecto Decals Catad [Decals Precis [Deciales Parca"
+  - n: 10
+    id: "compras.registrar-centro-de-compra#10"
+    accion: "Del **Catálogo de Proyectos**, elija con doble clic los proyectos que manejará el centro de compras."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s020]
+    pagina: null
+    fotos:
+      - id: "88cc7f297f8a"
+        ruta_o_url: "imagenes/manual-de-compras/5ef2862b5cf1.png"
+        pagina: null
+        caption: "Del Catálogo de Proyectos, elija a los proyectos que manejará el centro de compras."
+        ocr: "j=\n2m Catélogo de Proyectos :02 Afio 2010 = lame\nOpciones ?\nDae X BES MY) Bloo sae |S ea\nal |__| cédigo | Cédigo Alterna [Descripcién\n| | 02001 TES Gesiaes| Elija con doble clic\n| | | __"
+verificacion: []
+errores_frecuentes: []
+relacionados: [compras.registrar-aprobadores-de-orden-de-compra, compras.registrar-pedido-de-compra]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s016, manual: "Manual de Compras", seccion: "3.3 Usuarios que manejan el módulo y aprobadores", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s013, manual: "Manual de Compras", seccion: "2. Acceso al módulo de Compras y pedidos con sa", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s019, manual: "Manual de Compras", seccion: "4. Uso del módulo de Compras y Pedidos por parte del usuario", pagina: null}
+  - {id: img-5cc3c5367bbe-0000, manual: "Manual de Compras", seccion: "5cc3c5367bbe.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s020, manual: "Manual de Compras", seccion: "4.1 Registro del Centro de compra", pagina: null}
+  - {id: img-1946273b8154-0000, manual: "Manual de Compras", seccion: "1946273b8154.png", pagina: null}
+  - {id: img-25bb7580f19b-0000, manual: "Manual de Compras", seccion: "25bb7580f19b.png", pagina: null}
+  - {id: img-562141e25435-0000, manual: "Manual de Compras", seccion: "562141e25435.png", pagina: null}
+  - {id: img-413ba14d09df-0000, manual: "Manual de Compras", seccion: "413ba14d09df.png", pagina: null}
+  - {id: img-47ed692ea7e0-0000, manual: "Manual de Compras", seccion: "47ed692ea7e0.png", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

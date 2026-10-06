@@ -1,0 +1,136 @@
+id: presupuestos.registrar-usuarios
+version: 1
+modulo: presupuestos
+titulo: "Registrar usuarios del módulo de Presupuestos"
+objetivo: "Registrar en el módulo a las personas que lo manejarán y asignarles accesos y atributos."
+nivel: intermedio
+preguntas:
+  - "cómo creo un usuario en s10 presupuestos"
+  - "como registro usuarios en el modulo de presupuestos"
+  - "como doy acceso a un usuario a los escenarios"
+  - "como asigno permisos a un usuario en s10"
+  - "que categorias de usuario hay en s10"
+  - "mantenimiento de usuarios s10"
+  - "como agrego un usuario nuevo al sistema"
+  - "un usuario no ve mi presupuesto, por que"
+aliases:
+  - "registrar usuarios"
+  - "crear usuario"
+  - "mantenimiento de usuarios"
+  - "asignar accesos"
+entidades:
+  modulo: "Presupuestos"
+  pantallas: ["Utilitarios", "Mantenimiento de usuario"]
+  objetos: ["usuario", "subgrupos", "categorías de usuario", "escenarios", "catálogos"]
+prerrequisitos:
+  - texto: "Lo hace el usuario **sa**, administrador del sistema."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s027]
+  - texto: "La persona debe estar en el catálogo de socio de negocio: la elección del personal se efectúa de ese catálogo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s133]
+pasos:
+  - n: 1
+    id: "presupuestos.registrar-usuarios#1"
+    accion: "Como **sa**, vaya a **Utilitarios**, escenario de **Mantenimiento de usuario**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s027, web-https-documentacion-s10peru-com-manual-d-s133]
+    pagina: null
+    fotos:
+      - id: "67d003ee6047"
+        ruta_o_url: "imagenes/manual-de-presupuestos/16be8fb4c1c4.png"
+        pagina: null
+        caption: "Acceso al escenario"
+        ocr: "Elija este grupo ES | |\n€& Hotin de arresn\nal escenario\nMantenimient\no de Usuarios"
+  - n: 2
+    id: "presupuestos.registrar-usuarios#2"
+    accion: "Haga clic derecho y registre el nombre de la empresa o constructora con **Adicionar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s133, img-3b937f97f14d-0000]
+    pagina: null
+    fotos:
+      - id: "a659ed5eed91"
+        ruta_o_url: "imagenes/manual-de-presupuestos/3b937f97f14d.png"
+        pagina: null
+        ocr: "Tn <—)\nHaga clic derecho rs\n‘Manten/miento de Usuarios|\nFEMY Todos ios Usuarios\nirvitedos\nj ‘Adicionar ] Canceler\nuego,"
+  - n: 3
+    id: "presupuestos.registrar-usuarios#3"
+    accion: "Registre los subgrupos, por ejemplo **Personal Técnico** y **Personal Administrativo**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s133]
+    pagina: null
+    fotos:
+      - id: "c787076e8935"
+        ruta_o_url: "imagenes/manual-de-presupuestos/afc95dff7e8b.png"
+        pagina: null
+        caption: "Registro de los Subgrupos: Registre a Personal Técnico y Personal Administrativo"
+        ocr: "> SuvGrupo x=)\n——— oescipcin PaomalTeneorl gas |\n1 Uf} Todos los Usuprios |\nInvitadlos :\nLuego,"
+  - n: 4
+    id: "presupuestos.registrar-usuarios#4"
+    accion: "Sobre el subgrupo, elija **Nuevo usuario** y registre al usuario: elíjalo del catálogo de socio de negocio e ingrese el nombre con el que entrará al sistema y su clave."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s133, img-f7d217f66425-0000, img-357ba790863b-0000]
+    pagina: null
+    fotos:
+      - id: "d5559c6f1d1b"
+        ruta_o_url: "imagenes/manual-de-presupuestos/f7d217f66425.png"
+        pagina: null
+        ocr: "eo Todos los Usuariis\ni Invitados\nEh-dgb Constructorel\n2 Personal Administrative 5 Nuevo usuario"
+      - id: "bfdab2c2831f"
+        ruta_o_url: "imagenes/manual-de-presupuestos/357ba790863b.png"
+        pagina: null
+        ocr: "(Es elnombre con el que |\ns el nombre con el que\nés 0201) |o01 ar -\nCodigo H 1 el usuario Garcia Dulanto, Rafael]\nUsuar:  REARCIE, w]ed] Lingresa al sistema\n—\nee | 4 lLa clave es una cadena de |\nContirmacién — ‘4 caracteres alfanuméricos |\nde la clave Idehasta12 caracteres |\n7, o==_ees\nEmpleado = |4844| —-——-——-———-4\n21s {| | Muestra el catalogo de sacioy\nAuditor Vb. + -@) 4-4 de negocio, para ele…"
+  - n: 5
+    id: "presupuestos.registrar-usuarios#5"
+    accion: "Si corresponde, elija a uno de los usuarios como auditor de la base de datos (lista de visto bueno VB de colores, hasta 6 auditores por base de datos) y ponga una selección al usuario encargado de informática."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s133]
+    pagina: null
+  - n: 6
+    id: "presupuestos.registrar-usuarios#6"
+    accion: "Dé al usuario acceso al módulo: solo se da acceso desde el módulo en el que el usuario se encuentra trabajando."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s133]
+    pagina: null
+    fotos:
+      - id: "7d89dfe84b0d"
+        ruta_o_url: "imagenes/manual-de-presupuestos/36d855b6f27e.png"
+        pagina: null
+        caption: "Acceso al módulo: Sólo se da acceso desde el módulo que el usuario se encuentra trabajando."
+        ocr: "=) (3 Todos los Usuarins Ususio | FEE\nic3) Invitados Elija el usuario\ngig Constructora: cave |\n)-@@ Personal Técnico\n@ SXEEREICMSES: |Empleado j22000566 Garcia Dulanto, Rafael\n@ Torrado Gonzéles, Luis\n@ Olazabal Pinto,]osé | Auditor Vb x\nff Staz1i Castilo, Rodrigo | Administrador de Sistemas [~\n@ Ruiz Suarez, ahtonio - ———\n# Ocampo Lazo,,pésar | _[Desetipcién Use este boton\nDela Cruz Alvilrez, Jor…"
+  - n: 7
+    id: "presupuestos.registrar-usuarios#7"
+    accion: "Asígnele una categoría: **Administrador de módulo**, **Jefe de grupo**, **Especialista**, **Usuario** o **Ninguno** (esta última borra los atributos antes asignados)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s133]
+    pagina: null
+  - n: 8
+    id: "presupuestos.registrar-usuarios#8"
+    accion: "En **Acceso a los escenarios**, marque los escenarios a los que tendrá acceso el usuario."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s133, img-7d3a730064ff-0000]
+    pagina: null
+    fotos:
+      - id: "97a0886a64de"
+        ruta_o_url: "imagenes/manual-de-presupuestos/7d3a730064ff.png"
+        pagina: null
+        ocr: "Descripcién Acceso *\n| PRESUPUESTOS\nI Presupuesto\nDatos generales\nHoja de presupuesto\nGastos generales oO\nFérmula polinémica oOo\nPrecios oO\nCabecera para reportes Oo\nTiempos para programacién\nPresupuesto descompuesto que tendra acceso el usuario\nDetalle de recursos ou v)"
+  - n: 9
+    id: "presupuestos.registrar-usuarios#9"
+    accion: "En **Acceso a los catálogos**, ponga check a las opciones que podrá usar: nuevos registros, modificar, eliminar, notas, imprimir y seleccionar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s134, img-2cefb69f967a-0000]
+    pagina: null
+    fotos:
+      - id: "f496d3f1b0de"
+        ruta_o_url: "imagenes/manual-de-presupuestos/2cefb69f967a.png"
+        pagina: null
+        ocr: "OLORCEOROMG\n=| CATALOGOS GENERALES: =\nRecursos\nIdentificadores\nUbicacién Geagrafica\nUnidaces\nEmpresas. ca]\nPonga check a las opciones\nMonedas\nTipoCambio\nTine an Rensenantg\na"
+verificacion: []
+errores_frecuentes:
+  - sintoma: "Un usuario no ve un presupuesto registrado por otro."
+    solucion: "Solo la persona que registra el presupuesto tiene acceso a él; debe invitar a los otros usuarios para que compartan su elaboración."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s134]
+  - sintoma: "No se puede eliminar un registro de un catálogo."
+    solucion: "Solo se puede eliminar un registro cuando no está participando en una aplicación."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s134]
+relacionados: [presupuestos.registrar-presupuesto-nuevo]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s027, manual: "Manual de Presupuestos", seccion: "3 Uso del módulo de presupuestos", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s133, manual: "Manual de Presupuestos", seccion: "5.5.1 Registro de usuarios (1)", pagina: null}
+  - {id: img-3b937f97f14d-0000, manual: "Manual de Presupuestos", seccion: "3b937f97f14d.png", pagina: null}
+  - {id: img-f7d217f66425-0000, manual: "Manual de Presupuestos", seccion: "f7d217f66425.png", pagina: null}
+  - {id: img-357ba790863b-0000, manual: "Manual de Presupuestos", seccion: "357ba790863b.png", pagina: null}
+  - {id: img-7d3a730064ff-0000, manual: "Manual de Presupuestos", seccion: "7d3a730064ff.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s134, manual: "Manual de Presupuestos", seccion: "5.5.1 Registro de usuarios (2)", pagina: null}
+  - {id: img-2cefb69f967a-0000, manual: "Manual de Presupuestos", seccion: "2cefb69f967a.png", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

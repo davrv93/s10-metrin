@@ -1,0 +1,12 @@
+id: fondo_rotatorio
+termino: "Fondo rotatorio"
+sinonimos: ["caja chica", "fondos rotatorios"]
+definicion: "Llamado también caja chica, es una cantidad de dinero que se asigna al encargado de manejar esos fondos en el proyecto."
+en_s10: "El sistema registra la asignación de los fondos y los documentos que sustentan la rendición, y al mismo tiempo el ingreso al almacén de los recursos. Desde el almacén del fondo rotatorio no se hacen pedidos: solo ingresos por compra con descarga directa o egreso, con partida de control y destino específico. En Facturación se registra en el grupo Por pagar, escenario Fondos rotatorios, y solo el responsable del fondo puede adicionar en el fondo que tiene asignado."
+procedimientos_relacionados: []
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s100  # Manual de Almacenes › 3.8.6 Fondo Rotatorio
+  - web-https-documentacion-s10peru-com-manual-d-s097  # Manual de Gerencia de Proyectos › 3.1 Los almacenes del proyecto (1)
+  - web-https-documentacion-s10peru-com-manual-d-s054  # Manual de Facturación › 6.6.1 Configuración del Fondo Rotatorio.
+  - web-https-documentacion-s10peru-com-manual-d-s055  # Manual de Facturación › 6.6.2 Registro del Fondo Rotatorio (1)
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

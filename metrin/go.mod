@@ -16,4 +16,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/s3 v1.113.4 // indirect
 	github.com/aws/smithy-go v1.28.1 // indirect
 	github.com/philippgille/chromem-go v0.7.0 // indirect
+	golang.org/x/text v0.29.0 // indirect
 )
+
+require gopkg.in/yaml.v3 v3.0.1

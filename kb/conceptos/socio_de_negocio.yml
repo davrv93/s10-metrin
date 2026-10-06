@@ -1,0 +1,11 @@
+id: socio_de_negocio
+termino: "Socio de negocio"
+sinonimos: ["socios de negocio"]
+definicion: "Persona natural o jurídica registrada en el catálogo de socios de negocio, con un código único. En ese catálogo se registran todas las personas que tienen que ver con el sistema, como clientes, proveedores, empleados, obreros, subcontratistas, AFP y bancos."
+en_s10: "El catálogo funciona como una bolsa de la que se eligen los que participarán en el proyecto; el registro puede hacerse a mano o por importación masiva desde una plantilla Excel."
+procedimientos_relacionados: [facturacion.registrar-cliente, nominas.registrar-trabajador-como-socio-de-negocio, nominas.importar-socios-de-negocio-desde-excel]
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s008  # Manual de Nóminas › 3.1 Catálogo de Socios de Negocio
+  - web-https-documentacion-s10peru-com-manual-d-s014  # Manual de Presupuestos › 2.1 La carpeta de trabajo (4)
+  - web-https-documentacion-s10peru-com-manual-d-s176  # Manual de Gerencia de Proyectos › 5.7 Catálogo de Socio de Negocios por Tipo
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

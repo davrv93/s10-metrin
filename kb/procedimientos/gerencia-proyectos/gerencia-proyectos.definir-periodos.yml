@@ -1,0 +1,109 @@
+id: gerencia-proyectos.definir-periodos
+version: 1
+modulo: gerencia-proyectos
+titulo: "Definir la escala y los periodos visibles del proyecto"
+objetivo: "Elegir la escala de periodos de cada rama y hacer visibles los periodos mensuales y semanales que se usarán en el Cronograma por Periodos y en los Resultados Operativos; el sistema genera los periodos según la fecha de inicio y el plazo del proyecto."
+nivel: basico
+preguntas:
+  - "cómo hago visibles los periodos del proyecto"
+  - "no me aparecen las semanas en el cronograma por periodos"
+  - "como elijo periodos semanales o mensuales en gerencia de proyectos"
+  - "dónde se configura la escala de periodos del proyecto"
+  - "como agrego mas periodos si el proyecto se amplia"
+  - "como muestro los periodos en resultados operativos"
+  - "como configuro los periodos del proyeto en s10"
+  - "periodos semanales para la rama meta y mensuales para la venta"
+aliases:
+  - "definir periodos"
+  - "hacer visibles los periodos"
+  - "escala de periodos"
+  - "periodos del proyecto"
+  - "incrementar periodos"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Periodos", "Datos generales", "Cronograma por Periodos", "Resultados Operativos"]
+  objetos: ["periodos", "proyecto", "rama", "escala de periodos", "subcontratos"]
+prerrequisitos:
+  - texto: "El proyecto debe tener registradas la fecha de inicio y el plazo en el escenario de Datos Generales: con ellos el sistema genera los periodos en forma automática."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s080]
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.definir-periodos#1"
+    accion: "En el escenario de Datos generales, elija la rama del proyecto (**Venta descompuesto**, **Venta**, **Meta** o **Linea Base**)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s051, img-d1ddac227ebb-0000]
+    pagina: null
+    fotos:
+      - id: "595728aefd9d"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/d1ddac227ebb.png"
+        pagina: null
+        ocr: "Proyectos\n(lg Escritorio\n(=) PUENTE EN CARRETERA\n2 mw Principal\n\n5S] venta descompuesto\nS| venta\n\n[Etia\nS| Linea Base"
+  - n: 2
+    id: "gerencia-proyectos.definir-periodos#2"
+    accion: "Use el botón de **Escala de Periodos** y elija la escala para **Programado**, valorizado y **SubContrato**: semanal para las ramas Venta Descompuesto, Meta y Línea Base, y mensual para la rama Venta."
+    resultado: "Los avances del Cronograma por Periodos en modo programado y valorización, y el registro y valorización de subcontratos, toman esta configuración."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s051, img-005234e92b4d-0000]
+    pagina: null
+    fotos:
+      - id: "d628849303c8"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/005234e92b4d.png"
+        pagina: null
+        ocr: "Use este botdn para elegir la escala de periado\nEscala de Periados\nProgramado |Semanal +| Yalorizado |Semanal | SubContrato |Semanal v"
+  - n: 3
+    id: "gerencia-proyectos.definir-periodos#3"
+    accion: "Para el acceso al escenario de **Periodos**, elija el proyecto y luego **Periodos**."
+    donde: "Escenario Periodos"
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s080, img-5b211d337a00-0000]
+    pagina: null
+    fotos:
+      - id: "503be11f9c23"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/5b211d337a00.png"
+        pagina: null
+        ocr: "J Elija el proyecto\nEt sj Escritario\nPeriodos Luego, ‘SS PUENTE EN CARRETERA"
+  - n: 4
+    id: "gerencia-proyectos.definir-periodos#4"
+    accion: "Use el botón para desplegar los periodos."
+    fuente: [img-397f1be2b51b-0000, web-https-documentacion-s10peru-com-manual-d-s080]
+    pagina: null
+    fotos:
+      - id: "f0af5c5d1954"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/397f1be2b51b.png"
+        pagina: null
+        ocr: "Periodos crn\n‘Venta descompuesto | Venta F Meta]\nInicio Proyecto 211042010 Inicio Proyecto 211042010 Inicio Proyecto 241042010\nFin Proyecto 17/09/2010 Fin Proyecto 17/092010 Fin Proyecto 17/09/2010\nInicio Real 211042010 Inicio Real 2110472010 Inicio Real 241042010\nFin Real 21042010 Fin Real 211042010 FinReal 2410472010\n|__|}\nUse este boton para desplegar |Z, REE\nDescripcion | Visible Programado |…"
+  - n: 5
+    id: "gerencia-proyectos.definir-periodos#5"
+    accion: "Haga visibles los periodos: elija solo los periodos mensuales y semanales y seleccione **Visible**."
+    resultado: "Los periodos visibles se utilizan en el escenario del Cronograma por Períodos, en Resultados Operativos, entre otros."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s080, img-a69fc61c9bbe-0000]
+    pagina: null
+    fotos:
+      - id: "b27faafac2be"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/a69fc61c9bbe.png"
+        pagina: null
+        ocr: "Propiedades Proteger peric| «\n\nDescripcién Visible Programado\nEPeriodo Mensuel A Desprotegicio Ao\n=) Afio 2010 (by Desprotegico eT)\nAbril 2010 ¥) Ap Desprotesido Ao\nMayo 2010 ¥)  ByDesproteaido Ao\nunio 2010 ¥)  ApDespreteaido Ao\nJulio 2010 ¥)  ApDesproteaido Ao\nAgosto 2010 ¥)  ByDesprotegido Ao\nSetiembre 2010 | Haga visible los} Py iv) 8) pesprotegido Apo\nE}Periodo Semanal Periodos (Op Desprategid…"
+  - n: 6
+    id: "gerencia-proyectos.definir-periodos#6"
+    accion: "Si el proyecto requiere más tiempo, incremente el número de días del plazo en Datos generales y luego, en el escenario de **PERIODOS**, procese y refresque para incrementar los periodos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s043, web-https-documentacion-s10peru-com-manual-d-s080]
+    pagina: null
+verificacion: []
+errores_frecuentes:
+  - sintoma: "En el Cronograma por Periodos no se muestran todos los periodos que marcó como visibles."
+    solucion: "En el escenario del Cronograma por Periodos solo se permite hacer visible 15 periodos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s080]
+  - sintoma: "Quiere usar periodos quincenales en el proyecto."
+    solucion: "No use periodos quincenales: están disponibles solo para el módulo de Nóminas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s080]
+  - sintoma: "Registró información en semanas y la quiere ver en meses."
+    solucion: "Los periodos semanales no son compatibles con los mensuales; en el escenario de Resultados Operativos el sistema toma el promedio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s051]
+relacionados: [gerencia-proyectos.registrar-proyecto, gerencia-proyectos.planificar-en-cronograma-por-periodos, gerencia-proyectos.configurar-calendario-del-proyecto]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s080, manual: "Manual de Gerencia de Proyectos", seccion: "2.5 Períodos", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s051, manual: "Manual de Gerencia de Proyectos", seccion: "2.5.5 Escala de periodos para la programación manual e ingreso de avances", pagina: null}
+  - {id: img-d1ddac227ebb-0000, manual: "Manual de Gerencia de Proyectos", seccion: "d1ddac227ebb.png", pagina: null}
+  - {id: img-005234e92b4d-0000, manual: "Manual de Gerencia de Proyectos", seccion: "005234e92b4d.png", pagina: null}
+  - {id: img-5b211d337a00-0000, manual: "Manual de Gerencia de Proyectos", seccion: "5b211d337a00.png", pagina: null}
+  - {id: img-397f1be2b51b-0000, manual: "Manual de Gerencia de Proyectos", seccion: "397f1be2b51b.png", pagina: null}
+  - {id: img-a69fc61c9bbe-0000, manual: "Manual de Gerencia de Proyectos", seccion: "a69fc61c9bbe.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s043, manual: "Manual de Gerencia de Proyectos", seccion: "2.5 Registro del proyecto (2)", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

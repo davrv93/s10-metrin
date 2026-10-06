@@ -1,0 +1,102 @@
+id: gerencia-proyectos.configurar-calendario-del-proyecto
+version: 1
+modulo: gerencia-proyectos
+titulo: "Configurar el calendario del proyecto"
+objetivo: "Definir en el calendario del proyecto los días hábiles, los feriados y días no laborables del lugar y el horario de trabajo dentro del lapso de ejecución del proyecto."
+nivel: intermedio
+preguntas:
+  - "cómo configuro el calendario del proyecto en gerencia de proyectos"
+  - "como registro los feriados del proyecto"
+  - "dónde marco los días no laborables de la obra"
+  - "como cambio el horario de trabajo del proyecto"
+  - "como pongo semana santa como no laborable en s10"
+  - "como registro un feriado local en el calendario del proyeto"
+  - "donde se configuran las horas de trabajo por dia de la obra"
+  - "calendario del proyecto feriados y horario"
+aliases:
+  - "configurar calendario"
+  - "calendario del proyecto"
+  - "registrar feriados"
+  - "días no laborables"
+  - "horario de trabajo"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Calendario", "Configuración"]
+  objetos: ["calendario", "feriados", "horario", "proyecto", "días no laborables"]
+prerrequisitos:
+  - texto: "El proyecto debe estar registrado: al registrarlo en el escenario de Datos generales, el sistema le asigna por defecto un calendario base que usan todas sus actividades y recursos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s064]
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.configurar-calendario-del-proyecto#1"
+    accion: "Verifique que los días feriados fijos por ley estén registrados en el menú **Herramientas** – **Configuración**; si faltan, solicite al encargado del módulo de Nóminas que los registre."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s065, img-7cf5904bf5f1-0000]
+    pagina: null
+    fotos:
+      - id: "3533ed1a56b2"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/7cf5904bf5f1.png"
+        pagina: null
+        ocr: "FA configuracién Feriaco =)\nAv aéls af ada\nFecha Descripcién\nTde Enero Afio Nuevo\n1deMayo Dia del Trabajo SOLICITE AL ENCARGADO\n29. de Junio Festividad de San Pedro y San Pablo DEL MODULO DE Néminas que\n28 de Julio Fiesta de la Independencia Nacional registre esta informacion\n29.de Julio Fiesta de la Independencia Nacional (2)\n30 de Agosto Festividad de San Rasa de Lima\n[Elia + Herramientas 8de Oc…"
+  - n: 2
+    id: "gerencia-proyectos.configurar-calendario-del-proyecto#2"
+    accion: "Para el acceso al escenario de **Calendario**, elija el proyecto y luego **Calendario**."
+    donde: "Escenario Calendario"
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s065, img-fd67290a8a65-0000]
+    pagina: null
+    fotos:
+      - id: "ac2f8045a827"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/fd67290a8a65.png"
+        pagina: null
+        ocr: "at Elija el proyecto\n6 E) ge Escritorio\nCalendario Luego, E)- PUENTE EN CARRETERA"
+  - n: 3
+    id: "gerencia-proyectos.configurar-calendario-del-proyecto#3"
+    accion: "Haga clic sobre la celda de feriados predeterminados para tomar los días feriados a nivel nacional."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s066, img-818a2a2094e4-0000]
+    pagina: null
+  - n: 4
+    id: "gerencia-proyectos.configurar-calendario-del-proyecto#4"
+    accion: "Para registrar los feriados adicionales del lugar y los de semana santa, elija el mes y año, luego el día, y asígnele **NO LABORABLE**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s066]
+    pagina: null
+    fotos:
+      - id: "e4b667c17c2e"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/818a2a2094e4.png"
+        pagina: null
+        caption: "Registre los días no laborables, del lugar donde se ejecutará el proyecto."
+        ocr: "Hacer dia(s) Horario: De: A: Inicio Proyecto / Real 21/04/2010 = 21/04/20\"\n@ Laborable Mafiana 08:00 13:30 || Fin Proyecto /Real 171092010 29/06/20\n~ No Laborable Tarde Dias laborables / Real 150\noi EET Noche Dias No Lab. / Real 0\nTotal 5.50 Domingos / Real 26\nEeriados predeterminadas ree eal nese\nal mayo 2010 |\n[Ei Joeserinean| ares] Sa\n1 |b Bpomings\na 2 Lunes ogo 1200 43:00 17:30\n2 3 4 5 8 res 4…"
+  - n: 5
+    id: "gerencia-proyectos.configurar-calendario-del-proyecto#5"
+    accion: "Si necesita modificar el horario asignado por defecto, ubique el cursor sobre cada celda y digite directamente la hora, conservando los dos puntos (:) como separador; repita el proceso en todas las celdas de la fila."
+    resultado: "La cantidad de horas es tomada en cuenta como tope en los tareos y partes de equipo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s067, img-4910b3bdf0c1-0000]
+    pagina: null
+    fotos:
+      - id: "eeea85f88f24"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/4910b3bdf0c1.png"
+        pagina: null
+        ocr: "Horarios (Formato HH'MM) De 00:00 4 23:59\n[dia Noctis\n|__| [Deseripcién| [ingreso | Salida | Salida\n{ft Dominga\n[> 2 Lunes GEUM 12:00 f1300 17:30\n[__|3 Martes os:00) 12:00 13:00 17:30\n[__|4 : ,\nC_Is Ubique el cursor sobre la celda e ingrese la hora,\nC_ls repita el proceso para todas las celdas de esta fila\n|__|? \\sanaco—qusuuiasu y 1"
+  - n: 6
+    id: "gerencia-proyectos.configurar-calendario-del-proyecto#6"
+    accion: "Solo si se muestra el botón para calcular horas y días laborables para los períodos, úselo; normalmente el sistema efectúa el cálculo en línea."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s068]
+    pagina: null
+    fotos:
+      - id: "5463f1c1d82f"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/c07d8108b143.png"
+        pagina: null
+        caption: "Efectúe esta opción sólo en el caso de que muestre el botón . El sistema está preparado para efectuar el cálculo en línea."
+        ocr: "TL [eeatao Clic derecho \\gaig ~=SOC=“‘*‘“‘<CS*S*S\n>] @ WB caendario base =\n$ |"
+verificacion: []
+errores_frecuentes: []
+relacionados: [gerencia-proyectos.registrar-proyecto, gerencia-proyectos.definir-periodos]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s064, manual: "Manual de Gerencia de Proyectos", seccion: "2.2 Calendario", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s065, manual: "Manual de Gerencia de Proyectos", seccion: "2.2.1 Configurar feriados", pagina: null}
+  - {id: img-7cf5904bf5f1-0000, manual: "Manual de Gerencia de Proyectos", seccion: "7cf5904bf5f1.png", pagina: null}
+  - {id: img-fd67290a8a65-0000, manual: "Manual de Gerencia de Proyectos", seccion: "fd67290a8a65.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s066, manual: "Manual de Gerencia de Proyectos", seccion: "2.2.2 Registro de días no laborables", pagina: null}
+  - {id: img-818a2a2094e4-0000, manual: "Manual de Gerencia de Proyectos", seccion: "818a2a2094e4.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s067, manual: "Manual de Gerencia de Proyectos", seccion: "2.2.3 Horario de trabajo", pagina: null}
+  - {id: img-4910b3bdf0c1-0000, manual: "Manual de Gerencia de Proyectos", seccion: "4910b3bdf0c1.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s068, manual: "Manual de Gerencia de Proyectos", seccion: "2.2.4 Calcular horas y días laborables para los períodos", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

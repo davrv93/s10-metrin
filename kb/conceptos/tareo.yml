@@ -1,0 +1,12 @@
+id: tareo
+termino: "Tareo"
+sinonimos: ["tareos"]
+definicion: "Registro del control físico del trabajo de obreros y empleados en el proyecto, cuya información pasa al módulo de Nóminas para procesar el planillón. El tareo estándar consiste en registrar las horas trabajadas en una partida de control durante un periodo (semana)."
+en_s10: "Tipos: tareo estándar (por proyecto, en Excel, o con parte semanal llenado en el móvil), tareo por actividades (por cada actividad o partida del presupuesto) y tareo multiproyecto (un proyecto matriz y proyectos satélites; la asistencia se registra con el móvil). Tareo móvil es un servicio en la nube para registrar el tareo en celular o tableta, de forma conectada o desconectada."
+procedimientos_relacionados: [nominas.registrar-tareo-estandar, tareo-movil.publicar-parte-de-tareo, tareo-movil.sincronizar-y-cerrar-el-tareo]
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s166  # Manual de Gerencia de Proyectos › 5.1 Generalidades
+  - web-https-documentacion-s10peru-com-manual-d-s057  # Manual de Nóminas › 6.1 Tareo Estándar (1)
+  - web-https-documentacion-s10peru-com-manual-d-s039  # Manual de Gerencia de Proyectos › 2.4.3 El proyecto y los tipos de tareo
+  - web-https-documentacion-s10peru-com-manual-d-s001  # Manual de Tareo Móvil › 1.1 Generalidades
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

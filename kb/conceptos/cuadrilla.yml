@@ -1,0 +1,11 @@
+id: cuadrilla
+termino: "Cuadrilla"
+sinonimos: ["cuadrillas", "grupo de trabajo"]
+definicion: "Grupo de trabajo de personal: en Gerencia de proyectos el personal obrero se organiza en grupos de trabajo o cuadrillas. En presupuestos, el escenario Tiempos para programación da una idea de cuántas cuadrillas usar para ejecutar cada partida y del plazo."
+en_s10: "En el análisis de precios unitarios se ingresa la cuadrilla a la mano de obra (si la partida tiene rendimiento) y a los equipos. En el escenario Tiempos para programación se registra la cantidad de cuadrillas a usar y se ve el tiempo unitario de la partida para una cuadrilla. En Gerencia de proyectos, el escenario Grupo de trabajo toma los datos de Personal disponible y se usa al generar órdenes de trabajo en el tareo por actividades."
+procedimientos_relacionados: [presupuestos.registrar-partida-en-el-catalogo]
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s204  # Manual de Gerencia de Proyectos › 5.18 Grupo de trabajo
+  - web-https-documentacion-s10peru-com-manual-d-s114  # Manual de Presupuestos › 5.1.7 Tiempos para programación
+  - web-https-documentacion-s10peru-com-manual-d-s099  # Manual de Presupuestos › 5.1.1.1 Hoja del presupuesto (14)
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

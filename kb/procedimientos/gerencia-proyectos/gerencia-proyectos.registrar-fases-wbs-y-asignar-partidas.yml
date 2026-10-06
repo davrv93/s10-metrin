@@ -1,0 +1,193 @@
+id: gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas
+version: 1
+modulo: gerencia-proyectos
+titulo: "Registrar las fases del WBS y asignarles partidas"
+objetivo: "Preparar en el escenario de Actividades la información para la planificación física: registrar las fases del WBS según el orden constructivo y asignar a cada fase las partidas del presupuesto con los metrados que le corresponden."
+nivel: intermedio
+preguntas:
+  - "cómo registro el wbs del proyecto en gerencia de proyectos"
+  - "como creo las fases del proyecto"
+  - "como asigno partidas a las fases del wbs"
+  - "dónde se arma la edt del proyecto en s10"
+  - "como hago el faseado del proyecto"
+  - "como verifico que todas las partidas esten asignadas a una fase"
+  - "como defino los niveles y digitos de las fases"
+  - "asignar actividades a fases del wbs en el escenario de actividades"
+  - "como registro las fases del wvs"
+aliases:
+  - "registrar WBS"
+  - "registrar fases"
+  - "asignar partidas a fases"
+  - "faseado del proyecto"
+  - "estructura de división del trabajo"
+  - "EDT del proyecto"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Actividades", "Fases (WBS)"]
+  objetos: ["WBS", "fase", "partida", "actividad", "metrado"]
+prerrequisitos:
+  - texto: "El proyecto debe tener asignados sus presupuestos: en el WBS participan todas las partidas de los presupuestos asignados."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s069]
+  - texto: "Tenga un organigrama que describa en forma detallada las partes del proyecto tal como será construido; esa información se registra en la ventana del WBS."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s072]
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas#1"
+    accion: "Elija el proyecto y la rama (el registro manual de fases se recomienda para la rama Meta), y luego ingrese al escenario de **Actividades**."
+    donde: "Escenario Actividades"
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s069, img-a7d17a9d1a09-0000]
+    pagina: null
+    fotos:
+      - id: "6a27138d674d"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/a7d17a9d1a09.png"
+        pagina: null
+        ocr: "Proyectos\nBB Esertorin\n(|) PUENTE EN CARRETERA\na & 2 Princo\na ] S| Venta ddscompuesto\nA al\nS| Meta\nA =\nActividades Luego, Bl Linen Base"
+  - n: 2
+    id: "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas#2"
+    accion: "Si el proyecto tiene asignados varios presupuestos, use el botón para visualizar las partidas de los otros presupuestos asignados."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s069, img-d832c76fb75a-0000]
+    pagina: null
+    fotos:
+      - id: "125f03fff4e9"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/d832c76fb75a.png"
+        pagina: null
+        ocr: "Actividades (Venta) Ai\nUse este botén para visualizar otros\nPuente ence! presupuestos asignados al proyecto gv\n. y tomar los datos\na"
+  - n: 3
+    id: "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas#3"
+    accion: "Defina la estructura de registro de las **Fases (WBS)**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s073, img-85fba430c5be-0000]
+    pagina: null
+    fotos:
+      - id: "c30c71faf7b4"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/85fba430c5be.png"
+        pagina: null
+        ocr: "Estructure Fases me =\nFases |\n(__[# [Descripcién [ Longitud [_Color_|\nLt Nivel 4 (a1 1 Color\n[2 Nivel2 2) Color\n[] 3 hives (@2 2) color\n(4 nivel 2) Color\n[|S Nivel 2) Color\n[6 Nivelé 2) Color\n[| 7 Nivel? 2) Color\n[| 8 Nivels 2) Color\nFases (WBS) ea Elminar Bloque PEreUeCerecerend\nspefinr earucra Longitud acumulada méxima 15 =(b) ©= comer\npena] Luego, sere |"
+    sub:
+      - n: 1
+        id: "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas#3.1"
+        accion: "En el primer nivel registre el totalizador, que es el nombre del proyecto; un dígito es suficiente."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s073]
+        pagina: null
+      - n: 2
+        id: "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas#3.2"
+        accion: "En los siguientes niveles defina el número de dígitos, sin que la suma total exceda de 15 (la longitud acumulada máxima)."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s073]
+        pagina: null
+      - n: 3
+        id: "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas#3.3"
+        accion: "Asigne un **Color** a cada nivel para diferenciarlo."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s073, img-85fba430c5be-0000]
+        pagina: null
+      - n: 4
+        id: "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas#3.4"
+        accion: "Después de configurar la estructura de fases, cierre la ventana."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s073]
+        pagina: null
+  - n: 4
+    id: "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas#4"
+    accion: "Registre las fases de acuerdo a lo mostrado en el organigrama del proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s073]
+    pagina: null
+    fotos:
+      - id: "1b1a515adbb4"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/e2bc4f0bed70.png"
+        pagina: null
+        caption: "Registre los datos de acuerdo a lo mostrado en el organigrama."
+        ocr: "Cédigo Fases (VVBS)\n\n1 El (@3) Puente en carretera\n\n105 i) Preparacién de agregadas PA\n\n10505 O [4] PA- Extraccién\n\n10510 1) PA- Chancada\n\n10515 O [4] PA- Zarandeo\n\n10520 OO ] PA - Transporte\n\n110 EI) construceién\n\n11005 EIQ@¢ - Estriba derecha\n\n1100505 io] ipa) C-ED Cimientos\n\n110050505 OM C-ED-c- Solado\n\n110050510 O 4 C-ED-C- Encofrado cimentacién\n110050515 Oo iv] C-ED-C- Acero cimentacin\n110050…"
+  - n: 5
+    id: "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas#5"
+    accion: "Elija la fase a la que asignará partidas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s075]
+    pagina: null
+    fotos:
+      - id: "eace36eafa8a"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/a79201eb870c.png"
+        pagina: null
+        caption: "A cada fase se le asigna las partidas que les corresponden."
+        ocr: "Actividades (Micha) Aus\nPUENTE EN CARRE x\nPartida | | idadt Metraclo) +|\n999 = Consolidado\ns39.01 | (b= Ee)extraccién cantera (sin explosivos) m3 2,539.9511\n999.02 [2 Zarandeo mecénico para agregado (concer, m3 4695.1340\n999.03 [Transport interno a zaranda d = 0.5 km 1,694.5850\n999.04 2 \\chancado para agregado grueso concreto 845.5868 iE\n999.05 EB transporte interno a chancadorad=0.Skm 845.3680 Ee…"
+  - n: 6
+    id: "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas#6"
+    accion: "Haga doble clic sobre la actividad (partida del presupuesto) para asignarla a la fase."
+    resultado: "La actividad se muestra en el segmento de actividades asignadas a la fase."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s075]
+    pagina: null
+  - n: 7
+    id: "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas#7"
+    accion: "Ingrese el porcentaje del metrado de la actividad que le corresponde a la fase."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s075]
+    pagina: null
+  - n: 8
+    id: "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas#8"
+    accion: "Para verificar que todas las partidas hayan sido asignadas a las fases, use el botón para ubicar actividades con saldo."
+    resultado: "El sistema muestra un cuadro de diálogo; si no quedan saldos, indica «Todas las actividades ya han sido asignadas»."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s075, img-dfe904333e4d-0000]
+    pagina: null
+    fotos:
+      - id: "72eacfc3f1ac"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/dfe904333e4d.png"
+        pagina: null
+        ocr: "Gerencia de Proy:\nCi) Todas las actividades ya han sido asignadas\n[_acepar —}{Etva est apeien para\nAceptar <7] cerrar esta ventana"
+  - n: 9
+    id: "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas#9"
+    accion: "Use el botón para generar el número correlativo de cada una de las actividades."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s075]
+    pagina: null
+    fotos:
+      - id: "0661245b0b12"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/70a30752f865.png"
+        pagina: null
+        caption: "Para generar el correlativo: Use el botón , para generar el número correlativo para cada una de las actividades."
+  - n: 10
+    id: "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas#10"
+    accion: "Para listar las actividades asignadas a las fases, use el botón correspondiente y elija **Fases y actividades** o **Solo actividades asignadas**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s075, img-38b5a51ec152-0000]
+    pagina: null
+    fotos:
+      - id: "a4e8554689d0"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/38b5a51ec152.png"
+        pagina: null
+        ocr: "Solo actividades asignadas\nFases y actividades"
+  - n: 11
+    id: "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas#11"
+    accion: "Para visualizar las fases a las que se asignó una actividad, haga clic derecho sobre ella y elija **Ver actividades asignadas**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s075, img-7650ebdff298-0000]
+    pagina: null
+    fotos:
+      - id: "e5216489ba7f"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/7650ebdff298.png"
+        pagina: null
+        ocr: "Actividades (Meta)\nHaga clic derecho JE=\n\nPUENTE EN CARRETERA meta sobre una actividad\n\nDescripcion partida del presifpuesto |\n\n001 & ESTRUCTURAS\n\n001.01 4 ENCOFRADO\n\no> BBencotrado de cimentacién\n\noot ot 02 Beco asignarias fubpartidas\n\n01.01.03 EBnco\n\n001.01.04 [Enco] Ver actividades asignadas\n\nmx\n1S) Detalle ce asignacién Lo] as\nPresupuesto 0402003 PUENTE EN CARRETERA meta\nSubpresupuesto 001 Est…"
+  - n: 12
+    id: "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas#12"
+    accion: "Si necesita quitar una actividad asignada, haga clic derecho y elija **Eliminar asignaciones**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s075, img-bb07ba8da359-0000]
+    pagina: null
+    fotos:
+      - id: "4b2da3315155"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/bb07ba8da359.png"
+        pagina: null
+        ocr: "Eliminar asignaciones —{a-1]\n2S Exportar a Microsoft Excel"
+verificacion:
+  - texto: "Al ubicar actividades con saldo, el sistema indica que todas las actividades ya han sido asignadas."
+    fuente: [img-dfe904333e4d-0000, web-https-documentacion-s10peru-com-manual-d-s075]
+errores_frecuentes:
+  - sintoma: "No puede modificar el metrado o el porcentaje asignado a una fase."
+    solucion: "Los metrados o porcentajes pueden ser modificados siempre y cuando no excedan del 100%."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s075]
+  - sintoma: "Cambió el presupuesto y las actividades no reflejan los cambios."
+    solucion: "Vaya a S10 Presupuestos y procese (use el procesamiento tipo 3); luego use el botón correspondiente en el escenario de Actividades."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s069]
+relacionados: [gerencia-proyectos.asignar-presupuestos-al-proyecto, gerencia-proyectos.planificar-en-cronograma-por-periodos]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s069, manual: "Manual de Gerencia de Proyectos", seccion: "2.3 Preparar la información para la Planificación Física 2.3.1 Actividades", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s072, manual: "Manual de Gerencia de Proyectos", seccion: "2.3.1.1 WBS (3)", pagina: null}
+  - {id: img-a7d17a9d1a09-0000, manual: "Manual de Gerencia de Proyectos", seccion: "a7d17a9d1a09.png", pagina: null}
+  - {id: img-d832c76fb75a-0000, manual: "Manual de Gerencia de Proyectos", seccion: "d832c76fb75a.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s073, manual: "Manual de Gerencia de Proyectos", seccion: "2.3.1.2 Registro de las Fases del WBS", pagina: null}
+  - {id: img-85fba430c5be-0000, manual: "Manual de Gerencia de Proyectos", seccion: "85fba430c5be.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s075, manual: "Manual de Gerencia de Proyectos", seccion: "2.3.1.4 Asignar partidas a las Fases del WBS", pagina: null}
+  - {id: img-dfe904333e4d-0000, manual: "Manual de Gerencia de Proyectos", seccion: "dfe904333e4d.png", pagina: null}
+  - {id: img-38b5a51ec152-0000, manual: "Manual de Gerencia de Proyectos", seccion: "38b5a51ec152.png", pagina: null}
+  - {id: img-7650ebdff298-0000, manual: "Manual de Gerencia de Proyectos", seccion: "7650ebdff298.png", pagina: null}
+  - {id: img-bb07ba8da359-0000, manual: "Manual de Gerencia de Proyectos", seccion: "bb07ba8da359.png", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

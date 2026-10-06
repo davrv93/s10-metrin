@@ -1,0 +1,139 @@
+id: facturacion.registrar-cliente
+version: 1
+modulo: facturacion
+titulo: "Registrar un cliente"
+objetivo: "Registrar un cliente en el catálogo de Clientes, a mano (con su tipo de socio de negocio y sus cuentas bancarias) o importando varios desde un Excel."
+nivel: basico
+preguntas:
+  - "cómo registro un cliente nuevo en facturación"
+  - "cómo agrego un cliente en el s10"
+  - "dónde se crea un cliente en el catálogo de clientes"
+  - "como ingreso un cliente con su cuenta bancaria"
+  - "quiero importar mis clientes desde excel"
+  - "como se registra un clinte en s10 facturacion"
+  - "cómo le pongo el tipo de socio de negocio a un cliente"
+  - "pasos para dar de alta un cliente"
+  - "como cargo varios clientes de golpe desde un excel"
+  - "y para registrar un proveedor es igual que un cliente?"
+aliases:
+  - "registrar cliente"
+  - "crear cliente"
+  - "nuevo cliente"
+  - "agregar cliente"
+  - "importar clientes desde Excel"
+  - "registrar proveedor"
+entidades:
+  modulo: "Facturación"
+  pantallas: ["Catálogos", "catálogo de Clientes", "Catalogo de Socios de Negocio por Tipo"]
+  objetos: ["cliente", "socio de negocio", "tipo de socio de negocio", "cuenta bancaria", "Excel"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "facturacion.registrar-cliente#1"
+    accion: "Para poder visualizar los catálogos, ubíquese en el menú **Catálogos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s003]
+    pagina: null
+    fotos:
+      - id: "dbf353058ce0"
+        ruta_o_url: "imagenes/manual-de-facturacion/c091056cd4c2.png"
+        pagina: null
+        caption: "Para poder visualizar los catálogos nos ubicamos en el Menú > Catálogos"
+        ocr: "Ig $10 Facturaci6n: 22004161 - SISTEMA 10 S.A.\nArchivo Ver] Catalogos | Herramientas ?\nlf i= gl @ Socios de negocio\n| ial _Coramp Menels .\nEB Tipo de Cambio\nGF Unidades :\nre Lugares =\nnl rE Formas de Pago fl\npagar Tipo de Documento e|\n@ Tipo de Impuesto\nLogos at!\nLiquidaciond “Recursos\nRecursos No Deducibles\nSs Método de Pago\nReembolso! Motive de Pago\nPartida de Control General\nDestino Especifico…"
+  - n: 2
+    id: "facturacion.registrar-cliente#2"
+    accion: "Ubíquese en el catálogo de **Clientes**, haga clic derecho y elija **Adicionar** (para un proveedor el proceso es el mismo)."
+    resultado: "Se abre la ventana con los datos generales del socio de negocio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s008, web-https-documentacion-s10peru-com-manual-d-s009, img-c51a08c66352-0000]
+    pagina: null
+    fotos:
+      - id: "5ad1ed33d554"
+        ruta_o_url: "imagenes/manual-de-facturacion/c51a08c66352.png"
+        pagina: null
+        ocr: "dnt iS Ss\nDatos generales —\n||) Abreviatura Pigzavea SSCS\n\nne\n\nCc\n\nDatos complementarios ———___$______________ |\nrestnoetneeo [Tl aal[ _[ [eof\n\nee\n\nSS i SS\nPasmawed [mf fd\n\nao [AY MedocePagof SSS\nae ee ee ee es\n\nI Agente de Retencién Buen Contribuyente I Agente de Percepaén I Gran Comprador\n\nClave de acceso WEB Generar dave"
+  - n: 3
+    id: "facturacion.registrar-cliente#3"
+    accion: "En los datos generales, registre la razón social, la **Abreviatura** y el **RUC** del cliente."
+    fuente: [img-7c98e117a654-0000, img-c51a08c66352-0000, web-https-documentacion-s10peru-com-manual-d-s008]
+    pagina: null
+  - n: 4
+    id: "facturacion.registrar-cliente#4"
+    accion: "En la pestaña **TIPO**, agregue el tipo de socio de negocio al que pertenece (por ejemplo, cliente)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s008, img-8cdb8de5c1c8-0000]
+    pagina: null
+    fotos:
+      - id: "5abbbd7508ab"
+        ruta_o_url: "imagenes/manual-de-facturacion/7c98e117a654.png"
+        pagina: null
+        caption: "En la pestaña TIPO debe agregar, el tipo de socio de negocio al que pertenece."
+        ocr: "SF Socio de Nope\nDatos generales\n|\n||| Razén Social [Supermercados Peruanos S.A.\n||| Abreviatura Piazavea SS\nRUC J20100070970\nés\n| Alterna\nCédigo Descripcién\nQuitar Socios de Negocio\n3S Exportar a Microsoft Excel\n[aes] te"
+      - id: "132a03713fa8"
+        ruta_o_url: "imagenes/manual-de-facturacion/8cdb8de5c1c8.png"
+        pagina: null
+        ocr: "Bp Catslogo de Tipo de Socios de Negocio ee. = ==\nOpciones 2\n\nOe Xe @ ASS %) 2244 8 Sm\n\n|_[_]_cédigo [Descrincion\n\n| |# 00 EMPRESA DEL GRUPO\n\n| Z| ot | CLENTE\nPea 02 [PROVED\nJw] 03 |OBRERO\nA\nOI\nOa\n\\~|__ 07 __| AFP SS\n\\Z| 08 __| SUBCONTRATISTA\nJwi|__o9__|conracro\n\\4| 17 __ | DERECHOHABEENTES\n\\%| 18 | PROMOTOR\na\na\na |"
+  - n: 5
+    id: "facturacion.registrar-cliente#5"
+    accion: "En la pestaña **Cuentas Banco**, agregue el número de cuenta del cliente para poder efectuar los pagos en cuenta bancaria."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s008]
+    pagina: null
+    fotos:
+      - id: "055b6b223d5a"
+        ruta_o_url: "imagenes/manual-de-facturacion/88efd939d637.png"
+        pagina: null
+        caption: "En la pestaña Cuentas Banco se agrega el número de cuentas del cliente para poder efectuar los pagos en cuenta bancaria."
+        ocr: "0? Socio de Megqoeio Blo Bs\n|  Cédigo [22002230 Persona Juridica x Céd, Alterno\n| ae ee Oe Se EEE Ee\nwe a a\nAbreviatura ff\n| RUC |, tions is [BANCO DE CREDITO DEL PERU | oa]\n|| atone Tipo de Cuenta [Corriente x\nSocios de Negociq)| N° de Cuenta — {192-1236448-01 }\nEY Bl Gi Descripasn IBcP Sj. 192-1236448-01\nActive |Predete mersy pcié\nInterbancaria _(002192123644801\n|| N° Cuenta Cargo [197123644801…"
+  - n: 6
+    id: "facturacion.registrar-cliente#6"
+    accion: "Si prefiere cargar los clientes desde un Excel, en el catálogo elija el icono de importación de Excel."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s008, img-13c1b334f568-0000]
+    pagina: null
+    fotos:
+      - id: "2c5499e54805"
+        ruta_o_url: "imagenes/manual-de-facturacion/13c1b334f568.png"
+        pagina: null
+        ocr: "tq Catalogo de Socios de Negocio por Tipo : 01 CLIENTE ee\nOpciones ?\nOSxBere &¥aealSifo-c- 47 RSQ 288\noe co\nJ Empresa deL GRuPO |= = nde cel _ — =!\n| CLENTE _| Cédigo | Descripcion Abreviatura\n1 PRovEEDOR |__|S4|_ 02100001 | SISTEMA 10 S.AC. a\nSI oBRero |__| 09010060 | ANDRADE ANDRADE, ANDRES AANDRADE\nHy ewpteapo || 09010086 | ESSALUD\ni accousts PANEIIEMNOVOAAREVALO, cARLOSALFEDO\nA] Banco || 22000…"
+    sub:
+      - n: 1
+        id: "facturacion.registrar-cliente#6.1"
+        accion: "Ubique la ruta del documento."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s008]
+        pagina: null
+        fotos:
+          - id: "a09882f6f2a4"
+            ruta_o_url: "imagenes/manual-de-facturacion/7c1b89586c59.png"
+            pagina: null
+            caption: "Se ubica la ruta del documento."
+            ocr: "“ione el archivo Exce Lo) es\nOOne=- I\nEE ay O @\nJK Favoritos\n( Descargas Carmencita xD\n$F Dropbox Carpeta de archivos\nBB Escritorio\nf Carpeta de archivos\nSadcteces 7 separatas\nDocumentos f Carpeta de archivos\n(SI Imagenes dl\neee Piel ) Hoja de cateulo de Microsoft Exce..\nBi Videos Ex e\nPLAN DE CUENTAS TECING S10\n1 Equipo Hoja de calculo de Microsoft Excel\nBp Disco local (C:) ~ 611KB g\n)\na"
+      - n: 2
+        id: "facturacion.registrar-cliente#6.2"
+        accion: "Una los campos del S10 con la información ingresada en el Excel: primero elija el campo y luego la columna con los datos."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s008, img-e80cd51cbf67-0000]
+        pagina: null
+        fotos:
+          - id: "8e9f930fa619"
+            ruta_o_url: "imagenes/manual-de-facturacion/e80cd51cbf67.png"
+            pagina: null
+            ocr: "Xi Inport de (gi\nrchwo [EiWsersiccrdDestopcleiesxe SC\nNotas\nwe Fe SIT Ges\nImporte\nCampo ; _tnparar_|\nferries Primero se elige el campo} Cenar\nSSSR rem ESCO Ei Luego la columna con\n|Cédigo Rubro:\nFirat oes tube ee los datos\nREM Lf\nJRPC 6 fal\nA E:Abreviatura F: Gédigo Tipo Socio de Negoco\nEss 3 [Abreviatura Tipo\nOb ucMANT —pioreM TSR [_____ ]01 GLIENTE, G2 PROVEEDOR, 08 SUBCONTRATISTA\n_o[ olosoio0so…"
+      - n: 3
+        id: "facturacion.registrar-cliente#6.3"
+        accion: "Ubique las filas que contienen la información (la columna se toma automáticamente según la última columna que unió con el campo) y haga clic en **Importar**."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s008]
+        pagina: null
+        fotos:
+          - id: "c45853565874"
+            ruta_o_url: "imagenes/manual-de-facturacion/bec355c4ea37.png"
+            pagina: null
+            caption: "Se ubican las filas que contienen la información, la columna se toma automáticamente de acuerdo a la última columna que se unió con el campo. Finalmente, se da click en Importar."
+            ocr: "3 Importacion de Excel. So)\narchivo [EiWsersicouaDesKopcieniesxe Sin\nNotas\nnoe [ee SS (ites\ncampo. [65090 Tos Saco denepece >]\nCenar\nTF AT Ty] cts FT acts es\n(SS SET al\n_ol [22002182 _[conzaLesespInoza.waLtersocaroo | | a\n| iss [0] efzz00r1c0—[easTIOAS ROWAN, VUMAEIRAWA [or eure}\n169 | o] 6l2z002194 [BASTIOASROMAN DENNIS JAVIER [for cuenre\n40 | of 2002201 JAUREGUI OCHOA CHRISTIAN ABRAHAM [| ———‘fo…"
+verificacion: []
+errores_frecuentes: []
+relacionados: []
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s003, manual: "Manual de Facturación", seccion: "2. Catálogos", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s008, manual: "Manual de Facturación", seccion: "2.5.1 Clientes", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s009, manual: "Manual de Facturación", seccion: "2.5.2 Proveedores", pagina: null}
+  - {id: img-c51a08c66352-0000, manual: "Manual de Facturación", seccion: "c51a08c66352.png", pagina: null}
+  - {id: img-7c98e117a654-0000, manual: "Manual de Facturación", seccion: "7c98e117a654.png", pagina: null}
+  - {id: img-8cdb8de5c1c8-0000, manual: "Manual de Facturación", seccion: "8cdb8de5c1c8.png", pagina: null}
+  - {id: img-13c1b334f568-0000, manual: "Manual de Facturación", seccion: "13c1b334f568.png", pagina: null}
+  - {id: img-e80cd51cbf67-0000, manual: "Manual de Facturación", seccion: "e80cd51cbf67.png", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

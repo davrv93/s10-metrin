@@ -1,0 +1,145 @@
+id: almacenes.regularizar-ingreso-por-compra
+version: 1
+modulo: almacenes
+titulo: "Regularizar un ingreso por compra con la factura"
+objetivo: "Regularizar los ingresos por compra registrados inicialmente con guía de remisión, vinculándolos a su documento de pago para que los recursos se paguen una sola vez al proveedor y la factura pase a documentos por pagar y a Contabilidad."
+nivel: intermedio
+preguntas:
+  - "cómo regularizo un ingreso por compra con la factura"
+  - "ingresé con guía de remisión, cómo le pongo la factura después"
+  - "cómo vinculo la factura a las guías de remisión en almacén"
+  - "llegó la factura del concreto, cómo regularizo las guías"
+  - "como regularizo guias de remision con una factura"
+  - "dónde registro el precio de la factura de un ingreso con guía"
+  - "regularizacion simple ingreso por compra s10"
+  - "cómo paso la factura de las guías a documentos por pagar"
+aliases:
+  - "regularizar ingreso por compra"
+  - "regularizar guía de remisión"
+  - "regularización con factura"
+  - "vincular factura a guías"
+entidades:
+  modulo: "Almacenes"
+  pantallas: ["Ingresos", "Seleccione el Tipo de Documento"]
+  objetos: ["guía de remisión", "factura", "documento de pago", "proveedor", "periodo"]
+prerrequisitos:
+  - texto: "Los recursos deben haber ingresado al almacén con un Ingreso por Compra [IC] respaldado solo con guía de remisión, que luego se regulariza con el documento de pago, la factura."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s044]
+pasos:
+  - n: 1
+    id: "almacenes.regularizar-ingreso-por-compra#1"
+    accion: "En el escenario de **Ingresos**, elija el tipo de movimiento **Ingreso por Compra [IC]**."
+    fuente: [img-e28457f3db3a-0000, web-https-documentacion-s10peru-com-manual-d-s046]
+    pagina: null
+  - n: 2
+    id: "almacenes.regularizar-ingreso-por-compra#2"
+    accion: "Haga clic derecho sobre el ingreso a regularizar y elija la regularización simple, que regulariza varias guías de remisión registradas de un mismo proveedor con una factura."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046, img-e28457f3db3a-0000]
+    pagina: null
+    fotos:
+      - id: "0a5e027e78d3"
+        ruta_o_url: "imagenes/manual-de-almacenes/e28457f3db3a.png"
+        pagina: null
+        ocr: "Ingresos\nTipo movimiento: |Ingreso por Compra [IC] |~| [¥ Todos Del [o2/04/2010 ~| Al [20i04/2010 ~ | 7\nwE)z Clic derecho sobre el ingreso a regularizar\nEdicin 000000000001 Unicon Si. 0.00 1-1\nEdicin 000000000002 —_Unicon Si. 0.00 1-2\nLD Adicionar\n[Adicionar con Documento de Pago\na\nCompuesta Con Documento Existentesp(a-2,\n)\nMismo proveedar{o-1)\nVarios proveedores b-2:"
+  - n: 3
+    id: "almacenes.regularizar-ingreso-por-compra#3"
+    accion: "En la ventana **Seleccione el Tipo de Documento**, elija el tipo de documento con que se regulariza (la factura)."
+    fuente: [img-a445ea3cdb3d-0000, web-https-documentacion-s10peru-com-manual-d-s046]
+    pagina: null
+    fotos:
+      - id: "6143c2c43575"
+        ruta_o_url: "imagenes/manual-de-almacenes/a445ea3cdb3d.png"
+        pagina: null
+        ocr: "2 Seleccione el Tipo de Documento con que se Re... {o |-2-|etae]\nOpciones ?\nDe XE MSS Boo hea\nYZ i: * NIVEL: 0/0\nCédigo | Descripcion Abreviatura\nHee Ne ae"
+  - n: 4
+    id: "almacenes.regularizar-ingreso-por-compra#4"
+    accion: "Elija las guías de remisión pendientes de regularización que muestra el sistema."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046]
+    pagina: null
+    fotos:
+      - id: "5dd3cefa053c"
+        ruta_o_url: "imagenes/manual-de-almacenes/87e24eefe28e.png"
+        pagina: null
+        caption: "Luego el sistema muestra las guías de remisión pendientes de regularización"
+        ocr: "Opciones ?\n\nDa X BG TE @| dh Yen! o a6) IB |S &\n\nB= __ [tis cen cote ce | 00\n\n|_[_ [Proyecto Almacen [__N*Guia | Fecha |\nCS ROSASPATA CONSTRUCCION | De Mater'fies 000000000001 2604/20\nPuente |De Materigies Urubamba | oo0000000002 | 13902/20\nPuente 000000000001 | 13402/20\n\nt /\n\n4\n\n18003001000000000002 Puente De Materiales Urubamba 000000000002 13/02/2012 1\n\n48003001000000000001 Puente De Materiales…"
+  - n: 5
+    id: "almacenes.regularizar-ingreso-por-compra#5"
+    accion: "Registre la fecha del registro."
+    donde: "Formulario de la factura"
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046]
+    pagina: null
+  - n: 6
+    id: "almacenes.regularizar-ingreso-por-compra#6"
+    accion: "Registre la fecha de pago de la factura de parte de la empresa al proveedor."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046]
+    pagina: null
+  - n: 7
+    id: "almacenes.regularizar-ingreso-por-compra#7"
+    accion: "Registre la fecha de recepción del documento."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046]
+    pagina: null
+  - n: 8
+    id: "almacenes.regularizar-ingreso-por-compra#8"
+    accion: "Elija el periodo de aplicación en contabilidad."
+    resultado: "El sistema muestra el periodo elegido para la contabilidad."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046]
+    pagina: null
+  - n: 9
+    id: "almacenes.regularizar-ingreso-por-compra#9"
+    accion: "Ingrese el número de serie y de la factura (por ejemplo, la factura 001-234)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046]
+    pagina: null
+  - n: 10
+    id: "almacenes.regularizar-ingreso-por-compra#10"
+    accion: "Elija la forma de pago, que es una regla."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046, img-eb0018422135-0000]
+    pagina: null
+    fotos:
+      - id: "ec01f3437a33"
+        ruta_o_url: "imagenes/manual-de-almacenes/eb0018422135.png"
+        pagina: null
+        ocr: "a) eon x\nEmtido a [02100001 [S10 S.A. =| | Correlativo a) Ne oTTEI\n0000000001 tee\nSucursal [02100001 [S105 w= 44\nRUC 19899230029\nProveedor [2100099 [Unicon =| 64\nFecha [28!042-(a4-T}yencmmiento [26/042 {8-4-2 )fecepciin |2804{a-1-3]] |= Let-8)\nre eT ==\nsn os0s2eTa) [20120 awa2m(@T Eo otal | [__00f{_seen0n234\nMoneda [01 [NUEVOS SOLES ==] | Forma de pago [01 [Contado 5\nDescuento (%) 0.00 Relacionado…"
+  - n: 11
+    id: "almacenes.regularizar-ingreso-por-compra#11"
+    accion: "Si corresponde, ingrese el porcentaje de descuento aplicado a todo el documento."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046]
+    pagina: null
+  - n: 12
+    id: "almacenes.regularizar-ingreso-por-compra#12"
+    accion: "Ponga una selección en **Revisado** si considera revisado el registro."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046]
+    pagina: null
+  - n: 13
+    id: "almacenes.regularizar-ingreso-por-compra#13"
+    accion: "Si lo necesita, ingrese una observación relacionada a la factura."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046]
+    pagina: null
+  - n: 14
+    id: "almacenes.regularizar-ingreso-por-compra#14"
+    accion: "Ingrese el precio de los recursos (por ejemplo, S/. 140 y S/. 160 para los dos concretos premezclados del ejemplo)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046]
+    pagina: null
+  - n: 15
+    id: "almacenes.regularizar-ingreso-por-compra#15"
+    accion: "Verifique que los montos calculados coincidan con la factura física."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046]
+    pagina: null
+  - n: 16
+    id: "almacenes.regularizar-ingreso-por-compra#16"
+    accion: "Use el botón que graba el contenido del registro, con lo que concluye la regularización."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046]
+    pagina: null
+verificacion: []
+errores_frecuentes:
+  - sintoma: "Tiene varias guías de remisión de un mismo proveedor con varias facturas, o guías de diferentes proveedores."
+    solucion: "No use la regularización simple: el manual prevé otra opción para regularizar varias guías de un mismo proveedor con varias facturas, y otra para guías de diferentes proveedores con sus facturas correspondientes."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046, web-https-documentacion-s10peru-com-manual-d-s047]
+relacionados: [almacenes.registrar-ingreso-por-compra]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s044, manual: "Manual de Almacenes", seccion: "2.1.2.1 Ingreso por Compra [IC] (1)", pagina: null}
+  - {id: img-e28457f3db3a-0000, manual: "Manual de Almacenes", seccion: "e28457f3db3a.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s046, manual: "Manual de Almacenes", seccion: "2.1.2.1 Ingreso por Compra [IC] (3)", pagina: null}
+  - {id: img-a445ea3cdb3d-0000, manual: "Manual de Almacenes", seccion: "a445ea3cdb3d.png", pagina: null}
+  - {id: img-eb0018422135-0000, manual: "Manual de Almacenes", seccion: "eb0018422135.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s047, manual: "Manual de Almacenes", seccion: "2.1.2.1 Ingreso por Compra [IC] (4)", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

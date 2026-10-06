@@ -1,0 +1,128 @@
+id: facturacion.importar-saldos-por-cobrar
+version: 1
+modulo: facturacion
+titulo: "Importar saldos por cobrar desde Excel"
+objetivo: "Cargar en Documentos por cobrar los saldos pendientes de cobro llenados en un formato Excel, usando un recurso creado para la importación de saldos."
+nivel: intermedio
+preguntas:
+  - "cómo importo los saldos por cobrar en facturación"
+  - "como cargo mis saldos pendientes de cobro desde excel"
+  - "quiero subir los documentos por cobrar iniciales al s10"
+  - "como hago la importacion de saldos en s10 facturacion"
+  - "para que sirve el recurso para la importación de saldos"
+  - "no me importa los documentos por cobrar desde el excel"
+  - "como inporto saldos de clientes"
+  - "pasos para importar saldos pendientes por cobrar"
+aliases:
+  - "importar saldos"
+  - "importación de saldos"
+  - "cargar saldos por cobrar"
+  - "saldos iniciales por cobrar"
+entidades:
+  modulo: "Facturación"
+  pantallas: ["Documentos por cobrar"]
+  objetos: ["saldos", "recurso", "documentos por cobrar", "socios de negocios", "tipos de documento", "moneda", "Excel"]
+prerrequisitos:
+  - texto: "Los socios de negocio deben existir en el catálogo de clientes, y los tipos de documento y la moneda deben estar registrados en el sistema tal como figuran en el Excel."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s027]
+pasos:
+  - n: 1
+    id: "facturacion.importar-saldos-por-cobrar#1"
+    accion: "Para poder importar los saldos, primero llene el formato en Excel con los saldos pendientes por cobrar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s027]
+    pagina: null
+    fotos:
+      - id: "d508833c4eb9"
+        ruta_o_url: "imagenes/manual-de-facturacion/01d46c60db1e.png"
+        pagina: null
+        caption: "Para poder importar saldos primero debemos llenar el formato en Excel."
+        ocr: "et a I n=\nPETE ic) isertar— DiseRo de pigina Formulas Datos Rensar Vista 20 - Old\n& comer ‘nu wg =e + Biastartento ener - , ae fie] |Z towm\n\nB.S. & fel bel hall ae é Boe Beeb oe a\nPI coprtorato |X ORY 8 =| HE | Sa- >| Ww | SE GE | Blcomirry corer | BY v6 on |“ °F) roar. areas Sas ct meet Ee Form | O nerae~ State scatter\n\nPortapapeles Fuente | Atineaeién a] nimero Estos cet Moditiat\n\n8 € D E F 6 4…"
+  - n: 2
+    id: "facturacion.importar-saldos-por-cobrar#2"
+    accion: "En el módulo de Facturación, cree un recurso con el nombre «RECURSO PARA LA IMPORTACIÓN DE SALDOS»."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s027, img-b727acf89f60-0000]
+    pagina: null
+    fotos:
+      - id: "50de52fcd3db"
+        ruta_o_url: "imagenes/manual-de-facturacion/b727acf89f60.png"
+        pagina: null
+        ocr: "25 Catdlogo de Recursos : 048201 RECURSO PARA LA IMPORTACIO ST Soa=)\nOpciones 2\nDe XBUC AYE ® |B oo | Hae|O ABB '\n@ GAsTOS be VEGHOS 7 a C/E\name ay N [ZEZDuI | RECURSO PARA LA IMPORTACION DE SALDOS FFL}\n&@ PAGOS PLANILLA ee\n®@ASFALTO a\n@ SERVICIOS VARIOS a\n@ SERVICIO DE FOTOGRAFIA cE) Sis\n[|S RECURSO PARA LA IMPORTACION DE SALDOS\n3] RECURSO PARA LA IMPORTACION DE SALDOS\n@ MOVIMIENTOS BANCARIOS\n@ C…"
+  - n: 3
+    id: "facturacion.importar-saldos-por-cobrar#3"
+    accion: "Ingrese al sistema como SA y ubíquese en el grupo **Facturación**, escenario **Documentos por cobrar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s027]
+    pagina: null
+  - n: 4
+    id: "facturacion.importar-saldos-por-cobrar#4"
+    accion: "Haga clic en el icono del lápiz: en la configuración de registros de documentos, el recurso para los documentos de Excel debe ser el «RECURSO PARA LA IMPORTACIÓN DE SALDOS»."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s027, img-b00a0e3f5aa0-0000]
+    pagina: null
+    fotos:
+      - id: "f6e453138085"
+        ruta_o_url: "imagenes/manual-de-facturacion/b00a0e3f5aa0.png"
+        pagina: null
+        ocr: "‘Sucursales =\n[Late J eal | Documentos por Cobrar\nFacturacién ih SISTEMA 11 ——_|\n| Boren] PSTENATOSA tammy envecrmaseey =\nop (4) Gp Bandeja Ses\npan a\npor FE Configuracin de Registros de Documentos NN\neiriiog Arrest hace oq o| ria\niee| cena | |\nie ode Pcl fa coanca [so\nc de ANO 2¢ (0000000) ‘Numeracién de los Documentos: ‘LOS POR\n‘Cobranzas_ @ Por tipo de documento, Sucursal y Empresa\n© Portipo de…"
+  - n: 5
+    id: "facturacion.importar-saldos-por-cobrar#5"
+    accion: "Vuelva a ingresar con su usuario y, en el escenario **Documentos por cobrar**, haga clic derecho para proceder a la importación de saldos por cobrar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s027, img-c3cc885487f8-0000]
+    pagina: null
+    fotos:
+      - id: "4ff0a14c966c"
+        ruta_o_url: "imagenes/manual-de-facturacion/c3cc885487f8.png"
+        pagina: null
+        ocr: "Joe (= ;\nErg Esertono Documentos por Cobrar\nScores\n‘fh Princip: Empresa [22004161 [SISTEMA 10 SA ~~ | dh} Documento 001 FJ\ni arcrvo cents!) QSAR SG va eda\nDocumentos por\n‘cobrar Arrastre hada aqui el encabezado de la columna que desea agrupar.\n@ 0/0 Campo] Socio de Negocio | |En cualquier posicin _~ ||]\n~ Grupo de Prc|N* Correlativo | Proyecto: Fecha Vencimiento: |Periodo Aplicacid\nCCronograma de…"
+  - n: 6
+    id: "facturacion.importar-saldos-por-cobrar#6"
+    accion: "En el mensaje que aparece, ingrese el año del periodo de aplicación y haga clic en **OK**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s027, img-d3b8f8e6b371-0000]
+    pagina: null
+    fotos:
+      - id: "ec6286b757b7"
+        ruta_o_url: "imagenes/manual-de-facturacion/d3b8f8e6b371.png"
+        pagina: null
+        ocr: "Sistema 10 - Facturacié Ea)\nIngrese el afio del periado de aplicacién. Lo |\n\n\\ _cancel_|\n2073]"
+  - n: 7
+    id: "facturacion.importar-saldos-por-cobrar#7"
+    accion: "Ubique la ruta del archivo Excel."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s027, img-5329c61685f4-0000]
+    pagina: null
+    fotos:
+      - id: "74c7aa8da68a"
+        ruta_o_url: "imagenes/manual-de-facturacion/5329c61685f4.png"
+        pagina: null
+        ocr: "Se Se las ce)\nSeleccione el archivo Excel ae\nC2 aE 2\nOrganizar ¥ Nueva carpeta =, Gg e|\n=) ESEET] Hoja de calculo de Microsoft Bxce... rn\n® Favoritos [Ea 29.0 KB\nUB Descargas fag} clientes\n4% Dropbox Lt | Hoja de calculo de Microsoft Exce...\nI Eseries 108 KB\nGj Sitios recientes Copia de1 Evaluacién S10 ERP\n7 [AS <5 | Administrativa - CLIENTE\nHoja de calculo de Microsoft Excel\nBibliotecas\n5 PLAN DE…"
+  - n: 8
+    id: "facturacion.importar-saldos-por-cobrar#8"
+    accion: "Relacione cada campo con las columnas y haga clic en **Importar**."
+    resultado: "Los documentos importados quedan listados en el escenario Documentos por cobrar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s027]
+    pagina: null
+    fotos:
+      - id: "c5b600236ffc"
+        ruta_o_url: "imagenes/manual-de-facturacion/92c8aeecff01.png"
+        pagina: null
+        caption: "Relacionamos el campo con las columnas y damos click en Importar."
+        ocr: "—— a ois\n|Archive [EWsersicorrOesitopiPantan Ge mporacin de salon pendertes por CoRrarx come\ned es C2}\noe]\n1 SALDOS PENDIENTES POR COBRAR AL 01/08/2013\n| se ems vene lg io socmer sere [mars [oie Pops [ave [bon degen oreo] oa Sepa] Sosa [tat [posto [errant —|\n4 a5aenon oy ot ewoose — oars 10297 7% ramon 30508 70704\n5 eacnors By for oomosa 0x8 2esiersent a) ‘ones zine som\n= oyerposs o fot roort_—_ e…"
+      - id: "a252d4bb8d97"
+        ruta_o_url: "imagenes/manual-de-facturacion/f735a0f39c40.png"
+        pagina: null
+        caption: "Nos quedará de la siguiente manera:"
+        ocr: "Eye | Documentos por Cobrar\nx reco Groce PNET [SSTEUATESA ~JAlomnew oracumssy S| =| OO\noe loapend\n| Bokton| BERS ~b au\nae\ne YS Campo|Soco de Negocio ] [en cusiaser pose _~]) (XL crsper\né ‘Grupo de Pr|N\" Correlatiwo | Proyecto Fecha _Vencimiento | Periode Aplcacién [N\" LiquidacibvRer|N\" Documento_| Socio de Negocio Moneda_| Forma de Cobro\npe eset ce | tame | teens le tae Nae ee ee agg ae le\n— Bae l…"
+verificacion:
+  - texto: "Los saldos importados aparecen como documentos en el escenario Documentos por cobrar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s027, img-f735a0f39c40-0000]
+errores_frecuentes:
+  - sintoma: "Los documentos del Excel no se importan."
+    solucion: "Verifique que los socios de negocios existan en el catálogo de clientes, lo mismo que los tipos de documento y la moneda: todos deben estar conforme a los datos ingresados al sistema."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s027]
+relacionados: []
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s027, manual: "Manual de Facturación", seccion: "5.1 Importación de saldos", pagina: null}
+  - {id: img-b727acf89f60-0000, manual: "Manual de Facturación", seccion: "b727acf89f60.png", pagina: null}
+  - {id: img-b00a0e3f5aa0-0000, manual: "Manual de Facturación", seccion: "b00a0e3f5aa0.png", pagina: null}
+  - {id: img-c3cc885487f8-0000, manual: "Manual de Facturación", seccion: "c3cc885487f8.png", pagina: null}
+  - {id: img-d3b8f8e6b371-0000, manual: "Manual de Facturación", seccion: "d3b8f8e6b371.png", pagina: null}
+  - {id: img-5329c61685f4-0000, manual: "Manual de Facturación", seccion: "5329c61685f4.png", pagina: null}
+  - {id: img-f735a0f39c40-0000, manual: "Manual de Facturación", seccion: "f735a0f39c40.png", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

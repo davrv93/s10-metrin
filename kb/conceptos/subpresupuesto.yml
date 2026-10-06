@@ -1,0 +1,14 @@
+id: subpresupuesto
+termino: "Subpresupuesto"
+sinonimos: ["subpresupuestos"]
+definicion: "Componente de un presupuesto, como Estructuras, Gastos generales o Instalaciones eléctricas y sanitarias. Al registrar un presupuesto, el sistema crea automáticamente un subpresupuesto con el mismo nombre, que el usuario debe editar y cambiar."
+en_s10: "En la hoja del presupuesto todas las opciones de edición están disponibles para el subpresupuesto, y el menú Hoja del presupuesto solo se habilita con el cursor sobre un subpresupuesto en el árbol (desde ahí se generan los ítems y se procesa su contenido). El diseño del pie de presupuesto puede servir para todos los subpresupuestos o elaborarse para cada uno."
+procedimientos_relacionados: [presupuestos.registrar-presupuesto-nuevo]
+fuente:
+  - web-https-documentacion-s10peru-com-manual-d-s036  # Manual de Presupuestos › 3.4 Registro del subpresupuesto
+  - web-https-documentacion-s10peru-com-manual-d-s037  # Manual de Presupuestos › 3.5 Registro de información en la hoja del presupuesto
+  - web-https-documentacion-s10peru-com-manual-d-s012  # Manual de Presupuestos › 2.1 La carpeta de trabajo (2)
+  - web-https-documentacion-s10peru-com-manual-d-s003  # Manual de Presupuestos › 1.3.1 Presupuesto de Edificaciones (1)
+  - web-https-documentacion-s10peru-com-manual-d-s104  # Manual de Presupuestos › 5.1.2 Diseño del pie de presupuesto (1)
+notas: "Las fuentes no traen una definición formal de subpresupuesto; se describe por su uso en el módulo de Presupuestos."
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

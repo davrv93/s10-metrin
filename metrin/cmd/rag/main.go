@@ -295,14 +295,24 @@ func nuevoRAG(cfg config.Config) (*rag.RAG, error) {
 		logf("clasificador incompatible (%s != %s): se desactiva y todo va al RAG", clas.HuellaEmb, e.Nombre())
 		clas = nil
 	}
-	return &rag.RAG{
+	r := &rag.RAG{
 		Almacen:      a,
 		LLM:          conversacional,
 		Emb:          e,
 		Clasificador: clas,
 		MaxDistancia: cfg.MaxDistancia,
 		RutaFallos:   filepath.Join(cfg.DirDatos, "sin_respuesta.jsonl"),
-	}, nil
+	}
+	// V2 (cmd/rag/v2.go): solo con AGENT_V2_ENABLED=true o AGENT_VERSION=v2.
+	// Sin ella r.V2 queda nil y todo sigue siendo V1.
+	if cfg.V2.Activa() {
+		ag, err := nuevoAgenteV2(cfg, e, clas, r)
+		if err != nil {
+			return nil, err
+		}
+		r.V2 = ag
+	}
+	return r, nil
 }
 
 func cmdAsk(ctx context.Context, cfg config.Config, args []string) error {
@@ -385,7 +395,7 @@ func cmdServe(ctx context.Context, cfg config.Config, args []string) error {
 	}
 	srv := &http.Server{
 		Addr:              *addr,
-		Handler:           servidor.Nuevo(r, time.Duration(cfg.TimeoutSeg)*time.Second),
+		Handler:           servidor.Nuevo(r, time.Duration(cfg.TimeoutSeg)*time.Second, servidor.Opciones{Traza: cfg.Traza, V2: estadoV2(cfg)}),
 		ReadHeaderTimeout: 10 * time.Second,
 	}
 	go func() {
@@ -395,6 +405,9 @@ func cmdServe(ctx context.Context, cfg config.Config, args []string) error {
 		srv.Shutdown(c)
 	}()
 	logf("escuchando en http://%s (trozos en índice: %d)", *addr, r.Almacen.Contar())
+	if cfg.Traza {
+		logf("modo traza habilitado (METRIN_TRAZA): /ask devuelve «traza» si la petición la pide")
+	}
 	if err := srv.ListenAndServe(); err != http.ErrServerClosed {
 		return err
 	}

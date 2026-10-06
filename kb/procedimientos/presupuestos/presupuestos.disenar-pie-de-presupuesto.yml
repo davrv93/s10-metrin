@@ -1,0 +1,135 @@
+id: presupuestos.disenar-pie-de-presupuesto
+version: 1
+modulo: presupuestos
+titulo: "Diseñar el pie del presupuesto"
+objetivo: "Particularizar la presentación y el cálculo de la parte final del presupuesto venta a partir del costo directo (gastos generales, utilidad, impuestos)."
+nivel: intermedio
+preguntas:
+  - "cómo hago el pie de presupuesto en s10"
+  - "como agrego gastos generales y utilidad al presupuesto"
+  - "diseño del pie de presupuesto"
+  - "como pongo el igv en el pie del presupuesto"
+  - "que variables uso en el pie del presupuesto"
+  - "que es nDirecto y P_T"
+  - "como registro conceptos para el pie de presupuesto"
+  - "el presupuesto meta tiene pie de presupuesto?"
+  - "como ago el pie de presupuesto"
+aliases:
+  - "diseño del pie de presupuesto"
+  - "pie de presupuesto"
+  - "costos indirectos del presupuesto"
+entidades:
+  modulo: "Presupuestos"
+  pantallas: ["Diseño Pie de Presupuesto", "Concepto Pie Presupuesto"]
+  objetos: ["pie de presupuesto", "costo directo", "conceptos", "variables"]
+prerrequisitos:
+  - texto: "Ingrese a esta opción después de haber concluido y procesado el presupuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s055]
+  - texto: "Solo el presupuesto venta u oferta tiene pie de presupuesto; el presupuesto meta no lo tiene."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s055]
+pasos:
+  - n: 1
+    id: "presupuestos.disenar-pie-de-presupuesto#1"
+    accion: "Ingrese al módulo de Presupuestos como **sa**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s056]
+    pagina: null
+    fotos:
+      - id: "c06d2d969c1c"
+        ruta_o_url: "imagenes/manual-de-presupuestos/05fe6463c8bb.png"
+        pagina: null
+        caption: "Ingrese al módulo de Presupuestos como “sa”"
+        ocr: "Sistema 10:\nlesa @\na\n\n=|\ncave cancel\ni)"
+  - n: 2
+    id: "presupuestos.disenar-pie-de-presupuesto#2"
+    accion: "Ingrese al catálogo de **Recursos** y ubique la rama **Subcontratos y Servicios**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s056]
+    pagina: null
+    fotos:
+      - id: "86236f37fdc1"
+        ruta_o_url: "imagenes/manual-de-presupuestos/5db2a8438164.png"
+        pagina: null
+        caption: "Ingrese al catálogo de Recursos, para registrar los recursos que serán utilizados en el pie como recurso relacionado."
+        ocr: "@8 Catalogo de Recursos o\nOpciones 2\nOsxBue 48s Boo HHRASEQ ABB\n#3. @ MANO DE OBRA\n- @ MATERIALES: juaed\n5 @ EQUPOS (0403040001 CONCEPTOS PARAPE DE PRESUPUESTOS | gb\n3 -®} SUBCONTRATOS Y SERVICIOS 0403000010001 | GASTOS GENERALES gb\n+). @ SUBCONTRATOS 104030400010002__| UTLIDAD gib\n#- @ SERVICIOS '0403040002 RECURSOS PARA CONTRATOS gb\nEF}. CONCEPTOS PE PRESUPUESTO + GASTOS GENERA} 04030400020001_|…"
+  - n: 3
+    id: "presupuestos.disenar-pie-de-presupuesto#3"
+    accion: "Registre el grupo, el subgrupo y el recurso que se usará en el pie del presupuesto como recurso relacionado (por ejemplo, el grupo Conceptos Pie Presupuesto + Gastos Generales)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s056]
+    pagina: null
+  - n: 4
+    id: "presupuestos.disenar-pie-de-presupuesto#4"
+    accion: "Ingrese por el menú **Catálogos** a **Concepto Pie Presupuesto** y registre el concepto que se usará en el pie, relacionándolo con un recurso del catálogo (por ejemplo, concepto GASTOS GENERALES, variable GG, recurso GASTOS GENERALES)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s057, img-ca0d453cabd8-0000]
+    pagina: null
+    fotos:
+      - id: "1656e566397a"
+        ruta_o_url: "imagenes/manual-de-presupuestos/ca0d453cabd8.png"
+        pagina: null
+        ocr: "Catalogos\nze Recursos\nConcepto Pie de Presupuesto"
+  - n: 5
+    id: "presupuestos.disenar-pie-de-presupuesto#5"
+    accion: "Registre otro concepto para la utilidad y cierre el catálogo de conceptos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s057]
+    pagina: null
+  - n: 6
+    id: "presupuestos.disenar-pie-de-presupuesto#6"
+    accion: "Ingrese como usuario al escenario del **Pie de Presupuesto** y luego elija el proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s058]
+    pagina: null
+    fotos:
+      - id: "c576e9a1e4a4"
+        ruta_o_url: "imagenes/manual-de-presupuestos/01a354c3058c.png"
+        pagina: null
+        caption: "Ingrese al escenario del Pie de Presupuesto, luego elija el proyecto."
+        ocr: "=) Escritorio\nSaf) ] f- @ VIVENDA UNFAMILIAR\nio (4) @ Vivienda unifamiliar (meta)\n~ @ PUENTE EN CARRETERA venta |\nGeel Luego,| # @ PUENTE EN CARRETERA meta"
+  - n: 7
+    id: "presupuestos.disenar-pie-de-presupuesto#7"
+    accion: "En la ventana **Diseño Pie de Presupuesto**, revise la primera línea: por defecto muestra el **Costo directo**, cuya variable **nDirecto** acumula mano de obra + materiales + equipos + subcontratos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s058, img-8d875ecfaa82-0000]
+    pagina: null
+    fotos:
+      - id: "2af6a24e599c"
+        ruta_o_url: "imagenes/manual-de-presupuestos/8d875ecfaa82.png"
+        pagina: null
+        ocr: "Disefio Pie de Presupuesto\nReporte |iiois del Presupuesto ¥\nVariables Obligatorias : COSTO DIRECTO=nDirecto PRESUPUESTO TOTAL=P_T\nVariables Auxiliares: Mano de obra=C_J Materiales=C_M Equipos=C_E Subcontratos=C_S Gastos generales=GGP Bono MO=Bono_MO\nI Disefio para todos los Subpresupuestos GaP.\n|___J [Nt tinea[Descripcign Variable [Macro OmitirPolinémica|Concepto\n| |@=—+01 Cost directo nDirecto nD…"
+  - n: 8
+    id: "presupuestos.disenar-pie-de-presupuesto#8"
+    accion: "Registre manualmente el resto del pie: en la columna **Macro** ingrese la fórmula de cada línea, usando la variable obligatoria **P_T** para el presupuesto total. Las variables pueden ir en minúscula o mayúscula."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s058, img-8d875ecfaa82-0000]
+    pagina: null
+  - n: 9
+    id: "presupuestos.disenar-pie-de-presupuesto#9"
+    accion: "En la línea del impuesto, ponga una selección para que no participe en la elaboración de la fórmula polinómica (no es permitido pedir reintegro de impuesto)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s058]
+    pagina: null
+  - n: 10
+    id: "presupuestos.disenar-pie-de-presupuesto#10"
+    accion: "Vaya al escenario de la hoja del presupuesto, ubique el cursor sobre el subpresupuesto y procese."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s058, img-03e9ce732ec7-0000]
+    pagina: null
+    fotos:
+      - id: "f3aa096966df"
+        ruta_o_url: "imagenes/manual-de-presupuestos/03e9ce732ec7.png"
+        pagina: null
+        ocr: "a ] hse Escritorio\n=\nee Ubique el cursor sobre bee CARRETERA Venta\nsresguazatn el subpresupuesta =\n- Luego,"
+  - n: 11
+    id: "presupuestos.disenar-pie-de-presupuesto#11"
+    accion: "Use el botón para visualizar el resultado del procesamiento y el pie."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s058]
+    pagina: null
+    fotos:
+      - id: "b28a23a82085"
+        ruta_o_url: "imagenes/manual-de-presupuestos/39cd84aa8070.png"
+        pagina: null
+        caption: "Para visualizar el resultado del procesamiento y pie use el botón"
+verificacion: []
+errores_frecuentes: []
+relacionados: [presupuestos.procesar-presupuesto, presupuestos.calcular-gastos-generales, presupuestos.elaborar-formula-polinomica]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s055, manual: "Manual de Presupuestos", seccion: "3.8 Diseño del pie de presupuesto", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s056, manual: "Manual de Presupuestos", seccion: "3.8.1 Registro del recurso para relacionarlo con el concepto", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s057, manual: "Manual de Presupuestos", seccion: "3.8.2 Registro de Conceptos para el pie de presupuesto", pagina: null}
+  - {id: img-ca0d453cabd8-0000, manual: "Manual de Presupuestos", seccion: "ca0d453cabd8.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s058, manual: "Manual de Presupuestos", seccion: "3.8.3 Registro del pie de presupuesto", pagina: null}
+  - {id: img-8d875ecfaa82-0000, manual: "Manual de Presupuestos", seccion: "8d875ecfaa82.png", pagina: null}
+  - {id: img-03e9ce732ec7-0000, manual: "Manual de Presupuestos", seccion: "03e9ce732ec7.png", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}

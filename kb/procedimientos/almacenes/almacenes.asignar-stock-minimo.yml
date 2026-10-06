@@ -1,0 +1,83 @@
+id: almacenes.asignar-stock-minimo
+version: 1
+modulo: almacenes
+titulo: "Asignar stock mínimo a los recursos"
+objetivo: "Registrar en el escenario de Stock la cantidad mínima de los recursos que siempre deben tener stock (por ejemplo, los combustibles) y generar el pedido de reposición cuando el stock está por debajo del mínimo."
+nivel: basico
+preguntas:
+  - "cómo asigno stock mínimo a un recurso"
+  - "dónde pongo el stock minimo del combustible en almacén"
+  - "cómo hago que el sistema avise cuando falta stock"
+  - "como genero un pedido de reposicion cuando el stock esta bajo"
+  - "quiero ver los recursos que tienen stock mínimo"
+  - "como pongo stok minimo en s10 almacenes"
+  - "cómo pido los recursos que están por debajo del mínimo"
+aliases:
+  - "stock mínimo"
+  - "asignar stock mínimo"
+  - "pedido de reposición"
+  - "reposición de stock"
+entidades:
+  modulo: "Almacenes"
+  pantallas: ["Stock"]
+  objetos: ["stock mínimo", "recurso", "pedido", "combustibles"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "almacenes.asignar-stock-minimo#1"
+    accion: "En el árbol, ubique el almacén y elija el acceso al escenario de **Stock**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s080]
+    pagina: null
+    fotos:
+      - id: "68725c226d90"
+        ruta_o_url: "imagenes/manual-de-almacenes/ff0c5753143f.png"
+        pagina: null
+        caption: "Acceso al escenario"
+        ocr: "[rico\n] Proyectos\n& Escritorio\nfe) PUENTE EN CARRETERA\nStock Luego, BS Woe Materiales"
+  - n: 2
+    id: "almacenes.asignar-stock-minimo#2"
+    accion: "Use las opciones del filtro avanzado para ubicar el recurso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s082]
+    pagina: null
+    fotos:
+      - id: "1946b1c09cf4"
+        ruta_o_url: "imagenes/manual-de-almacenes/8ab7b4b825cb.png"
+        pagina: null
+        caption: "Llamada a: Use las opciones del filtro avanzado para ubicar un recurso."
+        ocr: "Stock\n\nFiltro |Recursos con stock | Valorizado Si. 140,937.52 u\n\nB|y | e & HE -—\n\n3/15 Campo|Recurso ¥ | |En cualquier posicién ¥ Gr\n(| Recurso Unidad| Stock | Stock Reservado| Ingreso | Egreso\n( CONSUMO EN TELEFONO E INTERNET mes 2.00 0.00 2.00 0.00\n( ALAMBRE NEGRO RECOCIDO # 16 kg 1,362.00 o= 10.00 1,460.00 88.00\n( ALAMBRE NEGRO RECOCIDO #8 ko [[598.80)—(h) 0.00 660.00 61.20"
+  - n: 3
+    id: "almacenes.asignar-stock-minimo#3"
+    accion: "Registre la cantidad que será el stock mínimo del recurso; para definirla, tome en cuenta el tiempo de reposición."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s084]
+    pagina: null
+  - n: 4
+    id: "almacenes.asignar-stock-minimo#4"
+    accion: "En **Filtro**, elija **Recursos con stock Minimo** para ver los recursos que tienen stock mínimo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s084, img-fcc2129f74d2-0000]
+    pagina: null
+    fotos:
+      - id: "178bef598fb9"
+        ruta_o_url: "imagenes/manual-de-almacenes/fcc2129f74d2.png"
+        pagina: null
+        ocr: "Stock 8\nFiltro | Todos los recursos =\nRecursos con stock\nRecursos con stock igual a 0\nRecursos con stock Minimom(a)\nRecursos con stock menor ai mimo\nRecursos sin movimiento"
+  - n: 5
+    id: "almacenes.asignar-stock-minimo#5"
+    accion: "Cuando el stock de un recurso esté por debajo del mínimo, haga clic derecho y, en **Reposición**, elija **Generar Pedido para Recursos Seleccionados** (o **Generar Pedido para todos los Recursos**)."
+    resultado: "El sistema genera un pedido."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s084, img-98e88b7cbb8a-0000]
+    pagina: null
+    fotos:
+      - id: "a04852bc899d"
+        ruta_o_url: "imagenes/manual-de-almacenes/98e88b7cbb8a.png"
+        pagina: null
+        ocr: "Stock\nFiltro |Todos los recursos y| Valorizado Si. 140,937.52\nEr: Clic derecho | ca be al\n| [:|recurse [unidad] Stock_[Stockwinima| ngreso | Eoreso |\n( gal 570.00 600.00 570.00 0.00\n@ Recostfar @)\n) Asignal Ubicacién Fisica\nDesasignar Ubicacién Fisica\nSobranfes del recurso\nTrasladpr movimientos a otro recurso\nReposicion > | Generar Pedido para todos los Recursos\nfa Vista preliminar Generar Pedido…"
+verificacion: []
+errores_frecuentes: []
+relacionados: [almacenes.consultar-kardex]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s080, manual: "Manual de Almacenes", seccion: "3. Stock", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s082, manual: "Manual de Almacenes", seccion: "3.2 Consulta de saldos y stock reservado", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s084, manual: "Manual de Almacenes", seccion: "3.4 Asignar stock mínimo a los recursos.", pagina: null}
+  - {id: img-fcc2129f74d2-0000, manual: "Manual de Almacenes", seccion: "fcc2129f74d2.png", pagina: null}
+  - {id: img-98e88b7cbb8a-0000, manual: "Manual de Almacenes", seccion: "98e88b7cbb8a.png", pagina: null}
+revision: {generado: 2026-10-06, por: claude, revisado_por_humano: false}
