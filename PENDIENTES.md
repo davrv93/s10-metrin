@@ -1,7 +1,8 @@
 # Pendientes — Metrín V2 y modo traza
 
 Fecha: 06-10-2026. Lo hecho está en [`docs/V2-RAG-PROCEDURAL.md`](docs/V2-RAG-PROCEDURAL.md), con resultados en §14;
-la foto general del repo, en [`STATUS.md`](STATUS.md). Aquí va solo lo que falta. Por cada punto: qué, por qué y dónde.
+la foto general del repo, en [`STATUS.md`](STATUS.md); las cifras de rendimiento y sus metas, en
+[`docs/RENDIMIENTO-metrin.md`](docs/RENDIMIENTO-metrin.md). Aquí va solo lo que falta. Por cada punto: qué, por qué y dónde.
 
 Estado de partida:
 

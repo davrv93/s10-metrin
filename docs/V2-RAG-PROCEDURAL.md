@@ -15,7 +15,7 @@ Documentos relacionados:
   plantillas.
 - `metrin/eval/BUSQUEDA.md`: búsqueda híbrida y reranker, con cifras.
 - `metrin/eval/V1_VS_V2.md`: benchmark V1 frente a V2; `metrin/eval/MODELOS.md`: modelos locales.
-- [`PENDIENTES.md`](../PENDIENTES.md): lo que queda por hacer.
+- [`PENDIENTES.md`](../PENDIENTES.md): lo que queda por hacer; [`RENDIMIENTO-metrin.md`](RENDIMIENTO-metrin.md): cifras de tiempos y metas.
 
 ---
 
