@@ -1,0 +1,58 @@
+# Alias de consulta de la búsqueda léxica de Metrín (internal/busqueda).
+#
+# Se usan para EXPANDIR la consulta en BM25 con peso menor (PesoAlias); la
+# consulta original nunca pierde términos. Formato: subconjunto YAML de
+# kb/procedimientos/ESQUEMA.md (listas y mapas en línea, comillas dobles).
+#
+#   acciones: grupos de verbos equivalentes al pedir una tarea. Si la consulta
+#             trae uno, se añaden los demás.
+#   terminos: términos técnicos del ERP. Si la consulta trae el término o un
+#             sinónimo, el término queda como entidad y las demás formas se
+#             añaden como alias.
+#
+# Criterio: sinónimos generales de S10 y del castellano de obra, comprobados
+# contra kb/fragmentos*.jsonl (la forma de destino tiene que existir en la
+# base). No se escriben alias para que una consulta concreta del conjunto
+# dorado acierte. Además de este archivo, Alias lee los `aliases` y
+# `preguntas` de kb/procedimientos/**/*.yml y los `sinonimos` de
+# kb/conceptos/*.yml cuando existen.
+version: 1
+
+acciones:
+  - [registrar, ingresar, cargar, adicionar, agregar, crear, "dar de alta"]
+  - [modificar, editar, cambiar, actualizar, corregir]
+  - [eliminar, borrar, quitar]
+  - [imprimir, "vista preliminar"]
+  - [buscar, ubicar, encontrar]
+  - [importar, jalar, traer, tomar]
+  - [ver, consultar, visualizar, mostrar]
+  - [aprobar, autorizar]
+  - [copiar, duplicar]
+  - [calcular, procesar]
+  - [emitir, generar]
+  - [enviar, mandar, remitir]
+
+terminos:
+  - {termino: metrado, sinonimos: ["cantidad de obra"]}
+  - {termino: "análisis de precios unitarios", sinonimos: [apu, "precio unitario", "costo unitario"]}
+  - {termino: "orden de compra", sinonimos: [oc]}
+  - {termino: "guía de remisión", sinonimos: [guia]}
+  - {termino: cts, sinonimos: ["compensación por tiempo de servicios"]}
+  - {termino: afp, sinonimos: ["fondo de pensiones"]}
+  - {termino: uit, sinonimos: ["unidad impositiva tributaria"]}
+  - {termino: "remuneración mínima vital", sinonimos: [rmv, "sueldo mínimo"]}
+  - {termino: "facturación electrónica", sinonimos: ["factura electrónica", "comprobante electrónico", cpe]}
+  - {termino: tareo, sinonimos: ["horas trabajadas", asistencia]}
+  - {termino: "fórmula polinómica", sinonimos: [polinómica]}
+  - {termino: "gastos generales", sinonimos: [gg]}
+  - {termino: "socio de negocio", sinonimos: [proveedor, cliente]}
+  - {termino: "copia de seguridad", sinonimos: [backup, respaldo]}
+  - {termino: "base de datos", sinonimos: [bd]}
+  - {termino: subcontrato, sinonimos: ["sub contrato"]}
+  - {termino: wbs, sinonimos: [edt]}
+  - {termino: pedido, sinonimos: [requerimiento]}
+  - {termino: egreso, sinonimos: ["salida de almacén", "salida de materiales", despacho]}
+  - {termino: transferencia, sinonimos: [traslado]}
+  - {termino: "inventario físico", sinonimos: ["toma de inventario", conteo]}
+  - {termino: detracción, sinonimos: [spot]}
+  - {termino: "cuadro comparativo", sinonimos: [cotizaciones]}
