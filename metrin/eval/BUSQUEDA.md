@@ -688,3 +688,153 @@ p95 en la V2 y 540 MB de RAM. Con 55 casos PAS y 163 con respuesta, un caso son 
 nulo dentro del ruido**. Recomendación: dejarlo encendido solo en el contenedor de prueba para seguir observándolo en
 la traza, y **apagado por defecto** (`RERANK_URL` vacía) donde importe la latencia; el sitio donde sí podría mover el
 PAS es el recuperador de procedimientos y conceptos, que hoy no pasa por el reranker.
+
+> Superado el mismo 06-10-2026: con el reranker también para elegir procedimientos y conceptos el PAS sube a 81,8 %
+> (§12), y el usuario decidió dejarlo encendido en la configuración de despliegue (docs/V2-RAG-PROCEDURAL.md §13).
+
+## 12. Reranker para ELEGIR procedimientos y conceptos (06-10-2026, tercera medición)
+
+Decisión del usuario: «pruébalo para elegirlo». Hasta aquí el reranker solo reordenaba la clase `fragmento`; el
+procedimiento o el concepto que responde lo elegía el BM25 propio de `internal/v2/conocimiento`. Código:
+`internal/v2/conocimiento/rerank_clases.go` (con sus pruebas en `rerank_clases_test.go`), `V2_RERANK_CLASES` en
+`internal/v2/config.go` y el cableado en `cmd/rag/v2.go`.
+
+### 12.1 Dónde fallaba la elección (medido antes de tocar nada)
+
+Con las 112 preguntas de un solo turno del benchmark que tienen `procedimiento_esperado` (agregado, sin mirar casos):
+
+| Dónde está el procedimiento esperado en el BM25 propio | Preguntas |
+|---|---|
+| 1.º del orden BM25 | 94 (83,9 %) |
+| entre los 5 primeros / 10 / 20 | 108 / 111 / **112 (100 %)** |
+| 1.º después de que el núcleo reordena por puntaje (cobertura) | 86 (76,8 %) |
+| 1.º y con cobertura ≥ 0,6 (pasa el umbral sin la regla de dominio) | 60 (53,6 %) |
+
+Conceptos: 32 de 33 primeros en el BM25 (33 de 33 entre los 5 primeros). El cuello de botella no es encontrar el
+candidato (está entre los 20 primeros en todas), sino **ordenarlo primero y darlo por bueno**. Por eso los candidatos
+que se reordenan son los 20 primeros del BM25 propio y **no se suman los de la búsqueda híbrida**: la híbrida indexa
+fragmentos, no procedimientos, y no hay nada que recuperar que el BM25 propio no traiga ya.
+
+### 12.2 Qué se hizo
+
+- **Texto representativo** (`Base.TextoRerank`): procedimiento → «título (módulo)», objetivo, aliases y preguntas del
+  YAML; concepto → «término (sinónimos): definición». Recortado a `RERANK_MAX_RUNAS` (800) en el último espacio. Media
+  medida en 40 llamadas reales: 737 runas por documento.
+- **Consulta**: la pregunta original más lo que la normalizada añade (la misma que la de fragmentos; sin alias).
+- **Candidatos**: los `RERANK_TOP_N` (20) primeros del orden léxico; los demás quedan detrás, en su orden.
+- **Puntaje y orden**: el logit pasa por la sigmoide (la misma conversión que `fragmento`), así que 0,6 ⇔ logit ≥ 0,405.
+  El logit crudo va en `Candidato.Rerank` y el rango léxico en `meta.rango_lexico`.
+- **Empate** (constructor `ambiguo` y núcleo `elegirProcedimiento`): con los dos candidatos del reranker, se compara la
+  diferencia de logits con logit(0,6) ≈ 0,405 (`MargenRerankEmpate`), no la sigmoide, que se satura cerca de 1. Una
+  prueba de contrato comprueba que los dos márgenes coinciden.
+- **Aceptación** (variante B′, la elegida): el constructor acepta con el MAYOR entre la sigmoide del logit y la
+  cobertura léxica del mismo candidato. El reranker ordena y puede aceptar lo que la cobertura no alcanzaba, pero no
+  rechaza lo que el léxico ya aceptaba (ver 12.4).
+- **Degradación**: sin reranker, con error, con respuesta incompleta o no finita, o con el tiempo agotado
+  (`RERANK_TIMEOUT_MS`), el orden y el puntaje léxicos de siempre, idénticos (`TestRerankClases_FalloNoCambiaNada`
+  compara candidato por candidato). Queda en `motivo` («reranker_error (procedimiento): …; orden y puntaje léxicos») y
+  en la traza: etapa `rerank`, dato `clases` con, por clase, `reordenado`, `fallo`, `ms`, `llamadas`, el orden léxico y
+  el del reranker con sus logits; la etapa pasa a `respaldo` si falló.
+- **Lo que no pasa por el reranker**: los errores frecuentes (TROUBLESHOOTING, clase `error`: no se midió) y la búsqueda
+  interna del constructor que, tras explicar un concepto, busca por el término el procedimiento que ofrece.
+- **Configuración**: `V2_RERANK_CLASES=fragmento,procedimiento,concepto` (defecto; `ninguna` = nada). Solo actúa con
+  `RERANK_URL`. `/health` dice las clases que de verdad se reordenan (`v2.busqueda.rerank_clases`).
+
+### 12.3 Benchmark completo de la V2 (194 casos, 212 turnos)
+
+`go run ./cmd/evalv2 --url http://127.0.0.1:4762 --contenedor metrin-traza-prueba --versiones v2`, contenedor de prueba
+reconstruido con `docs/traza-ejemplos/recrear-4762.sh` y el reranker de la Mac (Metal, `:8091`, 20 × 800). Misma
+imagen para A, B y C; B′ es B más la regla de aceptación de 12.2. La Mac estaba compartida (carga media 8–18 durante
+las corridas): las latencias valen para comparar entre ellas, no como cifra absoluta.
+
+| Métrica | A · reranker solo en fragmento (como hoy) | B · fragmento + procedimiento + concepto, sigmoide | **B′ · ídem, el reranker no quita (elegida)** | C · sin reranker |
+|---|---|---|---|---|
+| **PROCEDURAL ANSWER SUCCESS** | 60,0 % (33/55) | 76,4 % (42/55) | **81,8 % (45/55)** | 60,0 % (33/55) |
+| Acierto de procedimiento | 63,2 % (79/125) | 64,8 % (81/125) | **76,8 % (96/125)** | 63,2 % (79/125) |
+| Acierto de concepto | 75,0 % (27/36) | 80,6 % (29/36) | 80,6 % (29/36) | 75,0 % (27/36) |
+| Precisión de clasificación | 73,2 % (142/194) | 77,8 % (151/194) | 77,8 % (151/194) | 72,2 % (140/194) |
+| Tasa de invención (turnos con contenido) | 0,0 % (0/174) | 0,0 % (0/166) | 0,0 % (0/180) | 0,0 % (0/173) |
+| Falsa abstención | 5,5 % (9/163) | 9,8 % (16/163) | **1,8 % (3/163)** | 6,1 % (10/163) |
+| Abstención correcta | 100 % (12/12) | 100 % (12/12) | 91,7 % (11/12) | 100 % (12/12) |
+| Tasa de SIN_EVIDENCIA | 9,9 % (21/212) | 13,7 % (29/212) | 7,1 % (15/212) | 10,4 % (22/212) |
+| MRR@10 | 0,557 | 0,608 | **0,666** | 0,551 |
+| Recall@5 / Recall@10 | 0,494 / 0,536 | 0,510 / 0,559 | 0,566 / 0,626 | 0,492 / 0,535 |
+| Recall de pasos | 0,606 | 0,774 | 0,828 | 0,606 |
+| Éxito de la tarea | 63,9 % (124/194) | 67,5 % (131/194) | **71,6 % (139/194)** | 64,4 % (125/194) |
+| Latencia cliente p50 / p95 (ms) | 4 / 1 666 | 651 / 2 045 | 883 / 2 051 | 4 / 55 |
+| Latencia servidor (traza) p50 / p95 (ms) | 2,2 / 1 664 | 642 / 1 970 | 822 / 2 014 | 1,6 / 50 |
+| RAM del contenedor de Metrín (media) | 303 MiB | 305 MiB | 302 MiB | 300 MiB |
+
+JSON crudo: A `eval/resultados/2026-10-06T094316.json`, B `2026-10-06T093955.json`, B′ `2026-10-06T094835.json`,
+C `2026-10-06T094444.json`. Con 55 casos PAS un caso son 1,8 puntos; con 163 casos con respuesta, 0,6. Repetida B′
+con el código final y la configuración por defecto (sin pasar `V2_RERANK_CLASES`; `2026-10-06T101635.json`): las
+mismas cifras de calidad, una a una; latencia p50 764 ms y p95 1 751 ms (otra ventana de carga).
+
+Por categoría (B′): PROCEDURE PAS 82 % y clasificación 93 % (A: 60 % y 78 %); CONCEPT éxito 82 % (A: 77 %);
+NAVIGATION éxito 67 % y SIN_EVIDENCIA 4 % (igual que A); TROUBLESHOOTING éxito 58 % (A: 55 %); CONFIGURATION éxito
+38 % (A: 33 %). La latencia la pagan las preguntas que buscan procedimientos o conceptos: p50 de PROCEDURE 1,3 s, de
+CONCEPT 0,5 s (en A, milisegundos), porque cada búsqueda de esas clases es una llamada al reranker.
+
+### 12.4 Por qué B′ y no B (y qué se arriesga)
+
+B mejoró el PAS pero empeoró la falsa abstención (5,5 % → 9,8 %): NAVIGATION pasó de 4 % a 24 % de SIN_EVIDENCIA y
+CONFIGURATION de 14 % a 27 %. Mirado en agregado (la traza de cada turno trae los logits): en los turnos que B pasó a
+SIN_EVIDENCIA, el reranker dejaba primero **al mismo candidato que el léxico** (rango léxico 1 en 5 de 5 de
+NAVIGATION, 3 de 3 de CONFIGURATION y 4 de 5 de PROCEDURE), pero con un logit cercano a 0 (mediana −0,02 en
+NAVIGATION), bajo el umbral de la sigmoide. Un «¿dónde está…?» frente al texto de un procedimiento («Registrar…») no
+da un logit alto aunque sea el procedimiento correcto: la escala absoluta del logit frente a un texto representativo
+(no un pasaje que responde) no está calibrada. B′ cambia una sola regla general, sin constantes nuevas: para aceptar
+cuenta el mayor de los dos puntajes. Resultado: NAVIGATION y CONFIGURATION vuelven a lo de A y el PAS sube 3 casos más.
+
+Lo que hay que saber antes de usarlo:
+
+1. **B′ se diseñó después de ver B.** La regla es general (no mira casos), pero se eligió con este mismo benchmark;
+   no hay un conjunto aparte con procedimientos etiquetados para confirmarla. Si se suman preguntas reales, conviene
+   repetir la comparación.
+2. **Una abstención correcta menos (12/12 → 11/12).** Una pregunta sin evidencia en los manuales (un pago en una
+   moneda que S10 no documenta) recibe el procedimiento más cercano (el pago con cheque): su cobertura léxica (0,46)
+   queda bajo el umbral, pero la regla de dominio del constructor lo acepta ahora que va primero, aunque el reranker
+   le daba logit −1,4. No inventa pasos (la invención sigue en 0 %), pero responde algo que no se preguntó. No se
+   corrigió para no ajustar la regla a un caso del benchmark.
+3. **Latencia.** Con Metal, p50 de 0,9 s y p95 de 2,0 s en la V2 (A: 4 ms y 1,7 s). Sin GPU, ver 12.5.
+
+Regla del encargo: queda por defecto la variante que gana en PAS sin empeorar la invención → **B′**
+(`V2_RERANK_CLASES=fragmento,procedimiento,concepto`).
+
+### 12.5 RAM y latencia del reranker en Docker (solo CPU)
+
+El servicio `reranker` del `docker-compose.yml` (imagen `ghcr.io/ggml-org/llama.cpp:server` del 28-09-2026, los mismos
+`--reranking --parallel 1 -c 2048 -b 2048 -ub 2048`, healthcheck del compose) se probó con `docker run` y el mismo
+montaje (Docker no tenía redes libres para un proyecto aparte; los contenedores del proyecto no se tocaron). Arranca
+sano en ~25 s. Carga de trabajo: 40 llamadas reales de la V2 al elegir procedimiento (32 de 20 candidatos, el resto
+de 5–19; 737 runas de media por documento), cada una contra el contenedor (solo CPU, la VM de Docker Desktop con 12
+hilos arm64) y contra el llama-server nativo con Metal, intercaladas. La Mac estaba cargada por otros procesos
+(carga media 15–22), así que la cifra de CPU es un orden de magnitud, no la de un servidor dedicado.
+
+| Dónde | p50 | p95 | Máximo | RAM |
+|---|---|---|---|---|
+| Docker, solo CPU (servicio del compose) | 16 680 ms | 45 612 ms | 61 278 ms | 370 MiB en reposo; pico 782 MiB (`docker stats`, 300 muestras) |
+| Mac nativo, Metal (`:8091`) | 913 ms | 1 178 ms | 1 320 ms | 540 MB de huella (§11.3) |
+
+Solo las llamadas de 20 candidatos: CPU p50 18,7 s (≈ 0,94 s por documento), Metal p50 0,98 s. Las 40 llamadas en
+CPU tardaron más de 3 s (la más rápida, 4,0 s con 5 candidatos): con `RERANK_TIMEOUT_MS=3000` la V2 sigue con el orden
+léxico (la degradación no cambia el resultado: `TestRerankClases_FalloNoCambiaNada`). **En la CPU sin GPU de un
+servidor la latencia no está medida.**
+`mem_limit` del servicio: 1 GB.
+
+Reproducir:
+
+```bash
+cd s10-conocimiento
+# Contenedor de prueba con cada variante (reranker de la Mac en :8091)
+V2_RERANK_CLASES=fragmento ./docs/traza-ejemplos/recrear-4762.sh                        # A
+V2_RERANK_CLASES=fragmento,procedimiento,concepto ./docs/traza-ejemplos/recrear-4762.sh  # B′ (y el defecto)
+RERANK_URL= ./docs/traza-ejemplos/recrear-4762.sh                                        # C
+cd metrin && go run ./cmd/evalv2 --url http://127.0.0.1:4762 --contenedor metrin-traza-prueba --versiones v2 \
+  --md /tmp/variante.md        # --md fuera de eval/: sin él, sobrescribe eval/V1_VS_V2.md con solo la V2
+# Pruebas
+go test ./internal/v2/... -run 'Rerank|Aviso|Empate|Aceptacion'
+```
+
+(B se midió con el mismo código sin la regla de aceptación de 12.2; para repetirla hay que quitar el caso
+`x.Rerank != nil && ClasesRerankDefecto[clase]` de `Constructor.candidatos`.)

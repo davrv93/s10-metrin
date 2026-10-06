@@ -287,3 +287,47 @@ Métricas:
 7. las fuentes respaldan los pasos.
 
 V2 se enciende solo si supera a V1 en esa métrica sin empeorar la tasa de invención.
+
+## 13. Despliegue: qué queda habilitado y cuánto cuesta (06-10-2026)
+
+Decisión del usuario: «todo habilitado» en la configuración de despliegue, **sin** que la V2 pase a ser la versión
+por defecto. Aplica a `docker-compose.yml` (servicio `metrin` y servicio nuevo `reranker`) y a `metrin/.env.example`.
+
+| Qué | Variable | Valor por defecto | Efecto |
+|---|---|---|---|
+| V2 disponible | `AGENT_V2_ENABLED` | `true` | La petición puede traer `"version": "v2"` y la página muestra el selector |
+| Versión por defecto | `AGENT_VERSION`, `AGENT_V2_PERCENTAGE` | `v1`, `0` | Una petición sin `"version"` sigue siendo V1, byte a byte |
+| Búsqueda de fragmentos | `V2_BUSQUEDA` | `hibrida` | BM25F + vector + RRF (`metrin/eval/BUSQUEDA.md`) |
+| Reranker | `RERANK_URL` | compose: `http://reranker:8080`; `.env.example` (fuera de Docker, la Mac): `http://127.0.0.1:8091` | Encendido; vacío = apagado |
+| Qué reordena | `V2_RERANK_CLASES` | `fragmento,procedimiento,concepto` | También ELIGE el procedimiento y el concepto (BUSQUEDA.md §12); `ninguna` = nada |
+| Candidatos × runas | `RERANK_TOP_N`, `RERANK_MAX_RUNAS` | `20`, `800` | BUSQUEDA.md §11.2 |
+| Tiempo máximo por llamada | `RERANK_TIMEOUT_MS` | `3000` | Si se pasa o falla: orden sin reranker, anotado en `motivo` y en la traza |
+
+**Servicio `reranker`** (compose): imagen oficial de llama.cpp `ghcr.io/ggml-org/llama.cpp:server` (probada la del
+28-09-2026), `--reranking --parallel 1 -c 2048 -b 2048 -ub 2048`, modelo bge-reranker-v2-m3 Q4_K_M (438 MB,
+Apache-2.0) montado de `metrin/modelos/reranker/`, que **no** está en git ni en la imagen de Metrín: se baja una vez
+con `sh metrin/descargar-reranker.sh` (revisión fija de Hugging Face y sha256 comprobado). Healthcheck cada 60 s
+con `start_interval` de 2 s (arranca en ~25 s), sin puerto en el host, `mem_limit` de 1 GB (pico medido: 782 MiB).
+`metrin` arranca con él pero no lo exige (`depends_on` con `required: false`): sin reranker, la V2 se degrada sola.
+
+**Costes medidos** (20 candidatos de unas 740 runas por llamada, que es lo que manda la V2 al elegir un procedimiento):
+
+| Dónde corre el reranker | RAM | Latencia por llamada | Efecto en la V2 |
+|---|---|---|---|
+| Mac, llama-server nativo con Metal (`:8091`) | 540 MB de huella (BUSQUEDA.md §11.3) | p50 0,9 s, p95 1,2 s (las mismas 40 llamadas, intercaladas con las de CPU) | p50 0,9 s, p95 2,0 s por turno (BUSQUEDA.md §12.3) |
+| Docker en la Mac, solo CPU (el servicio del compose) | 370 MiB en reposo; pico 782 MiB (`docker stats`) | p50 16,7 s, p95 45,6 s, máximo 61 s (40 llamadas reales; ~0,9 s por documento) | Las 40 tardaron más de 3 s (la más rápida, 4,0 s con 5 candidatos): con `RERANK_TIMEOUT_MS=3000` la V2 responde con el orden léxico tras esperar 3 s por llamada |
+| CPU sin GPU de un servidor (producción) | sin medir | **sin medir** | — |
+
+La medición en CPU es de la VM de Docker Desktop de la Mac (12 hilos arm64) **con la máquina cargada por otros
+procesos** (carga media 15–20): sirve de orden de magnitud, no de cifra de producción. **En la CPU sin GPU de un
+servidor (la de producción) la latencia del reranker no está medida**; antes de contar con él allí hay que medirla
+en esa máquina.
+
+Lo práctico:
+
+- En la Mac, el reranker útil es el nativo con Metal: `RERANK_URL=http://host.docker.internal:8091` en el `.env` de la
+  raíz (el compose lo lee) y el servicio `reranker` del compose sobra.
+- Sin GPU, mientras no se mida: o se acepta que el reranker casi nunca llegue a tiempo (la V2 queda como sin
+  reranker, PAS 60,0 %, pero hasta 3 s más lenta por llamada), o se apaga con `V2_RERANK_CLASES=ninguna` o
+  `RERANK_URL=` (sin reranker: p50 de 4 ms por turno).
+- RAM total de Metrín con el reranker: ~300 MiB del contenedor de Metrín (benchmark) más la del reranker.
