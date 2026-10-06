@@ -14,6 +14,9 @@ RUN apk add --no-cache ca-certificates tzdata poppler-utils
 WORKDIR /srv
 COPY --from=build /rag /usr/local/bin/rag
 COPY modelos ./modelos
+# Plantillas de respuesta de la V2: /srv/plantillas/respuestas.yml es la primera ruta que prueba
+# conocimiento.RutaPlantillas (o RAG_PLANTILLAS). Sin ellas la V2 cae a las plantillas mínimas embebidas.
+COPY plantillas ./plantillas
 COPY docker-entrada.sh /usr/local/bin/entrada.sh
 RUN chmod +x /usr/local/bin/entrada.sh
 ENV RAG_DATOS=/srv/datos EMBED_PROVIDER=estatico EMBED_MODELO_ESTATICO=/srv/modelos/potion-es-int8.pjge TZ=America/Lima
