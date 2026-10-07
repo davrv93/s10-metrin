@@ -3,6 +3,7 @@
 #   docker compose up -d --build              cortex + admin + programador + metrin
 #   docker compose --profile llm up -d        además Ollama dentro del compose
 #   docker compose --profile redis up -d      además Redis y su consola web (127.0.0.1:5540)
+#   docker compose --profile biblioteca up -d además la biblioteca de PDFs (127.0.0.1:4770)
 #   docker compose run --rm herramientas s10kb.py indexar      (cualquier script)
 #
 # Puertos solo en 127.0.0.1 del host:
@@ -235,6 +236,17 @@ services:
     ports: ["127.0.0.1:${REDIS_CONSOLA_PUERTO:-5540}:5540"]
     depends_on:
       redis: { condition: service_healthy }
+    logging: *logs
+    restart: unless-stopped
+
+  # Biblioteca de PDFs por módulo (herramientas/biblioteca.py): solo lectura, perfil «biblioteca».
+  #   docker compose --profile biblioteca up -d biblioteca   →   http://127.0.0.1:4770
+  # La carpeta biblioteca/ no está en git (manuales del portal de miembros de S10): se genera en la Mac.
+  biblioteca:
+    image: nginx:alpine
+    profiles: ["biblioteca"]
+    volumes: ["./biblioteca:/usr/share/nginx/html:ro"]
+    ports: ["127.0.0.1:${BIBLIOTECA_PUERTO:-4770}:80"]
     logging: *logs
     restart: unless-stopped
 

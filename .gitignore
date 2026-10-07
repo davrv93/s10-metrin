@@ -64,3 +64,6 @@ entrenamiento-router/reales/
 entrenamiento-router/datos/entrenamiento.jsonl
 entrenamiento-router/datos/calibracion.jsonl
 entrenamiento-router/datos/prueba.jsonl
+
+# biblioteca de PDFs (herramientas/biblioteca.py): manuales del portal de miembros de S10, fuera de git
+biblioteca/
