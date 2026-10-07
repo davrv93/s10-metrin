@@ -163,9 +163,9 @@ def probabilidades(modelo: Router, seqs: list[list[int]]) -> np.ndarray:
 
 
 def entrenar(filas, n_clases, X, y, Xc, yc, ajustar: bool, epocas=40, lr_cabeza=3e-3, lr_emb=1e-3, deriva=1e-2,
-             pesos_clase=None, log=print):
-    torch.manual_seed(SEMILLA)
-    rnd = random.Random(SEMILLA)
+             pesos_clase=None, log=print, semilla=SEMILLA):
+    torch.manual_seed(semilla)
+    rnd = random.Random(semilla)
     m = Router(filas, n_clases, ajustar)
     grupos = [{"params": m.cabeza.parameters(), "lr": lr_cabeza, "weight_decay": 1e-4}]
     if ajustar:
@@ -291,6 +291,7 @@ def main():
     ap.add_argument("--salida", type=Path, default=AQUI / "salida")
     ap.add_argument("--epocas", type=int, default=40)
     ap.add_argument("--sin-exportar", action="store_true")
+    ap.add_argument("--semilla", type=int, default=SEMILLA, help="para medir la varianza entre entrenamientos")
     a = ap.parse_args()
     a.salida.mkdir(exist_ok=True)
     log_f = open(a.salida / "entrenamiento.log", "w", encoding="utf-8")
@@ -333,7 +334,7 @@ def main():
     for nombre, ajustar in (("congelado", False), ("afinado", True)):
         log(f"\n== {nombre}")
         m, acc_c = entrenar(r["filas"], len(clases), X_e, y_e, X_c, y_c, ajustar, epocas=a.epocas,
-                            pesos_clase=pesos, log=log)
+                            pesos_clase=pesos, log=log, semilla=a.semilla)
         Pc, Pp = probabilidades(m, X_c), probabilidades(m, X_p)
         u = calibrar(Pc, y_c, clases, modulo_de)
         informe[nombre] = {"umbrales": u, "acierto_calibracion": round(acc_c, 4),

@@ -92,7 +92,7 @@ def cargar_prueba(procs: dict) -> list[dict]:
 def cargar_reales(clases: list[str]) -> tuple[list[dict], list[dict]]:
     """(para entrenar, para probar) con corte temporal por grupo. Vacío si no hay etiquetas."""
     etiquetas = {}
-    for ruta in sorted(REALES.glob("etiquetas*.jsonl")):
+    for ruta in sorted(REALES.glob("etiquetas*.jsonl")) + sorted(REALES.glob("tickets/etiquetas*.jsonl")):
         for linea in open(ruta, encoding="utf-8"):
             if linea.strip():
                 x = json.loads(linea)
@@ -100,7 +100,10 @@ def cargar_reales(clases: list[str]) -> tuple[list[dict], list[dict]]:
     if not etiquetas:
         return [], []
     por_grupo = defaultdict(list)
-    for linea in open(REALES / "candidatas.jsonl", encoding="utf-8"):
+    lineas = list(open(REALES / "candidatas.jsonl", encoding="utf-8"))
+    if (REALES / "tickets/candidatas.jsonl").exists():  # tickets de Zendesk (extraer_tickets.py), grupo «zendesk»
+        lineas += list(open(REALES / "tickets/candidatas.jsonl", encoding="utf-8"))
+    for linea in lineas:
         c = json.loads(linea)
         e = etiquetas.get(c["id"])
         if not e:

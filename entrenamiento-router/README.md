@@ -70,7 +70,7 @@ y la escritura PJGE.
 
 ## Resultados (07-10-2026)
 
-El modelo en `metrin/modelos/router/` es el **v2, con preguntas reales** (sha256 del `.pjge` `0c1f9b1d…`).
+El modelo en `metrin/modelos/router/` es el **v4: sintético + 7 grupos de WhatsApp + 1 005 tickets de Zendesk** (sha256 del `.pjge` `74e3dedf…`). Las tablas de abajo cuentan cómo se llegó.
 
 | Prueba (router solo, int8) | v1: solo sintético | **v2: + reales** |
 |---|---|---|
@@ -111,3 +111,22 @@ reranker (solo la Mac). Las preguntas «sin caso» de la prueba son sobre todo d
 no llegan al router, porque el clasificador de tipo las manda antes a conceptos o a aclaración.
 
 Dentro de la V2: ver `docs/TOC-RUTEO-METRIN.md` §8.
+
+### v4 con tickets de Zendesk (07-10-2026, instalado)
+
+`extraer_tickets.py` toma los 1 005 tickets exportados en `optimiza360_scraping/` (mesa de ayuda de Edifica, 10-2024 a
+10-2026; asunto + primer mensaje, anonimizados, en `reales/tickets/`, fuera de git). Etiquetados: **3** con
+procedimiento, 55 de uso de S10 sin procedimiento, 947 que no son preguntas de uso (el 75 % no es S10: impresoras,
+Microsoft, laptops). Mismo corte temporal: los 398 tickets más recientes entran en la prueba real (1 082 mensajes).
+
+| Router solo, int8 | v2 | **v4** | v4, otras 2 semillas |
+|---|---|---|---|
+| Real, 1 076 sin caso: se abstiene | 79,9 % | 79,9 % | 78,2–80,8 % |
+| Real, 1 076 sin caso: elige por error | 0,84 % | **0,56 %** | 0,56–1,02 % |
+| Real, 6 con caso: elige bien | 2/6 | **3/6** | 2–3/6 |
+| Sintética, 125 con caso: elige y se equivoca | 1,6 % | 4,8 % | 3,2–4,8 % |
+
+El 1,6 % del v2 parece una semilla favorable: v1, v3 y las semillas del v4 dan 3,2–4,8 %. Dentro de la V2 completa
+(`medir-v2.sh`, sin reranker) el v4 da acierto de procedimiento 74,4 % (igual que el v2), PAS 67,3 % (v2: 65,5 %) y
+falsa abstención 2,5 % (v2: 1,8 %); con los 1 082 mensajes reales por la V2 acierta 3 de 6 con caso (sin router: 1) y
+responde un procedimiento al 4,3 % de los mensajes sin caso (sin router: 3,3 %).
