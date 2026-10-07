@@ -20,6 +20,7 @@ import (
 	"time"
 
 	"rag-go/internal/rag"
+	"rag-go/internal/router"
 	"rag-go/internal/traza"
 	"rag-go/internal/v2/tipos"
 )
@@ -42,6 +43,7 @@ type Agente struct {
 	Gate         tipos.QualityGate      // nil = GateMinimo
 	Decision     tipos.DecisionEngine   // nil = Reglas
 	Charla       Charlador              // nil = saludo fijo
+	Router       RouterCasos            // nil = sin router de casos (router.go): todo como antes
 }
 
 // Nuevo crea un agente con la configuración y los respaldos por defecto.
@@ -108,6 +110,7 @@ type turno struct {
 	gateIntentos     int
 	generador        string
 	modoRedaccion    string
+	decRouter        *router.Decision // decisión del router de casos, una vez por turno (router.go)
 }
 
 // Preguntar responde un turno V2 (implementa rag.AgenteV2). No devuelve error: toda falla termina en una
@@ -182,6 +185,9 @@ func (t *turno) preguntaNueva(previa tipos.Memoria) rag.Respuesta {
 		}
 	}
 	t.estado.Memoria = base
+	if tipo == tipos.Desconocido {
+		tipo = t.tipoPorRouter(tipo)
+	}
 	switch {
 	case tipo == tipos.Social:
 		return t.social(previa)
@@ -201,6 +207,9 @@ func (t *turno) preguntaNueva(previa tipos.Memoria) rag.Respuesta {
 		var ok bool
 		cands, motivo, ok = t.buscar(tipo)
 		t.trazarReferenciaBusqueda()
+		if rc, usado := t.rutear(tipo, cands); usado {
+			cands, ok = rc, true
+		}
 		if !ok {
 			return t.entregar(PlanSinEvidencia(tipo), base, motivo)
 		}

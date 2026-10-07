@@ -17,6 +17,8 @@ __pycache__/
 # índice y modelos pesados (se regeneran: index-kb, embeddings, LoRA)
 metrin/datos/
 *.pjge
+# excepción: el router de casos de Metrín (14,5 MB, entrenamiento-router/README.md)
+!metrin/modelos/router/router-s10.pjge
 *.gob
 
 # jeva.cpp: fork local de llama-server (175 MB, se clona aparte;
@@ -51,3 +53,14 @@ data/*
 !data/lora/resumen.json
 !data/html/
 data/preguntas/crudo/
+
+# router de casos: modelo base descargado (1 GB) y salidas del entrenamiento (se regeneran)
+entrenamiento-router/base/
+entrenamiento-router/salida/
+
+# conversaciones reales de clientes (WhatsApp): datos personales, NUNCA en git
+entrenamiento-router/reales/
+# conjuntos generados por construir_datos.py: llevan mensajes reales; se regeneran
+entrenamiento-router/datos/entrenamiento.jsonl
+entrenamiento-router/datos/calibracion.jsonl
+entrenamiento-router/datos/prueba.jsonl

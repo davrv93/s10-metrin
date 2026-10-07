@@ -1,0 +1,432 @@
+{"texto": "¿Cómo hago el cálculo analítico de los gastos generales de mi presupuesto oferta?", "procedimiento": "presupuestos.calcular-gastos-generales", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como obtengo el % de gg registrando rubros y luego conceptos", "procedimiento": "presupuestos.calcular-gastos-generales", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "necesito detallar el sueldo del residente, el almacenero y el administrativo dentro de los gastos generales, como lo cargo", "procedimiento": "presupuestos.calcular-gastos-generales", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como ago el calculo de gastos jenerales analitico en el s10", "procedimiento": "presupuestos.calcular-gastos-generales", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "gg analitico", "procedimiento": "presupuestos.calcular-gastos-generales", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "tengo q armar los gg de la obra con personal tecnico y administrativo, por donde empiezo", "procedimiento": "presupuestos.calcular-gastos-generales", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Indíqueme los pasos para adicionar un rubro y luego sus conceptos en gastos generales.", "procedimiento": "presupuestos.calcular-gastos-generales", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como pongo el tiempo y el sueldo de cada concepto de los gg", "procedimiento": "presupuestos.calcular-gastos-generales", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como meto al residente principal en los gastos generales", "procedimiento": "presupuestos.calcular-gastos-generales", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "mi jefe me pidio sacar el % de GG de la oferta, que hago", "procedimiento": "presupuestos.calcular-gastos-generales", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como calculo el ggp del presupuesto venta", "procedimiento": "presupuestos.calcular-gastos-generales", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ke pasos sigo pa sacar el porsentaje de gastos jenerales", "procedimiento": "presupuestos.calcular-gastos-generales", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "ya calcule el porcentaje de gg, que mas hago para que el presupuesto lo tome", "procedimiento": "presupuestos.calcular-gastos-generales", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como agrego el rubro personal tecnico y despues sus conceptos", "procedimiento": "presupuestos.calcular-gastos-generales", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "calcular ggp", "procedimiento": "presupuestos.calcular-gastos-generales", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "¿Cómo se llenan la unidad, la persona, el %Partp., el tiempo y el sueldo o jornal de cada concepto?", "procedimiento": "presupuestos.calcular-gastos-generales", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "por que menu entro para hacer los gg detallados", "procedimiento": "presupuestos.calcular-gastos-generales", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Dónde está el catálogo de rubros que se usa en gastos generales?", "procedimiento": "presupuestos.calcular-gastos-generales", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde encuentro el catalogo de conceptos de gastos generales", "procedimiento": "presupuestos.calcular-gastos-generales", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en ke pantalla meto el sueldo del residente de obra", "procedimiento": "presupuestos.calcular-gastos-generales", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "boton calcular porcentaje gg", "procedimiento": "presupuestos.calcular-gastos-generales", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "donde doy clic derecho para adicionar un rubro", "procedimiento": "presupuestos.calcular-gastos-generales", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "estoy en la hoja del presupuesto y quiero ir a los gastos generales analiticos, donde queda", "procedimiento": "presupuestos.calcular-gastos-generales", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "¿Qué debo tener registrado en el pie del presupuesto para poder hacer los gastos generales analíticos?", "procedimiento": "presupuestos.calcular-gastos-generales", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que variable tengo que poner para habilitar el calculo analitico de gg", "procedimiento": "presupuestos.calcular-gastos-generales", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "en ke columna del pie va la macro ggp para q funcione gastos generales", "procedimiento": "presupuestos.calcular-gastos-generales", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "¿Qué datos se configuran por cada concepto dentro de un rubro?", "procedimiento": "presupuestos.calcular-gastos-generales", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que porcentaje de participacion y tiempo se le pone a cada persona del rubro personal tecnico", "procedimiento": "presupuestos.calcular-gastos-generales", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "voy a hacer los gg de una oferta nueva, que tengo que dejar listo antes", "procedimiento": "presupuestos.calcular-gastos-generales", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "no me deja entrar al calculo analitico de gastos generales", "procedimiento": "presupuestos.calcular-gastos-generales", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "El sistema indica que no se puede acceder al cálculo analítico de gastos generales, ¿qué debo revisar?", "procedimiento": "presupuestos.calcular-gastos-generales", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "me sale q no puedo acseder a gastos jenerales analitico", "procedimiento": "presupuestos.calcular-gastos-generales", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "calcule el porcentaje de gg pero la hoja del presupuesto sigue con el pie anterior", "procedimiento": "presupuestos.calcular-gastos-generales", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "gg analitico bloqueado", "procedimiento": "presupuestos.calcular-gastos-generales", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "le doy adicionar concepto y no me deja, ya puse el rubro", "procedimiento": "presupuestos.calcular-gastos-generales", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "abri gastos generales y no tengo la variable ggp en el pie, no me deja seguir", "procedimiento": "presupuestos.calcular-gastos-generales", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "¿Cómo copio partidas de un presupuesto ya elaborado a otro presupuesto?", "procedimiento": "presupuestos.copiar-partidas-de-otro-presupuesto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "quiero jalar items de una obra que ya cerramos hacia la que estoy armando", "procedimiento": "presupuestos.copiar-partidas-de-otro-presupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ya tengo un presupuesto parecido de otro cliente y quiero jalar sus titulos y partidas al nuevo", "procedimiento": "presupuestos.copiar-partidas-de-otro-presupuesto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como copio y pego partidas de un prespuesto a otro", "procedimiento": "presupuestos.copiar-partidas-de-otro-presupuesto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "copiar partidas", "procedimiento": "presupuestos.copiar-partidas-de-otro-presupuesto", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como marco un bloque de items y lo pego en otro subpresupuesto", "procedimiento": "presupuestos.copiar-partidas-de-otro-presupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Explíqueme cómo elegir el presupuesto origen y pegar el bloque en el presupuesto destino.", "procedimiento": "presupuestos.copiar-partidas-de-otro-presupuesto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "en vez de armar la hoja de cero quiero aprovechar la de un presupuesto terminado, pasos", "procedimiento": "presupuestos.copiar-partidas-de-otro-presupuesto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como pego titulos y partidas copiados en la hoja de otro presupuesto", "procedimiento": "presupuestos.copiar-partidas-de-otro-presupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ke hago pa traer los items de un presupuesto ya echo", "procedimiento": "presupuestos.copiar-partidas-de-otro-presupuesto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "pegar partidas de otro presupuesto", "procedimiento": "presupuestos.copiar-partidas-de-otro-presupuesto", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "despues de pegar las partidas que boton uso para generar los items", "procedimiento": "presupuestos.copiar-partidas-de-otro-presupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como copio solo una parte de la hoja y no todo el presupuesto", "procedimiento": "presupuestos.copiar-partidas-de-otro-presupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "me piden un presupuesto de una obra igual a la del año pasado, como duplico sus partidas", "procedimiento": "presupuestos.copiar-partidas-de-otro-presupuesto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cuál es el procedimiento para copiar ítems del subpresupuesto de origen al de destino?", "procedimiento": "presupuestos.copiar-partidas-de-otro-presupuesto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como pego lo copiado en la hoja del presupuesto nuevo", "procedimiento": "presupuestos.copiar-partidas-de-otro-presupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿En qué escenario se copian las partidas entre presupuestos?", "procedimiento": "presupuestos.copiar-partidas-de-otro-presupuesto", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde le doy copiar a los items de la hoja", "procedimiento": "presupuestos.copiar-partidas-de-otro-presupuesto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde ai la opcion pegar en la hoja del presupuesto destino", "procedimiento": "presupuestos.copiar-partidas-de-otro-presupuesto", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "por donde elijo el presupuesto origen y su subpresupuesto", "procedimiento": "presupuestos.copiar-partidas-de-otro-presupuesto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "menu copiar partidas", "procedimiento": "presupuestos.copiar-partidas-de-otro-presupuesto", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "estoy en datos generales y quiero copiar partidas de otro presupuesto, a donde voy", "procedimiento": "presupuestos.copiar-partidas-de-otro-presupuesto", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "donde esta el boton para generar items despues de pegar", "procedimiento": "presupuestos.copiar-partidas-de-otro-presupuesto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Qué debe estar registrado antes de pegar las partidas en el presupuesto destino?", "procedimiento": "presupuestos.copiar-partidas-de-otro-presupuesto", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "tengo que crear primero el presupuesto donde voy a pegar o se crea solo", "procedimiento": "presupuestos.copiar-partidas-de-otro-presupuesto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q necesito tener listo antes de copiar partidas a otro prespuesto", "procedimiento": "presupuestos.copiar-partidas-de-otro-presupuesto", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "el presupuesto destino lo registro en que escenario antes de pegar", "procedimiento": "presupuestos.copiar-partidas-de-otro-presupuesto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "voy a copiar partidas y todavia no creo el presupuesto nuevo, que configuro primero", "procedimiento": "presupuestos.copiar-partidas-de-otro-presupuesto", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "para pegar necesito subpresupuesto en el destino o con el presupuesto basta", "procedimiento": "presupuestos.copiar-partidas-de-otro-presupuesto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "le doy pegar y no me aparece nada en la hoja del presupuesto", "procedimiento": "presupuestos.copiar-partidas-de-otro-presupuesto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "copie las partidas pero el presupuesto destino no me sale para elegirlo", "procedimiento": "presupuestos.copiar-partidas-de-otro-presupuesto", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no me deja pegar las partidas en el otro prespuesto", "procedimiento": "presupuestos.copiar-partidas-de-otro-presupuesto", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "pegue las partidas y no me salen numeradas los items", "procedimiento": "presupuestos.copiar-partidas-de-otro-presupuesto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "pegar no funciona hoja", "procedimiento": "presupuestos.copiar-partidas-de-otro-presupuesto", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "Al copiar partidas de otro presupuesto, el destino no figura en la lista. ¿Qué falta?", "procedimiento": "presupuestos.copiar-partidas-de-otro-presupuesto", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "copio el bloque de partidas y al ir a la hoja destino no esta habilitado el pegar", "procedimiento": "presupuestos.copiar-partidas-de-otro-presupuesto", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "¿Cómo se arma el pie de la oferta a partir del costo directo?", "procedimiento": "presupuestos.disenar-pie-de-presupuesto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como armo el pie de presupuesto desde cero", "procedimiento": "presupuestos.disenar-pie-de-presupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "me toca dejar el pie de la oferta con gg, utilidad e igv, por donde arranco", "procedimiento": "presupuestos.disenar-pie-de-presupuesto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como ago el diseño del pie de presupuesto en s10", "procedimiento": "presupuestos.disenar-pie-de-presupuesto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "diseñar pie", "procedimiento": "presupuestos.disenar-pie-de-presupuesto", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como registro el concepto de utilidad para el pie", "procedimiento": "presupuestos.disenar-pie-de-presupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Explíqueme cómo relacionar un concepto del pie con un recurso de Subcontratos y Servicios.", "procedimiento": "presupuestos.disenar-pie-de-presupuesto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como pongo la formula de cada linea del pie en la columna macro", "procedimiento": "presupuestos.disenar-pie-de-presupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ke es la variable P_T y como la uso en el pie", "procedimiento": "presupuestos.disenar-pie-de-presupuesto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "el pie solo me muestra el costo directo y falta todo lo demas, como lo completo", "procedimiento": "presupuestos.disenar-pie-de-presupuesto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como creo el recurso gastos generales dentro de subcontratos y servicios para el pie", "procedimiento": "presupuestos.disenar-pie-de-presupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "formula del pie macro", "procedimiento": "presupuestos.disenar-pie-de-presupuesto", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "despues de armar el pie que hago para ver el resultado", "procedimiento": "presupuestos.disenar-pie-de-presupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ya termine el presupuesto y quiero el total con gg, utilidad e impuesto, como lo presento", "procedimiento": "presupuestos.disenar-pie-de-presupuesto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo se registra un concepto del pie, con su variable, en el menú Catálogos?", "procedimiento": "presupuestos.disenar-pie-de-presupuesto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como registro la linea del igv en el pie", "procedimiento": "presupuestos.disenar-pie-de-presupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Dónde se encuentra el catálogo Concepto Pie Presupuesto?", "procedimiento": "presupuestos.disenar-pie-de-presupuesto", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en que escenario diseño el pie del presupuesto", "procedimiento": "presupuestos.disenar-pie-de-presupuesto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde ai el catalogo de conceptos del pie", "procedimiento": "presupuestos.disenar-pie-de-presupuesto", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "donde busco la rama subcontratos y servicios del catalogo de recursos", "procedimiento": "presupuestos.disenar-pie-de-presupuesto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "ventana diseño pie", "procedimiento": "presupuestos.disenar-pie-de-presupuesto", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "estoy en la hoja del presupuesto, a donde entro para modificar el pie", "procedimiento": "presupuestos.disenar-pie-de-presupuesto", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "por donde veo el costo directo con nDirecto", "procedimiento": "presupuestos.disenar-pie-de-presupuesto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Qué debe cumplirse antes de ingresar a diseñar el pie del presupuesto?", "procedimiento": "presupuestos.disenar-pie-de-presupuesto", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "el presupuesto meta tambien lleva pie o solo la oferta", "procedimiento": "presupuestos.disenar-pie-de-presupuesto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que variables puedo usar en la macro del pie y cuales son obligatorias", "procedimiento": "presupuestos.disenar-pie-de-presupuesto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "ke usuario tiene q ser para diseñar el pie de presupuesto", "procedimiento": "presupuestos.disenar-pie-de-presupuesto", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "que incluye por defecto la primera linea del pie, el costo directo", "procedimiento": "presupuestos.disenar-pie-de-presupuesto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "voy a diseñar el pie, que grupo y subgrupo de recursos debo registrar antes", "procedimiento": "presupuestos.disenar-pie-de-presupuesto", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "no me sale el pie de presupuesto en mi presupuesto meta", "procedimiento": "presupuestos.disenar-pie-de-presupuesto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "diseñe el pie pero al procesar no veo el resultado del pie", "procedimiento": "presupuestos.disenar-pie-de-presupuesto", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "la formula de la macro del pie me da error, creo q falta P_T", "procedimiento": "presupuestos.disenar-pie-de-presupuesto", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "pie vacio", "procedimiento": "presupuestos.disenar-pie-de-presupuesto", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "el concepto que cree no me aparece en el diseño del pie", "procedimiento": "presupuestos.disenar-pie-de-presupuesto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "El pie solo muestra el costo directo después de procesar. ¿Qué me falta registrar?", "procedimiento": "presupuestos.disenar-pie-de-presupuesto", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "intento diseñar el pie antes de procesar el presupuesto y no me deja continuar", "procedimiento": "presupuestos.disenar-pie-de-presupuesto", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "¿Cómo elaboro la fórmula polinómica de un presupuesto con los índices unificados del INEI?", "procedimiento": "presupuestos.elaborar-formula-polinomica", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como saco la formula polinomica de mi obra para las valorizaciones", "procedimiento": "presupuestos.elaborar-formula-polinomica", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "me piden el K de reajuste para valorizar y tengo que armar la polinomica, por donde empiezo", "procedimiento": "presupuestos.elaborar-formula-polinomica", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como ago la formula polinomica en el s10", "procedimiento": "presupuestos.elaborar-formula-polinomica", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "formula polinomica", "procedimiento": "presupuestos.elaborar-formula-polinomica", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como agrupo los indices unificados en el agrupamiento preliminar", "procedimiento": "presupuestos.elaborar-formula-polinomica", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Explíqueme cómo conformar los monomios a partir del agrupamiento preliminar.", "procedimiento": "presupuestos.elaborar-formula-polinomica", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como numero los monomios si la mano de obra pasa de 0.05", "procedimiento": "presupuestos.elaborar-formula-polinomica", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ke hago pa agrupar indices unificados de la misma familia", "procedimiento": "presupuestos.elaborar-formula-polinomica", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como cambio los simbolos de los monomios", "procedimiento": "presupuestos.elaborar-formula-polinomica", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "conformar monomios", "procedimiento": "presupuestos.elaborar-formula-polinomica", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como deshago un agrupamiento de indices unificados", "procedimiento": "presupuestos.elaborar-formula-polinomica", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ya arme los monomios y quiero ver el reporte de la polinomica en pantalla, como", "procedimiento": "presupuestos.elaborar-formula-polinomica", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como verifico que la formula quede correcta segun la configuracion", "procedimiento": "presupuestos.elaborar-formula-polinomica", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo asigno el índice unificado a los recursos que no lo tienen?", "procedimiento": "presupuestos.elaborar-formula-polinomica", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el sistema me muestra recursos sin indice unificado al empezar la polinomica, que hago", "procedimiento": "presupuestos.elaborar-formula-polinomica", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Dónde se ubican los índices unificados dentro del escenario de la fórmula polinómica?", "procedimiento": "presupuestos.elaborar-formula-polinomica", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde esta la pestaña de conformacion de monomios", "procedimiento": "presupuestos.elaborar-formula-polinomica", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde ai el catalogo de indice unificado", "procedimiento": "presupuestos.elaborar-formula-polinomica", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "de donde sale la ventana de agrupamiento preliminar", "procedimiento": "presupuestos.elaborar-formula-polinomica", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "escenario polinomica", "procedimiento": "presupuestos.elaborar-formula-polinomica", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "ya tengo mi formula y solo quiero imprimirla, por donde entro", "procedimiento": "presupuestos.elaborar-formula-polinomica", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "donde elijo si elaboro la formula o solo la visualizo", "procedimiento": "presupuestos.elaborar-formula-polinomica", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Qué debe omitirse del pie del presupuesto para poder elaborar la fórmula polinómica?", "procedimiento": "presupuestos.elaborar-formula-polinomica", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que requisitos tiene que cumplir la formula para peru, cuantos monomios maximo", "procedimiento": "presupuestos.elaborar-formula-polinomica", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que indices no conviene agrupar, el 47 y el 39 verdad", "procedimiento": "presupuestos.elaborar-formula-polinomica", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "cuantos submonomios se pueden agrupar en un solo monomio", "procedimiento": "presupuestos.elaborar-formula-polinomica", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "voy a hacer la polinomica de una obra publica, que parametros debo respetar", "procedimiento": "presupuestos.elaborar-formula-polinomica", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "con cuanto coeficiente minimo tiene que quedar cada monomio", "procedimiento": "presupuestos.elaborar-formula-polinomica", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "no me aparece la ventana para elaborar la formula polinomica", "procedimiento": "presupuestos.elaborar-formula-polinomica", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "me avisa q hay simbolos repetidos entre monomios", "procedimiento": "presupuestos.elaborar-formula-polinomica", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "a un monomio le sale un factor chiquito, menor a 5 centesimos, ke ago", "procedimiento": "presupuestos.elaborar-formula-polinomica", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "monomio no llega", "procedimiento": "presupuestos.elaborar-formula-polinomica", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "la polinomica no sale correcta al verificarla", "procedimiento": "presupuestos.elaborar-formula-polinomica", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "La fórmula polinómica no se genera mientras el impuesto participe en el pie. ¿Qué hago?", "procedimiento": "presupuestos.elaborar-formula-polinomica", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "en el catalogo de indice unificado no encuentro el que le toca a mi recurso, no me deja seguir", "procedimiento": "presupuestos.elaborar-formula-polinomica", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "¿Cómo importo al S10 un presupuesto que elaboré en Excel?", "procedimiento": "presupuestos.importar-presupuesto-desde-excel", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "mi presupuesto esta en excel y quiero traerlo al s10, que opciones uso", "procedimiento": "presupuestos.importar-presupuesto-desde-excel", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el cliente me mando su presupuesto en excel con item, descripcion, unidad y metrado, como lo cargo", "procedimiento": "presupuestos.importar-presupuesto-desde-excel", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como inporto un presupuesto desde ecxel al s10", "procedimiento": "presupuestos.importar-presupuesto-desde-excel", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "importar excel", "procedimiento": "presupuestos.importar-presupuesto-desde-excel", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como defino de que fila a que fila importar", "procedimiento": "presupuestos.importar-presupuesto-desde-excel", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Indíqueme cómo identificar las columnas ITEM, DESCRIPCIÓN, UNIDAD, METRADO y PRECIO 1 al importar.", "procedimiento": "presupuestos.importar-presupuesto-desde-excel", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como le asigno analisis de precios a una partida que vino de excel", "procedimiento": "presupuestos.importar-presupuesto-desde-excel", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ke ago pa reasignar la partida del catalogo a lo q importe", "procedimiento": "presupuestos.importar-presupuesto-desde-excel", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "importe las partidas de excel y no tienen analisis, como hago para darselo", "procedimiento": "presupuestos.importar-presupuesto-desde-excel", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "despues de importar como ordeno las partidas con sus titulos", "procedimiento": "presupuestos.importar-presupuesto-desde-excel", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cargar partidas de excel", "procedimiento": "presupuestos.importar-presupuesto-desde-excel", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "para que sirve la columna precio 2 al importar", "procedimiento": "presupuestos.importar-presupuesto-desde-excel", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se ordena y se generan los ítems una vez importada la información?", "procedimiento": "presupuestos.importar-presupuesto-desde-excel", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "tengo 60 partidas en excel y las quiero en el s10 sin tipearlas una por una", "procedimiento": "presupuestos.importar-presupuesto-desde-excel", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como elijo el archivo de excel al importar a la hoja del presupuesto", "procedimiento": "presupuestos.importar-presupuesto-desde-excel", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Dónde está la opción Importar hoja Excel?", "procedimiento": "presupuestos.importar-presupuesto-desde-excel", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde le doy click derecho para importar el excel", "procedimiento": "presupuestos.importar-presupuesto-desde-excel", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde ai importar hoja ecxel en el presupuesto", "procedimiento": "presupuestos.importar-presupuesto-desde-excel", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "donde veo el analisis de precios de una partida importada", "procedimiento": "presupuestos.importar-presupuesto-desde-excel", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "menu importar excel", "procedimiento": "presupuestos.importar-presupuesto-desde-excel", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "estoy en datos generales, por donde subo mi presupuesto en excel", "procedimiento": "presupuestos.importar-presupuesto-desde-excel", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "donde esta la opcion reasignar partida del catalogo", "procedimiento": "presupuestos.importar-presupuesto-desde-excel", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Cómo debe estar preparado el archivo de Excel antes de importarlo?", "procedimiento": "presupuestos.importar-presupuesto-desde-excel", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "el excel puede tener formulas o tienen que ser solo valores", "procedimiento": "presupuestos.importar-presupuesto-desde-excel", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "ke tengo q hacer con el ecxel antes de importar, lo dejo abierto", "procedimiento": "presupuestos.importar-presupuesto-desde-excel", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "que se configura antes de darle importar, filas y columnas", "procedimiento": "presupuestos.importar-presupuesto-desde-excel", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "me van a pasar un excel de un presupuesto doble moneda, que columna uso para la moneda alterna", "procedimiento": "presupuestos.importar-presupuesto-desde-excel", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "que columnas se importan y cuales hay que definir", "procedimiento": "presupuestos.importar-presupuesto-desde-excel", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "le doy importar y no me trae nada de informacion", "procedimiento": "presupuestos.importar-presupuesto-desde-excel", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "importe el excel pero las partidas salen sin analisis de precios unitarios", "procedimiento": "presupuestos.importar-presupuesto-desde-excel", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "la opcion inportar no me trae la informacion, ke me falta", "procedimiento": "presupuestos.importar-presupuesto-desde-excel", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "importar no trae nada", "procedimiento": "presupuestos.importar-presupuesto-desde-excel", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "me sale error al importar porque deje el excel abierto", "procedimiento": "presupuestos.importar-presupuesto-desde-excel", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "La importación no trae datos aunque elegí el archivo. ¿Qué parámetros faltan definir?", "procedimiento": "presupuestos.importar-presupuesto-desde-excel", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "el excel que importo tiene formulas en las celdas y los metrados no llegan", "procedimiento": "presupuestos.importar-presupuesto-desde-excel", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "¿Cómo imprimo el reporte de la hoja del presupuesto?", "procedimiento": "presupuestos.imprimir-reportes", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como saco el presupuesto a excel para mandarlo por correo", "procedimiento": "presupuestos.imprimir-reportes", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el cliente me pide el presupuesto en word, como lo exporto desde el s10", "procedimiento": "presupuestos.imprimir-reportes", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como inprimo el prespuesto en el s10", "procedimiento": "presupuestos.imprimir-reportes", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "exportar reporte", "procedimiento": "presupuestos.imprimir-reportes", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como saco el listado de recursos y precios para imprimir", "procedimiento": "presupuestos.imprimir-reportes", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Explíqueme cómo mostrar en pantalla los análisis de precios unitarios del subpresupuesto.", "procedimiento": "presupuestos.imprimir-reportes", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como elijo entre estandar interno, estandar cliente y desagregado", "procedimiento": "presupuestos.imprimir-reportes", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ke ago pa mandar el reporte en pdf o ecxel por emeil", "procedimiento": "presupuestos.imprimir-reportes", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "necesito archivar el reporte de hoy porque el sistema no lo guarda, como lo hago", "procedimiento": "presupuestos.imprimir-reportes", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como saco el resumen desagregado del presupuesto", "procedimiento": "presupuestos.imprimir-reportes", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "vista previa reporte", "procedimiento": "presupuestos.imprimir-reportes", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como imprimo directo a la impresora sin ver la vista previa", "procedimiento": "presupuestos.imprimir-reportes", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se obtiene el resumen del presupuesto estándar desde Datos Generales?", "procedimiento": "presupuestos.imprimir-reportes", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "solo quiero imprimir los recursos que usa un subpresupuesto, no los de todo el presupuesto", "procedimiento": "presupuestos.imprimir-reportes", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como saco el desagregado de precios unitarios en horizontal", "procedimiento": "presupuestos.imprimir-reportes", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Dónde se encuentra el botón para mostrar el reporte de la hoja del presupuesto?", "procedimiento": "presupuestos.imprimir-reportes", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde saco el resumen global del presupuesto", "procedimiento": "presupuestos.imprimir-reportes", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde ai la opcion exportar informe", "procedimiento": "presupuestos.imprimir-reportes", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "donde esta el reporte de recursos y precios", "procedimiento": "presupuestos.imprimir-reportes", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "boton imprimir hoja", "procedimiento": "presupuestos.imprimir-reportes", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "estoy en la hoja del presupuesto y quiero ver el reporte en pantalla, donde le doy", "procedimiento": "presupuestos.imprimir-reportes", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "donde elijo la carpeta donde se graba el archivo exportado", "procedimiento": "presupuestos.imprimir-reportes", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Qué formatos de exportación ofrece el sistema para los reportes?", "procedimiento": "presupuestos.imprimir-reportes", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que opciones de redondeo hay en la impresion de recursos", "procedimiento": "presupuestos.imprimir-reportes", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "ke diferencia ai entre estandar interno y estandar cliente", "procedimiento": "presupuestos.imprimir-reportes", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "puedo elegir a que impresora se manda el reporte o va a la predeterminada", "procedimiento": "presupuestos.imprimir-reportes", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "voy a enviar el reporte al cliente, que opciones de exportacion configuro", "procedimiento": "presupuestos.imprimir-reportes", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "el reporte de recursos de un subpresupuesto imprime todo o solo lo que usa", "procedimiento": "presupuestos.imprimir-reportes", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "no encuentro un reporte que imprimi la semana pasada", "procedimiento": "presupuestos.imprimir-reportes", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el monto del presupuesto en la hoja no cuadra con el listado de recursos", "procedimiento": "presupuestos.imprimir-reportes", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "el total de recursos sale diferente al de la hoja del prespuesto, es error", "procedimiento": "presupuestos.imprimir-reportes", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "reporte no coincide", "procedimiento": "presupuestos.imprimir-reportes", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "el s10 no me guarda los reportes que imprimo, donde quedan", "procedimiento": "presupuestos.imprimir-reportes", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "La diferencia entre la hoja y los recursos es de centavos. ¿Se debe a un redondeo?", "procedimiento": "presupuestos.imprimir-reportes", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "exporte a excel y no encuentro el archivo, no se donde se grabo", "procedimiento": "presupuestos.imprimir-reportes", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "¿De qué maneras puedo cargar el metrado de las partidas en la hoja?", "procedimiento": "presupuestos.ingresar-metrados", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como pego mis metrados desde excel a la hoja", "procedimiento": "presupuestos.ingresar-metrados", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "tengo todos los metrados en una planilla excel y no quiero tipearlos uno por uno, como los paso", "procedimiento": "presupuestos.ingresar-metrados", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como binculo el metrado a una selda de ecxel", "procedimiento": "presupuestos.ingresar-metrados", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "cargar metrados", "procedimiento": "presupuestos.ingresar-metrados", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como elijo el archivo, la hoja y la celda del metrado cuando lo vinculo", "procedimiento": "presupuestos.ingresar-metrados", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Indíqueme cómo usar PEGAR DE OTRAS APLICACIONES para llevar un bloque de metrados.", "procedimiento": "presupuestos.ingresar-metrados", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "que hago cuando cambio el metrado en excel para que se actualice en el presupuesto", "procedimiento": "presupuestos.ingresar-metrados", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ke ago pa desbincular el metrado de una partida", "procedimiento": "presupuestos.ingresar-metrados", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "el residente me corrigio las cantidades en la planilla y debo llevarlas al presupuesto, como las actualizo", "procedimiento": "presupuestos.ingresar-metrados", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como escribo la cantidad de una partida en la columna metrado", "procedimiento": "presupuestos.ingresar-metrados", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "vincular metrado excel", "procedimiento": "presupuestos.ingresar-metrados", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como copio un bloque de metrados del portapapeles a partir de una fila", "procedimiento": "presupuestos.ingresar-metrados", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo quito el vínculo de una partida con la celda de Excel?", "procedimiento": "presupuestos.ingresar-metrados", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "ya arme mis partidas y ahora toca meterles las cantidades, que hago", "procedimiento": "presupuestos.ingresar-metrados", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como uso procesos especiales para los metrados", "procedimiento": "presupuestos.ingresar-metrados", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Dónde se encuentra la opción VINCULAR METRADO A CELDA EXCEL?", "procedimiento": "presupuestos.ingresar-metrados", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde esta la columna metrado de la hoja", "procedimiento": "presupuestos.ingresar-metrados", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde ai procesos especiales en la hoja del prespuesto", "procedimiento": "presupuestos.ingresar-metrados", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "donde le doy click derecho para pegar de otras aplicaciones", "procedimiento": "presupuestos.ingresar-metrados", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "menu procesos especiales", "procedimiento": "presupuestos.ingresar-metrados", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "estoy en la hoja del presupuesto y quiero que el metrado se jale de excel, por donde voy", "procedimiento": "presupuestos.ingresar-metrados", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "por que opcion llevo el metrado de la celda excel a la partida", "procedimiento": "presupuestos.ingresar-metrados", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Qué debe existir en la hoja antes de ingresar los metrados?", "procedimiento": "presupuestos.ingresar-metrados", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "las partidas tienen que estar ya puestas o se pueden meter con el metrado", "procedimiento": "presupuestos.ingresar-metrados", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "ke datos pido pa vincular un metrado a excel, archivo hoja fila y columna", "procedimiento": "presupuestos.ingresar-metrados", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "que se configura para vincular el metrado a una celda y que se actualice", "procedimiento": "presupuestos.ingresar-metrados", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "voy a trabajar con la planilla de metrados en excel, como la dejo conectada con la hoja", "procedimiento": "presupuestos.ingresar-metrados", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "puedo tener metrados escritos y otros vinculados en la misma hoja", "procedimiento": "presupuestos.ingresar-metrados", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "procesos especiales trae el metrado de excel bloqueado en una partida", "procedimiento": "presupuestos.ingresar-metrados", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "desvincule una partida y ya no puedo traer el metrado de excel", "procedimiento": "presupuestos.ingresar-metrados", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "pego los metrados desde ecxel y no se pegan", "procedimiento": "presupuestos.ingresar-metrados", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "metrado no pega", "procedimiento": "presupuestos.ingresar-metrados", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "al procesar me dice que faltan metrados", "procedimiento": "presupuestos.ingresar-metrados", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "Al procesar el presupuesto el sistema solicita un metrado faltante. ¿Qué partida lo tiene vacío?", "procedimiento": "presupuestos.ingresar-metrados", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "cambie el numero en el excel pero en la hoja del presupuesto sigue el metrado viejo", "procedimiento": "presupuestos.ingresar-metrados", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "¿Cómo proceso el presupuesto para que el sistema verifique metrados y precios?", "procedimiento": "presupuestos.procesar-presupuesto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como proceso el presupuesto con f9", "procedimiento": "presupuestos.procesar-presupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ya termine de poner partidas y metrados, y ahora que hago para que salga el total", "procedimiento": "presupuestos.procesar-presupuesto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como se proseza el prespuesto en s10", "procedimiento": "presupuestos.procesar-presupuesto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "procesar presupuesto", "procedimiento": "presupuestos.procesar-presupuesto", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como ingreso los precios de los recursos que faltan", "procedimiento": "presupuestos.procesar-presupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Explíqueme cómo ingresar los precios faltantes en la ventana Recursos y precios.", "procedimiento": "presupuestos.procesar-presupuesto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "despues de poner los precios que faltan como vuelvo a procesar", "procedimiento": "presupuestos.procesar-presupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ke ago cuando el sistema pregunta si ingreso los presios faltantes", "procedimiento": "presupuestos.procesar-presupuesto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "me aparece una ventana de procesamiento con la opcion continuar, que elijo", "procedimiento": "presupuestos.procesar-presupuesto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como proceso solo un subpresupuesto", "procedimiento": "presupuestos.procesar-presupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "f9 hoja", "procedimiento": "presupuestos.procesar-presupuesto", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como pongo precio a los insumos antes de procesar", "procedimiento": "presupuestos.procesar-presupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Qué hago al cerrar la ventana de Recursos y precios para terminar el procesamiento?", "procedimiento": "presupuestos.procesar-presupuesto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "necesito que se pinte el subpresupuesto en el arbol, cual es el proceso", "procedimiento": "presupuestos.procesar-presupuesto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como cargo precios de materiales y mano de obra que no tienen precio", "procedimiento": "presupuestos.procesar-presupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Dónde se procesa el presupuesto?", "procedimiento": "presupuestos.procesar-presupuesto", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde esta el boton de procesar en la barra de botones", "procedimiento": "presupuestos.procesar-presupuesto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde ai la ventana recursos y presios", "procedimiento": "presupuestos.procesar-presupuesto", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "donde se abre la configuracion de procesamiento con shift f1", "procedimiento": "presupuestos.procesar-presupuesto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "boton procesar", "procedimiento": "presupuestos.procesar-presupuesto", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "estoy en la hoja del presupuesto, de donde saco la ventana para poner precios a los recursos", "procedimiento": "presupuestos.procesar-presupuesto", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "donde veo el color del subpresupuesto en el arbol despues de procesar", "procedimiento": "presupuestos.procesar-presupuesto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Qué opciones de verificación se configuran para el procesamiento?", "procedimiento": "presupuestos.procesar-presupuesto", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "donde activo verifica metrados y verifica precios recursos", "procedimiento": "presupuestos.procesar-presupuesto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "quien puede cambiar las opciones de procesamiento, solo el sa", "procedimiento": "presupuestos.procesar-presupuesto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "ke es verifica analisis de presios unitarios y como lo activo", "procedimiento": "presupuestos.procesar-presupuesto", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "quiero que el procesamiento me avise si falta algun precio, que dejo marcado", "procedimiento": "presupuestos.procesar-presupuesto", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "que tiene que estar registrado en la hoja antes de procesar", "procedimiento": "presupuestos.procesar-presupuesto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "cuando le doy f9 sale un aviso con un requerimiento y se queda ahi", "procedimiento": "presupuestos.procesar-presupuesto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "cambie la fecha del presupuesto y ahora los precios no corresponden", "procedimiento": "presupuestos.procesar-presupuesto", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "despues de procesar el subpresupuesto no sale en rojo", "procedimiento": "presupuestos.procesar-presupuesto", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "no procesa", "procedimiento": "presupuestos.procesar-presupuesto", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "me dice que faltan aportes o precios de recursos al procesar", "procedimiento": "presupuestos.procesar-presupuesto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "Los precios de los recursos no coinciden tras modificar el lugar del presupuesto. ¿Cómo se explica?", "procedimiento": "presupuestos.procesar-presupuesto", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "cerre la ventana de recursos y precios y el presupuesto sigue sin total", "procedimiento": "presupuestos.procesar-presupuesto", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "¿Cómo registro una partida nueva en el catálogo de partidas?", "procedimiento": "presupuestos.registrar-partida-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como doy de alta una partida de mi empresa con sus recursos", "procedimiento": "presupuestos.registrar-partida-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "mi partida no existe en el catalogo de partidas y tengo que registrarla yo", "procedimiento": "presupuestos.registrar-partida-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como rejistro una partida nueba en el catalogo", "procedimiento": "presupuestos.registrar-partida-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "crear partida", "procedimiento": "presupuestos.registrar-partida-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como creo un grupo nuevo para las partidas de mi empresa", "procedimiento": "presupuestos.registrar-partida-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Explíqueme cómo registrar el rendimiento de mano de obra y de equipo de la partida.", "procedimiento": "presupuestos.registrar-partida-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como registro los recursos de una partida, cuadrilla y cantidades", "procedimiento": "presupuestos.registrar-partida-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ke ago pa registrar la cuadrilla unitaria de la partida", "procedimiento": "presupuestos.registrar-partida-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "me pidieron agregar encofrado caravista a nuestro catalogo con su rendimiento, como se hace", "procedimiento": "presupuestos.registrar-partida-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como elijo la unidad y la especialidad de la partida nueva", "procedimiento": "presupuestos.registrar-partida-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "registrar rendimiento", "procedimiento": "presupuestos.registrar-partida-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como pongo el codigo de la partida, lo hago yo o lo genera el sistema", "procedimiento": "presupuestos.registrar-partida-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se diferencia el grupo Partida del grupo Estimada al registrar?", "procedimiento": "presupuestos.registrar-partida-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "ya cree la partida y ahora falta su analisis, por donde sigo", "procedimiento": "presupuestos.registrar-partida-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como grabo la partida y cierro la ventana", "procedimiento": "presupuestos.registrar-partida-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Dónde se encuentra el Catálogo de Partidas?", "procedimiento": "presupuestos.registrar-partida-en-el-catalogo", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde esta la ventana donde pongo descripcion y unidad de la partida", "procedimiento": "presupuestos.registrar-partida-en-el-catalogo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde ai el campo especialidad de la partida", "procedimiento": "presupuestos.registrar-partida-en-el-catalogo", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "donde registro la jornada diaria de la partida", "procedimiento": "presupuestos.registrar-partida-en-el-catalogo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "catalogo de partidas", "procedimiento": "presupuestos.registrar-partida-en-el-catalogo", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "estoy en el arbol del catalogo, en que nivel pongo la partida", "procedimiento": "presupuestos.registrar-partida-en-el-catalogo", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "donde pongo el rendimiento de la partida", "procedimiento": "presupuestos.registrar-partida-en-el-catalogo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Qué estructura de código usa una partida del catálogo?", "procedimiento": "presupuestos.registrar-partida-en-el-catalogo", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "cuantas horas asume por defecto la jornada diaria de una partida", "procedimiento": "presupuestos.registrar-partida-en-el-catalogo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "ke es el campo peso de la partida, siempre se llena", "procedimiento": "presupuestos.registrar-partida-en-el-catalogo", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "que tipo se elige para una partida nueva", "procedimiento": "presupuestos.registrar-partida-en-el-catalogo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "quiero que mis partidas queden ordenadas, que recomienda s10 para el catalogo de la empresa", "procedimiento": "presupuestos.registrar-partida-en-el-catalogo", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "que largo maximo tiene la descripcion y para que sirve la descripcion alterna", "procedimiento": "presupuestos.registrar-partida-en-el-catalogo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "la cuadrilla unitaria de la partida no se deja grabar", "procedimiento": "presupuestos.registrar-partida-en-el-catalogo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "cree la partida y su estado dice sin analisis, esta bien", "procedimiento": "presupuestos.registrar-partida-en-el-catalogo", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "la cuadrilla unitaria no se graba, creo q me falta el rendimiento", "procedimiento": "presupuestos.registrar-partida-en-el-catalogo", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "cuadrilla bloqueada", "procedimiento": "presupuestos.registrar-partida-en-el-catalogo", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "la especialidad que quiero asignar no aparece en la lista", "procedimiento": "presupuestos.registrar-partida-en-el-catalogo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "La partida nueva figura como Sin análisis tras registrarla. ¿Qué debo completar?", "procedimiento": "presupuestos.registrar-partida-en-el-catalogo", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "puse precios en los recursos de la partida del catalogo y no los toma, que paso", "procedimiento": "presupuestos.registrar-partida-en-el-catalogo", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "¿Cómo se da de alta un presupuesto nuevo desde Datos Generales?", "procedimiento": "presupuestos.registrar-presupuesto-nuevo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como creo un presupuesto desde cero en el s10", "procedimiento": "presupuestos.registrar-presupuesto-nuevo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "me asignaron una obra vial y tengo que abrir su presupuesto con cliente, plazo y moneda, por donde empiezo", "procedimiento": "presupuestos.registrar-presupuesto-nuevo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como rejistro un prespuesto nuebo", "procedimiento": "presupuestos.registrar-presupuesto-nuevo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "nuevo presupuesto", "procedimiento": "presupuestos.registrar-presupuesto-nuevo", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como creo el grupo donde va mi presupuesto si no existe", "procedimiento": "presupuestos.registrar-presupuesto-nuevo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Indíqueme cómo registrar el plazo, la jornada diaria y la moneda del presupuesto.", "procedimiento": "presupuestos.registrar-presupuesto-nuevo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como elijo el distrito donde se ejecuta la obra", "procedimiento": "presupuestos.registrar-presupuesto-nuevo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ke ago pa grabar y serrar la ventana presupuesto", "procedimiento": "presupuestos.registrar-presupuesto-nuevo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "ya cree el presupuesto y el sistema me puso un subpresupuesto con el mismo nombre, que hago con eso", "procedimiento": "presupuestos.registrar-presupuesto-nuevo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como pongo la fecha del presupuesto para que tome precios de esa fecha", "procedimiento": "presupuestos.registrar-presupuesto-nuevo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "alta de presupuesto", "procedimiento": "presupuestos.registrar-presupuesto-nuevo", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como marco doble moneda en el presupuesto", "procedimiento": "presupuestos.registrar-presupuesto-nuevo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se agrega un segundo subpresupuesto, por ejemplo Gastos generales?", "procedimiento": "presupuestos.registrar-presupuesto-nuevo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "tengo la ficha de la obra y quiero dejarla cargada en el sistema, como la registro", "procedimiento": "presupuestos.registrar-presupuesto-nuevo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como pasa el presupuesto al arbol de datos generales despues de grabarlo", "procedimiento": "presupuestos.registrar-presupuesto-nuevo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Dónde se encuentra el Catálogo de Presupuestos?", "procedimiento": "presupuestos.registrar-presupuesto-nuevo", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "por donde le doy nuevo al arbol de presupuestos", "procedimiento": "presupuestos.registrar-presupuesto-nuevo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde ai el boton de ubicacion geografica del presupuesto", "procedimiento": "presupuestos.registrar-presupuesto-nuevo", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "donde esta datos adicionales del presupuesto", "procedimiento": "presupuestos.registrar-presupuesto-nuevo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "escenario datos generales", "procedimiento": "presupuestos.registrar-presupuesto-nuevo", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "abri el s10 y no se donde registrar la obra nueva, que menu uso", "procedimiento": "presupuestos.registrar-presupuesto-nuevo", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "donde pongo la descripcion y el cliente del presupuesto", "procedimiento": "presupuestos.registrar-presupuesto-nuevo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Qué debe estar registrado antes de crear un presupuesto nuevo?", "procedimiento": "presupuestos.registrar-presupuesto-nuevo", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "donde configuro que mi presupuesto use formula polinomica", "procedimiento": "presupuestos.registrar-presupuesto-nuevo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "ke es la jornada diaria del presupuesto y para q sirve", "procedimiento": "presupuestos.registrar-presupuesto-nuevo", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "el tipo de obra tengo que registrarlo antes o se crea ahi mismo", "procedimiento": "presupuestos.registrar-presupuesto-nuevo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "mi presupuesto sera en soles y dolares a la vez, que opcion configuro", "procedimiento": "presupuestos.registrar-presupuesto-nuevo", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "quien registra a los usuarios que pueden crear presupuestos", "procedimiento": "presupuestos.registrar-presupuesto-nuevo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "busco a mi cliente en la ventana del presupuesto y no esta en la lista", "procedimiento": "presupuestos.registrar-presupuesto-nuevo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "pase el presupuesto meta a ms project y sale mal", "procedimiento": "presupuestos.registrar-presupuesto-nuevo", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "el presupuesto meta no pasa bien al ms proyect", "procedimiento": "presupuestos.registrar-presupuesto-nuevo", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "cliente no sale", "procedimiento": "presupuestos.registrar-presupuesto-nuevo", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "ms project no acepta mi presupuesto por la jornada", "procedimiento": "presupuestos.registrar-presupuesto-nuevo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "No encuentro al cliente al registrar el presupuesto. ¿Qué debo hacer?", "procedimiento": "presupuestos.registrar-presupuesto-nuevo", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "el tipo de obra que quiero elegir no sale en el catalogo", "procedimiento": "presupuestos.registrar-presupuesto-nuevo", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "¿Cuál es la forma tradicional de armar la hoja: primero títulos y luego sus partidas?", "procedimiento": "presupuestos.registrar-titulos-y-partidas", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como armo la hoja del presupuesto poniendo titulos y partidas", "procedimiento": "presupuestos.registrar-titulos-y-partidas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ya tengo el presupuesto creado y ahora toca meter las partidas de la obra, como sigo", "procedimiento": "presupuestos.registrar-titulos-y-partidas", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como adiciono un titulo y despues las partidas en la hoja", "procedimiento": "presupuestos.registrar-titulos-y-partidas", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "adicionar partida", "procedimiento": "presupuestos.registrar-titulos-y-partidas", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como agrego una partida debajo de un titulo", "procedimiento": "presupuestos.registrar-titulos-y-partidas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Explíqueme cómo elegir las partidas del catálogo con doble clic para insertarlas en la hoja.", "procedimiento": "presupuestos.registrar-titulos-y-partidas", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como jerarquizo los titulos con la sangria", "procedimiento": "presupuestos.registrar-titulos-y-partidas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ke ago pa jenerar los items despues de poner partidas", "procedimiento": "presupuestos.registrar-titulos-y-partidas", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "quiero ocultar el analisis de precios de abajo para ver mejor la hoja, como se hace", "procedimiento": "presupuestos.registrar-titulos-y-partidas", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como traslado los titulos seleccionados a la hoja", "procedimiento": "presupuestos.registrar-titulos-y-partidas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "adicionar titulo", "procedimiento": "presupuestos.registrar-titulos-y-partidas", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como elijo varios titulos del catalogo uno por uno", "procedimiento": "presupuestos.registrar-titulos-y-partidas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se despliega el árbol del catálogo de partidas para elegir las de un grupo, por ejemplo ENCOFRADO?", "procedimiento": "presupuestos.registrar-titulos-y-partidas", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "primero quiero los titulos como obras provisionales y estructuras y luego sus partidas, como lo hago", "procedimiento": "presupuestos.registrar-titulos-y-partidas", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como inserto una partida a un titulo que ya esta en la hoja", "procedimiento": "presupuestos.registrar-titulos-y-partidas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Dónde se encuentra la opción Adicionar Título?", "procedimiento": "presupuestos.registrar-titulos-y-partidas", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde le doy click derecho para adicionar partida", "procedimiento": "presupuestos.registrar-titulos-y-partidas", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde ai el catalogo de titulos", "procedimiento": "presupuestos.registrar-titulos-y-partidas", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "donde esta el boton de sangria", "procedimiento": "presupuestos.registrar-titulos-y-partidas", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "hoja del presupuesto", "procedimiento": "presupuestos.registrar-titulos-y-partidas", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "estoy en datos generales, a que escenario voy para meter las partidas", "procedimiento": "presupuestos.registrar-titulos-y-partidas", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "donde veo los registros seleccionados del catalogo de titulos", "procedimiento": "presupuestos.registrar-titulos-y-partidas", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Qué debe estar registrado antes de adicionar partidas a la hoja?", "procedimiento": "presupuestos.registrar-titulos-y-partidas", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "las partidas tienen que existir antes en el catalogo", "procedimiento": "presupuestos.registrar-titulos-y-partidas", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "ke ago antes de la hoja, el presupuesto y subpresupuesto ya deben estar creados", "procedimiento": "presupuestos.registrar-titulos-y-partidas", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "puedo ocultar la hoja de apus de abajo, donde se cambia", "procedimiento": "presupuestos.registrar-titulos-y-partidas", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "voy a armar la hoja de un presupuesto nuevo, que debo tener listo", "procedimiento": "presupuestos.registrar-titulos-y-partidas", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "como cambio la vista para que no se vea el analisis de precios", "procedimiento": "presupuestos.registrar-titulos-y-partidas", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "la partida que busco no aparece en el catalogo", "procedimiento": "presupuestos.registrar-titulos-y-partidas", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "agregue partidas y los items no se numeran", "procedimiento": "presupuestos.registrar-titulos-y-partidas", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no me sale la partida en el catalogo cuando la ago adicionar", "procedimiento": "presupuestos.registrar-titulos-y-partidas", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "partida no sale", "procedimiento": "presupuestos.registrar-titulos-y-partidas", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "le doy adicionar partida y no pasa nada", "procedimiento": "presupuestos.registrar-titulos-y-partidas", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "La partida deseada no figura al elegir del catálogo de partidas. ¿Qué debo hacer?", "procedimiento": "presupuestos.registrar-titulos-y-partidas", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "puse los titulos pero se ven todos al mismo nivel, no quedan jerarquizados", "procedimiento": "presupuestos.registrar-titulos-y-partidas", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "¿Cómo registro a un usuario nuevo del módulo de Presupuestos?", "procedimiento": "presupuestos.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como creo un usuario para que entre al s10", "procedimiento": "presupuestos.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "entro un asistente nuevo al area y necesito darle acceso al modulo, como lo hago", "procedimiento": "presupuestos.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como rejistro un usuario nuebo en presupuestos", "procedimiento": "presupuestos.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "crear usuario", "procedimiento": "presupuestos.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como registro los subgrupos personal tecnico y administrativo", "procedimiento": "presupuestos.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Indíqueme cómo asignar una categoría al usuario, por ejemplo Especialista o Jefe de grupo.", "procedimiento": "presupuestos.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como le doy acceso a los escenarios que puede usar", "procedimiento": "presupuestos.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ke ago pa darle permiso a los catalogos a un usuario", "procedimiento": "presupuestos.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "quiero que una persona solo pueda ver y no modificar los catalogos, como lo asigno", "procedimiento": "presupuestos.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como elijo al auditor de la base de datos", "procedimiento": "presupuestos.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "asignar accesos", "procedimiento": "presupuestos.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como pongo usuario y clave a una persona", "procedimiento": "presupuestos.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se registra el nombre de la empresa constructora en el mantenimiento de usuarios?", "procedimiento": "presupuestos.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el administrador de sistemas me pidio dar de alta al nuevo ingeniero de costos, pasos", "procedimiento": "presupuestos.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como borro los atributos de un usuario con la categoria ninguno", "procedimiento": "presupuestos.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Por qué escenario de Utilitarios se administra a los usuarios?", "procedimiento": "presupuestos.registrar-usuarios", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en que menu entro para crear usuarios", "procedimiento": "presupuestos.registrar-usuarios", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde ai utilitarios en el s10", "procedimiento": "presupuestos.registrar-usuarios", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "donde marco los escenarios que puede ver cada usuario", "procedimiento": "presupuestos.registrar-usuarios", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "menu utilitarios", "procedimiento": "presupuestos.registrar-usuarios", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "soy el administrador y no ubico donde dar accesos al personal, por donde voy", "procedimiento": "presupuestos.registrar-usuarios", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "donde esta nuevo usuario sobre el subgrupo", "procedimiento": "presupuestos.registrar-usuarios", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Qué usuario puede registrar a otros usuarios en el módulo?", "procedimiento": "presupuestos.registrar-usuarios", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "de donde se elige a la persona, hay que tenerla en socio de negocio", "procedimiento": "presupuestos.registrar-usuarios", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "ke categorias de usuario ai y cual borra los atributos", "procedimiento": "presupuestos.registrar-usuarios", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "que permisos puedo dar en los catalogos, nuevo, modificar, eliminar", "procedimiento": "presupuestos.registrar-usuarios", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "tengo 3 auditores en la base, cuantos puedo asignar como maximo", "procedimiento": "presupuestos.registrar-usuarios", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "el acceso al modulo se da desde cualquier modulo o solo desde el que estoy", "procedimiento": "presupuestos.registrar-usuarios", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "otro ingeniero abre el s10 y el presupuesto que cargue yo no le aparece", "procedimiento": "presupuestos.registrar-usuarios", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "quiero borrar un registro de un catalogo y no me deja", "procedimiento": "presupuestos.registrar-usuarios", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no me dexa eliminar un rejistro del catalogo", "procedimiento": "presupuestos.registrar-usuarios", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "usuario no ve presupuesto", "procedimiento": "presupuestos.registrar-usuarios", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "la persona que quiero registrar no sale al elegirla", "procedimiento": "presupuestos.registrar-usuarios", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "Otro usuario no puede abrir un presupuesto que yo creé. ¿Qué falta?", "procedimiento": "presupuestos.registrar-usuarios", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "cree el usuario pero al entrar no le sale ningun escenario", "procedimiento": "presupuestos.registrar-usuarios", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}

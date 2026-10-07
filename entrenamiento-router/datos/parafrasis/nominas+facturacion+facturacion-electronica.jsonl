@@ -1,0 +1,504 @@
+{"texto": "como procesar la planilla de obreros del periodo, ya tengo los tareos cargados", "procedimiento": "nominas.calcular-la-nomina", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Necesito calcular la nómina del periodo, ¿cuál es la secuencia de escenarios que debo seguir?", "procedimiento": "nominas.calcular-la-nomina", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "pasos pa calcular la planilla de la semana en nominas", "procedimiento": "nominas.calcular-la-nomina", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como acer el calculo de nomina en el s10 xq no se por donde empezar", "procedimiento": "nominas.calcular-la-nomina", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "calculo planilla s10", "procedimiento": "nominas.calcular-la-nomina", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "ya cerre el tareo y las papeletas de la semana, que sigue para sacar el pago de los obreros", "procedimiento": "nominas.calcular-la-nomina", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "para que sirve y como genero el resumen por dia antes de procesar", "procedimiento": "nominas.calcular-la-nomina", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como se verifica q las papeletas se aplicaron bien antes de calcular", "procedimiento": "nominas.calcular-la-nomina", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se calcula el impuesto a la renta de quinta categoría una vez procesada la planilla estándar?", "procedimiento": "nominas.calcular-la-nomina", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como se ase el impuesto de quinta de mis obreros", "procedimiento": "nominas.calcular-la-nomina", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "elijo tipo de nomina, periodo y proceso y despues que boton toco para procesar", "procedimiento": "nominas.calcular-la-nomina", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "estoy en cálculo de nóminas con el multiproyecto, ¿qué proceso elijo primero?", "procedimiento": "nominas.calcular-la-nomina", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "procesar planilla obreros", "procedimiento": "nominas.calcular-la-nomina", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "ya procese, como reviso los conceptos que le salieron a cada obrero", "procedimiento": "nominas.calcular-la-nomina", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como actualizo el rresumen de conceptos x periodo", "procedimiento": "nominas.calcular-la-nomina", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "quiero eliminar el resumen de conceptos q genere antes y volver a generarlo", "procedimiento": "nominas.calcular-la-nomina", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "en que escenario genero el resumen de conceptos por dia", "procedimiento": "nominas.calcular-la-nomina", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Dónde se encuentra Cálculo de Nóminas y dentro de qué proyecto?", "procedimiento": "nominas.calcular-la-nomina", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "dnd veo la nomina detallada de un trabajador", "procedimiento": "nominas.calcular-la-nomina", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "por que menu entro a resumen de conceptos por periodo", "procedimiento": "nominas.calcular-la-nomina", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "nomina detallada donde", "procedimiento": "nominas.calcular-la-nomina", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "estoy en el multiproyecto y no encuentro donde se procesa la renta de quinta", "procedimiento": "nominas.calcular-la-nomina", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "donde se ve lo que historicamente se calculo por persona", "procedimiento": "nominas.calcular-la-nomina", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "que tipo de proceso debo elegir en calculo de nominas para la renta de quinta", "procedimiento": "nominas.calcular-la-nomina", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué datos manuales debo registrar antes de procesar la nómina?", "procedimiento": "nominas.calcular-la-nomina", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "como se elige el tipo de nomina y el periodo antes de calcular", "procedimiento": "nominas.calcular-la-nomina", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que debo dejar listo antes de generar el resumen de conceptos por dia", "procedimiento": "nominas.calcular-la-nomina", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "los datos por periodo y por socio de negocio se cargan antes o despues de procesar la nomia", "procedimiento": "nominas.calcular-la-nomina", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "q parametros pido en calculo de nominas para obreros con beneficios sociales", "procedimiento": "nominas.calcular-la-nomina", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "meti una papeleta despues de generar el resumen y en el calculo no aparece", "procedimiento": "nominas.calcular-la-nomina", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "calcule quinta antes del estandar y me salio en cero, por que", "procedimiento": "nominas.calcular-la-nomina", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "tengo que volver a calcular una nomina de un periodo ya cerrado, se puede", "procedimiento": "nominas.calcular-la-nomina", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "reprocesar nomina cerrada", "procedimiento": "nominas.calcular-la-nomina", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "las papeletas no se aplicaron en el resumen por dia, como lo verifico", "procedimiento": "nominas.calcular-la-nomina", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "modifique el tareo y la nomina sigue con los valores viejos", "procedimiento": "nominas.calcular-la-nomina", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "ya habia procesado y cambie un dato por periodo, como ago pa que lo tome", "procedimiento": "nominas.calcular-la-nomina", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "quiero pasar la lista de personal que tengo en excel al catalogo general de socios", "procedimiento": "nominas.importar-socios-de-negocio-desde-excel", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo realizo la importación masiva de personal desde una hoja de cálculo en el módulo de Nóminas?", "procedimiento": "nominas.importar-socios-de-negocio-desde-excel", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como inportar obreros de un excel a nominas", "procedimiento": "nominas.importar-socios-de-negocio-desde-excel", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "excel socios negocio importar", "procedimiento": "nominas.importar-socios-de-negocio-desde-excel", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "me mandaron la relacion de empleados nuevos en un excel de rrhh, como los cargo al s10", "procedimiento": "nominas.importar-socios-de-negocio-desde-excel", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como emparejo las columnas del excel con los campos del s10 al importar", "procedimiento": "nominas.importar-socios-de-negocio-desde-excel", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como elijo desde q fila a q fila importar del excel", "procedimiento": "nominas.importar-socios-de-negocio-desde-excel", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Qué pasos sigo para importar empleados, y no obreros, desde Excel?", "procedimiento": "nominas.importar-socios-de-negocio-desde-excel", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como importo sin q se me crucen los datos de los q ya estan registrados", "procedimiento": "nominas.importar-socios-de-negocio-desde-excel", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "paso a paso la importacion de socios de negocio con hoja de calculo", "procedimiento": "nominas.importar-socios-de-negocio-desde-excel", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "carga masiva socios de negocio", "procedimiento": "nominas.importar-socios-de-negocio-desde-excel", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "ya tengo el excel listo con dni y nombres, ¿qué hago ahora en el s10?", "procedimiento": "nominas.importar-socios-de-negocio-desde-excel", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como indico q los importados son obreros y no empleados", "procedimiento": "nominas.importar-socios-de-negocio-desde-excel", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como le digo al sistema en que columna esta el apellido paterno al importar", "procedimiento": "nominas.importar-socios-de-negocio-desde-excel", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cargar personal d un excel al catalogo ke hago", "procedimiento": "nominas.importar-socios-de-negocio-desde-excel", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como ejecuto la importacion despues de configurar las columnas", "procedimiento": "nominas.importar-socios-de-negocio-desde-excel", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "por donde se entra a importar socios de negocio desde excel", "procedimiento": "nominas.importar-socios-de-negocio-desde-excel", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "la importacion de excel se hace desde catalogos? en que opcion", "procedimiento": "nominas.importar-socios-de-negocio-desde-excel", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿De dónde sale la plantilla para importar al personal? ¿la trae el sistema?", "procedimiento": "nominas.importar-socios-de-negocio-desde-excel", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "dnd esta el icono de importar excel en socios de negocio", "procedimiento": "nominas.importar-socios-de-negocio-desde-excel", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "importacion excel nominas donde", "procedimiento": "nominas.importar-socios-de-negocio-desde-excel", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "estoy en el catalogo de socios y no se donde se abre la ventana para elegir el archivo excel", "procedimiento": "nominas.importar-socios-de-negocio-desde-excel", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "en que ventana elijo el rango de filas del excel", "procedimiento": "nominas.importar-socios-de-negocio-desde-excel", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Qué debe tener el archivo de Excel antes de importar a los trabajadores?", "procedimiento": "nominas.importar-socios-de-negocio-desde-excel", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "el archivo excel donde lo debo dejar para que el sistema lo encuentre", "procedimiento": "nominas.importar-socios-de-negocio-desde-excel", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "para que sirve la casilla actualiza los datos existentes y cuando la activo", "procedimiento": "nominas.importar-socios-de-negocio-desde-excel", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que tipo de socio configuro al importar, 03 o 04", "procedimiento": "nominas.importar-socios-de-negocio-desde-excel", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q columnas del excel tengo q asociar a los campos del sistema", "procedimiento": "nominas.importar-socios-de-negocio-desde-excel", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "la plantilla de excel la armo yo o se la pido a alguien", "procedimiento": "nominas.importar-socios-de-negocio-desde-excel", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "el excel lo tengo abierto y no me deja importarlo", "procedimiento": "nominas.importar-socios-de-negocio-desde-excel", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no encuentra mi archivo excel al importar, lo deje en mi escritorio", "procedimiento": "nominas.importar-socios-de-negocio-desde-excel", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "se cruzaron los datos de trabajadores al importar el excel", "procedimiento": "nominas.importar-socios-de-negocio-desde-excel", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "al importar socios me duplica a los que ya estaban, que paso", "procedimiento": "nominas.importar-socios-de-negocio-desde-excel", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "importo y no veo a los obreros en el arbol, creo que no puse el tipo", "procedimiento": "nominas.importar-socios-de-negocio-desde-excel", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "la importacion de excel no corre, se me olvido unir las columnas", "procedimiento": "nominas.importar-socios-de-negocio-desde-excel", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "el excel esta en mi pc y el s10 corre en el servidor, no lo agarra", "procedimiento": "nominas.importar-socios-de-negocio-desde-excel", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "como hago para imprimir la boleta de un solo trabajador", "procedimiento": "nominas.imprimir-boletas-de-pago", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se prepara el tipo de boleta y el periodo antes de visualizar las boletas?", "procedimiento": "nominas.imprimir-boletas-de-pago", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como inprimo las boletas de tdos los trabajadores del periodo", "procedimiento": "nominas.imprimir-boletas-de-pago", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "sacar boletas s10", "procedimiento": "nominas.imprimir-boletas-de-pago", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "los obreros reclaman su boleta de la semana, que hago en el s10 para entregarla", "procedimiento": "nominas.imprimir-boletas-de-pago", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como pongo q salgan dos boletas por hoja para ahorrar papel", "procedimiento": "nominas.imprimir-boletas-de-pago", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "quiero imprimir todas las boletas juntas en una sola hoja, una vez cada una", "procedimiento": "nominas.imprimir-boletas-de-pago", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como creo la boleta de liquidacion para un trabajador que se va", "procedimiento": "nominas.imprimir-boletas-de-pago", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo ago un tipo de boleta distinto al de pago", "procedimiento": "nominas.imprimir-boletas-de-pago", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como agrego el periodo de la semana a las boletas", "procedimiento": "nominas.imprimir-boletas-de-pago", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿De qué manera se visualiza la boleta de pago detallada de un trabajador en particular?", "procedimiento": "nominas.imprimir-boletas-de-pago", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como marco solo a algunos trabajadores para mandar a imprimir su boleta", "procedimiento": "nominas.imprimir-boletas-de-pago", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ya procesamos la nomina, ahora como saco las boletas para repartir", "procedimiento": "nominas.imprimir-boletas-de-pago", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "historial impresion boletas", "procedimiento": "nominas.imprimir-boletas-de-pago", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como veo quien imprimio la boleta de un trabajador y cuando", "procedimiento": "nominas.imprimir-boletas-de-pago", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como se ase la vista preliminar de las boletas", "procedimiento": "nominas.imprimir-boletas-de-pago", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "donde esta preparacion de boletas", "procedimiento": "nominas.imprimir-boletas-de-pago", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "por que menu llego a boletas de pago, informes?", "procedimiento": "nominas.imprimir-boletas-de-pago", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd veo el historial de impresiones de un trabajador", "procedimiento": "nominas.imprimir-boletas-de-pago", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "boletas de pago ruta", "procedimiento": "nominas.imprimir-boletas-de-pago", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "tengo abierto el multiproyecto y no ubico donde preparar las boletas", "procedimiento": "nominas.imprimir-boletas-de-pago", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "en que opcion del clic derecho esta ver boleta de pago", "procedimiento": "nominas.imprimir-boletas-de-pago", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Dónde elijo si la boleta sale en modo simple, doble o múltiple?", "procedimiento": "nominas.imprimir-boletas-de-pago", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "que datos lleva un tipo de boleta nuevo", "procedimiento": "nominas.imprimir-boletas-de-pago", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como configuro que la boleta salga con una observacion al pie", "procedimiento": "nominas.imprimir-boletas-de-pago", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Cómo defino el formato de impresión de la boleta?", "procedimiento": "nominas.imprimir-boletas-de-pago", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "q procesos activo al crear el tipo de boleta", "procedimiento": "nominas.imprimir-boletas-de-pago", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "para que sirve el rango de periodos en el tipo de boleta", "procedimiento": "nominas.imprimir-boletas-de-pago", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que conceptos elijo si la boleta es de liquidacion", "procedimiento": "nominas.imprimir-boletas-de-pago", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "entre a Informes y Boletas de Pago y no hay trabajadores listados, que me falto", "procedimiento": "nominas.imprimir-boletas-de-pago", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no sale mi periodo en el combo de boletas de pago", "procedimiento": "nominas.imprimir-boletas-de-pago", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "las boletas no aparecen para el periodo nuevo, creo q no lo agregue en preparacion", "procedimiento": "nominas.imprimir-boletas-de-pago", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "solo me sale la boleta de un trabajador en la vista preliminar y no la de todos", "procedimiento": "nominas.imprimir-boletas-de-pago", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "la boleta de liquidacion no me muestra los conceptos de liquidacion", "procedimiento": "nominas.imprimir-boletas-de-pago", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me deja ver la boleta de pago de un trabajador con clic derecho", "procedimiento": "nominas.imprimir-boletas-de-pago", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "Preparé el tipo de boleta pero sigue sin visualizarse; ¿falta agregar el periodo?", "procedimiento": "nominas.imprimir-boletas-de-pago", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "como registro las horas de mis obreros de la semana usando excel", "procedimiento": "nominas.registrar-tareo-estandar", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cuál es el procedimiento para llenar el tareo del proyecto en la hoja de Excel y devolverlo al sistema?", "procedimiento": "nominas.registrar-tareo-estandar", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como yeno el tareo en excel de los obreros", "procedimiento": "nominas.registrar-tareo-estandar", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "tareo estandar excel", "procedimiento": "nominas.registrar-tareo-estandar", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "tengo un solo proyecto y quiero pasar las horas de la semana de la cuadrilla al sistema", "procedimiento": "nominas.registrar-tareo-estandar", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como pongo horas extras al 100 en el tareo", "procedimiento": "nominas.registrar-tareo-estandar", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como registro un descanso medico en el tareo", "procedimiento": "nominas.registrar-tareo-estandar", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "si un obrero trabaja en dos partidas el mismo dia como lo cargo", "procedimiento": "nominas.registrar-tareo-estandar", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como escojo la partida d control pa cada obrero en el tareo", "procedimiento": "nominas.registrar-tareo-estandar", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como guardo el excel del tareo y lo traigo de vuelta al s10", "procedimiento": "nominas.registrar-tareo-estandar", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo registro el sobretiempo de un obrero que además realiza otra actividad en el día?", "procedimiento": "nominas.registrar-tareo-estandar", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "es lunes y tengo que cargar el tareo de la semana pasada, por donde arranco", "procedimiento": "nominas.registrar-tareo-estandar", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "tareo semanal obreros", "procedimiento": "nominas.registrar-tareo-estandar", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "cuantas horas le puedo poner a un obrero por dia en el tareo", "procedimiento": "nominas.registrar-tareo-estandar", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como grabo lo que puse en el excel del tareo", "procedimiento": "nominas.registrar-tareo-estandar", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "importar el tareo de ecxel al s10 como es", "procedimiento": "nominas.registrar-tareo-estandar", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "en que parte del proyecto esta tareo estandar", "procedimiento": "nominas.registrar-tareo-estandar", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde esta formatos por empresa", "procedimiento": "nominas.registrar-tareo-estandar", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd hago clic derecho para exportar el tareo a excel", "procedimiento": "nominas.registrar-tareo-estandar", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "¿Dónde se importa de vuelta el tareo desde Microsoft Excel?", "procedimiento": "nominas.registrar-tareo-estandar", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "tareo estandar ruta", "procedimiento": "nominas.registrar-tareo-estandar", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "estoy en el proyecto y no veo el escenario del tareo, estara en principal?", "procedimiento": "nominas.registrar-tareo-estandar", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "donde elijo la semana que voy a tarear", "procedimiento": "nominas.registrar-tareo-estandar", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "antes de tarear por primera vez hay que dejar configurada la empresa con algo?", "procedimiento": "nominas.registrar-tareo-estandar", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que carpeta del servidor debo registrar para los tareos", "procedimiento": "nominas.registrar-tareo-estandar", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "donde se definen los tipos de hora H, E60 y E100", "procedimiento": "nominas.registrar-tareo-estandar", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué debe estar registrado respecto a los obreros para poder tarear?", "procedimiento": "nominas.registrar-tareo-estandar", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "de donde sale el maximo de horas por dia en el tareo", "procedimiento": "nominas.registrar-tareo-estandar", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q requisitos tiene el tareo estandar pa q funcione, proyecto con partidas de control?", "procedimiento": "nominas.registrar-tareo-estandar", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "mis obreros estan en dos proyectos y el tareo estandar no me sirve", "procedimiento": "nominas.registrar-tareo-estandar", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "exporto el tareo a excel y no me aparece ningun obrero, que me falta en el proyecto", "procedimiento": "nominas.registrar-tareo-estandar", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "trabajan en varios proyectos, como hago el tareo", "procedimiento": "nominas.registrar-tareo-estandar", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "las horas del obrero superan lo permitido en el tareo", "procedimiento": "nominas.registrar-tareo-estandar", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "importe el tareo de excel y no tomo las horas, creo q olvide grabar", "procedimiento": "nominas.registrar-tareo-estandar", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "el formato tareo de mano de obra no me aparece, no se lo asigne a la empresa", "procedimiento": "nominas.registrar-tareo-estandar", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no puedo elegir la partida de control para el obrero", "procedimiento": "nominas.registrar-tareo-estandar", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "contrate a una persona para planilla, como la ingreso al catalogo", "procedimiento": "nominas.registrar-trabajador-como-socio-de-negocio", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cuáles son los pasos para registrar a un empleado en el catálogo de Socio de Negocio por tipo?", "procedimiento": "nominas.registrar-trabajador-como-socio-de-negocio", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como rejistro un practicante en el s10", "procedimiento": "nominas.registrar-trabajador-como-socio-de-negocio", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "alta trabajador nominas", "procedimiento": "nominas.registrar-trabajador-como-socio-de-negocio", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como agrego la cuenta bancaria de un obrero para el pago de haberes", "procedimiento": "nominas.registrar-trabajador-como-socio-de-negocio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como pongo el tipo de cuenta, CTS o ahorros, de un trabajador", "procedimiento": "nominas.registrar-trabajador-como-socio-de-negocio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "antes de registrar a alguien como verifico q no este ya en el catalogo", "procedimiento": "nominas.registrar-trabajador-como-socio-de-negocio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como pongo el numero de essalud del trabajador", "procedimiento": "nominas.registrar-trabajador-como-socio-de-negocio", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como registro la direccion fiscal y la ubicacion de un trabajador", "procedimiento": "nominas.registrar-trabajador-como-socio-de-negocio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "me dejaron los documentos de un nuevo obrero, que hago con ellos en el s10", "procedimiento": "nominas.registrar-trabajador-como-socio-de-negocio", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "donde pongo el telefono y el grupo sanguineo del trabajador", "procedimiento": "nominas.registrar-trabajador-como-socio-de-negocio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo registro la cuenta interbancaria de un trabajador?", "procedimiento": "nominas.registrar-trabajador-como-socio-de-negocio", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "alta obrero s10", "procedimiento": "nominas.registrar-trabajador-como-socio-de-negocio", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como se llena la descripcion de la cuenta del banco del trabajador", "procedimiento": "nominas.registrar-trabajador-como-socio-de-negocio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como ago pa poner la nacionalidad y fecha de nacimiento del trabajador", "procedimiento": "nominas.registrar-trabajador-como-socio-de-negocio", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como marco la cuenta de haberes de un trabajador", "procedimiento": "nominas.registrar-trabajador-como-socio-de-negocio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde se registran los obreros y empleados", "procedimiento": "nominas.registrar-trabajador-como-socio-de-negocio", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Por qué menú llego al catálogo de Socio de Negocios por tipo?", "procedimiento": "nominas.registrar-trabajador-como-socio-de-negocio", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "dnd van los datos de direccion del trabajador", "procedimiento": "nominas.registrar-trabajador-como-socio-de-negocio", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "en que pestaña pongo las cuentas del banco del socio", "procedimiento": "nominas.registrar-trabajador-como-socio-de-negocio", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "socio de negocio por tipo ruta", "procedimiento": "nominas.registrar-trabajador-como-socio-de-negocio", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "tengo que cargar un empleado y no encuentro el grupo EMPLEADO ni OBRERO donde ubicarme", "procedimiento": "nominas.registrar-trabajador-como-socio-de-negocio", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "¿En qué ventana registro el email al que se enviarán las boletas de un trabajador?", "procedimiento": "nominas.registrar-trabajador-como-socio-de-negocio", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "que datos debo juntar de un trabajador antes de registrarlo", "procedimiento": "nominas.registrar-trabajador-como-socio-de-negocio", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que se pone en el campo codigo alterno", "procedimiento": "nominas.registrar-trabajador-como-socio-de-negocio", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "el N° de cuenta cargo lleva guiones o no", "procedimiento": "nominas.registrar-trabajador-como-socio-de-negocio", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Cómo debo escribir el número de cuenta y la cuenta interbancaria?", "procedimiento": "nominas.registrar-trabajador-como-socio-de-negocio", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que es el tratamiento y el vocativo en la ficha del trabajador", "procedimiento": "nominas.registrar-trabajador-como-socio-de-negocio", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q datos de direccion pide la planilla electronica", "procedimiento": "nominas.registrar-trabajador-como-socio-de-negocio", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "quiero borrar un socio de negocio que cree por error y no me deja", "procedimiento": "nominas.registrar-trabajador-como-socio-de-negocio", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no puedo eliminar la cuenta de banco de un trabajador", "procedimiento": "nominas.registrar-trabajador-como-socio-de-negocio", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no puedo borrar un socio de negocio, dice que esta relacionado", "procedimiento": "nominas.registrar-trabajador-como-socio-de-negocio", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "se registro dos veces la misma persona, se puede eliminar una", "procedimiento": "nominas.registrar-trabajador-como-socio-de-negocio", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "la cuenta de banco del trabajador ya tiene pagos y no la puedo quitar", "procedimiento": "nominas.registrar-trabajador-como-socio-de-negocio", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "por que no me deja eliminar a un empleado que registre hace meses", "procedimiento": "nominas.registrar-trabajador-como-socio-de-negocio", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "se me creo mal el socio de negocio de un obrero, puedo eliminarlo siempre", "procedimiento": "nominas.registrar-trabajador-como-socio-de-negocio", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "como agrego a los obreros al personal disponible del multiproyecto", "procedimiento": "nominas.seleccionar-personal-disponible", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se copian los trabajadores desde el MULTIPROYECTO hacia un proyecto de ejecución?", "procedimiento": "nominas.seleccionar-personal-disponible", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como copio y pego los trabajdores a la obra", "procedimiento": "nominas.seleccionar-personal-disponible", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "personal disponible multiproyecto", "procedimiento": "nominas.seleccionar-personal-disponible", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "ya registre a mis obreros en el catalogo, ahora como los pongo a trabajar en una obra", "procedimiento": "nominas.seleccionar-personal-disponible", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como elijo el tipo de nomina en personal disponible", "procedimiento": "nominas.seleccionar-personal-disponible", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como pongo la fecha de ingreso al pegar los trabajadores en el proyecto", "procedimiento": "nominas.seleccionar-personal-disponible", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "un obrero trabaja pa dos obras, como lo pongo en las dos", "procedimiento": "nominas.seleccionar-personal-disponible", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "donde registro los datos de la ficha del trabajador en el multiproyecto", "procedimiento": "nominas.seleccionar-personal-disponible", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "tengo 3 obras y el personal es comun, como lo reparto", "procedimiento": "nominas.seleccionar-personal-disponible", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Qué debo hacer para elegir a los trabajadores uno a uno desde el grupo OBRERO?", "procedimiento": "nominas.seleccionar-personal-disponible", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "paso a paso para llevar el personal a otra obra", "procedimiento": "nominas.seleccionar-personal-disponible", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "copiar personal a proyecto", "procedimiento": "nominas.seleccionar-personal-disponible", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como adiciono personal con doble clic desde el catalogo de socios", "procedimiento": "nominas.seleccionar-personal-disponible", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como asignar trabajadores ha un proyecto", "procedimiento": "nominas.seleccionar-personal-disponible", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "que mensaje sale cuando el pegado de los trabajadores salio bien", "procedimiento": "nominas.seleccionar-personal-disponible", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde queda personal disponible", "procedimiento": "nominas.seleccionar-personal-disponible", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que proyecto se escoge el personal primero, en el multiproyecto?", "procedimiento": "nominas.seleccionar-personal-disponible", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd esta el catalogo de proyectos para elegir el destino", "procedimiento": "nominas.seleccionar-personal-disponible", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "personal disponible nominas ruta", "procedimiento": "nominas.seleccionar-personal-disponible", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "estoy en la obra de ejecucion y no veo donde seleccionar personal, sera en el multiproyecto?", "procedimiento": "nominas.seleccionar-personal-disponible", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "en que parte hago clic derecho para copiar la lista de trabajadores", "procedimiento": "nominas.seleccionar-personal-disponible", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Dentro de qué carpeta, Principal, se encuentra Personal Disponible?", "procedimiento": "nominas.seleccionar-personal-disponible", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "los trabajadores se registran primero en el multiproyecto o en cada obra", "procedimiento": "nominas.seleccionar-personal-disponible", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué debe estar listo antes de elegir el personal disponible?", "procedimiento": "nominas.seleccionar-personal-disponible", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que tipo de nomina corresponde a los obreros de construccion civil al elegir personal", "procedimiento": "nominas.seleccionar-personal-disponible", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "la ficha del trabajador se llena en la obra o en el multiproyecto", "procedimiento": "nominas.seleccionar-personal-disponible", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q necesito tener en el catalogo de socios pa jalar personal al proyecto", "procedimiento": "nominas.seleccionar-personal-disponible", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "la fecha de ingreso de que forma se ingresa al pegar", "procedimiento": "nominas.seleccionar-personal-disponible", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "intento adicionar personal disponible y mi obrero no esta en el grupo OBRERO del catalogo", "procedimiento": "nominas.seleccionar-personal-disponible", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "pegue los trabajadores y no me sale el mensaje de que se pego correctamente", "procedimiento": "nominas.seleccionar-personal-disponible", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "copie a los obreros pero en la obra destino no estan", "procedimiento": "nominas.seleccionar-personal-disponible", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "pegue el personal pero me pide fecha de ingreso y no se cual poner", "procedimiento": "nominas.seleccionar-personal-disponible", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "mi trabajador sale en un proyecto pero no en el otro donde tambien trabaja", "procedimiento": "nominas.seleccionar-personal-disponible", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "al adicionar personal dispnible no me aparece el trabajador q busco", "procedimiento": "nominas.seleccionar-personal-disponible", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "no logro registrar los datos de cada trabajador en la obra destino", "procedimiento": "nominas.seleccionar-personal-disponible", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "como creo el grupo de la empresa para meter ahi a los usuarios", "procedimiento": "facturacion.definir-usuarios-y-accesos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se agrega un nuevo usuario y se le dan accesos a los escenarios del módulo?", "procedimiento": "facturacion.definir-usuarios-y-accesos", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como doi acceso a los escenarios a un usuario nuevo", "procedimiento": "facturacion.definir-usuarios-y-accesos", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "mantenimiento usuarios facturacion", "procedimiento": "facturacion.definir-usuarios-y-accesos", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "entro una contadora nueva y necesita usar el modulo de facturacion, que le configuro", "procedimiento": "facturacion.definir-usuarios-y-accesos", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como le doy permiso a un usuario para trabajar con una empresa", "procedimiento": "facturacion.definir-usuarios-y-accesos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "que hago si el empleado no esta en el catalogo al crear el usuario", "procedimiento": "facturacion.definir-usuarios-y-accesos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como agrego usuarios al sistema pa q puedan facturar", "procedimiento": "facturacion.definir-usuarios-y-accesos", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "pasos para dar acceso a un escenario con clic derecho", "procedimiento": "facturacion.definir-usuarios-y-accesos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "tengo varias empresas y quiero que un usuario vea solo una, como lo hago", "procedimiento": "facturacion.definir-usuarios-y-accesos", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "luego de crear el usuario como pruebo que entra bien", "procedimiento": "facturacion.definir-usuarios-y-accesos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Dónde se definen los permisos por empresa de un usuario y cómo se otorgan?", "procedimiento": "facturacion.definir-usuarios-y-accesos", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "dar acceso usuario facturacion", "procedimiento": "facturacion.definir-usuarios-y-accesos", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como armo el subgrupo del usuario dentro del grupo de la empresa", "procedimiento": "facturacion.definir-usuarios-y-accesos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "crear usuarios y ascesos paso a paso", "procedimiento": "facturacion.definir-usuarios-y-accesos", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "quiero darle acceso al modulo de facturacion a un asistente nuevo", "procedimiento": "facturacion.definir-usuarios-y-accesos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿En qué grupo del menú queda el escenario de Mantenimiento de Usuarios?", "procedimiento": "facturacion.definir-usuarios-y-accesos", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "dnd entro pa crear usuarios, en utilitarios?", "procedimiento": "facturacion.definir-usuarios-y-accesos", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "donde van los permisos por empresa en datos generales", "procedimiento": "facturacion.definir-usuarios-y-accesos", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que pestaña doy acceso a los escenarios", "procedimiento": "facturacion.definir-usuarios-y-accesos", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "usuarios y accesos donde", "procedimiento": "facturacion.definir-usuarios-y-accesos", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "soy administrador y no encuentro donde agregar a la gente que va a usar el sistema", "procedimiento": "facturacion.definir-usuarios-y-accesos", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "donde se hace clic derecho para dar acceso a un campo del usuario", "procedimiento": "facturacion.definir-usuarios-y-accesos", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "como configuro que un usuario solo trabaje con la empresa X", "procedimiento": "facturacion.definir-usuarios-y-accesos", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que nombre le pongo al grupo nuevo", "procedimiento": "facturacion.definir-usuarios-y-accesos", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Cómo se define a qué escenarios puede entrar un usuario?", "procedimiento": "facturacion.definir-usuarios-y-accesos", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "se puede dar acceso a mas de una empresa al mismo usuario", "procedimiento": "facturacion.definir-usuarios-y-accesos", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q tengo q configurar pa q un usuario nuevo vea los escenarios", "procedimiento": "facturacion.definir-usuarios-y-accesos", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "donde se registra al empleado que sera usuario", "procedimiento": "facturacion.definir-usuarios-y-accesos", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "un usuario nuevo abre el sistema y no ve ningun escenario del modulo", "procedimiento": "facturacion.definir-usuarios-y-accesos", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "cree el usuario pero al ingresar no lo deja trabajar con la empresa", "procedimiento": "facturacion.definir-usuarios-y-accesos", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "le di acceso a escenarios pero no puede trabajar con la empresa, falta algo", "procedimiento": "facturacion.definir-usuarios-y-accesos", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el empleado del usuario no sale en la lista", "procedimiento": "facturacion.definir-usuarios-y-accesos", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me deja agregar al usuario en el subgrupo", "procedimiento": "facturacion.definir-usuarios-y-accesos", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "mi usuario no tiene escenarios, quien le da acceso y donde", "procedimiento": "facturacion.definir-usuarios-y-accesos", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "creo el usuario pero sigue sin ver las empresas", "procedimiento": "facturacion.definir-usuarios-y-accesos", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "como creo la ficha de un cliente con ruc y razon social", "procedimiento": "facturacion.registrar-cliente", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se ingresa un cliente en el catálogo de Clientes y se le asigna su tipo de socio de negocio?", "procedimiento": "facturacion.registrar-cliente", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "komo registro un cliente nuebo", "procedimiento": "facturacion.registrar-cliente", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "alta cliente s10", "procedimiento": "facturacion.registrar-cliente", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "cerre una venta con una empresa nueva y necesito tenerla de cliente para facturarle", "procedimiento": "facturacion.registrar-cliente", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "tengo una lista de clientes en excel, como los traigo", "procedimiento": "facturacion.registrar-cliente", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como uno los campos del s10 con las columnas del excel de clientes", "procedimiento": "facturacion.registrar-cliente", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como registro un proveedr en el catalogo", "procedimiento": "facturacion.registrar-cliente", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "para que sirve la pestaña tipo en el cliente", "procedimiento": "facturacion.registrar-cliente", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como pongo el numero de cuenta del cliente para poder pagarle", "procedimiento": "facturacion.registrar-cliente", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "mi jefe me paso 40 clientes en una hoja de calculo, como los cargo al catalogo", "procedimiento": "facturacion.registrar-cliente", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "para dar de alta proveedores uso el mismo clic derecho adicionar?", "procedimiento": "facturacion.registrar-cliente", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "agregar cliente catalogo", "procedimiento": "facturacion.registrar-cliente", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como importo clientes: ubico las filas y le doy importar", "procedimiento": "facturacion.registrar-cliente", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como ago pa agregar un cliente al catalogo de socios", "procedimiento": "facturacion.registrar-cliente", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como ingreso la abreviatura y el ruc del cliente", "procedimiento": "facturacion.registrar-cliente", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "en que menu esta el catalogo de clientes", "procedimiento": "facturacion.registrar-cliente", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde hago clic derecho para adicionar un cliente", "procedimiento": "facturacion.registrar-cliente", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd esta el icono para importar excel en clientes", "procedimiento": "facturacion.registrar-cliente", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "clientes catalogo ruta", "procedimiento": "facturacion.registrar-cliente", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "estoy en facturacion y no veo los catalogos, donde se abren", "procedimiento": "facturacion.registrar-cliente", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "en cual catalogo creo a un proveedor", "procedimiento": "facturacion.registrar-cliente", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué pestaña se registran las cuentas bancarias del cliente?", "procedimiento": "facturacion.registrar-cliente", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "que tipo de socio de negocio le pongo a un cliente", "procedimiento": "facturacion.registrar-cliente", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué datos generales solicita la ficha del cliente?", "procedimiento": "facturacion.registrar-cliente", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "como configuro las cuentas de banco del cliente", "procedimiento": "facturacion.registrar-cliente", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q campos del excel tengo q relacionar para importar clientes", "procedimiento": "facturacion.registrar-cliente", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "para pagar a alguien por transferencia que se debe registrar en su ficha", "procedimiento": "facturacion.registrar-cliente", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "la columna del excel se elige primero o el campo", "procedimiento": "facturacion.registrar-cliente", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "importe el excel de clientes y no cargo nada, creo que no uni los campos", "procedimiento": "facturacion.registrar-cliente", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "importe y no veo los clientes nuevos en el catalogo", "procedimiento": "facturacion.registrar-cliente", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "cree el cliente pero no sale como tipo cliente", "procedimiento": "facturacion.registrar-cliente", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no encuentro la opcion adicionar al hacer clic derecho en clientes", "procedimiento": "facturacion.registrar-cliente", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "quise pagarle a un cliente y no tiene cuenta de banco registrada", "procedimiento": "facturacion.registrar-cliente", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "al importar clientes se toman mal las columnas", "procedimiento": "facturacion.registrar-cliente", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el catalogo de clientes no me deja agregar un proveedor", "procedimiento": "facturacion.registrar-cliente", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "como le entrego plata a un trabajador para gastos de obra y luego rendirla", "procedimiento": "facturacion.registrar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se registra en Documentos por Pagar un documento interno de entrega a rendir?", "procedimiento": "facturacion.registrar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "komo hago una entrega a rrendir", "procedimiento": "facturacion.registrar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "rendir gastos s10", "procedimiento": "facturacion.registrar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "el ingeniero va a viajar a obra y necesita fondos, que documento registro en facturacion", "procedimiento": "facturacion.registrar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como creo el tipo de documento para sustentar un desembolso interno", "procedimiento": "facturacion.registrar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como pongo el proveedor, la glosa y el proyecto en la entrega a rendir", "procedimiento": "facturacion.registrar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como registro el importe y el recurso del documento de entrega a rendir", "procedimiento": "facturacion.registrar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como termino y grabo la entrega a rendir en el escenario", "procedimiento": "facturacion.registrar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "me piden un desembolso para un personal de la empresa, que registro primero", "procedimiento": "facturacion.registrar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Qué se debe registrar antes de poder hacer un desembolso al personal para gastos?", "procedimiento": "facturacion.registrar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "paso a paso del documento interno para sustentar el pago", "procedimiento": "facturacion.registrar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "tipo documento rendir", "procedimiento": "facturacion.registrar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como indico a quien se hara el desembolso en el documento", "procedimiento": "facturacion.registrar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como asemos el comprobante pa rendir cuentas en por pagar", "procedimiento": "facturacion.registrar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como creo el documento interno con base OTROS", "procedimiento": "facturacion.registrar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "en que grupo esta documentos por pagar", "procedimiento": "facturacion.registrar-entrega-a-rendir", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde se crea el tipo de documento para entregas a rendir", "procedimiento": "facturacion.registrar-entrega-a-rendir", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd esta el catalogo de tipos de documento", "procedimiento": "facturacion.registrar-entrega-a-rendir", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "documentos por pagar ruta", "procedimiento": "facturacion.registrar-entrega-a-rendir", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "voy a registrar un desembolso a personal y no encuentro por donde se hace en facturacion", "procedimiento": "facturacion.registrar-entrega-a-rendir", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "¿Por dónde se adiciona el documento en el escenario de Por Pagar?", "procedimiento": "facturacion.registrar-entrega-a-rendir", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde veo que quedo guardada la entrega a rendir", "procedimiento": "facturacion.registrar-entrega-a-rendir", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "que tipo de aplicacion y base le pongo al documento nuevo de entregas", "procedimiento": "facturacion.registrar-entrega-a-rendir", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "por que el tipo de documento base es OTROS", "procedimiento": "facturacion.registrar-entrega-a-rendir", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que descripcion le pongo al tipo de documento", "procedimiento": "facturacion.registrar-entrega-a-rendir", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "el tipo de aplicacion es obligatorio pa usar el documento", "procedimiento": "facturacion.registrar-entrega-a-rendir", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "como dejo configurado el documento para sustentar pagos a personal", "procedimiento": "facturacion.registrar-entrega-a-rendir", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué se necesita configurar antes de registrar la entrega a rendir?", "procedimiento": "facturacion.registrar-entrega-a-rendir", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "en administrativo me bloquea el desembolso al personal, dice que falta sustento", "procedimiento": "facturacion.registrar-entrega-a-rendir", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "cree el tipo de documento pero no me deja usarlo", "procedimiento": "facturacion.registrar-entrega-a-rendir", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "quiero pagar un adelanto a un empleado pero el sistema no deja desembolsar", "procedimiento": "facturacion.registrar-entrega-a-rendir", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el documento de entrega a rendir no aparece en la lista de documentos por pagar", "procedimiento": "facturacion.registrar-entrega-a-rendir", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no sale mi tipo de documento al registrar", "procedimiento": "facturacion.registrar-entrega-a-rendir", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "me pide sustento para desembolsar, ya tengo el recibo interno", "procedimiento": "facturacion.registrar-entrega-a-rendir", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no puedo usar el tipo de documento porque le falta algo", "procedimiento": "facturacion.registrar-entrega-a-rendir", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "como hago una nota de debito", "procedimiento": "facturacion.registrar-nota-de-credito", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se registra una nota de crédito vinculada a una factura en Documentos por Cobrar?", "procedimiento": "facturacion.registrar-nota-de-credito", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "komo hago una nota de credito", "procedimiento": "facturacion.registrar-nota-de-credito", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "nota de credito s10", "procedimiento": "facturacion.registrar-nota-de-credito", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "el cliente reclama que el precio de la factura estaba mal, que documento emito para corregirlo", "procedimiento": "facturacion.registrar-nota-de-credito", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como traigo los recursos de una factura a la nota de credito", "procedimiento": "facturacion.registrar-nota-de-credito", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como jalo las facturas de un cliente dentro de la nota", "procedimiento": "facturacion.registrar-nota-de-credito", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como modifico el precio del recurso en la nota de credito", "procedimiento": "facturacion.registrar-nota-de-credito", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como pongo el concepto o motivo de la nota", "procedimiento": "facturacion.registrar-nota-de-credito", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "me equivoque en el precio de una factura de venta y quiero ajustarlo con otro documento", "procedimiento": "facturacion.registrar-nota-de-credito", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Qué debo hacer cuando el sistema pregunta si desea adicionar los recursos de la factura?", "procedimiento": "facturacion.registrar-nota-de-credito", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "pasos para una nota de debito de una factura", "procedimiento": "facturacion.registrar-nota-de-credito", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "nc factura cliente", "procedimiento": "facturacion.registrar-nota-de-credito", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como se ase la nota de credito pa una venta ya facturada", "procedimiento": "facturacion.registrar-nota-de-credito", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como elijo el documento 007 en documentos por cobrar", "procedimiento": "facturacion.registrar-nota-de-credito", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como grabo la nota de credito", "procedimiento": "facturacion.registrar-nota-de-credito", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde se registran las notas de credito", "procedimiento": "facturacion.registrar-nota-de-credito", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué escenario se crean las notas de débito?", "procedimiento": "facturacion.registrar-nota-de-credito", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "dnd esta registro de ventas para escoger la factura", "procedimiento": "facturacion.registrar-nota-de-credito", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "documentos por cobrar nota credito", "procedimiento": "facturacion.registrar-nota-de-credito", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "voy a corregir una venta y no se en que pantalla va la nota", "procedimiento": "facturacion.registrar-nota-de-credito", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "donde aparece la lista de facturas del socio de negocio al hacer la nota", "procedimiento": "facturacion.registrar-nota-de-credito", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que opcion hago clic derecho para adicionar la nota", "procedimiento": "facturacion.registrar-nota-de-credito", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "que tipo de documento elijo para la nota de credito", "procedimiento": "facturacion.registrar-nota-de-credito", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "con que cliente debo hacer la nota, el mismo de la factura", "procedimiento": "facturacion.registrar-nota-de-credito", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "la nota de debito se configura distinto a la de credito", "procedimiento": "facturacion.registrar-nota-de-credito", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q concepto le pongo a la nota", "procedimiento": "facturacion.registrar-nota-de-credito", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "se traen los recursos de la factura solos o hay que aceptar un mensaje", "procedimiento": "facturacion.registrar-nota-de-credito", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué dato del recurso se modifica para corregir el precio?", "procedimiento": "facturacion.registrar-nota-de-credito", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "hago clic derecho en la nota y no me salen facturas, que reviso", "procedimiento": "facturacion.registrar-nota-de-credito", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no aparecen las facturas del cliente en la nota de credito", "procedimiento": "facturacion.registrar-nota-de-credito", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "la nota de credito no trae los recursos de la factura", "procedimiento": "facturacion.registrar-nota-de-credito", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "puse otro cliente en la nota y no encuentro la factura", "procedimiento": "facturacion.registrar-nota-de-credito", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no me deja traer facturas a la nota de debito", "procedimiento": "facturacion.registrar-nota-de-credito", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "se cerro el mensaje de adicionar recursos y no trajo nada", "procedimiento": "facturacion.registrar-nota-de-credito", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "la nota de credito me sale vacia, sin recursos", "procedimiento": "facturacion.registrar-nota-de-credito", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "como se da de baja una boleta electronica que no entregue al cliente", "procedimiento": "facturacion-electronica.comunicar-baja-de-comprobante", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cuál es el procedimiento para generar un documento de Comunicación de Baja y enviarlo a SUNAT?", "procedimiento": "facturacion-electronica.comunicar-baja-de-comprobante", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como anular una factura electrnica ya enviada", "procedimiento": "facturacion-electronica.comunicar-baja-de-comprobante", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "baja boleta sunat", "procedimiento": "facturacion-electronica.comunicar-baja-de-comprobante", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "emitimos una boleta por error y el cliente nunca la recibio, hay que avisar a sunat", "procedimiento": "facturacion-electronica.comunicar-baja-de-comprobante", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como agrego los documentos anulados a la comunicacion de baja", "procedimiento": "facturacion-electronica.comunicar-baja-de-comprobante", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como se genera el numero de la comunicacion de baja", "procedimiento": "facturacion-electronica.comunicar-baja-de-comprobante", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo adiciono una comunicacion de baja", "procedimiento": "facturacion-electronica.comunicar-baja-de-comprobante", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "primero tengo que anular el documento en el s10 con un motivo", "procedimiento": "facturacion-electronica.comunicar-baja-de-comprobante", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "se facturo dos veces lo mismo y la segunda no la mande al cliente, como la elimino ante sunat", "procedimiento": "facturacion-electronica.comunicar-baja-de-comprobante", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo se envía la comunicación de baja una vez adicionados los documentos?", "procedimiento": "facturacion-electronica.comunicar-baja-de-comprobante", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "que es dar de baja un comprobante y cuando se usa", "procedimiento": "facturacion-electronica.comunicar-baja-de-comprobante", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "baja de factura", "procedimiento": "facturacion-electronica.comunicar-baja-de-comprobante", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como anulo varias boletas juntas en una sola baja", "procedimiento": "facturacion-electronica.comunicar-baja-de-comprobante", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como se da de baja un comprobante ke no se entrego", "procedimiento": "facturacion-electronica.comunicar-baja-de-comprobante", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como veo si la baja fue aceptada", "procedimiento": "facturacion-electronica.comunicar-baja-de-comprobante", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "en que menu de facturacion electronica se hace la baja", "procedimiento": "facturacion-electronica.comunicar-baja-de-comprobante", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd registro la baja de comprobantes", "procedimiento": "facturacion-electronica.comunicar-baja-de-comprobante", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "donde veo la lista de comunicaciones de baja con su estado", "procedimiento": "facturacion-electronica.comunicar-baja-de-comprobante", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "baja comprobantes ruta", "procedimiento": "facturacion-electronica.comunicar-baja-de-comprobante", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "tengo que anular una factura ya aceptada y no ubico la pantalla para avisar a sunat", "procedimiento": "facturacion-electronica.comunicar-baja-de-comprobante", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "¿En qué opción se adiciona un documento de baja nuevo?", "procedimiento": "facturacion-electronica.comunicar-baja-de-comprobante", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde veo las observaciones de la respuesta de la baja", "procedimiento": "facturacion-electronica.comunicar-baja-de-comprobante", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Qué condiciones debe cumplir una factura para poder darla de baja?", "procedimiento": "facturacion-electronica.comunicar-baja-de-comprobante", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "las boletas tienen que haber salido en el resumen diario para darlas de baja", "procedimiento": "facturacion-electronica.comunicar-baja-de-comprobante", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que fecha de emision deben tener los documentos de una misma baja", "procedimiento": "facturacion-electronica.comunicar-baja-de-comprobante", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q hay q hacer antes de la comunicacion, anular en el s10 con motivo", "procedimiento": "facturacion-electronica.comunicar-baja-de-comprobante", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "boletas sin informar a sunat tambien entran en una baja", "procedimiento": "facturacion-electronica.comunicar-baja-de-comprobante", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que estado debe tener la factura en sunat para poder darla de baja", "procedimiento": "facturacion-electronica.comunicar-baja-de-comprobante", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "ya pasaron 10 dias de una factura y quiero darla de baja", "procedimiento": "facturacion-electronica.comunicar-baja-de-comprobante", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "se me paso el plazo de la baja de una boleta", "procedimiento": "facturacion-electronica.comunicar-baja-de-comprobante", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me deja juntar en una baja documentos de dias distintos", "procedimiento": "facturacion-electronica.comunicar-baja-de-comprobante", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "vencio el plazo para anular la factura ante sunat, que hago", "procedimiento": "facturacion-electronica.comunicar-baja-de-comprobante", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "al agregar los documentos a la baja me marca error por la fecha", "procedimiento": "facturacion-electronica.comunicar-baja-de-comprobante", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "mande una baja de una factura que no habia sido aceptada", "procedimiento": "facturacion-electronica.comunicar-baja-de-comprobante", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "cuantos dias tengo para dar de baja una boleta ya informada", "procedimiento": "facturacion-electronica.comunicar-baja-de-comprobante", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "como dejo el s10 listo para emitir comprobantes electronicos", "procedimiento": "facturacion-electronica.configurar-emision-electronica", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se define un talonario calificado para el Sistema de Emisión Electrónica?", "procedimiento": "facturacion-electronica.configurar-emision-electronica", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como configuro los talonarios electrinicos", "procedimiento": "facturacion-electronica.configurar-emision-electronica", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "configurar emision electronica", "procedimiento": "facturacion-electronica.configurar-emision-electronica", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "la sunat nos acaba de aprobar como emisor electronico, que configuro en el s10", "procedimiento": "facturacion-electronica.configurar-emision-electronica", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como creo los tipos de documento de factura, boleta y notas para lo electronico", "procedimiento": "facturacion-electronica.configurar-emision-electronica", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como doy acceso al talonario a los que emiten", "procedimiento": "facturacion-electronica.configurar-emision-electronica", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como creo la serie de boletas electronicas", "procedimiento": "facturacion-electronica.configurar-emision-electronica", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como registro el contacto del cliente para que le notifiquen el comprobante", "procedimiento": "facturacion-electronica.configurar-emision-electronica", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "voy a facturar a una empresa del extranjero, como registro su identificacion", "procedimiento": "facturacion-electronica.configurar-emision-electronica", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo se activa la opción Sistema Emisión Electrónica SEE al registrar un documento?", "procedimiento": "facturacion-electronica.configurar-emision-electronica", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "paso a paso para habilitar la facturacion electronica en mi empresa", "procedimiento": "facturacion-electronica.configurar-emision-electronica", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "talonario see serie", "procedimiento": "facturacion-electronica.configurar-emision-electronica", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como marco cual contacto recibe las facturas electronicas", "procedimiento": "facturacion-electronica.configurar-emision-electronica", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como se ace la serie F para facturas y notas", "procedimiento": "facturacion-electronica.configurar-emision-electronica", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como numero el talonario electronico desde 1", "procedimiento": "facturacion-electronica.configurar-emision-electronica", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde registro el numero de autorizacion de comprobantes de la empresa", "procedimiento": "facturacion-electronica.configurar-emision-electronica", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que ficha va el contacto de facturacion electronica del cliente", "procedimiento": "facturacion-electronica.configurar-emision-electronica", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd se definen los talonarios electronicos", "procedimiento": "facturacion-electronica.configurar-emision-electronica", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "talonarios electronicos ruta", "procedimiento": "facturacion-electronica.configurar-emision-electronica", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "estoy en la ficha de la empresa emisora y no encuentro el campo de la resolucion", "procedimiento": "facturacion-electronica.configurar-emision-electronica", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "donde se activa el check de sistema de emision electronica al crear el documento", "procedimiento": "facturacion-electronica.configurar-emision-electronica", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué lista de contactos marco el de facturación electrónica?", "procedimiento": "facturacion-electronica.configurar-emision-electronica", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "que prefijo lleva la serie de las boletas y sus notas", "procedimiento": "facturacion-electronica.configurar-emision-electronica", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "hasta cuantos caracteres puede tener la serie del talonario", "procedimiento": "facturacion-electronica.configurar-emision-electronica", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Cuántos dígitos puede tener el número del talonario y desde cuál empieza?", "procedimiento": "facturacion-electronica.configurar-emision-electronica", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "q tipos de documento debo crear pa lo electronico", "procedimiento": "facturacion-electronica.configurar-emision-electronica", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "que pasa si el cliente no tiene contacto de facturacion, a que correo se manda", "procedimiento": "facturacion-electronica.configurar-emision-electronica", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "a quien le doy acceso del talonario electronico", "procedimiento": "facturacion-electronica.configurar-emision-electronica", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "al grabar la factura electronica me valida el email y no pasa", "procedimiento": "facturacion-electronica.configurar-emision-electronica", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "me dice que falta la direccion del cliente al grabar el comprobante", "procedimiento": "facturacion-electronica.configurar-emision-electronica", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no puedo grabar porque el contacto no tiene correo", "procedimiento": "facturacion-electronica.configurar-emision-electronica", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el cliente del extranjero no me deja grabar la factura", "procedimiento": "facturacion-electronica.configurar-emision-electronica", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me propone la numeracion del talonario electronico", "procedimiento": "facturacion-electronica.configurar-emision-electronica", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me deja crear la serie 001 del talonario", "procedimiento": "facturacion-electronica.configurar-emision-electronica", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "no se guarda el documento por cobrar, creo q falta dato del contacto o direccion", "procedimiento": "facturacion-electronica.configurar-emision-electronica", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "como doy de alta a un colega en el portal de comprobantes electronicos", "procedimiento": "facturacion-electronica.crear-usuario-del-portal", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se crea un usuario en Gestión de Usuarios del portal de facturación electrónica?", "procedimiento": "facturacion-electronica.crear-usuario-del-portal", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "komo agrego otro usuario al portal de emision", "procedimiento": "facturacion-electronica.crear-usuario-del-portal", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "usuario portal", "procedimiento": "facturacion-electronica.crear-usuario-del-portal", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "mi contador necesita ver las facturas que emitimos en el portal, como lo registro", "procedimiento": "facturacion-electronica.crear-usuario-del-portal", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como busco usuarios existentes de mi empresa en el portal", "procedimiento": "facturacion-electronica.crear-usuario-del-portal", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como asigno rol de administrador a otro usuario del portal", "procedimiento": "facturacion-electronica.crear-usuario-del-portal", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como le doi a un usuario del portal las empresas del grupo", "procedimiento": "facturacion-electronica.crear-usuario-del-portal", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "que datos pide el portal para crear un usuario", "procedimiento": "facturacion-electronica.crear-usuario-del-portal", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "se fue la persona que veia los comprobantes en el portal y entra otra, como la agrego", "procedimiento": "facturacion-electronica.crear-usuario-del-portal", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo se asocian empresas a un usuario del portal si pertenezco a una corporación?", "procedimiento": "facturacion-electronica.crear-usuario-del-portal", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como guardo el usuario nuevo en el portal", "procedimiento": "facturacion-electronica.crear-usuario-del-portal", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "adicionar usuario portal", "procedimiento": "facturacion-electronica.crear-usuario-del-portal", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "pasos para crear usuario en el portal y que le llegue su clave", "procedimiento": "facturacion-electronica.crear-usuario-del-portal", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como ago pa meter un usuario nuevo al portal de comprobantes", "procedimiento": "facturacion-electronica.crear-usuario-del-portal", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como listo todos los usuarios de la empresa en el portal", "procedimiento": "facturacion-electronica.crear-usuario-del-portal", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde esta gestion de usuarios en el portal", "procedimiento": "facturacion-electronica.crear-usuario-del-portal", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que parte del portal se adiciona un usuario", "procedimiento": "facturacion-electronica.crear-usuario-del-portal", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd busco usuarios en el portal", "procedimiento": "facturacion-electronica.crear-usuario-del-portal", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "gestion usuarios portal ruta", "procedimiento": "facturacion-electronica.crear-usuario-del-portal", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "entre al portal con mi cuenta y no veo donde administrar a los usuarios de mi empresa", "procedimiento": "facturacion-electronica.crear-usuario-del-portal", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "en que ventana se marca el rol de administrador", "procedimiento": "facturacion-electronica.crear-usuario-del-portal", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Dónde elijo las empresas en Asociación Compañía?", "procedimiento": "facturacion-electronica.crear-usuario-del-portal", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "que rol necesito para poder crear usuarios en el portal", "procedimiento": "facturacion-electronica.crear-usuario-del-portal", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "se puede tener mas de un administrador en la empresa del portal", "procedimiento": "facturacion-electronica.crear-usuario-del-portal", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué campos son obligatorios al crear un usuario del portal?", "procedimiento": "facturacion-electronica.crear-usuario-del-portal", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "q correo le pongo al usuario del portal, cualquiera sirve", "procedimiento": "facturacion-electronica.crear-usuario-del-portal", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "como limito a que empresas puede entrar un usuario del portal", "procedimiento": "facturacion-electronica.crear-usuario-del-portal", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que tipo de clave recibe el usuario nuevo del portal", "procedimiento": "facturacion-electronica.crear-usuario-del-portal", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "no me deja crear usuarios en el portal, mi usuario no es administrador", "procedimiento": "facturacion-electronica.crear-usuario-del-portal", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no puedo guardar el usuario nuevo porque faltan campos con asterisco", "procedimiento": "facturacion-electronica.crear-usuario-del-portal", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el usuario nuevo no recibe su clave en el correo", "procedimiento": "facturacion-electronica.crear-usuario-del-portal", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "al usuario del portal le pide cambiar la clave apenas entra, es normal", "procedimiento": "facturacion-electronica.crear-usuario-del-portal", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no encuentro al usuario que cree, como lo busco", "procedimiento": "facturacion-electronica.crear-usuario-del-portal", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "mi usuario del portal no ve los documentos de la otra empresa del grupo", "procedimiento": "facturacion-electronica.crear-usuario-del-portal", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "le asigne mal las empresas al usuario del portal, donde lo corrijo", "procedimiento": "facturacion-electronica.crear-usuario-del-portal", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "como mando una nota de debito electronica a la sunat", "procedimiento": "facturacion-electronica.enviar-comprobantes-a-sunat", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cuál es el procedimiento para enviar una factura electrónica a SUNAT desde Documentos por Cobrar?", "procedimiento": "facturacion-electronica.enviar-comprobantes-a-sunat", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "komo mando la factura a la sunat", "procedimiento": "facturacion-electronica.enviar-comprobantes-a-sunat", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "enviar boleta portal", "procedimiento": "facturacion-electronica.enviar-comprobantes-a-sunat", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "emiti 15 facturas hoy y tengo que reportarlas, como las mando juntas", "procedimiento": "facturacion-electronica.enviar-comprobantes-a-sunat", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como selecciono varios documentos y los mando a sunat", "procedimiento": "facturacion-electronica.enviar-comprobantes-a-sunat", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como veo en que estado quedo el comprobante despues de enviarlo", "procedimiento": "facturacion-electronica.enviar-comprobantes-a-sunat", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como se q sunat acepto mi comprobante", "procedimiento": "facturacion-electronica.enviar-comprobantes-a-sunat", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como actualizo el estado de visualizacion del cliente", "procedimiento": "facturacion-electronica.enviar-comprobantes-a-sunat", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el cliente dice que no le llego el comprobante, puedo ver si ya lo abrio", "procedimiento": "facturacion-electronica.enviar-comprobantes-a-sunat", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo se envía una boleta de venta al portal del S10?", "procedimiento": "facturacion-electronica.enviar-comprobantes-a-sunat", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "pasos para enviar documentos electronicos a sunat", "procedimiento": "facturacion-electronica.enviar-comprobantes-a-sunat", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "mandar nota credito sunat", "procedimiento": "facturacion-electronica.enviar-comprobantes-a-sunat", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "que significa la ventana envio de documento a sunat", "procedimiento": "facturacion-electronica.enviar-comprobantes-a-sunat", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como mando a sunat las notas d credito", "procedimiento": "facturacion-electronica.enviar-comprobantes-a-sunat", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como reviso las observaciones de sunat de un documento", "procedimiento": "facturacion-electronica.enviar-comprobantes-a-sunat", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde estan las opciones de envio de comprobantes", "procedimiento": "facturacion-electronica.enviar-comprobantes-a-sunat", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué escenario se envían los documentos a SUNAT?", "procedimiento": "facturacion-electronica.enviar-comprobantes-a-sunat", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "dnd veo el estado sunat de mis facturas", "procedimiento": "facturacion-electronica.enviar-comprobantes-a-sunat", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "estado sunat columna donde", "procedimiento": "facturacion-electronica.enviar-comprobantes-a-sunat", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "tengo una boleta sin enviar al portal y no ubico la opcion en el menu", "procedimiento": "facturacion-electronica.enviar-comprobantes-a-sunat", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "donde se actualiza el estado de visualizacion", "procedimiento": "facturacion-electronica.enviar-comprobantes-a-sunat", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que lista aparecen las observaciones de sunat", "procedimiento": "facturacion-electronica.enviar-comprobantes-a-sunat", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Qué debe tener el documento al registrarlo para poder enviarlo a SUNAT?", "procedimiento": "facturacion-electronica.enviar-comprobantes-a-sunat", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "como relaciono el documento con el talonario de emision electronica", "procedimiento": "facturacion-electronica.enviar-comprobantes-a-sunat", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "hay que activar el check SEE antes de registrar la factura", "procedimiento": "facturacion-electronica.enviar-comprobantes-a-sunat", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q requisito tiene un documento pa enviarse a sunat", "procedimiento": "facturacion-electronica.enviar-comprobantes-a-sunat", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "el documento toma la numeracion del talonario solo con la opcion activada", "procedimiento": "facturacion-electronica.enviar-comprobantes-a-sunat", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que tipo de talonario necesita la factura para poder enviarse", "procedimiento": "facturacion-electronica.enviar-comprobantes-a-sunat", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "registre el documento sin talonario electronico y no puedo mandarlo, como lo arreglo", "procedimiento": "facturacion-electronica.enviar-comprobantes-a-sunat", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "envie la nota de credito electronica 10 dias despues y salio rechazada", "procedimiento": "facturacion-electronica.enviar-comprobantes-a-sunat", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "sunat dio como rechazada mi factura, donde veo por que", "procedimiento": "facturacion-electronica.enviar-comprobantes-a-sunat", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "cuanto tiempo tengo para enviar las notas de credito electronicas", "procedimiento": "facturacion-electronica.enviar-comprobantes-a-sunat", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "la boleta no llega al portal del s10", "procedimiento": "facturacion-electronica.enviar-comprobantes-a-sunat", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "la factura esta como pendiente y no sale aceptada, que reviso", "procedimiento": "facturacion-electronica.enviar-comprobantes-a-sunat", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no puedo enviar porque el documento no esta con la opcion de emision electronica", "procedimiento": "facturacion-electronica.enviar-comprobantes-a-sunat", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}

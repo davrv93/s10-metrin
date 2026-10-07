@@ -2,6 +2,7 @@
 datos/
 /rag
 modelos/*.pjge
+!modelos/router/router-s10.pjge
 
 # Reranker de la V2 (438 MB; lo baja descargar-reranker.sh): fuera de git
 modelos/reranker/

@@ -1,0 +1,18 @@
+{
+ "clases": 61,
+ "entrenamiento": 3555,
+ "calibracion": 498,
+ "prueba": 194,
+ "prueba_con_caso": 125,
+ "entrenamiento_min_por_clase": 40,
+ "entrenamiento_ninguno": 889,
+ "descartes": {
+  "duplicado": 40
+ },
+ "errores": {},
+ "clases_sin_parafrasis": [],
+ "reales_entrenamiento": 540,
+ "reales_calibracion": 135,
+ "reales_prueba": 478,
+ "reales_prueba_con_caso": 6
+}

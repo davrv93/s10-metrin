@@ -16,6 +16,7 @@ import (
 	"rag-go/internal/indexar"
 	"rag-go/internal/rag"
 	"rag-go/internal/rerank"
+	"rag-go/internal/router"
 	"rag-go/internal/v2"
 	"rag-go/internal/v2/conocimiento"
 )
@@ -53,7 +54,22 @@ func nuevoAgenteV2(cfg config.Config, e embed.Embebedor, clas *clasificar.Modelo
 		}
 	}
 	ag.Clasificador = cl
+	if cfg.V2.Router != "" {
+		rt, err := router.Cargar(cfg.V2.Router)
+		if err != nil {
+			logf("V2: sin router de casos (%v): la búsqueda elige el procedimiento como antes", err)
+		} else {
+			ag.Router = rt
+			logf("V2: router de casos %s (%d procedimientos, pjge %s)", cfg.V2.Router, len(rt.Clases()), rt.Huella[:12])
+		}
+	}
 	conocimientoV2(ag, cfg.V2, r.Almacen)
+	// /health: el router de casos de verdad cargado (huella de su .pjge) o false.
+	if rt, ok := ag.Router.(*router.Router); ok {
+		busquedaV2["router"] = rt.Huella[:12]
+	} else {
+		busquedaV2["router"] = false
+	}
 	logf("V2 activa: version=%s habilitada=%v porcentaje=%d motor=%s", cfg.V2.Version, cfg.V2.Habilitada,
 		cfg.V2.Porcentaje, motor.Nombre())
 	return ag, nil

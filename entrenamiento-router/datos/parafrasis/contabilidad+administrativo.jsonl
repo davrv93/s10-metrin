@@ -1,0 +1,360 @@
+{"texto": "quiero dejar cerrado enero 2015 para que nadie mueva asientos, que hago", "procedimiento": "contabilidad.cierre-permanente-del-periodo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Necesito realizar el cierre permanente de un periodo contable, ¿cuáles son los pasos?", "procedimiento": "contabilidad.cierre-permanente-del-periodo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como dejo cerrado el periodo de marzo en contabilidad", "procedimiento": "contabilidad.cierre-permanente-del-periodo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo sierro el periodo contable pa q no se modifique nada", "procedimiento": "contabilidad.cierre-permanente-del-periodo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "cerrar mes definitivo", "procedimiento": "contabilidad.cierre-permanente-del-periodo", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "terminamos de revisar todos los asientos del mes y ahora toca cerrarlo definitivamente, como se hace", "procedimiento": "contabilidad.cierre-permanente-del-periodo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "pasos para pasar un periodo de abierto a cerrado", "procedimiento": "contabilidad.cierre-permanente-del-periodo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Indíqueme el procedimiento para cerrar un periodo con la opción Cierre Permanente en SI.", "procedimiento": "contabilidad.cierre-permanente-del-periodo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como ago q el periodo quede cerrado permanente", "procedimiento": "contabilidad.cierre-permanente-del-periodo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "ya acabamos el mes contable, como lo bloqueo para siempre", "procedimiento": "contabilidad.cierre-permanente-del-periodo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cerrar periodo", "procedimiento": "contabilidad.cierre-permanente-del-periodo", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "soy el auditor y me toca cerrar el ejercicio de diciembre, como lo cierro", "procedimiento": "contabilidad.cierre-permanente-del-periodo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "cambiar estado del periodo a cerrado y poner cierre permanente si, como es", "procedimiento": "contabilidad.cierre-permanente-del-periodo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se obtiene la copia de seguridad de los asientos al cerrar un periodo?", "procedimiento": "contabilidad.cierre-permanente-del-periodo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "que tengo q tocar para que el s10 haga backup de los asientos al cerrar el mes", "procedimiento": "contabilidad.cierre-permanente-del-periodo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cierre de mez contable s10 pasos", "procedimiento": "contabilidad.cierre-permanente-del-periodo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "por donde se bloquea un periodo contable que ya no se debe tocar", "procedimiento": "contabilidad.cierre-permanente-del-periodo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "ya cerré el periodo, en que pantalla puedo revisar el respaldo de los asientos", "procedimiento": "contabilidad.cierre-permanente-del-periodo", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "auditoria de asientos cerrados donde esta", "procedimiento": "contabilidad.cierre-permanente-del-periodo", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "donde esta la opcion periodos contables", "procedimiento": "contabilidad.cierre-permanente-del-periodo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd cambio el estado del periodo", "procedimiento": "contabilidad.cierre-permanente-del-periodo", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "¿En qué escenario se ubica un periodo como Enero 2015 para modificarlo?", "procedimiento": "contabilidad.cierre-permanente-del-periodo", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "me piden revisar los asientos que quedaron congelados tras el cierre, en que escenario lo veo", "procedimiento": "contabilidad.cierre-permanente-del-periodo", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "quien tiene que estar calificado como auditor para poder cerrar definitivamente", "procedimiento": "contabilidad.cierre-permanente-del-periodo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que usuario puede poner cierre permanente en si", "procedimiento": "contabilidad.cierre-permanente-del-periodo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué condición debe cumplir un usuario para determinar el cierre permanente de un periodo?", "procedimiento": "contabilidad.cierre-permanente-del-periodo", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que cambia en el periodo al marcar cierre permanente en si", "procedimiento": "contabilidad.cierre-permanente-del-periodo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que parametro del periodo hace que se genere el respaldo de los asientos", "procedimiento": "contabilidad.cierre-permanente-del-periodo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "se nesesita ser auditor pa cerrar periodos o cualquier usuario puede", "procedimiento": "contabilidad.cierre-permanente-del-periodo", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "no me deja poner cierre permanente en si", "procedimiento": "contabilidad.cierre-permanente-del-periodo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el campo cierre permanente no me deja cambiarlo, y eso que soy el contador", "procedimiento": "contabilidad.cierre-permanente-del-periodo", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "cerre el periodo y quiero saber si se guardo copia de los asientos, no la encuentro", "procedimiento": "contabilidad.cierre-permanente-del-periodo", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no pued sierre permanente del periodo", "procedimiento": "contabilidad.cierre-permanente-del-periodo", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "no puedo cerrar periodo", "procedimiento": "contabilidad.cierre-permanente-del-periodo", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "me sale solo cerrado pero sin copia de seguridad de los asientos, que falto", "procedimiento": "contabilidad.cierre-permanente-del-periodo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "otro usuario cerro el mes pero a mi no me deja, me dicen que solo el auditor, como es eso", "procedimiento": "contabilidad.cierre-permanente-del-periodo", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "Quiero crear un informe contable nuevo en Parámetros, ¿cómo lo hago?", "procedimiento": "contabilidad.configurar-informe-contable", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como armo el estado de situacion financiera desde cero en el s10", "procedimiento": "contabilidad.configurar-informe-contable", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "tengo el formato del balance en excel, como lo meto al informe contable", "procedimiento": "contabilidad.configurar-informe-contable", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo creo un informe contable nuevo en s10 pa el balance", "procedimiento": "contabilidad.configurar-informe-contable", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "informe nuevo contabilidad", "procedimiento": "contabilidad.configurar-informe-contable", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "la gerencia pide un informe de ratios con las cuentas del plan, como lo configuro", "procedimiento": "contabilidad.configurar-informe-contable", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como le pongo las cuentas del plan contable a cada rubro del balance", "procedimiento": "contabilidad.configurar-informe-contable", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo defino los niveles de la estructura de un informe contable, con descripción, color y longitud?", "procedimiento": "contabilidad.configurar-informe-contable", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como ago la estructura del estado financiero con exel", "procedimiento": "contabilidad.configurar-informe-contable", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "quiero que el informe salga en formato sunat de libro de inventarios y balances, como lo armo", "procedimiento": "contabilidad.configurar-informe-contable", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "importar formato de balance", "procedimiento": "contabilidad.configurar-informe-contable", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "soy contador nuevo y debo dejar listo el estado financiero para que despues se imprima, por donde empiezo a configurarlo", "procedimiento": "contabilidad.configurar-informe-contable", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como relaciono las columnas del excel con las del s10 al importar la estructura", "procedimiento": "contabilidad.configurar-informe-contable", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Procedimiento para adicionar cuentas a un concepto del informe a cualquier nivel de divisionaria", "procedimiento": "contabilidad.configurar-informe-contable", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como agrego la cuenta 104111 a un rubro del estado financiero", "procedimiento": "contabilidad.configurar-informe-contable", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como asigno cuentas al balance a ultimo nibel", "procedimiento": "contabilidad.configurar-informe-contable", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "en que grupo se arman los informes contables", "procedimiento": "contabilidad.configurar-informe-contable", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde se crean los informes contables nuevos", "procedimiento": "contabilidad.configurar-informe-contable", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "informes contables donde esta", "procedimiento": "contabilidad.configurar-informe-contable", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "en que parte de parametros esta lo de adicionar a ultimo nivel", "procedimiento": "contabilidad.configurar-informe-contable", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd importo el exel del balance", "procedimiento": "contabilidad.configurar-informe-contable", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "¿Dónde se elige el tipo Empresa y la vista vertical de un informe contable?", "procedimiento": "contabilidad.configurar-informe-contable", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "tengo que armar la estructura del balance y no encuentro el escenario, donde es", "procedimiento": "contabilidad.configurar-informe-contable", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "que significa el tipo empresa al crear el informe contable", "procedimiento": "contabilidad.configurar-informe-contable", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "para que sirve la longitud de cada nivel del informe", "procedimiento": "contabilidad.configurar-informe-contable", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que diferencia hay entre adicionar a ultimo nivel y adicionar a cualquier nivel", "procedimiento": "contabilidad.configurar-informe-contable", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Cómo se configura la vista de impresión en formato SUNAT de un informe contable?", "procedimiento": "contabilidad.configurar-informe-contable", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "q es la longitud en los niveles del informe contable", "procedimiento": "contabilidad.configurar-informe-contable", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "que debe estar listo en el esquema contable antes de configurar el informe", "procedimiento": "contabilidad.configurar-informe-contable", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "no me deja seleccionar una fila para asignarle cuentas al informe", "procedimiento": "contabilidad.configurar-informe-contable", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "las filas con formula no las puedo marcar para ponerles cuentas", "procedimiento": "contabilidad.configurar-informe-contable", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "al importar el excel de mi estado financiero no carga las filas que quiero, que reviso", "procedimiento": "contabilidad.configurar-informe-contable", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no me deja aniadir cuentas a una fila del balance q tiene formula", "procedimiento": "contabilidad.configurar-informe-contable", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "fila con formula no selecciona", "procedimiento": "contabilidad.configurar-informe-contable", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "al asignar cuentas al informe no me salen las del plan contable de mi empresa", "procedimiento": "contabilidad.configurar-informe-contable", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "importe el excel del balance pero la estructura quedo sin cuentas relacionadas, que me falto", "procedimiento": "contabilidad.configurar-informe-contable", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "¿Cómo creo un plan contable nuevo y lo identifico con un nombre?", "procedimiento": "contabilidad.crear-plan-de-cuentas", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "tengo el pcge en excel, como lo subo al s10", "procedimiento": "contabilidad.crear-plan-de-cuentas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como cargo el plan de cuentas de mi empresa desde una hoja de calculo", "procedimiento": "contabilidad.crear-plan-de-cuentas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo inporto el plan contable de la empresa", "procedimiento": "contabilidad.crear-plan-de-cuentas", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "subir pcge", "procedimiento": "contabilidad.crear-plan-de-cuentas", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "empresa nueva en el s10, recien me dieron el plan de cuentas en excel, que hago para que quede cargado", "procedimiento": "contabilidad.crear-plan-de-cuentas", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como le digo al s10 con que plan contable debe contabilizar mi empresa", "procedimiento": "contabilidad.crear-plan-de-cuentas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Procedimiento para relacionar los campos del S10 con las columnas del Excel al cargar el plan de cuentas", "procedimiento": "contabilidad.crear-plan-de-cuentas", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como ago pa q el sistema empiece a contabilizar desde enero", "procedimiento": "contabilidad.crear-plan-de-cuentas", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como defino desde que fecha contabiliza automaticamente el sistema", "procedimiento": "contabilidad.crear-plan-de-cuentas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "plan de cuentas nuevo", "procedimiento": "contabilidad.crear-plan-de-cuentas", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "me toca configurar de cero la contabilidad de una constructora nueva, empiezo por el plan de cuentas?", "procedimiento": "contabilidad.crear-plan-de-cuentas", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como marco una cuenta como analitica o que dependa de centro de costos", "procedimiento": "contabilidad.crear-plan-de-cuentas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo configuro la naturaleza y el tipo de cuenta de cada cuenta contable?", "procedimiento": "contabilidad.crear-plan-de-cuentas", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como pongo la cuenta de cierre y la diferencia de cambio mensual de una cuenta", "procedimiento": "contabilidad.crear-plan-de-cuentas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como cargo las cuentas contables con exel en s10", "procedimiento": "contabilidad.crear-plan-de-cuentas", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "donde creo el plan de cuentas", "procedimiento": "contabilidad.crear-plan-de-cuentas", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que escenario esta el esquema contable de la empresa", "procedimiento": "contabilidad.crear-plan-de-cuentas", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "plan contable pantalla", "procedimiento": "contabilidad.crear-plan-de-cuentas", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "dnd se elige la hoja del excel al importar las cuentas", "procedimiento": "contabilidad.crear-plan-de-cuentas", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "¿En qué pestaña reviso las cuentas ya importadas, Detalle o Cuentas?", "procedimiento": "contabilidad.crear-plan-de-cuentas", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde pongo la fecha de inicio de contabilizacion de la empresa", "procedimiento": "contabilidad.crear-plan-de-cuentas", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "ya importé el plan pero no sé donde se lo asigno a la empresa para contabilizar", "procedimiento": "contabilidad.crear-plan-de-cuentas", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "que es la cuenta generica y por que es obligatoria", "procedimiento": "contabilidad.crear-plan-de-cuentas", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "para que sirve marcar la cuenta es refleja", "procedimiento": "contabilidad.crear-plan-de-cuentas", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Cómo se configuran las cuentas de transferencia Debe y Haber para la clase 6 o 9?", "procedimiento": "contabilidad.crear-plan-de-cuentas", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que opciones hay en diferencia de cambio mensual, por cuenta, por documento o ninguno", "procedimiento": "contabilidad.crear-plan-de-cuentas", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q es cuenta analitika en el plan contable", "procedimiento": "contabilidad.crear-plan-de-cuentas", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "que hay que preparar en excel antes de importar el plan de cuentas", "procedimiento": "contabilidad.crear-plan-de-cuentas", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "importe el plan de cuentas y no me aparecen las cuentas en la pestaña cuentas", "procedimiento": "contabilidad.crear-plan-de-cuentas", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "el excel del plan no lo reconoce el sistema al importar", "procedimiento": "contabilidad.crear-plan-de-cuentas", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "las operaciones no se contabilizan solas, que me falta definir del plan contable", "procedimiento": "contabilidad.crear-plan-de-cuentas", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "nose xq no me importa el plan de cuentas", "procedimiento": "contabilidad.crear-plan-de-cuentas", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "no importa plan", "procedimiento": "contabilidad.crear-plan-de-cuentas", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "al importar me carga filas de mas o me deja filas fuera, donde indico cuales", "procedimiento": "contabilidad.crear-plan-de-cuentas", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "puse el plan pero el sistema no contabiliza desde la fecha que queria, que reviso", "procedimiento": "contabilidad.crear-plan-de-cuentas", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "¿Cómo visualizo el Estado de Situación Financiera de un periodo determinado?", "procedimiento": "contabilidad.emitir-estados-financieros", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como saco el balance de marzo en el s10", "procedimiento": "contabilidad.emitir-estados-financieros", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como veo los importes procesados del estado financiero", "procedimiento": "contabilidad.emitir-estados-financieros", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo imprimo el balance general del mes", "procedimiento": "contabilidad.emitir-estados-financieros", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "ver balance", "procedimiento": "contabilidad.emitir-estados-financieros", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "el gerente me pide el balance del mes para la reunion, como lo emito", "procedimiento": "contabilidad.emitir-estados-financieros", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como abro la vista preliminar del balance para imprimirlo", "procedimiento": "contabilidad.emitir-estados-financieros", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Pasos para seleccionar el informe y el periodo y evaluar el estado financiero", "procedimiento": "contabilidad.emitir-estados-financieros", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como ago pa ver el balance del periodo en contabilidad", "procedimiento": "contabilidad.emitir-estados-financieros", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "que le doy click para que me muestre los importes del informe contable", "procedimiento": "contabilidad.emitir-estados-financieros", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "sacar balance", "procedimiento": "contabilidad.emitir-estados-financieros", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "ya esta todo contabilizado y necesito sacar el estado financiero del periodo para el directorio", "procedimiento": "contabilidad.emitir-estados-financieros", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como hago para imprimir el estado de situacion financiera ya configurado", "procedimiento": "contabilidad.emitir-estados-financieros", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se muestra la información del estado financiero según el periodo elegido?", "procedimiento": "contabilidad.emitir-estados-financieros", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "elegir periodo y evaluar el balance, como es", "procedimiento": "contabilidad.emitir-estados-financieros", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "estado finaciero del mes como lo veo", "procedimiento": "contabilidad.emitir-estados-financieros", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "por donde entro para visualizar el balance de un periodo", "procedimiento": "contabilidad.emitir-estados-financieros", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde esta el boton evaluar estado financiero", "procedimiento": "contabilidad.emitir-estados-financieros", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "vista preliminar donde", "procedimiento": "contabilidad.emitir-estados-financieros", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "dnd sale la vista preliminar del balance", "procedimiento": "contabilidad.emitir-estados-financieros", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "en que escenario escojo el periodo para ver el informe contable", "procedimiento": "contabilidad.emitir-estados-financieros", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué escenario se selecciona el informe ESTADO DE SITUACION FINANCIERA para evaluarlo?", "procedimiento": "contabilidad.emitir-estados-financieros", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "configuré el informe contable pero ahora no se donde se visualiza con los importes", "procedimiento": "contabilidad.emitir-estados-financieros", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "que debe estar configurado antes de poder evaluar un estado financiero", "procedimiento": "contabilidad.emitir-estados-financieros", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "de donde salen los informes que aparecen para elegir al ver estados financieros", "procedimiento": "contabilidad.emitir-estados-financieros", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Debo parametrizar algo en Informes Contables antes de emitir el balance?", "procedimiento": "contabilidad.emitir-estados-financieros", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "q se nesesita configurar antes de sacar el estado financiero", "procedimiento": "contabilidad.emitir-estados-financieros", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "como indico que el balance salga de un periodo en especifico", "procedimiento": "contabilidad.emitir-estados-financieros", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "puedo cambiar el informe que se muestra o debo configurarlo antes en parametros", "procedimiento": "contabilidad.emitir-estados-financieros", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "en estados financieros la lista de informes sale vacia", "procedimiento": "contabilidad.emitir-estados-financieros", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "le di evaluar al estado financiero y no veo importes, que hice mal", "procedimiento": "contabilidad.emitir-estados-financieros", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "elegi el informe pero no pasa nada hasta que presiono evaluar, no veo nada", "procedimiento": "contabilidad.emitir-estados-financieros", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "el estado finaciero sale en blanco", "procedimiento": "contabilidad.emitir-estados-financieros", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "balance sin importes", "procedimiento": "contabilidad.emitir-estados-financieros", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "no encuentro el icono vista preliminar del estado financiero", "procedimiento": "contabilidad.emitir-estados-financieros", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "necesito el balance pero el informe que me piden no aparece para elegirlo", "procedimiento": "contabilidad.emitir-estados-financieros", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "Pasos para armar el libro de compras de un mes y dejarlo listo para el PLE", "procedimiento": "contabilidad.generar-libros-electronicos", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como saco el libro de compras electronico del mes", "procedimiento": "contabilidad.generar-libros-electronicos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como procesar los datos de un libro auxiliar para sunat", "procedimiento": "contabilidad.generar-libros-electronicos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo genero el liebro electronico de compras", "procedimiento": "contabilidad.generar-libros-electronicos", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "archivo para el ple", "procedimiento": "contabilidad.generar-libros-electronicos", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "se acerca el vencimiento de la declaracion mensual y necesito el archivo de compras, como lo preparo", "procedimiento": "contabilidad.generar-libros-electronicos", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "pasos para validar un libro electronico antes de declarar", "procedimiento": "contabilidad.generar-libros-electronicos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Procedimiento para procesar la información de un libro y generar el archivo del PLE", "procedimiento": "contabilidad.generar-libros-electronicos", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como ago el archivo pa declarar en el ple", "procedimiento": "contabilidad.generar-libros-electronicos", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como elijo el tipo de libro y el periodo para procesar los datos", "procedimiento": "contabilidad.generar-libros-electronicos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "procesamiento de datos libros", "procedimiento": "contabilidad.generar-libros-electronicos", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "contabilidad me pide el libro de compras de agosto listo para subir a sunat", "procedimiento": "contabilidad.generar-libros-electronicos", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como reviso la informacion procesada antes de declarar", "procedimiento": "contabilidad.generar-libros-electronicos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo genero con clic derecho el archivo del libro electrónico?", "procedimiento": "contabilidad.generar-libros-electronicos", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "sacar el registro de compras de un periodo para presentarlo por el ple", "procedimiento": "contabilidad.generar-libros-electronicos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "libros electronikos como los saco", "procedimiento": "contabilidad.generar-libros-electronicos", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "por donde entro para trabajar con el PLE en el s10", "procedimiento": "contabilidad.generar-libros-electronicos", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde veo el campo validacion", "procedimiento": "contabilidad.generar-libros-electronicos", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "icono procesamiento de datos", "procedimiento": "contabilidad.generar-libros-electronicos", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "en que parte se elige el tipo de libro auxiliar", "procedimiento": "contabilidad.generar-libros-electronicos", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd se ve la validasion de los libros", "procedimiento": "contabilidad.generar-libros-electronicos", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "me dijeron que ahi mismo se genera el archivo del ple, en que escenario es", "procedimiento": "contabilidad.generar-libros-electronicos", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "¿Dónde se hace clic derecho para generar el archivo a declarar?", "procedimiento": "contabilidad.generar-libros-electronicos", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "que significa el campo validacion en libros electronicos", "procedimiento": "contabilidad.generar-libros-electronicos", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "con que parametros valida el s10 los libros segun sunat", "procedimiento": "contabilidad.generar-libros-electronicos", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué debo elegir en la cabecera antes de procesar un libro electrónico?", "procedimiento": "contabilidad.generar-libros-electronicos", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "q se pone en tipo y periodo pa un libro electronico", "procedimiento": "contabilidad.generar-libros-electronicos", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "tengo que configurar algo antes de generar el archivo del ple", "procedimiento": "contabilidad.generar-libros-electronicos", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como se sabe que lineas de documentos estan observadas", "procedimiento": "contabilidad.generar-libros-electronicos", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "en validacion me salen lineas observadas, que hago", "procedimiento": "contabilidad.generar-libros-electronicos", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el ple me rechaza algunas lineas del registro de compras", "procedimiento": "contabilidad.generar-libros-electronicos", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "hay documentos con error en el libro del periodo, donde los identifico", "procedimiento": "contabilidad.generar-libros-electronicos", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "me salen erores en la validasion del libro electronico", "procedimiento": "contabilidad.generar-libros-electronicos", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "validacion con errores", "procedimiento": "contabilidad.generar-libros-electronicos", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "no puedo declarar el libro porque tiene observaciones, como las arreglo", "procedimiento": "contabilidad.generar-libros-electronicos", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "procesé el registro de compras y varios documentos salen marcados, como los arreglo antes de declarar", "procedimiento": "contabilidad.generar-libros-electronicos", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "¿Cómo ingreso a mano un asiento contable con cuentas al debe y al haber?", "procedimiento": "contabilidad.registrar-asiento-manual", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como hago el asiento de depreciacion de los equipos", "procedimiento": "contabilidad.registrar-asiento-manual", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como paso un saldo de una cuenta a otra con un asiento de reclasificacion", "procedimiento": "contabilidad.registrar-asiento-manual", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo registro un asiento manual en el s10", "procedimiento": "contabilidad.registrar-asiento-manual", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "asiento a mano", "procedimiento": "contabilidad.registrar-asiento-manual", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "me di cuenta que un gasto lo cargué a la cuenta equivocada, como lo corrijo con un asiento", "procedimiento": "contabilidad.registrar-asiento-manual", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como agrego lineas de debe y haber en un asiento", "procedimiento": "contabilidad.registrar-asiento-manual", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Pasos para registrar un asiento con fecha de aplicación contable y moneda", "procedimiento": "contabilidad.registrar-asiento-manual", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como ago un asiento y q se vea en el diario", "procedimiento": "contabilidad.registrar-asiento-manual", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como pongo la moneda del asiento y las cuentas", "procedimiento": "contabilidad.registrar-asiento-manual", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "hacer asiento", "procedimiento": "contabilidad.registrar-asiento-manual", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "fin de mes y el contador pide registrar la depreciacion mensual, como lo ingreso al sistema", "procedimiento": "contabilidad.registrar-asiento-manual", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "para corregir un error contable hago un asiento a mano, como es", "procedimiento": "contabilidad.registrar-asiento-manual", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Qué datos registro en la cabecera de información de un asiento manual?", "procedimiento": "contabilidad.registrar-asiento-manual", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "quiero meter un asiento que no viene de ninguna operacion, como", "procedimiento": "contabilidad.registrar-asiento-manual", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "asientos manuales pasos porfa", "procedimiento": "contabilidad.registrar-asiento-manual", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "por donde entro para meter un asiento contable propio", "procedimiento": "contabilidad.registrar-asiento-manual", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde veo el asiento que registre a mano", "procedimiento": "contabilidad.registrar-asiento-manual", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "asientos detallados donde", "procedimiento": "contabilidad.registrar-asiento-manual", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "en que libro queda reflejado el asiento manual", "procedimiento": "contabilidad.registrar-asiento-manual", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd veo los asientos de cada operacion en detalle", "procedimiento": "contabilidad.registrar-asiento-manual", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "¿Qué escenario muestra de forma detallada los asientos de las distintas operaciones?", "procedimiento": "contabilidad.registrar-asiento-manual", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "registre un asiento y quiero confirmar que salio en el libro diario, donde miro", "procedimiento": "contabilidad.registrar-asiento-manual", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "que necesito tener cargado antes de hacer un asiento manual", "procedimiento": "contabilidad.registrar-asiento-manual", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "donde se define la moneda del asiento manual", "procedimiento": "contabilidad.registrar-asiento-manual", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué debe estar importado al S10 para poder registrar asientos manuales?", "procedimiento": "contabilidad.registrar-asiento-manual", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "q operaciones se pueden aser como asiento manual", "procedimiento": "contabilidad.registrar-asiento-manual", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "donde se indica la fecha de aplicacion contable del asiento", "procedimiento": "contabilidad.registrar-asiento-manual", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que tipo de operaciones se pueden registrar con asientos a mano", "procedimiento": "contabilidad.registrar-asiento-manual", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "no encuentro las cuentas para armar el asiento manual", "procedimiento": "contabilidad.registrar-asiento-manual", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el asiento que hice no sale en el libro diario", "procedimiento": "contabilidad.registrar-asiento-manual", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "estoy en asientos manuales pero la lista de cuentas sale vacia, que me falta", "procedimiento": "contabilidad.registrar-asiento-manual", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "el asiento manul no aparece en el libro diario", "procedimiento": "contabilidad.registrar-asiento-manual", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "asiento no sale", "procedimiento": "contabilidad.registrar-asiento-manual", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "no me aparece la cuenta contable al llenar el detalle del asiento", "procedimiento": "contabilidad.registrar-asiento-manual", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "registre la depreciacion pero en el libro diario no la veo", "procedimiento": "contabilidad.registrar-asiento-manual", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "¿Cómo configuro a un usuario como aprobador de pagos con su monto máximo?", "procedimiento": "administrativo.definir-aprobadores-de-pagos", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "quiero que juan pueda aprobar pagos hasta 10 mil soles, como lo dejo", "procedimiento": "administrativo.definir-aprobadores-de-pagos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como le doy a un usuario permiso para autorizar pagos", "procedimiento": "administrativo.definir-aprobadores-de-pagos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo hago aprovador de pagos a un usuario", "procedimiento": "administrativo.definir-aprobadores-de-pagos", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "habilitar aprobador", "procedimiento": "administrativo.definir-aprobadores-de-pagos", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "cambiamos de tesorero y el nuevo tiene que autorizar las ordenes de pago, que hago en el sistema", "procedimiento": "administrativo.definir-aprobadores-de-pagos", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "pasos para ponerle autoriza pago y moneda a un usuario", "procedimiento": "administrativo.definir-aprobadores-de-pagos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Procedimiento para definir el monto máximo de autorización por moneda de un usuario", "procedimiento": "administrativo.definir-aprobadores-de-pagos", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como pongo q un usuario autorise pagos en soles", "procedimiento": "administrativo.definir-aprobadores-de-pagos", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como agrego un usuario a la sucursal principal para que apruebe pagos", "procedimiento": "administrativo.definir-aprobadores-de-pagos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "usuario autoriza pago", "procedimiento": "administrativo.definir-aprobadores-de-pagos", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "necesito que la gerente apruebe pagos hasta cierto monto, como lo configuro", "procedimiento": "administrativo.definir-aprobadores-de-pagos", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como le doy acceso al escenario de pagos al usuario aprobador", "procedimiento": "administrativo.definir-aprobadores-de-pagos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se agrega un usuario en Usuarios por Empresa y se marca como Responsable?", "procedimiento": "administrativo.definir-aprobadores-de-pagos", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como habilito el check responsable de un usuario en la empresa", "procedimiento": "administrativo.definir-aprobadores-de-pagos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "asignar monto maximo y moneda a un aprovador", "procedimiento": "administrativo.definir-aprobadores-de-pagos", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "donde se marca autoriza pago de un usuario", "procedimiento": "administrativo.definir-aprobadores-de-pagos", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que escenario esta usuarios por sucursal", "procedimiento": "administrativo.definir-aprobadores-de-pagos", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "datos generales usuarios por empresa", "procedimiento": "administrativo.definir-aprobadores-de-pagos", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "dnd doy acceso a los escenarios al usuario", "procedimiento": "administrativo.definir-aprobadores-de-pagos", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "¿En qué pestaña se da acceso a un escenario con clic derecho en Dar acceso?", "procedimiento": "administrativo.definir-aprobadores-de-pagos", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde defino la moneda y el monto que puede aprobar cada usuario", "procedimiento": "administrativo.definir-aprobadores-de-pagos", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "ya creé el usuario en mantenimiento de usuarios, y ahora donde lo habilito para aprobar pagos", "procedimiento": "administrativo.definir-aprobadores-de-pagos", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "que significa el check autoriza pago", "procedimiento": "administrativo.definir-aprobadores-de-pagos", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que se define en el recuadro que sale al marcar autoriza pago", "procedimiento": "administrativo.definir-aprobadores-de-pagos", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Debe existir el usuario en Mantenimiento de usuarios antes de volverlo aprobador?", "procedimiento": "administrativo.definir-aprobadores-de-pagos", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "puedo elegir la moneda en la que cada aprobador tiene autorizado el pago", "procedimiento": "administrativo.definir-aprobadores-de-pagos", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q es monto maximo en el aprobador", "procedimiento": "administrativo.definir-aprobadores-de-pagos", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "que permisos hay que darle al usuario en los escenarios del modulo administrativo", "procedimiento": "administrativo.definir-aprobadores-de-pagos", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "cree un usuario pero al mandarle una orden de pago no le sale la opcion de aprobar", "procedimiento": "administrativo.definir-aprobadores-de-pagos", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "el usuario no aparece en usuarios por empresa para elegirlo", "procedimiento": "administrativo.definir-aprobadores-de-pagos", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "mi aprobador no puede autorizar pagos en dolares, solo en soles", "procedimiento": "administrativo.definir-aprobadores-de-pagos", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el usuario no puede autorisar pagos aunque ya le marque el check", "procedimiento": "administrativo.definir-aprobadores-de-pagos", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "aprobador sin permiso", "procedimiento": "administrativo.definir-aprobadores-de-pagos", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "el usuario entra al sistema pero no ve los escenarios de administrativo", "procedimiento": "administrativo.definir-aprobadores-de-pagos", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "habilité autoriza pago pero el usuario sigue sin entrar al escenario, que falto", "procedimiento": "administrativo.definir-aprobadores-de-pagos", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "¿Cómo registro en el diario de caja el cobro de un documento pendiente?", "procedimiento": "administrativo.registrar-cobranza-en-efectivo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "un cliente vino a cancelar su documento con billetes, como lo asiento en el diario de caja", "procedimiento": "administrativo.registrar-cobranza-en-efectivo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como adiciono el tipo de transaccion de ingresos por documentos", "procedimiento": "administrativo.registrar-cobranza-en-efectivo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo registro un cobro en efectivo de un cliente", "procedimiento": "administrativo.registrar-cobranza-en-efectivo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "cobranza", "procedimiento": "administrativo.registrar-cobranza-en-efectivo", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "el cliente de la obra pasó a pagar su factura en la oficina, que hago en el sistema", "procedimiento": "administrativo.registrar-cobranza-en-efectivo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como veo solo los documentos pendientes de un cliente al cobrar", "procedimiento": "administrativo.registrar-cobranza-en-efectivo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Pasos para adicionar un documento en el Cronograma de Cobranzas y aceptar el cobro", "procedimiento": "administrativo.registrar-cobranza-en-efectivo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como ago el cobro en efectivo en el diario de caja", "procedimiento": "administrativo.registrar-cobranza-en-efectivo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como cobro un documento que ingrese en facturacion", "procedimiento": "administrativo.registrar-cobranza-en-efectivo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cobro caja efectivo", "procedimiento": "administrativo.registrar-cobranza-en-efectivo", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "tengo documentos por cobrar que emiti en facturacion y quiero cancelar uno hoy, como lo cobro", "procedimiento": "administrativo.registrar-cobranza-en-efectivo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como reviso la linea del cobro antes de aceptar", "procedimiento": "administrativo.registrar-cobranza-en-efectivo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se elige el tipo de transacción Documentos por Cobrar (Ingresos)?", "procedimiento": "administrativo.registrar-cobranza-en-efectivo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como lleno la ventana cobranzas con o sin cliente", "procedimiento": "administrativo.registrar-cobranza-en-efectivo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cobransa en efectivo paso a paso", "procedimiento": "administrativo.registrar-cobranza-en-efectivo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "por que pantalla puedo cobrar documentos de facturacion", "procedimiento": "administrativo.registrar-cobranza-en-efectivo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde agrego una transaccion al diario de caja", "procedimiento": "administrativo.registrar-cobranza-en-efectivo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "diario de caja", "procedimiento": "administrativo.registrar-cobranza-en-efectivo", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "dnd esta el cronograma de cobransas", "procedimiento": "administrativo.registrar-cobranza-en-efectivo", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "¿En qué ventana se elige el Cliente al cobrar?", "procedimiento": "administrativo.registrar-cobranza-en-efectivo", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en que escenario aparece el diario creado automaticamente", "procedimiento": "administrativo.registrar-cobranza-en-efectivo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "estoy en administrativo y quiero registrar un cobro, no sé qué escenario abrir", "procedimiento": "administrativo.registrar-cobranza-en-efectivo", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "que debe existir antes de poder cobrar en efectivo", "procedimiento": "administrativo.registrar-cobranza-en-efectivo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "necesito crear el libro caja del mes antes de las cobranzas", "procedimiento": "administrativo.registrar-cobranza-en-efectivo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Debe estar creado el Diario de Caja para agregar las operaciones del día?", "procedimiento": "administrativo.registrar-cobranza-en-efectivo", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "q se nesesita antes de hacer una cobranza", "procedimiento": "administrativo.registrar-cobranza-en-efectivo", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "de donde salen los documentos que aparecen para cobrar", "procedimiento": "administrativo.registrar-cobranza-en-efectivo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que datos trae la linea del cobro, cuenta bancaria, tipo de pago, moneda", "procedimiento": "administrativo.registrar-cobranza-en-efectivo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "la caja no me deja pagar otros documentos, dice que no hay plata registrada", "procedimiento": "administrativo.registrar-cobranza-en-efectivo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me aparecen documentos para cobrar al cliente", "procedimiento": "administrativo.registrar-cobranza-en-efectivo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no puedo cobrar porque dicen que falta el libro caja del mes", "procedimiento": "administrativo.registrar-cobranza-en-efectivo", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no me aparese el documento en el cronograma de cobransas", "procedimiento": "administrativo.registrar-cobranza-en-efectivo", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "no puedo cobrar", "procedimiento": "administrativo.registrar-cobranza-en-efectivo", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "el documento que emiti hoy en facturacion no sale en la lista de pendientes de cobro", "procedimiento": "administrativo.registrar-cobranza-en-efectivo", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "agregue el cobro y no veo la linea en el diario, que paso", "procedimiento": "administrativo.registrar-cobranza-en-efectivo", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "¿Cómo registro a mano el estado bancario de una cuenta?", "procedimiento": "administrativo.registrar-estado-bancario-manual", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como concilio los movimientos del banco con mis cobros y pagos", "procedimiento": "administrativo.registrar-estado-bancario-manual", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como agrego cargos y abonos del extracto del banco", "procedimiento": "administrativo.registrar-estado-bancario-manual", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo hago la conciliasion bancaria en s10", "procedimiento": "administrativo.registrar-estado-bancario-manual", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "conciliar banco", "procedimiento": "administrativo.registrar-estado-bancario-manual", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "me llegó el extracto del mes y debo cuadrarlo con la caja, como lo trabajo en el sistema", "procedimiento": "administrativo.registrar-estado-bancario-manual", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como uso la conciliacion automatica", "procedimiento": "administrativo.registrar-estado-bancario-manual", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Pasos para generar pago y conciliar un documento pendiente", "procedimiento": "administrativo.registrar-estado-bancario-manual", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como ago pa conciliar los pagos pendientes con el banco", "procedimiento": "administrativo.registrar-estado-bancario-manual", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como imprimo los movimientos conciliados y los pendientes", "procedimiento": "administrativo.registrar-estado-bancario-manual", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "extracto manual", "procedimiento": "administrativo.registrar-estado-bancario-manual", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "el banco cobró una comisión que no tengo en el sistema, como la registro para conciliar", "procedimiento": "administrativo.registrar-estado-bancario-manual", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como elijo el periodo y la cuenta bancaria del estado de cuenta", "procedimiento": "administrativo.registrar-estado-bancario-manual", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se elige la vista horizontal o vertical del estado bancario?", "procedimiento": "administrativo.registrar-estado-bancario-manual", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como agrego lineas con los conceptos bancarios y sus importes", "procedimiento": "administrativo.registrar-estado-bancario-manual", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como registro cargos y abonos en el estado vancario a mano", "procedimiento": "administrativo.registrar-estado-bancario-manual", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "en que escenario se hace la conciliacion con el banco", "procedimiento": "administrativo.registrar-estado-bancario-manual", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde esta el catalogo de conceptos bancarios", "procedimiento": "administrativo.registrar-estado-bancario-manual", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "estado bancario", "procedimiento": "administrativo.registrar-estado-bancario-manual", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "dnd esta la opsion importar bcp", "procedimiento": "administrativo.registrar-estado-bancario-manual", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "¿Dónde se ve el documento CARGO BANCARIO o ABONO BANCARIO generado?", "procedimiento": "administrativo.registrar-estado-bancario-manual", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "por donde imprimo los comprobantes por conciliar", "procedimiento": "administrativo.registrar-estado-bancario-manual", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "me pasaron el archivo del bcp y no se donde se importa", "procedimiento": "administrativo.registrar-estado-bancario-manual", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "que debo preparar en el catalogo de recursos para conciliar", "procedimiento": "administrativo.registrar-estado-bancario-manual", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como codifico los recursos del banco en tipo bancos", "procedimiento": "administrativo.registrar-estado-bancario-manual", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Para qué sirve la opción Importar BCP en el estado bancario?", "procedimiento": "administrativo.registrar-estado-bancario-manual", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que revisa la conciliacion automatica al ejecutarla", "procedimiento": "administrativo.registrar-estado-bancario-manual", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q es un concepto bancario en la conciliasion", "procedimiento": "administrativo.registrar-estado-bancario-manual", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "se puede usar una plantilla para importar las lineas del estado bancario", "procedimiento": "administrativo.registrar-estado-bancario-manual", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "la conciliacion automatica no concilio todos los documentos", "procedimiento": "administrativo.registrar-estado-bancario-manual", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "me quedan documentos cobrados y pagados sin conciliar, que hago", "procedimiento": "administrativo.registrar-estado-bancario-manual", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no me salen conceptos bancarios para elegir en las lineas", "procedimiento": "administrativo.registrar-estado-bancario-manual", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no consilia el estado bancario", "procedimiento": "administrativo.registrar-estado-bancario-manual", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "pendientes por conciliar", "procedimiento": "administrativo.registrar-estado-bancario-manual", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "el saldo del estado bancario no me sale automatico", "procedimiento": "administrativo.registrar-estado-bancario-manual", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "genere pago y concilie pero no encuentro el documento en pagar o cobrar", "procedimiento": "administrativo.registrar-estado-bancario-manual", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "¿Cómo registro una orden de pago para pagar a proveedores con cheque?", "procedimiento": "administrativo.registrar-pago-con-cheque", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como pago una factura de proveedor con cheque", "procedimiento": "administrativo.registrar-pago-con-cheque", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como traigo los documentos por pagar a la orden segun fecha de vencimiento", "procedimiento": "administrativo.registrar-pago-con-cheque", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo pago a un proveedor con cheke en el s10", "procedimiento": "administrativo.registrar-pago-con-cheque", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "orden de pago", "procedimiento": "administrativo.registrar-pago-con-cheque", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "tengo que pagarle a tres proveedores esta semana con cheque, que pasos sigo", "procedimiento": "administrativo.registrar-pago-con-cheque", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como mando la orden de pago a aprobacion y luego la apruebo", "procedimiento": "administrativo.registrar-pago-con-cheque", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Procedimiento para ejecutar el pago desde Pendientes de Pago con el talonario de cheques", "procedimiento": "administrativo.registrar-pago-con-cheque", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como ago el pago con cheque de una orden aprobada", "procedimiento": "administrativo.registrar-pago-con-cheque", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como hago que el cheque salga preimpreso como no negociable", "procedimiento": "administrativo.registrar-pago-con-cheque", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "pagar orden", "procedimiento": "administrativo.registrar-pago-con-cheque", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "ya aprobaron la orden de pago, ahora donde y como emito el cheque", "procedimiento": "administrativo.registrar-pago-con-cheque", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como pago varios documentos de un mismo proveedor a la vez", "procedimiento": "administrativo.registrar-pago-con-cheque", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se registra la fecha de pago y las observaciones de una orden de pago?", "procedimiento": "administrativo.registrar-pago-con-cheque", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como dejo el check de pago electronico sin activar y elijo el medio de pago en el detalle", "procedimiento": "administrativo.registrar-pago-con-cheque", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "pagos con cheke paso a paso", "procedimiento": "administrativo.registrar-pago-con-cheque", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "en que escenario se ejecutan los pagos de ordenes aprobadas", "procedimiento": "administrativo.registrar-pago-con-cheque", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde elijo el tipo de pago cuenta bancaria", "procedimiento": "administrativo.registrar-pago-con-cheque", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "pendientes de pago", "procedimiento": "administrativo.registrar-pago-con-cheque", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "dnd veo el pago ya echo", "procedimiento": "administrativo.registrar-pago-con-cheque", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "¿Dónde se ven las pestañas Documentos, Tipo de Pago y Asiento Contable de un pago?", "procedimiento": "administrativo.registrar-pago-con-cheque", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde creo una orden de pago nueva", "procedimiento": "administrativo.registrar-pago-con-cheque", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "mande a aprobar la orden y ahora no sé en que pantalla se paga", "procedimiento": "administrativo.registrar-pago-con-cheque", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "que necesito tener antes de pagar con cheque, talonario y cuenta", "procedimiento": "administrativo.registrar-pago-con-cheque", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como registro la cuenta bancaria para poder usarla en una orden de pago", "procedimiento": "administrativo.registrar-pago-con-cheque", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué usuarios deben tener acceso al talonario de cheques de la cuenta bancaria?", "procedimiento": "administrativo.registrar-pago-con-cheque", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que datos de la cuenta bancaria deben estar registrados en el grupo bancos", "procedimiento": "administrativo.registrar-pago-con-cheque", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q es el talonario relacionado a la cuenta", "procedimiento": "administrativo.registrar-pago-con-cheque", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "que hago con el check de pago electronico en una orden de pago con cheque", "procedimiento": "administrativo.registrar-pago-con-cheque", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "pago una orden aprobada y no me deja usar ningun cheque de la cuenta, que reviso", "procedimiento": "administrativo.registrar-pago-con-cheque", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "mi usuario no tiene acceso al talonario de la cuenta", "procedimiento": "administrativo.registrar-pago-con-cheque", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "la cuenta bancaria de la orden no tiene talonario y no me deja pagar", "procedimiento": "administrativo.registrar-pago-con-cheque", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me dexa pagar con cheque aunque la orden esta aprobada", "procedimiento": "administrativo.registrar-pago-con-cheque", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "falla pago cheque", "procedimiento": "administrativo.registrar-pago-con-cheque", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "no encuentro la linea de la orden en pendientes de pago", "procedimiento": "administrativo.registrar-pago-con-cheque", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "soy cajera y al ir a pagar con cheque no me permite, otro compañero si puede", "procedimiento": "administrativo.registrar-pago-con-cheque", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}

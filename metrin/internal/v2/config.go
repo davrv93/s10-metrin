@@ -96,6 +96,7 @@ type Config struct {
 	URLDecision    string // DECISION_URL: local → por defecto URLDecisionLocal; remota → obligatoria
 
 	TipoModelo   string  // V2_TIPO_MODELO: modelo kNN de tipo de respuesta (.json de clasificar o catálogo .yml)
+	Router       string  // V2_ROUTER: cabeza del router de casos (router-s10.cabeza.json); vacío = sin router (router.go)
 	TipoUmbral   float64 // V2_TIPO_UMBRAL: provisional, ver UmbralTipoDefecto
 	TipoMargen   float64 // V2_TIPO_MARGEN: provisional, ver MargenTipoDefecto
 	EvidenciaMin float64 // V2_EVIDENCIA_MIN: provisional, ver EvidenciaMinDefecto
@@ -200,6 +201,7 @@ func LeerConfigDe(env func(string) string) Config {
 	c.ModeloDecision = strings.TrimSpace(env("DECISION_MODEL"))
 	c.URLDecision = strings.TrimSpace(env("DECISION_URL"))
 	c.TipoModelo = strings.TrimSpace(env("V2_TIPO_MODELO"))
+	c.Router = strings.TrimSpace(env("V2_ROUTER"))
 	decimal(env, "V2_TIPO_UMBRAL", &c.TipoUmbral)
 	decimal(env, "V2_TIPO_MARGEN", &c.TipoMargen)
 	decimal(env, "V2_EVIDENCIA_MIN", &c.EvidenciaMin)

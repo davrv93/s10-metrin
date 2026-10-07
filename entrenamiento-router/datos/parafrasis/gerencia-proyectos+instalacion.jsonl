@@ -1,0 +1,396 @@
+{"texto": "¿Cómo se asigna un presupuesto elaborado en S10 Presupuestos a una rama del proyecto en Gerencia de Proyectos?", "procedimiento": "gerencia-proyectos.asignar-presupuestos-al-proyecto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como le meto el presupuesto al proyecto q ya cree", "procedimiento": "gerencia-proyectos.asignar-presupuestos-al-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo asigno el prosupuesto meta al proyeto", "procedimiento": "gerencia-proyectos.asignar-presupuestos-al-proyecto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "amarrar presupuesto a la obra", "procedimiento": "gerencia-proyectos.asignar-presupuestos-al-proyecto", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "ya tengo el presupuesto terminado en presupuestos y el proyecto creado, ahora toca unirlos, como hago", "procedimiento": "gerencia-proyectos.asignar-presupuestos-al-proyecto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "el presupuesto de venta lo asigno igual que el meta o es distinto", "procedimiento": "gerencia-proyectos.asignar-presupuestos-al-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Explíqueme el procedimiento para asignar más de un presupuesto a la misma rama del proyecto", "procedimiento": "gerencia-proyectos.asignar-presupuestos-al-proyecto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como pongo 2 prespuestos en un solo proyecto", "procedimiento": "gerencia-proyectos.asignar-presupuestos-al-proyecto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "asignar presupuesto meta", "procedimiento": "gerencia-proyectos.asignar-presupuestos-al-proyecto", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "tenemos el presupuesto del cliente y otro interno, quiero que el proyecto tenga los dos, como los cargo", "procedimiento": "gerencia-proyectos.asignar-presupuestos-al-proyecto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "en que momento hago la linea base de la obra", "procedimiento": "gerencia-proyectos.asignar-presupuestos-al-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Una vez concluida la programación de la rama meta, ¿cómo genero la Línea Base?", "procedimiento": "gerencia-proyectos.asignar-presupuestos-al-proyecto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "clic derecho en la rama y despues que opcion elijo para jalar el presupuesto", "procedimiento": "gerencia-proyectos.asignar-presupuestos-al-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como asigno presupuesto a la rama benta", "procedimiento": "gerencia-proyectos.asignar-presupuestos-al-proyecto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "mi jefe quiere que la rama venta tenga lo del propietario y la meta lo interno, como cargo cada presupuesto", "procedimiento": "gerencia-proyectos.asignar-presupuestos-al-proyecto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "ya tengo el proyecto en datos generales, y ahora como le traigo las partidas y metrados", "procedimiento": "gerencia-proyectos.asignar-presupuestos-al-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿En qué escenario se asignan los presupuestos al proyecto?", "procedimiento": "gerencia-proyectos.asignar-presupuestos-al-proyecto", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde sale la opcion asignar presupuesto", "procedimiento": "gerencia-proyectos.asignar-presupuestos-al-proyecto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Dónde aparece el Catálogo de Presupuestos para elegir el de la rama?", "procedimiento": "gerencia-proyectos.asignar-presupuestos-al-proyecto", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "dnd se crea la linea base", "procedimiento": "gerencia-proyectos.asignar-presupuestos-al-proyecto", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "asignar presupuesto donde", "procedimiento": "gerencia-proyectos.asignar-presupuestos-al-proyecto", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "estoy parado en datos generales con el proyecto elegido, por donde asigno el presupuesto", "procedimiento": "gerencia-proyectos.asignar-presupuestos-al-proyecto", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "¿En qué rama va la información que es para el propietario del proyecto?", "procedimiento": "gerencia-proyectos.asignar-presupuestos-al-proyecto", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "los presupuestos tienen que estar en la misma moneda para asignarlos al proyecto", "procedimiento": "gerencia-proyectos.asignar-presupuestos-al-proyecto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué debe estar elaborado en S10 Presupuestos antes de asignarlo al proyecto?", "procedimiento": "gerencia-proyectos.asignar-presupuestos-al-proyecto", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que diferencia hay entre dejar el presupuesto en la rama venta y en la meta", "procedimiento": "gerencia-proyectos.asignar-presupuestos-al-proyecto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "puedo poner varios presupuestos en una rama o solo uno", "procedimiento": "gerencia-proyectos.asignar-presupuestos-al-proyecto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "en ke moneda tienen q estar los prespuestos del proyecto", "procedimiento": "gerencia-proyectos.asignar-presupuestos-al-proyecto", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "no tengo presupuesto hecho en s10 presupuestos, que registro en partidas de control para llevar igual el gasto", "procedimiento": "gerencia-proyectos.asignar-presupuestos-al-proyecto", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "tengo un presupuesto en soles y otro en dolares y no los puedo asignar juntos", "procedimiento": "gerencia-proyectos.asignar-presupuestos-al-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "Si aún no existe el presupuesto en el módulo de Presupuestos, ¿qué debo hacer para el proyecto?", "procedimiento": "gerencia-proyectos.asignar-presupuestos-al-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "Modifiqué el presupuesto ya asignado, ¿debo procesarlo con el procesamiento tipo 3 para que el proyecto lo tome?", "procedimiento": "gerencia-proyectos.asignar-presupuestos-al-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "q pasa si asigno prespuestos de monedas distintas", "procedimiento": "gerencia-proyectos.asignar-presupuestos-al-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "abro el proyecto y no tiene partidas, ni metrados ni recursos, que me falto", "procedimiento": "gerencia-proyectos.asignar-presupuestos-al-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "todavia no hay presupuesto en s10 y igual necesito comprar para la obra, que me toca hacer", "procedimiento": "gerencia-proyectos.asignar-presupuestos-al-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "monedas distintas presupuestos proyecto", "procedimiento": "gerencia-proyectos.asignar-presupuestos-al-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "¿Cómo configuro el calendario base de un proyecto en Gerencia de Proyectos?", "procedimiento": "gerencia-proyectos.configurar-calendario-del-proyecto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como marco los feriados en el calendario de la obra", "procedimiento": "gerencia-proyectos.configurar-calendario-del-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo pongo los dias no laborables del proyeto", "procedimiento": "gerencia-proyectos.configurar-calendario-del-proyecto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "calendario obra s10", "procedimiento": "gerencia-proyectos.configurar-calendario-del-proyecto", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "la obra para en semana santa y por el aniversario del distrito, como lo dejo en el calendario", "procedimiento": "gerencia-proyectos.configurar-calendario-del-proyecto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como cambio la hora de salida de los sabados en el calendario del proyecto", "procedimiento": "gerencia-proyectos.configurar-calendario-del-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Indíqueme cómo registrar los feriados adicionales del lugar de ejecución del proyecto", "procedimiento": "gerencia-proyectos.configurar-calendario-del-proyecto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como jalo los feriados nacionales al calendario del proyecto", "procedimiento": "gerencia-proyectos.configurar-calendario-del-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como asigno NO LABORABLE a un dia del mes", "procedimiento": "gerencia-proyectos.configurar-calendario-del-proyecto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "el 15 de agosto no se trabaja en la obra de cusco, como lo marco", "procedimiento": "gerencia-proyectos.configurar-calendario-del-proyecto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo se modifica el horario por defecto asignado a cada día de la semana?", "procedimiento": "gerencia-proyectos.configurar-calendario-del-proyecto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como digito la hora en el calendario, con dos puntos o como", "procedimiento": "gerencia-proyectos.configurar-calendario-del-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "feriados obra", "procedimiento": "gerencia-proyectos.configurar-calendario-del-proyecto", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "recien registre el proyecto y quiero ajustar dias habiles y horas antes de programar", "procedimiento": "gerencia-proyectos.configurar-calendario-del-proyecto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como calculo las horas y dias laborables de los periodos", "procedimiento": "gerencia-proyectos.configurar-calendario-del-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como cambio el orario de ingreso y salida en el calendario", "procedimiento": "gerencia-proyectos.configurar-calendario-del-proyecto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "¿En qué menú están los feriados fijos por ley?", "procedimiento": "gerencia-proyectos.configurar-calendario-del-proyecto", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "como entro al escenario calendario de un proyecto", "procedimiento": "gerencia-proyectos.configurar-calendario-del-proyecto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Dónde se ve el calendario base que el sistema asigna al registrar el proyecto?", "procedimiento": "gerencia-proyectos.configurar-calendario-del-proyecto", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "calendario donde esta", "procedimiento": "gerencia-proyectos.configurar-calendario-del-proyecto", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "donde hay q ir para ver los feriados que registra nominas", "procedimiento": "gerencia-proyectos.configurar-calendario-del-proyecto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd cambio los horarios de mañana y tarde de la obra", "procedimiento": "gerencia-proyectos.configurar-calendario-del-proyecto", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "estoy en el proyecto de cusco y quiero ver los dias laborables, por donde voy", "procedimiento": "gerencia-proyectos.configurar-calendario-del-proyecto", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "¿Qué debo verificar de los feriados antes de abrir el calendario del proyecto?", "procedimiento": "gerencia-proyectos.configurar-calendario-del-proyecto", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "las horas del horario sirven de tope para los tareos", "procedimiento": "gerencia-proyectos.configurar-calendario-del-proyecto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué formato de hora acepta el horario del calendario?", "procedimiento": "gerencia-proyectos.configurar-calendario-del-proyecto", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "ke tengo q configurar para q el sabado se trabaje medio dia", "procedimiento": "gerencia-proyectos.configurar-calendario-del-proyecto", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "el calendario base es el mismo para todas las actividades y recursos del proyecto", "procedimiento": "gerencia-proyectos.configurar-calendario-del-proyecto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "donde se define el tope de horas que usan los tareos y partes de equipo", "procedimiento": "gerencia-proyectos.configurar-calendario-del-proyecto", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "no me aparecen los feriados nacionales en el calendario", "procedimiento": "gerencia-proyectos.configurar-calendario-del-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "Faltan feriados en Herramientas – Configuración, ¿quién los registra?", "procedimiento": "gerencia-proyectos.configurar-calendario-del-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "escribo las horas sin los dos puntos y no sale bien el horario", "procedimiento": "gerencia-proyectos.configurar-calendario-del-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "me sale un boton para calcular horas y dias laborables, lo tengo que usar", "procedimiento": "gerencia-proyectos.configurar-calendario-del-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no veo el boton para calcular las horas laborables", "procedimiento": "gerencia-proyectos.configurar-calendario-del-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "los feriados de semana santa no estan en la lista, como los agrego", "procedimiento": "gerencia-proyectos.configurar-calendario-del-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "feriados nacionales vacios", "procedimiento": "gerencia-proyectos.configurar-calendario-del-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "¿Cómo activo la visibilidad de los periodos semanales y mensuales en el escenario Periodos?", "procedimiento": "gerencia-proyectos.definir-periodos", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como elijo semanal para la meta y mensual para la venta", "procedimiento": "gerencia-proyectos.definir-periodos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como aser visibles los periodos del proyeto", "procedimiento": "gerencia-proyectos.definir-periodos", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "periodos visibles", "procedimiento": "gerencia-proyectos.definir-periodos", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "el proyecto se alargo 40 dias, como genero los periodos que faltan", "procedimiento": "gerencia-proyectos.definir-periodos", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como incremento los periodos si ya cambie el numero de dias en datos generales", "procedimiento": "gerencia-proyectos.definir-periodos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Explíqueme cómo elegir la escala de periodos para programado, valorizado y subcontrato", "procedimiento": "gerencia-proyectos.definir-periodos", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "donde marco visible a los meses de la obra", "procedimiento": "gerencia-proyectos.definir-periodos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como elijo la escala semanal pal programado", "procedimiento": "gerencia-proyectos.definir-periodos", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "voy a programar en semanas la meta pero al propietario le cobro por mes, como armo los periodos", "procedimiento": "gerencia-proyectos.definir-periodos", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo se despliegan los periodos de cada rama en el escenario Periodos?", "procedimiento": "gerencia-proyectos.definir-periodos", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como refresco los periodos despues de ampliar el plazo", "procedimiento": "gerencia-proyectos.definir-periodos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "escala semanal rama meta", "procedimiento": "gerencia-proyectos.definir-periodos", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "quiero ver los periodos en resultados operativos, que tengo que activar", "procedimiento": "gerencia-proyectos.definir-periodos", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como cambio la escala del subcontrato a semanal", "procedimiento": "gerencia-proyectos.definir-periodos", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como hago para que el sistema me muestre los periodos de mi obra segun la fecha de inicio", "procedimiento": "gerencia-proyectos.definir-periodos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "en que escenario se ven los periodos del proyecto", "procedimiento": "gerencia-proyectos.definir-periodos", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "por donde accedo a periodos del proyecto", "procedimiento": "gerencia-proyectos.definir-periodos", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Dónde está el botón de Escala de Periodos?", "procedimiento": "gerencia-proyectos.definir-periodos", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "dnd se ponen visibles los meses", "procedimiento": "gerencia-proyectos.definir-periodos", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "periodos donde", "procedimiento": "gerencia-proyectos.definir-periodos", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "estoy en datos generales con la rama meta elegida, por donde elijo la escala", "procedimiento": "gerencia-proyectos.definir-periodos", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "donde se incrementan los periodos", "procedimiento": "gerencia-proyectos.definir-periodos", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Qué escala corresponde a cada rama: Venta Descompuesto, Meta, Línea Base y Venta?", "procedimiento": "gerencia-proyectos.definir-periodos", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "puedo usar quincenas en los periodos del proyecto", "procedimiento": "gerencia-proyectos.definir-periodos", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "cuantos periodos puedo dejar visibles para el cronograma", "procedimiento": "gerencia-proyectos.definir-periodos", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "los periodos semanales y los mensuales se pueden mezclar", "procedimiento": "gerencia-proyectos.definir-periodos", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué datos del proyecto necesito para que el sistema genere solo los periodos?", "procedimiento": "gerencia-proyectos.definir-periodos", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "ke escala le pongo al subcontrato", "procedimiento": "gerencia-proyectos.definir-periodos", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "marque varios periodos visibles pero el cronograma por periodos no los muestra todos", "procedimiento": "gerencia-proyectos.definir-periodos", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "quiero periodos quincenales y no me los da", "procedimiento": "gerencia-proyectos.definir-periodos", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "registre todo en semanas y ahora lo quiero ver por meses en resultados operativos, sale raro", "procedimiento": "gerencia-proyectos.definir-periodos", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "abro el cronograma por periodos y no hay ni una semana, que me falta activar", "procedimiento": "gerencia-proyectos.definir-periodos", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "¿Por qué Resultados Operativos toma el promedio cuando paso de semanas a meses?", "procedimiento": "gerencia-proyectos.definir-periodos", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "mas de 15 periodos visibles", "procedimiento": "gerencia-proyectos.definir-periodos", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "me quede sin periodos porque la obra dura mas de lo previsto", "procedimiento": "gerencia-proyectos.definir-periodos", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "¿Cómo ingreso la programación física del proyecto en porcentajes dentro del Cronograma por Periodos?", "procedimiento": "gerencia-proyectos.planificar-en-cronograma-por-periodos", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como programo la obra por semanas poniendo porcentajes", "procedimiento": "gerencia-proyectos.planificar-en-cronograma-por-periodos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como pongo el porsentaje programado en cada semana", "procedimiento": "gerencia-proyectos.planificar-en-cronograma-por-periodos", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "programar meta semanal", "procedimiento": "gerencia-proyectos.planificar-en-cronograma-por-periodos", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "tengo que repartir el 30% de una partida en tres semanas seguidas, como lo hago", "procedimiento": "gerencia-proyectos.planificar-en-cronograma-por-periodos", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como repito el mismo porcentaje en varias actividades hacia abajo", "procedimiento": "gerencia-proyectos.planificar-en-cronograma-por-periodos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Indique cómo calcular las cantidades de recursos una vez programado el metrado", "procedimiento": "gerencia-proyectos.planificar-en-cronograma-por-periodos", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como saco los recursos de lo q programe", "procedimiento": "gerencia-proyectos.planificar-en-cronograma-por-periodos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como uso el saldo proyectado en una selda", "procedimiento": "gerencia-proyectos.planificar-en-cronograma-por-periodos", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "me falta programar lo que queda de una actividad, como lleno ese saldo en el bloque", "procedimiento": "gerencia-proyectos.planificar-en-cronograma-por-periodos", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo se elige el modo de visualización para programar por metrado en vez de porcentaje?", "procedimiento": "gerencia-proyectos.planificar-en-cronograma-por-periodos", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como pongo el modo programado en metrado", "procedimiento": "gerencia-proyectos.planificar-en-cronograma-por-periodos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "recalcular por escala", "procedimiento": "gerencia-proyectos.planificar-en-cronograma-por-periodos", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "ya meti los porcentajes y ahora quiero que me salgan los recursos segun los apu", "procedimiento": "gerencia-proyectos.planificar-en-cronograma-por-periodos", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como veo el porcentaje programado acumulado de cada actividad", "procedimiento": "gerencia-proyectos.planificar-en-cronograma-por-periodos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como cambio a periodo semanal en el cronograma", "procedimiento": "gerencia-proyectos.planificar-en-cronograma-por-periodos", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "por donde entro para planificar el avance fisico semana a semana", "procedimiento": "gerencia-proyectos.planificar-en-cronograma-por-periodos", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Dónde está el botón Modo de visualización?", "procedimiento": "gerencia-proyectos.planificar-en-cronograma-por-periodos", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "el boton escala de periodo dentro del cronograma por periodos, donde esta", "procedimiento": "gerencia-proyectos.planificar-en-cronograma-por-periodos", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde sale la opcion repetir y repartir", "procedimiento": "gerencia-proyectos.planificar-en-cronograma-por-periodos", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd sale recalcular x escala", "procedimiento": "gerencia-proyectos.planificar-en-cronograma-por-periodos", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "cronograma por periodos donde entro", "procedimiento": "gerencia-proyectos.planificar-en-cronograma-por-periodos", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "estoy en la rama meta de mi proyecto y quiero programar, a que escenario voy", "procedimiento": "gerencia-proyectos.planificar-en-cronograma-por-periodos", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "programo en porcentaje, en metrado o en costo", "procedimiento": "gerencia-proyectos.planificar-en-cronograma-por-periodos", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué debe estar listo antes de planificar el proyecto?", "procedimiento": "gerencia-proyectos.planificar-en-cronograma-por-periodos", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "con que escala programo la rama meta", "procedimiento": "gerencia-proyectos.planificar-en-cronograma-por-periodos", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "ke hace la opcion repartir solo horizontal", "procedimiento": "gerencia-proyectos.planificar-en-cronograma-por-periodos", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "despues de recalcular, donde veo los resultados de la planificacion", "procedimiento": "gerencia-proyectos.planificar-en-cronograma-por-periodos", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "¿Qué modo de visualización debo dejar marcado para programar?", "procedimiento": "gerencia-proyectos.planificar-en-cronograma-por-periodos", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "Cambié el presupuesto y uso pedidos automáticos, ¿cómo actualizo el cronograma y los recursos?", "procedimiento": "gerencia-proyectos.planificar-en-cronograma-por-periodos", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "despues de recalcular no veo resultados de la planificacion", "procedimiento": "gerencia-proyectos.planificar-en-cronograma-por-periodos", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "modifique el presupuesto y el techo no me refresca los recursos", "procedimiento": "gerencia-proyectos.planificar-en-cronograma-por-periodos", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "intento repartir un porcentaje en celdas verticales y no pasa nada", "procedimiento": "gerencia-proyectos.planificar-en-cronograma-por-periodos", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "quiero programar pero el proyecto no tiene presupuesto asignado", "procedimiento": "gerencia-proyectos.planificar-en-cronograma-por-periodos", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "kambie el presupuesto y los recursos del cronograma no se actualizan", "procedimiento": "gerencia-proyectos.planificar-en-cronograma-por-periodos", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "recalcular y techo", "procedimiento": "gerencia-proyectos.planificar-en-cronograma-por-periodos", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "¿Cómo registro el WBS en el escenario de Actividades siguiendo el orden constructivo?", "procedimiento": "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como creo las fases de la obra y le pongo partidas a cada una", "procedimiento": "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo asigno las partidas del prespuesto a la fase", "procedimiento": "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "armar edt obra", "procedimiento": "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "tengo el organigrama de la obra en papel y quiero pasarlo al sistema como fases", "procedimiento": "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como asigno una actividad a una fase con doble clic", "procedimiento": "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se ingresa el porcentaje del metrado de una actividad que corresponde a cada fase?", "procedimiento": "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como compruebo q no quedo ninguna partida sin fase", "procedimiento": "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como genero el correlativo de las actividades", "procedimiento": "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "una partida la asignaron a la fase equivocada y quiero quitarla, como lo hago", "procedimiento": "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo listo solo las actividades asignadas a las fases?", "procedimiento": "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como veo en que fases esta metida una partida", "procedimiento": "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "faseado meta", "procedimiento": "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "tengo 2 presupuestos en el proyecto y quiero llevar partidas de los dos a las fases", "procedimiento": "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como ubico las actividades que todavia tienen saldo por asignar", "procedimiento": "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como registro las fases en la rama meta", "procedimiento": "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "¿En qué escenario se asignan partidas a las fases?", "procedimiento": "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde esta la opcion ver actividades asignadas", "procedimiento": "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "por donde entro para armar el wbs", "procedimiento": "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd sale eliminar asignaciones", "procedimiento": "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "actividades escenario fases", "procedimiento": "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "estoy en la rama meta del proyecto, a que pantalla voy para registrar fases", "procedimiento": "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "donde esta el boton para ubicar actividades con saldo", "procedimiento": "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "cuantos digitos puedo darle a los niveles de las fases", "procedimiento": "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué se registra en el primer nivel de la estructura de fases?", "procedimiento": "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "cuanto puede sumar como maximo la longitud de los niveles", "procedimiento": "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "ke color le doy a cada nivel de fase", "procedimiento": "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "¿Qué debo tener listo antes de armar el WBS?", "procedimiento": "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "se recomienda registrar las fases a mano en la rama venta o en la meta", "procedimiento": "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "me sale el mensaje todas las actividades ya han sido asignadas, esta bien", "procedimiento": "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el porcentaje que le pongo a la actividad dentro de la fase no me lo acepta", "procedimiento": "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "puse mas del 100% de una partida repartida entre varias fases", "procedimiento": "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "Siguen las partidas viejas en Actividades luego de modificar el presupuesto, ¿hay que procesar con tipo 3?", "procedimiento": "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "¿Cómo sé qué partidas quedaron sin fase?", "procedimiento": "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "asigne una partida a la fase ekivocada", "procedimiento": "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "los niveles de mi wbs pasan de 15 digitos", "procedimiento": "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "¿Cómo registro un pedido manual de materiales desde el almacén del proyecto?", "procedimiento": "gerencia-proyectos.registrar-pedido-manual-de-compra", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como le pido cemento a compras desde la obra", "procedimiento": "gerencia-proyectos.registrar-pedido-manual-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo ago un pedido a compras", "procedimiento": "gerencia-proyectos.registrar-pedido-manual-de-compra", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "pedir recursos obra", "procedimiento": "gerencia-proyectos.registrar-pedido-manual-de-compra", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "el residente necesita fierro urgente y no esta programado, como hace el pedido", "procedimiento": "gerencia-proyectos.registrar-pedido-manual-de-compra", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como agrego recursos al pedido desde el catalogo", "procedimiento": "gerencia-proyectos.registrar-pedido-manual-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se envía a aprobación un pedido ya registrado?", "procedimiento": "gerencia-proyectos.registrar-pedido-manual-de-compra", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como mando el pedido pa que lo aprueben", "procedimiento": "gerencia-proyectos.registrar-pedido-manual-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como pongo la cantidad del recurso en el pedio", "procedimiento": "gerencia-proyectos.registrar-pedido-manual-de-compra", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "voy a comprar todo en una ferreteria, como lo junto en un solo pedido", "procedimiento": "gerencia-proyectos.registrar-pedido-manual-de-compra", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Indique cómo registrar la fecha de entrega de los recursos solicitados", "procedimiento": "gerencia-proyectos.registrar-pedido-manual-de-compra", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como pongo fecha de entrega con clic derecho", "procedimiento": "gerencia-proyectos.registrar-pedido-manual-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "pedir materiales almacen", "procedimiento": "gerencia-proyectos.registrar-pedido-manual-de-compra", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "no tengo programacion pero necesito comprar insumos de la obra, que hago", "procedimiento": "gerencia-proyectos.registrar-pedido-manual-de-compra", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como entro a pedidos desde el almacen de materiales", "procedimiento": "gerencia-proyectos.registrar-pedido-manual-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como adicionar recursos al pedido", "procedimiento": "gerencia-proyectos.registrar-pedido-manual-de-compra", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "donde veo el seguimiento de mis pedidos", "procedimiento": "gerencia-proyectos.registrar-pedido-manual-de-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué escenario se registran los pedidos del proyecto?", "procedimiento": "gerencia-proyectos.registrar-pedido-manual-de-compra", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde sale el catalogo de recursos para pedir", "procedimiento": "gerencia-proyectos.registrar-pedido-manual-de-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd esta adicionar recursos", "procedimiento": "gerencia-proyectos.registrar-pedido-manual-de-compra", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "escenario pedidos", "procedimiento": "gerencia-proyectos.registrar-pedido-manual-de-compra", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "en el proyecto tengo almacen de materiales y de servicios, en cual hago el pedido", "procedimiento": "gerencia-proyectos.registrar-pedido-manual-de-compra", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "donde se ven los pedidos automaticos", "procedimiento": "gerencia-proyectos.registrar-pedido-manual-de-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Qué usuarios deben estar registrados en almacenes para pedir y aprobar?", "procedimiento": "gerencia-proyectos.registrar-pedido-manual-de-compra", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que tiene que estar en compras para que el pedido siga su camino", "procedimiento": "gerencia-proyectos.registrar-pedido-manual-de-compra", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "el proyecto necesita partidas de control y destinos especificos antes de pedir", "procedimiento": "gerencia-proyectos.registrar-pedido-manual-de-compra", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q debe tener configurado el usuario que aprueba pedidos", "procedimiento": "gerencia-proyectos.registrar-pedido-manual-de-compra", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "las cantidades que sugiere el sistema se pueden redondear", "procedimiento": "gerencia-proyectos.registrar-pedido-manual-de-compra", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "en que almacen del proyecto me paro para hacer el pedido", "procedimiento": "gerencia-proyectos.registrar-pedido-manual-de-compra", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "el pedido se quedo en espera y no pasa a compras", "procedimiento": "gerencia-proyectos.registrar-pedido-manual-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "las cantidades del pedido salen con decimales raros", "procedimiento": "gerencia-proyectos.registrar-pedido-manual-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "mande el pedido y nadie lo aprobo, no avanza la compra", "procedimiento": "gerencia-proyectos.registrar-pedido-manual-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "el pedio no pasa a compra", "procedimiento": "gerencia-proyectos.registrar-pedido-manual-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "No veo mi pedido en el escenario de Pedidos después de enviarlo, ¿cómo confirmo que quedó registrado?", "procedimiento": "gerencia-proyectos.registrar-pedido-manual-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "el centro de compras no tiene asignado el proyecto y no puedo pedir", "procedimiento": "gerencia-proyectos.registrar-pedido-manual-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "pedido en espera", "procedimiento": "gerencia-proyectos.registrar-pedido-manual-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "¿Cuál es el procedimiento para dar de alta un proyecto nuevo en Gerencia de Proyectos?", "procedimiento": "gerencia-proyectos.registrar-proyecto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como creo la obra en el s10 desde cero", "procedimiento": "gerencia-proyectos.registrar-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo registro un proyeto nuevo en datos generales", "procedimiento": "gerencia-proyectos.registrar-proyecto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "alta de obra", "procedimiento": "gerencia-proyectos.registrar-proyecto", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "me asignaron una obra nueva en cusco, quiero registrarla con su propietario y lugar", "procedimiento": "gerencia-proyectos.registrar-proyecto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como pongo el propietario del proyecto", "procedimiento": "gerencia-proyectos.registrar-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Indíqueme cómo registrar el lugar de ejecución del proyecto", "procedimiento": "gerencia-proyectos.registrar-proyecto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como escojo el distrito donde se ejecuta la obra", "procedimiento": "gerencia-proyectos.registrar-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como ingreso la fecha de inicio y el plasos", "procedimiento": "gerencia-proyectos.registrar-proyecto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "ya tengo el numero de contrato, como lo pongo en el nombre del proyecto", "procedimiento": "gerencia-proyectos.registrar-proyecto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo se lleva el proyecto al árbol de Datos Generales después de grabarlo?", "procedimiento": "gerencia-proyectos.registrar-proyecto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como traigo el proyecto del catalogo al arbol", "procedimiento": "gerencia-proyectos.registrar-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "registro de obra", "procedimiento": "gerencia-proyectos.registrar-proyecto", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "tengo que poner la direccion donde el proveedor entrega y el telefono de la oficina del proyecto, donde lo registro", "procedimiento": "gerencia-proyectos.registrar-proyecto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como elijo el grupo de la linea de negocio para el proyecto", "procedimiento": "gerencia-proyectos.registrar-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como registro la empresa y sucursal del proyecto", "procedimiento": "gerencia-proyectos.registrar-proyecto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "donde se crea un proyecto nuevo", "procedimiento": "gerencia-proyectos.registrar-proyecto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Dónde está el Catálogo de Proyectos?", "procedimiento": "gerencia-proyectos.registrar-proyecto", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en que pantalla registro la fecha de inicio", "procedimiento": "gerencia-proyectos.registrar-proyecto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd van el propietario y el lugar", "procedimiento": "gerencia-proyectos.registrar-proyecto", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "datos generales proyecto", "procedimiento": "gerencia-proyectos.registrar-proyecto", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "estoy en el arbol de proyectos y doy clic derecho, que opcion elijo", "procedimiento": "gerencia-proyectos.registrar-proyecto", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "donde elijo la moneda secundaria del proyecto", "procedimiento": "gerencia-proyectos.registrar-proyecto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "que moneda debo ponerle al proyecto", "procedimiento": "gerencia-proyectos.registrar-proyecto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Hasta cuántos caracteres acepta el nombre del proyecto?", "procedimiento": "gerencia-proyectos.registrar-proyecto", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "¿Conviene que todos los proyectos empiecen la semana el mismo día para el pago de planillas?", "procedimiento": "gerencia-proyectos.registrar-proyecto", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "para que sirve la fecha de inicio que pongo al proyecto", "procedimiento": "gerencia-proyectos.registrar-proyecto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q usuario debo registrar antes para manejar gerencia de proyectos", "procedimiento": "gerencia-proyectos.registrar-proyecto", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "el plazo del proyecto son dias calendario o habiles, que pongo", "procedimiento": "gerencia-proyectos.registrar-proyecto", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "ya tengo informacion cargada y quiero cambiar la fecha de inicio del proyecto", "procedimiento": "gerencia-proyectos.registrar-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me deja escribir la fecha fin del proyecto", "procedimiento": "gerencia-proyectos.registrar-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "tengo el presupuesto en dolares y el proyecto en soles, esta mal", "procedimiento": "gerencia-proyectos.registrar-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "el catalogo de proyectos tiene limite de registros por grupo", "procedimiento": "gerencia-proyectos.registrar-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "cambie la fecha de inicio y se desordeno todo, donde se corrige la fecha real de la obra", "procedimiento": "gerencia-proyectos.registrar-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "komo cambio la fecha de inicio si ya hay pedidos", "procedimiento": "gerencia-proyectos.registrar-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "fecha fin automatica", "procedimiento": "gerencia-proyectos.registrar-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "¿Cómo registro un subcontrato en el escenario Subcontrato - De Obra?", "procedimiento": "gerencia-proyectos.registrar-subcontrato", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como doy de alta a un subcontratista en la obra con sus condiciones", "procedimiento": "gerencia-proyectos.registrar-subcontrato", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo agrego un subcontrato al proyecto", "procedimiento": "gerencia-proyectos.registrar-subcontrato", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "subcontrato de obra", "procedimiento": "gerencia-proyectos.registrar-subcontrato", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "contrate una cuadrilla para colocar acero por mano de obra y quiero registrar el contrato en el sistema", "procedimiento": "gerencia-proyectos.registrar-subcontrato", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como invoco la orden de servicio aprobada para el subcontrato", "procedimiento": "gerencia-proyectos.registrar-subcontrato", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Explique cómo se agregan los recursos a un subcontrato desde la pestaña Actividades", "procedimiento": "gerencia-proyectos.registrar-subcontrato", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como le asigno la partida de control a los recursos del subcontrato", "procedimiento": "gerencia-proyectos.registrar-subcontrato", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo asigno partida de control a todos los recursos", "procedimiento": "gerencia-proyectos.registrar-subcontrato", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "el mismo recurso lo van a ejecutar dos subcontratistas, como reparto la cantidad", "procedimiento": "gerencia-proyectos.registrar-subcontrato", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo registro el porcentaje de adelanto y la retención del subcontratista?", "procedimiento": "gerencia-proyectos.registrar-subcontrato", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como cambio el estado del subcontrato a aprobado", "procedimiento": "gerencia-proyectos.registrar-subcontrato", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "subcontrato partida de control", "procedimiento": "gerencia-proyectos.registrar-subcontrato", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "pedi un servicio desde el almacen de servicios y ya tengo la OS aprobada, como armo el subcontrato con eso", "procedimiento": "gerencia-proyectos.registrar-subcontrato", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como pongo las fechas de firma e inicio del subcontrato", "procedimiento": "gerencia-proyectos.registrar-subcontrato", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como registro un subcontratista nuebo con su moneda y especialidad", "procedimiento": "gerencia-proyectos.registrar-subcontrato", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "por que escenario entro para crear un subcontrato", "procedimiento": "gerencia-proyectos.registrar-subcontrato", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Dónde está la pestaña Actividades dentro del subcontrato?", "procedimiento": "gerencia-proyectos.registrar-subcontrato", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde esta la opcion asignar reasignar partida de control", "procedimiento": "gerencia-proyectos.registrar-subcontrato", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que parte elijo la especialidad del subcontrato", "procedimiento": "gerencia-proyectos.registrar-subcontrato", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "subcontrato de obra donde", "procedimiento": "gerencia-proyectos.registrar-subcontrato", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "dnd esta el catalogo de subcontratos", "procedimiento": "gerencia-proyectos.registrar-subcontrato", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "ya registre el subcontrato, como lo vuelvo a abrir", "procedimiento": "gerencia-proyectos.registrar-subcontrato", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "marco requiere garantia o no", "procedimiento": "gerencia-proyectos.registrar-subcontrato", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué porcentaje de retención se registra en el subcontrato y es permanente?", "procedimiento": "gerencia-proyectos.registrar-subcontrato", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que permisos debe dar el jefe de grupo para usar subcontratos", "procedimiento": "gerencia-proyectos.registrar-subcontrato", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "si al subcontratista no le toca adelanto, que opcion uso", "procedimiento": "gerencia-proyectos.registrar-subcontrato", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "q estados puede tener un subcontrato", "procedimiento": "gerencia-proyectos.registrar-subcontrato", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "los frentes o destinos especificos hay que crearlos antes de asignarlos a los recursos", "procedimiento": "gerencia-proyectos.registrar-subcontrato", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "me sale que la cantidad se pasa del techo del presupuesto", "procedimiento": "gerencia-proyectos.registrar-subcontrato", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "marque requiere garantia pero no tengo la carta bancaria, que hago", "procedimiento": "gerencia-proyectos.registrar-subcontrato", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "No le puse adelanto al subcontratista, ¿cómo descuento los pagos a cuenta?", "procedimiento": "gerencia-proyectos.registrar-subcontrato", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "la fecha del subcontrato quedo despues de sus valorizaciones", "procedimiento": "gerencia-proyectos.registrar-subcontrato", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "al adicionar recursos me sale el catalogo y no los del presupuesto", "procedimiento": "gerencia-proyectos.registrar-subcontrato", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "subcontrato sin adelanto", "procedimiento": "gerencia-proyectos.registrar-subcontrato", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "dos subcontratistas para el mismo recurso y el sistema me frena la cantidad", "procedimiento": "gerencia-proyectos.registrar-subcontrato", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "¿Cómo invito a un usuario al grupo de trabajo de un proyecto?", "procedimiento": "gerencia-proyectos.registrar-usuarios-del-proyecto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como le doy permisos a un ingeniero en el proyecto", "procedimiento": "gerencia-proyectos.registrar-usuarios-del-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo asigno atributos de uso a un usuario del proyeto", "procedimiento": "gerencia-proyectos.registrar-usuarios-del-proyecto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "dar acceso proyecto", "procedimiento": "gerencia-proyectos.registrar-usuarios-del-proyecto", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "entro un residente nuevo a la obra y debe aprobar subcontratos, como lo configuro en el proyecto", "procedimiento": "gerencia-proyectos.registrar-usuarios-del-proyecto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como registro a un empleado como usuario que maneje gerencia de proyectos", "procedimiento": "gerencia-proyectos.registrar-usuarios-del-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Indique cómo habilitar a un usuario para que configure el techo del proyecto", "procedimiento": "gerencia-proyectos.registrar-usuarios-del-proyecto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como le doy permiso para incrementar el techo", "procedimiento": "gerencia-proyectos.registrar-usuarios-del-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como agrego un usuario al almacen del proyecto", "procedimiento": "gerencia-proyectos.registrar-usuarios-del-proyecto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "el almacenero tiene que pedir y aprobar pedidos, que le registro y donde", "procedimiento": "gerencia-proyectos.registrar-usuarios-del-proyecto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo se marcan las opciones de Almacenes y Pedidos y Compras para un usuario?", "procedimiento": "gerencia-proyectos.registrar-usuarios-del-proyecto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como pongo a alguien en usuarios por almacen", "procedimiento": "gerencia-proyectos.registrar-usuarios-del-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "permisos obra usuario", "procedimiento": "gerencia-proyectos.registrar-usuarios-del-proyecto", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "soy el que registro el proyecto y tengo que meter al equipo, como los invito", "procedimiento": "gerencia-proyectos.registrar-usuarios-del-proyecto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como registro primero al empleado en socio de negocios", "procedimiento": "gerencia-proyectos.registrar-usuarios-del-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como le doy acseso a subcontratos a un usuario", "procedimiento": "gerencia-proyectos.registrar-usuarios-del-proyecto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "¿En qué ventana se marcan los permisos de cada usuario del proyecto?", "procedimiento": "gerencia-proyectos.registrar-usuarios-del-proyecto", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde aparece la opcion usuarios del proyecto", "procedimiento": "gerencia-proyectos.registrar-usuarios-del-proyecto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde se agrega el usuario en la pestaña usuarios por almacen", "procedimiento": "gerencia-proyectos.registrar-usuarios-del-proyecto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd se registra al empleado en socio de negocio", "procedimiento": "gerencia-proyectos.registrar-usuarios-del-proyecto", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "usuarios por almacen donde", "procedimiento": "gerencia-proyectos.registrar-usuarios-del-proyecto", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "estoy en el arbol de proyectos y quiero añadir gente, que clic doy", "procedimiento": "gerencia-proyectos.registrar-usuarios-del-proyecto", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "¿En qué grupo se asignan los accesos del usuario al módulo de Gerencia de Proyectos?", "procedimiento": "gerencia-proyectos.registrar-usuarios-del-proyecto", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "¿Qué categoría necesita un usuario para repartir permisos dentro del proyecto?", "procedimiento": "gerencia-proyectos.registrar-usuarios-del-proyecto", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que grupos de opciones hay para marcarle a cada usuario", "procedimiento": "gerencia-proyectos.registrar-usuarios-del-proyecto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que debo configurar para que un usuario pida y apruebe pedidos", "procedimiento": "gerencia-proyectos.registrar-usuarios-del-proyecto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "con k usuario registro al q va a manejar gerencia de proyectos", "procedimiento": "gerencia-proyectos.registrar-usuarios-del-proyecto", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "el usuario que registra el proyecto ya tiene todos los accesos", "procedimiento": "gerencia-proyectos.registrar-usuarios-del-proyecto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "para techo, que dos opciones le puedo dar a un usuario", "procedimiento": "gerencia-proyectos.registrar-usuarios-del-proyecto", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "me niega darle atributos de uso a mi compañero de obra", "procedimiento": "gerencia-proyectos.registrar-usuarios-del-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "quiero sumar a alguien al grupo y no le sale el proyecto", "procedimiento": "gerencia-proyectos.registrar-usuarios-del-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el almacenero no puede aprobar pedidos aunque lo agregue al proyecto", "procedimiento": "gerencia-proyectos.registrar-usuarios-del-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "mi jefe no tiene la opcion de asignar techo", "procedimiento": "gerencia-proyectos.registrar-usuarios-del-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "la persona no figura en la lista al invitar al proyecto", "procedimiento": "gerencia-proyectos.registrar-usuarios-del-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "Registré al empleado en socio de negocios pero igual no entra al módulo, ¿qué me falta?", "procedimiento": "gerencia-proyectos.registrar-usuarios-del-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "usuario no puede pedir pedidos", "procedimiento": "gerencia-proyectos.registrar-usuarios-del-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "¿Cuál es el procedimiento para instalar el S10 ERP en un equipo con el DVD?", "procedimiento": "instalacion.instalar-s10-erp", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como instalo el s10 en la pc de la oficina", "procedimiento": "instalacion.instalar-s10-erp", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo instalar el s10 erp en windows", "procedimiento": "instalacion.instalar-s10-erp", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "setup s10 erp", "procedimiento": "instalacion.instalar-s10-erp", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "me dieron el dvd del s10 y una pc con windows 10, por donde arranco", "procedimiento": "instalacion.instalar-s10-erp", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como aplico las revisiones despues de instalar", "procedimiento": "instalacion.instalar-s10-erp", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Indique cómo instalar las revisiones del S10 copiando la carpeta Revisiones", "procedimiento": "instalacion.instalar-s10-erp", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como instalo solo el cliente porque ya tenemos servidor", "procedimiento": "instalacion.instalar-s10-erp", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como instalo el servidor con sql server", "procedimiento": "instalacion.instalar-s10-erp", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "los de sistemas me dejaron el instalador, hay que aceptar contrato y elegir ruta, como sigo", "procedimiento": "instalacion.instalar-s10-erp", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo se cambia la ruta donde se instala el S10?", "procedimiento": "instalacion.instalar-s10-erp", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como instalo el motor de base de datos que viene con el instalador", "procedimiento": "instalacion.instalar-s10-erp", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "revisiones s10", "procedimiento": "instalacion.instalar-s10-erp", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "tengo que actualizar el s10 de la empresa con las revisiones nuevas", "procedimiento": "instalacion.instalar-s10-erp", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como hago para que el instalador termine en el equipo cliente", "procedimiento": "instalacion.instalar-s10-erp", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como se instala el s10 si tengo antivirus", "procedimiento": "instalacion.instalar-s10-erp", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "donde se activa el net framework 3.5 en windows", "procedimiento": "instalacion.instalar-s10-erp", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Dónde está la carpeta Revisiones dentro del instalador?", "procedimiento": "instalacion.instalar-s10-erp", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde esta el instalador de revisiones s10", "procedimiento": "instalacion.instalar-s10-erp", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd desactivo el control de cuentas pa instalar", "procedimiento": "instalacion.instalar-s10-erp", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "carpeta revisiones donde", "procedimiento": "instalacion.instalar-s10-erp", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "en la primera ventana del instalador donde marco cliente o servidor", "procedimiento": "instalacion.instalar-s10-erp", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "¿En qué pantalla del instalador se elige la ruta de instalación?", "procedimiento": "instalacion.instalar-s10-erp", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "cuando marco solo cliente y cuando tambien servidor", "procedimiento": "instalacion.instalar-s10-erp", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué versión de SQL Server instala por defecto el instalador?", "procedimiento": "instalacion.instalar-s10-erp", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que usuario de windows necesito para instalar", "procedimiento": "instalacion.instalar-s10-erp", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q componentes de windows activo antes de instalar el s10 en windows 8", "procedimiento": "instalacion.instalar-s10-erp", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "hay que desactivar el antivirus mientras se instala", "procedimiento": "instalacion.instalar-s10-erp", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "en que ruta de la pc se copian las revisiones", "procedimiento": "instalacion.instalar-s10-erp", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "no puedo activar el net framework en el equipo", "procedimiento": "instalacion.instalar-s10-erp", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "sale la ventana de permitir cambios a setup.exe y la instalacion se corta", "procedimiento": "instalacion.instalar-s10-erp", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "ya habia una version del s10 instalada y no deja instalar", "procedimiento": "instalacion.instalar-s10-erp", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "el antivirus bloquea la instalacion del s10", "procedimiento": "instalacion.instalar-s10-erp", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no soy administrador de la pc y no me deja instalar", "procedimiento": "instalacion.instalar-s10-erp", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "El .NET Framework 3.5 no se descarga con Windows Update, ¿qué hago?", "procedimiento": "instalacion.instalar-s10-erp", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "no instala s10", "procedimiento": "instalacion.instalar-s10-erp", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "¿Cómo genero una copia de seguridad de la base de datos del S10?", "procedimiento": "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como saco un backup de la bd del s10", "procedimiento": "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo hago un respaldo de la base de datos", "procedimiento": "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "backup s10", "procedimiento": "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "voy a cambiar de pc y tengo que llevarme los datos, como saco la copia", "procedimiento": "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como le pongo nombre a la copia de seguridad", "procedimiento": "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Describa cómo elegir la base de datos origen para el respaldo", "procedimiento": "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como hago q empiece el proceso de copia", "procedimiento": "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como sakar copia de la base", "procedimiento": "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "el contador me pidio una copia de la base antes del cierre del año, como se la preparo", "procedimiento": "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo ejecuto el asistente de mantenimiento para copiar la base de datos?", "procedimiento": "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como respaldar la base sin salirme del s10", "procedimiento": "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "respaldo bd", "procedimiento": "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "me van a formatear la maquina, necesito guardar una copia de la base", "procedimiento": "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como uso la opcion copia de seguridad del asistente", "procedimiento": "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "pasos del bakup de la base de datos", "procedimiento": "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "en que ruta del disco aparece el archivo del respaldo", "procedimiento": "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Dónde está Mantenimiento de Base de datos?", "procedimiento": "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "por donde entro a utilitarios para respaldar", "procedimiento": "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd sale la opcion copia de seguridad de base de datos", "procedimiento": "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "backup donde queda", "procedimiento": "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "ya termino el respaldo, a donde fue el archivo", "procedimiento": "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "¿Qué otras opciones trae el asistente de mantenimiento además de la copia de seguridad?", "procedimiento": "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "¿Quién debe hacer el mantenimiento de las bases de datos?", "procedimiento": "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "se puede dejar el nombre de la copia como yo quiera", "procedimiento": "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que usuario necesito para hacer copias", "procedimiento": "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué formato tiene la copia de seguridad?", "procedimiento": "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "tengo q darle nombre con extension o solo el nombre del archivo", "procedimiento": "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "que dejo elegido en el asistente antes de darle copiar", "procedimiento": "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "al restaurar una copia se piso otra base de datos", "procedimiento": "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me deja eliminar una base de datos", "procedimiento": "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "restaure y me borro la otra base que tenia", "procedimiento": "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "quiero borrar una base vieja pero dice que esta en uso", "procedimiento": "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "hice la copia y no encuentro el archivo en la carpeta Backup", "procedimiento": "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "¿Qué nombre debo usar al restaurar una copia para no pisar las bases existentes?", "procedimiento": "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "eliminar base datos s10", "procedimiento": "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}

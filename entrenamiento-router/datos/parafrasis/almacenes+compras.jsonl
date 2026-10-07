@@ -1,0 +1,468 @@
+{"texto": "como le digo al sistema que el diesel nunca debe bajar de cierta cantidad", "procedimiento": "almacenes.asignar-stock-minimo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Necesito registrar la cantidad mínima que debe mantenerse en stock para los combustibles de la obra, ¿cómo lo hago?", "procedimiento": "almacenes.asignar-stock-minimo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como pongo el minimo de stok a los recursos q siempre tienen q estar en almacen", "procedimiento": "almacenes.asignar-stock-minimo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "stock minimo", "procedimiento": "almacenes.asignar-stock-minimo", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "en obra se nos acaba el gas y la gasolina cada rato, quiero que el s10 me diga cuanto debe haber como minimo y me ayude a reponer, como lo hago", "procedimiento": "almacenes.asignar-stock-minimo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como genero el pedido para reponer los recursos que ya estan bajo el minimo", "procedimiento": "almacenes.asignar-stock-minimo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cuál es el procedimiento para generar un pedido de reposición solo de los recursos seleccionados que están por debajo de su stock mínimo?", "procedimiento": "almacenes.asignar-stock-minimo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "ya me qedo sin cemento en el almacen ke hago pa q el sistema me haga el pedido de reposision", "procedimiento": "almacenes.asignar-stock-minimo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "pedido de reposicion", "procedimiento": "almacenes.asignar-stock-minimo", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "paso a paso para asignar minimos de stock en s10", "procedimiento": "almacenes.asignar-stock-minimo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el almacenero me dice que el aceite hidraulico esta por acabarse, como hago para que el sistema genere el pedido de todo lo que esta bajo", "procedimiento": "almacenes.asignar-stock-minimo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo se generan pedidos para todos los recursos que están por debajo del mínimo en una sola operación?", "procedimiento": "almacenes.asignar-stock-minimo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "tomando en cuenta lo que demora el proveedor en entregar, como fijo la cantidad minima de un recurso", "procedimiento": "almacenes.asignar-stock-minimo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como asigno stock minimo en almasenes", "procedimiento": "almacenes.asignar-stock-minimo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "reposicion de stock", "procedimiento": "almacenes.asignar-stock-minimo", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "quiero ver solo los recursos que tienen minimo definido, como filtro", "procedimiento": "almacenes.asignar-stock-minimo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde esta la opcion de reposicion en el escenario de stock", "procedimiento": "almacenes.asignar-stock-minimo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué parte del módulo de Almacenes se registra el stock mínimo de un recurso?", "procedimiento": "almacenes.asignar-stock-minimo", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "dnd se asigna el minimo de los recursos", "procedimiento": "almacenes.asignar-stock-minimo", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "donde aparece lo de generar pedido para recursos seleccionados", "procedimiento": "almacenes.asignar-stock-minimo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "por que menu veo los recursos con stock minimo", "procedimiento": "almacenes.asignar-stock-minimo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "stock minimo donde", "procedimiento": "almacenes.asignar-stock-minimo", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "en el arbol, a que escenario entro para fijar los minimos del almacen", "procedimiento": "almacenes.asignar-stock-minimo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Qué debo considerar para definir la cantidad de stock mínimo de un recurso?", "procedimiento": "almacenes.asignar-stock-minimo", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que cantidad le pongo de minimo a un recurso, de que depende", "procedimiento": "almacenes.asignar-stock-minimo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "manejamos combustibles en la obra y quiero que siempre haya una reserva, que parametro registro en stock", "procedimiento": "almacenes.asignar-stock-minimo", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "que opcion del filtro tengo que elegir para ver los que ya tienen minimo configurado", "procedimiento": "almacenes.asignar-stock-minimo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "cantidad minima del recurso donde se rejistra", "procedimiento": "almacenes.asignar-stock-minimo", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "que dato registro en stock para despues poder pedir la reposicion", "procedimiento": "almacenes.asignar-stock-minimo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "le doy clic derecho al recurso y no me sale la opcion reposicion", "procedimiento": "almacenes.asignar-stock-minimo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "puse el minimo pero el recurso no sale en el filtro recursos con stock minimo", "procedimiento": "almacenes.asignar-stock-minimo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el filtro de stock minimo me sale bacio", "procedimiento": "almacenes.asignar-stock-minimo", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "no encuentro el recurso para ponerle el minimo, hay filtro avanzado?", "procedimiento": "almacenes.asignar-stock-minimo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me deja generar el pedido para todos los recursos bajo el minimo", "procedimiento": "almacenes.asignar-stock-minimo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "configure el minimo del petroleo hace dias y hoy esta bajo pero no veo como pedirlo, que me falta", "procedimiento": "almacenes.asignar-stock-minimo", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no me sale generar pedido para recursos selecionados", "procedimiento": "almacenes.asignar-stock-minimo", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "como veo todos los movimientos de ingreso y salida de un material", "procedimiento": "almacenes.consultar-kardex", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Necesito imprimir el kardex para la SUNAT, ¿cuál es el procedimiento?", "procedimiento": "almacenes.consultar-kardex", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como saco el reporte de kardex valorizado pa sunat", "procedimiento": "almacenes.consultar-kardex", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "kardex sunat", "procedimiento": "almacenes.consultar-kardex", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "historial de movimientos del cemento en el almacen, como lo consulto", "procedimiento": "almacenes.consultar-kardex", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "quiero ver la historia de un recurso desde que entro hasta sus salidas", "procedimiento": "almacenes.consultar-kardex", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo imprimo el kardex de todos los recursos en un rango de fechas?", "procedimiento": "almacenes.consultar-kardex", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "cmo consulto el kardex de un recurso", "procedimiento": "almacenes.consultar-kardex", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "el contador me pide el kardex del trimestre de todos los materiales, como lo emito", "procedimiento": "almacenes.consultar-kardex", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "kardex de un recurso", "procedimiento": "almacenes.consultar-kardex", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "para que el kardex tome el precio promedio hay que recostear, como se hace", "procedimiento": "almacenes.consultar-kardex", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como elijo el tipo de reporte sunat y la fecha desde hasta", "procedimiento": "almacenes.consultar-kardex", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo obtengo el reporte oficial del kardex para presentarlo a la SUNAT?", "procedimiento": "almacenes.consultar-kardex", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "quiero ver como ha ido variando en el tiempo lo que hay de un material", "procedimiento": "almacenes.consultar-kardex", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "konsultar kardex s10 almasenes", "procedimiento": "almacenes.consultar-kardex", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como hago el recosteo desde stock antes de ver el kardex", "procedimiento": "almacenes.consultar-kardex", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde esta la opcion kardex dentro del stock", "procedimiento": "almacenes.consultar-kardex", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que escenario puedo ver el kardex de un recurso", "procedimiento": "almacenes.consultar-kardex", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde esta el boton de reporte para sunat del kardex", "procedimiento": "almacenes.consultar-kardex", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd se ve la historia de movimientos de un recurso", "procedimiento": "almacenes.consultar-kardex", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "donde aparece el boton de recosteo junto al nombre de los recursos", "procedimiento": "almacenes.consultar-kardex", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "kardex donde queda", "procedimiento": "almacenes.consultar-kardex", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "en que ventana elijo el tipo de reporte sunat", "procedimiento": "almacenes.consultar-kardex", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Para qué sirve la ventana Seteo de Recosteo y qué debo aceptar ahí?", "procedimiento": "almacenes.consultar-kardex", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "como configuro que el kardex use el precio promedio", "procedimiento": "almacenes.consultar-kardex", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que parametros me pide el reporte sunat, tipo, fechas y recursos", "procedimiento": "almacenes.consultar-kardex", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "el recosteo usa factor de cambio, donde lo registro", "procedimiento": "almacenes.consultar-kardex", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "ke rango de fechas debo poner en el reporte de la sunat", "procedimiento": "almacenes.consultar-kardex", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "como selecciono todos los recursos para el reporte del kardex", "procedimiento": "almacenes.consultar-kardex", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "un recurso sale en recursos con problemas en el kardex", "procedimiento": "almacenes.consultar-kardex", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "me sale un recurso con problemas despues de cambiar la fecha de un egreso", "procedimiento": "almacenes.consultar-kardex", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "borramos una guia de ingreso por error y ahora el kardex del fierro marca error", "procedimiento": "almacenes.consultar-kardex", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "al recostear el sistema me pide el factor de cambio", "procedimiento": "almacenes.consultar-kardex", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "recosteo me pide factor de cambio y no se q poner", "procedimiento": "almacenes.consultar-kardex", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "el kardex no cuadra, hay recursos con problemas, como los reviso", "procedimiento": "almacenes.consultar-kardex", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "recurso con problemas kardex", "procedimiento": "almacenes.consultar-kardex", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "como saco material del almacen para una partida de la obra", "procedimiento": "almacenes.registrar-egreso-a-partida-de-control", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Necesito registrar la salida de recursos del stock hacia las partidas de control del proyecto, ¿cómo procedo?", "procedimiento": "almacenes.registrar-egreso-a-partida-de-control", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "egreso EPC", "procedimiento": "almacenes.registrar-egreso-a-partida-de-control", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "komo registro una salida de almacen a la partida de control", "procedimiento": "almacenes.registrar-egreso-a-partida-de-control", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "el maestro de obra pidio varillas para el vaciado de columnas, como le doy salida desde el almacen", "procedimiento": "almacenes.registrar-egreso-a-partida-de-control", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como asigno el frente y el destino especifico a los recursos que salen", "procedimiento": "almacenes.registrar-egreso-a-partida-de-control", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "egreso para un subcontrato en vez de para el proyecto, como lo hago", "procedimiento": "almacenes.registrar-egreso-a-partida-de-control", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como imprimo la guia de egreso para que firme el que retira", "procedimiento": "almacenes.registrar-egreso-a-partida-de-control", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "salida de almacen a partida", "procedimiento": "almacenes.registrar-egreso-a-partida-de-control", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "ke pasos sigo pa dar salida a materiales, el solicitante y la fecha", "procedimiento": "almacenes.registrar-egreso-a-partida-de-control", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como elijo el solicitante en un egreso", "procedimiento": "almacenes.registrar-egreso-a-partida-de-control", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo indico la cantidad por recurso y asigno su partida de control en la guía de egreso?", "procedimiento": "almacenes.registrar-egreso-a-partida-de-control", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "en el egreso, cambio la procedencia de la partida de control a un subcontrato, como", "procedimiento": "almacenes.registrar-egreso-a-partida-de-control", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "registro de egreso de materiales hacia partidas, paso a paso", "procedimiento": "almacenes.registrar-egreso-a-partida-de-control", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "los operarios estan armando la losa y necesitan cemento, como registro lo que retiran del almacen", "procedimiento": "almacenes.registrar-egreso-a-partida-de-control", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "egreso a partida de kontrol", "procedimiento": "almacenes.registrar-egreso-a-partida-de-control", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "en que escenario se registran los egresos a partida de control", "procedimiento": "almacenes.registrar-egreso-a-partida-de-control", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde elijo el tipo de egreso EPC", "procedimiento": "almacenes.registrar-egreso-a-partida-de-control", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "por donde veo los recursos en stock para egresar", "procedimiento": "almacenes.registrar-egreso-a-partida-de-control", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde se asigna el frente a un bloque de recursos", "procedimiento": "almacenes.registrar-egreso-a-partida-de-control", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd imprimo la guia de egreso", "procedimiento": "almacenes.registrar-egreso-a-partida-de-control", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "en que pantalla veo la lista de guias de egreso", "procedimiento": "almacenes.registrar-egreso-a-partida-de-control", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "egresos donde", "procedimiento": "almacenes.registrar-egreso-a-partida-de-control", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "¿Qué debo tener registrado antes de hacer un egreso: partidas de control, destinos específicos, frentes y equipos?", "procedimiento": "almacenes.registrar-egreso-a-partida-de-control", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "antes de egresar hay que recostear en stock?", "procedimiento": "almacenes.registrar-egreso-a-partida-de-control", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que atributos necesita el usuario que registra los egresos", "procedimiento": "almacenes.registrar-egreso-a-partida-de-control", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "el sistema pide tipo de cambio al egresar, que registro", "procedimiento": "almacenes.registrar-egreso-a-partida-de-control", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "para que sirve el numero alterno en la guia de egreso", "procedimiento": "almacenes.registrar-egreso-a-partida-de-control", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "ke tengo q dejar creado pa poder asignar destino y frente", "procedimiento": "almacenes.registrar-egreso-a-partida-de-control", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "intento egresar un recurso y no esta en la lista aunque lo compramos", "procedimiento": "almacenes.registrar-egreso-a-partida-de-control", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "la fecha del egreso no me deja, dice fuera del periodo del proyecto", "procedimiento": "almacenes.registrar-egreso-a-partida-de-control", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "puse recursos de partidas del proyecto y de un subcontrato en la misma guia y no deja", "procedimiento": "almacenes.registrar-egreso-a-partida-de-control", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "la guia de egreso quedo protegida y necesito eliminarla, que estado debe tener", "procedimiento": "almacenes.registrar-egreso-a-partida-de-control", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "egreso fuera de periodo de ejecusion", "procedimiento": "almacenes.registrar-egreso-a-partida-de-control", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "le di egreso a unos fierros que nunca ingresamos al almacen y no aparecen para elegirlos", "procedimiento": "almacenes.registrar-egreso-a-partida-de-control", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "guia de egreso protegida", "procedimiento": "almacenes.registrar-egreso-a-partida-de-control", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "compre materiales en una ferreteria sin orden de compra y me dieron factura, como los ingreso al almacen", "procedimiento": "almacenes.registrar-ingreso-por-compra", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Debo registrar un ingreso por compra con documento de pago, ¿cómo se hace?", "procedimiento": "almacenes.registrar-ingreso-por-compra", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "adicionar con documento de pago", "procedimiento": "almacenes.registrar-ingreso-por-compra", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como registro la factura de la ferreteria al ingresar el material", "procedimiento": "almacenes.registrar-ingreso-por-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "llego mercaderia con boleta y no tengo OC, como la ingreso", "procedimiento": "almacenes.registrar-ingreso-por-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cmo ago un ingreso x compra con factura", "procedimiento": "almacenes.registrar-ingreso-por-compra", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "quiero que al ingresar el recurso se haga tambien el asiento para contabilidad con la factura", "procedimiento": "almacenes.registrar-ingreso-por-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ingreso por compra", "procedimiento": "almacenes.registrar-ingreso-por-compra", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como elijo el proveedor, la serie y numero de la factura al hacer un ingreso", "procedimiento": "almacenes.registrar-ingreso-por-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el proveedor trajo los fierros con factura y sin orden de compra, como los doy de alta en el almacen", "procedimiento": "almacenes.registrar-ingreso-por-compra", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "IC s10", "procedimiento": "almacenes.registrar-ingreso-por-compra", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como pongo el detalle documento con cantidad y precio unitario", "procedimiento": "almacenes.registrar-ingreso-por-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ke opcion uso pa ingresar al almacen lo q compre con factura", "procedimiento": "almacenes.registrar-ingreso-por-compra", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "¿Cómo indico la moneda y la forma de pago al registrar el documento de un ingreso por compra?", "procedimiento": "almacenes.registrar-ingreso-por-compra", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "pasos para dar entrada al almacen a recursos respaldados por factura o boleta, sin pedido previo", "procedimiento": "almacenes.registrar-ingreso-por-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ingreso por conpra con documento de pago", "procedimiento": "almacenes.registrar-ingreso-por-compra", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "donde esta la opcion adicionar con documento de pago", "procedimiento": "almacenes.registrar-ingreso-por-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que escenario se registra el ingreso por compra", "procedimiento": "almacenes.registrar-ingreso-por-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que ventana elijo el tipo de documento FACTURAS", "procedimiento": "almacenes.registrar-ingreso-por-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde pongo la serie y numero de la factura del proveedor al ingresar", "procedimiento": "almacenes.registrar-ingreso-por-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde se abre el catalogo de recursos al ingresar por compra", "procedimiento": "almacenes.registrar-ingreso-por-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "ingresos por compra donde estan", "procedimiento": "almacenes.registrar-ingreso-por-compra", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "por donde registro un ingreso con fatura", "procedimiento": "almacenes.registrar-ingreso-por-compra", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "¿Cuándo corresponde usar ingreso por compra y no ingreso por orden de compra?", "procedimiento": "almacenes.registrar-ingreso-por-compra", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que tipo de documento puedo elegir en el ingreso por compra", "procedimiento": "almacenes.registrar-ingreso-por-compra", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que datos del documento debo definir, moneda, forma de pago y vencimiento", "procedimiento": "almacenes.registrar-ingreso-por-compra", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como indico la fecha y el vencimiento de la factura", "procedimiento": "almacenes.registrar-ingreso-por-compra", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que respaldo documentario acepta el ingreso por compra", "procedimiento": "almacenes.registrar-ingreso-por-compra", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "ke documentos se aseptan pa un ingreso por compra", "procedimiento": "almacenes.registrar-ingreso-por-compra", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "registre la factura pero no la veo en la lista de ingresos", "procedimiento": "almacenes.registrar-ingreso-por-compra", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "mi documento no aparece en el escenario de ingresos despues de grabarlo, donde lo busco", "procedimiento": "almacenes.registrar-ingreso-por-compra", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "grabe la factura de la ferreteria y el stock del cemento no subio", "procedimiento": "almacenes.registrar-ingreso-por-compra", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "donde busco un documento que registre con factura si no sale en ingresos", "procedimiento": "almacenes.registrar-ingreso-por-compra", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me sale el documento en ingresos", "procedimiento": "almacenes.registrar-ingreso-por-compra", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "ingreso no aparece", "procedimiento": "almacenes.registrar-ingreso-por-compra", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "se registro el documento pero no genero ingreso al almacen", "procedimiento": "almacenes.registrar-ingreso-por-compra", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "empece a controlar una obra que ya estaba en marcha, como cargo lo que ya hay en el almacen", "procedimiento": "almacenes.registrar-ingreso-por-inventario", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Necesito registrar el stock inicial de un proyecto ya iniciado mediante un ingreso por inventario, ¿cómo procedo?", "procedimiento": "almacenes.registrar-ingreso-por-inventario", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "ingreso por inventario", "procedimiento": "almacenes.registrar-ingreso-por-inventario", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "II almacen s10", "procedimiento": "almacenes.registrar-ingreso-por-inventario", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "komo ingreso x inventario los materiales q ya tengo", "procedimiento": "almacenes.registrar-ingreso-por-inventario", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "la obra lleva meses y recien vamos a usar el s10, como le meto el stock que hay en el almacen", "procedimiento": "almacenes.registrar-ingreso-por-inventario", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como registro la fecha, tipo de documento y moneda del movimiento de ingreso", "procedimiento": "almacenes.registrar-ingreso-por-inventario", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "que es descarga directa al grabar un ingreso por inventario y como se usa", "procedimiento": "almacenes.registrar-ingreso-por-inventario", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como ingreso cantidad y precio neto de los recursos de un inventario inicial", "procedimiento": "almacenes.registrar-ingreso-por-inventario", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "imprimir la guia de ingreso despues de grabar, como", "procedimiento": "almacenes.registrar-ingreso-por-inventario", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "dar de alta saldos iniciales en almacen", "procedimiento": "almacenes.registrar-ingreso-por-inventario", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como pongo una observacion corta para agrupar los ingresos", "procedimiento": "almacenes.registrar-ingreso-por-inventario", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "quiero cargar existencias que encontre en la obra, que opcion elijo", "procedimiento": "almacenes.registrar-ingreso-por-inventario", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ingreso x inventario sin orden de compra ni factura, pasos", "procedimiento": "almacenes.registrar-ingreso-por-inventario", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "¿Cómo registro el tipo de cambio de la fecha en una guía de ingreso por inventario?", "procedimiento": "almacenes.registrar-ingreso-por-inventario", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "vista previa del reporte de la guia de ingreso, como la veo", "procedimiento": "almacenes.registrar-ingreso-por-inventario", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde cambio el tipo de cambio de una guia de ingreso", "procedimiento": "almacenes.registrar-ingreso-por-inventario", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que escenario elijo ingreso por inventario", "procedimiento": "almacenes.registrar-ingreso-por-inventario", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde esta el boton para elegir el tipo de ingreso", "procedimiento": "almacenes.registrar-ingreso-por-inventario", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd sale la ventana tipo de cambio al ingresar", "procedimiento": "almacenes.registrar-ingreso-por-inventario", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "donde queda la columna observacion de los ingresos", "procedimiento": "almacenes.registrar-ingreso-por-inventario", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "inventario inicial donde se carga", "procedimiento": "almacenes.registrar-ingreso-por-inventario", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "donde se ve el numero de guia correlativo de los ingresos", "procedimiento": "almacenes.registrar-ingreso-por-inventario", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Qué debe estar registrado antes de un ingreso por inventario, el catálogo de recursos y el proyecto?", "procedimiento": "almacenes.registrar-ingreso-por-inventario", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que acceso necesita el usuario para hacer ingresos de un proyecto", "procedimiento": "almacenes.registrar-ingreso-por-inventario", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "el recurso no esta en el catalogo, debo registrarlo antes de inventariar", "procedimiento": "almacenes.registrar-ingreso-por-inventario", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que atributo necesita el usuario para eliminar guias de ingreso y donde se asigna", "procedimiento": "almacenes.registrar-ingreso-por-inventario", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que moneda y tipo de cambio uso en un ingreso por inventario", "procedimiento": "almacenes.registrar-ingreso-por-inventario", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "el proyecto lo cree en gerencia, tiene ke verse en almacenes pa ingresar", "procedimiento": "almacenes.registrar-ingreso-por-inventario", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "no puedo eliminar una guia de ingreso por inventario que tiene regularizacion", "procedimiento": "almacenes.registrar-ingreso-por-inventario", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "la guia de ingreso quedo bloqueada despues del cierre de mes, no la puedo modificar", "procedimiento": "almacenes.registrar-ingreso-por-inventario", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "los montos del documento del proveedor no cuadran con los calculados", "procedimiento": "almacenes.registrar-ingreso-por-inventario", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "me pide tipo de cambio de la fecha y no lo tengo", "procedimiento": "almacenes.registrar-ingreso-por-inventario", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "guia de ingreso protejida no deja cambiar cantidad", "procedimiento": "almacenes.registrar-ingreso-por-inventario", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "el proveedor nos dio un documento con calculos mal, que hago con el ingreso", "procedimiento": "almacenes.registrar-ingreso-por-inventario", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no elimina guia de ingreso", "procedimiento": "almacenes.registrar-ingreso-por-inventario", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "el proveedor entrego el pedido en obra y la OC ya esta aprobada, como doy ingreso a los recursos", "procedimiento": "almacenes.registrar-ingreso-por-orden-de-compra", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Quiero registrar un ingreso por orden de compra, ¿cuáles son los pasos?", "procedimiento": "almacenes.registrar-ingreso-por-orden-de-compra", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "ingreso por orden de compra", "procedimiento": "almacenes.registrar-ingreso-por-orden-de-compra", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "IOC", "procedimiento": "almacenes.registrar-ingreso-por-orden-de-compra", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como ingreso al almacen solo lo que llego si la entrega vino incompleta", "procedimiento": "almacenes.registrar-ingreso-por-orden-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "adicionar desde orden de compra, como se usa", "procedimiento": "almacenes.registrar-ingreso-por-orden-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo ago un ingreso x orden de compra", "procedimiento": "almacenes.registrar-ingreso-por-orden-de-compra", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "las ordenes de compra de compras como las traigo al almacen", "procedimiento": "almacenes.registrar-ingreso-por-orden-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el proveedor entrego parcial, como registro solo las cantidades recibidas", "procedimiento": "almacenes.registrar-ingreso-por-orden-de-compra", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "cuando acepto las cantidades de la OC al ingresar", "procedimiento": "almacenes.registrar-ingreso-por-orden-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ingreso x oc en s10", "procedimiento": "almacenes.registrar-ingreso-por-orden-de-compra", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como imprimo la guia de un ingreso por OC", "procedimiento": "almacenes.registrar-ingreso-por-orden-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo recepciono en el almacén lo comprado con una orden de compra aprobada?", "procedimiento": "almacenes.registrar-ingreso-por-orden-de-compra", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "elegir al proveedor que esta entregando en el almacen, como lo hago", "procedimiento": "almacenes.registrar-ingreso-por-orden-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "se compro con OC desde el modulo de compras, como lo ingreso en almacenes", "procedimiento": "almacenes.registrar-ingreso-por-orden-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "registrar recepcion de material por OC", "procedimiento": "almacenes.registrar-ingreso-por-orden-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "en que ventana salen las ordenes de compra para ingresar", "procedimiento": "almacenes.registrar-ingreso-por-orden-de-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde esta adicionar desde orden de compra", "procedimiento": "almacenes.registrar-ingreso-por-orden-de-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "escenario donde veo el ingreso por oc", "procedimiento": "almacenes.registrar-ingreso-por-orden-de-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd elijo el proveedor que entrega", "procedimiento": "almacenes.registrar-ingreso-por-orden-de-compra", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "ordenes de compra en almacen donde estan", "procedimiento": "almacenes.registrar-ingreso-por-orden-de-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "ioc donde", "procedimiento": "almacenes.registrar-ingreso-por-orden-de-compra", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "donde veo el reporte de la guia de ingreso de una OC", "procedimiento": "almacenes.registrar-ingreso-por-orden-de-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Qué condición debe cumplir una orden de compra para poder ingresarla en el almacén?", "procedimiento": "almacenes.registrar-ingreso-por-orden-de-compra", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "debo tener el modulo de compras para usar el ingreso por OC", "procedimiento": "almacenes.registrar-ingreso-por-orden-de-compra", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que cantidades registro al ingresar si la entrega vino incompleta", "procedimiento": "almacenes.registrar-ingreso-por-orden-de-compra", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que tipo de ingreso selecciono en el arbol para trabajar con ordenes de compra", "procedimiento": "almacenes.registrar-ingreso-por-orden-de-compra", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "de que modulo depende el ingreso por orden de compra", "procedimiento": "almacenes.registrar-ingreso-por-orden-de-compra", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "ke nesecito pa q una OC llegue a almacenes", "procedimiento": "almacenes.registrar-ingreso-por-orden-de-compra", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "la ventana de ordenes de compra sale vacia", "procedimiento": "almacenes.registrar-ingreso-por-orden-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "la OC que hicimos ayer no pasa a almacenes", "procedimiento": "almacenes.registrar-ingreso-por-orden-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "mi empresa no tiene el modulo de compras y no puedo usar adicionar desde orden de compra", "procedimiento": "almacenes.registrar-ingreso-por-orden-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "la orden esta generada pero no llega al almacen, falta aprobarla", "procedimiento": "almacenes.registrar-ingreso-por-orden-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "ordenes de compra bacias en almacen", "procedimiento": "almacenes.registrar-ingreso-por-orden-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "ioc vacio", "procedimiento": "almacenes.registrar-ingreso-por-orden-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "el camion llego con todo pero en el sistema no me sale la orden para recibirlo", "procedimiento": "almacenes.registrar-ingreso-por-orden-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "ingrese material solo con guia de remision y ahora llego la factura, como la vinculo", "procedimiento": "almacenes.regularizar-ingreso-por-compra", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Necesito regularizar guías de remisión de un mismo proveedor con una factura, ¿cómo lo hago?", "procedimiento": "almacenes.regularizar-ingreso-por-compra", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "regularizacion simple", "procedimiento": "almacenes.regularizar-ingreso-por-compra", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "regularizar ingreso por compra", "procedimiento": "almacenes.regularizar-ingreso-por-compra", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "komo regularizo las guias con la factura", "procedimiento": "almacenes.regularizar-ingreso-por-compra", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como paso la factura de unas guias a documentos por pagar y contabilidad", "procedimiento": "almacenes.regularizar-ingreso-por-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "para que se pague una sola vez al proveedor, como enlazo las guias con su factura", "procedimiento": "almacenes.regularizar-ingreso-por-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "regularizar guias", "procedimiento": "almacenes.regularizar-ingreso-por-compra", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "clic derecho en el ingreso y regularizar, que sigue despues", "procedimiento": "almacenes.regularizar-ingreso-por-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como registro fecha de pago, de recepcion y periodo de contabilidad al regularizar", "procedimiento": "almacenes.regularizar-ingreso-por-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como ingreso el precio de los recursos al regularizar con la factura", "procedimiento": "almacenes.regularizar-ingreso-por-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "tengo 3 guias de remision del mismo proveedor y una sola factura, como las regularizo", "procedimiento": "almacenes.regularizar-ingreso-por-compra", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "asociar factura a guias ya ingresadas, paso a paso", "procedimiento": "almacenes.regularizar-ingreso-por-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como pongo descuento al documento completo al regularizar", "procedimiento": "almacenes.regularizar-ingreso-por-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ya llego la factura de los concretos premezclados, como la registro sobre las guias", "procedimiento": "almacenes.regularizar-ingreso-por-compra", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "pasos para regularisar un ingreso", "procedimiento": "almacenes.regularizar-ingreso-por-compra", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "donde esta la opcion de regularizacion simple", "procedimiento": "almacenes.regularizar-ingreso-por-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que parte elijo las guias de remision pendientes de regularizar", "procedimiento": "almacenes.regularizar-ingreso-por-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd regularizo un ingreso por compra", "procedimiento": "almacenes.regularizar-ingreso-por-compra", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "con clic derecho en que ingreso aparece regularizar", "procedimiento": "almacenes.regularizar-ingreso-por-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde marco revisado del registro de la factura", "procedimiento": "almacenes.regularizar-ingreso-por-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "regularizar donde", "procedimiento": "almacenes.regularizar-ingreso-por-compra", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "en que ventana elijo el tipo de documento con que se regulariza", "procedimiento": "almacenes.regularizar-ingreso-por-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Qué periodo de aplicación en contabilidad debo elegir al regularizar?", "procedimiento": "almacenes.regularizar-ingreso-por-compra", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que forma de pago uso al regularizar, es una regla", "procedimiento": "almacenes.regularizar-ingreso-por-compra", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que ingreso previo debo haber hecho para poder regularizar", "procedimiento": "almacenes.regularizar-ingreso-por-compra", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "donde indico el porcentaje de descuento del documento", "procedimiento": "almacenes.regularizar-ingreso-por-compra", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que fechas se piden al regularizar con la factura", "procedimiento": "almacenes.regularizar-ingreso-por-compra", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "ke tipo de movimiento selecciono pa ver los ingresos por regularizar", "procedimiento": "almacenes.regularizar-ingreso-por-compra", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "tengo guias de un mismo proveedor con varias facturas y la regularizacion simple no sirve", "procedimiento": "almacenes.regularizar-ingreso-por-compra", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "quiero regularizar guias de proveedores distintos con sus facturas", "procedimiento": "almacenes.regularizar-ingreso-por-compra", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "los montos no coinciden con la factura fisica al regularizar", "procedimiento": "almacenes.regularizar-ingreso-por-compra", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me aparecen guias pendientes de regularizacion", "procedimiento": "almacenes.regularizar-ingreso-por-compra", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no puedo regularisar un ingreso que se hizo con factura", "procedimiento": "almacenes.regularizar-ingreso-por-compra", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "regularizacion simple no vale", "procedimiento": "almacenes.regularizar-ingreso-por-compra", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "las guias son de proveedor A y B y cada uno mando su factura, que opcion uso", "procedimiento": "almacenes.regularizar-ingreso-por-compra", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "la OC la acabo de generar, como la envio para que me la aprueben", "procedimiento": "compras.aprobar-orden-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Soy el encargado de aprobar las órdenes de compra, ¿cómo apruebo una?", "procedimiento": "compras.aprobar-orden-de-compra", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "aprobar OC", "procedimiento": "compras.aprobar-orden-de-compra", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como apruebo una orden de compra desde el nombre del proveedor", "procedimiento": "compras.aprobar-orden-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo apruebo la orden de compra", "procedimiento": "compras.aprobar-orden-de-compra", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como veo el estado y valor total de las OC antes de aprobarlas", "procedimiento": "compras.aprobar-orden-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "enviar para aprobacion", "procedimiento": "compras.aprobar-orden-de-compra", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "quiero que la orden pase a almacenes para ingresar el material, que hago con ella en compras", "procedimiento": "compras.aprobar-orden-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el gerente me pidio aprobar las ordenes de compra de la obra, por donde empiezo", "procedimiento": "compras.aprobar-orden-de-compra", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "clic derecho sobre la orden y aprobar, solo eso", "procedimiento": "compras.aprobar-orden-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como agrupo las OC por estado y valor total", "procedimiento": "compras.aprobar-orden-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se aprueban las órdenes de compra pendientes de visto bueno?", "procedimiento": "compras.aprobar-orden-de-compra", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como ago pa q mi OC la apruebe el jefe", "procedimiento": "compras.aprobar-orden-de-compra", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "proceso de aprobacion de una orden de compra, pasos", "procedimiento": "compras.aprobar-orden-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "arrastrar estado al cuadro de agrupar para aprobar, como es", "procedimiento": "compras.aprobar-orden-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "despues de generar la oc que sigue para que se pueda comprar", "procedimiento": "compras.aprobar-orden-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "por que pantalla de compras se aprueba una OC ya generada", "procedimiento": "compras.aprobar-orden-de-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde esta la opcion enviar para aprobacion", "procedimiento": "compras.aprobar-orden-de-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd veo las OC por aprobar", "procedimiento": "compras.aprobar-orden-de-compra", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "donde esta el cuadro de agrupar con estado y valor total", "procedimiento": "compras.aprobar-orden-de-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "aprobar oc donde", "procedimiento": "compras.aprobar-orden-de-compra", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "que menu tiene la opcion APROBAR al dar clic en el proveedor", "procedimiento": "compras.aprobar-orden-de-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "por que escenario entra el aprobador de ordenes", "procedimiento": "compras.aprobar-orden-de-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Qué debe estar definido antes para que alguien pueda aprobar una orden de compra?", "procedimiento": "compras.aprobar-orden-de-compra", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que requisitos tiene que cumplir el aprobador para aprobar una orden, atributos y rango", "procedimiento": "compras.aprobar-orden-de-compra", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "en que estado debe estar la OC para enviarla a aprobacion", "procedimiento": "compras.aprobar-orden-de-compra", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "quien puede enviar una OC a aprobacion", "procedimiento": "compras.aprobar-orden-de-compra", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que estados maneja una orden y cuando la puedo modificar", "procedimiento": "compras.aprobar-orden-de-compra", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "ke nesecito antes de aprobar una OC", "procedimiento": "compras.aprobar-orden-de-compra", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "no puedo aprobar la orden de compra, el monto esta fuera de mi rango", "procedimiento": "compras.aprobar-orden-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el boton enviar para aprobacion no me sale", "procedimiento": "compras.aprobar-orden-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "otra persona genero la OC y yo quiero enviarla a aprobacion, no me deja", "procedimiento": "compras.aprobar-orden-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "necesito cambiar un dato de una orden ya generada", "procedimiento": "compras.aprobar-orden-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "quiero eliminar una OC que hice por error", "procedimiento": "compras.aprobar-orden-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "me dise q no tengo atributos pa aprobar", "procedimiento": "compras.aprobar-orden-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "no envia a aprobacion", "procedimiento": "compras.aprobar-orden-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "me llegaron pedidos Por aprobar de las obras, como los apruebo", "procedimiento": "compras.aprobar-pedido", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Necesito aprobar un pedido A Compra completo, ¿cómo lo hago?", "procedimiento": "compras.aprobar-pedido", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "aprobar pedido", "procedimiento": "compras.aprobar-pedido", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como apruebo solo un recurso del pedido y no todos", "procedimiento": "compras.aprobar-pedido", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "puedo aprobar parcialmente la cantidad de un recurso, como", "procedimiento": "compras.aprobar-pedido", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo apruebo un pedido en compras", "procedimiento": "compras.aprobar-pedido", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "despues de aprobar como veo el pedido que genera el sistema", "procedimiento": "compras.aprobar-pedido", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "para que sirve ver generar pedidos a almacen o compras y como se usa", "procedimiento": "compras.aprobar-pedido", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "aprobacion de pedidos", "procedimiento": "compras.aprobar-pedido", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como confirmo que apruebo todo el pedido", "procedimiento": "compras.aprobar-pedido", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "soy el jefe de logistica y debo dar el ok a los pedidos de la obra, que hago", "procedimiento": "compras.aprobar-pedido", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "aprovar pedido de compra", "procedimiento": "compras.aprobar-pedido", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como pasa un pedido al proceso de compra", "procedimiento": "compras.aprobar-pedido", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cuáles son los pasos para que un pedido quede aprobado y el sistema genere el pedido de compra?", "procedimiento": "compras.aprobar-pedido", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "apruebo todos los recursos del pedido con un solo clic derecho", "procedimiento": "compras.aprobar-pedido", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como apruebo un pedido en compras y pedidos", "procedimiento": "compras.aprobar-pedido", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "por donde entro como aprobador de pedidos", "procedimiento": "compras.aprobar-pedido", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde esta aprobar pedido al dar clic derecho", "procedimiento": "compras.aprobar-pedido", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "escenario de aprobacion de pedidos donde queda", "procedimiento": "compras.aprobar-pedido", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd se ve el documento generado a partir del pedido", "procedimiento": "compras.aprobar-pedido", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "donde esta la opcion de aprobar un recurso del pedido", "procedimiento": "compras.aprobar-pedido", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "aprobacion pedidos donde", "procedimiento": "compras.aprobar-pedido", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "como llego a la ventana de documentos generados a partir del pedido", "procedimiento": "compras.aprobar-pedido", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Qué permisos debe tener quien aprueba los pedidos?", "procedimiento": "compras.aprobar-pedido", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que debo tener listo para aprobar pedidos, usuario con atributos", "procedimiento": "compras.aprobar-pedido", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que atributos necesita el usuario que aprueba pedidos", "procedimiento": "compras.aprobar-pedido", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "con que usuario entro al modulo para aprobar pedidos", "procedimiento": "compras.aprobar-pedido", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "a que modulo ingreso para aprobar, compras y pedidos", "procedimiento": "compras.aprobar-pedido", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "el aprovador de pedidos ke nesecita tener registrado", "procedimiento": "compras.aprobar-pedido", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "observe un pedido y sus recursos no los puedo usar en otro pedido", "procedimiento": "compras.aprobar-pedido", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el pedido no pasa al proceso de compra", "procedimiento": "compras.aprobar-pedido", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "quedaron pedidos A Compra sin aprobar y no avanzan", "procedimiento": "compras.aprobar-pedido", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "los recursos de un pedido observado quedan no disponibles", "procedimiento": "compras.aprobar-pedido", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "aprobe un recurso pero el pedido sigue sin pasar", "procedimiento": "compras.aprobar-pedido", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "deje un pedido en espera por observado, como lo libero para que se use en otro", "procedimiento": "compras.aprobar-pedido", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "pedido observado en espera", "procedimiento": "compras.aprobar-pedido", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "tengo un pedido aprobado en pedidos de compra, como lo convierto en OC", "procedimiento": "compras.generar-orden-de-compra-desde-pedido", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Quiero emitir la orden de compra solo de algunos recursos del pedido, ¿cómo lo hago?", "procedimiento": "compras.generar-orden-de-compra-desde-pedido", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "generar orden de compra", "procedimiento": "compras.generar-orden-de-compra-desde-pedido", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "generar oc desde pedido", "procedimiento": "compras.generar-orden-de-compra-desde-pedido", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "komo genero la orden de compra de un pedido", "procedimiento": "compras.generar-orden-de-compra-desde-pedido", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como pongo el proveedor, contacto y forma de pago en la cabecera de la orden", "procedimiento": "compras.generar-orden-de-compra-desde-pedido", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde meto los precios de los recursos de la orden", "procedimiento": "compras.generar-orden-de-compra-desde-pedido", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como consulto los precios de un recurso cuando armo la OC", "procedimiento": "compras.generar-orden-de-compra-desde-pedido", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como aplico un descuento del 3% a la orden de compra", "procedimiento": "compras.generar-orden-de-compra-desde-pedido", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como pongo la fecha de vigencia de la OC", "procedimiento": "compras.generar-orden-de-compra-desde-pedido", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo indico la moneda y el tipo de cambio de la orden de compra?", "procedimiento": "compras.generar-orden-de-compra-desde-pedido", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "hay que registrar el numero de factura al generar la oc", "procedimiento": "compras.generar-orden-de-compra-desde-pedido", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como pongo la fecha de entrega total de la compra", "procedimiento": "compras.generar-orden-de-compra-desde-pedido", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ya escogi al proveedor, como armo su orden con las cantidades del pedido", "procedimiento": "compras.generar-orden-de-compra-desde-pedido", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "genrar orden de compra del pedido aprobado", "procedimiento": "compras.generar-orden-de-compra-desde-pedido", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "pedido de compra a OC, pasos", "procedimiento": "compras.generar-orden-de-compra-desde-pedido", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "en que escenario se genera la orden de compra desde un pedido", "procedimiento": "compras.generar-orden-de-compra-desde-pedido", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde esta generar orden de compra al dar clic derecho", "procedimiento": "compras.generar-orden-de-compra-desde-pedido", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "que pestaña tiene los precios de la OC", "procedimiento": "compras.generar-orden-de-compra-desde-pedido", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd esta la pestana acumulado", "procedimiento": "compras.generar-orden-de-compra-desde-pedido", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "pedidos de compra donde estan", "procedimiento": "compras.generar-orden-de-compra-desde-pedido", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "donde pongo el descuento en monto en la cabecera de la OC", "procedimiento": "compras.generar-orden-de-compra-desde-pedido", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "clic derecho sobre el recurso o sobre el pedido, donde esta la opcion", "procedimiento": "compras.generar-orden-de-compra-desde-pedido", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Qué datos de la cabecera debo definir en la orden de compra: proveedor, contacto, moneda y forma de pago?", "procedimiento": "compras.generar-orden-de-compra-desde-pedido", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que tipo de cambio elijo en la orden de compra", "procedimiento": "compras.generar-orden-de-compra-desde-pedido", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como ingreso el descuento, en porcentaje o en monto", "procedimiento": "compras.generar-orden-de-compra-desde-pedido", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "la fecha de entrega total la pongo en la orden o en el pedido", "procedimiento": "compras.generar-orden-de-compra-desde-pedido", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "ke fecha de vijencia le pongo a una oc", "procedimiento": "compras.generar-orden-de-compra-desde-pedido", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "que requisito debe cumplir el pedido para generar la orden", "procedimiento": "compras.generar-orden-de-compra-desde-pedido", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "no me deja generar la orden de compra, el pedido no esta aprobado", "procedimiento": "compras.generar-orden-de-compra-desde-pedido", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el pedido de la obra no sale en el escenario de pedidos de compra", "procedimiento": "compras.generar-orden-de-compra-desde-pedido", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "se genero la orden con todos los recursos y yo queria solo una parte", "procedimiento": "compras.generar-orden-de-compra-desde-pedido", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "deje el numero de factura vacio, es error", "procedimiento": "compras.generar-orden-de-compra-desde-pedido", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no se que precio poner a un recurso en la OC", "procedimiento": "compras.generar-orden-de-compra-desde-pedido", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "grabe la OC y salio sin precios, donde se ponen", "procedimiento": "compras.generar-orden-de-compra-desde-pedido", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "el desquento no me lo toma en la orden", "procedimiento": "compras.generar-orden-de-compra-desde-pedido", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "como defino quienes aprueban las ordenes de compra de un centro de compra", "procedimiento": "compras.registrar-aprobadores-de-orden-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Debo registrar un grupo de aprobadores con montos mínimo y máximo, ¿cómo procedo?", "procedimiento": "compras.registrar-aprobadores-de-orden-de-compra", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "grupo de aprobadores", "procedimiento": "compras.registrar-aprobadores-de-orden-de-compra", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "komo agrego un aprobador a la orden de compra", "procedimiento": "compras.registrar-aprobadores-de-orden-de-compra", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como registro el numero de VB para aprobacion", "procedimiento": "compras.registrar-aprobadores-de-orden-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el gerente aprueba hasta cierto monto y el residente de ahi para abajo, como lo dejo", "procedimiento": "compras.registrar-aprobadores-de-orden-de-compra", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como agrego un usuario al grupo aprobacion", "procedimiento": "compras.registrar-aprobadores-de-orden-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "aprobadores del proyecto, como los registro para que solo aprueben las OC de esa obra", "procedimiento": "compras.registrar-aprobadores-de-orden-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "registrar aprobadores oc", "procedimiento": "compras.registrar-aprobadores-de-orden-de-compra", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como creo el grupo llamado Aprobadores de Ordenes de Compra", "procedimiento": "compras.registrar-aprobadores-de-orden-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "necesito que una OC la apruebe solo una persona, que numero pongo", "procedimiento": "compras.registrar-aprobadores-de-orden-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo elijo la moneda y los montos mínimo y máximo que aprobará el grupo?", "procedimiento": "compras.registrar-aprobadores-de-orden-de-compra", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "aprobadores de OC por proyecto y por centro de compra, pasos", "procedimiento": "compras.registrar-aprobadores-de-orden-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "kiero poner quien aprueba las ordenes en s10", "procedimiento": "compras.registrar-aprobadores-de-orden-de-compra", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "pulso adicionar para grabar el grupo, y luego como pongo al usuario", "procedimiento": "compras.registrar-aprobadores-de-orden-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "asignar usuario aprobador al grupo, paso a paso", "procedimiento": "compras.registrar-aprobadores-de-orden-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "en que escenario se crea el grupo de aprobadores", "procedimiento": "compras.registrar-aprobadores-de-orden-de-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde sale la ventana Grupo Aprobacion", "procedimiento": "compras.registrar-aprobadores-de-orden-de-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd esta la seccion de aprobadores del centro de compras", "procedimiento": "compras.registrar-aprobadores-de-orden-de-compra", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "datos generales donde estan los aprobadores", "procedimiento": "compras.registrar-aprobadores-de-orden-de-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "aprobadores donde", "procedimiento": "compras.registrar-aprobadores-de-orden-de-compra", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "donde agrego usuarios al grupo con clic derecho", "procedimiento": "compras.registrar-aprobadores-de-orden-de-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en el arbol de datos generales, que elijo para los aprobadores del proyecto", "procedimiento": "compras.registrar-aprobadores-de-orden-de-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Cuántos vistos buenos conviene configurar para aprobar una orden de compra?", "procedimiento": "compras.registrar-aprobadores-de-orden-de-compra", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que monto minimo y maximo debo poner a cada grupo", "procedimiento": "compras.registrar-aprobadores-de-orden-de-compra", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "puedo poner varios aprobadores en un grupo, aprobacion en estrella", "procedimiento": "compras.registrar-aprobadores-de-orden-de-compra", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que moneda se usa para el rango del grupo", "procedimiento": "compras.registrar-aprobadores-de-orden-de-compra", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que debe existir antes de registrar aprobadores, centro de compra y usuarios", "procedimiento": "compras.registrar-aprobadores-de-orden-de-compra", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "difrencia entre aprobadores del proyecto y del centro de compra al configurar", "procedimiento": "compras.registrar-aprobadores-de-orden-de-compra", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "la aprobacion de las OC demora mucho porque hay muchos aprobadores", "procedimiento": "compras.registrar-aprobadores-de-orden-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "hay demasiados aprobadores y suben los gastos de operacion", "procedimiento": "compras.registrar-aprobadores-de-orden-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "quiero que baste que el primero que vea el mensaje apruebe", "procedimiento": "compras.registrar-aprobadores-de-orden-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el grupo no cubre el monto de mis ordenes, como lo ajusto", "procedimiento": "compras.registrar-aprobadores-de-orden-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "agregue el grupo pero no se ve el usuario aprobador debajo", "procedimiento": "compras.registrar-aprobadores-de-orden-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el usuario no sale en el catalogo al agregarlo al grupo", "procedimiento": "compras.registrar-aprobadores-de-orden-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "un aprobador no da su visto bueno y la OC no avanza, que pasa", "procedimiento": "compras.registrar-aprobadores-de-orden-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "como creo el centro de compra de la oficina de logistica", "procedimiento": "compras.registrar-centro-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Debo registrar un centro de compra con su responsable y usuarios, ¿cómo lo hago?", "procedimiento": "compras.registrar-centro-de-compra", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "nuevo centro de compra", "procedimiento": "compras.registrar-centro-de-compra", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "centro de compras", "procedimiento": "compras.registrar-centro-de-compra", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "komo registro un sentro de compra", "procedimiento": "compras.registrar-centro-de-compra", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como agrego usuarios al centro de compras", "procedimiento": "compras.registrar-centro-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como marco al responsable del centro de compra", "procedimiento": "compras.registrar-centro-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "un centro de compras que maneje varias obras, como asigno los proyectos", "procedimiento": "compras.registrar-centro-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como registro codigo, abreviatura, lugar y persona encargada de atencion", "procedimiento": "compras.registrar-centro-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como elijo quien autoriza la orden de compra en el centro", "procedimiento": "compras.registrar-centro-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "vamos a manejar las compras de tres obras desde logistica, como lo armo en el s10", "procedimiento": "compras.registrar-centro-de-compra", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "pasos para dar de alta el centro de compra y sus proyectos", "procedimiento": "compras.registrar-centro-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "kiero ponerle proyectos al centro de compras", "procedimiento": "compras.registrar-centro-de-compra", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "adicionar usuario al centro de compra", "procedimiento": "compras.registrar-centro-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como pongo la pestaña proyectos y escojo del catalogo", "procedimiento": "compras.registrar-centro-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se registra un centro de compra paso a paso?", "procedimiento": "compras.registrar-centro-de-compra", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "donde se crean los centros de compras", "procedimiento": "compras.registrar-centro-de-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "clic derecho en centros de compras, donde esta nuevo centro", "procedimiento": "compras.registrar-centro-de-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd veo la pestaña proyectos del centro", "procedimiento": "compras.registrar-centro-de-compra", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "datos generales de compras donde esta", "procedimiento": "compras.registrar-centro-de-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "centro de compra donde", "procedimiento": "compras.registrar-centro-de-compra", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "donde esta el catalogo de proyectos del centro de compra", "procedimiento": "compras.registrar-centro-de-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde se adiciona usuario al centro", "procedimiento": "compras.registrar-centro-de-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Qué usuarios deben estar registrados antes de armar el centro de compra?", "procedimiento": "compras.registrar-centro-de-compra", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "donde se da acceso al modulo de compras a un usuario, mantenimiento de usuarios", "procedimiento": "compras.registrar-centro-de-compra", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "quien registra al usuario que manejara compras y pedidos", "procedimiento": "compras.registrar-centro-de-compra", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que debo tener en socio de negocio para el usuario de compras", "procedimiento": "compras.registrar-centro-de-compra", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "cuantos proyectos puede manejar un centro de compras", "procedimiento": "compras.registrar-centro-de-compra", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "ke es la casilla responsable en el centro de compra", "procedimiento": "compras.registrar-centro-de-compra", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "el usuario no aparece en el catalogo de usuarios del centro de compra", "procedimiento": "compras.registrar-centro-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no puedo entrar al modulo de compras y pedidos con mi usuario", "procedimiento": "compras.registrar-centro-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el usuario no tiene acceso al modulo desde mantenimiento de usuarios", "procedimiento": "compras.registrar-centro-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no veo proyectos en el catalogo al asignar al centro", "procedimiento": "compras.registrar-centro-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no puedo registrar al usuario dicen q solo lo hace el sa", "procedimiento": "compras.registrar-centro-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "el centro quedo sin usuario que autorice la orden de compra", "procedimiento": "compras.registrar-centro-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "usuario no esta en socio de negocio", "procedimiento": "compras.registrar-centro-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "necesito comprar recursos para la obra, como armo el pedido desde el almacen del proyecto", "procedimiento": "compras.registrar-pedido-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Quiero registrar un pedido manual A Compras, ¿cuál es el procedimiento?", "procedimiento": "compras.registrar-pedido-de-compra", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "pedido a compras", "procedimiento": "compras.registrar-pedido-de-compra", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "registrar pedido", "procedimiento": "compras.registrar-pedido-de-compra", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "komo hago un pedido de compra", "procedimiento": "compras.registrar-pedido-de-compra", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como adiciono recursos al pedido desde el catalogo", "procedimiento": "compras.registrar-pedido-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como agrupo recursos de un mismo proveedor en el pedido", "procedimiento": "compras.registrar-pedido-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como pongo la fecha de entrega de cada recurso del pedido", "procedimiento": "compras.registrar-pedido-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como mando el pedido a aprobacion", "procedimiento": "compras.registrar-pedido-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el almacenero necesita pedir cemento y fierro para la proxima semana, que pasos sigue", "procedimiento": "compras.registrar-pedido-de-compra", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "adicionar pedido A Compras en el almacen del proyecto", "procedimiento": "compras.registrar-pedido-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "pasos para ingresar la cantidad a pedir y enviar a aprobar", "procedimiento": "compras.registrar-pedido-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ke se ase pa pedir materiales a logistica", "procedimiento": "compras.registrar-pedido-de-compra", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como pido recursos que no tengo en stock", "procedimiento": "compras.registrar-pedido-de-compra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "pedido manual", "procedimiento": "compras.registrar-pedido-de-compra", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "¿Cómo se registra un pedido de compra desde el almacén de un proyecto?", "procedimiento": "compras.registrar-pedido-de-compra", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "en que escenario del almacen hago los pedidos de recursos", "procedimiento": "compras.registrar-pedido-de-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde esta el boton de configuracion de pedidos", "procedimiento": "compras.registrar-pedido-de-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd elijo A Compras al adicionar un pedido", "procedimiento": "compras.registrar-pedido-de-compra", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "donde veo el pedido enviado como Por aprobar", "procedimiento": "compras.registrar-pedido-de-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "adicionar recursos al pedido donde", "procedimiento": "compras.registrar-pedido-de-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "pedidos almacen donde", "procedimiento": "compras.registrar-pedido-de-compra", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "por donde se entra a hacer pedidos en el arbol del almacen", "procedimiento": "compras.registrar-pedido-de-compra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "como activo el aviso por correo al aprobador cuando envio un pedido", "procedimiento": "compras.registrar-pedido-de-compra", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Para qué sirve marcar la fecha de entrega obligatoria y afecta la impresión de la orden de compra?", "procedimiento": "compras.registrar-pedido-de-compra", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que necesito para poder hacer pedidos, socio de negocio y acceso", "procedimiento": "compras.registrar-pedido-de-compra", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que configuracion de pedidos reviso antes de empezar", "procedimiento": "compras.registrar-pedido-de-compra", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "el korreo al aprobador se activa en la configuracion del pedido", "procedimiento": "compras.registrar-pedido-de-compra", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "desde que almacen se hacen los pedidos", "procedimiento": "compras.registrar-pedido-de-compra", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "necesito pedir recursos que ya tienen stock para una partida de control y A Compras no sirve", "procedimiento": "compras.registrar-pedido-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "quiero pedir material que ya esta en el stock para la partida, que tipo de pedido uso", "procedimiento": "compras.registrar-pedido-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "envie el pedido y no se donde figura", "procedimiento": "compras.registrar-pedido-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "mi usuario no puede hacer pedidos, no tiene acceso al modulo", "procedimiento": "compras.registrar-pedido-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el pedido no me deja enviarlo sin fecha de entrega", "procedimiento": "compras.registrar-pedido-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "le pedi al aprobador por telefono y dice que no le llego el correo del pedido", "procedimiento": "compras.registrar-pedido-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "pedido no figura por aprobar", "procedimiento": "compras.registrar-pedido-de-compra", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
