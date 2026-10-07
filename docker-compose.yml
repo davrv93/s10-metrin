@@ -2,11 +2,13 @@
 #
 #   docker compose up -d --build              cortex + admin + programador + metrin
 #   docker compose --profile llm up -d        además Ollama dentro del compose
+#   docker compose --profile redis up -d      además Redis y su consola web (127.0.0.1:5540)
 #   docker compose run --rm herramientas s10kb.py indexar      (cualquier script)
 #
 # Puertos solo en 127.0.0.1 del host:
 #   4748 Cortex (tablero y API) · 4750 panel admin · 4760 chat de Metrín
 #   4761 visor de trazas JEV · 5433 Postgres de trazas (TRAZAS_REPO=postgres)
+#   6379 Redis · 5540 consola web de Redis (perfil «redis»)
 #
 # El código y los datos viven en esta carpeta y se montan en /app: lo que se agrega
 # desde el panel queda en disco, igual que fuera de Docker.
@@ -186,6 +188,56 @@ services:
     logging: *logs
     restart: unless-stopped
 
+  # Redis (opcional, perfil «redis»): docker compose --profile redis up -d redis redis-consola
+  # El usuario «default» va apagado: solo entra REDIS_USUARIO con REDIS_CLAVE, que vienen del .env
+  # (no se versionan; sin REDIS_CLAVE el contenedor no arranca). Desde el compose:
+  # redis://<REDIS_USUARIO>:<REDIS_CLAVE>@redis:6379 · desde el host: 127.0.0.1:6379.
+  redis:
+    image: redis:8.2-alpine
+    profiles: ["redis"]
+    environment:
+      REDIS_USUARIO: ${REDIS_USUARIO:-optimiza360}
+      REDIS_CLAVE: ${REDIS_CLAVE:-}
+      REDIS_MAXMEMORY: ${REDIS_MAXMEMORY:-256mb}
+    command:
+      - sh
+      - -c
+      - |
+        test -n "$$REDIS_CLAVE" || { echo "Falta REDIS_CLAVE en .env" >&2; exit 1; }
+        exec redis-server --appendonly yes --maxmemory "$$REDIS_MAXMEMORY" \
+          --user default off --user "$$REDIS_USUARIO" on ">$$REDIS_CLAVE" "~*" "&*" "+@all"
+    volumes: [redis-datos:/data]
+    ports: ["127.0.0.1:${REDIS_PUERTO:-6379}:6379"]
+    mem_limit: 384m
+    healthcheck:
+      test: ["CMD-SHELL", "redis-cli --no-auth-warning --user \"$$REDIS_USUARIO\" --pass \"$$REDIS_CLAVE\" ping | grep -q PONG"]
+      interval: 60s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+      start_interval: 2s
+    logging: *logs
+    restart: unless-stopped
+
+  # Consola web de Redis (Redis Insight), con la conexión a «redis» ya dada de alta con el mismo
+  # usuario y clave. No tiene login propio: escucha solo en 127.0.0.1 (en el EC2, por túnel SSH).
+  redis-consola:
+    image: redis/redisinsight:2.70
+    profiles: ["redis"]
+    environment:
+      RI_ACCEPT_TERMS_AND_CONDITIONS: "true"
+      RI_REDIS_HOST: redis
+      RI_REDIS_PORT: "6379"
+      RI_REDIS_ALIAS: s10-redis
+      RI_REDIS_USERNAME: ${REDIS_USUARIO:-optimiza360}
+      RI_REDIS_PASSWORD: ${REDIS_CLAVE:-}
+    volumes: [redis-consola:/data]
+    ports: ["127.0.0.1:${REDIS_CONSOLA_PUERTO:-5540}:5540"]
+    depends_on:
+      redis: { condition: service_healthy }
+    logging: *logs
+    restart: unless-stopped
+
   # Ollama dentro del compose (opcional; por defecto Metrín usa el de la Mac).
   ollama:
     image: ollama/ollama:latest
@@ -210,3 +262,5 @@ volumes:
   metrin-datos:
   ollama:
   trazas-pg-data:
+  redis-datos:
+  redis-consola:
