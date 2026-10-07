@@ -82,6 +82,19 @@ El modelo en `metrin/modelos/router/` es el **v2, con preguntas reales** (sha256
 
 La prueba real con caso son 6 preguntas: sirve de indicio, no de cifra.
 
+**v3 (07-10-2026, 7 grupos de WhatsApp, 1 849 candidatas): no se instaló.** Los 3 grupos nuevos aportaron 557
+candidatas y solo 2 con procedimiento. Sobre la misma prueba real ampliada (684 mensajes, 6 con caso) y la sintética:
+
+| | v2 (instalado) | v3 |
+|---|---|---|
+| Real, 678 sin caso: se abstiene | 77,3 % | 78,8 % |
+| Real, 678 sin caso: elige por error | 1,33 % | 1,62 % |
+| Real, 6 con caso: correcto 1.º | 6/6 | 6/6 |
+| Sintética, 125 con caso: elige y se equivoca | **1,6 %** | 4,0 % |
+
+Más negativos no mejoran: lo que falta son preguntas con caso, y los clientes casi no hacen preguntas que el catálogo
+cubra. El v3 queda en `salida/v3-7grupos/` (fuera de git).
+
 Detalle del v1 (125 preguntas con caso y 69 sin caso de `v2_oro.jsonl`):
 
 | | Sin afinar (cabeza sola) | Afinado | Afinado int8 (lo que corre Go) |
