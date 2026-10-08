@@ -1,0 +1,100 @@
+id: gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato
+version: 1
+modulo: gerencia-proyectos
+titulo: "Editar el diseño del resumen desde el subcontrato"
+objetivo: "Editar y adecuar a las necesidades actuales el diseño estándar del resumen de la valorización del subcontrato, antes de efectuar la primera valorización."
+nivel: avanzado
+preguntas:
+  - "como edito el resumen de la valorizacion del subcontrato"
+  - "como cambio el diseño del resumen de un subcontrato"
+  - "quiero agregar un descuento al resumen de valorizacion del subcontratista"
+  - "como agrego un concepto nuevo al pie de la valorizacion del subcontrato"
+  - "donde se edita la plantilla del resumen del subcontrato"
+  - "como le descuento un monto cada semana al subcontratista"
+  - "diseño del resumen subcontrato como se configura"
+  - "se puede modificar el resumen despues de valorisar"
+aliases:
+  - "diseño del resumen"
+  - "editar resumen del subcontrato"
+  - "plantilla del resumen"
+  - "editar plantilla del resumen"
+  - "conceptos del resumen de valorización"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Diseño del Resumen"]
+  objetos: ["subcontrato", "concepto", "plantilla", "valorización"]
+prerrequisitos:
+  - texto: "Haga esta revisión desde el subcontrato y antes de efectuar la primera valorización."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s152]
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato#1"
+    accion: "En el subcontrato, elija la pestaña **Diseño del Resumen**."
+    resultado: "Por defecto toma un diseño estándar, que debe ser editado y adecuado a las necesidades actuales."
+    fuente: [img-bf107a26e40c-0000, web-https-documentacion-s10peru-com-manual-d-s151]
+    pagina: null
+    fotos:
+      - id: "e6270b147508"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/bf107a26e40c.png"
+        pagina: null
+        ocr: "| Disefio del Resumen \\ Elija esta pestafia"
+  - n: 2
+    id: "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato#2"
+    accion: "Haga clic derecho sobre el resumen y elija **Editar plantilla**."
+    fuente: [img-3f38b961a753-0000, web-https-documentacion-s10peru-com-manual-d-s152]
+    pagina: null
+    fotos:
+      - id: "306ccc8044c3"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/3f38b961a753.png"
+        pagina: null
+        ocr: "Concepto Variable [Fénmla Por Facturar)\n1 101 Costo Directo Valorizacién _CDV_ [a\n2 104 Amortizacion Editar plantilla O | Clic derecho\n3 105 Amortizacién ¢ ia\n4° 108 Subtotalde la): Ouardar corna plantilla principal oO\n5 107 Impuesto Gen) Reemplazar por plantilla principal o\n6 108 Valorizacién B) o\n7 110 Retenciones | Recalcular todas las valorizaciones can este resumen |\n8 109 Deduccién de! a im\n…"
+  - n: 3
+    id: "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato#3"
+    accion: "En Excel, use las opciones de S10 para editar la plantilla: **Adicionar Concepto**, **Adicionar Todos** y **Grabar Plantilla**."
+    fuente: [img-d8dff3eb37ff-0000, web-https-documentacion-s10peru-com-manual-d-s152]
+    pagina: null
+    fotos:
+      - id: "d149fa72acbb"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/d8dff3eb37ff.png"
+        pagina: null
+        ocr: "ra nines\nArchivo (eam Insertar Disefio depagina Formulas Datos Revisar Vista | Sistema 10 S.A.C. |\n\n(| Adicionar Concepto (&@ Grabar Plantilla y Salir\n\n[P) Adicionar Todos\n\ni Grabar Plantilla\n\nValorizaciones\n[alate | a a\nPlantilla : [Eran de Subcontratos |\n\nEE Codigo BA Concepto Variable Formulas\n[6 | ‘101 Costo Directo Valorizacién DV_\n\"Loa Amortizacion de Pagos a Cuenta APA_\n| 8 \"105 Amortizacio…"
+  - n: 4
+    id: "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato#4"
+    accion: "En la ventana de conceptos, elija el concepto con doble clic; para crear conceptos nuevos use la rama **Conceptos Generales**, porque la otra está reservada para S10 y viene por defecto."
+    fuente: [img-eafd74049613-0000, web-https-documentacion-s10peru-com-manual-d-s152]
+    pagina: null
+    fotos:
+      - id: "c89600a9e877"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/eafd74049613.png"
+        pagina: null
+        ocr: "EE ol] aa]\n2 Conceotos de Valorizacién de Subcontratos © 2 Conceptos Generales (| © lent So\npete Conceptos de Vela Se Ss 2\nEsta rama esta reservada para ey 2\n7 \\\\ =z oa\n| a1 S10 y viene por defecta IASB ei = AY a\nTes ——-—H\n~ && Todos is|eoss\n%S Conceptos 510 Cédigo _Descripcién Variable\nS Conceptos Generales —— ny | Doble clic\n201 Gastos geherales _GG_\nEn esta rama permite efectuar 202 Utlidad UT\n…"
+  - n: 5
+    id: "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato#5"
+    accion: "Al registrar un nuevo concepto, ingrese la descripción y la variable; deje sin seleccionar **Valor por periodo** si el concepto se usará en el pie de la valorización con una fórmula, o selecciónelo para ingresar el monto a descontar cada semana. Luego pulse **Adicionar**."
+    fuente: [img-53433d86b84d-0000, web-https-documentacion-s10peru-com-manual-d-s152]
+    pagina: null
+    fotos:
+      - id: "353705b583ea"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/53433d86b84d.png"
+        pagina: null
+        ocr: "F — Deoninaiog =\n[ & conceptos de valorizacié zacién de Subcontrato )\nCédiga 2 fos,\nDescripcién [Descuento pago mano de obra\nVariable [_dmo_ —t\n(=F Valor por periodo\nContabilidad\nMiso comportamiento qe el Concepto:\nContra partida del Concepto\nAdicionar Cancelar"
+  - n: 6
+    id: "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato#6"
+    accion: "Use **Grabar Plantilla y Salir** para grabar y cerrar la ventana."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s152, img-d8dff3eb37ff-0000]
+    pagina: null
+verificacion: []
+errores_frecuentes:
+  - sintoma: "Se cambió el diseño del resumen con los trabajos del subcontratista en curso."
+    solucion: "Una vez definido el resumen, no lo cambie hasta que finalicen los trabajos del subcontratista: revíselo antes de efectuar la primera valorización."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s151, web-https-documentacion-s10peru-com-manual-d-s152]
+relacionados: [gerencia-proyectos.registrar-subcontrato, gerencia-proyectos.aprobar-valorizacion-del-subcontrato]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s152, manual: "Manual de Gerencia de Proyectos", seccion: "4.6.4.1 Editar el Diseño del Resumen desde el subcontrato", pagina: null}
+  - {id: img-bf107a26e40c-0000, manual: "Manual de Gerencia de Proyectos", seccion: "bf107a26e40c.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s151, manual: "Manual de Gerencia de Proyectos", seccion: "4.6.4 Diseño del Resumen", pagina: null}
+  - {id: img-3f38b961a753-0000, manual: "Manual de Gerencia de Proyectos", seccion: "3f38b961a753.png", pagina: null}
+  - {id: img-d8dff3eb37ff-0000, manual: "Manual de Gerencia de Proyectos", seccion: "d8dff3eb37ff.png", pagina: null}
+  - {id: img-eafd74049613-0000, manual: "Manual de Gerencia de Proyectos", seccion: "eafd74049613.png", pagina: null}
+  - {id: img-53433d86b84d-0000, manual: "Manual de Gerencia de Proyectos", seccion: "53433d86b84d.png", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

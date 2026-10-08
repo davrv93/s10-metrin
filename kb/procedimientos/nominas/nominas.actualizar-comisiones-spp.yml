@@ -1,0 +1,106 @@
+id: nominas.actualizar-comisiones-spp
+version: 1
+modulo: nominas
+titulo: "Actualizar las comisiones SPP de las AFP"
+objetivo: "Registrar cada mes los conceptos y los % de las comisiones del Seguro Privado de Pensiones Dependientes, manualmente o tomándolos de la página web de la SBS."
+nivel: basico
+preguntas:
+  - "como actualizo los porcentajes de las afp del mes"
+  - "como descargo las comisiones de la sbs"
+  - "donde se registran las comisiones spp"
+  - "como bajo las comisiones de las afp de internet"
+  - "como registro a mano el % de comision de una afp"
+  - "donde configuro el aporte complementario afp de construccion civil"
+  - "cada cuanto tengo que actualizar las comisiones de afp"
+  - "como agrego un concepto nuevo en comisiones spp dependientes"
+  - "actualisar comiciones afp en nominas"
+aliases:
+  - "comisiones SPP"
+  - "comisiones AFP"
+  - "porcentajes AFP"
+  - "comisiones SPP dependientes"
+  - "publicación web SBS"
+entidades:
+  modulo: "Nóminas"
+  pantallas: ["Comisiones SPP Dependientes", "Comisiones Seguro Privado de Pensiones Dependientes", "Resumen de Conceptos por Periodo"]
+  objetos: ["AFP", "comisión", "concepto", "SBS"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "nominas.actualizar-comisiones-spp#1"
+    accion: "Acceda al escenario **Comisiones SPP Dependientes**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s038, img-2546836287ba-0000]
+    pagina: null
+    fotos:
+      - id: "8b6d121a3db7"
+        ruta_o_url: "imagenes/manual-de-nominas/2546836287ba.png"
+        pagina: null
+        ocr: "Oo\nComisiones SPP\nDependientes"
+  - n: 2
+    id: "nominas.actualizar-comisiones-spp#2"
+    accion: "Haga clic derecho sobre los valores de las comisiones para mostrar el menú."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s038]
+    pagina: null
+    fotos:
+      - id: "9433abfea4ce"
+        ruta_o_url: "imagenes/manual-de-nominas/cb880be1335a.png"
+        pagina: null
+        caption: "Al hacer clic derecho, muestra el menú;"
+        ocr: "Comisiones Seguro Privado de Pensiones Dependientes\nAY ARS val &da\n\nArrastre hacia aqui el encabezado de la columna que desea agrupar.\n6/12 Campo|afio | Jen cualquier posicién >. {\nAfio Mes |Cédigo Descripcién AFP COMISION FIJA (Mone! AFP COMISION VARIABLE (| AF\n2015 01 22000005 = AFP PRIMA S.A. a 16\n2015 01 22000004 AFP INTEGRAS.A. Adicionara@a) 155\n2015 01 22000007 AFP HABITAT Moditearecb) 147\na…"
+  - n: 3
+    id: "nominas.actualizar-comisiones-spp#3"
+    accion: "Para tomar los valores porcentuales de todas las AFP desde la página web de la SBS, elija la opción de obtener la **Publicación Web**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s038, img-924d8059f6f9-0000]
+    pagina: null
+    fotos:
+      - id: "cbd24b638269"
+        ruta_o_url: "imagenes/pasos-para-calculo-nominas-abril-2020/924d8059f6f9.png"
+        pagina: null
+        ocr: "$10 Néminas - x\nArchivo Ver Catélogos Herramientas 2\n—— Comisiones Seguro Privado de Pensiones Dependientes\n’ -|BMARka -Bh aaa\nMr rrrrrrrrr—— ics\nTipos de Préstamo\n379/383 Campo|Cédigo |r cualquier posicén + Grupo:\n2 Cédigo Descripcién AFP COMISION FUA] AFP COMISION VAF] AFP COMISION MDC] AFP COMISION ANL| AFP PRIMA SEGUR(| AFP APORTE PENSI| TOPEAFP (Moneda)\nTotal 2013 33,069.72\nComisiones Total 2…"
+  - n: 4
+    id: "nominas.actualizar-comisiones-spp#4"
+    accion: "Si prefiere hacerlo sin usar internet, elija **Adicionar** para agregar los valores de los conceptos manualmente; con **Modificar** cambia los valores registrados y con **Eliminar** borra solo los valores."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s038, img-cb880be1335a-0000]
+    pagina: null
+  - n: 5
+    id: "nominas.actualizar-comisiones-spp#5"
+    accion: "Para registrar nuevos conceptos en el escenario, elija **Configurar Conceptos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s038, img-cb880be1335a-0000]
+    pagina: null
+  - n: 6
+    id: "nominas.actualizar-comisiones-spp#6"
+    accion: "Para visualizar la información, arrastre las cabeceras de las columnas a ese segmento para agrupar la información."
+    fuente: [img-443f5513bc35-0000, web-https-documentacion-s10peru-com-manual-d-s038]
+    pagina: null
+    fotos:
+      - id: "9e67455180f2"
+        ruta_o_url: "imagenes/manual-de-nominas/443f5513bc35.png"
+        pagina: null
+        ocr: "Comisiones Seguro Privado de Pensiones Dependientes\n\nSMAR8 veh ada\n\nArrastre las cabeceras de las columnas a este\n\nMes | segmento - para agrupar la informacion\n\n14/27 Campo|Afio | [En cualquier posicién >| RIL\nCédiga Descripcién AFP COMISION FlJ¢| AFP COMISION| AFP COM. VARI| AFP COMISION ANL|\n\n| Total 2015 00 19.60\n\n=| Total 01 00 4.90\n22000005 AFP PRIMA S.A 0 168 151 1.25\n22000004 AFP INTEGRA S.…"
+  - n: 7
+    id: "nominas.actualizar-comisiones-spp#7"
+    accion: "Configure desde el escenario **Resumen de Conceptos por Periodo** los conceptos sin afectación adicionales a los que se obtienen desde la página SBS."
+    fuente: [web-https-documentacion-s10peru-com-pasos-pa-s000]
+    pagina: null
+    fotos:
+      - id: "c01f27d0c964"
+        ruta_o_url: "imagenes/pasos-para-calculo-nominas-abril-2020/3f0f64376817.png"
+        pagina: null
+        caption: "Por ejemplo: Para la nómina de Construcción Civil – Concepto: AFP APORTE COMPLEMENTARIO 1%"
+        ocr: "$10 Néminas - oO x\n\"Archivo Ver Catdlogos Herramientas 2\na Resumen de Conceptos por Periodo\n“ « || Proyecto 00002001 0 - MULTIPROYECTO CONSTRUCTORA ABC SAC\n@ || reeseninne ios dave cri a 8855 tea\nCone oe Ola Periodo foz20201402 Semana 2020 - 14_2 = 44 X| |®] Seleccionar para registrar los valores por excepcion\nrs HOMARES vEh eda\nResumen de Arrastre hacia aqui el encabezado de la columna que desea …"
+verificacion:
+  - texto: "Los valores obtenidos para los ítems de las AFP no afectos según la norma para el periodo tienen valor 0."
+    fuente: [web-https-documentacion-s10peru-com-pasos-pa-s000]
+errores_frecuentes:
+  - sintoma: "No tiene los porcentajes de las comisiones de las AFP del mes."
+    solucion: "Esta labor la debe realizar el usuario la primera semana del mes: acceder a la página web de la SBS una vez por mes."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s038]
+relacionados: [nominas.calcular-la-nomina, nominas.registrar-ficha-del-trabajador]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s038, manual: "Manual de Nóminas", seccion: "4.10 Comisiones SPP Dependientes", pagina: null}
+  - {id: img-2546836287ba-0000, manual: "Manual de Nóminas", seccion: "2546836287ba.png", pagina: null}
+  - {id: img-924d8059f6f9-0000, manual: "Pasos para el cálculo de Nóminas", seccion: "924d8059f6f9.png", pagina: null}
+  - {id: img-cb880be1335a-0000, manual: "Manual de Nóminas", seccion: "cb880be1335a.png", pagina: null}
+  - {id: img-443f5513bc35-0000, manual: "Manual de Nóminas", seccion: "443f5513bc35.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-pasos-pa-s000, manual: "Pasos para el cálculo de Nóminas", seccion: "Pasos para el cálculo de Nóminas", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

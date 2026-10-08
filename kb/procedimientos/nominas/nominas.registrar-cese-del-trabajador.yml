@@ -1,0 +1,84 @@
+id: nominas.registrar-cese-del-trabajador
+version: 1
+modulo: nominas
+titulo: "Registrar la fecha de cese de un trabajador"
+objetivo: "Registrar en la pestaña Ingresos de la ficha la fecha de cese y su motivo, que es tomada para la liquidación y a partir de la cual el trabajador ya no está disponible en los tareos de mano de obra."
+nivel: basico
+preguntas:
+  - "como doy de baja a un trabajador en nominas"
+  - "donde pongo la fecha de cese de un obrero"
+  - "el trabajador renuncio, como registro su cese"
+  - "como registro el motivo de cese"
+  - "sigue saliendo en el tareo un obrero que ya se fue, que hago"
+  - "de donde toma la fecha de cese para la liquidacion"
+  - "como cambio la fecha de ingreso del trabajador al proyecto"
+  - "como cesar a un trabajdor en s10"
+aliases:
+  - "fecha de cese"
+  - "cesar trabajador"
+  - "dar de baja trabajador"
+  - "motivo de cese"
+  - "fecha de ingreso al proyecto"
+entidades:
+  modulo: "Nóminas"
+  pantallas: ["Personal Disponible", "Ingresos"]
+  objetos: ["trabajador", "fecha de cese", "fecha de ingreso", "liquidación", "tareo"]
+prerrequisitos:
+  - texto: "El trabajador debe estar en el escenario Personal Disponible del multiproyecto, donde se registra la información de su ficha."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046]
+pasos:
+  - n: 1
+    id: "nominas.registrar-cese-del-trabajador#1"
+    accion: "En el escenario **Personal Disponible**, haga clic derecho sobre el nombre del trabajador para acceder a su ficha."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047, img-d4e1ce779ad8-0000]
+    pagina: null
+    fotos:
+      - id: "60b80a0e8fdf"
+        ruta_o_url: "imagenes/manual-de-nominas/d4e1ce779ad8.png"
+        pagina: null
+        ocr: "Proyecto 02001004 MULTIPROYECTO\n\nTipo de Némina [002 Régimen C.C. con BB.SS. - Obreros\n\na] Xy G| Clic derecho sobre el nombre del trabajador\n\nCédigo Nombre: Categoria Recurso equivalente\n22000033 £() Adicionar tl"
+  - n: 2
+    id: "nominas.registrar-cese-del-trabajador#2"
+    accion: "Elija la pestaña **Ingresos** para registrar la fecha de cese."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050, img-32cc5a4d02f3-0000]
+    pagina: null
+    fotos:
+      - id: "91f519302f1c"
+        ruta_o_url: "imagenes/manual-de-nominas/32cc5a4d02f3.png"
+        pagina: null
+        ocr: "al\n\nCédigo 22000032\nOy ‘oO Qo O- © © ® ®\nGeneral | costos | Procesos Horarios | Haberes | Tareo automético | Constantes |\n\nProyectos | Mutiproyectos |\n\nEves SF\n\nEmpresa Fecha ingreso Motive\n\nSISTEMA 105.4.C. MULTIPROYECTO 1101/2016.\n\nSISTEMA 103.4.C.  FIMA HUSYCOLORO 121012016\n\na\n<[ mm r"
+  - n: 3
+    id: "nominas.registrar-cese-del-trabajador#3"
+    accion: "Revise la fecha de ingreso del trabajador al proyecto: por defecto es la fecha de registro y es editable; a partir de esa fecha aparecerá en los tareos de mano de obra."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050]
+    pagina: null
+  - n: 4
+    id: "nominas.registrar-cese-del-trabajador#4"
+    accion: "Ingrese la fecha de cese del trabajador."
+    resultado: "A partir de esta fecha el trabajador ya no está disponible en los tareos de mano de obra."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050]
+    pagina: null
+  - n: 5
+    id: "nominas.registrar-cese-del-trabajador#5"
+    accion: "Luego agregue el motivo del cese."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050]
+    pagina: null
+verificacion:
+  - texto: "En el caso de obreros con liquidación semanal, con la fecha de cese el trabajador ya no aparecerá en los tareos y procesos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050]
+errores_frecuentes:
+  - sintoma: "El trabajador que ya no labora sigue apareciendo en los tareos."
+    solucion: "Registre su fecha de cese en la pestaña Ingresos de la ficha; también puede quitar la selección de activo en la pestaña General, y el trabajador ya no es mostrado en los tareos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050, web-https-documentacion-s10peru-com-manual-d-s047]
+  - sintoma: "El trabajador cambió de AFP."
+    solucion: "Eso no es el cese laboral: en la pestaña Afiliaciones de la ficha RR.HH. ingrese la fecha de cese de la afiliación cuando cambie de AFP."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s048]
+relacionados: [nominas.registrar-ficha-del-trabajador, nominas.calcular-la-nomina]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s046, manual: "Manual de Nóminas", seccion: "5.2.2 Selección del Personal Disponible para los proyectos", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s047, manual: "Manual de Nóminas", seccion: "5.2.3 Registro de información en la ficha del trabajador (1)", pagina: null}
+  - {id: img-d4e1ce779ad8-0000, manual: "Manual de Nóminas", seccion: "d4e1ce779ad8.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s050, manual: "Manual de Nóminas", seccion: "5.2.3 Registro de información en la ficha del trabajador (4)", pagina: null}
+  - {id: img-32cc5a4d02f3-0000, manual: "Manual de Nóminas", seccion: "32cc5a4d02f3.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s048, manual: "Manual de Nóminas", seccion: "5.2.3 Registro de información en la ficha del trabajador (2)", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

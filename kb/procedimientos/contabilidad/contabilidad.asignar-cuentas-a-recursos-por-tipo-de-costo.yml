@@ -1,0 +1,111 @@
+id: contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo
+version: 1
+modulo: contabilidad
+titulo: "Asignar cuentas contables a recursos por tipo de costo"
+objetivo: "Usar los tipos de costo para que un recurso tenga diferentes cuentas contables según el centro de costo relacionado a un tipo de costo que se indique en el documento."
+nivel: avanzado
+preguntas:
+  - "como asigno cuentas contables a un recurso por tipo de costo"
+  - "quiero que un mismo recurso vaya a cuentas distintas segun el centro de costo"
+  - "como relaciono el centro de costo con el tipo de costo"
+  - "asignacion de cuentas por tipo de recurso y tipo de costo"
+  - "el recurso tiene que contabilizar diferente segun el proyecto, como hago"
+  - "donde pongo la cuenta de compras o ventas de un subcontrato"
+  - "como configuro tipo de costo en contabilidad s10"
+  - "tipo de costo centro de costo cuenta contable recurso como se configura"
+  - "como asigo cuenta contable a los recursos de mano de obra"
+aliases:
+  - "cuentas por tipo de costo"
+  - "asignar cuenta a recurso"
+  - "recurso con tipo de costo"
+  - "asignación de cuentas tipo recursos"
+entidades:
+  modulo: "Contabilidad"
+  pantallas: ["Centro de Costo", "Asignación de Cuentas"]
+  objetos: ["tipo de costo", "centro de costo", "recurso", "cuenta contable", "asiento contable"]
+prerrequisitos:
+  - texto: "Los tipos de costo deben estar creados mediante el catálogo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s039, img-0964534909a0-0000]
+pasos:
+  - n: 1
+    id: "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo#1"
+    accion: "En el grupo **Configuración**, escenario **Centro de Costo**, busque los centros de costo relacionados a los proyectos y relaciónelos indicando el **Tipo de Costo** en cada uno de ellos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s039]
+    pagina: null
+    fotos:
+      - id: "60125c49dc05"
+        ruta_o_url: "imagenes/manual-de-contabilidad/c55858d26d39.png"
+        pagina: null
+        caption: "Luego de la Creación de los Tipos de Costo; En el Grupo Configuración/ Escenario Centro de Costo se busca los Centros de costo relacionados a los proyectos que serán calificados a los Recursos y se procede a relacionar indicando el Tipo de Costo en cada uno de Ellos."
+        ocr: "$10 Contabilidad: 00002490 - MI EMPRESA SAC = 18) x)\n| Archivo Yer Catélogos Herramientas 2\nae\nell ete Centros de Costo Calificacion de los Tipos de Costo a los Centros de Costos\ncs (Pen \\,\necbgo Deseripcién ¥tigo| Centro de Costo General Proyecto Pert ce Control Tipo Centro de Costo Activa 5\nnay u {SG TONS Los CENTROS DE COsTOS EEE El o\n|Centros de Costos | | ot04 “e@naus oO\nort [SIG ADMMHISTRATI…"
+  - n: 2
+    id: "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo#2"
+    accion: "Ingrese al escenario **Asignación de Cuentas** del grupo **Parámetros**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s039]
+    pagina: null
+  - n: 3
+    id: "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo#3"
+    accion: "En el filtro de tipos de recurso, elija el tipo de recurso a configurar: Mano de Obra, Materiales, Equipos, Máquinas y Herramientas, Subcontratos u Otros (Activos)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s039]
+    pagina: null
+    fotos:
+      - id: "875d0f666d81"
+        ruta_o_url: "imagenes/manual-de-contabilidad/f0563a403cbe.png"
+        pagina: null
+        caption: "b. Recurso Sin Tipo de Costo. En el Módulo de Contabilidad_ Grupo Parámetros_ Escenario Asignación de Cuentas_ se tiene un Filtro de Tipos de Recurso Clasificados en: Código 01 Recurso Mano de Obra Código 02 Recurso Materiales Código 03 Recurso Equipos, Máquinas y Herramientas Código 04 Recursos Subcontratos Código 10 Otros (Activos)"
+        ocr: "$10 Contabilidad\n© Archivo Ver Catdlogos Herramientas 2.\nil lene Asignacién de Cuentas\na Esquema: [001 |ESQUEM4 CONTABLE MI EMPRESA S.4. _ 44) ‘Cuentas: se =]\n3S Recursa - Mano de Obra .]\nPY =\nPlan Contable ally #  v GIG) o@ id Bt ~ S& Recurso - Materiales\n= Recurso - Equipos, Maquinas y Herr\n& —— — = F || S© Recurso - SubContratos\nClasificacién del Catalogo de Recursosf |_L¥&_Recuso - otros |\nCay…"
+  - n: 4
+    id: "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo#4"
+    accion: "Seleccione el **Tipo de Costo** para la asignación, según el tipo a manejar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s040, img-3420c1f5298f-0000]
+    pagina: null
+    fotos:
+      - id: "5105252da25d"
+        ruta_o_url: "imagenes/manual-de-contabilidad/3420c1f5298f.png"
+        pagina: null
+        ocr: "i 4 SB\n(Re eee ta . la. Seleccionar el Tipo de Recurso a onfigurar.\nP(g) Tema |Asignacion de Cuentas b. Seleccionar el Tipo de Costo para la Aaignacién segun el Tipo a Manejar.\nae\n& — gS ee ee\nis lo13 339239 - REUBICACI.\nt 912350 Campo|Nivel 2 Jen cualquier posicisn >| [X22] erupa 914 339240 -INVERSION\nAsignaciinde revel Nivel 2 Descripcion eas + _—— “\nCategorias [og sus-Cortratos 0401 SCAlquleres…"
+  - n: 5
+    id: "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo#5"
+    accion: "Asigne la cuenta contable a los recursos en las columnas **Compras**, **Ventas**, **Inventario** o **Variación de Existencias**, según su naturaleza."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s040]
+    pagina: null
+    fotos:
+      - id: "eaa179801516"
+        ruta_o_url: "imagenes/manual-de-contabilidad/80aa8abe6421.png"
+        pagina: null
+        caption: "La Asignación Contable a los Recursos que se utilizarán al registrar un movimiento se realiza a través de Columnas Compras, Ventas, Inventario, Variación de Existencias según su Naturaleza."
+        ocr: "‘510 Contabilidad: 00002490 - MI EMPRESA SAC BEES\n© Archivo Yer Catdlogos Herramientas 2 - ~ ves > = =\n‘Bea Elegir el Tipo de Recurso que se utilizara para la Asignacion contable a los Recursos que\ncs se filtren, Al utilizarse el Recurso en el Documento tomara la cuenta contable asignada.\n© iB) Tema 5 anid = >\na Asignacién de Cuentas\n= J) Esquema; [001 |ESQUEMA CONTABLE Ml EMPRESA S.4. ce fay] ICu…"
+  - n: 6
+    id: "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo#6"
+    accion: "Al crear el documento que utiliza el recurso, indique el proyecto y el centro de costo que está relacionado al tipo de costo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s040, web-https-documentacion-s10peru-com-manual-d-s039]
+    pagina: null
+    fotos:
+      - id: "57a7310b208b"
+        ruta_o_url: "imagenes/manual-de-contabilidad/8f1a7ef3c7f9.png"
+        pagina: null
+        caption: "Creación del Documento que está utilizando el recurso con Cuenta Contable por tipo de Costo que está relacionado al Centro de Costo."
+        ocr: "entooe [isIE REPRESS A afc NPL cmon]\nSucursel [0002490 [MIEMPRESASAC =] a4 RUC 20477208771\nproveeder(00007008 [ERVIGUS SEseORDELAHUMLDADSAG SSS i\nFecha [0990172015 >] Fecha vencimiento [0901/2015 >] Fecha recepeién [090172015 >]\ntetcaclin [21012018 > BOTEOT enero mis ‘esses nett 2)\nWonede [Or AUEVOS SOLES =] ifrorma de pago [2 [ord cota erreor a=] di\n© Sinacignar ( Proyecto [03005 [1029 MPLEMENTAC…"
+  - n: 7
+    id: "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo#7"
+    accion: "Revise el asiento contable del documento."
+    resultado: "El recurso toma la cuenta contable asignada según el centro de costo y el tipo de costo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s040]
+    pagina: null
+    fotos:
+      - id: "2e8ddfaf3fce"
+        ruta_o_url: "imagenes/manual-de-contabilidad/8896cd721e18.png"
+        pagina: null
+        caption: "Vista del Asiento contable en base a las Configuraciones."
+        ocr: "47001 FACTURA TERCEROS EIES\nfmtio a [00002480 [MIEMPRESASAC = #4 | opment N°[ coe00011035\nswuss Raw pase STOR TGA\nproved pUNTOTEBERNEOS SE-w0RDELAHMLDIDSAC\nFecha [090172015 >] Fecha vencnieto 9012015] recharecepaén OBU12015\napicacén [310172015 [201501 Jenero2015 (Abie) To cabo no ofa! I\nveness fT UBOSSOLES 1a] ifrome sepa Er Fao come even]\n Sinasinar ( Proyecto [0c005 [i029 NPLENENTACION SISTENAFL…"
+verificacion:
+  - texto: "El recurso que use el documento tendrá la asignación centro de costo / tipo de costo y tomará la cuenta contable asignada al recurso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s040]
+errores_frecuentes: []
+relacionados: [contabilidad.asignar-cuentas-a-categoria-de-recursos]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s039, manual: "Manual de Contabilidad", seccion: "4.4.7.1 Genérica de INVENTARIO, Tiene la Siguiente Escala de Asignación Específica. (2)", pagina: null}
+  - {id: img-0964534909a0-0000, manual: "Manual de Contabilidad", seccion: "0964534909a0.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s040, manual: "Manual de Contabilidad", seccion: "4.4.7.1 Genérica de INVENTARIO, Tiene la Siguiente Escala de Asignación Específica. (3)", pagina: null}
+  - {id: img-3420c1f5298f-0000, manual: "Manual de Contabilidad", seccion: "3420c1f5298f.png", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

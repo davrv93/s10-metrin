@@ -1,0 +1,99 @@
+id: almacenes.registrar-ingreso-por-prestamo
+version: 1
+modulo: almacenes
+titulo: "Registrar un ingreso por préstamo y consultar los préstamos"
+objetivo: "Registrar con un Ingreso por Préstamo los recursos que el proyecto recibe prestados de otro proyecto o de un identificador (proveedor, empleado, obrero, etc.), que deben ser devueltos, y consultarlos en el escenario de Préstamos."
+nivel: basico
+preguntas:
+  - "cómo registro materiales que nos prestó otra obra"
+  - "nos prestaron unos andamios, cómo los ingreso al almacén"
+  - "como hago un ingreso por prestamo"
+  - "dónde veo lo que me prestaron y lo que presté"
+  - "como controlo los recursos prestados en almacenes"
+  - "un proveedor nos presto herramientas como lo registro en s10"
+  - "ingreso por prestamo de otro proyecto pasos"
+  - "donde veo los prestamos que tengo que devolver"
+aliases:
+  - "ingreso por préstamo"
+  - "recursos prestados"
+  - "préstamos"
+  - "me prestaron"
+  - "lo que presté"
+entidades:
+  modulo: "Almacenes"
+  pantallas: ["Ingresos", "Préstamos"]
+  objetos: ["ingreso por préstamo", "recurso", "socio de negocio", "proyecto", "catálogo de recursos"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "almacenes.registrar-ingreso-por-prestamo#1"
+    accion: "En la barra de vistas, elija el acceso al escenario de **Ingresos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s048]
+    pagina: null
+  - n: 2
+    id: "almacenes.registrar-ingreso-por-prestamo#2"
+    accion: "En el árbol, elija el proyecto y el almacén."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s048]
+    pagina: null
+  - n: 3
+    id: "almacenes.registrar-ingreso-por-prestamo#3"
+    accion: "Elija el tipo de ingreso **Ingreso por Préstamo**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s048]
+    pagina: null
+  - n: 4
+    id: "almacenes.registrar-ingreso-por-prestamo#4"
+    accion: "Efectúe un nuevo ingreso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s048]
+    pagina: null
+  - n: 5
+    id: "almacenes.registrar-ingreso-por-prestamo#5"
+    accion: "Registre el tipo de cambio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s048]
+    pagina: null
+  - n: 6
+    id: "almacenes.registrar-ingreso-por-prestamo#6"
+    accion: "Ingrese los datos de la cabecera en el formulario: elija el documento y registre el número de serie y el número."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s048]
+    pagina: null
+  - n: 7
+    id: "almacenes.registrar-ingreso-por-prestamo#7"
+    accion: "Elija al Socio de Negocio del catálogo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s048]
+    pagina: null
+  - n: 8
+    id: "almacenes.registrar-ingreso-por-prestamo#8"
+    accion: "En el cuerpo del documento, adicione los recursos: desde los recursos prestados, cuando la misma base de datos maneja varios proyectos (muestra los que han egresado por préstamo hacia este proyecto), o desde el catálogo general, cuando la base de datos solo maneja este proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s048]
+    pagina: null
+  - n: 9
+    id: "almacenes.registrar-ingreso-por-prestamo#9"
+    accion: "Del catálogo de recursos, elija los recursos prestados e ingrese la cantidad y el precio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s048]
+    pagina: null
+  - n: 10
+    id: "almacenes.registrar-ingreso-por-prestamo#10"
+    accion: "Para visualizar los préstamos, en el escenario de **Préstamos** use el botón para elegir la opción: **Me prestaron** o **Lo que presté**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s138]
+    pagina: null
+    fotos:
+      - id: "6d6472ca3014"
+        ruta_o_url: "imagenes/manual-de-almacenes/ce8cb4d8198a.png"
+        pagina: null
+        caption: "Visualizar los préstamos"
+        ocr: "Use este botdn para elegir la opcidn\nCaan Oo\nTipo {Lo que preste +"
+verificacion:
+  - texto: "En el escenario de Préstamos, en «Me prestaron», se ven los recursos que le prestaron a su proyecto, según los movimientos de ingresos y egresos por préstamos o devoluciones de préstamos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s138]
+errores_frecuentes:
+  - sintoma: "No sabe qué recursos prestados le falta devolver."
+    solucion: "Los recursos prestados deben ser devueltos: el sistema lleva un control de lo que se ingresa y se devuelve, que se ve en el escenario de Préstamos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s048, web-https-documentacion-s10peru-com-manual-d-s138]
+  - sintoma: "Lo que quiere registrar es un préstamo que su almacén hace a otro."
+    solucion: "Eso es un Egreso por Préstamo [EP]: es requisito tener en stock la cantidad necesaria del recurso a prestar, y lo prestado se ve en el acceso directo Préstamos, en Lo que Presté."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s065]
+relacionados: []
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s048, manual: "Manual de Almacenes", seccion: "2.1.2.2 Ingreso por Préstamo IP]", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s138, manual: "Manual de Almacenes", seccion: "3.20.3 Préstamos", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s065, manual: "Manual de Almacenes", seccion: "2.2.2.2 Egreso por Préstamo [EP]", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

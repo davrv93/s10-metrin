@@ -1,0 +1,97 @@
+id: nominas.registrar-tipo-de-prestamo
+version: 1
+modulo: nominas
+titulo: "Registrar un tipo de préstamo"
+objetivo: "Registrar los tipos de préstamo (personal, vehicular, salud, vivienda) con sus conceptos de préstamo, amortización y saldo, para luego utilizarlos en el escenario de Préstamos del grupo Gestión RRHH."
+nivel: intermedio
+preguntas:
+  - "como registro un prestamo a un trabajador en nominas"
+  - "donde creo los tipos de prestamo"
+  - "como configuro un prestamo personal para descontarlo por planilla"
+  - "que conceptos le pongo al tipo de prestamo"
+  - "como hago un prestamo vehicular o de vivienda en s10"
+  - "como configuro la amortizacion del prestamo con cuota doble"
+  - "el prestamo es solo para un trabajador, como lo configuro"
+  - "donde estan los tipos de prestamo del modulo de nominas"
+  - "como registo un adelanto o prestamo al personal"
+aliases:
+  - "tipo de préstamo"
+  - "tipos de préstamo"
+  - "préstamo al trabajador"
+  - "préstamo personal"
+  - "amortización de préstamo"
+entidades:
+  modulo: "Nóminas"
+  pantallas: ["Tipos de Préstamo", "Tipo de Préstamo", "Préstamos"]
+  objetos: ["tipo de préstamo", "concepto", "tipo de documento", "recurso", "socio de negocio"]
+prerrequisitos:
+  - texto: "Los conceptos de préstamo y de amortización deben formar parte de un tipo de nómina y estar en la formulación."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s037]
+pasos:
+  - n: 1
+    id: "nominas.registrar-tipo-de-prestamo#1"
+    accion: "Acceda al escenario **Tipos de Préstamo**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s037, img-157f883db670-0000]
+    pagina: null
+    fotos:
+      - id: "a33962f2f536"
+        ruta_o_url: "imagenes/manual-de-nominas/157f883db670.png"
+        pagina: null
+        ocr: "ol\nTipos de Préstamo"
+  - n: 2
+    id: "nominas.registrar-tipo-de-prestamo#2"
+    accion: "Elija **Adicionar**."
+    fuente: [img-613b47eab985-0000, web-https-documentacion-s10peru-com-manual-d-s037]
+    pagina: null
+    fotos:
+      - id: "b854cbd28484"
+        ruta_o_url: "imagenes/manual-de-nominas/613b47eab985.png"
+        pagina: null
+        ocr: "Tipos de Préstamo\nEv Gils Giada\nB Adicionar"
+  - n: 3
+    id: "nominas.registrar-tipo-de-prestamo#3"
+    accion: "En la ventana **Tipo de Préstamo**, registre el nombre del préstamo: préstamo personal, vehicular, salud o vivienda."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s037, img-dc8a6fb31e0a-0000]
+    pagina: null
+    fotos:
+      - id: "42eb3f7ab248"
+        ruta_o_url: "imagenes/manual-de-nominas/dc8a6fb31e0a.png"
+        pagina: null
+        ocr: "©} Tipo de Préstamo x\ncédigo foo\n\nDescripcién [PRESTANO PERSONAL)\n(0828\nconcata [osooz00s |PRESTAMO PERSONAL = @ =|\naoe Josoozo0s [PRESTAWO PERSONAL |\ngta, Dect At\na |\nan [130° [PLANLLADE PRESTANMO A PERSONAL - RRHH AUTOI@A | dbl\nRecurso Jos300z00020005 [Prestamostmpleados = @= | th\nses [a\noe ozor0237 [SALDO FAL DEPRESTANOS =| th\n\naed"
+  - n: 4
+    id: "nominas.registrar-tipo-de-prestamo#4"
+    accion: "Del catálogo de conceptos, elija el concepto préstamo y el concepto amortización."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s037]
+    pagina: null
+  - n: 5
+    id: "nominas.registrar-tipo-de-prestamo#5"
+    accion: "Del catálogo de conceptos, elija el concepto préstamo y el concepto amortización de cuota doble."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s037]
+    pagina: null
+  - n: 6
+    id: "nominas.registrar-tipo-de-prestamo#6"
+    accion: "Del catálogo, elija el tipo de documento que será utilizado en la transacción del préstamo y, del catálogo de recursos, el recurso utilizado en ese tipo de documento."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s037]
+    pagina: null
+  - n: 7
+    id: "nominas.registrar-tipo-de-prestamo#7"
+    accion: "Si el préstamo es exclusivo para un trabajador, elija del catálogo al socio de negocio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s037]
+    pagina: null
+  - n: 8
+    id: "nominas.registrar-tipo-de-prestamo#8"
+    accion: "Del catálogo, elija el concepto saldo que es utilizado en la formulación de la liquidación."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s037]
+    pagina: null
+verificacion: []
+errores_frecuentes:
+  - sintoma: "El tipo de préstamo no aparece en el escenario de Préstamos."
+    solucion: "Todos los tipos de préstamo deben estar registrados para luego ser utilizados en el escenario de Préstamos del grupo Gestión RRHH."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s037]
+relacionados: [nominas.calcular-la-nomina]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s037, manual: "Manual de Nóminas", seccion: "4.9 Tipos de Préstamos", pagina: null}
+  - {id: img-157f883db670-0000, manual: "Manual de Nóminas", seccion: "157f883db670.png", pagina: null}
+  - {id: img-613b47eab985-0000, manual: "Manual de Nóminas", seccion: "613b47eab985.png", pagina: null}
+  - {id: img-dc8a6fb31e0a-0000, manual: "Manual de Nóminas", seccion: "dc8a6fb31e0a.png", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

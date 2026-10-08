@@ -1,0 +1,75 @@
+id: almacenes.asignar-usuarios-al-proyecto
+version: 1
+modulo: almacenes
+titulo: "Asignar usuarios al proyecto y sus atributos de uso"
+objetivo: "Adicionar usuarios al proyecto y registrar sus atributos de uso dentro de él, como asignar techo al proyecto o adicionar y eliminar almacenes; lo asigna el usuario con la categoría de Jefe de Grupo."
+nivel: intermedio
+preguntas:
+  - "cómo agrego un usuario a un proyecto en almacenes"
+  - "otro usuario no ve mi obra, cómo lo agrego al proyecto"
+  - "como doy permiso para adicionar almacenes al proyecto"
+  - "quién puede asignar techo al proyecto y cómo se le da ese permiso"
+  - "como asigno usuarios por proyecto en s10"
+  - "el residente no puede eliminar un almacen del proyecto"
+  - "dónde se dan los atributos de uso del proyecto a cada usuario"
+  - "como agrego usurios a la obra para que trabajen en el almacen"
+aliases:
+  - "usuarios por proyecto"
+  - "asignar usuarios al proyecto"
+  - "agregar usuario al proyecto"
+  - "atributos de uso del proyecto"
+entidades:
+  modulo: "Almacenes"
+  pantallas: ["Usuarios por proyecto"]
+  objetos: ["usuario", "proyecto", "techo", "almacenes", "Jefe de Grupo"]
+prerrequisitos:
+  - texto: "Ser el usuario con la categoría de Jefe de Grupo, que es quien asigna los usuarios y sus atributos de uso dentro del proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s026]
+pasos:
+  - n: 1
+    id: "almacenes.asignar-usuarios-al-proyecto#1"
+    accion: "En el árbol de proyectos, haga clic derecho sobre el proyecto (por ejemplo, PUENTE EN CARRETERA)."
+    fuente: [img-4401cfbe3a4a-0000, web-https-documentacion-s10peru-com-manual-d-s026]
+    pagina: null
+    fotos:
+      - id: "ea67792d3602"
+        ruta_o_url: "imagenes/manual-de-almacenes/4401cfbe3a4a.png"
+        pagina: null
+        ocr: "Proyectos\n\nFl E Escritorio\n\nClic derecho PUENTE EN CARRETERA\nkh De Matbriales:\nDe Serpicios\nDe Actfvos\nie Heo mere\n+) a —\nYEE Ceasar oBeel penayreecin (a)"
+  - n: 2
+    id: "almacenes.asignar-usuarios-al-proyecto#2"
+    accion: "Elija la opción que permite el registro de usuarios al proyecto y dar atributos de uso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s026]
+    pagina: null
+    fotos:
+      - id: "3e695cc3c61e"
+        ruta_o_url: "imagenes/manual-de-almacenes/42e80afae8a9.png"
+        pagina: null
+        caption: "Llamada a: Permite el registro de usuarios al proyecto y dar atributos de uso."
+        ocr: "Proyecto: PUENTE EN CARRETERA\n[PorUsuario\\Gere)\\ |\nAndres Andrade Andrade, S| =) 0103  Techo\nr Ramirez flufiez, Jose 010301 Configurar 1ecno oO\nPmartinez Martinez una, Pedro 010302 Incrementar Techo oO\ncocampo Ocampo Fazo, César 010303 Edicién de recursos equivalentes del Techo\n010304 Edicién en el Techo Libre\n010401 Aprobar Ficha del equipo Oo\n10105 — Almacenes\n010501 Adicionar Almacen Oo\n010502 …"
+  - n: 3
+    id: "almacenes.asignar-usuarios-al-proyecto#3"
+    accion: "Seleccione los atributos de **Techo** para el usuario que podrá asignar techo al proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s026, img-42e80afae8a9-0000]
+    pagina: null
+  - n: 4
+    id: "almacenes.asignar-usuarios-al-proyecto#4"
+    accion: "Seleccione **Adicionar Almacen** y **Eliminar Almacen** para el usuario que podrá adicionar o eliminar almacenes del proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s026, img-42e80afae8a9-0000]
+    pagina: null
+  - n: 5
+    id: "almacenes.asignar-usuarios-al-proyecto#5"
+    accion: "Use el botón que graba el contenido y cierra la ventana."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s026]
+    pagina: null
+verificacion: []
+errores_frecuentes:
+  - sintoma: "No puede adicionar usuarios al proyecto ni darles atributos de uso."
+    solucion: "Los usuarios del proyecto y sus atributos de uso los asigna el usuario que tiene la categoría de Jefe de Grupo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s026]
+relacionados: [almacenes.registrar-usuario-y-asignar-permisos]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s026, manual: "Manual de Almacenes", seccion: "2.1.4 Usuarios por proyecto", pagina: null}
+  - {id: img-4401cfbe3a4a-0000, manual: "Manual de Almacenes", seccion: "4401cfbe3a4a.png", pagina: null}
+  - {id: img-42e80afae8a9-0000, manual: "Manual de Almacenes", seccion: "42e80afae8a9.png", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

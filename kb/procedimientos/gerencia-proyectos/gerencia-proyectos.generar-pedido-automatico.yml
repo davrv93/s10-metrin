@@ -1,0 +1,143 @@
+id: gerencia-proyectos.generar-pedido-automatico
+version: 1
+modulo: gerencia-proyectos
+titulo: "Generar un pedido automático para comprar"
+objetivo: "Generar desde el escenario de Pedidos Automáticos los pedidos A Compras de los recursos del proyecto, con la información del Plan de Utilización de Recursos del Cronograma por periodos."
+nivel: intermedio
+preguntas:
+  - "como genero pedidos automaticos en gerencia de proyectos"
+  - "como saco el pedido de compra desde lo programado en el cronograma"
+  - "quiero pedir los materiales de las proximas semanas de golpe, como hago"
+  - "como hago un pedido automatico a compras"
+  - "pedido automatico s10 paso a paso"
+  - "como pongo fecha de entrega a todos los recursos del pedido automatico"
+  - "por que en pedidos automaticos me salen cantidades con decimales"
+  - "como junto varias semanas en un solo pedido"
+  - "como genero pedio automatico de materiales"
+aliases:
+  - "pedido automático"
+  - "pedidos automáticos"
+  - "generar pedido automático"
+  - "pedido automático a compras"
+  - "pedir según la programación"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Pedidos Automáticos", "Pedido de Obra", "Cronograma por periodos"]
+  objetos: ["pedido", "recurso", "centro de compra", "fecha de entrega"]
+prerrequisitos:
+  - texto: "El proyecto debe estar programado: el Plan de Utilización de Recursos del escenario del Cronograma por periodos proporciona los recursos con sus respectivas cantidades."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s113]
+  - texto: "El proyecto debe estar asignado a un Centro de compra y las personas que pidan y aprueben deben estar registradas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s113]
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.generar-pedido-automatico#1"
+    accion: "Ingrese al escenario **Pedidos Automáticos**, disponible en el grupo de **Pedidos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s113]
+    pagina: null
+    fotos:
+      - id: "e3ff91a9bf85"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/f617869f06d8.png"
+        pagina: null
+        caption: "Acceso al escenario:"
+        ocr: "Proyectos\n8 Escritorio\nPedidos BeSPUENTE EN CARRETERA]\nAutométicos Luego,"
+  - n: 2
+    id: "gerencia-proyectos.generar-pedido-automatico#2"
+    accion: "Seleccione las opciones (por ejemplo, **En Pedidos Registrados**) cuyas cantidades deben disminuir las cantidades de los recursos programados para pedir; las no seleccionadas no se consideran en el cálculo del saldo a pedir."
+    fuente: [img-0dc19e8e1f49-0000, web-https-documentacion-s10peru-com-manual-d-s115, web-https-documentacion-s10peru-com-manual-d-s117]
+    pagina: null
+    fotos:
+      - id: "f555bca4b950"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/0dc19e8e1f49.png"
+        pagina: null
+        ocr: "M EnStock | En Pedidos Registrados  EnPedidosAprobados = ¥ EnQ.C."
+  - n: 3
+    id: "gerencia-proyectos.generar-pedido-automatico#3"
+    accion: "Elija los periodos que se acumularán: el sistema acumula las cantidades de acuerdo a la cantidad de periodos elegidos; tenga en consideración la capacidad de almacenamiento."
+    fuente: [img-eea90f8daea3-0000, web-https-documentacion-s10peru-com-manual-d-s116]
+    pagina: null
+    fotos:
+      - id: "16b31155bd63"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/eea90f8daea3.png"
+        pagina: null
+        ocr: "Semanal _De! [Semana 17 (21/04/2010 - 25/04/2010) _¥:\nAl [Semana 38 (13/09/2010 - 17/08/2010) _~\nSemana 37 (06/03/2010 - 12/09/2010)\nSemana 3¢ 13/09/2010 - 17/09/2010"
+  - n: 4
+    id: "gerencia-proyectos.generar-pedido-automatico#4"
+    accion: "Ubique el cursor en el nombre del proyecto."
+    fuente: [img-56926d096d91-0000, web-https-documentacion-s10peru-com-manual-d-s117]
+    pagina: null
+  - n: 5
+    id: "gerencia-proyectos.generar-pedido-automatico#5"
+    accion: "Marque un bloque de los recursos a pedir y haga clic derecho sobre el bloque."
+    fuente: [img-56926d096d91-0000, web-https-documentacion-s10peru-com-manual-d-s117]
+    pagina: null
+  - n: 6
+    id: "gerencia-proyectos.generar-pedido-automatico#6"
+    accion: "Elija **Generar Pedido**, luego **A Compras** y **Todos los recursos**."
+    resultado: "Se muestra el formulario de **Pedido de Obra**."
+    fuente: [img-56926d096d91-0000, web-https-documentacion-s10peru-com-manual-d-s117, web-https-documentacion-s10peru-com-manual-d-s113]
+    pagina: null
+    fotos:
+      - id: "96bc9fea8da3"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/56926d096d91.png"
+        pagina: null
+        ocr: "Pedidos Automaticos\nVistas |G Todo =] Eseaed® Semanal pe [Semana 17\nF EnStorke_Ia Fn Pedirine Renistrarlne 7 Fn Peds Brvchados [¥ En0.C. I Techo Al [Semana 38(\n—————| Ubique el cursor en el nombre del proyecto Az\nFase Descriffion (WBS - Actividad) Programado acumulado |: |_|\n7 Marque un bloque de Ins recursos a pedir\n401 ‘] Preparacién de agregados Luego haga clic derecho sobre el bloque ~|\n‘ [ee …"
+  - n: 7
+    id: "gerencia-proyectos.generar-pedido-automatico#7"
+    accion: "En el formulario, elija el **Centro de compra**."
+    fuente: [img-eb681861aa48-0000, web-https-documentacion-s10peru-com-manual-d-s117]
+    pagina: null
+    fotos:
+      - id: "b3d519e5e8e9"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/eb681861aa48.png"
+        pagina: null
+        ocr: "Fen\n\n[Ff Pedido de Obra - Proyecto : 02001 PUENTE EN CARRETERA =o x\nUsuario ppmartinez - Martinez Luna, Pedro N° de Pedido\nSolictante (02100134 [Martinez Luna, Pedro | oh] [0001\nUO.  T\nAlmacén 001 - De Materiales Tipo 01 - OBRA N° Alterno: N° OP\nca i\n_| Las cantidades generalmente san mostradas con\n\ndecimales, el usuatio tiene que redondearlos de | ai, destino Ella el Centro de compra\nacuerdo a su…"
+  - n: 8
+    id: "gerencia-proyectos.generar-pedido-automatico#8"
+    accion: "Redondee las cantidades, que generalmente son mostradas con decimales, de acuerdo a sus requerimientos o a la venta mínima."
+    fuente: [img-eb681861aa48-0000]
+    pagina: null
+  - n: 9
+    id: "gerencia-proyectos.generar-pedido-automatico#9"
+    accion: "Marque un bloque de todos los recursos, haga clic derecho sobre el bloque, elija **Asignar fecha de entrega a TODOS los recursos** y seleccione la fecha de entrega por parte del proveedor al almacén o bodega del proyecto; tome en cuenta la capacidad del medio de transporte y la capacidad de almacenamiento en obra."
+    fuente: [img-eb681861aa48-0000, web-https-documentacion-s10peru-com-manual-d-s117, img-fac2e24d994d-0000]
+    pagina: null
+    fotos:
+      - id: "6c6065f6f508"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/fac2e24d994d.png"
+        pagina: null
+        ocr: "Seleccione una fecha\n+! mayo2n10 + |\nBeT Bo 1"
+  - n: 10
+    id: "gerencia-proyectos.generar-pedido-automatico#10"
+    accion: "Confirme que desea enviar a aprobación el pedido."
+    resultado: "El sistema genera en forma automática un correo electrónico avisando al encargado de aprobar el pedido que tiene un documento pendiente de aprobar."
+    fuente: [img-0311992aff6e-0000, web-https-documentacion-s10peru-com-manual-d-s117]
+    pagina: null
+    fotos:
+      - id: "f0347b565aeb"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/0311992aff6e.png"
+        pagina: null
+        ocr: "(?) {Desea enviar a aprobacidn el Pedido N° 00001?"
+verificacion:
+  - texto: "Después de efectuar el pedido, las cantidades son mostradas en la columna **En pedidos Registrados**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s117]
+  - texto: "Los pedidos automáticos son visualizados en el escenario de **Pedidos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s117]
+errores_frecuentes:
+  - sintoma: "El pedido automático no pasa al proceso de compra."
+    solucion: "El encargado debe aprobar el pedido: todos los pedidos deben ser aprobados para que pasen al proceso de compra."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s117, web-https-documentacion-s10peru-com-manual-d-s119]
+relacionados: [gerencia-proyectos.registrar-pedido-manual-de-compra, gerencia-proyectos.planificar-en-cronograma-por-periodos]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s113, manual: "Manual de Gerencia de Proyectos", seccion: "3.7.2 Pedidos Automáticos para Comprar", pagina: null}
+  - {id: img-0dc19e8e1f49-0000, manual: "Manual de Gerencia de Proyectos", seccion: "0dc19e8e1f49.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s115, manual: "Manual de Gerencia de Proyectos", seccion: "3.7.2.2 Opciones para agrupar las cantidades", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s117, manual: "Manual de Gerencia de Proyectos", seccion: "3.7.2.4 Generar el pedido automático", pagina: null}
+  - {id: img-eea90f8daea3-0000, manual: "Manual de Gerencia de Proyectos", seccion: "eea90f8daea3.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s116, manual: "Manual de Gerencia de Proyectos", seccion: "3.7.2.3 Selección de periodos", pagina: null}
+  - {id: img-56926d096d91-0000, manual: "Manual de Gerencia de Proyectos", seccion: "56926d096d91.png", pagina: null}
+  - {id: img-eb681861aa48-0000, manual: "Manual de Gerencia de Proyectos", seccion: "eb681861aa48.png", pagina: null}
+  - {id: img-fac2e24d994d-0000, manual: "Manual de Gerencia de Proyectos", seccion: "fac2e24d994d.png", pagina: null}
+  - {id: img-0311992aff6e-0000, manual: "Manual de Gerencia de Proyectos", seccion: "0311992aff6e.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s119, manual: "Manual de Gerencia de Proyectos", seccion: "3.7.3 Aprobar pedidos", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

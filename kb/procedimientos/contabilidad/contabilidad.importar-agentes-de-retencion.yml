@@ -1,0 +1,70 @@
+id: contabilidad.importar-agentes-de-retencion
+version: 1
+modulo: contabilidad
+titulo: "Importar los agentes de retención, percepción y buenos contribuyentes"
+objetivo: "Agregar al catálogo Sunat los agentes de retención, percepción y buenos contribuyentes importando los padrones que se descargan de la página de la Sunat."
+nivel: basico
+preguntas:
+  - "como cargo el padron de agentes de retencion en s10"
+  - "como actualizo los buenos contribuyentes en contabilidad"
+  - "donde importo el padron de agentes de percepcion de sunat"
+  - "de donde bajo el txt de agentes de retencion"
+  - "como meto los agentes de retencion al catalogo sunat"
+  - "el proveedor es agente de retencion y no sale, como actualizo el padron"
+  - "importar padrones sunat s10 contabilidad"
+  - "como inporto los agentes de retencion"
+aliases:
+  - "importar agentes de retención"
+  - "padrón de agentes de retención"
+  - "buenos contribuyentes"
+  - "agentes de percepción"
+entidades:
+  modulo: "Contabilidad"
+  pantallas: ["Sunat", "Agentes de Retención"]
+  objetos: ["padrones", "agentes de retención", "buenos contribuyentes"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "contabilidad.importar-agentes-de-retencion#1"
+    accion: "Baje de la página de la Sunat los padrones en formato .txt."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s013]
+    pagina: null
+    fotos:
+      - id: "5ea51f51c535"
+        ruta_o_url: "imagenes/manual-de-contabilidad/24486b2c855f.png"
+        pagina: null
+        caption: "Para agregar los agentes de Retención, Percepción y Buenos Contribuyentes primero se debe bajar de la página de la Sunat los padrones en formato .txt"
+        ocr: "a\nfl al Contribuyente\nGB repivic et res\ninstitucional | SUNAT Rinde Cuentas | Legislacién | Estadisticas y Estudios | indices y Tasas | F|\nInicio| Padrones y Hotificaciones eats\nSO est TT Nanas tn Conoeoee Padrones y Notificaciones\n- See | Ey Buenos Contribuyentes\nPadrén de Agentes de Retencién Bb! tematode\nFeet:\nDescargar Archive Texto (oa\nVer comentarios sobre la RS 181-2002/SUNAT\n<< Anterior 20…"
+  - n: 2
+    id: "contabilidad.importar-agentes-de-retencion#2"
+    accion: "Descargue el archivo en formato .zip y extraiga el fichero."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s013]
+    pagina: null
+  - n: 3
+    id: "contabilidad.importar-agentes-de-retencion#3"
+    accion: "En el catálogo **Sunat**, elija la opción **Agentes de Retención** (en el mismo catálogo están también los de percepción y **Buenos Contribuyentes**)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s013, img-c80112872372-0000]
+    pagina: null
+    fotos:
+      - id: "8323a1d3c923"
+        ruta_o_url: "imagenes/manual-de-contabilidad/c80112872372.png"
+        pagina: null
+        ocr: "i eee\nTips de Doctmeaa de Some\n[cand Percepcién\n| | Agentes de Percepcién\na\nml Buenos Contribuyentes\nTl - Tino de Medio de Pano"
+  - n: 4
+    id: "contabilidad.importar-agentes-de-retencion#4"
+    accion: "Importe los agentes de retención desde el fichero extraído."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s013]
+    pagina: null
+    fotos:
+      - id: "c4679d965aef"
+        ruta_o_url: "imagenes/manual-de-contabilidad/2ad3fb00a8e6.png"
+        pagina: null
+        caption: "Finalmente, se importan los Agentes de Retención."
+        ocr: "|\nImportando Contribuyentes es\nWy\nRegistro 102: 20171604355 AIS HOSPITAL SANTA ROSA\nCT] |"
+verificacion: []
+errores_frecuentes: []
+relacionados: [contabilidad.registrar-clientes]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s013, manual: "Manual de Contabilidad", seccion: "2.9 Retención, Percepción y Buenos Contribuyentes", pagina: null}
+  - {id: img-c80112872372-0000, manual: "Manual de Contabilidad", seccion: "c80112872372.png", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

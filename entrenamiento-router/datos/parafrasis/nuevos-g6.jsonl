@@ -1,0 +1,288 @@
+{"texto": "necesito jalar los % de las afp de la web de la sbs, como se hace", "procedimiento": "nominas.actualizar-comisiones-spp", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Quisiera obtener la publicación web de las comisiones SPP, ¿qué opción debo elegir?", "procedimiento": "nominas.actualizar-comisiones-spp", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "inicio de mes y toca poner las comisiones de las afp nuevas, como las cargo", "procedimiento": "nominas.actualizar-comisiones-spp", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como agrego a mano un valor de comision en comisiones spp dependientes sin internet", "procedimiento": "nominas.actualizar-comisiones-spp", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como modifico un porcentaje ya registrado de una afp", "procedimiento": "nominas.actualizar-comisiones-spp", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como borro los valores de comisiones del periodo sin borrar los conceptos", "procedimiento": "nominas.actualizar-comisiones-spp", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "bajar comisiones sbs", "procedimiento": "nominas.actualizar-comisiones-spp", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "comiciones afp del mes", "procedimiento": "nominas.actualizar-comisiones-spp", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como agrupo la informacion de las comisiones arrastrando las cabeceras de columnas", "procedimiento": "nominas.actualizar-comisiones-spp", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ke tengo q hacer pa tener los porcentajes de afp de este mes nose como se registran", "procedimiento": "nominas.actualizar-comisiones-spp", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "¿Cómo registro un concepto nuevo dentro del escenario de comisiones SPP dependientes?", "procedimiento": "nominas.actualizar-comisiones-spp", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "actualisar comision spp", "procedimiento": "nominas.actualizar-comisiones-spp", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "es la primera semana del mes y me piden actualizar las afp, que pasos sigo", "procedimiento": "nominas.actualizar-comisiones-spp", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Pasos para registrar las comisiones del seguro privado de pensiones dependientes", "procedimiento": "nominas.actualizar-comisiones-spp", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como cargo los porcentajes de todas las afp de un solo golpe desde internet", "procedimiento": "nominas.actualizar-comisiones-spp", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "en la oficina de obra no hay internet y hay que meter las comisiones afp manualmente, que hago", "procedimiento": "nominas.actualizar-comisiones-spp", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "donde esta el escenario de comisiones spp dependientes", "procedimiento": "nominas.actualizar-comisiones-spp", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que parte de nominas veo las comisiones de las afp", "procedimiento": "nominas.actualizar-comisiones-spp", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "ubicar comisiones spp", "procedimiento": "nominas.actualizar-comisiones-spp", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "dnd queda el menu pa registrar las comisiones afp", "procedimiento": "nominas.actualizar-comisiones-spp", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "¿Dónde encuentro la ventana Comisiones Seguro Privado de Pensiones Dependientes?", "procedimiento": "nominas.actualizar-comisiones-spp", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "con clic derecho sobre los valores de comisiones, donde sale el menu de publicacion web", "procedimiento": "nominas.actualizar-comisiones-spp", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "por donde entro pa ver los porcentajes de afp ya cargados", "procedimiento": "nominas.actualizar-comisiones-spp", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "como configuro conceptos nuevos en comisiones spp dependientes", "procedimiento": "nominas.actualizar-comisiones-spp", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Cómo dejo configurado el aporte complementario de construcción civil en las AFP?", "procedimiento": "nominas.actualizar-comisiones-spp", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "configurar conceptos sin afectacion adicionales a los que trae la sbs", "procedimiento": "nominas.actualizar-comisiones-spp", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como configuro los conceptos de afp no afectos segun norma para que salgan en cero", "procedimiento": "nominas.actualizar-comisiones-spp", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué debo configurar en Resumen de Conceptos por Periodo para las comisiones que no baja la SBS?", "procedimiento": "nominas.actualizar-comisiones-spp", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "configurar concepto afp", "procedimiento": "nominas.actualizar-comisiones-spp", "intencion": "CONFIGURATION", "estilo": "muy_corta"}
+{"texto": "no tengo los porcentajes de las afp del mes en la nomina, que paso", "procedimiento": "nominas.actualizar-comisiones-spp", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el calculo de la nomina sale sin comision afp, falta actualizar algo", "procedimiento": "nominas.actualizar-comisiones-spp", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "la publicacion web de la sbs no me trae nada, como los pongo", "procedimiento": "nominas.actualizar-comisiones-spp", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "las afp no afectas deberian salir en 0 y me salen con valor", "procedimiento": "nominas.actualizar-comisiones-spp", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "ya paso la primera semana del mes y me olvide de las comisiones de la sbs, hay problema", "procedimiento": "nominas.actualizar-comisiones-spp", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "falta el % de comision de mi afp en el periodo y la planilla sale rara", "procedimiento": "nominas.actualizar-comisiones-spp", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "nose xq no hay comisiones afp cargadas este mes", "procedimiento": "nominas.actualizar-comisiones-spp", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "como le asigno el horario ciclico a los obreros del multiproyecto", "procedimiento": "nominas.asignar-horario-a-los-trabajadores", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cuál es el procedimiento para asignar un horario cíclico a un trabajador con fecha de vigencia?", "procedimiento": "nominas.asignar-horario-a-los-trabajadores", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "pa q el calculo de dias y horas funcione tengo q asignar horario a cada obrero, como", "procedimiento": "nominas.asignar-horario-a-los-trabajadores", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "entraron 12 obreros nuevos esta semana y hay que ponerles su horario, que hago", "procedimiento": "nominas.asignar-horario-a-los-trabajadores", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como pongo un horario a un trabajador desde su ficha en la pestaña horarios", "procedimiento": "nominas.asignar-horario-a-los-trabajadores", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como asigno horario a varios trabajadores de un tipo de nomina a la vez", "procedimiento": "nominas.asignar-horario-a-los-trabajadores", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "asignar horarios ciclicos", "procedimiento": "nominas.asignar-horario-a-los-trabajadores", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como asigno el orario siclico a un trabajador", "procedimiento": "nominas.asignar-horario-a-los-trabajadores", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "Deseo registrar una asignación de horario indicando la fecha de vigencia, ¿cómo procedo?", "procedimiento": "nominas.asignar-horario-a-los-trabajadores", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "un obrero entro el miercoles, como le pongo su horario ciclico", "procedimiento": "nominas.asignar-horario-a-los-trabajadores", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como elijo con doble clic a los trabajadores del catalogo de personal por tipo de nominas para darles horario", "procedimiento": "nominas.asignar-horario-a-los-trabajadores", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ke fecha de vigencia pongo al asignar el horario a un obrero", "procedimiento": "nominas.asignar-horario-a-los-trabajadores", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "horario de obreros", "procedimiento": "nominas.asignar-horario-a-los-trabajadores", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "Necesito que el resumen de conceptos por día tome las horas de cada trabajador; ¿cómo les asigno su horario?", "procedimiento": "nominas.asignar-horario-a-los-trabajadores", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "agregar horario ciclico con clic derecho agregar en la ficha del trabajador", "procedimiento": "nominas.asignar-horario-a-los-trabajadores", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "recien cree el horario ciclico y ahora toca asignarlo al personal, como se hace", "procedimiento": "nominas.asignar-horario-a-los-trabajadores", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "donde esta el escenario horarios en proyectos", "procedimiento": "nominas.asignar-horario-a-los-trabajadores", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde se hace la asignacion de horario", "procedimiento": "nominas.asignar-horario-a-los-trabajadores", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en la ficha del trabajador en que pestaña va el horario", "procedimiento": "nominas.asignar-horario-a-los-trabajadores", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "escenario horarios", "procedimiento": "nominas.asignar-horario-a-los-trabajadores", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "dnd asigno los orarios de los trabajadores", "procedimiento": "nominas.asignar-horario-a-los-trabajadores", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "¿Dónde encuentro la ventana Asignación de Horario dentro del multiproyecto?", "procedimiento": "nominas.asignar-horario-a-los-trabajadores", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde veo el catalogo de personal por tipo de nominas para asignar horarios", "procedimiento": "nominas.asignar-horario-a-los-trabajadores", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "que tipo de nomina debo elegir al agregar el horario ciclico en la ficha", "procedimiento": "nominas.asignar-horario-a-los-trabajadores", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como configuro la fecha de vigencia del horario ciclico para que empiece bien la semana", "procedimiento": "nominas.asignar-horario-a-los-trabajadores", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "configurar vigencia de horario", "procedimiento": "nominas.asignar-horario-a-los-trabajadores", "intencion": "CONFIGURATION", "estilo": "muy_corta"}
+{"texto": "el horario ciclico tiene que estar registrado antes de asignarlo, como lo dejo listo", "procedimiento": "nominas.asignar-horario-a-los-trabajadores", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué día debe ser la fecha de vigencia del horario cíclico?", "procedimiento": "nominas.asignar-horario-a-los-trabajadores", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "configuracion del horario segun el tipo de nomina del trabajador", "procedimiento": "nominas.asignar-horario-a-los-trabajadores", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "el horario ciclico no arranca en la semana correcta", "procedimiento": "nominas.asignar-horario-a-los-trabajadores", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "un trabajador ingreso a mitad de semana y su horario sale mal, que fecha de vigencia le pongo", "procedimiento": "nominas.asignar-horario-a-los-trabajadores", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "me sale mal el numero de dias y horas en el resumen por dia, creo que el horario esta mal asignado", "procedimiento": "nominas.asignar-horario-a-los-trabajadores", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el horario siclico empieza un dia q no es lunes, xq pasa eso", "procedimiento": "nominas.asignar-horario-a-los-trabajadores", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "la nomina de un obrero sale con dias de menos y no tiene horario asignado, que reviso", "procedimiento": "nominas.asignar-horario-a-los-trabajadores", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "asigne horario con vigencia un jueves y ahora las semanas salen corridas", "procedimiento": "nominas.asignar-horario-a-los-trabajadores", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "horario ciclico mal", "procedimiento": "nominas.asignar-horario-a-los-trabajadores", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "como calculo las utilidades de los trabajadores en s10", "procedimiento": "nominas.calcular-reparto-de-utilidades", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se realiza el reparto de utilidades por días trabajados y por monto ganado?", "procedimiento": "nominas.calcular-reparto-de-utilidades", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "ya cerramos el año, como reparto las utilidades de los obreros", "procedimiento": "nominas.calcular-reparto-de-utilidades", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como genero la planilla de pago de utilidades", "procedimiento": "nominas.calcular-reparto-de-utilidades", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Necesito generar la Liquidación de la Distribución de Utilidades de un trabajador, ¿cómo procedo?", "procedimiento": "nominas.calcular-reparto-de-utilidades", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como saco la constancia de utilidades de todos los trabajadores a la vez", "procedimiento": "nominas.calcular-reparto-de-utilidades", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde registro el importe del % de utilidades segun la industria de la empresa", "procedimiento": "nominas.calcular-reparto-de-utilidades", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "reparto utilidades", "procedimiento": "nominas.calcular-reparto-de-utilidades", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "komo calculo las utilidades del año", "procedimiento": "nominas.calcular-reparto-de-utilidades", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "gerencia me pide la liquidacion de utilidades de cada trabajador en word, como las genero", "procedimiento": "nominas.calcular-reparto-de-utilidades", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como defino que conceptos suman los dias trabajados para las utilidades", "procedimiento": "nominas.calcular-reparto-de-utilidades", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como agrego conceptos de tipo moneda computables al monto ganado en utilidades", "procedimiento": "nominas.calcular-reparto-de-utilidades", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "pasos pa repartir utilidades x dias y x monto", "procedimiento": "nominas.calcular-reparto-de-utilidades", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "generar documento de pago utilidades", "procedimiento": "nominas.calcular-reparto-de-utilidades", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "¿Cómo selecciono el año y el periodo de pago para calcular las utilidades?", "procedimiento": "nominas.calcular-reparto-de-utilidades", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "toca pagar utilidades en marzo, que tipos de nomina marco para que entren en el calculo", "procedimiento": "nominas.calcular-reparto-de-utilidades", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "donde esta el escenario reparto de utilidades", "procedimiento": "nominas.calcular-reparto-de-utilidades", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que parte genero la liquidacion de la distribucion de utilidades", "procedimiento": "nominas.calcular-reparto-de-utilidades", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "reparto de utilidades pantalla", "procedimiento": "nominas.calcular-reparto-de-utilidades", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "dnd veo el reparto de utilidade", "procedimiento": "nominas.calcular-reparto-de-utilidades", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "donde elijo la carpeta destino y el nombre de archivo de la constancia de utilidades", "procedimiento": "nominas.calcular-reparto-de-utilidades", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en el catalogo donde queda la plantilla de liquidacion de utilidades", "procedimiento": "nominas.calcular-reparto-de-utilidades", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué menú se calcula el porcentaje de la renta neta correspondiente a cada trabajador?", "procedimiento": "nominas.calcular-reparto-de-utilidades", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "como preparo la plantilla de word para la liquidacion de utilidades con variables", "procedimiento": "nominas.calcular-reparto-de-utilidades", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como configuro la plantilla excel de liquidacion de utilidades, que escenario elijo", "procedimiento": "nominas.calcular-reparto-de-utilidades", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "donde marco los tipos de nomina afectos al calculo de utilidades", "procedimiento": "nominas.calcular-reparto-de-utilidades", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Cómo armo la plantilla usando el diccionario de variables para las utilidades?", "procedimiento": "nominas.calcular-reparto-de-utilidades", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "configurar dias trabajados utilidades", "procedimiento": "nominas.calcular-reparto-de-utilidades", "intencion": "CONFIGURATION", "estilo": "muy_corta"}
+{"texto": "que conceptos de tipo valor dia o moneda configuro para computar utilidades", "procedimiento": "nominas.calcular-reparto-de-utilidades", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "los dias de descanso prenatal y posnatal no me suman en las utilidades", "procedimiento": "nominas.calcular-reparto-de-utilidades", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "la utilidad no se esta considerando en el descuento de renta de quinta del trabajador", "procedimiento": "nominas.calcular-reparto-de-utilidades", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "una trabajadora con descanso pre y post natal sale con pocos dias trabajados en utilidades, como corrijo", "procedimiento": "nominas.calcular-reparto-de-utilidades", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "el deposito por utilidad no sale en el resumen de conceptos por periodo", "procedimiento": "nominas.calcular-reparto-de-utilidades", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "las utilidades no entran en la quinta xq", "procedimiento": "nominas.calcular-reparto-de-utilidades", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "que dias cuentan como computables en las utilidades, los descansos medicos entran", "procedimiento": "nominas.calcular-reparto-de-utilidades", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "utilidades dias menos", "procedimiento": "nominas.calcular-reparto-de-utilidades", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "como le pongo fecha de cese a un obrero que renuncio", "procedimiento": "nominas.registrar-cese-del-trabajador", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo registro la fecha de cese y el motivo de un trabajador?", "procedimiento": "nominas.registrar-cese-del-trabajador", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "un obrero dejo de venir a la obra, como lo doy de baja para su liquidacion", "procedimiento": "nominas.registrar-cese-del-trabajador", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "donde pongo el motivo del cese del trabajador", "procedimiento": "nominas.registrar-cese-del-trabajador", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como saco a un trabajador de los tareos porque ya no trabaja", "procedimiento": "nominas.registrar-cese-del-trabajador", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "registrar cese", "procedimiento": "nominas.registrar-cese-del-trabajador", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "komo registro el cese de un trabajador", "procedimiento": "nominas.registrar-cese-del-trabajador", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "Necesito indicar la fecha de término laboral de un empleado para su liquidación, ¿qué pasos sigo?", "procedimiento": "nominas.registrar-cese-del-trabajador", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "termino el contrato del maestro de obra el viernes, que registro en el s10", "procedimiento": "nominas.registrar-cese-del-trabajador", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como doy de baja un trabajador del proyecto", "procedimiento": "nominas.registrar-cese-del-trabajador", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como ingreso la fecha de cese desde personal disponible", "procedimiento": "nominas.registrar-cese-del-trabajador", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cesar a un obrero", "procedimiento": "nominas.registrar-cese-del-trabajador", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "pa liquidar a un obrero ke tengo q poner en la ficha", "procedimiento": "nominas.registrar-cese-del-trabajador", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como reviso la fecha de ingreso al proyecto antes de poner el cese", "procedimiento": "nominas.registrar-cese-del-trabajador", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Deseo dar de baja a un trabajador en el sistema, ¿cómo lo hago?", "procedimiento": "nominas.registrar-cese-del-trabajador", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el obrero se fue de la empresa y su liquidacion es semanal, que debo hacer para que ya no salga", "procedimiento": "nominas.registrar-cese-del-trabajador", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "en que pestaña de la ficha se pone la fecha de cese", "procedimiento": "nominas.registrar-cese-del-trabajador", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde queda la pestaña ingresos del trabajador", "procedimiento": "nominas.registrar-cese-del-trabajador", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "como llego a la ficha de un trabajador en personal disponible para el cese", "procedimiento": "nominas.registrar-cese-del-trabajador", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "pestaña ingresos", "procedimiento": "nominas.registrar-cese-del-trabajador", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "dnd pongo la fecha de sese", "procedimiento": "nominas.registrar-cese-del-trabajador", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "¿En qué pantalla se registra el motivo de cese?", "procedimiento": "nominas.registrar-cese-del-trabajador", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde veo la fecha de ingreso del trabajador al proyecto", "procedimiento": "nominas.registrar-cese-del-trabajador", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "como desmarco activo en la pestaña general para que no salga en tareos", "procedimiento": "nominas.registrar-cese-del-trabajador", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "donde configuro que un trabajador ya no este disponible en los tareos", "procedimiento": "nominas.registrar-cese-del-trabajador", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "se puede editar la fecha de ingreso por defecto del trabajador al proyecto", "procedimiento": "nominas.registrar-cese-del-trabajador", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Cómo quito la selección de activo de un trabajador que ya no labora?", "procedimiento": "nominas.registrar-cese-del-trabajador", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "como dejo configurada la liquidacion semanal con el cese del obrero", "procedimiento": "nominas.registrar-cese-del-trabajador", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "desactivar trabajador", "procedimiento": "nominas.registrar-cese-del-trabajador", "intencion": "CONFIGURATION", "estilo": "muy_corta"}
+{"texto": "un obrero que ya no labora sigue saliendo en los tareos", "procedimiento": "nominas.registrar-cese-del-trabajador", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "cese a un trabajador y sigue en el tareo de la semana", "procedimiento": "nominas.registrar-cese-del-trabajador", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "un trabajador cambio de afp, le pongo fecha de cese", "procedimiento": "nominas.registrar-cese-del-trabajador", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el trabajador ya renuncio pero aparece en los procesos de nomina", "procedimiento": "nominas.registrar-cese-del-trabajador", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el obrero ya no trabaja y todavia lo veo en los tareos, xq", "procedimiento": "nominas.registrar-cese-del-trabajador", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "cesado sigue apareciendo", "procedimiento": "nominas.registrar-cese-del-trabajador", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "cuando un trabajador cambia de afp donde pongo la fecha de cese de la afiliacion", "procedimiento": "nominas.registrar-cese-del-trabajador", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "como creo un tipo de papeleta para descanso medico", "procedimiento": "nominas.registrar-clasificacion-de-papeletas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo registro una clasificación de papeletas en el catálogo?", "procedimiento": "nominas.registrar-clasificacion-de-papeletas", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "quiero agregar la papeleta de licencia con goce de haber", "procedimiento": "nominas.registrar-clasificacion-de-papeletas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como armo la papeleta de vacaciones para modificar un tareo ya registrado", "procedimiento": "nominas.registrar-clasificacion-de-papeletas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "tengo que regularizar dias de un tareo ya cargado, que papeleta creo", "procedimiento": "nominas.registrar-clasificacion-de-papeletas", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "nueva papeleta", "procedimiento": "nominas.registrar-clasificacion-de-papeletas", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "komo creo una clasificacion de papeletas", "procedimiento": "nominas.registrar-clasificacion-de-papeletas", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "Necesito añadir un nuevo subitem en Papeletas por Vacaciones, ¿cómo procedo?", "procedimiento": "nominas.registrar-clasificacion-de-papeletas", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como registro papeleta de subsidio", "procedimiento": "nominas.registrar-clasificacion-de-papeletas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como indico si la papeleta es por dias o por horas", "procedimiento": "nominas.registrar-clasificacion-de-papeletas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como elijo el concepto que reemplaza la papeleta", "procedimiento": "nominas.registrar-clasificacion-de-papeletas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "papeleta de licencia", "procedimiento": "nominas.registrar-clasificacion-de-papeletas", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "ke pasos sigo pa crear papeleta de regularisacion de dias", "procedimiento": "nominas.registrar-clasificacion-de-papeletas", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "los obreros salieron de vacaciones y hay que corregirles el tareo, como dejo lista la papeleta", "procedimiento": "nominas.registrar-clasificacion-de-papeletas", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo se relaciona el concepto genérico con el concepto al crear una papeleta?", "procedimiento": "nominas.registrar-clasificacion-de-papeletas", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "clic derecho en el grupo, nuevo subitem, y despues que lleno para la papeleta", "procedimiento": "nominas.registrar-clasificacion-de-papeletas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde estan los catalogos de clasificacion de papeletas", "procedimiento": "nominas.registrar-clasificacion-de-papeletas", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que catalogo se crean los tipos de papeleta", "procedimiento": "nominas.registrar-clasificacion-de-papeletas", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "catalogo papeletas", "procedimiento": "nominas.registrar-clasificacion-de-papeletas", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "dnd esta clasificacion de papeletas", "procedimiento": "nominas.registrar-clasificacion-de-papeletas", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "¿Por dónde accedo al Catálogo de Clasificación de Papeletas?", "procedimiento": "nominas.registrar-clasificacion-de-papeletas", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde veo el grupo papeletas por vacaciones", "procedimiento": "nominas.registrar-clasificacion-de-papeletas", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que menu creo licencias y subsidios para modificar tareos", "procedimiento": "nominas.registrar-clasificacion-de-papeletas", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "que comportamiento conviene en las papeletas por dias de vacaciones", "procedimiento": "nominas.registrar-clasificacion-de-papeletas", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "diferencia entre comportamiento simple, multiple y abierta en papeletas", "procedimiento": "nominas.registrar-clasificacion-de-papeletas", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "cuando uso comportamiento abierta en una papeleta", "procedimiento": "nominas.registrar-clasificacion-de-papeletas", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como configuro una papeleta que reemplaza varios conceptos por uno solo", "procedimiento": "nominas.registrar-clasificacion-de-papeletas", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "comportamiento papeleta", "procedimiento": "nominas.registrar-clasificacion-de-papeletas", "intencion": "CONFIGURATION", "estilo": "muy_corta"}
+{"texto": "que tipo valor elijo en la papeleta, dia u hora", "procedimiento": "nominas.registrar-clasificacion-de-papeletas", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "no puedo agregar ni modificar un concepto generico en la papeleta", "procedimiento": "nominas.registrar-clasificacion-de-papeletas", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no se que comportamiento darle a la papeleta de vacaciones", "procedimiento": "nominas.registrar-clasificacion-de-papeletas", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me deja editar el generico de la papeleta xq", "procedimiento": "nominas.registrar-clasificacion-de-papeletas", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "quiero modificar un concepto generico y esta bloqueado", "procedimiento": "nominas.registrar-clasificacion-de-papeletas", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "la papeleta de vacaciones no me deja sumar dias adicionales, que comportamiento tengo mal", "procedimiento": "nominas.registrar-clasificacion-de-papeletas", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "¿Por qué los conceptos genéricos de las papeletas no se pueden cambiar?", "procedimiento": "nominas.registrar-clasificacion-de-papeletas", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "generico no modifica", "procedimiento": "nominas.registrar-clasificacion-de-papeletas", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "como completo la ficha de un trabajador nuevo para el t-registro", "procedimiento": "nominas.registrar-ficha-del-trabajador", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo registro la información de la ficha del trabajador para el proceso de la nómina?", "procedimiento": "nominas.registrar-ficha-del-trabajador", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "donde pongo el recurso equivalente del obrero", "procedimiento": "nominas.registrar-ficha-del-trabajador", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como registro el codigo de afiliacion a la afp en la ficha rrhh", "procedimiento": "nominas.registrar-ficha-del-trabajador", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como registro a la esposa e hijos del trabajador como derecho habiente", "procedimiento": "nominas.registrar-ficha-del-trabajador", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como pongo el banco y numero de cuenta para depositar la remuneracion del trabajador", "procedimiento": "nominas.registrar-ficha-del-trabajador", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "la sunat pide el t-registro mensual y falta data de los trabajadores, que lleno en la ficha", "procedimiento": "nominas.registrar-ficha-del-trabajador", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "llenar ficha de obrero", "procedimiento": "nominas.registrar-ficha-del-trabajador", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "komo lleno la ficha personal del obrero", "procedimiento": "nominas.registrar-ficha-del-trabajador", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como registro tipo de contrato, regimen laboral y monto de contrato en la ficha", "procedimiento": "nominas.registrar-ficha-del-trabajador", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Necesito registrar la modalidad formativa laboral de un practicante, ¿cómo procedo?", "procedimiento": "nominas.registrar-ficha-del-trabajador", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como elijo la ocupacion y la categoria del trabajador en nomina", "procedimiento": "nominas.registrar-ficha-del-trabajador", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ya registre al obrero como socio de negocio y lo copie al proyecto, ahora que datos le completo", "procedimiento": "nominas.registrar-ficha-del-trabajador", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "ke datos pide la ficha del trabajador pa la planilla", "procedimiento": "nominas.registrar-ficha-del-trabajador", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "completar ficha rrhh", "procedimiento": "nominas.registrar-ficha-del-trabajador", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como registro la educacion del trabajador en la ficha", "procedimiento": "nominas.registrar-ficha-del-trabajador", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como entro a la ficha de un trabajador", "procedimiento": "nominas.registrar-ficha-del-trabajador", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde esta la pestaña derecho habiente", "procedimiento": "nominas.registrar-ficha-del-trabajador", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que pestaña se pone la comision mixta afp o essalud vida", "procedimiento": "nominas.registrar-ficha-del-trabajador", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "ficha rrhh", "procedimiento": "nominas.registrar-ficha-del-trabajador", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "dnd esta la ficha rr hh del trabajador", "procedimiento": "nominas.registrar-ficha-del-trabajador", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "¿En qué pestaña de la ficha se elige el tipo de moneda de la nómina?", "procedimiento": "nominas.registrar-ficha-del-trabajador", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en que pestaña registro el correo para que le llegue la boleta", "procedimiento": "nominas.registrar-ficha-del-trabajador", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "como configuro la moneda de la nomina para todos los trabajadores", "procedimiento": "nominas.registrar-ficha-del-trabajador", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "donde marco comision mixta afp o essalud vida en afiliaciones", "procedimiento": "nominas.registrar-ficha-del-trabajador", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "donde indico si el trabajador tiene discapacidad", "procedimiento": "nominas.registrar-ficha-del-trabajador", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Cómo configuro el tipo de correo electrónico para que el trabajador reciba su boleta de pago?", "procedimiento": "nominas.registrar-ficha-del-trabajador", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "como dejo activo al trabajador mientras labora en el proyecto", "procedimiento": "nominas.registrar-ficha-del-trabajador", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "moneda de la ficha", "procedimiento": "nominas.registrar-ficha-del-trabajador", "intencion": "CONFIGURATION", "estilo": "muy_corta"}
+{"texto": "no puedo asignar derecho habiente al trabajador", "procedimiento": "nominas.registrar-ficha-del-trabajador", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "falta un codigo en los catalogos del t-registro que agrego la sunat", "procedimiento": "nominas.registrar-ficha-del-trabajador", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "la nomina no me deja usar dos monedas distintas por trabajador", "procedimiento": "nominas.registrar-ficha-del-trabajador", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "me sale estado civil soltero y no me deja poner esposa ni hijos", "procedimiento": "nominas.registrar-ficha-del-trabajador", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no sale un codigo nuevo de la sunat en el t-registro, xq", "procedimiento": "nominas.registrar-ficha-del-trabajador", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "los hijos no me salen para elegirlos como derecho habiente", "procedimiento": "nominas.registrar-ficha-del-trabajador", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "derecho habiente no aparece", "procedimiento": "nominas.registrar-ficha-del-trabajador", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "como registro lo que gano mi trabajador en otra empresa para la quinta", "procedimiento": "nominas.registrar-renta-de-quinta-de-otras-empresas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo registro el impuesto a la 5ta categoría retenido en otras empresas?", "procedimiento": "nominas.registrar-renta-de-quinta-de-otras-empresas", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "donde pongo el monto percibido en otras empresas acumulado", "procedimiento": "nominas.registrar-renta-de-quinta-de-otras-empresas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el obrero nuevo trabajo antes en otra empresa este año y trae su certificado de quinta, como lo cargo", "procedimiento": "nominas.registrar-renta-de-quinta-de-otras-empresas", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como actualizo los valores de renta de quinta en la ficha", "procedimiento": "nominas.registrar-renta-de-quinta-de-otras-empresas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "quinta otras empresas", "procedimiento": "nominas.registrar-renta-de-quinta-de-otras-empresas", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "komo registro la renta de 5ta de otro empleador", "procedimiento": "nominas.registrar-renta-de-quinta-de-otras-empresas", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "Necesito ingresar manualmente los montos retenidos por renta de quinta categoría en otros empleadores", "procedimiento": "nominas.registrar-renta-de-quinta-de-otras-empresas", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "donde registro las ganancias de otros empleadores en la pestaña haberes", "procedimiento": "nominas.registrar-renta-de-quinta-de-otras-empresas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el ingeniero ingreso en julio y ya le descontaron quinta en su anterior chamba, que registro", "procedimiento": "nominas.registrar-renta-de-quinta-de-otras-empresas", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como reviso lo percibido en los proyectos y lo retenido en otros proyectos por quinta", "procedimiento": "nominas.registrar-renta-de-quinta-de-otras-empresas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ke pongo en haberes pa la quinta del trabajador q vino de otra empresa", "procedimiento": "nominas.registrar-renta-de-quinta-de-otras-empresas", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "retencion 5ta anterior", "procedimiento": "nominas.registrar-renta-de-quinta-de-otras-empresas", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "para que el calculo de quinta sea correcto, que acumulado de otras empresas debo ingresar", "procedimiento": "nominas.registrar-renta-de-quinta-de-otras-empresas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se usa el botón Actualizar valores en la ficha del trabajador?", "procedimiento": "nominas.registrar-renta-de-quinta-de-otras-empresas", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "pasos para cargar ganancias y retenciones de otra empresa", "procedimiento": "nominas.registrar-renta-de-quinta-de-otras-empresas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "en que pestaña de la ficha se ponen las ganancias de otras empresas", "procedimiento": "nominas.registrar-renta-de-quinta-de-otras-empresas", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde queda actualizar valores en la ficha personal", "procedimiento": "nominas.registrar-renta-de-quinta-de-otras-empresas", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "pestaña haberes", "procedimiento": "nominas.registrar-renta-de-quinta-de-otras-empresas", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "dnd pongo lo retenido en otras empresas", "procedimiento": "nominas.registrar-renta-de-quinta-de-otras-empresas", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "¿Dónde se visualizan el monto percibido y el retenido acumulados en los proyectos?", "procedimiento": "nominas.registrar-renta-de-quinta-de-otras-empresas", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "como llego a la pestaña haberes de un trabajador", "procedimiento": "nominas.registrar-renta-de-quinta-de-otras-empresas", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que parte registro la quinta que le retuvieron antes", "procedimiento": "nominas.registrar-renta-de-quinta-de-otras-empresas", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "como configuro que a un trabajador no se le descuente el impuesto a la 5ta", "procedimiento": "nominas.registrar-renta-de-quinta-de-otras-empresas", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "donde marco que no se le retenga quinta categoria a un trabajador", "procedimiento": "nominas.registrar-renta-de-quinta-de-otras-empresas", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "no descontar quinta", "procedimiento": "nominas.registrar-renta-de-quinta-de-otras-empresas", "intencion": "CONFIGURATION", "estilo": "muy_corta"}
+{"texto": "en relacion laboral que selecciono para que no se le aplique la renta de quinta", "procedimiento": "nominas.registrar-renta-de-quinta-de-otras-empresas", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Cómo exonero a un trabajador del descuento de la 5ta categoría?", "procedimiento": "nominas.registrar-renta-de-quinta-de-otras-empresas", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "configuracion de quinta del trabajador en la pestaña relacion laboral", "procedimiento": "nominas.registrar-renta-de-quinta-de-otras-empresas", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "a un trabajador no se le debe descontar el impuesto a la 5ta y se lo estan descontando", "procedimiento": "nominas.registrar-renta-de-quinta-de-otras-empresas", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "se le descuenta quinta a un practicante, como lo evito", "procedimiento": "nominas.registrar-renta-de-quinta-de-otras-empresas", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el calculo de quinta sale mayor porque no considero lo que gano en otra empresa", "procedimiento": "nominas.registrar-renta-de-quinta-de-otras-empresas", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "puse montos de otra empresa y no cambian, que me falta", "procedimiento": "nominas.registrar-renta-de-quinta-de-otras-empresas", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "la quinta sale mal xq no puse lo q retuvieron antes", "procedimiento": "nominas.registrar-renta-de-quinta-de-otras-empresas", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "quinta incorrecta", "procedimiento": "nominas.registrar-renta-de-quinta-de-otras-empresas", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "el monto retenido acumulado de otras empresas no se actualiza", "procedimiento": "nominas.registrar-renta-de-quinta-de-otras-empresas", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "como registro un tipo de prestamo personal", "procedimiento": "nominas.registrar-tipo-de-prestamo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo registro un tipo de préstamo vehicular con sus conceptos?", "procedimiento": "nominas.registrar-tipo-de-prestamo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como creo prestamo de vivienda para los trabajadores", "procedimiento": "nominas.registrar-tipo-de-prestamo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "la empresa va a dar adelantos y prestamos a obreros, que debo crear primero", "procedimiento": "nominas.registrar-tipo-de-prestamo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como elijo el concepto prestamo y amortizacion al crear el tipo", "procedimiento": "nominas.registrar-tipo-de-prestamo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como registro el concepto saldo para la liquidacion del prestamo", "procedimiento": "nominas.registrar-tipo-de-prestamo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "crear prestamo personal", "procedimiento": "nominas.registrar-tipo-de-prestamo", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "komo creo un tipo de prestamo de salud", "procedimiento": "nominas.registrar-tipo-de-prestamo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "Necesito registrar el concepto de amortización de cuota doble, ¿cómo procedo?", "procedimiento": "nominas.registrar-tipo-de-prestamo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como hago un tipo de prestamo exclusivo para un solo trabajador", "procedimiento": "nominas.registrar-tipo-de-prestamo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como asigno el tipo de documento del prestamo y su recurso", "procedimiento": "nominas.registrar-tipo-de-prestamo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "nuevo tipo prestamo", "procedimiento": "nominas.registrar-tipo-de-prestamo", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "pa crear un tipo de prestamo ke datos pide", "procedimiento": "nominas.registrar-tipo-de-prestamo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "antes de entregar el prestamo a un obrero, que catalogo hay que dejar listo", "procedimiento": "nominas.registrar-tipo-de-prestamo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo adiciono un tipo de préstamo en el escenario Tipos de Préstamo?", "procedimiento": "nominas.registrar-tipo-de-prestamo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como pongo el socio de negocio en un tipo de prestamo", "procedimiento": "nominas.registrar-tipo-de-prestamo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde esta el escenario tipos de prestamo", "procedimiento": "nominas.registrar-tipo-de-prestamo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que parte se crean los tipos de prestamo antes de usar prestamos", "procedimiento": "nominas.registrar-tipo-de-prestamo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "ventana tipos prestamo", "procedimiento": "nominas.registrar-tipo-de-prestamo", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "dnd esta tipos de prestamo", "procedimiento": "nominas.registrar-tipo-de-prestamo", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "¿Dónde encuentro la ventana Tipo de Préstamo?", "procedimiento": "nominas.registrar-tipo-de-prestamo", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en que grupo esta el escenario de prestamos que usa estos tipos", "procedimiento": "nominas.registrar-tipo-de-prestamo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde adiciono un tipo de prestamo", "procedimiento": "nominas.registrar-tipo-de-prestamo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "que conceptos de nomina deben estar en la formulacion para el tipo de prestamo", "procedimiento": "nominas.registrar-tipo-de-prestamo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como configuro prestamo, amortizacion y saldo en la formulacion", "procedimiento": "nominas.registrar-tipo-de-prestamo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "los conceptos de prestamo deben formar parte de un tipo de nomina, como lo dejo", "procedimiento": "nominas.registrar-tipo-de-prestamo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "configurar concepto saldo prestamo", "procedimiento": "nominas.registrar-tipo-de-prestamo", "intencion": "CONFIGURATION", "estilo": "muy_corta"}
+{"texto": "que tipo de documento configuro para la transaccion del prestamo", "procedimiento": "nominas.registrar-tipo-de-prestamo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como dejo preparado el concepto amortizacion de cuota doble", "procedimiento": "nominas.registrar-tipo-de-prestamo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "el tipo de prestamo no aparece en el escenario de prestamos", "procedimiento": "nominas.registrar-tipo-de-prestamo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "cree el tipo de prestamo y no lo veo en prestamos del grupo gestion rrhh", "procedimiento": "nominas.registrar-tipo-de-prestamo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me sale el tipo de prestamo en prestamos, xq", "procedimiento": "nominas.registrar-tipo-de-prestamo", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "no encuentro los conceptos de prestamo al registrar el tipo", "procedimiento": "nominas.registrar-tipo-de-prestamo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "prestamo no aparece", "procedimiento": "nominas.registrar-tipo-de-prestamo", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "no sale el concepto amortizacion en el catalogo cuando creo el tipo de prestamo", "procedimiento": "nominas.registrar-tipo-de-prestamo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "la liquidacion del prestamo no calcula el saldo, falta el concepto saldo en el tipo", "procedimiento": "nominas.registrar-tipo-de-prestamo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}

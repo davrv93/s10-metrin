@@ -1,0 +1,181 @@
+id: facturacion.registrar-anticipo-a-proveedor
+version: 1
+modulo: facturacion
+titulo: "Registrar una factura de anticipo de proveedor y su amortización"
+objetivo: "Registrar la factura de adelanto que el proveedor emite por un porcentaje de la orden de compra y, cuando llega la mercadería con la segunda factura, relacionarla con el ingreso de almacén, amortizar el anticipo y enlazar todo con una regularización compuesta."
+nivel: avanzado
+preguntas:
+  - "cómo registro la factura de adelanto que me manda el proveedor"
+  - "el proveedor me factura el 30% de la orden de compra antes de despachar, como lo registro"
+  - "como amortizo el anticipo en la segunda factura"
+  - "como relaciono la factura de anticipo con la orden de compra"
+  - "el ingreso de almacen se enlazo con la factura del adelanto, como lo desvinculo"
+  - "como hago la regularizacion compuesta del anticipo"
+  - "factura de antisipo de proveedor en s10 pasos"
+  - "pongo el recurso anticipo en negativo? como es"
+aliases:
+  - "anticipo a proveedor"
+  - "factura de anticipo"
+  - "amortizar anticipo"
+  - "adelanto de orden de compra"
+  - "caso anticipo"
+entidades:
+  modulo: "Facturación"
+  pantallas: ["Catalogo de Ordenes de Compra y Servicio"]
+  objetos: ["factura", "anticipo", "orden de compra", "ingreso al almacén", "regularización compuesta", "recurso"]
+prerrequisitos:
+  - texto: "Debe existir la orden de compra del proveedor; por una previa configuración, el sistema asigna a la factura el recurso ANTICIPO."
+    fuente: [web-https-documentacion-s10peru-com-caso-ant-s000]
+pasos:
+  - n: 1
+    id: "facturacion.registrar-anticipo-a-proveedor#1"
+    accion: "Registre la factura por el adelanto: haga clic derecho, elija adicionar, llene los datos de la factura y, en el campo **Relacionado con:**, elija **ORDEN DE COMPRA O SERVICIO**."
+    fuente: [web-https-documentacion-s10peru-com-caso-ant-s000]
+    pagina: null
+    fotos:
+      - id: "4a9199fae056"
+        ruta_o_url: "imagenes/caso-anticipo/fb2e95f5c04c.png"
+        pagina: null
+        caption: "1.1- Registro de factura por el 30% de adelanto de la OC 585, al relacionarlo directamente desde la OC el sistema lo considera como adelanto, teniendo la facultad de editar el monto por el cual será el adelanto. * Click derecho adicionar>>> llenamos los datos de la factura >>> y en el campo Relacionado con: elegimos “ORDEN DE COMPRA O SERVICIO”."
+        ocr: "o 510 Facturacién: 00000002 - CONSTRUCTORA POSEIDON S.A.C. - Principal: = |e\ndriv Ye Ses Meron 2\nBeea F\na yee | [on TRTORARCSEESR | ND\n= a etn IRAE FORTRTOTARROONEAC =| |\nB © RCASMOET oyna HT RRRERRIEAE\ncanine Bore |e P57 seen renm PBT Irn DOTS]\nPR rete eer ca cca ee | a\nBREE sem RES =] Apr ep from =] veces reanes Life\nVasdecones | 5, Srversove eseverto)[_DonJa] Reem [fuego festa\npif [Boe | cone e…"
+  - n: 2
+    id: "facturacion.registrar-anticipo-a-proveedor#2"
+    accion: "Seleccione la orden de compra (OC) del anticipo."
+    resultado: "Al relacionarlo directamente desde la OC, el sistema lo considera como adelanto."
+    fuente: [web-https-documentacion-s10peru-com-caso-ant-s000, img-9387fb78dcc8-0000]
+    pagina: null
+    fotos:
+      - id: "4f1b70befc9a"
+        ruta_o_url: "imagenes/caso-anticipo/9387fb78dcc8.png"
+        pagina: null
+        ocr: "& Catalogo de Ordenes de Compra y Servicio [=|]\nOpciones 2\nDae XESS MY om / 817) ey i\na” CE\n|_| [wo.cuos. Tipo Orden Centro de Compra _|Proyecto\n179 ‘Orden de Compra 13/10/2016 _DIMERC PERU £ CC CONSTRUCTORAP ADM-008-POS-2016 - ADMINISTRA\n0406 Orden de Compra 24/01/2017 DIMERC PERU ¢ CC CONSTRUCTORAP ADM-008-POS-2016 - ADMINISTRA\n0458 Orden de Compra 10/02/2017 DIMERC PERU ¢ CC CONSTRUCTORAP ADM-0…"
+  - n: 3
+    id: "facturacion.registrar-anticipo-a-proveedor#3"
+    accion: "En el recurso ANTICIPO que el sistema asigna a la factura, ponga cantidad 1 y en el P.U sin IGV el monto que factura el proveedor."
+    fuente: [web-https-documentacion-s10peru-com-caso-ant-s000]
+    pagina: null
+    fotos:
+      - id: "d5f760366a1f"
+        ruta_o_url: "imagenes/caso-anticipo/e443d31028bf.png"
+        pagina: null
+        caption: "*Por defecto de acuerdo a una previa configuración el sistema le asigna a la factura el recurso “ANTICIPO” el cual es reasignable (para fines de la moneda y la contabilidad deseada), en cantidad ponemos (1) y en el P.U sin IGV colocamos el monto que nos factura el proveedor."
+        ocr: "a\n\nrca foot? eevee [OUT =] era rece OOH =]\n\n= ——_w\n\nCeca [S004G017 BOTOX Jour 2017 Teo canto no ete [2]\n\nwien [FES ___=] rom on fo Faves =\n\n© Sastre @ Pope IO — RON GIEFOSATE:AENMTSTRATIC= | [ Resedo [Ste Emin crc See\n\nConcepto u Observacion | |\n\n—toszeeens tae scaneto [__Caoreaciane sviiocomaie Pewee Gonereps Yfeoe Yims\n\nSYOR83 vO ade\n\nWh cooolcige =] roar poets =a Ace |\n\n2 pr 7 eT cress pu.snocn…"
+  - n: 4
+    id: "facturacion.registrar-anticipo-a-proveedor#4"
+    accion: "Cuando el proveedor envíe la mercadería con la segunda factura, realice el ingreso al almacén de la mercadería."
+    donde: "S10 Almacenes"
+    fuente: [web-https-documentacion-s10peru-com-caso-ant-s000]
+    pagina: null
+    fotos:
+      - id: "59734e4c9067"
+        ruta_o_url: "imagenes/caso-anticipo/a0522e32418d.png"
+        pagina: null
+        caption: "2.- El proveedor envía la mercadería y segunda factura donde nos indica que nos envía toda la mercadería y la amortización del anticipo del 30%, por lo tanto hay que realizar el ingreso al almacén y el registro de la factura. Ingreso al almacén de mercadería:"
+        ocr: "> ‘S10 Almacenes » (01043 - ADM-008-POS-2016 - ADMINISTRATIVOS - CONSTRUCTORA POSEIDON 001 - De Materiales ) (> |9 Tee\nrchio Yerstiogor Hemainty 2\nSQ 08800\n<a rapa eRe\n: ee :\nPG consonon saeneouvan\nS| Geascrcon stevens Teoma [pepe renee Conme 1008) |v] M tom Ow faosaot =] afar IFT\nBae] © Geensmcrorsnstamoo lee _—_——————_\nGi] © Secnstocteranua GOMER RS + BE ada\n© Qeoneructonaposeoon\nS'S someavescxa…"
+      - id: "a417404fc115"
+        ruta_o_url: "imagenes/caso-anticipo/199f5c87d0de.png"
+        pagina: null
+        caption: "2.- El proveedor envía la mercadería y segunda factura donde nos indica que nos envía toda la mercadería y la amortización del anticipo del 30%, por lo tanto hay que realizar el ingreso al almacén y el registro de la factura. Ingreso al almacén de mercadería:"
+        ocr: "CT CO I SS SP ONTOS CONS TRUSTS\nESS 0 acu\nSe ae ES a\nfc [psosaoi7 =] tet. Gua de Remisin-oco,[ +. Feenaotolasazani7 =]\nernde [48 ron cantio [FJ water\nfl JT TT)\n2 | F mpanscin\noae| an ect Oocuera Pas [7]\nrrr aaa EEE\nOPH ARS vA waa\noe canpsfeure —— ——] rewtearpmn 3] I) ewe\naie Fe leer lteter Lees flere rl\n=!\n| er ‘Caleutado\nUcacén pwc\na\n7\n= & | € Seon 5/2 EI ye"
+      - id: "451696c4a71e"
+        ruta_o_url: "imagenes/caso-anticipo/ebc8b34aecdb.png"
+        pagina: null
+        caption: "2.- El proveedor envía la mercadería y segunda factura donde nos indica que nos envía toda la mercadería y la amortización del anticipo del 30%, por lo tanto hay que realizar el ingreso al almacén y el registro de la factura. Ingreso al almacén de mercadería:"
+        ocr: "> Ingreso por Orden de Compra [1 OC/S] _01043-ADM-008-POS-2016 - ADMINISTRATIVOS - CONSTRUCTORA POSEIDON: -io| x\nPenis Hoes TOMES CNBOUS LS ALAND Techs ‘oj mone\nfw bt etree Prepon\na: — _]\nTeche [oxosaor7 =] eto, cela de Remi ode, [ _1.[ 5 Feemocofosanani7 =]\nverote [—[ a oseno [ FJ reatare\nroves | —\n(ter) i\nForma ooPon [| a\nhacia GYPOes var waa\n[romeo]\nSPARS VEE SAY cooprosecase —=llinamvmronn sis…"
+      - id: "18837d9b4e2c"
+        ruta_o_url: "imagenes/caso-anticipo/52a9fbcea2ec.png"
+        pagina: null
+        caption: "2.- El proveedor envía la mercadería y segunda factura donde nos indica que nos envía toda la mercadería y la amortización del anticipo del 30%, por lo tanto hay que realizar el ingreso al almacén y el registro de la factura. Ingreso al almacén de mercadería:"
+        ocr: "rr mee aan Ga Compr 1 OC] O1043-ADM-008-FOS-2016 - ADMINESTRATIVOS - CONSTRUCTORA POSEIDON\nfess Norse CDSG IS ARNO Tmconin tae ito yf Goa\nee cota Se Seen TT\nT5207 =] ‘to Glad Remini oco,[ 1. Fehon? =]\nMeonda [oT BOCES AA Twocentio [3288 | WAtero\nPee apg PMERCERTEAG eM] Pete) He\nFama pao fis fate SSS PF mpanscin\nmoc.aterm [058 roc] __werrraon.comean__| Feta Ouro Poon [7]\n[ee pec\nOMPORS vEP aa\nojo _…"
+      - id: "459dcc494a32"
+        ruta_o_url: "imagenes/caso-anticipo/5ad01b234178.png"
+        pagina: null
+        caption: "2.- El proveedor envía la mercadería y segunda factura donde nos indica que nos envía toda la mercadería y la amortización del anticipo del 30%, por lo tanto hay que realizar el ingreso al almacén y el registro de la factura. Ingreso al almacén de mercadería:"
+        ocr: "ee 9 970, FOF CTR DOCT IO TONS ADM S000, FOS: 2016 = ADMINIS TRATIVOS =, CONSTRUCTORS EOSE i a |\nRega Norres- TORRES CARDOUAS, LS ALIANIRO Toman tae ito Wa Goa\nAvni 04D Maeries snows teree\na vate Sta Bnanen OT)\n1 eu 50507 =] Ct, Glade Remini oo,[ 1. 5 Fehaotlosasanr7 =]\nvecwse [FES =] | rence [TSF Jr ate\nTere asa PMERCFISAC ——aMY Pte) tte\nForma ePoge fis fmtam SSS 1 morc\nwwoc.amero[ T° vwroe | __v…"
+  - n: 5
+    id: "facturacion.registrar-anticipo-a-proveedor#5"
+    accion: "Como el sistema enlaza por defecto el ingreso con la primera factura, desvincúlelo: haga clic derecho y elija **quitar regularización**."
+    fuente: [web-https-documentacion-s10peru-com-caso-ant-s001]
+    pagina: null
+    fotos:
+      - id: "4f07f9860425"
+        ruta_o_url: "imagenes/caso-anticipo/91c6961351b7.png"
+        pagina: null
+        caption: "Por defecto el sistema enlaza el ingreso con el registro de la primera factura por lo tanto hay que desvincular con click derecho quitar regularización, por la sencilla razón de que este ingreso debe estar relacionado con la segunda factura."
+        ocr: "» ‘S10 Almacenes » ( 01043 - ADM-008-POS-2016 - ADMINISTRATIVOS - CONSTRUCTORA POSEIDON 001 - De Materiales ) |\n‘echivo Yer Ctlages Heras. 2\nsansae0\n:. Be za] | ngresos\nPG consonon saeecuvan\n4 ee ee\nBEEN] © Sconstocreracstnoo ————————————— EEE\nGi] * Seenctocreranua DMM ARS v GF & dw\n© Qensructonaposenot\nSSettonrene-somesves-cxer | |e a\nCoe — 18) | 2570 congo oven [tn cilatr postin =I ~ Pla!) pe:\ne…"
+  - n: 6
+    id: "facturacion.registrar-anticipo-a-proveedor#6"
+    accion: "Registre la segunda factura, esta vez relacionada con el ingreso de almacén."
+    fuente: [web-https-documentacion-s10peru-com-caso-ant-s001]
+    pagina: null
+    fotos:
+      - id: "631a5752502c"
+        ruta_o_url: "imagenes/caso-anticipo/616ad2378877.png"
+        pagina: null
+        caption: "Ahora registraremos la segunda factura esta vez relacionada con el ingreso de almacén:"
+        ocr: "a (001 FACTURAS TERCEROS |e] x\noma\nena» [ia FOSTRRTRARSEDNSRE al wl]\nsien [DRaRE RTRETOUREENERE dn RUC 70597301190\nmoves [OTH PRRCPERTSRE ttt ig\nverain fi]\nxf] ciones 2\na eX GUO MY OO E ® fic)\ncecetovll| Soren as —\nMoreno |] rode] “Feet asticconorgqune deseainez ison! Troyes [aracan [ipo sorggero [restart Jo\nTamme 07 2D19 NERC ERISA AE 7O Ge anne ge pr COROT can\nEa womens 01047 1182 MARC ERISA‘ AD…"
+      - id: "a2b44be2d109"
+        ruta_o_url: "imagenes/caso-anticipo/01c774ba3f02.png"
+        pagina: null
+        caption: "Ahora tenemos la 2da factura registrada pero falta amortizar el 30% anticipo"
+        ocr: "Se aaa SS ee _\n\nae | ae 1A nee\n\nee eee a4\n\na a re ==\n\nPero\n\n(pocin [21050017 _» [SOI7OS way 2017 ‘tea cantina oti [325]\n\nMoneta fot UES ==] roma pono fo arson =] 4]\n\nower HBT) sn [rp a or etn\n\nPe ee\n\ncrema RTT OTR\n\n[tox geass Ben tomnono bao gato Avoroconan —Y——pemane Gon erage YBa Ya\n\nSY OR88 vB ga\n\nit cameleeae rawness =] a expe\n\n[tec ln | crit | Pentue sniov | Wiosnio | wavcmniov. | puceniow |…"
+  - n: 7
+    id: "facturacion.registrar-anticipo-a-proveedor#7"
+    accion: "Amortice el anticipo: ubíquese sobre el recurso, haga clic derecho, elija **adicionar correctivo** y elija el recurso ANTICIPO con el monto en negativo por el valor del anticipo."
+    fuente: [web-https-documentacion-s10peru-com-caso-ant-s001]
+    pagina: null
+    fotos:
+      - id: "028843f7ce8d"
+        ruta_o_url: "imagenes/caso-anticipo/bceaabf90404.png"
+        pagina: null
+        caption: "La amortización se realiza ubicándonos sobre el recurso con click derecho adicionar correctivo y elegimos el recurso ANTICIPO pero esta vez con el monto en negativo por el valor del 30% de la OC"
+        ocr: "A eifacurastencenos\n\nenasoe FORDE PRSTRDTOURIGEDNSAE dg __ NP [rrr\n\n=e a4\n\nAe emer ==—=s\n\n(pcocin [21050017 _» [SOI7OS way 2017 ‘tea cantina otc [325]\n\nonein for UES ==] rome pono fo arson =] 4]\n\nower TE) smn [ri Pen\n\nee ee\n\na a\n\na a a a a a\n\nSY OR88 vBF waa\n\n22 eansliae =] rautae oman =]. Bi) een:\n\n[cay re List| cated PUsnodnoniov_ | tosniov. | wiocmioy. | puctuniov | ri0v._| pec en0¥ | peo\n\ncr C…"
+  - n: 8
+    id: "facturacion.registrar-anticipo-a-proveedor#8"
+    accion: "Para que todo esté enlazado, realice una **regularización compuesta** del ingreso."
+    fuente: [web-https-documentacion-s10peru-com-caso-ant-s001]
+    pagina: null
+    fotos:
+      - id: "f97d6e22d72c"
+        ruta_o_url: "imagenes/caso-anticipo/e7ca0cbc85c7.png"
+        pagina: null
+        caption: "Ahora para culminar y si deseamos que todo este enlazado debemos realizar una regularización compuesta, con la finalidad de que todo guarde relación."
+        ocr: "b=) ‘S10 Almacenes » ( 01043 - ADM-008-POS-2016 - ADMINISTRATIVOS - CONSTRUCTORA POSEIDON 001 - De Materiales ) -|o\n‘rchivo Yer Caiogos. Hermits 2\n6088a9\n— Sop see\nAll Pe a [Ingresos\nSP censoncn MEN BOLVAR\nS| Gexscrcon sirens Twonowmerts [pesoprOnende compre OCG] __v| Yor Oot rsnscair =] A [sosnorr =F\nBEE] ® Secnsmetorsrarmeo ee eS SE TOO\n—_ | GeonstmucroRANUKA DO PRBS v GF wid\n5 Secnstuctonarosco…"
+  - n: 9
+    id: "facturacion.registrar-anticipo-a-proveedor#9"
+    accion: "Ubíquese en la pestaña **documentos** y agregue la primera factura creada, seleccionándola con doble clic."
+    fuente: [web-https-documentacion-s10peru-com-caso-ant-s001]
+    pagina: null
+    fotos:
+      - id: "bde23427ed68"
+        ruta_o_url: "imagenes/caso-anticipo/fcb7ca8e229f.png"
+        pagina: null
+        caption: "Nos ubicamos en la pestaña documentos y agregamos la primera factura creada"
+        ocr: "> ‘$10 Almacenes » (01043 - ADM-008-POS-2016 - ADMINISTRATIVOS - CONSTRUCTORA POSEIDON 001 - De Materiales ) =18) =\nrs er ges Herons 2\naeVoleye ee\n[ro crass de ropes\na face |\ncote IM Seecbebetoing peers\narate\n5 Segermeerne\n1 SGAOMOS206- mevndaer) ODMERC PERUSAC.\nbe Metis 1 fScLes mt isin [Regetrador [MOD |OrigenDestro [Obst ~\nRinses FRR =) sorger\nEgoros (9) SR AOM.010-P0S-2016 - Forma de sorted =]…"
+      - id: "2b7c30be6aaf"
+        ruta_o_url: "imagenes/caso-anticipo/ed0b9492f149.png"
+        pagina: null
+        caption: "Nos ubicamos en la pestaña documentos y agregamos la primera factura creada"
+        ocr: "false\npo Decumento [oot FACTURAS TERCEROS | |S @\nBEMAR RS vB eae\nSense Newer\n13/13 Campo|Socio de Negocio ©] [En cualquier posicién _~| Grupo:\nN* Correlativo: Proyecto | Grupo de Proyecto |Relacionado con [LiquidaciénReembolso_|N* Liquidacién/Reembols|Estado Liquic| Fecha Yencin ~\n201610 - Octubre 20°\n(201611 - Noviembre =\n(# 201702 - Febrero 201\n(5 201706 - Abri 2017\n000000007801 ADW-008-PC [EONS…"
+  - n: 10
+    id: "facturacion.registrar-anticipo-a-proveedor#10"
+    accion: "En la ventana que aparece, ubíquese en la pestaña **asignación de precio** y dele **aceptar**."
+    fuente: [web-https-documentacion-s10peru-com-caso-ant-s001]
+    pagina: null
+    fotos:
+      - id: "f6d4ce643512"
+        ruta_o_url: "imagenes/caso-anticipo/baf4d1c01356.png"
+        pagina: null
+        caption: "Luego de seleccionar con doble click nos figura la siguiente ventana donde nos ubicaremos luego en la pestaña asignación de precio y le damos aceptar y habremos culminado este caso."
+        ocr: "Proveedor(es)  DIMERC PERU S.A.C. - DIMERC PERU S.A.C.\nae\nNoneda fr oes a\nFema depo Raum a] A) enarzatn conpusstans [\nBY R88 Bh ada\n| ewe _| | een _| a"
+verificacion: []
+errores_frecuentes:
+  - sintoma: "El ingreso al almacén quedó enlazado con la factura del anticipo."
+    solucion: "Por defecto el sistema enlaza el ingreso con el registro de la primera factura: desvincúlelo con clic derecho, quitar regularización, porque el ingreso debe estar relacionado con la segunda factura."
+    fuente: [web-https-documentacion-s10peru-com-caso-ant-s001]
+relacionados: []
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-caso-ant-s000, manual: "Manual de factura de anticipos de Almacén con compuesta", seccion: "Caso Anticipo (1)", pagina: null}
+  - {id: img-9387fb78dcc8-0000, manual: "Manual de factura de anticipos de Almacén con compuesta", seccion: "9387fb78dcc8.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-caso-ant-s001, manual: "Manual de factura de anticipos de Almacén con compuesta", seccion: "Caso Anticipo (2)", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

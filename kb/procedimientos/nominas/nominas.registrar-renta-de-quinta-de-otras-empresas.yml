@@ -1,0 +1,80 @@
+id: nominas.registrar-renta-de-quinta-de-otras-empresas
+version: 1
+modulo: nominas
+titulo: "Registrar las ganancias y retenciones de renta de 5ta de otras empresas"
+objetivo: "Registrar manualmente en la pestaña Haberes de la ficha el monto percibido y el impuesto a la 5ta categoría retenido en otras empresas, acumulados hasta la fecha de registro, para el cálculo de la renta de quinta."
+nivel: intermedio
+preguntas:
+  - "donde registro lo que gano el trabajador en su anterior empresa para la quinta"
+  - "como ingreso las retenciones de 5ta de otro empleador"
+  - "el trabajador viene de otra empresa con retenciones de quinta, donde lo pongo"
+  - "como actualizo la renta de quinta de otros proyectos"
+  - "donde se ven las ganancias acumuladas del trabajador en los proyectos"
+  - "como hago para que no le descuente renta de quinta a un trabajador"
+  - "como registro ingresos de otras empresas en la ficha del trbajador"
+  - "retenciones de 5ta categoria de otras empresas en nominas"
+aliases:
+  - "renta de 5ta de otras empresas"
+  - "retenciones de quinta"
+  - "ganancias de otras empresas"
+  - "haberes del trabajador"
+entidades:
+  modulo: "Nóminas"
+  pantallas: ["Personal Disponible", "Ficha personal", "Haberes"]
+  objetos: ["trabajador", "impuesto a la 5ta categoría", "monto percibido", "monto retenido"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "nominas.registrar-renta-de-quinta-de-otras-empresas#1"
+    accion: "En el escenario **Personal Disponible**, haga clic derecho sobre el nombre del trabajador para acceder a su **Ficha personal**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047, img-d4e1ce779ad8-0000, img-541a9ffd89ca-0000]
+    pagina: null
+    fotos:
+      - id: "60b80a0e8fdf"
+        ruta_o_url: "imagenes/manual-de-nominas/d4e1ce779ad8.png"
+        pagina: null
+        ocr: "Proyecto 02001004 MULTIPROYECTO\n\nTipo de Némina [002 Régimen C.C. con BB.SS. - Obreros\n\na] Xy G| Clic derecho sobre el nombre del trabajador\n\nCédigo Nombre: Categoria Recurso equivalente\n22000033 £() Adicionar tl"
+  - n: 2
+    id: "nominas.registrar-renta-de-quinta-de-otras-empresas#2"
+    accion: "Elija la pestaña **Haberes** para registrar manualmente los montos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050]
+    pagina: null
+    fotos:
+      - id: "2d899958949b"
+        ruta_o_url: "imagenes/manual-de-nominas/541a9ffd89ca.png"
+        pagina: null
+        caption: "Llamada f: Haberes, adicione manualmente"
+        ocr: "—— Fox\n(§ Ficha personal eae ==—)\nCédigo 22000032 TO\n\" oon one on © © @ ®\nGeneral | Costos | Prodesos | Inglesos | sees Pate] Tareo elitomético | Constantes |\nRenta Sta, Cat: De otras empresas\nGanancies 9.0000 Retenciones Sta 0.0000\nObservaciones OO\nRenta Sta, Cat: De otros proyectos ———__________ [#5]\nGanancias 0.0000 Retenciones Sta 0.0000 Actualizar valores\nAveals ae\nEmpresa Genancias otras emp…"
+  - n: 3
+    id: "nominas.registrar-renta-de-quinta-de-otras-empresas#3"
+    accion: "En **Ganancias**, registre manualmente el monto percibido en otras empresas acumulado hasta la fecha de registro."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050, img-541a9ffd89ca-0000]
+    pagina: null
+  - n: 4
+    id: "nominas.registrar-renta-de-quinta-de-otras-empresas#4"
+    accion: "Registre manualmente el monto retenido en otras empresas acumulado por concepto del impuesto a la 5ta categoría."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050]
+    pagina: null
+  - n: 5
+    id: "nominas.registrar-renta-de-quinta-de-otras-empresas#5"
+    accion: "Revise el monto percibido en los proyectos y el monto retenido en otros proyectos por el impuesto a la 5ta categoría, acumulados hasta la fecha de consulta."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050]
+    pagina: null
+  - n: 6
+    id: "nominas.registrar-renta-de-quinta-de-otras-empresas#6"
+    accion: "Haga clic en **Actualizar valores** para actualizar los datos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050, img-541a9ffd89ca-0000]
+    pagina: null
+verificacion: []
+errores_frecuentes:
+  - sintoma: "A un trabajador no se le debe descontar el impuesto a la 5ta."
+    solucion: "En la pestaña Relación Laboral de la ficha RR.HH., ponga una selección para que no se le descuente el impuesto a la 5ta."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s049]
+relacionados: [nominas.registrar-ficha-del-trabajador, nominas.calcular-la-nomina]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s047, manual: "Manual de Nóminas", seccion: "5.2.3 Registro de información en la ficha del trabajador (1)", pagina: null}
+  - {id: img-d4e1ce779ad8-0000, manual: "Manual de Nóminas", seccion: "d4e1ce779ad8.png", pagina: null}
+  - {id: img-541a9ffd89ca-0000, manual: "Manual de Nóminas", seccion: "541a9ffd89ca.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s050, manual: "Manual de Nóminas", seccion: "5.2.3 Registro de información en la ficha del trabajador (4)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s049, manual: "Manual de Nóminas", seccion: "5.2.3 Registro de información en la ficha del trabajador (3)", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

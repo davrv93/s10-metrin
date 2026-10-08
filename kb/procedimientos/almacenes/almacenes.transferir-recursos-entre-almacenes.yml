@@ -1,0 +1,120 @@
+id: almacenes.transferir-recursos-entre-almacenes
+version: 1
+modulo: almacenes
+titulo: "Transferir recursos entre almacenes del mismo proyecto"
+objetivo: "Trasladar recursos de un almacén a otro del mismo proyecto: se pide con un pedido A Almacén, el almacén origen genera un Egreso por Transferencia Interna y el almacén destino un Ingreso por Transferencia Interna. La transferencia es permanente, no contempla devolución."
+nivel: intermedio
+preguntas:
+  - "cómo paso materiales de un almacén a otro de la misma obra"
+  - "como hago una transferencia interna entre almacenes"
+  - "tengo dos almacenes en el proyecto, como muevo cemento del uno al otro"
+  - "cómo ingreso en el almacén destino lo que me mandó el otro almacén"
+  - "no me sale la guia de egreso para hacer el ingreso por transferencia interna"
+  - "transferencia entre almacenes s10 pasos"
+  - "como registro el traslado de recursos entre almacenes del mismo proyecto"
+  - "transferencia interna con pedido como se hace"
+aliases:
+  - "transferencia interna"
+  - "transferir entre almacenes"
+  - "ingreso por transferencia interna"
+  - "egreso por transferencia interna"
+  - "traslado entre almacenes"
+entidades:
+  modulo: "Almacenes"
+  pantallas: ["Ingresos"]
+  objetos: ["pedido", "almacén destino", "egreso por transferencia interna", "ingreso por transferencia interna", "stock"]
+prerrequisitos:
+  - texto: "Es requisito tener en stock la cantidad necesaria del recurso a transferir."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s067]
+pasos:
+  - n: 1
+    id: "almacenes.transferir-recursos-entre-almacenes#1"
+    accion: "Desde el módulo de Almacenes, Compras o Gerencia de proyectos, efectúe un pedido **A Almacén**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s071]
+    pagina: null
+    fotos:
+      - id: "b9dbffa6e592"
+        ruta_o_url: "imagenes/manual-de-almacenes/d80eaea1ebca.png"
+        pagina: null
+        caption: "1.- Desde el módulo de Almacenes, Compras o Gerencia de proyectos, efectúe un pedido “A Almacén”."
+        ocr: "G (re) C= fs\nUsuario Andres - Andrade Andrade, Andres N° de Pedido -\nssesiecoandne  SOHBERRECE Hate, esd ~ | | |\nv.O.\nAlmacén 001 - De Materiales - Tipo 01-OBRA N° Altern NOP\n@ AAlmacén © ACompras\n@) Ov Para otro aimacen: en\n[c-TkC Venta ‘* Transferencia © Externa © Interna\nProyecto |ogo06 —_—[Edificaciones c5 44) 001 De Materiales {c-6"
+  - n: 2
+    id: "almacenes.transferir-recursos-entre-almacenes#2"
+    accion: "Registre el nombre del solicitante."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s071]
+    pagina: null
+  - n: 3
+    id: "almacenes.transferir-recursos-entre-almacenes#3"
+    accion: "Seleccione **A Almacén**, para que los recursos a pedir sean del stock."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s071]
+    pagina: null
+  - n: 4
+    id: "almacenes.transferir-recursos-entre-almacenes#4"
+    accion: "Seleccione **Para otro almacén**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s071]
+    pagina: null
+  - n: 5
+    id: "almacenes.transferir-recursos-entre-almacenes#5"
+    accion: "Seleccione **Transferencia** y luego **Interna**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s071]
+    pagina: null
+  - n: 6
+    id: "almacenes.transferir-recursos-entre-almacenes#6"
+    accion: "Deje el proyecto que el sistema muestra por defecto (el mismo proyecto) y seleccione el almacén destino."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s071]
+    pagina: null
+  - n: 7
+    id: "almacenes.transferir-recursos-entre-almacenes#7"
+    accion: "En el almacén que envía, genere el **Egreso por Transferencia Interna**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s067, web-https-documentacion-s10peru-com-manual-d-s055]
+    pagina: null
+  - n: 8
+    id: "almacenes.transferir-recursos-entre-almacenes#8"
+    accion: "En el almacén destino, en la barra de vistas, elija el acceso al escenario de **Ingresos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s055, web-https-documentacion-s10peru-com-manual-d-s071]
+    pagina: null
+  - n: 9
+    id: "almacenes.transferir-recursos-entre-almacenes#9"
+    accion: "En el árbol, elija el proyecto y el almacén."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s055]
+    pagina: null
+  - n: 10
+    id: "almacenes.transferir-recursos-entre-almacenes#10"
+    accion: "Elija el tipo de ingreso **Ingreso por Transferencia Interna**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s055]
+    pagina: null
+  - n: 11
+    id: "almacenes.transferir-recursos-entre-almacenes#11"
+    accion: "Efectúe un nuevo ingreso y registre el tipo de cambio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s055]
+    pagina: null
+  - n: 12
+    id: "almacenes.transferir-recursos-entre-almacenes#12"
+    accion: "Haga clic derecho y elija **Adicionar desde Guías de Egresos**: el almacén que recibe visualiza la guía del egreso por transferencia interna para realizar el ingreso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s055, img-c0b4913017ea-0000]
+    pagina: null
+    fotos:
+      - id: "e404f9584da5"
+        ruta_o_url: "imagenes/manual-de-almacenes/c0b4913017ea.png"
+        pagina: null
+        ocr: "Ingresos\npes imientor LngreSO por Transferencia interna [Tl] [=\nBy A\nD Adicionar a) Parcial\nClic derecho B Adicionar desde Guia de Egresos 7h"
+  - n: 13
+    id: "almacenes.transferir-recursos-entre-almacenes#13"
+    accion: "Si no usa la guía de egresos, elija **Adicionar** (ingreso manual): elija los recursos del catálogo y registre la cantidad y el precio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s055]
+    pagina: null
+verificacion: []
+errores_frecuentes:
+  - sintoma: "En el almacén destino no aparece la guía para hacer el ingreso."
+    solucion: "**Adicionar desde Guías de Egresos** se usa cuando los almacenes que envía y recibe están conectados: el almacén que envía debe generar previamente un egreso por transferencia interna."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s055]
+  - sintoma: "Los recursos transferidos deben volver al almacén que envía."
+    solucion: "La transferencia es permanente, no contempla devolución: la cantidad y el costo se descargan del almacén que envía y se cargan al almacén que recibe."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s055]
+relacionados: [almacenes.transferir-recursos-a-otro-proyecto]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s067, manual: "Manual de Almacenes", seccion: "2.2.2.4 Egreso por Transferencia Interna [ETI]", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s071, manual: "Manual de Almacenes", seccion: "2.2.4.3 Egreso por Transferencia Interna con Pedido [ETEP]", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s055, manual: "Manual de Almacenes", seccion: "2.1.3.7 Ingreso por Transferencia Interna [ITI]", pagina: null}
+  - {id: img-c0b4913017ea-0000, manual: "Manual de Almacenes", seccion: "c0b4913017ea.png", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

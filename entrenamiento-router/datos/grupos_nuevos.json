@@ -1,0 +1,81 @@
+{
+ "g1": [
+  "portal-proveedor.cargar-logo-de-la-empresa",
+  "portal-proveedor.consultar-documentos-pendientes-de-pago",
+  "portal-proveedor.enviar-documentos-de-ingreso-al-proveedor",
+  "portal-proveedor.notificar-pagos-en-el-portal",
+  "facturacion-electronica.buscar-documentos-en-el-portal",
+  "facturacion-electronica.consultar-comprobante-con-acceso-anonimo",
+  "facturacion-electronica.consultar-guia-de-remision",
+  "facturacion-electronica.dar-de-baja-guia-de-remision",
+  "tareo-movil.publicar-parte-de-tareo",
+  "tareo-movil.sincronizar-y-cerrar-el-tareo"
+ ],
+ "g2": [
+  "administrativo.aplicar-nota-de-credito-en-orden-de-pago",
+  "administrativo.aprobar-solicitudes-en-app-aprobaciones",
+  "administrativo.pagar-detracciones-y-subir-constancias",
+  "administrativo.transferir-caja-a-cuenta-bancaria",
+  "compras.ajustar-orden-de-compra-parcialmente-atendida",
+  "compras.clasificar-materiales-abc",
+  "compras.elaborar-cuadro-comparativo",
+  "compras.flujo-para-generar-orden-de-compra-o-servicio",
+  "compras.generar-orden-de-servicio",
+  "compras.registrar-cotizacion",
+  "compras.registrar-pedido-para-orden-de-servicio",
+  "compras.registrar-recepcion-de-cotizaciones"
+ ],
+ "g3": [
+  "facturacion.anular-venta-sperant",
+  "facturacion.boletear-abonos-sperant",
+  "facturacion.importar-saldos-por-cobrar",
+  "facturacion.liquidar-entrega-a-rendir",
+  "facturacion.registrar-anticipo-a-proveedor",
+  "facturacion.registrar-fondo-rotatorio",
+  "facturacion.registrar-reembolso"
+ ],
+ "g4": [
+  "gerencia-proyectos.aprobar-valorizacion-del-subcontrato",
+  "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato",
+  "gerencia-proyectos.egresar-a-partida-de-control-con-pedido",
+  "gerencia-proyectos.generar-pedido-automatico",
+  "gerencia-proyectos.valorizar-el-contrato",
+  "presupuestos.exportar-presupuesto",
+  "presupuestos.reasignar-recurso",
+  "presupuestos.registrar-recurso-en-el-catalogo",
+  "presupuestos.usar-favoritos"
+ ],
+ "g5": [
+  "contabilidad.agregar-moneda",
+  "contabilidad.asignar-cuentas-a-categoria-de-recursos",
+  "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo",
+  "contabilidad.asignar-cuentas-genericas-por-moneda",
+  "contabilidad.importar-agentes-de-retencion",
+  "contabilidad.registrar-clientes",
+  "contabilidad.registrar-orden-de-venta-ipi",
+  "contabilidad.revisar-auditoria-de-registros-contables",
+  "instalacion.actualizar-base-de-datos",
+  "instalacion.actualizar-s10-con-revisiones",
+  "instalacion.instalar-sql-server"
+ ],
+ "g6": [
+  "nominas.actualizar-comisiones-spp",
+  "nominas.asignar-horario-a-los-trabajadores",
+  "nominas.calcular-reparto-de-utilidades",
+  "nominas.registrar-cese-del-trabajador",
+  "nominas.registrar-clasificacion-de-papeletas",
+  "nominas.registrar-ficha-del-trabajador",
+  "nominas.registrar-renta-de-quinta-de-otras-empresas",
+  "nominas.registrar-tipo-de-prestamo"
+ ],
+ "g7": [
+  "almacenes.asignar-usuarios-al-proyecto",
+  "almacenes.registrar-ingreso-por-ajuste-de-cantidad",
+  "almacenes.registrar-ingreso-por-prestamo",
+  "almacenes.registrar-ingreso-por-reingreso",
+  "almacenes.registrar-partidas-de-control-del-proyecto",
+  "almacenes.registrar-usuario-y-asignar-permisos",
+  "almacenes.transferir-recursos-a-otro-proyecto",
+  "almacenes.transferir-recursos-entre-almacenes"
+ ]
+}

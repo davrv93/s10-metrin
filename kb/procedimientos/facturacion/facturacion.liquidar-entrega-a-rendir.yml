@@ -1,0 +1,260 @@
+id: facturacion.liquidar-entrega-a-rendir
+version: 1
+modulo: facturacion
+titulo: "Liquidar una entrega a rendir desde Facturación"
+objetivo: "Abrir en el escenario Liquidaciones una liquidación para la persona que recibió el pago de la Entrega a Rendir, agregarle ese pago, registrar los documentos internos o SUNAT que sustentan la rendición y, si hay devolución, agregar el depósito desde el diario de caja hasta que la liquidación quede rendida y cerrada."
+nivel: avanzado
+preguntas:
+  - "cómo hago la liquidación de una entrega a rendir"
+  - "como liquido lo que rindio el trabajador"
+  - "ya pagué la entrega a rendir y ahora como registro los gastos que me sustentan"
+  - "donde registro la planilla de movilidad de la rendicion"
+  - "el trabajador devolvio el saldo que no gasto, como lo meto a la liquidacion"
+  - "como cierro una liquidacion de entrega a rendir"
+  - "liquidasion de entregas a rrendir en facturacion"
+  - "agregar documento desde el diario de caja a la liquidacion"
+  - "por qué mi liquidación sigue en estado registrado y no se cierra"
+aliases:
+  - "liquidar entrega a rendir"
+  - "liquidación de entrega a rendir"
+  - "rendición de gastos"
+  - "cerrar liquidación"
+  - "liquidaciones"
+entidades:
+  modulo: "Facturación"
+  pantallas: ["Liquidaciones", "Cronograma de Cobranzas", "Diario de Caja"]
+  objetos: ["liquidación", "entrega a rendir", "pago", "documento interno", "planilla de movilidad", "depósito"]
+prerrequisitos:
+  - texto: "El pago del documento Entrega a Rendir debe estar culminado: recién entonces se apertura la liquidación."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s049]
+pasos:
+  - n: 1
+    id: "facturacion.liquidar-entrega-a-rendir#1"
+    accion: "En el escenario **Liquidaciones**, haga clic derecho y elija **Adicionar** para iniciar la creación de la liquidación."
+    donde: "Módulo de Facturación, escenario Liquidaciones"
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s049]
+    pagina: null
+    fotos:
+      - id: "dc2f02020e36"
+        ruta_o_url: "imagenes/manual-de-facturacion/ac19a7143987.png"
+        pagina: null
+        caption: "Para Iniciar con la Creación de las LIQUIDACIONES, en el escenario Clic derecho Adicionar, y aparecerá una ventana para el registro de la información de la Información."
+        ocr: "‘Archivo Yer Catélogos Herramientas 2\nHef\ncate | |Liquidaciones\naS... brn poses = 18\n& |[sovesa -oeua\nPaget\na4 Canpolemtos SS encuer osacn = SSCS~*~*S~*«~Cd«C Ss\naco ened |Tee de Cantio| Total Pagos | Tetlapleedo | Poraploar | PorRenar [Teta Decunertoe|Recestor_[Observacknes estado [Thode Asrupamiento Nt de Fon\n[SUUANDRIACAVO, ORGEABOLFO Sr 1 00 200 600 M CASTS, RENDICON DE FON Ceredo\n{auidaciones…"
+  - n: 2
+    id: "facturacion.liquidar-entrega-a-rendir#2"
+    accion: "En la ventana de liquidaciones, registre el nombre de la persona a quien se le realizó el pago, que es la persona que realizará las rendiciones."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s049]
+    pagina: null
+    fotos:
+      - id: "28d22d9802e8"
+        ruta_o_url: "imagenes/manual-de-facturacion/652b85e1c336.png"
+        pagina: null
+        caption: "Al utilizar la opción de Adicionar aparecerá una ventana de Liquidaciones iniciaremos registrando el nombre de la persona a quien se le realizó el pago ya que es la persona que nos realizará las rendiciones."
+        ocr: "3 510 Facturacion: 00002490 - MI CASITA S.A. - Principal =|a| x\nArchivo Ver Catslogos Herramientas 2\nagea\nig Tem Liquidaciones a\nroe DINED PACASTAS\n= Empresa foongzasn MHCASTASA, i —______—\n& BETA PR vB) seurce - al Al crear la liquidacion se inicia|\noog2460 ‘on el registro del nombre a\nDecmertes por IND p rth =| [Erica peas [caronusacero,vesseua =f [quien se le realiz6 el pago.\n~\na Emilee Moneda…"
+  - n: 3
+    id: "facturacion.liquidar-entrega-a-rendir#3"
+    accion: "Use la opción **AGREGAR PAGO** para agregar el pago realizado a esa persona."
+    resultado: "Aparece una ventana solo con los documentos pagados de la persona a quien se le realiza la liquidación."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s049]
+    pagina: null
+    fotos:
+      - id: "e49a49f2632a"
+        ruta_o_url: "imagenes/manual-de-facturacion/3dbab86176dc.png"
+        pagina: null
+        caption: "Para el registro de una Liquidación se inicia con agregar el pago realizado a la persona que posteriormente al desembolso rendirá con documentos internos o SUNAT el total del importe total o parcial desembolsado."
+        ocr: "3 S10 Facturacion: 00002490 - MI CASITA S.A. - Principal S |e\n‘Archivo Yer Catilogos Herramientas 2\nBea\nCSUN || iquidaciones p=\nSe ee |\neB wen a Empresa foo0024o CASTIASA =1AA Ns de Liudacisn\noon ‘Sucursal [60002450 fMCASTTASA. =| 44) [omnes\nioc por POPUP) eevee pmoaas: frarcemsacere, sams =] |\nao Woneds [oT EVES SOUES JAA +. econo TERE esto abo stein [Thode ampere Ye oF\nAUUARORTCHVO, ORGEADOLF i…"
+      - id: "13f2878c6231"
+        ruta_o_url: "imagenes/manual-de-facturacion/a0b46d8243eb.png"
+        pagina: null
+        caption: "Al Utilizar la opción de AGREGAR PAGO aparecerá una ventana y aparecerán exclusivamente los documentos Pagados filtrando los documentos a quien se le está realizando la liquidación."
+        ocr: "a ‘S10 Facturacin: 00002490 - MI CASITA S.A. - Principal =|8) x\n| Archivo Ver Catélogos Herramientas 2\nERoa@ Utilizamos la parrilla para agregar]\n. is | documento a la Liquidacion.\niB te jamidacioi mi .\neG L iquidacios|\n[enoresa mom | af\nEmpresa\n4 ay Empresa [00002490 Jy CASITAS.A | #44] pocumento 039 ENTREGAS A REND -/B @\nHl\n- Hoyas va eda\nDocumentos por NEN\nPager 1 | Periodo apicaciin\n44 Campo\n&…"
+  - n: 4
+    id: "facturacion.liquidar-entrega-a-rendir#4"
+    accion: "Seleccione con doble clic el documento pagado para agregarlo a la liquidación."
+    resultado: "Se inicia una liquidación pendiente por rendir: la pestaña de Pagos indica el importe POR RENDIR."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s049]
+    pagina: null
+  - n: 5
+    id: "facturacion.liquidar-entrega-a-rendir#5"
+    accion: "Ubíquese en la pestaña de **Documentos**, donde se trabajan los documentos internos o SUNAT que la persona comience a rendir."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s049]
+    pagina: null
+    fotos:
+      - id: "9c0e92aec321"
+        ruta_o_url: "imagenes/manual-de-facturacion/21edc85c76de.png"
+        pagina: null
+        caption: "Para el control de los documentos Internos o SUNAT que en este caso CARDENAS ACERO, YESSENIA comience a rendir se trabarán en la pestaña de Documentos."
+        ocr: "3 $10 Facturaci6n: 00002490 - MI CASITA S.A. - Principal -|o8| x\nBRaa =\nEEE TACO || icquidacic| (agian css Kee CDE\nee er [oaaa Pacasmas ry —\n£ Endo.  fpng0asos [EARDENASACERO, VESSENA—SSOS~*~*~*~*S~S Yd\nBR SIRAR cece Granaers wo] Th A nieto | [aa\nDocumentos por ||P sioneca for PUEVOSSOCS =] BA] 1. de cantio[ 1000] estado Abierto\naoe\n44 Campo|en], 1% Abon® 1,000.00, I Revisado [a7m3003 >| IV Aplica…"
+  - n: 6
+    id: "facturacion.liquidar-entrega-a-rendir#6"
+    accion: "Use la opción **GENERAR DOCUMENTO** para crear el documento que se está rindiendo y elija su tipo de documento, por ejemplo **planilla de Movilidad**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s049, web-https-documentacion-s10peru-com-manual-d-s050]
+    pagina: null
+    fotos:
+      - id: "71b911de96f1"
+        ruta_o_url: "imagenes/manual-de-facturacion/b8d5b63a92c2.png"
+        pagina: null
+        caption: "Para este caso utilizaremos la opción de GENERAR DOCUMENTO crearemos un documento que este rindiendo."
+        ocr: "r $10 Facturacion: 00002490 - MI CASITA S.A, - Principal -|o| x\nArchivo Ver Catélogos Herramientas\nHRe@ a Liquidacion [=[a| = |\nEg) Tema Liquidacic = Proco2seo farcasma sca =]84| > go luge\nvewsel fooomeo fcasTASA,—SOSC~S~S 4\ni Emaio © foonasas [CARDENAS ACERO, YESSENA =] 4\nFB WATEZG seo Faraana =] eos | [4\nBecunertes por tae] Nonea ir [Ruevos sotes =] 88) 1.42 cambio[_ 1.000] estado Abierto\n? joar…"
+  - n: 7
+    id: "facturacion.liquidar-entrega-a-rendir#7"
+    accion: "Registre en el formulario la información del gasto que se sustenta (por ejemplo, un gasto por movilidad)."
+    resultado: "Se pueden registrar documentos internos o SUNAT e ir disminuyendo la rendición."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050]
+    pagina: null
+    fotos:
+      - id: "fc672eeee3fd"
+        ruta_o_url: "imagenes/manual-de-facturacion/87900cf77428.png"
+        pagina: null
+        caption: "Al seleccionar el tipo de documento planilla de Movilidad, aparecerá un formulario para el registro de la información que este sustentando. Para este ejemplo registraremos un gasto por movilidad Tipo de Documento – Planilla de Movilidad S/. 10.00"
+        ocr: "3 $10 Facturacion: 00002490 - MI CASITA S.A. - Principal -|o| x\nArchivo Ver Catélagos Herramientas 2\naRea@ =\n: a\nCel |Liguidaci\nL Aquidacion| .\nite Sucursal foo002490 [MI CASITAS.A. ~|¢4) ( ~*~‘\nMEd)\n= Beyae froveedor [00002525 [CARDENAS ACERO, YESSENA Bi\nDecaentos por TSI art} Festa [16722013] recnavencnirto [1822013 ~] echarecepin |19N272013. v\nPeriodo de ‘no2000005\n4}4 —Campo|Emiti.epticacién […"
+      - id: "1e4d8bf85578"
+        ruta_o_url: "imagenes/manual-de-facturacion/b670ebdff662.png"
+        pagina: null
+        caption: "Al culminar con el registro del documento interno en este caso por el concepto de Movilidad, asimismo se pueden realizar registros de documentos internos o SUNAT e ir disminuyendo la rendición."
+        ocr: "3 $10 Facturacion: 00002490 - MI CASITA S.A. - Principal =-|o| x\nArchivo Ver Catélogos Herramientas\nEe\nBRea®\nWen [Liquidacio smoresa — foo002490 fi CASAS A =] #4) > de Liquidacion\nSucursal ~\nfocus onstasA | =x\nEmpresa\nenikioe  etgaaaas CARDEWSveRRCVEESEWA\nFB [BESTE sem aaa] To0Aaeemeto | [ay\nDocumentos por |] 75) Moneda ‘fol NUEVOS SOLES: ==] 44) 1. de cambio Estado Abierto\npagar\nMERE) 190000 T Re…"
+  - n: 8
+    id: "facturacion.liquidar-entrega-a-rendir#8"
+    accion: "Grabe la liquidación. Como aún no está liquidada, para continuar con el registro use la opción **MODIFICAR** sobre ella."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050]
+    pagina: null
+    fotos:
+      - id: "b3e44526f087"
+        ruta_o_url: "imagenes/manual-de-facturacion/3b1749f261d1.png"
+        pagina: null
+        caption: "Luego de realizar el registro de este documento procederemos a grabar la liquidación, como aún no está liquidada para continuar con el registro de la información ingresaremos utilizaremos la opción de Modificar."
+        ocr: "3 $10 Facturacion: 00002490 - MI CASITA SA. - Principal Le[a| x |\nArchiva Ver Catélogos Herramientas\na\nERea\na ee RT SAL citi\nsuewsal [oon =\nEmpresa\n— Einido a foo02sos [CARDENASACERO, VESSEWA——=—SC~*~*~Sw dG\nHIER) ccna — Frgnaaora >] Too Aarupemiento =] 44)\nDocumentos por /INEEICEEEECE| Moneda [ot [NUEVOS SOLES <=] #4 tc cantio[_1-000]f) estado Abierto\npager\nTalal Azone 190000 T Revisedo [zzinaroo…"
+      - id: "cd0fb9773d2a"
+        ruta_o_url: "imagenes/manual-de-facturacion/f58832ff4e1b.png"
+        pagina: null
+        caption: "Para continuar con la Liquidación aún no liquidada utilizaremos la opción de MODIFICAR para continuar."
+        ocr: "Archivo Ver Catilogos Heramientas 2\nRe\not ae\n2a | iquidaciones\nPorvoo | Empresa [20002490 fMICASTTAS.A, | #4\n& [savage vacua\nDocumentos por ‘Arrastre hacia aqui el encabezado de la columna que desea agrupar.\npagar\n95 cngoeneiea—~SCS*Cwi dr ooan =YSSSCS*~*~*C dct\na sm wise owcmn| tgs | tocen | unger | ont [steaming [dermis lino meippnice leita\n(QUNDRIACAYO,JORGEADOLFO SI 1 60000 e000 600.00 MI CASI…"
+  - n: 9
+    id: "facturacion.liquidar-entrega-a-rendir#9"
+    accion: "Continúe registrando los documentos que sustentan la rendición: haga doble clic en el tipo documento (por ejemplo, **DECLARACIONES SUNAT**) e indique el concepto y el monto."
+    resultado: "La liquidación muestra el control de saldos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050]
+    pagina: null
+    fotos:
+      - id: "10d246ef7708"
+        ruta_o_url: "imagenes/manual-de-facturacion/c6a4a7f30c33.png"
+        pagina: null
+        caption: "Para continuar con el registro de la información Crearemos un tipo documento llamado DECLARACIONES SUNAT, doble clic para su creación."
+        ocr: "i) Liquidacion -|a/ x\nEmpresa MI CASITAS. 5 <\nSucursal 7 SAS. =\nfoooo24s0 farcasmas.A Ey [anne\nEmtido a [o0002525 [CARDENAS ACERO, YESSENIA 5 64)\nFecha Man2n013 +] To Agrupamiento | 4\nMoneda for NUEVOS SOLES =] 44) 1.de cambio[ 1]I) ested [abieto >\nTaal Abone [poo T Revisado  Aplcar en Gestién\nConcerta u [ENTREGAS A RENOR - YESSENIA CAROfagg\nObservacion TRAMITES SUNAT ca\nOpciones 2\n[Peace (Asierio…"
+      - id: "fe421e368778"
+        ruta_o_url: "imagenes/manual-de-facturacion/1ee34661ce2d.png"
+        pagina: null
+        caption: "En el tipo documento Declaración SUNAT indicaremos que son intereses por Infracción Tributaria por el monto de S/. 900.00."
+        ocr: "fg) Liquidacion -(g) x\nEmpresa 30 fica = oe | imidans\nim fooooaaen fiw CASTTASA 8) ode lites\nSucursel —fogoo24s0 [MiCasiTAS.A =\nei\nEmo’ jog002525 [CARDENAS ACERO,\nFech ji oaoozas0 facasmas.a, =] A)», (Cormelative ol\nfecha fig22013 | TiRo Agrunan) Enitido = BA omelet NP | co0000000001\nowe [TMCS SOM Sucursal (00002490 fi CASTTAS.A. | dy RUC 20131312955\nTotal Abono D000 = Isunat ~ ih\nconcelow ATREGAS…"
+      - id: "0dbeb7225c78"
+        ruta_o_url: "imagenes/manual-de-facturacion/45c52a950df1.png"
+        pagina: null
+        caption: "Vista de la Liquidación con el control de Saldos."
+        ocr: "Empresa 2 CASAS - ‘\net fooonzsgo fai CASITAS.A ll Node ly teen\nPOCA ASTAS | ‘oonooao0000s\nEmitidoa — [oo002525 [CARDENAS ACERO, YESSENIA, = cy\nFecha — [renaanig»| Tine Agrupariento | 4]\nMoneda fit JMEVOS SOLES w=] 4 1.decambio[—1[ll) Estado [atiero\nTotal Abono [1,000.01 T Revisado  Aplicar en Gestion\nConcepto U |ENTREGAS ARENDR - YESSENIA CARDENAS. a\nObservacion TRAMITES SUNAT\nSYPeS vieaa\n1/2 Camp…"
+  - n: 10
+    id: "facturacion.liquidar-entrega-a-rendir#10"
+    accion: "Si hay devolución del importe, registre un documento interno para ingresar el depósito por diario de caja y luego agregarlo a la liquidación."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050]
+    pagina: null
+    fotos:
+      - id: "f8557cd558a2"
+        ruta_o_url: "imagenes/manual-de-facturacion/52b57d1ba5ae.png"
+        pagina: null
+        caption: "Para la Devolución del Importe se tiene que realizar un depósito en la cuenta de la Empresa MI CASITA S.A.C. para este caso debemos de registrar un documento Interno para ingresarlo por diario de Caja y luego agregarlo a la liquidación y cerrarla finalmente."
+        ocr: "\"Archivo Ver Catélogos Herramientas 2\nake\ni T x\n2 (6) ie Documentos por Cobrar\nee es JAA) cons ssemrecisarocr =D\nwe HOYARS va eae\nDocumentos por\ncobrar Arrastre hacia aqui el encabezado de la columna que desea agrupar.\nH 0/0 Campo|Socio de Negocio ||En cuslquier posicién > Grupo:\nf IN\" Correlativo _|Grupo de Proyecto [Proyecto Fecha | Vencimiento [N° Documenta _|Socio de Negocio Moneda_|Forma de P…"
+  - n: 11
+    id: "facturacion.liquidar-entrega-a-rendir#11"
+    accion: "En el módulo Administrativo, busque el documento interno y realice su ingreso al **diario de caja** por el depósito de la entrega a rendir."
+    donde: "Módulo Administrativo, Diario de Caja"
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050]
+    pagina: null
+    fotos:
+      - id: "a353a230695a"
+        ruta_o_url: "imagenes/manual-de-facturacion/99be575a5bd2.png"
+        pagina: null
+        caption: "Luego de la Creación del documento Interno se debe realizar el Ingreso del documento interno al diario de caja Módulo Administrativo (Debe ser Ingresado o depositado en la cuenta)."
+        ocr: "E Archive Yer Catflogos Herramientas ?\n234, a\nae Diario de Caja\nBMWA Ye» @aag a\nr\ng@ vvastre hacia equal eneebezedo ds a columna que desea agruper\nLibro ¢ ; : F\n] 9 Wcasir.. MICAS... 44 Lio Caja dl 01/11/2013 al... Diario 27 nov 2013 US [ruiz] PAM 201314 -Noviembre 20132018 000 0.00 Cerreds\nDaria de Caja\nPL © tacasi.. mcasir.. 45 Liar Caja del 011112013 a. Daria 27 nov 2013 US festela AOS —-201BHA…"
+      - id: "752968eb0fd8"
+        ruta_o_url: "imagenes/manual-de-facturacion/a08184cd1161.png"
+        pagina: null
+        caption: "Realizamos la búsqueda del documento para realizar el ingreso del depósito realizado por la entrega a rendir."
+        ocr: "& S10 Administrativo: 00002490 - Ml CASITA S.A. - Principal = (8) x\nArchivo Ver Catélogos Herramientas 2\nShERea\nnario de Caja\n—— Ly Cobranzas [-[o) x |\n@ SFY | Fererece amazin casa a,\nArraste hacia aquiel eneshezedol| cucursel Priga tlizar la parrilla para agrega\nbro Caja =] il\nI | [neta mere... | 4 Tipo Coja_Do| | documento e ingresarlo. stado\nyj es | al\nosodecs | © MOST Ml Fecodhm|| SET /|@1 BG…"
+  - n: 12
+    id: "facturacion.liquidar-entrega-a-rendir#12"
+    accion: "En la cobranza indique la **Cuenta bancaria** y el **número de Operación** del depósito, guiándose del voucher que le deben entregar, y grabe el ingreso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s051]
+    pagina: null
+    fotos:
+      - id: "d817668342a5"
+        ruta_o_url: "imagenes/manual-de-facturacion/3edab7f41d2f.png"
+        pagina: null
+        caption: "Datos Importantes en la Cobranza, en este caso es un deposito indicar Cuenta bancaria y número de Operación para estos casos Guiarse del voucher que le deben de entregar y sustente el depósito para la liquidación y entrega a rendir."
+        ocr: "a S10 Administrativo: 00002490 - MI CASITA S.A. - Principal - 9 x\n‘Archivo Ver Catélogos Herramientas 2\n6hERSa\nte _ ==\nge a Empresa 00002490 - MI CASITA S.A.\ntoe\n0 Tica rocdesosmentoe or abe Ee aco me\nwe bye Price ct\nDiatio de Coie || [Socio de Negocio | Fecha Programado [Moneda | Monto Programado | Mento Cobredo Fecha Dooumento Total Documento [Tipo Cobra. 0-00 | Cerrado\n| [CARDENAS ACERO, YE 181…"
+      - id: "65dbdb403b38"
+        ruta_o_url: "imagenes/manual-de-facturacion/c73970d4687a.png"
+        pagina: null
+        caption: "Al grabar el ingreso a la cuenta del depósito realizado por la devolución del Entrega a rendir, se tiene esta vista en el diario de caja."
+        ocr: "Archivo Yer Catélogos Herramientas 2\n46hERBa\n5 i) Tema a Aas\nDiario de Caja\ni #YR. gaa g\ntweet Yte [ee [Se [w= [oe omens. [Fem [Wiis [ato [Sort [Sater [ess\ne fo\n|| MICASIT.. MICASIT... 44 Lio Cala del01/1172013 a. lari 27 nov 2013 US ruiz] 2213 —-DISHT - Novembre 2013. 2013 0.00 (000 Cerrado\nDiao de a\na il MAST... MICASIT... 45 Lioo Caja delOt12013. Diario 27 nov 2013 UF estl] ZINIAO13 ISH Noviemb…"
+  - n: 13
+    id: "facturacion.liquidar-entrega-a-rendir#13"
+    accion: "Vuelva al módulo de **FACTURACION**, escenario **LIQUIDACIONES**, y modifique la liquidación que está trabajando."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s051]
+    pagina: null
+    fotos:
+      - id: "b70bb3cdb346"
+        ruta_o_url: "imagenes/manual-de-facturacion/2b9e1374730f.png"
+        pagina: null
+        caption: "Luego de realizar el ingreso nos dirigimos al módulo de FACTURACION escenario LIQUIDACIONES y modificamos la que estamos trabajando."
+        ocr: "- Archivo Ver Catélogos Herramientas 7\nERB\nH Tema ‘ + 4\na Liquidaciones\nrorraoar | Empresa (00002490 JMICASITAS.A ar)\nEB |seyees vaeaa\nDUC LCeammm| | Arrastre hacia aqui el encabezado de la colurna que desea agrupar,\npagar\n5/5 Campo|Emitido a | [En cualquier posicion > [X|[22] crupo:\nre Emitido a Moneda [Tipo de Cambio] Total Pagos | TotalAplicado | PorAplicar | PorRendlr Total Documentas|Receptor…"
+  - n: 14
+    id: "facturacion.liquidar-entrega-a-rendir#14"
+    accion: "En la pestaña de **DOCUMENTOS**, haga clic derecho y elija **AGREGAR DOCUMENTO DESDE EL DIARIO DE CAJA**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s051]
+    pagina: null
+    fotos:
+      - id: "b32d566b17be"
+        ruta_o_url: "imagenes/manual-de-facturacion/c11e116e0ecb.png"
+        pagina: null
+        caption: "Luego de Abrirse la Liquidación nos ubicamos en la pestaña de DOCUMENTOS y clic derecho opción AGREGAR DOCUMENTO DESDE EL DIARIO DE CAJA."
+        ocr: "Empresa SAS. = -\nip jo0002490 |MI CASITAS.A. a4] N° de Liquidacién\n‘Sucursal -\nfponozseo fw casita sa 44) [—ccconeenons\nEmitido a — fo0002525 [FARDENAS ACERO, VESSENIA, | é4)\nFecha Ten22013 | Tipe Agrupamiento = 44\nMoneda fot [NUEVOS SOLES =] #4) 1. de cambio Estado Abierto >\nTetal Aken [500.00 IP Revisado  Aplicar en Gestién\nConcepto U JENTREGAS 4 RENDIR - YESSENIA CARDENAS: a\nObservacién ITRAMIT…"
+  - n: 15
+    id: "facturacion.liquidar-entrega-a-rendir#15"
+    accion: "En la ventana **CRONOGRAMA DE COBRANZAS**, busque su depósito por socio de negocio, selecciónelo con doble clic y luego use la parrilla."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s051]
+    pagina: null
+    fotos:
+      - id: "01e94376b99b"
+        ruta_o_url: "imagenes/manual-de-facturacion/bb189e1f8c28.png"
+        pagina: null
+        caption: "Al Utilizar la opción aparecerá una ventana CRONOGRAMA DE COBRANZAS donde tendremos que realizar la búsqueda de nuestro depósito, por socio negocio al encontrarlo lo seleccionaremos con doble clic y luego utilizaremos la parrilla."
+        ocr: "ii Liquidacion -|g| x\nEmpresa = : .\npr foooa24s0 far CASTTAS.A. 144) ede Liquidacién\nSucursel 7 =\nfoooo2sso farcasmasA. 44 Fo coonooonn0s\nEmitido @ — Jon002525 [CARDENAS ACERO, YESSENIA |\nFecha hanano1a +] Teo Aue,\nMoneda [ot JMUEVOS SOLES 8 —\nI\nTotal Aono Tao =\nBEANS +E eae Busqueda en el Cronograma de Cobranza]\nConcepto U JENTREGAS A RENDIR -ESSENY ' m\nObservacién TRaMiTES SUNAT Arrastre hacia a…"
+  - n: 16
+    id: "facturacion.liquidar-entrega-a-rendir#16"
+    accion: "Haga clic en **Aceptar** para grabar la liquidación."
+    resultado: "La liquidación queda completamente rendida y cuadrada; al detectarlo, el S10 cambia automáticamente su estado de registrado a Cerrado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s051]
+    pagina: null
+    fotos:
+      - id: "015bc06c8148"
+        ruta_o_url: "imagenes/manual-de-facturacion/fe15d76d4170.png"
+        pagina: null
+        caption: "De esta manera nuestra LIQUIDACION quedará completamente rendida y cuadrada. Clic en Aceptar para grabar."
+        ocr: "Empresa\n° fooooase0 facasTaSA — 2=]48) 1° de Liquidacién\nSucursal =\nfoaoozsac” facasmasa. ry —,\nEmtido = fogooas2s [FaRDENASAcERO, VESSEWA—~—~SCSC~*~*~*~S dR\nFecha Fremarors =] 160 Arup [fr\nMoneda [oT |MUEVOSSOLES === | #N| The cembio[___ tJ) Estero [atierto\nTete bono [ronan IT Revised  apicar en Gestén\nConceptow [ENTREGAS ARENOIR - VESSENA CARDENAS Bs\nObservacién TRAMITES SUNAT\nSY28 «hea\n0}0 —_Ca…"
+      - id: "005fb9e0bd30"
+        ruta_o_url: "imagenes/manual-de-facturacion/2130bd337e03.png"
+        pagina: null
+        caption: "Al detectar el S10 que la LIQUIDACION está completamente rendida de manera automática convierte de estado registrado a Cerrado."
+        ocr: "Archivo Yer Cstélogos Herramientas 2\nBRea®\na MG iquidaciones\nPorraaee | enfin [romsTnSm a)\n@ |sevieee vacua\nDem Arrasirehaca aqui el encabezado de la colamna que desea agrupr.\noar\n5/5 Campo Enid a | [Em cushuierposiaén >| (X][2 crupo:\na Emitido a Moneda |Tipo de Cambio] Total Pagos | Total Aplicada Por Aplicar PorRendr [Total Documentos|Receptor |Observaciones | Estadio Tipo de Agruparrierto IN\" d…"
+verificacion:
+  - texto: "Cuando la liquidación está completamente rendida, el S10 la convierte de manera automática de estado registrado a Cerrado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s051]
+errores_frecuentes:
+  - sintoma: "Al agregar el pago no aparece el documento de la entrega a rendir."
+    solucion: "En la ventana de AGREGAR PAGO aparecen exclusivamente los documentos pagados de la persona a quien se le realiza la liquidación: culmine primero el pago del documento Entrega a Rendir."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s049]
+relacionados: [facturacion.registrar-entrega-a-rendir]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s049, manual: "Manual de Facturación", seccion: "6.4.3 Proceso de Liquidación desde Facturación (1)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s050, manual: "Manual de Facturación", seccion: "6.4.3 Proceso de Liquidación desde Facturación (2)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s051, manual: "Manual de Facturación", seccion: "6.4.3 Proceso de Liquidación desde Facturación (3)", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

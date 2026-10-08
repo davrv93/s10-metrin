@@ -1,0 +1,396 @@
+{"texto": "como meto el euro como moneda nueva en contabilidad", "procedimiento": "contabilidad.agregar-moneda", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Necesito adicionar una moneda al catálogo además de soles y dólares, ¿cuál es el procedimiento?", "procedimiento": "contabilidad.agregar-moneda", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como agrego otra moneda en el s10 xq trabajamos con una obra en euros", "procedimiento": "contabilidad.agregar-moneda", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "agregar moneda", "procedimiento": "contabilidad.agregar-moneda", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "quiero borrar una moneda que cree por error, como se hace", "procedimiento": "contabilidad.agregar-moneda", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el cliente nos paga en euros y solo veo soles y dolares, como añado la otra moneda en contabilidad", "procedimiento": "contabilidad.agregar-moneda", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo se elimina una moneda del catálogo de monedas?", "procedimiento": "contabilidad.agregar-moneda", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "click derecho adicionar en monedas y despues q pongo", "procedimiento": "contabilidad.agregar-moneda", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ke pasos sigo para adisionar una moneda nueba", "procedimiento": "contabilidad.agregar-moneda", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "eliminar moneda", "procedimiento": "contabilidad.agregar-moneda", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como creo una moneda sin tocar las de soles y dolares que vienen por defecto", "procedimiento": "contabilidad.agregar-moneda", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Solicito indicaciones para registrar una nueva moneda en el catálogo y definir su configuración de control.", "procedimiento": "contabilidad.agregar-moneda", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "me equivoque y cree una moneda de mas en catalogos, como la quito del s10", "procedimiento": "contabilidad.agregar-moneda", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como pongo un codigo y simbolo a una moneda nueva", "procedimiento": "contabilidad.agregar-moneda", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "nose como se da de alta otra moneda q no sea sol ni dolar", "procedimiento": "contabilidad.agregar-moneda", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "donde se da de alta una moneda que no es sol ni dolar", "procedimiento": "contabilidad.agregar-moneda", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde esta el catalogo de monedas", "procedimiento": "contabilidad.agregar-moneda", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué parte del menú se visualiza el catálogo de monedas en Contabilidad?", "procedimiento": "contabilidad.agregar-moneda", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "menu catalogos moneda", "procedimiento": "contabilidad.agregar-moneda", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "donde keda la pantalla de monedas en conta", "procedimiento": "contabilidad.agregar-moneda", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "por donde entro para ver las monedas que tiene el sistema", "procedimiento": "contabilidad.agregar-moneda", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "estoy en contabilidad y quiero ver que monedas hay registradas, a que pantalla entro", "procedimiento": "contabilidad.agregar-moneda", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "¿Dónde encuentro la opción Eliminar para una moneda del catálogo?", "procedimiento": "contabilidad.agregar-moneda", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "al crear la moneda nueva marco moneda de control o la dejo sin marcar", "procedimiento": "contabilidad.agregar-moneda", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué debo elegir en Monedas de Control cuando registro una moneda adicional?", "procedimiento": "contabilidad.agregar-moneda", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "la moneda base es soles? se puede cambiar al registrar otra moneda", "procedimiento": "contabilidad.agregar-moneda", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "cual es la moneda principal que trae el sistema por defecto", "procedimiento": "contabilidad.agregar-moneda", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "vamos a agregar el euro y no quiero cambiar la moneda base de la empresa, que opciones dejo", "procedimiento": "contabilidad.agregar-moneda", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "moneda de control principal o secundaria", "procedimiento": "contabilidad.agregar-moneda", "intencion": "CONFIGURATION", "estilo": "muy_corta"}
+{"texto": "cuando agregue la moneda marque principal y ahora soles aparece deshabilitado", "procedimiento": "contabilidad.agregar-moneda", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "Al registrar la nueva moneda seleccioné Principal y la moneda Nuevos Soles quedó deshabilitada, ¿qué debí hacer?", "procedimiento": "contabilidad.agregar-moneda", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "al crear el euro me cambio la moneda secundaria de dolares, q hice mal", "procedimiento": "contabilidad.agregar-moneda", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "me sale un mensaje de seguro que quiero eliminar el registro de la moneda, le doy si?", "procedimiento": "contabilidad.agregar-moneda", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "puse mal el nombre de una moneda y quiero sacarla, me pregunta si estoy seguro de eliminar el registro que hago", "procedimiento": "contabilidad.agregar-moneda", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no puedo borrar moneda", "procedimiento": "contabilidad.agregar-moneda", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "agregue una moneda con la moneda de control marcada y se desconfiguro soles y dolares", "procedimiento": "contabilidad.agregar-moneda", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "como le asigno una cuenta contable a una categoria de recursos", "procedimiento": "contabilidad.asignar-cuentas-a-categoria-de-recursos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Necesito que todos los recursos de una categoría contabilicen con una misma cuenta, ¿cómo se asigna?", "procedimiento": "contabilidad.asignar-cuentas-a-categoria-de-recursos", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como asigno la cuenta a la categoria de materiales xq cada recurso no lo voy a hacer uno x uno", "procedimiento": "contabilidad.asignar-cuentas-a-categoria-de-recursos", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "asignar cuenta a categoria", "procedimiento": "contabilidad.asignar-cuentas-a-categoria-de-recursos", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "quiero que todos los recursos de cemento y agregados vayan a una sola cuenta, como lo configuro por categoria", "procedimiento": "contabilidad.asignar-cuentas-a-categoria-de-recursos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "tengo categorias de recursos y quiero que contabilicen con su cuenta del plan, que pasos hago", "procedimiento": "contabilidad.asignar-cuentas-a-categoria-de-recursos", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo utilizo la opción ASIGNAR CUENTA sobre una categoría de recursos?", "procedimiento": "contabilidad.asignar-cuentas-a-categoria-de-recursos", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "en asignacion de cuentas elijo categorias de recursos y despues que", "procedimiento": "contabilidad.asignar-cuentas-a-categoria-de-recursos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "nose como poner la cuenta contable a una categoria, me sale el plan de cuentas pero no se cual tomar", "procedimiento": "contabilidad.asignar-cuentas-a-categoria-de-recursos", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "cuenta contable por categoria", "procedimiento": "contabilidad.asignar-cuentas-a-categoria-de-recursos", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como asigno cuenta a la categoria segun tipo de costo", "procedimiento": "contabilidad.asignar-cuentas-a-categoria-de-recursos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Requiero asignar una cuenta del plan contable a una categoría de recursos considerando el tipo de costo, ¿cuál es el procedimiento?", "procedimiento": "contabilidad.asignar-cuentas-a-categoria-de-recursos", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "ya tengo las categorias creadas en el catalogo y ahora quiero amarrarlas a una cuenta contable, como sigo", "procedimiento": "contabilidad.asignar-cuentas-a-categoria-de-recursos", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como uso la parrilla para tomar la cuenta y ponersela a la categoria", "procedimiento": "contabilidad.asignar-cuentas-a-categoria-de-recursos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "aprovo la cuenta de la categoria con aceptar y listo? q mas hago", "procedimiento": "contabilidad.asignar-cuentas-a-categoria-de-recursos", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "click derecho en la categoria y asignar cuenta, y luego", "procedimiento": "contabilidad.asignar-cuentas-a-categoria-de-recursos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "en que escenario asigno cuentas a las categorias", "procedimiento": "contabilidad.asignar-cuentas-a-categoria-de-recursos", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué grupo se encuentra el escenario Asignación de Cuentas para trabajar con categorías?", "procedimiento": "contabilidad.asignar-cuentas-a-categoria-de-recursos", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "asignacion de cuentas parametros", "procedimiento": "contabilidad.asignar-cuentas-a-categoria-de-recursos", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "donde keda asignacion de categorias para relacionar recursos con categoria", "procedimiento": "contabilidad.asignar-cuentas-a-categoria-de-recursos", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "por donde entro para ver el listado de categorias de recursos con sus cuentas", "procedimiento": "contabilidad.asignar-cuentas-a-categoria-de-recursos", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "estoy en parametros de contabilidad y no veo donde se eligen las categorias de recursos", "procedimiento": "contabilidad.asignar-cuentas-a-categoria-de-recursos", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "¿Dónde selecciono el tipo de categoría Categorías de Recursos?", "procedimiento": "contabilidad.asignar-cuentas-a-categoria-de-recursos", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "que necesito tener listo antes de asignar cuentas a las categorias", "procedimiento": "contabilidad.asignar-cuentas-a-categoria-de-recursos", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué configuración previa se requiere en el catálogo de categorías antes de asignar cuentas?", "procedimiento": "contabilidad.asignar-cuentas-a-categoria-de-recursos", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "las categorias tienen q estar relacionadas a los recursos antes? con q opcion", "procedimiento": "contabilidad.asignar-cuentas-a-categoria-de-recursos", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "recien estoy parametrizando contabilidad, antes de asignar cuentas a categorias que debo haber configurado", "procedimiento": "contabilidad.asignar-cuentas-a-categoria-de-recursos", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "que esquema contable tengo que elegir para asignar cuenta a una categoria", "procedimiento": "contabilidad.asignar-cuentas-a-categoria-de-recursos", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "asignar categoria a recursos requisito", "procedimiento": "contabilidad.asignar-cuentas-a-categoria-de-recursos", "intencion": "CONFIGURATION", "estilo": "muy_corta"}
+{"texto": "asigne la cuenta a la categoria pero el recurso no contabiliza con esa cuenta", "procedimiento": "contabilidad.asignar-cuentas-a-categoria-de-recursos", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "Un recurso no contabiliza con la cuenta asignada a su categoría, ¿cómo se busca la asignación contable?", "procedimiento": "contabilidad.asignar-cuentas-a-categoria-de-recursos", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "el recurso me sale con otra cuenta aunke la categoria ya tiene su cuenta asignada", "procedimiento": "contabilidad.asignar-cuentas-a-categoria-de-recursos", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "el asiento de una compra de acero sale con una cuenta distinta a la que le puse a su categoria, por que", "procedimiento": "contabilidad.asignar-cuentas-a-categoria-de-recursos", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "en que orden busca el sistema la cuenta si el recurso tambien tiene cuenta propia", "procedimiento": "contabilidad.asignar-cuentas-a-categoria-de-recursos", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "recurso no toma cuenta de categoria", "procedimiento": "contabilidad.asignar-cuentas-a-categoria-de-recursos", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "puse cuenta a la categoria y a otro nivel hay una generica de inventario, cual gana", "procedimiento": "contabilidad.asignar-cuentas-a-categoria-de-recursos", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "como hago que un mismo recurso tenga cuentas distintas segun el centro de costo", "procedimiento": "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Necesito que un recurso contabilice con diferentes cuentas según el tipo de costo del centro de costo, ¿cómo se configura?", "procedimiento": "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como asigno cuenta contable a materiales por tipo de costo, xq cada proyecto es diferente", "procedimiento": "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "cuenta por tipo de costo", "procedimiento": "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como relaciono el tipo de costo a los centros de costo de los proyectos", "procedimiento": "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "tengo obras donde el mismo cemento va a costo de ventas y en otra a existencias, como lo separo por tipo de costo", "procedimiento": "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo asigno la cuenta contable a los recursos en las columnas Compras, Ventas, Inventario o Variación de Existencias?", "procedimiento": "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "en asignacion de cuentas elijo mano de obra y el tipo de costo, y despues pongo la cuenta en que columna", "procedimiento": "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "nose como poner la cuenta de compras y de inventario a los recursos de equipos por tipo de costo", "procedimiento": "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "donde le pongo el tipo de costo al centro de costo", "procedimiento": "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Requiero configurar la cuenta de subcontratos según el tipo de costo, ¿qué pasos debo seguir?", "procedimiento": "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "al crear el documento con el recurso, que proyecto y centro de costo debo indicar para que tome la cuenta por tipo de costo", "procedimiento": "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como asigno cuentas a maquinas y herramientas segun el tipo de costo", "procedimiento": "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ke hago para q el asiento tome la cuenta segun el centro de costo del documento", "procedimiento": "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "asignar cuentas a recursos", "procedimiento": "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como filtro por tipo de recurso mano de obra o materiales para poner sus cuentas", "procedimiento": "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde relaciono el tipo de costo con el centro de costo", "procedimiento": "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué grupo y escenario se asocia el Tipo de Costo a cada centro de costo?", "procedimiento": "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "escenario centro de costo configuracion", "procedimiento": "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "donde keda el filtro de tipos de recurso en asignacion de cuentas", "procedimiento": "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "por donde veo las columnas de compras ventas e inventario de cada recurso", "procedimiento": "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "estoy en asignacion de cuentas pero no veo donde elegir el tipo de costo", "procedimiento": "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "¿Dónde reviso el asiento contable de un documento para comprobar la cuenta tomada por el recurso?", "procedimiento": "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "que tengo que crear antes para usar tipos de costo", "procedimiento": "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué debe existir previamente en el catálogo para poder trabajar con tipos de costo?", "procedimiento": "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "los tipos de costo se crean en el catalogo? xq no me salen para elegir", "procedimiento": "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "voy a parametrizar los costos por obra, primero que configuro los centros de costo o las cuentas", "procedimiento": "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "que tipos de recurso puedo configurar con tipo de costo", "procedimiento": "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "crear tipos de costo catalogo", "procedimiento": "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo", "intencion": "CONFIGURATION", "estilo": "muy_corta"}
+{"texto": "puse la cuenta por tipo de costo pero el asiento del documento no la toma", "procedimiento": "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "El recurso del documento no toma la cuenta contable asignada para el tipo de costo, ¿qué debo revisar?", "procedimiento": "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "el asiento sale con otra cuenta aunke ya asigne por tipo de costo al recurso", "procedimiento": "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "hice una orden de compra con un centro de costo de otra obra y la cuenta que sale no es la que esperaba", "procedimiento": "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "el recurso no tiene la asignacion de centro de costo y tipo de costo en el documento, que me falta", "procedimiento": "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "asiento no toma cuenta tipo costo", "procedimiento": "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "no me aparece el tipo de costo para elegir en asignacion de cuentas", "procedimiento": "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "como relaciono las cuentas genericas con el plan contable segun la moneda", "procedimiento": "contabilidad.asignar-cuentas-genericas-por-moneda", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Necesito asignar a cada cuenta genérica una cuenta del plan según la moneda, ¿cómo se hace?", "procedimiento": "contabilidad.asignar-cuentas-genericas-por-moneda", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como asigno cuenta generica en soles y otra en dolares xq contabiliza todo en la misma", "procedimiento": "contabilidad.asignar-cuentas-genericas-por-moneda", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "cuentas genericas por moneda", "procedimiento": "contabilidad.asignar-cuentas-genericas-por-moneda", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "quiero que cuentas por pagar proveedores use una cuenta en soles y otra en dolares, como lo configuro", "procedimiento": "contabilidad.asignar-cuentas-genericas-por-moneda", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "tenemos reembolsos en soles y en dolares y quiero que cada uno vaya a su cuenta, como lo parametrizo", "procedimiento": "contabilidad.asignar-cuentas-genericas-por-moneda", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo utilizo la opción ASIGNAR CUENTA sobre una cuenta genérica eligiendo la moneda?", "procedimiento": "contabilidad.asignar-cuentas-genericas-por-moneda", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "en asignacion de cuentas elijo cuentas genericas y luego la moneda, y despues que", "procedimiento": "contabilidad.asignar-cuentas-genericas-por-moneda", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ke pasos sigo para ponerle cuenta a las genericas por moneda", "procedimiento": "contabilidad.asignar-cuentas-genericas-por-moneda", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "asignar cuenta generica", "procedimiento": "contabilidad.asignar-cuentas-genericas-por-moneda", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como le pongo cuenta contable de dolares a una cuenta generica", "procedimiento": "contabilidad.asignar-cuentas-genericas-por-moneda", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Requiero que la contabilización siga la moneda de la operación mediante cuentas genéricas, ¿cuál es el procedimiento?", "procedimiento": "contabilidad.asignar-cuentas-genericas-por-moneda", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "ya tengo mi plan contable cargado y falta amarrar las cuentas genericas por moneda, que hago primero", "procedimiento": "contabilidad.asignar-cuentas-genericas-por-moneda", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como asigno la cuenta de soles y despues la de dolares a la misma generica", "procedimiento": "contabilidad.asignar-cuentas-genericas-por-moneda", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "nose como relacionar las genericas con una sola cuenta del plan", "procedimiento": "contabilidad.asignar-cuentas-genericas-por-moneda", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "click derecho en la cuenta generica y asignar cuenta, luego que cuenta del plan escojo", "procedimiento": "contabilidad.asignar-cuentas-genericas-por-moneda", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde estan las cuentas genericas en el sistema", "procedimiento": "contabilidad.asignar-cuentas-genericas-por-moneda", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué escenario se asignan las cuentas genéricas por moneda?", "procedimiento": "contabilidad.asignar-cuentas-genericas-por-moneda", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "asignacion de cuentas cuentas genericas", "procedimiento": "contabilidad.asignar-cuentas-genericas-por-moneda", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "donde keda el selector de moneda en asignacion de cuentas", "procedimiento": "contabilidad.asignar-cuentas-genericas-por-moneda", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "por donde entro para ver a que cuenta apunta cada generica", "procedimiento": "contabilidad.asignar-cuentas-genericas-por-moneda", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "estoy en contabilidad y quiero ver las genericas, en que pantalla las encuentro", "procedimiento": "contabilidad.asignar-cuentas-genericas-por-moneda", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "¿Dónde elijo la moneda para la cual asignaré la cuenta contable a las genéricas?", "procedimiento": "contabilidad.asignar-cuentas-genericas-por-moneda", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "que necesito tener configurado antes de asignar cuentas a las genericas", "procedimiento": "contabilidad.asignar-cuentas-genericas-por-moneda", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Debe estar definido el esquema contable de la empresa antes de asignar las cuentas genéricas?", "procedimiento": "contabilidad.asignar-cuentas-genericas-por-moneda", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "cada generica va con una sola cuenta del plan o puede ser mas de una", "procedimiento": "contabilidad.asignar-cuentas-genericas-por-moneda", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "recien implementamos contabilidad con soles y dolares, que configuro para que las genericas sigan la moneda", "procedimiento": "contabilidad.asignar-cuentas-genericas-por-moneda", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "de donde sale el plan de cuentas que aparece al asignar la generica", "procedimiento": "contabilidad.asignar-cuentas-genericas-por-moneda", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "esquema contable genericas", "procedimiento": "contabilidad.asignar-cuentas-genericas-por-moneda", "intencion": "CONFIGURATION", "estilo": "muy_corta"}
+{"texto": "los reembolsos en dolares contabilizan con la cuenta de soles", "procedimiento": "contabilidad.asignar-cuentas-genericas-por-moneda", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "En un registro de reembolsos en soles y dólares, la cuenta de proveedores no contabiliza según la moneda, ¿qué falta?", "procedimiento": "contabilidad.asignar-cuentas-genericas-por-moneda", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "las cuentas por pagar de proveedores salen igual en soles y dolares, q reviso", "procedimiento": "contabilidad.asignar-cuentas-genericas-por-moneda", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "el asiento de una factura en dolares usa la cuenta de soles de cuentas y documentos por pagar, como se arregla", "procedimiento": "contabilidad.asignar-cuentas-genericas-por-moneda", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "asigne la generica solo para una moneda y la otra queda sin cuenta", "procedimiento": "contabilidad.asignar-cuentas-genericas-por-moneda", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "generica contabiliza mal moneda", "procedimiento": "contabilidad.asignar-cuentas-genericas-por-moneda", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "ya asigne la cuenta a la generica pero el asiento no respeta la moneda de la operacion", "procedimiento": "contabilidad.asignar-cuentas-genericas-por-moneda", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "como cargo los agentes de retencion de la sunat al sistema", "procedimiento": "contabilidad.importar-agentes-de-retencion", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Necesito importar el padrón de agentes de retención al catálogo Sunat, ¿cómo se realiza?", "procedimiento": "contabilidad.importar-agentes-de-retencion", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como importo los agentes de percepcion q baje de la pagina de la sunat", "procedimiento": "contabilidad.importar-agentes-de-retencion", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "importar agentes de retencion", "procedimiento": "contabilidad.importar-agentes-de-retencion", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como subo la lista de buenos contribuyentes al s10", "procedimiento": "contabilidad.importar-agentes-de-retencion", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "baje el padron de la sunat y ahora no se como meterlo al sistema para que reconozca a los agentes", "procedimiento": "contabilidad.importar-agentes-de-retencion", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Qué debo hacer con el archivo .zip descargado de la Sunat para agregar los agentes de retención?", "procedimiento": "contabilidad.importar-agentes-de-retencion", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "donde importo los agentes de percepcion", "procedimiento": "contabilidad.importar-agentes-de-retencion", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ke hago con el txt del padron de la sunat para actualizar los agentes", "procedimiento": "contabilidad.importar-agentes-de-retencion", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "padron sunat agentes", "procedimiento": "contabilidad.importar-agentes-de-retencion", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como actualizo el catalogo sunat con el ultimo padron de agentes de retencion", "procedimiento": "contabilidad.importar-agentes-de-retencion", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Requiero agregar al catálogo Sunat los buenos contribuyentes mediante importación, ¿cuál es el procedimiento?", "procedimiento": "contabilidad.importar-agentes-de-retencion", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "la sunat publico un nuevo padron de retenciones y quiero que mis proveedores salgan como agentes, como lo cargo", "procedimiento": "contabilidad.importar-agentes-de-retencion", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "despues de extraer el zip de la sunat que opcion uso para importar", "procedimiento": "contabilidad.importar-agentes-de-retencion", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "nose si el padron de buenos contribuyentes se importa igual q el de retencion", "procedimiento": "contabilidad.importar-agentes-de-retencion", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "que pasos hago para meter el padron de agentes desde un fichero", "procedimiento": "contabilidad.importar-agentes-de-retencion", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde esta el catalogo de la sunat con los agentes de retencion", "procedimiento": "contabilidad.importar-agentes-de-retencion", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué catálogo se encuentra la opción Agentes de Retención?", "procedimiento": "contabilidad.importar-agentes-de-retencion", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "catalogo sunat agentes", "procedimiento": "contabilidad.importar-agentes-de-retencion", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "donde keda la opcion de buenos contribuyentes en los catalogos", "procedimiento": "contabilidad.importar-agentes-de-retencion", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "por donde entro para ver los agentes de percepcion", "procedimiento": "contabilidad.importar-agentes-de-retencion", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "estoy en contabilidad y me piden revisar quienes son agentes de retencion, a que catalogo entro", "procedimiento": "contabilidad.importar-agentes-de-retencion", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "¿Dónde se descargan los padrones de agentes y en qué formato vienen?", "procedimiento": "contabilidad.importar-agentes-de-retencion", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en que formato tiene que estar el padron de la sunat para importarlo", "procedimiento": "contabilidad.importar-agentes-de-retencion", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué formato de archivo se requiere para el padrón antes de importar los agentes de retención?", "procedimiento": "contabilidad.importar-agentes-de-retencion", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "el padron se baja en txt o en zip, y cual se importa", "procedimiento": "contabilidad.importar-agentes-de-retencion", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "voy a dejar al dia los agentes de la empresa, que archivos debo preparar antes de importar", "procedimiento": "contabilidad.importar-agentes-de-retencion", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "los agentes de percepcion y retencion estan en el mismo catalogo o son aparte", "procedimiento": "contabilidad.importar-agentes-de-retencion", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "padron formato txt zip", "procedimiento": "contabilidad.importar-agentes-de-retencion", "intencion": "CONFIGURATION", "estilo": "muy_corta"}
+{"texto": "baje el zip de la sunat y al importar no carga ningun agente", "procedimiento": "contabilidad.importar-agentes-de-retencion", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "Intento importar el archivo comprimido de la Sunat y el sistema no lo reconoce, ¿qué debo hacer?", "procedimiento": "contabilidad.importar-agentes-de-retencion", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "importe el padron y no me aparecen los agentes de percepcion", "procedimiento": "contabilidad.importar-agentes-de-retencion", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "actualice el padron de la sunat pero mis proveedores no salen como buenos contribuyentes", "procedimiento": "contabilidad.importar-agentes-de-retencion", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no me deja importar el padron, sera q falta extraer el fichero", "procedimiento": "contabilidad.importar-agentes-de-retencion", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no carga padron sunat", "procedimiento": "contabilidad.importar-agentes-de-retencion", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "el catalogo de agentes de retencion sigue vacio despues de importar", "procedimiento": "contabilidad.importar-agentes-de-retencion", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "como registro un cliente nuevo en el catalogo de contabilidad", "procedimiento": "contabilidad.registrar-clientes", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Necesito importar mi lista de clientes desde Excel al catálogo de Clientes de Contabilidad, ¿cómo se hace?", "procedimiento": "contabilidad.registrar-clientes", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como agrego un clinte a mano en contabilidad s10", "procedimiento": "contabilidad.registrar-clientes", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "importar clientes excel", "procedimiento": "contabilidad.registrar-clientes", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "tengo mas de cien clientes en excel como los subo al catalogo de clientes de conta", "procedimiento": "contabilidad.registrar-clientes", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "me pasaron la base de clientes en una hoja de calculo y quiero cargarla al s10 contabilidad, que sigo", "procedimiento": "contabilidad.registrar-clientes", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo se une los campos del S10 con las columnas del Excel al importar clientes?", "procedimiento": "contabilidad.registrar-clientes", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como pongo el tipo de socio de negocio a un cliente que acabo de crear", "procedimiento": "contabilidad.registrar-clientes", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde pongo la cuenta de banco del cliente en contabilidad xq le vamos a pagar por transferencia", "procedimiento": "contabilidad.registrar-clientes", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "adicionar cliente catalogo", "procedimiento": "contabilidad.registrar-clientes", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "despues de ubicar la ruta del excel que paso sigue para importar clientes", "procedimiento": "contabilidad.registrar-clientes", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Requiero agregar un cliente manualmente indicando su tipo de socio de negocio y sus cuentas bancarias, ¿qué pasos debo seguir?", "procedimiento": "contabilidad.registrar-clientes", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "llego un cliente nuevo de la inmobiliaria y lo quiero registrar en el catalogo de clientes de contabilidad", "procedimiento": "contabilidad.registrar-clientes", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "click derecho en clientes adicionar y despues que lleno", "procedimiento": "contabilidad.registrar-clientes", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ke filas marco al importar clientes de un excel", "procedimiento": "contabilidad.registrar-clientes", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como agrego los numeros de cuenta bancaria de un cliente", "procedimiento": "contabilidad.registrar-clientes", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde esta el catalogo de clientes en contabilidad", "procedimiento": "contabilidad.registrar-clientes", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué parte del menú se abre el catálogo de Clientes del módulo de Contabilidad?", "procedimiento": "contabilidad.registrar-clientes", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "menu catalogos clientes", "procedimiento": "contabilidad.registrar-clientes", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "donde keda el icono de importacion de excel en clientes", "procedimiento": "contabilidad.registrar-clientes", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "por donde entro para ver la pestaña de cuentas banco del cliente", "procedimiento": "contabilidad.registrar-clientes", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "estoy en contabilidad y tengo que ver a mis clientes registrados, a que catalogo voy", "procedimiento": "contabilidad.registrar-clientes", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "¿Dónde se encuentra la pestaña TIPO dentro de la ventana de registro de un cliente?", "procedimiento": "contabilidad.registrar-clientes", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "para que sirve el tipo de socio de negocio en el cliente", "procedimiento": "contabilidad.registrar-clientes", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué tipo de socio de negocio debo indicar al registrar un cliente en contabilidad?", "procedimiento": "contabilidad.registrar-clientes", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "las cuentas bancarias del cliente son obligatorias para pagar en cuenta", "procedimiento": "contabilidad.registrar-clientes", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "vamos a pagar a clientes por devoluciones, que datos del cliente debo dejar configurados para pagar por banco", "procedimiento": "contabilidad.registrar-clientes", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "el cliente puede ser tambien proveedor, donde se define eso", "procedimiento": "contabilidad.registrar-clientes", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "socio de negocio cliente", "procedimiento": "contabilidad.registrar-clientes", "intencion": "CONFIGURATION", "estilo": "muy_corta"}
+{"texto": "importe el excel de clientes y las columnas no coinciden con los campos del s10", "procedimiento": "contabilidad.registrar-clientes", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "Al importar clientes desde Excel el sistema no toma todas las filas, ¿qué debo revisar?", "procedimiento": "contabilidad.registrar-clientes", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "nose xq no importa los clientes del excel, solo carga algunos", "procedimiento": "contabilidad.registrar-clientes", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "no puedo pagar a un cliente en cuenta bancaria porque no sale su banco en el pago", "procedimiento": "contabilidad.registrar-clientes", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "se me quedo el cliente sin tipo de socio de negocio y no lo encuentro para usarlo", "procedimiento": "contabilidad.registrar-clientes", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "importar clientes no jala", "procedimiento": "contabilidad.registrar-clientes", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "despues de adicionar el cliente no aparece la ventana para registrarlo", "procedimiento": "contabilidad.registrar-clientes", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "como registro la orden de venta global de los ingresos por identificar", "procedimiento": "contabilidad.registrar-orden-de-venta-ipi", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Necesito registrar una orden de venta global por empresa para recibir los IPI de Sperant, ¿cómo se hace?", "procedimiento": "contabilidad.registrar-orden-de-venta-ipi", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como creo la orden de venta ipi xq los abonos no identificados no entran", "procedimiento": "contabilidad.registrar-orden-de-venta-ipi", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "orden de venta ipi", "procedimiento": "contabilidad.registrar-orden-de-venta-ipi", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "donde marco que la orden de venta es de tipo IPI", "procedimiento": "contabilidad.registrar-orden-de-venta-ipi", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "tenemos depositos en la cuenta recaudadora que no sabemos de quien son, como preparo la orden de venta para recibirlos", "procedimiento": "contabilidad.registrar-orden-de-venta-ipi", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo se marca el check Ingresos por Identificar en la orden de venta?", "procedimiento": "contabilidad.registrar-orden-de-venta-ipi", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "que proyecto uso en la orden de venta global de cada empresa", "procedimiento": "contabilidad.registrar-orden-de-venta-ipi", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ke datos lleno en la orden de venta de ingresos por identificar, cliente lista de precio y q mas", "procedimiento": "contabilidad.registrar-orden-de-venta-ipi", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "ingresos por identificar sperant", "procedimiento": "contabilidad.registrar-orden-de-venta-ipi", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como armo una orden de venta por empresa para que sperant mande los abonos sin identificar", "procedimiento": "contabilidad.registrar-orden-de-venta-ipi", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Requiero configurar la orden de venta global de cada empresa como IPI, ¿qué pasos debo seguir?", "procedimiento": "contabilidad.registrar-orden-de-venta-ipi", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "con la integracion de sperant llegan abonos sin identificar y quiero una orden de venta para recibirlos, que paso a paso hago", "procedimiento": "contabilidad.registrar-orden-de-venta-ipi", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "despues de crear la orden de venta global en la pestaña sperant que marco", "procedimiento": "contabilidad.registrar-orden-de-venta-ipi", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "nose si la orden de venta ipi es una por empresa o una global para todas", "procedimiento": "contabilidad.registrar-orden-de-venta-ipi", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como dejo lista la orden de venta para los abonos que aun no se asignan a un cliente", "procedimiento": "contabilidad.registrar-orden-de-venta-ipi", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde esta la pestaña sperant en la orden de venta", "procedimiento": "contabilidad.registrar-orden-de-venta-ipi", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué escenario verifico que llegaron los IPI?", "procedimiento": "contabilidad.registrar-orden-de-venta-ipi", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "por cobrar ipi", "procedimiento": "contabilidad.registrar-orden-de-venta-ipi", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "donde keda el check de ingresos por identificar", "procedimiento": "contabilidad.registrar-orden-de-venta-ipi", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "por donde reviso si ya entraron los abonos ipi", "procedimiento": "contabilidad.registrar-orden-de-venta-ipi", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "ya configure todo de sperant y quiero ver si llegaron los depositos no identificados, a que pantalla voy", "procedimiento": "contabilidad.registrar-orden-de-venta-ipi", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "¿Dónde se configura el módulo de facturación para la integración con Sperant?", "procedimiento": "contabilidad.registrar-orden-de-venta-ipi", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "que tengo que configurar antes de crear la orden de venta ipi", "procedimiento": "contabilidad.registrar-orden-de-venta-ipi", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué recurso de venta debe estar registrado para los IPI y si es por empresa o global?", "procedimiento": "contabilidad.registrar-orden-de-venta-ipi", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "la lista de precio de cada empresa lleva el recurso ipi con precio y cantidad 1?", "procedimiento": "contabilidad.registrar-orden-de-venta-ipi", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "vamos a activar los ingresos por identificar con sperant, que catalogos y configuraciones debo dejar listos", "procedimiento": "contabilidad.registrar-orden-de-venta-ipi", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "hace falta un cliente global para la orden de venta de ipi", "procedimiento": "contabilidad.registrar-orden-de-venta-ipi", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "config sperant tuerca facturacion", "procedimiento": "contabilidad.registrar-orden-de-venta-ipi", "intencion": "CONFIGURATION", "estilo": "muy_corta"}
+{"texto": "sperant me manda los ipi duplicados", "procedimiento": "contabilidad.registrar-orden-de-venta-ipi", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "Se están enviando IPI duplicados desde Sperant, ¿cómo lo verifico?", "procedimiento": "contabilidad.registrar-orden-de-venta-ipi", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "los ipi llegan dobles desde sperant, q hago", "procedimiento": "contabilidad.registrar-orden-de-venta-ipi", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "cree la orden de venta ipi y sperant sigue sin reconocerla, se repiten los envios", "procedimiento": "contabilidad.registrar-orden-de-venta-ipi", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "como compruebo con el id externo si ya sincronizo el ipi", "procedimiento": "contabilidad.registrar-orden-de-venta-ipi", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "ipi duplicados", "procedimiento": "contabilidad.registrar-orden-de-venta-ipi", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "no aparece el tipo de documento ipi en por cobrar despues de sincronizar", "procedimiento": "contabilidad.registrar-orden-de-venta-ipi", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "como reviso si todos mis asientos contables se procesaron bien", "procedimiento": "contabilidad.revisar-auditoria-de-registros-contables", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Necesito evaluar el correcto procesamiento de los asientos contables de un periodo, ¿cómo se realiza?", "procedimiento": "contabilidad.revisar-auditoria-de-registros-contables", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como veo si hay transacciones sin asiento xq el balance no cuadra", "procedimiento": "contabilidad.revisar-auditoria-de-registros-contables", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "auditoria de registros contables", "procedimiento": "contabilidad.revisar-auditoria-de-registros-contables", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como comparo el numero de registros con el numero de asientos de un periodo", "procedimiento": "contabilidad.revisar-auditoria-de-registros-contables", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "a fin de mes quiero asegurarme que todas las operaciones de la obra generaron su asiento, como lo compruebo", "procedimiento": "contabilidad.revisar-auditoria-de-registros-contables", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo utilizo la opción Ver Transacciones sin asientos?", "procedimiento": "contabilidad.revisar-auditoria-de-registros-contables", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como se que procedencia no se proceso correctamente", "procedimiento": "contabilidad.revisar-auditoria-de-registros-contables", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ke hago para ver los asientos sin transacciones de un periodo", "procedimiento": "contabilidad.revisar-auditoria-de-registros-contables", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "ver asientos sin transacciones", "procedimiento": "contabilidad.revisar-auditoria-de-registros-contables", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como detecto procesos incompletos en los asientos de todas las operaciones", "procedimiento": "contabilidad.revisar-auditoria-de-registros-contables", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Requiero verificar que cada operación registrada tenga su asiento contable correspondiente, ¿cuál es el procedimiento?", "procedimiento": "contabilidad.revisar-auditoria-de-registros-contables", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el contador dice que faltan asientos de compras en el periodo, como lo reviso en el s10", "procedimiento": "contabilidad.revisar-auditoria-de-registros-contables", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "donde veo el detalle de cada proceso que no genero asiento", "procedimiento": "contabilidad.revisar-auditoria-de-registros-contables", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "nose como revisar si el sistema contabilizo todo lo q se registro", "procedimiento": "contabilidad.revisar-auditoria-de-registros-contables", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "que pasos hago para controlar la contabilizacion de un periodo", "procedimiento": "contabilidad.revisar-auditoria-de-registros-contables", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde esta el escenario de auditoria de registros contables", "procedimiento": "contabilidad.revisar-auditoria-de-registros-contables", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué escenario de control se evalúa el procesamiento de los asientos contables?", "procedimiento": "contabilidad.revisar-auditoria-de-registros-contables", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "auditoria registros contables pantalla", "procedimiento": "contabilidad.revisar-auditoria-de-registros-contables", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "donde keda la opcion ver transacciones sin asientos", "procedimiento": "contabilidad.revisar-auditoria-de-registros-contables", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "por donde entro para ver las diferencias entre registros y asientos", "procedimiento": "contabilidad.revisar-auditoria-de-registros-contables", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "soy el contador y necesito la pantalla de control para ver si falta contabilizar algo", "procedimiento": "contabilidad.revisar-auditoria-de-registros-contables", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "¿Dónde encuentro la opción ver asientos sin transacciones?", "procedimiento": "contabilidad.revisar-auditoria-de-registros-contables", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "que periodo debo elegir para revisar la auditoria de registros", "procedimiento": "contabilidad.revisar-auditoria-de-registros-contables", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué información debe compararse en la auditoría para detectar una diferencia?", "procedimiento": "contabilidad.revisar-auditoria-de-registros-contables", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "el numero de registros tiene q ser igual al del asiento? donde se configura eso", "procedimiento": "contabilidad.revisar-auditoria-de-registros-contables", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "queremos hacer control mensual de asientos, que parametros o filtros uso en el escenario de control", "procedimiento": "contabilidad.revisar-auditoria-de-registros-contables", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "esta auditoria revisa todas las operaciones o solo algunas procedencias", "procedimiento": "contabilidad.revisar-auditoria-de-registros-contables", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "periodo auditoria de registros", "procedimiento": "contabilidad.revisar-auditoria-de-registros-contables", "intencion": "CONFIGURATION", "estilo": "muy_corta"}
+{"texto": "el numero de registros no coincide con el numero de asientos de una procedencia", "procedimiento": "contabilidad.revisar-auditoria-de-registros-contables", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "Existe diferencia entre los registros y los asientos de un periodo, ¿qué significa y cómo la detallo?", "procedimiento": "contabilidad.revisar-auditoria-de-registros-contables", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "me sale diferencia en una linea de la auditoria, q significa", "procedimiento": "contabilidad.revisar-auditoria-de-registros-contables", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "hay documentos de compra que no generaron asiento contable y no se cuales son", "procedimiento": "contabilidad.revisar-auditoria-de-registros-contables", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "una procedencia dice que no se proceso correctamente, como veo cual transaccion falta", "procedimiento": "contabilidad.revisar-auditoria-de-registros-contables", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "registros sin asiento", "procedimiento": "contabilidad.revisar-auditoria-de-registros-contables", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "veo asientos que no tienen su transaccion de origen, donde los reviso", "procedimiento": "contabilidad.revisar-auditoria-de-registros-contables", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "como actualizo la base de datos despues de instalar las revisiones", "procedimiento": "instalacion.actualizar-base-de-datos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Necesito ejecutar la actualización de la base de datos luego de instalar las revisiones, ¿cómo procedo?", "procedimiento": "instalacion.actualizar-base-de-datos", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "ke hago despues de instalar las revisiones para actualizar la base de datos", "procedimiento": "instalacion.actualizar-base-de-datos", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "actualizar base de datos", "procedimiento": "instalacion.actualizar-base-de-datos", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como hago para que corra bien la actualizacion de bd del s10", "procedimiento": "instalacion.actualizar-base-de-datos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ya instale las revisiones en el servidor y falta lo de la base de datos, que debo hacer primero", "procedimiento": "instalacion.actualizar-base-de-datos", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Quién debe conectarse primero a la base de datos para que se ejecute la actualización?", "procedimiento": "instalacion.actualizar-base-de-datos", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "me dice que hay usuarios conectados y no puede actualizar, que hago", "procedimiento": "instalacion.actualizar-base-de-datos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como veo la lista de usuarios conectados q no dejan actualizar la bd", "procedimiento": "instalacion.actualizar-base-de-datos", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "usuarios conectados s10", "procedimiento": "instalacion.actualizar-base-de-datos", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "despues de que cierren el s10 que boton doy para seguir con la actualizacion de la base", "procedimiento": "instalacion.actualizar-base-de-datos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Requiero completar la actualización de la base de datos sin interrupciones, ¿qué pasos debo seguir?", "procedimiento": "instalacion.actualizar-base-de-datos", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "instale la ultima revision temprano y quiero que la base quede actualizada antes de que lleguen los demas, como lo hago", "procedimiento": "instalacion.actualizar-base-de-datos", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "tengo que ser el primero en entrar despues de instalar la revision", "procedimiento": "instalacion.actualizar-base-de-datos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "nose si la actualizacion de la base de datos es automatica o la hago yo", "procedimiento": "instalacion.actualizar-base-de-datos", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como continuo la actualizacion cuando me sale el mensaje de usuarios conectados", "procedimiento": "instalacion.actualizar-base-de-datos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde sale la ventana de actualizacion de base de datos", "procedimiento": "instalacion.actualizar-base-de-datos", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué momento aparece la ventana Actualización de Base de Datos?", "procedimiento": "instalacion.actualizar-base-de-datos", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "ventana actualizacion bd", "procedimiento": "instalacion.actualizar-base-de-datos", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "donde keda la lista de usuarios conectados cuando no deja actualizar", "procedimiento": "instalacion.actualizar-base-de-datos", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "por donde veo quienes estan conectados a la base de datos", "procedimiento": "instalacion.actualizar-base-de-datos", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "instale las revisiones y entre al s10 pero no veo ninguna pantalla de actualizacion, donde deberia salir", "procedimiento": "instalacion.actualizar-base-de-datos", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "¿Dónde se elige la opción SI para visualizar los usuarios conectados?", "procedimiento": "instalacion.actualizar-base-de-datos", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "que condicion debo cumplir antes de actualizar la base de datos", "procedimiento": "instalacion.actualizar-base-de-datos", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué debo coordinar con los demás usuarios antes de actualizar la base de datos?", "procedimiento": "instalacion.actualizar-base-de-datos", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "hay q instalar las revisiones antes de actualizar la bd o despues", "procedimiento": "instalacion.actualizar-base-de-datos", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "somos varios en la oficina conectados al mismo servidor, como organizo la actualizacion de la base", "procedimiento": "instalacion.actualizar-base-de-datos", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "la actualizacion de la base se hace desde un solo equipo o desde todos", "procedimiento": "instalacion.actualizar-base-de-datos", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "requisito actualizar bd", "procedimiento": "instalacion.actualizar-base-de-datos", "intencion": "CONFIGURATION", "estilo": "muy_corta"}
+{"texto": "no se puede actualizar la base de datos porque hay usuarios conectados", "procedimiento": "instalacion.actualizar-base-de-datos", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "Aparece el mensaje de que no se puede actualizar la base de datos por usuarios conectados, ¿cómo lo resuelvo?", "procedimiento": "instalacion.actualizar-base-de-datos", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "fui el primero en conectarme y no me salio la ventana de actualizacion de la bd", "procedimiento": "instalacion.actualizar-base-de-datos", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "entre primero al s10 despues de la revision y la ventana de actualizar la base nunca aparecio, alguien mas entro desde otro equipo", "procedimiento": "instalacion.actualizar-base-de-datos", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "la actualizacion de base de datos no se ejecuto bien y ahora hay errores al usar el s10", "procedimiento": "instalacion.actualizar-base-de-datos", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "bd no actualiza", "procedimiento": "instalacion.actualizar-base-de-datos", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "cierre todos los s10 y sigue diciendo que hay usuarios conectados", "procedimiento": "instalacion.actualizar-base-de-datos", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "como actualizo el s10 con las revisiones", "procedimiento": "instalacion.actualizar-s10-con-revisiones", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Necesito instalar las revisiones del S10 en un equipo que ya tiene la instalación, ¿cuál es el procedimiento?", "procedimiento": "instalacion.actualizar-s10-con-revisiones", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como instalo las revisiones en orden xq tengo varias para ejecutar", "procedimiento": "instalacion.actualizar-s10-con-revisiones", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "instalar revisiones s10", "procedimiento": "instalacion.actualizar-s10-con-revisiones", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "en que orden ejecuto las revisiones, de la mas antigua a la mas nueva", "procedimiento": "instalacion.actualizar-s10-con-revisiones", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "mi s10 esta en una revision vieja y me mandaron como diez nuevas, como las instalo", "procedimiento": "instalacion.actualizar-s10-con-revisiones", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo verifico cuál es la última revisión instalada en el equipo?", "procedimiento": "instalacion.actualizar-s10-con-revisiones", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "que hago si hay varias versiones de una misma revision", "procedimiento": "instalacion.actualizar-s10-con-revisiones", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ke revision debo instalar primero si ya tengo la 45 instalada", "procedimiento": "instalacion.actualizar-s10-con-revisiones", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "ultima revision instalada", "procedimiento": "instalacion.actualizar-s10-con-revisiones", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "me sale que el modulo esta en ejecucion, como cierro el proceso y sigo con la revision", "procedimiento": "instalacion.actualizar-s10-con-revisiones", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Requiero finalizar el proceso del S10 desde el administrador de tareas cuando la revisión indica que el módulo está en ejecución, ¿cómo lo hago?", "procedimiento": "instalacion.actualizar-s10-con-revisiones", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "somos varios en la oficina y quiero actualizar el s10, a que hora y de que forma lo hago para no molestar", "procedimiento": "instalacion.actualizar-s10-con-revisiones", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como se que revision tengo en mi pc", "procedimiento": "instalacion.actualizar-s10-con-revisiones", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "nose como desactivo el antivirus y el control de cuentas antes de las revisiones", "procedimiento": "instalacion.actualizar-s10-con-revisiones", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "puedo saltarme una revision e instalar la mas nueva directo", "procedimiento": "instalacion.actualizar-s10-con-revisiones", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde veo la ultima revision que tengo instalada", "procedimiento": "instalacion.actualizar-s10-con-revisiones", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Desde qué parte del Panel de Control se verifica la revisión instalada?", "procedimiento": "instalacion.actualizar-s10-con-revisiones", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "panel de control revision", "procedimiento": "instalacion.actualizar-s10-con-revisiones", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "donde keda el administrador de tareas para cerrar el s10", "procedimiento": "instalacion.actualizar-s10-con-revisiones", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "por donde entro para ver que version de revision tengo", "procedimiento": "instalacion.actualizar-s10-con-revisiones", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "estoy en la pc de contabilidad y necesito saber hasta que revision llego, donde miro", "procedimiento": "instalacion.actualizar-s10-con-revisiones", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "¿Dónde encuentro la opción de refrescar cuando el instalador indica que el módulo está en ejecución?", "procedimiento": "instalacion.actualizar-s10-con-revisiones", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "que permisos necesito para instalar las revisiones", "procedimiento": "instalacion.actualizar-s10-con-revisiones", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué configuración debe tener el equipo antes de instalar las revisiones del S10?", "procedimiento": "instalacion.actualizar-s10-con-revisiones", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "tengo q desactivar el antivirus y el control de cuentas de usuario para las revisiones", "procedimiento": "instalacion.actualizar-s10-con-revisiones", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "el servidor lo usan veinte personas, en que horario conviene instalar las revisiones", "procedimiento": "instalacion.actualizar-s10-con-revisiones", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "hay que ser administrador del equipo para correr las revisiones", "procedimiento": "instalacion.actualizar-s10-con-revisiones", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "requisitos revisiones antivirus", "procedimiento": "instalacion.actualizar-s10-con-revisiones", "intencion": "CONFIGURATION", "estilo": "muy_corta"}
+{"texto": "me sale un error que no se pueden instalar las revisiones", "procedimiento": "instalacion.actualizar-s10-con-revisiones", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "Aparece un mensaje indicando que no se pueden instalar las revisiones, ¿qué debo verificar?", "procedimiento": "instalacion.actualizar-s10-con-revisiones", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "la revision me da error al instalar aunke soy administrador", "procedimiento": "instalacion.actualizar-s10-con-revisiones", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "tuve problemas con la revision 52, puedo seguir instalando las que faltan", "procedimiento": "instalacion.actualizar-s10-con-revisiones", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "me dice que el modulo esta en ejecucion en otra sesion y no continua", "procedimiento": "instalacion.actualizar-s10-con-revisiones", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "error al instalar revision", "procedimiento": "instalacion.actualizar-s10-con-revisiones", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "si una revision fallo y sigo con las demas que pasa", "procedimiento": "instalacion.actualizar-s10-con-revisiones", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "como instalo sql server paso a paso para el s10", "procedimiento": "instalacion.instalar-sql-server", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Necesito instalar Microsoft SQL Server con sus componentes de administración, ¿cuál es el procedimiento?", "procedimiento": "instalacion.instalar-sql-server", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como instalo el sql server xq el cliente no tiene motor de base de datos", "procedimiento": "instalacion.instalar-sql-server", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "instalar sql server", "procedimiento": "instalacion.instalar-sql-server", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "que opcion elijo en el installation center para una instalacion nueva", "procedimiento": "instalacion.instalar-sql-server", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "voy a montar el servidor de la obra con sql server desde cero, que pasos sigo desde el installation center", "procedimiento": "instalacion.instalar-sql-server", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo se define el modelo de autenticación mixto y la contraseña del administrador SQL durante la instalación?", "procedimiento": "instalacion.instalar-sql-server", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como elijo entre instancia por defecto o nombrada", "procedimiento": "instalacion.instalar-sql-server", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ke caracteristicas marco al instalar sql, solo el database engine services", "procedimiento": "instalacion.instalar-sql-server", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "instalar ssms", "procedimiento": "instalacion.instalar-sql-server", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como configuro las cuentas de cada servicio al instalar sql server", "procedimiento": "instalacion.instalar-sql-server", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Requiero agregar al usuario actual como administrador y revisar las ubicaciones de datos durante la instalación de SQL Server, ¿cómo se hace?", "procedimiento": "instalacion.instalar-sql-server", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "ya termino la instalacion de sql server, que mas debo instalar para administrar las bases desde mi pc", "procedimiento": "instalacion.instalar-sql-server", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como pongo el nivel de compatibilidad de la base segun la version de sql", "procedimiento": "instalacion.instalar-sql-server", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "nose q poner en la ventana de collation al instalar sql server", "procedimiento": "instalacion.instalar-sql-server", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como corro el system configuration checker antes de instalar", "procedimiento": "instalacion.instalar-sql-server", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde esta el system configuration checker de sql server", "procedimiento": "instalacion.instalar-sql-server", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué pestaña del SQL Server Installation Center se selecciona la nueva instalación stand alone?", "procedimiento": "instalacion.instalar-sql-server", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "tab installation sql", "procedimiento": "instalacion.instalar-sql-server", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "donde keda la ventana de data directories al instalar sql", "procedimiento": "instalacion.instalar-sql-server", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "por donde entro para ver el resumen de la instalacion de sql server", "procedimiento": "instalacion.instalar-sql-server", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "estoy en la instalacion de sql y quiero cambiar el nivel de compatibilidad, en que opciones lo encuentro", "procedimiento": "instalacion.instalar-sql-server", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "¿Dónde se encuentra la ventana Installation Rules durante la instalación?", "procedimiento": "instalacion.instalar-sql-server", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "que collation debo elegir para sql server", "procedimiento": "instalacion.instalar-sql-server", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué collation se debe seleccionar al instalar SQL Server para el S10?", "procedimiento": "instalacion.instalar-sql-server", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "la autenticacion tiene q ser mixta o solo windows", "procedimiento": "instalacion.instalar-sql-server", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "antes de instalar sql server en el servidor de la oficina, que requisitos y decisiones debo tener listos", "procedimiento": "instalacion.instalar-sql-server", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "que version de sql server me recomiendan y cual no", "procedimiento": "instalacion.instalar-sql-server", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "collation sql_latin1", "procedimiento": "instalacion.instalar-sql-server", "intencion": "CONFIGURATION", "estilo": "muy_corta"}
+{"texto": "tengo problemas de rendimiento con sql server 2016", "procedimiento": "instalacion.instalar-sql-server", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "El S10 funciona lento con SQL Server 2016, ¿qué se recomienda?", "procedimiento": "instalacion.instalar-sql-server", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "el sql 2016 me va muy lento, sera x la version", "procedimiento": "instalacion.instalar-sql-server", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "instalamos sql 2016 en el servidor de la obra y los reportes se demoran muchisimo, que version usar", "procedimiento": "instalacion.instalar-sql-server", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no se que edicion de sql elegir y la instalacion me pide clave de producto", "procedimiento": "instalacion.instalar-sql-server", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "sql lento 2016", "procedimiento": "instalacion.instalar-sql-server", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "el instalador de sql server esta en un servidor de dominio, hay problema", "procedimiento": "instalacion.instalar-sql-server", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}

@@ -1,0 +1,131 @@
+id: portal-proveedor.notificar-pagos-en-el-portal
+version: 1
+modulo: portal-proveedor
+titulo: "Configurar y enviar notificaciones de pago al Portal de Proveedores"
+objetivo: "Configurar en el S10 ERP los datos de la empresa, los contactos del proveedor y el módulo Administrativo para que se notifique a los proveedores en el Portal de Proveedores al aprobar una orden de pago y al generar el pago."
+nivel: intermedio
+preguntas:
+  - "como configuro el portal de proveedores en administrativo"
+  - "que tengo que activar para que al proveedor le llegue la notificacion de la orden de pago"
+  - "donde pongo el monto minimo para notificar pagos a los proveedores"
+  - "el proveedor no recibe la notificacion del pago, que falta configurar"
+  - "como marco el contacto principal del proveedor para el portal"
+  - "cuando se le notifica al proveedor que se le hizo un pago"
+  - "no quiero que les llegue notificacion a ningun proveedor, como hago"
+  - "como hago q mis proveedores vean sus pagos en el portal"
+  - "quien queda como usuario administrador del portal de proveedores"
+aliases:
+  - "configurar portal de proveedores"
+  - "notificar pagos al proveedor"
+  - "enviar ordenes de pago al portal"
+  - "monto mínimo de notificación"
+  - "contacto principal del proveedor"
+entidades:
+  modulo: "Portal del Proveedor"
+  pantallas: ["Portal de Proveedores", "Ordenes de Pago"]
+  objetos: ["orden de pago", "pago", "contacto principal", "monto mínimo", "proveedor", "Usuario Administrador"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "portal-proveedor.notificar-pagos-en-el-portal#1"
+    accion: "En la ficha de datos de la empresa, registre el monto mínimo de los pagos (en Soles) para los cuales se notificará a los proveedores."
+    fuente: [web-https-documentacion-s10peru-com-manual-p-s021]
+    pagina: null
+    fotos:
+      - id: "a5392c59d541"
+        ruta_o_url: "imagenes/manual-portal-proveedor/1dd8a86d80dc.png"
+        pagina: null
+        caption: "En la ficha de datos de la empresa, debe registrarse el monto mínimo de los pagos (en Soles) para los cuales se notificará a los proveedores. Si el monto del pago es igual o mayor al monto mínimo, los posteriores pagos para el proveedor con cualquier valor serán notificados. Si no se desea enviar las notificaciones a ningún proveedor, este dato debe tener valor cero."
+        ocr: "g foe lees\ncédgo —fez000613 —[Percona aurea == (cbdg0 Aero\nDatos generales\nRazinSocd EDRICAGONESAMROSAG SOS\n‘Aoreviatura ED RUTUROSAC\nRUC [oaoeoe0123____NoVéldo Estado Domiclo [Somotado =]\nCn\n(a ——ESSLEL_LEL_L__L=_=====_=]\nSocios de Negocio]\nDatos complementarios\n‘Tebfonos fos (ON) [T [EMAY CALLA] #4 [E5455 Anexo\nFax [mew-[— Nextel rw sre f\nspe Pgs\noreo 99 |\ncorperatvo personal\nPagna Web fnmfuturo…"
+  - n: 2
+    id: "portal-proveedor.notificar-pagos-en-el-portal#2"
+    accion: "Registre un contacto de la empresa con su dirección de correo electrónico: será inscrito en el Portal de Proveedores como Usuario Administrador."
+    fuente: [web-https-documentacion-s10peru-com-manual-p-s021, web-https-documentacion-s10peru-com-manual-p-s024]
+    pagina: null
+    fotos:
+      - id: "c447d73a5583"
+        ruta_o_url: "imagenes/manual-portal-proveedor/e41351d3fa63.png"
+        pagina: null
+        caption: "Es necesario también registrar a un contacto de la empresa, el cual será inscrito en el Portal del Proveedores como Usuario Administrador."
+        ocr: "Cédigo 22000613 Persona Juridica x Cédigo Alterno\n; Datos generales\nRaz6n Social [EDIFICACIONES FUTURO 5.A.C,\nAbreviatura [ED FUTURO SAC\nRUC 20406080123 No Valido Estado Domictio [Domiciiado S\nDescripcién [OO\nAlterna\nSocios de Negocio |\nBY eRe Ss BF\n29003314 Jose Olaya Suarez jolayaps@gmail.com\n«| uW r\nModificar | Estado de Cuenta | Cancelar |"
+  - n: 3
+    id: "portal-proveedor.notificar-pagos-en-el-portal#3"
+    accion: "En la ficha de datos del proveedor, registre el contacto con su respectivo email, para que se le notifique que se le ha realizado un pago."
+    fuente: [web-https-documentacion-s10peru-com-manual-p-s022]
+    pagina: null
+    fotos:
+      - id: "2a820eeaa2d5"
+        ruta_o_url: "imagenes/manual-portal-proveedor/c78577bbc01e.png"
+        pagina: null
+        caption: "Debe registrar el contacto con su respectivo email en la ficha de datos del proveedor, para que se le notifique que se le ha realizado un pago. En la lista de contactos debe marcarse cuál de ellos será el contacto principal para el Portal de Proveedores. De no tener ningún contacto registrado, se tomará el correo electrónico de la empresa (ficha General)."
+        ocr: "@ Socio de Negocio (ces fa)\nCécigo fezo00613 Persona Juridica = Cédigoaiteno [|\nDatos generales\nRazén Socal [COMERCIAL DEL ACERO S.A\nAbreviatura [EQMASA\nRUC [20100020363 Vaido | EstadoDomicio [Domiciado |\nDescrpcin TACERO a\nSocios de Negocio\nBY 2RN8 G6\n22000748 Alberto _|Reyes Rios CI a | a clientepruebas10_3@hotmail.com"
+  - n: 4
+    id: "portal-proveedor.notificar-pagos-en-el-portal#4"
+    accion: "En la lista de contactos del proveedor, marque cuál de ellos será el contacto principal para el Portal de Proveedores."
+    fuente: [web-https-documentacion-s10peru-com-manual-p-s022]
+    pagina: null
+  - n: 5
+    id: "portal-proveedor.notificar-pagos-en-el-portal#5"
+    accion: "En la configuración del módulo Administrativo, active la opción **Enviar Ordenes de Pago al Portal de Proveedores**."
+    resultado: "Se notificará al proveedor cuando se apruebe una orden de pago cuyo importe sea según lo configurado en los datos de la empresa."
+    fuente: [web-https-documentacion-s10peru-com-manual-p-s023]
+    pagina: null
+    fotos:
+      - id: "00ac5cdd3e56"
+        ruta_o_url: "imagenes/manual-portal-proveedor/c44eda1f3bce.png"
+        pagina: null
+        caption: "Enviar Ordenes de Pago al Portal de Proveedores: Si esta activada, se notificará al proveedor cuando se apruebe una orden de pago cuyo importe sea según lo configurado en los datos de la empresa."
+        ocr: "[ 2s\nPortal de Proveedores:\n[- Enviar Ordenes de Pago al Portal de Proveedores:\n[~ Permitir registro de facturas por pagar desde el Portal de Proveedores\nTipo Documento | . 44\n(P paiblico)\nLsseom_| ="
+  - n: 6
+    id: "portal-proveedor.notificar-pagos-en-el-portal#6"
+    accion: "Apruebe la orden de pago en **Ordenes de Pago**."
+    resultado: "Se envía la notificación al proveedor si el importe del documento o factura es mayor o igual al monto mínimo configurado en la ficha de datos de la empresa."
+    fuente: [web-https-documentacion-s10peru-com-manual-p-s025, img-faa13a76dcbc-0000, img-afa0c67e3659-0000]
+    pagina: null
+    fotos:
+      - id: "86da704590ad"
+        ruta_o_url: "imagenes/manual-portal-proveedor/faa13a76dcbc.png"
+        pagina: null
+        ocr: "B10 Ad ative: 22000613 ~ EDIFICACIGNES FLITURO S.A.C. - Principa [recom C= mS\n_ Archivo Ver Catalogos Herramientas ?\nalk fa\n: ig) Tema\nOrdenes de Pago\n(Todos Periodo _-| 44 %\n(FRY eS oe id\nOrdenes de Pago SST\nArrastre hacia aqui el encabezado de la columna que desea agrupar =\nBE] | iro. oessincn —TPagarcon[reuenia stato |. [Monta [\nPendientes de Pago ||) 5 /ans4ig Pagos Varios D) Adicionar WE63-0-…"
+      - id: "0e583242290f"
+        ruta_o_url: "imagenes/manual-portal-proveedor/afa0c67e3659.png"
+        pagina: null
+        ocr: "Lx\nri) La Orden de Pago N* 005419 ha sido aprobada."
+  - n: 7
+    id: "portal-proveedor.notificar-pagos-en-el-portal#7"
+    accion: "Genere el pago al proveedor: si el importe total del pago supera el monto mínimo definido en la empresa, se envía la notificación al proveedor."
+    fuente: [web-https-documentacion-s10peru-com-manual-p-s026]
+    pagina: null
+    fotos:
+      - id: "cc9ca421d4ad"
+        ruta_o_url: "imagenes/manual-portal-proveedor/f6258ddabfd8.png"
+        pagina: null
+        caption: "Por cada proveedor, si el importe total del pago supera el monto mínimo definido en cada empresa, se enviará la notificación al proveedor al generar el pago."
+        ocr: "as — [va\n[c= ee\nEmpresa 22000613 EDIFICACIONES FUTURO S.A.C. Alterno N° 000001\np\nSucursal Principal N° Pago\nProveedor [22000611 [COMERCIAL DELACERO SA =| stadia 00013892}\nCuenta Bancaria  [194-1754663-0-47 [BCP 194-1754663-0-67 (SI) _ | a MonedaSOLes Tipo cambio[ a]\nFecha transaccion |(iyo4/2017 ~| Fecha de aplicacin|04/04/2017 ~\nDescripcion Pagos Varios Ss\nAY ARES GF adit\nConcepto Ajuste\nCOMERCIA…"
+verificacion:
+  - texto: "La primera vez, el contacto recibe un correo electrónico de bienvenida con los datos de acceso al portal, enviado por una cuenta denominada S10 Alerta."
+    fuente: [web-https-documentacion-s10peru-com-manual-p-s024]
+errores_frecuentes:
+  - sintoma: "No se envían las notificaciones al proveedor."
+    solucion: "Al enviar los documentos por pagar al Portal de Proveedores se valida que estén registrados la dirección electrónica (e-mail) del contacto para el portal y la dirección del proveedor, si figura como Domiciliado. De no tener alguno de estos datos no será posible enviar las notificaciones."
+    fuente: [web-https-documentacion-s10peru-com-manual-p-s022]
+  - sintoma: "No desea enviar notificaciones a ningún proveedor."
+    solucion: "Registre el monto mínimo de los pagos con valor cero en la ficha de datos de la empresa."
+    fuente: [web-https-documentacion-s10peru-com-manual-p-s021]
+  - sintoma: "El proveedor no puede generar la factura desde el portal a partir de una orden de compra."
+    solucion: "La opción Permitir registro de facturas por pagar desde el Portal de Proveedores actualmente no está implementada."
+    fuente: [web-https-documentacion-s10peru-com-manual-p-s023]
+  - sintoma: "Un pago ya no aparece en el portal del proveedor."
+    solucion: "Si el pago es anulado o eliminado, también es quitado del portal."
+    fuente: [web-https-documentacion-s10peru-com-manual-p-s026]
+relacionados: [portal-proveedor.consultar-documentos-pendientes-de-pago, administrativo.definir-aprobadores-de-pagos]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-p-s021, manual: "Manual del Portal del Proveedor", seccion: "2.1.1 Datos de la empresa", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-p-s024, manual: "Manual del Portal del Proveedor", seccion: "2.2.1 Configuración inicial", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-p-s022, manual: "Manual del Portal del Proveedor", seccion: "2.1.2 Registro de Proveedores", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-p-s023, manual: "Manual del Portal del Proveedor", seccion: "2.1.3 Configuración en el módulo Administrativo", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-p-s025, manual: "Manual del Portal del Proveedor", seccion: "2.2.2 Órdenes de Pago", pagina: null}
+  - {id: img-faa13a76dcbc-0000, manual: "Manual del Portal del Proveedor", seccion: "faa13a76dcbc.png", pagina: null}
+  - {id: img-afa0c67e3659-0000, manual: "Manual del Portal del Proveedor", seccion: "afa0c67e3659.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-p-s026, manual: "Manual del Portal del Proveedor", seccion: "2.2.3 Pagos", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

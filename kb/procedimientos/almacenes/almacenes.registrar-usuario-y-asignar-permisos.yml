@@ -1,0 +1,172 @@
+id: almacenes.registrar-usuario-y-asignar-permisos
+version: 1
+modulo: almacenes
+titulo: "Registrar un usuario del módulo de Almacenes y asignarle permisos"
+objetivo: "Adicionar en el escenario de mantenimiento de Usuarios a quienes necesitan acceso al módulo y asignarles una categoría y permisos sobre los escenarios, los catálogos y los atributos especiales."
+nivel: avanzado
+preguntas:
+  - "cómo creo un usuario nuevo para el almacenero"
+  - "como le doy permisos a un usuario en almacenes s10"
+  - "el almacenero no puede entrar al escenario de egresos, cómo le doy acceso"
+  - "como hago para que el almacenero no modifique el catálogo de recursos"
+  - "qué categoría le pongo a un usuario: jefe de grupo, especialista o invitado"
+  - "como le quito acceso a un escenario a un usuario"
+  - "como registro usuarios y les asigno categoria en el modulo de almacen"
+  - "quiero que un usuario solo vea los datos sin poder cambiar nada"
+  - "como asigno el usuario que audita el catalogo de recursos"
+aliases:
+  - "registrar usuario"
+  - "permisos de usuario"
+  - "dar acceso a escenarios"
+  - "asignar categoría"
+  - "atributos especiales"
+  - "atributos de uso"
+entidades:
+  modulo: "Almacenes"
+  pantallas: ["Mantenimiento de usuarios", "Módulos", "Escenarios", "Catálogos", "Atributos especiales"]
+  objetos: ["usuario", "categoría", "permisos", "socio de negocio", "jefe de grupo", "especialista"]
+prerrequisitos:
+  - texto: "Los usuarios que necesitan acceso al módulo deben estar registrados previamente en el catálogo de Socio de Negocio por Tipo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s161]
+pasos:
+  - n: 1
+    id: "almacenes.registrar-usuario-y-asignar-permisos#1"
+    accion: "Ingrese al escenario de mantenimiento de **Usuarios**, donde al usuario se le adiciona y se le asigna una categoría y permisos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s161]
+    pagina: null
+  - n: 2
+    id: "almacenes.registrar-usuario-y-asignar-permisos#2"
+    accion: "Registre el nombre de la empresa o constructora con **Nuevo grupo**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s161, img-0ce3a97e0345-0000]
+    pagina: null
+    fotos:
+      - id: "4bc8498e0df1"
+        ruta_o_url: "imagenes/manual-de-almacenes/0ce3a97e0345.png"
+        pagina: null
+        ocr: "Mantenimisnt BT #} dos los suovios mm Fneors |\node Usuarios Luego, #35 invtados (5 Nuevo grupo"
+      - id: "74107276928e"
+        ruta_o_url: "imagenes/manual-de-almacenes/952d988d7459.png"
+        pagina: null
+        caption: "Registre el nombre de la empresa o constructora"
+        ocr: "‘Sa Grupo.\nCédigo foz\nDescripcién oes\nAdicionar | Cancelar |"
+  - n: 3
+    id: "almacenes.registrar-usuario-y-asignar-permisos#3"
+    accion: "Registre los subgrupos: **Personal Técnico** y **Personal Administrativo**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s161]
+    pagina: null
+    fotos:
+      - id: "950a9116b275"
+        ruta_o_url: "imagenes/manual-de-almacenes/cf8ae56db648.png"
+        pagina: null
+        caption: "Registro de Subgrupos: Registre a Personal Técnico y Personal Administrativo"
+        ocr: "BAR todes les Unuzios ee |\nInvitacdos: = Descripcién Personal Técnico\nSEWESE S/S nuevo subgrupo J\nLuego,"
+  - n: 4
+    id: "almacenes.registrar-usuario-y-asignar-permisos#4"
+    accion: "Registre a cada usuario: en **Usuario**, el nombre con el que ingresará al sistema, y en **Clave**, una cadena de caracteres alfanuméricos de hasta 12 caracteres."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s161, img-f30291cde03c-0000]
+    pagina: null
+    fotos:
+      - id: "479d2321e726"
+        ruta_o_url: "imagenes/manual-de-almacenes/f30291cde03c.png"
+        pagina: null
+        ocr: "ff Usuario Es el nombre con el que\nel usuario Andrade Andrade, Andrés\nCédigo o101 joo ingresara al sistema\nUsuario ay | |\nClave ¢eq {La clave es una cadena de\n@raaeet — caracteres alfanumeéricos\nonmnmacion fsseeseee emi (de hasta12 caracteres\nde la clave\nEmpleado 02100019) Andrade Andrade, Andrés o 44\nfee 0) Muestra el Catalogo de\n. Idetificadores, para elegir a\nAdmnisttador de Sgtemas/ [] +b) And…"
+      - id: "5a8cdbb759fb"
+        ruta_o_url: "imagenes/manual-de-almacenes/21a9b1fb2754.png"
+        pagina: null
+        caption: "Registro de usuarios"
+        ocr: "& Todos los Usuaris\né Invitados\nEl fig Constructors\n¢ Zemi —/0 wevowsso\n@ Personal Administrative"
+  - n: 5
+    id: "almacenes.registrar-usuario-y-asignar-permisos#5"
+    accion: "Si el usuario auditará un catálogo, asígnele su color: azul para socio de negocio, guinda para recursos, amarillo para unidades, negro para tipos de documentos, verde para moneda, formas de pago y partidas de control general, y rojo para métodos de pago, motivo de pago y configuración."
+    resultado: "El sistema permite tener hasta 6 usuarios para auditar la base de datos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s161]
+    pagina: null
+  - n: 6
+    id: "almacenes.registrar-usuario-y-asignar-permisos#6"
+    accion: "Ponga una selección para el encargado de informática de su empresa: puede registrar usuarios y asignar categoría y permisos, pero tiene limitaciones para usar los módulos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s161]
+    pagina: null
+  - n: 7
+    id: "almacenes.registrar-usuario-y-asignar-permisos#7"
+    accion: "Para asignar la categoría, elija en el árbol al usuario."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s161]
+    pagina: null
+    fotos:
+      - id: "aa6134cfb323"
+        ruta_o_url: "imagenes/manual-de-almacenes/4840ebe29f1c.png"
+        pagina: null
+        caption: "En el árbol se muestra a los usuarios:"
+        ocr: "a Todos los Usuarios\nFE) €f} Costructora $10\nE- Obras\n\n@ Andrade Andrade, Andres\n@ Polo, José\n\n@ Ramirez Nufiez, Jose\n\n@ Garcia Dulanto, Rafael\n\n@ Martinez Luna, Pedro\n\n@ Ocampo Lazo, César\n\n@ Valencia Taco, Alberto"
+      - id: "0d0418100a56"
+        ruta_o_url: "imagenes/manual-de-almacenes/07b535423ebd.png"
+        pagina: null
+        caption: "En el árbol elija un usuario, luego,"
+        ocr: "——————— a\nPresupuestos Jefe de Grupo\nCompras Jefe de Grupo\nAlmacenes Jefe de Grupo bd\nPedidos ‘Administrador de Médulo\nLean Jefe de Grupo =(6-2) dl\nAdministrativo Ming\nAdministracion de informacion Jefe de Grupo\nFacturacién Li\nGestion\nContabilidad Jefe de Grupo bd\nen ee ee"
+  - n: 8
+    id: "almacenes.registrar-usuario-y-asignar-permisos#8"
+    accion: "Elija la pestaña **Módulos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s161]
+    pagina: null
+  - n: 9
+    id: "almacenes.registrar-usuario-y-asignar-permisos#9"
+    accion: "Use el botón que muestra las categorías y asigne la que corresponda: **Administrador de sistemas**, **Jefe de grupo**, **Especialista**, **Usuario** o **Invitado** (este último solo puede ver los datos de los escenarios que se le asignen)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s161, web-https-documentacion-s10peru-com-manual-d-s162]
+    pagina: null
+  - n: 10
+    id: "almacenes.registrar-usuario-y-asignar-permisos#10"
+    accion: "Para los accesos a los escenarios, elija la pestaña **Escenarios**, haga clic derecho en la lista de escenarios disponibles y use el menú para **dar acceso**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s162]
+    pagina: null
+    fotos:
+      - id: "c05e24e0297d"
+        ruta_o_url: "imagenes/manual-de-almacenes/8b3ab0fceab0.png"
+        pagina: null
+        caption: "Para el usuario elegido en el árbol, desde esta ventana se le asigna accesos a los diferentes escenarios, catálogos o funciones que podría cumplir este usuario según a las responsabilidades asignadas."
+        ocr: "=] ALMACENES: FE\n(=) Inicio |\nIngresos.\nEgresos Dar acceso <<)\nSack =®) C1 Quitar acceso\ni Lah Acceso total\nGuias de Remision\nCompras y Ventas Ningun acceso\nCompras y Ventas detallado © Nota\nFondos Rotatorios a\nModulos @Escenarins Catélogos )Atributos especiales/"
+  - n: 11
+    id: "almacenes.registrar-usuario-y-asignar-permisos#11"
+    accion: "Para los accesos a los catálogos, elija la pestaña **Catálogos**, haga clic derecho en la lista de catálogos disponibles y use el menú para **dar acceso**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s162]
+    pagina: null
+    fotos:
+      - id: "d83ce216075d"
+        ruta_o_url: "imagenes/manual-de-almacenes/972553b7bb56.png"
+        pagina: null
+        caption: "Acceso a los catálogos"
+        ocr: "[| CATALOGOS GENERALES: [\nRecursos a\nSocios de Negocio oO\nUbicacién Geografica Oo\nUnidades ol Dar acceso =(c)\nProyectos ~6) (C1 |O Quitar acceso\nIndices Unificados |\nMonedas oO\nTipo de Documento O |G Nngun acceso\nFoma de pago | Nota\nCategorias O Yi\nModulos Escenanos) ), Catalogosa(a)Atributos especiales /"
+  - n: 12
+    id: "almacenes.registrar-usuario-y-asignar-permisos#12"
+    accion: "En cada catálogo, seleccione lo que el usuario podrá hacer: efectuar nuevos registros, modificar registros, eliminar registros, adicionar notas e imprimir; y seleccione el catálogo que auditará el usuario."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s162]
+    pagina: null
+  - n: 13
+    id: "almacenes.registrar-usuario-y-asignar-permisos#13"
+    accion: "Elija la pestaña **Atributos especiales** y seleccione los que correspondan (por ejemplo, el que permite aprobar especificaciones de los equipos)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s163]
+    pagina: null
+    fotos:
+      - id: "c410a3abac8b"
+        ruta_o_url: "imagenes/manual-de-almacenes/1e105c895c29.png"
+        pagina: null
+        caption: "Llamada a: Elija la pestaña Atributos especiales."
+        ocr: "‘Aprobar Esnecificaciones de eauinos ve)\nModificar transacciones contabilizadas Dynamics re)\nModulos Escenarios Catalogos (@)eAtributos especiales /"
+verificacion: []
+errores_frecuentes:
+  - sintoma: "El almacenero registra o modifica recursos del catálogo."
+    solucion: "Para el almacenero, defina la categoría Especialista y que no registre ni modifique los recursos."
+    fuente: [img-3ef4c298a868-0000]
+  - sintoma: "Otro usuario no ve la información de un proyecto."
+    solucion: "Solo la persona que registre el proyecto tendrá acceso a este, pero puede invitar a otros usuarios para que compartan la información del proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s163]
+  - sintoma: "El usuario tiene permiso para eliminar en un catálogo y aun así no puede eliminar un registro."
+    solucion: "El permiso elimina registros del catálogo siempre y cuando no estén participando en una aplicación."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s162]
+relacionados: [almacenes.asignar-usuarios-al-proyecto]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s161, manual: "Manual de Almacenes", seccion: "3.24.1 Mantenimiento de usuarios (1)", pagina: null}
+  - {id: img-0ce3a97e0345-0000, manual: "Manual de Almacenes", seccion: "0ce3a97e0345.png", pagina: null}
+  - {id: img-f30291cde03c-0000, manual: "Manual de Almacenes", seccion: "f30291cde03c.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s162, manual: "Manual de Almacenes", seccion: "3.24.1 Mantenimiento de usuarios (2)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s163, manual: "Manual de Almacenes", seccion: "3.24.1 Mantenimiento de usuarios (3)", pagina: null}
+  - {id: img-3ef4c298a868-0000, manual: "Manual de Almacenes", seccion: "3ef4c298a868.png", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

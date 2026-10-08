@@ -1,0 +1,300 @@
+id: administrativo.pagar-detracciones-y-subir-constancias
+version: 1
+modulo: administrativo
+titulo: "Pagar detracciones con una orden de pago tipo Tributos e importar las constancias"
+objetivo: "Registrar una orden de pago tipo Tributos con los documentos afectos a detracción, aprobarla, ejecutar el pago electrónico que genera el archivo TXT para la SUNAT o el banco, e importar después el TXT de constancias de detracción para que el número de constancia quede registrado en cada documento."
+nivel: avanzado
+preguntas:
+  - "cómo pago las detracciones de las facturas de proveedores en s10"
+  - "como hago la orden de pago de detraccion"
+  - "dónde se genera el txt de detracciones para subir a sunat"
+  - "como subo las constancias de detraccion al sistema"
+  - "como importo el txt de constancias que me da sunat"
+  - "la factura tiene detraccion como pago solo la detraccion"
+  - "en que carpeta se guarda el txt del pago electronico de detracciones"
+  - "no me sale la opcion documento con tributo en la orden de pago"
+  - "como registro el numero de constancia de detraccion en las facturas sin hacerlo una por una"
+  - "pago de detraciones tipo tributos paso a paso"
+aliases:
+  - "pagar detracciones"
+  - "orden de pago tipo tributos"
+  - "pago de detracción"
+  - "importar constancias de detracción"
+  - "txt de detracciones"
+  - "constancia de detracción"
+entidades:
+  modulo: "Administrativo"
+  pantallas: ["Ordenes de Pago", "Orden de Pago", "Cronograma de Pagos", "Pendientes de Pago", "Pagos"]
+  objetos: ["orden de pago", "detracción", "factura", "cuenta bancaria", "archivo TXT", "constancia de detracción"]
+prerrequisitos:
+  - texto: "Los socios de negocio a quienes se pagará deben tener creada la cuenta bancaria tipo Detracción en su perfil del catálogo de Socios Negocios."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s040]
+  - texto: "En el catálogo de Bancos, el banco debe estar configurado con el Formato de Exportación para generar el archivo electrónico sin problemas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s042]
+  - texto: "En la factura afecta a detracción, la detracción debe mostrarse independiente en el registro."
+    fuente: [web-https-documentacion-s10peru-com-realizar-s000]
+pasos:
+  - n: 1
+    id: "administrativo.pagar-detracciones-y-subir-constancias#1"
+    accion: "Valide en el campo **Cronograma de Pagos** de la factura que la detracción se encuentre independiente, para procesar en el módulo Administrativo el pago exclusivamente de la detracción."
+    fuente: [web-https-documentacion-s10peru-com-realizar-s000]
+    pagina: null
+    fotos:
+      - id: "ca1a1264001c"
+        ruta_o_url: "imagenes/realizar-pago-factura-afecta-detraccion-subir-constancias/1bb10216dfa3.png"
+        pagina: null
+        caption: "Validar en el campo “CRONOGRAMA DE PAGOS”, que la detracción se encuentre independiente, para poder de esta manera en el modulo administrativo procesar el pago exclusivamente de la detracción. Ver imagen"
+        ocr: "4@) 001 FACTURAS TERCEROS - ao x\nCe slativo a]\n\nEmitido a [22000031 [CARMEN INMUEBLES SA =| | | Pfocvoocc00% NN? [000000008893]\nSucusal [22000031 [CARMEN INMUEBLES SA | ¢4) RUC 10295583725\n“ Proveedor [22000160 [DIAZ QUIROZ, CARLOS ALBERTO = a4)\ndFecha [08/01/2020 ~ Fecha as/o1/2020 ~| Fecha [ogvo/2020 ~\n\nree vt rin\n\nde (0870172020 ~][20200% ]Enero 2020 Abierto) Tipo cambio no oficial [22270]\n\napl…"
+  - n: 2
+    id: "administrativo.pagar-detracciones-y-subir-constancias#2"
+    accion: "Ingrese al módulo Administrativo, grupo **Pagos**, escenario **Ordenes de Pago**, haga clic derecho y elija **Adicionar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s041, web-https-documentacion-s10peru-com-realizar-s000]
+    pagina: null
+    fotos:
+      - id: "3e7c5c3ebc9f"
+        ruta_o_url: "imagenes/manual-de-administracion/650a431aee01.png"
+        pagina: null
+        caption: "Ingresar Al Módulo Administrativo, Grupo Pagos, Escenario Orden de Pago."
+        ocr: "» $10 Administrativo: 00002490 - MI CASITA SA - Principal BEE\n= Archivo Yer Catélogos Herramientas 2\n46h aw\ni Tema 7\na Ordenes de Pago\nOrdenes de Pago\nWl\nel |_| @ Afo-Mes: 201312 - Diciembre 2013\nPendientPs de Pago: = (@ Afio-Mes: 201401 - Enero 2014\n| | Gi Afiosmes: 201402 - Febrero 2014\neo | | @ Afio.Mes: 201403 - Marzo 2014 Clic Derecho\nEmitidostfn Custodia |_| (2) Afic-Mes: 201405 - Mayo 2014 …"
+  - n: 3
+    id: "administrativo.pagar-detracciones-y-subir-constancias#3"
+    accion: "En la ventana **Orden de Pago**, elija el tipo **Tributos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s041, web-https-documentacion-s10peru-com-realizar-s000]
+    pagina: null
+    fotos:
+      - id: "ce1eae4db22c"
+        ruta_o_url: "imagenes/realizar-pago-factura-afecta-detraccion-subir-constancias/433b29802eed.png"
+        pagina: null
+        caption: "Para el pago de las detracciones, nos ubicamos en el modulo administrativo, escenario pagos, y nos ubicamos en el campo ordenes de pago. Clic derecho, adicionar, y vamos a elegir la opción tributos. Ver imagen"
+        ocr: "Archivo Ver Catélogos Herramientas ?\nS4RGRe8\n‘Sucursales a] Orden de Pago\n_@ gg Escritorio [Order\nPagos M CARMEN INML Empresa 22000031 CARMEN INMUEBLES S.A.\n2 oe eas ee\n<2 Archivo Central\ney yy Pree 1 Fae crocs cs\n|Cuenta Bancaria\n_— — > nl ae *\nw <a> ali =~ =\nPendientes de Pago | | Fecha de 1710472020 +] Two de cambio [_ 3.411] Seeaae racine 1710472020 ~~\n|_| 000} Bocumentos por pagar\n‘Custodia 0…"
+  - n: 4
+    id: "administrativo.pagar-detracciones-y-subir-constancias#4"
+    accion: "Indique que la orden será un **Pago electrónico**: con solo ese check genera la estructura vía web según el banco; con el check de pago electrónico y el de pago de ventanilla genera el TXT para la ventanilla del Banco de la Nación."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s041, web-https-documentacion-s10peru-com-realizar-s000]
+    pagina: null
+  - n: 5
+    id: "administrativo.pagar-detracciones-y-subir-constancias#5"
+    accion: "Seleccione si el pago que va a realizar será una detracción o una autodetracción."
+    fuente: [web-https-documentacion-s10peru-com-realizar-s000]
+    pagina: null
+    fotos:
+      - id: "0d90b71416ce"
+        ruta_o_url: "imagenes/realizar-pago-factura-afecta-detraccion-subir-constancias/ef7ff341fc7a.png"
+        pagina: null
+        caption: "Se tiene que indicar dentro de la orden de pago, que dicha orden será como pago electrónico, luego seleccionar si el pago que se va realizar será una detracción o autodetracción, para el presente caso estamos indicando que el pago que realizaremos será detracción. Ver imagen"
+        ocr: "&] Orden de Pago - o x\n\nEmpresa 22000031 CARMEN INMUEBLES S.A. N° Orden de Pago\n\neer Principal 000319\n\nCoes omeserts ons rieranmtairy recIe-Con res oeREABRENS — |e] 2 eee\narse\n\noem Ses Aetna ee\n\nDescripcién [PAGODETRACIONPRUEBA—“‘—S™s™S™SsSs*~S~*~S~S~S~S~—CSOSSSSSS\n\nFecha de Pago [1710472020 ~] Tipo de cambio [ 2.411]am] Fecha vencmien'0 [7704/2020 ~]\n\nOheervarinnae TT S|"
+  - n: 6
+    id: "administrativo.pagar-detracciones-y-subir-constancias#6"
+    accion: "Seleccione la cuenta bancaria origen de la empresa, que realizará el pago a las cuentas destino de los proveedores tipo Detracción."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s041]
+    pagina: null
+    fotos:
+      - id: "d8926da8a506"
+        ruta_o_url: "imagenes/manual-de-administracion/be9d633933c4.png"
+        pagina: null
+        caption: "Seleccionar la cuenta bancaria origen en este caso de la empresa MI CASITA S.A.C. Que realizará el pago a las cuentas destinos de Proveedores tipo Detracción; En este caso realizaremos el PAGO ELECTRÓNICO para que la transacción sea Vía Web del Banco."
+        ocr: ", S10 Administrativo: 00002490 - MI CASITA SA - Principal. SEI ES)\n| Archivo Ver Catélogos Herramientas 2\nG6R nme el Darian ia rene nor\nia Ordenes de Pago (ity rin ‘000711\n=a |__|\noe Cuenta Bancaria | frsi-1768223.0-34 [ocr 191-1765225-0-34(5/) === |] © Paao_por Verano)\nOrdenes de Pago Moneda HUEVOS SOLES ‘Saldo Actual salto. ible 1,3 95.62\nDescripcién [PAGODETRACGIONESDELMES\nendertes de Page |[ |…"
+  - n: 7
+    id: "administrativo.pagar-detracciones-y-subir-constancias#7"
+    accion: "En el detalle de la orden de pago, haga clic derecho y elija **Documento con Tributo**."
+    resultado: "Aparece el cronograma de pagos con los documentos que tienen exclusivamente detracción, con el importe a pagar por detracción."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s041, web-https-documentacion-s10peru-com-realizar-s000]
+    pagina: null
+    fotos:
+      - id: "dda8f9895bc3"
+        ruta_o_url: "imagenes/manual-de-administracion/cd0b50c6839d.png"
+        pagina: null
+        caption: "a. Documento con Tributo: Aparecerá el cronograma de pagos con los Documentos que tienen exclusivamente detracción con el importe a pagar por Detracción. b. Otros Documentos: Es posible agregar otro tipo documento con o sin Detracción."
+        ocr: "“7, $10 Administrative: 00002490 - MI CASITA SA - Principal =181 x!\n© Brchivo Yer Catélogos Herramientas 2\nwitty ‘MOrden de Pago BEd\nff tern = Empresa (00002490 il CASITA SA N® Orden de Pago\naS Ordenes de Pago ooo7tt\nPager con F Pago Bectréico Esto\nCuenta Barcaria _ffe-i7esnme0- [ach T01t7eSzz5024(6) a] a) Papo Vora\nEsato\n‘Ordenes de Pago Moneda NUEVOS SOLES ‘Saldo Actual 502.99 Saldo Dispor 1,362…"
+  - n: 8
+    id: "administrativo.pagar-detracciones-y-subir-constancias#8"
+    accion: "En la ventana del **Cronograma de Pagos**, seleccione los documentos a pagar: se observan los importes exclusivamente de la detracción."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s041, web-https-documentacion-s10peru-com-realizar-s000]
+    pagina: null
+    fotos:
+      - id: "e584ac468350"
+        ruta_o_url: "imagenes/manual-de-administracion/e98ccd1dcf95.png"
+        pagina: null
+        caption: "En este Caso utilizaremos la Opción DOCUMENTOS CON TRIBUTOS, aparecerá la ventana del Cronograma de Pagos, seleccionar los documentos a pagar, se Observa los importes exclusivamente de la Detracción."
+        ocr: "$10 Administrativo: 00002490 - MI CASITA SA - Principal 18)\n© Archivo Ver Catélogos Herramientas 2\n4S64heReaa Orden de Pago |= (of)\nEig) Tema | #]Cronograma de Pagos [-[oid\nFe] — Ueittcar bs parila para agregar loe documentos a la Orden de Page i\n. EEZELEREEree\nED eriodo Aplicacién ‘ipo Detraccién.\nOrdenes de Pago\n1403, Campo[Soce de Negocio (lencualquer poscién >| [X22] Grupo: To Documenta Tipe g…"
+      - id: "a7eeeac02586"
+        ruta_o_url: "imagenes/realizar-pago-factura-afecta-detraccion-subir-constancias/8249bfe6b3c3.png"
+        pagina: null
+        caption: "Al realizar el procedimiento antes mencionado hacer clic derecho en la parte inferior espacio en blanco, y daremos clic en la única opción “Documento con tributo”. Y se procede a seleccionar el documento que se quiere cancelar. Ver imagen."
+        ocr: "] uUuUsTY)\nSucursal Principal\nPearson [Pan chine esas\nCuenta Bancaria — [2451133061077 [BCP SOLES 2151133061077 = 64)\nMoneda SOLES Saldo Actual -758,833.13 Saldo Disponible 99,999,999,235,525.90\nDescripcién PAGO DETRACION PRUEBA\n; Fecha vencimiento\nFecha de Pago 17/04/2020 ~| Tipo de cambio Les\" nx, {17/08/2020\nObservaciones |\nDocumentos por pagar\nSMAReS vaF aaa\no/o Campo|Proveedor }|En cualquier …"
+  - n: 9
+    id: "administrativo.pagar-detracciones-y-subir-constancias#9"
+    accion: "Grabe la orden de pago con la opción **Aceptar**."
+    resultado: "En el detalle de la orden de pago se observan los documentos con detracción, con importes exclusivos por el cálculo del % de detracción."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s041]
+    pagina: null
+    fotos:
+      - id: "bb54222921d9"
+        ruta_o_url: "imagenes/manual-de-administracion/ec564a0ef56b.png"
+        pagina: null
+        caption: "Grabar la Orden de Pago con la Opción ACEPTAR. Se Observa en el Detalle de la Orden de pago los Documentos con detracción con importes exclusivos por el cálculo del % de Detracción."
+        ocr: "“$10 Administrativo: 00002490 - MI CASITA SA - Principal 121) x)\n| fechivo Yer Cetélogos “Herraientas 2, Pr arraes Bes\nI Baw B\nS6Q5Ra8 — eee N® Orden de Pago\ni @ Tera a 000714\nif Ordenes dé: Ere Principal\nfrome | Taps Roe FF Pogo Beckie Eo\ny CuertsGaneaia ertvesizeae foc a1-1765008034(0) a] a) Pago po Verna\n:\nOrdenes de Pago (STE NUEVOS SOLES Salo Actual 362,502.90 Said Disponible 1362,655.62\n[| 2…"
+  - n: 10
+    id: "administrativo.pagar-detracciones-y-subir-constancias#10"
+    accion: "Haga clic derecho sobre la orden de pago y elija **Enviar a aprobación**."
+    fuente: [web-https-documentacion-s10peru-com-realizar-s000, web-https-documentacion-s10peru-com-manual-d-s041]
+    pagina: null
+    fotos:
+      - id: "e8ed44a60aea"
+        ruta_o_url: "imagenes/realizar-pago-factura-afecta-detraccion-subir-constancias/62fa0a838bee.png"
+        pagina: null
+        caption: "Luego de generar el pago, se tiene que enviar a aprobación, clic derecho “Enviar a aprobación”. Ver imagen"
+        ocr: "Ordenes de Pago\n[todos Periode [202004 [Abri2020 =| | F |\n[roxnastee _[oectesn [rae _[toean,\n|| Bsieder Apostate\n| GB Exteda: Repstnado\n000319 PAGO DETRACION PRUEBA 1133061077 :\nD Adicionar\n|_| 000314 PAGO RH = ea 1133061077 si. :\n|_| 000313 PAGO CF og eer 1129890146 Us :\nX Eliminar\nI )\nana"
+      - id: "85fdd31a53d3"
+        ruta_o_url: "imagenes/manual-de-administracion/f23b436ed01b.png"
+        pagina: null
+        caption: "Luego Enviar a Aprobación y Aprobar por el usuario calificado y con permisos."
+        ocr: "(2; 510 Administrativo: 00002490 - MI CASITA SA - Principal (2, 510 Administrativo: 00002490 - MI CASITA SA - Principal\nArchivo Yer Catélogos Herramientas 2 Archivo Yer Catélogos Herramientas 2\n6R5Raa 6h5R aa\nEg) Tema Yr, ed Eg) Tema Yr, :\nE} Orderss de Pago E Orleres de Pago\n(wr 2ye. gaa 3 (wr 2Ye. gaa 6\na a\nEstado stato\nOrdenes de Pago Ordenes de Pago\n| [Norden dep... [Descrpcén | Pagar con uc |…"
+  - n: 11
+    id: "administrativo.pagar-detracciones-y-subir-constancias#11"
+    accion: "Con el usuario calificado y con permisos, haga clic derecho, elija **Aprobar** y confirme la aprobación."
+    fuente: [web-https-documentacion-s10peru-com-realizar-s000, web-https-documentacion-s10peru-com-manual-d-s041]
+    pagina: null
+    fotos:
+      - id: "34b1a63fb599"
+        ruta_o_url: "imagenes/realizar-pago-factura-afecta-detraccion-subir-constancias/fa8ef829c430.png"
+        pagina: null
+        caption: "Luego de enviar la aprobación, clic derecho aprobar y confirmar la aprobación. Ver imagen"
+        ocr: "@ Estado: Aprobado\nG Estado: Por aprobar\nG Estado: Registrado\n000314 PAGO RH ‘Sistema 10 - Administrativo 3.46 700.00\n000313 PAGO CIF 344 5,366.74\ne Esta seguro de aprobar la Orden de Pago N* 000319?\n4 4 RegstroSde7 > » m 4 [Gu Cy)\n(Ave Ye » waa o =\nSocio de Negocio Tipo Docume... | N*Documento | Fecha Docu... ond Total Monto Progr... | Saldo Progra... | Se autoriza"
+  - n: 12
+    id: "administrativo.pagar-detracciones-y-subir-constancias#12"
+    accion: "Ingrese al escenario **Pendientes de Pago**, elija en la cabecera el tipo **Tributos** y ubique la orden de pago aprobada."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s041, web-https-documentacion-s10peru-com-realizar-s000]
+    pagina: null
+    fotos:
+      - id: "8fcc146cb6cf"
+        ruta_o_url: "imagenes/manual-de-administracion/1f58249a6bbf.png"
+        pagina: null
+        caption: "Ingresar al Escenario PENDIENTES DE PAGO, y Ubicar la Orden de pago anteriormente APROBADA. Elegir en la cabecera Pagos Tipo TRIBUTOS."
+        ocr: "®, $10 Administrativo: 00002490 - MI CASITA SA - Principal Lei)\n| Archivo Yer Catélogos Herramientas 2\n46R0Re88\n£ ig) Teme j\ne) Pendientes de Pago\nYo Fee |\nTolle\nSo Elegir Tipo Tributos\ncordenes de Pago _[inrorden deans\nWs Cmpfrod er sllnadue os Sf SSCSCSCSCSCSCS*«Si*Cd ce\noil Seo de Nemes | RR ORR as IN Cuenta Tipo Documertc|N*Docunerio [Fecha Docume Noneda Total___|  Tetalpago_|observecones ede\n…"
+      - id: "0253117b0ec9"
+        ruta_o_url: "imagenes/realizar-pago-factura-afecta-detraccion-subir-constancias/e5a90e16cad9.png"
+        pagina: null
+        caption: "Luego para visualizar el documento aprobado, ir al campo “Pendientes de pago” y seleccionar tributos, ya que el documento que se está pagando es una detracción."
+        ocr: "Archivo Ver Catdélogos Herramientas 2?\n6h Ela ae\nSucursales :\n2 aaj Escrtorio Pendientes de Pago\nPagos MM CARMEN INMU\nBandeja Pagar con | Cuenta Bancaria x\nsome\n| py ||Notade Crédito\n“4 Tributos a cS\nOrdesiess eke Page Arras .c has . desea agrupar.\nojo ‘Campo }Tipo Documento | |En cualquier posicién _v\nyy N* Orden di| Descripcion Orden de Pago _|N* Cuenta Socio de Negocio Tipo Di\n(000226 PAGO OBRE…"
+  - n: 13
+    id: "administrativo.pagar-detracciones-y-subir-constancias#13"
+    accion: "Haga clic derecho sobre la orden de pago aprobada y elija **Pago Electrónico**."
+    resultado: "Aparece una ventana de pagos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s041, web-https-documentacion-s10peru-com-realizar-s000]
+    pagina: null
+    fotos:
+      - id: "030119af22bd"
+        ruta_o_url: "imagenes/manual-de-administracion/1c7eab88c71c.png"
+        pagina: null
+        caption: "Aparece el detalle de la información de las Ordenes de Pago Aprobadas tipo Tributo, en nuestro caso es la Orden de pago N° 000711, Clic Derecho Pago Electrónico."
+        ocr: "?, S10 Administrativo: 00002490 - MI CASITA SA - Principal 1-151 x)\n| Archivo Yer Catélogos Herramientas 2\n6h eh\n: i Pendientes de Pago\nToMPRa| var eae\nordenes de Pago |p Nrorden ds Pago\n2113 ___Campo|N° Orden de Pago. [Jen cualquier posiciin =I) Grupo:\nYW Sedo denegosio _[Deserien Orden de Pogo [erGienia [eo Doser\" bacinerto [Fecha Doone] Weneda [Taal Tlalpan ser\nP cove\nPendientes de Pago |] 90 D…"
+      - id: "59e2e8dcf804"
+        ruta_o_url: "imagenes/realizar-pago-factura-afecta-detraccion-subir-constancias/71f7ed4d5ca3.png"
+        pagina: null
+        caption: "Luego hacer clic derecho, y seleccionar la opción pago electrónico, la finalidad de seleccionar la opción es que el sistema emite automáticamente un txt con el detalle de todos los documentos para subir a la página de la SUNAT. Ver imagen."
+        ocr: "Archivo Ver Catélogos Herramientas 2\n6RE/R a\nSucursales .\n= aj Escrtorio Pendientes de Pago\n1M CARMEN INML\n(+) y Bandeja Pagar con |Tributos +\nTOMHAR8 vf cde\ninteres de age Arrastre hacia aqui el encabezado de la columna que desea agrupar\nyi ‘Campo|Tipo Documento >} |En cualquier posicién < |\nYW N* Orden di| Descripcién Orden de Pago_|N° @uent Socio de Negocio Tipo Doct\n000319 PAGO DETRACION PRUEB…"
+  - n: 14
+    id: "administrativo.pagar-detracciones-y-subir-constancias#14"
+    accion: "En la pestaña **Tipo Pago** de la ventana de pagos, revise el número de lote, que se genera automáticamente y es el correlativo único por empresa que se carga a la SUNAT."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s042]
+    pagina: null
+    fotos:
+      - id: "21438d34b620"
+        ruta_o_url: "imagenes/manual-de-administracion/838791340dd1.png"
+        pagina: null
+        caption: "Vista de Pestaña Tipo Pago se Observa el Número de lote que genera Automáticamente el cual sería el correlativo Único por empresa que se carga a la SUNAT."
+        ocr: "*\\\\Pago Je) x!\nEmpresa 00002490 MI CASITA SA Alterno\\”\n‘Sucursal Principal N° Pago\nProveedor foo002512 [BANCO DE CREDITO DEL PERU =] @&ffstedo — Pagado ones\ncueriaBancaria [Eqmasam PoP TESTS) cm] il] Mevedamuevos soLes Tho canbio\nya  E oo EG Incluir los ajustes en ta\nFecha transaccién [34/05/2014 Fecha de aplicacién [3/05/2014 a Generacion del TAT\nDeseripcién PAGO DETRACCIONES DEL MES 3\nDocumenta …"
+  - n: 15
+    id: "administrativo.pagar-detracciones-y-subir-constancias#15"
+    accion: "Haga clic en la opción **Aceptar** para grabar el pago."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s041]
+    pagina: null
+  - n: 16
+    id: "administrativo.pagar-detracciones-y-subir-constancias#16"
+    accion: "Cuando aparezca el aviso para generar el archivo TXT del pago electrónico, haga clic en **SI**."
+    resultado: "Se genera el archivo TXT del pago tipo Tributos y se guarda en la ruta C:\\S102000\\Pagos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s042, web-https-documentacion-s10peru-com-realizar-s001]
+    pagina: null
+    fotos:
+      - id: "67facc662cce"
+        ruta_o_url: "imagenes/manual-de-administracion/1171a5fa202a.png"
+        pagina: null
+        caption: "Al grabar aparecerá una Aviso de generar Archivo TXT Pago electrónico Clic en la Opción SI, para Obtener el archivo de carga a la Web por el Pago Tipo Tributos – Detracciones."
+        ocr: "“., 510 Administrative: 00002490 - MI CASITA SA - Principal Lala xf\n46RERBSe =\noe Pago BIE:\n: ig) Tema ji\nPendient (a 00002490 Mi CASITA SA Alternol? 200009\npoate [oe FAROE fe otoay\ni El\nVHEPAP cans emenia [TEST PSST Ak) Nenedo EVOS SOLES Toocanio\nOrdenes de Pago IN Orden de Pe forosnore >] revsnors >] Inchir los ajustes en la\nng ag) Fechatransaccién |31 08/2014 Fecha de aplicacion 14 im ‘generaci…"
+      - id: "1b6deb40fdfb"
+        ruta_o_url: "imagenes/realizar-pago-factura-afecta-detraccion-subir-constancias/7d49d760537d.png"
+        pagina: null
+        caption: "Dentro del pago propiamente ya generado también el sistema nos alerta para generar el archivo del pago electrónico. Ver imagen"
+        ocr: "i Peg0 - ia x\nEmpresa 22000031 CARMEN INMUEBLES S.A. AlternoN?\n‘Sucursal Principal NP Pago\nProveedor [22000022 [BANCO DE CREDITO DEL PERU =| @| Estado 90000570)\nCuenta Bancaria. [2151133061077 [BCP SOLES 2151133061077 = 44) Moneda SOLES Tipo cambio\n\nan = : Inciuir los ajustes en la\nFecha transaccién [17/04/2020 Fecha de aplicacion [17/04/2020 ~ rc eae\nAYv RNS GF eda\nProveedor [sistema 10- Administ…"
+      - id: "d4ce8460a63d"
+        ruta_o_url: "imagenes/manual-de-administracion/205dfeba9a1e.png"
+        pagina: null
+        caption: "C:\\S102000\\Pagos"
+        ocr: "CB ite - venti - suc ~ Pee ~ Buscar Pagos 5\nOrganizer > fincluren biblioteca y  Compartircon + Nueva carpeta =&y oe\n\n‘ie Favertos Nombre ~ Fecha de modficaciin | Tho Tamafio\n\n(Gy Bibtecas\n\n15) Documerfos\n\nJ Equipo\n\n‘ca Datos (0:)\n\nca Datos (:)\n\ni Red\n\na 11 elemento Estado: 22 Compartido"
+  - n: 17
+    id: "administrativo.pagar-detracciones-y-subir-constancias#17"
+    accion: "Use el archivo de texto para realizar el pago de las detracciones desde la web de SUNAT con la clave SOL; luego obtenga de la misma web el archivo de texto con todas las constancias y sus detalles."
+    fuente: [web-https-documentacion-s10peru-com-realizar-s001, web-https-documentacion-s10peru-com-manual-d-s042]
+    pagina: null
+    fotos:
+      - id: "ceba0c737a41"
+        ruta_o_url: "imagenes/realizar-pago-factura-afecta-detraccion-subir-constancias/9a6e73803d24.png"
+        pagina: null
+        caption: "Luego de generar, el archivo de texto lo podemos ubicar en la siguiente ruta: Disco C, carpeta S102000, carpeta Pagos. Donde encontraremos el archivo de texto y para confirmar se procede a abrir el archivo. Dicho archivo de texto se va utilizar para realizar el pago de las detracciones desde la web de SUNAT, utilizando la clave sol. Inmediatamente luego de realizar el pago mediante la Web de la SUNAT, se obtendrá de la misma web un archivo de texto con todas las constancias y sus respectivos detalles."
+        ocr: "“Nombre - Fecha de modifica... Tipo Tamafio\noe Acceso répido .\na BBVA_Haberes 00002917 04/02/2020 04:21... Documento de tex... 2KB\nMB Escritorio  -# >\nBBVA_Haberes 00004389 04/02/2020 04:22... Documento de tex... 1KB\nDescargas # [5] BBVACash_P00004917 04/02/2020 04:14... Documento de tex... 2B\nDocumentos # BIF_CTS_00012842 18/12/2019 11:44 a... Documento de tex... 1KB\n[El Imagenes # 20120788389200…"
+      - id: "f2dddb050b51"
+        ruta_o_url: "imagenes/manual-de-administracion/c6f691796d9c.png"
+        pagina: null
+        caption: "Vista del TXT que servirá para la carga a la WEB del Banco o Ventanilla para los pagos de los Tributos por Detracciones. Tener en cuenta que en el catálogo de Bancos, el banco en este ejemplo debe estar configurado con el Formato de Exportación para generar el archivo Electrónico sin problemas."
+        ocr: "GO» | = tive = decolocal(c) ~ siazonn ~ Pagos > KB [ buscar Pagos (2)\n‘organizer » Abr’ Compartircon ¥ Imprimir Nueva carpeta =+y he\nste Favortoe Nombre Fecha de modficaciin_| Tipo Tamafo\n‘a Bibiotecas\n1B becunentns 1020109925757140101; Bloc de notas BEE\nArchive Edin Formato ver Ayuda\n8 Equoo 201099257571 CASITA SA 140101000000001926900 5\nLdn 20255390288 022 00000000001180001201407\n& disco local (…"
+  - n: 18
+    id: "administrativo.pagar-detracciones-y-subir-constancias#18"
+    accion: "En el escenario **Pagos**, ubique el pago generado, haga clic derecho y elija **Importar constancias de detracción**."
+    resultado: "Se realiza la carga masiva al pago y el número de constancia de detracción se registra en cada documento de forma automática."
+    fuente: [web-https-documentacion-s10peru-com-realizar-s001, web-https-documentacion-s10peru-com-manual-d-s043]
+    pagina: null
+    fotos:
+      - id: "4870e5aaffb9"
+        ruta_o_url: "imagenes/realizar-pago-factura-afecta-detraccion-subir-constancias/044d1d731ddf.png"
+        pagina: null
+        caption: "La manera de importar el archivo de texto con los números de constancia de cada documento pagado, es ubicarnos en el escenario pagos, ir al pago que se ha generado, clic derecho y seleccionar la opción de “importar constancias de detracción”"
+        ocr: "Sucursales\nES Bean Pagos\nEy CARMEN INML\nte Principal .\n? . PTodos Periodo [202004 [Abril 2020 | Bal\nE Archivo Central a a\n—\nWy |_[Sseciodenegocio | rucdes... [wedoderago |r...» [w'Atemo | w'cuenta | Afio-tes\nendientes de Pago [_] Gl Estado: Pagado\n, |_| BANCO DE CREDITO DEL P... 2010004721... Transferencia Banc... 00000562 000001 2151133061077 202004 - Abril 20\n[| cracmcasur sa. 2045585972... Tran…"
+      - id: "031b640752ee"
+        ruta_o_url: "imagenes/manual-de-administracion/c752debf53c7.png"
+        pagina: null
+        caption: "Luego de realizar el pago tipo Tributos, es posible Importar las Constancias de Detracción del archivo TXT que SUNAT genera por la declaración (Números de Constancias de Detracción), de esta manera se realiza la carga masiva al pago y registrará el número de la constancia Detracción a cada documento de forma automática, es así como se ahorra el tiempo en ingresar la constancia de Detracción a cada documento."
+        ocr: "», $10 Administrativo: 00002490 - MI CASITA SA - Principal BEE\n\"Archivo Yer Catélogos Herramientas 2\nERe\nEig) Tema -\ni aoos\nPagos\nPagos\nTodas Periodo 201408 agosto 2014 =| #4\neee. ua\nOrdenes de Pago arrastre hacia aqui el encabezado de la columns que deses aarupar\nSoci de Negocio RUC de Socio de Nego..._ | Medio de Pago Naga N Cuenta Afo-Mes fio Deserincién Estada Maneda\na\nModificar\nX Eliminar\nAru…"
+  - n: 19
+    id: "administrativo.pagar-detracciones-y-subir-constancias#19"
+    accion: "Ingrese a la factura y compruebe que ya se encuentra registrado el número de detracción."
+    fuente: [web-https-documentacion-s10peru-com-realizar-s001]
+    pagina: null
+    fotos:
+      - id: "61dcf93afe6e"
+        ruta_o_url: "imagenes/realizar-pago-factura-afecta-detraccion-subir-constancias/5a9126acbe3c.png"
+        pagina: null
+        caption: "Finalmente, al culminar la importación de las constancias de detracción, para poder comprobar que efectivamente se llegó a importar las constancias de detracción, ingresamos a la factura y podremos apreciar que se encuentra ya registrado el número de detracción, requisito indispensable para el correcto envío del libro electrónico de compras. Ver imagen"
+        ocr: "#9) 001 FACTURAS TERCEROS = Oo x\nEmitido a [22000031 [CARMEN INMUEBLES S.A. _ Ey | pocoooo00% N°] 000000005893)\nSucursal {22000031 |CARMEN INMUEBLES S.A. we 64) RUC 10295583725\nProveedor [22000160 [DIAZ QUIROZ, CARLOS ALBERTO = 44)\nFecha [08/01/2020 ~ Fecha [ogvoi/2020 +] Fecha [os/oi2020 ~\nent a Ger\nde 1F704/2020 ~|[20200 ]abri 2020 (Abierto) Tipo cambio no oficial\naplicacién\nMoneda [01 [SOLES =]…"
+verificacion:
+  - texto: "Al ingresar a la factura se aprecia registrado el número de detracción, requisito indispensable para el correcto envío del libro electrónico de compras."
+    fuente: [web-https-documentacion-s10peru-com-realizar-s001]
+errores_frecuentes:
+  - sintoma: "Al hacer el pago aparece la observación de un socio de negocio sin cuenta bancaria."
+    solucion: "Visualícelo y agréguele la cuenta desde el pago (clic derecho, Propiedades); de lo contrario será una restricción para continuar con el pago."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s042]
+  - sintoma: "Aparece la advertencia de proyectos sin correo electrónico."
+    solucion: "Es una advertencia para que el TXT que se envía al banco contenga el correo de alerta a los beneficiarios; no es obligatorio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s042]
+  - sintoma: "Hizo un cambio posterior al pago y el TXT ya no está actualizado."
+    solucion: "Desde el escenario de Pagos es posible generar nuevamente el archivo TXT de pago electrónico del pago tipo Tributos; así se actualiza la información del TXT."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s043]
+relacionados: [administrativo.definir-aprobadores-de-pagos, administrativo.registrar-pago-con-cheque]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s040, manual: "Manual Administrativo", seccion: "5.6 Registro de la orden de pago para las Detracciones", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s042, manual: "Manual Administrativo", seccion: "5.6.1 Proceso de Orden de Pago Tipo Detracción (2)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-realizar-s000, manual: "Cómo realizar el pago de una factura afecta a detracción y subir las constancias al sistema 10", seccion: "Cómo realizar el pago de una factura afecta a detracción y subir las constancias al sistema 10 (1)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s041, manual: "Manual Administrativo", seccion: "5.6.1 Proceso de Orden de Pago Tipo Detracción (1)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-realizar-s001, manual: "Cómo realizar el pago de una factura afecta a detracción y subir las constancias al sistema 10", seccion: "Cómo realizar el pago de una factura afecta a detracción y subir las constancias al sistema 10 (2)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s043, manual: "Manual Administrativo", seccion: "5.6.2 Importación de TXT constancia Detracción", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

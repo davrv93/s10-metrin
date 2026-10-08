@@ -1,0 +1,97 @@
+id: portal-proveedor.consultar-documentos-pendientes-de-pago
+version: 1
+modulo: portal-proveedor
+titulo: "Consultar los documentos pendientes de pago en el Portal de Proveedores"
+objetivo: "Ver en el S10 Portal de Proveedores las facturas en estado Emitido o Parcialmente Pagado, revisar su detalle y descargarlas."
+nivel: basico
+preguntas:
+  - "como veo mis facturas pendientes de pago en el portal de proveedores"
+  - "soy proveedor, donde veo que facturas no me han pagado"
+  - "como reviso el detalle de una factura en el portal del proveedor"
+  - "como descargo mi factura desde el portal de proveedores"
+  - "que facturas salen en documentos pendientes de pago"
+  - "dnd veo las facturas parcialmente pagadas en el portal"
+  - "cual es la direccion del portal de proveedores de s10"
+  - "primera vez que entro al portal de proveedores, cual es mi clave?"
+aliases:
+  - "documentos pendientes de pago"
+  - "facturas pendientes"
+  - "pendientes de pago portal"
+  - "ver detalle factura proveedor"
+entidades:
+  modulo: "Portal del Proveedor"
+  pantallas: ["S10 Portal de Proveedores", "Documentos pendientes de pago"]
+  objetos: ["factura", "documento", "correo electrónico de bienvenida"]
+prerrequisitos:
+  - texto: "El usuario proveedor debe tener la autorización respectiva para ingresar al portal."
+    fuente: [web-https-documentacion-s10peru-com-manual-p-s002]
+pasos:
+  - n: 1
+    id: "portal-proveedor.consultar-documentos-pendientes-de-pago#1"
+    accion: "Ingrese al portal **S10 Portal de Proveedores** en la dirección https://s10its.com/SupplierPortalWeb."
+    fuente: [web-https-documentacion-s10peru-com-manual-p-s002]
+    pagina: null
+    fotos:
+      - id: "fdb44491b323"
+        ruta_o_url: "imagenes/manual-portal-proveedor/981228326058.png"
+        pagina: null
+        caption: "El usuario proveedor que desee consultar o ver detalles de los pagos de su empresa deberá ingresar al portal “S10 Portal de Proveedores” en la dirección https://s10its.com/SupplierPortalWeb, para lo cual debe tener la autorización respectiva."
+        ocr: "Welly) | | 2% J\nD) Supplier Portal x)\n¢€ Cc {I 54,94.249.71/SupplierPortalWeb/ QRryw):\nx\n\"t - 4 : 1\nc Me\n# ‘ Direccién de correo”\n. dlientepruebas10_3@hotmail.com\nro —\nbs\nte, 5\nWare, Has olvidado tu contrasefia’\n¥ ~ ' 3\n@ Sistema 10 , Derechos Reservados .\n< >"
+  - n: 2
+    id: "portal-proveedor.consultar-documentos-pendientes-de-pago#2"
+    accion: "Ingrese su dirección de correo electrónico y su clave; si ingresa por primera vez, la clave se encuentra en el correo electrónico de bienvenida."
+    fuente: [web-https-documentacion-s10peru-com-manual-p-s003]
+    pagina: null
+    fotos:
+      - id: "3361e3a8b4c8"
+        ruta_o_url: "imagenes/manual-portal-proveedor/2e59e3c8d363.png"
+        pagina: null
+        caption: "El usuario debe ingresar su dirección de correo electrónico y su clave. Si es que ingresa por primera vez, esta clave se encuentra en el correo electrónico de bienvenida, como el que se muestra a continuación:"
+        ocr: "Rely) |o S| 3%\n| Supplier Portal x ¥ GE Correo-clientepruebasi x\n2 C | @ Esseguro | https://outlooklive.com, 2 inbox ye):\nBuscar en Correo y Conta... {2 @® Nuevo|Y — [l Eliminar Hm Archivar Correonodeseado|V + tp v xX\nA Carpetas DE BIENVENIDA AL USUARIO\nBandeja de er 921\nConca ne daseadly rs) $10alerta <f_electronica@s10peru.com> @ © Responder | v\nmié 26/10/2016, 05:56 am\nBorradores Usted ¥\nElemen…"
+  - n: 3
+    id: "portal-proveedor.consultar-documentos-pendientes-de-pago#3"
+    accion: "En la sección **Facturación**, elija **Documentos pendientes de pago**."
+    resultado: "Se muestran los documentos o facturas que se encuentran en estado Emitido o Parcialmente Pagado."
+    fuente: [web-https-documentacion-s10peru-com-manual-p-s008, web-https-documentacion-s10peru-com-manual-p-s006]
+    pagina: null
+    fotos:
+      - id: "c6f46ac71bad"
+        ruta_o_url: "imagenes/manual-portal-proveedor/0423c0520d8b.png"
+        pagina: null
+        caption: "Muestra todos aquellos documentos o facturas que se encuentran en estado Emitido o Parcialmente Pagado."
+        ocr: "( iiely J\n/ | Supplier Portal x Wy\n€ CS © 54.94.249.71/SupplierPortalWeb/Dashboard/Dashboard QRw :\nCen\n—<— PORTAL DE PROVEEDORES Empresa: Seleccionar + Proveedor: COMERCIAL DEL... »| RUC: 20100020361 Cambiar Idioma~ Alberto Reyes Rios +\nFacturacion (3)\na ©@) @E Documentos Pendientes de Pago\n, Documentos Consolidado\n> Documentos Pendientes de Pag\nB)Exportar a Excel\n» Crear Factura\n~ Empresa x\nFB Pa…"
+  - n: 4
+    id: "portal-proveedor.consultar-documentos-pendientes-de-pago#4"
+    accion: "Haga clic en el enlace **Ver Detalle** del documento."
+    resultado: "Se abre una ventana emergente que muestra el detalle del documento."
+    fuente: [web-https-documentacion-s10peru-com-manual-p-s008]
+    pagina: null
+    fotos:
+      - id: "ecce388a6a1a"
+        ruta_o_url: "imagenes/manual-portal-proveedor/2f1f3d08c426.png"
+        pagina: null
+        caption: "Haciendo clic en el enlace Ver Detalle se abrirá una ventana emergente que mostrará el detalle del documento."
+        ocr: "| Ney) [oS 3\n| Supplier Portal x hy\nS Cc | © 54.94.249,71/SupplierPortalWeb/Dashboard/Dashboard QRK*) :\nld\nsf Empresa: Proveedor: 3 H ~ ~\nSo PORTAL DE PROVEEDORES Pp Seleccionar ’ COMERCIAL DEL... ¥ RUG: 20100020361 Cambiar Idioma~ Alberto Reyes Rios\nFacturacion (3\ncE @ i Documentos Pendientes de Pago\n» Documentos Consolidado\n> Documentos Pendientes de Pago\nWG) Exportar a Excel\n> Crear Factura\nEmp…"
+  - n: 5
+    id: "portal-proveedor.consultar-documentos-pendientes-de-pago#5"
+    accion: "Desde esa ventana, descargue el documento en el formato que necesite."
+    fuente: [web-https-documentacion-s10peru-com-manual-p-s008]
+    pagina: null
+    fotos:
+      - id: "f6b5a3a428ad"
+        ruta_o_url: "imagenes/manual-portal-proveedor/b8829ddc73c5.png"
+        pagina: null
+        caption: "Desde esta ventana es posible descargar el documento en diversos formatos."
+        ocr: "(Wiel J\n1 Supplier Portal x Yes\n€ CS | © 54.94.249.71/SupplierPortalWeb/Dashboard/Dashboard Qrr :\nVer Detalle\nae SM K Pla DM deere 8 # y @ QQ\nDocumento Factura\nCOMERCIAL DEL ACERO'S A ‘uc wrootooezeset\nAN ARGENTEVANRO, 2051 LMA LIMA LU racTuRA\nUA LAIMA, ‘09001-0000013653\nNombre/Razén Social: EDIFICACIONES FUTURO S.A.¢. ruc: 20406080129 Fecha Emisién: 29/03/2017\nDirecctén: s. Morro Rosas 103 -Baren…"
+verificacion: []
+errores_frecuentes:
+  - sintoma: "Ingresa por primera vez y el portal le pide una nueva clave."
+    solucion: "La clave del correo de bienvenida es temporal, por lo que el portal le solicitará que ingrese una nueva clave."
+    fuente: [web-https-documentacion-s10peru-com-manual-p-s003]
+relacionados: [portal-proveedor.cargar-logo-de-la-empresa, portal-proveedor.notificar-pagos-en-el-portal]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-p-s002, manual: "Manual del Portal del Proveedor", seccion: "1.2 Acceso al Portal", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-p-s003, manual: "Manual del Portal del Proveedor", seccion: "1.2.1 Autenticación del Usuario", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-p-s008, manual: "Manual del Portal del Proveedor", seccion: "1.3.2.2 Documentos pendientes de pago", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-p-s006, manual: "Manual del Portal del Proveedor", seccion: "1.3.2 Facturación", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

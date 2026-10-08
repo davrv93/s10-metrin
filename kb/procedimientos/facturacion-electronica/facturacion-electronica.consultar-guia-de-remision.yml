@@ -1,0 +1,78 @@
+id: facturacion-electronica.consultar-guia-de-remision
+version: 1
+modulo: facturacion-electronica
+titulo: "Consultar una guía de remisión electrónica (GRE) en SUNAT"
+objetivo: "Consultar en el portal web de SUNAT una guía de remisión electrónica emitida y descargar su XML o ver su PDF en el formato de SUNAT."
+nivel: basico
+preguntas:
+  - "como consulto una guia de remision electronica que emiti"
+  - "donde veo mis GRE emitidas en la sunat"
+  - "como descargo el xml de una guia de remision"
+  - "quiero ver el pdf de la guia de remision en formato sunat"
+  - "como busco una gre por serie y numero"
+  - "consulta de gre paso a paso"
+  - "como verifico que mi guia de remision se emitio bien en sunat"
+aliases:
+  - "consulta de GRE"
+  - "consultar guía de remisión electrónica"
+  - "buscar GRE"
+  - "descargar XML de la GRE"
+entidades:
+  modulo: "Facturación Electrónica"
+  pantallas: ["Consulta de GRE", "Mis Trámites y Consultas"]
+  objetos: ["guías de remisión electrónica", "GRE", "XML", "PDF"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "facturacion-electronica.consultar-guia-de-remision#1"
+    accion: "Acceda a la página web de la SUNAT (https://www.sunat.gob.pe/sol.html), en la opción **Mis Trámites y Consultas**."
+    fuente: [web-https-documentacion-s10peru-com-portal-d-s005]
+    pagina: null
+  - n: 2
+    id: "facturacion-electronica.consultar-guia-de-remision#2"
+    accion: "En el menú de opciones, haga clic en **Empresas** > **Consulta de GRE**."
+    fuente: [web-https-documentacion-s10peru-com-portal-d-s006]
+    pagina: null
+  - n: 3
+    id: "facturacion-electronica.consultar-guia-de-remision#3"
+    accion: "Elija el tipo de GRE emitidas y la búsqueda **Individual**."
+    fuente: [web-https-documentacion-s10peru-com-portal-d-s006]
+    pagina: null
+    fotos:
+      - id: "2c23936a03c8"
+        ruta_o_url: "imagenes/portal-de-facturacion-electronica-credenciales-api-rest-sunat/6c7994875a26.png"
+        pagina: null
+        caption: "Elegimos el tipo de GRE emitidas y la búsqueda Individual"
+  - n: 4
+    id: "facturacion-electronica.consultar-guia-de-remision#4"
+    accion: "Ingrese los criterios de búsqueda: en **Tipo de GRE**, GRE – Remitente."
+    fuente: [web-https-documentacion-s10peru-com-portal-d-s006]
+    pagina: null
+  - n: 5
+    id: "facturacion-electronica.consultar-guia-de-remision#5"
+    accion: "Ingrese la **Serie** y el **Número** del documento."
+    fuente: [web-https-documentacion-s10peru-com-portal-d-s006]
+    pagina: null
+  - n: 6
+    id: "facturacion-electronica.consultar-guia-de-remision#6"
+    accion: "Haga clic en **Siguiente**."
+    resultado: "Se muestran los resultados de la búsqueda con la información relevante del documento."
+    fuente: [web-https-documentacion-s10peru-com-portal-d-s006]
+    pagina: null
+    fotos:
+      - id: "29d5cc19f927"
+        ruta_o_url: "imagenes/portal-de-facturacion-electronica-credenciales-api-rest-sunat/419fae760317.png"
+        pagina: null
+        caption: "Hacemos click en Siguiente"
+  - n: 7
+    id: "facturacion-electronica.consultar-guia-de-remision#7"
+    accion: "Desde los resultados, descargue el XML del documento o visualice el PDF de la guía en el formato de SUNAT."
+    fuente: [web-https-documentacion-s10peru-com-portal-d-s006]
+    pagina: null
+verificacion: []
+errores_frecuentes: []
+relacionados: [facturacion-electronica.dar-de-baja-guia-de-remision]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-portal-d-s005, manual: "Portal de Facturación Electrónica - Credenciales API REST SUNAT - Portal de Ayuda S10", seccion: "4. Dar de baja guías de remisión electrónica (GRE)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-portal-d-s006, manual: "Portal de Facturación Electrónica - Credenciales API REST SUNAT - Portal de Ayuda S10", seccion: "4. Consulta de guías de remisión electrónica (GRE)", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

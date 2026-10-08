@@ -1,0 +1,94 @@
+id: compras.flujo-para-generar-orden-de-compra-o-servicio
+version: 1
+modulo: compras
+titulo: "Seguir los pasos para generar una orden de compra o de servicio"
+objetivo: "Seguir la secuencia del módulo de Compras y Pedidos para crear Órdenes de Compra o Servicios, en cualquiera de sus tres formas: desde Pedidos de Compra, desde Órdenes de Compra o a partir de una cotización."
+nivel: basico
+preguntas:
+  - "cuales son los pasos para sacar una orden de compra desde el pedido"
+  - "que orden se sigue en compras, pedido aprobacion y orden"
+  - "no puedo generar ningun pedido, por donde empiezo"
+  - "todo el flujo de compras en s10 de inicio a fin"
+  - "de cuantas formas se puede crear una orden de compra"
+  - "tengo que cotizar antes de hacer la orden de compra?"
+  - "pasos para crear ordenes de compra o servisio"
+  - "despues de aprobar el pedido que sigue"
+aliases:
+  - "flujo de compras"
+  - "pasos para generar orden de compra"
+  - "secuencia de compras"
+  - "formas de crear orden de compra"
+entidades:
+  modulo: "Compras"
+  pantallas: ["Pedidos de Compra", "Ordenes de Compra", "Cuadro comparativo"]
+  objetos: ["pedido", "Orden de Compra", "cotización"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "compras.flujo-para-generar-orden-de-compra-o-servicio#1"
+    accion: "Genere el pedido desde **Pedido** – **Pedido**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s070]
+    pagina: null
+  - n: 2
+    id: "compras.flujo-para-generar-orden-de-compra-o-servicio#2"
+    accion: "Apruebe el pedido desde **Pedido** – **Aprobación**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s070]
+    pagina: null
+  - n: 3
+    id: "compras.flujo-para-generar-orden-de-compra-o-servicio#3"
+    accion: "Para generar la orden de compra directamente, use la primera o la segunda forma:"
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s070]
+    pagina: null
+    sub:
+      - n: 1
+        id: "compras.flujo-para-generar-orden-de-compra-o-servicio#3.1"
+        accion: "Primera forma: genere la orden de compra desde **Inicio** – **Pedidos de Compra**."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s070]
+        pagina: null
+      - n: 2
+        id: "compras.flujo-para-generar-orden-de-compra-o-servicio#3.2"
+        accion: "Segunda forma: genere la orden de compra desde **Inicio** – **Ordenes de Compra**."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s070]
+        pagina: null
+  - n: 4
+    id: "compras.flujo-para-generar-orden-de-compra-o-servicio#4"
+    accion: "Para cotizar antes de comprar, use la tercera forma:"
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s070]
+    pagina: null
+    sub:
+      - n: 1
+        id: "compras.flujo-para-generar-orden-de-compra-o-servicio#4.1"
+        accion: "Genere la cotización desde **Inicio** – **Cotización**."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s070]
+        pagina: null
+      - n: 2
+        id: "compras.flujo-para-generar-orden-de-compra-o-servicio#4.2"
+        accion: "Asigne proveedores y envíe la cotización a los proveedores desde **Inicio** – **Cotización**."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s070]
+        pagina: null
+      - n: 3
+        id: "compras.flujo-para-generar-orden-de-compra-o-servicio#4.3"
+        accion: "Registre la recepción de cotizaciones en **Inicio** – **Recepción de cotizaciones**."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s070]
+        pagina: null
+      - n: 4
+        id: "compras.flujo-para-generar-orden-de-compra-o-servicio#4.4"
+        accion: "Compare las cotizaciones en **Inicio** – **Cuadro comparativo**."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s070]
+        pagina: null
+      - n: 5
+        id: "compras.flujo-para-generar-orden-de-compra-o-servicio#4.5"
+        accion: "Genere la orden de compra desde **Inicio** – **Ordenes de Compra**."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s070]
+        pagina: null
+  - n: 5
+    id: "compras.flujo-para-generar-orden-de-compra-o-servicio#5"
+    accion: "Apruebe la orden de compra desde **Inicio** – **Ordenes de Compra**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s070]
+    pagina: null
+verificacion: []
+errores_frecuentes: []
+relacionados: [compras.registrar-pedido-de-compra, compras.aprobar-pedido, compras.generar-orden-de-compra-desde-pedido, compras.registrar-cotizacion, compras.registrar-recepcion-de-cotizaciones, compras.elaborar-cuadro-comparativo, compras.aprobar-orden-de-compra]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s070, manual: "Manual de Compras", seccion: "18. Separata", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

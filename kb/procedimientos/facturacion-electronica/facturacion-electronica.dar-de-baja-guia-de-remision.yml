@@ -1,0 +1,108 @@
+id: facturacion-electronica.dar-de-baja-guia-de-remision
+version: 1
+modulo: facturacion-electronica
+titulo: "Dar de baja una guía de remisión electrónica (GRE) en SUNAT"
+objetivo: "Dar de baja, en la página web de la SUNAT, una guía de remisión electrónica emitida y obtener la constancia de la baja."
+nivel: basico
+preguntas:
+  - "como doy de baja una guia de remision electronica"
+  - "me equivoque en una GRE, como la anulo"
+  - "donde se da de baja una guia de remision en la sunat"
+  - "como anular guia remision remitente"
+  - "que tipo de baja elijo para la gre"
+  - "me sale una alerta de que sunat puede fiscalizar la baja, que hago"
+  - "como descargo la constancia de baja de la guia"
+  - "se puede dar de baja la gre desde s10 o es en sunat?"
+aliases:
+  - "baja de GRE"
+  - "anular guía de remisión"
+  - "dar de baja guía de remisión electrónica"
+  - "constancia de baja"
+entidades:
+  modulo: "Facturación Electrónica"
+  pantallas: ["Mis Trámites y Consultas", "Baja de GRE"]
+  objetos: ["guías de remisión electrónica", "GRE", "constancia"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "facturacion-electronica.dar-de-baja-guia-de-remision#1"
+    accion: "Acceda a la página web de la SUNAT (https://www.sunat.gob.pe/sol.html), en la opción **Mis Trámites y Consultas**."
+    fuente: [web-https-documentacion-s10peru-com-portal-d-s005]
+    pagina: null
+  - n: 2
+    id: "facturacion-electronica.dar-de-baja-guia-de-remision#2"
+    accion: "Después de ingresar al portal, ubíquese en la opción **Empresas** > **Baja de GRE**."
+    fuente: [web-https-documentacion-s10peru-com-portal-d-s005]
+    pagina: null
+    fotos:
+      - id: "e896fa02db88"
+        ruta_o_url: "imagenes/portal-de-facturacion-electronica-credenciales-api-rest-sunat/a452bbd37273.png"
+        pagina: null
+        caption: "Después de ingresar al portal deberá ubicarse en la opción de «Empresas» > «Baja de GRE»"
+        ocr: "~ Qué necesitas hacer? Busque una opcién del menu | |\n© Personas > Mi RUC y Otros Registros > Plataforma de Confirmacién del RHE y de la\nFE\n. > > Guia de Remision Electronica\njeer > Revision de mis deudas\n> Guia de Remisién Electronica\n Operador de > Mi fraccionamiento\nComercio Exterior > Baja de GRE\nBaja de GRE > Expediente Virtual\n> Catalogo de frecuentes >» Opcion para Imprentas SOL.\npoeta oe »…"
+  - n: 3
+    id: "facturacion-electronica.dar-de-baja-guia-de-remision#3"
+    accion: "En el formulario, en **Tipo de GRE**, elija GRE – Remitente."
+    fuente: [web-https-documentacion-s10peru-com-portal-d-s005]
+    pagina: null
+  - n: 4
+    id: "facturacion-electronica.dar-de-baja-guia-de-remision#4"
+    accion: "Ingrese la **Serie de la GRE** y el **Número de la GRE** que desea dar de baja."
+    fuente: [web-https-documentacion-s10peru-com-portal-d-s005]
+    pagina: null
+  - n: 5
+    id: "facturacion-electronica.dar-de-baja-guia-de-remision#5"
+    accion: "En **Tipo de Baja**, seleccione la opción correcta."
+    fuente: [web-https-documentacion-s10peru-com-portal-d-s005]
+    pagina: null
+  - n: 6
+    id: "facturacion-electronica.dar-de-baja-guia-de-remision#6"
+    accion: "Haga clic en **Siguiente** y, si aparece la alerta de que la SUNAT puede fiscalizar este proceso, haga clic en **Entendido**."
+    fuente: [web-https-documentacion-s10peru-com-portal-d-s005]
+    pagina: null
+    fotos:
+      - id: "46a67745e0b8"
+        ruta_o_url: "imagenes/portal-de-facturacion-electronica-credenciales-api-rest-sunat/97fb339bc833.png"
+        pagina: null
+        caption: "Hacemos click en Siguiente, después de esto es posible que nos aparezca una alerta del portal donde se nos indique que la SUNAT puede fiscalizar este proceso. Damos click en Entendido."
+        ocr: "1 intes de iniciar el trasiado x+"
+      - id: "8ad78b0d1b4d"
+        ruta_o_url: "imagenes/portal-de-facturacion-electronica-credenciales-api-rest-sunat/28e6943cb5aa.png"
+        pagina: null
+        caption: "Hacemos click en Siguiente, después de esto es posible que nos aparezca una alerta del portal donde se nos indique que la SUNAT puede fiscalizar este proceso. Damos click en Entendido."
+        ocr: "Atenci6n Contribuyente x\nEstimado contribuyente, la baja de la GRE puede estar sujeto\na una verificacién © fiscalizacién posterior por parte de la\nAdministracién Tributaria"
+  - n: 7
+    id: "facturacion-electronica.dar-de-baja-guia-de-remision#7"
+    accion: "Revise el preliminar del documento a dar de baja y, si todo está conforme, haga clic en **Dar de baja**."
+    resultado: "El portal muestra la aceptación del proceso."
+    fuente: [web-https-documentacion-s10peru-com-portal-d-s005]
+    pagina: null
+    fotos:
+      - id: "6c633ccf1be4"
+        ruta_o_url: "imagenes/portal-de-facturacion-electronica-credenciales-api-rest-sunat/f59e34faa9c7.png"
+        pagina: null
+        caption: "El portal nos mostrará un preliminar del documento a dar de baja y de estar todo conforme finalizamos haciendo click en la opción de Dar de baja"
+  - n: 8
+    id: "facturacion-electronica.dar-de-baja-guia-de-remision#8"
+    accion: "Descargue la constancia de la baja en PDF o envíela a un correo electrónico."
+    fuente: [web-https-documentacion-s10peru-com-portal-d-s005]
+    pagina: null
+    fotos:
+      - id: "137110dcf5a3"
+        ruta_o_url: "imagenes/portal-de-facturacion-electronica-credenciales-api-rest-sunat/9abdb0530f67.png"
+        pagina: null
+        caption: "De estar todo conforme el portal nos mostrará la aceptación del proceso. Desde aquí sera posible descargar una constancia de la baja en PDF o enviarla a un correo electrónico."
+        ocr: "Baja de Guta de Remision Electronica\nrealizada con éxito\nBaja de Guia de Remision Electrénica\nFecha y hora de la baja: 27/04/2023 15:\nipo de GRE: GRE-Remitente\nNumeracion de GRE: TOOT-1\nFecha y hora de emision de la GRE: 17/03/2023 1645\nModalidad de Transporte:Privado\nNumeracion de GRE - por eventos asociados:\nTipo de baja: Antes de iniciar el traslado\nPod visualizar sus guias de remisién electrén…"
+verificacion:
+  - texto: "El portal muestra la aceptación del proceso: la baja de la guía de remisión electrónica fue realizada con éxito."
+    fuente: [web-https-documentacion-s10peru-com-portal-d-s005, img-9abdb0530f67-0000]
+errores_frecuentes:
+  - sintoma: "Al hacer clic en Siguiente aparece una alerta de la SUNAT."
+    solucion: "Es un aviso de que la baja de la GRE puede estar sujeta a una verificación o fiscalización posterior por parte de la Administración Tributaria; haga clic en Entendido para continuar."
+    fuente: [web-https-documentacion-s10peru-com-portal-d-s005, img-28e6943cb5aa-0000]
+relacionados: [facturacion-electronica.consultar-guia-de-remision, facturacion-electronica.comunicar-baja-de-comprobante]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-portal-d-s005, manual: "Portal de Facturación Electrónica - Credenciales API REST SUNAT - Portal de Ayuda S10", seccion: "4. Dar de baja guías de remisión electrónica (GRE)", pagina: null}
+  - {id: img-9abdb0530f67-0000, manual: "Portal de Facturación Electrónica - Credenciales API REST SUNAT - Portal de Ayuda S10", seccion: "9abdb0530f67.png", pagina: null}
+  - {id: img-28e6943cb5aa-0000, manual: "Portal de Facturación Electrónica - Credenciales API REST SUNAT - Portal de Ayuda S10", seccion: "28e6943cb5aa.png", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

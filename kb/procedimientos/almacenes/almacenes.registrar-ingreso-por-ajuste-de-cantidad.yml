@@ -1,0 +1,84 @@
+id: almacenes.registrar-ingreso-por-ajuste-de-cantidad
+version: 1
+modulo: almacenes
+titulo: "Registrar un ingreso por ajuste de cantidad"
+objetivo: "Corregir con un Ingreso por Ajuste de Cantidad [IAC] la diferencia detectada al hacer el inventario físico, cuando el stock físico de un recurso es mayor que el saldo que muestra el sistema, para igualar las cantidades."
+nivel: basico
+preguntas:
+  - "cómo hago un ajuste de cantidad en almacén"
+  - "en el inventario físico me sobra material, cómo lo cuadro en el sistema"
+  - "el conteo dio 22 kg y el sistema dice 20, cómo ingreso la diferencia"
+  - "como registro un ingreso IAC"
+  - "como ajusto el stok cuando hay mas de lo que dice el s10"
+  - "qué precio toma el ingreso por ajuste de cantidad"
+  - "como corrijo diferencias de inventario en almacen"
+  - "ingreso por ajuste de cantida pasos"
+aliases:
+  - "ingreso por ajuste de cantidad"
+  - "ingreso IAC"
+  - "ajuste de inventario"
+  - "ajustar stock"
+  - "diferencia de stock"
+entidades:
+  modulo: "Almacenes"
+  pantallas: ["Ingresos", "Inventario"]
+  objetos: ["ingreso por ajuste de cantidad", "inventario", "stock", "recurso", "precio promedio"]
+prerrequisitos:
+  - texto: "Haber realizado un inventario físico de los recursos que existen en el almacén: las diferencias entre los saldos del sistema y el stock físico se detectan al realizar inventarios."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s056]
+pasos:
+  - n: 1
+    id: "almacenes.registrar-ingreso-por-ajuste-de-cantidad#1"
+    accion: "En la barra de vistas, elija el acceso al escenario de **Ingresos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s056]
+    pagina: null
+  - n: 2
+    id: "almacenes.registrar-ingreso-por-ajuste-de-cantidad#2"
+    accion: "En el árbol, elija el proyecto y el almacén."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s056]
+    pagina: null
+  - n: 3
+    id: "almacenes.registrar-ingreso-por-ajuste-de-cantidad#3"
+    accion: "Elija el tipo de ingreso **Ingreso por Ajuste de Cantidad [IAC]**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s056]
+    pagina: null
+  - n: 4
+    id: "almacenes.registrar-ingreso-por-ajuste-de-cantidad#4"
+    accion: "Efectúe un nuevo ingreso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s056]
+    pagina: null
+  - n: 5
+    id: "almacenes.registrar-ingreso-por-ajuste-de-cantidad#5"
+    accion: "Registre el tipo de cambio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s056]
+    pagina: null
+  - n: 6
+    id: "almacenes.registrar-ingreso-por-ajuste-de-cantidad#6"
+    accion: "Registre los datos de la cabecera del documento."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s056]
+    pagina: null
+  - n: 7
+    id: "almacenes.registrar-ingreso-por-ajuste-de-cantidad#7"
+    accion: "En el cuerpo del documento, registre los recursos e ingrese las cantidades de la diferencia (en el ejemplo del manual, los 2 Kg. de ALAMBRE NEGRO que sobran en el conteo)."
+    resultado: "El sistema toma por defecto el precio promedio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s056]
+    pagina: null
+    fotos:
+      - id: "2014c5dfe154"
+        ruta_o_url: "imagenes/manual-de-almacenes/f63b42a775d6.png"
+        pagina: null
+        caption: "Luego en cuerpo del documento registre los recursos, ingrese las cantidades, el sistema por defecto toma el precios promedio."
+        ocr: "i Ley]\n\nBp Ingreso por Ajuste de Cantidad [IAC] 01002-PUENTE EN CARRETERA ** are x=)\nRegistra Andres - ANDRADE ANDRADE, ANDRES Ultimo usuario N° de Guia\nAlmacén 004 - De Materiales Ultima fecha real [oooo00000007\nTipo 01-OBRA Estado Edicion\nFecha [23052010 | peto. {015 [DOCUMENTO INTERNO | dl] Ne Dcto. [ 01. 015 Fecha Detolzsinsr2010 ~~\nMoneda 01 |NUEVOS SOLES ww | #4] Tipo de cambio 3.01...\n\nEES\n…"
+verificacion: []
+errores_frecuentes:
+  - sintoma: "El stock físico es menor que el saldo que muestra el sistema."
+    solucion: "En ese caso no corresponde un ingreso: el sistema permite generar una guía de ingreso o de egreso por ajuste de cantidad según sea el caso, y el recurso egresado por ajuste de cantidad toma el precio promedio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s056, web-https-documentacion-s10peru-com-manual-d-s078]
+  - sintoma: "Hizo los conteos en el escenario de Inventario y quiere generar el ajuste automático."
+    solucion: "Cuando en el escenario de Inventario se realizan conteos, el sistema permite generar un ajuste automático; la guía de ingreso o egreso por ajuste de cantidad es la regularización manual."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s056]
+relacionados: [almacenes.registrar-ingreso-por-inventario, almacenes.consultar-kardex]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s056, manual: "Manual de Almacenes", seccion: "2.1.4.1 Ingreso por Ajuste de Cantidad [IAC]", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s078, manual: "Manual de Almacenes", seccion: "2.2.8.1 Egreso por Ajuste de Cantidad [EAC]", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

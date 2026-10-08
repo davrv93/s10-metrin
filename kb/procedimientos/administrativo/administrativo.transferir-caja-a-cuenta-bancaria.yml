@@ -1,0 +1,72 @@
+id: administrativo.transferir-caja-a-cuenta-bancaria
+version: 1
+modulo: administrativo
+titulo: "Transferir a una cuenta bancaria el efectivo o los cheques de la caja"
+objetivo: "Registrar en el diario de caja la transferencia a una cuenta bancaria del dinero cobrado, en cheque o en efectivo (el procedimiento es el mismo)."
+nivel: basico
+preguntas:
+  - "cómo paso a la cuenta del banco lo que cobré en caja"
+  - "como deposito al banco los cheques cobrados en s10"
+  - "como registro la transferencia de caja a cuenta bancaria"
+  - "ya hice las cobranzas en efectivo y ahora quiero mandarlas al banco"
+  - "donde esta la opcion transferencia a cuenta bancaria"
+  - "como transfiero el efectivo de la caja al vanco"
+  - "pasos para registrar deposito de caja a cuenta en administrativo"
+aliases:
+  - "transferencia a cuenta bancaria"
+  - "transferir caja a banco"
+  - "depositar cobranza en banco"
+  - "transferir cheques a cuenta bancaria"
+entidades:
+  modulo: "Administrativo"
+  pantallas: ["Diario de Caja", "Transferencia"]
+  objetos: ["caja", "cuenta bancaria", "cheque", "efectivo", "transferencia"]
+prerrequisitos:
+  - texto: "La caja debe contar con dinero en efectivo o cheque, por ejemplo por cobranzas ya registradas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s020, web-https-documentacion-s10peru-com-manual-d-s021]
+pasos:
+  - n: 1
+    id: "administrativo.transferir-caja-a-cuenta-bancaria#1"
+    accion: "Ubíquese en el **Diario de Caja** de la caja que tiene el dinero cobrado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s020, img-18d6d0ba0de2-0000]
+    pagina: null
+  - n: 2
+    id: "administrativo.transferir-caja-a-cuenta-bancaria#2"
+    accion: "Haga clic derecho en el detalle del diario de caja y elija **Transferencia a Cuenta Bancaria**."
+    fuente: [img-18d6d0ba0de2-0000, web-https-documentacion-s10peru-com-manual-d-s020]
+    pagina: null
+    fotos:
+      - id: "5f3c48b54570"
+        ruta_o_url: "imagenes/manual-de-administracion/18d6d0ba0de2.png"
+        pagina: null
+        ocr: "[Diario de Caja\nJAwWAY Ss |\\e@uaala\nCa ee ee\n>| _]} SISTEMA 10 S.A. SISTEMA 10 S.A. 18] Libro Caja del 01/09/2013 al ... | Diario 5 sep 2013 SV. [ccru\nJAY AYE |sig@aa|o\nf[k:* [Teosemevmene _[TeoPeee __[WDecunent.[SecndeNemece [Tel | Twa de Canto\na $ mento! Click derecho [Es Adicionar tramsaccdm > ae por Pagar\n10 Documento por Cobra anje con Le we\n| 4 o % Eliminar Documentos por Cobrar (Ingresos)\na…"
+  - n: 3
+    id: "administrativo.transferir-caja-a-cuenta-bancaria#3"
+    accion: "En la ventana **Transferencia**, seleccione la **Cuenta Bancaria** de destino."
+    fuente: [img-dace4421b13d-0000, web-https-documentacion-s10peru-com-manual-d-s020]
+    pagina: null
+    fotos:
+      - id: "d169f3e0f411"
+        ruta_o_url: "imagenes/manual-de-administracion/dace4421b13d.png"
+        pagina: null
+        ocr: "@e Transferencia |.)\nTwo\nMoneda NUEVOS SOLES |\nCuenta Bancaria[191-1234567-82-1 [acp sv. 191-1234567-82-1 [ ~] 64\nSaldo en Caja 2,389.00\nNumero de .\nOperacién Total a transferir 2,684.00\nSVGERS SB au\nNdmero Documento| Cliente Total gTransferir?\npo\ncout |\nld"
+  - n: 4
+    id: "administrativo.transferir-caja-a-cuenta-bancaria#4"
+    accion: "Revise en el recuadro el documento que se cobró con cheque y el **Total a transferir**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s020, img-7b6b1201ea4e-0000]
+    pagina: null
+    fotos:
+      - id: "2cbea1018bdb"
+        ruta_o_url: "imagenes/manual-de-administracion/7b6b1201ea4e.png"
+        pagina: null
+        ocr: "jy 4\nMoneda NUEVOS SOLES\n\ncunt scl SETTER PS eT a\nao Total a transferir 7,061.00 |\nSYVvGa SB aa\n\nBanco Ndmero Cheque Total gTransferir? Socio de Negocio\n\n123 INVERSIONES PE:\n\n| «| a ® |\nere\n\n! cre |"
+verificacion: []
+errores_frecuentes: []
+relacionados: [administrativo.registrar-cobranza-en-efectivo]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s020, manual: "Manual Administrativo", seccion: "3.11 Registro de transferencias a cuentas bancarias de efectivos y cheques", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s021, manual: "Manual Administrativo", seccion: "3.12 Registro de egresos e ingresos de transferencia a otra caja", pagina: null}
+  - {id: img-18d6d0ba0de2-0000, manual: "Manual Administrativo", seccion: "18d6d0ba0de2.png", pagina: null}
+  - {id: img-dace4421b13d-0000, manual: "Manual Administrativo", seccion: "dace4421b13d.png", pagina: null}
+  - {id: img-7b6b1201ea4e-0000, manual: "Manual Administrativo", seccion: "7b6b1201ea4e.png", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

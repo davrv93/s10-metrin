@@ -1,0 +1,324 @@
+{"texto": "¿Cuál es el procedimiento para aprobar la valorización de un subcontratista en Gerencia de Proyectos?", "procedimiento": "gerencia-proyectos.aprobar-valorizacion-del-subcontrato", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "ya terminé de valorizar al maestro de acero, ahora q hago para aprobarla", "procedimiento": "gerencia-proyectos.aprobar-valorizacion-del-subcontrato", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el ingeniero de costos ya revisó lo del subcontratista de esta semana y toca darle conforme en el sistema, como se hace", "procedimiento": "gerencia-proyectos.aprobar-valorizacion-del-subcontrato", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como se autoriza el pago al subcontratista despues de aprobar la valorizacion", "procedimiento": "gerencia-proyectos.aprobar-valorizacion-del-subcontrato", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "q tengo q hacer para q el pago del subcontratista llegue a documentos por pagar", "procedimiento": "gerencia-proyectos.aprobar-valorizacion-del-subcontrato", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "clic derecho en valorizaciones, aprobar valorizacion y luego que sigue", "procedimiento": "gerencia-proyectos.aprobar-valorizacion-del-subcontrato", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo registro el pago de una valorización de subcontrato eligiendo Valorización en Tipo Pago?", "procedimiento": "gerencia-proyectos.aprobar-valorizacion-del-subcontrato", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "aprobar autorizacion de pago/cobranza del subcontrato como es", "procedimiento": "gerencia-proyectos.aprobar-valorizacion-del-subcontrato", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "necesito que contabilidad reciba lo del subcontratista, como lo mando desde gerencia de proyectos", "procedimiento": "gerencia-proyectos.aprobar-valorizacion-del-subcontrato", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "aprobar valorizacion subcontratista", "procedimiento": "gerencia-proyectos.aprobar-valorizacion-del-subcontrato", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "autorizar pago subcontrato", "procedimiento": "gerencia-proyectos.aprobar-valorizacion-del-subcontrato", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como aprovo la valorisacion del subcontratista", "procedimiento": "gerencia-proyectos.aprobar-valorizacion-del-subcontrato", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "ke pasos sigo pa autorisar el pago de la valorizasion del sub", "procedimiento": "gerencia-proyectos.aprobar-valorizacion-del-subcontrato", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "Indique los pasos para elegir del catálogo de valorizaciones la valorización aprobada y adicionar el pago al subcontratista.", "procedimiento": "gerencia-proyectos.aprobar-valorizacion-del-subcontrato", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el subcontratista me pide su pago, la valorizacion del periodo ya esta registrada, q sigue", "procedimiento": "gerencia-proyectos.aprobar-valorizacion-del-subcontrato", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "despues de aprobar la valorizacion como genero el pago, nose q boton es", "procedimiento": "gerencia-proyectos.aprobar-valorizacion-del-subcontrato", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde entro para aprobar las valorizaciones de los subcontratos", "procedimiento": "gerencia-proyectos.aprobar-valorizacion-del-subcontrato", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que pestaña del subcontrato sale la opcion aprobar valorizacion", "procedimiento": "gerencia-proyectos.aprobar-valorizacion-del-subcontrato", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde esta subcontrato estado de cuenta", "procedimiento": "gerencia-proyectos.aprobar-valorizacion-del-subcontrato", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué pantalla puedo revisar los pagos por periodo de cada subcontrato?", "procedimiento": "gerencia-proyectos.aprobar-valorizacion-del-subcontrato", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "ruta para llegar a la autorizacion de pago de subcontratos", "procedimiento": "gerencia-proyectos.aprobar-valorizacion-del-subcontrato", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "estado de cuenta subcontrato", "procedimiento": "gerencia-proyectos.aprobar-valorizacion-del-subcontrato", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "donde es q se aprueba la valorisacion del sub contratista", "procedimiento": "gerencia-proyectos.aprobar-valorizacion-del-subcontrato", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "¿Qué atributos necesita el usuario que aprueba la autorización de pago del subcontrato?", "procedimiento": "gerencia-proyectos.aprobar-valorizacion-del-subcontrato", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "puedo aprobar mi propia valorizacion del subcontrato o tiene q ser otra persona", "procedimiento": "gerencia-proyectos.aprobar-valorizacion-del-subcontrato", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q usuario puede aprobar la autorizacion de pago, como le doy ese permiso", "procedimiento": "gerencia-proyectos.aprobar-valorizacion-del-subcontrato", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Cuántas valorizaciones del mismo subcontrato permite el sistema por periodo?", "procedimiento": "gerencia-proyectos.aprobar-valorizacion-del-subcontrato", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "el pago se registra solo si quien elabora la valorizacion es el mismo q la aprueba?", "procedimiento": "gerencia-proyectos.aprobar-valorizacion-del-subcontrato", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué requisitos previos hay antes de autorizar el pago de una valorización de subcontrato?", "procedimiento": "gerencia-proyectos.aprobar-valorizacion-del-subcontrato", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "en la pestaña valorizaciones del subcontrato el clic derecho no me deja adicionar el pago, q pasa", "procedimiento": "gerencia-proyectos.aprobar-valorizacion-del-subcontrato", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "la valorizacion no la puedo elegir en el catalogo cuando hago el pago al subcontratista", "procedimiento": "gerencia-proyectos.aprobar-valorizacion-del-subcontrato", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "intento registrar otra valorizacion del subcontrato en la misma semana y no deja", "procedimiento": "gerencia-proyectos.aprobar-valorizacion-del-subcontrato", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "yo elabore la valorizacion y otro usuario la aprobó, ahora no puedo registrar el pago", "procedimiento": "gerencia-proyectos.aprobar-valorizacion-del-subcontrato", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no aparece valorizacion para pago", "procedimiento": "gerencia-proyectos.aprobar-valorizacion-del-subcontrato", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "no me deja adicionar pago en subcontrato xq sera", "procedimiento": "gerencia-proyectos.aprobar-valorizacion-del-subcontrato", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "el catalogo de valorizaciones sale sin nada cuando quiero pagarle al subcontratista", "procedimiento": "gerencia-proyectos.aprobar-valorizacion-del-subcontrato", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "como agrego el concepto de descuento por materiales entregados al resumen del subcontrato", "procedimiento": "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "quiero un concepto que le descuente un monto fijo cada semana al subcontratista, como lo creo", "procedimiento": "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como edito la plantilla del resumen con el clic derecho", "procedimiento": "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como grabo la plantilla del resumen y salgo del excel", "procedimiento": "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se utilizan Adicionar Concepto y Adicionar Todos al editar la plantilla del resumen del subcontrato?", "procedimiento": "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "para crear un concepto nuevo en el resumen en que rama del catalogo lo registro", "procedimiento": "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como pongo la variable y la descripcion del concepto nuevo del resumen", "procedimiento": "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Para qué sirve marcar Valor por periodo al registrar un concepto nuevo del resumen?", "procedimiento": "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "necesito agregar el concepto de multa por retraso al resumen del subcontratista", "procedimiento": "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo adecuo el diseño estándar del resumen de valorización del subcontrato a las necesidades de mi obra?", "procedimiento": "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el subcontratista de encofrado tiene un descuento fijo por alquiler de andamios, como lo meto en el resumen", "procedimiento": "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "editar plantilla resumen", "procedimiento": "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "concepto nuevo resumen subcontrato", "procedimiento": "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como adiciono un conceto al resumen del subcontrato", "procedimiento": "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "ke hago pa editar la plantila del resumen del sub", "procedimiento": "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "el resumen sale con conceptos q no uso, como lo dejo a mi manera", "procedimiento": "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "en q pestaña del subcontrato se ve el diseño del resumen", "procedimiento": "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde le doy editar plantilla al resumen", "procedimiento": "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Dónde está la rama Conceptos Generales para crear conceptos de valorización de subcontratos?", "procedimiento": "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "como llego a editar el resumen desde el subcontrato", "procedimiento": "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "q botones de s10 salen en excel cuando edito el resumen", "procedimiento": "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "pestaña diseño del resumen", "procedimiento": "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "donde keda la opcion editar plantilla del resumen", "procedimiento": "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "¿Cuándo debo dejar definido el resumen del subcontrato, antes o después de la primera valorización?", "procedimiento": "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "la rama conceptos s10 la puedo modificar o solo uso conceptos generales", "procedimiento": "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q significa valor por periodo cuando creo un concepto del resumen", "procedimiento": "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "el resumen viene con un diseño estandar, se puede personalizar por cada subcontrato", "procedimiento": "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "puedo cambiar el resumen cuando el subcontratista ya esta trabajando", "procedimiento": "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué datos se piden al registrar un concepto nuevo de valorización de subcontratos?", "procedimiento": "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "cambie el resumen en pleno trabajo del subcontratista y ahora las valorizaciones no cuadran", "procedimiento": "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "intento crear un concepto en la rama de Conceptos S10 y no me deja", "procedimiento": "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "ya hice varias valorizaciones y quiero cambiar el resumen, es seguro", "procedimiento": "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "se abre excel al editar la plantilla y no se q boton usar para guardar", "procedimiento": "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el descuento semanal no me pide el monto en cada valorizacion, q me falto marcar", "procedimiento": "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "resumen subcontrato se descuadró", "procedimiento": "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "cambie el resumen y ahora las valorisaciones salen raras", "procedimiento": "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "el pedido a almacen ya esta aprobado, como registro el egreso para entregar los materiales", "procedimiento": "gerencia-proyectos.egresar-a-partida-de-control-con-pedido", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "soy almacenero y el residente pidio fierro por el sistema, como despacho", "procedimiento": "gerencia-proyectos.egresar-a-partida-de-control-con-pedido", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como atiendo un pedido a almacen desde el modulo de almacenes", "procedimiento": "gerencia-proyectos.egresar-a-partida-de-control-con-pedido", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como imprimo el egreso para que firme quien recoge los materiales", "procedimiento": "gerencia-proyectos.egresar-a-partida-de-control-con-pedido", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como uso adicionar en el egreso para traer el pedido aprobado", "procedimiento": "gerencia-proyectos.egresar-a-partida-de-control-con-pedido", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cuáles son los pasos para egresar los recursos de un pedido a una partida de control?", "procedimiento": "gerencia-proyectos.egresar-a-partida-de-control-con-pedido", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el capataz vino a recoger el cemento que pidio, como hago la salida en el sistema", "procedimiento": "gerencia-proyectos.egresar-a-partida-de-control-con-pedido", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como elijo con doble clic el pedido en el egreso del almacen", "procedimiento": "gerencia-proyectos.egresar-a-partida-de-control-con-pedido", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "q tipo de egreso elijo cuando hay un pedido aprobado", "procedimiento": "gerencia-proyectos.egresar-a-partida-de-control-con-pedido", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cuál es el procedimiento para entregar desde Almacenes los recursos de un pedido A Almacén aprobado?", "procedimiento": "gerencia-proyectos.egresar-a-partida-de-control-con-pedido", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "salida con pedido almacen", "procedimiento": "gerencia-proyectos.egresar-a-partida-de-control-con-pedido", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "despachar materiales pedido", "procedimiento": "gerencia-proyectos.egresar-a-partida-de-control-con-pedido", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como hago el egreso de un pedio aprobado a almasen", "procedimiento": "gerencia-proyectos.egresar-a-partida-de-control-con-pedido", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "ke tipo de egreso uso pa entregar lo q pidio el residente", "procedimiento": "gerencia-proyectos.egresar-a-partida-de-control-con-pedido", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "ya aprobaron el pedido, y ahora como le doy los materiales al q los recoge", "procedimiento": "gerencia-proyectos.egresar-a-partida-de-control-con-pedido", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "tengo al maestro de obra esperando sus bolsas de cemento, el pedido esta aprobado, que sigue en almacen", "procedimiento": "gerencia-proyectos.egresar-a-partida-de-control-con-pedido", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "en que escenario del almacen se hacen los egresos", "procedimiento": "gerencia-proyectos.egresar-a-partida-de-control-con-pedido", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde elijo el tipo Egreso a Partida de Control con Pedido", "procedimiento": "gerencia-proyectos.egresar-a-partida-de-control-con-pedido", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "como llego a la pantalla de egresos de materiales de la obra", "procedimiento": "gerencia-proyectos.egresar-a-partida-de-control-con-pedido", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde esta el boton adicionar para jalar pedidos aprobados en el egreso", "procedimiento": "gerencia-proyectos.egresar-a-partida-de-control-con-pedido", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué módulo se entrega lo pedido por el proyecto, en Gerencia de Proyectos o en Almacenes?", "procedimiento": "gerencia-proyectos.egresar-a-partida-de-control-con-pedido", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "escenario egresos almacen", "procedimiento": "gerencia-proyectos.egresar-a-partida-de-control-con-pedido", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "donde keda el egreso a partida de control", "procedimiento": "gerencia-proyectos.egresar-a-partida-de-control-con-pedido", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "¿Qué requisitos debe cumplir un pedido para poder hacerle el egreso?", "procedimiento": "gerencia-proyectos.egresar-a-partida-de-control-con-pedido", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "tengo q entrar como almacenero para hacer el egreso con pedido?", "procedimiento": "gerencia-proyectos.egresar-a-partida-de-control-con-pedido", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q persona debe figurar en el pedido para que el egreso salga a su nombre", "procedimiento": "gerencia-proyectos.egresar-a-partida-de-control-con-pedido", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "el pedido tiene q estar aprobado antes del egreso o se puede con pendiente", "procedimiento": "gerencia-proyectos.egresar-a-partida-de-control-con-pedido", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué debe tener asignado el pedido A Almacén para que alguien recoja los recursos?", "procedimiento": "gerencia-proyectos.egresar-a-partida-de-control-con-pedido", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "quien firma el egreso impreso y q debe verificar el almacenero antes", "procedimiento": "gerencia-proyectos.egresar-a-partida-de-control-con-pedido", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "al dar adicionar en el egreso no sale mi pedido", "procedimiento": "gerencia-proyectos.egresar-a-partida-de-control-con-pedido", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el pedido que hizo el residente no me carga en egreso con pedido", "procedimiento": "gerencia-proyectos.egresar-a-partida-de-control-con-pedido", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "pedido a almacen no figura para egresar, sera q falta aprobarlo", "procedimiento": "gerencia-proyectos.egresar-a-partida-de-control-con-pedido", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "hago adicionar y la lista de pedidos me sale vacia", "procedimiento": "gerencia-proyectos.egresar-a-partida-de-control-con-pedido", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no sale pedido en egreso", "procedimiento": "gerencia-proyectos.egresar-a-partida-de-control-con-pedido", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "no me aparese el pedido pa sacar los materiales", "procedimiento": "gerencia-proyectos.egresar-a-partida-de-control-con-pedido", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "el residente dice que ya envio el pedido pero en el egreso del almacen no lo veo", "procedimiento": "gerencia-proyectos.egresar-a-partida-de-control-con-pedido", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "como saco pedido de compra de los materiales programados para las proximas semanas", "procedimiento": "gerencia-proyectos.generar-pedido-automatico", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cuáles son los pasos para generar un pedido A Compras desde el escenario Pedidos Automáticos?", "procedimiento": "gerencia-proyectos.generar-pedido-automatico", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como marco un bloque de recursos y le doy generar pedido, a compras, todos los recursos", "procedimiento": "gerencia-proyectos.generar-pedido-automatico", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como acumulo las cantidades de varias semanas en un solo pedido", "procedimiento": "gerencia-proyectos.generar-pedido-automatico", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como asigno fecha de entrega a todos los recursos de golpe en el pedido de obra", "procedimiento": "gerencia-proyectos.generar-pedido-automatico", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como redondeo las cantidades del pedido de obra generado desde el cronograma", "procedimiento": "gerencia-proyectos.generar-pedido-automatico", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como elijo el centro de compra en el pedido de obra", "procedimiento": "gerencia-proyectos.generar-pedido-automatico", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como hago q se descuente lo ya pedido de lo programado en pedidos automaticos", "procedimiento": "gerencia-proyectos.generar-pedido-automatico", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo genero los pedidos A Compras a partir del Plan de Utilización de Recursos del cronograma por periodos?", "procedimiento": "gerencia-proyectos.generar-pedido-automatico", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el residente quiere pedir todo el material de las 3 semanas que vienen en un solo pedido, como se arma", "procedimiento": "gerencia-proyectos.generar-pedido-automatico", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "generar pedido a compras todos los recursos", "procedimiento": "gerencia-proyectos.generar-pedido-automatico", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "pedido automatico semanas", "procedimiento": "gerencia-proyectos.generar-pedido-automatico", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como hago el pedio automatico de materiales de la semana", "procedimiento": "gerencia-proyectos.generar-pedido-automatico", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "ke pasos sigo pa mandar a aprobacion un pedido automatico", "procedimiento": "gerencia-proyectos.generar-pedido-automatico", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "no quiero ir pidiendo item x item, hay forma de jalar todo lo del cronograma pa pedir", "procedimiento": "gerencia-proyectos.generar-pedido-automatico", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como confirmo el envio a aprobacion del pedido q se genero solo", "procedimiento": "gerencia-proyectos.generar-pedido-automatico", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde esta pedidos automaticos en gerencia de proyectos", "procedimiento": "gerencia-proyectos.generar-pedido-automatico", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que grupo sale el escenario de pedidos automaticos", "procedimiento": "gerencia-proyectos.generar-pedido-automatico", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde veo los pedidos automaticos ya generados", "procedimiento": "gerencia-proyectos.generar-pedido-automatico", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde aparecen las cantidades de lo que ya pedi, la columna en pedidos registrados", "procedimiento": "gerencia-proyectos.generar-pedido-automatico", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Qué formulario se abre después de elegir Generar Pedido y A Compras?", "procedimiento": "gerencia-proyectos.generar-pedido-automatico", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "escenario pedidos automaticos", "procedimiento": "gerencia-proyectos.generar-pedido-automatico", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "donde keda lo de pedidos automaticos", "procedimiento": "gerencia-proyectos.generar-pedido-automatico", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "¿Qué debe estar listo en el proyecto para poder usar pedidos automáticos?", "procedimiento": "gerencia-proyectos.generar-pedido-automatico", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "q opciones marco (en stock, en pedidos registrados, aprobados, en OC) para que me descuente lo ya pedido", "procedimiento": "gerencia-proyectos.generar-pedido-automatico", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "el proyecto debe estar asignado a un centro de compra para el pedido automatico?", "procedimiento": "gerencia-proyectos.generar-pedido-automatico", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "por que tengo q programar el cronograma antes de usar pedidos automaticos", "procedimiento": "gerencia-proyectos.generar-pedido-automatico", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "las personas q piden y aprueban deben estar registradas para el pedido automatico?", "procedimiento": "gerencia-proyectos.generar-pedido-automatico", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Cuántos periodos conviene acumular en el pedido, depende de la capacidad de almacenamiento?", "procedimiento": "gerencia-proyectos.generar-pedido-automatico", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "me salio 12.4538 bolsas de cemento en el pedido de obra generado, se puede redondear", "procedimiento": "gerencia-proyectos.generar-pedido-automatico", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "mi pedido automatico no llega a compras", "procedimiento": "gerencia-proyectos.generar-pedido-automatico", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el pedido que genere solo esta pendiente y compras no lo ve", "procedimiento": "gerencia-proyectos.generar-pedido-automatico", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "en pedidos automaticos no hay recursos para pedir, sera q el proyecto no esta programado", "procedimiento": "gerencia-proyectos.generar-pedido-automatico", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "pedido automatico no pasa a compras", "procedimiento": "gerencia-proyectos.generar-pedido-automatico", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "el pedido automatico no pasa a comprass xq", "procedimiento": "gerencia-proyectos.generar-pedido-automatico", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "el aprobador dice que no sabia que tenia un pedido pendiente, el sistema no le aviso", "procedimiento": "gerencia-proyectos.generar-pedido-automatico", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "ya termino el mes y toca cobrarle al propietario lo ejecutado, que hago en el sistema", "procedimiento": "gerencia-proyectos.valorizar-el-contrato", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como amortizo un adelanto en efectivo del cliente en la valorizacion del contrato", "procedimiento": "gerencia-proyectos.valorizar-el-contrato", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como amortizo el pago a cuenta que recibimos en la valorizacion del contrato", "procedimiento": "gerencia-proyectos.valorizar-el-contrato", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se aprueba la valorización desde el escenario Contratos del proyecto?", "procedimiento": "gerencia-proyectos.valorizar-el-contrato", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como mando la autorizacion de cobranza a documentos por cobrar", "procedimiento": "gerencia-proyectos.valorizar-el-contrato", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como imprimo la valorizacion desde contratos con clic derecho", "procedimiento": "gerencia-proyectos.valorizar-el-contrato", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "q reviso en el resumen de la valorizacion, lo de retenciones y estado de cuenta", "procedimiento": "gerencia-proyectos.valorizar-el-contrato", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como adiciono el pago de tipo valorizacion para cobrarle al cliente", "procedimiento": "gerencia-proyectos.valorizar-el-contrato", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cuál es el proceso para valorizar el contrato principal del proyecto y autorizar la cobranza?", "procedimiento": "gerencia-proyectos.valorizar-el-contrato", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el cliente nos adelanto plata y ahora hay q descontarla en la valorizacion de este mes", "procedimiento": "gerencia-proyectos.valorizar-el-contrato", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "valorizacion mensual cobro cliente", "procedimiento": "gerencia-proyectos.valorizar-el-contrato", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "cobranza valorizacion", "procedimiento": "gerencia-proyectos.valorizar-el-contrato", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como valorizo el contrato del cliente, ya meti los avanses", "procedimiento": "gerencia-proyectos.valorizar-el-contrato", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "ke hago pa aprobar autorisacion de cobranza", "procedimiento": "gerencia-proyectos.valorizar-el-contrato", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "los avances ya estan en el cronograma, y ahora como armo la valorizacion pa cobrar", "procedimiento": "gerencia-proyectos.valorizar-el-contrato", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "doble clic en el contrato y despues que hago para valorizar", "procedimiento": "gerencia-proyectos.valorizar-el-contrato", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde esta el escenario contratos del proyecto", "procedimiento": "gerencia-proyectos.valorizar-el-contrato", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde ingreso los avances del periodo para valorizar, en modo valorizacion", "procedimiento": "gerencia-proyectos.valorizar-el-contrato", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que pestaña veo la amortizacion de adelantos en la valorizacion del contrato", "procedimiento": "gerencia-proyectos.valorizar-el-contrato", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿A qué módulo llega la autorización de cobranza una vez aprobada?", "procedimiento": "gerencia-proyectos.valorizar-el-contrato", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en que pantalla saco la impresion de la valorizacion que le mando al cliente", "procedimiento": "gerencia-proyectos.valorizar-el-contrato", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "documentos por cobrar", "procedimiento": "gerencia-proyectos.valorizar-el-contrato", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "donde keda amort adelantos", "procedimiento": "gerencia-proyectos.valorizar-el-contrato", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "¿Qué debo tener registrado antes de valorizar el contrato, los avances en el cronograma por periodos?", "procedimiento": "gerencia-proyectos.valorizar-el-contrato", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "se puede ingresar el monto de la valorizacion directo si no hay avances", "procedimiento": "gerencia-proyectos.valorizar-el-contrato", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "cada cuanto tiempo se valoriza el contrato", "procedimiento": "gerencia-proyectos.valorizar-el-contrato", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "la amortizacion de adelantos en efectivo es automatica o manual", "procedimiento": "gerencia-proyectos.valorizar-el-contrato", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "las retenciones y el estado de cuenta del resumen se pueden modificar o solo informan", "procedimiento": "gerencia-proyectos.valorizar-el-contrato", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "cada adelanto de pago a cuenta se amortiza por separado o todos juntos", "procedimiento": "gerencia-proyectos.valorizar-el-contrato", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "no me deja hacer otra valorizacion del contrato en el mismo mes", "procedimiento": "gerencia-proyectos.valorizar-el-contrato", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el adelanto que nos dio el propietario como pago a cuenta no se descuenta en la valorizacion", "procedimiento": "gerencia-proyectos.valorizar-el-contrato", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "la amortizacion del pago a cuenta no aparece sola", "procedimiento": "gerencia-proyectos.valorizar-el-contrato", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "aprobe la valorizacion pero no llega nada a documentos por cobrar", "procedimiento": "gerencia-proyectos.valorizar-el-contrato", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "valorizacion contrato no deja", "procedimiento": "gerencia-proyectos.valorizar-el-contrato", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "no me amortisa el adelanto en la valorisacion", "procedimiento": "gerencia-proyectos.valorizar-el-contrato", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "quise valorizar dos veces el contrato en el periodo y el sistema se niega", "procedimiento": "gerencia-proyectos.valorizar-el-contrato", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "como saco un presupuesto a una base de datos aparte", "procedimiento": "presupuestos.exportar-presupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "quiero llevar el presupuesto a la laptop de la obra, como lo exporto", "procedimiento": "presupuestos.exportar-presupuesto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cuáles son los pasos para independizar un presupuesto en su propia base de datos?", "procedimiento": "presupuestos.exportar-presupuesto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como elijo q se exporte solo los recursos usados del presupuesto", "procedimiento": "presupuestos.exportar-presupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "al exportar el presupuesto q nombre le pongo a la nueva base", "procedimiento": "presupuestos.exportar-presupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como restauro en la pc destino la base que exporte", "procedimiento": "presupuestos.exportar-presupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como saco backup de la base exportada para llevarla a otra pc", "procedimiento": "presupuestos.exportar-presupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como inicio sesion en la base de datos que acabo de exportar", "procedimiento": "presupuestos.exportar-presupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se exporta un presupuesto seleccionado a otra base de datos desde el asistente de exportación?", "procedimiento": "presupuestos.exportar-presupuesto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "mi jefe quiere el presupuesto en su pc sin mover toda mi base, que hago", "procedimiento": "presupuestos.exportar-presupuesto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "voy a presentar fuera de la oficina y necesito una copia independiente en otra computadora", "procedimiento": "presupuestos.exportar-presupuesto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "le doy a exportar y q me salga un presupuesto solo en otra base, como es", "procedimiento": "presupuestos.exportar-presupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "pasar presupuesto a otra base", "procedimiento": "presupuestos.exportar-presupuesto", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "presupuesto a otra pc", "procedimiento": "presupuestos.exportar-presupuesto", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como esportar un presupuesto a otra vase de datos", "procedimiento": "presupuestos.exportar-presupuesto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "kiero llevar mi presupuesto a otra pc q hago", "procedimiento": "presupuestos.exportar-presupuesto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "donde esta el asistente de exportacion de presupuestos", "procedimiento": "presupuestos.exportar-presupuesto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que carpeta queda el backup S102000 de la base exportada", "procedimiento": "presupuestos.exportar-presupuesto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde saco la copia de seguridad de la base de datos exportada", "procedimiento": "presupuestos.exportar-presupuesto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en el menu archivo donde entro a la base nueva", "procedimiento": "presupuestos.exportar-presupuesto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Dónde se encuentra el escenario Mantenimiento de Base de Datos?", "procedimiento": "presupuestos.exportar-presupuesto", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "mantenimiento de base de datos", "procedimiento": "presupuestos.exportar-presupuesto", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "donde keda el boton de exportar presupuestos", "procedimiento": "presupuestos.exportar-presupuesto", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "¿Qué requisito deben cumplir las partidas para poder exportar el presupuesto?", "procedimiento": "presupuestos.exportar-presupuesto", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "q opciones de datos tengo al exportar, todos los recursos o solo los usados", "procedimiento": "presupuestos.exportar-presupuesto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "las partidas tienen q ser propias para exportar?", "procedimiento": "presupuestos.exportar-presupuesto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q version de sql necesito para restaurar la base exportada en la otra pc", "procedimiento": "presupuestos.exportar-presupuesto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "donde debo pegar el backup en la pc destino", "procedimiento": "presupuestos.exportar-presupuesto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "con q usuario entro a la base exportada", "procedimiento": "presupuestos.exportar-presupuesto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "exporte un presupuesto y se me perdio la base de datos que tenia", "procedimiento": "presupuestos.exportar-presupuesto", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "al exportar sobrescribio una base q ya existia", "procedimiento": "presupuestos.exportar-presupuesto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no puedo restaurar en la otra pc la base exportada", "procedimiento": "presupuestos.exportar-presupuesto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "mi pc tiene sql mas nuevo que la de la obra y no restaura la base", "procedimiento": "presupuestos.exportar-presupuesto", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no me deja exportar el presupuesto porque tiene partidas que no son propias", "procedimiento": "presupuestos.exportar-presupuesto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no restaura base exportada", "procedimiento": "presupuestos.exportar-presupuesto", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "se perdio mi base de datos al esportar", "procedimiento": "presupuestos.exportar-presupuesto", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "como cambio un recurso por otro en todas las partidas del presupuesto", "procedimiento": "presupuestos.reasignar-recurso", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "tengo el mismo material dos veces con distintas caracteristicas, como lo unifico", "procedimiento": "presupuestos.reasignar-recurso", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como reasigno un recurso desde recursos y precios", "procedimiento": "presupuestos.reasignar-recurso", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como veo en que partidas participa un recurso antes de cambiarlo", "procedimiento": "presupuestos.reasignar-recurso", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "despues de reasignar el recurso que hago para recalcular las cantidades", "procedimiento": "presupuestos.reasignar-recurso", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como cambio cemento tipo I por otro cemento en todo el presupuesto", "procedimiento": "presupuestos.reasignar-recurso", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como hago q un insumo se cambie por otro del catalogo en todas las partidas", "procedimiento": "presupuestos.reasignar-recurso", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo reemplazo un recurso por otro usado en el presupuesto desde el listado de Recursos y precios?", "procedimiento": "presupuestos.reasignar-recurso", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "en recursos y precios me salen dos alambres negros iguales, quiero dejar uno solo", "procedimiento": "presupuestos.reasignar-recurso", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "el metrador cargo el ladrillo con otro codigo y ahora hay dos, como lo paso al correcto", "procedimiento": "presupuestos.reasignar-recurso", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "cambiar insumo en todas las partidas", "procedimiento": "presupuestos.reasignar-recurso", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "reemplazar insumo", "procedimiento": "presupuestos.reasignar-recurso", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como reasigno un resurso duplicado en el presupuesto", "procedimiento": "presupuestos.reasignar-recurso", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "ke hago si un material aparese 2 veses", "procedimiento": "presupuestos.reasignar-recurso", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "quiero cambiar el fierro de 1/2 por otro en todas las partidas de una sola vez", "procedimiento": "presupuestos.reasignar-recurso", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "clic derecho al recurso y despues como lo reemplazo por el otro", "procedimiento": "presupuestos.reasignar-recurso", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde abro recursos y precios del subpresupuesto", "procedimiento": "presupuestos.reasignar-recurso", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que boton esta partidas que utilizan el recurso", "procedimiento": "presupuestos.reasignar-recurso", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde sale la opcion reasignar recurso, con clic derecho?", "procedimiento": "presupuestos.reasignar-recurso", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué escenario se encuentra el listado de Recursos y precios?", "procedimiento": "presupuestos.reasignar-recurso", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "como llego a ver donde participa un recurso del presupuesto", "procedimiento": "presupuestos.reasignar-recurso", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "recursos y precios", "procedimiento": "presupuestos.reasignar-recurso", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "donde keda reasignar recurso", "procedimiento": "presupuestos.reasignar-recurso", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "¿El recurso que reemplaza debe estar ya en el presupuesto o puede ser del catálogo?", "procedimiento": "presupuestos.reasignar-recurso", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "la ventana de partidas que utilizan el recurso modifica algo o solo informa", "procedimiento": "presupuestos.reasignar-recurso", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q recurso queda en el presupuesto al reasignar, el viejo o el nuevo", "procedimiento": "presupuestos.reasignar-recurso", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q pasa con las cantidades despues de reasignar un recurso", "procedimiento": "presupuestos.reasignar-recurso", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "se puede reasignar a un recurso del catalogo que no usa el presupuesto", "procedimiento": "presupuestos.reasignar-recurso", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "para q sirve el boton de calcular cantidades de los recursos luego de reasignar", "procedimiento": "presupuestos.reasignar-recurso", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "elimine un recurso del listado por error y no lo encuentro", "procedimiento": "presupuestos.reasignar-recurso", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "borre un recurso de recursos y precios, como lo recupero", "procedimiento": "presupuestos.reasignar-recurso", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "un recurso eliminado como lo vuelvo a insertar", "procedimiento": "presupuestos.reasignar-recurso", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "reasigne el recurso pero las cantidades no cambiaron", "procedimiento": "presupuestos.reasignar-recurso", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "tengo recursos repetidos en el listado y no se como arreglarlo", "procedimiento": "presupuestos.reasignar-recurso", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "recuperar recurso eliminado", "procedimiento": "presupuestos.reasignar-recurso", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "borre un resurso x error y ahora q hago", "procedimiento": "presupuestos.reasignar-recurso", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "como doy de alta un material que no esta en el catalogo", "procedimiento": "presupuestos.registrar-recurso-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como creo una puerta nueva como recurso generico y sus especificos", "procedimiento": "presupuestos.registrar-recurso-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cuáles son los pasos para registrar un recurso padre con su unidad y luego los hijos?", "procedimiento": "presupuestos.registrar-recurso-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como agrego un recurso especifico con dimensiones al catalogo", "procedimiento": "presupuestos.registrar-recurso-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "mi presupuesto necesita un insumo q no existe, donde lo creo", "procedimiento": "presupuestos.registrar-recurso-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como registro puertas contraplacadas en el grupo materiales", "procedimiento": "presupuestos.registrar-recurso-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo registro un recurso genérico y sus recursos específicos en el catálogo?", "procedimiento": "presupuestos.registrar-recurso-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el proveedor me cotizo un material que no esta en s10, hay q crearlo primero, como", "procedimiento": "presupuestos.registrar-recurso-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "voy a usar una tuberia distinta y no la encuentro en el catalogo de recursos", "procedimiento": "presupuestos.registrar-recurso-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como meto un recurso nuevo con su unidad", "procedimiento": "presupuestos.registrar-recurso-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "q es eso de generico y especificos y como los lleno", "procedimiento": "presupuestos.registrar-recurso-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "crear insumo nuevo", "procedimiento": "presupuestos.registrar-recurso-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "nuevo material catalogo", "procedimiento": "presupuestos.registrar-recurso-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como registro un resurso ke no esta en el catalogo", "procedimiento": "presupuestos.registrar-recurso-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "nose como creo un insumo nuevo en s10", "procedimiento": "presupuestos.registrar-recurso-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "despues de poner el generico me pregunta si sigo con los especificos, q le pongo", "procedimiento": "presupuestos.registrar-recurso-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde esta recursos genericos y especificos en catalogos", "procedimiento": "presupuestos.registrar-recurso-en-el-catalogo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que parte del arbol pongo un recurso nuevo de materiales", "procedimiento": "presupuestos.registrar-recurso-en-el-catalogo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "por donde entro para crear insumos del catalogo", "procedimiento": "presupuestos.registrar-recurso-en-el-catalogo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde hago clic derecho en el subgrupo para registrar el recurso", "procedimiento": "presupuestos.registrar-recurso-en-el-catalogo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué menú se administra el catálogo de recursos genéricos y específicos?", "procedimiento": "presupuestos.registrar-recurso-en-el-catalogo", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "catalogo recursos genericos", "procedimiento": "presupuestos.registrar-recurso-en-el-catalogo", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "donde keda catalogos recursos especificos", "procedimiento": "presupuestos.registrar-recurso-en-el-catalogo", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "¿Para qué sirve la unidad que se registra en el recurso genérico?", "procedimiento": "presupuestos.registrar-recurso-en-el-catalogo", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "todos los recursos del proyecto deben estar en el catalogo?", "procedimiento": "presupuestos.registrar-recurso-en-el-catalogo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q diferencia hay entre el recurso padre y los hijos", "procedimiento": "presupuestos.registrar-recurso-en-el-catalogo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "en que subgrupo debo ubicar un recurso nuevo", "procedimiento": "presupuestos.registrar-recurso-en-el-catalogo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q datos lleva un recurso especifico", "procedimiento": "presupuestos.registrar-recurso-en-el-catalogo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "se registra primero el generico o el especifico", "procedimiento": "presupuestos.registrar-recurso-en-el-catalogo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "busco un insumo en el catalogo y no existe", "procedimiento": "presupuestos.registrar-recurso-en-el-catalogo", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "me salio un mensaje preguntando si sigo adicionando recursos especificos, que hago", "procedimiento": "presupuestos.registrar-recurso-en-el-catalogo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "en el presupuesto no puedo usar un recurso porque no esta registrado", "procedimiento": "presupuestos.registrar-recurso-en-el-catalogo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el catalogo no tiene el tipo de puerta que necesito", "procedimiento": "presupuestos.registrar-recurso-en-el-catalogo", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "recurso no existe en catalogo", "procedimiento": "presupuestos.registrar-recurso-en-el-catalogo", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "no sale mi insumo en el catalogo", "procedimiento": "presupuestos.registrar-recurso-en-el-catalogo", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "tengo un material con varias medidas y todos salen iguales en el catalogo, como los diferencio", "procedimiento": "presupuestos.registrar-recurso-en-el-catalogo", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "como inserto un favorito en el subpresupuesto", "procedimiento": "presupuestos.usar-favoritos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como adiciono partidas ya revisadas desde mis favoritos a la hoja", "procedimiento": "presupuestos.usar-favoritos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cuáles son los pasos para traer un favorito a la hoja del presupuesto?", "procedimiento": "presupuestos.usar-favoritos", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "con clic derecho adicionar favorito y luego q", "procedimiento": "presupuestos.usar-favoritos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "despues de seleccionar el favorito como genero los items", "procedimiento": "presupuestos.usar-favoritos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "quiero armar mi presupuesto rapido con una hoja de partidas confiables ya guardada", "procedimiento": "presupuestos.usar-favoritos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cuál es el procedimiento para adicionar un favorito a la hoja del presupuesto?", "procedimiento": "presupuestos.usar-favoritos", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "tengo un modelo de vivienda con partidas ya revisadas guardado, como lo traigo a mi nuevo presupuesto", "procedimiento": "presupuestos.usar-favoritos", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "no quiero volver a escribir las partidas de un tipico de cerco perimetral, hay algo ya guardado", "procedimiento": "presupuestos.usar-favoritos", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como meto un favorito en mi presupuesto", "procedimiento": "presupuestos.usar-favoritos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como ocupo los favoritos para no armar todo desde cero", "procedimiento": "presupuestos.usar-favoritos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "favorito en subpresupuesto", "procedimiento": "presupuestos.usar-favoritos", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "jalar favoritos", "procedimiento": "presupuestos.usar-favoritos", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "ke es y como se usa un favorito en la hoja", "procedimiento": "presupuestos.usar-favoritos", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "komo adiciono un favorito al presupuesto", "procedimiento": "presupuestos.usar-favoritos", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "ya tengo mi favorito en el catalogo, como lo paso a la hoja", "procedimiento": "presupuestos.usar-favoritos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde veo la lista de favoritos registrados", "procedimiento": "presupuestos.usar-favoritos", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que menu estan los favoritos", "procedimiento": "presupuestos.usar-favoritos", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde sale la ventana mis favoritos", "procedimiento": "presupuestos.usar-favoritos", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que escenario hago clic derecho para adicionar favorito", "procedimiento": "presupuestos.usar-favoritos", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Dónde se encuentra el catálogo de favoritos?", "procedimiento": "presupuestos.usar-favoritos", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "menu favoritos", "procedimiento": "presupuestos.usar-favoritos", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "donde keda mis favoritos", "procedimiento": "presupuestos.usar-favoritos", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "¿Los favoritos deben estar registrados previamente en el catálogo?", "procedimiento": "presupuestos.usar-favoritos", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "q es un favorito en el s10 presupuestos", "procedimiento": "presupuestos.usar-favoritos", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "puedo usar un favorito si no lo registre antes en el catalogo", "procedimiento": "presupuestos.usar-favoritos", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "un favorito es una hoja de presupuesto con partidas ya revisadas?", "procedimiento": "presupuestos.usar-favoritos", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "debo elegir el presupuesto y el subpresupuesto antes de adicionar el favorito?", "procedimiento": "presupuestos.usar-favoritos", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "quien deja registrados los favoritos, tienen q estar en catalogos antes", "procedimiento": "presupuestos.usar-favoritos", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "le doy clic derecho en la hoja y no me sale adicionar favorito", "procedimiento": "presupuestos.usar-favoritos", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "mis favoritos salen vacios", "procedimiento": "presupuestos.usar-favoritos", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no encuentro ningun favorito para seleccionar", "procedimiento": "presupuestos.usar-favoritos", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "adicione el favorito pero en la hoja no aparecen las partidas", "procedimiento": "presupuestos.usar-favoritos", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "seleccione el favorito y no se generaron los items", "procedimiento": "presupuestos.usar-favoritos", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "favoritos vacio", "procedimiento": "presupuestos.usar-favoritos", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "no me salen los favoritos en la ventana", "procedimiento": "presupuestos.usar-favoritos", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}

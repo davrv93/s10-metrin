@@ -1,0 +1,293 @@
+id: facturacion.boletear-abonos-sperant
+version: 1
+modulo: facturacion
+titulo: "Registrar abonos en Sperant y boletearlos en S10"
+objetivo: "Registrar y sincronizar con S10 los abonos de una orden de venta en Sperant, aprobar los flujos de Separación, Aprobación y Venta, enviar la minuta al S10 y generar en el escenario Boletaje las facturas o boletas de esos abonos."
+nivel: avanzado
+preguntas:
+  - "como boleteo los abonos que vienen de sperant"
+  - "como sincronizo un abono de sperant con s10"
+  - "como envio la minuta al s10"
+  - "no me sale la opcion enviar minuta en sperant"
+  - "donde veo en s10 los abonos que mandaron desde sperant"
+  - "como genero las boletas de los abonos posteriores"
+  - "boletaje sperant s10 paso a paso"
+  - "el abono me salio con check rojo al sincronizar"
+  - "quiero hacer cambio de titular y no me deja"
+aliases:
+  - "boletaje"
+  - "boletear abonos"
+  - "enviar minuta"
+  - "sincronizar abono"
+  - "boletaje sperant"
+entidades:
+  modulo: "Facturación"
+  pantallas: ["Boletaje", "Orden de Venta", "Cronograma de Facturación", "Flujo del Proceso"]
+  objetos: ["orden de venta", "abono", "cronograma", "minuta", "boleta", "factura"]
+prerrequisitos:
+  - texto: "La Orden de Venta debe estar registrada en Sperant y sincronizada en el S10."
+    fuente: [web-https-documentacion-s10peru-com-boletaje-s000]
+pasos:
+  - n: 1
+    id: "facturacion.boletear-abonos-sperant#1"
+    accion: "En Sperant, en la parte superior, ubique la opción **Cronograma/Pagos** y registre el cronograma respectivo del cliente."
+    donde: "Sperant"
+    fuente: [web-https-documentacion-s10peru-com-boletaje-s000]
+    pagina: null
+    fotos:
+      - id: "d4b699a68b7c"
+        ruta_o_url: "imagenes/boletaje/ca17f46bac38.png"
+        pagina: null
+        caption: "En la parte superior debe ubicarse en la opción Cronograma/Pagos realizando asi el registro del cronograma respectivo del cliente"
+        ocr: "(Mi Vivienda Sin Ca) 2 Banco: Banco Interamericano de Finanzas (BanBif)  Contrato - Sv Titulares v Cronogramas v\nCronograma de: X\n* Este proceso tiene aprobado un descuento de 7.88% al precio total de venta. x Ahorro\nCartas fianza\nSeparacion 7 Pagos 1\ness evens\nEl proceso ha cumplido la fecha estimada para su culminaci6n. hace 14 dias.\nCronograma de Pagos\nCliente: Herrera Rivero Flavia Proyecto: —…"
+  - n: 2
+    id: "facturacion.boletear-abonos-sperant#2"
+    accion: "En la parte superior, use la opción **Nuevo Pago**, que desencadena una ficha."
+    donde: "Sperant"
+    fuente: [web-https-documentacion-s10peru-com-boletaje-s000]
+    pagina: null
+    fotos:
+      - id: "0f86e8fb5236"
+        ruta_o_url: "imagenes/boletaje/d8bb4174300b.png"
+        pagina: null
+        caption: "En la parte superior debe ubicar la opción Nuevo Pago, la cual desencadena una ficha"
+        ocr: "Proceso de Adquisicién ) Control de Pagos | Eliminar Cronograma Nuevo Pago\nPrecio Venta: S/. 109113.63 Proforma: PRE-VSI-01-F-008-0002 2 | Erol Pepes REReLSTES | Kare CUSED | | NerBexs | | 5 Gass\nCronogra\nCliente: Godoy Trelles Elvis = Fecha Estimada 26-03-2018\nBloque: f *\nFecha de Creacién: 16-11-2017 i lmacemn lw |\nUnidad | VN1EST25 ’ |\nProceso de Unidad = Etiqueta de Pago | CuotaInicial * * |\nN…"
+  - n: 3
+    id: "facturacion.boletear-abonos-sperant#3"
+    accion: "Envíe el cronograma a aprobación."
+    donde: "Sperant"
+    fuente: [web-https-documentacion-s10peru-com-boletaje-s000]
+    pagina: null
+    fotos:
+      - id: "21adb55d51ce"
+        ruta_o_url: "imagenes/boletaje/9a8d7c21bc19.png"
+        pagina: null
+        caption: "A continuación el cronograma debe ser enviado aprobación mediante la siguiente opción."
+        ocr: "Desde demo1.eterniasoft.com Tipo de cambio ? e L (Cerrar Sesion\nEstas seguro de enviar la solicitud de aprobacién\nH 1) Cancelar -\nTENNEY PALOS PENOENES \"TT Uravarcronograma Base | Reprogramacién © VerAbonos Imprimir Cronograma Solicitar aprobacion cronograma\n—————————————"
+      - id: "940bd957f1c7"
+        ruta_o_url: "imagenes/boletaje/f92dfb93829f.png"
+        pagina: null
+        caption: "A continuación el cronograma debe ser enviado aprobación mediante la siguiente opción."
+        ocr: "Solicitud de Aprobacion del Cronograma de Pagos | Aprobar }  Rechazar"
+  - n: 4
+    id: "facturacion.boletear-abonos-sperant#4"
+    accion: "Con el cronograma aprobado, use la opción **Realizar abono** mediante el icono del $."
+    donde: "Sperant"
+    fuente: [web-https-documentacion-s10peru-com-boletaje-s000]
+    pagina: null
+    fotos:
+      - id: "e30e72a1347d"
+        ruta_o_url: "imagenes/boletaje/c2d9ef6af4f7.png"
+        pagina: null
+        caption: "La aprobación del cronograma conlleva a que se habilite la opción de Realizar abono mediante el icono del $"
+        ocr: "X Control de Pagos\nar\ni i\n| |\nProforma: VN1-006288 2 Elimina} % eo; $s 14\nUnidad: | VN1EST25\nEl cronograma esté aprobado.\nNombre: | Separacion\nCronograma de Pagos Monto: | /1,150.00\nCliente: Herrera Rivero Flavia Pr,\nDetalle Operacién Abono F. Pago\nAbonos: 4\nBloque: est Uni\nFecha de Creacién: 10-04-2018 FechadeApro| — Etiqueta de | Separacion Recibida\nPago:\nProceso de Unidad Forma de | Depésito #…"
+  - n: 5
+    id: "facturacion.boletear-abonos-sperant#5"
+    accion: "Registre los datos del abono y, mediante la opción de **Sincronizar**, envíelo al S10."
+    donde: "Sperant"
+    resultado: "Si el envío es exitoso se muestran los check de color verde; caso contrario, de color rojo."
+    fuente: [web-https-documentacion-s10peru-com-boletaje-s000]
+    pagina: null
+    fotos:
+      - id: "681ed1f78b45"
+        ruta_o_url: "imagenes/boletaje/e1ba9a87a7cf.png"
+        pagina: null
+        caption: "Se registra los datos del abono y mediante la opción de Sincronizar este se envía al S10."
+        ocr: "Nuevo Abono\n\nas |\n}Sincronizar ——_@ Si ONO ORegularizar\n\nNumero de Operacién [oz = sd\n\n* Fecha de Pago ane |\n\nSaldo 690\n\n* Monto abono [60 =Sti‘iti‘C:«*Y S/\n\nMoneda (S/.) Peruvian Nuevo Sol ¥\n\n* Tipo de Cambio i\n\n* Monto abono real [eo |\n\n* Forma de Pago Depésito Y"
+      - id: "d110cf471f65"
+        ruta_o_url: "imagenes/boletaje/277048f03145.png"
+        pagina: null
+        caption: "De ser exitoso el envió nos muestra los check de color verde caso contrario se mostraran de color rojo"
+        ocr: "Abonos\nCliente: Palacios Borge Jose Domingo Proyecto: villanova etapa 1\nBloque: edificio 03 Unidades: VN1E3D903 - 903\n| p = le ida\n[ sense [rns a cw] aes ren [worse ato | aco | Jere ton || Gove aren | Wore sopeeaen |)\n' Interbank 041-\nv ! 27-04-2018 12:44 PM 03-03-2018 ‘$/3,834.00 1.0 $/3,834.00 3001383094 S/ 000008 WwW\nOO\n' . _ Interbank 041-\nv ! 27-04-2018 12:43 PM 22-02-2018 $/1,917.00 1.0 $/1,…"
+  - n: 6
+    id: "facturacion.boletear-abonos-sperant#6"
+    accion: "En el **Flujo del Proceso: Separación**, apruebe cada uno de los pasos: haga clic en cada línea y marque el check para Aprobar (en cada paso puede cargar un archivo)."
+    donde: "Sperant"
+    fuente: [web-https-documentacion-s10peru-com-boletaje-s000]
+    pagina: null
+    fotos:
+      - id: "1860fdd032e6"
+        ruta_o_url: "imagenes/boletaje/8447e58730ee.png"
+        pagina: null
+        caption: "Flujo del Proceso: Separación"
+        ocr: "Proforma: VN1-006288 (Hipotecario Con Ca) 2 Banco: Banco de Crédito del Peru (BCP) Contrato- Sov\nInterfaces x\nActualizar orden de venta\nSeparacion\nFlujo del Proceso: Separacién AhorroV5 @ = (*) Pasos obligatorios Eliminar orden de venta\nPasos: Actualizar cliente\n@ *confirmacién del cliente y generacién de cronograma de BESEE Gn Asesores Comerciales Mail Proceso De Separacion —\nCreado por\n*Archivo…"
+      - id: "980ad600d859"
+        ruta_o_url: "imagenes/boletaje/1a3379b4b669.png"
+        pagina: null
+        caption: "Se debe aprobar cada uno de los pasos dentro del flujo, dándole clic a cada línea se habilitara la siguiente ventana donde se marcara el check para Aprobar."
+        ocr: "X Paso: Confirmacién del cliente y generacién de cronogra...\ni. |.”\n|\nBanco: Banco de Crédito del Peru (BCP) Contrato - 1 v\nt\ni os\nae.\nFecha de Inicio: 09-04-2018 06:07 PM ¢\nSeparacion Fecha Estimada: 09-04-2018 06:07 PM\nFlujo del Proceso: Separacién Ahorro V5 @ —_ (*) Pasos obligatorios {\n* Observacién\nPasos:\n7} Fuente + | Tamaio ~|B I U| A~ BY\n1\n1\n1@ kconfirmacién del cliente y generacién de cro…"
+      - id: "ef6207d6c4c4"
+        ruta_o_url: "imagenes/boletaje/3afe6bd5c48b.png"
+        pagina: null
+        caption: "Cabe indicar que dentro de cada paso podemos cargar un archivo en cualquier formato."
+        ocr: "% Paso: Abono del cliente _ Carga Cronograma pagos_Fech...\nVv\n\nPredecesor Archivo de copia del DNI de cliente en su\n\nprincipal expediente\n* Observacion\nFuente ~| Tamaio ~| B F U| A~ EY\n4\nSubir archivo"
+  - n: 7
+    id: "facturacion.boletear-abonos-sperant#7"
+    accion: "Finalizada la aprobación de cada paso, suba el contrato o compromiso de la separación, adjuntando el archivo solo en formato PDF."
+    donde: "Sperant"
+    fuente: [web-https-documentacion-s10peru-com-boletaje-s000]
+    pagina: null
+    fotos:
+      - id: "fa0de9b82d02"
+        ruta_o_url: "imagenes/boletaje/f7898f284cb0.png"
+        pagina: null
+        caption: "Finalizada la aprobación de cada paso, se habilitara la siguiente opción permitiendo subir algún contrato o compromiso de la separación"
+        ocr: "Separacion\nFlujo del Proceso: SeparaciénAhorroV5 @ = (*) Pasos obligatorios\nPasos:\n@ *confirmacién del cliente y generacién de cronograma de BERGE Gn Asesores Comerciales Wapl Proceso De Separacion [Rig\nCreado por\n@ *archivo de copia del DNI de cliente en su expediente | Gn Asesores Comerciales Way Emendiola Emendiola\nCreado\n@ *Abono del cliente_ Carga Cronograma pagos_ Fecha de enters Gn Asesores…"
+      - id: "764311eb5b19"
+        ruta_o_url: "imagenes/boletaje/67415de92f03.png"
+        pagina: null
+        caption: "Adjuntando archivos solo en formato PDF"
+        ocr: "© Abrir X pservacion\n4 [> Esteequipo > Escritorio v & Buscar en Escritorio Pp\nOrganizer Nuevas carpeta f= + (i (2)\n|) Visual Studio 20°* = Nombre ° A Subir Contrato\nWil Este equipo 1. Lista de Proyectos - Consultoria-Implantacién.xlsx (=|\n. 2. Tiempos de Consulteres y Proyectossdsx\nDocumentos zy = =\n[g| Compromis de Seperacion.pdii Formatos Soportados .PDF\n5 Downloads §) Administracién.rdp\nI Escri…"
+  - n: 8
+    id: "facturacion.boletear-abonos-sperant#8"
+    accion: "Solicite la aprobación respectiva, enviando una notificación a los aprobadores del proceso."
+    donde: "Sperant"
+    fuente: [web-https-documentacion-s10peru-com-boletaje-s000]
+    pagina: null
+    fotos:
+      - id: "a83c2ca17955"
+        ruta_o_url: "imagenes/boletaje/77f338e81567.png"
+        pagina: null
+        caption: "A continuación se debe solicitar la aprobación respectiva, enviando una notificación a los aprobadores del proceso."
+        ocr: "See Nat eet Veen en nent Vener Sennen EEN 4 €)) Proceso De Separacion WF\nNotificar a un usuario con accesos para aprobar el documento Creado por\nEmendiola Emendiola\nOpi I cl hae bt ond liicicen el ef I creado\ncionalmente puedes enviar la razon de solicitu e\nP P — 09-04-2018\neee Observacion\n|\noom :\nOUCIEE 3: emendiola X | x\nReason Peace “ | , Aprobacién de Contrato\nmvizcarra\nContrato de Separacion…"
+      - id: "f8afe64e1c2a"
+        ruta_o_url: "imagenes/boletaje/d550139e5f71.png"
+        pagina: null
+        caption: "A continuación se debe solicitar la aprobación respectiva, enviando una notificación a los aprobadores del proceso."
+        ocr: "Mensaje 3 |\nrv) Fue enviado correctamente la notificacion.\nAceptar"
+  - n: 9
+    id: "facturacion.boletear-abonos-sperant#9"
+    accion: "Inicie los procesos de Aprobación y Venta y seleccione el flujo de acuerdo a lo establecido por cada empresa."
+    donde: "Sperant"
+    fuente: [web-https-documentacion-s10peru-com-boletaje-s000, web-https-documentacion-s10peru-com-boletaje-s001]
+    pagina: null
+    fotos:
+      - id: "0905b7f5cdab"
+        ruta_o_url: "imagenes/boletaje/a65afe82d6c2.png"
+        pagina: null
+        caption: "De igual forma deben aprobarse los siguientes flujos, como primer paso debe iniciar cada uno de los procesos el de Aprobación y Venta"
+        ocr: "| ee ene eeN o_o i\nEsta seguro de iniciar el proceso de Aprobacién?\nceso de unidad ——\n288 (Hipotecario Con Ca) 2 ~\"Barico: Banco de Credito del Peru (BCP) Contrato - Sv Titulares v\nAprobacion VA \\\n=|\nVenta"
+      - id: "9a661deab342"
+        ruta_o_url: "imagenes/boletaje/e6ca81dc2e44.png"
+        pagina: null
+        caption: "A continuación debe seleccionar el flujo de acuerdo a lo establecido por cada empresa"
+        ocr: "<I Proceso de Unidades\n| Elegir el Flujo del Proceso - Seleccione un flujo de proceso - s\n- Seleccione un flujo de proceso -\nMinuta Ahorro v6 ir\nVenta Minuta Contado v4\nMinuta Hipotecario v5\nVenta Hisstorica v1 ~\n—\nIniciar Proceso de Venta"
+  - n: 10
+    id: "facturacion.boletear-abonos-sperant#10"
+    accion: "Apruebe cada paso que se encuentra dentro de cada uno de los flujos."
+    donde: "Sperant"
+    fuente: [web-https-documentacion-s10peru-com-boletaje-s001]
+    pagina: null
+    fotos:
+      - id: "79d3266faf95"
+        ruta_o_url: "imagenes/boletaje/0fbd83e0f801.png"
+        pagina: null
+        caption: "Seguidamente debe ser aprobado cada paso que se encuentra dentro de cada uno de los flujos remarcados"
+        ocr: "ne a |\nk Aprobacion i\nt 1\ni Py = -,\n| Flujo del Proceso: Aprobacién Hipotecario @ | (*) Pasos obligatorios Generar Documento\n|\nPasos:\n@ *en proceso de EXAMI Gn Asesores Comerciales | Proceso De Aprobacién [Ri\nCreado por\n*Carta de aprobacién emitida por el banco ARCHIVARBRCRE G-s.lg-$@eluC eel. CUP CS nes) Emendiola Emendiola\nCreado\n27-04-2018\n4 »\nAfiadir Criterio/Observacién\nOe\ni Venta 1\n1\nt 1\n1 F…"
+  - n: 11
+    id: "facturacion.boletear-abonos-sperant#11"
+    accion: "Suba el contrato de Venta en formato PDF."
+    donde: "Sperant"
+    resultado: "Se habilita la opción de Enviar Minuta al S10."
+    fuente: [web-https-documentacion-s10peru-com-boletaje-s001]
+    pagina: null
+    fotos:
+      - id: "d1a5ee06a116"
+        ruta_o_url: "imagenes/boletaje/a1cf46f22288.png"
+        pagina: null
+        caption: "Finalmente debe subirse el contrato de Venta en formato PDF"
+        ocr: "Venta\nFlujo del Proceso: Minuta HipotecarioV5 # (*) Pasos obligatorios Generar Documento\nPasos:\nCreado por\n© *Firmade minuta Compra Neile) Gn Asesores Comerciales | Gn/Asistente Administrative | Emendiola Emendiola\nCreado\n@ *Envio de expediente para firma de representantes [eg emeucteoscurs 27-04-2018\n© Abrir x\n4 [> Esteequipo » Escritorio vd Buscar en Escritorio Fe) Subir Contrato\nOrganizar v Nue…"
+      - id: "45210f6ba160"
+        ruta_o_url: "imagenes/boletaje/ddca015574b7.png"
+        pagina: null
+        caption: "La acción de subir dicho Contrato de Venta, habilita la opción de Enviar Minuta al S10"
+        ocr: "Banco: Banco de Crédito del Peru (BCP) Contrato - Soy\nInterfaces x\nActualizar orden de venta\nVenta Eliminar orden de venta\nFlujo del P, : Minuta Hipot io VS (*) P. bligatori , .\njujo del Proceso: nu ipotecario ( 1) asos obligatorios Actualizar cliente ocumento\n\n[ror rno nora cr nce nnn annoy\n\nPasos: i |\n\na 1 Enviar Minuta !\n\nL...----- ee eee\n\n@ *rnisién de boleta de separacién Gmésesores Comerdale…"
+  - n: 12
+    id: "facturacion.boletear-abonos-sperant#12"
+    accion: "Use la opción **Enviar Minuta**, registre la **Fecha de Contrato** y haga clic en **Enviar**."
+    donde: "Sperant"
+    resultado: "La información viaja al S10."
+    fuente: [web-https-documentacion-s10peru-com-boletaje-s001]
+    pagina: null
+    fotos:
+      - id: "509c115f2243"
+        ruta_o_url: "imagenes/boletaje/872066f723c5.png"
+        pagina: null
+        caption: "Al hacer uso de la opción Enviar Minuta solicitara registrar la fecha de Contrato"
+        ocr: "ee ng\nEEE)\nEnvio Minuta S10\n|\ni = Fecha de Contrato 20-03-2018 06:54 pm\n(QO  Marzo218 «=O\n| Lu Ma Mi Ju Vi Sa Do\nchy || je | |e\n5 6 7 8 9 10 il\n12 |)43 |) 4| p45 || 16 || 7] 8\n19 BRM 21) 22) 23) 24 25\n26, 27. 28 29 > 30 31\nay Hora 06:54 pm\nrvacion\nHoras 06Pm ¥\nMinutos 54 ¥"
+      - id: "a0b4d9a999bc"
+        ruta_o_url: "imagenes/boletaje/739f24f73a7b.png"
+        pagina: null
+        caption: "Al darle clic en Enviar esta información viajara al S10"
+        ocr: "Envio Minuta $10\n= Fecha de Contrato 20-03-2018 06:54 pm"
+  - n: 13
+    id: "facturacion.boletear-abonos-sperant#13"
+    accion: "En S10, abra la orden de venta desde el escenario documentos de ventas y revise la pestaña **Cronograma de Facturación** (detalle de los abonos enviados) y la pestaña **Sperant** (detalle del envío de minuta)."
+    donde: "S10, escenario Documentos de Venta"
+    fuente: [web-https-documentacion-s10peru-com-boletaje-s001]
+    pagina: null
+    fotos:
+      - id: "9ed602a74755"
+        ruta_o_url: "imagenes/boletaje/764c7e5dfd24.png"
+        pagina: null
+        caption: "S10 En el escenario documentos de ventas se registran de manera automática todas las órdenes de venta que han sido enviadas desde el Sperant"
+        ocr: "¥Yentas\nDocumentos de Yenta Detallado\nre\nCronograma de Facturacién\nJ Inicio"
+      - id: "8e2072646970"
+        ruta_o_url: "imagenes/boletaje/aed0d1b01733.png"
+        pagina: null
+        caption: "Mediante la pestaña Cronograma de Facturación que se encuentra dentro de la Orden de Venta podemos ver el detalle de los abonos enviados desde Sperant"
+        ocr: "(| Documento de ¥enta | - (Oy x}\nDocumento |Orcen de Venta % S|\nEmpresa 22000034 |CONSTRUCTORA CUMBRES VILLANOVA S.4.C | N° de documento\nEmpresa-Sucursal [22000034 _ |CONSTRUCTORA CUMBRES VILLANOVA S.A.C ws 44 000000000131\nCliente 22010492 [HERRERA RIVERO, FLAVIA on |\n44 © estado\nSrenes) we 44 Parcialmente Facturado\nContacto = 44 g\nFecha 09/04/2018 vy] Moneda joi {SOLES oe 44 Tipo cambio | 3.259..…"
+      - id: "8e09f7d228cc"
+        ruta_o_url: "imagenes/boletaje/5af67bf5b638.png"
+        pagina: null
+        caption: "Mediante la pestaña Sperant que se encuentra dentro de la Orden de Venta podemos ver el detalle del Envió de Minuta"
+        ocr: "{gj Documento de ¥enta BEES\nDocumento |Orcen de Venta Y S|\nEmpresa Pe2oon0ss ICONSTRUCTORA CUMBRES VILLANOVA S.4.C oo a4] N° de documento\nEmpresa-Sucursal e2oa0034 ICONSTRUCTORA CUMBRES VILLANOVA S.4.C eo 44 000000000131\nCliente. 2a 0492 JHERRERARIVERO, FLAVIA ea\n| ¢| Estado,\nSucursal j i 44| Parcialmente Facturado\nContacto | La 44 |\nFecha Josmoanaote | Moneda |i SOLES oe | Tipo cambio | 3.239 .».…"
+  - n: 14
+    id: "facturacion.boletear-abonos-sperant#14"
+    accion: "En el escenario **Boletaje**, elija en el filtro **Tipo de Boletaje** los abonos a mostrar: Abono hito inicial (comprobante inicial por la suma de los abonos enviados hasta la fecha) o Abonos posteriores (los emitidos después del primer comprobante)."
+    donde: "S10, escenario Boletaje"
+    fuente: [web-https-documentacion-s10peru-com-boletaje-s001]
+    pagina: null
+    fotos:
+      - id: "0af180fb6d5e"
+        ruta_o_url: "imagenes/boletaje/8159e5dd8691.png"
+        pagina: null
+        caption: "Como se indicaba inicialmente para realizar el proceso de “Cambio de Titular” si uno de los abonos cuenta con Boleta, los demás abonos también deben estar Boleteados, caso contrario no permitirá hacer el cambio. Boletaje En el escenario Boletaje se procede a generar los comprobantes siendo Facturas para Persona Jurídica o Boleta para Persona Natural, de acuerdo a lo configurado."
+        ocr: "\\j\nBoletaje\nSJ Por Pagar"
+      - id: "a0ac354c70db"
+        ruta_o_url: "imagenes/boletaje/d1261dd7411d.png"
+        pagina: null
+        caption: "Tipo de Boletaje Mediante el siguiente filtro se mostraran los abonos de acuerdo a lo enviado."
+        ocr: "Boletaje\n\nTipo de Boletaje Jatoone Hito Inicial ¥| | © Inmobiliaria © OFinanciera fronarzo1s | F | Al\nEMaaks +E aaa\n\nArrastre hacia aqui el encabezado de la columna que desea agrupar.\n2/5 Campa|tir, y|len cualquier posicién | Grupo:\nNro. Proyecto Socio De Negocio Fecha Cotizaciin |Fecha Venta Moneda Simbolo Total Cobrado\nO00000000116 COM - VILLANOVA ETAPA 24-EC ORE MEGO, YOANA ELIZABET 0206/2017 0…"
+  - n: 15
+    id: "facturacion.boletear-abonos-sperant#15"
+    accion: "Genere los comprobantes: Facturas para Persona Jurídica o Boleta para Persona Natural, de acuerdo a lo configurado."
+    donde: "S10, escenario Boletaje"
+    fuente: [web-https-documentacion-s10peru-com-boletaje-s001]
+    pagina: null
+    fotos:
+      - id: "8cf77863daf6"
+        ruta_o_url: "imagenes/boletaje/bd987db9961b.png"
+        pagina: null
+        caption: "Abonos posteriores: Aquí mostrara los abonos siguientes, emitidos después del primer comprobante."
+        ocr: "(GH Listado de Comprobante BEE\nEYARNS8 val ade\nArrastre hacia aqui el encabezado de la columna que desea agrupar.\n070 CampolError | Jen cualquier posicién [X][2] erupo:\nNro. Orden De Venta |Proyecto |Socio De Negocio Serie Tipo Documento Numeraciér|Moneda_|Fecha Codigo Talonario\n[poosooooarst COM- VILLANOVAETAPA 1 -ESTACION: HERRERARIVERO, FLAVIA 6001  BOLETASDE VENTAELECTRONCA 0000074 SOLES 10/4/…"
+      - id: "cba48e6d5ae3"
+        ruta_o_url: "imagenes/boletaje/d6f3a953965b.png"
+        pagina: null
+        caption: "Abonos posteriores: Aquí mostrara los abonos siguientes, emitidos después del primer comprobante."
+        ocr: "Documentos por Cobrar\nTipo Documenta | 067 BOLETAS DE VENTA ELECTRONICA |v | -- | - Todos Periodo | bh\n= J =\nBOMARR a vali gaa\n4rrastre hacia aqui el encabezado de la columna que desea aqrupar.\naft Campa| Socio de Negocio + |JEn cualquier posicién ¥ ||flavi [Xx][2] Grupo:\nProyecto N® Documento N° Correlativo Yencimiento | Socio de Negocio Moneda Total Fecha\nCOM - VILLANOVA, ETA [BE 8001 -0000074 o…"
+verificacion:
+  - texto: "En el escenario documentos de ventas del S10 se registran de manera automática todas las órdenes de venta enviadas desde el Sperant."
+    fuente: [web-https-documentacion-s10peru-com-boletaje-s001]
+errores_frecuentes:
+  - sintoma: "La opción Enviar Minuta no está activa en Sperant."
+    solucion: "Se activa únicamente cuando se han cumplido los flujos de proceso de Separación y Venta, subiendo finalmente el Contrato y/o Minuta."
+    fuente: [web-https-documentacion-s10peru-com-boletaje-s000, web-https-documentacion-s10peru-com-boletaje-s001]
+  - sintoma: "El sistema no permite hacer el Cambio de Titular."
+    solucion: "Si uno de los abonos cuenta con Boleta, los demás abonos también deben estar boleteados; caso contrario no permitirá hacer el cambio."
+    fuente: [web-https-documentacion-s10peru-com-boletaje-s001]
+relacionados: [facturacion.anular-venta-sperant]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-boletaje-s000, manual: "Registro y Boletaje Sperant – S10", seccion: "Registro y Boletaje Sperant – S10 (1)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-boletaje-s001, manual: "Registro y Boletaje Sperant – S10", seccion: "Registro y Boletaje Sperant – S10 (2)", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

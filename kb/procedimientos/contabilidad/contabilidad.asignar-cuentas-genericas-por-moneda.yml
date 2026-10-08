@@ -1,0 +1,77 @@
+id: contabilidad.asignar-cuentas-genericas-por-moneda
+version: 1
+modulo: contabilidad
+titulo: "Asignar cuentas genéricas por moneda"
+objetivo: "Relacionar cada cuenta genérica con una cuenta del plan contable según la moneda, para que la contabilización se realice de acuerdo con la moneda de las operaciones."
+nivel: intermedio
+preguntas:
+  - "como asigno una cuenta generica por moneda en contabilidad"
+  - "quiero que proveedores en dolares vaya a otra cuenta que en soles"
+  - "donde configuro las cuentas genericas por moneda"
+  - "como relaciono la cuenta generica con una cuenta del plan contable"
+  - "cuentas por pagar en dolares contabiliza en la cuenta de soles, como lo cambio"
+  - "asignacion de cuentas genericas soles y dolares s10"
+  - "como pongo cuenta contable diferente segun la moneda"
+  - "cuenta jenerica por moneda como se configura"
+aliases:
+  - "cuentas genéricas por moneda"
+  - "asignar cuenta genérica"
+  - "asignación de cuentas genéricas"
+  - "cuenta genérica por moneda"
+entidades:
+  modulo: "Contabilidad"
+  pantallas: ["Asignación de Cuentas"]
+  objetos: ["cuenta genérica", "cuenta contable", "moneda", "plan de cuentas", "esquema contable"]
+prerrequisitos:
+  - texto: "El esquema contable debe estar configurado por empresa: establece el uso del plan de cuentas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s026]
+pasos:
+  - n: 1
+    id: "contabilidad.asignar-cuentas-genericas-por-moneda#1"
+    accion: "Ingrese al escenario **Asignación de Cuentas** y seleccione el esquema contable."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050, web-https-documentacion-s10peru-com-manual-d-s049]
+    pagina: null
+  - n: 2
+    id: "contabilidad.asignar-cuentas-genericas-por-moneda#2"
+    accion: "En **Cuentas**, elija **Cuentas Genéricas**: cada cuenta genérica se relaciona con una sola cuenta del plan contable establecido por el esquema contable."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s049]
+    pagina: null
+    fotos:
+      - id: "feaa35c475d8"
+        ruta_o_url: "imagenes/manual-de-contabilidad/83f3ee953a73.png"
+        pagina: null
+        caption: "La Configuración Obligatoria de cuentas genéricas es relacionada con una sola cuenta del Plan Contable establecido por el esquema Contable. Existe una relación de Cuentas genéricas que se puede configurar por Monedas."
+        ocr: "‘$10 Contabilidad BETES\n| Archive Yer Catélogos Herramientas 2\nae)\nia Asignacién de Cuentas\n=] 'squema: jentas: |[_| Cuentas Genéricas ao a [Asignacion de Guentas contables por\n= I rears | __|monedas para las cuentas genéricas.\na\npincomae OCT o GF ot al at De oases aeacaNos\nArrastre hacia aqui el encabezado de la columna que desea agrupar.\n& 212 Campo|cédigo =] [en cualquier postin > [X|[2] uno:\nE…"
+  - n: 3
+    id: "contabilidad.asignar-cuentas-genericas-por-moneda#3"
+    accion: "En **Moneda**, elija la moneda para la que asignará la cuenta contable a las cuentas genéricas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050, img-8377e8540b0e-0000]
+    pagina: null
+    fotos:
+      - id: "55c1db950347"
+        ruta_o_url: "imagenes/manual-de-contabilidad/8377e8540b0e.png"
+        pagina: null
+        ocr: "‘$10 Contabilidad IEIES\n© Archivo Yer Catslogos Herramientas 2\neis ya)\n5B) Tema A we da Ct :\ni Asignacién de Cuentas\nEsquema: [001 [ES@UEMA CONTABLE DEMO Ot ==] | cuentas: [IL] cuentas Genéricas | Moneda: [Sin Moneda ~\nvonconave | CSET 1S? Bo G1 cal | De sees aezicatos\nArrastre hacia aqu el encabezado de lacolumna que desea agrunar\n& 1/2 Campo[cédigo Ben cuscuier posisén I XL | crupo:\nEsquema Cont…"
+  - n: 4
+    id: "contabilidad.asignar-cuentas-genericas-por-moneda#4"
+    accion: "Haga clic derecho sobre la cuenta genérica y utilice la opción **ASIGNAR CUENTA**."
+    resultado: "Aparece el plan de cuentas del esquema contable configurado por empresa."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s027, img-8377e8540b0e-0000]
+    pagina: null
+  - n: 5
+    id: "contabilidad.asignar-cuentas-genericas-por-moneda#5"
+    accion: "Seleccione la cuenta contable del plan de cuentas que corresponde a esa moneda."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s027, web-https-documentacion-s10peru-com-manual-d-s050]
+    pagina: null
+verificacion:
+  - texto: "La contabilización se realiza según la moneda de la operación: por ejemplo, en un registro de reembolsos en soles y dólares, la cuenta genérica Cuentas y Documentos por Pagar (proveedores) contabiliza según la moneda la asignación contable realizada."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050]
+errores_frecuentes: []
+relacionados: [contabilidad.agregar-moneda, contabilidad.crear-plan-de-cuentas]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s026, manual: "Manual de Contabilidad", seccion: "4.4.1 Funcionalidades del escenario según Tipo Categoría de Recursos.", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s050, manual: "Manual de Contabilidad", seccion: "4.4.10.1 Asignación de Cuentas Genéricas por Moneda", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s049, manual: "Manual de Contabilidad", seccion: "4.4.10 Funcionalidades del escenario según Cuentas Genéricas.", pagina: null}
+  - {id: img-8377e8540b0e-0000, manual: "Manual de Contabilidad", seccion: "8377e8540b0e.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s027, manual: "Manual de Contabilidad", seccion: "4.4.1.1 Asignación de Cuentas Tipo Categoría de Recursos.", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

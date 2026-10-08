@@ -1,0 +1,152 @@
+id: gerencia-proyectos.aprobar-valorizacion-del-subcontrato
+version: 1
+modulo: gerencia-proyectos
+titulo: "Aprobar la valorización de un subcontrato y autorizar su pago"
+objetivo: "Aprobar la valorización del subcontrato, autorizar el pago de la valorización y aprobar la autorización de pago, para que el documento pase al módulo de Facturación – Documentos por pagar y luego a contabilidad."
+nivel: intermedio
+preguntas:
+  - "como apruebo la valorizacion de un subcontrato"
+  - "ya valorice al subcontratista, ahora como la apruebo"
+  - "como autorizo el pago de una valorizacion del subcontratista"
+  - "como apruevo la autorizacion de pago del subcontrato"
+  - "por que no me sale adicionar en la pestaña valorizaciones"
+  - "la valorizacion del subcontrato no aparece para autorizar el pago"
+  - "como paso la valorizacion del subcontrato a documentos por pagar"
+  - "donde veo cuanto se le pago a cada subcontratista por periodo"
+  - "pasos para aprobar valorisacion de subcontrato en gerencia de proyectos"
+aliases:
+  - "aprobar valorización del subcontrato"
+  - "autorizar pago de valorización"
+  - "aprobar autorización de pago"
+  - "pago al subcontratista"
+  - "aprobar valorizacion subcontrato"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Subcontratos", "Valorizaciones", "Subcontrato Estado de Cuenta"]
+  objetos: ["valorización", "subcontrato", "autorización de pago", "subcontratista"]
+prerrequisitos:
+  - texto: "La valorización del subcontrato debe estar registrada para el periodo: solo se permite una valorización por periodo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s159]
+  - texto: "El usuario que aprueba la autorización de pago debe tener atributos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s162]
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.aprobar-valorizacion-del-subcontrato#1"
+    accion: "Ingrese al escenario de **Subcontratos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s159]
+    pagina: null
+    fotos:
+      - id: "6e2acd31d2b5"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/da5767ef9c2a.png"
+        pagina: null
+        caption: "Acceso al escenario de Subcontratos"
+        ocr: "ts ]\n‘Subcontrato - ©) gg Escritorio\nDe Obra Luego, (=) PUENTE EN CARRETERA"
+  - n: 2
+    id: "gerencia-proyectos.aprobar-valorizacion-del-subcontrato#2"
+    accion: "Ingrese al subcontrato del subcontratista: cada uno de los subcontratos se valoriza independientemente."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s159]
+    pagina: null
+    fotos:
+      - id: "be0a11a89f0b"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/7c3fc7d7d37a.png"
+        pagina: null
+        caption: "Se valoriza cada uno de los subcontratos del subcontratista independientemente,"
+        ocr: "Subcontrato - De Obra eS\n= eee\n[= Suweortratos\n\nSI0SA\n“Florez, Antonio\n\n“(@/SCM,DE 0. PARA COLOCACION DE ACERO CORRUGADOfme|L) Adicionar Valorizacion"
+  - n: 3
+    id: "gerencia-proyectos.aprobar-valorizacion-del-subcontrato#3"
+    accion: "En la pestaña **Valorizaciones**, haga clic derecho sobre la valorización y elija **Aprobar valorizacion**."
+    fuente: [img-8c097e2da19a-0000, web-https-documentacion-s10peru-com-manual-d-s162]
+    pagina: null
+    fotos:
+      - id: "75294bdbea21"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/8c097e2da19a.png"
+        pagina: null
+        ocr: "ml N\" Periodo: Morto Valorizado Reajuste Cor\n[P} conc Semana 18 26/04/2010 020052010 3,100.00\n[By ateonal |\nAprobar valorizacion"
+  - n: 4
+    id: "gerencia-proyectos.aprobar-valorizacion-del-subcontrato#4"
+    accion: "Confirme que está seguro de aprobar la valorización."
+    resultado: "La valorización queda aprobada: solo las valorizaciones aprobadas son elegidas para la autorización de pago."
+    fuente: [img-2bd0b467b22c-0000, web-https-documentacion-s10peru-com-manual-d-s162]
+    pagina: null
+    fotos:
+      - id: "527d3a591076"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/2bd0b467b22c.png"
+        pagina: null
+        ocr: "Sudcontrato\n@ 4Esta seguro de aprobar la Valorizacién N° 00001?\n[a] te"
+  - n: 5
+    id: "gerencia-proyectos.aprobar-valorizacion-del-subcontrato#5"
+    accion: "Para autorizar el pago de la valorización, haga clic derecho y elija **Adicionar**."
+    fuente: [img-9d87df2ed2ed-0000, web-https-documentacion-s10peru-com-manual-d-s162]
+    pagina: null
+    fotos:
+      - id: "c2a62ea3ea27"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/9d87df2ed2ed.png"
+        pagina: null
+        ocr: "mm Namero Tipo Pago NP Valorizacién Fecha Otorgado\n\n[>] he F o0001 Adelanto 2104/2010. 7,813.90\n\n[| 00002 Pago a Cuenta 21042010 11,900.00\nClic derecho }Q._ Adicionar"
+  - n: 6
+    id: "gerencia-proyectos.aprobar-valorizacion-del-subcontrato#6"
+    accion: "En **Tipo Pago**, elija **Valorización**."
+    fuente: [img-3d76e60f833b-0000, web-https-documentacion-s10peru-com-manual-d-s162]
+    pagina: null
+    fotos:
+      - id: "573c2935823d"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/3d76e60f833b.png"
+        pagina: null
+        ocr: "BY Paso as\nCédiga Tipo Pago [Walorizacién =] wepago [00008\n- _ —_______[adelarto\nProyecto JSC M. DE ©. PARA COLOCACION DE AdPago a cuenta\nVelorizacion C\nSubcontretista, [2100725 Florez, Antoniof “= #4)\non os\nobservacion |"
+  - n: 7
+    id: "gerencia-proyectos.aprobar-valorizacion-del-subcontrato#7"
+    accion: "Del catálogo de valorizaciones, elija con doble clic la valorización aprobada."
+    fuente: [img-e64efc29f12e-0000, web-https-documentacion-s10peru-com-manual-d-s162]
+    pagina: null
+    fotos:
+      - id: "46aeeb18bf77"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/e64efc29f12e.png"
+        pagina: null
+        ocr: "[nl\n> Catdlogo de Valorizaciones Sree\nOpciones 2\nDe XE A Me B® OO HAS Ee\nEliia con doable clic\n|| Valorizacién Periodo Por Facturar Pagado Saldo\n| ‘00001 ‘Semana 13 1,539.65 1,539.65"
+  - n: 8
+    id: "gerencia-proyectos.aprobar-valorizacion-del-subcontrato#8"
+    accion: "Revise los datos del pago de la valorización (por facturar, pagado, saldo, base imponible, impuesto y pago actual) y pulse **Adicionar**."
+    fuente: [img-59715845b098-0000, web-https-documentacion-s10peru-com-manual-d-s162]
+    pagina: null
+    fotos:
+      - id: "b4b9e090b475"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/59715845b098.png"
+        pagina: null
+        ocr: "(Seo TTT =\nCédigo Tipo Pago |alorizacién >| wPago ‘00003\nProyecto [SC M. DE 0. PARA COLOCACION DE ACERO CORRUGADO\nSubcontratista [02100125 Florez, Antonio | oo\nObservacisn |\n\nFecha [020062010 +\nPor Facturar — Pagaco Saldo Base imponible lmpuesto Pago actual\nCreado Por:\nAprobado Por :\nAdicionar Cancelar"
+  - n: 9
+    id: "gerencia-proyectos.aprobar-valorizacion-del-subcontrato#9"
+    accion: "Apruebe la autorización de pago: haga clic derecho sobre el pago de la valorización y elija **APROBAR AUTORIZACION DE PAGO/COBRANZA**."
+    resultado: "El documento aprobado pasa al módulo de Facturación – Documentos por pagar y por consiguiente a contabilidad."
+    fuente: [img-30df0716c213-0000, web-https-documentacion-s10peru-com-manual-d-s162, web-https-documentacion-s10peru-com-manual-d-s158]
+    pagina: null
+    fotos:
+      - id: "4b4a259bd871"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/30df0716c213.png"
+        pagina: null
+        ocr: "| poids teeaeel Elija .\nWy Namero Tipo Pago N'Valorizacién | Fecha Otorgaco —_Importe Neto\nLE} | 00001 Adelanto 21704/2010 7,813.90 6 566.30\nxf”| 00002 Pago a Cuenta 2104/2010 11,900.00 10,000.00\nClic derecho 00003 Valorizacién oooot—o2ms2010 1,539.85 4,304.79\n| DB. Adicionar\nAprobar autorizacién de pago/cobranza"
+verificacion:
+  - texto: "En el escenario **SUBCONTRATO ESTADO DE CUENTA** se visualiza cada uno de los subcontratos y sus pagos por periodos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s162]
+errores_frecuentes:
+  - sintoma: "En la pestaña Valorizaciones no está disponible la opción Adicionar."
+    solucion: "Ocurre cuando la persona que elabora la valorización no es la que la aprueba. Si quien elabora la valorización es quien aprueba, puede registrar el pago."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s162]
+  - sintoma: "La valorización no aparece para la autorización de pago."
+    solucion: "Solo las valorizaciones aprobadas son elegidas para la autorización de pago: apruebe primero la valorización."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s162]
+  - sintoma: "No se puede registrar una segunda valorización del subcontrato en el mismo periodo."
+    solucion: "El sistema solo permite una valorización por periodo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s159]
+relacionados: [gerencia-proyectos.registrar-subcontrato, gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s159, manual: "Manual de Gerencia de Proyectos", seccion: "4.6.10 Valorización del subcontrato", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s162, manual: "Manual de Gerencia de Proyectos", seccion: "4.6.10.4 Aprobar la valorización del subconrato", pagina: null}
+  - {id: img-8c097e2da19a-0000, manual: "Manual de Gerencia de Proyectos", seccion: "8c097e2da19a.png", pagina: null}
+  - {id: img-2bd0b467b22c-0000, manual: "Manual de Gerencia de Proyectos", seccion: "2bd0b467b22c.png", pagina: null}
+  - {id: img-9d87df2ed2ed-0000, manual: "Manual de Gerencia de Proyectos", seccion: "9d87df2ed2ed.png", pagina: null}
+  - {id: img-3d76e60f833b-0000, manual: "Manual de Gerencia de Proyectos", seccion: "3d76e60f833b.png", pagina: null}
+  - {id: img-e64efc29f12e-0000, manual: "Manual de Gerencia de Proyectos", seccion: "e64efc29f12e.png", pagina: null}
+  - {id: img-59715845b098-0000, manual: "Manual de Gerencia de Proyectos", seccion: "59715845b098.png", pagina: null}
+  - {id: img-30df0716c213-0000, manual: "Manual de Gerencia de Proyectos", seccion: "30df0716c213.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s158, manual: "Manual de Gerencia de Proyectos", seccion: "4.6.9 Registro de pagos a cuenta", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

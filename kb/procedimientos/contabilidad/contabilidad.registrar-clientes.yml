@@ -1,0 +1,128 @@
+id: contabilidad.registrar-clientes
+version: 1
+modulo: contabilidad
+titulo: "Registrar clientes en el catálogo de Contabilidad"
+objetivo: "Registrar clientes en el catálogo de Clientes, importándolos desde Excel o agregándolos manualmente con su tipo de socio de negocio y sus cuentas bancarias."
+nivel: basico
+preguntas:
+  - "como registro un cliente en contabilidad s10"
+  - "como importo mis clientes desde un excel"
+  - "tengo la lista de clientes en excel, como la subo al s10"
+  - "como agrego un cliente a mano en el catalogo de clientes"
+  - "donde pongo la cuenta de banco del cliente en contabilidad"
+  - "como le pongo el tipo de socio de negocio al cliente"
+  - "importacion de clientes excel unir campos s10"
+  - "como creo un clinte nuevo en catalogos"
+  - "y los proveedores se registran igual que los clientes?"
+aliases:
+  - "registrar cliente"
+  - "importar clientes"
+  - "catálogo de clientes"
+  - "agregar cliente"
+entidades:
+  modulo: "Contabilidad"
+  pantallas: ["Clientes", "Catálogos"]
+  objetos: ["cliente", "socio de negocio", "cuenta bancaria", "Excel"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "contabilidad.registrar-clientes#1"
+    accion: "Para visualizar los catálogos, ubíquese en el **Menú** > **Catálogos** y abra el catálogo de **Clientes**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s003, web-https-documentacion-s10peru-com-manual-d-s008]
+    pagina: null
+  - n: 2
+    id: "contabilidad.registrar-clientes#2"
+    accion: "Para importar los clientes desde Excel:"
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s008]
+    pagina: null
+    sub:
+      - n: 1
+        id: "contabilidad.registrar-clientes#2.1"
+        accion: "Elija el icono de importación de Excel."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s008]
+        pagina: null
+        fotos:
+          - id: "3b668c56eadd"
+            ruta_o_url: "imagenes/manual-de-contabilidad/80e40190f4a8.png"
+            pagina: null
+            caption: "Para la importación de Excel se elige el icono como se indica a continuación:"
+            ocr: "gy Catalogo de Socios de Negocio por Tipo : 01 CLIENTE La =\nOpciones 2\nOe XBziS #¥BalSifo--- 47 aS & m2\nFF Te ee eNOS co Pepe —imporecn dence |= ds\n5| cueNTe |_| Cédigo__| Descripcion ‘Abreviatura\n1 PROVEEDOR | _|@|_ 02100001 | SISTEMA 10 S.A.C.\n2 caw |__| 09010060 |ANDRADEANDRADE,ANDRES | AANDRADE\nA empteapo || 09010086 | ESSALUD\n4 acciousta PANEER NOvOnAreVaL0, caRLOSALrR=00\na rane |M| 22000615…"
+      - n: 2
+        id: "contabilidad.registrar-clientes#2.2"
+        accion: "Ubique la ruta del documento."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s008]
+        pagina: null
+        fotos:
+          - id: "0a88fc4a3b13"
+            ruta_o_url: "imagenes/manual-de-contabilidad/d9f641c0b3a9.png"
+            pagina: null
+            caption: "Se ubica la ruta del documento."
+            ocr: "Seleccione el archivo Exc a ex)\n—— =\n|) EES = a\n| Organizar ¥ Nueva carpeta & ~ il e@\na =i\n* Favoritos }\n& Descargas Carmencita xD\noo 4 Dropbox Carpeta de archivos\nBE Escritorio\nSs Sitios recientes 4 Catdlogos Facturacién\ni Carpeta de archivos\n| separatas\neee i Carpeta de archivos\n| Imagenes =\nMusica jientes:\ncl Hoja de calculo de Microsoft Exce...\nB Videos\nDy PLAN DE CUENTAS TECING S10\nmM Equipo…"
+      - n: 3
+        id: "contabilidad.registrar-clientes#2.3"
+        accion: "Una los campos del S10 con la información ingresada en el Excel."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s008]
+        pagina: null
+        fotos:
+          - id: "63cd44ecfdbe"
+            ruta_o_url: "imagenes/manual-de-contabilidad/f480fec4d50d.png"
+            pagina: null
+            caption: "Se unen los campos del S10 con la información ingresada en el Excel."
+            ocr: "archivo [EWsers\\coruaDestiopcientesxe Sain\nNotas\nJoie [Sheet x LF\n— [ese\ng P oem Luego la columna con|\n[Cédigo Rubro\nFlas del] Des Rubro [ap exstentes los datos\nRPM G\nse Al\n_4E Bs | E:Abreviatura F:Cédigo Tipo Socio deNegoco a\nes a [Abreviatura Tipo =\n[Oy ejector sistem Ts LENT, 02 PROVEEDOR, 08 SUBCONTRATISTA\n[0[ ofog010060 [ANDRADEANDRADE,ANDRES [AANDRADE [OT CLIENTE:, 02 PROVEEDOR, 04 ENPLEADO…"
+      - n: 4
+        id: "contabilidad.registrar-clientes#2.4"
+        accion: "Ubique las filas que contienen la información (la columna se toma automáticamente de acuerdo a la última columna que se unió con el campo) y haga clic en **Importar**."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s008]
+        pagina: null
+        fotos:
+          - id: "7c336a84c2ba"
+            ruta_o_url: "imagenes/manual-de-contabilidad/7ddf7f7633f0.png"
+            pagina: null
+            caption: "Se ubican las filas que contienen la información, la columna se toma automáticamente de acuerdo a la última columna que se unió con el campo. Finalmente, se da click en Importar."
+            ocr: "13S Importacion de Excel ee ee\narctwo [EWsewiccucDesKopcieniess SC\n\nfe |\n\ncongo [Ssigo Te Soce device SY\n\nCenar\nToe AT te] cote: [ FT Actin on dts etetn ]\n|\n\ncw @ s2mmm cowarsienuAsminsineie enema: a\n“ime 6 s2ammn use lent:\n\nSie @ s2umme using zemumns eta:\n\nSim @ zum dane cucman crams em ta:\n\ncit @ zuma Aomaciniowmeicmim ema:\n[0 sme cawonmenacsan ema vencaa.u caso:\n\nces e.zmeee easiness ea atten c…"
+  - n: 3
+    id: "contabilidad.registrar-clientes#3"
+    accion: "Para agregar un cliente manualmente, en el catálogo de **Clientes** haga clic derecho y elija **Adicionar**."
+    resultado: "Sale la ventana para registrar el cliente."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s008]
+    pagina: null
+    fotos:
+      - id: "7a7f4f66ba0d"
+        ruta_o_url: "imagenes/manual-de-contabilidad/7e84fc946f5b.png"
+        pagina: null
+        caption: "En caso se quiera agregar manualmente, nos ubicamos en el catálogo de Clientes > Click derecho > Adicionar, sale la siguiente ventana:"
+        ocr: "GF Socio de Negocio ee)\n|\n|| RaxinSodal GipemecodsPeuresSA SS\n||| Abreviatura fpiazavea\nuc fao1o0070970\natema\n\\sccos as tears]\nDatos complementarios\nTekfrosinceom [ad @aT OT SSCOSSCS™~*«S YS\ncoperti0 pena\nPiorawes [me ff al\nrive [fh edoderago fd\na esi ee es\n7 Agente de Retencén TF Buen Contribuyente Agente de Percepcién 1 Gran Comprador\nClave de acceso WEB Generar dave\n{_tatos [Two J contactos_[ s…"
+  - n: 4
+    id: "contabilidad.registrar-clientes#4"
+    accion: "En la pestaña **TIPO**, agregue el tipo de socio de negocio al que pertenece."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s008]
+    pagina: null
+    fotos:
+      - id: "67100ad12f18"
+        ruta_o_url: "imagenes/manual-de-contabilidad/38664460be7c.png"
+        pagina: null
+        caption: "En la pestaña TIPO debe agregar, el tipo de socio de negocio al que pertenece."
+        ocr: "Socio de Neo rrr SS\n|| Cédigo. [Persona Juridica aa Céd. Alterna\n| Datos generales\n|\n||| Razén Social [upermercados Peruanos S.A.\n||| Abreviatura Piazavea SSCS\nRUC j20100070970\n—_————\nAlterna,\nSocios de Negocio |\nCédigo Descripcién\nQuitar Socios de Negocio\n3S Exportar a Microsoft Excel\n: Tioo_| Govincos J svearaaes [_Sieute_[breccenes [Fopeadee [Gas sence | Goto ]\nite | ie |"
+      - id: "97765f34aee1"
+        ruta_o_url: "imagenes/manual-de-contabilidad/d8c982a10f9e.png"
+        pagina: null
+        caption: "En la pestaña TIPO debe agregar, el tipo de socio de negocio al que pertenece."
+        ocr: "&m Catélogo de Tipo de Socios de Negocio — Sto\n\nOpciones ?\n\nOse XGue M#¥BS Hoe 4 Re @ Sea\nRe steno\n[| ‘Cédigo _[Descripcién\n| | 00 EMPRESA DEL GRUPO.\n\nA\n\nPra] 02 [PROVEEDOR\n\nJ) 03 JOBRERO\n\n\\#| oa JewPLeADO\n\n|} 05 |ACCIONNST\n\nA\n\nFA\n\n|| 08 |SuBcONTRATSTA\n\nJ) 09 [conc\n\na | AS\n\nEA\n\na\n\na\n\na"
+  - n: 5
+    id: "contabilidad.registrar-clientes#5"
+    accion: "En la pestaña **Cuentas Banco**, agregue el número de cuentas del cliente para poder efectuar los pagos en cuenta bancaria."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s008]
+    pagina: null
+    fotos:
+      - id: "29bcfba72cf6"
+        ruta_o_url: "imagenes/manual-de-contabilidad/5d9219eb6ad3.png"
+        pagina: null
+        caption: "En la pestaña Cuentas Banco se agrega el número de cuentas del cliente para poder efectuar los pagos en cuenta bancaria."
+        ocr: "@ Socio de Negocio Bm |of %\n| twcsgenenee\nwot Se a\nAbreviatura J\n| ait || Banco 3 [BANCO DE CREDITO DEL PERU _|\n| = Tipo de Cuenta [Corriente x\nSocios de Negooif)| N°de Cuenta figz-173648-01 °° l\nAY as Descripcién IBCP S/. 192-1236448-01\nActive |Predete] |] \\ocuenta pcid\nInterbancaria _[002192123644801\nJ| N° Cuenta Cargo [192123644801 |\nNoBB ue\nIBAN\n| FF act r ;\nros for NUEVOS soLes |e\nLister | _c…"
+verificacion: []
+errores_frecuentes: []
+relacionados: [contabilidad.importar-agentes-de-retencion, facturacion.registrar-cliente]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s003, manual: "Manual de Contabilidad", seccion: "2 Catálogos", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s008, manual: "Manual de Contabilidad", seccion: "2.5.1 Clientes", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

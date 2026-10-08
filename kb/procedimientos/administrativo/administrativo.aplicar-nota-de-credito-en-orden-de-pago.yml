@@ -1,0 +1,256 @@
+id: administrativo.aplicar-nota-de-credito-en-orden-de-pago
+version: 1
+modulo: administrativo
+titulo: "Registrar una orden de pago con nota de crédito"
+objetivo: "Cancelar documentos por pagar, total o parcialmente, usando como medio de pago notas de crédito registradas en el módulo de Facturación, mediante una orden de pago del módulo Administrativo."
+nivel: intermedio
+preguntas:
+  - "cómo aplico una nota de crédito a una factura de proveedor en administrativo"
+  - "como cancelo una factura con nota de credito"
+  - "como hago una orden de pago con nota de credito"
+  - "quiero usar solo una parte de la nota de credito para pagar"
+  - "donde pongo el monto afectado de la nc"
+  - "como cruzo la nc del proveedor con su factura en s10"
+  - "no me aparece aprobar en la orden de pago con nota de credito"
+  - "como imprimo la aplicacion de la nota de credito"
+  - "aplicar nc a varias facturas del mismo proveedor"
+aliases:
+  - "aplicar nota de crédito"
+  - "orden de pago con nota de crédito"
+  - "aplicación de NC"
+  - "cancelar factura con nota de crédito"
+  - "notas de crédito afectadas"
+entidades:
+  modulo: "Administrativo"
+  pantallas: ["Orden de Pago", "Notas de Crédito Afectadas", "Pendientes de Pago", "Pagos", "documentos por Pagar"]
+  objetos: ["orden de pago", "nota de crédito", "factura", "socio negocio", "monto afectado"]
+prerrequisitos:
+  - texto: "Los comprobantes a pagar y las notas de crédito deben estar registrados previamente en el módulo de Facturación."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s034]
+pasos:
+  - n: 1
+    id: "administrativo.aplicar-nota-de-credito-en-orden-de-pago#1"
+    accion: "Ingrese al módulo Administrativo, escenario **Orden de Pago**, haga clic derecho y elija **ADICIONAR**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s034]
+    pagina: null
+    fotos:
+      - id: "1fd033108b62"
+        ruta_o_url: "imagenes/manual-de-administracion/5b47301d66f0.png"
+        pagina: null
+        caption: "a. Ingresamos al Módulo Administrativo, escenario Orden de Pago, Clic derecho ADICIONAR."
+        ocr: "Archive Ver Catélogos Herramientas ?\n6R08ea\nWaiter\npa | Ordenes de Pago\nweve» zaais\nEn eee ae\n[Pe\nN a Ye\ny [| Afones: 201401 - Enero 2014\nPendenths de Pago ||| |  avio-wes: 201402 - Febrero 2014 Clic Dercho\nQO | [13 aro-wes: 201404 - abr 2016 i\n| | © afio.mes: 201405 - Mayo 2014\nEmitides/En Custodia ||| _ |) afio-es: 201406 - Junio 2014\n|_| Gl Afio-mes: 201407 - Jutio 2014\nta [5] Gi ected: arcbedo…"
+  - n: 2
+    id: "administrativo.aplicar-nota-de-credito-en-orden-de-pago#2"
+    accion: "En la ventana de **Orden de Pago**, seleccione el tipo de medio de pago **NOTA DE CRÉDITO**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s034]
+    pagina: null
+    fotos:
+      - id: "3538ea3329d5"
+        ruta_o_url: "imagenes/manual-de-administracion/8e54b1c7092b.png"
+        pagina: null
+        caption: "b. Aparecerá la Ventana de Orden de Pago, seleccionar el tipo de Medio de Pago, en este caso será NOTA DE CRÉDITO."
+        ocr: "& $10 Administrativo: 00002490 - MI CASITA SA - Principal -|o| x\nArchivo Ver Catélogos Herramientas 2\n6Ruakeaa\n4 va)\n:g) Tema (Ord: ep\ntdenes de 1ae0 Fay 00082490 Mi CASITA SA N° Orden de Pago\n; sour\nAR = AY RN suse Principal\n. a r\n& = : Gute Reroata TT Peg Bectrénica\nOrdenes de Pago fectiva Ey\n| |oxen sep [Nota de creat 1 |. Wort tt =o\nHW fe) seen ees\n| [i Afo.wes: 201401 - Enero 204) Dre Se\nPend…"
+  - n: 3
+    id: "administrativo.aplicar-nota-de-credito-en-orden-de-pago#3"
+    accion: "Registre la información de la aplicación de la nota de crédito (glosa) y haga clic derecho en el detalle de la ventana."
+    resultado: "Aparece una ventana con el detalle de los documentos de socios negocios que tienen nota de crédito por aplicar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s034]
+    pagina: null
+    fotos:
+      - id: "5a0aba814261"
+        ruta_o_url: "imagenes/manual-de-administracion/4863b6aeecc0.png"
+        pagina: null
+        caption: "Registrar la información acerca de la aplicación de la Nota de Crédito, Glosa, en el detalle de la ventana Clic Derecho."
+        ocr: "& $10 Administrativo; 00002490 - MI CASITA SA - Principal -|o) x\nArchivo Ver Catélogos Herramientas 2\nsu)\n4RR8e88\ni Teme Empresa 00002490 MICASITA SA N° Orden de Pago\n- 000703\nrom] [Ordenes de Pag Fam Principal\niA 5 hy Payer con Nota de Créalto Estadio\nae\nrdenes de Pago — 2 POLARES ANERICANOS | 4)\nN* Orden de P. Estado Gr.\nDescrpcién [APLICACION ENC SOCIO NEGOCIO- SEDISAS.. |\ncl | | Fechade Pago […"
+      - id: "b2b4cc3b6430"
+        ruta_o_url: "imagenes/manual-de-administracion/28b170366710.png"
+        pagina: null
+        caption: "Aparecerá una ventana que mostrará el detalle de los documentos de Socios Negocios que tienen Nota de crédito por Aplicar."
+        ocr: "a $10 Administrativo: 00002490 - MI CASITA SA - Principal =-|a| x\nArchivo Ver Catélogos Herramientas 2\neR aa ae) Orden de Pago [=|2] & |\ni Tema =\n[Ordenes |\noe\n(kA, = >\nHEYwAsS vEF eae ps\nOrdenes de Pago\n|_| N* Orden ae | | Estado cr...\nfp) (| 107212 canto) Documenta + [En cualquier posicién >. Grupo: Tipo Documento - Tipo Pago - Afio-Mes\nHW RUC Nt Document Monecia _|vlonto Programaclo] Monta Paga…"
+  - n: 4
+    id: "administrativo.aplicar-nota-de-credito-en-orden-de-pago#4"
+    accion: "Busque el socio negocio y las facturas que se cancelarán con notas de crédito, y seleccione el documento con doble clic."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s034]
+    pagina: null
+    fotos:
+      - id: "d8282afe925c"
+        ruta_o_url: "imagenes/manual-de-administracion/e0a8af28d876.png"
+        pagina: null
+        caption: "Realizar la Búsqueda del Socio Negocio y las Facturas que se cancelarán con Notas de Crédito previamente registradas en el Módulo de Facturación. Seleccionar el Documento con Doble Clic, Luego utilizar la Parrilla para agregar el Documento a la Orden de Pago."
+        ocr: "a $10 Administrativo: 00002490 - MI CASITA SA - Principal -|a| x\nArchivo Ver Catélogos Herramientas ?\nOrden de Pago [-[5] x ]\n6R5Ra8 we 3\n5 ig) Tema 8,\nOrdenes\n[roms | [=]\nTe = .\n2 WoWee8 vel eae - — =\n[afo-mes} | | Busqueda de Documento a pagar, se Utiliza los campos\nOrdenes de Pago | | je Filtro de Informacion.\n| froaher| | [es\nET | rcomner —slfecanerrone ses |X] aupa Teotsamero- Toran\nci -——| o…"
+  - n: 5
+    id: "administrativo.aplicar-nota-de-credito-en-orden-de-pago#5"
+    accion: "Utilice la parrilla para agregar el documento a la orden de pago."
+    resultado: "El documento seleccionado aparece en el detalle de la orden de pago."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s034]
+    pagina: null
+    fotos:
+      - id: "a7767fd71e1e"
+        ruta_o_url: "imagenes/manual-de-administracion/a9bbcc731049.png"
+        pagina: null
+        caption: "Vista de Documento seleccionado en el detalle de la Orden de Pago."
+        ocr: "& S10 Administrativo: 00002490 - MI CASITA SA - Principal -(o| x\nAychivo Ver Catélogos Her #21\n46REBea@ Empresa 00002490 MI CASITA SA N° Orden de Pago\n: 0070s\n5 Ql) Tema F ‘Sucursal Principal\nOrde\n—\ni 02 POLARES aMERICANOS = 44\nOrdenes de Pago Descripcién [APLICACION DE NC SOCIO NEGOCIO- SEDISAS.A. a] =aE\nFecha de Pago = io [27ea[ig] Fecha venciniento =\nw pam7n014 ©] Tipo de cambio. red Pear)\nTaal…"
+  - n: 6
+    id: "administrativo.aplicar-nota-de-credito-en-orden-de-pago#6"
+    accion: "En el detalle de la orden de pago, haga clic derecho sobre la factura a la que aplicará la nota de crédito y elija **Ver Notas de Crédito**."
+    resultado: "Aparece la ventana de notas de crédito afectadas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s034]
+    pagina: null
+    fotos:
+      - id: "f86b2f670785"
+        ruta_o_url: "imagenes/manual-de-administracion/8cedcbcbc9ac.png"
+        pagina: null
+        caption: "c. En el detalle de la Orden de Pago, Clic derecho sobre la factura a aplicar Nota de Crédito. Opción Ver Notas de Crédito."
+        ocr: "a 0 Administrativo: 00002490 - MI CASITA SA - Principal [=|o) x |\nArchivo Ver Catélogos Hert wd\n4h5R8a8 Empresa (00002490 MI CASITA SA N° Orden de Pago\n: 0703\n£ (a) Tema Sucursal Principal\nOrde\n= fe proresmencans =]\nwaned loz POLARES aMeRIcaNos a)\nOrdenes de Pago | prod Descrincién [APLICACION DE NC SOCIO NEGOCIO - SEDISAS.A, joi. | Estado cr\nbess Fecha de Pago S Fecha vencinierto =\ny le) _| [2072…"
+  - n: 7
+    id: "administrativo.aplicar-nota-de-credito-en-orden-de-pago#7"
+    accion: "Haga clic derecho sobre la ventana de notas de crédito afectadas y elija **AGREGAR NOTAS DE CRÉDITO**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s034]
+    pagina: null
+    fotos:
+      - id: "b0a90ca6ca14"
+        ruta_o_url: "imagenes/manual-de-administracion/c26160b1b036.png"
+        pagina: null
+        caption: "Aparecerá una ventana de Notas de Crédito Afectadas, Clic derecho sobre la Ventana Opción AGREGAR NOTAS DE CRÉDITO."
+        ocr: "a $10 Administrativo: 00002490 - MI CASITA SA - Principal - Gg) x\nArchivo Ver Catélogos Hert #2 Orden de Pago [=|s| x |\n4RERBea Empresa 00002490 MI CASITA SA N° Orden de Pago\n\n; Tas\n\nig) Tema ‘Sucursal Principal\n\nOrde\n~ fe Poaresaenoencs\n= oneda Ge SOLAReS AWESaaRGS =] 44\nOrdenes de Pago | [mond Deseripcién |APLICACION DE NC SOCIO NEGOCIO - SEDISA S.A, Eo] es\n: Fecha de Pago Caprese Tipo de cambio…"
+  - n: 8
+    id: "administrativo.aplicar-nota-de-credito-en-orden-de-pago#8"
+    accion: "Seleccione la nota de crédito (o las que correspondan, si usará varias para cancelar uno o varios documentos del mismo proveedor) y utilice la parrilla para agregarla a la ventana de **NOTAS DE CRÉDITO AFECTADAS**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s034]
+    pagina: null
+    fotos:
+      - id: "d8a8da2dd153"
+        ruta_o_url: "imagenes/manual-de-administracion/36ef855c716c.png"
+        pagina: null
+        caption: "Seleccionar la Nota de crédito, en este caso solo es una Nota de crédito puede darse el caso que se utilicen varias para calcelar uno o varios documentos del mismo proveedor en ese caso seleccionar las que corresponda, para agregar la NC a la ventana de NOTAS DE CRÉDITO AFECTADAS utilizar la parrilla."
+        ocr: "a $10 Administrativo: 00002490 - MI CASITA SA - Principal -(|f| x\nArchivo Ver Catélogos Hert =! Orden de Pago. [=[a] = |\n6BRakeae Empresa 00002490 MI CASITA SA 7N® Orden de Pago\n: a qT g q e 4 000703\nH ‘ema ucursal rincipal\nOrde\nFlr.\n=\n“| Moneda 02 DOLARES AMERICANOS >\n‘Ordenes de Pago 7\n|APLICACION DE NC SOCIO NEG —\nprod Ome alsin Lees or\nre} | Fecha de Pago am7014 +1 Tipo de comb]\nYX ccncconal a…"
+  - n: 9
+    id: "administrativo.aplicar-nota-de-credito-en-orden-de-pago#9"
+    accion: "En el campo **MONTO AFECTADO**, indique el importe que desea utilizar de la nota de crédito, igual o menor al importe total de la nota de crédito."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s035]
+    pagina: null
+    fotos:
+      - id: "a9641aad08e3"
+        ruta_o_url: "imagenes/manual-de-administracion/0a1efc8fbce7.png"
+        pagina: null
+        caption: "Seleccionada la Nota de Crédito aparecerá en la Ventana de Notas de crédito Afectadas, en dicha ventana aparece un campo que se llama MONTO AFECTADO, en ese campo se indicará el Importe que se desea utilizar de la Nota de crédito que puede ser Igual o menos al Importe total de la Nota de Crédito, en este caso utilizaremos el 100% de la NC."
+        ocr: "a 0 Administrativo: 00002490 - MI CASITA SA - Principa L=-|9| x |\nArchivo Ver Catélogos Hert 82 Orden de Pago [-[e] x |\n46R8Re8 Empresa 00002490 MI CASITA SA N° Orden de Pago\n: 00703\nig) Tema = ‘Sucursal Principal\nOrde\nca a Moneda loz [POLARS AMERICANOS | 44)\nOrdenes de Pago ripcid |APLICACION DE NC SOCIO NEGOCIO - SEDISAS.A.\n[Jerod Desir ae [enor\nrH fe ResiaeoheS) 2am72014 y| Tipo de cambio [_ 2.…"
+  - n: 10
+    id: "administrativo.aplicar-nota-de-credito-en-orden-de-pago#10"
+    accion: "Cierre la ventana de **NOTAS DE CRÉDITO AFECTADAS**."
+    resultado: "En la orden de pago, el campo SE AUTORIZA indica exclusivamente el importe afectado por la nota de crédito."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s035]
+    pagina: null
+    fotos:
+      - id: "cdfc2aac0252"
+        ruta_o_url: "imagenes/manual-de-administracion/13e4c85477fc.png"
+        pagina: null
+        caption: "Se Observa que al Cerrar la Ventana de NOTAS DE CRÉDITO AFECTADAS, en la orden de Pago en el campo SE AUTORIZA, Indica exclusivamente el importe afectado por la Nota de crédito."
+        ocr: "a S10 Administrativo: 00002490 - MI CASITA SA - Principal -|a| x\nArchivo Ver Catalogos Herl a2!\n46R0Rea8 Empresa 00002490 MI CASITA SA N° Orden de Pago)\nEa) Tema ‘Sucursal Principal\nOrde\n= a fe ueaerces ———SS—=Cd ||\nOrdenes de Pago [roy Descripcién [APLICACION DE NC SOCIO NEGOCIO - SEDISAS.A, Ls [esas\nPendientes de Pago ||| |) avif =\n@ |-°s)sMeg@e vanaae\n|| 4°] ojo campo/soci de Negocio =] |r casi…"
+  - n: 11
+    id: "administrativo.aplicar-nota-de-credito-en-orden-de-pago#11"
+    accion: "Grabe la orden de pago y envíela a aprobación."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s035]
+    pagina: null
+    fotos:
+      - id: "8043120de1a3"
+        ruta_o_url: "imagenes/manual-de-administracion/e420309cdf7c.png"
+        pagina: null
+        caption: "d. Luego de Grabar la Orden de Pago, Enviar a Aprobación y Aprobar (Usuario con Permisos de Aprobador)."
+        ocr: "© Archivo Ver Catélogos Herramientas 2\n4630Re8\n5 (2) Tema\na Ordenes de Pago\nf=) a ee 2\n(notes = |\nordenes de Pago\n| [iroanaer.. [oewweais —Parcon rca [ness poem. [aonotas [Feo Vrs. [esto [otsonnes\nwi\n|_|) Atio-Mes: 201402 Febrero 2014\nPendientes de Pago |} | (3) afio-Mes: 201403 - Marzo 2014\n| |G Afio-Mes: 201404 - Abr 2014 [\n© |_| © Avio-Mes: 201405 - Mayo 2014\n|_| @ Afio-mes: 201406 - Junio 2014…"
+  - n: 12
+    id: "administrativo.aplicar-nota-de-credito-en-orden-de-pago#12"
+    accion: "En la ventana para continuar con el proceso, haga clic en **SI**."
+    resultado: "Aparece la ventana de verificación del envío."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s035]
+    pagina: null
+    fotos:
+      - id: "ccd6f25e46f0"
+        ruta_o_url: "imagenes/manual-de-administracion/efef8b7531cd.png"
+        pagina: null
+        caption: "Luego que la Orden de Pago ha sido enviada a Aprobación, aparecerá una Ventana para continuar con el Proceso clic en SI y aparecerá la Siguiente Ventana de Verificación del Envío."
+        ocr: "a $10 Administrativo: 00002490 - MI CASITA SA - Principal -|a| x\n| Archivo Ver Catélogos Herramientas 2\n~6h8Ra8\nPate lp\nPanes al Ordenes de Pago\n‘DM: fee \\\\leue wo\nOrdenes de Pago\na |__| i afo-Mes: 201402 Febrero 2014\nPendientes de Pago |! | 8) Asio-Mes: 201403 - Marzo 2014\n|_|) afo-Mes: 201404 - Abr 2014 h|\neC [| afo-Mes: 01406 - Mayo 2014 EI\n|_| @ Afo-Mes: 201406 - Junio 2014\nEnmiidosfén Custoda…"
+  - n: 13
+    id: "administrativo.aplicar-nota-de-credito-en-orden-de-pago#13"
+    accion: "Con un usuario calificado como aprobador, apruebe la orden de pago con la opción **APROBAR**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s035]
+    pagina: null
+    fotos:
+      - id: "d32ab27595d9"
+        ruta_o_url: "imagenes/manual-de-administracion/f3726fc57926.png"
+        pagina: null
+        caption: "Proceder con la Aprobación de la Orden de Pago, esta Opción de APROBAR solo les aparecerá a usuarios que estén calificados en Datos Generales del Módulo Administrativo como Aprobadores."
+        ocr: "| Archivo Wer Catélogos Herramientas 2\n~6h0kea\n: (a) Tema =\nOrdenes de Pago\nim: Sv¥e. gaa\n‘Ordenes de Pago\na\n| |B AfioMes: 201402 - Febrero 2014\nPendientes de Pago ||] | (3 afio-Mes: 201403 - Marzo 2014\n| | Gi Afo-Mes: 201404 - Abril 2014 't\nrl |__| © Afio-Mes: 201405 - Mayo 2014 i\n|_| Bo Afio-Mes: 201 406 - Junio 2014\nEmitidosfEn Custodia | |  Afio-Mes: 201407 - Julio 2014\n|| Bestado: Aprobeda\ni …"
+  - n: 14
+    id: "administrativo.aplicar-nota-de-credito-en-orden-de-pago#14"
+    accion: "Ubíquese en el escenario **Pendientes de Pago** y seleccione el tipo **NOTA DE CRÉDITO**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s035]
+    pagina: null
+    fotos:
+      - id: "dbd768da8532"
+        ruta_o_url: "imagenes/manual-de-administracion/ad3fe9aa1a0b.png"
+        pagina: null
+        caption: "e. Luego de Aprobar la Orden de Pago, nos Ubicamos en el escenario Pendientes de Pago, seleccionamos Tipo NOTA DE CRÉDITO."
+        ocr: "i Archivo Ver Catélagos Herramientas 2\n6RGkhe\n‘i Pendientes de Pago\nfala Nota de credo F\nCOE Sea) Arrastre hace aque encevezaon gee counna que desea agrupar.\n}0 —Campo|N Orden de Pago En cueluier posiaén v1 Grupo:\ni] Nt Orden de Pago JAfo-Mes_|Descripcién Orden de Pago IN* Cuenta —_ [Socio de Negocio Tipo Documertc|N* Documento_| Fecha Documet| Moneda Total __| Total pago _|Observaciones\ng00703 20…"
+  - n: 15
+    id: "administrativo.aplicar-nota-de-credito-en-orden-de-pago#15"
+    accion: "Haga clic derecho sobre la línea de la orden de pago aprobada."
+    resultado: "Aparece una ventana con la pestaña DOCUMENTOS, que contiene el detalle de los documentos que se están cancelando, y la pestaña TIPO PAGO, con la referencia del documento a pagar y el medio de pago nota de crédito."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s035]
+    pagina: null
+    fotos:
+      - id: "7bf755c16dae"
+        ruta_o_url: "imagenes/manual-de-administracion/3eccb187f2ce.png"
+        pagina: null
+        caption: "Clic Derecho sobre la línea de la Orden de Pago APROBADA."
+        ocr: "“Archivo Ver Catélogos Herramientas 2\n4hGReaa\naa) Pendientes de Pago\nPagar con [Nota de Crédito hd\nHEY ARS vei eda\n‘Ordenes de Pago Arrastre hacia aqui el encabezado de la columna que desea agrupar.\n1/1 Campo|N® Orden de Pago ~y] [En cualquier posicion _~) Grupo:\nHy N° Orden de Pago Afio-Mes | Descripcidn Orden de Pago IN® Cuenta Socio de Negocio Tipo Document] N* Documento_|Fecha Documer| Moneca …"
+      - id: "c4e710c9468a"
+        ruta_o_url: "imagenes/manual-de-administracion/74f2fa22db0e.png"
+        pagina: null
+        caption: "Aparecerá una Ventana que tiene la Siguiente Información. f. En la Pestaña de DOCUMENTOS, contiene el detalle del documento que se están cancelando."
+        ocr: "a $10 Administrativo: 00002490 - MI CASITA SA - Principal -|a| x\nArchivo Ver Catélagos Herramientas ?\nShekel\nA Tema H cs\n'B Pendientes de I/F\nPagar con [Nota de Crédit] Empresa 00002490 MI CASITA SA. Alternohy? [ee\nDe | anck N° Pago\ntere ea Sucursal Principal =\nProveedor Joooozaat SEDISAS.A.c. =] ihfistedo\nCreret isa Aivastre hacia aqui el encabe! Car Tpo centio\n11 Campo|N* Orden de) Fechatransacc…"
+      - id: "df975e322556"
+        ruta_o_url: "imagenes/manual-de-administracion/dce7d4198e87.png"
+        pagina: null
+        caption: "g. En la Pestaña TIPO PAGO, se muestra la referencia del Documento a Pagar y el Medio de Pago que en este caso es una Nota de crédito."
+        ocr: "a $10 Administrativo: 00002490 - MI CASITA SA - Principal -|q| x\nArchivo Ver Catélogos Herramientas ?\n&6R8Rea\nH Te 4 5\neeu Pendientes de I=\nop _————— ‘nei N° Pago\nSey) =ma Sucursal Prineipal =\nProveedor Joooozest [Sensas.ac. a=] Bib Estoco\nCoenen Leesa] Alfastre hada aque! encabe| eS Teo canto\nHw Fechatanesccn [pgraot4 | Feo eeain [o7a0 ~]\nNt Orden de Pago . Total pago_|Observaciones\nooaros Deseri…"
+  - n: 16
+    id: "administrativo.aplicar-nota-de-credito-en-orden-de-pago#16"
+    accion: "En el escenario **Pagos**, haga clic derecho sobre el pago de la aplicación de la nota de crédito y elija **MODIFICAR** para observar el detalle del pago."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s035]
+    pagina: null
+    fotos:
+      - id: "a70582f5d851"
+        ruta_o_url: "imagenes/manual-de-administracion/96ac1547f4dd.png"
+        pagina: null
+        caption: "h. Vista del Escenario de Pagos, por el proceso Realizado de Aplicación de Nota de crédito por el pago de Facturas."
+        ocr: "“Archivo Ver Catélogos Herramientas 2\nERe\nBL Pacos\nTodos Periodo 201407  |Julio 2014 ~ 44)\nBMFAYE*. @duad\nOrdenes de Pago |} arrastre hacia aqui el encabezado de la columna que desea agrupar\n|_| Socio de Negocio * | RUC de Socio de... | Metio de Pago Deseripcion [estado | Mon..._| Total Pago Total Page\n\nWW %@SEDISA\npenddartes da Pago |[2|SEDSA S.A. 20261238923 Nota de Credo [ame 201407 -Juio 2014 …"
+      - id: "4f37b59adf82"
+        ruta_o_url: "imagenes/manual-de-administracion/a83cc5ae4f67.png"
+        pagina: null
+        caption: "Clic Derecho MODIFICAR, y se podrá Observar el detalle del Pago."
+        ocr: "a $10 Administrativo; 00002490 - MI CASITA SA - Principal -|g| x\nArchivo Ver Catélogos Herramientas 2\nHaat\nee | Pagos =\nwSve Sucursal Principal N° Pago\niB & [oes\nProveedar fonon2sst [SEDISAS.AC. =] @hf:stedo — Pagado ans\nOrdenes de Pago} arrastre hacia aqui el encabezal\nTipo cambio [37aa]\n| 7 | sseDIsa. .\nsendertesderago [> SEDSASAC asec ee\noe\n@ SY 08838 ue\nProveedor Nt Documento Fecha Moneda Tota…"
+  - n: 17
+    id: "administrativo.aplicar-nota-de-credito-en-orden-de-pago#17"
+    accion: "Desde el pago, imprima la aplicación de la nota de crédito si la necesita."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s035]
+    pagina: null
+    fotos:
+      - id: "6b8a87f86fda"
+        ruta_o_url: "imagenes/manual-de-administracion/d91cd70b46bb.png"
+        pagina: null
+        caption: "Vista de Impresión del Pago por la Aplicación de Nota de Crédito."
+        ocr: "as/ecref in [XSi oy | masecedeer 8\nVista previa |\nsi0 N* Alterna 000012\nMICASITAS.A. Fecha 24/07/2014 10:59:21a.m\nCOMPROBANTE DE PAGO\nN° Pago 000994 Fechade Pago 2210712014\nProveedor 20261239923 SEDISAS.A.C.\nTipode Cambio 2.794\nfore LS 30.33\nDescripcién APLICACION DE NC SOCIO NEGOCIO - SEDISAS.A.\nI\" Mi Monte Mont Mont 9 Monto Docs.\nWie Decmene Fen te eameno Abia us) Tol Tage nein MS etaain Relavio…"
+verificacion:
+  - texto: "En el módulo de Facturación, escenario documentos por Pagar, los documentos aparecen en estado Pagado y la pestaña PAGOS indica la aplicación de la nota de crédito como medio de pago."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s036]
+errores_frecuentes:
+  - sintoma: "No aparece la opción APROBAR en la orden de pago."
+    solucion: "La opción APROBAR solo aparece a los usuarios que estén calificados como aprobadores en Datos Generales del módulo Administrativo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s035]
+relacionados: [administrativo.definir-aprobadores-de-pagos, administrativo.registrar-pago-con-cheque, facturacion.registrar-nota-de-credito]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s034, manual: "Manual Administrativo", seccion: "5.4 Registro de la orden de pago con Nota de Crédito (1)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s035, manual: "Manual Administrativo", seccion: "5.4 Registro de la orden de pago con Nota de Crédito (2)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s036, manual: "Manual Administrativo", seccion: "5.4 Registro de la orden de pago con Nota de Crédito (3)", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

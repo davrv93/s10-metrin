@@ -1,0 +1,95 @@
+id: contabilidad.agregar-moneda
+version: 1
+modulo: contabilidad
+titulo: "Adicionar o eliminar una moneda"
+objetivo: "Adicionar una moneda nueva al catálogo de monedas, además de las dos que el sistema brinda por defecto (Nuevos Soles y Dólares Americanos), o eliminar una moneda."
+nivel: basico
+preguntas:
+  - "como agrego una moneda nueva en contabilidad s10"
+  - "quiero añadir el euro como moneda en el s10"
+  - "como elimino una moneda del catalogo de monedas"
+  - "donde estan las monedas en el modulo de contabilidad"
+  - "como creo otra moneda aparte de soles y dolares"
+  - "al crear la moneda marco moneda de control o no?"
+  - "como borro una moneda que agrege mal"
+  - "cual es la moneda base y principal en s10 contabilidad"
+  - "adicionar moneda nueba en catalogos"
+aliases:
+  - "agregar moneda"
+  - "adicionar moneda"
+  - "eliminar moneda"
+  - "catálogo de monedas"
+entidades:
+  modulo: "Contabilidad"
+  pantallas: ["Catálogos", "Moneda"]
+  objetos: ["moneda", "moneda base", "moneda de control"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "contabilidad.agregar-moneda#1"
+    accion: "Para visualizar los catálogos, ubíquese en el **Menú** > **Catálogos** y elija **Moneda**."
+    resultado: "El sistema brinda por defecto dos monedas, Nuevos Soles y Dólares Americanos; Nuevos Soles se considera la moneda base y principal."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s003, web-https-documentacion-s10peru-com-manual-d-s004]
+    pagina: null
+    fotos:
+      - id: "01c033e9228b"
+        ruta_o_url: "imagenes/manual-de-contabilidad/7b3b46da9bc2.png"
+        pagina: null
+        caption: "El sistema por defecto nos brinda dos monedas, de Nuevos Soles y Dólares Americanos."
+        ocr: "Opciones 2\n\nOsxXBeucé AVE Hoe HRS @ LES |\n\na FP\n|Z) 02 |DOLARESAMERICANOS |L) Adicionar R _\n— Modifier J\n\nX Eliminar Fa po\n_ BD s - |}\n— T3 Replica titulo Fo\nSeleccionar todos los registros po\n\n|||\n\na a iad SS\n\n| BE Exporter a Excel _—\nBES Auditoria » [____|\n|_ |__| & Mostrar campos eee\ni Ubicar el grupo r+\n4 — Propiedades haa"
+      - id: "45bb7a3d895b"
+        ruta_o_url: "imagenes/manual-de-contabilidad/c13cbf9212ad.png"
+        pagina: null
+        caption: "Se considera la moneda Nuevos Soles como moneda Base y Principal."
+        ocr: "H) uonede for fuoevossoueg |\nMonedas de Control\n© seta\nCédigo alterno\n_ set]"
+  - n: 2
+    id: "contabilidad.agregar-moneda#2"
+    accion: "Para adicionar una nueva moneda, haga clic derecho y elija **Adicionar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s004]
+    pagina: null
+    fotos:
+      - id: "0295143c8b74"
+        ruta_o_url: "imagenes/manual-de-contabilidad/39639b5f2ce4.png"
+        pagina: null
+        caption: "En caso se quiera adicionar una nueva moneda, elegimos la opción click derecho > Adicionar."
+        ocr: "Hz on NUEVOS SOLES ‘Simitvles 4BSaeess? | vinedpeal? | 4Seeeaancteaind? Céelige: Allesmnea “ee\n2 powsesanenes =I a\n|\n\n= ee _\nI D Adicionar ee Pf\nLt (& Modificar F3 eee\ni % Eliminar Fa ee\n— Duala 3 rs\ntS TE Replica titulo F6. |__|\nSeleccionar todos los registros EEE\n\n4 Ee fo —\n| BE Exportar a Excel _~weeeeeaa\n— Auditoria > ee\nLL EF] Mostrar campos\n| Ubicar el grupo ooo,\n[Ges |v [Reviso: ide 2 (Bi P…"
+  - n: 3
+    id: "contabilidad.agregar-moneda#3"
+    accion: "Registre la nueva moneda sin elegir **moneda de Control**: si elige **Principal**, se deshabilita para la moneda Nuevos Soles y la moneda secundaria sería Dólares Americanos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s004]
+    pagina: null
+    fotos:
+      - id: "f1d7b9a9fe33"
+        ruta_o_url: "imagenes/manual-de-contabilidad/f9af4fc298c2.png"
+        pagina: null
+        caption: "En este caso NO se elige moneda de Control, ya que si elegimos Principal se deshabilita para la moneda Nuevos Soles y la moneda secundaria sería Dólares Americanos."
+        ocr: "2 ee\nMoneda fo3 [euro |\n\nSimbolo fe\n\n[7 {Moneda base ?\n\nMonedas de Control\n\n© Principal C Secundaria\nCedi Re Ss~S\n—a"
+  - n: 4
+    id: "contabilidad.agregar-moneda#4"
+    accion: "Para eliminar una moneda, haga clic derecho sobre ella y elija **Eliminar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s004]
+    pagina: null
+    fotos:
+      - id: "a4e509db21c7"
+        ruta_o_url: "imagenes/manual-de-contabilidad/a017eca7c242.png"
+        pagina: null
+        caption: "Si se quiere eliminar se da click derecho > Eliminar"
+        ocr: "Coes, LT =—6 a\nDsexBue 48% Doe ti RSQ AEH\n| | 01_|NUEVOS SOLES ‘Si / i\n|| |-02 |ootaresauercanos us| | fw |\n|_|_03 LE ——\n+— D) Adicionar F2 |\n4 Modificar BB ———E\nrd _\n—— BE Donic Bi rs\n+}— Tz Replica titulo F6 Jo\nSeleccionar todos los registros —=————————|\nHo Not ro ———|\n= BE Exportar a Excel «$$ _$_______\nrit Auditoria » TT\n—|— ef Mostrar campos |\ni Ubicar el grupo\n|| Propiedades ee |"
+  - n: 5
+    id: "contabilidad.agregar-moneda#5"
+    accion: "En el mensaje que va a salir, elija la opción **SI**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s004]
+    pagina: null
+    fotos:
+      - id: "4c4afad16f99"
+        ruta_o_url: "imagenes/manual-de-contabilidad/54a2ee3b4ff4.png"
+        pagina: null
+        caption: "Nos va a salir un mensaje al cual le damos la opción SI."
+        ocr: "ce) ams\ne Esta seguro de eliminar el registro : 03 EURO?\n| |]"
+verificacion: []
+errores_frecuentes: []
+relacionados: [contabilidad.asignar-cuentas-genericas-por-moneda]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s003, manual: "Manual de Contabilidad", seccion: "2 Catálogos", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s004, manual: "Manual de Contabilidad", seccion: "2.1 Moneda", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

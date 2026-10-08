@@ -1,4 +1,88 @@
 {
+ "administrativo.aplicar-nota-de-credito-en-orden-de-pago": {
+  "titulo": "Registrar una orden de pago con nota de crédito",
+  "modulo": "administrativo",
+  "nivel": "intermedio",
+  "n_pasos": 17,
+  "preguntas": [
+   "cómo aplico una nota de crédito a una factura de proveedor en administrativo",
+   "como cancelo una factura con nota de credito",
+   "como hago una orden de pago con nota de credito",
+   "quiero usar solo una parte de la nota de credito para pagar",
+   "donde pongo el monto afectado de la nc",
+   "como cruzo la nc del proveedor con su factura en s10",
+   "no me aparece aprobar en la orden de pago con nota de credito",
+   "como imprimo la aplicacion de la nota de credito",
+   "aplicar nc a varias facturas del mismo proveedor"
+  ],
+  "aliases": [
+   "aplicar nota de crédito",
+   "orden de pago con nota de crédito",
+   "aplicación de NC",
+   "cancelar factura con nota de crédito",
+   "notas de crédito afectadas"
+  ],
+  "entidades": {
+   "modulo": "Administrativo",
+   "pantallas": [
+    "Orden de Pago",
+    "Notas de Crédito Afectadas",
+    "Pendientes de Pago",
+    "Pagos",
+    "documentos por Pagar"
+   ],
+   "objetos": [
+    "orden de pago",
+    "nota de crédito",
+    "factura",
+    "socio negocio",
+    "monto afectado"
+   ]
+  },
+  "archivo": "administrativo/administrativo.aplicar-nota-de-credito-en-orden-de-pago.yml"
+ },
+ "administrativo.aprobar-solicitudes-en-app-aprobaciones": {
+  "titulo": "Aprobar, observar o rechazar una solicitud en la app S10 Aprobaciones",
+  "modulo": "administrativo",
+  "nivel": "basico",
+  "n_pasos": 8,
+  "preguntas": [
+   "cómo apruebo una orden de pago desde el celular",
+   "como uso la app de aprobaciones de s10",
+   "como rechazo una solicitud en la aplicacion de aprobaciones",
+   "como observo un pedido desde el app y le dejo un comentario",
+   "cual es mi usuario y clave de la app aprobaciones",
+   "no me sale la lista de corporaciones en la app",
+   "donde veo las solicitudes que ya aprobe en el celular",
+   "como busco una solicitud por numero o por proyecto en la app",
+   "aprovar desde el movil ordenes de compra s10"
+  ],
+  "aliases": [
+   "app de aprobaciones",
+   "aprobar desde el celular",
+   "S10 Aprobaciones",
+   "observar solicitud",
+   "rechazar solicitud"
+  ],
+  "entidades": {
+   "modulo": "Administrativo",
+   "pantallas": [
+    "Pendientes",
+    "Aprobados",
+    "Observados",
+    "Rechazados",
+    "Filtros"
+   ],
+   "objetos": [
+    "solicitud",
+    "orden de pago",
+    "pedido",
+    "corporación",
+    "observación"
+   ]
+  },
+  "archivo": "administrativo/administrativo.aprobar-solicitudes-en-app-aprobaciones.yml"
+ },
  "administrativo.definir-aprobadores-de-pagos": {
   "titulo": "Definir aprobadores, moneda y monto para la aprobación de pagos",
   "modulo": "administrativo",
@@ -38,6 +122,51 @@
    ]
   },
   "archivo": "administrativo/administrativo.definir-aprobadores-de-pagos.yml"
+ },
+ "administrativo.pagar-detracciones-y-subir-constancias": {
+  "titulo": "Pagar detracciones con una orden de pago tipo Tributos e importar las constancias",
+  "modulo": "administrativo",
+  "nivel": "avanzado",
+  "n_pasos": 19,
+  "preguntas": [
+   "cómo pago las detracciones de las facturas de proveedores en s10",
+   "como hago la orden de pago de detraccion",
+   "dónde se genera el txt de detracciones para subir a sunat",
+   "como subo las constancias de detraccion al sistema",
+   "como importo el txt de constancias que me da sunat",
+   "la factura tiene detraccion como pago solo la detraccion",
+   "en que carpeta se guarda el txt del pago electronico de detracciones",
+   "no me sale la opcion documento con tributo en la orden de pago",
+   "como registro el numero de constancia de detraccion en las facturas sin hacerlo una por una",
+   "pago de detraciones tipo tributos paso a paso"
+  ],
+  "aliases": [
+   "pagar detracciones",
+   "orden de pago tipo tributos",
+   "pago de detracción",
+   "importar constancias de detracción",
+   "txt de detracciones",
+   "constancia de detracción"
+  ],
+  "entidades": {
+   "modulo": "Administrativo",
+   "pantallas": [
+    "Ordenes de Pago",
+    "Orden de Pago",
+    "Cronograma de Pagos",
+    "Pendientes de Pago",
+    "Pagos"
+   ],
+   "objetos": [
+    "orden de pago",
+    "detracción",
+    "factura",
+    "cuenta bancaria",
+    "archivo TXT",
+    "constancia de detracción"
+   ]
+  },
+  "archivo": "administrativo/administrativo.pagar-detracciones-y-subir-constancias.yml"
  },
  "administrativo.registrar-cobranza-en-efectivo": {
   "titulo": "Registrar una cobranza en efectivo en el diario de caja",
@@ -159,6 +288,42 @@
   },
   "archivo": "administrativo/administrativo.registrar-pago-con-cheque.yml"
  },
+ "administrativo.transferir-caja-a-cuenta-bancaria": {
+  "titulo": "Transferir a una cuenta bancaria el efectivo o los cheques de la caja",
+  "modulo": "administrativo",
+  "nivel": "basico",
+  "n_pasos": 4,
+  "preguntas": [
+   "cómo paso a la cuenta del banco lo que cobré en caja",
+   "como deposito al banco los cheques cobrados en s10",
+   "como registro la transferencia de caja a cuenta bancaria",
+   "ya hice las cobranzas en efectivo y ahora quiero mandarlas al banco",
+   "donde esta la opcion transferencia a cuenta bancaria",
+   "como transfiero el efectivo de la caja al vanco",
+   "pasos para registrar deposito de caja a cuenta en administrativo"
+  ],
+  "aliases": [
+   "transferencia a cuenta bancaria",
+   "transferir caja a banco",
+   "depositar cobranza en banco",
+   "transferir cheques a cuenta bancaria"
+  ],
+  "entidades": {
+   "modulo": "Administrativo",
+   "pantallas": [
+    "Diario de Caja",
+    "Transferencia"
+   ],
+   "objetos": [
+    "caja",
+    "cuenta bancaria",
+    "cheque",
+    "efectivo",
+    "transferencia"
+   ]
+  },
+  "archivo": "administrativo/administrativo.transferir-caja-a-cuenta-bancaria.yml"
+ },
  "almacenes.asignar-stock-minimo": {
   "titulo": "Asignar stock mínimo a los recursos",
   "modulo": "almacenes",
@@ -192,6 +357,42 @@
    ]
   },
   "archivo": "almacenes/almacenes.asignar-stock-minimo.yml"
+ },
+ "almacenes.asignar-usuarios-al-proyecto": {
+  "titulo": "Asignar usuarios al proyecto y sus atributos de uso",
+  "modulo": "almacenes",
+  "nivel": "intermedio",
+  "n_pasos": 5,
+  "preguntas": [
+   "cómo agrego un usuario a un proyecto en almacenes",
+   "otro usuario no ve mi obra, cómo lo agrego al proyecto",
+   "como doy permiso para adicionar almacenes al proyecto",
+   "quién puede asignar techo al proyecto y cómo se le da ese permiso",
+   "como asigno usuarios por proyecto en s10",
+   "el residente no puede eliminar un almacen del proyecto",
+   "dónde se dan los atributos de uso del proyecto a cada usuario",
+   "como agrego usurios a la obra para que trabajen en el almacen"
+  ],
+  "aliases": [
+   "usuarios por proyecto",
+   "asignar usuarios al proyecto",
+   "agregar usuario al proyecto",
+   "atributos de uso del proyecto"
+  ],
+  "entidades": {
+   "modulo": "Almacenes",
+   "pantallas": [
+    "Usuarios por proyecto"
+   ],
+   "objetos": [
+    "usuario",
+    "proyecto",
+    "techo",
+    "almacenes",
+    "Jefe de Grupo"
+   ]
+  },
+  "archivo": "almacenes/almacenes.asignar-usuarios-al-proyecto.yml"
  },
  "almacenes.consultar-kardex": {
   "titulo": "Consultar el kardex de un recurso e imprimir el reporte para la SUNAT",
@@ -271,6 +472,44 @@
    ]
   },
   "archivo": "almacenes/almacenes.registrar-egreso-a-partida-de-control.yml"
+ },
+ "almacenes.registrar-ingreso-por-ajuste-de-cantidad": {
+  "titulo": "Registrar un ingreso por ajuste de cantidad",
+  "modulo": "almacenes",
+  "nivel": "basico",
+  "n_pasos": 7,
+  "preguntas": [
+   "cómo hago un ajuste de cantidad en almacén",
+   "en el inventario físico me sobra material, cómo lo cuadro en el sistema",
+   "el conteo dio 22 kg y el sistema dice 20, cómo ingreso la diferencia",
+   "como registro un ingreso IAC",
+   "como ajusto el stok cuando hay mas de lo que dice el s10",
+   "qué precio toma el ingreso por ajuste de cantidad",
+   "como corrijo diferencias de inventario en almacen",
+   "ingreso por ajuste de cantida pasos"
+  ],
+  "aliases": [
+   "ingreso por ajuste de cantidad",
+   "ingreso IAC",
+   "ajuste de inventario",
+   "ajustar stock",
+   "diferencia de stock"
+  ],
+  "entidades": {
+   "modulo": "Almacenes",
+   "pantallas": [
+    "Ingresos",
+    "Inventario"
+   ],
+   "objetos": [
+    "ingreso por ajuste de cantidad",
+    "inventario",
+    "stock",
+    "recurso",
+    "precio promedio"
+   ]
+  },
+  "archivo": "almacenes/almacenes.registrar-ingreso-por-ajuste-de-cantidad.yml"
  },
  "almacenes.registrar-ingreso-por-compra": {
   "titulo": "Registrar un ingreso por compra con documento de pago",
@@ -385,6 +624,164 @@
   },
   "archivo": "almacenes/almacenes.registrar-ingreso-por-orden-de-compra.yml"
  },
+ "almacenes.registrar-ingreso-por-prestamo": {
+  "titulo": "Registrar un ingreso por préstamo y consultar los préstamos",
+  "modulo": "almacenes",
+  "nivel": "basico",
+  "n_pasos": 10,
+  "preguntas": [
+   "cómo registro materiales que nos prestó otra obra",
+   "nos prestaron unos andamios, cómo los ingreso al almacén",
+   "como hago un ingreso por prestamo",
+   "dónde veo lo que me prestaron y lo que presté",
+   "como controlo los recursos prestados en almacenes",
+   "un proveedor nos presto herramientas como lo registro en s10",
+   "ingreso por prestamo de otro proyecto pasos",
+   "donde veo los prestamos que tengo que devolver"
+  ],
+  "aliases": [
+   "ingreso por préstamo",
+   "recursos prestados",
+   "préstamos",
+   "me prestaron",
+   "lo que presté"
+  ],
+  "entidades": {
+   "modulo": "Almacenes",
+   "pantallas": [
+    "Ingresos",
+    "Préstamos"
+   ],
+   "objetos": [
+    "ingreso por préstamo",
+    "recurso",
+    "socio de negocio",
+    "proyecto",
+    "catálogo de recursos"
+   ]
+  },
+  "archivo": "almacenes/almacenes.registrar-ingreso-por-prestamo.yml"
+ },
+ "almacenes.registrar-ingreso-por-reingreso": {
+  "titulo": "Devolver al almacén los recursos sobrantes con un ingreso por reingreso",
+  "modulo": "almacenes",
+  "nivel": "basico",
+  "n_pasos": 10,
+  "preguntas": [
+   "sobró cemento en la obra, cómo lo devuelvo al almacén",
+   "como registro la devolucion de materiales sobrantes al almacen",
+   "cómo hago un ingreso por reingreso",
+   "el maestro devolvio clavos que no uso, como los reingreso",
+   "como descargo el costo de la partida de control cuando devuelven material",
+   "ingreso IR almacen s10 como se hace",
+   "devolucion de material de obra al almacen como lo registro",
+   "no me aparece el recurso para reingresarlo al almacen"
+  ],
+  "aliases": [
+   "ingreso por reingreso",
+   "ingreso IR",
+   "devolución al almacén",
+   "devolver sobrantes",
+   "reingreso de materiales"
+  ],
+  "entidades": {
+   "modulo": "Almacenes",
+   "pantallas": [
+    "Ingresos",
+    "Recursos Egresados"
+   ],
+   "objetos": [
+    "ingreso por reingreso",
+    "partida de control",
+    "recurso",
+    "egreso"
+   ]
+  },
+  "archivo": "almacenes/almacenes.registrar-ingreso-por-reingreso.yml"
+ },
+ "almacenes.registrar-partidas-de-control-del-proyecto": {
+  "titulo": "Registrar las partidas de control del proyecto",
+  "modulo": "almacenes",
+  "nivel": "avanzado",
+  "n_pasos": 13,
+  "preguntas": [
+   "cómo creo las partidas de control de mi obra",
+   "como registro partidas de control para los egresos de almacen",
+   "no me aparece la partida de control al hacer la salida de materiales",
+   "como hago que solo salgan las partidas de control activas",
+   "cómo desactivo una partida de control que ya terminó",
+   "como asigno la partida de control general a la partida del proyecto",
+   "partidas de controll costos directos e indirectos como se registran",
+   "donde agrupo todas las partidas de encofrado en una sola"
+  ],
+  "aliases": [
+   "registrar partidas de control",
+   "partidas de control del proyecto",
+   "crear partida de control",
+   "partidas de control activas",
+   "partida de control general"
+  ],
+  "entidades": {
+   "modulo": "Almacenes",
+   "pantallas": [
+    "Datos Generales",
+    "Partidas de Control",
+    "Partida de Control General"
+   ],
+   "objetos": [
+    "partida de control",
+    "partida de control general",
+    "costos directos",
+    "costos indirectos",
+    "unidad"
+   ]
+  },
+  "archivo": "almacenes/almacenes.registrar-partidas-de-control-del-proyecto.yml"
+ },
+ "almacenes.registrar-usuario-y-asignar-permisos": {
+  "titulo": "Registrar un usuario del módulo de Almacenes y asignarle permisos",
+  "modulo": "almacenes",
+  "nivel": "avanzado",
+  "n_pasos": 13,
+  "preguntas": [
+   "cómo creo un usuario nuevo para el almacenero",
+   "como le doy permisos a un usuario en almacenes s10",
+   "el almacenero no puede entrar al escenario de egresos, cómo le doy acceso",
+   "como hago para que el almacenero no modifique el catálogo de recursos",
+   "qué categoría le pongo a un usuario: jefe de grupo, especialista o invitado",
+   "como le quito acceso a un escenario a un usuario",
+   "como registro usuarios y les asigno categoria en el modulo de almacen",
+   "quiero que un usuario solo vea los datos sin poder cambiar nada",
+   "como asigno el usuario que audita el catalogo de recursos"
+  ],
+  "aliases": [
+   "registrar usuario",
+   "permisos de usuario",
+   "dar acceso a escenarios",
+   "asignar categoría",
+   "atributos especiales",
+   "atributos de uso"
+  ],
+  "entidades": {
+   "modulo": "Almacenes",
+   "pantallas": [
+    "Mantenimiento de usuarios",
+    "Módulos",
+    "Escenarios",
+    "Catálogos",
+    "Atributos especiales"
+   ],
+   "objetos": [
+    "usuario",
+    "categoría",
+    "permisos",
+    "socio de negocio",
+    "jefe de grupo",
+    "especialista"
+   ]
+  },
+  "archivo": "almacenes/almacenes.registrar-usuario-y-asignar-permisos.yml"
+ },
  "almacenes.regularizar-ingreso-por-compra": {
   "titulo": "Regularizar un ingreso por compra con la factura",
   "modulo": "almacenes",
@@ -421,6 +818,114 @@
    ]
   },
   "archivo": "almacenes/almacenes.regularizar-ingreso-por-compra.yml"
+ },
+ "almacenes.transferir-recursos-a-otro-proyecto": {
+  "titulo": "Transferir recursos a otro proyecto",
+  "modulo": "almacenes",
+  "nivel": "intermedio",
+  "n_pasos": 13,
+  "preguntas": [
+   "cómo transfiero materiales a otra obra",
+   "como hago una transferencia externa entre proyectos",
+   "otra obra me mandó fierro, cómo lo ingreso a mi almacén",
+   "no se activa adicionar desde guias de egresos en el ingreso por transferencia",
+   "como paso stock de un proyecto a otro en s10",
+   "ingreso por transferencia externa pasos",
+   "como envio recursos de mi almacen a otro proyecto sin que me los devuelvan",
+   "transferencia esterna con pedido como la registro"
+  ],
+  "aliases": [
+   "transferencia externa",
+   "transferir a otro proyecto",
+   "ingreso por transferencia externa",
+   "egreso por transferencia externa",
+   "traslado entre obras"
+  ],
+  "entidades": {
+   "modulo": "Almacenes",
+   "pantallas": [
+    "Ingresos"
+   ],
+   "objetos": [
+    "pedido",
+    "proyecto",
+    "egreso por transferencia externa",
+    "ingreso por transferencia externa",
+    "stock"
+   ]
+  },
+  "archivo": "almacenes/almacenes.transferir-recursos-a-otro-proyecto.yml"
+ },
+ "almacenes.transferir-recursos-entre-almacenes": {
+  "titulo": "Transferir recursos entre almacenes del mismo proyecto",
+  "modulo": "almacenes",
+  "nivel": "intermedio",
+  "n_pasos": 13,
+  "preguntas": [
+   "cómo paso materiales de un almacén a otro de la misma obra",
+   "como hago una transferencia interna entre almacenes",
+   "tengo dos almacenes en el proyecto, como muevo cemento del uno al otro",
+   "cómo ingreso en el almacén destino lo que me mandó el otro almacén",
+   "no me sale la guia de egreso para hacer el ingreso por transferencia interna",
+   "transferencia entre almacenes s10 pasos",
+   "como registro el traslado de recursos entre almacenes del mismo proyecto",
+   "transferencia interna con pedido como se hace"
+  ],
+  "aliases": [
+   "transferencia interna",
+   "transferir entre almacenes",
+   "ingreso por transferencia interna",
+   "egreso por transferencia interna",
+   "traslado entre almacenes"
+  ],
+  "entidades": {
+   "modulo": "Almacenes",
+   "pantallas": [
+    "Ingresos"
+   ],
+   "objetos": [
+    "pedido",
+    "almacén destino",
+    "egreso por transferencia interna",
+    "ingreso por transferencia interna",
+    "stock"
+   ]
+  },
+  "archivo": "almacenes/almacenes.transferir-recursos-entre-almacenes.yml"
+ },
+ "compras.ajustar-orden-de-compra-parcialmente-atendida": {
+  "titulo": "Ajustar una orden de compra que el proveedor atendió solo en parte",
+  "modulo": "compras",
+  "nivel": "intermedio",
+  "n_pasos": 4,
+  "preguntas": [
+   "el proveedor ya no va a entregar lo que falta de la orden de compra, que hago",
+   "como cierro una orden de compra que llego incompleta",
+   "la oc esta parcialmente en almacen y el proveedor no completa",
+   "como hago que la orden de compra cuadre con la factura del proveedor",
+   "como devuelvo la cantidad pendiente de una orden de conpra",
+   "me quedo saldo pendiente en la orden de compra y no va a llegar",
+   "proveedor entrego menos de lo pedido como regularizo la oc"
+  ],
+  "aliases": [
+   "orden de compra parcialmente atendida",
+   "devolver cantidad",
+   "cerrar saldo de orden de compra",
+   "orden de compra incompleta"
+  ],
+  "entidades": {
+   "modulo": "Compras",
+   "pantallas": [
+    "Orden de Compra"
+   ],
+   "objetos": [
+    "Orden de Compra",
+    "Proveedor",
+    "recursos",
+    "factura"
+   ]
+  },
+  "archivo": "compras/compras.ajustar-orden-de-compra-parcialmente-atendida.yml"
  },
  "compras.aprobar-orden-de-compra": {
   "titulo": "Enviar a aprobación y aprobar una orden de compra",
@@ -495,6 +1000,111 @@
   },
   "archivo": "compras/compras.aprobar-pedido.yml"
  },
+ "compras.clasificar-materiales-abc": {
+  "titulo": "Clasificar los materiales del proyecto con el análisis ABC",
+  "modulo": "compras",
+  "nivel": "intermedio",
+  "n_pasos": 6,
+  "preguntas": [
+   "como clasifico los materiales en a b c",
+   "donde pongo la clasificacion abc de los recursos",
+   "como califico los materiales por pareto en s10",
+   "clasificacion abc de materiales como se hace",
+   "quiero marcar los materiales mas caros como tipo A",
+   "como ordeno los recursos por monto presupuestado para el abc",
+   "analisis abc en compras donde esta",
+   "como clasifico materiales abc en techo de materiales"
+  ],
+  "aliases": [
+   "clasificación ABC",
+   "análisis ABC",
+   "clasificar materiales ABC",
+   "calificar recursos A B C"
+  ],
+  "entidades": {
+   "modulo": "Compras",
+   "pantallas": [
+    "Techo de Materiales",
+    "Materiales presupuestados"
+   ],
+   "objetos": [
+    "recursos",
+    "materiales",
+    "Clasificación ABC"
+   ]
+  },
+  "archivo": "compras/compras.clasificar-materiales-abc.yml"
+ },
+ "compras.elaborar-cuadro-comparativo": {
+  "titulo": "Elegir proveedor en el cuadro comparativo de cotizaciones",
+  "modulo": "compras",
+  "nivel": "intermedio",
+  "n_pasos": 6,
+  "preguntas": [
+   "cómo hago el cuadro comparativo de cotizaciones",
+   "cómo elijo el proveedor en s10 compras",
+   "dónde comparo los precios de los proveedores",
+   "como saco el cuadro comparativo para toma de decisiones",
+   "como elijo al probedor mas barato por recurso",
+   "cómo imprimo el cuadro comparativo",
+   "dónde veo la comparación de las cotizaciones recibidas"
+  ],
+  "aliases": [
+   "cuadro comparativo",
+   "comparar cotizaciones",
+   "elegir proveedor",
+   "comparativo de precios"
+  ],
+  "entidades": {
+   "modulo": "Compras",
+   "pantallas": [
+    "Cuadro Comparativo"
+   ],
+   "objetos": [
+    "cotización",
+    "proveedor",
+    "recurso",
+    "reporte"
+   ]
+  },
+  "archivo": "compras/compras.elaborar-cuadro-comparativo.yml"
+ },
+ "compras.flujo-para-generar-orden-de-compra-o-servicio": {
+  "titulo": "Seguir los pasos para generar una orden de compra o de servicio",
+  "modulo": "compras",
+  "nivel": "basico",
+  "n_pasos": 12,
+  "preguntas": [
+   "cuales son los pasos para sacar una orden de compra desde el pedido",
+   "que orden se sigue en compras, pedido aprobacion y orden",
+   "no puedo generar ningun pedido, por donde empiezo",
+   "todo el flujo de compras en s10 de inicio a fin",
+   "de cuantas formas se puede crear una orden de compra",
+   "tengo que cotizar antes de hacer la orden de compra?",
+   "pasos para crear ordenes de compra o servisio",
+   "despues de aprobar el pedido que sigue"
+  ],
+  "aliases": [
+   "flujo de compras",
+   "pasos para generar orden de compra",
+   "secuencia de compras",
+   "formas de crear orden de compra"
+  ],
+  "entidades": {
+   "modulo": "Compras",
+   "pantallas": [
+    "Pedidos de Compra",
+    "Ordenes de Compra",
+    "Cuadro comparativo"
+   ],
+   "objetos": [
+    "pedido",
+    "Orden de Compra",
+    "cotización"
+   ]
+  },
+  "archivo": "compras/compras.flujo-para-generar-orden-de-compra-o-servicio.yml"
+ },
  "compras.generar-orden-de-compra-desde-pedido": {
   "titulo": "Generar una orden de compra desde un pedido de compra",
   "modulo": "compras",
@@ -531,6 +1141,43 @@
    ]
   },
   "archivo": "compras/compras.generar-orden-de-compra-desde-pedido.yml"
+ },
+ "compras.generar-orden-de-servicio": {
+  "titulo": "Generar una orden de servicio desde un pedido aprobado",
+  "modulo": "compras",
+  "nivel": "intermedio",
+  "n_pasos": 12,
+  "preguntas": [
+   "como genero la orden de servicio del pedido que ya aprobaron",
+   "como saco una os para el dueño del equipo",
+   "donde pongo los precios del proveedor en la orden de servicio",
+   "como envio a aprobacion la orden de servicio",
+   "genere la orden de serbicio y no se como mandarla a aprobar",
+   "tengo que hacer una orden de servicio por cada proveedor?",
+   "como le pongo descuento a la orden de servicio",
+   "donde apruebo las ordenes de servicio",
+   "como hago una orden de servicio en s10"
+  ],
+  "aliases": [
+   "generar orden de servicio",
+   "orden de servicio",
+   "OS desde pedido",
+   "crear orden de servicio"
+  ],
+  "entidades": {
+   "modulo": "Compras",
+   "pantallas": [
+    "Pedidos de Compra",
+    "Órdenes de Servicio"
+   ],
+   "objetos": [
+    "Orden de Servicio",
+    "pedido",
+    "Proveedor",
+    "equipos"
+   ]
+  },
+  "archivo": "compras/compras.generar-orden-de-servicio.yml"
  },
  "compras.registrar-aprobadores-de-orden-de-compra": {
   "titulo": "Registrar los aprobadores de las órdenes de compra",
@@ -607,6 +1254,45 @@
   },
   "archivo": "compras/compras.registrar-centro-de-compra.yml"
  },
+ "compras.registrar-cotizacion": {
+  "titulo": "Registrar una cotización y enviarla a los proveedores",
+  "modulo": "compras",
+  "nivel": "intermedio",
+  "n_pasos": 10,
+  "preguntas": [
+   "cómo hago una cotización en s10 compras",
+   "cómo armo una cotización con los pedidos de compra",
+   "cómo le asigno proveedores a una cotización",
+   "cómo envío la cotización al proveedor en excel o pdf",
+   "como cotizo con varios proveedores",
+   "como registro una cotisacion para orden de compra",
+   "dónde pongo las especificaciones que debe cumplir el proveedor",
+   "pasos para pedir cotizaciones a ferreterías"
+  ],
+  "aliases": [
+   "registrar cotización",
+   "armar cotización",
+   "cotizar con proveedores",
+   "enviar cotización",
+   "solicitud de cotización"
+  ],
+  "entidades": {
+   "modulo": "Compras",
+   "pantallas": [
+    "Cotizaciones",
+    "Proveedores",
+    "Catálogo de Socio de Negocio"
+   ],
+   "objetos": [
+    "cotización",
+    "proveedor",
+    "recurso",
+    "pedidos de compra",
+    "especificaciones"
+   ]
+  },
+  "archivo": "compras/compras.registrar-cotizacion.yml"
+ },
  "compras.registrar-pedido-de-compra": {
   "titulo": "Registrar un pedido manual para comprar",
   "modulo": "compras",
@@ -645,6 +1331,227 @@
    ]
   },
   "archivo": "compras/compras.registrar-pedido-de-compra.yml"
+ },
+ "compras.registrar-pedido-para-orden-de-servicio": {
+  "titulo": "Registrar un pedido para orden de servicio",
+  "modulo": "compras",
+  "nivel": "intermedio",
+  "n_pasos": 11,
+  "preguntas": [
+   "como hago un pedido de alquiler de equipos para la orden de servicio",
+   "desde que almacen se pide un servicio",
+   "quiero pedir horas maquina de un volquete, como lo registro",
+   "como pido un servicio en s10 compras",
+   "no me salen los equipos para pedir el servicio",
+   "como pongo la fecha de entrega a los equipos del pedido",
+   "pedido para orden de serivicio paso a paso",
+   "donde registro las horas que voy a pedir de cada equipo"
+  ],
+  "aliases": [
+   "pedido para orden de servicio",
+   "pedido de servicio",
+   "pedir alquiler de equipo",
+   "pedido al almacén de servicios"
+  ],
+  "entidades": {
+   "modulo": "Compras",
+   "pantallas": [
+    "Pedidos",
+    "almacén de servicios"
+   ],
+   "objetos": [
+    "pedido",
+    "Orden de Servicio",
+    "equipo",
+    "Centro de Compra"
+   ]
+  },
+  "archivo": "compras/compras.registrar-pedido-para-orden-de-servicio.yml"
+ },
+ "compras.registrar-recepcion-de-cotizaciones": {
+  "titulo": "Registrar las cotizaciones recibidas de los proveedores",
+  "modulo": "compras",
+  "nivel": "intermedio",
+  "n_pasos": 9,
+  "preguntas": [
+   "cómo registro la cotización que me mandó el proveedor",
+   "dónde ingreso los precios cotizados por los proveedores",
+   "cómo hago la recepción de cotizaciones en s10",
+   "el proveedor respondió la cotización, dónde la cargo",
+   "como registro el descuento y el tiempo de entrega de la cotizacion",
+   "se puede importar automatico la cotizacion del proveedor",
+   "como registro la cotisacion recibida",
+   "cómo veo los últimos precios del proveedor al registrar la cotización"
+  ],
+  "aliases": [
+   "recepción de cotizaciones",
+   "registrar cotización recibida",
+   "ingresar precios del proveedor",
+   "cargar cotización del proveedor"
+  ],
+  "entidades": {
+   "modulo": "Compras",
+   "pantallas": [
+    "Recepción de Cotizaciones"
+   ],
+   "objetos": [
+    "cotización",
+    "proveedor",
+    "precio",
+    "descuento",
+    "tiempo de entrega"
+   ]
+  },
+  "archivo": "compras/compras.registrar-recepcion-de-cotizaciones.yml"
+ },
+ "contabilidad.agregar-moneda": {
+  "titulo": "Adicionar o eliminar una moneda",
+  "modulo": "contabilidad",
+  "nivel": "basico",
+  "n_pasos": 5,
+  "preguntas": [
+   "como agrego una moneda nueva en contabilidad s10",
+   "quiero añadir el euro como moneda en el s10",
+   "como elimino una moneda del catalogo de monedas",
+   "donde estan las monedas en el modulo de contabilidad",
+   "como creo otra moneda aparte de soles y dolares",
+   "al crear la moneda marco moneda de control o no?",
+   "como borro una moneda que agrege mal",
+   "cual es la moneda base y principal en s10 contabilidad",
+   "adicionar moneda nueba en catalogos"
+  ],
+  "aliases": [
+   "agregar moneda",
+   "adicionar moneda",
+   "eliminar moneda",
+   "catálogo de monedas"
+  ],
+  "entidades": {
+   "modulo": "Contabilidad",
+   "pantallas": [
+    "Catálogos",
+    "Moneda"
+   ],
+   "objetos": [
+    "moneda",
+    "moneda base",
+    "moneda de control"
+   ]
+  },
+  "archivo": "contabilidad/contabilidad.agregar-moneda.yml"
+ },
+ "contabilidad.asignar-cuentas-a-categoria-de-recursos": {
+  "titulo": "Asignar cuentas contables a una categoría de recursos",
+  "modulo": "contabilidad",
+  "nivel": "intermedio",
+  "n_pasos": 7,
+  "preguntas": [
+   "como asigno una cuenta contable a una categoria de recursos",
+   "quiero que todos los cementos se contabilicen en la misma cuenta",
+   "donde pongo la cuenta de inventario a la categoria",
+   "como uso la opcion asignar cuenta en asignacion de cuentas",
+   "asignar cuenta contable por categoria y tipo de costo",
+   "los materiales no contabilizan con la cuenta que quiero, como la asigno por categoria",
+   "como configuro la cuenta de compras de una categoria de recurso",
+   "categorias de recursos contabilidad s10 como se le pone cuenta",
+   "asignasion de cuentas tipo categoria"
+  ],
+  "aliases": [
+   "asignar cuenta a categoría",
+   "cuentas por categoría de recursos",
+   "asignación de cuentas tipo categoría",
+   "cuenta contable de la categoría"
+  ],
+  "entidades": {
+   "modulo": "Contabilidad",
+   "pantallas": [
+    "Asignación de Cuentas",
+    "Asignación de Categorías"
+   ],
+   "objetos": [
+    "categoría",
+    "recurso",
+    "cuenta contable",
+    "tipo de costo",
+    "plan de cuentas",
+    "esquema contable"
+   ]
+  },
+  "archivo": "contabilidad/contabilidad.asignar-cuentas-a-categoria-de-recursos.yml"
+ },
+ "contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo": {
+  "titulo": "Asignar cuentas contables a recursos por tipo de costo",
+  "modulo": "contabilidad",
+  "nivel": "avanzado",
+  "n_pasos": 7,
+  "preguntas": [
+   "como asigno cuentas contables a un recurso por tipo de costo",
+   "quiero que un mismo recurso vaya a cuentas distintas segun el centro de costo",
+   "como relaciono el centro de costo con el tipo de costo",
+   "asignacion de cuentas por tipo de recurso y tipo de costo",
+   "el recurso tiene que contabilizar diferente segun el proyecto, como hago",
+   "donde pongo la cuenta de compras o ventas de un subcontrato",
+   "como configuro tipo de costo en contabilidad s10",
+   "tipo de costo centro de costo cuenta contable recurso como se configura",
+   "como asigo cuenta contable a los recursos de mano de obra"
+  ],
+  "aliases": [
+   "cuentas por tipo de costo",
+   "asignar cuenta a recurso",
+   "recurso con tipo de costo",
+   "asignación de cuentas tipo recursos"
+  ],
+  "entidades": {
+   "modulo": "Contabilidad",
+   "pantallas": [
+    "Centro de Costo",
+    "Asignación de Cuentas"
+   ],
+   "objetos": [
+    "tipo de costo",
+    "centro de costo",
+    "recurso",
+    "cuenta contable",
+    "asiento contable"
+   ]
+  },
+  "archivo": "contabilidad/contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo.yml"
+ },
+ "contabilidad.asignar-cuentas-genericas-por-moneda": {
+  "titulo": "Asignar cuentas genéricas por moneda",
+  "modulo": "contabilidad",
+  "nivel": "intermedio",
+  "n_pasos": 5,
+  "preguntas": [
+   "como asigno una cuenta generica por moneda en contabilidad",
+   "quiero que proveedores en dolares vaya a otra cuenta que en soles",
+   "donde configuro las cuentas genericas por moneda",
+   "como relaciono la cuenta generica con una cuenta del plan contable",
+   "cuentas por pagar en dolares contabiliza en la cuenta de soles, como lo cambio",
+   "asignacion de cuentas genericas soles y dolares s10",
+   "como pongo cuenta contable diferente segun la moneda",
+   "cuenta jenerica por moneda como se configura"
+  ],
+  "aliases": [
+   "cuentas genéricas por moneda",
+   "asignar cuenta genérica",
+   "asignación de cuentas genéricas",
+   "cuenta genérica por moneda"
+  ],
+  "entidades": {
+   "modulo": "Contabilidad",
+   "pantallas": [
+    "Asignación de Cuentas"
+   ],
+   "objetos": [
+    "cuenta genérica",
+    "cuenta contable",
+    "moneda",
+    "plan de cuentas",
+    "esquema contable"
+   ]
+  },
+  "archivo": "contabilidad/contabilidad.asignar-cuentas-genericas-por-moneda.yml"
  },
  "contabilidad.cierre-permanente-del-periodo": {
   "titulo": "Hacer el cierre permanente de un periodo contable",
@@ -830,6 +1737,41 @@
   },
   "archivo": "contabilidad/contabilidad.generar-libros-electronicos.yml"
  },
+ "contabilidad.importar-agentes-de-retencion": {
+  "titulo": "Importar los agentes de retención, percepción y buenos contribuyentes",
+  "modulo": "contabilidad",
+  "nivel": "basico",
+  "n_pasos": 4,
+  "preguntas": [
+   "como cargo el padron de agentes de retencion en s10",
+   "como actualizo los buenos contribuyentes en contabilidad",
+   "donde importo el padron de agentes de percepcion de sunat",
+   "de donde bajo el txt de agentes de retencion",
+   "como meto los agentes de retencion al catalogo sunat",
+   "el proveedor es agente de retencion y no sale, como actualizo el padron",
+   "importar padrones sunat s10 contabilidad",
+   "como inporto los agentes de retencion"
+  ],
+  "aliases": [
+   "importar agentes de retención",
+   "padrón de agentes de retención",
+   "buenos contribuyentes",
+   "agentes de percepción"
+  ],
+  "entidades": {
+   "modulo": "Contabilidad",
+   "pantallas": [
+    "Sunat",
+    "Agentes de Retención"
+   ],
+   "objetos": [
+    "padrones",
+    "agentes de retención",
+    "buenos contribuyentes"
+   ]
+  },
+  "archivo": "contabilidad/contabilidad.importar-agentes-de-retencion.yml"
+ },
  "contabilidad.registrar-asiento-manual": {
   "titulo": "Registrar un asiento manual",
   "modulo": "contabilidad",
@@ -867,6 +1809,153 @@
    ]
   },
   "archivo": "contabilidad/contabilidad.registrar-asiento-manual.yml"
+ },
+ "contabilidad.registrar-clientes": {
+  "titulo": "Registrar clientes en el catálogo de Contabilidad",
+  "modulo": "contabilidad",
+  "nivel": "basico",
+  "n_pasos": 9,
+  "preguntas": [
+   "como registro un cliente en contabilidad s10",
+   "como importo mis clientes desde un excel",
+   "tengo la lista de clientes en excel, como la subo al s10",
+   "como agrego un cliente a mano en el catalogo de clientes",
+   "donde pongo la cuenta de banco del cliente en contabilidad",
+   "como le pongo el tipo de socio de negocio al cliente",
+   "importacion de clientes excel unir campos s10",
+   "como creo un clinte nuevo en catalogos",
+   "y los proveedores se registran igual que los clientes?"
+  ],
+  "aliases": [
+   "registrar cliente",
+   "importar clientes",
+   "catálogo de clientes",
+   "agregar cliente"
+  ],
+  "entidades": {
+   "modulo": "Contabilidad",
+   "pantallas": [
+    "Clientes",
+    "Catálogos"
+   ],
+   "objetos": [
+    "cliente",
+    "socio de negocio",
+    "cuenta bancaria",
+    "Excel"
+   ]
+  },
+  "archivo": "contabilidad/contabilidad.registrar-clientes.yml"
+ },
+ "contabilidad.registrar-orden-de-venta-ipi": {
+  "titulo": "Registrar la orden de venta global de ingresos por identificar (IPI)",
+  "modulo": "contabilidad",
+  "nivel": "intermedio",
+  "n_pasos": 3,
+  "preguntas": [
+   "como registro la orden de venta para los ipi",
+   "que es un ipi y como lo configuro en s10",
+   "donde marco ingresos por identificar en la orden de venta",
+   "como hago la ov global de ingresos por identificar",
+   "los abonos no identificados de sperant como llegan al s10",
+   "orden de venta tipo ipi pestaña sperant",
+   "que proyecto pongo en la orden de venta ipi",
+   "como configuro los pagos no identificados con sperant",
+   "ingresos por indentificar s10 orden de venta"
+  ],
+  "aliases": [
+   "orden de venta IPI",
+   "ingresos por identificar",
+   "OV global IPI",
+   "pagos no identificados"
+  ],
+  "entidades": {
+   "modulo": "Contabilidad",
+   "pantallas": [
+    "Orden de Venta",
+    "Sperant",
+    "Por Cobrar"
+   ],
+   "objetos": [
+    "orden de venta",
+    "IPI",
+    "lista de precio",
+    "cliente",
+    "proyecto"
+   ]
+  },
+  "archivo": "contabilidad/contabilidad.registrar-orden-de-venta-ipi.yml"
+ },
+ "contabilidad.revisar-auditoria-de-registros-contables": {
+  "titulo": "Revisar la auditoría de registros contables",
+  "modulo": "contabilidad",
+  "nivel": "intermedio",
+  "n_pasos": 3,
+  "preguntas": [
+   "como reviso que todos los documentos tengan asiento contable",
+   "hay documentos que no generaron asiento, donde lo veo",
+   "para que sirve la auditoria de registros contables",
+   "como veo las transacciones sin asientos",
+   "el numero de registros no cuadra con los asientos, que hago",
+   "donde controlo que se procesaron bien los asientos del periodo",
+   "auditoria de rejistros contables s10 como se usa",
+   "ver asientos sin transacciones contabilidad"
+  ],
+  "aliases": [
+   "auditoría de registros contables",
+   "transacciones sin asientos",
+   "asientos sin transacciones",
+   "control de asientos"
+  ],
+  "entidades": {
+   "modulo": "Contabilidad",
+   "pantallas": [
+    "Auditoría de Registros Contables"
+   ],
+   "objetos": [
+    "asientos contables",
+    "transacciones",
+    "periodo"
+   ]
+  },
+  "archivo": "contabilidad/contabilidad.revisar-auditoria-de-registros-contables.yml"
+ },
+ "facturacion-electronica.buscar-documentos-en-el-portal": {
+  "titulo": "Buscar, reenviar y descargar documentos en el portal de facturación electrónica",
+  "modulo": "facturacion-electronica",
+  "nivel": "basico",
+  "n_pasos": 7,
+  "preguntas": [
+   "como busco una factura en el portal de facturacion electronica",
+   "al cliente no le llego el correo de la factura, como se lo reenvio",
+   "como descargo el xml de una factura desde el portal",
+   "donde bajo el pdf y el zip del comprobante en el portal s10",
+   "por que en el portal solo me salen los documentos del ultimo mes",
+   "como agrego otro usuario para que le llegue la notificacion de la factura",
+   "como veo el detalle de un documento en gestion de documentos",
+   "reenviar notificasion de factura electronica al cliente"
+  ],
+  "aliases": [
+   "buscar documento",
+   "gestión de documentos",
+   "reenviar notificación",
+   "descargar XML",
+   "ver detalle"
+  ],
+  "entidades": {
+   "modulo": "Facturación Electrónica",
+   "pantallas": [
+    "Gestión de Documentos",
+    "Buscar Documento",
+    "Detalle del Documento"
+   ],
+   "objetos": [
+    "documento",
+    "notificación",
+    "usuario"
+   ]
+  },
+  "archivo": "facturacion-electronica/facturacion-electronica.buscar-documentos-en-el-portal.yml"
  },
  "facturacion-electronica.comunicar-baja-de-comprobante": {
   "titulo": "Dar de baja un comprobante electrónico con la comunicación de baja",
@@ -945,6 +2034,78 @@
   },
   "archivo": "facturacion-electronica/facturacion-electronica.configurar-emision-electronica.yml"
  },
+ "facturacion-electronica.consultar-comprobante-con-acceso-anonimo": {
+  "titulo": "Consultar un comprobante electrónico con el Acceso Anónimo del portal",
+  "modulo": "facturacion-electronica",
+  "nivel": "basico",
+  "n_pasos": 8,
+  "preguntas": [
+   "mi cliente no tiene usuario en el portal, como ve su factura",
+   "como descargo una factura electronica sin estar registrado en el portal",
+   "que datos pide el acceso anonimo del portal de facturacion",
+   "como consulto un comprobante de retencion sin usuario",
+   "donde ingreso el ruc y el importe para buscar mi factura",
+   "acceso anonimo no me encuentra el documento",
+   "como bajo el xml de una boleta sin entrar con usuario",
+   "consultar factura electronica s10 sin cuenta"
+  ],
+  "aliases": [
+   "acceso anónimo",
+   "consultar comprobante sin usuario",
+   "descargar factura sin registro",
+   "buscar comprobante electrónico"
+  ],
+  "entidades": {
+   "modulo": "Facturación Electrónica",
+   "pantallas": [
+    "Acceso Anónimo"
+   ],
+   "objetos": [
+    "factura",
+    "nota de crédito",
+    "nota de débito",
+    "boleta de venta",
+    "comprobante de retención",
+    "comprobante de percepción"
+   ]
+  },
+  "archivo": "facturacion-electronica/facturacion-electronica.consultar-comprobante-con-acceso-anonimo.yml"
+ },
+ "facturacion-electronica.consultar-guia-de-remision": {
+  "titulo": "Consultar una guía de remisión electrónica (GRE) en SUNAT",
+  "modulo": "facturacion-electronica",
+  "nivel": "basico",
+  "n_pasos": 7,
+  "preguntas": [
+   "como consulto una guia de remision electronica que emiti",
+   "donde veo mis GRE emitidas en la sunat",
+   "como descargo el xml de una guia de remision",
+   "quiero ver el pdf de la guia de remision en formato sunat",
+   "como busco una gre por serie y numero",
+   "consulta de gre paso a paso",
+   "como verifico que mi guia de remision se emitio bien en sunat"
+  ],
+  "aliases": [
+   "consulta de GRE",
+   "consultar guía de remisión electrónica",
+   "buscar GRE",
+   "descargar XML de la GRE"
+  ],
+  "entidades": {
+   "modulo": "Facturación Electrónica",
+   "pantallas": [
+    "Consulta de GRE",
+    "Mis Trámites y Consultas"
+   ],
+   "objetos": [
+    "guías de remisión electrónica",
+    "GRE",
+    "XML",
+    "PDF"
+   ]
+  },
+  "archivo": "facturacion-electronica/facturacion-electronica.consultar-guia-de-remision.yml"
+ },
  "facturacion-electronica.crear-usuario-del-portal": {
   "titulo": "Crear un usuario en el portal de facturación electrónica",
   "modulo": "facturacion-electronica",
@@ -980,6 +2141,41 @@
    ]
   },
   "archivo": "facturacion-electronica/facturacion-electronica.crear-usuario-del-portal.yml"
+ },
+ "facturacion-electronica.dar-de-baja-guia-de-remision": {
+  "titulo": "Dar de baja una guía de remisión electrónica (GRE) en SUNAT",
+  "modulo": "facturacion-electronica",
+  "nivel": "basico",
+  "n_pasos": 8,
+  "preguntas": [
+   "como doy de baja una guia de remision electronica",
+   "me equivoque en una GRE, como la anulo",
+   "donde se da de baja una guia de remision en la sunat",
+   "como anular guia remision remitente",
+   "que tipo de baja elijo para la gre",
+   "me sale una alerta de que sunat puede fiscalizar la baja, que hago",
+   "como descargo la constancia de baja de la guia",
+   "se puede dar de baja la gre desde s10 o es en sunat?"
+  ],
+  "aliases": [
+   "baja de GRE",
+   "anular guía de remisión",
+   "dar de baja guía de remisión electrónica",
+   "constancia de baja"
+  ],
+  "entidades": {
+   "modulo": "Facturación Electrónica",
+   "pantallas": [
+    "Mis Trámites y Consultas",
+    "Baja de GRE"
+   ],
+   "objetos": [
+    "guías de remisión electrónica",
+    "GRE",
+    "constancia"
+   ]
+  },
+  "archivo": "facturacion-electronica/facturacion-electronica.dar-de-baja-guia-de-remision.yml"
  },
  "facturacion-electronica.enviar-comprobantes-a-sunat": {
   "titulo": "Enviar comprobantes electrónicos a SUNAT",
@@ -1020,6 +2216,84 @@
   },
   "archivo": "facturacion-electronica/facturacion-electronica.enviar-comprobantes-a-sunat.yml"
  },
+ "facturacion.anular-venta-sperant": {
+  "titulo": "Anular una venta inmobiliaria (Sperant – S10)",
+  "modulo": "facturacion",
+  "nivel": "avanzado",
+  "n_pasos": 7,
+  "preguntas": [
+   "cómo anulo una venta que se cayó",
+   "el cliente desistio de la compra del depa, como anulo la orden de venta",
+   "como anulo una venta que ya tiene boletas",
+   "donde pongo el monto de devolucion al anular la venta",
+   "como genero la nota de credito de una venta anulada desde sperant",
+   "escenario anulacion de ventas que hago con la orden de venta",
+   "anulasion de venta sperant s10",
+   "despues de anular la venta como le devuelvo la plata al cliente"
+  ],
+  "aliases": [
+   "anular venta",
+   "anulación de ventas",
+   "anular orden de venta",
+   "anular proceso sperant"
+  ],
+  "entidades": {
+   "modulo": "Facturación",
+   "pantallas": [
+    "Anulación de Ventas",
+    "Cronograma de Pagos"
+   ],
+   "objetos": [
+    "orden de venta",
+    "nota de crédito",
+    "monto devolución",
+    "boleta"
+   ]
+  },
+  "archivo": "facturacion/facturacion.anular-venta-sperant.yml"
+ },
+ "facturacion.boletear-abonos-sperant": {
+  "titulo": "Registrar abonos en Sperant y boletearlos en S10",
+  "modulo": "facturacion",
+  "nivel": "avanzado",
+  "n_pasos": 15,
+  "preguntas": [
+   "como boleteo los abonos que vienen de sperant",
+   "como sincronizo un abono de sperant con s10",
+   "como envio la minuta al s10",
+   "no me sale la opcion enviar minuta en sperant",
+   "donde veo en s10 los abonos que mandaron desde sperant",
+   "como genero las boletas de los abonos posteriores",
+   "boletaje sperant s10 paso a paso",
+   "el abono me salio con check rojo al sincronizar",
+   "quiero hacer cambio de titular y no me deja"
+  ],
+  "aliases": [
+   "boletaje",
+   "boletear abonos",
+   "enviar minuta",
+   "sincronizar abono",
+   "boletaje sperant"
+  ],
+  "entidades": {
+   "modulo": "Facturación",
+   "pantallas": [
+    "Boletaje",
+    "Orden de Venta",
+    "Cronograma de Facturación",
+    "Flujo del Proceso"
+   ],
+   "objetos": [
+    "orden de venta",
+    "abono",
+    "cronograma",
+    "minuta",
+    "boleta",
+    "factura"
+   ]
+  },
+  "archivo": "facturacion/facturacion.boletear-abonos-sperant.yml"
+ },
  "facturacion.definir-usuarios-y-accesos": {
   "titulo": "Definir usuarios y sus accesos en Facturación",
   "modulo": "facturacion",
@@ -1059,6 +2333,123 @@
    ]
   },
   "archivo": "facturacion/facturacion.definir-usuarios-y-accesos.yml"
+ },
+ "facturacion.importar-saldos-por-cobrar": {
+  "titulo": "Importar saldos por cobrar desde Excel",
+  "modulo": "facturacion",
+  "nivel": "intermedio",
+  "n_pasos": 8,
+  "preguntas": [
+   "cómo importo los saldos por cobrar en facturación",
+   "como cargo mis saldos pendientes de cobro desde excel",
+   "quiero subir los documentos por cobrar iniciales al s10",
+   "como hago la importacion de saldos en s10 facturacion",
+   "para que sirve el recurso para la importación de saldos",
+   "no me importa los documentos por cobrar desde el excel",
+   "como inporto saldos de clientes",
+   "pasos para importar saldos pendientes por cobrar"
+  ],
+  "aliases": [
+   "importar saldos",
+   "importación de saldos",
+   "cargar saldos por cobrar",
+   "saldos iniciales por cobrar"
+  ],
+  "entidades": {
+   "modulo": "Facturación",
+   "pantallas": [
+    "Documentos por cobrar"
+   ],
+   "objetos": [
+    "saldos",
+    "recurso",
+    "documentos por cobrar",
+    "socios de negocios",
+    "tipos de documento",
+    "moneda",
+    "Excel"
+   ]
+  },
+  "archivo": "facturacion/facturacion.importar-saldos-por-cobrar.yml"
+ },
+ "facturacion.liquidar-entrega-a-rendir": {
+  "titulo": "Liquidar una entrega a rendir desde Facturación",
+  "modulo": "facturacion",
+  "nivel": "avanzado",
+  "n_pasos": 16,
+  "preguntas": [
+   "cómo hago la liquidación de una entrega a rendir",
+   "como liquido lo que rindio el trabajador",
+   "ya pagué la entrega a rendir y ahora como registro los gastos que me sustentan",
+   "donde registro la planilla de movilidad de la rendicion",
+   "el trabajador devolvio el saldo que no gasto, como lo meto a la liquidacion",
+   "como cierro una liquidacion de entrega a rendir",
+   "liquidasion de entregas a rrendir en facturacion",
+   "agregar documento desde el diario de caja a la liquidacion",
+   "por qué mi liquidación sigue en estado registrado y no se cierra"
+  ],
+  "aliases": [
+   "liquidar entrega a rendir",
+   "liquidación de entrega a rendir",
+   "rendición de gastos",
+   "cerrar liquidación",
+   "liquidaciones"
+  ],
+  "entidades": {
+   "modulo": "Facturación",
+   "pantallas": [
+    "Liquidaciones",
+    "Cronograma de Cobranzas",
+    "Diario de Caja"
+   ],
+   "objetos": [
+    "liquidación",
+    "entrega a rendir",
+    "pago",
+    "documento interno",
+    "planilla de movilidad",
+    "depósito"
+   ]
+  },
+  "archivo": "facturacion/facturacion.liquidar-entrega-a-rendir.yml"
+ },
+ "facturacion.registrar-anticipo-a-proveedor": {
+  "titulo": "Registrar una factura de anticipo de proveedor y su amortización",
+  "modulo": "facturacion",
+  "nivel": "avanzado",
+  "n_pasos": 10,
+  "preguntas": [
+   "cómo registro la factura de adelanto que me manda el proveedor",
+   "el proveedor me factura el 30% de la orden de compra antes de despachar, como lo registro",
+   "como amortizo el anticipo en la segunda factura",
+   "como relaciono la factura de anticipo con la orden de compra",
+   "el ingreso de almacen se enlazo con la factura del adelanto, como lo desvinculo",
+   "como hago la regularizacion compuesta del anticipo",
+   "factura de antisipo de proveedor en s10 pasos",
+   "pongo el recurso anticipo en negativo? como es"
+  ],
+  "aliases": [
+   "anticipo a proveedor",
+   "factura de anticipo",
+   "amortizar anticipo",
+   "adelanto de orden de compra",
+   "caso anticipo"
+  ],
+  "entidades": {
+   "modulo": "Facturación",
+   "pantallas": [
+    "Catalogo de Ordenes de Compra y Servicio"
+   ],
+   "objetos": [
+    "factura",
+    "anticipo",
+    "orden de compra",
+    "ingreso al almacén",
+    "regularización compuesta",
+    "recurso"
+   ]
+  },
+  "archivo": "facturacion/facturacion.registrar-anticipo-a-proveedor.yml"
  },
  "facturacion.registrar-cliente": {
   "titulo": "Registrar un cliente",
@@ -1140,6 +2531,48 @@
   },
   "archivo": "facturacion/facturacion.registrar-entrega-a-rendir.yml"
  },
+ "facturacion.registrar-fondo-rotatorio": {
+  "titulo": "Registrar un fondo rotatorio (caja chica) y sus reembolsos",
+  "modulo": "facturacion",
+  "nivel": "avanzado",
+  "n_pasos": 18,
+  "preguntas": [
+   "cómo creo un fondo rotatorio en facturación",
+   "como registro la caja chica de un responsable",
+   "como le asigno el dinero al fondo rotatorio",
+   "agregar documento de pago a la asignacion de fondo",
+   "como registro los gastos de caja chica en el fondo rotatorio",
+   "como genero un reembolso dentro del fondo rotatorio",
+   "quiero que finanzas me devuelva lo gastado de la caja chica, que hago",
+   "fondo rotativo s10 pasos",
+   "la caja chica como se repone en s10",
+   "en movimientos no me aparece la asignacion de fondo"
+  ],
+  "aliases": [
+   "fondo rotatorio",
+   "registrar fondo rotatorio",
+   "caja chica",
+   "fondos rotatorios",
+   "reembolso de caja chica"
+  ],
+  "entidades": {
+   "modulo": "Facturación",
+   "pantallas": [
+    "Fondos Rotatorios",
+    "Fondo Rotatorio",
+    "Datos Generales"
+   ],
+   "objetos": [
+    "fondo rotatorio",
+    "caja chica",
+    "asignación de fondo",
+    "reembolso",
+    "documento de pago",
+    "recurso"
+   ]
+  },
+  "archivo": "facturacion/facturacion.registrar-fondo-rotatorio.yml"
+ },
  "facturacion.registrar-nota-de-credito": {
   "titulo": "Registrar una nota de crédito (o de débito) de una factura",
   "modulo": "facturacion",
@@ -1177,6 +2610,82 @@
    ]
   },
   "archivo": "facturacion/facturacion.registrar-nota-de-credito.yml"
+ },
+ "facturacion.registrar-reembolso": {
+  "titulo": "Registrar un reembolso de gastos",
+  "modulo": "facturacion",
+  "nivel": "intermedio",
+  "n_pasos": 9,
+  "preguntas": [
+   "cómo registro un reembolso en facturación",
+   "un trabajador pagó un gasto con su plata, como le hago el reembolso",
+   "como creo un reembolso y le meto la factura del gasto",
+   "reembolso de gastos de movilidad por viaje en s10",
+   "como agrego un documento ya registrado al reembolso",
+   "por que tesoreria no ve mi reembolso para pagarlo",
+   "puedo seguir modificando un reembolso que ya grabe",
+   "rembolso a un responsable como se registra"
+  ],
+  "aliases": [
+   "registrar reembolso",
+   "reembolso de gastos",
+   "crear reembolso",
+   "reembolsos"
+  ],
+  "entidades": {
+   "modulo": "Facturación",
+   "pantallas": [
+    "Reembolsos",
+    "Reembolso"
+   ],
+   "objetos": [
+    "reembolso",
+    "socio negocio",
+    "factura",
+    "tipo de documento",
+    "recurso"
+   ]
+  },
+  "archivo": "facturacion/facturacion.registrar-reembolso.yml"
+ },
+ "gerencia-proyectos.aprobar-valorizacion-del-subcontrato": {
+  "titulo": "Aprobar la valorización de un subcontrato y autorizar su pago",
+  "modulo": "gerencia-proyectos",
+  "nivel": "intermedio",
+  "n_pasos": 9,
+  "preguntas": [
+   "como apruebo la valorizacion de un subcontrato",
+   "ya valorice al subcontratista, ahora como la apruebo",
+   "como autorizo el pago de una valorizacion del subcontratista",
+   "como apruevo la autorizacion de pago del subcontrato",
+   "por que no me sale adicionar en la pestaña valorizaciones",
+   "la valorizacion del subcontrato no aparece para autorizar el pago",
+   "como paso la valorizacion del subcontrato a documentos por pagar",
+   "donde veo cuanto se le pago a cada subcontratista por periodo",
+   "pasos para aprobar valorisacion de subcontrato en gerencia de proyectos"
+  ],
+  "aliases": [
+   "aprobar valorización del subcontrato",
+   "autorizar pago de valorización",
+   "aprobar autorización de pago",
+   "pago al subcontratista",
+   "aprobar valorizacion subcontrato"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "Subcontratos",
+    "Valorizaciones",
+    "Subcontrato Estado de Cuenta"
+   ],
+   "objetos": [
+    "valorización",
+    "subcontrato",
+    "autorización de pago",
+    "subcontratista"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.aprobar-valorizacion-del-subcontrato.yml"
  },
  "gerencia-proyectos.asignar-presupuestos-al-proyecto": {
   "titulo": "Asignar presupuestos al proyecto",
@@ -1293,6 +2802,118 @@
    ]
   },
   "archivo": "gerencia-proyectos/gerencia-proyectos.definir-periodos.yml"
+ },
+ "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato": {
+  "titulo": "Editar el diseño del resumen desde el subcontrato",
+  "modulo": "gerencia-proyectos",
+  "nivel": "avanzado",
+  "n_pasos": 6,
+  "preguntas": [
+   "como edito el resumen de la valorizacion del subcontrato",
+   "como cambio el diseño del resumen de un subcontrato",
+   "quiero agregar un descuento al resumen de valorizacion del subcontratista",
+   "como agrego un concepto nuevo al pie de la valorizacion del subcontrato",
+   "donde se edita la plantilla del resumen del subcontrato",
+   "como le descuento un monto cada semana al subcontratista",
+   "diseño del resumen subcontrato como se configura",
+   "se puede modificar el resumen despues de valorisar"
+  ],
+  "aliases": [
+   "diseño del resumen",
+   "editar resumen del subcontrato",
+   "plantilla del resumen",
+   "editar plantilla del resumen",
+   "conceptos del resumen de valorización"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "Diseño del Resumen"
+   ],
+   "objetos": [
+    "subcontrato",
+    "concepto",
+    "plantilla",
+    "valorización"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato.yml"
+ },
+ "gerencia-proyectos.egresar-a-partida-de-control-con-pedido": {
+  "titulo": "Registrar un egreso a partida de control con pedido",
+  "modulo": "gerencia-proyectos",
+  "nivel": "intermedio",
+  "n_pasos": 6,
+  "preguntas": [
+   "como hago el egreso de un pedido aprobado en almacen",
+   "el residente ya aprobó el pedido a almacen, como despacho los materiales",
+   "egreso a partida de control con pedido como se hace",
+   "como entrego al capataz los materiales que pidio por el sistema",
+   "como jalo el pedido aprobado al egreso del almacen",
+   "como registro la salida de materiales con pedido EPCP",
+   "despues de jalar el pedido como imprimo el EPCP para la firma",
+   "no me aparece el pedido para hacer el egreso con pedido"
+  ],
+  "aliases": [
+   "egreso con pedido",
+   "EPCP",
+   "egreso a partida de control con pedido",
+   "atender pedido a almacén",
+   "despachar pedido de almacén"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "Egresos",
+    "Egreso a Partida de Control con Pedido"
+   ],
+   "objetos": [
+    "pedido",
+    "egreso",
+    "partida de control",
+    "recurso"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.egresar-a-partida-de-control-con-pedido.yml"
+ },
+ "gerencia-proyectos.generar-pedido-automatico": {
+  "titulo": "Generar un pedido automático para comprar",
+  "modulo": "gerencia-proyectos",
+  "nivel": "intermedio",
+  "n_pasos": 10,
+  "preguntas": [
+   "como genero pedidos automaticos en gerencia de proyectos",
+   "como saco el pedido de compra desde lo programado en el cronograma",
+   "quiero pedir los materiales de las proximas semanas de golpe, como hago",
+   "como hago un pedido automatico a compras",
+   "pedido automatico s10 paso a paso",
+   "como pongo fecha de entrega a todos los recursos del pedido automatico",
+   "por que en pedidos automaticos me salen cantidades con decimales",
+   "como junto varias semanas en un solo pedido",
+   "como genero pedio automatico de materiales"
+  ],
+  "aliases": [
+   "pedido automático",
+   "pedidos automáticos",
+   "generar pedido automático",
+   "pedido automático a compras",
+   "pedir según la programación"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "Pedidos Automáticos",
+    "Pedido de Obra",
+    "Cronograma por periodos"
+   ],
+   "objetos": [
+    "pedido",
+    "recurso",
+    "centro de compra",
+    "fecha de entrega"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.generar-pedido-automatico.yml"
  },
  "gerencia-proyectos.planificar-en-cronograma-por-periodos": {
   "titulo": "Planificar el proyecto en el Cronograma por Periodos",
@@ -1530,6 +3151,115 @@
   },
   "archivo": "gerencia-proyectos/gerencia-proyectos.registrar-usuarios-del-proyecto.yml"
  },
+ "gerencia-proyectos.valorizar-el-contrato": {
+  "titulo": "Valorizar el contrato y autorizar su cobranza",
+  "modulo": "gerencia-proyectos",
+  "nivel": "avanzado",
+  "n_pasos": 12,
+  "preguntas": [
+   "como valorizo el contrato con el cliente en gerencia de proyectos",
+   "cómo hago la valorizacion mensual del contrato principal",
+   "como le cobro al propietario lo avanzado en el mes",
+   "como apruebo la valorizacion del contrato",
+   "como mando la valorisacion del contrato a documentos por cobrar",
+   "como amortizo el adelanto que nos dio el cliente en la valorizacion",
+   "donde imprimo la valorizacion del contrato",
+   "pasos para valorizar el contrato de obra en s10"
+  ],
+  "aliases": [
+   "valorizar contrato",
+   "valorización del contrato",
+   "valorización mensual del contrato",
+   "autorización de cobranza",
+   "aprobar valorización del contrato"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "Contratos",
+    "Cronograma por Periodos",
+    "Documentos por Cobrar"
+   ],
+   "objetos": [
+    "contrato",
+    "valorización",
+    "adelanto",
+    "pago a cuenta",
+    "retenciones"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.valorizar-el-contrato.yml"
+ },
+ "instalacion.actualizar-base-de-datos": {
+  "titulo": "Actualizar la base de datos después de instalar las revisiones",
+  "modulo": "instalacion",
+  "nivel": "basico",
+  "n_pasos": 4,
+  "preguntas": [
+   "despues de instalar la revision como se actualiza la base de datos",
+   "me sale que no se puede actualizar la base de datos porque hay usuarios conectados",
+   "no me aparecio la ventana de actualizacion de base de datos",
+   "como veo que usuario esta conectado a la base de datos",
+   "quien tiene que entrar primero despues de actualizar el s10",
+   "la actualizacion de la bd se quedo esperando por usuarios conectados",
+   "que hago si otro usuario entro antes a la base de datos",
+   "actualisar base de datos s10 revision"
+  ],
+  "aliases": [
+   "actualizar base de datos",
+   "actualización de BD",
+   "usuarios conectados",
+   "actualización de base de datos"
+  ],
+  "entidades": {
+   "modulo": "Instalación",
+   "pantallas": [
+    "Actualización de Base de Datos"
+   ],
+   "objetos": [
+    "base de datos",
+    "revisiones",
+    "usuario"
+   ]
+  },
+  "archivo": "instalacion/instalacion.actualizar-base-de-datos.yml"
+ },
+ "instalacion.actualizar-s10-con-revisiones": {
+  "titulo": "Actualizar el S10 instalando las revisiones",
+  "modulo": "instalacion",
+  "nivel": "intermedio",
+  "n_pasos": 4,
+  "preguntas": [
+   "como actualizo el s10 a la ultima revision",
+   "en que orden instalo las revisiones del s10",
+   "como se cual es la ultima revision que tengo instalada",
+   "me salio acceso denegado al instalar la revision",
+   "al instalar la revision dice que hay modulos ejecutandose",
+   "puedo saltarme revisiones o tengo que ponerlas todas",
+   "a que hora conviene actualizar el s10 si hay varios usuarios",
+   "una revision me dio error, sigo con la siguiente?",
+   "como actualizo el sistema con las revisiones nuebas"
+  ],
+  "aliases": [
+   "actualizar S10",
+   "instalar revisiones",
+   "actualización de revisiones",
+   "aplicar revisión"
+  ],
+  "entidades": {
+   "modulo": "Instalación",
+   "pantallas": [
+    "Panel de Control",
+    "Administrador de tareas"
+   ],
+   "objetos": [
+    "revisión",
+    "antivirus",
+    "Control de cuentas de usuario"
+   ]
+  },
+  "archivo": "instalacion/instalacion.actualizar-s10-con-revisiones.yml"
+ },
  "instalacion.instalar-s10-erp": {
   "titulo": "Instalar el S10 ERP en un equipo",
   "modulo": "instalacion",
@@ -1567,6 +3297,45 @@
   },
   "archivo": "instalacion/instalacion.instalar-s10-erp.yml"
  },
+ "instalacion.instalar-sql-server": {
+  "titulo": "Instalar Microsoft SQL Server",
+  "modulo": "instalacion",
+  "nivel": "avanzado",
+  "n_pasos": 21,
+  "preguntas": [
+   "como instalo sql server para el s10",
+   "que collation pongo al instalar sql server",
+   "que modo de autenticacion elijo en la instalacion de sql",
+   "instancia por defecto o nombrada en sql server cual pongo",
+   "pasos para instalar el motor de base de datos sql server",
+   "que caracteristicas de sql server tengo que marcar",
+   "puedo usar sql server 2016 con el s10",
+   "como pongo el nivel de compatibilidad de la base de datos",
+   "instalar sql servr en el servidor paso a paso",
+   "que necesito revisar antes de instalar sql server"
+  ],
+  "aliases": [
+   "instalar SQL Server",
+   "instalación de SQL Server",
+   "instalar motor de base de datos",
+   "SQL Server"
+  ],
+  "entidades": {
+   "modulo": "Instalación",
+   "pantallas": [
+    "SQL Server Installation Center",
+    "Collation",
+    "Data Directories"
+   ],
+   "objetos": [
+    "SQL Server",
+    "instancia",
+    "Database Engine Services",
+    "SQL Server Management Studio"
+   ]
+  },
+  "archivo": "instalacion/instalacion.instalar-sql-server.yml"
+ },
  "instalacion.sacar-copia-de-seguridad-de-la-base-de-datos": {
   "titulo": "Sacar una copia de seguridad de la base de datos del S10",
   "modulo": "instalacion",
@@ -1598,6 +3367,82 @@
    ]
   },
   "archivo": "instalacion/instalacion.sacar-copia-de-seguridad-de-la-base-de-datos.yml"
+ },
+ "nominas.actualizar-comisiones-spp": {
+  "titulo": "Actualizar las comisiones SPP de las AFP",
+  "modulo": "nominas",
+  "nivel": "basico",
+  "n_pasos": 7,
+  "preguntas": [
+   "como actualizo los porcentajes de las afp del mes",
+   "como descargo las comisiones de la sbs",
+   "donde se registran las comisiones spp",
+   "como bajo las comisiones de las afp de internet",
+   "como registro a mano el % de comision de una afp",
+   "donde configuro el aporte complementario afp de construccion civil",
+   "cada cuanto tengo que actualizar las comisiones de afp",
+   "como agrego un concepto nuevo en comisiones spp dependientes",
+   "actualisar comiciones afp en nominas"
+  ],
+  "aliases": [
+   "comisiones SPP",
+   "comisiones AFP",
+   "porcentajes AFP",
+   "comisiones SPP dependientes",
+   "publicación web SBS"
+  ],
+  "entidades": {
+   "modulo": "Nóminas",
+   "pantallas": [
+    "Comisiones SPP Dependientes",
+    "Comisiones Seguro Privado de Pensiones Dependientes",
+    "Resumen de Conceptos por Periodo"
+   ],
+   "objetos": [
+    "AFP",
+    "comisión",
+    "concepto",
+    "SBS"
+   ]
+  },
+  "archivo": "nominas/nominas.actualizar-comisiones-spp.yml"
+ },
+ "nominas.asignar-horario-a-los-trabajadores": {
+  "titulo": "Asignar el horario cíclico a los trabajadores",
+  "modulo": "nominas",
+  "nivel": "basico",
+  "n_pasos": 5,
+  "preguntas": [
+   "como asigno el horario a los trabajadores",
+   "donde le pongo el horario ciclico a un obrero",
+   "que fecha de vigencia pongo en el horario",
+   "el horario no me cuadra las horas en el resumen por dia, donde lo asigno",
+   "como agrego el horario desde la ficha del trabajador",
+   "como asigno un horario a varios empleados a la vez",
+   "como hago la asignacion de horarios en nominas",
+   "asignar orario ciclico al personal"
+  ],
+  "aliases": [
+   "asignar horario",
+   "asignación de horarios",
+   "horario cíclico del trabajador",
+   "fecha de vigencia del horario"
+  ],
+  "entidades": {
+   "modulo": "Nóminas",
+   "pantallas": [
+    "Horarios",
+    "Asignación de Horario",
+    "Catálogo de Personal por Tipo de Nominas"
+   ],
+   "objetos": [
+    "horario cíclico",
+    "trabajador",
+    "fecha de vigencia",
+    "tipo de nómina"
+   ]
+  },
+  "archivo": "nominas/nominas.asignar-horario-a-los-trabajadores.yml"
  },
  "nominas.calcular-la-nomina": {
   "titulo": "Calcular la nómina de un periodo",
@@ -1641,6 +3486,46 @@
    ]
   },
   "archivo": "nominas/nominas.calcular-la-nomina.yml"
+ },
+ "nominas.calcular-reparto-de-utilidades": {
+  "titulo": "Calcular el reparto de utilidades y generar su liquidación",
+  "modulo": "nominas",
+  "nivel": "avanzado",
+  "n_pasos": 15,
+  "preguntas": [
+   "como calculo las utilidades de los trabajadores en nominas",
+   "como hago el reparto de utilidades del año",
+   "donde configuro los dias trabajados y el monto ganado para utilidades",
+   "como genero la liquidacion de utilidades para cada trabajador",
+   "que conceptos suman dias trabajados para las utilidades",
+   "el descanso por maternidad cuenta para utilidades?",
+   "como saco la constancia de distribucion de utilidades en word",
+   "como genero la planilla de pago de las utilidades",
+   "reparto de utilidade paso a paso",
+   "donde pongo el monto total de utilidades a repartir"
+  ],
+  "aliases": [
+   "reparto de utilidades",
+   "calcular utilidades",
+   "liquidación de utilidades",
+   "distribución de utilidades",
+   "utilidades de los trabajadores"
+  ],
+  "entidades": {
+   "modulo": "Nóminas",
+   "pantallas": [
+    "Reparto de Utilidades"
+   ],
+   "objetos": [
+    "utilidades",
+    "concepto",
+    "días trabajados",
+    "monto ganado",
+    "plantilla",
+    "trabajadores"
+   ]
+  },
+  "archivo": "nominas/nominas.calcular-reparto-de-utilidades.yml"
  },
  "nominas.importar-socios-de-negocio-desde-excel": {
   "titulo": "Importar socios de negocio desde una hoja de Excel",
@@ -1715,6 +3600,162 @@
   },
   "archivo": "nominas/nominas.imprimir-boletas-de-pago.yml"
  },
+ "nominas.registrar-cese-del-trabajador": {
+  "titulo": "Registrar la fecha de cese de un trabajador",
+  "modulo": "nominas",
+  "nivel": "basico",
+  "n_pasos": 5,
+  "preguntas": [
+   "como doy de baja a un trabajador en nominas",
+   "donde pongo la fecha de cese de un obrero",
+   "el trabajador renuncio, como registro su cese",
+   "como registro el motivo de cese",
+   "sigue saliendo en el tareo un obrero que ya se fue, que hago",
+   "de donde toma la fecha de cese para la liquidacion",
+   "como cambio la fecha de ingreso del trabajador al proyecto",
+   "como cesar a un trabajdor en s10"
+  ],
+  "aliases": [
+   "fecha de cese",
+   "cesar trabajador",
+   "dar de baja trabajador",
+   "motivo de cese",
+   "fecha de ingreso al proyecto"
+  ],
+  "entidades": {
+   "modulo": "Nóminas",
+   "pantallas": [
+    "Personal Disponible",
+    "Ingresos"
+   ],
+   "objetos": [
+    "trabajador",
+    "fecha de cese",
+    "fecha de ingreso",
+    "liquidación",
+    "tareo"
+   ]
+  },
+  "archivo": "nominas/nominas.registrar-cese-del-trabajador.yml"
+ },
+ "nominas.registrar-clasificacion-de-papeletas": {
+  "titulo": "Registrar una clasificación de papeletas",
+  "modulo": "nominas",
+  "nivel": "intermedio",
+  "n_pasos": 6,
+  "preguntas": [
+   "como creo una papeleta de descanso medico",
+   "donde registro las papeletas de vacaciones",
+   "como cambio una falta por descanso medico en el tareo",
+   "que comportamiento le pongo a la papeleta de vacaciones",
+   "donde esta el catalogo de clasificacion de papeletas",
+   "como registro una licencia con goce de haber en nominas",
+   "como agrego un tipo de papeleta nuevo",
+   "diferencia entre papeleta simple, multiple y abierta",
+   "como hago una papeleta por subcidio de maternidad"
+  ],
+  "aliases": [
+   "clasificación de papeletas",
+   "papeleta",
+   "papeleta de vacaciones",
+   "papeleta de descanso médico",
+   "tipos de papeleta"
+  ],
+  "entidades": {
+   "modulo": "Nóminas",
+   "pantallas": [
+    "Catálogo de Clasificación de Papeletas"
+   ],
+   "objetos": [
+    "papeleta",
+    "concepto",
+    "concepto genérico",
+    "tareo"
+   ]
+  },
+  "archivo": "nominas/nominas.registrar-clasificacion-de-papeletas.yml"
+ },
+ "nominas.registrar-ficha-del-trabajador": {
+  "titulo": "Registrar la información en la ficha del trabajador",
+  "modulo": "nominas",
+  "nivel": "intermedio",
+  "n_pasos": 15,
+  "preguntas": [
+   "cómo lleno la ficha del trabajador en nóminas",
+   "donde registro la afp de un obrero",
+   "como pongo el tipo de contrato y el regimen laboral del trabajador",
+   "dónde se registran los datos para el t-registro",
+   "como agrego a los hijos o la esposa como derecho habiente",
+   "en que parte pongo el banco y la cuenta donde le depositan al trabajador",
+   "como registro el recurso equivalente y la categoria del obrero",
+   "como completo la ficha personal del trabjador",
+   "donde marco essalud vida o comision mixta afp",
+   "el trabajador es practicante, donde pongo la modalidad formativa"
+  ],
+  "aliases": [
+   "ficha del trabajador",
+   "ficha personal",
+   "datos del trabajador",
+   "datos para el t-registro",
+   "afiliaciones del trabajador"
+  ],
+  "entidades": {
+   "modulo": "Nóminas",
+   "pantallas": [
+    "Personal Disponible",
+    "Ficha personal",
+    "Afiliaciones",
+    "Derecho Habiente",
+    "Relación Laboral"
+   ],
+   "objetos": [
+    "trabajador",
+    "recurso equivalente",
+    "AFP",
+    "derecho habiente",
+    "tipo de contrato",
+    "T-REGISTRO"
+   ]
+  },
+  "archivo": "nominas/nominas.registrar-ficha-del-trabajador.yml"
+ },
+ "nominas.registrar-renta-de-quinta-de-otras-empresas": {
+  "titulo": "Registrar las ganancias y retenciones de renta de 5ta de otras empresas",
+  "modulo": "nominas",
+  "nivel": "intermedio",
+  "n_pasos": 6,
+  "preguntas": [
+   "donde registro lo que gano el trabajador en su anterior empresa para la quinta",
+   "como ingreso las retenciones de 5ta de otro empleador",
+   "el trabajador viene de otra empresa con retenciones de quinta, donde lo pongo",
+   "como actualizo la renta de quinta de otros proyectos",
+   "donde se ven las ganancias acumuladas del trabajador en los proyectos",
+   "como hago para que no le descuente renta de quinta a un trabajador",
+   "como registro ingresos de otras empresas en la ficha del trbajador",
+   "retenciones de 5ta categoria de otras empresas en nominas"
+  ],
+  "aliases": [
+   "renta de 5ta de otras empresas",
+   "retenciones de quinta",
+   "ganancias de otras empresas",
+   "haberes del trabajador"
+  ],
+  "entidades": {
+   "modulo": "Nóminas",
+   "pantallas": [
+    "Personal Disponible",
+    "Ficha personal",
+    "Haberes"
+   ],
+   "objetos": [
+    "trabajador",
+    "impuesto a la 5ta categoría",
+    "monto percibido",
+    "monto retenido"
+   ]
+  },
+  "archivo": "nominas/nominas.registrar-renta-de-quinta-de-otras-empresas.yml"
+ },
  "nominas.registrar-tareo-estandar": {
   "titulo": "Registrar el tareo estándar con ayuda de Excel",
   "modulo": "nominas",
@@ -1753,6 +3794,46 @@
    ]
   },
   "archivo": "nominas/nominas.registrar-tareo-estandar.yml"
+ },
+ "nominas.registrar-tipo-de-prestamo": {
+  "titulo": "Registrar un tipo de préstamo",
+  "modulo": "nominas",
+  "nivel": "intermedio",
+  "n_pasos": 8,
+  "preguntas": [
+   "como registro un prestamo a un trabajador en nominas",
+   "donde creo los tipos de prestamo",
+   "como configuro un prestamo personal para descontarlo por planilla",
+   "que conceptos le pongo al tipo de prestamo",
+   "como hago un prestamo vehicular o de vivienda en s10",
+   "como configuro la amortizacion del prestamo con cuota doble",
+   "el prestamo es solo para un trabajador, como lo configuro",
+   "donde estan los tipos de prestamo del modulo de nominas",
+   "como registo un adelanto o prestamo al personal"
+  ],
+  "aliases": [
+   "tipo de préstamo",
+   "tipos de préstamo",
+   "préstamo al trabajador",
+   "préstamo personal",
+   "amortización de préstamo"
+  ],
+  "entidades": {
+   "modulo": "Nóminas",
+   "pantallas": [
+    "Tipos de Préstamo",
+    "Tipo de Préstamo",
+    "Préstamos"
+   ],
+   "objetos": [
+    "tipo de préstamo",
+    "concepto",
+    "tipo de documento",
+    "recurso",
+    "socio de negocio"
+   ]
+  },
+  "archivo": "nominas/nominas.registrar-tipo-de-prestamo.yml"
  },
  "nominas.registrar-trabajador-como-socio-de-negocio": {
   "titulo": "Registrar un trabajador como socio de negocio",
@@ -1833,6 +3914,151 @@
    ]
   },
   "archivo": "nominas/nominas.seleccionar-personal-disponible.yml"
+ },
+ "portal-proveedor.cargar-logo-de-la-empresa": {
+  "titulo": "Cargar el logo de la empresa proveedora en el portal",
+  "modulo": "portal-proveedor",
+  "nivel": "basico",
+  "n_pasos": 4,
+  "preguntas": [
+   "como subo el logo de mi empresa al portal de proveedores",
+   "donde cambio el logotipo en el portal del proveedor",
+   "quiero que mi logo salga en los reportes del portal",
+   "como pongo el logo de la empresa en el portal s10",
+   "donde estan los datos de mi empresa en el portal de proveedores",
+   "como cargo la imajen del logo en portal proveedor"
+  ],
+  "aliases": [
+   "logo de la empresa",
+   "subir logotipo",
+   "cambiar logo portal",
+   "configuración del portal de proveedores"
+  ],
+  "entidades": {
+   "modulo": "Portal del Proveedor",
+   "pantallas": [
+    "Configuración",
+    "Logo de la Empresa"
+   ],
+   "objetos": [
+    "logotipo",
+    "empresa proveedora",
+    "reportes"
+   ]
+  },
+  "archivo": "portal-proveedor/portal-proveedor.cargar-logo-de-la-empresa.yml"
+ },
+ "portal-proveedor.consultar-documentos-pendientes-de-pago": {
+  "titulo": "Consultar los documentos pendientes de pago en el Portal de Proveedores",
+  "modulo": "portal-proveedor",
+  "nivel": "basico",
+  "n_pasos": 5,
+  "preguntas": [
+   "como veo mis facturas pendientes de pago en el portal de proveedores",
+   "soy proveedor, donde veo que facturas no me han pagado",
+   "como reviso el detalle de una factura en el portal del proveedor",
+   "como descargo mi factura desde el portal de proveedores",
+   "que facturas salen en documentos pendientes de pago",
+   "dnd veo las facturas parcialmente pagadas en el portal",
+   "cual es la direccion del portal de proveedores de s10",
+   "primera vez que entro al portal de proveedores, cual es mi clave?"
+  ],
+  "aliases": [
+   "documentos pendientes de pago",
+   "facturas pendientes",
+   "pendientes de pago portal",
+   "ver detalle factura proveedor"
+  ],
+  "entidades": {
+   "modulo": "Portal del Proveedor",
+   "pantallas": [
+    "S10 Portal de Proveedores",
+    "Documentos pendientes de pago"
+   ],
+   "objetos": [
+    "factura",
+    "documento",
+    "correo electrónico de bienvenida"
+   ]
+  },
+  "archivo": "portal-proveedor/portal-proveedor.consultar-documentos-pendientes-de-pago.yml"
+ },
+ "portal-proveedor.enviar-documentos-de-ingreso-al-proveedor": {
+  "titulo": "Enviar al proveedor los documentos de una guía de ingreso",
+  "modulo": "portal-proveedor",
+  "nivel": "basico",
+  "n_pasos": 6,
+  "preguntas": [
+   "cómo le mando al proveedor la orden de compra y la guía desde almacenes",
+   "como envio los documentos de la guia de ingreso al proveedor",
+   "donde esta la opcion enviar al proveedor",
+   "quiero mandarle el ticket de validacion al proveedor por correo",
+   "como agrego otro destinatario al mensaje para el proveedor",
+   "se puede mandar copia a otra persona cuando envio al proveedor?",
+   "el almacenero como le envia la oc y la guia de remision al probeedor",
+   "que documentos le llegan al proveedor cuando le envio la guia de ingreso"
+  ],
+  "aliases": [
+   "enviar al proveedor",
+   "enviar documentos al proveedor",
+   "mensaje al proveedor",
+   "registro simple de facturación"
+  ],
+  "entidades": {
+   "modulo": "Portal del Proveedor",
+   "pantallas": [
+    "Mensajes",
+    "Destinatarios"
+   ],
+   "objetos": [
+    "guia de ingreso",
+    "orden de compra",
+    "guía de remisión",
+    "ticket de validación",
+    "socio de negocio"
+   ]
+  },
+  "archivo": "portal-proveedor/portal-proveedor.enviar-documentos-de-ingreso-al-proveedor.yml"
+ },
+ "portal-proveedor.notificar-pagos-en-el-portal": {
+  "titulo": "Configurar y enviar notificaciones de pago al Portal de Proveedores",
+  "modulo": "portal-proveedor",
+  "nivel": "intermedio",
+  "n_pasos": 7,
+  "preguntas": [
+   "como configuro el portal de proveedores en administrativo",
+   "que tengo que activar para que al proveedor le llegue la notificacion de la orden de pago",
+   "donde pongo el monto minimo para notificar pagos a los proveedores",
+   "el proveedor no recibe la notificacion del pago, que falta configurar",
+   "como marco el contacto principal del proveedor para el portal",
+   "cuando se le notifica al proveedor que se le hizo un pago",
+   "no quiero que les llegue notificacion a ningun proveedor, como hago",
+   "como hago q mis proveedores vean sus pagos en el portal",
+   "quien queda como usuario administrador del portal de proveedores"
+  ],
+  "aliases": [
+   "configurar portal de proveedores",
+   "notificar pagos al proveedor",
+   "enviar ordenes de pago al portal",
+   "monto mínimo de notificación",
+   "contacto principal del proveedor"
+  ],
+  "entidades": {
+   "modulo": "Portal del Proveedor",
+   "pantallas": [
+    "Portal de Proveedores",
+    "Ordenes de Pago"
+   ],
+   "objetos": [
+    "orden de pago",
+    "pago",
+    "contacto principal",
+    "monto mínimo",
+    "proveedor",
+    "Usuario Administrador"
+   ]
+  },
+  "archivo": "portal-proveedor/portal-proveedor.notificar-pagos-en-el-portal.yml"
  },
  "presupuestos.calcular-gastos-generales": {
   "titulo": "Calcular en forma analítica los gastos generales",
@@ -1978,6 +4204,39 @@
   },
   "archivo": "presupuestos/presupuestos.elaborar-formula-polinomica.yml"
  },
+ "presupuestos.exportar-presupuesto": {
+  "titulo": "Exportar un presupuesto a otra base de datos",
+  "modulo": "presupuestos",
+  "nivel": "avanzado",
+  "n_pasos": 8,
+  "preguntas": [
+   "cómo exporto un presupuesto a otra base de datos",
+   "como paso un presupuesto a otra pc",
+   "como independizo un presupuesto en s10",
+   "exportar presupuestos s10",
+   "como llevo mi presupuesto a otra computadora",
+   "como entro a la base de datos exportada",
+   "como esporto un presupuesto"
+  ],
+  "aliases": [
+   "exportar presupuesto",
+   "trasladar presupuesto a otra PC",
+   "independizar presupuesto"
+  ],
+  "entidades": {
+   "modulo": "Presupuestos",
+   "pantallas": [
+    "Exportar presupuestos",
+    "Mantenimiento de Base de Datos"
+   ],
+   "objetos": [
+    "presupuesto",
+    "base de datos",
+    "copia de seguridad"
+   ]
+  },
+  "archivo": "presupuestos/presupuestos.exportar-presupuesto.yml"
+ },
  "presupuestos.importar-presupuesto-desde-excel": {
   "titulo": "Importar al S10 un presupuesto elaborado en Excel",
   "modulo": "presupuestos",
@@ -2121,6 +4380,38 @@
   },
   "archivo": "presupuestos/presupuestos.procesar-presupuesto.yml"
  },
+ "presupuestos.reasignar-recurso": {
+  "titulo": "Reasignar un recurso en el listado de recursos y precios",
+  "modulo": "presupuestos",
+  "nivel": "intermedio",
+  "n_pasos": 5,
+  "preguntas": [
+   "cómo reemplazo un recurso por otro en el presupuesto",
+   "un recurso me sale dos veces en recursos y precios",
+   "como cambio un recurso en todas las partidas",
+   "reasignar recurso s10",
+   "como veo en que partidas se usa un recurso",
+   "como cambio un insumo por otro en el presupuesto"
+  ],
+  "aliases": [
+   "reasignar recurso",
+   "reemplazar recurso",
+   "cambiar recurso"
+  ],
+  "entidades": {
+   "modulo": "Presupuestos",
+   "pantallas": [
+    "Recursos y precios",
+    "Hoja del Presupuesto"
+   ],
+   "objetos": [
+    "recurso",
+    "partidas",
+    "cantidades"
+   ]
+  },
+  "archivo": "presupuestos/presupuestos.reasignar-recurso.yml"
+ },
  "presupuestos.registrar-partida-en-el-catalogo": {
   "titulo": "Registrar una partida nueva en el catálogo de partidas",
   "modulo": "presupuestos",
@@ -2198,6 +4489,38 @@
   },
   "archivo": "presupuestos/presupuestos.registrar-presupuesto-nuevo.yml"
  },
+ "presupuestos.registrar-recurso-en-el-catalogo": {
+  "titulo": "Registrar un recurso genérico y sus específicos en el catálogo",
+  "modulo": "presupuestos",
+  "nivel": "basico",
+  "n_pasos": 5,
+  "preguntas": [
+   "cómo registro un recurso nuevo en el catálogo de recursos",
+   "como creo un material nuevo en s10",
+   "que es recurso generico y especifico",
+   "como agrego un insumo que no existe",
+   "registrar recursos especificos s10",
+   "como creo un recurso en el catalogo de recursos genericos y especificos",
+   "como registro un recuso nuevo"
+  ],
+  "aliases": [
+   "registrar recurso",
+   "crear recurso",
+   "recursos genéricos y específicos"
+  ],
+  "entidades": {
+   "modulo": "Presupuestos",
+   "pantallas": [
+    "Recursos Genéricos y Específicos"
+   ],
+   "objetos": [
+    "recurso genérico",
+    "recursos específicos",
+    "catálogo de recursos"
+   ]
+  },
+  "archivo": "presupuestos/presupuestos.registrar-recurso-en-el-catalogo.yml"
+ },
  "presupuestos.registrar-titulos-y-partidas": {
   "titulo": "Registrar títulos y partidas en la hoja del presupuesto",
   "modulo": "presupuestos",
@@ -2271,5 +4594,107 @@
    ]
   },
   "archivo": "presupuestos/presupuestos.registrar-usuarios.yml"
+ },
+ "presupuestos.usar-favoritos": {
+  "titulo": "Armar la hoja del presupuesto con favoritos",
+  "modulo": "presupuestos",
+  "nivel": "basico",
+  "n_pasos": 4,
+  "preguntas": [
+   "cómo uso los favoritos en s10 presupuestos",
+   "qué son los favoritos del presupuesto",
+   "como agrego un favorito a la hoja del presupuesto",
+   "insertar partidas desde favoritos",
+   "dónde veo mis favoritos en s10",
+   "como adiciono un favorito al subpresupuesto",
+   "usar favoritos para armar el presupuesto"
+  ],
+  "aliases": [
+   "adicionar favorito",
+   "usar favoritos",
+   "insertar favorito"
+  ],
+  "entidades": {
+   "modulo": "Presupuestos",
+   "pantallas": [
+    "Hoja del Presupuesto",
+    "Mis Favoritos"
+   ],
+   "objetos": [
+    "favoritos",
+    "partidas",
+    "subpresupuesto"
+   ]
+  },
+  "archivo": "presupuestos/presupuestos.usar-favoritos.yml"
+ },
+ "tareo-movil.publicar-parte-de-tareo": {
+  "titulo": "Publicar un parte de tareo para el móvil",
+  "modulo": "tareo-movil",
+  "nivel": "intermedio",
+  "n_pasos": 5,
+  "preguntas": [
+   "cómo publico el tareo para el celular",
+   "como envio el parte de tareo al tareo movil",
+   "como habilito al tareador para que tareé desde el movil",
+   "publicar tareo movil s10",
+   "como agrego un invitado al tareo movil",
+   "no me aparece la opcion de publicar el parte",
+   "publicar en la nube o local tareo movil"
+  ],
+  "aliases": [
+   "publicar tareo",
+   "publicar parte de tareo",
+   "enviar tareo al móvil"
+  ],
+  "entidades": {
+   "modulo": "Tareo Móvil",
+   "pantallas": [
+    "Publicación Tareo Móvil",
+    "Por Publicar",
+    "Publicados"
+   ],
+   "objetos": [
+    "partes de tareo",
+    "tareador",
+    "invitado",
+    "trabajadores"
+   ]
+  },
+  "archivo": "tareo-movil/tareo-movil.publicar-parte-de-tareo.yml"
+ },
+ "tareo-movil.sincronizar-y-cerrar-el-tareo": {
+  "titulo": "Sincronizar el tareo del móvil con el S10 y cerrar el parte",
+  "modulo": "tareo-movil",
+  "nivel": "intermedio",
+  "n_pasos": 5,
+  "preguntas": [
+   "cómo sincronizo el tareo movil",
+   "como paso el tareo del celular al s10",
+   "el tareo del movil no se actualiza en el s10",
+   "como cierro el parte de tareo movil",
+   "actualizar desde el movil tareo",
+   "como sincronizar tareo s10 sin internet",
+   "como selecciono el parte en la app tareo movil"
+  ],
+  "aliases": [
+   "sincronizar tareo",
+   "actualizar desde el móvil",
+   "cerrar parte de tareo"
+  ],
+  "entidades": {
+   "modulo": "Tareo Móvil",
+   "pantallas": [
+    "Sincronizar",
+    "Actualizar desde el Móvil"
+   ],
+   "objetos": [
+    "partes de tareo",
+    "trabajadores",
+    "proyectos",
+    "dispositivo móvil"
+   ]
+  },
+  "archivo": "tareo-movil/tareo-movil.sincronizar-y-cerrar-el-tareo.yml"
  }
 }

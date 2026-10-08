@@ -1,0 +1,87 @@
+id: compras.clasificar-materiales-abc
+version: 1
+modulo: compras
+titulo: "Clasificar los materiales del proyecto con el análisis ABC"
+objetivo: "Calificar con A, B o C los recursos del proyecto según su incidencia o participación (por cantidad o regla de Pareto, o por los parciales de mayor a menor), para luego filtrarlos y pedir los recursos."
+nivel: intermedio
+preguntas:
+  - "como clasifico los materiales en a b c"
+  - "donde pongo la clasificacion abc de los recursos"
+  - "como califico los materiales por pareto en s10"
+  - "clasificacion abc de materiales como se hace"
+  - "quiero marcar los materiales mas caros como tipo A"
+  - "como ordeno los recursos por monto presupuestado para el abc"
+  - "analisis abc en compras donde esta"
+  - "como clasifico materiales abc en techo de materiales"
+aliases:
+  - "clasificación ABC"
+  - "análisis ABC"
+  - "clasificar materiales ABC"
+  - "calificar recursos A B C"
+entidades:
+  modulo: "Compras"
+  pantallas: ["Techo de Materiales", "Materiales presupuestados"]
+  objetos: ["recursos", "materiales", "Clasificación ABC"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "compras.clasificar-materiales-abc#1"
+    accion: "Ingrese al escenario **Techo de Materiales**."
+    fuente: [img-fe94a3b9752d-0000, web-https-documentacion-s10peru-com-manual-d-s026, web-https-documentacion-s10peru-com-manual-d-s027]
+    pagina: null
+    fotos:
+      - id: "f095543d5335"
+        ruta_o_url: "imagenes/manual-de-compras/fe94a3b9752d.png"
+        pagina: null
+        ocr: "_]\n=\n=\n=\nTecho de\nMateriales"
+  - n: 2
+    id: "compras.clasificar-materiales-abc#2"
+    accion: "En **Proyectos**, elija el proyecto."
+    fuente: [img-885bfe17b126-0000, web-https-documentacion-s10peru-com-manual-d-s027]
+    pagina: null
+    fotos:
+      - id: "f951670038e0"
+        ruta_o_url: "imagenes/manual-de-compras/885bfe17b126.png"
+        pagina: null
+        ocr: "Proyectos:\na Escritorio\neee PLIENTE EN CARRETERA Tan"
+  - n: 3
+    id: "compras.clasificar-materiales-abc#3"
+    accion: "En **Materiales presupuestados**, marque un bloque de los recursos que calificará con A."
+    fuente: [img-9b7d7a7156f9-0000, web-https-documentacion-s10peru-com-manual-d-s027]
+    pagina: null
+    fotos:
+      - id: "40a49a25d3fb"
+        ruta_o_url: "imagenes/manual-de-compras/9b7d7a7156f9.png"
+        pagina: null
+        ocr: "Materiales presupuestados\nMarque un bloque de los recursos que calificara con\nA.- luego haga clic derecho sobre el bloque y elija\na Jnida| Cant. Ppto. Precio (Si!) 4!\n[A CEMENTO PORTLAND TIPO | (42.5 kg) bol 15,631 8000 13.801\nid ACERO CORRUGADO fy=4200 kgicm2 GRADO 60 kg 68,289.5200 2.301\noa: R , gal 41,512.0000 10.451\noA egenerar eqpivalencias kg 1,841 5750 4.001\noz 4 ‘Incrementar Jecho kg 700.0…"
+  - n: 4
+    id: "compras.clasificar-materiales-abc#4"
+    accion: "Haga clic derecho sobre el bloque, elija **ABC** y la letra con la que lo califica."
+    fuente: [img-9b7d7a7156f9-0000, web-https-documentacion-s10peru-com-manual-d-s027]
+    pagina: null
+  - n: 5
+    id: "compras.clasificar-materiales-abc#5"
+    accion: "Repita con los recursos que calificará con B (incidencia o participación mediana) y con C (menor incidencia o participación)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s027]
+    pagina: null
+  - n: 6
+    id: "compras.clasificar-materiales-abc#6"
+    accion: "Si prefiere calificar de acuerdo a los parciales de mayor a menor, haga clic derecho y elija **Clasificar por Monto Presupuestado**."
+    fuente: [img-54ead419b937-0000, web-https-documentacion-s10peru-com-manual-d-s027]
+    pagina: null
+    fotos:
+      - id: "4fd29f975469"
+        ruta_o_url: "imagenes/manual-de-compras/54ead419b937.png"
+        pagina: null
+        ocr: "Marque un bloque de los recursos que calificara\nluego haga clic derecho sobre el bloque y elija\n_— Jnida| Cant. Peta. Precio (St) 4)\n[i CEMENTO PORTLAND TIPO | (42.5 kg) bol 15,631 6000 13.80!\nRegenerar eqpiivalencias\nIncrementar Jecho\nClasificar por Monto Presupuestado ABC: C ms\nVer recursos con Stock Minimo | foes Pedidolaere ||\nForma de AbasteqEstandar\nCon Stock Minimo\nTecho por: Cantid Critica…"
+verificacion: []
+errores_frecuentes: []
+relacionados: [compras.registrar-pedido-de-compra]
+fuentes:
+  - {id: img-fe94a3b9752d-0000, manual: "Manual de Compras", seccion: "fe94a3b9752d.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s026, manual: "Manual de Compras", seccion: "5.2 Forma de Pedido", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s027, manual: "Manual de Compras", seccion: "5.3 Clasificación de Materiales ABC", pagina: null}
+  - {id: img-885bfe17b126-0000, manual: "Manual de Compras", seccion: "885bfe17b126.png", pagina: null}
+  - {id: img-9b7d7a7156f9-0000, manual: "Manual de Compras", seccion: "9b7d7a7156f9.png", pagina: null}
+  - {id: img-54ead419b937-0000, manual: "Manual de Compras", seccion: "54ead419b937.png", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

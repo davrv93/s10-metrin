@@ -1,0 +1,432 @@
+{"texto": "¿Cuál es el procedimiento para registrar una orden de pago con nota de crédito en Administrativo?", "procedimiento": "administrativo.aplicar-nota-de-credito-en-orden-de-pago", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como le descuento una nc a la factura del proveedor al hacer la orden de pago", "procedimiento": "administrativo.aplicar-nota-de-credito-en-orden-de-pago", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el proveedor me mandó una nota de crédito por mercadería devuelta y quiero cancelar parte de su factura con eso, cómo lo hago", "procedimiento": "administrativo.aplicar-nota-de-credito-en-orden-de-pago", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como aplico la nota de credito a la factura de un probedor, no c donde", "procedimiento": "administrativo.aplicar-nota-de-credito-en-orden-de-pago", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "pagar con nota de crédito", "procedimiento": "administrativo.aplicar-nota-de-credito-en-orden-de-pago", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "puedo usar la misma nc para cancelar dos facturas del proveedor?", "procedimiento": "administrativo.aplicar-nota-de-credito-en-orden-de-pago", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Indíqueme cómo agregar una nota de crédito afectada a un documento dentro de la orden de pago.", "procedimiento": "administrativo.aplicar-nota-de-credito-en-orden-de-pago", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como veo las notas de credito de una factura dentro de la orden de pago", "procedimiento": "administrativo.aplicar-nota-de-credito-en-orden-de-pago", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "tengo una factura de 5000 y una nc de 1200 del mismo proveedor, como armo el pago por la diferencia", "procedimiento": "administrativo.aplicar-nota-de-credito-en-orden-de-pago", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "kiero cancelar una factura con nc pero solo una parte del importe", "procedimiento": "administrativo.aplicar-nota-de-credito-en-orden-de-pago", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "luego de grabar la orden de pago con nc a quién la mando para que la aprueben", "procedimiento": "administrativo.aplicar-nota-de-credito-en-orden-de-pago", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se visualiza el pago generado por la aplicación de una nota de crédito?", "procedimiento": "administrativo.aplicar-nota-de-credito-en-orden-de-pago", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "aplicar nc", "procedimiento": "administrativo.aplicar-nota-de-credito-en-orden-de-pago", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como busco al socio negocio y sus facturas para cruzarlas con la nc", "procedimiento": "administrativo.aplicar-nota-de-credito-en-orden-de-pago", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como imprimo lo q se aplico de la nota de credito en el pago", "procedimiento": "administrativo.aplicar-nota-de-credito-en-orden-de-pago", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "ya aprobaron la orden de pago con nota de crédito, qué hago ahora para que quede aplicada", "procedimiento": "administrativo.aplicar-nota-de-credito-en-orden-de-pago", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿En qué escenario de Administrativo se registra la orden de pago con nota de crédito?", "procedimiento": "administrativo.aplicar-nota-de-credito-en-orden-de-pago", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "dónde aparece la ventana de notas de crédito afectadas", "procedimiento": "administrativo.aplicar-nota-de-credito-en-orden-de-pago", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde está la opción ver notas de crédito en la factura de la orden de pago", "procedimiento": "administrativo.aplicar-nota-de-credito-en-orden-de-pago", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué escenario consulto el pago de la aplicación de la nc una vez aprobada la orden?", "procedimiento": "administrativo.aplicar-nota-de-credito-en-orden-de-pago", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "por donde entro para pagar una factura con nota de credito", "procedimiento": "administrativo.aplicar-nota-de-credito-en-orden-de-pago", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "la orden de pago con nc ya aprobada la ubico en pendientes de pago?", "procedimiento": "administrativo.aplicar-nota-de-credito-en-orden-de-pago", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dónde agregar notas de crédito", "procedimiento": "administrativo.aplicar-nota-de-credito-en-orden-de-pago", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "¿Qué tipo de medio de pago elijo en la orden de pago para usar una nota de crédito?", "procedimiento": "administrativo.aplicar-nota-de-credito-en-orden-de-pago", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "el monto afectado de la nc puede ser mayor al importe total de la nota?", "procedimiento": "administrativo.aplicar-nota-de-credito-en-orden-de-pago", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué debo tener registrado en Facturación antes de aplicar una nc desde Administrativo?", "procedimiento": "administrativo.aplicar-nota-de-credito-en-orden-de-pago", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que tipo selecciono en pendientes de pago para ver las ordenes con nota de credito", "procedimiento": "administrativo.aplicar-nota-de-credito-en-orden-de-pago", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como configuro el monto afectado para usar solo una parte de la nc", "procedimiento": "administrativo.aplicar-nota-de-credito-en-orden-de-pago", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "la nc y la factura las tengo q crear primero en facturacion o en administrativo?", "procedimiento": "administrativo.aplicar-nota-de-credito-en-orden-de-pago", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "en la orden de pago con nc mi usuario no ve la opción aprobar, qué falta", "procedimiento": "administrativo.aplicar-nota-de-credito-en-orden-de-pago", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "la nota de crédito no me sale para agregarla a la factura dentro de la orden de pago", "procedimiento": "administrativo.aplicar-nota-de-credito-en-orden-de-pago", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no encuentro la factura del proveedor al agregar documentos en la orden de pago con nc", "procedimiento": "administrativo.aplicar-nota-de-credito-en-orden-de-pago", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "ya aprobé la orden con nota de crédito pero en facturación la factura no figura pagada", "procedimiento": "administrativo.aplicar-nota-de-credito-en-orden-de-pago", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el aprovador no puede aprobar la orden de pago de la nota de credito", "procedimiento": "administrativo.aplicar-nota-de-credito-en-orden-de-pago", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "solo a algunos usuarios les sale APROBAR en la orden de pago de nc, por qué", "procedimiento": "administrativo.aplicar-nota-de-credito-en-orden-de-pago", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "nc no aparece en la orden de pago", "procedimiento": "administrativo.aplicar-nota-de-credito-en-orden-de-pago", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "¿Cómo apruebo una orden de compra desde la aplicación móvil de Aprobaciones?", "procedimiento": "administrativo.aprobar-solicitudes-en-app-aprobaciones", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como rechazo un pedido desde el cel", "procedimiento": "administrativo.aprobar-solicitudes-en-app-aprobaciones", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "estoy en obra sin laptop y me llegó un contrato para aprobar, cómo lo reviso desde el teléfono", "procedimiento": "administrativo.aprobar-solicitudes-en-app-aprobaciones", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como aprovo una orden de pago en el app del celular", "procedimiento": "administrativo.aprobar-solicitudes-en-app-aprobaciones", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "observar solicitud app", "procedimiento": "administrativo.aprobar-solicitudes-en-app-aprobaciones", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como le dejo un comentario a una solicitud antes de aprobarla desde el celular", "procedimiento": "administrativo.aprobar-solicitudes-en-app-aprobaciones", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Indíqueme cómo filtrar las solicitudes por socio de negocio en la app de aprobaciones.", "procedimiento": "administrativo.aprobar-solicitudes-en-app-aprobaciones", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "soy gerente y tengo valorizaciones pendientes, quiero aprobarlas desde mi iphone", "procedimiento": "administrativo.aprobar-solicitudes-en-app-aprobaciones", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como reviso las ordenes de servisio pendientes en el movil", "procedimiento": "administrativo.aprobar-solicitudes-en-app-aprobaciones", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "que tipos de solicitudes puedo aprobar con la app?", "procedimiento": "administrativo.aprobar-solicitudes-en-app-aprobaciones", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "aprobar en el móvil", "procedimiento": "administrativo.aprobar-solicitudes-en-app-aprobaciones", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "si elijo observar en una solicitud, qué tengo que hacer después", "procedimiento": "administrativo.aprobar-solicitudes-en-app-aprobaciones", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo rechazo una autorización de pago desde S10 Aprobaciones?", "procedimiento": "administrativo.aprobar-solicitudes-en-app-aprobaciones", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "me avisaron que hay un subcontrato esperando mi visto bueno y estoy de viaje, cómo lo apruebo", "procedimiento": "administrativo.aprobar-solicitudes-en-app-aprobaciones", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como ago pa aprobar solicitudes ps desde el telefono", "procedimiento": "administrativo.aprobar-solicitudes-en-app-aprobaciones", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como entro a la app luego de poner mi usuario y clave", "procedimiento": "administrativo.aprobar-solicitudes-en-app-aprobaciones", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "dónde veo en la app las solicitudes que ya rechacé", "procedimiento": "administrativo.aprobar-solicitudes-en-app-aprobaciones", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en qué pestaña de la app están las solicitudes por aprobar", "procedimiento": "administrativo.aprobar-solicitudes-en-app-aprobaciones", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dónde se ven las observadas en la app de aprobaciones", "procedimiento": "administrativo.aprobar-solicitudes-en-app-aprobaciones", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dónde está el botón de filtros en la app", "procedimiento": "administrativo.aprobar-solicitudes-en-app-aprobaciones", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué pestaña quedan las órdenes que ya autoricé desde el móvil?", "procedimiento": "administrativo.aprobar-solicitudes-en-app-aprobaciones", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en que parte de la app elijo la corporación", "procedimiento": "administrativo.aprobar-solicitudes-en-app-aprobaciones", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "pestaña aprobados", "procedimiento": "administrativo.aprobar-solicitudes-en-app-aprobaciones", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "de dónde bajo la app de aprobaciones para android", "procedimiento": "administrativo.aprobar-solicitudes-en-app-aprobaciones", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Con qué usuario ingreso a la aplicación de Aprobaciones? ¿Es mi correo?", "procedimiento": "administrativo.aprobar-solicitudes-en-app-aprobaciones", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "cómo se registran los aprobadores en la nube cuando mando a aprobación desde el S10", "procedimiento": "administrativo.aprobar-solicitudes-en-app-aprobaciones", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "qué correo debe tener mi ficha de socio de negocio para entrar a la app", "procedimiento": "administrativo.aprobar-solicitudes-en-app-aprobaciones", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué es una corporación en la app de aprobaciones? ¿Equivale a una base de datos?", "procedimiento": "administrativo.aprobar-solicitudes-en-app-aprobaciones", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "hay q descargar algo en el celu para aprobar o es desde la web", "procedimiento": "administrativo.aprobar-solicitudes-en-app-aprobaciones", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "abro la app de aprobaciones y no me sale para elegir corporación", "procedimiento": "administrativo.aprobar-solicitudes-en-app-aprobaciones", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "la app entra directo y no muestra el listado de corporaciones", "procedimiento": "administrativo.aprobar-solicitudes-en-app-aprobaciones", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "envié a aprobación desde el S10 y a mi jefe no le aparece nada en la app", "procedimiento": "administrativo.aprobar-solicitudes-en-app-aprobaciones", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no encuentro en el app la solicitud que busco, hay forma de buscarla por número", "procedimiento": "administrativo.aprobar-solicitudes-en-app-aprobaciones", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "en pendientes no veo el tipo de solicitud que quiero aprobar", "procedimiento": "administrativo.aprobar-solicitudes-en-app-aprobaciones", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "pq no me aparece la lista de corporaciones en el cel", "procedimiento": "administrativo.aprobar-solicitudes-en-app-aprobaciones", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "app aprobaciones no entra", "procedimiento": "administrativo.aprobar-solicitudes-en-app-aprobaciones", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "¿Cómo registro la orden de pago de una detracción en Administrativo?", "procedimiento": "administrativo.pagar-detracciones-y-subir-constancias", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como pago la detraccion de una factura de proveedor", "procedimiento": "administrativo.pagar-detracciones-y-subir-constancias", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "me llegó una factura con detracción del 12% y la tengo que pagar por SUNAT, cómo la proceso en s10", "procedimiento": "administrativo.pagar-detracciones-y-subir-constancias", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como pago detraciones con el txt del banco", "procedimiento": "administrativo.pagar-detracciones-y-subir-constancias", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "pago detracción", "procedimiento": "administrativo.pagar-detracciones-y-subir-constancias", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como importo las constancias de detracción que bajé de la sunat", "procedimiento": "administrativo.pagar-detracciones-y-subir-constancias", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Indíqueme cómo generar el archivo de pago electrónico de las detracciones.", "procedimiento": "administrativo.pagar-detracciones-y-subir-constancias", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "ya pagué las detracciones en la web de sunat con mi clave sol, ahora cómo cargo las constancias a las facturas", "procedimiento": "administrativo.pagar-detracciones-y-subir-constancias", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como subo las constansias de detracion a las facturas", "procedimiento": "administrativo.pagar-detracciones-y-subir-constancias", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como hago una autodetracción en una orden de pago", "procedimiento": "administrativo.pagar-detracciones-y-subir-constancias", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "orden de pago tributos", "procedimiento": "administrativo.pagar-detracciones-y-subir-constancias", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "cómo selecciono los documentos con tributo en la orden de pago", "procedimiento": "administrativo.pagar-detracciones-y-subir-constancias", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se paga una detracción por ventanilla del Banco de la Nación?", "procedimiento": "administrativo.pagar-detracciones-y-subir-constancias", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "tengo varias facturas con detracción del mes y quiero pagarlas todas en un solo lote", "procedimiento": "administrativo.pagar-detracciones-y-subir-constancias", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "kiero generar el txt de detracciones pero no c como", "procedimiento": "administrativo.pagar-detracciones-y-subir-constancias", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "luego de aprobar la orden de detracción qué sigue para pagarla", "procedimiento": "administrativo.pagar-detracciones-y-subir-constancias", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "en qué escenario veo el número de lote del pago de detracciones", "procedimiento": "administrativo.pagar-detracciones-y-subir-constancias", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "documento con tributo dónde", "procedimiento": "administrativo.pagar-detracciones-y-subir-constancias", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "dónde importo el txt de constancias de detracción", "procedimiento": "administrativo.pagar-detracciones-y-subir-constancias", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Dónde ubico la orden de pago de tributos ya aprobada para ejecutar el pago electrónico?", "procedimiento": "administrativo.pagar-detracciones-y-subir-constancias", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "dónde compruebo que la factura ya tiene su número de detracción", "procedimiento": "administrativo.pagar-detracciones-y-subir-constancias", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde elijo si es detracion o autodetracion", "procedimiento": "administrativo.pagar-detracciones-y-subir-constancias", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "en qué grupo y escenario creo la orden de pago de detracciones", "procedimiento": "administrativo.pagar-detracciones-y-subir-constancias", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "qué cuenta bancaria debe tener el proveedor para pagarle la detracción", "procedimiento": "administrativo.pagar-detracciones-y-subir-constancias", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Dónde se configura el formato de exportación del banco para generar el TXT?", "procedimiento": "administrativo.pagar-detracciones-y-subir-constancias", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "la detracción tiene que estar independiente en el cronograma de pagos de la factura?", "procedimiento": "administrativo.pagar-detracciones-y-subir-constancias", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "con qué check marco el pago electrónico para sacar el txt de ventanilla", "procedimiento": "administrativo.pagar-detracciones-y-subir-constancias", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q tipo de cuenta bancaria creo al socio de negocio para las detracciones", "procedimiento": "administrativo.pagar-detracciones-y-subir-constancias", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "qué debo tener en la factura para poder pagar solo la detracción", "procedimiento": "administrativo.pagar-detracciones-y-subir-constancias", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "sale una observación de socio de negocio sin cuenta bancaria al pagar la detracción", "procedimiento": "administrativo.pagar-detracciones-y-subir-constancias", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "me advierte que hay proyectos sin correo electrónico, es obligatorio corregirlo?", "procedimiento": "administrativo.pagar-detracciones-y-subir-constancias", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "cambié algo después de pagar y el txt de detracción quedó desactualizado", "procedimiento": "administrativo.pagar-detracciones-y-subir-constancias", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "al dar clic derecho en el detalle de la orden no veo la opción de documento con tributo", "procedimiento": "administrativo.pagar-detracciones-y-subir-constancias", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "importé las constancias y la factura no muestra el número de detracción, qué reviso", "procedimiento": "administrativo.pagar-detracciones-y-subir-constancias", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "en el cronograma de pagos solo veo el total y no la detracción por separado", "procedimiento": "administrativo.pagar-detracciones-y-subir-constancias", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "me sale q el proveedor no tiene cuenta de detracion", "procedimiento": "administrativo.pagar-detracciones-y-subir-constancias", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "¿Cómo registro la transferencia a una cuenta bancaria del efectivo cobrado?", "procedimiento": "administrativo.transferir-caja-a-cuenta-bancaria", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como deposito al banco lo que cobré en caja", "procedimiento": "administrativo.transferir-caja-a-cuenta-bancaria", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cobré tres facturas en efectivo y un cheque, ahora quiero mandar todo al banco, qué hago en s10", "procedimiento": "administrativo.transferir-caja-a-cuenta-bancaria", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como transfiero los cheques de la caja a la cuenta del vanco", "procedimiento": "administrativo.transferir-caja-a-cuenta-bancaria", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "caja a banco", "procedimiento": "administrativo.transferir-caja-a-cuenta-bancaria", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como paso a la cuenta bancaria los cheques que tengo en caja", "procedimiento": "administrativo.transferir-caja-a-cuenta-bancaria", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Indíqueme los pasos para transferir el dinero del diario de caja a una cuenta bancaria.", "procedimiento": "administrativo.transferir-caja-a-cuenta-bancaria", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "ya cerré las cobranzas del día y tengo plata en la caja, necesito depositarla en el bcp", "procedimiento": "administrativo.transferir-caja-a-cuenta-bancaria", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como deposito en el banco el efectibo q cobre", "procedimiento": "administrativo.transferir-caja-a-cuenta-bancaria", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "cómo elijo a qué cuenta bancaria va lo transferido", "procedimiento": "administrativo.transferir-caja-a-cuenta-bancaria", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "transferir a cuenta del banco", "procedimiento": "administrativo.transferir-caja-a-cuenta-bancaria", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "el procedimiento para transferir efectivo y para cheques es el mismo?", "procedimiento": "administrativo.transferir-caja-a-cuenta-bancaria", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo reviso el total a transferir antes de aceptar la transferencia a la cuenta bancaria?", "procedimiento": "administrativo.transferir-caja-a-cuenta-bancaria", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "me piden sustentar el depósito de la cobranza del cliente, cómo lo registro en el diario de caja", "procedimiento": "administrativo.transferir-caja-a-cuenta-bancaria", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "kiero registrar el deposito de caja a la cuenta", "procedimiento": "administrativo.transferir-caja-a-cuenta-bancaria", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como mando la cobranza ya registrada al banco", "procedimiento": "administrativo.transferir-caja-a-cuenta-bancaria", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "dónde está la opción transferencia a cuenta bancaria en el diario de caja", "procedimiento": "administrativo.transferir-caja-a-cuenta-bancaria", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "con clic derecho en qué parte del diario aparece la transferencia", "procedimiento": "administrativo.transferir-caja-a-cuenta-bancaria", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué escenario hago la transferencia de la caja al banco?", "procedimiento": "administrativo.transferir-caja-a-cuenta-bancaria", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "dónde veo el recuadro con el documento que cobré con cheque para transferir", "procedimiento": "administrativo.transferir-caja-a-cuenta-bancaria", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "por donde llego a la ventana transferencia", "procedimiento": "administrativo.transferir-caja-a-cuenta-bancaria", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dónde elijo la cuenta bancaria destino de lo que cobré", "procedimiento": "administrativo.transferir-caja-a-cuenta-bancaria", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "transferencia diario de caja dónde", "procedimiento": "administrativo.transferir-caja-a-cuenta-bancaria", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "qué necesito tener en la caja para poder transferir al banco", "procedimiento": "administrativo.transferir-caja-a-cuenta-bancaria", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿La caja debe contar con efectivo o cheques para realizar la transferencia?", "procedimiento": "administrativo.transferir-caja-a-cuenta-bancaria", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "puedo transferir cheques y efectivo con la misma opción?", "procedimiento": "administrativo.transferir-caja-a-cuenta-bancaria", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "qué cuenta bancaria selecciono de destino en la ventana transferencia", "procedimiento": "administrativo.transferir-caja-a-cuenta-bancaria", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "hay que tener cobranzas registradas antes de transferir a una cuenta bancaria", "procedimiento": "administrativo.transferir-caja-a-cuenta-bancaria", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "de q diario de caja tengo q partir pa transferir", "procedimiento": "administrativo.transferir-caja-a-cuenta-bancaria", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "no me deja transferir a cuenta bancaria porque la caja está en cero", "procedimiento": "administrativo.transferir-caja-a-cuenta-bancaria", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "la opción transferencia a cuenta bancaria no me sale en el clic derecho del diario", "procedimiento": "administrativo.transferir-caja-a-cuenta-bancaria", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "hice la cobranza pero no tengo nada para transferir al banco", "procedimiento": "administrativo.transferir-caja-a-cuenta-bancaria", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "al abrir la transferencia no veo el cheque que cobré", "procedimiento": "administrativo.transferir-caja-a-cuenta-bancaria", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el total a transferir sale distinto a lo que cobré en la caja", "procedimiento": "administrativo.transferir-caja-a-cuenta-bancaria", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no encuentro la cuenta bancaria en la ventana de transferencia", "procedimiento": "administrativo.transferir-caja-a-cuenta-bancaria", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "no puedo depositar al banco", "procedimiento": "administrativo.transferir-caja-a-cuenta-bancaria", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "¿Cómo ajusto una orden de compra que el proveedor atendió parcialmente?", "procedimiento": "compras.ajustar-orden-de-compra-parcialmente-atendida", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como cierro el saldo de una oc que el proveedor ya no va a entregar", "procedimiento": "compras.ajustar-orden-de-compra-parcialmente-atendida", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "pedí 100 bolsas de cemento, llegaron 70 y el proveedor dice que no hay más, cómo dejo la orden de compra igual a su factura", "procedimiento": "compras.ajustar-orden-de-compra-parcialmente-atendida", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como devuelvo la cantidad q falta de una orden de conpra", "procedimiento": "compras.ajustar-orden-de-compra-parcialmente-atendida", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "cerrar saldo oc", "procedimiento": "compras.ajustar-orden-de-compra-parcialmente-atendida", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como hago que la oc quede igual a lo que ya ingresó al almacén", "procedimiento": "compras.ajustar-orden-de-compra-parcialmente-atendida", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Indíqueme cómo dar por finalizadas las entregas de un recurso en una orden de compra.", "procedimiento": "compras.ajustar-orden-de-compra-parcialmente-atendida", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el proveedor facturó solo lo que entregó y la oc sigue con saldo, cómo la regularizo", "procedimiento": "compras.ajustar-orden-de-compra-parcialmente-atendida", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "kiero cerrar una oc incompleta", "procedimiento": "compras.ajustar-orden-de-compra-parcialmente-atendida", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "para un solo recurso que no se completa, qué opción uso en la orden", "procedimiento": "compras.ajustar-orden-de-compra-parcialmente-atendida", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "oc parcialmente atendida", "procedimiento": "compras.ajustar-orden-de-compra-parcialmente-atendida", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como veo los recursos que faltan ingresar antes de devolver la cantidad", "procedimiento": "compras.ajustar-orden-de-compra-parcialmente-atendida", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se modifica automáticamente una orden de compra para que coincida con la factura del proveedor?", "procedimiento": "compras.ajustar-orden-de-compra-parcialmente-atendida", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "tengo una orden de compra con ingreso parcial y ya no van a mandar el resto", "procedimiento": "compras.ajustar-orden-de-compra-parcialmente-atendida", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como cuadro la orden de compra con la factura si llego menos", "procedimiento": "compras.ajustar-orden-de-compra-parcialmente-atendida", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como saco de la orden de compra lo que no llegó", "procedimiento": "compras.ajustar-orden-de-compra-parcialmente-atendida", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "en qué escenario hago devolver cantidad", "procedimiento": "compras.ajustar-orden-de-compra-parcialmente-atendida", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dónde está la opción devolver cantidad en la orden de compra", "procedimiento": "compras.ajustar-orden-de-compra-parcialmente-atendida", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "con clic derecho sobre qué aparece devolver cantidad", "procedimiento": "compras.ajustar-orden-de-compra-parcialmente-atendida", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dónde veo los recursos pendientes de ingresar de una oc", "procedimiento": "compras.ajustar-orden-de-compra-parcialmente-atendida", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué estado busco la orden de compra que deseo ajustar?", "procedimiento": "compras.ajustar-orden-de-compra-parcialmente-atendida", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde elijo el proyecto para ver las ordenes parcialmente en almacen", "procedimiento": "compras.ajustar-orden-de-compra-parcialmente-atendida", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "devolver cantidad dónde", "procedimiento": "compras.ajustar-orden-de-compra-parcialmente-atendida", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "¿En qué estado debe estar la orden de compra para poder ajustarla?", "procedimiento": "compras.ajustar-orden-de-compra-parcialmente-atendida", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "la orden tiene que estar aprobada antes de devolver cantidad?", "procedimiento": "compras.ajustar-orden-de-compra-parcialmente-atendida", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "qué ingreso debe haberse hecho en almacén para poder cerrar el saldo", "procedimiento": "compras.ajustar-orden-de-compra-parcialmente-atendida", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "se necesita un ingreso por orden de compra previo para ajustar la oc", "procedimiento": "compras.ajustar-orden-de-compra-parcialmente-atendida", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "puedo ajustar una oc que todavía no tiene ningún ingreso?", "procedimiento": "compras.ajustar-orden-de-compra-parcialmente-atendida", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q estado muestra la oc cuando tiene ingresos parciales", "procedimiento": "compras.ajustar-orden-de-compra-parcialmente-atendida", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "la oc no me aparece para ajustarla", "procedimiento": "compras.ajustar-orden-de-compra-parcialmente-atendida", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me sale la opción devolver cantidad en el recurso", "procedimiento": "compras.ajustar-orden-de-compra-parcialmente-atendida", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "mi orden de compra está solo aprobada, no parcialmente en almacén, y no puedo ajustarla", "procedimiento": "compras.ajustar-orden-de-compra-parcialmente-atendida", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el proveedor no va a completar y la oc sigue mostrando pendiente", "procedimiento": "compras.ajustar-orden-de-compra-parcialmente-atendida", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "la factura del proveedor no cuadra con la orden de compra porque faltó mercadería", "procedimiento": "compras.ajustar-orden-de-compra-parcialmente-atendida", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no encuentro la oc parcialmente atendida en la lista", "procedimiento": "compras.ajustar-orden-de-compra-parcialmente-atendida", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "devolver cantidad no sale", "procedimiento": "compras.ajustar-orden-de-compra-parcialmente-atendida", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "¿Cómo clasifico los materiales de un proyecto con el análisis ABC?", "procedimiento": "compras.clasificar-materiales-abc", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como califico los materiales con a, b y c", "procedimiento": "compras.clasificar-materiales-abc", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "me piden marcar los insumos que más pesan en el presupuesto para priorizar las compras, cómo hago el abc", "procedimiento": "compras.clasificar-materiales-abc", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como ago la clasificasion abc de los recursos", "procedimiento": "compras.clasificar-materiales-abc", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "abc de materiales", "procedimiento": "compras.clasificar-materiales-abc", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como marco un bloque de materiales como tipo A", "procedimiento": "compras.clasificar-materiales-abc", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Indíqueme cómo calificar con la letra B a los recursos de incidencia mediana.", "procedimiento": "compras.clasificar-materiales-abc", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "quiero que el sistema ordene los materiales de mayor a menor parcial para clasificarlos", "procedimiento": "compras.clasificar-materiales-abc", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como clasifico x pareto los materiales", "procedimiento": "compras.clasificar-materiales-abc", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como califico con C a los de menor incidencia", "procedimiento": "compras.clasificar-materiales-abc", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "clasificar por monto presupuestado", "procedimiento": "compras.clasificar-materiales-abc", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "para qué sirve calificar los recursos con a, b o c antes de pedirlos", "procedimiento": "compras.clasificar-materiales-abc", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se clasifican los recursos según su monto presupuestado?", "procedimiento": "compras.clasificar-materiales-abc", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "tengo 300 materiales en el proyecto y solo quiero pedir primero los más importantes", "procedimiento": "compras.clasificar-materiales-abc", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "kiero marcar los materiales caros como a", "procedimiento": "compras.clasificar-materiales-abc", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "después de clasificar, cómo filtro los recursos para hacer el pedido", "procedimiento": "compras.clasificar-materiales-abc", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "en qué escenario clasifico los materiales abc", "procedimiento": "compras.clasificar-materiales-abc", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dónde está techo de materiales", "procedimiento": "compras.clasificar-materiales-abc", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dónde veo los materiales presupuestados del proyecto para calificarlos", "procedimiento": "compras.clasificar-materiales-abc", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "con clic derecho dónde sale la opción ABC", "procedimiento": "compras.clasificar-materiales-abc", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Dónde se encuentra la opción Clasificar por Monto Presupuestado?", "procedimiento": "compras.clasificar-materiales-abc", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "por donde entro para el análisis abc en compras", "procedimiento": "compras.clasificar-materiales-abc", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "techo de materiales", "procedimiento": "compras.clasificar-materiales-abc", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "qué proyecto debo elegir antes de clasificar los materiales", "procedimiento": "compras.clasificar-materiales-abc", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "con qué criterio asigno A, B y C a los recursos", "procedimiento": "compras.clasificar-materiales-abc", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Puedo clasificar por cantidad o por parciales? ¿Cómo elijo?", "procedimiento": "compras.clasificar-materiales-abc", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "se puede usar la regla de pareto para el abc en s10", "procedimiento": "compras.clasificar-materiales-abc", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como cambio la letra abc de un recurso que ya clasifiqué", "procedimiento": "compras.clasificar-materiales-abc", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "el abc se marca x bloque o uno por uno", "procedimiento": "compras.clasificar-materiales-abc", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "no me sale la opción ABC al dar clic derecho sobre los materiales", "procedimiento": "compras.clasificar-materiales-abc", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no veo los materiales presupuestados para clasificar", "procedimiento": "compras.clasificar-materiales-abc", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "seleccioné los recursos pero no me deja calificarlos con letra", "procedimiento": "compras.clasificar-materiales-abc", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "quiero ordenar por parciales y no encuentro la opción", "procedimiento": "compras.clasificar-materiales-abc", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "la clasificación abc no se guardó en los recursos", "procedimiento": "compras.clasificar-materiales-abc", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no encuentro donde clasificar abc en el modulo compras", "procedimiento": "compras.clasificar-materiales-abc", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "techo de materiales vacío", "procedimiento": "compras.clasificar-materiales-abc", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "¿Cómo elaboro el cuadro comparativo para elegir al proveedor?", "procedimiento": "compras.elaborar-cuadro-comparativo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como comparo las cotizaciones de varios proveedores", "procedimiento": "compras.elaborar-cuadro-comparativo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "me respondieron cuatro ferreterías y tengo que decidir a quién comprarle cada material", "procedimiento": "compras.elaborar-cuadro-comparativo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como ago el cuadro comparativo de los probedores", "procedimiento": "compras.elaborar-cuadro-comparativo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "comparar proveedores", "procedimiento": "compras.elaborar-cuadro-comparativo", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como elijo al proveedor por cada recurso", "procedimiento": "compras.elaborar-cuadro-comparativo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Indíqueme cómo imprimir el reporte del cuadro comparativo.", "procedimiento": "compras.elaborar-cuadro-comparativo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "mi gerente quiere ver lado a lado los precios, plazos y formas de pago de los proveedores", "procedimiento": "compras.elaborar-cuadro-comparativo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como elijo al provedor mas varato", "procedimiento": "compras.elaborar-cuadro-comparativo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como veo los últimos precios del proveedor desde el cuadro", "procedimiento": "compras.elaborar-cuadro-comparativo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "proveedor por recurso", "procedimiento": "compras.elaborar-cuadro-comparativo", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como analizo descuento y tiempo de entrega de cada proveedor por recurso", "procedimiento": "compras.elaborar-cuadro-comparativo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se agrega la cantidad faltante a un proveedor en el cuadro comparativo?", "procedimiento": "compras.elaborar-cuadro-comparativo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "un proveedor cotizó menos cantidad de la que pedimos, cómo completo con otro en la comparación", "procedimiento": "compras.elaborar-cuadro-comparativo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "kiero comparar precios de cotizaciones para decidir", "procedimiento": "compras.elaborar-cuadro-comparativo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como saco el reporte para sustentar la elección del proveedor", "procedimiento": "compras.elaborar-cuadro-comparativo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "en qué escenario está el cuadro comparativo", "procedimiento": "compras.elaborar-cuadro-comparativo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dónde elijo la cotización que voy a comparar", "procedimiento": "compras.elaborar-cuadro-comparativo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "con clic derecho dónde sale últimos precios en general", "procedimiento": "compras.elaborar-cuadro-comparativo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Dónde se imprime el reporte del comparativo?", "procedimiento": "compras.elaborar-cuadro-comparativo", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "por dónde se llega a elegir el proveedor ganador", "procedimiento": "compras.elaborar-cuadro-comparativo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dónde veo la forma de pago de cada proveedor cotizado", "procedimiento": "compras.elaborar-cuadro-comparativo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "comparativo de precios dónde", "procedimiento": "compras.elaborar-cuadro-comparativo", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "qué debe estar registrado antes de usar el cuadro comparativo", "procedimiento": "compras.elaborar-cuadro-comparativo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Las cotizaciones recibidas deben cargarse manualmente antes de compararlas?", "procedimiento": "compras.elaborar-cuadro-comparativo", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "se elige un solo proveedor para toda la cotización o por recurso", "procedimiento": "compras.elaborar-cuadro-comparativo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "qué condiciones del proveedor se comparan, pago, descuento, plazo", "procedimiento": "compras.elaborar-cuadro-comparativo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "cómo cambio el proveedor que elegí en un recurso", "procedimiento": "compras.elaborar-cuadro-comparativo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "el cuadro toma los precios de la recepcion de cotizaciones?", "procedimiento": "compras.elaborar-cuadro-comparativo", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "mi cuadro comparativo sale vacío", "procedimiento": "compras.elaborar-cuadro-comparativo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no aparecen los proveedores al elegir la cotización en el cuadro comparativo", "procedimiento": "compras.elaborar-cuadro-comparativo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no puedo seleccionar al proveedor de todos los recursos de un solo clic", "procedimiento": "compras.elaborar-cuadro-comparativo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "me falta la oferta de un proveedor en el comparativo", "procedimiento": "compras.elaborar-cuadro-comparativo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no encuentro el reporte para imprimir el cuadro", "procedimiento": "compras.elaborar-cuadro-comparativo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "la cotizacion no me aparece en el cuadro comparativo", "procedimiento": "compras.elaborar-cuadro-comparativo", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "no deja elegir proveedor", "procedimiento": "compras.elaborar-cuadro-comparativo", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "¿Cuál es la secuencia del módulo de Compras para llegar a la orden de compra?", "procedimiento": "compras.flujo-para-generar-orden-de-compra-o-servicio", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "en qué orden hago pedido, aprobación y orden de compra", "procedimiento": "compras.flujo-para-generar-orden-de-compra-o-servicio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "soy nuevo en logística de la obra y no sé por dónde empezar para comprar materiales en s10", "procedimiento": "compras.flujo-para-generar-orden-de-compra-o-servicio", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "cuales son los pasos pa generar una orden de conpra o de servisio", "procedimiento": "compras.flujo-para-generar-orden-de-compra-o-servicio", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "proceso de compras", "procedimiento": "compras.flujo-para-generar-orden-de-compra-o-servicio", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "de cuántas maneras puedo generar una orden de compra", "procedimiento": "compras.flujo-para-generar-orden-de-compra-o-servicio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Es obligatorio cotizar antes de generar una orden de compra?", "procedimiento": "compras.flujo-para-generar-orden-de-compra-o-servicio", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "si el pedido ya está aprobado, qué otros caminos tengo para sacar la orden de compra", "procedimiento": "compras.flujo-para-generar-orden-de-compra-o-servicio", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "q sigue despues de aprobar el pedido en compras", "procedimiento": "compras.flujo-para-generar-orden-de-compra-o-servicio", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "cómo es el camino cuando quiero cotizar antes de comprar", "procedimiento": "compras.flujo-para-generar-orden-de-compra-o-servicio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "pasos orden de servicio", "procedimiento": "compras.flujo-para-generar-orden-de-compra-o-servicio", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "explícame el proceso completo desde el pedido hasta aprobar la orden de compra", "procedimiento": "compras.flujo-para-generar-orden-de-compra-o-servicio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Indique la secuencia de escenarios para crear órdenes de servicio y de compra.", "procedimiento": "compras.flujo-para-generar-orden-de-compra-o-servicio", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "quiero que me expliquen el proceso de compras de inicio a fin para capacitar al residente", "procedimiento": "compras.flujo-para-generar-orden-de-compra-o-servicio", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "ke tengo q hacer primero en compras, pedido o cotizacion", "procedimiento": "compras.flujo-para-generar-orden-de-compra-o-servicio", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "la oc se puede sacar directo del pedido o siempre pasa por cotización", "procedimiento": "compras.flujo-para-generar-orden-de-compra-o-servicio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "qué escenarios del módulo de compras se usan en el flujo y en qué orden", "procedimiento": "compras.flujo-para-generar-orden-de-compra-o-servicio", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dónde empiezo en compras y pedidos, en pedido o en cotizaciones", "procedimiento": "compras.flujo-para-generar-orden-de-compra-o-servicio", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "desde qué menú se aprueba la orden de compra al final del flujo", "procedimiento": "compras.flujo-para-generar-orden-de-compra-o-servicio", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Qué pantallas intervienen entre el pedido y la orden de compra?", "procedimiento": "compras.flujo-para-generar-orden-de-compra-o-servicio", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "dónde se genera el pedido al comienzo del proceso", "procedimiento": "compras.flujo-para-generar-orden-de-compra-o-servicio", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en qué parte del flujo entra el cuadro comparativo", "procedimiento": "compras.flujo-para-generar-orden-de-compra-o-servicio", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "mapa del proceso de compras", "procedimiento": "compras.flujo-para-generar-orden-de-compra-o-servicio", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "¿Cuáles son las tres formas de crear una orden de compra o de servicio?", "procedimiento": "compras.flujo-para-generar-orden-de-compra-o-servicio", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "la segunda forma de generar la orden es desde órdenes de compra, no?", "procedimiento": "compras.flujo-para-generar-orden-de-compra-o-servicio", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "cuándo conviene usar la tercera forma, a partir de cotización", "procedimiento": "compras.flujo-para-generar-orden-de-compra-o-servicio", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "qué diferencia hay entre generar la orden directo y hacerlo vía cotización", "procedimiento": "compras.flujo-para-generar-orden-de-compra-o-servicio", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "el flujo cambia si es orden de servicio en vez de compra?", "procedimiento": "compras.flujo-para-generar-orden-de-compra-o-servicio", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "la aprobacion de la oc va al final en todas las formas?", "procedimiento": "compras.flujo-para-generar-orden-de-compra-o-servicio", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "no puedo generar ningún pedido, no sé si me falta algún paso previo", "procedimiento": "compras.flujo-para-generar-orden-de-compra-o-servicio", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "me perdí en el proceso de compras, ya aprobé el pedido y no sé qué paso sigue", "procedimiento": "compras.flujo-para-generar-orden-de-compra-o-servicio", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "tengo el pedido aprobado pero no sé por cuál de las formas seguir", "procedimiento": "compras.flujo-para-generar-orden-de-compra-o-servicio", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no tengo claro qué viene después de la cotización en el proceso", "procedimiento": "compras.flujo-para-generar-orden-de-compra-o-servicio", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "se me cruzaron los pasos de compras, necesito el orden correcto para no equivocarme", "procedimiento": "compras.flujo-para-generar-orden-de-compra-o-servicio", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "me saltaron el cuadro comparativo, es un paso obligatorio?", "procedimiento": "compras.flujo-para-generar-orden-de-compra-o-servicio", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "no sé qué paso sigue en compras", "procedimiento": "compras.flujo-para-generar-orden-de-compra-o-servicio", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "¿Cómo genero la orden de servicio a partir de un pedido aprobado?", "procedimiento": "compras.generar-orden-de-servicio", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como saco la orden de servicio del pedido aprobado de equipos", "procedimiento": "compras.generar-orden-de-servicio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "alquilamos un volquete y una excavadora de distintos dueños, cómo saco las órdenes de servicio", "procedimiento": "compras.generar-orden-de-servicio", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como ago la orden de serbicio en el s10", "procedimiento": "compras.generar-orden-de-servicio", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "sacar la os", "procedimiento": "compras.generar-orden-de-servicio", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como registro los precios que ofertó el proveedor en la orden de servicio", "procedimiento": "compras.generar-orden-de-servicio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Indíqueme cómo registrar el descuento y la fecha de inicio del servicio en la orden.", "procedimiento": "compras.generar-orden-de-servicio", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el dueño del equipo me dio 5% de descuento, dónde lo pongo en la os", "procedimiento": "compras.generar-orden-de-servicio", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como mando a aprobar la os despues de grabar", "procedimiento": "compras.generar-orden-de-servicio", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "cómo elijo al proveedor dueño del equipo en la orden de servicio", "procedimiento": "compras.generar-orden-de-servicio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "os del pedido aprobado", "procedimiento": "compras.generar-orden-de-servicio", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como pongo el contacto, la forma de pago y la moneda de la orden de servicio", "procedimiento": "compras.generar-orden-de-servicio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se aprueba una orden de servicio?", "procedimiento": "compras.generar-orden-de-servicio", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "ya aprobaron el pedido de alquiler de equipos y ahora me toca generar la orden", "procedimiento": "compras.generar-orden-de-servicio", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "kiero cambiar la cantidad de horas de la orden de servisio", "procedimiento": "compras.generar-orden-de-servicio", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como ingreso la fecha tope de vigencia de los precios del proveedor", "procedimiento": "compras.generar-orden-de-servicio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "dónde genero la orden de servicio, en pedidos de compra?", "procedimiento": "compras.generar-orden-de-servicio", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "con clic derecho sobre qué aparece generar orden de servicio", "procedimiento": "compras.generar-orden-de-servicio", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en qué pestaña pongo los precios del proveedor en la os", "procedimiento": "compras.generar-orden-de-servicio", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dónde edito la cantidad total de la orden de servicio", "procedimiento": "compras.generar-orden-de-servicio", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué escenario el aprobador aprueba las órdenes de servicio?", "procedimiento": "compras.generar-orden-de-servicio", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "dónde elijo la empresa a la que se facturará el servicio", "procedimiento": "compras.generar-orden-de-servicio", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "órdenes de servicio dónde se aprueban", "procedimiento": "compras.generar-orden-de-servicio", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "qué debe estar aprobado para poder generar la orden de servicio", "procedimiento": "compras.generar-orden-de-servicio", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "la os se genera una por cada dueño de equipo, cómo funciona eso", "procedimiento": "compras.generar-orden-de-servicio", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Para qué sirve el campo tipo en la orden de servicio?", "procedimiento": "compras.generar-orden-de-servicio", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "el precio del presupuesto en la os es solo informativo?", "procedimiento": "compras.generar-orden-de-servicio", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "de dónde toma el lugar del servicio la orden", "procedimiento": "compras.generar-orden-de-servicio", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como pongo un descuento fijo pa redondear el total de la os", "procedimiento": "compras.generar-orden-de-servicio", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "generé la orden de servicio y no sé cómo enviarla a aprobar", "procedimiento": "compras.generar-orden-de-servicio", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me sale la opción generar orden de servicio al dar clic derecho al pedido", "procedimiento": "compras.generar-orden-de-servicio", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el pedido todavía no está aprobado y no puedo sacar la os", "procedimiento": "compras.generar-orden-de-servicio", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me deja elegir proveedor en la orden de servicio", "procedimiento": "compras.generar-orden-de-servicio", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no puedo cambiar la cantidad de horas en la orden de servicio", "procedimiento": "compras.generar-orden-de-servicio", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "mi aprobador no ve la orden de servicio para aprobarla", "procedimiento": "compras.generar-orden-de-servicio", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "en la os sale el precio del presupuesto pero no el del proveedor", "procedimiento": "compras.generar-orden-de-servicio", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "¿Cómo registro una cotización con los recursos de los pedidos de compra?", "procedimiento": "compras.registrar-cotizacion", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como armo una cotización para mandarla a varios proveedores", "procedimiento": "compras.registrar-cotizacion", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "tengo pedidos aprobados de cemento y fierro y quiero pedir precios a las ferreterías", "procedimiento": "compras.registrar-cotizacion", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como ago una cotisacion en compras", "procedimiento": "compras.registrar-cotizacion", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "armar cotizacion nueva", "procedimiento": "compras.registrar-cotizacion", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como asigno los proveedores a la cotización", "procedimiento": "compras.registrar-cotizacion", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Indíqueme cómo enviar la cotización al proveedor en formato PDF.", "procedimiento": "compras.registrar-cotizacion", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "quiero mandarle al ferretero un excel con lo que necesito cotizar", "procedimiento": "compras.registrar-cotizacion", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como mando la cotizacion al probedor en excel", "procedimiento": "compras.registrar-cotizacion", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como agrego solo a los proveedores calificados como ferretería", "procedimiento": "compras.registrar-cotizacion", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "pedir cotizaciones", "procedimiento": "compras.registrar-cotizacion", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "cómo selecciono los recursos que van a la cotización", "procedimiento": "compras.registrar-cotizacion", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Dónde se registran las especificaciones que el proveedor debe cumplir?", "procedimiento": "compras.registrar-cotizacion", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "quiero cotizar juntos los pedidos de varios proyectos del centro de compra", "procedimiento": "compras.registrar-cotizacion", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "kiero cotizar los recursos del pedido antes de la orden de compra", "procedimiento": "compras.registrar-cotizacion", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como elijo la carpeta donde se guarda el archivo que le mando al proveedor", "procedimiento": "compras.registrar-cotizacion", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "en qué escenario se arman las cotizaciones", "procedimiento": "compras.registrar-cotizacion", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dónde se asignan los proveedores a la cotización", "procedimiento": "compras.registrar-cotizacion", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "con clic derecho dónde sale enviar en excel al proveedor", "procedimiento": "compras.registrar-cotizacion", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dónde pongo las preguntas que debe responder el proveedor", "procedimiento": "compras.registrar-cotizacion", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dónde aparece adicionar por filtro", "procedimiento": "compras.registrar-cotizacion", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Por qué menú asigno una etiqueta a un proveedor del catálogo de socio de negocio?", "procedimiento": "compras.registrar-cotizacion", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "cotizaciones dónde", "procedimiento": "compras.registrar-cotizacion", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "qué recursos pueden entrar a una cotización", "procedimiento": "compras.registrar-cotizacion", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "puedo listar todos los recursos de los pedidos del centro de compra o solo los del proyecto elegido", "procedimiento": "compras.registrar-cotizacion", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "cómo le pongo la etiqueta ferretería a un proveedor para poder filtrarlo", "procedimiento": "compras.registrar-cotizacion", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué opción elijo al adicionar una cotización que servirá para una orden de compra?", "procedimiento": "compras.registrar-cotizacion", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "cómo armo la cotización pensando en lo que vende cada proveedor", "procedimiento": "compras.registrar-cotizacion", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "pa q sirve el campo especificaciones de la cotizacion", "procedimiento": "compras.registrar-cotizacion", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "no me aparece el proveedor al filtrar por ferretería", "procedimiento": "compras.registrar-cotizacion", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "un recurso del pedido no sale en la lista para cotizar", "procedimiento": "compras.registrar-cotizacion", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "los recursos que ya tienen orden de compra no aparecen en la cotización", "procedimiento": "compras.registrar-cotizacion", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "al enviar la cotización no sé dónde queda el archivo", "procedimiento": "compras.registrar-cotizacion", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el filtro de proveedores por etiqueta sale vacío", "procedimiento": "compras.registrar-cotizacion", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el pedido ya esta en una orden de compra y no lo puedo cotizar", "procedimiento": "compras.registrar-cotizacion", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "cotización sin recursos", "procedimiento": "compras.registrar-cotizacion", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "¿Cómo registro un pedido de servicios o de alquiler de equipos?", "procedimiento": "compras.registrar-pedido-para-orden-de-servicio", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como pido horas máquina de un equipo desde el almacén de servicios", "procedimiento": "compras.registrar-pedido-para-orden-de-servicio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "necesito alquilar una retroexcavadora por 80 horas para la obra, cómo hago el pedido", "procedimiento": "compras.registrar-pedido-para-orden-de-servicio", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como ago un pedido pa orden de serbicio", "procedimiento": "compras.registrar-pedido-para-orden-de-servicio", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "pedido de servicios", "procedimiento": "compras.registrar-pedido-para-orden-de-servicio", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como pongo la prioridad normal o alta al pedido de servicios", "procedimiento": "compras.registrar-pedido-para-orden-de-servicio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Indíqueme cómo asignar la fecha de entrega a los equipos del pedido.", "procedimiento": "compras.registrar-pedido-para-orden-de-servicio", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el residente quiere pedir el volquete y la cisterna, desde dónde lo pide", "procedimiento": "compras.registrar-pedido-para-orden-de-servicio", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como elijo los equipos del pedido de alquiler", "procedimiento": "compras.registrar-pedido-para-orden-de-servicio", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como pongo las horas de cada equipo en el pedido", "procedimiento": "compras.registrar-pedido-para-orden-de-servicio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "alquiler de maquinaria pedido", "procedimiento": "compras.registrar-pedido-para-orden-de-servicio", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como indico qué centro de compra va a generar la orden de servicio", "procedimiento": "compras.registrar-pedido-para-orden-de-servicio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo envío a aprobación el pedido de servicios?", "procedimiento": "compras.registrar-pedido-para-orden-de-servicio", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "quiero cotizar el alquiler de equipos antes de la orden de servicio, cómo registro el pedido", "procedimiento": "compras.registrar-pedido-para-orden-de-servicio", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "kiero poner la fecha de entrega a todos los equipos del pedido", "procedimiento": "compras.registrar-pedido-para-orden-de-servicio", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como registro el número alterno y la orden de producción en el pedido de servicios", "procedimiento": "compras.registrar-pedido-para-orden-de-servicio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "desde qué almacén se hace el pedido de un servicio", "procedimiento": "compras.registrar-pedido-para-orden-de-servicio", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dónde elijo equipos en el árbol del pedido", "procedimiento": "compras.registrar-pedido-para-orden-de-servicio", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dónde se ve la cantidad tope presupuestada por pedir de cada equipo", "procedimiento": "compras.registrar-pedido-para-orden-de-servicio", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué escenario registro el pedido para una orden de servicio?", "procedimiento": "compras.registrar-pedido-para-orden-de-servicio", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "dónde asigno la fecha de entrega a todos los recursos", "procedimiento": "compras.registrar-pedido-para-orden-de-servicio", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dónde sale la columna prioridad en pedidos", "procedimiento": "compras.registrar-pedido-para-orden-de-servicio", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "almacén de servicios dónde", "procedimiento": "compras.registrar-pedido-para-orden-de-servicio", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "cómo debe estar configurado el almacén de servicios para pedir equipos", "procedimiento": "compras.registrar-pedido-para-orden-de-servicio", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué tipos de recurso maneja el almacén de servicios?", "procedimiento": "compras.registrar-pedido-para-orden-de-servicio", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "qué es la prioridad del pedido y para qué sirve", "procedimiento": "compras.registrar-pedido-para-orden-de-servicio", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "qué centro de compra pongo en el pedido de servicios", "procedimiento": "compras.registrar-pedido-para-orden-de-servicio", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "los códigos 03 y 04 del almacén de servicios para qué son", "procedimiento": "compras.registrar-pedido-para-orden-de-servicio", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "hay q configurar algo en almacenes antes de pedir servicios", "procedimiento": "compras.registrar-pedido-para-orden-de-servicio", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "al elegir equipos en el árbol del pedido veo la lista vacía", "procedimiento": "compras.registrar-pedido-para-orden-de-servicio", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el equipo que busco no está disponible para el pedido", "procedimiento": "compras.registrar-pedido-para-orden-de-servicio", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "la celda contigua a las horas marca una cantidad tope, qué significa", "procedimiento": "compras.registrar-pedido-para-orden-de-servicio", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el almacén de servicios no me deja pedir materiales, solo equipos", "procedimiento": "compras.registrar-pedido-para-orden-de-servicio", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no encuentro el almacén de servicios en el árbol del proyecto", "procedimiento": "compras.registrar-pedido-para-orden-de-servicio", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me deja asignar fecha de entrega al equipo", "procedimiento": "compras.registrar-pedido-para-orden-de-servicio", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "grabe el pedido de equipos y no c si quedo enviado a aprobacion", "procedimiento": "compras.registrar-pedido-para-orden-de-servicio", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "¿Cómo registro los datos de la cotización que respondió un proveedor?", "procedimiento": "compras.registrar-recepcion-de-cotizaciones", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como cargo los precios que me pasó el proveedor", "procedimiento": "compras.registrar-recepcion-de-cotizaciones", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el ferretero me respondió por correo con sus precios, dónde los ingreso a s10", "procedimiento": "compras.registrar-recepcion-de-cotizaciones", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como registro la cotisacion q me mando el provedor", "procedimiento": "compras.registrar-recepcion-de-cotizaciones", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "recibir cotizaciones", "procedimiento": "compras.registrar-recepcion-de-cotizaciones", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como pongo el descuento del proveedor a todos los recursos", "procedimiento": "compras.registrar-recepcion-de-cotizaciones", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Indíqueme cómo registrar el tiempo de entrega ofrecido por el proveedor.", "procedimiento": "compras.registrar-recepcion-de-cotizaciones", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "tres proveedores devolvieron la cotización y hay que registrarlos uno por uno antes de comparar", "procedimiento": "compras.registrar-recepcion-de-cotizaciones", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como ingreso el desquento de un solo recurso de la cotizacion", "procedimiento": "compras.registrar-recepcion-de-cotizaciones", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como registro forma de pago, moneda y fecha de vigencia de la cotización recibida", "procedimiento": "compras.registrar-recepcion-de-cotizaciones", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cargar precios del proveedor", "procedimiento": "compras.registrar-recepcion-de-cotizaciones", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "cómo ingreso el precio cotizado de cada recurso", "procedimiento": "compras.registrar-recepcion-de-cotizaciones", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo registro un descuento de cantidad fija para redondear la cotización recibida?", "procedimiento": "compras.registrar-recepcion-de-cotizaciones", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "me llegó la oferta de un proveedor con precios distintos al presupuesto y debo registrarla", "procedimiento": "compras.registrar-recepcion-de-cotizaciones", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "kiero ingresar los precios cotizados", "procedimiento": "compras.registrar-recepcion-de-cotizaciones", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como consulto los últimos precios del proveedor mientras registro la cotización", "procedimiento": "compras.registrar-recepcion-de-cotizaciones", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "en qué escenario se registran las cotizaciones recibidas", "procedimiento": "compras.registrar-recepcion-de-cotizaciones", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dónde hago clic derecho para registrar datos de la cotización del proveedor", "procedimiento": "compras.registrar-recepcion-de-cotizaciones", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dónde pongo el tiempo de entrega del proveedor", "procedimiento": "compras.registrar-recepcion-de-cotizaciones", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en qué estado aparece la cotización lista para registrar sus datos", "procedimiento": "compras.registrar-recepcion-de-cotizaciones", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dónde veo últimos precios en general al registrar", "procedimiento": "compras.registrar-recepcion-de-cotizaciones", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Dónde se ingresa la fecha de vigencia de la oferta del proveedor?", "procedimiento": "compras.registrar-recepcion-de-cotizaciones", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "recepción cotizaciones dónde", "procedimiento": "compras.registrar-recepcion-de-cotizaciones", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "se puede importar automático la cotización de los proveedores", "procedimiento": "compras.registrar-recepcion-de-cotizaciones", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "por qué las cotizaciones recibidas se registran a mano", "procedimiento": "compras.registrar-recepcion-de-cotizaciones", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿La columna de precio del presupuesto es informativa o es la cotizada?", "procedimiento": "compras.registrar-recepcion-de-cotizaciones", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "qué estado debe tener la cotización para registrar datos", "procedimiento": "compras.registrar-recepcion-de-cotizaciones", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "qué es el tiempo de entrega en la cotización recibida", "procedimiento": "compras.registrar-recepcion-de-cotizaciones", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "hay q enviar antes la cotizacion pa poder registrar la respuesta", "procedimiento": "compras.registrar-recepcion-de-cotizaciones", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "no me sale la opción registrar datos en la cotización", "procedimiento": "compras.registrar-recepcion-de-cotizaciones", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "la cotización del proveedor no aparece en recepción de cotizaciones", "procedimiento": "compras.registrar-recepcion-de-cotizaciones", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "mi cotización no está en estado enviada al proveedor", "procedimiento": "compras.registrar-recepcion-de-cotizaciones", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no puedo cargar el excel del proveedor automáticamente", "procedimiento": "compras.registrar-recepcion-de-cotizaciones", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "me sale el precio del presupuesto en vez del cotizado, cómo lo cambio", "procedimiento": "compras.registrar-recepcion-de-cotizaciones", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "olvidé registrar los datos del segundo proveedor, cómo los agrego", "procedimiento": "compras.registrar-recepcion-de-cotizaciones", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "donde esta el desquento por recurso, solo veo uno general", "procedimiento": "compras.registrar-recepcion-de-cotizaciones", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}

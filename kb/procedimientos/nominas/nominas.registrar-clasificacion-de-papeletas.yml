@@ -1,0 +1,94 @@
+id: nominas.registrar-clasificacion-de-papeletas
+version: 1
+modulo: nominas
+titulo: "Registrar una clasificación de papeletas"
+objetivo: "Registrar en el Catálogo de Clasificación de Papeletas los tipos de papeleta (subsidios, licencias, vacaciones, regularización de días) que se usan para hacer cambios en un tareo previamente registrado."
+nivel: intermedio
+preguntas:
+  - "como creo una papeleta de descanso medico"
+  - "donde registro las papeletas de vacaciones"
+  - "como cambio una falta por descanso medico en el tareo"
+  - "que comportamiento le pongo a la papeleta de vacaciones"
+  - "donde esta el catalogo de clasificacion de papeletas"
+  - "como registro una licencia con goce de haber en nominas"
+  - "como agrego un tipo de papeleta nuevo"
+  - "diferencia entre papeleta simple, multiple y abierta"
+  - "como hago una papeleta por subcidio de maternidad"
+aliases:
+  - "clasificación de papeletas"
+  - "papeleta"
+  - "papeleta de vacaciones"
+  - "papeleta de descanso médico"
+  - "tipos de papeleta"
+entidades:
+  modulo: "Nóminas"
+  pantallas: ["Catálogo de Clasificación de Papeletas"]
+  objetos: ["papeleta", "concepto", "concepto genérico", "tareo"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "nominas.registrar-clasificacion-de-papeletas#1"
+    accion: "En **Catalogos**, elija **Clasificacion de Papeletas**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s019, img-ee18aace380a-0000]
+    pagina: null
+    fotos:
+      - id: "d122d300d18c"
+        ruta_o_url: "imagenes/manual-de-nominas/ee18aace380a.png"
+        pagina: null
+        ocr: "Archi[Eliia } Catalogos | Herramientas 2\nClasificacion de Papeletas"
+  - n: 2
+    id: "nominas.registrar-clasificacion-de-papeletas#2"
+    accion: "Haga clic derecho sobre el grupo (por ejemplo, **Papeletas por Vacaciones**) y elija la opción Nuevo SubItem."
+    fuente: [img-52527cbe3b89-0000, web-https-documentacion-s10peru-com-manual-d-s019]
+    pagina: null
+    fotos:
+      - id: "23ab740a42bc"
+        ruta_o_url: "imagenes/manual-de-nominas/52527cbe3b89.png"
+        pagina: null
+        ocr: "Clic derecho E)-€Py Todos los Registros\n=) €)4 Todos los Registros Hy Papebts por Subsidos\ni | Papeletas por Regularizacion de Dias\nJ Nuevo Subltem ‘\nFS Nuevo supttem | Efectue los registros, #,] Papeletas por Vacaciones"
+  - n: 3
+    id: "nominas.registrar-clasificacion-de-papeletas#3"
+    accion: "Elija el **Comportamiento**: **Simple** reemplaza un concepto por otro, múltiple a uno reemplaza varios conceptos por uno solo, múltiple a múltiple reemplaza varios conceptos por otros varios y **Abierta** se utiliza para los días u horas adicionales."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s019, img-6fa7c925cb51-0000]
+    pagina: null
+    fotos:
+      - id: "f0868066939b"
+        ruta_o_url: "imagenes/manual-de-nominas/6fa7c925cb51.png"
+        pagina: null
+        ocr: "[ a\n& Cilasificacion Papeleta\nvmwmen Pron Vramuene © ©\nComportamiento (@ Simple = ( Miltiple auno = (Multiple a muittiple: C Abierta\nDeseripcién DESCANSO MEDICO (PRIMEROS 20 DIAS)\nTipo Valor Dia t\nConcepto\ncee 00002005 |DESC4NSO MEDICO O=- Ey"
+  - n: 4
+    id: "nominas.registrar-clasificacion-de-papeletas#4"
+    accion: "Registre la descripción de la papeleta (por ejemplo, Licencia con Goce de Haber o Descanso Médico)."
+    fuente: [img-09d38e1ea63d-0000, web-https-documentacion-s10peru-com-manual-d-s019]
+    pagina: null
+    fotos:
+      - id: "615c6442abbf"
+        ruta_o_url: "imagenes/manual-de-nominas/09d38e1ea63d.png"
+        pagina: null
+        ocr: "‘Subsidio por Matemnidad (Pre y Pos Natal)\nPapeletas por Subsidios ‘Subsidio por Enfermedad (Invalidez, Enfermedad y Accidentes)\n. Licencia con Goce de Haber\nBRO SSES Bor Ran Licencia sin Goce de Haber\nLicencia por Adopcién\nLicencia por Paternidad\nPapeletas por Regularizacién de Dias | Dia 1° de Mayo Domingo\nDescanso Médico (Primeros 20 dias)\nSancién Disciplinaria\nFalta no Justificada\nDia de Desca…"
+  - n: 5
+    id: "nominas.registrar-clasificacion-de-papeletas#5"
+    accion: "Elija el **Tipo Valor**: día u hora, dependiendo del concepto a utilizar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s019]
+    pagina: null
+  - n: 6
+    id: "nominas.registrar-clasificacion-de-papeletas#6"
+    accion: "Elija el concepto genérico y el **Concepto** que reemplaza."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s019]
+    pagina: null
+verificacion: []
+errores_frecuentes:
+  - sintoma: "No sabe qué comportamiento darle a la papeleta de vacaciones."
+    solucion: "Se recomienda calificar con el comportamiento Abierta las papeletas por días de vacaciones."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s019]
+  - sintoma: "No puede agregar ni modificar un concepto genérico."
+    solucion: "Los genéricos son de uso interno del S10, no se pueden agregar ni modificar; van directamente relacionados a los conceptos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s019]
+relacionados: [nominas.registrar-tareo-estandar, nominas.calcular-la-nomina]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s019, manual: "Manual de Nóminas", seccion: "3.12 Catálogo de Clasificación de Papeletas", pagina: null}
+  - {id: img-ee18aace380a-0000, manual: "Manual de Nóminas", seccion: "ee18aace380a.png", pagina: null}
+  - {id: img-52527cbe3b89-0000, manual: "Manual de Nóminas", seccion: "52527cbe3b89.png", pagina: null}
+  - {id: img-6fa7c925cb51-0000, manual: "Manual de Nóminas", seccion: "6fa7c925cb51.png", pagina: null}
+  - {id: img-09d38e1ea63d-0000, manual: "Manual de Nóminas", seccion: "09d38e1ea63d.png", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

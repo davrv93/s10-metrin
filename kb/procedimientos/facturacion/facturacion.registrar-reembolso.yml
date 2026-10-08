@@ -1,0 +1,139 @@
+id: facturacion.registrar-reembolso
+version: 1
+modulo: facturacion
+titulo: "Registrar un reembolso de gastos"
+objetivo: "Registrar en el escenario Reembolsos del módulo de Facturación los documentos de los gastos de un responsable, cuyo importe acumulado es el que se le reembolsará, y dejarlo listo para que Finanzas o Tesorería lo pague."
+nivel: intermedio
+preguntas:
+  - "cómo registro un reembolso en facturación"
+  - "un trabajador pagó un gasto con su plata, como le hago el reembolso"
+  - "como creo un reembolso y le meto la factura del gasto"
+  - "reembolso de gastos de movilidad por viaje en s10"
+  - "como agrego un documento ya registrado al reembolso"
+  - "por que tesoreria no ve mi reembolso para pagarlo"
+  - "puedo seguir modificando un reembolso que ya grabe"
+  - "rembolso a un responsable como se registra"
+aliases:
+  - "registrar reembolso"
+  - "reembolso de gastos"
+  - "crear reembolso"
+  - "reembolsos"
+entidades:
+  modulo: "Facturación"
+  pantallas: ["Reembolsos", "Reembolso"]
+  objetos: ["reembolso", "socio negocio", "factura", "tipo de documento", "recurso"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "facturacion.registrar-reembolso#1"
+    accion: "Ingrese al módulo de Facturación, escenario de **Reembolsos**."
+    fuente: [img-77ecc68e4fee-0000, web-https-documentacion-s10peru-com-manual-d-s052]
+    pagina: null
+    fotos:
+      - id: "27977493bbc2"
+        ruta_o_url: "imagenes/manual-de-facturacion/77ecc68e4fee.png"
+        pagina: null
+        ocr: "Archivo Ver Catélogos Herramientas 2\nugeae\nuae ui | Reembolsos\n— ae ‘Modulo de Facturacion\nYd? @° vB eee °\n= escenario de Reembolsos\nDocumentos por Arrastre hacia aqui el encabezado de la columna que desea agrupar,\npooer\nce congo finke pe R\na Nw Fecha _[emtido a Moneda [Tipo de Cambio Totel___[Receptor_|Observaciones [Estado __[N* de Fond Ro| Tio Agrupamiento Monto Autorizado | Monto Pau! ~\nSEIN 5…"
+  - n: 2
+    id: "facturacion.registrar-reembolso#2"
+    accion: "Sobre el escenario, haga clic derecho y elija la opción de adicionar para crear el reembolso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s052]
+    pagina: null
+    fotos:
+      - id: "02850e5e9003"
+        ruta_o_url: "imagenes/manual-de-facturacion/75c85987df91.png"
+        pagina: null
+        caption: "Para realizar la creación del Reembolso sobre el escenario Clic derecho opción Adicional."
+        ocr: "‘Archivo Ver Catslogos Herramientas 7\nBRe@\nHa L|| Reembolsos\n= clive ve eae\nDeLee irate hacia onl encabezac dl colina que desea aru\naoe\n3/11 Campo|mtido a ~] [En cualquier posicén _~ (XI(2] eupo:\n@ Fecha [entio a ened [noo de Candi] Tot [Receptor _[Onservacones [estado [Nae Fenno Ro Too Arupamieto | Mort Autorzedo | Monto Pan:\nconnoo000007 TSU GUNENDRIACAYO, JORGEADOLFO SI 28 12000 HAUO SA Ceres 0…"
+  - n: 3
+    id: "facturacion.registrar-reembolso#3"
+    accion: "En la ventana del reembolso, registre los datos del socio negocio a quien se le reembolsará."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s052]
+    pagina: null
+    fotos:
+      - id: "694324e1cc99"
+        ruta_o_url: "imagenes/manual-de-facturacion/4626f2408a47.png"
+        pagina: null
+        caption: "Aparecerá la Ventana del reembolso, se tendrán que registrar los datos del Socio Negocio a quien se le reembolsará."
+        ocr: "a $10 Facturacion: 00002490 - HAUG S.A. - Principal -|a| x\n‘Archivo Yer Catslogos Herramientas 2\nnae a\nfaites =\nSMES cores frconer fuosa——SS~S~ST TN de Reb Gear elsock - -\nporta Veena Fou) Seed fRaRGT faIeSA =] oer: Indica el socio negocio a quien\n| waema | oe mor smonr moms al se lereembolsar\nwee aC) ee @)|/2. Fecha del reambotso\ncoven |e ‘= 2) El\npagar Monede [ol UEVOS SOLES z ccanbio[ 1.000) Es…"
+  - n: 4
+    id: "facturacion.registrar-reembolso#4"
+    accion: "En el detalle, pestaña de **Documentos**, use la opción **GENERAR DOCUMENTO** para crear un documento, o **AGREGAR DOCUMENTO** para tomar un documento que ya se encuentra registrado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s052]
+    pagina: null
+    fotos:
+      - id: "d7b25eed8e71"
+        ruta_o_url: "imagenes/manual-de-facturacion/3d662a2e28b2.png"
+        pagina: null
+        caption: "Luego de registrar los datos del reembolso, en el detalle, Pestaña de Documentos se utilizará la opción de GENERAR DOCUMENTO es para la creación de un documento; opción AGREGAR DOCUMENTO es jalar o tomar un documento que se encuentra previamente registrado."
+        ocr: "3 $10 Facturacion: 00002490 - HAUG SA. - Principal -|a| x\nArchivo Yer Catilogos Herramientas 2\noBem a\nBEC AC Reemb| Laue cease =I 1° de Reemboso\n[Reem =\nparen arnnfacy] Se Poa Faves Al | sonar\nSee | tion fro pasar aancanas ad\n8 a =\nDocumentos por ||, fiuevossoes | 1 conte [750]\nnt Nore RECS SOS 4] 1.decanvo[ TERI exes avec\nf@ TT Revisedo [armarons =] (7 Adler en Gestin\nfe veo Arete |_ wrt Pan 5\nex…"
+  - n: 5
+    id: "facturacion.registrar-reembolso#5"
+    accion: "En el catálogo de tipo de documento, seleccione con doble clic el tipo de documento a crear, por ejemplo **Factura Terceros**."
+    resultado: "Aparece el formulario del tipo de documento elegido."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s052]
+    pagina: null
+    fotos:
+      - id: "ab207a442932"
+        ruta_o_url: "imagenes/manual-de-facturacion/592a2821d1d7.png"
+        pagina: null
+        caption: "Luego de utilizar la opción de GENERAR DOCUMENTO aparecerá el catálogo de tipo de documento, se debe de seleccionar el tipo de documento a crear, para este caso crearemos una Factura. (Doble clic Factura Terceros)."
+        ocr: "3 S10 Facturacién: 00002490 - HAUG S.A. - Principal S|) |_ 8\nArchivo Ver Catélogos Herramientas?\nBgee a Reembolso {-[5| x |\nj - Empresa ogous FAUSSA\ni id) Tem [Reembi me LEED | HALES #4 N° de Reembolso\nswusa foe Passa\nPor Pagar peat camer FAS oy a\n| ention fino RNSARINEIREWANCAROS SSC\nB YOESTAG rect esoanaa ve) Tbeaimpamene Fal\nDocurentos per |UENET a x\nmeta venus V REVOSSOES 5\n@ a Secones & orto…"
+      - id: "fb8f6f34a07f"
+        ruta_o_url: "imagenes/manual-de-facturacion/6c6e8ea9647a.png"
+        pagina: null
+        caption: "Al darle doble clic aparecerá el formulario del tipo de documento elegido, en este caso Facturas Terceros, el cual comenzaremos el registro de la información."
+        ocr: ") 510 Facturacion: 00002490 - HAUG S.A. - Principal =|o/ x\nArchi\nFF\nfor?\n| ene foment go 7\na =I)\nFeta Sn =] ta verre ECO >] rte rere HED v]\n—\nDes iain [SOONG ~ OATS Jez 014 Teocantion otc [2601] an\nveces [a fee cores [-[\nDeseo [_Oao Resto frp tno Pst\n\"31 © shasinar © Poyecto =] 8) Reino i\n‘Conceto u Observecén Tr] 4\nJEMERS vGeua\nandl}? Canpo[dgo [en cuales poscin (KID) cupe:\ncites fern ivins| cana…"
+  - n: 6
+    id: "facturacion.registrar-reembolso#6"
+    accion: "Registre la información del documento: proveedor (socio negocio), moneda, número del comprobante, fechas, proyecto que genera el gasto, glosa, el recurso y los importes."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s052]
+    pagina: null
+    fotos:
+      - id: "951008488571"
+        ruta_o_url: "imagenes/manual-de-facturacion/5ec524388e5b.png"
+        pagina: null
+        caption: "Para este caso registraremos una factura por el Concepto de Movilidad por Viaje, indicar el proveedor (Socio negocio), moneda del documento, número del comprobante, fechas del documento, indicar el proyecto que genera el gasto, registrar glosa, agregar el recurso e indicar los importes."
+        ocr: "2 510 Facturachter 00002450 » HAUG SA. - Principal ole] =)\nnq”\nper ot fame fase Sree nents\na\ntee [06 rena rcmet [89%* “}rroamencn He =] findicar Fecha del —\ncon [RG =I) art <—)weowenrove [ina] [Comprobant =)»\naren POEVG= UES =] AAlforme page fF ata coroner =] #4] -\nMe | Po\n= ee |\nre = : a oe)\nOFFS83 -Haae\nnal] #1 Compe + )ocatam aoonen +] Le xem\nNN Canteiad Fuentes sntov | matoamiov | MeeconiGv |…"
+  - n: 7
+    id: "facturacion.registrar-reembolso#7"
+    accion: "Para grabar el documento, use la opción **ACEPTAR**."
+    resultado: "El reembolso muestra el documento creado para el reembolso por gastos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s052]
+    pagina: null
+    fotos:
+      - id: "3d2cd66df9bc"
+        ruta_o_url: "imagenes/manual-de-facturacion/a8600a62733f.png"
+        pagina: null
+        caption: "Vista del Reembolso, con el primer documento creado para el reembolso por gastos."
+        ocr: "~ $10 Facturacién: 00002490 - HAUG S.A. - Principal llesLe3\nArchivo Ver Catélogos Herramientas 2\nake ai)\nH Tema rea, A\na PeYe)) Everese  focoonse0 AUOSA =]44) 1° de Reemboiso\nsus oom FADSA = aaa\nee as [reoxes aussa, a —\nzi fenton [poser [ARASARANGURU, WANCARIGS SSC\ni Vista del Reembolso con el primer\nBb eg eee rf bo cone\nDoamerseco AE J [fevOsSoceS =] A 1. coni[ 2] locumento registrado, Asimismo\ns…"
+  - n: 8
+    id: "facturacion.registrar-reembolso#8"
+    accion: "Si corresponde, registre más de un comprobante dentro del reembolso y después use la opción de grabar el reembolso."
+    resultado: "El reembolso se visualiza dentro del escenario."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s052]
+    pagina: null
+    fotos:
+      - id: "4a09f01fdc7e"
+        ruta_o_url: "imagenes/manual-de-facturacion/51be95aaf426.png"
+        pagina: null
+        caption: "Así como se ha registrado un comprobante dentro del reembolso, es posible registrar más de uno, para este caso solo registraremos un documento que se le reembolsará a ARIAS, JUAN, ya que el proveedor fue pagado al momento del desembolso del gasto. Luego de grabar el reembolso lo visualizaremos dentro del escenario de esta forma."
+        ocr: "Archive Ver Catélogos Herramientas 2\nBRee\na en! Reembolsos\ntoca I era PRIDE =\n& |sGvena -oeaa\nPoneto Retro\npager\n15/15 CanpolEmitida @ ~|[Encualouerposicén v] ([[2] eupo:\n7] i Fecha [Ents a Moneda [pode Cantio| Total _|Recerter _[Observacones [Estado __|N* dle Fondo Ro Tipo Agupaninto__| Mort torn\n[200311 Novinbre 2013\nUruidacones | # 201312 Diciembre 2013\naaa\n8\nReno Vista del reembolso - Cabecera…"
+  - n: 9
+    id: "facturacion.registrar-reembolso#9"
+    accion: "Mientras el reembolso esté en estado **ABIERTO**, puede continuar trabajándolo con la opción **Modificar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s053]
+    pagina: null
+verificacion:
+  - texto: "El área de Finanzas o tesorería se dará cuenta de que debe pagar el reembolso cuando se encuentre en estado CERRADO; desde el Módulo Administrativo solo se visualizan los reembolsos cerrados, aptos para generar el pago."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s053]
+errores_frecuentes:
+  - sintoma: "El reembolso no aparece en el Módulo Administrativo para pagarlo."
+    solucion: "Desde el Módulo Administrativo solo se visualizan los reembolsos en estado CERRADO; luego de grabarlo, el reembolso sigue en estado ABIERTO."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s053]
+relacionados: [facturacion.liquidar-entrega-a-rendir]
+fuentes:
+  - {id: img-77ecc68e4fee-0000, manual: "Manual de Facturación", seccion: "77ecc68e4fee.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s052, manual: "Manual de Facturación", seccion: "6.5.1 Registro del Reembolso (1)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s053, manual: "Manual de Facturación", seccion: "6.5.1 Registro del Reembolso (2)", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

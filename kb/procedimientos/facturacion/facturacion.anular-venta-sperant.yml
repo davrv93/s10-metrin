@@ -1,0 +1,116 @@
+id: facturacion.anular-venta-sperant
+version: 1
+modulo: facturacion
+titulo: "Anular una venta inmobiliaria (Sperant – S10)"
+objetivo: "Anular una venta completa que cayó: iniciar la anulación en Sperant con el monto de devolución y, en el escenario Anulación de Ventas de S10, generar la facturación para cerrar la orden de venta y obtener la nota de crédito que se pagará al cliente."
+nivel: avanzado
+preguntas:
+  - "cómo anulo una venta que se cayó"
+  - "el cliente desistio de la compra del depa, como anulo la orden de venta"
+  - "como anulo una venta que ya tiene boletas"
+  - "donde pongo el monto de devolucion al anular la venta"
+  - "como genero la nota de credito de una venta anulada desde sperant"
+  - "escenario anulacion de ventas que hago con la orden de venta"
+  - "anulasion de venta sperant s10"
+  - "despues de anular la venta como le devuelvo la plata al cliente"
+aliases:
+  - "anular venta"
+  - "anulación de ventas"
+  - "anular orden de venta"
+  - "anular proceso sperant"
+entidades:
+  modulo: "Facturación"
+  pantallas: ["Anulación de Ventas", "Cronograma de Pagos"]
+  objetos: ["orden de venta", "nota de crédito", "monto devolución", "boleta"]
+prerrequisitos:
+  - texto: "Si la venta ya tiene boletas generadas a partir de los abonos, la anulación debe iniciarse desde SPERANT para que se genere la Nota de crédito."
+    fuente: [web-https-documentacion-s10peru-com-anulacio-s000]
+pasos:
+  - n: 1
+    id: "facturacion.anular-venta-sperant#1"
+    accion: "En Sperant, inicie el proceso de anulación con la opción **Anular Proceso** y especifique el motivo de la anulación."
+    donde: "Sperant"
+    fuente: [web-https-documentacion-s10peru-com-anulacio-s000]
+    pagina: null
+  - n: 2
+    id: "facturacion.anular-venta-sperant#2"
+    accion: "Verifique que se inició el proceso de Anulación."
+    donde: "Sperant"
+    fuente: [web-https-documentacion-s10peru-com-anulacio-s000]
+    pagina: null
+    fotos:
+      - id: "ac9fd43f322f"
+        ruta_o_url: "imagenes/anulacion-de-ventas/79887070f52b.png"
+        pagina: null
+        caption: "3. Verificar que se inició el proceso de Anulación."
+        ocr: "1G oem x e - 9 x\n€ 9 © Oeunashconncn <a)t\n* 1\na = = Serarecamene pean cme )\n\ncm Presernenrencn"
+  - n: 3
+    id: "facturacion.anular-venta-sperant#3"
+    accion: "En el **Cronograma de Pagos**, use la opción **Devolución** para determinar el monto devolución."
+    donde: "Sperant"
+    fuente: [web-https-documentacion-s10peru-com-anulacio-s000]
+    pagina: null
+    fotos:
+      - id: "01b8e05f719f"
+        ruta_o_url: "imagenes/anulacion-de-ventas/a0c5201cefa6.jpg"
+        pagina: null
+        caption: "4. En el Cronograma de Pagos, se debe determinar el monto devolución, para ello usaremos la opción “Devolución”"
+  - n: 4
+    id: "facturacion.anular-venta-sperant#4"
+    accion: "En la ventana que aparece, especifique el monto Devolución: es el monto con el cual se generará la Nota de crédito o documento de devolución."
+    donde: "Sperant"
+    fuente: [web-https-documentacion-s10peru-com-anulacio-s000]
+    pagina: null
+  - n: 5
+    id: "facturacion.anular-venta-sperant#5"
+    accion: "Anule la Orden de venta en los procesos de Sperant."
+    donde: "Sperant"
+    fuente: [web-https-documentacion-s10peru-com-anulacio-s000]
+    pagina: null
+    fotos:
+      - id: "a71555ff37fb"
+        ruta_o_url: "imagenes/anulacion-de-ventas/a56f0e0b0af4.jpg"
+        pagina: null
+        caption: "6. Seguido a esto, ya podremos Anular la Orden de venta en los procesos de Sperant."
+      - id: "77d79b13b08a"
+        ruta_o_url: "imagenes/anulacion-de-ventas/54f8f4a95682.jpg"
+        pagina: null
+        caption: "6. Seguido a esto, ya podremos Anular la Orden de venta en los procesos de Sperant."
+  - n: 6
+    id: "facturacion.anular-venta-sperant#6"
+    accion: "En S10, ubique la orden de venta en el escenario **Anulación de Ventas**, use la opción **Generar Facturación** y asigne la fecha que servirá para generar todos los documentos (se propone la actual)."
+    donde: "S10, escenario Anulación de Ventas"
+    resultado: "El estado de la orden de venta cambia a «Cerrado por el Usuario»."
+    fuente: [web-https-documentacion-s10peru-com-anulacio-s000, web-https-documentacion-s10peru-com-configur-s010]
+    pagina: null
+    fotos:
+      - id: "6bf9ac87695a"
+        ruta_o_url: "imagenes/anulacion-de-ventas/441bbc0b85cb.png"
+        pagina: null
+        caption: "8. Seguido a ello se verá que se cambia el estado a “Cerrado por el Usuario”"
+        ocr: "(a at na ceed F\nBRea@\n|Anulacién de Ventas\nYY 2R88 Bi ade\n|wo___]SecoDenegoce == Fema Cotzacein ___|Fechaventa | oneda [Sinton | __Total_|_Cobrado_| Porcentae |esteowv _—_—estado Anutacén | Meta Fre\nee oe Rar asctan ST a See as ee Re =\nrence RESEE E —muen cceesam (sian? sous —w a =\nSnned Soo oe ae SOLE RENCE a oo 5\nSeiten [eausceauer Wail Geox Toaeat—arteeesasa [emcet eee ee S\nse etn\nca 1) tween a…"
+  - n: 7
+    id: "facturacion.anular-venta-sperant#7"
+    accion: "Pague al Cliente la Nota de crédito que se generó."
+    fuente: [web-https-documentacion-s10peru-com-anulacio-s000]
+    pagina: null
+    fotos:
+      - id: "692df919c36c"
+        ruta_o_url: "imagenes/anulacion-de-ventas/e50a1aec4e5d.png"
+        pagina: null
+        caption: "9. Esto a su vez genera una Nota de crédito la cual ya podrá Pagar al Cliente."
+        ocr: "_ Archivo Ver Catélogos Herramientas ?\nERoae@\n5 Tema | Pa\n: a l/ Anulaci6n de Ventas\n=\nBY 2RES BF &éua\n' 4 j Arrastre hacia aqui el encabezado de la columna que desea agrupar.\ndal\nBoletap [Nro. | Socio De Negocio Fecha Cotizacion Fecha Venta [Moneda____—‘|simbolo |__—Total_—|__Cobrado | _Porcentaje_| Estado NV Estado Anulacion Minuta Firmada\nae 000000000062 MENDIOLA, EDITH 25/08/2017 06:07:23 p.m.…"
+      - id: "d640119c9373"
+        ruta_o_url: "imagenes/anulacion-de-ventas/bf6fe75e1f13.png"
+        pagina: null
+        caption: "9. Esto a su vez genera una Nota de crédito la cual ya podrá Pagar al Cliente."
+        ocr: "Ordenes de Pago\nI Todos Periodo =| d4| 7]\npM: aves gaaig nn\nHi Orden de Pago [oid\nfae Desc 22000631 N° Orden de Pago es\n051022\n‘Sucursal Principal\nCuenta Banceria fat-1471766-0-21[60Pt CTACTETSI-1A7I7660-2106) af ib] ‘Formato\nMoneda, SOLES Saldo Actual 3,761,319.14 Saldo Disponible 9,354/948.78\nDeseripcién. PRUEBA\nFechadePego — [aistor2018 | Tino de cambio Fecha vencimiento Fai 2018\nObservaciones…"
+verificacion:
+  - texto: "Después de Generar Facturación, la orden de venta pasa al estado «Cerrado por el Usuario» y se genera una Nota de crédito."
+    fuente: [web-https-documentacion-s10peru-com-anulacio-s000]
+errores_frecuentes: []
+relacionados: [facturacion.boletear-abonos-sperant, facturacion.registrar-nota-de-credito]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-anulacio-s000, manual: "Anulación de Ventas", seccion: "Anulación de Ventas", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-configur-s010, manual: "Configuración de Integración Sperant con S10 ERP – Proceso General", seccion: "9. Boletaje", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

@@ -1,0 +1,100 @@
+id: gerencia-proyectos.egresar-a-partida-de-control-con-pedido
+version: 1
+modulo: gerencia-proyectos
+titulo: "Registrar un egreso a partida de control con pedido"
+objetivo: "Entregar desde el módulo de Almacenes los recursos de un pedido A Almacén aprobado mediante el Egreso a Partida de Control con Pedido, e imprimir el egreso para que lo firme la persona que retira los materiales."
+nivel: intermedio
+preguntas:
+  - "como hago el egreso de un pedido aprobado en almacen"
+  - "el residente ya aprobó el pedido a almacen, como despacho los materiales"
+  - "egreso a partida de control con pedido como se hace"
+  - "como entrego al capataz los materiales que pidio por el sistema"
+  - "como jalo el pedido aprobado al egreso del almacen"
+  - "como registro la salida de materiales con pedido EPCP"
+  - "despues de jalar el pedido como imprimo el EPCP para la firma"
+  - "no me aparece el pedido para hacer el egreso con pedido"
+aliases:
+  - "egreso con pedido"
+  - "EPCP"
+  - "egreso a partida de control con pedido"
+  - "atender pedido a almacén"
+  - "despachar pedido de almacén"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Egresos", "Egreso a Partida de Control con Pedido"]
+  objetos: ["pedido", "egreso", "partida de control", "recurso"]
+prerrequisitos:
+  - texto: "Tener aprobado el pedido A Almacén."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s129]
+  - texto: "El pedido debe tener una persona asignada para que recoja los recursos del almacén."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s129]
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.egresar-a-partida-de-control-con-pedido#1"
+    accion: "Ingrese al módulo de Almacenes como almacenero."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s129]
+    pagina: null
+  - n: 2
+    id: "gerencia-proyectos.egresar-a-partida-de-control-con-pedido#2"
+    accion: "Ingrese al escenario de **Egresos** del almacén."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s129, web-https-documentacion-s10peru-com-manual-d-s130]
+    pagina: null
+    fotos:
+      - id: "52089808576a"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/84f056b6baa1.png"
+        pagina: null
+        caption: "Acceso al escenario"
+        ocr: "[eb [ etie |\n[tia | ] — Elija\nEP ageseritorio\nEe )-6Q PUENTE EN CARRETERA\n— Luego, B We Materislesh"
+  - n: 3
+    id: "gerencia-proyectos.egresar-a-partida-de-control-con-pedido#3"
+    accion: "Elija el tipo de egreso **Egreso a Partida de Control con Pedido**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s129]
+    pagina: null
+    fotos:
+      - id: "d0c9c5eab62b"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/113c1675f1e8.png"
+        pagina: null
+        caption: "Elija el tipo de egreso"
+        ocr: "Teo Mont. Eyec oP de Ctolcn Pease PERE\n\nAva» &aw\n\nEstado |\" Guia | Fecha [Destino /Solctente __—_—_[Moedal _ in\nCi asicionar"
+  - n: 4
+    id: "gerencia-proyectos.egresar-a-partida-de-control-con-pedido#4"
+    accion: "Use la opción **Adicionar**, que en el formulario del egreso invoca a los pedidos aprobados."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s129]
+    pagina: null
+    fotos:
+      - id: "4cb9967615ce"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/2ff966834581.png"
+        pagina: null
+        caption: "Para los movimientos el sistema usa formularios. La opción ADICIONAR invoca a los pedidos aprobados;"
+        ocr: "B Egreso a Partida de Control con Pegide [E PCP] 02004-PUENTE EN CARRETERA | ||\nRegistra jr - Ramirez Nuiiez, Jose Litimo usuario u N° de Guia\nAlmacén 001 - Obra -Urubamba Ultima fecha\nTipo 01- OBRA Estado Edicion Fecha [17952010 _~\nN*Pedido: Solicitante Proy.Destino\nProcedencia Nro. Deto.\nor\nSYA 8 vf azaa\nCodigo Recurso [Unidad |‘antidad Pedic) ntidad Egresa| Por Egresat|Egresar |F\nClic derecho A…"
+  - n: 5
+    id: "gerencia-proyectos.egresar-a-partida-de-control-con-pedido#5"
+    accion: "Elija con doble clic el pedido aprobado, verificando el nombre de la persona que recogerá los materiales."
+    fuente: [img-6c3f7017bc06-0000, web-https-documentacion-s10peru-com-manual-d-s129]
+    pagina: null
+    fotos:
+      - id: "6863bfeda663"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/6c3f7017bc06.png"
+        pagina: null
+        ocr: "{| lemon}\n\n[AF Note oe Fedo\n_ Elija el nombre de la persona que recoja con doble clic\n\nAYvGNS BF &éaw\nir 0015 17105/2010 Ramirez Nufiez, Jose ir No atendicio\nDescripcin Unidad | Cantidad |P.C. Descripcién\nACERO CORRUGADO fy=4200 kg/cm2 GRADO 60 VARILLA DE 5/8\" x 9m var 37.0000 0101004 Acero\nALAMBRE NEGRO RECOCIDO # 16 kg 59,0000 0101004 Acero\na ,"
+      - id: "447688ac3096"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/32059a7f7a00.png"
+        pagina: null
+        caption: "Elija el pedido aprobado, (ver el nombre de la persona que recogerá los materiales);"
+        ocr: "Saw Sox\nBp Egreso a Partida de Control con Pesido [E PCP] 02004-PUENTE EN CARRETERA _ Bee _x_)\nRegistra jr - Ramirez Huiiez, Jose Ultimo usuario eS N° de Guia\nAlmacén 001 - Obra -Urubamba Ultima fecha ‘000000000003\nTipo 01-OBRA Estado Edicién Fecha 177052010\nN*Pedido 0015 Solicitante Ramirez Huiiez, Jose Proy Destino\nProcedencia Proyecto Principal Nro. Deto.\n\nRecurso Unid] Cantidad Pe|Cantidad Egr…"
+  - n: 6
+    id: "gerencia-proyectos.egresar-a-partida-de-control-con-pedido#6"
+    accion: "Imprima el egreso y hágalo firmar por la persona que retira los materiales."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s129]
+    pagina: null
+verificacion: []
+errores_frecuentes:
+  - sintoma: "El pedido no aparece al usar Adicionar en el egreso con pedido."
+    solucion: "La opción Adicionar solo invoca a los pedidos aprobados: el pedido A Almacén debe estar aprobado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s129]
+relacionados: []
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s129, manual: "Manual de Gerencia de Proyectos", seccion: "3.11 Uso del módulo de Almacenes para efectuar el Egreso a Partida de Control con Pedido", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s130, manual: "Manual de Gerencia de Proyectos", seccion: "3.11.1 Egreso manual de recurso del Almacén hacia una Partida de Control", pagina: null}
+  - {id: img-6c3f7017bc06-0000, manual: "Manual de Gerencia de Proyectos", seccion: "6c3f7017bc06.png", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

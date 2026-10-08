@@ -1,0 +1,124 @@
+id: contabilidad.asignar-cuentas-a-categoria-de-recursos
+version: 1
+modulo: contabilidad
+titulo: "Asignar cuentas contables a una categoría de recursos"
+objetivo: "Asignar una cuenta contable a una categoría de recursos para que cualquier recurso relacionado a esa categoría contabilice con la cuenta asignada a la categoría."
+nivel: intermedio
+preguntas:
+  - "como asigno una cuenta contable a una categoria de recursos"
+  - "quiero que todos los cementos se contabilicen en la misma cuenta"
+  - "donde pongo la cuenta de inventario a la categoria"
+  - "como uso la opcion asignar cuenta en asignacion de cuentas"
+  - "asignar cuenta contable por categoria y tipo de costo"
+  - "los materiales no contabilizan con la cuenta que quiero, como la asigno por categoria"
+  - "como configuro la cuenta de compras de una categoria de recurso"
+  - "categorias de recursos contabilidad s10 como se le pone cuenta"
+  - "asignasion de cuentas tipo categoria"
+aliases:
+  - "asignar cuenta a categoría"
+  - "cuentas por categoría de recursos"
+  - "asignación de cuentas tipo categoría"
+  - "cuenta contable de la categoría"
+entidades:
+  modulo: "Contabilidad"
+  pantallas: ["Asignación de Cuentas", "Asignación de Categorías"]
+  objetos: ["categoría", "recurso", "cuenta contable", "tipo de costo", "plan de cuentas", "esquema contable"]
+prerrequisitos:
+  - texto: "Las categorías deben estar configuradas en el catálogo de categorías, según el criterio de contabilización de los recursos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s024]
+  - texto: "Las categorías deben estar relacionadas a los recursos con la opción **Asignar categoría**, en el escenario **Asignación de Categorías** del grupo Parámetros."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s025, web-https-documentacion-s10peru-com-manual-d-s038]
+pasos:
+  - n: 1
+    id: "contabilidad.asignar-cuentas-a-categoria-de-recursos#1"
+    accion: "Ingrese al escenario **Asignación de Cuentas** del grupo **Parámetros**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s038]
+    pagina: null
+  - n: 2
+    id: "contabilidad.asignar-cuentas-a-categoria-de-recursos#2"
+    accion: "Seleccione el **Esquema Contable**: el esquema contable configurado por empresa establece el uso del plan de cuentas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s026]
+    pagina: null
+    fotos:
+      - id: "4837fca8ca66"
+        ruta_o_url: "imagenes/manual-de-contabilidad/f794da120484.png"
+        pagina: null
+        caption: "Desde el escenario asignación de cuentas Tipo categoría se Observa la información trabajada en el catálogo de categorías, a través de: a. Esquema Contable, al seleccionar el esquema contable configurado por empresa establece el uso del plan de cuentas. b. Tipo de Categoría, seleccionar en este caso el tipo Categorías de Recursos. c. Tipo Costo; el tipo de costo permite realizar la asignación de cuentas por tipo de Costo, previa calificación y configuración por proyecto y centro de costo que se asigna en el registro de las operaciones documentos por Pagar y cobrar entre otras procedencias."
+        ocr: "© Archivo Yer Catslogos Herramientas 2\neis ya)\nedna Asignacién de Cuentas ()\nSn To\na WHMAS 4 vaF eae © 2 serierccen ]\nPlan Contable 002 Post Venta\n‘Arrastre hacia aqui el encabezado de la columna que desea agrupar o03 Fences\nBy Vi comeleeagy Yen ccacaer rescence Ld\nEsquema Contable || C60 Deserinciin nvertario Compras ventas ariacién de Existencias is\n0001 Terenas\n> oono2 bras Provsionsles\n4B) ons…"
+  - n: 3
+    id: "contabilidad.asignar-cuentas-a-categoria-de-recursos#3"
+    accion: "Como tipo de categoría, seleccione **Categorías de Recursos**."
+    resultado: "Se muestra el listado de categorías de recursos, que agrupa diferentes familias de recursos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s026]
+    pagina: null
+    fotos:
+      - id: "5b6f514caa83"
+        ruta_o_url: "imagenes/manual-de-contabilidad/0105acc44327.png"
+        pagina: null
+        caption: "En el listado de categorías de Recursos, es posible Observar el contenido que agrupa diferentes familias de recursos según su calificación."
+        ocr: "© Archivo Yer Catélogos Herramientas ?\neC Game | Asicnacién de Cuentas\nEsquema: J001  |ESQUEMA CONTABLE DEMO 01 co 44) Cuentas: [Se Categoria del Recurso ba\nS HEMAARS vari eda)\nPlan Contable\nArrastre hacia aqui el encabezado de la columna que desea agrupar.\n& 6/71 Campo|cédigo | Jen cualquier posician > [X][29] grupo:\nEsquema Contable || Cédigo Descrincién Inventario Compras Ventas\n‘00001 Terenas…"
+  - n: 4
+    id: "contabilidad.asignar-cuentas-a-categoria-de-recursos#4"
+    accion: "Si la asignación de cuentas se realizará por tipo de costo, seleccione primero el **Tipo Costo**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s027, web-https-documentacion-s10peru-com-manual-d-s026]
+    pagina: null
+    fotos:
+      - id: "5157a89ac0b0"
+        ruta_o_url: "imagenes/manual-de-contabilidad/b2094c4910a9.png"
+        pagina: null
+        caption: "Si la asignación de Cuentas se realizará por tipo de Costo, se deberá de seleccionar inicialmente el tipo de costo y posteriormente hacer uso del Plan de cuentas para la asignación de Cuentas."
+        ocr: "§10 Contabilidad BEE\n| Archivo Ver Catdlogos Herramientas 2 ‘Si la Asignacion contable es por tipo de Costo,\n‘Bea primero debera de seleccionar el tipo de costo y\nE posteriormente realizar la asignacién en el detalle.\ni Tema Agi cid\ni Asignacién de Cuentas\n[asienaeion de Cuenta\n\na Esquema; [001 [ESQUEMA CONTABLE DEMO 01 =] #4) cuentas: [86 Categoria del Recurso <tc] <5in Tipo > ¥] frovimiento: [|…"
+  - n: 5
+    id: "contabilidad.asignar-cuentas-a-categoria-de-recursos#5"
+    accion: "Haga clic derecho sobre la categoría y utilice la opción **ASIGNAR CUENTA**."
+    resultado: "Aparece el plan de cuentas del esquema contable configurado por empresa."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s027, img-6571152e2a2f-0000]
+    pagina: null
+    fotos:
+      - id: "ba7b6a6e2b2a"
+        ruta_o_url: "imagenes/manual-de-contabilidad/6571152e2a2f.png"
+        pagina: null
+        ocr: "‘$10 Contabilidad: 00002490 - MI EMPRESA SAC BENE\n| Archivo Yer Catélogos Herramientas 2\naoa@\nAsignacién de Cuentas Tipo Categoria del Recurso\n= |) esquema: oT [ESOUEWACONTABLE MIENPRESASA. wn] i |cuentas: [5% Categoria del Recurs0 +] fieoc.c.: | <sin Tipo > ] Movimiento: [| =] 44]\n3 : ——————\nomens [UOYFE8 va aaa 7\nTB) ine comofecins Sloss a }euo\nAsignaciin de (fcéigo eet Scrpciin Comras ventas ar…"
+      - id: "313d422f9911"
+        ruta_o_url: "imagenes/manual-de-contabilidad/1a4325107771.png"
+        pagina: null
+        caption: "Al utilizar la opción de ASIGNAR CUENTA, aparece el plan de cuentas del esquema contable configurado por empresa para el proceso de contabilización."
+        ocr: "‘510 Contabilidad TES\n| avctivo Yer Cotdogns Herramentas 2\n‘Bae\nsola fens [Asignacién de Cuentas\nsqiema: foo! FSGUBWACONTABLEDENO 01 x] iN cuentas: [SE Categora delRecuso =] Tpoce] <anteo> =] mowmenos) [18]\ni TAF Sl S| + GE ce pire\nPlan Contable ASHSTSCSOT Ge CUTENESS EOHREDIES) Para la asignacion contable activar el check lolx!\nArrastre hacia aqui el encabezado de la column \\ Registros Selecciona…"
+  - n: 6
+    id: "contabilidad.asignar-cuentas-a-categoria-de-recursos#6"
+    accion: "Seleccione la cuenta y utilice la parrilla para tomar la cuenta contable y asignarla a la categoría."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s038]
+    pagina: null
+    fotos:
+      - id: "555b98e5634a"
+        ruta_o_url: "imagenes/manual-de-contabilidad/8f8d91450bf0.png"
+        pagina: null
+        caption: "Al utilizar la Opción de ASIGNAR CUENTA, aparecerá el Plan de Cuentas, se debe seleccionar la cuenta y utilizar la parrilla para tomar la cuenta contable y asignarla a la Categoría."
+        ocr: "510 Contabilidad: 00002490 - MI EMPRESA SAC IEIES\n“Archivo Yer Catdlogos Herramientas ?\nPye\na Asignacién de Cuentas\n“= |] Esquems: foo1 ESGUEMACONTABLE MIENPRESAS.A. a] | cuentas: [Se Categoria del Recurso ¥] tpoc.c: | <Sin Tipo > =] movimiento: [| | 44\n& HEYEe es EF aga\nEsquema Contable\n. Arrastre hacia aqui el encabezado de la columna que desea agrupar,\na 1/47 Campa cédigo [en cusluierposicion +…"
+  - n: 7
+    id: "contabilidad.asignar-cuentas-a-categoria-de-recursos#7"
+    accion: "Revise la cuenta contable seleccionada y haga clic en **Aceptar**."
+    fuente: [img-063e4c3fa737-0000, web-https-documentacion-s10peru-com-manual-d-s027]
+    pagina: null
+    fotos:
+      - id: "baeb5a258889"
+        ruta_o_url: "imagenes/manual-de-contabilidad/063e4c3fa737.png"
+        pagina: null
+        ocr: "| ‘Ss Asignacién de Cuentas Contables BEE\n| Registros Seleccionadas AN\n| Céaigo Cuenta [Descripoién Cuenta\n|| Inventario O\n|| Compras 60240106 ... | 60240106 Cemento\nVariacion de existencias de mercaderias O\nVentas O\nCuenta Contable: Defecto 60110100 - Compra Mercad Manufacturadas\nRefleja: Debe\nHaber\nEspecifica 60240106 - Cemento\nRefleja: Debe\n| Haber\nAceptar | Cancelar |"
+verificacion:
+  - texto: "Al utilizar cualquier recurso relacionado a esa categoría, se contabilizará con la cuenta asignada a la categoría."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s027]
+errores_frecuentes:
+  - sintoma: "El recurso no contabiliza con la cuenta asignada a su categoría."
+    solucion: "La búsqueda de asignación contable sigue la escala: recurso con tipo de costo, recurso sin tipo de costo, categoría con tipo de costo, categoría sin tipo de costo y genérica de inventario; si no encuentra asignación contable, va escalando la configuración."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s038]
+relacionados: [contabilidad.asignar-cuentas-a-recursos-por-tipo-de-costo, contabilidad.crear-plan-de-cuentas]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s024, manual: "Manual de Contabilidad", seccion: "4.3.1 Catálogo de Categoría", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s025, manual: "Manual de Contabilidad", seccion: "4.3.2 Configuración de Categorías a los Recursos", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s038, manual: "Manual de Contabilidad", seccion: "4.4.7.1 Genérica de INVENTARIO, Tiene la Siguiente Escala de Asignación Específica. (1)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s026, manual: "Manual de Contabilidad", seccion: "4.4.1 Funcionalidades del escenario según Tipo Categoría de Recursos.", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s027, manual: "Manual de Contabilidad", seccion: "4.4.1.1 Asignación de Cuentas Tipo Categoría de Recursos.", pagina: null}
+  - {id: img-6571152e2a2f-0000, manual: "Manual de Contabilidad", seccion: "6571152e2a2f.png", pagina: null}
+  - {id: img-063e4c3fa737-0000, manual: "Manual de Contabilidad", seccion: "063e4c3fa737.png", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

@@ -1,0 +1,188 @@
+id: nominas.registrar-ficha-del-trabajador
+version: 1
+modulo: nominas
+titulo: "Registrar la información en la ficha del trabajador"
+objetivo: "Completar la ficha de cada trabajador con la información que se usa para el proceso de la nómina y para el T-REGISTRO que se envía a la SUNAT mensualmente."
+nivel: intermedio
+preguntas:
+  - "cómo lleno la ficha del trabajador en nóminas"
+  - "donde registro la afp de un obrero"
+  - "como pongo el tipo de contrato y el regimen laboral del trabajador"
+  - "dónde se registran los datos para el t-registro"
+  - "como agrego a los hijos o la esposa como derecho habiente"
+  - "en que parte pongo el banco y la cuenta donde le depositan al trabajador"
+  - "como registro el recurso equivalente y la categoria del obrero"
+  - "como completo la ficha personal del trabjador"
+  - "donde marco essalud vida o comision mixta afp"
+  - "el trabajador es practicante, donde pongo la modalidad formativa"
+aliases:
+  - "ficha del trabajador"
+  - "ficha personal"
+  - "datos del trabajador"
+  - "datos para el t-registro"
+  - "afiliaciones del trabajador"
+entidades:
+  modulo: "Nóminas"
+  pantallas: ["Personal Disponible", "Ficha personal", "Afiliaciones", "Derecho Habiente", "Relación Laboral"]
+  objetos: ["trabajador", "recurso equivalente", "AFP", "derecho habiente", "tipo de contrato", "T-REGISTRO"]
+prerrequisitos:
+  - texto: "A cada uno de los trabajadores se registran sus datos en la ficha, sólo en el multiproyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046]
+  - texto: "La esposa o conviviente y los hijos deben estar previamente registrados en el catálogo de Socio de Negocio en la rama Derecho Habiente."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s048]
+pasos:
+  - n: 1
+    id: "nominas.registrar-ficha-del-trabajador#1"
+    accion: "En el escenario **Personal Disponible**, haga clic derecho sobre el nombre del trabajador para acceder a su ficha."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047, img-d4e1ce779ad8-0000, img-f390ef5bc729-0000]
+    pagina: null
+    fotos:
+      - id: "60b80a0e8fdf"
+        ruta_o_url: "imagenes/manual-de-nominas/d4e1ce779ad8.png"
+        pagina: null
+        ocr: "Proyecto 02001004 MULTIPROYECTO\n\nTipo de Némina [002 Régimen C.C. con BB.SS. - Obreros\n\na] Xy G| Clic derecho sobre el nombre del trabajador\n\nCédigo Nombre: Categoria Recurso equivalente\n22000033 £() Adicionar tl"
+      - id: "7a3f11e958be"
+        ruta_o_url: "imagenes/manual-de-nominas/f390ef5bc729.png"
+        pagina: null
+        ocr: "a\n(@ Ficha personal (| © [een\nCédigo 22000032\n“eo Sree ® a) ® ®\nSv ass GF"
+  - n: 2
+    id: "nominas.registrar-ficha-del-trabajador#2"
+    accion: "En la pestaña **General**, elija el **Recurso equivalente**: un recurso presupuestado o un recurso del catálogo, usando el botón."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047, img-9a7028c977ce-0000]
+    pagina: null
+    fotos:
+      - id: "5aa43cabbf38"
+        ruta_o_url: "imagenes/manual-de-nominas/9a7028c977ce.png"
+        pagina: null
+        ocr: "rx\nGF rca i eae\nCédigo 22000082\n“ on oe ® a) fo) ®\nGeneral | costes | Procesos | ngresos | Horarios | Haeres | Tareo automatico | Constentes |\n(@TRe BeiPrecupuesi] ZC vel catélogo\nRecurso\nequivalente|101010005 [PEON a 44\nener feos Peon = ey\nceugeatin [PTOCEZO4 Trebabe esmunes ~ [ey\nPartida de (6h et\nControl\nTareador (22000037 [CJA CHAMPI, LUIS ALFONSO = (al\nGrupo de\nTrabajo [0101001 |OBREROS oe\nSo…"
+  - n: 3
+    id: "nominas.registrar-ficha-del-trabajador#3"
+    accion: "Elija la categoría considerada en la nómina y, del catálogo de ocupaciones, la ocupación del trabajador."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047]
+    pagina: null
+  - n: 4
+    id: "nominas.registrar-ficha-del-trabajador#4"
+    accion: "Si el trabajador permanece todo el tiempo laborando en una sola partida de control, regístrela; revise el tareador y el grupo asignado al trabajador."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047]
+    pagina: null
+  - n: 5
+    id: "nominas.registrar-ficha-del-trabajador#5"
+    accion: "Mantenga seleccionado **Activo** mientras el trabajador esté laborando en el proyecto."
+    resultado: "No seleccionado, el trabajador ya no es mostrado en los tareos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047, img-9a7028c977ce-0000]
+    pagina: null
+  - n: 6
+    id: "nominas.registrar-ficha-del-trabajador#6"
+    accion: "Haga clic en **RRHH** para acceder a la ficha RR.HH. con los datos de relación laboral para el T-REGISTRO."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047, img-9a7028c977ce-0000]
+    pagina: null
+  - n: 7
+    id: "nominas.registrar-ficha-del-trabajador#7"
+    accion: "Registre el código de afiliación a la AFP (sólo si está afiliado) y use los botones para elegir la **Categoría**, el **Tipo Trabajador** y el **Estado Civil**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047, img-77fe27a82bee-0000]
+    pagina: null
+    fotos:
+      - id: "bf6f170f54b7"
+        ruta_o_url: "imagenes/manual-de-nominas/77fe27a82bee.png"
+        pagina: null
+        ocr: "lions Saal\n\nSocio de Negocio ALZAMORA GONZALES, CARLOS\n\nalee QWeERI2345¢D\nCategoria -\n\nTrabajador u [Trabejador ad 44\nTipo Trabajador 27 — |CONSTRUCCION clviL = 44\nEstado Civil 05 Conviviente ¥ Discapacidad = [~\n\nEnviar Boleta de Pago a:\n\nle Correo Corporativo\n\nCoven Personal\n\n210-1107\n\nSS Eee — eee\n\nComisién Mixta AFP [~ ESSalud Vida [~\n\n= Pea 4 a-10-7-1 4 a-10-7-2\n\nTipo afiiacién [2-10-73 Fecha …"
+  - n: 8
+    id: "nominas.registrar-ficha-del-trabajador#8"
+    accion: "Registre una selección en **Discapacidad** si el trabajador la tiene y elija el tipo de correo electrónico para que reciba su boleta de pago."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s048, img-77fe27a82bee-0000]
+    pagina: null
+  - n: 9
+    id: "nominas.registrar-ficha-del-trabajador#9"
+    accion: "Elija la pestaña **Afiliaciones**, marque **Comisión Mixta AFP** o **ESSALUD Vida** si corresponde y registre los tipos de afiliación del trabajador con su fecha de inicio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s048]
+    pagina: null
+    fotos:
+      - id: "5c03d7c5925e"
+        ruta_o_url: "imagenes/manual-de-nominas/2671f361e063.png"
+        pagina: null
+        caption: "Datos para el registro"
+        ocr: "a-10-10 ai0-1\nComisién Mixta AFP [~ esSalud vida [~\nAye a 10-7-1)5 a10-7-2\ni ee ee | Fecha Término\nPensiones AFP INTEGRAS.A 110172018\nSalud SEGURO SOCIALDESALUD = 11/01/2016\nS.C.TR. Salud RIMAC SEGUROS Y REASEGURC 11/01/2016 a-10-7-4"
+  - n: 10
+    id: "nominas.registrar-ficha-del-trabajador#10"
+    accion: "Elija la pestaña **Derecho Habiente** para registrar a la esposa o conviviente, incluidos sus hijos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s048]
+    pagina: null
+    fotos:
+      - id: "680663c388b4"
+        ruta_o_url: "imagenes/manual-de-nominas/eab04bcde2b1.png"
+        pagina: null
+        caption: "Datos para el registro,"
+        ocr: "ou lapioeynontree acne encoltatar_[ywessetta\nDMI |Apellidos y Nombres Nacimiento |Sexo [familiar [que acrecita\nIDE UNIEN DE HECHO:\n42112441 |ALZAMORA CARRIZALES, ALBERTO |20/07/2011 Hijo. ACTA DE NACIMIENTO ©\nttn (<a\nIQUE SUSTENTA, FILIACION."
+  - n: 11
+    id: "nominas.registrar-ficha-del-trabajador#11"
+    accion: "Elija la pestaña **Educación** y use los botones para elegir el tipo de educación, la institución educativa, la carrera y el año de egreso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s048]
+    pagina: null
+    fotos:
+      - id: "a0918f0a38e7"
+        ruta_o_url: "imagenes/manual-de-nominas/d07845b48fb6.png"
+        pagina: null
+        caption: "Datos a registrar,"
+        ocr: "a 10-10 a-10-11\n\nSituacién Educetiva |p7 EDUCACION SECUINDARIA COMPLETA a1O-9-1 ow |\nEducacién completa en institucién educativa [W={a-10-9-2\n\nInstitucién Educativa (241123512 |SENCICO-LIMA a10-G-3 = wn |\ncarers 241123512531045 |EDIFICACIONES a10-9-de |\nAfio de egreso 2015 v|e{a-10-9-5"
+  - n: 12
+    id: "nominas.registrar-ficha-del-trabajador#12"
+    accion: "Elija la pestaña **Relación Laboral** y use los botones para elegir el tipo de contrato, el régimen laboral, la periodicidad de remuneración, el tipo de pago, la situación, la situación especial y la categoría ocupacional; registre el monto de contrato."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s048, web-https-documentacion-s10peru-com-manual-d-s049]
+    pagina: null
+    fotos:
+      - id: "a9d6c54cad98"
+        ruta_o_url: "imagenes/manual-de-nominas/108dba1f8c34.png"
+        pagina: null
+        caption: "Datos para el registro,"
+        ocr: "(210-3) (210-10 ai0-7i\nTipo de Contrato [11 [DE TEMPORADA a@10-10-1} «= 24 |\ncr\n\nRégimen Labora 4-10-10) NST RUCCION CIvIL a 10-10-4) a-10-10-2)> 24\n\nHoratio Nocturno Jornada maxima de trabajo [¥ ——Sindicalizado [~ —-{a-10-10-5\n\nPeriodicidad ib __IsemanaL 7\n\nRemuneracién (4-10-10-7 3-10-10-6) a4\n\nRégimen alternativo ) Renta Sta exonerado [~=={_a-10-10-8\n\nTAO 2 |DEPOSITO EN CUENTA a10-10-— 44\n\nRemu…"
+  - n: 13
+    id: "nominas.registrar-ficha-del-trabajador#13"
+    accion: "Si el trabajador está en modalidad formativa laboral, use los botones para elegir el tipo de modalidad formativa y el tipo de centro de formación, y registre el seguro médico."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s049, img-45cc49a7a3c3-0000]
+    pagina: null
+    fotos:
+      - id: "b0e64ab0083a"
+        ruta_o_url: "imagenes/manual-de-nominas/45cc49a7a3c3.png"
+        pagina: null
+        ocr: "Tipo Modalidad Formative [ACTUALIZACION PARA LA REINSERCION LABORAL\n\nTipo Centro Formacion —|INSTITUTO.\n\nSeguro Médico [No\n\n(210-3) (2-10-10) af0-71\nTipo Modalidacl 07 ACTUALIZACION PARA LA REINSERCION LABORAL[a-10-11-1 =... a4]\nFormativa *\nTipo Centro 3 Instituto a-10-11-2 = 24\nFormacién ba)\nSeguro Médico P—(a-10-11-3\n\nAceptar Cancelar"
+  - n: 14
+    id: "nominas.registrar-ficha-del-trabajador#14"
+    accion: "En la pestaña **Costos**, elija el tipo de moneda."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s049, img-5e5e2da97f9a-0000]
+    pagina: null
+    fotos:
+      - id: "8953c69146cc"
+        ruta_o_url: "imagenes/manual-de-nominas/5e5e2da97f9a.png"
+        pagina: null
+        ocr: "i j=]\nCédigo 22000032\nco APRRMORA oo © fo) ® ®\nGeneral Procesos | Ingresos | Horarios | Haberes | Tareo analowséitesy | Sonwtertes |\n\nMoneda or [SOLES | d4|\n\nCosto hora promedio 0.0000 Disponible sélo para el\n\n(incluye beneticios sociales) modulo de Gerencia de\n\nroyectos, al usar Tareo\nPrecio presupuestado del p 0 d '\nrecurso equivalente estandar\nAceptar Cancelar"
+  - n: 15
+    id: "nominas.registrar-ficha-del-trabajador#15"
+    accion: "En la pestaña **Haberes**, use los botones para elegir el **Banco** y el número de cuenta donde se efectuará el depósito del pago de su remuneración."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s051, web-https-documentacion-s10peru-com-manual-d-s050]
+    pagina: null
+verificacion: []
+errores_frecuentes:
+  - sintoma: "No puede asignar derecho habiente al trabajador."
+    solucion: "En el caso de elegir Soltero en el estado civil, no podrá asignar derecho habiente al trabajador."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s048]
+  - sintoma: "En los catálogos del T-REGISTRO falta un código que agregó la SUNAT."
+    solucion: "Toda la información de esos catálogos es proporcionada por la SUNAT; en el caso de adiciones que realice la SUNAT, el usuario debe solicitar al S10 que la incluya en la lista."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047]
+  - sintoma: "La nómina usa una sola moneda para todos."
+    solucion: "La nómina sólo usa un tipo de moneda para todos los trabajadores: elija el mismo en la pestaña Costos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s049]
+relacionados: [nominas.seleccionar-personal-disponible, nominas.registrar-cese-del-trabajador, nominas.asignar-horario-a-los-trabajadores, nominas.registrar-renta-de-quinta-de-otras-empresas]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s046, manual: "Manual de Nóminas", seccion: "5.2.2 Selección del Personal Disponible para los proyectos", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s048, manual: "Manual de Nóminas", seccion: "5.2.3 Registro de información en la ficha del trabajador (2)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s047, manual: "Manual de Nóminas", seccion: "5.2.3 Registro de información en la ficha del trabajador (1)", pagina: null}
+  - {id: img-d4e1ce779ad8-0000, manual: "Manual de Nóminas", seccion: "d4e1ce779ad8.png", pagina: null}
+  - {id: img-f390ef5bc729-0000, manual: "Manual de Nóminas", seccion: "f390ef5bc729.png", pagina: null}
+  - {id: img-9a7028c977ce-0000, manual: "Manual de Nóminas", seccion: "9a7028c977ce.png", pagina: null}
+  - {id: img-77fe27a82bee-0000, manual: "Manual de Nóminas", seccion: "77fe27a82bee.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s049, manual: "Manual de Nóminas", seccion: "5.2.3 Registro de información en la ficha del trabajador (3)", pagina: null}
+  - {id: img-45cc49a7a3c3-0000, manual: "Manual de Nóminas", seccion: "45cc49a7a3c3.png", pagina: null}
+  - {id: img-5e5e2da97f9a-0000, manual: "Manual de Nóminas", seccion: "5e5e2da97f9a.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s051, manual: "Manual de Nóminas", seccion: "5.2.3 Registro de información en la ficha del trabajador (5)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s050, manual: "Manual de Nóminas", seccion: "5.2.3 Registro de información en la ficha del trabajador (4)", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

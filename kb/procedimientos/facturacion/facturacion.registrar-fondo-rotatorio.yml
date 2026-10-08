@@ -1,0 +1,308 @@
+id: facturacion.registrar-fondo-rotatorio
+version: 1
+modulo: facturacion
+titulo: "Registrar un fondo rotatorio (caja chica) y sus reembolsos"
+objetivo: "Crear en el escenario Fondos Rotatorios la caja chica de un responsable, asignarle el documento de pago que la financia y registrar dentro de ella los reembolsos con los documentos que sustentan los gastos, hasta cerrarlos para que Finanzas devuelva lo gastado."
+nivel: avanzado
+preguntas:
+  - "cómo creo un fondo rotatorio en facturación"
+  - "como registro la caja chica de un responsable"
+  - "como le asigno el dinero al fondo rotatorio"
+  - "agregar documento de pago a la asignacion de fondo"
+  - "como registro los gastos de caja chica en el fondo rotatorio"
+  - "como genero un reembolso dentro del fondo rotatorio"
+  - "quiero que finanzas me devuelva lo gastado de la caja chica, que hago"
+  - "fondo rotativo s10 pasos"
+  - "la caja chica como se repone en s10"
+  - "en movimientos no me aparece la asignacion de fondo"
+aliases:
+  - "fondo rotatorio"
+  - "registrar fondo rotatorio"
+  - "caja chica"
+  - "fondos rotatorios"
+  - "reembolso de caja chica"
+entidades:
+  modulo: "Facturación"
+  pantallas: ["Fondos Rotatorios", "Fondo Rotatorio", "Datos Generales"]
+  objetos: ["fondo rotatorio", "caja chica", "asignación de fondo", "reembolso", "documento de pago", "recurso"]
+prerrequisitos:
+  - texto: "El usuario debe ser RESPONSABLE DE FONDO ROTATORIO, la persona encargada del fondo: solo él puede adicionar su fondo asignado. Se verifica en el grupo Inicio, escenario Datos Generales."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s054]
+  - texto: "El ADMINISTRADOR DE FONDO ROTATORIO es el encargado de registrar los fondos rotatorios para todos los proyectos y tiene atributos para corregir cualquier fondo rotatorio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s054]
+pasos:
+  - n: 1
+    id: "facturacion.registrar-fondo-rotatorio#1"
+    accion: "Ingrese al grupo **Por Pagar**, escenario **Fondos Rotatorios**."
+    donde: "Módulo de Facturación"
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s055]
+    pagina: null
+    fotos:
+      - id: "f204cfe800b0"
+        ruta_o_url: "imagenes/manual-de-facturacion/f1d922c247fc.png"
+        pagina: null
+        caption: "Registro del Fondos Rotatorios dentro del Grupo por Pagar escenario Fondos Rotatorios."
+        ocr: "Archivo Ver Cotslogos: Heramients. 2\nBRea\na Fondos Rotatorios\n(E288 -Beda\nas\neonbobos\n00 Cereal Fondo “I les cutaserposcn PILZ cupo:\nPe ee ee oeserscinProvecto _|Noneds _[Teodeconbo|estsio _|obsevachnes\nRODRIGUEZ BRAVO,ROS APERTURAFONDO ROTATOROFNER ODI FNANZAS 2015S 1 ‘ber\nLigidesény 000002 ZENTENO.ELRON,OSVAI ASGNACINDE CAIACHCA——_P.PRLEBA os 4 enado\neens Detlads\n_ En el Grupo Por Pagar, escenar…"
+  - n: 2
+    id: "facturacion.registrar-fondo-rotatorio#2"
+    accion: "Use la opción **ADICIONAR** y, en la ventana de fondos rotatorios, ingrese los datos informativos para el inicio de la Caja Chica, incluidos los campos obligatorios."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s055]
+    pagina: null
+    fotos:
+      - id: "7df382285b95"
+        ruta_o_url: "imagenes/manual-de-facturacion/c616a67fa602.png"
+        pagina: null
+        caption: "Al Utilizar la opción ADICIONAR aparecerá una ventana de fondos rotatorios donde se tendrá que ingresar algunos datos informativos para el inicio de la Caja Chica."
+        ocr: "a $10 Facturacion: 00002490 - HAUG S.A. - Principal =|) x\nArchivo Ver Catélogos Herramientas ?\nBea\n5g) Tema A\n|Fondos Rotatorios\n~ | Bea\nReenblcs oo caf) Sse fonnonteo fRALG SA =] d4] a\nSee il\nCo Fecha = cto = Estado Abierto:\ney fas =] Peete hl\nReembolsos Detallado Deseriocién\nie Grae 5\n‘Cronograma de Pagos y\nFondos Rotatorns aya HS veeqR\noj0 ——Campo|Socio de Negocio [Er cuaknie poscin (RID) cro:…"
+      - id: "4cf554289bed"
+        ruta_o_url: "imagenes/manual-de-facturacion/2c0bc7fe527a.png"
+        pagina: null
+        caption: "Existen Campos obligatorios por registrar en el Fondo Rotatorio. Luego de registrar los datos complementarios Iniciaremos con los movimientos de la Caja."
+        ocr: "3 $10 Facturacion: 00002490 - HAUG S.A. - Principal -|o| x\nArchivo Ver Catilogos Herramientas 2\naReae\n2 ig) Tema 5\nFondos Rotatorios\n.| Baa\n| Bieri) eneresa — fooooaia) ALOSA IM\neal “Fondo Responsable foo002525 [CARDENAS ACERO, YESSENA =| 64)\nee ae perrren\ncoe, | [nas =] Pos fis as commaumes ais =]\nReembalsos Detallado Descripcién [ASIGNACION DE FONDS ROTAOTIOS - CONTABILIDAD =\nMonede for WEVOSSOL…"
+  - n: 3
+    id: "facturacion.registrar-fondo-rotatorio#3"
+    accion: "En la pestaña **ASIGNACIÓN DE FONDO**, haga clic derecho y elija **Agregar Documento de Pago** para agregar un documento ya registrado en documentos por pagar y PAGADO por el módulo Administrativo (o **Generar Documento de Pago** para crearlo y esperar su pago)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s055]
+    pagina: null
+    fotos:
+      - id: "1429e5bdd6e8"
+        ruta_o_url: "imagenes/manual-de-facturacion/6c50166c5571.png"
+        pagina: null
+        caption: "Desde la pestaña Asignación de Fondo, clic derecho Agregar Documento de Pago."
+        ocr: "3 $10 Facturacion: 00002490 - HAUG S.A, - Principal =|o| x\nArchivo Yer Catilogos Herramientas 2\nBRe®@\nH Tema 4 ae\nia Fondos Rotatorios\n~ (Ee\nEr -\nei Arasrehs (pilin COCO ESS 14) -yFonto\na Sucursal —_fogo03490 HAUG SA =| 44 come\nResponsable =\nN° Fondo *sponsable (90002525 |CARDENAS ACERO, YESSENIA Ly\nei ooo Fecha s7n2no13 »| Proyecto froar2 fas CONTABILIDAD 2013 D cy Estado Abierto\nLiquidacién y oo…"
+  - n: 4
+    id: "facturacion.registrar-fondo-rotatorio#4"
+    accion: "En la ventana de búsqueda, detecte el documento pagado por el nombre del responsable o socio negocio que llevará el fondo rotatorio y selecciónelo con doble clic."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s055]
+    pagina: null
+    fotos:
+      - id: "311fcb917e3a"
+        ruta_o_url: "imagenes/manual-de-facturacion/ac395a6c7ebc.png"
+        pagina: null
+        caption: "Al Utilizar la opción mencionada en el paso 6. Aparecerá una ventana que me permitirá realizar la búsqueda del documento Pagado, detectarlo por el nombre del responsable o socio negocio quien llevara el Fondo Rotatorio."
+        ocr: "gS $10 Facturacion; 00002490 - HAUG S.A. - Principal -|o) x\nArchivo Ver Catlogos Herramientas 2\nBRa® 5 Seleccionar la opcion de A\n: Al Seleccionar la opcion de Agregar\n5g) Terma | .\n_| ,\noe eee) 2 eneesatOND PUOSA =] oe =m 27.202 FeuTstro de Compras done\na = = p}debe de realizarse la busqueda del\nas rrastre hac lab WEy2 8 veaeqe stocument, iitrara los documentos\nReembalsos Sucursal Pagados. Ubicar…"
+  - n: 5
+    id: "facturacion.registrar-fondo-rotatorio#5"
+    accion: "Con el documento pagado seleccionado, use la opción **PARRILLA**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s056]
+    pagina: null
+    fotos:
+      - id: "8e26c904a212"
+        ruta_o_url: "imagenes/manual-de-facturacion/9f49b0d2803e.png"
+        pagina: null
+        caption: "Luego se tener Seleccionado el Documento Fondo Rotatorio PAGADO utilizar la opción denominada como PARRILLA."
+        ocr: "=I"
+      - id: "0eb8da8c28be"
+        ruta_o_url: "imagenes/manual-de-facturacion/ccbe7f05bd8e.png"
+        pagina: null
+        caption: "Luego se tener Seleccionado el Documento Fondo Rotatorio PAGADO utilizar la opción denominada como PARRILLA."
+        ocr: "e 510 Facturacii OG002490 - MALIG SA. - Principat Lele] =]\na, Sei\nsbe0 | ‘Reso de Compras, Sr\nsere La Fa Tian mien IB\na ~~ eam C eT REET\na Pate i Soc te tego =) oe) Me woe\n. omen [pec Hinge ttl cme tae [ae epe\npeemeeneed arom as ane Gn GSInLSAD il OGG OOD nD CSE) omens\nPa ‘\nrepens mPa |\nW. = . .\n2 PFU cetateteramente Corey ee tgs [tama t tC Cn | Pap\ne wi OrrPea Gawa\noe onertll < {ay oe Comm come […"
+  - n: 6
+    id: "facturacion.registrar-fondo-rotatorio#6"
+    accion: "Acepte el fondo para guardar la aceptación del dinero asignado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s056]
+    pagina: null
+    fotos:
+      - id: "d18c1d5b038b"
+        ruta_o_url: "imagenes/manual-de-facturacion/0dc52819df0e.png"
+        pagina: null
+        caption: "Luego de Agregar el Documento Pagado a la Asignación de Fondo Que indica que estas tomando el dinero que la EMPRESA te está abonando a tu cuenta vía transferencia o por un cheque para el inicio de tus operaciones en la caja Chica, aceptas el Fondo para guardar la aceptación del dinero."
+        ocr: "bres or Cuttioges Hemementer\nTeed 5\na* [Fondos LO tageene (ied |\n_ 5 Std E Sow fame porOO™~:COC:::CC 7\nommbchs = Mee | EGSscabC) Milenidned inst cau Kinin acdc i edmetad\nfe coh Denerectin — FiGORADON TE FORDOS ROTADROS - CONTABLDAD .——\n3 mee en es. cer)\nLgudicony ane 5 —-—  ————s«@<G\ne >\neget OFFms «Reda\n& OR Campolnce etegace | ftncadaaepomctin SSC a ge\nb Fecha Cooumerts foc de Saaredia_[Noo oc a…"
+  - n: 7
+    id: "facturacion.registrar-fondo-rotatorio#7"
+    accion: "En el escenario de Fondos Rotatorios, haga clic derecho sobre el fondo que está trabajando y elija **MODIFICAR**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s056]
+    pagina: null
+    fotos:
+      - id: "08d020a4f656"
+        ruta_o_url: "imagenes/manual-de-facturacion/76ab9b61bd1c.png"
+        pagina: null
+        caption: "Luego visualizarás en el escenario de Fondos Rotatorios el que estamos trabajando, Clic derecho opción MODIFICAR."
+        ocr: "dros or Cuntleges Kemewenter 7\nnaee\nJF | |Fondos Rotatonios\nere Pw a vO eau\nFeetcece ly Comper rere 2) foe cine cose = Me) uw\naint FECROUEE GRAND, ROGAMARA  AMIRTURATOREO ROUSORD RUD Oat PARAS 20° = : 7\nD panna ft\ne Utiizar la opcién de MODIFICAR para ABRIR el Fondo\nCronograme de Pages MK bee is Getaietie,\n& DY pew 6\nPond Ratanoros Cotewter Totater on Reernbotser\n‘Veoticw titede:\nne | tte tr :\n2 O…"
+  - n: 8
+    id: "facturacion.registrar-fondo-rotatorio#8"
+    accion: "Ubíquese en la pestaña de **MOVIMIENTOS** y haga clic en **generar Reembolso** para crear el agrupador de los documentos que sustentan sus gastos."
+    resultado: "Aparece una ventana donde se registran los gastos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s056]
+    pagina: null
+    fotos:
+      - id: "ae0156e51c39"
+        ruta_o_url: "imagenes/manual-de-facturacion/42624d6bf42b.png"
+        pagina: null
+        caption: "Luego de Abrir el Fondo Rotatorio nos Ubicaremos en la pestaña de MOVIMIENTOS, al visualizar la línea de Asignación de Fondo Indica que Usted ya puede hacer uso del Dinero y podrá crear los Documentos Internos y SUNAT que sustenten sus gastos."
+        ocr: "2 510 Factueacider 00002490 - HAUG SA. - Principal =o Kk\nbyien wr Ga\nrgac\n|g Tema lr teens = fiitmen Fao ra =a iefuae\n, t vores = ancevas SSCA] Teme (a\napace»\nme :\nSPR PET,\n: P. iene +O aua\na\nPordin Botetoron\nEsta Linea indica que podras hacer USO del dinero y crear tus\ndocumentos que sustenten tus gastos.\npl ‘Regered por consort ef (P2001) 1tthtd am\nBB rectactin | | cvateate pr commalert ol STADI…"
+      - id: "da3a548f876a"
+        ruta_o_url: "imagenes/manual-de-facturacion/1209c129f375.png"
+        pagina: null
+        caption: "Dentro de la pestaña MOVIMIENTOS podrá Crear los Reembolsos que es el Agrupador de Documentos que tendrá como contenido los documentos que sustenten sus Gastos. Realizaremos en este caso un Ejemplo."
+        ocr: "a $10 Facturacién: 00002490 - HAUG S.A. - Principal -|a| x\nArchivo Ver Catslogo\na)\nEBam\n: By Tema [E Empresa fooonzaan ALG SA =144) Ne Fondo\nSucursal =\n| mons FOSSA ed) | $a\n8 eS\nReembolsos Descripcién _[ASIGNAGION DE FONDOS ROTAOTIOS - CONTABILIDAD\n& Menede (or UEVOSSOLUES ——~S~S~*S | | Tse cambio [I]\nCbservacones [AS|GNACION DE FONDOS ROTAOTIOS - CONTABLDAD >\n5 oa\nLigudaciin yo\nReembolsos Detall…"
+      - id: "f29e165fdb09"
+        ruta_o_url: "imagenes/manual-de-facturacion/9d3a9bfa0b25.png"
+        pagina: null
+        caption: "Al darle Clic en generar Reembolso aparecerá una ventana donde registraremos nuestros Gastos."
+        ocr: "3 510 Facturacion: 00002490 - HAUG S.A, - Principal =|a] x\n‘Archivo Ver Catélogg\nFondo Rotatorio (= [5] x |\nspan |®\n5g) Terma E Enoresa noon ea\nsucursl ; tmeress [ooniay PaUS =\n[rorragar |e} PPoocasa0” fia) Emeresa ioonzean ASSAF #4) 1 de Reembolso\nao Be od: popes oe | a\nReembalsos: Descripcién — [aS@NAcION DI) Fecha firmarors y] Teagan [SS\nPy vine Jor OSH] | tome fet VOR SOC Allee orte [100 eto a…"
+  - n: 9
+    id: "facturacion.registrar-fondo-rotatorio#9"
+    accion: "Dentro del reembolso, use la opción **Generar Documento** para crear un documento nuevo (la segunda opción sirve para agregar documentos ya creados en documentos por pagar)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s056]
+    pagina: null
+    fotos:
+      - id: "6db8619ac9cb"
+        ruta_o_url: "imagenes/manual-de-facturacion/a9f839a86adf.png"
+        pagina: null
+        caption: "Iniciaremos con el registro de Documentos dentro del Reembolso, para este caso utilizaremos la opción de Generar Documento que es sinónimo de Crear documentos nuevos la segunda Opción se utilizará siempre y cuando exista documentos creados en documentos por pagar que se puedan agregar."
+        ocr: "3 $10 Facturacién: 00002490 - HAUG S.A. - Principal - g| x\nArchive Yer Catéloga\nFondo Rotatorio [-[s| x |\nsgee |* -\n2g) Tema lE Empresa fpooo2sso frat)\nSwarsd — oraisn fall Eneresa foam Favosa———S~*~S*S*S*ST TL oe Rebs\na. E Responsable  fyoo02525 caRy Sucursal fonoo24a0 AUG S.A. = (4) [ | Secsseen6005\na\nRearéckos [2] esi fascumcwoe) Fetba —frmmanore >] Tomato [Pe\n3 te] Nonesa BT UEVOSSC) moneda fo…"
+  - n: 10
+    id: "facturacion.registrar-fondo-rotatorio#10"
+    accion: "En la ventana de Tipo de documento, seleccione con doble clic el tipo de documento a crear."
+    resultado: "Aparece el formulario elegido, por ejemplo Facturas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s056]
+    pagina: null
+    fotos:
+      - id: "4aacfc559cfe"
+        ruta_o_url: "imagenes/manual-de-facturacion/014b27ab3183.png"
+        pagina: null
+        caption: "Al generar Documento aparecerá una ventana de Tipo de documento donde deberás Elegir qué tipo de Documento Crearás."
+        ocr: "a $10 Facturacion; 00002490 - HAUG S.A - Principal =|] x\nArchivo Ver Catslogo\nnwo 8 Farms rae\na Raa [= | FAl generar un Documento aparecera\nEig) Tema [E Empresa fovonas00 frat jun catélogo denominado tipo de\nSucursal ry Empresa n SA. e documento donde deberas elegir\nrotor Pooraica fa) Enoesa foomao faves SSS*S*~*~*S*S*S Lede Rebs ocumento donde deberds leg\nF) Responsable 5 [oa Suousel poor 5 = que…"
+      - id: "1e0f4ccf663f"
+        ruta_o_url: "imagenes/manual-de-facturacion/79859a36e9ef.png"
+        pagina: null
+        caption: "Seleccionar con Doble clic el Tipo de Documento a Crear."
+        ocr: "ro] $10 Facturacion; 00002490 - HAUG S.A, - Principal -|o| x\nArchivo Ver Catélogg “i\nBRaa a Fondo Rotatorio [=|5] x |\nog te [F emeess  fmaisa fa a Reembolso [-[5| x |\n‘Sucursal 124 a\\| Empresa 249 1ALIG S.A, -\naren | fponzaea Fa] Emerese  fioconsa au = 84) N+ de Reembolso\n‘2 ||[G) Responsable fooc02525 [cay Sueursel fooooa4en [Haus S.A 3 Sopeinl\n2 2 Ze 4 ‘godo0000008 Para este Ejercicio crearemos…"
+      - id: "a7fb5781d951"
+        ruta_o_url: "imagenes/manual-de-facturacion/5f1fd6ccdcf2.png"
+        pagina: null
+        caption: "Al Seleccionar el Tipo de Documento aparecerá el Formulario elegido en este caso Facturas, aquí estamos iniciando con el registro de documentos que sustenten nuestros gastos, en este caso un comprobante SUNAT."
+        ocr: "3 $10 Facturaci6n: 00002490 - HAUG S.A. - Principal -|q/ x\nArchiva Yer Catélogo-—He\nFondo Rotatorio. [-[5| x |\nBae 2\n: a) Tema [E Empresa foooonag 0\n‘Porras fs) SS! FOIE] emeeon OIRO FAIS SSSSCS*~*~*S*C A feet ef) -\nfor bso E esponeabie tl N Al Seleccionar con doble\n“ fooao2s: ; = i\nasi a cle ied Oorune\n| Fecha 17H220) proveedor 1 | da] aparecera el formulario\nReembolsos ay Desetipcion— fasionall…"
+  - n: 11
+    id: "facturacion.registrar-fondo-rotatorio#11"
+    accion: "Registre los datos del comprobante: socio negocio, número de documento, fecha, glosa y moneda; el proyecto es propuesto por el fondo rotatorio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s057]
+    pagina: null
+    fotos:
+      - id: "06b8af93d85d"
+        ruta_o_url: "imagenes/manual-de-facturacion/f746e9096417.png"
+        pagina: null
+        caption: "Al Crear un documento SUNAT o Interno debemos de registrar los datos del proveedor, en este caso Realizaremos una compra de Útiles es importante registrar Socio negocio, Número de Documento, Fecha, Glosa, Moneda, el proyecto es propuesto ya que inicialmente se le indicó en el fondo Rotatorio."
+        ocr: "3 $10 Facturacion: 00002490 - HAUG S.A. - Principal -\\9| x\nArchivo Yer Catélogo EDS\nBee Ei Fondo Rotatorio\n\n: res Ei\n\njam Ro onze\n\nparen lA ‘Suoursal (00002491) emaidoa [oooo24c0 [HAUG S.A. | 44) (eee Ne |\n[|G Resonsaale fPona25o| suoursal fooons@0 HAUG SA | 4 Tener en Cuenta los Datos\na a RUC 20100274621 len el comprobante en la\na 1772720 [rroveedor[oo0n2sss [TAIHENGSAF- abecera\nReenter song =<\nn…"
+  - n: 12
+    id: "facturacion.registrar-fondo-rotatorio#12"
+    accion: "En el detalle, use la opción de **Adicionar** para elegir del catálogo de Recursos el recurso que está comprando."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s057]
+    pagina: null
+    fotos:
+      - id: "465530d767f8"
+        ruta_o_url: "imagenes/manual-de-facturacion/ccb324b9e79c.png"
+        pagina: null
+        caption: "Luego de Digitar los datos del comprobante, debemos indicar los datos del detalle del comprobante que es lo que estamos comprando para este caso utilizaremos un catálogo llamado Recursos o Ítems que especifica toda una gama de consumibles entre otros por Utilizar."
+        ocr: "a $10 Facturaci6n: 00002490 - HAUG S.A. - Principal -|a] x\nArchivo Yer Cattlogop—Homs\nFondo Rotatorio [=[5] = J\naBeg |® i Forc Rctatorio\n5B) Tema lE Empresa fpooozaa|\n‘= ||| Responseble foan0252) sucursal fono24a0 [HAUG S.A ~\neS fal RUC 20100274621\nFecha 171220) Proveedor|00002553 [TAI HENG SA =| 44\nReembalsos Deseripcién 4\nF i [ASIONA Fecha [17272013 >] Fecha venciniento [17722013 >] Fecha recepc…"
+      - id: "2db5e315fac0"
+        ruta_o_url: "imagenes/manual-de-facturacion/83723ba9ac37.png"
+        pagina: null
+        caption: "La opción de Adicionar me permitirá dentro del documento elegir el recurso que estamos comprando."
+        ocr: "3 $10 Facturacion: 00002490 - HAUG S.A. - Principal -|g)| x\nArchive Ver Catélogg\nagag |# = EEA\nTg tem E reresa = oman) AD 001 FACTURA TERCEROS [=[5| x |\n=| Sucursal 10002491 Emtido a feo002490 [HAUG SA. =] a], fee Ne | cooooooe007\n7 Ec Responsable fho00252| sucursal fooo02490 [HAUG S.A. 5 44] PICU\n& | Fecha 17712720) proveedor 00002553 [TAIHENG SA ~| #4] | mene\nReenbokos |} Destin [ASN reena [TH20…"
+  - n: 13
+    id: "facturacion.registrar-fondo-rotatorio#13"
+    accion: "Realice la búsqueda del recurso, selecciónelo con doble clic y luego use la **Parrilla** para agregarlo al documento."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s057]
+    pagina: null
+    fotos:
+      - id: "ab8106eddafa"
+        ruta_o_url: "imagenes/manual-de-facturacion/aafbd339a722.png"
+        pagina: null
+        caption: "Realiza la Búsqueda del recurso para seleccionarlo y agregarlo al Documento."
+        ocr: "a $10 Facturacion; 00002490 - HAUG S.A, - Principal =|) x\nArchivo Ver Catélogg a cl\nFondo Rotatorio [x |\nBka®@ 2s eer\n:@ tem fr eo mer 001 FACTURA TERCEROS |=[o| x |\nfree Swart fE ennne ROD PABSA ed omen oc\n‘a ||) Responsable foo00252} sucursal foooo2490 [HAUGS.A, o\nr= a RUC 20100274621\niy Fecha 17/220) proveedor 00002553. [TAIHENG SA ~ 144\nReembolsos f Desern JASNA Fecha fi7n20019 _~] rchn —<—_——…"
+      - id: "3147fe8107c6"
+        ruta_o_url: "imagenes/manual-de-facturacion/4504b6a36132.png"
+        pagina: null
+        caption: "Seleccionar con Doble clic el recurso encontrado y luego utilizar la Parrilla."
+        ocr: "3 $10 Facturacion; 00002490 - HAUG S.A. - Principal -|o| x\nArchivo Ver Catélogo\na Fondo Rotatorio [=|] x |\nagen fests festa ________\niB Tere i tmeese mma) AD O01 FACTURA TERCEROS ix |\n=] Seed fom cmoe PORES oman No\n4° E Responseble fo000s2} sucursal foo0024e0 HAUGS.A = RUCIoONTaEN\na by Fecha 1771220, proveedor [00002583 [Tal HENG S& a) -\nReembol Descrincién —<—<—— Factur Luego de Seleccionar con|…"
+  - n: 14
+    id: "facturacion.registrar-fondo-rotatorio#14"
+    accion: "Indique la cantidad y el precio del recurso seleccionado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s057]
+    pagina: null
+    fotos:
+      - id: "3407dec0574d"
+        ruta_o_url: "imagenes/manual-de-facturacion/70c3623e6976.png"
+        pagina: null
+        caption: "Al Seleccionar el Recurso UTILES DE ESCRITORIO indicaremos la cantidad y precio Total, Cuando se compren en cantidades y precio unitario utilizaremos los campos a definir."
+        ocr: "3 S10 Facturacion: 00002490 - HAUG S.A. - Principal =-|o| x\nArchivo Ver Catilogo\nFondo Rotatorio [-|5] x |\nopag |@ =\n: Tema E Empresa\nF Responsq Suowsal fooonzea0 HAUG SA. | 4\nsat E - 24] RUC 20100274621\nf} Fecha | Proveedr (00002583 [TAIHENG SA, =] 44\nReenbolos | DesorncH Fecha [1771272019] Fecha vencinierto [17422013] Fecha recepiin [1722013 ~ -\nnt} Moneda Period de, 90001 0000003030)\n=] or epic…"
+      - id: "b7adb283b432"
+        ruta_o_url: "imagenes/manual-de-facturacion/39c9a98ccbef.png"
+        pagina: null
+        caption: "Al seleccionar el recurso, indicaremos los importes de cantidad y precio."
+        ocr: "3 510 Facturacion; 00002490 - HAUG SA. - Principal -|a| x\nArchivo Ver Catilogg\nFondo Rotatorio [- [5] x |\nspaa 2\ncat fo\n‘Sucursal|) Emitio a [00002490 [HAUG S.A. =] 84) 5. (Comelative N° [amen]\nEF] Responsq Suoursal foon02480 HAUG S.A a)\n* E * a RUC 20100274621\nJ) recta | moveesxpomasss farenosa SS\nRass ff] Dem roca [2205 ec vnc [MEME ~] coarse AAEM -\nmica\nPa < sploacin [31122013 _v POTST2 Jocient…"
+  - n: 15
+    id: "facturacion.registrar-fondo-rotatorio#15"
+    accion: "Si necesita ingresar a almacén lo comprado y descargarlo directamente a una partida de control, use la opción **INGRESO A ALMACÉN** de la parte inferior del documento."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s057]
+    pagina: null
+    fotos:
+      - id: "da769e16d35e"
+        ruta_o_url: "imagenes/manual-de-facturacion/a4f219af272d.png"
+        pagina: null
+        caption: "Luego de Digitar la cantidad y el importe del comprobante de pago existe en la parte inferior de documento una opción llamada INGRESO A ALMACÉN, esta opción permite al usuario realizar el ingreso a almacén y realizar la descarga directa eligiendo una partida de control realizándose el consumo en el instante."
+        ocr: "a S10 Facturacién: 00002490 - HAUG S.A, - Principal -|a} x\nArchivo Yer Catélogg SCs\nBeee E} 7 ondo Rotatorio\n5 a) Teme lE Engrese\n\n(Comelati 2\nbor Pagar E Be) Gey a ce S|\nnq = |LE| Responsy)sucusa froomean FAOSA SSC aC ava\nfa f} esha |) proveedor [00002853 [TAIHENG S& | 64\nReembelsos Descrne Feche [1727013 >] recha vencininto [17122013 _~] recha recepokn [172013 _~ _\na cr | Steere, ome\nserved\nvigi…"
+  - n: 16
+    id: "facturacion.registrar-fondo-rotatorio#16"
+    accion: "Guarde el documento y luego guarde el reembolso."
+    resultado: "El reembolso suma el importe total de cada documento y el fondo rotatorio muestra el reembolso en estado Registrado, con el saldo disminuyendo en base al fondo asignado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s057]
+    pagina: null
+    fotos:
+      - id: "2dd27bab9c89"
+        ruta_o_url: "imagenes/manual-de-facturacion/c054e3eab6d1.png"
+        pagina: null
+        caption: "Al Guardarse el documento podremos visualizar que el reembolso irá sumando el importe total de cada documento, asimismo dentro del mismo Reembolso podremos crear más documentos SUNAT e Internos. En este Caso guardaremos el reembolso para continuar con el ejercicio."
+        ocr: "3 ‘$10 Facturacion: 00002490 - HAUG S.A. - Principal =|a| x\nArchivo Ver Catélogg\nSendo Rotwtere aie x\nageae |# -\nfal Tema E Empresa foooozaa0 [ral]\nm] Sveusel — foonaya0 Flay Enos fccoaiso aus ede Reems\n6 J} Fecha f7vranaia “>| Emtiloa fooaass [ParseNmSaceRo, VESSawa——SCSCSCS~S~S~S\nReenbokos |] Deseptin [agrowacionoe Fecha amore] TW Ammann [Fa\nP| Nt] Moneda [or JNUEVOSSq Moneda [oT [NUEVOS SOLES a…"
+      - id: "9790ee526003"
+        ruta_o_url: "imagenes/manual-de-facturacion/d4f69969a64e.png"
+        pagina: null
+        caption: "Guardar el Reembolso."
+        ocr: "3 $10 Facturacion: 00002490 - HAUG S.A. - Principal -|o| x\nArchivo Ver Catélogo BoEs\nERG a = Fondo Rotatorio\n\n: ail\n\n5 ig) Tema fi “ fooonzss0 frat ;\n\nucursal 7 impresa 58\n=| fooonzeao Hall) Emeresa —ffooozaan HAUG SA 144) 1° de Reembolso\n“ a Responsable  foq002525 can) Sueursal [oog02490 [HAUG S.A. 2 44) [-Sencoooon5\na gy Fecha fiznzmo13 |) Emo — foo002525 [CARDENAS ACERO, VESSENIA ~| 4\nReembolso…"
+      - id: "0e9897cb634d"
+        ruta_o_url: "imagenes/manual-de-facturacion/7ba668ddac6c.png"
+        pagina: null
+        caption: "Vista del Fondo Rotatorio con un Reembolso en estado Registrado, donde el saldo está disminuyendo en base al fondo asignado."
+        ocr: "g $10 Facturacion; 00002490 - HAUG S.A, - Principal -o x\nArchivo Ver Catélogg\na\nBRea\n: ce ry a\n5g) Tema E imeresa —_fongo24a0 HALO SA #4) Ne Fondo\nSuowsel — foonzaad ave a\n= Sse fooooaaso Haus s.a. 44) a\na EF) resenssie ross [CARDENAS ACERO, VESSENA =| 44]\nFecha ‘irnanois | Proyecto froor2 [0403 CONTABLDAD 2013 =] 04] Es Abierto\nReembokes —|f-)Desopoin [aStenACIONDEFONDOS ROTAOTIOS - CONTABLDAD\n.…"
+  - n: 17
+    id: "facturacion.registrar-fondo-rotatorio#17"
+    accion: "Para continuar registrando documentos que sustenten los gastos en ese reembolso, use la opción de **Ver Reembolso**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s058]
+    pagina: null
+    fotos:
+      - id: "736b28bd854b"
+        ruta_o_url: "imagenes/manual-de-facturacion/a55f310ecb8a.png"
+        pagina: null
+        caption: "Opción de Ver Reembolso para continuar Registrando los documentos que sustenten los gastos."
+        ocr: "3 ‘$10 Facturacion: 00002490 - HAUG S.A. - Principal L=|@] x |\nArchivo Ver Catélogos Herramientas 2\nnaa 5\na) Tema\n— Foudos R |\n(Aaa ret frame fae ll |\n& FROIN) esponsane fecazsas FaRDENASACERO ESSER\na Fecha frmmanors | Provect froor2 {3 CONTABILDAD 2013, =] a] todo Abierto\nGree sernse er reresscs a] 4] remo\nLiquidacin y }o00002 71) servaciones [ASIGHACION DE FONDOS ROTAOTIOS - CONTABILDAD a]\nReenb…"
+  - n: 18
+    id: "facturacion.registrar-fondo-rotatorio#18"
+    accion: "Para la devolución de lo gastado, el responsable debe usar la opción de **ESTADO** (Cerrado) del reembolso."
+    resultado: "El área de Finanzas sabrá que debe realizar la devolución del importe que suma el reembolso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s058]
+    pagina: null
+    fotos:
+      - id: "6c2eb59b4cdc"
+        ruta_o_url: "imagenes/manual-de-facturacion/f7ab1bd32576.png"
+        pagina: null
+        caption: "Para la Devolución de lo gastado el RESPONSABLE deberá de utilizar la opción de ESTADO (Cerrado) de esta manera el área de FINANZAS podrá saber que debe realizar una devolución del importe que sume el reembolso."
+        ocr: "3 S10 Facturacion: 00002490 - HAUG S.A. - Principal -|5/ x\nArchivo Ver Catilogos Herramientas 2\nBee A\n5g) Tema =\nFondos R Sree Ye rondo\n9 Pagar\n[Ee ow femmes ed) | $a\n4 FRPP) esvonsabic foooo2s25 [CARDEVASACERO, VESSENA | 4\nReenbobos | Campa frzmarcrs ~] Prevecte froor2 oso CONTABLDAD 2013 ee] bh Estate Abierto\n; nerondo fo} Ceeerbciin [ASGHACIONDE FONDGS ROTAOTOS-COMTABLAD. SSCS\n4 o0o0or ff ioe o…"
+verificacion:
+  - texto: "Al ubicarse en la pestaña MOVIMIENTOS, la línea de Asignación de Fondo indica que ya puede hacer uso del dinero y crear los documentos internos y SUNAT que sustenten sus gastos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s056]
+  - texto: "El fondo rotatorio guardado se ve en el escenario y, con clic derecho, se puede modificar para continuar con el registro de información."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s058]
+errores_frecuentes:
+  - sintoma: "Generó el documento de pago desde el fondo y aún no puede registrar gastos."
+    solucion: "Con Generar Documento de Pago el sistema crea recién el documento y queda a la espera de su pago para el inicio de las operaciones de la caja; con Agregar Documento de Pago (un documento ya PAGADO) puede crear los reembolsos de inmediato."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s055]
+relacionados: [facturacion.registrar-reembolso]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s054, manual: "Manual de Facturación", seccion: "6.6.1 Configuración del Fondo Rotatorio.", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s055, manual: "Manual de Facturación", seccion: "6.6.2 Registro del Fondo Rotatorio (1)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s056, manual: "Manual de Facturación", seccion: "6.6.2 Registro del Fondo Rotatorio (2)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s057, manual: "Manual de Facturación", seccion: "6.6.2 Registro del Fondo Rotatorio (3)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s058, manual: "Manual de Facturación", seccion: "6.6.2 Registro del Fondo Rotatorio (4)", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

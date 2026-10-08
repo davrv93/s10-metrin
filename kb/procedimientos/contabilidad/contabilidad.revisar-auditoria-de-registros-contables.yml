@@ -1,0 +1,59 @@
+id: contabilidad.revisar-auditoria-de-registros-contables
+version: 1
+modulo: contabilidad
+titulo: "Revisar la auditoría de registros contables"
+objetivo: "Evaluar en el escenario de control Auditoría de Registros Contables el correcto procesamiento de los asientos contables de todas las operaciones realizadas en el S10 ERP."
+nivel: intermedio
+preguntas:
+  - "como reviso que todos los documentos tengan asiento contable"
+  - "hay documentos que no generaron asiento, donde lo veo"
+  - "para que sirve la auditoria de registros contables"
+  - "como veo las transacciones sin asientos"
+  - "el numero de registros no cuadra con los asientos, que hago"
+  - "donde controlo que se procesaron bien los asientos del periodo"
+  - "auditoria de rejistros contables s10 como se usa"
+  - "ver asientos sin transacciones contabilidad"
+aliases:
+  - "auditoría de registros contables"
+  - "transacciones sin asientos"
+  - "asientos sin transacciones"
+  - "control de asientos"
+entidades:
+  modulo: "Contabilidad"
+  pantallas: ["Auditoría de Registros Contables"]
+  objetos: ["asientos contables", "transacciones", "periodo"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "contabilidad.revisar-auditoria-de-registros-contables#1"
+    accion: "Ingrese al escenario de control **Auditoría de Registros Contables**, que permite evaluar el correcto procesamiento de los asientos contables."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s082]
+    pagina: null
+  - n: 2
+    id: "contabilidad.revisar-auditoria-de-registros-contables#2"
+    accion: "Revise la información procesada del periodo: compare el número de registros con el número que deberá tener el asiento contable correspondiente; si existe diferencia, la procedencia no se ha procesado correctamente."
+    fuente: [img-e4841ce98a44-0000, web-https-documentacion-s10peru-com-manual-d-s082]
+    pagina: null
+    fotos:
+      - id: "c81bad3320ad"
+        ruta_o_url: "imagenes/manual-de-contabilidad/e4841ce98a44.png"
+        pagina: null
+        ocr: "ERea8\nidle ? Auditoria de Registros Contables\nVista de Informacion procesada del periodo n° de\nS| Der |-sh|eae IRegistros que debera de tener el asiento contable\norrespondiente y si existe diferencia es por que la\nAuitoria Registros procedencia no se ha procesado correctamente.\nContables —Ssccc=\nx 10/15 Campo|Descripcién | Jen cualquier posicién |») Grupo:\nDescripcién NS Descripcién Nt Descripcién…"
+  - n: 3
+    id: "contabilidad.revisar-auditoria-de-registros-contables#3"
+    accion: "En cada línea, use las opciones **Ver Transacciones** sin asientos o **ver asientos sin transacciones** para observar de forma detallada cada uno de los procesos incompletos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s082, img-4511b9775158-0000]
+    pagina: null
+    fotos:
+      - id: "4567c2f2d31e"
+        ruta_o_url: "imagenes/manual-de-contabilidad/4511b9775158.png"
+        pagina: null
+        ocr: "Ver Eransacciones sin asientos\nver asientos sin transacciones"
+verificacion: []
+errores_frecuentes: []
+relacionados: [contabilidad.cierre-permanente-del-periodo, contabilidad.registrar-asiento-manual]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s082, manual: "Manual de Contabilidad", seccion: "10.3 Auditoría de Registros Contables", pagina: null}
+  - {id: img-e4841ce98a44-0000, manual: "Manual de Contabilidad", seccion: "e4841ce98a44.png", pagina: null}
+  - {id: img-4511b9775158-0000, manual: "Manual de Contabilidad", seccion: "4511b9775158.png", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

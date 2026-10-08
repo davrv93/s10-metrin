@@ -1,0 +1,143 @@
+id: administrativo.aprobar-solicitudes-en-app-aprobaciones
+version: 1
+modulo: administrativo
+titulo: "Aprobar, observar o rechazar una solicitud en la app S10 Aprobaciones"
+objetivo: "Revisar desde el celular, con la aplicación de Aprobaciones, las solicitudes pendientes (pedidos, órdenes de pago, órdenes de compra, contratos…) y aprobarlas, rechazarlas u observarlas."
+nivel: basico
+preguntas:
+  - "cómo apruebo una orden de pago desde el celular"
+  - "como uso la app de aprobaciones de s10"
+  - "como rechazo una solicitud en la aplicacion de aprobaciones"
+  - "como observo un pedido desde el app y le dejo un comentario"
+  - "cual es mi usuario y clave de la app aprobaciones"
+  - "no me sale la lista de corporaciones en la app"
+  - "donde veo las solicitudes que ya aprobe en el celular"
+  - "como busco una solicitud por numero o por proyecto en la app"
+  - "aprovar desde el movil ordenes de compra s10"
+aliases:
+  - "app de aprobaciones"
+  - "aprobar desde el celular"
+  - "S10 Aprobaciones"
+  - "observar solicitud"
+  - "rechazar solicitud"
+entidades:
+  modulo: "Administrativo"
+  pantallas: ["Pendientes", "Aprobados", "Observados", "Rechazados", "Filtros"]
+  objetos: ["solicitud", "orden de pago", "pedido", "corporación", "observación"]
+prerrequisitos:
+  - texto: "Descargue la aplicación de Aprobaciones en el celular desde la tienda de aplicaciones: Appstore (iPhone) o PlayStore (Android)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s003]
+  - texto: "Al enviar a aprobación un documento desde el S10 ERP, los aprobadores se registran de forma automática en la nube: el usuario es el correo electrónico registrado en su ficha de socio de negocio, y el sistema de notificaciones le envía un correo con su clave."
+    fuente: [img-e6b261419d59-0000]
+pasos:
+  - n: 1
+    id: "administrativo.aprobar-solicitudes-en-app-aprobaciones#1"
+    accion: "Una vez dentro de la app, coloque su usuario y clave."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s004]
+    pagina: null
+    fotos:
+      - id: "b59beeb458f7"
+        ruta_o_url: "imagenes/manual-de-aprobaciones/e6b261419d59.png"
+        pagina: null
+        caption: "Una vez dentro de la app colocar tu usuario y clave"
+        ocr: "Cuando se envia a aprobaci6on algun documento desde el S10 ERP, se\nregistra de forma automatica a los aprobadores en la nube, el usuario sera\nel correo electrénico registrado en su ficha de socio de negocio, en ese\nmomento el sistema de notificaciones del S10 le envia un correo con su\nclave."
+      - id: "c565261da085"
+        ruta_o_url: "imagenes/manual-de-aprobaciones/44a832e40066.png"
+        pagina: null
+        caption: "Una vez dentro de la app colocar tu usuario y clave"
+        ocr: "Correo Electrénico\nContrasefia"
+  - n: 2
+    id: "administrativo.aprobar-solicitudes-en-app-aprobaciones#2"
+    accion: "Elija la corporación a la que desea conectarse."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s004]
+    pagina: null
+    fotos:
+      - id: "5318ad257b5b"
+        ruta_o_url: "imagenes/manual-de-aprobaciones/c50c6be57e8b.png"
+        pagina: null
+        caption: "Ahora elige la corporación a la que deseas conectarte, tal como señalamos en la siguiente imagen:"
+        ocr: "Si usted esta inscrito en mas de una\ncorporacién (cada base de datos es una\ncorporaci6n, puede tener multiples\nempresas), la aplicacién le mostrara las\ncorporaciones en las que esta registrado\ny debe seleccionar una\nSi esta inscrito en una sola corporacién\nya no le mostrara esta lista.\n\nCorporacién 02 |\nSelecciona la corporacién\n\nCorporacién 01 | ala que deseas conectarte"
+  - n: 3
+    id: "administrativo.aprobar-solicitudes-en-app-aprobaciones#3"
+    accion: "En la pestaña **Pendientes**, elija el tipo de solicitud a aprobar: pedidos, órdenes de pago, órdenes de compra, órdenes de servicio, contratos, subcontratos, valorizaciones o autorizaciones de cobranza o de pago."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s006, web-https-documentacion-s10peru-com-manual-d-s005]
+    pagina: null
+    fotos:
+      - id: "34a1f321371a"
+        ruta_o_url: "imagenes/manual-de-aprobaciones/5f66db7142d0.png"
+        pagina: null
+        caption: "● Pedidos ● Órdenes de pago ● Órdenes de compra ● Órdenes de servicio ● Contratos ● Subcontratos ● Subcontratos – Valorizaciones ● Subcontratos – Autorización cobranza ● Subcontratos – Autorización Pago"
+        ocr: "Pedidos 8\n\n[f] Ordenes de Pago 9\n\nOrden de ci .\n\nEI eee eatlt) 6 El numero representa el total de\n\nsolicitudes que hay en cada una\n\nE&I orden de Servicio 3\n\nB contratos 1\n\n(E} subcontratos 2"
+  - n: 4
+    id: "administrativo.aprobar-solicitudes-en-app-aprobaciones#4"
+    accion: "Busque o elija la solicitud específica que desea revisar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s007]
+    pagina: null
+    fotos:
+      - id: "28ab624cb92c"
+        ruta_o_url: "imagenes/manual-de-aprobaciones/5fe68ad8fc6d.png"
+        pagina: null
+        caption: "Una vez dentro, busca o elige la solicitud específica que deseas revisar para después aprobar, rechazar u observar."
+        ocr: "< Grdenes de servicio\nQ = Buscador y Filtros\n0 PROYECTO: MULTIPROYECTO S10\nEy ETERNASOFT sac\nCORTEZ SANCHEZ, NELLY GAUDENCIA\n0002 (Contado)\n20/12/2019 Contado USD 219.48\nGESTION ADMINISTRATIVO -\nSISTEMA une t\nFE] MacaLtanes cARBAJAL KENSER Cada una representa la\n‘000s RAMOS CONCHA, NURY VIOLETA solicitud pendiente de\n(Contado) aprobacio\n21/03/2019 Contado PEN 5,000.00 aprobacion\nGESTION ADMINISTRA…"
+  - n: 5
+    id: "administrativo.aprobar-solicitudes-en-app-aprobaciones#5"
+    accion: "Si lo necesita, use los **Filtros** para buscar la solicitud (por ejemplo, por socio de negocio)."
+    fuente: [img-e72cb7f43811-0000, web-https-documentacion-s10peru-com-manual-d-s007]
+    pagina: null
+    fotos:
+      - id: "f5a64f902cce"
+        ruta_o_url: "imagenes/manual-de-aprobaciones/e72cb7f43811.png"
+        pagina: null
+        ocr: "Filtros\n© sinFiro\n© | Pornimero\n© [Porproyecto dicionalmente al r\n© Por socio de negocio C\n1 fe\nAceptar"
+  - n: 6
+    id: "administrativo.aprobar-solicitudes-en-app-aprobaciones#6"
+    accion: "Después de revisar la solicitud, elija **Aprobar** si está de acuerdo y desea que se ejecute, **Rechazar** si decide no aprobarla u **Observar** si quiere hacer un comentario antes de aprobarla."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s008]
+    pagina: null
+    fotos:
+      - id: "947cfd138d05"
+        ruta_o_url: "imagenes/manual-de-aprobaciones/4fe27fabaf47.png"
+        pagina: null
+        caption: "● Aprobar: si estas de acuerdo con la solicitud, y deseas que se ejecute. ● Rechazar: si no estas de acuerdo, y decides no aprobarla. ● Observar: si decides hacer un comentario u observación sobre la solicitud antes de aprobarla."
+  - n: 7
+    id: "administrativo.aprobar-solicitudes-en-app-aprobaciones#7"
+    accion: "Si eligió **Observar**, deje un comentario breve que justifique por qué necesita ser revisada."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s009]
+    pagina: null
+    fotos:
+      - id: "aa7072cf03ae"
+        ruta_o_url: "imagenes/manual-de-aprobaciones/ab76ea7ab21e.png"
+        pagina: null
+        caption: "Cuando le des en el botón observar deja un comentario breve que justifiques el por qué necesita ser revisado."
+        ocr: "0)"
+  - n: 8
+    id: "administrativo.aprobar-solicitudes-en-app-aprobaciones#8"
+    accion: "Confirme que desea observar la orden."
+    fuente: [img-b14413c4ad46-0000, web-https-documentacion-s10peru-com-manual-d-s009]
+    pagina: null
+    fotos:
+      - id: "916162993947"
+        ruta_o_url: "imagenes/manual-de-aprobaciones/b14413c4ad46.png"
+        pagina: null
+        ocr: "Confirmacién\nEstas seguro que deseas Observar la orden\nde pago Nro 006551?\nS10 DEMO\ni}\nCancelar"
+verificacion:
+  - texto: "En la pestaña Aprobados se ven las solicitudes ya aprobadas; en Observados, las que tienen un comentario u observación para que vuelvan a ser revisadas; y en Rechazados, el registro de las solicitudes rechazadas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s005]
+errores_frecuentes:
+  - sintoma: "La app no muestra la lista de corporaciones."
+    solucion: "Si está inscrito en una sola corporación ya no se muestra esa lista; solo aparece cuando está registrado en más de una corporación (cada base de datos es una corporación)."
+    fuente: [img-c50c6be57e8b-0000]
+relacionados: [administrativo.definir-aprobadores-de-pagos]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s003, manual: "Manual de Aprobaciones", seccion: "1.3.1 Descarga la Aplicación :", pagina: null}
+  - {id: img-e6b261419d59-0000, manual: "Manual de Aprobaciones", seccion: "e6b261419d59.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s004, manual: "Manual de Aprobaciones", seccion: "1.3.2 Acceder a la Aplicación:", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s006, manual: "Manual de Aprobaciones", seccion: "2.1 Los tipos de solicitudes:", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s005, manual: "Manual de Aprobaciones", seccion: "1.3.3 Vista General:", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s007, manual: "Manual de Aprobaciones", seccion: "2.2 Busca y elige solicitud que deseas revisar:", pagina: null}
+  - {id: img-e72cb7f43811-0000, manual: "Manual de Aprobaciones", seccion: "e72cb7f43811.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s008, manual: "Manual de Aprobaciones", seccion: "2.3 Aprueba, Observa o Rechaza una solicitud:", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s009, manual: "Manual de Aprobaciones", seccion: "2.4 Deja una observación:", pagina: null}
+  - {id: img-b14413c4ad46-0000, manual: "Manual de Aprobaciones", seccion: "b14413c4ad46.png", pagina: null}
+  - {id: img-c50c6be57e8b-0000, manual: "Manual de Aprobaciones", seccion: "c50c6be57e8b.png", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

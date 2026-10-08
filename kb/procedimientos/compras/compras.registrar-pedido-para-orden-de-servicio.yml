@@ -1,0 +1,143 @@
+id: compras.registrar-pedido-para-orden-de-servicio
+version: 1
+modulo: compras
+titulo: "Registrar un pedido para orden de servicio"
+objetivo: "Registrar desde el almacén de servicios un pedido de servicios o de alquiler de equipos (por ejemplo, las horas máquina de equipos presupuestados), para cotizarlo con los proveedores o generar con él la Orden de Servicio."
+nivel: intermedio
+preguntas:
+  - "como hago un pedido de alquiler de equipos para la orden de servicio"
+  - "desde que almacen se pide un servicio"
+  - "quiero pedir horas maquina de un volquete, como lo registro"
+  - "como pido un servicio en s10 compras"
+  - "no me salen los equipos para pedir el servicio"
+  - "como pongo la fecha de entrega a los equipos del pedido"
+  - "pedido para orden de serivicio paso a paso"
+  - "donde registro las horas que voy a pedir de cada equipo"
+aliases:
+  - "pedido para orden de servicio"
+  - "pedido de servicio"
+  - "pedir alquiler de equipo"
+  - "pedido al almacén de servicios"
+entidades:
+  modulo: "Compras"
+  pantallas: ["Pedidos", "almacén de servicios"]
+  objetos: ["pedido", "Orden de Servicio", "equipo", "Centro de Compra"]
+prerrequisitos:
+  - texto: "El almacén de Servicios debe estar configurado, desde el módulo de Almacenes, para que solo maneje recursos tipo Equipo (código 03) y Subcontratos (código 04)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s057]
+pasos:
+  - n: 1
+    id: "compras.registrar-pedido-para-orden-de-servicio#1"
+    accion: "Ingrese al escenario de pedidos y elija el almacén de servicios del proyecto: el pedido se realiza desde ese almacén."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s058]
+    pagina: null
+    fotos:
+      - id: "a2d94e2b3473"
+        ruta_o_url: "imagenes/manual-de-compras/eecdc31c8aab.png"
+        pagina: null
+        caption: "El pedido se realiza desde el almacén de servicios."
+        ocr: "ae a\ni=} Escritorio =e\nBAvVAR». &aa\n(=) PUENTE EN CARRETERA\nde “ Tipo Nro.Pedido | Almacén\neine"
+      - id: "03a1ce482294"
+        ruta_o_url: "imagenes/manual-de-compras/24637568c60e.png"
+        pagina: null
+        caption: "El pedido se realiza desde el almacén de servicios."
+        ocr: "Usuario —_ pmartinez - Martinez Luna, Pedro —@) N° de Pedido -\nSolictante [02100024 [Rueda, Rail Pedro O= ..| da] | [Soom\nWah Aainosineisirsesieon j\n\nAlmacén 002 - De Servicios Tipo 05 - SERVICIOS Neaterno —@) nop [ay\n© AAlmacén @ ACompras =\nPara transferencia ——-(* Externa ——T Interna\nProyecto | Bah sim, destino | |\nFeels 21/04/2010 _> Prioridad [Normal +] ©-Compra loos [Pedro : ie\nzn _ =\n@D a\nAp…"
+  - n: 2
+    id: "compras.registrar-pedido-para-orden-de-servicio#2"
+    accion: "Elija al usuario que solicita el servicio; el número del pedido se genera automáticamente."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s058]
+    pagina: null
+    fotos:
+      - id: "7ee1671e7537"
+        ruta_o_url: "imagenes/manual-de-compras/d97018d7d022.png"
+        pagina: null
+        caption: "Datos para registrar pedidos para Orden de Servicio"
+        ocr: "Proyecto PUENTE EN CARRETERA\nSolicitante Martinez Luna, Pedro\nAlmacén De Servicios\nCentro de Compra Pedro\nCédigo Recurso Und. Cantidad\n0402020003 SC SERVICIO DE ADIESTRAMIENTO DE glb 1.00\nPERSONAL EN SUPERVISION"
+      - id: "e25294f20fc5"
+        ruta_o_url: "imagenes/manual-de-compras/6314069453c3.png"
+        pagina: null
+        caption: "Datos para registrar pedidos para Orden de Servicio"
+        ocr: "Centrode Compra Pedro\n\nProyecto PUENTE EN CARRETERA\n\nAlmacén De Servicios\n\nSolicitante Rueda, Raul\n\nCédigo Recurso Und. Cantidad Fecha de entrega\n\n0348040034 CAMION VOLQUETE 12 m3 hm 60.00 26/04/10\n\n0249040008 CARGADOR SOBRE LLANTAS 100-115HP hm 132,00 26/04/10\n\n0349040033 TRAC TOR DE ORUGAS DE 140-160 HP. hm 50.00 26/04/10\n\n0349080001 CHANCADORA PRIMARIA MANDIBULA 15\" X hm 56.00 26/04/10\n\n0349080…"
+  - n: 3
+    id: "compras.registrar-pedido-para-orden-de-servicio#3"
+    accion: "Si lo necesita, registre un número alterno relacionado con el pedido y la Orden de producción; si no, deje vacías esas celdas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s058]
+    pagina: null
+  - n: 4
+    id: "compras.registrar-pedido-para-orden-de-servicio#4"
+    accion: "Elija la prioridad del pedido (NORMAL o ALTA): en el escenario de pedidos la columna PRIORIDAD sirve para agrupar los pedidos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s058]
+    pagina: null
+  - n: 5
+    id: "compras.registrar-pedido-para-orden-de-servicio#5"
+    accion: "Elija el Centro de Compra que generará la Orden de Servicio y registre las observaciones relacionadas con el pedido."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s058]
+    pagina: null
+  - n: 6
+    id: "compras.registrar-pedido-para-orden-de-servicio#6"
+    accion: "En el segmento de recursos del pedido, elija **EQUIPOS** en el árbol."
+    resultado: "Se muestran solo los equipos disponibles asignados al proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s058]
+    pagina: null
+    fotos:
+      - id: "67a3a5e094ab"
+        ruta_o_url: "imagenes/manual-de-compras/912e440c0a20.png"
+        pagina: null
+        caption: "Llamada k: Es este segmento se registrar los recursos que formará parte del pedido."
+        ocr: "OSX M¥H oo HURASD Ale a\nSee | LT cssae Toescroain [ora] Samo\n‘® SUBCONTRATOS | |o548040034 [SAINTE SERS hm 60.41\n|__ [9349040008 CARGADOR SOBRE LLANTAS 100-115 HP 2-2.25 yd3 | hm 132.17)\n|__|9349040033 TRACTOR DE ORUGAS DE 140-160 HP hm 50.80)\n|__|0349080001 CHANCADORA PRIMARIA MANDIBULA 15\" X 24\" 30 HE| hm 56.53)\n|__ [0349080010 ZARANDA VIBRATORIA 4\" X 6\" X 14\" MOTOR ELECTRI| hm 45.31\n|__|0349150…"
+  - n: 7
+    id: "compras.registrar-pedido-para-orden-de-servicio#7"
+    accion: "Elija uno a uno, con doble clic, los equipos que formarán parte del pedido."
+    resultado: "Los equipos elegidos pasan a la ventana de equipos seleccionados."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s058]
+    pagina: null
+  - n: 8
+    id: "compras.registrar-pedido-para-orden-de-servicio#8"
+    accion: "Use el botón que traslada los registros seleccionados al pedido."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s058]
+    pagina: null
+    fotos:
+      - id: "923e6d1c3a9b"
+        ruta_o_url: "imagenes/manual-de-compras/eb37f3a2dac6.png"
+        pagina: null
+        caption: "Llamada d: Este botón traslada los registros seleccionados de la ventana marcada con la llamada “c” al pedido."
+        ocr: "[cédigo [Recursos Unidad] Cantidad [Pc [ Partida de Ci\n0348040034 ‘CAMION VOLQUETE 12 m3 hm 60.0000\n0349040008 ‘CARGADOR SOBRE LLANTAS 100-115 HP 2-2.25 hm 132.0000\n0349040033 TRACTOR DE ORUGAS DE 140-160 Hp =) hm 50.0000\n0349080001 CHANCADORA PRIMARIA MANDIBULA 15\" X 24\" = hm 56.0000\n0349080010 ZARANDA VIBRATORIA 4” X 6\" X 14\" MOTOR ELE! hm 45.0000\n0349150008 ‘GRUPO ELECTROGENO 380 HP 250 KW hm @…"
+  - n: 9
+    id: "compras.registrar-pedido-para-orden-de-servicio#9"
+    accion: "Ingrese la cantidad de horas por pedir de cada equipo; la celda contigua muestra la cantidad tope presupuestada por pedir."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s059]
+    pagina: null
+  - n: 10
+    id: "compras.registrar-pedido-para-orden-de-servicio#10"
+    accion: "Haga clic derecho sobre un equipo y asigne la fecha de entrega por parte del proveedor, por ejemplo con **Asignar fecha de entrega a TODOS los recursos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s059, img-97142aae3734-0000]
+    pagina: null
+    fotos:
+      - id: "bee98041f19a"
+        ruta_o_url: "imagenes/manual-de-compras/97142aae3734.png"
+        pagina: null
+        ocr: "Adicionar recursos\n\nAsignar / Reasignar partida de control\n\nAsignar / Reasignar partida de control a TODOS losfrecursos\nAsignar fecha de entrega al recurso(s) seleccionadq(s)\nAsignar fecha de entrega a TODOS los recursos"
+  - n: 11
+    id: "compras.registrar-pedido-para-orden-de-servicio#11"
+    accion: "Haga clic en **Aceptar** para grabar el pedido y enviarlo a aprobación."
+    resultado: "El pedido queda grabado y enviado a aprobación."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s059]
+    pagina: null
+    fotos:
+      - id: "d7eb1bf16399"
+        ruta_o_url: "imagenes/manual-de-compras/7c3269289eae.png"
+        pagina: null
+        caption: "Llamada d: Al usar el botón ACEPTAR, graba el pedido y envía a aprobación."
+        ocr: "Ea\n(2) fleson envi a agoridbuaeidin a] osdinien NO ORL?\nNe"
+verificacion: []
+errores_frecuentes:
+  - sintoma: "No se muestran los equipos disponibles para el pedido."
+    solucion: "Al elegir EQUIPOS en el árbol solo se muestran los equipos disponibles asignados al proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s058]
+relacionados: [compras.aprobar-pedido, compras.generar-orden-de-servicio, compras.registrar-cotizacion]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s057, manual: "Manual de Compras", seccion: "15. Orden de Servicio", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s058, manual: "Manual de Compras", seccion: "15.1 Pedidos para Orden de Servicio (1)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s059, manual: "Manual de Compras", seccion: "15.1 Pedidos para Orden de Servicio (2)", pagina: null}
+  - {id: img-97142aae3734-0000, manual: "Manual de Compras", seccion: "97142aae3734.png", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

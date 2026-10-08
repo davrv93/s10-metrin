@@ -99,6 +99,14 @@ def cargar_reales(clases: list[str]) -> tuple[list[dict], list[dict]]:
                 etiquetas[x["id"]] = x
     if not etiquetas:
         return [], []
+    # Catálogo ampliado: los «_ninguno» que ahora responde un procedimiento nuevo (reetiquetas.jsonl).
+    ruta_re = REALES / "reetiquetas.jsonl"
+    if ruta_re.exists():
+        for linea in open(ruta_re, encoding="utf-8"):
+            if linea.strip():
+                r = json.loads(linea)
+                if r["id"] in etiquetas and r["etiqueta"] != NINGUNO and r.get("seguridad") in ("alta", "media"):
+                    etiquetas[r["id"]] = dict(etiquetas[r["id"]], etiqueta=r["etiqueta"], seguridad=r["seguridad"])
     por_grupo = defaultdict(list)
     lineas = list(open(REALES / "candidatas.jsonl", encoding="utf-8"))
     if (REALES / "tickets/candidatas.jsonl").exists():  # tickets de Zendesk (extraer_tickets.py), grupo «zendesk»
@@ -152,7 +160,11 @@ def main():
         for t in textos_yaml(p):
             fijos.append({"texto": t, "clase": pid, "origen": "yaml"})
     errores = Counter()
-    for ruta in sorted((DATOS / "parafrasis").glob("*.jsonl")):
+    rutas = sorted((DATOS / "parafrasis").glob("*.jsonl"))
+    revisado = DATOS / "parafrasis" / "_ninguno.revisado.jsonl"
+    if revisado.exists():  # los negativos revisados contra el catálogo ampliado reemplazan a los originales
+        rutas = [r for r in rutas if r.name != "_ninguno.jsonl"]
+    for ruta in rutas:
         for n, linea in enumerate(open(ruta, encoding="utf-8"), 1):
             linea = linea.strip()
             if not linea:

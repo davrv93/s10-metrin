@@ -1,0 +1,93 @@
+id: instalacion.actualizar-s10-con-revisiones
+version: 1
+modulo: instalacion
+titulo: "Actualizar el S10 instalando las revisiones"
+objetivo: "Mantener el S10 actualizado con las revisiones completas en un equipo que ya tiene la instalación, ejecutándolas una por una en orden numérico."
+nivel: intermedio
+preguntas:
+  - "como actualizo el s10 a la ultima revision"
+  - "en que orden instalo las revisiones del s10"
+  - "como se cual es la ultima revision que tengo instalada"
+  - "me salio acceso denegado al instalar la revision"
+  - "al instalar la revision dice que hay modulos ejecutandose"
+  - "puedo saltarme revisiones o tengo que ponerlas todas"
+  - "a que hora conviene actualizar el s10 si hay varios usuarios"
+  - "una revision me dio error, sigo con la siguiente?"
+  - "como actualizo el sistema con las revisiones nuebas"
+aliases:
+  - "actualizar S10"
+  - "instalar revisiones"
+  - "actualización de revisiones"
+  - "aplicar revisión"
+entidades:
+  modulo: "Instalación"
+  pantallas: ["Panel de Control", "Administrador de tareas"]
+  objetos: ["revisión", "antivirus", "Control de cuentas de usuario"]
+prerrequisitos:
+  - texto: "Si el software es usado por múltiples usuarios, realice la actualización en un horario en que no estén trabajando: temprano antes del inicio de labores, en la hora de almuerzo o en la noche."
+    fuente: [web-https-documentacion-s10peru-com-actualiz-s000]
+  - texto: "Tenga permisos de Administrador, el antivirus desactivado y el Control de cuentas de usuario inactivo."
+    fuente: [web-https-documentacion-s10peru-com-actualiz-s000]
+pasos:
+  - n: 1
+    id: "instalacion.actualizar-s10-con-revisiones#1"
+    accion: "Verifique desde el **Panel de Control** cuál es la última revisión que tiene instalada en el equipo."
+    fuente: [web-https-documentacion-s10peru-com-actualiz-s000, img-b76d8264daff-0000]
+    pagina: null
+    fotos:
+      - id: "9e142169bdd7"
+        ruta_o_url: "imagenes/actualizacion-s10-instalacion-revisiones/b76d8264daff.png"
+        pagina: null
+        ocr: "© © ~ 1 > Panel de control » Todos los elementos de Panel de control > Programas y caractersticas vic) Hil x\nVestana principal del Panel de Desinstalar o cambiar un programa\nVeractustzacionesinaaledas P20 dtsnstalar un programa seleccinelo ena it y después hage cic en Desintalar, Cambiar o Report\n@ Activar o desactivar as\ncoractrsicas de Windows 9 Som) C\nLas revisiones seran enviadas via Dropbox p…"
+  - n: 2
+    id: "instalacion.actualizar-s10-con-revisiones#2"
+    accion: "Instale siempre la última versión de la revisión más reciente que ya tiene instalada antes de ejecutar un nuevo número: existen varias versiones de una misma revisión y debe tener instalada la de fecha más reciente."
+    fuente: [web-https-documentacion-s10peru-com-actualiz-s000, img-9aeba6d8bf77-0000]
+    pagina: null
+    fotos:
+      - id: "1cfb7560620b"
+        ruta_o_url: "imagenes/actualizacion-s10-instalacion-revisiones/9aeba6d8bf77.png"
+        pagina: null
+        ocr: "x\nBienvenido \\ A\nModificar, repararo eliminar el programa\nBienvenido al programa de mantenimiento de la instalacidn $10 Actualizacién Version ERP\nReevisién 165, Este programa permite modifcar la instalacién actual. Haga clic en una de las\nopciones que aparecen a continuacién\nO Modificar\nSeleccione los componentes de programa nuevos que se van a afiadi 0 los\nque hay actualmente instalados que se va…"
+  - n: 3
+    id: "instalacion.actualizar-s10-con-revisiones#3"
+    accion: "Ejecute las revisiones una por una, en orden numérico, hasta llegar a la última."
+    fuente: [web-https-documentacion-s10peru-com-actualiz-s000]
+    pagina: null
+    fotos:
+      - id: "862fb9853e5d"
+        ruta_o_url: "imagenes/actualizacion-s10-instalacion-revisiones/3a98fb529b83.png"
+        pagina: null
+        caption: "Insistimos en que las revisiones deben ejecutarse una por una en orden numérico, hasta llegar a la última."
+        ocr: "$10 Actualizacién Versi6n ERP Revisién 165 - InstallShield Wizard\n\nEstado de la instalacién \\ |\nEl programa de instalacién $10 Actualizacién Version ERP Revision 165 esta realizando las\noperaciones solicitadas.\nInstalando Copiando arch\nCA..AR165_002_15_S1C ai) Actualizando $10 al\n\nPra el). a @@m@$p\nCancelar"
+  - n: 4
+    id: "instalacion.actualizar-s10-con-revisiones#4"
+    accion: "Si durante la instalación aparece el mensaje de que el módulo está en ejecución en el equipo o en otra sesión, cierre el S10 o finalice el proceso desde el **administrador de tareas** y luego elija la opción de refrescar para continuar."
+    fuente: [web-https-documentacion-s10peru-com-actualiz-s000]
+    pagina: null
+    fotos:
+      - id: "0af16a8284de"
+        ruta_o_url: "imagenes/actualizacion-s10-instalacion-revisiones/9672d0b26035.png"
+        pagina: null
+        caption: "Si aparece el siguiente mensaje durante el proceso de instalación, es porque el modulo está en ejecución en el equipo o desde otra sesión del mismo, para continuar deben cerrar el S10 o finalizar el proceso desde el administrador de tareas, para luego dar a la opción de refrescar para continuar."
+        ocr: "510 Actualizacién Versin ERP Revision 173 - InstallShield Wizard — x\nEspere mientras InstallShield Wizard prepara la instalacién,\nSR Modulos que se estan ejecutandose x\n[_iedeSesén | N®de Proceso [NonbredelPrecesoUnero\nit 8944 Almacenes.exe SISTEMA 10\\ochavez Lees\n|\nOO ——soO="
+      - id: "7a43a6ca65a7"
+        ruta_o_url: "imagenes/actualizacion-s10-instalacion-revisiones/7e3862266b9a.png"
+        pagina: null
+        caption: "Si aparece el siguiente mensaje durante el proceso de instalación, es porque el modulo está en ejecución en el equipo o desde otra sesión del mismo, para continuar deben cerrar el S10 o finalizar el proceso desde el administrador de tareas, para luego dar a la opción de refrescar para continuar."
+        ocr: "1) Administrador de tareas - oO x\nArchivo Opciones Vista\nProcesos Rendimiento Historial de aplicaciones Inicio Usuarios Detalles Servicios\n“ 10% 82%\nNombre Estado CPU Memoria D\na\n> @ Skype (22 bits) (4)\n> [iE] Visualizador de fotos de Windows\nProcesos en segundo plano (67)\n> (@) 64-bit Synaptics Pointing Enhan...\n> [DO] Adobe Acrobat Update Service (...\nBp Almacenes (2 bt) 12% 310MB\n[Ey AnyDesk (3…"
+verificacion: []
+errores_frecuentes:
+  - sintoma: "Aparece un error o mensaje indicando que no se pueden instalar las revisiones."
+    solucion: "Verifique que tenga los permisos de Administrador, que el antivirus esté desactivado y que el Control de cuentas de usuario esté inactivo. De persistir los problemas, registre un ticket para un diagnóstico más completo."
+    fuente: [web-https-documentacion-s10peru-com-actualiz-s000]
+  - sintoma: "Tuvo problemas con una revisión."
+    solucion: "No continúe instalando las siguientes revisiones: darán como resultado errores que conllevarán a una desinstalación."
+    fuente: [web-https-documentacion-s10peru-com-actualiz-s001]
+relacionados: [instalacion.actualizar-base-de-datos, instalacion.instalar-s10-erp]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-actualiz-s000, manual: "Actualización de S10 (Instalación de revisiones)", seccion: "Actualización de S10 (Instalación de revisiones) (1)", pagina: null}
+  - {id: img-b76d8264daff-0000, manual: "Actualización de S10 (Instalación de revisiones)", seccion: "b76d8264daff.png", pagina: null}
+  - {id: img-9aeba6d8bf77-0000, manual: "Actualización de S10 (Instalación de revisiones)", seccion: "9aeba6d8bf77.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-actualiz-s001, manual: "Actualización de S10 (Instalación de revisiones)", seccion: "Actualización de S10 (Instalación de revisiones) (2)", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

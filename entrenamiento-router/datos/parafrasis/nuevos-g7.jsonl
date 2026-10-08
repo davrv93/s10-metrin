@@ -1,0 +1,288 @@
+{"texto": "¿Cómo se asignan usuarios a un proyecto y se les otorgan sus atributos de uso?", "procedimiento": "almacenes.asignar-usuarios-al-proyecto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "quiero que el ingeniero de costos también entre a mi proyecto, dónde lo añado como usuario", "procedimiento": "almacenes.asignar-usuarios-al-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "entró un residente nuevo a la obra y tengo que agregarlo al proyecto con sus atributos, qué hago", "procedimiento": "almacenes.asignar-usuarios-al-proyecto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "cómo le doy a un usuario el atributo de configurar techo en el proyecto", "procedimiento": "almacenes.asignar-usuarios-al-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo asigno el techo a un usuario del proyeto", "procedimiento": "almacenes.asignar-usuarios-al-proyecto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "Procedimiento para dar a un usuario el atributo de adicionar y eliminar almacenes dentro del proyecto", "procedimiento": "almacenes.asignar-usuarios-al-proyecto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "añadir usuario a obra", "procedimiento": "almacenes.asignar-usuarios-al-proyecto", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "clic derecho al proyecto y qué opción elijo para meter usuarios con sus atributos", "procedimiento": "almacenes.asignar-usuarios-al-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "soy jefe de grupo y tengo que dejar al almacenero trabajando en el proyecto, qué pasos sigo", "procedimiento": "almacenes.asignar-usuarios-al-proyecto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "nose como agregar al almacenero al proyecto q me asignaron", "procedimiento": "almacenes.asignar-usuarios-al-proyecto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "cómo marco que un usuario pueda incrementar el techo del proyecto", "procedimiento": "almacenes.asignar-usuarios-al-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Deseo registrar los atributos de uso de un usuario dentro del proyecto, ¿cuáles son los pasos?", "procedimiento": "almacenes.asignar-usuarios-al-proyecto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "cómo le doy permiso a un compañero para crear almacenes en la obra", "procedimiento": "almacenes.asignar-usuarios-al-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "dar atributos a usuario en proyecto", "procedimiento": "almacenes.asignar-usuarios-al-proyecto", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "el jefe de obra quiere que su asistente pueda editar el techo libre, dónde se lo habilito", "procedimiento": "almacenes.asignar-usuarios-al-proyecto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "donde le doy a un usuario el atributo de aprovar ficha del equipo en el proyecto", "procedimiento": "almacenes.asignar-usuarios-al-proyecto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "¿Dónde se encuentra la ventana de usuarios por proyecto?", "procedimiento": "almacenes.asignar-usuarios-al-proyecto", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en el árbol de proyectos qué opción abre la lista de usuarios con sus atributos", "procedimiento": "almacenes.asignar-usuarios-al-proyecto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "por dónde entro para ver qué atributos tiene cada usuario en mi proyecto", "procedimiento": "almacenes.asignar-usuarios-al-proyecto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué parte se marca quién puede adicionar almacenes al proyecto?", "procedimiento": "almacenes.asignar-usuarios-al-proyecto", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "dónde están los códigos 0103 techo y 010501 adicionar almacén", "procedimiento": "almacenes.asignar-usuarios-al-proyecto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "menu clic derecho proyecto usuarios", "procedimiento": "almacenes.asignar-usuarios-al-proyecto", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "en ke parte del arbol se dan los atributos de uso", "procedimiento": "almacenes.asignar-usuarios-al-proyecto", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "cómo configuro que solo un usuario pueda asignar techo al proyecto", "procedimiento": "almacenes.asignar-usuarios-al-proyecto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "quiero quitarle a un usuario el permiso de eliminar almacenes del proyecto", "procedimiento": "almacenes.asignar-usuarios-al-proyecto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué atributos del grupo Techo debo marcar para quien configurará el techo?", "procedimiento": "almacenes.asignar-usuarios-al-proyecto", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "cómo hago para que un usuario no pueda adicionar almacenes en esta obra", "procedimiento": "almacenes.asignar-usuarios-al-proyecto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "donde configuro los atributos de uso de cada usuario en un proyecto", "procedimiento": "almacenes.asignar-usuarios-al-proyecto", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "¿Quién debe encargarse de dar los atributos de uso a los usuarios del proyecto?", "procedimiento": "almacenes.asignar-usuarios-al-proyecto", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "no me deja agregar usuarios al proyecto ni dar atributos, por qué será", "procedimiento": "almacenes.asignar-usuarios-al-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "mi usuario no puede asignar techo al proyecto, no le sale la opción", "procedimiento": "almacenes.asignar-usuarios-al-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el almacenero quiere borrar un almacén de la obra y el sistema no se lo permite", "procedimiento": "almacenes.asignar-usuarios-al-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "agregué al usuario al proyecto pero no puede adicionar almacenes", "procedimiento": "almacenes.asignar-usuarios-al-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "xq no puedo dar atributos a los usuarios del proyecto si soy usuario normal", "procedimiento": "almacenes.asignar-usuarios-al-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "un compañero no puede configurar el techo, qué le falta en el proyecto", "procedimiento": "almacenes.asignar-usuarios-al-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "Solo el Jefe de Grupo puede asignar usuarios al proyecto, ¿es correcto? yo no puedo hacerlo", "procedimiento": "almacenes.asignar-usuarios-al-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "cómo ingreso por ajuste de cantidad el material que sobra después de contar el almacén", "procedimiento": "almacenes.registrar-ingreso-por-ajuste-de-cantidad", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "hicimos inventario físico y de alambre negro hay 2 kg más que en el sistema, qué ingreso hago", "procedimiento": "almacenes.registrar-ingreso-por-ajuste-de-cantidad", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Pasos para registrar un Ingreso por Ajuste de Cantidad [IAC] en el módulo de Almacenes", "procedimiento": "almacenes.registrar-ingreso-por-ajuste-de-cantidad", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el conteo salió con sobrante, cómo regularizo el stock del sistema para que cuadre", "procedimiento": "almacenes.registrar-ingreso-por-ajuste-de-cantidad", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo ago un ingreso iac", "procedimiento": "almacenes.registrar-ingreso-por-ajuste-de-cantidad", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "ingreso IAC", "procedimiento": "almacenes.registrar-ingreso-por-ajuste-de-cantidad", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "tengo más físico que en el sistema de clavos, cómo los ingreso", "procedimiento": "almacenes.registrar-ingreso-por-ajuste-de-cantidad", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo igualo el saldo del sistema con el stock físico cuando existe un sobrante?", "procedimiento": "almacenes.registrar-ingreso-por-ajuste-de-cantidad", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el almacenero contó y le sobran 5 bolsas de cemento respecto al s10, qué guía de ingreso hace", "procedimiento": "almacenes.registrar-ingreso-por-ajuste-de-cantidad", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "ajuste de inbentario cuando sobra mercaderia nose como", "procedimiento": "almacenes.registrar-ingreso-por-ajuste-de-cantidad", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "cómo registro la diferencia positiva del inventario en un recurso", "procedimiento": "almacenes.registrar-ingreso-por-ajuste-de-cantidad", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ajuste stock sobrante", "procedimiento": "almacenes.registrar-ingreso-por-ajuste-de-cantidad", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "Registrar los recursos y las cantidades de la diferencia en el cuerpo del documento de ajuste", "procedimiento": "almacenes.registrar-ingreso-por-ajuste-de-cantidad", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "qué tipo de ingreso elijo para regularizar lo que sobró en el conteo", "procedimiento": "almacenes.registrar-ingreso-por-ajuste-de-cantidad", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cuadrando almacén a fin de mes me salió de más un recurso, cómo lo dejo igual al físico", "procedimiento": "almacenes.registrar-ingreso-por-ajuste-de-cantidad", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "ingreso x ajuste de cantidad como se hase paso a paso", "procedimiento": "almacenes.registrar-ingreso-por-ajuste-de-cantidad", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "en qué escenario está el ingreso por ajuste de cantidad", "procedimiento": "almacenes.registrar-ingreso-por-ajuste-de-cantidad", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dónde elijo el tipo de ingreso IAC", "procedimiento": "almacenes.registrar-ingreso-por-ajuste-de-cantidad", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Por dónde entro para ajustar la cantidad de un recurso que sobra?", "procedimiento": "almacenes.registrar-ingreso-por-ajuste-de-cantidad", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "cuál es el tipo de ingreso para diferencias de inventario en la lista de tipos", "procedimiento": "almacenes.registrar-ingreso-por-ajuste-de-cantidad", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dónde pongo los 2 kg que sobran en el cuerpo del documento", "procedimiento": "almacenes.registrar-ingreso-por-ajuste-de-cantidad", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "ingresos ajuste cantidad dónde", "procedimiento": "almacenes.registrar-ingreso-por-ajuste-de-cantidad", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "ke opcion del arbol uso para el ajuste de ingreso", "procedimiento": "almacenes.registrar-ingreso-por-ajuste-de-cantidad", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "con qué precio entra lo que ingreso por ajuste de cantidad", "procedimiento": "almacenes.registrar-ingreso-por-ajuste-de-cantidad", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "puedo cambiar el precio promedio que toma el IAC", "procedimiento": "almacenes.registrar-ingreso-por-ajuste-de-cantidad", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué debo haber realizado antes de hacer un ingreso por ajuste de cantidad?", "procedimiento": "almacenes.registrar-ingreso-por-ajuste-de-cantidad", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "el tipo de cambio es obligatorio en el ingreso por ajuste", "procedimiento": "almacenes.registrar-ingreso-por-ajuste-de-cantidad", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "el ajuste lo hago a mano o el sistema lo genera solo desde los conteos de inventario", "procedimiento": "almacenes.registrar-ingreso-por-ajuste-de-cantidad", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q moneda y tipo de cambio pongo en el ajuste de cantidad", "procedimiento": "almacenes.registrar-ingreso-por-ajuste-de-cantidad", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "el stock físico es menor que el del sistema, puedo hacer un ingreso por ajuste", "procedimiento": "almacenes.registrar-ingreso-por-ajuste-de-cantidad", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "me faltó material en el conteo y quiero ajustar, el ingreso no me sirve", "procedimiento": "almacenes.registrar-ingreso-por-ajuste-de-cantidad", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "hice los conteos en inventario y no sé si debo hacer la guía de ajuste a mano", "procedimiento": "almacenes.registrar-ingreso-por-ajuste-de-cantidad", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "al hacer el ajuste de cantidad el costo salió distinto al que esperaba", "procedimiento": "almacenes.registrar-ingreso-por-ajuste-de-cantidad", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no se q precio le pone el sistema al sobrante y me salio raro", "procedimiento": "almacenes.registrar-ingreso-por-ajuste-de-cantidad", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "sobra material pero no hay factura para ingreso por compra, qué hago para cuadrarlo", "procedimiento": "almacenes.registrar-ingreso-por-ajuste-de-cantidad", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "Existe más stock físico que saldo en el sistema, ¿qué guía debo registrar?", "procedimiento": "almacenes.registrar-ingreso-por-ajuste-de-cantidad", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "cómo ingreso unas herramientas que nos prestó otro proyecto", "procedimiento": "almacenes.registrar-ingreso-por-prestamo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "un proveedor nos prestó una mezcladora para la semana, cómo la registro en el almacén", "procedimiento": "almacenes.registrar-ingreso-por-prestamo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Procedimiento para registrar un Ingreso por Préstamo en el módulo de Almacenes", "procedimiento": "almacenes.registrar-ingreso-por-prestamo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "la obra vecina nos dejó prestadas 10 planchas de encofrado, cómo las doy de ingreso", "procedimiento": "almacenes.registrar-ingreso-por-prestamo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "komo registro un ingreso x prestamo", "procedimiento": "almacenes.registrar-ingreso-por-prestamo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "ingreso de lo prestado", "procedimiento": "almacenes.registrar-ingreso-por-prestamo", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "qué hago para que el sistema registre lo que nos prestaron", "procedimiento": "almacenes.registrar-ingreso-por-prestamo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo adiciono recursos prestados desde el catálogo cuando la base maneja un solo proyecto?", "procedimiento": "almacenes.registrar-ingreso-por-prestamo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "cómo jalo los recursos que egresaron por préstamo hacia mi proyecto", "procedimiento": "almacenes.registrar-ingreso-por-prestamo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "nos prestaron materiales de otra obra y no se como meterlos al s10", "procedimiento": "almacenes.registrar-ingreso-por-prestamo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "un obrero trajo su amoladora prestada para la obra, cómo la ingreso al almacén", "procedimiento": "almacenes.registrar-ingreso-por-prestamo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "cómo elijo el socio de negocio en el ingreso por préstamo", "procedimiento": "almacenes.registrar-ingreso-por-prestamo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "me prestaron material", "procedimiento": "almacenes.registrar-ingreso-por-prestamo", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "Registrar el ingreso de recursos prestados indicando la cantidad y el precio desde el catálogo", "procedimiento": "almacenes.registrar-ingreso-por-prestamo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "cómo pongo el documento, serie y número en el ingreso por préstamo", "procedimiento": "almacenes.registrar-ingreso-por-prestamo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ingreso prestamo otro proyecto pazos", "procedimiento": "almacenes.registrar-ingreso-por-prestamo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "dónde veo los recursos que me prestaron", "procedimiento": "almacenes.registrar-ingreso-por-prestamo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en qué escenario consulto lo que presté a otras obras", "procedimiento": "almacenes.registrar-ingreso-por-prestamo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Dónde está la opción Me prestaron y Lo que presté?", "procedimiento": "almacenes.registrar-ingreso-por-prestamo", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "por dónde miro los préstamos que aún no he devuelto", "procedimiento": "almacenes.registrar-ingreso-por-prestamo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "el acceso directo de préstamos dónde está", "procedimiento": "almacenes.registrar-ingreso-por-prestamo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "prestamos lo que presté", "procedimiento": "almacenes.registrar-ingreso-por-prestamo", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "ke pantalla uso pa ver los prestamos", "procedimiento": "almacenes.registrar-ingreso-por-prestamo", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "qué socio de negocio pongo cuando el préstamo viene de otro proyecto", "procedimiento": "almacenes.registrar-ingreso-por-prestamo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿De dónde salen los recursos al adicionar en un ingreso por préstamo si mi base tiene varios proyectos?", "procedimiento": "almacenes.registrar-ingreso-por-prestamo", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "cómo cambio la vista de préstamos para ver lo que presté", "procedimiento": "almacenes.registrar-ingreso-por-prestamo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "qué datos de cabecera pide el ingreso por préstamo", "procedimiento": "almacenes.registrar-ingreso-por-prestamo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "el precio en un ingreso por préstamo lo pongo yo", "procedimiento": "almacenes.registrar-ingreso-por-prestamo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como se ase para ver solo lo q me prestaron", "procedimiento": "almacenes.registrar-ingreso-por-prestamo", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "no sé qué recursos prestados me falta devolver", "procedimiento": "almacenes.registrar-ingreso-por-prestamo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "quiero registrar que mi almacén le prestó a otro y el ingreso no me sirve", "procedimiento": "almacenes.registrar-ingreso-por-prestamo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no veo en préstamos lo que me prestaron", "procedimiento": "almacenes.registrar-ingreso-por-prestamo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "En el ingreso por préstamo no me aparecen los recursos prestados por el otro proyecto", "procedimiento": "almacenes.registrar-ingreso-por-prestamo", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "presté unos equipos a otra obra y no sé dónde los controlo", "procedimiento": "almacenes.registrar-ingreso-por-prestamo", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "el sistema controla las devoluciones de lo prestado? no veo nada", "procedimiento": "almacenes.registrar-ingreso-por-prestamo", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "me confundí y ingresé como compra algo que era prestado, qué debí usar", "procedimiento": "almacenes.registrar-ingreso-por-prestamo", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "sobraron varillas en la partida y quiero devolverlas al almacén", "procedimiento": "almacenes.registrar-ingreso-por-reingreso", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "ingreso IR", "procedimiento": "almacenes.registrar-ingreso-por-reingreso", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "¿Cómo se registra el reingreso al almacén de los recursos que no se utilizaron en una partida de control?", "procedimiento": "almacenes.registrar-ingreso-por-reingreso", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el capataz regresó 3 bolsas de cemento que no usó en el vaciado, qué hago en el sistema", "procedimiento": "almacenes.registrar-ingreso-por-reingreso", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "komo ago un reingreso de materiales", "procedimiento": "almacenes.registrar-ingreso-por-reingreso", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "reingreso al almacen", "procedimiento": "almacenes.registrar-ingreso-por-reingreso", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "quiero devolver lo que no se usó y que se descargue el costo de la partida", "procedimiento": "almacenes.registrar-ingreso-por-reingreso", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Pasos para elegir los recursos egresados que serán devueltos al almacén", "procedimiento": "almacenes.registrar-ingreso-por-reingreso", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "cómo pongo la cantidad que devuelve el maestro en el reingreso", "procedimiento": "almacenes.registrar-ingreso-por-reingreso", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "devolucion de sobrantes a almacen nose como es", "procedimiento": "almacenes.registrar-ingreso-por-reingreso", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "terminó el encofrado y quedó madera sin usar, cómo la regreso al stock y quito el costo de la partida", "procedimiento": "almacenes.registrar-ingreso-por-reingreso", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "devolución sobrante obra", "procedimiento": "almacenes.registrar-ingreso-por-reingreso", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "cómo ingreso de nuevo al almacén lo que ya había salido a una partida", "procedimiento": "almacenes.registrar-ingreso-por-reingreso", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Deseo imprimir el reporte del ingreso por reingreso, ¿cómo se hace?", "procedimiento": "almacenes.registrar-ingreso-por-reingreso", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "en el formulario de reingreso, quién devuelve y cómo lo lleno", "procedimiento": "almacenes.registrar-ingreso-por-reingreso", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "reingreso de recursos egresados a partida de contol", "procedimiento": "almacenes.registrar-ingreso-por-reingreso", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "dónde está la ventana de recursos egresados", "procedimiento": "almacenes.registrar-ingreso-por-reingreso", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en qué escenario hago el ingreso por reingreso", "procedimiento": "almacenes.registrar-ingreso-por-reingreso", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dónde elijo el tipo de ingreso reingreso", "procedimiento": "almacenes.registrar-ingreso-por-reingreso", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Dónde aparece la lista de todo lo egresado a partidas de control para devolverlo?", "procedimiento": "almacenes.registrar-ingreso-por-reingreso", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "cómo llego a la vista previa del reporte del reingreso", "procedimiento": "almacenes.registrar-ingreso-por-reingreso", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "recursos egresados ventana", "procedimiento": "almacenes.registrar-ingreso-por-reingreso", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "pa devolver material al almacen en ke pantalla entro", "procedimiento": "almacenes.registrar-ingreso-por-reingreso", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "¿En qué tipo de almacén está disponible el reingreso?", "procedimiento": "almacenes.registrar-ingreso-por-reingreso", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "qué debe existir antes de hacer un ingreso por reingreso", "procedimiento": "almacenes.registrar-ingreso-por-reingreso", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "el reingreso sirve para almacén de materiales o también de activos", "procedimiento": "almacenes.registrar-ingreso-por-reingreso", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "cómo elijo el recurso a devolver, con clic o con doble clic", "procedimiento": "almacenes.registrar-ingreso-por-reingreso", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "cual es el requisito pa poder reingresar un recurso", "procedimiento": "almacenes.registrar-ingreso-por-reingreso", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "el tipo de cambio hay que registrarlo en el reingreso", "procedimiento": "almacenes.registrar-ingreso-por-reingreso", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "la ventana de recursos egresados sale vacía cuando quiero devolver material", "procedimiento": "almacenes.registrar-ingreso-por-reingreso", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "quiero reingresar un recurso y no me lo lista, nunca lo egresé a una partida", "procedimiento": "almacenes.registrar-ingreso-por-reingreso", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "devolví material pero la partida de control sigue con el costo", "procedimiento": "almacenes.registrar-ingreso-por-reingreso", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no puedo hacer reingreso en mi almacén de activos", "procedimiento": "almacenes.registrar-ingreso-por-reingreso", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no encuentro en recursos egresados los clavos q devolvio el obrero", "procedimiento": "almacenes.registrar-ingreso-por-reingreso", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "Devuelven material que ya había salido a una partida de control, ¿uso reingreso o ajuste?", "procedimiento": "almacenes.registrar-ingreso-por-reingreso", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "los costos no se descargan de la partida al devolver los sobrantes", "procedimiento": "almacenes.registrar-ingreso-por-reingreso", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "cómo armo las partidas de control del proyecto con costos directos e indirectos", "procedimiento": "almacenes.registrar-partidas-de-control-del-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "necesito crear la partida encofrado que junte varias actividades, cómo la registro", "procedimiento": "almacenes.registrar-partidas-de-control-del-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Procedimiento para registrar las Partidas de Control de un proyecto y asignarles su partida de control general", "procedimiento": "almacenes.registrar-partidas-de-control-del-proyecto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "arrancamos obra nueva y el almacenero aún no puede sacar material porque no hay partidas, cómo las creo", "procedimiento": "almacenes.registrar-partidas-de-control-del-proyecto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "komo registro partidas de contol", "procedimiento": "almacenes.registrar-partidas-de-control-del-proyecto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "nueva partida de control obra", "procedimiento": "almacenes.registrar-partidas-de-control-del-proyecto", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "cómo pongo el nombre y la unidad de la partida de control", "procedimiento": "almacenes.registrar-partidas-de-control-del-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo elijo la unidad representativa de las actividades asignadas a una partida de control?", "procedimiento": "almacenes.registrar-partidas-de-control-del-proyecto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "cómo dejo marcada la partida para que salga al asignar recursos en los egresos", "procedimiento": "almacenes.registrar-partidas-de-control-del-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "quiero q la partida de control tenga su partida general nose donde", "procedimiento": "almacenes.registrar-partidas-de-control-del-proyecto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "la partida de vaciado ya concluyó y no quiero que la sigan usando en las salidas, qué le quito", "procedimiento": "almacenes.registrar-partidas-de-control-del-proyecto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "partidas de control costos directos", "procedimiento": "almacenes.registrar-partidas-de-control-del-proyecto", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "cómo registro el segundo nivel de costos directos y costos indirectos", "procedimiento": "almacenes.registrar-partidas-de-control-del-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Deseo que en los egresos solo se puedan elegir partidas de control activas, ¿qué opción marco?", "procedimiento": "almacenes.registrar-partidas-de-control-del-proyecto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "ya registré las partidas de control en gerencia de proyectos, hay que volver a hacerlo en almacenes", "procedimiento": "almacenes.registrar-partidas-de-control-del-proyecto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "partida de control sin unidad se puede? como la registro", "procedimiento": "almacenes.registrar-partidas-de-control-del-proyecto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "dónde registro las partidas de control del proyecto", "procedimiento": "almacenes.registrar-partidas-de-control-del-proyecto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en datos generales dónde está mostrar solo partidas de control activas", "procedimiento": "almacenes.registrar-partidas-de-control-del-proyecto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué escenario del árbol de proyectos veo las partidas de control?", "procedimiento": "almacenes.registrar-partidas-de-control-del-proyecto", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "dónde se elige la partida de control general del catálogo", "procedimiento": "almacenes.registrar-partidas-de-control-del-proyecto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "datos adicionales del proyecto, dónde está", "procedimiento": "almacenes.registrar-partidas-de-control-del-proyecto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "partidas de control pantalla", "procedimiento": "almacenes.registrar-partidas-de-control-del-proyecto", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "ke ruta sigo en gerencia de proyectos pa llegar a las partidas", "procedimiento": "almacenes.registrar-partidas-de-control-del-proyecto", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "cómo configuro para que solo salgan partidas activas al hacer egresos", "procedimiento": "almacenes.registrar-partidas-de-control-del-proyecto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué debe tener registrado la empresa antes de crear partidas de control?", "procedimiento": "almacenes.registrar-partidas-de-control-del-proyecto", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "cómo cambio una partida para que ya no aparezca al egresar recursos", "procedimiento": "almacenes.registrar-partidas-de-control-del-proyecto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "para qué sirve la unidad de la partida de control en las proyecciones", "procedimiento": "almacenes.registrar-partidas-de-control-del-proyecto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "ke estructura de niveles se usa pa registrar partidas de control", "procedimiento": "almacenes.registrar-partidas-de-control-del-proyecto", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "si ya hay partidas en gerencia de proyectos, se ven solas en almacenes", "procedimiento": "almacenes.registrar-partidas-de-control-del-proyecto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "al hacer el egreso no sale la partida de control que necesito", "procedimiento": "almacenes.registrar-partidas-de-control-del-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "hice una salida de almacén y la partida de encofrado ya no figura en la lista", "procedimiento": "almacenes.registrar-partidas-de-control-del-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "desmarqué una partida y ahora no puedo elegirla, cómo la reactivo", "procedimiento": "almacenes.registrar-partidas-de-control-del-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "Los egresos solo muestran algunas partidas de control y faltan varias, ¿a qué se debe?", "procedimiento": "almacenes.registrar-partidas-de-control-del-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "no me deja asignar partida de control general porque no hay ninguna en la lista", "procedimiento": "almacenes.registrar-partidas-de-control-del-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no sale ninguna partida de control en almacenes y nunca las registre", "procedimiento": "almacenes.registrar-partidas-de-control-del-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "no puedo elegir la partida al despachar material y la obra sigue en ejecución", "procedimiento": "almacenes.registrar-partidas-de-control-del-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "cómo creo un usuario nuevo en almacenes y le pongo su clave", "procedimiento": "almacenes.registrar-usuario-y-asignar-permisos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "necesito dar de alta a la nueva asistente de almacén con su categoría", "procedimiento": "almacenes.registrar-usuario-y-asignar-permisos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Procedimiento para registrar un usuario y asignarle categoría y permisos en el módulo de Almacenes", "procedimiento": "almacenes.registrar-usuario-y-asignar-permisos", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "contrataron un almacenero y debo darle acceso solo a ingresos y egresos, cómo le asigno los escenarios", "procedimiento": "almacenes.registrar-usuario-y-asignar-permisos", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "komo creo un usuaro y le asigno permisos", "procedimiento": "almacenes.registrar-usuario-y-asignar-permisos", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "crear usuario", "procedimiento": "almacenes.registrar-usuario-y-asignar-permisos", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "cómo armo los grupos personal técnico y personal administrativo", "procedimiento": "almacenes.registrar-usuario-y-asignar-permisos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se otorga a un usuario acceso a ciertos catálogos con permiso de nuevo, modificar y eliminar?", "procedimiento": "almacenes.registrar-usuario-y-asignar-permisos", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "dónde marco los atributos especiales de un usuario, tipo aprobar especificaciones de equipos", "procedimiento": "almacenes.registrar-usuario-y-asignar-permisos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "q categoria le pongo al almacenero, nose cual es", "procedimiento": "almacenes.registrar-usuario-y-asignar-permisos", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "el encargado de informática tiene que poder crear usuarios pero no usar los módulos, cómo lo configuro", "procedimiento": "almacenes.registrar-usuario-y-asignar-permisos", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "permisos de usuario almacen", "procedimiento": "almacenes.registrar-usuario-y-asignar-permisos", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "quiero poner un auditor del catálogo de socios de negocio, qué color le toca", "procedimiento": "almacenes.registrar-usuario-y-asignar-permisos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Solicito el procedimiento para asignar la categoría de Invitado a un usuario", "procedimiento": "almacenes.registrar-usuario-y-asignar-permisos", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "cómo le doy acceso al catálogo de recursos a un usuario nuevo", "procedimiento": "almacenes.registrar-usuario-y-asignar-permisos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "dar permiso a escenarios x usuario clic derecho dar acceso", "procedimiento": "almacenes.registrar-usuario-y-asignar-permisos", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "dónde está el mantenimiento de usuarios", "procedimiento": "almacenes.registrar-usuario-y-asignar-permisos", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en qué pestaña se asigna la categoría al usuario", "procedimiento": "almacenes.registrar-usuario-y-asignar-permisos", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Dónde se encuentra la pestaña Atributos especiales?", "procedimiento": "almacenes.registrar-usuario-y-asignar-permisos", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "dónde doy acceso a los escenarios de un usuario", "procedimiento": "almacenes.registrar-usuario-y-asignar-permisos", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "la pestaña catálogos del usuario dónde está", "procedimiento": "almacenes.registrar-usuario-y-asignar-permisos", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "usuarios pestaña módulos", "procedimiento": "almacenes.registrar-usuario-y-asignar-permisos", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "por ke lado registro nuevo grupo y subgrupos de usuarios", "procedimiento": "almacenes.registrar-usuario-y-asignar-permisos", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "qué categorías existen para un usuario y qué puede hacer cada una", "procedimiento": "almacenes.registrar-usuario-y-asignar-permisos", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Cuántos caracteres puede tener la clave de un usuario?", "procedimiento": "almacenes.registrar-usuario-y-asignar-permisos", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "cuántos usuarios pueden auditar la base de datos", "procedimiento": "almacenes.registrar-usuario-y-asignar-permisos", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "cómo configuro que un usuario no pueda eliminar registros de un catálogo", "procedimiento": "almacenes.registrar-usuario-y-asignar-permisos", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "qué significa cada color de auditoría de catálogos", "procedimiento": "almacenes.registrar-usuario-y-asignar-permisos", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "el almacenero ke categoria debe tener pa q no modifique recursos", "procedimiento": "almacenes.registrar-usuario-y-asignar-permisos", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "el almacenero está modificando recursos del catálogo y no debería", "procedimiento": "almacenes.registrar-usuario-y-asignar-permisos", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "tengo permiso de eliminar en un catálogo y no deja borrar un registro", "procedimiento": "almacenes.registrar-usuario-y-asignar-permisos", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "creé el usuario pero al ingresar no le aparece ningún escenario", "procedimiento": "almacenes.registrar-usuario-y-asignar-permisos", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no puedo registrar a una persona como usuario, no sale en la lista", "procedimiento": "almacenes.registrar-usuario-y-asignar-permisos", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "El usuario con categoría Invitado intenta editar datos y el sistema no se lo permite", "procedimiento": "almacenes.registrar-usuario-y-asignar-permisos", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "la clave del usuario no me deja poner mas de 12 caracteres", "procedimiento": "almacenes.registrar-usuario-y-asignar-permisos", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "el usuario de informática no puede usar los módulos con normalidad, es normal", "procedimiento": "almacenes.registrar-usuario-y-asignar-permisos", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "cómo mando cemento de mi obra a otra obra de la misma empresa", "procedimiento": "almacenes.transferir-recursos-a-otro-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "quiero hacer una transferencia externa a otro proyecto", "procedimiento": "almacenes.transferir-recursos-a-otro-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Procedimiento para transferir recursos del almacén de un proyecto al almacén de otro proyecto", "procedimiento": "almacenes.transferir-recursos-a-otro-proyecto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "la obra de Chiclayo necesita fierro y nosotros tenemos de sobra, cómo se lo paso en el sistema", "procedimiento": "almacenes.transferir-recursos-a-otro-proyecto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "komo ago un egreso x transferencia esterna", "procedimiento": "almacenes.transferir-recursos-a-otro-proyecto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "transferencia a otro proyecto", "procedimiento": "almacenes.transferir-recursos-a-otro-proyecto", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "mi proyecto recibe material de otro proyecto, cómo hago el ingreso", "procedimiento": "almacenes.transferir-recursos-a-otro-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se registra el ingreso por transferencia externa en el proyecto destino?", "procedimiento": "almacenes.transferir-recursos-a-otro-proyecto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "cómo elijo proyecto y almacén destino en el pedido para otra obra", "procedimiento": "almacenes.transferir-recursos-a-otro-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "nos enviaron recursos de otro proyecto y nose como ingresarlos", "procedimiento": "almacenes.transferir-recursos-a-otro-proyecto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "llegó el camión de la otra obra con varillas y no hay guía en el sistema, cómo los ingreso manual", "procedimiento": "almacenes.transferir-recursos-a-otro-proyecto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "ingreso transferencia externa", "procedimiento": "almacenes.transferir-recursos-a-otro-proyecto", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "qué pasos sigo en el proyecto origen para sacar el material que va a otra obra", "procedimiento": "almacenes.transferir-recursos-a-otro-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Registrar un pedido A Almacén para otro almacén con transferencia externa", "procedimiento": "almacenes.transferir-recursos-a-otro-proyecto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "cómo cargo el costo al proyecto que recibe los materiales", "procedimiento": "almacenes.transferir-recursos-a-otro-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "transferir recursos a otro proyeto pasos", "procedimiento": "almacenes.transferir-recursos-a-otro-proyecto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "dónde hago el pedido a almacén para una transferencia externa", "procedimiento": "almacenes.transferir-recursos-a-otro-proyecto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en qué escenario recibo lo que otro proyecto me transfirió", "procedimiento": "almacenes.transferir-recursos-a-otro-proyecto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Dónde se encuentra la opción Adicionar desde Guías de Egresos?", "procedimiento": "almacenes.transferir-recursos-a-otro-proyecto", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "dónde elijo transferencia y externa en el pedido", "procedimiento": "almacenes.transferir-recursos-a-otro-proyecto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "desde qué módulos puedo hacer el pedido a almacén", "procedimiento": "almacenes.transferir-recursos-a-otro-proyecto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "adicionar desde guías de egreso", "procedimiento": "almacenes.transferir-recursos-a-otro-proyecto", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "ke tipo de ingreso elijo pa lo de la otra obra", "procedimiento": "almacenes.transferir-recursos-a-otro-proyecto", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "qué requisitos hay para transferir recursos a otro proyecto", "procedimiento": "almacenes.transferir-recursos-a-otro-proyecto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Los dos proyectos deben estar registrados en la misma base de datos?", "procedimiento": "almacenes.transferir-recursos-a-otro-proyecto", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "la transferencia externa se puede devolver después", "procedimiento": "almacenes.transferir-recursos-a-otro-proyecto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "cuánto stock debe haber para poder transferir un recurso a otra obra", "procedimiento": "almacenes.transferir-recursos-a-otro-proyecto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "qué marco en el pedido para que sea del stock y para otro almacén", "procedimiento": "almacenes.transferir-recursos-a-otro-proyecto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "el ingreso x transferencia externa es automatico o manual, cual uso", "procedimiento": "almacenes.transferir-recursos-a-otro-proyecto", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "la opción de jalar guías de egreso sale en gris en el proyecto que recibe", "procedimiento": "almacenes.transferir-recursos-a-otro-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el otro proyecto quiere que le devuelvan lo transferido, se puede", "procedimiento": "almacenes.transferir-recursos-a-otro-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "No me deja transferir a otro proyecto porque el proyecto destino no aparece", "procedimiento": "almacenes.transferir-recursos-a-otro-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "no puedo transferir a otra obra porque no hay stock suficiente", "procedimiento": "almacenes.transferir-recursos-a-otro-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "mandamos recursos a otra obra y en el proyecto destino no ven la guía", "procedimiento": "almacenes.transferir-recursos-a-otro-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "transferi material y la obra receptora no tiene guia que jalar, q me falto", "procedimiento": "almacenes.transferir-recursos-a-otro-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "envié recursos a otra obra pero mi almacén sigue mostrando el mismo stock", "procedimiento": "almacenes.transferir-recursos-a-otro-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "cómo muevo cemento de un almacén a otro dentro de la misma obra", "procedimiento": "almacenes.transferir-recursos-entre-almacenes", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "quiero hacer una transferencia interna entre dos almacenes del proyecto", "procedimiento": "almacenes.transferir-recursos-entre-almacenes", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Procedimiento para trasladar recursos de un almacén a otro del mismo proyecto", "procedimiento": "almacenes.transferir-recursos-entre-almacenes", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el almacén de materiales le debe pasar clavos al almacén de herramientas, cómo lo hago en s10", "procedimiento": "almacenes.transferir-recursos-entre-almacenes", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "komo ago un egreso x transferencia interna", "procedimiento": "almacenes.transferir-recursos-entre-almacenes", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "transferencia entre almacenes", "procedimiento": "almacenes.transferir-recursos-entre-almacenes", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "me mandaron material del otro almacén de mi obra, cómo hago el ingreso", "procedimiento": "almacenes.transferir-recursos-entre-almacenes", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se registra el ingreso por transferencia interna en el almacén destino?", "procedimiento": "almacenes.transferir-recursos-entre-almacenes", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "cómo elijo el almacén destino en el pedido si es el mismo proyecto", "procedimiento": "almacenes.transferir-recursos-entre-almacenes", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el otro almacen me envio recursos y nose como ingresarlos", "procedimiento": "almacenes.transferir-recursos-entre-almacenes", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "llegaron los fierros del almacén central a mi almacén de la misma obra y no uso guía, cómo los ingreso manual", "procedimiento": "almacenes.transferir-recursos-entre-almacenes", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "ingreso transferencia interna", "procedimiento": "almacenes.transferir-recursos-entre-almacenes", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "qué pasos sigo en el almacén que envía para sacar el material", "procedimiento": "almacenes.transferir-recursos-entre-almacenes", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Registrar un pedido A Almacén para otro almacén con transferencia interna", "procedimiento": "almacenes.transferir-recursos-entre-almacenes", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "cómo hago que el costo se cargue al almacén que recibe", "procedimiento": "almacenes.transferir-recursos-entre-almacenes", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "trasferir recursos entre almacenes del proyecto pasos", "procedimiento": "almacenes.transferir-recursos-entre-almacenes", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "dónde hago el pedido a almacén para pasar material a otro almacén", "procedimiento": "almacenes.transferir-recursos-entre-almacenes", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en qué escenario recibo lo que me envió otro almacén del proyecto", "procedimiento": "almacenes.transferir-recursos-entre-almacenes", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Dónde se encuentra la opción Adicionar desde Guías de Egresos del almacén que recibe?", "procedimiento": "almacenes.transferir-recursos-entre-almacenes", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "dónde elijo transferencia e interna en el pedido", "procedimiento": "almacenes.transferir-recursos-entre-almacenes", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "qué tipo de ingreso elijo para recibir lo del otro almacén", "procedimiento": "almacenes.transferir-recursos-entre-almacenes", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "egreso transferencia interna", "procedimiento": "almacenes.transferir-recursos-entre-almacenes", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "ke menu uso pa ver la guia del almacen q envia", "procedimiento": "almacenes.transferir-recursos-entre-almacenes", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "qué requisitos hay para transferir entre almacenes del mismo proyecto", "procedimiento": "almacenes.transferir-recursos-entre-almacenes", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué proyecto debo dejar en el pedido cuando la transferencia es interna?", "procedimiento": "almacenes.transferir-recursos-entre-almacenes", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "la transferencia interna se puede devolver después", "procedimiento": "almacenes.transferir-recursos-entre-almacenes", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "cuánto stock debe haber en el almacén que envía", "procedimiento": "almacenes.transferir-recursos-entre-almacenes", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "qué marco en el pedido para que salga del stock y vaya a otro almacén del proyecto", "procedimiento": "almacenes.transferir-recursos-entre-almacenes", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "el ingreso x transferencia interna es manual o con guia, cual conviene", "procedimiento": "almacenes.transferir-recursos-entre-almacenes", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "en el almacén destino no aparece la guía para hacer el ingreso", "procedimiento": "almacenes.transferir-recursos-entre-almacenes", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el almacén que envió quiere que le regresen lo transferido, se puede", "procedimiento": "almacenes.transferir-recursos-entre-almacenes", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "La opción de adicionar desde guías de egresos no muestra nada en el almacén que recibe", "procedimiento": "almacenes.transferir-recursos-entre-almacenes", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "transferí entre almacenes pero el costo no se mueve de uno a otro", "procedimiento": "almacenes.transferir-recursos-entre-almacenes", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el almacén de la obra envió cemento y en el otro almacén no ven nada para ingresar", "procedimiento": "almacenes.transferir-recursos-entre-almacenes", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "transferi material al otro almacen y la guia no sale, q me falto", "procedimiento": "almacenes.transferir-recursos-entre-almacenes", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "no me deja transferir al otro almacén porque no tengo stock del recurso", "procedimiento": "almacenes.transferir-recursos-entre-almacenes", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}

@@ -1,0 +1,269 @@
+id: instalacion.instalar-sql-server
+version: 1
+modulo: instalacion
+titulo: "Instalar Microsoft SQL Server"
+objetivo: "Instalar Microsoft SQL Server con sus componentes de administración, sabiendo qué se hace en cada paso para no instalar más o menos servicios de los necesarios ni aplicar malas prácticas de seguridad."
+nivel: avanzado
+preguntas:
+  - "como instalo sql server para el s10"
+  - "que collation pongo al instalar sql server"
+  - "que modo de autenticacion elijo en la instalacion de sql"
+  - "instancia por defecto o nombrada en sql server cual pongo"
+  - "pasos para instalar el motor de base de datos sql server"
+  - "que caracteristicas de sql server tengo que marcar"
+  - "puedo usar sql server 2016 con el s10"
+  - "como pongo el nivel de compatibilidad de la base de datos"
+  - "instalar sql servr en el servidor paso a paso"
+  - "que necesito revisar antes de instalar sql server"
+aliases:
+  - "instalar SQL Server"
+  - "instalación de SQL Server"
+  - "instalar motor de base de datos"
+  - "SQL Server"
+entidades:
+  modulo: "Instalación"
+  pantallas: ["SQL Server Installation Center", "Collation", "Data Directories"]
+  objetos: ["SQL Server", "instancia", "Database Engine Services", "SQL Server Management Studio"]
+prerrequisitos:
+  - texto: "Decida la edición de SQL Server que desea instalar."
+    fuente: [web-https-documentacion-s10peru-com-proceso--s001]
+  - texto: "Revise que se cumpla con los requerimientos de hardware y software necesarios para instalar SQL Server."
+    fuente: [web-https-documentacion-s10peru-com-proceso--s001]
+  - texto: "De preferencia, cree cuentas para los servicios de SQL Server con privilegios mínimos; no es obligatorio, pero es una buena práctica de seguridad."
+    fuente: [web-https-documentacion-s10peru-com-proceso--s001]
+  - texto: "La instalación debe ser realizada con el perfil de usuario administrador de Windows; según Microsoft, se recomienda no instalar en el mismo servidor de dominio."
+    fuente: [web-https-documentacion-s10peru-com-proceso--s005]
+pasos:
+  - n: 1
+    id: "instalacion.instalar-sql-server#1"
+    accion: "En **SQL Server Installation Center**, haga clic en **System Configuration Checker** para realizar un chequeo de la configuración del sistema."
+    fuente: [web-https-documentacion-s10peru-com-proceso--s001]
+    pagina: null
+    fotos:
+      - id: "6ca0a2ffc323"
+        ruta_o_url: "imagenes/proceso-instalacion-microsoft-sql-server/dd4e027aa0f3.png"
+        pagina: null
+        caption: "“En SQL Server Installation Center” es posible revisar información detallada acerca de requerimientos para la instalación, recomendaciones de seguridad y adicionalmente realizar un chequeo de la configuración del sistema. Haga clic en “System Configuration Checker”"
+        ocr: "® SQL Server Installation Center a -/5} x)\nPlanning Fj Hatdiare and Software Requirements\nmonn & View the hardware and software requirements.\nMaintenance EJ, Security Documentation\nTools View the security documentation,\nResources Fly, tlie Release Notes\nAdvanced View the latest information about the release.\n‘Options aT ‘System Configuration Checker\nfi Launch a tool to check for conditions that pr…"
+  - n: 2
+    id: "instalacion.instalar-sql-server#2"
+    accion: "Revise el reporte y haga clic en **OK**."
+    fuente: [web-https-documentacion-s10peru-com-proceso--s001]
+    pagina: null
+  - n: 3
+    id: "instalacion.instalar-sql-server#3"
+    accion: "Vaya al tab **Installation** y seleccione la opción **New SQL Server stand alone installation or add features to an existing installation**."
+    fuente: [web-https-documentacion-s10peru-com-proceso--s001, img-1a6b919c47ae-0000]
+    pagina: null
+    fotos:
+      - id: "835a8df6b0ab"
+        ruta_o_url: "imagenes/proceso-instalacion-microsoft-sql-server/1a6b919c47ae.png"
+        pagina: null
+        ocr: "‘SQL Server Installation Center  =/Ol x)\nPlanning New SQL Server stand-alone installation or add features to an existing installation\nmorte Launch a wizard to install SQL Server 2008 in 8 non-clustered environment or to add features to an\nexisting SQL Server 2008 instance.\nMaintenance\nae New SQL Server Failover cluster installation\noo\nLaunch a wizard to install a single-node SQL Server 2008 Failov…"
+  - n: 4
+    id: "instalacion.instalar-sql-server#4"
+    accion: "Observe de nuevo el reporte y haga clic en **OK**."
+    fuente: [web-https-documentacion-s10peru-com-proceso--s002]
+    pagina: null
+    fotos:
+      - id: "e2afea9c6b0c"
+        ruta_o_url: "imagenes/proceso-instalacion-microsoft-sql-server/ddca004a98db.png"
+        pagina: null
+        caption: "Observe de nuevo el reporte y haga clic en“OK”"
+        ocr: "[ix souserver2008setup lolx\nSetup Support Rules\nSetup Support Rules identify problems that might occur when you install SQL Server Setup support files. Failures must be corrected\nbefore Setup can continue.\nSetup Support Rules Operation completed. Passed: 5. Falled0. Warning 0. Skipped 0.\nLITT TTT TTT TTT TTT TTT |\nView detailed report\n[fee status |\n[Olkenstenpaer i\n[2 |vneve ene raenanstan wayaeve…"
+  - n: 5
+    id: "instalacion.instalar-sql-server#5"
+    accion: "Si instala una versión de pruebas, seleccione la edición que desee; en una instalación diferente, agregue la clave de producto. Haga clic en **Next**."
+    fuente: [web-https-documentacion-s10peru-com-proceso--s002]
+    pagina: null
+    fotos:
+      - id: "680024b0428e"
+        ruta_o_url: "imagenes/proceso-instalacion-microsoft-sql-server/b7fa977f8ae2.png"
+        pagina: null
+        caption: "Si está instalando una versión de pruebas (cómo en este ejemplo) de SQL Server, podrá seleccionar la opción correspondiente para la edición que desee; en una instalación diferente, agregue la clave de producto y haga clic en “Next”"
+        ocr: "=l0) x\nProduct Key\n‘Specify the edition of SQL Server 2008 to install.\nProduct Key ‘Specify a free edition of SQL Server or provide a SQL Server product key to validate this instance of SQL Server\nLicense T 2008, Enter the 25-character key from the Microsoft certificate of authenticity or product packaging. IF you\nteense Terms: specify Enterprise Evaluation, the instance will be activated with a 1…"
+  - n: 6
+    id: "instalacion.instalar-sql-server#6"
+    accion: "Lea los términos de licencia y, si está de acuerdo, seleccione la opción correspondiente y haga clic en **Next**."
+    fuente: [web-https-documentacion-s10peru-com-proceso--s002]
+    pagina: null
+  - n: 7
+    id: "instalacion.instalar-sql-server#7"
+    accion: "Haga clic en **Install** para instalar los componentes de soporte necesarios y luego haga clic en **Next**."
+    fuente: [web-https-documentacion-s10peru-com-proceso--s002]
+    pagina: null
+    fotos:
+      - id: "57e8c2b1a939"
+        ruta_o_url: "imagenes/proceso-instalacion-microsoft-sql-server/a1907708205b.png"
+        pagina: null
+        caption: "A continuación, se instalan componentes de soporte necesarios para la instalación, haga clic en “Install” para instalarlos"
+        ocr: "=[5/ x)\nSetup Support Rules\nSetup Support Rules identify problems that might occur when you install SQL Server Setup support files. Failures must be corrected\nbefore Setup can continue.\n‘Setup Support Rules ‘Operation completed, Passed: 10. Failed 0. Warning 0. Skipped 1.\neaure selection LITT TTT TTT TTT TTT TTT |\nDisk Space Requirements\nError and Usage Reporting Show details >> Re-run\nWEE ELTHIRE…"
+  - n: 8
+    id: "instalacion.instalar-sql-server#8"
+    accion: "Seleccione las características de SQL Server que desea instalar, asegurándose de instalar **Database Engine Services**, y haga clic en **Next**."
+    fuente: [web-https-documentacion-s10peru-com-proceso--s002]
+    pagina: null
+    fotos:
+      - id: "e476e2a271f7"
+        ruta_o_url: "imagenes/proceso-instalacion-microsoft-sql-server/c3609e208b16.png"
+        pagina: null
+        caption: "Ahora haga clic en “Next”"
+        ocr: "=[ol x!\nFeature Selection\nSelect the Enterprise Evaluation features to install, For clustered installations, only Database Engine Services and Analysis Services\ncan be clustered.\nSetup Support Rules Features: Descrintion:\nFeature Selection) Server features are instance-aware and\nInstance Configuration Database Engine Services have their own registry hives. They\nDisk Space Requirements SQL Server R…"
+  - n: 9
+    id: "instalacion.instalar-sql-server#9"
+    accion: "Decida si la instancia es por defecto o nombrada (en ese caso, asígnele un nombre) y haga clic en **Next**."
+    resultado: "Si la instancia es por defecto, desde equipos clientes remotos se conectará por el nombre de la máquina o por su dirección IP."
+    fuente: [web-https-documentacion-s10peru-com-proceso--s002]
+    pagina: null
+    fotos:
+      - id: "ebae0fb03dae"
+        ruta_o_url: "imagenes/proceso-instalacion-microsoft-sql-server/81e91d7f4f81.png"
+        pagina: null
+        caption: "A continuación tendrá que decidir si la instancia que va instalar es una instancia por defecto o nombrada, en el segundo caso tendrá que asignar a esta un nombre con el cual la reconocerá a futuro; si la instancia es creada por defecto, la forma de conectarse a esta desde servidores o equipos clientes remotos, será por medio del nombre de la máquina o de la dirección ip de la misma. Haga clic en “Next”"
+        ocr: "| SL Server 2008 Setup EEE eee\nInstance Configuration\nSpecify the name and instance ID for the SQL Server instance,\n‘Setup Support Rules © Befauitinstance |\n(Roetinio SEEN 7 Named instance: MSSQLSERVER\nInstance Configuration\nDisk Space Requirements\nServer Configuration Instance ID: [MSSQLSERVER\nCorsesaai Tae ner Instance root directory: [c:\\Program Files\\Microsoft SQL Server -\n‘Analysis Services C…"
+  - n: 10
+    id: "instalacion.instalar-sql-server#10"
+    accion: "Compruebe en el análisis de requerimientos de espacio que cuenta con el almacenamiento suficiente y haga clic en **Next**."
+    fuente: [web-https-documentacion-s10peru-com-proceso--s002]
+    pagina: null
+    fotos:
+      - id: "d38ee26d2c52"
+        ruta_o_url: "imagenes/proceso-instalacion-microsoft-sql-server/f5bb98a722a2.png"
+        pagina: null
+        caption: "En la siguiente ventana, se encuentra un análisis de requerimientos de espacio, cuando se haya comprobado que cuenta con el espacio de almacenamiento suficiente, haga clic en “Next”"
+        ocr: "pealsie3)\nDisk Space Requirements\nReview the disk space summary For the SQL Server Features you selected.\n‘Setup Support Rules Disk Usage Summary:\nFeature Selection a Drive C: 2684 MB required, 60444 MB available\nInstance Configuration System directory (C:\\WINDOWS\\system32); 1256 MB required\nDisk Space Requirements Shared feature directory (C:\\Program Files\\Microsoft SQL Server\\): 784 MB required…"
+  - n: 11
+    id: "instalacion.instalar-sql-server#11"
+    accion: "Configure las cuentas con las que se ejecutará cada servicio (se recomienda utilizar diferentes cuentas) y haga clic en el tab **Collation**."
+    fuente: [web-https-documentacion-s10peru-com-proceso--s003]
+    pagina: null
+    fotos:
+      - id: "a3b9855c052e"
+        ruta_o_url: "imagenes/proceso-instalacion-microsoft-sql-server/e35d6c9b2807.png"
+        pagina: null
+        caption: "Ahora, usted deberá configurar las cuentas con las cuales se ejecutará el servicio; la recomendación es utilizar diferentes cuentas, sin embargo, en la imagen de la derecha usted puede observar cómo una cuenta es utilizada para ejecutar más de un servicio, en la parte inferior podría seleccionar la opción para utilizar la misma cuenta para todos los servicios, en cuyo caso solamente tendrá que escribir credenciales una vez, pero no estará cumpliendo con buenas prácticas de seguridad. Después de configurar las cuentas, haga clic en el tab “Collation”"
+        ocr: "=lo)x\nServer Configuration\nSpecify the configuration.\nSehup Sapper Paleo (Service Aezounts | colation |\nFeature Selection\nInstance Configuration Microsoft recommends that you use a separate account for each SQL Server service,\nDisk Space Requirements Service | Account Name | Password | Startup Type\nDetabose rg Conigutin 5h Server Caibaceone ESE [ef coveseveseeee [atonste\nRenEkny Sari Sea Ceien Sql…"
+  - n: 12
+    id: "instalacion.instalar-sql-server#12"
+    accion: "En **Collation**, seleccione **SQL_Latin1_General_CP1_CI_AS** y haga clic en **Next**."
+    fuente: [web-https-documentacion-s10peru-com-proceso--s003]
+    pagina: null
+    fotos:
+      - id: "e21a2705b92e"
+        ruta_o_url: "imagenes/proceso-instalacion-microsoft-sql-server/45915fa3db45.png"
+        pagina: null
+        caption: "En Collation, debe seleccionar “SQL_Latin1_General_CP1_CI_AS”, haga click en Next."
+        ocr: "=l5ixd\nServer Configuration\nSpecify the configuration.\n‘Setup Support Rules Service Accounts [ Collation |)\nFeature Selection\nInstance Configuration Database Engine:\nDisk Space Requirements [5QL_Latint_General_CP1_CI_AS Customize...\nServer Configuration Latin1-General, case-insensitive, accent-sensitive, kanatype-insensitive, width-insensitive\nDatabase Engine Configuration for Unicode Data, SQL Se…"
+  - n: 13
+    id: "instalacion.instalar-sql-server#13"
+    accion: "Defina el modelo de autenticación mixto y escriba una contraseña para el usuario administrador tipo SQL."
+    fuente: [web-https-documentacion-s10peru-com-proceso--s003]
+    pagina: null
+    fotos:
+      - id: "6aba2308bb0f"
+        ruta_o_url: "imagenes/proceso-instalacion-microsoft-sql-server/afd5c4920118.png"
+        pagina: null
+        caption: "Ahora, tendrá que definir el modelo de autenticación Mixto, deberá escribir una contraseña para el usuario administrador tipo SQL; Recuerde que el modo mixto permite la utilización de inicios de sesión tipo SQL (usuarios que no hacen parte de Windows) y es utilizada para dar acceso a SQL Server desde aplicaciones, entre otras cosas."
+        ocr: "=/0lx\nDatabase Engine Configuration\n‘Specify Database Engine authentication security mode, administrators and data directories.\nSetup Support Rules {Recount Provisioning | pata Directories | FILESTREAM |\nFeature Selection\nInstance Configuration Specify the authentication mode and administrators for the Database Engine.\nDisk Space Requirements Authentication Mode,\nServer Configuration: © Windows au…"
+  - n: 14
+    id: "instalacion.instalar-sql-server#14"
+    accion: "Agregue como administrador al usuario que ejecuta la instalación con **Add current User**; luego, en **Data Directories**, revise las ubicaciones físicas donde quedará instalado SQL Server y haga clic en **Next**."
+    fuente: [web-https-documentacion-s10peru-com-proceso--s003]
+    pagina: null
+    fotos:
+      - id: "1e3b8db96863"
+        ruta_o_url: "imagenes/proceso-instalacion-microsoft-sql-server/a693d6aaecd0.png"
+        pagina: null
+        caption: "Paso 15: Agregue también como administrador a cualquier usuario que vaya a cumplir con dicha tarea, por ejemplo el usuario que está ejecutando la instalación (Add current User) Haga clic en “Data Directories” Ahora revise las ubicaciones físicas donde va a quedar instalado SQL Server y cada uno de sus componentes, Haga clic en Next"
+        ocr: "Database Engine Configuration\nSpecify Database Engine authentication security mode, administrators and data directories.\n\nSetup Support Rules Account Provisioning [Data Directories | pestReam |\nFeature Selection\nInstance Configuration Data root directory: [c:\\Program Files\\Microsoft SQL Server\\ te\nDisk Space Requirements System database directory: C:\\Program Files\\Microsoft SQL\nServer Configuratio…"
+  - n: 15
+    id: "instalacion.instalar-sql-server#15"
+    accion: "Seleccione las opciones para que se envíen reportes de errores y de uso de características hacia Microsoft y haga clic en **Next**."
+    fuente: [web-https-documentacion-s10peru-com-proceso--s003]
+    pagina: null
+    fotos:
+      - id: "2969f5baa0ff"
+        ruta_o_url: "imagenes/proceso-instalacion-microsoft-sql-server/e8350bd772d3.png"
+        pagina: null
+        caption: "Ahora, seleccione las opciones para que se envíen reportes de errores y de uso de características hacia Microsoft y haga clic en “Next”"
+        ocr: "={0)>\nError and Usage Reporting\nHelp Microsoft improve SQL Server features and services,\nSetup Support Rules Specify the information that you would like to automatically send to Microsoft to improve future releases of SQL\nrare Server. These settings are optional. Microsoft treats this information as confidential. Microsoft may provide\neeture Serection updates though Microsoft Update to modify Feat…"
+  - n: 16
+    id: "instalacion.instalar-sql-server#16"
+    accion: "En la ventana **Installation Rules**, haga clic en **Next**."
+    fuente: [web-https-documentacion-s10peru-com-proceso--s003, img-759846fa6c6b-0000]
+    pagina: null
+    fotos:
+      - id: "f6f342a55c6b"
+        ruta_o_url: "imagenes/proceso-instalacion-microsoft-sql-server/759846fa6c6b.png"
+        pagina: null
+        ocr: "=l5/x!\nInstallation Rules\nSetup is running rules to determine if the installation process willbe blocked. For more information, click Help.\nSetup Support Rules Operation completed. Passed: 8. Falled0. Warning 0. Skipped 0.\nbenz PUTTEEEE EEL ELEE ELLE ELELLE ELLE LLL}\nInstance Configuration\nDisk Space Requirements Show details >> Re-run\nServer Configuration Conde nee\nDatabase Engine Configuration\n‘…"
+  - n: 17
+    id: "instalacion.instalar-sql-server#17"
+    accion: "Revise el resumen y haga clic en **Install**."
+    fuente: [web-https-documentacion-s10peru-com-proceso--s003]
+    pagina: null
+    fotos:
+      - id: "3022f1110b74"
+        ruta_o_url: "imagenes/proceso-instalacion-microsoft-sql-server/66c687fe351f.png"
+        pagina: null
+        caption: "Revise el resumen y haga clic en “Install”"
+        ocr: "lolx)\nReady to Install\nVerify the SQL Server 2008 Features to be installed.\n‘Setup Support Rules Ready to install SQL Server 2008:\nFeature Selection Directory ~\nInstance Configuration ‘System database directory: C:\\Program Files\\Microsoft SQL Server\\MSSQL10.MSSQLSERVER\\,\nPecoRron User database directory: C:\\Program Fies|Microsoft SQL Server|M5SQL10.MSSQLSERVER|MS\nene User database log directory: C…"
+  - n: 18
+    id: "instalacion.instalar-sql-server#18"
+    accion: "Espere mientras la instalación está siendo realizada, hasta que se indique que ha sido completada."
+    fuente: [web-https-documentacion-s10peru-com-proceso--s003]
+    pagina: null
+    fotos:
+      - id: "1e6eac88521d"
+        ruta_o_url: "imagenes/proceso-instalacion-microsoft-sql-server/c225dfe9d33b.png"
+        pagina: null
+        caption: "La instalación está siendo realizada"
+        ocr: "lox!\nInstallation Progress\n‘Setup Support Rules Calculating installation workflow.\nFeature Selection |\nInstance Configuration\nDGreo Ree amas ‘Adding installation modfication modifiers,\nServer Configuration\nDatabase Engine Configuration\nAnalysis Services Configuration\nReporting Services Configuration\nError and Usage Reporting\nInstallation Rules\nReady to Install\nInstallation Progress\n‘Complete."
+      - id: "80b11da0e34b"
+        ruta_o_url: "imagenes/proceso-instalacion-microsoft-sql-server/60577f8f72af.png"
+        pagina: null
+        caption: "La instalación ha sido completada"
+        ocr: "= 15) x!\nInstallation Progress\nSetup Support Rules Setup process complete\nFeature Selection PTTL\nPITT\nInstance Configuration\nDisk Space Requirements\nServer Configuration\nDatabase Engine Configuration | Feature Name | status [|\nEmeiae Rea @eLED @ [Database Engine Services Success\nRenorting Services Configuration @ |501 Server Replication Success\nlee tent Tos connect\n(@ | client Tools SOK Success\n'(…"
+  - n: 19
+    id: "instalacion.instalar-sql-server#19"
+    accion: "Si desea ver un resumen de la instalación, use el link hacia el registro de resumen; haga clic en **Close** para salir."
+    resultado: "La instalación ha sido terminada."
+    fuente: [web-https-documentacion-s10peru-com-proceso--s004]
+    pagina: null
+    fotos:
+      - id: "1f17e6371865"
+        ruta_o_url: "imagenes/proceso-instalacion-microsoft-sql-server/f035dde909f2.png"
+        pagina: null
+        caption: "Si desea ver un resumen de la instalación, aquí encuentra un link hacia dicho registro de resumen; Haga clic en “Close” para salir, la instalación ha sido terminada."
+        ocr: "lolx\nComplete\nYour SQL Server 2008 installation completed successfully.\nSetup Support Rules Summary log file has been saved to the Following location:\nFeature Selection C:\\Proaram Files\\Microsoft SOL Server\\100\\Setup Bootstrap\\Loq\\20080611 001130\nInstance Configuration Summary SOLZ008RCOO 20080611 001130.txt\nDisk Space Requirements Information about the Setup operation or possible next steps:\nServ…"
+  - n: 20
+    id: "instalacion.instalar-sql-server#20"
+    accion: "Instale **SQL Server Management Studio (SSMS)**."
+    fuente: [web-https-documentacion-s10peru-com-proceso--s005]
+    pagina: null
+  - n: 21
+    id: "instalacion.instalar-sql-server#21"
+    accion: "Ingrese a propiedades / **Options** de la base de datos y seleccione el nivel de compatibilidad de acuerdo a su versión de SQL."
+    fuente: [web-https-documentacion-s10peru-com-proceso--s005, img-c696225ad765-0000]
+    pagina: null
+    fotos:
+      - id: "6012d4f6b385"
+        ruta_o_url: "imagenes/proceso-instalacion-microsoft-sql-server/c696225ad765.png"
+        pagina: null
+        ocr: "Cr)\naod Tea One\n#& Files\n= Cot Gener CPICLAS\n# Options\n2 Orso Tacs Pacey\n& Pemasore Coney vt\nExtended Properties ; i Seaver 3008 Ch\nne\n# Transaction Log Shipping Other options: SOL Server 2014 120)\n# Query Store ‘SQL Server 2016 (130)\ngz2!|S\n4 Cursor x\nClose Cursor on Commit Enabled False\nDefault Cursor GLOBAL\n4 Database Scoped Configurations\nLegacy Cardinality Estimation OFF\nLegacy Cardinalty Est…"
+verificacion: []
+errores_frecuentes:
+  - sintoma: "Problemas de rendimiento con SQL Server 2016."
+    solucion: "No se recomienda utilizar la versión 2016 por problemas de rendimiento."
+    fuente: [web-https-documentacion-s10peru-com-proceso--s005]
+relacionados: [instalacion.instalar-s10-erp]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-proceso--s001, manual: "El proceso de instalación de Microsoft SQL Server", seccion: "INTRODUCCIÓN AL DOCUMENTO (1)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-proceso--s005, manual: "El proceso de instalación de Microsoft SQL Server", seccion: "Tips para el proceso de instalación:", pagina: null}
+  - {id: img-1a6b919c47ae-0000, manual: "El proceso de instalación de Microsoft SQL Server", seccion: "1a6b919c47ae.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-proceso--s002, manual: "El proceso de instalación de Microsoft SQL Server", seccion: "INTRODUCCIÓN AL DOCUMENTO (2)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-proceso--s003, manual: "El proceso de instalación de Microsoft SQL Server", seccion: "INTRODUCCIÓN AL DOCUMENTO (3)", pagina: null}
+  - {id: img-759846fa6c6b-0000, manual: "El proceso de instalación de Microsoft SQL Server", seccion: "759846fa6c6b.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-proceso--s004, manual: "El proceso de instalación de Microsoft SQL Server", seccion: "INTRODUCCIÓN AL DOCUMENTO (4)", pagina: null}
+  - {id: img-c696225ad765-0000, manual: "El proceso de instalación de Microsoft SQL Server", seccion: "c696225ad765.png", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

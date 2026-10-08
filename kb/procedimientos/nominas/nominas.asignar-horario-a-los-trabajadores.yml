@@ -1,0 +1,91 @@
+id: nominas.asignar-horario-a-los-trabajadores
+version: 1
+modulo: nominas
+titulo: "Asignar el horario cíclico a los trabajadores"
+objetivo: "Asignar a los trabajadores un horario cíclico, con una fecha de vigencia que empiece un día lunes, que se usa para el cálculo del resumen de conceptos por día (número de días y horas) y de la nómina."
+nivel: basico
+preguntas:
+  - "como asigno el horario a los trabajadores"
+  - "donde le pongo el horario ciclico a un obrero"
+  - "que fecha de vigencia pongo en el horario"
+  - "el horario no me cuadra las horas en el resumen por dia, donde lo asigno"
+  - "como agrego el horario desde la ficha del trabajador"
+  - "como asigno un horario a varios empleados a la vez"
+  - "como hago la asignacion de horarios en nominas"
+  - "asignar orario ciclico al personal"
+aliases:
+  - "asignar horario"
+  - "asignación de horarios"
+  - "horario cíclico del trabajador"
+  - "fecha de vigencia del horario"
+entidades:
+  modulo: "Nóminas"
+  pantallas: ["Horarios", "Asignación de Horario", "Catálogo de Personal por Tipo de Nominas"]
+  objetos: ["horario cíclico", "trabajador", "fecha de vigencia", "tipo de nómina"]
+prerrequisitos:
+  - texto: "Los horarios diarios forman parte de los horarios cíclicos, que se asignan a cada trabajador: el horario cíclico debe estar registrado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s036]
+pasos:
+  - n: 1
+    id: "nominas.asignar-horario-a-los-trabajadores#1"
+    accion: "En **Proyectos**, ubique el multiproyecto y acceda al escenario **Horarios**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s052, img-18a46de9b63d-0000]
+    pagina: null
+    fotos:
+      - id: "28be4a4faf2a"
+        ruta_o_url: "imagenes/manual-de-nominas/18a46de9b63d.png"
+        pagina: null
+        ocr: "Proyectos\noat =) aaj Escritorio\nOrganizacién i+) FIMA HUAYCOLORO.\n£4) 5B MULTIFAMILIAR ESCAMPADERO\nAMULTPROYECTO\nAngad cs = 2 Prince\nHorarios Luego, Ei picts)"
+  - n: 2
+    id: "nominas.asignar-horario-a-los-trabajadores#2"
+    accion: "Registre una asignación de horario: en la ventana **Asignación de Horario**, elija el horario y registre la **Fecha de Vigencia**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s052, img-a5aae9a44caf-0000]
+    pagina: null
+    fotos:
+      - id: "80938de1786e"
+        ruta_o_url: "imagenes/manual-de-nominas/a5aae9a44caf.png"
+        pagina: null
+        ocr: "EY Asignaci6n de Horario @) | x\nDocumenta N° joooo0001 Fecha de Vigencia 01/02/2016 _v\nDescripcién de Horario fEmpleadosdeLunVie8SSa55 SsS~C*«CwY\nObservaciones ee\n\nSvea BF eda"
+  - n: 3
+    id: "nominas.asignar-horario-a-los-trabajadores#3"
+    accion: "Registre como fecha de vigencia un día lunes, para iniciar el horario cíclico de acuerdo a las semanas laborables de lunes a domingo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s052]
+    pagina: null
+  - n: 4
+    id: "nominas.asignar-horario-a-los-trabajadores#4"
+    accion: "En el **Catálogo de Personal por Tipo de Nominas**, elija con doble clic a los trabajadores."
+    fuente: [img-e5e3808fc280-0000, web-https-documentacion-s10peru-com-manual-d-s052]
+    pagina: null
+    fotos:
+      - id: "a44929e28795"
+        ruta_o_url: "imagenes/manual-de-nominas/e5e3808fc280.png"
+        pagina: null
+        ocr: ": 20 i =] ea)\n@ Catalogo de Personal por Tipo de Nominas | 6) let So\nOpciones 2?\nle XQUCGMYRBR OM HHS AlBe\npl Elija con doble clic * NIVEL: Of\n|_| [codigo Apetiidos y Nomifes Tigo de Nomina | [Pre »\n| | |22000035 BARSARAN DE_CARPIC, GINO OMAR Régimen C.C. con pe|021\n| | [22000036 BURT AMANYES 106, IWBR Régimen C.C. con pe|02¢\n| | |22000037 CAJA CHAMPI, LUIS ALFONSO Régimen C.C. con pe|02¢\n22000038…"
+  - n: 5
+    id: "nominas.asignar-horario-a-los-trabajadores#5"
+    accion: "También puede hacerlo desde la ficha de cada trabajador: en la pestaña **Horarios**, haga clic derecho, elija **Agregar** y adicione el horario cíclico dependiendo del tipo de nómina."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050, img-49db2dee9f71-0000]
+    pagina: null
+    fotos:
+      - id: "846a00bf60ff"
+        ruta_o_url: "imagenes/manual-de-nominas/49db2dee9f71.png"
+        pagina: null
+        ocr: "Cédigo 22000032\n“C ‘om oon © © @ ®\nGeneral | costes | Procesos | Ingresos Haberes | Tareo sadoméeice | Gontartes: |\nTipo de Némina = Régimen C.C. con BB.SS. - Obreros\nvais\nAYvealsa BF\nObreros L-V 8.5 hrs Sab 5.5 hrs ObrPIt CICLICO O01 MANANA 11/01/2016\nClic derecho Agregar\n4 | Quitar r"
+verificacion: []
+errores_frecuentes:
+  - sintoma: "El horario cíclico no empieza en la semana correcta."
+    solucion: "La fecha de vigencia es muy importante para iniciar el horario cíclico de acuerdo a las semanas laborables de lunes a domingo: siempre debe empezar un día lunes."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s052]
+  - sintoma: "El trabajador ingresó a mitad de semana."
+    solucion: "Al adicionar el horario cíclico en la ficha, tenga en cuenta la fecha de vigencia: un día lunes anterior a la fecha de ingreso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s050]
+relacionados: [nominas.registrar-ficha-del-trabajador, nominas.calcular-la-nomina]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s036, manual: "Manual de Nóminas", seccion: "4.8.3.2 Horarios Cíclicos", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s052, manual: "Manual de Nóminas", seccion: "5.2.3.1 Asignación de Horarios", pagina: null}
+  - {id: img-18a46de9b63d-0000, manual: "Manual de Nóminas", seccion: "18a46de9b63d.png", pagina: null}
+  - {id: img-a5aae9a44caf-0000, manual: "Manual de Nóminas", seccion: "a5aae9a44caf.png", pagina: null}
+  - {id: img-e5e3808fc280-0000, manual: "Manual de Nóminas", seccion: "e5e3808fc280.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s050, manual: "Manual de Nóminas", seccion: "5.2.3 Registro de información en la ficha del trabajador (4)", pagina: null}
+  - {id: img-49db2dee9f71-0000, manual: "Manual de Nóminas", seccion: "49db2dee9f71.png", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

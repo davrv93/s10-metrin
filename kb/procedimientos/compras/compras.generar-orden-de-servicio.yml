@@ -1,0 +1,144 @@
+id: compras.generar-orden-de-servicio
+version: 1
+modulo: compras
+titulo: "Generar una orden de servicio desde un pedido aprobado"
+objetivo: "Generar en el escenario de Pedidos de Compra la Orden de Servicio a partir de un pedido A Compra aprobado, una por cada propietario de los equipos, registrar los precios ofertados por el proveedor y enviarla a aprobación."
+nivel: intermedio
+preguntas:
+  - "como genero la orden de servicio del pedido que ya aprobaron"
+  - "como saco una os para el dueño del equipo"
+  - "donde pongo los precios del proveedor en la orden de servicio"
+  - "como envio a aprobacion la orden de servicio"
+  - "genere la orden de serbicio y no se como mandarla a aprobar"
+  - "tengo que hacer una orden de servicio por cada proveedor?"
+  - "como le pongo descuento a la orden de servicio"
+  - "donde apruebo las ordenes de servicio"
+  - "como hago una orden de servicio en s10"
+aliases:
+  - "generar orden de servicio"
+  - "orden de servicio"
+  - "OS desde pedido"
+  - "crear orden de servicio"
+entidades:
+  modulo: "Compras"
+  pantallas: ["Pedidos de Compra", "Órdenes de Servicio"]
+  objetos: ["Orden de Servicio", "pedido", "Proveedor", "equipos"]
+prerrequisitos:
+  - texto: "La Orden de Servicio se genera a partir de un pedido A Compra aprobado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s061]
+pasos:
+  - n: 1
+    id: "compras.generar-orden-de-servicio#1"
+    accion: "Ingrese al programa con el usuario encargado de generar la Orden de Servicio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s061]
+    pagina: null
+    fotos:
+      - id: "0b631f178fff"
+        ruta_o_url: "imagenes/manual-de-compras/fb17d513e7be.png"
+        pagina: null
+        caption: "El usuario encargado de generar la Orden de Servicio debe ingresar al programa."
+        ocr: "Sistema 10: &\nead @\ncove cancer\n\nre Z"
+  - n: 2
+    id: "compras.generar-orden-de-servicio#2"
+    accion: "Ingrese al escenario de **Pedidos de Compra**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s061]
+    pagina: null
+    fotos:
+      - id: "05cd382794ed"
+        ruta_o_url: "imagenes/manual-de-compras/1a5ce0110410.png"
+        pagina: null
+        caption: "Acceso al escenario de Pedidos de Compras"
+        ocr: "J [Elia |——___,,\ni gj Esciftorio\nPedidos de Compra Eft Pedro\nLuego, RP cenTe nN carne ler]"
+  - n: 3
+    id: "compras.generar-orden-de-servicio#3"
+    accion: "Haga clic derecho sobre el pedido aprobado y elija **Generar Orden de Servicio**."
+    fuente: [img-e0b5a0a60b25-0000, web-https-documentacion-s10peru-com-manual-d-s061]
+    pagina: null
+    fotos:
+      - id: "64224a8d9a55"
+        ruta_o_url: "imagenes/manual-de-compras/e0b5a0a60b25.png"
+        pagina: null
+        ocr: "Pedidos de Compra\n\nEY Hw [Cie derecho\n\nNro. Pedido _| Proyecto Almacén Fecha pedido | 1\n\nDe Servicios 2104/2040\nVerificar estado »\n\n) Generar Orden de Servicio\n\n© Notas m,\nie Vista preliminar\n\nC| &} Imprimir Unidad | Cantidad\nom ae m3 hm 60.00\n0| “t Seguimiento al pedido ANTAS 100-115 HP 2-2.25 yd3 hm 132.00\n0/5] Mostrar filtro DE 140-160 HP hm 50.00\no| ih RIA MANDIBULA 15\" X 24” 30 HP 46 -* hm 56…"
+  - n: 4
+    id: "compras.generar-orden-de-servicio#4"
+    accion: "Use el botón de **Proveedor** para elegir al proveedor, que es el dueño del equipo: la Orden de Servicio se genera para cada uno de los propietarios de los equipos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s061]
+    pagina: null
+    fotos:
+      - id: "9c015aa4bb5a"
+        ruta_o_url: "imagenes/manual-de-compras/f0c8e6efff4e.png"
+        pagina: null
+        caption: "La Orden de Servicio debe ser generada para cada uno de los propietarios de los equipos, en este caso el propietario de todos los equipos es Polo, José"
+        ocr: "(ec) [2] fu]\nGestorde [0101005 [Martinez Luna, Pedro ue | oh : Orden de Servicic\n‘Compra\nProveedor [02100002 |Polo, José o= 34)\nContacto [92100002 [Polo, José Or 0) Tee Estandar >|)\nFecha [24/04/2010 | FormaPago[os [crédtos 1Sdias | ih] TC 1 w= | Monedalo1 [NUEVOS SOLES =. | él\nFacturar 8:fozro0001 )10 SA. 44) Estado\nDescuento % [jy Descuento Giobal aD Evin | 's2010 ~}X)\nLugar de Entrega |Calle La…"
+  - n: 5
+    id: "compras.generar-orden-de-servicio#5"
+    accion: "Elija al contacto del proveedor, que es la persona con quien se coordina, y el tipo, que es un campo que sirve para filtrar información."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s061]
+    pagina: null
+  - n: 6
+    id: "compras.generar-orden-de-servicio#6"
+    accion: "Elija la forma de pago, la moneda que se utiliza para la transacción y la empresa a la que se facturará el servicio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s061]
+    pagina: null
+  - n: 7
+    id: "compras.generar-orden-de-servicio#7"
+    accion: "Si corresponde, ingrese el porcentaje de descuento, que afecta a todos los precios (por ejemplo, 5 para indicar 5 %), o un monto fijo para redondear los decimales del total."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s061]
+    pagina: null
+  - n: 8
+    id: "compras.generar-orden-de-servicio#8"
+    accion: "Ingrese la fecha tope de vigencia de la oferta de precios y la fecha de inicio del servicio; el lugar donde se efectuará el servicio se toma de la dirección registrada en los datos del Proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s061]
+    pagina: null
+  - n: 9
+    id: "compras.generar-orden-de-servicio#9"
+    accion: "Elija la pestaña **Acumulado** e ingrese los precios ofertados por el proveedor; el precio del presupuesto es solo informativo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s061]
+    pagina: null
+  - n: 10
+    id: "compras.generar-orden-de-servicio#10"
+    accion: "Si necesita editar la cantidad total, ingrese a la pestaña **Detallado**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s062]
+    pagina: null
+  - n: 11
+    id: "compras.generar-orden-de-servicio#11"
+    accion: "Haga clic en **Aceptar** para grabar la Orden de Servicio y enviarla a aprobación."
+    resultado: "El sistema pregunta si desea enviar a aprobación la Orden de Servicio."
+    fuente: [img-c181bcc577ae-0000, web-https-documentacion-s10peru-com-manual-d-s062]
+    pagina: null
+    fotos:
+      - id: "98f8adcf90cd"
+        ruta_o_url: "imagenes/manual-de-compras/c181bcc577ae.png"
+        pagina: null
+        ocr: "Sistema 10 - Compras Es\ne (Desea enviar a aprobacién la Orden de Servicio N° 0001?\nNe"
+  - n: 12
+    id: "compras.generar-orden-de-servicio#12"
+    accion: "Para aprobarla, el usuario que aprueba la Orden de Servicio ingresa al programa y accede al escenario de **Ordenes de Servicio**."
+    resultado: "El sistema muestra el formulario de la Orden de Servicio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s062]
+    pagina: null
+    fotos:
+      - id: "8d296d8652ca"
+        ruta_o_url: "imagenes/manual-de-compras/c155b8794f45.png"
+        pagina: null
+        caption: "Acceso al escenario de Órdenes de Servicio,"
+        ocr: "e i: gj Esciftorio\nOrdenes de Ey Pedro\nsevice NOONE MMR PUENTE EN CARRETERA]"
+      - id: "1f2f99c5a699"
+        ruta_o_url: "imagenes/manual-de-compras/433f785ac577.png"
+        pagina: null
+        caption: "Acceso al escenario de Órdenes de Servicio,"
+        ocr: "Ordenes de Servicio\n= FIR *o oe a [LElie | | Adicionar desde Pedidos\nProyecto Estado IE. Adicionar desde Cotizacién\n5 |\nEEE] x Eliminar\nBYvG». 2aa Anuar\nLinea | Cédigo Recurso /| 7 jidad\n[7] 0348040034 CAMION VpLaUE] Quite Anulado\n2 039010008 cancarchom"
+      - id: "9b50587d0571"
+        ruta_o_url: "imagenes/manual-de-compras/08d33459cd5c.png"
+        pagina: null
+        caption: "El sistema muestra el formulario de la Orden de Servicio."
+        ocr: "Fecha envio aprobacion 24/04/2010 04:10:17 p.m. Fecha aprobacion\n\nSMA +. 2a\n\naft ‘Campo|Usuario | [En cualquier posidén > Grupo:\n\nUsuario Nombre del Usuario Obligatorio _| Correo electrénico VBt\n\navalencia Valencia Taco, Alberto oO avalencia@hotmail.com\n\nAcumulado Detallado Aprobacién | Guias de Ingreso\n\nRecurso CAMION VOLQUETE 12 m3 re] Total N\n\nPedido 60.00 Atendido 60.00 |Atender 0.00 LGV. 18% …"
+verificacion: []
+errores_frecuentes: []
+relacionados: [compras.registrar-pedido-para-orden-de-servicio, compras.aprobar-pedido, compras.aprobar-orden-de-compra]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s061, manual: "Manual de Compras", seccion: "15.3 Generar la Orden de Servicio (1)", pagina: null}
+  - {id: img-e0b5a0a60b25-0000, manual: "Manual de Compras", seccion: "e0b5a0a60b25.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s062, manual: "Manual de Compras", seccion: "15.3 Generar la Orden de Servicio (2)", pagina: null}
+  - {id: img-c181bcc577ae-0000, manual: "Manual de Compras", seccion: "c181bcc577ae.png", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

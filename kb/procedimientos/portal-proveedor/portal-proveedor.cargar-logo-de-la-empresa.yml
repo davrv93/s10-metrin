@@ -1,0 +1,66 @@
+id: portal-proveedor.cargar-logo-de-la-empresa
+version: 1
+modulo: portal-proveedor
+titulo: "Cargar el logo de la empresa proveedora en el portal"
+objetivo: "Seleccionar, desde la sección Configuración del Portal de Proveedores, el logotipo de la empresa proveedora que se imprimirá en los reportes."
+nivel: basico
+preguntas:
+  - "como subo el logo de mi empresa al portal de proveedores"
+  - "donde cambio el logotipo en el portal del proveedor"
+  - "quiero que mi logo salga en los reportes del portal"
+  - "como pongo el logo de la empresa en el portal s10"
+  - "donde estan los datos de mi empresa en el portal de proveedores"
+  - "como cargo la imajen del logo en portal proveedor"
+aliases:
+  - "logo de la empresa"
+  - "subir logotipo"
+  - "cambiar logo portal"
+  - "configuración del portal de proveedores"
+entidades:
+  modulo: "Portal del Proveedor"
+  pantallas: ["Configuración", "Logo de la Empresa"]
+  objetos: ["logotipo", "empresa proveedora", "reportes"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "portal-proveedor.cargar-logo-de-la-empresa#1"
+    accion: "Ingrese al portal **S10 Portal de Proveedores** con su dirección de correo electrónico y su clave."
+    fuente: [web-https-documentacion-s10peru-com-manual-p-s002, web-https-documentacion-s10peru-com-manual-p-s003]
+    pagina: null
+    fotos:
+      - id: "fdb44491b323"
+        ruta_o_url: "imagenes/manual-portal-proveedor/981228326058.png"
+        pagina: null
+        caption: "El usuario proveedor que desee consultar o ver detalles de los pagos de su empresa deberá ingresar al portal “S10 Portal de Proveedores” en la dirección https://s10its.com/SupplierPortalWeb, para lo cual debe tener la autorización respectiva."
+        ocr: "Welly) | | 2% J\nD) Supplier Portal x)\n¢€ Cc {I 54,94.249.71/SupplierPortalWeb/ QRryw):\nx\n\"t - 4 : 1\nc Me\n# ‘ Direccién de correo”\n. dlientepruebas10_3@hotmail.com\nro —\nbs\nte, 5\nWare, Has olvidado tu contrasefia’\n¥ ~ ' 3\n@ Sistema 10 , Derechos Reservados .\n< >"
+  - n: 2
+    id: "portal-proveedor.cargar-logo-de-la-empresa#2"
+    accion: "Abra la sección **Configuración**, que permite consultar y actualizar los datos de la empresa proveedora."
+    fuente: [web-https-documentacion-s10peru-com-manual-p-s016]
+    pagina: null
+  - n: 3
+    id: "portal-proveedor.cargar-logo-de-la-empresa#3"
+    accion: "Elija **Logo de la Empresa**."
+    fuente: [web-https-documentacion-s10peru-com-manual-p-s020]
+    pagina: null
+  - n: 4
+    id: "portal-proveedor.cargar-logo-de-la-empresa#4"
+    accion: "Use **Seleccione archivo** y elija el logotipo de la empresa proveedora."
+    resultado: "El logotipo se imprimirá en los reportes."
+    fuente: [web-https-documentacion-s10peru-com-manual-p-s020, img-04281d58deaf-0000]
+    pagina: null
+    fotos:
+      - id: "9015c3c4e892"
+        ruta_o_url: "imagenes/manual-portal-proveedor/04281d58deaf.png"
+        pagina: null
+        ocr: "(Sy\n1 Supplier Portal xo\n€ > & | © 54.94.249.71/SupplerPortaWeb/dashboard/dashboard ar|:\nee\nB Facturacén (3) Gh A om:\n5 200s (2)\nMis Datos | Persona de Contacto | Cuentas Bancarias | Logo de la Empresa\nB mpresion comprobantes (2)\n> Comprobante de Retendi6n nonay\nrose\n> Comprobente Detraccién 1GV Logo de la Empresa asses\nYE Ordenes de Compra y Servicio (2)\nBB metricas (3)\nSeleccione archivo,\n& Gest…"
+verificacion: []
+errores_frecuentes: []
+relacionados: [portal-proveedor.consultar-documentos-pendientes-de-pago]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-p-s002, manual: "Manual del Portal del Proveedor", seccion: "1.2 Acceso al Portal", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-p-s003, manual: "Manual del Portal del Proveedor", seccion: "1.2.1 Autenticación del Usuario", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-p-s016, manual: "Manual del Portal del Proveedor", seccion: "1.3.8 Configuración", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-p-s020, manual: "Manual del Portal del Proveedor", seccion: "1.3.8.4 Logo de la Empresa", pagina: null}
+  - {id: img-04281d58deaf-0000, manual: "Manual del Portal del Proveedor", seccion: "04281d58deaf.png", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

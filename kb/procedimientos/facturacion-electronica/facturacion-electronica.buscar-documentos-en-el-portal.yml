@@ -1,0 +1,108 @@
+id: facturacion-electronica.buscar-documentos-en-el-portal
+version: 1
+modulo: facturacion-electronica
+titulo: "Buscar, reenviar y descargar documentos en el portal de facturación electrónica"
+objetivo: "Buscar y consultar en Gestión de Documentos del portal los documentos electrónicos emitidos, reenviar la notificación al cliente y descargar el documento en XML, PDF o ZIP."
+nivel: basico
+preguntas:
+  - "como busco una factura en el portal de facturacion electronica"
+  - "al cliente no le llego el correo de la factura, como se lo reenvio"
+  - "como descargo el xml de una factura desde el portal"
+  - "donde bajo el pdf y el zip del comprobante en el portal s10"
+  - "por que en el portal solo me salen los documentos del ultimo mes"
+  - "como agrego otro usuario para que le llegue la notificacion de la factura"
+  - "como veo el detalle de un documento en gestion de documentos"
+  - "reenviar notificasion de factura electronica al cliente"
+aliases:
+  - "buscar documento"
+  - "gestión de documentos"
+  - "reenviar notificación"
+  - "descargar XML"
+  - "ver detalle"
+entidades:
+  modulo: "Facturación Electrónica"
+  pantallas: ["Gestión de Documentos", "Buscar Documento", "Detalle del Documento"]
+  objetos: ["documento", "notificación", "usuario"]
+prerrequisitos:
+  - texto: "Debe ingresar con un usuario del Rol Empresa, creado por el Administrador de la empresa que emite los documentos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s014]
+pasos:
+  - n: 1
+    id: "facturacion-electronica.buscar-documentos-en-el-portal#1"
+    accion: "Ingrese al portal con su dirección de correo electrónico y su clave."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s013]
+    pagina: null
+  - n: 2
+    id: "facturacion-electronica.buscar-documentos-en-el-portal#2"
+    accion: "En **Gestión de Documentos**, elija **Buscar Documento**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s020]
+    pagina: null
+    fotos:
+      - id: "4025e1c836d5"
+        ruta_o_url: "imagenes/manual-de-facturacion-electronica/2b01e72acef1.png"
+        pagina: null
+        caption: "Esta sección permite la búsqueda y consulta de los documentos."
+        ocr: "e@ - ao x\nUe Sen tends\n€ C  @ Seguro | https://s10its.com/SMITSWeb/Invoices/Searchinvoice.aspx wie\nEGG, srcruercion xecreonca tripe $10 caida ~ |__natycaner\n2 eat aseantt | mesa mente :\nBB cesnceDonmeros() | cia salons) Nombeseatoyens” Tee econate T0505 sa eseremimae nes Sir ee None es i\n, Serer eee oe\n5, ote soe Minino woot onsite\nPane\nee E\nsatan s8 anss08"
+  - n: 3
+    id: "facturacion-electronica.buscar-documentos-en-el-portal#3"
+    accion: "Ingrese los valores necesarios para filtrar los documentos que desea consultar; en el filtro por fecha de emisión, por defecto se muestran los últimos 30 días."
+    resultado: "Si no ingresa ni selecciona ningún otro campo, se listan todos los documentos emitidos según la fecha seleccionada."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s020]
+    pagina: null
+    fotos:
+      - id: "ab428ba6832d"
+        ruta_o_url: "imagenes/manual-de-facturacion-electronica/ef772e9b1de5.png"
+        pagina: null
+        caption: "Si no se ingresa o selecciona ningún otro campo se listarán todos los documentos emitidos según la fecha seleccionada."
+        ocr: "e - ao x\n\nUp ett\n\n€ CS @ Seguro | https://s10its.com/SMITSWeb/Invoices/Searchinvoice.aspx wie\n\nSo FACTURACION ELECTRONICA ripe $10 calorie = |__netycater\n\n4 coamsisemcininy | | mec enn .\n\nBB certon de Doxmerice 1) | cant [RREGSTCTSIST Homie treat Teds decent TODOS] sree smienimere hin i Se De) ime Si a\n\n, awa tsttwr—|tiorccstmn teint [Saerts —e] mde denisinjonarien | oven\n\n5, es ttn inieo woos vom…"
+  - n: 4
+    id: "facturacion-electronica.buscar-documentos-en-el-portal#4"
+    accion: "Si al cliente no le llegó el correo, haga clic en el enlace **Enviado a** y, desde la lista de usuarios a los que se envió la notificación, reenvíela."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s020]
+    pagina: null
+  - n: 5
+    id: "facturacion-electronica.buscar-documentos-en-el-portal#5"
+    accion: "Para agregar más usuarios a la notificación, use la opción **Editar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s020]
+    pagina: null
+    fotos:
+      - id: "8874eae798c7"
+        ruta_o_url: "imagenes/manual-de-facturacion-electronica/3904af7d09bd.png"
+        pagina: null
+        caption: "También es posible agregar más usuarios con la opción Editar."
+        ocr: "e@e - ao x\n1 Sita 10- Stead\nSo FACTURACION ELECTRONICA Grupo st0canbaridoma + | Nelycarer =\n& Gestion de Usuarios (1) BF buscar documento *\n. torene RC Poveior ‘Namie dels Emprsh «HAO SUNAT “xen Y= ache de Ein owowani8 cwosr0s8\nA. Gentén de Empresas 2) fede de 0008 Morede 10008 ’\nEnviado a\nvacoaale tninten 9 | @ ure magrnez servces sponse ost sean»\nvwecpeute townie psa sear copos0i8\nvecouate cowie…"
+  - n: 6
+    id: "facturacion-electronica.buscar-documentos-en-el-portal#6"
+    accion: "Haga clic en el enlace **Ver Detalle** del documento."
+    resultado: "Se abre una ventana emergente que muestra el detalle del documento."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s020]
+    pagina: null
+    fotos:
+      - id: "e39f9d4f141d"
+        ruta_o_url: "imagenes/manual-de-facturacion-electronica/48e6d0dcf94e.png"
+        pagina: null
+        caption: "Haciendo clic en el enlace Ver Detalle se abrirá una ventana emergente que mostrará el detalle del documento."
+        ocr: "e - a x\n1 Sita 0- Site de>\n€ > © seguro hupsi/s10tscomySMITSWety/ovices/Searchinoice aspx ei\nSo FACTURACION ELECTRONICA Grupo S10 cambiar itoma + | Nebycores =\nB& Gertie de Useaon 1) KJ A Buscar documento, .\nem eects acme (2) ‘ante [RUCaeI ames] Nombre dea ress ‘pe de TODS . Seti Serle-Mimere Wire de Serie Dee Winare de Sarita\n. Imorne Richens doen et ems tech tin Oua18 cose\n2. cei de reas (2 meen…"
+  - n: 7
+    id: "facturacion-electronica.buscar-documentos-en-el-portal#7"
+    accion: "Desde esa ventana, descargue el documento en formato XML, PDF o ZIP."
+    resultado: "El documento se descarga en el disco local y puede guardarlo como archivo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s020]
+    pagina: null
+    fotos:
+      - id: "1d97e4408967"
+        ruta_o_url: "imagenes/manual-de-facturacion-electronica/129e00485d04.png"
+        pagina: null
+        caption: "Desde esta ventana es posible descargar el documento en formatos XML, PDF y ZIP."
+        ocr: "& Gestin de Usuarios (2) a\nB Gg Cerne BUC —Documento — $$ B Descargar como ror\n[Risin to 308 MRO, 755 URB. 544 200 Descargar Z1P\nDetatle — Em ‘Mombre/Razén Sociaki_PINEDO CULQUI, ROLANDO PERCY owt: 40360271, Fecha Emisién 03/05/2018\n— 1 o4aneoooancona SERVIEIO. SOFORTE Y ACTUALIZACIONES -PRESUPUEST. cima gg 200 s6 2600\n‘Vac Detalle Envi = 0.00"
+verificacion: []
+errores_frecuentes:
+  - sintoma: "Ingresa por primera vez y el portal le pide una nueva clave."
+    solucion: "La clave del correo electrónico de bienvenida es temporal, por lo que el portal le solicitará que ingrese una nueva clave."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s013]
+relacionados: [facturacion-electronica.crear-usuario-del-portal, facturacion-electronica.enviar-comprobantes-a-sunat, facturacion-electronica.consultar-comprobante-con-acceso-anonimo]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s014, manual: "Manual de Facturación Electrónica", seccion: "3.1.2 Servicios según el Rol del Usuario", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s013, manual: "Manual de Facturación Electrónica", seccion: "3.1.1 Autenticación de Usuario", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s020, manual: "Manual de Facturación Electrónica", seccion: "3.2.3 Gestión de Documentos", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

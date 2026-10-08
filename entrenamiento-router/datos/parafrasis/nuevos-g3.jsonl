@@ -1,0 +1,252 @@
+{"texto": "como anulo una venta inmobiliaria completa empezando por sperant y terminando en s10", "procedimiento": "facturacion.anular-venta-sperant", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el cliente se arrepintio del departamento y quiere que le devolvamos su plata, que tengo que hacer en sperant y en s10", "procedimiento": "facturacion.anular-venta-sperant", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "anular proceso en sperant y cerrar la orden de venta en s10, como es", "procedimiento": "facturacion.anular-venta-sperant", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "pasos para anular una orden de venta que ya tiene boletas generadas por los abonos", "procedimiento": "facturacion.anular-venta-sperant", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el cliente desistio de comprar el lote, como le genero la nota de credito para pagarle", "procedimiento": "facturacion.anular-venta-sperant", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como inicio la anulacion en sperant indicando el motivo", "procedimiento": "facturacion.anular-venta-sperant", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como determino el monto de devolucion desde el cronograma de pagos al anular", "procedimiento": "facturacion.anular-venta-sperant", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "despues de anular en sperant que hago en s10 para cerrar la orden de venta", "procedimiento": "facturacion.anular-venta-sperant", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como genero la facturacion de una venta anulada y que fecha se usa", "procedimiento": "facturacion.anular-venta-sperant", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como le pago al cliente la nota de credito que salio de la anulacion", "procedimiento": "facturacion.anular-venta-sperant", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "anular venta sperant", "procedimiento": "facturacion.anular-venta-sperant", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "anulacion de venta", "procedimiento": "facturacion.anular-venta-sperant", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "kiero anular una orden de benta q vino d sperant", "procedimiento": "facturacion.anular-venta-sperant", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "xq el cliente ya no sigue con la compra, como anulo el proceso", "procedimiento": "facturacion.anular-venta-sperant", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "se cayo la venta del depa 502, como la anulo y devuelvo lo que ya pagó", "procedimiento": "facturacion.anular-venta-sperant", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "ke hago despues de anular el proceso en sperant pa cerrar la orden", "procedimiento": "facturacion.anular-venta-sperant", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "donde esta el escenario anulacion de ventas en s10", "procedimiento": "facturacion.anular-venta-sperant", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en que parte de sperant pongo el monto de devolucion", "procedimiento": "facturacion.anular-venta-sperant", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde veo si la orden de venta anulada ya paso a cerrado por el usuario", "procedimiento": "facturacion.anular-venta-sperant", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde esta la opcion generar facturacion de las ventas anuladas", "procedimiento": "facturacion.anular-venta-sperant", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde sale la opcion devolucion dentro del cronograma de pagos", "procedimiento": "facturacion.anular-venta-sperant", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "dnd esta anular proceso en sperant", "procedimiento": "facturacion.anular-venta-sperant", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "anulacion de ventas, donde queda", "procedimiento": "facturacion.anular-venta-sperant", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "si la venta ya tiene boletas por los abonos, desde que sistema debo iniciar la anulacion para que salga la nota de credito", "procedimiento": "facturacion.anular-venta-sperant", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que tengo que tener antes de anular una venta que ya esta boleteada", "procedimiento": "facturacion.anular-venta-sperant", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "la fecha que propone s10 al generar la facturacion de la anulacion se puede cambiar", "procedimiento": "facturacion.anular-venta-sperant", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "con que monto se genera la nota de credito de la anulacion y donde se define", "procedimiento": "facturacion.anular-venta-sperant", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "el monto de devolucion lo defino en sperant o en s10", "procedimiento": "facturacion.anular-venta-sperant", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "donde se especifica el motivo de la anulacion de la venta", "procedimiento": "facturacion.anular-venta-sperant", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "anule la venta en sperant pero en s10 la orden de venta sigue abierta", "procedimiento": "facturacion.anular-venta-sperant", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no se me genero la nota de credito despues de anular la venta", "procedimiento": "facturacion.anular-venta-sperant", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "la orden de venta no cambia al estado cerrado por el usuario luego de generar facturacion", "procedimiento": "facturacion.anular-venta-sperant", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "la venta tenia boletas y la quise anular de otra forma, no me sale la nota de credito", "procedimiento": "facturacion.anular-venta-sperant", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "como se si ya se inicio el proceso de anulacion en sperant", "procedimiento": "facturacion.anular-venta-sperant", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "anule la benta y no encuentro la nota de credito pa pagarle al cliente", "procedimiento": "facturacion.anular-venta-sperant", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "no cierra la orden de venta anulada", "procedimiento": "facturacion.anular-venta-sperant", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "como registro un abono en sperant y lo envio al s10 para boletearlo", "procedimiento": "facturacion.boletear-abonos-sperant", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como sincronizo el abono con s10 luego de llenar los datos del pago", "procedimiento": "facturacion.boletear-abonos-sperant", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "pasos para enviar la minuta al s10 desde sperant", "procedimiento": "facturacion.boletear-abonos-sperant", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como genero las boletas de los abonos en s10", "procedimiento": "facturacion.boletear-abonos-sperant", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el cliente deposito la separacion, como registro el abono en el cronograma de pagos de sperant", "procedimiento": "facturacion.boletear-abonos-sperant", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como apruebo cada paso del flujo del proceso de separacion", "procedimiento": "facturacion.boletear-abonos-sperant", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como inicio los procesos de aprobacion y venta en sperant", "procedimiento": "facturacion.boletear-abonos-sperant", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como solicito la aprobacion del cronograma de pagos para poder realizar abonos", "procedimiento": "facturacion.boletear-abonos-sperant", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como saco el comprobante inicial por la suma de los abonos enviados", "procedimiento": "facturacion.boletear-abonos-sperant", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "los abonos posteriores al primer comprobante como los boleteo", "procedimiento": "facturacion.boletear-abonos-sperant", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "boletaje", "procedimiento": "facturacion.boletear-abonos-sperant", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "enviar minuta", "procedimiento": "facturacion.boletear-abonos-sperant", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "komo sincronizo un abono a s10", "procedimiento": "facturacion.boletear-abonos-sperant", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "nose como registrar un nuevo pago en el cronograma d sperant", "procedimiento": "facturacion.boletear-abonos-sperant", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como subo el contrato de venta pa q salga enviar minuta", "procedimiento": "facturacion.boletear-abonos-sperant", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "el cliente ya pago varias cuotas y todavia no tiene ninguna boleta, como las emito", "procedimiento": "facturacion.boletear-abonos-sperant", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "en que pestaña de la orden de venta veo el detalle de los abonos que llegaron desde sperant", "procedimiento": "facturacion.boletear-abonos-sperant", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde esta el escenario boletaje en s10", "procedimiento": "facturacion.boletear-abonos-sperant", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde veo el detalle del envio de minuta dentro de la orden de venta", "procedimiento": "facturacion.boletear-abonos-sperant", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde esta la opcion nuevo pago en sperant", "procedimiento": "facturacion.boletear-abonos-sperant", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd se ven las ordenes de venta q llegan d sperant", "procedimiento": "facturacion.boletear-abonos-sperant", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "en que escenario aparecen automaticamente las ordenes de venta enviadas por sperant", "procedimiento": "facturacion.boletear-abonos-sperant", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "tipo de boletaje, donde", "procedimiento": "facturacion.boletear-abonos-sperant", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "cuando el boletaje emite factura y cuando boleta, de que depende", "procedimiento": "facturacion.boletear-abonos-sperant", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "antes de boletear la orden de venta ya tiene que estar sincronizada en s10", "procedimiento": "facturacion.boletear-abonos-sperant", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que flujo debo elegir al iniciar el proceso de venta: minuta ahorro, contado o hipotecario", "procedimiento": "facturacion.boletear-abonos-sperant", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "en que formato tengo que subir el contrato o compromiso de separacion", "procedimiento": "facturacion.boletear-abonos-sperant", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que diferencia hay entre abono hito inicial y abonos posteriores en el filtro tipo de boletaje", "procedimiento": "facturacion.boletear-abonos-sperant", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "puedo adjuntar archivos en cada paso del flujo de aprobacion", "procedimiento": "facturacion.boletear-abonos-sperant", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "tengo deshabilitado enviar minuta en sperant, que me falta", "procedimiento": "facturacion.boletear-abonos-sperant", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "sincronice el abono y salieron los check en rojo", "procedimiento": "facturacion.boletear-abonos-sperant", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "como se si el abono se envio bien a s10 o fallo", "procedimiento": "facturacion.boletear-abonos-sperant", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "no me deja hacer el cambio de titular", "procedimiento": "facturacion.boletear-abonos-sperant", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "quiero cambiar de titular y un abono ya tiene boleta, el sistema no deja", "procedimiento": "facturacion.boletear-abonos-sperant", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no aparece enviar minuta", "procedimiento": "facturacion.boletear-abonos-sperant", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "los check salen rojos al sincronizar, q hago", "procedimiento": "facturacion.boletear-abonos-sperant", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "como cargo a documentos por cobrar los saldos pendientes que tengo en un excel", "procedimiento": "facturacion.importar-saldos-por-cobrar", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "estoy migrando a s10 y necesito subir lo que nos deben los clientes, como lo hago", "procedimiento": "facturacion.importar-saldos-por-cobrar", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como importar los saldos iniciales por cobrar", "procedimiento": "facturacion.importar-saldos-por-cobrar", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "pasos para importar el excel de saldos pendientes de cobro", "procedimiento": "facturacion.importar-saldos-por-cobrar", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como relaciono los campos con las columnas del excel al importar", "procedimiento": "facturacion.importar-saldos-por-cobrar", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como creo el recurso para la importacion de saldos", "procedimiento": "facturacion.importar-saldos-por-cobrar", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "que año del periodo de aplicacion pongo al importar los saldos", "procedimiento": "facturacion.importar-saldos-por-cobrar", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como ubico el archivo excel para importar los documentos por cobrar", "procedimiento": "facturacion.importar-saldos-por-cobrar", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "importar saldos", "procedimiento": "facturacion.importar-saldos-por-cobrar", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "saldos x cobrar excel", "procedimiento": "facturacion.importar-saldos-por-cobrar", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "komo inporto los saldos pendientes de mis clientes", "procedimiento": "facturacion.importar-saldos-por-cobrar", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "kiero subir las deudas de clientes al s10 desde excel", "procedimiento": "facturacion.importar-saldos-por-cobrar", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "el año pasado quedaron facturas sin cobrar, como las paso al sistema desde un excel", "procedimiento": "facturacion.importar-saldos-por-cobrar", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como lleno el formato excel de saldos pendientes antes de importarlos", "procedimiento": "facturacion.importar-saldos-por-cobrar", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "con clic derecho en documentos por cobrar puedo importar los saldos", "procedimiento": "facturacion.importar-saldos-por-cobrar", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "nose como importar saldos q tengo en excel", "procedimiento": "facturacion.importar-saldos-por-cobrar", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "donde se hace la importacion de saldos por cobrar", "procedimiento": "facturacion.importar-saldos-por-cobrar", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en que grupo y escenario esta documentos por cobrar para importar", "procedimiento": "facturacion.importar-saldos-por-cobrar", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde creo el recurso para la importacion de saldos", "procedimiento": "facturacion.importar-saldos-por-cobrar", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde veo los saldos ya importados", "procedimiento": "facturacion.importar-saldos-por-cobrar", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde se elige el recurso para los documentos de excel en la configuracion de registros", "procedimiento": "facturacion.importar-saldos-por-cobrar", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "dnd importo saldos de cobranza", "procedimiento": "facturacion.importar-saldos-por-cobrar", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "donde sale la ventana para elegir el excel", "procedimiento": "facturacion.importar-saldos-por-cobrar", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "con que usuario debo ingresar para configurar el recurso de la importacion de saldos", "procedimiento": "facturacion.importar-saldos-por-cobrar", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que nombre le pongo al recurso de importacion de saldos", "procedimiento": "facturacion.importar-saldos-por-cobrar", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que debe existir en el sistema antes de importar: socios de negocio, tipos de documento y moneda", "procedimiento": "facturacion.importar-saldos-por-cobrar", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "en la configuracion de registros de documentos que recurso va para los documentos de excel", "procedimiento": "facturacion.importar-saldos-por-cobrar", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "tengo que ser SA para dejar listo lo de saldos", "procedimiento": "facturacion.importar-saldos-por-cobrar", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como dejo listo documentos por cobrar para aceptar un excel de saldos", "procedimiento": "facturacion.importar-saldos-por-cobrar", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "importe el excel y no me carga ningun documento", "procedimiento": "facturacion.importar-saldos-por-cobrar", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no se importan los documentos por cobrar aunque el excel esta bien llenado", "procedimiento": "facturacion.importar-saldos-por-cobrar", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "al importar saldos el sistema no reconoce al cliente", "procedimiento": "facturacion.importar-saldos-por-cobrar", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "importe los saldos pero no los veo en documentos por cobrar", "procedimiento": "facturacion.importar-saldos-por-cobrar", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no importa el excel", "procedimiento": "facturacion.importar-saldos-por-cobrar", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "se rechazan filas del excel de saldos por el tipo de documento o la moneda", "procedimiento": "facturacion.importar-saldos-por-cobrar", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "xq no me jala los saldos del excel", "procedimiento": "facturacion.importar-saldos-por-cobrar", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "como abro una liquidacion para el trabajador que recibio la entrega a rendir", "procedimiento": "facturacion.liquidar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como agrego el pago de la entrega a rendir a la liquidacion", "procedimiento": "facturacion.liquidar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el trabajador ya trajo sus comprobantes, donde los registro para que rinda", "procedimiento": "facturacion.liquidar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como registro una planilla de movilidad como sustento de la rendicion", "procedimiento": "facturacion.liquidar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como registro declaraciones sunat como documentos de la liquidacion", "procedimiento": "facturacion.liquidar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el trabajador devolvio la plata que no gasto, como lo meto en la liquidacion", "procedimiento": "facturacion.liquidar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como agrego un documento desde el diario de caja a la liquidacion", "procedimiento": "facturacion.liquidar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como ingreso al diario de caja el deposito de la devolucion del personal", "procedimiento": "facturacion.liquidar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como sierro la liquidasion hasta q quede rendida", "procedimiento": "facturacion.liquidar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "liquidar entrega", "procedimiento": "facturacion.liquidar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "rendicion de gastos del personal", "procedimiento": "facturacion.liquidar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "komo liquido la entrega a rendir de un empleado", "procedimiento": "facturacion.liquidar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "el empleado ya rindio todo, que hago para cuadrar su liquidacion", "procedimiento": "facturacion.liquidar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como uso generar documento dentro de liquidaciones", "procedimiento": "facturacion.liquidar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "stoy liquidando y ke pongo en cuenta bancaria y numero de operacion del deposito", "procedimiento": "facturacion.liquidar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "grabe la liquidacion y la pase a modificar, como sigo sustentando gastos", "procedimiento": "facturacion.liquidar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde esta el escenario liquidaciones en facturacion", "procedimiento": "facturacion.liquidar-entrega-a-rendir", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde esta la opcion agregar pago en la liquidacion", "procedimiento": "facturacion.liquidar-entrega-a-rendir", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde veo el importe por rendir de una liquidacion", "procedimiento": "facturacion.liquidar-entrega-a-rendir", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde se ve el control de saldos de la liquidacion", "procedimiento": "facturacion.liquidar-entrega-a-rendir", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde queda agregar documento desde el diario de caja", "procedimiento": "facturacion.liquidar-entrega-a-rendir", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en que modulo registro el deposito de lo devuelto, en el diario de caja", "procedimiento": "facturacion.liquidar-entrega-a-rendir", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "liquidaciones dnd es", "procedimiento": "facturacion.liquidar-entrega-a-rendir", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "para que sirve la pestaña documentos dentro de la liquidacion", "procedimiento": "facturacion.liquidar-entrega-a-rendir", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que tipos de documento puedo usar para rendir, internos o de sunat", "procedimiento": "facturacion.liquidar-entrega-a-rendir", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que debe estar hecho antes de abrir la liquidacion", "procedimiento": "facturacion.liquidar-entrega-a-rendir", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que datos del voucher necesito para el deposito en la cobranza", "procedimiento": "facturacion.liquidar-entrega-a-rendir", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que nombre se pone en la ventana de liquidaciones", "procedimiento": "facturacion.liquidar-entrega-a-rendir", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "tengo que marcar algo para que la liquidacion pase a cerrado o lo hace solo el sistema", "procedimiento": "facturacion.liquidar-entrega-a-rendir", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "al agregar pago no me sale el documento d la entrega a rrendir", "procedimiento": "facturacion.liquidar-entrega-a-rendir", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "mi liquidacion sigue en estado registrado y no pasa a cerrado", "procedimiento": "facturacion.liquidar-entrega-a-rendir", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no aparece el pago del trabajador en la ventana de agregar pago", "procedimiento": "facturacion.liquidar-entrega-a-rendir", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "ya grabe la liquidacion y no puedo seguir registrando documentos", "procedimiento": "facturacion.liquidar-entrega-a-rendir", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "la liquidacion no cuadra, falta registrar la devolucion del saldo", "procedimiento": "facturacion.liquidar-entrega-a-rendir", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "liquidacion no cierra", "procedimiento": "facturacion.liquidar-entrega-a-rendir", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "no me sale mi deposito en el cronograma de cobranzas", "procedimiento": "facturacion.liquidar-entrega-a-rendir", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "el proveedor emitio una factura de adelanto por la orden de compra, como la registro", "procedimiento": "facturacion.registrar-anticipo-a-proveedor", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como relaciono la factura con orden de compra o servicio para que se considere adelanto", "procedimiento": "facturacion.registrar-anticipo-a-proveedor", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "que pongo en el recurso anticipo: cantidad y precio unitario sin igv", "procedimiento": "facturacion.registrar-anticipo-a-proveedor", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "llego la mercaderia con la segunda factura del proveedor, como la registro", "procedimiento": "facturacion.registrar-anticipo-a-proveedor", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como amortizo el anticipo con un correctivo en negativo", "procedimiento": "facturacion.registrar-anticipo-a-proveedor", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como hago el ingreso al almacen cuando ya hubo anticipo", "procedimiento": "facturacion.registrar-anticipo-a-proveedor", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como hago la regularizacion compuesta del ingreso de almacen", "procedimiento": "facturacion.registrar-anticipo-a-proveedor", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como agrego la primera factura en la pestaña documentos y asignacion de precio", "procedimiento": "facturacion.registrar-anticipo-a-proveedor", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "anticipo a proveedor", "procedimiento": "facturacion.registrar-anticipo-a-proveedor", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "amortizar anticipo", "procedimiento": "facturacion.registrar-anticipo-a-proveedor", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "komo registro el adelanto q me facturo el proveedor", "procedimiento": "facturacion.registrar-anticipo-a-proveedor", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "el proveedor pidio 50% adelantado de la oc, como lo registro en facturacion", "procedimiento": "facturacion.registrar-anticipo-a-proveedor", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "adelanto de oc pasos", "procedimiento": "facturacion.registrar-anticipo-a-proveedor", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como adiciono un correctivo al recurso anticipo", "procedimiento": "facturacion.registrar-anticipo-a-proveedor", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "kiero amortizar el adelanto en la segunda factura nose como", "procedimiento": "facturacion.registrar-anticipo-a-proveedor", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "pague un anticipo por una compra de cemento y ya llego, como cuadro todo", "procedimiento": "facturacion.registrar-anticipo-a-proveedor", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "donde esta el catalogo de ordenes de compra y servicio para elegir la oc del anticipo", "procedimiento": "facturacion.registrar-anticipo-a-proveedor", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde se hace la opcion quitar regularizacion", "procedimiento": "facturacion.registrar-anticipo-a-proveedor", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde esta adicionar correctivo en la factura", "procedimiento": "facturacion.registrar-anticipo-a-proveedor", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde veo la pestaña asignacion de precio", "procedimiento": "facturacion.registrar-anticipo-a-proveedor", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que modulo hago el ingreso de la mercaderia del proveedor", "procedimiento": "facturacion.registrar-anticipo-a-proveedor", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "dnd queda la regularizacion compuesta", "procedimiento": "facturacion.registrar-anticipo-a-proveedor", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "anticipo, donde se registra", "procedimiento": "facturacion.registrar-anticipo-a-proveedor", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "que recurso asigna automaticamente el sistema a la factura de anticipo", "procedimiento": "facturacion.registrar-anticipo-a-proveedor", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que configuracion previa hace que salga el recurso anticipo", "procedimiento": "facturacion.registrar-anticipo-a-proveedor", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "el monto del correctivo de amortizacion va positivo o negativo", "procedimiento": "facturacion.registrar-anticipo-a-proveedor", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que tiene que existir antes de registrar el adelanto", "procedimiento": "facturacion.registrar-anticipo-a-proveedor", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "en el campo relacionado con que opcion elijo para un anticipo", "procedimiento": "facturacion.registrar-anticipo-a-proveedor", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "la cantidad del recurso anticipo siempre es 1", "procedimiento": "facturacion.registrar-anticipo-a-proveedor", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "el ingreso de almacen quedo enlazado con la factura del anticipo", "procedimiento": "facturacion.registrar-anticipo-a-proveedor", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "como desvinculo el ingreso de la primera factura", "procedimiento": "facturacion.registrar-anticipo-a-proveedor", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no puedo relacionar la segunda factura al ingreso porque ya esta enlazado a la del adelanto", "procedimiento": "facturacion.registrar-anticipo-a-proveedor", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "el sistema no considera mi factura como adelanto", "procedimiento": "facturacion.registrar-anticipo-a-proveedor", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el anticipo no se descuenta en la segunda factura", "procedimiento": "facturacion.registrar-anticipo-a-proveedor", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "ingreso enlazado a factura equivocada", "procedimiento": "facturacion.registrar-anticipo-a-proveedor", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "xq mi ingreso sale con la 1ra factura", "procedimiento": "facturacion.registrar-anticipo-a-proveedor", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "como creo la caja chica de un responsable en facturacion", "procedimiento": "facturacion.registrar-fondo-rotatorio", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como asigno el documento de pago que financia el fondo rotatorio", "procedimiento": "facturacion.registrar-fondo-rotatorio", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como acepto el fondo pa guardar la plata asignada", "procedimiento": "facturacion.registrar-fondo-rotatorio", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como genero un reembolso dentro de mi fondo rotatorio", "procedimiento": "facturacion.registrar-fondo-rotatorio", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como registro una factura de gasto dentro del reembolso del fondo", "procedimiento": "facturacion.registrar-fondo-rotatorio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como ingreso a almacen lo comprado con la caja chica y lo descargo a una partida de control", "procedimiento": "facturacion.registrar-fondo-rotatorio", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como cierro el reembolso para que finanzas me devuelva lo gastado de la caja chica", "procedimiento": "facturacion.registrar-fondo-rotatorio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como agrego un documento de pago que ya esta pagado a la asignacion de fondo", "procedimiento": "facturacion.registrar-fondo-rotatorio", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "caja chica", "procedimiento": "facturacion.registrar-fondo-rotatorio", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "fondo rotatorio", "procedimiento": "facturacion.registrar-fondo-rotatorio", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "komo registro una caja chica", "procedimiento": "facturacion.registrar-fondo-rotatorio", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "me asignaron una caja chica para la obra y debo sustentar los gastos, como lo hago en s10", "procedimiento": "facturacion.registrar-fondo-rotatorio", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "kiero crear un fondo rotatorio pero no se x donde empesar", "procedimiento": "facturacion.registrar-fondo-rotatorio", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como sigo agregando comprobantes al reembolso del fondo con ver reembolso", "procedimiento": "facturacion.registrar-fondo-rotatorio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ya gaste todo el fondo de la obra, como pido que me repongan lo gastado", "procedimiento": "facturacion.registrar-fondo-rotatorio", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como registro la compra de un recurso con cantidad y precio dentro del reembolso del fondo", "procedimiento": "facturacion.registrar-fondo-rotatorio", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "donde esta fondos rotatorios dentro del modulo de facturacion", "procedimiento": "facturacion.registrar-fondo-rotatorio", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en que grupo esta el escenario fondos rotatorios", "procedimiento": "facturacion.registrar-fondo-rotatorio", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde verifico si soy responsable de fondo rotatorio", "procedimiento": "facturacion.registrar-fondo-rotatorio", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde esta la pestaña asignacion de fondo", "procedimiento": "facturacion.registrar-fondo-rotatorio", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde se genera el reembolso del fondo, en la pestaña movimientos", "procedimiento": "facturacion.registrar-fondo-rotatorio", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde elijo el estado cerrado del reembolso de la caja chica", "procedimiento": "facturacion.registrar-fondo-rotatorio", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "fondos rotatorios dnd", "procedimiento": "facturacion.registrar-fondo-rotatorio", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "que rol debe tener el usuario para adicionar un fondo rotatorio", "procedimiento": "facturacion.registrar-fondo-rotatorio", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "ke hace el administrador del fondo rotatorio", "procedimiento": "facturacion.registrar-fondo-rotatorio", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "donde verifico que mi usuario esta como responsable de fondo rotatorio", "procedimiento": "facturacion.registrar-fondo-rotatorio", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que diferencia hay entre agregar documento de pago y generar documento de pago en la asignacion", "procedimiento": "facturacion.registrar-fondo-rotatorio", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "de donde sale el proyecto de los documentos del fondo", "procedimiento": "facturacion.registrar-fondo-rotatorio", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que campos son obligatorios al adicionar el fondo", "procedimiento": "facturacion.registrar-fondo-rotatorio", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "genere el documento de pago desde el fondo y no puedo registrar gastos", "procedimiento": "facturacion.registrar-fondo-rotatorio", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no puedo adicionar un fondo rotatorio con mi usuario", "procedimiento": "facturacion.registrar-fondo-rotatorio", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me deja generar el reembolso porque el fondo aun no tiene dinero asignado", "procedimiento": "facturacion.registrar-fondo-rotatorio", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "el documento de pago no aparece al buscarlo en la asignacion de fondo", "procedimiento": "facturacion.registrar-fondo-rotatorio", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "necesito corregir un fondo rotatorio que registro otra persona", "procedimiento": "facturacion.registrar-fondo-rotatorio", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "caja chica no deja registrar gastos", "procedimiento": "facturacion.registrar-fondo-rotatorio", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "xq mi fondo no m deja crear reembolsos", "procedimiento": "facturacion.registrar-fondo-rotatorio", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "un trabajador puso plata de su bolsillo para un gasto de la obra, como le registro el reembolso", "procedimiento": "facturacion.registrar-reembolso", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como creo un reembolso en el escenario reembolsos", "procedimiento": "facturacion.registrar-reembolso", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como registro los datos del socio de negocio a quien se le va a reembolsar", "procedimiento": "facturacion.registrar-reembolso", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como genero un documento tipo factura terceros dentro del reembolso", "procedimiento": "facturacion.registrar-reembolso", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como agrego al reembolso un documento que ya tengo registrado", "procedimiento": "facturacion.registrar-reembolso", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "puedo meter varios comprobantes en un solo reembolso", "procedimiento": "facturacion.registrar-reembolso", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como grabo el reembolso con las facturas de los gastos", "procedimiento": "facturacion.registrar-reembolso", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el residente pago pasajes y hospedaje de un viaje, como le reembolsamos", "procedimiento": "facturacion.registrar-reembolso", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "reembolso de gastos", "procedimiento": "facturacion.registrar-reembolso", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "crear reembolso", "procedimiento": "facturacion.registrar-reembolso", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "rembolso a trabajador como se hace", "procedimiento": "facturacion.registrar-reembolso", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "komo le devuelvo al ingeniero lo q gasto de su bolsillo", "procedimiento": "facturacion.registrar-reembolso", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "el residente adelanto gastos de movilidad, quiero reembolsarselo, como armo el documento", "procedimiento": "facturacion.registrar-reembolso", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como completo proveedor, moneda, numero de comprobante, glosa y recurso del documento del reembolso", "procedimiento": "facturacion.registrar-reembolso", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como dejo el reembolso listo para que tesoreria lo pague", "procedimiento": "facturacion.registrar-reembolso", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "kiero reembolsar la factura d un tercero al responsable", "procedimiento": "facturacion.registrar-reembolso", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "donde esta el escenario reembolsos en facturacion", "procedimiento": "facturacion.registrar-reembolso", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde adiciono un reembolso nuevo", "procedimiento": "facturacion.registrar-reembolso", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que pestaña agrego los documentos del reembolso", "procedimiento": "facturacion.registrar-reembolso", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "dnd veo los reembolsos q ya grabe", "procedimiento": "facturacion.registrar-reembolso", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "desde donde modifico un reembolso que sigue abierto", "procedimiento": "facturacion.registrar-reembolso", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en que modulo ve tesoreria los reembolsos para pagarlos", "procedimiento": "facturacion.registrar-reembolso", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "reembolsos donde", "procedimiento": "facturacion.registrar-reembolso", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "que significa que el reembolso este en estado abierto o cerrado", "procedimiento": "facturacion.registrar-reembolso", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que tipo de documento uso para un gasto de un tercero", "procedimiento": "facturacion.registrar-reembolso", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "de donde sale el proyecto que genera el gasto en el documento del reembolso", "procedimiento": "facturacion.registrar-reembolso", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que datos del documento son los que debo llenar en el reembolso", "procedimiento": "facturacion.registrar-reembolso", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "el importe del reembolso se calcula solo con los documentos", "procedimiento": "facturacion.registrar-reembolso", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "puedo usar un documento que ya esta en documentos por pagar", "procedimiento": "facturacion.registrar-reembolso", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "tesoreria no ve mi reembolso para pagarlo", "procedimiento": "facturacion.registrar-reembolso", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "el reembolso no aparece en el modulo administrativo", "procedimiento": "facturacion.registrar-reembolso", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "grabe el reembolso y sigue en estado abierto, no lo puedo pagar", "procedimiento": "facturacion.registrar-reembolso", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "ya cerre el reembolso y no puedo modificarlo", "procedimiento": "facturacion.registrar-reembolso", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "finanzas me dice que no encuentra el reembolso del trabajador", "procedimiento": "facturacion.registrar-reembolso", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "reembolso no sale en administrativo", "procedimiento": "facturacion.registrar-reembolso", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "el documento q cree no se ve dentro del reembolso", "procedimiento": "facturacion.registrar-reembolso", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}

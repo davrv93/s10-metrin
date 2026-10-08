@@ -1,0 +1,145 @@
+id: almacenes.registrar-partidas-de-control-del-proyecto
+version: 1
+modulo: almacenes
+titulo: "Registrar las partidas de control del proyecto"
+objetivo: "Registrar las Partidas de Control del proyecto, que agrupan las actividades para el control económico y se asignan a los recursos que egresan del almacén, y asignar a cada una su Partida de Control General de la empresa."
+nivel: avanzado
+preguntas:
+  - "cómo creo las partidas de control de mi obra"
+  - "como registro partidas de control para los egresos de almacen"
+  - "no me aparece la partida de control al hacer la salida de materiales"
+  - "como hago que solo salgan las partidas de control activas"
+  - "cómo desactivo una partida de control que ya terminó"
+  - "como asigno la partida de control general a la partida del proyecto"
+  - "partidas de controll costos directos e indirectos como se registran"
+  - "donde agrupo todas las partidas de encofrado en una sola"
+aliases:
+  - "registrar partidas de control"
+  - "partidas de control del proyecto"
+  - "crear partida de control"
+  - "partidas de control activas"
+  - "partida de control general"
+entidades:
+  modulo: "Almacenes"
+  pantallas: ["Datos Generales", "Partidas de Control", "Partida de Control General"]
+  objetos: ["partida de control", "partida de control general", "costos directos", "costos indirectos", "unidad"]
+prerrequisitos:
+  - texto: "La empresa debe tener registradas sus Partidas de Control General en el catálogo **Partida de Control General**: a cada Partida de Control del proyecto se le asigna una."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s130, img-b09491ef1c1a-0000]
+  - texto: "Si en el módulo de Gerencia de proyectos ya se efectuó el registro de las Partidas de Control, la información ya se visualiza en el módulo de Almacenes."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s129]
+pasos:
+  - n: 1
+    id: "almacenes.registrar-partidas-de-control-del-proyecto#1"
+    accion: "En el módulo de Gerencia de proyectos, elija el escenario de **Datos Generales** y, en el árbol, elija el proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s131]
+    pagina: null
+    fotos:
+      - id: "44eb8933246b"
+        ruta_o_url: "imagenes/manual-de-almacenes/1a5502c40afa.png"
+        pagina: null
+        caption: "En el módulo de Gerencia de proyectos, elija el escenario de Datos Generales, en el árbol elija el proyecto y configure la opción relacionada con las Partidas de Control."
+        ocr: "Datos Generales\nProyecto 02006001 Cédigo atterno [SC Datos adicionales...\nNimero de decimales en cantidades 2>\nNumero de decimales en precios 2 Cancelar\n\\¥ Aplicar factores de inflacién\nGerencia de proyectos\nNimero de decimales para el factor de relacion [0 >\nJ Retenciones en valorizacién de subcontratos antes de impuestos"
+  - n: 2
+    id: "almacenes.registrar-partidas-de-control-del-proyecto#2"
+    accion: "Elija **Datos adicionales**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s131]
+    pagina: null
+  - n: 3
+    id: "almacenes.registrar-partidas-de-control-del-proyecto#3"
+    accion: "Seleccione **Mostrar solo Partidas de Control Activas**, para que al efectuar un egreso solo se puedan elegir las partidas de control activas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s131]
+    pagina: null
+  - n: 4
+    id: "almacenes.registrar-partidas-de-control-del-proyecto#4"
+    accion: "En el árbol de proyectos, elija el acceso al escenario de Partidas de Control."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s131]
+    pagina: null
+    fotos:
+      - id: "3841e0df05cf"
+        ruta_o_url: "imagenes/manual-de-almacenes/e5e766ac5900.png"
+        pagina: null
+        caption: "Acceso al escenario"
+        ocr: "| Proyectos\n[7 i 33 Escritorio\nControl Luego,"
+  - n: 5
+    id: "almacenes.registrar-partidas-de-control-del-proyecto#5"
+    accion: "Verifique la estructura de registro."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s131]
+    pagina: null
+    fotos:
+      - id: "d17d6f1be2db"
+        ruta_o_url: "imagenes/manual-de-almacenes/83a23e17dfb4.png"
+        pagina: null
+        caption: "Verifique la estructura de registro,"
+        ocr: "Partida de Control por Proyecto _ a\nPartita de Contrel por Preyacte |\n[_[# [Descripcign [tf Color |\nar ivuniar oe | 7 Proyecto 2) Color\n- | 2 \\Costos Directos - Costos Indirectos | 2| Color\nPerit €)5 wusticar F5 [] 3. Partda cle Contr 3lcelor\nReed 5 @ Nota Flo i L Después de registrar los\n[el 200) niveles, cierre la ventana\nCédig & Eliminar bloque F4 coh dvaoneks tsb 28\n- Cerrar\nClic derecho F//ic…"
+  - n: 6
+    id: "almacenes.registrar-partidas-de-control-del-proyecto#6"
+    accion: "Inicie el registro de las Partidas de Control."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s131]
+    pagina: null
+    fotos:
+      - id: "207f6d33ab14"
+        ruta_o_url: "imagenes/manual-de-almacenes/fa315c133c60.png"
+        pagina: null
+        caption: "Registro de las Partidas de Control"
+        ocr: "\"@ Parida de Control MS\nCédigo jor rl alterno —_\nDescripcién a\nPartidas de Control [ i Activo\ncoisas [weiter |"
+  - n: 7
+    id: "almacenes.registrar-partidas-de-control-del-proyecto#7"
+    accion: "Registre el segundo nivel: **Costos Directos** y luego repita el registro con **Costos Indirectos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s131]
+    pagina: null
+    fotos:
+      - id: "24e4716ac320"
+        ruta_o_url: "imagenes/manual-de-almacenes/4aea90ed7f22.png"
+        pagina: null
+        caption: "Registro del segundo nivel,"
+        ocr: "Partidas de Control ES\nClic derecho\nCédigo | bescragiar Partida de Control General\no\n#5 Nuevo: Proyecto F2\nBy Nuevo: Costas Directos - Costas Indirectos"
+  - n: 8
+    id: "almacenes.registrar-partidas-de-control-del-proyecto#8"
+    accion: "Pase al registro del último nivel, el de las Partidas de Control."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s131]
+    pagina: null
+    fotos:
+      - id: "4f924bb9d1ed"
+        ruta_o_url: "imagenes/manual-de-almacenes/9689df2eea04.png"
+        pagina: null
+        caption: "Para el registro del último nivel,"
+        ocr: "Clic derecho\n\nDescripcion [unided |\n\ne Puentf en carreterp= bl\n\n“missles Belo | 2 Parioa ce =)\n\nCostod Indirectos Si\no Codigo o1o1 joo Cédiga atterno\n\nDeseripcién —|Preparacién de agregados (a)\nUniclad Em Comes) | da]\nUnidad Propia o- @> M activo\nPartida de -\ncontrol general [01011001 Produccién de agregados = (Em wa"
+  - n: 9
+    id: "almacenes.registrar-partidas-de-control-del-proyecto#9"
+    accion: "Ingrese el nombre de la Partida de Control (por ejemplo, Encofrado, que agrupa todas las partidas de encofrado)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s131]
+    pagina: null
+  - n: 10
+    id: "almacenes.registrar-partidas-de-control-del-proyecto#10"
+    accion: "Si la Partida de Control tiene unidad, ingrésela (hay partidas de control que no tienen unidad)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s131]
+    pagina: null
+  - n: 11
+    id: "almacenes.registrar-partidas-de-control-del-proyecto#11"
+    accion: "Del grupo de actividades asignadas a esta partida de control, elija la unidad representativa."
+    resultado: "Las actividades que tengan la unidad de la partida de control se utilizan para las proyecciones de saldos y ratios."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s131]
+    pagina: null
+  - n: 12
+    id: "almacenes.registrar-partidas-de-control-del-proyecto#12"
+    accion: "Deje seleccionada la partida para que pueda ser elegida al asignar los recursos que se egresan; quite la selección cuando su participación haya concluido."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s131]
+    pagina: null
+  - n: 13
+    id: "almacenes.registrar-partidas-de-control-del-proyecto#13"
+    accion: "Del catálogo, elija la Partida de Control General (a nivel de empresa)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s131]
+    pagina: null
+verificacion: []
+errores_frecuentes:
+  - sintoma: "Al registrar un egreso no aparece una partida de control para asignarla a los recursos."
+    solucion: "Si está seleccionado **Mostrar solo Partidas de Control Activas**, solo se pueden elegir las partidas de control activas: una partida no seleccionada, porque su participación ha concluido, ya no aparece para ser elegida."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s131]
+relacionados: [almacenes.registrar-egreso-a-partida-de-control]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s130, manual: "Manual de Almacenes", seccion: "3.19.9.2 Partidas de Control General a nivel de empresa", pagina: null}
+  - {id: img-b09491ef1c1a-0000, manual: "Manual de Almacenes", seccion: "b09491ef1c1a.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s129, manual: "Manual de Almacenes", seccion: "3.19.9.1 Partidas de Control", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s131, manual: "Manual de Almacenes", seccion: "3.19.9.3 Partidas de Control a nivel de proyecto", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

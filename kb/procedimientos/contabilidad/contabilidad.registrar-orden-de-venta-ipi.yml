@@ -1,0 +1,80 @@
+id: contabilidad.registrar-orden-de-venta-ipi
+version: 1
+modulo: contabilidad
+titulo: "Registrar la orden de venta global de ingresos por identificar (IPI)"
+objetivo: "Registrar la orden de venta global de cada empresa y marcarla como Ingresos por Identificar, para recibir los IPI: abonos depositados en la cuenta recaudadora que aún no han sido identificados."
+nivel: intermedio
+preguntas:
+  - "como registro la orden de venta para los ipi"
+  - "que es un ipi y como lo configuro en s10"
+  - "donde marco ingresos por identificar en la orden de venta"
+  - "como hago la ov global de ingresos por identificar"
+  - "los abonos no identificados de sperant como llegan al s10"
+  - "orden de venta tipo ipi pestaña sperant"
+  - "que proyecto pongo en la orden de venta ipi"
+  - "como configuro los pagos no identificados con sperant"
+  - "ingresos por indentificar s10 orden de venta"
+aliases:
+  - "orden de venta IPI"
+  - "ingresos por identificar"
+  - "OV global IPI"
+  - "pagos no identificados"
+entidades:
+  modulo: "Contabilidad"
+  pantallas: ["Orden de Venta", "Sperant", "Por Cobrar"]
+  objetos: ["orden de venta", "IPI", "lista de precio", "cliente", "proyecto"]
+prerrequisitos:
+  - texto: "En la configuración del módulo de facturación (opción en forma de tuerca), pestaña **Sperant**, debe estar hecha la configuración general; previamente se registra en el catálogo el tipo de documento y el recurso específico a utilizar."
+    fuente: [web-https-documentacion-s10peru-com-ingresos-s001]
+  - texto: "Debe estar registrado un solo recurso de venta, IPI, de forma global y no por empresa."
+    fuente: [web-https-documentacion-s10peru-com-ingresos-s002]
+  - texto: "Debe estar registrada la lista de precio de cada empresa, con el recurso de venta con un precio y cantidad 1."
+    fuente: [web-https-documentacion-s10peru-com-ingresos-s003]
+  - texto: "Debe estar adicionado el registro de un cliente global."
+    fuente: [web-https-documentacion-s10peru-com-ingresos-s004]
+pasos:
+  - n: 1
+    id: "contabilidad.registrar-orden-de-venta-ipi#1"
+    accion: "Registre una orden de venta global por cada empresa, con los datos previamente configurados: el cliente, la lista de precio y el proyecto."
+    fuente: [web-https-documentacion-s10peru-com-ingresos-s005]
+    pagina: null
+  - n: 2
+    id: "contabilidad.registrar-orden-de-venta-ipi#2"
+    accion: "Como proyecto, use de preferencia el proyecto principal de cada empresa."
+    fuente: [web-https-documentacion-s10peru-com-ingresos-s005]
+    pagina: null
+    fotos:
+      - id: "dedd33f55bf2"
+        ruta_o_url: "imagenes/ingresos-identificar-proceso-ipi/c2ed124852b3.png"
+        pagina: null
+        caption: "Se recomienda hacer uso del Proyecto Principal de cada EMPRESA"
+        ocr: "(i) Documento de ¥Yenta BEE\nDocumento [orden de Venta Rakes\nEmpresa 22000034 |CONSTRUCTORA CUMBRES VILLANOVA S.A.C ~ | @| 7 N° de documento\nEmpresa-Sucursal [22000034 [CONSTRUCTORA CUMBRES VILLANOVA S.A.C. | Ga ooooo0000760\npanne nn nnn eon enn\nClient [22021115 —_[CLIENTES - INGRESOS POR IDENTIFICAR 5\n[otente ___fezmarris _ [eLewtes -NoResos Por eNTFICAR ed BF ccteao\nSucursal Ey Sin Facturacién\nCo…"
+  - n: 3
+    id: "contabilidad.registrar-orden-de-venta-ipi#3"
+    accion: "En la pestaña **Sperant**, marque el check de **Ingresos por Identificar**."
+    resultado: "Así se define que la orden de venta será de tipo IPI."
+    fuente: [web-https-documentacion-s10peru-com-ingresos-s005]
+    pagina: null
+    fotos:
+      - id: "7f28245c83f0"
+        ruta_o_url: "imagenes/ingresos-identificar-proceso-ipi/ffd18093dfd0.png"
+        pagina: null
+        caption: "Adicionalmente mediante la pestaña Sperant, se debe marcar el check de Ingresos por Identificar es así como se define que la orden de venta será de tipo IPI."
+        ocr: "N° Proforma Estado Venta f —s—S—SCSséid | Rech Mizuta |_/____¥] Minute firmed [~\n--------=---------5\nTipo Integracién @ Mingune © Inmobiliaria © Finenciera  Boletaje Histérico [~ Fecha Sinc.Minuta |_/_/ + || Ingresos por identificar [¥ |\n1\nheer}\nCuota Inicial Contrato 0 Saldo Inicial Contrato 0 Saldo Deuda Contrato Oo\nMAREN «Eh &aw\nofo Campo}Nro Abono. Y | /En cualquier posiciin ¥ [Xx] [2] Grupo:…"
+verificacion:
+  - texto: "Para verificar la recepción de los IPI, ingrese al escenario **Por Cobrar** y ubique el tipo de documento que se registró en la configuración global."
+    fuente: [web-https-documentacion-s10peru-com-ingresos-s007]
+errores_frecuentes:
+  - sintoma: "Se envían IPI duplicados desde Sperant."
+    solucion: "Puede haber demora en que la orden de venta sea reconocida: espere un momento antes de sincronizar. Puede verificar la sincronización con el campo ID EXTERNO."
+    fuente: [web-https-documentacion-s10peru-com-ingresos-s006]
+relacionados: []
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-ingresos-s001, manual: "Ingresos por Identificar – Procesos de IPI", seccion: "S10: Configuración", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-ingresos-s002, manual: "Ingresos por Identificar – Procesos de IPI", seccion: "S10: Recursos de Venta", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-ingresos-s003, manual: "Ingresos por Identificar – Procesos de IPI", seccion: "S10: Lista de Precios", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-ingresos-s004, manual: "Ingresos por Identificar – Procesos de IPI", seccion: "S10: Registro de socio de Negocio", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-ingresos-s005, manual: "Ingresos por Identificar – Procesos de IPI", seccion: "S10: Orden de Venta", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-ingresos-s007, manual: "Ingresos por Identificar – Procesos de IPI", seccion: "S10: Verificación de recepción de IPIs", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-ingresos-s006, manual: "Ingresos por Identificar – Procesos de IPI", seccion: "SPERANT : Envío de IPIs", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

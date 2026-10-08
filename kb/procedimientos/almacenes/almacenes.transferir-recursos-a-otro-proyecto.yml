@@ -1,0 +1,123 @@
+id: almacenes.transferir-recursos-a-otro-proyecto
+version: 1
+modulo: almacenes
+titulo: "Transferir recursos a otro proyecto"
+objetivo: "Transferir recursos del almacén de un proyecto al de otro: se pide con un pedido A Almacén, el proyecto origen genera un Egreso por Transferencia Externa y el destino un Ingreso por Transferencia Externa, que carga la cantidad y el costo al proyecto que recibe. La transferencia es permanente, no contempla devolución."
+nivel: intermedio
+preguntas:
+  - "cómo transfiero materiales a otra obra"
+  - "como hago una transferencia externa entre proyectos"
+  - "otra obra me mandó fierro, cómo lo ingreso a mi almacén"
+  - "no se activa adicionar desde guias de egresos en el ingreso por transferencia"
+  - "como paso stock de un proyecto a otro en s10"
+  - "ingreso por transferencia externa pasos"
+  - "como envio recursos de mi almacen a otro proyecto sin que me los devuelvan"
+  - "transferencia esterna con pedido como la registro"
+aliases:
+  - "transferencia externa"
+  - "transferir a otro proyecto"
+  - "ingreso por transferencia externa"
+  - "egreso por transferencia externa"
+  - "traslado entre obras"
+entidades:
+  modulo: "Almacenes"
+  pantallas: ["Ingresos"]
+  objetos: ["pedido", "proyecto", "egreso por transferencia externa", "ingreso por transferencia externa", "stock"]
+prerrequisitos:
+  - texto: "Los proyectos involucrados deben estar registrados en la misma base de datos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s066]
+  - texto: "Es requisito tener en stock la cantidad necesaria del recurso a transferir."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s066]
+pasos:
+  - n: 1
+    id: "almacenes.transferir-recursos-a-otro-proyecto#1"
+    accion: "Desde el módulo de Almacenes, Compras o Gerencia de proyectos, efectúe un pedido **A Almacén**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s070]
+    pagina: null
+    fotos:
+      - id: "b9dbffa6e592"
+        ruta_o_url: "imagenes/manual-de-almacenes/d80eaea1ebca.png"
+        pagina: null
+        caption: "1.- Desde el módulo de Almacenes, Compras o Gerencia de proyectos, efectúe un pedido “A Almacén”."
+        ocr: "G (re) C= fs\nUsuario Andres - Andrade Andrade, Andres N° de Pedido -\nssesiecoandne  SOHBERRECE Hate, esd ~ | | |\nv.O.\nAlmacén 001 - De Materiales - Tipo 01-OBRA N° Altern NOP\n@ AAlmacén © ACompras\n@) Ov Para otro aimacen: en\n[c-TkC Venta ‘* Transferencia © Externa © Interna\nProyecto |ogo06 —_—[Edificaciones c5 44) 001 De Materiales {c-6"
+  - n: 2
+    id: "almacenes.transferir-recursos-a-otro-proyecto#2"
+    accion: "Registre el nombre del solicitante."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s070]
+    pagina: null
+  - n: 3
+    id: "almacenes.transferir-recursos-a-otro-proyecto#3"
+    accion: "Seleccione **A Almacén**, para que los recursos a pedir sean del stock."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s070]
+    pagina: null
+  - n: 4
+    id: "almacenes.transferir-recursos-a-otro-proyecto#4"
+    accion: "Seleccione **Para otro almacén**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s070]
+    pagina: null
+  - n: 5
+    id: "almacenes.transferir-recursos-a-otro-proyecto#5"
+    accion: "Elija la opción de transferencia externa: **Transferencia** y **Externa**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s070, img-d80eaea1ebca-0000]
+    pagina: null
+  - n: 6
+    id: "almacenes.transferir-recursos-a-otro-proyecto#6"
+    accion: "Elija el proyecto y el almacén destino."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s070]
+    pagina: null
+  - n: 7
+    id: "almacenes.transferir-recursos-a-otro-proyecto#7"
+    accion: "En el almacén del proyecto origen, genere el **Egreso por Transferencia Externa**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s066]
+    pagina: null
+  - n: 8
+    id: "almacenes.transferir-recursos-a-otro-proyecto#8"
+    accion: "En el proyecto destino, en la barra de vistas, elija el acceso al escenario de **Ingresos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s054]
+    pagina: null
+  - n: 9
+    id: "almacenes.transferir-recursos-a-otro-proyecto#9"
+    accion: "En el árbol, elija el proyecto y el almacén."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s054]
+    pagina: null
+  - n: 10
+    id: "almacenes.transferir-recursos-a-otro-proyecto#10"
+    accion: "Elija el tipo de ingreso **Ingreso por Transferencia Externa**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s054]
+    pagina: null
+  - n: 11
+    id: "almacenes.transferir-recursos-a-otro-proyecto#11"
+    accion: "Efectúe un nuevo ingreso y registre el tipo de cambio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s054]
+    pagina: null
+  - n: 12
+    id: "almacenes.transferir-recursos-a-otro-proyecto#12"
+    accion: "Haga clic derecho y elija **Adicionar desde Guías de Egresos** (ingreso por transferencia externa automático)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s054, img-839146559317-0000]
+    pagina: null
+    fotos:
+      - id: "a0cd0cdb3ecf"
+        ruta_o_url: "imagenes/manual-de-almacenes/839146559317.png"
+        pagina: null
+        ocr: "Ingresos\nee ientor Lnises0 por Transferencia erna [ITE] a\nBy d\n|_lest[nro.cwia | Fecha [origen [Mo] Parcial | tov\nDi Adicionareya)\nClic derecho a) Adicionar desde Guia de Eoresosep<(b)"
+  - n: 13
+    id: "almacenes.transferir-recursos-a-otro-proyecto#13"
+    accion: "Si no hay guía, elija **Adicionar** (ingreso por transferencia externa manual): elija los recursos del catálogo y registre la cantidad y el precio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s054]
+    pagina: null
+verificacion: []
+errores_frecuentes:
+  - sintoma: "**Adicionar desde Guías de Egresos** no se activa en el ingreso."
+    solucion: "Se activa solo cuando existen guías pendientes de ingreso al almacén: en el almacén del proyecto origen se debe generar antes el Egreso por Transferencia Externa."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s054, web-https-documentacion-s10peru-com-manual-d-s066]
+  - sintoma: "Espera que el otro proyecto le devuelva los recursos transferidos."
+    solucion: "Los recursos que se transfieren tienen el carácter de definitivo y no se espera devolución."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s066]
+relacionados: [almacenes.transferir-recursos-entre-almacenes]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s066, manual: "Manual de Almacenes", seccion: "2.2.2.3 Egreso por Transferencia Externa [ETE]", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s070, manual: "Manual de Almacenes", seccion: "2.2.4.2 Egreso por Transferencia Externa con Pedido [ETEP]", pagina: null}
+  - {id: img-d80eaea1ebca-0000, manual: "Manual de Almacenes", seccion: "d80eaea1ebca.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s054, manual: "Manual de Almacenes", seccion: "2.1.3.6 Ingreso por Transferencia Externa [ITE]", pagina: null}
+  - {id: img-839146559317-0000, manual: "Manual de Almacenes", seccion: "839146559317.png", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

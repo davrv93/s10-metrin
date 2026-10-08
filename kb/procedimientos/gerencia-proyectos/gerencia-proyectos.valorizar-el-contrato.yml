@@ -1,0 +1,187 @@
+id: gerencia-proyectos.valorizar-el-contrato
+version: 1
+modulo: gerencia-proyectos
+titulo: "Valorizar el contrato y autorizar su cobranza"
+objetivo: "Valorizar una vez al mes el contrato del proyecto en el escenario de Contratos, para cuantificar el avance logrado y cobrar al propietario por los trabajos ejecutados: se revisan amortizaciones y resumen, se aprueba la valorización y la autorización de cobranza se envía a Documentos por Cobrar."
+nivel: avanzado
+preguntas:
+  - "como valorizo el contrato con el cliente en gerencia de proyectos"
+  - "cómo hago la valorizacion mensual del contrato principal"
+  - "como le cobro al propietario lo avanzado en el mes"
+  - "como apruebo la valorizacion del contrato"
+  - "como mando la valorisacion del contrato a documentos por cobrar"
+  - "como amortizo el adelanto que nos dio el cliente en la valorizacion"
+  - "donde imprimo la valorizacion del contrato"
+  - "pasos para valorizar el contrato de obra en s10"
+aliases:
+  - "valorizar contrato"
+  - "valorización del contrato"
+  - "valorización mensual del contrato"
+  - "autorización de cobranza"
+  - "aprobar valorización del contrato"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Contratos", "Cronograma por Periodos", "Documentos por Cobrar"]
+  objetos: ["contrato", "valorización", "adelanto", "pago a cuenta", "retenciones"]
+prerrequisitos:
+  - texto: "Previamente, en el escenario del Cronograma por periodos y en modo valorización, ingrese los avances logrados en el periodo; caso contrario, el sistema permite ingresar el monto de la valorización."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s252]
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.valorizar-el-contrato#1"
+    accion: "Ingrese al escenario **Contratos** del proyecto."
+    fuente: [img-9fe6e7a932b6-0000, web-https-documentacion-s10peru-com-manual-d-s252]
+    pagina: null
+    fotos:
+      - id: "85af83941529"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/9fe6e7a932b6.png"
+        pagina: null
+        ocr: "(=) ggg Escritorio\nContratos Luego (=) PUENTE EN CARRETERA"
+  - n: 2
+    id: "gerencia-proyectos.valorizar-el-contrato#2"
+    accion: "Para iniciar el proceso de valorización, haga doble clic sobre el contrato."
+    resultado: "Se muestra la ventana de valorización, donde se visualiza la amortización, se amortizan los adelantos en efectivo recibidos como pago a cuenta, se visualizan las retenciones y se ingresa el valor por periodo."
+    fuente: [img-6f63dedd5de9-0000, web-https-documentacion-s10peru-com-manual-d-s252]
+    pagina: null
+    fotos:
+      - id: "73d95205dac4"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/6f63dedd5de9.png"
+        pagina: null
+        ocr: "Contratos\nDescripcion Doble clic vt\n© Contratos\n~-{=] Ministerio de T-$sportes y Comunicaciones\nfo [CONTRATO PRINCIPAL"
+      - id: "864060b02281"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/9f8f3116bb86.png"
+        pagina: null
+        caption: "Para iniciar el proceso de valorización,"
+        ocr: "Z Ts al\nCédigo 02004004, @| Vatorizacién de cierre [] N* Contrato N° Valorizacién [0000\nContrato ICONTRATO PRINCIPAL\nSubcontratista 02100027 [Ministerio de Transportes y Comunicaciones +» 44) Fechaemisién |! / +\n%Retenciones 5 Estado |Registrado bd\nPeriodo Mensual Oi20iCDS [Atal 2010 SiuecearoRe Si n.00\nDel 21/04/2010 al 3004/2010\n[_Adelantos | Pagos acuenta | | Retenciones | Valorizado |\nContrata…"
+  - n: 3
+    id: "gerencia-proyectos.valorizar-el-contrato#3"
+    accion: "Revise en la pestaña **Amort. Adelantos** la amortización de los adelantos en efectivo: es automática."
+    fuente: [img-395e101ff699-0000, web-https-documentacion-s10peru-com-manual-d-s252]
+    pagina: null
+    fotos:
+      - id: "bfab94f9a248"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/395e101ff699.png"
+        pagina: null
+        ocr: "N* de Pago: Fecha Monto adelanto Amortizacion Atmortizacion con Impuesto\noot 3004/2010 $93,374.28 79,288.74 94,353.60\na\nTotal amortizacién $4,353.60\nDetalle Valorizacion |. =ss=} Amort. Adelantos { mort. Pagos a Cuenta] Valor por Periodo | Resume\nModificar Cancelar"
+  - n: 4
+    id: "gerencia-proyectos.valorizar-el-contrato#4"
+    accion: "Para amortizar los adelantos en efectivo recibidos como pago a cuenta, haga clic derecho en la amortización de pagos a cuenta: cada adelanto se amortiza en forma independiente y la amortización es manual."
+    fuente: [img-dc76fc4d36b4-0000, web-https-documentacion-s10peru-com-manual-d-s252]
+    pagina: null
+    fotos:
+      - id: "7ad41c160490"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/dc76fc4d36b4.png"
+        pagina: null
+        ocr: "ett Adelantos Pagosacuenta | _Retenciones | __Valorizado |\nPEGE) 593,374.28 94,353.60 11,900.00 0.00 6,807.40 0.00 15.90 157,256.00 56,\n\n< [sl ’\n\nitem | Fecha Otorgado Amortizacién actual\nle devecho\n\n——J\n\nTotal amortizacién pagos a Cuenta 0.00\n\nDetalle Valorizacién]] Amort, Adelantos Amort. Pagos a Cuenta 4 Elija [odo J Resumen Valorizacin | impues\n| Ammort. Adelantos. 1  impues\n\nAdicionar Cancela…"
+  - n: 5
+    id: "gerencia-proyectos.valorizar-el-contrato#5"
+    accion: "Del catálogo que muestra todos los adelantos de pagos a cuenta, elija el adelanto que amortizará."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s252]
+    pagina: null
+    fotos:
+      - id: "bb07f7a7c512"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/912f8c02867a.png"
+        pagina: null
+        caption: "Este catálogo muestra todos los adelantos de pagos cuenta, de donde se elige,"
+        ocr: "3p Caisse co Paposaonta i  Scmes)\nOpciones 2\n> ame 4 = 1 ow | 412\nOw XS eae 8 HHASQ io\n|_ [Nt Pago Fecha Importe Amortizado Saldo |\n[__|ooo02 21m4i2010 11,900.00 0.00 71,600.00\n| ee\n000221410 11900 0 11900"
+  - n: 6
+    id: "gerencia-proyectos.valorizar-el-contrato#6"
+    accion: "Revise el resumen de la valorización; las retenciones y el estado de cuenta solo son informativos."
+    fuente: [img-bcc16f752bcf-0000, web-https-documentacion-s10peru-com-manual-d-s252]
+    pagina: null
+    fotos:
+      - id: "9e517190ea53"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/bcc16f752bcf.png"
+        pagina: null
+        ocr: "Descripcién Subcontrato laa oo cio a eae Saldo\n‘Costo Directo Valorizacién 831 056.41 125,855.14 125,855.14 705,201.27\nReajuste 6,292.76 6,292.76\nValorizacién Reajustada 831 056.41 132,147.90 132,147.90 698,908.51\n|Amortizacion de Pagos a Cuenta 10,000.00 1848.74 1,848.74 8,151.26\n|Amorfizacién de Adelantos 498,693.85 79,288.74 79,288.74 419,345.11\n[Subtotal de la Valorizacién 322,422.56 51,010.42…"
+  - n: 7
+    id: "gerencia-proyectos.valorizar-el-contrato#7"
+    accion: "Para imprimir la valorización, elíjala en el escenario de Contratos y haga clic derecho."
+    fuente: [img-0aab684f8b8a-0000, web-https-documentacion-s10peru-com-manual-d-s252]
+    pagina: null
+    fotos:
+      - id: "ed707b58c9af"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/0aab684f8b8a.png"
+        pagina: null
+        ocr: "Elija la valorizacién a imprimir, luego haga clic derecho\nContratos\n=I Contratos\n| Ministerio de Transportes y C#imunicaciones\n‘E] CONTRATO PRINCIPAL En elaboracién\nAbril 2010. 21/04/2010 30/04/2010) 00001 Registrado\nLD) AdicionarMalorizacion\nModificar\nL& Vista Pretiminar"
+  - n: 8
+    id: "gerencia-proyectos.valorizar-el-contrato#8"
+    accion: "Para aprobar la valorización, haga doble clic para mostrar el contrato."
+    fuente: [img-e1217323d62a-0000, web-https-documentacion-s10peru-com-manual-d-s252]
+    pagina: null
+    fotos:
+      - id: "9c6fa4f061a9"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/e1217323d62a.png"
+        pagina: null
+        ocr: "Contratos\nHaga dable clic para mostrar el contrato |i, stato\n=i Contratos\n(Gi Mristerio de§Transportes y Comunicaciones\n(SIGONTRATO PRINGPAL] En elaboracién\nAbril 2010 21/04/2010 30/04/2010 00001 Registraco"
+  - n: 9
+    id: "gerencia-proyectos.valorizar-el-contrato#9"
+    accion: "Haga clic derecho sobre la valorización y use la opción para aprobarla; cuando el sistema pregunte si está seguro de aprobar, elija **Sí**."
+    fuente: [img-0033b16c5a47-0000, web-https-documentacion-s10peru-com-manual-d-s252]
+    pagina: null
+    fotos:
+      - id: "758160222abf"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/0033b16c5a47.png"
+        pagina: null
+        ocr: "[| N* Perio Monto Valorizado Reajus\n[>] oo001 Abril 2010 2104/2010 3004/2010 125,855.14\nD Adicionar\nX Eliminar\n\nImportar de Microsoft Excel\nClic derecho} Aprobarvalorizacian"
+  - n: 10
+    id: "gerencia-proyectos.valorizar-el-contrato#10"
+    accion: "Para la autorización de cobranza, haga clic derecho sobre los pagos y elija **Adicionar**."
+    fuente: [img-82a1d5758e18-0000, img-142b99839493-0000, web-https-documentacion-s10peru-com-manual-d-s252]
+    pagina: null
+    fotos:
+      - id: "f10b44923312"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/82a1d5758e18.png"
+        pagina: null
+        ocr: "L | Numero Tipo Pago.  Valorizacién Fecha Otorgado —_Importe Neto E\n[| “| 00001 Adelanto 21/04/2010 593,374.28 498,633.85\n[LP] .¢| 00002 Pago @ Cuenta 21042010 11,900.00 10,000.00\n\nOle derecho"
+  - n: 11
+    id: "gerencia-proyectos.valorizar-el-contrato#11"
+    accion: "En **Tipo Pago**, elija **Valorización** y, del catálogo de valorizaciones, elija la valorización con doble clic."
+    fuente: [img-dc28ace73ee8-0000, img-1d34d49afd3a-0000, web-https-documentacion-s10peru-com-manual-d-s252]
+    pagina: null
+    fotos:
+      - id: "e45096a4c6f2"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/dc28ace73ee8.png"
+        pagina: null
+        ocr: "Poe =\n\ncédigo Tipo Pago |Yalorizacién x] wePago ‘00003\nAdelanto\n\nProyecto CONTRATO PRINCIPAL Pago a cuenta\n\n‘Subcontratista [02100027 fiinisterioN@ers[Dev.Retenciones | a"
+      - id: "20e3bef07d73"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/1d34d49afd3a.png"
+        pagina: null
+        ocr: "rx\n2 Catélogo de Valorizacions Lo] [ete\nOpciones 2\nDexerve YS ~——N2 2 eB ie\nElija con doble clic\n|| Valorizacién Periodo Por Facturar Pagado Saldo\nl | ‘00001 ‘Abril 2010 53,584.90 | 53,584.90"
+  - n: 12
+    id: "gerencia-proyectos.valorizar-el-contrato#12"
+    accion: "Haga clic derecho sobre el pago de la valorización y elija **APROBAR AUTORIZACION DE PAGO/COBRANZA**; cuando el sistema pregunte si está seguro de aprobar, elija **Sí**."
+    resultado: "La autorización de cobranza se envía a Documentos por Cobrar."
+    fuente: [img-142b99839493-0000, web-https-documentacion-s10peru-com-manual-d-s252, web-https-documentacion-s10peru-com-manual-d-s248]
+    pagina: null
+    fotos:
+      - id: "4df4f06197bb"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/142b99839493.png"
+        pagina: null
+        ocr: "fatten Elija ‘c\nL | Numero Tipo Pago N'Valdjizacién| Fecha — Otorgado —_—Importe Neto\n[] | co001 Adelanto Clic derecho] 2142010 593,374.28 498,633.87\n[| | 00002 Pago a Cuenta 21maRo10 11,800.00 10,000.00\n[>] | 00003 Yalorizacién oo001 30042010 $3,584.90 45,029.33}\nLD. Adicionar\nAprobar autorizacion de pagofcobranza"
+verificacion: []
+errores_frecuentes:
+  - sintoma: "No se puede registrar una segunda valorización del contrato en el mismo periodo."
+    solucion: "Solo se permite una valorización por periodo: el contrato se valoriza una vez cada mes."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s249, web-https-documentacion-s10peru-com-manual-d-s252]
+  - sintoma: "La amortización de un adelanto recibido como pago a cuenta no aparece en la valorización."
+    solucion: "Esa amortización es manual: elija el adelanto del catálogo de pagos a cuenta. Solo la amortización de los adelantos en efectivo es automática."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s252]
+relacionados: [gerencia-proyectos.planificar-en-cronograma-por-periodos, gerencia-proyectos.aprobar-valorizacion-del-subcontrato]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s252, manual: "Manual de Gerencia de Proyectos", seccion: "7.4.12.1 Valorizar el contrato", pagina: null}
+  - {id: img-9fe6e7a932b6-0000, manual: "Manual de Gerencia de Proyectos", seccion: "9fe6e7a932b6.png", pagina: null}
+  - {id: img-6f63dedd5de9-0000, manual: "Manual de Gerencia de Proyectos", seccion: "6f63dedd5de9.png", pagina: null}
+  - {id: img-395e101ff699-0000, manual: "Manual de Gerencia de Proyectos", seccion: "395e101ff699.png", pagina: null}
+  - {id: img-dc76fc4d36b4-0000, manual: "Manual de Gerencia de Proyectos", seccion: "dc76fc4d36b4.png", pagina: null}
+  - {id: img-bcc16f752bcf-0000, manual: "Manual de Gerencia de Proyectos", seccion: "bcc16f752bcf.png", pagina: null}
+  - {id: img-0aab684f8b8a-0000, manual: "Manual de Gerencia de Proyectos", seccion: "0aab684f8b8a.png", pagina: null}
+  - {id: img-e1217323d62a-0000, manual: "Manual de Gerencia de Proyectos", seccion: "e1217323d62a.png", pagina: null}
+  - {id: img-0033b16c5a47-0000, manual: "Manual de Gerencia de Proyectos", seccion: "0033b16c5a47.png", pagina: null}
+  - {id: img-82a1d5758e18-0000, manual: "Manual de Gerencia de Proyectos", seccion: "82a1d5758e18.png", pagina: null}
+  - {id: img-142b99839493-0000, manual: "Manual de Gerencia de Proyectos", seccion: "142b99839493.png", pagina: null}
+  - {id: img-dc28ace73ee8-0000, manual: "Manual de Gerencia de Proyectos", seccion: "dc28ace73ee8.png", pagina: null}
+  - {id: img-1d34d49afd3a-0000, manual: "Manual de Gerencia de Proyectos", seccion: "1d34d49afd3a.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s248, manual: "Manual de Gerencia de Proyectos", seccion: "7.4.10.2 Registro del adelanto para materiales como pago a cuenta", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s249, manual: "Manual de Gerencia de Proyectos", seccion: "7.4.11 Valorizaciones", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

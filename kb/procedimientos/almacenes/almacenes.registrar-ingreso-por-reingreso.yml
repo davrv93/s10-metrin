@@ -1,0 +1,107 @@
+id: almacenes.registrar-ingreso-por-reingreso
+version: 1
+modulo: almacenes
+titulo: "Devolver al almacén los recursos sobrantes con un ingreso por reingreso"
+objetivo: "Ingresar de nuevo al almacén, con un Ingreso por Reingreso [IR], los recursos egresados a una partida de control que no se utilizaron en su totalidad, para descargar sus costos de la partida de control a la que fueron egresados y cargados."
+nivel: basico
+preguntas:
+  - "sobró cemento en la obra, cómo lo devuelvo al almacén"
+  - "como registro la devolucion de materiales sobrantes al almacen"
+  - "cómo hago un ingreso por reingreso"
+  - "el maestro devolvio clavos que no uso, como los reingreso"
+  - "como descargo el costo de la partida de control cuando devuelven material"
+  - "ingreso IR almacen s10 como se hace"
+  - "devolucion de material de obra al almacen como lo registro"
+  - "no me aparece el recurso para reingresarlo al almacen"
+aliases:
+  - "ingreso por reingreso"
+  - "ingreso IR"
+  - "devolución al almacén"
+  - "devolver sobrantes"
+  - "reingreso de materiales"
+entidades:
+  modulo: "Almacenes"
+  pantallas: ["Ingresos", "Recursos Egresados"]
+  objetos: ["ingreso por reingreso", "partida de control", "recurso", "egreso"]
+prerrequisitos:
+  - texto: "Previamente debe existir un egreso hacia una partida de control. Disponible para el almacén tipo material."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s053]
+pasos:
+  - n: 1
+    id: "almacenes.registrar-ingreso-por-reingreso#1"
+    accion: "En la barra de vistas, elija el acceso al escenario de **Ingresos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s053]
+    pagina: null
+  - n: 2
+    id: "almacenes.registrar-ingreso-por-reingreso#2"
+    accion: "En el árbol, elija el proyecto y el almacén."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s053]
+    pagina: null
+  - n: 3
+    id: "almacenes.registrar-ingreso-por-reingreso#3"
+    accion: "Elija el tipo de ingreso **Ingreso por Reingreso**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s053]
+    pagina: null
+  - n: 4
+    id: "almacenes.registrar-ingreso-por-reingreso#4"
+    accion: "Efectúe un nuevo ingreso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s053]
+    pagina: null
+  - n: 5
+    id: "almacenes.registrar-ingreso-por-reingreso#5"
+    accion: "Registre el tipo de cambio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s053]
+    pagina: null
+  - n: 6
+    id: "almacenes.registrar-ingreso-por-reingreso#6"
+    accion: "En el cuerpo del documento, haga un nuevo ingreso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s053]
+    pagina: null
+  - n: 7
+    id: "almacenes.registrar-ingreso-por-reingreso#7"
+    accion: "En la ventana **Recursos Egresados**, que muestra todos los recursos egresados hacia las partidas de control, elija con doble clic los recursos que serán devueltos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s053, img-342665455df8-0000]
+    pagina: null
+    fotos:
+      - id: "661ea089bce2"
+        ruta_o_url: "imagenes/manual-de-almacenes/342665455df8.png"
+        pagina: null
+        ocr: "Li]\n@) Recursos Egresados re\nOpciones 2\nDe XS #4RS Bom 3 Re® wee\nre — 7 4) NIVEL: off\n——— =| Elija el recurso con doble clic = = ~\n| _ [cénigo [Descrip Partici| de Control =\n020412 CLAVOS PARA MADERA|CON CABEZA DE 1\" kg §.00 4.00 Encofifado\n4 | {|\n0204120010008  CLAVOS PARA MADERA CON CABEZA DE 3\" kg 28 3.9043 Encofrado"
+  - n: 8
+    id: "almacenes.registrar-ingreso-por-reingreso#8"
+    accion: "Ingrese la cantidad que devuelve."
+    fuente: [img-cc6c0e5b169b-0000, web-https-documentacion-s10peru-com-manual-d-s053]
+    pagina: null
+    fotos:
+      - id: "2d48ac68c6d6"
+        ruta_o_url: "imagenes/manual-de-almacenes/cc6c0e5b169b.png"
+        pagina: null
+        ocr: "Ley]\n\n2? Ingreso por Reingreso [IR] 01002-PUENTE EN CARRETERA ** ex\nRegistra © Andres - ANDRADE ANDRADE, ANDRES —_Littimo usuario ; N° de Guia\nAlmacén 001 - De Materiales Ultima fecha | [000000000001\nTipo 01 - OBRA\nFoane [OUST T v| sto. | G4 nro. pete. [=\nDevuelve rs A\n(oruenbestino) [72000516 [Bolafios, René - 44)\nProcedencia de la partida de control ee\n| f) PUENTE EN CARRETERA, : |\n\nIngresa la c…"
+  - n: 9
+    id: "almacenes.registrar-ingreso-por-reingreso#9"
+    accion: "Pulse **Aceptar** para registrar el ingreso por reingreso."
+    fuente: [img-cc6c0e5b169b-0000]
+    pagina: null
+  - n: 10
+    id: "almacenes.registrar-ingreso-por-reingreso#10"
+    accion: "Use el botón que muestra una vista previa del reporte del ingreso por reingreso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s043, web-https-documentacion-s10peru-com-manual-d-s053]
+    pagina: null
+    fotos:
+      - id: "cd69ecbea899"
+        ruta_o_url: "imagenes/manual-de-almacenes/4fba098135e3.png"
+        pagina: null
+        caption: "Reporte"
+        ocr: "sto Pagina: 1\n$10 S.A.C.\nProyecto 01002 PUENTE EN CARRETERA\nAlmacén 001 De Materiales Tipo OBRA\nIngreso por Reingreso [I R]\nFecha 23/05/2010 Guia N* 000000000001 Devuelve 22000516 Bolaiios, René\nDocumento Ne - Moneda NUEVOS SOLES\nFactura/Boleta Orden de CompraN®\nCodigo Descripcion Recurso Und Cantidad P.U.(S/.) Parcial (S/.) Parcial (U$)\n02041 20001000£CLAVOS PARA MADERA kg 3.0000 3.9043 11.71 3.6…"
+verificacion: []
+errores_frecuentes:
+  - sintoma: "La ventana no muestra los recursos egresados que serán devueltos."
+    solucion: "Solo se muestran los recursos egresados hacia las partidas de control: previamente debe existir un egreso hacia una partida de control, y el reingreso está disponible para el almacén tipo material."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s053]
+relacionados: [almacenes.registrar-egreso-a-partida-de-control]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s053, manual: "Manual de Almacenes", seccion: "2.1.3.5 Ingreso por Reingreso [IR]", pagina: null}
+  - {id: img-342665455df8-0000, manual: "Manual de Almacenes", seccion: "342665455df8.png", pagina: null}
+  - {id: img-cc6c0e5b169b-0000, manual: "Manual de Almacenes", seccion: "cc6c0e5b169b.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s043, manual: "Manual de Almacenes", seccion: "2.1.2 Impresión de reportes", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

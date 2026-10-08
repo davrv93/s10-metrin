@@ -1,0 +1,78 @@
+id: compras.ajustar-orden-de-compra-parcialmente-atendida
+version: 1
+modulo: compras
+titulo: "Ajustar una orden de compra que el proveedor atendió solo en parte"
+objetivo: "Cuando una Orden de Compra aprobada tiene ingresos parciales al almacén y el proveedor no completará las cantidades y quiere dar por finalizadas las entregas, modificarla automáticamente para que coincida con la factura que emita el proveedor."
+nivel: intermedio
+preguntas:
+  - "el proveedor ya no va a entregar lo que falta de la orden de compra, que hago"
+  - "como cierro una orden de compra que llego incompleta"
+  - "la oc esta parcialmente en almacen y el proveedor no completa"
+  - "como hago que la orden de compra cuadre con la factura del proveedor"
+  - "como devuelvo la cantidad pendiente de una orden de conpra"
+  - "me quedo saldo pendiente en la orden de compra y no va a llegar"
+  - "proveedor entrego menos de lo pedido como regularizo la oc"
+aliases:
+  - "orden de compra parcialmente atendida"
+  - "devolver cantidad"
+  - "cerrar saldo de orden de compra"
+  - "orden de compra incompleta"
+entidades:
+  modulo: "Compras"
+  pantallas: ["Orden de Compra"]
+  objetos: ["Orden de Compra", "Proveedor", "recursos", "factura"]
+prerrequisitos:
+  - texto: "La Orden de Compra debe estar aprobada y tener ingresos parciales al almacén hechos con la opción INGRESO POR ORDEN DE COMPRA."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s054]
+  - texto: "El estado de la Orden de Compra debe ser PARCIALMENTE EN ALMACEN."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s054]
+pasos:
+  - n: 1
+    id: "compras.ajustar-orden-de-compra-parcialmente-atendida#1"
+    accion: "Ingrese al escenario de **Orden de Compra** y elija el proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s053]
+    pagina: null
+    fotos:
+      - id: "9a7b7f8b9b62"
+        ruta_o_url: "imagenes/manual-de-compras/85c8d83dfbd3.png"
+        pagina: null
+        caption: "Ingrese al escenario de Orden de Compra y elija el proyecto."
+        ocr: "[Elis |4[_ reo J] [ Elija |e\nJ Se gap Mengtorts\nbf) Pedro -\nnee : BBS SPUENTE EN CARRETERA\nCompra Luego, | ©"
+  - n: 2
+    id: "compras.ajustar-orden-de-compra-parcialmente-atendida#2"
+    accion: "Si quiere ver lo que falta ingresar, elija la orden de compra y visualice los recursos pendientes."
+    fuente: [img-eedfff2753f7-0000, web-https-documentacion-s10peru-com-manual-d-s053]
+    pagina: null
+    fotos:
+      - id: "ebcbbe8ad7d3"
+        ruta_o_url: "imagenes/manual-de-compras/eedfff2753f7.png"
+        pagina: null
+        ocr: "Ordenes de Compra\nSYR vs  &aa\nElija esta guia\n5]5 _Campo[Estado | [En cualquier posicién [X][2} <\nProyecto Nro. Orden de Compra |Proveedor Moneda Valor Total] Situacién\n=) En Almacén\nPUENTE EN @ARRETERA 0001 Libreria Venus Si 310.38\nPUENTE EN @A4RRETERA 0002 FERRETERIALAABEJA = Si. 144,204.20\n Parcialmentqen Almacén\nPUENTE EN CARRETERA] 0003 Ferreteria El Constructor Sy. 11,033.68\nSS ————————— eT\n…"
+  - n: 3
+    id: "compras.ajustar-orden-de-compra-parcialmente-atendida#3"
+    accion: "Elija al proveedor de la orden de compra en estado **Parcialmente en Almacén**."
+    fuente: [img-58d6287f4816-0000, web-https-documentacion-s10peru-com-manual-d-s054]
+    pagina: null
+    fotos:
+      - id: "c08e377fc40a"
+        ruta_o_url: "imagenes/manual-de-compras/58d6287f4816.png"
+        pagina: null
+        ocr: "Ordenes de Compra\nAN v\\¥ daa\nArrastre hacia aqui el encabezado de la columna que desea agrupar. Elija al Proveedor\nProyecto Estado. Nro. Orden de (| Proveedoy\nPUENTE EN CARRETERA En Almacén 000000000006 Ferreteriaf.a Sirena\nPUENTE EN CARRETERA —§ Aprobado 0007 Telefonica Multimedia SAC\nPUENTE EN CARRETERA ——Parcialmente en Almacén [EAA Ferelerie a Sirena\n4 Mm. ~\n—— =| Clic derecho sobre el recurso…"
+  - n: 4
+    id: "compras.ajustar-orden-de-compra-parcialmente-atendida#4"
+    accion: "Haga clic derecho sobre el recurso que ya no completará de abastecer y elija **Devolver Cantidad**."
+    resultado: "El utilitario modifica automáticamente la Orden de Compra, para que la factura que emita el proveedor coincida."
+    fuente: [img-58d6287f4816-0000, web-https-documentacion-s10peru-com-manual-d-s054]
+    pagina: null
+verificacion: []
+errores_frecuentes:
+  - sintoma: "La orden de compra no aparece para ajustarla."
+    solucion: "El estado de la Orden de Compra debe ser PARCIALMENTE EN ALMACEN: debe tener ingresos parciales con INGRESO POR ORDEN DE COMPRA."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s054]
+relacionados: [compras.aprobar-orden-de-compra, almacenes.registrar-ingreso-por-orden-de-compra]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s054, manual: "Manual de Compras", seccion: "13.1 Orden de Compra parcialmente atendida por el Proveedor", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s053, manual: "Manual de Compras", seccion: "13. Cantidades pendientes de ingreso al almacén", pagina: null}
+  - {id: img-eedfff2753f7-0000, manual: "Manual de Compras", seccion: "eedfff2753f7.png", pagina: null}
+  - {id: img-58d6287f4816-0000, manual: "Manual de Compras", seccion: "58d6287f4816.png", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

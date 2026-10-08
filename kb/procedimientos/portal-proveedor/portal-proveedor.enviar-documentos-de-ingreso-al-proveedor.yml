@@ -1,0 +1,88 @@
+id: portal-proveedor.enviar-documentos-de-ingreso-al-proveedor
+version: 1
+modulo: portal-proveedor
+titulo: "Enviar al proveedor los documentos de una guía de ingreso"
+objetivo: "Enviar al proveedor, desde Almacenes, un mensaje con la orden de compra, la guía de remisión y el ticket de validación adjuntos automáticamente, como parte del registro simple de facturación."
+nivel: basico
+preguntas:
+  - "cómo le mando al proveedor la orden de compra y la guía desde almacenes"
+  - "como envio los documentos de la guia de ingreso al proveedor"
+  - "donde esta la opcion enviar al proveedor"
+  - "quiero mandarle el ticket de validacion al proveedor por correo"
+  - "como agrego otro destinatario al mensaje para el proveedor"
+  - "se puede mandar copia a otra persona cuando envio al proveedor?"
+  - "el almacenero como le envia la oc y la guia de remision al probeedor"
+  - "que documentos le llegan al proveedor cuando le envio la guia de ingreso"
+aliases:
+  - "enviar al proveedor"
+  - "enviar documentos al proveedor"
+  - "mensaje al proveedor"
+  - "registro simple de facturación"
+entidades:
+  modulo: "Portal del Proveedor"
+  pantallas: ["Mensajes", "Destinatarios"]
+  objetos: ["guia de ingreso", "orden de compra", "guía de remisión", "ticket de validación", "socio de negocio"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "portal-proveedor.enviar-documentos-de-ingreso-al-proveedor#1"
+    accion: "Haga clic derecho en la **Guia de Ingreso** y elija **Enviar al proveedor**."
+    fuente: [web-https-www-s10peru-com-nuevo-registro-fac-s002]
+    pagina: null
+    fotos:
+      - id: "1d56c2125cee"
+        ruta_o_url: "imagenes/s10peru-com-nuevo-registro-facturacion/466346827b85.png"
+        pagina: null
+        caption: "01 Le damos Clic derecho en la Guia de Ingreso, luego seleccionamos “Enviar al proveedor”"
+        ocr: "Ingresos\n\n‘Tipo movimiento: | Ingreso por Orden de Compra {1 0C/S] [+] F Todos bet [2zs2020 +] A! f2rros2020 =] 7\n\nDEF RSS [m\\G Fo oe id\n\n4/4104 Campo[Ongen =] [en cuslaser poscén ~]) [X)[2)) cupe:\n\nReguisrizado Estado | Nro. Guia Fecha Moneda Parcial N* Guia de Remisi6n\nDocumento de Pagc Protegido 000000000001 (070772018 MIXERCON SA sv 834.50 067-0026201 phuaynu\nDocumento de Page Protegido 000000…"
+  - n: 2
+    id: "portal-proveedor.enviar-documentos-de-ingreso-al-proveedor#2"
+    accion: "En la ventana que se abre, seleccione la pestaña **Mensajes**."
+    fuente: [web-https-www-s10peru-com-nuevo-registro-fac-s002]
+    pagina: null
+  - n: 3
+    id: "portal-proveedor.enviar-documentos-de-ingreso-al-proveedor#3"
+    accion: "Escriba el mensaje: se adjuntan automáticamente la orden de compra, la guía de remisión y el ticket de validación."
+    fuente: [web-https-www-s10peru-com-nuevo-registro-fac-s002]
+    pagina: null
+    fotos:
+      - id: "657be341a015"
+        ruta_o_url: "imagenes/s10peru-com-nuevo-registro-facturacion/a2b58529a8c0.png"
+        pagina: null
+        caption: "Ticket validación"
+        ocr: "A Lista de Envios - o x\nSMFfR838 «Baa\n0 = ——Campo|N* Envio ~] [ious ve J (XI) ergo:\ni Envio |N* Documento [Usuario Fecha Envio Estado Archive Documenta Archivo Anexo\n\\ ‘babornoz 2718/2020 04:17:55 p.m. Registrado\n(MANO E|\n9 OBRA\n7 —— =\n{ SER,\nsold\n0S EDF an : EDIFICA CONSTRUCTORES SAC - Proyecto: 2 i ;\n[Eroess: ~ Proyecto: CC PUCP - N° Orden Compra: 0015 - Gula de IngregaaOC/S ):100000004\nMENON re…"
+  - n: 4
+    id: "portal-proveedor.enviar-documentos-de-ingreso-al-proveedor#4"
+    accion: "Si quiere agregar más destinatarios antes de enviar, haga clic en la pestaña **Destinatarios**."
+    fuente: [web-https-www-s10peru-com-nuevo-registro-fac-s002]
+    pagina: null
+  - n: 5
+    id: "portal-proveedor.enviar-documentos-de-ingreso-al-proveedor#5"
+    accion: "Haga clic derecho y elija **agregar Socio de negocio**, solo si quiere enviar copia a alguien más."
+    fuente: [web-https-www-s10peru-com-nuevo-registro-fac-s002]
+    pagina: null
+  - n: 6
+    id: "portal-proveedor.enviar-documentos-de-ingreso-al-proveedor#6"
+    accion: "Haga clic en **Enviar**, sin salir de Almacenes."
+    resultado: "El proveedor recibirá un mensaje con los 3 documentos que se adjuntaron automáticamente."
+    fuente: [web-https-www-s10peru-com-nuevo-registro-fac-s002]
+    pagina: null
+    fotos:
+      - id: "27c62ab72f3f"
+        ruta_o_url: "imagenes/s10peru-com-nuevo-registro-facturacion/f72fd534f8b7.png"
+        pagina: null
+        caption: "06 Le das clic en “ Enviar ” sin salir de Almacenes"
+        ocr: "® Lista de Envios - a x\n\nSMARaea -Efi aaa\n\n0 Campo |N* Envi J [isa ave S| (X)[22) crupo:\n\nbabornoz 27/08/2020 04:17:55 p.m Registrado\n\nANO De|\nBRA\n\n=r —r—C “EN\n0 DE OF\norcad P/F eS» GE id\nCONES 0/9 Campo |Cédigo ~] [en cualquer poscin ~ |) (X)[) cupo:\n\n[Contacto Emad\nELECTRO COMERCIAL JOB jprmani_02@yahoo comar\n\n= | ie\nENCIA)\nENCIA)\nMP\nacord\nORA DE]\n(ONES OF\nCO eV\na a |\na."
+      - id: "e06c88798ff1"
+        ruta_o_url: "imagenes/s10peru-com-nuevo-registro-facturacion/9a228da3d9eb.png"
+        pagina: null
+        caption: "07 Ahora el proveedor recibirá un mensaje con los 3 documentos que se adjuntaron automáticamente."
+        ocr: "- N° Orden Compra: 000000000004 Recibidos *\nk\nebarrera@s10peru.com\npara ebarrera, mi, mramirez +\nAdjuntos los documentos de ingreso.\n3 archivos adjuntos\nGuia! oc - Nro 000... 7 4 b Ticket Validecion-0.-_ yy” (@ orden de Compra ... 7 4"
+verificacion:
+  - texto: "El proveedor recibe un mensaje con los 3 documentos adjuntos: orden de compra, guía de remisión y ticket de validación."
+    fuente: [web-https-www-s10peru-com-nuevo-registro-fac-s002]
+errores_frecuentes: []
+relacionados: []
+fuentes:
+  - {id: web-https-www-s10peru-com-nuevo-registro-fac-s002, manual: "Nuevo Registro Simple de Facturación - Sistema 10", seccion: "Tu Empresa envía documentos al Proveedor", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

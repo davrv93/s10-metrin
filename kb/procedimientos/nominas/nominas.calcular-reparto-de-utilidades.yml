@@ -1,0 +1,206 @@
+id: nominas.calcular-reparto-de-utilidades
+version: 1
+modulo: nominas
+titulo: "Calcular el reparto de utilidades y generar su liquidación"
+objetivo: "Calcular en el escenario Reparto de Utilidades el porcentaje de la renta neta de la empresa que corresponde a cada trabajador por días trabajados y por monto ganado, y generar el documento Liquidación de la Distribución de Utilidades."
+nivel: avanzado
+preguntas:
+  - "como calculo las utilidades de los trabajadores en nominas"
+  - "como hago el reparto de utilidades del año"
+  - "donde configuro los dias trabajados y el monto ganado para utilidades"
+  - "como genero la liquidacion de utilidades para cada trabajador"
+  - "que conceptos suman dias trabajados para las utilidades"
+  - "el descanso por maternidad cuenta para utilidades?"
+  - "como saco la constancia de distribucion de utilidades en word"
+  - "como genero la planilla de pago de las utilidades"
+  - "reparto de utilidade paso a paso"
+  - "donde pongo el monto total de utilidades a repartir"
+aliases:
+  - "reparto de utilidades"
+  - "calcular utilidades"
+  - "liquidación de utilidades"
+  - "distribución de utilidades"
+  - "utilidades de los trabajadores"
+entidades:
+  modulo: "Nóminas"
+  pantallas: ["Reparto de Utilidades"]
+  objetos: ["utilidades", "concepto", "días trabajados", "monto ganado", "plantilla", "trabajadores"]
+prerrequisitos:
+  - texto: "Solo deben considerarse como días computables los días efectivamente laborados: los días asistidos cumpliendo la jornada laboral completa y los días de descanso médico."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s086]
+pasos:
+  - n: 1
+    id: "nominas.calcular-reparto-de-utilidades#1"
+    accion: "Acceda al escenario **Reparto de Utilidades**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s085, img-dd16a3ef70c8-0000]
+    pagina: null
+    fotos:
+      - id: "1b5f7dd06343"
+        ruta_o_url: "imagenes/manual-de-nominas/dd16a3ef70c8.png"
+        pagina: null
+        ocr: "es Botdn de acceso\nal eetenario\nReparto de\nUtilidades"
+  - n: 2
+    id: "nominas.calcular-reparto-de-utilidades#2"
+    accion: "Marque con un check todos los tipos de nómina afectos al cálculo de utilidades."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s085]
+    pagina: null
+    fotos:
+      - id: "f0cfdf0d1110"
+        ruta_o_url: "imagenes/manual-de-nominas/61a756e15249.png"
+        pagina: null
+        caption: "1- Configuración de conceptos para el cálculo de las Utilidades."
+        ocr: "Reparto de Utilidades @)\nTipo de Nomina Proyecto (b) Periodo (c) Ajio [2018 S | x| |\noO Empleados - Estandar |\n(a) Empleados - Multiproyecto [0 - MULTIPROYECTO CONSTRUCTORAABC S.A.C._| ...| Marzo 2019 - 03 «ities rresesesees:\nPo Rept ote S| tor\nTotal utilidad 7 : 5 a z\nora «s Por Dias Trabajados Por Monto Ganado Dias Trabajados Monto Ganado Dias Trabajados Monto Ganado\n128,902.00 64,451.00 64,451.…"
+  - n: 3
+    id: "nominas.calcular-reparto-de-utilidades#3"
+    accion: "Use el botón para seleccionar el proyecto del cual debe tomar los datos para el cálculo y el periodo en el que se realizará el pago de las utilidades; luego seleccione el año por el que genera el cálculo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s085]
+    pagina: null
+  - n: 4
+    id: "nominas.calcular-reparto-de-utilidades#4"
+    accion: "Registre el importe obtenido producto del % de las utilidades que reciben los trabajadores, según la industria a la que pertenezca la empresa."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s085]
+    pagina: null
+  - n: 5
+    id: "nominas.calcular-reparto-de-utilidades#5"
+    accion: "Registre los importes del reparto **Por Días Trabajados** y **Por Monto Ganado**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s085, img-61a756e15249-0000]
+    pagina: null
+  - n: 6
+    id: "nominas.calcular-reparto-de-utilidades#6"
+    accion: "Use la opción **Días Trabajados** para definir los conceptos que suman los días trabajados por cada tipo de nómina."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s085]
+    pagina: null
+    fotos:
+      - id: "5b20983b1f97"
+        ruta_o_url: "imagenes/manual-de-nominas/2ce4e2730089.png"
+        pagina: null
+        caption: "2-Definir los conceptos: Días Trabajados y Monto Ganado."
+        ocr: "Reparto de Utilidades\nTipo de Nomina Proyecto | Eliia Periods fo |2018 = x| |\n(1 Empleados - Estandar J\nEmpleados - Multiproyecto [0 - MULTIPROYECTO CONSTRUCTORAABC S.A.C. ars WME UBER DIOCESO:\nConfiguraci6n de Conceptos > Dias Trabajados (J)\nMonto Ganado =h)\nTotal utiidades -———_____Reparto\nPor Dias Trabajados Por Monto Ganado Dias Trabajados Monto Ganado Dias Trabajados Monto Ganado\n128,902.00 6…"
+  - n: 7
+    id: "nominas.calcular-reparto-de-utilidades#7"
+    accion: "Seleccione del catálogo los conceptos de tipo valor Día que también son computables para el cálculo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s086]
+    pagina: null
+    fotos:
+      - id: "c868aa16b029"
+        ruta_o_url: "imagenes/manual-de-nominas/b7669019657b.png"
+        pagina: null
+        ocr: "re\nOpciones 2\nDSsxXBie &@¥Bm o> HNRS | Alea\n8 Todos los Registros ER 88\n[)- &® CONCEPTOS OBREROS: Co Descrpad Elija con doble clic\nFee recuracones curt H z foaTmasasoeorcna Ti\n1] REGULACIONES EMPLEADOS anennd\nTi] DeSCUENTOS EMPLEADOS (REGU |__| 22006002 DIAFALTANO JUSTIFICADA\nUi] APORTES EMPLEADOR - EMPLEADOS | |z2006003|DIAASISTIOFERADO\n| DATOS DE EMPLEADOS | |zzooco0g|DIAFERADO\nhf TPo DE HORAEMP…"
+      - id: "ddef5b2b2d5b"
+        ruta_o_url: "imagenes/manual-de-nominas/411ab4ed4fd0.png"
+        pagina: null
+        caption: "La Ley 30792, establece que los 98 días que comprende el descanso prenatal y posnatal serán considerados como días laborados para el cómputo de las utilidades."
+        ocr: "ih Conceptos que suman Dias Trabajados\nBY 2RE8 BS eae\nCédigo Descripcién Proceso I\n22006005 = DIADESCANSO MEDICO (PRIMEROS 20 DIAS) |\n22006001 DIA TRABAJO EN OFICINA Estandar para Empleados\n22006019 DIA SUBSIDIO POR MATERNIDAD Estandar para Empleados\n\nAceptar | Cancelar"
+  - n: 8
+    id: "nominas.calcular-reparto-de-utilidades#8"
+    accion: "Use la opción **Monto Ganado** y seleccione del catálogo los conceptos de tipo valor Moneda que también son computables para el cálculo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s086]
+    pagina: null
+    fotos:
+      - id: "a789bfab6608"
+        ruta_o_url: "imagenes/manual-de-nominas/64679f467553.png"
+        pagina: null
+        caption: "Luego, Seleccionar del catálogo, los conceptos tipo valor: Moneda y también computables para el cálculo."
+        ocr: "Opciones ?\nDS KEES MY B® Om MF ASQ lee [Elis con doble cle\n© Ba een Rae 2 a Se\n«®@ CONCEPTOS OBREROS a = — pe\na eS REGULACONES EuPLE nos | |_ |22007002 REMUNERACION MENSUAL - BOLETA =\nGJ DescuenTos eMpLeADos (REGULACIONeq_—|_|22007003_|ASIGNACIONFAMMIAR\nUJ APORTES EMPLEADOR - EMPLEADOS (ReG||__|_|22007004_|GRATIFICACIONES EXTRAORDINARIAS\n|| DATOS DE EMPLEADOS __|22007005 __|GRATIFICACIONPORPAGARS/…"
+  - n: 9
+    id: "nominas.calcular-reparto-de-utilidades#9"
+    accion: "Calcule el reparto de utilidades."
+    resultado: "Al finalizar el cálculo el sistema preparará el reporte detallado del Reparto de Utilidades."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s086]
+    pagina: null
+    fotos:
+      - id: "c0cc3ec82171"
+        ruta_o_url: "imagenes/manual-de-nominas/8f0145ef83fd.png"
+        pagina: null
+        caption: "3- Calcular el Reparto de Utilidades."
+        ocr: "Reparto de Utilidades [Elia |\nTipo de Nomina Proyecto Periodo Afio j 218 «+ [RI ew |\n\nLl Empleados - Estandar ,\n\nHnnasaandeaes - loulligeneeyesedia 2). MUU TERY ERI) COMES TEU RAAIRE SAC. Marzo 2019 - 03 finns pricenett:\n(EP\n\noe _ __ Factor\nPor Dias Trabajados Por Monto Ganado Monto Ganado Dias Trabajados Monto Ganado\n128,902.00 64,451.00 64,451.00 0.00 0.00 0.000000000 0.000000000"
+      - id: "1442eba33cd4"
+        ruta_o_url: "imagenes/manual-de-nominas/81ebb95a8eb6.png"
+        pagina: null
+        caption: "Al finalizar el cálculo el sistema preparará el reporte detallado del Reparto de Utilidades como se observa a continuación:"
+        ocr: "Reparto de Utilidades\nree de Némina Proyecto Perego aio [2018 =] 2X) af |\n\nLB Empleados - Estandar\n\n| Empleados - Multiproyecto 0 - MULTIPROYECTO CONSTRUCTORAABC S.A.C. ‘Marzo 2019 - 03 ‘Utimo proceso: soreliana el 03/04/2019 12:31:51 p.m.\n\nE>:\n\n[ toetutines ra armas Ganado | is jeden\" Mans Grub Da Tabor\" \"Nena Gnas\n\n128,902.00 64,451.00 64,451.00 22,407.00 5,967,354.91 (2.876377918 0.010800598\n\nE…"
+  - n: 10
+    id: "nominas.calcular-reparto-de-utilidades#10"
+    accion: "Para generar la planilla de pago de las utilidades, elija **Generar Documento de Pago**."
+    fuente: [web-https-documentacion-s10peru-com-configur-s000, img-2c89c62db7a8-0000]
+    pagina: null
+    fotos:
+      - id: "d68749cf2fd4"
+        ruta_o_url: "imagenes/configurar-escenario-reparto-utilidades/498b86b5481f.png"
+        pagina: null
+        caption: "4.- Generación de la planilla de pago:"
+        ocr: "Toodeninna [iedémiadse dt fe] Xf | gererertoce Pe ‘\nProyecto [f300T _[ADURISTRATIVOS- GERENGADE PROT ..] 4] Pereso forzovaosor [warzoz014-05 a=] OA] a ee ae, scan,"
+  - n: 11
+    id: "nominas.calcular-reparto-de-utilidades#11"
+    accion: "Prepare la plantilla de Liquidación de la Distribución de Utilidades en el catálogo: elija el **Escenario** desde el que se recopilará la información y use el diccionario de variables."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s086, img-42a568488bed-0000]
+    pagina: null
+    fotos:
+      - id: "b5a414c86f9b"
+        ruta_o_url: "imagenes/manual-de-nominas/42a568488bed.png"
+        pagina: null
+        ocr: "-\n\nCodigo 01 fooz\n\nDescripcion Havpaconce rueaces\n\n- ;\n\nipo [20 [otros | we | 4)\nAbreviatura [UTLIDADES a ®\n\nEscenario [Reparto de Utiidades I? Plantilla °\nRuta [cas102000\\Boletas we |\nJ¥ Ubicacion de la firma digital por defecto Margen 730 Margen 50\n\ncow _|"
+  - n: 12
+    id: "nominas.calcular-reparto-de-utilidades#12"
+    accion: "Redacte el documento usando las variables; luego haga clic derecho y asigne el documento en formato Plantilla de Word o Plantilla de Excel."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s087]
+    pagina: null
+    fotos:
+      - id: "cf018a44ce92"
+        ruta_o_url: "imagenes/manual-de-nominas/d4d6d6fa5b89.png"
+        pagina: null
+        ocr: "H@UIBAGCION BE DISTRIBUCION IE UTIMIBADBES\nCORRESPONDIENTE Al, EdlIRGKKO cAnelrreceso:\n(D.Leg. N°892 y Dec. Sup. N°009-98-TR )\nAPELLIDOS Y NOMBRES : :ApellidoPaterno: :ApellidoMaterno: :Nombres:\nDNI : :DNI:\nRecii de :DescripcionEmpresa:, con RUC :RUCEmpresa:, domiciliado en Av. San Borja Sur 754, San\nBorja, debidamente representada por el Sr. Manuel Ramirez Nufiez identificado con Documento\nNacion…"
+  - n: 13
+    id: "nominas.calcular-reparto-de-utilidades#13"
+    accion: "En el escenario **Reparto de Utilidades**, seleccione de forma individual o grupal a los trabajadores de los que desea obtener la constancia."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s087]
+    pagina: null
+    fotos:
+      - id: "aeac51ddbd58"
+        ruta_o_url: "imagenes/manual-de-nominas/dde99c6f587a.png"
+        pagina: null
+        caption: "Primero, Seleccionar de forma individual o grupal a los trabajadores que se desea obtener la Constancia."
+        ocr: "Reparto de Utilidades\nTipo de Nomina Proyecto Periodo: ‘af [2018 =] 9K| |\n\n(1 Empleados - Estandar ”\n\nEmpleades -Muteroyecto EE ESS STSCI arco 2019-09 Usine proceso:\n(ee\n\nEYFR88 -EFhigae\nCédigo low | Nombre. [Fecha ingreso |FechaCese |Cesado | Dias trabajados | Monto Ganado _| Utilidad por Dias trabajados\n22016804 41673679 Anemaria Yuera, Edwin Santiago ovo7a018 — 31r12R018 Si 157 25,6750 45159\n22…"
+  - n: 14
+    id: "nominas.calcular-reparto-de-utilidades#14"
+    accion: "Defina la plantilla de documento, la **Carpeta Destino**, el **Nombre de Archivo** y la **Fecha de emisión** del documento."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s087, img-4fd7c13989e7-0000]
+    pagina: null
+    fotos:
+      - id: "ee7f152bcede"
+        ruta_o_url: "imagenes/manual-de-nominas/4fd7c13989e7.png"
+        pagina: null
+        ocr: "Plantila Documento [01002 [LIQUIDACION DE UTILIDADES| ee ®\nCarpeta Destino C:\\S102000\\Boletas =\nNombre de Archivo [Ajpreviatura Tipo Doc. + DNI+ Fecha Emisién Pa\nFecha de emision\noy 31/03/2019\n\nGenerar Enviar al Portal Cancelar"
+  - n: 15
+    id: "nominas.calcular-reparto-de-utilidades#15"
+    accion: "Para concluir y generar el documento, haga clic en **Generar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s087, img-8223ac1609dd-0000]
+    pagina: null
+    fotos:
+      - id: "ae980e8d00ed"
+        ruta_o_url: "imagenes/manual-de-nominas/8223ac1609dd.png"
+        pagina: null
+        ocr: "Generar"
+verificacion:
+  - texto: "Al finalizar el cálculo el sistema preparará el reporte detallado del Reparto de Utilidades."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s086]
+errores_frecuentes:
+  - sintoma: "Los días de descanso prenatal y posnatal no suman días trabajados."
+    solucion: "La Ley 30792 establece que los 98 días del descanso prenatal y posnatal serán considerados como días laborados para el cómputo de las utilidades: inclúyalos en los conceptos que suman días trabajados."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s086]
+  - sintoma: "La utilidad no se toma para el descuento de la renta de quinta del trabajador."
+    solucion: "Primero relacione el concepto genérico y luego genere el resumen de conceptos por período para obtener el dato del depósito por concepto de utilidad."
+    fuente: [web-https-documentacion-s10peru-com-configur-s000]
+relacionados: [nominas.calcular-la-nomina, nominas.registrar-renta-de-quinta-de-otras-empresas]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s086, manual: "Manual de Nóminas", seccion: "Instructivo para el reparto de Utilidades (2)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s085, manual: "Manual de Nóminas", seccion: "Instructivo para el reparto de Utilidades (1)", pagina: null}
+  - {id: img-dd16a3ef70c8-0000, manual: "Manual de Nóminas", seccion: "dd16a3ef70c8.png", pagina: null}
+  - {id: img-61a756e15249-0000, manual: "Manual de Nóminas", seccion: "61a756e15249.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-configur-s000, manual: "Configurar escenario: Reparto de Utilidades", seccion: "Configurar escenario: Reparto de Utilidades", pagina: null}
+  - {id: img-2c89c62db7a8-0000, manual: "Configurar escenario: Reparto de Utilidades", seccion: "2c89c62db7a8.png", pagina: null}
+  - {id: img-42a568488bed-0000, manual: "Manual de Nóminas", seccion: "42a568488bed.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s087, manual: "Manual de Nóminas", seccion: "Instructivo para el reparto de Utilidades (3)", pagina: null}
+  - {id: img-4fd7c13989e7-0000, manual: "Manual de Nóminas", seccion: "4fd7c13989e7.png", pagina: null}
+  - {id: img-8223ac1609dd-0000, manual: "Manual de Nóminas", seccion: "8223ac1609dd.png", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}

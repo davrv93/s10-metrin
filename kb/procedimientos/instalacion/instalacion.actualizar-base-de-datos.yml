@@ -1,0 +1,75 @@
+id: instalacion.actualizar-base-de-datos
+version: 1
+modulo: instalacion
+titulo: "Actualizar la base de datos después de instalar las revisiones"
+objetivo: "Permitir que la actualización de base de datos se ejecute correctamente y sin interrupciones después de instalar las revisiones del S10."
+nivel: basico
+preguntas:
+  - "despues de instalar la revision como se actualiza la base de datos"
+  - "me sale que no se puede actualizar la base de datos porque hay usuarios conectados"
+  - "no me aparecio la ventana de actualizacion de base de datos"
+  - "como veo que usuario esta conectado a la base de datos"
+  - "quien tiene que entrar primero despues de actualizar el s10"
+  - "la actualizacion de la bd se quedo esperando por usuarios conectados"
+  - "que hago si otro usuario entro antes a la base de datos"
+  - "actualisar base de datos s10 revision"
+aliases:
+  - "actualizar base de datos"
+  - "actualización de BD"
+  - "usuarios conectados"
+  - "actualización de base de datos"
+entidades:
+  modulo: "Instalación"
+  pantallas: ["Actualización de Base de Datos"]
+  objetos: ["base de datos", "revisiones", "usuario"]
+prerrequisitos:
+  - texto: "Haber instalado las revisiones del S10."
+    fuente: [web-https-documentacion-s10peru-com-actualiz-s002]
+pasos:
+  - n: 1
+    id: "instalacion.actualizar-base-de-datos#1"
+    accion: "Luego de instalar las revisiones, asegúrese de ser el primer usuario en conectarse a la base de datos."
+    fuente: [web-https-documentacion-s10peru-com-actualiz-s002]
+    pagina: null
+  - n: 2
+    id: "instalacion.actualizar-base-de-datos#2"
+    accion: "Permita que la actualización de base de datos se ejecute correctamente y sin interrupciones."
+    fuente: [web-https-documentacion-s10peru-com-actualiz-s002]
+    pagina: null
+    fotos:
+      - id: "2c3b1b5695ad"
+        ruta_o_url: "imagenes/actualizacion-s10-instalacion-revisiones/5de15570ee1c.png"
+        pagina: null
+        caption: "Luego de instalar las revisiones, es importante permitir que se ejecute correctamente y sin interrupciones la actualización de base de datos, para ello se debe asegurar de ser el primer usuario en conectarse a la base de datos luego de la actualización."
+        ocr: "| Aschivo Yer Catlogos Heramientas 2\n4he¢rvEBee\nsize\nners\na\nfg\nmeet ER sactuauzacion ve pase depatos = REY\n= = cecusin de Sgt receoe pws eesnena\nFy) i615 dear congos abn veroFogoCette Gg\nDaf Pe\nPree\nasin\neneraee\n7\nfe\nPolnimice\nai\n. a\nPrespueeo\nChater\noon ese\n| Planeamient |\n| Precos |\n[romes |\n[_viaros |\n[SO (——_0 7"
+  - n: 3
+    id: "instalacion.actualizar-base-de-datos#3"
+    accion: "Si aparece el mensaje de que no se puede actualizar la base de datos porque existen usuarios conectados, elija la opción **SI** para visualizar la lista de usuarios conectados."
+    fuente: [web-https-documentacion-s10peru-com-actualiz-s002]
+    pagina: null
+    fotos:
+      - id: "632d45c2b1ee"
+        ruta_o_url: "imagenes/actualizacion-s10-instalacion-revisiones/f9f22f5224f9.png"
+        pagina: null
+        caption: "Unos de los mensajes que puede aparecer antes de que actualice la BD es el siguiente, al ver el mensaje la ventana brinda opciones para visualizar, si se elige la opción SI se mostrara una segunda ventana con la lista para identificar que usuario está conectado, para continuar debe coordinar que cierren el S10 y luego elegir el botón continuar para que se realice el proceso de actualización de base de datos."
+        ocr: "Sistema 10 SAC. | x |\ni oe ) No se puede actualizar la base de datos porque existen usuarios\n‘SE conectados. ;Desea visualizarlos?\na"
+  - n: 4
+    id: "instalacion.actualizar-base-de-datos#4"
+    accion: "Coordine que esos usuarios cierren el S10 y luego elija el botón **continuar** para que se realice el proceso de actualización de base de datos."
+    fuente: [web-https-documentacion-s10peru-com-actualiz-s002]
+    pagina: null
+    fotos:
+      - id: "822d1421f032"
+        ruta_o_url: "imagenes/actualizacion-s10-instalacion-revisiones/0e36a13a06b2.png"
+        pagina: null
+        caption: "Unos de los mensajes que puede aparecer antes de que actualice la BD es el siguiente, al ver el mensaje la ventana brinda opciones para visualizar, si se elige la opción SI se mostrara una segunda ventana con la lista para identificar que usuario está conectado, para continuar debe coordinar que cierren el S10 y luego elegir el botón continuar para que se realice el proceso de actualización de base de datos."
+        ocr: "eh\n\nLista de todas las conexiones activas a la base de datos\n\n[Equipo Japlicacién [Dominio [Usuario de Red [Usuario de SQL\n\nSOPORTE (RIRATEREES sa sleeping\nContinuar Cerrar"
+verificacion: []
+errores_frecuentes:
+  - sintoma: "Fue el primer usuario en conectarse y no se mostró la ventana de actualización de base de datos."
+    solucion: "Es posible que algún otro usuario se conectara a la base de datos desde otro equipo. Podrían presentarse errores en el uso si la actualización no se ejecutó correctamente; de tener problemas, consulte con SoporteS10."
+    fuente: [web-https-documentacion-s10peru-com-actualiz-s002]
+relacionados: [instalacion.actualizar-s10-con-revisiones, instalacion.sacar-copia-de-seguridad-de-la-base-de-datos]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-actualiz-s002, manual: "Actualización de S10 (Instalación de revisiones)", seccion: "Actualización de Base de Datos", pagina: null}
+revision: {generado: "2026-10-07", por: "claude", revisado_por_humano: false}
