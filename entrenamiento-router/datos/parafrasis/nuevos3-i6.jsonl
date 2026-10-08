@@ -1,0 +1,396 @@
+{"texto": "Cómo exporto las actividades del Cronograma por Periodos al MS Project para programar las barras", "procedimiento": "gerencia-proyectos.planificar-con-ms-project", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como mando el cronograma del s10 a project pa vincular las barras", "procedimiento": "gerencia-proyectos.planificar-con-ms-project", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "tengo el cronograma por periodos listo y quiero armar el gantt en project, cual es el procedimiento", "procedimiento": "gerencia-proyectos.planificar-con-ms-project", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Después de vincular las barras en Project, cómo regreso la información al S10", "procedimiento": "gerencia-proyectos.planificar-con-ms-project", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como jalo los datos del project al s10 ya q termine de vincular", "procedimiento": "gerencia-proyectos.planificar-con-ms-project", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "exportar a project", "procedimiento": "gerencia-proyectos.planificar-con-ms-project", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como espotar el cronogrma a microsof project", "procedimiento": "gerencia-proyectos.planificar-con-ms-project", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "Cómo obtengo la duración en días de cada actividad antes de pasarla al MS Project", "procedimiento": "gerencia-proyectos.planificar-con-ms-project", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "donde pongo las cuadrillas pa q me salga la duracion de las partidas antes de exportar", "procedimiento": "gerencia-proyectos.planificar-con-ms-project", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el residente me pidio la programacion grafica de la obra con barras, como la hago desde el s10", "procedimiento": "gerencia-proyectos.planificar-con-ms-project", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Qué debo hacer en el S10 después de grabar el archivo en el MS Project", "procedimiento": "gerencia-proyectos.planificar-con-ms-project", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "xq tengo q exportar con clic derecho en una actividad y q opcion elijo pa project", "procedimiento": "gerencia-proyectos.planificar-con-ms-project", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "actualizar desde project", "procedimiento": "gerencia-proyectos.planificar-con-ms-project", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "se tienen que exportar los recursos del s10 al project o solo las actividades", "procedimiento": "gerencia-proyectos.planificar-con-ms-project", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Cómo hago la planificación gráfica con Microsoft Project en Gerencia de Proyectos", "procedimiento": "gerencia-proyectos.planificar-con-ms-project", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como vinculo las barras en el project ps y despues q hago en el s10", "procedimiento": "gerencia-proyectos.planificar-con-ms-project", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "En qué pantalla se elige Exportar a Microsoft Project", "procedimiento": "gerencia-proyectos.planificar-con-ms-project", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde sale la opcion de exportar a project, en el cronograma?", "procedimiento": "gerencia-proyectos.planificar-con-ms-project", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "transferir desde microsoft project donde", "procedimiento": "gerencia-proyectos.planificar-con-ms-project", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "no encuentro la ventana transferir desde microsoft project", "procedimiento": "gerencia-proyectos.planificar-con-ms-project", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "Dónde aparece la opción Actualizar desde Microsoft Project", "procedimiento": "gerencia-proyectos.planificar-con-ms-project", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "estoy en el cronograma por periodos y no veo como pasar al project, donde se hace clic", "procedimiento": "gerencia-proyectos.planificar-con-ms-project", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "donde veo los campos cuadrilla y duracion dias del cronograma", "procedimiento": "gerencia-proyectos.planificar-con-ms-project", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "Dónde se configura que el S10 use MS Project 2007 o superior en lugar del 2003", "procedimiento": "gerencia-proyectos.planificar-con-ms-project", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "el s10 me abre project 2003, donde cambio pa que use el 2016", "procedimiento": "gerencia-proyectos.planificar-con-ms-project", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "con q usuario puedo cambiar la version de ms proyect en la configuracion", "procedimiento": "gerencia-proyectos.planificar-con-ms-project", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "Qué campos debo hacer visibles en la grilla para calcular la duración de las actividades", "procedimiento": "gerencia-proyectos.planificar-con-ms-project", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "a los gastos generales tambien les asigno cuadrilla antes de exportar?", "procedimiento": "gerencia-proyectos.planificar-con-ms-project", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "Qué escala de periodo debo elegir antes de exportar al MS Project", "procedimiento": "gerencia-proyectos.planificar-con-ms-project", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "El S10 no toma los datos del MS Project después de actualizar", "procedimiento": "gerencia-proyectos.planificar-con-ms-project", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "hice cambios en project y el s10 no los jala, q pasa", "procedimiento": "gerencia-proyectos.planificar-con-ms-project", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "guarde el project con guardar como y el s10 no lee nada", "procedimiento": "gerencia-proyectos.planificar-con-ms-project", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "Puedo insertar o eliminar tareas directamente en MS Project antes de actualizar el S10", "procedimiento": "gerencia-proyectos.planificar-con-ms-project", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "mi obra es en soles y dolares y el project me da problemas al exportar, es normal", "procedimiento": "gerencia-proyectos.planificar-con-ms-project", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "s10 no toma project", "procedimiento": "gerencia-proyectos.planificar-con-ms-project", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "inserte tareas nuevas en el project y se desordeno todo al volver al s10, que hago", "procedimiento": "gerencia-proyectos.planificar-con-ms-project", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "Cómo reprogramo el proyecto cuando hay atraso en la obra", "procedimiento": "gerencia-proyectos.reprogramar-el-proyecto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "la obra se atraso y quiero mover las barras del gantt, como reprogramo en el s10", "procedimiento": "gerencia-proyectos.reprogramar-el-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "llevamos un retraso de mas del 10% y el gerente pide reprogramar, que pasos sigo", "procedimiento": "gerencia-proyectos.reprogramar-el-proyecto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Cómo actualizo la grilla del Cronograma por Periodos después de cambiar el Gantt", "procedimiento": "gerencia-proyectos.reprogramar-el-proyecto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como reprogamar el proyeto con el project", "procedimiento": "gerencia-proyectos.reprogramar-el-proyecto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "reprogramar obra", "procedimiento": "gerencia-proyectos.reprogramar-el-proyecto", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "ya reprograme en project y ahora q hago en el s10", "procedimiento": "gerencia-proyectos.reprogramar-el-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Cómo cambio el tamaño de las barras del Gantt y reflejarlo en el modo programado", "procedimiento": "gerencia-proyectos.reprogramar-el-proyecto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "komo muebo las barras del gantt pa q cambie lo programado", "procedimiento": "gerencia-proyectos.reprogramar-el-proyecto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "cambiaron las fechas de la partida de encofrado por lluvias, como reflejo eso en el cronograma programado", "procedimiento": "gerencia-proyectos.reprogramar-el-proyecto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Qué se hace después de grabar y cerrar el archivo de MS Project al reprogramar", "procedimiento": "gerencia-proyectos.reprogramar-el-proyecto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como veo el programado nuevo en resultados operativos despues de reprogramar", "procedimiento": "gerencia-proyectos.reprogramar-el-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "mover barras gantt", "procedimiento": "gerencia-proyectos.reprogramar-el-proyecto", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "Cómo reubico en el tiempo las actividades de un proyecto ya planificado gráficamente", "procedimiento": "gerencia-proyectos.reprogramar-el-proyecto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "nesesito reprogramar xq el avance va por debajo de lo planificado", "procedimiento": "gerencia-proyectos.reprogramar-el-proyecto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "terminamos el vaciado antes de lo previsto y quiero correr las demas barras, como lo hago", "procedimiento": "gerencia-proyectos.reprogramar-el-proyecto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "En qué escenario se reprograma el proyecto en modo programado", "procedimiento": "gerencia-proyectos.reprogramar-el-proyecto", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde entro pa reprogramar el proyecto", "procedimiento": "gerencia-proyectos.reprogramar-el-proyecto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "Dónde veo la información del programado ya reprogramado", "procedimiento": "gerencia-proyectos.reprogramar-el-proyecto", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde reprogramo", "procedimiento": "gerencia-proyectos.reprogramar-el-proyecto", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "en q parte se abre el archivo de project pa reprogramar", "procedimiento": "gerencia-proyectos.reprogramar-el-proyecto", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "ya moví el gantt y quiero ver como quedó el programado, en que pantalla lo reviso", "procedimiento": "gerencia-proyectos.reprogramar-el-proyecto", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "que escenario abro pa comprobar el programado despues de reprogramar", "procedimiento": "gerencia-proyectos.reprogramar-el-proyecto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "Cada cuánto tiempo conviene reprogramar el proyecto", "procedimiento": "gerencia-proyectos.reprogramar-el-proyecto", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "cada cuanto reprogramo, todas las semanas?", "procedimiento": "gerencia-proyectos.reprogramar-el-proyecto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "Qué porcentaje de atraso es el parámetro para reprogramar", "procedimiento": "gerencia-proyectos.reprogramar-el-proyecto", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "cual es el parametro de atrazo pa reprogramar", "procedimiento": "gerencia-proyectos.reprogramar-el-proyecto", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "En qué modo debe estar el Cronograma por Periodos para reprogramar", "procedimiento": "gerencia-proyectos.reprogramar-el-proyecto", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "Qué requisito previo debe cumplir la planificación para poder reprogramar con MS Project", "procedimiento": "gerencia-proyectos.reprogramar-el-proyecto", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "Reprogramé en MS Project pero la grilla del cronograma no cambia", "procedimiento": "gerencia-proyectos.reprogramar-el-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "movi las barras en project y el programado sigue igual en el s10", "procedimiento": "gerencia-proyectos.reprogramar-el-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "reprograme y el s10 no actualiso la grilla", "procedimiento": "gerencia-proyectos.reprogramar-el-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "cerre el project sin grabar y ahora el programado no se movio, que hago", "procedimiento": "gerencia-proyectos.reprogramar-el-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no se actualiza programado", "procedimiento": "gerencia-proyectos.reprogramar-el-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "Por qué no aparece la reprogramación en resultados operativos", "procedimiento": "gerencia-proyectos.reprogramar-el-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "reprogramo todas las semanas y el cronograma queda inestable, es correcto asi", "procedimiento": "gerencia-proyectos.reprogramar-el-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "Cómo registro los metrados realmente ejecutados en obra durante la semana en la rama meta", "procedimiento": "gerencia-proyectos.registrar-avances-en-la-rama-meta", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como cargo el avance semanal de la obra en el cronograma", "procedimiento": "gerencia-proyectos.registrar-avances-en-la-rama-meta", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el ingeniero me paso los metrados que se hicieron esta semana en campo, donde los ingreso", "procedimiento": "gerencia-proyectos.registrar-avances-en-la-rama-meta", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Cómo registro el porcentaje del plan completado en el periodo", "procedimiento": "gerencia-proyectos.registrar-avances-en-la-rama-meta", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como ingreso los avanses de la semana en meta", "procedimiento": "gerencia-proyectos.registrar-avances-en-la-rama-meta", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "avance semanal", "procedimiento": "gerencia-proyectos.registrar-avances-en-la-rama-meta", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como pongo lo ejecutado de cada partida por semana", "procedimiento": "gerencia-proyectos.registrar-avances-en-la-rama-meta", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Cómo recalculo por escala después de ingresar los avances", "procedimiento": "gerencia-proyectos.registrar-avances-en-la-rama-meta", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "ya puse los metrados logrados, q boton uso pa recalcular", "procedimiento": "gerencia-proyectos.registrar-avances-en-la-rama-meta", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "terminó la semana 12 y hay que cargar lo logrado por partida, cual es el paso a paso", "procedimiento": "gerencia-proyectos.registrar-avances-en-la-rama-meta", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Cómo ingreso los avances en modo valorización en metrado en la rama meta", "procedimiento": "gerencia-proyectos.registrar-avances-en-la-rama-meta", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "komo registro lo q se avanzo realmente en la semana", "procedimiento": "gerencia-proyectos.registrar-avances-en-la-rama-meta", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "registrar avances meta", "procedimiento": "gerencia-proyectos.registrar-avances-en-la-rama-meta", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "despues de poner los avances como lo veo en costo", "procedimiento": "gerencia-proyectos.registrar-avances-en-la-rama-meta", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Cómo registro lo logrado en un periodo para evaluar los resultados operativos", "procedimiento": "gerencia-proyectos.registrar-avances-en-la-rama-meta", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "tengo el parte de campo de la semana con metros cubicos vaciados, como lo registro en el sistema", "procedimiento": "gerencia-proyectos.registrar-avances-en-la-rama-meta", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Dónde se registran los avances de la rama meta", "procedimiento": "gerencia-proyectos.registrar-avances-en-la-rama-meta", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en que pantalla ingreso los avances reales de la obra", "procedimiento": "gerencia-proyectos.registrar-avances-en-la-rama-meta", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "Qué botón cambia el modo de visualización para registrar metrado o porcentaje de avance", "procedimiento": "gerencia-proyectos.registrar-avances-en-la-rama-meta", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde van los avances", "procedimiento": "gerencia-proyectos.registrar-avances-en-la-rama-meta", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "donde esta la opsion de recalcular por escala", "procedimiento": "gerencia-proyectos.registrar-avances-en-la-rama-meta", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "tengo que cargar lo ejecutado de la semana y no sé a qué escenario entrar", "procedimiento": "gerencia-proyectos.registrar-avances-en-la-rama-meta", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "como llego a la rama meta del cronograma", "procedimiento": "gerencia-proyectos.registrar-avances-en-la-rama-meta", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "Qué escala de período debo elegir para registrar avances semanales", "procedimiento": "gerencia-proyectos.registrar-avances-en-la-rama-meta", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "hago visibles las semanas pa meter los avances? donde", "procedimiento": "gerencia-proyectos.registrar-avances-en-la-rama-meta", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "Qué modo de visualización debo activar para registrar avances en metrado o porcentaje", "procedimiento": "gerencia-proyectos.registrar-avances-en-la-rama-meta", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "en q modo se ingresa el avanze, metrado o costo", "procedimiento": "gerencia-proyectos.registrar-avances-en-la-rama-meta", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "no me salen las semanas pa poner el avance, q configuro", "procedimiento": "gerencia-proyectos.registrar-avances-en-la-rama-meta", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "Qué periodos semanales debo hacer visibles antes de registrar la información", "procedimiento": "gerencia-proyectos.registrar-avances-en-la-rama-meta", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "No me deja ingresar avances en modo costo", "procedimiento": "gerencia-proyectos.registrar-avances-en-la-rama-meta", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "no puedo escribir en las celdas cuando esta en costo, por q", "procedimiento": "gerencia-proyectos.registrar-avances-en-la-rama-meta", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me deja ingresar los abances en la celda", "procedimiento": "gerencia-proyectos.registrar-avances-en-la-rama-meta", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "puse los avances en metrado pero al ver en soles no cuadra, creo que falta recalcular", "procedimiento": "gerencia-proyectos.registrar-avances-en-la-rama-meta", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "avance no graba", "procedimiento": "gerencia-proyectos.registrar-avances-en-la-rama-meta", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "Los avances que ingresé no se reflejan en los resultados operativos", "procedimiento": "gerencia-proyectos.registrar-avances-en-la-rama-meta", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "meti los metrados de la semana y no veo nada en resultados operativos", "procedimiento": "gerencia-proyectos.registrar-avances-en-la-rama-meta", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "Cómo registro la valorización mensual en el Cronograma por Periodos", "procedimiento": "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como valorizo el mes en la rama venta del cronograma", "procedimiento": "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cierre de mes y toca valorizar al cliente, como cargo los avances del mes", "procedimiento": "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "De qué manera emito la planilla de valorización del mes desde el cronograma", "procedimiento": "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como saco la planilla de valorizacion para el cliente", "procedimiento": "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como inprimir la planila de valorisacion", "procedimiento": "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "imprimir planilla valorizacion mes", "procedimiento": "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "Cómo veo la valorización en montos después de ingresar los metrados", "procedimiento": "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "puse los metrados del mes y quiero ver cuanto es en soles", "procedimiento": "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el propietario pide la planilla del mes solo con las partidas que tuvieron avance, como la imprimo", "procedimiento": "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Cómo elijo el periodo de valorización que voy a imprimir", "procedimiento": "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como ago la valorizacion mensual en el cronograma", "procedimiento": "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como recalculo por escala despues de meter los avances del mes", "procedimiento": "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Cómo registro los avances logrados en el mes para tomar el monto de la valorización", "procedimiento": "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "valorizar mes cronograma", "procedimiento": "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "voy a imprimir la valorizacion y me pregunta si todas las actividades o solo con movimiento, cual elijo", "procedimiento": "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Dónde se imprime la planilla de valorización del mes", "procedimiento": "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde esta la vista preliminar de la planilla de valorizacion", "procedimiento": "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "En qué rama del Cronograma por Periodos se registra la valorización mensual", "procedimiento": "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "valorizacion mensual donde", "procedimiento": "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "donde sale la ventana periodos visibles", "procedimiento": "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "ando en el cronograma y no ubico donde marcar valorizacion, en qué botón es", "procedimiento": "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "que pantalla uso pa valorizar mensual", "procedimiento": "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "Qué escala de período se usa para la valorización mensual", "procedimiento": "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "pa valorizar tengo q poner periodo mensual no?", "procedimiento": "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "Qué modo debo marcar para valorizar: metrado, porcentaje o costo", "procedimiento": "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "la valorisacion se ingresa en costo o en metrado", "procedimiento": "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "Cuántas valorizaciones se permiten por periodo", "procedimiento": "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "en que modo de visualizacion se marca valorizacion", "procedimiento": "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "No puedo ingresar la valorización en modo costo", "procedimiento": "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "no me deja escribir en las celdas de valorizacion del mes", "procedimiento": "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no puedo valorisar dos veces en el mismo mes, q hago", "procedimiento": "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "la planilla sale con todas las actividades y el cliente solo quiere las del mes, como corrijo", "procedimiento": "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no deja valorizar", "procedimiento": "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "Los montos de valorización no aparecen después de ingresar los metrados", "procedimiento": "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "meti los avances del mes y el monto de la valorizacion sale en cero", "procedimiento": "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "Cómo registro una vista del proyecto", "procedimiento": "gerencia-proyectos.registrar-vistas", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como armo una vista pa ver solo una parte de la obra en el cronograma", "procedimiento": "gerencia-proyectos.registrar-vistas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "quiero ver solo el bloque de cimentaciones en el cronograma, como agrupo esas partidas", "procedimiento": "gerencia-proyectos.registrar-vistas", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "De qué forma agrupo varias vistas dentro de un grupo de vistas", "procedimiento": "gerencia-proyectos.registrar-vistas", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como creo un grupo de vistas y meto varias vistas dentro", "procedimiento": "gerencia-proyectos.registrar-vistas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como crear bistas en el proyecto", "procedimiento": "gerencia-proyectos.registrar-vistas", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "crear vista", "procedimiento": "gerencia-proyectos.registrar-vistas", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "Cómo asigno títulos y actividades a una vista", "procedimiento": "gerencia-proyectos.registrar-vistas", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como arrastro los titulos a la vista", "procedimiento": "gerencia-proyectos.registrar-vistas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el jefe de obra pide un cronograma solo de estructuras, como lo armo con vistas", "procedimiento": "gerencia-proyectos.registrar-vistas", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Cómo visualizo una vista en el Cronograma por periodos", "procedimiento": "gerencia-proyectos.registrar-vistas", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como vizualizo la vista en el cronograma", "procedimiento": "gerencia-proyectos.registrar-vistas", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "vistas s10", "procedimiento": "gerencia-proyectos.registrar-vistas", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como marco un bloque de actividades y lo paso a la vista", "procedimiento": "gerencia-proyectos.registrar-vistas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Cómo asigno un grupo de títulos y actividades a la vista con doble clic", "procedimiento": "gerencia-proyectos.registrar-vistas", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "tengo que reportar el avance solo del sector norte, como separo esa parte", "procedimiento": "gerencia-proyectos.registrar-vistas", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Dónde se encuentra el escenario de Vistas", "procedimiento": "gerencia-proyectos.registrar-vistas", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde esta la pantalla de vistas", "procedimiento": "gerencia-proyectos.registrar-vistas", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde vistas", "procedimiento": "gerencia-proyectos.registrar-vistas", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "no allo el boton de vistas en el cronograma", "procedimiento": "gerencia-proyectos.registrar-vistas", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "Cómo llego a ver una vista dentro del Cronograma por periodos", "procedimiento": "gerencia-proyectos.registrar-vistas", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "ya cree mis vistas pero no sé dónde las abro para ver lo programado", "procedimiento": "gerencia-proyectos.registrar-vistas", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "por donde se crea un nuevo grupo de vistas, clic derecho?", "procedimiento": "gerencia-proyectos.registrar-vistas", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "Cómo defino la estructura de las vistas antes de registrarlas", "procedimiento": "gerencia-proyectos.registrar-vistas", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "como organizo mis vistas antes de crearlas", "procedimiento": "gerencia-proyectos.registrar-vistas", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "Qué diferencia hay entre Nuevo: Grupo de vistas y Nuevo: Vista", "procedimiento": "gerencia-proyectos.registrar-vistas", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "cual es la diferencia entre grupo de bistas y vista", "procedimiento": "gerencia-proyectos.registrar-vistas", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "quiero que una vista tenga varios grupos de partidas, como lo estructuro", "procedimiento": "gerencia-proyectos.registrar-vistas", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "Cómo asigno el título general a una vista", "procedimiento": "gerencia-proyectos.registrar-vistas", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "No me aparece la vista que creé en el Cronograma por periodos", "procedimiento": "gerencia-proyectos.registrar-vistas", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "cree la vista pero en el cronograma no sale nada", "procedimiento": "gerencia-proyectos.registrar-vistas", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "la vista sale bacia en el cronograma", "procedimiento": "gerencia-proyectos.registrar-vistas", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "arrastre los titulos a la vista y no quedaron las actividades, que paso", "procedimiento": "gerencia-proyectos.registrar-vistas", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "vista vacia", "procedimiento": "gerencia-proyectos.registrar-vistas", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "No puedo asignar actividades a la vista", "procedimiento": "gerencia-proyectos.registrar-vistas", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "no me deja arrastrar las partidas a la vista", "procedimiento": "gerencia-proyectos.registrar-vistas", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "Cuál es el procedimiento para registrar un incremento de obra en el proyecto", "procedimiento": "gerencia-proyectos.registrar-incremento-de-obra", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como meto un adicional de obra en el proyecto", "procedimiento": "gerencia-proyectos.registrar-incremento-de-obra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el propietario ordeno partidas adicionales, como las incorporo al proyecto", "procedimiento": "gerencia-proyectos.registrar-incremento-de-obra", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Cómo agrego nuevas partidas y recursos al presupuesto meta", "procedimiento": "gerencia-proyectos.registrar-incremento-de-obra", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como registrar un incremento de obra por error en los metrados", "procedimiento": "gerencia-proyectos.registrar-incremento-de-obra", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "adicionales de obra s10", "procedimiento": "gerencia-proyectos.registrar-incremento-de-obra", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como cargo un presupuesto adicional a la rama venta pa cobrarle al cliente", "procedimiento": "gerencia-proyectos.registrar-incremento-de-obra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Cómo registro un adicional ordenado por el propietario para valorizarlo", "procedimiento": "gerencia-proyectos.registrar-incremento-de-obra", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "nos falto metrado en un muro y el ejecutor tiene que cubrirlo, como lo registro", "procedimiento": "gerencia-proyectos.registrar-incremento-de-obra", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "ay partidas nuevas q no etaban en el presupuesto, como las pongo", "procedimiento": "gerencia-proyectos.registrar-incremento-de-obra", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como agrego recursos no presupuestados al proyecto", "procedimiento": "gerencia-proyectos.registrar-incremento-de-obra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Cómo modifico el alcance del proyecto con nuevas partidas", "procedimiento": "gerencia-proyectos.registrar-incremento-de-obra", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "incremento presupuesto meta", "procedimiento": "gerencia-proyectos.registrar-incremento-de-obra", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "el cliente pidio un trabajo extra, donde y como lo agrego", "procedimiento": "gerencia-proyectos.registrar-incremento-de-obra", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "se detecto un error en el analisis de precios de una partida y hay que incrementar, que hago", "procedimiento": "gerencia-proyectos.registrar-incremento-de-obra", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Cómo adiciono un presupuesto a la rama venta para un adicional", "procedimiento": "gerencia-proyectos.registrar-incremento-de-obra", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "Dónde se elabora el presupuesto del incremento de obra", "procedimiento": "gerencia-proyectos.registrar-incremento-de-obra", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en que modulo hago el incremento de obra", "procedimiento": "gerencia-proyectos.registrar-incremento-de-obra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde pongo adicionales", "procedimiento": "gerencia-proyectos.registrar-incremento-de-obra", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "en q hoja se arma el incremento", "procedimiento": "gerencia-proyectos.registrar-incremento-de-obra", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "Dónde se ve en el proyecto el cambio hecho al presupuesto", "procedimiento": "gerencia-proyectos.registrar-incremento-de-obra", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "estoy en gerencia de proyectos y quiero agregar partidas nuevas pero aqui no me deja, a que modulo voy", "procedimiento": "gerencia-proyectos.registrar-incremento-de-obra", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "donde esta la hoja del presupuesto para el incremento", "procedimiento": "gerencia-proyectos.registrar-incremento-de-obra", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "Cuándo el incremento va a la rama venta y cuándo a la meta", "procedimiento": "gerencia-proyectos.registrar-incremento-de-obra", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "el incremento por error del ejecutor va a que presupuesto", "procedimiento": "gerencia-proyectos.registrar-incremento-de-obra", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "Qué diferencia hay entre un incremento por error del ejecutor y uno por orden del propietario", "procedimiento": "gerencia-proyectos.registrar-incremento-de-obra", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "se paga distinto el adicional del propietario q el error del ejecutor?", "procedimiento": "gerencia-proyectos.registrar-incremento-de-obra", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "para un adicional que paga el propietario, en qué rama debo elaborar el presupuesto", "procedimiento": "gerencia-proyectos.registrar-incremento-de-obra", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "Qué debo definir antes de elaborar el presupuesto del incremento según su causa", "procedimiento": "gerencia-proyectos.registrar-incremento-de-obra", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "Hice cambios en el presupuesto y no se reflejan en el proyecto", "procedimiento": "gerencia-proyectos.registrar-incremento-de-obra", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "agregue partidas en presupuestos y en gerencia de proyectos no salen", "procedimiento": "gerencia-proyectos.registrar-incremento-de-obra", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el adicional no me sale en el proyecto", "procedimiento": "gerencia-proyectos.registrar-incremento-de-obra", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "el propietario aprobo un adicional pero en el sistema no lo puedo valorizar ni cobrar, que falta", "procedimiento": "gerencia-proyectos.registrar-incremento-de-obra", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "incremento no aparece", "procedimiento": "gerencia-proyectos.registrar-incremento-de-obra", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "No puedo agregar partidas nuevas desde Gerencia de Proyectos", "procedimiento": "gerencia-proyectos.registrar-incremento-de-obra", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "no puedo adicionar partidas desde el cronograma, como hago el incremento", "procedimiento": "gerencia-proyectos.registrar-incremento-de-obra", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "Cómo registro un cambio en el análisis de precios unitarios de una partida", "procedimiento": "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como cambio el rendimiento de una partida en la rama meta", "procedimiento": "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el maestro dice que el rendimiento real es menor, como modifico el apu con control de cambios", "procedimiento": "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Cómo congelo el análisis de precios unitarios antes de modificarlo", "procedimiento": "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como congelar el apu de una partida", "procedimiento": "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "cambiar apu", "procedimiento": "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como cambio la cantidad de personas de una partida y que quede registrado", "procedimiento": "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Cómo ingreso el motivo del cambio de un análisis de precios unitarios", "procedimiento": "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "tengo que justificar por qué cambié el aporte de la cuadrilla, donde pongo el motivo", "procedimiento": "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "despues de modificar el apu como proceso el presupuesto pa que tome el cambio", "procedimiento": "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como cambiar el rendimiento de una partida con autorisacion de cambio", "procedimiento": "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "Cómo modifico los aportes de los recursos de una partida de la rama meta", "procedimiento": "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "modificar rendimiento partida", "procedimiento": "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "hay q sacar una copia del apu antes de cambiar? como se hace", "procedimiento": "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "auditoria pide saber que APU modificamos y por que, como dejo el cambio registrado", "procedimiento": "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Cómo proceso el presupuesto para tomar el cambio realizado", "procedimiento": "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "Dónde se visualizan los análisis de precios unitarios que fueron modificados", "procedimiento": "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde veo los apu que se cambiaron", "procedimiento": "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "Dónde se abre la ventana Autorización de cambio", "procedimiento": "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "control de cambios actividades", "procedimiento": "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "donde esta control de cambios de actividades", "procedimiento": "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "cambie varios APU y quiero ver la lista de los modificados, en que parte esta", "procedimiento": "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "en que escenario se modifica el apu de la rama meta", "procedimiento": "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "Qué se recomienda cambiar en un análisis de precios unitarios", "procedimiento": "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "se puede cambiar cualquier cosa del apu o solo rendimiento y aportes?", "procedimiento": "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "cuales campos del apu puedo cambiar", "procedimiento": "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "Qué debo hacer antes de modificar el análisis de precios unitarios en la rama meta", "procedimiento": "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "tengo q registrar el motivo siempre antes de cambiar el apu? como se configura", "procedimiento": "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "que significa congelar el apu y para que sirve", "procedimiento": "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "No puedo usar el control de cambios en una subpartida", "procedimiento": "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "en la subpartida no me deja congelar el apu", "procedimiento": "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no puedo cambiar el apu de una subpartida", "procedimiento": "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "apu no cambia", "procedimiento": "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "El cambio que hice al análisis no aparece en Control de Cambios Actividades", "procedimiento": "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "cambie el apu y no sale en la lista de cambios", "procedimiento": "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "Modifiqué el APU y el presupuesto no tomó el cambio", "procedimiento": "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "Cómo registro un equipo tipo activo en el catálogo de recursos", "procedimiento": "gerencia-proyectos.registrar-equipo-como-activo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como doy de alta un volquete en el catalogo de recursos", "procedimiento": "gerencia-proyectos.registrar-equipo-como-activo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "llego una excavadora alquilada al proyecto, como la registro para poder usarla", "procedimiento": "gerencia-proyectos.registrar-equipo-como-activo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Cómo registro el recurso genérico y el recurso específico de un equipo", "procedimiento": "gerencia-proyectos.registrar-equipo-como-activo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como registrar un camion volquete con su placa", "procedimiento": "gerencia-proyectos.registrar-equipo-como-activo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "alta de equipo", "procedimiento": "gerencia-proyectos.registrar-equipo-como-activo", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como pongo marca placa y color de la maquina", "procedimiento": "gerencia-proyectos.registrar-equipo-como-activo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Cómo ingreso las especificaciones del equipo", "procedimiento": "gerencia-proyectos.registrar-equipo-como-activo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el proveedor me presta 3 volquetes, como los registro uno por uno", "procedimiento": "gerencia-proyectos.registrar-equipo-como-activo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como regitrar maquinaria pesada como activo", "procedimiento": "gerencia-proyectos.registrar-equipo-como-activo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "despues de crear el recurso generico como agrego el especifico", "procedimiento": "gerencia-proyectos.registrar-equipo-como-activo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Cómo adiciono un recurso específico a un recurso genérico de tipo activo", "procedimiento": "gerencia-proyectos.registrar-equipo-como-activo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "registrar equipo propio", "procedimiento": "gerencia-proyectos.registrar-equipo-como-activo", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como se registra un equipo de terceros", "procedimiento": "gerencia-proyectos.registrar-equipo-como-activo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Cómo registro los activos de un proveedor en el catálogo", "procedimiento": "gerencia-proyectos.registrar-equipo-como-activo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "tengo que meter la retroexcavadora con su placa antes de usarla en el proyecto, como la creo", "procedimiento": "gerencia-proyectos.registrar-equipo-como-activo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Dónde se registran los equipos tipo activo", "procedimiento": "gerencia-proyectos.registrar-equipo-como-activo", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en que catalogo van las maquinas", "procedimiento": "gerencia-proyectos.registrar-equipo-como-activo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde esta especificaciones del equipo", "procedimiento": "gerencia-proyectos.registrar-equipo-como-activo", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "donde meto las especificasiones del equipo", "procedimiento": "gerencia-proyectos.registrar-equipo-como-activo", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "Cómo accedo a ESPECIFICACIONES DEL EQUIPO desde el catálogo de recursos", "procedimiento": "gerencia-proyectos.registrar-equipo-como-activo", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "estoy en el catalogo de recursos y no sé en qué rama van los equipos", "procedimiento": "gerencia-proyectos.registrar-equipo-como-activo", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "como llego al recurso especifico pa modificarlo", "procedimiento": "gerencia-proyectos.registrar-equipo-como-activo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "Cuántos dígitos tiene el código de un recurso genérico de equipo", "procedimiento": "gerencia-proyectos.registrar-equipo-como-activo", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "el recurso generico de 10 digitos como se arma", "procedimiento": "gerencia-proyectos.registrar-equipo-como-activo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "Qué datos debo registrar en el nombre del recurso específico de un equipo", "procedimiento": "gerencia-proyectos.registrar-equipo-como-activo", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "q nombre le pongo al recurso especifico del equipo", "procedimiento": "gerencia-proyectos.registrar-equipo-como-activo", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "no sé cómo nombrar los volquetes para distinguirlos, que dato pongo en el nombre", "procedimiento": "gerencia-proyectos.registrar-equipo-como-activo", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "con q tecla modifico el recurso especifico pa abrir las especificaciones", "procedimiento": "gerencia-proyectos.registrar-equipo-como-activo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "El sistema me pregunta si deseo continuar adicionando recursos específicos, qué respondo", "procedimiento": "gerencia-proyectos.registrar-equipo-como-activo", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "me sale un mensaje de adicionar recursos especificos y no se q poner", "procedimiento": "gerencia-proyectos.registrar-equipo-como-activo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me sale la ventana de especificaciones del equipo", "procedimiento": "gerencia-proyectos.registrar-equipo-como-activo", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "cree el recurso generico del camion pero no me deja ponerle placa ni marca", "procedimiento": "gerencia-proyectos.registrar-equipo-como-activo", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no sale mi equipo", "procedimiento": "gerencia-proyectos.registrar-equipo-como-activo", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "No encuentro el recurso específico que registré para el equipo", "procedimiento": "gerencia-proyectos.registrar-equipo-como-activo", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "no puedo adicionar el recurso especifico, la opcion no sale", "procedimiento": "gerencia-proyectos.registrar-equipo-como-activo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "Cómo registro los partes diarios de equipo con Excel", "procedimiento": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como paso los partes de las maquinas a excel y despues al s10", "procedimiento": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "tengo las horas de trabajo de la excavadora de toda la semana, como las cargo", "procedimiento": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Cómo exporto los partes de equipo a Excel", "procedimiento": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como exportar los partes de equipo a ecxel", "procedimiento": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "partes de equipo excel", "procedimiento": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como importo el excel de partes de equipo", "procedimiento": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Qué hago para que el resumen semanal de los partes de equipo quede calculado", "procedimiento": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "una maquina trabajo en dos partidas el mismo dia, como lo registro", "procedimiento": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como registro mas de 5 rotaciones de un equipo", "procedimiento": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Cómo cargo el costo del equipo a los resultados operativos", "procedimiento": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como registro las orras de las maquinas por partida de control", "procedimiento": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "resumen periodo equipos", "procedimiento": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "despues de importar el excel que hay q hacer pa que pase a resultados operativos", "procedimiento": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Cómo registro las horas trabajadas de un equipo por partida de control", "procedimiento": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el volquete trabajo en 7 partidas distintas el lunes, no me alcanzan las rotaciones", "procedimiento": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Dónde está el escenario de Partes de Equipo", "procedimiento": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en que pantalla se bajan los partes de equipo a excel", "procedimiento": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "partes de equipo donde", "procedimiento": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "donde sale importar desde microsoft excel en partes de equipo", "procedimiento": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "Dónde veo el Resumen por Partida de Control del equipo", "procedimiento": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "ya importe los partes y quiero ver cuanto se gasto por semana en la maquina, en que pantalla", "procedimiento": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "por donde se registran las interferencias de los equipos", "procedimiento": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "Qué carpeta debo crear antes de exportar los partes diarios a Excel", "procedimiento": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "tengo q crear una carpeta antes de exportar a excel? cual", "procedimiento": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "Cuántas rotaciones tiene disponibles cada equipo por día", "procedimiento": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "cuantas rotasiones se pueden usar x equipo", "procedimiento": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "tengo que registrar interferencias en el parte, qué debo tener registrado antes", "procedimiento": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "Qué se necesita en la ficha del equipo para registrar horas Stand By", "procedimiento": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "No puedo registrar horas Stand By de un equipo parado", "procedimiento": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "la celda de stand by no me deja poner horas", "procedimiento": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el stan by no me deja escribir en el parte", "procedimiento": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "registre interferencias del equipo pero no salen en resultados operativos, es error?", "procedimiento": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "interferencia no pasa", "procedimiento": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "Los partes de equipo no pasan a resultados operativos", "procedimiento": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "importe los partes del excel y no se ve el costo del equipo en resultados operativos", "procedimiento": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "Cuál es el procedimiento para registrar el subcontrato de un equipo alquilado", "procedimiento": "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como creo el subcontrato de una maquina alquilada", "procedimiento": "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "aprobaron la orden de servicio del alquiler de la retroexcavadora, como armo el subcontrato", "procedimiento": "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Cómo elijo la orden de servicio aprobada al registrar el subcontrato de equipo", "procedimiento": "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como ase el subcontrato de alquiler de maquinaria", "procedimiento": "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "subcontrato alquiler equipo", "procedimiento": "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como asigno el impuesto de valorizacion al subcontrato de alquiler", "procedimiento": "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Cómo agrego el impuesto en la pestaña Impuesto Valorización", "procedimiento": "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el proveedor del volquete ya tiene su orden de servicio, que sigue para que quede como subcontrato", "procedimiento": "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como jalo la orden de servicio al subcontrato de equipo", "procedimiento": "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como adicionar un subcontrato de maquinaria desde una orden de servisio aprobada", "procedimiento": "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "Cómo completo los datos de un subcontrato de alquiler tras elegir la orden de servicio", "procedimiento": "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "sc alquiler maquinaria", "procedimiento": "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "que reviso despues de elegir la OS en el subcontrato de alquiler", "procedimiento": "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "vamos a alquilar una grua por meses, como lo registro en el sistema", "procedimiento": "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Cómo registro los recursos, cantidades y precios del alquiler de un equipo", "procedimiento": "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "Dónde se encuentra el escenario SC Alquiler de Equipo", "procedimiento": "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde adiciono subcontrato de alquiler de equipo", "procedimiento": "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde esta sc alquiler de equipo", "procedimiento": "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "no allo el catalogo de impuestos en el subcontrato de alquiler", "procedimiento": "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "Dónde elijo el impuesto del subcontrato de alquiler", "procedimiento": "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "estoy en subcontratos y no sé cuál escenario es el de equipos alquilados", "procedimiento": "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "por donde se adiciona el subcontrato de equipo con orden de servicio", "procedimiento": "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "Qué requisito previo debe tener un subcontrato de alquiler de equipo", "procedimiento": "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "necesito la orden de servicio aprobada antes de crear el subcontrato de equipo?", "procedimiento": "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "Debo asignar partida de control a un subcontrato de alquiler de equipo", "procedimiento": "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "se le pone partida de control al subcontrato de equipo?", "procedimiento": "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "de donde elijo el impuesto q se aplica a la valorizacion del alquiler", "procedimiento": "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "Qué datos registra la orden de servicio en el subcontrato de alquiler", "procedimiento": "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "No me aparece la orden de servicio al registrar el subcontrato de alquiler", "procedimiento": "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "no sale ninguna OS pa elegir en el subcontrato de equipo", "procedimiento": "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me dejan valorisar antes de la fecha de inicio en el alquiler", "procedimiento": "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "quiero valorizar el alquiler del mes pasado pero no deja, el subcontrato lo inicie despues", "procedimiento": "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no sale orden servicio", "procedimiento": "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "No puedo valorizar trabajos anteriores a la fecha de inicio del subcontrato de alquiler", "procedimiento": "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "la orden de servicio del equipo no la muestra, creo q no esta aprobada, como arreglo", "procedimiento": "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "Cómo registro el adelanto en efectivo con carta fianza de un subcontrato", "procedimiento": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como registro la carta fianza del adelanto al subcontratista", "procedimiento": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el subcontratista pide su adelanto y presento la fianza, como lo registro", "procedimiento": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Cómo registro el porcentaje de adelanto en la cabecera del subcontrato", "procedimiento": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como registro una carta de fiansa en el subcontrato", "procedimiento": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "carta fianza subcontrato", "procedimiento": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como autorizo el pago del adelanto al subcontratista", "procedimiento": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Cómo registro los destinatarios del e-mail de vencimiento de la carta fianza", "procedimiento": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "me llego la carta fianza del banco con su monto y vencimiento, donde la cargo", "procedimiento": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como pago el adelanto en efectivo del subcontrato", "procedimiento": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como hago pa dar adelanto con garantia al subcontratista", "procedimiento": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "Cómo registro el afianzador y el monto de la fianza", "procedimiento": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "adelanto subcontrato garantia", "procedimiento": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "despues de poner la carta fianza como autorizo el pago", "procedimiento": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "quiero otorgar 20% de adelanto al subcontratista, que registro primero", "procedimiento": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Cómo autorizo el pago del adelanto en la pestaña Autorización de Pago", "procedimiento": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "Dónde se registra la carta fianza del subcontrato", "procedimiento": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde pongo el afianzador y las fechas de la fianza", "procedimiento": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde autorizacion de pago adelanto", "procedimiento": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "en q parte del subcontrato se registra la garantia", "procedimiento": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "Dónde se marca Requiere garantía en el subcontrato", "procedimiento": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "estoy en el subcontrato y no sé cómo abrir la ventana de la carta fianza", "procedimiento": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "en que pestaña pago el adelanto", "procedimiento": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "Qué debo definir en la cabecera del subcontrato antes de registrar el adelanto", "procedimiento": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "q marco en el subcontrato pa que pida garantia del adelanto", "procedimiento": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "Qué función cumple el monto de la carta fianza respecto al adelanto", "procedimiento": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "la fianza limita cuanto adelanto puedo dar?", "procedimiento": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "se puede registrar mas de un destinatario pa que avise del vencimiento", "procedimiento": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "Qué tipo de documento registro en la garantía del adelanto", "procedimiento": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "No puedo otorgar un adelanto mayor al monto de la garantía", "procedimiento": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "me bloquea el adelanto, dice q pasa del monto de la fianza", "procedimiento": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "la fianza de fiel cumplimiento no me aumenta el tope del adelanto", "procedimiento": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "el subcontratista ya tiene su fianza de fiel cumplimiento y aun asi no puedo darle mas adelanto", "procedimiento": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "adelanto excede fianza", "procedimiento": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "El adelanto no se amortiza en las valorizaciones del subcontratista", "procedimiento": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "no se descuenta el adelanto en la valorizacion del subcontratista, no veo opcion manual", "procedimiento": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}

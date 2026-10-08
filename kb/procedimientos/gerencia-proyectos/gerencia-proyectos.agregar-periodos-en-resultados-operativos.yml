@@ -1,0 +1,83 @@
+id: gerencia-proyectos.agregar-periodos-en-resultados-operativos
+version: 1
+modulo: gerencia-proyectos
+titulo: "Agregar periodos a la consulta de resultados operativos"
+objetivo: "Hacer visibles en resultados operativos los periodos de consulta, eligiendo la escala de periodo, el modo acumulado y las semanas del Catálogo de Periodos."
+nivel: basico
+preguntas:
+  - "cómo agrego periodos en resultados operativos"
+  - "no me salen las semanas en resultados operativos del proyecto"
+  - "como hago visibles los periodos en resultados operativos"
+  - "que cambia si marco mostrar acumulados al agregar periodos"
+  - "como elijo un rango de semanas en resultados operativos"
+  - "solo me deja elegir una semana en resultados operativos"
+  - "donde esta el catalogo de periodos en resultados operativos"
+  - "resultados operativos s10 como agregar semanas"
+aliases:
+  - "agregar periodos"
+  - "periodos en resultados operativos"
+  - "hacer visibles los periodos"
+  - "catálogo de periodos"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Resultados Operativos", "Catálogo de Periodos"]
+  objetos: ["periodo semanal", "escala de periodo", "periodo"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.agregar-periodos-en-resultados-operativos#1"
+    accion: "Ingrese al escenario de **Resultados Operativos** del proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s257]
+    pagina: null
+    fotos:
+      - id: "589e969c80bb"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/bf78e878f1c3.png"
+        pagina: null
+        caption: "Acceso al escenario"
+        ocr: "J rey ee\nResultados = Escritorio\nOperativos Luege, 1-8 PUENTE EN CARRETERA"
+  - n: 2
+    id: "gerencia-proyectos.agregar-periodos-en-resultados-operativos#2"
+    accion: "Elija la **Escala de periodo** de consulta: están disponibles los periodos mensual y semanal; el recomendado es semanal."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s265, img-7cd8701b9e77-0000]
+    pagina: null
+    fotos:
+      - id: "c0153120c7e8"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/7cd8701b9e77.png"
+        pagina: null
+        ocr: "Resuiades Creratives del Pzayecto Se,\n7\n\nEscala de periodo |Periodo Semanal hd Paces sams\n\nPatida de Conttol | cic derecho om Agregar periodas —(c) H\nCodi De pci\nme ssenpeen |__|3& Exportar a Microsoft Excel b\n\n&) PC Puente en carretera\ni fff Mostrar campos"
+  - n: 3
+    id: "gerencia-proyectos.agregar-periodos-en-resultados-operativos#3"
+    accion: "Seleccione **Mostrar acumulados** para acumular la información hasta el periodo de la consulta (al agregar periodos permite elegir solo una semana), o déjelo sin seleccionar para mostrar en fila todos los periodos visibles (permite elegir un rango de periodos)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s265]
+    pagina: null
+  - n: 4
+    id: "gerencia-proyectos.agregar-periodos-en-resultados-operativos#4"
+    accion: "Haga clic derecho y elija **Agregar periodos** para mostrar la ventana **Catálogo de Periodos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s265, img-0a7ef3013d0e-0000]
+    pagina: null
+    fotos:
+      - id: "8d61336fb00d"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/0a7ef3013d0e.png"
+        pagina: null
+        ocr: "Resultados Operativos del Prqyacto ‘Sol.\not\n\nEscala de periodo |Periodo Semanal bd Dove acumulados\n\nPartida de Control _| clic derecho +24 Agregar periodos |\nCédigo Descripcién\ni . |__|3€ Exportar a Microsoft Excel bP\nPC Puente en carretera\na ff Mostrarcampos —<c)\nMostrar campos nersonalizado"
+  - n: 5
+    id: "gerencia-proyectos.agregar-periodos-en-resultados-operativos#5"
+    accion: "En el catálogo, seleccione el grupo de periodos y elija el periodo haciendo doble clic sobre el número de semana."
+    resultado: "Los periodos elegidos se muestran en la ventana de periodos elegidos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s265]
+    pagina: null
+    fotos:
+      - id: "80e2fbf293b2"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/65476ab526c5.png"
+        pagina: null
+        caption: "Llamada c. Muestra la ventana Catálogo de Periodos"
+        ocr: "Fh Catsogo de Perotos I =i\n|| Qpciones 2\nbE Ss*e Ria ¢ HP ABQ\nDescripcién Del a\nAIG) Periodo Semanal 2142010 24/11/2010 iil\n5G Avo 2010 242010 24/1 2010\n@ Semana 17 21042010 2504/2010\n[2 Semana1s ={¢-3) 2610412010 0210572010\nDeseripcién Del Al\nSemana 18 26m4r2010 |o20s/2010\nSemana 17 21042010 2504/2010\nSemana 19 0305/2010 09/05/2010\nSemana 20 401052010 160572010"
+verificacion: []
+errores_frecuentes: []
+relacionados: [gerencia-proyectos.consultar-resultados-operativos, gerencia-proyectos.mostrar-campos-personalizados-en-resultados-operativos, gerencia-proyectos.definir-periodos]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s257, manual: "Manual de Gerencia de Proyectos", seccion: "9.3 Resultados Operativos por Proyecto (1)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s265, manual: "Manual de Gerencia de Proyectos", seccion: "9.7 Cómo hacer visible los periodos en resultados operativos", pagina: null}
+  - {id: img-7cd8701b9e77-0000, manual: "Manual de Gerencia de Proyectos", seccion: "7cd8701b9e77.png", pagina: null}
+  - {id: img-0a7ef3013d0e-0000, manual: "Manual de Gerencia de Proyectos", seccion: "0a7ef3013d0e.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

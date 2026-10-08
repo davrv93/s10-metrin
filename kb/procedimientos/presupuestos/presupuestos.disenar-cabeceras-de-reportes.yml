@@ -1,0 +1,109 @@
+id: presupuestos.disenar-cabeceras-de-reportes
+version: 1
+modulo: presupuestos
+titulo: "Diseñar las cabeceras de los reportes"
+objetivo: "Registrar para un presupuesto una cabecera propia para los reportes, hasta en 10 líneas con el tipo, color y tamaño de letra, en lugar del diseño estándar que viene por defecto."
+nivel: intermedio
+preguntas:
+  - "cómo cambio la cabecera de los reportes en s10 presupuestos"
+  - "quiero poner el nombre de mi empresa arriba del reporte del presupuesto"
+  - "como diseño el encabezado de los reportes del presupuesto"
+  - "dónde se configura la cabecera para reportes"
+  - "el reporte sale con la cabecera por defecto, como uso la mia"
+  - "como cambio el tipo de letra y el color del encabezado del reporte"
+  - "como hago una cabezera personalizada para el resumen del presupuesto"
+  - "puedo poner otra cabecera en el analisis de precios unitarios impreso"
+  - "imprimir con diseño de cabecera para que sirve"
+aliases:
+  - "diseño de cabeceras"
+  - "cabeceras para reportes"
+  - "encabezado de reportes"
+  - "imprimir con diseño de cabecera"
+entidades:
+  modulo: "Presupuestos"
+  pantallas: ["Cabeceras para reportes", "Configuración Presupuestos"]
+  objetos: ["cabecera", "reporte", "presupuesto"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "presupuestos.disenar-cabeceras-de-reportes#1"
+    accion: "En el árbol, elija el presupuesto para el que diseñará la cabecera de los reportes."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s113, "7c40a9548710-0181"]
+    pagina: null
+  - n: 2
+    id: "presupuestos.disenar-cabeceras-de-reportes#2"
+    accion: "Ingrese al escenario **Cabeceras para reportes**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s113, img-d3f350c99b03-0000, "7c40a9548710-0181"]
+    pagina: null
+    fotos:
+      - id: "ab986e694347"
+        ruta_o_url: "imagenes/manual-de-presupuestos/d3f350c99b03.png"
+        pagina: null
+        ocr: "Cabeceras para reportes Ee\nNumero maximo de filas: 10 Presupuesto: v\n| fuea Alineacién [Texto @\nLinea\n[___|0t_Centrado (2) PRESPUESTO META =o)\n| |o2—zquierdo Proyecto: VIVIENVA UNIFAMILIAR\n[|03zquierdo Lugar: Av. San Borja Sur 754\nL|04 Izquierdo Departamento: Lima\nIzquierdo\nPRESPUESTO META, ~\nProyecto: VIVIENVA, UNIFAMILISR @\nLugar: Av. San Borja Sur 754\nDepartamento: Lima ="
+  - n: 3
+    id: "presupuestos.disenar-cabeceras-de-reportes#3"
+    accion: "Elija el tipo de reporte: Resumen del presupuesto, Presupuesto, Análisis de precios unitarios, Recursos y precios, Fórmula polinómica o Subpartidas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s113]
+    pagina: null
+  - n: 4
+    id: "presupuestos.disenar-cabeceras-de-reportes#4"
+    accion: "En la columna **Alineación**, elija el alineamiento de la línea: **Izquierdo**, **Derecho** o **Centrado**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s113, "7c40a9548710-0182"]
+    pagina: null
+  - n: 5
+    id: "presupuestos.disenar-cabeceras-de-reportes#5"
+    accion: "En la columna **Texto**, registre el texto de cada línea de la cabecera, hasta en 10 líneas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s113, "7c40a9548710-0182"]
+    pagina: null
+  - n: 6
+    id: "presupuestos.disenar-cabeceras-de-reportes#6"
+    accion: "Para elegir la fuente del registro, haga clic derecho sobre el texto y elija **Fuentes**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s113, img-f91b81c173db-0000]
+    pagina: null
+    fotos:
+      - id: "62de340a107f"
+        ruta_o_url: "imagenes/manual-de-presupuestos/f91b81c173db.png"
+        pagina: null
+        ocr: "h Cortar\n\nCopiar\n\n& Pegar\n\n% Eliminar\n\nA Fuentes\n\nCopiar Formato\n\nPegar Formato\n\nBE Exportar a Microsoft Excel"
+  - n: 7
+    id: "presupuestos.disenar-cabeceras-de-reportes#7"
+    accion: "Para copiar el formato de un registro (fuente, tamaño de letra y color) a otro, use **Copiar Formato** y luego **Pegar Formato** del mismo menú."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s113, img-f91b81c173db-0000]
+    pagina: null
+  - n: 8
+    id: "presupuestos.disenar-cabeceras-de-reportes#8"
+    accion: "Para imprimir con este diseño, use el botón de configuración y, de la ventana que se active, elija la pestaña **Impresión**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s113, "7c40a9548710-0182"]
+    pagina: null
+    fotos:
+      - id: "87947d387853"
+        ruta_o_url: "imagenes/manual-de-presupuestos/78cc15af9fc1.png"
+        pagina: null
+        caption: "Use el botón y de la ventana que se active elija la pestaña de Impresión"
+      - id: "0aa7e9f79e95"
+        ruta_o_url: "imagenes/manual-de-presupuestos/0c903dab4ee8.png"
+        pagina: null
+        caption: "Use el botón y de la ventana que se active elija la pestaña de Impresión"
+        ocr: "7 |) seul)\nProcesamiento de Analisis de Precios ; —\nGeneral Férmula Polinémica\n= Presupuesto Unitarios\nElija_ | Planeamiento Hoja Presupuesto | Configuracién Interfaces\n Pone fecha y hora de impresién ‘on factor de cambio\nI¥ Pone fecha y hora de impresié 7 Con factor de cambi\n7 Modifica margen\nM Solicita numero primera pagina\nFF Imprimir con tagatiga\nImprimir con disefio de cabecera\n7 ttem atterno…"
+  - n: 9
+    id: "presupuestos.disenar-cabeceras-de-reportes#9"
+    accion: "Seleccione la opción **Imprimir con diseño de cabecera**."
+    resultado: "Los reportes se imprimen con el diseño de cabecera elaborado por el usuario."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s113, "7c40a9548710-0183"]
+    pagina: null
+verificacion:
+  - texto: "Con la opción seleccionada, el reporte se imprime con el diseño de cabecera elaborado por el usuario."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s113]
+errores_frecuentes:
+  - sintoma: "El reporte sigue saliendo con la cabecera que viene por defecto."
+    solucion: "Seleccione en la pestaña Impresión de la configuración la opción Imprimir con diseño de cabecera: si no está seleccionada, imprime con el diseño de cabecera que viene por defecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s113, "7c40a9548710-0183"]
+relacionados: [presupuestos.imprimir-reportes]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s113, manual: "Manual de Presupuestos", seccion: "5.1.6 Diseño de cabeceras para reportes", pagina: null}
+  - {id: "7c40a9548710-0181", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 110}
+  - {id: img-d3f350c99b03-0000, manual: "Manual de Presupuestos", seccion: "d3f350c99b03.png", pagina: null}
+  - {id: "7c40a9548710-0182", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 110}
+  - {id: img-f91b81c173db-0000, manual: "Manual de Presupuestos", seccion: "f91b81c173db.png", pagina: null}
+  - {id: "7c40a9548710-0183", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 111}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

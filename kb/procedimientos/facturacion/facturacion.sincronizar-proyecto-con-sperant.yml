@@ -1,0 +1,88 @@
+id: facturacion.sincronizar-proyecto-con-sperant
+version: 1
+modulo: facturacion
+titulo: "Sincronizar un proyecto del S10 con Sperant"
+objetivo: "Relacionar un proyecto inmobiliario del S10 con su proyecto en Sperant, activando la opción en los Datos Adicionales del proyecto y ubicándolo después desde la interface de Sperant."
+nivel: intermedio
+preguntas:
+  - "como sincronizo un proyecto de s10 con sperant"
+  - "como relaciono el proyecto inmobiliario con sperant"
+  - "donde activo la gestion inmobiliaria del proyecto"
+  - "como se si mi proyecto ya esta sincronizado con sperant"
+  - "el campo proyecto sperant me sale vacio"
+  - "integracion sperant s10 paso para enlazar proyectos"
+  - "sincronisacion de proyectos sperant"
+  - "que tengo que configurar en datos adicionales para sperant"
+aliases:
+  - "sincronizar proyecto"
+  - "sincronización de proyectos"
+  - "proyecto sperant"
+  - "relacionar proyecto con sperant"
+entidades:
+  modulo: "Facturación"
+  pantallas: ["Datos generales", "Datos Adicionales", "catálogo de proyectos"]
+  objetos: ["proyecto", "Sperant", "Proyecto Sperant"]
+prerrequisitos:
+  - texto: "La integración debe estar configurada en el módulo de Facturación, en la pestaña SPERANT de la ventana que se invoca con el icono en forma de tuerca."
+    fuente: [web-https-documentacion-s10peru-com-configur-s003]
+pasos:
+  - n: 1
+    id: "facturacion.sincronizar-proyecto-con-sperant#1"
+    accion: "Ingrese al módulo de gerencia y, desde el escenario **Datos generales**, ubique en el árbol el proyecto que se requiere relacionar con el SPERANT."
+    fuente: [web-https-documentacion-s10peru-com-configur-s004]
+    pagina: null
+    fotos:
+      - id: "2ae23674159b"
+        ruta_o_url: "imagenes/configuracion-integracion-sperant-s10/9f5ca7e81e6b.png"
+        pagina: null
+        caption: "El siguiente proceso se realiza desde la interface del SPERANT Previamente debe ingresar al módulo de gerencia Desde escenario Datos generales ubique en el árbol el proyecto que se requiere relacionar con el SPERANT"
+        ocr: "[inicio | Grupo de proyectos\nOS (=) ge} Escritorio N\nGQ conTROL S10\nDatos DESARROLLO DE PROYECTOS\nees © DBAMO NE PRORUCTOS\nBR Swoon iar]\n@ INMOB - MI VIVIENDA, - PROYECTOS"
+  - n: 2
+    id: "facturacion.sincronizar-proyecto-con-sperant#2"
+    accion: "En el escenario de datos generales, seleccione **Datos Adicionales**."
+    fuente: [web-https-documentacion-s10peru-com-configur-s004]
+    pagina: null
+    fotos:
+      - id: "12d29d208d60"
+        ruta_o_url: "imagenes/configuracion-integracion-sperant-s10/6f70bbb4a93a.png"
+        pagina: null
+        caption: "Luego, en el escenario de datos generales, seleccione Datos Adicionales"
+        ocr: "Datos Generales\n\nDescripcién [Pouanca PROYECTO\n\nPropietario [22000019 INVERSIONES EN INMUEBLES LIMA SAC = | 24\nLugar [150732 [suRco w= | #4 Fecha oferta [08/01/2015 >]\nEmpresa _ INVERSIONES EN INMUEBLES LIMA SAC"
+  - n: 3
+    id: "facturacion.sincronizar-proyecto-con-sperant#3"
+    accion: "Configure activando la opción remarcada de **Gestion Inmobiliaria** y haga clic en **Aceptar**."
+    fuente: [web-https-documentacion-s10peru-com-configur-s004, img-6913e2a81576-0000]
+    pagina: null
+    fotos:
+      - id: "77541f165437"
+        ruta_o_url: "imagenes/configuracion-integracion-sperant-s10/6913e2a81576.png"
+        pagina: null
+        ocr: "EE\nConfigurado para trabajar con decimales de Facturacién\nNamero de decimales en cantidades 3 = Aceptar\nNimero de decimales en precios 4 = Cancelar\n[- Aplicar factores de inflacion\n[- Mostrar solo Partidas de ControlActivas\nJefe de Proyecto = a4]\nAdministrador = 4\nGerencia de proyectos — A\nNimero de decimales para el factor de relacion [0 —>\nGestion Inmobiliaria\n© Ninguno © Inmobiliaria $10"
+  - n: 4
+    id: "facturacion.sincronizar-proyecto-con-sperant#4"
+    accion: "Mediante la interface de Sperant, ubique el proyecto a relacionar."
+    donde: "Sperant"
+    fuente: [web-https-documentacion-s10peru-com-configur-s004]
+    pagina: null
+  - n: 5
+    id: "facturacion.sincronizar-proyecto-con-sperant#5"
+    accion: "Para verificar la sincronización, ubique el proyecto en el catálogo de proyectos, haga clic derecho y elija modificar."
+    resultado: "En el campo **Proyecto Sperant** se muestra el proyecto que ha sido sincronizado."
+    fuente: [web-https-documentacion-s10peru-com-configur-s004]
+    pagina: null
+    fotos:
+      - id: "1be816c22fdb"
+        ruta_o_url: "imagenes/configuracion-integracion-sperant-s10/e4bee3d9022a.png"
+        pagina: null
+        caption: "Al dar clic derecho modificar, nos mostrara en el campo Proyecto Sperant el proyecto que ha sido Sincronizado"
+        ocr: "av)\nOpciones ?\nDSxBiec AY om 441 RS @ & A\n\none 2 C/E\na] EvEMPLO = — — =\n|] PROVECTOS EN OFIC |_| Codigo Descripcién Empresa Dime\na] ate | _|__|26007 MN CASAS VILLA SARAJA - VENTAS. MENORCAINVERSIONES S.)\nUJ CONTROL MENORCA, a\nG) ADMINISTRATIVO ME E——E————————\nGJ OBRAMENORCA, i ei | iii | eile lili irl | tr]\n4G] VeNTAS MENORCA [el |e ed\nJ OBRAS MALLORCA [|\nA] PROVECTOS MENORG |\nG] ADMINISTRATIVO OB…"
+verificacion:
+  - texto: "En el catálogo de proyectos, al modificar el proyecto, el campo **Proyecto Sperant** muestra el proyecto sincronizado."
+    fuente: [web-https-documentacion-s10peru-com-configur-s004]
+errores_frecuentes: []
+relacionados: [facturacion.boletear-abonos-sperant, facturacion.cambiar-titular-sperant, facturacion.anular-venta-sperant]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-configur-s003, manual: "Configuración de Integración Sperant con S10 ERP – Proceso General", seccion: "2. Configuración", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-configur-s004, manual: "Configuración de Integración Sperant con S10 ERP – Proceso General", seccion: "3. Sincronización de Proyectos", pagina: null}
+  - {id: img-6913e2a81576-0000, manual: "Configuración de Integración Sperant con S10 ERP – Proceso General", seccion: "6913e2a81576.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

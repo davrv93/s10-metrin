@@ -1,0 +1,77 @@
+id: almacenes.registrar-egreso-por-bajas-y-mermas
+version: 1
+modulo: almacenes
+titulo: "Dar de baja recursos deteriorados con un egreso por bajas y mermas"
+objetivo: "Controlar con un Egreso por Bajas y Mermas [EBM] los recursos que se han deteriorado o malogrado dentro del almacén o producto del manipuleo: el recurso se elige del stock, toma el precio promedio y su costo es cargado al proyecto."
+nivel: basico
+preguntas:
+  - "cómo doy de baja un material malogrado en el almacén"
+  - "se mojaron unas bolsas de cemento, cómo las saco del stock"
+  - "como hago un egreso por bajas y mermas"
+  - "que partida de control uso para las mermas del almacen"
+  - "como registro las perdidas por manipuleo en almacenes"
+  - "a qué precio sale un recurso dado de baja"
+  - "como descuento del stock lo que se deterioro"
+aliases:
+  - "egreso por bajas y mermas"
+  - "EBM"
+  - "dar de baja"
+  - "mermas del almacén"
+  - "recursos deteriorados"
+entidades:
+  modulo: "Almacenes"
+  pantallas: ["Egresos"]
+  objetos: ["recurso", "stock", "partida de control", "precio promedio"]
+prerrequisitos:
+  - texto: "Antes de efectuar un egreso, vaya al escenario de Stock y recostee."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s057]
+pasos:
+  - n: 1
+    id: "almacenes.registrar-egreso-por-bajas-y-mermas#1"
+    accion: "En la barra de vistas, elija el acceso al escenario de **Egresos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s063]
+    pagina: null
+  - n: 2
+    id: "almacenes.registrar-egreso-por-bajas-y-mermas#2"
+    accion: "En el árbol, elija el proyecto y el almacén."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s063]
+    pagina: null
+  - n: 3
+    id: "almacenes.registrar-egreso-por-bajas-y-mermas#3"
+    accion: "Elija el tipo de egreso **Egreso por Bajas y Mermas**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s079, web-https-documentacion-s10peru-com-manual-d-s063]
+    pagina: null
+  - n: 4
+    id: "almacenes.registrar-egreso-por-bajas-y-mermas#4"
+    accion: "Efectúe un nuevo egreso y registre el tipo de cambio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s063]
+    pagina: null
+  - n: 5
+    id: "almacenes.registrar-egreso-por-bajas-y-mermas#5"
+    accion: "Registre los datos en la cabecera del documento."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s063]
+    pagina: null
+  - n: 6
+    id: "almacenes.registrar-egreso-por-bajas-y-mermas#6"
+    accion: "En el cuerpo del documento, elija del stock el recurso que se dará de baja."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s079, web-https-documentacion-s10peru-com-manual-d-s063]
+    pagina: null
+  - n: 7
+    id: "almacenes.registrar-egreso-por-bajas-y-mermas#7"
+    accion: "Registre la cantidad del recurso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s063]
+    pagina: null
+  - n: 8
+    id: "almacenes.registrar-egreso-por-bajas-y-mermas#8"
+    accion: "En el formulario de egreso, asigne al recurso la partida de control NO CONTRIBUTORIO – BAJAS – MERMAS."
+    resultado: "El recurso egresado toma el precio promedio y su costo es cargado al proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s079]
+    pagina: null
+verificacion: []
+errores_frecuentes: []
+relacionados: [almacenes.registrar-egreso-a-partida-de-control, almacenes.registrar-partidas-de-control-del-proyecto, almacenes.consultar-kardex]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s057, manual: "Manual de Almacenes", seccion: "2.2 Egresos", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s063, manual: "Manual de Almacenes", seccion: "2.2.2.1 Egreso a Partida de Control [EPC] (1)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s079, manual: "Manual de Almacenes", seccion: "2.2.8.2 Egreso por Bajas y Mermas [EBM]", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

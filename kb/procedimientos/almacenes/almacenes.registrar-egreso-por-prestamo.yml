@@ -1,0 +1,93 @@
+id: almacenes.registrar-egreso-por-prestamo
+version: 1
+modulo: almacenes
+titulo: "Prestar recursos del almacén con un egreso por préstamo"
+objetivo: "Registrar con un Egreso por Préstamo [EP] los recursos que presta el almacén a otro almacén del mismo proyecto, a otro proyecto o a un socio de negocio, y que deben ser devueltos."
+nivel: basico
+preguntas:
+  - "cómo registro un préstamo de materiales a otra obra"
+  - "le vamos a prestar andamios a un subcontratista, cómo lo saco del almacén"
+  - "como hago un egreso por prestamo"
+  - "como presto cemento a otro almacen del mismo proyecto"
+  - "dónde veo lo que le presté a otros proyectos"
+  - "como registro herramientas prestadas a un obrero"
+  - "egreso por prestamo requisitos"
+aliases:
+  - "egreso por préstamo"
+  - "EP"
+  - "prestar recursos"
+  - "lo que presté"
+  - "préstamo a otro proyecto"
+entidades:
+  modulo: "Almacenes"
+  pantallas: ["Egresos", "Préstamos"]
+  objetos: ["recurso", "stock", "socio de negocio", "proyecto", "almacén"]
+prerrequisitos:
+  - texto: "Es requisito tener en stock la cantidad necesaria del recurso a prestar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s065]
+  - texto: "Antes de efectuar un egreso, vaya al escenario de Stock y recostee."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s057]
+pasos:
+  - n: 1
+    id: "almacenes.registrar-egreso-por-prestamo#1"
+    accion: "En la barra de vistas, elija el acceso al escenario de **Egresos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s063]
+    pagina: null
+  - n: 2
+    id: "almacenes.registrar-egreso-por-prestamo#2"
+    accion: "En el árbol, elija el proyecto y el almacén."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s063]
+    pagina: null
+  - n: 3
+    id: "almacenes.registrar-egreso-por-prestamo#3"
+    accion: "Elija el tipo de egreso **Egreso por Préstamo**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s065, web-https-documentacion-s10peru-com-manual-d-s063]
+    pagina: null
+  - n: 4
+    id: "almacenes.registrar-egreso-por-prestamo#4"
+    accion: "Efectúe un nuevo egreso y registre el tipo de cambio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s063]
+    pagina: null
+  - n: 5
+    id: "almacenes.registrar-egreso-por-prestamo#5"
+    accion: "Registre los datos en la cabecera del documento."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s063]
+    pagina: null
+  - n: 6
+    id: "almacenes.registrar-egreso-por-prestamo#6"
+    accion: "Indique el destino del préstamo: otro almacén del mismo proyecto, un proyecto (otra obra) o un socio de negocio (un proveedor, empleado, obrero, etc.)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s065]
+    pagina: null
+  - n: 7
+    id: "almacenes.registrar-egreso-por-prestamo#7"
+    accion: "Del stock, elija el recurso que se presta."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s065]
+    pagina: null
+  - n: 8
+    id: "almacenes.registrar-egreso-por-prestamo#8"
+    accion: "Registre la cantidad del recurso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s063]
+    pagina: null
+  - n: 9
+    id: "almacenes.registrar-egreso-por-prestamo#9"
+    accion: "Para visualizar los recursos prestados, vaya al grupo de informes, al escenario **Préstamos**, y con el botón elija **Lo que preste**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s065, web-https-documentacion-s10peru-com-manual-d-s138]
+    pagina: null
+    fotos:
+      - id: "6d6472ca3014"
+        ruta_o_url: "imagenes/manual-de-almacenes/ce8cb4d8198a.png"
+        pagina: null
+        caption: "Visualizar los préstamos"
+        ocr: "Use este botdn para elegir la opcidn\nCaan Oo\nTipo {Lo que preste +"
+verificacion: []
+errores_frecuentes:
+  - sintoma: "No puedo egresar por préstamo la cantidad que quiero prestar."
+    solucion: "Es requisito tener en stock la cantidad necesaria del recurso a prestar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s065]
+relacionados: [almacenes.registrar-ingreso-por-devolucion-de-prestamo, almacenes.registrar-ingreso-por-prestamo]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s065, manual: "Manual de Almacenes", seccion: "2.2.2.2 Egreso por Préstamo [EP]", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s057, manual: "Manual de Almacenes", seccion: "2.2 Egresos", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s063, manual: "Manual de Almacenes", seccion: "2.2.2.1 Egreso a Partida de Control [EPC] (1)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s138, manual: "Manual de Almacenes", seccion: "3.20.3 Préstamos", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

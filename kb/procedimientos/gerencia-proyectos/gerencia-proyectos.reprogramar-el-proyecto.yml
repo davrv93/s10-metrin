@@ -1,0 +1,77 @@
+id: gerencia-proyectos.reprogramar-el-proyecto
+version: 1
+modulo: gerencia-proyectos
+titulo: "Reprogramar el proyecto con el MS Project"
+objetivo: "Reubicar en el tiempo o cambiar de tamaño las barras del Gantt en el MS Project y actualizar con ello los datos de la grilla del Cronograma por Periodos en modo programado."
+nivel: avanzado
+preguntas:
+  - "cómo reprogramo el proyecto en gerencia de proyectos"
+  - "el proyecto esta atrasado, como lo reprogramo"
+  - "como reprogramo las barras del gantt en ms project"
+  - "como actualizo el cronograma despues de reprogramar en project"
+  - "cada cuanto se debe reprogramar la obra"
+  - "reprogramacion del cronograma por periodos s10"
+  - "como ago la reprogramasion del proyecto"
+  - "despues de reprogramar donde veo el programado"
+aliases:
+  - "reprogramar proyecto"
+  - "reprogramación"
+  - "reprogramar cronograma"
+  - "reprogramar en MS Project"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Cronograma por Periodos", "Resultados operativos"]
+  objetos: ["MS Project", "Gantt", "cronograma", "programado"]
+prerrequisitos:
+  - texto: "La planificación gráfica del proyecto se hizo con el MS Project desde el escenario del Cronograma por Períodos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s085]
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.reprogramar-el-proyecto#1"
+    accion: "Ingrese al escenario del **Cronograma por Periodos** en modo programado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s095]
+    pagina: null
+    fotos:
+      - id: "ddb7bc50b312"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/5a978ee31d8c.png"
+        pagina: null
+        caption: "La reprogramación reubica en el tiempo las barras del Gantt o los cambia de tamaño incrementando o disminuyendo y por consiguiente los datos de la grilla del escenario del cronograma por periodos modo programado; el parámetro para reprogramar el proyecto es un atraso del 10%, no se debe reprogramar todas las semanas."
+        ocr: "Cronograma por Periodos ( Meta )\nModo Programado - Cronograma metrado\nVistas [ todo ~] Escala de periodo [Periode Semanal ¥\n—\n[elie derecho\n& Puente en carretera\n“| Preparacién de egregedos\n-) Extraccién\n2,539.95 500 253495\nContraer: <Elije el nifel> z\nB® Recalcular por escal\n(©) Opciones » Exportar a Microsoft Project\nBeportara Importar de Microsoft Project\nGrupo de trabajo Actualizar desde Micro…"
+  - n: 2
+    id: "gerencia-proyectos.reprogramar-el-proyecto#2"
+    accion: "Abra el archivo en el **MS Project**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s095]
+    pagina: null
+  - n: 3
+    id: "gerencia-proyectos.reprogramar-el-proyecto#3"
+    accion: "Reprograme, grabe el archivo del MS Project y ciérrelo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s095]
+    pagina: null
+  - n: 4
+    id: "gerencia-proyectos.reprogramar-el-proyecto#4"
+    accion: "Actualice los datos de la grilla del escenario."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s095]
+    pagina: null
+  - n: 5
+    id: "gerencia-proyectos.reprogramar-el-proyecto#5"
+    accion: "Vaya al escenario de **Resultados operativos** y visualice la información del programado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s095]
+    pagina: null
+verificacion:
+  - texto: "La reprogramación reubica en el tiempo las barras del Gantt o cambia su tamaño, y por consiguiente los datos de la grilla del cronograma por periodos en modo programado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s095]
+errores_frecuentes:
+  - sintoma: "Reprograma el proyecto todas las semanas."
+    solucion: "No se debe reprogramar todas las semanas: el parámetro para reprogramar el proyecto es un atraso del 10%."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s095]
+  - sintoma: "Trabaja en LAN con el cliente y el servidor usando versiones distintas del MS Project."
+    solucion: "Si trabaja en LAN, el cliente y el servidor deben tener la misma versión del MS Project; si se conecta mediante escritorio remoto, solo usa los recursos del servidor."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s085]
+  - sintoma: "El proyecto usa doble moneda o jornadas diferentes en las partidas."
+    solucion: "El MS Project no soporta doble moneda, tampoco jornadas diferentes (número de horas del día) en las partidas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s085]
+relacionados: [gerencia-proyectos.planificar-en-cronograma-por-periodos]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s085, manual: "Manual de Gerencia de Proyectos", seccion: "2.6.2 Planificación gráfica del proyecto usando el MS Project", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s095, manual: "Manual de Gerencia de Proyectos", seccion: "2.1 Reprogramación", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

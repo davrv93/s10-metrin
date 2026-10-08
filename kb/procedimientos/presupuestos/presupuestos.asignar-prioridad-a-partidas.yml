@@ -1,0 +1,95 @@
+id: presupuestos.asignar-prioridad-a-partidas
+version: 1
+modulo: presupuestos
+titulo: "Asignar prioridad a las partidas para esconderlas o retornarlas"
+objetivo: "Asignar a las partidas del presupuesto una prioridad del catálogo de prioridades para poder esconderlas de la hoja del presupuesto, sin considerar su costo, o retornarlas a ella."
+nivel: intermedio
+preguntas:
+  - "como escondo partidas del presupuesto sin borrarlas"
+  - "como asigno prioridad a una partida en s10"
+  - "quiero quitar unas partidas del presupuesto y despues volver a ponerlas"
+  - "donde se registra el catalogo de prioridades"
+  - "como retorno las partidas que escondi"
+  - "como hago para que una partida no sume en el costo del presupuesto"
+  - "para que sirve la prioridad de las partidas"
+  - "como oculto las partidas opcionales del prespuesto"
+aliases:
+  - "asignar prioridad"
+  - "prioridad de partidas"
+  - "esconder partidas"
+  - "quitar partidas"
+  - "retornar partidas"
+  - "catálogo de prioridades"
+entidades:
+  modulo: "Presupuestos"
+  pantallas: ["Catálogo de Prioridades", "Hoja del Presupuesto"]
+  objetos: ["prioridad", "partida", "subpresupuesto", "presupuesto"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "presupuestos.asignar-prioridad-a-partidas#1"
+    accion: "Ingrese al menú **Catálogos** y elija **Prioridades**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s078, "7c40a9548710-0087"]
+    pagina: null
+  - n: 2
+    id: "presupuestos.asignar-prioridad-a-partidas#2"
+    accion: "En el **Catálogo de Prioridades**, registre las prioridades, hasta en 10 niveles."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s078]
+    pagina: null
+    fotos:
+      - id: "79331a38aa04"
+        ruta_o_url: "imagenes/manual-de-presupuestos/22aab19793fa.png"
+        pagina: null
+        caption: "Registro del catálogo de prioridades"
+        ocr: "O 8 Catalogo de Prioridades... Oo x\nCatalogos ; ,\nR Recursos Qpciones 2\nFE Unidades OSsx&@ic MYR? 2a\n© An Todos os Reostros WB] © MAL] S_wvet:27\nCee =\n“|\n| |Fr2 2\n_ [biz |3\n|| aa 4\n| | 1s [5\n| | 16 |6\n| |_a7_|7\n| | 18 |8\n| | 19 [9\nGQ Jose [ [Regisro: 1de9 [11-1 J"
+  - n: 3
+    id: "presupuestos.asignar-prioridad-a-partidas#3"
+    accion: "Ingrese al escenario de la **Hoja del Presupuesto** y ubique el cursor sobre un subpresupuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s078]
+    pagina: null
+  - n: 4
+    id: "presupuestos.asignar-prioridad-a-partidas#4"
+    accion: "Elija la partida, haga clic derecho y elija **Asignar prioridad**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s078, img-bf6933832842-0000]
+    pagina: null
+    fotos:
+      - id: "cbe0e21e9855"
+        ruta_o_url: "imagenes/manual-de-presupuestos/bf6933832842.png"
+        pagina: null
+        ocr: ":\n& Besortora Hoja del Presupuesto\n) VIVIENDA UNIFAMILIAR | EE\ni 5] Estructuras 001 Estructuras\nFecha : 23/03/2010 . Jornada: 8h\n| Clic derecho o$\nOo =] ESTRUCHURAS\nOo 01.01 ~~] OBRAB PRELIMINARES\n(| Hata CANTENENOR OFICIN A\nOo Adicionar Titulo ... EN mes\n5 E3) Adicionar Partida FZ PRO,LAVATORIOS mes\n7 Procesos especiales if Hacer propio Fé\nOo Opciones > Descripcion propia... F3\nOo . Unidad propia…"
+  - n: 5
+    id: "presupuestos.asignar-prioridad-a-partidas#5"
+    accion: "Asigne a la partida la prioridad del catálogo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s078]
+    pagina: null
+  - n: 6
+    id: "presupuestos.asignar-prioridad-a-partidas#6"
+    accion: "Para esconder las partidas, en el árbol haga clic derecho sobre el nombre del presupuesto o subpresupuesto, elija **Partidas por Prioridad** y luego **Quitar partidas**."
+    resultado: "Al esconder una partida, el costo no es considerado en el presupuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s078, img-8a6153025e55-0000]
+    pagina: null
+    fotos:
+      - id: "0dd65aca8046"
+        ruta_o_url: "imagenes/manual-de-presupuestos/8a6153025e55.png"
+        pagina: null
+        ocr: "Clic derecho\n[cee eres Upupstcs aia :\n= Bjesortorio. Hoja del Presupuesto\nOSA VIVIENDA UNFAMILIAR\n%2 Adicionar Subpresupuesto\n© Eliminar Presupuesto\nri Factores de cantidad ...\nFactores de rendimiento ...\nProcesar Subpresupuestos »\nExportar a... r\nHacer propias todas las Partidas\nEf Deshacer las Particlas Propias\nHacer Formatos todas las Partidas Quitar partidas\nGenerar item alterna seguin codigo …"
+  - n: 7
+    id: "presupuestos.asignar-prioridad-a-partidas#7"
+    accion: "Para retornar las partidas a la hoja del presupuesto, en el mismo menú del árbol elija **Partidas por Prioridad** y luego **Retornar partidas**."
+    resultado: "Al retornar una partida, el costo es considerado en el presupuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s078, img-8a6153025e55-0000]
+    pagina: null
+verificacion:
+  - texto: "Al esconder una partida su costo no es considerado en el presupuesto; al retornarla, el costo vuelve a ser considerado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s078]
+errores_frecuentes:
+  - sintoma: "Una partida escondida no suma en el costo del presupuesto."
+    solucion: "Al esconder una partida el costo no es considerado; retórnela a la hoja del presupuesto desde el nombre del presupuesto o subpresupuesto ubicado en el árbol."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s078]
+relacionados: [presupuestos.registrar-titulos-y-partidas, presupuestos.cambiar-estado-de-partida]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s078, manual: "Manual de Presupuestos", seccion: "4.4 Prioridad", pagina: null}
+  - {id: "7c40a9548710-0087", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 55}
+  - {id: img-bf6933832842-0000, manual: "Manual de Presupuestos", seccion: "bf6933832842.png", pagina: null}
+  - {id: img-8a6153025e55-0000, manual: "Manual de Presupuestos", seccion: "8a6153025e55.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

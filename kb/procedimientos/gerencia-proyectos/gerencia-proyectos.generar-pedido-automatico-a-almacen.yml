@@ -1,0 +1,117 @@
+id: gerencia-proyectos.generar-pedido-automatico-a-almacen
+version: 1
+modulo: gerencia-proyectos
+titulo: "Generar un pedido automático A Almacén para una partida de control"
+objetivo: "Generar desde el escenario Pedidos Automáticos un pedido A Almacén de los recursos programados en la semana, asignando a cada recurso una partida de control como destino."
+nivel: intermedio
+preguntas:
+  - "cómo genero un pedido automático a almacén"
+  - "como pido materiales del almacen para una partida de control desde la programacion"
+  - "pedidos automaticos a almacen paso a paso"
+  - "como asigno la partida de control a los recursos del pedido"
+  - "como asigno la fecha de entrega a todos los recursos del pedido"
+  - "por qué no me salen recursos en pedidos automáticos"
+  - "el aprobador recibe correo del pedido a almacen?"
+  - "como hago pedido automatico al almasen de la semana"
+aliases:
+  - "pedido automático a almacén"
+  - "pedidos automáticos A Almacén"
+  - "generar pedido a almacén"
+  - "pedido automático para partida de control"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Pedidos Automáticos", "Cronograma por periodos"]
+  objetos: ["pedido", "recurso", "Partida de Control", "Destino específico", "aprobador"]
+prerrequisitos:
+  - texto: "El proyecto debe estar programado en el escenario del Cronograma por periodos, en periodos semanales."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s127]
+  - texto: "El que aprueba los pedidos debe estar previamente registrado en el módulo de almacenes."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s127]
+  - texto: "Debe tener recursos en el stock del almacén."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s126]
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.generar-pedido-automatico-a-almacen#1"
+    accion: "Ingrese al escenario **Pedidos Automáticos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s127]
+    pagina: null
+    fotos:
+      - id: "ecbbfdad96c8"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/2d4cc6f59263.png"
+        pagina: null
+        caption: "Acceso al escenario Pedidos Automáticos"
+        ocr: "J Proyectos\ni=) Escritorio\nAutomaticos Luego,"
+  - n: 2
+    id: "gerencia-proyectos.generar-pedido-automatico-a-almacen#2"
+    accion: "Elija la semana."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s127]
+    pagina: null
+    fotos:
+      - id: "debb999fc94d"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/f9cb446e6f9d.png"
+        pagina: null
+        caption: "Elija la semana"
+        ocr: "Semanal —_Del_ | Semana 21 (17/05/2010 - 23/05/2010) v.\n4) | Semana 21 (17/05/2010 - 23/05/2010) _v_ |"
+  - n: 3
+    id: "gerencia-proyectos.generar-pedido-automatico-a-almacen#3"
+    accion: "Seleccione los recursos a pedir: marque un bloque, haga clic derecho sobre el bloque y elija **Generar Pedido** a almacén."
+    fuente: [img-d25b17cafe47-0000, web-https-documentacion-s10peru-com-manual-d-s127]
+    pagina: null
+    fotos:
+      - id: "8a9615dcf2c9"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/d25b17cafe47.png"
+        pagina: null
+        ocr: "Pedides Automaticos\nVistas (EB Todo +] Escalade Semanal pe| | Semana 21\npetiodo\nI En Stock I~ En Pedidos Registrados [~ Enedidos [~ En0.c. I Tech ay [Semana 21\nFase Descripcié -stiviolad) Programado acumulado\n1 i Puente en cafretera\n101 #] Preparaciqn de agregados\n102 ~-E) Construcagin:\n10201 ] Estribo Berecho:\n1020101\n“ i\nMarque un bloque, luego\nDeseripeién | clic derecho sabre el bloque | unt ea…"
+  - n: 4
+    id: "gerencia-proyectos.generar-pedido-automatico-a-almacen#4"
+    accion: "Asigne a cada uno de los recursos que forma parte del pedido una Partida de Control como destino."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s127]
+    pagina: null
+    fotos:
+      - id: "74bf67e4bf1f"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/63ea985b760a.png"
+        pagina: null
+        caption: "A cada uno de los recursos que forma parte de pedido se le asigna una Partida de Control como destino."
+        ocr: ": \\o] = fats\nEf Pedido de Obra - Proyecto : 02001 PUENTE EN CARRETERA\nUsuario RGARCIA - Garcia Dulanto, Rafael N° de Pedido\nSolctante (02100137 [Garcia Dulanto, Rafael = ea @ | [0005\nuo. Personal de apoyo\nAlmacén 001 - De Materiales Tipo 01 - OBRA N* Alterno [_ NOP lr.\n© AAlmacén 7 Acompras\nPara transfer encla  $$______________\nProyecto a Alm. destino\ndestino | =\nFecha 177052010 _~ Priotidadl [Nor…"
+  - n: 5
+    id: "gerencia-proyectos.generar-pedido-automatico-a-almacen#5"
+    accion: "Elija el origen de la partida de control: si elige las Partidas de Control del proyecto, la información pasa a los resultados operativos; si elige un subcontrato, el monto es para deducir de la valorización."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s127]
+    pagina: null
+  - n: 6
+    id: "gerencia-proyectos.generar-pedido-automatico-a-almacen#6"
+    accion: "Asigne la fecha de entrega a los recursos, por ejemplo con **Asignar fecha de entrega a TODOS los recursos**."
+    fuente: [img-ac2d4b6a947a-0000, web-https-documentacion-s10peru-com-manual-d-s127]
+    pagina: null
+    fotos:
+      - id: "340b2229aca5"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/ac2d4b6a947a.png"
+        pagina: null
+        ocr: "Rec§rso Unic Cantidad P.C. Partida de Control\nkg 59.00 01010 Acero\nae Adicionar recursos p Acero\nE Importar desde Microsoft Excel 2\nEliminar 4,300.00\nAsignar/Reasignar partida de control a TODOS los recursos\nAsignar fecha de entrega al recurso\nAsignar fecha de entrega a TODOS los recursos\nAsignar detalle de saldo del recurso"
+  - n: 7
+    id: "gerencia-proyectos.generar-pedido-automatico-a-almacen#7"
+    accion: "Asigne también Destinos específicos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s127]
+    pagina: null
+  - n: 8
+    id: "gerencia-proyectos.generar-pedido-automatico-a-almacen#8"
+    accion: "Use el botón para grabar el contenido del pedido y cerrar la ventana."
+    resultado: "El sistema por defecto envía al aprobador del pedido un e-mail, adjuntando en Excel el detalle del pedido."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s127]
+    pagina: null
+    fotos:
+      - id: "4aa896723ce6"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/4ea5b0b450f1.png"
+        pagina: null
+        caption: "Luego use el botón para grabar el contenido del pedido y cerrar la ventana. El sistema por defecto envía al aprobador del pedido un e-mail, adjuntando en Excel el detalle del pedido."
+verificacion:
+  - texto: "El aprobador del pedido recibe por defecto un e-mail con el detalle del pedido adjunto en Excel."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s127]
+errores_frecuentes: []
+relacionados: [gerencia-proyectos.generar-pedido-automatico, gerencia-proyectos.egresar-a-partida-de-control-con-pedido, gerencia-proyectos.planificar-en-cronograma-por-periodos]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s127, manual: "Manual de Gerencia de Proyectos", seccion: "3.10.1 Pedidos automáticos A Almacén para ser utilizados en una Partida de Control", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s126, manual: "Manual de Gerencia de Proyectos", seccion: "3.10 Pedidos A almacén", pagina: null}
+  - {id: img-d25b17cafe47-0000, manual: "Manual de Gerencia de Proyectos", seccion: "d25b17cafe47.png", pagina: null}
+  - {id: img-ac2d4b6a947a-0000, manual: "Manual de Gerencia de Proyectos", seccion: "ac2d4b6a947a.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

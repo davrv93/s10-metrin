@@ -1,0 +1,160 @@
+id: gerencia-proyectos.imprimir-reportes-de-la-planificacion
+version: 1
+modulo: gerencia-proyectos
+titulo: "Imprimir los reportes de la planificación"
+objetivo: "Emitir desde el escenario del Cronograma por Periodos los reportes de la planificación (cronograma por partida, valorizado contractual, cronograma y plan de utilización de recursos), en metrado o costo, y exportar su contenido a Excel."
+nivel: intermedio
+preguntas:
+  - "cómo imprimo el cronograma por partida en gerencia de proyectos"
+  - "dónde saco los reportes de la planificación del proyecto"
+  - "como imprimo el plan de utilizacion de recursos"
+  - "quiero el reporte del valorizado contractual, como lo saco"
+  - "como exporto el cronograma por periodos a excel"
+  - "necesito el cronograma valorizado para imprimir"
+  - "como saco la relacion de recursos programados por mes"
+  - "exportar actividades con sus recursos a excel desde el cronograma"
+  - "reporte de mano de obra programada por semana donde lo veo"
+aliases:
+  - "reportes de la planificación"
+  - "imprimir cronograma"
+  - "plan de utilización de recursos"
+  - "valorizado contractual"
+  - "exportar cronograma a Excel"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Cronograma por Periodos"]
+  objetos: ["reporte", "cronograma por partida", "valorizado contractual", "plan de utilización de recursos", "recursos"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.imprimir-reportes-de-la-planificacion#1"
+    accion: "Ingrese al escenario del **Cronograma por Periodos**, desde donde se emiten los reportes."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s090]
+    pagina: null
+    fotos:
+      - id: "56d401b26fcb"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/d24e4dac43bd.png"
+        pagina: null
+        caption: "Acceso al escenario"
+        ocr: "Proyectos\n= eaters\n)- SS PUENTE EN CARRETERA\n[ inicir | Gl) 2 Principal\nS| Venta d¢scompuesto\nJ S| venta\n| Meta:\nCronograma S| Linea Base\npor Perinat | eg, \\Subcontratos"
+  - n: 2
+    id: "gerencia-proyectos.imprimir-reportes-de-la-planificacion#2"
+    accion: "Con el botón de modo de visualización, elija el tipo de dato que será mostrado en el escenario: metrado o costo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s090]
+    pagina: null
+    fotos:
+      - id: "206bf3656b67"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/156685fb32a8.png"
+        pagina: null
+        caption: "Con el botón se elige el tipo de dato que será mostrado en el escenario del Cronograma por Periodos"
+        ocr: "BMY Modo de Visualizacién Le] es\nModo Para los reportes:\n@ Programado © Valorizacién  Ejecutado (OT)\nEn Metrado, el reporte de los\n; Avance cronogramas se emitiran en\nae pee metrados y los recursos en\nPorcentaje (%) cantidades.\nMetracio\n(* Costo, En Costo, el reporte de los\ncronogramas y recursos se\nemitiran en costo"
+  - n: 3
+    id: "gerencia-proyectos.imprimir-reportes-de-la-planificacion#3"
+    accion: "Elija la escala de período en la que tiene datos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s090]
+    pagina: null
+    fotos:
+      - id: "75765c68df33"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/dcc058d952a5.png"
+        pagina: null
+        caption: "También es necesaria la escala de período en el que se tiene datos."
+        ocr: "tse este btn pare ele gir la escale de periodo\nModo Programado - Cronograma metrado\n,\nVistas | Todo | Escala de periodo |Periodo Mensual ST\nPeriodo Mensual “\nPeriodo Semanal"
+  - n: 4
+    id: "gerencia-proyectos.imprimir-reportes-de-la-planificacion#4"
+    accion: "Verifique que el monto presupuestado sea el mismo que el programado; a veces varía por los redondeos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s090]
+    pagina: null
+    fotos:
+      - id: "6b09af2c0662"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/390f4aedfd63.png"
+        pagina: null
+        caption: "Verifique que el monto presupuestado sea el mismo que el programa, a veces varía por los redondeos."
+        ocr: "Elija el modo programado costa\nCronograma pir Periodos ( Meta )\nElia periodo semanal\nModo Programado - Cronograma costo (Si):\nVistas |B Todo | Escala de periodo |Periodo Semanal\nEl manto agrupado en el WBS debe ser similar al programado\nDescripcién (WBS - Actividad) costo Periodo Semanal |\n| Puente en carretera 1,061 888.0501 1,061 888.0501"
+  - n: 5
+    id: "gerencia-proyectos.imprimir-reportes-de-la-planificacion#5"
+    accion: "Para la impresión de reportes de la planificación, elija el botón y, del menú que muestre, elija una opción."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s090]
+    pagina: null
+    sub:
+      - n: 1
+        id: "gerencia-proyectos.imprimir-reportes-de-la-planificacion#5.1"
+        accion: "Elija **Cronograma por partida** para el reporte del cronograma por partida."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s090]
+        pagina: null
+        fotos:
+          - id: "12ee8ec29191"
+            ruta_o_url: "imagenes/manual-de-gerencia-proyectos/11101f188512.png"
+            pagina: null
+            caption: "2.6.4.1.1 Reporte Cronograma por partida"
+            ocr: "Cronograma por partida >) Estandar interno\n\nValorizado contractual Estandar Cliente\nCronograma\n\nPlan de utlizacién de recursos. ="
+      - n: 2
+        id: "gerencia-proyectos.imprimir-reportes-de-la-planificacion#5.2"
+        accion: "Elija **Valorizado contractual** cuando tenga avances registrados en modo valorización; visualice los datos en modo valorización costo."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s090]
+        pagina: null
+        fotos:
+          - id: "e45a32194a12"
+            ruta_o_url: "imagenes/manual-de-gerencia-proyectos/4f549ff45f63.png"
+            pagina: null
+            caption: "Para imprimir el reporte, use el botón y visualice los datos en modo valorización costo."
+            ocr: "Periodos Visibles =]\nCronograma porpartida > Esco A -]\nValorizado contractual Periodo |Abril 201. 214/201. 30/04/201.. a\nCronograma er\nPlan de utilizacién de recursos > Aceptar Cancelar\nluego,"
+      - n: 3
+        id: "gerencia-proyectos.imprimir-reportes-de-la-planificacion#5.3"
+        accion: "Elija **Cronograma** para el reporte valorizado o metrado, de acuerdo a los datos mostrados en el escenario."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s090]
+        pagina: null
+        fotos:
+          - id: "034fb91250b7"
+            ruta_o_url: "imagenes/manual-de-gerencia-proyectos/72ed198ac0dd.png"
+            pagina: null
+            caption: "Puede ser valorizado o metrado, de acuerdo a los datos mostrados en el escenario."
+            ocr: "ea\nCronograma por partida » = —\nValorizado contractual . Roar\nas Oo ¢4Qué desea imprimir?}\nCronograma\nPlan de utilizacién de recursos > L Todo Cancelar\nego,"
+      - n: 4
+        id: "gerencia-proyectos.imprimir-reportes-de-la-planificacion#5.4"
+        accion: "Elija **Plan de Utilización de Recursos** para la relación de recursos presupuestados distribuidos en los periodos programados, en cantidad o valorizado."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s090]
+        pagina: null
+        fotos:
+          - id: "b67f5b313ab6"
+            ruta_o_url: "imagenes/manual-de-gerencia-proyectos/ea4ca8d98a32.png"
+            pagina: null
+            caption: "Es la relación de recursos presupuestados distribuidos en los periodos programados. Los datos pueden ser mostrados en cantidad o valorizado de acuerdo a la elección en modo visualización."
+            ocr: "Cronograma por partida >\n\nValorizado contractual\n\nCronograma\n\nPlan de utilizacién de recursos. > Resumen » Todos los recursos<1)\nDetallado » Mano de Obra <2)\n\nMateriales <3)\nEquipos (4)\nSubcontratos +3)"
+      - n: 5
+        id: "gerencia-proyectos.imprimir-reportes-de-la-planificacion#5.5"
+        accion: "En el plan de utilización de recursos, elija la hoja con todos los recursos (mano de obra, materiales, equipos y subcontratos) o la hoja de un solo tipo de recurso."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s090]
+        pagina: null
+  - n: 6
+    id: "gerencia-proyectos.imprimir-reportes-de-la-planificacion#6"
+    accion: "Para exportar, exporte el contenido de la ventana superior a un archivo de Excel."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s090]
+    pagina: null
+    fotos:
+      - id: "b3d2d43b2dcc"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/a138f6b31b7a.png"
+        pagina: null
+        caption: "Exporte el contenido de la ventana superior a un archivo de Excel."
+        ocr: "Cronograma por Periodos\nModo Programado - Cronograma metrado\nVistas |g Todo | Escalade periodo |Periodo Mensual\nDesct| Elija este registro (A) 4brit Mayo unio Julio\n21104M10-3 | O105N0-3 | O1mBNO-3 O1/THO-3\n Puerte en carretera\nEl Brenararidf de anvenacins Pa\nContraed <Elije elnivel> +\nvos) 402234 1,517.68\n3% Recalculpr por escala\nOpciones > 340.35] 505.26\nExp 5 ROrESEe| Tent\nfl mostrar campos | I…"
+  - n: 7
+    id: "gerencia-proyectos.imprimir-reportes-de-la-planificacion#7"
+    accion: "Elija la carpeta y registre el nombre del archivo a guardar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s090]
+    pagina: null
+  - n: 8
+    id: "gerencia-proyectos.imprimir-reportes-de-la-planificacion#8"
+    accion: "Para exportar las actividades con sus recursos, elija **Actividades y Recursos** y exporte a un archivo de Excel."
+    fuente: [img-4da3c8457e37-0000, web-https-documentacion-s10peru-com-manual-d-s090]
+    pagina: null
+    fotos:
+      - id: "53501b3ea238"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/4da3c8457e37.png"
+        pagina: null
+        ocr: "6Q¢v+vGRBBeah verve = Siw tt\nActividades\n= » Actividades y Recursos"
+verificacion: []
+errores_frecuentes: []
+relacionados: [gerencia-proyectos.planificar-en-cronograma-por-periodos]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s090, manual: "Manual de Gerencia de Proyectos", seccion: "2.6.4 Resultados de la planificación", pagina: null}
+  - {id: img-4da3c8457e37-0000, manual: "Manual de Gerencia de Proyectos", seccion: "4da3c8457e37.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

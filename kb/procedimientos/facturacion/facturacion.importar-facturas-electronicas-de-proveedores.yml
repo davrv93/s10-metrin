@@ -1,0 +1,68 @@
+id: facturacion.importar-facturas-electronicas-de-proveedores
+version: 1
+modulo: facturacion
+titulo: "Importar y procesar las facturas electrónicas de los proveedores"
+objetivo: "Ingresar al ERP de manera automática las facturas que los proveedores enviaron al correo de recepción de facturas, para que queden registradas en el ERP y regularizadas con el ingreso al almacén."
+nivel: intermedio
+preguntas:
+  - "como importo las facturas electronicas de los proveedores"
+  - "como cargo al s10 las facturas que llegaron al correo"
+  - "donde esta el boton procesar facturas"
+  - "puedo registrar varias facturas de proveedor de golpe"
+  - "como regularizo la factura con el ingreso al almacen automaticamente"
+  - "importar xml de facturas de proveedores en el erp"
+  - "nuevo registro simple de facturacion como funciona"
+  - "las facturas del proveedor no aparecen pendientes de ingreso"
+  - "inportar facturas de compras electronicas"
+aliases:
+  - "importar facturas"
+  - "procesar facturas"
+  - "registro simple de facturación"
+  - "importar facturas electrónicas"
+entidades:
+  modulo: "Facturación"
+  pantallas: ["Documentos por Pagar"]
+  objetos: ["factura", "proveedor", "ingreso al almacén", "XML"]
+prerrequisitos:
+  - texto: "El proveedor debe reenviar el correo al buzón de la empresa destinado a la recepción de facturas electrónicas, incluyendo el XML y el PDF de la factura."
+    fuente: [web-https-www-s10peru-com-nuevo-registro-fac-s003]
+pasos:
+  - n: 1
+    id: "facturacion.importar-facturas-electronicas-de-proveedores#1"
+    accion: "Desde el ERP, en el escenario **Documentos por Pagar**, haga clic derecho."
+    fuente: [web-https-www-s10peru-com-nuevo-registro-fac-s004, img-94aba994b5a7-0000]
+    pagina: null
+  - n: 2
+    id: "facturacion.importar-facturas-electronicas-de-proveedores#2"
+    accion: "Seleccione la opción **Facturación Electrónica** e **Importar**."
+    resultado: "El sistema muestra todas las facturas pendientes de ingreso al sistema."
+    fuente: [web-https-www-s10peru-com-nuevo-registro-fac-s004]
+    pagina: null
+    fotos:
+      - id: "2da3db2eadb9"
+        ruta_o_url: "imagenes/s10peru-com-nuevo-registro-facturacion/94aba994b5a7.png"
+        pagina: null
+        caption: "10 Luego selecciona la opción “Facturación Electrónica” e “Importar”"
+        ocr: "eae eee\naim scrtoro Documentos por Pagar\na coNsTRUCTORA\n= como “TooDocamento [001 FACTURAS (Si) [| |B DE] wrovos rereso [erz00s fumyoomo | aa #\n+ @OESARROLLADOD |\n8 # doesannouio vi! Wal ]S}GI OO BS [eel Eom ted\nDocumentos por || OESARROLLOY FI\npeor BP YOO Aractehaca aque encabezodo dela comms que deses aquoer. [SIFT\nPrnceal Adici desde de\noe\n4 AMEDFCA MOBLIN [N'Corretvo _|Relaconado con J0C705 re…"
+  - n: 3
+    id: "facturacion.importar-facturas-electronicas-de-proveedores#3"
+    accion: "Haga clic en el botón **Procesar facturas**."
+    resultado: "Las facturas del listado son procesadas, registradas en el ERP y regularizadas con el ingreso al almacén."
+    fuente: [web-https-www-s10peru-com-nuevo-registro-fac-s004]
+    pagina: null
+    fotos:
+      - id: "91e55fa75bf9"
+        ruta_o_url: "imagenes/s10peru-com-nuevo-registro-facturacion/00b5716ef3da.png"
+        pagina: null
+        caption: "12 Luego dale clic en botón de “Procesar facturas”, las decenas de facturas del listado serán procesadas en minutos, registradas en el ERP y regularizadas con el ingreso al almacén"
+        ocr: "T GB Folder XML Sunat C:\\510200 90\". \\Edica Qa.\n$ go) [eee ie jae) | @ee@noo|: maaa-aR-|\n@ ee |\n=o 010-3937\n20380289360 - MIXERCON S.A. 16/01/2020 oO A — RUC 2OeCESIO Hf\n* Mo Fo10 - comms XS.\n* @© FO012-108585 — Sa = —\nSE) 29380289360 -MDERCONS.A. 160120201 = = Soe\n* BE cis-0220 a ee cs rs |\n© toe\n* oo\n* ™ Fo12-108884\nSNe) sence -woenconsa mpymn 1\n1P-0016\noe a)\nof\nod F012-109011\n1P-0016\nF012-10909…"
+verificacion:
+  - texto: "Las facturas procesadas quedan registradas en el ERP y regularizadas con el ingreso al almacén."
+    fuente: [web-https-www-s10peru-com-nuevo-registro-fac-s004]
+errores_frecuentes: []
+relacionados: []
+fuentes:
+  - {id: web-https-www-s10peru-com-nuevo-registro-fac-s003, manual: "Nuevo Registro Simple de Facturación - Sistema 10", seccion: "Proveedor reenvía documentos al correo de Recepción de Facturas de la empresa", pagina: null}
+  - {id: web-https-www-s10peru-com-nuevo-registro-fac-s004, manual: "Nuevo Registro Simple de Facturación - Sistema 10", seccion: "La Empresa desde el ERP, ingresa las facturas de manera automática", pagina: null}
+  - {id: img-94aba994b5a7-0000, manual: "Nuevo Registro Simple de Facturación - Sistema 10", seccion: "94aba994b5a7.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

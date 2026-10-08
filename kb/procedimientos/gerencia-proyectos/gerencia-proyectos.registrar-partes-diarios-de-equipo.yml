@@ -1,0 +1,180 @@
+id: gerencia-proyectos.registrar-partes-diarios-de-equipo
+version: 1
+modulo: gerencia-proyectos
+titulo: "Registrar los partes diarios de equipo con Excel"
+objetivo: "Registrar en una hoja Excel el trabajo diario de cada equipo por partida de control, importarlo al S10 y calcular el resumen del periodo, para controlar las horas trabajadas y cargar el costo del equipo a los resultados operativos."
+nivel: intermedio
+preguntas:
+  - "cómo registro los partes diarios de equipo en gerencia de proyectos"
+  - "como lleno el parte de equipo en excel y lo paso al s10"
+  - "dónde se registran las horas trabajadas de la maquinaria"
+  - "como importo los partes de equipo de excel"
+  - "como registro horas stand by de un equipo parado"
+  - "el volquete trabajó en dos partidas de control el mismo día, cómo lo registro"
+  - "como calculo el resumen del periodo de los partes de equipo"
+  - "como ago el parte diario del cargador frontal"
+  - "necesito mas de 5 rotaciones en el parte de equipo"
+  - "cómo pasa el costo del equipo a resultados operativos"
+aliases:
+  - "partes de equipo"
+  - "parte diario de equipo"
+  - "registrar horas de equipo"
+  - "importar partes de equipo"
+  - "calcular resumen periodo"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Partes de Equipo", "Calcular resumen periodo", "Resumen por Partida de Control"]
+  objetos: ["parte de equipo", "equipo", "partida de control", "rotación", "resultados operativos"]
+prerrequisitos:
+  - texto: "Antes de exportar los partes diarios a Excel, cree en su PC una carpeta «Partes de Equipo PC» donde se almacenarán los archivos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s219]
+  - texto: "Para registrar interferencias, ingrese por CATALOGOS – INEFERENCIA y haga un registro previo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s219]
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.registrar-partes-diarios-de-equipo#1"
+    accion: "Ingrese al escenario de **Partes de Equipo**: elija el proyecto y luego la rama **Meta**."
+    fuente: [img-6e941b3d1237-0000, web-https-documentacion-s10peru-com-manual-d-s219]
+    pagina: null
+    fotos:
+      - id: "25c2cb2f3731"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/6e941b3d1237.png"
+        pagina: null
+        ocr: "— re\n8 Escritorio\noe J (|S PUENTE EN CARRETERA\nPartes de i Principal J\nEquipo Luego, 5 Meta"
+  - n: 2
+    id: "gerencia-proyectos.registrar-partes-diarios-de-equipo#2"
+    accion: "Elija la escala de periodo semanal en **Escala periodo** y elija el número de semana."
+    fuente: [img-0191483152ae-0000, web-https-documentacion-s10peru-com-manual-d-s219]
+    pagina: null
+  - n: 3
+    id: "gerencia-proyectos.registrar-partes-diarios-de-equipo#3"
+    accion: "Haga clic derecho y elija **Exportar a Microsoft Excel** (por ejemplo, **Todo los equipos**) para exportar a Excel el parte de equipo."
+    fuente: [img-0191483152ae-0000, web-https-documentacion-s10peru-com-manual-d-s219]
+    pagina: null
+    fotos:
+      - id: "feddb8ebe8f8"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/0191483152ae.png"
+        pagina: null
+        ocr: "Partes de Eq Elja la escala de Elija el ndmera de semana)\nperiodo semanal\n\nEscala periodo |Periodo Semanal yetPeriodo | Semana 17 (2104/2010 - 25/04/2010) Mi\n\nFittra Disponibles Ba Or Bway\n\nBy # ®s | Clic derecho\n\nDescripcién Disp. |Recurso Unidl} Propietarig\n\nCargador frontal sobre llantas CAT 950 F serie { CARGADOR SOBRE LLANTAS 1C|hm | Palo, José\n\nC BS Copiar Parte CARGADOR SOBRE LLANTAS 10 hm …"
+  - n: 4
+    id: "gerencia-proyectos.registrar-partes-diarios-de-equipo#4"
+    accion: "Elija la carpeta donde se guardarán los Partes de Equipo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s219]
+    pagina: null
+    fotos:
+      - id: "b86ca79be1ff"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/3c1bdfb4fc7b.png"
+        pagina: null
+        caption: "Elija la carpeta donde se guardarán los Partes de Equipo"
+        ocr: "=\nBuscarcameta\nIngrese el directorio donde desea grabar los Partes de\n(a Partes de Equipo Pi fal\n<[ Mm »\nCarpeta:  Partes de Equipo PC"
+  - n: 5
+    id: "gerencia-proyectos.registrar-partes-diarios-de-equipo#5"
+    accion: "Para registrar los datos en el parte de equipo, elija en Excel la pestaña del día."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s219]
+    pagina: null
+    fotos:
+      - id: "b58e243b9143"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/e82870fd599b.png"
+        pagina: null
+        caption: "Para registrar los datos en el parte de equipo"
+        ocr: "S10 S.A. Parte de Equipo Miercoles 21/04]\nOBRA: PUENTE EN CARRETERA\n\nTipo: H (Normal), E (Extra), P (Parado) iC) @\n\nro @)agador oral sobretartas CaTSOF serese=e fm [ J. |. |. 1. |iLa]\n010% Crgedor fora sobre lartss CAT S50 F serie S657_[r i\nHED i\nSe\nFooeo | Soancadore rmariamendbula 18\" 2a\" son? 467m [| |_| | | Nv |\nFonene Zranda vistors 25000 onty,j020KwAe ae fmf |_| | |_|]\nFci7oifcrupe elec yono…"
+  - n: 6
+    id: "gerencia-proyectos.registrar-partes-diarios-de-equipo#6"
+    accion: "Elija el equipo para registrar los datos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s219]
+    pagina: null
+    sub:
+      - n: 1
+        id: "gerencia-proyectos.registrar-partes-diarios-de-equipo#6.1"
+        accion: "Active la celda **P.C** (partida de control) y use el combo para elegir la partida de control."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s219]
+        pagina: null
+      - n: 2
+        id: "gerencia-proyectos.registrar-partes-diarios-de-equipo#6.2"
+        accion: "Ingrese el número de horas en la celda **Stand By** (equipo parado), siempre y cuando en la ficha tenga precio."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s219]
+        pagina: null
+      - n: 3
+        id: "gerencia-proyectos.registrar-partes-diarios-de-equipo#6.3"
+        accion: "Active la celda **Tipo** (tipo de hora) y use el combo para elegir el tipo."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s219]
+        pagina: null
+      - n: 4
+        id: "gerencia-proyectos.registrar-partes-diarios-de-equipo#6.4"
+        accion: "Si hubo interferencias, active la celda **Interferencia** y use el combo para elegirla."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s219]
+        pagina: null
+  - n: 7
+    id: "gerencia-proyectos.registrar-partes-diarios-de-equipo#7"
+    accion: "Use una rotación para registrar el trabajo del equipo en una partida de control; cuando el equipo realice otra actividad o trabaje en otra partida de control, utilice otra rotación (están disponibles 5 rotaciones)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s219]
+    pagina: null
+  - n: 8
+    id: "gerencia-proyectos.registrar-partes-diarios-de-equipo#8"
+    accion: "Cuando necesite más de 5 rotaciones, duplique la fila que contiene el nombre del equipo y en la fila duplicada ingrese 2."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s219]
+    pagina: null
+  - n: 9
+    id: "gerencia-proyectos.registrar-partes-diarios-de-equipo#9"
+    accion: "Una vez lleno el parte diario del equipo, grabe y cierre Excel."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s219]
+    pagina: null
+  - n: 10
+    id: "gerencia-proyectos.registrar-partes-diarios-de-equipo#10"
+    accion: "Para importar los partes de equipo de Excel al S10, elija la escala y la semana, haga clic derecho y elija **Importar desde Microsoft Excel**."
+    fuente: [img-464beaa1cb1a-0000, web-https-documentacion-s10peru-com-manual-d-s219]
+    pagina: null
+    fotos:
+      - id: "87594dddf1b9"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/464beaa1cb1a.png"
+        pagina: null
+        ocr: "Elija la escala de ——\nElija el numero de semana)\nEscala periodo |Periodo Semanal yPPeriodo | Semana 17 (21/04/2010 - 25/04/2010) tz\nFiltro Disponibles x Sr avon,\nFY SB *s [Clic derecho\nOrden | Cédiga Deffripcin |disp. |\n1001010001 0006 | Cargador frontal sobriNgntas CAT 950 F |CARGADOR 54\na| + Exportar a Microsof Excel |\n.)|mportar de Microsoft Excel\nFES Importar desde Microsoft Excel’ Jirportar d…"
+  - n: 11
+    id: "gerencia-proyectos.registrar-partes-diarios-de-equipo#11"
+    accion: "Use el botón para **Calcular resumen periodo** de los partes de equipo."
+    fuente: [img-d6f86394fdbe-0000, web-https-documentacion-s10peru-com-manual-d-s220]
+    pagina: null
+    fotos:
+      - id: "5b289d6844b8"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/d6f86394fdbe.png"
+        pagina: null
+        ocr: "Calcular resumen periodo —\nEste proceso calcula el resumen de los pattes de equipos para\n\nellos} periodofs): [° Aceptar\nJSemana 17 (21 04/2010 - 25/04/2010) Cancelar\n\n(Ti Semana 18 (26/04/2010 - 02/05/2010) =\n\nElijala semana ‘Seleccionar todo\n\nCon datos del equipo\n\ng HGS! CO Actuales\n\n@) (by"
+    sub:
+      - n: 1
+        id: "gerencia-proyectos.registrar-partes-diarios-de-equipo#11.1"
+        accion: "Elija la semana que va a procesar."
+        fuente: [img-d6f86394fdbe-0000, web-https-documentacion-s10peru-com-manual-d-s220]
+        pagina: null
+      - n: 2
+        id: "gerencia-proyectos.registrar-partes-diarios-de-equipo#11.2"
+        accion: "Elija los precios: por defecto se calculan los partes de equipo con los precios que se tienen registrados; solo la semana donde ocurre el cambio de precios se procesa con **Actuales** y después se procesa con históricos."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s220, img-d6f86394fdbe-0000]
+        pagina: null
+      - n: 3
+        id: "gerencia-proyectos.registrar-partes-diarios-de-equipo#11.3"
+        accion: "Pulse **Aceptar** para procesar."
+        resultado: "Después del proceso, los datos pasan a resultados operativos."
+        fuente: [img-d6f86394fdbe-0000, web-https-documentacion-s10peru-com-manual-d-s220]
+        pagina: null
+verificacion:
+  - texto: "Después de calcular el resumen del periodo, los datos de los partes de equipo pasan a resultados operativos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s220]
+  - texto: "En el **Resumen por Partida de Control** se visualiza el monto semanal del trabajo del equipo que es cargado a los Resultados Operativos, con el detalle en cantidad y costo de cada equipo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s221]
+errores_frecuentes:
+  - sintoma: "Las interferencias registradas en el parte de equipo no aparecen en los resultados operativos."
+    solucion: "Es lo esperado: la información de **Interferencia** no pasa a los resultados operativos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s219]
+  - sintoma: "No puede registrar horas en la celda Stand By del equipo parado."
+    solucion: "Las horas **Stand By** se registran siempre y cuando en la ficha del equipo tenga precio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s219]
+relacionados: []
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s219, manual: "Manual de Gerencia de Proyectos", seccion: "6.8.1 Partes de Equipo (1)", pagina: null}
+  - {id: img-6e941b3d1237-0000, manual: "Manual de Gerencia de Proyectos", seccion: "6e941b3d1237.png", pagina: null}
+  - {id: img-0191483152ae-0000, manual: "Manual de Gerencia de Proyectos", seccion: "0191483152ae.png", pagina: null}
+  - {id: img-464beaa1cb1a-0000, manual: "Manual de Gerencia de Proyectos", seccion: "464beaa1cb1a.png", pagina: null}
+  - {id: img-d6f86394fdbe-0000, manual: "Manual de Gerencia de Proyectos", seccion: "d6f86394fdbe.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s220, manual: "Manual de Gerencia de Proyectos", seccion: "6.8.1 Partes de Equipo (2)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s221, manual: "Manual de Gerencia de Proyectos", seccion: "6.8.2 Resumen por Partida de Control", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

@@ -1,0 +1,161 @@
+id: gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato
+version: 1
+modulo: gerencia-proyectos
+titulo: "Registrar el adelanto en efectivo con garantía (carta fianza) de un subcontrato"
+objetivo: "Registrar en el subcontrato el porcentaje de adelanto con garantía y la carta fianza que sirve de tope para otorgar el adelanto en efectivo, y luego autorizar el pago del adelanto; la amortización en cada valorización es automática."
+nivel: intermedio
+preguntas:
+  - "cómo registro una carta fianza para el adelanto del subcontratista"
+  - "como doy un adelanto en efectivo con garantia al subcontratista"
+  - "donde marco que el subcontrato requiere garantia"
+  - "como registro la garantía del adelanto en el subcontrato"
+  - "como pago el adelanto al subcontratista despues de registrar la carta fianza"
+  - "el adelanto no puede pasar el monto de la garantia?"
+  - "la carta fianza de fiel cumplimiento sirve para el tope del adelanto"
+  - "como aviso por correo el vencimiento de la carta fianza"
+  - "adelanto con carta fiansa en subcontratos s10"
+aliases:
+  - "adelanto con garantía"
+  - "registrar carta fianza"
+  - "garantía del subcontrato"
+  - "adelanto en efectivo con garantía"
+  - "registro de la garantía"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Autorizacion de Pago", "Carta fianza"]
+  objetos: ["adelanto", "garantía", "carta de fianza", "subcontrato", "subcontratista", "expediente"]
+prerrequisitos:
+  - texto: "Es requisito haber definido el porcentaje de adelanto en la cabecera del subcontrato."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s156]
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato#1"
+    accion: "Ingrese al subcontrato y, en la cabecera de registro, registre el porcentaje de adelanto en **%Adelanto** y seleccione **Requiere garantia**."
+    fuente: [img-4893aeee333b-0000, web-https-documentacion-s10peru-com-manual-d-s156]
+    pagina: null
+    fotos:
+      - id: "a73e207cbc5e"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/4893aeee333b.png"
+        pagina: null
+        ocr: "%Adelanto| 49 Requiere garantia? 1"
+  - n: 2
+    id: "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato#2"
+    accion: "Registre la garantía: en la ventana superior registre el tipo de documento, en este caso carta de fianza."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s157]
+    pagina: null
+    fotos:
+      - id: "0942d1a45cff"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/94ecddd9979d.png"
+        pagina: null
+        caption: "En la ventana superior se registra el tipo de documento, esta vez, carta de fianza."
+        ocr: "f ‘ ‘ ‘ \\ ‘| Elija i 4 >|\nExpediente Fecha Monto Subcontrato Tipo Expediente Moneda Import Expedier\nDocumenta Tipo Modo N° Document: Emision Yencimiento Imp\nModificar Cancelar"
+      - id: "a7fa89795786"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/d93f3691135a.png"
+        pagina: null
+        caption: "En la ventana superior se registra el tipo de documento, esta vez, carta de fianza."
+        ocr: "\" x)\ncésigo 2004004 weexpedente [0001\nProyecto [CM DEO. PARA COLOCACION DE ACERO CORRUGADO\nextn 21042010 =]\nSubcontratiste (02100126 Florez, Antonio | =| |\nMoneda Jot JNUEVOS SOLES _ Monto contrato 65,663.00\nTipo [Adelanto x\ni Adelanto | Monto 8 garantizar | En expedientfis | Sako por gavantizar |__Expediente octual__]\n10,00 6,566.30 obo 6,566.30 6,566.30)\n— *\nEste dato se ingresa a\nen la celda ma…"
+    sub:
+      - n: 1
+        id: "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato#2.1"
+        accion: "En **Tipo**, elija **Adelanto**: el sistema muestra el monto a garantizar y el saldo por garantizar."
+        fuente: [img-d93f3691135a-0000, web-https-documentacion-s10peru-com-manual-d-s157]
+        pagina: null
+      - n: 2
+        id: "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato#2.2"
+        accion: "Pulse **Aceptar**."
+        fuente: [img-d93f3691135a-0000, web-https-documentacion-s10peru-com-manual-d-s157]
+        pagina: null
+  - n: 3
+    id: "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato#3"
+    accion: "Luego registre el detalle en la ventana inferior: haga clic derecho para agregar la carta fianza."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s157]
+    pagina: null
+    fotos:
+      - id: "e6badaedded1"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/8f3bfd1f4621.png"
+        pagina: null
+        caption: "Luego registre el datalle, en la ventana inferior;"
+        ocr: "Actividades | Velorizaciones \\Autorizacin de Pago Estado de Cuenta \\Retenciones \\Impuestos | D\n00001 = 97/05/2014 65,663.00 Adelanto NUEVOS SOLES 7,813.90\nClic derecho\n\nImportar de Microsoft Excel"
+  - n: 4
+    id: "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato#4"
+    accion: "En la ventana de la **Carta fianza**, registre el **Afianzador**, el número de documento, las fechas de emisión y **Vencimiento** y el **Monto Fianza**."
+    fuente: [img-b163dab1adac-0000, web-https-documentacion-s10peru-com-manual-d-s157]
+    pagina: null
+    fotos:
+      - id: "687f9b1cb3ed"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/b163dab1adac.png"
+        pagina: null
+        ocr: "=a)\ndal Carta fianza\nCéaligo 2004004 w NeDocumento [20007\nProyecta SCM. DE 0. PARA COLOCACION DE ACERO CORRUGADO.\n‘Subcontratista {12100125 Florez, Antonio a\nMoneda fr fuevos SoLes “= #41 Monto suscontrato 65,663.00\nExpediente Nt [00001 -% 0.00 Thporte Expediente 6,586.30\nAfianzador [02100161 [Banco de Crécito | Abie Documento|t-2343-10\nObservaciones Emisiin —([2™04R2010\nVencimiento [30/07/2010 >\n…"
+  - n: 5
+    id: "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato#5"
+    accion: "Registre los destinatarios con su **E-Mail** para que reciban un e-mail notificando el vencimiento y pulse **Adicionar**."
+    fuente: [img-2d9f609f6f09-0000, web-https-documentacion-s10peru-com-manual-d-s157]
+    pagina: null
+    fotos:
+      - id: "73ce475b19e4"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/2d9f609f6f09.png"
+        pagina: null
+        ocr: "Destinatanoaletas 1\nCédigo |Destinatario [E-Mail mn la fecha de vpnemmiento i\n02100126 Florez, Antonio aflorez@hotmail.com estinatario recibira un e-mal\nnotificando el vencimiento\nAdicionar Cancetar"
+  - n: 6
+    id: "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato#6"
+    accion: "Ingrese a la pestaña **AUTORIZACION DE PAGO** y realice el pago del adelanto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s157, web-https-documentacion-s10peru-com-manual-d-s154]
+    pagina: null
+    sub:
+      - n: 1
+        id: "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato#6.1"
+        accion: "En **Tipo Pago**, elija **Adelanto** y registre la fecha: la fecha del adelanto debe ser antes de la primera valorización."
+        fuente: [img-6bb3715d247e-0000, web-https-documentacion-s10peru-com-manual-d-s154]
+        pagina: null
+        fotos:
+          - id: "a7fab704f17a"
+            ruta_o_url: "imagenes/manual-de-gerencia-proyectos/6bb3715d247e.png"
+            pagina: null
+            ocr: "[ x\nee i=)\nCédigo Tipo Pago | Adelanto ¥| WePago 00005)\n\nAdelanto\nPrevents [Sc M, DE ©. PARA COLOCACION DE AqPago @ cuenta\nVelorizacién\nSubcontratista [02100126 FFiorez, Antonio —_[Dev. Retenciones | da\nObservacién\nLa fecha del adelanto\ndebe ser antes de la\nFecha [2100472010 +] primera valorizacion\nces oe [on J’ Este monto es exitabe\nTope adelanto Pagada Saldoa pagar Base impopinle _Impuesto Pago …"
+      - n: 2
+        id: "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato#6.2"
+        accion: "Haga clic derecho sobre el pago del adelanto: primero apruébelo y luego imprímalo."
+        fuente: [img-18df7436e38d-0000, web-https-documentacion-s10peru-com-manual-d-s154]
+        pagina: null
+        fotos:
+          - id: "f1422c90dd88"
+            ruta_o_url: "imagenes/manual-de-gerencia-proyectos/18df7436e38d.png"
+            pagina: null
+            ocr: "Numero Tipo Pago N* Valorizacién| Fechat | Otorgado _ Importe Neto Saldo\nWf | oo001 pict Clic derecho |'813.90 6,566.30 7,813.90|\nPrimero apruebe\nLuego imprima"
+      - n: 3
+        id: "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato#6.3"
+        accion: "Alcance al subcontratista el reporte de **Autorizacion de Pago** para que presente la factura con los montos mostrados."
+        fuente: [img-f4dc70d097a9-0000, web-https-documentacion-s10peru-com-manual-d-s154]
+        pagina: null
+        fotos:
+          - id: "7cf9914985b5"
+            ruta_o_url: "imagenes/manual-de-gerencia-proyectos/f4dc70d097a9.png"
+            pagina: null
+            ocr: "Autorizacion de Pago Pagina 1\nProyecto 2004 PUENTE EN CARRETERA\nSubcontrato 02004004 SC M. DE 0, PARACOLOC ACION DE ACERO CORRUGADO\nN? Subcontrato\nContratista 02100128 Florez, Antonio\nN* Orden Servicio\nNumero oooot\nFecha 2104/2010\nBase Im ponible 6,566.30\nIm puesto 1,247.60 | Alcance al subcontratista este\npepe 7.81330 | reporte para que presente factura\nim porte neto zei3s0 (con los montos mostra…"
+verificacion:
+  - texto: "Una vez registrado el porcentaje de adelanto y la garantía, la amortización del adelanto en cada valorización es automática."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s156]
+errores_frecuentes:
+  - sintoma: "No puede otorgar un adelanto en efectivo mayor que la garantía registrada."
+    solucion: "El monto de la garantía es un tope para el otorgamiento del adelanto en efectivo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s156]
+  - sintoma: "La carta de fianza por fiel cumplimiento no aumenta el tope del adelanto."
+    solucion: "Es lo esperado: la carta de fianza por fiel cumplimiento no es tomada en cuenta para efectos del tope del adelanto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s157]
+  - sintoma: "El adelanto no se amortiza en las valorizaciones del subcontratista."
+    solucion: "Registre el pago del adelanto antes de efectuar la primera valorización del subcontratista para que el sistema efectúe automáticamente las amortizaciones: no existe la opción para amortizar manualmente."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s161]
+relacionados: [gerencia-proyectos.registrar-subcontrato, gerencia-proyectos.registrar-factura-del-subcontratista]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s156, manual: "Manual de Gerencia de Proyectos", seccion: "4.6.8 Adelanto en efectivo con garantía", pagina: null}
+  - {id: img-4893aeee333b-0000, manual: "Manual de Gerencia de Proyectos", seccion: "4893aeee333b.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s157, manual: "Manual de Gerencia de Proyectos", seccion: "4.6.8.1 Registro de la garantía", pagina: null}
+  - {id: img-d93f3691135a-0000, manual: "Manual de Gerencia de Proyectos", seccion: "d93f3691135a.png", pagina: null}
+  - {id: img-b163dab1adac-0000, manual: "Manual de Gerencia de Proyectos", seccion: "b163dab1adac.png", pagina: null}
+  - {id: img-2d9f609f6f09-0000, manual: "Manual de Gerencia de Proyectos", seccion: "2d9f609f6f09.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s154, manual: "Manual de Gerencia de Proyectos", seccion: "4.6.6 Adelanto en efectivo", pagina: null}
+  - {id: img-6bb3715d247e-0000, manual: "Manual de Gerencia de Proyectos", seccion: "6bb3715d247e.png", pagina: null}
+  - {id: img-18df7436e38d-0000, manual: "Manual de Gerencia de Proyectos", seccion: "18df7436e38d.png", pagina: null}
+  - {id: img-f4dc70d097a9-0000, manual: "Manual de Gerencia de Proyectos", seccion: "f4dc70d097a9.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s161, manual: "Manual de Gerencia de Proyectos", seccion: "4.6.10.2 Amortización de adelantos", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

@@ -1,0 +1,82 @@
+id: gerencia-proyectos.registrar-incremento-de-obra
+version: 1
+modulo: gerencia-proyectos
+titulo: "Registrar un incremento de obra"
+objetivo: "Modificar el alcance del proyecto (presupuesto meta) adicionando nuevas partidas y nuevos recursos desde el módulo de Presupuestos, ya sea por errores del ejecutor o por adicionales que ordena el propietario."
+nivel: intermedio
+preguntas:
+  - "cómo registro un incremento de obra"
+  - "como agrego partidas nuevas al presupuesto meta del proyecto"
+  - "donde registro los recursos no presupuestados"
+  - "como hago un adicional de obra que paga el propietario"
+  - "que es la bolsa de recursos no presupuestados"
+  - "se me olvidaron partidas en el presupuesto como las agrego al proyecto"
+  - "como registro mayores metrados en gerencia de proyectos"
+  - "incremento de obra s10 como se ase"
+aliases:
+  - "incremento de obra"
+  - "adicional de obra"
+  - "mayores metrados"
+  - "recursos no presupuestados"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Hoja del Presupuesto"]
+  objetos: ["presupuesto meta", "partida", "metrado", "análisis de precios unitarios", "recursos no presupuestados", "rama venta"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.registrar-incremento-de-obra#1"
+    accion: "En el módulo de Presupuestos, ingrese a la **Hoja del Presupuesto** del proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s091, img-779868bedd93-0000]
+    pagina: null
+    fotos:
+      - id: "0eca7b1a52d8"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/779868bedd93.png"
+        pagina: null
+        ocr: "[ressruesos]\naa\nHoja del\nPresupuesto\nConsidere todas las partidas que\n= wg Escritorio fueron omitidas u olvidadas y que\nE)-S PUENTE EN CARRETERA meta seran financiadas par el contratista\n3 Estructuras\n£5] Gastos generales Considere las partidas adicionales ordenadas\nS| Mayores metracos y seran pagadas por el propietario\n| Adicional 4"
+  - n: 2
+    id: "gerencia-proyectos.registrar-incremento-de-obra#2"
+    accion: "Si el incremento es por un error al elaborar los metrados o los análisis de precios unitarios (a cargo del ejecutor), elabore el presupuesto en el módulo de Presupuestos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s091]
+    pagina: null
+    fotos:
+      - id: "1e2af1f89662"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/611c16c822b5.png"
+        pagina: null
+        caption: "Caso a: Por error al momento de elaborar los metrados y también en los análisis de precios unitarios, este monto está a cargo del ejecutor. En el módulo de presupuestos elabore el presupuesto:"
+        ocr: "ea del Presusuesia\n003 Mayores metrados cD. SI741.00 Cantidad g\nFecha: 06/01/2014 Lugar: URUBAMBA Jornada: 8 horas «items 3 > Uttimo proc\n[item |\" Descripcisn tract\n(01 EIMNICREMENTO DE OBRA\noOo 01.01 ELIMINACION DE MATERIAL EXCEDENTE CON EQUIPO HASTA15 km m3 180.00\" <b)\n| wd 100\n4 em\nEar | | Bey) 900334020101 (040200601) —_Jornada=8 | pManode Obra 0.00\nBOLSA DE RECURSOS NO PRESUPLESTADOS WMiMeter…"
+    sub:
+      - n: 1
+        id: "gerencia-proyectos.registrar-incremento-de-obra#2.1"
+        accion: "Registre una partida **BOLSA DE RECURSOS NO PRESUPUESTADOS**."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s091]
+        pagina: null
+      - n: 2
+        id: "gerencia-proyectos.registrar-incremento-de-obra#2.2"
+        accion: "Registre el metrado de la partida."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s091]
+        pagina: null
+      - n: 3
+        id: "gerencia-proyectos.registrar-incremento-de-obra#2.3"
+        accion: "En el análisis de precios unitarios, ingrese los recursos no presupuestados, su cantidad y su precio."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s091]
+        pagina: null
+      - n: 4
+        id: "gerencia-proyectos.registrar-incremento-de-obra#2.4"
+        accion: "Registre las nuevas partidas que serán ejecutadas en el proyecto, con su metrado y su análisis de precios unitarios."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s091]
+        pagina: null
+  - n: 3
+    id: "gerencia-proyectos.registrar-incremento-de-obra#3"
+    accion: "Si el incremento es por orden del propietario (adicional que paga quien lo ordena), elabore un presupuesto para adicionarlo a la rama venta, con la finalidad de valorizar y cobrar al propietario."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s091]
+    pagina: null
+verificacion:
+  - texto: "Todos los cambios que realice en el presupuesto se reflejan en el proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s091]
+errores_frecuentes: []
+relacionados: [gerencia-proyectos.asignar-presupuestos-al-proyecto, gerencia-proyectos.valorizar-el-contrato]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s091, manual: "Manual de Gerencia de Proyectos", seccion: "2.7 Incremento de obra", pagina: null}
+  - {id: img-779868bedd93-0000, manual: "Manual de Gerencia de Proyectos", seccion: "779868bedd93.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

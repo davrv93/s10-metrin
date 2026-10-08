@@ -588,6 +588,112 @@
   },
   "archivo": "almacenes/almacenes.consultar-kardex.yml"
  },
+ "almacenes.consultar-recursos-por-pedido": {
+  "titulo": "Consultar en qué pedido está un recurso y su seguimiento",
+  "modulo": "almacenes",
+  "nivel": "basico",
+  "n_pasos": 6,
+  "preguntas": [
+   "cómo sé en qué pedido está un recurso",
+   "donde veo los pedidos en los que se pidió el alambre",
+   "como veo el seguimiento de un pedido de materiales en almacenes",
+   "ya aprobaron el pedido, dónde veo el pedido de compra que se generó",
+   "como rastreo el camino que siguio un pedido",
+   "recursos por pedido para que sirve",
+   "en que pedido esta el cemento que pidio el residente"
+  ],
+  "aliases": [
+   "recursos por pedido",
+   "seguimiento del recurso",
+   "documentos generados del pedido",
+   "ver pedido del recurso"
+  ],
+  "entidades": {
+   "modulo": "Almacenes",
+   "pantallas": [
+    "Recursos por Pedido"
+   ],
+   "objetos": [
+    "recurso",
+    "pedido",
+    "pedido de compra",
+    "pedido a almacén"
+   ]
+  },
+  "archivo": "almacenes/almacenes.consultar-recursos-por-pedido.yml"
+ },
+ "almacenes.consultar-resultados-por-destino-especifico": {
+  "titulo": "Consultar los resultados por destinos específicos",
+  "modulo": "almacenes",
+  "nivel": "basico",
+  "n_pasos": 7,
+  "preguntas": [
+   "cómo veo cuánto material se fue a cada destino específico",
+   "donde veo los resultados por destinos especificos en almacenes",
+   "quiero saber lo que se egresó a los cimientos del edificio",
+   "como saco el valorizado de los recursos egresados por destino especifico",
+   "resultados por destino especifico no me muestra nada, por que",
+   "como veo los egresos al piso 2 entre dos fechas",
+   "en que guias de egreso esta el recurso que fue a un destino especifico"
+  ],
+  "aliases": [
+   "resultados por destinos específicos",
+   "resultados por destino específico",
+   "valorizado por destino específico",
+   "egresos por destino específico"
+  ],
+  "entidades": {
+   "modulo": "Almacenes",
+   "pantallas": [
+    "Resultados por Destinos Específicos"
+   ],
+   "objetos": [
+    "destino específico",
+    "recurso",
+    "período",
+    "documentos de egreso"
+   ]
+  },
+  "archivo": "almacenes/almacenes.consultar-resultados-por-destino-especifico.yml"
+ },
+ "almacenes.definir-techo-del-proyecto": {
+  "titulo": "Definir el techo del proyecto y los responsables del almacén",
+  "modulo": "almacenes",
+  "nivel": "intermedio",
+  "n_pasos": 9,
+  "preguntas": [
+   "cómo defino el techo del proyecto en almacenes",
+   "como hago para que al pedir solo salgan los recursos del presupuesto",
+   "qué es el techo libre y cómo lo activo",
+   "dónde pongo la serie de la guía de remisión del proyecto",
+   "como cambio los decimales de las guias de ingreso y egreso",
+   "como marco al responsable del almacen en el proyecto",
+   "al hacer un pedido me sale todo el catalogo de recursos, por que",
+   "la obra todavia no tiene presupuesto, como pido materiales igual"
+  ],
+  "aliases": [
+   "techo del proyecto",
+   "definir techo",
+   "techo libre",
+   "responsable del almacén",
+   "decimales de las guías"
+  ],
+  "entidades": {
+   "modulo": "Almacenes",
+   "pantallas": [
+    "Datos Generales",
+    "Techo Libre"
+   ],
+   "objetos": [
+    "proyecto",
+    "techo",
+    "Guía de Remisión",
+    "presupuestos",
+    "pedido"
+   ]
+  },
+  "archivo": "almacenes/almacenes.definir-techo-del-proyecto.yml"
+ },
  "almacenes.registrar-documento-por-pagar": {
   "titulo": "Registrar un documento por pagar",
   "modulo": "almacenes",
@@ -710,6 +816,153 @@
    ]
   },
   "archivo": "almacenes/almacenes.registrar-egreso-para-fabricacion.yml"
+ },
+ "almacenes.registrar-egreso-por-bajas-y-mermas": {
+  "titulo": "Dar de baja recursos deteriorados con un egreso por bajas y mermas",
+  "modulo": "almacenes",
+  "nivel": "basico",
+  "n_pasos": 8,
+  "preguntas": [
+   "cómo doy de baja un material malogrado en el almacén",
+   "se mojaron unas bolsas de cemento, cómo las saco del stock",
+   "como hago un egreso por bajas y mermas",
+   "que partida de control uso para las mermas del almacen",
+   "como registro las perdidas por manipuleo en almacenes",
+   "a qué precio sale un recurso dado de baja",
+   "como descuento del stock lo que se deterioro"
+  ],
+  "aliases": [
+   "egreso por bajas y mermas",
+   "EBM",
+   "dar de baja",
+   "mermas del almacén",
+   "recursos deteriorados"
+  ],
+  "entidades": {
+   "modulo": "Almacenes",
+   "pantallas": [
+    "Egresos"
+   ],
+   "objetos": [
+    "recurso",
+    "stock",
+    "partida de control",
+    "precio promedio"
+   ]
+  },
+  "archivo": "almacenes/almacenes.registrar-egreso-por-bajas-y-mermas.yml"
+ },
+ "almacenes.registrar-egreso-por-devolucion-al-proveedor": {
+  "titulo": "Devolver recursos al proveedor con un egreso por devolución",
+  "modulo": "almacenes",
+  "nivel": "intermedio",
+  "n_pasos": 8,
+  "preguntas": [
+   "cómo devuelvo materiales al proveedor en almacenes",
+   "el proveedor mandó cemento en mal estado, cómo lo devuelvo en el sistema",
+   "como hago un egreso por devolucion al proveedor",
+   "como devuelvo recursos que entraron con orden de compra",
+   "el material no cumple las especificaciones, como registro la devolucion",
+   "qué precio toma la devolución al proveedor",
+   "me equivoque al pedir un material y ya lo ingrese, como se lo regreso al proveedor",
+   "egreso por devolucion por orden de compra edoc"
+  ],
+  "aliases": [
+   "egreso por devolución al proveedor",
+   "devolución al proveedor",
+   "EDOC",
+   "egreso por devolución por orden de compra",
+   "devolver al proveedor"
+  ],
+  "entidades": {
+   "modulo": "Almacenes",
+   "pantallas": [
+    "Egresos"
+   ],
+   "objetos": [
+    "proveedor",
+    "recurso",
+    "orden de compra",
+    "precio promedio",
+    "ingreso por compra"
+   ]
+  },
+  "archivo": "almacenes/almacenes.registrar-egreso-por-devolucion-al-proveedor.yml"
+ },
+ "almacenes.registrar-egreso-por-prestamo": {
+  "titulo": "Prestar recursos del almacén con un egreso por préstamo",
+  "modulo": "almacenes",
+  "nivel": "basico",
+  "n_pasos": 9,
+  "preguntas": [
+   "cómo registro un préstamo de materiales a otra obra",
+   "le vamos a prestar andamios a un subcontratista, cómo lo saco del almacén",
+   "como hago un egreso por prestamo",
+   "como presto cemento a otro almacen del mismo proyecto",
+   "dónde veo lo que le presté a otros proyectos",
+   "como registro herramientas prestadas a un obrero",
+   "egreso por prestamo requisitos"
+  ],
+  "aliases": [
+   "egreso por préstamo",
+   "EP",
+   "prestar recursos",
+   "lo que presté",
+   "préstamo a otro proyecto"
+  ],
+  "entidades": {
+   "modulo": "Almacenes",
+   "pantallas": [
+    "Egresos",
+    "Préstamos"
+   ],
+   "objetos": [
+    "recurso",
+    "stock",
+    "socio de negocio",
+    "proyecto",
+    "almacén"
+   ]
+  },
+  "archivo": "almacenes/almacenes.registrar-egreso-por-prestamo.yml"
+ },
+ "almacenes.registrar-egreso-por-venta-por-transferencia": {
+  "titulo": "Registrar un egreso por venta por transferencia a otro proyecto",
+  "modulo": "almacenes",
+  "nivel": "intermedio",
+  "n_pasos": 13,
+  "preguntas": [
+   "cómo vendo materiales del almacén a otra obra",
+   "como hago un egreso por venta por transferencia",
+   "quiero venderle cemento a otro proyecto de la empresa, cómo lo registro",
+   "qué es el EVT en almacenes",
+   "como registro la venta de recursos a otro proyecto en s10",
+   "la otra obra nos vendió fierro, cómo lo ingreso a mi almacén",
+   "egreso por venta por pedido como se hace",
+   "como se hace el pedido para vender a otro almacen"
+  ],
+  "aliases": [
+   "egreso por venta por transferencia",
+   "EVT",
+   "venta a otro proyecto",
+   "egreso por venta por pedido",
+   "adicionar desde venta de otro proyecto"
+  ],
+  "entidades": {
+   "modulo": "Almacenes",
+   "pantallas": [
+    "Egreso por Venta por Transferencia",
+    "Ingreso por Compra"
+   ],
+   "objetos": [
+    "pedido",
+    "recurso",
+    "stock",
+    "proyecto destino",
+    "almacén destino"
+   ]
+  },
+  "archivo": "almacenes/almacenes.registrar-egreso-por-venta-por-transferencia.yml"
  },
  "almacenes.registrar-ingreso-por-ajuste-de-cantidad": {
   "titulo": "Registrar un ingreso por ajuste de cantidad",
@@ -1014,6 +1267,42 @@
   },
   "archivo": "almacenes/almacenes.registrar-partidas-de-control-del-proyecto.yml"
  },
+ "almacenes.registrar-periodo-contable": {
+  "titulo": "Registrar los periodos contables y abrir el mes de trabajo",
+  "modulo": "almacenes",
+  "nivel": "intermedio",
+  "n_pasos": 6,
+  "preguntas": [
+   "cómo abro el periodo contable en almacenes",
+   "como genero los periodos del año nuevo en s10 almacenes",
+   "no puedo registrar en el mes porque el periodo está cerrado",
+   "dónde cambio el estado del periodo a abierto",
+   "como agrego un año nuevo a los periodos contables",
+   "como elimino un periodo contable que cree por error",
+   "periodo contable cerrado como lo abro"
+  ],
+  "aliases": [
+   "periodo contable",
+   "periodos contables",
+   "abrir periodo",
+   "registrar nuevo año",
+   "estado del periodo"
+  ],
+  "entidades": {
+   "modulo": "Almacenes",
+   "pantallas": [
+    "Periodo Contable",
+    "Periodos Contables por Empresa"
+   ],
+   "objetos": [
+    "periodo",
+    "año",
+    "mes",
+    "estado"
+   ]
+  },
+  "archivo": "almacenes/almacenes.registrar-periodo-contable.yml"
+ },
  "almacenes.registrar-tipo-de-documento": {
   "titulo": "Registrar un tipo de documento y su impuesto",
   "modulo": "almacenes",
@@ -1054,6 +1343,42 @@
    ]
   },
   "archivo": "almacenes/almacenes.registrar-tipo-de-documento.yml"
+ },
+ "almacenes.registrar-ubicacion-fisica": {
+  "titulo": "Registrar la ubicación física del almacén y asignarla a los recursos",
+  "modulo": "almacenes",
+  "nivel": "intermedio",
+  "n_pasos": 7,
+  "preguntas": [
+   "cómo registro la ubicación de los materiales dentro del almacén",
+   "como asigno un estante a un recurso en s10 almacenes",
+   "donde registro los sectores y estantes del almacen",
+   "como pongo en que gaveta esta cada material",
+   "no me aparecen ubicaciones para asignar al recurso",
+   "ubicacion fisica del almacen como se configura",
+   "quiero saber en qué estante está el cemento, cómo lo registro"
+  ],
+  "aliases": [
+   "ubicación física",
+   "registrar ubicación física",
+   "asignar ubicación al recurso",
+   "croquis del almacén",
+   "estantes del almacén"
+  ],
+  "entidades": {
+   "modulo": "Almacenes",
+   "pantallas": [
+    "Ubicación física",
+    "Stock"
+   ],
+   "objetos": [
+    "ubicación física",
+    "almacén",
+    "recurso",
+    "croquis"
+   ]
+  },
+  "archivo": "almacenes/almacenes.registrar-ubicacion-fisica.yml"
  },
  "almacenes.registrar-usuario-y-asignar-permisos": {
   "titulo": "Registrar un usuario del módulo de Almacenes y asignarle permisos",
@@ -2918,6 +3243,45 @@
   },
   "archivo": "facturacion-electronica/facturacion-electronica.recuperar-contrasena-del-portal.yml"
  },
+ "facturacion.actualizar-catalogo-de-detracciones-y-percepciones": {
+  "titulo": "Actualizar los catálogos de ítems de detracciones y percepciones",
+  "modulo": "facturacion",
+  "nivel": "intermedio",
+  "n_pasos": 7,
+  "preguntas": [
+   "sunat cambio el porcentaje de detraccion, donde lo actualizo en s10",
+   "donde esta el catalogo de detracciones",
+   "como modifico el monto minimo de una detraccion",
+   "como actualizo el porcentaje de percepcion de un item",
+   "como registro el historial de cambios de porcentaje de detraccion",
+   "catalogo de items de percepciones en facturacion",
+   "agregar un item nuevo de detraccion",
+   "porsentaje de detraccion desactualizado en el sistema",
+   "no me calcula la percepcion aunque el recurso tiene el item"
+  ],
+  "aliases": [
+   "catálogo de detracciones",
+   "catálogo de percepciones",
+   "ítems de detracción",
+   "actualizar detracciones",
+   "actualizar percepciones"
+  ],
+  "entidades": {
+   "modulo": "Facturación",
+   "pantallas": [
+    "Catálogo de Ítems Detracciones",
+    "Catálogo de Ítems Percepciones"
+   ],
+   "objetos": [
+    "detracción",
+    "percepción",
+    "ítem",
+    "porcentaje",
+    "recurso"
+   ]
+  },
+  "archivo": "facturacion/facturacion.actualizar-catalogo-de-detracciones-y-percepciones.yml"
+ },
  "facturacion.anular-venta-sperant": {
   "titulo": "Anular una venta inmobiliaria (Sperant – S10)",
   "modulo": "facturacion",
@@ -3112,6 +3476,42 @@
    ]
   },
   "archivo": "facturacion/facturacion.definir-usuarios-y-accesos.yml"
+ },
+ "facturacion.importar-facturas-electronicas-de-proveedores": {
+  "titulo": "Importar y procesar las facturas electrónicas de los proveedores",
+  "modulo": "facturacion",
+  "nivel": "intermedio",
+  "n_pasos": 3,
+  "preguntas": [
+   "como importo las facturas electronicas de los proveedores",
+   "como cargo al s10 las facturas que llegaron al correo",
+   "donde esta el boton procesar facturas",
+   "puedo registrar varias facturas de proveedor de golpe",
+   "como regularizo la factura con el ingreso al almacen automaticamente",
+   "importar xml de facturas de proveedores en el erp",
+   "nuevo registro simple de facturacion como funciona",
+   "las facturas del proveedor no aparecen pendientes de ingreso",
+   "inportar facturas de compras electronicas"
+  ],
+  "aliases": [
+   "importar facturas",
+   "procesar facturas",
+   "registro simple de facturación",
+   "importar facturas electrónicas"
+  ],
+  "entidades": {
+   "modulo": "Facturación",
+   "pantallas": [
+    "Documentos por Pagar"
+   ],
+   "objetos": [
+    "factura",
+    "proveedor",
+    "ingreso al almacén",
+    "XML"
+   ]
+  },
+  "archivo": "facturacion/facturacion.importar-facturas-electronicas-de-proveedores.yml"
  },
  "facturacion.importar-saldos-por-cobrar": {
   "titulo": "Importar saldos por cobrar desde Excel",
@@ -3501,6 +3901,116 @@
   },
   "archivo": "facturacion/facturacion.registrar-reembolso.yml"
  },
+ "facturacion.sincronizar-proyecto-con-sperant": {
+  "titulo": "Sincronizar un proyecto del S10 con Sperant",
+  "modulo": "facturacion",
+  "nivel": "intermedio",
+  "n_pasos": 5,
+  "preguntas": [
+   "como sincronizo un proyecto de s10 con sperant",
+   "como relaciono el proyecto inmobiliario con sperant",
+   "donde activo la gestion inmobiliaria del proyecto",
+   "como se si mi proyecto ya esta sincronizado con sperant",
+   "el campo proyecto sperant me sale vacio",
+   "integracion sperant s10 paso para enlazar proyectos",
+   "sincronisacion de proyectos sperant",
+   "que tengo que configurar en datos adicionales para sperant"
+  ],
+  "aliases": [
+   "sincronizar proyecto",
+   "sincronización de proyectos",
+   "proyecto sperant",
+   "relacionar proyecto con sperant"
+  ],
+  "entidades": {
+   "modulo": "Facturación",
+   "pantallas": [
+    "Datos generales",
+    "Datos Adicionales",
+    "catálogo de proyectos"
+   ],
+   "objetos": [
+    "proyecto",
+    "Sperant",
+    "Proyecto Sperant"
+   ]
+  },
+  "archivo": "facturacion/facturacion.sincronizar-proyecto-con-sperant.yml"
+ },
+ "gerencia-proyectos.agregar-periodos-en-resultados-operativos": {
+  "titulo": "Agregar periodos a la consulta de resultados operativos",
+  "modulo": "gerencia-proyectos",
+  "nivel": "basico",
+  "n_pasos": 5,
+  "preguntas": [
+   "cómo agrego periodos en resultados operativos",
+   "no me salen las semanas en resultados operativos del proyecto",
+   "como hago visibles los periodos en resultados operativos",
+   "que cambia si marco mostrar acumulados al agregar periodos",
+   "como elijo un rango de semanas en resultados operativos",
+   "solo me deja elegir una semana en resultados operativos",
+   "donde esta el catalogo de periodos en resultados operativos",
+   "resultados operativos s10 como agregar semanas"
+  ],
+  "aliases": [
+   "agregar periodos",
+   "periodos en resultados operativos",
+   "hacer visibles los periodos",
+   "catálogo de periodos"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "Resultados Operativos",
+    "Catálogo de Periodos"
+   ],
+   "objetos": [
+    "periodo semanal",
+    "escala de periodo",
+    "periodo"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.agregar-periodos-en-resultados-operativos.yml"
+ },
+ "gerencia-proyectos.amortizar-adelantos-y-pagos-a-cuenta": {
+  "titulo": "Amortizar los adelantos y los pagos a cuenta en la valorización del subcontrato",
+  "modulo": "gerencia-proyectos",
+  "nivel": "intermedio",
+  "n_pasos": 8,
+  "preguntas": [
+   "cómo se amortiza el adelanto del subcontratista en la valorización",
+   "donde veo la amortizacion del adelanto del subcontrato",
+   "como amortizo un pago a cuenta en la valorizacion",
+   "el adelanto no se amortiza en la valorización qué hago",
+   "se puede amortizar el adelanto manualmente",
+   "como descuento los pagos a cuenta al valorizar el subcontrato",
+   "donde veo el monto amortizado en el resumen de la valorizacion",
+   "como amortisar adelanto subcontrato s10"
+  ],
+  "aliases": [
+   "amortización de adelantos",
+   "amortizar pagos a cuenta",
+   "amortizar adelanto del subcontrato",
+   "amortización en la valorización"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "Subcontratos",
+    "AMORTIZACION DE ADELANTOS",
+    "AMORTIZACION DE PAGOS A CUENTA",
+    "RESUMEN VALORIZACION"
+   ],
+   "objetos": [
+    "subcontrato",
+    "valorización",
+    "adelanto",
+    "pagos a cuenta",
+    "subcontratista"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.amortizar-adelantos-y-pagos-a-cuenta.yml"
+ },
  "gerencia-proyectos.aprobar-valorizacion-del-subcontrato": {
   "titulo": "Aprobar la valorización de un subcontrato y autorizar su pago",
   "modulo": "gerencia-proyectos",
@@ -3540,6 +4050,44 @@
   },
   "archivo": "gerencia-proyectos/gerencia-proyectos.aprobar-valorizacion-del-subcontrato.yml"
  },
+ "gerencia-proyectos.asignar-actividades-a-partidas-de-control": {
+  "titulo": "Asignar las actividades del WBS a las partidas de control",
+  "modulo": "gerencia-proyectos",
+  "nivel": "intermedio",
+  "n_pasos": 6,
+  "preguntas": [
+   "cómo asigno actividades a una partida de control",
+   "donde se asignan las partidas a las partidas de control",
+   "como clasifico las actividades por partida de control",
+   "mis partidas de control salen en cero en resultados operativos",
+   "como verifico que todas las actividades esten asignadas a partidas de control",
+   "tengo que asignar tambien en la rama venta",
+   "como asigno actividades a la partida de contol en gerencia",
+   "quiero ver si gano o pierdo por partida de control"
+  ],
+  "aliases": [
+   "asignar actividades a partidas de control",
+   "clasificación de actividades",
+   "asignar partida de control",
+   "partidas de control del WBS"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "Clasificación de Actividades",
+    "Partidas de Control",
+    "Resultados Operativos"
+   ],
+   "objetos": [
+    "partida de control",
+    "actividad",
+    "WBS",
+    "rama venta",
+    "metrados"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.asignar-actividades-a-partidas-de-control.yml"
+ },
  "gerencia-proyectos.asignar-presupuestos-al-proyecto": {
   "titulo": "Asignar presupuestos al proyecto",
   "modulo": "gerencia-proyectos",
@@ -3577,6 +4125,76 @@
    ]
   },
   "archivo": "gerencia-proyectos/gerencia-proyectos.asignar-presupuestos-al-proyecto.yml"
+ },
+ "gerencia-proyectos.calcular-cantidad-de-equipos": {
+  "titulo": "Calcular la cantidad de equipos que se utilizará en el proyecto",
+  "modulo": "gerencia-proyectos",
+  "nivel": "intermedio",
+  "n_pasos": 7,
+  "preguntas": [
+   "cómo sé cuántos equipos necesito en la obra",
+   "como calculo la cantidad de equipos del proyecto",
+   "donde veo las horas maquina programadas por semana",
+   "como veo las horas de volquete que necesito esta semana",
+   "cuantos cargadores frontales necesito, como lo calculo en s10",
+   "como muestro actividades y recursos en el cronograma por periodos",
+   "cantidad de equipos que se utilizara en el proyecto",
+   "horas maquina en el cronograma, como las veo"
+  ],
+  "aliases": [
+   "cantidad de equipos",
+   "calcular equipos",
+   "horas máquina por semana",
+   "equipos necesarios"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "Cronograma por periodos"
+   ],
+   "objetos": [
+    "equipo",
+    "horas máquina",
+    "actividad",
+    "rama meta"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.calcular-cantidad-de-equipos.yml"
+ },
+ "gerencia-proyectos.calificar-techo-de-subcontratos": {
+  "titulo": "Calificar el techo de un subcontrato presupuestado",
+  "modulo": "gerencia-proyectos",
+  "nivel": "intermedio",
+  "n_pasos": 4,
+  "preguntas": [
+   "cómo califico el techo de un subcontrato en gerencia de proyectos",
+   "dónde se define el techo de los subcontratos",
+   "tengo SC PRUEBAS DE CONCRETO presupuestado y necesito pedir rotura de briquetas, cómo hago",
+   "como edito el techo precio de un subcontrato",
+   "como agrego un recurso del catalogo al techo de subcontratos",
+   "como hago que el recurso principal del subcontrato no sea pedible",
+   "techo de subcontratos s10 paso a paso",
+   "como asigno un equivalente a un subcontrato presupuestado"
+  ],
+  "aliases": [
+   "techo subcontratos",
+   "techo de subcontratos",
+   "calificar techo de subcontrato",
+   "editar techo precio de subcontrato"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "Subcontratos"
+   ],
+   "objetos": [
+    "recurso",
+    "techo",
+    "recurso principal",
+    "subcontrato"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.calificar-techo-de-subcontratos.yml"
  },
  "gerencia-proyectos.configurar-calendario-del-proyecto": {
   "titulo": "Configurar el calendario del proyecto",
@@ -3616,6 +4234,193 @@
   },
   "archivo": "gerencia-proyectos/gerencia-proyectos.configurar-calendario-del-proyecto.yml"
  },
+ "gerencia-proyectos.configurar-conceptos-y-jornal-por-categoria": {
+  "titulo": "Configurar los conceptos remunerados y el jornal por categoría",
+  "modulo": "gerencia-proyectos",
+  "nivel": "intermedio",
+  "n_pasos": 8,
+  "preguntas": [
+   "cómo registro el jornal diario por categoría en gerencia de proyectos",
+   "donde pongo el porcentaje de la BUC para operario oficial y peon",
+   "como configuro los conceptos de la nomina del proyecto",
+   "donde esta la matriz de constantes",
+   "como agrego las categorias operario oficial peon a la matriz",
+   "como cargo el jornal de construccion civil al proyecto",
+   "configuracion de conceptos s10 nominas del proyecto",
+   "bonificacion unificada de construccion donde se registra"
+  ],
+  "aliases": [
+   "conceptos remunerados",
+   "jornal diario por categoría",
+   "matriz de constantes",
+   "registrar BUC"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "MATRIZ DE RESPONSABLES",
+    "Matriz de Constantes"
+   ],
+   "objetos": [
+    "concepto",
+    "tipo de nómina",
+    "categoría",
+    "jornal diario",
+    "BUC"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.configurar-conceptos-y-jornal-por-categoria.yml"
+ },
+ "gerencia-proyectos.configurar-datos-adicionales-del-proyecto": {
+  "titulo": "Configurar los datos adicionales del proyecto",
+  "modulo": "gerencia-proyectos",
+  "nivel": "intermedio",
+  "n_pasos": 12,
+  "preguntas": [
+   "cómo configuro los datos adicionales del proyecto",
+   "donde cambio el numero de decimales de cantidades y precios del proyecto",
+   "cómo activo los factores de inflación para la valorización",
+   "como hago que solo salgan las partidas de control activas en el tareo",
+   "dónde asigno al jefe de proyecto y al administrador del proyecto",
+   "como configuro la partida no contributorio para la distribucion de costos",
+   "como marco que el proyecto es inmobiliario o se integra con sperant",
+   "datos adicionales gerencia de proyectos s10",
+   "donde se pone los desimales del factor de relacion"
+  ],
+  "aliases": [
+   "datos adicionales",
+   "configurar datos adicionales",
+   "datos adicionales del proyecto",
+   "configuración del proyecto"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "Datos Generales",
+    "Datos adicionales",
+    "Grupo de Factores de Inflación"
+   ],
+   "objetos": [
+    "proyecto",
+    "factores de inflación",
+    "partida de control",
+    "Socio de Negocio",
+    "Sperant"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.configurar-datos-adicionales-del-proyecto.yml"
+ },
+ "gerencia-proyectos.configurar-tareo-estandar-con-parte-semanal": {
+  "titulo": "Configurar el proyecto para el tareo estándar con parte semanal",
+  "modulo": "gerencia-proyectos",
+  "nivel": "basico",
+  "n_pasos": 8,
+  "preguntas": [
+   "cómo configuro el tareo estándar con parte semanal en el proyecto",
+   "donde activo el tareo movil del proyecto en gerencia de proyectos",
+   "en que pestaña elijo el tipo de tareo del proyecto",
+   "mis obreros trabajan en un solo proyecto, que tareo uso",
+   "como elijo tareo estandar con parte semanal para el tipo de nomina",
+   "configurar tareo semanal en datos generales",
+   "como habilito el tareo con parte semanal y luego publico el parte"
+  ],
+  "aliases": [
+   "tareo estándar con parte semanal",
+   "configurar tareo estándar",
+   "configurar tareo semanal",
+   "activar tareo móvil del proyecto"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "Datos Generales",
+    "PERSONAL DISPONIBLE",
+    "TAREO ESTANDAR"
+   ],
+   "objetos": [
+    "proyecto",
+    "tipo de nómina",
+    "trabajadores",
+    "parte"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.configurar-tareo-estandar-con-parte-semanal.yml"
+ },
+ "gerencia-proyectos.consultar-resultados-operativos": {
+  "titulo": "Consultar los resultados operativos por proyecto",
+  "modulo": "gerencia-proyectos",
+  "nivel": "intermedio",
+  "n_pasos": 9,
+  "preguntas": [
+   "cómo veo los resultados operativos del proyecto",
+   "donde comparo lo programado, lo valorizado y lo gastado en la obra",
+   "como proceso los resultados operativos por semana",
+   "cómo veo el resultado por partida de control",
+   "que significa M Fa a la fecha en resultados operativos",
+   "de donde sale el real en resultados operativos",
+   "resultados operativos acumulados desde el inicio del proyecto",
+   "como saco el reporte de ganancia o perdida de la obra en s10",
+   "resultados operatibos gerencia de proyectos"
+  ],
+  "aliases": [
+   "resultados operativos",
+   "resultados operativos por proyecto",
+   "consultar resultados operativos",
+   "ver resultados del proyecto"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "Resultados Operativos",
+    "cronograma por periodos"
+   ],
+   "objetos": [
+    "proyecto",
+    "partida de control",
+    "grupo de recursos",
+    "costos directos"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.consultar-resultados-operativos.yml"
+ },
+ "gerencia-proyectos.consultar-resultados-por-destino": {
+  "titulo": "Consultar los resultados por destino de los egresos a partidas de control",
+  "modulo": "gerencia-proyectos",
+  "nivel": "basico",
+  "n_pasos": 8,
+  "preguntas": [
+   "cómo veo los resultados por destino del almacén",
+   "donde consulto los egresos a partidas de control de una semana",
+   "como saco el informe de materiales egresados por partida de control",
+   "cuanto material se ha egresado a cada partida de control",
+   "como veo las guias de egreso de un recurso en resultados por destino",
+   "el informe de resultados por destino no filtra por fechas",
+   "como consulto los egresos de todos los periodos desde el inicio",
+   "reporte de resultados x destino en gerencia de proyectos"
+  ],
+  "aliases": [
+   "resultados por destino",
+   "informe de egresos a partida de control",
+   "informes del almacén",
+   "consultar egresos por destino"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "Resultados por Destino",
+    "Catalogo de Periodos"
+   ],
+   "objetos": [
+    "egreso a partida de control",
+    "partida de control",
+    "recurso",
+    "guias",
+    "periodo",
+    "almacén"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.consultar-resultados-por-destino.yml"
+ },
  "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia": {
   "titulo": "Consultar el resumen de conceptos por día",
   "modulo": "gerencia-proyectos",
@@ -3651,6 +4456,39 @@
   },
   "archivo": "gerencia-proyectos/gerencia-proyectos.consultar-resumen-de-conceptos-por-dia.yml"
  },
+ "gerencia-proyectos.consultar-resumen-de-conceptos-por-periodo": {
+  "titulo": "Generar y consultar el resumen de conceptos por periodo",
+  "modulo": "gerencia-proyectos",
+  "nivel": "basico",
+  "n_pasos": 6,
+  "preguntas": [
+   "cómo genero el resumen de conceptos por periodo",
+   "donde veo el resumen de asistencia de la semana para la planilla",
+   "de donde salen los datos para los descuentos de afp",
+   "como saco el resumen de conceptos de toda la semana del multiproyecto",
+   "resumen de conseptos por periodo como lo genero",
+   "antes de calcular la nomina que resumen tengo que generar",
+   "donde reviso los datos manuales del periodo antes de la planilla"
+  ],
+  "aliases": [
+   "resumen de conceptos por periodo",
+   "generar resumen de conceptos",
+   "resumen de asistencia del periodo"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "Resumen de Conceptos por Periodo"
+   ],
+   "objetos": [
+    "tipo de nómina",
+    "periodo",
+    "conceptos",
+    "AFP"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.consultar-resumen-de-conceptos-por-periodo.yml"
+ },
  "gerencia-proyectos.consultar-tareo-detallado": {
   "titulo": "Consultar el tareo detallado de la mano de obra",
   "modulo": "gerencia-proyectos",
@@ -3684,6 +4522,44 @@
    ]
   },
   "archivo": "gerencia-proyectos/gerencia-proyectos.consultar-tareo-detallado.yml"
+ },
+ "gerencia-proyectos.deducir-recursos-entregados-al-subcontratista": {
+  "titulo": "Deducir de la valorización los recursos entregados al subcontratista",
+  "modulo": "gerencia-proyectos",
+  "nivel": "intermedio",
+  "n_pasos": 6,
+  "preguntas": [
+   "cómo descuento al subcontratista los materiales que le entregué",
+   "como hago la deduccion de recursos en la valorizacion del subcontrato",
+   "le di alambre al subcontratista, como se lo descuento",
+   "donde veo el monto deducido en la valorización del subcontrato",
+   "no me aparece el egreso en deduccion de recursos",
+   "puedo editar el monto de deducción de recursos",
+   "como se rebaja el material entregado al subcontratista en s10",
+   "deducion de materiales al subcontratista con impuesto"
+  ],
+  "aliases": [
+   "deducción de recursos",
+   "descontar recursos al subcontratista",
+   "deducir materiales del subcontrato",
+   "deducción en la valorización"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "Deduccion de Recursos",
+    "Resumen Valorizacion",
+    "Egreso a Partida de Control"
+   ],
+   "objetos": [
+    "subcontrato",
+    "subcontratista",
+    "valorización",
+    "recursos",
+    "impuesto"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.deducir-recursos-entregados-al-subcontratista.yml"
  },
  "gerencia-proyectos.definir-periodos": {
   "titulo": "Definir la escala y los periodos visibles del proyecto",
@@ -3724,6 +4600,77 @@
    ]
   },
   "archivo": "gerencia-proyectos/gerencia-proyectos.definir-periodos.yml"
+ },
+ "gerencia-proyectos.devolver-fondo-de-garantia": {
+  "titulo": "Registrar la devolución del fondo de garantía de un subcontrato",
+  "modulo": "gerencia-proyectos",
+  "nivel": "intermedio",
+  "n_pasos": 4,
+  "preguntas": [
+   "cómo devuelvo el fondo de garantía a un subcontratista",
+   "dónde se registra la devolución del fondo de garantía",
+   "como devuelvo la retencion del subcontrato",
+   "quiero devolver parte del fondo de garantia, como lo hago",
+   "devolucion de fondo de garantia en gerencia de proyectos s10",
+   "como hago que la devolucion de retenciones llegue a documentos por pagar",
+   "como registro un pago de tipo dev. retenciones"
+  ],
+  "aliases": [
+   "devolución del fondo de garantía",
+   "devolver fondo de garantía",
+   "devolución de retenciones",
+   "dev. retenciones"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "Documentos por pagar"
+   ],
+   "objetos": [
+    "fondo de garantía",
+    "subcontrato",
+    "devolución",
+    "Dev. Retenciones"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.devolver-fondo-de-garantia.yml"
+ },
+ "gerencia-proyectos.distribuir-costos-multiproyecto": {
+  "titulo": "Distribuir el costo de la nómina en los proyectos",
+  "modulo": "gerencia-proyectos",
+  "nivel": "avanzado",
+  "n_pasos": 7,
+  "preguntas": [
+   "cómo distribuyo el costo de la nómina en los proyectos",
+   "como cargo la planilla a los resultados operativos",
+   "distribucion de costos multiproyecto paso a paso",
+   "donde veo el costo de la nomina por partida de control",
+   "como veo cuanto costo cada trabajador en el proyecto",
+   "ya calcule la nomina, como paso el costo a cada obra",
+   "como envio el monto de la nomina a resultados operativos",
+   "distribusion de costos s10 gerencia"
+  ],
+  "aliases": [
+   "distribución de costos",
+   "distribución de costos multiproyecto",
+   "distribuir costos de la nómina",
+   "ver costos distribuidos"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "DISTRIBUCION DE COSTOS MULTIPROYECTO",
+    "Detalle por Partida de Control",
+    "Detalle por Socio de Negocio"
+   ],
+   "objetos": [
+    "nómina",
+    "proyecto",
+    "partida de control",
+    "TIPO DE NOMINA"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.distribuir-costos-multiproyecto.yml"
  },
  "gerencia-proyectos.editar-diseno-del-resumen-del-subcontrato": {
   "titulo": "Editar el diseño del resumen desde el subcontrato",
@@ -3798,6 +4745,47 @@
   },
   "archivo": "gerencia-proyectos/gerencia-proyectos.egresar-a-partida-de-control-con-pedido.yml"
  },
+ "gerencia-proyectos.elegir-personal-y-generar-parte-semanal": {
+  "titulo": "Elegir el personal disponible y generar el parte semanal del tareo estándar",
+  "modulo": "gerencia-proyectos",
+  "nivel": "intermedio",
+  "n_pasos": 12,
+  "preguntas": [
+   "cómo elijo el personal disponible para el tareo estándar con parte semanal",
+   "como agrego obreros de la empresa al proyecto en gerencia de proyectos",
+   "como genero el parte semanal para cada tareador",
+   "como publico el parte semanal para el tareo movil",
+   "como asigno el tareador a los obreros en la ficha personal",
+   "el trabajador no aparece en el tareo que hago",
+   "puedo mezclar el personal del subcontratista con el de la casa",
+   "como registro las propiedades a varios trabajadores a la vez",
+   "como ago el parte semanal en s10"
+  ],
+  "aliases": [
+   "personal disponible",
+   "parte semanal",
+   "generar parte semanal",
+   "publicar parte semanal"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "Personal Disponible",
+    "catálogo de Socio de Negocio",
+    "Ficha personal",
+    "Partes Semanales",
+    "Parte multiproyecto"
+   ],
+   "objetos": [
+    "trabajador",
+    "tipo de nómina",
+    "tareador",
+    "parte semanal",
+    "periodo semanal"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.elegir-personal-y-generar-parte-semanal.yml"
+ },
  "gerencia-proyectos.generar-pedido-automatico": {
   "titulo": "Generar un pedido automático para comprar",
   "modulo": "gerencia-proyectos",
@@ -3836,6 +4824,156 @@
    ]
   },
   "archivo": "gerencia-proyectos/gerencia-proyectos.generar-pedido-automatico.yml"
+ },
+ "gerencia-proyectos.generar-pedido-automatico-a-almacen": {
+  "titulo": "Generar un pedido automático A Almacén para una partida de control",
+  "modulo": "gerencia-proyectos",
+  "nivel": "intermedio",
+  "n_pasos": 8,
+  "preguntas": [
+   "cómo genero un pedido automático a almacén",
+   "como pido materiales del almacen para una partida de control desde la programacion",
+   "pedidos automaticos a almacen paso a paso",
+   "como asigno la partida de control a los recursos del pedido",
+   "como asigno la fecha de entrega a todos los recursos del pedido",
+   "por qué no me salen recursos en pedidos automáticos",
+   "el aprobador recibe correo del pedido a almacen?",
+   "como hago pedido automatico al almasen de la semana"
+  ],
+  "aliases": [
+   "pedido automático a almacén",
+   "pedidos automáticos A Almacén",
+   "generar pedido a almacén",
+   "pedido automático para partida de control"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "Pedidos Automáticos",
+    "Cronograma por periodos"
+   ],
+   "objetos": [
+    "pedido",
+    "recurso",
+    "Partida de Control",
+    "Destino específico",
+    "aprobador"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.generar-pedido-automatico-a-almacen.yml"
+ },
+ "gerencia-proyectos.imprimir-reportes-de-la-planificacion": {
+  "titulo": "Imprimir los reportes de la planificación",
+  "modulo": "gerencia-proyectos",
+  "nivel": "intermedio",
+  "n_pasos": 13,
+  "preguntas": [
+   "cómo imprimo el cronograma por partida en gerencia de proyectos",
+   "dónde saco los reportes de la planificación del proyecto",
+   "como imprimo el plan de utilizacion de recursos",
+   "quiero el reporte del valorizado contractual, como lo saco",
+   "como exporto el cronograma por periodos a excel",
+   "necesito el cronograma valorizado para imprimir",
+   "como saco la relacion de recursos programados por mes",
+   "exportar actividades con sus recursos a excel desde el cronograma",
+   "reporte de mano de obra programada por semana donde lo veo"
+  ],
+  "aliases": [
+   "reportes de la planificación",
+   "imprimir cronograma",
+   "plan de utilización de recursos",
+   "valorizado contractual",
+   "exportar cronograma a Excel"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "Cronograma por Periodos"
+   ],
+   "objetos": [
+    "reporte",
+    "cronograma por partida",
+    "valorizado contractual",
+    "plan de utilización de recursos",
+    "recursos"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.imprimir-reportes-de-la-planificacion.yml"
+ },
+ "gerencia-proyectos.mostrar-campos-personalizados-en-resultados-operativos": {
+  "titulo": "Mostrar campos personalizados en Resultados Operativos",
+  "modulo": "gerencia-proyectos",
+  "nivel": "intermedio",
+  "n_pasos": 6,
+  "preguntas": [
+   "cómo elijo qué columnas se ven en resultados operativos",
+   "como muestro campos personalizados en resultados operativos",
+   "donde agrego el campo meta costo a la fecha en resultados",
+   "la grilla de resultados operativos sale vacia",
+   "como veo los resultados acumulados hasta la semana",
+   "como quito todos los campos que elegi en resultados operativos",
+   "mostrar campos personalisados gerencia de proyectos",
+   "como grabo los campos que quiero ver en los resultados del proyecto"
+  ],
+  "aliases": [
+   "mostrar campos personalizados",
+   "campos de visualización",
+   "columnas de resultados operativos",
+   "mostrar acumulados"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "Resultados Operativos",
+    "Campos de Visualización"
+   ],
+   "objetos": [
+    "campos",
+    "periodo",
+    "escala del periodo",
+    "partida de control"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.mostrar-campos-personalizados-en-resultados-operativos.yml"
+ },
+ "gerencia-proyectos.planificar-con-ms-project": {
+  "titulo": "Planificar gráficamente el proyecto con el MS Project",
+  "modulo": "gerencia-proyectos",
+  "nivel": "avanzado",
+  "n_pasos": 11,
+  "preguntas": [
+   "cómo exporto el cronograma del s10 al ms project",
+   "como paso la programacion de gerencia de proyectos a project",
+   "como actualizo el s10 con los cambios del ms project",
+   "que version de ms project usa el s10",
+   "el s10 no toma los datos del project que hice",
+   "como vinculo las barras en project y lo regreso al s10",
+   "como calculo la duracion de las actividades para el ms project",
+   "puedo usar ms project 2016 con s10 gerencia de proyectos",
+   "como esporto a microsoft proyect"
+  ],
+  "aliases": [
+   "exportar a MS Project",
+   "actualizar desde MS Project",
+   "planificación gráfica",
+   "programar con MS Project"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "Cronograma por Periodos",
+    "Escala de periodo",
+    "Transferir desde Microsoft Project"
+   ],
+   "objetos": [
+    "actividad",
+    "cuadrilla",
+    "duración",
+    "MS Project",
+    "recursos"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.planificar-con-ms-project.yml"
  },
  "gerencia-proyectos.planificar-en-cronograma-por-periodos": {
   "titulo": "Planificar el proyecto en el Cronograma por Periodos",
@@ -3877,6 +5015,124 @@
   },
   "archivo": "gerencia-proyectos/gerencia-proyectos.planificar-en-cronograma-por-periodos.yml"
  },
+ "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato": {
+  "titulo": "Registrar el adelanto en efectivo con garantía (carta fianza) de un subcontrato",
+  "modulo": "gerencia-proyectos",
+  "nivel": "intermedio",
+  "n_pasos": 11,
+  "preguntas": [
+   "cómo registro una carta fianza para el adelanto del subcontratista",
+   "como doy un adelanto en efectivo con garantia al subcontratista",
+   "donde marco que el subcontrato requiere garantia",
+   "como registro la garantía del adelanto en el subcontrato",
+   "como pago el adelanto al subcontratista despues de registrar la carta fianza",
+   "el adelanto no puede pasar el monto de la garantia?",
+   "la carta fianza de fiel cumplimiento sirve para el tope del adelanto",
+   "como aviso por correo el vencimiento de la carta fianza",
+   "adelanto con carta fiansa en subcontratos s10"
+  ],
+  "aliases": [
+   "adelanto con garantía",
+   "registrar carta fianza",
+   "garantía del subcontrato",
+   "adelanto en efectivo con garantía",
+   "registro de la garantía"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "Autorizacion de Pago",
+    "Carta fianza"
+   ],
+   "objetos": [
+    "adelanto",
+    "garantía",
+    "carta de fianza",
+    "subcontrato",
+    "subcontratista",
+    "expediente"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato.yml"
+ },
+ "gerencia-proyectos.registrar-avances-en-la-rama-meta": {
+  "titulo": "Registrar los avances del periodo en la rama meta",
+  "modulo": "gerencia-proyectos",
+  "nivel": "intermedio",
+  "n_pasos": 6,
+  "preguntas": [
+   "cómo registro el avance semanal de la obra en la meta",
+   "donde ingreso los metrados ejecutados de la semana",
+   "como registro el porcentaje del plan completado de la semana en la meta",
+   "como valorizo el avance semanal de la meta en el cronograma por periodos",
+   "no me deja ingresar el avance en modo costo",
+   "como registro avanzes en la rama meta",
+   "ingrese los metrados logrados y no calcula los recursos",
+   "como veo en costo el avance que registre",
+   "donde cargo lo ejecutado en obra para los resultados operativos"
+  ],
+  "aliases": [
+   "registrar avances",
+   "registro de avances",
+   "plan completado de la meta",
+   "valorización de la meta",
+   "metrados ejecutados"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "Cronograma por Periodos"
+   ],
+   "objetos": [
+    "avance",
+    "metrado",
+    "periodo",
+    "rama meta",
+    "recursos"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.registrar-avances-en-la-rama-meta.yml"
+ },
+ "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios": {
+  "titulo": "Registrar un cambio en el análisis de precios unitarios",
+  "modulo": "gerencia-proyectos",
+  "nivel": "avanzado",
+  "n_pasos": 7,
+  "preguntas": [
+   "cómo cambio el análisis de precios unitarios en gerencia de proyectos",
+   "como modifico la cuadrilla de una partida en la meta",
+   "quiero cambiar el rendimiento de una partida del proyecto",
+   "como registro el motivo del cambio en un analisis de precios",
+   "donde veo los analisis de precios unitarios que fueron modificados",
+   "como congelo el apu antes de cambiarlo",
+   "control de cambios de apu en s10",
+   "cambie la cantidad de personas de la partida y no se refleja",
+   "como cambio el analisis de presios unitarios de la meta"
+  ],
+  "aliases": [
+   "control de cambios",
+   "cambiar análisis de precios unitarios",
+   "modificar APU",
+   "congelar análisis de precios unitarios",
+   "autorización de cambio"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "Cronograma por Periodos",
+    "Autorizacion de cambio",
+    "Control de Cambios Actividades"
+   ],
+   "objetos": [
+    "análisis de precios unitarios",
+    "partida",
+    "rama meta",
+    "presupuesto",
+    "motivo"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios.yml"
+ },
  "gerencia-proyectos.registrar-contrato": {
   "titulo": "Registrar el contrato del proyecto",
   "modulo": "gerencia-proyectos",
@@ -3914,6 +5170,43 @@
    ]
   },
   "archivo": "gerencia-proyectos/gerencia-proyectos.registrar-contrato.yml"
+ },
+ "gerencia-proyectos.registrar-equipo-como-activo": {
+  "titulo": "Registrar un equipo como activo en el catálogo de recursos",
+  "modulo": "gerencia-proyectos",
+  "nivel": "basico",
+  "n_pasos": 9,
+  "preguntas": [
+   "cómo registro un equipo como activo en el catálogo de recursos",
+   "como creo un volquete en el catalogo de recursos para el proyecto",
+   "donde registro los equipos alquilados de terceros",
+   "cuantos digitos tiene el recurso especifico de un equipo",
+   "como ingreso a especificaciones del equipo",
+   "como registro la maquinaria propia en s10",
+   "registrar activo camion volquete con placa",
+   "como agrego un equipo nuevo al catalogo de recursos de gerencia de proyectos"
+  ],
+  "aliases": [
+   "registrar equipo como activo",
+   "equipo en el catálogo de recursos",
+   "registrar maquinaria",
+   "recurso tipo activo"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "Catálogo de Recursos",
+    "ESPECIFICACIONES DEL EQUIPO"
+   ],
+   "objetos": [
+    "recursos tipo activo",
+    "recurso genérico",
+    "recurso específico",
+    "equipo",
+    "proveedor"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.registrar-equipo-como-activo.yml"
  },
  "gerencia-proyectos.registrar-factura-del-subcontratista": {
   "titulo": "Registrar la factura del subcontratista por pagos a cuenta",
@@ -3990,6 +5283,84 @@
    ]
   },
   "archivo": "gerencia-proyectos/gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas.yml"
+ },
+ "gerencia-proyectos.registrar-incremento-de-obra": {
+  "titulo": "Registrar un incremento de obra",
+  "modulo": "gerencia-proyectos",
+  "nivel": "intermedio",
+  "n_pasos": 7,
+  "preguntas": [
+   "cómo registro un incremento de obra",
+   "como agrego partidas nuevas al presupuesto meta del proyecto",
+   "donde registro los recursos no presupuestados",
+   "como hago un adicional de obra que paga el propietario",
+   "que es la bolsa de recursos no presupuestados",
+   "se me olvidaron partidas en el presupuesto como las agrego al proyecto",
+   "como registro mayores metrados en gerencia de proyectos",
+   "incremento de obra s10 como se ase"
+  ],
+  "aliases": [
+   "incremento de obra",
+   "adicional de obra",
+   "mayores metrados",
+   "recursos no presupuestados"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "Hoja del Presupuesto"
+   ],
+   "objetos": [
+    "presupuesto meta",
+    "partida",
+    "metrado",
+    "análisis de precios unitarios",
+    "recursos no presupuestados",
+    "rama venta"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.registrar-incremento-de-obra.yml"
+ },
+ "gerencia-proyectos.registrar-partes-diarios-de-equipo": {
+  "titulo": "Registrar los partes diarios de equipo con Excel",
+  "modulo": "gerencia-proyectos",
+  "nivel": "intermedio",
+  "n_pasos": 18,
+  "preguntas": [
+   "cómo registro los partes diarios de equipo en gerencia de proyectos",
+   "como lleno el parte de equipo en excel y lo paso al s10",
+   "dónde se registran las horas trabajadas de la maquinaria",
+   "como importo los partes de equipo de excel",
+   "como registro horas stand by de un equipo parado",
+   "el volquete trabajó en dos partidas de control el mismo día, cómo lo registro",
+   "como calculo el resumen del periodo de los partes de equipo",
+   "como ago el parte diario del cargador frontal",
+   "necesito mas de 5 rotaciones en el parte de equipo",
+   "cómo pasa el costo del equipo a resultados operativos"
+  ],
+  "aliases": [
+   "partes de equipo",
+   "parte diario de equipo",
+   "registrar horas de equipo",
+   "importar partes de equipo",
+   "calcular resumen periodo"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "Partes de Equipo",
+    "Calcular resumen periodo",
+    "Resumen por Partida de Control"
+   ],
+   "objetos": [
+    "parte de equipo",
+    "equipo",
+    "partida de control",
+    "rotación",
+    "resultados operativos"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.registrar-partes-diarios-de-equipo.yml"
  },
  "gerencia-proyectos.registrar-pedido-manual-de-compra": {
   "titulo": "Registrar un pedido manual para comprar",
@@ -4109,6 +5480,46 @@
   },
   "archivo": "gerencia-proyectos/gerencia-proyectos.registrar-subcontrato.yml"
  },
+ "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo": {
+  "titulo": "Registrar un subcontrato para alquiler de equipo",
+  "modulo": "gerencia-proyectos",
+  "nivel": "intermedio",
+  "n_pasos": 15,
+  "preguntas": [
+   "cómo registro un subcontrato de alquiler de equipo",
+   "donde se registra el alquiler de maquinaria como subcontrato",
+   "como jalo la orden de servicio al subcontrato de alquiler",
+   "como creo el SC alquiler de equipo en gerencia de proyectos",
+   "como le pongo el igv al subcontrato de alquiler de equipo",
+   "el subcontrato de alquiler de equipo lleva partida de control",
+   "como registro el adelanto y fondo de garantia en el alquiler de equipos",
+   "subcontrato alquiler de equipo s10 como se hace",
+   "no me aparece la orden de servicio para el subcontrato de alquiler"
+  ],
+  "aliases": [
+   "subcontrato de alquiler de equipo",
+   "SC alquiler de equipo",
+   "registrar alquiler de equipo",
+   "alquiler de maquinaria"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "SC Alquiler de Equipo",
+    "Impuesto Valorización",
+    "catálogo de Impuestos"
+   ],
+   "objetos": [
+    "subcontrato",
+    "orden de servicio",
+    "adelanto",
+    "fondo de garantía",
+    "frecuencia de pago",
+    "impuesto"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo.yml"
+ },
  "gerencia-proyectos.registrar-usuarios-del-proyecto": {
   "titulo": "Registrar usuarios del proyecto y asignarles atributos",
   "modulo": "gerencia-proyectos",
@@ -4146,6 +5557,118 @@
    ]
   },
   "archivo": "gerencia-proyectos/gerencia-proyectos.registrar-usuarios-del-proyecto.yml"
+ },
+ "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma": {
+  "titulo": "Registrar la valorización mensual en el Cronograma por Periodos e imprimir la planilla",
+  "modulo": "gerencia-proyectos",
+  "nivel": "intermedio",
+  "n_pasos": 9,
+  "preguntas": [
+   "cómo registro la valorización del mes en el cronograma por periodos",
+   "donde ingreso los avances logrados en el mes para valorizar",
+   "como registro el porcentaje del plan completado",
+   "como imprimo la planilla de valorizacion mensual",
+   "de donde sale el monto de la valorización mensual del contrato",
+   "como paso el cronograma a modo valorizacion",
+   "como veo la valorizacion en costo y no en metrado",
+   "como valoriso el avance mensual de la obra en gerencia de proyectos",
+   "quiero imprimir solo las actividades con movimiento en la valorización"
+  ],
+  "aliases": [
+   "registrar valorización mensual",
+   "porcentaje del plan completado",
+   "registrar avance valorizado",
+   "planilla de valorización",
+   "imprimir valorización mensual"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "Cronograma por Periodos",
+    "Modo de visualización",
+    "Periodos Visibles"
+   ],
+   "objetos": [
+    "valorización",
+    "metrado",
+    "periodo",
+    "planilla de valorizacion",
+    "actividades"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma.yml"
+ },
+ "gerencia-proyectos.registrar-vistas": {
+  "titulo": "Registrar las vistas del proyecto",
+  "modulo": "gerencia-proyectos",
+  "nivel": "intermedio",
+  "n_pasos": 6,
+  "preguntas": [
+   "cómo creo vistas en gerencia de proyectos",
+   "para que sirven las vistas del proyecto",
+   "como agrupo partes del proyecto como cimientos o piso 1",
+   "como asigno actividades a una vista",
+   "como creo un grupo de vistas",
+   "como veo una vista en el cronograma por periodos",
+   "como registro vistas para edificaciones",
+   "como arrastro titulos a la vista"
+  ],
+  "aliases": [
+   "vistas",
+   "registrar vistas",
+   "crear vistas del proyecto",
+   "grupo de vistas"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "Vistas",
+    "Cronograma por periodos"
+   ],
+   "objetos": [
+    "vista",
+    "proyecto",
+    "títulos",
+    "actividades"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.registrar-vistas.yml"
+ },
+ "gerencia-proyectos.reprogramar-el-proyecto": {
+  "titulo": "Reprogramar el proyecto con el MS Project",
+  "modulo": "gerencia-proyectos",
+  "nivel": "avanzado",
+  "n_pasos": 5,
+  "preguntas": [
+   "cómo reprogramo el proyecto en gerencia de proyectos",
+   "el proyecto esta atrasado, como lo reprogramo",
+   "como reprogramo las barras del gantt en ms project",
+   "como actualizo el cronograma despues de reprogramar en project",
+   "cada cuanto se debe reprogramar la obra",
+   "reprogramacion del cronograma por periodos s10",
+   "como ago la reprogramasion del proyecto",
+   "despues de reprogramar donde veo el programado"
+  ],
+  "aliases": [
+   "reprogramar proyecto",
+   "reprogramación",
+   "reprogramar cronograma",
+   "reprogramar en MS Project"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "Cronograma por Periodos",
+    "Resultados operativos"
+   ],
+   "objetos": [
+    "MS Project",
+    "Gantt",
+    "cronograma",
+    "programado"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.reprogramar-el-proyecto.yml"
  },
  "gerencia-proyectos.valorizar-el-contrato": {
   "titulo": "Valorizar el contrato y autorizar su cobranza",
@@ -4855,6 +6378,82 @@
   },
   "archivo": "nominas/nominas.registrar-ficha-del-trabajador.yml"
  },
+ "nominas.registrar-horario-diario": {
+  "titulo": "Registrar un horario diario",
+  "modulo": "nominas",
+  "nivel": "avanzado",
+  "n_pasos": 12,
+  "preguntas": [
+   "como creo un horario diario en nominas",
+   "donde configuro las horas extras al 60 y al 100",
+   "como registro el horario de los obreros de lunes a viernes",
+   "como pongo el bloque de jornada normal de 7:30 a 4 pm",
+   "como configuro el permiso no autorizado en el horario",
+   "donde registro el horario de los sabados",
+   "que diferencia hay entre horario diario y horario ciclico",
+   "como agrego bonos al horario diario",
+   "orario diario con tardanzas y tolerancias por reloj marcador"
+  ],
+  "aliases": [
+   "horario diario",
+   "horarios diarios",
+   "registrar horario",
+   "bloques del horario",
+   "configurar horas extras"
+  ],
+  "entidades": {
+   "modulo": "Nóminas",
+   "pantallas": [
+    "Horarios Diarios",
+    "Configuracion de Horario Diario"
+   ],
+   "objetos": [
+    "horario diario",
+    "bloque",
+    "concepto genérico",
+    "turno",
+    "horas extras"
+   ]
+  },
+  "archivo": "nominas/nominas.registrar-horario-diario.yml"
+ },
+ "nominas.registrar-logotipo": {
+  "titulo": "Registrar un logotipo o una firma digital",
+  "modulo": "nominas",
+  "nivel": "basico",
+  "n_pasos": 7,
+  "preguntas": [
+   "como pongo el logo de la empresa en las boletas",
+   "donde se registra el logotipo en nominas",
+   "como subo la firma digital al s10",
+   "el logo no sale en el reporte, donde lo cargo",
+   "como defino la estructura del catalogo de logotipos",
+   "como cambio el logotipo de la constructora",
+   "quiero agregar un logotipo nuevo",
+   "logotipo y firma digitar para reportes de nominas"
+  ],
+  "aliases": [
+   "logotipo",
+   "registrar logotipo",
+   "catálogo de logotipos",
+   "firma digital",
+   "logo de la empresa"
+  ],
+  "entidades": {
+   "modulo": "Nóminas",
+   "pantallas": [
+    "Catálogo de Logotipos",
+    "Catalogo de Logotipos y Firmas Digitales"
+   ],
+   "objetos": [
+    "logotipo",
+    "firma digital",
+    "socio de negocio",
+    "reporte"
+   ]
+  },
+  "archivo": "nominas/nominas.registrar-logotipo.yml"
+ },
  "nominas.registrar-planilla-de-pago": {
   "titulo": "Registrar una planilla de pago",
   "modulo": "nominas",
@@ -4891,6 +6490,45 @@
    ]
   },
   "archivo": "nominas/nominas.registrar-planilla-de-pago.yml"
+ },
+ "nominas.registrar-plantilla-de-documento": {
+  "titulo": "Registrar una plantilla de documento para el trabajador",
+  "modulo": "nominas",
+  "nivel": "intermedio",
+  "n_pasos": 7,
+  "preguntas": [
+   "como hago un certificado de trabajo en nominas s10",
+   "donde se registran las plantillas de documentos",
+   "quiero que la constancia de trabajo salga con los datos del trabajador",
+   "que variables puedo usar en un documento de nominas",
+   "como asigno un archivo word a la plantilla del certificado",
+   "como creo una plantilla de documento nueva",
+   "donde esta el diccionario de variables",
+   "como sale automatico el dni y la fecha de ingreso en el certificado",
+   "plantiya de certificado de 5ta como la configuro"
+  ],
+  "aliases": [
+   "plantilla de documento",
+   "plantillas de documentos",
+   "certificado de trabajo",
+   "constancia de trabajo",
+   "diccionario de variables"
+  ],
+  "entidades": {
+   "modulo": "Nóminas",
+   "pantallas": [
+    "Catálogo de Plantillas de Documentos",
+    "Diccionario de Variables"
+   ],
+   "objetos": [
+    "plantilla",
+    "variable",
+    "certificado",
+    "constancia",
+    "trabajador"
+   ]
+  },
+  "archivo": "nominas/nominas.registrar-plantilla-de-documento.yml"
  },
  "nominas.registrar-renta-de-quinta-de-otras-empresas": {
   "titulo": "Registrar las ganancias y retenciones de renta de 5ta de otras empresas",
@@ -5421,6 +7059,44 @@
   },
   "archivo": "presupuestos/presupuestos.aplicar-factores-al-subpresupuesto.yml"
  },
+ "presupuestos.asignar-prioridad-a-partidas": {
+  "titulo": "Asignar prioridad a las partidas para esconderlas o retornarlas",
+  "modulo": "presupuestos",
+  "nivel": "intermedio",
+  "n_pasos": 7,
+  "preguntas": [
+   "como escondo partidas del presupuesto sin borrarlas",
+   "como asigno prioridad a una partida en s10",
+   "quiero quitar unas partidas del presupuesto y despues volver a ponerlas",
+   "donde se registra el catalogo de prioridades",
+   "como retorno las partidas que escondi",
+   "como hago para que una partida no sume en el costo del presupuesto",
+   "para que sirve la prioridad de las partidas",
+   "como oculto las partidas opcionales del prespuesto"
+  ],
+  "aliases": [
+   "asignar prioridad",
+   "prioridad de partidas",
+   "esconder partidas",
+   "quitar partidas",
+   "retornar partidas",
+   "catálogo de prioridades"
+  ],
+  "entidades": {
+   "modulo": "Presupuestos",
+   "pantallas": [
+    "Catálogo de Prioridades",
+    "Hoja del Presupuesto"
+   ],
+   "objetos": [
+    "prioridad",
+    "partida",
+    "subpresupuesto",
+    "presupuesto"
+   ]
+  },
+  "archivo": "presupuestos/presupuestos.asignar-prioridad-a-partidas.yml"
+ },
  "presupuestos.calcular-gastos-generales": {
   "titulo": "Calcular en forma analítica los gastos generales",
   "modulo": "presupuestos",
@@ -5456,6 +7132,43 @@
    ]
   },
   "archivo": "presupuestos/presupuestos.calcular-gastos-generales.yml"
+ },
+ "presupuestos.calcular-tiempos-para-programacion": {
+  "titulo": "Calcular la duración de las partidas según el número de cuadrillas",
+  "modulo": "presupuestos",
+  "nivel": "intermedio",
+  "n_pasos": 6,
+  "preguntas": [
+   "como calculo cuantos dias dura una partida en s10",
+   "para que sirve tiempos para programacion",
+   "como pongo el numero de cuadrillas a una partida",
+   "quiero saber el plazo de cada partida segun su rendimiento",
+   "donde veo la duracion de la partida si trabajo con 2 cuadrillas",
+   "cuantas cuadrillas necesito para terminar el encofrado, como lo veo",
+   "tiempos para programasion de equipos",
+   "qué es el factor de multiplicidad en presupuestos"
+  ],
+  "aliases": [
+   "tiempos para programación",
+   "duración de partidas",
+   "número de cuadrillas",
+   "factor de multiplicidad"
+  ],
+  "entidades": {
+   "modulo": "Presupuestos",
+   "pantallas": [
+    "Tiempos para programación"
+   ],
+   "objetos": [
+    "partida",
+    "cuadrilla",
+    "mano de obra",
+    "equipo",
+    "rendimiento",
+    "metrado"
+   ]
+  },
+  "archivo": "presupuestos/presupuestos.calcular-tiempos-para-programacion.yml"
  },
  "presupuestos.cambiar-estado-de-partida": {
   "titulo": "Cambiar el estado del análisis de precios unitarios de una partida",
@@ -5594,6 +7307,42 @@
   },
   "archivo": "presupuestos/presupuestos.copiar-subpresupuesto.yml"
  },
+ "presupuestos.disenar-cabeceras-de-reportes": {
+  "titulo": "Diseñar las cabeceras de los reportes",
+  "modulo": "presupuestos",
+  "nivel": "intermedio",
+  "n_pasos": 9,
+  "preguntas": [
+   "cómo cambio la cabecera de los reportes en s10 presupuestos",
+   "quiero poner el nombre de mi empresa arriba del reporte del presupuesto",
+   "como diseño el encabezado de los reportes del presupuesto",
+   "dónde se configura la cabecera para reportes",
+   "el reporte sale con la cabecera por defecto, como uso la mia",
+   "como cambio el tipo de letra y el color del encabezado del reporte",
+   "como hago una cabezera personalizada para el resumen del presupuesto",
+   "puedo poner otra cabecera en el analisis de precios unitarios impreso",
+   "imprimir con diseño de cabecera para que sirve"
+  ],
+  "aliases": [
+   "diseño de cabeceras",
+   "cabeceras para reportes",
+   "encabezado de reportes",
+   "imprimir con diseño de cabecera"
+  ],
+  "entidades": {
+   "modulo": "Presupuestos",
+   "pantallas": [
+    "Cabeceras para reportes",
+    "Configuración Presupuestos"
+   ],
+   "objetos": [
+    "cabecera",
+    "reporte",
+    "presupuesto"
+   ]
+  },
+  "archivo": "presupuestos/presupuestos.disenar-cabeceras-de-reportes.yml"
+ },
  "presupuestos.disenar-pie-de-presupuesto": {
   "titulo": "Diseñar el pie del presupuesto",
   "modulo": "presupuestos",
@@ -5667,6 +7416,43 @@
    ]
   },
   "archivo": "presupuestos/presupuestos.elaborar-formula-polinomica.yml"
+ },
+ "presupuestos.emitir-plan-de-utilizacion-de-recursos": {
+  "titulo": "Emitir el reporte del Plan de Utilización de Recursos",
+  "modulo": "presupuestos",
+  "nivel": "intermedio",
+  "n_pasos": 8,
+  "preguntas": [
+   "como saco el plan de utilizacion de recursos",
+   "quiero ver cuanta mano de obra necesito por mes segun lo programado",
+   "como exporto a excel los recursos programados por semana",
+   "reporte de recursos por periodo valorizado en soles",
+   "como veo los materiales programados por mes del proyecto",
+   "donde esta el reporte plan de utilizacion de recusos",
+   "como saco solo los equipos programados del proyecto",
+   "el plan de utilizacion me sale en cantidades y lo quiero en costo"
+  ],
+  "aliases": [
+   "plan de utilización de recursos",
+   "reporte de recursos programados",
+   "recursos por periodo",
+   "utilización de recursos"
+  ],
+  "entidades": {
+   "modulo": "Presupuestos",
+   "pantallas": [
+    "Cronograma por Periodos"
+   ],
+   "objetos": [
+    "recursos",
+    "proyecto",
+    "mano de obra",
+    "materiales",
+    "equipos",
+    "subcontratos"
+   ]
+  },
+  "archivo": "presupuestos/presupuestos.emitir-plan-de-utilizacion-de-recursos.yml"
  },
  "presupuestos.exportar-presupuesto": {
   "titulo": "Exportar un presupuesto a otra base de datos",
@@ -5768,6 +7554,41 @@
    ]
   },
   "archivo": "presupuestos/presupuestos.importar-presupuesto-desde-excel.yml"
+ },
+ "presupuestos.imprimir-presupuesto-descompuesto": {
+  "titulo": "Revisar e imprimir los recursos en el presupuesto descompuesto",
+  "modulo": "presupuestos",
+  "nivel": "intermedio",
+  "n_pasos": 8,
+  "preguntas": [
+   "como veo las subpartidas de todos los niveles en s10",
+   "para que sirve el presupuesto descompuesto",
+   "como imprimo los recursos del presupuesto para que cuadre con el monto presupuestado",
+   "al imprimir los recursos no me coincide con el total del presupuesto",
+   "como exporto el presupuesto descompuesto a excel",
+   "como mando el presupuesto con subpartidas a ms project",
+   "quiero ver todos los recursos de un titulo agrupados",
+   "el presupuesto descompusto me sale vacio"
+  ],
+  "aliases": [
+   "presupuesto descompuesto",
+   "desglosar subpartidas",
+   "recursos acumulados del presupuesto",
+   "imprimir recursos con redondeo"
+  ],
+  "entidades": {
+   "modulo": "Presupuestos",
+   "pantallas": [
+    "Presupuesto descompuesto"
+   ],
+   "objetos": [
+    "subpartidas",
+    "partidas",
+    "recursos",
+    "subpresupuesto"
+   ]
+  },
+  "archivo": "presupuestos/presupuestos.imprimir-presupuesto-descompuesto.yml"
  },
  "presupuestos.imprimir-reportes": {
   "titulo": "Imprimir y exportar los reportes del presupuesto",
@@ -5945,6 +7766,41 @@
   },
   "archivo": "presupuestos/presupuestos.registrar-detalle-de-recurso.yml"
  },
+ "presupuestos.registrar-indices-unificados": {
+  "titulo": "Registrar los índices unificados",
+  "modulo": "presupuestos",
+  "nivel": "avanzado",
+  "n_pasos": 8,
+  "preguntas": [
+   "como registro los indices unificados del inei en s10",
+   "donde ingreso los indices unificados del mes",
+   "como cargo los indices unificados desde excel",
+   "como hago para que el indice se replique en todas las areas geograficas",
+   "como registro la resolucion de los indices unificados",
+   "no se me graban los datos de los indices unificados",
+   "como lleno los indices unificados por area geografica",
+   "donde actualizo los IU del presupuesto"
+  ],
+  "aliases": [
+   "índices unificados",
+   "registrar índices unificados",
+   "IU",
+   "importar índices unificados"
+  ],
+  "entidades": {
+   "modulo": "Presupuestos",
+   "pantallas": [
+    "Indices Unificados",
+    "Configuración Presupuestos"
+   ],
+   "objetos": [
+    "índice unificado",
+    "área geográfica",
+    "resolución"
+   ]
+  },
+  "archivo": "presupuestos/presupuestos.registrar-indices-unificados.yml"
+ },
  "presupuestos.registrar-partida-en-el-catalogo": {
   "titulo": "Registrar una partida nueva en el catálogo de partidas",
   "modulo": "presupuestos",
@@ -6053,6 +7909,39 @@
    ]
   },
   "archivo": "presupuestos/presupuestos.registrar-recurso-en-el-catalogo.yml"
+ },
+ "presupuestos.registrar-titulo-en-el-catalogo": {
+  "titulo": "Registrar un título nuevo en el catálogo de títulos",
+  "modulo": "presupuestos",
+  "nivel": "basico",
+  "n_pasos": 4,
+  "preguntas": [
+   "como creo un titulo nuevo en el catalogo de titulos",
+   "no encuentro el titulo que necesito, como lo registro",
+   "como agrego el titulo muros y tabiques al catalogo",
+   "registrar titulo nuevo en s10 presupuestos",
+   "como duplico un titulo para crear otro",
+   "donde esta el catalogo de titulos",
+   "como ago un titulo que no existe en el catalago"
+  ],
+  "aliases": [
+   "registrar título",
+   "nuevo título en el catálogo",
+   "catálogo de títulos",
+   "crear título"
+  ],
+  "entidades": {
+   "modulo": "Presupuestos",
+   "pantallas": [
+    "Catálogo de Títulos",
+    "Hoja del Presupuesto"
+   ],
+   "objetos": [
+    "título",
+    "catálogo de títulos"
+   ]
+  },
+  "archivo": "presupuestos/presupuestos.registrar-titulo-en-el-catalogo.yml"
  },
  "presupuestos.registrar-titulos-y-partidas": {
   "titulo": "Registrar títulos y partidas en la hoja del presupuesto",

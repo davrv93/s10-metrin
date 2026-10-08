@@ -1,19 +1,19 @@
 {
- "clases": 168,
- "entrenamiento": 8884,
- "calibracion": 1215,
+ "clases": 219,
+ "entrenamiento": 11113,
+ "calibracion": 1480,
  "prueba": 194,
  "prueba_con_caso": 129,
  "entrenamiento_min_por_clase": 39,
- "entrenamiento_ninguno": 1463,
+ "entrenamiento_ninguno": 1454,
  "descartes": {
-  "fuga_prueba": 4,
-  "duplicado": 158
+  "duplicado": 188,
+  "fuga_prueba": 4
  },
  "errores": {},
  "clases_sin_parafrasis": [],
  "reales_entrenamiento": 1194,
  "reales_calibracion": 298,
  "reales_prueba": 1082,
- "reales_prueba_con_caso": 12
+ "reales_prueba_con_caso": 13
 }

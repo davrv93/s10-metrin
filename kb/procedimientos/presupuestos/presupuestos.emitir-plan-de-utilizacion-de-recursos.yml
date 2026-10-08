@@ -1,0 +1,118 @@
+id: presupuestos.emitir-plan-de-utilizacion-de-recursos
+version: 1
+modulo: presupuestos
+titulo: "Emitir el reporte del Plan de Utilización de Recursos"
+objetivo: "Mostrar los recursos utilizados en la ejecución del proyecto con sus cantidades distribuidas en el tiempo de acuerdo a lo programado, en cantidad o valorizados, y exportarlos a Excel."
+nivel: intermedio
+preguntas:
+  - "como saco el plan de utilizacion de recursos"
+  - "quiero ver cuanta mano de obra necesito por mes segun lo programado"
+  - "como exporto a excel los recursos programados por semana"
+  - "reporte de recursos por periodo valorizado en soles"
+  - "como veo los materiales programados por mes del proyecto"
+  - "donde esta el reporte plan de utilizacion de recusos"
+  - "como saco solo los equipos programados del proyecto"
+  - "el plan de utilizacion me sale en cantidades y lo quiero en costo"
+aliases:
+  - "plan de utilización de recursos"
+  - "reporte de recursos programados"
+  - "recursos por periodo"
+  - "utilización de recursos"
+entidades:
+  modulo: "Presupuestos"
+  pantallas: ["Cronograma por Periodos"]
+  objetos: ["recursos", "proyecto", "mano de obra", "materiales", "equipos", "subcontratos"]
+prerrequisitos:
+  - texto: "El proyecto debe estar programado: el reporte distribuye en el tiempo las cantidades de los recursos de acuerdo a lo programado, y los reportes se emiten desde el escenario del Cronograma por periodos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s170, web-https-documentacion-s10peru-com-manual-d-s166]
+pasos:
+  - n: 1
+    id: "presupuestos.emitir-plan-de-utilizacion-de-recursos#1"
+    accion: "Ingrese al escenario **Cronograma por Periodos** y elija el proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s166, img-9626616a9dc7-0000]
+    pagina: null
+    fotos:
+      - id: "94f37913f21b"
+        ruta_o_url: "imagenes/manual-de-presupuestos/9626616a9dc7.png"
+        pagina: null
+        ocr: "-\nJ Elija al proyexte\n(=) ge9 Escritorio\nCronograma 7\npor Periodlos Luego, | El Puente en carretera"
+  - n: 2
+    id: "presupuestos.emitir-plan-de-utilizacion-de-recursos#2"
+    accion: "Con el botón del modo de visualización, elija el tipo de dato: metrado, para ver los recursos en cantidades, o costo, para verlos valorizados."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s166, web-https-documentacion-s10peru-com-manual-d-s170, img-f8a617d3bdb3-0000]
+    pagina: null
+    fotos:
+      - id: "2ef4a76075ed"
+        ruta_o_url: "imagenes/manual-de-presupuestos/f8a617d3bdb3.png"
+        pagina: null
+        ocr: "SZ Modo de Visualizacién [2 [em\nModo Para los reportes\n@ Programado © Valorizacién\nEn Metrado, el reporte de los\nAvance cronogramas se ernitiran en\nIse pose metrados y los recursos en\nPorcentaje (6) cantidades\n@ Metrada!\nC Costa En Costo, el reporte de los\ncronogramas y recursos se\nemitiran en costo"
+  - n: 3
+    id: "presupuestos.emitir-plan-de-utilizacion-de-recursos#3"
+    accion: "Elija la **Escala de periodo** en la que tiene datos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s166, img-10ffe452b31b-0000]
+    pagina: null
+    fotos:
+      - id: "7e82d12a6510"
+        ruta_o_url: "imagenes/manual-de-presupuestos/10ffe452b31b.png"
+        pagina: null
+        ocr: "|] Us 2 este botin para elegirla escala de periodo -=|]—\nModo Programado - Cronograma metrado\n- x\nVistas Todo | Escala de periodo |Periodo Mensual ha\nPeriodo Mensual +\nPeriado Semanal"
+  - n: 4
+    id: "presupuestos.emitir-plan-de-utilizacion-de-recursos#4"
+    accion: "Use el botón de impresión de reportes y, del menú que muestre, elija **Plan de Utilización de Recursos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s166, web-https-documentacion-s10peru-com-manual-d-s170, img-1b02b4fea285-0000]
+    pagina: null
+    fotos:
+      - id: "8e0598136028"
+        ruta_o_url: "imagenes/manual-de-presupuestos/1b02b4fea285.png"
+        pagina: null
+        ocr: "Cronograma por partida >\n\nValorizado contractual\n\nCronograma\n\nPlan de utilizacidn de recursos =} Resumen » Todas los recursos<1)\nDetallado > Mano de Obra <2)\n\nMateriales =(3)\nEquipos =)\nSubcontratos ~(5)"
+  - n: 5
+    id: "presupuestos.emitir-plan-de-utilizacion-de-recursos#5"
+    accion: "Elija la opción que muestra en una hoja todos los recursos (mano de obra, materiales, equipos y subcontratos) o la de un solo tipo: **Mano de Obra**, **Materiales**, **Equipos** o **Subcontratos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s170, img-1b02b4fea285-0000]
+    pagina: null
+  - n: 6
+    id: "presupuestos.emitir-plan-de-utilizacion-de-recursos#6"
+    accion: "Para exportar el contenido de la ventana superior a un archivo de Excel, use la opción **Exportar a** del menú del escenario."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s170, img-100f681a7378-0000]
+    pagina: null
+    fotos:
+      - id: "9e8411e1f464"
+        ruta_o_url: "imagenes/manual-de-presupuestos/100f681a7378.png"
+        pagina: null
+        ocr: "Cronograma por Periodos\nModo Programado - Cronograma metrado\nVistas a Todo =] Escala de periodo |Periodo Mensual +\na Afio 2010.\nDesct| Elija este registra [)) Abril 2010 | Mayo 2010 | Junio 2010 | Julio 2010\n21/04H10-3 | 01/05!0-3 | O1/060-3 | 01/07/10-3\n© Puente en carretera\n(2) Pranaracidfh de anrenadas\nContraeg <Elije el nivel> +\nvos) 1,022.34 1,517.68\n3 Recalculbr por escala\nOpciones > 34038 5…"
+  - n: 7
+    id: "presupuestos.emitir-plan-de-utilizacion-de-recursos#7"
+    accion: "Elija la carpeta y registre el nombre del archivo a guardar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s170]
+    pagina: null
+  - n: 8
+    id: "presupuestos.emitir-plan-de-utilizacion-de-recursos#8"
+    accion: "Para visualizar las actividades con sus recursos, elija **Actividades y Recursos** y luego exporte con **Exportar a Microsoft Excel**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s170, img-ee39498fa477-0000, img-f4781810deaf-0000]
+    pagina: null
+    fotos:
+      - id: "0c4b550965fd"
+        ruta_o_url: "imagenes/manual-de-presupuestos/ee39498fa477.png"
+        pagina: null
+        ocr: "46Q+4+GRRBaA Yoav Ss Aj tt\nActividades\nz Actividades y Recursos"
+      - id: "80a18f69ed68"
+        ruta_o_url: "imagenes/manual-de-presupuestos/f4781810deaf.png"
+        pagina: null
+        ocr: "a Afio 2010\n\nDescr] Elija este registro (J) Abri'2010 | Mayo 2010 | Junio 2010 | Julio 2010\n\n2104/10-3 | O1/05/10-3 | O1M0B0-3 | O1/07N0-3\n& Puente en carretera\n<[ i r\nDescripcion Rechirso Unidad [Abril 2010 Mayo 2010 | Junio 2010 | Julio 2010\nMANO DE “) Verificar con Stock 9) 2,631.86, 5,703.48) 3,400.19\n\nBS Exportar a Microsoft Excel"
+verificacion:
+  - texto: "Los datos se muestran en cantidad o valorizados de acuerdo a la elección en el modo de visualización."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s170]
+errores_frecuentes: []
+relacionados: []
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s170, manual: "Manual de Presupuestos", seccion: "6.9.4 Reporte del Plan de Utilización de Recursos", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s166, manual: "Manual de Presupuestos", seccion: "6.9 Resultados de la planificación", pagina: null}
+  - {id: img-9626616a9dc7-0000, manual: "Manual de Presupuestos", seccion: "9626616a9dc7.png", pagina: null}
+  - {id: img-f8a617d3bdb3-0000, manual: "Manual de Presupuestos", seccion: "f8a617d3bdb3.png", pagina: null}
+  - {id: img-10ffe452b31b-0000, manual: "Manual de Presupuestos", seccion: "10ffe452b31b.png", pagina: null}
+  - {id: img-1b02b4fea285-0000, manual: "Manual de Presupuestos", seccion: "1b02b4fea285.png", pagina: null}
+  - {id: img-100f681a7378-0000, manual: "Manual de Presupuestos", seccion: "100f681a7378.png", pagina: null}
+  - {id: img-ee39498fa477-0000, manual: "Manual de Presupuestos", seccion: "ee39498fa477.png", pagina: null}
+  - {id: img-f4781810deaf-0000, manual: "Manual de Presupuestos", seccion: "f4781810deaf.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

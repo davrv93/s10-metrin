@@ -1,0 +1,109 @@
+id: gerencia-proyectos.consultar-resultados-operativos
+version: 1
+modulo: gerencia-proyectos
+titulo: "Consultar los resultados operativos por proyecto"
+objetivo: "Obtener la información consolidada de la marcha global del proyecto a nivel de partidas de control, para comparar los montos programados, valorizados y realmente gastados, combinando las ramas venta y meta en una sola vista."
+nivel: intermedio
+preguntas:
+  - "cómo veo los resultados operativos del proyecto"
+  - "donde comparo lo programado, lo valorizado y lo gastado en la obra"
+  - "como proceso los resultados operativos por semana"
+  - "cómo veo el resultado por partida de control"
+  - "que significa M Fa a la fecha en resultados operativos"
+  - "de donde sale el real en resultados operativos"
+  - "resultados operativos acumulados desde el inicio del proyecto"
+  - "como saco el reporte de ganancia o perdida de la obra en s10"
+  - "resultados operatibos gerencia de proyectos"
+aliases:
+  - "resultados operativos"
+  - "resultados operativos por proyecto"
+  - "consultar resultados operativos"
+  - "ver resultados del proyecto"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Resultados Operativos", "cronograma por periodos"]
+  objetos: ["proyecto", "partida de control", "grupo de recursos", "costos directos"]
+prerrequisitos:
+  - texto: "El programado toma los datos del escenario del cronograma por periodos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s257]
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.consultar-resultados-operativos#1"
+    accion: "Ingrese al escenario de **Resultados Operativos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s257]
+    pagina: null
+    fotos:
+      - id: "589e969c80bb"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/bf78e878f1c3.png"
+        pagina: null
+        caption: "Acceso al escenario"
+        ocr: "J rey ee\nResultados = Escritorio\nOperativos Luege, 1-8 PUENTE EN CARRETERA"
+  - n: 2
+    id: "gerencia-proyectos.consultar-resultados-operativos#2"
+    accion: "En el árbol elija el proyecto."
+    fuente: [img-ae67a0ae439c-0000, web-https-documentacion-s10peru-com-manual-d-s257]
+    pagina: null
+    fotos:
+      - id: "a8967c8212d2"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/ae67a0ae439c.png"
+        pagina: null
+        ocr: "1 Enel arbol elija el proyecto\n2 Elija la escala de periodos — semanal\n3 Procesar\n4 Agregue los periodos (hacer visible)\n5 Elija la presentacion de las colurmnas\no Mostrar acumulados\no Mostrar en fila los periodos\n6 Seleccione los campos\n7 Resultados a nivel de proyecto\n8 Resultados a nivel de costo directo/indirecto\n3 Resultados a nivel de partida de control\n10 Resultados a nivel de grupo de recu…"
+  - n: 3
+    id: "gerencia-proyectos.consultar-resultados-operativos#3"
+    accion: "Elija la escala de periodo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s257]
+    pagina: null
+  - n: 4
+    id: "gerencia-proyectos.consultar-resultados-operativos#4"
+    accion: "Procese la información usando el botón."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s257]
+    pagina: null
+    fotos:
+      - id: "dcf8652262f2"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/d950a37e15a7.png"
+        pagina: null
+        caption: "Procese la información usando el botón"
+        ocr: "Resultados Operativos a Proyecto\n\nEscala de periodo ——— J Mostrar acumulados — Periada a\nPartida de Control (©»=Programado\n\na | Meta Real Meta ala Fecha\n\n(PE Puente on eerreterm) —<o 110,687.35 129,207.14 110,200.61 41AT 47\n\n-&] Costos Directos ={(d-T] 88,135.27 109,060.74 96,610.61 1.24 1.43\n\n{ ~ Preparacién de agregados=( 2] 73,058.58 57,766.03 59,571.00 0.79 0.97\n\n| je Encofrado 2,249.40 4,761.…"
+      - id: "cfff15839cdc"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/36f7d4850c46.png"
+        pagina: null
+        caption: "Procese la información usando el botón"
+  - n: 5
+    id: "gerencia-proyectos.consultar-resultados-operativos#5"
+    accion: "Elija **Mostrar acumulado** para analizar la información desde el inicio del proyecto hasta la fecha de consulta."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s257]
+    pagina: null
+  - n: 6
+    id: "gerencia-proyectos.consultar-resultados-operativos#6"
+    accion: "Elija la semana de consulta."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s257]
+    pagina: null
+  - n: 7
+    id: "gerencia-proyectos.consultar-resultados-operativos#7"
+    accion: "Haga doble clic sobre el nombre del proyecto para ver los resultados a nivel de grupo de recursos de todo el proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s257]
+    pagina: null
+  - n: 8
+    id: "gerencia-proyectos.consultar-resultados-operativos#8"
+    accion: "Haga doble clic sobre los costos directos para ver los resultados a nivel de grupo de recursos de costos directos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s257]
+    pagina: null
+  - n: 9
+    id: "gerencia-proyectos.consultar-resultados-operativos#9"
+    accion: "Haga doble clic sobre una partida de control para ver los resultados a nivel de grupo de recursos de la partida de control."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s257]
+    pagina: null
+verificacion:
+  - texto: "La columna Real acumula la mano de obra de los tareos, los materiales de los egresos hacia una partida de control del módulo de almacenes, el equipo de los partes diarios de equipo y los subcontratos de su valorización."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s257]
+  - texto: "Un factor de avance de la rama meta (M Fa a la fecha) de 1.17 se interpreta como un avance del 17% (se resta 1)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s257]
+  - texto: "Un factor de costo de la rama meta (M Fa a la fecha) de 1.17 se interpreta como una ganancia del 17% (se resta 1)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s258]
+errores_frecuentes: []
+relacionados: [gerencia-proyectos.planificar-en-cronograma-por-periodos, gerencia-proyectos.definir-periodos]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s257, manual: "Manual de Gerencia de Proyectos", seccion: "9.3 Resultados Operativos por Proyecto (1)", pagina: null}
+  - {id: img-ae67a0ae439c-0000, manual: "Manual de Gerencia de Proyectos", seccion: "ae67a0ae439c.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s258, manual: "Manual de Gerencia de Proyectos", seccion: "9.3 Resultados Operativos por Proyecto (2)", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

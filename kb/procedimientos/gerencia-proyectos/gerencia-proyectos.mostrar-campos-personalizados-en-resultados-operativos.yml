@@ -1,0 +1,85 @@
+id: gerencia-proyectos.mostrar-campos-personalizados-en-resultados-operativos
+version: 1
+modulo: gerencia-proyectos
+titulo: "Mostrar campos personalizados en Resultados Operativos"
+objetivo: "Elegir, en la ventana de Campos de Visualización, los campos que se verán en Resultados Operativos según la escala de periodo y la vista (con o sin acumulados), y agruparlos y grabarlos."
+nivel: intermedio
+preguntas:
+  - "cómo elijo qué columnas se ven en resultados operativos"
+  - "como muestro campos personalizados en resultados operativos"
+  - "donde agrego el campo meta costo a la fecha en resultados"
+  - "la grilla de resultados operativos sale vacia"
+  - "como veo los resultados acumulados hasta la semana"
+  - "como quito todos los campos que elegi en resultados operativos"
+  - "mostrar campos personalisados gerencia de proyectos"
+  - "como grabo los campos que quiero ver en los resultados del proyecto"
+aliases:
+  - "mostrar campos personalizados"
+  - "campos de visualización"
+  - "columnas de resultados operativos"
+  - "mostrar acumulados"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Resultados Operativos", "Campos de Visualización"]
+  objetos: ["campos", "periodo", "escala del periodo", "partida de control"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.mostrar-campos-personalizados-en-resultados-operativos#1"
+    accion: "Elija la escala del periodo de consulta: están disponibles los periodos mensual y semanal; el recomendado es semanal."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s278]
+    pagina: null
+  - n: 2
+    id: "gerencia-proyectos.mostrar-campos-personalizados-en-resultados-operativos#2"
+    accion: "Marque o no **Mostrar acumulados**: seleccionado, acumula la información hasta el periodo de la consulta; no seleccionado, muestra todos los periodos visibles en fila."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s278]
+    pagina: null
+  - n: 3
+    id: "gerencia-proyectos.mostrar-campos-personalizados-en-resultados-operativos#3"
+    accion: "Haga clic derecho y elija **Mostrar campos personalizado**."
+    resultado: "Se muestra la ventana de **Campos de Visualización**."
+    fuente: [img-af0b82bc037a-0000, web-https-documentacion-s10peru-com-manual-d-s278]
+    pagina: null
+    fotos:
+      - id: "5d958172671d"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/af0b82bc037a.png"
+        pagina: null
+        ocr: "Resultados OQperuiives del Pyowesto ‘Sol.\nH\nEscala de periodo [Period Semanal Bd a acumulades\nPartida de Control Clie derecho += Agregar periados H\nCéaliga Descripcién\n|__|3& Exportar a Microsoft Excel b\n01 5 PC Puente en carretera |_|\no101 i Costos Directos, Gf Mostrar campos\ne102 Costos Indirectos Mostrar campos personalizado—(c)\nMostrar actividades »\nContraer: <Ellja el nivel 5"
+  - n: 4
+    id: "gerencia-proyectos.mostrar-campos-personalizados-en-resultados-operativos#4"
+    accion: "En la ventana, ubique los campos disponibles (sector A); los campos elegidos (sector B) son los que serán visualizados en resultados operativos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s266]
+    pagina: null
+    fotos:
+      - id: "2d1869a0fe91"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/f2f489bee5c2.png"
+        pagina: null
+        caption: "Llamada c: Muestra la ventana de Campos de Visualización"
+        ocr: "[ a} Campos de Visualizacién (Defecto kle@ies\n=| Programado +) Programado |\nHH Venta Valorizado\nMeta Resultados\nEl Valorizado =) Precio Unitario (PU)\ni Venta\nMeta\n=| Resultados =(c) >|\nReal\nVenta ala Fecha\nVenta Proyectado-(c-3) @™ >>|\nMeta ala Fecha |\n[#| Meta Proyectado fos <|\nResultados Proyectados:\n[= Precio Unitario (PU) <a)\nPU Mano de Obras{a-t] (@ <|\nfH PU Materiales.\nPU Equipo\n| PU Subcont…"
+  - n: 5
+    id: "gerencia-proyectos.mostrar-campos-personalizados-en-resultados-operativos#5"
+    accion: "Traslade el campo elegido del sector A al sector B, o todos los campos; para corregir, devuelva el campo elegido o limpie todos los campos elegidos del sector B."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s266]
+    pagina: null
+  - n: 6
+    id: "gerencia-proyectos.mostrar-campos-personalizados-en-resultados-operativos#6"
+    accion: "Agrupe y grabe los campos seleccionados."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s278]
+    pagina: null
+    fotos:
+      - id: "bf7cff0bbf1d"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/63c87f488d2e.png"
+        pagina: null
+        caption: "Esta es una selección de campos básica:"
+        ocr: "[Mele SSResl~S«|S Meta alaech\nM_P Costo M_¥ Costo M Fa (ala fecha) | MFe (a la fecha)"
+verificacion: []
+errores_frecuentes:
+  - sintoma: "Al elegir una de las vistas, la grilla se muestra vacía."
+    solucion: "Inicialmente la grilla se mostrará vacía hasta que elija un periodo y los campos disponibles; cada vista (con o sin acumulados) tiene campos que son exclusivos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s278]
+relacionados: []
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s278, manual: "Manual de Gerencia de Proyectos", seccion: "9.9 Mostrar campos personalizados", pagina: null}
+  - {id: img-af0b82bc037a-0000, manual: "Manual de Gerencia de Proyectos", seccion: "af0b82bc037a.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s266, manual: "Manual de Gerencia de Proyectos", seccion: "9.8 Cómo hacer visible los campos en resultados operativos (1)", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

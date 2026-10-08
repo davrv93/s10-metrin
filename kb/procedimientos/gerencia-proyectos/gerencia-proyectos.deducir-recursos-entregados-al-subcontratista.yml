@@ -1,0 +1,107 @@
+id: gerencia-proyectos.deducir-recursos-entregados-al-subcontratista
+version: 1
+modulo: gerencia-proyectos
+titulo: "Deducir de la valorización los recursos entregados al subcontratista"
+objetivo: "Descontar en la valorización del subcontrato el monto, con impuesto, de los recursos entregados al subcontratista, que se egresan desde el módulo de Almacenes hacia una partida de control."
+nivel: intermedio
+preguntas:
+  - "cómo descuento al subcontratista los materiales que le entregué"
+  - "como hago la deduccion de recursos en la valorizacion del subcontrato"
+  - "le di alambre al subcontratista, como se lo descuento"
+  - "donde veo el monto deducido en la valorización del subcontrato"
+  - "no me aparece el egreso en deduccion de recursos"
+  - "puedo editar el monto de deducción de recursos"
+  - "como se rebaja el material entregado al subcontratista en s10"
+  - "deducion de materiales al subcontratista con impuesto"
+aliases:
+  - "deducción de recursos"
+  - "descontar recursos al subcontratista"
+  - "deducir materiales del subcontrato"
+  - "deducción en la valorización"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Deduccion de Recursos", "Resumen Valorizacion", "Egreso a Partida de Control"]
+  objetos: ["subcontrato", "subcontratista", "valorización", "recursos", "impuesto"]
+prerrequisitos:
+  - texto: "Todos los recursos entregados al subcontratista necesariamente tienen que ser egresados desde el módulo de Almacenes: no hay forma de editarlos manualmente."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s160]
+  - texto: "El subcontrato se valoriza en el periodo que se controla; solo permite una valorización por periodo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s159]
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.deducir-recursos-entregados-al-subcontratista#1"
+    accion: "En el módulo de Almacenes, efectúe un egreso a partida de control con los recursos entregados al subcontratista."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s160, img-d4fd7c873b06-0000]
+    pagina: null
+    fotos:
+      - id: "fdb88a07ab8b"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/d4fd7c873b06.png"
+        pagina: null
+        ocr: "Bp Egreso a Partida de Control [EPC] 02004- PUENTE EN CARRETERA [ele] 3\nRegistra jr -Ramirezluiiez, Jose, Pe\nch age By eas Elija el nombre del encargado del\nimacen ~ Obra -Urubamba subcontrato 0 subcontratista @||!\nTipo 01- OBRA :dicion\nSolictente (02100126 Florez, Antonio a | dd Nar\n(Origenestir\nFecha |26/04/2010 +I) aterno || La fecha del egreso tiene que estar |__| por\nProcedencia de la partide…"
+    sub:
+      - n: 1
+        id: "gerencia-proyectos.deducir-recursos-entregados-al-subcontratista#1.1"
+        accion: "Elija el nombre del encargado del subcontrato o subcontratista."
+        fuente: [img-d4fd7c873b06-0000, web-https-documentacion-s10peru-com-manual-d-s160]
+        pagina: null
+      - n: 2
+        id: "gerencia-proyectos.deducir-recursos-entregados-al-subcontratista#1.2"
+        accion: "Registre la fecha del egreso: tiene que estar dentro de la semana de la valorización."
+        fuente: [img-d4fd7c873b06-0000, web-https-documentacion-s10peru-com-manual-d-s160]
+        pagina: null
+  - n: 2
+    id: "gerencia-proyectos.deducir-recursos-entregados-al-subcontratista#2"
+    accion: "Revise el egreso realizado en el módulo de Almacenes."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s160]
+    pagina: null
+    fotos:
+      - id: "ac8aec81efa0"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/10ecc055e1ec.png"
+        pagina: null
+        caption: "A continuación, se muestra el egreso, realizado."
+        ocr: "[Bp S10 Almacenes\n| Archivo Ver Catélogos Herramientas 2\n| 422 Bae\nRe eee eresos\nEz Be /Egresos\n= Gaamostawe Tpelovimento: Egreso aParidadeContol EFC] | w)\nDatos BQ Ato 2010 |_TPe Movinintr: [Egreso a Paria de Contro)_fE Pe} __|rj\nGenerales 6) PUENTE EN CARRETERA, HY 2RHS of aaa\nfq Obra -Urubamba ‘ -\nDe Servicios Esiado[N Guia [Fecha _[Destino/Soictante_[Nonedal Importe _[Revistrador [Aimacén |\nAc…"
+  - n: 3
+    id: "gerencia-proyectos.deducir-recursos-entregados-al-subcontratista#3"
+    accion: "En la ventana de valorización del subcontrato, ingrese a la pestaña **DEDUCCION DE RECURSOS**."
+    resultado: "Se resta el monto de los recursos egresados en el módulo de almacenes hacia el subcontrato; el monto incluye el impuesto, no es editable y toma en cuenta las fechas en el rango del periodo de la valorización."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s160]
+    pagina: null
+    fotos:
+      - id: "cfa5558a0298"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/8c347bfefd46.png"
+        pagina: null
+        caption: "Llamada b: Ingrese a la pestaña DEDUCCION DE RECURSOS, para restar el monto de los recursos egresados en el módulo de almacenes hacia al subcontrato con la finalidad de deducir el monto que incluye el impuesto, el monto no es editable, toma en cuenta las fechas en el rango del periodo de la valorización."
+        ocr: "Px\n\\Cédigo o2004004 >| Valorizacién de cierre [] Nt Subcontrato Nt Velorizacién [00007\n‘Subcontrato SC M. DE 0. PARA COLOCACION DE ACERO CORRUGADO\n‘Subcontratista [02100126 Florez, Antonio iE importante que el egreso esté en I =\nel rango de fechas de la valorizacién\nS6Retenciones © Bide PRegerade 0 aan\nPeriodo Semanal 02201018 [Semana 18 H =] Velorizacion Neta Pagar Si. 3165.10\nDel 26/04/2010 al 0…"
+      - id: "10f2f05d7572"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/03e9f5c53691.png"
+        pagina: null
+        caption: "Llamada b: Ingrese a la pestaña DEDUCCION DE RECURSOS, para restar el monto de los recursos egresados en el módulo de almacenes hacia al subcontrato con la finalidad de deducir el monto que incluye el impuesto, el monto no es editable, toma en cuenta las fechas en el rango del periodo de la valorización."
+        ocr: "(Cécigo Descripcion Und.) Cantidad Precio Unitario Iimporte\n\nlo2o2000007__ ALAMBRE NEGRO RECOCIDO #16 kg 5.00 3.90 1950\n\nSubtotal 13.50\n\nley. El monto deducido incluye el impuesto 371\n\nTotal a Descontar | 2321\n\nDetalle Valorizacién Deduccién Recursos [amort. Adelantos | Amort. Pagos a Cuenta] Valor por Period | Resumen Val\n® Modifica Cancelar"
+  - n: 4
+    id: "gerencia-proyectos.deducir-recursos-entregados-al-subcontratista#4"
+    accion: "Ingrese a la pestaña **RESUMEN VALORIZACION**, haga clic derecho en la grilla y use **EVALUAR** para visualizar el monto deducido que incluye el impuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s160]
+    pagina: null
+    fotos:
+      - id: "e0193adad989"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/62c14d4af014.png"
+        pagina: null
+        caption: "Luego en el resumen de la valorización es mostrado el monto deducido,"
+        ocr: "= forex\n<==_ FC tC“(‘(‘‘$#E\ncéaigo 02004004 <|Velorizecién de cierre C]__N* Subcontrato N* Velorizacién [O00\n‘Subcontrato SC M. DE ©. PARA COLOCACION DE ACERO CORRUGADO\nSubcontratsta —fo2100126 Florez, Artonio [Ei ta valorizacion —:haemisién [ff S\n‘eRaicncioxes [S| Batado rege © renga de fechas eu impurtante\nPeriodo Semanal (02201018 [Semana 18 =| Velorizecién Neta Pagar Si. 3,141.90\nDel 26/04/201…"
+verificacion:
+  - texto: "En el resumen de la valorización se muestra el monto deducido, que incluye el impuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s160]
+errores_frecuentes:
+  - sintoma: "El recurso egresado no se descuenta en la valorización del subcontrato."
+    solucion: "Es importante que el egreso esté en el rango de fechas de la valorización: la deducción toma en cuenta las fechas del periodo valorizado."
+    fuente: [img-8c347bfefd46-0000, web-https-documentacion-s10peru-com-manual-d-s160]
+  - sintoma: "Quiere editar manualmente el monto de la deducción de recursos."
+    solucion: "El monto no es editable: los recursos entregados tienen que ser egresados desde el módulo de Almacenes."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s160]
+relacionados: [gerencia-proyectos.registrar-subcontrato, gerencia-proyectos.aprobar-valorizacion-del-subcontrato]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s160, manual: "Manual de Gerencia de Proyectos", seccion: "4.6.10.1 Deducción de recursos", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s159, manual: "Manual de Gerencia de Proyectos", seccion: "4.6.10 Valorización del subcontrato", pagina: null}
+  - {id: img-d4fd7c873b06-0000, manual: "Manual de Gerencia de Proyectos", seccion: "d4fd7c873b06.png", pagina: null}
+  - {id: img-8c347bfefd46-0000, manual: "Manual de Gerencia de Proyectos", seccion: "8c347bfefd46.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

@@ -1,0 +1,216 @@
+{"texto": "¿Cómo actualizo el porcentaje de una detracción en el catálogo de ítems cuando SUNAT lo modifica?", "procedimiento": "facturacion.actualizar-catalogo-de-detracciones-y-percepciones", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "sunat subio la detraccion de un servicio, donde cambio el porcentaje en el s10", "procedimiento": "facturacion.actualizar-catalogo-de-detracciones-y-percepciones", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como cambio el porsentaje de detracsion en el catalogo", "procedimiento": "facturacion.actualizar-catalogo-de-detracciones-y-percepciones", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "actualizar detracciones", "procedimiento": "facturacion.actualizar-catalogo-de-detracciones-y-percepciones", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "Necesito modificar el monto mínimo de aplicación de un ítem de detracción, ¿cómo lo hago?", "procedimiento": "facturacion.actualizar-catalogo-de-detracciones-y-percepciones", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como duplico un item de detraccion para crear otro parecido", "procedimiento": "facturacion.actualizar-catalogo-de-detracciones-y-percepciones", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "salió una resolución nueva de sunat con otras tasas de detracción para construcción, ¿qué hago en el sistema para ponerlas?", "procedimiento": "facturacion.actualizar-catalogo-de-detracciones-y-percepciones", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo adiciono un ítem nuevo al catálogo de percepciones?", "procedimiento": "facturacion.actualizar-catalogo-de-detracciones-y-percepciones", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como actualiso el % de percepcion de un item", "procedimiento": "facturacion.actualizar-catalogo-de-detracciones-y-percepciones", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como elimino un item de detraccion que ya no se usa", "procedimiento": "facturacion.actualizar-catalogo-de-detracciones-y-percepciones", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se registra el historial de porcentajes de una detracción según la fecha del comprobante?", "procedimiento": "facturacion.actualizar-catalogo-de-detracciones-y-percepciones", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "modificar percepcion", "procedimiento": "facturacion.actualizar-catalogo-de-detracciones-y-percepciones", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "mi contador me dice que la tasa de percepción cambió desde este mes, como la pongo en el catalogo", "procedimiento": "facturacion.actualizar-catalogo-de-detracciones-y-percepciones", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "pasos para actualizar el catalogo de detracciones y percepciones", "procedimiento": "facturacion.actualizar-catalogo-de-detracciones-y-percepciones", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo ajusto los rangos de aplicación de una detracción para que se tomen según la fecha de registro de las facturas?", "procedimiento": "facturacion.actualizar-catalogo-de-detracciones-y-percepciones", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "kiero cambiar el monto de percepcion de un item de s10", "procedimiento": "facturacion.actualizar-catalogo-de-detracciones-y-percepciones", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "¿Dónde está el catálogo de ítems de detracciones en Facturación?", "procedimiento": "facturacion.actualizar-catalogo-de-detracciones-y-percepciones", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en que menu estan las detracciones", "procedimiento": "facturacion.actualizar-catalogo-de-detracciones-y-percepciones", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde ta el catalogo de percepsiones", "procedimiento": "facturacion.actualizar-catalogo-de-detracciones-y-percepciones", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "catalogo detracciones", "procedimiento": "facturacion.actualizar-catalogo-de-detracciones-y-percepciones", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "¿Por qué ruta del menú llego a Catálogos / SUNAT / Percepciones?", "procedimiento": "facturacion.actualizar-catalogo-de-detracciones-y-percepciones", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "estoy en facturacion y necesito ver la lista de items de detraccion con sus porcentajes, por donde entro", "procedimiento": "facturacion.actualizar-catalogo-de-detracciones-y-percepciones", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "dnd veo los items de percepcion", "procedimiento": "facturacion.actualizar-catalogo-de-detracciones-y-percepciones", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Cómo dejo configurado el historial de cambios de porcentaje y montos de una detracción para que aplique según la fecha de cada comprobante?", "procedimiento": "facturacion.actualizar-catalogo-de-detracciones-y-percepciones", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "quiero que el sistema use la tasa vieja de detracción en las facturas antiguas y la nueva en las nuevas, como lo configuro", "procedimiento": "facturacion.actualizar-catalogo-de-detracciones-y-percepciones", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "Configurar los rangos de monto y porcentaje de un ítem de detracción", "procedimiento": "facturacion.actualizar-catalogo-de-detracciones-y-percepciones", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "antes de configurar los recursos con detracción tengo que dejar al día el catálogo, ¿cómo lo hago?", "procedimiento": "facturacion.actualizar-catalogo-de-detracciones-y-percepciones", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "¿Cómo parametrizo el porcentaje y el monto de aplicación de un ítem de percepción?", "procedimiento": "facturacion.actualizar-catalogo-de-detracciones-y-percepciones", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "konfigurar item de detraccion con su monto minimo y porcentaje", "procedimiento": "facturacion.actualizar-catalogo-de-detracciones-y-percepciones", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "El porcentaje de detracción del sistema está desactualizado y no coincide con lo que publicó SUNAT", "procedimiento": "facturacion.actualizar-catalogo-de-detracciones-y-percepciones", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "no me calcula la percepcion aunque el recurso ya tiene su item de percepcion", "procedimiento": "facturacion.actualizar-catalogo-de-detracciones-y-percepciones", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no se aplica la percepcion a un proveedor, q reviso", "procedimiento": "facturacion.actualizar-catalogo-de-detracciones-y-percepciones", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "la detracción sale con la tasa antigua en las facturas nuevas", "procedimiento": "facturacion.actualizar-catalogo-de-detracciones-y-percepciones", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "Ya relacioné el recurso con el ítem de percepción y no se aplica el cálculo, ¿qué falta en las propiedades del proveedor?", "procedimiento": "facturacion.actualizar-catalogo-de-detracciones-y-percepciones", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "porsentaje de detraccion mal en la factura", "procedimiento": "facturacion.actualizar-catalogo-de-detracciones-y-percepciones", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "en una compra de cemento para la obra la percepción no se calcula, el recurso sí tiene su item, el proveedor no sé", "procedimiento": "facturacion.actualizar-catalogo-de-detracciones-y-percepciones", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "¿Cómo importo las facturas electrónicas que los proveedores enviaron al correo de recepción?", "procedimiento": "facturacion.importar-facturas-electronicas-de-proveedores", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como cargo las facturas de proveedores al s10 sin digitarlas una por una", "procedimiento": "facturacion.importar-facturas-electronicas-de-proveedores", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como inporto las facturas de compras electronicas", "procedimiento": "facturacion.importar-facturas-electronicas-de-proveedores", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "importar facturas de proveedores", "procedimiento": "facturacion.importar-facturas-electronicas-de-proveedores", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "¿Cómo proceso las facturas pendientes de ingreso para que queden regularizadas con el ingreso al almacén?", "procedimiento": "facturacion.importar-facturas-electronicas-de-proveedores", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "los proveedores de la obra nos mandan sus facturas con xml y pdf al correo, como las ingreso al erp de un solo golpe", "procedimiento": "facturacion.importar-facturas-electronicas-de-proveedores", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como uso el boton procesar facturas", "procedimiento": "facturacion.importar-facturas-electronicas-de-proveedores", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se registran varias facturas de proveedores automáticamente a partir del XML?", "procedimiento": "facturacion.importar-facturas-electronicas-de-proveedores", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "kiero procesar las facturas q mandaron los proveedores al correo", "procedimiento": "facturacion.importar-facturas-electronicas-de-proveedores", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "procesar facturas", "procedimiento": "facturacion.importar-facturas-electronicas-de-proveedores", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como hago el registro simple de facturas de proveedor", "procedimiento": "facturacion.importar-facturas-electronicas-de-proveedores", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo regularizo con ingreso a almacén las facturas electrónicas recibidas por correo?", "procedimiento": "facturacion.importar-facturas-electronicas-de-proveedores", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "tengo como 30 facturas de materiales que llegaron al buzon de facturas, hay forma de jalarlas todas al sistema", "procedimiento": "facturacion.importar-facturas-electronicas-de-proveedores", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "pasos para importar las facturas electronicas en documentos por pagar", "procedimiento": "facturacion.importar-facturas-electronicas-de-proveedores", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo traigo al ERP las facturas que están pendientes de ingreso al sistema?", "procedimiento": "facturacion.importar-facturas-electronicas-de-proveedores", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como se ase para importar xml de facturas de proveedores", "procedimiento": "facturacion.importar-facturas-electronicas-de-proveedores", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "¿En qué escenario se importan las facturas electrónicas de proveedores?", "procedimiento": "facturacion.importar-facturas-electronicas-de-proveedores", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde esta el boton procesar facturas", "procedimiento": "facturacion.importar-facturas-electronicas-de-proveedores", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd esta la opcion facturacion electronica importar en documentos por pagar", "procedimiento": "facturacion.importar-facturas-electronicas-de-proveedores", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "donde importo facturas", "procedimiento": "facturacion.importar-facturas-electronicas-de-proveedores", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "¿Dónde veo el listado de facturas de proveedores pendientes de ingreso al sistema?", "procedimiento": "facturacion.importar-facturas-electronicas-de-proveedores", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "estoy en documentos por pagar y le doy clic derecho, que opcion elijo para jalar las facturas del correo", "procedimiento": "facturacion.importar-facturas-electronicas-de-proveedores", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "por donde entro para importar las facturas del proveedor", "procedimiento": "facturacion.importar-facturas-electronicas-de-proveedores", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Qué debe hacer el proveedor para que sus facturas lleguen al ERP y se puedan importar?", "procedimiento": "facturacion.importar-facturas-electronicas-de-proveedores", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "a que correo tienen que mandar las facturas los proveedores para poder importarlas al s10", "procedimiento": "facturacion.importar-facturas-electronicas-de-proveedores", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué archivos debe incluir el correo del proveedor para que se pueda importar la factura electrónica?", "procedimiento": "facturacion.importar-facturas-electronicas-de-proveedores", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "queremos que los proveedores manden sus facturas al buzon de la empresa para que entren al erp, como lo dejamos listo", "procedimiento": "facturacion.importar-facturas-electronicas-de-proveedores", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "q tiene q mandar el proveedor al buzon de facturas, solo el pdf?", "procedimiento": "facturacion.importar-facturas-electronicas-de-proveedores", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "¿Cómo dejo preparada la recepción de facturas electrónicas de proveedores para luego importarlas al sistema?", "procedimiento": "facturacion.importar-facturas-electronicas-de-proveedores", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "Las facturas del proveedor no aparecen como pendientes de ingreso al importar", "procedimiento": "facturacion.importar-facturas-electronicas-de-proveedores", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "le doy importar y no sale ninguna factura en la lista", "procedimiento": "facturacion.importar-facturas-electronicas-de-proveedores", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me jala la factura q mando el proveedor al correo", "procedimiento": "facturacion.importar-facturas-electronicas-de-proveedores", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "Procesé las facturas pero no quedaron regularizadas con el ingreso al almacén", "procedimiento": "facturacion.importar-facturas-electronicas-de-proveedores", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "el proveedor mando solo el pdf y no me deja importar la factura", "procedimiento": "facturacion.importar-facturas-electronicas-de-proveedores", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "importar facturas no trae nada", "procedimiento": "facturacion.importar-facturas-electronicas-de-proveedores", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "no veo la opcion facturacion electronica al dar clic derecho en documentos por pagar", "procedimiento": "facturacion.importar-facturas-electronicas-de-proveedores", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "¿Cómo sincronizo un proyecto del S10 con Sperant?", "procedimiento": "facturacion.sincronizar-proyecto-con-sperant", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como enlazo mi proyecto inmobiliario con sperant", "procedimiento": "facturacion.sincronizar-proyecto-con-sperant", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como sincronisar un proyecto con sperant", "procedimiento": "facturacion.sincronizar-proyecto-con-sperant", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "sincronizar proyecto sperant", "procedimiento": "facturacion.sincronizar-proyecto-con-sperant", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "¿Cómo relaciono el proyecto del S10 con su proyecto en la interface de Sperant?", "procedimiento": "facturacion.sincronizar-proyecto-con-sperant", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "tenemos un condominio nuevo en sperant y en el s10 ya existe el proyecto, ¿qué pasos hago para que queden relacionados?", "procedimiento": "facturacion.sincronizar-proyecto-con-sperant", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como hago para que el proyecto de s10 y el de sperant sean el mismo", "procedimiento": "facturacion.sincronizar-proyecto-con-sperant", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Qué pasos sigo para vincular un proyecto inmobiliario con Sperant desde el módulo de gerencia?", "procedimiento": "facturacion.sincronizar-proyecto-con-sperant", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "kiero relacionar mi proyecto con el sperant", "procedimiento": "facturacion.sincronizar-proyecto-con-sperant", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "relacionar proyecto con sperant", "procedimiento": "facturacion.sincronizar-proyecto-con-sperant", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "pasos para sincronizar proyectos s10 sperant", "procedimiento": "facturacion.sincronizar-proyecto-con-sperant", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo ubico en Sperant el proyecto que quiero relacionar con el S10 después de activar la opción en el proyecto?", "procedimiento": "facturacion.sincronizar-proyecto-con-sperant", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el area comercial ya cargo la inmobiliaria en sperant y ahora yo tengo que unirla con el proyecto de s10, como se hace", "procedimiento": "facturacion.sincronizar-proyecto-con-sperant", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "ke tengo q hacer pa q sperant reconosca el proyecto", "procedimiento": "facturacion.sincronizar-proyecto-con-sperant", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "¿Cómo verifico que la sincronización del proyecto con Sperant quedó hecha?", "procedimiento": "facturacion.sincronizar-proyecto-con-sperant", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como se si ya se sincronizo el proyecto con sperant", "procedimiento": "facturacion.sincronizar-proyecto-con-sperant", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Dónde activo la Gestión Inmobiliaria del proyecto para que se sincronice con Sperant?", "procedimiento": "facturacion.sincronizar-proyecto-con-sperant", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde veo el campo proyecto sperant del proyecto", "procedimiento": "facturacion.sincronizar-proyecto-con-sperant", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd se ve el proyecto sperant en el catalogo de proyectos", "procedimiento": "facturacion.sincronizar-proyecto-con-sperant", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "campo proyecto sperant", "procedimiento": "facturacion.sincronizar-proyecto-con-sperant", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "¿En qué parte del catálogo de proyectos veo con qué proyecto de Sperant quedó relacionado el mío?", "procedimiento": "facturacion.sincronizar-proyecto-con-sperant", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "estoy en gerencia y no encuentro donde enlazar el proyecto con sperant, por donde es", "procedimiento": "facturacion.sincronizar-proyecto-con-sperant", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "donde se hace la sincronizacion de proyectos con sperant", "procedimiento": "facturacion.sincronizar-proyecto-con-sperant", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Qué debo configurar para poder sincronizar los proyectos con Sperant?", "procedimiento": "facturacion.sincronizar-proyecto-con-sperant", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que opcion de datos adicionales activo para que sperant reconozca mi proyecto", "procedimiento": "facturacion.sincronizar-proyecto-con-sperant", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "Antes de sincronizar el proyecto con Sperant, ¿dónde se configura la integración en Facturación?", "procedimiento": "facturacion.sincronizar-proyecto-con-sperant", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "¿En qué pestaña de la ventana de la tuerca se configura la integración con Sperant?", "procedimiento": "facturacion.sincronizar-proyecto-con-sperant", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "kiero dejar el proyecto listo para trabajar con sperant, q marco en gestion inmobiliaria", "procedimiento": "facturacion.sincronizar-proyecto-con-sperant", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "la inmobiliaria va a trabajar con sperant, que debo activar en el proyecto para que se enlacen", "procedimiento": "facturacion.sincronizar-proyecto-con-sperant", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "El campo Proyecto Sperant me aparece vacío al modificar el proyecto", "procedimiento": "facturacion.sincronizar-proyecto-con-sperant", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "sincronice el proyecto pero en el catalogo no aparece el proyecto de sperant", "procedimiento": "facturacion.sincronizar-proyecto-con-sperant", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me sinkroniza el proyecto con sperant", "procedimiento": "facturacion.sincronizar-proyecto-con-sperant", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "proyecto sperant vacio", "procedimiento": "facturacion.sincronizar-proyecto-con-sperant", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "No encuentro el proyecto en la interface de Sperant para relacionarlo con el S10", "procedimiento": "facturacion.sincronizar-proyecto-con-sperant", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "active gestion inmobiliaria pero sperant no ve mi proyecto de obra", "procedimiento": "facturacion.sincronizar-proyecto-con-sperant", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "la sincronisacion de proyectos con sperant no funciona, q reviso", "procedimiento": "facturacion.sincronizar-proyecto-con-sperant", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "¿Cómo registro un horario diario en Nóminas?", "procedimiento": "nominas.registrar-horario-diario", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como creo un horario nuevo para los obreros de lunes a viernes", "procedimiento": "nominas.registrar-horario-diario", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como creo un orario diario en nominas", "procedimiento": "nominas.registrar-horario-diario", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "crear horario diario", "procedimiento": "nominas.registrar-horario-diario", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "¿Cómo registro los bloques de horas extras al 60% y al 100% en un horario diario?", "procedimiento": "nominas.registrar-horario-diario", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como pongo el bloque de la jornada normal de 7:30 a 4:30", "procedimiento": "nominas.registrar-horario-diario", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "en la obra los sabados se trabaja medio dia, como armo ese horario en el sistema", "procedimiento": "nominas.registrar-horario-diario", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo registro el concepto de inasistencia dentro del horario diario?", "procedimiento": "nominas.registrar-horario-diario", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como agrego bonos e incentivos al orario", "procedimiento": "nominas.registrar-horario-diario", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como registro los permisos no autorizados en el horario", "procedimiento": "nominas.registrar-horario-diario", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo indico a qué días corresponde un horario: laborables, no laborables o sábados y domingos?", "procedimiento": "nominas.registrar-horario-diario", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "horas extras 60 y 100", "procedimiento": "nominas.registrar-horario-diario", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "necesito un turno de noche para los vigilantes de la obra, como lo registro como horario diario", "procedimiento": "nominas.registrar-horario-diario", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como elijo el turno cuando creo un horario diario", "procedimiento": "nominas.registrar-horario-diario", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo ingreso la hora inicial, la hora final y el concepto genérico de un bloque del horario?", "procedimiento": "nominas.registrar-horario-diario", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "kiero adicionar un horario diario y no se por donde empezar", "procedimiento": "nominas.registrar-horario-diario", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "¿Dónde está el escenario de Horarios Diarios?", "procedimiento": "nominas.registrar-horario-diario", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde registro el horario de los sabados", "procedimiento": "nominas.registrar-horario-diario", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd se ven los horarios diarios", "procedimiento": "nominas.registrar-horario-diario", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "horarios diarios", "procedimiento": "nominas.registrar-horario-diario", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "¿En qué pestaña del horario diario se registran las tardanzas y tolerancias?", "procedimiento": "nominas.registrar-horario-diario", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en que pestaña del horario pongo el bloque de bonos", "procedimiento": "nominas.registrar-horario-diario", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "estoy en nominas y quiero ver la lista de horarios que ya cree, por donde entro", "procedimiento": "nominas.registrar-horario-diario", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "¿Cómo configuro las horas extras al 60% y al 100% dentro del horario diario?", "procedimiento": "nominas.registrar-horario-diario", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "como configuro en el horario los bonos que solo se pagan si el trabajador asistio", "procedimiento": "nominas.registrar-horario-diario", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "Configuración del horario diario con reloj marcador: tardanzas y tolerancias", "procedimiento": "nominas.registrar-horario-diario", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que concepto generico uso para la jornada normal en el horario", "procedimiento": "nominas.registrar-horario-diario", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "konfigurar el bloque de permiso no autorizado q se cambia con papeleta", "procedimiento": "nominas.registrar-horario-diario", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "como configuro el horario diario de una obra que trabaja jornadas de 10 horas con horas extras", "procedimiento": "nominas.registrar-horario-diario", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "No encuentro dónde registrar las tardanzas y tolerancias en el horario diario", "procedimiento": "nominas.registrar-horario-diario", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "no me sale el bloque de tardanzas en el horario", "procedimiento": "nominas.registrar-horario-diario", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me reconoce las horas extras en el horario diario", "procedimiento": "nominas.registrar-horario-diario", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "¿Por qué no aparece el bloque de tardanzas si no utilizo reloj marcador?", "procedimiento": "nominas.registrar-horario-diario", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "el bono de incentivo no se muestra aunque el obrero asistio, en que bloque tenia que ir", "procedimiento": "nominas.registrar-horario-diario", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no me deja grabar el orario diario", "procedimiento": "nominas.registrar-horario-diario", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "las faltas no salen con el concepto de inasistencia en el horario que arme", "procedimiento": "nominas.registrar-horario-diario", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "¿Cómo registro el logotipo de la empresa en el sistema?", "procedimiento": "nominas.registrar-logotipo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como subo el logo de la constructora para que salga en las boletas", "procedimiento": "nominas.registrar-logotipo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como pongo el logotipo en nominas", "procedimiento": "nominas.registrar-logotipo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "registrar logotipo", "procedimiento": "nominas.registrar-logotipo", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "¿Cómo registro una firma digital en el Catálogo de Logotipos?", "procedimiento": "nominas.registrar-logotipo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como subo la firma del gerente para los reportes", "procedimiento": "nominas.registrar-logotipo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cambiaron de razon social y hay un logo nuevo, como lo cargo para que salga en los reportes impresos", "procedimiento": "nominas.registrar-logotipo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo asigno el logotipo a un socio de negocio para que se vea en los reportes?", "procedimiento": "nominas.registrar-logotipo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "kiero agregar un logotipo nuevo al s10", "procedimiento": "nominas.registrar-logotipo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "subir firma digital", "procedimiento": "nominas.registrar-logotipo", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como cambio el logo de la empresa", "procedimiento": "nominas.registrar-logotipo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo elijo el archivo con el arte del logotipo al registrarlo?", "procedimiento": "nominas.registrar-logotipo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "tengo el png del logo de la empresa, que hago para que aparezca en lo que imprimo desde nominas", "procedimiento": "nominas.registrar-logotipo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como pongo la firma digitar en los reportes", "procedimiento": "nominas.registrar-logotipo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "pasos para registrar un logotipo en el catalogo de logotipos", "procedimiento": "nominas.registrar-logotipo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo registro un logotipo dentro de un grupo del catálogo?", "procedimiento": "nominas.registrar-logotipo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "¿Dónde está el Catálogo de Logotipos?", "procedimiento": "nominas.registrar-logotipo", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde se registra el logotipo en nominas", "procedimiento": "nominas.registrar-logotipo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd esta el catalogo de logotipos y firmas", "procedimiento": "nominas.registrar-logotipo", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "catalogo de logotipos", "procedimiento": "nominas.registrar-logotipo", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "¿En qué parte asigno el logotipo registrado para que salga en los reportes?", "procedimiento": "nominas.registrar-logotipo", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "estoy en el menu de catalogos y no encuentro donde va el logo de la empresa", "procedimiento": "nominas.registrar-logotipo", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "donde subo la firma digital", "procedimiento": "nominas.registrar-logotipo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Cómo defino la estructura del Catálogo de Logotipos, por ejemplo los niveles Empresa y Grupo?", "procedimiento": "nominas.registrar-logotipo", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que usuario necesito para editar la estructura del catalogo de logotipos", "procedimiento": "nominas.registrar-logotipo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como armo los niveles de empresa y grupo para mis logotipos", "procedimiento": "nominas.registrar-logotipo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "definir estructura de logotipos", "procedimiento": "nominas.registrar-logotipo", "intencion": "CONFIGURATION", "estilo": "muy_corta"}
+{"texto": "q permiso se necesita para definir la estructura de los logos", "procedimiento": "nominas.registrar-logotipo", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "tenemos varias empresas del grupo y cada una con su logo, como organizo el catalogo", "procedimiento": "nominas.registrar-logotipo", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "El logotipo no sale en el reporte impreso", "procedimiento": "nominas.registrar-logotipo", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "subi el logo pero no aparece en las boletas, que falta", "procedimiento": "nominas.registrar-logotipo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me deja definir la estructura del catalogo de logotipos", "procedimiento": "nominas.registrar-logotipo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no pued editar la estrutura de logotipos", "procedimiento": "nominas.registrar-logotipo", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "Registré el logotipo pero el reporte sigue sin mostrarlo, ¿me falta asignarlo al socio de negocio?", "procedimiento": "nominas.registrar-logotipo", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "el logo no sale", "procedimiento": "nominas.registrar-logotipo", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "la firma digital no se ve al imprimir el reporte de la obra", "procedimiento": "nominas.registrar-logotipo", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "¿Cómo registro una plantilla de documento para entregar al trabajador, como un certificado de trabajo?", "procedimiento": "nominas.registrar-plantilla-de-documento", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como hago una constancia de trabajo que salga con los datos del trabajador", "procedimiento": "nominas.registrar-plantilla-de-documento", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como asigo un archivo word a la plantilla del certificado", "procedimiento": "nominas.registrar-plantilla-de-documento", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "crear plantilla de certificado", "procedimiento": "nominas.registrar-plantilla-de-documento", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "¿Cómo redacto un documento con las variables del diccionario para que se reemplacen con los datos del trabajador?", "procedimiento": "nominas.registrar-plantilla-de-documento", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "un obrero pide su certificado de trabajo y quiero que el sistema lo arme con su dni y fecha de ingreso, como hago la plantilla", "procedimiento": "nominas.registrar-plantilla-de-documento", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como agrego un subitem nuevo en el grupo de constancias", "procedimiento": "nominas.registrar-plantilla-de-documento", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo elijo el escenario desde el que se recopila la información de la plantilla?", "procedimiento": "nominas.registrar-plantilla-de-documento", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "kiero crear una plantiya de liquidacion", "procedimiento": "nominas.registrar-plantilla-de-documento", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como asigno un excel como plantilla del documento", "procedimiento": "nominas.registrar-plantilla-de-documento", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "plantilla de documento", "procedimiento": "nominas.registrar-plantilla-de-documento", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "¿Cómo registro una plantilla de documento en formato Word o Excel?", "procedimiento": "nominas.registrar-plantilla-de-documento", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "rrhh me pidio constancias de trabajo con formato propio de la empresa, ¿como las cargo al sistema?", "procedimiento": "nominas.registrar-plantilla-de-documento", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como uso las variables en un certificado", "procedimiento": "nominas.registrar-plantilla-de-documento", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como ago un certificado de 5ta con plantilla", "procedimiento": "nominas.registrar-plantilla-de-documento", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "¿Cómo registro la descripción y la abreviatura de una plantilla de certificado?", "procedimiento": "nominas.registrar-plantilla-de-documento", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "¿Dónde está el Catálogo de Plantillas de Documentos?", "procedimiento": "nominas.registrar-plantilla-de-documento", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde se registran las plantillas de documentos", "procedimiento": "nominas.registrar-plantilla-de-documento", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd esta el diccionario de variables", "procedimiento": "nominas.registrar-plantilla-de-documento", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "diccionario de variables", "procedimiento": "nominas.registrar-plantilla-de-documento", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "¿Cómo abro el diccionario de variables desde la ventana de la plantilla?", "procedimiento": "nominas.registrar-plantilla-de-documento", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "estoy en nominas y busco donde estan los certificados y constancias que se entregan al trabajador", "procedimiento": "nominas.registrar-plantilla-de-documento", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "en que menu veo las plantillas de certificados", "procedimiento": "nominas.registrar-plantilla-de-documento", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Qué variables puedo usar al configurar la plantilla de un certificado de trabajo?", "procedimiento": "nominas.registrar-plantilla-de-documento", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que variables puedo usar en un documento de nominas", "procedimiento": "nominas.registrar-plantilla-de-documento", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como configuro de que escenario saca los datos la plantilla, de personal disponible?", "procedimiento": "nominas.registrar-plantilla-de-documento", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q formato acepta la plantilla, word o excel", "procedimiento": "nominas.registrar-plantilla-de-documento", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "asignar archivo word a plantilla", "procedimiento": "nominas.registrar-plantilla-de-documento", "intencion": "CONFIGURATION", "estilo": "muy_corta"}
+{"texto": "queremos que los certificados salgan con el texto legal de la empresa, como armo la plantilla con variables", "procedimiento": "nominas.registrar-plantilla-de-documento", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "La plantilla no reemplaza las variables por los datos del trabajador", "procedimiento": "nominas.registrar-plantilla-de-documento", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "el certificado sale con las variables sin cambiar por los datos del trabajador", "procedimiento": "nominas.registrar-plantilla-de-documento", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me sale el dni del trabajador en la constansia", "procedimiento": "nominas.registrar-plantilla-de-documento", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "No encuentro la variable que necesito para el documento, ¿dónde veo cuáles existen?", "procedimiento": "nominas.registrar-plantilla-de-documento", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "genere el certificado de un obrero y salio con los datos vacios", "procedimiento": "nominas.registrar-plantilla-de-documento", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "plantilla no jala datos", "procedimiento": "nominas.registrar-plantilla-de-documento", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "no puedo asignar el documento word a la plantilla", "procedimiento": "nominas.registrar-plantilla-de-documento", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}

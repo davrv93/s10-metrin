@@ -1,0 +1,82 @@
+id: gerencia-proyectos.configurar-tareo-estandar-con-parte-semanal
+version: 1
+modulo: gerencia-proyectos
+titulo: "Configurar el proyecto para el tareo estándar con parte semanal"
+objetivo: "Indicar en Datos Generales, pestaña Nóminas, que el tipo de nómina del proyecto usará tareo estándar con parte semanal (y, si corresponde, tareo móvil), cuando los obreros o empleados trabajan en un solo proyecto."
+nivel: basico
+preguntas:
+  - "cómo configuro el tareo estándar con parte semanal en el proyecto"
+  - "donde activo el tareo movil del proyecto en gerencia de proyectos"
+  - "en que pestaña elijo el tipo de tareo del proyecto"
+  - "mis obreros trabajan en un solo proyecto, que tareo uso"
+  - "como elijo tareo estandar con parte semanal para el tipo de nomina"
+  - "configurar tareo semanal en datos generales"
+  - "como habilito el tareo con parte semanal y luego publico el parte"
+aliases:
+  - "tareo estándar con parte semanal"
+  - "configurar tareo estándar"
+  - "configurar tareo semanal"
+  - "activar tareo móvil del proyecto"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Datos Generales", "PERSONAL DISPONIBLE", "TAREO ESTANDAR"]
+  objetos: ["proyecto", "tipo de nómina", "trabajadores", "parte"]
+prerrequisitos:
+  - texto: "Use tareo estándar con parte semanal cuando los obreros o empleados trabajan en un solo proyecto; la información la usa el módulo de Nóminas para elaborar el planillón."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s173]
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.configurar-tareo-estandar-con-parte-semanal#1"
+    accion: "Ubique el escenario de **Datos Generales**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s173]
+    pagina: null
+    fotos:
+      - id: "78634ca46948"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/6edd5ad0bc0f.png"
+        pagina: null
+        caption: "Llamada a: Sí trabaja sólo en un proyecto “destino” y desea trabajar multiproyecto, registre el “multiproyecto” y en tipo de tareo asocie el “destino” para vincularlo; y para usar tareo móvil, configure en el escenario de Datos generales, pestaña de Nóminas,"
+        ocr: "[er — Datos Generales\n> > Proyecto con tareo mévil\n4 (0 Principal Proyecto 26001001 Cédigo atterno Datos adicionales.\noe ei cteconsese Descripcién [Proyecto con tareo mévil\nESI proptero [Ociozar [isso SSS\naS Les Bese tugar— fisovor [Lara =] | recna oferta [1702017 =]\nTipos de Némina\nCiaig0\n001 Obreros de construccién civil con beneficios Tareo estandar con Parte Semang| yw\n<2 eee\nPresupuestos G3} …"
+  - n: 2
+    id: "gerencia-proyectos.configurar-tareo-estandar-con-parte-semanal#2"
+    accion: "En el árbol elija el proyecto y luego la rama **META**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s173]
+    pagina: null
+  - n: 3
+    id: "gerencia-proyectos.configurar-tareo-estandar-con-parte-semanal#3"
+    accion: "Elija la pestaña **NOMINAS**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s173]
+    pagina: null
+  - n: 4
+    id: "gerencia-proyectos.configurar-tareo-estandar-con-parte-semanal#4"
+    accion: "Elija el tipo de nómina que será utilizado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s173]
+    pagina: null
+  - n: 5
+    id: "gerencia-proyectos.configurar-tareo-estandar-con-parte-semanal#5"
+    accion: "Elija **TAREO ESTANDAR CON PARTE SEMANAL**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s173]
+    pagina: null
+  - n: 6
+    id: "gerencia-proyectos.configurar-tareo-estandar-con-parte-semanal#6"
+    accion: "Si usará tareo móvil, elija **TAREO MOVIL**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s173]
+    pagina: null
+  - n: 7
+    id: "gerencia-proyectos.configurar-tareo-estandar-con-parte-semanal#7"
+    accion: "Luego, en el escenario de **PERSONAL DISPONIBLE**, registre a los trabajadores con sus propiedades."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s173]
+    pagina: null
+  - n: 8
+    id: "gerencia-proyectos.configurar-tareo-estandar-con-parte-semanal#8"
+    accion: "En el escenario de **TAREO ESTANDAR**, genere el parte y publíquelo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s173]
+    pagina: null
+verificacion: []
+errores_frecuentes:
+  - sintoma: "El trabajador está en un solo proyecto destino pero se quiere trabajar multiproyecto."
+    solucion: "Registre el multiproyecto y en tipo de tareo asocie el destino para vincularlo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s173]
+relacionados: [gerencia-proyectos.consultar-tareo-detallado]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s173, manual: "Manual de Gerencia de Proyectos", seccion: "5.5.2.1 Tareo estándar con parte semanal", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

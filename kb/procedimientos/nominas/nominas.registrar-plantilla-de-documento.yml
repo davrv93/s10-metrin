@@ -1,0 +1,103 @@
+id: nominas.registrar-plantilla-de-documento
+version: 1
+modulo: nominas
+titulo: "Registrar una plantilla de documento para el trabajador"
+objetivo: "Verificar o registrar en el Catálogo de Plantillas de Documentos los documentos que el empleador entrega al trabajador (certificados, constancias, liquidaciones), redactados con las variables que dispone el sistema."
+nivel: intermedio
+preguntas:
+  - "como hago un certificado de trabajo en nominas s10"
+  - "donde se registran las plantillas de documentos"
+  - "quiero que la constancia de trabajo salga con los datos del trabajador"
+  - "que variables puedo usar en un documento de nominas"
+  - "como asigno un archivo word a la plantilla del certificado"
+  - "como creo una plantilla de documento nueva"
+  - "donde esta el diccionario de variables"
+  - "como sale automatico el dni y la fecha de ingreso en el certificado"
+  - "plantiya de certificado de 5ta como la configuro"
+aliases:
+  - "plantilla de documento"
+  - "plantillas de documentos"
+  - "certificado de trabajo"
+  - "constancia de trabajo"
+  - "diccionario de variables"
+entidades:
+  modulo: "Nóminas"
+  pantallas: ["Catálogo de Plantillas de Documentos", "Diccionario de Variables"]
+  objetos: ["plantilla", "variable", "certificado", "constancia", "trabajador"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "nominas.registrar-plantilla-de-documento#1"
+    accion: "En **Catalogos**, elija **Plantillas de Documentos**."
+    fuente: [img-79381e4b9430-0000, web-https-documentacion-s10peru-com-manual-d-s020]
+    pagina: null
+    fotos:
+      - id: "0136d635e181"
+        ruta_o_url: "imagenes/manual-de-nominas/79381e4b9430.png"
+        pagina: null
+        ocr: "Archi[Eliia Catalogos | Herramientas ?\nPlantillas de Documentos"
+  - n: 2
+    id: "nominas.registrar-plantilla-de-documento#2"
+    accion: "Haga clic derecho sobre el grupo de documentos (por ejemplo, **Certificados** o **Constancias**) y elija Nuevo SubItem para efectuar el registro."
+    fuente: [img-c2b4b40ba4f5-0000, web-https-documentacion-s10peru-com-manual-d-s020]
+    pagina: null
+    fotos:
+      - id: "256c480dece5"
+        ruta_o_url: "imagenes/manual-de-nominas/c2b4b40ba4f5.png"
+        pagina: null
+        ocr: "Clic derecho =)-€24 Todos los Registros\n{| Certificados\nle) Ba Todos los Registros 4] Constancias\nx HI cts\n) Nuevo Subltern rn\nEfectiie los registros, EJ Liquidaciones"
+  - n: 3
+    id: "nominas.registrar-plantilla-de-documento#3"
+    accion: "Ingrese la descripción de la plantilla del documento, como Certificado de Trabajo, y su abreviatura."
+    fuente: [img-7031d0babdac-0000, web-https-documentacion-s10peru-com-manual-d-s020, img-7e7b967f4711-0000]
+    pagina: null
+    fotos:
+      - id: "149390a50e9a"
+        ruta_o_url: "imagenes/manual-de-nominas/7031d0babdac.png"
+        pagina: null
+        ocr: "(a se) |\n Plantilla Documenta —————\nCédigo gy oat\nDeseripoin [Cerfificado de Trabsioe— ingrese |\nAbrevietura. [Cert.Trabaio 1)\n\nEscenario [Personal Disponible 712 plentita"
+  - n: 4
+    id: "nominas.registrar-plantilla-de-documento#4"
+    accion: "En **Escenario**, elija desde qué escenario se recopilará la información para generar el documento (por ejemplo, **Personal Disponible**)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s020, img-7031d0babdac-0000]
+    pagina: null
+  - n: 5
+    id: "nominas.registrar-plantilla-de-documento#5"
+    accion: "Use el icono que invoca el **Diccionario de Variables** para ver las variables que deben ser utilizadas en los documentos a redactar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s020, img-04178182b7ef-0000]
+    pagina: null
+    fotos:
+      - id: "d61f28a6af81"
+        ruta_o_url: "imagenes/manual-de-nominas/04178182b7ef.png"
+        pagina: null
+        ocr: "© Diccionario de Variables de Pianta ray)\nMAS va aaa\n\noo campo eselb2) b3hn cualquier posicién _{b-4)\n\nEscenario Tipo _|Orden [Campo Cone »\nDetalle 0 CodProyectoDetalle CodProyectoDetalle: z\nPersonal Disponible Detalle 1 CodProyectoAlternoDetalle [| CodProyectoAlternoDetalle: a\nPersonal Disponible Detalle 2 DescripcionProyectoDetalle | DescripcionProyectoDetalle}\nPersonal Disponible Detalle 3 Fech…"
+  - n: 6
+    id: "nominas.registrar-plantilla-de-documento#6"
+    accion: "Redacte el documento usando las variables del diccionario, ubicándolas donde deben ser usadas."
+    resultado: "Las variables serán reemplazadas por los datos que correspondan a cada trabajador."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s020, img-48e98a138b63-0000]
+    pagina: null
+    fotos:
+      - id: "42a95c74001a"
+        ruta_o_url: "imagenes/manual-de-nominas/48e98a138b63.png"
+        pagina: null
+        ocr: "(W)| el > Formato18 [Modo de compatibilidad] - Microsoft Word\nJ archivo | Inicio | Insertar —Disefio de pagina Referencias = Correspondencia. = Revisar ~— Vist\nCERTIFICADO DE TRABAJO\nOBRA :DescripcionProyecto: Variables\nUBICACION :DireccionProyecto: El sistema reconoce las\nNOMBRE :Descripcion: variables y las cambia por\nDNI -DNI- los datos de cada trabajador\nCATEGORLA :DescripcionCategoria:\nF. ING…"
+  - n: 7
+    id: "nominas.registrar-plantilla-de-documento#7"
+    accion: "Haga clic derecho en el segmento marcado de la ventana de la plantilla y asigne el documento redactado; puede ser en formato Word, Excel o plantilla de Excel."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s020]
+    pagina: null
+verificacion:
+  - texto: "Al generar el documento, el sistema reconoce las variables y las cambia por los datos de cada trabajador."
+    fuente: [img-48e98a138b63-0000, web-https-documentacion-s10peru-com-manual-d-s020]
+errores_frecuentes: []
+relacionados: [nominas.registrar-ficha-del-trabajador, nominas.seleccionar-personal-disponible]
+fuentes:
+  - {id: img-79381e4b9430-0000, manual: "Manual de Nóminas", seccion: "79381e4b9430.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s020, manual: "Manual de Nóminas", seccion: "3.13 Catálogo de Plantillas de Documentos", pagina: null}
+  - {id: img-c2b4b40ba4f5-0000, manual: "Manual de Nóminas", seccion: "c2b4b40ba4f5.png", pagina: null}
+  - {id: img-7031d0babdac-0000, manual: "Manual de Nóminas", seccion: "7031d0babdac.png", pagina: null}
+  - {id: img-7e7b967f4711-0000, manual: "Manual de Nóminas", seccion: "7e7b967f4711.png", pagina: null}
+  - {id: img-04178182b7ef-0000, manual: "Manual de Nóminas", seccion: "04178182b7ef.png", pagina: null}
+  - {id: img-48e98a138b63-0000, manual: "Manual de Nóminas", seccion: "48e98a138b63.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

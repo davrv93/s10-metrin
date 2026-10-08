@@ -1,11 +1,11 @@
 {
-  "base": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 (destilado con model2vec 0.9.0, PCA 256)",
+  "base": "paraphrase-multilingual-MiniLM-L12-v2 (model2vec, PCA 256)",
   "modo": "afinado (router S10)",
-  "piezas": 26355,
+  "piezas": 26395,
   "piezas_originales": 249999,
   "dim": 256,
   "cuant": "int8",
-  "bytes": 7190028,
-  "sha256": "c3495e835ca3fa6214cf015c0abe1e1f3f7e068afa533210f71855b7e7be5b16",
+  "bytes": 7200833,
+  "sha256": "d3a3e03c57e295c23fcdf1d957c5b4c0b2094221bc3841be010e6fdbc4ab73fe",
   "tabla_normalizacion": 4837
 }

@@ -1,0 +1,252 @@
+{"texto": "¿Cómo asigno una prioridad a una partida de la hoja del presupuesto?", "procedimiento": "presupuestos.asignar-prioridad-a-partidas", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "necesito sacar del presupuesto unas partidas opcionales sin eliminarlas, como lo hago", "procedimiento": "presupuestos.asignar-prioridad-a-partidas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el cliente quiere ver cuanto sale el presupuesto sin los acabados pero despues los va a querer de vuelta, que hago en s10", "procedimiento": "presupuestos.asignar-prioridad-a-partidas", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como retorno las partidas que quite con prioridad", "procedimiento": "presupuestos.asignar-prioridad-a-partidas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Procedimiento para quitar partidas por prioridad de un subpresupuesto", "procedimiento": "presupuestos.asignar-prioridad-a-partidas", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "clic derecho en el nombre del presupuesto y partidas por prioridad, como se usa", "procedimiento": "presupuestos.asignar-prioridad-a-partidas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como asigno la prioridad a una partida del prespuesto", "procedimiento": "presupuestos.asignar-prioridad-a-partidas", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "esconder partida opcional", "procedimiento": "presupuestos.asignar-prioridad-a-partidas", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "retornar partidas escondidas", "procedimiento": "presupuestos.asignar-prioridad-a-partidas", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "ke hago pa q una partida no sume en el costo total sin borrarla", "procedimiento": "presupuestos.asignar-prioridad-a-partidas", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "tengo partidas de alternativa y quiero apagar su costo un rato, se les puede asignar una prioridad?", "procedimiento": "presupuestos.asignar-prioridad-a-partidas", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Quisiera excluir temporalmente partidas del costo del presupuesto asignándoles una prioridad", "procedimiento": "presupuestos.asignar-prioridad-a-partidas", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como pongo prioridad a varias partidas y las escondo todas juntas", "procedimiento": "presupuestos.asignar-prioridad-a-partidas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como oculto partidas x prioridad en s10", "procedimiento": "presupuestos.asignar-prioridad-a-partidas", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "¿Cómo se vuelven a considerar en el presupuesto las partidas que fueron quitadas?", "procedimiento": "presupuestos.asignar-prioridad-a-partidas", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "escondi partidas del subpresupuesto y ahora quiero que vuelvan a contar, como las regreso", "procedimiento": "presupuestos.asignar-prioridad-a-partidas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Dónde se encuentra el catálogo de prioridades?", "procedimiento": "presupuestos.asignar-prioridad-a-partidas", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en que menu se registran las prioridades", "procedimiento": "presupuestos.asignar-prioridad-a-partidas", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde esta la opcion asignar prioridad al hacer clic derecho en la partida", "procedimiento": "presupuestos.asignar-prioridad-a-partidas", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Por qué opción del árbol se accede a Partidas por Prioridad?", "procedimiento": "presupuestos.asignar-prioridad-a-partidas", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "prioridades s10 menu", "procedimiento": "presupuestos.asignar-prioridad-a-partidas", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "dnd esta la opcion q retorna las partidas", "procedimiento": "presupuestos.asignar-prioridad-a-partidas", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "estoy en la hoja del presupuesto y no veo donde quitar partidas por prioridad", "procedimiento": "presupuestos.asignar-prioridad-a-partidas", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "¿Hasta cuántos niveles de prioridad se pueden registrar en el catálogo?", "procedimiento": "presupuestos.asignar-prioridad-a-partidas", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "como creo las prioridades en el catalogo para usarlas despues en el presupuesto", "procedimiento": "presupuestos.asignar-prioridad-a-partidas", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "puedo definir mis propias prioridades, hasta cuantas", "procedimiento": "presupuestos.asignar-prioridad-a-partidas", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué debo preparar en el catálogo antes de asignar prioridades a las partidas?", "procedimiento": "presupuestos.asignar-prioridad-a-partidas", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "como registro prioridades en el catalogo, nose cuantas deja", "procedimiento": "presupuestos.asignar-prioridad-a-partidas", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "quiero manejar varios niveles de prioridad por etapas de obra, donde los dejo registrados", "procedimiento": "presupuestos.asignar-prioridad-a-partidas", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "Una partida escondida ya no suma en el costo del presupuesto, ¿por qué ocurre?", "procedimiento": "presupuestos.asignar-prioridad-a-partidas", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "mi presupuesto bajo de monto despues de quitar partidas, como lo recupero", "procedimiento": "presupuestos.asignar-prioridad-a-partidas", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el total no cuenta unas partidas que escondi, donde las retorno", "procedimiento": "presupuestos.asignar-prioridad-a-partidas", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "reviso la hoja y faltan partidas que no borre, el costo total bajo", "procedimiento": "presupuestos.asignar-prioridad-a-partidas", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "kite partidas x prioridad y ya no estan en la hoja, como las vuelvo a poner", "procedimiento": "presupuestos.asignar-prioridad-a-partidas", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "no me sale la opcion partidas por prioridad cuando hago clic derecho en la partida", "procedimiento": "presupuestos.asignar-prioridad-a-partidas", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el costo d mi prespuesto no incluye unas partidas q escondi", "procedimiento": "presupuestos.asignar-prioridad-a-partidas", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "¿Cómo calculo la duración de una partida según el número de cuadrillas?", "procedimiento": "presupuestos.calcular-tiempos-para-programacion", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "quiero saber en cuantos dias termina una partida si le pongo 3 cuadrillas", "procedimiento": "presupuestos.calcular-tiempos-para-programacion", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como registro el factor de multiplicidad de una partida", "procedimiento": "presupuestos.calcular-tiempos-para-programacion", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como saco el plazo de cada partida con su rendimiento y su metrado", "procedimiento": "presupuestos.calcular-tiempos-para-programacion", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "tengo que ver cuantas cuadrillas necesito para vaciar la losa en pocos dias, como lo calculo en s10", "procedimiento": "presupuestos.calcular-tiempos-para-programacion", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Procedimiento para estimar el plazo de ejecución de las partidas según las cuadrillas", "procedimiento": "presupuestos.calcular-tiempos-para-programacion", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como calculo la duracion de las partidas con cuadrillas", "procedimiento": "presupuestos.calcular-tiempos-para-programacion", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "cuadrillas por partida", "procedimiento": "presupuestos.calcular-tiempos-para-programacion", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "dias por partida", "procedimiento": "presupuestos.calcular-tiempos-para-programacion", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "xq no se cuantos dias demora una partida con 2 cuadrillas, como lo calculo", "procedimiento": "presupuestos.calcular-tiempos-para-programacion", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como veo el tiempo de las partidas de equipo segun su rendimiento", "procedimiento": "presupuestos.calcular-tiempos-para-programacion", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se registra la cantidad de cuadrillas para cada partida de mano de obra?", "procedimiento": "presupuestos.calcular-tiempos-para-programacion", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "me piden el plazo del encofrado de columnas, se puede ver los dias segun cuadrillas en s10?", "procedimiento": "presupuestos.calcular-tiempos-para-programacion", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como exporto a excel los tiempos de las partidas con sus cuadrillas", "procedimiento": "presupuestos.calcular-tiempos-para-programacion", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "en la pestaña mano de obra pongo el factor de multiplicidad y luego que sigue", "procedimiento": "presupuestos.calcular-tiempos-para-programacion", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ke columna lleno pa q me salga el numero de dias de la partida", "procedimiento": "presupuestos.calcular-tiempos-para-programacion", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "¿Dónde está el escenario Tiempos para programación?", "procedimiento": "presupuestos.calcular-tiempos-para-programacion", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en que escenario veo la duracion de las partidas", "procedimiento": "presupuestos.calcular-tiempos-para-programacion", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "por donde entro al calculo de cuadrillas", "procedimiento": "presupuestos.calcular-tiempos-para-programacion", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Dónde veo el tiempo unitario por cuadrilla de una partida?", "procedimiento": "presupuestos.calcular-tiempos-para-programacion", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "escenario tiempos programacion", "procedimiento": "presupuestos.calcular-tiempos-para-programacion", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "dnd esta la pestaña de equipo en tiempos para programasion", "procedimiento": "presupuestos.calcular-tiempos-para-programacion", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "donde encuentro la columna factor de multiplicidad", "procedimiento": "presupuestos.calcular-tiempos-para-programacion", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Qué debe tener registrado una partida para que se calcule su duración?", "procedimiento": "presupuestos.calcular-tiempos-para-programacion", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "donde defino el numero de cuadrillas que trabajaran en una partida", "procedimiento": "presupuestos.calcular-tiempos-para-programacion", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que debo tener cargado antes de usar tiempos para programacion", "procedimiento": "presupuestos.calcular-tiempos-para-programacion", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Cómo cambio la cantidad de cuadrillas para que el plazo resulte distinto?", "procedimiento": "presupuestos.calcular-tiempos-para-programacion", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "q datos necesito pa q calcule el plazo, metrado y rendimiento?", "procedimiento": "presupuestos.calcular-tiempos-para-programacion", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "quiero comparar el plazo con 1 y con 4 cuadrillas, donde lo ajusto", "procedimiento": "presupuestos.calcular-tiempos-para-programacion", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "La duración calculada no aparece en el cronograma, ¿por qué?", "procedimiento": "presupuestos.calcular-tiempos-para-programacion", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "puse las cuadrillas y el plazo no pasa al cronograma de obra", "procedimiento": "presupuestos.calcular-tiempos-para-programacion", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "la duracion me sale en cero en tiempos para programacion, que falta", "procedimiento": "presupuestos.calcular-tiempos-para-programacion", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "calcule los dias de cada partida pero el gantt no cambia, me equivoque en algo", "procedimiento": "presupuestos.calcular-tiempos-para-programacion", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "por que la duracion sale redondeada hacia arriba", "procedimiento": "presupuestos.calcular-tiempos-para-programacion", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el plazo q calcule no se ve en ningun otro escenario", "procedimiento": "presupuestos.calcular-tiempos-para-programacion", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "los dias de la partida salen vacios xq no tiene rendimiento", "procedimiento": "presupuestos.calcular-tiempos-para-programacion", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "¿Cómo diseño la cabecera de los reportes de un presupuesto?", "procedimiento": "presupuestos.disenar-cabeceras-de-reportes", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "quiero que mis reportes salgan con el nombre de mi empresa arriba", "procedimiento": "presupuestos.disenar-cabeceras-de-reportes", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como cambio el tipo de letra y el color del encabezado de los reportes", "procedimiento": "presupuestos.disenar-cabeceras-de-reportes", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Procedimiento para registrar una cabecera propia de hasta 10 líneas", "procedimiento": "presupuestos.disenar-cabeceras-de-reportes", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "voy a presentar el presupuesto a la entidad y el encabezado debe llevar proyecto, lugar y departamento centrados, como lo armo", "procedimiento": "presupuestos.disenar-cabeceras-de-reportes", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como paso el formato de una linea de la cabecera a otra", "procedimiento": "presupuestos.disenar-cabeceras-de-reportes", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como hago una cabezera personalizada pal reporte", "procedimiento": "presupuestos.disenar-cabeceras-de-reportes", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "cabecera de reportes", "procedimiento": "presupuestos.disenar-cabeceras-de-reportes", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "encabezado personalizado", "procedimiento": "presupuestos.disenar-cabeceras-de-reportes", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "ke hago pa poner mi razon social arriba del reporte", "procedimiento": "presupuestos.disenar-cabeceras-de-reportes", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como alineo a la derecha una linea del encabezado del reporte", "procedimiento": "presupuestos.disenar-cabeceras-de-reportes", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo hago que se imprima con el diseño de cabecera que elaboré?", "procedimiento": "presupuestos.disenar-cabeceras-de-reportes", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "quiero un encabezado distinto para el analisis de precios unitarios y otro para el resumen, se puede?", "procedimiento": "presupuestos.disenar-cabeceras-de-reportes", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como uso copiar formato y pegar formato en las lineas de la cabecera", "procedimiento": "presupuestos.disenar-cabeceras-de-reportes", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como cambio el encabeszado de los reportes x defecto", "procedimiento": "presupuestos.disenar-cabeceras-de-reportes", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "el reporte de subpartidas sale con el encabezado estandar de s10 y quiero uno mio", "procedimiento": "presupuestos.disenar-cabeceras-de-reportes", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Dónde está el escenario Cabeceras para reportes?", "procedimiento": "presupuestos.disenar-cabeceras-de-reportes", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde cambio la cabecera de los reportes de presupuestos", "procedimiento": "presupuestos.disenar-cabeceras-de-reportes", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que pestaña esta la casilla imprimir con diseño de cabecera", "procedimiento": "presupuestos.disenar-cabeceras-de-reportes", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Dónde se elige la fuente de una línea de la cabecera?", "procedimiento": "presupuestos.disenar-cabeceras-de-reportes", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "escenario de cabeceras", "procedimiento": "presupuestos.disenar-cabeceras-de-reportes", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "dnd se configura la cabecera pal reporte", "procedimiento": "presupuestos.disenar-cabeceras-de-reportes", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "ya elegi el presupuesto en el arbol y no se por donde entro a disenar el encabezado", "procedimiento": "presupuestos.disenar-cabeceras-de-reportes", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "¿Cuántas líneas puede tener la cabecera de un reporte?", "procedimiento": "presupuestos.disenar-cabeceras-de-reportes", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "como dejo configurado que el reporte use mi cabecera y no la estandar", "procedimiento": "presupuestos.disenar-cabeceras-de-reportes", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Para qué tipos de reporte se puede diseñar una cabecera?", "procedimiento": "presupuestos.disenar-cabeceras-de-reportes", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "como configuro la alineacion y el texto de cada linea de la cabecera", "procedimiento": "presupuestos.disenar-cabeceras-de-reportes", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "donde activo la opcion de imprimir con diseño de cabecera en la configuracion", "procedimiento": "presupuestos.disenar-cabeceras-de-reportes", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como configuro el tamaño de leta de la cabecera", "procedimiento": "presupuestos.disenar-cabeceras-de-reportes", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "El reporte sigue saliendo con la cabecera que viene por defecto, ¿qué debo revisar?", "procedimiento": "presupuestos.disenar-cabeceras-de-reportes", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "diseñe mi cabecera pero al imprimir no aparece", "procedimiento": "presupuestos.disenar-cabeceras-de-reportes", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "hice el diseño de cabecera y el reporte sale igual que antes", "procedimiento": "presupuestos.disenar-cabeceras-de-reportes", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "ya arme el encabezado con los datos de la obra pero los reportes salen con el de fabrica", "procedimiento": "presupuestos.disenar-cabeceras-de-reportes", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "mi cabezera no sale en el reporte impreso, xq", "procedimiento": "presupuestos.disenar-cabeceras-de-reportes", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "falta marcar algo en la pestaña impresion para que salga mi cabecera", "procedimiento": "presupuestos.disenar-cabeceras-de-reportes", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no se aplica mi encabezado a los reportes del presupuesto", "procedimiento": "presupuestos.disenar-cabeceras-de-reportes", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "¿Cómo emito el reporte del plan de utilización de recursos?", "procedimiento": "presupuestos.emitir-plan-de-utilizacion-de-recursos", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "quiero ver cuanta mano de obra necesito por mes segun la programacion", "procedimiento": "presupuestos.emitir-plan-de-utilizacion-de-recursos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como saco el reporte de materiales programados por periodo", "procedimiento": "presupuestos.emitir-plan-de-utilizacion-de-recursos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como veo los recursos valorizados en soles por mes del proyecto", "procedimiento": "presupuestos.emitir-plan-de-utilizacion-de-recursos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el cliente pide la distribucion de equipos en el tiempo para su flujo de caja, de donde lo saco", "procedimiento": "presupuestos.emitir-plan-de-utilizacion-de-recursos", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Procedimiento para imprimir el reporte de recursos distribuidos por periodos", "procedimiento": "presupuestos.emitir-plan-de-utilizacion-de-recursos", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como saco el plan de utilizasion de recursos", "procedimiento": "presupuestos.emitir-plan-de-utilizacion-de-recursos", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "plan utilizacion recursos reporte", "procedimiento": "presupuestos.emitir-plan-de-utilizacion-de-recursos", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "recursos programados por mes", "procedimiento": "presupuestos.emitir-plan-de-utilizacion-de-recursos", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "kiero ver los recursos x semana en cantidades, como", "procedimiento": "presupuestos.emitir-plan-de-utilizacion-de-recursos", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como exporto a excel los recursos programados", "procedimiento": "presupuestos.emitir-plan-de-utilizacion-de-recursos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como saco solo los subcontratos del plan", "procedimiento": "presupuestos.emitir-plan-de-utilizacion-de-recursos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "tengo el proyecto programado y necesito saber cuantas bolsas de cemento por mes, que reporte uso", "procedimiento": "presupuestos.emitir-plan-de-utilizacion-de-recursos", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo visualizo las actividades con sus recursos y las exporto a Excel?", "procedimiento": "presupuestos.emitir-plan-de-utilizacion-de-recursos", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como saco el plan de utilizacion de solo los equipos", "procedimiento": "presupuestos.emitir-plan-de-utilizacion-de-recursos", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como emito el reporte de recursos pa un proyecto ya programado", "procedimiento": "presupuestos.emitir-plan-de-utilizacion-de-recursos", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "¿Dónde está el reporte Plan de Utilización de Recursos?", "procedimiento": "presupuestos.emitir-plan-de-utilizacion-de-recursos", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en que escenario se emiten los reportes de recursos por periodo", "procedimiento": "presupuestos.emitir-plan-de-utilizacion-de-recursos", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde esta el boton de impresion de reportes del cronograma por periodos", "procedimiento": "presupuestos.emitir-plan-de-utilizacion-de-recursos", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Dónde encuentro la opción Actividades y Recursos para exportar?", "procedimiento": "presupuestos.emitir-plan-de-utilizacion-de-recursos", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "cronograma por periodos reportes", "procedimiento": "presupuestos.emitir-plan-de-utilizacion-de-recursos", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "dnd saco el plan d utilizacion", "procedimiento": "presupuestos.emitir-plan-de-utilizacion-de-recursos", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "por donde se exporta a excel lo que muestra el cronograma por periodos", "procedimiento": "presupuestos.emitir-plan-de-utilizacion-de-recursos", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Cómo cambio la escala de periodo del plan de utilización?", "procedimiento": "presupuestos.emitir-plan-de-utilizacion-de-recursos", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "como hago que el plan salga en cantidades o en costo", "procedimiento": "presupuestos.emitir-plan-de-utilizacion-de-recursos", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué debe estar programado antes de emitir el plan de utilización de recursos?", "procedimiento": "presupuestos.emitir-plan-de-utilizacion-de-recursos", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "como elijo si quiero un solo tipo de recurso o todos en una hoja", "procedimiento": "presupuestos.emitir-plan-de-utilizacion-de-recursos", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "donde cambio el modo de visualizacion entre metrado y costo en el cronograma por periodos", "procedimiento": "presupuestos.emitir-plan-de-utilizacion-de-recursos", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q tengo q ase antes pa q salga el plan de recursos programados", "procedimiento": "presupuestos.emitir-plan-de-utilizacion-de-recursos", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "El plan de utilización me sale en cantidades y lo necesito en costo, ¿qué hago?", "procedimiento": "presupuestos.emitir-plan-de-utilizacion-de-recursos", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "el reporte de recursos por periodo sale vacio", "procedimiento": "presupuestos.emitir-plan-de-utilizacion-de-recursos", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el plan de utilizacion no muestra datos en la escala que elegi", "procedimiento": "presupuestos.emitir-plan-de-utilizacion-de-recursos", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "abro el cronograma por periodos y no me aparecen los recursos distribuidos en el tiempo", "procedimiento": "presupuestos.emitir-plan-de-utilizacion-de-recursos", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "el plan de utilisacion me sale sin nada, xq", "procedimiento": "presupuestos.emitir-plan-de-utilizacion-de-recursos", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "me salen los recursos en metrado y necesito soles", "procedimiento": "presupuestos.emitir-plan-de-utilizacion-de-recursos", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el reporte no trae nada xq el proyecto no esta programado", "procedimiento": "presupuestos.emitir-plan-de-utilizacion-de-recursos", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "¿Cómo genero las subpartidas en el presupuesto descompuesto?", "procedimiento": "presupuestos.imprimir-presupuesto-descompuesto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como imprimo los recursos del presupuesto para que cuadren con el monto presupuestado", "procedimiento": "presupuestos.imprimir-presupuesto-descompuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como llevo a excel lo que sale en el descompuesto", "procedimiento": "presupuestos.imprimir-presupuesto-descompuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como paso a ms project las partidas con sus subpartidas", "procedimiento": "presupuestos.imprimir-presupuesto-descompuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "me piden el listado de insumos de todo el proyecto y al sumarlo no sale igual al total del presupuesto, como lo saco bien", "procedimiento": "presupuestos.imprimir-presupuesto-descompuesto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Procedimiento para mostrar juntas las partidas y subpartidas de todos los niveles", "procedimiento": "presupuestos.imprimir-presupuesto-descompuesto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como veo todas las subpartidas del prespuesto", "procedimiento": "presupuestos.imprimir-presupuesto-descompuesto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "descompuesto de subpartidas", "procedimiento": "presupuestos.imprimir-presupuesto-descompuesto", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "exportar descompuesto a project", "procedimiento": "presupuestos.imprimir-presupuesto-descompuesto", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "ke hago pa ver los recursos de un titulo agrupados", "procedimiento": "presupuestos.imprimir-presupuesto-descompuesto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como saco la vista preliminar de los recursos acumulados del presupuesto", "procedimiento": "presupuestos.imprimir-presupuesto-descompuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como imprimo los recursos de todo el presupuesto con redondeo", "procedimiento": "presupuestos.imprimir-presupuesto-descompuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "mis apus tienen subpartidas y quiero acumular todos los insumos del subpresupuesto", "procedimiento": "presupuestos.imprimir-presupuesto-descompuesto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo exporto a Microsoft Excel los recursos que muestra la ventana inferior?", "procedimiento": "presupuestos.imprimir-presupuesto-descompuesto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "ubico el cursor en el totalizador y despues que hago para imprimir los recursos", "procedimiento": "presupuestos.imprimir-presupuesto-descompuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como bajo el descompuesto a excel", "procedimiento": "presupuestos.imprimir-presupuesto-descompuesto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "¿Dónde está el escenario Presupuesto descompuesto?", "procedimiento": "presupuestos.imprimir-presupuesto-descompuesto", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde queda el boton para generar las subpartidas", "procedimiento": "presupuestos.imprimir-presupuesto-descompuesto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que ventana salen los recursos del titulo o de la partida", "procedimiento": "presupuestos.imprimir-presupuesto-descompuesto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Dónde se encuentra la opción de exportar a Microsoft Project el contenido de la ventana superior?", "procedimiento": "presupuestos.imprimir-presupuesto-descompuesto", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "descompuesto s10", "procedimiento": "presupuestos.imprimir-presupuesto-descompuesto", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "dnd esta el presupuesto descompusto", "procedimiento": "presupuestos.imprimir-presupuesto-descompuesto", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "por donde imprimo los recursos con vista preliminar del descompuesto", "procedimiento": "presupuestos.imprimir-presupuesto-descompuesto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Qué debo tener elaborado antes de ingresar al presupuesto descompuesto?", "procedimiento": "presupuestos.imprimir-presupuesto-descompuesto", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "mis analisis de precios tienen que tener subpartidas para usar el descompuesto", "procedimiento": "presupuestos.imprimir-presupuesto-descompuesto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Cómo dejo el presupuesto listo para imprimir los recursos con las opciones de redondeo?", "procedimiento": "presupuestos.imprimir-presupuesto-descompuesto", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "donde ubico el cursor para que la ventana de abajo muestre los recursos de todo el presupuesto", "procedimiento": "presupuestos.imprimir-presupuesto-descompuesto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "elegi el subpresupuesto equivocado y el descompuesto muestra otra cosa, como lo cambio", "procedimiento": "presupuestos.imprimir-presupuesto-descompuesto", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "q necesito pa usar el descompusto, nose si mis apu tienen q tener subpartidas", "procedimiento": "presupuestos.imprimir-presupuesto-descompuesto", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "Al imprimir los recursos los montos no coinciden con el monto presupuestado, ¿por qué?", "procedimiento": "presupuestos.imprimir-presupuesto-descompuesto", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "los montos de los recursos no cuadran con el total del presupuesto", "procedimiento": "presupuestos.imprimir-presupuesto-descompuesto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el presupuesto descompuesto me sale vacio", "procedimiento": "presupuestos.imprimir-presupuesto-descompuesto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "entro al descompuesto y no se ven las subpartidas en la ventana de arriba", "procedimiento": "presupuestos.imprimir-presupuesto-descompuesto", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "el descompusto sale sin nada, xq?", "procedimiento": "presupuestos.imprimir-presupuesto-descompuesto", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "la suma de los insumos impresos difiere del presupuesto por centimos", "procedimiento": "presupuestos.imprimir-presupuesto-descompuesto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "la ventana d abajo no muestra los recursos de todo el presupuesto", "procedimiento": "presupuestos.imprimir-presupuesto-descompuesto", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "¿Cómo registro los índices unificados que publica el INEI cada mes?", "procedimiento": "presupuestos.registrar-indices-unificados", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como cargo los indices unificados desde un excel", "procedimiento": "presupuestos.registrar-indices-unificados", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como registro la resolucion de los indices unificados con año, mes y numero", "procedimiento": "presupuestos.registrar-indices-unificados", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como lleno los indices por area geografica", "procedimiento": "presupuestos.registrar-indices-unificados", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "salio la resolucion del inei de este mes y debo actualizar los IU del presupuesto", "procedimiento": "presupuestos.registrar-indices-unificados", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Procedimiento para ingresar los valores de los índices unificados por área geográfica", "procedimiento": "presupuestos.registrar-indices-unificados", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como ingreso los indises unificados", "procedimiento": "presupuestos.registrar-indices-unificados", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "cargar indices del inei", "procedimiento": "presupuestos.registrar-indices-unificados", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "importar IU de excel", "procedimiento": "presupuestos.registrar-indices-unificados", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "ke hago pa q el indice de una zona se copie a todas las areas", "procedimiento": "presupuestos.registrar-indices-unificados", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como pongo la fecha de publicacion y el numero de resolucion de los IU", "procedimiento": "presupuestos.registrar-indices-unificados", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde meto los indices de cada area geografica", "procedimiento": "presupuestos.registrar-indices-unificados", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "tengo una hoja de excel con los indices del mes y no quiero tipearlos uno por uno", "procedimiento": "presupuestos.registrar-indices-unificados", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo se registran los datos de la resolución en la ventana de Tablas?", "procedimiento": "presupuestos.registrar-indices-unificados", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como actualizo con los indices unificados los precios de los recursos del presupuesto", "procedimiento": "presupuestos.registrar-indices-unificados", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como registro la resolusion del inei en el presupuesto", "procedimiento": "presupuestos.registrar-indices-unificados", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "¿Dónde está el escenario Índices Unificados?", "procedimiento": "presupuestos.registrar-indices-unificados", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en que parte se ingresan los indices unificados del mes", "procedimiento": "presupuestos.registrar-indices-unificados", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde esta la opcion importar desde microsoft excel en los indices", "procedimiento": "presupuestos.registrar-indices-unificados", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Dónde veo la ventana de Tablas con los datos de la resolución?", "procedimiento": "presupuestos.registrar-indices-unificados", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "IU presupuestos", "procedimiento": "presupuestos.registrar-indices-unificados", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "dnd ingreso los indises unificados", "procedimiento": "presupuestos.registrar-indices-unificados", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "donde queda la opcion replica de indices para todas las areas", "procedimiento": "presupuestos.registrar-indices-unificados", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Cómo configuro que el índice se replique en todas las áreas geográficas?", "procedimiento": "presupuestos.registrar-indices-unificados", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que hace replica de indices para todas las areas", "procedimiento": "presupuestos.registrar-indices-unificados", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "donde activo la replica de indices", "procedimiento": "presupuestos.registrar-indices-unificados", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué opción de configuración debo marcar antes de registrar los índices unificados?", "procedimiento": "presupuestos.registrar-indices-unificados", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "como dejo configurado q el indice se copie a todas las zonas", "procedimiento": "presupuestos.registrar-indices-unificados", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "voy a cargar el mismo indice para todo el pais, que configuro antes", "procedimiento": "presupuestos.registrar-indices-unificados", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "No se me graban los datos de los índices unificados, ¿qué falta?", "procedimiento": "presupuestos.registrar-indices-unificados", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "al borrar la resolucion se perdieron los valores de los indices", "procedimiento": "presupuestos.registrar-indices-unificados", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el indice que escribo solo queda en la celda seleccionada y no en las demas zonas", "procedimiento": "presupuestos.registrar-indices-unificados", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "me dijeron que hay indices unificados pero no encuentro la opcion en mi s10", "procedimiento": "presupuestos.registrar-indices-unificados", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no sale la ventana de abajo con los indices del presupuesto", "procedimiento": "presupuestos.registrar-indices-unificados", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "elimine la resolucion y se borraron todos los indises", "procedimiento": "presupuestos.registrar-indices-unificados", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "solo se llena una area geografica y las otras quedan vacias", "procedimiento": "presupuestos.registrar-indices-unificados", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "¿Cómo registro un título nuevo en el catálogo de títulos?", "procedimiento": "presupuestos.registrar-titulo-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como doy de alta el titulo de muros y tabiques en el catalogo", "procedimiento": "presupuestos.registrar-titulo-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como duplico un titulo existente para crear otro", "procedimiento": "presupuestos.registrar-titulo-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "no encuentro el titulo que necesito para mi presupuesto, como lo creo", "procedimiento": "presupuestos.registrar-titulo-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "armo el presupuesto de un colegio y falta el titulo de cisternas en la lista, como lo doy de alta", "procedimiento": "presupuestos.registrar-titulo-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Procedimiento para crear un nuevo título en el catálogo", "procedimiento": "presupuestos.registrar-titulo-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como creo un titulo nuebo en el catalago", "procedimiento": "presupuestos.registrar-titulo-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "crear un titulo", "procedimiento": "presupuestos.registrar-titulo-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "titulo nuevo en catalogo", "procedimiento": "presupuestos.registrar-titulo-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "ke hago pa registrar un titulo q no existe", "procedimiento": "presupuestos.registrar-titulo-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como uso nuevo subitem para un titulo en el catalogo", "procedimiento": "presupuestos.registrar-titulo-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como duplicar un titulo y cambiarle el nombre", "procedimiento": "presupuestos.registrar-titulo-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "mi titulo de instalaciones sanitarias no esta en la lista, tengo que agregarlo al catalogo", "procedimiento": "presupuestos.registrar-titulo-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo ingreso la descripción de un título nuevo dentro de un grupo de títulos?", "procedimiento": "presupuestos.registrar-titulo-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "quiero registrar el titulo cercos perimetricos en el catalogo de titulos", "procedimiento": "presupuestos.registrar-titulo-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como agrego un titulo nuebo q no esta en la lista al dar adicionar titulo", "procedimiento": "presupuestos.registrar-titulo-en-el-catalogo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "¿Dónde se encuentra el catálogo de títulos?", "procedimiento": "presupuestos.registrar-titulo-en-el-catalogo", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "por que menu entro al catalogo de titulos", "procedimiento": "presupuestos.registrar-titulo-en-el-catalogo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde esta la opcion nuevo subitem en el catalogo de titulos", "procedimiento": "presupuestos.registrar-titulo-en-el-catalogo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Cómo llego al catálogo de títulos desde la hoja del presupuesto?", "procedimiento": "presupuestos.registrar-titulo-en-el-catalogo", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "catalogo titulos s10", "procedimiento": "presupuestos.registrar-titulo-en-el-catalogo", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "dnd esta el catalago de titulos", "procedimiento": "presupuestos.registrar-titulo-en-el-catalogo", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "donde esta la opcion duplicar titulo", "procedimiento": "presupuestos.registrar-titulo-en-el-catalogo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué grupo del catálogo se registra un título nuevo?", "procedimiento": "presupuestos.registrar-titulo-en-el-catalogo", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que datos lleva un titulo en el catalogo, solo la descripcion", "procedimiento": "presupuestos.registrar-titulo-en-el-catalogo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como dejo disponible un titulo nuevo para usarlo en mis presupuestos", "procedimiento": "presupuestos.registrar-titulo-en-el-catalogo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Puedo crear mis propios títulos en el catálogo?", "procedimiento": "presupuestos.registrar-titulo-en-el-catalogo", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "como armo un titulo en el catalogo a partir de otro que ya existe", "procedimiento": "presupuestos.registrar-titulo-en-el-catalogo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como dejo creado un titulo en el catalago pa usarlo despues", "procedimiento": "presupuestos.registrar-titulo-en-el-catalogo", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "El título que busco no existe en el catálogo, ¿qué hago?", "procedimiento": "presupuestos.registrar-titulo-en-el-catalogo", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "no me aparece el titulo muros y tabiques", "procedimiento": "presupuestos.registrar-titulo-en-el-catalogo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "al buscar el titulo en la lista no sale, que hago", "procedimiento": "presupuestos.registrar-titulo-en-el-catalogo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "quiero adicionar un titulo a la hoja pero no esta en el catalogo", "procedimiento": "presupuestos.registrar-titulo-en-el-catalogo", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no sale mi titulo en el catalago, xq", "procedimiento": "presupuestos.registrar-titulo-en-el-catalogo", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "duplique un titulo pero me quedo con el nombre del anterior", "procedimiento": "presupuestos.registrar-titulo-en-el-catalogo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no encuentro donde escribir el nombre del titulo nuevo", "procedimiento": "presupuestos.registrar-titulo-en-el-catalogo", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}

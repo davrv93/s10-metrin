@@ -70,7 +70,7 @@ y la escritura PJGE.
 
 ## Resultados (07-10-2026)
 
-El modelo en `metrin/modelos/router/` es el **v8: 167 procedimientos sobre MiniLM destilado** (sha256 del `.pjge` `c3495e83…`, 7,2 MB), con los umbrales de castigo 3 y el filtro de uso apagado. Las tablas de abajo cuentan cómo se llegó.
+El modelo en `metrin/modelos/router/` es el **v9: 218 procedimientos sobre MiniLM destilado** (sha256 del `.pjge` `d3a3e03c…`, 7,2 MB), con los umbrales de castigo 3 más la regla de ventaja (`ratio` 2,5, `acepta_min` 0,3) y el filtro de uso apagado. Las tablas de abajo cuentan cómo se llegó.
 
 | Prueba (router solo, int8) | v1: solo sintético | **v2: + reales** |
 |---|---|---|
@@ -190,7 +190,7 @@ quedan ~110). Nuevos módulos con contenido: Calidad Móvil (carpeta nueva). Pru
 bloqueaba 9 de las 12 preguntas reales con caso. La V2 completa (`medir-v2.sh`) no se midió en esta tanda: el disco de
 la Mac estaba lleno (108 MiB libres) y la imagen Docker no cabía.
 
-### v8: MiniLM destilado en lugar de potion (08-10-2026, instalado)
+### v8: MiniLM destilado en lugar de potion (08-10-2026)
 
 `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` destilado a estático con model2vec 0.9.0 (PCA 256; mismo
 formato PJGE, mismo código Go). Reproducir:
@@ -214,3 +214,49 @@ de relleno en la media y Go no (la prueba de paridad falló). `entrenar.py` y `e
 
 Router solo (mismos umbrales): oro 68,2 % frente a 63,6 %; reales sin caso, error 0,8 % frente a 1,8 %; tanda 1 80,2 %
 frente a 85,5 %. Diferencias pequeñas, casi todas a favor de MiniLM, con el modelo a la mitad de tamaño.
+
+### v9 con 218 procedimientos y regla de ventaja (08-10-2026, instalado)
+
+La tanda 3 convierte 51 secciones más de los manuales en procedimientos: 29 de gerencia de proyectos, 9 de almacenes, 7
+de presupuestos, 3 de facturación y 3 de nóminas (`datos/grupos_nuevos3.json`). Se hizo igual que la tanda 2:
+- 36 paráfrasis por procedimiento (`datos/parafrasis/nuevos3-*.jsonl`).
+- Una prueba ciega de 117 preguntas (`datos/prueba_nuevos3.jsonl`).
+- La revisión de los «sin caso» anteriores:
+  - 5 de las pruebas de las tandas 1 y 2 (`prueba_nuevos_revision3.jsonl`).
+  - Ninguno del oro (`prueba_revision3.jsonl`, vacío).
+  - 13 negativos sintéticos (`revisado: cambiado_t3`; se descartaron 3 dudosos).
+  - 2 reales.
+
+`entrenar.py` y `construir_datos.py` leen ahora todas las revisiones de cada tanda (`prueba_nuevos_revision*.jsonl` y
+`prueba_revision*.jsonl`).
+
+**Con los umbrales de v8 la V2 empeoraba.** El acierto de procedimiento bajaba del 72,8 % al 65,6 % y el PAS del 61,8 %
+al 50,9 %. El router seguía poniendo primero el procedimiento correcto en 10 de los 11 casos del oro que se perdían.
+Con 218 clases la probabilidad se reparte más, el primero quedaba por debajo de `acepta` (0,6) y el árbol pedía
+aclaración. La regla de ventaja (elegir si el primero saca 2,5 veces al segundo y pasa de 0,3) lo corrige. Se eligió
+con un barrido sobre las pruebas del router solo:
+
+| Router solo: elige bien / elige mal | umbrales v8 | **ratio 2,5, mín. 0,3** |
+|---|---|---|
+| Oro (129 con caso) | 56,6 % / 1,5 % | **76,0 % / 3,9 %** |
+| Tandas 1–3 (322 con caso) | 71,7 % / 0,0 % | **82,3 % / 0,9 %** |
+| Reales sin caso (1.069): elige alguno | 0,7 % | 1,9 % |
+
+| V2 completa (`medir-v2.sh`) | v8 · 167 | v9 · umbrales v8 | **v9 · ratio** |
+|---|---|---|---|
+| Acierto de procedimiento | 72,8 % | 65,6 % | **76,0 %** |
+| PROCEDURAL ANSWER SUCCESS | 61,8 % | 50,9 % | **65,5 %** |
+| Falsa abstención / abstención correcta | 1,8 % / 91,7 % | 2,5 % / 91,7 % | **1,8 % / 91,7 %** |
+| Reales sin caso: responde un procedimiento | **5,2 %** | 5,1 % | 5,5 % |
+| Tanda 1 (134): bien + ofrece / equivocadas | 106 + 19 / 2 (de 131) | 98 + 29 / 3 | **108 + 19 / 3** |
+| Tanda 2 (86): bien + ofrece / equivocadas | 74 + 6 / 1 (de 84) | 68 + 13 / 2 | **74 + 7 / 2** |
+| Tanda 3 (102): bien + ofrece / equivocadas | — | 83 + 16 / 1 | **91 + 8 / 1** |
+
+La V2 sin router también baja con el catálogo grande: el PAS pasa del 58,2 % al 52,7 %. Hay más procedimientos
+parecidos que compiten en la búsqueda. Errores que quedan en el oro: «programación de avance por periodos» va a
+`registrar-avances-en-la-rama-meta` en vez de `planificar-en-cronograma-por-periodos`. `cfg-002` (configurar la fórmula
+polinómica) elige `elaborar-formula-polinomica`, y el oro espera `registrar-presupuesto-nuevo`.
+
+
+Al reentrenar, `entrenar.py` vuelve a calibrar los umbrales y deja `ratio` en 0. La regla de ventaja se pone a mano en
+`router-s10.cabeza.json`, que no cambia la huella del `.pjge`.

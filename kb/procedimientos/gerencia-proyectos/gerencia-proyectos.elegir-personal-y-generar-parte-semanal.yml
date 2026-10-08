@@ -1,0 +1,179 @@
+id: gerencia-proyectos.elegir-personal-y-generar-parte-semanal
+version: 1
+modulo: gerencia-proyectos
+titulo: "Elegir el personal disponible y generar el parte semanal del tareo estándar"
+objetivo: "Elegir del catálogo de Socio de Negocio al personal obrero de la empresa que trabajará en el proyecto, registrar sus propiedades y generar y publicar para tareo móvil el parte semanal de cada tareador."
+nivel: intermedio
+preguntas:
+  - "cómo elijo el personal disponible para el tareo estándar con parte semanal"
+  - "como agrego obreros de la empresa al proyecto en gerencia de proyectos"
+  - "como genero el parte semanal para cada tareador"
+  - "como publico el parte semanal para el tareo movil"
+  - "como asigno el tareador a los obreros en la ficha personal"
+  - "el trabajador no aparece en el tareo que hago"
+  - "puedo mezclar el personal del subcontratista con el de la casa"
+  - "como registro las propiedades a varios trabajadores a la vez"
+  - "como ago el parte semanal en s10"
+aliases:
+  - "personal disponible"
+  - "parte semanal"
+  - "generar parte semanal"
+  - "publicar parte semanal"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Personal Disponible", "catálogo de Socio de Negocio", "Ficha personal", "Partes Semanales", "Parte multiproyecto"]
+  objetos: ["trabajador", "tipo de nómina", "tareador", "parte semanal", "periodo semanal"]
+prerrequisitos:
+  - texto: "Los tipos de nómina se registran en el módulo de Nóminas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s187]
+  - texto: "Antes de elaborar los tareos, todo el personal disponible debe tener propiedades."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s187]
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.elegir-personal-y-generar-parte-semanal#1"
+    accion: "Acceda al escenario de **Personal Disponible**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s187]
+    pagina: null
+    fotos:
+      - id: "a99134e19f2a"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/ca4d4253c0f6.png"
+        pagina: null
+        caption: "Acceso al escenario de Personal Disponible"
+        ocr: "Proyectos\nEr wij Eseritorio\n* (=) PUENTE EN CARRETERA, Los obreros que pertenecen\nEB = 2] Principal a la empresa o la casa, se\n: i registran en esta rama\nPersonal\nceca Lueco."
+  - n: 2
+    id: "gerencia-proyectos.elegir-personal-y-generar-parte-semanal#2"
+    accion: "Ubique la rama **Meta** en el árbol para registrar el personal obrero de la empresa."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s187]
+    pagina: null
+    fotos:
+      - id: "9b74a971fc8e"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/20ae15c71f6d.png"
+        pagina: null
+        caption: "Ubique la rama Meta en el árbol, y registre el pesonal obrero de la empresa."
+        ocr: "vo _[Cateuoria"
+  - n: 3
+    id: "gerencia-proyectos.elegir-personal-y-generar-parte-semanal#3"
+    accion: "Adicione a los trabajadores por grupos (primero los oficiales de encofrado, después los operarios y luego los peones), eligiéndolos con doble clic del **catálogo de Socio de Negocio**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s187, img-fd1fa92dc0da-0000]
+    pagina: null
+    fotos:
+      - id: "27de291d9fc2"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/fd1fa92dc0da.png"
+        pagina: null
+        ocr: "Catélogo de Socios de Negocio :03 Obrero ia x\n9 g\nOpciones 2\nOSXBrEC M@¥B% Hoo HUHRED AIBa\nB Fin fe os Repstos rae Elija con doble clic NIVEL : 2/2\nEmpresa ry\na Sotcenatista Cédigo | Descripelfn Abreviatuip [Tipe\nfd Empleado [|__| 02100064 | EspinozafHernan Peon conereto | |03¢\n| ettwe |_| 02100043 | ice fe3«\nCliente\nGD Proveedor s 2\n[0302100036 Acosta Torres, César CAT 01 Subcontratista, 03 Obrer…"
+  - n: 4
+    id: "gerencia-proyectos.elegir-personal-y-generar-parte-semanal#4"
+    accion: "Para registrar las propiedades de los trabajadores elegidos, marque un bloque y haga clic derecho para abrir la **Ficha personal**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s187, img-4d065825f98d-0000, img-1120d10f4b11-0000]
+    pagina: null
+    fotos:
+      - id: "e86cfbcb2aed"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/4d065825f98d.png"
+        pagina: null
+        ocr: "oe\nA\nProyecto 02004001 PUENTE EN CARRETERA\nTipo de Némina [001 Obreros de construccién civil con beneficios sociales\n5| Marque un bloque, luego |= iF\nHe =! haga clic derecho ae bd Ga\nCédigo Neomae Cédigo categc| Abres| Cédigo Recurs |\n02100036 [Acosta Torrel| César_===~=« 003, of 01470100030\n2100041 [Altre ApaziAicos Joos ____|or _|ova70r000004\ncoto00e2 LAntonio aos or _|oraror000004\nD Adicionar N…"
+      - id: "49c5ba2f4dda"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/1120d10f4b11.png"
+        pagina: null
+        ocr: "&! Ficha personal - o x\nCédigo\n“oe\nGeneral | costos | Procesos | Ingresos | Horarios | Haberes | Tarea eutoméica Cemneter des |\n(* BelPresupuesta, — (~ Del Catalogo\nRecurso\nJv lequivalente|01470100030 | OFICIAL ENCOFRADO a 4\nIcetegoria 002 [Oficial = 44\n locupecién [1902001 [Encofrado | da\nPartida de woe | Oh\nr [Control bay\nFltareador [92100003 | Ramirez Nufiez José = 44\n[Grupo de\nT |Trabajo os\nSo…"
+  - n: 5
+    id: "gerencia-proyectos.elegir-personal-y-generar-parte-semanal#5"
+    accion: "En la pestaña general, elija el recurso del presupuesto, la categoría y la ocupación; deje seleccionado Activo mientras el trabajador labore en el proyecto, y grabe los datos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s187]
+    pagina: null
+  - n: 6
+    id: "gerencia-proyectos.elegir-personal-y-generar-parte-semanal#6"
+    accion: "Repita el proceso para los operarios y peones."
+    resultado: "El personal disponible queda con sus propiedades."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s187]
+    pagina: null
+    fotos:
+      - id: "da97f5fa3746"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/f9619a4624e1.png"
+        pagina: null
+        caption: "Antes de elaborar los tareos, todo el personal disponible debe tener propiedades,"
+        ocr: "Personal disponible m\nProyecto 12001001 PUENTE EN CARRETERA\n\nTipo de Némina 001 Obreros de construccién civil con beneficios sociales\n\nHAvERES BF eae\n\nNombre [categoria [Abrei[Recurso equivalent [Unidad]Activo|Ocupacién |\nAcosta Torres, César Oficial Of OFICIAL ENCOFRADO hh Si Encofrado\nAlfaro Apaza, Nicolas Oficial Of OFICIALENCOFRADO hh Si _Encofrado\nEsteves Arana, Julio Cesar Oficial Of OFICIAL…"
+  - n: 7
+    id: "gerencia-proyectos.elegir-personal-y-generar-parte-semanal#7"
+    accion: "Acceda al escenario del Tareo estándar de la rama Meta."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s187]
+    pagina: null
+    fotos:
+      - id: "259788b448d4"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/b3def845b53e.png"
+        pagina: null
+        caption: "Acceso al escenario del Tareo"
+        ocr: "Pox Ela |\n(PUENTE EN CARRETERA\nTateo 2 Principal J\nesténdar Luego, 5] Meta"
+  - n: 8
+    id: "gerencia-proyectos.elegir-personal-y-generar-parte-semanal#8"
+    accion: "Para generar el parte semanal, elija el tipo de nómina, el periodo semanal y el periodo a tarear, y filtre solo los trabajadores activos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s187, web-https-documentacion-s10peru-com-manual-d-s188]
+    pagina: null
+    fotos:
+      - id: "3e432d7742b2"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/fca27d0f46c8.png"
+        pagina: null
+        caption: "Para generar el parte semanal,"
+        ocr: "Tipo de Nomina |001 Obreros de construccién civil con beneficios sociales Y\n\nEscala periodo |Periodo Semanal (b)==v| Periodo |Semana 10 (05/03/2018 - 11/03/2018) (Cv\n\nFitro Solo activos Q—y C33] ©) Ell) 19) BS) PS)\n\nAY ARNS BAe\n\nNombre Recurso eqijivalente Unidad | Horas Normal Horas Extra 60 A\n\nAcosta Torres, César pmabiilell saben i 0.0000\n\nAlfaro Apaza, Nicolas Coplar tareo 0.0000\n\nBolafios Bac…"
+  - n: 9
+    id: "gerencia-proyectos.elegir-personal-y-generar-parte-semanal#9"
+    accion: "Haga clic derecho sobre el nombre de un trabajador y elija la opción para los **Partes Semanales**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s188]
+    pagina: null
+    fotos:
+      - id: "35135073aa75"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/dab7fbbe5b2f.png"
+        pagina: null
+        caption: "Llamada a: Elija el tipo de nómina. Llamada b: Elija el periodo semanal. Llamada c: Elija el periodo a tarear. Llamada c-1: Muestra los periodos, para hacerlos visible o esconderlos. Llamada d: Filtre sólo los trabajadores activos. Llamada d: Haga clic derecho sobre el nombre de un trabajador y haga clic derecho, para luego elegir la opción marcada con la llamada e-1. En el formato del Partes Semanales;"
+        ocr: "g Partes Semanales (Semana 2018 - 10) =- oO x\nProyecto 02004001 PUENTE EN CARRETERA\nTipo de Nomina 001 Obreros de construccion civil con beneficios sociales\nSemana Semana 2018 - 10 (Del 05/03/2018 Al 11/03/2018)\nHOYv ARR S GE ada\nN' Parte | Cédigo Socio Nego«| Nombre Grupo de Trabajo Partida de Control\nOle derecho} PARR\n< >"
+  - n: 10
+    id: "gerencia-proyectos.elegir-personal-y-generar-parte-semanal#10"
+    accion: "En el parte, elija el nombre del tareador y pulse **Aceptar**."
+    fuente: [img-64c40df1dae3-0000, web-https-documentacion-s10peru-com-manual-d-s188]
+    pagina: null
+    fotos:
+      - id: "5572c5d24032"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/64c40df1dae3.png"
+        pagina: null
+        ocr: "&@) Parte multiproyecto - o x\nProyecto 12001001 PUENTE EN CARRETERA | Elija el nombre del tareador\nTipo de Nomina 001 Obreros de construccisn civil con beneficios socfhles\nProyecto Destino |'2001 : | #4 |\nTareador Ramirez Nufiez, Jose 44) Revisor\nSemana Semana 2018 - 10 (Del 05/03/2018 Al 11/03/2018 .\n( ) si\n— = {@h] sumo [Biumo +] Es\nSY SRH8 SF &i a pi\n[kinean*[oui [Nombre [Proyecto [Partita De C…"
+  - n: 11
+    id: "gerencia-proyectos.elegir-personal-y-generar-parte-semanal#11"
+    accion: "Repita el proceso para los demás tareadores; luego haga clic derecho sobre el nombre del tareador y elija **Publicar para Tareo Movil**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s188, img-35a3a1b1e3ef-0000]
+    pagina: null
+    fotos:
+      - id: "b6db6b200b54"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/35a3a1b1e3ef.png"
+        pagina: null
+        ocr: "@ Partes Semanales (Semana 2018 - 10) - oO x\n\nProyecto 02004001 PUENTE EN CARRETERA\n\nTipo de Nomina 001 Obreros de construccion civil con beneficios sociales\n\nSemana Semana 2018 - 10 (Del 05/03/2018 Al 11/03/2018)\n\n= Haga clic derecho sobre el nombre del\n\nB wy ra & £ tareador para publicar el parte semanal\nCédigo Socio Nego| Nombre Grupo de Trabajo Partida de Control\n00000001 02100129 Ramirez Nune…"
+  - n: 12
+    id: "gerencia-proyectos.elegir-personal-y-generar-parte-semanal#12"
+    accion: "En la ventana de publicación, marque el tareador y pulse **Publicar**; repita la publicación para los demás tareadores."
+    resultado: "El parte semanal se muestra en el móvil."
+    fuente: [img-c86e07898099-0000, web-https-documentacion-s10peru-com-manual-d-s188]
+    pagina: null
+    fotos:
+      - id: "dcd696d9fa95"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/c86e07898099.png"
+        pagina: null
+        ocr: "$8) Publicar Tareo Mévil - Oo x\nProyecto 02004001 PUENTE EN CARRETERA\nTipo de Némina | Elija | eros de construccién civil con beneficios sociales\nPeriodo Dp! 05/03/2018 Al 11/03/2018 N* Parte 00000001\n[ PorPublicar | Pubs\nAYveRNS BF ada\nePubiar? _[ewai [Nombre [Categorias [Rol\nC7 jramirez@s 1 0peru.com Ramirez Nufiez, Jose Tareador\n«< >\nPublicar Cerrar"
+verificacion:
+  - texto: "Después de publicar, el parte semanal se muestra en el móvil."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s188]
+errores_frecuentes:
+  - sintoma: "Un trabajador ya no se muestra en los tareos."
+    solucion: "En la ficha personal, el trabajador debe estar seleccionado como activo mientras labora en el proyecto; si no está seleccionado, ya no es mostrado en los tareos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s187]
+  - sintoma: "Quiere tarear en el mismo proyecto al personal del subcontratista."
+    solucion: "No mezcle el personal de la casa con el del subcontratista: para el personal del subcontratista, registre otro proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s187]
+relacionados: [gerencia-proyectos.configurar-tareo-estandar-con-parte-semanal, gerencia-proyectos.consultar-tareo-detallado]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s187, manual: "Manual de Gerencia de Proyectos", seccion: "5.13 Elección del Personal Disponible para tareo estándar con parte semanal (1)", pagina: null}
+  - {id: img-fd1fa92dc0da-0000, manual: "Manual de Gerencia de Proyectos", seccion: "fd1fa92dc0da.png", pagina: null}
+  - {id: img-4d065825f98d-0000, manual: "Manual de Gerencia de Proyectos", seccion: "4d065825f98d.png", pagina: null}
+  - {id: img-1120d10f4b11-0000, manual: "Manual de Gerencia de Proyectos", seccion: "1120d10f4b11.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s188, manual: "Manual de Gerencia de Proyectos", seccion: "5.13 Elección del Personal Disponible para tareo estándar con parte semanal (2)", pagina: null}
+  - {id: img-64c40df1dae3-0000, manual: "Manual de Gerencia de Proyectos", seccion: "64c40df1dae3.png", pagina: null}
+  - {id: img-35a3a1b1e3ef-0000, manual: "Manual de Gerencia de Proyectos", seccion: "35a3a1b1e3ef.png", pagina: null}
+  - {id: img-c86e07898099-0000, manual: "Manual de Gerencia de Proyectos", seccion: "c86e07898099.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

@@ -1,0 +1,101 @@
+id: almacenes.definir-techo-del-proyecto
+version: 1
+modulo: almacenes
+titulo: "Definir el techo del proyecto y los responsables del almacén"
+objetivo: "Configurar en los datos generales del proyecto el tipo de techo que usará en los pedidos (los presupuestos asignados o el Techo Libre), la serie de la Guía de Remisión, los decimales de las guías de ingreso y egreso y los usuarios responsables del almacén."
+nivel: intermedio
+preguntas:
+  - "cómo defino el techo del proyecto en almacenes"
+  - "como hago para que al pedir solo salgan los recursos del presupuesto"
+  - "qué es el techo libre y cómo lo activo"
+  - "dónde pongo la serie de la guía de remisión del proyecto"
+  - "como cambio los decimales de las guias de ingreso y egreso"
+  - "como marco al responsable del almacen en el proyecto"
+  - "al hacer un pedido me sale todo el catalogo de recursos, por que"
+  - "la obra todavia no tiene presupuesto, como pido materiales igual"
+aliases:
+  - "techo del proyecto"
+  - "definir techo"
+  - "techo libre"
+  - "responsable del almacén"
+  - "decimales de las guías"
+entidades:
+  modulo: "Almacenes"
+  pantallas: ["Datos Generales", "Techo Libre"]
+  objetos: ["proyecto", "techo", "Guía de Remisión", "presupuestos", "pedido"]
+prerrequisitos:
+  - texto: "Para usar como techo los presupuestos, estos se asignan al proyecto en el escenario de Datos Generales del módulo de Gerencia de proyectos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s023]
+pasos:
+  - n: 1
+    id: "almacenes.definir-techo-del-proyecto#1"
+    accion: "Acceda al escenario de **Datos Generales**, donde se registran el proyecto y sus datos complementarios."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s021]
+    pagina: null
+    fotos:
+      - id: "cf8a58c745ac"
+        ruta_o_url: "imagenes/manual-de-almacenes/2446d8271ab6.png"
+        pagina: null
+        caption: "Acceso al escenario de Datos Generales: El proyecto y sus datos complementarios se registran en el escenario de Datos Generales."
+        ocr: "Clic derecho\nProyectos\ney 7 Proyectos ejecutados\nA Bandeja #4 Buscar\nee Archive Central $ Refrescar\neaics ii Saccen ae Sete 4\n= Luego,"
+  - n: 2
+    id: "almacenes.definir-techo-del-proyecto#2"
+    accion: "Seleccione la opción que permite elegir el tipo de techo que usará el proyecto en los pedidos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s023]
+    pagina: null
+    fotos:
+      - id: "09e70e8084e5"
+        ruta_o_url: "imagenes/manual-de-almacenes/5c882d328e5d.png"
+        pagina: null
+        caption: "Llamada a: Seleccionado permite elegir el tipo de techo que usará el proyecto en los pedidos. No seleccionado, al pedir muestra el catálogo de recursos."
+        ocr: "Datos Generales\nProyecto 02006 Cédigo altemo [SC\nDescripcién [pyENTE EN CARRETERA\nAbreviatura [PC O- oe se Roe\nN* Serie N? recursos ER\nPropietario fozso0027 [Ministerio de Transportes y Comunicaciones mf Comunicaciones =~=S=é“—*~*~*~*~*~””””CSC~CS 44\nDireccién, [taletaconencnBS SSCS\nLugar los1301 [URUBAMBA | O4|\nCUSCO - URUBAMBA - URUBAMBA Gi) @2)\nMoneda i\npinapall let _INWEVOS SOLES 44\nN° de deci…"
+  - n: 3
+    id: "almacenes.definir-techo-del-proyecto#3"
+    accion: "Seleccione el techo de presupuestos para que, al efectuar un pedido, solo se muestren los recursos de los presupuestos asignados al proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s023]
+    pagina: null
+  - n: 4
+    id: "almacenes.definir-techo-del-proyecto#4"
+    accion: "O seleccione **Techo Libre** para que los pedidos se efectúen del Techo Libre, donde previamente se registran los recursos que manejará el proyecto; utilícelo cuando el proyecto no esté planificado y tenga prisa en efectuar el pedido."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s023, web-https-documentacion-s10peru-com-manual-d-s126]
+    pagina: null
+  - n: 5
+    id: "almacenes.definir-techo-del-proyecto#5"
+    accion: "Ingrese el número de serie y el número de recursos para la **Guía de Remisión**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s023]
+    pagina: null
+  - n: 6
+    id: "almacenes.definir-techo-del-proyecto#6"
+    accion: "Configure los decimales en cantidades, precios y parciales de las guías de ingreso y egreso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s023]
+    pagina: null
+  - n: 7
+    id: "almacenes.definir-techo-del-proyecto#7"
+    accion: "Elija la pestaña para registrar a todos los usuarios del almacén."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s023]
+    pagina: null
+  - n: 8
+    id: "almacenes.definir-techo-del-proyecto#8"
+    accion: "Ponga una selección al o a los responsables del manejo del almacén."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s023]
+    pagina: null
+  - n: 9
+    id: "almacenes.definir-techo-del-proyecto#9"
+    accion: "Después de registrar todos los datos, use el botón que los graba y cierra la ventana."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s022]
+    pagina: null
+verificacion: []
+errores_frecuentes:
+  - sintoma: "Al hacer un pedido se muestra todo el catálogo de recursos."
+    solucion: "Sin selección en la opción del tipo de techo, al pedir se muestra el catálogo de recursos: selecciónela y elija el tipo de techo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s023]
+  - sintoma: "Al efectuar un pedido no se muestran los recursos que necesito."
+    solucion: "Con el techo de presupuestos solo se muestran los recursos de los presupuestos asignados al proyecto; con Techo Libre, los recursos registrados previamente en el escenario Techo Libre."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s023]
+relacionados: [almacenes.calificar-recurso-con-techo-precio, almacenes.calificar-recurso-con-techo-cantidad, almacenes.asignar-usuarios-al-proyecto]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s023, manual: "Manual de Almacenes", seccion: "2.1.1 Definir techo al proyecto", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s021, manual: "Manual de Almacenes", seccion: "2. Registro del proyecto (1)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s126, manual: "Manual de Almacenes", seccion: "3.19.6 Techo Libre", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s022, manual: "Manual de Almacenes", seccion: "2. Registro del proyecto (2)", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

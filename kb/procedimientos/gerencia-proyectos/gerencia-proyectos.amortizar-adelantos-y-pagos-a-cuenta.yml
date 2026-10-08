@@ -1,0 +1,136 @@
+id: gerencia-proyectos.amortizar-adelantos-y-pagos-a-cuenta
+version: 1
+modulo: gerencia-proyectos
+titulo: "Amortizar los adelantos y los pagos a cuenta en la valorización del subcontrato"
+objetivo: "Ver en la valorización del subcontrato el monto amortizado del adelanto, que el sistema calcula de forma automática, y amortizar los pagos a cuenta otorgados al subcontratista."
+nivel: intermedio
+preguntas:
+  - "cómo se amortiza el adelanto del subcontratista en la valorización"
+  - "donde veo la amortizacion del adelanto del subcontrato"
+  - "como amortizo un pago a cuenta en la valorizacion"
+  - "el adelanto no se amortiza en la valorización qué hago"
+  - "se puede amortizar el adelanto manualmente"
+  - "como descuento los pagos a cuenta al valorizar el subcontrato"
+  - "donde veo el monto amortizado en el resumen de la valorizacion"
+  - "como amortisar adelanto subcontrato s10"
+aliases:
+  - "amortización de adelantos"
+  - "amortizar pagos a cuenta"
+  - "amortizar adelanto del subcontrato"
+  - "amortización en la valorización"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Subcontratos", "AMORTIZACION DE ADELANTOS", "AMORTIZACION DE PAGOS A CUENTA", "RESUMEN VALORIZACION"]
+  objetos: ["subcontrato", "valorización", "adelanto", "pagos a cuenta", "subcontratista"]
+prerrequisitos:
+  - texto: "El porcentaje de adelanto debe registrarse en la cabecera al momento de registrar el subcontrato, antes de efectuar la valorización."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s161]
+  - texto: "El pago del adelanto debe registrarse antes de efectuar la primera valorización del subcontratista, para que el sistema efectúe las amortizaciones de forma automática."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s161]
+  - texto: "Para amortizar pagos a cuenta, antes deben estar registrados los pagos a cuenta otorgados al subcontratista."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s161, web-https-documentacion-s10peru-com-manual-d-s158]
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.amortizar-adelantos-y-pagos-a-cuenta#1"
+    accion: "Ingrese al escenario de **Subcontratos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s159]
+    pagina: null
+    fotos:
+      - id: "6e2acd31d2b5"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/da5767ef9c2a.png"
+        pagina: null
+        caption: "Acceso al escenario de Subcontratos"
+        ocr: "ts ]\n‘Subcontrato - ©) gg Escritorio\nDe Obra Luego, (=) PUENTE EN CARRETERA"
+  - n: 2
+    id: "gerencia-proyectos.amortizar-adelantos-y-pagos-a-cuenta#2"
+    accion: "Haga clic derecho sobre el subcontrato del subcontratista y elija **Adicionar Valorizacion**: cada uno de los subcontratos se valoriza independientemente."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s159, img-7c3fc7d7d37a-0000]
+    pagina: null
+    fotos:
+      - id: "be0a11a89f0b"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/7c3fc7d7d37a.png"
+        pagina: null
+        ocr: "Subcontrato - De Obra eS\n= eee\n[= Suweortratos\n\nSI0SA\n“Florez, Antonio\n\n“(@/SCM,DE 0. PARA COLOCACION DE ACERO CORRUGADOfme|L) Adicionar Valorizacion"
+  - n: 3
+    id: "gerencia-proyectos.amortizar-adelantos-y-pagos-a-cuenta#3"
+    accion: "Para valorizar, elija el número de semana e ingrese solo el %, el metrado o el importe."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s159]
+    pagina: null
+    fotos:
+      - id: "b23b7236ab73"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/6077017976f3.png"
+        pagina: null
+        caption: "Para valorizar: Elija el número de semana, luego ingrese sólo %, metrado o importe (este último, simpre y cuando esté configurado para ingresar importe)."
+        ocr: "Px\nCédigo 02001004 _€>|Velorizacién de cierre [] N* Subcontrato N* Velorizacién [~go001\n‘Subcontrato ISC M. DE 0. PARA COLOCACION DF ACFRO CORRIIGANO\nElija el nimero de semana\nSubcontratista [02100128 Florez, Antonio ~- | é4|\n%Retenciones 5 Estado [Registrada x\nPeriado Semanal (02201018 | Semana 18 =| Valorizacin Neta Pager SJ. | _ 3,185.10\nDel 17/05/2010 al 23/05/2010\nAdelantos Pagos a cuenta Ret…"
+  - n: 4
+    id: "gerencia-proyectos.amortizar-adelantos-y-pagos-a-cuenta#4"
+    accion: "Ingrese a la pestaña **AMORTIZACION DE ADELANTOS** para visualizar el monto amortizado del adelanto."
+    resultado: "El monto amortizado se muestra; este proceso es automático."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s161]
+    pagina: null
+    fotos:
+      - id: "4e837c8c754b"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/ef3b3a2a99db.png"
+        pagina: null
+        caption: "Llamada c: Es necesario registrar el % de adelanto, en la cabecera al momento de registrar el subcontrato, antes de efectuar la valorización. Ingrese a la pestaña AMORTIZACION DE ADELANTOS, para visualizar el monto amortizado, este proceso es automático."
+        ocr: "N® de Pago Fecha Monto adelanta ‘Amortizacién ‘Amortizacién con impuesto\n001 02/05/2010 7,813.90 310.00 368.30\nTotal amortizacion — |\nDelale Valorizacién] Deducclén Recursos Amort. Adelantos olor por Pingo [5"
+  - n: 5
+    id: "gerencia-proyectos.amortizar-adelantos-y-pagos-a-cuenta#5"
+    accion: "Luego de valorizar, ingrese a la pestaña **AMORTIZACION DE PAGOS A CUENTA** y haga clic derecho."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s161]
+    pagina: null
+    fotos:
+      - id: "8aabc7ca3aa2"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/f8fc0e8798f7.png"
+        pagina: null
+        caption: "Llamada d: Previamente ver Registro e pagos a cuenta, luego de valorizar ingrese a la pestaña AMORTIZACION DE PAGOS A CUENTA."
+        ocr: "N* Pago ttem Fecha Otorgado Amortizado Amortizacién actual Saldo\nClie derecho\nValorizar desde Ingresos por Orden de Compra\nTotal amortizacién pagos a Cuenta 0.\nDetalle Valorizacién | Decuccién Recursos | Amort. Adelantos Amort. Pagos a Cuenta |\\/alor por Periodo | Resumer|"
+  - n: 6
+    id: "gerencia-proyectos.amortizar-adelantos-y-pagos-a-cuenta#6"
+    accion: "Del **catálogo de pagos a cuenta**, elija con doble clic el pago a cuenta que amortizará."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s161, img-7a104552a4b3-0000]
+    pagina: null
+    fotos:
+      - id: "2f7a8d4e58f9"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/7a104552a4b3.png"
+        pagina: null
+        ocr: "en\n@> Catdlogo de Pagos a cuenta Cay _x.\n\nOpciones 2\n\n-, . ALZ »\n\n0) ae PYetja con doble clic J  % 444) BR ? Ie\n\n| [Ins Pago Fech: Importe Amortizado Sado | |\nfooo02 21042010 41,900.00 00 ‘+f, 100.00\n\ni ' ! !\n\n000022142010 11900 0 11900"
+      - id: "3d5a187ece6e"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/694fd17c65a8.png"
+        pagina: null
+        caption: "Del catálogo de pagos a cuenta;"
+        ocr: "‘o0002 2 2305/2010 41,900.00 0.00 10,900.00\nTotal amortizacién pagos a Cuenta 000 |\nDetalle Valorizacién| Deduccién Recursos] Amort. Adelantos"
+  - n: 7
+    id: "gerencia-proyectos.amortizar-adelantos-y-pagos-a-cuenta#7"
+    accion: "Ingrese a la pestaña **RESUMEN VALORIZACION** para visualizar el monto amortizado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s161]
+    pagina: null
+  - n: 8
+    id: "gerencia-proyectos.amortizar-adelantos-y-pagos-a-cuenta#8"
+    accion: "Si necesita descontar un monto luego de realizar la valorización, use **Valor por periodo**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s161]
+    pagina: null
+    fotos:
+      - id: "8cc646a3102c"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/a96e0ee00cbb.png"
+        pagina: null
+        caption: "Llamada e: Valor por periodo, permite descontar un monto luego de realizar la valorización. Ej.: Sí el subcontrato es a todo costo y le descontamos S/. 790.00,"
+        ocr: "Subcontrato - De Obra =]\n24\n= on\n|= Subcontratos Doble clic\nHSIOSA.\n<8 Florez, Antonio\nSBE ASL EI OSORIO] Ender Ae"
+verificacion:
+  - texto: "En la pestaña RESUMEN VALORIZACION se visualiza el monto amortizado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s161]
+errores_frecuentes:
+  - sintoma: "Quiere amortizar el adelanto manualmente y no existe la opción."
+    solucion: "No existe la opción para amortizar manualmente: registre el pago del adelanto antes de efectuar la primera valorización del subcontratista para que el sistema efectúe las amortizaciones de forma automática."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s161]
+  - sintoma: "Necesita más de una valorización por periodo."
+    solucion: "El sistema solo permite una valorización por periodo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s159]
+relacionados: [gerencia-proyectos.registrar-subcontrato, gerencia-proyectos.aprobar-valorizacion-del-subcontrato, gerencia-proyectos.registrar-factura-del-subcontratista, gerencia-proyectos.deducir-recursos-entregados-al-subcontratista]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s161, manual: "Manual de Gerencia de Proyectos", seccion: "4.6.10.2 Amortización de adelantos", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s158, manual: "Manual de Gerencia de Proyectos", seccion: "4.6.9 Registro de pagos a cuenta", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s159, manual: "Manual de Gerencia de Proyectos", seccion: "4.6.10 Valorización del subcontrato", pagina: null}
+  - {id: img-7c3fc7d7d37a-0000, manual: "Manual de Gerencia de Proyectos", seccion: "7c3fc7d7d37a.png", pagina: null}
+  - {id: img-7a104552a4b3-0000, manual: "Manual de Gerencia de Proyectos", seccion: "7a104552a4b3.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

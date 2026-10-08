@@ -1,0 +1,177 @@
+id: gerencia-proyectos.planificar-con-ms-project
+version: 1
+modulo: gerencia-proyectos
+titulo: "Planificar gráficamente el proyecto con el MS Project"
+objetivo: "Exportar al MS Project las fases y actividades del Cronograma por Periodos, vincular allí las barras y actualizar luego el S10, que calcula los recursos."
+nivel: avanzado
+preguntas:
+  - "cómo exporto el cronograma del s10 al ms project"
+  - "como paso la programacion de gerencia de proyectos a project"
+  - "como actualizo el s10 con los cambios del ms project"
+  - "que version de ms project usa el s10"
+  - "el s10 no toma los datos del project que hice"
+  - "como vinculo las barras en project y lo regreso al s10"
+  - "como calculo la duracion de las actividades para el ms project"
+  - "puedo usar ms project 2016 con s10 gerencia de proyectos"
+  - "como esporto a microsoft proyect"
+aliases:
+  - "exportar a MS Project"
+  - "actualizar desde MS Project"
+  - "planificación gráfica"
+  - "programar con MS Project"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Cronograma por Periodos", "Escala de periodo", "Transferir desde Microsoft Project"]
+  objetos: ["actividad", "cuadrilla", "duración", "MS Project", "recursos"]
+prerrequisitos:
+  - texto: "Las fases o WBS deben tener asignadas sus actividades en el escenario de Actividades: son las que se usan en el Cronograma por Periodos para la programación gráfica."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s085]
+  - texto: "Si trabaja en LAN, el cliente y el servidor deben tener la misma versión del MS Project; si se conecta por escritorio remoto, solo usa los recursos del servidor."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s085]
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.planificar-con-ms-project#1"
+    accion: "Con el usuario de categoría supervisor “sa”, ingrese a la configuración con el botón y seleccione la opción para usar el MS Project 2007 o superior; si no la selecciona, el S10 usa el MS Project 2003."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s085]
+    pagina: null
+    fotos:
+      - id: "2591020fa060"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/44b204895d5c.png"
+        pagina: null
+        caption: "El usuario que tiene la categoría de supervisor “sa”, debe ingresar a configuración usando el botón ."
+        ocr: "j x ..\n[4 Configuracién Gerencia de Pr Galant\n“curacié vgn) Configuracién de ; ;\nContiguracién ical Programaciin | eres ‘@Supervisor(1)| Supervisor(2)\n[7 Trabejar en una sola moneda\nI~ Revisi6n automética de errores en subcontratos"
+  - n: 2
+    id: "gerencia-proyectos.planificar-con-ms-project#2"
+    accion: "Acceda al escenario del **Cronograma por Periodos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s085]
+    pagina: null
+    fotos:
+      - id: "01797b813070"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/9bd23c411c2b.png"
+        pagina: null
+        caption: "Acceso al escenario del Cronograma por Periodos"
+        ocr: "Proyectos\n[ice] SD PUENTE EN CARRETERA\n= 2) Principal\n5] Venta d¢scompuesto\nCronagrama al Venta\npor Periodos | MES 5 Meta:"
+  - n: 3
+    id: "gerencia-proyectos.planificar-con-ms-project#3"
+    accion: "De la barra de botones, elija el tipo de dato que será mostrado en la grilla."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s085]
+    pagina: null
+    fotos:
+      - id: "f0ffcaf56650"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/ab4a9d901455.png"
+        pagina: null
+        caption: "Elija el tipo de dato que será mostrado en la grilla, de la barra de botones elija :"
+      - id: "04a06bbedd21"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/56bf9e9c3bda.png"
+        pagina: null
+        caption: "Elija el tipo de dato que será mostrado en la grilla, de la barra de botones elija :"
+        ocr: "a a\nIZ Modo de Visualizacién [2 lps\nModo\n© Programado — € Valorizacién ~ Ejecutado (OT)\nAvance Programe en mado\nfronograma porcentaje o metrado\n6h err no en costo\n Metrado\n© Costa,"
+  - n: 4
+    id: "gerencia-proyectos.planificar-con-ms-project#4"
+    accion: "Elija la **Escala de periodo**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s085]
+    pagina: null
+    fotos:
+      - id: "d571e7682cd4"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/5a518a5507eb.png"
+        pagina: null
+        caption: "Elija la Escala de periodo"
+        ocr: "Use este botany elija\nhalo Proan ate ono el perind semana\nModo Programado - Cronograma porcentaje (°%) P\nVistas | Todo 2] Escola de paid’ [Peroto Senet [7]\nPeriodo Mensual"
+  - n: 5
+    id: "gerencia-proyectos.planificar-con-ms-project#5"
+    accion: "Haga visibles los campos Fase, Descripción, Metrado presupuesto, Rendimiento, **Cuadrilla** y Duración días, para obtener la duración de las actividades en días."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s086]
+    pagina: null
+    fotos:
+      - id: "cbb3eb73c502"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/21eee15c4571.png"
+        pagina: null
+        caption: "Para la duración de las actividades en días, es necesario hacer visible los campos de Fase, Descripción, Metrado presupuesto, Rendimiento, Cuadrilla, Duración días."
+        ocr: "Clic derecho sobre + [Ato\nDescripcién (WBS -| una actividad Metrado Proto PU. Costo smer|\n17\n&] PA- Chancado\nChancado para agregado grueso concret Maeegaes a ——~ —— gees 32,478.9900\na"
+      - id: "865ce70f22e7"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/54676693ed5d.png"
+        pagina: null
+        caption: "Haga visible los campos:"
+        ocr: "Prato.\n[Deseo es -Aaweea) J/g\n\n(Cantidad Ppto. vi\n\nCantidad Adicional 1\n\nCantidad Deductivo ral\n\nCantidad Total vi\n\nRendimiento\n\n‘Cuadtrilla vi\n[fececinaes ZY] ememos estos cos\n\nPu vi\n\nCosto vi\n\n‘Cantidad HH 1 J"
+  - n: 6
+    id: "gerencia-proyectos.planificar-con-ms-project#6"
+    accion: "Ingrese el número de cuadrillas o grupos de trabajo para cada una de las actividades; a las partidas de gastos generales no se les asigna cuadrillas."
+    resultado: "El metrado/rendimiento proporciona la duración de la actividad en días, que es el tamaño de la barra en el MS Project."
+    fuente: [img-729d4e055c67-0000, web-https-documentacion-s10peru-com-manual-d-s086]
+    pagina: null
+    fotos:
+      - id: "5c4ca124a4af"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/729d4e055c67.png"
+        pagina: null
+        ocr: "Metrado Duracién|\nPuente en carretera Ingrese el nimero de cuadrillas o grupos de) |_|\nPrepatacién de agregados| trabajo para cada una de las actividades a\nPA. Extraccion |\n| __Extracciéncantera(sin explosives) 2.s.esti[ 1.00] 7.00)\n[ Pa-chancaco TT\n| _Chaneado para saregado grueso conereto | eae. 5868] 1.00 8.00)\n[ PA-Zarandeo\n| _Zarancieo mesénico para agregado(concretoy | 7,885.1340[ 1.00 6.00)…"
+  - n: 7
+    id: "gerencia-proyectos.planificar-con-ms-project#7"
+    accion: "Haga clic derecho sobre una actividad y elija **Exportar a Microsoft Project**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s087, img-c6ad40af1858-0000]
+    pagina: null
+    fotos:
+      - id: "94270c0867ad"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/c6ad40af1858.png"
+        pagina: null
+        ocr: "Descripcin (WBS - Act Metrado Ppto, Cuadrilla — Duracién dias: Pu. {J\nClic derecho sobre\nPuente en carretera LUM gatas all 2\n5] Preparacién de agregados Pj\nf=] PA - Extraccién\n[Extraccién cantera (sin explosives 25399511 1.0000 7000 5.7300 fj\n= PA Chal ontraer}<Elije el nivel 5\n3% Recalculg por escala\n—\n[ey ‘Opciones —F Exportar a Microsoft Project"
+  - n: 8
+    id: "gerencia-proyectos.planificar-con-ms-project#8"
+    accion: "Elija la escala de datos y pulse **Aceptar**; no es necesario exportar los recursos del S10 al MS Project."
+    fuente: [img-9a2264142b82-0000, web-https-documentacion-s10peru-com-manual-d-s087]
+    pagina: null
+    fotos:
+      - id: "f2cce08c90f3"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/9a2264142b82.png"
+        pagina: null
+        ocr: "a\nEscalade datos se\nEscalade datos | Innnnl ~\n7 incluir recursos\nAceptar Cancelar"
+  - n: 9
+    id: "gerencia-proyectos.planificar-con-ms-project#9"
+    accion: "En el MS Project, vincule las barras tomando en cuenta el orden constructivo y use el botón para guardar el archivo en la base de datos del S10."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s087, web-https-documentacion-s10peru-com-manual-d-s085]
+    pagina: null
+  - n: 10
+    id: "gerencia-proyectos.planificar-con-ms-project#10"
+    accion: "De vuelta en el S10, haga clic derecho sobre una actividad y elija **Actualizar desde Microsoft Project**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s088, img-50b03a7c8356-0000]
+    pagina: null
+    fotos:
+      - id: "54d847b13410"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/50b03a7c8356.png"
+        pagina: null
+        ocr: "Descripcidn (WBS - Act Metrado Ppto. | Cuadrilla  Duracién dias pu. ahh\nClic derecho sobre 1\nE Puente en carretera LUN@ actividad all la\n=| Preparacién de agregados Pj Wy\n© PA- Extraccién\nExtraccion cantera (sin explosivas, 25399511 1.0000 7oo00 $7300 |\n= PA- Chet! ontraer| <Elije el nivel> 5\n® Revalculg por escala\na\n(®) Opciones » Exportar a Miqrosoft Project\nExportara » Importar de Mfcrasoft Pro…"
+  - n: 11
+    id: "gerencia-proyectos.planificar-con-ms-project#11"
+    accion: "En **Transferir desde Microsoft Project**, seleccione la escala y pulse **Aceptar**."
+    resultado: "Los datos del MS Project pasan automáticamente al S10."
+    fuente: [img-a6aadd8159bb-0000, web-https-documentacion-s10peru-com-manual-d-s088]
+    pagina: null
+    fotos:
+      - id: "b9a3714169c3"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/a6aadd8159bb.png"
+        pagina: null
+        ocr: "& Transferir desde Microsoft Project\nSeleccione una escala ————______—\nEscala: |Diario |\nCuando la transferencia de inforrnacién del\nGantt hacia el escenario del Cronograma Sumar: |\") Por semanas\npor Periados es diaria, estos puden ser x\nacumulados a los periodos semanales y {f] Por afios\nmensuales pf! Semanal\n|¥ Retrescar los periodos\n¥ Calcular horas por periodo\nAceptar Cancelar"
+verificacion:
+  - texto: "Al actualizar, los datos del MS Project pasan automáticamente al S10, que calcula los recursos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s088, web-https-documentacion-s10peru-com-manual-d-s085]
+errores_frecuentes:
+  - sintoma: "El S10 no toma los datos del MS Project."
+    solucion: "En el MS Project no use Guardar como, porque cambia la ruta y el S10 puede no tomar los datos; guarde con el botón que graba el archivo en la base de datos del S10."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s087]
+  - sintoma: "Necesita insertar o quitar tareas en el MS Project."
+    solucion: "No inserte ni quite tareas en el MS Project: si desea hacerlo, ingrese al escenario de Actividades."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s087]
+  - sintoma: "El proyecto usa doble moneda o jornadas diferentes en las partidas."
+    solucion: "El MS Project no soporta doble moneda ni jornadas diferentes en las partidas (número de horas del día)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s085]
+relacionados: [gerencia-proyectos.planificar-en-cronograma-por-periodos, gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas, gerencia-proyectos.definir-periodos]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s085, manual: "Manual de Gerencia de Proyectos", seccion: "2.6.2 Planificación gráfica del proyecto usando el MS Project", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s086, manual: "Manual de Gerencia de Proyectos", seccion: "2.6.2.1 Tiempos para programación", pagina: null}
+  - {id: img-729d4e055c67-0000, manual: "Manual de Gerencia de Proyectos", seccion: "729d4e055c67.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s087, manual: "Manual de Gerencia de Proyectos", seccion: "2.6.2.2 Exportar información del S10 al MS Project", pagina: null}
+  - {id: img-c6ad40af1858-0000, manual: "Manual de Gerencia de Proyectos", seccion: "c6ad40af1858.png", pagina: null}
+  - {id: img-9a2264142b82-0000, manual: "Manual de Gerencia de Proyectos", seccion: "9a2264142b82.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s088, manual: "Manual de Gerencia de Proyectos", seccion: "2.6.2.4 Actualizar los datos del MS Project al S10", pagina: null}
+  - {id: img-50b03a7c8356-0000, manual: "Manual de Gerencia de Proyectos", seccion: "50b03a7c8356.png", pagina: null}
+  - {id: img-a6aadd8159bb-0000, manual: "Manual de Gerencia de Proyectos", seccion: "a6aadd8159bb.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

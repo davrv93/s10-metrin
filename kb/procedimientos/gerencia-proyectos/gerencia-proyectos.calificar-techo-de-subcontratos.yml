@@ -1,0 +1,70 @@
+id: gerencia-proyectos.calificar-techo-de-subcontratos
+version: 1
+modulo: gerencia-proyectos
+titulo: "Calificar el techo de un subcontrato presupuestado"
+objetivo: "Definir el tipo de techo de un recurso genérico de subcontrato (por ejemplo, SC PRUEBAS DE CONCRETO, que provisiona un monto) y asignarle el recurso del catálogo que se genera en la ejecución, cuando el proyecto tiene techo presupuestado."
+nivel: intermedio
+preguntas:
+  - "cómo califico el techo de un subcontrato en gerencia de proyectos"
+  - "dónde se define el techo de los subcontratos"
+  - "tengo SC PRUEBAS DE CONCRETO presupuestado y necesito pedir rotura de briquetas, cómo hago"
+  - "como edito el techo precio de un subcontrato"
+  - "como agrego un recurso del catalogo al techo de subcontratos"
+  - "como hago que el recurso principal del subcontrato no sea pedible"
+  - "techo de subcontratos s10 paso a paso"
+  - "como asigno un equivalente a un subcontrato presupuestado"
+aliases:
+  - "techo subcontratos"
+  - "techo de subcontratos"
+  - "calificar techo de subcontrato"
+  - "editar techo precio de subcontrato"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Subcontratos"]
+  objetos: ["recurso", "techo", "recurso principal", "subcontrato"]
+prerrequisitos:
+  - texto: "El proyecto debe tener techo presupuestado: ingrese a esta opción sólo si lo tiene."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s143]
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.calificar-techo-de-subcontratos#1"
+    accion: "Ingrese al escenario de Subcontratos del proyecto que tiene techo presupuestado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s143]
+    pagina: null
+    fotos:
+      - id: "b7ce6e5f8247"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/4cf1a6ed6026.png"
+        pagina: null
+        caption: "Acceso al escenario de Subcontratos"
+        ocr: "= i [ee rales\nTecho de © wij esertorio\nee Luego, ©) SD PUENTE EN CARRETERA"
+      - id: "bfb470a09a23"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/9d64b0a6e957.png"
+        pagina: null
+        caption: "Acceso al escenario de Subcontratos"
+        ocr: "[leche de Subcontratos y Servicios\nSubcontratos presupuestados\nSy Mm aL deco]\nCédigo Descripcpin Unica | Cant. Ppto. [Precio (Si) Parcial (S/.)\n0402040001 ‘SC AGUA - TELECOMUNICACIONES - FLUIDO ELE sem 27.00 305.00 8,235.1\nDCTS SC PRUEBAS DE CONCRETO u 120.00 43.00 5,160!\nProcegar »\nClasiicar por »\nIncrementar techo\nMostrar historia de incrementos del techo >"
+      - id: "451ae248191b"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/32a18bbe0a2a.png"
+        pagina: null
+        caption: "Acceso al escenario de Subcontratos"
+        ocr: "Teche de Sulconhratos y Services\nSubcontratos presupuestados\nAVG» &@aw [Ei |\nCodigo. [Descripcién Unida| Cant. Ppto. |recio (Sé.)| Parcial (Si) 4!\n0402040001 SC AGUA - TELECOMUNHICACIONES - FLUIDO ELE sem 27.00 305.00 8,235.)\nTEMPE IT I SC PRUEBAS DE CONCRETO u 120.00 43.00 5,160.1\n04011200010002 SC ALQUILER DE SOPORTE METALICO PARA ENC m2 403.00 12.00 4,908.1\n| i\ni |Asignado a: 04030200060001 SC …"
+  - n: 2
+    id: "gerencia-proyectos.calificar-techo-de-subcontratos#2"
+    accion: "Haga clic derecho sobre el recurso ubicado en la ventana inferior y, del menú que muestre, elija **Adicionar recurso del catalogo**; luego elija el recurso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s143]
+    pagina: null
+  - n: 3
+    id: "gerencia-proyectos.calificar-techo-de-subcontratos#3"
+    accion: "Haga clic derecho sobre el recurso y, del menú que muestre, elija **Editar techo precio** e ingrese la cantidad y el precio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s143]
+    pagina: null
+  - n: 4
+    id: "gerencia-proyectos.calificar-techo-de-subcontratos#4"
+    accion: "Haga que el recurso principal no sea pedible, sólo el equivalente."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s143]
+    pagina: null
+verificacion: []
+errores_frecuentes: []
+relacionados: [gerencia-proyectos.registrar-subcontrato]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s143, manual: "Manual de Gerencia de Proyectos", seccion: "4.5 Techo subcontratos", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

@@ -1,0 +1,81 @@
+id: gerencia-proyectos.asignar-actividades-a-partidas-de-control
+version: 1
+modulo: gerencia-proyectos
+titulo: "Asignar las actividades del WBS a las partidas de control"
+objetivo: "Asignar a cada partida de control las actividades del WBS, con el 100% de sus metrados, para que adquieran valores y en Resultados Operativos se vea el costo de la venta y la meta agrupado por partidas de control."
+nivel: intermedio
+preguntas:
+  - "cómo asigno actividades a una partida de control"
+  - "donde se asignan las partidas a las partidas de control"
+  - "como clasifico las actividades por partida de control"
+  - "mis partidas de control salen en cero en resultados operativos"
+  - "como verifico que todas las actividades esten asignadas a partidas de control"
+  - "tengo que asignar tambien en la rama venta"
+  - "como asigno actividades a la partida de contol en gerencia"
+  - "quiero ver si gano o pierdo por partida de control"
+aliases:
+  - "asignar actividades a partidas de control"
+  - "clasificación de actividades"
+  - "asignar partida de control"
+  - "partidas de control del WBS"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Clasificación de Actividades", "Partidas de Control", "Resultados Operativos"]
+  objetos: ["partida de control", "actividad", "WBS", "rama venta", "metrados"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.asignar-actividades-a-partidas-de-control#1"
+    accion: "Ingrese al escenario de **Clasificación de Actividades** para asignar las actividades a las partidas de control."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s076]
+    pagina: null
+    fotos:
+      - id: "16a682fb8633"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/218cf1a888ce.png"
+        pagina: null
+        caption: "Acceso al escenario de Clasificación de Actividades"
+        ocr: "Proyectos\na = Sjecortoe — [Elial RE @\n] 5). PUENTE EN CARRETERA, Re mn —\nae =) 2) Principal RR Responsable\nS| Venta ddscompuesto | RE Especialidad\nClasificacién 5 Venta RE Frente\nadios || gas, 3] Meta _ [RP Destino Esnecitico"
+  - n: 2
+    id: "gerencia-proyectos.asignar-actividades-a-partidas-de-control#2"
+    accion: "Elija la partida de control."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s076, img-ea30853443ea-0000]
+    pagina: null
+    fotos:
+      - id: "e25679a39387"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/ea30853443ea.png"
+        pagina: null
+        ocr: "Partidas de Control (Meta)\n[| ____Desereign actives dl resunuee Unwed] Wetec ——=~=SCS*~*«S\nI Puente en carretera\n] Preparacién de agregadas PA,\n@ ~G PA- Extraccion ®\nRP “oo Extraccién cantera (sin explosivos) m3 2,529.9500 $7300\n1 PA- Chancado\nRP Chancedo para agregado gruesa concreto m3 845.5868 36.4100\nof] PA- Zarandeo\nAP ~~ Zarandeo mecénico para agregado (concre m3 1,695.1340 15.3700\nFEP Parti…"
+  - n: 3
+    id: "gerencia-proyectos.asignar-actividades-a-partidas-de-control#3"
+    accion: "Elija la actividad con doble clic para asignarla a la partida de control."
+    resultado: "Un botón indica que la actividad ha sido asignada a una partida de control, y se muestran las actividades asignadas a la partida de control."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s076]
+    pagina: null
+  - n: 4
+    id: "gerencia-proyectos.asignar-actividades-a-partidas-de-control#4"
+    accion: "Use el botón para verificar que todas las actividades estén asignadas a las partidas de control."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s076]
+    pagina: null
+  - n: 5
+    id: "gerencia-proyectos.asignar-actividades-a-partidas-de-control#5"
+    accion: "Repita el proceso para la rama venta."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s076]
+    pagina: null
+  - n: 6
+    id: "gerencia-proyectos.asignar-actividades-a-partidas-de-control#6"
+    accion: "Vaya al escenario de **Resultados Operativos** y haga una vista para ver si ganaremos o perderemos en cada una de las partidas de control."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s076]
+    pagina: null
+verificacion:
+  - texto: "En el escenario de Resultados Operativos se visualiza la información en costo que corresponde a la venta y la meta, agrupada por partidas de control."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s076]
+errores_frecuentes:
+  - sintoma: "Quiere modificar la estructura de registro de una partida de control que ya tiene movimientos."
+    solucion: "Después de que una Partida de Control tenga movimientos, no modifique la estructura de registro."
+    fuente: [img-617df14c4429-0000]
+relacionados: [gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s076, manual: "Manual de Gerencia de Proyectos", seccion: "2.3.2 Asignar actividades a las Partidas de Control", pagina: null}
+  - {id: img-ea30853443ea-0000, manual: "Manual de Gerencia de Proyectos", seccion: "ea30853443ea.png", pagina: null}
+  - {id: img-617df14c4429-0000, manual: "Manual de Gerencia de Proyectos", seccion: "617df14c4429.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

@@ -1,0 +1,66 @@
+id: gerencia-proyectos.consultar-resumen-de-conceptos-por-periodo
+version: 1
+modulo: gerencia-proyectos
+titulo: "Generar y consultar el resumen de conceptos por periodo"
+objetivo: "Visualizar el resumen de la asistencia del periodo más los datos que necesita el sistema para calcular la nómina: los datos para los descuentos de AFP y todos los datos que son manuales."
+nivel: basico
+preguntas:
+  - "cómo genero el resumen de conceptos por periodo"
+  - "donde veo el resumen de asistencia de la semana para la planilla"
+  - "de donde salen los datos para los descuentos de afp"
+  - "como saco el resumen de conceptos de toda la semana del multiproyecto"
+  - "resumen de conseptos por periodo como lo genero"
+  - "antes de calcular la nomina que resumen tengo que generar"
+  - "donde reviso los datos manuales del periodo antes de la planilla"
+aliases:
+  - "resumen de conceptos por periodo"
+  - "generar resumen de conceptos"
+  - "resumen de asistencia del periodo"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Resumen de Conceptos por Periodo"]
+  objetos: ["tipo de nómina", "periodo", "conceptos", "AFP"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.consultar-resumen-de-conceptos-por-periodo#1"
+    accion: "Elija el grupo **ACTIVIDADES**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s199]
+    pagina: null
+  - n: 2
+    id: "gerencia-proyectos.consultar-resumen-de-conceptos-por-periodo#2"
+    accion: "Ingrese al escenario **Resumen de Conceptos por Periodo**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s199, img-5c5f02ae3077-0000]
+    pagina: null
+    fotos:
+      - id: "8fc609bbad88"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/5c5f02ae3077.png"
+        pagina: null
+        ocr: "3 S10 Néminas\n- Archive Ver Catélogos Herramientas 2\n[aeae\n- gag Escrtorio Resumen de Conceptos por Periodo\nsabeibadesm—! f#- RB FIMAHUAYCOLORO.\nRD MULTIFAMILIAR ESCSHOADERO.\na ~6) B SammimovEco. Proyecto 19009001 MULTIPROYECTO\n+ (0 Principal Tipo de Némina }001 Obreros de construccién civil con beneficios sociales >\nResumen de B ;\nConceptos por sence Periodo [0220174701 [Semana 2017 - 47 Ss | X[e…"
+  - n: 3
+    id: "gerencia-proyectos.consultar-resumen-de-conceptos-por-periodo#3"
+    accion: "Elija el proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s199]
+    pagina: null
+  - n: 4
+    id: "gerencia-proyectos.consultar-resumen-de-conceptos-por-periodo#4"
+    accion: "Elija el **TIPO DE NOMINA**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s199]
+    pagina: null
+  - n: 5
+    id: "gerencia-proyectos.consultar-resumen-de-conceptos-por-periodo#5"
+    accion: "Genere el resumen de conceptos por el periodo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s199]
+    pagina: null
+  - n: 6
+    id: "gerencia-proyectos.consultar-resumen-de-conceptos-por-periodo#6"
+    accion: "Confirme que está seguro de generar el resumen por conceptos para el periodo."
+    fuente: [img-5c5f02ae3077-0000]
+    pagina: null
+verificacion: []
+errores_frecuentes: []
+relacionados: [gerencia-proyectos.consultar-resumen-de-conceptos-por-dia, gerencia-proyectos.consultar-tareo-detallado]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s199, manual: "Manual de Gerencia de Proyectos", seccion: "5.16.4 Resumen de Conceptos por Periodo", pagina: null}
+  - {id: img-5c5f02ae3077-0000, manual: "Manual de Gerencia de Proyectos", seccion: "5c5f02ae3077.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

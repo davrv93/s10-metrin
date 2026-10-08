@@ -1,0 +1,115 @@
+id: almacenes.registrar-ubicacion-fisica
+version: 1
+modulo: almacenes
+titulo: "Registrar la ubicación física del almacén y asignarla a los recursos"
+objetivo: "Registrar en un catálogo, por almacén, la ubicación física o lugar dentro del almacén, y asignarla después a cada recurso en el escenario de Stock para que cada recurso tenga un lugar dentro del almacén."
+nivel: intermedio
+preguntas:
+  - "cómo registro la ubicación de los materiales dentro del almacén"
+  - "como asigno un estante a un recurso en s10 almacenes"
+  - "donde registro los sectores y estantes del almacen"
+  - "como pongo en que gaveta esta cada material"
+  - "no me aparecen ubicaciones para asignar al recurso"
+  - "ubicacion fisica del almacen como se configura"
+  - "quiero saber en qué estante está el cemento, cómo lo registro"
+aliases:
+  - "ubicación física"
+  - "registrar ubicación física"
+  - "asignar ubicación al recurso"
+  - "croquis del almacén"
+  - "estantes del almacén"
+entidades:
+  modulo: "Almacenes"
+  pantallas: ["Ubicación física", "Stock"]
+  objetos: ["ubicación física", "almacén", "recurso", "croquis"]
+prerrequisitos:
+  - texto: "El registro de la ubicación es por almacén."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s135]
+pasos:
+  - n: 1
+    id: "almacenes.registrar-ubicacion-fisica#1"
+    accion: "Acceda al escenario de **Ubicación física**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s135]
+    pagina: null
+    fotos:
+      - id: "fcef37c0fbc6"
+        ruta_o_url: "imagenes/manual-de-almacenes/916821a08d0f.png"
+        pagina: null
+        caption: "Acceso al escenario"
+        ocr: "4 | a Escritorio\na - 9 PUENTE EN CARRETERA,\nprecio | oo, De Materiales —I\nFisica Luego, Pde Actives"
+  - n: 2
+    id: "almacenes.registrar-ubicacion-fisica#2"
+    accion: "Verifique la estructura."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s135]
+    pagina: null
+    fotos:
+      - id: "31194437edd1"
+        ruta_o_url: "imagenes/manual-de-almacenes/58d564ff576f.png"
+        pagina: null
+        caption: "Verificar estructura"
+        ocr: "Ubicacién Fis\nfied\n= f=\naos\n\nuego,"
+  - n: 3
+    id: "almacenes.registrar-ubicacion-fisica#3"
+    accion: "Registre en el catálogo la ubicación física, tomando como ejemplo el croquis del almacén."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s135]
+    pagina: null
+    fotos:
+      - id: "099cdd41b929"
+        ruta_o_url: "imagenes/manual-de-almacenes/3f5f4cb7f511.png"
+        pagina: null
+        caption: "Se muestra como ejemplo un croquis de un almacén, el mismo que debe ser registrado en un catálogo,"
+        ocr: "i Datos que seran\nCroquis del almacén registrados\nEl estante £-4 visto de frente Almacén de materiales Puente Almacén Urubamba\nSector 1 (Cemento)\nLTT.) frees ea Sector (Cemen\na a\na EA, Fla @-columna 1\na | Tg E-A, Fia b- coumna 1\n2 Fy 4 8 , EA, Fila c- columna 1\nE-A fila c- columna 3 4 —|_ [4 E-A, Fila d - columna 1\nc- imna\n\nSector 1 (Cemento) E-A, Fila a - columna 2\nSector 2 (Acero) E-A, Fila b - …"
+      - id: "a7a28df140fa"
+        ruta_o_url: "imagenes/manual-de-almacenes/ca8e7206ef9d.png"
+        pagina: null
+        caption: "Registro de la ubicación física"
+        ocr: "ej x!\nchao [oT\n= — —s /Puente Aimacén Ururbamba\n| Ubicacién Fisica ES |"
+  - n: 4
+    id: "almacenes.registrar-ubicacion-fisica#4"
+    accion: "Registre los demás niveles."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s135]
+    pagina: null
+  - n: 5
+    id: "almacenes.registrar-ubicacion-fisica#5"
+    accion: "En el escenario de **Stock**, ingrese a la opción de **Ubicación** para asignar la ubicación física a cada recurso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s085, web-https-documentacion-s10peru-com-manual-d-s033]
+    pagina: null
+    fotos:
+      - id: "005a1d1fc6ef"
+        ruta_o_url: "imagenes/manual-de-almacenes/2e64d5ec15e1.png"
+        pagina: null
+        caption: "Ingreso a la opción"
+        ocr: "& Solo Recur}os\nre] Ubicacién."
+  - n: 6
+    id: "almacenes.registrar-ubicacion-fisica#6"
+    accion: "En **Stock - Ubicacion Fisica**, haga clic derecho y elija **Adicionar**."
+    fuente: [img-d1e278e68e9b-0000, web-https-documentacion-s10peru-com-manual-d-s085]
+    pagina: null
+    fotos:
+      - id: "6cfb369188f0"
+        ruta_o_url: "imagenes/manual-de-almacenes/d1e278e68e9b.png"
+        pagina: null
+        ocr: ": =F a\nStock - Ubicacion Fisica\nFira |Todos los recursos | Valorizado -Igv Si, 141,516.66 168,404.83\nYe i\nAAR v Clic derecho D Adicionar\nCédiga Recursu X Eliminar A\n0204010001 ALAMBRE NEGRCIRECO(| @ pecastear O |\n2040100010001 [ALAMBRE NEGRO RECO 0\ni Asignar Ubicacién Fisica"
+  - n: 7
+    id: "almacenes.registrar-ubicacion-fisica#7"
+    accion: "Del catálogo de ubicación física, elija con doble clic la ubicación del recurso."
+    fuente: [img-37ad80707eaa-0000, web-https-documentacion-s10peru-com-manual-d-s085]
+    pagina: null
+    fotos:
+      - id: "e36193907098"
+        ruta_o_url: "imagenes/manual-de-almacenes/37ad80707eaa.png"
+        pagina: null
+        ocr: "% ex\nUbicacién Fisica So\nOpciones 2\nbeEaeveRin 4s Haéséae Qa\nDescripcién “\n©) ALMACEN PRINCIPAL aq\nEIQ ESTANTE A =\nElija con doble clic\nGAVETA 1-3 aw"
+verificacion: []
+errores_frecuentes:
+  - sintoma: "No hay ubicaciones físicas registradas para asignar a los recursos."
+    solucion: "En el caso de que no existan registros, solicite al encargado de Gerencia de proyectos que los registre."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s135]
+relacionados: [almacenes.asignar-stock-minimo, almacenes.consultar-kardex]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s135, manual: "Manual de Almacenes", seccion: "3.19.9.7 Ubicación física", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s085, manual: "Manual de Almacenes", seccion: "3.5 Asignar ubicación física dentro del almacén a un recurso", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s033, manual: "Manual de Almacenes", seccion: "2.6 Verifique el registro de la Ubicación física", pagina: null}
+  - {id: img-d1e278e68e9b-0000, manual: "Manual de Almacenes", seccion: "d1e278e68e9b.png", pagina: null}
+  - {id: img-37ad80707eaa-0000, manual: "Manual de Almacenes", seccion: "37ad80707eaa.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

@@ -1,0 +1,324 @@
+{"texto": "¿Cómo ubico los pedidos en los que figura un recurso determinado dentro de Almacenes?", "procedimiento": "almacenes.consultar-recursos-por-pedido", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "necesito ver en cuántos pedidos aparece el fierro de 1/2, cómo lo busco", "procedimiento": "almacenes.consultar-recursos-por-pedido", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el residente dice que ya pidió los clavos pero no sé en qué pedido quedó, cómo lo ubico", "procedimiento": "almacenes.consultar-recursos-por-pedido", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "me piden rastrear por dónde va el pedido del cemento hasta su aprobación, dónde lo miro", "procedimiento": "almacenes.consultar-recursos-por-pedido", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo veo el recorrido que ha seguido un pedido de materiales hasta su aprobación?", "procedimiento": "almacenes.consultar-recursos-por-pedido", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como hago pa ver el seguimiento de un recurso que pedimos", "procedimiento": "almacenes.consultar-recursos-por-pedido", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo veo en q pedido esta el ladrillo", "procedimiento": "almacenes.consultar-recursos-por-pedido", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "xq pedido va el alambre n3 q pidieron, donde se ve", "procedimiento": "almacenes.consultar-recursos-por-pedido", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "recurso x pedido s10", "procedimiento": "almacenes.consultar-recursos-por-pedido", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "seguimiento del pedido", "procedimiento": "almacenes.consultar-recursos-por-pedido", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "ya se aprobó el pedido, cómo veo qué documento le salió, el de compra o el de almacén", "procedimiento": "almacenes.consultar-recursos-por-pedido", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿De qué manera consulto el documento que generó el sistema después de aprobarse el pedido de un recurso?", "procedimiento": "almacenes.consultar-recursos-por-pedido", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el ingeniero quiere saber si lo que pidió se convirtió en pedido de compra o va a salir del almacén, dónde veo eso", "procedimiento": "almacenes.consultar-recursos-por-pedido", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como busco un recurso y veo todos los pedidos donde está metido", "procedimiento": "almacenes.consultar-recursos-por-pedido", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "nose en ke pedido esta el tubo pvc, como lo busko", "procedimiento": "almacenes.consultar-recursos-por-pedido", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "Necesito conocer el camino recorrido por un pedido de recursos; ¿cómo lo consulto?", "procedimiento": "almacenes.consultar-recursos-por-pedido", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "¿Dónde queda la pantalla de Recursos por Pedido en Almacenes?", "procedimiento": "almacenes.consultar-recursos-por-pedido", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en que parte de almacenes esta lo de recursos por pedido", "procedimiento": "almacenes.consultar-recursos-por-pedido", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "por donde entro para ver los pedidos de un recurso", "procedimiento": "almacenes.consultar-recursos-por-pedido", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "no encuentro el escenario recursos x pedido", "procedimiento": "almacenes.consultar-recursos-por-pedido", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "recursos por pedido donde esta", "procedimiento": "almacenes.consultar-recursos-por-pedido", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "¿Por dónde se accede a los documentos generados del pedido?", "procedimiento": "almacenes.consultar-recursos-por-pedido", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "ruta para ver el seguimiento del recurso en s10", "procedimiento": "almacenes.consultar-recursos-por-pedido", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Qué opción del menú de clic derecho debo elegir para que me muestre el pedido donde está el recurso?", "procedimiento": "almacenes.consultar-recursos-por-pedido", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "donde elijo la opcion de seguimiento del recurso, hago clic derecho y no sé cuál es", "procedimiento": "almacenes.consultar-recursos-por-pedido", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "cómo selecciono el recurso en la ventana de arriba para que me cargue sus pedidos", "procedimiento": "almacenes.consultar-recursos-por-pedido", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué debo elegir en el menú del recurso para ver el pedido de compra generado?", "procedimiento": "almacenes.consultar-recursos-por-pedido", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "q tengo q marcar en recursos por pedido pa q salga el documento generado", "procedimiento": "almacenes.consultar-recursos-por-pedido", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "como dejo la pantalla de recursos por pedido para ver el camino del pedido", "procedimiento": "almacenes.consultar-recursos-por-pedido", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "hice clic derecho al recurso y no me sale la opción de documentos generados", "procedimiento": "almacenes.consultar-recursos-por-pedido", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "por qué no me aparece el pedido de compra generado si ya lo mandé a aprobar", "procedimiento": "almacenes.consultar-recursos-por-pedido", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "en recursos por pedido el recurso no me muestra ningún pedido", "procedimiento": "almacenes.consultar-recursos-por-pedido", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el seguimiento del recurso sale vacio, q pasa", "procedimiento": "almacenes.consultar-recursos-por-pedido", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "no veo el documento que generó el sistema para el pedido del residente, será que aún no lo aprueban", "procedimiento": "almacenes.consultar-recursos-por-pedido", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "No logro visualizar el camino recorrido por el pedido en Recursos por Pedido; ¿a qué se debe?", "procedimiento": "almacenes.consultar-recursos-por-pedido", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "no me sale el pedido a almacen q se genero del recurso", "procedimiento": "almacenes.consultar-recursos-por-pedido", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "¿Cómo obtengo el valorizado de lo egresado a cada destino específico entre dos fechas?", "procedimiento": "almacenes.consultar-resultados-por-destino-especifico", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "quiero ver cuánto material se despachó al destino específico losa del piso 3, cómo lo saco", "procedimiento": "almacenes.consultar-resultados-por-destino-especifico", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "necesito el costo de los recursos que salieron a cada destino específico del proyecto", "procedimiento": "almacenes.consultar-resultados-por-destino-especifico", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el gerente pide saber cuánto cemento se fue a las columnas del bloque B, que egresamos con destino específico, cómo lo consulto", "procedimiento": "almacenes.consultar-resultados-por-destino-especifico", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como veo los recursos egresados a un destino especifico de febrero a abril", "procedimiento": "almacenes.consultar-resultados-por-destino-especifico", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo reviso en qué documentos de egreso salió un recurso que se envió a un destino específico?", "procedimiento": "almacenes.consultar-resultados-por-destino-especifico", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "komo saco los resultados x destino especifico del almacen", "procedimiento": "almacenes.consultar-resultados-por-destino-especifico", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "kiero ver lo egresado al destino especifico cimentacion, como se hace", "procedimiento": "almacenes.consultar-resultados-por-destino-especifico", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "resultados destino especifico", "procedimiento": "almacenes.consultar-resultados-por-destino-especifico", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "valorizado destinos especificos almacen", "procedimiento": "almacenes.consultar-resultados-por-destino-especifico", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como proceso los datos de un periodo para ver los destinos específicos", "procedimiento": "almacenes.consultar-resultados-por-destino-especifico", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "en el almacén de materiales egresamos todo el mes a destinos específicos y quiero el consolidado valorizado", "procedimiento": "almacenes.consultar-resultados-por-destino-especifico", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo consulto los movimientos desde el primer ingreso hasta hoy agrupados por destino específico?", "procedimiento": "almacenes.consultar-resultados-por-destino-especifico", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como veo el detalle de un recurso dentro de un destino específico, es con doble clic?", "procedimiento": "almacenes.consultar-resultados-por-destino-especifico", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "egresos por destino especifico de la semana pasada, donde los saco", "procedimiento": "almacenes.consultar-resultados-por-destino-especifico", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo comparo cuánto se egresó a cada destino específico en un rango de fechas?", "procedimiento": "almacenes.consultar-resultados-por-destino-especifico", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "¿En qué escenario de Almacenes están los Resultados por Destinos Específicos?", "procedimiento": "almacenes.consultar-resultados-por-destino-especifico", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde queda lo de resultados por destinos especificos", "procedimiento": "almacenes.consultar-resultados-por-destino-especifico", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "por donde entro para ver los egresos valorizados por destino especifico", "procedimiento": "almacenes.consultar-resultados-por-destino-especifico", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "no encuentro resultados x destinos especificos en almacenes", "procedimiento": "almacenes.consultar-resultados-por-destino-especifico", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "resultados destinos especificos ruta", "procedimiento": "almacenes.consultar-resultados-por-destino-especifico", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "¿Dónde consulto lo egresado a cada destino específico en el módulo de Almacenes?", "procedimiento": "almacenes.consultar-resultados-por-destino-especifico", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en que grupo de informes de almacenes esta lo de destino especifico", "procedimiento": "almacenes.consultar-resultados-por-destino-especifico", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Cómo elijo el tipo de período en Resultados por Destinos Específicos?", "procedimiento": "almacenes.consultar-resultados-por-destino-especifico", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "donde marco la opción de todos para que tome desde el primer movimiento", "procedimiento": "almacenes.consultar-resultados-por-destino-especifico", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "cómo pongo fecha inicio y fecha fin en los destinos específicos", "procedimiento": "almacenes.consultar-resultados-por-destino-especifico", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué requisito debe cumplir el egreso para que aparezca en Resultados por Destinos Específicos?", "procedimiento": "almacenes.consultar-resultados-por-destino-especifico", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "en qué tipo de almacén se usan los resultados por destino específico", "procedimiento": "almacenes.consultar-resultados-por-destino-especifico", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como selecciono el destino especifico de la lista del proyecto pa ver sus recursos", "procedimiento": "almacenes.consultar-resultados-por-destino-especifico", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "en destinos específicos no sale ningún egreso aunque despaché material", "procedimiento": "almacenes.consultar-resultados-por-destino-especifico", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "Los resultados por destinos específicos no corresponden al rango de fechas que necesito; ¿qué hice mal?", "procedimiento": "almacenes.consultar-resultados-por-destino-especifico", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "me salen datos de otro mes en destinos especificos", "procedimiento": "almacenes.consultar-resultados-por-destino-especifico", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "mi egreso no aparece en resultados por destino específico, qué le falta", "procedimiento": "almacenes.consultar-resultados-por-destino-especifico", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el almacén es de equipos y los resultados por destino específico salen raros, no sé si es por el tipo de almacén", "procedimiento": "almacenes.consultar-resultados-por-destino-especifico", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "le di a procesar y no me trae lo q queria en destino especifico, xq", "procedimiento": "almacenes.consultar-resultados-por-destino-especifico", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "no me aparecen recursos en el destino específico que elegí", "procedimiento": "almacenes.consultar-resultados-por-destino-especifico", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "¿Cómo defino el tipo de techo del proyecto para que los pedidos salgan de los presupuestos asignados?", "procedimiento": "almacenes.definir-techo-del-proyecto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "quiero activar techo libre en mi proyecto, cómo lo hago", "procedimiento": "almacenes.definir-techo-del-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cómo registro la serie de la guía de remisión del proyecto en almacenes", "procedimiento": "almacenes.definir-techo-del-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "necesito cambiar los decimales de cantidades y precios en las guías de ingreso y egreso", "procedimiento": "almacenes.definir-techo-del-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cómo dejo marcado quién es el responsable del almacén del proyecto", "procedimiento": "almacenes.definir-techo-del-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "la obra recién arranca y no tenemos presupuesto aprobado, cómo hago para pedir materiales igual", "procedimiento": "almacenes.definir-techo-del-proyecto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "cómo pongo que los pedidos se hagan solo con recursos del presupuesto", "procedimiento": "almacenes.definir-techo-del-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Dónde se registran los usuarios responsables de manejar el almacén?", "procedimiento": "almacenes.definir-techo-del-proyecto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "komo pongo el techo libre al proyecto", "procedimiento": "almacenes.definir-techo-del-proyecto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "nose como poner q el almacenero sea el responsable en el proyecto", "procedimiento": "almacenes.definir-techo-del-proyecto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "techo libre proyecto almacenes", "procedimiento": "almacenes.definir-techo-del-proyecto", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "definir techo del proyecto", "procedimiento": "almacenes.definir-techo-del-proyecto", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "¿Dónde se ingresa el número de serie y de recursos de la Guía de Remisión del proyecto?", "procedimiento": "almacenes.definir-techo-del-proyecto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como configuro el proyecto en almacenes para que use el techo de presupuestos", "procedimiento": "almacenes.definir-techo-del-proyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "soy administrador de obra y tengo que dejar listo el proyecto en almacenes: techo, serie de guía y responsables, por dónde empiezo", "procedimiento": "almacenes.definir-techo-del-proyecto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo se definen los decimales de las guías de ingreso y egreso en un proyecto?", "procedimiento": "almacenes.definir-techo-del-proyecto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "¿En qué escenario se define el techo del proyecto?", "procedimiento": "almacenes.definir-techo-del-proyecto", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde esta lo del techo libre en s10", "procedimiento": "almacenes.definir-techo-del-proyecto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "por donde entro para poner la serie de la guia de remision del proyecto", "procedimiento": "almacenes.definir-techo-del-proyecto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "ruta pa elegir al responsable del almacen en datos generales", "procedimiento": "almacenes.definir-techo-del-proyecto", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "datos generales almacenes techo", "procedimiento": "almacenes.definir-techo-del-proyecto", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "en qué pestaña se registran todos los usuarios del almacén", "procedimiento": "almacenes.definir-techo-del-proyecto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Dónde cambio el tipo de techo que usa el proyecto en los pedidos?", "procedimiento": "almacenes.definir-techo-del-proyecto", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "¿Qué diferencia hay entre usar el techo de presupuestos y el Techo Libre, y cuál debo elegir?", "procedimiento": "almacenes.definir-techo-del-proyecto", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "para qué sirve el techo libre y cuándo conviene configurarlo", "procedimiento": "almacenes.definir-techo-del-proyecto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "qué tiene que estar asignado al proyecto para usar los presupuestos como techo", "procedimiento": "almacenes.definir-techo-del-proyecto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "cuántos decimales puedo configurar en cantidades, precios y parciales de las guías", "procedimiento": "almacenes.definir-techo-del-proyecto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q hay q marcar en la pestaña de usuarios pa q alguien sea responsable del almacen", "procedimiento": "almacenes.definir-techo-del-proyecto", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "cómo guardo la configuración del techo y los responsables al terminar", "procedimiento": "almacenes.definir-techo-del-proyecto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "cuando hago un pedido me salen todos los recursos del catálogo, qué me falta configurar", "procedimiento": "almacenes.definir-techo-del-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "Al efectuar un pedido no se muestran los recursos que necesito; ¿qué debo revisar del techo del proyecto?", "procedimiento": "almacenes.definir-techo-del-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "puse techo de presupuestos y al pedir no aparece nada, creo que el proyecto no tiene presupuestos asignados", "procedimiento": "almacenes.definir-techo-del-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "las cantidades de la guia salen sin decimales, donde se arregla", "procedimiento": "almacenes.definir-techo-del-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "con techo libre no me salen los recursos de mi pedido, dónde los registro", "procedimiento": "almacenes.definir-techo-del-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "xq al pedir me muestra el catalogo completo y no solo el presupuesto", "procedimiento": "almacenes.definir-techo-del-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "no me deja pedir materiales en un proyecto sin presupuesto, qué opción uso", "procedimiento": "almacenes.definir-techo-del-proyecto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "¿Cómo registro un egreso por bajas y mermas en el almacén?", "procedimiento": "almacenes.registrar-egreso-por-bajas-y-mermas", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "se humedeció el yeso y ya no sirve, cómo lo doy de baja en el sistema", "procedimiento": "almacenes.registrar-egreso-por-bajas-y-mermas", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "tengo que retirar del stock unos fierros oxidados, qué egreso hago", "procedimiento": "almacenes.registrar-egreso-por-bajas-y-mermas", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como saco del almacén lo que se rompió en el manipuleo", "procedimiento": "almacenes.registrar-egreso-por-bajas-y-mermas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el almacenero botó 10 bolsas de cemento por apelmazadas, cómo se registra esa pérdida", "procedimiento": "almacenes.registrar-egreso-por-bajas-y-mermas", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "a qué partida de control asigno un egreso por bajas y mermas", "procedimiento": "almacenes.registrar-egreso-por-bajas-y-mermas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cómo cargo al proyecto el costo de unos materiales deteriorados", "procedimiento": "almacenes.registrar-egreso-por-bajas-y-mermas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo doi de baja un material malogrado", "procedimiento": "almacenes.registrar-egreso-por-bajas-y-mermas", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "perdida de material x humedad, q egreso uso", "procedimiento": "almacenes.registrar-egreso-por-bajas-y-mermas", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "egreso bajas mermas", "procedimiento": "almacenes.registrar-egreso-por-bajas-y-mermas", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "dar de baja material", "procedimiento": "almacenes.registrar-egreso-por-bajas-y-mermas", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "¿Cuál es el procedimiento para egresar recursos deteriorados del stock al precio promedio?", "procedimiento": "almacenes.registrar-egreso-por-bajas-y-mermas", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "pa descontar mermas del almacén qué tipo de egreso es", "procedimiento": "almacenes.registrar-egreso-por-bajas-y-mermas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "en el inventario faltan 5 m3 de arena por la lluvia, cómo lo regularizo como merma", "procedimiento": "almacenes.registrar-egreso-por-bajas-y-mermas", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Deseo registrar la baja de herramientas malogradas, ¿qué tipo de egreso corresponde?", "procedimiento": "almacenes.registrar-egreso-por-bajas-y-mermas", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "EBM cómo se hace", "procedimiento": "almacenes.registrar-egreso-por-bajas-y-mermas", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Dónde elijo el tipo de egreso Bajas y Mermas?", "procedimiento": "almacenes.registrar-egreso-por-bajas-y-mermas", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en qué escenario registro las mermas del almacén", "procedimiento": "almacenes.registrar-egreso-por-bajas-y-mermas", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "por donde entro para dar de baja recursos", "procedimiento": "almacenes.registrar-egreso-por-bajas-y-mermas", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "no encuentro el tipo de egreso de bajas y mermas en la lista", "procedimiento": "almacenes.registrar-egreso-por-bajas-y-mermas", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "dónde veo la partida NO CONTRIBUTORIO - BAJAS - MERMAS", "procedimiento": "almacenes.registrar-egreso-por-bajas-y-mermas", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Cuál es la ruta en Egresos para registrar la baja de un recurso?", "procedimiento": "almacenes.registrar-egreso-por-bajas-y-mermas", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "mermas donde se registra", "procedimiento": "almacenes.registrar-egreso-por-bajas-y-mermas", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "¿Qué partida de control debo asignar al recurso en un egreso por bajas y mermas?", "procedimiento": "almacenes.registrar-egreso-por-bajas-y-mermas", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "antes de hacer el egreso de bajas, qué tengo que hacer en el stock", "procedimiento": "almacenes.registrar-egreso-por-bajas-y-mermas", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "cómo se define el precio al que sale un recurso dado de baja", "procedimiento": "almacenes.registrar-egreso-por-bajas-y-mermas", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué datos van en la cabecera del documento de egreso por bajas y mermas?", "procedimiento": "almacenes.registrar-egreso-por-bajas-y-mermas", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "a kien se le carga el costo de las mermas", "procedimiento": "almacenes.registrar-egreso-por-bajas-y-mermas", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "dónde pongo el tipo de cambio en el egreso por bajas", "procedimiento": "almacenes.registrar-egreso-por-bajas-y-mermas", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "no me deja dar de baja un recurso porque no aparece en el stock", "procedimiento": "almacenes.registrar-egreso-por-bajas-y-mermas", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el precio de la baja sale distinto al de compra, por qué", "procedimiento": "almacenes.registrar-egreso-por-bajas-y-mermas", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no encuentro la partida de control pa las mermas en el egreso", "procedimiento": "almacenes.registrar-egreso-por-bajas-y-mermas", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "El recurso que deseo dar de baja no se puede elegir en el egreso; ¿qué debo verificar?", "procedimiento": "almacenes.registrar-egreso-por-bajas-y-mermas", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "di de baja unos materiales y el costo me salió raro, creo que no recosteé antes", "procedimiento": "almacenes.registrar-egreso-por-bajas-y-mermas", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "el costo de la merma no se cargó a ninguna partida, qué falta", "procedimiento": "almacenes.registrar-egreso-por-bajas-y-mermas", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no puedo egresar la baja xq no sale el recurso del stock", "procedimiento": "almacenes.registrar-egreso-por-bajas-y-mermas", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "¿Cómo devuelvo al proveedor los recursos que no cumplen las especificaciones técnicas?", "procedimiento": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el proveedor mandó fierro con otra medida, cómo lo devuelvo en el sistema", "procedimiento": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "cómo registro el egreso de lo que devuelvo a mi proveedor", "procedimiento": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cómo devuelvo recursos que ingresaron con orden de compra", "procedimiento": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "nos equivocamos en el pedido y ya ingresamos el material, cómo se lo regresamos al proveedor", "procedimiento": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "a qué precio sale lo que le devuelvo al proveedor", "procedimiento": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo devuelbo material al proveedor en almacenes", "procedimiento": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "kiero regresar cemento malo al proveedor, q egreso hago", "procedimiento": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "devolver a proveedor", "procedimiento": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "edoc almacén", "procedimiento": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "¿Cómo registro un Egreso por Devolución por orden de Compra?", "procedimiento": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "material que ingresó por compra y hay que devolverlo, qué tipo de egreso es", "procedimiento": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "llegó una guía de ingreso con pintura vencida, quiero devolverla al proveedor desde almacenes", "procedimiento": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Qué debo registrar en el cuerpo del documento al devolver recursos a un proveedor?", "procedimiento": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "cómo indico a qué proveedor le devuelvo los recursos", "procedimiento": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "pa devolverle al proveedor parte de lo que compré, cómo registro la cantidad", "procedimiento": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Dónde registro la devolución de recursos al proveedor?", "procedimiento": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en qué tipo de egreso está la devolución al proveedor", "procedimiento": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "por dónde entro para hacer un egreso por devolución por orden de compra", "procedimiento": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "no encuentro egreso x devolucion al proveedor", "procedimiento": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "devolver al proveedor ruta", "procedimiento": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "¿En qué escenario se elige el Egreso por Devolución al Proveedor?", "procedimiento": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "dónde está EDPR en almacenes", "procedimiento": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Cuándo debo usar el Egreso por Devolución al Proveedor y cuándo el de orden de compra?", "procedimiento": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "qué requisito hay para devolver un recurso al proveedor, tiene que haber entrado por compra?", "procedimiento": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "cómo sé qué tipo de egreso elegir si el ingreso fue con orden de compra", "procedimiento": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué precio toma el sistema en la devolución al proveedor?", "procedimiento": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "q tipo de egreso elijo si el material entro por ingreso x compra", "procedimiento": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "dónde registro el tipo de cambio al devolver al proveedor", "procedimiento": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "no me aparece el recurso para devolverlo con devolución por orden de compra", "procedimiento": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "No puedo devolver un recurso con el Egreso por Devolución por orden de Compra; ¿a qué se debe?", "procedimiento": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "el material entró con factura y quiero devolverlo con el egreso de orden de compra y no sale, cuál uso", "procedimiento": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "xq no sale el recurso en la devolucion al proveedor", "procedimiento": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "el proveedor no aparece cuando quiero hacer la devolución", "procedimiento": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "intento devolver un recurso que nunca registré con ingreso por compra y no me deja", "procedimiento": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "edoc no me muestra los recursos q ingresaron x compra", "procedimiento": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "¿Cómo registro un egreso por préstamo de recursos del almacén?", "procedimiento": "almacenes.registrar-egreso-por-prestamo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "vamos a prestar unas carretillas a otra obra de la empresa, cómo lo saco del almacén", "procedimiento": "almacenes.registrar-egreso-por-prestamo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "un subcontratista pide prestados unos andamios, cómo dejo constancia en el sistema", "procedimiento": "almacenes.registrar-egreso-por-prestamo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "cómo le paso cemento prestado a otro almacén de mi misma obra", "procedimiento": "almacenes.registrar-egreso-por-prestamo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cómo registro herramientas que le presté a un obrero", "procedimiento": "almacenes.registrar-egreso-por-prestamo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "quiero prestarle material a un proveedor, qué egreso uso", "procedimiento": "almacenes.registrar-egreso-por-prestamo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo registro un prestamo de materiales a otro proyecto", "procedimiento": "almacenes.registrar-egreso-por-prestamo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "presto herramientas a un empleado, q tipo de egreso es", "procedimiento": "almacenes.registrar-egreso-por-prestamo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "egreso prestamo almacen", "procedimiento": "almacenes.registrar-egreso-por-prestamo", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "prestar material", "procedimiento": "almacenes.registrar-egreso-por-prestamo", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "¿Cómo indico el destino del préstamo cuando presto recursos a un socio de negocio?", "procedimiento": "almacenes.registrar-egreso-por-prestamo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "cómo veo lo que le presté a otros proyectos", "procedimiento": "almacenes.registrar-egreso-por-prestamo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "la obra vecina necesita nuestro vibrador unos días, cómo lo registro para que nos lo devuelvan", "procedimiento": "almacenes.registrar-egreso-por-prestamo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Qué procedimiento sigo para egresar un recurso en calidad de préstamo, con obligación de devolverlo?", "procedimiento": "almacenes.registrar-egreso-por-prestamo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "EP en almacenes cómo se llena", "procedimiento": "almacenes.registrar-egreso-por-prestamo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "después de hacer el egreso por préstamo, dónde consulto lo que presté", "procedimiento": "almacenes.registrar-egreso-por-prestamo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Dónde se registra el Egreso por Préstamo?", "procedimiento": "almacenes.registrar-egreso-por-prestamo", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en qué parte de almacenes está el egreso por préstamo", "procedimiento": "almacenes.registrar-egreso-por-prestamo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "por dónde veo los recursos que presté, en préstamos", "procedimiento": "almacenes.registrar-egreso-por-prestamo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "no encuentro lo q preste en el escenario de prestamos", "procedimiento": "almacenes.registrar-egreso-por-prestamo", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "dónde está lo que presté", "procedimiento": "almacenes.registrar-egreso-por-prestamo", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "¿En qué grupo de informes está el escenario Préstamos?", "procedimiento": "almacenes.registrar-egreso-por-prestamo", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "cómo llego a la opción lo que presté", "procedimiento": "almacenes.registrar-egreso-por-prestamo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Qué requisito debo cumplir antes de hacer un egreso por préstamo?", "procedimiento": "almacenes.registrar-egreso-por-prestamo", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "tengo que recostear antes de prestar un recurso", "procedimiento": "almacenes.registrar-egreso-por-prestamo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "a quiénes puedo prestarles: otro almacén, otro proyecto o un socio de negocio", "procedimiento": "almacenes.registrar-egreso-por-prestamo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "cómo elijo el destino del préstamo en la cabecera", "procedimiento": "almacenes.registrar-egreso-por-prestamo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q datos van en la cabecera del egreso x prestamo", "procedimiento": "almacenes.registrar-egreso-por-prestamo", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "¿Cómo registro el tipo de cambio en un egreso por préstamo?", "procedimiento": "almacenes.registrar-egreso-por-prestamo", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "no puedo egresar por préstamo la cantidad que quiero prestar", "procedimiento": "almacenes.registrar-egreso-por-prestamo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "El sistema no me permite prestar la cantidad que necesito; ¿qué debo revisar?", "procedimiento": "almacenes.registrar-egreso-por-prestamo", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "quiero prestar 50 bolsas de cemento y el almacén solo tiene 30 en stock, no me deja", "procedimiento": "almacenes.registrar-egreso-por-prestamo", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no me deja hacer el egreso x prestamo, dice q no hay stock", "procedimiento": "almacenes.registrar-egreso-por-prestamo", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "no me aparece el recurso para prestarlo en el egreso", "procedimiento": "almacenes.registrar-egreso-por-prestamo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "en préstamos no veo lo que presté a otro proyecto", "procedimiento": "almacenes.registrar-egreso-por-prestamo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "lo q preste no sale en prestamos, xq", "procedimiento": "almacenes.registrar-egreso-por-prestamo", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "¿Cómo registro la venta de recursos del almacén a otro proyecto de la empresa?", "procedimiento": "almacenes.registrar-egreso-por-venta-por-transferencia", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "quiero venderle fierro a otra obra nuestra, cómo lo registro", "procedimiento": "almacenes.registrar-egreso-por-venta-por-transferencia", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cómo se hace un EVT en almacenes", "procedimiento": "almacenes.registrar-egreso-por-venta-por-transferencia", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "la obra del frente necesita nuestro cemento y se lo vamos a vender, qué hago en s10", "procedimiento": "almacenes.registrar-egreso-por-venta-por-transferencia", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "qué es el EVT y cómo se llena", "procedimiento": "almacenes.registrar-egreso-por-venta-por-transferencia", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cómo hago el pedido para vender a otro almacén", "procedimiento": "almacenes.registrar-egreso-por-venta-por-transferencia", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se registra el Egreso por Venta por Pedido en el proyecto origen?", "procedimiento": "almacenes.registrar-egreso-por-venta-por-transferencia", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "otra obra de la empresa nos vendió alambre, cómo hago el ingreso en mi almacén", "procedimiento": "almacenes.registrar-egreso-por-venta-por-transferencia", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo efectúa el proyecto destino el Ingreso por Compra de recursos que le vendió otro proyecto?", "procedimiento": "almacenes.registrar-egreso-por-venta-por-transferencia", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "komo vendo materiales a otro proyecto desde almacenes", "procedimiento": "almacenes.registrar-egreso-por-venta-por-transferencia", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "kiero vender cemento a otra obra, q pedido hago", "procedimiento": "almacenes.registrar-egreso-por-venta-por-transferencia", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "egreso venta transferencia", "procedimiento": "almacenes.registrar-egreso-por-venta-por-transferencia", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "vender a otra obra", "procedimiento": "almacenes.registrar-egreso-por-venta-por-transferencia", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "después de aprobar el pedido de venta qué sigue en el proyecto origen", "procedimiento": "almacenes.registrar-egreso-por-venta-por-transferencia", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cómo elijo el proyecto y almacén destino en un pedido de venta", "procedimiento": "almacenes.registrar-egreso-por-venta-por-transferencia", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Qué pasos debe seguir el proyecto que compra los recursos para ingresarlos en su almacén?", "procedimiento": "almacenes.registrar-egreso-por-venta-por-transferencia", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "¿Dónde encuentro el Egreso por Venta por Transferencia?", "procedimiento": "almacenes.registrar-egreso-por-venta-por-transferencia", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en qué escenario se hace el egreso por venta por pedido", "procedimiento": "almacenes.registrar-egreso-por-venta-por-transferencia", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dónde está la opción adicionar desde venta de otro proyecto", "procedimiento": "almacenes.registrar-egreso-por-venta-por-transferencia", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "no encuentro lo de egreso x venta x transferencia", "procedimiento": "almacenes.registrar-egreso-por-venta-por-transferencia", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "EVT dónde", "procedimiento": "almacenes.registrar-egreso-por-venta-por-transferencia", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "¿En qué parte del pedido se marca la opción Venta?", "procedimiento": "almacenes.registrar-egreso-por-venta-por-transferencia", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "cómo llego a donde se ingresa lo que me vendió otra obra", "procedimiento": "almacenes.registrar-egreso-por-venta-por-transferencia", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Qué debo habilitar en el almacén para poder hacer egresos por venta?", "procedimiento": "almacenes.registrar-egreso-por-venta-por-transferencia", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "dónde marco que el almacén pueda egresar por venta, en los tipos de recurso", "procedimiento": "almacenes.registrar-egreso-por-venta-por-transferencia", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "qué opciones marco en el pedido: a almacén, para otro almacén y venta", "procedimiento": "almacenes.registrar-egreso-por-venta-por-transferencia", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Quién debe aprobar el pedido antes del egreso por venta?", "procedimiento": "almacenes.registrar-egreso-por-venta-por-transferencia", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "q tengo q marcar en el pedido pa que sea una venta a otro proyecto", "procedimiento": "almacenes.registrar-egreso-por-venta-por-transferencia", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "cómo elijo en el ingreso por compra que viene de una venta de otro proyecto", "procedimiento": "almacenes.registrar-egreso-por-venta-por-transferencia", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "no puedo hacer egresos por venta en el almacén", "procedimiento": "almacenes.registrar-egreso-por-venta-por-transferencia", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "Los egresos por venta aparecen inhabilitados en mi almacén; ¿a qué se debe?", "procedimiento": "almacenes.registrar-egreso-por-venta-por-transferencia", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "el egreso x venta sale bloqueado, q opcion falta marcar", "procedimiento": "almacenes.registrar-egreso-por-venta-por-transferencia", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "mandé el pedido de venta pero el egreso por venta por pedido no me deja, creo que falta la aprobación", "procedimiento": "almacenes.registrar-egreso-por-venta-por-transferencia", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "el otro proyecto no puede ingresar lo que le vendí, qué le falta", "procedimiento": "almacenes.registrar-egreso-por-venta-por-transferencia", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me sale la opción de adicionar desde venta de otro proyecto en el ingreso", "procedimiento": "almacenes.registrar-egreso-por-venta-por-transferencia", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no avanza el egreso x venta xq el pedido no esta aprobado", "procedimiento": "almacenes.registrar-egreso-por-venta-por-transferencia", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "¿Cómo abro el periodo contable en el módulo de Almacenes?", "procedimiento": "almacenes.registrar-periodo-contable", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "cómo genero los periodos del año nuevo en almacenes", "procedimiento": "almacenes.registrar-periodo-contable", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cómo creo los periodos de un año más en almacenes", "procedimiento": "almacenes.registrar-periodo-contable", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "estamos en octubre y no me deja registrar nada, cómo dejo abierto el mes en almacenes", "procedimiento": "almacenes.registrar-periodo-contable", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "cómo cambio el estado de un periodo a abierto", "procedimiento": "almacenes.registrar-periodo-contable", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cómo borro un periodo que registré sin querer", "procedimiento": "almacenes.registrar-periodo-contable", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo abro el periodo contable en almacenes", "procedimiento": "almacenes.registrar-periodo-contable", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "kiero agregar el 2027 a los periodos, como se hace", "procedimiento": "almacenes.registrar-periodo-contable", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "periodo contable almacenes mes", "procedimiento": "almacenes.registrar-periodo-contable", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "abrir periodo almacenes", "procedimiento": "almacenes.registrar-periodo-contable", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "¿Cómo modifico el nombre o la visibilidad de un periodo contable?", "procedimiento": "almacenes.registrar-periodo-contable", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "empezó un año nuevo y el almacenero no puede ingresar guías, hay que crear los periodos?", "procedimiento": "almacenes.registrar-periodo-contable", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "cómo hago visible o escondo un periodo", "procedimiento": "almacenes.registrar-periodo-contable", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo registro los periodos de un nuevo año y dejo abierto el mes de trabajo?", "procedimiento": "almacenes.registrar-periodo-contable", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "ingreso como sa y no sé dónde ubico el mes donde voy a registrar", "procedimiento": "almacenes.registrar-periodo-contable", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cómo dejo en estado abierto el mes de noviembre en almacenes", "procedimiento": "almacenes.registrar-periodo-contable", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Dónde se encuentra el escenario Periodo Contable en Almacenes?", "procedimiento": "almacenes.registrar-periodo-contable", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en qué parte del módulo veo periodos contables por empresa", "procedimiento": "almacenes.registrar-periodo-contable", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "por dónde entro a abrir el mes en almacenes", "procedimiento": "almacenes.registrar-periodo-contable", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "no encuentro periodo contable en almacenes", "procedimiento": "almacenes.registrar-periodo-contable", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "periodos contables ruta", "procedimiento": "almacenes.registrar-periodo-contable", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "dónde se cambia el estado de un periodo en almacenes", "procedimiento": "almacenes.registrar-periodo-contable", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Con qué usuario debo ingresar para acceder a Periodo Contable?", "procedimiento": "almacenes.registrar-periodo-contable", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "¿Qué estado debe tener el mes en el que voy a registrar información?", "procedimiento": "almacenes.registrar-periodo-contable", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "cómo configuro un periodo nuevo para el siguiente año", "procedimiento": "almacenes.registrar-periodo-contable", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "dónde pongo que el periodo esté abierto o cerrado", "procedimiento": "almacenes.registrar-periodo-contable", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "qué puedo modificar de un periodo: nombre, estado, visible", "procedimiento": "almacenes.registrar-periodo-contable", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "con q usuario entro pa registrar periodos, con sa?", "procedimiento": "almacenes.registrar-periodo-contable", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "¿En qué ventana se listan los meses de cada periodo por empresa?", "procedimiento": "almacenes.registrar-periodo-contable", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "no puedo registrar información en un mes, qué pasa", "procedimiento": "almacenes.registrar-periodo-contable", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "El sistema no me permite ingresar movimientos en el mes actual; ¿qué debo revisar del periodo?", "procedimiento": "almacenes.registrar-periodo-contable", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "el almacenero dice que no deja grabar el ingreso de hoy, creo que el periodo está cerrado", "procedimiento": "almacenes.registrar-periodo-contable", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no me deja eliminar un periodo, xq", "procedimiento": "almacenes.registrar-periodo-contable", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "no puedo borrar un periodo contable que registré de más", "procedimiento": "almacenes.registrar-periodo-contable", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el mes esta cerrado y no puedo grabar nada en almacenes", "procedimiento": "almacenes.registrar-periodo-contable", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "me sale el mes bloqueado al querer registrar un ingreso, dónde lo abro", "procedimiento": "almacenes.registrar-periodo-contable", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "¿Cómo registro la ubicación física de los materiales dentro del almacén?", "procedimiento": "almacenes.registrar-ubicacion-fisica", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "cómo asigno un estante a un recurso en s10", "procedimiento": "almacenes.registrar-ubicacion-fisica", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "dónde creo los sectores y racks del almacén en el sistema", "procedimiento": "almacenes.registrar-ubicacion-fisica", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el almacenero no encuentra el cemento en el galpón, quiero ponerle una ubicación a cada material", "procedimiento": "almacenes.registrar-ubicacion-fisica", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "cómo pongo en qué gaveta está cada herramienta", "procedimiento": "almacenes.registrar-ubicacion-fisica", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo asigno la ubicación física a un recurso desde el escenario de Stock?", "procedimiento": "almacenes.registrar-ubicacion-fisica", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "komo registro en q estante esta el fierro", "procedimiento": "almacenes.registrar-ubicacion-fisica", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "quiero ordenar el almacen x pasillos y estantes, como se hace en s10", "procedimiento": "almacenes.registrar-ubicacion-fisica", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "ubicacion fisica recurso", "procedimiento": "almacenes.registrar-ubicacion-fisica", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "estantes y pasillos", "procedimiento": "almacenes.registrar-ubicacion-fisica", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "cómo hago el croquis del almacén en el sistema", "procedimiento": "almacenes.registrar-ubicacion-fisica", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo registro los distintos niveles de la ubicación física de un almacén?", "procedimiento": "almacenes.registrar-ubicacion-fisica", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "tenemos dos almacenes y cada uno con sus racks, cómo registro las ubicaciones de cada uno", "procedimiento": "almacenes.registrar-ubicacion-fisica", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "cómo elijo del catálogo la ubicación de un recurso", "procedimiento": "almacenes.registrar-ubicacion-fisica", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "pa que cada material tenga su lugar en el almacén qué hago", "procedimiento": "almacenes.registrar-ubicacion-fisica", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cómo adiciono la ubicación a un recurso en stock con clic derecho", "procedimiento": "almacenes.registrar-ubicacion-fisica", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Dónde queda el escenario Ubicación física?", "procedimiento": "almacenes.registrar-ubicacion-fisica", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en stock dónde está la opción ubicación", "procedimiento": "almacenes.registrar-ubicacion-fisica", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "por dónde entro a registrar las ubicaciones del almacén", "procedimiento": "almacenes.registrar-ubicacion-fisica", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "no encuentro ubicacion fisica en almacenes", "procedimiento": "almacenes.registrar-ubicacion-fisica", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "ubicacion fisica donde", "procedimiento": "almacenes.registrar-ubicacion-fisica", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "¿En qué escenario veo la ventana Stock - Ubicación Física?", "procedimiento": "almacenes.registrar-ubicacion-fisica", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en qué menú se verifica la estructura de la ubicación física", "procedimiento": "almacenes.registrar-ubicacion-fisica", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿La ubicación física se registra por almacén o para todo el proyecto?", "procedimiento": "almacenes.registrar-ubicacion-fisica", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "cómo configuro los niveles de ubicación tomando de ejemplo el croquis", "procedimiento": "almacenes.registrar-ubicacion-fisica", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "cómo verifico la estructura de ubicaciones antes de asignarlas", "procedimiento": "almacenes.registrar-ubicacion-fisica", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "las ubicaciones son x almacen o son generales", "procedimiento": "almacenes.registrar-ubicacion-fisica", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "qué debo tener registrado en el catálogo antes de asignarle ubicación a un recurso", "procedimiento": "almacenes.registrar-ubicacion-fisica", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Cómo se configuran los niveles de ubicación en el catálogo?", "procedimiento": "almacenes.registrar-ubicacion-fisica", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "al asignar ubicación al recurso no me sale ninguna opción para elegir", "procedimiento": "almacenes.registrar-ubicacion-fisica", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "No existen ubicaciones físicas registradas para asignar a los recursos; ¿qué hago?", "procedimiento": "almacenes.registrar-ubicacion-fisica", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "quiero ubicar el cemento en un estante pero el catálogo de ubicaciones está vacío", "procedimiento": "almacenes.registrar-ubicacion-fisica", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "el catalogo de ubicacion sale vacio, q hago", "procedimiento": "almacenes.registrar-ubicacion-fisica", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "al dar adicionar en stock ubicación física no tengo nada que elegir", "procedimiento": "almacenes.registrar-ubicacion-fisica", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no puedo asignar ubicacion a un recurso xq no hay registradas", "procedimiento": "almacenes.registrar-ubicacion-fisica", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "en el otro almacén sí hay ubicaciones pero en este no me sale ninguna", "procedimiento": "almacenes.registrar-ubicacion-fisica", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}

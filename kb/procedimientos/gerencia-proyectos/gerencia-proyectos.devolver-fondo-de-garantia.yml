@@ -1,0 +1,77 @@
+id: gerencia-proyectos.devolver-fondo-de-garantia
+version: 1
+modulo: gerencia-proyectos
+titulo: "Registrar la devolución del fondo de garantía de un subcontrato"
+objetivo: "Devolver al subcontratista, en partes o totalmente, el fondo de garantía retenido; la orden envía la devolución a Documentos por pagar."
+nivel: intermedio
+preguntas:
+  - "cómo devuelvo el fondo de garantía a un subcontratista"
+  - "dónde se registra la devolución del fondo de garantía"
+  - "como devuelvo la retencion del subcontrato"
+  - "quiero devolver parte del fondo de garantia, como lo hago"
+  - "devolucion de fondo de garantia en gerencia de proyectos s10"
+  - "como hago que la devolucion de retenciones llegue a documentos por pagar"
+  - "como registro un pago de tipo dev. retenciones"
+aliases:
+  - "devolución del fondo de garantía"
+  - "devolver fondo de garantía"
+  - "devolución de retenciones"
+  - "dev. retenciones"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Documentos por pagar"]
+  objetos: ["fondo de garantía", "subcontrato", "devolución", "Dev. Retenciones"]
+prerrequisitos:
+  - texto: "La retención del fondo de garantía se realiza sólo cuando ingresa un porcentaje al momento de registrar el subcontrato."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s164]
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.devolver-fondo-de-garantia#1"
+    accion: "En el subcontrato, elija la pestaña de autorización de pago."
+    fuente: [img-2232ef3bc737-0000, web-https-documentacion-s10peru-com-manual-d-s164]
+    pagina: null
+    fotos:
+      - id: "8140274ea3ce"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/2232ef3bc737.png"
+        pagina: null
+        ocr: "Autorizacién de Pago Elija esta pestafia"
+  - n: 2
+    id: "gerencia-proyectos.devolver-fondo-de-garantia#2"
+    accion: "Haga clic derecho en la grilla y luego elija **Adicionar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s164, img-da92cd00a29c-0000]
+    pagina: null
+    fotos:
+      - id: "de90d709b6fd"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/da92cd00a29c.png"
+        pagina: null
+        ocr: "(rss\nNimern Tipo Pago IN\" Valorizacién Fecha | Otorgado —Importe Neto Sada\nClic derecho | Adelanto 2104/2010 7,813.90 6,566.30 7,813.90 |\nWw  UUWUZ” Pago @ Cuenta 21m42010 11,900.00 10,000.00 11,900.00)\n[>| TTT 1205/2010 184.45 155.00 184.45\n| C) Adicionar\nAprobar autorizacién de pago/cobranza"
+  - n: 3
+    id: "gerencia-proyectos.devolver-fondo-de-garantia#3"
+    accion: "Con el tipo de pago **Dev. Retenciones**, ingrese el monto de la devolución."
+    fuente: [img-80d343f3cb3e-0000, web-https-documentacion-s10peru-com-manual-d-s164]
+    pagina: null
+    fotos:
+      - id: "927e4d534e31"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/80d343f3cb3e.png"
+        pagina: null
+        ocr: "f aw\n=)\nCédigo Tipo Pago [Dev. Retenciones =] wpago 0001\nproyecto _ [5c MDE 0, PARA COLOCACION DE ACERO CORRUGADO\nSubcontretista [02100125 Florez, Antonio ~-| 64)\nObservacién [|\nFecha. 1205/2010 + =\na Ingrese el monto de la devolucién\nIrpuesto\nRetenido ___Devueto aldo Base impfrible _Impuesto Pago a cuenta\nCreado Por\nAprobado Por\nAdicionar Cancelar"
+  - n: 4
+    id: "gerencia-proyectos.devolver-fondo-de-garantia#4"
+    accion: "Grabe la orden con **Adicionar**."
+    resultado: "Esta orden envía a Documentos por pagar la devolución del fondo de garantía."
+    fuente: [img-80d343f3cb3e-0000, web-https-documentacion-s10peru-com-manual-d-s164]
+    pagina: null
+verificacion:
+  - texto: "La devolución del fondo de garantía llega a Documentos por pagar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s164]
+errores_frecuentes:
+  - sintoma: "El subcontrato no tiene fondo de garantía que devolver."
+    solucion: "La retención del fondo de garantía se realiza sólo cuando se ingresa un porcentaje al registrar el subcontrato."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s164]
+relacionados: [gerencia-proyectos.registrar-subcontrato, gerencia-proyectos.aprobar-valorizacion-del-subcontrato]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s164, manual: "Manual de Gerencia de Proyectos", seccion: "4.6.12 Devolución del Fondo de garantía", pagina: null}
+  - {id: img-2232ef3bc737-0000, manual: "Manual de Gerencia de Proyectos", seccion: "2232ef3bc737.png", pagina: null}
+  - {id: img-da92cd00a29c-0000, manual: "Manual de Gerencia de Proyectos", seccion: "da92cd00a29c.png", pagina: null}
+  - {id: img-80d343f3cb3e-0000, manual: "Manual de Gerencia de Proyectos", seccion: "80d343f3cb3e.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

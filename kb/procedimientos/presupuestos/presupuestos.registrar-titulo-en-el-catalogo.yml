@@ -1,0 +1,65 @@
+id: presupuestos.registrar-titulo-en-el-catalogo
+version: 1
+modulo: presupuestos
+titulo: "Registrar un título nuevo en el catálogo de títulos"
+objetivo: "Registrar en el catálogo de títulos un título que no existe, por ejemplo «MUROS Y TABIQUES», ya sea con un nuevo registro o duplicando un título existente."
+nivel: basico
+preguntas:
+  - "como creo un titulo nuevo en el catalogo de titulos"
+  - "no encuentro el titulo que necesito, como lo registro"
+  - "como agrego el titulo muros y tabiques al catalogo"
+  - "registrar titulo nuevo en s10 presupuestos"
+  - "como duplico un titulo para crear otro"
+  - "donde esta el catalogo de titulos"
+  - "como ago un titulo que no existe en el catalago"
+aliases:
+  - "registrar título"
+  - "nuevo título en el catálogo"
+  - "catálogo de títulos"
+  - "crear título"
+entidades:
+  modulo: "Presupuestos"
+  pantallas: ["Catálogo de Títulos", "Hoja del Presupuesto"]
+  objetos: ["título", "catálogo de títulos"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "presupuestos.registrar-titulo-en-el-catalogo#1"
+    accion: "Ingrese al catálogo de títulos por el menú **Catálogos** o haciendo clic derecho en la hoja del presupuesto y eligiendo **Adicionar Título**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s079, "7c40a9548710-0088"]
+    pagina: null
+  - n: 2
+    id: "presupuestos.registrar-titulo-en-el-catalogo#2"
+    accion: "En el **Catálogo de Títulos**, ubique el grupo de títulos, haga clic derecho y elija **Nuevo SubItem**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s079, img-e9116185bd41-0000, "7c40a9548710-0089"]
+    pagina: null
+    fotos:
+      - id: "8d50e3034380"
+        ruta_o_url: "imagenes/manual-de-presupuestos/e9116185bd41.png"
+        pagina: null
+        ocr: "*; Gai@loge d6 Tinos: 0150 TITULGG PARA SUBPRESUPUESTOS ara :\nOpciones 2?\nDo x BT Clic derecho be wom HAS ASH\noS Titles ite =\nEARTITULOS PARA SUBPRESUPUE: AIRARMIERIN -\n| APARATOS ¥ ACCESORIOS SANITARIOS [|_|\n) Nuevo Subltem |__|\n|"
+  - n: 3
+    id: "presupuestos.registrar-titulo-en-el-catalogo#3"
+    accion: "En la ventana **Titulo**, ingrese el nombre del título en **Descripción** (por ejemplo, MUROS Y TABIQUES) y elija **Adicionar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s079, img-f680eda4c70c-0000, "7c40a9548710-0089"]
+    pagina: null
+    fotos:
+      - id: "6b5e561e9758"
+        ruta_o_url: "imagenes/manual-de-presupuestos/f680eda4c70c.png"
+        pagina: null
+        ocr: "Titulo\nIngrese el nombre del titulo\nCédigo 0190 |o66\nDescrigcién  MUROS Y TABIGUES"
+  - n: 4
+    id: "presupuestos.registrar-titulo-en-el-catalogo#4"
+    accion: "Otra forma: haga clic derecho sobre un título existente, elija **Duplicar** y cambie el título mostrado por el que desea registrar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s079]
+    pagina: null
+verificacion: []
+errores_frecuentes: []
+relacionados: [presupuestos.registrar-titulos-y-partidas, presupuestos.registrar-partida-en-el-catalogo]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s079, manual: "Manual de Presupuestos", seccion: "4.5.1 Registro de nuevos títulos en el catálogo", pagina: null}
+  - {id: "7c40a9548710-0088", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 55}
+  - {id: img-e9116185bd41-0000, manual: "Manual de Presupuestos", seccion: "e9116185bd41.png", pagina: null}
+  - {id: "7c40a9548710-0089", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 56}
+  - {id: img-f680eda4c70c-0000, manual: "Manual de Presupuestos", seccion: "f680eda4c70c.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

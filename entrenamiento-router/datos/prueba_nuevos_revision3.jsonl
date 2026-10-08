@@ -1,0 +1,44 @@
+{"id": "nuevo-131", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo anula una orden de compra."}
+{"id": "nuevo-132", "clase_nueva": "_ninguno", "motivo": "nominas.registrar-logotipo es el logo de los reportes de Nóminas vía socio de negocio, no el de los comprobantes electrónicos."}
+{"id": "nuevo-133", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo calcula la liquidación de beneficios sociales."}
+{"id": "nuevo-134", "clase_nueva": "_ninguno", "motivo": "almacenes.registrar-egreso-por-prestamo presta recursos del almacén, no dinero a un trabajador; ningún nuevo registra préstamos de personal."}
+{"id": "nuevo-135", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo trata cotizaciones de venta a clientes."}
+{"id": "nuevo-136", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo carga el tipo de cambio diario."}
+{"id": "nuevo-137", "clase_nueva": "gerencia-proyectos.planificar-con-ms-project", "motivo": "gerencia-proyectos.planificar-con-ms-project exporta las actividades del Cronograma por Periodos con «Exportar a Microsoft Project»."}
+{"id": "nuevo-138", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo emite comprobantes de retención; facturacion.actualizar-catalogo-de-detracciones-y-percepciones solo actualiza porcentajes."}
+{"id": "nuevo-139", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo trata transferencias entre cuentas bancarias propias."}
+{"id": "nuevo-140", "clase_nueva": "almacenes.registrar-egreso-por-devolucion-al-proveedor", "motivo": "almacenes.registrar-egreso-por-devolucion-al-proveedor registra la salida de los recursos que se devuelven al proveedor por no cumplir la calidad (Egreso por Devolución al Proveedor)."}
+{"id": "nuevo-141", "clase_nueva": "_ninguno", "motivo": "almacenes.definir-techo-del-proyecto configura techo y responsables, no crea almacenes."}
+{"id": "nuevo-142", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo configura el servidor SMTP."}
+{"id": "nuevo-143", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo evalúa ni califica proveedores."}
+{"id": "nuevo-144", "clase_nueva": "_ninguno", "motivo": "almacenes.definir-techo-del-proyecto solo fija la serie de la Guía de Remisión; ninguno emite la GRE."}
+{"id": "nuevo-145", "clase_nueva": "_ninguno", "motivo": "almacenes.consultar-recursos-por-pedido muestra el seguimiento del pedido, no la auditoría de qué usuario lo modificó."}
+{"id": "nuevo-146", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo desinstala SQL Server."}
+{"id": "nuevo-147", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo trata letras por cobrar ni su descuento."}
+{"id": "nuevo-148", "clase_nueva": "_ninguno", "motivo": "gerencia-proyectos.registrar-equipo-como-activo registra equipos tipo activo en el catálogo de recursos, no un módulo de activos fijos."}
+{"id": "nuevo-150", "clase_nueva": "gerencia-proyectos.registrar-partes-diarios-de-equipo", "motivo": "gerencia-proyectos.registrar-partes-diarios-de-equipo registra el trabajo diario de cada equipo (propio o de terceros) en el escenario Partes de Equipo."}
+{"id": "nuevo-151", "clase_nueva": "_ninguno", "motivo": "nominas.registrar-horario-diario solo menciona bloques de tardanza si hay reloj marcador; no conecta un biométrico."}
+{"id": "nuevo-152", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo cambia el idioma."}
+{"id": "nuevo-153", "clase_nueva": "_ninguno", "motivo": "Pregunta de concepto; sigue sin procedimiento."}
+{"id": "nuevo-154", "clase_nueva": "_ninguno", "motivo": "Pregunta de concepto sobre el promedio ponderado; ningún nuevo la explica como tarea."}
+{"id": "nuevo-155", "clase_nueva": "_ninguno", "motivo": "Pregunta de concepto; facturacion.actualizar-catalogo-de-detracciones-y-percepciones no explica qué es la detracción."}
+{"id": "nuevo-156", "clase_nueva": "_ninguno", "motivo": "Pregunta de concepto; sigue sin procedimiento."}
+{"id": "nuevo-157", "clase_nueva": "_ninguno", "motivo": "Pregunta de concepto; ningún nuevo trata la curva S."}
+{"id": "nuevo-158", "clase_nueva": "_ninguno", "motivo": "Pregunta comercial, fuera de los procedimientos."}
+{"id": "nuevo-159", "clase_nueva": "_ninguno", "motivo": "Pregunta de requisitos de plataforma; ningún nuevo la cubre."}
+{"id": "nuevo-160", "clase_nueva": "_ninguno", "motivo": "Pregunta de concepto; sigue sin procedimiento."}
+{"id": "nuevo2-085", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo elimina saldos entre empresas en el consolidado."}
+{"id": "nuevo2-086", "clase_nueva": "_ninguno", "motivo": "gerencia-proyectos.registrar-incremento-de-obra trata presupuestos adicionales, no adendas de plazo y monto del contrato."}
+{"id": "nuevo2-087", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo asigna códigos de unidad de medida SUNAT."}
+{"id": "nuevo2-088", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo modifica la plantilla del TXT de pagos electrónicos."}
+{"id": "nuevo2-089", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo renueva letras por pagar."}
+{"id": "nuevo2-090", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo reporta no conformidades de Calidad Móvil."}
+{"id": "nuevo2-091", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo genera el archivo de depósito de CTS."}
+{"id": "nuevo2-092", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo cambia el correo del Portal de Proveedores."}
+{"id": "nuevo2-093", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo restaura copias de seguridad."}
+{"id": "nuevo2-094", "clase_nueva": "_ninguno", "motivo": "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato registra la carta fianza del adelanto de un subcontrato, no la de fiel cumplimiento del contrato principal."}
+{"id": "nuevo2-095", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo programa mantenimiento preventivo por horómetro."}
+{"id": "nuevo2-096", "clase_nueva": "gerencia-proyectos.consultar-resultados-operativos", "motivo": "gerencia-proyectos.consultar-resultados-operativos compara programado, valorizado y real gastado a nivel de partidas de control."}
+{"id": "nuevo2-097", "clase_nueva": "gerencia-proyectos.registrar-incremento-de-obra", "motivo": "gerencia-proyectos.registrar-incremento-de-obra: el adicional que ordena el propietario se elabora como presupuesto y se adiciona a la rama venta para valorizarlo y cobrarlo."}
+{"id": "nuevo2-098", "clase_nueva": "_ninguno", "motivo": "gerencia-proyectos.distribuir-costos-multiproyecto reparte el costo de la nómina por donde trabajó el personal, no los gastos de oficina central por porcentajes."}
+{"id": "nuevo2-099", "clase_nueva": "_ninguno", "motivo": "almacenes.registrar-egreso-por-venta-por-transferencia vende a otro proyecto de la empresa, no factura a un tercero."}

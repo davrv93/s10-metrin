@@ -1,0 +1,140 @@
+id: nominas.registrar-horario-diario
+version: 1
+modulo: nominas
+titulo: "Registrar un horario diario"
+objetivo: "Registrar en el escenario de Horarios Diarios la cantidad de horas trabajadas en la jornada, las horas extras, los permisos no autorizados o faltas y los bonos incentivos; estos horarios formarán parte de los horarios cíclicos que se asignan a cada trabajador."
+nivel: avanzado
+preguntas:
+  - "como creo un horario diario en nominas"
+  - "donde configuro las horas extras al 60 y al 100"
+  - "como registro el horario de los obreros de lunes a viernes"
+  - "como pongo el bloque de jornada normal de 7:30 a 4 pm"
+  - "como configuro el permiso no autorizado en el horario"
+  - "donde registro el horario de los sabados"
+  - "que diferencia hay entre horario diario y horario ciclico"
+  - "como agrego bonos al horario diario"
+  - "orario diario con tardanzas y tolerancias por reloj marcador"
+aliases:
+  - "horario diario"
+  - "horarios diarios"
+  - "registrar horario"
+  - "bloques del horario"
+  - "configurar horas extras"
+entidades:
+  modulo: "Nóminas"
+  pantallas: ["Horarios Diarios", "Configuracion de Horario Diario"]
+  objetos: ["horario diario", "bloque", "concepto genérico", "turno", "horas extras"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "nominas.registrar-horario-diario#1"
+    accion: "Ingrese al escenario de **Horarios Diarios**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s035, img-f5a4f6d72bac-0000]
+    pagina: null
+    fotos:
+      - id: "dfc1836ce8f2"
+        ruta_o_url: "imagenes/manual-de-nominas/f5a4f6d72bac.png"
+        pagina: null
+        ocr: "sl\nHorarios Diarios"
+  - n: 2
+    id: "nominas.registrar-horario-diario#2"
+    accion: "Haga clic derecho sobre el listado de horarios y elija **Adicionar** para el registro de un nuevo horario."
+    fuente: [img-094c919782fc-0000, web-https-documentacion-s10peru-com-manual-d-s035]
+    pagina: null
+    fotos:
+      - id: "0f4cf42a6724"
+        ruta_o_url: "imagenes/manual-de-nominas/094c919782fc.png"
+        pagina: null
+        ocr: "HOEYv ARS BE eae\n\n00000001 Empleados Administracién Lun-Vie 8:45 Hrs. EMP_&DM\n\noo000002 | ~ yes Lun-Vie 8.5 hrs. a\n\npo0000003 || Clic derecho | yes Sab 5.5 hrs D Adicionar\n\nooooons Feriada i Moditicar\n\noooo000s Empleads Administracién Sébaco 3 Eliminar\n\n00000006 Empleads Administracién Domingo\n\noooooo07 Obreros Lun-Vie Leo Duplicar\nLhe contour"
+  - n: 3
+    id: "nominas.registrar-horario-diario#3"
+    accion: "El código se autogenera: ingrese la abreviatura y el nombre del horario diario."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s035, img-c2b9b2d1f312-0000]
+    pagina: null
+    fotos:
+      - id: "caf6d4a4e949"
+        ruta_o_url: "imagenes/manual-de-nominas/c2b9b2d1f312.png"
+        pagina: null
+        ocr: "7 xh\n@ Horario Diano\nCrees jooooo0g7 Abrevietura — fObritt <b)\nDeseripcion _fObreros Lun-Wie\nTurno jo01 MANANA, | eh\nBA Horatio por Defecto B Horatio Feriadio oy Horario Descanso\n@= Adicionar Cressy"
+  - n: 4
+    id: "nominas.registrar-horario-diario#4"
+    accion: "Use el botón para elegir el **Turno**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s035]
+    pagina: null
+  - n: 5
+    id: "nominas.registrar-horario-diario#5"
+    accion: "Indique a qué días corresponde el horario: días laborables, días no laborables, o sábados y domingos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s035]
+    pagina: null
+  - n: 6
+    id: "nominas.registrar-horario-diario#6"
+    accion: "Grabe el contenido de la ventana y ciérrela."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s035]
+    pagina: null
+  - n: 7
+    id: "nominas.registrar-horario-diario#7"
+    accion: "En la pestaña **Dentro de la Empresa**, registre los bloques de los conceptos genéricos del horario: el bloque de la jornada normal y los bloques de horas extras al 60% y al 100%."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s035, img-567ec66d9b00-0000]
+    pagina: null
+    fotos:
+      - id: "d43278d76632"
+        ruta_o_url: "imagenes/manual-de-nominas/459fa4b26177.png"
+        pagina: null
+        caption: "Llamada a: Registre los bloques de los conceptos genéricos del horario. Llamada a-1: Registre el bloque de horario que corresponde a la jornada normal. Llamada a-2: Registre el bloque de horario que corresponde a las horas extras al 60%. Llamada a-3: Registre el bloque de horario que corresponde a las horas extras al 100%."
+        ocr: "= ea\n‘Configurasion de Horario Diario: Obrerns | un-\\ © d © oes\nDerira & Empresa Fuera de : Empresa Coneicién Esnecial Inasistencia Asistencia\n\nSerene Edicion del Bloque [\"Dentro de la Empresa] de. Horario\nfs tease 34 thst 2 eee\nRacecetatarecertarecestntns, Hora Inicial wl) 070+ ‘Campos Obiigatorios (*)\n\n[fry soseseeao|\nSesame lanl\nScerserrecerserresstess|\n\n29g Concerto Genérica (*) [00001004 JPER…"
+  - n: 8
+    id: "nominas.registrar-horario-diario#8"
+    accion: "Para cada bloque, haga clic derecho y, en la edición del bloque, ingrese la **Hora Inicial**, la **Hora Final** y el **Concepto Genérico** (por ejemplo, TRABAJO o HORA EXTRA 60)."
+    fuente: [img-567ec66d9b00-0000, web-https-documentacion-s10peru-com-manual-d-s035]
+    pagina: null
+    fotos:
+      - id: "8e4fac97cf18"
+        ruta_o_url: "imagenes/manual-de-nominas/567ec66d9b00.png"
+        pagina: null
+        ocr: "§® Configuracion de Horario Diario Obrerns | un-Vie- c 7 =}\nDentro de la Empresa Fuera de la Empresa Condicién Especial Inasistencia Asistencia\nClic derecho || Edicion del Bloque [’Dentro de la Empresa’] de. Horario Diario\nInver)\n5 Hora Inicial @] 0730 Campos Obligatorios (*)\nClic derecho || Hora Final | 1600\nero 08:30 Horas de Trabajo C1] 7] Usar esta apcién solo cuando es el\n| tareo automatico\nC…"
+  - n: 9
+    id: "nominas.registrar-horario-diario#9"
+    accion: "En la pestaña **Fuera de la Empresa**, registre el bloque de concepto para los permisos no autorizados; estos serán cambiados con una papeleta."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s035, img-5faeb799daa3-0000]
+    pagina: null
+    fotos:
+      - id: "2f195d890aeb"
+        ruta_o_url: "imagenes/manual-de-nominas/5faeb799daa3.png"
+        pagina: null
+        ocr: "Configuracion de Horario Diario: Obreros Lun-Vie\nDentro de la empresa: | Trabajo de 07:30 a 16:00\nHora Extra6O de 16:00 a 18:00\nHora Extra100 de 18:00 a 17:28\nFuera de la empresa: | Permiso no autorizado de O?:30 a 16:00\nInasistencia dia de 07:30 a 16-00\nAsistid de 07:30 a 16:00"
+  - n: 10
+    id: "nominas.registrar-horario-diario#10"
+    accion: "Si utiliza reloj marcador, registre también los bloques de tardanzas y tolerancias."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s035]
+    pagina: null
+    fotos:
+      - id: "a1f3c382d5a4"
+        ruta_o_url: "imagenes/manual-de-nominas/222df356a1ed.png"
+        pagina: null
+        caption: "Llamada c: Disponible sólo si se utiliza reloj marcador. Utilice también para registran los bloques de tardanzas y tolerancias."
+        ocr: "=\nfi} Configurasion de Horario Diane: Obreros | un-Vie © @) ® ==\nDentro de la Empresa Fuera de la Empresa Condicion Especial Inasistencia Asistencia\nOr St peemeememnenrenn| 0 lps Oo premememneRTRRa| 0 Spree RRR ERE\nReseereursceretntcereees| eee Rernerucrorege es Beeceaneeeseceeseerecesean\n[sso STRMAID >] PERWISO NO AUTORIZADG Secesttaiesecnesansecenare [SSeS\nSeaecessneecassrececnreecea | Reseaetet…"
+  - n: 11
+    id: "nominas.registrar-horario-diario#11"
+    accion: "En la pestaña **Inasistencia**, registre un bloque del concepto genérico del día de inasistencia."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s035, img-567ec66d9b00-0000]
+    pagina: null
+  - n: 12
+    id: "nominas.registrar-horario-diario#12"
+    accion: "En la pestaña **Asistencia**, registre un bloque de conceptos genéricos que corresponde a bonos, incentivos o comisiones."
+    resultado: "Estos conceptos se muestran siempre y cuando el trabajador registre asistencia a su jornada laboral."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s035, img-567ec66d9b00-0000]
+    pagina: null
+verificacion: []
+errores_frecuentes:
+  - sintoma: "No encuentra cómo registrar las tardanzas y tolerancias en el horario diario."
+    solucion: "Ese bloque está disponible sólo si se utiliza reloj marcador."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s035]
+relacionados: [nominas.asignar-horario-a-los-trabajadores, nominas.registrar-clasificacion-de-papeletas]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s035, manual: "Manual de Nóminas", seccion: "4.8.3.1 Horarios Diarios", pagina: null}
+  - {id: img-f5a4f6d72bac-0000, manual: "Manual de Nóminas", seccion: "f5a4f6d72bac.png", pagina: null}
+  - {id: img-094c919782fc-0000, manual: "Manual de Nóminas", seccion: "094c919782fc.png", pagina: null}
+  - {id: img-c2b9b2d1f312-0000, manual: "Manual de Nóminas", seccion: "c2b9b2d1f312.png", pagina: null}
+  - {id: img-567ec66d9b00-0000, manual: "Manual de Nóminas", seccion: "567ec66d9b00.png", pagina: null}
+  - {id: img-5faeb799daa3-0000, manual: "Manual de Nóminas", seccion: "5faeb799daa3.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

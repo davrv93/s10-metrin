@@ -1,0 +1,105 @@
+id: nominas.registrar-logotipo
+version: 1
+modulo: nominas
+titulo: "Registrar un logotipo o una firma digital"
+objetivo: "Registrar en el Catálogo de Logotipos el logotipo que identifica a la empresa, o la firma digital, para asignarlo en el catálogo de socio de negocios y que se muestre en los reportes impresos."
+nivel: basico
+preguntas:
+  - "como pongo el logo de la empresa en las boletas"
+  - "donde se registra el logotipo en nominas"
+  - "como subo la firma digital al s10"
+  - "el logo no sale en el reporte, donde lo cargo"
+  - "como defino la estructura del catalogo de logotipos"
+  - "como cambio el logotipo de la constructora"
+  - "quiero agregar un logotipo nuevo"
+  - "logotipo y firma digitar para reportes de nominas"
+aliases:
+  - "logotipo"
+  - "registrar logotipo"
+  - "catálogo de logotipos"
+  - "firma digital"
+  - "logo de la empresa"
+entidades:
+  modulo: "Nóminas"
+  pantallas: ["Catálogo de Logotipos", "Catalogo de Logotipos y Firmas Digitales"]
+  objetos: ["logotipo", "firma digital", "socio de negocio", "reporte"]
+prerrequisitos:
+  - texto: "Para editar la estructura de registro, ingrese con el usuario que tiene asignado ADMINISTRADOR DEL MODULO."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s016]
+  - texto: "El arte del logotipo o la firma digital debe ser un archivo previamente preparado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s016]
+pasos:
+  - n: 1
+    id: "nominas.registrar-logotipo#1"
+    accion: "Desde el menú de catálogos, abra el **Catálogo de Logotipos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s016, img-fe9ddf55607a-0000]
+    pagina: null
+    fotos:
+      - id: "d8a258e6c32f"
+        ruta_o_url: "imagenes/manual-de-nominas/fe9ddf55607a.png"
+        pagina: null
+        ocr: "Archi[Elija #| Catdlogos | Herramientas 2\nLogotipos"
+  - n: 2
+    id: "nominas.registrar-logotipo#2"
+    accion: "Si debe editar la estructura de registro, haga clic derecho y elija **Definir estructura**."
+    fuente: [img-c46b2467a72e-0000, web-https-documentacion-s10peru-com-manual-d-s016]
+    pagina: null
+    fotos:
+      - id: "b591099c2ee0"
+        ruta_o_url: "imagenes/manual-de-nominas/c46b2467a72e.png"
+        pagina: null
+        ocr: "Catalogo de Logotipos y Firmas Digitales ] =\nDescripcién\n5 NuevoyLogotipa F2\nClic derecho \"G:. Definir estructura"
+  - n: 3
+    id: "nominas.registrar-logotipo#3"
+    accion: "Registre la estructura de los logotipos, por ejemplo los niveles **Empresa** y **Grupo**, y haga clic en **Cerrar**."
+    fuente: [img-1ddc3c242d74-0000, web-https-documentacion-s10peru-com-manual-d-s016]
+    pagina: null
+    fotos:
+      - id: "b04be8b322a8"
+        ruta_o_url: "imagenes/manual-de-nominas/1ddc3c242d74.png"
+        pagina: null
+        ocr: "Logotipos | x |\nLogotipos |\n|__| # [DesFripcion [Longitud | Color _ |\n|__| 1 Empresa 3, Color\n|__| 2 |Grupo 3. Color\n|__| 3 |Detatle 6| Color\nXOX XOXOXO\nLongitud acumulada maxima: 20\n~ Cerrar"
+  - n: 4
+    id: "nominas.registrar-logotipo#4"
+    accion: "Registre los 2 primeros niveles; luego haga clic derecho sobre el grupo para registrar el nuevo logotipo."
+    fuente: [img-7b3a073e89cc-0000, web-https-documentacion-s10peru-com-manual-d-s016]
+    pagina: null
+    fotos:
+      - id: "09fff338c2f4"
+        ruta_o_url: "imagenes/manual-de-nominas/7b3a073e89cc.png"
+        pagina: null
+        ocr: "Registre los 2 primero niveles,\nluego, clic derecho gitales _ oO x\nDescrppcién\n=F) Empreqa\n& Grn\n#3 (@ Firmh digital 5 Nuevo: Grupo F2"
+  - n: 5
+    id: "nominas.registrar-logotipo#5"
+    accion: "Ingrese el nombre del logotipo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s016, img-d3821ea82413-0000]
+    pagina: null
+    fotos:
+      - id: "ffa962696da4"
+        ruta_o_url: "imagenes/manual-de-nominas/d3821ea82413.png"
+        pagina: null
+        ocr: "ES Logotipo ? x\nCodigo 001001 Jooooo1\nUssecriipniiin [Constructora AB\nLogo\nCONSTRUCTORABG\nModificar Cancelar |"
+  - n: 6
+    id: "nominas.registrar-logotipo#6"
+    accion: "Use el botón para elegir la carpeta y el archivo que contiene el arte del logotipo; es el mismo procedimiento para el registro de la firma digital."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s016]
+    pagina: null
+  - n: 7
+    id: "nominas.registrar-logotipo#7"
+    accion: "En el catálogo de socio de negocios, asigne el logotipo."
+    resultado: "El logotipo se visualiza en los reportes."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s016]
+    pagina: null
+verificacion:
+  - texto: "El logotipo asignado en el catálogo de socio de negocios se visualiza en los reportes."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s016]
+errores_frecuentes: []
+relacionados: [nominas.registrar-trabajador-como-socio-de-negocio, nominas.imprimir-boletas-de-pago]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s016, manual: "Manual de Nóminas", seccion: "3.9 Catálogo de Logotipos", pagina: null}
+  - {id: img-fe9ddf55607a-0000, manual: "Manual de Nóminas", seccion: "fe9ddf55607a.png", pagina: null}
+  - {id: img-c46b2467a72e-0000, manual: "Manual de Nóminas", seccion: "c46b2467a72e.png", pagina: null}
+  - {id: img-1ddc3c242d74-0000, manual: "Manual de Nóminas", seccion: "1ddc3c242d74.png", pagina: null}
+  - {id: img-7b3a073e89cc-0000, manual: "Manual de Nóminas", seccion: "7b3a073e89cc.png", pagina: null}
+  - {id: img-d3821ea82413-0000, manual: "Manual de Nóminas", seccion: "d3821ea82413.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

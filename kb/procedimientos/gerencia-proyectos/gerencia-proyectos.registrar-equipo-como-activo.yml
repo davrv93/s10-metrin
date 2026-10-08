@@ -1,0 +1,134 @@
+id: gerencia-proyectos.registrar-equipo-como-activo
+version: 1
+modulo: gerencia-proyectos
+titulo: "Registrar un equipo como activo en el catálogo de recursos"
+objetivo: "Registrar en el catálogo de recursos los equipos tipo activo, propios o de terceros, que participan en la ejecución del proyecto, con su recurso genérico, su recurso específico y sus especificaciones."
+nivel: basico
+preguntas:
+  - "cómo registro un equipo como activo en el catálogo de recursos"
+  - "como creo un volquete en el catalogo de recursos para el proyecto"
+  - "donde registro los equipos alquilados de terceros"
+  - "cuantos digitos tiene el recurso especifico de un equipo"
+  - "como ingreso a especificaciones del equipo"
+  - "como registro la maquinaria propia en s10"
+  - "registrar activo camion volquete con placa"
+  - "como agrego un equipo nuevo al catalogo de recursos de gerencia de proyectos"
+aliases:
+  - "registrar equipo como activo"
+  - "equipo en el catálogo de recursos"
+  - "registrar maquinaria"
+  - "recurso tipo activo"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Catálogo de Recursos", "ESPECIFICACIONES DEL EQUIPO"]
+  objetos: ["recursos tipo activo", "recurso genérico", "recurso específico", "equipo", "proveedor"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.registrar-equipo-como-activo#1"
+    accion: "Acceda al **Catálogo de Recursos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s211]
+    pagina: null
+    fotos:
+      - id: "5b14e0565aa2"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/ef9274289a46.png"
+        pagina: null
+        caption: "Acceso al Catálogo de Recursos"
+        ocr: "Gubllagaas)"
+  - n: 2
+    id: "gerencia-proyectos.registrar-equipo-como-activo#2"
+    accion: "En el árbol del Catálogo de Recursos, elija los activos y haga clic derecho para registrar el recurso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s211]
+    pagina: null
+    fotos:
+      - id: "a7d6912988ba"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/22a74b93117d.png"
+        pagina: null
+        caption: "En el árbol del Catálogo de Recursos,"
+        ocr: "ies\n8 Catdlogo de Recursos : 100401 Camiones Sx\nOpciones 2?\nOSxXBriG AGS Ho o-o A271 BDHQ_ & Ga\nch @ REPUESTOS Ser LLic dereche Jy) = vet a8\nBF @ ECONOMATO |_| _céfige\n= Sp activos 0) GREE Comionescisternas |\n1 ® Equipos para Movimiento de Tierra |_ roam |aafa F2\n#1) @ Equipos para perforacién Bole\n= Equipos de transporte a ET Gr Modificar B\n5] Camiones X Eliminar Fa\nare se GF Duplicar F5\n| A] Equ…"
+  - n: 3
+    id: "gerencia-proyectos.registrar-equipo-como-activo#3"
+    accion: "Registre el recurso genérico, que tiene 10 dígitos (por ejemplo, CAMION VOLQUETE)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s211, img-1077a365283c-0000]
+    pagina: null
+    fotos:
+      - id: "8de2902a52e6"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/1077a365283c.png"
+        pagina: null
+        ocr: "Recurso genério (tiene 10 digitos\nCAMION VOLQUETE\nRecursos especificos (tiene 14 digitos)\n(Camién volquete 12 m3 marca Volvo placa W23506 color blanco"
+      - id: "824968fb94c7"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/ff383abd6895.png"
+        pagina: null
+        caption: "En el árbol del Catálogo de Recursos,"
+        ocr: "El recurso genético tiene 10 digitos | ———-———__\n\n| fe Recurso SS\n\nCédigo 4oo4o1 0005 Cédiao alterna\n\nDescripcién,\n\nAlterna\n\nUnidad hor pza aw | Gh\n\nRecursos especificos | Detalle recurso Equivalentes\nDimensiones Propiedades\nAdicionar Cancelar"
+  - n: 4
+    id: "gerencia-proyectos.registrar-equipo-como-activo#4"
+    accion: "Cuando el sistema pregunte si desea continuar adicionando los recursos específicos, acepte."
+    fuente: [img-1b38d2d26097-0000, web-https-documentacion-s10peru-com-manual-d-s211]
+    pagina: null
+    fotos:
+      - id: "3164ba3148cb"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/1b38d2d26097.png"
+        pagina: null
+        ocr: "lead eal\ne {Desea continuar adicionando los recursos especificos?"
+  - n: 5
+    id: "gerencia-proyectos.registrar-equipo-como-activo#5"
+    accion: "En el segmento de recursos específicos, haga clic derecho y elija **Adicionar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s211, img-e6cda8aa9997-0000]
+    pagina: null
+    fotos:
+      - id: "c691a2dedee3"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/e6cda8aa9997.png"
+        pagina: null
+        ocr: "[[cécigo [Deseripcién Unita [ Factor |\nClic derecho } Adicionar\nen este segmento a5\nG& Modificar\nRecurgos especificos Detale recurs| X Eliminar L_J\neee Propiedades| EE Duplicar ||\nGeneral Contable | T2 Replica titulo <b)\nElija esta pestafia | modificar | & Nota"
+  - n: 6
+    id: "gerencia-proyectos.registrar-equipo-como-activo#6"
+    accion: "En la ventana de registro del recurso específico, que toma el nombre del recurso genérico, registre el nombre completo del recurso (por ejemplo, marca, placa y color)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s211]
+    pagina: null
+    fotos:
+      - id: "4d3176075de3"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/1ef423445bf1.png"
+        pagina: null
+        caption: "Llamada b: En la ventana de registro del recurso específico, toma el nombre del recurso genérico para luego incrementarle el nombre completo del recurso especifico."
+        ocr: "El recurso especifica\ntiene 14 digitos |\n& Recor Se\nCédigo toogoio00s [907 | Codigo atterno\nDeseripcién _[Camidn volquete de 12 m3 marca Volvo placa WZ-3505 color blanco\nDescripoién\nAlterna\nUnidad! fot fpza | a4\nGeneral l Contable\nDetalle recurso Equivalentes Dimensiones\nPropiedades\nAdicionar: Cancelar"
+  - n: 7
+    id: "gerencia-proyectos.registrar-equipo-como-activo#7"
+    accion: "Use el botón para grabar la información y cerrar la ventana."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s211]
+    pagina: null
+    fotos:
+      - id: "44f205aa329f"
+        ruta_o_url: "imagenes/manual-de-almacenes/91125b6e6ab0.png"
+        pagina: null
+        caption: "Luego use el botón para grabar la información y cerrar la ventana."
+  - n: 8
+    id: "gerencia-proyectos.registrar-equipo-como-activo#8"
+    accion: "En el catálogo de recursos, elija el recurso específico, modifíquelo con F3 e ingrese a **ESPECIFICACIONES DEL EQUIPO**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s211]
+    pagina: null
+    fotos:
+      - id: "e4b93afd374d"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/1bbca8cf8fc7.png"
+        pagina: null
+        caption: "En el catálogo de recursos, elija el recurso específico y con F3 modifique e ingrese a ESPECIFICACIONES DEL EQUIPO."
+        ocr: "rx\naE LLL EL\nCéaiga too4o1000s [°° Cédiga atterno\nDescripcién __[Cami6n volquete de 12 m3 marca Volvo placa WZ-3505 color blanco\nDescripcién\nAlterna\n‘General Contabilidad $10 Detalle recurso\nEquivalentes Dimensiones Propiedades\nContabilidad extema\nModiticar Especificaciones del equipo +[Etia | star"
+      - id: "0bb6ebfe4c7a"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/d09ac87fd681.png"
+        pagina: null
+        caption: "En el catálogo de recursos, elija el recurso específico y con F3 modifique e ingrese a ESPECIFICACIONES DEL EQUIPO."
+        ocr: "late)\nB Especiticacones del Equipo ts\nGintigo —-—«10040100050001 Cécigo alterno Estado [Enelaboracién >.\nDescripcién Camién volquete de 12 m3 marca Volvo placa WZ-3505 color blanco:\nUnidad del figy Ieza | Unidad de medicién [ang {hn ~ |\nEquipo | Ey\na IMPORTANTE: Registre el nombre del propietario. le\nLa ORDEN DE SERVICIO se genera por\nPotencia (hp: propietario =|]\nUbicacién Registrar\nPropietario (…"
+  - n: 9
+    id: "gerencia-proyectos.registrar-equipo-como-activo#9"
+    accion: "Registre los demás recursos tipo activo del proveedor y cierre el catálogo de recursos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s211]
+    pagina: null
+verificacion: []
+errores_frecuentes: []
+relacionados: [gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo, gerencia-proyectos.calcular-cantidad-de-equipos, gerencia-proyectos.registrar-partes-diarios-de-equipo]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s211, manual: "Manual de Gerencia de Proyectos", seccion: "6.5 Registro del equipo como activo en el catálogo de recursos", pagina: null}
+  - {id: img-1077a365283c-0000, manual: "Manual de Gerencia de Proyectos", seccion: "1077a365283c.png", pagina: null}
+  - {id: img-1b38d2d26097-0000, manual: "Manual de Gerencia de Proyectos", seccion: "1b38d2d26097.png", pagina: null}
+  - {id: img-e6cda8aa9997-0000, manual: "Manual de Gerencia de Proyectos", seccion: "e6cda8aa9997.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

@@ -1,0 +1,143 @@
+id: gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma
+version: 1
+modulo: gerencia-proyectos
+titulo: "Registrar la valorización mensual en el Cronograma por Periodos e imprimir la planilla"
+objetivo: "Registrar en el escenario del Cronograma por Periodos los avances logrados en el mes (porcentaje del plan completado o valorización), de donde se toma el monto de la valorización mensual, e imprimir la planilla de valorización."
+nivel: intermedio
+preguntas:
+  - "cómo registro la valorización del mes en el cronograma por periodos"
+  - "donde ingreso los avances logrados en el mes para valorizar"
+  - "como registro el porcentaje del plan completado"
+  - "como imprimo la planilla de valorizacion mensual"
+  - "de donde sale el monto de la valorización mensual del contrato"
+  - "como paso el cronograma a modo valorizacion"
+  - "como veo la valorizacion en costo y no en metrado"
+  - "como valoriso el avance mensual de la obra en gerencia de proyectos"
+  - "quiero imprimir solo las actividades con movimiento en la valorización"
+aliases:
+  - "registrar valorización mensual"
+  - "porcentaje del plan completado"
+  - "registrar avance valorizado"
+  - "planilla de valorización"
+  - "imprimir valorización mensual"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Cronograma por Periodos", "Modo de visualización", "Periodos Visibles"]
+  objetos: ["valorización", "metrado", "periodo", "planilla de valorizacion", "actividades"]
+prerrequisitos:
+  - texto: "Para valorizar en el periodo que se controla es necesario conocer los metrados o porcentajes a valorizar; solo se permite una valorización por periodo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s249]
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma#1"
+    accion: "Ingrese al escenario del **Cronograma por Periodos**: elija el proyecto y luego la rama venta."
+    fuente: [img-9b1b99302a40-0000, web-https-documentacion-s10peru-com-manual-d-s250]
+    pagina: null
+    fotos:
+      - id: "d7cc7e0779a2"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/9b1b99302a40.png"
+        pagina: null
+        ocr: "Proyecto\n| Inicio eb aged Escritoria\n| (=) PUENTE EN CARRETERA\n=) i Principal |\nCronograma 5] Venta descompuesta\npor Periodos Luego, 5]"
+  - n: 2
+    id: "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma#2"
+    accion: "De la barra de botones elija **Modo de visualización**, marque **Valorización** y el modo **Metrado** o porcentaje (no costo)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s250, img-764a5008f660-0000]
+    pagina: null
+    fotos:
+      - id: "f0ffcaf56650"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/ab4a9d901455.png"
+        pagina: null
+        caption: "Modo de visualización de datos: Permite elegir el tipo de dato que será visualizado o ingresado en la grilla del escenario. De la barra de botones elija :"
+      - id: "f7e9d924794e"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/764a5008f660.png"
+        pagina: null
+        ocr: "7, Thad cea\nKB Modo de Vis [2 emt\nModo\n© Programado = ‘Yalorizacién =\" Ejecutado (OT)\nAvance, Yaloriceen modo\nCronograma porcentaje o metrado\nae (@ Porcentaie (%) no en casto\n@ Metrado:\nC Costa"
+  - n: 3
+    id: "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma#3"
+    accion: "Use el botón para elegir la escala del período **Periodo Mensual**."
+    fuente: [img-4048f88b6c6c-0000, web-https-documentacion-s10peru-com-manual-d-s250]
+    pagina: null
+    fotos:
+      - id: "c25596843dc0"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/4048f88b6c6c.png"
+        pagina: null
+        ocr: "Use este boton y elija\noe vale ee el perio i\nModo Valorizacién - Cronograma metrado p lensual\nSES Escala de petiodo |Periodo Mensusl |\nPeriodo Mensual\nPeriodo Semanal"
+  - n: 4
+    id: "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma#4"
+    accion: "Ingrese en cada una de las celdas los avances logrados en el mes: la valorización es manual (ingreso directo de información)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s250, img-d927aaddcaea-0000]
+    pagina: null
+    fotos:
+      - id: "b1b487ab5923"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/d927aaddcaea.png"
+        pagina: null
+        ocr: "Coogee por Perades ( Vente }\nModo Valorizacién - Cronograma metrado\nVistes too S| Escaledepetiods [Peviodo Mensual =~)\n21/04/10-30/ 0100510-31/ 01/0610-30/\n| GLOBAL\n\"| PUENTE EN CARRETERA venta Ingrese los avances\nSow logrados en el mes\n“-E] ESTRUCTURAS\njG] ENCOFRADO a\nEncotrado 2,339.00 |~ 700.00—_(3)\n-&] ACERO\n~~ ACERO CORRUGADO fy=4200 kg/cm2 GRADC 82,000.00 18,000.00\n= CONCRETO\n~~ Conereto sim…"
+  - n: 5
+    id: "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma#5"
+    accion: "Haga clic derecho en una celda y ejecute **RECALCULAR POR ESCALA**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s250]
+    pagina: null
+  - n: 6
+    id: "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma#6"
+    accion: "Para visualizar la valorización en montos, en **Modo de visualización** elija el modo **Costo**."
+    fuente: [img-417968eda359-0000, web-https-documentacion-s10peru-com-manual-d-s250]
+    pagina: null
+    fotos:
+      - id: "ddcb00cdf650"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/417968eda359.png"
+        pagina: null
+        ocr: "3 lees ee]\nKE Modo de Vis [2 lentes\nModo\n© Programaco = @ Yalorizacién = Ejecutado (OT)\n\nAvance\nCronograma Visualice modo costo\n\n32 © Porcentaie (%)\n© Metracto\n& Costo!"
+  - n: 7
+    id: "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma#7"
+    accion: "Para imprimir la planilla de valorización mensual, haga clic derecho en la grilla y elija **Vista preliminar** y luego la planilla de valorización."
+    fuente: [img-72c3be421954-0000, web-https-documentacion-s10peru-com-manual-d-s251]
+    pagina: null
+    fotos:
+      - id: "6114a4556317"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/72c3be421954.png"
+        pagina: null
+        ocr: "Cromograma ser Periedes ( Venta }\nModo Valorizacién - Cronograma costo (S/.}\nVistas |B) Todo | Escala de perioda |Periado Mensual g\nDescripcién (WBS - Actividad) Cantidad Total Costo ‘Abril 2010\n(210410-30/\nClic derecho\n=| GLOBAL 1,341,397.69 | 132,147.90\n(= PUENTE ENQCARRETERA vent (831,056.41 132,147.90\nS[Estructuras } Contraer: <Elife el nivel> M 831,056.41 | 132,147.90\n(| ESTRUCTURAS Ps 831,05…"
+  - n: 8
+    id: "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma#8"
+    accion: "En la ventana **Periodos Visibles**, elija la escala y el periodo de la valorización que va a imprimir."
+    fuente: [img-c1d6902e80fe-0000, web-https-documentacion-s10peru-com-manual-d-s251]
+    pagina: null
+    fotos:
+      - id: "818f353f635e"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/c1d6902e80fe.png"
+        pagina: null
+        ocr: "Periodos Visibles\nEscala |Petiodo Mensual ~—\nPetiodo [Abril 2010 21/04/2010 30/04/2010 ps"
+  - n: 9
+    id: "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma#9"
+    accion: "Cuando el sistema pregunte si desea imprimir todas las actividades o solo las que tienen movimiento, elija **Si** para todas las actividades o **No** para solo las que tienen movimiento."
+    resultado: "Se muestra la planilla de valorización mensual para imprimirla."
+    fuente: [img-2ded3aaf6967-0000, web-https-documentacion-s10peru-com-manual-d-s251]
+    pagina: null
+    fotos:
+      - id: "a42f41b32eae"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/2ded3aaf6967.png"
+        pagina: null
+        ocr: "=a\nDesea imprimir todas las actividades o solo los que tienen\nmovimiento?\nSi (Yes): Todas las actividades.\nNo: Solo las que tienen movimiento\nCancelar (Cancel): Cancelar impresién"
+      - id: "7ab112520630"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/06a6ced41b99.png"
+        pagina: null
+        caption: "Imprima la planilla de valorización mensual"
+        ocr: "si Pagina taet\n\nObra PUENTE EN CARRETERA\n\nPresupuesto PUENTE EN CARRETERA venta\n\nContrato\n\nContratista PLANILLA DE VALORIZACION - PRESUPUESTO PRINCIPAL\n\nSupervisin Valorizacion N° 1 - Abril 2010 (21/04/2010-30/04/2010)\n\neo\n\n[rene] ran froesen| wen [roneron| wan] romoren| variant] rovaea| were] raat]\n\nPUENTE EN CARRETERA venta 351,058.4 [peel Tener 90 TENET 8 608,906.51\nEstructuras 221,95044 [sre 1…"
+verificacion:
+  - texto: "El monto de la valorización mensual es tomado del Cronograma por Periodos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s250]
+errores_frecuentes: []
+relacionados: [gerencia-proyectos.valorizar-el-contrato, gerencia-proyectos.planificar-en-cronograma-por-periodos, gerencia-proyectos.registrar-contrato]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s249, manual: "Manual de Gerencia de Proyectos", seccion: "7.4.11 Valorizaciones", pagina: null}
+  - {id: img-9b1b99302a40-0000, manual: "Manual de Gerencia de Proyectos", seccion: "9b1b99302a40.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s250, manual: "Manual de Gerencia de Proyectos", seccion: "7.4.11.1 Registro de Porcentaje del plan completado o valorización", pagina: null}
+  - {id: img-764a5008f660-0000, manual: "Manual de Gerencia de Proyectos", seccion: "764a5008f660.png", pagina: null}
+  - {id: img-4048f88b6c6c-0000, manual: "Manual de Gerencia de Proyectos", seccion: "4048f88b6c6c.png", pagina: null}
+  - {id: img-d927aaddcaea-0000, manual: "Manual de Gerencia de Proyectos", seccion: "d927aaddcaea.png", pagina: null}
+  - {id: img-417968eda359-0000, manual: "Manual de Gerencia de Proyectos", seccion: "417968eda359.png", pagina: null}
+  - {id: img-72c3be421954-0000, manual: "Manual de Gerencia de Proyectos", seccion: "72c3be421954.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s251, manual: "Manual de Gerencia de Proyectos", seccion: "7.4.12 Impresión de la valorización mensual", pagina: null}
+  - {id: img-c1d6902e80fe-0000, manual: "Manual de Gerencia de Proyectos", seccion: "c1d6902e80fe.png", pagina: null}
+  - {id: img-2ded3aaf6967-0000, manual: "Manual de Gerencia de Proyectos", seccion: "2ded3aaf6967.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

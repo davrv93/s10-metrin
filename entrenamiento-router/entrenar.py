@@ -367,16 +367,18 @@ def main():
     prueba = leer_jsonl(AQUI / "datos/prueba.jsonl")
     ruta_real = AQUI / "reales/prueba_real.jsonl"
     prueba_real = leer_jsonl(ruta_real) if ruta_real.exists() else []
-    # Pruebas de los procedimientos añadidos (escritas sin ver el entrenamiento): prueba_nuevos.jsonl (tanda 1) con sus
-    # correcciones (prueba_nuevos_revision.jsonl) y prueba_nuevos2.jsonl (tanda 2), juntas.
+    # Pruebas de los procedimientos añadidos (escritas sin ver el entrenamiento): prueba_nuevos.jsonl (tanda 1),
+    # prueba_nuevos2.jsonl (tanda 2)… juntas, con las correcciones de cada tanda posterior (prueba_nuevos_revision*.jsonl:
+    # «_ninguno» que ahora responde un procedimiento nuevo).
     prueba_nuevos = []
     for ruta in sorted((AQUI / "datos").glob("prueba_nuevos*.jsonl")):
         if "revision" not in ruta.name:
             prueba_nuevos += leer_jsonl(ruta)
-    ruta_rev = AQUI / "datos/prueba_nuevos_revision.jsonl"
-    if ruta_rev.exists():
-        cambio = {r["id"]: r["clase_nueva"] for r in leer_jsonl(ruta_rev) if r.get("clase_nueva") not in (None, NINGUNO)}
-        prueba_nuevos = [dict(x, clase=cambio.get(x["id"], x["clase"])) for x in prueba_nuevos]
+    cambio = {}
+    for ruta_rev in sorted((AQUI / "datos").glob("prueba_nuevos_revision*.jsonl")):
+        cambio.update({r["id"]: r["clase_nueva"] for r in leer_jsonl(ruta_rev)
+                       if r.get("clase_nueva") not in (None, NINGUNO)})
+    prueba_nuevos = [dict(x, clase=cambio.get(x["id"], x["clase"])) for x in prueba_nuevos]
 
     log("recortando vocabulario…")
     r = recortar(a.base, corpus_recorte(entren, calib), a.pjge_previo)

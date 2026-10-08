@@ -1,0 +1,109 @@
+id: facturacion.actualizar-catalogo-de-detracciones-y-percepciones
+version: 1
+modulo: facturacion
+titulo: "Actualizar los catálogos de ítems de detracciones y percepciones"
+objetivo: "Mantener actualizados los catálogos de ítems de detracciones y de percepciones con los últimos porcentajes y montos aplicables según los cambios que publica SUNAT, antes de configurar los recursos con detracción y percepción."
+nivel: intermedio
+preguntas:
+  - "sunat cambio el porcentaje de detraccion, donde lo actualizo en s10"
+  - "donde esta el catalogo de detracciones"
+  - "como modifico el monto minimo de una detraccion"
+  - "como actualizo el porcentaje de percepcion de un item"
+  - "como registro el historial de cambios de porcentaje de detraccion"
+  - "catalogo de items de percepciones en facturacion"
+  - "agregar un item nuevo de detraccion"
+  - "porsentaje de detraccion desactualizado en el sistema"
+  - "no me calcula la percepcion aunque el recurso tiene el item"
+aliases:
+  - "catálogo de detracciones"
+  - "catálogo de percepciones"
+  - "ítems de detracción"
+  - "actualizar detracciones"
+  - "actualizar percepciones"
+entidades:
+  modulo: "Facturación"
+  pantallas: ["Catálogo de Ítems Detracciones", "Catálogo de Ítems Percepciones"]
+  objetos: ["detracción", "percepción", "ítem", "porcentaje", "recurso"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "facturacion.actualizar-catalogo-de-detracciones-y-percepciones#1"
+    accion: "Ingrese al módulo de Facturación, menú **Catálogos** / **SUNAT** / **Detracciones**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s070]
+    pagina: null
+    fotos:
+      - id: "76b589317f91"
+        ruta_o_url: "imagenes/manual-de-facturacion/076f7f96294c.png"
+        pagina: null
+        caption: "a. Ingresamos al Módulo de Facturación/ Catálogos/ SUNAT/ Detracciones."
+        ocr: "| Archive Yel [Catélogos [Herramientas 2\n© BS EA] & Ses de negocio\nPy tend EP Moneda = =\n— FB Tipo de cambio ributos\nSF nidades a\nlee FREEZES\nCV) @ Formas de Pago i]\nCentros de C] EF] Tipo de Documento\nge @ To de impuesto S]fen cualquier posicién I] «(KL 2] Grupo: Recurso Nt - Recurso NZ - Recurso N3 - Descripcién\nLogos [aTiene Detraccién? _|Descripcién Detraccién | 2Tiene Percepcién? Descripcién…"
+  - n: 2
+    id: "facturacion.actualizar-catalogo-de-detracciones-y-percepciones#2"
+    accion: "En el catálogo de ítems de detracciones, haga clic derecho sobre la línea del ítem para ver las opciones **Adicionar**, **Modificar**, **Duplicar** y **Eliminar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s070]
+    pagina: null
+    fotos:
+      - id: "c294ae445f9a"
+        ruta_o_url: "imagenes/manual-de-facturacion/15d534dc6bcd.png"
+        pagina: null
+        caption: "Luego de Ubicar el catálogo de Detracciones aparecerá una ventana que permitirá visualizar el catálogo de Ítems Detracciones donde es posible mediante las opciones de Adicionar, Modificar, Duplicar y Eliminar las líneas con la finalidad de Actualizarlas de acuerdo a las publicaciones que SUNAT realice. Clic Derecho sobre la Línea del Ítems de Detracciones, Aparecen las Siguientes Opciones."
+        ocr: "Dexe € 8RS 2 ws AY cae s\n\nArrastre hacia aqui el encabezado de la columna que desea agrupar r\n2 8 a\n\n00013 ‘Animales vivos 10.00 700.00 consutort c2norers cconsuttort o2nonats\n\n-Jooots ‘Abonos, cuerosy pleles de origen ariel fom pag cormutort vaomts consuitort conovzot3\n/_oa016 Acette de pescado 2.00 700.00 consutort o2norars cconsutort o2norars\n-Jooot7 Hari, polvo y pellets\" de pescado, crustéceo…"
+  - n: 3
+    id: "facturacion.actualizar-catalogo-de-detracciones-y-percepciones#3"
+    accion: "Elija **Modificar** para actualizar los rangos de aplicación de porcentajes y montos a aplicar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s070]
+    pagina: null
+  - n: 4
+    id: "facturacion.actualizar-catalogo-de-detracciones-y-percepciones#4"
+    accion: "Desde la ventana del ítem de detracciones, configure el historial de cambios en porcentaje y montos de aplicación, para que se tome en cuenta según las fechas del registro de los comprobantes."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s070]
+    pagina: null
+    fotos:
+      - id: "f7d80441251a"
+        ruta_o_url: "imagenes/manual-de-facturacion/54d67f2466e0.png"
+        pagina: null
+        caption: "Desde la Ventana del Ítems Detracciones es posible configurar el historial de cambios en % y Montos de Aplicación para que al ser utilizado tome en cuenta según las fechas del registro de los comprobantes según el Ítem configurado en el Recurso."
+        ocr: "iDexXBcue Mass. cle (AW: ANY gaa\nArrastre hacia aqui el encabezado de la columna que desea agrupar r\na a\n-_|ooot3 Animales vivos 10.00 700.00 consultort o2nor2013 consuttor! 2012013\n/_|ooo14 Carnes y despojos comestibles 10.00 700,00 consultort o2noraa13 consuttort o2stor2013\n/_ooots Abonos, cueros ¥ pieles de origen animal 10.00 700.00 consultart o2nor2o13 consuttort o2sior2013\n-_jooot6 Acete de…"
+  - n: 5
+    id: "facturacion.actualizar-catalogo-de-detracciones-y-percepciones#5"
+    accion: "Ingrese al menú **Catálogos** / **SUNAT** / **Percepciones**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s070]
+    pagina: null
+    fotos:
+      - id: "28138a4a8409"
+        ruta_o_url: "imagenes/manual-de-facturacion/ced727e9472b.png"
+        pagina: null
+        caption: "b. Ingresamos al Módulo de Facturación/ Catálogos/ SUNAT/ Percepciones."
+        ocr: "© Archivo Yer] Catélogos |Herramientas 2\nBab IG Socios de negocio\nig) Tema! Monede -\nB ipo de Canbio. ibutos\nides\nwoses Bir od id Gt\nLT 1G Formas de Pago\n& KT de Impuesto ~]fen cualquier posicen *) XR ||) Grupo: Recurso 1 -Recurso N2~Recurso N3- Descripcién\nLogos Tien Detraccién? —_|Descripcién Detraccién —_|{Tiene Percepcién? Descripcién Percepeién:\nEstructura de (9% Recursos Genéricas y especcos…"
+  - n: 6
+    id: "facturacion.actualizar-catalogo-de-detracciones-y-percepciones#6"
+    accion: "Haga clic derecho sobre la línea del ítem de percepción que quiere actualizar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s070]
+    pagina: null
+    fotos:
+      - id: "29fcb448fd16"
+        ruta_o_url: "imagenes/manual-de-facturacion/61fd30c5f9c6.png"
+        pagina: null
+        caption: "Luego de Ubicar el catálogo de Percepciones aparecerá una ventana que permitirá visualizar el catálogo de Ítems Percepciones donde es posible mediante las opciones de Adicionar, Modificar, Duplicar y Eliminar las líneas con la finalidad de Actualizarlas de acuerdo a las publicaciones que SUNAT realice. Clic Derecho sobre la Línea del Ítems de Percepción, Aparecen las Siguientes Opciones."
+        ocr: "‘Opciones 2\n\nOs xXBre VRS Hom 1H BED ABA\n\n[_|_J_césigo [Dessripcién [Porcentoje [Mort pica\n\n[| 00001 | Harina de trigo o de morcajo trranquilln) [Clic derecho sobre el items a Modificar 0.00\n[EN TR Agus, incluida el agua mineral, natural 0 al iicin'y wens wonrsc cn a 0.00\n| 00003 Cerveza de mata, | CD asicionar F2 ] 05) 0.00\n|_|190004 Gas licuado de petréleo os aco\n_|00005 _Didxiclo de carbon I< e…"
+  - n: 7
+    id: "facturacion.actualizar-catalogo-de-detracciones-y-percepciones#7"
+    accion: "Elija **Modificar** y actualice el porcentaje y el monto de aplicación."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s070]
+    pagina: null
+    fotos:
+      - id: "ce069d59a3ff"
+        ruta_o_url: "imagenes/manual-de-facturacion/997b47046e13.png"
+        pagina: null
+        caption: "En este caso se procede a Utilizar la opción de MODIFICAR para actualizar el % y monto aplicación."
+        ocr: "Opciones 2\nOSXBEC A¥BS Hoo 4 RS @ ABE\n| |_| césigo [Descriocign | rcertaje | Monto cate\n[EXE Harina de trigo 0 de morcsio trenqullén) __ 3s} ‘0.00\n20002 Agua, incluida el agua mineral, natural o artical y demas bebidas no alcohdlic 05) 00\n[00003 Cerveza de matte 05) 0.00\n|__|100004 _ | Ges licuado de petrdieo o5| 0.00\n[00005 _Didxido de carbono | 05] 8.00\n| |00008 _Palitereftatato de etilena) sin…"
+verificacion: []
+errores_frecuentes:
+  - sintoma: "No se aplica la percepción aunque el recurso está relacionado a un ítem de percepción."
+    solucion: "Además de configurar el recurso, en las propiedades del socio de negocio o proveedor este debe estar calificado como AGENTE DE PERCEPCIÓN; de esta manera aplicará el cálculo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s071]
+relacionados: [facturacion.asignar-tributos-masivamente, facturacion.importar-tributos-de-recursos-desde-excel]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s070, manual: "Manual de Facturación", seccion: "8.2.1 Configuración del Catálogo de ítems Detracciones / Percepciones (1)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s071, manual: "Manual de Facturación", seccion: "8.2.1 Configuración del Catálogo de ítems Detracciones / Percepciones (2)", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

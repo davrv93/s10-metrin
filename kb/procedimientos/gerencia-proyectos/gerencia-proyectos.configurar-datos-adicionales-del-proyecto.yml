@@ -1,0 +1,128 @@
+id: gerencia-proyectos.configurar-datos-adicionales-del-proyecto
+version: 1
+modulo: gerencia-proyectos
+titulo: "Configurar los datos adicionales del proyecto"
+objetivo: "Configurar, por proyecto, los decimales de cantidades y precios, los factores de inflación, las partidas de control activas, el jefe y el administrador del proyecto, la distribución de costos, los decimales del factor de relación y la gestión inmobiliaria."
+nivel: intermedio
+preguntas:
+  - "cómo configuro los datos adicionales del proyecto"
+  - "donde cambio el numero de decimales de cantidades y precios del proyecto"
+  - "cómo activo los factores de inflación para la valorización"
+  - "como hago que solo salgan las partidas de control activas en el tareo"
+  - "dónde asigno al jefe de proyecto y al administrador del proyecto"
+  - "como configuro la partida no contributorio para la distribucion de costos"
+  - "como marco que el proyecto es inmobiliario o se integra con sperant"
+  - "datos adicionales gerencia de proyectos s10"
+  - "donde se pone los desimales del factor de relacion"
+aliases:
+  - "datos adicionales"
+  - "configurar datos adicionales"
+  - "datos adicionales del proyecto"
+  - "configuración del proyecto"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Datos Generales", "Datos adicionales", "Grupo de Factores de Inflación"]
+  objetos: ["proyecto", "factores de inflación", "partida de control", "Socio de Negocio", "Sperant"]
+prerrequisitos:
+  - texto: "Los datos para los Factores de Inflación se registran en el grupo y el acceso directo de Factores de Inflación."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047]
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.configurar-datos-adicionales-del-proyecto#1"
+    accion: "En el escenario **Datos Generales** del proyecto, abra los **Datos adicionales**: esta configuración es por proyecto."
+    fuente: [img-9e7933c3a226-0000, web-https-documentacion-s10peru-com-manual-d-s047]
+    pagina: null
+    fotos:
+      - id: "83479d05df42"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/9e7933c3a226.png"
+        pagina: null
+        ocr: "Proyectos:\nDatos Generales\na Escritorio\nas: pier | ____caaigoatarno | __[Patasaxiconaes.]\n&- #8) Principal Proyecto Cédigo atterno Datos [eckson eles\nSl Venta des Descripcién | PUENTE EN CARRETERA\n5] Venta\n5 lies Bas! Propietario (09010090 |MINISTERIO DE TRANSPORTES Y COMUNICACIONES es 44\nXSuncontratos | Luger 081301 [URUBAMBA o 44) Fecha Oferta |21/04/2010 >"
+  - n: 2
+    id: "gerencia-proyectos.configurar-datos-adicionales-del-proyecto#2"
+    accion: "Configure el número de decimales para las cantidades y para los precios."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047]
+    pagina: null
+    fotos:
+      - id: "1759560a5bfa"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/65dd53e141f4.png"
+        pagina: null
+        caption: "Configure,"
+        ocr: "[Fl Datos Adicionales x\nConfigurado para trabajar con decimales de Facturacién\n@=Nuimero de decimales en cantidades | Aceptar\nmow de decimales en precios | Cancelar\n@©=¥ Aplicar factores de inflacién\nYO- Mostrar solo Partidas de Control Activas\n& Jefe de Proyectd02100020 [ltartinez Rodriguez Narn =| |\n@=, Distribucién de Costos\nPartida de [0102012 [No contrbutorio- bajas-mermas (@-T}—...| |\nContro…"
+  - n: 3
+    id: "gerencia-proyectos.configurar-datos-adicionales-del-proyecto#3"
+    accion: "Seleccione el uso de factores de inflación para ajustar el monto valorizado; si no lo selecciona, no se permite el uso de factores de inflación."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047]
+    pagina: null
+    fotos:
+      - id: "28b906e74ee3"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/9e87757471d8.png"
+        pagina: null
+        caption: "Llamada c: Seleccionado; Permite el uso de factores de inflación para ajustar el monto valorizado."
+        ocr: "Presupuestos Meta Asignacos\nDescripcién Presupuesto Costo Directo Costo Total Tipo Pritiere Fecha Base Grupo de Factores\n“LOLAST A | 1081 Aart ValorizaPrecios de Inflacion\nPD |PUENTEEN CARRETERA meta 1,061,457.71 1,061,457.71 Contrato 1 2303/2010 Md\n*"
+  - n: 4
+    id: "gerencia-proyectos.configurar-datos-adicionales-del-proyecto#4"
+    accion: "Use el botón que muestra el catálogo **Grupo de Factores de Inflación** y elija el grupo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047]
+    pagina: null
+    fotos:
+      - id: "eea75ac338f1"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/7c504e355141.png"
+        pagina: null
+        caption: "Llamada c-1: El botón muestra el catálogo Grupo de Factores de Inflación, con la finalidad de elegirlo."
+        ocr: "Grupo de Factores de Inflacién — = © |S\nOpciones ?\no.Liee*e Qi et ¢ BAS SE\nDescripcién Elija con doble clic\nPend\n4 Area geogrética Cusco-Puno-Aprimac-Madre de Dios"
+  - n: 5
+    id: "gerencia-proyectos.configurar-datos-adicionales-del-proyecto#5"
+    accion: "Seleccione la opción para que, al efectuar los tareos, partes de equipo y egresos a partidas de control, sólo se muestren las partidas de control activas (recomendado)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047]
+    pagina: null
+  - n: 6
+    id: "gerencia-proyectos.configurar-datos-adicionales-del-proyecto#6"
+    accion: "Elija al Jefe de Proyecto del catálogo de Socio de Negocio; se utiliza en los reportes del módulo de Nóminas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047]
+    pagina: null
+  - n: 7
+    id: "gerencia-proyectos.configurar-datos-adicionales-del-proyecto#7"
+    accion: "Elija al Administrador del Proyecto del catálogo de Socio de Negocio; se utiliza en los reportes del módulo de Nóminas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047]
+    pagina: null
+  - n: 8
+    id: "gerencia-proyectos.configurar-datos-adicionales-del-proyecto#8"
+    accion: "En **Distribución de costos**, elija la partida de control NO CONTRIBUTORIO para cargar el costo de la mano de obra."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047]
+    pagina: null
+  - n: 9
+    id: "gerencia-proyectos.configurar-datos-adicionales-del-proyecto#9"
+    accion: "Si utiliza tareo por actividades, elija además la actividad para la partida de control NO CONTRIBUTORIO."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s048]
+    pagina: null
+  - n: 10
+    id: "gerencia-proyectos.configurar-datos-adicionales-del-proyecto#10"
+    accion: "Elija el número de decimales para el factor de relación, que será utilizado en el módulo de Valorizaciones."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s048]
+    pagina: null
+  - n: 11
+    id: "gerencia-proyectos.configurar-datos-adicionales-del-proyecto#11"
+    accion: "En **Gestión Inmobiliaria**, defina el tipo de proyecto: ninguno cuando el proyecto no sea inmobiliario, **Sperant** para integrarlo con el software Sperant, o inmobiliario sin integrarse a Sperant."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s048]
+    pagina: null
+  - n: 12
+    id: "gerencia-proyectos.configurar-datos-adicionales-del-proyecto#12"
+    accion: "Use el botón para grabar los datos registrados en el escenario."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s048]
+    pagina: null
+    fotos:
+      - id: "4aa896723ce6"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/4ea5b0b450f1.png"
+        pagina: null
+        caption: "Luego use el botón para grabar los datos registrados en el escenario."
+verificacion: []
+errores_frecuentes:
+  - sintoma: "Al hacer tareos, partes de equipo o egresos a partidas de control aparecen todas las partidas de control registradas."
+    solucion: "Seleccione en los datos adicionales la opción para mostrar sólo las partidas de control activas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047]
+relacionados: [gerencia-proyectos.registrar-proyecto]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s047, manual: "Manual de Gerencia de Proyectos", seccion: "2.5.2 Datos adicionales (1)", pagina: null}
+  - {id: img-9e7933c3a226-0000, manual: "Manual de Gerencia de Proyectos", seccion: "9e7933c3a226.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s048, manual: "Manual de Gerencia de Proyectos", seccion: "2.5.2 Datos adicionales (2)", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

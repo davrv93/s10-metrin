@@ -1,0 +1,79 @@
+id: presupuestos.calcular-tiempos-para-programacion
+version: 1
+modulo: presupuestos
+titulo: "Calcular la duración de las partidas según el número de cuadrillas"
+objetivo: "Calcular en el escenario Tiempos para programación la duración o plazo de ejecución de cada partida de acuerdo a su metrado, su rendimiento y la cantidad de cuadrillas que se utilizará."
+nivel: intermedio
+preguntas:
+  - "como calculo cuantos dias dura una partida en s10"
+  - "para que sirve tiempos para programacion"
+  - "como pongo el numero de cuadrillas a una partida"
+  - "quiero saber el plazo de cada partida segun su rendimiento"
+  - "donde veo la duracion de la partida si trabajo con 2 cuadrillas"
+  - "cuantas cuadrillas necesito para terminar el encofrado, como lo veo"
+  - "tiempos para programasion de equipos"
+  - "qué es el factor de multiplicidad en presupuestos"
+aliases:
+  - "tiempos para programación"
+  - "duración de partidas"
+  - "número de cuadrillas"
+  - "factor de multiplicidad"
+entidades:
+  modulo: "Presupuestos"
+  pantallas: ["Tiempos para programación"]
+  objetos: ["partida", "cuadrilla", "mano de obra", "equipo", "rendimiento", "metrado"]
+prerrequisitos:
+  - texto: "Las partidas deben tener metrado y rendimiento: la duración se calcula de acuerdo al metrado y rendimiento."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s114]
+pasos:
+  - n: 1
+    id: "presupuestos.calcular-tiempos-para-programacion#1"
+    accion: "Ingrese al escenario **Tiempos para programación**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s114, img-d2a2bf24a525-0000, "7c40a9548710-0183"]
+    pagina: null
+    fotos:
+      - id: "76ec6d5e2c6d"
+        ruta_o_url: "imagenes/manual-de-presupuestos/d2a2bf24a525.png"
+        pagina: null
+        ocr: "‘Tiempos para Programacion (~)\n————— ae Ce a\n001 Estructuras\noe ee es ee\n:\nIESTRUCTURAS: eS\nOBRAS PRELIMINARES\nCONTENEDOR OFICINA, mes 6.00 4.0000 6.00 1.00 6\nCONTENEDOR ALMA.CEN mes 6.00 1.0000 6.00 1.00 6\nCONTENEDOR INODORO, LAVATORIOS, mes 6.00 1.0000 6.00 1.00 6\nTRAZO INICIAL gbl 1.00 300.0000 0.00 1.00 1\nTRAZO DURANTE LA EJECUCION DE LA OBRA, mes 6.00 0.0000 1.00 0\nTRANSPORTE VERTICAL Y HORIZ…"
+  - n: 2
+    id: "presupuestos.calcular-tiempos-para-programacion#2"
+    accion: "Elija la pestaña **Mano de Obra**, o la pestaña **Equipo** para los equipos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s114, "7c40a9548710-0184"]
+    pagina: null
+  - n: 3
+    id: "presupuestos.calcular-tiempos-para-programacion#3"
+    accion: "Revise las columnas informativas de la partida: el metrado, el rendimiento y el tiempo unitario para una cuadrilla."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s114, "7c40a9548710-0184"]
+    pagina: null
+  - n: 4
+    id: "presupuestos.calcular-tiempos-para-programacion#4"
+    accion: "En la columna **Factor de multiplicidad**, registre la cantidad de cuadrillas a utilizar en la partida."
+    resultado: "La duración muestra el número de días que demora ejecutar la partida de acuerdo al número de cuadrillas, redondeado al inmediato superior."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s114, "7c40a9548710-0184", "7c40a9548710-0185"]
+    pagina: null
+  - n: 5
+    id: "presupuestos.calcular-tiempos-para-programacion#5"
+    accion: "Registre el número de cuadrillas para cada una de las partidas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s114, "7c40a9548710-0184"]
+    pagina: null
+  - n: 6
+    id: "presupuestos.calcular-tiempos-para-programacion#6"
+    accion: "Para exportar el contenido de la ventana a un archivo Excel, haga clic en el segmento de exportación."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s114]
+    pagina: null
+verificacion:
+  - texto: "La columna de duración muestra los días que demora ejecutar cada partida de acuerdo al número de cuadrillas registrado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s114, "7c40a9548710-0185"]
+errores_frecuentes:
+  - sintoma: "La duración calculada no aparece en el cronograma ni en otro escenario."
+    solucion: "Esta información no es utilizada en otro escenario: proporciona una idea de la cantidad de cuadrillas que se debe utilizar para ejecutar cada una de las partidas y el plazo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s114]
+relacionados: [presupuestos.ingresar-metrados, presupuestos.registrar-partida-en-el-catalogo]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s114, manual: "Manual de Presupuestos", seccion: "5.1.7 Tiempos para programación", pagina: null}
+  - {id: img-d2a2bf24a525-0000, manual: "Manual de Presupuestos", seccion: "d2a2bf24a525.png", pagina: null}
+  - {id: "7c40a9548710-0183", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 111}
+  - {id: "7c40a9548710-0184", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 111}
+  - {id: "7c40a9548710-0185", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 112}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

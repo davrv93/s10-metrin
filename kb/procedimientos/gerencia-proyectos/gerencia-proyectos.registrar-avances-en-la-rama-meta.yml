@@ -1,0 +1,115 @@
+id: gerencia-proyectos.registrar-avances-en-la-rama-meta
+version: 1
+modulo: gerencia-proyectos
+titulo: "Registrar los avances del periodo en la rama meta"
+objetivo: "Registrar en el Cronograma por Periodos de la rama meta los metrados realmente logrados en obra dentro de un período (porcentaje del plan completado o valorización), para valorizar y evaluar los resultados operativos."
+nivel: intermedio
+preguntas:
+  - "cómo registro el avance semanal de la obra en la meta"
+  - "donde ingreso los metrados ejecutados de la semana"
+  - "como registro el porcentaje del plan completado de la semana en la meta"
+  - "como valorizo el avance semanal de la meta en el cronograma por periodos"
+  - "no me deja ingresar el avance en modo costo"
+  - "como registro avanzes en la rama meta"
+  - "ingrese los metrados logrados y no calcula los recursos"
+  - "como veo en costo el avance que registre"
+  - "donde cargo lo ejecutado en obra para los resultados operativos"
+aliases:
+  - "registrar avances"
+  - "registro de avances"
+  - "plan completado de la meta"
+  - "valorización de la meta"
+  - "metrados ejecutados"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Cronograma por Periodos"]
+  objetos: ["avance", "metrado", "periodo", "rama meta", "recursos"]
+prerrequisitos:
+  - texto: "Haga visibles los periodos semanales donde registrará la información."
+    fuente: [img-fe3b0f100c14-0000]
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.registrar-avances-en-la-rama-meta#1"
+    accion: "Ingrese al escenario del **Cronograma por Periodos** de la rama meta."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s254]
+    pagina: null
+    fotos:
+      - id: "3b17c4fcbbd5"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/0a66e79f5610.png"
+        pagina: null
+        caption: "Acceso al escenario del Cronograma por Periodos"
+        ocr: "— a Escritorio\na\n=) PUENTE EN CARRETERA,\n1 a p Principal\nS| Venta gf uesto\nCronograma E vents\npor Periodos Luego, 3] Meta"
+  - n: 2
+    id: "gerencia-proyectos.registrar-avances-en-la-rama-meta#2"
+    accion: "Use el botón de modo de visualización para elegir el tipo de dato que será registrado: modo valorización, en metrado o porcentaje."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s254, img-fe3b0f100c14-0000]
+    pagina: null
+    fotos:
+      - id: "84e54fc212f4"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/df5affe5f045.png"
+        pagina: null
+        caption: "Use el botón para elegir el tipo de dato que será registrado."
+        ocr: "BZ Modo ce Visuali| Elia] 2 lemme\nModo\n© Programado = Yalorizacién = Ejecutaclo (OT) El sistema, no permite el ingrerso\nde inforrmacidn en MODO COSTO,\nAvance\nCronograma\n3s © Porcentaje (%)\nG Wetrad)\n© Casto"
+  - n: 3
+    id: "gerencia-proyectos.registrar-avances-en-la-rama-meta#3"
+    accion: "Elija la **Escala de Período**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s254]
+    pagina: null
+    fotos:
+      - id: "a19ef2266d80"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/5087030f356f.png"
+        pagina: null
+        caption: "Elija la Escala de Período"
+        ocr: "Cronograma por Periodos ( Meta ) =\nModo Valorizacion - Cronograma metrado\nVistas |p) Todo + | Escala de periodo |Periodo Mensual t"
+  - n: 4
+    id: "gerencia-proyectos.registrar-avances-en-la-rama-meta#4"
+    accion: "Ingrese manualmente los metrados realmente logrados en obra dentro del período."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s254]
+    pagina: null
+    fotos:
+      - id: "0bd46e007b5d"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/f93a5bfcdf19.png"
+        pagina: null
+        caption: "El ingreso de metrados es manual."
+        ocr: "Cronograma por Periodos ( Meta )\nMado Valorizacién - Cronograma metrado\nVistas Todo +| Escala de periodo [Periods Semanal aa\nz\nDescripcién (VBS - Actividad) [i Semana 17 | Semana 18\n210410-25/) 26/041 0-02¢\n=] Puente en carretera Ingrese los metrados realmante logrados en\n=] Preparacién de agregados obra, tarmanda en cuenta la actividad y el\n Extracctén periodo\n~~ Extraccién cantera (sin explosive…"
+  - n: 5
+    id: "gerencia-proyectos.registrar-avances-en-la-rama-meta#5"
+    accion: "Ubique el cursor en una celda que tiene datos, use la opción recalcular por escala y, en la ventana que muestre, elija **RECALCULAR**."
+    resultado: "Para los metrados registrados, el sistema calcula la cantidad de recursos de acuerdo a los análisis de precios unitarios."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s254, img-fe3b0f100c14-0000]
+    pagina: null
+    fotos:
+      - id: "8167428fa4db"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/e673b0598f4b.png"
+        pagina: null
+        caption: "Para los Metrados Registrados, el sistema calcula la cantidad de recursos de acuerdo a los análisis de precios unitarios."
+        ocr: "a Afio 2010\nFase Descripcidn (WBS - Actividad) Semana 17 | Semana 18\n210040-25/ 260410-02/\n1 =] Puente en carretera\n101 =| Preparacién de agregados\n10104 =] Extraccién\n10101 Extraccién cantera (sin explosivos) = 2,540.00\n10102 =] Chancado:\n10102 Chancado para agregado grueso conc 446.00\n10103 =] Zarandeo - -\n10103 Zarandeo mecanico EB} Guitar periodo\n10104 Transporte interno @\n10104 Transporte int…"
+  - n: 6
+    id: "gerencia-proyectos.registrar-avances-en-la-rama-meta#6"
+    accion: "Para visualizar los datos en costo, elija el modo costo con el botón de modo de visualización."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s254]
+    pagina: null
+    fotos:
+      - id: "5bc336fce083"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/10bdadeddd10.png"
+        pagina: null
+        caption: "Para visualizar los datos en costo"
+        ocr: "Y; ee\nIZ Modo de Visuali: |\nModo\n© Programado  @ Yalorizacién  Ejecutado (OT)\nAvance\nCronoarama\n3 © Porcentaje (%)\n© Metrado.\n@ Costa!"
+      - id: "dd27d3983109"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/44e7541ca8c7.png"
+        pagina: null
+        caption: "Para visualizar los datos en costo"
+        ocr: "Modo Valorizacién - Cronograma costo (Si)\nVistas | Todo | Escala de periodo |Periodo Semanal +\n[ ail Afio 2010\nDescripcidn (WBS - Actividad) ‘Semana 17.\n21/04/10-25¢\nEI Puente en carretera 72,570.71"
+verificacion:
+  - texto: "Los datos pasan al escenario del cronograma por periodos para visualizar los resultados operativos, donde se evalúa."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s254]
+errores_frecuentes:
+  - sintoma: "No puede ingresar los avances en modo costo."
+    solucion: "El sistema no permite el ingreso de información en modo costo: registre los avances en metrado o porcentaje."
+    fuente: [img-df5affe5f045-0000]
+relacionados: [gerencia-proyectos.planificar-en-cronograma-por-periodos]
+fuentes:
+  - {id: img-fe3b0f100c14-0000, manual: "Manual de Gerencia de Proyectos", seccion: "fe3b0f100c14.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s254, manual: "Manual de Gerencia de Proyectos", seccion: "8.1 Registro de Avances en la rama meta", pagina: null}
+  - {id: img-df5affe5f045-0000, manual: "Manual de Gerencia de Proyectos", seccion: "df5affe5f045.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

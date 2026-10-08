@@ -1,0 +1,94 @@
+id: gerencia-proyectos.registrar-vistas
+version: 1
+modulo: gerencia-proyectos
+titulo: "Registrar las vistas del proyecto"
+objetivo: "Agrupar segmentos o porciones del proyecto en vistas para verlas en el Cronograma por periodos con la información del programado e ingresar lo ejecutado o el porcentaje del trabajo completado."
+nivel: intermedio
+preguntas:
+  - "cómo creo vistas en gerencia de proyectos"
+  - "para que sirven las vistas del proyecto"
+  - "como agrupo partes del proyecto como cimientos o piso 1"
+  - "como asigno actividades a una vista"
+  - "como creo un grupo de vistas"
+  - "como veo una vista en el cronograma por periodos"
+  - "como registro vistas para edificaciones"
+  - "como arrastro titulos a la vista"
+aliases:
+  - "vistas"
+  - "registrar vistas"
+  - "crear vistas del proyecto"
+  - "grupo de vistas"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Vistas", "Cronograma por periodos"]
+  objetos: ["vista", "proyecto", "títulos", "actividades"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.registrar-vistas#1"
+    accion: "Ingrese al escenario de **Vistas**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s079]
+    pagina: null
+    fotos:
+      - id: "9c9ac6368736"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/45470a477f67.png"
+        pagina: null
+        caption: "Acceso al escenario de Vistas"
+        ocr: "Proyectos\n[2S PUENTE EN CARRETERA\na & 2 Pence\n] 5] Venta déscompuesto\ni= | Venta\nfm] S| Meta:\nVistas Luego, | Linea Base"
+  - n: 2
+    id: "gerencia-proyectos.registrar-vistas#2"
+    accion: "Defina la estructura de las vistas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s079]
+    pagina: null
+    fotos:
+      - id: "ce2c9fedc563"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/eb1fa9bbd710.png"
+        pagina: null
+        caption: "Definir estructura"
+        ocr: "a] ——*\n[__ J # JDescripcién\n[} 1 |Gifino de vistas 2 Color\nL_|2 vita 3 Color\n==> CO XKKHK\nee ER Eliminarbloque FA |\nLongitud acur|iaca maxima: 5\nCle derecho sso\nluego,"
+  - n: 3
+    id: "gerencia-proyectos.registrar-vistas#3"
+    accion: "Para efectuar el registro, haga clic derecho y elija **Nuevo: Grupo de vistas** o **Nuevo: Vista**."
+    fuente: [img-b84c729b13ae-0000, web-https-documentacion-s10peru-com-manual-d-s079]
+    pagina: null
+    fotos:
+      - id: "db10692c04ee"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/b84c729b13ae.png"
+        pagina: null
+        ocr: "5) Nuevo: Grupo de vistas F2\nDescripcién \"2. Nuevo: Vista 4 01000\nFe)\nClic derecho en @ Modificar FB\neste segmento  Duplica B"
+  - n: 4
+    id: "gerencia-proyectos.registrar-vistas#4"
+    accion: "Para asignar el título general, arrástrelo; para asignar un grupo (títulos y actividades) use doble clic."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s079]
+    pagina: null
+    fotos:
+      - id: "eaf5218546d6"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/ee1eca14de31.png"
+        pagina: null
+        caption: "Para asignar el título general, se arrastra y para asignar un grupo (títulos y actividades) use doble clic, otra alternativa es marcar un bloque y arrastrar desde el primer registro marcado en un recuadro de color amarillo."
+        ocr: "Vistas (Mad (aan\n| Arrastre el titulo —\nFase én (WES - Actividad) Metra -|\n1 Puente ericarretera c\n101 &] Preparacién de agregacos PM |\n{5} PA- Extraccién\nCon doble clic se 7\nExtraccién cantera (sin explosivos 2,\nasigna todo el grupo IS pA. Chencadk\nde actividades a — : |\nla vista jancado para agregado grueso conc F\n- S| Pa Zarandeo\nants Taranden macdnion nara acwacada (rancyn} 1\n—————————S— 0D\nDe…"
+  - n: 5
+    id: "gerencia-proyectos.registrar-vistas#5"
+    accion: "Otra alternativa es marcar un bloque y arrastrar desde el primer registro marcado en un recuadro de color amarillo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s079]
+    pagina: null
+  - n: 6
+    id: "gerencia-proyectos.registrar-vistas#6"
+    accion: "Vaya al escenario del **Cronograma por periodos** y use el botón de vistas para ver la vista."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s079, img-9481f98c03d4-0000]
+    pagina: null
+    fotos:
+      - id: "488635c6d694"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/9481f98c03d4.png"
+        pagina: null
+        ocr: "Cronegrama por Periades { Meta }\nModo Programado - Cronograma n\nUse este botén para\nEee a\nEE Jroco} *\nDescripy © vistas\n60° Preparacién de agregados\n[Puen © 6\" Cimientos\nmprd Oo Elevacién\nSon) 60\" Vige-losa\n| xt Gastos generales"
+verificacion:
+  - texto: "En el Cronograma por periodos, al visualizar una vista puede tener la información del programado e ingresar lo ejecutado o el porcentaje del trabajo completado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s079]
+errores_frecuentes: []
+relacionados: [gerencia-proyectos.planificar-en-cronograma-por-periodos, gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s079, manual: "Manual de Gerencia de Proyectos", seccion: "2.4 Vistas", pagina: null}
+  - {id: img-b84c729b13ae-0000, manual: "Manual de Gerencia de Proyectos", seccion: "b84c729b13ae.png", pagina: null}
+  - {id: img-9481f98c03d4-0000, manual: "Manual de Gerencia de Proyectos", seccion: "9481f98c03d4.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

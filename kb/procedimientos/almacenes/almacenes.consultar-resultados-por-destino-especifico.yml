@@ -1,0 +1,81 @@
+id: almacenes.consultar-resultados-por-destino-especifico
+version: 1
+modulo: almacenes
+titulo: "Consultar los resultados por destinos específicos"
+objetivo: "Obtener en el escenario de Resultados por Destinos Específicos los resultados valorizados, en un rango de fechas, de los recursos egresados a cada uno de los destinos específicos."
+nivel: basico
+preguntas:
+  - "cómo veo cuánto material se fue a cada destino específico"
+  - "donde veo los resultados por destinos especificos en almacenes"
+  - "quiero saber lo que se egresó a los cimientos del edificio"
+  - "como saco el valorizado de los recursos egresados por destino especifico"
+  - "resultados por destino especifico no me muestra nada, por que"
+  - "como veo los egresos al piso 2 entre dos fechas"
+  - "en que guias de egreso esta el recurso que fue a un destino especifico"
+aliases:
+  - "resultados por destinos específicos"
+  - "resultados por destino específico"
+  - "valorizado por destino específico"
+  - "egresos por destino específico"
+entidades:
+  modulo: "Almacenes"
+  pantallas: ["Resultados por Destinos Específicos"]
+  objetos: ["destino específico", "recurso", "período", "documentos de egreso"]
+prerrequisitos:
+  - texto: "Es requisito haber asignado un destino específico al egreso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s105]
+  - texto: "Los resultados por destino específico deben ser utilizados en el almacén tipo material."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s105]
+pasos:
+  - n: 1
+    id: "almacenes.consultar-resultados-por-destino-especifico#1"
+    accion: "Ingrese al escenario de **Resultados por Destinos Específicos**, que informa de los recursos egresados a cada uno de los destinos específicos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s105]
+    pagina: null
+  - n: 2
+    id: "almacenes.consultar-resultados-por-destino-especifico#2"
+    accion: "Seleccione la opción de todos para tomar los movimientos de ingresos y egresos desde el primer movimiento hasta el día de la consulta; sin selección, se toman solo los movimientos del período elegido."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s105]
+    pagina: null
+  - n: 3
+    id: "almacenes.consultar-resultados-por-destino-especifico#3"
+    accion: "Use el botón que permite elegir el tipo de período y elija el período."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s105]
+    pagina: null
+  - n: 4
+    id: "almacenes.consultar-resultados-por-destino-especifico#4"
+    accion: "Si necesita un reporte dentro de un rango de fechas, elija la fecha inicio y la fecha fin."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s105]
+    pagina: null
+  - n: 5
+    id: "almacenes.consultar-resultados-por-destino-especifico#5"
+    accion: "Use el botón que procesa los datos del período elegido o del rango de fechas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s105]
+    pagina: null
+    fotos:
+      - id: "21aa90d995da"
+        ruta_o_url: "imagenes/manual-de-almacenes/bbfa188723b8.png"
+        pagina: null
+        caption: "El botón procesa los datos del período elegido o el rango de fechas. (Antes de usar este botón elija el periodo o rango de fechas)."
+        ocr: "GcSultados Pog estinos Ay o\n————————— a,\nlv Todos Del] 13/02/2012 ~| A!| 15/02/2012 ~ | |Periodo Mensual A Procedenc\n1 =lEdiicol (©) 612.38 86\n0101 1 Estructuras 612.38 86\n010101 ~~ Cimientos 612.38 86\n010102 Piso 1 0.00 00\n010103 ~~ Piso2 0.00 00\n010104 Piso 3 0.00 00\n0102 i Acabados 0.00 00\n010201 Cisterna 0.00 00\n010202 ~~ $-2, depésito depto 101 0.00 00\n010203 P-1, zonas comunes 0.00 00\n010204…"
+  - n: 6
+    id: "almacenes.consultar-resultados-por-destino-especifico#6"
+    accion: "En la lista de los destinos específicos del proyecto, elija el destino específico."
+    resultado: "En la ventana inferior se muestran los recursos utilizados en el periodo que se informa."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s105]
+    pagina: null
+  - n: 7
+    id: "almacenes.consultar-resultados-por-destino-especifico#7"
+    accion: "Haga doble clic sobre un recurso del destino específico elegido."
+    resultado: "Se muestran los documentos de egreso donde está involucrado el recurso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s105]
+    pagina: null
+verificacion: []
+errores_frecuentes:
+  - sintoma: "Los resultados no corresponden al período o rango de fechas que necesito."
+    solucion: "Antes de usar el botón que procesa los datos, elija el periodo o el rango de fechas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s105]
+relacionados: [almacenes.registrar-egreso-a-partida-de-control]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s105, manual: "Manual de Almacenes", seccion: "3.11 Resultados por Destinos Específicos", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

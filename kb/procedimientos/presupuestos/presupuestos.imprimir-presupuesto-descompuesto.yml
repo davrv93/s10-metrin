@@ -1,0 +1,100 @@
+id: presupuestos.imprimir-presupuesto-descompuesto
+version: 1
+modulo: presupuestos
+titulo: "Revisar e imprimir los recursos en el presupuesto descompuesto"
+objetivo: "Mostrar juntas las partidas y subpartidas de todos los niveles del presupuesto para acumular sus recursos, e imprimirlos o exportarlos de modo que los montos coincidan con el monto presupuestado."
+nivel: intermedio
+preguntas:
+  - "como veo las subpartidas de todos los niveles en s10"
+  - "para que sirve el presupuesto descompuesto"
+  - "como imprimo los recursos del presupuesto para que cuadre con el monto presupuestado"
+  - "al imprimir los recursos no me coincide con el total del presupuesto"
+  - "como exporto el presupuesto descompuesto a excel"
+  - "como mando el presupuesto con subpartidas a ms project"
+  - "quiero ver todos los recursos de un titulo agrupados"
+  - "el presupuesto descompusto me sale vacio"
+aliases:
+  - "presupuesto descompuesto"
+  - "desglosar subpartidas"
+  - "recursos acumulados del presupuesto"
+  - "imprimir recursos con redondeo"
+entidades:
+  modulo: "Presupuestos"
+  pantallas: ["Presupuesto descompuesto"]
+  objetos: ["subpartidas", "partidas", "recursos", "subpresupuesto"]
+prerrequisitos:
+  - texto: "Ingrese a este escenario después de elaborar un presupuesto y cuando los análisis de precios unitarios tengan subpartidas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s115, "7c40a9548710-0185"]
+pasos:
+  - n: 1
+    id: "presupuestos.imprimir-presupuesto-descompuesto#1"
+    accion: "Elija el presupuesto y luego el subpresupuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s115, "7c40a9548710-0185"]
+    pagina: null
+  - n: 2
+    id: "presupuestos.imprimir-presupuesto-descompuesto#2"
+    accion: "Ingrese al escenario **Presupuesto descompuesto** con su botón de acceso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s115, "7c40a9548710-0185"]
+    pagina: null
+  - n: 3
+    id: "presupuestos.imprimir-presupuesto-descompuesto#3"
+    accion: "Use el botón que genera las subpartidas para mostrar el contenido."
+    resultado: "La ventana superior muestra las partidas y las subpartidas en la hoja."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s115, "7c40a9548710-0185", "7c40a9548710-0186"]
+    pagina: null
+  - n: 4
+    id: "presupuestos.imprimir-presupuesto-descompuesto#4"
+    accion: "Ubique el cursor en la ventana superior sobre el título o la partida; para los recursos de todo el presupuesto, ubíquelo en el totalizador."
+    resultado: "La ventana inferior muestra los recursos que participan de acuerdo a la ubicación del cursor."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s115, img-3b3d8a911049-0000, "7c40a9548710-0186"]
+    pagina: null
+    fotos:
+      - id: "c37fba167baa"
+        ruta_o_url: "imagenes/manual-de-presupuestos/3b3d8a911049.png"
+        pagina: null
+        ocr: "Presupuesto descompuesto\n\n001 Estructuras Do\nDescripcién [Unidee) Metrado | Precio (Si) | Parcial S/) | »\nSIESTRUCTURAS] <1) 213,111.13 [1\n© OBRAS PRELIMINARES 30,533.51|=\n\n} CONTENEDOR OFICINA, mes 6.00 24.00 144.00\n\nCONTENEDOR ALMACEN mes 6.00 24.00 144.00\n\nCONTENEDOR INODORO, LAVATORIOS <2) mes 6.00 24.00 144.00\n\nTRAZO INICIAL gbl 1.00 23.51 23.51\n\nTRAZO DURANTE LA EJECUCION DE LA OBRA, mes 6.0…"
+  - n: 5
+    id: "presupuestos.imprimir-presupuesto-descompuesto#5"
+    accion: "Haga clic derecho en la ventana inferior y elija **Vista Preliminar**."
+    resultado: "Se imprime en pantalla el contenido de la ventana."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s115, img-6b491cb8bff8-0000]
+    pagina: null
+    fotos:
+      - id: "9a0d59367815"
+        ruta_o_url: "imagenes/manual-de-presupuestos/6b491cb8bff8.png"
+        pagina: null
+        ocr: "Mostrar campos ...\nxs Exparlar a Micresalt face\n[& Vista Preliminar\n& Imprimir"
+  - n: 6
+    id: "presupuestos.imprimir-presupuesto-descompuesto#6"
+    accion: "Para enviar el contenido de la ventana a la impresora elegida en Windows, elija **Imprimir** en el mismo menú."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s115, img-6b491cb8bff8-0000]
+    pagina: null
+  - n: 7
+    id: "presupuestos.imprimir-presupuesto-descompuesto#7"
+    accion: "Para exportar los recursos de la ventana inferior a un archivo Excel, elija **Exportar a Microsoft Excel** en el mismo menú."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s115, "7c40a9548710-0186"]
+    pagina: null
+  - n: 8
+    id: "presupuestos.imprimir-presupuesto-descompuesto#8"
+    accion: "Para exportar el contenido de la ventana superior, haga clic derecho en ella, elija **Exportar a** y luego **Microsoft Project** o el archivo Excel."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s115, img-ac9ec75ff800-0000]
+    pagina: null
+    fotos:
+      - id: "38c4692fd3d0"
+        ruta_o_url: "imagenes/manual-de-presupuestos/ac9ec75ff800.png"
+        pagina: null
+        ocr: "Contraer: <Elije el nivel> -\n\nExportar a > ||@& Microsoft Project\n\nMostrar campos ... Miecresoft fxcel > a Partidas ={2-2-2-1 ‘TVitules sin recurses «02.20.2204\nDefinir estructura subpartidas (2-4) GYMSYS Partidas y recursos be{2-2-2-2] | Titulos con recursos | 22-222"
+verificacion: []
+errores_frecuentes:
+  - sintoma: "Al imprimir los recursos, los montos no coinciden con el monto presupuestado."
+    solucion: "Imprima los recursos desde el presupuesto descompuesto, que tiene opciones de redondeo: ubique el cursor en el totalizador, haga clic derecho en la ventana inferior y elija vista preliminar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s115]
+relacionados: [presupuestos.imprimir-reportes, presupuestos.procesar-presupuesto]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s115, manual: "Manual de Presupuestos", seccion: "5.1.8 Presupuesto descompuesto", pagina: null}
+  - {id: "7c40a9548710-0185", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 112}
+  - {id: "7c40a9548710-0186", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 112}
+  - {id: img-3b3d8a911049-0000, manual: "Manual de Presupuestos", seccion: "3b3d8a911049.png", pagina: null}
+  - {id: img-6b491cb8bff8-0000, manual: "Manual de Presupuestos", seccion: "6b491cb8bff8.png", pagina: null}
+  - {id: img-ac9ec75ff800-0000, manual: "Manual de Presupuestos", seccion: "ac9ec75ff800.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

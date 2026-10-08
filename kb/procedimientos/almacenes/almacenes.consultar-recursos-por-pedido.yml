@@ -1,0 +1,74 @@
+id: almacenes.consultar-recursos-por-pedido
+version: 1
+modulo: almacenes
+titulo: "Consultar en qué pedido está un recurso y su seguimiento"
+objetivo: "Ver en el escenario informativo Recursos por Pedido los pedidos en que se encuentra un recurso, el documento generado luego de aprobar el pedido y el seguimiento con el camino recorrido por el pedido."
+nivel: basico
+preguntas:
+  - "cómo sé en qué pedido está un recurso"
+  - "donde veo los pedidos en los que se pidió el alambre"
+  - "como veo el seguimiento de un pedido de materiales en almacenes"
+  - "ya aprobaron el pedido, dónde veo el pedido de compra que se generó"
+  - "como rastreo el camino que siguio un pedido"
+  - "recursos por pedido para que sirve"
+  - "en que pedido esta el cemento que pidio el residente"
+aliases:
+  - "recursos por pedido"
+  - "seguimiento del recurso"
+  - "documentos generados del pedido"
+  - "ver pedido del recurso"
+entidades:
+  modulo: "Almacenes"
+  pantallas: ["Recursos por Pedido"]
+  objetos: ["recurso", "pedido", "pedido de compra", "pedido a almacén"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "almacenes.consultar-recursos-por-pedido#1"
+    accion: "Acceda al escenario de **Recursos por Pedido**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s127]
+    pagina: null
+    fotos:
+      - id: "c62205f7cf33"
+        ruta_o_url: "imagenes/manual-de-almacenes/e1abfa7ac702.png"
+        pagina: null
+        caption: "Acceso al escenario"
+        ocr: "tke ] Proyectos Elia\n(foes =) ae Escritorio\nRecursos 0 PUENTE EN CARRETERA\npor Pedido Luego, 4. De Mateneles<."
+  - n: 2
+    id: "almacenes.consultar-recursos-por-pedido#2"
+    accion: "En la ventana superior, ubique un recurso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s127]
+    pagina: null
+  - n: 3
+    id: "almacenes.consultar-recursos-por-pedido#3"
+    accion: "Haga clic derecho sobre el recurso para mostrar el menú."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s127, img-dd991f8698f4-0000]
+    pagina: null
+    fotos:
+      - id: "8f84c59ff167"
+        ruta_o_url: "imagenes/manual-de-almacenes/dd991f8698f4.png"
+        pagina: null
+        ocr: "Recursos por pedido thay\nAY eR \\ aa\nCédigo Descripcién Unidad | Cantidad total | »\n0202000007: [ALAMBRE NEGRO RECOCIDO #16 kg 1,510.00 | |\n0202000008 = ALAMBRE NEGRO RECOCIDO #8 kg 660.00\n| Ut\nmeee 4 “e te et\nee ee __ |e ver Documento~(-1) tos Candied Pde\n—— De Materiales - Lima —(b) lo 200.00 0\n0007 De Materiales - Lima % Documentos generadose(i-2), in 8\n000000000002 De Materiales - Lima O82 Sogp…"
+  - n: 4
+    id: "almacenes.consultar-recursos-por-pedido#4"
+    accion: "Elija la opción que muestra el pedido donde se encuentra el recurso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s127]
+    pagina: null
+  - n: 5
+    id: "almacenes.consultar-recursos-por-pedido#5"
+    accion: "Luego de aprobado el pedido, elija **Documentos generados** para ver el documento que generó el sistema: pedido de compra o pedido a almacén."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s127, img-dd991f8698f4-0000]
+    pagina: null
+  - n: 6
+    id: "almacenes.consultar-recursos-por-pedido#6"
+    accion: "Elija la opción de seguimiento del recurso."
+    resultado: "Se muestra la ventana de seguimiento del recurso, con el camino recorrido por el pedido."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s127]
+    pagina: null
+verificacion: []
+errores_frecuentes: []
+relacionados: [almacenes.asignar-stock-minimo]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s127, manual: "Manual de Almacenes", seccion: "3.19.7 Recursos por Pedido", pagina: null}
+  - {id: img-dd991f8698f4-0000, manual: "Manual de Almacenes", seccion: "dd991f8698f4.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

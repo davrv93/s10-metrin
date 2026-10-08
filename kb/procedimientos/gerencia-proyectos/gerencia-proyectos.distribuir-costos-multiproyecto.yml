@@ -1,0 +1,93 @@
+id: gerencia-proyectos.distribuir-costos-multiproyecto
+version: 1
+modulo: gerencia-proyectos
+titulo: "Distribuir el costo de la nómina en los proyectos"
+objetivo: "Distribuir el monto de la nómina calculada en los proyectos donde trabajó el personal obrero, para cargarlo a los resultados operativos, y ver los costos distribuidos."
+nivel: avanzado
+preguntas:
+  - "cómo distribuyo el costo de la nómina en los proyectos"
+  - "como cargo la planilla a los resultados operativos"
+  - "distribucion de costos multiproyecto paso a paso"
+  - "donde veo el costo de la nomina por partida de control"
+  - "como veo cuanto costo cada trabajador en el proyecto"
+  - "ya calcule la nomina, como paso el costo a cada obra"
+  - "como envio el monto de la nomina a resultados operativos"
+  - "distribusion de costos s10 gerencia"
+aliases:
+  - "distribución de costos"
+  - "distribución de costos multiproyecto"
+  - "distribuir costos de la nómina"
+  - "ver costos distribuidos"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["DISTRIBUCION DE COSTOS MULTIPROYECTO", "Detalle por Partida de Control", "Detalle por Socio de Negocio"]
+  objetos: ["nómina", "proyecto", "partida de control", "TIPO DE NOMINA"]
+prerrequisitos:
+  - texto: "La nómina debe estar calculada: su monto es el que se distribuye en los proyectos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s201]
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.distribuir-costos-multiproyecto#1"
+    accion: "Elija el grupo **ACTIVIDADES**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s201]
+    pagina: null
+  - n: 2
+    id: "gerencia-proyectos.distribuir-costos-multiproyecto#2"
+    accion: "Ingrese al escenario **DISTRIBUCION DE COSTOS MULTIPROYECTO**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s201, img-6face7db445f-0000]
+    pagina: null
+    fotos:
+      - id: "53002d67f05a"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/6face7db445f.png"
+        pagina: null
+        ocr: "FBR onenins - oOo x\nArchivo Yer Catélogos Herramientas 2\nele ra\nQt at Distribucién de Costos Multiproyecto\n[pciwidedes || “# Serutanvavco.ono @\nss SR UULTFAMLIR ESC/HOADERO| proyecto 19009001 MULTIPROYECTO. ‘Actuaizacén area. 1\nBo i Buysrpaovecto(C)\nSugummoye ‘pode Ninna [001 Ovo de contucain Gren borefGee wees St) tata con:\nDevpsonnde sae Perode —__[omzoiraroi [Semanazorr-<7 a] Mado [Par Proyecto…"
+  - n: 3
+    id: "gerencia-proyectos.distribuir-costos-multiproyecto#3"
+    accion: "Elija el proyecto y luego la rama **META**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s201]
+    pagina: null
+  - n: 4
+    id: "gerencia-proyectos.distribuir-costos-multiproyecto#4"
+    accion: "Estando elegido el **TIPO DE NOMINA**, use el botón y luego **Si**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s201]
+    pagina: null
+  - n: 5
+    id: "gerencia-proyectos.distribuir-costos-multiproyecto#5"
+    accion: "Envíe el monto a **RESULTADOS OPERATIVOS**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s201]
+    pagina: null
+  - n: 6
+    id: "gerencia-proyectos.distribuir-costos-multiproyecto#6"
+    accion: "Para ver los costos de cada una de las partidas de control del proyecto elegido, haga clic derecho y elija **Detalle por Partida de Control**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s202, img-5800d0a6412f-0000]
+    pagina: null
+    fotos:
+      - id: "b6f759138b8b"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/5800d0a6412f.png"
+        pagina: null
+        ocr: "Distribucién de Costos Multiproyecto\nProyecto 19009001 MULTIPROYECTO\nTipo de Nomina |001 Obreros de construccidn civil con beneficios sociales 7 ey\nDeri 0220174701 [Semana 2017 - 47 ~ 44) Modo |Por Proyecto Sites\nHAM Fa } | Clicderecho |\nPeriodo Cédigo Proyect| Pravecto Horas | Horas Destino | Costo Néminas S/.| Costo Destino Si\n‘Semana 2017 - 47 20010001 425.00 425.00 5,096.52 5,096.52\nDetalle po…"
+      - id: "62e690b02723"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/332cb006ae3e.png"
+        pagina: null
+        caption: "Llamada a: Muestra los costos para cada una de las partidas de control del proyecto elegido."
+        ocr: "‘GP Detalle por Partida de Control = Oo x\nProyecto 20010001 FIMA HUAYCOLORO\n\nTipo de Nomina 001 Obreros de construccion civil con beneficios sociales\n\nPericdo Semana 2017 - 47 (Del 13/11/2017 Al 19/11/2017)\n\nBMAaR8S -Ef éeaea\n[césigo | céaigoterno [Descrocin [Farida De ConioiGeneral [Hoes [costo ‘|\nEstructuras 425.00 5,096.52"
+  - n: 7
+    id: "gerencia-proyectos.distribuir-costos-multiproyecto#7"
+    accion: "Para ver los costos de cada Socio de Negocio (trabajador), elija **Detalle por Socio de Negocio**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s202, img-5800d0a6412f-0000]
+    pagina: null
+    fotos:
+      - id: "98ab8f1537d5"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/f373d2d58118.png"
+        pagina: null
+        caption: "Llamada b: Muestra los costos para cada uno de los Socio de Negocio (trabajador)."
+        ocr: "(GP Detalle por Socio de Negocio - a x\n\nProyecto 20010001 FIMA HUAYCOLORO\n\nTipo de Nomina 001 Obreros de construccion civil con beneficios sociales\n\nPeriodo Semana 2017 - 47 (Del 13/11/2017 Al 19/11/2017)\n\nAYveARNS BF adalat\n[cédigo [oni __[Nombre__——|Horas | Costo_[Recurso Equivalente\n102100220 | 34526649 ARANIBAR CUEVAS, ARNULFO RAFAEL 42.50 628.32 OPERARIO ELECTRICISTA Operario\n02100221 4352232…"
+verificacion: []
+errores_frecuentes: []
+relacionados: [gerencia-proyectos.consultar-resumen-de-conceptos-por-dia, gerencia-proyectos.consultar-resultados-operativos]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s201, manual: "Manual de Gerencia de Proyectos", seccion: "5.16.6 Distribución de costos", pagina: null}
+  - {id: img-6face7db445f-0000, manual: "Manual de Gerencia de Proyectos", seccion: "6face7db445f.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s202, manual: "Manual de Gerencia de Proyectos", seccion: "5.16.6.1 Ver costos distribuidos", pagina: null}
+  - {id: img-5800d0a6412f-0000, manual: "Manual de Gerencia de Proyectos", seccion: "5800d0a6412f.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

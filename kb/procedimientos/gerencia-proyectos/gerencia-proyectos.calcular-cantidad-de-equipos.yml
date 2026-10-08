@@ -1,0 +1,105 @@
+id: gerencia-proyectos.calcular-cantidad-de-equipos
+version: 1
+modulo: gerencia-proyectos
+titulo: "Calcular la cantidad de equipos que se utilizará en el proyecto"
+objetivo: "Con el proyecto programado, ver en el Cronograma por periodos las horas máquina necesarias para ejecutar las actividades y determinar el número de equipos que se utilizará."
+nivel: intermedio
+preguntas:
+  - "cómo sé cuántos equipos necesito en la obra"
+  - "como calculo la cantidad de equipos del proyecto"
+  - "donde veo las horas maquina programadas por semana"
+  - "como veo las horas de volquete que necesito esta semana"
+  - "cuantos cargadores frontales necesito, como lo calculo en s10"
+  - "como muestro actividades y recursos en el cronograma por periodos"
+  - "cantidad de equipos que se utilizara en el proyecto"
+  - "horas maquina en el cronograma, como las veo"
+aliases:
+  - "cantidad de equipos"
+  - "calcular equipos"
+  - "horas máquina por semana"
+  - "equipos necesarios"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Cronograma por periodos"]
+  objetos: ["equipo", "horas máquina", "actividad", "rama meta"]
+prerrequisitos:
+  - texto: "El proyecto debe estar programado: así se observa la cantidad de horas necesarias para ejecutar la actividad."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s206]
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.calcular-cantidad-de-equipos#1"
+    accion: "Ingrese al escenario del **Cronograma por periodos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s206]
+    pagina: null
+  - n: 2
+    id: "gerencia-proyectos.calcular-cantidad-de-equipos#2"
+    accion: "En el árbol elija el proyecto y luego la rama meta."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s206]
+    pagina: null
+    fotos:
+      - id: "eb3324e0c7de"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/4254a3f4eacb.png"
+        pagina: null
+        caption: "En el árbol elija el proyecto, luego la rama meta. Luego use el botón y luego elija"
+  - n: 3
+    id: "gerencia-proyectos.calcular-cantidad-de-equipos#3"
+    accion: "Use el botón de modo y elija **Programado** y **Horas maquina**."
+    fuente: [img-186b1fda07db-0000, web-https-documentacion-s10peru-com-manual-d-s206]
+    pagina: null
+    fotos:
+      - id: "f5cb408bc281"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/186b1fda07db.png"
+        pagina: null
+        ocr: "Modo\n@ Programado  ( Yalorizacién ( Ejecutaclo (OT)\nS Horas maquina\n© Porcentaje (%)\n| Detalle\nhoras maquina ( equipos"
+  - n: 4
+    id: "gerencia-proyectos.calcular-cantidad-de-equipos#4"
+    accion: "Muestre actividades y recursos: elija **Actividades y Recursos**."
+    fuente: [img-76e267264c10-0000, web-https-documentacion-s10peru-com-manual-d-s206]
+    pagina: null
+    fotos:
+      - id: "ffe3a3eeacc2"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/76e267264c10.png"
+        pagina: null
+        ocr: "2) —\nActividades\nEsl Actividades y Recursos"
+      - id: "ecd2ee8a7746"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/103e5201b543.png"
+        pagina: null
+        caption: "Muestre actividades y recursos:"
+        ocr: "Cronograma por Periodos ( Meta )\nModo Programado - Horas maquina cantidad (hm)\nVistas | Toco | Escala de petioda |Periodo Semanal g\n~ Afio 2010\nDescripcién (WBS - Actividad) Semana17 Semana 18\n24/0410-25/ 26/04/10-02/,\n© Puente en carretera [clic derecho ]\n-E] Preparacién de agregados Clic derecho\nEl Extraccién\n178 Chancedo EB duitar periodo\n‘ Chancado para agregado grueso concreto\n(S| Zarandeo ea…"
+  - n: 5
+    id: "gerencia-proyectos.calcular-cantidad-de-equipos#5"
+    accion: "Revise las horas de cada equipo en la semana para ver la cantidad de equipos que necesita."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s206]
+    pagina: null
+    fotos:
+      - id: "64e12d7c8e41"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/b467eeb107f4.png"
+        pagina: null
+        caption: "Luego, para ver la cantidad de equipos que necesitamos,"
+        ocr: ":\n~ Afio 2010\nDescripcién (WEB - Actividad) - | Semana 17 | Semana 1é\nEstos son todos los equipos |> | 21004/0-25¢| 26/04/10-02/\nBlptentstentcaneters presupuetados y la cantidad\n=] Preparacién de agregados | © hora necesarias en la 446.45\n=] Extraccién semana 50.84\n| r\nCédigo —_Descripcién Recurso Unidad | [/Semana17 Semana 16\n03 EQUIPOS 446.45\n0348040034 CAMION VOLQUETE 12 m3 hm 60.50 fn@))\n03490…"
+  - n: 6
+    id: "gerencia-proyectos.calcular-cantidad-de-equipos#6"
+    accion: "Compare las horas necesarias con las horas que se trabajan en la semana: por ejemplo, 132 horas del cargador frontal frente a 48 horas semanales requieren 2 equipos y un sobretiempo diario de 3.5 horas de cada uno."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s206]
+    pagina: null
+    fotos:
+      - id: "7f9405dc4400"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/3f35039a398b.png"
+        pagina: null
+        caption: "Resumen de la cantidad de equipos necesarios"
+        ocr: "Cantidad) Nro."
+  - n: 7
+    id: "gerencia-proyectos.calcular-cantidad-de-equipos#7"
+    accion: "Registre en el catálogo de recursos el equipo propio y de terceros que se utilizará en el proyecto, para elaborar los partes diarios de equipo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s206]
+    pagina: null
+verificacion:
+  - texto: "El costo de los partes diarios de equipo se carga posteriormente a los resultados operativos en el módulo de Gerencia de proyectos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s206]
+errores_frecuentes: []
+relacionados: [gerencia-proyectos.planificar-en-cronograma-por-periodos, gerencia-proyectos.consultar-resultados-operativos]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s206, manual: "Manual de Gerencia de Proyectos", seccion: "6.3 Cantidad de equipos que se utilizará en el proyecto", pagina: null}
+  - {id: img-186b1fda07db-0000, manual: "Manual de Gerencia de Proyectos", seccion: "186b1fda07db.png", pagina: null}
+  - {id: img-76e267264c10-0000, manual: "Manual de Gerencia de Proyectos", seccion: "76e267264c10.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

@@ -1,0 +1,112 @@
+id: gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios
+version: 1
+modulo: gerencia-proyectos
+titulo: "Registrar un cambio en el análisis de precios unitarios"
+objetivo: "Administrar los cambios dentro del análisis de precios unitarios de una partida de la rama meta (se recomienda cambiar solo rendimientos y aportes de los recursos), congelando antes su estado actual, y consultarlos luego en el escenario de Control de Cambios Actividades."
+nivel: avanzado
+preguntas:
+  - "cómo cambio el análisis de precios unitarios en gerencia de proyectos"
+  - "como modifico la cuadrilla de una partida en la meta"
+  - "quiero cambiar el rendimiento de una partida del proyecto"
+  - "como registro el motivo del cambio en un analisis de precios"
+  - "donde veo los analisis de precios unitarios que fueron modificados"
+  - "como congelo el apu antes de cambiarlo"
+  - "control de cambios de apu en s10"
+  - "cambie la cantidad de personas de la partida y no se refleja"
+  - "como cambio el analisis de presios unitarios de la meta"
+aliases:
+  - "control de cambios"
+  - "cambiar análisis de precios unitarios"
+  - "modificar APU"
+  - "congelar análisis de precios unitarios"
+  - "autorización de cambio"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Cronograma por Periodos", "Autorizacion de cambio", "Control de Cambios Actividades"]
+  objetos: ["análisis de precios unitarios", "partida", "rama meta", "presupuesto", "motivo"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios#1"
+    accion: "Ingrese al escenario del **cronograma por periodos**; en el árbol elija el proyecto y luego la rama **meta**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s094]
+    pagina: null
+  - n: 2
+    id: "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios#2"
+    accion: "Ubique la partida que será cambiada."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s094]
+    pagina: null
+    fotos:
+      - id: "c6dd4d2d7bdf"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/bae5c8a9c8db.png"
+        pagina: null
+        caption: "Ubique la partida que será cambiada."
+        ocr: "Cronograma por Periodos ( Meta )\n\nModo Programado - Cronograma porcentaje (%)\n\nVistas Todo y| Escala de period:\n\na Periodo\n\nDescripcién (WBS - Actividad) jac 5\n\n1 © Puente en carretera\n\n104 >~f] Preparacién de agregados PA\n\n102 4] Construcci\n\n10201 “i C-Estrt Clic derecho\n\n1020101 pl CED Cimiento Contraer: <Elije el nivel> .\n\n10201011 L 4] C-ED-C- ido\n\n10201011 | BW Recalcular escala"
+  - n: 3
+    id: "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios#3"
+    accion: "Congele el análisis de precios unitarios: saque una réplica o copia de su estado actual."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s094]
+    pagina: null
+    fotos:
+      - id: "e0d2d3951e9e"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/0aac634e9993.png"
+        pagina: null
+        caption: "La etapa de congelamiento es sacar una réplica o copia del estado actual del análisis de precios unitarios."
+        ocr: "[Oo x\n\nPartida en 909801010202-0402003-01\n\nUso Concreto simple f'c = 100 kg/cm2\n\nClic derecho\nTES\n[ne [se [Motifo\n— 0\n\neT % Eliminar an de Obra\n\n[Descripcién] @ Notas lateriales\n\nProductividad por: nn quipos\n\nRendimiento DIA: 2E Exportar a Microsoft Excel bubcontratos\n\nPrecio Unitario: ind pubpartidas:\n\nDescripcién Recurso Cuadrilla | Cantidad Precio (S/) | Parcial\n\njaf | |"
+  - n: 4
+    id: "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios#4"
+    accion: "En la ventana **Autorizacion de cambio**, ingrese el motivo del cambio."
+    fuente: [img-8a0f413ffe74-0000]
+    pagina: null
+    fotos:
+      - id: "ae88353197bf"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/8a0f413ffe74.png"
+        pagina: null
+        ocr: "Autorizacion de cambio Es\noe\nPartida en 909801010202-0402003-01\nUso Concreto simple f'c = 100 kgicm2\nIngrese el motivo\n(B= Jwativo\nO01 02 [Ltiizar 3 oficiales ir 7\n| | By) 909801010404 (040200302) _Jornacda=8 | i Mano de Obra 1.40\nExtraccién cantera (sin explosivos) WMeteriales 0.00\nProductividad por m3: 0.1000 hh 0.0000 hm.hp SREquipos 4.63\nRendimiento DIA: | 400.0000 ae 0.00 | )Subcontratos 0.00…"
+  - n: 5
+    id: "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios#5"
+    accion: "Luego, en el análisis de precios unitarios del escenario del cronograma por periodos, modifique la cantidad de personas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s094]
+    pagina: null
+    fotos:
+      - id: "236190547948"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/23d15d7f0b75.png"
+        pagina: null
+        caption: "Luego, en el análisis de precios unitarios del escenario del cronograma por periodos, modifique la cantidad de personas;"
+        ocr: "| key] | 2) 909801010202 (0402003 02) Jornada =8 | # Mano de Obra 446.27\nConcreto simple fc = 100 kg/cm2 MA Materiales 69.00\nProductividad por m3: 4.0000 hh 0.0000 hm.hp SKEquipos 0.00\nRendimiento DIA: - 20.0000 be] 11.246\nPrecio Unitario: m3 174.32 —_— 49.81\n\nDescripcion Recurso Und. | Cuadrilla Cantidad Precio () Parcial ()\nOFICIAL CONCRETO hh 0.4000 12.13 4.85\n|__| @ |PEON CONCRETO hh 9.0000) 3…"
+  - n: 6
+    id: "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios#6"
+    accion: "Cierre la ventana y procese el presupuesto para tomar el cambio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s094]
+    pagina: null
+  - n: 7
+    id: "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios#7"
+    accion: "Para visualizar los análisis de precios unitarios que fueron modificados, vaya a **Resultados** y elija el escenario de **Control de Cambios Actividades**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s094]
+    pagina: null
+    fotos:
+      - id: "c10e3a33cdb4"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/83055b68c436.png"
+        pagina: null
+        caption: "Acceso al escenario"
+        ocr: "]\nResultados =) Escritorio\nOperatives Luego, (=) SD PUENTE EN CARRETERA,"
+      - id: "69a4fdbd64c9"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/6afd7a284a2b.png"
+        pagina: null
+        caption: "Acceso al escenario"
+        ocr: "Control de cambio Agtimidades\n\n909801010202-0402[Concreto simple fc = 100 kq/cm2 m3 i 04/07/ © Utilizar 3 oficiales\n909801010202-0402 Utiizar 3 oficiales ir 0407 02\n\n| | @y) 909801010202 (0402003 01) Jornada =8 | § Mano de Obra 46.27\n\nConcreto simple fc = 100 kg/cm MB Materiales 69.00\n\nProductividad porm3: 4.0000 hh 0.0000 hm.hp ‘KEquipos 0.00\n\nRendimiento DIA: _# | 20.0000 ae 0.00 | ESubcontratos…"
+verificacion:
+  - texto: "En el escenario de Control de Cambios Actividades se visualizan todos los análisis de precios unitarios que fueron modificados."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s094]
+errores_frecuentes:
+  - sintoma: "Necesita adicionar más metrado o recursos al proyecto."
+    solucion: "Hágalo desde el presupuesto de INCREMENTO DE OBRA; no modifique el presupuesto de compromiso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s094]
+  - sintoma: "Quiere cambiar el análisis de precios unitarios de una subpartida."
+    solucion: "El control de cambios no está disponible para subpartidas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s094]
+relacionados: []
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s094, manual: "Manual de Gerencia de Proyectos", seccion: "2.10 Control de cambios en los análisis de precios unitarios", pagina: null}
+  - {id: img-8a0f413ffe74-0000, manual: "Manual de Gerencia de Proyectos", seccion: "8a0f413ffe74.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

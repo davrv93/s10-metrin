@@ -1,0 +1,65 @@
+{
+ "i1": [
+  "almacenes.consultar-recursos-por-pedido",
+  "almacenes.consultar-resultados-por-destino-especifico",
+  "almacenes.definir-techo-del-proyecto",
+  "almacenes.registrar-egreso-por-bajas-y-mermas",
+  "almacenes.registrar-egreso-por-devolucion-al-proveedor",
+  "almacenes.registrar-egreso-por-prestamo",
+  "almacenes.registrar-egreso-por-venta-por-transferencia",
+  "almacenes.registrar-periodo-contable",
+  "almacenes.registrar-ubicacion-fisica"
+ ],
+ "i2": [
+  "presupuestos.asignar-prioridad-a-partidas",
+  "presupuestos.calcular-tiempos-para-programacion",
+  "presupuestos.disenar-cabeceras-de-reportes",
+  "presupuestos.emitir-plan-de-utilizacion-de-recursos",
+  "presupuestos.imprimir-presupuesto-descompuesto",
+  "presupuestos.registrar-indices-unificados",
+  "presupuestos.registrar-titulo-en-el-catalogo"
+ ],
+ "i3": [
+  "facturacion.actualizar-catalogo-de-detracciones-y-percepciones",
+  "facturacion.importar-facturas-electronicas-de-proveedores",
+  "facturacion.sincronizar-proyecto-con-sperant",
+  "nominas.registrar-horario-diario",
+  "nominas.registrar-logotipo",
+  "nominas.registrar-plantilla-de-documento"
+ ],
+ "i4": [
+  "gerencia-proyectos.agregar-periodos-en-resultados-operativos",
+  "gerencia-proyectos.amortizar-adelantos-y-pagos-a-cuenta",
+  "gerencia-proyectos.asignar-actividades-a-partidas-de-control",
+  "gerencia-proyectos.calcular-cantidad-de-equipos",
+  "gerencia-proyectos.calificar-techo-de-subcontratos",
+  "gerencia-proyectos.configurar-conceptos-y-jornal-por-categoria",
+  "gerencia-proyectos.configurar-datos-adicionales-del-proyecto",
+  "gerencia-proyectos.configurar-tareo-estandar-con-parte-semanal",
+  "gerencia-proyectos.consultar-resultados-operativos"
+ ],
+ "i5": [
+  "gerencia-proyectos.consultar-resultados-por-destino",
+  "gerencia-proyectos.consultar-resumen-de-conceptos-por-periodo",
+  "gerencia-proyectos.deducir-recursos-entregados-al-subcontratista",
+  "gerencia-proyectos.devolver-fondo-de-garantia",
+  "gerencia-proyectos.distribuir-costos-multiproyecto",
+  "gerencia-proyectos.elegir-personal-y-generar-parte-semanal",
+  "gerencia-proyectos.generar-pedido-automatico-a-almacen",
+  "gerencia-proyectos.imprimir-reportes-de-la-planificacion",
+  "gerencia-proyectos.mostrar-campos-personalizados-en-resultados-operativos"
+ ],
+ "i6": [
+  "gerencia-proyectos.planificar-con-ms-project",
+  "gerencia-proyectos.registrar-adelanto-con-garantia-del-subcontrato",
+  "gerencia-proyectos.registrar-avances-en-la-rama-meta",
+  "gerencia-proyectos.registrar-cambio-en-analisis-de-precios-unitarios",
+  "gerencia-proyectos.registrar-equipo-como-activo",
+  "gerencia-proyectos.registrar-incremento-de-obra",
+  "gerencia-proyectos.registrar-partes-diarios-de-equipo",
+  "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo",
+  "gerencia-proyectos.registrar-valorizacion-mensual-en-cronograma",
+  "gerencia-proyectos.registrar-vistas",
+  "gerencia-proyectos.reprogramar-el-proyecto"
+ ]
+}

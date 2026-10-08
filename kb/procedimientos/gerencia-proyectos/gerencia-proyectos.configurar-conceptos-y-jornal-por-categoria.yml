@@ -1,0 +1,108 @@
+id: gerencia-proyectos.configurar-conceptos-y-jornal-por-categoria
+version: 1
+modulo: gerencia-proyectos
+titulo: "Configurar los conceptos remunerados y el jornal por categoría"
+objetivo: "Seleccionar los conceptos remunerados de valor constante (jornal diario y BUC) para el tipo de nómina del proyecto, elegir las categorías y registrar sus valores en la matriz de constantes."
+nivel: intermedio
+preguntas:
+  - "cómo registro el jornal diario por categoría en gerencia de proyectos"
+  - "donde pongo el porcentaje de la BUC para operario oficial y peon"
+  - "como configuro los conceptos de la nomina del proyecto"
+  - "donde esta la matriz de constantes"
+  - "como agrego las categorias operario oficial peon a la matriz"
+  - "como cargo el jornal de construccion civil al proyecto"
+  - "configuracion de conceptos s10 nominas del proyecto"
+  - "bonificacion unificada de construccion donde se registra"
+aliases:
+  - "conceptos remunerados"
+  - "jornal diario por categoría"
+  - "matriz de constantes"
+  - "registrar BUC"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["MATRIZ DE RESPONSABLES", "Matriz de Constantes"]
+  objetos: ["concepto", "tipo de nómina", "categoría", "jornal diario", "BUC"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.configurar-conceptos-y-jornal-por-categoria#1"
+    accion: "Elija el grupo **NOMINAS**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s195]
+    pagina: null
+  - n: 2
+    id: "gerencia-proyectos.configurar-conceptos-y-jornal-por-categoria#2"
+    accion: "Ingrese al escenario de **MATRIZ DE RESPONSABLES** (la ventana se muestra como **Matriz de Constantes**)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s195, img-a1f26bd6cc31-0000]
+    pagina: null
+  - n: 3
+    id: "gerencia-proyectos.configurar-conceptos-y-jornal-por-categoria#3"
+    accion: "Elija el proyecto y ubíquese en la rama **META**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s195]
+    pagina: null
+  - n: 4
+    id: "gerencia-proyectos.configurar-conceptos-y-jornal-por-categoria#4"
+    accion: "Elija el **TIPO DE NOMINA**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s195]
+    pagina: null
+  - n: 5
+    id: "gerencia-proyectos.configurar-conceptos-y-jornal-por-categoria#5"
+    accion: "Haga clic en el botón **CONFIGURACION DE CONCEPTOS**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s195]
+    pagina: null
+    fotos:
+      - id: "e19abf4d604a"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/95aecd65b9d0.png"
+        pagina: null
+        caption: "Llamada e: Haga clic en el botón CONFIGURACION DE CONCEPTOS."
+        ocr: "fini Conceptos: CATEGORIA-001 Obreros de construccién civil conb..\nBveRES BS eae\n[oven [cisigo [oeserpeén [civ\n101007005 JORNAL DIARIO - CONST. CIVIL\n2 01007034 = BONIFICACION UNIFICADA DE CONSTRUCCION\ncena concetr"
+  - n: 6
+    id: "gerencia-proyectos.configurar-conceptos-y-jornal-por-categoria#6"
+    accion: "Registre las variables que tendrán un valor constante: **JORNAL DIARIO - CONST. CIVIL** y **BONIFICACION UNIFICADA DE CONSTRUCCION**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s195, img-799299490bf3-0000]
+    pagina: null
+    fotos:
+      - id: "119174ff0a3a"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/799299490bf3.png"
+        pagina: null
+        ocr: "JORNAL DIARIO - CONST. CIVIL\nBONIFICACION UNIFICADA DE CONSTRUCCION"
+  - n: 7
+    id: "gerencia-proyectos.configurar-conceptos-y-jornal-por-categoria#7"
+    accion: "En la matriz, haga clic derecho y elija las categorías (por ejemplo, Operario, Oficial y Peón) del catálogo, con la finalidad de asignarles valores."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s196, img-a1f26bd6cc31-0000, img-4d0c26b13849-0000]
+    pagina: null
+    fotos:
+      - id: "22db2861800b"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/a1f26bd6cc31.png"
+        pagina: null
+        ocr: "Matriz de Constantes\nProyecto 19009001 MULTIPROYECTO\nTipo de Némina [001 Obreros de construccién civil con beneficios sociales | Grupo |CATEGORIA wv ‘|\nEWwAREBS vaF ada\nCédigo Descripcién\nClic derecho"
+      - id: "e12e46ac913e"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/4d0c26b13849.png"
+        pagina: null
+        ocr: "®8 Catélogo de Categorias Oo x\nOpciones 2?\nOe KBE Y BR OO MHS Ete\n|_ |__| cédigo [Degeripcis Abreviatura |\n|_| 002 | Operario Op\n|_| 003 | Oficial oF\n|_| 004 _| Pe\n|_|_00s_|émgeado ED\n002 Operario Op\n1003 (Oficial ‘OF\n004 Pedn Pe\n3 sa | [Registro: 4de 6 004 - Peén y"
+  - n: 8
+    id: "gerencia-proyectos.configurar-conceptos-y-jornal-por-categoria#8"
+    accion: "Ingrese a cada una de las categorías los valores del jornal diario y de la BUC (%)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s197]
+    pagina: null
+    fotos:
+      - id: "4b5896b7ddf6"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/3117d1527001.png"
+        pagina: null
+        caption: "Ingrese los siguientes valores a cada una de las categorías,"
+        ocr: "Peon 43.5 30"
+      - id: "42889ef6f019"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/68d91c9b2103.png"
+        pagina: null
+        caption: "Ingrese los siguientes valores a cada una de las categorías,"
+        ocr: "Matriz de Constantes\nProyecto 19009001 MULTIPROYECTO\nTipo de Némina [001 Obreros de construccin civil con beneficios sociales +] Grupo [caTecora >|\ni i\nes! RES 4G @dla Ingrese los datos\nArrastre hacia aqui el encabezado de la columna que desea agrupar.\n3/3 Campo|cédigo ¥]fen cualquier posicién Grupo:\nCédigo Descripcién JORNAL DIARIG- Cc] BUC (%)\n002 Operario 64.30 32.00\n003 Oficial 52.00 30.00]\nPe…"
+verificacion: []
+errores_frecuentes: []
+relacionados: [gerencia-proyectos.consultar-resumen-de-conceptos-por-dia, gerencia-proyectos.consultar-tareo-detallado]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s195, manual: "Manual de Gerencia de Proyectos", seccion: "5.16.2.1 Selección de conceptos remunerados", pagina: null}
+  - {id: img-a1f26bd6cc31-0000, manual: "Manual de Gerencia de Proyectos", seccion: "a1f26bd6cc31.png", pagina: null}
+  - {id: img-799299490bf3-0000, manual: "Manual de Gerencia de Proyectos", seccion: "799299490bf3.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s196, manual: "Manual de Gerencia de Proyectos", seccion: "5.16.2.2 Registro de las categorías", pagina: null}
+  - {id: img-4d0c26b13849-0000, manual: "Manual de Gerencia de Proyectos", seccion: "4d0c26b13849.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s197, manual: "Manual de Gerencia de Proyectos", seccion: "5.16.2.3 Registro del jornal diario y BUC", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

@@ -1,0 +1,109 @@
+id: gerencia-proyectos.consultar-resultados-por-destino
+version: 1
+modulo: gerencia-proyectos
+titulo: "Consultar los resultados por destino de los egresos a partidas de control"
+objetivo: "Obtener en el escenario Resultados por Destino un informe, en un rango de fechas o periodo, de los egresos de recursos del almacén hacia las partidas de control del proyecto, cuyo monto se visualiza en los resultados operativos."
+nivel: basico
+preguntas:
+  - "cómo veo los resultados por destino del almacén"
+  - "donde consulto los egresos a partidas de control de una semana"
+  - "como saco el informe de materiales egresados por partida de control"
+  - "cuanto material se ha egresado a cada partida de control"
+  - "como veo las guias de egreso de un recurso en resultados por destino"
+  - "el informe de resultados por destino no filtra por fechas"
+  - "como consulto los egresos de todos los periodos desde el inicio"
+  - "reporte de resultados x destino en gerencia de proyectos"
+aliases:
+  - "resultados por destino"
+  - "informe de egresos a partida de control"
+  - "informes del almacén"
+  - "consultar egresos por destino"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Resultados por Destino", "Catalogo de Periodos"]
+  objetos: ["egreso a partida de control", "partida de control", "recurso", "guias", "periodo", "almacén"]
+prerrequisitos:
+  - texto: "Ejecute el proceso de recosteo antes de emitir los reportes: calcula los precios promedio de los recursos y es por almacén."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s131]
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.consultar-resultados-por-destino#1"
+    accion: "Ingrese al escenario **Resultados por Destino**: elija el proyecto y luego el almacén."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s132]
+    pagina: null
+    fotos:
+      - id: "4cc5e1cfc56a"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/7abf18e84dc8.png"
+        pagina: null
+        caption: "Acceso al escenario Resultados por Destino"
+        ocr: "el ro [ee |\na Escritorio\nResultados =) PUENTE EN CARRETERA,\n“1 Luego B WDe Neterialos My"
+  - n: 2
+    id: "gerencia-proyectos.consultar-resultados-por-destino#2"
+    accion: "Elija el período para el informe."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s132]
+    pagina: null
+    fotos:
+      - id: "11c9ece0e0a3"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/5c9c67a932b2.png"
+        pagina: null
+        caption: "Elija el período para el informe"
+        ocr: "iResultades por destine - Partidas\n(@)F Todos Del yal +] |Perioda Mensual ++\n— Mensual q ———"
+    sub:
+      - n: 1
+        id: "gerencia-proyectos.consultar-resultados-por-destino#2.1"
+        accion: "Para acumular los datos desde el primer movimiento de egreso a partida de control hasta la fecha de consulta (todos los períodos), deje seleccionada la celda **Todos**."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s132]
+        pagina: null
+      - n: 2
+        id: "gerencia-proyectos.consultar-resultados-por-destino#2.2"
+        accion: "Para un rango de fechas, quite la selección de la celda **Todos** y elija en **Del** la fecha inicial y en **Al** la fecha fin."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s132]
+        pagina: null
+      - n: 3
+        id: "gerencia-proyectos.consultar-resultados-por-destino#2.3"
+        accion: "Para un periodo, quite la selección de la celda **Todos**, elija el periodo semanal y, en la ventana **Catalogo de Periodos**, elija la semana con doble clic."
+        fuente: [img-87eb93887d30-0000, web-https-documentacion-s10peru-com-manual-d-s132]
+        pagina: null
+        fotos:
+          - id: "68d4bcd54e72"
+            ruta_o_url: "imagenes/manual-de-gerencia-proyectos/87eb93887d30.png"
+            pagina: null
+            ocr: "Catalogo de Periodos | © [aise\nOpciones 2\nbE eve Qim ¢ 2A 3]\nDescrincién Del Al a\n= [f2) Periodo Semanal 2104/2010 24/11/2010 Bl)\n5G) afo 2010 2imano10 2412010\nsemana 17 aimannig 25/04/2010\n@ Glen 78] Doble clic fo c2nsi2o10"
+  - n: 3
+    id: "gerencia-proyectos.consultar-resultados-por-destino#3"
+    accion: "Use el botón para procesar."
+    resultado: "Se muestran los resultados: los egresos a partidas de control del rango o periodo elegido, incluidas las guías de egreso de Partida de Control con Descarga Directa."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s132]
+    pagina: null
+    fotos:
+      - id: "c04317384403"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/836e6113f1d2.png"
+        pagina: null
+        caption: "Use el botón para procesar. Estos son los resultados."
+        ocr: "(jee POFedestino - Gee dege <\n— Or\nTodos Del |26/04/2010 | Al |02/05/2010 | |Periodo Semanal ¥| Semana 18\non [=] =} 20,187.44 7,108.23\n0101 -&] Costos Directos: 20,187.44 7,108.23\n0101001 Preparacion de agregados 0.00 0.00\n0101002 Encofrado 429.84 151.27\n0101003 Concreto 13,855.20 4,879.44\nRecurso Unidad | Cantidad Atendida| Valorizado (Si)\nALAMBRE NEGRO RECOCIDO #16. kg 48.00 187.20\nALAMBRE NEGRO…"
+  - n: 4
+    id: "gerencia-proyectos.consultar-resultados-por-destino#4"
+    accion: "Ubique el cursor en la celda del totalizador para mostrar en la ventana inferior los recursos involucrados en los movimientos de egreso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s132]
+    pagina: null
+  - n: 5
+    id: "gerencia-proyectos.consultar-resultados-por-destino#5"
+    accion: "Haga doble clic sobre el recurso para ver las guías involucradas en los movimientos de egreso, y doble clic sobre el documento involucrado para ver su detalle."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s132]
+    pagina: null
+verificacion:
+  - texto: "El totalizador muestra el monto total acumulado, que será visualizado en los resultados operativos siempre y cuando solo sean recursos tipo material."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s132]
+  - texto: "La información de los egresos a partidas de control se visualiza en **RESULTADOS OPERATIVOS** del módulo de Gerencia de proyectos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s133]
+errores_frecuentes:
+  - sintoma: "Eligió un rango de fechas o un periodo, pero el informe sigue mostrando todos los egresos."
+    solucion: "Para elegir fechas o un periodo, la celda **Todos** no debe estar seleccionada."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s132]
+relacionados: [gerencia-proyectos.egresar-a-partida-de-control-con-pedido]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s131, manual: "Manual de Gerencia de Proyectos", seccion: "3.11.2 Recostear", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s132, manual: "Manual de Gerencia de Proyectos", seccion: "3.12 Informes (1)", pagina: null}
+  - {id: img-87eb93887d30-0000, manual: "Manual de Gerencia de Proyectos", seccion: "87eb93887d30.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s133, manual: "Manual de Gerencia de Proyectos", seccion: "3.12 Informes (2)", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

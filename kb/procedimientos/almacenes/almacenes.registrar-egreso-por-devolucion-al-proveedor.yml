@@ -1,0 +1,84 @@
+id: almacenes.registrar-egreso-por-devolucion-al-proveedor
+version: 1
+modulo: almacenes
+titulo: "Devolver recursos al proveedor con un egreso por devolución"
+objetivo: "Registrar la salida de los recursos que deben ser devueltos al proveedor (por ejemplo, porque no cumplen con las especificaciones técnicas o la calidad establecida): con un Egreso por Devolución al Proveedor si ingresaron por compra, o con un Egreso por Devolución por orden de Compra si ingresaron con un Ingreso por orden de Compra."
+nivel: intermedio
+preguntas:
+  - "cómo devuelvo materiales al proveedor en almacenes"
+  - "el proveedor mandó cemento en mal estado, cómo lo devuelvo en el sistema"
+  - "como hago un egreso por devolucion al proveedor"
+  - "como devuelvo recursos que entraron con orden de compra"
+  - "el material no cumple las especificaciones, como registro la devolucion"
+  - "qué precio toma la devolución al proveedor"
+  - "me equivoque al pedir un material y ya lo ingrese, como se lo regreso al proveedor"
+  - "egreso por devolucion por orden de compra edoc"
+aliases:
+  - "egreso por devolución al proveedor"
+  - "devolución al proveedor"
+  - "EDOC"
+  - "egreso por devolución por orden de compra"
+  - "devolver al proveedor"
+entidades:
+  modulo: "Almacenes"
+  pantallas: ["Egresos"]
+  objetos: ["proveedor", "recurso", "orden de compra", "precio promedio", "ingreso por compra"]
+prerrequisitos:
+  - texto: "Para efectuar la devolución al proveedor, el recurso previamente ha debido ser registrado en el almacén con un ingreso por compra."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s073]
+  - texto: "Con el Egreso por Devolución por orden de Compra solo se devuelve un recurso que ingresó con orden de compra."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s075]
+pasos:
+  - n: 1
+    id: "almacenes.registrar-egreso-por-devolucion-al-proveedor#1"
+    accion: "En la barra de vistas, elija el acceso al escenario de **Egresos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s063]
+    pagina: null
+  - n: 2
+    id: "almacenes.registrar-egreso-por-devolucion-al-proveedor#2"
+    accion: "En el árbol, elija el proyecto y el almacén."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s063]
+    pagina: null
+  - n: 3
+    id: "almacenes.registrar-egreso-por-devolucion-al-proveedor#3"
+    accion: "Elija el tipo de egreso: **Egreso por Devolución al Proveedor** si el recurso ingresó con un ingreso por compra, o **Egreso por Devolución por orden de Compra** si ingresó con un Ingreso por orden de Compra."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s073, web-https-documentacion-s10peru-com-manual-d-s075, web-https-documentacion-s10peru-com-manual-d-s063]
+    pagina: null
+  - n: 4
+    id: "almacenes.registrar-egreso-por-devolucion-al-proveedor#4"
+    accion: "Efectúe un nuevo egreso y registre el tipo de cambio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s063]
+    pagina: null
+  - n: 5
+    id: "almacenes.registrar-egreso-por-devolucion-al-proveedor#5"
+    accion: "Registre los datos en la cabecera del documento."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s063]
+    pagina: null
+  - n: 6
+    id: "almacenes.registrar-egreso-por-devolucion-al-proveedor#6"
+    accion: "En el formulario de **Egreso por Devolución por Orden de Compra**, invoque al proveedor al que devolverán los recursos."
+    resultado: "El sistema almacena a todos los proveedores que tienen ingreso por orden de compra, con los recursos y cantidades."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s075]
+    pagina: null
+  - n: 7
+    id: "almacenes.registrar-egreso-por-devolucion-al-proveedor#7"
+    accion: "En el cuerpo del documento, adicione los recursos que se devuelven."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s063]
+    pagina: null
+  - n: 8
+    id: "almacenes.registrar-egreso-por-devolucion-al-proveedor#8"
+    accion: "Registre la cantidad de cada recurso que se devuelve."
+    resultado: "El recurso egresado toma el precio promedio del sistema."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s063, web-https-documentacion-s10peru-com-manual-d-s073]
+    pagina: null
+verificacion: []
+errores_frecuentes:
+  - sintoma: "No aparece el recurso para devolverlo con el Egreso por Devolución por orden de Compra."
+    solucion: "Con ese egreso solo se devuelve un recurso que ingresó con orden de compra; si ingresó con un ingreso por compra, use el Egreso por Devolución al Proveedor."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s075, web-https-documentacion-s10peru-com-manual-d-s073]
+relacionados: [almacenes.registrar-ingreso-por-compra, almacenes.registrar-ingreso-por-orden-de-compra, almacenes.registrar-egreso-a-partida-de-control]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s073, manual: "Manual de Almacenes", seccion: "2.2.6.1 Egreso por Devolución al Proveedor [E DPR]", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s075, manual: "Manual de Almacenes", seccion: "2.2.6.3 Egreso por Devolución por orden de Compra [EDOC]", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s063, manual: "Manual de Almacenes", seccion: "2.2.2.1 Egreso a Partida de Control [EPC] (1)", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

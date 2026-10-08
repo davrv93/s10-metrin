@@ -1,0 +1,156 @@
+id: gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo
+version: 1
+modulo: gerencia-proyectos
+titulo: "Registrar un subcontrato para alquiler de equipo"
+objetivo: "Registrar el subcontrato de alquiler de equipo a partir de una orden de servicio aprobada, que registra los recursos, cantidades y precios, y completar sus datos y su impuesto de valorización."
+nivel: intermedio
+preguntas:
+  - "cómo registro un subcontrato de alquiler de equipo"
+  - "donde se registra el alquiler de maquinaria como subcontrato"
+  - "como jalo la orden de servicio al subcontrato de alquiler"
+  - "como creo el SC alquiler de equipo en gerencia de proyectos"
+  - "como le pongo el igv al subcontrato de alquiler de equipo"
+  - "el subcontrato de alquiler de equipo lleva partida de control"
+  - "como registro el adelanto y fondo de garantia en el alquiler de equipos"
+  - "subcontrato alquiler de equipo s10 como se hace"
+  - "no me aparece la orden de servicio para el subcontrato de alquiler"
+aliases:
+  - "subcontrato de alquiler de equipo"
+  - "SC alquiler de equipo"
+  - "registrar alquiler de equipo"
+  - "alquiler de maquinaria"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["SC Alquiler de Equipo", "Impuesto Valorización", "catálogo de Impuestos"]
+  objetos: ["subcontrato", "orden de servicio", "adelanto", "fondo de garantía", "frecuencia de pago", "impuesto"]
+prerrequisitos:
+  - texto: "Debe existir una orden de servicio aprobada: el sistema muestra las órdenes de servicio aprobadas para elegirlas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s223]
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo#1"
+    accion: "Acceda al escenario de **SC Alquiler de Equipo**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s223]
+    pagina: null
+    fotos:
+      - id: "b8177476ce4a"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/8baaca28f8c6.png"
+        pagina: null
+        caption: "Acceso al escenario de SC Alquiler de Equipo"
+        ocr: "[_ eins]\nJ ro Ee |\nAlquiler de ae} Escritorio\nEquipo.\nLuego, =) SS PUENTE EN CARRETERA,"
+  - n: 2
+    id: "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo#2"
+    accion: "Haga clic derecho y elija **Adicionar Subcontrato**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s223, img-136952047006-0000]
+    pagina: null
+    fotos:
+      - id: "2ac2dc0a0673"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/136952047006.png"
+        pagina: null
+        ocr: "Subscontrate - Alquiler Equipe f=]\nmon ot ea ee\n‘Subcontratos\nD) adicionar Subcontrato"
+  - n: 3
+    id: "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo#3"
+    accion: "Elija la orden de servicio con el botón de la ventana de registro."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s223]
+    pagina: null
+    fotos:
+      - id: "40dd0e397111"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/08bd57890e6c.png"
+        pagina: null
+        caption: "Acceso al escenario de SC Alquiler de Equipo"
+        ocr: "Saya coble olin sn ees tnten =\nNE Ragisire det ubreombrat og type age acu ls ctien ds Seve)\nContrato - Alquiler Equipo\n\n(Orden de ro\nCédigo 02001015 Sues N* Subcontrato"
+  - n: 4
+    id: "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo#4"
+    accion: "De las órdenes de servicio aprobadas que muestra el sistema, elija la orden con doble clic."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s223]
+    pagina: null
+    fotos:
+      - id: "1effabb739ae"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/9b071e78ec66.png"
+        pagina: null
+        caption: "El sistema muestra las ordenes de servicio aprobadas para elegirlo,"
+        ocr: "[eh\nica)\n\nAYyeAss BE | a Elija con doble clic\nProyecto: Estado N° Orden de Ser] Proveedor\nPUENTE EN CARRETERA, Aprobado: 0001 q\nBYvGEhs Bh aga\nCédigo Recurso Unidl] Cantidad Total] Precio Sin Deto. Sin LGV.\n0348040034 CAMION YOLQUETE 12 m3 hin 60 120\n0349040008 CARGADOR SOBRE LLANTAS 100-115 HP 2-2.25 yd3 hin 132 300\n0349040033 TRACTOR DE ORUGAS DE 140-160 HP hm 50 230\n0349080001 CHANCADORA PRIMAR…"
+  - n: 5
+    id: "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo#5"
+    accion: "La orden de servicio elegida registra varios datos al subcontrato; complete los siguientes datos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s223]
+    pagina: null
+    fotos:
+      - id: "73bcf7e0680d"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/72bccbf6d29b.png"
+        pagina: null
+        caption: "La orden de servicio elegida registra varios datos al subcontrato, el usuario debe completar lo marcado con las llamadas."
+        ocr: "Le\n(GB Registro del Subcontrato Se\nContrate - Alquiler Equipo:\nOrden de\nCédigo 02001015 Servicio N* Subcontrato\nDeseripcién SC Alquiler de equipo ~@)\nSubeontratista [77jqn002 Pos, Jose =] @&| Moneda fo; UEVOSSOLES _— Ho)\nEspecialidad [0191014 [Equipo @y--| Adelanto [9 Requiere gerantia? [~\ntectura josorrz0001 _[SCALOULERDEEGU jd) I F2Ctat —  scRetenciones |\nFecha de Fecha de Fecha de, Fecha de\n211…"
+    sub:
+      - n: 1
+        id: "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo#5.1"
+        accion: "Ingrese el nombre del subcontrato."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s223]
+        pagina: null
+      - n: 2
+        id: "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo#5.2"
+        accion: "Elija la especialidad, que es un dato para agrupar información."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s223]
+        pagina: null
+      - n: 3
+        id: "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo#5.3"
+        accion: "Ingrese el % del adelanto solo si se le da adelanto; caso contrario, deje en cero."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s223]
+        pagina: null
+      - n: 4
+        id: "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo#5.4"
+        accion: "Registre una selección solo en caso de contar con un documento bancario de garantía."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s223]
+        pagina: null
+      - n: 5
+        id: "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo#5.5"
+        accion: "Ingrese el porcentaje que será descontado por concepto de fondo de garantía."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s223]
+        pagina: null
+      - n: 6
+        id: "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo#5.6"
+        accion: "Ingrese la fecha de inicio de los trabajos: solo se permite valorizar a partir de esta fecha."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s223]
+        pagina: null
+      - n: 7
+        id: "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo#5.7"
+        accion: "Verifique la frecuencia de pago, que también se utiliza para realizar las valorizaciones."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s223]
+        pagina: null
+  - n: 6
+    id: "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo#6"
+    accion: "Revise los recursos, cantidades y precios que la orden de servicio registra en el subcontrato."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s223]
+    pagina: null
+    fotos:
+      - id: "e81a3b3cc7c6"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/0d5d658b10d8.png"
+        pagina: null
+        caption: "La orden de servicio registra en el subcontrato, los recursos, cantidades y precios;"
+        ocr: "conaeatarie) Adelantos: Pagos a cuenta Retenciones Valorizado Facturadol Pendiente por\nCtorgaco Amortizado Otorgaco Amortizaco Retenido|Devuelto % Bruto Neto, Valorizar Facturar|\n—_ —E—E—————————SSSSSSssssss\n\nRecursos Asignados\n\nCodigo: Descripcién Und Cant. Origen Cant. Adic Cant.Dedi Cantidad Precio\n0348040034 CAMION YOLQUETE 12 m3 hm 60.00 60.00 120.00\n0349040008 CARGADOR SOBRE LLANTAS 100-115 …"
+  - n: 7
+    id: "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo#7"
+    accion: "Ingrese a la pestaña **Impuesto Valorización** e invoque el **catálogo de Impuestos** para elegir el impuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s223]
+    pagina: null
+    fotos:
+      - id: "0ab3b47cce46"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/176d4c2a27c7.png"
+        pagina: null
+        caption: "Llamada h: Ingrese a la pestaña Impuesto Valorización,"
+        ocr: "pe nee\n‘Cédigo Descripcién ‘Signo Tasa\n(006 _Impuesto General a las Ventas (18%) 1 18\nt Clic derecho D) Adicionar —D\nMe x\nEste es el impuesto asignada  Eliminar\neee ees\nImportar de Microsoft Excel\nBE Exportar a Microsoft Excel\nAdicionar Cancelar"
+  - n: 8
+    id: "gerencia-proyectos.registrar-subcontrato-de-alquiler-de-equipo#8"
+    accion: "No asigne partida de control al subcontrato de alquiler de equipo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s223]
+    pagina: null
+verificacion: []
+errores_frecuentes:
+  - sintoma: "Necesita valorizar trabajos anteriores a la fecha de inicio registrada."
+    solucion: "El subcontrato solo permite valorizar a partir de la fecha de inicio de los trabajos que se ingresa en el registro."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s223]
+relacionados: [gerencia-proyectos.registrar-subcontrato, gerencia-proyectos.aprobar-valorizacion-del-subcontrato]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s223, manual: "Manual de Gerencia de Proyectos", seccion: "6.9.1.1 Registro del subcontrato para alquiler de equipo", pagina: null}
+  - {id: img-136952047006-0000, manual: "Manual de Gerencia de Proyectos", seccion: "136952047006.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

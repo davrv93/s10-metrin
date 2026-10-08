@@ -1,0 +1,92 @@
+id: almacenes.registrar-periodo-contable
+version: 1
+modulo: almacenes
+titulo: "Registrar los periodos contables y abrir el mes de trabajo"
+objetivo: "Registrar en el escenario de Periodo Contable los periodos de un nuevo año y dejar en estado Abierto el mes donde se registrará la información."
+nivel: intermedio
+preguntas:
+  - "cómo abro el periodo contable en almacenes"
+  - "como genero los periodos del año nuevo en s10 almacenes"
+  - "no puedo registrar en el mes porque el periodo está cerrado"
+  - "dónde cambio el estado del periodo a abierto"
+  - "como agrego un año nuevo a los periodos contables"
+  - "como elimino un periodo contable que cree por error"
+  - "periodo contable cerrado como lo abro"
+aliases:
+  - "periodo contable"
+  - "periodos contables"
+  - "abrir periodo"
+  - "registrar nuevo año"
+  - "estado del periodo"
+entidades:
+  modulo: "Almacenes"
+  pantallas: ["Periodo Contable", "Periodos Contables por Empresa"]
+  objetos: ["periodo", "año", "mes", "estado"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "almacenes.registrar-periodo-contable#1"
+    accion: "Ingrese al módulo de Almacenes como sa y acceda al escenario **Periodo Contable**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s092]
+    pagina: null
+    fotos:
+      - id: "82095e481e08"
+        ruta_o_url: "imagenes/manual-de-almacenes/db405e90c448.png"
+        pagina: null
+        caption: "Ingrese al módulo de almacenes como sa y acceda al escenario"
+        ocr: "1\n\niS aaa\n-eriodo =\nContable Luego, MH SI0SA."
+  - n: 2
+    id: "almacenes.registrar-periodo-contable#2"
+    accion: "En **Periodos Contables por Empresa**, ubique el mes donde registrará la información."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s092, img-3892de4d2ec3-0000]
+    pagina: null
+    fotos:
+      - id: "cc366fe28809"
+        ruta_o_url: "imagenes/manual-de-almacenes/3892de4d2ec3.png"
+        pagina: null
+        ocr: ";\nPeriodos Contables por Empresa\nBY 2B % aed at\n\nCédigo _[Descrinciin [Det falEstato |\n\n= 2010\n201000) = Apertura 2010 = 01/01/2010 = 3142/2010 Cerrado\n201001 Enero 2010 0101/2010 = 31/01/2010 Cerrado\n201002 Febrero 201 *® 0102/2010 = 28/02/2010 Cerrado\n201003 = Marzo 2010 01/03/2010 3103/2010 Cerrado\n201004 = Abril 2010 0104/2010 = 30/04/2010 Cerrado\n201005 Mayo 2010 0105/2010 = 31/05/2010 Cerrad…"
+  - n: 3
+    id: "almacenes.registrar-periodo-contable#3"
+    accion: "Para registrar un nuevo año, haga clic derecho en el segmento y elija **Adicionar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s092, img-5c43511def6e-0000]
+    pagina: null
+    fotos:
+      - id: "7362e24f9eeb"
+        ruta_o_url: "imagenes/manual-de-almacenes/5c43511def6e.png"
+        pagina: null
+        ocr: "D Adicionar (0-1)\n(0-2) {> Modificar\nx Eliminar (0-3)"
+  - n: 4
+    id: "almacenes.registrar-periodo-contable#4"
+    accion: "Ingrese el año que desea registrar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s092, img-23e56a114fb0-0000]
+    pagina: null
+    fotos:
+      - id: "74c64dd657b4"
+        ruta_o_url: "imagenes/manual-de-almacenes/23e56a114fb0.png"
+        pagina: null
+        ocr: "Ex)\nIngresar el afio: Lo |\na\n2012\n[ingrese |"
+  - n: 5
+    id: "almacenes.registrar-periodo-contable#5"
+    accion: "Para cambiar un periodo, haga clic derecho sobre él y elija **Modificar**: puede modificar el nombre del periodo, su estado y hacerlo visible o esconderlo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s092, img-5c43511def6e-0000]
+    pagina: null
+  - n: 6
+    id: "almacenes.registrar-periodo-contable#6"
+    accion: "Deje en estado **Abierto** el mes donde se registrará la información."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s092]
+    pagina: null
+verificacion: []
+errores_frecuentes:
+  - sintoma: "No puedo registrar información en un mes."
+    solucion: "El mes donde se registrará la información tiene que estar en estado Abierto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s092]
+  - sintoma: "No puedo eliminar un periodo."
+    solucion: "Un periodo se elimina siempre y cuando no tenga registros relacionados."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s092]
+relacionados: [almacenes.registrar-documento-por-pagar]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s092, manual: "Manual de Almacenes", seccion: "3.8.2 Periodo Contable", pagina: null}
+  - {id: img-3892de4d2ec3-0000, manual: "Manual de Almacenes", seccion: "3892de4d2ec3.png", pagina: null}
+  - {id: img-5c43511def6e-0000, manual: "Manual de Almacenes", seccion: "5c43511def6e.png", pagina: null}
+  - {id: img-23e56a114fb0-0000, manual: "Manual de Almacenes", seccion: "23e56a114fb0.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

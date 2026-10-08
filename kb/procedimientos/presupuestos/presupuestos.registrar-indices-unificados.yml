@@ -1,0 +1,104 @@
+id: presupuestos.registrar-indices-unificados
+version: 1
+modulo: presupuestos
+titulo: "Registrar los índices unificados"
+objetivo: "Registrar por área geográfica los índices unificados que se publican mensualmente, con los datos de su resolución, para actualizar los precios de los recursos que participan en los presupuestos."
+nivel: avanzado
+preguntas:
+  - "como registro los indices unificados del inei en s10"
+  - "donde ingreso los indices unificados del mes"
+  - "como cargo los indices unificados desde excel"
+  - "como hago para que el indice se replique en todas las areas geograficas"
+  - "como registro la resolucion de los indices unificados"
+  - "no se me graban los datos de los indices unificados"
+  - "como lleno los indices unificados por area geografica"
+  - "donde actualizo los IU del presupuesto"
+aliases:
+  - "índices unificados"
+  - "registrar índices unificados"
+  - "IU"
+  - "importar índices unificados"
+entidades:
+  modulo: "Presupuestos"
+  pantallas: ["Indices Unificados", "Configuración Presupuestos"]
+  objetos: ["índice unificado", "área geográfica", "resolución"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "presupuestos.registrar-indices-unificados#1"
+    accion: "Para iniciar el registro, ingrese a la configuración con su botón; si quiere que el índice unificado ingresado para una zona geográfica se replique en las demás, seleccione **Réplica de Índices para todas las áreas**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s118, web-https-documentacion-s10peru-com-manual-d-s018, "7c40a9548710-0188"]
+    pagina: null
+    fotos:
+      - id: "6f249d195f7a"
+        ruta_o_url: "imagenes/manual-de-presupuestos/35b2ea0a200c.png"
+        pagina: null
+        caption: "En el Perú, todo el universo de recursos que se utiliza en la construcción está agrupado dentro de 80 índices unificados y va cambiando el número de IU. Para iniciar el registro de los índices unificados ingrese a configuración usando el botón"
+        ocr: "Configuracién Presupuestos [2 ly\neee | Procesamiento de Andllsis de P Esta opcion . z\n~T Presupuesto Untario scrlieadle joes tee\n\n7 que el ingreso\nVv Gremitw emilee del indice\nATIC unificado en una\nI¥)| Réplica|de Indices para todas las éreas; celda sea\n|¥ Exporter a Microsoft Project los Materiales con Precio replicada en\n[~ Ver solo recursos genéricos en el catalogo de recursos toda la fila\n[~ A…"
+  - n: 2
+    id: "presupuestos.registrar-indices-unificados#2"
+    accion: "Luego, en el árbol, elija el presupuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s118, "7c40a9548710-0188"]
+    pagina: null
+  - n: 3
+    id: "presupuestos.registrar-indices-unificados#3"
+    accion: "Ingrese al escenario **Indices Unificados**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s118, img-a91a5afae90a-0000, "7c40a9548710-0189"]
+    pagina: null
+    fotos:
+      - id: "85d986dc64b6"
+        ruta_o_url: "imagenes/manual-de-presupuestos/a91a5afae90a.png"
+        pagina: null
+        ocr: "Indices Unificados\nAreas Geograticas\n(4rea 01) Tumbes - Piura - Lambayeque - La Libertad - Cajamarca - Amazonas(Area 04) Arequipa - Moquegua - Tacna\n(Area 02) Ancash - Lima - Callao - Ica @ (Area 05) Loreto\n(Area 03) Huanuco - Pasco - Junin - Huancayelica - Ayacucho - (Area 06) Cusco - Puno - Apurimac - Madre de Dios\n—\nTablas\neProtesicdo?]  Afo | | Mes [Fecha publicacién\n\n> eh EE ~ | Agosto 75109/…"
+  - n: 4
+    id: "presupuestos.registrar-indices-unificados#4"
+    accion: "En la ventana de **Tablas**, registre los datos de la resolución que publica los índices unificados: año, mes, fecha de publicación y número de resolución."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s118, "7c40a9548710-0188"]
+    pagina: null
+  - n: 5
+    id: "presupuestos.registrar-indices-unificados#5"
+    accion: "Haga clic en la fila inferior para que se graben los datos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s118, "7c40a9548710-0188"]
+    pagina: null
+  - n: 6
+    id: "presupuestos.registrar-indices-unificados#6"
+    accion: "Vuelva a hacer clic en la fila que contiene el registro de la resolución."
+    resultado: "La ventana inferior muestra todos los índices unificados que participan en el presupuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s118, "7c40a9548710-0189"]
+    pagina: null
+  - n: 7
+    id: "presupuestos.registrar-indices-unificados#7"
+    accion: "En la ventana inferior, registre los valores de los índices unificados para cada área geográfica."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s118, "7c40a9548710-0189"]
+    pagina: null
+  - n: 8
+    id: "presupuestos.registrar-indices-unificados#8"
+    accion: "Para traer los valores desde una hoja Excel, haga clic derecho en la ventana de los índices y elija **Importar desde Microsoft Excel**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s118, img-8331c769aa72-0000]
+    pagina: null
+    fotos:
+      - id: "2390f6da9a35"
+        ruta_o_url: "imagenes/manual-de-presupuestos/8331c769aa72.png"
+        pagina: null
+        ocr: "Importar desde Microsoft Excel\nExportar a Microsoft Excel"
+verificacion: []
+errores_frecuentes:
+  - sintoma: "Al eliminar el registro de la resolución desaparecieron los valores de los índices unificados."
+    solucion: "La opción Eliminar del menú de los datos de la resolución elimina el registro seleccionado y todo el contenido de la ventana donde se registran los valores de los índices unificados."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s118]
+  - sintoma: "El índice unificado ingresado solo queda en la celda seleccionada y no en las demás zonas geográficas."
+    solucion: "En la configuración, seleccione Réplica de Índices para todas las áreas: no seleccionado, el ingreso de datos sólo se efectúa en la celda seleccionada."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s018, "7c40a9548710-0188"]
+  - sintoma: "No encuentra la opción de índices unificados."
+    solucion: "Según la guía de usuario, la opción de índices unificados está implementada sólo en la versión corporativa."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s118, "7c40a9548710-0187"]
+relacionados: [presupuestos.elaborar-formula-polinomica]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s118, manual: "Manual de Presupuestos", seccion: "5.1.10 Índices unificados", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s018, manual: "Manual de Presupuestos", seccion: "2.2 Configuración (1)", pagina: null}
+  - {id: "7c40a9548710-0188", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 113}
+  - {id: img-a91a5afae90a-0000, manual: "Manual de Presupuestos", seccion: "a91a5afae90a.png", pagina: null}
+  - {id: "7c40a9548710-0189", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 114}
+  - {id: img-8331c769aa72-0000, manual: "Manual de Presupuestos", seccion: "8331c769aa72.png", pagina: null}
+  - {id: "7c40a9548710-0187", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 113}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

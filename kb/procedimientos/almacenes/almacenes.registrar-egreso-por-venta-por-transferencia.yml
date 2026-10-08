@@ -1,0 +1,117 @@
+id: almacenes.registrar-egreso-por-venta-por-transferencia
+version: 1
+modulo: almacenes
+titulo: "Registrar un egreso por venta por transferencia a otro proyecto"
+objetivo: "Egresar del stock del almacén recursos con fines de venta para otro proyecto con un Egreso por Venta por Transferencia [EVT]: se genera un pedido que debe ser aprobado, el proyecto origen hace el Egreso por Venta por Pedido y el proyecto destino efectúa el Ingreso por Compra."
+nivel: intermedio
+preguntas:
+  - "cómo vendo materiales del almacén a otra obra"
+  - "como hago un egreso por venta por transferencia"
+  - "quiero venderle cemento a otro proyecto de la empresa, cómo lo registro"
+  - "qué es el EVT en almacenes"
+  - "como registro la venta de recursos a otro proyecto en s10"
+  - "la otra obra nos vendió fierro, cómo lo ingreso a mi almacén"
+  - "egreso por venta por pedido como se hace"
+  - "como se hace el pedido para vender a otro almacen"
+aliases:
+  - "egreso por venta por transferencia"
+  - "EVT"
+  - "venta a otro proyecto"
+  - "egreso por venta por pedido"
+  - "adicionar desde venta de otro proyecto"
+entidades:
+  modulo: "Almacenes"
+  pantallas: ["Egreso por Venta por Transferencia", "Ingreso por Compra"]
+  objetos: ["pedido", "recurso", "stock", "proyecto destino", "almacén destino"]
+prerrequisitos:
+  - texto: "El almacén debe tener seleccionada la opción que permite efectuar egresos por venta; sin selección, los egresos por venta quedan inhabilitados."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s025]
+pasos:
+  - n: 1
+    id: "almacenes.registrar-egreso-por-venta-por-transferencia#1"
+    accion: "Genere un pedido para la venta y registre el nombre del solicitante."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s077]
+    pagina: null
+  - n: 2
+    id: "almacenes.registrar-egreso-por-venta-por-transferencia#2"
+    accion: "Seleccione **A Almacén**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s077]
+    pagina: null
+  - n: 3
+    id: "almacenes.registrar-egreso-por-venta-por-transferencia#3"
+    accion: "Seleccione **Para otro almacén**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s077, img-a3245a6dc36e-0000]
+    pagina: null
+    fotos:
+      - id: "2d1c7e9a03c5"
+        ruta_o_url: "imagenes/manual-de-almacenes/a3245a6dc36e.png"
+        pagina: null
+        ocr: "j Sr\nUsuario —sjr - Ramirez Nufiez, Jose N° de Pedido -\nSoictante [02100002 Poo, tose =] | | oor\nUO.\n@racén - De Materiales Tipo 01 -OBRA N’ Alterno N° OP\ne ei © ACompras\noe Para otro almacén\n‘© Venta © Transferencia @ Externa © Interna\nProyecto 17002 IG io— wee 44 Alm. destino |997 De Materiales Oo al\nFecha 11704728) _~ Prioridad [hormal x €.Compral we 44\nAprobado por:\nProcedencia de la partida d…"
+  - n: 4
+    id: "almacenes.registrar-egreso-por-venta-por-transferencia#4"
+    accion: "Seleccione la opción **Venta**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s077]
+    pagina: null
+  - n: 5
+    id: "almacenes.registrar-egreso-por-venta-por-transferencia#5"
+    accion: "Elija el proyecto destino."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s077]
+    pagina: null
+  - n: 6
+    id: "almacenes.registrar-egreso-por-venta-por-transferencia#6"
+    accion: "Elija el almacén destino."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s077]
+    pagina: null
+  - n: 7
+    id: "almacenes.registrar-egreso-por-venta-por-transferencia#7"
+    accion: "Registre la fecha del movimiento."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s077]
+    pagina: null
+  - n: 8
+    id: "almacenes.registrar-egreso-por-venta-por-transferencia#8"
+    accion: "Haga clic derecho en el segmento de recursos y elija del stock el recurso que se vende."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s077]
+    pagina: null
+  - n: 9
+    id: "almacenes.registrar-egreso-por-venta-por-transferencia#9"
+    accion: "Ingrese la cantidad que se vende."
+    resultado: "Un segmento informativo muestra el stock del recurso en el almacén que vende."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s077]
+    pagina: null
+  - n: 10
+    id: "almacenes.registrar-egreso-por-venta-por-transferencia#10"
+    accion: "Use el botón que graba el contenido del pedido y lo envía a aprobación."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s077]
+    pagina: null
+  - n: 11
+    id: "almacenes.registrar-egreso-por-venta-por-transferencia#11"
+    accion: "Obtenga la aprobación: el pedido debe ser aprobado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s077]
+    pagina: null
+  - n: 12
+    id: "almacenes.registrar-egreso-por-venta-por-transferencia#12"
+    accion: "En el proyecto origen, haga un **Egreso por Venta por Pedido**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s077]
+    pagina: null
+  - n: 13
+    id: "almacenes.registrar-egreso-por-venta-por-transferencia#13"
+    accion: "En el proyecto destino, efectúe el **Ingreso por Compra** con la opción **Adicionar desde Venta de otro proyecto**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s077, img-31518f480a2e-0000]
+    pagina: null
+    fotos:
+      - id: "6bf62a65acfd"
+        ruta_o_url: "imagenes/manual-de-almacenes/31518f480a2e.png"
+        pagina: null
+        ocr: "Too movneno:[ngreso por Conere fc] __————=dg|« Ted\nHAVEN» &Wa\n\n7 Aibiedeonsar\n\n) Adicionar con Do ento de Pago\n\n|) Adicionar desde Venta de otro proyecto |"
+verificacion: []
+errores_frecuentes:
+  - sintoma: "No puedo hacer egresos por venta en el almacén."
+    solucion: "En los tipos de recurso que manejará el almacén, seleccione la opción que permite efectuar egresos por venta: sin selección, los egresos por venta quedan inhabilitados."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s025]
+relacionados: [almacenes.transferir-recursos-a-otro-proyecto, almacenes.registrar-ingreso-por-compra]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s025, manual: "Manual de Almacenes", seccion: "2.1.3 Tipos de recurso que manejará el almacén", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s077, manual: "Manual de Almacenes", seccion: "2.2.7.2 Egreso por Venta por Transferencia [EVT]", pagina: null}
+  - {id: img-a3245a6dc36e-0000, manual: "Manual de Almacenes", seccion: "a3245a6dc36e.png", pagina: null}
+  - {id: img-31518f480a2e-0000, manual: "Manual de Almacenes", seccion: "31518f480a2e.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

@@ -90,8 +90,7 @@ CORRECCIONES_ORO = {
 
 def cargar_prueba(procs: dict) -> list[dict]:
     correcciones = dict(CORRECCIONES_ORO)
-    ruta = DATOS / "prueba_revision.jsonl"
-    if ruta.exists():
+    for ruta in sorted(DATOS.glob("prueba_revision*.jsonl")):  # una por tanda de procedimientos nuevos
         for linea in open(ruta, encoding="utf-8"):
             if linea.strip():
                 r = json.loads(linea)
