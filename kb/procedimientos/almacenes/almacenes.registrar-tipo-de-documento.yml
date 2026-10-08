@@ -1,0 +1,123 @@
+id: almacenes.registrar-tipo-de-documento
+version: 1
+modulo: almacenes
+titulo: "Registrar un tipo de documento y su impuesto"
+objetivo: "Registrar en el catálogo de Tipo de Documento los documentos que acostumbra usar la empresa, compatibilizados con los documentos normados por SUNAT, con su moneda y el impuesto que se le aplica."
+nivel: basico
+preguntas:
+  - "como creo un tipo de documento nuevo en almacenes"
+  - "donde se registran los tipos de documento que usa la empresa"
+  - "como registro una factura con igv 18% como tipo de documento"
+  - "como le asigno el impuesto a un tipo de documento"
+  - "quiero crear el documento recibo interno para el fondo rotatorio"
+  - "como hago que el asiento contable salga por recurso y no por documento"
+  - "tipo de documeto sunat como se configura en s10"
+  - "no encuentro el documento que necesito en la lista, como lo agrego al catalogo"
+aliases:
+  - "tipo de documento"
+  - "registrar tipo de documento"
+  - "catálogo de tipos de documento"
+  - "nuevo documento"
+  - "impuesto del documento"
+entidades:
+  modulo: "Almacenes"
+  pantallas: ["Catálogos", "Catálogo de Tipos de Documento", "Impuestos", "Catálogo de impuestos"]
+  objetos: ["tipo de documento", "impuesto", "factura", "moneda", "asiento contable", "SUNAT"]
+prerrequisitos:
+  - texto: "Los documentos contables normados por SUNAT deben estar registrados en el sistema por el administrador del sistema (sa); para el caso del Perú, el Catálogo de Tipos de Documentos de SUNAT ya viene registrado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s018]
+pasos:
+  - n: 1
+    id: "almacenes.registrar-tipo-de-documento#1"
+    accion: "Ingrese por **Catálogos** y elija **Tipo de Documento**."
+    fuente: [img-fee254c5f8af-0000, web-https-documentacion-s10peru-com-manual-d-s019]
+    pagina: null
+    fotos:
+      - id: "beab983fd618"
+        ruta_o_url: "imagenes/manual-de-almacenes/fee254c5f8af.png"
+        pagina: null
+        ocr: "Ingrese por Catalogos Catalogos\nSe Lhidades operativas\n. —_———_~———..\n=| Tipo de Documenta"
+  - n: 2
+    id: "almacenes.registrar-tipo-de-documento#2"
+    accion: "En el **Catálogo de Tipos de Documento**, haga clic derecho para registrar un documento nuevo."
+    fuente: [img-dd9df3e066d0-0000, web-https-documentacion-s10peru-com-manual-d-s019]
+    pagina: null
+    fotos:
+      - id: "d9633a5b531e"
+        ruta_o_url: "imagenes/manual-de-almacenes/dd9df3e066d0.png"
+        pagina: null
+        ocr: "&> Catalogo de Tipos de Documento to\nOpciones 2\nDa xXBtie @¥m Hoe AAS? Bee\nml\n|_[cédiga[Descripcion | Abreviatura Codigo [Tipo c |\n[ce derecho a\nin” a"
+  - n: 3
+    id: "almacenes.registrar-tipo-de-documento#3"
+    accion: "Ingrese el código alterno, el nombre del documento y la abreviatura del documento que registra."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s019, img-15670398571f-0000]
+    pagina: null
+    fotos:
+      - id: "c8ffe20308aa"
+        ruta_o_url: "imagenes/manual-de-almacenes/15670398571f.png"
+        pagina: null
+        ocr: "Descripcién FACTURA ICV 18% =(b)\nAbreviatura [Fié(C) Tipo [Ambos OD)\nTpo Documento for [Factura ha\nTipo Documento for Factura =i f ]\nBase\nmapetn or fuuevos soLes o= | da]\nImpuesto\n006 Impuesto General a las Ventas (18%) =O) 18.00"
+  - n: 4
+    id: "almacenes.registrar-tipo-de-documento#4"
+    accion: "Del catálogo, elija si es un documento para pagar, cobrar o ambos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s019]
+    pagina: null
+  - n: 5
+    id: "almacenes.registrar-tipo-de-documento#5"
+    accion: "Elija el comportamiento del tipo de documento y el tipo base, para que el sistema lo reconozca (por ejemplo, como factura)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s019]
+    pagina: null
+  - n: 6
+    id: "almacenes.registrar-tipo-de-documento#6"
+    accion: "Elija el tipo de moneda para el documento."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s019]
+    pagina: null
+  - n: 7
+    id: "almacenes.registrar-tipo-de-documento#7"
+    accion: "Si quiere que el asiento contable se genere por recurso, deje con selección la celda correspondiente; sin selección, se genera por documento."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s019]
+    pagina: null
+  - n: 8
+    id: "almacenes.registrar-tipo-de-documento#8"
+    accion: "Para registrar el tipo de impuesto del documento, haga clic derecho en el segmento del impuesto y elija del Catálogo de impuestos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s019]
+    pagina: null
+    fotos:
+      - id: "fc815ef1f41d"
+        ruta_o_url: "imagenes/manual-de-almacenes/a3dfd10ffde5.png"
+        pagina: null
+        caption: "Para registrar el Impuesto, haga clic derecho en el segmento marcado con la llamada i, luego en el Catálogo de impuestos:"
+        ocr: "il) Impuesto\n\nCédiga 004 Cédigo alterno\n\nDescripcién Impuesto General a las Ventas (18%) =)\n\nAbreviatura Ioy =) Signo Posttvo {1 3) v\nTasa (%) 18\n\nObligatorio Hi Activa vis)\n\nObservacin -(i7)\n\nFecha Cambio |9 4/93/2011 Ji2)\n\nAdicionar a) Cancelar |"
+  - n: 9
+    id: "almacenes.registrar-tipo-de-documento#9"
+    accion: "Si el impuesto no existe, en la ventana **Impuestos** ingrese el nombre del impuesto y registre su abreviatura."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s019]
+    pagina: null
+  - n: 10
+    id: "almacenes.registrar-tipo-de-documento#10"
+    accion: "Elija el signo (el signo positivo afecta la base imponible y el negativo no altera ningún importe) e ingrese la tasa del impuesto en porcentaje."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s019]
+    pagina: null
+  - n: 11
+    id: "almacenes.registrar-tipo-de-documento#11"
+    accion: "Seleccione **Obligatorio** para que el impuesto se aplique siempre al documento, seleccione la vigencia del impuesto y, si quiere, ingrese una observación."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s019]
+    pagina: null
+  - n: 12
+    id: "almacenes.registrar-tipo-de-documento#12"
+    accion: "Use el botón para grabar los datos y cerrar la ventana; luego cierre el catálogo de Tipo de Documentos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s019]
+    pagina: null
+verificacion: []
+errores_frecuentes:
+  - sintoma: "Un documento que usa la empresa no está en el sistema."
+    solucion: "Los documentos que acostumbra usar la empresa deben ser registrados en el sistema y compatibilizados con los documentos normados por SUNAT."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s019]
+relacionados: [almacenes.registrar-documento-por-pagar]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s018, manual: "Manual de Almacenes", seccion: "1.6 Tipo de documento de SUNAT", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s019, manual: "Manual de Almacenes", seccion: "1.6.1 Tipo de Documento (1)", pagina: null}
+  - {id: img-fee254c5f8af-0000, manual: "Manual de Almacenes", seccion: "fee254c5f8af.png", pagina: null}
+  - {id: img-dd9df3e066d0-0000, manual: "Manual de Almacenes", seccion: "dd9df3e066d0.png", pagina: null}
+  - {id: img-15670398571f-0000, manual: "Manual de Almacenes", seccion: "15670398571f.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

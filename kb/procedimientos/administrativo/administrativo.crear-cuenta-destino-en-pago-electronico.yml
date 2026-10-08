@@ -1,0 +1,131 @@
+id: administrativo.crear-cuenta-destino-en-pago-electronico
+version: 1
+modulo: administrativo
+titulo: "Crear la cuenta bancaria destino del socio de negocio desde el pago electrónico"
+objetivo: "Cuando al generar el pago electrónico en Pendientes de Pago aparecen socios de negocio sin cuenta bancaria destino, crearles la cuenta desde sus propiedades sin ir al catálogo y luego generar el pago."
+nivel: intermedio
+preguntas:
+  - "al hacer el pago electronico me salen proveedores observados sin cuenta bancaria"
+  - "no se genera el txt del pago masivo porque falta la cuenta destino"
+  - "como le creo la cuenta bancaria al proveedor desde el pago sin ir al catalogo"
+  - "pago electronico sin cuenta bancaria destino que hago"
+  - "donde pongo la cuenta de banco del socio de negocio en pendientes de pago"
+  - "pago electronio me observa socios de negocio"
+  - "se puede pagar electronicamente a un proveedor que no tiene cuenta registrada"
+aliases:
+  - "pago electrónico sin cuenta destino"
+  - "cuenta bancaria destino"
+  - "socios de negocio observados"
+  - "crear cuenta bancaria desde el pago"
+entidades:
+  modulo: "Administrativo"
+  pantallas: ["Pendientes de Pago", "Propiedades del Socio Negocio", "Pagos"]
+  objetos: ["pago electrónico", "cuenta bancaria destino", "socio negocio", "TXT", "orden de pago"]
+prerrequisitos:
+  - texto: "La orden de pago debe registrarse con el check de pago electrónico activado, que determina la estructura por banco de plantillas para la generación del TXT."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s031]
+  - texto: "La orden de pago debe estar enviada a aprobación y aprobada."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s032]
+pasos:
+  - n: 1
+    id: "administrativo.crear-cuenta-destino-en-pago-electronico#1"
+    accion: "Ingrese al módulo Administrativo, grupo **Pagos**, escenario de **Pendientes de Pago**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s033]
+    pagina: null
+  - n: 2
+    id: "administrativo.crear-cuenta-destino-en-pago-electronico#2"
+    accion: "Haga clic derecho y elija **PAGO ELECTRÓNICO**."
+    resultado: "Si existen socios de negocio sin cuenta bancaria destino, el sistema los observa: la cuenta destino es obligatoria para generar el TXT para la carga a la web."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s033]
+    pagina: null
+    fotos:
+      - id: "c353cbaa3bab"
+        ruta_o_url: "imagenes/manual-de-administracion/5dce6fcc2a36.png"
+        pagina: null
+        caption: "a. Ingresamos al Módulo Administrativo, Grupo Pagos, Escenario de Pendientes de Pago Clic derecho PAGO ELECTRÓNICO. Al realizar el Pago se Observa que existen Socios Negocios que no tienen cuenta bancaria Destino que es importante y obligatorio para generar el TXT para la carga a la web."
+        ocr: "/,,$10 Administrativo: 00002490 - MI CASITA SA - Principal ETE)\n= Archivo Yer Catélogos Herramientas 2\n4h5Bea8\n: ig) Tema 4 od Ms\na Pendientes de Pago\n— AGE\nPager con [Cuenta Bancaria\n» Empresa 00002490 MI CASITA SA Alfernol\\?\n2 = inch NP Paga\nEy nee oy Sucursal Principal g —\nProveedor DE a sstado poner\noxicsomp WEF mse Parone ceemrovacreu ST\nCuria Banas RRO PHIM REDE) La] Wrocmnewos SLES tcantin…"
+  - n: 3
+    id: "administrativo.crear-cuenta-destino-en-pago-electronico#3"
+    accion: "Revise la ventana donde aparecen los socios de negocio observados, sin cuenta bancaria destino."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s033]
+    pagina: null
+    fotos:
+      - id: "5543e571cb07"
+        ruta_o_url: "imagenes/manual-de-administracion/f8ca303a0b2c.png"
+        pagina: null
+        caption: "b. Aparecerá los Socios Negocios Observados, sin Cuenta Bancaria Destino."
+        ocr: "‘S10 Administrativo: 00002490 - MI CASITA SA - Principal = 18) x)\n| Archivo Yer Catélogos Herramientas 2\n46R8Re8\nGin | Pendientes de Pago\n—— . ia\n. Empresa 00002490 MI CASITA SA AlternoN?\nay —_ N° Pago\nes Ams | @  Sucursal Principal ig\nndenes de Papo Proveedor foo0n2512 [BANCO DE CREDITO DEL PERU =] festado\nCuenta Banceria f/31-1785223-0-34 [ocr 191-1765223-0-34 (S/) =» | G4] | Moneda NUEVOS SOLES…"
+  - n: 4
+    id: "administrativo.crear-cuenta-destino-en-pago-electronico#4"
+    accion: "Haga clic derecho sobre el socio de negocio observado y elija **PROPIEDADES**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s033]
+    pagina: null
+    fotos:
+      - id: "624a434b5c87"
+        ruta_o_url: "imagenes/manual-de-administracion/d283270fd42d.png"
+        pagina: null
+        caption: "c. Clic Derecho sobre el Socio Negocio Observado, PROPIEDADES."
+        ocr: "$10 Administrativo: 00002490 - MI CASITA SA - Principal = 8) x}\n= chive Ver CatSlogos Herramientas 2\neh58a8\nHea i ,\nme Gin | Pendientes de Pag\nPewee | a Bes\nEmpresa 00002490 MI CASITA SA AlternoN?\nBEANS v suse Principal N° Pago\noF = S 00973\nordenss do Pago Proveedor fooon2s12 [BANCO DE CREDITO DEL PERU =] da f:stado\nCuenta Bancaria [aj {765223-0-34 [cP 1gi-1res220-0-04 (5) «| @h] | Moneda NUEVOS S…"
+  - n: 5
+    id: "administrativo.crear-cuenta-destino-en-pago-electronico#5"
+    accion: "En la ventana de propiedades del socio de negocio, vaya a la pestaña **Cuenta Banco**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s033]
+    pagina: null
+    fotos:
+      - id: "7406f91d9ee8"
+        ruta_o_url: "imagenes/manual-de-administracion/8dd95a79bb37.png"
+        pagina: null
+        caption: "d. Aparecerá la Ventana de las Propiedades del Socio Negocio donde es posible crear la cuenta bancaria en la Pestaña de Cuenta Banco."
+        ocr: "“$10 Administrativo: 00002490 - MI CASITA SA - Principal ED ES)\n| Archivo Yer Catélogos Herramientas 2 # Socio de Negocio BEE\n| 6R0R88 Cédigo foooos576 Persona Juridica > CCédigo Alterna\nj T 5 Fl Dat {es\na” iaamee|Pendientes de Pago mori\nres jo BE\nagar con noe\nVIBE By smvcr | Meets -\nProveedor | RUC fours\nOrdenes de Pago: Descripciin\nCuenta Benn Alterna bal\n37/88 Campo|Descripcién Ore\n[71201301 En…"
+  - n: 6
+    id: "administrativo.crear-cuenta-destino-en-pago-electronico#6"
+    accion: "Cree la cuenta bancaria del socio de negocio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s033]
+    pagina: null
+    fotos:
+      - id: "46886b366eb4"
+        ruta_o_url: "imagenes/manual-de-administracion/92306a27cb3d.png"
+        pagina: null
+        caption: "e. Creación de la Cuenta Bancaria desde el Pago."
+        ocr: "7,510 Administrativo: 00002490 - MI CASITA SA - Principal = (8) x}\n© Archivo Ver Catélogos Herramientas. 2 ‘Socio de Negocio io)\n46REBaa Cécigo fooac4s76 Persona Juridica a Céeigo Aterno\nd Tema B .d , Datos generales\ni Pendientes de Pago oe\npews | (lo\nPagar con a\n2 Abreviatura\nEf |Shpnma v sue\n- Proveedor | RUC PPFEYEVEN 000373\nOrdenes de Pago Reese a Cuenta Bancaria [x]\nCuenta Ban’ Alterna bal\n37…"
+      - id: "bd85b79f3129"
+        ruta_o_url: "imagenes/manual-de-administracion/e92a212d5822.png"
+        pagina: null
+        caption: "Vista de Creación Culminada de la cuenta Bancaria."
+        ocr: "“$10 Administrativo: 00002490 - MI CASITA SA - Principal PIES\n“archivo. Yer Catlogos Herramientas 2 race Ne aoa Isles\n620888 cédiga fooooss76 Persona Juridica x Citgo Akemo\nPi te menchentes ds Paw Di gel\nPagos 5 =o -[o4\nagar con [cuenta Bancaria a\nEPR S v sms | Meme\n= Proveedor | RUC feorir740438 00879)\nOrdenes de Pago Deseipcin  —S—SSSSSSSSSSS\ncumtonen | SEER BP\n37/58 ‘Campo|Descripcién Orc\nyy Nt…"
+  - n: 7
+    id: "administrativo.crear-cuenta-destino-en-pago-electronico#7"
+    accion: "Grabe las propiedades del socio de negocio y cierre la ventana de observación de cuentas bancarias."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s033]
+    pagina: null
+    fotos:
+      - id: "e82e309a9a0e"
+        ruta_o_url: "imagenes/manual-de-administracion/42a25f6efbb1.png"
+        pagina: null
+        caption: "• Se procede a Modificar las propiedades del Socio Negocio, se procede a cerrar la ventana de Observación de cuentas bancarias. f. Luego de Grabar las propiedades del Socio Negocio y cerrar la ventana Observada de Socios Negocios que no tienen cuenta bancaria destino, se procede a generar el Pago."
+        ocr: "© Archivo Yer Catélogos Herramientas 2\n4a a@\nae Gi Pendientes de Pag\n- Empresa 00002490 MI CASITA SA AliernoN|°\nHE Ry suoursal Principal N° Pago\nondenes de Pago Proveedor foon0212 [BANCO DE CREDITO DEL PERU =| @Estado ones\n‘Cuenta Bancaria [istareszas-0-34 ace tet-i7esz3.034S) #4 Moneda NUEVOS SOLES Tipo cambio\n37 Campo} Descripcién Ore is\nHW an ia gs e Fechatrensaccién [2o.062014 +] Fecha de apic…"
+  - n: 8
+    id: "administrativo.crear-cuenta-destino-en-pago-electronico#8"
+    accion: "Genere el pago."
+    resultado: "El movimiento del pago efectuado se ve desde el escenario de **Pago**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s033]
+    pagina: null
+    fotos:
+      - id: "bb87ddbbb2a2"
+        ruta_o_url: "imagenes/manual-de-administracion/f309c542d218.png"
+        pagina: null
+        caption: "g. Vista desde el Escenario de Pago, el movimiento Pago efectuado."
+        ocr: "© Archivo Yer Gatélogos Herramientas 2\nEaRoae\ni Tema 7\ni ial Pagos\n“Todos Perioclo [201406 [unio 2014 =| 4]\n(AMWAY ES. eae\nOrdenes de Pago i} arrastre hacia aqui el encabezado de la colunna que desea agrupar\ncl\nPendientes de Pago || | BANCO DE CREDITO DEL PERU 20100047218 Transferencia Banc... 000973 191-1785223-0-34 Pre Mee PME AEM PLANLLA DE PAGOS A PROVEEDORES VARIOS Pagado\nEmitidos/En Custodia…"
+verificacion:
+  - texto: "Desde el escenario de Pago se ve el movimiento del pago efectuado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s033]
+errores_frecuentes:
+  - sintoma: "El TXT del pago electrónico no se genera para la carga a la web del banco."
+    solucion: "Al realizar el pago electrónico el sistema obliga a que exista una cuenta bancaria destino: créela desde las propiedades del socio de negocio observado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s032, web-https-documentacion-s10peru-com-manual-d-s033]
+relacionados: [administrativo.pagar-detracciones-y-subir-constancias, administrativo.registrar-pago-con-cheque]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s031, manual: "Manual Administrativo", seccion: "5.3 Registro de la orden de pago para pagos electrónicos", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s032, manual: "Manual Administrativo", seccion: "5.3.1. Ejecución del TXT de Pagos electrónicos", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s033, manual: "Manual Administrativo", seccion: "5.3.2. Orden de Pago electrónico sin cuenta Bancaria destino.", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

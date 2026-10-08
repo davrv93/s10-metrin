@@ -1,0 +1,396 @@
+{"texto": "cómo veo las horas trabajadas de cada obrero por concepto en un periodo", "procedimiento": "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "quiero ver cuántas horas trabajó cada obrero en la semana, por concepto", "procedimiento": "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como justifico las faltas de un obrero con papeleta de descanso medico", "procedimiento": "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "un obrero faltó 3 días porque tenía subsidio y en el resumen sale como falta, cómo lo cambio por papeleta", "procedimiento": "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "pasos para generar el resumen de conceptos por día de un periodo de nómina", "procedimiento": "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como cambio las faltas por papeletas de vacaciones en gerencia de proyectos", "procedimiento": "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "resumen de conceptos por dia", "procedimiento": "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como agrupo el resumen por obrero arrastrando el nombre", "procedimiento": "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el residente me pide el detalle de tiempos por concepto de cada obrero de la semana 12, de dónde lo saco", "procedimiento": "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "komo veo las oras de los obreros por concepto", "procedimiento": "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "cómo justificar licencias y descansos médicos de los obreros dentro del resumen de conceptos", "procedimiento": "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "necesito ver los tiempos de cada obrero por concepto, no el monto", "procedimiento": "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "justificar faltas obreros", "procedimiento": "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "tengo que sustentar las faltas del mes de los obreros con papeletas antes de cerrar planilla, cómo lo hago", "procedimiento": "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como saco el resumen de conseptos x dia de un periodo", "procedimiento": "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como filtro el resumen por tipo de nomina y numero de periodo", "procedimiento": "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "en qué parte está resumen de conceptos por día", "procedimiento": "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde encuentro el escenario resumen de conceptos por dia en el grupo actividades", "procedimiento": "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd esta el resumen de conseptos", "procedimiento": "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "por qué ruta entro para ver las horas de los obreros por concepto en la rama meta", "procedimiento": "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "estoy en el proyecto y no ubico dónde se justifican las faltas de obreros con papeletas", "procedimiento": "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "en que grupo del proyecto sale lo de conceptos por dia", "procedimiento": "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "cómo accedo al resumen de conceptos por día desde la rama meta del proyecto", "procedimiento": "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "qué tipo de nómina debo elegir para generar el resumen de conceptos por día", "procedimiento": "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "cómo hago que el resumen me agrupe por obrero", "procedimiento": "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "dónde elijo el periodo por el que quiero el resumen de conceptos", "procedimiento": "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como pongo q el resumen salga por periodo y no por otra opcion", "procedimiento": "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "qué tengo que seleccionar antes de generar el resumen de conceptos por día en la rama meta", "procedimiento": "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "como cambio la agrupacion del resumen para ver cada obrero con sus conceptos", "procedimiento": "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "generé el resumen de conceptos y no me sale nada en la pestaña resumen", "procedimiento": "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no veo mi proyecto en resumen de conceptos por dia, la rama meta no me deja", "procedimiento": "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "sale el resumen pero las faltas de un obrero que estuvo de vacaciones siguen como falta", "procedimiento": "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no me deja justificar las faltas de los obreros con papeleta", "procedimiento": "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "el resumen de conceptos por día sale vacío para el periodo que elegí", "procedimiento": "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "resumen conceptos sin datos", "procedimiento": "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "los obreros salen todos mezclados en el resumen de conceptos, no se separan por nombre", "procedimiento": "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "cómo consulto el monto total de mano de obra utilizada en el proyecto", "procedimiento": "gerencia-proyectos.consultar-tareo-detallado", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "quiero ver cuánto he gastado en mano de obra por semana en la obra", "procedimiento": "gerencia-proyectos.consultar-tareo-detallado", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el gerente pide el acumulado de mano de obra hasta hoy, de dónde lo saco", "procedimiento": "gerencia-proyectos.consultar-tareo-detallado", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como veo el monto acumulado de la obra y el de cada semana", "procedimiento": "gerencia-proyectos.consultar-tareo-detallado", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo veo cuanto se ha pagado en mano de obra en el tareo detallado", "procedimiento": "gerencia-proyectos.consultar-tareo-detallado", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "tareo detallado", "procedimiento": "gerencia-proyectos.consultar-tareo-detallado", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "pasos para ver el tareo detallado por periodo semanal", "procedimiento": "gerencia-proyectos.consultar-tareo-detallado", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como veo la mano de obra de las semanas 5 a la 10 solamente", "procedimiento": "gerencia-proyectos.consultar-tareo-detallado", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "estoy revisando costos de la obra y necesito el detalle semanal de la mano de obra por tipo de nomina", "procedimiento": "gerencia-proyectos.consultar-tareo-detallado", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como saco el tareo detalado de la obra", "procedimiento": "gerencia-proyectos.consultar-tareo-detallado", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "monto mano de obra por semana", "procedimiento": "gerencia-proyectos.consultar-tareo-detallado", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como expando o contraigo por tipo de nomina en el tareo detallado", "procedimiento": "gerencia-proyectos.consultar-tareo-detallado", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cómo muestro los montos acumulados desde la primera semana hasta la fecha de consulta", "procedimiento": "gerencia-proyectos.consultar-tareo-detallado", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "necesito comparar la mano de obra de cada semana con el acumulado, dónde lo veo", "procedimiento": "gerencia-proyectos.consultar-tareo-detallado", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "q hago para ver el costo de los obreros x semana en la meta", "procedimiento": "gerencia-proyectos.consultar-tareo-detallado", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "me piden cuánto lleva la obra en mano de obra a la fecha, cómo lo consulto", "procedimiento": "gerencia-proyectos.consultar-tareo-detallado", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "dónde está el tareo detallado en gerencia de proyectos", "procedimiento": "gerencia-proyectos.consultar-tareo-detallado", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "por donde entro al tareo detallado de un proyecto", "procedimiento": "gerencia-proyectos.consultar-tareo-detallado", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "no encuentro el tareo detalado", "procedimiento": "gerencia-proyectos.consultar-tareo-detallado", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "en qué rama del proyecto se ubica el escenario tareo detallado", "procedimiento": "gerencia-proyectos.consultar-tareo-detallado", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "ruta tareo detallado meta", "procedimiento": "gerencia-proyectos.consultar-tareo-detallado", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "estoy en el proyecto y quiero ver mano de obra semanal, a qué escenario voy", "procedimiento": "gerencia-proyectos.consultar-tareo-detallado", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "dónde veo el monto de la mano de obra de la obra", "procedimiento": "gerencia-proyectos.consultar-tareo-detallado", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "cómo escondo o muestro columnas en el tareo detallado", "procedimiento": "gerencia-proyectos.consultar-tareo-detallado", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como ordeno las columnas del tareo detallado a mi gusto", "procedimiento": "gerencia-proyectos.consultar-tareo-detallado", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "cómo cambio entre ver acumulado y ver un rango de periodos en el tareo", "procedimiento": "gerencia-proyectos.consultar-tareo-detallado", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "como pongo en el tareo solo un rango de semanas del - al", "procedimiento": "gerencia-proyectos.consultar-tareo-detallado", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "cómo agrupo el tareo por tipo de nómina y por semana", "procedimiento": "gerencia-proyectos.consultar-tareo-detallado", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "como oculto columnas q no uso en el tareo", "procedimiento": "gerencia-proyectos.consultar-tareo-detallado", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "le doy a mostrar en el tareo detallado y no carga nada", "procedimiento": "gerencia-proyectos.consultar-tareo-detallado", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el tareo detallado no muestra el monto acumulado de la obra", "procedimiento": "gerencia-proyectos.consultar-tareo-detallado", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "puse del periodo 3 al 8 y los montos no cuadran con lo que esperaba, qué reviso", "procedimiento": "gerencia-proyectos.consultar-tareo-detallado", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no sale la mano de obra en el tareo detallado", "procedimiento": "gerencia-proyectos.consultar-tareo-detallado", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "tareo detallado vacio", "procedimiento": "gerencia-proyectos.consultar-tareo-detallado", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "no se me contraen los niveles de tipo de nomina en el tareo detallado", "procedimiento": "gerencia-proyectos.consultar-tareo-detallado", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me deja elegir el rango de periodos porque tengo marcada la casilla de acumulado", "procedimiento": "gerencia-proyectos.consultar-tareo-detallado", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "cómo registro el contrato con el dueño del proyecto", "procedimiento": "gerencia-proyectos.registrar-contrato", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "firmamos contrato con el propietario de la obra, cómo lo ingreso al sistema", "procedimiento": "gerencia-proyectos.registrar-contrato", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como creo un contrato nuevo en gerencia de proyectos", "procedimiento": "gerencia-proyectos.registrar-contrato", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "pasos para registrar el contrato del proyecto con sus recursos y fase del WBS", "procedimiento": "gerencia-proyectos.registrar-contrato", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "komo registro el contrato del propietario", "procedimiento": "gerencia-proyectos.registrar-contrato", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "registrar contrato", "procedimiento": "gerencia-proyectos.registrar-contrato", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como le pongo el igv al contrato", "procedimiento": "gerencia-proyectos.registrar-contrato", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como agrego recursos al contrato y les asigno la fase", "procedimiento": "gerencia-proyectos.registrar-contrato", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ya tengo el presupuesto venta asignado y ahora debo cargar el contrato del cliente", "procedimiento": "gerencia-proyectos.registrar-contrato", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como ingreso un contrato nuevo del proyeto", "procedimiento": "gerencia-proyectos.registrar-contrato", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "cómo adicionar los recursos que serán valorizados dentro del contrato", "procedimiento": "gerencia-proyectos.registrar-contrato", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como reasigno la fase del wbs a un recurso del contrato", "procedimiento": "gerencia-proyectos.registrar-contrato", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "nuevo contrato obra", "procedimiento": "gerencia-proyectos.registrar-contrato", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "el cliente me firmó el contrato de la obra, qué datos tengo que llenar en la cabecera", "procedimiento": "gerencia-proyectos.registrar-contrato", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "q pasos sigo para grabar el contrato en s10", "procedimiento": "gerencia-proyectos.registrar-contrato", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "cómo asigno el impuesto a un contrato desde el catálogo de impuestos", "procedimiento": "gerencia-proyectos.registrar-contrato", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "dónde se registran los contratos de un proyecto", "procedimiento": "gerencia-proyectos.registrar-contrato", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde esta la opcion de contratos en gerencia de proyectos", "procedimiento": "gerencia-proyectos.registrar-contrato", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "cómo entro al escenario Contratos de un proyecto", "procedimiento": "gerencia-proyectos.registrar-contrato", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en qué pestaña adiciono los recursos del contrato", "procedimiento": "gerencia-proyectos.registrar-contrato", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "escenario contratos", "procedimiento": "gerencia-proyectos.registrar-contrato", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "elegí el proyecto pero no sé por dónde se entra para meter el contrato con el cliente", "procedimiento": "gerencia-proyectos.registrar-contrato", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "dónde se abre la ventana Registro del Contrato", "procedimiento": "gerencia-proyectos.registrar-contrato", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "qué recurso debo tener creado para el contrato que sale en la factura al dueño", "procedimiento": "gerencia-proyectos.registrar-contrato", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "necesito crear el recurso contrato principal antes de registrar el contrato?", "procedimiento": "gerencia-proyectos.registrar-contrato", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "qué presupuesto debo asignar al proyecto antes de registrar el contrato", "procedimiento": "gerencia-proyectos.registrar-contrato", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "la moneda del presupuesto venta tiene q ser la misma q la del contrato?", "procedimiento": "gerencia-proyectos.registrar-contrato", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "cómo configuro qué recurso aparece en la factura del propietario", "procedimiento": "gerencia-proyectos.registrar-contrato", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que tengo que dejar listo en el proyecto antes de poder hacer el contrato", "procedimiento": "gerencia-proyectos.registrar-contrato", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "no me deja adicionar el contrato, no aparece el botón", "procedimiento": "gerencia-proyectos.registrar-contrato", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no encuentro el recurso contrato principal al registrar el contrato", "procedimiento": "gerencia-proyectos.registrar-contrato", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "intento registrar el contrato y no hay presupuesto venta en el proyecto, qué falta", "procedimiento": "gerencia-proyectos.registrar-contrato", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no me aparese el impuesto al grabar el contrato", "procedimiento": "gerencia-proyectos.registrar-contrato", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "contrato no se graba", "procedimiento": "gerencia-proyectos.registrar-contrato", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "los recursos del contrato salen sin fase de WBS", "procedimiento": "gerencia-proyectos.registrar-contrato", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "al registrar el contrato la moneda del presupuesto no coincide, cómo lo resuelvo", "procedimiento": "gerencia-proyectos.registrar-contrato", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "cómo registro la factura que presentó el subcontratista por el adelanto", "procedimiento": "gerencia-proyectos.registrar-factura-del-subcontratista", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el subcontratista nos trajo su factura del adelanto, cómo la ingreso y la relaciono", "procedimiento": "gerencia-proyectos.registrar-factura-del-subcontratista", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como registro la factura de un pago a cuenta del subcontrato", "procedimiento": "gerencia-proyectos.registrar-factura-del-subcontratista", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "pasos para regularizar con un nuevo documento el adelanto del subcontrato", "procedimiento": "gerencia-proyectos.registrar-factura-del-subcontratista", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "komo ingreso la factura del subcontratista", "procedimiento": "gerencia-proyectos.registrar-factura-del-subcontratista", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "factura subcontratista", "procedimiento": "gerencia-proyectos.registrar-factura-del-subcontratista", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como relaciono la factura al adelanto del subcontrato", "procedimiento": "gerencia-proyectos.registrar-factura-del-subcontratista", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "pagamos adelanto en efectivo al subcontratista y ahora nos llegó la factura, qué hago", "procedimiento": "gerencia-proyectos.registrar-factura-del-subcontratista", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "cómo registro la factura de la valorización del subcontratista", "procedimiento": "gerencia-proyectos.registrar-factura-del-subcontratista", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como registro la factura de un pago a cuenta en el subcontrato", "procedimiento": "gerencia-proyectos.registrar-factura-del-subcontratista", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "donde le doy regularizacion para meter la factura del adelanto", "procedimiento": "gerencia-proyectos.registrar-factura-del-subcontratista", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cómo registro la factura del subcontratista desde el módulo Almacenes", "procedimiento": "gerencia-proyectos.registrar-factura-del-subcontratista", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "regularizar adelanto subcontrato", "procedimiento": "gerencia-proyectos.registrar-factura-del-subcontratista", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "me llegó la factura del subcontratista por el pago a cuenta, la meto por gerencia o por almacenes", "procedimiento": "gerencia-proyectos.registrar-factura-del-subcontratista", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "ke hago para cargar la factura del sub x adelanto", "procedimiento": "gerencia-proyectos.registrar-factura-del-subcontratista", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como ingreso los datos de la factura del subcontratista en el formulario", "procedimiento": "gerencia-proyectos.registrar-factura-del-subcontratista", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "dónde registro la factura de un subcontratista en gerencia de proyectos", "procedimiento": "gerencia-proyectos.registrar-factura-del-subcontratista", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en qué pestaña del subcontrato está autorización de pago", "procedimiento": "gerencia-proyectos.registrar-factura-del-subcontratista", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde esta regularizacion en el menu del adelanto", "procedimiento": "gerencia-proyectos.registrar-factura-del-subcontratista", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "cómo llego a Nuevo Documento para la factura del subcontrato", "procedimiento": "gerencia-proyectos.registrar-factura-del-subcontratista", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "autorización de pago subcontrato", "procedimiento": "gerencia-proyectos.registrar-factura-del-subcontratista", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "abrí el subcontrato y no sé en qué parte se mete la factura del adelanto", "procedimiento": "gerencia-proyectos.registrar-factura-del-subcontratista", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "dónde se hace clic derecho sobre adelanto para sacar el menú", "procedimiento": "gerencia-proyectos.registrar-factura-del-subcontratista", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "qué debo definir en la cabecera del subcontrato para el adelanto en efectivo antes de registrar su factura", "procedimiento": "gerencia-proyectos.registrar-factura-del-subcontratista", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "tengo que poner el porcentaje de adelanto antes de registrar la factura?", "procedimiento": "gerencia-proyectos.registrar-factura-del-subcontratista", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "la amortizacion del adelanto es automatica o la configuro", "procedimiento": "gerencia-proyectos.registrar-factura-del-subcontratista", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "es requisito el porcentaje de adelanto para registrar la factura del adelanto en efectivo", "procedimiento": "gerencia-proyectos.registrar-factura-del-subcontratista", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "para registrar la factura del subcontratista por facturación, a qué módulo debo ir", "procedimiento": "gerencia-proyectos.registrar-factura-del-subcontratista", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "si quiero registrar la factura por facturación en vez de gerencia, qué cambia", "procedimiento": "gerencia-proyectos.registrar-factura-del-subcontratista", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "no me aparece la opción Regularización en el menú del adelanto", "procedimiento": "gerencia-proyectos.registrar-factura-del-subcontratista", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no puedo registrar la factura del adelanto del subcontratista", "procedimiento": "gerencia-proyectos.registrar-factura-del-subcontratista", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "el subcontrato no tiene adelanto y quiero registrar la factura, no me deja", "procedimiento": "gerencia-proyectos.registrar-factura-del-subcontratista", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no sale nuevo documento al dar clic derecho en adelanto", "procedimiento": "gerencia-proyectos.registrar-factura-del-subcontratista", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "factura adelanto no aparece", "procedimiento": "gerencia-proyectos.registrar-factura-del-subcontratista", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "la factura del subcontratista no queda relacionada al adelanto", "procedimiento": "gerencia-proyectos.registrar-factura-del-subcontratista", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no veo el catálogo de pagos por facturar al regularizar el adelanto", "procedimiento": "gerencia-proyectos.registrar-factura-del-subcontratista", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "cómo asigno el código de producto sunat a los recursos", "procedimiento": "facturacion-electronica.asignar-codigo-de-producto-sunat", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "quiero ponerle el codigo sunat a todos mis materiales de golpe, como hago", "procedimiento": "facturacion-electronica.asignar-codigo-de-producto-sunat", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cómo importar desde Excel los códigos de producto SUNAT a los recursos", "procedimiento": "facturacion-electronica.asignar-codigo-de-producto-sunat", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el contador dice que los libros electrónicos piden código de producto sunat en cada recurso, cómo lo cargo", "procedimiento": "facturacion-electronica.asignar-codigo-de-producto-sunat", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "komo le pongo el codigo unspsc a un recurso", "procedimiento": "facturacion-electronica.asignar-codigo-de-producto-sunat", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "codigo producto sunat", "procedimiento": "facturacion-electronica.asignar-codigo-de-producto-sunat", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como asigno el codigo sunat a un solo recurso con clic derecho", "procedimiento": "facturacion-electronica.asignar-codigo-de-producto-sunat", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "pasos para asignar el Código de Producto SUNAT de forma masiva", "procedimiento": "facturacion-electronica.asignar-codigo-de-producto-sunat", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como cargo los codigos sunat por excel a los recursos", "procedimiento": "facturacion-electronica.asignar-codigo-de-producto-sunat", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "tengo 800 recursos sin catalogar para el inventario permanente valorizado, cómo les pongo su código sunat rápido", "procedimiento": "facturacion-electronica.asignar-codigo-de-producto-sunat", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como selecciono varios recursos y les asigno el mismo codigo sunat", "procedimiento": "facturacion-electronica.asignar-codigo-de-producto-sunat", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "qué columnas debe tener el Excel para asignar código SUNAT a los recursos", "procedimiento": "facturacion-electronica.asignar-codigo-de-producto-sunat", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "importar excel codigo sunat", "procedimiento": "facturacion-electronica.asignar-codigo-de-producto-sunat", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "de dónde saco el codigo de producto sunat para cada recurso", "procedimiento": "facturacion-electronica.asignar-codigo-de-producto-sunat", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "q hago para catalogar los recursos con el codigo sunat", "procedimiento": "facturacion-electronica.asignar-codigo-de-producto-sunat", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "me toca catalogar el almacén con los códigos UNSPSC de SUNAT para el libro electrónico, por dónde empiezo", "procedimiento": "facturacion-electronica.asignar-codigo-de-producto-sunat", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "dónde se asigna el código de producto sunat en almacenes", "procedimiento": "facturacion-electronica.asignar-codigo-de-producto-sunat", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en qué grupo de Almacenes está el escenario de catalogar recursos con código SUNAT", "procedimiento": "facturacion-electronica.asignar-codigo-de-producto-sunat", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde esta el catalogo de productos sunat", "procedimiento": "facturacion-electronica.asignar-codigo-de-producto-sunat", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "por donde entro para ponerle codigo sunat a los recursos", "procedimiento": "facturacion-electronica.asignar-codigo-de-producto-sunat", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "catalogo productos sunat", "procedimiento": "facturacion-electronica.asignar-codigo-de-producto-sunat", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "estoy en almacenes y no veo dónde se catalogan los recursos con SUNAT", "procedimiento": "facturacion-electronica.asignar-codigo-de-producto-sunat", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "dónde está la opción Importar de Microsoft Excel para los códigos SUNAT", "procedimiento": "facturacion-electronica.asignar-codigo-de-producto-sunat", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "dónde activo la configuración de código de producto sunat obligatorio en libros electrónicos", "procedimiento": "facturacion-electronica.asignar-codigo-de-producto-sunat", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "cómo configuro que el código SUNAT sea obligatorio en los libros electrónicos", "procedimiento": "facturacion-electronica.asignar-codigo-de-producto-sunat", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "como activo lo del codigo sunat obligatorio en libros", "procedimiento": "facturacion-electronica.asignar-codigo-de-producto-sunat", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "que configuracion hay q activar antes de empezar a usar los codigos de producto sunat", "procedimiento": "facturacion-electronica.asignar-codigo-de-producto-sunat", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "cómo preparo el Excel con Código Recurso y Código producto Sunat", "procedimiento": "facturacion-electronica.asignar-codigo-de-producto-sunat", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "quiero que los libros electrónicos exijan el código sunat de cada producto, qué activo", "procedimiento": "facturacion-electronica.asignar-codigo-de-producto-sunat", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "el libro electrónico dice que el campo código producto sunat no puede ser nulo", "procedimiento": "facturacion-electronica.asignar-codigo-de-producto-sunat", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "saqué el inventario permanente valorizado y me sale observación de código producto sunat nulo", "procedimiento": "facturacion-electronica.asignar-codigo-de-producto-sunat", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "me sale error de codigo producto sunat nulo en el libro", "procedimiento": "facturacion-electronica.asignar-codigo-de-producto-sunat", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "me dice verifique la configuración en el campo código producto sunat, qué hago", "procedimiento": "facturacion-electronica.asignar-codigo-de-producto-sunat", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "codigo sunat nulo libro", "procedimiento": "facturacion-electronica.asignar-codigo-de-producto-sunat", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "activé lo del código sunat obligatorio y ahora los libros salen con observaciones", "procedimiento": "facturacion-electronica.asignar-codigo-de-producto-sunat", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el libro de inventarios y balance sale con el campo cod. cubso vacío", "procedimiento": "facturacion-electronica.asignar-codigo-de-producto-sunat", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "olvidé la clave del portal de facturación electrónica, cómo la recupero", "procedimiento": "facturacion-electronica.recuperar-contrasena-del-portal", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "no me acuerdo la contraseña del portal donde veo mis comprobantes electrónicos", "procedimiento": "facturacion-electronica.recuperar-contrasena-del-portal", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cómo recuperar la contraseña del portal de facturación electrónica", "procedimiento": "facturacion-electronica.recuperar-contrasena-del-portal", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el contador no puede entrar al portal de comprobantes electrónicos porque olvidó su clave", "procedimiento": "facturacion-electronica.recuperar-contrasena-del-portal", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "olvide mi contraceña del portal de facturacion electronica", "procedimiento": "facturacion-electronica.recuperar-contrasena-del-portal", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "olvidé clave portal facturación electrónica", "procedimiento": "facturacion-electronica.recuperar-contrasena-del-portal", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como pido una clave nueva para el portal de facturacion electronica", "procedimiento": "facturacion-electronica.recuperar-contrasena-del-portal", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "pasos para obtener una clave temporal del portal de facturación electrónica", "procedimiento": "facturacion-electronica.recuperar-contrasena-del-portal", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "komo recupero la clave del portal de fact electronica", "procedimiento": "facturacion-electronica.recuperar-contrasena-del-portal", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "necesito reenviar un comprobante pero no recuerdo la clave del portal de facturación electrónica", "procedimiento": "facturacion-electronica.recuperar-contrasena-del-portal", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como cambio la contraseña anterior por una nueva en el portal de facturacion electronica despues de recuperarla", "procedimiento": "facturacion-electronica.recuperar-contrasena-del-portal", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "qué hago con la clave temporal que me llegó del portal de facturación electrónica", "procedimiento": "facturacion-electronica.recuperar-contrasena-del-portal", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "reset clave portal fact electrónica", "procedimiento": "facturacion-electronica.recuperar-contrasena-del-portal", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "ke hago si olvide mi clave del portal de documentos electronicos", "procedimiento": "facturacion-electronica.recuperar-contrasena-del-portal", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "mi jefe de facturación se olvidó de su clave y no puede ver los documentos enviados a SUNAT en el portal", "procedimiento": "facturacion-electronica.recuperar-contrasena-del-portal", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "cómo restablezco mi password del portal de facturación electrónica", "procedimiento": "facturacion-electronica.recuperar-contrasena-del-portal", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "dónde recupero la contraseña en el portal de facturación electrónica", "procedimiento": "facturacion-electronica.recuperar-contrasena-del-portal", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en la pantalla de ingreso del portal de comprobantes electrónicos, dónde está el enlace para recuperar clave", "procedimiento": "facturacion-electronica.recuperar-contrasena-del-portal", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde le doi pa recuperar la clave en el portal de facturacion electronica", "procedimiento": "facturacion-electronica.recuperar-contrasena-del-portal", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "dónde se solicita una nueva clave en el portal de facturación electrónica", "procedimiento": "facturacion-electronica.recuperar-contrasena-del-portal", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "enlace recuperar clave portal factura electrónica", "procedimiento": "facturacion-electronica.recuperar-contrasena-del-portal", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "estoy en la página de login del portal de facturación electrónica y no recuerdo mi clave, qué enlace uso", "procedimiento": "facturacion-electronica.recuperar-contrasena-del-portal", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "dónde digito mi correo para que el portal de facturación electrónica me mande otra clave", "procedimiento": "facturacion-electronica.recuperar-contrasena-del-portal", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dónde ingreso la contraseña anterior después de recuperar la clave del portal de facturación electrónica", "procedimiento": "facturacion-electronica.recuperar-contrasena-del-portal", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "cómo cambio la clave temporal por una definitiva en el portal de facturación electrónica", "procedimiento": "facturacion-electronica.recuperar-contrasena-del-portal", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "como pongo mi nueva clave en el portal de fact electronica despues del correo", "procedimiento": "facturacion-electronica.recuperar-contrasena-del-portal", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "que correo tengo q poner para que me llegue la clave nueva del portal de facturación electrónica", "procedimiento": "facturacion-electronica.recuperar-contrasena-del-portal", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "cómo establezco mi nueva clave en el portal de facturación electrónica", "procedimiento": "facturacion-electronica.recuperar-contrasena-del-portal", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "me llegó una clave temporal al correo del portal de comprobantes electrónicos, cómo la reemplazo por mi clave", "procedimiento": "facturacion-electronica.recuperar-contrasena-del-portal", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "no me llega el correo con la clave nueva del portal de facturación electrónica", "procedimiento": "facturacion-electronica.recuperar-contrasena-del-portal", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "pedí recuperar la clave del portal de facturación electrónica hace una hora y no llega nada al buzón", "procedimiento": "facturacion-electronica.recuperar-contrasena-del-portal", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no me llega el corre pa recuperar clave del portal de facturacion", "procedimiento": "facturacion-electronica.recuperar-contrasena-del-portal", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "la clave temporal del portal de facturación electrónica no me deja ingresar", "procedimiento": "facturacion-electronica.recuperar-contrasena-del-portal", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "portal facturación no entro clave", "procedimiento": "facturacion-electronica.recuperar-contrasena-del-portal", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "puse la clave del correo en contraseña anterior y el portal de facturación electrónica no la acepta", "procedimiento": "facturacion-electronica.recuperar-contrasena-del-portal", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no puedo entrar al portal de comprobantes electrónicos porque olvidé la clave", "procedimiento": "facturacion-electronica.recuperar-contrasena-del-portal", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "quiero bajar calidad móvil al teléfono y dejarla lista para usar", "procedimiento": "calidad-movil.activar-la-aplicacion", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el supervisor tiene que usar calidad móvil en obra, cómo le activamos la app", "procedimiento": "calidad-movil.activar-la-aplicacion", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como activo calidad movil con el codigo que me llego al correo", "procedimiento": "calidad-movil.activar-la-aplicacion", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "pasos para descargar y activar la aplicación Calidad Móvil en una tablet", "procedimiento": "calidad-movil.activar-la-aplicacion", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "komo activo la app de calidad movil", "procedimiento": "calidad-movil.activar-la-aplicacion", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "activar calidad móvil", "procedimiento": "calidad-movil.activar-la-aplicacion", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como genero el codigo de activacion en la app de calidad", "procedimiento": "calidad-movil.activar-la-aplicacion", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cómo registro la nueva contraseña después de ingresar el código de activación", "procedimiento": "calidad-movil.activar-la-aplicacion", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "ya baje la app de calidad pero no se q mas hacer pa activarla", "procedimiento": "calidad-movil.activar-la-aplicacion", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "me asignaron como revisor de calidad y me dijeron que instale una app, qué pasos sigo", "procedimiento": "calidad-movil.activar-la-aplicacion", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como selecciono el proyecto con el que voy a trabajar en la app de calidad movil", "procedimiento": "calidad-movil.activar-la-aplicacion", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "qué datos ingreso para validar mi usuario en Calidad Móvil", "procedimiento": "calidad-movil.activar-la-aplicacion", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "app calidad android", "procedimiento": "calidad-movil.activar-la-aplicacion", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "se puede usar calidad movil en iphone, donde la bajo", "procedimiento": "calidad-movil.activar-la-aplicacion", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "q ruc y q correo pongo en la app de calidad?", "procedimiento": "calidad-movil.activar-la-aplicacion", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "cambié de celular y tengo que volver a dejar calidad móvil funcionando, qué hago", "procedimiento": "calidad-movil.activar-la-aplicacion", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "en qué tienda busco la app de calidad móvil", "procedimiento": "calidad-movil.activar-la-aplicacion", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dónde descargo calidad móvil, play store o app store", "procedimiento": "calidad-movil.activar-la-aplicacion", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde bajo la aplicasion de calidad movil", "procedimiento": "calidad-movil.activar-la-aplicacion", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "dónde aparece el botón para generar el código de activación", "procedimiento": "calidad-movil.activar-la-aplicacion", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "descargar calidad móvil", "procedimiento": "calidad-movil.activar-la-aplicacion", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "tengo un celular android nuevo y no sé de dónde bajar la app de calidad", "procedimiento": "calidad-movil.activar-la-aplicacion", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "en que pantalla de la app se elige el proyecto despues de activar", "procedimiento": "calidad-movil.activar-la-aplicacion", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "cómo se usa el correo como usuario en calidad móvil", "procedimiento": "calidad-movil.activar-la-aplicacion", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "qué datos deben entregarse a ventas de S10 para que un usuario use calidad móvil", "procedimiento": "calidad-movil.activar-la-aplicacion", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "q tengo q configurar antes de activar calidad movil", "procedimiento": "calidad-movil.activar-la-aplicacion", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "tengo que publicar el proyecto antes de activar la app?", "procedimiento": "calidad-movil.activar-la-aplicacion", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "cómo se cambia la contraseña de la app de calidad móvil en la primera activación", "procedimiento": "calidad-movil.activar-la-aplicacion", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "voy a contratar calidad móvil para mi equipo, qué información piden para dejarlo configurado", "procedimiento": "calidad-movil.activar-la-aplicacion", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "no me llega el código de activación al correo de calidad móvil", "procedimiento": "calidad-movil.activar-la-aplicacion", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "instalé calidad móvil y no aparece ningún proyecto", "procedimiento": "calidad-movil.activar-la-aplicacion", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "activé la app pero la lista de proyectos sale vacía, el residente dice que ya trabajó en el proyecto", "procedimiento": "calidad-movil.activar-la-aplicacion", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "la app de calidad movil no sincroniza el proyecto", "procedimiento": "calidad-movil.activar-la-aplicacion", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "calidad móvil sin proyecto", "procedimiento": "calidad-movil.activar-la-aplicacion", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "me dice que el correo no es válido al activar la app de calidad", "procedimiento": "calidad-movil.activar-la-aplicacion", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no puedo activar calidad móvil con mi ruc y correo", "procedimiento": "calidad-movil.activar-la-aplicacion", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "cómo registro un protocolo de calidad con sus características", "procedimiento": "calidad-movil.asignar-protocolos-a-actividades", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "tengo que crear los protocolos de calidad para las partidas de concreto, por dónde empiezo", "procedimiento": "calidad-movil.asignar-protocolos-a-actividades", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como le asigno un protocolo a cada actividad del proyecto", "procedimiento": "calidad-movil.asignar-protocolos-a-actividades", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "pasos para asignar protocolos de forma masiva a las actividades", "procedimiento": "calidad-movil.asignar-protocolos-a-actividades", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "komo asigno protocolos a las actividades", "procedimiento": "calidad-movil.asignar-protocolos-a-actividades", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "ficha de protocolos", "procedimiento": "calidad-movil.asignar-protocolos-a-actividades", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como defino las caracteristicas de un protocolo", "procedimiento": "calidad-movil.asignar-protocolos-a-actividades", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cómo asigno las propiedades de cada actividad en la ventana de especificaciones", "procedimiento": "calidad-movil.asignar-protocolos-a-actividades", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como registro un protocolo con sus caracteristicas en calidad", "procedimiento": "calidad-movil.asignar-protocolos-a-actividades", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "el ingeniero de calidad quiere que cada actividad se califique con su protocolo, cómo lo dejo armado", "procedimiento": "calidad-movil.asignar-protocolos-a-actividades", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como le meto las caracteristicas a un protocolo", "procedimiento": "calidad-movil.asignar-protocolos-a-actividades", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cómo se asigna uno a uno el protocolo a una actividad", "procedimiento": "calidad-movil.asignar-protocolos-a-actividades", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "asignar protocolo actividad", "procedimiento": "calidad-movil.asignar-protocolos-a-actividades", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "tenemos 200 actividades y el mismo protocolo para muchas, cómo las asigno rápido", "procedimiento": "calidad-movil.asignar-protocolos-a-actividades", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "q pasos hago pa dejar los protocolos listos antes de calificar", "procedimiento": "calidad-movil.asignar-protocolos-a-actividades", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como armo el catalogo de protocolos generales", "procedimiento": "calidad-movil.asignar-protocolos-a-actividades", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "dónde está la ficha de protocolos", "procedimiento": "calidad-movil.asignar-protocolos-a-actividades", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en qué escenario se asignan los protocolos a las actividades", "procedimiento": "calidad-movil.asignar-protocolos-a-actividades", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde esta asignacion de protocolos", "procedimiento": "calidad-movil.asignar-protocolos-a-actividades", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "cómo llego a Ficha de Protocolos", "procedimiento": "calidad-movil.asignar-protocolos-a-actividades", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "escenario asignación de protocolos", "procedimiento": "calidad-movil.asignar-protocolos-a-actividades", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "estoy en gerencia de proyectos y no encuentro dónde se ponen los protocolos de calidad", "procedimiento": "calidad-movil.asignar-protocolos-a-actividades", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "dónde abro la ventana de especificaciones de la actividad", "procedimiento": "calidad-movil.asignar-protocolos-a-actividades", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "cómo defino los 3 niveles del catálogo de protocolos", "procedimiento": "calidad-movil.asignar-protocolos-a-actividades", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "cómo armo el catálogo de características de 2 niveles de tipo Detalle o Título", "procedimiento": "calidad-movil.asignar-protocolos-a-actividades", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "como configuro el catalogo de caracteristicas pa los protocolos", "procedimiento": "calidad-movil.asignar-protocolos-a-actividades", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "que tipos pueden tener las caracteristicas de un protocolo", "procedimiento": "calidad-movil.asignar-protocolos-a-actividades", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "dónde defino qué características se califican en cada actividad", "procedimiento": "calidad-movil.asignar-protocolos-a-actividades", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "voy a empezar con calidad en la obra, qué catálogos debo dejar definidos antes de los protocolos", "procedimiento": "calidad-movil.asignar-protocolos-a-actividades", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "no puedo asignar el protocolo a la actividad", "procedimiento": "calidad-movil.asignar-protocolos-a-actividades", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "armé los protocolos pero al calificar la actividad no tiene características", "procedimiento": "calidad-movil.asignar-protocolos-a-actividades", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no me deja asignar protocolos a las actividades en masa", "procedimiento": "calidad-movil.asignar-protocolos-a-actividades", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "la actividad no muestra el protocolo asignado en la asignación de protocolos", "procedimiento": "calidad-movil.asignar-protocolos-a-actividades", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "protocolo no aparece", "procedimiento": "calidad-movil.asignar-protocolos-a-actividades", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "no me salen las características al abrir la ficha de protocolos", "procedimiento": "calidad-movil.asignar-protocolos-a-actividades", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "faltan protocolos en la lista para asignarlos a mis actividades", "procedimiento": "calidad-movil.asignar-protocolos-a-actividades", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "cómo califico las actividades desde el celular en calidad móvil", "procedimiento": "calidad-movil.calificar-actividades", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "estoy en obra revisando el vaciado y tengo que marcar la actividad como no conforme, cómo lo hago", "procedimiento": "calidad-movil.calificar-actividades", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como cambio el estado de una caracteristica como revisor", "procedimiento": "calidad-movil.calificar-actividades", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "pasos para registrar una no conformidad con su tipo de falla", "procedimiento": "calidad-movil.calificar-actividades", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "komo califico una actividad en la app de calidad", "procedimiento": "calidad-movil.calificar-actividades", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "calificar actividades", "procedimiento": "calidad-movil.calificar-actividades", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como pongo una foto en una no conformidad", "procedimiento": "calidad-movil.calificar-actividades", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cómo cambio el alcance a Frente o Etapa en Calidad de Responsables", "procedimiento": "calidad-movil.calificar-actividades", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como cambio el alcance a supervisor en la app de calidad", "procedimiento": "calidad-movil.calificar-actividades", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "soy supervisor y debo revisar las características de las actividades de hoy, cómo entro a calificar", "procedimiento": "calidad-movil.calificar-actividades", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como califico las caracteristicas de una actividad", "procedimiento": "calidad-movil.calificar-actividades", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cómo registro el texto y la imagen de una no conformidad", "procedimiento": "calidad-movil.calificar-actividades", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "no conforme tipo de falla", "procedimiento": "calidad-movil.calificar-actividades", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "encontramos una falla en el acabado, cómo la dejo registrada en la app", "procedimiento": "calidad-movil.calificar-actividades", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "q hago pa marcar no conforme una caracteristica", "procedimiento": "calidad-movil.calificar-actividades", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como filtro las actividades por responsable o revisor con la lupa", "procedimiento": "calidad-movil.calificar-actividades", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "dónde está calidad de responsables en la app", "procedimiento": "calidad-movil.calificar-actividades", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "qué opción abro en la aplicación para calificar, producción", "procedimiento": "calidad-movil.calificar-actividades", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde califico en la app de calidad movil", "procedimiento": "calidad-movil.calificar-actividades", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "cómo llego a la barra de la actividad para ver sus características", "procedimiento": "calidad-movil.calificar-actividades", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "calidad de responsables", "procedimiento": "calidad-movil.calificar-actividades", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "abrí la app de calidad y no sé por dónde se califican las actividades", "procedimiento": "calidad-movil.calificar-actividades", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "dónde están los botones de alcance y filtros en calidad de responsables", "procedimiento": "calidad-movil.calificar-actividades", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "cómo cambio el alcance de las actividades que veo en la app de calidad", "procedimiento": "calidad-movil.calificar-actividades", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "cómo configuro el alcance por Destino Específico en Calidad de Responsables", "procedimiento": "calidad-movil.calificar-actividades", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "como filtro x frente en calidad responsables", "procedimiento": "calidad-movil.calificar-actividades", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "como hago q solo me salgan las actividades de las que soy revisor", "procedimiento": "calidad-movil.calificar-actividades", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "qué alcances puedo elegir en calidad de responsables", "procedimiento": "calidad-movil.calificar-actividades", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "tengo muchas actividades en la lista, cómo las acoto solo a mi etapa", "procedimiento": "calidad-movil.calificar-actividades", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "no puedo cambiar el estado de la característica en calidad móvil", "procedimiento": "calidad-movil.calificar-actividades", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "abro Calidad de Responsables y no me aparece ninguna actividad", "procedimiento": "calidad-movil.calificar-actividades", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no me deja poner no conforme una caracteristica", "procedimiento": "calidad-movil.calificar-actividades", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "al seleccionar No Conforme no me muestra dónde ingresar el tipo de falla", "procedimiento": "calidad-movil.calificar-actividades", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "calidad móvil no deja calificar", "procedimiento": "calidad-movil.calificar-actividades", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "no me aparecen las actividades para calificar en la app", "procedimiento": "calidad-movil.calificar-actividades", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me deja registrar la imagen de la no conformidad", "procedimiento": "calidad-movil.calificar-actividades", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "cómo publico un proyecto para que los revisores lo vean en calidad móvil", "procedimiento": "calidad-movil.publicar-proyecto-en-calidad-movil", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el residente quiere que los supervisores califiquen en el celular, cómo publico las actividades del proyecto", "procedimiento": "calidad-movil.publicar-proyecto-en-calidad-movil", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como agrego a un invitado para que vea la info en calidad movil", "procedimiento": "calidad-movil.publicar-proyecto-en-calidad-movil", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "pasos para concluir la publicación del proyecto cuando termina la calificación", "procedimiento": "calidad-movil.publicar-proyecto-en-calidad-movil", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "komo publico el proyecto a calidad movil", "procedimiento": "calidad-movil.publicar-proyecto-en-calidad-movil", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "publicar proyecto calidad móvil", "procedimiento": "calidad-movil.publicar-proyecto-en-calidad-movil", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como publico solo algunas actividades al movil", "procedimiento": "calidad-movil.publicar-proyecto-en-calidad-movil", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cómo cierro el proyecto en calidad móvil para un usuario", "procedimiento": "calidad-movil.publicar-proyecto-en-calidad-movil", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como cierro la publicacion del proyecto en calidad", "procedimiento": "calidad-movil.publicar-proyecto-en-calidad-movil", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "terminamos la calificación de la obra y quiero que dejen de ver el proyecto en el celular, cómo lo cierro", "procedimiento": "calidad-movil.publicar-proyecto-en-calidad-movil", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como publico todo el proyecto a los revisores y supervisores", "procedimiento": "calidad-movil.publicar-proyecto-en-calidad-movil", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cómo habilito como invitado a una persona que no es usuario del S10", "procedimiento": "calidad-movil.publicar-proyecto-en-calidad-movil", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "adicionar invitado calidad", "procedimiento": "calidad-movil.publicar-proyecto-en-calidad-movil", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "viene la supervisora externa y solo debe mirar lo registrado, cómo le doy acceso en calidad móvil", "procedimiento": "calidad-movil.publicar-proyecto-en-calidad-movil", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "q hago pa publicar las actividades a los revisores", "procedimiento": "calidad-movil.publicar-proyecto-en-calidad-movil", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como veo todas las publicaciones de todos mis proyectos de calidad movil", "procedimiento": "calidad-movil.publicar-proyecto-en-calidad-movil", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "dónde está la pestaña Por Publicar", "procedimiento": "calidad-movil.publicar-proyecto-en-calidad-movil", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dónde veo todas las publicaciones de calidad móvil de todos los proyectos", "procedimiento": "calidad-movil.publicar-proyecto-en-calidad-movil", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde esta publicacion calidad movil", "procedimiento": "calidad-movil.publicar-proyecto-en-calidad-movil", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "cómo entro a la ventana de publicación desde Asignación de Protocolos a Actividades", "procedimiento": "calidad-movil.publicar-proyecto-en-calidad-movil", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "por publicar", "procedimiento": "calidad-movil.publicar-proyecto-en-calidad-movil", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "estoy en gerencia de proyectos y no encuentro dónde se publica para el celular", "procedimiento": "calidad-movil.publicar-proyecto-en-calidad-movil", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "dónde está la opción cambiar a estado concluido", "procedimiento": "calidad-movil.publicar-proyecto-en-calidad-movil", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "qué debe tener el proyecto antes de publicarlo a calidad móvil", "procedimiento": "calidad-movil.publicar-proyecto-en-calidad-movil", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "las actividades necesitan protocolo antes de publicarse al móvil", "procedimiento": "calidad-movil.publicar-proyecto-en-calidad-movil", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "tengo q tener actividades publicadas antes de publicar el proyecto?", "procedimiento": "calidad-movil.publicar-proyecto-en-calidad-movil", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "como indico que actividades se publican, en que columna se marca", "procedimiento": "calidad-movil.publicar-proyecto-en-calidad-movil", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "cómo defino quién ve el proyecto en el móvil: revisores, supervisores o invitados", "procedimiento": "calidad-movil.publicar-proyecto-en-calidad-movil", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "mi cliente quiere que su gente solo consulte en el móvil sin editar, qué configuro", "procedimiento": "calidad-movil.publicar-proyecto-en-calidad-movil", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "hice clic en publicar y no pasó nada con el proyecto", "procedimiento": "calidad-movil.publicar-proyecto-en-calidad-movil", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "concluí el proyecto para un usuario y ahora ya no puede entrar a la información, es normal", "procedimiento": "calidad-movil.publicar-proyecto-en-calidad-movil", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no me deja publicar el proyecto a calidad movil", "procedimiento": "calidad-movil.publicar-proyecto-en-calidad-movil", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "no aparece ningún revisor ni supervisor en la pestaña Por Publicar", "procedimiento": "calidad-movil.publicar-proyecto-en-calidad-movil", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "no publica proyecto calidad", "procedimiento": "calidad-movil.publicar-proyecto-en-calidad-movil", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "no puedo publicar porque dice que no hay actividades publicadas", "procedimiento": "calidad-movil.publicar-proyecto-en-calidad-movil", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el invitado que agregué no puede modificar nada en la app, por qué", "procedimiento": "calidad-movil.publicar-proyecto-en-calidad-movil", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "olvidé la clave del portal de proveedores, cómo la recupero", "procedimiento": "portal-proveedor.recuperar-contrasena", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "no me acuerdo la contraseña de s10 portal de proveedores", "procedimiento": "portal-proveedor.recuperar-contrasena", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cómo recuperar la contraseña del Portal de Proveedores", "procedimiento": "portal-proveedor.recuperar-contrasena", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "soy proveedor y quiero ver mis facturas pendientes de pago pero perdí mi clave del portal", "procedimiento": "portal-proveedor.recuperar-contrasena", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "olvide mi contraceña del portal de proveedores", "procedimiento": "portal-proveedor.recuperar-contrasena", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "olvidé clave portal proveedores", "procedimiento": "portal-proveedor.recuperar-contrasena", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como pido una clave nueva para el portal del proveedor", "procedimiento": "portal-proveedor.recuperar-contrasena", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "pasos para obtener una clave temporal en S10 Portal de Proveedores", "procedimiento": "portal-proveedor.recuperar-contrasena", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "komo recupero mi clave en el portal de proveedores de s10", "procedimiento": "portal-proveedor.recuperar-contrasena", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "me registraron como proveedor en el portal pero ya no recuerdo la clave del correo de bienvenida", "procedimiento": "portal-proveedor.recuperar-contrasena", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como reemplazo la clave temporal en el portal de proveedores", "procedimiento": "portal-proveedor.recuperar-contrasena", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "qué hago con la clave temporal que me llegó del portal de proveedores", "procedimiento": "portal-proveedor.recuperar-contrasena", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "reset clave portal proveedor", "procedimiento": "portal-proveedor.recuperar-contrasena", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "ke hago si no me acuerdo mi password del portal proveedor", "procedimiento": "portal-proveedor.recuperar-contrasena", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "la contadora de un proveedor no puede entrar a la web de s10its para ver sus pagos, olvidó su clave", "procedimiento": "portal-proveedor.recuperar-contrasena", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "cómo restablezco mi acceso al Portal de Proveedores si olvidé la clave", "procedimiento": "portal-proveedor.recuperar-contrasena", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "dónde recupero la contraseña en el portal de proveedores", "procedimiento": "portal-proveedor.recuperar-contrasena", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en el login del portal de proveedores, dónde está el enlace de recuperar clave", "procedimiento": "portal-proveedor.recuperar-contrasena", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde le doi pa recuperar la clave en el portal de proveedores", "procedimiento": "portal-proveedor.recuperar-contrasena", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "dónde se solicita una nueva clave en S10 Portal de Proveedores", "procedimiento": "portal-proveedor.recuperar-contrasena", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "enlace recuperar contraseña portal proveedores", "procedimiento": "portal-proveedor.recuperar-contrasena", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "estoy en SupplierPortalWeb y no recuerdo mi clave, qué enlace uso", "procedimiento": "portal-proveedor.recuperar-contrasena", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "dónde pongo mi correo para que el portal de proveedores me envíe otra clave", "procedimiento": "portal-proveedor.recuperar-contrasena", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dónde ingreso la Contraseña Anterior al cambiar la clave en el portal de proveedores", "procedimiento": "portal-proveedor.recuperar-contrasena", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "cómo cambio la clave temporal por una definitiva en el portal de proveedores", "procedimiento": "portal-proveedor.recuperar-contrasena", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "como pongo mi nueva clave en el portal de proveedores despues del correo", "procedimiento": "portal-proveedor.recuperar-contrasena", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "q correo pongo pa q me llegue la clave nueva del portal de proveedores", "procedimiento": "portal-proveedor.recuperar-contrasena", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "cómo establezco mi nueva clave al entrar al portal de proveedores con la clave temporal", "procedimiento": "portal-proveedor.recuperar-contrasena", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "me llegó la clave temporal del portal de proveedores, cómo la cambio por la mía", "procedimiento": "portal-proveedor.recuperar-contrasena", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "no me llega el correo con la clave nueva del portal de proveedores", "procedimiento": "portal-proveedor.recuperar-contrasena", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "pedí recuperar la clave del portal de proveedores y no llega nada a mi correo", "procedimiento": "portal-proveedor.recuperar-contrasena", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no me llega el corre pa recuperar clave del portal proveedor", "procedimiento": "portal-proveedor.recuperar-contrasena", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "la clave temporal del portal de proveedores no me deja entrar", "procedimiento": "portal-proveedor.recuperar-contrasena", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "portal proveedores no entro clave", "procedimiento": "portal-proveedor.recuperar-contrasena", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "puse la clave del correo en contraseña anterior y el portal de proveedores no la acepta", "procedimiento": "portal-proveedor.recuperar-contrasena", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no puedo ingresar al portal de proveedores, olvidé mi clave", "procedimiento": "portal-proveedor.recuperar-contrasena", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}

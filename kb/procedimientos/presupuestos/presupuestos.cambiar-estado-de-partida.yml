@@ -1,0 +1,77 @@
+id: presupuestos.cambiar-estado-de-partida
+version: 1
+modulo: presupuestos
+titulo: "Cambiar el estado del análisis de precios unitarios de una partida"
+objetivo: "Cambiar el estado de una partida, por ejemplo a Revisado o Protegido, para darle el visto bueno y que su análisis de precios unitarios no sea modificado por error."
+nivel: intermedio
+preguntas:
+  - "como pongo una partida en estado revisado"
+  - "como protejo el analisis de precios unitarios para que nadie lo cambie"
+  - "cambiar estado de partida en s10 presupuestos"
+  - "no me deja poner sin analisis a la partida"
+  - "quien puede poner una partida en protegido"
+  - "como cambio el estado a todas las partidas del presupuesto"
+  - "que significa el color azul o rojo del analisis de precios"
+  - "la partida dice sin analisis pero si tiene analisis"
+aliases:
+  - "estado de la partida"
+  - "cambiar estado de partida"
+  - "proteger partida"
+  - "partida revisada"
+entidades:
+  modulo: "Presupuestos"
+  pantallas: ["Hoja del Presupuesto"]
+  objetos: ["partida", "análisis de precios unitarios", "estado"]
+prerrequisitos:
+  - texto: "El estado REVISADO puede ser asignado por el administrador del sistema, jefes de grupo y especialistas; el estado PROTEGIDO, solo por el administrador del sistema y el jefe de grupo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s100]
+pasos:
+  - n: 1
+    id: "presupuestos.cambiar-estado-de-partida#1"
+    accion: "En la **Hoja del Presupuesto**, ubique la partida y, en su análisis de precios unitarios, haga clic derecho y elija **Estado**."
+    fuente: ["7c40a9548710-0164", web-https-documentacion-s10peru-com-manual-d-s100]
+    pagina: 101
+  - n: 2
+    id: "presupuestos.cambiar-estado-de-partida#2"
+    accion: "De la lista que se despliega con todos los estados, seleccione uno, por ejemplo **Revisado** o **Protegido**."
+    fuente: ["7c40a9548710-0164", web-https-documentacion-s10peru-com-manual-d-s100]
+    pagina: 101
+  - n: 3
+    id: "presupuestos.cambiar-estado-de-partida#3"
+    accion: "También puede modificar el estado con el botón de estado del análisis de precios unitarios."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s100, "7c40a9548710-0164"]
+    pagina: null
+  - n: 4
+    id: "presupuestos.cambiar-estado-de-partida#4"
+    accion: "Para cambiar de estado a todas las partidas propias del presupuesto, haga clic derecho sobre el presupuesto en el árbol, elija **Cambiar estado a todas las partidas** y luego el estado, por ejemplo Revisado o Protegido."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s094, img-a7ba1e20ad1d-0000, img-95c6cc6264dd-0000]
+    pagina: null
+    fotos:
+      - id: "4eb48334dc96"
+        ruta_o_url: "imagenes/manual-de-presupuestos/95c6cc6264dd.png"
+        pagina: null
+        ocr: "Sin Anilisis\nAnalisis Copia\n\nSin Revision\nRevisadao\nProtegida\n\nUso en Obra\nRevisado en Obra\nProtegido en Obra"
+verificacion:
+  - texto: "El color del botón del análisis de precios unitarios indica su estado: azul, sin revisión; amarillo, vacío; rojo, revisado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s017]
+errores_frecuentes:
+  - sintoma: "No le permite cambiar la partida al estado SIN ANALISIS."
+    solucion: "El sistema no permite cambiar al estado SIN ANALISIS si el análisis de precios unitarios tiene contenido; envía un mensaje."
+    fuente: ["7c40a9548710-0166"]
+  - sintoma: "No puede modificar una partida."
+    solucion: "La partida que se encuentre en estado PROTEGIDO no podrá ser modificada."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s100]
+  - sintoma: "Una partida está en estado SIN ANALISIS a pesar de tener análisis de precios unitarios."
+    solucion: "Use **Verificar estado analisis de precios unitarios**: al detectarse este caso, la partida pasa automáticamente al estado SIN REVISION. Generalmente ocurre cuando se importó o trasladó información de una versión anterior."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s093, img-a7ba1e20ad1d-0000]
+relacionados: [presupuestos.registrar-partida-en-el-catalogo, presupuestos.registrar-titulos-y-partidas]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s100, manual: "Manual de Presupuestos", seccion: "5.1.1.1 Hoja del presupuesto (15)", pagina: null}
+  - {id: "7c40a9548710-0164", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 101}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s094, manual: "Manual de Presupuestos", seccion: "5.1.1.1 Hoja del presupuesto (9)", pagina: null}
+  - {id: img-a7ba1e20ad1d-0000, manual: "Manual de Presupuestos", seccion: "a7ba1e20ad1d.png", pagina: null}
+  - {id: img-95c6cc6264dd-0000, manual: "Manual de Presupuestos", seccion: "95c6cc6264dd.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s017, manual: "Manual de Presupuestos", seccion: "2.1 La carpeta de trabajo (7)", pagina: null}
+  - {id: "7c40a9548710-0166", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 102}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s093, manual: "Manual de Presupuestos", seccion: "5.1.1.1 Hoja del presupuesto (8)", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

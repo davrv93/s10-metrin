@@ -70,7 +70,7 @@ y la escritura PJGE.
 
 ## Resultados (07-10-2026)
 
-El modelo en `metrin/modelos/router/` es el **v5: 125 procedimientos** (sha256 del `.pjge` `5e26f93e…`), con los umbrales de castigo 3. Las tablas de abajo cuentan cómo se llegó.
+El modelo en `metrin/modelos/router/` es el **v7: 167 procedimientos** (sha256 del `.pjge` `443d56ca…`), con los umbrales de castigo 3 y el filtro de uso apagado. Las tablas de abajo cuentan cómo se llegó.
 
 | Prueba (router solo, int8) | v1: solo sintético | **v2: + reales** |
 |---|---|---|
@@ -171,3 +171,21 @@ búsqueda sin router (63,2 → 54,4 %): el router es lo que mantiene el acierto.
 
 Siguiente palanca para el 1,8 %: más procedimientos para los temas reales sin cobertura, o un embebedor mejor (MiniLM
 destilado a PJGE, punto 4 del plan).
+
+### v7 con 167 procedimientos (08-10-2026, instalado)
+
+Tanda 2 del escenario B1: 42 procedimientos más desde secciones oficiales accionables aún sin usar (de 155 candidatas;
+quedan ~110). Nuevos módulos con contenido: Calidad Móvil (carpeta nueva). Prueba ciega `datos/prueba_nuevos2.jsonl`
+(99: 2 por procedimiento + 15 sin caso) y revisión de `prueba_nuevos.jsonl` (`nuevo-149` → PLAME).
+
+| Router solo, mismos umbrales, sin filtro | v5 · 125 | **v7 · 167** |
+|---|---|---|
+| Oro antiguo (129 con caso): elige bien / mal | 66,7 % / 3,1 % | 63,6 % / 3,1 % |
+| Procedimientos tanda 1 (131): elige bien / mal | 87,0 % / 0,8 % | 85,5 % / 0,0 % |
+| Procedimientos tanda 2 (84): elige bien / mal / top-3 | 0 % / 11,9 % / 0 % | **81,0 % / 1,2 % / 97,6 %** |
+| Sin caso de la tanda 2 (15, 8 casi-vecinas): elige | 26,7 % | 53,3 % |
+| Real (12 con caso / 1 070 sin caso) | 2 bien, 1,8 % error | idéntico |
+
+`entrenar.py` exporta siempre el filtro de uso, pero solo lo activa con `--filtro`: calibrado con datos sintéticos
+bloqueaba 9 de las 12 preguntas reales con caso. La V2 completa (`medir-v2.sh`) no se midió en esta tanda: el disco de
+la Mac estaba lleno (108 MiB libres) y la imagen Docker no cabía.

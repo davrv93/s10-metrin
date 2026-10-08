@@ -1,0 +1,128 @@
+id: presupuestos.vincular-precios-a-excel
+version: 1
+modulo: presupuestos
+titulo: "Vincular los precios de los recursos a una hoja Excel"
+objetivo: "Vincular la celda donde se registra el precio de un recurso en el S10 con la celda de una hoja Excel donde se encuentra ese precio, para cuando se cotizan precios en un lugar alejado del centro de trabajo."
+nivel: avanzado
+preguntas:
+  - "como vinculo los precios de los recursos con un excel"
+  - "cotizo los precios en excel, como los paso al s10 sin digitarlos"
+  - "vincular precio a celda excel en precios por presupuesto"
+  - "quiero que el precio del recurso se actualice desde mi excel"
+  - "como vinculo varios precios a la ves con excel"
+  - "donde esta tomar precios vinculados en forma global"
+  - "los precios me los mandan en excel desde otra ciudad, como los jalo al presupuesto"
+  - "como desvinculo un precio de excel para ponerlo a mano"
+aliases:
+  - "vincular precio a excel"
+  - "vincular precios a celda excel"
+  - "tomar precios vinculados"
+  - "vincular celdas en forma global a excel"
+entidades:
+  modulo: "Presupuestos"
+  pantallas: ["Precios por Presupuesto", "Vinculo Excel"]
+  objetos: ["recurso", "precio", "hoja Excel", "celda"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "presupuestos.vincular-precios-a-excel#1"
+    accion: "En el escenario **Precios por Presupuesto**, exporte el contenido del escenario a una hoja Excel con **Exportar a Microsoft Excel** y grabe el archivo en el servidor."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s111, img-63f23dda685b-0000]
+    pagina: null
+  - n: 2
+    id: "presupuestos.vincular-precios-a-excel#2"
+    accion: "Registre el precio del recurso en la hoja Excel, grabe el archivo y cierre Excel."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s111]
+    pagina: null
+  - n: 3
+    id: "presupuestos.vincular-precios-a-excel#3"
+    accion: "Haga clic derecho en la celda donde se registra el precio del recurso y elija **Vincular un precio a celda Excel**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s111, img-63f23dda685b-0000]
+    pagina: null
+    fotos:
+      - id: "4660a7cade58"
+        ruta_o_url: "imagenes/manual-de-presupuestos/63f23dda685b.png"
+        pagina: null
+        ocr: "Precios histéviees\nPrecios Compra\nFactor de precio\nFactor de cantidad Propio y Alterna\nDescripcion » Hliminar propio\n Multiplicar por un factor\nER) Calcular columnas auxiliares\nff] Calcular mediante indices unificados\nAsignar precio COSTOS\nFY Vincular un precio a celda Excel\nDesvincular un precio de celda Excel\nReemplazar precios de celdas vinculadas\nVincular celdas en forma global a Excel\nEn la h…"
+  - n: 4
+    id: "presupuestos.vincular-precios-a-excel#4"
+    accion: "En la ventana que se muestra, ubique el archivo de Excel que contiene los precios de los recursos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s111, img-82989c3ac773-0000]
+    pagina: null
+    fotos:
+      - id: "b6fe726c1acf"
+        ruta_o_url: "imagenes/manual-de-presupuestos/82989c3ac773.png"
+        pagina: null
+        ocr: "3 (acl e= ms\nArchivo [D:buchancholprecios - vincular xisx\nNotas\nHoja [Sheet 5\nee\nCampo. [Precio Moneda Principal x Xnculy_s-10-4\n310-24 3-10-34 Cerrar\nFila 13 Columna:| G [7 Actualiza los datos existentes e403\n0 0203020003 ACERO CORRUGADO fy=4200 kg/cm2 GRADO Bt kg 17,635.7400 2.00\n| 43 | 0 0205000003 PIEDRACHANCADADE 1/2\" = m3 108 (3-10-F\nGin.) 0 0205000003 PIEDRA GRANDE DE 8\" m3 33.0000 43.00\nIn…"
+  - n: 5
+    id: "presupuestos.vincular-precios-a-excel#5"
+    accion: "Elija la fila y la columna de la celda de Excel donde se encuentra el precio del recurso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s111]
+    pagina: null
+  - n: 6
+    id: "presupuestos.vincular-precios-a-excel#6"
+    accion: "Use el botón que vincula las celdas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s111]
+    pagina: null
+  - n: 7
+    id: "presupuestos.vincular-precios-a-excel#7"
+    accion: "Luego haga clic derecho sobre el recurso y elija **Reemplazar precios de celdas vinculadas** para reemplazar los precios con los de las celdas vinculadas a Excel."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s111, img-63f23dda685b-0000]
+    pagina: null
+  - n: 8
+    id: "presupuestos.vincular-precios-a-excel#8"
+    accion: "Para vincular varios precios a la vez, registre los precios de los recursos en la hoja Excel exportada, grabe el archivo, cierre Excel, haga clic derecho donde se encuentra el listado de recursos y elija **Vincular celdas en forma global a Excel**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s111, img-63f23dda685b-0000, img-a584e30174d5-0000]
+    pagina: null
+    fotos:
+      - id: "09572e1f8319"
+        ruta_o_url: "imagenes/manual-de-presupuestos/a584e30174d5.png"
+        pagina: null
+        ocr: "[3S Recursos: vinculos con Microzof Excel e=ale=hleees)\n[Activa [Nombre archivo (Hoja Flac lain \\colCédgo |ColPreci(I) |ColPrecia@) col. Valor\nQuitar\nAgregar desde la Plantilla\nNotero"
+  - n: 9
+    id: "presupuestos.vincular-precios-a-excel#9"
+    accion: "En la ventana **Vinculo Excel**, identifique los recursos y los precios a vincular: elija la fila de inicio y fin y la columna."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s112, web-https-documentacion-s10peru-com-manual-d-s111, img-05940f5bb612-0000]
+    pagina: null
+    fotos:
+      - id: "360d012dbc00"
+        ruta_o_url: "imagenes/manual-de-presupuestos/05940f5bb612.png"
+        pagina: null
+        ocr: "XE Vinculo Excel Se)\nArchive [D:Wouchancholprecios - vincular.xlsx _Examinar_|\nNotas\nHoja [Sheet =\nAcept\ncampo [CésgoRecwss TST] SISA }-_sventar_|\nB32 13-341 Gere)\nFilas del 14 Al 16 Columna:| G [7 Actualiza los datos existentes 313-3,\nyale) ce aI\n0 0205000009 PIEDRA GRANDE DE 6\" m3 33.0000 30.00\n(3-13-2_]25000011 PIEDRA MEDIAN, DE 6\" m3\n0 0208010003000 ARENA GRUESA m3 37.6700 M 30.00\n[44> dil She…"
+  - n: 10
+    id: "presupuestos.vincular-precios-a-excel#10"
+    accion: "Use el botón para grabar el contenido de la ventana."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s112]
+    pagina: null
+    fotos:
+      - id: "2778a34bba84"
+        ruta_o_url: "imagenes/manual-de-presupuestos/bd340b487219.png"
+        pagina: null
+        caption: "Llamada 3-13-4: Use este botón para grabar el contenido de la ventana."
+        ocr: "Fe\n3 Recursos: Vinculos con Microsoft Excel \\eclaC=h )\nActivo Nombre Archivo Hoja Fila Inicio [Fila Fin Col.Cédigo Col.Precio(1) | ColPrecio(2) | Col)\n| precios - vincularxlsx 1 14 16 G"
+  - n: 11
+    id: "presupuestos.vincular-precios-a-excel#11"
+    accion: "Para tomar los datos de las celdas vinculadas, use el botón de la barra de botones que toma los datos vinculados de Excel y elija la opción **TOMAR PRECIOS VINCULADOS EN FORMA GLOBAL**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s112, web-https-documentacion-s10peru-com-manual-d-s109]
+    pagina: null
+    fotos:
+      - id: "f26f86926bd4"
+        ruta_o_url: "imagenes/manual-de-presupuestos/a119d701f9f4.png"
+        pagina: null
+        caption: "Para tomar los datos de las celdas vinculadas use el botón (llamada 1-2), luego elija la opción TOMAR PRECIOS VINCULADOS EN FORMA GLOBAL"
+        ocr: "j=\nBF Recursos: Vinculos con Microsoft Excel ran\nActiva Nombre Archivo Hoja Fila Inicio Fila Fin |Col.Cédigo Col-Precio(1) Col Precio(2) | Col"
+verificacion: []
+errores_frecuentes:
+  - sintoma: "Necesita registrar a mano el precio de un recurso que está vinculado a una celda Excel."
+    solucion: "Use **Desvincular un precio de celda Excel**: al desvincular un precio de celda Excel, puede registrar manualmente el precio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s111, img-63f23dda685b-0000]
+relacionados: [presupuestos.copiar-precios-a-otro-presupuesto, presupuestos.procesar-presupuesto, presupuestos.ingresar-metrados]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s111, manual: "Manual de Presupuestos", seccion: "5.1.5 Precios por presupuesto (3)", pagina: null}
+  - {id: img-63f23dda685b-0000, manual: "Manual de Presupuestos", seccion: "63f23dda685b.png", pagina: null}
+  - {id: img-82989c3ac773-0000, manual: "Manual de Presupuestos", seccion: "82989c3ac773.png", pagina: null}
+  - {id: img-a584e30174d5-0000, manual: "Manual de Presupuestos", seccion: "a584e30174d5.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s112, manual: "Manual de Presupuestos", seccion: "5.1.5 Precios por presupuesto (4)", pagina: null}
+  - {id: img-05940f5bb612-0000, manual: "Manual de Presupuestos", seccion: "05940f5bb612.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s109, manual: "Manual de Presupuestos", seccion: "5.1.5 Precios por presupuesto (1)", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

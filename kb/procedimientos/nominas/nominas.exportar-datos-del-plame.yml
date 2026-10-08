@@ -1,0 +1,107 @@
+id: nominas.exportar-datos-del-plame
+version: 1
+modulo: nominas
+titulo: "Obtener y exportar los datos del PLAME"
+objetivo: "Obtener en el escenario de Planilla Electrónica los datos de la Planilla Mensual de Pagos (PLAME) por estructura y periodo, exportarlos a Excel y elaborar la declaración jurada en el programa de la SUNAT."
+nivel: intermedio
+preguntas:
+  - "como saco la info del plame desde nominas"
+  - "que estructuras del plame se usan mas"
+  - "como exporto a excel la estructura 18 de ingresos tributos y descuentos"
+  - "donde obtengo los datos de la planilla mensual de pagos"
+  - "necesito los datos del plame del mes pasado, como hago"
+  - "el plame se hace antes o despues del t-registro"
+  - "donde se declara el plame que saco del s10"
+  - "como sacar el plame resumido o detallado"
+aliases:
+  - "PLAME"
+  - "planilla mensual de pagos"
+  - "exportar PLAME"
+  - "planilla electrónica PLAME"
+entidades:
+  modulo: "Nóminas"
+  pantallas: ["Planilla Electrónica"]
+  objetos: ["PLAME", "estructura", "periodo", "declaración jurada"]
+prerrequisitos:
+  - texto: "La PLAME se elabora obligatoriamente a partir de la información consignada en el T-REGISTRO."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s082]
+  - texto: "El usuario que ingrese al escenario debe estar registrado en el módulo de Facturación y tener los permisos correspondientes."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s081]
+pasos:
+  - n: 1
+    id: "nominas.exportar-datos-del-plame#1"
+    accion: "Ingrese al escenario **Planilla Electrónica** de la empresa."
+    fuente: [img-1af216c05f52-0000, web-https-documentacion-s10peru-com-manual-d-s080, web-https-documentacion-s10peru-com-manual-d-s082]
+    pagina: null
+    fotos:
+      - id: "2d567ea6e1a7"
+        ruta_o_url: "imagenes/manual-de-nominas/1af216c05f52.png"
+        pagina: null
+        ocr: "[Elia } formes | ERRreSeS\n} 2 Escritorio\nplana Eectréica {My SISTEMA 10 S.A.C.\nLuego,"
+  - n: 2
+    id: "nominas.exportar-datos-del-plame#2"
+    accion: "En **Estructura**, elija **Planilla Mensual - PLAME**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s082, img-de227748bcb6-0000]
+    pagina: null
+    fotos:
+      - id: "10a3642ee847"
+        ruta_o_url: "imagenes/manual-de-nominas/de227748bcb6.png"
+        pagina: null
+        ocr: "Datos para la cabecera\nestructura Tipo Perini Moto |\nPlanilla Mensual - PLAME |18.- Trabaicor: Detalle de los ingresos, tributos y desuentos"
+  - n: 3
+    id: "nominas.exportar-datos-del-plame#3"
+    accion: "Elija el formato; por ejemplo, el 18: trabajador, detalle de los ingresos, tributos y descuentos. Las estructuras más utilizadas son 7, 14, 15, 18, 20, 21 y 26."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s082, img-3d4b878b09fa-0000]
+    pagina: null
+    fotos:
+      - id: "e9d144494bfc"
+        ruta_o_url: "imagenes/manual-de-nominas/3d4b878b09fa.png"
+        pagina: null
+        ocr: "7.- Prestador de Servicios con Rentas de Cuarta categoria\n\n12,- Trabajador: Otras Rentas de Quinta categoria\n\n14,- Trabajador: Datos de la jornada laboral\n\n15,- Trabajador: Dias subsidiados y otros no laborados\n\n18.- Trabaiador: Detalle de los inaresos, tributos y descuentos\n\n19,- Pensionista: Detalle de los ingresos, tributos y descuentos\n\n20,- Datos del detalle de comprobantes de prestadores de …"
+  - n: 4
+    id: "nominas.exportar-datos-del-plame#4"
+    accion: "Si necesita un rango de fechas, deje seleccionada la opción de rango; si no está seleccionada, solo podrá elegir un periodo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s082]
+    pagina: null
+  - n: 5
+    id: "nominas.exportar-datos-del-plame#5"
+    accion: "Elija el periodo mensual."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s082]
+    pagina: null
+  - n: 6
+    id: "nominas.exportar-datos-del-plame#6"
+    accion: "Elija el modo: **Resumido** o **Detallado**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s082]
+    pagina: null
+  - n: 7
+    id: "nominas.exportar-datos-del-plame#7"
+    accion: "Use el botón que carga los datos en el escenario."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s082]
+    pagina: null
+  - n: 8
+    id: "nominas.exportar-datos-del-plame#8"
+    accion: "Use el botón que ejecuta el proceso de exportación del contenido del escenario a Excel; el archivo se guarda en una carpeta."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s082]
+    pagina: null
+  - n: 9
+    id: "nominas.exportar-datos-del-plame#9"
+    accion: "Elabore la declaración jurada en el programa PLAME, que se descarga desde www.sunat.gob.pe, y envíela mediante SUNAT Operaciones en Línea (SOL)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s082]
+    pagina: null
+    fotos:
+      - id: "88fa92c684c3"
+        ruta_o_url: "imagenes/manual-de-nominas/910de6f043dc.png"
+        pagina: null
+        caption: "El programa se descarga desde www.sunat.gob.pe, en el cual se elabora la declaración jurada y se envía mediante SUNAT Operaciones en Línea (SOL)."
+        ocr: "eS Es preciso sefialar que la versidn vigente es la 3.5, aprobada mediante Resolucién de Superintendencia\nN° 112-2018/SUNAT la cual es de uso obligatorio a partir del 01 de mayo de 2018 y debe utilizarse a\npartir del periodo abril de 2019 en adelante."
+verificacion: []
+errores_frecuentes: []
+relacionados: [nominas.exportar-datos-del-t-registro, nominas.calcular-la-nomina]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s082, manual: "Manual de Nóminas", seccion: "8.2 PLAME", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s081, manual: "Manual de Nóminas", seccion: "8.1 T- Registro:", pagina: null}
+  - {id: img-1af216c05f52-0000, manual: "Manual de Nóminas", seccion: "1af216c05f52.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s080, manual: "Manual de Nóminas", seccion: "8 PLANILLA ELECTRONICA", pagina: null}
+  - {id: img-de227748bcb6-0000, manual: "Manual de Nóminas", seccion: "de227748bcb6.png", pagina: null}
+  - {id: img-3d4b878b09fa-0000, manual: "Manual de Nóminas", seccion: "3d4b878b09fa.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

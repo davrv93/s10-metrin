@@ -1,0 +1,77 @@
+id: facturacion-electronica.recuperar-contrasena-del-portal
+version: 1
+modulo: facturacion-electronica
+titulo: "Recuperar la contraseña del portal de facturación electrónica"
+objetivo: "Obtener una nueva clave temporal del portal de facturación electrónica cuando se olvidó la clave, y reemplazarla por una nueva al ingresar."
+nivel: basico
+preguntas:
+  - "olvidé mi clave del portal de facturación electrónica, cómo la recupero"
+  - "como recupero la contraseña del portal de facturas del s10"
+  - "no me acuerdo la contrasena para entrar al portal de facturacion"
+  - "me llegó una clave temporal al correo, ¿qué hago con ella?"
+  - "donde pongo la clave que me mandaron al correo para cambiarla"
+  - "que va en el campo contraseña anterior del portal"
+  - "como restablezco mi clave del portal de factura electronica"
+  - "perdi la clave del portal de comprobantes electronicos"
+aliases:
+  - "recuperar contraseña del portal"
+  - "olvidé mi clave"
+  - "recuperación de contraseña"
+  - "clave temporal del portal"
+entidades:
+  modulo: "Facturación Electrónica"
+  pantallas: ["Recuperación de contraseña"]
+  objetos: ["clave temporal", "Contraseña Anterior", "buzón de correo", "portal"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "facturacion-electronica.recuperar-contrasena-del-portal#1"
+    accion: "Si olvidó su clave, acceda al enlace de recuperación e ingrese su dirección de correo electrónico, para que el portal le envíe una nueva clave a esa dirección."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s015, web-https-documentacion-s10peru-com-manual-d-s013]
+    pagina: null
+    fotos:
+      - id: "6dd478e0572a"
+        ruta_o_url: "imagenes/manual-de-facturacion-electronica/3998421dc664.png"
+        pagina: null
+        caption: "Si olvidó su clave, acceda a este enlace para que el portal le envíe una nueva clave a la dirección electrónica que ingrese."
+        ocr: "Direccién de correo | ncorez@hotmall.com"
+      - id: "a39820c4e763"
+        ruta_o_url: "imagenes/manual-de-facturacion-electronica/6275be76bbdd.png"
+        pagina: null
+        caption: "Si olvidó su clave, acceda a este enlace para que el portal le envíe una nueva clave a la dirección electrónica que ingrese."
+        ocr: "e@ - oa x\n1D ipsst0tscomyswts x\n€ > © @ Seguro. https//s0it.com/SMITSWieb/Login aspx oe:\n=\nUn Eat ha so envado aw Core ect. ome\"\n= com\n= a\nSS, etinestStooncertert\n— Sy (oEES NS RLS\na Sy comprober a opeén Acceso Annie pra ver\nSSS f ‘sus documentos\nee —_——__________\n/\n(© 2015 Sistema 10 todos os derechos reservados"
+  - n: 2
+    id: "facturacion-electronica.recuperar-contrasena-del-portal#2"
+    accion: "Revise su buzón de correo: habrá llegado un correo enviado por el portal, donde se le asigna una nueva clave temporal."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s015]
+    pagina: null
+    fotos:
+      - id: "8abc2fed6f07"
+        ruta_o_url: "imagenes/manual-de-facturacion-electronica/204653796ac2.png"
+        pagina: null
+        caption: "Al revisar el buzón de correo, habrá llegado un correo enviado por el portal, donde se le asigna una nueva clave temporal."
+        ocr: "e@ - ao x\n{i ips/s16tscom/SMiTS) ¥) EP: Correo -ncotezs@hotr x\n€7Cc oO ‘outlook.live.com/ wii\n#2 Correo de Outlook @ & BP Nely Cortez Sane. 2\nx P— @Nuevo|¥ © Responder|¥ — Eliminar EE Archivar = Probar aversion beta\nA Carpetas + Prioritarios Otros Fitrar\nBandeja dent 763 sip Alena\ns Has Olvidado Tu Contrasefia\ntsa] S10 Alerta<f electronica@s10peru.com> © Responder |v\nSu conrasena temporal es CBSTK…"
+  - n: 3
+    id: "facturacion-electronica.recuperar-contrasena-del-portal#3"
+    accion: "Acceda al portal con esa clave temporal."
+    resultado: "El portal le solicitará que ingrese una nueva clave."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s015]
+    pagina: null
+  - n: 4
+    id: "facturacion-electronica.recuperar-contrasena-del-portal#4"
+    accion: "En el campo **Contraseña Anterior**, ingrese la clave que se le entregó en el correo electrónico, e ingrese su nueva clave."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s015]
+    pagina: null
+    fotos:
+      - id: "4ed2e54ff56e"
+        ruta_o_url: "imagenes/manual-de-facturacion-electronica/321023ac5b21.png"
+        pagina: null
+        caption: "En el campo Contraseña Anterior, ingrese la clave que se le entregó en el correo electrónico, e ingrese su nueva clave."
+        ocr: "e - o x\n1D) hittpss/st0its.com/SMITS x\n€ > © a Seguro | https//s10its.com/SMITSWeb/Login.aspx2eU3Spuls62tnHHPZ5962IBBvzE QqBqykz2PPgUZqMOMoB%42/OIXVLiqmKmsé2bsQpjKLHC2SA9 ori\n=o"
+verificacion: []
+errores_frecuentes: []
+relacionados: [facturacion-electronica.crear-usuario-del-portal]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s015, manual: "Manual de Facturación Electrónica", seccion: "3.1.3 Recuperación de contraseña", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s013, manual: "Manual de Facturación Electrónica", seccion: "3.1.1 Autenticación de Usuario", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

@@ -118,8 +118,7 @@ def cargar_reales(clases: list[str]) -> tuple[list[dict], list[dict]]:
     if not etiquetas:
         return [], []
     # Catálogo ampliado: los «_ninguno» que ahora responde un procedimiento nuevo (reetiquetas.jsonl).
-    ruta_re = REALES / "reetiquetas.jsonl"
-    if ruta_re.exists():
+    for ruta_re in sorted(REALES.glob("reetiquetas*.jsonl")):  # una por tanda de procedimientos nuevos
         for linea in open(ruta_re, encoding="utf-8"):
             if linea.strip():
                 r = json.loads(linea)
@@ -165,8 +164,9 @@ def main():
     clases = sorted(procs) + [NINGUNO]
     prueba = cargar_prueba(procs)
     textos_prueba = [x["texto"] for x in prueba]
-    if (DATOS / "prueba_nuevos.jsonl").exists():  # la prueba de los procedimientos nuevos tampoco puede filtrarse
-        textos_prueba += [json.loads(l)["texto"] for l in open(DATOS / "prueba_nuevos.jsonl", encoding="utf-8") if l.strip()]
+    for ruta in sorted(DATOS.glob("prueba_nuevos*.jsonl")):  # las pruebas de los procedimientos nuevos tampoco
+        if "revision" not in ruta.name:
+            textos_prueba += [json.loads(l)["texto"] for l in open(ruta, encoding="utf-8") if l.strip()]
     prueba_norm = {normalizar(t) for t in textos_prueba}
     prueba_pal = [palabras(t) for t in textos_prueba]
 

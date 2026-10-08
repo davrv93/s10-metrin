@@ -1,0 +1,268 @@
+id: nominas.registrar-tareo-multiproyecto
+version: 1
+modulo: nominas
+titulo: "Registrar el tareo multiproyecto y enviarlo a aprobación"
+objetivo: "Registrar para cada trabajador el proyecto, la partida de control y la cantidad de horas utilizadas en la semana desde el MULTIPROYECTO, con ayuda de Excel, y enviar el tareo a aprobación, requisito para el procesamiento de la nómina."
+nivel: avanzado
+preguntas:
+  - "cómo hago el tareo multiproyecto en nóminas"
+  - "mis obreros trabajan en varias obras, como registro sus horas por proyecto"
+  - "como armo el parte grupal del tareador en el multiproyecto"
+  - "como exporto el parte multiproyecto a excel y luego lo importo"
+  - "como mando a aprobar el tareo de la semana"
+  - "donde apruebo el tareo multiproyecto en gerencia de proyectos"
+  - "como asigno proyecto y partida de control a cada trabajador en el tareo"
+  - "tareo multiproyeto paso a paso"
+  - "el tareo sale por aprobar, quien lo aprueba y como"
+aliases:
+  - "tareo multiproyecto"
+  - "parte multiproyecto"
+  - "parte grupal del tareador"
+  - "enviar tareo a aprobación"
+  - "aprobar tareo multiproyecto"
+entidades:
+  modulo: "Nóminas"
+  pantallas: ["Tareo Multiproyecto", "Partes Multiproyecto", "Aprobaciones", "Tareo Multiproyecto por Aprobar"]
+  objetos: ["tareo", "parte", "tareador", "partida de control", "proyecto", "horas trabajadas"]
+prerrequisitos:
+  - texto: "El tareador se asigna a cada uno de los trabajadores en el Multiproyecto: es el encargado de controlar la cantidad de horas en cada una de las partidas de control."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s053]
+pasos:
+  - n: 1
+    id: "nominas.registrar-tareo-multiproyecto#1"
+    accion: "Desde el MULTIPROYECTO, ingrese al escenario **Tareo Multiproyecto**."
+    fuente: [img-3df12f76b6a0-0000, web-https-documentacion-s10peru-com-manual-d-s060]
+    pagina: null
+    fotos:
+      - id: "8c40ba627a66"
+        ruta_o_url: "imagenes/manual-de-nominas/3df12f76b6a0.png"
+        pagina: null
+        ocr: "Proyectos\n- — I gap Esertorio\ncs) ER FIMA HUAYCOLORO\n1 f+) MULTIFAMILIAR ESCAMPADERO\nfe [ Elia + AMULTIPROYECTO\nsa 5 2) Princift\nTareo Multiproyecto Luego, ‘5 IES"
+  - n: 2
+    id: "nominas.registrar-tareo-multiproyecto#2"
+    accion: "Haga doble clic en la semana en la que se realizará el tareo."
+    fuente: [img-7002668defeb-0000, web-https-documentacion-s10peru-com-manual-d-s060]
+    pagina: null
+    fotos:
+      - id: "26be984ebf6a"
+        ruta_o_url: "imagenes/manual-de-nominas/7002668defeb.png"
+        pagina: null
+        ocr: "Tareo Multiproyecto\nconus watwnoncie LE |\n\nProyecto MULTIPROYECTO\n\nTipo de Némina [q92 Régimen C.C. con BESS. - Obreros z| Afol loonie\n\nDoble clic en la sernana que se realizara el tareo\n\nCodigo Descripcién Del\n0220160101 Semana 2016 - 01 01/01 2016 0301/2016 2016\n0220160201 Semana 2016 - 02 04/01 2016 10/01/2016 2016\n0220160301 [Semana 2016 - 03 1101/2016 17012016 92016"
+  - n: 3
+    id: "nominas.registrar-tareo-multiproyecto#3"
+    accion: "Haga clic derecho y elija **Parte Personal**, para elaborar el parte del trabajador seleccionado, o **Parte Grupal**, cuando el trabajador tiene asignado un tareador."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s060, img-ab307328405e-0000]
+    pagina: null
+    fotos:
+      - id: "d95b83cc9a3b"
+        ruta_o_url: "imagenes/manual-de-nominas/ab307328405e.png"
+        pagina: null
+        ocr: "Pe\nre} Partes Multiproyecto (Semana 2016 - Stax\nProyecto 02001001 MULTIPROYECTO\nTipo de Némina 002 Régimen C.C. con BB.SS. - Obreros\nSemana Semana 2016 - 03 (Del 11/01/2016 Al 17/01/2016)\nHowe 8 val eae\nClic derecho Parte Personal\nParte Grupal <b)\nParte Grupal por Proyecto Castine=fe)"
+  - n: 4
+    id: "nominas.registrar-tareo-multiproyecto#4"
+    accion: "En el parte grupal, elija el nombre del **Tareador** con el botón: se muestran los trabajadores asignados al tareador."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s060, img-0fde7822f42d-0000]
+    pagina: null
+    fotos:
+      - id: "2b331a821021"
+        ruta_o_url: "imagenes/manual-de-nominas/0fde7822f42d.png"
+        pagina: null
+        ocr: "_—aa\nProyecto 02001001 MULTIPROYECTO\nTipo de Némina 002 Régimen C.C. con BB.SS. - Obreros (6-1)\nTareador 22000037 {CAJA CHAMPI, LUIS ALFONSO. a |e)\nSemana Semana 2016 - 03 (Del 11/01/2016 Al 17/01/2016)\nProyectos es rs |\n(Dimensién) a4)\nTurno [Diurno +] Es\nEva@ils Gh ada\n[eso [Nome = * Proyecto [Partie be Contra\n1 42187658 ALZAMORA GONZALES, CARLOS L\n2 10185511 ARANIBAR CUEVAS, ARNULFO RAFAEL\n3 45…"
+  - n: 5
+    id: "nominas.registrar-tareo-multiproyecto#5"
+    accion: "Grabe y cierre la ventana con **Aceptar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s060, img-0fde7822f42d-0000]
+    pagina: null
+  - n: 6
+    id: "nominas.registrar-tareo-multiproyecto#6"
+    accion: "Haga clic derecho sobre el parte y elija **Exportar a Microsoft Excel**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s060, img-03d9828b01ec-0000, img-c07e5799d8f8-0000]
+    pagina: null
+    fotos:
+      - id: "6fe2ac8e9648"
+        ruta_o_url: "imagenes/manual-de-nominas/03d9828b01ec.png"
+        pagina: null
+        ocr: "so\n@ Partes Muttiproyecto (Semana 2016 - 03) (| ety\nProyecto 02001001 MULTIPROYECTO\nTipo de Némina 002 Régimen C.C. con BB.SS. - Obreros\nSemana Semana 2016 - 03 (Del 11/01/2016 Al 17/01/2016)\nHEME a ve Gls dezecha | oil |\na Modificar\n|\nsounas |eraonsr Elleninar\nLN, Expartar a Microsoft Excel"
+  - n: 7
+    id: "nominas.registrar-tareo-multiproyecto#7"
+    accion: "Ingrese el directorio donde desea grabar los tareos."
+    fuente: [img-09c6288f4693-0000, web-https-documentacion-s10peru-com-manual-d-s060]
+    pagina: null
+    fotos:
+      - id: "9c19ce1cf6e3"
+        ruta_o_url: "imagenes/manual-de-nominas/09c6288f4693.png"
+        pagina: null
+        ocr: "Buscarcamete\nIngrese el directorio donde desea grabar los Tareas\n4 & Disco local (D:) S\n[B-A-Muttipreycecto} |\nCarpeta: 4 - Multiproyecto"
+  - n: 8
+    id: "nominas.registrar-tareo-multiproyecto#8"
+    accion: "Elija **Si** para abrir el archivo."
+    resultado: "Se muestra la hoja Excel con los datos registrados."
+    fuente: [img-c4c5854dcfd3-0000, web-https-documentacion-s10peru-com-manual-d-s060]
+    pagina: null
+    fotos:
+      - id: "a248e1f0d1bb"
+        ruta_o_url: "imagenes/manual-de-nominas/c4c5854dcfd3.png"
+        pagina: null
+        ocr: "[ S10 Néminas_ leo\n«4Desea abrir el archivo DA-\nMultiproyecto\\TM-PRO2001001-TNO02-TA22000037-PD00000003.xls\n\nSi | No"
+      - id: "9b518c9e7746"
+        ruta_o_url: "imagenes/manual-de-nominas/e24a07a78f90.png"
+        pagina: null
+        caption: "En la siguiente página se muestran la hoja Excel con los datos registrados."
+        ocr: "1 ee ws\ngeges Sse3 2829 88 28 2228 il\nSL 45 SE 3 (5 SIE 5 [8 55 3 [5 5 (5 55 SIE 5 D)\nzs} sl sl sl sl sl sl sl al sl a a\ng\n> |iiets[s{s[s[s[s[slais[ TIT) |,\na 2/2929 2929 je sie sles jes ie ges a\n- 8 WE HOWE | | | | be\ngi see) coe Ga Ee es oe aes a\n3 SSIES IES|ES ESE S/ES IESE SES 2e\n* EEE GEEEEEGITT\ngases 29e\" 2888 ee Bs geey\n“|e 312 3 | S| 8 [2 8/2 3 |2 3 |F 8 |= S12 S\nes sl gi el el el gle 2\nz\n…"
+  - n: 9
+    id: "nominas.registrar-tareo-multiproyecto#9"
+    accion: "Haga clic en la celda del proyecto y, cuando aparezca el botón, elija el proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s060]
+    pagina: null
+    fotos:
+      - id: "4ac0b1e7e162"
+        ruta_o_url: "imagenes/manual-de-nominas/8f736f5a2ec8.png"
+        pagina: null
+        caption: "Llamada a: Haga clic en la celda marcada con la llamada a, luego que aparezca el botón marcado con la llamada a-1, elija el proyecto."
+        ocr: "Nomhre [ L,\n02001 MULTIPROYECTO\nARANIBAR CUEVAS, ARNULFO RAFAEL Wiel isi il ieee te\npT"
+  - n: 10
+    id: "nominas.registrar-tareo-multiproyecto#10"
+    accion: "Haga clic en la celda de la partida de control y, cuando aparezca el botón, elija la partida de control."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s060]
+    pagina: null
+    fotos:
+      - id: "eb35919b9c52"
+        ruta_o_url: "imagenes/manual-de-nominas/362995ce4f73.png"
+        pagina: null
+        caption: "Llamada b: Haga clic en la celda marcada con la llamada b, luego que aparezca el botón marcado con la llamada b-1, elija la partida de control."
+        ocr: "©)\nNombre Proyecto % Lures\nPari Cora\nALZAMORA GONZALES, CARLOS 83001 FIMA HUAYCOLORO || a eee\n03001 FIMA HUAYCOLORO 0101001 Movimiento de Bel\nARANIBAR CUEVAS, ARNULFO RAFAEL] 0101002 Concreto\n03001 Fim HUAVCOLORO) | C1003 Encafrado\nARELLAN CASTROMONTE, MESIAS 0101004 Muros\n0102001_Gastos generales"
+  - n: 11
+    id: "nominas.registrar-tareo-multiproyecto#11"
+    accion: "Haga clic en la celda del concepto y, cuando aparezca el botón, elija el concepto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s060]
+    pagina: null
+    fotos:
+      - id: "e0b3da3bbd1c"
+        ruta_o_url: "imagenes/manual-de-nominas/56dd81d30a68.png"
+        pagina: null
+        caption: "Llamada c: Haga clic en la celda marcada con la llamada c, luego que aparezca el botón marcado con la llamada c-1, elija el concepto."
+        ocr: "©)\na ae\nNombre Proyecto ‘%! —\nParia de Corel conferto | Paras |\n03001 FIMA HUAYCOLORO Uj\n03001 FIMA HUAYCOLORO 01012001 HRS LABOR||\nARANIBAR CUEVAS, ARNULFO RAFAEL\n0101002 Concreta |\nARELLAN CASTROMONTE, MESIAS 03001 FIMA HUAY COLORS\n0101002 Concreta"
+  - n: 12
+    id: "nominas.registrar-tareo-multiproyecto#12"
+    accion: "Ingrese la cantidad de horas trabajadas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s060]
+    pagina: null
+    fotos:
+      - id: "8a0d67d1b86c"
+        ruta_o_url: "imagenes/manual-de-nominas/0a94d36fe55a.png"
+        pagina: null
+        caption: "Llamada e: Ingrese la cantidad de horas trabajadas."
+        ocr: "ae ee |\nPartida de Control\n03001 FIM& HUAYCOLORO (01012001 HRS\nALZAWORACoNZALES, carts PRETFMATUAYOSLOROT Ta, conerto lpaponapues | *_|\nARANAR CLEVAS. ARNULFO Raragy [wot FMA HUAYCOLORO 01012001 HRS\n‘ 0101002 Concrete _|LABORABLES\n03001 FIM HUAYCOLORO (01012001 HRS\nARELLAN CASTROMONTE, MESIS"
+  - n: 13
+    id: "nominas.registrar-tareo-multiproyecto#13"
+    accion: "Grabe y cierre Excel."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s060]
+    pagina: null
+  - n: 14
+    id: "nominas.registrar-tareo-multiproyecto#14"
+    accion: "Para importar la información de Excel al S10, haga clic derecho sobre el parte y elija **Importar desde Microsoft Excel**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s060, img-c07e5799d8f8-0000]
+    pagina: null
+    fotos:
+      - id: "4075b1cbab95"
+        ruta_o_url: "imagenes/manual-de-nominas/c07e5799d8f8.png"
+        pagina: null
+        ocr: "[=\n@ Partes Multiproyecto (Semana 2016 - 03} (o] fants\nProyecto 02001001 MULTIPROYECTO\nTipo de Nomina 002 Régimen C.C. con BB.SS. - Obreros\nSemana Semana 2016 - 03 (Del 11/01/2016 Al 17/01/2016) Adicionar »\nBEM @lvB Clic derecho oe\nEliminar\nN° Parte Cédigo Socio Negac| Nombre Gr|\nooo00003 = =§© 22000037 ICAU CHAMP, LUIS ALFONSO. Exportar a Microsoft Excel\nImportar desde Microsoft Excel"
+  - n: 15
+    id: "nominas.registrar-tareo-multiproyecto#15"
+    accion: "Ingrese el directorio donde se encuentran los tareos."
+    fuente: [img-53cc0da95755-0000, web-https-documentacion-s10peru-com-manual-d-s060]
+    pagina: null
+    fotos:
+      - id: "d9d2d01bd3df"
+        ruta_o_url: "imagenes/manual-de-nominas/53cc0da95755.png"
+        pagina: null
+        ocr: "Ingrese el directorio donde se encuentran los Tareos\n4 = Disco local (D:) a\n|. A- Multiproyecto (\n~\nCarpeta; 4 - Multiproyecto"
+  - n: 16
+    id: "nominas.registrar-tareo-multiproyecto#16"
+    accion: "Para enviar el tareo a aprobación, haga clic derecho sobre la semana en la lista del **Tareo Multiproyecto** y elija la opción de envío a aprobación."
+    fuente: [img-7d6696e05b8f-0000, web-https-documentacion-s10peru-com-manual-d-s060, web-https-documentacion-s10peru-com-manual-d-s063]
+    pagina: null
+    fotos:
+      - id: "77f277f82d42"
+        ruta_o_url: "imagenes/manual-de-nominas/7d6696e05b8f.png"
+        pagina: null
+        ocr: "Tareo Multiproyecto\n\nProyecto MULTIPROYECTO\n\nTipo de Némina [O73 Regimen C.C. con BB.SS. - Obreros. =\n‘os _(4i? )@ |v Pl|eae\n\n3162 Campo|Cédigo 3] [en cualquier posicién Grupo:\n\nCédigo |[Descripcién [Det Jar |afio — [Estadoffareo |Aprobado por [Fecha de Aprobacién\nJoz20160301 Semana 2016-03 M2016 17M1/2018 2018 =\n\n[|] _ werdetalle\nEnviar a aprobacién."
+  - n: 17
+    id: "nominas.registrar-tareo-multiproyecto#17"
+    accion: "Confirme el envío a aprobación del tareo de la semana."
+    resultado: "El tareo de la semana queda en estado **Por Aprobar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s063, img-729b6b4c0ad2-0000, img-c92a15796597-0000]
+    pagina: null
+    fotos:
+      - id: "2a1ebbcaf9b5"
+        ruta_o_url: "imagenes/manual-de-nominas/729b6b4c0ad2.png"
+        pagina: null
+        ocr: "Sistema 10 - Néminas\ni cy 4 éEsta seguro de enviar a aprobacién el tareo de la semana\nNED Semana 2016 - 037"
+      - id: "f911f153894b"
+        ruta_o_url: "imagenes/manual-de-nominas/c92a15796597.png"
+        pagina: null
+        ocr: "Tareo Multiproyecto\n\nProyecto MULTIPROYECTO\n\nTipo de Némina [992 Régimen C.C. con BB.SS. - Obreras +] Afio foo >|\nHOAYvVARS BA aaa\n\nCédigo __|Descripcién [Delft io Estar Tareo\n0220160101 Semana 2016 - 01 O1OIAO16 —O3IN1016 2016 ——Rewistrado\n0220160201 Semana 2016 - 02 O4012016 101012016 «2016 -—=Reaistraddo\nfo220760301] Semana 2016 - 03 110012016 171012016 2016 ~——~Por Aprobar"
+  - n: 18
+    id: "nominas.registrar-tareo-multiproyecto#18"
+    accion: "Para aprobarlo desde Gerencia de Proyectos, ingrese al escenario **Aprobaciones** y haga doble clic en el tipo de documento del tareo multiproyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s062, img-142a845c6e9f-0000]
+    pagina: null
+    fotos:
+      - id: "88ebeec4aee2"
+        ruta_o_url: "imagenes/manual-de-nominas/142a845c6e9f.png"
+        pagina: null
+        ocr: "Aprobaciones\n(eee\nMe E & #2 &) [Doble clic | el al\nTipo de Documento\nAprobaciones Te REO MULTIPROVECTO 1"
+  - n: 19
+    id: "nominas.registrar-tareo-multiproyecto#19"
+    accion: "Haga clic derecho sobre la semana por aprobar y elija **Ver Detalle**."
+    fuente: [img-bbe885ea02f2-0000, web-https-documentacion-s10peru-com-manual-d-s062]
+    pagina: null
+    fotos:
+      - id: "b0cfa7d4ef93"
+        ruta_o_url: "imagenes/manual-de-nominas/bbe885ea02f2.png"
+        pagina: null
+        ocr: "t 2 farecs Multipreyecto por Aprobar SS)\nEj [elie derecho |i 27) cat bd Gt\nProyecto\nRégimen C.C. con BB.SS. - Obrer Semana 2016-03 Por Aprobar\nVer Detalle"
+  - n: 20
+    id: "nominas.registrar-tareo-multiproyecto#20"
+    accion: "En **Partes Multiproyecto**, haga clic en **Aprobar**."
+    fuente: [img-f7f071f1ea5f-0000, web-https-documentacion-s10peru-com-manual-d-s062]
+    pagina: null
+    fotos:
+      - id: "41ae97163a08"
+        ruta_o_url: "imagenes/manual-de-nominas/f7f071f1ea5f.png"
+        pagina: null
+        ocr: "|e al\n\ng Partes Multiproyecto (Semana 2016 - (| ES\nProyecto 2001001 MULTIPROYECTO\n\nTipo de Némina 002 Régimen C.C. con BB.SS. - Obreros\n\nSemana Semana 2016 - 03 (Del 11/01/2016 Al 17/01/2016)\n\nHOYvVARS BF &dl\nCédiga Socio Negar Estado Parte Grupo de Trabajo _|Partida de ¢\noooo0003 = 22000037 CAJ& CHAMPI, LUIS ALFONSO] Registrado\n\n«| Mm, r\n\nAprobar Cancelar"
+  - n: 21
+    id: "nominas.registrar-tareo-multiproyecto#21"
+    accion: "Luego cierre la ventana **Tareo Multiproyecto por Aprobar**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s062]
+    pagina: null
+verificacion: []
+errores_frecuentes:
+  - sintoma: "No se puede procesar la nómina con el tareo multiproyecto de la semana."
+    solucion: "Apruebe el tareo: es requisito para el procesamiento de la nómina."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s061]
+relacionados: [nominas.registrar-tareo-estandar, nominas.configurar-tareo-movil, nominas.calcular-la-nomina]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s053, manual: "Manual de Nóminas", seccion: "5.2.3.2 Asignación del tareador a cada uno de los trabajadores", pagina: null}
+  - {id: img-3df12f76b6a0-0000, manual: "Manual de Nóminas", seccion: "3df12f76b6a0.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s060, manual: "Manual de Nóminas", seccion: "6.3 Tareo Multiproyecto", pagina: null}
+  - {id: img-7002668defeb-0000, manual: "Manual de Nóminas", seccion: "7002668defeb.png", pagina: null}
+  - {id: img-ab307328405e-0000, manual: "Manual de Nóminas", seccion: "ab307328405e.png", pagina: null}
+  - {id: img-0fde7822f42d-0000, manual: "Manual de Nóminas", seccion: "0fde7822f42d.png", pagina: null}
+  - {id: img-03d9828b01ec-0000, manual: "Manual de Nóminas", seccion: "03d9828b01ec.png", pagina: null}
+  - {id: img-c07e5799d8f8-0000, manual: "Manual de Nóminas", seccion: "c07e5799d8f8.png", pagina: null}
+  - {id: img-09c6288f4693-0000, manual: "Manual de Nóminas", seccion: "09c6288f4693.png", pagina: null}
+  - {id: img-c4c5854dcfd3-0000, manual: "Manual de Nóminas", seccion: "c4c5854dcfd3.png", pagina: null}
+  - {id: img-53cc0da95755-0000, manual: "Manual de Nóminas", seccion: "53cc0da95755.png", pagina: null}
+  - {id: img-7d6696e05b8f-0000, manual: "Manual de Nóminas", seccion: "7d6696e05b8f.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s063, manual: "Manual de Nóminas", seccion: "6.3.1.2 Aprobar el Tareo Multiproyecto desde Nóminas S10", pagina: null}
+  - {id: img-729b6b4c0ad2-0000, manual: "Manual de Nóminas", seccion: "729b6b4c0ad2.png", pagina: null}
+  - {id: img-c92a15796597-0000, manual: "Manual de Nóminas", seccion: "c92a15796597.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s062, manual: "Manual de Nóminas", seccion: "6.3.1.1 Aprobar el Tareo Multiproyecto desde Gerencia de Proyectos", pagina: null}
+  - {id: img-142a845c6e9f-0000, manual: "Manual de Nóminas", seccion: "142a845c6e9f.png", pagina: null}
+  - {id: img-bbe885ea02f2-0000, manual: "Manual de Nóminas", seccion: "bbe885ea02f2.png", pagina: null}
+  - {id: img-f7f071f1ea5f-0000, manual: "Manual de Nóminas", seccion: "f7f071f1ea5f.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s061, manual: "Manual de Nóminas", seccion: "6.3.1 Aprobar el Tareo Multiproyecto", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

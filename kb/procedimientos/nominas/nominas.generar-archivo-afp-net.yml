@@ -1,0 +1,106 @@
+id: nominas.generar-archivo-afp-net
+version: 1
+modulo: nominas
+titulo: "Generar el archivo de la planilla AFP para AFP NET"
+objetivo: "Juntar la información de las nóminas calculadas en el escenario AFP Net y exportarla, de preferencia en formato txt, para declarar en www.afpnet.com.pe el monto que se debe abonar a las AFP por cada trabajador."
+nivel: intermedio
+preguntas:
+  - "como genero el archivo para afp net"
+  - "como declaro a las afp desde s10 nominas"
+  - "como exporto la planilla afp en txt"
+  - "como valido las afiliaciones de los trabajadores por dni"
+  - "donde configuro el concepto de remuneracion asegurable para afpnet"
+  - "que periodo pongo para la declaracion de la afp"
+  - "como saco el txt de afp net despues de calcular la nomina"
+  - "como mando la planilla a las afp"
+aliases:
+  - "AFP NET"
+  - "planilla AFP"
+  - "archivo AFP NET"
+  - "declarar AFP"
+entidades:
+  modulo: "Nóminas"
+  pantallas: ["AFP Net"]
+  objetos: ["Planilla AFP", "trabajadores afiliados", "periodo de declaración", "remuneración asegurable"]
+prerrequisitos:
+  - texto: "Las nóminas deben estar calculadas: luego de calcular las nóminas semanales, el sistema junta la información para elaborar el informe que se envía a AFP NET."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s083]
+pasos:
+  - n: 1
+    id: "nominas.generar-archivo-afp-net#1"
+    accion: "Elija el escenario **AFP Net** desde la empresa."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s083, img-419487851fc5-0000]
+    pagina: null
+    fotos:
+      - id: "877a9c059943"
+        ruta_o_url: "imagenes/manual-de-nominas/419487851fc5.png"
+        pagina: null
+        ocr: "Thoms\noD Empresas\n= Chegag caress\nSETEMA TUBA, cf Ella |\nAPP Ree Luego, “Ga i"
+  - n: 2
+    id: "nominas.generar-archivo-afp-net#2"
+    accion: "Si quiere validar las afiliaciones por el Nro. de Documento, elija en el menú **Trabajadores afiliados**: muestra en una lista a cada trabajador y la AFP a la que pertenece."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s083, img-fd93fad506f2-0000]
+    pagina: null
+    fotos:
+      - id: "96d8833f6e80"
+        ruta_o_url: "imagenes/manual-de-nominas/fd93fad506f2.png"
+        pagina: null
+        ocr: "\\Trabajadores afiliados\nPlanilla AFP"
+  - n: 3
+    id: "nominas.generar-archivo-afp-net#3"
+    accion: "Para generar el archivo de la declaración, elija la estructura **Planilla AFP**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s083, img-4824f055ff76-0000]
+    pagina: null
+    fotos:
+      - id: "ab71762e1f0a"
+        ruta_o_url: "imagenes/manual-de-nominas/4824f055ff76.png"
+        pagina: null
+        ocr: "AFP Net\n\nNet eos O_O)\nEstructura Planilla AFP =~ Period de decteracién [201601 [Enero 2016 | hl [~ Histérico\nModo Resumido D> [ZA]\nHOYVANSE EF at\nCécliga Socio ||N* Secuencia _|CUSPP| Tipo Dacumenta|N* Doc [peli Paterna] Apelida Materno|Nombres"
+  - n: 4
+    id: "nominas.generar-archivo-afp-net#4"
+    accion: "Use el botón para configurar el tipo de nómina y el concepto de remuneración asegurable."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s083]
+    pagina: null
+    fotos:
+      - id: "38857fd844b4"
+        ruta_o_url: "imagenes/manual-de-nominas/e9e95a11af0c.png"
+        pagina: null
+        caption: "Llamada b: Use el botón para configurar, el tipo de nómina, el concepto de remuneración asegurable."
+  - n: 5
+    id: "nominas.generar-archivo-afp-net#5"
+    accion: "Elija el periodo de declaración."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s083]
+    pagina: null
+  - n: 6
+    id: "nominas.generar-archivo-afp-net#6"
+    accion: "Use el botón que muestra la información en la ventana de acuerdo con la opción elegida del menú."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s083]
+    pagina: null
+  - n: 7
+    id: "nominas.generar-archivo-afp-net#7"
+    accion: "Desde la vista de la información resumida, exporte la información en formato txt, el más usado, o con **Exportar a archivo Excel**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s083, img-feb88253c7a3-0000]
+    pagina: null
+    fotos:
+      - id: "93b1e2080acc"
+        ruta_o_url: "imagenes/manual-de-nominas/feb88253c7a3.png"
+        pagina: null
+        ocr: "AFP Net\n\nconcn Poser BL] rececncwacin GOT row sie LAA F ren\nBAYvV ANS GBF ada\n[Apelido Paterno |Apelido Materno[Nombres [Rem asegurable [Relacién Laboral_[Cédigo Socio [Tipo Documentos [cusPP___ [inicio\nALZAMORA GONZALES CARLOS: 81404 5 22000032 0 - Doc. Nacional kentidad QWER12345CD S\nARANBAR —— CUEMAS ACRULEO RABAEL, ai5.74 & PRIS Daw, Ragional Mientind WSOWEI2 8\nANELLAN —— CASTHOMONTE arSIAS s5…"
+  - n: 8
+    id: "nominas.generar-archivo-afp-net#8"
+    accion: "Envíe la información a la página web www.afpnet.com.pe, donde se distribuye a cada AFP de acuerdo con el número de DNI del trabajador."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s083]
+    pagina: null
+verificacion: []
+errores_frecuentes:
+  - sintoma: "La información de la ventana cambió por ajustes de último momento."
+    solucion: "El contenido de la ventana se almacena en un archivo temporal al poner la selección correspondiente, porque puede variar con los cambios de último momento."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s083]
+relacionados: [nominas.calcular-la-nomina, nominas.actualizar-comisiones-spp]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s083, manual: "Manual de Nóminas", seccion: "8.3 AFP NET", pagina: null}
+  - {id: img-419487851fc5-0000, manual: "Manual de Nóminas", seccion: "419487851fc5.png", pagina: null}
+  - {id: img-fd93fad506f2-0000, manual: "Manual de Nóminas", seccion: "fd93fad506f2.png", pagina: null}
+  - {id: img-4824f055ff76-0000, manual: "Manual de Nóminas", seccion: "4824f055ff76.png", pagina: null}
+  - {id: img-feb88253c7a3-0000, manual: "Manual de Nóminas", seccion: "feb88253c7a3.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

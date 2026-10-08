@@ -1,0 +1,71 @@
+id: presupuestos.aplicar-factor-de-precio
+version: 1
+modulo: presupuestos
+titulo: "Aplicar un factor de precio o de cantidad a un recurso"
+objetivo: "Bajar o subir el precio de un recurso o de un grupo de recursos con un factor de precio, o su incidencia en los análisis de precios unitarios con un factor de cantidad, desde el escenario Precios por Presupuesto."
+nivel: intermedio
+preguntas:
+  - "como bajo el precio de un recurso un 2 por ciento"
+  - "aplicar factor de precio a los recursos en s10"
+  - "como le hago un descuento a los precios de varios recursos a la vez"
+  - "quiero subir el precio de un material con un factor"
+  - "factor de cantidad para bajar la incidencia de un insumo"
+  - "como aplico un factor a un grupo de recursos en precios por presupuesto"
+  - "puse el factor de precio y no se que mas hacer"
+  - "donde esta factor de precio en s10 presupuestos"
+aliases:
+  - "factor de precio"
+  - "aplicar factor de precio"
+  - "factor de cantidad"
+  - "rebajar precios con factor"
+entidades:
+  modulo: "Presupuestos"
+  pantallas: ["Precios por Presupuesto", "Factores de precio"]
+  objetos: ["recurso", "factor de precio", "factor de cantidad", "precio"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "presupuestos.aplicar-factor-de-precio#1"
+    accion: "En el escenario **Precios por Presupuesto**, seleccione el recurso, o el grupo de recursos, al que aplicará el factor."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s110, web-https-documentacion-s10peru-com-manual-d-s109]
+    pagina: null
+  - n: 2
+    id: "presupuestos.aplicar-factor-de-precio#2"
+    accion: "Haga clic derecho sobre el recurso seleccionado y elija **Factor de precio**."
+    fuente: [img-63f23dda685b-0000, web-https-documentacion-s10peru-com-manual-d-s110]
+    pagina: null
+    fotos:
+      - id: "4660a7cade58"
+        ruta_o_url: "imagenes/manual-de-presupuestos/63f23dda685b.png"
+        pagina: null
+        ocr: "Precios histéviees\nPrecios Compra\nFactor de precio\nFactor de cantidad Propio y Alterna\nDescripcion » Hliminar propio\n Multiplicar por un factor\nER) Calcular columnas auxiliares\nff] Calcular mediante indices unificados\nAsignar precio COSTOS\nFY Vincular un precio a celda Excel\nDesvincular un precio de celda Excel\nReemplazar precios de celdas vinculadas\nVincular celdas en forma global a Excel\nEn la h…"
+  - n: 3
+    id: "presupuestos.aplicar-factor-de-precio#3"
+    accion: "En la ventana **Factores de precio**, ingrese el factor; en el ejemplo del manual, el factor ingresado significa una rebaja del 2 %."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s110, img-d693e6891a4d-0000]
+    pagina: null
+    fotos:
+      - id: "f4fe7808a457"
+        ruta_o_url: "imagenes/manual-de-presupuestos/d693e6891a4d.png"
+        pagina: null
+        ocr: "~ Factores de precio po [2 pS\n0202000007 ALAMBRE NEGRO RECOCIDO #16 kg\nMoneda Principal (S/.) |\nBios in @ Todos los seleccionados\nrecio @»\n@ © Sdlo recursos sin factor\nI Aplicado"
+  - n: 4
+    id: "presupuestos.aplicar-factor-de-precio#4"
+    accion: "Luego procese el presupuesto."
+    resultado: "Se muestra inicialmente el precio original y luego el precio con el factor aplicado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s110]
+    pagina: null
+  - n: 5
+    id: "presupuestos.aplicar-factor-de-precio#5"
+    accion: "Si en lugar del precio quiere bajar o subir la incidencia del recurso dentro del análisis de precios unitarios, elija **Factor de cantidad** y luego procese el presupuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s110, img-63f23dda685b-0000]
+    pagina: null
+verificacion: []
+errores_frecuentes: []
+relacionados: [presupuestos.procesar-presupuesto, presupuestos.aplicar-factores-al-subpresupuesto]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s110, manual: "Manual de Presupuestos", seccion: "5.1.5 Precios por presupuesto (2)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s109, manual: "Manual de Presupuestos", seccion: "5.1.5 Precios por presupuesto (1)", pagina: null}
+  - {id: img-63f23dda685b-0000, manual: "Manual de Presupuestos", seccion: "63f23dda685b.png", pagina: null}
+  - {id: img-d693e6891a4d-0000, manual: "Manual de Presupuestos", seccion: "d693e6891a4d.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

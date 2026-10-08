@@ -1,0 +1,145 @@
+id: compras.registrar-pedido-a-almacen-a-partida-de-control
+version: 1
+modulo: compras
+titulo: "Registrar un pedido manual A Almacén hacia una partida de control"
+objetivo: "Registrar desde el almacén de un proyecto un pedido manual A Almacén de recursos que tienen stock, asignando a cada recurso su Partida de Control + Destino Específico, y dejarlo para que el aprobador lo apruebe."
+nivel: intermedio
+preguntas:
+  - "como hago un pedido a almacen para una partida de control"
+  - "quiero sacar material que ya hay en stock del almacen, como hago el pedido"
+  - "como asigno partida de control y destino especifico en el pedido"
+  - "pedido manual a almacen en compras y pedidos paso a paso"
+  - "me sale un mensaje que el sistema esta configurado para pedidos a compras, que hago"
+  - "como elijo quien aprueba el pedido a almacen"
+  - "pedido a almasen con transferencia a otro proyecto"
+  - "soy residente de obra, donde apruebo los pedidos a almacen que me mandan"
+aliases:
+  - "pedido a almacén"
+  - "pedido manual a almacén"
+  - "pedido a partida de control"
+  - "pedido de stock"
+entidades:
+  modulo: "Compras"
+  pantallas: ["Pedidos", "Aprobadores para el pedido"]
+  objetos: ["pedido", "partida de control", "destino específico", "recurso", "almacén", "aprobador"]
+prerrequisitos:
+  - texto: "El que aprueba los pedidos debe estar previamente registrado en el sistema."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s055]
+  - texto: "Deben estar registrados el proyecto y sus Partidas de Control: las Partidas de Control y Destinos Específicos se usan para los Pedidos a Almacén."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s017]
+  - texto: "El recurso debe tener stock; el proyecto no necesita estar programado en el escenario del Cronograma por periodos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s055]
+pasos:
+  - n: 1
+    id: "compras.registrar-pedido-a-almacen-a-partida-de-control#1"
+    accion: "Como encargado del módulo de Gerencia de proyectos o de Compras y pedidos, ingrese al escenario **Pedidos** del grupo de PEDIDOS."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s055]
+    pagina: null
+  - n: 2
+    id: "compras.registrar-pedido-a-almacen-a-partida-de-control#2"
+    accion: "Elija el almacén del proyecto desde el que efectuará el pedido."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s055]
+    pagina: null
+    fotos:
+      - id: "d63d0db5cb5a"
+        ruta_o_url: "imagenes/manual-de-compras/43cf27226be5.png"
+        pagina: null
+        caption: "El pedido se efectúa desde el almacén de un proyecto."
+        ocr: "ly\n— Fos\nEliia Seaton\n9G PUENTE EN CARRETERA\n4, SER\nBde Activos\nPedidos: Luego De Servicios"
+  - n: 3
+    id: "compras.registrar-pedido-a-almacen-a-partida-de-control#3"
+    accion: "Haga clic derecho sobre los pedidos del almacén y elija **Adicionar**."
+    fuente: [img-c54c6dd06a16-0000, web-https-documentacion-s10peru-com-manual-d-s055]
+    pagina: null
+    fotos:
+      - id: "cf41876c05b9"
+        ruta_o_url: "imagenes/manual-de-compras/c54c6dd06a16.png"
+        pagina: null
+        ocr: "Ya Y [Clic derecho fae bal\n\nTipo Nei. Pedic Almacén Centro de Compra\nA Compras OO0#000000001 De Materiales Pedro\n\n4 Compras OOfoo0o000002 De Materiales Pedro\n\n4, Compras OOFOOOOO0003 De Materiales Pedro\n\n4 Compras: DER awe\n\nAamecen opha@el Adicionar"
+  - n: 4
+    id: "compras.registrar-pedido-a-almacen-a-partida-de-control#4"
+    accion: "En la cabecera, registre a la persona que recogerá los recursos del almacén; el número de pedido se genera automáticamente."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s055]
+    pagina: null
+    fotos:
+      - id: "78f24ddd0e66"
+        ruta_o_url: "imagenes/manual-de-compras/b002c226874a.png"
+        pagina: null
+        caption: "El pedido se efectúa desde el almacén de un proyecto."
+        ocr: "Usuario jr - Ramirez Nufez, Jose N° de Pedido -\n—\nAlmacén 004 - De Materiales Tipo 04 - OBr 7 Ww Alterno [~~ 6) N' OP al\n@ AAlmacén ré (© ACompras\nPara transferencia ——(@ Externa =f Interna\nFecha 13/03/2012 >] Prioridad [Normal >| C.compra [|\nAprobado por:\nProcedencia de la partida de control\n= 3] PUENTE EN CARRETERA Oo\nnN\n[cédigof ——[Recurso [Unidad] Cantidad [Pc | Partida de Contro\n:—~ Adicionar…"
+  - n: 5
+    id: "compras.registrar-pedido-a-almacen-a-partida-de-control#5"
+    accion: "Marque el pedido como **A Almacén**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s055]
+    pagina: null
+  - n: 6
+    id: "compras.registrar-pedido-a-almacen-a-partida-de-control#6"
+    accion: "Si los recursos del pedido serán utilizados en una transferencia, selecciónelo y elija el proyecto destino + el almacén destino, o el almacén destino del mismo proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s055]
+    pagina: null
+  - n: 7
+    id: "compras.registrar-pedido-a-almacen-a-partida-de-control#7"
+    accion: "Registre la fecha del pedido, elija la prioridad y, si quiere, ingrese una observación relacionada con el pedido."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s055]
+    pagina: null
+  - n: 8
+    id: "compras.registrar-pedido-a-almacen-a-partida-de-control#8"
+    accion: "Elija el destino de la partida de control, que puede ser del proyecto o de un subcontrato."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s056]
+    pagina: null
+  - n: 9
+    id: "compras.registrar-pedido-a-almacen-a-partida-de-control#9"
+    accion: "En el cuerpo del pedido, ingrese la cantidad de cada recurso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s056]
+    pagina: null
+    fotos:
+      - id: "246d06ef8077"
+        ruta_o_url: "imagenes/manual-de-compras/a2a9d17bfab3.png"
+        pagina: null
+        caption: "En el cuerpo del pedido ingrese la cantidad y asigne Partida de Control + Destino Específico. Use clic derecho sobre el recurso para mostrar el menú."
+        ocr: "Elija o asigne\n[i|Recwso Litas) Cantidad] (Pc. [Pertifa de Control [Observ/Ested\n| CLAVOS PARA MADERA CON CABEZA DE 3\" kg 8.00 0107002 Encotrado\n| CLAVOS PARA MADERA CON CABEZA DE 4\" kg 10.00 0107002  Encofrado\n4 uu a) »\n466.70 466.70 86.70 390.00 380.00\nAceptar | Cancelar Ayuda"
+  - n: 10
+    id: "compras.registrar-pedido-a-almacen-a-partida-de-control#10"
+    accion: "Use clic derecho sobre el recurso para mostrar el menú y asigne **Partida de Control** + **Destino Específico**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s056]
+    pagina: null
+  - n: 11
+    id: "compras.registrar-pedido-a-almacen-a-partida-de-control#11"
+    accion: "Grabe el pedido; el mensaje que se muestra a continuación solo es informativo."
+    resultado: "Aparece el mensaje «El sistema esta configurado para trabajar Pedidos A Compras y ud. esta generando A Almacen, Desea grabar asi el pedido?»."
+    fuente: [img-8380d954a637-0000, web-https-documentacion-s10peru-com-manual-d-s056]
+    pagina: null
+    fotos:
+      - id: "fe723cc7defb"
+        ruta_o_url: "imagenes/manual-de-compras/8380d954a637.png"
+        pagina: null
+        ocr: "==\n#2) El sistema esta configurado para trabajar Pedidos A Compras y ud. esta\nSD generando A Almacen, Desea grabar asi el pedido?\nNo"
+  - n: 12
+    id: "compras.registrar-pedido-a-almacen-a-partida-de-control#12"
+    accion: "Elija a la persona que aprobará el pedido en la ventana **Aprobadores para el pedido**."
+    fuente: [img-29ef1eb44b03-0000]
+    pagina: null
+    fotos:
+      - id: "1d5da5ee25bc"
+        ruta_o_url: "imagenes/manual-de-compras/29ef1eb44b03.png"
+        pagina: null
+        ocr: "Elija a la persona que aprobara el pedido\n. Px\nB} Aprobadores para el pedido N* 000000000009 Las cd\nAprobacor Tratamignto Nombre Completo | Correo Codidentiticador\nAndres Sr. Andres Andrade  andres@hotmail.com 02100019\navalencia CPC Alberto Valencia  avalencia@hotmail.com 02100142\ncocampo jing [César Ocampo | cocampo@hatmail.com"
+  - n: 13
+    id: "compras.registrar-pedido-a-almacen-a-partida-de-control#13"
+    accion: "Como aprobador, ingrese al módulo de Gerencia de proyectos o Compras y pedidos, ubíquese en el escenario de aprobación, en el árbol sobre el proyecto y el almacén donde se generó el pedido, y con clic derecho sobre el pedido apruébelo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s056]
+    pagina: null
+verificacion: []
+errores_frecuentes:
+  - sintoma: "Al grabar aparece el mensaje de que el sistema está configurado para trabajar Pedidos A Compras."
+    solucion: "El mensaje solo es informativo: confirme que desea grabar así el pedido."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s056, img-8380d954a637-0000]
+relacionados: [compras.registrar-pedido-de-compra, compras.aprobar-pedido]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s055, manual: "Manual de Compras", seccion: "14. Pedidos manuales A Almacén hacia una Partida de Control (1)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s017, manual: "Manual de Compras", seccion: "3.4 Partidas de Control", pagina: null}
+  - {id: img-c54c6dd06a16-0000, manual: "Manual de Compras", seccion: "c54c6dd06a16.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s056, manual: "Manual de Compras", seccion: "14. Pedidos manuales A Almacén hacia una Partida de Control (2)", pagina: null}
+  - {id: img-8380d954a637-0000, manual: "Manual de Compras", seccion: "8380d954a637.png", pagina: null}
+  - {id: img-29ef1eb44b03-0000, manual: "Manual de Compras", seccion: "29ef1eb44b03.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

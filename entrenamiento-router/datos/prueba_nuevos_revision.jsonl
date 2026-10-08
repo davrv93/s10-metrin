@@ -1,0 +1,30 @@
+{"id": "nuevo-131", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo trata anular una orden de compra; sigue sin procedimiento."}
+{"id": "nuevo-132", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo cubre el logo impreso en los comprobantes electrónicos (los nuevos de FE son código SUNAT y contraseña del portal)."}
+{"id": "nuevo-133", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo calcula la liquidación de beneficios sociales (CTS, vacaciones truncas)."}
+{"id": "nuevo-134", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo registra un préstamo a un trabajador con cuotas; registrar-planilla-de-pago es otra cosa."}
+{"id": "nuevo-135", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo cubre cotizaciones de venta a clientes."}
+{"id": "nuevo-136", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo carga el tipo de cambio diario."}
+{"id": "nuevo-137", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo exporta el cronograma a MS Project."}
+{"id": "nuevo-138", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo emite comprobantes de retención del IGV; asignar-tributos-masivamente solo cubre detracción y percepción de recursos."}
+{"id": "nuevo-139", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo cubre transferencias entre cuentas propias; crear-cuenta-destino-en-pago-electronico es la cuenta del socio de negocio."}
+{"id": "nuevo-140", "clase_nueva": "_ninguno", "motivo": "Devolver materiales al proveedor no es registrar-ingreso-por-devolucion-de-prestamo (ese ingresa lo que otro devuelve de un préstamo)."}
+{"id": "nuevo-141", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo crea almacenes en el proyecto."}
+{"id": "nuevo-142", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo configura el servidor SMTP."}
+{"id": "nuevo-143", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo evalúa ni puntúa proveedores."}
+{"id": "nuevo-144", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo emite guías de remisión electrónicas."}
+{"id": "nuevo-145", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo muestra el historial de cambios de un pedido."}
+{"id": "nuevo-146", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo desinstala SQL Server."}
+{"id": "nuevo-147", "clase_nueva": "_ninguno", "motivo": "canjear-documentos-con-letras es para letras por pagar al proveedor; no cubre letras por cobrar ni su descuento bancario."}
+{"id": "nuevo-148", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo registra activos fijos."}
+{"id": "nuevo-149", "clase_nueva": "nominas.exportar-datos-del-plame", "motivo": "Obtener y exportar los datos de la PLAME en Planilla Electrónica y elaborar la declaración en el programa PLAME de SUNAT responde la pregunta."}
+{"id": "nuevo-150", "clase_nueva": "_ninguno", "motivo": "seleccionar-equipos-disponibles deja el equipo disponible para los partes, pero no explica registrar el parte diario de horas máquina."}
+{"id": "nuevo-151", "clase_nueva": "_ninguno", "motivo": "configurar-tareo-movil es el APP Tareo Móvil, no la integración de un reloj biométrico."}
+{"id": "nuevo-152", "clase_nueva": "_ninguno", "motivo": "Ningún nuevo cambia el idioma del sistema."}
+{"id": "nuevo-153", "clase_nueva": "_ninguno", "motivo": "Pregunta de concepto («qué es…»); cambiar-estado-de-partida usa el APU pero no lo explica."}
+{"id": "nuevo-154", "clase_nueva": "_ninguno", "motivo": "Pregunta de concepto sobre valorización por promedio ponderado; ningún nuevo la explica."}
+{"id": "nuevo-155", "clase_nueva": "_ninguno", "motivo": "Pregunta de concepto («qué es…», porcentaje); asignar-tributos-masivamente asigna ítems de detracción pero no la explica."}
+{"id": "nuevo-156", "clase_nueva": "_ninguno", "motivo": "Pregunta de concepto («qué es…»); exportar-datos-del-t-registro exporta los datos pero no es la respuesta a qué es el T-Registro (mismo criterio que conc-*)."}
+{"id": "nuevo-157", "clase_nueva": "_ninguno", "motivo": "Pregunta de concepto sobre la curva S; ningún nuevo la cubre."}
+{"id": "nuevo-158", "clase_nueva": "_ninguno", "motivo": "Pregunta comercial de licencias; fuera de los procedimientos."}
+{"id": "nuevo-159", "clase_nueva": "_ninguno", "motivo": "Pregunta de plataforma soportada; ningún nuevo la cubre."}
+{"id": "nuevo-160", "clase_nueva": "_ninguno", "motivo": "Pregunta de concepto sobre el régimen de percepciones; asignar-tributos-masivamente no la explica."}

@@ -1,0 +1,92 @@
+id: almacenes.registrar-egreso-para-fabricacion
+version: 1
+modulo: almacenes
+titulo: "Registrar un egreso para fabricación"
+objetivo: "Egresar del almacén los recursos que se usan para fabricar un recurso (por ejemplo, paneles para encofrado) con un Egreso para Fabricación [EFE]; después de fabricarlo, el recurso ingresa al almacén de elementos fabricados."
+nivel: intermedio
+preguntas:
+  - "como registro en almacenes que vamos a fabricar paneles de encofrado"
+  - "como hago un egreso para fabricacion"
+  - "como descuento del stock la madera y los clavos que use para fabricar un panel"
+  - "donde pongo los materiales que lleva un recurso fabricado"
+  - "egreso EFE s10 pasos"
+  - "fabrique unos paneles en obra, como saco los insumos del almacen"
+  - "como ago el detalle de recurso para un elemento fabricado"
+  - "el egreso para fabricacion no tiene stock de los materiales"
+aliases:
+  - "egreso para fabricación"
+  - "EFE"
+  - "fabricar recurso"
+  - "recurso a fabricar"
+  - "elementos fabricados"
+entidades:
+  modulo: "Almacenes"
+  pantallas: ["catálogo de recursos", "Detalle recurso"]
+  objetos: ["egreso para fabricación", "recurso a fabricar", "stock", "almacén de elementos fabricados", "solicitante"]
+prerrequisitos:
+  - texto: "Es requisito que los recursos que forman parte del Detalle existan en el stock del almacén y en las cantidades necesarias."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s072]
+pasos:
+  - n: 1
+    id: "almacenes.registrar-egreso-para-fabricacion#1"
+    accion: "En el catálogo de recursos, registre el recurso a fabricar: su nombre y su unidad."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s072]
+    pagina: null
+    fotos:
+      - id: "56802cd075f2"
+        ruta_o_url: "imagenes/manual-de-almacenes/2b935e5ce1eb.png"
+        pagina: null
+        caption: "En el catálogo de recursos debe registrar el recurso a fabricar y también los recursos que serán utilizados en la fabricación."
+        ocr: "Cédigo 024302 |0001 Cédigo alterno :\nDescripcién [PANEL PARA ENCOFRADO DE 4\"x 8 CON TRPLAY DE 19mm =a)\nAlterna\nUnidad j943 u =e) ~ a4\nNS ee\n\n——\nCLAVOS PARA MADERA CON CABEZA DE 3\" kg 0.15\nCLAVOS PARA MADERA CON CABEZADE 4\" kg 0.30\nCOLA SINTETICA PARA CARPINTERIA gal 0.12\nMADERA TORNILLO 2\" X 3\"X & pza §.50\nTRIPLAY DE 4X 8X 19mm pl 1.00\n4 »\n\nDetalle recurso Dimensiones J\n\nPro(c)ades Contabilidad ex…"
+  - n: 2
+    id: "almacenes.registrar-egreso-para-fabricacion#2"
+    accion: "Elija la pestaña **Detalle recurso**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s072]
+    pagina: null
+  - n: 3
+    id: "almacenes.registrar-egreso-para-fabricacion#3"
+    accion: "Haga clic derecho en ese segmento y elija los recursos que necesita para fabricar el recurso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s072]
+    pagina: null
+  - n: 4
+    id: "almacenes.registrar-egreso-para-fabricacion#4"
+    accion: "Registre las cantidades de cada recurso para fabricar una unidad (por ejemplo, un panel)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s072]
+    pagina: null
+  - n: 5
+    id: "almacenes.registrar-egreso-para-fabricacion#5"
+    accion: "Efectúe un egreso para fabricación del recurso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s072]
+    pagina: null
+    fotos:
+      - id: "9f9caeb866ff"
+        ruta_o_url: "imagenes/manual-de-almacenes/b762a9abddca.png"
+        pagina: null
+        caption: "Efectúe un egreso para fabricación, del recurso"
+        ocr: "Registra jr - Ramirez Nufez, Jose Ultimo usuario N° de Guia —\nAlmacén 004 - De Materiales Ultima fecha 000000000001\nTipo 01-OBRA Estado Edicion ie\nSolicitante [02100002 Polo, José on | hy) FEC | 11/042\n(Origen/Destino)’ |\nee scat\nRecurso a fabricar\nAve» aoa @ @) ©)\n— Und dad Precio Parcial\nPANEL PARAENCOFRADO DE 4x 8'CONTRIPLAYDE19mm u_ [12.00] 1,910.40 22,924.80\nDetalle del recurso a fabricar\n\nBv…"
+  - n: 6
+    id: "almacenes.registrar-egreso-para-fabricacion#6"
+    accion: "Registre el nombre del solicitante y la fecha del movimiento."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s072]
+    pagina: null
+  - n: 7
+    id: "almacenes.registrar-egreso-para-fabricacion#7"
+    accion: "Elija el recurso a fabricar e ingrese la cantidad a fabricar."
+    resultado: "El sistema muestra el precio calculado y, en el segmento inferior, los recursos que serán utilizados en la fabricación, con su stock en el almacén, la cantidad unitaria y la cantidad que se necesita para la cantidad a fabricar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s072]
+    pagina: null
+  - n: 8
+    id: "almacenes.registrar-egreso-para-fabricacion#8"
+    accion: "Use el botón que graba el contenido de la ventana."
+    resultado: "Después de fabricar el recurso, ingresa al almacén de elementos fabricados."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s072]
+    pagina: null
+verificacion: []
+errores_frecuentes:
+  - sintoma: "No puede fabricar porque faltan recursos del detalle."
+    solucion: "Los recursos que forman parte del Detalle deben existir en el stock del almacén y en las cantidades necesarias."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s072]
+relacionados: [almacenes.registrar-egreso-a-partida-de-control]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s072, manual: "Manual de Almacenes", seccion: "2.2.5.1 Egreso para Fabricación [EFE]", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

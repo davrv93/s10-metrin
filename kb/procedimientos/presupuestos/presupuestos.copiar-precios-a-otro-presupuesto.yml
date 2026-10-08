@@ -1,0 +1,87 @@
+id: presupuestos.copiar-precios-a-otro-presupuesto
+version: 1
+modulo: presupuestos
+titulo: "Copiar los precios de un presupuesto a otro"
+objetivo: "Copiar los precios de los recursos de un presupuesto desde el escenario Precios por Presupuesto y pegarlos en el presupuesto destino."
+nivel: intermedio
+preguntas:
+  - "como copio los precios de un presupuesto a otro"
+  - "quiero usar los mismos precios de otra obra en mi presupuesto nuevo"
+  - "pasar precios de un presupuesto a otro en s10"
+  - "donde esta copiar precios para otro presupuesto"
+  - "como pego los precios en el presupuesto destino"
+  - "copie los precios pero no se como pegarlos"
+  - "como copio solo los precios que estan en cero"
+  - "no me aparece copiar al presupuesto de trabajo"
+aliases:
+  - "copiar precios"
+  - "copiar precios para otro presupuesto"
+  - "pegar precios"
+  - "copiar al presupuesto de trabajo"
+entidades:
+  modulo: "Presupuestos"
+  pantallas: ["Precios por Presupuesto", "Proceso de precios por presupuesto"]
+  objetos: ["precios", "presupuesto destino", "recursos"]
+prerrequisitos:
+  - texto: "Trabaje en el escenario **Precios por Presupuesto** del grupo de presupuestos, que tiene todas las opciones de edición; el del grupo de precios es solo informativo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s109]
+pasos:
+  - n: 1
+    id: "presupuestos.copiar-precios-a-otro-presupuesto#1"
+    accion: "Elija el escenario **Precios por Presupuesto** y ubique el cursor sobre el nombre del presupuesto cuyos precios copiará."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s074, img-0e1f2e70e3d1-0000]
+    pagina: null
+  - n: 2
+    id: "presupuestos.copiar-precios-a-otro-presupuesto#2"
+    accion: "Haga clic derecho y elija **Copiar precios para otro presupuesto**."
+    fuente: [img-0e1f2e70e3d1-0000, web-https-documentacion-s10peru-com-manual-d-s112]
+    pagina: null
+    fotos:
+      - id: "a5a208e2008f"
+        ruta_o_url: "imagenes/manual-de-presupuestos/0e1f2e70e3d1.png"
+        pagina: null
+        ocr: "Clic derecho\nPresupuestas: Pr}:supuestos: ted Ar\n> |S ee | rectos por Presupuesto :\nree ® VIVIENDA UNIFAMILIGR =\na  VIVI[NDA UNIFAMILISR meta Mes Ano L Nro. items a <\nrenes © VIVIENDA UNFAMILIAR linea k | Catg@r eeianouges re\nbelie abe Recursos | [05 2005 081301 URUBAMBA =| |Tod\n——————————————————\nElija este escenario Db Puerdte en carretera (Venta) _ 7\nCRteceren ie Souente en carretera Tesnren Un…"
+  - n: 3
+    id: "presupuestos.copiar-precios-a-otro-presupuesto#3"
+    accion: "Para pegar los precios, elija el presupuesto destino."
+    fuente: ["7c40a9548710-0177", web-https-documentacion-s10peru-com-manual-d-s112]
+    pagina: 108
+  - n: 4
+    id: "presupuestos.copiar-precios-a-otro-presupuesto#4"
+    accion: "Use el botón para elegir la fecha y el lugar que tienen los precios que se copiarán."
+    fuente: [img-c90a2d54bcb1-0000, "7c40a9548710-0177"]
+    pagina: null
+    fotos:
+      - id: "140b7ce6954d"
+        ruta_o_url: "imagenes/manual-de-presupuestos/c90a2d54bcb1.png"
+        pagina: null
+        ocr: "Use ese botén para elegir la fecha y el\nlugar que tiene los precios que se copiara\na | Precios por Presupuesto lee\n+) =) Escritorio\nét, fH @ VIVIENDA LNIFAMILISGR ——\nfe). D> VIVIENDA LNIFAMILIAR meta _ Nro.items| 74\n— fs). @-VIVIENDA LWFAMILIAR tinea k fea] messi hwe —\n= ie @Nucleo Bésilo Recursos +] [os 2005 081301 uRUBAMBA | [Tod\nH) ® Puente en chrretera [Gc uerecho a ete segnentlag A\nere 5-9 SE…"
+  - n: 5
+    id: "presupuestos.copiar-precios-a-otro-presupuesto#5"
+    accion: "Haga clic derecho en el segmento de los recursos."
+    fuente: [img-c90a2d54bcb1-0000, "7c40a9548710-0177"]
+    pagina: null
+  - n: 6
+    id: "presupuestos.copiar-precios-a-otro-presupuesto#6"
+    accion: "En la ventana **Proceso de precios por presupuesto**, elija **Copiar al presupuesto de trabajo** y marque **Todos los precios** o **Sólo los que tienen precio = 0**."
+    fuente: ["7c40a9548710-0177", img-c90a2d54bcb1-0000]
+    pagina: 108
+  - n: 7
+    id: "presupuestos.copiar-precios-a-otro-presupuesto#7"
+    accion: "Pulse **Aceptar**."
+    fuente: ["7c40a9548710-0177"]
+    pagina: 108
+verificacion: []
+errores_frecuentes:
+  - sintoma: "No aparece el menú para copiar los precios al presupuesto que viene elaborando."
+    solucion: "Ese menú es mostrado solo si el presupuesto tiene precios para otros lugares y fechas."
+    fuente: ["7c40a9548710-0177"]
+relacionados: [presupuestos.procesar-presupuesto, presupuestos.vincular-precios-a-excel]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s109, manual: "Manual de Presupuestos", seccion: "5.1.5 Precios por presupuesto (1)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s074, manual: "Manual de Presupuestos", seccion: "3.11.3 Precios por Presupuesto", pagina: null}
+  - {id: img-0e1f2e70e3d1-0000, manual: "Manual de Presupuestos", seccion: "0e1f2e70e3d1.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s112, manual: "Manual de Presupuestos", seccion: "5.1.5 Precios por presupuesto (4)", pagina: null}
+  - {id: "7c40a9548710-0177", manual: "Importado a mano", seccion: "Guia de Usuario de S10 Presupuestos", pagina: 108}
+  - {id: img-c90a2d54bcb1-0000, manual: "Manual de Presupuestos", seccion: "c90a2d54bcb1.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

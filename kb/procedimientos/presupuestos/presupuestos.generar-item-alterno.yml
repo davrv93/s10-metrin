@@ -1,0 +1,70 @@
+id: presupuestos.generar-item-alterno
+version: 1
+modulo: presupuestos
+titulo: "Generar el ítem alterno según el código de la partida o del título"
+objetivo: "Generar en la columna Ítem Alterno de la hoja del presupuesto el ítem según el código con el que está registrada la partida o el título en el catálogo, ya que la columna ITEM no es editable."
+nivel: basico
+preguntas:
+  - "como pongo el codigo del catalogo como item en la hoja del presupuesto"
+  - "item alterno en s10 como se genera"
+  - "la columna item no me deja editar, como pongo mi propia numeracion"
+  - "como muestro la columna item alterno"
+  - "cuantos digitos pongo para el item alterno"
+  - "como imprimo el presupuesto con los items alternos"
+  - "generar item alterno segun codigo de partida"
+aliases:
+  - "ítem alterno"
+  - "generar ítem alterno"
+  - "item alterno según código"
+entidades:
+  modulo: "Presupuestos"
+  pantallas: ["Hoja del Presupuesto"]
+  objetos: ["ítem alterno", "partida", "título", "código"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "presupuestos.generar-item-alterno#1"
+    accion: "En el árbol del escenario **Hoja del Presupuesto**, haga clic derecho sobre el presupuesto y elija la opción que genera el ítem alterno según el código de la partida o del título; también está disponible para los títulos de un subpresupuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s092, web-https-documentacion-s10peru-com-manual-d-s090, img-a7ba1e20ad1d-0000]
+    pagina: null
+  - n: 2
+    id: "presupuestos.generar-item-alterno#2"
+    accion: "Indique el número de dígitos que se tomará del código del título o partida (se recomienda 6)."
+    resultado: "La columna del ítem alterno muestra los dígitos indicados del código con el que está registrada la partida o el título en el catálogo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s092, web-https-documentacion-s10peru-com-manual-d-s025]
+    pagina: null
+    fotos:
+      - id: "479b6880620e"
+        ruta_o_url: "imagenes/manual-de-presupuestos/4339a8089f1d.png"
+        pagina: null
+        caption: "Indique el número de dígitos que se tomará del código del título o partida."
+        ocr: "Ingrese el ntimera de digitos para el Item Altemo:\nCancel |"
+      - id: "983fcbbd4419"
+        ruta_o_url: "imagenes/manual-de-presupuestos/76c97f03f683.png"
+        pagina: null
+        caption: "Indique el número de dígitos que se tomará del código del título o partida."
+        ocr: "tem tem Alterna Descripcidn | #\n\n01 190053 =] COHNCRETO ARMADO\n01.01 190059 -| ENCOFRADO\n01.01.01 120101 ENCOFRADO DE CIMENTACION\n© DE ELEVACION\nAhora la colurnna alterno muestra los 0 DE SUIPERESTRUCTL\n\nUltirnos 6 digitas del codigo del titulo\n\no la partida del catalogo."
+  - n: 3
+    id: "presupuestos.generar-item-alterno#3"
+    accion: "Para mostrar esta columna, acceda a la opción **Mostrar Campos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s092]
+    pagina: null
+  - n: 4
+    id: "presupuestos.generar-item-alterno#4"
+    accion: "Para imprimir la hoja del presupuesto con estos ítems, seleccione en la configuración de impresión la opción que imprime con los ítems registrados en la columna **Ítem Alterno**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s022]
+    pagina: null
+verificacion: []
+errores_frecuentes:
+  - sintoma: "No puede editar la columna ITEM de la hoja del presupuesto."
+    solucion: "La columna ITEM no es editable; si requiere que los ítems sean registrados por el usuario, utilice la columna Ítem Alterno."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s086]
+relacionados: [presupuestos.registrar-titulos-y-partidas, presupuestos.imprimir-reportes]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s092, manual: "Manual de Presupuestos", seccion: "5.1.1.1 Hoja del presupuesto (7)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s090, manual: "Manual de Presupuestos", seccion: "5.1.1.1 Hoja del presupuesto (5)", pagina: null}
+  - {id: img-a7ba1e20ad1d-0000, manual: "Manual de Presupuestos", seccion: "a7ba1e20ad1d.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s025, manual: "Manual de Presupuestos", seccion: "2.2 Configuración (8)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s022, manual: "Manual de Presupuestos", seccion: "2.2 Configuración (5)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s086, manual: "Manual de Presupuestos", seccion: "5.1.1.1 Hoja del presupuesto (1)", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

@@ -1,0 +1,116 @@
+id: facturacion-electronica.asignar-codigo-de-producto-sunat
+version: 1
+modulo: facturacion-electronica
+titulo: "Asignar el código de producto SUNAT a los recursos"
+objetivo: "Catalogar los recursos activos del S10 con el código de Producto SUNAT (estándar UNSPSC) que les corresponda, uno a uno o de forma masiva desde Excel, para que los libros electrónicos que lo usan no muestren observaciones."
+nivel: intermedio
+preguntas:
+  - "cómo asigno el código de producto sunat a mis recursos"
+  - "donde se pone el codigo UNSPSC de los materiales en s10"
+  - "el libro electronico 13.1 me sale que el campo codigo producto sunat no puede ser nulo"
+  - "como cargo masivo los codigos de producto sunat desde un excel"
+  - "como le pongo codigo sunat a varios recursos a la ves"
+  - "que configuracion activo para que pida el codigo de producto sunat"
+  - "en que escenario de almacenes se catalogan los recursos con codigo sunat"
+  - "qué columnas lleva el excel para importar códigos de producto sunat"
+aliases:
+  - "código de producto SUNAT"
+  - "asignar código SUNAT"
+  - "código UNSPSC"
+  - "catalogar recursos SUNAT"
+  - "importar códigos SUNAT"
+entidades:
+  modulo: "Facturación Electrónica"
+  pantallas: ["Catálogo de Productos SUNAT", "Catálogo de recursos", "Configuración"]
+  objetos: ["recursos", "código de producto SUNAT", "libros electrónicos", "Excel"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "facturacion-electronica.asignar-codigo-de-producto-sunat#1"
+    accion: "Active la configuración **Código de Producto SUNAT Obligatorio en Libros Electrónicos**, para iniciar con el uso de los códigos de productos SUNAT."
+    resultado: "Se valida que todos los recursos usados en los libros electrónicos tengan un código asignado; si no lo tienen, se muestra como observación."
+    fuente: [web-https-documentacion-s10peru-com-asignar--s001]
+    pagina: null
+    fotos:
+      - id: "3b86ef65f6dd"
+        ruta_o_url: "imagenes/asignar-codigo-de-producto-sunat/b4cbd1907a0d.png"
+        pagina: null
+        caption: "Para iniciar con el uso de estos códigos de productos SUNAT, se debe activar la configuración “Código de Producto SUNAT Obligatorio en Libros Electrónicos”"
+        ocr: "°F\n\n\" Archivo Ver Catélogos Herramientas 2\n\nEBeaa\n\nee x\nI~ No generar respaido de asientos contables al cierre transaccional.\nT” No generar respaido de asientos contabies al procesar ia contabiidad masivamente\nI~ No considerar las guias o saldos con valor menores igual a cero en el txt de! LE 13.1\n[~ Mostrar documentos No Domiciiados sin Pago de IGV en Registros de Compras\nI Modificar Fecha de Apl…"
+  - n: 2
+    id: "facturacion-electronica.asignar-codigo-de-producto-sunat#2"
+    accion: "En el módulo de Almacenes, en el grupo **Configuración**, ingrese al escenario para catalogar los recursos de S10 con los códigos de Producto SUNAT."
+    resultado: "Se ve la lista de todos los recursos existentes que estén Activos en el S10."
+    fuente: [web-https-documentacion-s10peru-com-asignar--s002]
+    pagina: null
+    fotos:
+      - id: "0fdd854d9e35"
+        ruta_o_url: "imagenes/asignar-codigo-de-producto-sunat/8ccaaab4dbd0.png"
+        pagina: null
+        caption: "El escenario para catalogar los recursos de S10 con los códigos de Producto SUNAT, se encuentra en el módulo de Almacenes, en el grupo Configuración."
+        ocr: "Bb ‘S10 Almacenes - 5a\nArce Ye tog eames 2\nBaan\n[=m || Asignacién Cédigo Productos SUNAT\n——s TI a)\n@ Tobrbercemedlation ——C Uinnenahacrer Tet =)\n[contureciin |\na SOV HAES vEF aa\nMee [010 cancolReczso i fer enna poscen =] — (XL) cue:\nSeine rs eae E [edn ot cid sna loc n\na 0s TERA VACCESORDS 2512 NUS PYCSAPELECTREAS ORE02001 —_ CURUAS PVE SAP ELECTRA\nREM fcusrennes css rusma acesonos tases coms ves …"
+  - n: 3
+    id: "facturacion-electronica.asignar-codigo-de-producto-sunat#3"
+    accion: "Pulse clic derecho sobre el recurso al que desee asignar el código SUNAT; para asignarlo a varios a la vez, sombree varios recursos y pulse clic derecho en esa selección."
+    fuente: [web-https-documentacion-s10peru-com-asignar--s002]
+    pagina: null
+    fotos:
+      - id: "e65f379d8933"
+        ruta_o_url: "imagenes/asignar-codigo-de-producto-sunat/c6cad3ed8a94.png"
+        pagina: null
+        caption: "a) Ubicarse en el escenario y pulsar clic derecho sobre el recurso al que desee asignar el código SUNAT. (Se puede seleccionar varios a la vez y asignar el código SUNAT)"
+        ocr: "‘eto Yer Ctlogos Heraniets 2\nBRan\nFS [Asignacion Codigo SUNAT\n[ews |\n[Pissie | © redoterearnclatiegs Cdn Amacres——‘Tooacin [Pa] a]\npo) CCI FR RS vA ada\n<2]  | | anreteg snd slexabertn ea coma qu dese.\nBIT) vais copaftearont ————=|[inanianrsossin =P ———SSSSCK i]\n== an acre 2 acre ss02 lowsrscia unses cisno scr __fonsroconsinss___|n\nEfe foe wseraes txts nos, 1000 ve extent LAORLLGS SOVEDLLA TES teoT…"
+  - n: 4
+    id: "facturacion-electronica.asignar-codigo-de-producto-sunat#4"
+    accion: "Seleccione con doble clic el código de Producto SUNAT del catálogo correspondiente."
+    fuente: [web-https-documentacion-s10peru-com-asignar--s002]
+    pagina: null
+    fotos:
+      - id: "b754102af9f0"
+        ruta_o_url: "imagenes/asignar-codigo-de-producto-sunat/4d6329777952.png"
+        pagina: null
+        caption: "b) Seleccionar el código de Producto SUNAT del catálogo correspondiente con doble clic. (La información del catálogo fue incluida por medio de una actualización al S10)"
+        ocr: "fc LI\nQociones 2\n&xUue AYBS® oo HHASD oi)\nHl conpmeniesy SuneteeEecroncos a\nBl ovens co Wanepte,AreconeyCore> a\nEy covooremesy sora etartacurs ee\nLy Productos para Relojeria, Joyeria y Predras Preciosas i _2ersseee |edit menutocturedo,\nHy Sewon cosa [| sores | Ce sea care\nsevens tescanvenaes | ovate» =\nBy Arcane onmesion Sumntosy Poaictn Gxcréncos co | | abttsis tars ates tameos\nBy Strocos co mace…"
+  - n: 5
+    id: "facturacion-electronica.asignar-codigo-de-producto-sunat#5"
+    accion: "Para asignar de forma masiva, prepare previamente un Excel con los únicos campos necesarios: **Código Recurso**, que se toma del **Catálogo de recursos**, y **Código producto Sunat**, que se toma del **Catálogo de Productos SUNAT** (se sugiere exportarlo al usar la opción **Asignar**)."
+    fuente: [web-https-documentacion-s10peru-com-asignar--s002]
+    pagina: null
+    fotos:
+      - id: "83d6be037696"
+        ruta_o_url: "imagenes/asignar-codigo-de-producto-sunat/5b89bfa24a36.png"
+        pagina: null
+        caption: "Código Recurso: se toma del “Catálogo de recursos”"
+        ocr: "BO st0Atmacenes\n‘Archive Ver | Catdloges | Hesamiens\nBO sf teneconncr ero}\n\noP Secor de Negocio AT."
+      - id: "58517001abe1"
+        ruta_o_url: "imagenes/asignar-codigo-de-producto-sunat/d8f140a205c8.png"
+        pagina: null
+        caption: "Código producto Sunat: se toma del “Catálogo de Productos SUNAT” (se sugiere exportar la información de este catálogo al usar la opción “Asignar”."
+        ocr: "‘donee 2\nOe xXSe &¥Be oo HH ASD Ano\n= pis Raton aE come\naf tegen bose mei a\n2 es rhe tn tok 1-5 To =\n|| sete Sacer sts —Seenacummeeneeee Banc ‘|\nLy Componentes y Sumnistros de Manufacture |_| 60141108 ___| Juegos cdetcos a Modificor\nUy Productos pare Relojeri, Joyeriay Pedras Precosas it 50403236 | ‘Matz dulce mapie a“\nAires [/Sttnens ors X klminae\n1 conononesy Senne par stu. E&excn ons, || S362 n…"
+  - n: 6
+    id: "facturacion-electronica.asignar-codigo-de-producto-sunat#6"
+    accion: "Con el Excel preparado, use la opción **Importar de Microsoft Excel** para asignar de forma masiva el Código de Producto SUNAT a los recursos S10."
+    fuente: [web-https-documentacion-s10peru-com-asignar--s002]
+    pagina: null
+    fotos:
+      - id: "c68662f970f3"
+        ruta_o_url: "imagenes/asignar-codigo-de-producto-sunat/36babd8487d1.png"
+        pagina: null
+        caption: "Al igual que en otros escenarios, también se cuenta con una opción para importar y así asignar de forma masiva el Código de Producto SUNAT a los recursos S10. a) Para ello debe usar la opción “Importar de Microsoft Excel”"
+        ocr: "ive Yer Gatoges eramienas 2\nSae0\npee [Asignacion Codigo SUNAT\n<7\nen a]\na -\n=] CO HOSS vO eae\n= Ces oso cr\n— het ecenota aorta Jorepete ona sur _loweretn st Jn\nEe esses Sr cconcas waco een amon OETA HME sstnOY — LoCo DRE = —)\nPRE cucemss —exietaonios sioox ve eet uomtLos BovcRLA Tuas atstnezeD AORLLO MSTEANO OE 264 om = J\nraussemaes _trveLabmioe sox vo ett AORLLOS eOVEELLA Teas ENeneb®)LAORLLO MALT…"
+verificacion:
+  - texto: "En el Registro del Inventario Permanente Valorizado (13.01), el código corresponde al campo «8.Código Producto SUNAT»."
+    fuente: [web-https-documentacion-s10peru-com-asignar--s003]
+  - texto: "En el Libro de Inventarios y Balance 03.07 (cuenta 20 – Mercaderías y cuenta 21), el código corresponde al campo «Cod. CUBSO» y su descripción es «CUBSO»."
+    fuente: [web-https-documentacion-s10peru-com-asignar--s004]
+errores_frecuentes:
+  - sintoma: "En el libro electrónico se muestra como observación el mensaje «El Campo ‘Código Producto SUNAT’ no puede ser Nulo, verifique la configuración.»"
+    solucion: "Ocurre cuando se tiene la configuración activada y aún no se ha asignado ningún código de producto SUNAT: asigne el código en el escenario de Almacenes (2. Asignación de código de Producto SUNAT)."
+    fuente: [web-https-documentacion-s10peru-com-asignar--s003]
+relacionados: []
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-asignar--s001, manual: "Asignar código de producto Sunat", seccion: "1. Configuración:", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-asignar--s002, manual: "Asignar código de producto Sunat", seccion: "2. Asignación de Códigos de Producto SUNAT", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-asignar--s003, manual: "Asignar código de producto Sunat", seccion: "13.01 Registro del Inventario Permanente Valorizado", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-asignar--s004, manual: "Asignar código de producto Sunat", seccion: "03.07 Libro de Inventarios y Balance – Detalle del saldo de la cuenta 20 – Mercaderis y la cuenta 21", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

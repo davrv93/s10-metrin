@@ -1,0 +1,122 @@
+id: almacenes.calificar-recurso-con-techo-precio
+version: 1
+modulo: almacenes
+titulo: "Calificar un recurso con techo precio y registrar los recursos del catálogo"
+objetivo: "Calificar en el escenario de Techo de Materiales un recurso genérico presupuestado con el tipo de Techo Precio, para que el precio de los recursos del catálogo que se compran (por ejemplo, cuadernos y lapiceros para UTILES DE OFICINA) se descuente del recurso presupuestado, y dejar como pedibles solo los recursos específicos."
+nivel: avanzado
+preguntas:
+  - "como uso el precio como techo para un recurso generico"
+  - "en el presupuesto solo puse utiles de oficina, como pido cuadernos y lapiceros"
+  - "como hago que el precio de lo que compro se descuente del presupuestado"
+  - "techo precio como se configura en almacenes"
+  - "como marco un recurso como no pedible"
+  - "como edito la cantidad y el precio del recurso equivalente en el techo"
+  - "quiero que solo se puedan pedir los recursos especificos y no el generico"
+  - "techo de materiales precio s10 paso a paso"
+aliases:
+  - "techo precio"
+  - "techo por precio"
+  - "no pedible"
+  - "es pedible"
+  - "recursos del catálogo en el techo"
+entidades:
+  modulo: "Almacenes"
+  pantallas: ["Techo de Materiales", "Datos Generales"]
+  objetos: ["recurso genérico", "recurso presupuestado", "recursos equivalentes", "recursos específicos", "precio", "techo presupuestado"]
+prerrequisitos:
+  - texto: "En el escenario de Datos Generales, el proyecto debe tener seleccionado TECHO PRESUPUESTADO."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s122]
+pasos:
+  - n: 1
+    id: "almacenes.calificar-recurso-con-techo-precio#1"
+    accion: "Acceda al escenario de **Techo de Materiales** del proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s123, web-https-documentacion-s10peru-com-manual-d-s115]
+    pagina: null
+    fotos:
+      - id: "c3b6c07b2839"
+        ruta_o_url: "imagenes/manual-de-almacenes/3d8c10cacc76.png"
+        pagina: null
+        caption: "Acceso al escenario"
+        ocr: "J\n\n= Proyectos\n\n= =} gg Escritorio\nTecho de ime PUENTE EN CARRETERACES\nMateriales Luego,"
+  - n: 2
+    id: "almacenes.calificar-recurso-con-techo-precio#2"
+    accion: "Antes de pedir los recursos específicos, haga clic derecho sobre cada recurso genérico y califíquelo con techo precio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s123]
+    pagina: null
+    fotos:
+      - id: "0eece6225795"
+        ruta_o_url: "imagenes/manual-de-almacenes/2770b43f2ba1.png"
+        pagina: null
+        caption: "Efectúe esta labor antes de pedir los recursos específicos, para cada uno de los recursos genéricos."
+        ocr: "Materiales presupuestados\n*e Gell [otic derecha\nDescripcién Unida| Cant. Ppto. | Precio (Si) Parcial (S/.)\nUTILES DE OFICINA, u 27.00 95.00 2,565.00\nRegenerar equivaencias\nIncrementar techq\nClasificar por » Monto Presupuestado ABC: Sin Clasificacién +\n‘er recursos con Forma de Pedido: Esténdar .\nForma de Abastecimiento: MTS Estandar oa\nFl\nCantidad |\nPrecio C"
+  - n: 3
+    id: "almacenes.calificar-recurso-con-techo-precio#3"
+    accion: "Adicione recursos del catálogo: elija con doble clic los recursos que serán comprados."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s123]
+    pagina: null
+    fotos:
+      - id: "353489026108"
+        ruta_o_url: "imagenes/manual-de-almacenes/4e003335fe1c.png"
+        pagina: null
+        caption: "Adicione recursos del catálogo,"
+        ocr: "@% Catélogo de Recursos :02 MATERIALS hii [eel mss\nat z\nOpciones 2\nDw XB TES Elija los recursos con doble clic 4+ Q& Q CE] 3)\nE)-€}y Todos los Registros I = yo * | NIVEL : 3/3\nss Sinope oer [Descripciérf [Unita cig ate |\n8 MATERIALES ;\nee PAPEL BON SATINADO mil |]\n(#)- @EQUIPOS ERCEIETINGH\nf- @ SUBCONTRATOS a a ! =a\n| & @ REPUESTOS 4 [|\nf @ECONOMATO [0230750012 CUADERNO CUADRICULADO 200 pag. pza s…"
+  - n: 4
+    id: "almacenes.calificar-recurso-con-techo-precio#4"
+    accion: "Para editar el techo precio de cada uno de los recursos, haga clic derecho sobre el recurso equivalente."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s123]
+    pagina: null
+    fotos:
+      - id: "3fee4e1ca1cf"
+        ruta_o_url: "imagenes/manual-de-almacenes/19b81e8c2bf5.png"
+        pagina: null
+        caption: "Edite el techo precio de cada uno de los recursos,"
+        ocr: "Asignado a: 02140300010001 UTILES DE OFICINA\nClic derecho sobre el recurso equivalente del que editara el techo precio\n===: 3 eer ‘Unida| Factor c\nP 02140300010001 ES DE OFICINA u 1.000000000\nE 0230750012 [CUADRBNIN ClanpIc Ano ononaa———~—~—~—~—~—~di pz 0.126300000\nE 0230750022 bpicj = Adicionar recurso » pza 0.015800000\nE 0239090036 P ee Oniter exe mil 0.126300000\nMostrar Pedidos\nMostrar Guias de…"
+  - n: 5
+    id: "almacenes.calificar-recurso-con-techo-precio#5"
+    accion: "Ingrese la cantidad a pedir y el precio del recurso, y grabe el contenido de la ventana."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s123]
+    pagina: null
+    fotos:
+      - id: "152e82916509"
+        ruta_o_url: "imagenes/manual-de-almacenes/6038e5cb3a31.png"
+        pagina: null
+        caption: "Edite el techo precio de cada uno de los recursos,"
+        ocr: "ae lisa cea]\n=\n|\nRecurso principal 0214300010001 UTILES DE OFICINA u\nSaldo 1,329.00 Si.\nRecurso equivalente 2140300010001 CUADERNO CUADRICULADO 200 pag. pza\nFactor Cantidad Fijar Precio Unitario Fijar Parcial Fijar\n1 @= en t= ion 1 300.00 T\n(y= Aceptar Cancelar"
+  - n: 6
+    id: "almacenes.calificar-recurso-con-techo-precio#6"
+    accion: "Repita el proceso para los demás recursos equivalentes."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s123]
+    pagina: null
+  - n: 7
+    id: "almacenes.calificar-recurso-con-techo-precio#7"
+    accion: "Haga clic derecho sobre el recurso genérico y, del menú que muestre, elija **No pedible**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s123]
+    pagina: null
+    fotos:
+      - id: "3b116fd6304f"
+        ruta_o_url: "imagenes/manual-de-almacenes/95e56b094b98.png"
+        pagina: null
+        caption: "Haga que sólo los recursos específicos sean pedibles."
+        ocr: "|Asignado a: 02140300010001 UTILES DE OFICINA\n=pe Ha clic derecho sobre el recurso principal y defina como NO PEDIBLE\nTipo | Cédigo Descripcién Unida| Factor\nP ParOK OAR UTILES DE OFICINA u 1.000000!\nE 0230750012 CUADERNO QUADRICULADO 200 pag. Adicionar recurso »\nE 0230750022 LAPICERO AdUL TINTA SECA LUCAS 364 -\n£ — 0239090036 PAPEL BU STORE\nMostrar Guias de Almacén\nMostrar Subcontratos\nAlos recur…"
+  - n: 8
+    id: "almacenes.calificar-recurso-con-techo-precio#8"
+    accion: "Haga clic derecho sobre cada uno de los recursos equivalentes y, del menú que muestre, elija **Es pedible**."
+    resultado: "Solo los recursos específicos quedan como pedibles."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s123]
+    pagina: null
+    fotos:
+      - id: "8734c44ef316"
+        ruta_o_url: "imagenes/manual-de-almacenes/112d9db3ccd4.png"
+        pagina: null
+        caption: "Defina como pedible a los recursos adicionados del catálogo."
+        ocr: "|Asignado a: 02140300010001 UTILES DE OFICINA\n\nAve % wd\n\nTipo | Cédigo Descripcién Unida Pedible\n\nP UTILES DE OFICINA, u ao)\nE 0230750012 CUADERNO CUADRICULADO 200 pag pza\n\nE 0230750022 LAPICERO AZUL TINTA SECALUCAS 364 = pza “fo\nE 0239090036 PAPEL BULKY’ mil"
+verificacion:
+  - texto: "El techo toma como tope el precio del recurso genérico presupuestado y lo va descontando a medida que van ingresando los recursos del catálogo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s122]
+errores_frecuentes: []
+relacionados: [almacenes.calificar-recurso-con-techo-cantidad]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s122, manual: "Manual de Almacenes", seccion: "3.19.5 Techo presupuestado", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s123, manual: "Manual de Almacenes", seccion: "3.19.5.1 Techo precio", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s115, manual: "Manual de Almacenes", seccion: "3.19.2 Escenario de Pedidos (1)", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

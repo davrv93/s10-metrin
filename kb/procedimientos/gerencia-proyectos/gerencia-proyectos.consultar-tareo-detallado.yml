@@ -1,0 +1,79 @@
+id: gerencia-proyectos.consultar-tareo-detallado
+version: 1
+modulo: gerencia-proyectos
+titulo: "Consultar el tareo detallado de la mano de obra"
+objetivo: "Ver, de forma informativa, el monto total de la mano de obra utilizada en el proyecto y su detalle para cada periodo."
+nivel: basico
+preguntas:
+  - "donde veo cuanto llevo gastado en mano de obra en la obra"
+  - "como veo el tareo detallado por semana"
+  - "quiero ver el monto de mano de obra acumulado del proyecto"
+  - "tareo detallado como lo consulto"
+  - "como veo la mano de obra solo de unas semanas, del tal al tal"
+  - "como agrupo el tareo por tipo de nomina y por semana"
+  - "cuanto se pago de mano de obra cada semana en el proyeto"
+  - "donde esta el escenario tareo detallao"
+aliases:
+  - "tareo detallado"
+  - "monto de mano de obra"
+  - "mano de obra por periodo"
+  - "consultar tareo"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Tareo detallado"]
+  objetos: ["mano de obra", "tipo de nómina", "periodo semanal"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.consultar-tareo-detallado#1"
+    accion: "Para el acceso al escenario del Tareo, elija el proyecto, la rama **Meta** y luego el escenario **Tareo detallado**."
+    fuente: [img-fb940b8f3f43-0000, web-https-documentacion-s10peru-com-manual-d-s191]
+    pagina: null
+    fotos:
+      - id: "7b07ce51fa2c"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/fb940b8f3f43.png"
+        pagina: null
+        ocr: "Fon ie |\n(=) PUENTE EN CARRETERA\nTareo 2) Principal J\ndetallado Luego, S| Meta"
+  - n: 2
+    id: "gerencia-proyectos.consultar-tareo-detallado#2"
+    accion: "Seleccione la casilla para mostrar los montos acumulados desde la primera semana hasta la fecha de consulta, o déjela sin seleccionar para elegir el rango de periodos Del – Al."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s191]
+    pagina: null
+  - n: 3
+    id: "gerencia-proyectos.consultar-tareo-detallado#3"
+    accion: "Use el botón **Mostrar** para refrescar y mostrar los datos en el escenario."
+    fuente: [img-320e0ac389ab-0000, web-https-documentacion-s10peru-com-manual-d-s191]
+    pagina: null
+    fotos:
+      - id: "5ac173e31351"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/320e0ac389ab.png"
+        pagina: null
+        ocr: "Tareo detallado\nTipo de Némina | Todos x\ncee “ewe 21042010 | 4! Jorme2o10 +] Mostrar\nSVake va a&da\niTipolde] NoInaca Periodo Semanal fo)\n1/136 Campo|Tipo de Némina >| En cualquier po).\nApellidos y Nombres Parcial | doras laboradas|\n[Total Obreros de construccion civilconbeneficios J 12,091.52={ 0-1] 1,050.00\n| Total 2010 Semana 17 2,321.87 194.00\n| Total 2010 Semana 18 sanseoL (53) 816.00\n“| Total…"
+  - n: 4
+    id: "gerencia-proyectos.consultar-tareo-detallado#4"
+    accion: "Use el botón de campos para esconder o mostrar y ordenar las columnas disponibles en el escenario."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s191]
+    pagina: null
+  - n: 5
+    id: "gerencia-proyectos.consultar-tareo-detallado#5"
+    accion: "Arrastre **Tipo de Nómina** al segmento de agrupación y haga doble clic para contraer o expandir la información a ese nivel."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s191]
+    pagina: null
+  - n: 6
+    id: "gerencia-proyectos.consultar-tareo-detallado#6"
+    accion: "Arrastre el **Periodo Semanal** al mismo segmento y haga doble clic para contraer o expandir la información a ese nivel."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s191]
+    pagina: null
+  - n: 7
+    id: "gerencia-proyectos.consultar-tareo-detallado#7"
+    accion: "Revise la columna de montos de la mano de obra: el monto acumulado de la obra y el monto de la obra por semana."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s191]
+    pagina: null
+verificacion: []
+errores_frecuentes: []
+relacionados: [gerencia-proyectos.consultar-resumen-de-conceptos-por-dia]
+fuentes:
+  - {id: img-fb940b8f3f43-0000, manual: "Manual de Gerencia de Proyectos", seccion: "fb940b8f3f43.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s191, manual: "Manual de Gerencia de Proyectos", seccion: "5.14.2 Tareo detallado", pagina: null}
+  - {id: img-320e0ac389ab-0000, manual: "Manual de Gerencia de Proyectos", seccion: "320e0ac389ab.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

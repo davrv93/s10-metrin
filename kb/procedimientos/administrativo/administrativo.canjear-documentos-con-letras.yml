@@ -1,0 +1,176 @@
+id: administrativo.canjear-documentos-con-letras
+version: 1
+modulo: administrativo
+titulo: "Canjear con letras los documentos por pagar de un proveedor"
+objetivo: "Registrar una orden de pago tipo Canje con Letras por proveedor con sus documentos pendientes, configurar las letras emitidas por el proveedor, aprobarla y ejecutar el canje desde Pendientes de Pago, para que se generen automáticamente las Letras Únicas de Cambio en Documentos por Pagar."
+nivel: avanzado
+preguntas:
+  - "como canjeo facturas por letras de un proveedor"
+  - "el proveedor nos acepto pagar en letras, como hago el canje en s10"
+  - "orden de pago canje con letras por proveedor como se registra"
+  - "donde configuro las letras que emitio el proveedor"
+  - "como ejecuto el canje con letras en pendientes de pago"
+  - "canje de documentos con letra unica de cambio"
+  - "donde veo las letras generadas despues del canje"
+  - "canje con letras no me pide cuenta bancaria es normal?"
+aliases:
+  - "canje con letras"
+  - "canjear con letras"
+  - "orden de pago canje con letras"
+  - "letra única de cambio"
+  - "canje por proveedor"
+entidades:
+  modulo: "Administrativo"
+  pantallas: ["Orden de Pago", "Pendientes de Pago", "Pagos", "Documentos por Pagar"]
+  objetos: ["orden de pago", "letra única de cambio", "proveedor", "documentos por pagar", "cronograma de pagos"]
+prerrequisitos:
+  - texto: "Desde el catálogo tipo de documento debe estar configurado el documento Letra única de cambio como documento base, para registrar el nuevo compromiso de pagos a través de documentos por pagar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s037]
+pasos:
+  - n: 1
+    id: "administrativo.canjear-documentos-con-letras#1"
+    accion: "Desde el escenario **Orden de pago**, haga clic derecho y elija la opción de adicionar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s038]
+    pagina: null
+    fotos:
+      - id: "207ca778d51b"
+        ruta_o_url: "imagenes/manual-de-administracion/16cfb7302341.png"
+        pagina: null
+        caption: "Desde el escenario Orden de pago, clic derecho opción adiciona."
+        ocr: "© Archivo Yer Catdlogos Herramientas ?\n445HRa\ngoa |Ordenes de P:\nTaenes de Fago\n(wrt AVe + aoa\nD9\nOrdenes de Pago\na\n|\n= B Afio: 2012\nPendientes de Pago | @ aio: 2013\nLa | @ Afio: 2014\nEmitidos/|tn Custodia Collies Dicureocstnes\n1S\nPagos\nM4 44 4° Registro 790 de 1187 & be PM 4 | Soames\na\nao |\n[Sep"
+  - n: 2
+    id: "administrativo.canjear-documentos-con-letras#2"
+    accion: "Seleccione el tipo de orden de pago **Canje con Letras**, marque **Por Proveedor** y determine en la cabecera al proveedor."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s039, img-45e034839cde-0000]
+    pagina: null
+    fotos:
+      - id: "a7e3e5ce8174"
+        ruta_o_url: "imagenes/manual-de-administracion/169f167012a1.png"
+        pagina: null
+        caption: "El registro de la Orden de pago tipo canje con letras por proveedor determina visualizar a través del cronograma de pagos los documentos pendientes por pagar solo del proveedor filtrado o determinado en la cabecera de la orden de pago."
+        ocr: "4 Orden de Pago 1-18} x)\nEmpresa, 22000647 $10 DEMO N? Orden de Pago\noot2aa\nsucursal Principal\nPagar con iCanje con Letras Iv Por Proveedor Estado\nProveedor Fron04g60 iaXERCON S.A ~| 44\nwen pr pevossous SEE BSE\nesc | [RUE CONLETRAS-wrencon — (8)\nFechadePage | Faina01s | Teodecanbio [| [ASR v Gi oe ad\nObservaciones | [CANJECONLETRAS - MKERCON | Period plicacién\nTip Dacunerto\nDpoumentos por pagar 13…"
+  - n: 3
+    id: "administrativo.canjear-documentos-con-letras#3"
+    accion: "Desde el cronograma de pagos, seleccione los documentos pendientes por pagar del proveedor."
+    resultado: "La sumatoria de los documentos seleccionados será el importe que se canjeará por letras."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s039]
+    pagina: null
+    fotos:
+      - id: "78a5cd748c6b"
+        ruta_o_url: "imagenes/manual-de-administracion/297be7103a74.png"
+        pagina: null
+        caption: "Al seleccionar los documentos desde el cronograma de pagos, la sumatoria será el importe que se canjeará por letras."
+        ocr: "{4 0rden de Pago =|) x]\nEmpresa 2000647 $10 DEMO NP Orden de Pago\n001244\nSucursal Principal\nProveedor 22004960 |MIKERCON S.A. = |\ni 1 NUEVOS SOLES 2]Cronograma de Pagos BEES\n— [Faw con eTRas- ero (8) FS] 1 — (Clic en la parrilia para agregar los documentos ala orden de Pago\nmess mae v) eo | | SERRA y Sole\nObservaciones _[CANJE CON LETRAS - MKERCON Periodo Apicacién\n_—\nDocumentos por nagar 139/139…"
+  - n: 4
+    id: "administrativo.canjear-documentos-con-letras#4"
+    accion: "En el detalle de la orden de pago, sobre los documentos, use la opción **DETALLES**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s039]
+    pagina: null
+    fotos:
+      - id: "d142614e312f"
+        ruta_o_url: "imagenes/manual-de-administracion/71bb1aa41085.png"
+        pagina: null
+        caption: "Desde el detalle de la orden de Pago sobre los documentos se procede a utilizar la opción DETALLES, la sumatoria de los saldos de documentos por pagar será el importe a canjear con Letras en base al tipo documento previamente configurado."
+        ocr: "G4 Orden de Pago BEES\nEmpresa 22000617 $10 DEMO NP Orden de Pago\nont2as\nSucursal Principal\nPoveer = aan oes\nMoneda jor fluevos sous =] 84\nDeserigcion [CANIE CON LETRAS - MIXERCON\nFestacePam — Fornanos =] Trode canto Festa vencinito Fecanors 3]\nCObservaciones _[CANIE CON LETRAS - MMERCON a\nDocumentes por pager\nBMARS vB eae\n2i2_CampolsociedeNeqscio en cuslauie postién > XL | crupo\nIMRERCON S.A FACTU…"
+  - n: 5
+    id: "administrativo.canjear-documentos-con-letras#5"
+    accion: "En la ventana que aparece, configure las letras establecidas y emitidas por el proveedor."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s039]
+    pagina: null
+    fotos:
+      - id: "518163ebde3b"
+        ruta_o_url: "imagenes/manual-de-administracion/c88df197b059.png"
+        pagina: null
+        caption: "Al utilizar la opción DETALLES aparecerá una ventana que permitirá configurar las letras establecidas y emitidas por el proveedor."
+        ocr: "{Orden de Pago REIES\nEmpresa 22000617 $10 DEMO NP Orden de Pago\n001244\n‘Sucursal Principal\nProveedor fezoo1960 XERCONS.A, ~-| #4\nonede lor fwevos sotes: fa]\nDescripcién [CANJE CON LETRAS - MIERCON\nFecha de Pago 5 Fecha venciniento\ngt }21 09/2015, Tipo de cambio 3.13) max. 2609/2015,\n‘Observaciones |CANJE CON LETRAS - MIMERCON a\nDocumentos por pagar |__| Permite determinar la fecha base de|_| Permi…"
+  - n: 6
+    id: "administrativo.canjear-documentos-con-letras#6"
+    accion: "Haga clic en **ACEPTAR** para guardar la configuración de las letras y luego en **ACEPTAR** de la orden de pago."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s039]
+    pagina: null
+  - n: 7
+    id: "administrativo.canjear-documentos-con-letras#7"
+    accion: "Envíe a aprobación la orden de pago; el proceso no usa cuenta bancaria por ser transaccional."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s039]
+    pagina: null
+    fotos:
+      - id: "662c64dab1e7"
+        ruta_o_url: "imagenes/manual-de-administracion/968bf20df5e6.png"
+        pagina: null
+        caption: "Clic en la opción ACEPTAR para guardar la configuración establecida. Posterior a guardar la configuración clic en ACEPTAR a la orden de Pago. Proceso de Enviar a Aprobación de la Orden de Pago, se Observa que el proceso no realiza uso de cuenta bancaria por ser transaccional."
+        ocr: "», $10 Administrativo: 22000617 - S10 DEMO - Principal BEE\n© Archivo Yer Catélogos Herramientas 2\n6h0Rea\nOrdenes de Pago\nfab een ae)\noneness lems\nel\n|| Afo-Mes: 201804 - abe 2015\nPerdis JEP I) afeces 201506 - Mayo 2015\n| |B Afo-Mes: 201506 - Junio 2015\nAfio-Mes: 201507 - duo 2015 5\nie || BiAfo-mes: 201507 - duo 2015 ‘Se Observa que no hay uso de cuenta riaya\n|| Bl AFo-mes: 201508 - agosto 2015 que…"
+  - n: 8
+    id: "administrativo.canjear-documentos-con-letras#8"
+    accion: "Haga clic en la opción **Aprobar**."
+    resultado: "La orden de pago aprobada se visualiza en el escenario **Pendientes de Pago**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s039]
+    pagina: null
+    fotos:
+      - id: "3c7cca073818"
+        ruta_o_url: "imagenes/manual-de-administracion/d4a0cef9d697.png"
+        pagina: null
+        caption: "Clic en la opción Aprobar para visualizarlo el el siguiente escenario denominado Pendientes de Pago"
+        ocr: "© Archivo Yer Catdlogos Herramientas ?\n4640Bea8\nd Tema ms ae\na Ordenes de Pago\n: a\nJPA = PY Bt | oe id\nOrdenes de Pago\nEl\nal @ Afio-Mes: 201505 - Mayo 2015\nPendientes de Pago ||) @Afo-Mes: 201506 - Junio 2015\n“2 |_| @ Afio-Mes: 201507 - Julio 2015\nal © Afio-Mes: 201508 - Agosto 2015\n|_| @ Estado: Aprobado\nEmitidos/En Custodi.\nmitidos/En Custocia |_| © Afio-Mes: 201509 - Setiembre 2015\n_ |_| Estado…"
+      - id: "c799a860645d"
+        ruta_o_url: "imagenes/manual-de-administracion/b559993744a2.png"
+        pagina: null
+        caption: "Vista de Orden de Pago Aprobada."
+        ocr: "510 Administrativo: 22000617 - S10 DEMO - Principal BEE\n© Archivo Yer Catélogos Herramientas 2.\n6h58a@\ni Tema \\-/ 7\na Ordenes de Pago\n(Mr AYR eo elo\nAfioMes «\nOrdenes de Pago\n| [rordender.. esos [aaron |ncuerta [Non [To de cam. [Nero Esto Gr Forme\n| | Gl Afo-Mes: 201808 - Agosto 2015\nPendientes de Pago [| \"i\nEstado: Aprobado\n|| Glafo-mes: 201509. Setembre 2015\nial |_| Gi Estado: Aprobado Vista del…"
+  - n: 9
+    id: "administrativo.canjear-documentos-con-letras#9"
+    accion: "En el escenario Pendientes de Pago, tipo Canje con Letras, haga clic derecho y elija **CANJE CON LETRAS** para ejecutar el proceso de canje."
+    resultado: "Se muestra el pago a realizar y el pago queda en el escenario **Pagos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s039]
+    pagina: null
+    fotos:
+      - id: "0c8ab5945510"
+        ruta_o_url: "imagenes/manual-de-administracion/1ad5bc7b2218.png"
+        pagina: null
+        caption: "Vista del escenario, Pendiente de Pago tipo Canje con Letras."
+        ocr: "4,510 Administrativo: 22000617 - $10 DEMO - Principal BAe\n| Archivo Yer Catélogos Herramientas 2\n688k ae\nea iil|Pendientes de Pago\nrome | Pagar con [Canje con Letras y\nyp Cuenta Bancaria\ny | eta ce Crédta a\n__._ ef _\nceding JT oe CE cusiuier poscin > [X|[22] Grupo:\nIN\" Orden de Pag|Descripcidn Orden de Pago Nt Cuenta Socio de Negocio Tio Docunente|N* Documento Fecha Documer|Maneda Total Total ago…"
+      - id: "f037e74df126"
+        ruta_o_url: "imagenes/manual-de-administracion/a662197b03d9.png"
+        pagina: null
+        caption: "Clic derecho opción CANJE CON LETRAS, permite ejecutar el proceso de Canje con Letras."
+        ocr: "», $10 Administrativo: 22000617 - $10 DEMO - Principal EES\n| Archivo Yer Catélogos Herramientas 2\n625088\nEMCO Pendientes de Pago\nago\nBOMHR a vGFia@aa\n‘Ordenes de Pago den de Pago [En cualquier posiciés I x2)\nfe onan oe ep Teospe Enter as Pegs Eo Saco a Nap SS a To Fa Te pape osservecnee\nBy oor zs CANJE CON LETRAS - MIKERCON, faneRCONS A FACTURAS _FT.0012-0208782 s7men01s St 3504.88 __3,504.88 CANJ…"
+      - id: "2b93703604ae"
+        ruta_o_url: "imagenes/manual-de-administracion/94a64bc51637.png"
+        pagina: null
+        caption: "Vista del Pago a Realizar."
+        ocr: "[archive er Cetdloooe Herenieter 7\n6850888\nSEA Pendientes de Pago\n[Pep cual\nGas z2a00617 10 DEMO Altern’\nSMP BS) owen orn i Pag\nondenes de Pago 22 ‘Campe|v Orden de Pe. Proveedior oooesss Paxerconsa SOS fst co1see)\nIN\" Orden de Pag} Deseripciin Ore MonedaNUEVOS SOLES Tipo cembio [7.00], Total ‘etal pago_|Observaciones\nSe visualizan los documentos| [ Socumento] | x\njinvolucrados en la orden de — ~~…"
+      - id: "fad597ece7b0"
+        ruta_o_url: "imagenes/manual-de-administracion/c52b75550d36.png"
+        pagina: null
+        caption: "Escenario Pagos."
+        ocr: "| Archivo Yer Catélogos Herramientas 2.\n- Ga G\n£(g) Teme Pagos\nTodos Periods a01s0a [Setembro aoTs Sm]\n(pe Y Ss ie\nOrdenes de Pago Arrastre hacia aqui el encabezado de la columna que desea agrupar\nBy | [sececenesecio [Mente de Pago [nrpa... [nrcuenta [Ob eseripetén | estago | Moneaa[Tetatpago | Totalpage si. [7\nPendientes de Pago || _|PRIMA AFP S.A. Débto Directo 001542 ost0-o10n108672 ‘AFP NET PR…"
+  - n: 10
+    id: "administrativo.canjear-documentos-con-letras#10"
+    accion: "En el módulo de Facturación, escenario **Documentos por Pagar**, seleccione el tipo de documento **LETRA UNICA DE CAMBIO**."
+    resultado: "Se muestran las Letras Únicas de Cambio generadas automáticamente según la configuración establecida en la orden de pago."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s039]
+    pagina: null
+    fotos:
+      - id: "b85b423e7c83"
+        ruta_o_url: "imagenes/manual-de-administracion/fc19e74751aa.png"
+        pagina: null
+        caption: "Desde el Módulo Facturación escenario Documentos por Pagar, seleccionar el tipo documento LETRA UNICA DE CAMBIO, que se genera en base a la configuración establecido en la orden de Pago."
+        ocr: "‘510 Facturacién: 22000617 - $10 DEMO - Principal 81x)\n© Archive Yer Catdlogos Herramientas 2\nVista del documento por Pagar generadas por el\nERe@ Iproceso desde el médulo administrativo de Canje\nins son Letras.\ni Documentos por Pagar\nee _\nTomeeS vafl@aa\nDocuments por rastre hac aqui el encabezado de la columns que desea agru\npagar Arrastre hacia aqui el encabezedo de la columna que desea agruner\nA…"
+      - id: "7a5d97041c02"
+        ruta_o_url: "imagenes/manual-de-administracion/8dc738f03cb5.png"
+        pagina: null
+        caption: "Vista de Letras Única de Cambio generadas automáticamente."
+        ocr: "‘510 Facturaci6n: 22000617 - $10 DEMO - Principal L=121 x)\nArchivo Yer CatSlogos Heranientas 2\nRae\ndG) Te Documentos por Pagar\ncoooaeonan2 2\nBEDE BB) v| Pes pocrconsa =] 4)\n= RUC 20380289360\nDocaneras por nn .\n1b treo mie| tere Fras Sntaroans ——Fachanertnirio Farinas Fo]\nrr conettvo orp de rove ccasr|peotopetcin ——_|suesa\nLiqudecones [000000000002 CONSTRUCCION Moneda Pr feevos sotes =]dA TT Revent…"
+verificacion:
+  - texto: "En el escenario Documentos por Pagar del módulo Facturación, con el tipo de documento LETRA UNICA DE CAMBIO, se ven las letras generadas automáticamente por la orden de pago."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s039]
+errores_frecuentes:
+  - sintoma: "En el cronograma de pagos aparecen documentos de todos los proveedores."
+    solucion: "Esa es la orden de pago Canje con letras Abierta; para ver solo los documentos de un proveedor, registre la orden de pago tipo canje con letras por proveedor, con el proveedor determinado en la cabecera."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s038, web-https-documentacion-s10peru-com-manual-d-s039]
+relacionados: [administrativo.registrar-pago-con-cheque, administrativo.aplicar-nota-de-credito-en-orden-de-pago]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s037, manual: "Manual Administrativo", seccion: "5.5.1 Configuración del Tipo documento Letra única de Cambio", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s038, manual: "Manual Administrativo", seccion: "5.1.2 Registro de Orden de Pago Tipo Canje con Letras", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s039, manual: "Manual Administrativo", seccion: "5.2.2.2 Orden de Pago – Canje con Letras por Proveedor", pagina: null}
+  - {id: img-45e034839cde-0000, manual: "Manual Administrativo", seccion: "45e034839cde.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

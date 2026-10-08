@@ -1,0 +1,126 @@
+id: calidad-movil.activar-la-aplicacion
+version: 1
+modulo: calidad-movil
+titulo: "Instalar y activar la aplicación Calidad Móvil"
+objetivo: "Descargar la aplicación Calidad Móvil en el celular o tablet, activarla con el código que llega al correo y sincronizar el proyecto publicado para el usuario."
+nivel: basico
+preguntas:
+  - "cómo instalo calidad móvil en mi celular"
+  - "donde descargo la app de calidad movil de s10"
+  - "como activo la aplicacion de calidad movil"
+  - "no me llega el codigo de activacion de calidad movil"
+  - "que datos me pide la app de calidad movil para activarla"
+  - "instale calidad movil y no me sale ningun proyecto"
+  - "como configuro calidad movil en la tablet"
+  - "la app de calidad pide ruc y correo, cual pongo"
+aliases:
+  - "instalar calidad móvil"
+  - "activar calidad móvil"
+  - "código de activación"
+  - "configurar calidad móvil"
+  - "descargar app de calidad"
+entidades:
+  modulo: "Calidad Móvil"
+  pantallas: ["Play Store", "App Store"]
+  objetos: ["aplicación", "código de activación", "contraseña", "proyecto", "dispositivo móvil"]
+prerrequisitos:
+  - texto: "Para poder activar la aplicación es necesario que se haya publicado antes el proyecto para el usuario, desde el módulo S10 Gerencia de Proyectos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s006]
+  - texto: "Los datos de los usuarios que accederán a la aplicación móvil (correo electrónico del usuario y RUC de la empresa asociada) deben proporcionarse al área de ventas de S10 al contratar el servicio, junto con el IP público y el nombre de la base de datos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s004]
+pasos:
+  - n: 1
+    id: "calidad-movil.activar-la-aplicacion#1"
+    accion: "Busque la aplicación en Play Store o App Store, según el dispositivo que tenga (está disponible para Android y IOS), y descárguela."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s006]
+    pagina: null
+    fotos:
+      - id: "db57d344510c"
+        ruta_o_url: "imagenes/manual-de-calidad-movil/0c920fb84cbe.png"
+        pagina: null
+        caption: "Esta aplicación está disponible para Android y IOS. Busque la aplicación en Play Store o App Store según el dispositivo que tenga."
+        ocr: "t\n= ws\nan Calidad\nSic s0\n© Todos\nProductividad Similares\nRegistro de asistencia y actividades del\npersonal\nLEER MAS\nth a et Oath\nq O i)"
+  - n: 2
+    id: "calidad-movil.activar-la-aplicacion#2"
+    accion: "Valide sus datos para la activación: ingrese el **RUC** y el **correo electronico**; su dirección de e-mail será utilizada como su nombre de usuario."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s006, img-fce6190f6515-0000]
+    pagina: null
+    fotos:
+      - id: "3453fec14b2d"
+        ruta_o_url: "imagenes/manual-de-calidad-movil/fce6190f6515.png"
+        pagina: null
+        ocr: "Solo emergencia) A @ b& Ga 10t SD (03:46 pm\nCalidad Movil\nRUC\ncorreo electronico\nSu direccién de e-mail sera utilizado como su nombre\nde usuario.\nQJ O O"
+  - n: 3
+    id: "calidad-movil.activar-la-aplicacion#3"
+    accion: "Haga clic en el botón **Siguiente**."
+    resultado: "Se habilita un nuevo botón para generar el código de activación."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s006]
+    pagina: null
+    fotos:
+      - id: "e5916d32b8ee"
+        ruta_o_url: "imagenes/manual-de-calidad-movil/af3b21473491.png"
+        pagina: null
+        caption: "Luego de ingresar sus datos y hacer clic en el botón Siguiente , entonces se habilitará un nuevo botón para generar el código de activación."
+        ocr: "=O\nCalidad Movil\ncorreo electronico\nncortezs72@gmail.com\nRUC\n20380775892"
+      - id: "0dfa5ec0bb4c"
+        ruta_o_url: "imagenes/manual-de-calidad-movil/99a7289b0943.png"
+        pagina: null
+        caption: "Luego de ingresar sus datos y hacer clic en el botón Siguiente , entonces se habilitará un nuevo botón para generar el código de activación."
+        ocr: "Solo emergenciaA BO & & 10tSD Me 4:14 p.m.\nCalidad Movil\n\ncorreo electrénico\n\nncortezs72@gmail.com\n\nRUC\n\n20380775892\n\nIntroduzca el cé...\ncédigo de verificacién enviado a su\ncorreo electrénico de identificacién\nregistrada.\n\nq O O"
+  - n: 4
+    id: "calidad-movil.activar-la-aplicacion#4"
+    accion: "Genere el código de activación con ese nuevo botón."
+    resultado: "Se le envía un mensaje a su correo electrónico con el código de activación."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s006]
+    pagina: null
+    fotos:
+      - id: "e59b20178340"
+        ruta_o_url: "imagenes/manual-de-calidad-movil/72e08c3edb6b.png"
+        pagina: null
+        caption: "Se le enviará un mensaje a su correo electrónico con el código de activación."
+        ocr: "$10 Calidad : Codigo de verificacion Recibidos x\nCalidad Movil <f_electronica@s10peru.com>\npara mi i+\nSu cédigo de verificacién de Calidad Movil es:2361\n— Haz clic aqui para Responder o para Reenviar"
+  - n: 5
+    id: "calidad-movil.activar-la-aplicacion#5"
+    accion: "Registre en el móvil el código de activación y luego ingrese la nueva contraseña que se le pedirá."
+    resultado: "La aplicación queda activada en el dispositivo móvil."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s006]
+    pagina: null
+    fotos:
+      - id: "24edc7c23672"
+        ruta_o_url: "imagenes/manual-de-calidad-movil/67a4810644f4.png"
+        pagina: null
+        caption: "Esté código debe ser registrado en el móvil, y luego se pedirá ingresar una nueva contraseña."
+        ocr: "Solo emergenciaA O& & @ 101 D Me 4:15 p.m.\nCalidad Movil\ncorreo electrénico\nncortezs72@gmail.com\nRUC\n20386775892\nIntroduzca el cédigo\nq Oo 0"
+      - id: "38d4fca9774b"
+        ruta_o_url: "imagenes/manual-de-calidad-movil/f03a660ab55c.png"
+        pagina: null
+        caption: "Esté código debe ser registrado en el móvil, y luego se pedirá ingresar una nueva contraseña."
+        ocr: "Solo emergenciaA © & & i 10'S D Mt 4:15 p.m.\nCalidad Movil\nContrasefia actual\n2361\nIntroduzca nueva contrasefia\nsee\nConfirmar contrasefia\nsees"
+  - n: 6
+    id: "calidad-movil.activar-la-aplicacion#6"
+    accion: "En la lista de todos los proyectos publicados para el usuario, seleccione el proyecto a trabajar."
+    resultado: "Se realiza la sincronización de la información del proyecto seleccionado (actividades, frentes, destinos específicos, etapas), que es guardada en el mismo dispositivo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s006]
+    pagina: null
+    fotos:
+      - id: "1c8b0496a676"
+        ruta_o_url: "imagenes/manual-de-calidad-movil/17803393fa65.png"
+        pagina: null
+        caption: "Luego de ello se muestra en una lista todos aquellos proyectos publicados para el usuario. Seleccione el proyecto a trabajar."
+        ocr: "B+o 7 =\nProyectos\nOLIVAR I-Actividades\nMUROS DE CIMENTACION-Actividades\nJ i)"
+      - id: "188c685599d3"
+        ruta_o_url: "imagenes/manual-de-calidad-movil/36fdaed6fbf1.png"
+        pagina: null
+        caption: "Entonces se realizará la sincronización de la información del proyecto seleccionado: actividades, frentes, destinos específicos, etapas, la que es guardada en el mismo dispositivo."
+        ocr: "lo emergencia ? A @ + fi =D =)\n@& S10 Calidad Misuil Ee\n©\nProduccién Indicadores de _Indicadores de\nSincronizacion Toma de datos\nSincronizar — Sincronizar Carga\nDescarga"
+verificacion: []
+errores_frecuentes:
+  - sintoma: "No se sincroniza la información del proyecto en la aplicación."
+    solucion: "Para que se realice la sincronización, se debe haber publicado antes el proyecto para el usuario."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s004]
+relacionados: [calidad-movil.publicar-proyecto-en-calidad-movil, calidad-movil.calificar-actividades]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s006, manual: "Manual de Calidad Móvil", seccion: "2.1.1 Instalación y configuración", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s004, manual: "Manual de Calidad Móvil", seccion: "1.2.3 Actividades de Aplicación Móvil – Calidad Móvil", pagina: null}
+  - {id: img-fce6190f6515-0000, manual: "Manual de Calidad Móvil", seccion: "fce6190f6515.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

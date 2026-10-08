@@ -1,0 +1,166 @@
+id: gerencia-proyectos.registrar-contrato
+version: 1
+modulo: gerencia-proyectos
+titulo: "Registrar el contrato del proyecto"
+objetivo: "Registrar el contrato con el propietario del proyecto: los datos de cabecera, el recurso que debe aparecer en la factura, los recursos con su fase del WBS y el impuesto."
+nivel: intermedio
+preguntas:
+  - "como registro el contrato principal en gerencia de proyectos"
+  - "donde se registra el contrato con el cliente en s10"
+  - "como creo un contrato nuevo para el proyecto"
+  - "como le asigno el wbs a los recursos del contrato"
+  - "como le pongo el igv al contrato"
+  - "donde pongo el porcentaje de adelanto del contrato"
+  - "como registo el contrato de obra con el propietario"
+  - "puedo jalar la orden de venta de facturacion al registrar el contrato?"
+  - "en que parte va la retencion por fondo de garantia del contrato"
+aliases:
+  - "registrar contrato"
+  - "nuevo contrato"
+  - "registro del contrato"
+  - "contrato principal"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Contratos", "Registro del Contrato"]
+  objetos: ["contrato", "orden de venta", "recurso", "impuesto", "fase del WBS"]
+prerrequisitos:
+  - texto: "Debe tener el recurso CONTRATO PRINCIPAL en el catálogo de recursos: es el que debe aparecer en la factura presentada al dueño del proyecto y se utiliza al registrar el Contrato."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s231]
+  - texto: "Asigne al proyecto el presupuesto venta que utilizará; debe estar elaborado en el mismo tipo de moneda."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s234]
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.registrar-contrato#1"
+    accion: "Elija el proyecto e ingrese al escenario **Contratos**."
+    fuente: [img-0d3ce70e08ee-0000, web-https-documentacion-s10peru-com-manual-d-s240]
+    pagina: null
+    fotos:
+      - id: "a7f0a51075f2"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/0d3ce70e08ee.png"
+        pagina: null
+        ocr: "e ee\na Escritorio\nContratos Luego (=) PUENTE EN CARRETERA"
+  - n: 2
+    id: "gerencia-proyectos.registrar-contrato#2"
+    accion: "En el escenario de contratos, use la opción **Adicionar** para registrar el contrato."
+    fuente: [img-e8cde6323116-0000, web-https-documentacion-s10peru-com-manual-d-s240]
+    pagina: null
+    fotos:
+      - id: "bcf93d60f1f7"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/e8cde6323116.png"
+        pagina: null
+        ocr: "Contratos =]\n\nAveaRe BF aaa\n\nNota |Contrato Cliente Moneda | 4G)\nD Adicionar"
+  - n: 3
+    id: "gerencia-proyectos.registrar-contrato#3"
+    accion: "Ingrese los datos en la cabecera del documento, en la ventana **Registro del Contrato**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s240]
+    pagina: null
+    fotos:
+      - id: "3b402c43ca45"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/1311a7399472.png"
+        pagina: null
+        caption: "Ingrese los datos en la cabecera del documento,"
+        ocr: "(S Recistro dal Contests la [c/o lal Ga\n{> Registro del Contrato Sa =)\nProyecto: PUENTE EN CARRETERA.\nA . Orden de .\ncago cammsons [RMB oiaborscss | Sen @ ...| N® Contrato\nDeseripcion [EonTRATOPRNGPAL (6) —~—~CS |)\ngine (02100027 |Ministerio de Transportes y Com [O} Moneda or uuevos SOLES 44)\nEspecialidad o191012 [Contratos 4 fetence Sal ra)\nRecurso para\ncere 0200060034 [CONTRATO PRINCIPAL Ci | Bh…"
+    sub:
+      - n: 1
+        id: "gerencia-proyectos.registrar-contrato#3.1"
+        accion: "Si en el módulo de facturación generó una orden de venta, use el botón para elegirla y llenar los datos del formulario; caso contrario, los datos se llenan manualmente."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s240]
+        pagina: null
+      - n: 2
+        id: "gerencia-proyectos.registrar-contrato#3.2"
+        accion: "Registre el nombre del contrato."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s240]
+        pagina: null
+      - n: 3
+        id: "gerencia-proyectos.registrar-contrato#3.3"
+        accion: "Registre el nombre del propietario del proyecto."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s240]
+        pagina: null
+      - n: 4
+        id: "gerencia-proyectos.registrar-contrato#3.4"
+        accion: "Registre el tipo de moneda que se utilizará en el contrato."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s240]
+        pagina: null
+      - n: 5
+        id: "gerencia-proyectos.registrar-contrato#3.5"
+        accion: "Elija la especialidad."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s240]
+        pagina: null
+      - n: 6
+        id: "gerencia-proyectos.registrar-contrato#3.6"
+        accion: "Si hay adelanto en efectivo, registre su porcentaje y, si registra un documento bancario, ponga una selección en la celda correspondiente."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s245]
+        pagina: null
+      - n: 7
+        id: "gerencia-proyectos.registrar-contrato#3.7"
+        accion: "Registre el recurso que debe aparecer en la factura."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s240]
+        pagina: null
+      - n: 8
+        id: "gerencia-proyectos.registrar-contrato#3.8"
+        accion: "Registre el % de la retención del fondo de garantía."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s240]
+        pagina: null
+      - n: 9
+        id: "gerencia-proyectos.registrar-contrato#3.9"
+        accion: "Registre la fecha de la firma del contrato."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s240]
+        pagina: null
+  - n: 4
+    id: "gerencia-proyectos.registrar-contrato#4"
+    accion: "Elija la pestaña **Actividades** para adicionar los recursos al contrato y asignar WBS."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s242]
+    pagina: null
+    fotos:
+      - id: "6c7af576f3eb"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/c5694b4dac24.png"
+        pagina: null
+        caption: "Llamada m: Elija esta pestaña para adicionar los recursos al contrato y asignar WBS."
+        ocr: "ny (n) (o)_Recursos Asignados\n\n#linea Céaige Descripcion | Und. | Cant. Origen | Cant. Ay?\n\n1 104030100050001 _Contrato principal lb\n\n4\n\nCONTRATO PRINCIP L) Adicionar recursos [\n\n%_Eliminar\n\nAsignar/Reasignar WES\nAsignarReasignar WBS a TODOS los recursos\nQuitar was"
+  - n: 5
+    id: "gerencia-proyectos.registrar-contrato#5"
+    accion: "Adicione el recurso que será valorizado con la opción **Adicionar recursos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s242, img-c5694b4dac24-0000]
+    pagina: null
+  - n: 6
+    id: "gerencia-proyectos.registrar-contrato#6"
+    accion: "Haga clic derecho en el recurso y elija reasignar FASE del WBS, para que tome valores del proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s242]
+    pagina: null
+    fotos:
+      - id: "0f39bf2db173"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/78101965e912.png"
+        pagina: null
+        caption: "Llamada m-1-2: Luego de hacer clic derecho en el recurso marcado con la llamada m-1, elija reasignar FASE del WBS, para que tome valores del proyecto."
+        ocr: "Opciones 2?\nbE ere Rig 4 2A 3)\nEi) cLopa\nGIP) PUENTE EN CARRETERA venta\nB® estructuras Elija con doble clic\nEV @ESTRUCTURAS\nENCOFRADO\n(4] ACERO\nCONCRETO.\n\"; coMCDN No incluya el COMODIN\n‘1 Costos indirectos que corresponde al pie\nGastos generales del presupuesto\nUtilidad"
+  - n: 7
+    id: "gerencia-proyectos.registrar-contrato#7"
+    accion: "Asigne el impuesto al contrato: haga clic derecho y, del catálogo de impuestos, elija el impuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s243]
+    pagina: null
+    fotos:
+      - id: "b5c3cca1aefa"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/94d1b6844917.png"
+        pagina: null
+        caption: "Se asigna impuesto al contrato con la finalidad de calcular el monto y tributar."
+        ocr: "Actividades | (iformciin\\\nCécim) escripcisn Ln (yar Tasa\nrf\nClic drecho"
+  - n: 8
+    id: "gerencia-proyectos.registrar-contrato#8"
+    accion: "Use el botón para grabar el contenido del contrato."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s244]
+    pagina: null
+verificacion: []
+errores_frecuentes: []
+relacionados: [gerencia-proyectos.valorizar-el-contrato, gerencia-proyectos.asignar-presupuestos-al-proyecto, gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s231, manual: "Manual de Gerencia de Proyectos", seccion: "7.4 Registro del recurso Contrato principal", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s234, manual: "Manual de Gerencia de Proyectos", seccion: "7.4.3 Asignar el presupuesto a la rama venta", pagina: null}
+  - {id: img-0d3ce70e08ee-0000, manual: "Manual de Gerencia de Proyectos", seccion: "0d3ce70e08ee.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s240, manual: "Manual de Gerencia de Proyectos", seccion: "7.4.9 Registro del contrato", pagina: null}
+  - {id: img-e8cde6323116-0000, manual: "Manual de Gerencia de Proyectos", seccion: "e8cde6323116.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s245, manual: "Manual de Gerencia de Proyectos", seccion: "7.4.9.5 Registro del pago del adelanto en efectivo", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s242, manual: "Manual de Gerencia de Proyectos", seccion: "7.4.9.2 Actividades", pagina: null}
+  - {id: img-c5694b4dac24-0000, manual: "Manual de Gerencia de Proyectos", seccion: "c5694b4dac24.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s243, manual: "Manual de Gerencia de Proyectos", seccion: "7.4.9.3 Impuesto", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s244, manual: "Manual de Gerencia de Proyectos", seccion: "7.4.9.4 Información", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

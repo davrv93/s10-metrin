@@ -1,0 +1,111 @@
+id: nominas.registrar-planilla-de-pago
+version: 1
+modulo: nominas
+titulo: "Registrar una planilla de pago"
+objetivo: "Registrar los tipos de planilla de pago que utiliza la empresa, con las entidades y los tipos de socio de negocio a quienes se ordena el pago, el tipo de documento, el recurso y el concepto."
+nivel: intermedio
+preguntas:
+  - "como registro la planilla de pago de obreros semanal"
+  - "como creo la planilla de pago de essalud o de la afp"
+  - "donde configuro a quien se paga cada planilla de pago"
+  - "como asigno el tipo de documento y el concepto a una planilla de pago"
+  - "que es desdoble mensual en la planilla de pago"
+  - "la planilla de pago de semanas partidas como se configura"
+  - "como agrego la planilla de pago del sindicato o conafoviser"
+  - "planilla de pago con valores negativos como la configuro"
+aliases:
+  - "planilla de pago"
+  - "configurar planilla de pago"
+  - "planillas de pago"
+  - "registrar planilla de pago"
+entidades:
+  modulo: "Nóminas"
+  pantallas: ["Planillas de Pago", "Configuracion de Planilla de Pago"]
+  objetos: ["planilla de pago", "socio de negocio", "tipo de documento", "recurso", "concepto"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "nominas.registrar-planilla-de-pago#1"
+    accion: "Ingrese al escenario **Planillas de Pago** y elija el tipo de nómina."
+    fuente: [img-124c74989d59-0000, web-https-documentacion-s10peru-com-manual-d-s030]
+    pagina: null
+    fotos:
+      - id: "28e3303576f0"
+        ruta_o_url: "imagenes/manual-de-nominas/124c74989d59.png"
+        pagina: null
+        ocr: "c | Configuracion de Planilla de Pago -\nTipo de Ndi é . a4\nPlanilas de Pago 'po de Nomina 1992 Régimen C.C. con BB.SS. - Obreros"
+      - id: "63983e97c466"
+        ruta_o_url: "imagenes/manual-de-nominas/3dff17dadd32.png"
+        pagina: null
+        caption: "Datos para el registro,"
+        ocr: "Pagar ala Tipo Desdoble\nDescripcin Proceso orden de [Socio de Negocio |Afiliacién [Tipo Documento Recurso Concepto Mensual\nTOTAL NETO &\nBP - PLANILLA DE PAGO Socio de PLANILLA, DE PAGO DE PERSONAL |REMUNERACIONES PAGAR\nJOBREROS - SEMANAL Negocio [AFP HABITAT OBREROS -RRHHAUTOMATICO |OBREROSSALARIOS _|(BP)PAGO) —_|[Seleccionado\nOFICINA, DE\nBP - PLANILLA NORMALIZACION PLANILLA DE PAGO AFP - DESCUENT…"
+  - n: 2
+    id: "nominas.registrar-planilla-de-pago#2"
+    accion: "En la lista de planillas de pago, haga doble clic para abrir el registro de la planilla."
+    fuente: [img-94c97f8f6761-0000, web-https-documentacion-s10peru-com-manual-d-s030]
+    pagina: null
+    fotos:
+      - id: "4beb0f120df6"
+        ruta_o_url: "imagenes/manual-de-nominas/94c97f8f6761.png"
+        pagina: null
+        ocr: "SY S88 Ghlea\nNe Descripcién Proceso Pagar a la orden de\nDoble ele"
+  - n: 3
+    id: "nominas.registrar-planilla-de-pago#3"
+    accion: "Seleccione **Activo** para permitir el uso de la planilla de pago."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s030, img-23b94549be6d-0000]
+    pagina: null
+    fotos:
+      - id: "22578fe5a634"
+        ruta_o_url: "imagenes/manual-de-nominas/23b94549be6d.png"
+        pagina: null
+        ocr: "A =a\nEY Configuracién Planilla de Pago. es)\nwe i F activo\nDescripcién _ [BP - PLANLLADE PAGO OBREROS - SEMANAL —(b)\nProceso\nPe ke\npeste ® Socio de Negocio © Afilacién 7 Banco Pago\nBanco Cuenta del o Beneficiario\n© © Trabosledor (Gage Descuento Judicial\n© Empresa © Proyecto destino = Banco Cuenta del Trab. +\nProyecto destino\n22000007 | AFP HABITAT oe Ey\nTec oaumerto [izgPLARILLALEAAGG D1 PHIBOAAL G…"
+  - n: 4
+    id: "nominas.registrar-planilla-de-pago#4"
+    accion: "Registre el nombre de la planilla."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s030]
+    pagina: null
+  - n: 5
+    id: "nominas.registrar-planilla-de-pago#5"
+    accion: "En **Pagar a la orden de**, seleccione el tipo de socio de negocio y use el botón para elegir al socio de negocio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s030, img-94c97f8f6761-0000, img-23b94549be6d-0000]
+    pagina: null
+  - n: 6
+    id: "nominas.registrar-planilla-de-pago#6"
+    accion: "Use el botón para elegir el **Tipo Documento**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s030, img-3dff17dadd32-0000]
+    pagina: null
+  - n: 7
+    id: "nominas.registrar-planilla-de-pago#7"
+    accion: "Use el botón para elegir el **Recurso**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s030]
+    pagina: null
+  - n: 8
+    id: "nominas.registrar-planilla-de-pago#8"
+    accion: "Use el botón para elegir el **Concepto**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s030, img-3dff17dadd32-0000]
+    pagina: null
+  - n: 9
+    id: "nominas.registrar-planilla-de-pago#9"
+    accion: "Seleccione el desdoble mensual si quiere desdoblar la información de la planilla de pago en dos periodos diferentes; se usa para las semanas partidas en la nómina de obreros civiles."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s030, img-3dff17dadd32-0000]
+    pagina: null
+  - n: 10
+    id: "nominas.registrar-planilla-de-pago#10"
+    accion: "Seleccione la opción de valores negativos si la planilla de pago debe considerarlos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s030]
+    pagina: null
+  - n: 11
+    id: "nominas.registrar-planilla-de-pago#11"
+    accion: "Use el botón que graba el contenido de la ventana."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s030]
+    pagina: null
+verificacion: []
+errores_frecuentes: []
+relacionados: [nominas.calcular-la-nomina, nominas.registrar-trabajador-como-socio-de-negocio]
+fuentes:
+  - {id: img-124c74989d59-0000, manual: "Manual de Nóminas", seccion: "124c74989d59.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s030, manual: "Manual de Nóminas", seccion: "4.7 Planillas de Pago", pagina: null}
+  - {id: img-94c97f8f6761-0000, manual: "Manual de Nóminas", seccion: "94c97f8f6761.png", pagina: null}
+  - {id: img-23b94549be6d-0000, manual: "Manual de Nóminas", seccion: "23b94549be6d.png", pagina: null}
+  - {id: img-3dff17dadd32-0000, manual: "Manual de Nóminas", seccion: "3dff17dadd32.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

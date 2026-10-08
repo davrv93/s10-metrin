@@ -1,0 +1,190 @@
+id: facturacion.pagar-entrega-a-rendir
+version: 1
+modulo: facturacion
+titulo: "Pagar el comprobante de entrega a rendir"
+objetivo: "Pagar desde el módulo Administrativo el documento ENTREGAS A RENDIR creado en Facturación: registrar la orden de pago con ese documento, enviarla a aprobación, aprobarla y pagarla desde Pendientes de Pago, para luego iniciar la liquidación."
+nivel: intermedio
+preguntas:
+  - "pago de entregas a rendir paso a paso"
+  - "ya registre la entrega a rendir en facturacion, ahora como le hago el pago al trabajador"
+  - "que orden de pago uso para pagarle la entrega a rendir al personal"
+  - "no me aparece la entrega a rendir en el cronograma de pagos de la orden de pago"
+  - "donde se paga el documento entregas a rendir, en administrativo?"
+  - "como desembolso el dinero de la entrega a rrendir con cheque"
+  - "quien aprueba la OP de la entrega a rendir"
+  - "pague la entrega a rendir y no se donde ver el pago"
+aliases:
+  - "pagar entrega a rendir"
+  - "pago de entrega a rendir"
+  - "orden de pago de entrega a rendir"
+  - "desembolso de entrega a rendir"
+entidades:
+  modulo: "Facturación"
+  pantallas: ["Orden de Pago", "Cronograma de Pagos", "Pendientes de Pago", "Pagos"]
+  objetos: ["entrega a rendir", "orden de pago", "cuenta bancaria", "cheque", "aprobador"]
+prerrequisitos:
+  - texto: "El documento ENTREGAS A RENDIR debe estar creado desde el módulo de Facturación: se paga después de tener el documento."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047]
+  - texto: "El usuario que aprueba la orden de pago debe ser aprobador, con sus permisos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047]
+pasos:
+  - n: 1
+    id: "facturacion.pagar-entrega-a-rendir#1"
+    accion: "Ingrese al módulo Administrativo, grupo **Pagos**, escenario **Orden de Pago**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047]
+    pagina: null
+    fotos:
+      - id: "95d4c39409af"
+        ruta_o_url: "imagenes/manual-de-facturacion/f29303c4ece0.png"
+        pagina: null
+        caption: "Luego de tener el documento se procederá al pago del documento ENTREGA A RENDIR, en el módulo Administrativo, grupo Pagos, escenario Orden de Pago."
+        ocr: "Archivo Ver Catilogos Herramientas 2\n6hEReae n —\nRT pf SCENArIO donde se le realizara el\n© ig) Terns p i\n| lOrdenes de Pag 0 ago del documento Entrega a Rendir\nmI\n(bwreye. gaa 4\nEstado =\nOrdenes de Pago\nee ec\nta |_| afottes: 201910 ctutre 2013\nPendens de Pago |]} |) afostes: 201311 -Novienbre 2013\n> ee\nPages\np)\nEnis Custos\nhe as u\n— ||\njanf | iAvAYN. @uad\na"
+  - n: 2
+    id: "facturacion.pagar-entrega-a-rendir#2"
+    accion: "Haga clic derecho sobre el escenario Orden de Pago, elija **Adicionar** e indique en la ventana la cuenta bancaria con la que realizará el desembolso y la descripción de la orden de pago."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047]
+    pagina: null
+    fotos:
+      - id: "8713a4bb2cac"
+        ruta_o_url: "imagenes/manual-de-facturacion/1e939747fa34.png"
+        pagina: null
+        caption: "Clic derecho Adicionar sobre el escenario Orden de Pago y aparecerá una venta donde indicaremos los datos de la cuenta Bancaria con la que realizaremos el desembolso, descripción de la orden de pago, y adjuntaremos el documento entrega a rendir creado anteriormente desde el módulo de facturación."
+        ocr: "‘@ $10 Administrativo: 00002490 - MI CASITA S.A. - Principal -|a| x\nArchivo Ver Catélogos Herramientas 2\n6hEBeaa\n5g) Tema us)\nr S e\n|e Ordenes de Pago rama 0012490 ami castTA S.A. N? Orden de Pago\n5 00083\nwr ny om) Gee\n[wows] iow] bak imieeeEsieis9 f Sato [Eleccion de Cuenta bancaria\nCordenes de Pago = : para el desembolso.\n|_[Wrordende.._ [beset fesmtocr.. [onsevecines\na nuevos soLes Sato Acti 17…"
+  - n: 3
+    id: "facturacion.pagar-entrega-a-rendir#3"
+    accion: "En el detalle de la orden de pago, use la opción **Agregar Documento**."
+    resultado: "Aparece la ventana **CRONOGRAMA DE PAGOS**, donde debe aparecer el documento Entrega a Rendir creado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047]
+    pagina: null
+    fotos:
+      - id: "b4987ea0a342"
+        ruta_o_url: "imagenes/manual-de-facturacion/ae3c7dc68326.png"
+        pagina: null
+        caption: "En el detalle de la orden de pago al utilizar la opción de Agregar Documento aparecerá una ventana CRONOGRAMA DE PAGOS, donde debe aparecer el documento creado Entrega a Rendir."
+        ocr: "B $10 Administrative: 00002490 - MI CASITA S.A. - Principal -|q| x\nArchive Ver Catélogos Herramientas 2\n6hagae\nPB nn \"I Orden de Pago [-[5] x |\n[Pavesi Ordenes de Pago |iaamm 00002490 MI CASITA S.A, N? Orden de Pago\nEs ‘000083\nPEAR = AY Bl o's) sucusa Prineipal\n[esteco = | ‘Cuenta Bancaria |191-1765223-0-34 |BCP 191-1765223-0-34 (S/.) ~ Cy\nOrdenes de Pago\n| [onten —\nw | -\n| |B aon aie\nPendientes d…"
+  - n: 4
+    id: "facturacion.pagar-entrega-a-rendir#4"
+    accion: "Para seleccionar el documento, haga doble clic en su línea y luego use el icono de parrilla."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047]
+    pagina: null
+    fotos:
+      - id: "6d0878f4d332"
+        ruta_o_url: "imagenes/manual-de-facturacion/317120ee793e.png"
+        pagina: null
+        caption: "Para seleccionar el documento Doble clic en la línea del documento y luego utilizar el icono de parrilla."
+        ocr: "ti 510 Administrativo: 00002490 - MI CASITA S.A. - Principal =|a) x\nArchivo Ver Catélogos Herramientas ?\n4heRaB\n48) ian wl Orden de Pago [-[5| x |\n(Poges | [Ordene de Pago Empresa 00002490 Mi CASITA S.A.  N2.Orden de Pago\nA ‘000093\n(Bs BYR | swusa Principal\nPagar con 1 Pap Beco estat\nCuenta Bancaria —191-1785223-0-34 [BCP 191-1785223-0-34 (S),) =| dy\nOrdenes de Pago fa _|\n| [orn Para Agregar el do…"
+  - n: 5
+    id: "facturacion.pagar-entrega-a-rendir#5"
+    accion: "Con el documento agregado a la orden de pago, guarde la orden de pago."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047]
+    pagina: null
+    fotos:
+      - id: "ecbf8818467b"
+        ruta_o_url: "imagenes/manual-de-facturacion/92de284a9081.png"
+        pagina: null
+        caption: "Al ser agregado el documento a la orden de pago, procederemos a guardar la orden de pago para que se envié a Aprobación."
+        ocr: "‘@ 510 Administrativo: 00002490 - MI CASITA S.A. - Principal -|9| x\nArchivo Ver Catélogos Herramientas 2\n65888 5\nREINO denes de PE .\nlenes de P| Ba 0002490 M4 CASITA S.A, j-N*Orden de Pago ——\nPages cl\nTEs py] ss nce\nin | eee ee Tego Becca cD\nfeel Cusraencaia  feiTaszaa38 BOPTOLITEIOMS) =)\nrns de agp\n[ironies evans ener CED eum Om pee\naS | co Feb veciete Faas o]\nPendetesdetan ||| aloes 2051- a\nperm…"
+  - n: 6
+    id: "facturacion.pagar-entrega-a-rendir#6"
+    accion: "Use **ENVIAR A APROBACION** sobre la orden de pago grabada."
+    resultado: "A los aprobadores del módulo administrativo les llega un correo electrónico para que ingresen al S10 a aprobar la OP."
+    fuente: [img-1112d19b2827-0000, web-https-documentacion-s10peru-com-manual-d-s047]
+    pagina: null
+    fotos:
+      - id: "da88d157c1d9"
+        ruta_o_url: "imagenes/manual-de-facturacion/1112d19b2827.png"
+        pagina: null
+        ocr: "Archivo Ver Catélogos Herramientas 2\n6hakes\niB) Tema =\n— Ordenes de Pago\nEt (Bw: 2#Ye iene\nOrdenes de Pago\n[ frosseer. omen (Pwo [ome mh [noc rio [fee [EGOS\ncl |_| Afosmes: 201310 -octute 2013\nPendintes de Pago ||} |) aro-Mes: 201311 - Noviembre 2013\n|__| Gl afoanes: 201312 Diciembre 2013\n] || Beste: aprobeco\n[| lestedo: Por arotar\nras |i | ereeregrer\né TY Bcomr\n| Modifcar [Al guardarse la Orden d…"
+  - n: 7
+    id: "facturacion.pagar-entrega-a-rendir#7"
+    accion: "Realice la confirmación del envío de la OP."
+    resultado: "El estado de la orden cambia a **POR APROBAR**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047]
+    pagina: null
+    fotos:
+      - id: "49d10641569e"
+        ruta_o_url: "imagenes/manual-de-facturacion/47300b8fdcf4.png"
+        pagina: null
+        caption: "Realizar la Confirmación del envío de la OP."
+        ocr: "a $10 Administrativo: 00002490 - MI CASITA S.A. - Principal =i el Ex\nArchivo Yer Catilogos Herramientas 7\n6RERB\n= Ordenes de Pago\nIwi FYE. @aaid\nEf\ndene Pa\n| [Provgendep..[osseeén [Paprcen Jwrcarta [wines [Teac cam..[Merott [Festa er. [estan [obseracones\n4 |] atoms: 201510- cue 2013,\nPendentes dePago |] | @ Afo-Mes: 201311 -Novintve 2013,\n|_| B afomes: 201312. Dicemtre 2013\nBL cee scan\n|_| Besta:…"
+      - id: "ce932bb0825b"
+        ruta_o_url: "imagenes/manual-de-facturacion/0385b81d4506.png"
+        pagina: null
+        caption: "Al realizar la confirmación de la OP el estado de la orden cambiará a POR APROBAR donde el usuario que sea aprobador deberá de ingresar a aprobar para culminar con el proceso del pago de la Entrega a Rendir."
+        ocr: "Archivo Ver Catélogos Herramientas 2\nSh5ReaB\nfg) Tem =\nOrdenes de Pago\n(BM AYe widuad\nOrdenes de Pago\n| rower. [osonein [erences (trevor. [ron\ny |_| afo-mes: 201910 - octubre 2013,\nPendientes dePago |}| | @ afio-Mes: 201911 - Noviembre 2013\n| | Gl afomes: 201912 Diciembre 2013\n] [| lest: Apecbada\n|_| | Gl stad: Por eoraber\nPagos || 000085 T_Trenst cas rorias Cueria Bencaria _cort-ost0-0r00114483 S…"
+  - n: 8
+    id: "facturacion.pagar-entrega-a-rendir#8"
+    accion: "Con el usuario aprobador, haga clic derecho sobre la orden de pago y elija la opción **APROBAR**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047]
+    pagina: null
+    fotos:
+      - id: "dede03a1bc35"
+        ruta_o_url: "imagenes/manual-de-facturacion/47feae1e0126.png"
+        pagina: null
+        caption: "En este caso el Usuario CONSULTOR1 es aprobador previos permisos, clic derecho opción APROBAR."
+        ocr: "Archivo Ver Catélogos Herramientas ?\n6ReEke\nEg) Tema =\na Ordenes de Pago\nBw: Ae. gaa 6\nOrdenes de Pago\n[ roaneer— [owes rom [om —————‘sin.tn rns mano [owe\n= |_| Afo-Nes: 201310. octubre 2013\nPendintes de Pago I] | @ afo-Mes: 201311 - Noviembre 2013\n|_| afostes: 201312- Diciembre 2013\nBL ae coe:\n|] Glestac: Por aprobar\nvans ||) os Tans clas pois cuts Benen con oto.1cON43 SL 280261000 oar2n013\neran…"
+  - n: 9
+    id: "facturacion.pagar-entrega-a-rendir#9"
+    accion: "Diríjase al escenario **PENDIENTES DE PAGO** para efectuar el pago."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047]
+    pagina: null
+    fotos:
+      - id: "be664b599c23"
+        ruta_o_url: "imagenes/manual-de-facturacion/d98a9a8689ab.png"
+        pagina: null
+        caption: "Luego de realizar la aprobación de la OP nos dirigimos al escenario PENDIENTES DE PAGO, para efectuar el pago e iniciar con el registro de la Liquidación."
+        ocr: "F Archivo Ver Catélogos Herramientas 2\n465880\na |Pendientes de Pago\na\n |eovege vaeua\nROME re) caste hacia aqui el encabezado dels columns que desea aorupar\n1/4 Campo|N® Orden de Pago ~|[En cualaierposiien |) Grupo:\nWy N? Orden de Pag:|Descripcin Orden de Pago IN? Cuenta Socio de Negocio Tipo Documentc|N* Documento |Fecha Documer| Moneda Total Total pago _|Observaciones Medio De Pag\n‘00083 191-1785…"
+  - n: 10
+    id: "facturacion.pagar-entrega-a-rendir#10"
+    accion: "Haga clic derecho en la línea de la OP, que reconoce por la descripción y el socio de negocio a quien se le realizará el pago, y use la opción de pagar **Documento Actual**."
+    resultado: "Emerge una ventana de **Pago** donde se visualiza el documento ENTREGAS A RENDIR, listo para ser pagado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s047, web-https-documentacion-s10peru-com-manual-d-s048]
+    pagina: null
+    fotos:
+      - id: "d28ed53eb254"
+        ruta_o_url: "imagenes/manual-de-facturacion/570cfb474538.png"
+        pagina: null
+        caption: "Clic derecho en la línea de la OP, en este caso lo reconocemos por la descripción y el socio negocio a quien se le realizará el pago."
+        ocr: "© Archivo Yer Catilogas Herramientas 2\n6R5RBa\n5 2) Tema Fa ;\n‘fe Pendientes de Pago\nPagar con |Cuenta Bancaria *\n& HAY ERS vadeue\nCRT m| Arsstr hace aqu el encebezado del colunna que desea anruner.\n1 Campo Orden de Pago ~ fn usher postin (IL crue:\nIN® Orden de Peqy|Descrincién Orden de Paco N* Cuenta [Socio de Negocio. Tipo Documente|N* Documento [Fecha Documer| Moneda Total Total pago | Observaci…"
+      - id: "319ae7f2ee0d"
+        ruta_o_url: "imagenes/manual-de-facturacion/7772c486fabe.png"
+        pagina: null
+        caption: "Al utilizar la opción de pagar Documento Actual emergerá una ventana de Pago donde se visualizará el documento ENTREGAS A RENDIR, listo para ser pagado."
+        ocr: "a ‘S10 Administrativo: 00002490 - MI CASITA S.A. - Principal =10| x\nAco Yer Ctlges Heres 2\n6hngee\nJ aime Pendientes de Piy=\nramos |\n~ ‘om encase —\n_— N' Pago\nBEARS vis Pees\novewe faa PROMS VERA st Ey\nLORIE) rich onsets\n18 Caplio de\nfos cescsin  OREGRARGGR. VEROWACOS “(0 fNTREGAAROUR. VES Chene\nfenders dere [ower?——_BRGONED 7 1200 fio MENTE CREE rt\nJamies scone fi [odsion edamacaeai 200 foo DANTE C…"
+  - n: 11
+    id: "facturacion.pagar-entrega-a-rendir#11"
+    accion: "Registre el pago; en el caso del manual, se realiza con un cheque."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s048]
+    pagina: null
+    fotos:
+      - id: "b205cd66344b"
+        ruta_o_url: "imagenes/manual-de-facturacion/2a5f039902aa.png"
+        pagina: null
+        caption: "Pago – En este caso se realizará con un cheque."
+        ocr: "@ ‘S10 Administrativo; 00002490 - MI CASITA S.A. - Principal = (8) x\nArchivo Ver Catdlogos Herramientas 2\n6hERea\n5g) Tema beni i\nPendientes de Pipes Pago [-[=] x |\nnon] cewasa aH MCASTASA Anat?\n& Beams | Principal N* Pago\nproveeix onan PaRUSACaO, SSeS tn 00\nCOE rem frase hacia aqui el encabezs\nCues Benaria fgi-reszza0<% [BoP 16176522904 SI) =] A) Moneda NUEVOS SOLES\n18 Campo Orden de , ;\nFechat Fe…"
+  - n: 12
+    id: "facturacion.pagar-entrega-a-rendir#12"
+    accion: "Grabe el pago con la opción **ACEPTAR**."
+    resultado: "El pago realizado se muestra en el escenario de **PAGOS**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s048]
+    pagina: null
+    fotos:
+      - id: "0931f7766add"
+        ruta_o_url: "imagenes/manual-de-facturacion/5201cf98620e.png"
+        pagina: null
+        caption: "Al Grabar el PAGO utilizando la opción ACEPTAR, el pago realizado se mostrará en el escenario de PAGOS."
+        ocr: "Archivo Ver Catslogos Herramientas?\nBReaa\n| ig) Tema Pages\n[Todos Periods [201312 fpicembre 2013 | a4)\nMAY e*. gaa od\nOrdenes de Pago) arrastre hacia aqui el encabezado de la colunna que desea agrunar\nyi em cece lee lied\npendees der || [NCO MERUCOINL DAL FERD RIONSEE Fractracatee. [oon Tmeomniooe pnt bemem [as Teta pas man\n| sconaaankrewsaa rosin ———a enscmzirme [aa-Deseare [ana COUR USD - TANS AL…"
+verificacion:
+  - texto: "El pago realizado se muestra en el escenario de PAGOS."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s048]
+errores_frecuentes:
+  - sintoma: "Quiere hacer el desembolso en el módulo Administrativo sin un documento que lo sustente."
+    solucion: "En el S10 no se realiza ningún desembolso en el módulo Administrativo si no está previamente sustentado con un documento Interno o SUNAT: cree primero el documento ENTREGAS A RENDIR en Documentos por Pagar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s046]
+relacionados: [facturacion.registrar-entrega-a-rendir, facturacion.liquidar-entrega-a-rendir, administrativo.registrar-pago-con-cheque]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s047, manual: "Manual de Facturación", seccion: "6.4.2 Pago del Comprobante Entrega Rendir (1)", pagina: null}
+  - {id: img-1112d19b2827-0000, manual: "Manual de Facturación", seccion: "1112d19b2827.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s048, manual: "Manual de Facturación", seccion: "6.4.2 Pago del Comprobante Entrega Rendir (2)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s046, manual: "Manual de Facturación", seccion: "6.4.1 Registro del Comprobante Entrega a Rendir.", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

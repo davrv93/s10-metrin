@@ -1,0 +1,252 @@
+{"texto": "¿Cómo se habilita el tareo móvil en Nóminas para un tipo de nómina?", "procedimiento": "nominas.configurar-tareo-movil", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "oye como hago para que mis obreros se tareen desde el celular", "procedimiento": "nominas.configurar-tareo-movil", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como activo el tareo movl pa los obreros de contruccion civil", "procedimiento": "nominas.configurar-tareo-movil", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "tengo 80 obreros y 3 tareadores en obra, como le asigno a cada tareador su gente en s10", "procedimiento": "nominas.configurar-tareo-movil", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cuál es el procedimiento para asignar un tareador a un grupo de obreros desde la ficha personal?", "procedimiento": "nominas.configurar-tareo-movil", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como le pongo tareador a varios obreros de un solo golpe", "procedimiento": "nominas.configurar-tareo-movil", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "tareador a obreros", "procedimiento": "nominas.configurar-tareo-movil", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "¿Cómo registro al tareador para que pueda usar el APP Tareo Móvil S10?", "procedimiento": "nominas.configurar-tareo-movil", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el ingeniero quiere que el maestro de obra marque las horas desde su telefono, que configuro en nominas", "procedimiento": "nominas.configurar-tareo-movil", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como hago para que me aparezca el boton de publicar en la lista de partes de tareo", "procedimiento": "nominas.configurar-tareo-movil", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo selecciono un bloque de obreros y les asigno el tareador con clic derecho?", "procedimiento": "nominas.configurar-tareo-movil", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "komo asigno el tareador a los obreros q son activos", "procedimiento": "nominas.configurar-tareo-movil", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "pasos para dejar listo nominas con la app de tareo", "procedimiento": "nominas.configurar-tareo-movil", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo repito la asignación para los demás tareadores de la obra?", "procedimiento": "nominas.configurar-tareo-movil", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "quiero que al asignar tareador solo me salgan los obreros activos, como hago", "procedimiento": "nominas.configurar-tareo-movil", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "tareo movil config", "procedimiento": "nominas.configurar-tareo-movil", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "¿En qué escenario de Nóminas se marca la casilla de Tareo Móvil?", "procedimiento": "nominas.configurar-tareo-movil", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde esta la opcion tareo movil en nominas", "procedimiento": "nominas.configurar-tareo-movil", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "por donde se asigna el tareador a los obreros", "procedimiento": "nominas.configurar-tareo-movil", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué pantalla elijo al tareador del catálogo de socios de negocio?", "procedimiento": "nominas.configurar-tareo-movil", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde pongo el correo del tareador para la app", "procedimiento": "nominas.configurar-tareo-movil", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "datos generales tareo movil", "procedimiento": "nominas.configurar-tareo-movil", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "dnd se marca tareo mobil en datos generales", "procedimiento": "nominas.configurar-tareo-movil", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "¿Qué correo debo registrar en la ficha del tareador para que funcione la app?", "procedimiento": "nominas.configurar-tareo-movil", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "el correo del tareador tiene que ser el mismo que activaron en la app de tareo?", "procedimiento": "nominas.configurar-tareo-movil", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "el tareo movil se marca por cada tipo de nomina o en todas juntas", "procedimiento": "nominas.configurar-tareo-movil", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "tengo la nomina de obreros civiles y quiero que usen el app tareo, que dejo marcado", "procedimiento": "nominas.configurar-tareo-movil", "intencion": "CONFIGURATION", "estilo": "situacional"}
+{"texto": "al asignar tareador se muestra todo el personal disponible o solo los activos", "procedimiento": "nominas.configurar-tareo-movil", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q configuro en nominas pa usar el app tareo mobil", "procedimiento": "nominas.configurar-tareo-movil", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "el tareador no puede entrar al app tareo, que le pasa", "procedimiento": "nominas.configurar-tareo-movil", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me aparece la opcion de publicar en la lista de partes de tareo", "procedimiento": "nominas.configurar-tareo-movil", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "ya le asigne sus obreros al tareador pero en la app no le deja ingresar", "procedimiento": "nominas.configurar-tareo-movil", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "Registré el correo en la ficha del tareador y aun así la app no lo reconoce, ¿qué reviso?", "procedimiento": "nominas.configurar-tareo-movil", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "el tareador no pued usar la app de tareo ke hago", "procedimiento": "nominas.configurar-tareo-movil", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "no sale publicar tareo", "procedimiento": "nominas.configurar-tareo-movil", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "me falta marcar algo en nominas porque el parte de tareo no se puede publicar", "procedimiento": "nominas.configurar-tareo-movil", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "¿Cómo obtengo y exporto a Excel los datos del PLAME de un periodo?", "procedimiento": "nominas.exportar-datos-del-plame", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como saco el plame del mes para declararlo en sunat", "procedimiento": "nominas.exportar-datos-del-plame", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "me toca presentar la planilla mensual de pagos a sunat, como bajo los datos desde el s10", "procedimiento": "nominas.exportar-datos-del-plame", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo exporto la estructura 14 de datos de la jornada laboral del PLAME?", "procedimiento": "nominas.exportar-datos-del-plame", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "necesito el archivo de los dias subsidiados y no laborados para el plame, donde lo saco", "procedimiento": "nominas.exportar-datos-del-plame", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como exporto el plame a exel", "procedimiento": "nominas.exportar-datos-del-plame", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "¿Cómo elaboro la declaración jurada en el programa PLAME con los datos que salen de Nóminas?", "procedimiento": "nominas.exportar-datos-del-plame", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como envio el plame por sol despues de sacar los datos del s10", "procedimiento": "nominas.exportar-datos-del-plame", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "sacar plame mensual", "procedimiento": "nominas.exportar-datos-del-plame", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "quiero ver el plame de varios meses juntos, como pongo el rango de fechas", "procedimiento": "nominas.exportar-datos-del-plame", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "nesesito el formato 18 del plame, ingresos tributos y descuentos x trabajador", "procedimiento": "nominas.exportar-datos-del-plame", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "komo saco el plame detallado de un mes", "procedimiento": "nominas.exportar-datos-del-plame", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "paso a paso para jalar la planilla mensual de pagos y pasarla a excel", "procedimiento": "nominas.exportar-datos-del-plame", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ya cerramos la nomina de agosto y contabilidad pide los datos del plame, que hago en s10", "procedimiento": "nominas.exportar-datos-del-plame", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como obtengo el plame en modo resumido", "procedimiento": "nominas.exportar-datos-del-plame", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo obtengo las estructuras 20, 21 o 26 del PLAME?", "procedimiento": "nominas.exportar-datos-del-plame", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "¿En qué escenario de Nóminas se obtiene el PLAME?", "procedimiento": "nominas.exportar-datos-del-plame", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde elijo planilla mensual plame en el campo estructura", "procedimiento": "nominas.exportar-datos-del-plame", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que menu esta la planilla electronica para sacar el plame", "procedimiento": "nominas.exportar-datos-del-plame", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde se descarga el programa plame para hacer la declaracion jurada", "procedimiento": "nominas.exportar-datos-del-plame", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde queda guardado el excel del plame que exporte", "procedimiento": "nominas.exportar-datos-del-plame", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "plame donde", "procedimiento": "nominas.exportar-datos-del-plame", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "dnd esta la planila electronica del plame", "procedimiento": "nominas.exportar-datos-del-plame", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "¿Qué estructura del PLAME debo escoger para sacar las horas de la jornada laboral?", "procedimiento": "nominas.exportar-datos-del-plame", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "como dejo la pantalla para sacar el plame de un solo periodo o por rango", "procedimiento": "nominas.exportar-datos-del-plame", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "para el plame conviene modo resumido o detallado", "procedimiento": "nominas.exportar-datos-del-plame", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que version del programa plame es la vigente", "procedimiento": "nominas.exportar-datos-del-plame", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que permisos necesita mi usuario para entrar a planilla electronica y sacar el plame", "procedimiento": "nominas.exportar-datos-del-plame", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "necesito tener hecho el t-registro antes de sacar el plame?", "procedimiento": "nominas.exportar-datos-del-plame", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "no me deja elegir un rango de fechas en el plame, solo un periodo", "procedimiento": "nominas.exportar-datos-del-plame", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no puedo entrar a planilla electronica para el plame, no tengo acceso", "procedimiento": "nominas.exportar-datos-del-plame", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "Elegí la estructura y el periodo del PLAME pero el escenario no se llena, ¿qué me falta?", "procedimiento": "nominas.exportar-datos-del-plame", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "exporte el plame a excel y ahora no encuentro donde quedo el archivo", "procedimiento": "nominas.exportar-datos-del-plame", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "el plame no me sale si no esta el t registro, que hago", "procedimiento": "nominas.exportar-datos-del-plame", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no m sale el plame en el escenario de planilla electronica", "procedimiento": "nominas.exportar-datos-del-plame", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "plame no carga", "procedimiento": "nominas.exportar-datos-del-plame", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "¿Cómo obtengo y exporto a Excel los datos del T-Registro de un periodo?", "procedimiento": "nominas.exportar-datos-del-t-registro", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como saco la info de mis trabajadores para el t-registro de sunat", "procedimiento": "nominas.exportar-datos-del-t-registro", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ingresaron 5 obreros este mes y toca actualizar el t-registro, como jalo sus datos desde nominas", "procedimiento": "nominas.exportar-datos-del-t-registro", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como exporto la estructura 5 del t registro, datos del trabajador", "procedimiento": "nominas.exportar-datos-del-t-registro", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "necesito la estructura 6 del tregistro para los pensionistas", "procedimiento": "nominas.exportar-datos-del-t-registro", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como exporto el t registro a exel", "procedimiento": "nominas.exportar-datos-del-t-registro", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "sacar tregistro", "procedimiento": "nominas.exportar-datos-del-t-registro", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "¿Cómo obtengo los establecimientos propios del empleador para el T-Registro?", "procedimiento": "nominas.exportar-datos-del-t-registro", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "quiero el formato 9 del t-registro, el de personal en formacion", "procedimiento": "nominas.exportar-datos-del-t-registro", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo saco el tregistro detallado ke pide sunat", "procedimiento": "nominas.exportar-datos-del-t-registro", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como saco el t-registro de un rango de meses", "procedimiento": "nominas.exportar-datos-del-t-registro", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo cargo en el escenario los datos del T-Registro y luego los exporto?", "procedimiento": "nominas.exportar-datos-del-t-registro", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como bajo el registro de informacion laboral de la empresa a excel", "procedimiento": "nominas.exportar-datos-del-t-registro", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "contabilidad me pide el registro de informacion laboral de los trabajadores, como lo saco en s10", "procedimiento": "nominas.exportar-datos-del-t-registro", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "pasos para jalar el t registro en modo resumido", "procedimiento": "nominas.exportar-datos-del-t-registro", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como saco del t-registro los empleadores que me destacan personal, estructura 3", "procedimiento": "nominas.exportar-datos-del-t-registro", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "en que parte de nominas entro para trabajar el t-registro", "procedimiento": "nominas.exportar-datos-del-t-registro", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde elijo t-registro en el campo estructura", "procedimiento": "nominas.exportar-datos-del-t-registro", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde se guarda el excel del t-registro despues de exportar", "procedimiento": "nominas.exportar-datos-del-t-registro", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde esta el boton para cargar los datos del t registro", "procedimiento": "nominas.exportar-datos-del-t-registro", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "t-registro nominas", "procedimiento": "nominas.exportar-datos-del-t-registro", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "dnd saco el t registro en s10", "procedimiento": "nominas.exportar-datos-del-t-registro", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "donde cambio de resumido a detallado en el t-registro", "procedimiento": "nominas.exportar-datos-del-t-registro", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Qué usuario puede acceder al T-Registro? ¿Necesita estar registrado en Facturación?", "procedimiento": "nominas.exportar-datos-del-t-registro", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "como dejo la pantalla para elegir un rango de fechas en el t-registro", "procedimiento": "nominas.exportar-datos-del-t-registro", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que formato del t-registro corresponde a los datos personales del trabajador", "procedimiento": "nominas.exportar-datos-del-t-registro", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "el modo resumido o detallado del t-registro, cual dejo", "procedimiento": "nominas.exportar-datos-del-t-registro", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que permisos tiene que tener mi usuario para ver la planilla electronica del t registro", "procedimiento": "nominas.exportar-datos-del-t-registro", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q configuro pa exportar el tregistro por periodo", "procedimiento": "nominas.exportar-datos-del-t-registro", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "no me deja entrar a planilla electronica para el t-registro, sin permiso", "procedimiento": "nominas.exportar-datos-del-t-registro", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "elegi t-registro y no carga ningun dato", "procedimiento": "nominas.exportar-datos-del-t-registro", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me deja elegir rango de fechas en el t-registro", "procedimiento": "nominas.exportar-datos-del-t-registro", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "exporte el t-registro y no se donde quedo el excel", "procedimiento": "nominas.exportar-datos-del-t-registro", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "salen vacios los datos del t-registro del periodo, que me falta elegir", "procedimiento": "nominas.exportar-datos-del-t-registro", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "t-registro no carga", "procedimiento": "nominas.exportar-datos-del-t-registro", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "el tregistro no m exporta a exel", "procedimiento": "nominas.exportar-datos-del-t-registro", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "¿Cómo genero el archivo de la planilla AFP para subirlo a AFP Net?", "procedimiento": "nominas.generar-archivo-afp-net", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como saco el txt para declarar en afpnet", "procedimiento": "nominas.generar-archivo-afp-net", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ya calcule las nominas de la semana y ahora toca pagar a las afp, como armo el archivo", "procedimiento": "nominas.generar-archivo-afp-net", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo exporto la planilla AFP en formato Excel en vez de txt?", "procedimiento": "nominas.generar-archivo-afp-net", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "txt afp", "procedimiento": "nominas.generar-archivo-afp-net", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como genero el arhivo pa la afp net", "procedimiento": "nominas.generar-archivo-afp-net", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "¿Cómo envío la información de los aportes a las AFP desde Nóminas?", "procedimiento": "nominas.generar-archivo-afp-net", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como se sube lo que saco de s10 a la pagina de afpnet", "procedimiento": "nominas.generar-archivo-afp-net", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "quiero ver la lista de trabajadores con su afp para chequear por dni antes de declarar", "procedimiento": "nominas.generar-archivo-afp-net", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "los aportes a la afp de mis obreros los declaro cada mes, como saco la planilla de aportes", "procedimiento": "nominas.generar-archivo-afp-net", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo muestro la información de la planilla AFP resumida antes de exportarla?", "procedimiento": "nominas.generar-archivo-afp-net", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "komo exporto la plantilla afp a txt", "procedimiento": "nominas.generar-archivo-afp-net", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como valido a que afp pertenece cada obrero", "procedimiento": "nominas.generar-archivo-afp-net", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Qué debo hacer en AFP Net una vez calculadas las nóminas?", "procedimiento": "nominas.generar-archivo-afp-net", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "paso a paso para la declaracion afp con s10", "procedimiento": "nominas.generar-archivo-afp-net", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como saco la remuneracion asegurable de los trabajadores para la afp", "procedimiento": "nominas.generar-archivo-afp-net", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿En qué escenario de Nóminas se genera la planilla AFP?", "procedimiento": "nominas.generar-archivo-afp-net", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde esta el escenario afp net", "procedimiento": "nominas.generar-archivo-afp-net", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde veo el menu trabajadores afiliados", "procedimiento": "nominas.generar-archivo-afp-net", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde elijo la estructura planilla afp", "procedimiento": "nominas.generar-archivo-afp-net", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "a que pagina web se manda el txt de la afp", "procedimiento": "nominas.generar-archivo-afp-net", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "afp net donde", "procedimiento": "nominas.generar-archivo-afp-net", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "dnd esta el afpnet en nominas", "procedimiento": "nominas.generar-archivo-afp-net", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "¿Qué concepto debe ir como remuneración asegurable para la declaración AFP?", "procedimiento": "nominas.generar-archivo-afp-net", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "como elijo el periodo de declaracion en afp net", "procedimiento": "nominas.generar-archivo-afp-net", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que mes selecciono en periodo de declaracion si pague la afp la semana pasada", "procedimiento": "nominas.generar-archivo-afp-net", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "conviene txt o excel para afp net", "procedimiento": "nominas.generar-archivo-afp-net", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que tipo de nomina se configura para la planilla afp", "procedimiento": "nominas.generar-archivo-afp-net", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q concepto configuro pa la remuneracion aseguravle de la afp", "procedimiento": "nominas.generar-archivo-afp-net", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "los datos de la ventana de afp net cambiaron despues de ajustar la nomina, por que", "procedimiento": "nominas.generar-archivo-afp-net", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "hice un ajuste de ultima hora y la planilla afp sale distinta", "procedimiento": "nominas.generar-archivo-afp-net", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no me sale informacion en la planilla afp, ya calcule la nomina?", "procedimiento": "nominas.generar-archivo-afp-net", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no puedo exportar el txt de afp net", "procedimiento": "nominas.generar-archivo-afp-net", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "afp net no muestra trabajadores, que me falta", "procedimiento": "nominas.generar-archivo-afp-net", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "afp net vacio", "procedimiento": "nominas.generar-archivo-afp-net", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "la planila afp no m sale nada ke pasa", "procedimiento": "nominas.generar-archivo-afp-net", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "¿Cómo registro un nuevo tipo de planilla de pago para la empresa?", "procedimiento": "nominas.registrar-planilla-de-pago", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como creo una planilla de pago para pagar al sindicato", "procedimiento": "nominas.registrar-planilla-de-pago", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "tenemos obreros de construccion civil y quiero crear la planilla donde se paga a la afp, como la registro", "procedimiento": "nominas.registrar-planilla-de-pago", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo indico a qué socio de negocio se paga una planilla de pago?", "procedimiento": "nominas.registrar-planilla-de-pago", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como pongo el recurso y el concepto en la planilla de pago", "procedimiento": "nominas.registrar-planilla-de-pago", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "crear planilla de pago", "procedimiento": "nominas.registrar-planilla-de-pago", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como registro una planila de pago pa essalud", "procedimiento": "nominas.registrar-planilla-de-pago", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "¿Cómo activo una planilla de pago para que se pueda usar?", "procedimiento": "nominas.registrar-planilla-de-pago", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como le pongo nombre a la planilla de pago nueva", "procedimiento": "nominas.registrar-planilla-de-pago", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como grabo la planilla de pago despues de llenar sus datos", "procedimiento": "nominas.registrar-planilla-de-pago", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "mi nomina de obreros civiles tiene semanas que caen entre dos meses, como configuro la planilla de pago para eso", "procedimiento": "nominas.registrar-planilla-de-pago", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo configuro una planilla de pago para que acepte valores negativos?", "procedimiento": "nominas.registrar-planilla-de-pago", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "paso a paso para dar de alta una planilla de pago por tipo de nomina", "procedimiento": "nominas.registrar-planilla-de-pago", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo pongo a quien se paga en la planilla de pago", "procedimiento": "nominas.registrar-planilla-de-pago", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "¿Cómo selecciono el tipo de documento en la configuración de la planilla de pago?", "procedimiento": "nominas.registrar-planilla-de-pago", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "quiero que la planilla de pago de los obreros se desdoble por mes, como lo hago", "procedimiento": "nominas.registrar-planilla-de-pago", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿En qué escenario se registran las planillas de pago?", "procedimiento": "nominas.registrar-planilla-de-pago", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde esta planillas de pago en nominas", "procedimiento": "nominas.registrar-planilla-de-pago", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde veo la configuracion de planilla de pago de un tipo de nomina", "procedimiento": "nominas.registrar-planilla-de-pago", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde se elige pagar a la orden de en la planilla de pago", "procedimiento": "nominas.registrar-planilla-de-pago", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "como abro el registro de una planilla de pago que ya cree", "procedimiento": "nominas.registrar-planilla-de-pago", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "planillas de pago pantalla", "procedimiento": "nominas.registrar-planilla-de-pago", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "dnd configuro las planilas de pago", "procedimiento": "nominas.registrar-planilla-de-pago", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "¿Cuándo debo marcar el desdoble mensual en una planilla de pago de obreros civiles?", "procedimiento": "nominas.registrar-planilla-de-pago", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que tipo de socio de negocio pongo en pagar a la orden de para la planilla de la afp", "procedimiento": "nominas.registrar-planilla-de-pago", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "cuando se marca la opcion de valores negativos en la planilla de pago", "procedimiento": "nominas.registrar-planilla-de-pago", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "donde defino el recurso asociado a una planilla de pago", "procedimiento": "nominas.registrar-planilla-de-pago", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como dejo inactiva una planilla de pago que ya no uso", "procedimiento": "nominas.registrar-planilla-de-pago", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q opciones tiene la configuracion de planila de pago", "procedimiento": "nominas.registrar-planilla-de-pago", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "no puedo usar la planilla de pago que cree, no sale disponible", "procedimiento": "nominas.registrar-planilla-de-pago", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "mi planilla de pago no aparece para usarla, que marco", "procedimiento": "nominas.registrar-planilla-de-pago", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "la planilla de pago no me deja valores negativos", "procedimiento": "nominas.registrar-planilla-de-pago", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "las semanas partidas de mis obreros no se separan por mes en la planilla de pago", "procedimiento": "nominas.registrar-planilla-de-pago", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "entro a planillas de pago y la lista sale vacia, que me falta elegir", "procedimiento": "nominas.registrar-planilla-de-pago", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "planilla de pago inactiva", "procedimiento": "nominas.registrar-planilla-de-pago", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "no se pa donde le pago en la planila de pago, no sale el socio", "procedimiento": "nominas.registrar-planilla-de-pago", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "¿Cómo registro el tareo semanal de un trabajador en varios proyectos desde el MULTIPROYECTO?", "procedimiento": "nominas.registrar-tareo-multiproyecto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "mis operarios rotan entre dos obras en la semana, como les reparto las horas por proyecto en el tareo multiproyecto", "procedimiento": "nominas.registrar-tareo-multiproyecto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como mando el tareo multiproyecto a aprobacion", "procedimiento": "nominas.registrar-tareo-multiproyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo apruebo el tareo multiproyecto desde Gerencia de Proyectos?", "procedimiento": "nominas.registrar-tareo-multiproyecto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como importo de vuelta al s10 el excel del parte multiproyecto", "procedimiento": "nominas.registrar-tareo-multiproyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo exporto el parte multiproyecto a exel", "procedimiento": "nominas.registrar-tareo-multiproyecto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "tareo multiproy semana", "procedimiento": "nominas.registrar-tareo-multiproyecto", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como elijo el proyecto y la partida de control en la hoja excel del parte multiproyecto", "procedimiento": "nominas.registrar-tareo-multiproyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo genero un parte personal para un trabajador en el tareo multiproyecto?", "procedimiento": "nominas.registrar-tareo-multiproyecto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como pongo las horas de cada obrero por proyecto y partida de control en el multiproyecto", "procedimiento": "nominas.registrar-tareo-multiproyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el residente quiere revisar el tareo multiproyecto de la semana para aprobarlo, por donde lo ve y como lo aprueba", "procedimiento": "nominas.registrar-tareo-multiproyecto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como apruebo el tareo multiproyecto q esta por aprobar", "procedimiento": "nominas.registrar-tareo-multiproyecto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "¿Cómo elijo al tareador al crear el parte grupal del multiproyecto?", "procedimiento": "nominas.registrar-tareo-multiproyecto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como veo el detalle de la semana por aprobar antes de aprobar el tareo", "procedimiento": "nominas.registrar-tareo-multiproyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "quiero llenar el tareo multiproyecto de la semana con ayuda de excel, que hago", "procedimiento": "nominas.registrar-tareo-multiproyecto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo confirmo el envío del tareo multiproyecto de la semana a aprobación?", "procedimiento": "nominas.registrar-tareo-multiproyecto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "¿En qué escenario se registra el Tareo Multiproyecto?", "procedimiento": "nominas.registrar-tareo-multiproyecto", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde esta tareo multiproyecto en nominas", "procedimiento": "nominas.registrar-tareo-multiproyecto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde apruebo el tareo en gerencia de proyectos, en que escenario", "procedimiento": "nominas.registrar-tareo-multiproyecto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde hago clic derecho para elegir parte personal o parte grupal", "procedimiento": "nominas.registrar-tareo-multiproyecto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde aparece la ventana tareo multiproyecto por aprobar", "procedimiento": "nominas.registrar-tareo-multiproyecto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "aprobaciones tareo", "procedimiento": "nominas.registrar-tareo-multiproyecto", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "dnd esta el tareo multiproyeto", "procedimiento": "nominas.registrar-tareo-multiproyecto", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "cuando uso parte personal y cuando parte grupal en el tareo multiproyecto", "procedimiento": "nominas.registrar-tareo-multiproyecto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que debe tener asignado el trabajador para usar el parte grupal", "procedimiento": "nominas.registrar-tareo-multiproyecto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "en que estado queda el tareo multiproyecto despues de enviarlo a aprobacion", "procedimiento": "nominas.registrar-tareo-multiproyecto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que concepto pongo en la hoja de excel del tareo multiproyecto", "procedimiento": "nominas.registrar-tareo-multiproyecto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "en que semana se hace el tareo y donde la elijo en el multiproyecto", "procedimiento": "nominas.registrar-tareo-multiproyecto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q hace falta antes d hacer el tareo multiproyecto", "procedimiento": "nominas.registrar-tareo-multiproyecto", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "No puedo calcular la nómina porque el tareo multiproyecto de la semana no está aprobado, ¿qué hago?", "procedimiento": "nominas.registrar-tareo-multiproyecto", "intencion": "TROUBLESHOOTING", "estilo": "formal"}
+{"texto": "el tareo multiproyecto me sale por aprobar y no puedo procesar la nomina", "procedimiento": "nominas.registrar-tareo-multiproyecto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no veo a los trabajadores en el parte grupal del multiproyecto", "procedimiento": "nominas.registrar-tareo-multiproyecto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "en el excel del parte multiproyecto no me deja elegir el proyecto", "procedimiento": "nominas.registrar-tareo-multiproyecto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "importe el excel del parte multiproyecto y no se cargaron las horas", "procedimiento": "nominas.registrar-tareo-multiproyecto", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "tareo por aprobar", "procedimiento": "nominas.registrar-tareo-multiproyecto", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "no m deja aprobar el tareo multiproyeto", "procedimiento": "nominas.registrar-tareo-multiproyecto", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "¿Cómo registro un usuario nuevo en el módulo de Nóminas?", "procedimiento": "nominas.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como creo el usuario de la secretaria de planillas en nominas", "procedimiento": "nominas.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "entro un nuevo jefe de rrhh y necesita entrar a nominas, que hago", "procedimiento": "nominas.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo asigno una categoría de acceso a un usuario de Nóminas?", "procedimiento": "nominas.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como pongo la clave del usuario, de cuantos caracteres puede ser", "procedimiento": "nominas.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "crear usuario nominas", "procedimiento": "nominas.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como registro un usuaro en nominas", "procedimiento": "nominas.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "¿Cómo defino los subgrupos de Personal Técnico y Personal Administrativo?", "procedimiento": "nominas.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como marco a un usuario como el encargado de informatica", "procedimiento": "nominas.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como asigno un color de visto bueno a un usuario auditor", "procedimiento": "nominas.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo habilito a un usuario los escenarios que podrá usar en Nóminas?", "procedimiento": "nominas.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como le doy permiso de modificar y eliminar en los catalogos a un usuario", "procedimiento": "nominas.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "soy el administrador y debo dar accesos al equipo de oficina tecnica en nominas, por donde empiezo", "procedimiento": "nominas.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo ingreso al módulo de Nóminas como usuario una vez registrado?", "procedimiento": "nominas.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "komo le doy acceso a un usuario pa q imprima en los catalogos", "procedimiento": "nominas.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como registro el nombre de la constructora al crear usuarios", "procedimiento": "nominas.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Dónde está Mantenimiento de usuarios en Nóminas?", "procedimiento": "nominas.registrar-usuarios", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en que grupo esta mantenimiento de usuarios", "procedimiento": "nominas.registrar-usuarios", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde veo la pestaña escenarios para dar acceso", "procedimiento": "nominas.registrar-usuarios", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "con que usuario entro para poder crear usuarios", "procedimiento": "nominas.registrar-usuarios", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde se eligen los catalogos que puede usar un usuario", "procedimiento": "nominas.registrar-usuarios", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "mant. usuarios nominas", "procedimiento": "nominas.registrar-usuarios", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "dnd creo usuarios en nominas", "procedimiento": "nominas.registrar-usuarios", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "cual es la diferencia entre administrador de modulo, jefe de grupo, especialista y usuario", "procedimiento": "nominas.registrar-usuarios", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "cuantos auditores de base de datos permite el sistema", "procedimiento": "nominas.registrar-usuarios", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que caracteres acepta la clave de un usuario de nominas", "procedimiento": "nominas.registrar-usuarios", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que opciones de catalogo puedo dar a un usuario: nuevos, modificar, eliminar, notas", "procedimiento": "nominas.registrar-usuarios", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "quien puede dar accesos y permisos en el modulo", "procedimiento": "nominas.registrar-usuarios", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q categoria le pongo pa q un usuario no tenga acceso", "procedimiento": "nominas.registrar-usuarios", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "mi asistente intenta abrir nominas y no lo deja pasar", "procedimiento": "nominas.registrar-usuarios", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "le di usuario y clave pero no tiene acceso al modulo", "procedimiento": "nominas.registrar-usuarios", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no puedo registrar usuarios, no me deja con mi usuario", "procedimiento": "nominas.registrar-usuarios", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el usuario que cree no puede eliminar un registro del catalogo", "procedimiento": "nominas.registrar-usuarios", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "un usuario ve escenarios que no debe, como se los quito", "procedimiento": "nominas.registrar-usuarios", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "usuario sin acceso nominas", "procedimiento": "nominas.registrar-usuarios", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "el usuaro no puede entra a nominas", "procedimiento": "nominas.registrar-usuarios", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}

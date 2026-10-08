@@ -1,0 +1,160 @@
+id: almacenes.registrar-documento-por-pagar
+version: 1
+modulo: almacenes
+titulo: "Registrar un documento por pagar"
+objetivo: "Registrar en el escenario de Documentos por Pagar los documentos por pagar, como facturas, boletas de venta o tickets, y relacionarlos con un movimiento previamente efectuado en ingresos."
+nivel: intermedio
+preguntas:
+  - "cómo registro una factura del proveedor en documentos por pagar"
+  - "donde ingreso las boletas y tickets por pagar en almacenes"
+  - "como registro una factura de compra directa que no tiene orden de compra"
+  - "como relaciono la factura con el ingreso por compra que ya hice"
+  - "documentos por pagar s10 como se llena el formulario"
+  - "como registro el recibo de luz que llega todos los meses, hay plantilla?"
+  - "no me deja eliminar un documento por pagar"
+  - "como cargo una factura a un centro de costo y no al proyecto"
+  - "como ago para registrar una boleta de venta por pagar"
+aliases:
+  - "documentos por pagar"
+  - "registrar factura por pagar"
+  - "registrar documento de pago"
+  - "factura de proveedor"
+  - "plantilla de cargo"
+entidades:
+  modulo: "Almacenes"
+  pantallas: ["Documentos por Pagar", "Sucursales", "Catálogo de Plantillas de Cargo"]
+  objetos: ["documentos por pagar", "factura", "boletas de venta", "proveedor", "forma de pago", "ingreso por compra", "orden de compra", "centro de costo", "asiento contable"]
+prerrequisitos:
+  - texto: "Para relacionar el documento con un ingreso, el movimiento de ingreso debe estar efectuado previamente en el escenario de ingresos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s093]
+  - texto: "Los datos que se eligen de un catálogo, como el proveedor, deben existir: en caso de que no exista, regístrelo previamente."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s093]
+pasos:
+  - n: 1
+    id: "almacenes.registrar-documento-por-pagar#1"
+    accion: "En **Sucursales**, elija una sucursal para registrar información y luego **Documentos por pagar**."
+    fuente: [img-c2a8ff9d2804-0000, web-https-documentacion-s10peru-com-manual-d-s093]
+    pagina: null
+    fotos:
+      - id: "3f19b128eabd"
+        ruta_o_url: "imagenes/manual-de-almacenes/c2a8ff9d2804.png"
+        pagina: null
+        ocr: "Sucursales\n— =). Escritorio\nee i4@ S10 5.4\nme fe\nDocumentos Bandeja\npor pagar Luego, Central"
+  - n: 2
+    id: "almacenes.registrar-documento-por-pagar#2"
+    accion: "En la ventana **Documentos por Pagar**, elija la **Empresa** y el **Documento** que va a registrar (factura, boleta de venta, liquidación de compra…)."
+    fuente: [img-f940983961b9-0000, web-https-documentacion-s10peru-com-manual-d-s093]
+    pagina: null
+    fotos:
+      - id: "73e80165eff4"
+        ruta_o_url: "imagenes/manual-de-almacenes/f940983961b9.png"
+        pagina: null
+        ocr: "Documentos por Pagar\nEmpresa [02100001 |S10S.4. | Mi) Documenta| 001 FACTURA qi\n003 BOLETAS DE VENTA,\n004 LIQUIDACIONES DE COMPRA\n005 BOLETAS DE COMPANIAS DE AVIACION\n015 DOCUMENTO INTERNO-"
+  - n: 3
+    id: "almacenes.registrar-documento-por-pagar#3"
+    accion: "Haga clic derecho y elija **Adicionar** para adicionar un documento de pago y mostrar el formulario de ingreso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s093, img-409d743378c1-0000]
+    pagina: null
+    fotos:
+      - id: "38a656df80b2"
+        ruta_o_url: "imagenes/manual-de-almacenes/409d743378c1.png"
+        pagina: null
+        ocr: "BY #\nN° Correlativo |Proyecto Fecha Yencimiento |Serie |N° Documento |Proveedor Moneda | Forma de P:\nClic derecho DO Adicionar F2 fa)\n[) Adicionar desde plantilla de cargo ~b)"
+  - n: 4
+    id: "almacenes.registrar-documento-por-pagar#4"
+    accion: "En el formulario de ingreso, use el botón y del catálogo elija al proveedor."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s093]
+    pagina: null
+  - n: 5
+    id: "almacenes.registrar-documento-por-pagar#5"
+    accion: "Registre la fecha de registro del documento, la fecha de cancelación, la fecha que recibió el documento del proveedor y la fecha del periodo contable para el documento."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s093]
+    pagina: null
+  - n: 6
+    id: "almacenes.registrar-documento-por-pagar#6"
+    accion: "Elija el tipo de moneda."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s093]
+    pagina: null
+  - n: 7
+    id: "almacenes.registrar-documento-por-pagar#7"
+    accion: "Use el botón y elija la forma de pago; si no existe, regístrela en el catálogo de formas de pago."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s093]
+    pagina: null
+    fotos:
+      - id: "599da3c1c993"
+        ruta_o_url: "imagenes/manual-de-almacenes/eec29972be54.png"
+        pagina: null
+        caption: "Llamada g: Use el botón registre y elija la forma de pago. Para registrar una nueva forma de pago:"
+        ocr: "rT\n2 Catélogo de Formas de Pago [|S [nese\n\nOpciones 2\n\noe CORDS a Og Pe\nMZ. Clic derecho *” NIVEL: ov\n|_| [cédigo [Descripfisn Cid\na:\n\n| 02 | crédito $7 dias\n\n| 03 | Crédito $ 30, 45, 60 dias sin descuento\n\n| 04 | Crédito $ 10 dias\n\n__ | crédito a 15 dias\n\n| |B adicionar F2 |"
+  - n: 8
+    id: "almacenes.registrar-documento-por-pagar#8"
+    accion: "Ingrese la serie y el número del documento."
+    resultado: "La celda del tipo de cambio toma el tipo de cambio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s093]
+    pagina: null
+  - n: 9
+    id: "almacenes.registrar-documento-por-pagar#9"
+    accion: "Registre el porcentaje de descuento considerado en la factura."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s093]
+    pagina: null
+  - n: 10
+    id: "almacenes.registrar-documento-por-pagar#10"
+    accion: "En **Relacionado con**, elija la opción: **Ninguno** para compras directas como refrigerios, **Ingreso por Compra**, **Orden de Compra o Servicio**, **Subcontrato** (valorización de subcontrato) o **Ingreso Orden de Compra o Servicio**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s093, web-https-documentacion-s10peru-com-manual-d-s094, img-f33036651eeb-0000]
+    pagina: null
+    fotos:
+      - id: "7ec1cc5ccda4"
+        ruta_o_url: "imagenes/manual-de-almacenes/f33036651eeb.png"
+        pagina: null
+        ocr: "Relacionado[Nnguno\ncon Ninguno )\n( |ingreso por Compra\nOrden de Compra o Servicio =(-3)\nCG /Subcontrato\ningreso Orden de Compra o Servicio 43)"
+  - n: 11
+    id: "almacenes.registrar-documento-por-pagar#11"
+    accion: "Indique a dónde se carga el documento: al proyecto (luego elija el proyecto), a un centro de costo personalizado ajeno a la empresa, o a ninguno cuando el gasto no está relacionado a ningún proyecto o centro de costo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s094]
+    pagina: null
+  - n: 12
+    id: "almacenes.registrar-documento-por-pagar#12"
+    accion: "En la pestaña donde se registran los recursos del documento, invoque al Catálogo de recursos y elija todos los recursos que formarán parte del documento."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s094]
+    pagina: null
+    fotos:
+      - id: "93535283df48"
+        ruta_o_url: "imagenes/manual-de-almacenes/40721b36a688.png"
+        pagina: null
+        caption: "Llamada r: Es el lugar donde se registran los recursos del documento, previamente elija la pestaña con la llamada r-a."
+        ocr: "Cra) Cb) Ce) Cd) (Ss) ce\nf Detalle documentc *Y Datos adicionales Y Asiento contable ‘Y_impuestos Cron. de Pagos\n|Recurso Un| Cantidad | J. sin Deto. sin |.G.| Neto sin I.G.¥. | Neto con I.G.¥.| Parcial sin |\n113R00730 XEROX PHASER TONER 320( u 1.0000 288.0000 288.0000 342.7200 288 .0(\n@- |D) Adicionar C=)\n<{)|% Eliminar <2) ,\nReasignarRecurso (1-3)\nAsignar Destino Especifico global\nQuitar Destino…"
+  - n: 13
+    id: "almacenes.registrar-documento-por-pagar#13"
+    accion: "En la pestaña **Datos adicionales**, elija del catálogo el **Motivo de Pago** y el **Método de Pago**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s095, img-5e2a514d1b2f-0000]
+    pagina: null
+    fotos:
+      - id: "6c478c762270"
+        ruta_o_url: "imagenes/manual-de-almacenes/5e2a514d1b2f.png"
+        pagina: null
+        ocr: "Detalle documento Y Datos adicionales Y\" Asiento cortable Y\" Impuestos Y Cron. de Pagos\nMotivo de Pago [001 [Cancelacién facture ar ae)\n\nNLA\nMétodo de Pago [001 [Cheque hh} 2)"
+verificacion:
+  - texto: "La pestaña del asiento contable genera automáticamente el asiento contable del documento, y la pestaña de impuestos muestra el tipo de impuesto aplicado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s095]
+errores_frecuentes:
+  - sintoma: "No se genera el asiento contable del documento."
+    solucion: "Existen requisitos previos en el módulo de Contabilidad del S10: asignar el esquema contable a la empresa en Datos generales, registrar a los usuarios de la sucursal con permisos, configurar el plan contable y asignar las cuentas contables a los recursos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s095]
+  - sintoma: "No puede eliminar un documento por pagar."
+    solucion: "Se elimina un registro existente siempre y cuando no esté pagado o tenga un ingreso al almacén."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s096]
+  - sintoma: "Debe registrar el pago de servicios que cada mes le envían para pagarlos."
+    solucion: "Realice un registro normal del documento de pago del proveedor y defínalo como plantilla de cargo; luego use **Adicionar desde plantilla de cargo**, que muestra el Catálogo de Plantillas de Cargo para elegirla y efectuar un nuevo registro."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s096, web-https-documentacion-s10peru-com-manual-d-s093, img-409d743378c1-0000]
+relacionados: [almacenes.registrar-ingreso-por-compra, almacenes.regularizar-ingreso-por-compra, almacenes.registrar-tipo-de-documento]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s093, manual: "Manual de Almacenes", seccion: "3.8.3 Documentos por pagar (1)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s094, manual: "Manual de Almacenes", seccion: "3.8.3 Documentos por pagar (2)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s095, manual: "Manual de Almacenes", seccion: "3.8.3 Documentos por pagar (3)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s096, manual: "Manual de Almacenes", seccion: "3.8.3 Documentos por pagar (4)", pagina: null}
+  - {id: img-c2a8ff9d2804-0000, manual: "Manual de Almacenes", seccion: "c2a8ff9d2804.png", pagina: null}
+  - {id: img-f940983961b9-0000, manual: "Manual de Almacenes", seccion: "f940983961b9.png", pagina: null}
+  - {id: img-409d743378c1-0000, manual: "Manual de Almacenes", seccion: "409d743378c1.png", pagina: null}
+  - {id: img-f33036651eeb-0000, manual: "Manual de Almacenes", seccion: "f33036651eeb.png", pagina: null}
+  - {id: img-5e2a514d1b2f-0000, manual: "Manual de Almacenes", seccion: "5e2a514d1b2f.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

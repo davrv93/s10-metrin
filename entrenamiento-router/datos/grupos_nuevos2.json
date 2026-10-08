@@ -1,0 +1,54 @@
+{
+ "h1": [
+  "almacenes.calificar-recurso-con-techo-cantidad",
+  "almacenes.calificar-recurso-con-techo-precio",
+  "almacenes.registrar-documento-por-pagar",
+  "almacenes.registrar-egreso-para-fabricacion",
+  "almacenes.registrar-ingreso-por-devolucion-de-prestamo",
+  "almacenes.registrar-tipo-de-documento",
+  "almacenes.seleccionar-equipos-disponibles",
+  "contabilidad.crear-grupo-empresarial"
+ ],
+ "h2": [
+  "presupuestos.aplicar-factor-de-precio",
+  "presupuestos.aplicar-factores-al-subpresupuesto",
+  "presupuestos.cambiar-estado-de-partida",
+  "presupuestos.copiar-precios-a-otro-presupuesto",
+  "presupuestos.copiar-subpresupuesto",
+  "presupuestos.generar-item-alterno",
+  "presupuestos.registrar-detalle-de-recurso",
+  "presupuestos.vincular-precios-a-excel"
+ ],
+ "h3": [
+  "nominas.configurar-tareo-movil",
+  "nominas.exportar-datos-del-plame",
+  "nominas.exportar-datos-del-t-registro",
+  "nominas.generar-archivo-afp-net",
+  "nominas.registrar-planilla-de-pago",
+  "nominas.registrar-tareo-multiproyecto",
+  "nominas.registrar-usuarios"
+ ],
+ "h4": [
+  "facturacion.asignar-tributos-masivamente",
+  "facturacion.cambiar-titular-sperant",
+  "facturacion.importar-tributos-de-recursos-desde-excel",
+  "facturacion.pagar-entrega-a-rendir",
+  "administrativo.canjear-documentos-con-letras",
+  "administrativo.crear-cuenta-destino-en-pago-electronico",
+  "compras.registrar-pedido-a-almacen-a-partida-de-control",
+  "compras.registrar-usuarios"
+ ],
+ "h5": [
+  "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia",
+  "gerencia-proyectos.consultar-tareo-detallado",
+  "gerencia-proyectos.registrar-contrato",
+  "gerencia-proyectos.registrar-factura-del-subcontratista",
+  "facturacion-electronica.asignar-codigo-de-producto-sunat",
+  "facturacion-electronica.recuperar-contrasena-del-portal",
+  "calidad-movil.activar-la-aplicacion",
+  "calidad-movil.asignar-protocolos-a-actividades",
+  "calidad-movil.calificar-actividades",
+  "calidad-movil.publicar-proyecto-en-calidad-movil",
+  "portal-proveedor.recuperar-contrasena"
+ ]
+}

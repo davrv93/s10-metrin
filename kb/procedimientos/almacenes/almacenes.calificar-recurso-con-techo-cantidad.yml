@@ -1,0 +1,106 @@
+id: almacenes.calificar-recurso-con-techo-cantidad
+version: 1
+modulo: almacenes
+titulo: "Calificar un recurso con techo por cantidad y asignarle sus equivalentes"
+objetivo: "Calificar en el escenario de Techo de Materiales un recurso genérico presupuestado con el tipo de Techo Cantidad y registrar los recursos específicos o equivalentes que serán comprados, para que se descuenten de la cantidad total presupuestada."
+nivel: avanzado
+preguntas:
+  - "como pongo techo por cantidad a un recurso del presupuesto"
+  - "en el presupuesto tengo acero en kilos pero compro varillas, como hago la equivalencia"
+  - "como asigno recursos especificos a un recurso generico presupuestado"
+  - "techo cantidad s10 como se califica el recurso"
+  - "donde registro el factor de la varilla de acero para pedir"
+  - "como hago para que lo que pido se descuente de la cantidad presupuestada"
+  - "no me sale el factor del recurso equivalente en el techo de materiales"
+  - "que tengo que hacer antes de pedir los recursos especificos"
+aliases:
+  - "techo por cantidad"
+  - "techo cantidad"
+  - "recursos equivalentes"
+  - "recursos específicos"
+  - "techo de materiales"
+entidades:
+  modulo: "Almacenes"
+  pantallas: ["Techo de Materiales", "Datos Generales", "catálogo de recursos"]
+  objetos: ["recurso genérico", "recurso específico", "recursos equivalentes", "factor", "cantidad total presupuestada", "techo presupuestado"]
+prerrequisitos:
+  - texto: "En el escenario de Datos Generales, el proyecto debe tener seleccionado TECHO PRESUPUESTADO."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s122]
+  - texto: "En el catálogo de recursos, el recurso principal debe tener registrados a los recursos equivalentes, con su factor relacionado con la unidad del recurso principal."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s124, web-https-documentacion-s10peru-com-manual-d-s125]
+pasos:
+  - n: 1
+    id: "almacenes.calificar-recurso-con-techo-cantidad#1"
+    accion: "Antes de pedir los recursos específicos, acceda al escenario de **Techo de Materiales** del proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s124, web-https-documentacion-s10peru-com-manual-d-s115]
+    pagina: null
+    fotos:
+      - id: "b057c7af693b"
+        ruta_o_url: "imagenes/manual-de-almacenes/f17c48da2f0b.png"
+        pagina: null
+        caption: "Efectúe esta labor antes de pedir los recursos específicos. Acceso al escenario"
+        ocr: "= Proyectos\n\n= =) ge} Eseritorio\nTecho de BSSPUENTE EN CARRETERACES\nMateriales: Luego,"
+  - n: 2
+    id: "almacenes.calificar-recurso-con-techo-cantidad#2"
+    accion: "Haga clic derecho sobre el recurso presupuestado y califíquelo con techo cantidad."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s124]
+    pagina: null
+    fotos:
+      - id: "db444f39c6b1"
+        ruta_o_url: "imagenes/manual-de-almacenes/31ed61c6d5cc.png"
+        pagina: null
+        caption: "Califique al recurso con techo cantidad,"
+        ocr: "Materiales presupuestados\n*e Gi led I [Clic derecho\nDescripcién Unida| Cant. Ppto. Precio (S/.) Parcial (S/.)\nCEMENTO PORTLAND TIPO | 12.5 kg) bol 15,631.80 13.80 215,718.\nACERO CORRUGADO ty=4200 kgicm2 GRADO 60 kg 68,289.52 2.30 157,068.\nRegenerar equivagencias gal 1,512.00 10.45 15,800.\nIncrementar techo| kg 1,641.58 4.00 6,566.\nGlaslticer por b Monto Presupuestado ABC: C od\nNOES Got gece | Form…"
+  - n: 3
+    id: "almacenes.calificar-recurso-con-techo-cantidad#3"
+    accion: "Adicione los recursos específicos o equivalentes del recurso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s124]
+    pagina: null
+    fotos:
+      - id: "8b45db691e9b"
+        ruta_o_url: "imagenes/manual-de-almacenes/76a9e5cba0d8.png"
+        pagina: null
+        caption: "Para adicionar los recursos específicos o equivalentes,"
+        ocr: "Materiales presupuestados\n\nSY welts Jog id\nCr|Descripcién Unida| Cant. Ppto Precio (Sf) Parcial ( «|\nOZ CEMENTO PORTLEND TIPO | (42.5 kg) bol 15,631 8000 13.8000 215\nfa ACERO CORRUGADO fy=4200 kg/cm2 GRADO 60 kg 68,289.5200 2.3000 157\nes ,\n\n|\nS$ en all Asignad o a: 0203020003 ACERO CORRUGADO fy=4200 kg/cm2 GRADO 60\noo |\nAye » @a\nojo Tipo | Chdigo Descripcién Unida Factor Cantidad Cantidad Ppto | P…"
+  - n: 4
+    id: "almacenes.calificar-recurso-con-techo-cantidad#4"
+    accion: "Elija los recursos específicos o equivalentes que el sistema detecta y muestra."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s124]
+    pagina: null
+    fotos:
+      - id: "8a18645e8d87"
+        ruta_o_url: "imagenes/manual-de-almacenes/73fd3e859293.png"
+        pagina: null
+        caption: "El sistema detecta que tiene recursos específicos o equivalentes y los muestra,"
+        ocr: "@& Catélogo de especificos/equivalentes enh] eS\nOpciones ?\nDe XSEO MSS Om H7 ASO fal\n[ [_[_Séatse — [Deseriscibn [Urigad_[Facter|\n| | |02030200030/ ACERO CORRUGADO fy=4 ka f 4\n|__ |92030200030 | ACERO CORRUGADO ty=400 kg/om2 GRADO 60 VARILLADE 3:8\" x | var| 5.22\n[  [o20sc200060/ACERO CORRUGADO fy+4200 kgiom GRADO 80 VARILLADE 12° x9 | ver] a8\n__ |92030200030 | ACERO CORRUGADO ty=4200 kg/cm? GRADO …"
+  - n: 5
+    id: "almacenes.calificar-recurso-con-techo-cantidad#5"
+    accion: "Registre los datos de los recursos equivalentes: revise el factor, que se toma por defecto si en el catálogo de recursos se registró la equivalencia; si no lo tiene, regístrelo (por ejemplo, el peso en kg de una varilla de acero)."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s124]
+    pagina: null
+    fotos:
+      - id: "fbe8d8071537"
+        ruta_o_url: "imagenes/manual-de-almacenes/2811517c0702.png"
+        pagina: null
+        caption: "Registre los datos de los recursos equivalentes:"
+        ocr: "JAsignado a: 0203020003 ACERO CORRUGADO fy=4200 kg/cm2 GRADO 60\n\nEly Pa ¢% eH\nDescripcién Unida| Factor | Cantidad |Cantidad Ppto [Precio (Si)\nACERO CORRUGADO fy=4200 kgicm2 GRADO 60 kg 000000000 996.52 996.52 2.30\nACERO CORRUGADO fy=4200 kgicm2 GRADO 60 VARILLA DE 1/2\" Ivar 180000000 3,850.00 35,343.00 21.11\nACERO CORRUGADO fy=4200 kgicm2 GRADO 60 VARILLADE S/é'|vared 400000000 1,032.00 14,880.80…"
+  - n: 6
+    id: "almacenes.calificar-recurso-con-techo-cantidad#6"
+    accion: "Ingrese la cantidad del recurso específico a comprar (por ejemplo, la cantidad de varillas de acero)."
+    resultado: "El sistema calcula la cantidad presupuestada tomando el factor y la cantidad, y el precio tomando en cuenta el precio presupuestado por kg."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s124]
+    pagina: null
+verificacion:
+  - texto: "El techo toma como tope la cantidad del recurso genérico presupuestado y la va descontando a medida que van ingresando los recursos específicos o del catálogo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s122]
+errores_frecuentes:
+  - sintoma: "El factor del recurso equivalente no aparece por defecto."
+    solucion: "El factor se toma por defecto solo si en el catálogo de recursos se registró la equivalencia para el recurso equivalente o específico; en el caso de no tenerla, es necesario registrarlo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s124]
+relacionados: [almacenes.calificar-recurso-con-techo-precio]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s122, manual: "Manual de Almacenes", seccion: "3.19.5 Techo presupuestado", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s124, manual: "Manual de Almacenes", seccion: "3.19.5.2 Techo por cantidad (1)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s125, manual: "Manual de Almacenes", seccion: "3.19.5.2 Techo por cantidad (2)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s115, manual: "Manual de Almacenes", seccion: "3.19.2 Escenario de Pedidos (1)", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

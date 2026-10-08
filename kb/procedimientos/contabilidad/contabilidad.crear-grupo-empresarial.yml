@@ -1,0 +1,108 @@
+id: contabilidad.crear-grupo-empresarial
+version: 1
+modulo: contabilidad
+titulo: "Crear un grupo empresarial y ver sus estados financieros combinados"
+objetivo: "Crear un grupo empresarial con las compañías afiliadas cuyos activos, pasivos, capital y resultados se suman, para visualizar los estados financieros combinados del grupo."
+nivel: intermedio
+preguntas:
+  - "como creo un grupo empresarial en contabilidad"
+  - "como consolido los estados financieros de varias empresas"
+  - "como agrego empresas a un grupo empresarial"
+  - "quiero ver el balance general sumando dos empresas del grupo"
+  - "como combino estados financieros de empresas afiliadas en s10"
+  - "como saco el balance comparativo del grupo empresarial"
+  - "como quito una empresa del grupo enpresarial"
+  - "estados financieros consolidados del holding, donde se ven"
+aliases:
+  - "grupo empresarial"
+  - "estados financieros combinados"
+  - "consolidar empresas"
+  - "nuevo grupo empresarial"
+entidades:
+  modulo: "Contabilidad"
+  pantallas: ["Grupo Empresarial", "Estados Financieros"]
+  objetos: ["grupo empresarial", "empresa", "informe contable", "periodo"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "contabilidad.crear-grupo-empresarial#1"
+    accion: "En el escenario de grupo empresarial, haga clic derecho y elija **Nuevo Grupo Empresarial**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s086]
+    pagina: null
+  - n: 2
+    id: "contabilidad.crear-grupo-empresarial#2"
+    accion: "Llene la información **Descripción** y **Moneda**; para cambiarla, haga clic derecho y elija **modificar**."
+    resultado: "Se crea el grupo empresarial."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s086]
+    pagina: null
+    fotos:
+      - id: "dd29de69a460"
+        ruta_o_url: "imagenes/manual-de-contabilidad/4377310c1786.png"
+        pagina: null
+        caption: "b. Se llenará la información Descripción, Moneda; Clic derecho modificar."
+        ocr: "#4 Grupo Empresarial aX\nCodigo 01 [or\nDescripcion f°\nMoneda Jor [nuevos SOLES =| 44\n="
+      - id: "9b747da44d7a"
+        ruta_o_url: "imagenes/manual-de-contabilidad/8175f7c79b50.png"
+        pagina: null
+        caption: "Como Resultado Tendremos la Creación del Grupo Empresarial…."
+        ocr: "Grupo Empresarial\n0101 de NUEVOS SOLES"
+  - n: 3
+    id: "contabilidad.crear-grupo-empresarial#3"
+    accion: "Ubíquese en la línea del grupo empresarial creado y, en el detalle, haga clic derecho y elija **Agregar Empresa**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s086, img-a8d624ff7930-0000]
+    pagina: null
+    fotos:
+      - id: "5d53ae25af1d"
+        ruta_o_url: "imagenes/manual-de-contabilidad/a8d624ff7930.png"
+        pagina: null
+        ocr: "Agregar Empresa\nEl Quitar Empresa"
+  - n: 4
+    id: "contabilidad.crear-grupo-empresarial#4"
+    accion: "Agregue las empresas cuyos estados financieros quiere combinar; para retirar una, use **Quitar Empresa**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s086, img-86208c8eb69f-0000]
+    pagina: null
+    fotos:
+      - id: "cdfa08194f04"
+        ruta_o_url: "imagenes/manual-de-contabilidad/86208c8eb69f.png"
+        pagina: null
+        ocr: "Grupo Empresarial\n01 il) Todas las empresas\n0101 = NUEVOS SOLES\nAYvAs aaa\nCodigo Empresa | Empresa Esquema Contable\n\nSISTEMA 10 S.A.C. Esquema - Sistema 10 - Nuevos Soles\n02010000 NET S10 S.A. Esquema - NET $10 - Nuevos Soles\n\n© Quitar Empresa"
+  - n: 5
+    id: "contabilidad.crear-grupo-empresarial#5"
+    accion: "Ingrese al escenario **Estados Financieros**, donde se visualiza el resultado de la configuración de los grupos empresariales."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s087]
+    pagina: null
+  - n: 6
+    id: "contabilidad.crear-grupo-empresarial#6"
+    accion: "Seleccione el grupo empresarial."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s087]
+    pagina: null
+  - n: 7
+    id: "contabilidad.crear-grupo-empresarial#7"
+    accion: "Seleccione el informe contable a visualizar, por ejemplo **Balance General**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s087, img-8cb77e7e5b57-0000]
+    pagina: null
+    fotos:
+      - id: "9aba941829d6"
+        ruta_o_url: "imagenes/manual-de-contabilidad/8cb77e7e5b57.png"
+        pagina: null
+        ocr: "Estados Financieros: Balance General\nGrupo ai [0101 [510 =] tnformes[baiance General ——————S~ST J Period f201102 [Febrero 2011 =] @lal[cenerat =]\n= ACTIVO\n~~) ACTIVO CORRIENTE\n10 CAJA Y BANCOS (8,730.81\n12 CLIENTES 2,445.73\n14 CUENTAS POR COBRAR ACCIONISTAS Y PERSONAL (24,948.65\n16 CUENTAS POR COBRAR DIVERSAS 4,650.24\n20 MERCADERIAS\n21 PRODUCTOS TERMINADOS\n23 PRODUCTOS EN PROCESO\n24 MATERIAS PRIMA…"
+  - n: 8
+    id: "contabilidad.crear-grupo-empresarial#8"
+    accion: "Seleccione el periodo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s087]
+    pagina: null
+  - n: 9
+    id: "contabilidad.crear-grupo-empresarial#9"
+    accion: "Seleccione la visualización del informe: **General** o **Comparativo**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s087]
+    pagina: null
+verificacion: []
+errores_frecuentes: []
+relacionados: [contabilidad.emitir-estados-financieros, contabilidad.configurar-informe-contable]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s086, manual: "Manual de Contabilidad", seccion: "11.1 Grupo Empresarial", pagina: null}
+  - {id: img-a8d624ff7930-0000, manual: "Manual de Contabilidad", seccion: "a8d624ff7930.png", pagina: null}
+  - {id: img-86208c8eb69f-0000, manual: "Manual de Contabilidad", seccion: "86208c8eb69f.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s087, manual: "Manual de Contabilidad", seccion: "11.2 Estados Financieros", pagina: null}
+  - {id: img-8cb77e7e5b57-0000, manual: "Manual de Contabilidad", seccion: "8cb77e7e5b57.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

@@ -1,0 +1,155 @@
+id: facturacion.importar-tributos-de-recursos-desde-excel
+version: 1
+modulo: facturacion
+titulo: "Importar desde Excel los ítems de detracción y percepción de los recursos"
+objetivo: "Exportar a Excel los recursos del escenario Asignación de Tributos, completar en la hoja los códigos de ítems de detracción y percepción de cada recurso e importarlos de vuelta relacionando los campos S10 con las columnas de la hoja."
+nivel: intermedio
+preguntas:
+  - "como importo desde excel los codigos de detraccion de los recursos"
+  - "puedo cargar los items de percepcion y detraccion con una hoja excel"
+  - "como exporto los recursos de asignacion de tributos a excel"
+  - "que columnas son obligatorias para importar los tributos de los recursos"
+  - "como relaciono las columnas del excel con los campos del s10 al importar"
+  - "importasion de detracciones por excel en facturacion"
+  - "tengo la lista de recursos con su codigo sunat de detraccion en excel, como la subo"
+aliases:
+  - "importar tributos desde excel"
+  - "importación excel de detracciones"
+  - "cargar detracciones por excel"
+  - "exportar recursos a excel"
+entidades:
+  modulo: "Facturación"
+  pantallas: ["Asignación de Tributos"]
+  objetos: ["recurso", "hoja Excel", "código de ítem detracción", "código de ítem percepción", "código de recurso"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "facturacion.importar-tributos-de-recursos-desde-excel#1"
+    accion: "En el módulo de Facturación, escenario **Asignación de Tributos**, use el icono **Exportar a Microsoft Excel** para exportar todos los recursos que se muestran en el escenario."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s075]
+    pagina: null
+    fotos:
+      - id: "d9651fc9bf63"
+        ruta_o_url: "imagenes/manual-de-facturacion/41be17aef603.png"
+        pagina: null
+        caption: "Ingresar al Módulo de Facturación, Escenario Asignación de Tributos con el Icono de Exportar a Microsoft Excel todos los recursos del Catálogos que se muestran en el escenario Asignación de Tributos."
+        ocr: "\"Archivo Yer Catélogos Herramientas 2\nH Tema Aa re 5 a\na Asignacion de Tributos\nConfiguracién\nce HEMaAS | v BE id |\nFRecursont |\nCentros de Costos [Reston ae)\nA 11/88555 Campo|thescrincién >| Jen cualquier posicién + Grupo: Recurso Ni - Recurso NZ - Recurso N3 - Descripcién\nDescripcis ETiene Detraccién? _|Deseripcién Detraccién Tien Percepcién? __|Descripcién Percepcin “\nEstructura de Costas |)/=)…"
+  - n: 2
+    id: "facturacion.importar-tributos-de-recursos-desde-excel#2"
+    accion: "En el listado de recursos exportado a Excel, trabaje los códigos de ítems de detracción y de percepción relacionados con cada recurso, según el catálogo SUNAT de ítems."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s075]
+    pagina: null
+    fotos:
+      - id: "b055d1479897"
+        ruta_o_url: "imagenes/manual-de-facturacion/cf9645a0a6e5.png"
+        pagina: null
+        caption: "Al Exportar al Excel aparecerá el listado de Recursos en los que se trabajará los Códigos de Ítems de Percepción y Detracción, relacionado los recursos para que se Importe Posteriormente. En la Imagen se Observa que el Usuario ha trabajado los Ítems de Detracción relacionado a los Recursos en base a catálogo SUNAT de Ítems de Detracciones, de la misma manera se trabaja los recursos relacionados a Percepción."
+        ocr: "(X]| ed I~ M~|> Listado de Recursos_ycardenas_ycardenas_ycardenas [Modo de compatibilidad] - Microsoft Excel oes\nBETO tice | insertor _disefio de pigina Formulas Datos Reiser Vista o@c@x\npepar acer A £Se ¢e Formato _Darfomate Estis ae serar eiminar Fomato * aenay 5\ngar -O- O&A £88 €e rare | $+ % O00 | “a8 8B Formato Darformato Estilos de | Insertar Eliminar Formato rdenar Buscar\n2\" GF copiortormat…"
+  - n: 3
+    id: "facturacion.importar-tributos-de-recursos-desde-excel#3"
+    accion: "Guarde la hoja Excel con los campos obligatorios: código de recurso, código de ítem de detracción y código de ítem de percepción."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s075]
+    pagina: null
+  - n: 4
+    id: "facturacion.importar-tributos-de-recursos-desde-excel#4"
+    accion: "Inicie la importación desde el escenario de Asignación de Tributos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s075]
+    pagina: null
+    fotos:
+      - id: "adc52ea9e13f"
+        ruta_o_url: "imagenes/manual-de-facturacion/d80c0f9c6b84.png"
+        pagina: null
+        caption: "Luego de Trabar la Hoja Excel, Guardar para iniciar con la Importación desde el escenario de Asignación de Tributos. Los Campos Obligatorios son: a. Código de Recurso: Para Identificar la configuración a realizar. b. Código de Ítem Detracción: Indicar el Código del ítem a relacionar con el recurso. c. Código de Ítem Percepción: Indicar el Código de ítem a relacionar con el recurso."
+        ocr: "| Brchiva Yer Catélogos Herramientas 2\na |Asignacién de Tributos\n—\nDOMALS EM eae\now\nCentros de Costos\n80569/87718mpo|Descripcion Jen cualquier posicion >) [XX] [2] Grupo: Recurso Ni - Recurso N2 - Recurso N3- Descripcién\nse Cédligo. Descripcién aTiene Detraccién? —|Cédigo Detraccién _|Descripcién Detraccién aTiene Percepeién?: | Cédigo F\n01 Mano de Obra\nEstructura de Costs 02 Materiales\n03 Equinos…"
+  - n: 5
+    id: "facturacion.importar-tributos-de-recursos-desde-excel#5"
+    accion: "En el explorador, busque el archivo a importar y selecciónelo con doble clic o con el botón **Abrir**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s075]
+    pagina: null
+    fotos:
+      - id: "30066dbe0b81"
+        ruta_o_url: "imagenes/manual-de-facturacion/6a7fa417d0fd.png"
+        pagina: null
+        caption: "Aparecerá el explorador para realizar la Búsqueda del Archivo a Importar, Seleccionarlo con Doble clic o Clic en el botón Abrir."
+        ocr: "‘$10 Facturacién i= 11x!\n© Archivo Yer Catélogos Herramientas 2\nEg) Tema coma eal anien\nia As’ ieee\n“Configuracién | Seleccione el archivo Excel El)\nOO Erte Bifocal\ni ye:\nContras do Costas RS) Gamo asemn =#-He\n0564 * a\n& ot Fl Uistado de Recursos_ycardenas_ycardenas_... 22/08/2014 05:07 p... Hoja de célculo de 697 KB\nEstructura de Costos eee Gh Btsotecas GE) stado_ycardenas 22/08/2014 03:58 p... H…"
+  - n: 6
+    id: "facturacion.importar-tributos-de-recursos-desde-excel#6"
+    accion: "Relacione los campos S10 con las cabeceras de la hoja Excel."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s075]
+    pagina: null
+    fotos:
+      - id: "d9d32114a303"
+        ruta_o_url: "imagenes/manual-de-facturacion/8c0baa7bdc41.png"
+        pagina: null
+        caption: "Relacionar los Campos S10, con las cabeceras de la Hoja Excel de esta manera se relacionará la información a Importar."
+        ocr: "antwe [Popo nan SL Etainer_|\nNotas\nHoje [Sheett z if |\ns Importar\na | _tovots_|\nCodigo recurso. Centar\n—\n|Cédigo Detraccién:\n\"lar del ry ‘Slamna Tclusliza los Gatos existentes Seleccionar el Campo S10 y relacionarlos con la cabecera de la Hoja Excel\nF s H [al\n1 Cédigo Descripcién éTieneDetraccién? Cédigo Detraccién Descripcién Detraccién eTiene Percepcién? CédigoPercepcién DescripciénPercepcién—\n2…"
+    sub:
+      - n: 1
+        id: "facturacion.importar-tributos-de-recursos-desde-excel#6.1"
+        accion: "Seleccione el campo S10 **Código Recurso** y relaciónelo con la cabecera de la hoja Excel (en el ejemplo, la columna A)."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s075]
+        pagina: null
+        fotos:
+          - id: "9a527437efd9"
+            ruta_o_url: "imagenes/manual-de-facturacion/b8491f5b0aed.png"
+            pagina: null
+            caption: "• Seleccionar el Campo S10 Código Recurso y Relacionarlo con la cabecera de la Hoja Excel Columna A."
+            ocr: "Archivo [D:Listado de Recursos_ycardenas_ycardenas_ycardenas.xls _Evatinar_|\nNotas\nHoja [Sheet x C4\n\" Importer\nee\nRelacionar el Campo con la Cabecera de la Hoja Excel\nFilas del: 1 Al 1 | Columna:} A  [~ Actualiza los datos existentes\n[4 Le Te ee a ee 4 fal\n[Codigo “De scripcién gTieneDetraccién? Cédigo Detraccién Descripcién Detraccién gTienePercepcién? —CédigoPercepeién Descripcién Percepcién\nObl…"
+      - n: 2
+        id: "facturacion.importar-tributos-de-recursos-desde-excel#6.2"
+        accion: "Seleccione el campo S10 **Código Percepción** y relaciónelo con la cabecera de la hoja Excel (en el ejemplo, la columna G)."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s075]
+        pagina: null
+        fotos:
+          - id: "7b357086ccac"
+            ruta_o_url: "imagenes/manual-de-facturacion/50becaf0e8c2.png"
+            pagina: null
+            caption: "• Seleccionar el Campo S10 Código Percepción y Relacionarlo con la cabecera de la Hoja Excel Columna G."
+            ocr: "Archivo [D:\\Listado de Recursos_ycardenas_ycardenas_ycardenas xls _Examinar_|\nNotas\nHoja Sheet1 ¥ |}\nA , Importar\nRelacionar el Campo $10 con la Cabecera de la Hoja Excel\nCerrar\nFilas del : 1 Al 1 Columna:| G [7 Actualiza los datos existentes\n2 2 | f eo\nCédigo Descripcién éTieneDetraccién? Cédigo Detraccién _Descripcién Detraccién éTienePercepeién? [Codigo PereepcionDescripcién Percepcién\n03 Equip…"
+      - n: 3
+        id: "facturacion.importar-tributos-de-recursos-desde-excel#6.3"
+        accion: "Seleccione el campo S10 **Código Detracción** y relaciónelo con la cabecera de la hoja Excel (en el ejemplo, la columna D)."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s075]
+        pagina: null
+        fotos:
+          - id: "825ab6346d3f"
+            ruta_o_url: "imagenes/manual-de-facturacion/8a181972b6ee.png"
+            pagina: null
+            caption: "• Seleccionar el Campo S10 Código Detracción y Relacionarlo con la cabecera de la Hoja Excel Columna D."
+            ocr: "Notas\nHoja [Sheett =\nerat\nRelacionar el campo $10 con la Cabecera de la Hoja Excel\nFilas del 1 Al 1 Columna:[ 0 [~ Actualizalos datos existentes\na ee ee ea | EB F 6: Cag Percepcion 4 [al\nCédigo Deseripcién 2Tiene Detraccién? [Descripcién Detraccién ZTienePercepcién? _—CédigoPercepcién_Descripcién Percepeién =)\n03 Equipos, Macuinas y Herramientas Opciones\n\n‘0300100030003 Cargador de Interior de 2 T…"
+  - n: 7
+    id: "facturacion.importar-tributos-de-recursos-desde-excel#7"
+    accion: "Seleccione las filas (del – al) y haga clic en el botón **Importar** para cargar la información seleccionada."
+    resultado: "Se ejecuta el proceso de importación."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s075]
+    pagina: null
+    fotos:
+      - id: "2d8c794675d9"
+        ruta_o_url: "imagenes/manual-de-facturacion/56acf7e21599.png"
+        pagina: null
+        caption: "Seleccionar las Filas Del – Al. Posteriormente clic en el botón Importar para la carga de información seleccionada."
+        ocr: "Archivo [PrListado de Recursos_ycerdenes_yoardenes_yoardenasxis————SCS~S~SC |\n| Notas\nie | lal [=a Luego se seleccionar las Filas, Clic\nCampa |Cédigo Detraccién nd en el botén Importar.\nCerrar\n[___|eédigo Descripcion gTieneDetraccién? Cédigo Detraccién Descripcidn Detraccién éTiene Percepcidn? CédigoPercepcién Descripcién Percepetinis\n03 Equipos, Maquinas y Herramientas Obtigatario Opcionat\n03010…"
+      - id: "72cabd0aa610"
+        ruta_o_url: "imagenes/manual-de-facturacion/2efd191fcba5.png"
+        pagina: null
+        caption: "Proceso de Importación."
+        ocr: "[archive Yer Catklopos Lerramientas 2\nao\nEig ema [Asignacién de Tributos\n= AF ES 8 |e GE oe id |\n80563/67716mpo[Descrpcén ——S*~S*S di cualquier posicon =P —SCSC~S~S«~S Grupo: Recurso Ni - Recurso N2 - Recurso N3 - Descripcién\nge eaigo ascneaie tiene Detveccion? _[édigo Detreceién  [Descrincién Detraccién uTiene Percencién? __[céctgo#\n[srt mano do One\nEstructura de Costos |f\\+} 2 Metorislos\n103 eac…"
+  - n: 8
+    id: "facturacion.importar-tributos-de-recursos-desde-excel#8"
+    accion: "Revise los resultados de la importación en el escenario."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s075]
+    pagina: null
+    fotos:
+      - id: "cae684707ab0"
+        ruta_o_url: "imagenes/manual-de-facturacion/70fcdb1e46e5.png"
+        pagina: null
+        caption: "Resultados de la Importación."
+        ocr: "© prc Yer Cetdlogoe. Heranientas 2\naf\naes aT =\na Asignacién de Tributos\na DOMANS vEF eae\nFrecucent |\nCertros de Costos\n& 600 Descrpaiin Tene Detrecciin? [05g Detacciin _|Deserpién Devecciin Tene Percepeiin? ——_|oéuic |\n‘1 Mana de Obra\nEstructura de Costos |} =) 02 Meterles\n[F 03 Eaupos, Maquinas y Herramertas\no 201010000003 CCorgador de reror de 2 Ton wi coo1e Arrendamert de benes muebles o\n200100…"
+verificacion:
+  - texto: "El escenario Asignación de Tributos muestra los resultados de la importación."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s075]
+errores_frecuentes: []
+relacionados: [facturacion.asignar-tributos-masivamente, facturacion.importar-saldos-por-cobrar]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s075, manual: "Manual de Facturación", seccion: "8.2.2.3 Proceso de Importación Excel.", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

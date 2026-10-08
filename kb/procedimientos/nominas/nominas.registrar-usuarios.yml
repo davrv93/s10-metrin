@@ -1,0 +1,158 @@
+id: nominas.registrar-usuarios
+version: 1
+modulo: nominas
+titulo: "Registrar usuarios del módulo de Nóminas"
+objetivo: "Registrar en el módulo de Nóminas a la persona que lo manejará, elegida del catálogo de socio de negocio, y asignarle accesos y atributos."
+nivel: basico
+preguntas:
+  - "como creo un usuario para el modulo de nominas"
+  - "como le doy acceso a nominas a la asistenta de rrhh"
+  - "que categorias de usuario hay en nominas, jefe de grupo, especialista"
+  - "como le doy permiso a un usuario solo a algunos escenarios de nominas"
+  - "el usuario no puede entrar a nominas, que le falta"
+  - "como registro los subgrupos personal tecnico y administrativo"
+  - "como pongo a un usuario como auditor de la base de datos"
+  - "como le quito los atributos a un usuario de nominas"
+  - "quien registra los usuarios de nominas"
+aliases:
+  - "registrar usuario de nóminas"
+  - "crear usuario"
+  - "mantenimiento de usuarios"
+  - "accesos y atributos"
+entidades:
+  modulo: "Nóminas"
+  pantallas: ["Mantenimiento de usuarios"]
+  objetos: ["usuario", "subgrupos", "socio de negocio", "escenarios", "catálogos"]
+prerrequisitos:
+  - texto: "La persona que manejará el módulo debe estar en el catálogo de socio de negocio: la elección del personal se efectúa de ese catálogo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s004]
+  - texto: "El registro de usuarios lo realiza el usuario sa, que debe tener una clave de acceso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s003, web-https-documentacion-s10peru-com-manual-d-s002]
+pasos:
+  - n: 1
+    id: "nominas.registrar-usuarios#1"
+    accion: "Ingrese al módulo de Nóminas con el usuario **sa**, el administrador del sistema, encargado de registrar a los usuarios finales y dar accesos y permisos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s002, web-https-documentacion-s10peru-com-manual-d-s003]
+    pagina: null
+  - n: 2
+    id: "nominas.registrar-usuarios#2"
+    accion: "En el grupo **Utilitarios**, ingrese al escenario **Mantenimiento de usuarios**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s003, img-f60dc0be71ae-0000]
+    pagina: null
+    fotos:
+      - id: "c3790ae9b9c9"
+        ruta_o_url: "imagenes/manual-de-nominas/f60dc0be71ae.png"
+        pagina: null
+        ocr: "«4 Botén de acceso\nal escenario\nMantenimiento de\nusuarios"
+  - n: 3
+    id: "nominas.registrar-usuarios#3"
+    accion: "Registre el nombre de la empresa o constructora."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s004]
+    pagina: null
+    fotos:
+      - id: "8c9c0dfc9513"
+        ruta_o_url: "imagenes/manual-de-nominas/e35beeca9953.png"
+        pagina: null
+        caption: "Registre el nombre de la empresa o constructora,"
+        ocr: "———— Descripcién a"
+  - n: 4
+    id: "nominas.registrar-usuarios#4"
+    accion: "Registre los subgrupos: **Personal Técnico** y **Personal Administrativo**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s004]
+    pagina: null
+    fotos:
+      - id: "62825f8aa41c"
+        ruta_o_url: "imagenes/manual-de-nominas/dd41e5aa12de.png"
+        pagina: null
+        caption: "Registro de los Subgrupos: Registre a Personal Técnico y Personal Administrativo."
+        ocr: "24 SubGrupo: [x]\n& Todos los Usuprios\nInvitados _\nLuego,"
+  - n: 5
+    id: "nominas.registrar-usuarios#5"
+    accion: "Registre un nuevo usuario en el subgrupo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s004]
+    pagina: null
+    fotos:
+      - id: "97e77a972436"
+        ruta_o_url: "imagenes/manual-de-nominas/6a43ba46f916.png"
+        pagina: null
+        caption: "Registro de Usuarios"
+        ocr: "ss\n(=) 3 Todos los Usuari}s\nah Invitados\n(lf) Constructoral\n2 =—\n@ Personal Administrative [Ei neevo usuario"
+  - n: 6
+    id: "nominas.registrar-usuarios#6"
+    accion: "Elija a la persona del catálogo de socio de negocio e ingrese el nombre con el que el usuario ingresa al sistema y su clave, una cadena de caracteres alfanuméricos de hasta 12 caracteres."
+    fuente: [img-1064e6842013-0000, web-https-documentacion-s10peru-com-manual-d-s004]
+    pagina: null
+    fotos:
+      - id: "b332f4f9d98c"
+        ruta_o_url: "imagenes/manual-de-nominas/1064e6842013.png"
+        pagina: null
+        ocr: "er TL! Ee stnombre con al que |\n‘digo | | el usuario Ramirez Nufiez, |\nUsuario fir I | José ingresa al sistema 4\nSS\nClave i \"] lha clave es una cadena de |\nConfirmacién a Tl '_J caracteres alfanuméricas |\nde la clave Ide hasta 12 caracteres 4\n1 aes a\nEmpleado f]aghy| —-———--—-——-H\n1s) {| | Muestra el catalogo de Socio}\nAuditor Vb. 7 ~a) L-4 de negocio, para elegir al\n| Usuario |\nAdministrador de S…"
+  - n: 7
+    id: "nominas.registrar-usuarios#7"
+    accion: "Si corresponde, elija a uno de los usuarios como auditor de la base de datos con un color de la lista de visto bueno (VB); el sistema permite hasta 6 auditores por base de datos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s004]
+    pagina: null
+  - n: 8
+    id: "nominas.registrar-usuarios#8"
+    accion: "Ponga una selección al usuario encargado de informática."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s004]
+    pagina: null
+  - n: 9
+    id: "nominas.registrar-usuarios#9"
+    accion: "Elija al usuario y asígnele una categoría de acceso al módulo: **Administrador de módulo**, **Jefe de grupo**, **Especialista**, **Usuario** o **Ninguno**, que borra los atributos antes asignados."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s004, img-da7c282eaf67-0000]
+    pagina: null
+    fotos:
+      - id: "10142c72b766"
+        ruta_o_url: "imagenes/manual-de-nominas/da7c282eaf67.png"
+        pagina: null
+        ocr: "=) Todos los Usuaries\nInvitados Elija el usuario\n=) Constructora\n2 Personal Técnica\n@ [Ramirez Nufiez, José\nDescripcién ‘Categoria\nAdminstativa\nFacturecién ,\nContabilded\ndefe de Grupo me\nAsistéficia [Acninistrador de Méduio |\nete de Grupo c\nEspeciaista\nUsuario.\nNinguno\nMégulos\nElija esta pestafia"
+  - n: 10
+    id: "nominas.registrar-usuarios#10"
+    accion: "En la pestaña **Escenarios**, registre una selección a los escenarios a los que ingresará el usuario."
+    fuente: [img-f7b8e790a0d8-0000, web-https-documentacion-s10peru-com-manual-d-s004]
+    pagina: null
+    fotos:
+      - id: "e3856464602c"
+        ruta_o_url: "imagenes/manual-de-nominas/f7b8e790a0d8.png"
+        pagina: null
+        ocr: "Descripcién ‘Acceso\n=) Néminas\n\n=| Inicio\nDatos Generales:\nCalendario\nPeriodos\nPartidas de Control\n\n=| Nominas\nDatos por Socio de Negocio 2]\nDatos por Periodo 1]\nDatos por Socio de Negacio y Perioda 2}\nDatos Constantes Simples v4\nMatriz de Constantes Registre una seleccin\nTareo Esténdar alos escenario que\nCalculo de Néminas | ingresara el usuario\nNomina Detallada\n\nMadulos Escenarios Catélogos _)tt…"
+  - n: 11
+    id: "nominas.registrar-usuarios#11"
+    accion: "En el acceso a los catálogos, ponga una selección a las opciones que podrá usar: nuevos registros, modificar, eliminar (siempre que el registro no participe en una aplicación), notas, imprimir y seleccionar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s005]
+    pagina: null
+    fotos:
+      - id: "616a76d756b9"
+        ruta_o_url: "imagenes/manual-de-nominas/3804f178b312.png"
+        pagina: null
+        caption: "Llamada a: Permite efectuar nuevos registros. Llamada b: Permite modificar los registros existentes. Llamada c: Permite eliminar un registro siempre y cuando no esté participando en una aplicación. Llamada d: Permite registrar notas a los registros existentes. Llamada e: Permite imprimir los datos de los catálogos. Llamada f: Permite seleccionar los registros elegidos."
+        ocr: "Aa®OoO®a® ®\nDescripcién Deke 8 «\n| CATALOGOS GENERALES =\nRecursos\nIdentificadores:\nUbicacién Geagratica\nUnidades\nEmpresas\nPanga una seleccién a las opciones\nMonedas:\nTipoCambio\nFinn ain Paormanta,\n.\n— Catalogos: Atributos especiale /"
+  - n: 12
+    id: "nominas.registrar-usuarios#12"
+    accion: "Para ingresar al módulo como usuario, desde el tapiz de su PC elija el botón del módulo con doble clic."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s006]
+    pagina: null
+    fotos:
+      - id: "b1a27d4dd0ea"
+        ruta_o_url: "imagenes/manual-de-nominas/76e320b13fa2.png"
+        pagina: null
+        caption: "Del tapiz de su PC elija el botón con doble clic."
+        ocr: "Sistema 10 =\nSe [igre |] >\n: Ese C)\n—- |sa\nClave Cancelar\nyi"
+verificacion: []
+errores_frecuentes:
+  - sintoma: "El usuario no tiene acceso al módulo."
+    solucion: "Solo los usuarios que tienen asignada una categoría tienen acceso al módulo, y solo se da acceso desde el módulo en el que el usuario se encuentra trabajando."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s004]
+relacionados: [nominas.registrar-trabajador-como-socio-de-negocio]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s004, manual: "Manual de Nóminas", seccion: "2.1.1. Registro de usuarios", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s003, manual: "Manual de Nóminas", seccion: "2.1 Registro del usuario que manejará el módulo de Nóminas:", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s002, manual: "Manual de Nóminas", seccion: "2. Acceso al módulo", pagina: null}
+  - {id: img-f60dc0be71ae-0000, manual: "Manual de Nóminas", seccion: "f60dc0be71ae.png", pagina: null}
+  - {id: img-1064e6842013-0000, manual: "Manual de Nóminas", seccion: "1064e6842013.png", pagina: null}
+  - {id: img-da7c282eaf67-0000, manual: "Manual de Nóminas", seccion: "da7c282eaf67.png", pagina: null}
+  - {id: img-f7b8e790a0d8-0000, manual: "Manual de Nóminas", seccion: "f7b8e790a0d8.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s005, manual: "Manual de Nóminas", seccion: "2.1.2. Acceso a los catálogos", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s006, manual: "Manual de Nóminas", seccion: "2.1.3. Ingreso al módulo como usuario", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

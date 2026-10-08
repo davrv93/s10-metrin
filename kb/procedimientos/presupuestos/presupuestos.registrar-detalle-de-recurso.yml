@@ -1,0 +1,103 @@
+id: presupuestos.registrar-detalle-de-recurso
+version: 1
+modulo: presupuestos
+titulo: "Registrar el detalle de un recurso y trasladar su precio al presupuesto"
+objetivo: "Efectuar el análisis de precios unitarios de un recurso, por ejemplo un equipo, para averiguar su costo y trasladarlo al presupuesto; estos datos se utilizan en Gerencia de Proyectos, en el grupo de Operación de Equipos."
+nivel: avanzado
+preguntas:
+  - "como hago el analisis de precio de un equipo en s10"
+  - "para que sirve el detalle de recursos"
+  - "como armo el costo de un volquete con operador y combustible"
+  - "como paso el precio del detalle al presupuesto"
+  - "no encuentro trasladar precio al presupuesto"
+  - "como agrego recursos al detalle de un recurso"
+  - "quiero calcular el costo hora maquina de mi equipo"
+  - "como activo el detalle de un recurso"
+aliases:
+  - "detalle de recursos"
+  - "detalle del recurso"
+  - "trasladar precio al presupuesto"
+  - "analisis de precios del recurso"
+entidades:
+  modulo: "Presupuestos"
+  pantallas: ["Detalle de recursos", "Catálogo de Recursos"]
+  objetos: ["recurso", "equipo", "detalle", "análisis de precios unitarios"]
+prerrequisitos:
+  - texto: "Para importar el contenido del detalle desde una hoja Excel, los códigos de los recursos deben estar registrados en la base de datos en uso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s116]
+pasos:
+  - n: 1
+    id: "presupuestos.registrar-detalle-de-recurso#1"
+    accion: "Ingrese al escenario **Detalle de recursos**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s116, img-9fa70fdf7bd8-0000]
+    pagina: null
+  - n: 2
+    id: "presupuestos.registrar-detalle-de-recurso#2"
+    accion: "Seleccione los recursos que tendrán detalle: haga clic derecho sobre el recurso y elija **Activar detalle**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s116, img-82f7f1ebb20d-0000]
+    pagina: null
+    fotos:
+      - id: "2982fbec32c9"
+        ruta_o_url: "imagenes/manual-de-presupuestos/c0760f4a7b27.png"
+        pagina: null
+        caption: "Seleccione los recursos que tendrán detalle,"
+        ocr: "Detalle de recursos a\n\n001 Eftructuras Tipo de Recurso|Todos Y | A Acu\n(céuigo | escrincién nd. | Cantidad [Precio\n\nO03 Elbe, EQUIPOS\n\nOO 0348 i fF] MAQUINARIA Y¥ EQUIPO\n\n1 o34804 i =] VEHICULOS DE TRANSPORTE PESADO\n\n0348040034 | CAMION YOLQUETE 12 m3 him 60.4110 123.00\n\nOO o34g9 {=] MAQUINARIA ¥ EQUIPO IMPORTADO\n\nOO o34g04 f] EQUIPOS PARA MOVIMIENTO DE TIERRAS:\n\n0349040008 CARGADOR SOBRE LLANTAS …"
+      - id: "192ea921ba69"
+        ruta_o_url: "imagenes/manual-de-presupuestos/82f7f1ebb20d.png"
+        pagina: null
+        ocr: "Activar detalle\n\nL] Desactivar detalle\nCopiar detalle al cataloga\nImperter Detulle del Recursa 1 5-c)\nExportar a Microsoft Excel"
+  - n: 3
+    id: "presupuestos.registrar-detalle-de-recurso#3"
+    accion: "Para registrar recursos en el detalle, haga clic derecho en la ventana de los recursos del detalle y elija **Adicionar Recurso**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s116, web-https-documentacion-s10peru-com-manual-d-s117, img-1d7e7ec537af-0000]
+    pagina: null
+    fotos:
+      - id: "05359e7b789f"
+        ruta_o_url: "imagenes/manual-de-presupuestos/1d7e7ec537af.png"
+        pagina: null
+        ocr: "Detalle de recursos a\n001 Estructuras Tipo de Recurso|Todas ¥ | |#F| Acumulado\n————————————————————\ncéaigo | Descripcin Und. | Cantictad\nOO 034804 | SE] WEHICULOS[DE TRANSPORTE Pt 7,430.55\nCAMION VOLQUETE 12m3_— [hm 60.4110\nO o3ag |] MAQUINARIA Y EQUIPO IMPORTAD 77 385.63\nea teanaas nnn afin tant m area ne pe men ee\n0348040034 tm Mano de Obra 0.00\nCAMION VOLGQUETE 12 m3 Wi Materiales 0.00\nKeEquipo…"
+  - n: 4
+    id: "presupuestos.registrar-detalle-de-recurso#4"
+    accion: "En el **Catálogo de Recursos**, elija el recurso con doble clic."
+    fuente: [img-8723825b494f-0000, web-https-documentacion-s10peru-com-manual-d-s117]
+    pagina: null
+    fotos:
+      - id: "f5f5571d5989"
+        ruta_o_url: "imagenes/manual-de-presupuestos/8723825b494f.png"
+        pagina: null
+        ocr: "5 [= Sa)\noe Catalogo de Recursos : Todos los Registros = 2 tS\nOpciones 2?\n\nOsXBUC AY Hoo NHRD Bee\nE)-€%y Todos los Registros [ZY Elija con doble clic NIVEL : 3/3\n& Suanone cers VT] ceatgo  [Deseripcn [unified [bai |\n: @EoUPOS |_| |o33so10001 ALQUILER DEEQUIPO a)\n+). @ SUBCONTRATOS GEO TE| ALOUILER DE EQUIPO - CAMION VOLQUET [iy\n__ |03380100010001 | ALQUILER DEEQUIPO - CARGADOR FRON| hm\n| |03380100…"
+  - n: 5
+    id: "presupuestos.registrar-detalle-de-recurso#5"
+    accion: "Para trasladar el precio al presupuesto, haga clic derecho en los recursos del detalle y elija **Trasladar precio al presupuesto**."
+    resultado: "El precio del detalle se traslada al recurso del presupuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s117, img-88c817d90276-0000, web-https-documentacion-s10peru-com-manual-d-s116]
+    pagina: null
+    fotos:
+      - id: "6de9ba9c1037"
+        ruta_o_url: "imagenes/manual-de-presupuestos/88c817d90276.png"
+        pagina: null
+        ocr: "0348040034 fh Mano de Obra 13.70\nCAMION VOLGUETE| Clic derecha fi Meteriales 32.50\n$KEquipos 76.80\nPrecio Unitario: hm $1,123.00 \\Subcontratos 0.00\nDescripcién Recurko Und. | Cantidad [Precio (S/.) Parcial (S/)\nih OPERADOR DE ECHIPO PESADO bh nano 13.70 13.70\nfig COMBUSTIBLES G& Adicionar Recurso .. 13.00 32.50\nBEC MULAN AO CLONE arenes Blea, 54.80 54.84\n5% COSTODEPOSESPN DEL EQUIP( Te cat 10.00 2…"
+  - n: 6
+    id: "presupuestos.registrar-detalle-de-recurso#6"
+    accion: "Repita el proceso para cada uno de los equipos y luego vaya a la hoja del presupuesto y procese."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s116]
+    pagina: null
+verificacion: []
+errores_frecuentes:
+  - sintoma: "No ve desde el presupuesto el análisis de precios unitarios del detalle del recurso."
+    solucion: "Los análisis de precios unitarios del detalle del recurso no se visualizan desde el presupuesto; se trabajan en el escenario Detalle de recursos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s116]
+  - sintoma: "Al procesar el presupuesto, el sistema toma el precio del recurso principal y no el del detalle."
+    solucion: "En la configuración de procesamiento debe estar seleccionada la opción que, al procesar el presupuesto, verifica los recursos considerados en el detalle del recurso; si no está seleccionada, toma el precio del recurso principal."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s020]
+relacionados: [presupuestos.procesar-presupuesto, presupuestos.registrar-recurso-en-el-catalogo]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s116, manual: "Manual de Presupuestos", seccion: "5.1.9 Detalle de recursos (1)", pagina: null}
+  - {id: img-9fa70fdf7bd8-0000, manual: "Manual de Presupuestos", seccion: "9fa70fdf7bd8.png", pagina: null}
+  - {id: img-82f7f1ebb20d-0000, manual: "Manual de Presupuestos", seccion: "82f7f1ebb20d.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s117, manual: "Manual de Presupuestos", seccion: "5.1.9 Detalle de recursos (2)", pagina: null}
+  - {id: img-1d7e7ec537af-0000, manual: "Manual de Presupuestos", seccion: "1d7e7ec537af.png", pagina: null}
+  - {id: img-8723825b494f-0000, manual: "Manual de Presupuestos", seccion: "8723825b494f.png", pagina: null}
+  - {id: img-88c817d90276-0000, manual: "Manual de Presupuestos", seccion: "88c817d90276.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s020, manual: "Manual de Presupuestos", seccion: "2.2 Configuración (3)", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

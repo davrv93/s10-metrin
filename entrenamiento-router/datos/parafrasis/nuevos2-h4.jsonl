@@ -1,0 +1,283 @@
+{"texto": "como le asigno detraccion a varios recursos a la vez en facturacion", "procedimiento": "facturacion.asignar-tributos-masivamente", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "necesito ponerle percepcion a todos los recursos de una categoria, como lo hago de una sola vez", "procedimiento": "facturacion.asignar-tributos-masivamente", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "pasos para asignar los items de detraccion a los recursos seleccionados desde asignacion de tributos", "procedimiento": "facturacion.asignar-tributos-masivamente", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "tengo 300 recursos de cemento y fierro que van con detraccion, hay forma de asignarlos juntos", "procedimiento": "facturacion.asignar-tributos-masivamente", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como selecciono recursos y les asigno la percepcion con clic derecho", "procedimiento": "facturacion.asignar-tributos-masivamente", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "procedimiento para configurar de forma masiva los items de percepcion en los recursos", "procedimiento": "facturacion.asignar-tributos-masivamente", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "asignar detraccion en bloque", "procedimiento": "facturacion.asignar-tributos-masivamente", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "kiero ponerle percepcion a los recursos todos juntos xq son muchos", "procedimiento": "facturacion.asignar-tributos-masivamente", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "en facturacion como asigno la detracsion a los recursos q selecciono", "procedimiento": "facturacion.asignar-tributos-masivamente", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "me pidieron que todos los alquileres de maquinaria lleven detraccion, como los configuro sin hacerlo uno por uno", "procedimiento": "facturacion.asignar-tributos-masivamente", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como asigno tributos a los recursos en bloque", "procedimiento": "facturacion.asignar-tributos-masivamente", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cual es el procedimiento para que un grupo de recursos quede con detraccion", "procedimiento": "facturacion.asignar-tributos-masivamente", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "asignacion masiva de percepcion", "procedimiento": "facturacion.asignar-tributos-masivamente", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "el contador dice que a todos los materiales les pongamos el item de detraccion, como hago eso rapido", "procedimiento": "facturacion.asignar-tributos-masivamente", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "asignar > detraccion a la seleccion de recursos, como es", "procedimiento": "facturacion.asignar-tributos-masivamente", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como dejo varios recursos con sus items de percepcion configurados al mismo tiempo", "procedimiento": "facturacion.asignar-tributos-masivamente", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "en que modulo esta asignacion de tributos", "procedimiento": "facturacion.asignar-tributos-masivamente", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde queda el escenario para asignar detraccion y percepcion a los recursos", "procedimiento": "facturacion.asignar-tributos-masivamente", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "por donde entro para asignar tributos a los recursos", "procedimiento": "facturacion.asignar-tributos-masivamente", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "asignacion de tributos donde esta", "procedimiento": "facturacion.asignar-tributos-masivamente", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "no encuentro el escenario de asignacion de tributos en facturacion", "procedimiento": "facturacion.asignar-tributos-masivamente", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en q parte de facturacion se asigna la percepcion a los recursos", "procedimiento": "facturacion.asignar-tributos-masivamente", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "donde reviso como quedaron los recursos con detraccion despues de asignarlos", "procedimiento": "facturacion.asignar-tributos-masivamente", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "que debo tener configurado para que la percepcion se aplique a un proveedor", "procedimiento": "facturacion.asignar-tributos-masivamente", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "el proveedor tiene que estar calificado como agente de percepcion, donde se marca", "procedimiento": "facturacion.asignar-tributos-masivamente", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como dejo configurado un recurso para que le calcule percepcion en las compras", "procedimiento": "facturacion.asignar-tributos-masivamente", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que requisito necesito antes de asignar percepcion a los recursos", "procedimiento": "facturacion.asignar-tributos-masivamente", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "configurar items de detraccion en los recursos pa q se calcule en el comprobante", "procedimiento": "facturacion.asignar-tributos-masivamente", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "hay que tocar algo en el socio de negocio para que funcione la percepcion de los recursos", "procedimiento": "facturacion.asignar-tributos-masivamente", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "ya asigne la detraccion al recurso pero el comprobante no la calcula", "procedimiento": "facturacion.asignar-tributos-masivamente", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "por que no se aplica la percepcion si el recurso ya tiene el item", "procedimiento": "facturacion.asignar-tributos-masivamente", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "mi factura de 500 soles no calcula detraccion aunque el recurso esta configurado", "procedimiento": "facturacion.asignar-tributos-masivamente", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no me calcula la detraccion", "procedimiento": "facturacion.asignar-tributos-masivamente", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "no jala la percepcion en la factura de compra aunque asigne los items", "procedimiento": "facturacion.asignar-tributos-masivamente", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "xq no se me aplica percepcion a un proveedor si el recurso ya esta asignado", "procedimiento": "facturacion.asignar-tributos-masivamente", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "asigne detraccion en bloque y al hacer la factura no sale nada, q paso", "procedimiento": "facturacion.asignar-tributos-masivamente", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "como se realiza el cambio de titular de un inmueble vendido con minuta entre sperant y s10", "procedimiento": "facturacion.cambiar-titular-sperant", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el cliente quiere pasar su departamento a su hermano, que hago en sperant para cambiar el titular", "procedimiento": "facturacion.cambiar-titular-sperant", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "vendimos un depa y el comprador cedio sus derechos a otra persona, como se registra el nuevo titular", "procedimiento": "facturacion.cambiar-titular-sperant", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como edito el nombre del nuevo titular en la proforma de sperant", "procedimiento": "facturacion.cambiar-titular-sperant", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "pasos para generar la facturacion del cambio de titular en s10", "procedimiento": "facturacion.cambiar-titular-sperant", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "despues de cambiar el titular en sperant que sigue en s10", "procedimiento": "facturacion.cambiar-titular-sperant", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cambio de titular", "procedimiento": "facturacion.cambiar-titular-sperant", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "cambiar titular depa", "procedimiento": "facturacion.cambiar-titular-sperant", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como hago el cambio de titulr de un inmueble en sperant xq el cliente cedio", "procedimiento": "facturacion.cambiar-titular-sperant", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "kiero cambiar al dueño del departamento en el s10, ke hago", "procedimiento": "facturacion.cambiar-titular-sperant", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como se cierra la orden de venta original con nota de credito cuando cambia el titular", "procedimiento": "facturacion.cambiar-titular-sperant", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el comprador original ya no quiere el lote y entra otra persona, como hago que la boleta pase a la orden de venta nueva", "procedimiento": "facturacion.cambiar-titular-sperant", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como se generan la nota de credito y la nueva orden de venta al cambiar el titular de la unidad", "procedimiento": "facturacion.cambiar-titular-sperant", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como reviso el documento origen y el destino de un cambio de titular", "procedimiento": "facturacion.cambiar-titular-sperant", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "procedimiento de cambio de titularidad con minuta en el escenario cambio de titularidad y/o inmueble", "procedimiento": "facturacion.cambiar-titular-sperant", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como pongo al nuevo cliente como titular del inmueble desde la proforma y lo guardo", "procedimiento": "facturacion.cambiar-titular-sperant", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde esta el escenario cambio de titularidad y/o inmueble", "procedimiento": "facturacion.cambiar-titular-sperant", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que parte del s10 se ven los cambios de titular hechos en sperant", "procedimiento": "facturacion.cambiar-titular-sperant", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "cambio de titularidad donde esta", "procedimiento": "facturacion.cambiar-titular-sperant", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "donde veo la orden de venta original y la nueva despues de un cambio de titular", "procedimiento": "facturacion.cambiar-titular-sperant", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en sperant donde cambio el titular de la proforma, que opcion es", "procedimiento": "facturacion.cambiar-titular-sperant", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd genero la facturacion del cambio de titular", "procedimiento": "facturacion.cambiar-titular-sperant", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "por donde se ve la nota de credito q se genero con el cambio de titular", "procedimiento": "facturacion.cambiar-titular-sperant", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "que tiene que estar listo antes de hacer un cambio de titular con minuta", "procedimiento": "facturacion.cambiar-titular-sperant", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "la minuta ya se envio al s10? que tengo q revisar para poder cambiar titular", "procedimiento": "facturacion.cambiar-titular-sperant", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "de donde toma el tipo de documento de la nota de credito el cambio de titular", "procedimiento": "facturacion.cambiar-titular-sperant", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "los abonos tienen que estar boleteados antes del cambio de titular", "procedimiento": "facturacion.cambiar-titular-sperant", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como activo enviar minuta para poder hacer el cambio de titular", "procedimiento": "facturacion.cambiar-titular-sperant", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "donde se define el tipo de documento de la nota de credito q usa el cambio de titular", "procedimiento": "facturacion.cambiar-titular-sperant", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "me bloquea el cambio de titular porque un abono no tiene boleta", "procedimiento": "facturacion.cambiar-titular-sperant", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "en cambio de titularidad el boton de generar facturacion no se muestra, el estado esta en pendiente", "procedimiento": "facturacion.cambiar-titular-sperant", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "generar facturacion desaparecio del cambio de titular", "procedimiento": "facturacion.cambiar-titular-sperant", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "cambio de titular no procede", "procedimiento": "facturacion.cambiar-titular-sperant", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "hice el cambio de titular y la orden de venta original quedo cerrada por el usuario, es normal", "procedimiento": "facturacion.cambiar-titular-sperant", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "uno de los abonos tiene boleta y los demas no, y no puedo cambiar el titular", "procedimiento": "facturacion.cambiar-titular-sperant", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "la nueva orden de venta sigue como cotizacion despues de pedir el cambio de titular", "procedimiento": "facturacion.cambiar-titular-sperant", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "como exporto los recursos de asignacion de tributos y luego importo los codigos desde excel", "procedimiento": "facturacion.importar-tributos-de-recursos-desde-excel", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "tengo un excel con el item de detraccion de cada recurso, como lo cargo al s10", "procedimiento": "facturacion.importar-tributos-de-recursos-desde-excel", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "pasos para importar tributos de recursos desde una hoja de excel", "procedimiento": "facturacion.importar-tributos-de-recursos-desde-excel", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como relaciono las cabeceras de la hoja con los campos del s10 al importar detracciones", "procedimiento": "facturacion.importar-tributos-de-recursos-desde-excel", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "importar percepcion de recursos con excel", "procedimiento": "facturacion.importar-tributos-de-recursos-desde-excel", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "quiero actualizar la detraccion de 800 recursos y la tengo en excel, como la subo", "procedimiento": "facturacion.importar-tributos-de-recursos-desde-excel", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "exportar recursos a excel de asignacion de tributos", "procedimiento": "facturacion.importar-tributos-de-recursos-desde-excel", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "importar tributos excel", "procedimiento": "facturacion.importar-tributos-de-recursos-desde-excel", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "kiero subir los codigos de detraccion x excel, como se hace", "procedimiento": "facturacion.importar-tributos-de-recursos-desde-excel", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como cargo los items de percepcion de los recursos desde un archivo xls", "procedimiento": "facturacion.importar-tributos-de-recursos-desde-excel", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "el contador me paso una hoja con los codigos sunat por recurso, como la importo a facturacion", "procedimiento": "facturacion.importar-tributos-de-recursos-desde-excel", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como selecciono las filas del excel que voy a importar a asignacion de tributos", "procedimiento": "facturacion.importar-tributos-de-recursos-desde-excel", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como busco el archivo y lo abro para importar tributos de recursos", "procedimiento": "facturacion.importar-tributos-de-recursos-desde-excel", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como llevo los recursos a excel para completar sus codigos de detraccion", "procedimiento": "facturacion.importar-tributos-de-recursos-desde-excel", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cargar detracciones y percepciones de los recursos con un excel", "procedimiento": "facturacion.importar-tributos-de-recursos-desde-excel", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "en que orden hago exportar, llenar la hoja e importar para los tributos de los recursos", "procedimiento": "facturacion.importar-tributos-de-recursos-desde-excel", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "donde esta el icono para exportar a excel los recursos en asignacion de tributos", "procedimiento": "facturacion.importar-tributos-de-recursos-desde-excel", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "por donde inicio la importacion de los tributos de recursos", "procedimiento": "facturacion.importar-tributos-de-recursos-desde-excel", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde reviso el resultado de la importacion de detracciones", "procedimiento": "facturacion.importar-tributos-de-recursos-desde-excel", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que escenario se importan los codigos de detraccion con excel", "procedimiento": "facturacion.importar-tributos-de-recursos-desde-excel", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "icono exportar a microsoft excel donde esta en tributos", "procedimiento": "facturacion.importar-tributos-de-recursos-desde-excel", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "dnd se importa el excel de detracciones", "procedimiento": "facturacion.importar-tributos-de-recursos-desde-excel", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "importacion de tributos en que modulo", "procedimiento": "facturacion.importar-tributos-de-recursos-desde-excel", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "que columnas debe tener el excel para importar tributos de recursos", "procedimiento": "facturacion.importar-tributos-de-recursos-desde-excel", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que campos son obligatorios en la hoja de tributos, recurso, detraccion y percepcion", "procedimiento": "facturacion.importar-tributos-de-recursos-desde-excel", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "de donde saco los codigos de item de detraccion para llenar la hoja", "procedimiento": "facturacion.importar-tributos-de-recursos-desde-excel", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "como se configura la relacion entre los campos del s10 y las columnas del excel", "procedimiento": "facturacion.importar-tributos-de-recursos-desde-excel", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q codigos van en el excel, el de recurso y los items", "procedimiento": "facturacion.importar-tributos-de-recursos-desde-excel", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "que formato debe tener el archivo excel antes de importarlo a asignacion de tributos", "procedimiento": "facturacion.importar-tributos-de-recursos-desde-excel", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "importe el excel de tributos y no veo cambios en la grilla", "procedimiento": "facturacion.importar-tributos-de-recursos-desde-excel", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "al importar me pide relacionar columnas y no se cuales son del s10", "procedimiento": "facturacion.importar-tributos-de-recursos-desde-excel", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no puedo importar mi hoja de detracciones, falta algun campo obligatorio", "procedimiento": "facturacion.importar-tributos-de-recursos-desde-excel", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "importacion de tributos no funciona", "procedimiento": "facturacion.importar-tributos-de-recursos-desde-excel", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "importe el excel pero los recursos siguen sin item de detraccion", "procedimiento": "facturacion.importar-tributos-de-recursos-desde-excel", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el excel de tributos no carga xq falta el codigo de recurso", "procedimiento": "facturacion.importar-tributos-de-recursos-desde-excel", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "se me fueron filas de mas al subir tributos de recursos, como controlo cuales se importan", "procedimiento": "facturacion.importar-tributos-de-recursos-desde-excel", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "ya tengo el documento de entrega a rendir, como le pago al trabajador en administrativo", "procedimiento": "facturacion.pagar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como hago la orden de pago para una entrega a rendir", "procedimiento": "facturacion.pagar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "pasos para desembolsar una entrega a rendir desde pendientes de pago", "procedimiento": "facturacion.pagar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como agrego el documento entregas a rendir a la orden de pago", "procedimiento": "facturacion.pagar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como pago al residente el dinero que le toca por su entrega a rendir", "procedimiento": "facturacion.pagar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "pagar entrega a rendir", "procedimiento": "facturacion.pagar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "pago entrega a rendir", "procedimiento": "facturacion.pagar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "kiero pagar una entrega a rendir con cheque, como se hace", "procedimiento": "facturacion.pagar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como envio a aprobacion la op de una entrega a rendir y la pago", "procedimiento": "facturacion.pagar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "el ingeniero de obra necesita su plata para gastos menores, ya esta el documento, como se la desembolso", "procedimiento": "facturacion.pagar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "despues de aprobar la orden de pago de la entrega a rendir como la pago", "procedimiento": "facturacion.pagar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como pago con documento actual la OP de una entrega a rendir", "procedimiento": "facturacion.pagar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "que pasos sigo en administrativo para que el personal reciba su entrega a rendir", "procedimiento": "facturacion.pagar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "luego de crear la entrega a rendir en documentos por pagar, como sigo para pagarla", "procedimiento": "facturacion.pagar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "procedimiento para pagar el documento entregas a rendir con orden de pago", "procedimiento": "facturacion.pagar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "hay que hacer orden de pago para dar el dinero de la entrega a rendir al personal", "procedimiento": "facturacion.pagar-entrega-a-rendir", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "en que modulo se paga la entrega a rendir", "procedimiento": "facturacion.pagar-entrega-a-rendir", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde veo el pago de la entrega a rendir ya hecho", "procedimiento": "facturacion.pagar-entrega-a-rendir", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde se aprueba la orden de pago de la entrega a rendir", "procedimiento": "facturacion.pagar-entrega-a-rendir", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "por donde entro a pendientes de pago para pagar la entrega a rendir", "procedimiento": "facturacion.pagar-entrega-a-rendir", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde esta orden de pago en administrativo para pagar la entrega a rendir", "procedimiento": "facturacion.pagar-entrega-a-rendir", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd veo el pago d la entrega a rendir", "procedimiento": "facturacion.pagar-entrega-a-rendir", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "pagos entrega a rendir donde", "procedimiento": "facturacion.pagar-entrega-a-rendir", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "que necesito tener antes de pagar una entrega a rendir", "procedimiento": "facturacion.pagar-entrega-a-rendir", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "quien tiene que ser el aprobador de la op de entrega a rendir y que permisos necesita", "procedimiento": "facturacion.pagar-entrega-a-rendir", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que cuenta bancaria pongo al registrar la orden de pago de la entrega a rendir", "procedimiento": "facturacion.pagar-entrega-a-rendir", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "hay que crear primero el documento entregas a rendir antes de pagar, donde", "procedimiento": "facturacion.pagar-entrega-a-rendir", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "para pagar la entrega a rendir hay que configurar algun aprobador", "procedimiento": "facturacion.pagar-entrega-a-rendir", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "q datos pongo en la cabecera de la op de entrega a rendir, cuenta y descripcion", "procedimiento": "facturacion.pagar-entrega-a-rendir", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "agregue documento a la orden de pago pero la entrega a rendir no sale en la lista", "procedimiento": "facturacion.pagar-entrega-a-rendir", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el sistema no me deja desembolsar en administrativo sin documento, es por la entrega a rendir", "procedimiento": "facturacion.pagar-entrega-a-rendir", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "hice el pago de la entrega a rendir y no sale registrado", "procedimiento": "facturacion.pagar-entrega-a-rendir", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no puedo aprobar la orden de pago de la entrega a rendir", "procedimiento": "facturacion.pagar-entrega-a-rendir", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no se puede pagar entrega a rendir", "procedimiento": "facturacion.pagar-entrega-a-rendir", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "la OP de la entrega no me deja pagarla porque no esta aprobada", "procedimiento": "facturacion.pagar-entrega-a-rendir", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "por q no puedo desembolsar la entrega a rendir si no hay documento", "procedimiento": "facturacion.pagar-entrega-a-rendir", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "como canjeo con letras las facturas pendientes de un proveedor", "procedimiento": "administrativo.canjear-documentos-con-letras", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "pasos para registrar una orden de pago de canje con letras", "procedimiento": "administrativo.canjear-documentos-con-letras", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el proveedor nos dio letras en vez de cobrar las facturas, como lo registramos en el sistema", "procedimiento": "administrativo.canjear-documentos-con-letras", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como configuro cada letra que el proveedor emitio en la orden de pago", "procedimiento": "administrativo.canjear-documentos-con-letras", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como ejecuto el canje desde pendientes de pago", "procedimiento": "administrativo.canjear-documentos-con-letras", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "canje con letras", "procedimiento": "administrativo.canjear-documentos-con-letras", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "canjear facturas x letras", "procedimiento": "administrativo.canjear-documentos-con-letras", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "kiero hacer un canje con letras de un proveedor, ke tipo de op uso", "procedimiento": "administrativo.canjear-documentos-con-letras", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como se cambian documentos por pagar por letras unicas de cambio", "procedimiento": "administrativo.canjear-documentos-con-letras", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "tenemos tres facturas con el mismo proveedor y acordamos pagarlas en tres letras, como lo hago", "procedimiento": "administrativo.canjear-documentos-con-letras", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como selecciono los documentos del proveedor para canjearlos", "procedimiento": "administrativo.canjear-documentos-con-letras", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como marco por proveedor la orden de pago de canje con letras", "procedimiento": "administrativo.canjear-documentos-con-letras", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "despues de aprobar la op de canje, como genero las letras", "procedimiento": "administrativo.canjear-documentos-con-letras", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "procedimiento para convertir la deuda de facturas en letras con el proveedor", "procedimiento": "administrativo.canjear-documentos-con-letras", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como envio a aprobacion la orden de canje con letras y la ejecuto", "procedimiento": "administrativo.canjear-documentos-con-letras", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el canje con letras se hace con detalles en el documento", "procedimiento": "administrativo.canjear-documentos-con-letras", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde veo las letras unicas de cambio que se generaron", "procedimiento": "administrativo.canjear-documentos-con-letras", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que escenario se ejecuta el canje con letras", "procedimiento": "administrativo.canjear-documentos-con-letras", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde esta el tipo de orden de pago canje con letras", "procedimiento": "administrativo.canjear-documentos-con-letras", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "por donde veo los documentos por pagar tipo letra", "procedimiento": "administrativo.canjear-documentos-con-letras", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd se ven las letras despues del canje", "procedimiento": "administrativo.canjear-documentos-con-letras", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "letras generadas donde", "procedimiento": "administrativo.canjear-documentos-con-letras", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "en que modulo se hace el canje con letras, administrativo o facturacion", "procedimiento": "administrativo.canjear-documentos-con-letras", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "que documento debe estar configurado como base para poder canjear con letras", "procedimiento": "administrativo.canjear-documentos-con-letras", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "tengo que activar letra unica de cambio en el catalogo de tipo de documento", "procedimiento": "administrativo.canjear-documentos-con-letras", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "donde configuro las letras del proveedor, cuotas y fechas", "procedimiento": "administrativo.canjear-documentos-con-letras", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "para canje con letras es obligatorio elegir cuenta bancaria", "procedimiento": "administrativo.canjear-documentos-con-letras", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q configuracion previa necesito para q el canje genere las letras", "procedimiento": "administrativo.canjear-documentos-con-letras", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "que pongo en la cabecera de la orden de canje para que salgan solo los documentos de un proveedor", "procedimiento": "administrativo.canjear-documentos-con-letras", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "en el cronograma de pagos me salen documentos de todos los proveedores en el canje", "procedimiento": "administrativo.canjear-documentos-con-letras", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "canje con letras no jala los documentos de mi proveedor", "procedimiento": "administrativo.canjear-documentos-con-letras", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no se generaron las letras despues del canje", "procedimiento": "administrativo.canjear-documentos-con-letras", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me deja canjear con letras", "procedimiento": "administrativo.canjear-documentos-con-letras", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "en la orden de pago de canje no me deja elegir cuenta bancaria, falla algo", "procedimiento": "administrativo.canjear-documentos-con-letras", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "aprobe la orden de canje y las letras no aparecen en documentos por pagar", "procedimiento": "administrativo.canjear-documentos-con-letras", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no m sale letra unica de cambio como tipo de documento al canjear", "procedimiento": "administrativo.canjear-documentos-con-letras", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "como creo la cuenta bancaria de un proveedor desde el pago electronico", "procedimiento": "administrativo.crear-cuenta-destino-en-pago-electronico", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "cuando hago el pago electronico me muestra socios observados, como los arreglo", "procedimiento": "administrativo.crear-cuenta-destino-en-pago-electronico", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como le agrego cuenta destino al proveedor sin salir de pendientes de pago", "procedimiento": "administrativo.crear-cuenta-destino-en-pago-electronico", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "pasos para generar el pago electronico cuando faltan cuentas destino", "procedimiento": "administrativo.crear-cuenta-destino-en-pago-electronico", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como entro a propiedades del socio de negocio desde la ventana de observados", "procedimiento": "administrativo.crear-cuenta-destino-en-pago-electronico", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "pago electronico socio observado", "procedimiento": "administrativo.crear-cuenta-destino-en-pago-electronico", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "falta cuenta destino", "procedimiento": "administrativo.crear-cuenta-destino-en-pago-electronico", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "xq me sale q el proveedor no tiene cuenta banco en el pago electronico y como la creo", "procedimiento": "administrativo.crear-cuenta-destino-en-pago-electronico", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "kiero generar el txt para el banco pero hay proveedores sin cuenta, ke hago", "procedimiento": "administrativo.crear-cuenta-destino-en-pago-electronico", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "tengo que pagar a 40 proveedores por transferencia y a 3 les falta la cuenta, como los completo rapido", "procedimiento": "administrativo.crear-cuenta-destino-en-pago-electronico", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como creo la cuenta en la pestaña cuenta banco del socio estando en el pago electronico", "procedimiento": "administrativo.crear-cuenta-destino-en-pago-electronico", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como termino de generar el pago electronico despues de crear las cuentas", "procedimiento": "administrativo.crear-cuenta-destino-en-pago-electronico", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "procedimiento para subsanar socios de negocio sin cuenta bancaria destino en el pago electronico", "procedimiento": "administrativo.crear-cuenta-destino-en-pago-electronico", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el banco me pide el archivo del pago masivo y el sistema no lo genera, como agrego la cuenta del proveedor", "procedimiento": "administrativo.crear-cuenta-destino-en-pago-electronico", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "puedo crear la cuenta bancaria del proveedor desde pendientes de pago sin ir al catalogo", "procedimiento": "administrativo.crear-cuenta-destino-en-pago-electronico", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como hago clic derecho en pago electronico y resuelvo los observados", "procedimiento": "administrativo.crear-cuenta-destino-en-pago-electronico", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde esta la pestaña cuenta banco del socio de negocio", "procedimiento": "administrativo.crear-cuenta-destino-en-pago-electronico", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que escenario se ejecuta el pago electronico", "procedimiento": "administrativo.crear-cuenta-destino-en-pago-electronico", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "por donde entro a propiedades del socio observado", "procedimiento": "administrativo.crear-cuenta-destino-en-pago-electronico", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde veo el pago electronico ya efectuado", "procedimiento": "administrativo.crear-cuenta-destino-en-pago-electronico", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd sale la opcion pago electronico", "procedimiento": "administrativo.crear-cuenta-destino-en-pago-electronico", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "cuenta banco proveedor donde", "procedimiento": "administrativo.crear-cuenta-destino-en-pago-electronico", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "en que parte de pendientes de pago aparece la ventana de socios observados", "procedimiento": "administrativo.crear-cuenta-destino-en-pago-electronico", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "que debe tener la orden de pago para poder hacer pago electronico por txt", "procedimiento": "administrativo.crear-cuenta-destino-en-pago-electronico", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "tengo que marcar el check de pago electronico en la op", "procedimiento": "administrativo.crear-cuenta-destino-en-pago-electronico", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "la op tiene que estar aprobada para generar el pago electronico", "procedimiento": "administrativo.crear-cuenta-destino-en-pago-electronico", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como se determina la estructura del txt por banco para el pago masivo", "procedimiento": "administrativo.crear-cuenta-destino-en-pago-electronico", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "q requisitos tiene un proveedor para q lo incluyan en el pago electronico", "procedimiento": "administrativo.crear-cuenta-destino-en-pago-electronico", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "donde defino la cuenta destino del proveedor para pagos masivos", "procedimiento": "administrativo.crear-cuenta-destino-en-pago-electronico", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "el txt del pago masivo no se genera, dice que hay socios observados", "procedimiento": "administrativo.crear-cuenta-destino-en-pago-electronico", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "me aparece una ventana con proveedores observados y no puedo seguir", "procedimiento": "administrativo.crear-cuenta-destino-en-pago-electronico", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "pago electronico no genera archivo", "procedimiento": "administrativo.crear-cuenta-destino-en-pago-electronico", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "cerre la ventana de observados y igual sigue sin generar el txt", "procedimiento": "administrativo.crear-cuenta-destino-en-pago-electronico", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me deja generar el pago electronico porque el proveedor no tiene cuenta", "procedimiento": "administrativo.crear-cuenta-destino-en-pago-electronico", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "xq el sistema obliga cuenta destino en el pago electronico", "procedimiento": "administrativo.crear-cuenta-destino-en-pago-electronico", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "cree la cuenta del proveedor pero en el pago electronico sigue observado", "procedimiento": "administrativo.crear-cuenta-destino-en-pago-electronico", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "como saco recursos del almacen del proyecto para una partida de control", "procedimiento": "compras.registrar-pedido-a-almacen-a-partida-de-control", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como registro un pedido a almacen marcando A Almacen", "procedimiento": "compras.registrar-pedido-a-almacen-a-partida-de-control", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "pasos del pedido manual a almacen en compras y pedidos", "procedimiento": "compras.registrar-pedido-a-almacen-a-partida-de-control", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como le pongo partida de control y destino especifico a cada recurso del pedido", "procedimiento": "compras.registrar-pedido-a-almacen-a-partida-de-control", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "pedido a almacen para transferir material a otro proyecto, como se hace", "procedimiento": "compras.registrar-pedido-a-almacen-a-partida-de-control", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "pedido a almacen", "procedimiento": "compras.registrar-pedido-a-almacen-a-partida-de-control", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "pedido de stock partida de control", "procedimiento": "compras.registrar-pedido-a-almacen-a-partida-de-control", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "kiero pedir material q ya hay en el almacen pa una partida, ke hago", "procedimiento": "compras.registrar-pedido-a-almacen-a-partida-de-control", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como registro un pedido a almasen con destino especifico", "procedimiento": "compras.registrar-pedido-a-almacen-a-partida-de-control", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "soy almacenero y el residente necesita fierro que hay en stock para una partida, como armo el pedido", "procedimiento": "compras.registrar-pedido-a-almacen-a-partida-de-control", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como elijo el destino de la partida de control, proyecto o subcontrato", "procedimiento": "compras.registrar-pedido-a-almacen-a-partida-de-control", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como indico quien recoge los recursos en el pedido a almacen", "procedimiento": "compras.registrar-pedido-a-almacen-a-partida-de-control", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "despues de grabar el pedido a almacen como se lo mando al aprobador", "procedimiento": "compras.registrar-pedido-a-almacen-a-partida-de-control", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cual es el procedimiento para pedir recursos con stock a una partida de control", "procedimiento": "compras.registrar-pedido-a-almacen-a-partida-de-control", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como pido al almacen material para un subcontrato", "procedimiento": "compras.registrar-pedido-a-almacen-a-partida-de-control", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como registro un pedido a almacen hacia otro almacen del mismo proyecto", "procedimiento": "compras.registrar-pedido-a-almacen-a-partida-de-control", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde esta el escenario pedidos del grupo pedidos", "procedimiento": "compras.registrar-pedido-a-almacen-a-partida-de-control", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde apruebo un pedido a almacen como residente", "procedimiento": "compras.registrar-pedido-a-almacen-a-partida-de-control", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "por donde entro para hacer un pedido a almacen", "procedimiento": "compras.registrar-pedido-a-almacen-a-partida-de-control", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde aparece la ventana aprobadores para el pedido", "procedimiento": "compras.registrar-pedido-a-almacen-a-partida-de-control", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "pedidos a almacen dnd se aprueban", "procedimiento": "compras.registrar-pedido-a-almacen-a-partida-de-control", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "en que modulo puedo hacer pedidos de stock, gerencia de proyectos o compras", "procedimiento": "compras.registrar-pedido-a-almacen-a-partida-de-control", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "aprobar pedido almacen donde", "procedimiento": "compras.registrar-pedido-a-almacen-a-partida-de-control", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "que debo tener registrado antes de hacer un pedido a almacen", "procedimiento": "compras.registrar-pedido-a-almacen-a-partida-de-control", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "el proyecto tiene que estar programado en el cronograma para pedir a almacen", "procedimiento": "compras.registrar-pedido-a-almacen-a-partida-de-control", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como registro al aprobador del pedido a almacen", "procedimiento": "compras.registrar-pedido-a-almacen-a-partida-de-control", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q necesita el recurso para q lo pueda pedir a una partida de control", "procedimiento": "compras.registrar-pedido-a-almacen-a-partida-de-control", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "las partidas de control tienen que estar creadas antes del pedido", "procedimiento": "compras.registrar-pedido-a-almacen-a-partida-de-control", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "se puede elegir una persona distinta como aprobador en cada pedido a almacen", "procedimiento": "compras.registrar-pedido-a-almacen-a-partida-de-control", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "al grabar el pedido a almacen sale mensaje de que esta configurado para pedidos a compras", "procedimiento": "compras.registrar-pedido-a-almacen-a-partida-de-control", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me deja asignar partida de control a un recurso del pedido", "procedimiento": "compras.registrar-pedido-a-almacen-a-partida-de-control", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el recurso no aparece en el pedido a almacen porque no tiene stock", "procedimiento": "compras.registrar-pedido-a-almacen-a-partida-de-control", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no puedo hacer pedido a almacen", "procedimiento": "compras.registrar-pedido-a-almacen-a-partida-de-control", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "mande el pedido a almacen y el residente no lo ve para aprobar", "procedimiento": "compras.registrar-pedido-a-almacen-a-partida-de-control", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "me sale un aviso al guardar el pedido y no se si grabo", "procedimiento": "compras.registrar-pedido-a-almacen-a-partida-de-control", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me sale la opcion partida de control + destino especifico al dar clic derecho en el recurso", "procedimiento": "compras.registrar-pedido-a-almacen-a-partida-de-control", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "como creo un usuario del modulo de compras y pedidos", "procedimiento": "compras.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "pasos para registrar un usuario nuevo en mantenimiento de usuarios de compras", "procedimiento": "compras.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como asigno la categoria jefe de grupo a un usuario de compras", "procedimiento": "compras.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como le doy acceso a escenarios al usuario de compras y pedidos", "procedimiento": "compras.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como registro el grupo y los subgrupos de personal tecnico y administrativo en compras", "procedimiento": "compras.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "usuario nuevo compras", "procedimiento": "compras.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "dar permisos compras y pedidos", "procedimiento": "compras.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "kiero crear un usuario pa compras y pedidos, ke pasos sigo", "procedimiento": "compras.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como le asigno catalogos a un usuario del modulo de compras", "procedimiento": "compras.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "entro un logistico nuevo a la constructora, como lo registro en el modulo de compras", "procedimiento": "compras.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como hago a un usuario auditor de un catalogo en compras y pedidos", "procedimiento": "compras.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como pongo que un usuario pueda registrar, modificar o eliminar en un catalogo de compras", "procedimiento": "compras.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como elijo a la persona desde el catalogo de socio de negocio para volverla usuario de compras", "procedimiento": "compras.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "procedimiento para dar de alta a un usuario con accesos en compras y pedidos", "procedimiento": "compras.registrar-usuarios", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "donde esta mantenimiento de usuarios en compras y pedidos", "procedimiento": "compras.registrar-usuarios", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que pestaña asigno las categorias del usuario de compras", "procedimiento": "compras.registrar-usuarios", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "por donde le doy acceso a catalogos al usuario de compras", "procedimiento": "compras.registrar-usuarios", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde elijo los escenarios que puede ver un usuario de compras", "procedimiento": "compras.registrar-usuarios", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "dnd veo el atributo especial en usuarios de compras", "procedimiento": "compras.registrar-usuarios", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "en compras donde se crean los grupos y subgrupos de usuarios", "procedimiento": "compras.registrar-usuarios", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "que categoria le pongo a un usuario que solo debe consultar en compras", "procedimiento": "compras.registrar-usuarios", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que significa cada color de visto bueno para auditar catalogos", "procedimiento": "compras.registrar-usuarios", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "diferencia entre administrador de sistemas, especialista y usuario en compras", "procedimiento": "compras.registrar-usuarios", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que debe estar registrado antes de crear usuarios del modulo de compras", "procedimiento": "compras.registrar-usuarios", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "como configuro permisos de modificar y eliminar en cada catalogo de compras", "procedimiento": "compras.registrar-usuarios", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q color de vb va pa auditar recursos", "procedimiento": "compras.registrar-usuarios", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "el comprador no puede abrir el escenario de cotizaciones, le sale sin acceso", "procedimiento": "compras.registrar-usuarios", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "un usuario no ve el proyecto que registro otro usuario en compras", "procedimiento": "compras.registrar-usuarios", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no encuentro a la persona al registrar un usuario nuevo de compras", "procedimiento": "compras.registrar-usuarios", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "usuario sin acceso compras", "procedimiento": "compras.registrar-usuarios", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "xq no me deja crear usuarios en compras", "procedimiento": "compras.registrar-usuarios", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}

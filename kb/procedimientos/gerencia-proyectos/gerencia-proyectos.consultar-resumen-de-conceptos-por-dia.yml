@@ -1,0 +1,83 @@
+id: gerencia-proyectos.consultar-resumen-de-conceptos-por-dia
+version: 1
+modulo: gerencia-proyectos
+titulo: "Consultar el resumen de conceptos por día"
+objetivo: "Ver, de forma informativa, el detalle de las horas trabajadas de cada uno de los obreros por concepto, y justificar las faltas cambiándolas por las papeletas."
+nivel: basico
+preguntas:
+  - "donde veo las horas trabajadas por dia de cada obrero"
+  - "como saco el resumen de conceptos por dia"
+  - "quiero ver el detalle de horas de los obreros en un periodo"
+  - "como justifico una falta por descanso medico"
+  - "resumen de conseptos por dia donde esta"
+  - "como agrupo por nombre las horas de los obreros"
+  - "donde veo las inasistencias de los trabajadores dia por dia"
+  - "como cambio una falta por papeleta de vacaciones"
+aliases:
+  - "resumen de conceptos por día"
+  - "horas trabajadas por obrero"
+  - "detalle de horas por día"
+  - "justificar faltas"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Resumen de Conceptos por Día"]
+  objetos: ["obrero", "tipo de nómina", "periodo", "papeleta"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia#1"
+    accion: "Elija el grupo **ACTIVIDADES**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s198]
+    pagina: null
+  - n: 2
+    id: "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia#2"
+    accion: "Ingrese al escenario **RESUMEN DE CONCEPTOS POR DIA**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s198, img-99421c21327e-0000]
+    pagina: null
+    fotos:
+      - id: "51556be0c824"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/99421c21327e.png"
+        pagina: null
+        ocr: "§B sioNominas\n| Archivo Yer Cetslogos Herramientas 2\n‘(Ele @\n@ © ay Escrtoro [Resumen de Conceptos por Dia\n| actividades |] SB FuAHUAvcOLORO\n(SR MULTIFANILIAR ESC2OADERO\n@-a 5 -<Buucterovecto-(C) ee ee EA)\nSBI Principal Tio de Némina [001 Obreros de conatruccin cil con beneficns socues | Ss\nResumen de eta :\nconcepas Po Da ee El sstcontaos © ox tesoo [abi7ao1 [Berane 07-=7 (ED ] | XI B/C) reins por…"
+  - n: 3
+    id: "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia#3"
+    accion: "Elija el proyecto y ubíquese en la rama **META**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s198]
+    pagina: null
+  - n: 4
+    id: "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia#4"
+    accion: "Elija el **TIPO DE NOMINA**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s198]
+    pagina: null
+  - n: 5
+    id: "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia#5"
+    accion: "Elija **POR PERIODO** y luego el número de periodo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s198]
+    pagina: null
+  - n: 6
+    id: "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia#6"
+    accion: "Genere el resumen."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s198]
+    pagina: null
+  - n: 7
+    id: "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia#7"
+    accion: "Elija la pestaña **RESUMEN** para visualizar los conceptos con sus respectivos tiempos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s198]
+    pagina: null
+  - n: 8
+    id: "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia#8"
+    accion: "Arrastre el campo **NOMBRE** al segmento de agrupación para agrupar por obrero."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s198]
+    pagina: null
+  - n: 9
+    id: "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia#9"
+    accion: "Justifique las faltas por descanso médico, subsidio, licencias, vacaciones, etc., cambiándolas por las papeletas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s198]
+    pagina: null
+verificacion: []
+errores_frecuentes: []
+relacionados: [gerencia-proyectos.consultar-tareo-detallado]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s198, manual: "Manual de Gerencia de Proyectos", seccion: "5.16.3 Resumen de Conceptos por Día", pagina: null}
+  - {id: img-99421c21327e-0000, manual: "Manual de Gerencia de Proyectos", seccion: "99421c21327e.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

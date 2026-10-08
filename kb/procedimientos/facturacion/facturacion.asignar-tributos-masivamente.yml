@@ -1,0 +1,88 @@
+id: facturacion.asignar-tributos-masivamente
+version: 1
+modulo: facturacion
+titulo: "Asignar en bloque los ítems de detracción o percepción a los recursos"
+objetivo: "Configurar de manera masiva, desde el escenario Asignación de Tributos del módulo de Facturación, los recursos seleccionados con sus ítems de Detracción o de Percepción."
+nivel: intermedio
+preguntas:
+  - "quiero asignar detraccion a un monton de recursos juntos"
+  - "tengo muchos recursos y quiero ponerles percepcion de golpe, se puede?"
+  - "donde esta el escenario asignacion de tributos"
+  - "como configuro masivamente los items de detraccion de los recursos"
+  - "asignar detracsion a recursos en facturacion s10"
+  - "no quiero entrar recurso por recurso a ponerle la detracción, hay otra forma"
+  - "por que no me calcula la detraccion si ya configure el recurso"
+aliases:
+  - "asignación de tributos"
+  - "asignar detracción"
+  - "asignar percepción"
+  - "configuración masiva de recursos"
+  - "detracción masiva"
+entidades:
+  modulo: "Facturación"
+  pantallas: ["Asignación de Tributos"]
+  objetos: ["recurso", "detracción", "percepción", "ítems de detracción", "ítems de percepción"]
+prerrequisitos:
+  - texto: "Para aplicar la percepción, además de configurar el recurso, el socio de negocio o proveedor debe estar calificado en sus propiedades como AGENTE DE PERCEPCIÓN."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s071]
+pasos:
+  - n: 1
+    id: "facturacion.asignar-tributos-masivamente#1"
+    accion: "En el módulo de Facturación, ingrese al escenario **ASIGNACIÓN DE TRIBUTOS**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s074]
+    pagina: null
+  - n: 2
+    id: "facturacion.asignar-tributos-masivamente#2"
+    accion: "Seleccione los recursos a configurar."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s074]
+    pagina: null
+  - n: 3
+    id: "facturacion.asignar-tributos-masivamente#3"
+    accion: "Para asignar detracción, haga clic derecho sobre la selección y elija **Asignar** > **Detracción**."
+    resultado: "Se muestra el resultado de la asignación masiva de recursos con detracción."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s074]
+    pagina: null
+    fotos:
+      - id: "18dabf18b491"
+        ruta_o_url: "imagenes/manual-de-facturacion/8d9bb24dbadc.png"
+        pagina: null
+        caption: "a. Caso Configuración Masiva de Ítems Detracción relacionado a los recursos. Seleccionar los Recursos a Configurar, Clic Derecho_ Asignar_ Detracción."
+        ocr: "| Archivo Wer Catélogos Herramientas 2\nBae\na Asignacién de Tributos\nBEMAR S vi edt\ncocoses | Reencott — Frecasone |\nCentros de Costas\n& 82524/885S5mp0|Descrincién | Jen cualquier posicién | [X]L22] crupo: Recurso Ni - Recurso N2 - Recurso NS - Descripcién\nDesctipcién [éTiene Detraccién? _ |Descripcidn Detraccién éTiene Percepcién? Desctipcién Percepcién a\nEstructura de Costos 0404 SC De Fabricacio…"
+      - id: "8bbb5828aa64"
+        ruta_o_url: "imagenes/manual-de-facturacion/55f81268bc82.png"
+        pagina: null
+        caption: "Resultado de Asignación Masiva de Recursos con Detracción."
+        ocr: "© Archivo Yer Catdlogos Herramientas 2\nBaa\nZaye Asignacién de Tributos\na HOYAN 8 veh eae\n‘antras ce Costas\nFy '82525/88855mpo|Descripcion [en cualquier posicién [X)[22] Grupo: Recurso Ni - Recurso NZ - Recurso N3 - Descripcién\n‘J Descripcién Tiene Detraccién? _ [Descripcién Detraccién aTiene Percepcién? _|Descripcién Percepcin “\nEstructura de Costos ||[#)01 Mano de Obra\n02 Materiales\nian 03 Equipo…"
+  - n: 4
+    id: "facturacion.asignar-tributos-masivamente#4"
+    accion: "Para asignar percepción, seleccione los recursos, haga clic derecho y elija **Asignar** > **Percepción**."
+    resultado: "Se muestra el resultado de la asignación masiva de recursos con percepción."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s074]
+    pagina: null
+    fotos:
+      - id: "be052ff911b3"
+        ruta_o_url: "imagenes/manual-de-facturacion/863eb542c026.png"
+        pagina: null
+        caption: "b. Caso Configuración Masiva de Ítems de Percepción relacionado a los recursos. Seleccionar los Recursos a Configurar, Clic Derecho_ Asignar_ Percepción."
+        ocr: "Archivo Yer Catélogos Herramientas 2\na®\n2 ise Asignacién de Tributos\nHOMERS + GF edit\n2 om\ncertros de costes immo\n3 be 389/88555Campo|Descripcién len cualquier posicisn |» [XI] Grupo: Recurso N1 - Recurso N2 - Recurso N3 - Descripciin\nDescripcién 2Tiene Detraccién? —_|Descripcién Detraccién zTiene Percencién? __|Descrigciin Percepcién “\nEstructura de Costas |=) 01 Mana de Obra\n[E102 Materiales\n& {…"
+      - id: "dece62690c4f"
+        ruta_o_url: "imagenes/manual-de-facturacion/7f09d3129ddf.png"
+        pagina: null
+        caption: "Resultado de Asignación Masiva de Recursos con Percepción."
+        ocr: "© Archivo Yer Catélogos Herramientas 2\n‘Baa\nBeam |Asionacion de Tributos\nHOY2e8 veh eae\nF be 389/88555Campo|Descrpcén 7 |[en cualquier posicin [XI] Grupo: Recurso Nt - RecursoN2-Recurso NB -Descrpcién\nDescrpcién aTiene Detraccién? _[Descrincién Detraccién\nEstructura de Costos |] 01 Mano de Obra =\n[5 02 Materiales\nE48} (©) 0201 Acero\n(©) 020101 Planches Acero al Carbon\nAsignaciin de Plancha ASTM A5…"
+verificacion:
+  - texto: "El escenario Asignación de Tributos muestra el resultado de la asignación masiva de los recursos con detracción o con percepción."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s074]
+errores_frecuentes:
+  - sintoma: "El comprobante no calcula la detracción."
+    solucion: "El cálculo de la detracción aplica al usar el recurso configurado y siempre que supere los S/ 700.00, según la configuración de los ítems de detracción en el catálogo y el importe del comprobante."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s073]
+  - sintoma: "No se aplica la percepción."
+    solucion: "Para aplicar la percepción, el recurso debe estar configurado con los ítems de percepción y el socio de negocio debe estar calificado como Agente de Percepción."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s073]
+relacionados: [facturacion.importar-tributos-de-recursos-desde-excel, administrativo.pagar-detracciones-y-subir-constancias]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s071, manual: "Manual de Facturación", seccion: "8.2.1 Configuración del Catálogo de ítems Detracciones / Percepciones (2)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s074, manual: "Manual de Facturación", seccion: "8.2.2.2 Configuración Masiva de Recursos", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s073, manual: "Manual de Facturación", seccion: "8.2.2.1 Asignación desde el Catálogo de Recursos (Propiedades del Recurso).", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

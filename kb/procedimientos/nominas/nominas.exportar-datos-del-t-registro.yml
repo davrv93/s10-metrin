@@ -1,0 +1,97 @@
+id: nominas.exportar-datos-del-t-registro
+version: 1
+modulo: nominas
+titulo: "Obtener y exportar los datos del T-Registro"
+objetivo: "Obtener en el escenario de Planilla Electrónica los datos del T-Registro (Registro de Información Laboral de los empleadores, trabajadores, pensionistas, personal en formación y otros) por estructura y periodo, y exportarlos a Excel."
+nivel: intermedio
+preguntas:
+  - "como saco los datos del t-registro desde s10 nominas"
+  - "donde esta el escenario de planilla electronica"
+  - "como exporto a excel la estructura 4 del t registro"
+  - "quiero los datos personales de los trabajadores para el tregistro"
+  - "como cargo el t-registro de un periodo mensual"
+  - "como obtengo el t-registro resumido o detallado"
+  - "como genero el t registro para la sunat"
+aliases:
+  - "T-Registro"
+  - "exportar T-Registro"
+  - "planilla electrónica T-Registro"
+  - "registro de información laboral"
+entidades:
+  modulo: "Nóminas"
+  pantallas: ["Planilla Electrónica"]
+  objetos: ["T-Registro", "estructura", "periodo", "trabajador"]
+prerrequisitos:
+  - texto: "El usuario que ingrese a este escenario debe estar registrado en el módulo de Facturación y tener los permisos correspondientes."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s081]
+pasos:
+  - n: 1
+    id: "nominas.exportar-datos-del-t-registro#1"
+    accion: "Ingrese al escenario **Planilla Electrónica** de la empresa."
+    fuente: [img-637a7aa7b3ee-0000, web-https-documentacion-s10peru-com-manual-d-s080, web-https-documentacion-s10peru-com-manual-d-s081]
+    pagina: null
+    fotos:
+      - id: "4dfd0f172095"
+        ruta_o_url: "imagenes/manual-de-nominas/637a7aa7b3ee.png"
+        pagina: null
+        ocr: "[sores\n<, Empresas\n=). aaj Escritorio\nlanilla Electrénica Luego, {Gh SISTEMA 10 S.A.C. ij"
+  - n: 2
+    id: "nominas.exportar-datos-del-t-registro#2"
+    accion: "En **Estructura**, elija **T-Registro**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s081, img-ed1325e0ef3d-0000, img-2a1991ba179c-0000]
+    pagina: null
+    fotos:
+      - id: "7f4b9033856b"
+        ruta_o_url: "imagenes/manual-de-nominas/ed1325e0ef3d.png"
+        pagina: null
+        ocr: "Planilla Electroniczg) OO ®\nEstructura: - . T Histérico\nPeriodo: 7 4) J) PorRango Desde Hasta\n\nModo -Resumido = t ®\n\nBY Aa @ ada o"
+      - id: "f38cdbfce724"
+        ruta_o_url: "imagenes/manual-de-nominas/2a1991ba179c.png"
+        pagina: null
+        ocr: "Datos para la cabecera\n[Estructura [Tipo FR erincto PMoct |\nT-Registro [4 -Datos personales del trabajacor, pensionista, personal en formacién - modalidad"
+  - n: 3
+    id: "nominas.exportar-datos-del-t-registro#3"
+    accion: "Elija el formato 4: datos personales del trabajador, pensionista, personal en formación - modalidad formativa laboral y otros."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s081, img-3f34920e0695-0000]
+    pagina: null
+    fotos:
+      - id: "f70eb7e87b0f"
+        ruta_o_url: "imagenes/manual-de-nominas/3f34920e0695.png"
+        pagina: null
+        ocr: "1,- Establecimientos Prapios del Empleador\n\n2,- Empleadores a quienes destaco o desplazo personal\n\n3.- Empleadores que me destacan o desplazan personal\n\n4.- Datos personales del trabaiador, pensionista, personal en formacion - modalidad fo:\n'5,- Datos del trabajador\n\n'6,- Datos del pensionista\n\n'9,- Datos del personal en formacién - modalidad formativa laboral y otros\n\n10.- Datos del personal de t…"
+  - n: 4
+    id: "nominas.exportar-datos-del-t-registro#4"
+    accion: "Si necesita un rango de fechas, deje seleccionada la opción de rango; si no está seleccionada, solo podrá elegir un periodo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s081]
+    pagina: null
+  - n: 5
+    id: "nominas.exportar-datos-del-t-registro#5"
+    accion: "Elija el periodo mensual."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s081]
+    pagina: null
+  - n: 6
+    id: "nominas.exportar-datos-del-t-registro#6"
+    accion: "Elija el modo: **Resumido** o **Detallado**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s081]
+    pagina: null
+  - n: 7
+    id: "nominas.exportar-datos-del-t-registro#7"
+    accion: "Use el botón que carga los datos en el escenario."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s081]
+    pagina: null
+  - n: 8
+    id: "nominas.exportar-datos-del-t-registro#8"
+    accion: "Use el botón que ejecuta el proceso de exportación del contenido del escenario a Excel; el archivo se guarda en una carpeta."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s081]
+    pagina: null
+verificacion: []
+errores_frecuentes: []
+relacionados: [nominas.exportar-datos-del-plame, nominas.registrar-ficha-del-trabajador]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s081, manual: "Manual de Nóminas", seccion: "8.1 T- Registro:", pagina: null}
+  - {id: img-637a7aa7b3ee-0000, manual: "Manual de Nóminas", seccion: "637a7aa7b3ee.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s080, manual: "Manual de Nóminas", seccion: "8 PLANILLA ELECTRONICA", pagina: null}
+  - {id: img-ed1325e0ef3d-0000, manual: "Manual de Nóminas", seccion: "ed1325e0ef3d.png", pagina: null}
+  - {id: img-2a1991ba179c-0000, manual: "Manual de Nóminas", seccion: "2a1991ba179c.png", pagina: null}
+  - {id: img-3f34920e0695-0000, manual: "Manual de Nóminas", seccion: "3f34920e0695.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

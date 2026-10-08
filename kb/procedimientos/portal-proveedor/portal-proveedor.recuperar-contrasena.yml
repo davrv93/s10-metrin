@@ -1,0 +1,84 @@
+id: portal-proveedor.recuperar-contrasena
+version: 1
+modulo: portal-proveedor
+titulo: "Recuperar la contraseña del Portal de Proveedores"
+objetivo: "Obtener una nueva clave temporal del S10 Portal de Proveedores cuando se olvidó la clave, y reemplazarla por una nueva al ingresar."
+nivel: basico
+preguntas:
+  - "olvidé la clave del portal de proveedores, cómo la recupero"
+  - "como recupero mi contraseña del portal del proveedor de s10"
+  - "no puedo entrar al portal de proveedores porque no me acuerdo la clave"
+  - "soy proveedor y perdi mi contrasena del supplier portal"
+  - "me llego al correo una contraseña temporal del portal de proveedores, que hago"
+  - "que pongo en contraseña anterior al cambiar la clave del portal"
+  - "como cambio la clave temporal del portal de proveedores"
+  - "donde esta el enlace de olvidaste tu contraseña en el portal proveedor"
+aliases:
+  - "recuperar contraseña"
+  - "olvidé mi clave"
+  - "recuperación de contraseña"
+  - "clave temporal del portal de proveedores"
+entidades:
+  modulo: "Portal del Proveedor"
+  pantallas: ["S10 Portal de Proveedores", "Recuperación de contraseña"]
+  objetos: ["clave temporal", "Contraseña Anterior", "buzón de correo", "dirección electrónica"]
+prerrequisitos:
+  - texto: "Para ingresar al portal debe tener la autorización respectiva."
+    fuente: [web-https-documentacion-s10peru-com-manual-p-s002]
+pasos:
+  - n: 1
+    id: "portal-proveedor.recuperar-contrasena#1"
+    accion: "Ingrese al portal **S10 Portal de Proveedores**, en la dirección https://s10its.com/SupplierPortalWeb."
+    fuente: [web-https-documentacion-s10peru-com-manual-p-s002]
+    pagina: null
+    fotos:
+      - id: "fdb44491b323"
+        ruta_o_url: "imagenes/manual-portal-proveedor/981228326058.png"
+        pagina: null
+        caption: "El usuario proveedor que desee consultar o ver detalles de los pagos de su empresa deberá ingresar al portal “S10 Portal de Proveedores” en la dirección https://s10its.com/SupplierPortalWeb, para lo cual debe tener la autorización respectiva."
+        ocr: "Welly) | | 2% J\nD) Supplier Portal x)\n¢€ Cc {I 54,94.249.71/SupplierPortalWeb/ QRryw):\nx\n\"t - 4 : 1\nc Me\n# ‘ Direccién de correo”\n. dlientepruebas10_3@hotmail.com\nro —\nbs\nte, 5\nWare, Has olvidado tu contrasefia’\n¥ ~ ' 3\n@ Sistema 10 , Derechos Reservados .\n< >"
+  - n: 2
+    id: "portal-proveedor.recuperar-contrasena#2"
+    accion: "Si olvidó su clave, acceda al enlace de recuperación e ingrese su dirección electrónica, para que el portal le envíe una nueva clave a esa dirección."
+    fuente: [web-https-documentacion-s10peru-com-manual-p-s004]
+    pagina: null
+    fotos:
+      - id: "c4176dd6e436"
+        ruta_o_url: "imagenes/manual-portal-proveedor/84782f87f539.png"
+        pagina: null
+        caption: "Si olvidó su clave, acceda a este enlace para que el portal le envíe una nueva clave a la dirección electrónica que ingrese."
+        ocr: "ro { iitlly J [<>\n/ (3 Supplier Portal x \\\nS © | 54.94.249.71/SupplierPortalWeb/ QRrek :\nHas Olvidado Tu Contrasefia\nDireccién de correo clientepruebas10_3@hotmail.com"
+      - id: "575250d63d5b"
+        ruta_o_url: "imagenes/manual-portal-proveedor/df4bd70974c5.png"
+        pagina: null
+        caption: "Si olvidó su clave, acceda a este enlace para que el portal le envíe una nueva clave a la dirección electrónica que ingrese."
+        ocr: "oo Nelly | [o|S) 3 |\nJ [) Supplier Portal x \\\\\ni CG || 54.94.249.71/SupplierPortalWeb/ Qrk :\nET ae i y\nh ~hiy\n- Informacién\nUn Email ha sido enviado a su Correo Electrénico. ,\n: al Direccién de correo\nContraseha\nig Be |\n<\n“Se\nSire. éHas olvidado tu contrasefia? :\na °° ° °;°”»”»€6©» \"a\n‘ss\n© Sistema 10 , Derechos Reservade"
+  - n: 3
+    id: "portal-proveedor.recuperar-contrasena#3"
+    accion: "Revise su buzón de correo: habrá llegado un correo enviado por el portal, donde se le asigna una nueva clave temporal."
+    fuente: [web-https-documentacion-s10peru-com-manual-p-s004]
+    pagina: null
+    fotos:
+      - id: "cd8a0c4515be"
+        ruta_o_url: "imagenes/manual-portal-proveedor/e32989d7356d.png"
+        pagina: null
+        caption: "Al revisar el buzón de correo, habrá llegado un correo enviado por el portal, donde se le asigna una nueva clave temporal."
+        ocr: "Nelly) |o S) 3%\n{}) Supplier Portal * ¥ GP Correo - clientepruebas! x\n& C | @ Es seguro | https://outlook.live.com/owa/?path=/mail Anbax/rp yw:\nCorreo de Outlook HO f£\nBuscar en Correo y Conta.. 2 ® Nuevo|Y — Ii Eliminar imi Archivar Correono deseado|Y —*+* yx\nA Carpetas Se te olvid6 tu contrasefia\nBandeja de er 920\nCorreo no deseado sa) $10 Alerta <f_electronica@s10peru.com> B@ Ske\nHoy, 02:14 am\n…"
+  - n: 4
+    id: "portal-proveedor.recuperar-contrasena#4"
+    accion: "Acceda al portal con esa clave temporal; se le solicitará que ingrese una nueva clave. En el campo **Contraseña Anterior**, ingrese la clave que se le entregó en el correo electrónico, e ingrese su nueva clave."
+    fuente: [web-https-documentacion-s10peru-com-manual-p-s004]
+    pagina: null
+    fotos:
+      - id: "8a9a3f419336"
+        ruta_o_url: "imagenes/manual-portal-proveedor/1cf9b6982e79.png"
+        pagina: null
+        caption: "Con esta clave podrá acceder al portal, y se le solicitará que ingrese una nueva clave. En el campo Contraseña Anterior, ingrese la clave que se le entregó en el correo electrónico, e ingrese su nueva clave."
+        ocr: "; 7 ly\n/ LD) Supplier Portal x Ye Correo - clientepruebas1 x \\ \\\nof\n= C | 54,94.249.71/SupplierPortalWeb/ QRrk) :\nCambiar la Contrasena\ncontrasefa Anterior seeeeeee\nNueva Contrasefia os\nConfirmar Nueva Contrasefia ool"
+verificacion: []
+errores_frecuentes: []
+relacionados: [portal-proveedor.consultar-documentos-pendientes-de-pago]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-p-s002, manual: "Manual del Portal del Proveedor", seccion: "1.2 Acceso al Portal", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-p-s004, manual: "Manual del Portal del Proveedor", seccion: "1.2.2 Recuperación de contraseña", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

@@ -1,0 +1,106 @@
+id: nominas.configurar-tareo-movil
+version: 1
+modulo: nominas
+titulo: "Configurar en Nóminas el tareo con el APP Tareo Móvil"
+objetivo: "Habilitar el tareo móvil para los tipos de nómina cuyas horas laboradas se registrarán desde el APP Tareo Móvil S10 y asignar el tareador a la ficha personal de los trabajadores."
+nivel: intermedio
+preguntas:
+  - "como activo el tareo movil para un tipo de nomina"
+  - "donde marco la opcion tareo movil en nominas"
+  - "como asigno un tareador a varios obreros a la vez"
+  - "no me sale la opcion de publicar el parte de tareo, que configuro"
+  - "que correo debe tener el tareador para usar la app de tareo"
+  - "como configuro nominas para tarear desde el celular"
+  - "asignar tareador en la ficha personal de los trabajadores"
+  - "configuracion del app tareo mobil en s10 nominas"
+aliases:
+  - "configurar tareo móvil"
+  - "habilitar tareo móvil"
+  - "asignar tareador"
+  - "tareo móvil en nóminas"
+entidades:
+  modulo: "Nóminas"
+  pantallas: ["Datos Generales", "Catálogo de Socios de Negocio"]
+  objetos: ["tipo de nómina", "tareador", "ficha personal", "obreros"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "nominas.configurar-tareo-movil#1"
+    accion: "En el módulo de Nóminas, ingrese al escenario **Datos Generales**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s065, img-bb8083a2c56d-0000]
+    pagina: null
+    fotos:
+      - id: "b860939f0752"
+        ruta_o_url: "imagenes/manual-de-nominas/bb8083a2c56d.png"
+        pagina: null
+        ocr: "Proyectos.\n#5 FIMA HUIAYCOLORO\nmy f+) 5 MULTIFAMILIAR ESCAMPADERO\nbs mS MULTIPROVECTO.\nDatos Generales ao rence\nES\nLuegs, ."
+  - n: 2
+    id: "nominas.configurar-tareo-movil#2"
+    accion: "Marque la opción **Tareo Móvil** para cada tipo de nómina donde el control de las horas laboradas se registrará desde el APP Tareo Móvil S10."
+    resultado: "Cuando ingrese a la lista de partes de tareo, se habilitará la opción de publicación."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s065, img-15e17b181f51-0000]
+    pagina: null
+    fotos:
+      - id: "84c748da835e"
+        ruta_o_url: "imagenes/manual-de-nominas/15e17b181f51.png"
+        pagina: null
+        ocr: "Datos Generales\nDescripcién [MULTIPROYECTO\nPropietario [22000030 [SISTEMA 10 SAC. | #4]\nLugar [140118 [WIRAFLORES =| da]\nEmpresa ‘$10 SAC Actualizado por Usuario - 20/01/2019 10:00:08 a.m.\nFecha Inicio\n‘Contractual 101/01/2017 +] Fecha Fin 3112/2017 _> Plazo [ 365 dias\nScal }01/01/2017 _=} Fecha Fin Real }31/12/2017 _~ Calificacion = 44)\nMoneda 01 [SOLES -- | #4\n[Calendario 001 [Calendario Base ==…"
+  - n: 3
+    id: "nominas.configurar-tareo-movil#3"
+    accion: "En la ficha del tareador, registre su correo: debe ser el mismo que se activó para usar el APP Tareo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s065]
+    pagina: null
+    fotos:
+      - id: "75e1f85fe25f"
+        ruta_o_url: "imagenes/manual-de-nominas/b1c6a41d6d89.png"
+        pagina: null
+        caption: "Datos a registrar,"
+        ocr: "[Datos Descripeion\n[Correo electrénico | famirez@si0peru.com |"
+      - id: "0b95b9267b2b"
+        ruta_o_url: "imagenes/manual-de-nominas/faaec4a55f15.png"
+        pagina: null
+        caption: "El correo registrado en la ficha del tareador debe ser el mismo que se activo para usar el APP Tareo."
+        ocr: "‘Cédigo [22000031 fPersonaNatra’ T=] cédgoAteno [OF\nTratamiento [| di) Sexo |Femenino 7] 90 Doc. [pur ——~—~SCY (berazs\ntoe Pete Fags\np90\nNombres  [EumebigCevintura [re\n\na\n\nTete esto | T—Jaalf [sof\n\nSkype —_ ee OO\n\n=\n\nnee ce\n\nawe [ [fl cerns [I\n\nroped [ies Sa)"
+  - n: 4
+    id: "nominas.configurar-tareo-movil#4"
+    accion: "Elija el tipo de nómina; si la casilla de activos está seleccionada, solo se muestra al personal activo, y si no, a todo el personal disponible."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s065]
+    pagina: null
+  - n: 5
+    id: "nominas.configurar-tareo-movil#5"
+    accion: "Marque un bloque con todos los obreros a los que asignará un tareador, haga clic derecho sobre el bloque y elija **Asignar Tareador**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s065, img-374eea61b771-0000]
+    pagina: null
+    fotos:
+      - id: "9a7d028a7694"
+        ruta_o_url: "imagenes/manual-de-nominas/374eea61b771.png"
+        pagina: null
+        ocr: "Proyecto 20010001 MULTIPROYECTO a\n\nTipo de Némina_|001 Obreros de construccién civil con beneficios sociales ¥ Solo Actives\nHOvVeRN Ss BF eda\n\nCédigo Nombre Cédigo categ«| Categoria Abrei| Codigo F\n02100220 _ | ARANIBAR CUEVAS, ARNULFO RAFAEL| 002 Operario Op | 0147030\nED) Adicionar [oo2[Operario [op _[or4703c\nTE X cuiter a= (|) ar\n& Marque un bloque, luego haga i\n123 2 Copiar a otro proyecto wuem…"
+  - n: 6
+    id: "nominas.configurar-tareo-movil#6"
+    accion: "En el **Catálogo de Socios de Negocio**, elija al tareador con doble clic."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s065, img-e78bab7dfc27-0000]
+    pagina: null
+    fotos:
+      - id: "628e789f8f71"
+        ruta_o_url: "imagenes/manual-de-nominas/e78bab7dfc27.png"
+        pagina: null
+        ocr: "8) Catélogo de Socios de Negocio o x\nOpciones 7\n\nDe Xue M@¥YRBR Boe HAS O BRE\nww Elija con doble clic NIVEL : 04\n|_| Cédigo | Descripcion Abreviatura | NaturalJuridica Fa\nMB er Ramirez Nufiez, Jose JR Natural 23877 ||"
+  - n: 7
+    id: "nominas.configurar-tareo-movil#7"
+    accion: "Repita el proceso para los demás tareadores."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s065]
+    pagina: null
+verificacion: []
+errores_frecuentes:
+  - sintoma: "El tareador no puede usar el APP Tareo."
+    solucion: "El correo registrado en la ficha del tareador debe ser el mismo que se activó para usar el APP Tareo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s065]
+relacionados: [nominas.registrar-tareo-multiproyecto, nominas.registrar-ficha-del-trabajador, nominas.seleccionar-personal-disponible]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s065, manual: "Manual de Nóminas", seccion: "6.3.2.1 Configuraciones a realizar en Nominas S10", pagina: null}
+  - {id: img-bb8083a2c56d-0000, manual: "Manual de Nóminas", seccion: "bb8083a2c56d.png", pagina: null}
+  - {id: img-15e17b181f51-0000, manual: "Manual de Nóminas", seccion: "15e17b181f51.png", pagina: null}
+  - {id: img-374eea61b771-0000, manual: "Manual de Nóminas", seccion: "374eea61b771.png", pagina: null}
+  - {id: img-e78bab7dfc27-0000, manual: "Manual de Nóminas", seccion: "e78bab7dfc27.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

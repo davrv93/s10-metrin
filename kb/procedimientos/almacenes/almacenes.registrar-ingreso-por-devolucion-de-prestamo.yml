@@ -1,0 +1,75 @@
+id: almacenes.registrar-ingreso-por-devolucion-de-prestamo
+version: 1
+modulo: almacenes
+titulo: "Registrar un ingreso por devolución de préstamo"
+objetivo: "Registrar con un Ingreso por Devolución de Préstamo [IDP] los recursos que otro proyecto o un Socio de Negocio (proveedor, empleado, obrero, etc.) devuelve al almacén después de habérselos prestado con un Egreso por Préstamo."
+nivel: basico
+preguntas:
+  - "como registro que la otra obra nos devolvio lo que le prestamos"
+  - "nos devolvieron los andamios prestados, como los ingreso al almacen"
+  - "ingreso por devolucion de prestamo como se hace"
+  - "un obrero devolvio la herramienta que le prestamos como la ingreso"
+  - "como hago el IDP en almacenes"
+  - "no me aparece el recurso que me estan devolviendo en el ingreso"
+  - "cuando me devuelven lo prestado donde pongo la cantidad que regresa"
+  - "como se registra la devolucion de un prestamo que hice a un proveedor"
+aliases:
+  - "ingreso por devolución de préstamo"
+  - "IDP"
+  - "devolución de préstamo"
+  - "me devolvieron lo prestado"
+  - "recibir devolución"
+entidades:
+  modulo: "Almacenes"
+  pantallas: ["ingresos", "Préstamos"]
+  objetos: ["ingreso por devolución de préstamo", "egreso por préstamo", "socio de negocio", "proyecto", "recurso"]
+prerrequisitos:
+  - texto: "Previamente ha tenido que generar movimientos de Egreso por Préstamo hacia el proyecto o Socio de negocio que ahora devuelve el préstamo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s049]
+pasos:
+  - n: 1
+    id: "almacenes.registrar-ingreso-por-devolucion-de-prestamo#1"
+    accion: "En la barra de vistas, elija el acceso al escenario de ingresos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s049]
+    pagina: null
+  - n: 2
+    id: "almacenes.registrar-ingreso-por-devolucion-de-prestamo#2"
+    accion: "En el árbol, elija el proyecto y el almacén."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s049]
+    pagina: null
+  - n: 3
+    id: "almacenes.registrar-ingreso-por-devolucion-de-prestamo#3"
+    accion: "Elija el tipo de ingreso **INGRESO POR DEVOLUCION DE PRESTAMO**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s049]
+    pagina: null
+  - n: 4
+    id: "almacenes.registrar-ingreso-por-devolucion-de-prestamo#4"
+    accion: "Efectúe un nuevo ingreso y registre el tipo de cambio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s049]
+    pagina: null
+  - n: 5
+    id: "almacenes.registrar-ingreso-por-devolucion-de-prestamo#5"
+    accion: "Registre los datos en el detalle del formulario de ingreso: de los recursos prestados al Socio de Negocio que el sistema filtra, elija solo los recursos que devuelve."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s049]
+    pagina: null
+  - n: 6
+    id: "almacenes.registrar-ingreso-por-devolucion-de-prestamo#6"
+    accion: "Ingrese la cantidad que devuelve."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s049]
+    pagina: null
+verificacion:
+  - texto: "El escenario de Préstamos muestra los recursos que su proyecto ha prestado basándose en los movimientos de ingresos y egresos por préstamos o devoluciones de préstamos; elija «Lo que preste» para verlos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s138]
+errores_frecuentes:
+  - sintoma: "En el ingreso no aparece el recurso que le están devolviendo."
+    solucion: "El sistema filtra sólo los recursos prestados al Socio de Negocio: previamente ha tenido que generar el Egreso por Préstamo hacia ese proyecto o Socio de negocio."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s049]
+  - sintoma: "Lo que quiere registrar es la devolución de recursos que a su almacén le prestaron."
+    solucion: "Eso es un Egreso por Devolución de Préstamo [EDP]: se usa para registrar la devolución de recursos que ingresaron al almacén con un Ingreso por Préstamo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s074]
+relacionados: [almacenes.registrar-ingreso-por-prestamo]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s049, manual: "Manual de Almacenes", seccion: "2.1.3.1 Ingreso por Devolución de Préstamo [IDP]", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s138, manual: "Manual de Almacenes", seccion: "3.20.3 Préstamos", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s074, manual: "Manual de Almacenes", seccion: "2.2.6.2 Egreso por Devolución de Préstamo [EDP]", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

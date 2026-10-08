@@ -1,0 +1,116 @@
+id: calidad-movil.calificar-actividades
+version: 1
+modulo: calidad-movil
+titulo: "Calificar las actividades y sus características en Calidad Móvil"
+objetivo: "Calificar desde el móvil, en Calidad de Responsables, las actividades y sus características cambiando su estado, y registrar las no conformidades con su tipo de falla."
+nivel: intermedio
+preguntas:
+  - "cómo califico las actividades en calidad móvil"
+  - "donde cambio el estado de una caracteristica en la app de calidad"
+  - "como registro una no conformidad desde el celular"
+  - "como marco una actividad como no conforme y le pongo foto"
+  - "para que sirve calidad de responsables en calidad movil"
+  - "como veo las actividades por frente o por etapa en calidad movil"
+  - "soy revisor, como apruevo las caracteristicas en la app"
+  - "que significan los colores de las barras en calidad movil"
+aliases:
+  - "calificar actividades"
+  - "calidad de responsables"
+  - "registrar no conformidad"
+  - "cambiar estado de característica"
+  - "revisar actividades en el móvil"
+entidades:
+  modulo: "Calidad Móvil"
+  pantallas: ["Producción", "Calidad de Responsables"]
+  objetos: ["actividades", "características", "estado", "alcance", "No Conforme", "tipo de falla", "observación"]
+prerrequisitos:
+  - texto: "La aplicación debe estar activada; para ello es necesario que se haya publicado antes el proyecto para el usuario, desde el módulo S10 Gerencia de Proyectos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s006]
+pasos:
+  - n: 1
+    id: "calidad-movil.calificar-actividades#1"
+    accion: "En la aplicación, seleccione la opción **Producción** para que se muestren otras opciones."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s007]
+    pagina: null
+    fotos:
+      - id: "3cf2291b6fe7"
+        ruta_o_url: "imagenes/manual-de-calidad-movil/51d0deaf5092.png"
+        pagina: null
+        caption: "Al seleccionar esta opción se muestran otras opciones"
+        ocr: "Solo emergencia A © & & Gl 10'S D Maw 4:25 p.m\n$10 Calidad Movil G\nCalidad por Acumulado de Tipo de Falla\nResponsables Fallas"
+  - n: 2
+    id: "calidad-movil.calificar-actividades#2"
+    accion: "Ingrese a la opción **Calidad de Responsables** para realizar la calificación de las actividades y sus características."
+    resultado: "Se muestra en forma gráfica el estado de las actividades (Nuevo, en proceso, completado, revisado, aprobado, no conforme), cada uno con un color predefinido."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s008]
+    pagina: null
+    fotos:
+      - id: "5ab347884d13"
+        ruta_o_url: "imagenes/manual-de-calidad-movil/159910acefd3.png"
+        pagina: null
+        caption: "Ingrese a esta opción para realizar la calificación de las actividades y sus características."
+        ocr: "Solo emergencia A GB & 30 OD Mm 4:46 p.m\n$10 Calidad Movil G\nft) > (©)> Calidad Por Responsables\n88 Actividades 810 Caracteristicas\nNuevo75 “En proceso 1 Completado0 @Revisado 0 Aprobado:\n\n1.0FICINAS\n\nTISTA Y SU-\nPERVISION)\n2.ALMACEN 1\n3.COMEDOR\n\nOBRERO\nGUARDIANIA\n\nS.VESTUA"
+  - n: 3
+    id: "calidad-movil.calificar-actividades#3"
+    accion: "Si desea cambiar el alcance (Actividades, Frente, Etapa, Destino Específico, Supervisor, Revisor o Responsable), en la sección superior del alcance y los filtros haga clic en uno de los botones y luego en el botón de la lupa."
+    resultado: "Los ítems mostrados serán del alcance seleccionado. Para desactivarlo, vuelva a pulsar sobre el botón del alcance."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s008]
+    pagina: null
+    fotos:
+      - id: "289d542f09ea"
+        ruta_o_url: "imagenes/manual-de-calidad-movil/8106a3da9b2d.png"
+        pagina: null
+        caption: "La parte superior es la sección del alcance y los filtros."
+        ocr: "Frente Etapa Destino Supervisor\nON\nTodos > — Todos > — Todos > — Todos a al)\nFecha De: 1/07/2016 a: 9/01/2018 “Buscar Q G\net"
+      - id: "4fb218a02387"
+        ruta_o_url: "imagenes/manual-de-calidad-movil/2f539a52b456.png"
+        pagina: null
+        caption: "Para cambiar el alcance haga clic en uno de los botones y luego en el botón de la lupa. Entonces los ítems mostrados serán del alcance seleccionado."
+        ocr: "Solo emergenciaA © 0 10t 2D 19:33 p.m\n$10 Calidad Movil [Ey\n@> ®>» calidad Por Responsables\nFrente\n88 Actividades 810 Caracteristicas\nONueve 7S @En proses? @Completaded ®Reviseiod @Apiobado\nwic\nEDIFICIOS\nra de a 208i\neste\nAREAS\nVERDES, mo-\nlas puebas de\nRam"
+  - n: 4
+    id: "calidad-movil.calificar-actividades#4"
+    accion: "Pulse sobre la barra de la actividad para acceder a sus características."
+    resultado: "Se muestra la lista de características; cada característica tiene un estado, representado por un color."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s008]
+    pagina: null
+    fotos:
+      - id: "169263faaecf"
+        ruta_o_url: "imagenes/manual-de-calidad-movil/3dc31901bb72.png"
+        pagina: null
+        caption: "Para acceder a las características de la actividad debe pulsar sobre la barra. Luego se mostrará la lista de características. Cada característica tiene un estado, representado por un color."
+        ocr: "Solo emergencia A @ @ I0t SD (19:47 p.m\n$10 Calidad Movil [E>\n\n®> @> @> 2atmacen\n\nSS\n\n2.ALMACEN [Revisor]\n\nDosificacién del mortero segtin\n\nespecificaciones\n\nVerificacién de solaqueo (100%\n\narea)\n\nVerificacion de acabado en vertices\n\nOrden y Limpieza re)\n\nOtros: e"
+      - id: "67c27c9afd9b"
+        ruta_o_url: "imagenes/manual-de-calidad-movil/ce23639ef8b5.png"
+        pagina: null
+        caption: "Para acceder a las características de la actividad debe pulsar sobre la barra. Luego se mostrará la lista de características. Cada característica tiene un estado, representado por un color."
+        ocr: "Solo emergenciaA + © 10S D ©) 10:20 p.m\n$10 Calidad Movil G\n@> @> @> 2amacen\n2.ALMACEN [Revisor]\nDosificacion del mortero seguin\nespecificaciones @ Nuevo\nVerificacién de solaqueo (100%\narea) r En proceso\nVerificacién de acabado en vertices) Completado\nOrden y Limpieza Revisado\no\nOtros:\ne No conforme\n< A as"
+  - n: 5
+    id: "calidad-movil.calificar-actividades#5"
+    accion: "Si es Revisor o Supervisor, cambie el estado de la característica cuando realice su labor de revisión."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s008]
+    pagina: null
+  - n: 6
+    id: "calidad-movil.calificar-actividades#6"
+    accion: "Si selecciona el estado **No Conforme**, ingrese los detalles sobre la no conformidad: texto, imagen y el tipo de falla."
+    resultado: "Automáticamente se genera una observación y un registro de cambio de estado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s008]
+    pagina: null
+    fotos:
+      - id: "cbcfcffe1fb4"
+        ruta_o_url: "imagenes/manual-de-calidad-movil/c6dd89ef1bca.png"
+        pagina: null
+        caption: "Si selecciona el estado No Conforme , automáticamente se generará una observación y un registro de cambio de estado. Ingrese los detalles sobre la no conformidad: texto, imagen y el tipo de falla."
+        ocr: "Solo emergenciaA ? @ 30'S BD 1 10:21 p.m.\n$10 Calidad Movil G\nTitulo\nNo conforme\nDetalle\nNo esta conforme a los planos\nImagen\n1520220106128 jpg\nTipo de Falla\nN1-Falla 1\nHecho\nNo\n<q O O"
+      - id: "618b50f026ec"
+        ruta_o_url: "imagenes/manual-de-calidad-movil/75ef47067ef8.png"
+        pagina: null
+        caption: "Si selecciona el estado No Conforme , automáticamente se generará una observación y un registro de cambio de estado. Ingrese los detalles sobre la no conformidad: texto, imagen y el tipo de falla."
+        ocr: "Solo emergenciaA + Gi 10 SD © 10:22 p.m\n$10 Calidad Movil G\nProyecto: MUROS DE CIMENTACION-Actividades\n@©> @> @> @> obseracisn\nValor Minimo Maximo Encontrado\n12.45\nDosificacion del mortero segtin especificaciones\nTitulo No conforme\nDE ed VIGASP Detalle No esta conforme a los planos\nMuRos: Autor ncortezs72@gmail.com\nty eee\nPeet ee Tipo de N1-Falla 1\nTSR es |] Falla\nf Estado En proceso\n. | anterior\n…"
+verificacion: []
+errores_frecuentes: []
+relacionados: [calidad-movil.activar-la-aplicacion]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s006, manual: "Manual de Calidad Móvil", seccion: "2.1.1 Instalación y configuración", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s007, manual: "Manual de Calidad Móvil", seccion: "2.2. Producción", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s008, manual: "Manual de Calidad Móvil", seccion: "2.2.1. Calidad de Responsables", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

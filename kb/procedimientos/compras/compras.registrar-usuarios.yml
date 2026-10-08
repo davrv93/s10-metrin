@@ -1,0 +1,166 @@
+id: compras.registrar-usuarios
+version: 1
+modulo: compras
+titulo: "Registrar un usuario del módulo de Compras y Pedidos y asignarle accesos"
+objetivo: "Registrar en el escenario de Mantenimiento de Usuarios a la persona que manejará el módulo de Compras y Pedidos, elegida del catálogo de socio de negocio, y asignarle su categoría y los accesos a escenarios, catálogos y atributos especiales."
+nivel: intermedio
+preguntas:
+  - "como registro un usuario nuevo en compras y pedidos"
+  - "como le doy acceso al modulo de compras a un trabajador"
+  - "en compras y pedidos por donde entro para crear usuarios"
+  - "como le asigno categoria y permisos a un usuario de compras"
+  - "el logistico no puede entrar a cuadro comparativo, como le doy acceso al escenario"
+  - "quiero que un usuario de compras audite el catalogo de unidades, que color le pongo"
+  - "que diferencia hay entre jefe de grupo, especialista e invitado"
+  - "registrar usuaro en compras y pedidos s10 y darle catalogos"
+aliases:
+  - "registrar usuario de compras"
+  - "mantenimiento de usuarios"
+  - "dar acceso al módulo de compras"
+  - "asignar categoría al usuario"
+  - "permisos de usuario en compras"
+entidades:
+  modulo: "Compras"
+  pantallas: ["Mantenimiento de Usuarios", "Catálogo de Socio de Negocio por Tipo"]
+  objetos: ["usuario", "grupo", "subgrupo", "categoría", "escenario", "catálogo", "auditor"]
+prerrequisitos:
+  - texto: "Los usuarios que necesitan acceso al módulo deben estar registrados previamente en el catálogo de Socio de Negocio por Tipo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s064]
+pasos:
+  - n: 1
+    id: "compras.registrar-usuarios#1"
+    accion: "Ingrese al escenario de **Mantenimiento de Usuarios**."
+    donde: "Grupo Utilitarios"
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s065, web-https-documentacion-s10peru-com-manual-d-s016]
+    pagina: null
+    fotos:
+      - id: "690c4fe70600"
+        ruta_o_url: "imagenes/manual-de-compras/fb2b364af933.png"
+        pagina: null
+        caption: "Acceso al escenario de Mantenimiento de Usuarios"
+        ocr: "]\nMantenimient\no de Usuarios"
+  - n: 2
+    id: "compras.registrar-usuarios#2"
+    accion: "Registre el grupo con el nombre de la empresa o constructora."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s065]
+    pagina: null
+    fotos:
+      - id: "67dad2ff16a1"
+        ruta_o_url: "imagenes/manual-de-compras/2c715ed8f6b9.png"
+        pagina: null
+        caption: "Registro de Grupos: Registre el nombre de la empresa o constructora"
+        ocr: "=i\n[= Deserincién  [onstructora\n1S lnvitados: | a"
+  - n: 3
+    id: "compras.registrar-usuarios#3"
+    accion: "Registre los subgrupos: Personal Técnico y Personal Administrativo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s065]
+    pagina: null
+    fotos:
+      - id: "61502c96885c"
+        ruta_o_url: "imagenes/manual-de-compras/0b03177e4ba6.png"
+        pagina: null
+        caption: "Registro de los Subgrupos: Registre a Personal Técnico y Personal Administrativo"
+        ocr: ". SubGrupo [x]\nCédigo 02 jor\nDeseripcién _ | Personal Técnico\ni= Todos los Usuftrios |\nInvitados: 7 =\nann aa\nLuego,"
+  - n: 4
+    id: "compras.registrar-usuarios#4"
+    accion: "Registre al usuario con la opción **Nuevo usuario**; la elección del personal se efectúa del catálogo de socio de negocio."
+    fuente: [img-b5a36a4afab4-0000, web-https-documentacion-s10peru-com-manual-d-s065]
+    pagina: null
+    fotos:
+      - id: "2eb5465c4225"
+        ruta_o_url: "imagenes/manual-de-compras/b5a36a4afab4.png"
+        pagina: null
+        ocr: "=) Todos los Usuaris\néfhinvitados\n2) #ah Constructora|\n¢ ia —\n€ Personal Adininistrativo F) nuevo usuario"
+  - n: 5
+    id: "compras.registrar-usuarios#5"
+    accion: "Si el usuario será auditor de la base de datos, use el botón de visto bueno (VB) y elija su color: azul para el catálogo de socio de negocio, guinda para el de recursos, amarillo para el de unidades, negro para el de tipos de documentos, verde para moneda + formas de pago + partidas de control general y rojo para métodos de pago + motivo de pago + configuración."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s065]
+    pagina: null
+    fotos:
+      - id: "691f940ee7b3"
+        ruta_o_url: "imagenes/manual-de-compras/c7b2752c4d5d.png"
+        pagina: null
+        caption: "Llamada a: Uno de los usuarios puede ser elegido como auditor de la base de datos, el botón muestra una lista de visto bueno (VB) de diferentes colores. Elija un color para el auditor, el sistema permite hasta 6 auditores por base de datos."
+        ocr: "Auditor vb. | bd\na Azul\nvo\n\nAmarillo °\nwf Negro 7\naf Verde\n\nRojo"
+  - n: 6
+    id: "compras.registrar-usuarios#6"
+    accion: "Si el usuario es el encargado de informática de su empresa, póngale una selección: podrá registrar usuarios y asignar categoría y permisos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s065]
+    pagina: null
+  - n: 7
+    id: "compras.registrar-usuarios#7"
+    accion: "Para darle acceso al módulo, elija la pestaña **Módulos** y use el botón que muestra las categorías."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s065]
+    pagina: null
+    fotos:
+      - id: "dd060eff567b"
+        ruta_o_url: "imagenes/manual-de-compras/69f613a0c3da.png"
+        pagina: null
+        caption: "Acceso al Módulo: Al usuario pmartinez, se le asigna una categoría para que maneje este módulo."
+        ocr: "& Todos fos Usuarios — Usuario Jpmartinez SS finez\nInvitacos Elija el usuario\n5 cartons ceve fmm\ni Personal Técnico\n@ (ERUTEIIRETE (| Empleado [22000566 |Martinez Lazo, Ped\n@ Torrado Gonzéjes, Luis\n@ OlazdbalPinto,|iosé | Auditor Vb. z\nt Otazu Castillo, Rodrigo Aisin ga r\niz Sua i \\dministrador de Sistemas 7\nRuiz Suarez, afttonio Use cate botin\n@ Ocampo Lazo, Pésar — : |__\n@ Dela Cruz Alvdrez, Jor…"
+  - n: 8
+    id: "compras.registrar-usuarios#8"
+    accion: "Asígnele una categoría: Administrador de sistemas, Jefe de grupo, Especialista, Usuario o Invitado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s066]
+    pagina: null
+  - n: 9
+    id: "compras.registrar-usuarios#9"
+    accion: "Con el usuario elegido en el árbol, elija la pestaña **Escenarios** y, con clic derecho sobre la lista de escenarios disponibles, use el menú para **dar acceso** a los escenarios que manejará."
+    resultado: "El usuario solo podrá acceder a los escenarios seleccionados."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s066]
+    pagina: null
+    fotos:
+      - id: "d173fea2e04d"
+        ruta_o_url: "imagenes/manual-de-compras/ba9e262ec2ee.png"
+        pagina: null
+        caption: "Acceso a los Escenarios: Al usuario pmartinez, se le asigna accesos a los diferentes escenarios. En el árbol tiene que estar elegido Martínez Luna, Pedro, este sólo podrá acceder a los escenarios seleccionados."
+        ocr: "[[Descrincin Acceso\n\n(=| Compras\n\n-fS) Inicio |\nDatos Generales\nPedidos de Compra Dar scceso mc)\nCaifomedionens 6) HO Quitar acceso\nRecep de Coteaciase -\nCuadro Comparativo oO ae\nOrdenes de Compra Oo Ningun acceso.\nOrdenes de Servicio Oo @ Nota\nRecursos Pendientes de Compra oO ="
+  - n: 10
+    id: "compras.registrar-usuarios#10"
+    accion: "Elija la pestaña **Catálogos** y, con clic derecho sobre la lista de catálogos disponibles, use el menú para **dar acceso**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s066]
+    pagina: null
+    fotos:
+      - id: "409fd855f69b"
+        ruta_o_url: "imagenes/manual-de-compras/9e175799f8d4.png"
+        pagina: null
+        caption: "Llamada c: Clic derecho en este segmento y muestra el menú para dar acceso. Acceso a los Catálogos:"
+        ocr: "[| CATALOGOS GENERALES: [\nRecursos a\nSocios de Negocio oO\nUbicacién Geografica Oo\nUnidades ol Dar acceso =(c)\nProyectos ~6) (C1 |O Quitar acceso\nIndices Unificados |\nMonedas oO\nTipo de Documento O |G Nngun acceso\nFoma de pago | Nota\nCategorias O Yi\nModulos Escenanos) ), Catalogosa(a)Atributos especiales /"
+  - n: 11
+    id: "compras.registrar-usuarios#11"
+    accion: "En cada catálogo, seleccione lo que el usuario puede hacer: efectuar nuevos registros, modificar, eliminar, adicionar notas o imprimir registros del catálogo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s066]
+    pagina: null
+  - n: 12
+    id: "compras.registrar-usuarios#12"
+    accion: "Si el usuario es auditor, seleccione el catálogo que auditará."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s067]
+    pagina: null
+  - n: 13
+    id: "compras.registrar-usuarios#13"
+    accion: "Elija la pestaña **Atributos especiales** y, si corresponde, seleccione el atributo que permite aprobar especificaciones de los equipos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s067]
+    pagina: null
+    fotos:
+      - id: "d8c7d087857c"
+        ruta_o_url: "imagenes/manual-de-compras/ec9cf45f9bcb.png"
+        pagina: null
+        caption: "Atributos especiales"
+        ocr: "Aprobar E specificaciones de equinos: vb)\nModificar transacciones contabilizadas Dynamics | ~<©)\nMédulos Escenarios Catélogos (@eAtributos especiales /"
+verificacion: []
+errores_frecuentes:
+  - sintoma: "El usuario no puede acceder a un escenario."
+    solucion: "El usuario solo puede acceder a los escenarios seleccionados: en la pestaña Escenarios, use clic derecho para darle acceso."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s066]
+  - sintoma: "Un usuario no ve un proyecto registrado por otro."
+    solucion: "Sólo la persona que registre el proyecto tendrá acceso a ese, pero puede invitar a otros usuarios para que compartan la información."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s066]
+relacionados: [compras.registrar-centro-de-compra, compras.registrar-aprobadores-de-orden-de-compra]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s064, manual: "Manual de Compras", seccion: "17.1 Mantenimiento de usuarios", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s065, manual: "Manual de Compras", seccion: "17.2 Registro de usuarios en el módulo de Compras y pedidos (1)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s016, manual: "Manual de Compras", seccion: "3.3 Usuarios que manejan el módulo y aprobadores", pagina: null}
+  - {id: img-b5a36a4afab4-0000, manual: "Manual de Compras", seccion: "b5a36a4afab4.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s066, manual: "Manual de Compras", seccion: "17.2 Registro de usuarios en el módulo de Compras y pedidos (2)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s067, manual: "Manual de Compras", seccion: "17.2 Registro de usuarios en el módulo de Compras y pedidos (3)", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

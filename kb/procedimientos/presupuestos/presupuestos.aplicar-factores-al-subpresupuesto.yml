@@ -1,0 +1,99 @@
+id: presupuestos.aplicar-factores-al-subpresupuesto
+version: 1
+modulo: presupuestos
+titulo: "Aplicar factores de cantidad o de rendimiento a un presupuesto o subpresupuesto"
+objetivo: "Modificar mediante factores las cantidades de los recursos en los análisis de precios unitarios, o los rendimientos de las partidas propias, de todo el presupuesto o de un subpresupuesto."
+nivel: avanzado
+preguntas:
+  - "como bajo un 10% la mano de obra de todo el presupuesto"
+  - "como se usan los factores de cantidad en el subpresupuesto"
+  - "como modifico los rendimientos de todas las partidas a la vez"
+  - "aplicar factor de rendimiento al subpresupuesto s10"
+  - "como deshago los factores que aplique"
+  - "no puedo modificar el analisis de precios despues de poner factores"
+  - "puedo reducir las cantidades de materiales de todo el presupuesto con un factor"
+  - "que factor pongo para bajar 10 porciento la mano de obra"
+aliases:
+  - "factores de cantidad"
+  - "factores de rendimiento"
+  - "aplicar factores al subpresupuesto"
+  - "deshacer factores"
+entidades:
+  modulo: "Presupuestos"
+  pantallas: ["Hoja del Presupuesto", "Factores de cantidad", "Factores de rendimiento"]
+  objetos: ["subpresupuesto", "partidas propias", "análisis de precios unitarios", "rendimientos"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "presupuestos.aplicar-factores-al-subpresupuesto#1"
+    accion: "En el árbol del escenario **Hoja del Presupuesto**, haga clic derecho sobre el nombre del presupuesto (afecta a todas sus partidas) o sobre un subpresupuesto (afecta solo a sus partidas) y elija **Factores de cantidad**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s091, web-https-documentacion-s10peru-com-manual-d-s023, img-a7ba1e20ad1d-0000]
+    pagina: null
+    fotos:
+      - id: "bec550fa45f9"
+        ruta_o_url: "imagenes/manual-de-presupuestos/a7ba1e20ad1d.png"
+        pagina: null
+        ocr: "Clic derecho sobre el presupuesto\n=) ge Escritorio\nEa VIVIENDA UNFAMILIAR Teas\n#]- @ VIVIENDA feta para planificar Inconclusos\n(SB VIVIENDA]'NIFAMILIAR Linea base\nFa] Adicionar Subpresupuesta @ & Microsoft Project\nRR Eliminar Presupuesto @ x Microsoft Excel\n£0 Factores de cantidad i) $10 Valorizaciones 2.0\nFactores de rendimienta ... @\nProcesar Subpresupuestos () » Quitar partidas\nRetornar partida…"
+  - n: 2
+    id: "presupuestos.aplicar-factores-al-subpresupuesto#2"
+    accion: "En la ventana **Factores de cantidad**, ingrese el factor para el tipo de recurso: **Mano de Obra**, **Material**, **Equipos**, **Subcontratos** o **Subpartidas**; por ejemplo, si ingresa 0.90 a mano de obra, se bajará un 10 % del monto total de la mano de obra."
+    fuente: [img-17eb11e8c7c2-0000, web-https-documentacion-s10peru-com-manual-d-s091]
+    pagina: null
+    fotos:
+      - id: "02f577d6d95d"
+        ruta_o_url: "imagenes/manual-de-presupuestos/17eb11e8c7c2.png"
+        pagina: null
+        ocr: "7 ea Si ingresa 0.90 a mano de obra, significa\n[Factores de cantidad 2ixi| que se bajara un 10% del manta total de la\n\nFactores —a | mano de obra.\nMano de Obra | 000000) |\nMaterial 1.000000\n\nsriales (Fanon. | | Después haga clic en otra celda\nEquipos p : para que grabe el dato registrado\nSubcontratos 1.000000\nSubpartidas 1.000000 | mportante .\n\nFiegistrar No use factores préximos a cero,\n. oe core…"
+  - n: 3
+    id: "presupuestos.aplicar-factores-al-subpresupuesto#3"
+    accion: "Después haga clic en otra celda para que grabe el dato registrado."
+    fuente: [img-17eb11e8c7c2-0000]
+    pagina: null
+  - n: 4
+    id: "presupuestos.aplicar-factores-al-subpresupuesto#4"
+    accion: "Después de aplicar los valores, procese el presupuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s091]
+    pagina: null
+  - n: 5
+    id: "presupuestos.aplicar-factores-al-subpresupuesto#5"
+    accion: "Para modificar los rendimientos de todas las partidas propias del subpresupuesto, haga clic derecho sobre el subpresupuesto y elija **Factores de rendimiento**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s091, img-1659f1dd95a6-0000]
+    pagina: null
+    fotos:
+      - id: "6a028f96216c"
+        ruta_o_url: "imagenes/manual-de-presupuestos/1659f1dd95a6.png"
+        pagina: null
+        ocr: "Clic derecho sabre\nel subpresupuesto\nPresupuestos:\n=) ge§ Escritorio\nESS VIVIENDAUNIFAMILIAR,\n| Estrugturas\n\nModificar descripcion subpresupuesto (1)\n\n|) Copiar Subpresupuesto @\n\n§} Pegar Subpresupuesto (3)\n\n Eliminar Subpresupuesto (@)\n\nie Eliminar Partidas ®\n\nbt Eliminar Partidas con un metrado especifico.., ®\n#9 Eactores de cantidad... @)\n\nFactores de rendimiento\n\nJornada por Partida ... (9)\n\nE…"
+  - n: 6
+    id: "presupuestos.aplicar-factores-al-subpresupuesto#6"
+    accion: "En la ventana **Factores de rendimiento**, ingrese el factor; por ejemplo, si ingresa 0.90 a mano de obra, baja un 10 % en todos los rendimientos de las partidas donde interviene mano de obra. Después haga clic en otra celda para que grabe el dato registrado."
+    fuente: [img-dfe3c25ffc26-0000, web-https-documentacion-s10peru-com-manual-d-s091]
+    pagina: null
+    fotos:
+      - id: "be6ce04ccd40"
+        ruta_o_url: "imagenes/manual-de-presupuestos/dfe3c25ffc26.png"
+        pagina: null
+        ocr: "ae Si ingresa 0.90 a mano de obra, significa que\nFactores de rendimiento 21xi| ajar un 10% en todos Ine rendimientos de kas\nPuraieeeg —a | partidas donde interviene mano de obra\nMano de Obra = --————\n——\nEqui 1.000000 , ,\nape ! Después haga clic en otra celda\nRegistra ————— para que grabe el dato registrado\n@ Todas PP Aplicado\n© Solo Partidas sin Faltores\nRegistrar L, Aplicar | Deshacer | Salir"
+verificacion: []
+errores_frecuentes:
+  - sintoma: "Va a aplicar factores a mano de obra, materiales, equipos o subcontratos."
+    solucion: "En ese caso no aplique factores a las subpartidas."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s091]
+  - sintoma: "Quiere deshacer los factores aplicados."
+    solucion: "Use el botón **DESHACER** y luego **SALIR**. Si el factor aplicado quedó fijo, ya no permite deshacer."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s091]
+  - sintoma: "No puede modificar el análisis de precios unitarios de una partida."
+    solucion: "Cuando los factores han sido aplicados a la partida, el análisis de precios unitarios no puede ser modificado hasta deshacer."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s091]
+  - sintoma: "Duda sobre qué valores de factor usar."
+    solucion: "Si usa factores menores de 1, procure que estén dentro del rango 0.10 a 0.90; también puede usar valores mayores a 1. No use CERO como factor."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s091]
+relacionados: [presupuestos.aplicar-factor-de-precio, presupuestos.procesar-presupuesto]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s091, manual: "Manual de Presupuestos", seccion: "5.1.1.1 Hoja del presupuesto (6)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s023, manual: "Manual de Presupuestos", seccion: "2.2 Configuración (6)", pagina: null}
+  - {id: img-a7ba1e20ad1d-0000, manual: "Manual de Presupuestos", seccion: "a7ba1e20ad1d.png", pagina: null}
+  - {id: img-17eb11e8c7c2-0000, manual: "Manual de Presupuestos", seccion: "17eb11e8c7c2.png", pagina: null}
+  - {id: img-1659f1dd95a6-0000, manual: "Manual de Presupuestos", seccion: "1659f1dd95a6.png", pagina: null}
+  - {id: img-dfe3c25ffc26-0000, manual: "Manual de Presupuestos", seccion: "dfe3c25ffc26.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

@@ -1,0 +1,288 @@
+{"texto": "¿Cómo aplico un factor de precio a un recurso en el escenario Precios por Presupuesto?", "procedimiento": "presupuestos.aplicar-factor-de-precio", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "tengo q rebajarle un 3% al precio del cemento en el presupuesto, con factor se puede?", "procedimiento": "presupuestos.aplicar-factor-de-precio", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como subo el precio de todos los fierros de una sola vez con un factor", "procedimiento": "presupuestos.aplicar-factor-de-precio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Necesito aplicar un factor de precio a un grupo de recursos seleccionados, ¿cuáles son los pasos?", "procedimiento": "presupuestos.aplicar-factor-de-precio", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el cliente pidió descuento en los insumos, como les bajo el precio sin tipear uno por uno", "procedimiento": "presupuestos.aplicar-factor-de-precio", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "factor de cantidad a un recurso", "procedimiento": "presupuestos.aplicar-factor-de-precio", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como reduzco la incidencia del acero en los apu con un factor de cantidad", "procedimiento": "presupuestos.aplicar-factor-de-precio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "quiero que un material entre con menos cantidad en el analisis de precios, como lo hago por recurso", "procedimiento": "presupuestos.aplicar-factor-de-precio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "descuento al precio de un insumo", "procedimiento": "presupuestos.aplicar-factor-de-precio", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "komo bajo el precio de un recurso con un factor", "procedimiento": "presupuestos.aplicar-factor-de-precio", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "listo ya ingrese el factor en la ventana de factores de precio, que hago despues para que cambie el monto", "procedimiento": "presupuestos.aplicar-factor-de-precio", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "para rebajar el precio de un recurso con porcentaje tengo que dar clic derecho sobre el recurso?", "procedimiento": "presupuestos.aplicar-factor-de-precio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "quiero que el precio de los materiales suba un 5% por la inflacion, se puede con factor de precio?", "procedimiento": "presupuestos.aplicar-factor-de-precio", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo incremento el precio de un grupo de recursos aplicándoles un factor?", "procedimiento": "presupuestos.aplicar-factor-de-precio", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "aplicar factor a precio de recurso s10", "procedimiento": "presupuestos.aplicar-factor-de-precio", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "el ingeniero me dijo que baje el precio del ladrillo un 4% en el presupuesto, como se hace con factor", "procedimiento": "presupuestos.aplicar-factor-de-precio", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "donde esta la opcion factor de precio al dar clic derecho en un recurso", "procedimiento": "presupuestos.aplicar-factor-de-precio", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué escenario se aplica el factor de precio a los recursos?", "procedimiento": "presupuestos.aplicar-factor-de-precio", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde sale la ventana factores de precio", "procedimiento": "presupuestos.aplicar-factor-de-precio", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd esta factor de cantidad de un recurso", "procedimiento": "presupuestos.aplicar-factor-de-precio", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "como llego a precios por presupuesto para ponerle factor a un insumo", "procedimiento": "presupuestos.aplicar-factor-de-precio", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué menú aparecen Factor de precio y Factor de cantidad cuando selecciono un recurso?", "procedimiento": "presupuestos.aplicar-factor-de-precio", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "factor de precio donde", "procedimiento": "presupuestos.aplicar-factor-de-precio", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "que valor se ingresa en la ventana factores de precio para una rebaja de 2 por ciento", "procedimiento": "presupuestos.aplicar-factor-de-precio", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Cuál es la diferencia entre el factor de precio y el factor de cantidad de un recurso y cuál debo elegir?", "procedimiento": "presupuestos.aplicar-factor-de-precio", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "puedo configurar el factor para varios recursos seleccionados a la vez en precios por presupuesto", "procedimiento": "presupuestos.aplicar-factor-de-precio", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como hago q el factor afecte la incidencia del recurso en el apu y no su precio", "procedimiento": "presupuestos.aplicar-factor-de-precio", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "¿El factor de precio se puede aplicar a un solo recurso o también a un grupo de recursos?", "procedimiento": "presupuestos.aplicar-factor-de-precio", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "para que el factor cambie la incidencia del insumo en los analisis de precios, que opcion elijo", "procedimiento": "presupuestos.aplicar-factor-de-precio", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "puse el factor de precio pero el presupuesto sigue con el mismo monto", "procedimiento": "presupuestos.aplicar-factor-de-precio", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "aplique factor de precio y el total no cambio, falta algo?", "procedimiento": "presupuestos.aplicar-factor-de-precio", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el factor de precio no me baja el costo en los apu, solo el precio del recurso", "procedimiento": "presupuestos.aplicar-factor-de-precio", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "al dar clic derecho en el recurso no me sale factor de precio, estoy en la hoja del presupuesto", "procedimiento": "presupuestos.aplicar-factor-de-precio", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "aplique el factor de cantidad pero el precio del recurso sigue igual", "procedimiento": "presupuestos.aplicar-factor-de-precio", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "baje el precio con factor y no veo el cambio en el apu, ke paso", "procedimiento": "presupuestos.aplicar-factor-de-precio", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "factor de precio no hace nada", "procedimiento": "presupuestos.aplicar-factor-de-precio", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "¿Cómo aplico factores de cantidad a todo el presupuesto desde la Hoja del Presupuesto?", "procedimiento": "presupuestos.aplicar-factores-al-subpresupuesto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "necesito que la mano de obra me salga 15% menos en todo el subpresupuesto de arquitectura", "procedimiento": "presupuestos.aplicar-factores-al-subpresupuesto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo se aplican los factores de rendimiento a las partidas propias de un subpresupuesto?", "procedimiento": "presupuestos.aplicar-factores-al-subpresupuesto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el jefe quiere subir 5% el costo de los equipos en todo el presupuesto sin tocar cada apu", "procedimiento": "presupuestos.aplicar-factores-al-subpresupuesto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "factores de cantidad por tipo de recurso", "procedimiento": "presupuestos.aplicar-factores-al-subpresupuesto", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "quiero cambiar en bloque los rendimientos de las partidas propias de un subpresupuesto", "procedimiento": "presupuestos.aplicar-factores-al-subpresupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como aplico factor a los materiales de un solo subpresupuesto y no al resto", "procedimiento": "presupuestos.aplicar-factores-al-subpresupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "kiero rebajar los subcontratos de todo el presupuesto con un factor, ps?", "procedimiento": "presupuestos.aplicar-factores-al-subpresupuesto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como aplico factores al presupuesto completo, no a un recurso suelto", "procedimiento": "presupuestos.aplicar-factores-al-subpresupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "factores de rendimiento", "procedimiento": "presupuestos.aplicar-factores-al-subpresupuesto", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como hago para que mano de obra y materiales bajen distinto porcentaje en todas las partidas con factores", "procedimiento": "presupuestos.aplicar-factores-al-subpresupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Luego de ingresar los factores de cantidad en la ventana, ¿qué debo hacer para que se reflejen?", "procedimiento": "presupuestos.aplicar-factores-al-subpresupuesto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el metrado de materiales nos sobra como 8% en todo el presupuesto, como reduzco esas cantidades en los apu", "procedimiento": "presupuestos.aplicar-factores-al-subpresupuesto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo hago un ajuste global a las cantidades de los recursos de un subpresupuesto con factores?", "procedimiento": "presupuestos.aplicar-factores-al-subpresupuesto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "factor 0.90 mano de obra como lo pongo", "procedimiento": "presupuestos.aplicar-factores-al-subpresupuesto", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "Pasos para usar factores de cantidad en un subpresupuesto", "procedimiento": "presupuestos.aplicar-factores-al-subpresupuesto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "donde aparece factores de cantidad en el arbol de la hoja del presupuesto", "procedimiento": "presupuestos.aplicar-factores-al-subpresupuesto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "doy clic derecho en el subpresupuesto y no veo factores de rendimiento", "procedimiento": "presupuestos.aplicar-factores-al-subpresupuesto", "intencion": "NAVIGATION", "estilo": "situacional"}
+{"texto": "¿En qué parte del S10 se ingresan los factores de cantidad de todo el presupuesto?", "procedimiento": "presupuestos.aplicar-factores-al-subpresupuesto", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde encuentro la ventana factores de rendimiento", "procedimiento": "presupuestos.aplicar-factores-al-subpresupuesto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd stan los factores de cantidad", "procedimiento": "presupuestos.aplicar-factores-al-subpresupuesto", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "tengo que dar clic derecho en el nombre del presupuesto o en el subpresupuesto para los factores?", "procedimiento": "presupuestos.aplicar-factores-al-subpresupuesto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "factores subpresupuesto donde", "procedimiento": "presupuestos.aplicar-factores-al-subpresupuesto", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "que valores de factor puedo usar si son menores a 1", "procedimiento": "presupuestos.aplicar-factores-al-subpresupuesto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué diferencia hay entre aplicar los factores sobre el presupuesto y sobre un subpresupuesto?", "procedimiento": "presupuestos.aplicar-factores-al-subpresupuesto", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "si ya aplique factores a mano de obra y materiales, conviene ponerlo tambien a las subpartidas?", "procedimiento": "presupuestos.aplicar-factores-al-subpresupuesto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como configuro el factor para que afecte solo el rendimiento de la mano de obra", "procedimiento": "presupuestos.aplicar-factores-al-subpresupuesto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Puedo ingresar un factor mayor a 1 o solo menores?", "procedimiento": "presupuestos.aplicar-factores-al-subpresupuesto", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "se puede poner cero como factor? xq me dijeron q no", "procedimiento": "presupuestos.aplicar-factores-al-subpresupuesto", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "como deshacer los factores de cantidad que aplique al subpresupuesto", "procedimiento": "presupuestos.aplicar-factores-al-subpresupuesto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "quiero revertir los factores y el boton deshacer ya no me deja, quedo fijo", "procedimiento": "presupuestos.aplicar-factores-al-subpresupuesto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "una partida me bloquea el apu, antes si lo editaba, desde que puse factores no puedo", "procedimiento": "presupuestos.aplicar-factores-al-subpresupuesto", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "aplique 0.90 en mano de obra a todo el subpresupuesto y el total no cambia", "procedimiento": "presupuestos.aplicar-factores-al-subpresupuesto", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "xq no puedo modificar el apu de las partidas, ahora tienen factores", "procedimiento": "presupuestos.aplicar-factores-al-subpresupuesto", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "puse factores de rendimiento y se grabo mal, no guardo el dato", "procedimiento": "presupuestos.aplicar-factores-al-subpresupuesto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "factores no deshacer", "procedimiento": "presupuestos.aplicar-factores-al-subpresupuesto", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "¿Cómo cambio el estado del análisis de precios unitarios de una partida a Revisado?", "procedimiento": "presupuestos.cambiar-estado-de-partida", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "kiero proteger el apu d una partida pa q nadie lo toke", "procedimiento": "presupuestos.cambiar-estado-de-partida", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "ya revise los apu de mi presupuesto, como los marco todos como revisados", "procedimiento": "presupuestos.cambiar-estado-de-partida", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo pongo todas las partidas propias del presupuesto en estado Protegido de una vez?", "procedimiento": "presupuestos.cambiar-estado-de-partida", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como le doy el visto bueno al analisis de una partida en s10", "procedimiento": "presupuestos.cambiar-estado-de-partida", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "estado protegido", "procedimiento": "presupuestos.cambiar-estado-de-partida", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "terminamos de revisar el presupuesto con el jefe de grupo y hay que bloquear los apu, como se hace", "procedimiento": "presupuestos.cambiar-estado-de-partida", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "se puede cambiar el estado desde el boton del analisis de precios unitarios?", "procedimiento": "presupuestos.cambiar-estado-de-partida", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "cambiar estado partida", "procedimiento": "presupuestos.cambiar-estado-de-partida", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "Pasos para marcar una partida como revisada en la hoja del presupuesto", "procedimiento": "presupuestos.cambiar-estado-de-partida", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el residente me pidio que ningun apu se pueda cambiar por error, que estado le pongo y como", "procedimiento": "presupuestos.cambiar-estado-de-partida", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como cambio de estado varias partidas propias a la vez", "procedimiento": "presupuestos.cambiar-estado-de-partida", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "klik derecho al apu y sale estado? como lo uso", "procedimiento": "presupuestos.cambiar-estado-de-partida", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "Necesito asignar el estado Revisado a las partidas de un presupuesto, ¿cómo procedo?", "procedimiento": "presupuestos.cambiar-estado-de-partida", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como cambio el estado de una partida a sin revision", "procedimiento": "presupuestos.cambiar-estado-de-partida", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "bloquear modificaciones del apu de una partida en s10", "procedimiento": "presupuestos.cambiar-estado-de-partida", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde esta la opcion estado en el apu de la partida", "procedimiento": "presupuestos.cambiar-estado-de-partida", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que parte del arbol esta cambiar estado a todas las partidas", "procedimiento": "presupuestos.cambiar-estado-de-partida", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Dónde se encuentra el botón de estado del análisis de precios unitarios?", "procedimiento": "presupuestos.cambiar-estado-de-partida", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "dnd cambio el estado de las partidas", "procedimiento": "presupuestos.cambiar-estado-de-partida", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "clic derecho sobre el presupuesto en el arbol, donde sale lo del estado", "procedimiento": "presupuestos.cambiar-estado-de-partida", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué escenario se cambia el estado de un análisis de precios unitarios?", "procedimiento": "presupuestos.cambiar-estado-de-partida", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "estado apu donde", "procedimiento": "presupuestos.cambiar-estado-de-partida", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "¿Quiénes pueden asignar el estado Protegido a una partida?", "procedimiento": "presupuestos.cambiar-estado-de-partida", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "puede un especialista dejar una partida en revisado", "procedimiento": "presupuestos.cambiar-estado-de-partida", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que permisos necesito para proteger partidas", "procedimiento": "presupuestos.cambiar-estado-de-partida", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué estado indica cada color del botón del análisis de precios unitarios?", "procedimiento": "presupuestos.cambiar-estado-de-partida", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "un jefe de grupo puede proteger y tambien revisar partidas o solo el administrador", "procedimiento": "presupuestos.cambiar-estado-de-partida", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que estados puede tener una partida en la hoja del presupuesto", "procedimiento": "presupuestos.cambiar-estado-de-partida", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "me sale un mensaje cuando quiero poner sin analisis a una partida que si tiene apu", "procedimiento": "presupuestos.cambiar-estado-de-partida", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "una partida dice sin analisis pero tiene su apu cargado, viene de una version antigua", "procedimiento": "presupuestos.cambiar-estado-de-partida", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no puedo modificar una partida, creo q esta protegida", "procedimiento": "presupuestos.cambiar-estado-de-partida", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "importamos de la version anterior y todas las partidas salieron sin analisis", "procedimiento": "presupuestos.cambiar-estado-de-partida", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no me deja cambiar el estado a protegido, soy especialista", "procedimiento": "presupuestos.cambiar-estado-de-partida", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "partida protegida no deja editar", "procedimiento": "presupuestos.cambiar-estado-de-partida", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "como reviso que partidas dicen sin analisis aunque tienen apu", "procedimiento": "presupuestos.cambiar-estado-de-partida", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "¿Cómo copio los precios de los recursos de un presupuesto para pegarlos en otro?", "procedimiento": "presupuestos.copiar-precios-a-otro-presupuesto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "tengo una obra parecida ya preciada, como jalo sus precios a mi presupuesto nuevo", "procedimiento": "presupuestos.copiar-precios-a-otro-presupuesto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "copiar precios para otro presupuesto", "procedimiento": "presupuestos.copiar-precios-a-otro-presupuesto", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como pego en el presupuesto destino los precios que copie", "procedimiento": "presupuestos.copiar-precios-a-otro-presupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "kiero pasar los precios de un presupuesto a otro sin digitar", "procedimiento": "presupuestos.copiar-precios-a-otro-presupuesto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "solo quiero copiar los precios de los recursos que estan en cero", "procedimiento": "presupuestos.copiar-precios-a-otro-presupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como copio todos los precios al presupuesto de trabajo", "procedimiento": "presupuestos.copiar-precios-a-otro-presupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Pasos para trasladar precios entre presupuestos desde Precios por Presupuesto", "procedimiento": "presupuestos.copiar-precios-a-otro-presupuesto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "el presupuesto de lima ya tiene precios, necesito usarlos en el de cusco", "procedimiento": "presupuestos.copiar-precios-a-otro-presupuesto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "pegar precios s10", "procedimiento": "presupuestos.copiar-precios-a-otro-presupuesto", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como elijo la fecha y el lugar de los precios que voy a copiar", "procedimiento": "presupuestos.copiar-precios-a-otro-presupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Quiero reutilizar los precios de un presupuesto anterior, ¿qué opciones uso?", "procedimiento": "presupuestos.copiar-precios-a-otro-presupuesto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "copio precios y despues q hago pa pegarlos", "procedimiento": "presupuestos.copiar-precios-a-otro-presupuesto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "me faltan precios en mi presupuesto y los tiene otra obra ya preciada, como los traigo", "procedimiento": "presupuestos.copiar-precios-a-otro-presupuesto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo uso Copiar al presupuesto de trabajo en el proceso de precios por presupuesto?", "procedimiento": "presupuestos.copiar-precios-a-otro-presupuesto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como duplico los precios de una obra en otra obra en el s10", "procedimiento": "presupuestos.copiar-precios-a-otro-presupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "en que parte sale copiar precios al dar clic derecho en el nombre del presupuesto", "procedimiento": "presupuestos.copiar-precios-a-otro-presupuesto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Dónde está la ventana Proceso de precios por presupuesto?", "procedimiento": "presupuestos.copiar-precios-a-otro-presupuesto", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "dnd aparece copiar al presupuesto de trabajo", "procedimiento": "presupuestos.copiar-precios-a-otro-presupuesto", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "en que escenario copio precios entre presupuestos", "procedimiento": "presupuestos.copiar-precios-a-otro-presupuesto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Cuál escenario de Precios por Presupuesto tiene las opciones de edición para copiar precios?", "procedimiento": "presupuestos.copiar-precios-a-otro-presupuesto", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "copiar precios donde", "procedimiento": "presupuestos.copiar-precios-a-otro-presupuesto", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "donde elijo todos los precios o solo los que tienen precio cero", "procedimiento": "presupuestos.copiar-precios-a-otro-presupuesto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "que diferencia hay entre todos los precios y solo los de precio cero al copiar", "procedimiento": "presupuestos.copiar-precios-a-otro-presupuesto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como indico de que fecha y lugar quiero copiar los precios", "procedimiento": "presupuestos.copiar-precios-a-otro-presupuesto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Puedo copiar precios desde el escenario del grupo de precios o debe ser el de presupuestos?", "procedimiento": "presupuestos.copiar-precios-a-otro-presupuesto", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "para que sirve el boton de fecha y lugar al copiar precios", "procedimiento": "presupuestos.copiar-precios-a-otro-presupuesto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "conviene marcar solo los de precio = 0 para no pisar los precios que ya puse", "procedimiento": "presupuestos.copiar-precios-a-otro-presupuesto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q opcion marco pa q los precios copiados no sobreescriban los que ya tengo", "procedimiento": "presupuestos.copiar-precios-a-otro-presupuesto", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "estoy en proceso de precios y no sale copiar al presupuesto que estoy elaborando, a que se debe", "procedimiento": "presupuestos.copiar-precios-a-otro-presupuesto", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "copie los precios y en el destino no se pegaron", "procedimiento": "presupuestos.copiar-precios-a-otro-presupuesto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "copie los precios de la otra obra pero en la mia siguen en cero", "procedimiento": "presupuestos.copiar-precios-a-otro-presupuesto", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "se me sobrescribieron los precios que ya tenia al copiar de otro presupuesto", "procedimiento": "presupuestos.copiar-precios-a-otro-presupuesto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "en el escenario del grupo de precios no puedo editar ni copiar nada", "procedimiento": "presupuestos.copiar-precios-a-otro-presupuesto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no sale la opcion copiar precios pa otro presupuesto", "procedimiento": "presupuestos.copiar-precios-a-otro-presupuesto", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "copiar precios no funciona", "procedimiento": "presupuestos.copiar-precios-a-otro-presupuesto", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "¿Cómo copio todo el contenido de un subpresupuesto a otro subpresupuesto?", "procedimiento": "presupuestos.copiar-subpresupuesto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "quiero duplicar el subpresupuesto de estructuras en otro presupuesto, como hago", "procedimiento": "presupuestos.copiar-subpresupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "copiar subpresupuesto", "procedimiento": "presupuestos.copiar-subpresupuesto", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como pego un subpresupuesto que ya copie", "procedimiento": "presupuestos.copiar-subpresupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "solo quiero pasar de la partida 01.02 a la 01.08 de un subpresupuesto a otro, como hago", "procedimiento": "presupuestos.copiar-subpresupuesto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "kiero copiar un subpresupuesto komplet a otro presupuesto", "procedimiento": "presupuestos.copiar-subpresupuesto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "Necesito copiar un grupo de títulos y partidas con la opción Copiar Subpresupuesto, ¿cómo lo hago?", "procedimiento": "presupuestos.copiar-subpresupuesto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "tengo dos obras iguales y quiero llevar el subpresupuesto de instalaciones electricas de una a la otra", "procedimiento": "presupuestos.copiar-subpresupuesto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "pegar subpresupuesto s10", "procedimiento": "presupuestos.copiar-subpresupuesto", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como agrego el contenido de un subpresupuesto al que ya tiene partidas sin borrarlo", "procedimiento": "presupuestos.copiar-subpresupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Pasos para usar Copiar Subpresupuesto y Pegar Subpresupuesto en la hoja del presupuesto", "procedimiento": "presupuestos.copiar-subpresupuesto", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "ya cree el subpresupuesto destino vacio, ahora como le traigo todo lo del origen", "procedimiento": "presupuestos.copiar-subpresupuesto", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "copio el subpresupuesto y despues clic derecho en el otro y q mas", "procedimiento": "presupuestos.copiar-subpresupuesto", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como clono un subpresupuesto entero con todas sus partidas", "procedimiento": "presupuestos.copiar-subpresupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "quiero reemplazar el contenido de un subpresupuesto con el de otro", "procedimiento": "presupuestos.copiar-subpresupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "se puede pegar solo un tramo de items del subpresupuesto origen", "procedimiento": "presupuestos.copiar-subpresupuesto", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde esta copiar subpresupuesto en el arbol de la hoja del presupuesto", "procedimiento": "presupuestos.copiar-subpresupuesto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué menú aparece Pegar Subpresupuesto?", "procedimiento": "presupuestos.copiar-subpresupuesto", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "dnd pego el subpresupuesto", "procedimiento": "presupuestos.copiar-subpresupuesto", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "clic derecho en el subpresupuesto origen, que opcion elijo", "procedimiento": "presupuestos.copiar-subpresupuesto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "pegar subpresupuesto donde", "procedimiento": "presupuestos.copiar-subpresupuesto", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "¿En qué escenario puedo copiar un subpresupuesto de un presupuesto a otro?", "procedimiento": "presupuestos.copiar-subpresupuesto", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde pongo el item inicial y el final al pegar un subpresupuesto", "procedimiento": "presupuestos.copiar-subpresupuesto", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "al pegar sale un mensaje de adicionar al contenido existente, si pongo si o no que cambia", "procedimiento": "presupuestos.copiar-subpresupuesto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Debe existir el subpresupuesto destino antes de pegar el contenido?", "procedimiento": "presupuestos.copiar-subpresupuesto", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "como elijo el item inicial y final del rango a copiar", "procedimiento": "presupuestos.copiar-subpresupuesto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "si respondo no a adicionar, se pierde lo que habia en el destino?", "procedimiento": "presupuestos.copiar-subpresupuesto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "puedo copiar el subpresupuesto a uno que ya tiene partidas, como configuro para sumarlas", "procedimiento": "presupuestos.copiar-subpresupuesto", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿La copia del subpresupuesto es completa o puedo limitarla por rango de ítems?", "procedimiento": "presupuestos.copiar-subpresupuesto", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "pegue el subpresupuesto y se borro todo lo que tenia el destino", "procedimiento": "presupuestos.copiar-subpresupuesto", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "quiero copiar solo del item 03 al 05 pero me coge todo el subpresupuesto, los items no estaban generados creo", "procedimiento": "presupuestos.copiar-subpresupuesto", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "perdi las partidas del subpresupuesto destino por responder no", "procedimiento": "presupuestos.copiar-subpresupuesto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me aparece pegar subpresupuesto, creo q falta crear el destino", "procedimiento": "presupuestos.copiar-subpresupuesto", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "cuando pego el subpresupuesto me pide confirmar si estoy seguro, es normal", "procedimiento": "presupuestos.copiar-subpresupuesto", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "pegue el subpreupuesto y me desaparecio lo del destino", "procedimiento": "presupuestos.copiar-subpresupuesto", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "pegar subpresupuesto borra todo", "procedimiento": "presupuestos.copiar-subpresupuesto", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "¿Cómo genero el ítem alterno según el código de las partidas en la hoja del presupuesto?", "procedimiento": "presupuestos.generar-item-alterno", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "quiero que la numeracion de mi presupuesto sea la del catalogo y no la de la columna item, como hago", "procedimiento": "presupuestos.generar-item-alterno", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "item alterno", "procedimiento": "presupuestos.generar-item-alterno", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como pongo mi propia numeracion en la hoja del presupuesto si item no se edita", "procedimiento": "presupuestos.generar-item-alterno", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "generar item alterno por codigo de titulo", "procedimiento": "presupuestos.generar-item-alterno", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "kiero q el item salga con el codigo de la partida, komo lo hago", "procedimiento": "presupuestos.generar-item-alterno", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "para el cliente necesito imprimir el presupuesto con mi numeracion de codigos, que opcion de impresion elijo", "procedimiento": "presupuestos.generar-item-alterno", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como lleno la columna item alterno de todo el presupuesto de golpe", "procedimiento": "presupuestos.generar-item-alterno", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como genero el item alterno solo de los titulos de un subpresupuesto", "procedimiento": "presupuestos.generar-item-alterno", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Quiero ver los códigos del catálogo en la hoja, ¿cómo genero y muestro el ítem alterno?", "procedimiento": "presupuestos.generar-item-alterno", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "generar item alterno s10", "procedimiento": "presupuestos.generar-item-alterno", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "el cliente exige la numeracion del catalogo de la empresa en el presupuesto, como la genero", "procedimiento": "presupuestos.generar-item-alterno", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como saco los codigos de las partidas a una columna de la hoja del presupuesto", "procedimiento": "presupuestos.generar-item-alterno", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Necesito que la columna Ítem Alterno tome el código con el que está registrada cada partida, ¿cómo?", "procedimiento": "presupuestos.generar-item-alterno", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "xa q sirve y como se genera el item alterno", "procedimiento": "presupuestos.generar-item-alterno", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "clic derecho en el presupuesto y generar el item alterno, como lo uso paso a paso", "procedimiento": "presupuestos.generar-item-alterno", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde se muestra la columna item alterno en la hoja del presupuesto", "procedimiento": "presupuestos.generar-item-alterno", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde esta mostrar campos", "procedimiento": "presupuestos.generar-item-alterno", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "¿Qué opción del árbol de la hoja del presupuesto genera el ítem alterno?", "procedimiento": "presupuestos.generar-item-alterno", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "dnd activo la impresion con item alterno", "procedimiento": "presupuestos.generar-item-alterno", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "no veo la columna item alterno, donde la activo", "procedimiento": "presupuestos.generar-item-alterno", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "item alterno donde esta", "procedimiento": "presupuestos.generar-item-alterno", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "¿En qué parte de la configuración de impresión se elige imprimir con los ítems alternos?", "procedimiento": "presupuestos.generar-item-alterno", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "cuantos digitos conviene poner para el item alterno", "procedimiento": "presupuestos.generar-item-alterno", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Cuántos dígitos del código toma el ítem alterno?", "procedimiento": "presupuestos.generar-item-alterno", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "como configuro la impresion para que use el item alterno en vez del item", "procedimiento": "presupuestos.generar-item-alterno", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que numero de digitos recomiendan tomar del codigo de la partida", "procedimiento": "presupuestos.generar-item-alterno", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como hago visible la columna item alterno con mostrar campos", "procedimiento": "presupuestos.generar-item-alterno", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿El ítem alterno se genera también para los títulos de un subpresupuesto o solo para todo el presupuesto?", "procedimiento": "presupuestos.generar-item-alterno", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "no puedo editar la columna item en la hoja del presupuesto", "procedimiento": "presupuestos.generar-item-alterno", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "quiero escribir mi propio item y la columna esta bloqueada", "procedimiento": "presupuestos.generar-item-alterno", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "genere el item alterno y no veo nada en la hoja", "procedimiento": "presupuestos.generar-item-alterno", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "imprimi el presupuesto y salen los items normales, no los alternos", "procedimiento": "presupuestos.generar-item-alterno", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "xq no puedo cambiar el item de una partida", "procedimiento": "presupuestos.generar-item-alterno", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "el item alterno me sale con un codigo larguisimo, cuantos digitos debo tomar", "procedimiento": "presupuestos.generar-item-alterno", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "la columna item no se deja", "procedimiento": "presupuestos.generar-item-alterno", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "¿Cómo registro el detalle de un recurso, por ejemplo un equipo, en el escenario Detalle de recursos?", "procedimiento": "presupuestos.registrar-detalle-de-recurso", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "quiero hallar el costo de mi retroexcavadora con operador, combustible y mantenimiento, donde lo armo", "procedimiento": "presupuestos.registrar-detalle-de-recurso", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "trasladar precio al presupuesto", "procedimiento": "presupuestos.registrar-detalle-de-recurso", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como activo detalle a un recurso para hacerle su propio analisis", "procedimiento": "presupuestos.registrar-detalle-de-recurso", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como le agrego insumos al detalle de un equipo", "procedimiento": "presupuestos.registrar-detalle-de-recurso", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "kiero hacer el apu de un equipo pa pasar su precio al presupuesto", "procedimiento": "presupuestos.registrar-detalle-de-recurso", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "tengo varios equipos y a cada uno le calculo su costo, como llevo cada precio al presupuesto", "procedimiento": "presupuestos.registrar-detalle-de-recurso", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Pasos para hacer el análisis de precios de un recurso y llevar su precio a la hoja del presupuesto", "procedimiento": "presupuestos.registrar-detalle-de-recurso", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "detalle de recursos", "procedimiento": "presupuestos.registrar-detalle-de-recurso", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como adiciono un recurso al detalle desde el catalogo de recursos", "procedimiento": "presupuestos.registrar-detalle-de-recurso", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "la cargadora frontal la vamos a costear con su operador y combustible, donde lo calculo", "procedimiento": "presupuestos.registrar-detalle-de-recurso", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como hago que el precio del detalle del recurso pase al presupuesto", "procedimiento": "presupuestos.registrar-detalle-de-recurso", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "activar detalle recurso s10", "procedimiento": "presupuestos.registrar-detalle-de-recurso", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como armo el detalle de un recurso con varios componentes y luego mando el precio al presupuesto", "procedimiento": "presupuestos.registrar-detalle-de-recurso", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "komo trasladar al presupuesto el precio d un equipo calculado", "procedimiento": "presupuestos.registrar-detalle-de-recurso", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "Necesito registrar el costo de un equipo propio de la empresa para usarlo en Gerencia de Proyectos, ¿cómo?", "procedimiento": "presupuestos.registrar-detalle-de-recurso", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "¿Dónde está el escenario Detalle de recursos?", "procedimiento": "presupuestos.registrar-detalle-de-recurso", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "donde aparece activar detalle al dar clic derecho en un recurso", "procedimiento": "presupuestos.registrar-detalle-de-recurso", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que menu sale lo de trasladar el precio al presupuesto del recurso", "procedimiento": "presupuestos.registrar-detalle-de-recurso", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd agrego recursos al detalle", "procedimiento": "presupuestos.registrar-detalle-de-recurso", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "adicionar recurso donde", "procedimiento": "presupuestos.registrar-detalle-de-recurso", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "en que parte se ve el apu del detalle de un recurso", "procedimiento": "presupuestos.registrar-detalle-de-recurso", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "como entro al detalle de recursos desde el modulo de presupuestos", "procedimiento": "presupuestos.registrar-detalle-de-recurso", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "que tengo que activar en la configuracion de procesamiento para que tome el precio del detalle", "procedimiento": "presupuestos.registrar-detalle-de-recurso", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "Antes de importar el detalle de un recurso desde Excel, ¿qué debo tener registrado en la base de datos?", "procedimiento": "presupuestos.registrar-detalle-de-recurso", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "para que se usan los datos del detalle de recursos en operacion de equipos de gerencia de proyectos", "procedimiento": "presupuestos.registrar-detalle-de-recurso", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "solo los equipos pueden tener detalle o cualquier recurso", "procedimiento": "presupuestos.registrar-detalle-de-recurso", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Cómo configuro que al procesar el presupuesto se verifique el detalle del recurso?", "procedimiento": "presupuestos.registrar-detalle-de-recurso", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "q opcion de procesamiento hace q use el detalle y no el precio del recurso principal", "procedimiento": "presupuestos.registrar-detalle-de-recurso", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "al procesar el presupuesto toma el precio del recurso principal y no el del detalle", "procedimiento": "presupuestos.registrar-detalle-de-recurso", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no veo el apu del detalle del recurso desde la hoja del presupuesto", "procedimiento": "presupuestos.registrar-detalle-de-recurso", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "traslade el precio del equipo pero el presupuesto sigue con el precio viejo", "procedimiento": "presupuestos.registrar-detalle-de-recurso", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no me deja importar el detalle desde excel", "procedimiento": "presupuestos.registrar-detalle-de-recurso", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el precio del detalle no se refleja, ke hago", "procedimiento": "presupuestos.registrar-detalle-de-recurso", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "detalle no pasa al presupuesto", "procedimiento": "presupuestos.registrar-detalle-de-recurso", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "al importar el detalle del recurso desde excel me dice que los recursos no existen", "procedimiento": "presupuestos.registrar-detalle-de-recurso", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "¿Cómo vinculo el precio de un recurso con una celda de una hoja Excel?", "procedimiento": "presupuestos.vincular-precios-a-excel", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "mi logistica cotiza en excel desde otra ciudad, como hago que el s10 lea esos precios", "procedimiento": "presupuestos.vincular-precios-a-excel", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "vincular precios excel", "procedimiento": "presupuestos.vincular-precios-a-excel", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como vinculo en bloque varios recursos con sus precios en el excel", "procedimiento": "presupuestos.vincular-precios-a-excel", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Pasos para exportar Precios por Presupuesto a Excel y luego vincular los precios", "procedimiento": "presupuestos.vincular-precios-a-excel", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "kiero q los precios se jalen solos de mi hoja de excel", "procedimiento": "presupuestos.vincular-precios-a-excel", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como reemplazo los precios con los de las celdas vinculadas", "procedimiento": "presupuestos.vincular-precios-a-excel", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como desvinculo el precio de una celda excel para escribirlo a mano", "procedimiento": "presupuestos.vincular-precios-a-excel", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "tomar precios vinculados", "procedimiento": "presupuestos.vincular-precios-a-excel", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "el proveedor me manda la cotizacion en excel, como la conecto con los recursos del presupuesto sin tipear", "procedimiento": "presupuestos.vincular-precios-a-excel", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo vinculo celdas en forma global a Excel?", "procedimiento": "presupuestos.vincular-precios-a-excel", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "ya vincule los precios, como los traigo al s10", "procedimiento": "presupuestos.vincular-precios-a-excel", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como exporto el escenario a una hoja excel para cotizar los precios afuera", "procedimiento": "presupuestos.vincular-precios-a-excel", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Necesito enlazar el precio de un material con una celda de Excel, ¿qué pasos sigo?", "procedimiento": "presupuestos.vincular-precios-a-excel", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "komo vinkulo los precios de los insumos a un exel", "procedimiento": "presupuestos.vincular-precios-a-excel", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "en la ventana vinculo excel como elijo fila de inicio y fin", "procedimiento": "presupuestos.vincular-precios-a-excel", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde esta vincular un precio a celda excel", "procedimiento": "presupuestos.vincular-precios-a-excel", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿Dónde aparece la ventana Vinculo Excel?", "procedimiento": "presupuestos.vincular-precios-a-excel", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "en que parte sale tomar precios vinculados en forma global", "procedimiento": "presupuestos.vincular-precios-a-excel", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd esta desvincular precio de celda excel", "procedimiento": "presupuestos.vincular-precios-a-excel", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "reemplazar precios de celdas vinculadas donde", "procedimiento": "presupuestos.vincular-precios-a-excel", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "donde exporto a microsoft excel en precios por presupuesto", "procedimiento": "presupuestos.vincular-precios-a-excel", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "¿En qué escenario se vinculan los precios de los recursos con Excel?", "procedimiento": "presupuestos.vincular-precios-a-excel", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "que fila y columna elijo al vincular la celda del precio", "procedimiento": "presupuestos.vincular-precios-a-excel", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "donde guardo el archivo de excel exportado, en el servidor?", "procedimiento": "presupuestos.vincular-precios-a-excel", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Puedo vincular varios precios a la vez o debe ser uno por uno?", "procedimiento": "presupuestos.vincular-precios-a-excel", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "tengo que cerrar el excel antes de vincular los precios", "procedimiento": "presupuestos.vincular-precios-a-excel", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como indico la fila de inicio, la de fin y la columna de los precios en el vinculo excel", "procedimiento": "presupuestos.vincular-precios-a-excel", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que pasa con un precio vinculado si despues quiero volver a ponerlo manual", "procedimiento": "presupuestos.vincular-precios-a-excel", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "tengo un precio vinculado a excel y no me deja escribirlo a mano", "procedimiento": "presupuestos.vincular-precios-a-excel", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "vincule las celdas pero los precios no cambian en el presupuesto", "procedimiento": "presupuestos.vincular-precios-a-excel", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no se actualizan los precios desde mi excel", "procedimiento": "presupuestos.vincular-precios-a-excel", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "cambie el precio en el excel y el s10 sigue con el viejo", "procedimiento": "presupuestos.vincular-precios-a-excel", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "xq no me deja vincular si tengo el excel abierto", "procedimiento": "presupuestos.vincular-precios-a-excel", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "precio vinculado no edita", "procedimiento": "presupuestos.vincular-precios-a-excel", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "vincule varios precios y no los toma al dar tomar datos vinculados", "procedimiento": "presupuestos.vincular-precios-a-excel", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}

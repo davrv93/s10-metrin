@@ -1,0 +1,82 @@
+id: calidad-movil.asignar-protocolos-a-actividades
+version: 1
+modulo: calidad-movil
+titulo: "Registrar protocolos y asignarlos a las actividades"
+objetivo: "Registrar los protocolos de calidad con sus características y asignar a cada actividad del proyecto el protocolo con el que será calificada en Calidad Móvil."
+nivel: intermedio
+preguntas:
+  - "cómo asigno protocolos a las actividades para calidad móvil"
+  - "donde registro los protocolos de calidad en s10"
+  - "como creo las caracteristicas de un protocolo"
+  - "como asigno el protocolo a todas las actividades de golpe"
+  - "que es la ficha de protocolos"
+  - "donde le pongo el supervisor y revisor a cada actividad"
+  - "como registro un protocolo de verificacion de concreto"
+  - "protocolos de calidad cuantos niveles tiene el catalogo"
+aliases:
+  - "asignar protocolos"
+  - "ficha de protocolos"
+  - "registrar protocolos"
+  - "características del protocolo"
+  - "asignación de protocolos"
+entidades:
+  modulo: "Calidad Móvil"
+  pantallas: ["Ficha de Protocolos", "Asignación de Protocolos", "especificaciones"]
+  objetos: ["protocolos", "características", "actividad", "catálogo"]
+prerrequisitos: []
+pasos:
+  - n: 1
+    id: "calidad-movil.asignar-protocolos-a-actividades#1"
+    accion: "Registre los protocolos generales en su catálogo, que tiene 3 niveles definidos por el usuario."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s002]
+    pagina: null
+    fotos:
+      - id: "d56bf43aff30"
+        ruta_o_url: "imagenes/manual-de-calidad-movil/18f9f46102a5.png"
+        pagina: null
+        caption: "Este catálogo tiene 3 niveles definidos por el usuario."
+        ocr: "J +, Catalogo de Protocolos : 000002 ESTRUCTURAS / COLOCACION DE CONCRETO L_[orx]\n_ Opciones 2\nOs xXBue MYERS Bom 4a @ i = a\nomen | ] Descrncin Abrevietiral Codigo Atte\n[ MovmeNTo od | _|__[ 000020001 | VERIFICACION DE COLOCACION DE ARMADUR,’\nfal Esrructuras|_| | Sunonanuoz VERIFICACION DE ENCOFRADO MADERA\niB arourscruny |__| Son00z0003_ | VERICAOMN DE ENCOPRADO METALICG\nGa protocoto pq]__|__|_ 90…"
+  - n: 2
+    id: "calidad-movil.asignar-protocolos-a-actividades#2"
+    accion: "Ingrese al escenario de **Ficha de Protocolos** para realizar el registro de los protocolos y sus características; cada protocolo tendrá una lista de características, que serán posteriormente calificadas en las actividades."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s002]
+    pagina: null
+    fotos:
+      - id: "f2955b16e24c"
+        ruta_o_url: "imagenes/manual-de-calidad-movil/c486e290249b.png"
+        pagina: null
+        caption: "Ingrese al escenario de Ficha de Protocolos para realizar el registro de los protocolos y sus características."
+        ocr: "[)\\Gerencia de Proyectos » (07038002 Meta : MUROS DE CIMENTACION) L-JOlx)\nArchivo Yer Catdlogos Herramientas 2\n46R+e4+8Beam\nFicha de Protocolo\npo Teecehed acted a\nSubcontratos\ns :\nHOMARH Se vida\nArrastre hacia aqui el encabezado de la coluna que desea agrupar\n‘OP Equipo\n9131 Campo[Descripcién =] [en cualquier posicion >) [X][22] crupo:\nCodigo Descripcion [Cédigo Atterno, Abreviatura Activa |Creado…"
+  - n: 3
+    id: "calidad-movil.asignar-protocolos-a-actividades#3"
+    accion: "Defina las características en su catálogo de 2 niveles, de tipo Detalle o Titulo, para luego asignarlas al protocolo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s002]
+    pagina: null
+    fotos:
+      - id: "74cc872a53ff"
+        ruta_o_url: "imagenes/manual-de-calidad-movil/043fdea04594.png"
+        pagina: null
+        caption: "Puede ser de tipo Detalle o Titulo."
+        ocr: "CC ~ |\n\"Tipo Calidad\n\ncoca foo 01\n\nDescripcién [eaioraciindeEqipo\n\nCédigo alterno |\n\nAbreviatura lf\n\nEstado JResistrado >| Tipo Caracteristica [oetare >]\n\nValor minimo Jo Valor maximo a) Valor encontrado a)\n\nModificar | Cancelar |"
+  - n: 4
+    id: "calidad-movil.asignar-protocolos-a-actividades#4"
+    accion: "Desde el escenario **Asignación de Protocolos**, asigne uno a uno o en forma masiva el protocolo relacionado a cada actividad."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s002]
+    pagina: null
+  - n: 5
+    id: "calidad-movil.asignar-protocolos-a-actividades#5"
+    accion: "En la ventana de especificaciones, asigne las propiedades de cada actividad."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s002]
+    pagina: null
+    fotos:
+      - id: "9e9ac22acd64"
+        ruta_o_url: "imagenes/manual-de-calidad-movil/f4c58bb1f0c8.png"
+        pagina: null
+        caption: "En la ventana de especificaciones es donde se asignan las propiedades de cada actividad."
+        ocr: "01.01.03\n\nCOMEDOR PERSONAL OBRERO\n\ngb\n\nPrioridad [atta yA |\n\nPartida de Control for 01010 Joaras PROVISIONALES co\n\nResponsable fi 901001 Josanvo PLANTARROSA, JULIO CESAR a\n\nEspecialidad/Etapa fi 901001 [CENERALES a\n\nFrente for 02 eoricios muttifsmilisres de la zona este ase\n\nDestino Especifico for 0103 [comeDor aoe\n\nPreis [ooooazoq0s PPRoTocOLO DE ANCLAJE POSTENSADO EN MUROS .. | 44\n\nSupervisor fp…"
+verificacion: []
+errores_frecuentes: []
+relacionados: [calidad-movil.publicar-proyecto-en-calidad-movil]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s002, manual: "Manual de Calidad Móvil", seccion: "1.2.1. Asignación de Protocolos", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

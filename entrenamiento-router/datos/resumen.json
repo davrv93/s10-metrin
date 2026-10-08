@@ -1,14 +1,14 @@
 {
- "clases": 126,
- "entrenamiento": 7061,
- "calibracion": 1002,
+ "clases": 168,
+ "entrenamiento": 8884,
+ "calibracion": 1215,
  "prueba": 194,
- "prueba_con_caso": 125,
- "entrenamiento_min_por_clase": 40,
- "entrenamiento_ninguno": 1476,
+ "prueba_con_caso": 129,
+ "entrenamiento_min_por_clase": 39,
+ "entrenamiento_ninguno": 1463,
  "descartes": {
-  "duplicado": 128,
-  "fuga_prueba": 2
+  "fuga_prueba": 4,
+  "duplicado": 158
  },
  "errores": {},
  "clases_sin_parafrasis": [],

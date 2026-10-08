@@ -1,0 +1,158 @@
+id: almacenes.seleccionar-equipos-disponibles
+version: 1
+modulo: almacenes
+titulo: "Seleccionar los equipos disponibles del proyecto y registrar su ficha"
+objetivo: "Elegir del catálogo de recursos el equipo propio y de terceros que se utilizará en el proyecto, para asignarlo como destino en los egresos y registrar sus partes de equipo, y completar su ficha relacionándolo con el equipo presupuestado."
+nivel: intermedio
+preguntas:
+  - "como agrego los equipos que van a trabajar en la obra en almacenes"
+  - "dónde selecciono los equipos disponibles del proyecto"
+  - "como lleno la ficha del equipo con el precio del alquiler"
+  - "como relaciono el cargador frontal con el equipo presupuestado"
+  - "como asigno las horas maquina de un equipo alquilado al proyecto"
+  - "quiero que me pida el horometro cuando egreso petroleo para un equipo"
+  - "un equipo ya no trabaja en la obra como lo saco de los partes"
+  - "donde pongo marca modelo y serie del volquete"
+  - "equipos disponivles s10 como se registran"
+aliases:
+  - "equipos disponibles"
+  - "ficha del equipo"
+  - "activos disponibles"
+  - "registrar equipos del proyecto"
+  - "especificaciones del equipo"
+entidades:
+  modulo: "Almacenes"
+  pantallas: ["Equipos disponibles", "Ficha del Equipo", "Especificaciones del Equipo", "Catálogo de Recursos"]
+  objetos: ["equipo", "recurso presupuestado", "alquiler", "combustible", "horómetro", "kilometraje", "partes de equipo"]
+prerrequisitos:
+  - texto: "Los recursos tipo activo que participan en la ejecución del proyecto, sean propios o de terceros, deben estar registrados en el catálogo de recursos; el recurso específico, de 14 dígitos, es el que se utiliza como activo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s149]
+pasos:
+  - n: 1
+    id: "almacenes.seleccionar-equipos-disponibles#1"
+    accion: "En el árbol del proyecto, acceda al escenario **Equipos disponibles**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s150]
+    pagina: null
+    fotos:
+      - id: "a7145593b6ce"
+        ruta_o_url: "imagenes/manual-de-almacenes/7b7e3eaf2799.png"
+        pagina: null
+        caption: "Acceso al escenario Activos Disponibles"
+        ocr: "[ea]\nor J Proyectos\nEquipos i=) Escritorio\ndisponibles\nLuego, PUENTE EN CARRETERA i"
+  - n: 2
+    id: "almacenes.seleccionar-equipos-disponibles#2"
+    accion: "Del **Catálogo de Recursos** que muestra el sistema, elija los equipos propios y de terceros que se usarán en la construcción del proyecto."
+    resultado: "Los equipos elegidos son mostrados en el escenario Equipos disponibles."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s150]
+    pagina: null
+    fotos:
+      - id: "b7ecc73a784b"
+        ruta_o_url: "imagenes/manual-de-almacenes/df98b16fdd79.png"
+        pagina: null
+        caption: "El sistema muestra el Catálogo de Recursos, (donde previamente se tienen registrados) todos los equipos propios y de terceros que se usará en la construcción del proyecto,"
+        ocr: "f La\n@% Catalogo de Recursos : Todos los Registros Lo) = aa\nOpciones ?\nDae XE S mS Hoo eS (fa eo\nElija con doble clic\nEi-€Ry Todos los Registros |Z] L] * NIveL: 4/4\n# actos Descripcién |\nGre aeeog ee ete wets oes] |\n1017010001 0004 Grupo electrégeno 380 HP 250 kw serie 40234\n‘ a\n10040100050001 Camidn volquete de 12 m3 marca Volvo placa V¥Z-3405 color blanco\n1001010001 0006 Cargador frontal sobre l…"
+  - n: 3
+    id: "almacenes.seleccionar-equipos-disponibles#3"
+    accion: "Para ingresar las propiedades a un equipo, haga doble clic sobre él para abrir la **Ficha del Equipo**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s150]
+    pagina: null
+    fotos:
+      - id: "fa4765baa6df"
+        ruta_o_url: "imagenes/manual-de-almacenes/7b7ccedc02f3.png"
+        pagina: null
+        caption: "Para ingresar las propiedades a los equipos:"
+        ocr: "BY 7 Ly Elija con doble clic\nActive\nAEM NHN Parnariee tected erdwa lardne PAT ORS F earla RROT"
+  - n: 4
+    id: "almacenes.seleccionar-equipos-disponibles#4"
+    accion: "Seleccione la opción que permite elegir el recurso presupuestado y elija el recurso presupuestado con el que se relaciona el equipo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s150]
+    pagina: null
+    fotos:
+      - id: "1b1d597427c6"
+        ruta_o_url: "imagenes/manual-de-almacenes/2d40c07b63ab.png"
+        pagina: null
+        caption: "Use en el orden que se marca en las llamadas."
+        ocr: "e — ir x\njo Ficha del Equipo de! Equipo. oe\nCédigo 10010100010006 ee mS\nDescripcién  Cargador frontal sobre Hantas CAT 950 F serie 5896\nPropietario Polo, José Ditsadla Savete\nCondiciones del contrato\nMoneda [1 [NUEVOS SOLES ae | Factor de produccién, 4\n‘Alquiler por hm Cantidad hm  Incluye combustible\nNormal 300.00 tir o.0c , i\nome See [~ Resultados operacién del equipo\n0.00 | Ma nl 88\n0.00 Espeei…"
+  - n: 5
+    id: "almacenes.seleccionar-equipos-disponibles#5"
+    accion: "Elija el tipo de moneda e ingrese el monto del alquiler, de acuerdo con el monto máximo a pagar que muestra el sistema, tomado del presupuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s150]
+    pagina: null
+  - n: 6
+    id: "almacenes.seleccionar-equipos-disponibles#6"
+    accion: "Grabe la ventana y vuelva a ingresar a la ficha del equipo con doble clic."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s150, img-c9dd714bbcec-0000]
+    pagina: null
+    fotos:
+      - id: "356be312c4b4"
+        ruta_o_url: "imagenes/manual-de-almacenes/c9dd714bbcec.png"
+        pagina: null
+        ocr: "FA | Vuelva a ingresar a la ficha del equipo con doble clic\nActivo\nANNAN AANANNAT Carciadar frontal sohre llantas CAT O50 F seria SROT"
+  - n: 7
+    id: "almacenes.seleccionar-equipos-disponibles#7"
+    accion: "Registre la cantidad de hm que trabajará el equipo en el proyecto, a partir de la cantidad de hm presupuestadas."
+    resultado: "El sistema muestra el saldo por asignar de las hm presupuestadas; la cantidad asignada servirá como tope cuando registre el subcontrato para el control de pagos."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s150]
+    pagina: null
+  - n: 8
+    id: "almacenes.seleccionar-equipos-disponibles#8"
+    accion: "Seleccione la opción de combustibles si el costo del equipo registrado no incluye combustibles, y la de gestión del equipo si quiere tomarla en cuenta para ver los resultados de la operación del equipo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s151]
+    pagina: null
+  - n: 9
+    id: "almacenes.seleccionar-equipos-disponibles#9"
+    accion: "Abra la ventana **Especificaciones del Equipo** y registre la unidad, la unidad de medición del trabajo del equipo, la marca, el modelo, la potencia y el número de serie del equipo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s151]
+    pagina: null
+    fotos:
+      - id: "d9fc907b2170"
+        ruta_o_url: "imagenes/manual-de-almacenes/c916b9b88399.png"
+        pagina: null
+        caption: "Llamada h: Muestra la ventana Especificaciones del Equipo;"
+        ocr: "al\n© Especificaciones del Equi onto\n} Gaddiga 10010100010006 — Cédigo atterno Estado x\nDescripcidn Cargador frontal sobre llantas CAT 950 F serie 5896 2)\nDescripcidn Cargador frontal CAT F5( ~192873-g-7 1548652389555 =63)\nalterna\nUnidad del [494 pza a | Oy Unidad de medicién [4o3  [h ~ aa\nEquigo 44 del trabajo 44)\nMarca Caterpillar Modelo |950F\nPatencia (hp) 160 Capacidad 1000 ject [ms = a4\nUbicac…"
+  - n: 10
+    id: "almacenes.seleccionar-equipos-disponibles#10"
+    accion: "Si al efectuar el egreso del combustible quiere que el sistema solicite el horómetro o el kilometraje del equipo, seleccione la opción correspondiente, según la unidad de medición del trabajo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s151, web-https-documentacion-s10peru-com-manual-d-s152]
+    pagina: null
+  - n: 11
+    id: "almacenes.seleccionar-equipos-disponibles#11"
+    accion: "Elija del catálogo los recursos que se tomarán en cuenta en la evaluación de los ratios: la cantidad de recursos necesaria por hora o por kilómetro de trabajo del equipo."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s152]
+    pagina: null
+  - n: 12
+    id: "almacenes.seleccionar-equipos-disponibles#12"
+    accion: "En la ficha del equipo, registre el factor: use factor 1 cuando el equipo que encontramos en el mercado rinde igual al previsto en el presupuesto y factor 2 cuando rinde la mitad."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s152]
+    pagina: null
+  - n: 13
+    id: "almacenes.seleccionar-equipos-disponibles#13"
+    accion: "Mantenga seleccionado **Disponible** mientras el equipo esté en servicio o trabajando; quite la selección cuando deje de trabajar o lo retiren del proyecto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s152, img-f1798c134957-0000]
+    pagina: null
+    fotos:
+      - id: "65d849a7535e"
+        ruta_o_url: "imagenes/manual-de-almacenes/f1798c134957.png"
+        pagina: null
+        ocr: "vo Ficha del Equipo (m) (n) =\n\nCédige 1001010001006 (L)=[¥ Disponible | [4 |Enelaboracién —_Alterno\n\nDescripcién _ Cargador frontal sobre lantas CAT 950 F serie 5896\n\nPropietario Polo, José Orden de Servicio\n\nCondiciones del contrato\nMoneda [o7  INUEVOS SOLES we 44 Factor de produccién 1\n[isc Alain por hm] [pated ie) (2)-1T Inetuye cemmbsaetine ro)\n300.00 0.00 sin del ea\neee @e=[- Resuttados opera…"
+verificacion:
+  - texto: "La etiqueta de estado de la ficha se muestra en color amarillo cuando la ficha está en proceso de elaboración y en color rojo cuando la ficha del equipo está aprobada y puede ser utilizada en un subcontrato."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s153]
+errores_frecuentes:
+  - sintoma: "Un equipo no aparece para efectuar los partes diarios de equipo."
+    solucion: "Sólo los equipos disponibles son mostrados para efectuar los partes diarios de equipo: en la ficha, la opción Disponible debe estar seleccionada mientras el equipo esté en servicio o trabajando."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s152]
+  - sintoma: "Los equipos ya aparecen en el módulo de Almacenes sin haberlos registrado."
+    solucion: "Si en el módulo de Gerencia de proyectos ya se efectuó el registro, la información es visualizada en el módulo de Almacenes."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s148]
+relacionados: [almacenes.registrar-egreso-a-partida-de-control]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s148, manual: "Manual de Almacenes", seccion: "3.22.1 Equipos disponibles", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s149, manual: "Manual de Almacenes", seccion: "3.22.1.1 Registro de Equipo, como activo en el catálogo de recursos", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s150, manual: "Manual de Almacenes", seccion: "3.22.1.2 Selección de Equipos Disponibles (1)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s151, manual: "Manual de Almacenes", seccion: "3.22.1.2 Selección de Equipos Disponibles (2)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s152, manual: "Manual de Almacenes", seccion: "3.22.1.2 Selección de Equipos Disponibles (3)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s153, manual: "Manual de Almacenes", seccion: "3.22.1.2 Selección de Equipos Disponibles (4)", pagina: null}
+  - {id: img-c9dd714bbcec-0000, manual: "Manual de Almacenes", seccion: "c9dd714bbcec.png", pagina: null}
+  - {id: img-f1798c134957-0000, manual: "Manual de Almacenes", seccion: "f1798c134957.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

@@ -339,6 +339,9 @@ def main():
     ap.add_argument("--epocas", type=int, default=40)
     ap.add_argument("--sin-exportar", action="store_true")
     ap.add_argument("--semilla", type=int, default=SEMILLA, help="para medir la varianza entre entrenamientos")
+    ap.add_argument("--filtro", action="store_true",
+                    help="activa el filtro de uso en la decisión (se exporta siempre, pero por defecto con umbral 0: con "
+                         "mensajes reales bloqueaba preguntas de verdad; README, ronda del 08-10-2026)")
     a = ap.parse_args()
     a.salida.mkdir(exist_ok=True)
     log_f = open(a.salida / "entrenamiento.log", "w", encoding="utf-8")
@@ -357,8 +360,16 @@ def main():
     prueba = leer_jsonl(AQUI / "datos/prueba.jsonl")
     ruta_real = AQUI / "reales/prueba_real.jsonl"
     prueba_real = leer_jsonl(ruta_real) if ruta_real.exists() else []
-    ruta_nuevos = AQUI / "datos/prueba_nuevos.jsonl"  # prueba de los procedimientos añadidos (escrita sin ver el entrenamiento)
-    prueba_nuevos = leer_jsonl(ruta_nuevos) if ruta_nuevos.exists() else []
+    # Pruebas de los procedimientos añadidos (escritas sin ver el entrenamiento): prueba_nuevos.jsonl (tanda 1) con sus
+    # correcciones (prueba_nuevos_revision.jsonl) y prueba_nuevos2.jsonl (tanda 2), juntas.
+    prueba_nuevos = []
+    for ruta in sorted((AQUI / "datos").glob("prueba_nuevos*.jsonl")):
+        if "revision" not in ruta.name:
+            prueba_nuevos += leer_jsonl(ruta)
+    ruta_rev = AQUI / "datos/prueba_nuevos_revision.jsonl"
+    if ruta_rev.exists():
+        cambio = {r["id"]: r["clase_nueva"] for r in leer_jsonl(ruta_rev) if r.get("clase_nueva") not in (None, NINGUNO)}
+        prueba_nuevos = [dict(x, clase=cambio.get(x["id"], x["clase"])) for x in prueba_nuevos]
 
     log("recortando vocabulario…")
     r = recortar(a.base, corpus_recorte(entren, calib), a.pjge_previo)
@@ -392,6 +403,8 @@ def main():
         log(f"  filtro de uso: umbral {uf:.3f}, rechaza el {rech:.1%} de la coordinación de calibración (recall 97 %)")
         def usos(seqs):
             return 1 / (1 + np.exp(-(vectores(m, seqs) @ wf + bf))) if seqs else None
+        if not a.filtro:
+            uf = 0.0
         u = calibrar(Pc, y_c, clases, modulo_de, usos=usos(X_c), uso=uf)
         informe[nombre] = {"umbrales": u, "acierto_calibracion": round(acc_c, 4), "filtro_rechazo_calibracion": round(rech, 4),
                            "calibracion": medir(Pc, y_c, clases, modulo_de, u, usos(X_c)),

@@ -1,0 +1,91 @@
+id: presupuestos.copiar-subpresupuesto
+version: 1
+modulo: presupuestos
+titulo: "Copiar el contenido de un subpresupuesto a otro"
+objetivo: "Copiar al portapapeles el contenido de un subpresupuesto origen y pegarlo sobre un subpresupuesto destino, completo o solo un rango de títulos y partidas."
+nivel: intermedio
+preguntas:
+  - "como copio un subpresupuesto completo a otro"
+  - "copiar subpresupuesto y pegarlo en otro presupuesto"
+  - "pegar subpresupuesto en s10 como funciona"
+  - "quiero pasar todo el subpresupuesto de estructuras a otro"
+  - "como copio solo un rango de partidas de un subpresupuesto"
+  - "al pegar el subpresupuesto se me borro lo que tenia"
+  - "me pregunta si adicionara a las partidas existentes, que le pongo"
+  - "pegar subpresupuesto no me deja elegir el rango de items"
+aliases:
+  - "copiar subpresupuesto"
+  - "pegar subpresupuesto"
+  - "copiar contenido de un subpresupuesto"
+entidades:
+  modulo: "Presupuestos"
+  pantallas: ["Hoja del Presupuesto"]
+  objetos: ["subpresupuesto", "títulos", "partidas", "portapapeles"]
+prerrequisitos:
+  - texto: "Previo al pegado debe existir registrado el subpresupuesto destino."
+    fuente: [c8ac2722518e-0149]
+pasos:
+  - n: 1
+    id: "presupuestos.copiar-subpresupuesto#1"
+    accion: "En el árbol del escenario **Hoja del Presupuesto**, haga clic derecho sobre el subpresupuesto origen y elija **Copiar Subpresupuesto**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s094, img-1659f1dd95a6-0000, c8ac2722518e-0149]
+    pagina: null
+    fotos:
+      - id: "6a028f96216c"
+        ruta_o_url: "imagenes/manual-de-presupuestos/1659f1dd95a6.png"
+        pagina: null
+        ocr: "Clic derecho sabre\nel subpresupuesto\nPresupuestos:\n=) ge§ Escritorio\nESS VIVIENDAUNIFAMILIAR,\n| Estrugturas\n\nModificar descripcion subpresupuesto (1)\n\n|) Copiar Subpresupuesto @\n\n§} Pegar Subpresupuesto (3)\n\n Eliminar Subpresupuesto (@)\n\nie Eliminar Partidas ®\n\nbt Eliminar Partidas con un metrado especifico.., ®\n#9 Eactores de cantidad... @)\n\nFactores de rendimiento\n\nJornada por Partida ... (9)\n\nE…"
+  - n: 2
+    id: "presupuestos.copiar-subpresupuesto#2"
+    accion: "Haga clic derecho sobre el subpresupuesto destino y elija **Pegar Subpresupuesto**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s094, img-1659f1dd95a6-0000, c8ac2722518e-0149]
+    pagina: null
+  - n: 3
+    id: "presupuestos.copiar-subpresupuesto#3"
+    accion: "Confirme el mensaje que pregunta si está seguro de copiar el contenido del subpresupuesto origen al subpresupuesto destino."
+    fuente: [img-f3bf13a4a46f-0000, web-https-documentacion-s10peru-com-manual-d-s094]
+    pagina: null
+    fotos:
+      - id: "9ba951f85f22"
+        ruta_o_url: "imagenes/manual-de-presupuestos/f3bf13a4a46f.png"
+        pagina: null
+        ocr: "Sistema 10 - Presupuestos\n@ éEsta seguro de copiar el contenido del Subpresupuesto 001 Estructuras al Subpresupuesto 005 Varios?"
+  - n: 4
+    id: "presupuestos.copiar-subpresupuesto#4"
+    accion: "Si el subpresupuesto destino tiene contenido, indique si desea adicionar al contenido existente; si responde **No**, previamente se borra el contenido del subpresupuesto destino."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s094, img-e149dcc6fb1b-0000]
+    pagina: null
+    fotos:
+      - id: "adf63617fb66"
+        ruta_o_url: "imagenes/manual-de-presupuestos/e149dcc6fb1b.png"
+        pagina: null
+        ocr: "Sistema 10 - Presupuestos EJ\n©) éddicionara a las partidas existentes del Subpresupuesto : Varios?\nLs |__|"
+  - n: 5
+    id: "presupuestos.copiar-subpresupuesto#5"
+    accion: "Si desea copiar solo un grupo de títulos y/o partidas, elija en la ventana el ítem inicial y el ítem final."
+    resultado: "El rango de ítems se adiciona al final del subpresupuesto."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s094, web-https-documentacion-s10peru-com-manual-d-s095, img-44f638940c15-0000]
+    pagina: null
+    fotos:
+      - id: "aa23e41391da"
+        ruta_o_url: "imagenes/manual-de-presupuestos/44f638940c15.png"
+        pagina: null
+        ocr: "Sistema 10 - Presupuestos Ee |\n\nIngrese el tem INICIAL y FINAL para la copia\n(Para indicar el rango es necesario que los items ya esten generados, de lo\ncontrario se seleccionara todo.)\n\ntem Inicial Cancelar\nfot ESTRUCTURAS v\nttem Final\n\na 01.03 CONTENEDOR INODORO, LAVATORIOS, v"
+verificacion: []
+errores_frecuentes:
+  - sintoma: "El contenido del subpresupuesto destino fue borrado al pegar."
+    solucion: "Cuando el subpresupuesto destino tiene contenido, el sistema pregunta si desea adicionar al contenido existente; si responde NO, previamente el contenido del subpresupuesto destino será borrado."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s094]
+  - sintoma: "Al indicar el rango de ítems se selecciona todo el subpresupuesto."
+    solucion: "Para indicar el rango es necesario que los ítems ya estén generados; de lo contrario se seleccionará todo."
+    fuente: [img-44f638940c15-0000]
+relacionados: [presupuestos.copiar-partidas-de-otro-presupuesto, presupuestos.registrar-presupuesto-nuevo]
+fuentes:
+  - {id: c8ac2722518e-0149, manual: "Importado a mano", seccion: "Manual de S10 Costos y Presupuestos", pagina: 94}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s094, manual: "Manual de Presupuestos", seccion: "5.1.1.1 Hoja del presupuesto (9)", pagina: null}
+  - {id: img-1659f1dd95a6-0000, manual: "Manual de Presupuestos", seccion: "1659f1dd95a6.png", pagina: null}
+  - {id: img-f3bf13a4a46f-0000, manual: "Manual de Presupuestos", seccion: "f3bf13a4a46f.png", pagina: null}
+  - {id: img-e149dcc6fb1b-0000, manual: "Manual de Presupuestos", seccion: "e149dcc6fb1b.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s095, manual: "Manual de Presupuestos", seccion: "5.1.1.1 Hoja del presupuesto (10)", pagina: null}
+  - {id: img-44f638940c15-0000, manual: "Manual de Presupuestos", seccion: "44f638940c15.png", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

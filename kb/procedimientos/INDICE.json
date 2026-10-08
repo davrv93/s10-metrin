@@ -83,6 +83,83 @@
   },
   "archivo": "administrativo/administrativo.aprobar-solicitudes-en-app-aprobaciones.yml"
  },
+ "administrativo.canjear-documentos-con-letras": {
+  "titulo": "Canjear con letras los documentos por pagar de un proveedor",
+  "modulo": "administrativo",
+  "nivel": "avanzado",
+  "n_pasos": 10,
+  "preguntas": [
+   "como canjeo facturas por letras de un proveedor",
+   "el proveedor nos acepto pagar en letras, como hago el canje en s10",
+   "orden de pago canje con letras por proveedor como se registra",
+   "donde configuro las letras que emitio el proveedor",
+   "como ejecuto el canje con letras en pendientes de pago",
+   "canje de documentos con letra unica de cambio",
+   "donde veo las letras generadas despues del canje",
+   "canje con letras no me pide cuenta bancaria es normal?"
+  ],
+  "aliases": [
+   "canje con letras",
+   "canjear con letras",
+   "orden de pago canje con letras",
+   "letra única de cambio",
+   "canje por proveedor"
+  ],
+  "entidades": {
+   "modulo": "Administrativo",
+   "pantallas": [
+    "Orden de Pago",
+    "Pendientes de Pago",
+    "Pagos",
+    "Documentos por Pagar"
+   ],
+   "objetos": [
+    "orden de pago",
+    "letra única de cambio",
+    "proveedor",
+    "documentos por pagar",
+    "cronograma de pagos"
+   ]
+  },
+  "archivo": "administrativo/administrativo.canjear-documentos-con-letras.yml"
+ },
+ "administrativo.crear-cuenta-destino-en-pago-electronico": {
+  "titulo": "Crear la cuenta bancaria destino del socio de negocio desde el pago electrónico",
+  "modulo": "administrativo",
+  "nivel": "intermedio",
+  "n_pasos": 8,
+  "preguntas": [
+   "al hacer el pago electronico me salen proveedores observados sin cuenta bancaria",
+   "no se genera el txt del pago masivo porque falta la cuenta destino",
+   "como le creo la cuenta bancaria al proveedor desde el pago sin ir al catalogo",
+   "pago electronico sin cuenta bancaria destino que hago",
+   "donde pongo la cuenta de banco del socio de negocio en pendientes de pago",
+   "pago electronio me observa socios de negocio",
+   "se puede pagar electronicamente a un proveedor que no tiene cuenta registrada"
+  ],
+  "aliases": [
+   "pago electrónico sin cuenta destino",
+   "cuenta bancaria destino",
+   "socios de negocio observados",
+   "crear cuenta bancaria desde el pago"
+  ],
+  "entidades": {
+   "modulo": "Administrativo",
+   "pantallas": [
+    "Pendientes de Pago",
+    "Propiedades del Socio Negocio",
+    "Pagos"
+   ],
+   "objetos": [
+    "pago electrónico",
+    "cuenta bancaria destino",
+    "socio negocio",
+    "TXT",
+    "orden de pago"
+   ]
+  },
+  "archivo": "administrativo/administrativo.crear-cuenta-destino-en-pago-electronico.yml"
+ },
  "administrativo.definir-aprobadores-de-pagos": {
   "titulo": "Definir aprobadores, moneda y monto para la aprobación de pagos",
   "modulo": "administrativo",
@@ -394,6 +471,85 @@
   },
   "archivo": "almacenes/almacenes.asignar-usuarios-al-proyecto.yml"
  },
+ "almacenes.calificar-recurso-con-techo-cantidad": {
+  "titulo": "Calificar un recurso con techo por cantidad y asignarle sus equivalentes",
+  "modulo": "almacenes",
+  "nivel": "avanzado",
+  "n_pasos": 6,
+  "preguntas": [
+   "como pongo techo por cantidad a un recurso del presupuesto",
+   "en el presupuesto tengo acero en kilos pero compro varillas, como hago la equivalencia",
+   "como asigno recursos especificos a un recurso generico presupuestado",
+   "techo cantidad s10 como se califica el recurso",
+   "donde registro el factor de la varilla de acero para pedir",
+   "como hago para que lo que pido se descuente de la cantidad presupuestada",
+   "no me sale el factor del recurso equivalente en el techo de materiales",
+   "que tengo que hacer antes de pedir los recursos especificos"
+  ],
+  "aliases": [
+   "techo por cantidad",
+   "techo cantidad",
+   "recursos equivalentes",
+   "recursos específicos",
+   "techo de materiales"
+  ],
+  "entidades": {
+   "modulo": "Almacenes",
+   "pantallas": [
+    "Techo de Materiales",
+    "Datos Generales",
+    "catálogo de recursos"
+   ],
+   "objetos": [
+    "recurso genérico",
+    "recurso específico",
+    "recursos equivalentes",
+    "factor",
+    "cantidad total presupuestada",
+    "techo presupuestado"
+   ]
+  },
+  "archivo": "almacenes/almacenes.calificar-recurso-con-techo-cantidad.yml"
+ },
+ "almacenes.calificar-recurso-con-techo-precio": {
+  "titulo": "Calificar un recurso con techo precio y registrar los recursos del catálogo",
+  "modulo": "almacenes",
+  "nivel": "avanzado",
+  "n_pasos": 8,
+  "preguntas": [
+   "como uso el precio como techo para un recurso generico",
+   "en el presupuesto solo puse utiles de oficina, como pido cuadernos y lapiceros",
+   "como hago que el precio de lo que compro se descuente del presupuestado",
+   "techo precio como se configura en almacenes",
+   "como marco un recurso como no pedible",
+   "como edito la cantidad y el precio del recurso equivalente en el techo",
+   "quiero que solo se puedan pedir los recursos especificos y no el generico",
+   "techo de materiales precio s10 paso a paso"
+  ],
+  "aliases": [
+   "techo precio",
+   "techo por precio",
+   "no pedible",
+   "es pedible",
+   "recursos del catálogo en el techo"
+  ],
+  "entidades": {
+   "modulo": "Almacenes",
+   "pantallas": [
+    "Techo de Materiales",
+    "Datos Generales"
+   ],
+   "objetos": [
+    "recurso genérico",
+    "recurso presupuestado",
+    "recursos equivalentes",
+    "recursos específicos",
+    "precio",
+    "techo presupuestado"
+   ]
+  },
+  "archivo": "almacenes/almacenes.calificar-recurso-con-techo-precio.yml"
+ },
  "almacenes.consultar-kardex": {
   "titulo": "Consultar el kardex de un recurso e imprimir el reporte para la SUNAT",
   "modulo": "almacenes",
@@ -431,6 +587,50 @@
    ]
   },
   "archivo": "almacenes/almacenes.consultar-kardex.yml"
+ },
+ "almacenes.registrar-documento-por-pagar": {
+  "titulo": "Registrar un documento por pagar",
+  "modulo": "almacenes",
+  "nivel": "intermedio",
+  "n_pasos": 13,
+  "preguntas": [
+   "cómo registro una factura del proveedor en documentos por pagar",
+   "donde ingreso las boletas y tickets por pagar en almacenes",
+   "como registro una factura de compra directa que no tiene orden de compra",
+   "como relaciono la factura con el ingreso por compra que ya hice",
+   "documentos por pagar s10 como se llena el formulario",
+   "como registro el recibo de luz que llega todos los meses, hay plantilla?",
+   "no me deja eliminar un documento por pagar",
+   "como cargo una factura a un centro de costo y no al proyecto",
+   "como ago para registrar una boleta de venta por pagar"
+  ],
+  "aliases": [
+   "documentos por pagar",
+   "registrar factura por pagar",
+   "registrar documento de pago",
+   "factura de proveedor",
+   "plantilla de cargo"
+  ],
+  "entidades": {
+   "modulo": "Almacenes",
+   "pantallas": [
+    "Documentos por Pagar",
+    "Sucursales",
+    "Catálogo de Plantillas de Cargo"
+   ],
+   "objetos": [
+    "documentos por pagar",
+    "factura",
+    "boletas de venta",
+    "proveedor",
+    "forma de pago",
+    "ingreso por compra",
+    "orden de compra",
+    "centro de costo",
+    "asiento contable"
+   ]
+  },
+  "archivo": "almacenes/almacenes.registrar-documento-por-pagar.yml"
  },
  "almacenes.registrar-egreso-a-partida-de-control": {
   "titulo": "Registrar un egreso a partida de control",
@@ -472,6 +672,44 @@
    ]
   },
   "archivo": "almacenes/almacenes.registrar-egreso-a-partida-de-control.yml"
+ },
+ "almacenes.registrar-egreso-para-fabricacion": {
+  "titulo": "Registrar un egreso para fabricación",
+  "modulo": "almacenes",
+  "nivel": "intermedio",
+  "n_pasos": 8,
+  "preguntas": [
+   "como registro en almacenes que vamos a fabricar paneles de encofrado",
+   "como hago un egreso para fabricacion",
+   "como descuento del stock la madera y los clavos que use para fabricar un panel",
+   "donde pongo los materiales que lleva un recurso fabricado",
+   "egreso EFE s10 pasos",
+   "fabrique unos paneles en obra, como saco los insumos del almacen",
+   "como ago el detalle de recurso para un elemento fabricado",
+   "el egreso para fabricacion no tiene stock de los materiales"
+  ],
+  "aliases": [
+   "egreso para fabricación",
+   "EFE",
+   "fabricar recurso",
+   "recurso a fabricar",
+   "elementos fabricados"
+  ],
+  "entidades": {
+   "modulo": "Almacenes",
+   "pantallas": [
+    "catálogo de recursos",
+    "Detalle recurso"
+   ],
+   "objetos": [
+    "egreso para fabricación",
+    "recurso a fabricar",
+    "stock",
+    "almacén de elementos fabricados",
+    "solicitante"
+   ]
+  },
+  "archivo": "almacenes/almacenes.registrar-egreso-para-fabricacion.yml"
  },
  "almacenes.registrar-ingreso-por-ajuste-de-cantidad": {
   "titulo": "Registrar un ingreso por ajuste de cantidad",
@@ -547,6 +785,44 @@
    ]
   },
   "archivo": "almacenes/almacenes.registrar-ingreso-por-compra.yml"
+ },
+ "almacenes.registrar-ingreso-por-devolucion-de-prestamo": {
+  "titulo": "Registrar un ingreso por devolución de préstamo",
+  "modulo": "almacenes",
+  "nivel": "basico",
+  "n_pasos": 6,
+  "preguntas": [
+   "como registro que la otra obra nos devolvio lo que le prestamos",
+   "nos devolvieron los andamios prestados, como los ingreso al almacen",
+   "ingreso por devolucion de prestamo como se hace",
+   "un obrero devolvio la herramienta que le prestamos como la ingreso",
+   "como hago el IDP en almacenes",
+   "no me aparece el recurso que me estan devolviendo en el ingreso",
+   "cuando me devuelven lo prestado donde pongo la cantidad que regresa",
+   "como se registra la devolucion de un prestamo que hice a un proveedor"
+  ],
+  "aliases": [
+   "ingreso por devolución de préstamo",
+   "IDP",
+   "devolución de préstamo",
+   "me devolvieron lo prestado",
+   "recibir devolución"
+  ],
+  "entidades": {
+   "modulo": "Almacenes",
+   "pantallas": [
+    "ingresos",
+    "Préstamos"
+   ],
+   "objetos": [
+    "ingreso por devolución de préstamo",
+    "egreso por préstamo",
+    "socio de negocio",
+    "proyecto",
+    "recurso"
+   ]
+  },
+  "archivo": "almacenes/almacenes.registrar-ingreso-por-devolucion-de-prestamo.yml"
  },
  "almacenes.registrar-ingreso-por-inventario": {
   "titulo": "Registrar un ingreso por inventario",
@@ -738,6 +1014,47 @@
   },
   "archivo": "almacenes/almacenes.registrar-partidas-de-control-del-proyecto.yml"
  },
+ "almacenes.registrar-tipo-de-documento": {
+  "titulo": "Registrar un tipo de documento y su impuesto",
+  "modulo": "almacenes",
+  "nivel": "basico",
+  "n_pasos": 12,
+  "preguntas": [
+   "como creo un tipo de documento nuevo en almacenes",
+   "donde se registran los tipos de documento que usa la empresa",
+   "como registro una factura con igv 18% como tipo de documento",
+   "como le asigno el impuesto a un tipo de documento",
+   "quiero crear el documento recibo interno para el fondo rotatorio",
+   "como hago que el asiento contable salga por recurso y no por documento",
+   "tipo de documeto sunat como se configura en s10",
+   "no encuentro el documento que necesito en la lista, como lo agrego al catalogo"
+  ],
+  "aliases": [
+   "tipo de documento",
+   "registrar tipo de documento",
+   "catálogo de tipos de documento",
+   "nuevo documento",
+   "impuesto del documento"
+  ],
+  "entidades": {
+   "modulo": "Almacenes",
+   "pantallas": [
+    "Catálogos",
+    "Catálogo de Tipos de Documento",
+    "Impuestos",
+    "Catálogo de impuestos"
+   ],
+   "objetos": [
+    "tipo de documento",
+    "impuesto",
+    "factura",
+    "moneda",
+    "asiento contable",
+    "SUNAT"
+   ]
+  },
+  "archivo": "almacenes/almacenes.registrar-tipo-de-documento.yml"
+ },
  "almacenes.registrar-usuario-y-asignar-permisos": {
   "titulo": "Registrar un usuario del módulo de Almacenes y asignarle permisos",
   "modulo": "almacenes",
@@ -819,6 +1136,49 @@
   },
   "archivo": "almacenes/almacenes.regularizar-ingreso-por-compra.yml"
  },
+ "almacenes.seleccionar-equipos-disponibles": {
+  "titulo": "Seleccionar los equipos disponibles del proyecto y registrar su ficha",
+  "modulo": "almacenes",
+  "nivel": "intermedio",
+  "n_pasos": 13,
+  "preguntas": [
+   "como agrego los equipos que van a trabajar en la obra en almacenes",
+   "dónde selecciono los equipos disponibles del proyecto",
+   "como lleno la ficha del equipo con el precio del alquiler",
+   "como relaciono el cargador frontal con el equipo presupuestado",
+   "como asigno las horas maquina de un equipo alquilado al proyecto",
+   "quiero que me pida el horometro cuando egreso petroleo para un equipo",
+   "un equipo ya no trabaja en la obra como lo saco de los partes",
+   "donde pongo marca modelo y serie del volquete",
+   "equipos disponivles s10 como se registran"
+  ],
+  "aliases": [
+   "equipos disponibles",
+   "ficha del equipo",
+   "activos disponibles",
+   "registrar equipos del proyecto",
+   "especificaciones del equipo"
+  ],
+  "entidades": {
+   "modulo": "Almacenes",
+   "pantallas": [
+    "Equipos disponibles",
+    "Ficha del Equipo",
+    "Especificaciones del Equipo",
+    "Catálogo de Recursos"
+   ],
+   "objetos": [
+    "equipo",
+    "recurso presupuestado",
+    "alquiler",
+    "combustible",
+    "horómetro",
+    "kilometraje",
+    "partes de equipo"
+   ]
+  },
+  "archivo": "almacenes/almacenes.seleccionar-equipos-disponibles.yml"
+ },
  "almacenes.transferir-recursos-a-otro-proyecto": {
   "titulo": "Transferir recursos a otro proyecto",
   "modulo": "almacenes",
@@ -892,6 +1252,161 @@
    ]
   },
   "archivo": "almacenes/almacenes.transferir-recursos-entre-almacenes.yml"
+ },
+ "calidad-movil.activar-la-aplicacion": {
+  "titulo": "Instalar y activar la aplicación Calidad Móvil",
+  "modulo": "calidad-movil",
+  "nivel": "basico",
+  "n_pasos": 6,
+  "preguntas": [
+   "cómo instalo calidad móvil en mi celular",
+   "donde descargo la app de calidad movil de s10",
+   "como activo la aplicacion de calidad movil",
+   "no me llega el codigo de activacion de calidad movil",
+   "que datos me pide la app de calidad movil para activarla",
+   "instale calidad movil y no me sale ningun proyecto",
+   "como configuro calidad movil en la tablet",
+   "la app de calidad pide ruc y correo, cual pongo"
+  ],
+  "aliases": [
+   "instalar calidad móvil",
+   "activar calidad móvil",
+   "código de activación",
+   "configurar calidad móvil",
+   "descargar app de calidad"
+  ],
+  "entidades": {
+   "modulo": "Calidad Móvil",
+   "pantallas": [
+    "Play Store",
+    "App Store"
+   ],
+   "objetos": [
+    "aplicación",
+    "código de activación",
+    "contraseña",
+    "proyecto",
+    "dispositivo móvil"
+   ]
+  },
+  "archivo": "calidad-movil/calidad-movil.activar-la-aplicacion.yml"
+ },
+ "calidad-movil.asignar-protocolos-a-actividades": {
+  "titulo": "Registrar protocolos y asignarlos a las actividades",
+  "modulo": "calidad-movil",
+  "nivel": "intermedio",
+  "n_pasos": 5,
+  "preguntas": [
+   "cómo asigno protocolos a las actividades para calidad móvil",
+   "donde registro los protocolos de calidad en s10",
+   "como creo las caracteristicas de un protocolo",
+   "como asigno el protocolo a todas las actividades de golpe",
+   "que es la ficha de protocolos",
+   "donde le pongo el supervisor y revisor a cada actividad",
+   "como registro un protocolo de verificacion de concreto",
+   "protocolos de calidad cuantos niveles tiene el catalogo"
+  ],
+  "aliases": [
+   "asignar protocolos",
+   "ficha de protocolos",
+   "registrar protocolos",
+   "características del protocolo",
+   "asignación de protocolos"
+  ],
+  "entidades": {
+   "modulo": "Calidad Móvil",
+   "pantallas": [
+    "Ficha de Protocolos",
+    "Asignación de Protocolos",
+    "especificaciones"
+   ],
+   "objetos": [
+    "protocolos",
+    "características",
+    "actividad",
+    "catálogo"
+   ]
+  },
+  "archivo": "calidad-movil/calidad-movil.asignar-protocolos-a-actividades.yml"
+ },
+ "calidad-movil.calificar-actividades": {
+  "titulo": "Calificar las actividades y sus características en Calidad Móvil",
+  "modulo": "calidad-movil",
+  "nivel": "intermedio",
+  "n_pasos": 6,
+  "preguntas": [
+   "cómo califico las actividades en calidad móvil",
+   "donde cambio el estado de una caracteristica en la app de calidad",
+   "como registro una no conformidad desde el celular",
+   "como marco una actividad como no conforme y le pongo foto",
+   "para que sirve calidad de responsables en calidad movil",
+   "como veo las actividades por frente o por etapa en calidad movil",
+   "soy revisor, como apruevo las caracteristicas en la app",
+   "que significan los colores de las barras en calidad movil"
+  ],
+  "aliases": [
+   "calificar actividades",
+   "calidad de responsables",
+   "registrar no conformidad",
+   "cambiar estado de característica",
+   "revisar actividades en el móvil"
+  ],
+  "entidades": {
+   "modulo": "Calidad Móvil",
+   "pantallas": [
+    "Producción",
+    "Calidad de Responsables"
+   ],
+   "objetos": [
+    "actividades",
+    "características",
+    "estado",
+    "alcance",
+    "No Conforme",
+    "tipo de falla",
+    "observación"
+   ]
+  },
+  "archivo": "calidad-movil/calidad-movil.calificar-actividades.yml"
+ },
+ "calidad-movil.publicar-proyecto-en-calidad-movil": {
+  "titulo": "Publicar un proyecto para Calidad Móvil",
+  "modulo": "calidad-movil",
+  "nivel": "intermedio",
+  "n_pasos": 7,
+  "preguntas": [
+   "cómo publico un proyecto para calidad móvil",
+   "como mando las actividades del proyecto a la app de calidad",
+   "como habilito a un supervisor para que vea el proyecto en calidad movil",
+   "como agrego un invitado a calidad movil que no es usuario del s10",
+   "donde veo todos los proyectos publicados en calidad movil",
+   "como cierro el proyecto en calidad movil para que ya no lo editen desde el celular",
+   "publicar calidad movil no me muestra revisores",
+   "como publco solo algunas actividades al movil"
+  ],
+  "aliases": [
+   "publicar calidad móvil",
+   "publicar proyecto al móvil",
+   "publicación calidad móvil",
+   "adicionar invitado",
+   "concluir publicación"
+  ],
+  "entidades": {
+   "modulo": "Calidad Móvil",
+   "pantallas": [
+    "Asignación de Protocolos a Actividades",
+    "Por Publicar",
+    "Publicación Calidad Móvil"
+   ],
+   "objetos": [
+    "actividades",
+    "proyecto",
+    "revisores",
+    "supervisores",
+    "invitados"
+   ]
+  },
+  "archivo": "calidad-movil/calidad-movil.publicar-proyecto-en-calidad-movil.yml"
  },
  "compras.ajustar-orden-de-compra-parcialmente-atendida": {
   "titulo": "Ajustar una orden de compra que el proveedor atendió solo en parte",
@@ -1293,6 +1808,44 @@
   },
   "archivo": "compras/compras.registrar-cotizacion.yml"
  },
+ "compras.registrar-pedido-a-almacen-a-partida-de-control": {
+  "titulo": "Registrar un pedido manual A Almacén hacia una partida de control",
+  "modulo": "compras",
+  "nivel": "intermedio",
+  "n_pasos": 13,
+  "preguntas": [
+   "como hago un pedido a almacen para una partida de control",
+   "quiero sacar material que ya hay en stock del almacen, como hago el pedido",
+   "como asigno partida de control y destino especifico en el pedido",
+   "pedido manual a almacen en compras y pedidos paso a paso",
+   "me sale un mensaje que el sistema esta configurado para pedidos a compras, que hago",
+   "como elijo quien aprueba el pedido a almacen",
+   "pedido a almasen con transferencia a otro proyecto",
+   "soy residente de obra, donde apruebo los pedidos a almacen que me mandan"
+  ],
+  "aliases": [
+   "pedido a almacén",
+   "pedido manual a almacén",
+   "pedido a partida de control",
+   "pedido de stock"
+  ],
+  "entidades": {
+   "modulo": "Compras",
+   "pantallas": [
+    "Pedidos",
+    "Aprobadores para el pedido"
+   ],
+   "objetos": [
+    "pedido",
+    "partida de control",
+    "destino específico",
+    "recurso",
+    "almacén",
+    "aprobador"
+   ]
+  },
+  "archivo": "compras/compras.registrar-pedido-a-almacen-a-partida-de-control.yml"
+ },
  "compras.registrar-pedido-de-compra": {
   "titulo": "Registrar un pedido manual para comprar",
   "modulo": "compras",
@@ -1403,6 +1956,46 @@
    ]
   },
   "archivo": "compras/compras.registrar-recepcion-de-cotizaciones.yml"
+ },
+ "compras.registrar-usuarios": {
+  "titulo": "Registrar un usuario del módulo de Compras y Pedidos y asignarle accesos",
+  "modulo": "compras",
+  "nivel": "intermedio",
+  "n_pasos": 13,
+  "preguntas": [
+   "como registro un usuario nuevo en compras y pedidos",
+   "como le doy acceso al modulo de compras a un trabajador",
+   "en compras y pedidos por donde entro para crear usuarios",
+   "como le asigno categoria y permisos a un usuario de compras",
+   "el logistico no puede entrar a cuadro comparativo, como le doy acceso al escenario",
+   "quiero que un usuario de compras audite el catalogo de unidades, que color le pongo",
+   "que diferencia hay entre jefe de grupo, especialista e invitado",
+   "registrar usuaro en compras y pedidos s10 y darle catalogos"
+  ],
+  "aliases": [
+   "registrar usuario de compras",
+   "mantenimiento de usuarios",
+   "dar acceso al módulo de compras",
+   "asignar categoría al usuario",
+   "permisos de usuario en compras"
+  ],
+  "entidades": {
+   "modulo": "Compras",
+   "pantallas": [
+    "Mantenimiento de Usuarios",
+    "Catálogo de Socio de Negocio por Tipo"
+   ],
+   "objetos": [
+    "usuario",
+    "grupo",
+    "subgrupo",
+    "categoría",
+    "escenario",
+    "catálogo",
+    "auditor"
+   ]
+  },
+  "archivo": "compras/compras.registrar-usuarios.yml"
  },
  "contabilidad.agregar-moneda": {
   "titulo": "Adicionar o eliminar una moneda",
@@ -1624,6 +2217,42 @@
    ]
   },
   "archivo": "contabilidad/contabilidad.configurar-informe-contable.yml"
+ },
+ "contabilidad.crear-grupo-empresarial": {
+  "titulo": "Crear un grupo empresarial y ver sus estados financieros combinados",
+  "modulo": "contabilidad",
+  "nivel": "intermedio",
+  "n_pasos": 9,
+  "preguntas": [
+   "como creo un grupo empresarial en contabilidad",
+   "como consolido los estados financieros de varias empresas",
+   "como agrego empresas a un grupo empresarial",
+   "quiero ver el balance general sumando dos empresas del grupo",
+   "como combino estados financieros de empresas afiliadas en s10",
+   "como saco el balance comparativo del grupo empresarial",
+   "como quito una empresa del grupo enpresarial",
+   "estados financieros consolidados del holding, donde se ven"
+  ],
+  "aliases": [
+   "grupo empresarial",
+   "estados financieros combinados",
+   "consolidar empresas",
+   "nuevo grupo empresarial"
+  ],
+  "entidades": {
+   "modulo": "Contabilidad",
+   "pantallas": [
+    "Grupo Empresarial",
+    "Estados Financieros"
+   ],
+   "objetos": [
+    "grupo empresarial",
+    "empresa",
+    "informe contable",
+    "periodo"
+   ]
+  },
+  "archivo": "contabilidad/contabilidad.crear-grupo-empresarial.yml"
  },
  "contabilidad.crear-plan-de-cuentas": {
   "titulo": "Crear e importar el plan de cuentas",
@@ -1919,6 +2548,44 @@
    ]
   },
   "archivo": "contabilidad/contabilidad.revisar-auditoria-de-registros-contables.yml"
+ },
+ "facturacion-electronica.asignar-codigo-de-producto-sunat": {
+  "titulo": "Asignar el código de producto SUNAT a los recursos",
+  "modulo": "facturacion-electronica",
+  "nivel": "intermedio",
+  "n_pasos": 6,
+  "preguntas": [
+   "cómo asigno el código de producto sunat a mis recursos",
+   "donde se pone el codigo UNSPSC de los materiales en s10",
+   "el libro electronico 13.1 me sale que el campo codigo producto sunat no puede ser nulo",
+   "como cargo masivo los codigos de producto sunat desde un excel",
+   "como le pongo codigo sunat a varios recursos a la ves",
+   "que configuracion activo para que pida el codigo de producto sunat",
+   "en que escenario de almacenes se catalogan los recursos con codigo sunat",
+   "qué columnas lleva el excel para importar códigos de producto sunat"
+  ],
+  "aliases": [
+   "código de producto SUNAT",
+   "asignar código SUNAT",
+   "código UNSPSC",
+   "catalogar recursos SUNAT",
+   "importar códigos SUNAT"
+  ],
+  "entidades": {
+   "modulo": "Facturación Electrónica",
+   "pantallas": [
+    "Catálogo de Productos SUNAT",
+    "Catálogo de recursos",
+    "Configuración"
+   ],
+   "objetos": [
+    "recursos",
+    "código de producto SUNAT",
+    "libros electrónicos",
+    "Excel"
+   ]
+  },
+  "archivo": "facturacion-electronica/facturacion-electronica.asignar-codigo-de-producto-sunat.yml"
  },
  "facturacion-electronica.buscar-documentos-en-el-portal": {
   "titulo": "Buscar, reenviar y descargar documentos en el portal de facturación electrónica",
@@ -2216,6 +2883,41 @@
   },
   "archivo": "facturacion-electronica/facturacion-electronica.enviar-comprobantes-a-sunat.yml"
  },
+ "facturacion-electronica.recuperar-contrasena-del-portal": {
+  "titulo": "Recuperar la contraseña del portal de facturación electrónica",
+  "modulo": "facturacion-electronica",
+  "nivel": "basico",
+  "n_pasos": 4,
+  "preguntas": [
+   "olvidé mi clave del portal de facturación electrónica, cómo la recupero",
+   "como recupero la contraseña del portal de facturas del s10",
+   "no me acuerdo la contrasena para entrar al portal de facturacion",
+   "me llegó una clave temporal al correo, ¿qué hago con ella?",
+   "donde pongo la clave que me mandaron al correo para cambiarla",
+   "que va en el campo contraseña anterior del portal",
+   "como restablezco mi clave del portal de factura electronica",
+   "perdi la clave del portal de comprobantes electronicos"
+  ],
+  "aliases": [
+   "recuperar contraseña del portal",
+   "olvidé mi clave",
+   "recuperación de contraseña",
+   "clave temporal del portal"
+  ],
+  "entidades": {
+   "modulo": "Facturación Electrónica",
+   "pantallas": [
+    "Recuperación de contraseña"
+   ],
+   "objetos": [
+    "clave temporal",
+    "Contraseña Anterior",
+    "buzón de correo",
+    "portal"
+   ]
+  },
+  "archivo": "facturacion-electronica/facturacion-electronica.recuperar-contrasena-del-portal.yml"
+ },
  "facturacion.anular-venta-sperant": {
   "titulo": "Anular una venta inmobiliaria (Sperant – S10)",
   "modulo": "facturacion",
@@ -2251,6 +2953,42 @@
    ]
   },
   "archivo": "facturacion/facturacion.anular-venta-sperant.yml"
+ },
+ "facturacion.asignar-tributos-masivamente": {
+  "titulo": "Asignar en bloque los ítems de detracción o percepción a los recursos",
+  "modulo": "facturacion",
+  "nivel": "intermedio",
+  "n_pasos": 4,
+  "preguntas": [
+   "quiero asignar detraccion a un monton de recursos juntos",
+   "tengo muchos recursos y quiero ponerles percepcion de golpe, se puede?",
+   "donde esta el escenario asignacion de tributos",
+   "como configuro masivamente los items de detraccion de los recursos",
+   "asignar detracsion a recursos en facturacion s10",
+   "no quiero entrar recurso por recurso a ponerle la detracción, hay otra forma",
+   "por que no me calcula la detraccion si ya configure el recurso"
+  ],
+  "aliases": [
+   "asignación de tributos",
+   "asignar detracción",
+   "asignar percepción",
+   "configuración masiva de recursos",
+   "detracción masiva"
+  ],
+  "entidades": {
+   "modulo": "Facturación",
+   "pantallas": [
+    "Asignación de Tributos"
+   ],
+   "objetos": [
+    "recurso",
+    "detracción",
+    "percepción",
+    "ítems de detracción",
+    "ítems de percepción"
+   ]
+  },
+  "archivo": "facturacion/facturacion.asignar-tributos-masivamente.yml"
  },
  "facturacion.boletear-abonos-sperant": {
   "titulo": "Registrar abonos en Sperant y boletearlos en S10",
@@ -2293,6 +3031,47 @@
    ]
   },
   "archivo": "facturacion/facturacion.boletear-abonos-sperant.yml"
+ },
+ "facturacion.cambiar-titular-sperant": {
+  "titulo": "Cambiar el titular de una venta inmobiliaria con minuta (Sperant – S10)",
+  "modulo": "facturacion",
+  "nivel": "avanzado",
+  "n_pasos": 9,
+  "preguntas": [
+   "cómo hago un cambio de titular de un departamento vendido",
+   "el cliente le cede su depa a otra persona, como cambio el titular en sperant y s10",
+   "cambio de titularidad con minuta como se hace",
+   "donde genero la facturacion del cambio de titular en s10",
+   "no me deja hacer el cambio de titular, que me falta",
+   "como cambio el titular de la proforma en sperant",
+   "que pasa con la boleta y la orden de venta original cuando cambio de titular",
+   "cambio de titulr inmueble no aparece generar facturacion"
+  ],
+  "aliases": [
+   "cambio de titular",
+   "cambiar titular",
+   "cambio de titularidad",
+   "nuevo titular del inmueble",
+   "cambio de titular con minuta"
+  ],
+  "entidades": {
+   "modulo": "Facturación",
+   "pantallas": [
+    "Cambio de Titularidad y/o Inmueble",
+    "Boletaje",
+    "Documentos de ventas"
+   ],
+   "objetos": [
+    "orden de venta",
+    "titular",
+    "proforma",
+    "boleta",
+    "nota de crédito",
+    "abono",
+    "minuta"
+   ]
+  },
+  "archivo": "facturacion/facturacion.cambiar-titular-sperant.yml"
  },
  "facturacion.definir-usuarios-y-accesos": {
   "titulo": "Definir usuarios y sus accesos en Facturación",
@@ -2372,6 +3151,41 @@
   },
   "archivo": "facturacion/facturacion.importar-saldos-por-cobrar.yml"
  },
+ "facturacion.importar-tributos-de-recursos-desde-excel": {
+  "titulo": "Importar desde Excel los ítems de detracción y percepción de los recursos",
+  "modulo": "facturacion",
+  "nivel": "intermedio",
+  "n_pasos": 11,
+  "preguntas": [
+   "como importo desde excel los codigos de detraccion de los recursos",
+   "puedo cargar los items de percepcion y detraccion con una hoja excel",
+   "como exporto los recursos de asignacion de tributos a excel",
+   "que columnas son obligatorias para importar los tributos de los recursos",
+   "como relaciono las columnas del excel con los campos del s10 al importar",
+   "importasion de detracciones por excel en facturacion",
+   "tengo la lista de recursos con su codigo sunat de detraccion en excel, como la subo"
+  ],
+  "aliases": [
+   "importar tributos desde excel",
+   "importación excel de detracciones",
+   "cargar detracciones por excel",
+   "exportar recursos a excel"
+  ],
+  "entidades": {
+   "modulo": "Facturación",
+   "pantallas": [
+    "Asignación de Tributos"
+   ],
+   "objetos": [
+    "recurso",
+    "hoja Excel",
+    "código de ítem detracción",
+    "código de ítem percepción",
+    "código de recurso"
+   ]
+  },
+  "archivo": "facturacion/facturacion.importar-tributos-de-recursos-desde-excel.yml"
+ },
  "facturacion.liquidar-entrega-a-rendir": {
   "titulo": "Liquidar una entrega a rendir desde Facturación",
   "modulo": "facturacion",
@@ -2412,6 +3226,45 @@
    ]
   },
   "archivo": "facturacion/facturacion.liquidar-entrega-a-rendir.yml"
+ },
+ "facturacion.pagar-entrega-a-rendir": {
+  "titulo": "Pagar el comprobante de entrega a rendir",
+  "modulo": "facturacion",
+  "nivel": "intermedio",
+  "n_pasos": 12,
+  "preguntas": [
+   "pago de entregas a rendir paso a paso",
+   "ya registre la entrega a rendir en facturacion, ahora como le hago el pago al trabajador",
+   "que orden de pago uso para pagarle la entrega a rendir al personal",
+   "no me aparece la entrega a rendir en el cronograma de pagos de la orden de pago",
+   "donde se paga el documento entregas a rendir, en administrativo?",
+   "como desembolso el dinero de la entrega a rrendir con cheque",
+   "quien aprueba la OP de la entrega a rendir",
+   "pague la entrega a rendir y no se donde ver el pago"
+  ],
+  "aliases": [
+   "pagar entrega a rendir",
+   "pago de entrega a rendir",
+   "orden de pago de entrega a rendir",
+   "desembolso de entrega a rendir"
+  ],
+  "entidades": {
+   "modulo": "Facturación",
+   "pantallas": [
+    "Orden de Pago",
+    "Cronograma de Pagos",
+    "Pendientes de Pago",
+    "Pagos"
+   ],
+   "objetos": [
+    "entrega a rendir",
+    "orden de pago",
+    "cuenta bancaria",
+    "cheque",
+    "aprobador"
+   ]
+  },
+  "archivo": "facturacion/facturacion.pagar-entrega-a-rendir.yml"
  },
  "facturacion.registrar-anticipo-a-proveedor": {
   "titulo": "Registrar una factura de anticipo de proveedor y su amortización",
@@ -2763,6 +3616,75 @@
   },
   "archivo": "gerencia-proyectos/gerencia-proyectos.configurar-calendario-del-proyecto.yml"
  },
+ "gerencia-proyectos.consultar-resumen-de-conceptos-por-dia": {
+  "titulo": "Consultar el resumen de conceptos por día",
+  "modulo": "gerencia-proyectos",
+  "nivel": "basico",
+  "n_pasos": 9,
+  "preguntas": [
+   "donde veo las horas trabajadas por dia de cada obrero",
+   "como saco el resumen de conceptos por dia",
+   "quiero ver el detalle de horas de los obreros en un periodo",
+   "como justifico una falta por descanso medico",
+   "resumen de conseptos por dia donde esta",
+   "como agrupo por nombre las horas de los obreros",
+   "donde veo las inasistencias de los trabajadores dia por dia",
+   "como cambio una falta por papeleta de vacaciones"
+  ],
+  "aliases": [
+   "resumen de conceptos por día",
+   "horas trabajadas por obrero",
+   "detalle de horas por día",
+   "justificar faltas"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "Resumen de Conceptos por Día"
+   ],
+   "objetos": [
+    "obrero",
+    "tipo de nómina",
+    "periodo",
+    "papeleta"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.consultar-resumen-de-conceptos-por-dia.yml"
+ },
+ "gerencia-proyectos.consultar-tareo-detallado": {
+  "titulo": "Consultar el tareo detallado de la mano de obra",
+  "modulo": "gerencia-proyectos",
+  "nivel": "basico",
+  "n_pasos": 7,
+  "preguntas": [
+   "donde veo cuanto llevo gastado en mano de obra en la obra",
+   "como veo el tareo detallado por semana",
+   "quiero ver el monto de mano de obra acumulado del proyecto",
+   "tareo detallado como lo consulto",
+   "como veo la mano de obra solo de unas semanas, del tal al tal",
+   "como agrupo el tareo por tipo de nomina y por semana",
+   "cuanto se pago de mano de obra cada semana en el proyeto",
+   "donde esta el escenario tareo detallao"
+  ],
+  "aliases": [
+   "tareo detallado",
+   "monto de mano de obra",
+   "mano de obra por periodo",
+   "consultar tareo"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "Tareo detallado"
+   ],
+   "objetos": [
+    "mano de obra",
+    "tipo de nómina",
+    "periodo semanal"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.consultar-tareo-detallado.yml"
+ },
  "gerencia-proyectos.definir-periodos": {
   "titulo": "Definir la escala y los periodos visibles del proyecto",
   "modulo": "gerencia-proyectos",
@@ -2954,6 +3876,80 @@
    ]
   },
   "archivo": "gerencia-proyectos/gerencia-proyectos.planificar-en-cronograma-por-periodos.yml"
+ },
+ "gerencia-proyectos.registrar-contrato": {
+  "titulo": "Registrar el contrato del proyecto",
+  "modulo": "gerencia-proyectos",
+  "nivel": "intermedio",
+  "n_pasos": 17,
+  "preguntas": [
+   "como registro el contrato principal en gerencia de proyectos",
+   "donde se registra el contrato con el cliente en s10",
+   "como creo un contrato nuevo para el proyecto",
+   "como le asigno el wbs a los recursos del contrato",
+   "como le pongo el igv al contrato",
+   "donde pongo el porcentaje de adelanto del contrato",
+   "como registo el contrato de obra con el propietario",
+   "puedo jalar la orden de venta de facturacion al registrar el contrato?",
+   "en que parte va la retencion por fondo de garantia del contrato"
+  ],
+  "aliases": [
+   "registrar contrato",
+   "nuevo contrato",
+   "registro del contrato",
+   "contrato principal"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "Contratos",
+    "Registro del Contrato"
+   ],
+   "objetos": [
+    "contrato",
+    "orden de venta",
+    "recurso",
+    "impuesto",
+    "fase del WBS"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.registrar-contrato.yml"
+ },
+ "gerencia-proyectos.registrar-factura-del-subcontratista": {
+  "titulo": "Registrar la factura del subcontratista por pagos a cuenta",
+  "modulo": "gerencia-proyectos",
+  "nivel": "intermedio",
+  "n_pasos": 11,
+  "preguntas": [
+   "como registro la factura del subcontratista en s10",
+   "el subcontratista me trajo su factura del adelanto, donde la ingreso",
+   "como relaciono la factura del subcontratista con el adelanto",
+   "registrar factura de pagos a cuenta de un subcontrato",
+   "como regularizo el adelanto del subcontrato con su factura",
+   "donde esta la opcion nuevo documento en autorizacion de pago",
+   "se puede ingresar la factura del subcontratista desde almacenes?",
+   "factura del subcontratita por adelanto como la registro"
+  ],
+  "aliases": [
+   "factura del subcontratista",
+   "regularizar adelanto del subcontrato",
+   "registrar factura de pagos a cuenta",
+   "factura de adelanto del subcontrato"
+  ],
+  "entidades": {
+   "modulo": "Gerencia de Proyectos",
+   "pantallas": [
+    "Autorización de Pago",
+    "catálogo de pagos por facturar"
+   ],
+   "objetos": [
+    "subcontrato",
+    "factura",
+    "adelanto",
+    "subcontratista"
+   ]
+  },
+  "archivo": "gerencia-proyectos/gerencia-proyectos.registrar-factura-del-subcontratista.yml"
  },
  "gerencia-proyectos.registrar-fases-wbs-y-asignar-partidas": {
   "titulo": "Registrar las fases del WBS y asignarles partidas",
@@ -3527,6 +4523,146 @@
   },
   "archivo": "nominas/nominas.calcular-reparto-de-utilidades.yml"
  },
+ "nominas.configurar-tareo-movil": {
+  "titulo": "Configurar en Nóminas el tareo con el APP Tareo Móvil",
+  "modulo": "nominas",
+  "nivel": "intermedio",
+  "n_pasos": 7,
+  "preguntas": [
+   "como activo el tareo movil para un tipo de nomina",
+   "donde marco la opcion tareo movil en nominas",
+   "como asigno un tareador a varios obreros a la vez",
+   "no me sale la opcion de publicar el parte de tareo, que configuro",
+   "que correo debe tener el tareador para usar la app de tareo",
+   "como configuro nominas para tarear desde el celular",
+   "asignar tareador en la ficha personal de los trabajadores",
+   "configuracion del app tareo mobil en s10 nominas"
+  ],
+  "aliases": [
+   "configurar tareo móvil",
+   "habilitar tareo móvil",
+   "asignar tareador",
+   "tareo móvil en nóminas"
+  ],
+  "entidades": {
+   "modulo": "Nóminas",
+   "pantallas": [
+    "Datos Generales",
+    "Catálogo de Socios de Negocio"
+   ],
+   "objetos": [
+    "tipo de nómina",
+    "tareador",
+    "ficha personal",
+    "obreros"
+   ]
+  },
+  "archivo": "nominas/nominas.configurar-tareo-movil.yml"
+ },
+ "nominas.exportar-datos-del-plame": {
+  "titulo": "Obtener y exportar los datos del PLAME",
+  "modulo": "nominas",
+  "nivel": "intermedio",
+  "n_pasos": 9,
+  "preguntas": [
+   "como saco la info del plame desde nominas",
+   "que estructuras del plame se usan mas",
+   "como exporto a excel la estructura 18 de ingresos tributos y descuentos",
+   "donde obtengo los datos de la planilla mensual de pagos",
+   "necesito los datos del plame del mes pasado, como hago",
+   "el plame se hace antes o despues del t-registro",
+   "donde se declara el plame que saco del s10",
+   "como sacar el plame resumido o detallado"
+  ],
+  "aliases": [
+   "PLAME",
+   "planilla mensual de pagos",
+   "exportar PLAME",
+   "planilla electrónica PLAME"
+  ],
+  "entidades": {
+   "modulo": "Nóminas",
+   "pantallas": [
+    "Planilla Electrónica"
+   ],
+   "objetos": [
+    "PLAME",
+    "estructura",
+    "periodo",
+    "declaración jurada"
+   ]
+  },
+  "archivo": "nominas/nominas.exportar-datos-del-plame.yml"
+ },
+ "nominas.exportar-datos-del-t-registro": {
+  "titulo": "Obtener y exportar los datos del T-Registro",
+  "modulo": "nominas",
+  "nivel": "intermedio",
+  "n_pasos": 8,
+  "preguntas": [
+   "como saco los datos del t-registro desde s10 nominas",
+   "donde esta el escenario de planilla electronica",
+   "como exporto a excel la estructura 4 del t registro",
+   "quiero los datos personales de los trabajadores para el tregistro",
+   "como cargo el t-registro de un periodo mensual",
+   "como obtengo el t-registro resumido o detallado",
+   "como genero el t registro para la sunat"
+  ],
+  "aliases": [
+   "T-Registro",
+   "exportar T-Registro",
+   "planilla electrónica T-Registro",
+   "registro de información laboral"
+  ],
+  "entidades": {
+   "modulo": "Nóminas",
+   "pantallas": [
+    "Planilla Electrónica"
+   ],
+   "objetos": [
+    "T-Registro",
+    "estructura",
+    "periodo",
+    "trabajador"
+   ]
+  },
+  "archivo": "nominas/nominas.exportar-datos-del-t-registro.yml"
+ },
+ "nominas.generar-archivo-afp-net": {
+  "titulo": "Generar el archivo de la planilla AFP para AFP NET",
+  "modulo": "nominas",
+  "nivel": "intermedio",
+  "n_pasos": 8,
+  "preguntas": [
+   "como genero el archivo para afp net",
+   "como declaro a las afp desde s10 nominas",
+   "como exporto la planilla afp en txt",
+   "como valido las afiliaciones de los trabajadores por dni",
+   "donde configuro el concepto de remuneracion asegurable para afpnet",
+   "que periodo pongo para la declaracion de la afp",
+   "como saco el txt de afp net despues de calcular la nomina",
+   "como mando la planilla a las afp"
+  ],
+  "aliases": [
+   "AFP NET",
+   "planilla AFP",
+   "archivo AFP NET",
+   "declarar AFP"
+  ],
+  "entidades": {
+   "modulo": "Nóminas",
+   "pantallas": [
+    "AFP Net"
+   ],
+   "objetos": [
+    "Planilla AFP",
+    "trabajadores afiliados",
+    "periodo de declaración",
+    "remuneración asegurable"
+   ]
+  },
+  "archivo": "nominas/nominas.generar-archivo-afp-net.yml"
+ },
  "nominas.importar-socios-de-negocio-desde-excel": {
   "titulo": "Importar socios de negocio desde una hoja de Excel",
   "modulo": "nominas",
@@ -3719,6 +4855,43 @@
   },
   "archivo": "nominas/nominas.registrar-ficha-del-trabajador.yml"
  },
+ "nominas.registrar-planilla-de-pago": {
+  "titulo": "Registrar una planilla de pago",
+  "modulo": "nominas",
+  "nivel": "intermedio",
+  "n_pasos": 11,
+  "preguntas": [
+   "como registro la planilla de pago de obreros semanal",
+   "como creo la planilla de pago de essalud o de la afp",
+   "donde configuro a quien se paga cada planilla de pago",
+   "como asigno el tipo de documento y el concepto a una planilla de pago",
+   "que es desdoble mensual en la planilla de pago",
+   "la planilla de pago de semanas partidas como se configura",
+   "como agrego la planilla de pago del sindicato o conafoviser",
+   "planilla de pago con valores negativos como la configuro"
+  ],
+  "aliases": [
+   "planilla de pago",
+   "configurar planilla de pago",
+   "planillas de pago",
+   "registrar planilla de pago"
+  ],
+  "entidades": {
+   "modulo": "Nóminas",
+   "pantallas": [
+    "Planillas de Pago",
+    "Configuracion de Planilla de Pago"
+   ],
+   "objetos": [
+    "planilla de pago",
+    "socio de negocio",
+    "tipo de documento",
+    "recurso",
+    "concepto"
+   ]
+  },
+  "archivo": "nominas/nominas.registrar-planilla-de-pago.yml"
+ },
  "nominas.registrar-renta-de-quinta-de-otras-empresas": {
   "titulo": "Registrar las ganancias y retenciones de renta de 5ta de otras empresas",
   "modulo": "nominas",
@@ -3794,6 +4967,48 @@
    ]
   },
   "archivo": "nominas/nominas.registrar-tareo-estandar.yml"
+ },
+ "nominas.registrar-tareo-multiproyecto": {
+  "titulo": "Registrar el tareo multiproyecto y enviarlo a aprobación",
+  "modulo": "nominas",
+  "nivel": "avanzado",
+  "n_pasos": 21,
+  "preguntas": [
+   "cómo hago el tareo multiproyecto en nóminas",
+   "mis obreros trabajan en varias obras, como registro sus horas por proyecto",
+   "como armo el parte grupal del tareador en el multiproyecto",
+   "como exporto el parte multiproyecto a excel y luego lo importo",
+   "como mando a aprobar el tareo de la semana",
+   "donde apruebo el tareo multiproyecto en gerencia de proyectos",
+   "como asigno proyecto y partida de control a cada trabajador en el tareo",
+   "tareo multiproyeto paso a paso",
+   "el tareo sale por aprobar, quien lo aprueba y como"
+  ],
+  "aliases": [
+   "tareo multiproyecto",
+   "parte multiproyecto",
+   "parte grupal del tareador",
+   "enviar tareo a aprobación",
+   "aprobar tareo multiproyecto"
+  ],
+  "entidades": {
+   "modulo": "Nóminas",
+   "pantallas": [
+    "Tareo Multiproyecto",
+    "Partes Multiproyecto",
+    "Aprobaciones",
+    "Tareo Multiproyecto por Aprobar"
+   ],
+   "objetos": [
+    "tareo",
+    "parte",
+    "tareador",
+    "partida de control",
+    "proyecto",
+    "horas trabajadas"
+   ]
+  },
+  "archivo": "nominas/nominas.registrar-tareo-multiproyecto.yml"
  },
  "nominas.registrar-tipo-de-prestamo": {
   "titulo": "Registrar un tipo de préstamo",
@@ -3875,6 +5090,43 @@
    ]
   },
   "archivo": "nominas/nominas.registrar-trabajador-como-socio-de-negocio.yml"
+ },
+ "nominas.registrar-usuarios": {
+  "titulo": "Registrar usuarios del módulo de Nóminas",
+  "modulo": "nominas",
+  "nivel": "basico",
+  "n_pasos": 12,
+  "preguntas": [
+   "como creo un usuario para el modulo de nominas",
+   "como le doy acceso a nominas a la asistenta de rrhh",
+   "que categorias de usuario hay en nominas, jefe de grupo, especialista",
+   "como le doy permiso a un usuario solo a algunos escenarios de nominas",
+   "el usuario no puede entrar a nominas, que le falta",
+   "como registro los subgrupos personal tecnico y administrativo",
+   "como pongo a un usuario como auditor de la base de datos",
+   "como le quito los atributos a un usuario de nominas",
+   "quien registra los usuarios de nominas"
+  ],
+  "aliases": [
+   "registrar usuario de nóminas",
+   "crear usuario",
+   "mantenimiento de usuarios",
+   "accesos y atributos"
+  ],
+  "entidades": {
+   "modulo": "Nóminas",
+   "pantallas": [
+    "Mantenimiento de usuarios"
+   ],
+   "objetos": [
+    "usuario",
+    "subgrupos",
+    "socio de negocio",
+    "escenarios",
+    "catálogos"
+   ]
+  },
+  "archivo": "nominas/nominas.registrar-usuarios.yml"
  },
  "nominas.seleccionar-personal-disponible": {
   "titulo": "Seleccionar el personal disponible y copiarlo a los proyectos destino",
@@ -4060,6 +5312,115 @@
   },
   "archivo": "portal-proveedor/portal-proveedor.notificar-pagos-en-el-portal.yml"
  },
+ "portal-proveedor.recuperar-contrasena": {
+  "titulo": "Recuperar la contraseña del Portal de Proveedores",
+  "modulo": "portal-proveedor",
+  "nivel": "basico",
+  "n_pasos": 4,
+  "preguntas": [
+   "olvidé la clave del portal de proveedores, cómo la recupero",
+   "como recupero mi contraseña del portal del proveedor de s10",
+   "no puedo entrar al portal de proveedores porque no me acuerdo la clave",
+   "soy proveedor y perdi mi contrasena del supplier portal",
+   "me llego al correo una contraseña temporal del portal de proveedores, que hago",
+   "que pongo en contraseña anterior al cambiar la clave del portal",
+   "como cambio la clave temporal del portal de proveedores",
+   "donde esta el enlace de olvidaste tu contraseña en el portal proveedor"
+  ],
+  "aliases": [
+   "recuperar contraseña",
+   "olvidé mi clave",
+   "recuperación de contraseña",
+   "clave temporal del portal de proveedores"
+  ],
+  "entidades": {
+   "modulo": "Portal del Proveedor",
+   "pantallas": [
+    "S10 Portal de Proveedores",
+    "Recuperación de contraseña"
+   ],
+   "objetos": [
+    "clave temporal",
+    "Contraseña Anterior",
+    "buzón de correo",
+    "dirección electrónica"
+   ]
+  },
+  "archivo": "portal-proveedor/portal-proveedor.recuperar-contrasena.yml"
+ },
+ "presupuestos.aplicar-factor-de-precio": {
+  "titulo": "Aplicar un factor de precio o de cantidad a un recurso",
+  "modulo": "presupuestos",
+  "nivel": "intermedio",
+  "n_pasos": 5,
+  "preguntas": [
+   "como bajo el precio de un recurso un 2 por ciento",
+   "aplicar factor de precio a los recursos en s10",
+   "como le hago un descuento a los precios de varios recursos a la vez",
+   "quiero subir el precio de un material con un factor",
+   "factor de cantidad para bajar la incidencia de un insumo",
+   "como aplico un factor a un grupo de recursos en precios por presupuesto",
+   "puse el factor de precio y no se que mas hacer",
+   "donde esta factor de precio en s10 presupuestos"
+  ],
+  "aliases": [
+   "factor de precio",
+   "aplicar factor de precio",
+   "factor de cantidad",
+   "rebajar precios con factor"
+  ],
+  "entidades": {
+   "modulo": "Presupuestos",
+   "pantallas": [
+    "Precios por Presupuesto",
+    "Factores de precio"
+   ],
+   "objetos": [
+    "recurso",
+    "factor de precio",
+    "factor de cantidad",
+    "precio"
+   ]
+  },
+  "archivo": "presupuestos/presupuestos.aplicar-factor-de-precio.yml"
+ },
+ "presupuestos.aplicar-factores-al-subpresupuesto": {
+  "titulo": "Aplicar factores de cantidad o de rendimiento a un presupuesto o subpresupuesto",
+  "modulo": "presupuestos",
+  "nivel": "avanzado",
+  "n_pasos": 6,
+  "preguntas": [
+   "como bajo un 10% la mano de obra de todo el presupuesto",
+   "como se usan los factores de cantidad en el subpresupuesto",
+   "como modifico los rendimientos de todas las partidas a la vez",
+   "aplicar factor de rendimiento al subpresupuesto s10",
+   "como deshago los factores que aplique",
+   "no puedo modificar el analisis de precios despues de poner factores",
+   "puedo reducir las cantidades de materiales de todo el presupuesto con un factor",
+   "que factor pongo para bajar 10 porciento la mano de obra"
+  ],
+  "aliases": [
+   "factores de cantidad",
+   "factores de rendimiento",
+   "aplicar factores al subpresupuesto",
+   "deshacer factores"
+  ],
+  "entidades": {
+   "modulo": "Presupuestos",
+   "pantallas": [
+    "Hoja del Presupuesto",
+    "Factores de cantidad",
+    "Factores de rendimiento"
+   ],
+   "objetos": [
+    "subpresupuesto",
+    "partidas propias",
+    "análisis de precios unitarios",
+    "rendimientos"
+   ]
+  },
+  "archivo": "presupuestos/presupuestos.aplicar-factores-al-subpresupuesto.yml"
+ },
  "presupuestos.calcular-gastos-generales": {
   "titulo": "Calcular en forma analítica los gastos generales",
   "modulo": "presupuestos",
@@ -4096,6 +5457,40 @@
   },
   "archivo": "presupuestos/presupuestos.calcular-gastos-generales.yml"
  },
+ "presupuestos.cambiar-estado-de-partida": {
+  "titulo": "Cambiar el estado del análisis de precios unitarios de una partida",
+  "modulo": "presupuestos",
+  "nivel": "intermedio",
+  "n_pasos": 4,
+  "preguntas": [
+   "como pongo una partida en estado revisado",
+   "como protejo el analisis de precios unitarios para que nadie lo cambie",
+   "cambiar estado de partida en s10 presupuestos",
+   "no me deja poner sin analisis a la partida",
+   "quien puede poner una partida en protegido",
+   "como cambio el estado a todas las partidas del presupuesto",
+   "que significa el color azul o rojo del analisis de precios",
+   "la partida dice sin analisis pero si tiene analisis"
+  ],
+  "aliases": [
+   "estado de la partida",
+   "cambiar estado de partida",
+   "proteger partida",
+   "partida revisada"
+  ],
+  "entidades": {
+   "modulo": "Presupuestos",
+   "pantallas": [
+    "Hoja del Presupuesto"
+   ],
+   "objetos": [
+    "partida",
+    "análisis de precios unitarios",
+    "estado"
+   ]
+  },
+  "archivo": "presupuestos/presupuestos.cambiar-estado-de-partida.yml"
+ },
  "presupuestos.copiar-partidas-de-otro-presupuesto": {
   "titulo": "Copiar partidas de un presupuesto elaborado a otro",
   "modulo": "presupuestos",
@@ -4129,6 +5524,75 @@
    ]
   },
   "archivo": "presupuestos/presupuestos.copiar-partidas-de-otro-presupuesto.yml"
+ },
+ "presupuestos.copiar-precios-a-otro-presupuesto": {
+  "titulo": "Copiar los precios de un presupuesto a otro",
+  "modulo": "presupuestos",
+  "nivel": "intermedio",
+  "n_pasos": 7,
+  "preguntas": [
+   "como copio los precios de un presupuesto a otro",
+   "quiero usar los mismos precios de otra obra en mi presupuesto nuevo",
+   "pasar precios de un presupuesto a otro en s10",
+   "donde esta copiar precios para otro presupuesto",
+   "como pego los precios en el presupuesto destino",
+   "copie los precios pero no se como pegarlos",
+   "como copio solo los precios que estan en cero",
+   "no me aparece copiar al presupuesto de trabajo"
+  ],
+  "aliases": [
+   "copiar precios",
+   "copiar precios para otro presupuesto",
+   "pegar precios",
+   "copiar al presupuesto de trabajo"
+  ],
+  "entidades": {
+   "modulo": "Presupuestos",
+   "pantallas": [
+    "Precios por Presupuesto",
+    "Proceso de precios por presupuesto"
+   ],
+   "objetos": [
+    "precios",
+    "presupuesto destino",
+    "recursos"
+   ]
+  },
+  "archivo": "presupuestos/presupuestos.copiar-precios-a-otro-presupuesto.yml"
+ },
+ "presupuestos.copiar-subpresupuesto": {
+  "titulo": "Copiar el contenido de un subpresupuesto a otro",
+  "modulo": "presupuestos",
+  "nivel": "intermedio",
+  "n_pasos": 5,
+  "preguntas": [
+   "como copio un subpresupuesto completo a otro",
+   "copiar subpresupuesto y pegarlo en otro presupuesto",
+   "pegar subpresupuesto en s10 como funciona",
+   "quiero pasar todo el subpresupuesto de estructuras a otro",
+   "como copio solo un rango de partidas de un subpresupuesto",
+   "al pegar el subpresupuesto se me borro lo que tenia",
+   "me pregunta si adicionara a las partidas existentes, que le pongo",
+   "pegar subpresupuesto no me deja elegir el rango de items"
+  ],
+  "aliases": [
+   "copiar subpresupuesto",
+   "pegar subpresupuesto",
+   "copiar contenido de un subpresupuesto"
+  ],
+  "entidades": {
+   "modulo": "Presupuestos",
+   "pantallas": [
+    "Hoja del Presupuesto"
+   ],
+   "objetos": [
+    "subpresupuesto",
+    "títulos",
+    "partidas",
+    "portapapeles"
+   ]
+  },
+  "archivo": "presupuestos/presupuestos.copiar-subpresupuesto.yml"
  },
  "presupuestos.disenar-pie-de-presupuesto": {
   "titulo": "Diseñar el pie del presupuesto",
@@ -4236,6 +5700,39 @@
    ]
   },
   "archivo": "presupuestos/presupuestos.exportar-presupuesto.yml"
+ },
+ "presupuestos.generar-item-alterno": {
+  "titulo": "Generar el ítem alterno según el código de la partida o del título",
+  "modulo": "presupuestos",
+  "nivel": "basico",
+  "n_pasos": 4,
+  "preguntas": [
+   "como pongo el codigo del catalogo como item en la hoja del presupuesto",
+   "item alterno en s10 como se genera",
+   "la columna item no me deja editar, como pongo mi propia numeracion",
+   "como muestro la columna item alterno",
+   "cuantos digitos pongo para el item alterno",
+   "como imprimo el presupuesto con los items alternos",
+   "generar item alterno segun codigo de partida"
+  ],
+  "aliases": [
+   "ítem alterno",
+   "generar ítem alterno",
+   "item alterno según código"
+  ],
+  "entidades": {
+   "modulo": "Presupuestos",
+   "pantallas": [
+    "Hoja del Presupuesto"
+   ],
+   "objetos": [
+    "ítem alterno",
+    "partida",
+    "título",
+    "código"
+   ]
+  },
+  "archivo": "presupuestos/presupuestos.generar-item-alterno.yml"
  },
  "presupuestos.importar-presupuesto-desde-excel": {
   "titulo": "Importar al S10 un presupuesto elaborado en Excel",
@@ -4411,6 +5908,42 @@
    ]
   },
   "archivo": "presupuestos/presupuestos.reasignar-recurso.yml"
+ },
+ "presupuestos.registrar-detalle-de-recurso": {
+  "titulo": "Registrar el detalle de un recurso y trasladar su precio al presupuesto",
+  "modulo": "presupuestos",
+  "nivel": "avanzado",
+  "n_pasos": 6,
+  "preguntas": [
+   "como hago el analisis de precio de un equipo en s10",
+   "para que sirve el detalle de recursos",
+   "como armo el costo de un volquete con operador y combustible",
+   "como paso el precio del detalle al presupuesto",
+   "no encuentro trasladar precio al presupuesto",
+   "como agrego recursos al detalle de un recurso",
+   "quiero calcular el costo hora maquina de mi equipo",
+   "como activo el detalle de un recurso"
+  ],
+  "aliases": [
+   "detalle de recursos",
+   "detalle del recurso",
+   "trasladar precio al presupuesto",
+   "analisis de precios del recurso"
+  ],
+  "entidades": {
+   "modulo": "Presupuestos",
+   "pantallas": [
+    "Detalle de recursos",
+    "Catálogo de Recursos"
+   ],
+   "objetos": [
+    "recurso",
+    "equipo",
+    "detalle",
+    "análisis de precios unitarios"
+   ]
+  },
+  "archivo": "presupuestos/presupuestos.registrar-detalle-de-recurso.yml"
  },
  "presupuestos.registrar-partida-en-el-catalogo": {
   "titulo": "Registrar una partida nueva en el catálogo de partidas",
@@ -4627,6 +6160,42 @@
    ]
   },
   "archivo": "presupuestos/presupuestos.usar-favoritos.yml"
+ },
+ "presupuestos.vincular-precios-a-excel": {
+  "titulo": "Vincular los precios de los recursos a una hoja Excel",
+  "modulo": "presupuestos",
+  "nivel": "avanzado",
+  "n_pasos": 11,
+  "preguntas": [
+   "como vinculo los precios de los recursos con un excel",
+   "cotizo los precios en excel, como los paso al s10 sin digitarlos",
+   "vincular precio a celda excel en precios por presupuesto",
+   "quiero que el precio del recurso se actualice desde mi excel",
+   "como vinculo varios precios a la ves con excel",
+   "donde esta tomar precios vinculados en forma global",
+   "los precios me los mandan en excel desde otra ciudad, como los jalo al presupuesto",
+   "como desvinculo un precio de excel para ponerlo a mano"
+  ],
+  "aliases": [
+   "vincular precio a excel",
+   "vincular precios a celda excel",
+   "tomar precios vinculados",
+   "vincular celdas en forma global a excel"
+  ],
+  "entidades": {
+   "modulo": "Presupuestos",
+   "pantallas": [
+    "Precios por Presupuesto",
+    "Vinculo Excel"
+   ],
+   "objetos": [
+    "recurso",
+    "precio",
+    "hoja Excel",
+    "celda"
+   ]
+  },
+  "archivo": "presupuestos/presupuestos.vincular-precios-a-excel.yml"
  },
  "tareo-movil.publicar-parte-de-tareo": {
   "titulo": "Publicar un parte de tareo para el móvil",

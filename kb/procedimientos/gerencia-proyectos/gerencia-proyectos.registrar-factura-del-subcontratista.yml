@@ -1,0 +1,131 @@
+id: gerencia-proyectos.registrar-factura-del-subcontratista
+version: 1
+modulo: gerencia-proyectos
+titulo: "Registrar la factura del subcontratista por pagos a cuenta"
+objetivo: "Registrar en el sistema la factura presentada por el subcontratista y relacionarla al adelanto; es el mismo procedimiento para el adelanto en efectivo, los pagos a cuenta y la valorización."
+nivel: intermedio
+preguntas:
+  - "como registro la factura del subcontratista en s10"
+  - "el subcontratista me trajo su factura del adelanto, donde la ingreso"
+  - "como relaciono la factura del subcontratista con el adelanto"
+  - "registrar factura de pagos a cuenta de un subcontrato"
+  - "como regularizo el adelanto del subcontrato con su factura"
+  - "donde esta la opcion nuevo documento en autorizacion de pago"
+  - "se puede ingresar la factura del subcontratista desde almacenes?"
+  - "factura del subcontratita por adelanto como la registro"
+aliases:
+  - "factura del subcontratista"
+  - "regularizar adelanto del subcontrato"
+  - "registrar factura de pagos a cuenta"
+  - "factura de adelanto del subcontrato"
+entidades:
+  modulo: "Gerencia de Proyectos"
+  pantallas: ["Autorización de Pago", "catálogo de pagos por facturar"]
+  objetos: ["subcontrato", "factura", "adelanto", "subcontratista"]
+prerrequisitos:
+  - texto: "Para el adelanto en efectivo, es requisito haber definido el porcentaje de adelanto en la cabecera del subcontrato; la amortización es automática."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s154]
+pasos:
+  - n: 1
+    id: "gerencia-proyectos.registrar-factura-del-subcontratista#1"
+    accion: "Desde el módulo de Gerencia de proyectos, ingrese al subcontrato."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s155]
+    pagina: null
+    fotos:
+      - id: "5d782963ea0a"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/4062955bddd5.png"
+        pagina: null
+        caption: "Ingrese al subcontrato,"
+        ocr: "oe\nSubcembrate - Ge Ctra. eS\n=J\ntesti eee\n[=] Subcontratos Clic derecho\nS1I0S.A.\n\\] Florez, Antonio\nA ISC M. DE O. PARA COLOCACION DE ACERO CORRUGADO}"
+  - n: 2
+    id: "gerencia-proyectos.registrar-factura-del-subcontratista#2"
+    accion: "En el subcontrato, elija la pestaña **Autorización de Pago**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s155]
+    pagina: null
+    fotos:
+      - id: "2e8105de1eaa"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/145e6fc0501e.png"
+        pagina: null
+        caption: "En el subcontrato,"
+        ocr: "‘GB Registro del Subcontrato - De Obra - ia x\nProyecto: PUENTE EN CARRETERA\n; jn Orden de -—\nJen elsboraci\nCédigo ozooo0s S| |Dil ién x NF Subcontrato\nDescripcién [SC M. DE 0. PARA COLOCACION DE ACERO CORRUGADO.\nSubcontratists [92100126 [Fiorez, Antonio w=] @&| Moneda for Soles | |\nEspecialidad [0191002 [Acero = TaRadeioin ge, Reauiere garantis? [7\nRecurso\na Pare foaoro10008 ISC M. DE O. PARA COLO…"
+  - n: 3
+    id: "gerencia-proyectos.registrar-factura-del-subcontratista#3"
+    accion: "Haga clic derecho sobre **Adelanto** para invocar el menú."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s155]
+    pagina: null
+  - n: 4
+    id: "gerencia-proyectos.registrar-factura-del-subcontratista#4"
+    accion: "Del menú elija **Regularización** y luego **Nuevo Documento**."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s155]
+    pagina: null
+  - n: 5
+    id: "gerencia-proyectos.registrar-factura-del-subcontratista#5"
+    accion: "Ingrese los datos solicitados en el formulario de la factura que se muestra."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s155]
+    pagina: null
+  - n: 6
+    id: "gerencia-proyectos.registrar-factura-del-subcontratista#6"
+    accion: "Si registra la factura por facturación, ingrese al módulo de **ALMACENES** del S10 y registre la factura del subcontratista."
+    fuente: [web-https-documentacion-s10peru-com-manual-d-s155]
+    pagina: null
+    fotos:
+      - id: "a1490bff0a14"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/13e0f478e2ea.png"
+        pagina: null
+        caption: "Ingrese al módulo de ALMACENES del S10, luego"
+        ocr: "=\n= | SUUIRES\n— ogee\nana = estos\n, Luego Me Principal"
+      - id: "c8a19e173624"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/f3764f7e8178.png"
+        pagina: null
+        caption: "Ingrese al módulo de ALMACENES del S10, luego"
+        ocr: "Daeumenctas per Pe gaue [Elja el tipo de documento | |\nEmpresa [02100001 fsi0 S.A. = ]@4] pocumento) FACTURA | z| = | BB\nN® Correlativo ——_|LiquidaciénReembolso [Grupo de Proyecto |N* Liquidacién/Reembpis | Estado Liquic| Fecha"
+      - id: "19f3b76e22dd"
+        ruta_o_url: "imagenes/manual-de-gerencia-proyectos/90a00d44fd35.png"
+        pagina: null
+        caption: "Ingrese al módulo de ALMACENES del S10, luego"
+        ocr: "| a ae |\n\nEmitido a 02100001 Js10S.4 Ss 44), Comelative Ne C_ |\nSucursal ]02100001 |s105.4 oh\n\n@ | RUC 252525252525\nProveedor {02100128 |Florez, Antonia ® | of\nthik i i a\nFecha [21042010 | Fete rt, [22min ~| Fecha... [21042010 lI ©)\naplicacién [01/04/2010 ~~ 201004 | Abril 2104 Tipo cambio no aticial rl 27]\nMoneca for fue ‘OS SOLES o 4) Forma de pago in 8) Gan a4)\nDescuenta cs) [__ 0.00 /] Relacio…"
+    sub:
+      - n: 1
+        id: "gerencia-proyectos.registrar-factura-del-subcontratista#6.1"
+        accion: "Use el botón para elegir el nombre del subcontratista."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s155]
+        pagina: null
+      - n: 2
+        id: "gerencia-proyectos.registrar-factura-del-subcontratista#6.2"
+        accion: "Ingrese las fechas solicitadas."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s155]
+        pagina: null
+      - n: 3
+        id: "gerencia-proyectos.registrar-factura-del-subcontratista#6.3"
+        accion: "Ingrese el número de factura."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s155]
+        pagina: null
+      - n: 4
+        id: "gerencia-proyectos.registrar-factura-del-subcontratista#6.4"
+        accion: "Use el botón para elegir la forma de pago."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s155]
+        pagina: null
+        fotos:
+          - id: "036c282ae451"
+            ruta_o_url: "imagenes/manual-de-gerencia-proyectos/0d1b2a03d9ca.png"
+            pagina: null
+            caption: "Llamada d: Use el botón para elegir la forma de pago."
+            ocr: "[ sas |"
+      - n: 5
+        id: "gerencia-proyectos.registrar-factura-del-subcontratista#6.5"
+        accion: "Use el botón para elegir el documento relacionado y, del catálogo de pagos por facturar que muestra el sistema, elija el **ADELANTO**."
+        fuente: [web-https-documentacion-s10peru-com-manual-d-s155]
+        pagina: null
+        fotos:
+          - id: "f4ec35b31398"
+            ruta_o_url: "imagenes/manual-de-gerencia-proyectos/7d35004ff1b0.png"
+            pagina: null
+            caption: "Llamada e: Use el botón para elegir el documento relacionado, luego el sistema muestra el catálogo de pagos por facturar, del que debe elegir el ADELANTO."
+            ocr: ": [=i]\n& Catalogo de Pages por Facturar Sx\nOpciones 2?\nia Elija con doble clic a yY | NIVEL: off\nN° Val| Tipo de pago | | Subcontrato Subcontratista | Fecha] Monto au\nooo01 Adelanto. PUENTE EN CARRET |SC M. DE 0. PARA COLOCACION DE A\\) Florez, Antonio | 2104/2010) 7,813.90"
+verificacion: []
+errores_frecuentes: []
+relacionados: [gerencia-proyectos.registrar-subcontrato, gerencia-proyectos.aprobar-valorizacion-del-subcontrato]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-manual-d-s154, manual: "Manual de Gerencia de Proyectos", seccion: "4.6.6 Adelanto en efectivo", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-manual-d-s155, manual: "Manual de Gerencia de Proyectos", seccion: "4.6.7 Registro de la factura emitida por el subcontratista por concepto de pagos a cuenta", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

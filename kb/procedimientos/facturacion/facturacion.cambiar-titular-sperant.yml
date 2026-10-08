@@ -1,0 +1,150 @@
+id: facturacion.cambiar-titular-sperant
+version: 1
+modulo: facturacion
+titulo: "Cambiar el titular de una venta inmobiliaria con minuta (Sperant – S10)"
+objetivo: "Registrar en Sperant el nuevo titular del inmueble y, en el escenario Cambio de Titularidad y/o Inmueble del S10, generar la facturación que cierra la orden de venta original con una nota de crédito y convierte la nueva en orden de venta con la boleta vinculada."
+nivel: avanzado
+preguntas:
+  - "cómo hago un cambio de titular de un departamento vendido"
+  - "el cliente le cede su depa a otra persona, como cambio el titular en sperant y s10"
+  - "cambio de titularidad con minuta como se hace"
+  - "donde genero la facturacion del cambio de titular en s10"
+  - "no me deja hacer el cambio de titular, que me falta"
+  - "como cambio el titular de la proforma en sperant"
+  - "que pasa con la boleta y la orden de venta original cuando cambio de titular"
+  - "cambio de titulr inmueble no aparece generar facturacion"
+aliases:
+  - "cambio de titular"
+  - "cambiar titular"
+  - "cambio de titularidad"
+  - "nuevo titular del inmueble"
+  - "cambio de titular con minuta"
+entidades:
+  modulo: "Facturación"
+  pantallas: ["Cambio de Titularidad y/o Inmueble", "Boletaje", "Documentos de ventas"]
+  objetos: ["orden de venta", "titular", "proforma", "boleta", "nota de crédito", "abono", "minuta"]
+prerrequisitos:
+  - texto: "Todos los abonos enviados desde el Sperant a S10 deben estar boletados: si uno de los abonos cuenta con boleta, los demás abonos también deben estar boleteados."
+    fuente: [web-https-documentacion-s10peru-com-cambio-d-s000, web-https-documentacion-s10peru-com-cambio-d-s001]
+  - texto: "La minuta debe haberse enviado al S10: la opción Enviar Minuta se activa cuando se cumplen los flujos de proceso de Separación y Venta subiendo el Contrato y/o Minuta."
+    fuente: [web-https-documentacion-s10peru-com-cambio-d-s000]
+  - texto: "El tipo de documento nota de crédito se toma de la configuración de facturación."
+    fuente: [web-https-documentacion-s10peru-com-cambio-d-s002]
+pasos:
+  - n: 1
+    id: "facturacion.cambiar-titular-sperant#1"
+    accion: "En el Sperant, ubíquese dentro de la proforma para realizar el proceso de cambio de titular."
+    fuente: [web-https-documentacion-s10peru-com-cambio-d-s001]
+    pagina: null
+    fotos:
+      - id: "707714df087d"
+        ruta_o_url: "imagenes/cambio-de-titular-con-minuta/c1b66b86ac48.png"
+        pagina: null
+        caption: "Sperant Para realizar el proceso de cambio de titular debe ubicarse dentro de la proforma"
+        ocr: "Protea Woe\nvat\nUsuario: Emendola Emendola#\ncédige: Financiamiento: Banco: 7 Lista de Precio:\nnT\nPlantilla: 1 Titular gHeRReRARwERO Flavia 1 | Copropietarios # Representante: HERRERA RIVERO Flavia @?\nH\nProforma cumbres | EER [HERRERA RIVERO Flavia - 100.0% 2\ni | Cos nt\n‘Modalidad: Contrato # ec 900013\ncan ;\nA vnc\n{TESTES Estaonmiento Simple 72390000\nvcr 723,000.00"
+  - n: 2
+    id: "facturacion.cambiar-titular-sperant#2"
+    accion: "Use la opción del lápiz para editar el nombre del nuevo titular del inmueble y elíjalo del listado de clientes ya registrados."
+    fuente: [web-https-documentacion-s10peru-com-cambio-d-s002]
+    pagina: null
+    fotos:
+      - id: "8245475abf8f"
+        ruta_o_url: "imagenes/cambio-de-titular-con-minuta/eb77900e30be.png"
+        pagina: null
+        caption: "Mediante la opción del Lápiz permitirá editar el nombre del Nuevo Titular del Inmueble, desplegando así el listado de los clientes ya registrados"
+        ocr: "Financiamiento: # Banco: # ( (x)\nCambio de titular principal Beri (BCP)\nAntiguo Titular\n*\n= Cliente HERRERA RIVERO Flavia rl {ia - 100.0% @\nQ\nVARGAS RIOS Ofelia *\nContrato # VARGAS RISCO Rosita natali\n> VARGAS RIVERA Rosa maria\nLt |\nH VARGAS RODRIGUEZ Valentin luzgardo |\nfee Se Se Nuevo Titular\nVARGAS ROJAS Juan ¥"
+  - n: 3
+    id: "facturacion.cambiar-titular-sperant#3"
+    accion: "Haga clic en la opción **guardar** para guardar el cambio del nuevo titular."
+    resultado: "Aparece el mensaje «El cambio de cliente fue exitoso»."
+    fuente: [web-https-documentacion-s10peru-com-cambio-d-s002, img-8859d6d24b2f-0000]
+    pagina: null
+    fotos:
+      - id: "ee366eb3103c"
+        ruta_o_url: "imagenes/cambio-de-titular-con-minuta/8859d6d24b2f.png"
+        pagina: null
+        ocr: "°\n\nCambio de titular principal\nP)\nca\n\nShon Vargas Rodriguez Valentin Luzgardo\nMensaje | 2 |\nnple @ Et cambio de cliente tue exitoso\nAceptar"
+  - n: 4
+    id: "facturacion.cambiar-titular-sperant#4"
+    accion: "En el S10, ingrese al escenario **Cambio de Titularidad y/o Inmueble**, donde se registran los cambios de titular hechos en el Sperant."
+    resultado: "Se muestran los datos del antiguo cliente y su venta, y los del nuevo cliente y su venta."
+    fuente: [img-29d45cddd5fb-0000, web-https-documentacion-s10peru-com-cambio-d-s002]
+    pagina: null
+    fotos:
+      - id: "5496008478e7"
+        ruta_o_url: "imagenes/cambio-de-titular-con-minuta/29d45cddd5fb.png"
+        pagina: null
+        ocr: "‘Cambio de Titularidad y/o Inmueble\nHOY ARHe EF eda\nrast hace aqui el encabezado dela cokinna que desea arupar\n[origina Nro. OV [Originat Socio De Negocio [Originat Fecha Venta [Originat Estado OV |Originat S| Originat Total Nuevo: Nro, OV Nuevo: Total\n« »\nDOvARAS GP @id DAY ARES BP id\n[nrotem |cédigo |Recwso Unde Nro. tem céntyo |Recurso iad\nBl ‘iciss00010020 — ESTACONAMENTO SMPLE 25 EST- VALANOV…"
+  - n: 5
+    id: "facturacion.cambiar-titular-sperant#5"
+    accion: "Haga clic sobre la grilla del cambio de titular."
+    fuente: [web-https-documentacion-s10peru-com-cambio-d-s002]
+    pagina: null
+    fotos:
+      - id: "a1e0f89e01dc"
+        ruta_o_url: "imagenes/cambio-de-titular-con-minuta/728b93b14fc4.png"
+        pagina: null
+        caption: "Al hacer clic sobre la grilla mostrara las siguientes opciones"
+        ocr: "|Cambio de Titularidad y/o Inmueble\nHOY ARSS BF &a\n4rrastre hacia aqui el encabezado de la columna que desea agrupar.\n\nOrigins: Hiro, OV | Original: Socis Ds Negocks | Crighat Feche Verte |Originat Estedo 0% | Originat S]Originsi: Total |\n\n000000000131 09/04/2018 Parcialmente Facturado Si 23,000.00\nVer Documento - Origen\nVer Documento - Destino\nGenerar Facturacién\n\n4"
+  - n: 6
+    id: "facturacion.cambiar-titular-sperant#6"
+    accion: "Si quiere revisar los documentos, use **Ver documento – Origen** para ver la orden de venta inicial o **Ver Documento – Destino** para ver la nueva orden de venta, que aún se muestra como Cotización."
+    fuente: [web-https-documentacion-s10peru-com-cambio-d-s002]
+    pagina: null
+    fotos:
+      - id: "7996438b6711"
+        ruta_o_url: "imagenes/cambio-de-titular-con-minuta/d5f49013f653.png"
+        pagina: null
+        caption: "Ver documento – Origen: Nos muestra el detalle de la Orden de venta Inicial Ver Documento – Destino: Nos muestra la nueva orden de venta cuyo documento aún se muestra como Cotización"
+        ocr: "@Documento de Yenta [- [of\n\nEmpresa 122000034 |CONSTRUCTORA CUMBRES VILLANOVA S.A.C. = | dh} N° de documento)\n\nEmprese-Sucursal [22000054 PONSTRUCTORACINERES VILANOVASAG wm | | 000000000136 |\nCliente 2010504 _ [VARGAS RODRIGUEZ, VALENTIN LUZGARDO | 44] ©\n‘Sucursal af:\n\nContacto ~ 44 g\nFecha annie +] Moneda [ov [SoLes os @4) Tipo cambio [ 3.239 [za Descuento(%)[ 0\nForma Pago pt [Fontado ==] 48) F.…"
+  - n: 7
+    id: "facturacion.cambiar-titular-sperant#7"
+    accion: "Elija la opción **Generar facturación**, que se muestra mientras el estado del cambio de titular está Pendiente."
+    fuente: [web-https-documentacion-s10peru-com-cambio-d-s002]
+    pagina: null
+  - n: 8
+    id: "facturacion.cambiar-titular-sperant#8"
+    accion: "Seleccione la fecha que servirá para generar todos los documentos."
+    fuente: [web-https-documentacion-s10peru-com-cambio-d-s002]
+    pagina: null
+    fotos:
+      - id: "803539a8a621"
+        ruta_o_url: "imagenes/cambio-de-titular-con-minuta/2c90acb6e438.png"
+        pagina: null
+        caption: "Al hacer clic en la opción, permitirá seleccionar una fecha que servirá para generar todos los documentos."
+        ocr: "Cambio de Titulatidad y/o Inmueble\nHOY ARN a BF aaa\nArrastre hacia aqui el encabezado de la columna que desea agrupar,\n‘Original: Nro. OV | Original: Socio De Negocio | Original: Fecha Venta | Original: Estado OV _[ Origina: S| Original: Total |Nuevo: Nro. OV |Nuevo: Socio De Negocio In\n‘000000000131 ponsmcds Parcialmente Facturado Si 23,000.00 000000000136 VARGAS RODRIGUEZ, VALENTIt 2\nVer Documen…"
+  - n: 9
+    id: "facturacion.cambiar-titular-sperant#9"
+    accion: "Al finalizar la acción, revise el mensaje de proceso terminado."
+    resultado: "Aparece el mensaje «Proceso terminó correctamente»."
+    fuente: [img-dd72a9c1bd66-0000, web-https-documentacion-s10peru-com-cambio-d-s002]
+    pagina: null
+    fotos:
+      - id: "ad4894dca71c"
+        ruta_o_url: "imagenes/cambio-de-titular-con-minuta/dd72a9c1bd66.png"
+        pagina: null
+        ocr: "Sistema 10 - Facturacién Ea\nri) Proceso termind correctamente."
+verificacion:
+  - texto: "En la orden de venta original se registra una nota de crédito vinculada a la boleta, que suma el monto de la boleta o boletas, y la orden queda en estado CERRADO POR EL USUARIO."
+    fuente: [web-https-documentacion-s10peru-com-cambio-d-s002]
+  - texto: "La orden de venta nueva pasa de cotización a Orden de Venta, con la boleta vinculada en su cronograma de facturación y en estado PARCIALMENTE FACTURADO."
+    fuente: [web-https-documentacion-s10peru-com-cambio-d-s002, web-https-documentacion-s10peru-com-cambio-d-s003]
+  - texto: "En el módulo administrativo se registra la compensación, en automático, para cancelar las notas de crédito por pagar con las boletas por cobrar."
+    fuente: [web-https-documentacion-s10peru-com-cambio-d-s003]
+errores_frecuentes:
+  - sintoma: "No permite hacer el cambio de titular."
+    solucion: "Si uno de los abonos cuenta con boleta, los demás abonos también deben estar boleteados; genere los comprobantes faltantes en el escenario Boletaje."
+    fuente: [web-https-documentacion-s10peru-com-cambio-d-s001]
+  - sintoma: "No aparece la opción Generar facturación."
+    solucion: "Esta opción se muestra cuando el estado del cambio de titular está aún Pendiente porque no se ha concluido con el flujo."
+    fuente: [web-https-documentacion-s10peru-com-cambio-d-s002]
+relacionados: [facturacion.boletear-abonos-sperant, facturacion.anular-venta-sperant]
+fuentes:
+  - {id: web-https-documentacion-s10peru-com-cambio-d-s000, manual: "Cambio de Titular con Minuta", seccion: "Cambio de Titular con Minuta (1)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-cambio-d-s001, manual: "Cambio de Titular con Minuta", seccion: "Cambio de Titular con Minuta (2)", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-cambio-d-s002, manual: "Cambio de Titular con Minuta", seccion: "Cambio de Titular con Minuta (3)", pagina: null}
+  - {id: img-8859d6d24b2f-0000, manual: "Cambio de Titular con Minuta", seccion: "8859d6d24b2f.png", pagina: null}
+  - {id: img-29d45cddd5fb-0000, manual: "Cambio de Titular con Minuta", seccion: "29d45cddd5fb.png", pagina: null}
+  - {id: img-dd72a9c1bd66-0000, manual: "Cambio de Titular con Minuta", seccion: "dd72a9c1bd66.png", pagina: null}
+  - {id: web-https-documentacion-s10peru-com-cambio-d-s003, manual: "Cambio de Titular con Minuta", seccion: "Cambio de Titular con Minuta (4)", pagina: null}
+revision: {generado: "2026-10-08", por: "claude", revisado_por_humano: false}

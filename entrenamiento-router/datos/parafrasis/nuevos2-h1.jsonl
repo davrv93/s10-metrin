@@ -1,0 +1,288 @@
+{"texto": "¿Cuál es el procedimiento para calificar un recurso genérico con techo cantidad en el escenario de Techo de Materiales?", "procedimiento": "almacenes.calificar-recurso-con-techo-cantidad", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "tengo presupuestado cemento en bolsas pero voy a comprar de varias marcas, como lo califico para que se vaya descontando", "procedimiento": "almacenes.calificar-recurso-con-techo-cantidad", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como adiciono los recursos equivalentes a un recurso del techo de materiales", "procedimiento": "almacenes.calificar-recurso-con-techo-cantidad", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "en el presupuesto figura acero corrugado en kg y yo compro varillas de 3/8, como las cargo al techo", "procedimiento": "almacenes.calificar-recurso-con-techo-cantidad", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como se pone la cantidad de varillas que voy a comprar contra el acero presupuestado", "procedimiento": "almacenes.calificar-recurso-con-techo-cantidad", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "paso a paso para dar techo por cantidad a un material del presupuesto", "procedimiento": "almacenes.calificar-recurso-con-techo-cantidad", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "clic derecho al recurso presupuestado y que sigue para el techo cantidad", "procedimiento": "almacenes.calificar-recurso-con-techo-cantidad", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "q hago para q las compras de varilla descuenten los kilos del presupuesto", "procedimiento": "almacenes.calificar-recurso-con-techo-cantidad", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "techo x cantidad s10", "procedimiento": "almacenes.calificar-recurso-con-techo-cantidad", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "ke pasos sigo para asignar equivalentes al generico en el techo", "procedimiento": "almacenes.calificar-recurso-con-techo-cantidad", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como registro el peso de la varilla en kg como factor para el techo", "procedimiento": "almacenes.calificar-recurso-con-techo-cantidad", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "necesito que cada varilla que pido reste kilos del acero presupuestado, como lo armo", "procedimiento": "almacenes.calificar-recurso-con-techo-cantidad", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como elijo los equivalentes que detecta el sistema en techo de materiales", "procedimiento": "almacenes.calificar-recurso-con-techo-cantidad", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Quisiera saber cómo se registra la cantidad del recurso específico que se va a comprar dentro del techo por cantidad.", "procedimiento": "almacenes.calificar-recurso-con-techo-cantidad", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "calificar recurso techo cantidad s10", "procedimiento": "almacenes.calificar-recurso-con-techo-cantidad", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como hago q el generico quede como tope y los especificos lo vayan consumiendo", "procedimiento": "almacenes.calificar-recurso-con-techo-cantidad", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "donde esta el escenario techo de materiales", "procedimiento": "almacenes.calificar-recurso-con-techo-cantidad", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "por donde entro para calificar un recurso con techo cantidad", "procedimiento": "almacenes.calificar-recurso-con-techo-cantidad", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que pantalla se ven los recursos equivalentes del techo", "procedimiento": "almacenes.calificar-recurso-con-techo-cantidad", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde registro la equivalencia y el factor de la varilla en el catalogo de recursos", "procedimiento": "almacenes.calificar-recurso-con-techo-cantidad", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que parte de la obra esta techo de materiales", "procedimiento": "almacenes.calificar-recurso-con-techo-cantidad", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde veo cuanta cantidad presupuestada me queda despues de pedir los especificos", "procedimiento": "almacenes.calificar-recurso-con-techo-cantidad", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd aparece la opcion de califiar con techo cantidad", "procedimiento": "almacenes.calificar-recurso-con-techo-cantidad", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "como configuro en el catalogo de recursos la equivalencia de la varilla con su factor para que el techo la tome", "procedimiento": "almacenes.calificar-recurso-con-techo-cantidad", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que debo dejar listo en el catalogo antes de usar techo cantidad", "procedimiento": "almacenes.calificar-recurso-con-techo-cantidad", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué opción de Datos Generales requiere el proyecto para poder usar el techo por cantidad?", "procedimiento": "almacenes.calificar-recurso-con-techo-cantidad", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "como defino el factor de conversion de un recurso especifico respecto al principal", "procedimiento": "almacenes.calificar-recurso-con-techo-cantidad", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "Configurar equivalentes de un recurso principal para el techo cantidad", "procedimiento": "almacenes.calificar-recurso-con-techo-cantidad", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "q tengo q registrar en el catalogo pa q el factor salga solo", "procedimiento": "almacenes.calificar-recurso-con-techo-cantidad", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "el factor sale vacio cuando agrego la varilla como equivalente", "procedimiento": "almacenes.calificar-recurso-con-techo-cantidad", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "agregue las varillas al techo pero el factor me sale en blanco, que falta", "procedimiento": "almacenes.calificar-recurso-con-techo-cantidad", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "el sistema no toma el factor por defecto del recurso equivalente", "procedimiento": "almacenes.calificar-recurso-con-techo-cantidad", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no se descuenta la cantidad presupuestada cuando pido los recursos especificos", "procedimiento": "almacenes.calificar-recurso-con-techo-cantidad", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no veo los recursos equivalentes para elegir en el techo", "procedimiento": "almacenes.calificar-recurso-con-techo-cantidad", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el factor no sale ke hago", "procedimiento": "almacenes.calificar-recurso-con-techo-cantidad", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "no carga el factor de la equivalencia en techo de materiales", "procedimiento": "almacenes.calificar-recurso-con-techo-cantidad", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "como califico un recurso generico con techo precio", "procedimiento": "almacenes.calificar-recurso-con-techo-precio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "puse solo UTILES DE OFICINA en el presupuesto y ahora quiero comprar lapiceros, cuadernos y papel, como lo configuro", "procedimiento": "almacenes.calificar-recurso-con-techo-precio", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Procedimiento para adicionar recursos del catálogo a un recurso calificado con techo precio", "procedimiento": "almacenes.calificar-recurso-con-techo-precio", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como edito la cantidad a pedir y el precio de un recurso equivalente del techo", "procedimiento": "almacenes.calificar-recurso-con-techo-precio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como dejo el generico como no pedible", "procedimiento": "almacenes.calificar-recurso-con-techo-precio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como le pongo es pedible a los recursos especificos", "procedimiento": "almacenes.calificar-recurso-con-techo-precio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "pasos para que lo gastado en cuadernos se reste del monto presupuestado de utiles", "procedimiento": "almacenes.calificar-recurso-con-techo-precio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como agrego articulos del catalogo con doble clic al techo de materiales", "procedimiento": "almacenes.calificar-recurso-con-techo-precio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como ago techo por precio", "procedimiento": "almacenes.calificar-recurso-con-techo-precio", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "techo precio s10 pasos", "procedimiento": "almacenes.calificar-recurso-con-techo-precio", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "quiero q solo pidan los especificos, no el generico, q hago", "procedimiento": "almacenes.calificar-recurso-con-techo-precio", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como grabo el precio y la cantidad de cada equivalente del techo precio", "procedimiento": "almacenes.calificar-recurso-con-techo-precio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "tengo un generico de ferreteria menuda presupuestado en soles, como hago que lo que compre se vaya descontando del monto", "procedimiento": "almacenes.calificar-recurso-con-techo-precio", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "debo repetir el proceso con cada equivalente? cual es el flujo completo del techo precio", "procedimiento": "almacenes.calificar-recurso-con-techo-precio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como se bloquea el pedido del recurso presupuestado generico", "procedimiento": "almacenes.calificar-recurso-con-techo-precio", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Necesito el paso a paso del techo precio con recursos del catálogo en Techo de Materiales", "procedimiento": "almacenes.calificar-recurso-con-techo-precio", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "donde hago clic derecho para marcar un recurso como no pedible", "procedimiento": "almacenes.calificar-recurso-con-techo-precio", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "opcion es pedible donde esta", "procedimiento": "almacenes.calificar-recurso-con-techo-precio", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "en que parte se edita el techo precio de cada equivalente", "procedimiento": "almacenes.calificar-recurso-con-techo-precio", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "ruta para califcar con techo precio un recurso", "procedimiento": "almacenes.calificar-recurso-con-techo-precio", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "donde esta techo precio", "procedimiento": "almacenes.calificar-recurso-con-techo-precio", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "¿En qué escenario del proyecto se califica un recurso con techo precio?", "procedimiento": "almacenes.calificar-recurso-con-techo-precio", "intencion": "NAVIGATION", "estilo": "formal"}
+{"texto": "por donde adiciono recursos del catalogo en el techo", "procedimiento": "almacenes.calificar-recurso-con-techo-precio", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "como configuro un recurso generico para que no sea pedible y solo se pidan los especificos", "procedimiento": "almacenes.calificar-recurso-con-techo-precio", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que opcion marco en cada equivalente para volverlo pedible", "procedimiento": "almacenes.calificar-recurso-con-techo-precio", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "configurar techo precio para utiles de oficina", "procedimiento": "almacenes.calificar-recurso-con-techo-precio", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué debe tener seleccionado el proyecto en Datos Generales para poder usar el techo precio?", "procedimiento": "almacenes.calificar-recurso-con-techo-precio", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "como cambio el precio tope de un recurso equivalente del techo", "procedimiento": "almacenes.calificar-recurso-con-techo-precio", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como seteo q el generico no se pueda pedir", "procedimiento": "almacenes.calificar-recurso-con-techo-precio", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "pedi el generico y no me deja, solo salen los especificos", "procedimiento": "almacenes.calificar-recurso-con-techo-precio", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "el precio de lo que compro no se descuenta del recurso presupuestado", "procedimiento": "almacenes.calificar-recurso-con-techo-precio", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "agregue los cuadernos al techo pero no puedo pedirlos, falta marcar algo", "procedimiento": "almacenes.calificar-recurso-con-techo-precio", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no se si debo poner no pedible al generico o a los equivalentes", "procedimiento": "almacenes.calificar-recurso-con-techo-precio", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "me olvide el precio al agregar un equivalente del techo precio, como lo corrijo", "procedimiento": "almacenes.calificar-recurso-con-techo-precio", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "ke pasa si no marco es pedible a los especificos", "procedimiento": "almacenes.calificar-recurso-con-techo-precio", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "los equivalentes aparecen en el techo pero no se pueden pedir", "procedimiento": "almacenes.calificar-recurso-con-techo-precio", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "Pasos para ingresar una factura de un proveedor en el escenario de Documentos por Pagar", "procedimiento": "almacenes.registrar-documento-por-pagar", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "me llego una factura de gasolina que no tiene orden de compra, como la registro", "procedimiento": "almacenes.registrar-documento-por-pagar", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como registro una boleta de venta que tenemos que pagar", "procedimiento": "almacenes.registrar-documento-por-pagar", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como pongo el porcentaje de descuento que trae la factura al registrarla", "procedimiento": "almacenes.registrar-documento-por-pagar", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como cargo el gasto de un documento por pagar a un centro de costo que no es de ningun proyecto", "procedimiento": "almacenes.registrar-documento-por-pagar", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como ligo la factura con la orden de compra o servicio", "procedimiento": "almacenes.registrar-documento-por-pagar", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como registro la valorizacion de un subcontrato como documento por pagar", "procedimiento": "almacenes.registrar-documento-por-pagar", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como pongo las fechas de registro, cancelacion y recepcion de una factura", "procedimiento": "almacenes.registrar-documento-por-pagar", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ya hice el ingreso por compra de los fierros y ahora si llego la factura, como la registro amarrada a ese ingreso", "procedimiento": "almacenes.registrar-documento-por-pagar", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "doc por pagar s10", "procedimiento": "almacenes.registrar-documento-por-pagar", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "registrar factura x pagar", "procedimiento": "almacenes.registrar-documento-por-pagar", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como elijo el motivo de pago y el metodo de pago de la factura", "procedimiento": "almacenes.registrar-documento-por-pagar", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como agrego los recursos que trae la factura dentro del documento", "procedimiento": "almacenes.registrar-documento-por-pagar", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "una liquidacion de compra como la registro como documento de pago", "procedimiento": "almacenes.registrar-documento-por-pagar", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como ago un doc por pagar con serie y numero", "procedimiento": "almacenes.registrar-documento-por-pagar", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "tengo q registrar el recibo de agua cada mes, como lo hago mas rapido", "procedimiento": "almacenes.registrar-documento-por-pagar", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "donde esta la pantalla de documentos por pagar", "procedimiento": "almacenes.registrar-documento-por-pagar", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "por que menu entro a documentos por pagar, por sucursales?", "procedimiento": "almacenes.registrar-documento-por-pagar", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde veo la plantilla de cargo", "procedimiento": "almacenes.registrar-documento-por-pagar", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que pestaña se ve el asiento contable de la factura por pagar", "procedimiento": "almacenes.registrar-documento-por-pagar", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "documentos x pagar donde queda", "procedimiento": "almacenes.registrar-documento-por-pagar", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "como llego al formulario para adicionar un documento de pago", "procedimiento": "almacenes.registrar-documento-por-pagar", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "sucursales documentos por pagar", "procedimiento": "almacenes.registrar-documento-por-pagar", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "como defino un documento como plantilla de cargo para servicios mensuales", "procedimiento": "almacenes.registrar-documento-por-pagar", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Qué debo configurar en Contabilidad para que el documento por pagar genere su asiento contable?", "procedimiento": "almacenes.registrar-documento-por-pagar", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "como registro una nueva forma de pago desde el documento por pagar", "procedimiento": "almacenes.registrar-documento-por-pagar", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q necesito tener creado antes de registrar la factura, proveedor y forma de pago", "procedimiento": "almacenes.registrar-documento-por-pagar", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "como uso adicionar desde plantilla de cargo", "procedimiento": "almacenes.registrar-documento-por-pagar", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como configuro a donde se carga el documento: al proyecto, a un centro de costo o a ninguno", "procedimiento": "almacenes.registrar-documento-por-pagar", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "no me deja eliminar la factura que registre por pagar", "procedimiento": "almacenes.registrar-documento-por-pagar", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "quise borrar una factura por pagar y no deja porque ya tiene ingreso al almacen", "procedimiento": "almacenes.registrar-documento-por-pagar", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no se genera el asiento contable de mi factura por pagar", "procedimiento": "almacenes.registrar-documento-por-pagar", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no sale el asiento del documento, que me falta en contabilidad", "procedimiento": "almacenes.registrar-documento-por-pagar", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el documento por pagar no se puede borrar xq ya lo pague", "procedimiento": "almacenes.registrar-documento-por-pagar", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "no me aparece el proveedor en el catalogo al registrar la factura por pagar", "procedimiento": "almacenes.registrar-documento-por-pagar", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "nose xq no genera asiento la factura", "procedimiento": "almacenes.registrar-documento-por-pagar", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "Pasos para realizar un egreso para fabricación (EFE) de un elemento fabricado en obra", "procedimiento": "almacenes.registrar-egreso-para-fabricacion", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "vamos a armar paneles de encofrado con madera y clavos, como hago salir esos materiales del almacen", "procedimiento": "almacenes.registrar-egreso-para-fabricacion", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como defino cuanta madera lleva un panel de encofrado en el catalogo", "procedimiento": "almacenes.registrar-egreso-para-fabricacion", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como indico que cantidad de paneles se van a fabricar en el egreso", "procedimiento": "almacenes.registrar-egreso-para-fabricacion", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como registro al solicitante y la fecha del egreso para fabricacion", "procedimiento": "almacenes.registrar-egreso-para-fabricacion", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como ingresan los paneles ya fabricados al almacen de elementos fabricados", "procedimiento": "almacenes.registrar-egreso-para-fabricacion", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como creo el recurso a fabricar con su nombre y su unidad", "procedimiento": "almacenes.registrar-egreso-para-fabricacion", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "efe en almacenes", "procedimiento": "almacenes.registrar-egreso-para-fabricacion", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "egreso x fabricacion", "procedimiento": "almacenes.registrar-egreso-para-fabricacion", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "ke pasos hago pa fabricar un recurso en almacen", "procedimiento": "almacenes.registrar-egreso-para-fabricacion", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como pongo los insumos que lleva una unidad del recurso fabricado en detalle recurso", "procedimiento": "almacenes.registrar-egreso-para-fabricacion", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "fabricamos castillos de fierro en la obra y debo bajar el fierro y el alambre del stock, como lo registro", "procedimiento": "almacenes.registrar-egreso-para-fabricacion", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "q hago para descontar insumos del stock cuando fabrico algo", "procedimiento": "almacenes.registrar-egreso-para-fabricacion", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como saco del almacen los insumos de un recurso compuesto que armamos nosotros mismos", "procedimiento": "almacenes.registrar-egreso-para-fabricacion", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como grabo el egreso de fabricacion", "procedimiento": "almacenes.registrar-egreso-para-fabricacion", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como registro la fabricacion de una cantidad de unidades de un recurso", "procedimiento": "almacenes.registrar-egreso-para-fabricacion", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde se llena el detalle recurso de lo que voy a fabricar", "procedimiento": "almacenes.registrar-egreso-para-fabricacion", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en el catalogo de recursos donde pongo los componentes del recurso fabricado", "procedimiento": "almacenes.registrar-egreso-para-fabricacion", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde queda el almacen de elementos fabricados", "procedimiento": "almacenes.registrar-egreso-para-fabricacion", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "pestaña detalle recurso donde esta", "procedimiento": "almacenes.registrar-egreso-para-fabricacion", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "por donde empiezo para fabricar un recurso en almacenes", "procedimiento": "almacenes.registrar-egreso-para-fabricacion", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd registro el solicitante del egreso de fabricacion", "procedimiento": "almacenes.registrar-egreso-para-fabricacion", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "donde elijo el tipo de egreso para fabricacion", "procedimiento": "almacenes.registrar-egreso-para-fabricacion", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "como armo la receta de un panel con sus materiales y cantidades por unidad", "procedimiento": "almacenes.registrar-egreso-para-fabricacion", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que debo tener en stock antes de hacer un egreso de fabricacion", "procedimiento": "almacenes.registrar-egreso-para-fabricacion", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como defino la unidad del recurso a fabricar en el catalogo", "procedimiento": "almacenes.registrar-egreso-para-fabricacion", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "configurar detalle del recurso fabricado", "procedimiento": "almacenes.registrar-egreso-para-fabricacion", "intencion": "CONFIGURATION", "estilo": "muy_corta"}
+{"texto": "como dejo preparado el catalogo para fabricar paneles", "procedimiento": "almacenes.registrar-egreso-para-fabricacion", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q cantidades tengo q poner en el detalle del recurso, por unidad o por el total", "procedimiento": "almacenes.registrar-egreso-para-fabricacion", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "no me deja hacer el egreso para fabricar, faltan materiales", "procedimiento": "almacenes.registrar-egreso-para-fabricacion", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el egreso de fabricacion no tiene stock de clavos", "procedimiento": "almacenes.registrar-egreso-para-fabricacion", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "me dice que no hay recursos suficientes para fabricar los paneles", "procedimiento": "almacenes.registrar-egreso-para-fabricacion", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no puedo fabricar xq no hay stock", "procedimiento": "almacenes.registrar-egreso-para-fabricacion", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "quise fabricar mas paneles y el stock no alcanza para la cantidad que puse", "procedimiento": "almacenes.registrar-egreso-para-fabricacion", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no aparecen los insumos del panel al hacer el egreso de fabricacion", "procedimiento": "almacenes.registrar-egreso-para-fabricacion", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el recurso a fabricar sale sin materiales, q paso", "procedimiento": "almacenes.registrar-egreso-para-fabricacion", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "un maestro nos devolvio las amoladoras que le prestamos, como las dejo ingresadas al almacen", "procedimiento": "almacenes.registrar-ingreso-por-devolucion-de-prestamo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "pasos para registrar un IDP", "procedimiento": "almacenes.registrar-ingreso-por-devolucion-de-prestamo", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "la obra vecina nos regreso las vigas que le prestamos, que movimiento hago en almacenes", "procedimiento": "almacenes.registrar-ingreso-por-devolucion-de-prestamo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como ingreso al almacen lo que nos devuelve el proveedor despues de un prestamo", "procedimiento": "almacenes.registrar-ingreso-por-devolucion-de-prestamo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como elijo solo los recursos que devuelve el socio de negocio", "procedimiento": "almacenes.registrar-ingreso-por-devolucion-de-prestamo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ingreso x devolucion de prestamo", "procedimiento": "almacenes.registrar-ingreso-por-devolucion-de-prestamo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "devolucion de prestamo", "procedimiento": "almacenes.registrar-ingreso-por-devolucion-de-prestamo", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como ago el ingreso cuando me devuelven lo q preste", "procedimiento": "almacenes.registrar-ingreso-por-devolucion-de-prestamo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como pongo la cantidad que devuelve si solo regresaron una parte", "procedimiento": "almacenes.registrar-ingreso-por-devolucion-de-prestamo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como registro el tipo de cambio en un ingreso por devolucion de prestamo", "procedimiento": "almacenes.registrar-ingreso-por-devolucion-de-prestamo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "el ingeniero de la otra obra trajo de vuelta los puntales, como los registro", "procedimiento": "almacenes.registrar-ingreso-por-devolucion-de-prestamo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "¿Cómo se registra formalmente un ingreso por devolución de préstamo en Almacenes?", "procedimiento": "almacenes.registrar-ingreso-por-devolucion-de-prestamo", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "prestamos unos encofrados a otro proyecto y ya los devolvieron, que hago en el sistema", "procedimiento": "almacenes.registrar-ingreso-por-devolucion-de-prestamo", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como hago para dar de alta de nuevo en el stock lo prestado cuando regresa", "procedimiento": "almacenes.registrar-ingreso-por-devolucion-de-prestamo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como selecciono el tipo de ingreso devolucion de prestamo", "procedimiento": "almacenes.registrar-ingreso-por-devolucion-de-prestamo", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ke hago cuando un socio de negocio regresa lo prestado", "procedimiento": "almacenes.registrar-ingreso-por-devolucion-de-prestamo", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "donde elijo el tipo de ingreso por devolucion de prestamo", "procedimiento": "almacenes.registrar-ingreso-por-devolucion-de-prestamo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que escenario se registra la devolucion de lo que preste", "procedimiento": "almacenes.registrar-ingreso-por-devolucion-de-prestamo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde entro para registrar el ingreso IDP", "procedimiento": "almacenes.registrar-ingreso-por-devolucion-de-prestamo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "por donde van las devoluciones de prestamo en almacenes", "procedimiento": "almacenes.registrar-ingreso-por-devolucion-de-prestamo", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnde se registran los ingresos de devolucion", "procedimiento": "almacenes.registrar-ingreso-por-devolucion-de-prestamo", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "idp donde", "procedimiento": "almacenes.registrar-ingreso-por-devolucion-de-prestamo", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "ruta ingreso por devolucion", "procedimiento": "almacenes.registrar-ingreso-por-devolucion-de-prestamo", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "que debo haber hecho antes de poder registrar una devolucion de prestamo", "procedimiento": "almacenes.registrar-ingreso-por-devolucion-de-prestamo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "que movimiento previo se necesita para que el recurso salga en la devolucion", "procedimiento": "almacenes.registrar-ingreso-por-devolucion-de-prestamo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "¿Es requisito haber generado un egreso por préstamo antes de registrar la devolución?", "procedimiento": "almacenes.registrar-ingreso-por-devolucion-de-prestamo", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "como dejo identificado al socio de negocio o proyecto al que preste para luego recibir su devolucion", "procedimiento": "almacenes.registrar-ingreso-por-devolucion-de-prestamo", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q requisito hay pa devolucion de prestamo", "procedimiento": "almacenes.registrar-ingreso-por-devolucion-de-prestamo", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "requisito idp", "procedimiento": "almacenes.registrar-ingreso-por-devolucion-de-prestamo", "intencion": "CONFIGURATION", "estilo": "muy_corta"}
+{"texto": "intento ingresar la devolucion y la lista de recursos sale vacia", "procedimiento": "almacenes.registrar-ingreso-por-devolucion-de-prestamo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el sistema no me muestra lo que le preste al proveedor cuando quiero ingresar su devolucion", "procedimiento": "almacenes.registrar-ingreso-por-devolucion-de-prestamo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no sale el recurso en devolucion de prestamo", "procedimiento": "almacenes.registrar-ingreso-por-devolucion-de-prestamo", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "me devolvieron herramientas y en el ingreso no me aparecen para elegirlas", "procedimiento": "almacenes.registrar-ingreso-por-devolucion-de-prestamo", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no aparecen los recursos prestados al socio de negocio en el ingreso", "procedimiento": "almacenes.registrar-ingreso-por-devolucion-de-prestamo", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "en devolucion de prestamo no me carga nada xq", "procedimiento": "almacenes.registrar-ingreso-por-devolucion-de-prestamo", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "lo que quiero registrar es devolver algo que nos prestaron a nosotros, y en este ingreso no me sale", "procedimiento": "almacenes.registrar-ingreso-por-devolucion-de-prestamo", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "usamos un recibo interno de caja chica y no esta en la lista, como lo doy de alta como documento", "procedimiento": "almacenes.registrar-tipo-de-documento", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "Pasos para registrar un tipo de documento nuevo compatible con los documentos de SUNAT", "procedimiento": "almacenes.registrar-tipo-de-documento", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como agrego el IGV a un tipo de documento", "procedimiento": "almacenes.registrar-tipo-de-documento", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como registro un impuesto nuevo con su tasa y abreviatura", "procedimiento": "almacenes.registrar-tipo-de-documento", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como hago que un impuesto sea obligatorio en un documento", "procedimiento": "almacenes.registrar-tipo-de-documento", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como pongo el signo positivo o negativo del impuesto", "procedimiento": "almacenes.registrar-tipo-de-documento", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como elijo si el documento es para pagar, cobrar o ambos", "procedimiento": "almacenes.registrar-tipo-de-documento", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "crear tipo de documento", "procedimiento": "almacenes.registrar-tipo-de-documento", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "nuevo tipo de doc", "procedimiento": "almacenes.registrar-tipo-de-documento", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "como ago pa crear un tipo de documento q usamos en la empresa", "procedimiento": "almacenes.registrar-tipo-de-documento", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como le pongo la abreviatura y el codigo alterno al documento", "procedimiento": "almacenes.registrar-tipo-de-documento", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como indico que el asiento contable se genere por recurso en un documento", "procedimiento": "almacenes.registrar-tipo-de-documento", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como elijo el tipo base para que el sistema lo reconozca como factura", "procedimiento": "almacenes.registrar-tipo-de-documento", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como defino la vigencia de un impuesto de un documento", "procedimiento": "almacenes.registrar-tipo-de-documento", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como registro una boleta con su moneda e impuesto en el catalogo", "procedimiento": "almacenes.registrar-tipo-de-documento", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "ke hago pa qe el documento lleve impuesto del 18", "procedimiento": "almacenes.registrar-tipo-de-documento", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "donde esta el catalogo de tipos de documento", "procedimiento": "almacenes.registrar-tipo-de-documento", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "por que menu se entra a tipo de documento", "procedimiento": "almacenes.registrar-tipo-de-documento", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde veo el catalogo de impuestos", "procedimiento": "almacenes.registrar-tipo-de-documento", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "catalogos tipo de documento", "procedimiento": "almacenes.registrar-tipo-de-documento", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "en que parte se registra el impuesto de un documento", "procedimiento": "almacenes.registrar-tipo-de-documento", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd creo documentos nuevos pa la empresa", "procedimiento": "almacenes.registrar-tipo-de-documento", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "ruta tipo de documento sunat", "procedimiento": "almacenes.registrar-tipo-de-documento", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "como configuro la moneda de un tipo de documento", "procedimiento": "almacenes.registrar-tipo-de-documento", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como compatibilizo un documento propio con los de SUNAT", "procedimiento": "almacenes.registrar-tipo-de-documento", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "los documentos normados por sunat ya vienen cargados o los tengo que registrar", "procedimiento": "almacenes.registrar-tipo-de-documento", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como defino el comportamiento de un tipo de documento", "procedimiento": "almacenes.registrar-tipo-de-documento", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "Configurar el impuesto obligatorio de un tipo de documento", "procedimiento": "almacenes.registrar-tipo-de-documento", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "q opcion marco pa que el asiento salga por documento y no por recurso", "procedimiento": "almacenes.registrar-tipo-de-documento", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "no encuentro mi documento en la lista de documentos", "procedimiento": "almacenes.registrar-tipo-de-documento", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el comprobante que usa la empresa no existe en el sistema, que hago", "procedimiento": "almacenes.registrar-tipo-de-documento", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "al registrar el impuesto no me sale el que necesito en el catalogo de impuestos", "procedimiento": "almacenes.registrar-tipo-de-documento", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no aparece el tipo de documento q necesito pa mi comprobante", "procedimiento": "almacenes.registrar-tipo-de-documento", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "el catalogo de documentos no tiene el comprobante que emite mi proveedor", "procedimiento": "almacenes.registrar-tipo-de-documento", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no existe el impuesto en el catalogo, como lo creo desde la ventana de impuestos", "procedimiento": "almacenes.registrar-tipo-de-documento", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "falta un documento en el catalogo", "procedimiento": "almacenes.registrar-tipo-de-documento", "intencion": "TROUBLESHOOTING", "estilo": "muy_corta"}
+{"texto": "como selecciono los equipos que van a trabajar en el proyecto", "procedimiento": "almacenes.seleccionar-equipos-disponibles", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como relaciono un equipo con el recurso presupuestado", "procedimiento": "almacenes.seleccionar-equipos-disponibles", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como registro el monto del alquiler de un equipo en su ficha", "procedimiento": "almacenes.seleccionar-equipos-disponibles", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como pongo las horas maquina que va a trabajar el equipo", "procedimiento": "almacenes.seleccionar-equipos-disponibles", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como registro marca, modelo, potencia y serie de un equipo", "procedimiento": "almacenes.seleccionar-equipos-disponibles", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como indiko q el costo del equipo no incluye combustible", "procedimiento": "almacenes.seleccionar-equipos-disponibles", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como asigno el factor de rendimiento del equipo", "procedimiento": "almacenes.seleccionar-equipos-disponibles", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "registrar equipos s10", "procedimiento": "almacenes.seleccionar-equipos-disponibles", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "llenar ficha equipo", "procedimiento": "almacenes.seleccionar-equipos-disponibles", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "ke pasos para registrar una retroexcavadora alquilada en el proyecto", "procedimiento": "almacenes.seleccionar-equipos-disponibles", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "alquilamos una retroexcavadora a un tercero y quiero tenerla lista para los partes diarios", "procedimiento": "almacenes.seleccionar-equipos-disponibles", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como activo que el egreso de combustible pida el kilometraje de la camioneta", "procedimiento": "almacenes.seleccionar-equipos-disponibles", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como indico los recursos para evaluar los ratios del equipo", "procedimiento": "almacenes.seleccionar-equipos-disponibles", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "¿Cómo se completa formalmente la ficha de un equipo del proyecto?", "procedimiento": "almacenes.seleccionar-equipos-disponibles", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como retiro del proyecto un equipo q ya no va a trabajar", "procedimiento": "almacenes.seleccionar-equipos-disponibles", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como elijo los equipos propios y de terceros desde el catalogo de recursos", "procedimiento": "almacenes.seleccionar-equipos-disponibles", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde se abre la ficha del equipo", "procedimiento": "almacenes.seleccionar-equipos-disponibles", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde esta el escenario de equipos disponibles", "procedimiento": "almacenes.seleccionar-equipos-disponibles", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde registro las especificaciones del equipo", "procedimiento": "almacenes.seleccionar-equipos-disponibles", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde veo el estado amarillo o rojo de la ficha del equipo", "procedimiento": "almacenes.seleccionar-equipos-disponibles", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en el arbol del proyecto donde van los equipos", "procedimiento": "almacenes.seleccionar-equipos-disponibles", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd estan los equipos disponibles", "procedimiento": "almacenes.seleccionar-equipos-disponibles", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "ficha equipo ubicacion", "procedimiento": "almacenes.seleccionar-equipos-disponibles", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "que debo tener en el catalogo de recursos para que un equipo sea activo del proyecto", "procedimiento": "almacenes.seleccionar-equipos-disponibles", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como configuro que el equipo pida horometro o kilometraje segun su unidad de medicion", "procedimiento": "almacenes.seleccionar-equipos-disponibles", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "Configurar combustible y gestión del equipo en la ficha del equipo", "procedimiento": "almacenes.seleccionar-equipos-disponibles", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "como uso factor 1 y factor 2 en la ficha del equipo", "procedimiento": "almacenes.seleccionar-equipos-disponibles", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como dejo un equipo disponible o no disponible", "procedimiento": "almacenes.seleccionar-equipos-disponibles", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "q es el recurso especifico de 14 digitos pa los activos", "procedimiento": "almacenes.seleccionar-equipos-disponibles", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "el equipo no sale para hacer el parte diario", "procedimiento": "almacenes.seleccionar-equipos-disponibles", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "mi volquete no aparece en los partes diarios de equipo", "procedimiento": "almacenes.seleccionar-equipos-disponibles", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "ya registre los equipos en gerencia de proyectos y aparecen en almacenes, es normal", "procedimiento": "almacenes.seleccionar-equipos-disponibles", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "un equipo ya retirado me sigue apareciendo para los partes, como lo quito", "procedimiento": "almacenes.seleccionar-equipos-disponibles", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me aparece el equipo en partes xq", "procedimiento": "almacenes.seleccionar-equipos-disponibles", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}
+{"texto": "los equipos salen en almacenes sin que yo los haya registrado", "procedimiento": "almacenes.seleccionar-equipos-disponibles", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "la etiqueta de la ficha del equipo esta en rojo, que significa", "procedimiento": "almacenes.seleccionar-equipos-disponibles", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "como armo un grupo empresarial con mis empresas", "procedimiento": "contabilidad.crear-grupo-empresarial", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como sumo los balances de las empresas afiliadas", "procedimiento": "contabilidad.crear-grupo-empresarial", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como agrego una empresa a un grupo empresarial ya creado", "procedimiento": "contabilidad.crear-grupo-empresarial", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como saco una empresa del grupo", "procedimiento": "contabilidad.crear-grupo-empresarial", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como saco el balance general combinado de mi holding", "procedimiento": "contabilidad.crear-grupo-empresarial", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como veo el estado de resultados del grupo por periodo", "procedimiento": "contabilidad.crear-grupo-empresarial", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como muestro el balance del grupo en modo comparativo", "procedimiento": "contabilidad.crear-grupo-empresarial", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "como cambio la moneda del grupo empresarial", "procedimiento": "contabilidad.crear-grupo-empresarial", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "crear grupo de empresas", "procedimiento": "contabilidad.crear-grupo-empresarial", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "estados combinados", "procedimiento": "contabilidad.crear-grupo-empresarial", "intencion": "PROCEDURE", "estilo": "muy_corta"}
+{"texto": "kiero consolidar 3 empresas, como ago", "procedimiento": "contabilidad.crear-grupo-empresarial", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "tenemos tres razones sociales y el gerente quiere un solo balance, como lo saco", "procedimiento": "contabilidad.crear-grupo-empresarial", "intencion": "PROCEDURE", "estilo": "situacional"}
+{"texto": "como creo el grupo y le pongo descripcion y moneda", "procedimiento": "contabilidad.crear-grupo-empresarial", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "Pasos para crear un grupo empresarial en Contabilidad y visualizar sus estados financieros combinados", "procedimiento": "contabilidad.crear-grupo-empresarial", "intencion": "PROCEDURE", "estilo": "formal"}
+{"texto": "como hago q los activos y pasivos de varias empresas se sumen", "procedimiento": "contabilidad.crear-grupo-empresarial", "intencion": "PROCEDURE", "estilo": "con_errores"}
+{"texto": "como retiro una compañia afiliada del grupo", "procedimiento": "contabilidad.crear-grupo-empresarial", "intencion": "PROCEDURE", "estilo": "coloquial"}
+{"texto": "donde esta el escenario de grupo empresarial", "procedimiento": "contabilidad.crear-grupo-empresarial", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde se ven los estados financieros del grupo", "procedimiento": "contabilidad.crear-grupo-empresarial", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "en que escenario selecciono el grupo y el informe contable", "procedimiento": "contabilidad.crear-grupo-empresarial", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde hago clic derecho para nuevo grupo empresarial", "procedimiento": "contabilidad.crear-grupo-empresarial", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "donde elijo general o comparativo para el grupo", "procedimiento": "contabilidad.crear-grupo-empresarial", "intencion": "NAVIGATION", "estilo": "coloquial"}
+{"texto": "dnd agrego empresas al grupo", "procedimiento": "contabilidad.crear-grupo-empresarial", "intencion": "NAVIGATION", "estilo": "con_errores"}
+{"texto": "estados financieros del grupo donde", "procedimiento": "contabilidad.crear-grupo-empresarial", "intencion": "NAVIGATION", "estilo": "muy_corta"}
+{"texto": "que moneda debo definir al crear el grupo empresarial", "procedimiento": "contabilidad.crear-grupo-empresarial", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como modifico la descripcion o la moneda de un grupo ya creado", "procedimiento": "contabilidad.crear-grupo-empresarial", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "Configurar las compañías afiliadas de un grupo empresarial", "procedimiento": "contabilidad.crear-grupo-empresarial", "intencion": "CONFIGURATION", "estilo": "formal"}
+{"texto": "que empresas puedo poner en el grupo para combinar sus estados", "procedimiento": "contabilidad.crear-grupo-empresarial", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como dejo configurado el grupo para ver informes combinados", "procedimiento": "contabilidad.crear-grupo-empresarial", "intencion": "CONFIGURATION", "estilo": "coloquial"}
+{"texto": "como cambio la moneda del grupo xq la puse mal", "procedimiento": "contabilidad.crear-grupo-empresarial", "intencion": "CONFIGURATION", "estilo": "con_errores"}
+{"texto": "no veo los estados combinados de mi grupo", "procedimiento": "contabilidad.crear-grupo-empresarial", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "cree el grupo pero no me sale ningun balance", "procedimiento": "contabilidad.crear-grupo-empresarial", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "agregue la empresa y no suma en el balance del grupo", "procedimiento": "contabilidad.crear-grupo-empresarial", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no me aparece mi grupo empresarial al ir a estados financieros", "procedimiento": "contabilidad.crear-grupo-empresarial", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "no puedo quitar una empresa del grupo", "procedimiento": "contabilidad.crear-grupo-empresarial", "intencion": "TROUBLESHOOTING", "estilo": "coloquial"}
+{"texto": "el balance del grupo no refleja una de las empresas, la agregue bien", "procedimiento": "contabilidad.crear-grupo-empresarial", "intencion": "TROUBLESHOOTING", "estilo": "situacional"}
+{"texto": "no sale el balance de grupo xq", "procedimiento": "contabilidad.crear-grupo-empresarial", "intencion": "TROUBLESHOOTING", "estilo": "con_errores"}

@@ -1,11 +1,11 @@
 {
   "base": "minishlab/potion-multilingual-128M@73908c3438cf03b6a01bcb9611d62b23d0726f08",
   "modo": "afinado (router S10)",
-  "piezas": 53231,
+  "piezas": 53277,
   "piezas_originales": 500353,
   "dim": 256,
   "cuant": "int8",
-  "bytes": 14555008,
-  "sha256": "5e26f93ece54d8b8c135fa4f7cc3934145ca1310a1417b1c2a89516909d6c8ba",
+  "bytes": 14567477,
+  "sha256": "443d56ca59e9c6ff2d5632b312fb892a6e4c8cc7c6623da85db5eca079d3798c",
   "tabla_normalizacion": 4837
 }
