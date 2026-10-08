@@ -546,6 +546,9 @@ func (ev *evaluacion) corpusPlan() string {
 	xs = append(xs, p.Intro)
 	for _, x := range p.Pasos {
 		xs = append(xs, x.Texto)
+		for _, f := range x.Fotos { // el pie de foto también sale en el texto (FotosEnTexto)
+			xs = append(xs, f.Caption)
+		}
 	}
 	for _, x := range append(append([]tipos.ConFuente{}, p.Prerrequisitos...), p.Verificacion...) {
 		xs = append(xs, x.Texto)

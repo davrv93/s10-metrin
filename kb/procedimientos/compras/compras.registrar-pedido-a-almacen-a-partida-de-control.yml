@@ -2,7 +2,7 @@ id: compras.registrar-pedido-a-almacen-a-partida-de-control
 version: 1
 modulo: compras
 titulo: "Registrar un pedido manual A Almacén hacia una partida de control"
-objetivo: "Registrar desde el almacén de un proyecto un pedido manual A Almacén de recursos que tienen stock, asignando a cada recurso su Partida de Control + Destino Específico, y dejarlo para que el aprobador lo apruebe."
+objetivo: "Registrar desde el almacén de un proyecto un pedido manual A Almacén de recursos que tienen stock, asignando a cada recurso su Partida de Control y su Destino Específico, y dejarlo para que el aprobador lo apruebe."
 nivel: intermedio
 preguntas:
   - "como hago un pedido a almacen para una partida de control"
@@ -100,7 +100,7 @@ pasos:
         ocr: "Elija o asigne\n[i|Recwso Litas) Cantidad] (Pc. [Pertifa de Control [Observ/Ested\n| CLAVOS PARA MADERA CON CABEZA DE 3\" kg 8.00 0107002 Encotrado\n| CLAVOS PARA MADERA CON CABEZA DE 4\" kg 10.00 0107002  Encofrado\n4 uu a) »\n466.70 466.70 86.70 390.00 380.00\nAceptar | Cancelar Ayuda"
   - n: 10
     id: "compras.registrar-pedido-a-almacen-a-partida-de-control#10"
-    accion: "Use clic derecho sobre el recurso para mostrar el menú y asigne **Partida de Control** + **Destino Específico**."
+    accion: "Use clic derecho sobre el recurso para mostrar el menú y asigne **Partida de Control** y **Destino Específico**."
     fuente: [web-https-documentacion-s10peru-com-manual-d-s056]
     pagina: null
   - n: 11
