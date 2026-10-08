@@ -114,7 +114,12 @@ def recortar(base: Path, textos: list[str], pjge_previo: Path | None):
         conservar |= {indice[p] for p in piezas_pjge(pjge_previo) if p in indice}
     conservar = sorted(conservar)
     tj2, piezas, unk = D.tokenizador_recortado(tj, conservar)
+    # Sin relleno ni recorte: algunos tokenizadores (MiniLM destilado) los traen activos y encode_batch metería tokens
+    # de relleno en la media, que Go nunca ve (08-10-2026: la paridad falló así). Go tampoco recorta.
+    tj2["padding"], tj2["truncation"] = None, None
     tok = Tokenizer.from_str(json.dumps(tj2))
+    tok.no_padding()
+    tok.no_truncation()
     return {"tok": tok, "tj": tj2, "piezas": piezas, "unk": unk, "banderas": banderas, "charsmap": charsmap,
             "filas": filas[conservar].astype(np.float32), "originales": len(tj["model"]["vocab"])}
 
@@ -334,6 +339,8 @@ def entrenar_filtro(Ve, ye, Vc, yc, recall_min: float = 0.97):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--base", type=Path, default=AQUI / "base/potion-multilingual-128M")
+    ap.add_argument("--procedencia", default="minishlab/potion-multilingual-128M@73908c3438cf03b6a01bcb9611d62b23d0726f08",
+                    help="texto de procedencia del modelo base para router-s10.json")
     ap.add_argument("--pjge-previo", type=Path, default=RAIZ / "metrin/modelos/potion-es-int8.pjge")
     ap.add_argument("--salida", type=Path, default=AQUI / "salida")
     ap.add_argument("--epocas", type=int, default=40)
@@ -479,7 +486,7 @@ def main():
         }
         (a.salida / "router-s10.cabeza.json").write_text(json.dumps(cabeza, ensure_ascii=False), encoding="utf-8")
         (a.salida / "router-s10.json").write_text(json.dumps({
-            "base": "minishlab/potion-multilingual-128M@73908c3438cf03b6a01bcb9611d62b23d0726f08",
+            "base": a.procedencia or str(a.base),
             "modo": "afinado (router S10)", "piezas": len(r["piezas"]), "piezas_originales": r["originales"],
             "dim": int(filas.shape[1]), "cuant": "int8", "bytes": ruta.stat().st_size, "sha256": sha,
             "tabla_normalizacion": len(tabla)}, indent=2, ensure_ascii=False), encoding="utf-8")

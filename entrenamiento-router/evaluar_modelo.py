@@ -38,6 +38,8 @@ def main():
     cab = json.loads((d / "router-s10.cabeza.json").read_text())
     deq, unk = cargar_pjge(d / "router-s10.pjge")
     tok = Tokenizer.from_file(str(d / "router-s10.tokenizer.json"))
+    tok.no_padding()      # como Go: sin relleno ni recorte
+    tok.no_truncation()
     W, b = np.array(cab["W"], np.float32), np.array(cab["b"], np.float32)
     clases, modulo_de, u = cab["clases"], cab["modulo"], cab["umbrales"]
     idx = {c: i for i, c in enumerate(clases)}

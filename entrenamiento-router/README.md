@@ -70,7 +70,7 @@ y la escritura PJGE.
 
 ## Resultados (07-10-2026)
 
-El modelo en `metrin/modelos/router/` es el **v7: 167 procedimientos** (sha256 del `.pjge` `443d56ca…`), con los umbrales de castigo 3 y el filtro de uso apagado. Las tablas de abajo cuentan cómo se llegó.
+El modelo en `metrin/modelos/router/` es el **v8: 167 procedimientos sobre MiniLM destilado** (sha256 del `.pjge` `c3495e83…`, 7,2 MB), con los umbrales de castigo 3 y el filtro de uso apagado. Las tablas de abajo cuentan cómo se llegó.
 
 | Prueba (router solo, int8) | v1: solo sintético | **v2: + reales** |
 |---|---|---|
@@ -189,3 +189,28 @@ quedan ~110). Nuevos módulos con contenido: Calidad Móvil (carpeta nueva). Pru
 `entrenar.py` exporta siempre el filtro de uso, pero solo lo activa con `--filtro`: calibrado con datos sintéticos
 bloqueaba 9 de las 12 preguntas reales con caso. La V2 completa (`medir-v2.sh`) no se midió en esta tanda: el disco de
 la Mac estaba lleno (108 MiB libres) y la imagen Docker no cabía.
+
+### v8: MiniLM destilado en lugar de potion (08-10-2026, instalado)
+
+`sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` destilado a estático con model2vec 0.9.0 (PCA 256; mismo
+formato PJGE, mismo código Go). Reproducir:
+
+```bash
+.venv/bin/python -c "from model2vec.distill import distill; distill(model_name='sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2', pca_dims=256).save_pretrained('base/minilm-l12-pca256')"
+.venv/bin/python entrenar.py --base base/minilm-l12-pca256 --procedencia "paraphrase-multilingual-MiniLM-L12-v2 (model2vec, PCA 256)"
+```
+
+**Trampa encontrada:** el tokenizador de MiniLM trae relleno (*padding*) y recorte activos; `encode_batch` metía tokens
+de relleno en la media y Go no (la prueba de paridad falló). `entrenar.py` y `evaluar_modelo.py` los desactivan siempre.
+
+| V2 completa (`medir-v2.sh`) | v7 · potion | **v8 · MiniLM** |
+|---|---|---|
+| Acierto de procedimiento (oro antiguo) | 71,2 % | **72,8 %** |
+| PROCEDURAL ANSWER SUCCESS | 60,0 % | **61,8 %** |
+| Falsa abstención / abstención correcta | 2,5 % / 83,3 % | **1,8 % / 91,7 %** |
+| Reales sin caso: responde un procedimiento | 6,1 % | **5,2 %** |
+| Tanda 1 (131): bien + ofrece / equivocadas | 113 + 12 / **0** | 106 + 19 / 2 |
+| Tanda 2 (84): bien + ofrece / equivocadas | 70 + 9 / 2 | **74 + 6 / 1** |
+
+Router solo (mismos umbrales): oro 68,2 % frente a 63,6 %; reales sin caso, error 0,8 % frente a 1,8 %; tanda 1 80,2 %
+frente a 85,5 %. Diferencias pequeñas, casi todas a favor de MiniLM, con el modelo a la mitad de tamaño.
