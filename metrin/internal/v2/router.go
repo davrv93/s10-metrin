@@ -95,15 +95,11 @@ func (t *turno) rutear(tipo tipos.TipoRespuesta, cands []tipos.Candidato) ([]tip
 		}
 		ops := ids
 		if d.Accion == router.AclararModulo {
-			// Una opción por módulo: el procedimiento más probable de cada uno de los módulos dudosos.
+			// Los 3 procedimientos más probables, sean del módulo que sean (medido el 07-10-2026: ofrecer el mejor de cada
+			// módulo casi nunca incluía el correcto).
 			ops = nil
-			for _, m := range ids {
-				for _, c := range d.Top {
-					if strings.HasPrefix(c.ID, m+".") {
-						ops = append(ops, c.ID)
-						break
-					}
-				}
+			for _, c := range d.Top {
+				ops = append(ops, c.ID)
 			}
 		}
 		var validas []string

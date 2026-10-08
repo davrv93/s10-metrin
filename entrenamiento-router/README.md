@@ -149,3 +149,25 @@ Router solo: en los procedimientos nuevos (calibración) elige bien el 62 % y ti
 95 %; con mensajes reales sin caso elige por error el 1,78 % (v4: 0,47 %). Con castigo 10 ese error baja a 0,93 %, pero
 la V2 pregunta en vez de responder en 39 de 125 casos. Se eligió castigo 3. Más procedimientos también le cuestan a la
 búsqueda sin router (63,2 → 54,4 %): el router es lo que mantiene el acierto.
+
+### Ronda de mejora (08-10-2026): medición nueva, filtro de uso y aclaración
+
+- **Medición.** `datos/prueba_nuevos.jsonl`: 160 preguntas escritas sin ver el entrenamiento (2 por cada uno de los 65
+  procedimientos nuevos + 30 sin caso); `construir_datos.py` excluye del entrenamiento lo que se le parezca. Correcciones
+  de etiqueta para la prueba del router en `CORRECCIONES_ORO` y `datos/prueba_revision.jsonl` (`v2_oro.jsonl` no se toca).
+- **Resultado con el v5 instalado.** Router solo: elige bien el 88 % de los nuevos, 0 % mal, el correcto entre los 3
+  primeros el 100 %. Dentro de la V2 completa: 115/130 bien (88 %), 11 ofrecidos en la aclaración, 0 equivocados; en las
+  30 sin caso responde un procedimiento en 6.
+- **Diagnóstico del 61,8 % de PAS** (v4: 67,3 %): ninguna elección nueva equivocada; 5 respuestas pasaron a aclaración
+  porque ahora hay un vecino (copia de seguridad / actualizar base de datos, cálculo de nómina / renta de quinta,
+  polinómica / registrar presupuesto). Varias son dudas legítimas.
+- **Filtro «¿es pregunta de uso?»** (`entrenar_filtro`, cabeza `filtro`, `Umbrales.Uso` en Go): rechaza el 88 % de la
+  coordinación sintética, pero con mensajes reales, para no callar preguntas de verdad, solo el 18–28 %, y no cambia el
+  1,8 %. Ese error viene de preguntas reales de uso cuyo tema no tiene procedimiento, no de la coordinación. Queda en el
+  código, sin activar (el v5 no lo trae).
+- **Elegir por ventaja** (`ratio`, `acepta_min`): la calibración no la elige. Queda disponible.
+- **Aclaración por módulo** ofrece ahora los 3 procedimientos más probables (`internal/v2/router.go`). En el benchmark no
+  cambia nada medible.
+
+Siguiente palanca para el 1,8 %: más procedimientos para los temas reales sin cobertura, o un embebedor mejor (MiniLM
+destilado a PJGE, punto 4 del plan).

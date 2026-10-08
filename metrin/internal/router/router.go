@@ -37,6 +37,18 @@ type Umbrales struct {
 	Modulo float64 `json:"modulo"` // probabilidad mínima del módulo (suma de sus procedimientos)
 	Acepta float64 `json:"acepta"` // probabilidad mínima para elegir
 	Margen float64 `json:"margen"` // diferencia mínima con el segundo del mismo módulo para elegir
+	// También se elige si el primero saca Ratio veces al segundo y pasa AceptaMin (Ratio 0 = regla apagada): con muchas
+	// clases la probabilidad se reparte y el primero puede tener mucha ventaja sin llegar a Acepta.
+	Ratio     float64 `json:"ratio,omitempty"`
+	AceptaMin float64 `json:"acepta_min,omitempty"`
+	// Filtro «¿es una pregunta de uso de S10?»: por debajo, delegar (coordinación, «su apoyo», pedidos de accesos).
+	Uso float64 `json:"uso,omitempty"`
+}
+
+// filtro: regresión logística sobre el mismo embedding (entrenar_filtro de entrenar.py).
+type filtro struct {
+	W []float32 `json:"w"`
+	B float32   `json:"b"`
 }
 
 type cabeza struct {
@@ -47,6 +59,7 @@ type cabeza struct {
 	Modulo     []string    `json:"modulo"`
 	Ninguno    string      `json:"ninguno"`
 	Umbrales   Umbrales    `json:"umbrales"`
+	Filtro     *filtro     `json:"filtro,omitempty"`
 	W          [][]float32 `json:"W"`
 	B          []float32   `json:"b"`
 }
@@ -59,6 +72,7 @@ type Router struct {
 	ninguno int
 	w       [][]float32
 	b       []float32
+	filtro  *filtro
 	U       Umbrales
 	Huella  string // sha256 del .pjge (12 primeros caracteres en la traza)
 }
@@ -74,6 +88,7 @@ type Decision struct {
 	Accion     string      `json:"accion"`
 	Candidatos []Candidato `json:"candidatos,omitempty"` // procedimientos (elegir, aclarar_caso) o módulos (aclarar_modulo)
 	Ninguno    float64     `json:"p_ninguno"`
+	Uso        float64     `json:"p_uso,omitempty"` // filtro de pregunta de uso (1 si la cabeza no lo trae)
 	Modulo     string      `json:"modulo,omitempty"`
 	PModulo    float64     `json:"p_modulo,omitempty"`
 	Top        []Candidato `json:"top"` // los 3 procedimientos más probables, para la traza
@@ -116,7 +131,11 @@ func Cargar(rutaCabeza string) (*Router, error) {
 			return nil, fmt.Errorf("router: fila %d de W con %d columnas; el embedding tiene %d", i, len(fila), m.Dim())
 		}
 	}
-	r := &Router{emb: m, clases: c.Clases, modulo: c.Modulo, ninguno: -1, w: c.W, b: c.B, U: c.Umbrales, Huella: huella}
+	if c.Filtro != nil && len(c.Filtro.W) != m.Dim() {
+		return nil, fmt.Errorf("router: filtro con %d pesos; el embedding tiene %d", len(c.Filtro.W), m.Dim())
+	}
+	r := &Router{emb: m, clases: c.Clases, modulo: c.Modulo, ninguno: -1, w: c.W, b: c.B, filtro: c.Filtro, U: c.Umbrales,
+		Huella: huella}
 	for i, cl := range c.Clases {
 		if cl == c.Ninguno {
 			r.ninguno = i
@@ -148,7 +167,26 @@ func (r *Router) Clases() []string {
 
 // Probabilidades: softmax(W·v + b), en el orden de las clases de la cabeza.
 func (r *Router) Probabilidades(texto string) []float64 {
-	v := r.emb.Embeber(texto)
+	return r.probs(r.emb.Embeber(texto))
+}
+
+// Uso: probabilidad de que el texto sea una pregunta de uso de S10 (1 si la cabeza no trae filtro).
+func (r *Router) Uso(texto string) float64 {
+	return r.uso(r.emb.Embeber(texto))
+}
+
+func (r *Router) uso(v []float32) float64 {
+	if r.filtro == nil {
+		return 1
+	}
+	s := float64(r.filtro.B)
+	for j, x := range r.filtro.W {
+		s += float64(x) * float64(v[j])
+	}
+	return 1 / (1 + math.Exp(-s))
+}
+
+func (r *Router) probs(v []float32) []float64 {
 	z := make([]float64, len(r.clases))
 	maxz := math.Inf(-1)
 	for i, fila := range r.w {
@@ -174,7 +212,9 @@ func (r *Router) Probabilidades(texto string) []float64 {
 
 // Decidir aplica el árbol (la misma función que decidir() de entrenar.py).
 func (r *Router) Decidir(texto string) Decision {
-	p := r.Probabilidades(texto)
+	v := r.emb.Embeber(texto)
+	p := r.probs(v)
+	uso := r.uso(v)
 	orden := make([]int, 0, len(p)-1)
 	for i := range p {
 		if i != r.ninguno {
@@ -182,9 +222,13 @@ func (r *Router) Decidir(texto string) Decision {
 		}
 	}
 	sort.SliceStable(orden, func(a, b int) bool { return p[orden[a]] > p[orden[b]] })
-	d := Decision{Ninguno: p[r.ninguno]}
+	d := Decision{Ninguno: p[r.ninguno], Uso: uso}
 	for _, i := range orden[:min(3, len(orden))] {
 		d.Top = append(d.Top, Candidato{ID: r.clases[i], Probabilidad: p[i]})
+	}
+	if r.filtro != nil && uso < r.U.Uso {
+		d.Accion = Delegar
+		return d
 	}
 	if p[r.ninguno] >= p[orden[0]] || p[orden[0]] < r.U.Minimo {
 		d.Accion = Delegar
@@ -218,7 +262,7 @@ func (r *Router) Decidir(texto string) Decision {
 	if len(dentro) > 1 {
 		p2 = p[dentro[1]]
 	}
-	if p1 >= r.U.Acepta && p1-p2 >= r.U.Margen {
+	if (p1 >= r.U.Acepta && p1-p2 >= r.U.Margen) || (r.U.Ratio > 0 && p1 >= r.U.AceptaMin && p1 >= r.U.Ratio*p2) {
 		d.Accion = Elegir
 		d.Candidatos = []Candidato{{ID: r.clases[dentro[0]], Probabilidad: p1}}
 		return d

@@ -207,8 +207,15 @@ def entrenar(filas, n_clases, X, y, Xc, yc, ajustar: bool, epocas=40, lr_cabeza=
 
 # ---------------------------------------------------------------- decisión (el árbol de docs/TOC-RUTEO-METRIN.md §5)
 
-def decidir(p: np.ndarray, clases: list[str], modulo_de: list[str], u: dict) -> tuple[str, list[str]]:
-    """Devuelve (acción, candidatos). acción ∈ elegir | aclarar_caso | aclarar_modulo | delegar."""
+def decidir(p: np.ndarray, clases: list[str], modulo_de: list[str], u: dict, uso: float | None = None
+            ) -> tuple[str, list[str]]:
+    """Devuelve (acción, candidatos). acción ∈ elegir | aclarar_caso | aclarar_modulo | delegar.
+
+    uso: probabilidad del filtro «¿es una pregunta de uso de S10?»; por debajo de u["uso"], delegar.
+    Se elige con p1 ≥ acepta y p1 − p2 ≥ margen, o también (si ratio > 0) con p1 ≥ acepta_min y p1 ≥ ratio·p2:
+    con 125 clases la probabilidad se reparte y el primero puede sacar mucha ventaja sin llegar a «acepta»."""
+    if uso is not None and uso < u.get("uso", 0.0):
+        return "delegar", []
     ini = clases.index(NINGUNO)
     orden = [i for i in np.argsort(-p) if i != ini]
     if p[ini] >= p[orden[0]] or p[orden[0]] < u["minimo"]:
@@ -223,16 +230,18 @@ def decidir(p: np.ndarray, clases: list[str], modulo_de: list[str], u: dict) -> 
     dentro = [i for i in orden if modulo_de[i] == mods[0]]
     p1 = p[dentro[0]]
     p2 = p[dentro[1]] if len(dentro) > 1 else 0.0
-    if p1 >= u["acepta"] and p1 - p2 >= u["margen"]:
+    ratio = u.get("ratio", 0.0)
+    if (p1 >= u["acepta"] and p1 - p2 >= u["margen"]) or (ratio > 0 and p1 >= u.get("acepta_min", 1.0)
+                                                          and p1 >= ratio * p2):
         return "elegir", [clases[dentro[0]]]
     return "aclarar_caso", [clases[i] for i in dentro[:3]]
 
 
-def medir(P: np.ndarray, y: list[int], clases, modulo_de, u: dict) -> dict:
+def medir(P: np.ndarray, y: list[int], clases, modulo_de, u: dict, usos=None) -> dict:
     ini = clases.index(NINGUNO)
     c = Counter()
-    for p, yi in zip(P, y):
-        accion, cand = decidir(p, clases, modulo_de, u)
+    for k, (p, yi) in enumerate(zip(P, y)):
+        accion, cand = decidir(p, clases, modulo_de, u, None if usos is None else float(usos[k]))
         real = clases[yi]
         pos = yi != ini
         c["con_caso" if pos else "sin_caso"] += 1
@@ -268,21 +277,56 @@ def medir(P: np.ndarray, y: list[int], clases, modulo_de, u: dict) -> dict:
 PENALIZACION = 3  # elegir mal cuesta 3 elecciones buenas; 10 es más prudente pero pregunta de más (README, v5)
 
 
-def calibrar(P, y, clases, modulo_de, penalizacion: float = PENALIZACION) -> dict:
+def calibrar(P, y, clases, modulo_de, penalizacion: float = PENALIZACION, usos=None, uso: float = 0.0) -> dict:
     """Elige umbrales en CALIBRACIÓN: máximo de (bien − penalizacion·mal) entre las elecciones; una aclaración vale 0,3
-    si trae el correcto. Elegir en una pregunta sin caso cuenta como mal."""
+    si trae el correcto. Elegir en una pregunta sin caso cuenta como mal. El umbral del filtro de uso viene dado."""
     mejor, mu = None, None
-    for minimo in (0.10, 0.20, 0.30, 0.40):
-        for modulo in (0.30, 0.40, 0.50, 0.60, 0.70, 0.80):
-            for acepta in (0.30, 0.40, 0.50, 0.60, 0.70, 0.80):
-                for margen in (0.05, 0.10, 0.20, 0.30, 0.40):
-                    u = {"minimo": minimo, "modulo": modulo, "acepta": acepta, "margen": margen}
-                    r = medir(P, y, clases, modulo_de, u)["conteos"]
-                    v = (r.get("elige_bien", 0) - penalizacion * (r.get("elige_mal", 0) + r.get("elige_mal_sin_caso", 0))
-                         + 0.3 * (r.get("aclara_caso_con_correcto", 0) + r.get("aclara_modulo_con_correcto", 0)))
-                    if mejor is None or v > mejor:
-                        mejor, mu = v, u
+    for minimo in (0.10, 0.20, 0.30):
+        for modulo in (0.40, 0.60, 0.80):
+            for acepta in (0.50, 0.60, 0.70, 0.80):
+                for margen in (0.05, 0.20):
+                    for ratio, acepta_min in ((0, 1.0), (2, 0.3), (2, 0.4), (3, 0.3), (3, 0.4), (5, 0.3), (5, 0.4)):
+                        u = {"minimo": minimo, "modulo": modulo, "acepta": acepta, "margen": margen, "ratio": ratio,
+                             "acepta_min": acepta_min, "uso": uso}
+                        r = medir(P, y, clases, modulo_de, u, usos)["conteos"]
+                        v = (r.get("elige_bien", 0) - penalizacion * (r.get("elige_mal", 0) + r.get("elige_mal_sin_caso", 0))
+                             + 0.3 * (r.get("aclara_caso_con_correcto", 0) + r.get("aclara_modulo_con_correcto", 0)))
+                        if mejor is None or v > mejor:
+                            mejor, mu = v, u
     return mu
+
+
+# ---------------------------------------------------------------- filtro «¿es una pregunta de uso?»
+
+def es_uso(x: dict) -> int:
+    """1 si la fila es una pregunta de uso de S10 (con o sin procedimiento); 0 si es coordinación, charla u otro tema."""
+    if x.get("origen") == "real":
+        return 0 if x.get("etiqueta_original") == "no_pregunta" else 1
+    return 0 if x["clase"] == NINGUNO and (x.get("intencion") or "").upper() in ("SOCIAL", "OTRO") else 1
+
+
+def vectores(m: "Router", seqs: list[list[int]]) -> np.ndarray:
+    m.eval()
+    with torch.no_grad():
+        out = []
+        for i in range(0, len(seqs), 512):
+            parte = [s if s else [0] for s in seqs[i:i + 512]]
+            out.append(m.vector(*lote(parte)).numpy())
+    return np.concatenate(out)
+
+
+def entrenar_filtro(Ve, ye, Vc, yc, recall_min: float = 0.97):
+    """Regresión logística sobre el embedding (norma 1). Umbral: el mayor que conserva recall_min de las preguntas de
+    uso en calibración (no hay que callar preguntas de verdad), para rechazar el máximo de coordinación."""
+    from sklearn.linear_model import LogisticRegression
+    lr = LogisticRegression(C=4.0, class_weight="balanced", max_iter=2000).fit(Ve, ye)
+    pc = lr.predict_proba(Vc)[:, 1]
+    pos = np.sort(pc[np.array(yc) == 1])
+    umbral = float(pos[int((1 - recall_min) * len(pos))]) if len(pos) else 0.5
+    rech = float((pc[np.array(yc) == 0] < umbral).mean()) if (np.array(yc) == 0).any() else 0.0
+    return lr.coef_[0].astype(np.float32), float(lr.intercept_[0]), umbral, rech
+
+
 
 
 # ---------------------------------------------------------------- principal
@@ -313,6 +357,8 @@ def main():
     prueba = leer_jsonl(AQUI / "datos/prueba.jsonl")
     ruta_real = AQUI / "reales/prueba_real.jsonl"
     prueba_real = leer_jsonl(ruta_real) if ruta_real.exists() else []
+    ruta_nuevos = AQUI / "datos/prueba_nuevos.jsonl"  # prueba de los procedimientos añadidos (escrita sin ver el entrenamiento)
+    prueba_nuevos = leer_jsonl(ruta_nuevos) if ruta_nuevos.exists() else []
 
     log("recortando vocabulario…")
     r = recortar(a.base, corpus_recorte(entren, calib), a.pjge_previo)
@@ -328,6 +374,9 @@ def main():
     X_c, y_c = tokenizar(tok, unk, [x["texto"] for x in calib]), [idx[x["clase"]] for x in calib]
     X_p, y_p = tokenizar(tok, unk, [x["texto"] for x in prueba]), [idx[x["clase"]] for x in prueba]
     X_r, y_r = tokenizar(tok, unk, [x["texto"] for x in prueba_real]), [idx[x["clase"]] for x in prueba_real]
+    X_n, y_n = tokenizar(tok, unk, [x["texto"] for x in prueba_nuevos]), [idx[x["clase"]] for x in prueba_nuevos]
+    uso_e = [es_uso(x) for x in entren] * 2
+    uso_c = [es_uso(x) for x in calib]
     cuenta = Counter(y_e)
     pesos = [len(y_e) / (len(clases) * max(cuenta[i], 1)) for i in range(len(clases))]
     log(f"  entrenamiento {len(X_e)} (con aumento), calibración {len(X_c)}, prueba {len(X_p)}")
@@ -339,19 +388,27 @@ def main():
         m, acc_c = entrenar(r["filas"], len(clases), X_e, y_e, X_c, y_c, ajustar, epocas=a.epocas,
                             pesos_clase=pesos, log=log, semilla=a.semilla)
         Pc, Pp = probabilidades(m, X_c), probabilidades(m, X_p)
-        u = calibrar(Pc, y_c, clases, modulo_de)
-        informe[nombre] = {"umbrales": u, "acierto_calibracion": round(acc_c, 4),
-                           "calibracion": medir(Pc, y_c, clases, modulo_de, u),
-                           "prueba": medir(Pp, y_p, clases, modulo_de, u)}
+        wf, bf, uf, rech = entrenar_filtro(vectores(m, X_e), uso_e, vectores(m, X_c), uso_c)
+        log(f"  filtro de uso: umbral {uf:.3f}, rechaza el {rech:.1%} de la coordinación de calibración (recall 97 %)")
+        def usos(seqs):
+            return 1 / (1 + np.exp(-(vectores(m, seqs) @ wf + bf))) if seqs else None
+        u = calibrar(Pc, y_c, clases, modulo_de, usos=usos(X_c), uso=uf)
+        informe[nombre] = {"umbrales": u, "acierto_calibracion": round(acc_c, 4), "filtro_rechazo_calibracion": round(rech, 4),
+                           "calibracion": medir(Pc, y_c, clases, modulo_de, u, usos(X_c)),
+                           "prueba": medir(Pp, y_p, clases, modulo_de, u, usos(X_p))}
         if X_r:
-            informe[nombre]["prueba_real"] = medir(probabilidades(m, X_r), y_r, clases, modulo_de, u)
+            informe[nombre]["prueba_real"] = medir(probabilidades(m, X_r), y_r, clases, modulo_de, u, usos(X_r))
             log("  real:", json.dumps({k: v for k, v in informe[nombre]["prueba_real"].items() if k != "conteos"},
                                       ensure_ascii=False))
+        if X_n:
+            informe[nombre]["prueba_nuevos"] = medir(probabilidades(m, X_n), y_n, clases, modulo_de, u, usos(X_n))
+            log("  nuevos:", json.dumps({k: v for k, v in informe[nombre]["prueba_nuevos"].items() if k != "conteos"},
+                                        ensure_ascii=False))
         log(json.dumps({k: v for k, v in informe[nombre]["prueba"].items() if k != "conteos"}, ensure_ascii=False))
-        modelos[nombre] = (m, u)
+        modelos[nombre] = (m, u, (wf, bf))
 
     # detalle de la prueba con el afinado (para leer los fallos)
-    m, u = modelos["afinado"]
+    m, u, (wf, bf) = modelos["afinado"]
     Pp = probabilidades(m, X_p)
     with open(a.salida / "prueba_detalle.jsonl", "w", encoding="utf-8") as f:
         for x, p in zip(prueba, Pp):
@@ -379,23 +436,31 @@ def main():
         b = m.cabeza.bias.detach().numpy().astype(np.float32)
 
         # métricas reales tras cuantizar (lo que ejecutará Go)
+        def vq(s):
+            v = deq[s].mean(axis=0) if s else np.zeros(deq.shape[1], np.float32)
+            return v / (np.linalg.norm(v) + 1e-32)
+
         def prob_q(seqs):
             out = []
             for s in seqs:
-                v = deq[s].mean(axis=0) if s else np.zeros(deq.shape[1], np.float32)
-                v = v / (np.linalg.norm(v) + 1e-32)
-                z = W @ v + b
+                z = W @ vq(s) + b
                 z = np.exp(z - z.max())
                 out.append(z / z.sum())
             return np.array(out)
-        informe["afinado_int8"] = {"prueba": medir(prob_q(X_p), y_p, clases, modulo_de, u),
-                                   "prueba_real": medir(prob_q(X_r), y_r, clases, modulo_de, u) if X_r else None,
-                                   "calibracion": medir(prob_q(X_c), y_c, clases, modulo_de, u)}
+
+        def uso_q(seqs):
+            return np.array([1 / (1 + np.exp(-(float(vq(s) @ wf) + bf))) for s in seqs]) if seqs else None
+        informe["afinado_int8"] = {
+            "prueba": medir(prob_q(X_p), y_p, clases, modulo_de, u, uso_q(X_p)),
+            "prueba_real": medir(prob_q(X_r), y_r, clases, modulo_de, u, uso_q(X_r)) if X_r else None,
+            "prueba_nuevos": medir(prob_q(X_n), y_n, clases, modulo_de, u, uso_q(X_n)) if X_n else None,
+            "calibracion": medir(prob_q(X_c), y_c, clases, modulo_de, u, uso_q(X_c))}
         cabeza = {
             "version": 1,
             "pjge": ruta.name, "sha256_pjge": sha,
             "clases": clases, "modulo": modulo_de, "ninguno": NINGUNO,
             "umbrales": u,
+            "filtro": {"w": [round(float(v), 7) for v in wf], "b": round(float(bf), 7)},
             "W": [[round(float(v), 7) for v in fila] for fila in W],
             "b": [round(float(v), 7) for v in b],
         }
@@ -409,13 +474,12 @@ def main():
         # va en git (repo público): solo frases sintéticas, nunca reales
         frases = [x["texto"] for x in calib if x.get("origen") != "real"][:30] + [x["texto"] for x in prueba[:10]]
         seqs = tokenizar(tok, unk, frases)
-        P = prob_q(seqs)
+        P, U = prob_q(seqs), uso_q(seqs)
         with open(a.salida / "router-s10.paridad.jsonl", "w", encoding="utf-8") as f:
-            for frase, s, p in zip(frases, seqs, P):
-                v = deq[s].mean(axis=0) if s else np.zeros(deq.shape[1], np.float32)
-                v = v / (np.linalg.norm(v) + 1e-32)
-                f.write(json.dumps({"texto": frase, "emb": [round(float(x), 6) for x in v],
-                                    "p": [round(float(x), 6) for x in p]}, ensure_ascii=False) + "\n")
+            for frase, s, p, us in zip(frases, seqs, P, U):
+                f.write(json.dumps({"texto": frase, "emb": [round(float(x), 6) for x in vq(s)],
+                                    "p": [round(float(x), 6) for x in p], "uso": round(float(us), 6)},
+                                   ensure_ascii=False) + "\n")
         log(f"\nexportado {ruta} ({ruta.stat().st_size} bytes, sha256 {sha[:12]})")
         log(json.dumps({k: v for k, v in informe["afinado_int8"]["prueba"].items() if k != "conteos"},
                        ensure_ascii=False))

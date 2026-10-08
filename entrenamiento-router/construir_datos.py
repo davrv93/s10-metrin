@@ -78,11 +78,29 @@ def textos_yaml(p: dict) -> list[str]:
     return [t for t in out if isinstance(t, str) and t.strip()]
 
 
+# Correcciones a las etiquetas de v2_oro.jsonl solo para la prueba del router (el archivo no se toca: el benchmark de la
+# V2 sigue comparable). proc-051 lo responde ahora un procedimiento nuevo (datos/prueba_revision.jsonl); conc-037/038/039
+# son preguntas de «cómo se hace» etiquetadas como concepto que ya tenían procedimiento (revisión del 07-10-2026).
+CORRECCIONES_ORO = {
+    "conc-037": "compras.registrar-pedido-de-compra",
+    "conc-038": "presupuestos.procesar-presupuesto",
+    "conc-039": "presupuestos.elaborar-formula-polinomica",
+}
+
+
 def cargar_prueba(procs: dict) -> list[dict]:
+    correcciones = dict(CORRECCIONES_ORO)
+    ruta = DATOS / "prueba_revision.jsonl"
+    if ruta.exists():
+        for linea in open(ruta, encoding="utf-8"):
+            if linea.strip():
+                r = json.loads(linea)
+                if r.get("clase_nueva") and r["clase_nueva"] != NINGUNO:
+                    correcciones[r["id"]] = r["clase_nueva"]
     prueba = []
     for linea in open(RAIZ / "metrin/eval/v2_oro.jsonl", encoding="utf-8"):
         c = json.loads(linea)
-        esperado = c.get("procedimiento_esperado") or NINGUNO
+        esperado = correcciones.get(c["id"]) or c.get("procedimiento_esperado") or NINGUNO
         if esperado != NINGUNO and esperado not in procs:
             raise SystemExit(f"{c['id']}: procedimiento {esperado} no existe")
         prueba.append({"texto": c["turnos"][0], "clase": esperado, "id": c["id"], "categoria": c["categoria"]})
@@ -146,8 +164,11 @@ def main():
     procs = cargar_procedimientos()
     clases = sorted(procs) + [NINGUNO]
     prueba = cargar_prueba(procs)
-    prueba_norm = {normalizar(x["texto"]) for x in prueba}
-    prueba_pal = [palabras(x["texto"]) for x in prueba]
+    textos_prueba = [x["texto"] for x in prueba]
+    if (DATOS / "prueba_nuevos.jsonl").exists():  # la prueba de los procedimientos nuevos tampoco puede filtrarse
+        textos_prueba += [json.loads(l)["texto"] for l in open(DATOS / "prueba_nuevos.jsonl", encoding="utf-8") if l.strip()]
+    prueba_norm = {normalizar(t) for t in textos_prueba}
+    prueba_pal = [palabras(t) for t in textos_prueba]
 
     def fuga(texto: str) -> bool:
         if normalizar(texto) in prueba_norm:

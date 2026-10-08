@@ -45,6 +45,7 @@ func TestParidadConPython(t *testing.T) {
 			Texto string    `json:"texto"`
 			Emb   []float64 `json:"emb"`
 			P     []float64 `json:"p"`
+			Uso   *float64  `json:"uso"`
 		}
 		if err := json.Unmarshal(sc.Bytes(), &x); err != nil {
 			t.Fatal(err)
@@ -59,6 +60,11 @@ func TestParidadConPython(t *testing.T) {
 		for j := range p {
 			if math.Abs(p[j]-x.P[j]) > 1e-4 {
 				t.Fatalf("%q: p[%d] Go %.6f, Python %.6f", x.Texto, j, p[j], x.P[j])
+			}
+		}
+		if x.Uso != nil {
+			if u := r.Uso(x.Texto); math.Abs(u-*x.Uso) > 1e-4 {
+				t.Fatalf("%q: uso Go %.6f, Python %.6f", x.Texto, u, *x.Uso)
 			}
 		}
 		n++
