@@ -70,7 +70,7 @@ y la escritura PJGE.
 
 ## Resultados (07-10-2026)
 
-El modelo en `metrin/modelos/router/` es el **v4: sintético + 7 grupos de WhatsApp + 1 005 tickets de Zendesk** (sha256 del `.pjge` `74e3dedf…`). Las tablas de abajo cuentan cómo se llegó.
+El modelo en `metrin/modelos/router/` es el **v5: 125 procedimientos** (sha256 del `.pjge` `5e26f93e…`), con los umbrales de castigo 3. Las tablas de abajo cuentan cómo se llegó.
 
 | Prueba (router solo, int8) | v1: solo sintético | **v2: + reales** |
 |---|---|---|
@@ -130,3 +130,22 @@ El 1,6 % del v2 parece una semilla favorable: v1, v3 y las semillas del v4 dan 3
 (`medir-v2.sh`, sin reranker) el v4 da acierto de procedimiento 74,4 % (igual que el v2), PAS 67,3 % (v2: 65,5 %) y
 falsa abstención 2,5 % (v2: 1,8 %); con los 1 082 mensajes reales por la V2 acierta 3 de 6 con caso (sin router: 1) y
 responde un procedimiento al 4,3 % de los mensajes sin caso (sin router: 3,3 %).
+
+### v5 con 125 procedimientos (07-10-2026, instalado)
+
+El catálogo pasó de 60 a 125 (10 de `_reserva/` + 55 redactados desde los manuales oficiales, priorizando las secciones
+a las que apuntan preguntas reales sin caso). 36 paráfrasis por procedimiento nuevo; los negativos sintéticos se
+revisaron contra el catálogo nuevo (`_ninguno.revisado.jsonl`, solo cambios hacia procedimientos nuevos) y 26 mensajes
+reales «sin caso» pasaron a un procedimiento nuevo (`reales/reetiquetas.jsonl`, fuera de git).
+
+| V2 completa (`medir-v2.sh`), sin reranker | v4 · 60 proc. | **v5 · 125 · castigo 3** | v5 · 125 · castigo 10 |
+|---|---|---|---|
+| Acierto de procedimiento (oro sintético) | 74,4 % | **74,4 %** | 61,6 % |
+| PROCEDURAL ANSWER SUCCESS | 67,3 % | 61,8 % | 47,3 % |
+| Falsa abstención | 2,5 % | 1,8 % | 2,5 % |
+| Sin router, mismo catálogo | 63,2 % | 54,4 % | 54,4 % |
+
+Router solo: en los procedimientos nuevos (calibración) elige bien el 62 % y tiene el correcto entre los 3 primeros el
+95 %; con mensajes reales sin caso elige por error el 1,78 % (v4: 0,47 %). Con castigo 10 ese error baja a 0,93 %, pero
+la V2 pregunta en vez de responder en 39 de 125 casos. Se eligió castigo 3. Más procedimientos también le cuestan a la
+búsqueda sin router (63,2 → 54,4 %): el router es lo que mantiene el acierto.

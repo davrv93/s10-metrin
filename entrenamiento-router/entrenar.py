@@ -265,17 +265,20 @@ def medir(P: np.ndarray, y: list[int], clases, modulo_de, u: dict) -> dict:
     }
 
 
-def calibrar(P, y, clases, modulo_de) -> dict:
-    """Elige umbrales en CALIBRACIÓN: máximo de (bien − 3·mal) entre las elecciones; una aclaración vale 0,3 si trae
-    el correcto. Elegir en una pregunta sin caso cuenta como mal."""
+PENALIZACION = 3  # elegir mal cuesta 3 elecciones buenas; 10 es más prudente pero pregunta de más (README, v5)
+
+
+def calibrar(P, y, clases, modulo_de, penalizacion: float = PENALIZACION) -> dict:
+    """Elige umbrales en CALIBRACIÓN: máximo de (bien − penalizacion·mal) entre las elecciones; una aclaración vale 0,3
+    si trae el correcto. Elegir en una pregunta sin caso cuenta como mal."""
     mejor, mu = None, None
-    for minimo in (0.10, 0.15, 0.20, 0.25, 0.30):
-        for modulo in (0.30, 0.40, 0.50, 0.60):
-            for acepta in (0.25, 0.30, 0.35, 0.40, 0.50, 0.60):
-                for margen in (0.05, 0.10, 0.15, 0.20, 0.30):
+    for minimo in (0.10, 0.20, 0.30, 0.40):
+        for modulo in (0.30, 0.40, 0.50, 0.60, 0.70, 0.80):
+            for acepta in (0.30, 0.40, 0.50, 0.60, 0.70, 0.80):
+                for margen in (0.05, 0.10, 0.20, 0.30, 0.40):
                     u = {"minimo": minimo, "modulo": modulo, "acepta": acepta, "margen": margen}
                     r = medir(P, y, clases, modulo_de, u)["conteos"]
-                    v = (r.get("elige_bien", 0) - 3 * (r.get("elige_mal", 0) + r.get("elige_mal_sin_caso", 0))
+                    v = (r.get("elige_bien", 0) - penalizacion * (r.get("elige_mal", 0) + r.get("elige_mal_sin_caso", 0))
                          + 0.3 * (r.get("aclara_caso_con_correcto", 0) + r.get("aclara_modulo_con_correcto", 0)))
                     if mejor is None or v > mejor:
                         mejor, mu = v, u
